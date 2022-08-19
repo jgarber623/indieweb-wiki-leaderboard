@@ -1,0 +1,33 @@
+name: Build README.md
+
+on:
+  push:
+  schedule:
+    - cron: "23 6 * * *"
+
+jobs:
+  build:
+    name: Build
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version-file: ".nvmrc"
+          cache: npm
+      - run: npm ci
+      - name: Build leaderboard
+        run: |
+          npm run build
+          cat data/leaderboard.json
+          cat README.md
+      - name: Commit and push changed files
+        run: |
+          git diff
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git config --global user.name 'github-actions[bot]'
+          git add -A
+          git commit -m '🤖 Update leaderboard' || exit 0
+          git push
