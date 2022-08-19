@@ -5,8 +5,8 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 | Rank | Actions | User |
 |-----:|--------:|:-----|
 | **1** | 143 | gregorlove.com |
-| **2** | 123 | loqi.me |
-| **3** | 121 | tantek.com |
+| **2** | 121 | tantek.com |
+| **3** | 119 | loqi.me |
 | **4** | 66 | jamesg.blog |
 | **5** | 38 | kaja.sknebel.net |
 | **6** | 24 | cali.jamesg.blog |
@@ -46,7 +46,7 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 
 ## Colophon
 
-Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 19 August 2022 at 4:02:45 UTC.
+Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 19 August 2022 at 6:33:48 UTC.
 
 ## License
 
