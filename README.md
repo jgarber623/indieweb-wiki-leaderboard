@@ -5,48 +5,49 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 | Rank | Actions | User |
 |-----:|--------:|:-----|
 | **1** | 143 | gregorlove.com |
-| **2** | 121 | tantek.com |
-| **3** | 119 | loqi.me |
+| **2** | 120 | loqi.me |
+| **3** | 115 | tantek.com |
 | **4** | 66 | jamesg.blog |
-| **5** | 38 | kaja.sknebel.net |
-| **6** | 24 | cali.jamesg.blog |
-| **7** | 21 | beesbuzz.biz |
-| **8** | 19 | campegg.com |
-| **9** | 16 | jacky.wtf |
+| **5** | 24 | cali.jamesg.blog |
+| **6** | 21 | beesbuzz.biz |
+| **7** | 19 | campegg.com |
+| **8** | 15 | jacky.wtf |
+| **9** | 14 | david.shanske.com |
 | **10** | 13 | jamesg.coffee |
 | **11** | 13 | lqdev.me |
 | **12** | 13 | www.ciccarello.me |
-| **13** | 12 | david.shanske.com |
-| **14** | 11 | tracydurnell.com |
-| **15** | 9 | www.hammyhavoc.com |
-| **16** | 7 | nicksimson.com |
-| **17** | 7 | www.jvt.me |
-| **18** | 6 | aaronparecki.com |
-| **19** | 6 | unrelenting.technology |
-| **20** | 5 | kimberlyhirsh.com |
-| **21** | 4 | jkphl.is |
-| **22** | 4 | snarfed.org |
-| **23** | 3 | jacobhall.net |
-| **24** | 3 | www.svenknebel.de/posts |
-| **25** | 2 | boffosocko.com |
-| **26** | 2 | chee.party |
+| **13** | 11 | tracydurnell.com |
+| **14** | 9 | www.hammyhavoc.com |
+| **15** | 7 | nicksimson.com |
+| **16** | 7 | www.jvt.me |
+| **17** | 6 | aaronparecki.com |
+| **18** | 6 | unrelenting.technology |
+| **19** | 5 | kimberlyhirsh.com |
+| **20** | 4 | jkphl.is |
+| **21** | 4 | snarfed.org |
+| **22** | 3 | jacobhall.net |
+| **23** | 3 | www.svenknebel.de/posts |
+| **24** | 2 | boffosocko.com |
+| **25** | 2 | chee.party |
+| **26** | 2 | manton.org |
 | **27** | 2 | mikeheavers.com |
 | **28** | 2 | paulopinto.xyz |
-| **29** | 1 | dym.sh |
-| **30** | 1 | kevincox.ca |
-| **31** | 1 | marksuth.dev |
-| **32** | 1 | matienzo.org |
-| **33** | 1 | mikevdv.dev |
-| **34** | 1 | omz13.com |
-| **35** | 1 | pauho.net |
-| **36** | 1 | ramblinggit.com |
-| **37** | 1 | sixtwothree.org |
-| **38** | 1 | waterpigs.co.uk |
+| **29** | 2 | waterpigs.co.uk |
+| **30** | 1 | dym.sh |
+| **31** | 1 | kevincox.ca |
+| **32** | 1 | marksuth.dev |
+| **33** | 1 | matienzo.org |
+| **34** | 1 | mikevdv.dev |
+| **35** | 1 | omz13.com |
+| **36** | 1 | pauho.net |
+| **37** | 1 | ramblinggit.com |
+| **38** | 1 | shindakun.dev |
+| **39** | 1 | sixtwothree.org |
 
 
 ## Colophon
 
-Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 19 August 2022 at 6:33:48 UTC.
+Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 20 August 2022 at 6:32:04 UTC.
 
 ## License
 
