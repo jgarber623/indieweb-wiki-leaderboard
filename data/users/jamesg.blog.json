@@ -67,6 +67,28 @@
           ],
           "properties": {
             "name": [
+              "Building an IRC archiver bot for the IndieWeb community"
+            ],
+            "url": [
+              "https://jamesg.blog/2022/08/21/indieweb-etherpad-archiver/"
+            ],
+            "published": [
+              "/2022/08/"
+            ],
+            "category": [
+              "IndieWeb"
+            ],
+            "summary": [
+              "A few weeks ago, I learned that the IndieWeb community aims to archive all of the Etherpad documents from meetups on the wiki. Etherpad documents are made available at online meetups so participants can document ideas and what happened in the call. Archiving these documents to the wiki makes them easily searchable and ensures their contents are preserved not only in a document that could be edited further down the line."
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               "TIL: Terminal shortcuts"
             ],
             "url": [
@@ -146,28 +168,6 @@
             ],
             "summary": [
               "I was trying to implement the Fisher-Yates algorithm earlier this evening. This algorithm lets you randomly shuffle the contents of a list. I wanted to provide a list of songs and return a shuffled list. I decided to use Lisp for this since I don't know much Lisp and I want to build my skills."
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Separating I/O and logic"
-            ],
-            "url": [
-              "https://jamesg.blog/2022/08/05/io-and-logic/"
-            ],
-            "published": [
-              "/2022/08/"
-            ],
-            "category": [
-              "Programming"
-            ],
-            "summary": [
-              "Earlier this week I watched Alex Chan's Sans I/O programming talk. In the talk, Alex argues the importance of separating I/O and program logic, with reference to a situation where his team was unable to use already-available parsing libraries for BagIt data because said libraries depended on local access to a file. This talk resonated with me because it made me realise I tend to couple I/O and logic in my code without realising it. I'd highly recommend watching the talk in full, or at least reading Alex's accompanying summary on their blog."
             ]
           }
         }
