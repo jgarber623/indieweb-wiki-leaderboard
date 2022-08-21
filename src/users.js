@@ -23,7 +23,9 @@ const writeFiles = responses => {
         JSON.stringify(response.data, null, '  ')
       );
     } else {
-      console.log(response);
+      const { status, statusText, config: { params } } = response.response;
+
+      console.log('❌', status, statusText, params);
     }
   });
 };
