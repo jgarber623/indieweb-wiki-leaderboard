@@ -1,0 +1,69 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "photo": [
+          "https://loqi.me/logo/loqisaur.png"
+        ],
+        "name": [
+          "Loqi"
+        ],
+        "url": [
+          "http://loqi.me/"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "photo": [
+          "https://loqi.me/photos/loqi-capy.jpg",
+          "https://loqi.me/photos/loqi-mustache.jpg",
+          "https://loqi.me/photos/loqi-pony.jpg",
+          "https://loqi.me/photos/loqi-yumm.jpg"
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "pgpkey": [
+      "https://aaronparecki.com/key.txt"
+    ],
+    "authorization_endpoint": [
+      "https://loqi.me/auth.php"
+    ],
+    "me": [
+      "https://twitter.com/loqisaur",
+      "http://instagram.com/loqisaur"
+    ]
+  },
+  "rel-urls": {
+    "https://aaronparecki.com/key.txt": {
+      "rels": [
+        "pgpkey"
+      ]
+    },
+    "https://loqi.me/auth.php": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://twitter.com/loqisaur": {
+      "rels": [
+        "me"
+      ],
+      "text": "twitter.com/loqisaur"
+    },
+    "http://instagram.com/loqisaur": {
+      "rels": [
+        "me"
+      ],
+      "text": "instagram.com/loqisaur"
+    }
+  }
+}

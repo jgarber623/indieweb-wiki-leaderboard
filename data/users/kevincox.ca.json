@@ -1,0 +1,66 @@
+{
+  "items": [],
+  "rels": {
+    "webmention": [
+      "https://webmention.io/kevincox.ca/webmention"
+    ],
+    "pingback": [
+      "https://webmention.io/kevincox.ca/xmlrpc"
+    ],
+    "icon": [
+      "https://kevincox.ca/logo.png",
+      "https://kevincox.ca/logo.svg"
+    ],
+    "alternate": [
+      "https://kevincox.ca/feed.atom"
+    ],
+    "canonical": [
+      "https://kevincox.ca/"
+    ],
+    "me": [
+      "mailto:kevincox@kevincox.ca"
+    ]
+  },
+  "rel-urls": {
+    "https://webmention.io/kevincox.ca/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://webmention.io/kevincox.ca/xmlrpc": {
+      "rels": [
+        "pingback"
+      ]
+    },
+    "https://kevincox.ca/logo.png": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/png"
+    },
+    "https://kevincox.ca/logo.svg": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/svg+xml"
+    },
+    "https://kevincox.ca/feed.atom": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Blog Posts",
+      "type": "application/atom+xml"
+    },
+    "https://kevincox.ca/": {
+      "rels": [
+        "canonical"
+      ]
+    },
+    "mailto:kevincox@kevincox.ca": {
+      "rels": [
+        "me"
+      ],
+      "text": "kevincox@kevincox.ca"
+    }
+  }
+}

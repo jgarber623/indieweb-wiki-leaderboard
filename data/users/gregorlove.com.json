@@ -1,0 +1,264 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-feed"
+      ],
+      "properties": {
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "url": [
+                "https://gregorlove.com/",
+                "https://gregorlove.com/about/"
+              ],
+              "uid": [
+                "https://gregorlove.com/"
+              ],
+              "photo": [
+                {
+                  "value": "https://gregorlove.com/site/assets/files/3473/profile-2016-med.jpg",
+                  "alt": ""
+                }
+              ],
+              "name": [
+                "gRegor Morrill"
+              ],
+              "nickname": [
+                "gRegorLove"
+              ]
+            },
+            "value": "gRegor Morrill"
+          }
+        ]
+      },
+      "children": [
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "IndieAuth for ProcessWire Released"
+            ],
+            "url": [
+              "https://gregorlove.com/2022/07/indieauth-for-processwire-released/"
+            ],
+            "content": [
+              {
+                "html": "<p>IndieAuth lets you sign in to applications using your domain name and grant access to read/write to your site. This module adds IndieAuth support to your <a href=\"https://processwire.com/\">ProcessWire</a> site, enabling two main things:</p>\n\n<ol>\n\t<li>Authentication: When you visit a site like <a href=\"https://indielogin.com/\">indielogin.com</a> and enter your domain name, you will be taken to your ProcessWire admin area to sign in and approve the request. If you approve the request, you will be returned to the site and logged in as your domain name.</li>\n\t<li>Authorization: When you visit an application like <a href=\"https://quill.p3k.io/\">Quill</a>, it needs to also get your permission to post to your site. You will be taken to your ProcessWire admin area to sign in and approve the request/scopes that the app is requesting (create, update, delete, etc.). If you approve the request, you will be returned to the app, logged in as your domain name, and the app will have an access token for your site.</li>\n</ol>\n\n<h2 class=\"delta\" id=\"features\">Features</h2>\n\n<ul>\n\t<li>Browse the applications you have granted access tokens to. See when each one was granted, last used, and will expire.</li>\n\t<li>Revoke any application’s access tokens</li>\n\t<li>Set the default expiration period for new access tokens. The initial default is 14 days.</li>\n\t<li>Automatically remove expired tokens</li>\n\t<li>During authorization, confirm and change the scopes granted to the application. For example, an app may request “create” and “delete” scopes, but you can grant only “create.”</li>\n\t<li>During authorization, you can also choose to grant an access token with no expiration</li>\n</ul>\n\n<h2 class=\"delta\" id=\"installation\">Installation from Modules Directory</h2>\n\n<p>The recommended method is to use the ProcessWire admin area’s module interface.</p>\n\n<ol>\n\t<li>Navigate to Modules &gt; New. In the <i>Module Class Name</i> field, enter <code>ProcessIndieAuth</code>\n</li>\n\t<li>Copy the template files from the module’s directory <code>/extras/templates</code> into your site’s <code>/site/templates</code> directory.</li>\n\t<li>Verify that the plugin installed pages:\n\t<ul>\n\t\t<li>IndieAuth Metadata Endpoint</li>\n\t\t<li>Authorization Endpoint</li>\n\t\t<li>Token Endpoint</li>\n\t\t<li>Token Revocation Endpoint</li>\n\t\t<li>IndieAuth page under the admin’s Access menu</li>\n\t</ul>\n\t</li>\n\t<li>Look up the user(s) that you want to allow to use IndieAuth and assign them the “indieauth” role</li>\n\t<li>Update your home page template to add the link elements inside the &lt;head&gt; element:<br>\n\t<code style=\"font-size: 1.6rem;\">&lt;?=$modules-&gt;get('ProcessIndieAuth')-&gt;getLinkElements();?&gt;</code>\n</li>\n</ol>\n\n<p>This should result in three &lt;link&gt; elements in the source HTML:</p>\n\n<pre>\n<code style=\"font-size: 1.6rem;\">&lt;head&gt;\n    &lt;link rel=\"indieauth-metadata\" href=\"/indieauth-metadata-endpoint/\"&gt;\n    &lt;link rel=\"authorization_endpoint\" href=\"/authorization-endpoint/\"&gt;\n    &lt;link rel=\"token_endpoint\" href=\"/token-endpoint/\"&gt;\n&lt;/head&gt;</code></pre>\n\n<h2 class=\"delta\" id=\"signin\">Sign In</h2>\n\n<p>To test signing in with IndieAuth, visit <a href=\"https://indielogin.com/\">indielogin.com</a> and enter your domain name. Follow the prompts to authenticate and you should end up back on indielogin.com with a success message.</p>\n\n<figure class=\"no-margin\"><img alt=\"screenshot\" class=\"screenshot util-max-full-width\" src=\"https://gregorlove.com/site/assets/files/6031/indieauth-for-processwire-authentication.1000x0-is.png\">\n<figcaption>\n<p class=\"small\">The authentication prompt when signing in with IndieAuth</p>\n</figcaption>\n</figure>\n\n<h2 class=\"delta\" id=\"authorize\">Sign In and Authorize</h2>\n\n<p>To authorize an application with IndieAuth, your site will first need a module that uses access tokens. I have a <a href=\"https://github.com/gregorlove/ProcessWire-Micropub\">Micropub for ProcessWire</a> module in development that does that. Micropub is a standard that lets you publish to your site using third-party clients. If you’d like to try it out, follow the instructions on GitHub to install it.</p>\n\n<p>After installing, visit <a href=\"https://quill.p3k.io/\">Quill</a> and enter your domain name. Follow the prompts and note the additional fields for “scope” and “expiration,” since you are authorizing an application to interact with your site. After successfully authorizing, try to post a short note from Quill. Quill should redirect you to the new post if it was successful.</p>\n\n<p>For a list of other Micropub clients you can try, see <a href=\"https://indieweb.org/Micropub/Clients\">https://indieweb.org/Micropub/Clients</a>.</p>\n\n<figure class=\"no-margin\"><img alt=\"screenshot\" class=\"screenshot util-max-full-width\" src=\"https://gregorlove.com/site/assets/files/6031/indieauth-for-processwire-authorization.1000x0-is.png\">\n<figcaption>\n<p class=\"small\">The authorization prompt</p>\n</figcaption>\n</figure>\n\n<h2 class=\"delta\" id=\"admin\">Admin and Options</h2>\n\n<p>In the admin, you can see which applications you have granted access tokens to. You can see when each token was issued, last accessed, and its expiration. You can also manually revoke a token at any time. Navigate to: Access &gt; IndieAuth.</p>\n\n<figure class=\"no-margin\"><img alt=\"screenshot\" class=\"screenshot util-max-full-width\" src=\"https://gregorlove.com/site/assets/files/6031/indieauth-for-processwire-tokens.1000x0-is.png\">\n<figcaption>\n<p class=\"small\">The admin page displaying access tokens you have granted</p>\n</figcaption>\n</figure>\n\n<p>There are a couple options in the admin at: Modules &gt; Configure &gt; ProcessIndieAuth:</p>\n\n<ol>\n\t<li>Default access token lifetime (in seconds): This defaults to 14 days and is what appears in the authorization screenshot above.</li>\n\t<li>Automatically remove access tokens after expiration (enabled by default): When enabled, the site checks approximately every six hours and removes expired access tokens. Regardless of whether this option is enabled, the module will reject any application attempting to use an expired access token. Since access tokens cannot (currently) have their expiration extended, I recommend keeping this option enabled so the admin list stays tidy and current.</li>\n</ol>\n\n<p>Finally, this module writes some admin logs. Access those at: Setup &gt; Logs &gt; indieauth</p>\n\n<h2 class=\"delta\" id=\"more\">More About IndieAuth</h2>\n\n<p>If you’re interested in more details about IndieAuth, I recommend the article “<a href=\"https://aaronparecki.com/2018/07/07/7/oauth-for-the-open-web\">OAuth for the Open Web</a>” by Aaron Parecki (or the <a href=\"https://youtu.be/EeCNlB7v08I\">video presentation</a>). If you are interested in implementing IndieAuth in your project, see the <a href=\"https://indieauth.spec.indieweb.org/\">IndieAuth specification</a>.</p>",
+                "value": "IndieAuth lets you sign in to applications using your domain name and grant access to read/write to your site. This module adds IndieAuth support to your ProcessWire site, enabling two main things:\n\n\n\tAuthentication: When you visit a site like indielogin.com and enter your domain name, you will be taken to your ProcessWire admin area to sign in and approve the request. If you approve the request, you will be returned to the site and logged in as your domain name.\n\tAuthorization: When you visit an application like Quill, it needs to also get your permission to post to your site. You will be taken to your ProcessWire admin area to sign in and approve the request/scopes that the app is requesting (create, update, delete, etc.). If you approve the request, you will be returned to the app, logged in as your domain name, and the app will have an access token for your site.\n\n\nFeatures\n\n\n\tBrowse the applications you have granted access tokens to. See when each one was granted, last used, and will expire.\n\tRevoke any application’s access tokens\n\tSet the default expiration period for new access tokens. The initial default is 14 days.\n\tAutomatically remove expired tokens\n\tDuring authorization, confirm and change the scopes granted to the application. For example, an app may request “create” and “delete” scopes, but you can grant only “create.”\n\tDuring authorization, you can also choose to grant an access token with no expiration\n\n\nInstallation from Modules Directory\n\nThe recommended method is to use the ProcessWire admin area’s module interface.\n\n\n\tNavigate to Modules > New. In the Module Class Name field, enter ProcessIndieAuth\n\tCopy the template files from the module’s directory /extras/templates into your site’s /site/templates directory.\n\tVerify that the plugin installed pages:\n\t\n\t\tIndieAuth Metadata Endpoint\n\t\tAuthorization Endpoint\n\t\tToken Endpoint\n\t\tToken Revocation Endpoint\n\t\tIndieAuth page under the admin’s Access menu\n\t\n\t\n\tLook up the user(s) that you want to allow to use IndieAuth and assign them the “indieauth” role\n\tUpdate your home page template to add the link elements inside the <head> element:\n\t<?=$modules->get('ProcessIndieAuth')->getLinkElements();?>\n\n\nThis should result in three <link> elements in the source HTML:\n\n\n<head>\n    <link rel=\"indieauth-metadata\" href=\"/indieauth-metadata-endpoint/\">\n    <link rel=\"authorization_endpoint\" href=\"/authorization-endpoint/\">\n    <link rel=\"token_endpoint\" href=\"/token-endpoint/\">\n</head>\n\nSign In\n\nTo test signing in with IndieAuth, visit indielogin.com and enter your domain name. Follow the prompts to authenticate and you should end up back on indielogin.com with a success message.\n\n screenshot \n\nThe authentication prompt when signing in with IndieAuth\n\n\n\nSign In and Authorize\n\nTo authorize an application with IndieAuth, your site will first need a module that uses access tokens. I have a Micropub for ProcessWire module in development that does that. Micropub is a standard that lets you publish to your site using third-party clients. If you’d like to try it out, follow the instructions on GitHub to install it.\n\nAfter installing, visit Quill and enter your domain name. Follow the prompts and note the additional fields for “scope” and “expiration,” since you are authorizing an application to interact with your site. After successfully authorizing, try to post a short note from Quill. Quill should redirect you to the new post if it was successful.\n\nFor a list of other Micropub clients you can try, see https://indieweb.org/Micropub/Clients.\n\n screenshot \n\nThe authorization prompt\n\n\n\nAdmin and Options\n\nIn the admin, you can see which applications you have granted access tokens to. You can see when each token was issued, last accessed, and its expiration. You can also manually revoke a token at any time. Navigate to: Access > IndieAuth.\n\n screenshot \n\nThe admin page displaying access tokens you have granted\n\n\n\nThere are a couple options in the admin at: Modules > Configure > ProcessIndieAuth:\n\n\n\tDefault access token lifetime (in seconds): This defaults to 14 days and is what appears in the authorization screenshot above.\n\tAutomatically remove access tokens after expiration (enabled by default): When enabled, the site checks approximately every six hours and removes expired access tokens. Regardless of whether this option is enabled, the module will reject any application attempting to use an expired access token. Since access tokens cannot (currently) have their expiration extended, I recommend keeping this option enabled so the admin list stays tidy and current.\n\n\nFinally, this module writes some admin logs. Access those at: Setup > Logs > indieauth\n\nMore About IndieAuth\n\nIf you’re interested in more details about IndieAuth, I recommend the article “OAuth for the Open Web” by Aaron Parecki (or the video presentation). If you are interested in implementing IndieAuth in your project, see the IndieAuth specification."
+              }
+            ],
+            "published": [
+              "2022-07-04 15:18-0700"
+            ],
+            "syndication": [
+              "https://news.indieweb.org/en",
+              "https://processwire.com/talk/topic/26220-module-indieauth-for-processwire/",
+              "https://twitter.com/gRegorLove/status/1544096341986402304"
+            ],
+            "bridgy-omit-link": [
+              "https://news.indieweb.org/en",
+              "https://processwire.com/talk/topic/26220-module-indieauth-for-processwire/",
+              "https://twitter.com/gRegorLove/status/1544096341986402304"
+            ],
+            "updated": [
+              "2022-07-15 14:55-0700"
+            ],
+            "category": [
+              "indieweb",
+              "processwire"
+            ],
+            "author": [
+              "https://gregorlove.com/"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": [
+        "h-geo"
+      ],
+      "properties": {
+        "latitude": [
+          "32.74813"
+        ],
+        "longitude": [
+          "-117.139240"
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "canonical": [
+      "https://gregorlove.com/"
+    ],
+    "icon": [
+      "https://gregorlove.com/favicon.ico?v5"
+    ],
+    "apple-touch-icon": [
+      "https://gregorlove.com/images/gregorlove-mobile.png"
+    ],
+    "stylesheet": [
+      "https://gregorlove.com/site/assets/css/gRegorLove.css?v=dfd6da438dabd8da268a8bd73022ca39"
+    ],
+    "hub": [
+      "https://gregorlove.superfeedr.com/"
+    ],
+    "self": [
+      "https://gregorlove.com/"
+    ],
+    "alternate": [
+      "https://gregorlove.com/articles.atom"
+    ],
+    "openid.server": [
+      "https://indieauth.com/openid"
+    ],
+    "openid.delegate": [
+      "https://gregorlove.com/"
+    ],
+    "indieauth-metadata": [
+      "https://gregorlove.com/indieauth-metadata-endpoint/"
+    ],
+    "authorization_endpoint": [
+      "https://gregorlove.com/authorization-endpoint/"
+    ],
+    "token_endpoint": [
+      "https://gregorlove.com/token-endpoint/"
+    ],
+    "micropub": [
+      "https://gregorlove.com/micropub/"
+    ],
+    "microsub": [
+      "https://aperture.p3k.io/microsub/74"
+    ],
+    "authn": [
+      "https://twitter.com/gRegorLove",
+      "https://github.com/gRegorLove"
+    ],
+    "me": [
+      "https://twitter.com/gRegorLove",
+      "https://github.com/gRegorLove",
+      "https://www.instagram.com/gregorlove/",
+      "https://keybase.io/gregorlove",
+      "https://micro.blog/gRegorLove"
+    ],
+    "pgpkey": [
+      "https://gregorlove.com/public-key.asc"
+    ],
+    "feed": [
+      "https://gregorlove.com/notes/"
+    ]
+  },
+  "rel-urls": {
+    "https://gregorlove.com/": {
+      "rels": [
+        "canonical"
+      ]
+    },
+    "https://gregorlove.com/favicon.ico?v5": {
+      "rels": [
+        "icon"
+      ]
+    },
+    "https://gregorlove.com/images/gregorlove-mobile.png": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://gregorlove.com/site/assets/css/gRegorLove.css?v=dfd6da438dabd8da268a8bd73022ca39": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://gregorlove.superfeedr.com/": {
+      "rels": [
+        "hub"
+      ]
+    },
+    "https://gregorlove.com/articles.atom": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "gRegorLove.com Articles (Atom)",
+      "type": "application/atom+xml"
+    },
+    "https://indieauth.com/openid": {
+      "rels": [
+        "openid.server"
+      ]
+    },
+    "https://gregorlove.com/indieauth-metadata-endpoint/": {
+      "rels": [
+        "indieauth-metadata"
+      ]
+    },
+    "https://gregorlove.com/authorization-endpoint/": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://gregorlove.com/token-endpoint/": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://gregorlove.com/micropub/": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://aperture.p3k.io/microsub/74": {
+      "rels": [
+        "microsub"
+      ]
+    },
+    "https://twitter.com/gRegorLove": {
+      "rels": [
+        "authn",
+        "me"
+      ]
+    },
+    "https://github.com/gRegorLove": {
+      "rels": [
+        "authn",
+        "me"
+      ]
+    },
+    "https://www.instagram.com/gregorlove/": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://keybase.io/gregorlove": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://micro.blog/gRegorLove": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://gregorlove.com/public-key.asc": {
+      "rels": [
+        "pgpkey"
+      ],
+      "type": "application/pgp-keys"
+    },
+    "https://gregorlove.com/notes/": {
+      "rels": [
+        "feed"
+      ],
+      "title": "gRegorLove.com: Notes",
+      "type": "text/html",
+      "text": "Notes"
+    }
+  }
+}

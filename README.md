@@ -5,18 +5,18 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 | Rank | Actions | User |
 |-----:|--------:|:-----|
 | **1** | 143 | gregorlove.com |
-| **2** | 120 | loqi.me |
-| **3** | 115 | tantek.com |
+| **2** | 118 | loqi.me |
+| **3** | 113 | tantek.com |
 | **4** | 66 | jamesg.blog |
 | **5** | 24 | cali.jamesg.blog |
 | **6** | 21 | beesbuzz.biz |
 | **7** | 19 | campegg.com |
-| **8** | 15 | jacky.wtf |
-| **9** | 14 | david.shanske.com |
-| **10** | 13 | jamesg.coffee |
-| **11** | 13 | lqdev.me |
-| **12** | 13 | www.ciccarello.me |
-| **13** | 11 | tracydurnell.com |
+| **8** | 14 | david.shanske.com |
+| **9** | 13 | jamesg.coffee |
+| **10** | 13 | lqdev.me |
+| **11** | 13 | www.ciccarello.me |
+| **12** | 11 | tracydurnell.com |
+| **13** | 9 | jacky.wtf |
 | **14** | 9 | www.hammyhavoc.com |
 | **15** | 7 | nicksimson.com |
 | **16** | 7 | www.jvt.me |
@@ -37,17 +37,16 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 | **31** | 1 | kevincox.ca |
 | **32** | 1 | marksuth.dev |
 | **33** | 1 | matienzo.org |
-| **34** | 1 | mikevdv.dev |
-| **35** | 1 | omz13.com |
-| **36** | 1 | pauho.net |
-| **37** | 1 | ramblinggit.com |
-| **38** | 1 | shindakun.dev |
-| **39** | 1 | sixtwothree.org |
+| **34** | 1 | omz13.com |
+| **35** | 1 | pauho.net |
+| **36** | 1 | ramblinggit.com |
+| **37** | 1 | shindakun.dev |
+| **38** | 1 | sixtwothree.org |
 
 
 ## Colophon
 
-Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 20 August 2022 at 6:32:04 UTC.
+Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 21 August 2022 at 3:45:08 UTC.
 
 ## License
 

@@ -1,0 +1,267 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "url": [
+          "https://unrelenting.technology/"
+        ],
+        "uid": [
+          "https://unrelenting.technology/"
+        ]
+      },
+      "children": [
+        {
+          "type": [
+            "h-feed"
+          ],
+          "properties": {
+            "url": [
+              "https://unrelenting.technology/posts"
+            ],
+            "author": [
+              "https://unrelenting.technology/"
+            ]
+          },
+          "children": [
+            {
+              "type": [
+                "h-entry"
+              ],
+              "properties": {
+                "url": [
+                  "https://unrelenting.technology/notes/2022-01-26-22-46-56"
+                ],
+                "uid": [
+                  "https://unrelenting.technology/notes/2022-01-26-22-46-56"
+                ],
+                "published": [
+                  "2022-01-26T22:46:56Z"
+                ],
+                "content": [
+                  {
+                    "html": "<p>Upgraded my gaming OS install to Windows 11.\nTook several hours because of me trying to be “clever” with bootloaders back when I was installing 10.</p>\n<p>So, error 0x800701b1 when updating means Windows is confused about UEFI boot entries.\nIn my case, the Windows SSD had no ESP (just the one NTFS partition… that <em>did</em> have an EFI directory <em>on</em> it somehow?!), while the other SSD had everything on its ESP — rEFInd, FreeBSD <code>loader.efi</code>, and Windows Boot Manager.\nIt all worked fine, but turns out <code>bcdedit</code> is really confused about this setup and spews some error about a nonexistent or unrecognized device.\nFiddling with it and stuff actually broke my Windows install in a weird way (first it booted into safe mode, then any boot would result in a BSOD related to kernel exception something).\nBooting a Windows-to-Go install from an external hard drive, shrinking the NTFS partition (damn that takes ages on a 2TB SSD) and adding an ESP fixed the install, and I was able to update to Windows 11 just fine.</p>\n<p>This is kinda my fault for ending up with such a bizzare setup but I still wanna say, “ARRGGHHH Stupid Windows!!”</p>",
+                    "value": "Upgraded my gaming OS install to Windows 11.\nTook several hours because of me trying to be “clever” with bootloaders back when I was installing 10.\nSo, error 0x800701b1 when updating means Windows is confused about UEFI boot entries.\nIn my case, the Windows SSD had no ESP (just the one NTFS partition… that did have an EFI directory on it somehow?!), while the other SSD had everything on its ESP — rEFInd, FreeBSD loader.efi, and Windows Boot Manager.\nIt all worked fine, but turns out bcdedit is really confused about this setup and spews some error about a nonexistent or unrecognized device.\nFiddling with it and stuff actually broke my Windows install in a weird way (first it booted into safe mode, then any boot would result in a BSOD related to kernel exception something).\nBooting a Windows-to-Go install from an external hard drive, shrinking the NTFS partition (damn that takes ages on a 2TB SSD) and adding an ESP fixed the install, and I was able to update to Windows 11 just fine.\nThis is kinda my fault for ending up with such a bizzare setup but I still wanna say, “ARRGGHHH Stupid Windows!!”"
+                  }
+                ]
+              }
+            },
+            {
+              "type": [
+                "h-entry"
+              ],
+              "properties": {
+                "url": [
+                  "https://unrelenting.technology/notes/2022-01-11-13-35-45"
+                ],
+                "uid": [
+                  "https://unrelenting.technology/notes/2022-01-11-13-35-45"
+                ],
+                "published": [
+                  "2022-01-11T13:35:45Z"
+                ],
+                "content": [
+                  {
+                    "html": "<figure>\n\t\t\n\t\t\t<img src=\"https://dl.unrelenting.technology/ferrispark-r0.jpg\" alt=\"\" class=\"u-photo\">\n\t\t\n\t</figure>\n\n\t\t\n\t\n\n\t\n\n\t<p>My first PCB project is a success! It’s a <a href=\"https://github.com/unrelentingtech/ferrispark\">tiny STM32L1 board</a>.\nUSB in Rust works on it after <a href=\"https://github.com/stm32-rs/stm32l1xx-hal/pull/14\">some development</a> (yeah the Rust HAL for the L1 series was the one that wasn’t maintained…)</p>",
+                    "value": "My first PCB project is a success! It’s a tiny STM32L1 board.\nUSB in Rust works on it after some development (yeah the Rust HAL for the L1 series was the one that wasn’t maintained…)"
+                  }
+                ],
+                "photo": [
+                  {
+                    "value": "https://dl.unrelenting.technology/ferrispark-r0.jpg",
+                    "alt": ""
+                  }
+                ]
+              }
+            },
+            {
+              "type": [
+                "h-entry"
+              ],
+              "properties": {
+                "url": [
+                  "https://unrelenting.technology/notes/2021-12-31-19-24-15"
+                ],
+                "uid": [
+                  "https://unrelenting.technology/notes/2021-12-31-19-24-15"
+                ],
+                "published": [
+                  "2021-12-31T19:24:15Z"
+                ],
+                "content": [
+                  {
+                    "html": "<p>Happy new year! Since I haven’t been posted in a while, here’s what I’ve been up to lately:</p>\n<ul>\n<li>adopted <a href=\"https://wezfurlong.org/wezterm/\">Wezterm</a> as my terminal emulator, contributing a bunch of (mostly Wayland-related) <a href=\"https://github.com/wez/wezterm/pulls?q=is%3Apr+author%3Aunrelentingtech\">patches</a> in process</li>\n<li>figured out <a href=\"https://github.com/unrelentingtech/micloudfaker\">a minimal tool</a> to make Xiaomi power strips work without the “cloud”</li>\n<li>saw a SIMD-accelerated <code>tac</code> line-reversing utility and immediately <a href=\"https://github.com/neosmart/tac/pull/5\">ported it to arm64 NEON/AdvSIMD</a>\n</li>\n<li>helped out with <a href=\"https://github.com/digmorepaka/thinkpad-firmware-patches/pull/13\">firmware</a> and <a href=\"https://github.com/hamishcoleman/thinkpad-ec/issues/203\">EC</a> (just testing with the latter) patches for the Thinkpad L430/L530</li>\n<li>developed a FreeBSD driver for the SPI keyboard/touchpad attachment in Apple MacBooks (currently only <a href=\"https://github.com/DankBSD/base\">in my fork</a> and only tested on the 2015 MBP, spibus-side prerequisites are in review)\n<ul>\n<li>related: got the Magic Trackpad 2 (which uses a compact packet format but similar surroundings to bcm5974) working too</li>\n</ul>\n</li>\n<li>started learning PCB design with <a href=\"https://horizon-eda.org/\">Horizon EDA</a>\n<ul>\n<li>which has <em>of course</em> resulted in making <a href=\"https://github.com/horizon-eda/horizon/pull/639\">some new tools</a> for it</li>\n</ul>\n</li>\n<li>found bugs in <a href=\"https://github.com/rui314/mold/issues/152\">the mold linker</a> and <a href=\"https://github.com/zlib-ng/zlib-ng/issues/1088\">zlib-ng</a>\n</li>\n<li>made new <a href=\"https://wayfire.org/\">Wayfire</a> plugins: <a href=\"https://github.com/DankBSD/wf-globalgestures\">wf-globalgestures</a>, <a href=\"https://github.com/DankBSD/wf-dynspaces\">wf-dynspaces</a>, <a href=\"https://github.com/DankBSD/wf-touchpad-gesture-drag\">wf-touchpad-gesture-drag</a> (yeah, turns out 3-finger drag is easy with current libinput: it’s a hold-cancel-swipe sequence!)</li>\n<li>finally made a <a href=\"https://github.com/unrelentingtech/freebsd-embedded-hal\">freebsd-embedded-hal</a> Rust crate</li>\n<li>just now added dark mode to <a href=\"https://github.com/unrelentingtech/micro-panel\">micro-panel</a> where I’m writing this</li>\n</ul>\n<p>Unusually, I do have a legit new year’s resolution this time: I should blog more! Want to publish some long-form things here.</p>",
+                    "value": "Happy new year! Since I haven’t been posted in a while, here’s what I’ve been up to lately:\n\nadopted Wezterm as my terminal emulator, contributing a bunch of (mostly Wayland-related) patches in process\nfigured out a minimal tool to make Xiaomi power strips work without the “cloud”\nsaw a SIMD-accelerated tac line-reversing utility and immediately ported it to arm64 NEON/AdvSIMD\nhelped out with firmware and EC (just testing with the latter) patches for the Thinkpad L430/L530\ndeveloped a FreeBSD driver for the SPI keyboard/touchpad attachment in Apple MacBooks (currently only in my fork and only tested on the 2015 MBP, spibus-side prerequisites are in review)\n\nrelated: got the Magic Trackpad 2 (which uses a compact packet format but similar surroundings to bcm5974) working too\n\n\nstarted learning PCB design with Horizon EDA\n\nwhich has of course resulted in making some new tools for it\n\n\nfound bugs in the mold linker and zlib-ng\nmade new Wayfire plugins: wf-globalgestures, wf-dynspaces, wf-touchpad-gesture-drag (yeah, turns out 3-finger drag is easy with current libinput: it’s a hold-cancel-swipe sequence!)\nfinally made a freebsd-embedded-hal Rust crate\njust now added dark mode to micro-panel where I’m writing this\n\nUnusually, I do have a legit new year’s resolution this time: I should blog more! Want to publish some long-form things here."
+                  }
+                ]
+              }
+            },
+            {
+              "type": [
+                "h-entry"
+              ],
+              "properties": {
+                "url": [
+                  "https://unrelenting.technology/notes/2021-11-03-22-44-24"
+                ],
+                "uid": [
+                  "https://unrelenting.technology/notes/2021-11-03-22-44-24"
+                ],
+                "published": [
+                  "2021-11-03T22:44:24Z"
+                ],
+                "content": [
+                  {
+                    "html": "<p>Sometimes I waste hours of debugging on really really silly things…</p>\n<p>Why do I keep thinking that e.g. <code>0 || 69</code> (typically written with variables obviously) in C would return <code>69</code> rather than <code>1</code>?!\nWell it must be because C’s “booleans are just numbers” thing makes me think that the operators would also do… number things. No they don’t! &gt;_&lt;</p>",
+                    "value": "Sometimes I waste hours of debugging on really really silly things…\nWhy do I keep thinking that e.g. 0 || 69 (typically written with variables obviously) in C would return 69 rather than 1?!\nWell it must be because C’s “booleans are just numbers” thing makes me think that the operators would also do… number things. No they don’t! >_<"
+                  }
+                ]
+              }
+            },
+            {
+              "type": [
+                "h-entry"
+              ],
+              "properties": {
+                "url": [
+                  "https://unrelenting.technology/notes/2021-09-05-20-27-22"
+                ],
+                "uid": [
+                  "https://unrelenting.technology/notes/2021-09-05-20-27-22"
+                ],
+                "published": [
+                  "2021-09-05T20:27:22+00:00"
+                ],
+                "content": [
+                  {
+                    "html": "<p>Website redesign is live! Don’t have a good homepage yet but really liking how the post view looks now.\nPlus /photos is a gallery view now.</p>",
+                    "value": "Website redesign is live! Don’t have a good homepage yet but really liking how the post view looks now.\nPlus /photos is a gallery view now."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rels": {
+    "stylesheet": [
+      "https://unrelenting.technology/style.css?vsn=DFPcjWJ4unnH"
+    ],
+    "icon": [
+      "https://unrelenting.technology/favicon.svg?vsn=sObqXd61tpbN"
+    ],
+    "canonical": [
+      "https://unrelenting.technology/"
+    ],
+    "webmention": [
+      "https://webmention.io/unrelenting.technology/webmention"
+    ],
+    "hub": [
+      "https://pubsubhubbub.superfeedr.com/"
+    ],
+    "alternate": [
+      "https://granary.io/url?hub=https%3A%2F%2Fpubsubhubbub.superfeedr.com%2F&input=html&output=atom&url=https%3A%2F%2Funrelenting%2Etechnology",
+      "https://granary.io/url?hub=https%3A%2F%2Fpubsubhubbub.superfeedr.com%2F&input=html&output=atom&url=https%3A%2F%2Funrelenting%2Etechnology%2F",
+      "https://granary.io/url?hub=https%3A%2F%2Fpubsubhubbub.superfeedr.com%2F&input=html&output=as2&url=https%3A%2F%2Funrelenting%2Etechnology%2F"
+    ],
+    "home": [
+      "https://granary.io/url?hub=https%3A%2F%2Fpubsubhubbub.superfeedr.com%2F&input=html&output=atom&url=https%3A%2F%2Funrelenting%2Etechnology",
+      "https://unrelenting.technology/"
+    ],
+    "openid.delegate": [
+      "https://unrelenting.technology/"
+    ],
+    "openid.server": [
+      "https://openid.indieauth.com/openid"
+    ],
+    "feed": [
+      "https://unrelenting.technology/posts",
+      "https://unrelenting.technology/articles",
+      "https://unrelenting.technology/photos",
+      "https://unrelenting.technology/kb"
+    ]
+  },
+  "rel-urls": {
+    "https://unrelenting.technology/style.css?vsn=DFPcjWJ4unnH": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://unrelenting.technology/favicon.svg?vsn=sObqXd61tpbN": {
+      "rels": [
+        "icon"
+      ]
+    },
+    "https://unrelenting.technology/": {
+      "rels": [
+        "canonical"
+      ]
+    },
+    "https://webmention.io/unrelenting.technology/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://pubsubhubbub.superfeedr.com/": {
+      "rels": [
+        "hub"
+      ]
+    },
+    "https://granary.io/url?hub=https%3A%2F%2Fpubsubhubbub.superfeedr.com%2F&input=html&output=atom&url=https%3A%2F%2Funrelenting%2Etechnology": {
+      "rels": [
+        "alternate",
+        "home"
+      ],
+      "type": "application/atom+xml"
+    },
+    "https://granary.io/url?hub=https%3A%2F%2Fpubsubhubbub.superfeedr.com%2F&input=html&output=atom&url=https%3A%2F%2Funrelenting%2Etechnology%2F": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/atom+xml"
+    },
+    "https://granary.io/url?hub=https%3A%2F%2Fpubsubhubbub.superfeedr.com%2F&input=html&output=as2&url=https%3A%2F%2Funrelenting%2Etechnology%2F": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/activity+json"
+    },
+    "https://openid.indieauth.com/openid": {
+      "rels": [
+        "openid.server"
+      ]
+    },
+    "https://unrelenting.technology/posts": {
+      "rels": [
+        "feed"
+      ],
+      "type": "text/html",
+      "text": "\n\t\t\n\tPosts"
+    },
+    "https://unrelenting.technology/articles": {
+      "rels": [
+        "feed"
+      ],
+      "type": "text/html",
+      "text": "\n\t\t\n\tArticles"
+    },
+    "https://unrelenting.technology/photos": {
+      "rels": [
+        "feed"
+      ],
+      "type": "text/html",
+      "text": "\n\t\t\n\tPhotos"
+    },
+    "https://unrelenting.technology/kb": {
+      "rels": [
+        "feed"
+      ],
+      "type": "text/html",
+      "text": "\n\t\t\n\tKB"
+    }
+  }
+}

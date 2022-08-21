@@ -1,0 +1,37 @@
+{
+  "items": [],
+  "rels": {
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "me": [
+      "mailto:jamesg@jamesg.blog",
+      "https://github.com/capjamesg/"
+    ]
+  },
+  "rel-urls": {
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "mailto:jamesg@jamesg.blog": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://github.com/capjamesg/": {
+      "rels": [
+        "me"
+      ]
+    }
+  }
+}

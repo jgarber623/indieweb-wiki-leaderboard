@@ -1,0 +1,1207 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-feed"
+      ],
+      "properties": {
+        "name": [
+          "Barnaby Walters"
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "photo": [
+                {
+                  "value": "https://waterpigs.co.uk/photo-2021-04-22.jpg",
+                  "alt": ""
+                }
+              ],
+              "name": [
+                "Barnaby\n\t\t\tWalters"
+              ],
+              "url": [
+                "https://waterpigs.co.uk/",
+                "https://gurdy.is/",
+                "https://www.inaturalist.org/people/barnabywalters",
+                "http://indiewebcamp.com/User:WaterPigs.co.uk",
+                "https://twitter.com/BarnabyWalters",
+                "https://github.com/barnabywalters",
+                "https://bitbucket.org/barnabywalters",
+                "http://www.youtube.com/user/WaterpigMaster",
+                "http://soundcloud.com/barnabywalters",
+                "http://www.flickr.com/photos/53044388@N05/",
+                "http://uk.linkedin.com/pub/barnaby-walters/50/49/92a"
+              ],
+              "given-name": [
+                "Barnaby"
+              ],
+              "family-name": [
+                "Walters"
+              ],
+              "note": [
+                "Arranging atoms and pressurising air in a variety of manners, such as:\n\t\t\n\t\t\n\t\t\t🛠 building musical instruments\n\t\t\t🎼 playing music with\n\t\t\t\tgurdy\n\t\t\t\tvoice\n\t\t\t\tsynths\n\t\t\t\tpure data\n\t\t\t\tukulele\n\t\t\t\tdulcimer\n\t\t\t\taccordion\n\t\t\t\tblockflute\n\t\t\t\n\t\t\t📖 singing shape note/sacred harp\n\t\t\t🐧 watching wildlife\n\t\t\t🔌 tinkering with electronics\n\t\t\t⌨️ programming in python, occasionally js, previously php\n\t\t\t🚀 building the indieweb\n\t\t\t⚖ helping assess the Icelandic school system at Skólapúlsinn"
+              ],
+              "x-pronoun-nominative": [
+                "he"
+              ],
+              "x-pronoun-oblique": [
+                "him"
+              ],
+              "pronoun-posessive": [
+                "his"
+              ],
+              "email": [
+                "mailto:barnaby@waterpigs.co.uk"
+              ],
+              "key": [
+                "https://waterpigs.co.uk/118AD524.asc"
+              ]
+            },
+            "value": "Barnaby\n\t\t\tWalters"
+          }
+        ]
+      },
+      "children": [
+        {
+          "type": [
+            "h-as-note",
+            "h-entry"
+          ],
+          "properties": {
+            "summary": [
+              "$50 per month patrons vs $5 per month patrons, 1761 edition\r\n\r\n  \r\n\r\n  \r\n\r\nFrom imslp.org/wiki/Lessons_for_the_Harpsichord_(Jones%2C_John)"
+            ],
+            "content": [
+              {
+                "html": "<p>$50 per month patrons vs $5 per month patrons, 1761 edition</p>\r\n\r\n<p><img class=\"u-photo\" src=\"https://waterpigs.co.uk/img/screenshot-2022-08-04-at-133824.jpg\" alt=\"\"></p>\r\n\r\n<p><img class=\"u-photo\" src=\"https://waterpigs.co.uk/img/screenshot-2022-08-04-at-133834.jpg\" alt=\"\"></p>\r\n\r\n<p>From <a class=\"auto-link\" href=\"https://imslp.org/wiki/Lessons_for_the_Harpsichord_(Jones%2C_John)\">imslp.org/wiki/Lessons_for_the_Harpsichord_(Jones%2C_John)</a></p>",
+                "value": "$50 per month patrons vs $5 per month patrons, 1761 edition\r\n\r\n  \r\n\r\n  \r\n\r\nFrom imslp.org/wiki/Lessons_for_the_Harpsichord_(Jones%2C_John)"
+              }
+            ],
+            "photo": [
+              {
+                "value": "https://waterpigs.co.uk/img/screenshot-2022-08-04-at-133824.jpg",
+                "alt": ""
+              },
+              {
+                "value": "https://waterpigs.co.uk/img/screenshot-2022-08-04-at-133834.jpg",
+                "alt": ""
+              }
+            ],
+            "url": [
+              "https://waterpigs.co.uk/notes/5L8Bqk/"
+            ],
+            "published": [
+              "2022-08-04T11:50:45+00:00"
+            ],
+            "updated": [
+              "2022-08-18T00:06:41+00:00"
+            ]
+          },
+          "id": "note-5L8Bqk"
+        },
+        {
+          "type": [
+            "h-as-note",
+            "h-entry"
+          ],
+          "properties": {
+            "summary": [
+              "Finally got koreader and plato set up on my Kobo, and calibre set up for managing and converting ebooks. The default {author}/{title} file structure for moving ebooks to the reader doesn’t work at all for me, but fortunately(?) calibre supports no less than three different template languages allowing for very flexible ebook organisation schemes. These can be configured by opening the “Configure this Device” menu and editing the “Save Template” field.\r\n\r\nI ended up using this little script to organise books in a way which makes navigation easy for my collection:\r\n\r\nprogram:\r\n# If the book is in a series, make a folder for that series, and ensure books are in order\r\n# by prepending their series index to their file name.\r\nif (field('series')) then\r\n  strcat(field('series'), '/', field('series_index'),  ' - ', field('title'))\r\n# Otherwise, if a book has tags, make a folder for the first tag and put it there.\r\nelif (list_count(field('tags'), ',') > 0) then\r\n  strcat(sublist(field('tags'), 0, 1, ','), '/', field('title'))\r\n# Otherwise, simply place the book at the top level for easy access and future sorting.\r\nelse\r\n  field('title')\r\nfi\r\n\r\n\r\nA couple of books ended up in the wrong folders, presumably due to some error with tag ordering or metadata syncing, but it was quick to clear up manually in the filesystem."
+            ],
+            "content": [
+              {
+                "html": "<p>Finally got koreader and plato set up on my Kobo, and calibre set up for managing and converting ebooks. The default <code>{author}/{title}</code> file structure for moving ebooks to the reader doesn’t work at all for me, but fortunately(?) calibre supports <a href=\"https://manual.calibre-ebook.com/template_lang.html\">no less than three different template languages</a> allowing for very flexible ebook organisation schemes. These can be configured by opening the “Configure this Device” menu and editing the “Save Template” field.</p>\r\n\r\n<p>I ended up using this little script to organise books in a way which makes navigation easy for my collection:</p>\r\n\r\n<pre><code>program:\r\n# If the book is in a series, make a folder for that series, and ensure books are in order\r\n# by prepending their series index to their file name.\r\nif (field('series')) then\r\n  strcat(field('series'), '/', field('series_index'),  ' - ', field('title'))\r\n# Otherwise, if a book has tags, make a folder for the first tag and put it there.\r\nelif (list_count(field('tags'), ',') &gt; 0) then\r\n  strcat(sublist(field('tags'), 0, 1, ','), '/', field('title'))\r\n# Otherwise, simply place the book at the top level for easy access and future sorting.\r\nelse\r\n  field('title')\r\nfi\r\n</code></pre>\r\n\r\n<p>A couple of books ended up in the wrong folders, presumably due to some error with tag ordering or metadata syncing, but it was quick to clear up manually in the filesystem.</p>",
+                "value": "Finally got koreader and plato set up on my Kobo, and calibre set up for managing and converting ebooks. The default {author}/{title} file structure for moving ebooks to the reader doesn’t work at all for me, but fortunately(?) calibre supports no less than three different template languages allowing for very flexible ebook organisation schemes. These can be configured by opening the “Configure this Device” menu and editing the “Save Template” field.\r\n\r\nI ended up using this little script to organise books in a way which makes navigation easy for my collection:\r\n\r\nprogram:\r\n# If the book is in a series, make a folder for that series, and ensure books are in order\r\n# by prepending their series index to their file name.\r\nif (field('series')) then\r\n  strcat(field('series'), '/', field('series_index'),  ' - ', field('title'))\r\n# Otherwise, if a book has tags, make a folder for the first tag and put it there.\r\nelif (list_count(field('tags'), ',') > 0) then\r\n  strcat(sublist(field('tags'), 0, 1, ','), '/', field('title'))\r\n# Otherwise, simply place the book at the top level for easy access and future sorting.\r\nelse\r\n  field('title')\r\nfi\r\n\r\n\r\nA couple of books ended up in the wrong folders, presumably due to some error with tag ordering or metadata syncing, but it was quick to clear up manually in the filesystem."
+              }
+            ],
+            "url": [
+              "https://waterpigs.co.uk/notes/5KjNRh/"
+            ],
+            "published": [
+              "2022-07-11T22:25:42+00:00"
+            ],
+            "updated": [
+              "2022-07-11T22:27:18+00:00"
+            ]
+          },
+          "id": "note-5KjNRh"
+        },
+        {
+          "type": [
+            "h-as-note",
+            "h-entry"
+          ],
+          "properties": {
+            "summary": [
+              "For anyone who wants to play current patch Hollow Knight enemy randomiser but is confused about where to find it and doesn’t want to wade through/sign up for discord: here is the google docs list of HK mods linked from discord. Enemy Randomizer [1.5 port] is the one you’re looking for\r\n\r\nIf playing with item rando, I’d recommend NOT randomising boss geo or the coloseums, as both seem buggy and unreliable."
+            ],
+            "content": [
+              {
+                "html": "<p>For anyone who wants to play current patch Hollow Knight enemy randomiser but is confused about where to find it and doesn’t want to wade through/sign up for discord: <a class=\"auto-link\" href=\"https://docs.google.com/spreadsheets/d/1FsHZv_GA_ougN6yZ7HXslyTzT1PXfP_nYNNO2IAkBP0/edit?resourcekey#gid=1958593953&amp;fvid=2106924339\">here is the google docs list of HK mods</a> linked from discord. Enemy Randomizer [1.5 port] is the one you’re looking for</p>\r\n\r\n<p>If playing with item rando, I’d recommend NOT randomising boss geo or the coloseums, as both seem buggy and unreliable.</p>",
+                "value": "For anyone who wants to play current patch Hollow Knight enemy randomiser but is confused about where to find it and doesn’t want to wade through/sign up for discord: here is the google docs list of HK mods linked from discord. Enemy Randomizer [1.5 port] is the one you’re looking for\r\n\r\nIf playing with item rando, I’d recommend NOT randomising boss geo or the coloseums, as both seem buggy and unreliable."
+              }
+            ],
+            "url": [
+              "https://waterpigs.co.uk/notes/5KYLrE/"
+            ],
+            "published": [
+              "2022-06-29T20:51:14+00:00"
+            ],
+            "updated": [
+              "2022-07-03T00:38:54+00:00"
+            ]
+          },
+          "id": "note-5KYLrE"
+        },
+        {
+          "type": [
+            "h-as-note",
+            "h-entry"
+          ],
+          "properties": {
+            "summary": [
+              "Heads-up for anyone in need of some OPA1642 op-amps, Mouser has a few in stock, get ‘em while they’re hot"
+            ],
+            "content": [
+              {
+                "html": "<p>Heads-up for anyone in need of some OPA1642 op-amps, <a href=\"https://www.mouser.at/ProductDetail/Texas-Instruments/OPA1642AIDR?qs=%2Fqzd9s%252BcLd5XsvkIemKm8g%3D%3D\">Mouser has a few in stock</a>, get ‘em while they’re hot</p>\r\n\r\n\r\n<a href=\"https://brid.gy/publish/twitter\"></a>",
+                "value": "Heads-up for anyone in need of some OPA1642 op-amps, Mouser has a few in stock, get ‘em while they’re hot"
+              }
+            ],
+            "url": [
+              "https://waterpigs.co.uk/notes/5KXDXx/"
+            ],
+            "published": [
+              "2022-06-28T13:31:57+00:00"
+            ],
+            "updated": [
+              "2022-06-28T13:35:30+00:00"
+            ]
+          },
+          "id": "note-5KXDXx"
+        },
+        {
+          "type": [
+            "h-as-note",
+            "h-entry"
+          ],
+          "properties": {
+            "summary": [
+              "The “every single tweet has a pop culture gif” era of science communication is a curse and my fervent desire for it to end is balanced only by horrified anticipation of what might replace it"
+            ],
+            "content": [
+              {
+                "html": "<p>The “every single tweet has a pop culture gif” era of science communication is a curse and my fervent desire for it to end is balanced only by horrified anticipation of what might replace it</p>\n\n\n<a href=\"https://brid.gy/publish/twitter\"></a>",
+                "value": "The “every single tweet has a pop culture gif” era of science communication is a curse and my fervent desire for it to end is balanced only by horrified anticipation of what might replace it"
+              }
+            ],
+            "url": [
+              "https://waterpigs.co.uk/notes/5KRCoN/"
+            ],
+            "published": [
+              "2022-06-22T12:48:22+00:00"
+            ],
+            "updated": [
+              "2022-08-21T03:45:12+00:00"
+            ]
+          },
+          "id": "note-5KRCoN"
+        },
+        {
+          "type": [
+            "h-as-note",
+            "h-entry"
+          ],
+          "properties": {
+            "summary": [
+              "Never realised scorpion flies have such long noses"
+            ],
+            "content": [
+              {
+                "html": "<p>Never realised scorpion flies have such long noses</p>\n\n<p><img class=\"u-photo\" src=\"https://waterpigs.co.uk/img/2860663e-0fe2-4437-957e-661767c86545-1-105-c.jpeg\" alt=\"\"></p>\n\n\n<a href=\"https://brid.gy/publish/twitter\"></a>",
+                "value": "Never realised scorpion flies have such long noses"
+              }
+            ],
+            "photo": [
+              {
+                "value": "https://waterpigs.co.uk/img/2860663e-0fe2-4437-957e-661767c86545-1-105-c.jpeg",
+                "alt": ""
+              }
+            ],
+            "url": [
+              "https://waterpigs.co.uk/notes/5KPETo/"
+            ],
+            "published": [
+              "2022-06-20T14:27:48+00:00"
+            ],
+            "updated": [
+              "2022-08-21T03:45:12+00:00"
+            ]
+          },
+          "id": "note-5KPETo"
+        },
+        {
+          "type": [
+            "h-as-article",
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "CityNatureChallenge 2022 Wien Notable Observations"
+            ],
+            "url": [
+              "https://waterpigs.co.uk/articles/citynaturechallenge-2022-wien-notable-observations/"
+            ],
+            "summary": [
+              "Vienna’s 2022 City Nature Challenge had more observers, observations and species than last year, and many observations still need final IDs. Here’s some of the more notable ones."
+            ],
+            "published": [
+              "2022-05-04T20:11:42+00:00"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-as-note",
+            "h-entry"
+          ],
+          "properties": {
+            "summary": [
+              "Not the most notable, but possibly my favourite #CityNatureChallenge 2022 sighting: a dancing caterpillar!\r\n\r\n\r\n\r\n  \r\n\r\n\r\n\r\n\r\nSadly, this isn’t an extremely rare musical species which will revolutionise animal rhythmic entrainment research! It’s a defensive behaviour triggered in this case by the fly which I was actually trying to photograph."
+            ],
+            "content": [
+              {
+                "html": "<p>Not the most notable, but possibly my favourite <a rel=\"tag\" href=\"https://waterpigs.co.uk/tags/CityNatureChallenge\">#CityNatureChallenge</a> 2022 sighting: a dancing caterpillar!</p>\r\n\r\n<p><video controls class=\"u-video\" src=\"https://waterpigs.co.uk/img/p1110511-smol.mp4\">\r\n<a href=\"https://waterpigs.co.uk/img/p1110511-smol.mp4\">\r\n<img src=\"https://waterpigs.co.uk/img/screenshot-2022-05-03-at-174022.png\" alt=\"\">\r\n</a>\r\n</video></p>\r\n\r\n\r\n<p>Sadly, this isn’t an extremely rare musical species which will revolutionise animal rhythmic entrainment research! It’s a defensive behaviour triggered in this case by the fly which I was actually trying to photograph.</p>",
+                "value": "Not the most notable, but possibly my favourite #CityNatureChallenge 2022 sighting: a dancing caterpillar!\r\n\r\n\r\n\r\n  \r\n\r\n\r\n\r\n\r\nSadly, this isn’t an extremely rare musical species which will revolutionise animal rhythmic entrainment research! It’s a defensive behaviour triggered in this case by the fly which I was actually trying to photograph."
+              }
+            ],
+            "video": [
+              "https://waterpigs.co.uk/img/p1110511-smol.mp4"
+            ],
+            "url": [
+              "https://waterpigs.co.uk/notes/5JaG8V/"
+            ],
+            "published": [
+              "2022-05-03T16:08:29+00:00"
+            ],
+            "updated": [
+              "2022-05-03T16:13:26+00:00"
+            ]
+          },
+          "id": "note-5JaG8V"
+        },
+        {
+          "type": [
+            "h-as-note",
+            "h-entry"
+          ],
+          "properties": {
+            "summary": [
+              "#CNC 2022 Day 4 Highlights — was pretty tired at this point so just went for a short walk through the Laaer Wald. Not much of note, but I did finally get to see a bristly millipede\n\n  \n\nAlso found a buzzing spider and a weevil with an amusingly long nose\n\n  \n\n  \n\nThat’s a total of 260 observations over the four days, of which 106 have already been IDed to species. I’ll wait a few days before posting my usual unique and notable species analysis, and will update it a few times as more observations get IDs."
+            ],
+            "content": [
+              {
+                "html": "<p><a rel=\"tag\" href=\"https://waterpigs.co.uk/tags/CNC\">#CNC</a> 2022 Day 4 Highlights — was pretty tired at this point so just went for a short walk through the Laaer Wald. Not much of note, but I did finally get to see a <a href=\"https://www.inaturalist.org/observations/114777933\">bristly millipede</a></p>\n\n<p><img class=\"u-photo\" src=\"https://waterpigs.co.uk/img/p1110495.jpeg\" alt=\"\"></p>\n\n<p>Also found a <a href=\"https://www.inaturalist.org/observations/114777948\">buzzing spider</a> and a <a href=\"https://www.inaturalist.org/observations/114777956\">weevil</a> with an amusingly long nose</p>\n\n<p><img class=\"u-photo\" src=\"https://waterpigs.co.uk/img/p1110518-.jpeg\" alt=\"\"></p>\n\n<p><img class=\"u-photo\" src=\"https://waterpigs.co.uk/img/p1110525.jpeg\" alt=\"\"></p>\n\n<p>That’s a total of 260 observations over the four days, of which 106 have already been IDed to species. I’ll wait a few days before posting my usual unique and notable species analysis, and will update it a few times as more observations get IDs.</p>\n\n\n<a href=\"https://brid.gy/publish/twitter\"></a>",
+                "value": "#CNC 2022 Day 4 Highlights — was pretty tired at this point so just went for a short walk through the Laaer Wald. Not much of note, but I did finally get to see a bristly millipede\n\n  \n\nAlso found a buzzing spider and a weevil with an amusingly long nose\n\n  \n\n  \n\nThat’s a total of 260 observations over the four days, of which 106 have already been IDed to species. I’ll wait a few days before posting my usual unique and notable species analysis, and will update it a few times as more observations get IDs."
+              }
+            ],
+            "photo": [
+              {
+                "value": "https://waterpigs.co.uk/img/p1110495.jpeg",
+                "alt": ""
+              },
+              {
+                "value": "https://waterpigs.co.uk/img/p1110518-.jpeg",
+                "alt": ""
+              },
+              {
+                "value": "https://waterpigs.co.uk/img/p1110525.jpeg",
+                "alt": ""
+              }
+            ],
+            "url": [
+              "https://waterpigs.co.uk/notes/5JaG4E/"
+            ],
+            "published": [
+              "2022-05-03T16:04:14+00:00"
+            ],
+            "updated": [
+              "2022-08-21T03:45:12+00:00"
+            ]
+          },
+          "id": "note-5JaG4E"
+        },
+        {
+          "type": [
+            "h-as-note",
+            "h-entry"
+          ],
+          "properties": {
+            "summary": [
+              "#CNC 2022 (belated) Day 3 Highlights! Rain during the day, so I went out at night.\n\nSeveral Flat-backed millipedes and Blue Ground Beetles\n\n  \n\n  \n\nA little Flower Longhorn Beetle and a Laena viennensis\n\n  \n\n  \n\nA pseudoscorpion\n\n  \n\nA Bronze Ground Beetle and a Four-spotted Carrion Beetle"
+            ],
+            "content": [
+              {
+                "html": "<p><a rel=\"tag\" href=\"https://waterpigs.co.uk/tags/CNC\">#CNC</a> 2022 (belated) Day 3 Highlights! Rain during the day, so I went out at night.</p>\n\n<p>Several <a href=\"https://www.inaturalist.org/observations/114422730\">Flat-backed millipedes</a> and <a href=\"https://www.inaturalist.org/observations/114422737\">Blue Ground Beetles</a></p>\n\n<p><img class=\"u-photo\" alt=\"\" src=\"https://waterpigs.co.uk/img/p1110297.jpeg\"></p>\n\n<p><img class=\"u-photo\" alt=\"\" src=\"https://waterpigs.co.uk/img/p1110302.jpeg\"></p>\n\n<p>A little <a href=\"https://www.inaturalist.org/observations/114422891\">Flower Longhorn Beetle</a> and a <a href=\"https://www.inaturalist.org/observations/114422894\">Laena viennensis</a></p>\n\n<p><img class=\"u-photo\" alt=\"\" src=\"https://waterpigs.co.uk/img/p1110399.jpeg\"></p>\n\n<p><img class=\"u-photo\" alt=\"\" src=\"https://waterpigs.co.uk/img/p1110402.jpeg\"></p>\n\n<p>A <a href=\"https://www.inaturalist.org/observations/114422905\">pseudoscorpion</a></p>\n\n<p><img class=\"u-photo\" src=\"https://waterpigs.co.uk/img/p1110413.jpeg\" alt=\"\"></p>\n\n<p>A <a href=\"https://www.inaturalist.org/observations/114422907\">Bronze Ground Beetle</a> and a <a href=\"https://www.inaturalist.org/observations/114422914\">Four-spotted Carrion Beetle</a></p>\n\n<p><img class=\"u-photo\" src=\"https://waterpigs.co.uk/img/p1110426.jpeg\" alt=\"\"></p>\n\n<p><img class=\"u-photo\" src=\"https://waterpigs.co.uk/img/p1110435.jpeg\" alt=\"\"></p>\n\n\n<a href=\"https://brid.gy/publish/twitter\"></a>",
+                "value": "#CNC 2022 (belated) Day 3 Highlights! Rain during the day, so I went out at night.\n\nSeveral Flat-backed millipedes and Blue Ground Beetles\n\n  \n\n  \n\nA little Flower Longhorn Beetle and a Laena viennensis\n\n  \n\n  \n\nA pseudoscorpion\n\n  \n\nA Bronze Ground Beetle and a Four-spotted Carrion Beetle"
+              }
+            ],
+            "photo": [
+              {
+                "value": "https://waterpigs.co.uk/img/p1110297.jpeg",
+                "alt": ""
+              },
+              {
+                "value": "https://waterpigs.co.uk/img/p1110302.jpeg",
+                "alt": ""
+              },
+              {
+                "value": "https://waterpigs.co.uk/img/p1110399.jpeg",
+                "alt": ""
+              },
+              {
+                "value": "https://waterpigs.co.uk/img/p1110402.jpeg",
+                "alt": ""
+              },
+              {
+                "value": "https://waterpigs.co.uk/img/p1110413.jpeg",
+                "alt": ""
+              },
+              {
+                "value": "https://waterpigs.co.uk/img/p1110426.jpeg",
+                "alt": ""
+              },
+              {
+                "value": "https://waterpigs.co.uk/img/p1110435.jpeg",
+                "alt": ""
+              }
+            ],
+            "url": [
+              "https://waterpigs.co.uk/notes/5J_EMG/"
+            ],
+            "published": [
+              "2022-05-02T14:21:16+00:00"
+            ],
+            "updated": [
+              "2022-08-21T03:45:12+00:00"
+            ]
+          },
+          "id": "note-5J_EMG"
+        },
+        {
+          "type": [
+            "h-as-note",
+            "h-entry"
+          ],
+          "properties": {
+            "summary": [
+              "#CNC 2022 Day 2 Highlights! Only 90 observations today, despite much more time outside — yesterday cleared out the low-hanging fruit.\n\nI think there’s a European pond turtle hiding in this picture somewhere\n\n  \n\nThis Aesculapian Snake was much less camera-shy!\n\n  \n\nAnd I finally saw an Ant Woodlouse"
+            ],
+            "content": [
+              {
+                "html": "<p><a rel=\"tag\" href=\"https://waterpigs.co.uk/tags/CNC\">#CNC</a> 2022 Day 2 Highlights! Only 90 observations today, despite much more time outside — yesterday cleared out the low-hanging fruit.</p>\n\n<p>I think there’s a <a href=\"https://www.inaturalist.org/observations/113927276\">European pond turtle</a> hiding in this picture somewhere</p>\n\n<p><img class=\"u-photo\" src=\"https://waterpigs.co.uk/img/p1100959.jpeg\" alt=\"\"></p>\n\n<p>This <a href=\"https://www.inaturalist.org/observations/113927355\">Aesculapian Snake</a> was much less camera-shy!</p>\n\n<p><img class=\"u-photo\" src=\"https://waterpigs.co.uk/img/p1110052.jpeg\" alt=\"\"></p>\n\n<p>And I finally saw an <a href=\"https://www.inaturalist.org/observations/113927370\">Ant Woodlouse</a></p>\n\n<p><img class=\"u-photo\" src=\"https://waterpigs.co.uk/img/p1110068.jpeg\" alt=\"\"></p>\n\n\n<a href=\"https://brid.gy/publish/twitter\"></a>",
+                "value": "#CNC 2022 Day 2 Highlights! Only 90 observations today, despite much more time outside — yesterday cleared out the low-hanging fruit.\n\nI think there’s a European pond turtle hiding in this picture somewhere\n\n  \n\nThis Aesculapian Snake was much less camera-shy!\n\n  \n\nAnd I finally saw an Ant Woodlouse"
+              }
+            ],
+            "photo": [
+              {
+                "value": "https://waterpigs.co.uk/img/p1100959.jpeg",
+                "alt": ""
+              },
+              {
+                "value": "https://waterpigs.co.uk/img/p1110052.jpeg",
+                "alt": ""
+              },
+              {
+                "value": "https://waterpigs.co.uk/img/p1110068.jpeg",
+                "alt": ""
+              }
+            ],
+            "url": [
+              "https://waterpigs.co.uk/notes/5JYNTX/"
+            ],
+            "published": [
+              "2022-04-30T22:27:31+00:00"
+            ],
+            "updated": [
+              "2022-08-21T03:45:12+00:00"
+            ]
+          },
+          "id": "note-5JYNTX"
+        },
+        {
+          "type": [
+            "h-as-note",
+            "h-entry"
+          ],
+          "properties": {
+            "summary": [
+              "#CNC 2022 Day 1 Highlights! Spent a few hours wandering around Wienerberg and ended up with 97 observations (so close to a clean 100!)\r\n\r\nA Barred Umber\r\n\r\n  \r\n\r\nMany Greater Bee Flies\r\n\r\n  \r\n\r\nSome tiny jumping spiders\r\n\r\n  \r\n\r\nAnd an obligatory hamster"
+            ],
+            "content": [
+              {
+                "html": "<p><a rel=\"tag\" href=\"https://waterpigs.co.uk/tags/CNC\">#CNC</a> 2022 Day 1 Highlights! Spent a few hours wandering around Wienerberg and ended up with 97 observations (so close to a clean 100!)</p>\r\n\r\n<p>A <a href=\"https://www.inaturalist.org/observations/113486725\">Barred Umber</a></p>\r\n\r\n<p><img class=\"u-photo\" src=\"https://waterpigs.co.uk/img/p1100622.jpeg\" alt=\"\"></p>\r\n\r\n<p>Many <a href=\"https://www.inaturalist.org/observations/113486746\">Greater Bee Flies</a></p>\r\n\r\n<p><img class=\"u-photo\" src=\"https://waterpigs.co.uk/img/p1100680.jpeg\" alt=\"\"></p>\r\n\r\n<p>Some tiny <a href=\"https://www.inaturalist.org/observations/113486783\">jumping spiders</a></p>\r\n\r\n<p><img class=\"u-photo\" src=\"https://waterpigs.co.uk/img/p1100727.jpeg\" alt=\"\"></p>\r\n\r\n<p>And an <a href=\"https://www.inaturalist.org/observations/113490383\">obligatory hamster</a></p>\r\n\r\n<p><img class=\"u-photo\" src=\"https://waterpigs.co.uk/img/p1100911.jpeg\" alt=\"\"></p>\r\n\r\n\r\n<a href=\"https://brid.gy/publish/twitter\"></a>",
+                "value": "#CNC 2022 Day 1 Highlights! Spent a few hours wandering around Wienerberg and ended up with 97 observations (so close to a clean 100!)\r\n\r\nA Barred Umber\r\n\r\n  \r\n\r\nMany Greater Bee Flies\r\n\r\n  \r\n\r\nSome tiny jumping spiders\r\n\r\n  \r\n\r\nAnd an obligatory hamster"
+              }
+            ],
+            "photo": [
+              {
+                "value": "https://waterpigs.co.uk/img/p1100622.jpeg",
+                "alt": ""
+              },
+              {
+                "value": "https://waterpigs.co.uk/img/p1100680.jpeg",
+                "alt": ""
+              },
+              {
+                "value": "https://waterpigs.co.uk/img/p1100727.jpeg",
+                "alt": ""
+              },
+              {
+                "value": "https://waterpigs.co.uk/img/p1100911.jpeg",
+                "alt": ""
+              }
+            ],
+            "url": [
+              "https://waterpigs.co.uk/notes/5JXMv_/"
+            ],
+            "published": [
+              "2022-04-29T21:55:34+00:00"
+            ],
+            "updated": [
+              "2022-04-29T22:05:57+00:00"
+            ]
+          },
+          "id": "note-5JXMv_"
+        },
+        {
+          "type": [
+            "h-as-note",
+            "h-entry"
+          ],
+          "properties": {
+            "summary": [
+              "Astonishing UI design at the OBI self-checkout today. For non-german-speakers, the text reads “Please think about the heyOBI App!” and the “answer options” require no translation\n\n (the two answer options read “1. ok” and “2. ok”. You can also choose to cancel, which is apparenly something different?"
+            ],
+            "content": [
+              {
+                "html": "<p>Astonishing UI design at the OBI self-checkout today. For non-german-speakers, the text reads “Please think about the heyOBI App!” and the “answer options” require no translation</p>\n\n<p><img class=\"u-photo\" src=\"https://waterpigs.co.uk/img/d68f3b47-0a8e-428b-9c27-81ee4362df69-1-105-c.jpeg\" alt=\"(the two answer options read “1. ok” and “2. ok”. You can also choose to cancel, which is apparenly something different?\"></p>\n\n\n<a href=\"https://brid.gy/publish/twitter\"></a>",
+                "value": "Astonishing UI design at the OBI self-checkout today. For non-german-speakers, the text reads “Please think about the heyOBI App!” and the “answer options” require no translation\n\n (the two answer options read “1. ok” and “2. ok”. You can also choose to cancel, which is apparenly something different?"
+              }
+            ],
+            "photo": [
+              {
+                "value": "https://waterpigs.co.uk/img/d68f3b47-0a8e-428b-9c27-81ee4362df69-1-105-c.jpeg",
+                "alt": "(the two answer options read “1. ok” and “2. ok”. You can also choose to cancel, which is apparenly something different?"
+              }
+            ],
+            "url": [
+              "https://waterpigs.co.uk/notes/5JXMir/"
+            ],
+            "published": [
+              "2022-04-29T21:43:51+00:00"
+            ],
+            "updated": [
+              "2022-08-21T03:45:13+00:00"
+            ]
+          },
+          "id": "note-5JXMir"
+        },
+        {
+          "type": [
+            "h-as-note",
+            "h-entry"
+          ],
+          "properties": {
+            "summary": [
+              "Small PSA for anyone else late to the game: don’t bother buying Elden Ring on the bandai namco store, it’s just a slow, inconvenient way of getting a steam code via email."
+            ],
+            "content": [
+              {
+                "html": "<p>Small PSA for anyone else late to the game: don’t bother buying Elden Ring on the bandai namco store, it’s just a slow, inconvenient way of getting a steam code via email.</p>\n\n\n<a href=\"https://brid.gy/publish/twitter\"></a>",
+                "value": "Small PSA for anyone else late to the game: don’t bother buying Elden Ring on the bandai namco store, it’s just a slow, inconvenient way of getting a steam code via email."
+              }
+            ],
+            "url": [
+              "https://waterpigs.co.uk/notes/5JVKed/"
+            ],
+            "published": [
+              "2022-04-27T19:39:38+00:00"
+            ],
+            "updated": [
+              "2022-08-21T03:45:13+00:00"
+            ]
+          },
+          "id": "note-5JVKed"
+        },
+        {
+          "type": [
+            "h-as-note",
+            "h-entry"
+          ],
+          "properties": {
+            "summary": [
+              "Only two weeks until the 238th Halibut Day! Put it in your calendars now. It’ll be the first Untouchable halibut day for 22 years, very exciting.\r\n\r\nhttps://www.youtube.com/watch?v=fvHeeIdBuYY"
+            ],
+            "content": [
+              {
+                "html": "<p>Only two weeks until the 238th Halibut Day! Put it in your calendars now. It’ll be the first <a href=\"https://en.wikipedia.org/wiki/Untouchable_number\">Untouchable</a> halibut day for 22 years, very exciting.</p>\r\n\r\n<p><a class=\"auto-link\" href=\"https://www.youtube.com/watch?v=fvHeeIdBuYY\">https://www.youtube.com/watch?v=fvHeeIdBuYY</a> <iframe class=\"youtube-player auto-embed figure\" width=\"100%\" height=\"385\" style=\"border:0\" src=\"https://www.youtube.com/embed/fvHeeIdBuYY\"></iframe></p>",
+                "value": "Only two weeks until the 238th Halibut Day! Put it in your calendars now. It’ll be the first Untouchable halibut day for 22 years, very exciting.\r\n\r\nhttps://www.youtube.com/watch?v=fvHeeIdBuYY"
+              }
+            ],
+            "url": [
+              "https://waterpigs.co.uk/notes/5JEJ5R/"
+            ],
+            "published": [
+              "2022-04-12T18:05:25+00:00"
+            ],
+            "updated": [
+              "2022-04-12T18:05:51+00:00"
+            ]
+          },
+          "id": "note-5JEJ5R"
+        },
+        {
+          "type": [
+            "h-as-note",
+            "h-entry"
+          ],
+          "properties": {
+            "summary": [
+              "Showing Aaron the local wild hamsters:\r\n\r\n  \r\n\r\nThis one was particularly friendly!"
+            ],
+            "content": [
+              {
+                "html": "<p>Showing <a class=\"h-card\" href=\"https://aaronparecki.com/\">Aaron</a> the local wild hamsters:</p>\r\n\r\n<p><img class=\"u-photo\" src=\"https://waterpigs.co.uk/img/2022-03-29-hamster.jpeg\" alt=\"\"></p>\r\n\r\n<p>This one was particularly friendly!</p>\r\n\r\n<p><img class=\"u-photo\" src=\"https://waterpigs.co.uk/img/2022-03-29-aaron-hamster.jpeg\" alt=\"\"></p>",
+                "value": "Showing Aaron the local wild hamsters:\r\n\r\n  \r\n\r\nThis one was particularly friendly!"
+              }
+            ],
+            "photo": [
+              {
+                "value": "https://waterpigs.co.uk/img/2022-03-29-hamster.jpeg",
+                "alt": ""
+              },
+              {
+                "value": "https://waterpigs.co.uk/img/2022-03-29-aaron-hamster.jpeg",
+                "alt": ""
+              }
+            ],
+            "url": [
+              "https://waterpigs.co.uk/notes/5J0KbR/"
+            ],
+            "published": [
+              "2022-03-29T19:36:25+00:00"
+            ],
+            "updated": [
+              "2022-04-01T02:17:51+00:00"
+            ]
+          },
+          "id": "note-5J0KbR",
+          "children": [
+            {
+              "type": [
+                "h-card"
+              ],
+              "properties": {
+                "name": [
+                  "Aaron"
+                ],
+                "url": [
+                  "https://aaronparecki.com/"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": [
+            "h-as-note",
+            "h-entry"
+          ],
+          "properties": {
+            "summary": [
+              "Easily one of the worst front-end web failure modes I’ve ever seen, apparently caused by Ghostery blocking access to gapi, which is completely unnecessary for reading the article\r\n\r\n[video]"
+            ],
+            "content": [
+              {
+                "html": "<p>Easily one of the worst front-end web failure modes I’ve ever seen, apparently caused by Ghostery blocking access to gapi, which is completely unnecessary for reading the article</p>\r\n\r\n<p><video class=\"u-video\" src=\"https://waterpigs.co.uk/img/axios-js-failure-mode.mp4\" controls loop autoplay><a href=\"https://waterpigs.co.uk/img/axios-js-failure-mode.mp4\">[video]</a></video></p>",
+                "value": "Easily one of the worst front-end web failure modes I’ve ever seen, apparently caused by Ghostery blocking access to gapi, which is completely unnecessary for reading the article\r\n\r\n[video]"
+              }
+            ],
+            "video": [
+              "https://waterpigs.co.uk/img/axios-js-failure-mode.mp4"
+            ],
+            "url": [
+              "https://waterpigs.co.uk/notes/5HwZg/"
+            ],
+            "published": [
+              "2022-03-25T00:33:41+00:00"
+            ],
+            "updated": [
+              "2022-03-25T00:40:00+00:00"
+            ]
+          },
+          "id": "note-5HwZg"
+        },
+        {
+          "type": [
+            "h-as-note",
+            "h-entry"
+          ],
+          "properties": {
+            "in-reply-to": [
+              {
+                "type": [
+                  "h-cite"
+                ],
+                "properties": {
+                  "name": [
+                    "a post on twitter.com"
+                  ],
+                  "url": [
+                    "https://twitter.com/seaotta/status/1499075448352874497"
+                  ]
+                },
+                "value": "a post on twitter.com"
+              }
+            ],
+            "name": [
+              "@seaotta the best way is to start writing them!\n\nBut IMO a big part is normalising the idea that anything which people would currently write as a tweet thread would be better off as a blog post. Normalising the idea the blog posts don’t need to be polished, or to have stock photos, or even a title.\n\nAnd then build on that: tweet what would have been the first tweet of the thread, with a link to the full post. Use something like brid.gy to gather responses from twitter as a comment thread.\n\nMight be worth replying to threads we enjoy with “hey, I love your writing, do you have a blog?” to remind people that they exist and would be read"
+            ],
+            "summary": [
+              "@seaotta the best way is to start writing them!\n\nBut IMO a big part is normalising the idea that anything which people would currently write as a tweet thread would be better off as a blog post. Normalising the idea the blog posts don’t need to be polished, or to have stock photos, or even a title.\n\nAnd then build on that: tweet what would have been the first tweet of the thread, with a link to the full post. Use something like brid.gy to gather responses from twitter as a comment thread.\n\nMight be worth replying to threads we enjoy with “hey, I love your writing, do you have a blog?” to remind people that they exist and would be read"
+            ],
+            "content": [
+              {
+                "html": "<p><a class=\"auto-link h-cassis-username\" href=\"https://twitter.com/seaotta\">@seaotta</a> the best way is to start writing them!</p>\n\n<p>But IMO a big part is normalising the idea that anything which people would currently write as a tweet thread would be better off as a blog post. Normalising the idea the blog posts don’t need to be polished, or to have stock photos, or even a title.</p>\n\n<p>And then build on that: tweet what would have been the first tweet of the thread, with a link to the full post. Use something like <a class=\"auto-link\" href=\"http://brid.gy/\">brid.gy</a> to gather responses from twitter as a comment thread.</p>\n\n<p>Might be worth replying to threads we enjoy with “hey, I love your writing, do you have a blog?” to remind people that they exist and would be read</p>\n\n\n<a href=\"https://brid.gy/publish/twitter\"></a>",
+                "value": "@seaotta the best way is to start writing them!\n\nBut IMO a big part is normalising the idea that anything which people would currently write as a tweet thread would be better off as a blog post. Normalising the idea the blog posts don’t need to be polished, or to have stock photos, or even a title.\n\nAnd then build on that: tweet what would have been the first tweet of the thread, with a link to the full post. Use something like brid.gy to gather responses from twitter as a comment thread.\n\nMight be worth replying to threads we enjoy with “hey, I love your writing, do you have a blog?” to remind people that they exist and would be read"
+              }
+            ],
+            "url": [
+              "https://waterpigs.co.uk/notes/5H_Nnj/"
+            ],
+            "published": [
+              "2022-03-03T22:47:44+00:00"
+            ],
+            "updated": [
+              "2022-08-21T03:45:13+00:00"
+            ]
+          },
+          "id": "note-5H_Nnj",
+          "children": [
+            {
+              "type": [
+                "h-cassis-username"
+              ],
+              "properties": {
+                "name": [
+                  "@seaotta"
+                ],
+                "url": [
+                  "https://twitter.com/seaotta"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": [
+            "h-as-note",
+            "h-entry"
+          ],
+          "properties": {
+            "in-reply-to": [
+              {
+                "type": [
+                  "h-cite"
+                ],
+                "properties": {
+                  "url": [
+                    "https://aaronparecki.com/2022/02/21/17/facebook"
+                  ],
+                  "published": [
+                    "2022-02-21T15:19:05-08:00"
+                  ],
+                  "author": [
+                    {
+                      "type": [
+                        "h-card"
+                      ],
+                      "properties": {
+                        "photo": [
+                          {
+                            "value": "https://aaronparecki.com/images/profile.jpg",
+                            "alt": ""
+                          }
+                        ],
+                        "url": [
+                          "https://waterpigs.co.uk/"
+                        ]
+                      },
+                      "value": "Aaron Parecki"
+                    }
+                  ],
+                  "content": [
+                    "I sold a washer/dryer on Facebook Marketplace, and now it's showing me new listings for washer/dryers. Glad to see the algorithm hard at work here."
+                  ]
+                },
+                "value": "↪\n\t\t\n\t\t\n\t\t \n\t\t\n\t\t\n\t\t\t\t\t\t\t  \n\t\t\t\t\t\tAaron Parecki:\n\n\t\t\t\t\t\t\n\t\t\t\tI sold a washer/dryer on Facebook Marketplace, and now it's showing me new listings for washer/dryers. Glad to see the algorithm hard at work here."
+              }
+            ],
+            "name": [
+              "Apparently FB learned nothing from the classic “I bought a toilet seat on amazon and now amazon’s trying as hard as it can to fuel the toilet-seat-collecting hobby I’m apparently hooked on” problem"
+            ],
+            "summary": [
+              "Apparently FB learned nothing from the classic “I bought a toilet seat on amazon and now amazon’s trying as hard as it can to fuel the toilet-seat-collecting hobby I’m apparently hooked on” problem"
+            ],
+            "content": [
+              {
+                "html": "<p>Apparently FB learned nothing from the classic “I bought a toilet seat on amazon and now amazon’s trying as hard as it can to fuel the toilet-seat-collecting hobby I’m apparently hooked on” problem</p>",
+                "value": "Apparently FB learned nothing from the classic “I bought a toilet seat on amazon and now amazon’s trying as hard as it can to fuel the toilet-seat-collecting hobby I’m apparently hooked on” problem"
+              }
+            ],
+            "url": [
+              "https://waterpigs.co.uk/notes/5HQPc3/"
+            ],
+            "published": [
+              "2022-02-21T23:37:03+00:00"
+            ],
+            "updated": [
+              "2022-02-22T01:10:09+00:00"
+            ]
+          },
+          "id": "note-5HQPc3"
+        },
+        {
+          "type": [
+            "h-as-note",
+            "h-entry"
+          ],
+          "properties": {
+            "summary": [
+              "A little-appreciated benefit of (British) English speakers learning a european language: you can look up recipes in that language and be guaranteed that they’ll use metric units"
+            ],
+            "content": [
+              {
+                "html": "<p>A little-appreciated benefit of (British) English speakers learning a european language: you can look up recipes in that language and be guaranteed that they’ll use metric units</p>",
+                "value": "A little-appreciated benefit of (British) English speakers learning a european language: you can look up recipes in that language and be guaranteed that they’ll use metric units"
+              }
+            ],
+            "url": [
+              "https://waterpigs.co.uk/notes/5HLM1b/"
+            ],
+            "published": [
+              "2022-02-17T21:01:36+00:00"
+            ],
+            "updated": [
+              "2022-02-17T21:01:57+00:00"
+            ]
+          },
+          "id": "note-5HLM1b"
+        }
+      ]
+    }
+  ],
+  "rels": {
+    "openid.delegate": [
+      "https://waterpigs.co.uk/"
+    ],
+    "openid.server": [
+      "https://www.indieauth.com/openid"
+    ],
+    "hub": [
+      "https://pubsubhubbub.superfeedr.com/"
+    ],
+    "self": [
+      "https://waterpigs.co.uk/"
+    ],
+    "alternate": [
+      "https://waterpigs.co.uk/services/microformats-to-atom/?url=https%3A//waterpigs.co.uk/"
+    ],
+    "http://webmention.org/": [
+      "https://waterpigs.co.uk/mentions/webmention/?wmtoken=eyJpdiI6ImhjVzVud3NnUzl0TTlDRUNCN0tyOEE9PSIsInZhbHVlIjoiKytqRDN2SkFCWHVkU1ErVXo0VGhubUhCb1gySXpMQWRhSlBKSm5IOWJOVUxEUmZ1SXJtcTNzU28ySHVvRGVzRiIsIm1hYyI6ImNjMGU3OTc4MzdlNjc5MDdhYzU2ZDQ5ZDlmNzM3OWY2OWFkOGRiMmJkNDEyZDcyY2I4YTMzM2RkNDY0NzM5N2EifQ%3D%3D"
+    ],
+    "webmention": [
+      "https://waterpigs.co.uk/mentions/webmention/?wmtoken=eyJpdiI6ImhjVzVud3NnUzl0TTlDRUNCN0tyOEE9PSIsInZhbHVlIjoiKytqRDN2SkFCWHVkU1ErVXo0VGhubUhCb1gySXpMQWRhSlBKSm5IOWJOVUxEUmZ1SXJtcTNzU28ySHVvRGVzRiIsIm1hYyI6ImNjMGU3OTc4MzdlNjc5MDdhYzU2ZDQ5ZDlmNzM3OWY2OWFkOGRiMmJkNDEyZDcyY2I4YTMzM2RkNDY0NzM5N2EifQ%3D%3D"
+    ],
+    "pingback": [
+      "http://webmention.io/webmention?forward=https%3A%2F%2Fwaterpigs.co.uk%2Fmentions%2Fwebmention%2F%3Fwmtoken%3DeyJpdiI6ImhjVzVud3NnUzl0TTlDRUNCN0tyOEE9PSIsInZhbHVlIjoiKytqRDN2SkFCWHVkU1ErVXo0VGhubUhCb1gySXpMQWRhSlBKSm5IOWJOVUxEUmZ1SXJtcTNzU28ySHVvRGVzRiIsIm1hYyI6ImNjMGU3OTc4MzdlNjc5MDdhYzU2ZDQ5ZDlmNzM3OWY2OWFkOGRiMmJkNDEyZDcyY2I4YTMzM2RkNDY0NzM5N2EifQ%253D%253D"
+    ],
+    "icon": [
+      "https://waterpigs.co.uk/photo-2021-04-22-719w.jpg"
+    ],
+    "shortcut": [
+      "https://waterpigs.co.uk/photo-2021-04-22-719w.jpg"
+    ],
+    "apple-touch-icon-precomposed": [
+      "https://waterpigs.co.uk/photo-2021-04-22-719w.jpg"
+    ],
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://waterpigs.co.uk/token/"
+    ],
+    "micropub": [
+      "https://waterpigs.co.uk/"
+    ],
+    "stylesheet": [
+      "https://waterpigs.co.uk/css/styles.css",
+      "https://waterpigs.co.uk/js/leaflet/leaflet.css"
+    ],
+    "me": [
+      "https://waterpigs.co.uk/",
+      "https://gurdy.is/",
+      "mailto:barnaby@waterpigs.co.uk",
+      "https://www.inaturalist.org/people/barnabywalters",
+      "http://indiewebcamp.com/User:WaterPigs.co.uk",
+      "https://twitter.com/BarnabyWalters",
+      "https://github.com/barnabywalters",
+      "https://bitbucket.org/barnabywalters",
+      "http://www.youtube.com/user/WaterpigMaster",
+      "http://soundcloud.com/barnabywalters",
+      "http://www.flickr.com/photos/53044388@N05/",
+      "http://uk.linkedin.com/pub/barnaby-walters/50/49/92a"
+    ],
+    "pgpkey": [
+      "https://waterpigs.co.uk/118AD524.asc"
+    ],
+    "pgp-fingerprint": [
+      "https://waterpigs.co.uk/notes/4kV1w7/"
+    ],
+    "bookmark": [
+      "https://waterpigs.co.uk/notes/5L8Bqk/",
+      "https://waterpigs.co.uk/notes/5KjNRh/",
+      "https://waterpigs.co.uk/notes/5KYLrE/",
+      "https://waterpigs.co.uk/notes/5KXDXx/",
+      "https://waterpigs.co.uk/notes/5KRCoN/",
+      "https://waterpigs.co.uk/notes/5KPETo/",
+      "https://waterpigs.co.uk/articles/citynaturechallenge-2022-wien-notable-observations/",
+      "https://waterpigs.co.uk/notes/5JaG8V/",
+      "https://waterpigs.co.uk/notes/5JaG4E/",
+      "https://waterpigs.co.uk/notes/5J_EMG/",
+      "https://waterpigs.co.uk/notes/5JYNTX/",
+      "https://waterpigs.co.uk/notes/5JXMv_/",
+      "https://waterpigs.co.uk/notes/5JXMir/",
+      "https://waterpigs.co.uk/notes/5JVKed/",
+      "https://waterpigs.co.uk/notes/5JEJ5R/",
+      "https://waterpigs.co.uk/notes/5J0KbR/",
+      "https://waterpigs.co.uk/notes/5HwZg/",
+      "https://waterpigs.co.uk/notes/5H_Nnj/",
+      "https://waterpigs.co.uk/notes/5HQPc3/",
+      "https://waterpigs.co.uk/notes/5HLM1b/"
+    ],
+    "tag": [
+      "https://waterpigs.co.uk/tags/CityNatureChallenge",
+      "https://waterpigs.co.uk/tags/CNC"
+    ],
+    "in-reply-to": [
+      "https://twitter.com/seaotta/status/1499075448352874497",
+      "https://aaronparecki.com/2022/02/21/17/facebook"
+    ],
+    "previous": [
+      "https://waterpigs.co.uk/?before=2022-02-17T21%3A01%3A36%2B00%3A00"
+    ],
+    "license": [
+      "http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"
+    ]
+  },
+  "rel-urls": {
+    "https://waterpigs.co.uk/": {
+      "rels": [
+        "openid.delegate"
+      ]
+    },
+    "https://www.indieauth.com/openid": {
+      "rels": [
+        "openid.server"
+      ]
+    },
+    "https://pubsubhubbub.superfeedr.com/": {
+      "rels": [
+        "hub"
+      ]
+    },
+    "https://waterpigs.co.uk/services/microformats-to-atom/?url=https%3A//waterpigs.co.uk/": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/atom+xml"
+    },
+    "https://waterpigs.co.uk/mentions/webmention/?wmtoken=eyJpdiI6ImhjVzVud3NnUzl0TTlDRUNCN0tyOEE9PSIsInZhbHVlIjoiKytqRDN2SkFCWHVkU1ErVXo0VGhubUhCb1gySXpMQWRhSlBKSm5IOWJOVUxEUmZ1SXJtcTNzU28ySHVvRGVzRiIsIm1hYyI6ImNjMGU3OTc4MzdlNjc5MDdhYzU2ZDQ5ZDlmNzM3OWY2OWFkOGRiMmJkNDEyZDcyY2I4YTMzM2RkNDY0NzM5N2EifQ%3D%3D": {
+      "rels": [
+        "http://webmention.org/",
+        "webmention"
+      ]
+    },
+    "http://webmention.io/webmention?forward=https%3A%2F%2Fwaterpigs.co.uk%2Fmentions%2Fwebmention%2F%3Fwmtoken%3DeyJpdiI6ImhjVzVud3NnUzl0TTlDRUNCN0tyOEE9PSIsInZhbHVlIjoiKytqRDN2SkFCWHVkU1ErVXo0VGhubUhCb1gySXpMQWRhSlBKSm5IOWJOVUxEUmZ1SXJtcTNzU28ySHVvRGVzRiIsIm1hYyI6ImNjMGU3OTc4MzdlNjc5MDdhYzU2ZDQ5ZDlmNzM3OWY2OWFkOGRiMmJkNDEyZDcyY2I4YTMzM2RkNDY0NzM5N2EifQ%253D%253D": {
+      "rels": [
+        "pingback"
+      ]
+    },
+    "https://waterpigs.co.uk/photo-2021-04-22-719w.jpg": {
+      "rels": [
+        "icon",
+        "shortcut"
+      ]
+    },
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://waterpigs.co.uk/token/": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://waterpigs.co.uk/css/styles.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://waterpigs.co.uk/js/leaflet/leaflet.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://gurdy.is/": {
+      "rels": [
+        "me"
+      ],
+      "text": "Hurdy Gurdy Business"
+    },
+    "mailto:barnaby@waterpigs.co.uk": {
+      "rels": [
+        "me"
+      ],
+      "text": "barnaby@waterpigs.co.uk"
+    },
+    "https://www.inaturalist.org/people/barnabywalters": {
+      "rels": [
+        "me"
+      ],
+      "text": "iNaturalist"
+    },
+    "http://indiewebcamp.com/User:WaterPigs.co.uk": {
+      "rels": [
+        "me"
+      ],
+      "text": "IndieWebCamp"
+    },
+    "https://twitter.com/BarnabyWalters": {
+      "rels": [
+        "me"
+      ],
+      "text": "Twitter"
+    },
+    "https://github.com/barnabywalters": {
+      "rels": [
+        "me"
+      ],
+      "text": "Github"
+    },
+    "https://bitbucket.org/barnabywalters": {
+      "rels": [
+        "me"
+      ],
+      "text": "Bitbucket"
+    },
+    "http://www.youtube.com/user/WaterpigMaster": {
+      "rels": [
+        "me"
+      ],
+      "text": "YouTube"
+    },
+    "http://soundcloud.com/barnabywalters": {
+      "rels": [
+        "me"
+      ],
+      "text": "SoundCloud"
+    },
+    "http://www.flickr.com/photos/53044388@N05/": {
+      "rels": [
+        "me"
+      ],
+      "text": "Flickr"
+    },
+    "http://uk.linkedin.com/pub/barnaby-walters/50/49/92a": {
+      "rels": [
+        "me"
+      ],
+      "text": "LinkedIn"
+    },
+    "https://waterpigs.co.uk/118AD524.asc": {
+      "rels": [
+        "pgpkey"
+      ],
+      "type": "application/pgp-keys",
+      "text": "my key"
+    },
+    "https://waterpigs.co.uk/notes/4kV1w7/": {
+      "rels": [
+        "pgp-fingerprint"
+      ],
+      "text": "fingerprint"
+    },
+    "https://waterpigs.co.uk/notes/5L8Bqk/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\t\t\t\t\n\t\t\t\t\t11:50 4th August 2022\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t(updated)\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t—\t\t\t\t\n1  \t\t\t"
+    },
+    "https://waterpigs.co.uk/notes/5KjNRh/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\t\t\t\t\n\t\t\t\t\t22:25 11th July 2022\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t(updated)\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t—\t\t\t\t\n1  \t\t\t"
+    },
+    "https://waterpigs.co.uk/notes/5KYLrE/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\t\t\t\t\n\t\t\t\t\t20:51 29th June 2022\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t(updated)\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t"
+    },
+    "https://waterpigs.co.uk/notes/5KXDXx/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\t\t\t\t\n\t\t\t\t\t13:31 28th June 2022\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t(updated)\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t"
+    },
+    "https://waterpigs.co.uk/notes/5KRCoN/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\t\t\t\t\n\t\t\t\t\t12:48 22nd June 2022\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t(updated)\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t—\t\t\t\t\n1  \t\t\t"
+    },
+    "https://waterpigs.co.uk/notes/5KPETo/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\t\t\t\t\n\t\t\t\t\t14:27 20th June 2022\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t(updated)\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t"
+    },
+    "https://waterpigs.co.uk/articles/citynaturechallenge-2022-wien-notable-observations/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "CityNatureChallenge 2022 Wien Notable Observations"
+    },
+    "https://waterpigs.co.uk/tags/CityNatureChallenge": {
+      "rels": [
+        "tag"
+      ],
+      "text": "#CityNatureChallenge"
+    },
+    "https://waterpigs.co.uk/notes/5JaG8V/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\t\t\t\t\n\t\t\t\t\t16:08 3rd May 2022\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t(updated)\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t—\t\t\t\t\n1  \t\t\t"
+    },
+    "https://waterpigs.co.uk/tags/CNC": {
+      "rels": [
+        "tag"
+      ],
+      "text": "#CNC"
+    },
+    "https://waterpigs.co.uk/notes/5JaG4E/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\t\t\t\t\n\t\t\t\t\t16:04 3rd May 2022\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t(updated)\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t—\t\t\t\t\n1  \t\t\t"
+    },
+    "https://waterpigs.co.uk/notes/5J_EMG/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\t\t\t\t\n\t\t\t\t\t14:21 2nd May 2022\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t(updated)\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t"
+    },
+    "https://waterpigs.co.uk/notes/5JYNTX/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\t\t\t\t\n\t\t\t\t\t22:27 30th April 2022\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t(updated)\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t—\t\t\t\t\n1  \t\t\t"
+    },
+    "https://waterpigs.co.uk/notes/5JXMv_/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\t\t\t\t\n\t\t\t\t\t21:55 29th April 2022\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t(updated)\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t"
+    },
+    "https://waterpigs.co.uk/notes/5JXMir/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\t\t\t\t\n\t\t\t\t\t21:43 29th April 2022\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t(updated)\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t"
+    },
+    "https://waterpigs.co.uk/notes/5JVKed/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\t\t\t\t\n\t\t\t\t\t19:39 27th April 2022\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t(updated)\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t"
+    },
+    "https://waterpigs.co.uk/notes/5JEJ5R/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\t\t\t\t\n\t\t\t\t\t18:05 12th April 2022\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t(updated)\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t"
+    },
+    "https://waterpigs.co.uk/notes/5J0KbR/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\t\t\t\t\n\t\t\t\t\t19:36 29th March 2022\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t(updated)\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t—\t\t\t\t\n1  4  \t\t\t"
+    },
+    "https://waterpigs.co.uk/notes/5HwZg/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\t\t\t\t\n\t\t\t\t\t00:33 25th March 2022\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t(updated)\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t—\t\t\t\t\n3  \t\t\t"
+    },
+    "https://twitter.com/seaotta/status/1499075448352874497": {
+      "rels": [
+        "in-reply-to"
+      ],
+      "text": "a post on twitter.com"
+    },
+    "https://waterpigs.co.uk/notes/5H_Nnj/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\t\t\t\t\n\t\t\t\t\t22:47 3rd March 2022\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t(updated)\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t"
+    },
+    "https://aaronparecki.com/2022/02/21/17/facebook": {
+      "rels": [
+        "in-reply-to"
+      ],
+      "text": "\n\t\t↪\n\t\t"
+    },
+    "https://waterpigs.co.uk/notes/5HQPc3/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\t\t\t\t\n\t\t\t\t\t23:37 21st February 2022\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t(updated)\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t—\t\t\t\t\n1  \t\t\t"
+    },
+    "https://waterpigs.co.uk/notes/5HLM1b/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\t\t\t\t\n\t\t\t\t\t21:01 17th February 2022\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t(updated)\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t"
+    },
+    "https://waterpigs.co.uk/?before=2022-02-17T21%3A01%3A36%2B00%3A00": {
+      "rels": [
+        "previous"
+      ],
+      "text": "← Older"
+    },
+    "http://creativecommons.org/licenses/by-sa/3.0/deed.en_US": {
+      "rels": [
+        "license"
+      ]
+    }
+  }
+}

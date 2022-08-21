@@ -1,0 +1,331 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "name": [
+          "James"
+        ],
+        "url": [
+          "https://jamesg.blog/"
+        ],
+        "given-name": [
+          "James"
+        ],
+        "nickname": [
+          "capjamesg"
+        ],
+        "pronoun": [
+          "https://jamesg.blog/he",
+          "https://jamesg.blog/him",
+          "https://jamesg.blog/his"
+        ],
+        "region": [
+          "Scotland"
+        ],
+        "country-name": [
+          "UK"
+        ],
+        "note": [
+          "I like to build for the web. I am experimenting with functional programming and want to learn more about computer science."
+        ],
+        "email": [
+          "mailto:readers@jamesg.blog"
+        ],
+        "photo": [
+          {
+            "value": "https://jamesg.blog/assets/coffeeshop.jpg",
+            "alt": "James sitting in a coffee shop, happily staring at a cup of coffee."
+          }
+        ],
+        "logo": [
+          {
+            "value": "https://jamesg.blog/assets/coffeeshop.jpg",
+            "alt": "James sitting in a coffee shop, happily staring at a cup of coffee."
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-feed"
+      ],
+      "properties": {
+        "name": [
+          "Blog Posts 📝"
+        ],
+        "summary": [
+          "Below are the most recent articles I have written."
+        ]
+      },
+      "children": [
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "TIL: Terminal shortcuts"
+            ],
+            "url": [
+              "https://jamesg.blog/2022/08/17/terminal-shortcuts/"
+            ],
+            "published": [
+              "/2022/08/"
+            ],
+            "category": [
+              "Programming"
+            ],
+            "summary": [
+              "I am continuing my foray into learning more about Linux and Unix. Over the last few days, I have learned about some shortcuts on the terminal that have made me think: \"I wish I knew this existed long ago.\" (I'm not sure if the shortcuts I have learned are portable to every terminal, but they work on macOS and should work on Linux too.)"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "TIL: Don't actually display the man pages"
+            ],
+            "url": [
+              "https://jamesg.blog/2022/08/15/man-pages/"
+            ],
+            "published": [
+              "/2022/08/"
+            ],
+            "category": [
+              "Programming"
+            ],
+            "summary": [
+              "I have installed Plan 9 on my Raspberry Pi. I am excited to start using it. I can't use Plan 9 yet because I need a new keyboard and mouse to use with my Pi. So, this evening I decided to peruse the online Plan 9 manual pages. I am excited and have been eagerly trying a few commands on my Mac to see what commands are also on my Mac."
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "TIL: Using sed to replace text in a file"
+            ],
+            "url": [
+              "https://jamesg.blog/2022/08/14/til-using-sed-replace-text/"
+            ],
+            "published": [
+              "/2022/08/"
+            ],
+            "category": [
+              "Programming"
+            ],
+            "summary": [
+              "For the last few days, the server on which this website (and many others I run!) started acting strangely. Every so often, nginx would stop working and I'd have to restart the service manually. I had restarted nginx two or three times over the last few days so I knew something wasn't right. I spent some time this afternoon figuring out what was wrong. I found an issue with certbot renewals and nginx that, when resolved, fixed the errors I found in nginx and the /var/log/syslog file on my computer."
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "A few things I just learned about Lisp"
+            ],
+            "url": [
+              "https://jamesg.blog/2022/08/12/a-few-things-i-learned-about-lisp/"
+            ],
+            "published": [
+              "/2022/08/"
+            ],
+            "category": [
+              "Programming"
+            ],
+            "summary": [
+              "I was trying to implement the Fisher-Yates algorithm earlier this evening. This algorithm lets you randomly shuffle the contents of a list. I wanted to provide a list of songs and return a shuffled list. I decided to use Lisp for this since I don't know much Lisp and I want to build my skills."
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Separating I/O and logic"
+            ],
+            "url": [
+              "https://jamesg.blog/2022/08/05/io-and-logic/"
+            ],
+            "published": [
+              "/2022/08/"
+            ],
+            "category": [
+              "Programming"
+            ],
+            "summary": [
+              "Earlier this week I watched Alex Chan's Sans I/O programming talk. In the talk, Alex argues the importance of separating I/O and program logic, with reference to a situation where his team was unable to use already-available parsing libraries for BagIt data because said libraries depended on local access to a file. This talk resonated with me because it made me realise I tend to couple I/O and logic in my code without realising it. I'd highly recommend watching the talk in full, or at least reading Alex's accompanying summary on their blog."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "rels": {
+    "stylesheet": [
+      "https://jamesg.blog/assets/styles/styles.css",
+      "https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    ],
+    "me": [
+      "mailto:jamesg@jamesg.blog",
+      "https://www.instagram.com/capjamesg/",
+      "https://indieweb.org/User:Jamesg.blog",
+      "https://github.com/capjamesg",
+      "https://sr.ht/~capjamesg/"
+    ],
+    "icon": [
+      "https://jamesg.blog/favicon.ico"
+    ],
+    "apple-touch-icon-precomposed": [
+      "https://jamesg.blog/favicon.ico"
+    ],
+    "alternate": [
+      "https://granary.io/url?input=html&output=rss&url=https%3A%2F%2Fjamesg.blog",
+      "https://granary.io/url?input=html&output=jsonfeed&url=https%3A%2F%2Fjamesg.blog"
+    ],
+    "canonical": [
+      "https://jamesg.blog/"
+    ],
+    "webmention": [
+      "https://webmention.io/jamesg.blog/webmention"
+    ],
+    "pingback": [
+      "https://webmention.io/jamesg.blog/xmlrpc"
+    ],
+    "micropub": [
+      "https://micropub.jamesg.blog/micropub"
+    ],
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "self": [
+      "https://jamesg.blog/"
+    ],
+    "hub": [
+      "https://websub.jamesg.blog/"
+    ],
+    "home": [
+      "https://jamesg.blog/"
+    ],
+    "privacy-policy": [
+      "https://jamesg.blog/privacy/"
+    ]
+  },
+  "rel-urls": {
+    "https://jamesg.blog/assets/styles/styles.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "mailto:jamesg@jamesg.blog": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://jamesg.blog/favicon.ico": {
+      "rels": [
+        "icon"
+      ]
+    },
+    "https://granary.io/url?input=html&output=rss&url=https%3A%2F%2Fjamesg.blog": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "James Coffee Blog - Posts",
+      "type": "application/atom+xml"
+    },
+    "https://granary.io/url?input=html&output=jsonfeed&url=https%3A%2F%2Fjamesg.blog": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "James Coffee Blog - Posts",
+      "type": "application/jf2feed+json"
+    },
+    "https://jamesg.blog/": {
+      "rels": [
+        "canonical"
+      ]
+    },
+    "https://webmention.io/jamesg.blog/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://webmention.io/jamesg.blog/xmlrpc": {
+      "rels": [
+        "pingback"
+      ]
+    },
+    "https://micropub.jamesg.blog/micropub": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://websub.jamesg.blog/": {
+      "rels": [
+        "hub"
+      ]
+    },
+    "https://unpkg.com/leaflet@1.8.0/dist/leaflet.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://www.instagram.com/capjamesg/": {
+      "rels": [
+        "me"
+      ],
+      "text": "Instagram"
+    },
+    "https://indieweb.org/User:Jamesg.blog": {
+      "rels": [
+        "me"
+      ],
+      "text": "IndieWeb"
+    },
+    "https://github.com/capjamesg": {
+      "rels": [
+        "me"
+      ],
+      "text": "GitHub"
+    },
+    "https://sr.ht/~capjamesg/": {
+      "rels": [
+        "me"
+      ],
+      "text": "Sourcehut"
+    },
+    "https://jamesg.blog/privacy/": {
+      "rels": [
+        "privacy-policy"
+      ],
+      "text": "Privacy"
+    }
+  }
+}
