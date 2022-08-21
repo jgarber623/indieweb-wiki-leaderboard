@@ -19,15 +19,12 @@ jobs:
           cache: npm
       - run: npm ci
       - name: Build leaderboard
-        run: |
-          npm run build
-          cat data/leaderboard.json
-          cat README.md
+        run: npm run build
       - name: Commit and push changed files
         run: |
           git diff
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git config --global user.name 'github-actions[bot]'
           git add -A
-          git commit -m '🤖 Update leaderboard' || exit 0
+          git commit -m "🤖 Update leaderboard (`date +%FT%T%z`)" || exit 0
           git push
