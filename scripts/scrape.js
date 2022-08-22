@@ -27,7 +27,7 @@ Promise
       } else {
         const { status, statusText, config: { params } } = response.response;
 
-        console.log('❌', status, statusText, params);
+        console.log(`::notice title=❌ ${status} ${statusText}::${JSON.stringify(params)}`);
       }
     });
   });
