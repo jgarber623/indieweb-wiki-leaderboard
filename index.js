@@ -1,4 +1,6 @@
 #!/usr/bin/env node
 
-require('./src/leaderboard.js').build();
-require('./src/users.js').crawl();
+const { execFileSync } = require('node:child_process');
+
+execFileSync('./scripts/build.js');
+execFileSync('./scripts/scrape.js');
