@@ -27,7 +27,18 @@ Promise
       } else {
         const { status, statusText, config: { params } } = response.response;
 
-        console.log(`::notice title=❌ ${status} ${statusText}::${JSON.stringify(params)}`);
+        const level = (status) => {
+          switch(Number(String(status)[0])) {
+            case 4:
+              return 'warning';
+            case 5:
+              return 'error';
+            default:
+              return 'notice';
+          }
+        };
+
+        console.log(`::${level} title=${status} ${statusText}::${JSON.stringify(params)}`);
       }
     });
   });
