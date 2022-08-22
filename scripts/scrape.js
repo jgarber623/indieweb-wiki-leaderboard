@@ -36,7 +36,7 @@ Promise
             default:
               return 'notice';
           }
-        })();
+        })(status);
 
         console.log(`::${level} title=${status} ${statusText}::${JSON.stringify(params)}`);
       }
