@@ -8,6 +8,17 @@ const leaderboard = require('../data/leaderboard.json');
 const outputPath = 'data/users';
 const users = leaderboard.map(({ user }) => user);
 
+const setWorkflowCommand = status => {
+  switch(Number(String(status)[0])) {
+    case 4:
+      return 'warning';
+    case 5:
+      return 'error';
+    default:
+      return 'notice';
+  }
+};
+
 Promise
   .all(users.map(profile => {
     return axios.get('https://micromicro.cc/search', {
@@ -27,18 +38,10 @@ Promise
       } else {
         const { status, statusText, config: { params } } = response.response;
 
-        const level = ((status) => {
-          switch(Number(String(status)[0])) {
-            case 4:
-              return 'warning';
-            case 5:
-              return 'error';
-            default:
-              return 'notice';
-          }
-        })(status);
-
-        console.log(`::${level} title=${status} ${statusText}::${JSON.stringify(params)}`);
+        // Log a specially-formatted message for GitHub Actions.
+        //
+        // https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions
+        console.log(`::${setWorkflowCommand(status)} title=${status} ${statusText}::${JSON.stringify(params)}`);
       }
     });
   });
