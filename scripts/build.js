@@ -18,10 +18,12 @@ JSDOM.fromURL(url).then(dom => {
 
   const leaderboard = Array.from(items).map(item => {
     const user = item.querySelector('.mw-userlink bdi').textContent.trim().toLowerCase().replace(/\s/, '/');
+    const contributions = item.querySelector('.mw-usertoollinks-contribs').href;
     const actions = item.textContent.trim().match(/\[(?<count>\d+) actions? in the last 30 days\]$/);
 
     return {
       user,
+      contributions,
       actions: Number(actions.groups.count)
     };
   }).sort((a, b) => b.actions - a.actions);
