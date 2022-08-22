@@ -26,7 +26,7 @@ JSDOM.fromURL(url).then(dom => {
     };
   }).sort((a, b) => b.actions - a.actions);
 
-  fs.writeFileSync('data/leaderboard.json', JSON.stringify(leaderboard, null, '  '));
+  fs.writeFileSync('data/leaderboard.json', JSON.stringify(leaderboard, null, 2));
 
   engine
     .renderFile('README.md.liquid', { leaderboard, datestamp, timestamp, url })

@@ -22,7 +22,7 @@ Promise
       if (response.status === 200) {
         fs.writeFileSync(
           `${outputPath}/${users[index].replace('/', '_')}.json`,
-          JSON.stringify(response.data, null, '  ')
+          JSON.stringify(response.data, null, 2)
         );
       } else {
         const { status, statusText, config: { params } } = response.response;
