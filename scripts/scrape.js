@@ -27,7 +27,7 @@ Promise
       } else {
         const { status, statusText, config: { params } } = response.response;
 
-        const level = (status) => {
+        const level = ((status) => {
           switch(Number(String(status)[0])) {
             case 4:
               return 'warning';
@@ -36,7 +36,7 @@ Promise
             default:
               return 'notice';
           }
-        };
+        })();
 
         console.log(`::${level} title=${status} ${statusText}::${JSON.stringify(params)}`);
       }
