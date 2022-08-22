@@ -11,7 +11,7 @@ const url = 'https://indieweb.org/Special:ActiveUsers';
 
 const date = new Date();
 const datestamp = date.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric'});
-const timestamp = date.toLocaleTimeString('en-GB', { timeZone: 'UTC', timeZoneName: 'short' });
+const timestamp = date.toLocaleTimeString('en-GB', { hour: 'numeric', minute: 'numeric', second: 'numeric', timeZone: 'UTC', timeZoneName: 'short' });
 
 JSDOM.fromURL(url).then(dom => {
   const items = dom.window.document.querySelectorAll('#mw-content-text ul li');
