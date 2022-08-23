@@ -5,7 +5,7 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 | Rank | Actions | User |
 |-----:|--------:|:-----|
 {% for entry in leaderboard -%}
-| **{{ forloop.index }}** | [{{ entry.actions }}]({{ entry.contributions }}) | {{ entry.user }} |
+| **{{ forloop.index }}** | [{{ entry.actions }}]({{ entry.contributions }}) | <span>{{ entry.user }}</span> |
 {% endfor %}
 
 ## Colophon
