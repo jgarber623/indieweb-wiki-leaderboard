@@ -67,6 +67,28 @@
           ],
           "properties": {
             "name": [
+              "Subscribe to IANA Root KSK signing and Google algorithm update events"
+            ],
+            "url": [
+              "https://jamesg.blog/2022/08/22/root-ksk-google-calendars/"
+            ],
+            "published": [
+              "/2022/08/"
+            ],
+            "category": [
+              "IndieWeb"
+            ],
+            "summary": [
+              "I have tuned in to two IANA Root KSK signing ceremonies this year. The last one was held last Wednesday. The Root KSK ceremony is where representatives come together to sign the new keys for the root DNS servers. These are the servers at the heart of the DNS protocol. The root servers let you find TLD-level servers. Cloudflare has a great blog post on what the root servers are and how the ceremony works. The ceremonies are often quite long but if I know one is on I will tune in."
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               "Building an IRC archiver bot for the IndieWeb community"
             ],
             "url": [
@@ -146,28 +168,6 @@
             ],
             "summary": [
               "For the last few days, the server on which this website (and many others I run!) started acting strangely. Every so often, nginx would stop working and I'd have to restart the service manually. I had restarted nginx two or three times over the last few days so I knew something wasn't right. I spent some time this afternoon figuring out what was wrong. I found an issue with certbot renewals and nginx that, when resolved, fixed the errors I found in nginx and the /var/log/syslog file on my computer."
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "A few things I just learned about Lisp"
-            ],
-            "url": [
-              "https://jamesg.blog/2022/08/12/a-few-things-i-learned-about-lisp/"
-            ],
-            "published": [
-              "/2022/08/"
-            ],
-            "category": [
-              "Programming"
-            ],
-            "summary": [
-              "I was trying to implement the Fisher-Yates algorithm earlier this evening. This algorithm lets you randomly shuffle the contents of a list. I wanted to provide a list of songs and return a shuffled list. I decided to use Lisp for this since I don't know much Lisp and I want to build my skills."
             ]
           }
         }
