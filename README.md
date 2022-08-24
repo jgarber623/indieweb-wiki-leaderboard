@@ -9,7 +9,7 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 | **3** | [66](https://indieweb.org/Special:Contributions/Jamesg.blog) | [jamesg.blog](https://jamesg.blog) |
 | **4** | [24](https://indieweb.org/Special:Contributions/Cali.jamesg.blog) | [cali.jamesg.blog](https://cali.jamesg.blog) |
 | **5** | [21](https://indieweb.org/Special:Contributions/Beesbuzz.biz) | [beesbuzz.biz](https://beesbuzz.biz) |
-| **6** | [19](https://indieweb.org/Special:Contributions/Campegg.com) | [campegg.com](https://campegg.com) |
+| **6** | [17](https://indieweb.org/Special:Contributions/Campegg.com) | [campegg.com](https://campegg.com) |
 | **7** | [14](https://indieweb.org/Special:Contributions/David.shanske.com) | [david.shanske.com](https://david.shanske.com) |
 | **8** | [13](https://indieweb.org/Special:Contributions/Jamesg.coffee) | [jamesg.coffee](https://jamesg.coffee) |
 | **9** | [13](https://indieweb.org/Special:Contributions/Lqdev.me) | [lqdev.me](https://lqdev.me) |
@@ -45,7 +45,7 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 
 ## Colophon
 
-Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 23 August 2022 at 6:34:44 UTC.
+Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 24 August 2022 at 6:33:29 UTC.
 
 ## License
 
