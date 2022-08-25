@@ -1,0 +1,49 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "name": [
+          "Kaja"
+        ],
+        "nickname": [
+          "Kaja"
+        ],
+        "url": [
+          "https://www.svenknebel.de/"
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "authorization_endpoint": [
+      "https://kaja.sknebel.net/auth"
+    ],
+    "me": [
+      "https://twitter.com/HeNeArXn"
+    ],
+    "parent": [
+      "https://www.svenknebel.de/"
+    ]
+  },
+  "rel-urls": {
+    "https://kaja.sknebel.net/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://twitter.com/HeNeArXn": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://www.svenknebel.de/": {
+      "rels": [
+        "parent"
+      ],
+      "text": "sknebel"
+    }
+  }
+}
