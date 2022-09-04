@@ -18,6 +18,65 @@
             "h-entry"
           ],
           "properties": {
+            "content": [
+              {
+                "html": "Indiewebcamp hide-and-seek: Which audio device is Zoom connected now? Are they in the laptop? Are they in the headphones? ...",
+                "value": "Indiewebcamp hide-and-seek: Which audio device is Zoom connected now? Are they in the laptop? Are they in the headphones? ..."
+              }
+            ],
+            "name": [
+              "Indiewebcamp hide-and-seek: Which audio device is Zoom connected now? Are they in the laptop? Are they in the headphones? ..."
+            ],
+            "url": [
+              "https://www.svenknebel.de/posts/2022/9/6/"
+            ],
+            "uid": [
+              "https://www.svenknebel.de/posts/2022/9/6/"
+            ],
+            "published": [
+              "2022-09-03 13:47:13.307245+00:00"
+            ],
+            "author": [
+              "https://www.svenknebel.de/"
+            ],
+            "category": [
+              "IWC"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "Hi IWC Berlin!",
+                "value": "Hi IWC Berlin!"
+              }
+            ],
+            "name": [
+              "Hi IWC Berlin!"
+            ],
+            "url": [
+              "https://www.svenknebel.de/posts/2022/9/4/"
+            ],
+            "uid": [
+              "https://www.svenknebel.de/posts/2022/9/4/"
+            ],
+            "published": [
+              "2022-09-03 11:16:14.343597+00:00"
+            ],
+            "author": [
+              "https://www.svenknebel.de/"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
             "name": [
               "Poking around the filesystem on a Steam Deck"
             ],
@@ -276,76 +335,6 @@
               "Åmål"
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "in-reply-to": [
-              "https://github.com/sknebel/AutoAuth/issues"
-            ],
-            "name": [
-              "AutoAuth, private feeds and WebSub"
-            ],
-            "content": [
-              {
-                "html": "<p>Not part of the main specification, but important for private feeds and worth documenting.</p>\n\n<p>I see three models:</p>\n\n<h2>1. WebSub informs all users about all changes to the feed</h2>\n<p>When the feed changes, the site triggers a notification to all subscribers. If the feed change is in a private post, it does not include it in the ping, either sending the last public state of the feed or an empty ping (effectively announcing an empty diff). Authorized subscribers would take this as a signal to fetch the feed with authorization attached.</p>\n\n<p>This leaks the fact that *something* private happened to all subscribers. The hub is not involved in handling private information at all, and thus can safely be external.</p>\n<ul>\n<li>Do all/most hubs allow this? A hub that wants to create the diff itself might reject sending out an empty notification, but at least for non-Atom content I don't think hubs do this.</li>\n<li>How do subscribers handle empty pings? Does it cause them to fetch the page, assuming a \"thin ping\"? This could be mitigated by separating out authorized subscribers as described below. (WebSub does not know \"thin pings\", but I think pubsubhubbub did and clients might support them)</li>\n</ul>\n\n<h2>2. individual topics for private subscribers with fat pings</h2>\n<p>The site could give different topic URLs (capability URLs) to private subscribers, and send matching notifications to them. (Compare how the WebSub spec recommends <a href=\"https://www.w3.org/TR/websub/#content-negotiation\">returning different <code>rel=self</code> URLs for different content types</a>. Potentially, fat pings could be used then.</p>\n   \n<p>A site could use an integrated hub for private subscribers and still let a public hub handle everyone else.</p>\n\n<ul>\n<li>The hub here can't fetch the private topic URLs (unless it has special support/is integrated).</li>\n<li>If the capability URL leaks, others can subscribe to it and would receive notifications. This would compromise fat pings. Subscribing applications and hubs would need to take care to not leak this, but hubs developed assuming public feeds might not do this. Integrated hubs could only allow one subscription per topic URL, which could mitigate this when each time a different capability URL is submitted.</li>\n<li>integration with token expiry/revocation is needed: the link between token and capability URL must be maintained, and topics associated with invalid tokens not updated anymore.</li>\n</ul>\n<h2>3. individual topics for private subscribers with thin pings</h2>\n<p>Compared to 1, it at keeps activity private and solves the issue mentioned above of subscribers potentially fetching needlessly. Compared to 3, it removes complexity, trust in the hub and leaking the cability URL is less problematic, but requires feed fetches on notification.</p>\n   \n<h2>conclusion</h2>\n<p>I think 2. is too much complexity. I think it makes sense  to document 3., and potentially 1. as an easier option. Testing how it works with existing clients and hubs is needed.</p>\n<p>Thoughts/comments?</p>\n<a href=\"https://github.com/sknebel/AutoAuth/issues/8\" class=\"u-syndication\"></a>",
-                "value": "Not part of the main specification, but important for private feeds and worth documenting.\n\nI see three models:\n\n1. WebSub informs all users about all changes to the feed\nWhen the feed changes, the site triggers a notification to all subscribers. If the feed change is in a private post, it does not include it in the ping, either sending the last public state of the feed or an empty ping (effectively announcing an empty diff). Authorized subscribers would take this as a signal to fetch the feed with authorization attached.\n\nThis leaks the fact that *something* private happened to all subscribers. The hub is not involved in handling private information at all, and thus can safely be external.\nDo all/most hubs allow this? A hub that wants to create the diff itself might reject sending out an empty notification, but at least for non-Atom content I don't think hubs do this.\nHow do subscribers handle empty pings? Does it cause them to fetch the page, assuming a \"thin ping\"? This could be mitigated by separating out authorized subscribers as described below. (WebSub does not know \"thin pings\", but I think pubsubhubbub did and clients might support them)\n\n\n2. individual topics for private subscribers with fat pings\nThe site could give different topic URLs (capability URLs) to private subscribers, and send matching notifications to them. (Compare how the WebSub spec recommends returning different rel=self URLs for different content types. Potentially, fat pings could be used then.\n   \nA site could use an integrated hub for private subscribers and still let a public hub handle everyone else.\n\nThe hub here can't fetch the private topic URLs (unless it has special support/is integrated).\nIf the capability URL leaks, others can subscribe to it and would receive notifications. This would compromise fat pings. Subscribing applications and hubs would need to take care to not leak this, but hubs developed assuming public feeds might not do this. Integrated hubs could only allow one subscription per topic URL, which could mitigate this when each time a different capability URL is submitted.\nintegration with token expiry/revocation is needed: the link between token and capability URL must be maintained, and topics associated with invalid tokens not updated anymore.\n\n3. individual topics for private subscribers with thin pings\nCompared to 1, it at keeps activity private and solves the issue mentioned above of subscribers potentially fetching needlessly. Compared to 3, it removes complexity, trust in the hub and leaking the cability URL is less problematic, but requires feed fetches on notification.\n   \nconclusion\nI think 2. is too much complexity. I think it makes sense  to document 3., and potentially 1. as an easier option. Testing how it works with existing clients and hubs is needed.\nThoughts/comments?"
-              }
-            ],
-            "syndication": [
-              "https://github.com/sknebel/AutoAuth/issues/8"
-            ],
-            "url": [
-              "https://www.svenknebel.de/posts/2018/12/6/"
-            ],
-            "uid": [
-              "https://www.svenknebel.de/posts/2018/12/6/"
-            ],
-            "published": [
-              "2018-12-08 12:20:15.417341+00:00"
-            ],
-            "author": [
-              "https://www.svenknebel.de/"
-            ],
-            "category": [
-              "AutoAuth",
-              "issue"
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "content": [
-              {
-                "html": "Just published the <a href=\"https://github.com/sknebel/AutoAuth\">first draft of a more formal AutoAuth description</a>!",
-                "value": "Just published the first draft of a more formal AutoAuth description!"
-              }
-            ],
-            "name": [
-              "Just published the first draft of a more formal AutoAuth description!"
-            ],
-            "url": [
-              "https://www.svenknebel.de/posts/2018/11/12/"
-            ],
-            "uid": [
-              "https://www.svenknebel.de/posts/2018/11/12/"
-            ],
-            "published": [
-              "2018-11-24 15:44:47.963437+00:00"
-            ],
-            "author": [
-              "https://www.svenknebel.de/"
-            ],
-            "category": [
-              "AutoAuth",
-              "IndieWeb"
-            ]
-          }
         }
       ]
     },
@@ -387,7 +376,7 @@
       "https://www.svenknebel.de/webmention"
     ],
     "next": [
-      "https://www.svenknebel.de/posts/?after=2018-11-24T15-44-47.963437+00-00_11-12"
+      "https://www.svenknebel.de/posts/?after=2019-06-29T12-32-05.055030+00-00_6-2"
     ],
     "me": [
       "https://www.svenknebel.de/",
@@ -434,7 +423,7 @@
         "webmention"
       ]
     },
-    "https://www.svenknebel.de/posts/?after=2018-11-24T15-44-47.963437+00-00_11-12": {
+    "https://www.svenknebel.de/posts/?after=2019-06-29T12-32-05.055030+00-00_6-2": {
       "rels": [
         "next"
       ]
