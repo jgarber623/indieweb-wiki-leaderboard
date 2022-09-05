@@ -18,6 +18,41 @@
             "h-entry"
           ],
           "properties": {
+            "bookmark-of": [
+              "https://dmitry.khlebnikov.net/2020/05/10/wrap-indicator-in-pre-blocks/"
+            ],
+            "content": [
+              {
+                "html": "In a <a href=\"https://www.svenknebel.de/posts/2022/5/2/\">recent post</a> I used large <code>&lt;pre&gt;&lt;code&gt;</code> blocks, and I'm not happy with how these look for long lines that overflow, and thus cause a scrollbar. On the other hand, I don't just want to force them to wrap, because that also looks confusing IMHO.\n<p>In a computer magazine I read often, they do put a small arrow at the end of lines that are force-wrapped to fit the page layout, to make it clear that it is just a visual wrap. I quite like that formatting, but replicating it on the web seems to be complicated. This page has the best implementation I've seen yet, but a) requires wrapping each line in a <code>&lt;div&gt;</code> and b) puts it at the end of the container, not right behind the wrapping point. The first would be ok, I could add processing to the site code to automatically add those, the second I need to investigate if it can be changed or not.\n</p>",
+                "value": "In a recent post I used large <pre><code> blocks, and I'm not happy with how these look for long lines that overflow, and thus cause a scrollbar. On the other hand, I don't just want to force them to wrap, because that also looks confusing IMHO.\nIn a computer magazine I read often, they do put a small arrow at the end of lines that are force-wrapped to fit the page layout, to make it clear that it is just a visual wrap. I quite like that formatting, but replicating it on the web seems to be complicated. This page has the best implementation I've seen yet, but a) requires wrapping each line in a <div> and b) puts it at the end of the container, not right behind the wrapping point. The first would be ok, I could add processing to the site code to automatically add those, the second I need to investigate if it can be changed or not."
+              }
+            ],
+            "name": [
+              "In a recent post I used large <pre><code> blocks, and I'm not happy with how these look for long lines that overflow, and thus cause a scrollbar. On the other hand, I don't just want to force them to wrap, because that also looks confusing IMHO.\nIn a computer magazine I read often, they do put a small arrow at the end of lines that are force-wrapped to fit the page layout, to make it clear that it is just a visual wrap. I quite like that formatting, but replicating it on the web seems to be complicated. This page has the best implementation I've seen yet, but a) requires wrapping each line in a <div> and b) puts it at the end of the container, not right behind the wrapping point. The first would be ok, I could add processing to the site code to automatically add those, the second I need to investigate if it can be changed or not."
+            ],
+            "url": [
+              "https://www.svenknebel.de/posts/2022/9/8/"
+            ],
+            "uid": [
+              "https://www.svenknebel.de/posts/2022/9/8/"
+            ],
+            "published": [
+              "2022-09-04 12:01:08.642742+00:00"
+            ],
+            "author": [
+              "https://www.svenknebel.de/"
+            ],
+            "category": [
+              "web",
+              "CSS"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
             "content": [
               {
                 "html": "Indiewebcamp hide-and-seek: Which audio device is Zoom connected now? Are they in the laptop? Are they in the headphones? ...",
@@ -297,44 +332,6 @@
               "erika3004"
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "photo": [
-              {
-                "value": "https://www.svenknebel.de/posts/2019/6/2/image.jpg",
-                "alt": "photo of main hall of an old court house"
-              }
-            ],
-            "content": [
-              {
-                "html": "<p>Loads of space (this is only part of it) for our mini-IWC in Åmål! Sadly, not really the people to fill even a corner of it…</p>",
-                "value": "Loads of space (this is only part of it) for our mini-IWC in Åmål! Sadly, not really the people to fill even a corner of it…"
-              }
-            ],
-            "name": [
-              "Loads of space (this is only part of it) for our mini-IWC in Åmål! Sadly, not really the people to fill even a corner of it…"
-            ],
-            "url": [
-              "https://www.svenknebel.de/posts/2019/6/2/"
-            ],
-            "uid": [
-              "https://www.svenknebel.de/posts/2019/6/2/"
-            ],
-            "published": [
-              "2019-06-29 12:32:05.055030+00:00"
-            ],
-            "author": [
-              "https://www.svenknebel.de/"
-            ],
-            "category": [
-              "indieweb",
-              "Åmål"
-            ]
-          }
         }
       ]
     },
@@ -376,10 +373,11 @@
       "https://www.svenknebel.de/webmention"
     ],
     "next": [
-      "https://www.svenknebel.de/posts/?after=2019-06-29T12-32-05.055030+00-00_6-2"
+      "https://www.svenknebel.de/posts/?after=2019-07-31T16-34-36.194178+00-00_7-2"
     ],
     "me": [
       "https://www.svenknebel.de/",
+      "https://chaos.social/@HeNeArXn",
       "https://www.github.com/sknebel",
       "https://twitter.com/HeNeArXn"
     ]
@@ -423,7 +421,7 @@
         "webmention"
       ]
     },
-    "https://www.svenknebel.de/posts/?after=2019-06-29T12-32-05.055030+00-00_6-2": {
+    "https://www.svenknebel.de/posts/?after=2019-07-31T16-34-36.194178+00-00_7-2": {
       "rels": [
         "next"
       ]
@@ -433,6 +431,12 @@
         "me"
       ],
       "text": "index"
+    },
+    "https://chaos.social/@HeNeArXn": {
+      "rels": [
+        "me"
+      ],
+      "text": "Fediverse"
     },
     "https://www.github.com/sknebel": {
       "rels": [
