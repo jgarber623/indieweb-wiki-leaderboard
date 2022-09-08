@@ -2,266 +2,267 @@
   "items": [
     {
       "type": [
-        "h-card"
+        "h-feed"
       ],
       "properties": {
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "name": [
+                "James"
+              ],
+              "url": [
+                "https://jamesg.blog/"
+              ],
+              "given-name": [
+                "James"
+              ],
+              "nickname": [
+                "capjamesg"
+              ],
+              "pronoun": [
+                "https://jamesg.blog/he",
+                "https://jamesg.blog/him",
+                "https://jamesg.blog/his"
+              ],
+              "region": [
+                "Scotland"
+              ],
+              "country-name": [
+                "UK"
+              ],
+              "note": [
+                "I like to build for the web. I am experimenting with functional programming and want to learn more about computer science."
+              ],
+              "email": [
+                "mailto:readers@jamesg.blog"
+              ],
+              "photo": [
+                {
+                  "value": "https://jamesg.blog/assets/coffeeshop.jpg",
+                  "alt": "James sitting in a coffee shop, happily staring at a cup of coffee."
+                }
+              ],
+              "logo": [
+                {
+                  "value": "https://jamesg.blog/assets/coffeeshop.jpg",
+                  "alt": "James sitting in a coffee shop, happily staring at a cup of coffee."
+                }
+              ]
+            },
+            "value": "James"
+          }
+        ],
         "name": [
-          "James"
+          "Blog Posts 📝"
         ],
-        "url": [
-          "https://jamesg.blog/"
-        ],
-        "given-name": [
-          "James"
-        ],
-        "nickname": [
-          "capjamesg"
-        ],
-        "pronoun": [
-          "https://jamesg.blog/he",
-          "https://jamesg.blog/him",
-          "https://jamesg.blog/his"
-        ],
-        "region": [
-          "Scotland"
-        ],
-        "country-name": [
-          "UK"
-        ],
-        "note": [
-          "I like to build for the web. I am experimenting with functional programming and want to learn more about computer science."
-        ],
-        "email": [
-          "mailto:readers@jamesg.blog"
-        ],
-        "photo": [
-          {
-            "value": "https://jamesg.blog/assets/coffeeshop.jpg",
-            "alt": "James sitting in a coffee shop, happily staring at a cup of coffee."
-          }
-        ],
-        "logo": [
-          {
-            "value": "https://jamesg.blog/assets/coffeeshop.jpg",
-            "alt": "James sitting in a coffee shop, happily staring at a cup of coffee."
-          }
+        "summary": [
+          "Below are the most recent articles I have written."
         ]
       },
       "children": [
         {
           "type": [
-            "h-feed"
+            "h-entry"
           ],
           "properties": {
             "name": [
-              "Blog Posts 📝"
+              "TIL: Fixing the author card on my home page h-feed"
+            ],
+            "url": [
+              "https://jamesg.blog/2022/09/07/authorship-homepage/"
+            ],
+            "published": [
+              "2022-09-07 00:00:00"
+            ],
+            "category": [
+              "IndieWeb"
             ],
             "summary": [
-              "Below are the most recent articles I have written."
+              "Assumed knowledge: This post assumes technical knowledge with microformats2. This post is most useful for someone debugging authorship relations on their h-feed or for community members who want to discuss documenting this pattern."
+            ],
+            "content": [
+              {
+                "html": "<p><em><strong>Assumed knowledge</strong>: This post assumes technical knowledge with microformats2. This post is most useful for someone debugging authorship relations on their h-feed or for community members who want to discuss documenting this pattern.</em></p>",
+                "value": "Assumed knowledge: This post assumes technical knowledge with microformats2. This post is most useful for someone debugging authorship relations on their h-feed or for community members who want to discuss documenting this pattern."
+              }
+            ],
+            "photo": [
+              {
+                "value": "https://jamesg.blog/assets/monocle_preview.png",
+                "alt": "A box that shows a preview for my IRC archiving tool"
+              }
+            ],
+            "featured": [
+              {
+                "value": "https://jamesg.blog/assets/monocle_preview.png",
+                "alt": "A box that shows a preview for my IRC archiving tool"
+              }
             ]
-          },
-          "children": [
-            {
-              "type": [
-                "h-entry"
-              ],
-              "properties": {
-                "name": [
-                  "Building an 'on this day' feature for my website"
-                ],
-                "url": [
-                  "https://jamesg.blog/2022/09/06/time-machine/"
-                ],
-                "published": [
-                  "2022-09-06 00:00:00"
-                ],
-                "category": [
-                  "IndieWeb"
-                ],
-                "summary": [
-                  "\"on this day,\" in the context of the web, refers to a tool that lets you see what you have posted on a particular day over a previous time period, typically over years. I have been thinking about this idea since the IndieWebCamp Berlin event, after seeing David's personal website with a \"this week\" section. This section shows all of David's posts from a given week in the past."
-                ],
-                "content": [
-                  {
-                    "html": "<p>\"on this day,\" in the context of the web, refers to a tool that lets you see what you have posted on a particular day over a previous time period, typically over years. I have been thinking about this idea since the IndieWebCamp Berlin event, after seeing <a href=\"https://david.shanske.com/\">David's personal website with a \"this week\" section</a>. This section shows all of David's posts from a given week in the past.</p>",
-                    "value": "\"on this day,\" in the context of the web, refers to a tool that lets you see what you have posted on a particular day over a previous time period, typically over years. I have been thinking about this idea since the IndieWebCamp Berlin event, after seeing David's personal website with a \"this week\" section. This section shows all of David's posts from a given week in the past."
-                  }
-                ],
-                "photo": [
-                  {
-                    "value": "https://jamesg.blog/assets/time_machine.png",
-                    "alt": "A screenshot of a list of posts written months ago displayed on my time machine web page"
-                  }
-                ],
-                "featured": [
-                  {
-                    "value": "https://jamesg.blog/assets/time_machine.png",
-                    "alt": "A screenshot of a list of posts written months ago displayed on my time machine web page"
-                  }
-                ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Beyond Tellerrand 2022"
+            ],
+            "url": [
+              "https://jamesg.blog/2022/09/07/beyond-tellerand/"
+            ],
+            "published": [
+              "2022-09-07 00:00:00"
+            ],
+            "category": [
+              "Events"
+            ],
+            "summary": [
+              "I attended my first Beyond Tellerrand conference in Berlin last week. I'll not bury the lede and go right out and say that I definitely want to attend another Beyond Tellerrand. The event was such an excellent experience, featuring inspiring and thought-provoking talks as well as an excellent community with whom I chatted about everything from technology to data to anything else that came to mind."
+            ],
+            "content": [
+              {
+                "html": "<p>I attended my first <a href=\"https://beyondtellerrand.com/\">Beyond Tellerrand</a> conference in Berlin last week. I'll not bury the lede and go right out and say that I definitely want to attend another Beyond Tellerrand. The event was such an excellent experience, featuring inspiring and thought-provoking talks as well as an excellent community with whom I chatted about everything from technology to data to anything else that came to mind.</p>",
+                "value": "I attended my first Beyond Tellerrand conference in Berlin last week. I'll not bury the lede and go right out and say that I definitely want to attend another Beyond Tellerrand. The event was such an excellent experience, featuring inspiring and thought-provoking talks as well as an excellent community with whom I chatted about everything from technology to data to anything else that came to mind."
               }
-            },
-            {
-              "type": [
-                "h-entry"
-              ],
-              "properties": {
-                "name": [
-                  "I wrote an article for Sprudge"
-                ],
-                "url": [
-                  "https://jamesg.blog/2022/09/06/edinburgh-coffee-sprudge/"
-                ],
-                "published": [
-                  "2022-09-06 00:00:00"
-                ],
-                "category": [
-                  "Coffee"
-                ],
-                "summary": [
-                  "A few months ago, I reached out to Sprudge to see if they would be interested in an article on Edinburgh's coffee roasting scene. There are a plethora of high-quality roasters in the city and I wanted to spread the word about the great work they do. My article was published in Sprudge last week. In my piece, I talk about six coffee roasters located throughout the city and their place in the Edinburgh coffee scene."
-                ],
-                "content": [
-                  {
-                    "html": "<p>A few months ago, I reached out to Sprudge to see if they would be interested in an article on Edinburgh's coffee roasting scene. There are a plethora of high-quality roasters in the city and I wanted to spread the word about the great work they do. My article was <a href=\"https://sprudge.com/edinburgh-coffee-the-sprudge-guide-191143.html\">published in Sprudge last week</a>. In my piece, I talk about six coffee roasters located throughout the city and their place in the Edinburgh coffee scene.</p>",
-                    "value": "A few months ago, I reached out to Sprudge to see if they would be interested in an article on Edinburgh's coffee roasting scene. There are a plethora of high-quality roasters in the city and I wanted to spread the word about the great work they do. My article was published in Sprudge last week. In my piece, I talk about six coffee roasters located throughout the city and their place in the Edinburgh coffee scene."
-                  }
-                ],
-                "photo": [
-                  {
-                    "value": "https://jamesg.blog/assets/sprudge.png",
-                    "alt": "A screenshot of my article on Sprudge"
-                  }
-                ],
-                "featured": [
-                  {
-                    "value": "https://jamesg.blog/assets/sprudge.png",
-                    "alt": "A screenshot of my article on Sprudge"
-                  }
-                ]
+            ],
+            "photo": [
+              {
+                "value": "https://jamesg.blog/assets/btconf1.jpeg",
+                "alt": "A conference room with people in the foreground and a slide on a presentation indicating the next talk will be by Vic Lee"
               }
-            },
-            {
-              "type": [
-                "h-entry"
-              ],
-              "properties": {
-                "name": [
-                  "Subscribe to IANA Root KSK signing and Google algorithm update events"
-                ],
-                "url": [
-                  "https://jamesg.blog/2022/08/22/root-ksk-google-calendars/"
-                ],
-                "published": [
-                  "2022-08-22 00:00:00"
-                ],
-                "category": [
-                  "IndieWeb"
-                ],
-                "summary": [
-                  "I have tuned in to two IANA Root KSK signing ceremonies this year. The last one was held last Wednesday. The Root KSK ceremony is where representatives come together to sign the new keys for the root DNS servers. These are the servers at the heart of the DNS protocol. The root servers let you find TLD-level servers. Cloudflare has a great blog post on what the root servers are and how the ceremony works. The ceremonies are often quite long but if I know one is on I will tune in."
-                ],
-                "content": [
-                  {
-                    "html": "<p>I have tuned in to two IANA Root KSK signing ceremonies this year. The last one was held last Wednesday. The Root KSK ceremony is where representatives come together to sign the new keys for the root DNS servers. These are the servers at the heart of the DNS protocol. The root servers let you find TLD-level servers. Cloudflare has a great blog post on <a href=\"https://github.com/capjamesg/calendar-generator\">what the root servers are and how the ceremony works</a>. The ceremonies are often quite long but if I know one is on I will tune in.</p>",
-                    "value": "I have tuned in to two IANA Root KSK signing ceremonies this year. The last one was held last Wednesday. The Root KSK ceremony is where representatives come together to sign the new keys for the root DNS servers. These are the servers at the heart of the DNS protocol. The root servers let you find TLD-level servers. Cloudflare has a great blog post on what the root servers are and how the ceremony works. The ceremonies are often quite long but if I know one is on I will tune in."
-                  }
-                ],
-                "photo": [
-                  {
-                    "value": "https://jamesg.blog/assets/ksk.png",
-                    "alt": "A calendar for August 2022 with an IANA KSK event on August 17th"
-                  }
-                ],
-                "featured": [
-                  {
-                    "value": "https://jamesg.blog/assets/ksk.png",
-                    "alt": "A calendar for August 2022 with an IANA KSK event on August 17th"
-                  }
-                ]
+            ],
+            "featured": [
+              {
+                "value": "https://jamesg.blog/assets/btconf1.jpeg",
+                "alt": "A conference room with people in the foreground and a slide on a presentation indicating the next talk will be by Vic Lee"
               }
-            },
-            {
-              "type": [
-                "h-entry"
-              ],
-              "properties": {
-                "name": [
-                  "Building an IRC archiver bot for the IndieWeb community"
-                ],
-                "url": [
-                  "https://jamesg.blog/2022/08/21/indieweb-etherpad-archiver/"
-                ],
-                "published": [
-                  "2022-08-21 00:00:00"
-                ],
-                "category": [
-                  "IndieWeb"
-                ],
-                "summary": [
-                  "A few weeks ago, I learned that the IndieWeb community aims to archive all of the Etherpad documents from meetups on the wiki. Etherpad documents are made available at online meetups so participants can document ideas and what happened in the call. Archiving these documents to the wiki makes them easily searchable and ensures their contents are preserved not only in a document that could be edited further down the line."
-                ],
-                "content": [
-                  {
-                    "html": "<p>A few weeks ago, I learned that the IndieWeb community aims to archive all of the Etherpad documents from meetups on the wiki. Etherpad documents are made available at online meetups so participants can document ideas and what happened in the call. Archiving these documents to the wiki makes them easily searchable and ensures their contents are preserved not only in a document that could be edited further down the line. </p>",
-                    "value": "A few weeks ago, I learned that the IndieWeb community aims to archive all of the Etherpad documents from meetups on the wiki. Etherpad documents are made available at online meetups so participants can document ideas and what happened in the call. Archiving these documents to the wiki makes them easily searchable and ensures their contents are preserved not only in a document that could be edited further down the line."
-                  }
-                ],
-                "photo": [
-                  {
-                    "value": "https://jamesg.blog/assets/archived_page.png",
-                    "alt": "A screenshot of an IndieWeb wiki page created by the archiver bot"
-                  }
-                ],
-                "featured": [
-                  {
-                    "value": "https://jamesg.blog/assets/archived_page.png",
-                    "alt": "A screenshot of an IndieWeb wiki page created by the archiver bot"
-                  }
-                ]
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Berlin 2022 - More Photos"
+            ],
+            "url": [
+              "https://jamesg.blog/2022/09/07/berlin-2022-2/"
+            ],
+            "published": [
+              "2022-09-07 00:00:00"
+            ],
+            "category": [
+              "Travel"
+            ],
+            "summary": [
+              "I shared a few photos from my trip in Berlin on my notes blog yesterday. I realise I have a few more photos to share. I thought I would do that here so that they appear on my main blog (this one!) and in the feeds of all of those that subscribe to the blog."
+            ],
+            "content": [
+              {
+                "html": "<p>I shared a few photos from my trip in Berlin on my <a href=\"https://jamesg.coffee/2022/berlin-2022\">notes blog</a> yesterday. I realise I have a few more photos to share. I thought I would do that here so that they appear on my main blog (this one!) and in the feeds of all of those that subscribe to the blog.</p>",
+                "value": "I shared a few photos from my trip in Berlin on my notes blog yesterday. I realise I have a few more photos to share. I thought I would do that here so that they appear on my main blog (this one!) and in the feeds of all of those that subscribe to the blog."
               }
-            },
-            {
-              "type": [
-                "h-entry"
-              ],
-              "properties": {
-                "name": [
-                  "TIL: Terminal shortcuts"
-                ],
-                "url": [
-                  "https://jamesg.blog/2022/08/17/terminal-shortcuts/"
-                ],
-                "published": [
-                  "2022-08-17 00:00:00"
-                ],
-                "category": [
-                  "Programming"
-                ],
-                "summary": [
-                  "I am continuing my foray into learning more about Linux and Unix. Over the last few days, I have learned about some shortcuts on the terminal that have made me think: \"I wish I knew this existed long ago.\" (I'm not sure if the shortcuts I have learned are portable to every terminal, but they work on macOS and should work on Linux too.)"
-                ],
-                "content": [
-                  {
-                    "html": "<p>I am continuing my foray into learning more about Linux and Unix. Over the last few days, I have learned about some shortcuts on the terminal that have made me think: \"I wish I knew this existed long ago.\" (I'm not sure if the shortcuts I have learned are portable to every terminal, but they work on macOS and should work on Linux too.)</p>",
-                    "value": "I am continuing my foray into learning more about Linux and Unix. Over the last few days, I have learned about some shortcuts on the terminal that have made me think: \"I wish I knew this existed long ago.\" (I'm not sure if the shortcuts I have learned are portable to every terminal, but they work on macOS and should work on Linux too.)"
-                  }
-                ],
-                "photo": [
-                  {
-                    "value": "https://jamesg.blog/assets/terminal_shortcuts.png",
-                    "alt": "A terminal shortcut to replace htts with https"
-                  }
-                ],
-                "featured": [
-                  {
-                    "value": "https://jamesg.blog/assets/terminal_shortcuts.png",
-                    "alt": "A terminal shortcut to replace htts with https"
-                  }
-                ]
+            ],
+            "photo": [
+              {
+                "value": "https://jamesg.blog/assets/9e6aba2f1b62a4020b03e0d6.jpeg",
+                "alt": "A Berlin city scape featuring a river, the Berlin city hall, a park, and other landmarks"
               }
-            }
-          ]
+            ],
+            "featured": [
+              {
+                "value": "https://jamesg.blog/assets/9e6aba2f1b62a4020b03e0d6.jpeg",
+                "alt": "A Berlin city scape featuring a river, the Berlin city hall, a park, and other landmarks"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Building an 'on this day' feature for my website"
+            ],
+            "url": [
+              "https://jamesg.blog/2022/09/06/time-machine/"
+            ],
+            "published": [
+              "2022-09-06 00:00:00"
+            ],
+            "category": [
+              "IndieWeb"
+            ],
+            "summary": [
+              "\"on this day,\" in the context of the web, refers to a tool that lets you see what you have posted on a particular day over a previous time period, typically over years. I have been thinking about this idea since the IndieWebCamp Berlin event, after seeing David's personal website with a \"this week\" section. This section shows all of David's posts from a given week in the past."
+            ],
+            "content": [
+              {
+                "html": "<p>\"on this day,\" in the context of the web, refers to a tool that lets you see what you have posted on a particular day over a previous time period, typically over years. I have been thinking about this idea since the IndieWebCamp Berlin event, after seeing <a href=\"https://david.shanske.com/\">David's personal website with a \"this week\" section</a>. This section shows all of David's posts from a given week in the past.</p>",
+                "value": "\"on this day,\" in the context of the web, refers to a tool that lets you see what you have posted on a particular day over a previous time period, typically over years. I have been thinking about this idea since the IndieWebCamp Berlin event, after seeing David's personal website with a \"this week\" section. This section shows all of David's posts from a given week in the past."
+              }
+            ],
+            "photo": [
+              {
+                "value": "https://jamesg.blog/assets/time_machine.png",
+                "alt": "A screenshot of a list of posts written months ago displayed on my time machine web page"
+              }
+            ],
+            "featured": [
+              {
+                "value": "https://jamesg.blog/assets/time_machine.png",
+                "alt": "A screenshot of a list of posts written months ago displayed on my time machine web page"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "I wrote an article for Sprudge"
+            ],
+            "url": [
+              "https://jamesg.blog/2022/09/06/edinburgh-coffee-sprudge/"
+            ],
+            "published": [
+              "2022-09-06 00:00:00"
+            ],
+            "category": [
+              "Coffee"
+            ],
+            "summary": [
+              "A few months ago, I reached out to Sprudge to see if they would be interested in an article on Edinburgh's coffee roasting scene. There are a plethora of high-quality roasters in the city and I wanted to spread the word about the great work they do. My article was published in Sprudge last week. In my piece, I talk about six coffee roasters located throughout the city and their place in the Edinburgh coffee scene."
+            ],
+            "content": [
+              {
+                "html": "<p>A few months ago, I reached out to Sprudge to see if they would be interested in an article on Edinburgh's coffee roasting scene. There are a plethora of high-quality roasters in the city and I wanted to spread the word about the great work they do. My article was <a href=\"https://sprudge.com/edinburgh-coffee-the-sprudge-guide-191143.html\">published in Sprudge last week</a>. In my piece, I talk about six coffee roasters located throughout the city and their place in the Edinburgh coffee scene.</p>",
+                "value": "A few months ago, I reached out to Sprudge to see if they would be interested in an article on Edinburgh's coffee roasting scene. There are a plethora of high-quality roasters in the city and I wanted to spread the word about the great work they do. My article was published in Sprudge last week. In my piece, I talk about six coffee roasters located throughout the city and their place in the Edinburgh coffee scene."
+              }
+            ],
+            "photo": [
+              {
+                "value": "https://jamesg.blog/assets/sprudge.png",
+                "alt": "A screenshot of my article on Sprudge"
+              }
+            ],
+            "featured": [
+              {
+                "value": "https://jamesg.blog/assets/sprudge.png",
+                "alt": "A screenshot of my article on Sprudge"
+              }
+            ]
+          }
         }
       ]
     }
