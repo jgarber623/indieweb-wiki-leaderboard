@@ -4,13 +4,13 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 
 | Rank | Actions | User |
 |-----:|--------:|:-----|
-| **1** | [179](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](https://gregorlove.com) |
-| **2** | [80](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](https://tantek.com) |
-| **3** | [74](https://indieweb.org/Special:Contributions/Jamesg.blog) | [jamesg.blog](https://jamesg.blog) |
-| **4** | [66](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](https://loqi.me) |
+| **1** | [164](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](https://gregorlove.com) |
+| **2** | [77](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](https://tantek.com) |
+| **3** | [76](https://indieweb.org/Special:Contributions/Jamesg.blog) | [jamesg.blog](https://jamesg.blog) |
+| **4** | [63](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](https://loqi.me) |
 | **5** | [41](https://indieweb.org/Special:Contributions/Cali.jamesg.blog) | [cali.jamesg.blog](https://cali.jamesg.blog) |
-| **6** | [30](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](https://kaja.sknebel.net) |
-| **7** | [15](https://indieweb.org/Special:Contributions/Corlaez.com) | [corlaez.com](https://corlaez.com) |
+| **6** | [32](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](https://kaja.sknebel.net) |
+| **7** | [20](https://indieweb.org/Special:Contributions/Corlaez.com) | [corlaez.com](https://corlaez.com) |
 | **8** | [9](https://indieweb.org/Special:Contributions/David.shanske.com) | [david.shanske.com](https://david.shanske.com) |
 | **9** | [9](https://indieweb.org/Special:Contributions/Www.hammyhavoc.com) | [www.hammyhavoc.com](https://www.hammyhavoc.com) |
 | **10** | [8](https://indieweb.org/Special:Contributions/Jkphl.is) | [jkphl.is](https://jkphl.is) |
@@ -41,7 +41,7 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 
 ## Colophon
 
-Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 8 September 2022 at 6:37:31 UTC.
+Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 9 September 2022 at 6:35:38 UTC.
 
 ## License
 
