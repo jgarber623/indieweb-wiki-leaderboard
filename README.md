@@ -4,19 +4,19 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 
 | Rank | Actions | User |
 |-----:|--------:|:-----|
-| **1** | [164](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](https://gregorlove.com) |
-| **2** | [77](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](https://tantek.com) |
-| **3** | [76](https://indieweb.org/Special:Contributions/Jamesg.blog) | [jamesg.blog](https://jamesg.blog) |
+| **1** | [173](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](https://gregorlove.com) |
+| **2** | [78](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](https://tantek.com) |
+| **3** | [72](https://indieweb.org/Special:Contributions/Jamesg.blog) | [jamesg.blog](https://jamesg.blog) |
 | **4** | [63](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](https://loqi.me) |
-| **5** | [41](https://indieweb.org/Special:Contributions/Cali.jamesg.blog) | [cali.jamesg.blog](https://cali.jamesg.blog) |
-| **6** | [32](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](https://kaja.sknebel.net) |
+| **5** | [37](https://indieweb.org/Special:Contributions/Cali.jamesg.blog) | [cali.jamesg.blog](https://cali.jamesg.blog) |
+| **6** | [26](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](https://kaja.sknebel.net) |
 | **7** | [20](https://indieweb.org/Special:Contributions/Corlaez.com) | [corlaez.com](https://corlaez.com) |
-| **8** | [9](https://indieweb.org/Special:Contributions/David.shanske.com) | [david.shanske.com](https://david.shanske.com) |
-| **9** | [9](https://indieweb.org/Special:Contributions/Www.hammyhavoc.com) | [www.hammyhavoc.com](https://www.hammyhavoc.com) |
-| **10** | [8](https://indieweb.org/Special:Contributions/Jkphl.is) | [jkphl.is](https://jkphl.is) |
-| **11** | [7](https://indieweb.org/Special:Contributions/Nicksimson.com) | [nicksimson.com](https://nicksimson.com) |
-| **12** | [6](https://indieweb.org/Special:Contributions/Bucci.onl_about.html) | [bucci.onl/about.html](https://bucci.onl/about.html) |
-| **13** | [6](https://indieweb.org/Special:Contributions/Waterpigs.co.uk) | [waterpigs.co.uk](https://waterpigs.co.uk) |
+| **8** | [9](https://indieweb.org/Special:Contributions/Www.hammyhavoc.com) | [www.hammyhavoc.com](https://www.hammyhavoc.com) |
+| **9** | [8](https://indieweb.org/Special:Contributions/Jkphl.is) | [jkphl.is](https://jkphl.is) |
+| **10** | [7](https://indieweb.org/Special:Contributions/David.shanske.com) | [david.shanske.com](https://david.shanske.com) |
+| **11** | [6](https://indieweb.org/Special:Contributions/Bucci.onl_about.html) | [bucci.onl/about.html](https://bucci.onl/about.html) |
+| **12** | [6](https://indieweb.org/Special:Contributions/Waterpigs.co.uk) | [waterpigs.co.uk](https://waterpigs.co.uk) |
+| **13** | [6](https://indieweb.org/Special:Contributions/Www.ciccarello.me) | [www.ciccarello.me](https://www.ciccarello.me) |
 | **14** | [5](https://indieweb.org/Special:Contributions/Jacky.wtf) | [jacky.wtf](https://jacky.wtf) |
 | **15** | [4](https://indieweb.org/Special:Contributions/Campegg.com) | [campegg.com](https://campegg.com) |
 | **16** | [4](https://indieweb.org/Special:Contributions/Snarfed.org) | [snarfed.org](https://snarfed.org) |
@@ -31,17 +31,18 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 | **25** | [2](https://indieweb.org/Special:Contributions/P83.nl) | [p83.nl](https://p83.nl) |
 | **26** | [2](https://indieweb.org/Special:Contributions/Vanderven.se_martijn) | [vanderven.se/martijn](https://vanderven.se/martijn) |
 | **27** | [1](https://indieweb.org/Special:Contributions/Andrew.kvalhe.im) | [andrew.kvalhe.im](https://andrew.kvalhe.im) |
-| **28** | [1](https://indieweb.org/Special:Contributions/Marksuth.dev) | [marksuth.dev](https://marksuth.dev) |
-| **29** | [1](https://indieweb.org/Special:Contributions/Matienzo.org) | [matienzo.org](https://matienzo.org) |
-| **30** | [1](https://indieweb.org/Special:Contributions/Phoebeivy.dev) | [phoebeivy.dev](https://phoebeivy.dev) |
-| **31** | [1](https://indieweb.org/Special:Contributions/Shindakun.dev) | [shindakun.dev](https://shindakun.dev) |
-| **32** | [1](https://indieweb.org/Special:Contributions/Sixtwothree.org) | [sixtwothree.org](https://sixtwothree.org) |
-| **33** | [1](https://indieweb.org/Special:Contributions/Www.kevinmarks.com) | [www.kevinmarks.com](https://www.kevinmarks.com) |
+| **28** | [1](https://indieweb.org/Special:Contributions/Beesbuzz.biz) | [beesbuzz.biz](https://beesbuzz.biz) |
+| **29** | [1](https://indieweb.org/Special:Contributions/Marksuth.dev) | [marksuth.dev](https://marksuth.dev) |
+| **30** | [1](https://indieweb.org/Special:Contributions/Matienzo.org) | [matienzo.org](https://matienzo.org) |
+| **31** | [1](https://indieweb.org/Special:Contributions/Phoebeivy.dev) | [phoebeivy.dev](https://phoebeivy.dev) |
+| **32** | [1](https://indieweb.org/Special:Contributions/Shindakun.dev) | [shindakun.dev](https://shindakun.dev) |
+| **33** | [1](https://indieweb.org/Special:Contributions/Sixtwothree.org) | [sixtwothree.org](https://sixtwothree.org) |
+| **34** | [1](https://indieweb.org/Special:Contributions/Www.kevinmarks.com) | [www.kevinmarks.com](https://www.kevinmarks.com) |
 
 
 ## Colophon
 
-Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 9 September 2022 at 6:35:38 UTC.
+Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 10 September 2022 at 6:34:21 UTC.
 
 ## License
 

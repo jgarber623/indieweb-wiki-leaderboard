@@ -87,6 +87,12 @@
     "alternate": [
       "https://www.ciccarello.me/feed.xml"
     ],
+    "webmention": [
+      "https://webmention.io/www.ciccarello.me/webmention"
+    ],
+    "pingback": [
+      "https://webmention.io/www.ciccarello.me/xmlrpc"
+    ],
     "authorization_endpoint": [
       "https://indieauth.com/auth"
     ],
@@ -95,12 +101,6 @@
     ],
     "microsub": [
       "https://aperture.p3k.io/microsub/581"
-    ],
-    "webmention": [
-      "https://webmention.io/www.ciccarello.me/webmention"
-    ],
-    "pingback": [
-      "https://webmention.io/www.ciccarello.me/xmlrpc"
     ],
     "me": [
       "https://www.linkedin.com/in/anthonyciccarello/",
@@ -167,6 +167,16 @@
       "title": "Anthony Ciccarello",
       "type": "application/atom+xml"
     },
+    "https://webmention.io/www.ciccarello.me/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://webmention.io/www.ciccarello.me/xmlrpc": {
+      "rels": [
+        "pingback"
+      ]
+    },
     "https://indieauth.com/auth": {
       "rels": [
         "authorization_endpoint"
@@ -180,16 +190,6 @@
     "https://aperture.p3k.io/microsub/581": {
       "rels": [
         "microsub"
-      ]
-    },
-    "https://webmention.io/www.ciccarello.me/webmention": {
-      "rels": [
-        "webmention"
-      ]
-    },
-    "https://webmention.io/www.ciccarello.me/xmlrpc": {
-      "rels": [
-        "pingback"
       ]
     },
     "https://www.linkedin.com/in/anthonyciccarello/": {
