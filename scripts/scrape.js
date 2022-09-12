@@ -21,7 +21,7 @@ const setWorkflowCommand = status => {
 
 Promise
   .all(users.map(async (profile) => {
-    await timers.setTimeout(Math.floor(Math.random() * (60 - 1) + 1) * 1000);
+    await timers.setTimeout(Math.floor(Math.random() * (120 - 1) + 1) * 1000);
 
     return axios.get('https://micromicro.cc/search', {
       headers: { 'Accept': 'application/json' },
