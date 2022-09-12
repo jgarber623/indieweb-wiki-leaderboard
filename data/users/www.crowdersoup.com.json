@@ -1,0 +1,215 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "photo": [
+          {
+            "value": "https://crowdersoup.com/dude_square.png",
+            "alt": "Aaron Crowder avatar"
+          }
+        ],
+        "name": [
+          "Aaron Crowder"
+        ],
+        "url": [
+          "https://crowdersoup.com/"
+        ],
+        "nickname": [
+          "CrowderSoup"
+        ],
+        "note": [
+          "I’m a Husband, Father, Software developer, and lover of the open web.\nI like to take things apart (and sometiems even put them back together).\nI can frequently be found tinkering with some bit of code in my spare\ntime.\n\nPronouns: He/Him, They/Them"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-feed"
+      ],
+      "properties": {},
+      "children": [
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "published": [
+              "2022-06-12 12:00"
+            ],
+            "url": [
+              "https://crowdersoup.com/posts/personal/life/on-having-covid/"
+            ],
+            "name": [
+              "On Having Covid"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "published": [
+              "2022-06-03 08:10"
+            ],
+            "url": [
+              "https://crowdersoup.com/posts/projects/indieweb/indieweb-proof-of-concept/"
+            ],
+            "name": [
+              "IndieWeb Proof-of-Concept"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "published": [
+              "2022-05-28 07:44"
+            ],
+            "url": [
+              "https://crowdersoup.com/posts/site-updates/simple-css-classless-framework/"
+            ],
+            "name": [
+              "Simple.css: Classless Styles"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "published": [
+              "2022-05-25 13:31"
+            ],
+            "url": [
+              "https://crowdersoup.com/posts/site-updates/new-theme-back-to-basics/"
+            ],
+            "name": [
+              "New Theme: Back to Basics"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "published": [
+              "2022-05-22 05:20"
+            ],
+            "url": [
+              "https://crowdersoup.com/posts/trying-out-frontmatter/"
+            ],
+            "name": [
+              "Trying out FrontMatter"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "rels": {
+    "stylesheet": [
+      "https://cdn.simplecss.org/simple.min.css",
+      "https://crowdersoup.com/css/style.css"
+    ],
+    "alternate": [
+      "https://crowdersoup.com/index.xml"
+    ],
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "microsub": [
+      "https://aperture.p3k.io/microsub/205"
+    ],
+    "me": [
+      "mailto:aaron.crowder@gmail.com",
+      "https://twitter.com/CrowderSoup",
+      "https://t.me/CrowderSoup",
+      "https://github.com/CrowderSoup",
+      "https://hachyderm.io/@CrowderSoup"
+    ],
+    "authn": [
+      "https://crowdersoup.com/pubkey.txt"
+    ],
+    "pgpkey": [
+      "https://crowdersoup.com/pubkey.txt"
+    ]
+  },
+  "rel-urls": {
+    "https://cdn.simplecss.org/simple.min.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://crowdersoup.com/css/style.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://crowdersoup.com/index.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "CrowderSoup",
+      "type": "application/rss+xml"
+    },
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://aperture.p3k.io/microsub/205": {
+      "rels": [
+        "microsub"
+      ]
+    },
+    "mailto:aaron.crowder@gmail.com": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://twitter.com/CrowderSoup": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://t.me/CrowderSoup": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://github.com/CrowderSoup": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://hachyderm.io/@CrowderSoup": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://crowdersoup.com/pubkey.txt": {
+      "rels": [
+        "authn",
+        "pgpkey"
+      ],
+      "text": "\n    Aaron Crowder\n  "
+    }
+  }
+}

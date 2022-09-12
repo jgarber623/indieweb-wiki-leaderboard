@@ -1,0 +1,298 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "MiTubo 1.3: sorting of QML ListView via Drag&Drop"
+        ],
+        "url": [
+          "http://www.mardy.it/blog/2022/09/mitubo-13-sorting-of-qml-listview-via-dragdrop.html"
+        ],
+        "published": [
+          "2022-09-10T13:38:51+03:00"
+        ],
+        "content": [
+          {
+            "html": "<p>One feature that I've been asked to add to\n<a href=\"https://gitlab.com/mardy/mitubo\">MiTubo</a>, and that indeed becomes more and\nmore important as the number of subscriptions increases, is the ability to\ngroup subscriptions into folders. I've spent a good amount of time implementing\nthe needed support in the C++ backend, which is now able to handle nested\nfolders too, but given that building the UI parts was not a quick task and\nseeing how much time has passed since the last release, I thought of releasing\na partial implementation of the whole feature, consisting only of the ability\nto manually sort the subscriptions via drag&amp;drop (that, is no folder support).\nIt turns out this is already not a trivial work!</p>\n<p>I found a <a href=\"https://agateau.com/2016/reordering-a-listview-via-dragndrop-3/\">nice tutorial on ListView DnD\nsorting</a> by\nthe great Aurélien Gâteau which I found very inspiring, and while I didn't\nactually reuse the same code (mostly because I was already halfway through with\nmy implementation, which I started before finding his tutorial), it was helpful\nto have it as a reference. I added a few animations to make it look more\npleasant, and I'm rather satisfied with the result:</p>\n<p></p>\n<center>\n<video id=\"video\" controls preload=\"metadata\" width=\"100%\"><source src=\"http://www.mardy.it/archivos/videos/mitubo-1.3.webm\" type=\"video/webm\"></source></video><p></p>\n</center>\n<p>I'm not showing you the code yet (though, indeed, you can find it in the\n<code>DraggableListView</code> and <code>DraggableDelegate</code> items <a href=\"https://gitlab.com/mardy/mitubo/-/tree/master/src/desktop/qml\">in the source\nrepository</a>)\nbecause it's not yet in a shape where it's generally reusable in other\nprojects, but if I happen to need the same feature elsewhere I'll eventually\ntry to turn it into a couple fully reusable components.</p>\n<p>Anyway, here's what's new in this latest MiTubo release:</p>\n<ul>\n<li>Subscriptions can be sorted by means of Drag&amp;drop</li>\n<li>For systems with python 3.5 or older (such as Ubuntu Touch), use the daily\n  builds of <a href=\"https://youtube-dl.org/\">youtube-dl</a> instead of the official\n  releases</li>\n<li>Implement <strong>PeerTube search</strong> (this should reserve a post of its own!)</li>\n</ul>\n<p>You can get it <a href=\"http://www.mardy.it/mitubo\">at the usual place</a>. This time\nthere are only Linux and Windows builds as I'm a bit lazy to make a macOS\nversion, but should you need it, don't hesitate to ask!</p>",
+            "value": "One feature that I've been asked to add to\nMiTubo, and that indeed becomes more and\nmore important as the number of subscriptions increases, is the ability to\ngroup subscriptions into folders. I've spent a good amount of time implementing\nthe needed support in the C++ backend, which is now able to handle nested\nfolders too, but given that building the UI parts was not a quick task and\nseeing how much time has passed since the last release, I thought of releasing\na partial implementation of the whole feature, consisting only of the ability\nto manually sort the subscriptions via drag&drop (that, is no folder support).\nIt turns out this is already not a trivial work!\nI found a nice tutorial on ListView DnD\nsorting by\nthe great Aurélien Gâteau which I found very inspiring, and while I didn't\nactually reuse the same code (mostly because I was already halfway through with\nmy implementation, which I started before finding his tutorial), it was helpful\nto have it as a reference. I added a few animations to make it look more\npleasant, and I'm rather satisfied with the result:\n\n\n\n\nI'm not showing you the code yet (though, indeed, you can find it in the\nDraggableListView and DraggableDelegate items in the source\nrepository)\nbecause it's not yet in a shape where it's generally reusable in other\nprojects, but if I happen to need the same feature elsewhere I'll eventually\ntry to turn it into a couple fully reusable components.\nAnyway, here's what's new in this latest MiTubo release:\n\nSubscriptions can be sorted by means of Drag&drop\nFor systems with python 3.5 or older (such as Ubuntu Touch), use the daily\n  builds of youtube-dl instead of the official\n  releases\nImplement PeerTube search (this should reserve a post of its own!)\n\nYou can get it at the usual place. This time\nthere are only Linux and Windows builds as I'm a bit lazy to make a macOS\nversion, but should you need it, don't hesitate to ask!"
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Auronzo - Bivacco Tiziano - Bivacco Musatti"
+        ],
+        "url": [
+          "http://www.mardy.it/blog/2022/07/auronzo-bivacco-tiziano-bivacco-musatti.html"
+        ],
+        "published": [
+          "2022-07-25T15:34:46+03:00"
+        ],
+        "content": [
+          {
+            "html": "<p>La giornata di ieri ha visto me e Yulia protagonisti di un paio di insuccessi\nescursionistici, ma ci tengo comunque a buttar giù due note a riguardo, perché\nmi riprometto di ritentare almeno una delle due imprese in un futuro prossimo.</p>\n<p>L'obiettivo iniziale era quello di visitare il rifugio-bivacco Tiziano, sul gruppo montuoso delle Marmarole, a quota 2246 metri, partendo dalla Casa Alpina D. Savio (sulla strada Auronzo - Misurina), a circa 1000 metri di altitudine.</p>\n<p>Il sentiero da seguire è il numero 260, che ci è parso da subito poco segnato:\nnon era ovvio il punto dove andava imboccato e, una volta trovatolo, dopo\nalcune centinaia di metri l'abbiamo perso e ci siamo ritrovati in mezzo a una\nradura che, se non fosse stato per il nostro desiderio di ricongiungerci al\nsentiero, sarebbe stata paradisiaca: una distesa di piante di lamponi e\nfragoline di bosco, dei cui frutti abbiamo goduto mentre ci facevamo strada\nverso il sentiero principale.</p>\n<figure style=\"margin: 0 auto; width: 725px\"><img src=\"http://www.mardy.it/archivos/imagines/blog/2022-07-24%20Tiziano.png\" class=\"shadow-sm\"><figcaption>La nostra passeggiata:\n  <ol>\n<li>La “radura dei lamponi”</li>\n    <li>Il punto più alto che abbiamo raggiunto del sentiero verso il bivacco Tiziano</li>\n    <li>La pista ciclo-pedonale lungo l'Ansiei</li>\n    <li>Il punto dove inizia la fune ferrata nel sentiero verso il Musatti</li>\n  </ol></figcaption></figure><p>Ritrovata la via maestra, abbiamo proceduto la salita, prima nel bosco e poi su\nun ghiaione che, pur non presentando particolari difficoltà, ci faceva\npreoccupare per il ritorno. Una volta completato, abbiamo incontrato un altro\nescursionista che stava scendendo, avendo riunciato alla salita. Alla nostra\nofferta di proseguire la passeggiata insieme ha riconsiderato la sua\nrisoluzione e si è rimesso in cammino dietro di noi. Il sentiero era parecchio\nripido, proseguendo a serpentina stretta, senza presentare spiazzi per soste o\nviste panoramiche. Dopo un po', il nostro accompagnatore si è fermato ancora\nuna volta ed ha deciso di tornare indietro. Noi abbiamo proseguito fino ad una\nquota di poco superiore ai 1500 metri, quando abbiamo incontrato un lastrone di\npietra poco invitante: il fatto che mancassero ancora circa 700 metri di\ndislivello da coprire, e la paura di incontrare ancora parecchi di questi\nlastroni, che ci facevano paura soprattutto in vista del cammino di ritorno, ci\nhanno persuasi ad abbandonare la missione e a tornare a valle. Lungo il\nritorno, abbiamo incontrato un paio di gruppi di escursionisti che stavano\nsalendo al bivacco, ed abbiamo iniziato a dubitare della bontà della nostra\ndecisione. Poi, incontrato il ghiaione e avendolo sceso senza difficoltà\nalcuna, ci siamo decisamente pentiti di essere tornati indietro e ci siamo\nriproposti di riaffrontare la salita un altro giorno.</p>\n<figure style=\"margin: 0 auto; width: 640px\"><video id=\"video\" controls preload=\"metadata\"><source src=\"http://www.mardy.it/archivos/videos/2022-07-24%20Teschio.mp4\" type=\"video/mp4\"></source></video><figcaption>Un agghiacciante ritrovamento durante la discesa!</figcaption></figure><p>Ritornati all'inizio del sentiero, abbiamo seguito la pista ciclabile lungo il\ntorrente Ansiei in direzione Misurina, con l'intenzione di consolarci\npasseggiando un po' lungo il fiume, ma una volta incontrate le tabelle che\nsegnalavano l'inizio dei sentieri 226 e 279 abbiamo deciso di seguire\nquest'ultimo, prefissandoci un tempo limite di 1 ora (ed essendo ben coscienti\nche in un tale lasso di tempo mai avremmo potuto raggiungere il bivacco\nMusatti).</p>\n<p>La bellezza del sentiero, tuttavia, ci ha indotto a seguirlo più a lungo: la\nparte iniziale si snoda interamente nel bosco, su terreno morbido coperto di\naghi di pini e foglie secche, abbastanza ripido e a tratti esposto (non alla\nroccia, ma una caduta laterale di diversi metri può far male comunque, anche se\nil terreno è superficialmente soffice!). Nel complesso, decisamente gradevole.</p>\n<p>A quota 1300 circa si arriva a un piccolo promontorio sul quale si può riposare\ne che offre una discreta veduta panoramica.</p>\n<p>Proseguendo, il sentiero continua ad essere ripido, e diventa impervio dopo\nquota 1600, dove abbiamo incontrato la fune metallica che aiuta a salire i\npunti più difficili. A quel punto abbiamo rinunciato alla salita, ma questa\nvolta senza troppi rammarici, in quanto già lo scendere quei pochi metri di\nroccia che avevamo scalato ci è sembrata un'impresa non facile. Sicuramente i\nbastoni che avevamo non erano di aiuto, in quanto è opportuno avere entrambe le\nmani libere per proseguire su questi passaggi; magari, se ci daremo un po' di\ncoraggio, anque questo percorso potremo riaffrontarlo in futuro.</p>",
+            "value": "La giornata di ieri ha visto me e Yulia protagonisti di un paio di insuccessi\nescursionistici, ma ci tengo comunque a buttar giù due note a riguardo, perché\nmi riprometto di ritentare almeno una delle due imprese in un futuro prossimo.\nL'obiettivo iniziale era quello di visitare il rifugio-bivacco Tiziano, sul gruppo montuoso delle Marmarole, a quota 2246 metri, partendo dalla Casa Alpina D. Savio (sulla strada Auronzo - Misurina), a circa 1000 metri di altitudine.\nIl sentiero da seguire è il numero 260, che ci è parso da subito poco segnato:\nnon era ovvio il punto dove andava imboccato e, una volta trovatolo, dopo\nalcune centinaia di metri l'abbiamo perso e ci siamo ritrovati in mezzo a una\nradura che, se non fosse stato per il nostro desiderio di ricongiungerci al\nsentiero, sarebbe stata paradisiaca: una distesa di piante di lamponi e\nfragoline di bosco, dei cui frutti abbiamo goduto mentre ci facevamo strada\nverso il sentiero principale.\n http://www.mardy.it/archivos/imagines/blog/2022-07-24%20Tiziano.png La nostra passeggiata:\n  \nLa “radura dei lamponi”\n    Il punto più alto che abbiamo raggiunto del sentiero verso il bivacco Tiziano\n    La pista ciclo-pedonale lungo l'Ansiei\n    Il punto dove inizia la fune ferrata nel sentiero verso il Musatti\n  Ritrovata la via maestra, abbiamo proceduto la salita, prima nel bosco e poi su\nun ghiaione che, pur non presentando particolari difficoltà, ci faceva\npreoccupare per il ritorno. Una volta completato, abbiamo incontrato un altro\nescursionista che stava scendendo, avendo riunciato alla salita. Alla nostra\nofferta di proseguire la passeggiata insieme ha riconsiderato la sua\nrisoluzione e si è rimesso in cammino dietro di noi. Il sentiero era parecchio\nripido, proseguendo a serpentina stretta, senza presentare spiazzi per soste o\nviste panoramiche. Dopo un po', il nostro accompagnatore si è fermato ancora\nuna volta ed ha deciso di tornare indietro. Noi abbiamo proseguito fino ad una\nquota di poco superiore ai 1500 metri, quando abbiamo incontrato un lastrone di\npietra poco invitante: il fatto che mancassero ancora circa 700 metri di\ndislivello da coprire, e la paura di incontrare ancora parecchi di questi\nlastroni, che ci facevano paura soprattutto in vista del cammino di ritorno, ci\nhanno persuasi ad abbandonare la missione e a tornare a valle. Lungo il\nritorno, abbiamo incontrato un paio di gruppi di escursionisti che stavano\nsalendo al bivacco, ed abbiamo iniziato a dubitare della bontà della nostra\ndecisione. Poi, incontrato il ghiaione e avendolo sceso senza difficoltà\nalcuna, ci siamo decisamente pentiti di essere tornati indietro e ci siamo\nriproposti di riaffrontare la salita un altro giorno.\nUn agghiacciante ritrovamento durante la discesa!Ritornati all'inizio del sentiero, abbiamo seguito la pista ciclabile lungo il\ntorrente Ansiei in direzione Misurina, con l'intenzione di consolarci\npasseggiando un po' lungo il fiume, ma una volta incontrate le tabelle che\nsegnalavano l'inizio dei sentieri 226 e 279 abbiamo deciso di seguire\nquest'ultimo, prefissandoci un tempo limite di 1 ora (ed essendo ben coscienti\nche in un tale lasso di tempo mai avremmo potuto raggiungere il bivacco\nMusatti).\nLa bellezza del sentiero, tuttavia, ci ha indotto a seguirlo più a lungo: la\nparte iniziale si snoda interamente nel bosco, su terreno morbido coperto di\naghi di pini e foglie secche, abbastanza ripido e a tratti esposto (non alla\nroccia, ma una caduta laterale di diversi metri può far male comunque, anche se\nil terreno è superficialmente soffice!). Nel complesso, decisamente gradevole.\nA quota 1300 circa si arriva a un piccolo promontorio sul quale si può riposare\ne che offre una discreta veduta panoramica.\nProseguendo, il sentiero continua ad essere ripido, e diventa impervio dopo\nquota 1600, dove abbiamo incontrato la fune metallica che aiuta a salire i\npunti più difficili. A quel punto abbiamo rinunciato alla salita, ma questa\nvolta senza troppi rammarici, in quanto già lo scendere quei pochi metri di\nroccia che avevamo scalato ci è sembrata un'impresa non facile. Sicuramente i\nbastoni che avevamo non erano di aiuto, in quanto è opportuno avere entrambe le\nmani libere per proseguire su questi passaggi; magari, se ci daremo un po' di\ncoraggio, anque questo percorso potremo riaffrontarlo in futuro."
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "MiTubo comes to macOS"
+        ],
+        "url": [
+          "http://www.mardy.it/blog/2022/06/mitubo-comes-to-macos.html"
+        ],
+        "published": [
+          "2022-06-22T22:44:47+03:00"
+        ],
+        "content": [
+          {
+            "html": "<p>I just released <a href=\"http://www.mardy.it/mitubo/#downloads\">MiTubo 1.2</a>. New in this version:</p>\n<ul>\n<li>As suggested by <code>alphas12</code> in the comments, I added the author name in the\n  YouTube search results.</li>\n<li>In the same results list, there's now a clickable link to the channel, which\n  makes it easier to subscribe to it.</li>\n<li>Improve layout of some pages on narrow displays (though there's still much to\n  be done!).</li>\n<li>Skip invoking youtube-dl if the video information is already encoded in the\n  page <code>HEAD</code> meta properties.</li>\n<li>Remember the preferred playback resolution; this can be helpful on low\n  bandwith connections.</li>\n<li>First macOS release!</li>\n</ul>\n<p>While bringing in the macOS version, I updated the <a href=\"https://gitlab.com/qt-goodies/qscreensaver\">QScreenSaver\nlibrary</a> to support inhibiting the\nscreensaver on macOS too.</p>\n<p>I also tested the AppImage on openSUSE, and it seems to work fine there too.\nSo, fewer and fewer people have valid excuses not to try out MiTubo!</p>",
+            "value": "I just released MiTubo 1.2. New in this version:\n\nAs suggested by alphas12 in the comments, I added the author name in the\n  YouTube search results.\nIn the same results list, there's now a clickable link to the channel, which\n  makes it easier to subscribe to it.\nImprove layout of some pages on narrow displays (though there's still much to\n  be done!).\nSkip invoking youtube-dl if the video information is already encoded in the\n  page HEAD meta properties.\nRemember the preferred playback resolution; this can be helpful on low\n  bandwith connections.\nFirst macOS release!\n\nWhile bringing in the macOS version, I updated the QScreenSaver\nlibrary to support inhibiting the\nscreensaver on macOS too.\nI also tested the AppImage on openSUSE, and it seems to work fine there too.\nSo, fewer and fewer people have valid excuses not to try out MiTubo!"
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "MiTubo 1.1: screensaver inhibitor"
+        ],
+        "url": [
+          "http://www.mardy.it/blog/2022/06/mitubo-11-screensaver-inhibitor.html"
+        ],
+        "published": [
+          "2022-06-04T13:46:54+03:00"
+        ],
+        "content": [
+          {
+            "html": "<p>Looks like I'm posting a bit too often about <a href=\"http://www.mardy.it/mitubo\">MiTubo</a>, but don't\nworry, I'll soon find something else to write about.</p>\n<p>Version 1.1 is now released, bringing you:</p>\n<ul>\n<li>A screensaver inhibitor, at last!</li>\n<li>AppImage now works in Arch and Manjaro</li>\n</ul>\n<p>More in detail, this means that your computer won't go to sleep or start the\nscreen saver while you are watching a video. To achieve this, I wrote a\nportable (well, for the time being it only supports Linux and Windows, but\nmacOS support will eventually arrive too) library for inhibiting the\nscreensaver: <a href=\"https://gitlab.com/qt-goodies/qscreensaver\">QScreenSaver</a>. It\nlives in its own repository, and it's written in a way that should be easy to\nintegrate with your own project. You are welcome to try it out (and add support\nfor cmake/qmake/meson/…).</p>\n<p>The AppImage support has been improved after a user filed a bug about MiTubo\nnot working in Arch; I myself could not verify the issue as I've grown too lazy\nto install a distribution like Arch, but I did it on Manjaro (which is also\nbased on Arch), and indeed the MiTubo AppImage contained some unnecessary\nlibraries (while missing some others) that rendered it non-functional in those\ndistributions. Now it's all fixed, so there's a good chance that the AppImage\nwill work on your distribution, too.</p>",
+            "value": "Looks like I'm posting a bit too often about MiTubo, but don't\nworry, I'll soon find something else to write about.\nVersion 1.1 is now released, bringing you:\n\nA screensaver inhibitor, at last!\nAppImage now works in Arch and Manjaro\n\nMore in detail, this means that your computer won't go to sleep or start the\nscreen saver while you are watching a video. To achieve this, I wrote a\nportable (well, for the time being it only supports Linux and Windows, but\nmacOS support will eventually arrive too) library for inhibiting the\nscreensaver: QScreenSaver. It\nlives in its own repository, and it's written in a way that should be easy to\nintegrate with your own project. You are welcome to try it out (and add support\nfor cmake/qmake/meson/…).\nThe AppImage support has been improved after a user filed a bug about MiTubo\nnot working in Arch; I myself could not verify the issue as I've grown too lazy\nto install a distribution like Arch, but I did it on Manjaro (which is also\nbased on Arch), and indeed the MiTubo AppImage contained some unnecessary\nlibraries (while missing some others) that rendered it non-functional in those\ndistributions. Now it's all fixed, so there's a good chance that the AppImage\nwill work on your distribution, too."
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "MiTubo 1.0: playlist support, new “website”"
+        ],
+        "url": [
+          "http://www.mardy.it/blog/2022/05/mitubo-10-playlist-support-new-website.html"
+        ],
+        "published": [
+          "2022-05-21T15:53:56+03:00"
+        ],
+        "content": [
+          {
+            "html": "<p>Some news from the MiTubo world:</p>\n<ul>\n<li>Version 1.0 has been released!</li>\n<li>It's also available for Windows (boo!)</li>\n<li>Some basic support for remote playlists</li>\n<li>New “Check for updates” dialog</li>\n<li>Added support for translations</li>\n<li>Added Italian translation, of course</li>\n<li>Minor cosmetic changes (like using a different unicode symbol for the “Back” button)</li>\n<li>New web page for MiTubo</li>\n</ul>\n<p>Expanding a bit on the points above, the first thing worth saying is that the\nchoice of releasing this version as “1.0” does not mean that it's more stable\nthan the previous ones; it just means that I'm rather satisfied with the\nfeature set, and that I believe that the program is ready for more widespread\nuse.</p>\n<p>This is also the reason why I decided to prepare a web page for it:\n<a href=\"http://www.mardy.it/mitubo\">mardy.it/mitubo</a>. I didn't go for a completely separate website,\nunlike what I previously did for <a href=\"https://mappero.mardy.it/\">Mappero Geotagger</a>,\n<a href=\"https://phototeleport.com/\">PhotoTeleport</a> and\n<a href=\"https://imaginario.mardy.it/\">Imaginario</a> (which reminds me that I haven't been\nworking on the latter for a long time! I should try to correct this soon!),\nboth because this way it's simpler to publish news about it (I'll continue\ndoing that here, instead of cross-posting in two sites), and because having it\nin the same domain might be mutually beneficial for the SEO ranking of the blog\nand of MiTubo.</p>\n<p>As for the Windows version, I want to thank <a href=\"http://www.mardy.it/blog/2020/04/new-website-for-mappero-geotagger.html\">once\nagain</a>\nthe <a href=\"http://mxe.cc/\">MXE project</a> for their fantastic cross-compiling suite. I\nfind it very cumbersome working in Windows, and being able to build my programs\nfrom Linux makes my life a lot easier (if you want to have more information\nabout how this works with QBS, have a look at the previous MXE post). I wish\nthere was something similar for macOS; and that's why the macOs version is\ngoing to take more time to arrive — on the other hand, I haven't received any\nrequests for it, so I'm not in a hurry to work on that.</p>\n<p>Last but not least, translation support means that if you want to help with\ntranslations, now you can. I've myself tried\n<a href=\"https://doc.qt.io/qt-5/linguist-translators.html\">QtLinguist</a> for the first\ntime to write the Italian translation, and I found it to be an extremely\neffective tool, once you learn the key bindings by heart.</p>",
+            "value": "Some news from the MiTubo world:\n\nVersion 1.0 has been released!\nIt's also available for Windows (boo!)\nSome basic support for remote playlists\nNew “Check for updates” dialog\nAdded support for translations\nAdded Italian translation, of course\nMinor cosmetic changes (like using a different unicode symbol for the “Back” button)\nNew web page for MiTubo\n\nExpanding a bit on the points above, the first thing worth saying is that the\nchoice of releasing this version as “1.0” does not mean that it's more stable\nthan the previous ones; it just means that I'm rather satisfied with the\nfeature set, and that I believe that the program is ready for more widespread\nuse.\nThis is also the reason why I decided to prepare a web page for it:\nmardy.it/mitubo. I didn't go for a completely separate website,\nunlike what I previously did for Mappero Geotagger,\nPhotoTeleport and\nImaginario (which reminds me that I haven't been\nworking on the latter for a long time! I should try to correct this soon!),\nboth because this way it's simpler to publish news about it (I'll continue\ndoing that here, instead of cross-posting in two sites), and because having it\nin the same domain might be mutually beneficial for the SEO ranking of the blog\nand of MiTubo.\nAs for the Windows version, I want to thank once\nagain\nthe MXE project for their fantastic cross-compiling suite. I\nfind it very cumbersome working in Windows, and being able to build my programs\nfrom Linux makes my life a lot easier (if you want to have more information\nabout how this works with QBS, have a look at the previous MXE post). I wish\nthere was something similar for macOS; and that's why the macOs version is\ngoing to take more time to arrive — on the other hand, I haven't received any\nrequests for it, so I'm not in a hurry to work on that.\nLast but not least, translation support means that if you want to help with\ntranslations, now you can. I've myself tried\nQtLinguist for the first\ntime to write the Italian translation, and I found it to be an extremely\neffective tool, once you learn the key bindings by heart."
+          }
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "stylesheet": [
+      "http://www.mardy.it/assets/css/all-nocdn.css"
+    ],
+    "alternate": [
+      "http://www.mardy.it/rss.xml",
+      "http://www.mardy.it/ia/rss.xml",
+      "http://www.mardy.it/it/rss.xml",
+      "http://www.mardy.it/feed.atom",
+      "http://www.mardy.it/ia/feed.atom",
+      "http://www.mardy.it/it/feed.atom",
+      "http://www.mardy.it/ia/",
+      "http://www.mardy.it/it/"
+    ],
+    "canonical": [
+      "http://mardy.it/"
+    ],
+    "icon": [
+      "http://www.mardy.it/favicon.png"
+    ],
+    "next": [
+      "http://www.mardy.it/index-92.html"
+    ],
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "webmention": [
+      "http://www.mardy.it/cgi-bin/bussator.fcgi"
+    ],
+    "prefetch": [
+      "http://www.mardy.it/blog/2022/09/mitubo-13-sorting-of-qml-listview-via-dragdrop.html"
+    ],
+    "bookmark": [
+      "http://www.mardy.it/blog/2022/09/mitubo-13-sorting-of-qml-listview-via-dragdrop.html",
+      "http://www.mardy.it/blog/2022/07/auronzo-bivacco-tiziano-bivacco-musatti.html",
+      "http://www.mardy.it/blog/2022/06/mitubo-comes-to-macos.html",
+      "http://www.mardy.it/blog/2022/06/mitubo-11-screensaver-inhibitor.html",
+      "http://www.mardy.it/blog/2022/05/mitubo-10-playlist-support-new-website.html"
+    ],
+    "me": [
+      "mailto:info@mardy.it"
+    ],
+    "nofollow": [
+      "https://getnikola.com/"
+    ]
+  },
+  "rel-urls": {
+    "http://www.mardy.it/assets/css/all-nocdn.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "http://www.mardy.it/rss.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "hreflang": "en",
+      "title": "RSS (en)",
+      "type": "application/rss+xml"
+    },
+    "http://www.mardy.it/ia/rss.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "hreflang": "ia",
+      "title": "RSS (ia)",
+      "type": "application/rss+xml"
+    },
+    "http://www.mardy.it/it/rss.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "hreflang": "it",
+      "title": "RSS (it)",
+      "type": "application/rss+xml"
+    },
+    "http://www.mardy.it/feed.atom": {
+      "rels": [
+        "alternate"
+      ],
+      "hreflang": "en",
+      "title": "Atom (en)",
+      "type": "application/atom+xml"
+    },
+    "http://www.mardy.it/ia/feed.atom": {
+      "rels": [
+        "alternate"
+      ],
+      "hreflang": "ia",
+      "title": "Atom (ia)",
+      "type": "application/atom+xml"
+    },
+    "http://www.mardy.it/it/feed.atom": {
+      "rels": [
+        "alternate"
+      ],
+      "hreflang": "it",
+      "title": "Atom (it)",
+      "type": "application/atom+xml"
+    },
+    "http://mardy.it/": {
+      "rels": [
+        "canonical"
+      ]
+    },
+    "http://www.mardy.it/favicon.png": {
+      "rels": [
+        "icon"
+      ]
+    },
+    "http://www.mardy.it/index-92.html": {
+      "rels": [
+        "next"
+      ],
+      "type": "text/html"
+    },
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "http://www.mardy.it/cgi-bin/bussator.fcgi": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "http://www.mardy.it/blog/2022/09/mitubo-13-sorting-of-qml-listview-via-dragdrop.html": {
+      "rels": [
+        "prefetch"
+      ],
+      "type": "text/html"
+    },
+    "http://www.mardy.it/ia/": {
+      "rels": [
+        "alternate"
+      ],
+      "hreflang": "ia",
+      "text": "Interlingua"
+    },
+    "http://www.mardy.it/it/": {
+      "rels": [
+        "alternate"
+      ],
+      "hreflang": "it",
+      "text": "Italiano"
+    },
+    "http://www.mardy.it/blog/2022/07/auronzo-bivacco-tiziano-bivacco-musatti.html": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n            July 25, 2022"
+    },
+    "http://www.mardy.it/blog/2022/06/mitubo-comes-to-macos.html": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n            June 22, 2022"
+    },
+    "http://www.mardy.it/blog/2022/06/mitubo-11-screensaver-inhibitor.html": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n            June 4, 2022"
+    },
+    "http://www.mardy.it/blog/2022/05/mitubo-10-playlist-support-new-website.html": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n            May 21, 2022"
+    },
+    "mailto:info@mardy.it": {
+      "rels": [
+        "me"
+      ],
+      "text": "Alberto Mardegan"
+    },
+    "https://getnikola.com/": {
+      "rels": [
+        "nofollow"
+      ],
+      "text": "Nikola"
+    }
+  }
+}

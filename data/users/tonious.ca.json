@@ -1,0 +1,59 @@
+{
+  "items": [],
+  "rels": {
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "me": [
+      "https://github.com/tonious"
+    ],
+    "stylesheet": [
+      "https://tonious.ca/css/bootstrap.min.css",
+      "https://tonious.ca/css/bootstrap-responsive.min.css",
+      "https://tonious.ca/css/site.css",
+      "https://tonious.ca/js/video-js/video-js.css"
+    ]
+  },
+  "rel-urls": {
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://github.com/tonious": {
+      "rels": [
+        "me"
+      ],
+      "text": "\n    \n    \n    \n    \n    \n    \n    \n  \n  \n    \n    \n      \n        \n\n          Tony Thompson\n          \n            about |\n            projects |\n            tags\n          \n          \n            github |\n            twitter \n          \n          \n\n        \n      \n      \n        \n\n  \n  \n    \n    \n\n\n    \n    \n      \n    \n      \n        \n          Tuesday\n          18 February 2014\n          03:21PM\n        \n      \n  \n      \n        \n          \n            Internet of Things\n          \n        \n          \n            IoT\n          \n        \n          \n            Messaging\n          \n        \n      \n      \n    \n  \n    \n  \t\n        \n          \n            Frameworks for the Internet of Things\n          \n        \n  \t\n  \n      \n  \n      \n      \n\n      \n        I learned a great term this morning via this talk: The \"Geocities of Things\". Frankly, half of the little Arduino projects I do are probably Geocities-of-Things level; certainly not professional, but then again, that's kind of the point.\nSkyNet\nhttp://skynet.im/\nDweet.io\nhttps://dweet.io/\nBERG Cloud\nhttp://bergcloud.com/\nNode-RED\nhttp://nodered.org/\nThis is a step past the others. SkyNet, Dweet.io and BERG Cloud are all transports with varying degrees of sophistication. Node-RED is an IBM Research project that lives on top of MQTT. It's not interested in transport as much as analysis. It's a tool to create a processing node.\nhttp://iot-bay.org/\n\n      \n  \n      \n      \n    \n    \n  \n    \n  \n    \n    \n\n\n    \n    \n      \n    \n      \n        \n          Monday\n          03 February 2014\n          07:51PM\n        \n      \n  \n      \n        \n          \n            3D Printer\n          \n        \n          \n            Thingiverse\n          \n        \n      \n      \n    \n  \n    \n  \t\n  \n      \n  \n      \n      \n\n      \n        The latest list of interesting things to print:\n\nPrint-In-Place Fidget Cube\nOpen your Heart\nPreassembled Secret Heart Box\nLEGO marble run (chapter 1)\nLEGO marble run (chapter 2)\nLEGO marble run (chapter 3)\nplug&play marble track\nDuplo compatible marble run system\n\n\n      \n  \n      \n      \n    \n    \n  \n    \n      \n    \n      \n        \n          Monday\n          03 February 2014\n          07:51PM\n        \n      \n  \n      \n        \n          \n            LaTeX\n          \n        \n          \n            TeX\n          \n        \n          \n            TeXLive\n          \n        \n      \n      \n    \n  \n    \n  \t\n  \n      \n  \n      \n      \n\n      \n        I always forget how to make some of this work.\nSetting texmf path:\ntlmgr conf texmf TEXMFHOME \"~/Library/texmf:~/texmf\"\nUpdating font paths:\nmktexlsr c:\\texlive\\texmf-local\\fonts\ntexhash\nupdmap\n\n      \n  \n      \n      \n    \n    \n  \n    \n  \n    \n    \n\n\n    \n    \n      \n    \n      \n        \n          Sunday\n          26 January 2014\n          04:03PM\n        \n      \n  \n      \n        \n          \n            octopizza\n          \n        \n          \n            octopus\n          \n        \n          \n            pizza\n          \n        \n          \n            sheer brilliance\n          \n        \n      \n      \n    \n  \n    \n  \t\n  \n      \n  \n      \n      \n        \n    \n      \n    \n  \n      \n\n      \n         Instructable by donedirtcheap. This is absolutely brilliant and I can't wait until my son is old enough to appreciate it. Or eat solid food.\n\n      \n  \n      \n      \n    \n    \n  \n    \n  \n    \n    \n\n\n    \n    \n      \n    \n      \n        \n          Saturday\n          25 January 2014\n          05:35PM\n        \n      \n  \n      \n        \n          \n            3D Printer\n          \n        \n          \n            calibration\n          \n        \n          \n            print bed\n          \n        \n          \n            Prusa I3\n          \n        \n      \n      \n    \n  \n    \n  \t\n  \n      \n  \n      \n      \n\n      \n        (Manual) Calibration points for my Prusa I3:\nG1 F3000\nG1 X0 Y30\nG1 X0 Y200\nG1 X150 Y200\nG1 X150 Y30\nMore objects to make:\n\nThe XCLIP, a Raspberry Pi (and PCB) mounting solution\n22mm broom handle holder\nThe ultimate PEG board accessory creator v1.1\n\nSome notes on auto bed levelling:\n\nAutomatic bed leveling and z offset howto (Level 2/3)\n\nSpecifically calls out sanguinololu controller and marlin firmware.\n\nZ-probe holder for Makerfarm i3 with auto bed-level\n\nMight require some modification to suit.\n\n\n\n      \n  \n      \n      \n    \n    \n  \n    \n  \n    \n    \n\n\n    \n    \n      \n    \n      \n        \n          Wednesday\n          22 January 2014\n          12:01PM\n        \n      \n  \n      \n        \n          \n            Herbie Hancock\n          \n        \n          \n            Hiromi Uehara\n          \n        \n          \n            Jazz\n          \n        \n          \n            music\n          \n        \n      \n      \n    \n  \n    \n  \t\n  \n      \n  \n      \n      \n\n      \n        Today's moments of jazz zen:\n\n\n\n\n\n\n\n\n\n\n      \n  \n      \n      \n    \n    \n  \n    \n  \n    \n    \n\n\n    \n    \n      \n    \n      \n        \n          Friday\n          17 January 2014\n          10:14AM\n        \n      \n  \n      \n        \n          \n            3D Printer\n          \n        \n          \n            fan\n          \n        \n          \n            Prusa I3\n          \n        \n          \n            shroud\n          \n        \n      \n      \n    \n  \n    \n  \t\n  \n      \n  \n      \n      \n\n      \n        Here are a few useful fan/shroud projects from thingiverse:\n\nAdjustable Blower-Fan Mount for Prusa i3 Greg's Wade Extruder (Tweaked version)\nFan duct collection\nAdjustable Blower-Fan Mount for Prusa i3 Greg's Wade Extruder (Short & naked version)\nAdjustable Blower-Fan Mount for Prusa i3 Greg's Wade Extruder\n\n\n      \n  \n      \n      \n    \n    \n  \n    \n  \n    \n    \n\n\n    \n    \n      \n    \n      \n        \n          Wednesday\n          08 January 2014\n          05:55PM\n        \n      \n  \n      \n        \n          \n            legacy\n          \n        \n          \n            methodology\n          \n        \n          \n            testing\n          \n        \n      \n      \n    \n  \n    \n  \t\n  \n      \n  \n      \n      \n\n      \n        Luke recommended Working Effectively with Legacy Code. A couple of slide decks from CalPoly and Object Mentor cover some of the high points.\nEssentially, Feathers defines legacy software as software without sufficient test coverage. Which is a sufficient insight in and of itself.\nI love the idea of tests as a software vice. When machining metal, a vice holds the work steady. You don't use a vice to modify anything. It doesn't perform any operation aside from keeping your work oriented and positioned so you can do something to it. Tests are there to keep your software from squirming.\n\n      \n  \n      \n      \n    \n    \n  \n    \n  \n    \n    \n\n\n    \n    \n      \n    \n      \n        \n          Monday\n          06 January 2014\n          09:30PM\n        \n      \n  \n      \n        \n          \n            anxiety\n          \n        \n          \n            technology\n          \n        \n          \n            work\n          \n        \n      \n      \n    \n  \n    \n  \t\n  \n      \n  \n      \n      \n\n      \n        \nAnxiety occurs when people try to do today’s jobs with yesterday’s tools.\n\n-- Marshall McLuhan\n(Via Paper Bits and Stowe Boyd)\n\n      \n  \n      \n      \n    \n    \n  \n    \n  \n    \n    \n\n\n    \n    \n      \n    \n      \n        \n          Saturday\n          28 December 2013\n          08:03PM\n        \n      \n  \n      \n        \n          \n            checklist\n          \n        \n          \n            documentation\n          \n        \n          \n            organization\n          \n        \n      \n      \n    \n  \n    \n  \t\n  \n      \n  \n      \n      \n\n      \n        Some guidelines from The Checklist Manifesto.\n\nYou must define a clear pause point at which the checklist is supposed to be used (unless the moment is obvious, like when a warning light goes on or an engine fails).\n\n\nYou must decide whether you want a DO-CONFIRM checklist or a READ-DO checklist. With a DO-CONFIRM checklist, he said, team members perform their jobs from memory and experience, often separately. But then they stop. They pause to run the checklist and confirm that everything that was supposed to be done was done. With a READ-DO checklist, on the other hand, people carry out the tasks as they check them off.\n\n\nThe checklist cannot be lengthy. A rule of thumb some use is to keep it to between five and nine items, which is the limit of working memory.\n\n\nBut after about sixty to ninety seconds at a given pause point, the checklist often becomes a distraction from other things. People start \"shortcutting.\" Steps get missed. So you want to keep the list short by focusing on what he called \"the killer items\"--the steps that are most dangerous to skip and sometimes overlooked nonetheless.\n\nAll of these points could just as easily apply to something as non life-critical as software development. Developers are more apt to skip any oversight unless it is absolutely minimal drag, and are just as easily prone to solitary labour vs team coordination.\n\n      \n  \n      \n      \n    \n    \n  \n    \n  \n\n      \n    \n    \n      \n        \n          \n            root | \n            projects | \n            tags | \n            2008 | \n            2009 | \n            2010 | \n            2011 | \n            2012 | \n            2013 |\n            2014 |\n            2015 |\n            2016 |\n            2017 |\n            atom \n          \n          \n            © 2008-2014 Tony Thompson\n          \n        \n      \n      \n    \n\n\n\n  videojs.options.flash.swf = \"/js/video-js/video-js.swf\"\n\n  \n"
+    },
+    "https://tonious.ca/css/bootstrap.min.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "screen"
+    },
+    "https://tonious.ca/css/bootstrap-responsive.min.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://tonious.ca/css/site.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://tonious.ca/js/video-js/video-js.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    }
+  }
+}

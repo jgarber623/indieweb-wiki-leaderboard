@@ -1,0 +1,780 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Year in review: 2019"
+        ],
+        "url": [
+          "https://peterstuifzand.nl/2019/12/20/year-in-review-2019.html",
+          "https://peterstuifzand.nl/2019/12/20/year-in-review-2019.html"
+        ],
+        "content": [
+          {
+            "html": "<p>I was always interested in the Year in Review posts from people. It looks like it is\nsomething that you can't create after the fact. You need to keep some\nnotes, and perhaps log data about the things you did. Some people keep count\nof the number of emails sent and received or kilometers traveled. After the\nfact, these kinds of details are rather hard to come by.</p>\n\n<p>To make this a great post, I will have to dig into the notes I made, the data\nthat I collected, and the posts I wrote on the other blog and combine these\ninto witty graphs and paragraphs of enjoyable words.</p>\n\n<p>You are reading the first Year in Review post I ever wrote on this blog.</p>\n\n<h3>Lead developer</h3>\n\n<p>This year I got a promotion to Lead Developer. I'm very happy with the\nopportunity I got this year and let's what we get to do next year.</p>\n\n<h3>Route 66</h3>\n\n<p>This year my wife and I traveled to the United States. We drove 2869 miles\nfrom Chicago to Los Angeles along the historic Route 66. We saw some things of\nthe United States. Not much when you think about it. Just nine states.</p>\n\n<h3>Quantified Self</h3>\n\n<p>When we returned from the United States, I found that the Fitbit had charged\nwhile we were gone. This Fitbit had stopped charging some time ago. I had\nfound out that the problem was with the charger and not with the watch\nitself. I was even more surprised that the problem was not with the small\nconnector for the Fitbit, but with the USB-A connector on the other end.</p>\n\n<p>This started my exploration of possible Quantified Self tracking that I could\ndo. I started using <a href=\"https://exist.io/?referred_by=pstuifzand\">Exist</a>, with\nFitbit, Last.fm and RescueTime.</p>\n\n<p>A few months ago Exist added the ability to track <code>coffees</code>,\n<code>alcoholic_drinks</code> and <code>keystrokes</code>. The problem is that these attributes\nthere are no programs that track these values. To remedy this I created a new\nprogram that sends these values to Exist. The first version just sends these\nvalues. A later version will send these values automatically every day.</p>\n\n<p>I already created a small widget on my phone home screen with Tasker and\nLWGT, that counts the cups of coffee that I drank in a day. At night this\nwill get send to Exist. This doesn't work from beginning to end, but as they say\n<a href=\"https://indieweb.org/manual_until_it_hurts\">manual until it hurts</a>.</p>\n\n<p>This whole Quantified Self thing will help me make next years review a lot\nmore numerical.</p>\n\n<h3>Indieweb</h3>\n\n<p>This year I haven't developed much for the Indieweb. I made some improvements to the blog. I added destination support. At some point it was possible to send something to my blog and then let <a href=\"https://nodered.org/\">Node-Red</a> handle the post. It could then send to post to the blog.</p>\n\n<p>I added support for <a href=\"https://joaoapps.com/join/\">Join</a>. It's a way to send stuff to your phone, or other supported devices. It's written by the developer of Tasker.</p>\n\n<p>I did experiment a bit with Server-Sent Events in <a href=\"https://github.com/pstuifzand/ekster\">Ekster</a>.\nThe reader part now supports small posts in the right sidebar. These get sent by the Micropub server when new posts arrive in realtime. It's even faster this way, compared to updating every minutes. But for the most part I only did cleanup of the code.</p>\n\n<h3>Home Automation</h3>\n\n<p>This year I started automating some parts of my home. This started with the Smart Meter that was installed in the beginning of the year. Around the same time I found the IKEA smart lights. Which led me to Home Assistant and Node-Red.</p>\n\n<p>The automation I'm the most proud of is the I get a notification when the washing machine is done cleaning. This is build with a Wifi socket with energy measurement built-in, <a href=\"https://esphome.io/\">ESPHome</a> and Home Assistant.</p>\n\n<p>The sockets themselves are flashed with a firmware created with ESPHome. These sockets send the power measurements with Wifi to Home Assistant. When the measurements reach a certain level of power it changes a state in Home Assitant from Idle to Running. When the power level drops again, the state is changed from Running to Clean and a notification is sent to my phone.</p>\n\n<h3>Conclusion</h3>\n\n<p>It always hard to know what the new year will bring. We do already a expect a little\nmiracle in april. So I guess that will take most of my time next year.</p>",
+            "value": "I was always interested in the Year in Review posts from people. It looks like it is\nsomething that you can't create after the fact. You need to keep some\nnotes, and perhaps log data about the things you did. Some people keep count\nof the number of emails sent and received or kilometers traveled. After the\nfact, these kinds of details are rather hard to come by.\n\nTo make this a great post, I will have to dig into the notes I made, the data\nthat I collected, and the posts I wrote on the other blog and combine these\ninto witty graphs and paragraphs of enjoyable words.\n\nYou are reading the first Year in Review post I ever wrote on this blog.\n\nLead developer\n\nThis year I got a promotion to Lead Developer. I'm very happy with the\nopportunity I got this year and let's what we get to do next year.\n\nRoute 66\n\nThis year my wife and I traveled to the United States. We drove 2869 miles\nfrom Chicago to Los Angeles along the historic Route 66. We saw some things of\nthe United States. Not much when you think about it. Just nine states.\n\nQuantified Self\n\nWhen we returned from the United States, I found that the Fitbit had charged\nwhile we were gone. This Fitbit had stopped charging some time ago. I had\nfound out that the problem was with the charger and not with the watch\nitself. I was even more surprised that the problem was not with the small\nconnector for the Fitbit, but with the USB-A connector on the other end.\n\nThis started my exploration of possible Quantified Self tracking that I could\ndo. I started using Exist, with\nFitbit, Last.fm and RescueTime.\n\nA few months ago Exist added the ability to track coffees,\nalcoholic_drinks and keystrokes. The problem is that these attributes\nthere are no programs that track these values. To remedy this I created a new\nprogram that sends these values to Exist. The first version just sends these\nvalues. A later version will send these values automatically every day.\n\nI already created a small widget on my phone home screen with Tasker and\nLWGT, that counts the cups of coffee that I drank in a day. At night this\nwill get send to Exist. This doesn't work from beginning to end, but as they say\nmanual until it hurts.\n\nThis whole Quantified Self thing will help me make next years review a lot\nmore numerical.\n\nIndieweb\n\nThis year I haven't developed much for the Indieweb. I made some improvements to the blog. I added destination support. At some point it was possible to send something to my blog and then let Node-Red handle the post. It could then send to post to the blog.\n\nI added support for Join. It's a way to send stuff to your phone, or other supported devices. It's written by the developer of Tasker.\n\nI did experiment a bit with Server-Sent Events in Ekster.\nThe reader part now supports small posts in the right sidebar. These get sent by the Micropub server when new posts arrive in realtime. It's even faster this way, compared to updating every minutes. But for the most part I only did cleanup of the code.\n\nHome Automation\n\nThis year I started automating some parts of my home. This started with the Smart Meter that was installed in the beginning of the year. Around the same time I found the IKEA smart lights. Which led me to Home Assistant and Node-Red.\n\nThe automation I'm the most proud of is the I get a notification when the washing machine is done cleaning. This is build with a Wifi socket with energy measurement built-in, ESPHome and Home Assistant.\n\nThe sockets themselves are flashed with a firmware created with ESPHome. These sockets send the power measurements with Wifi to Home Assistant. When the measurements reach a certain level of power it changes a state in Home Assitant from Idle to Running. When the power level drops again, the state is changed from Running to Clean and a notification is sent to my phone.\n\nConclusion\n\nIt always hard to know what the new year will bring. We do already a expect a little\nmiracle in april. So I guess that will take most of my time next year."
+          }
+        ],
+        "published": [
+          "2019-12-20T14:00:00+0100"
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "name": [
+                "Peter Stuifzand"
+              ],
+              "url": [
+                "https://peterstuifzand.nl/"
+              ]
+            },
+            "value": "Peter Stuifzand"
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Ekster: a microsub server"
+        ],
+        "url": [
+          "https://peterstuifzand.nl/2018/12/31/ekster-microsub-server.html",
+          "https://peterstuifzand.nl/2018/12/31/ekster-microsub-server.html"
+        ],
+        "content": [
+          {
+            "html": "<p><a href=\"https://github.com/pstuifzand/ekster\">Ekster</a> is a <a href=\"https://indieweb.org/Microsub\">Microsub</a> server. As far as I know Ekster was\nthe second implementation of a Microsub server.</p>\n\n<p>Microsub is a protocol for feed reader applications. Ekster fetches web pages\nand feeds and gathers the entries into channels. A channel contains multiple\nfeeds, these feeds are combined into a timeline.</p>\n\n<p>Ekster can find entries from pages that are marked up with microformats. It\nuses the go-microformats library to get the MF2 structure and converts these\nmicroformat items to JF2. JF2 is a simplified version of MF2, which is easier\nto display in a Microsub reader.</p>\n\n<p>Ekster also reads RSS and Atom feeds. It does discovery on websites and\ntries to find the alternate urls. RSS and Atom are simpler feed formats, that\ndon't contain the likes and replies of websites.</p>\n\n<p>To work in the realtime web, Ekster also supports WebSub. WebSub is a protocol\nthat notifies subscribers of feeds. Ekster subscribes to these feeds when it\nfinds the WebSub hub.</p>\n\n<p>Another way to get entries into Ekster is by using Micropub. Micropub is a\nprotocol for clients applications to create new posts and weblogs. It can also\nbe used in Ekster to send notifications for example.</p>\n\n<p>The storage of the microsub server is built on Redis. Redis is a key-value data\nstructure server. On the <a href=\"https://github.com/pstuifzand/ekster/wiki/Storage\">wiki</a> there is a description how Ekster\nkeeps the state of feeds and items in Redis.</p>",
+            "value": "Ekster is a Microsub server. As far as I know Ekster was\nthe second implementation of a Microsub server.\n\nMicrosub is a protocol for feed reader applications. Ekster fetches web pages\nand feeds and gathers the entries into channels. A channel contains multiple\nfeeds, these feeds are combined into a timeline.\n\nEkster can find entries from pages that are marked up with microformats. It\nuses the go-microformats library to get the MF2 structure and converts these\nmicroformat items to JF2. JF2 is a simplified version of MF2, which is easier\nto display in a Microsub reader.\n\nEkster also reads RSS and Atom feeds. It does discovery on websites and\ntries to find the alternate urls. RSS and Atom are simpler feed formats, that\ndon't contain the likes and replies of websites.\n\nTo work in the realtime web, Ekster also supports WebSub. WebSub is a protocol\nthat notifies subscribers of feeds. Ekster subscribes to these feeds when it\nfinds the WebSub hub.\n\nAnother way to get entries into Ekster is by using Micropub. Micropub is a\nprotocol for clients applications to create new posts and weblogs. It can also\nbe used in Ekster to send notifications for example.\n\nThe storage of the microsub server is built on Redis. Redis is a key-value data\nstructure server. On the wiki there is a description how Ekster\nkeeps the state of feeds and items in Redis."
+          }
+        ],
+        "published": [
+          "2018-12-31T16:11:58+0100"
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "name": [
+                "Peter Stuifzand"
+              ],
+              "url": [
+                "https://peterstuifzand.nl/"
+              ]
+            },
+            "value": "Peter Stuifzand"
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "A tour of my Indieweb projects"
+        ],
+        "url": [
+          "https://peterstuifzand.nl/2018/08/15/tour-of-indieweb-projects.html",
+          "https://peterstuifzand.nl/2018/08/15/tour-of-indieweb-projects.html"
+        ],
+        "content": [
+          {
+            "html": "<p>Earlier this year I started to rebuild this website to work better with the Indieweb. At the same I build a new website <a href=\"https://p83.nl/\">P83</a> with Indieweb support from the start.</p>\n\n<p>This website is generated from static files with a system that I created the\nfirst time when I started writing in the website. Not much has changed, except\nthat I some point a few years ago I rewrote the whole system in Perl.</p>\n\n<p>The only actual changes to this website, was adding some support for smaller\nposts, and having a better view of multiple posts on the same day. I also added\nmicroformats to the posts.</p>\n\n<p>I still think there is a lot to like in a static website. It's even possible to\ncombine the static nature of pre-generated pages with the dynamic properties of\nthe Indieweb like <a href=\"https://www.w3.org/TR/webmention/\">webmentions</a> and comments. Quite a few people\nsupport that usecase. Some even use <a href=\"https://www.w3.org/TR/micropub/\">Micropub</a> to write new posts\nfor their blog.</p>\n\n<p>This blog doesn't support any of that, except <a href=\"https://webmention.io/\">webmentions</a>.</p>\n\n<p><a href=\"https://p83.nl/\">P83</a> is the new name of the other blog. It started out from an old code\nbase, that I was working on a few years ago. The software running it is called\npublog (from something like publishing log). It's quite a bit more dynamic\nsoftware.  It supports webmention and microsub. It supports\n<a href=\"https://p83.nl/projects\">projects</a>, different channels, syndication to other websites (like\n<a href=\"https://indieweb.xyz/\">Indieweb.xyz</a>, <a href=\"https://twitter.com/pstuifzand\">Twitter</a> and <a href=\"https://github.com/pstuifzand\">Github</a>),\n<a href=\"https://brid.gy/\">Bridgy</a> and all kinds of small experiments.</p>\n\n<p>In the last few months, I have build out the functionality for connecting with\nthe Indieweb. I improved the presentation of the posts, the microformats and\nthe parsing of microformats. The <a href=\"https://github.com/microformats\">microformats</a>\norganization on Github gathered many parsers together and have a repository\nwith tests. This helps a lot when you want to work with microformats in your\nown projects. I have written my own version of a microformats parser for Perl.\nBut I'm sure it's not very complete compared to the parsers for the other\nlanguages. I should add the test suite to this parser and see how far it gets.\nPerhaps I should even rewrite it, as it could contain a lot of unused code.\nThe microformats parser is the weak link in the website. I should try to\nimprove it.</p>\n\n<p>When I found that there was no Android client for Micropub, I dusted of my\nAndroid developer account and started working on the client. Android Studio\nhelps a lot. Today the client works pretty well, and I hope that it can be\nmoved to a production release in the coming weeks. I only still need some\nconfirmation from people using it with some of the more popular systems (like\nWordpress).</p>\n\n<p>I'll mention the Microsub server (Ekster) in my next post.</p>",
+            "value": "Earlier this year I started to rebuild this website to work better with the Indieweb. At the same I build a new website P83 with Indieweb support from the start.\n\nThis website is generated from static files with a system that I created the\nfirst time when I started writing in the website. Not much has changed, except\nthat I some point a few years ago I rewrote the whole system in Perl.\n\nThe only actual changes to this website, was adding some support for smaller\nposts, and having a better view of multiple posts on the same day. I also added\nmicroformats to the posts.\n\nI still think there is a lot to like in a static website. It's even possible to\ncombine the static nature of pre-generated pages with the dynamic properties of\nthe Indieweb like webmentions and comments. Quite a few people\nsupport that usecase. Some even use Micropub to write new posts\nfor their blog.\n\nThis blog doesn't support any of that, except webmentions.\n\nP83 is the new name of the other blog. It started out from an old code\nbase, that I was working on a few years ago. The software running it is called\npublog (from something like publishing log). It's quite a bit more dynamic\nsoftware.  It supports webmention and microsub. It supports\nprojects, different channels, syndication to other websites (like\nIndieweb.xyz, Twitter and Github),\nBridgy and all kinds of small experiments.\n\nIn the last few months, I have build out the functionality for connecting with\nthe Indieweb. I improved the presentation of the posts, the microformats and\nthe parsing of microformats. The microformats\norganization on Github gathered many parsers together and have a repository\nwith tests. This helps a lot when you want to work with microformats in your\nown projects. I have written my own version of a microformats parser for Perl.\nBut I'm sure it's not very complete compared to the parsers for the other\nlanguages. I should add the test suite to this parser and see how far it gets.\nPerhaps I should even rewrite it, as it could contain a lot of unused code.\nThe microformats parser is the weak link in the website. I should try to\nimprove it.\n\nWhen I found that there was no Android client for Micropub, I dusted of my\nAndroid developer account and started working on the client. Android Studio\nhelps a lot. Today the client works pretty well, and I hope that it can be\nmoved to a production release in the coming weeks. I only still need some\nconfirmation from people using it with some of the more popular systems (like\nWordpress).\n\nI'll mention the Microsub server (Ekster) in my next post."
+          }
+        ],
+        "published": [
+          "2018-08-15T16:24:02+0200"
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "name": [
+                "Peter Stuifzand"
+              ],
+              "url": [
+                "https://peterstuifzand.nl/"
+              ]
+            },
+            "value": "Peter Stuifzand"
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Writing a WebSub hub"
+        ],
+        "url": [
+          "https://peterstuifzand.nl/2018/01/31/writing-a-websub-hub.html",
+          "https://peterstuifzand.nl/2018/01/31/writing-a-websub-hub.html"
+        ],
+        "content": [
+          {
+            "html": "<p>This week I've been writing a <a href=\"https://w3.org/TR/websub/\">WebSub</a> hub. It's server program that receives\nsubscription and publish requests and sends notications to the subscribers\nwhen a website changes. The website itself sends a request when the website changes.\nThis way the subscribers know when to update their feeds.</p>\n\n<p>Implementing the server is quite simple, especially with the help of a website that checks\nyour implementation, <a href=\"https://websub.rocks/\">websub.rocks</a>.</p>\n\n<blockquote>\n  <p>WebSub Rocks! is a validator to help you test your WebSub implementation.\n  Several kinds of tests are available on the site.</p>\n</blockquote>\n\n<p>By reading the spec and following the steps from websub.rocks, it was quite\nsimple. The problem is that not all websites implement this exact\nspecification. <a href=\"https://feedbin.org/\">FeedBin</a>, for example, implements a feature from\nan older version of the spec and won't validate the subscription, when it\notherwise would be good. A small change makes me support it, but I also\nsend a <a href=\"https://github.com/feedbin/feedbin/pull/236#issue-293175080\">commit</a> to the FeedBin software on Github.\nThat removes that use of the feature. As expected, this change leads to\nmore changes, so we will see how this pans out.</p>",
+            "value": "This week I've been writing a WebSub hub. It's server program that receives\nsubscription and publish requests and sends notications to the subscribers\nwhen a website changes. The website itself sends a request when the website changes.\nThis way the subscribers know when to update their feeds.\n\nImplementing the server is quite simple, especially with the help of a website that checks\nyour implementation, websub.rocks.\n\n\n  WebSub Rocks! is a validator to help you test your WebSub implementation.\n  Several kinds of tests are available on the site.\n\n\nBy reading the spec and following the steps from websub.rocks, it was quite\nsimple. The problem is that not all websites implement this exact\nspecification. FeedBin, for example, implements a feature from\nan older version of the spec and won't validate the subscription, when it\notherwise would be good. A small change makes me support it, but I also\nsend a commit to the FeedBin software on Github.\nThat removes that use of the feature. As expected, this change leads to\nmore changes, so we will see how this pans out."
+          }
+        ],
+        "published": [
+          "2018-01-31T20:58:02+0100"
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "name": [
+                "Peter Stuifzand"
+              ],
+              "url": [
+                "https://peterstuifzand.nl/"
+              ]
+            },
+            "value": "Peter Stuifzand"
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Just fixed a small problem with loading and saving subscriptions in the hub. It again shows that it's\na good idea to check all error's from function calls in Go."
+        ],
+        "content": [
+          {
+            "html": "<p>Just fixed a small problem with loading and saving subscriptions in the hub. It again shows that it's\na good idea to check all error's from function calls in Go.</p>",
+            "value": "Just fixed a small problem with loading and saving subscriptions in the hub. It again shows that it's\na good idea to check all error's from function calls in Go."
+          }
+        ],
+        "url": [
+          "https://peterstuifzand.nl/2018/01/31/20180131163900.html",
+          "https://peterstuifzand.nl/2018/01/31/20180131163900.html"
+        ],
+        "published": [
+          "2018-01-31T16:39:00+0100"
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "name": [
+                "Peter Stuifzand"
+              ],
+              "url": [
+                "https://peterstuifzand.nl/"
+              ]
+            },
+            "value": "Peter Stuifzand"
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Sending the websub notification seemed to have worked. The previous was added to FeedBin."
+        ],
+        "content": [
+          {
+            "html": "<p>Sending the websub notification seemed to have worked. The previous was added to FeedBin.</p>",
+            "value": "Sending the websub notification seemed to have worked. The previous was added to FeedBin."
+          }
+        ],
+        "url": [
+          "https://peterstuifzand.nl/2018/01/31/20180131161600.html",
+          "https://peterstuifzand.nl/2018/01/31/20180131161600.html"
+        ],
+        "published": [
+          "2018-01-31T16:16:00+0100"
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "name": [
+                "Peter Stuifzand"
+              ],
+              "url": [
+                "https://peterstuifzand.nl/"
+              ]
+            },
+            "value": "Peter Stuifzand"
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Trying WebSub with this weblog. I have a subscription from Feedbin.\nNow I will try publishing from the feed."
+        ],
+        "content": [
+          {
+            "html": "<p>Trying WebSub with this weblog. I have a subscription from Feedbin.\nNow I will try publishing from the feed.</p>",
+            "value": "Trying WebSub with this weblog. I have a subscription from Feedbin.\nNow I will try publishing from the feed."
+          }
+        ],
+        "url": [
+          "https://peterstuifzand.nl/2018/01/31/20180131160900.html",
+          "https://peterstuifzand.nl/2018/01/31/20180131160900.html"
+        ],
+        "published": [
+          "2018-01-31T16:09:00+0100"
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "name": [
+                "Peter Stuifzand"
+              ],
+              "url": [
+                "https://peterstuifzand.nl/"
+              ]
+            },
+            "value": "Peter Stuifzand"
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "published": [
+          "2018-01-31T16:09:00+0100"
+        ],
+        "name": [
+          "Trying feedbin as a feed reader."
+        ],
+        "bookmark-of": [
+          "https://feedbin.com/"
+        ],
+        "content": [
+          {
+            "html": "",
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://peterstuifzand.nl/2018/01/31/20180131160900.html"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "published": [
+          "2018-01-16T08:01:37+0100"
+        ],
+        "name": [
+          "Is it possible to reset the password on a SuperMicro IPMI interface?"
+        ],
+        "bookmark-of": [
+          "https://serverfault.com/a/85079/1519"
+        ],
+        "content": [
+          {
+            "html": "Yes it is.",
+            "value": "Yes it is."
+          }
+        ],
+        "url": [
+          "https://peterstuifzand.nl/2018/01/16/20180116080137.html"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "published": [
+          "2018-01-16T07:58:26+0100"
+        ],
+        "name": [
+          "Restarting an BMC without restarting the server itself"
+        ],
+        "bookmark-of": [
+          "https://serverfault.com/a/223252"
+        ],
+        "content": [
+          {
+            "html": "Use this when your BMC doesn't respond from the outside, but does from the inside.",
+            "value": "Use this when your BMC doesn't respond from the outside, but does from the inside."
+          }
+        ],
+        "url": [
+          "https://peterstuifzand.nl/2018/01/16/20180116075826.html"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "published": [
+          "2018-01-14T20:59:34+0100"
+        ],
+        "name": [
+          "Using feature queries in css"
+        ],
+        "bookmark-of": [
+          "https://hacks.mozilla.org/2016/08/using-feature-queries-in-css/"
+        ],
+        "content": [
+          {
+            "html": "Perhaps this is a useful feature to start supporting grids.",
+            "value": "Perhaps this is a useful feature to start supporting grids."
+          }
+        ],
+        "url": [
+          "https://peterstuifzand.nl/2018/01/14/20180114205934.html"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "published": [
+          "2018-01-14T20:58:07+0100"
+        ],
+        "name": [
+          "Google Maps's Moat"
+        ],
+        "bookmark-of": [
+          "https://www.justinobeirne.com/google-maps-moat"
+        ],
+        "content": [
+          {
+            "html": "Why Google Maps is superior...",
+            "value": "Why Google Maps is superior..."
+          }
+        ],
+        "url": [
+          "https://peterstuifzand.nl/2018/01/14/20180114205807.html"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "published": [
+          "2018-01-14T20:42:32+0100"
+        ],
+        "name": [
+          "Telling stories through your commits"
+        ],
+        "bookmark-of": [
+          "http://blog.mocoso.co.uk/talks/2015/01/12/telling-stories-through-your-commits/"
+        ],
+        "content": [
+          {
+            "html": "Transcript of a short talk about sensible practices when writing commit messages.",
+            "value": "Transcript of a short talk about sensible practices when writing commit messages."
+          }
+        ],
+        "url": [
+          "https://peterstuifzand.nl/2018/01/14/20180114204232.html"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "published": [
+          "2018-01-14T15:23:00+0100"
+        ],
+        "name": [
+          "Meet the New Dialog Element"
+        ],
+        "bookmark-of": [
+          "https://keithjgrant.com/posts/2018/meet-the-new-dialog-element/"
+        ],
+        "content": [
+          {
+            "html": "It's nice to see standard support for useful functionality.",
+            "value": "It's nice to see standard support for useful functionality."
+          }
+        ],
+        "url": [
+          "https://peterstuifzand.nl/2018/01/14/20180114152300.html"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Collection and select"
+        ],
+        "url": [
+          "https://peterstuifzand.nl/2017/05/27/magento-patterns-collection-and-select.html",
+          "https://peterstuifzand.nl/2017/05/27/magento-patterns-collection-and-select.html"
+        ],
+        "content": [
+          {
+            "html": "<p>Sometimes you need to get a lot of information from the database and you need it fast.\nThe way to get this information normally would be to use the Magento collection for the model.\nIt would look like this:</p>\n\n<pre><code>$collection = Mage::getModel('customer/customer')-&gt;getCollection()\n    -&gt;addNameToSelect()\n    -&gt;joinAttribute('billing_city', 'customer/city', 'default_billing', null, 'left');\n\nforeach ($collection as $customer) {\n    // Use $customer\n}\n</code></pre>\n\n<p>The problem with this way of getting the information is that it loads all customer information into memory, which can take a long time when you have many customers.</p>\n\n<p>The solution to this performance problem is that you read the customers one at a time by using the select that was created.</p>\n\n<pre><code>$select = $collection-&gt;getSelect();\n$stmt = $select-&gt;query();\n\nwhile ($row = $stmt-&gt;fetch()) {\n    // Use $row\n}\n</code></pre>\n\n<p>This is often many times faster and won't fill your memory.</p>",
+            "value": "Sometimes you need to get a lot of information from the database and you need it fast.\nThe way to get this information normally would be to use the Magento collection for the model.\nIt would look like this:\n\n$collection = Mage::getModel('customer/customer')->getCollection()\n    ->addNameToSelect()\n    ->joinAttribute('billing_city', 'customer/city', 'default_billing', null, 'left');\n\nforeach ($collection as $customer) {\n    // Use $customer\n}\n\n\nThe problem with this way of getting the information is that it loads all customer information into memory, which can take a long time when you have many customers.\n\nThe solution to this performance problem is that you read the customers one at a time by using the select that was created.\n\n$select = $collection->getSelect();\n$stmt = $select->query();\n\nwhile ($row = $stmt->fetch()) {\n    // Use $row\n}\n\n\nThis is often many times faster and won't fill your memory."
+          }
+        ],
+        "published": [
+          "2017-05-27T11:48:00+0200"
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "name": [
+                "Peter Stuifzand"
+              ],
+              "url": [
+                "https://peterstuifzand.nl/"
+              ]
+            },
+            "value": "Peter Stuifzand"
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "XML-lister"
+        ],
+        "url": [
+          "https://peterstuifzand.nl/2016/03/31/xml-lister.html",
+          "https://peterstuifzand.nl/2016/03/31/xml-lister.html"
+        ],
+        "content": [
+          {
+            "html": "<p><a href=\"https://github.com/pstuifzand/magento-tools/blob/master/src/xml-lister.cpp\">XML lister</a> is a small program that lists the elements, values and\nattributes of XML files.</p>\n\n<pre><code>&lt;?xml version=\"1.0\"?&gt;\n&lt;layout&gt;\n    &lt;default&gt;\n        &lt;reference name=\"root\"&gt;\n            &lt;reference name=\"content\"&gt;\n                &lt;block name=\"product.info\"&gt;\n                    &lt;action method=\"test\"&gt;\n                        &lt;param&gt;test&lt;/param&gt;\n                        &lt;param2&gt;test2&lt;/param2&gt;\n                    &lt;/action&gt;\n                &lt;/block&gt;\n            &lt;/reference&gt;\n        &lt;/reference&gt;\n    &lt;/default&gt;\n&lt;/layout&gt;\n</code></pre>\n\n<p>XML lister will print the following list:</p>\n\n<pre><code>layout\nlayout/default\nlayout/default/reference\nlayout/default/reference@name   root\nlayout/default/reference/reference\nlayout/default/reference/reference@name content\nlayout/default/reference/reference/block\nlayout/default/reference/reference/block@name   product.info\nlayout/default/reference/reference/block/action\nlayout/default/reference/reference/block/action@method  test\nlayout/default/reference/reference/block/action/param   test\nlayout/default/reference/reference/block/action\nlayout/default/reference/reference/block/action/param2  test2\nlayout/default/reference/reference/block/action\nlayout/default/reference/reference/block\nlayout/default/reference/reference\nlayout/default/reference\nlayout/default\nlayout\n</code></pre>\n\n<p>A few days ago I wanted to find out if there are places in Magento layout\nXML files where <code>reference</code> elements are used inside other <code>reference</code>\nelements. With XML lister it becomes really easy to find places like this.</p>\n\n<pre><code>find app/design -name '*.xml' | xargs xml-lister --filename | grep reference/reference\n</code></pre>\n\n<p>With the list it becomes really easy to find the files where a certain\nconstruct is used.</p>",
+            "value": "XML lister is a small program that lists the elements, values and\nattributes of XML files.\n\n<?xml version=\"1.0\"?>\n<layout>\n    <default>\n        <reference name=\"root\">\n            <reference name=\"content\">\n                <block name=\"product.info\">\n                    <action method=\"test\">\n                        <param>test</param>\n                        <param2>test2</param2>\n                    </action>\n                </block>\n            </reference>\n        </reference>\n    </default>\n</layout>\n\n\nXML lister will print the following list:\n\nlayout\nlayout/default\nlayout/default/reference\nlayout/default/reference@name   root\nlayout/default/reference/reference\nlayout/default/reference/reference@name content\nlayout/default/reference/reference/block\nlayout/default/reference/reference/block@name   product.info\nlayout/default/reference/reference/block/action\nlayout/default/reference/reference/block/action@method  test\nlayout/default/reference/reference/block/action/param   test\nlayout/default/reference/reference/block/action\nlayout/default/reference/reference/block/action/param2  test2\nlayout/default/reference/reference/block/action\nlayout/default/reference/reference/block\nlayout/default/reference/reference\nlayout/default/reference\nlayout/default\nlayout\n\n\nA few days ago I wanted to find out if there are places in Magento layout\nXML files where reference elements are used inside other reference\nelements. With XML lister it becomes really easy to find places like this.\n\nfind app/design -name '*.xml' | xargs xml-lister --filename | grep reference/reference\n\n\nWith the list it becomes really easy to find the files where a certain\nconstruct is used."
+          }
+        ],
+        "published": [
+          "2016-03-31T21:33:49+0200"
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "name": [
+                "Peter Stuifzand"
+              ],
+              "url": [
+                "https://peterstuifzand.nl/"
+              ]
+            },
+            "value": "Peter Stuifzand"
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Rewrite XML with xmlstarlet"
+        ],
+        "url": [
+          "https://peterstuifzand.nl/2016/03/16/rewrite-xml-with-xmlstarlet.html",
+          "https://peterstuifzand.nl/2016/03/16/rewrite-xml-with-xmlstarlet.html"
+        ],
+        "content": [
+          {
+            "html": "<p><a href=\"http://xmlstar.sourceforge.net/\">XML Starlet</a> is a program that makes transforming XML documents really simple.</p>\n\n<p>The command that you need to transform an XML document is the following.</p>\n\n<pre><code>xmlstarlet tr [&lt;options&gt;] &lt;xsl-file&gt; {-p|-s &lt;name&gt;=&lt;value&gt;} [ &lt;xml-file-or-uri&gt; ... ]\n</code></pre>\n\n<p>The XSL file that transforms a document to itself is this. It copies all elements, attributes and texts.\nWe can extend this file to remove, add, or transform elements.</p>\n\n<pre><code>&lt;?xml version=\"1.0\" ?&gt;\n&lt;xsl:stylesheet version=\"1.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"&gt;\n    &lt;!-- IdentityTransform --&gt;\n    &lt;xsl:template match=\"/ | @* | node()\"&gt;\n        &lt;xsl:copy&gt;\n            &lt;xsl:apply-templates select=\"@* | node()\" /&gt;\n        &lt;/xsl:copy&gt;\n    &lt;/xsl:template&gt;\n&lt;/xsl:stylesheet&gt;\n</code></pre>\n\n<p>To <strong>remove an element</strong>, we match an element and don't call apply-elements inside\nit. This example will remove the remove me element.</p>\n\n<pre><code>&lt;?xml version=\"1.0\" ?&gt;\n&lt;xsl:stylesheet version=\"1.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"&gt;\n    &lt;!-- IdentityTransform --&gt;\n    &lt;xsl:template match=\"/ | @* | node()\"&gt;\n        &lt;xsl:copy&gt;\n            &lt;xsl:apply-templates select=\"@* | node()\" /&gt;\n        &lt;/xsl:copy&gt;\n    &lt;/xsl:template&gt;\n\n    &lt;!-- Remove the element --&gt;\n    &lt;xsl:template match=\"remove-me\"&gt;\n    &lt;/xsl:template&gt;\n&lt;/xsl:stylesheet&gt;\n</code></pre>\n\n<p>To <strong>add an element</strong>, we just add the part we would like to add. If it needs to be in a certain place, we can add an extra\n<code>xsl:template</code> rule. The <code>this-will-get-added</code> element will be inserted after the <code>element</code> element.</p>\n\n<pre><code>&lt;?xml version=\"1.0\" ?&gt;\n&lt;xsl:stylesheet version=\"1.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"&gt;\n    &lt;!-- IdentityTransform --&gt;\n    &lt;xsl:template match=\"/ | @* | node()\"&gt;\n        &lt;xsl:copy&gt;\n            &lt;xsl:apply-templates select=\"@* | node()\" /&gt;\n        &lt;/xsl:copy&gt;\n    &lt;/xsl:template&gt;\n\n    &lt;xsl:template match=\"element\"&gt;\n        &lt;xsl:copy&gt;\n            &lt;xsl:apply-templates select=\"@* | node()\" /&gt;\n        &lt;/xsl:copy&gt;\n\n        &lt;this-will-get-added&gt;&lt;/this-will-get-added&gt;\n    &lt;/xsl:template&gt;\n&lt;/xsl:stylesheet&gt;\n</code></pre>\n\n<p>To <strong>transform an element</strong> we remove <code>xsl:copy</code> and replace it with the\nelements we need. If we keep the <code>xsl:apply-elements</code> tag in the <code>xsl:template</code> tag,\nwe copy everything inside the element in it's place.</p>\n\n<pre><code>&lt;?xml version=\"1.0\" ?&gt;\n&lt;xsl:stylesheet version=\"1.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"&gt;\n    &lt;!-- IdentityTransform --&gt;\n    &lt;xsl:template match=\"/ | @* | node()\"&gt;\n        &lt;xsl:copy&gt;\n            &lt;xsl:apply-templates select=\"@* | node()\" /&gt;\n        &lt;/xsl:copy&gt;\n    &lt;/xsl:template&gt;\n\n    &lt;xsl:template match=\"element\"&gt;\n        &lt;my-new-element&gt;\n            &lt;xsl:apply-templates select=\"@* | node()\" /&gt;\n        &lt;/my-new-element&gt;\n    &lt;/xsl:template&gt;\n&lt;/xsl:stylesheet&gt;\n</code></pre>\n\n<p>XSL used in this way becomes quite simple to use. With these three patterns we\ncan extend the identity transformation and get quite a bit of power when\nwe transform XML documents.</p>",
+            "value": "XML Starlet is a program that makes transforming XML documents really simple.\n\nThe command that you need to transform an XML document is the following.\n\nxmlstarlet tr [<options>] <xsl-file> {-p|-s <name>=<value>} [ <xml-file-or-uri> ... ]\n\n\nThe XSL file that transforms a document to itself is this. It copies all elements, attributes and texts.\nWe can extend this file to remove, add, or transform elements.\n\n<?xml version=\"1.0\" ?>\n<xsl:stylesheet version=\"1.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">\n    <!-- IdentityTransform -->\n    <xsl:template match=\"/ | @* | node()\">\n        <xsl:copy>\n            <xsl:apply-templates select=\"@* | node()\" />\n        </xsl:copy>\n    </xsl:template>\n</xsl:stylesheet>\n\n\nTo remove an element, we match an element and don't call apply-elements inside\nit. This example will remove the remove me element.\n\n<?xml version=\"1.0\" ?>\n<xsl:stylesheet version=\"1.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">\n    <!-- IdentityTransform -->\n    <xsl:template match=\"/ | @* | node()\">\n        <xsl:copy>\n            <xsl:apply-templates select=\"@* | node()\" />\n        </xsl:copy>\n    </xsl:template>\n\n    <!-- Remove the element -->\n    <xsl:template match=\"remove-me\">\n    </xsl:template>\n</xsl:stylesheet>\n\n\nTo add an element, we just add the part we would like to add. If it needs to be in a certain place, we can add an extra\nxsl:template rule. The this-will-get-added element will be inserted after the element element.\n\n<?xml version=\"1.0\" ?>\n<xsl:stylesheet version=\"1.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">\n    <!-- IdentityTransform -->\n    <xsl:template match=\"/ | @* | node()\">\n        <xsl:copy>\n            <xsl:apply-templates select=\"@* | node()\" />\n        </xsl:copy>\n    </xsl:template>\n\n    <xsl:template match=\"element\">\n        <xsl:copy>\n            <xsl:apply-templates select=\"@* | node()\" />\n        </xsl:copy>\n\n        <this-will-get-added></this-will-get-added>\n    </xsl:template>\n</xsl:stylesheet>\n\n\nTo transform an element we remove xsl:copy and replace it with the\nelements we need. If we keep the xsl:apply-elements tag in the xsl:template tag,\nwe copy everything inside the element in it's place.\n\n<?xml version=\"1.0\" ?>\n<xsl:stylesheet version=\"1.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">\n    <!-- IdentityTransform -->\n    <xsl:template match=\"/ | @* | node()\">\n        <xsl:copy>\n            <xsl:apply-templates select=\"@* | node()\" />\n        </xsl:copy>\n    </xsl:template>\n\n    <xsl:template match=\"element\">\n        <my-new-element>\n            <xsl:apply-templates select=\"@* | node()\" />\n        </my-new-element>\n    </xsl:template>\n</xsl:stylesheet>\n\n\nXSL used in this way becomes quite simple to use. With these three patterns we\ncan extend the identity transformation and get quite a bit of power when\nwe transform XML documents."
+          }
+        ],
+        "published": [
+          "2016-03-16T14:23:32+0100"
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "name": [
+                "Peter Stuifzand"
+              ],
+              "url": [
+                "https://peterstuifzand.nl/"
+              ]
+            },
+            "value": "Peter Stuifzand"
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Removed Analytics"
+        ],
+        "url": [
+          "https://peterstuifzand.nl/2014/11/06/removed-analytics.html",
+          "https://peterstuifzand.nl/2014/11/06/removed-analytics.html"
+        ],
+        "content": [
+          {
+            "html": "<p>I just <a href=\"http://scribbling.net/2014/10/16/short-form-blogging/\">removed Analytics</a> from my website. It's not important for me.\nI don't have the time to look at it.</p>",
+            "value": "I just removed Analytics from my website. It's not important for me.\nI don't have the time to look at it."
+          }
+        ],
+        "published": [
+          "2014-11-06T15:02:08+0100"
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "name": [
+                "Peter Stuifzand"
+              ],
+              "url": [
+                "https://peterstuifzand.nl/"
+              ]
+            },
+            "value": "Peter Stuifzand"
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "photo": [
+          "https://peterstuifzand.nl/img/profile.jpg"
+        ],
+        "name": [
+          "Peter Stuifzand"
+        ],
+        "url": [
+          "https://peterstuifzand.nl/"
+        ],
+        "given-name": [
+          "Peter"
+        ],
+        "family-name": [
+          "Stuifzand"
+        ],
+        "email": [
+          "mailto:peter@peterstuifzand.nl"
+        ],
+        "locality": [
+          "Zwolle"
+        ],
+        "country-name": [
+          "The Netherlands"
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "stylesheet": [
+      "https://peterstuifzand.nl/css/bootstrap.min.css",
+      "https://peterstuifzand.nl/css/new.css"
+    ],
+    "publisher": [
+      "https://plus.google.com/113704097514881075344/"
+    ],
+    "alternate": [
+      "https://peterstuifzand.nl/rss.xml"
+    ],
+    "pingback": [
+      "https://webmention.io/peterstuifzand.nl/xmlrpc"
+    ],
+    "webmention": [
+      "https://webmention.io/peterstuifzand.nl/webmention"
+    ],
+    "micropub": [
+      "https://publog.stuifzandapp.com/micropub"
+    ],
+    "microsub": [
+      "https://microsub.stuifzandapp.com/microsub"
+    ],
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "me": [
+      "https://instagram.com/pstuifzand",
+      "https://twitter.com/pstuifzand",
+      "https://github.com/pstuifzand",
+      "https://keybase.io/pstuifzand",
+      "mailto:peter@peterstuifzand.nl",
+      "https://peterstuifzand.nl/"
+    ],
+    "pgpkey": [
+      "https://peterstuifzand.nl/key.pub"
+    ],
+    "author": [
+      "https://peterstuifzand.nl/"
+    ]
+  },
+  "rel-urls": {
+    "https://peterstuifzand.nl/css/bootstrap.min.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://peterstuifzand.nl/css/new.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://plus.google.com/113704097514881075344/": {
+      "rels": [
+        "publisher"
+      ]
+    },
+    "https://peterstuifzand.nl/rss.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "RSS feed",
+      "type": "application/rss+xml"
+    },
+    "https://webmention.io/peterstuifzand.nl/xmlrpc": {
+      "rels": [
+        "pingback"
+      ]
+    },
+    "https://webmention.io/peterstuifzand.nl/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://publog.stuifzandapp.com/micropub": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://microsub.stuifzandapp.com/microsub": {
+      "rels": [
+        "microsub"
+      ]
+    },
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://instagram.com/pstuifzand": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://peterstuifzand.nl/key.pub": {
+      "rels": [
+        "pgpkey"
+      ]
+    },
+    "https://peterstuifzand.nl/": {
+      "rels": [
+        "author"
+      ],
+      "title": "Peter Stuifzand",
+      "text": "Peter Stuifzand"
+    },
+    "https://twitter.com/pstuifzand": {
+      "rels": [
+        "me"
+      ],
+      "text": "@pstuifzand on Twitter"
+    },
+    "https://github.com/pstuifzand": {
+      "rels": [
+        "me"
+      ],
+      "text": "@pstuifzand on Github"
+    },
+    "https://keybase.io/pstuifzand": {
+      "rels": [
+        "me"
+      ],
+      "text": "@pstuifzand on Keybase"
+    },
+    "mailto:peter@peterstuifzand.nl": {
+      "rels": [
+        "me"
+      ],
+      "text": "peter@peterstuifzand.nl"
+    }
+  }
+}
