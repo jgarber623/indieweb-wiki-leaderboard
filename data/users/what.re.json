@@ -1,0 +1,144 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "VR Adventures in Qubes OS"
+        ],
+        "url": [
+          "https://what.re/posts/vr-adventures-in-qubes-os/"
+        ],
+        "published": [
+          "2021-01-27T15:18:48+01:00"
+        ],
+        "content": [
+          {
+            "html": "<div>\n<p>I can play VR in Qubes OS!</p>\n<p><a href=\"https://www.qubes-os.org/\">Qubes OS</a> is pretty cool and succeeds at making virtual machines on the desktop unexpectedly seamless.\nBut I'm a massive virtual reality fanboy and I need my Beat Saber!\nVR needs a powerful GPU and passing a GPU to a VM is harder than it should be.\nThus began my quest to make my virtual reality machine a virtual reality virtual machine with Qubes.</p>\n<p>My machine has two GPUs, one for the Qubes UI and one to pass through to VMs: An AMD Ryzen 3 3200G CPU with an integrated Vega 8 GPU and an AMD RX 5500 XT GPU.\nI use a <a href=\"https://www.dan-cases.com/dana4.php\">Mini-ITX case</a> so I needed a CPU with an iGPU instead of two dedicated GPUs.</p>\n<h2>Installing Qubes OS</h2>\n<p>Installing Qubes was already a small challenge because because the default LTS kernel of Qubes dom0 is too old and does not support the GPUs.\nI had to <a href=\"https://www.qubes-os.org/doc/uefi-troubleshooting/#installation-freezes-before-displaying-installer\">fix UEFI boot</a> by commenting out <code>noexitboot=1</code> and <code>mapbs=1</code>.\nThe installation stick booted but couldn't start the graphical installer because of the old kernel.\nThe text based installer is broken, too.\nBut running the installer over VNC worked!\nTo cite the <a href=\"https://github.com/QubesOS/qubes-issues/issues/4879#issuecomment-504043090\">very helpful Github comment about VNC installation</a>:</p>\n<blockquote>\n<p>The text based installer is also broken (tickets #2113 #1161), but if you plug in a network adaptor, alt+tab to the terminal, use dhclient to get an IP address, use ip a to see the IP, remove /var/run/anaconda.pid, and run anaconda --vnc --vncpassword pass1234 and connect to your IP with a VNC client on port 5901, the install will work fine...</p>\n</blockquote>\n<p>And it did!\nApart from the LTS kernel that also breaks the GUI in the installed OS.</p>\n<p>I needed to upgrade the dom0 kernel.\nBut this needs the dom0-upgrade-VMs set up, which normally happens in the GUI on first boot.\nLuckily there's a text-based initial setup script at <code>/usr/libexec/initial-setup/initial-setup-text</code>.\nI could then <a href=\"https://www.qubes-os.org/doc/software-update-dom0/#kernel-upgrade\">upgrade dom0 to <code>kernel-latest</code></a> and <a href=\"https://www.qubes-os.org/doc/software-update-dom0/#changing-default-kernel\">make it the default kernel</a>.</p>\n<p>After a restarting either Qubes or lightdm I had a fully working Qubes OS!</p>\n<h2>Installing Windows</h2>\n<p>Creating a Windows VM was a lot more straightforward than I expected, <a href=\"https://github.com/Qubes-Community/Contents/blob/master/docs/os/windows/windows-vm.md\">I just followed the Qubes Windows documentation</a>:\nDownload the Windows ISO into a VM, create a new standalone VM, increase its RAM and storage to 3.7GB+ and 50GB+, and boot the ISO from the other VM.\nThen wait forever until the installer starts.\nBecause it will.\nEventually.</p>\n<h2>Passing through the GPU</h2>\n<p>A passed through GPU roughly goes through the following stages:</p>\n<ol>\n<li>It's added to a VM</li>\n<li>The GPU driver inside the VM runs stuff on the GPU</li>\n<li>After VM shutdown, the GPU is reset to be ready for another passthrough</li>\n</ol>\n<p>And while all of them had some catch for me, <a href=\"https://neowutran.ovh/qubes/articles/gaming_windows_hvm.html\">neowutran's article</a> and the <a href=\"https://github.com/Qubes-Community/Contents/blob/master/docs/customization/windows-gaming-hvm.md\">Qubes community documentation</a> on GPU passthrough lead me to success.</p>\n<h3>GPU Passthrough</h3>\n<p>The biggest, most important secret to pass through a GPU to a Windows VM is to not use an Nvidia GPU.\nTheir drivers can detect they're running inside a VM and will throw Error 43, halt and catch fire.\nKVM supports workarounds, Xen and thus Qubes do not.\nI even tried <a href=\"https://github.com/sk1080/nvidia-kvm-patcher\">to patch the Nvidia driver</a>, but the error persisted.</p>\n<p>Thus I got myself an AMD RX 5500 XT and upgraded my partner's desktop PC with my \"old\" Nvidia GTX 1060.</p>\n<p><a href=\"https://www.qubes-os.org/doc/pci-devices/#attaching-devices-using-the-gui\">Passing through PCI devices in Qubes</a> is pretty easy.\nIf they're not used by another VM, e.g. by dom0!\nTo prevent dom0 from grabbing the GPU, I needed to hide its PCI device at boot.\nRunning <code>lspci</code> in dom0 gave me the PCI addresses for my GPU: <code>03:00.0</code> for the graphics part and <code>03:00.1</code> for the HDMI audio part.\nI added <code>rd.qubes.hide_pci=03:00.0,03:00.1</code> to my kernel commandline in <code>/boot/efi/EFI/qubes/xen.cfg</code> and rebooted my machine.</p>\n<p>Booting the VM afterwards needs work, too, because <a href=\"https://github.com/QubesOS/qubes-issues/issues/4321\">VMs with more than 3.5GB of RAM and passed-through devices crash</a>.</p>\n<p>A gaming VM with 3.5GB of RAM is rather useless these days, but luckily <a href=\"https://github.com/QubesOS/qubes-issues/issues/4321#issuecomment-423011787\">there is a fix</a>!\nI couldn't get the <code>sed</code> command from the Github comment to work and used a different modification of the <code>init</code> file:</p>\n<pre class=\"code literal-block\"># <span class=\"mh\">$d</span><span class=\"nv\">m_args</span> <span class=\"nv\">and</span> $<span class=\"nv\">kernel</span> <span class=\"nv\">are</span> <span class=\"nv\">separated</span> <span class=\"nv\">with</span> \\<span class=\"nv\">x1b</span> <span class=\"nv\">to</span> <span class=\"nv\">allow</span> <span class=\"k\">for</span> <span class=\"nv\">spaces</span> <span class=\"nv\">in</span> <span class=\"nv\">arguments</span>.\n<span class=\"nv\">dm_args</span><span class=\"o\">=</span>$<span class=\"ss\">(</span><span class=\"nv\">echo</span> <span class=\"s2\">\"</span><span class=\"s\">$dm_args</span><span class=\"s2\">\"</span> <span class=\"o\">|</span> <span class=\"nv\">sed</span> <span class=\"s1\">'</span><span class=\"s\">s/xenfv/xenfv,max-ram-below-4g=3.5G/g</span><span class=\"s1\">'</span><span class=\"ss\">)</span>\n</pre>\n\n<p>It's actually important that this is 3.5G and not any other value for some reason!</p>\n<h3>GPU Drivers</h3>\n<p>With the VM now booting with usable amounts of RAM and a passed-through GPU, drivers are the next step.</p>\n<p>Sadly AMD drivers currently have a problem with VMs, too:\n<a href=\"https://forum.level1techs.com/t/windows-vm-will-not-boot-when-amd-driver-is-enabled-in-guest/148982/5\">The AMD Adrenaline drivers after a certain version prevent a VM from booting</a>.\nInstalling the AMD Pro drivers worked fine, though!</p>\n<h3>GPU Reset</h3>\n<p>The final catch is a bug in AMD GPUs below the RX 6000 series.\nThey don't reset correctly and can't be passed through to a VM a second time without rebooting the full system.</p>\n<p><a href=\"https://github.com/gnif/vendor-reset\">The vendor-reset kernel module</a> implements the correct reset procedures for these GPUs and needs to be <a href=\"https://github.com/gnif/vendor-reset#installing\">installed into dom0</a>.\nThis is very, <em>very</em> much a no-no for Qubes security because a vulnerability or backdoor in this code (or any code on dom0) allows full access to all VMs on your system.\nOn the other hand: Beat Saber.\nSo I downloaded the zip from Github, <a href=\"https://www.qubes-os.org/doc/copy-from-dom0/#copying-to-dom0\">copied it over to dom0</a>, <a href=\"https://github.com/gnif/vendor-reset#installing\">installed it</a> and made it load on boot.\n(Create a file called <code>/etc/modules-load.d/00-vendor-reset.conf</code> containing only the line <code>vendor-reset</code>)</p>\n<p>And that's it!\nI have a VR capable virtual machine!</p>\n<h2>VR VM Performance</h2>\n<p>Of course there is another catch:\nThe virtualized network is too slow and makes my tracking lag!</p>\n<p>How in the world could my network connection screw with my VR experience?\nBecause I have an original HTC Vive with a TPCast wireless adapter.\nA TPCast has two wireless connections, one <a href=\"https://en.wikipedia.org/wiki/IEEE_802.11ad\">very fast 60GHz connection</a> for the HDMI signal and one standard WiFi connection running USB over IP.\nThe USB connection carries the positional tracking information, controller input and <a href=\"https://github.com/OpenTPCast/Docs\">microphone signal</a>, so pretty important stuff.\nAnd the virtual network device can't provide the low latency this USB over IP connection needs.</p>\n<p>The final piece of the puzzle was to <a href=\"https://www.qubes-os.org/doc/usb-devices/#finding-the-right-usb-controller\">pass through an entire USB controller to the VM</a> and attach a USB 3 to gigabit ethernet adapter.</p>\n<p>My tracking-lag was solved and I could finally enjoy virtualized Beat Saber.</p>\n</div>",
+            "value": "I can play VR in Qubes OS!\nQubes OS is pretty cool and succeeds at making virtual machines on the desktop unexpectedly seamless.\nBut I'm a massive virtual reality fanboy and I need my Beat Saber!\nVR needs a powerful GPU and passing a GPU to a VM is harder than it should be.\nThus began my quest to make my virtual reality machine a virtual reality virtual machine with Qubes.\nMy machine has two GPUs, one for the Qubes UI and one to pass through to VMs: An AMD Ryzen 3 3200G CPU with an integrated Vega 8 GPU and an AMD RX 5500 XT GPU.\nI use a Mini-ITX case so I needed a CPU with an iGPU instead of two dedicated GPUs.\nInstalling Qubes OS\nInstalling Qubes was already a small challenge because because the default LTS kernel of Qubes dom0 is too old and does not support the GPUs.\nI had to fix UEFI boot by commenting out noexitboot=1 and mapbs=1.\nThe installation stick booted but couldn't start the graphical installer because of the old kernel.\nThe text based installer is broken, too.\nBut running the installer over VNC worked!\nTo cite the very helpful Github comment about VNC installation:\n\nThe text based installer is also broken (tickets #2113 #1161), but if you plug in a network adaptor, alt+tab to the terminal, use dhclient to get an IP address, use ip a to see the IP, remove /var/run/anaconda.pid, and run anaconda --vnc --vncpassword pass1234 and connect to your IP with a VNC client on port 5901, the install will work fine...\n\nAnd it did!\nApart from the LTS kernel that also breaks the GUI in the installed OS.\nI needed to upgrade the dom0 kernel.\nBut this needs the dom0-upgrade-VMs set up, which normally happens in the GUI on first boot.\nLuckily there's a text-based initial setup script at /usr/libexec/initial-setup/initial-setup-text.\nI could then upgrade dom0 to kernel-latest and make it the default kernel.\nAfter a restarting either Qubes or lightdm I had a fully working Qubes OS!\nInstalling Windows\nCreating a Windows VM was a lot more straightforward than I expected, I just followed the Qubes Windows documentation:\nDownload the Windows ISO into a VM, create a new standalone VM, increase its RAM and storage to 3.7GB+ and 50GB+, and boot the ISO from the other VM.\nThen wait forever until the installer starts.\nBecause it will.\nEventually.\nPassing through the GPU\nA passed through GPU roughly goes through the following stages:\n\nIt's added to a VM\nThe GPU driver inside the VM runs stuff on the GPU\nAfter VM shutdown, the GPU is reset to be ready for another passthrough\n\nAnd while all of them had some catch for me, neowutran's article and the Qubes community documentation on GPU passthrough lead me to success.\nGPU Passthrough\nThe biggest, most important secret to pass through a GPU to a Windows VM is to not use an Nvidia GPU.\nTheir drivers can detect they're running inside a VM and will throw Error 43, halt and catch fire.\nKVM supports workarounds, Xen and thus Qubes do not.\nI even tried to patch the Nvidia driver, but the error persisted.\nThus I got myself an AMD RX 5500 XT and upgraded my partner's desktop PC with my \"old\" Nvidia GTX 1060.\nPassing through PCI devices in Qubes is pretty easy.\nIf they're not used by another VM, e.g. by dom0!\nTo prevent dom0 from grabbing the GPU, I needed to hide its PCI device at boot.\nRunning lspci in dom0 gave me the PCI addresses for my GPU: 03:00.0 for the graphics part and 03:00.1 for the HDMI audio part.\nI added rd.qubes.hide_pci=03:00.0,03:00.1 to my kernel commandline in /boot/efi/EFI/qubes/xen.cfg and rebooted my machine.\nBooting the VM afterwards needs work, too, because VMs with more than 3.5GB of RAM and passed-through devices crash.\nA gaming VM with 3.5GB of RAM is rather useless these days, but luckily there is a fix!\nI couldn't get the sed command from the Github comment to work and used a different modification of the init file:\n# $dm_args and $kernel are separated with \\x1b to allow for spaces in arguments.\ndm_args=$(echo \"$dm_args\" | sed 's/xenfv/xenfv,max-ram-below-4g=3.5G/g')\n\n\nIt's actually important that this is 3.5G and not any other value for some reason!\nGPU Drivers\nWith the VM now booting with usable amounts of RAM and a passed-through GPU, drivers are the next step.\nSadly AMD drivers currently have a problem with VMs, too:\nThe AMD Adrenaline drivers after a certain version prevent a VM from booting.\nInstalling the AMD Pro drivers worked fine, though!\nGPU Reset\nThe final catch is a bug in AMD GPUs below the RX 6000 series.\nThey don't reset correctly and can't be passed through to a VM a second time without rebooting the full system.\nThe vendor-reset kernel module implements the correct reset procedures for these GPUs and needs to be installed into dom0.\nThis is very, very much a no-no for Qubes security because a vulnerability or backdoor in this code (or any code on dom0) allows full access to all VMs on your system.\nOn the other hand: Beat Saber.\nSo I downloaded the zip from Github, copied it over to dom0, installed it and made it load on boot.\n(Create a file called /etc/modules-load.d/00-vendor-reset.conf containing only the line vendor-reset)\nAnd that's it!\nI have a VR capable virtual machine!\nVR VM Performance\nOf course there is another catch:\nThe virtualized network is too slow and makes my tracking lag!\nHow in the world could my network connection screw with my VR experience?\nBecause I have an original HTC Vive with a TPCast wireless adapter.\nA TPCast has two wireless connections, one very fast 60GHz connection for the HDMI signal and one standard WiFi connection running USB over IP.\nThe USB connection carries the positional tracking information, controller input and microphone signal, so pretty important stuff.\nAnd the virtual network device can't provide the low latency this USB over IP connection needs.\nThe final piece of the puzzle was to pass through an entire USB controller to the VM and attach a USB 3 to gigabit ethernet adapter.\nMy tracking-lag was solved and I could finally enjoy virtualized Beat Saber."
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Renaming i3 workspaces while keeping navigation prefixes"
+        ],
+        "url": [
+          "https://what.re/posts/renaming-i3-workspaces-while-keeping-navigation-prefixes/"
+        ],
+        "published": [
+          "2017-07-25T12:16:25+02:00"
+        ],
+        "content": [
+          {
+            "html": "<div>\n<p>I navigate my <a href=\"https://i3wm.org/\">i3</a> workspaces using <a href=\"https://i3wm.org/docs/userguide.html#_named_workspaces\">named workspaces</a> of the format <code>&lt;number&gt;:&lt;key&gt;</code>, for example <code>1:s</code>.\nThe number keeps them in the same order in my workspace-list and the key is what I press to navigate them.</p>\n<p>Sometimes I have a lot of windows open on many workspaces and begin to lose track of what's where.\nSo I want to give workspaces appropriate names when needed while keeping the <code>&lt;number&gt;:&lt;key&gt;</code> prefix for navigation.</p>\n<p>Out of the box the renaming in i3 isn't as convenient as I'd like, so I wrote <a href=\"https://gist.github.com/fahrstuhl/8a1349e36a50cea7efccdc0878e2dff7\">this small Python script</a> using <a href=\"https://github.com/acrisci/i3ipc-python\">i3ipc-python</a> and added <code>bindsym Mod4+q exec \"python ~/.i3/renameworkspace.py\"</code> to my config.</p>\n<p>This increases my productivity by at least .7% 🙌</p>\n<p><strong>New Year's Update:</strong></p>\n<p>Keep in mind to use <code>workspace number</code> instead of just <code>workspace</code> when moving between workspaces.\nUsing <code>strip_workspace_numbers yes</code> in the i3bar removes the <code>&lt;number&gt;:</code> prefix and looks better.</p>\n<pre class=\"code literal-block\"><span class=\"nv\">bindsym</span> $<span class=\"nv\">mod</span><span class=\"o\">+</span><span class=\"mi\">1</span> <span class=\"nv\">workspace</span> <span class=\"nv\">number</span> <span class=\"mi\">1</span>:<span class=\"nv\">chat</span>\n<span class=\"nv\">bindsym</span> $<span class=\"nv\">mod</span><span class=\"o\">+</span><span class=\"nv\">Shift</span><span class=\"o\">+</span><span class=\"mi\">1</span> <span class=\"nv\">move</span> <span class=\"nv\">container</span> <span class=\"nv\">to</span> <span class=\"nv\">workspace</span> <span class=\"nv\">number</span> <span class=\"mi\">1</span>:<span class=\"nv\">chat</span> \n<span class=\"nv\">bindsym</span> $<span class=\"nv\">mod</span><span class=\"o\">+</span><span class=\"nv\">q</span> <span class=\"k\">exec</span> <span class=\"s2\">\"</span><span class=\"s\">python ~/.i3/renameworkspace.py</span><span class=\"s2\">\"</span>\n<span class=\"nv\">bar</span> {\n    <span class=\"nv\">strip_workspace_numbers</span> <span class=\"nv\">yes</span>\n    <span class=\"nv\">status_command</span> <span class=\"nv\">python</span> <span class=\"o\">~/</span>.<span class=\"nv\">i3</span><span class=\"o\">/</span><span class=\"nv\">i3status</span>.<span class=\"nv\">py</span>\n}\n</pre>\n</div>",
+            "value": "I navigate my i3 workspaces using named workspaces of the format <number>:<key>, for example 1:s.\nThe number keeps them in the same order in my workspace-list and the key is what I press to navigate them.\nSometimes I have a lot of windows open on many workspaces and begin to lose track of what's where.\nSo I want to give workspaces appropriate names when needed while keeping the <number>:<key> prefix for navigation.\nOut of the box the renaming in i3 isn't as convenient as I'd like, so I wrote this small Python script using i3ipc-python and added bindsym Mod4+q exec \"python ~/.i3/renameworkspace.py\" to my config.\nThis increases my productivity by at least .7% 🙌\nNew Year's Update:\nKeep in mind to use workspace number instead of just workspace when moving between workspaces.\nUsing strip_workspace_numbers yes in the i3bar removes the <number>: prefix and looks better.\nbindsym $mod+1 workspace number 1:chat\nbindsym $mod+Shift+1 move container to workspace number 1:chat \nbindsym $mod+q exec \"python ~/.i3/renameworkspace.py\"\nbar {\n    strip_workspace_numbers yes\n    status_command python ~/.i3/i3status.py\n}"
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "f1rst p0st"
+        ],
+        "url": [
+          "https://what.re/posts/f1rst-p0st/"
+        ],
+        "published": [
+          "2017-05-09T17:38:34+02:00"
+        ],
+        "content": [
+          {
+            "html": "<p>Is this content, yet?</p>",
+            "value": "Is this content, yet?"
+          }
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "stylesheet": [
+      "https://what.re/assets/css/all-nocdn.css"
+    ],
+    "alternate": [
+      "https://what.re/rss.xml"
+    ],
+    "canonical": [
+      "https://what.re/"
+    ],
+    "prefetch": [
+      "https://what.re/posts/vr-adventures-in-qubes-os/"
+    ],
+    "bookmark": [
+      "https://what.re/posts/vr-adventures-in-qubes-os/",
+      "https://what.re/posts/renaming-i3-workspaces-while-keeping-navigation-prefixes/",
+      "https://what.re/posts/f1rst-p0st/"
+    ],
+    "license": [
+      "http://creativecommons.org/licenses/by/4.0/"
+    ],
+    "nofollow": [
+      "https://getnikola.com/"
+    ]
+  },
+  "rel-urls": {
+    "https://what.re/assets/css/all-nocdn.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://what.re/rss.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "RSS",
+      "type": "application/rss+xml"
+    },
+    "https://what.re/": {
+      "rels": [
+        "canonical"
+      ]
+    },
+    "https://what.re/posts/vr-adventures-in-qubes-os/": {
+      "rels": [
+        "prefetch"
+      ],
+      "type": "text/html"
+    },
+    "https://what.re/posts/renaming-i3-workspaces-while-keeping-navigation-prefixes/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n            2017-07-25 12:16"
+    },
+    "https://what.re/posts/f1rst-p0st/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n            2017-05-09 17:38"
+    },
+    "http://creativecommons.org/licenses/by/4.0/": {
+      "rels": [
+        "license"
+      ]
+    },
+    "https://getnikola.com/": {
+      "rels": [
+        "nofollow"
+      ],
+      "text": "Nikola"
+    }
+  }
+}

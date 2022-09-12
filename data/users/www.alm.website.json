@@ -1,0 +1,121 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "logo": [
+          {
+            "value": "https://www.alm.website/static/images/alm",
+            "alt": "A cartoon profile picture"
+          }
+        ],
+        "name": [
+          "Alexandra\n              Lilith\n              Lilly\n              Martin"
+        ],
+        "url": [
+          "https://www.alm.website/me"
+        ],
+        "uid": [
+          "https://www.alm.website/me"
+        ],
+        "given-name": [
+          "Alexandra"
+        ],
+        "additional-name": [
+          "Lilith"
+        ],
+        "nickname": [
+          "Lilly"
+        ],
+        "family-name": [
+          "Martin"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-cite"
+      ],
+      "properties": {
+        "name": [
+          "🎵 (@forever) | null"
+        ],
+        "url": [
+          "https://fedi.nullob.si/notes/90virlue1r"
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "name": [
+                "🎵"
+              ]
+            },
+            "value": "🎵"
+          }
+        ],
+        "summary": [
+          "cool indieweb sites i like"
+        ],
+        "content": [
+          {
+            "html": "cool indieweb sites i like",
+            "value": "cool indieweb sites i like"
+          }
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "authorization_endpoint": [
+      "https://www.alm.website/auth/"
+    ],
+    "webmention": [
+      "https://www.alm.website/cgi-bin/webmention"
+    ],
+    "alternate": [
+      "https://www.alm.website/blog.atom"
+    ],
+    "preload": [
+      "https://www.alm.website/static/css/custom.css",
+      "https://www.alm.website/static/css/navbar.css"
+    ],
+    "stylesheet": [
+      "https://www.alm.website/static/css/custom.css",
+      "https://www.alm.website/static/css/navbar.css"
+    ]
+  },
+  "rel-urls": {
+    "https://www.alm.website/auth/": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://www.alm.website/cgi-bin/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://www.alm.website/blog.atom": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Atom feed",
+      "type": "application/atom+xml"
+    },
+    "https://www.alm.website/static/css/custom.css": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://www.alm.website/static/css/navbar.css": {
+      "rels": [
+        "preload"
+      ]
+    }
+  }
+}
