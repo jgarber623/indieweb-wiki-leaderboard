@@ -22,7 +22,8 @@ Promise
   .all(users.map(profile => {
     return axios.get('https://micromicro.cc/search', {
       headers: { 'Accept': 'application/json' },
-      params: { url: `http://${profile}` }
+      params: { url: `http://${profile}` },
+      timeout: 20000
     }).catch(error => error);
   }))
   .then(responses => {
