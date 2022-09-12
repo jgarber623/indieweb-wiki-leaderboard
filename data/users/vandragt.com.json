@@ -12,6 +12,23 @@
           ],
           "properties": {
             "name": [
+              "Mail: a local privacy focused searchable database"
+            ],
+            "content": [
+              {
+                "html": "<p>Draft mail is the WordPress custom post-type of databases.</p>\n<p>Ultimately all productivity apps for privacy focused folks trend towards a locally synced database containing stuff. A database searched with an interface you already use. This is e-mail, if that wasn’t already ruined by untrusted parties.</p>\n<h2>For example</h2>\n<ol>\n<li>Notes: mail in a folder</li>\n<li>Bookmarks: page content referenced by a URI as mail in a folder. </li>\n<li>Todos: mail in a folder</li>\n</ol>\n<p>Some of these use a man in the middle process to filter content, and high volume incoming / outgoing mail might get your account in trouble. So there are webservices with paid options to sustain them, with data export and privacy concerns.</p>\n<div class=\"syndication-links\"></div>",
+                "value": "Draft mail is the WordPress custom post-type of databases.\nUltimately all productivity apps for privacy focused folks trend towards a locally synced database containing stuff. A database searched with an interface you already use. This is e-mail, if that wasn’t already ruined by untrusted parties.\nFor example\nNotes: mail in a folderBookmarks: page content referenced by a URI as mail in a folder. Todos: mail in a folder\nSome of these use a man in the middle process to filter content, and high volume incoming / outgoing mail might get your account in trouble. So there are webservices with paid options to sustain them, with data export and privacy concerns."
+              }
+            ]
+          },
+          "id": "post-620"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               "Fafi 0.2.2"
             ],
             "content": [
@@ -328,23 +345,6 @@
             ]
           },
           "id": "post-504"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "VVV utility for ElasticSeach / ElasticPress"
-            ],
-            "content": [
-              {
-                "html": "<p>I’ve been switching my local WordPress sideprojects development setup to <a href=\"https://varyingvagrantvagrants.org/\">VVV</a> and one thing I couldn’t find documented is how to setup ElasticSearch and ElasticPress.</p>\n<p>There’s a VVV-ElasticSearch plugin on GitHub but it is missing documentation and it’s not been updated for 6 years :D), so I made my own:</p>\n<div class=\"wp-container-2 wp-block-buttons\">\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link\" href=\"https://github.com/svandragt/elasticsearch-vvv-utility\">View on GitHub</a></div>\n</div>\n<div class=\"syndication-links\"></div>",
-                "value": "I’ve been switching my local WordPress sideprojects development setup to VVV and one thing I couldn’t find documented is how to setup ElasticSearch and ElasticPress.\nThere’s a VVV-ElasticSearch plugin on GitHub but it is missing documentation and it’s not been updated for 6 years :D), so I made my own:\n\nView on GitHub"
-              }
-            ]
-          },
-          "id": "post-497"
         }
       ]
     }
@@ -410,6 +410,7 @@
       "https://vandragt.com/"
     ],
     "bookmark": [
+      "https://vandragt.com/technology/mail-a-local-privacy-focused-searchable-database/",
       "https://vandragt.com/project/fafi-0-2-2/",
       "https://vandragt.com/technology/using-python-best-practices/",
       "https://vandragt.com/status/612/",
@@ -428,17 +429,16 @@
       "https://vandragt.com/technology/daily-clean-trash/",
       "https://vandragt.com/technology/opensuse-tumbleweed-installation-notes/",
       "https://vandragt.com/technology/bye-twitter/",
-      "https://vandragt.com/status/504/",
-      "https://vandragt.com/project/vvv-and-elasticpress/"
+      "https://vandragt.com/status/504/"
     ],
     "category": [
-      "https://vandragt.com/category/project/",
       "https://vandragt.com/category/technology/",
+      "https://vandragt.com/category/project/",
       "https://vandragt.com/category/status/"
     ],
     "tag": [
-      "https://vandragt.com/category/project/",
       "https://vandragt.com/category/technology/",
+      "https://vandragt.com/category/project/",
       "https://vandragt.com/category/status/"
     ],
     "designer": [
@@ -600,6 +600,20 @@
         "micropub"
       ]
     },
+    "https://vandragt.com/technology/mail-a-local-privacy-focused-searchable-database/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to Mail: a local privacy focused searchable database",
+      "text": "Mail: a local privacy focused searchable database"
+    },
+    "https://vandragt.com/category/technology/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Technology"
+    },
     "https://vandragt.com/project/fafi-0-2-2/": {
       "rels": [
         "bookmark"
@@ -620,13 +634,6 @@
       ],
       "title": "Permalink to Using python – best practices",
       "text": "Using python – best practices"
-    },
-    "https://vandragt.com/category/technology/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "Technology"
     },
     "https://vandragt.com/status/612/": {
       "rels": [
@@ -748,13 +755,6 @@
         "bookmark"
       ],
       "title": "Permalink to"
-    },
-    "https://vandragt.com/project/vvv-and-elasticpress/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Permalink to VVV utility for ElasticSeach / ElasticPress",
-      "text": "VVV utility for ElasticSeach / ElasticPress"
     },
     "http://independentpublisher.me/": {
       "rels": [

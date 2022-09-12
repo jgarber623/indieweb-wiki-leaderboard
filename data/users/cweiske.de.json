@@ -31,6 +31,13 @@
     "next": [
       "http://cweiske.de/aboutme.htm"
     ],
+    "alternate": [
+      "http://cweiske.de/css/night.css",
+      "http://cweiske.de/css/rain.css",
+      "http://cweiske.de/css/snow.css",
+      "http://cweiske.de/css/spring.css",
+      "http://cweiske.de/feeds/news.xml"
+    ],
     "stylesheet": [
       "http://cweiske.de/css/night.css",
       "http://cweiske.de/css/rain.css",
@@ -38,13 +45,6 @@
       "http://cweiske.de/css/spring.css",
       "http://cweiske.de/css/sun.css",
       "http://cweiske.de/css/print.css"
-    ],
-    "alternate": [
-      "http://cweiske.de/css/rain.css",
-      "http://cweiske.de/css/snow.css",
-      "http://cweiske.de/css/spring.css",
-      "http://cweiske.de/css/sun.css",
-      "http://cweiske.de/feeds/news.xml"
     ],
     "openid.server": [
       "http://id.cweiske.de/"
@@ -111,6 +111,7 @@
     },
     "http://cweiske.de/css/night.css": {
       "rels": [
+        "alternate",
         "stylesheet"
       ],
       "title": "Night",
@@ -142,7 +143,6 @@
     },
     "http://cweiske.de/css/sun.css": {
       "rels": [
-        "alternate",
         "stylesheet"
       ],
       "title": "Sunny",
