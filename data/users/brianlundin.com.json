@@ -1,0 +1,110 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "name": [
+          "Brian Lundin"
+        ],
+        "url": [
+          "https://brianlundin.com/"
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "stylesheet": [
+      "https://brianlundin.com/css/main.css"
+    ],
+    "micropub": [
+      "https://blundin-micropub-to-github.herokuapp.com/micropub/main"
+    ],
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "manifest": [
+      "https://brianlundin.com/site.webmanifest"
+    ],
+    "alternate": [
+      "https://brianlundin.com/feed.xml"
+    ],
+    "footnote": [
+      "#fn:1"
+    ],
+    "me": [
+      "https://brianlundin.com/",
+      "https://micro.blog/blundin",
+      "https://twitter.com/blundin",
+      "https://github.com/blundin"
+    ]
+  },
+  "rel-urls": {
+    "https://brianlundin.com/css/main.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://blundin-micropub-to-github.herokuapp.com/micropub/main": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://brianlundin.com/site.webmanifest": {
+      "rels": [
+        "manifest"
+      ]
+    },
+    "https://brianlundin.com/feed.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/rss+xml"
+    },
+    "#fn:1": {
+      "rels": [
+        "footnote"
+      ],
+      "text": "1"
+    },
+    "https://brianlundin.com/": {
+      "rels": [
+        "me"
+      ],
+      "text": "Brian Lundin"
+    },
+    "https://micro.blog/blundin": {
+      "rels": [
+        "me"
+      ],
+      "text": "Micro.blog"
+    },
+    "https://twitter.com/blundin": {
+      "rels": [
+        "me"
+      ],
+      "text": "Twitter"
+    },
+    "https://github.com/blundin": {
+      "rels": [
+        "me"
+      ],
+      "text": "Github"
+    }
+  }
+}

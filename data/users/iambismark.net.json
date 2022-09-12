@@ -1,0 +1,240 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Let it crash"
+        ],
+        "content": [
+          {
+            "html": "<p>After over three years of programming in Elixir I think I finally understand the “Let it crash” principle.\nI realized just how much code was being wasted gracefully handling errors that had no business being handled at all!</p>\n\n<p>Basically my thinking goes like this:</p>\n\n<p>If there is a meaningful error I can return to a user e.g. “bad auth token”, I should handle this gracefully and return the error.\nOtherwise, “let it crash”!</p>\n\n<p>If the database returns something I don’t expect, crash!\nIf S3 is down, crash!\nIf a map doesn’t have a key that <em>should</em> be there, crash!</p>\n\n<p>The beautiful thing about crashing: I can see exactly what happened and where in the form of a stacktrace in the logs.\nIf I attempt to handle something unexpected gracefully, the real issue is either shifted somewhere else OR it’s swallowed completely.</p>\n\n<p>This has dramatically improved my code by removing unneccesary error handling, making everything more concise and readable.\nI only care about the happy path!</p>\n\n<p>After one year at HelloSign and many huge features later, I’m very proud that I still have a net negative 20k lines of code in the repo.\nI think embracing “let it crash” is one of the biggest factors in this!</p>",
+            "value": "After over three years of programming in Elixir I think I finally understand the “Let it crash” principle.\nI realized just how much code was being wasted gracefully handling errors that had no business being handled at all!\n\nBasically my thinking goes like this:\n\nIf there is a meaningful error I can return to a user e.g. “bad auth token”, I should handle this gracefully and return the error.\nOtherwise, “let it crash”!\n\nIf the database returns something I don’t expect, crash!\nIf S3 is down, crash!\nIf a map doesn’t have a key that should be there, crash!\n\nThe beautiful thing about crashing: I can see exactly what happened and where in the form of a stacktrace in the logs.\nIf I attempt to handle something unexpected gracefully, the real issue is either shifted somewhere else OR it’s swallowed completely.\n\nThis has dramatically improved my code by removing unneccesary error handling, making everything more concise and readable.\nI only care about the happy path!\n\nAfter one year at HelloSign and many huge features later, I’m very proud that I still have a net negative 20k lines of code in the repo.\nI think embracing “let it crash” is one of the biggest factors in this!"
+          }
+        ],
+        "uid": [
+          "https://iambismark.net/post/1541134133/"
+        ],
+        "url": [
+          "https://iambismark.net/post/1541134133/"
+        ],
+        "published": [
+          "2018-11-02T04:48:53Z"
+        ],
+        "author": [
+          "https://iambismark.net/"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "<p>👨🏻‍🦰 #finally</p>",
+            "value": "👨🏻‍🦰 #finally"
+          }
+        ],
+        "name": [
+          "👨🏻‍🦰 #finally"
+        ],
+        "uid": [
+          "https://iambismark.net/post/1540926599/"
+        ],
+        "url": [
+          "https://iambismark.net/post/1540926599/"
+        ],
+        "published": [
+          "2018-10-30T19:09:59Z"
+        ],
+        "author": [
+          "https://iambismark.net/"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "<p>Dear SFMTA, your new train design with upright bars with the exact seat spacing for 2.5 people in one section and 1.5 people in the next is masterful.\nA well played troll on all your riders.</p>",
+            "value": "Dear SFMTA, your new train design with upright bars with the exact seat spacing for 2.5 people in one section and 1.5 people in the next is masterful.\nA well played troll on all your riders."
+          }
+        ],
+        "name": [
+          "Dear SFMTA, your new train design with upright bars with the exact seat spacing for 2.5 people in one section and 1.5 people in the next is masterful.\nA well played troll on all your riders."
+        ],
+        "uid": [
+          "https://iambismark.net/post/1538498966/"
+        ],
+        "url": [
+          "https://iambismark.net/post/1538498966/"
+        ],
+        "published": [
+          "2018-10-02T16:49:26Z"
+        ],
+        "author": [
+          "https://iambismark.net/"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "<p>Apple Watch auto-unlocking my laptop is a game changer.\nGoing to pay for itself with time saved on mistyped passwords.</p>",
+            "value": "Apple Watch auto-unlocking my laptop is a game changer.\nGoing to pay for itself with time saved on mistyped passwords."
+          }
+        ],
+        "name": [
+          "Apple Watch auto-unlocking my laptop is a game changer.\nGoing to pay for itself with time saved on mistyped passwords."
+        ],
+        "uid": [
+          "https://iambismark.net/post/1530921315/"
+        ],
+        "url": [
+          "https://iambismark.net/post/1530921315/"
+        ],
+        "published": [
+          "2018-07-06T23:55:15Z"
+        ],
+        "author": [
+          "https://iambismark.net/"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "<p>I can’t say I’ve ever wanted Github’s closed PRs to be sorted any way other that “sort:updated-desc”.\nWish that was the default..</p>",
+            "value": "I can’t say I’ve ever wanted Github’s closed PRs to be sorted any way other that “sort:updated-desc”.\nWish that was the default.."
+          }
+        ],
+        "name": [
+          "I can’t say I’ve ever wanted Github’s closed PRs to be sorted any way other that “sort:updated-desc”.\nWish that was the default.."
+        ],
+        "uid": [
+          "https://iambismark.net/post/1530547963/"
+        ],
+        "url": [
+          "https://iambismark.net/post/1530547963/"
+        ],
+        "published": [
+          "2018-07-02T16:12:43Z"
+        ],
+        "author": [
+          "https://iambismark.net/"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "photo": [
+          {
+            "value": "https://d33wubrfki0l68.cloudfront.net/6afdcb92179f618365134653b18fc44fbe3fcdbe/7bd33/avatar.svg",
+            "alt": "avatar"
+          }
+        ],
+        "name": [
+          "Ryan Johnson"
+        ],
+        "url": [
+          "https://iambismark.net/"
+        ],
+        "email": [
+          "mailto:ryan@iambismark.net"
+        ]
+      },
+      "id": "hcard-Ryan-Johnson"
+    }
+  ],
+  "rels": {
+    "stylesheet": [
+      "https://d33wubrfki0l68.cloudfront.net/css/658d0855b1344ad411944f0a3bf35dafd9d4641f/css/style.css"
+    ],
+    "me": [
+      "https://iambismark.net/",
+      "https://micro.blog/bismark",
+      "https://twitter.com/bismark",
+      "https://github.com/bismark",
+      "mailto:ryan@iambismark.net"
+    ],
+    "alternate": [
+      "https://iambismark.net/index.xml"
+    ],
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "author": [
+      "https://iambismark.net/"
+    ]
+  },
+  "rel-urls": {
+    "https://d33wubrfki0l68.cloudfront.net/css/658d0855b1344ad411944f0a3bf35dafd9d4641f/css/style.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://iambismark.net/": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://iambismark.net/index.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "I Am Bismark",
+      "type": "application/rss+xml"
+    },
+    "https://micro.blog/bismark": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://twitter.com/bismark": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://github.com/bismark": {
+      "rels": [
+        "me"
+      ]
+    },
+    "mailto:ryan@iambismark.net": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    }
+  }
+}

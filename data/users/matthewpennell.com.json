@@ -1,0 +1,157 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-feed"
+      ],
+      "properties": {},
+      "children": [
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Becoming an expert"
+            ],
+            "url": [
+              "https://matthewpennell.com/blog/becoming-an-expert"
+            ],
+            "content": [
+              {
+                "html": "<p>I really liked this article I recently read by Julian Shapiro on <a href=\"https://www.julian.com/blog/craftspeople\">becoming an expert</a>, although it's more about the creative process and how to get out of your own way when it comes to doing creative work. In it, he says:</p>\n<blockquote>\n<p>No creator was born making hits. It’s delusional to think you’re the exception. Therefore, any time you're unable to start because you think you have high quality standards that you won't be able to meet, you're lying to yourself. You're actually too lazy to discard bad work along the way in order to arrive at greatness. Take comfort in knowing that when you discard bad work via a good process, the work was not for nothing—it was to improve the process.</p>\n</blockquote>",
+                "value": "I really liked this article I recently read by Julian Shapiro on becoming an expert, although it's more about the creative process and how to get out of your own way when it comes to doing creative work. In it, he says:\n\nNo creator was born making hits. It’s delusional to think you’re the exception. Therefore, any time you're unable to start because you think you have high quality standards that you won't be able to meet, you're lying to yourself. You're actually too lazy to discard bad work along the way in order to arrive at greatness. Take comfort in knowing that when you discard bad work via a good process, the work was not for nothing—it was to improve the process."
+              }
+            ],
+            "published": [
+              "2022-09-08 15:28:16"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Review: Ayoade on Ayoade"
+            ],
+            "url": [
+              "https://matthewpennell.com/blog/review-ayoade-on-ayoade"
+            ],
+            "content": [
+              {
+                "html": "<p>I don't think I've ever given up on a book as quickly as I did with this one. A more generous reader might label it avant-garde; the Guardian blurb on the front says \"surreal\", but personally I'd go with pretentious and unfunny.</p>\n<p>I'm a fan of Ayoade, and not just for being the best thing about The IT Crowd and a pedantic participant in Big Fat Quiz; I've followed him since Garth Marenghi, enjoyed his roles in The Mighty Boosh and Nathan Barley, and watched and enjoyed Submarine and The Double. I even own a copy of AD/BC, the Matt Berry rock opera for which Ayoade wrote the lyrics. In interviews and panel shows I've always found his humour clever and intellectual ... which is why this book is such a massive disappointment. I can only imagine the publishers told him that what his audience really wanted was something written in the style of Maurice Moss, but there wasn't enough material for an <a href=\"https://www.goodreads.com/en/book/show/12363948\">I, Partridge</a> style fake autobiography so instead we got this jumbled and confusing mess - not enough fact to make it autobiographical, not even fiction to truly be parody, it's just a painful read that could have been so much more.</p>",
+                "value": "I don't think I've ever given up on a book as quickly as I did with this one. A more generous reader might label it avant-garde; the Guardian blurb on the front says \"surreal\", but personally I'd go with pretentious and unfunny.\nI'm a fan of Ayoade, and not just for being the best thing about The IT Crowd and a pedantic participant in Big Fat Quiz; I've followed him since Garth Marenghi, enjoyed his roles in The Mighty Boosh and Nathan Barley, and watched and enjoyed Submarine and The Double. I even own a copy of AD/BC, the Matt Berry rock opera for which Ayoade wrote the lyrics. In interviews and panel shows I've always found his humour clever and intellectual ... which is why this book is such a massive disappointment. I can only imagine the publishers told him that what his audience really wanted was something written in the style of Maurice Moss, but there wasn't enough material for an I, Partridge style fake autobiography so instead we got this jumbled and confusing mess - not enough fact to make it autobiographical, not even fiction to truly be parody, it's just a painful read that could have been so much more."
+              }
+            ],
+            "published": [
+              "2022-09-05 07:38:09"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Heading hierarchy"
+            ],
+            "url": [
+              "https://matthewpennell.com/blog/heading-hierarchy"
+            ],
+            "content": [
+              {
+                "html": "<p>One thing I'm not sure about how to handle on this site is the relative heading levels of, well, headings -- specifically when displaying an article on the site home page compared to on its own individual page.</p>\n<p>On the home page, the natural choice for the page's top-level (H1) heading would be the site name, and so logically the list of posts would use second-level (H2) headings for their titles, and then H3 for any sub-headings. However, on the individual post page, everything needs to be hoisted up a level; the post title becomes the H1, sub-headings become H2s, and so on.</p>\n<p>Unfortunately, since the post data is stored in a database as Markdown-formatted text, changing the heading levels on the fly based on a post's display context is not possible, at least not easily (okay, it can be done, but it would involve some kind of find-and-replace to 'fix' the heading levels in one or other of the templates).</p>\n<p>The alternative is to sidestep the problem entirely, by simply not showing the post content on the homepage and instead adding a \"description\" column to the Posts table in the database. This comes with the additional benefit of then having content available that can be used in other places, for example the OpenGraph meta tags needed to make Facebook or Twitter embeds work. I think I'll go with this solution; I can see too many unexpected edge cases cropping up with the alternative.</p>\n<p>(If I'd added tagging yet, this would be tagged with accessibility.)</p>",
+                "value": "One thing I'm not sure about how to handle on this site is the relative heading levels of, well, headings -- specifically when displaying an article on the site home page compared to on its own individual page.\nOn the home page, the natural choice for the page's top-level (H1) heading would be the site name, and so logically the list of posts would use second-level (H2) headings for their titles, and then H3 for any sub-headings. However, on the individual post page, everything needs to be hoisted up a level; the post title becomes the H1, sub-headings become H2s, and so on.\nUnfortunately, since the post data is stored in a database as Markdown-formatted text, changing the heading levels on the fly based on a post's display context is not possible, at least not easily (okay, it can be done, but it would involve some kind of find-and-replace to 'fix' the heading levels in one or other of the templates).\nThe alternative is to sidestep the problem entirely, by simply not showing the post content on the homepage and instead adding a \"description\" column to the Posts table in the database. This comes with the additional benefit of then having content available that can be used in other places, for example the OpenGraph meta tags needed to make Facebook or Twitter embeds work. I think I'll go with this solution; I can see too many unexpected edge cases cropping up with the alternative.\n(If I'd added tagging yet, this would be tagged with accessibility.)"
+              }
+            ],
+            "published": [
+              "2022-08-21 14:53:30"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Functional specifications"
+            ],
+            "url": [
+              "https://matthewpennell.com/blog/functional-specifications"
+            ],
+            "content": [
+              {
+                "html": "<p>In drawing up a list of potential functionality for <a href=\"https://matthewpennell.com/blog/reboot\">a new blog platform</a>, it's tempting to tell yourself that you're going to avoid simply copying how WordPress does it. Yet, as soon as you come to start listing out features you'd like to have, it does start to read a little like the WP sidebar.</p>\n<p>Commenting. Tagging. Categories. Search. Asset management. Statistics. Featured images. And a cool inline editor. Did blogs always need to have these things, or did WordPress redefine how we conceive of a modern blog? I did use Blogger, back in the day, but I don't really remember how it worked or whether it had any of the things we now consider essential.</p>\n<p>Of course, you could argue that few of the things I listed are actually essential. Just write, right? Strip it back to basics. You don't need categories or tags, and allowing comments is literally the worst idea -- just look at YouTube.</p>\n<p>But I have ideas about how I want the front-end to work, and it needs those things, so ... we're going with at least some of the WordPress feature set. At least it won't look the same.</p>",
+                "value": "In drawing up a list of potential functionality for a new blog platform, it's tempting to tell yourself that you're going to avoid simply copying how WordPress does it. Yet, as soon as you come to start listing out features you'd like to have, it does start to read a little like the WP sidebar.\nCommenting. Tagging. Categories. Search. Asset management. Statistics. Featured images. And a cool inline editor. Did blogs always need to have these things, or did WordPress redefine how we conceive of a modern blog? I did use Blogger, back in the day, but I don't really remember how it worked or whether it had any of the things we now consider essential.\nOf course, you could argue that few of the things I listed are actually essential. Just write, right? Strip it back to basics. You don't need categories or tags, and allowing comments is literally the worst idea -- just look at YouTube.\nBut I have ideas about how I want the front-end to work, and it needs those things, so ... we're going with at least some of the WordPress feature set. At least it won't look the same."
+              }
+            ],
+            "published": [
+              "2022-08-16 19:56:40"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Reboot"
+            ],
+            "url": [
+              "https://matthewpennell.com/blog/reboot"
+            ],
+            "content": [
+              {
+                "html": "<p>When I was younger, I would \"reboot\" my personal weblog all the time. A new design was enough to declare it rebooted; eventually we even held an international Reboot Day, back when web design was still relatively exciting and it occasionally felt as if you were doing something new and remarkable by using a particular technique.</p>\n<p>Nowadays, of course, blogs and blogging are simultaneously dying out yet somehow ubiquitous. Every business publication, content platform, game studio, movie production and national newspaper has a blog now, and yet the advent of sites like Twitter, Medium and Substack mean that an ever-dwindling number of individuals with opinions to share choose to do so on their own personal website. Is RSS even a thing any more? Who knows. So many sites I used to read are now dead or domain-squatted, and of those that still remain online, the majority serve up a most recent entry dated several years in the past.</p>\n<p>Did we all simply lose interest? I know I definitely don't care about web stuff as much as I used to. Content aggregators like Smashing Magazine have made it impossible to discover anything new, browser CSS doesn't need hacking any more, and design systems have made creativity an optional extra. Plus I got old, and nothing seems as important as it used to.</p>\n<p>However, what I find that I do miss is building things, solving problems and making shit work. I don't get to do much coding at work these days and I miss it -- so I've decided that to keep myself entertained I'm going to build a new blog engine for myself. At one point it was a bit of a cliché that any developer would eventually decide (and inevitably fail) to build a new blogging platform; I'm not sure if that's still the joke but, regardless, I think it might be a fun way to stretch old muscles and learn new concepts. I'm using <a href=\"https://laravel.com/\">Laravel</a> because that's what I'm most comfortable with; when I reach the stage of developing the front-end I'll decide whether or not to make use of anything else like React. (I suspect I won't, I'd like to keep things as simple as possible.)</p>\n<p>And, therefore, I'm going to be dogfooding the development as I go by returning to regular blogging on this site. It's not the first time, but I only managed to write a single post on here in the last eight months, with only four in the whole of 2021. I feel like maybe two-and-a-half years of living with Covid had knocked the creativity out of me ... but now I'm ready to return.</p>",
+                "value": "When I was younger, I would \"reboot\" my personal weblog all the time. A new design was enough to declare it rebooted; eventually we even held an international Reboot Day, back when web design was still relatively exciting and it occasionally felt as if you were doing something new and remarkable by using a particular technique.\nNowadays, of course, blogs and blogging are simultaneously dying out yet somehow ubiquitous. Every business publication, content platform, game studio, movie production and national newspaper has a blog now, and yet the advent of sites like Twitter, Medium and Substack mean that an ever-dwindling number of individuals with opinions to share choose to do so on their own personal website. Is RSS even a thing any more? Who knows. So many sites I used to read are now dead or domain-squatted, and of those that still remain online, the majority serve up a most recent entry dated several years in the past.\nDid we all simply lose interest? I know I definitely don't care about web stuff as much as I used to. Content aggregators like Smashing Magazine have made it impossible to discover anything new, browser CSS doesn't need hacking any more, and design systems have made creativity an optional extra. Plus I got old, and nothing seems as important as it used to.\nHowever, what I find that I do miss is building things, solving problems and making shit work. I don't get to do much coding at work these days and I miss it -- so I've decided that to keep myself entertained I'm going to build a new blog engine for myself. At one point it was a bit of a cliché that any developer would eventually decide (and inevitably fail) to build a new blogging platform; I'm not sure if that's still the joke but, regardless, I think it might be a fun way to stretch old muscles and learn new concepts. I'm using Laravel because that's what I'm most comfortable with; when I reach the stage of developing the front-end I'll decide whether or not to make use of anything else like React. (I suspect I won't, I'd like to keep things as simple as possible.)\nAnd, therefore, I'm going to be dogfooding the development as I go by returning to regular blogging on this site. It's not the first time, but I only managed to write a single post on here in the last eight months, with only four in the whole of 2021. I feel like maybe two-and-a-half years of living with Covid had knocked the creativity out of me ... but now I'm ready to return."
+              }
+            ],
+            "published": [
+              "2022-08-15 19:56:48"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "name": [
+          "Matthew Pennell"
+        ],
+        "url": [
+          "https://matthewpennell.com/"
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "alternate": [
+      "https://matthewpennell.com/rss"
+    ],
+    "stylesheet": [
+      "https://matthewpennell.com/css/basic.css"
+    ]
+  },
+  "rel-urls": {
+    "https://matthewpennell.com/rss": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "matthewpennell.com",
+      "type": "application/atom+xml"
+    },
+    "https://matthewpennell.com/css/basic.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    }
+  }
+}

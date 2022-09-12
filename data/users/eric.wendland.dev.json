@@ -1,0 +1,131 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "name": [
+          "Eric Wendland"
+        ],
+        "url": [
+          "https://eric.wendland.dev/"
+        ],
+        "note": [
+          "Eric is a student that likes distributed/decentral networks, unix, git and the command line. (Maybe a bit to much at times).\n        \n        Online he often uses the alias tionis as seen below."
+        ],
+        "sex": [
+          "m"
+        ],
+        "logo": [
+          "https://eric.wendland.dev/assets/avatar.png"
+        ],
+        "email": [
+          "mailto:eric@wendland.dev"
+        ],
+        "key": [
+          "https://eric.wendland.dev/assets/key.pub",
+          "https://tasadar.net/tionis.keys"
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "icon": [
+      "https://eric.wendland.dev/favicon.png"
+    ],
+    "shortcut": [
+      "https://eric.wendland.dev/favicon.png"
+    ],
+    "openid.delegate": [
+      "https://eric.wendland.dev/"
+    ],
+    "openid.server": [
+      "https://openid.indieauth.com/openid"
+    ],
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "stylesheet": [
+      "https://eric.wendland.dev/default.css",
+      "https://eric.wendland.dev/molokai.css"
+    ],
+    "me": [
+      "https://eric.wendland.dev/",
+      "https://github.com/tionis",
+      "https://matrix.to/#/@tionis:matrix.org",
+      "mailto:eric@wendland.dev"
+    ],
+    "pgpkey": [
+      "https://eric.wendland.dev/assets/key.pub"
+    ],
+    "sshkey": [
+      "https://tasadar.net/tionis.keys"
+    ]
+  },
+  "rel-urls": {
+    "https://eric.wendland.dev/favicon.png": {
+      "rels": [
+        "icon",
+        "shortcut"
+      ]
+    },
+    "https://eric.wendland.dev/": {
+      "rels": [
+        "openid.delegate"
+      ]
+    },
+    "https://openid.indieauth.com/openid": {
+      "rels": [
+        "openid.server"
+      ]
+    },
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://eric.wendland.dev/default.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://eric.wendland.dev/molokai.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://github.com/tionis": {
+      "rels": [
+        "me"
+      ],
+      "text": "tionis"
+    },
+    "https://matrix.to/#/@tionis:matrix.org": {
+      "rels": [
+        "me"
+      ],
+      "text": "@tionis:matrix.org"
+    },
+    "mailto:eric@wendland.dev": {
+      "rels": [
+        "me"
+      ],
+      "text": "eric@wendland.dev"
+    },
+    "https://eric.wendland.dev/assets/key.pub": {
+      "rels": [
+        "pgpkey"
+      ],
+      "type": "application/pgp-keys",
+      "text": "A06C...FCE8"
+    },
+    "https://tasadar.net/tionis.keys": {
+      "rels": [
+        "sshkey"
+      ],
+      "type": "application/ssh-keys",
+      "text": "on tasadar.net"
+    }
+  }
+}

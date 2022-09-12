@@ -1,0 +1,31 @@
+{
+  "items": [],
+  "rels": {
+    "indieauth-metadata": [
+      "https://auth.nitinseshadri.com/.well-known/oauth-authorization-server"
+    ],
+    "authorization_endpoint": [
+      "https://auth.nitinseshadri.com/auth/login"
+    ],
+    "token_endpoint": [
+      "https://auth.nitinseshadri.com/auth/token"
+    ]
+  },
+  "rel-urls": {
+    "https://auth.nitinseshadri.com/.well-known/oauth-authorization-server": {
+      "rels": [
+        "indieauth-metadata"
+      ]
+    },
+    "https://auth.nitinseshadri.com/auth/login": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://auth.nitinseshadri.com/auth/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    }
+  }
+}

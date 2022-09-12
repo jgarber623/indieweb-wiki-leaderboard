@@ -1,0 +1,63 @@
+{
+  "items": [],
+  "rels": {
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "micropub": [
+      "https://donp.org/micropub"
+    ],
+    "me": [
+      "https://donp.org/as-person.json",
+      "https://twitter.com/donpdonp",
+      "https://github.com/donpdonp"
+    ],
+    "alternate": [
+      "https://donp.org/webid.json"
+    ]
+  },
+  "rel-urls": {
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://donp.org/micropub": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://donp.org/as-person.json": {
+      "rels": [
+        "me"
+      ],
+      "type": "application/ld+json; profile=\"https://www.w3.org/ns/activitystreams\""
+    },
+    "https://donp.org/webid.json": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/ld+json"
+    },
+    "https://twitter.com/donpdonp": {
+      "rels": [
+        "me"
+      ],
+      "text": "\n     twitter\n    "
+    },
+    "https://github.com/donpdonp": {
+      "rels": [
+        "me"
+      ],
+      "text": "\n     github\n    "
+    }
+  }
+}

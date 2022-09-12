@@ -1,0 +1,80 @@
+{
+  "items": [],
+  "rels": {
+    "stylesheet": [
+      "https://joyh.me/css/normalize.css",
+      "https://joyh.me/css/main.css"
+    ],
+    "alternate": [
+      "https://joyh.me/feed.json",
+      "https://joyh.me/feed/atom.xml"
+    ],
+    "icon": [
+      "https://joyh.me/img/favicon.png"
+    ],
+    "me": [
+      "https://micro.blog/joyh",
+      "https://mastodon.social/@joyh",
+      "mailto:joyh@joyh.me"
+    ],
+    "EditURI": [
+      "https://joyh.me/rsd.xml"
+    ]
+  },
+  "rel-urls": {
+    "https://joyh.me/css/normalize.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://joyh.me/css/main.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://joyh.me/feed.json": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "JSON Feed",
+      "type": "application/json"
+    },
+    "https://joyh.me/feed/atom.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/atom+xml"
+    },
+    "https://joyh.me/img/favicon.png": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/png"
+    },
+    "https://micro.blog/joyh": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://joyh.me/rsd.xml": {
+      "rels": [
+        "EditURI"
+      ],
+      "type": "application/rsd+xml"
+    },
+    "https://mastodon.social/@joyh": {
+      "rels": [
+        "me"
+      ],
+      "text": "마스토돈"
+    },
+    "mailto:joyh@joyh.me": {
+      "rels": [
+        "me"
+      ],
+      "text": "이메일"
+    }
+  }
+}

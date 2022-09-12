@@ -1,0 +1,879 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-feed"
+      ],
+      "properties": {
+        "name": [
+          "Interdependent Thoughts"
+        ],
+        "url": [
+          "https://www.zylstra.org/blog/",
+          "https://mastodon.social/@teledyn",
+          "https://geekcompass.com/@jan",
+          "https://indieweb.social/@tchambers",
+          "https://eicker.news/@technews",
+          "https://mastodon.social/@johnjohnston"
+        ],
+        "summary": [
+          "by Ton Zĳlstra"
+        ],
+        "content": [
+          {
+            "html": "by Ton Zĳlstra",
+            "value": "by Ton Zĳlstra"
+          }
+        ],
+        "bridgy-twitter-content": [
+          "Dave Winer adds markdown support to RSS. I wonder if this opens up new ways for me to connect my (markdown) notes locally to my website, or provide feeds from my notes to (selected) others. Need to explore and play with this a bit."
+        ]
+      },
+      "children": [
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "GPT-3-ifying That Last Blogpost"
+            ],
+            "url": [
+              "https://www.zylstra.org/blog/2022/09/gpt-3-ifying-that-last-blogpost/",
+              "https://www.zylstra.org/blog/2022/09/gpt-3-ifying-that-last-blogpost/"
+            ],
+            "updated": [
+              "2022-09-03T15:00:08+02:00"
+            ],
+            "published": [
+              "2022-09-03T15:00:08+02:00"
+            ],
+            "author": [
+              "Ton Zijlstra",
+              "Ton Zijlstra"
+            ],
+            "content": [
+              {
+                "html": "<p>In the past weeks I’ve been <a href=\"https://www.zylstra.org/blog/2022/08/communicating-with-gpt-3/\">playing at times</a> in <a href=\"https://beta.openai.com/playground\">OpenAI’s GPT-3 playground</a>. You give <a href=\"https://en.wikipedia.org/wiki/GPT-3\">GPT-3</a> a prompt and then it will provide some generated text. You could use that as prompt again, or add something yourself and let GPT-3 continue.</p>\n<p>This morning, I read <a href=\"https://liamp.substack.com/p/my-gpt-3-blog-got-26-thousand-visitors\">Liam Porr’s 2020 posting about a GPT-3 generated blog he kept for a few weeks</a>. (I think keeping it up <em>longer</em> and positioning it like a <em>personal</em> blog would mean <a href=\"https://www.zylstra.org/blog/2020/08/your-blog-is-your-avatar/\">certain</a> detection as generated or inauthentic. Unlike when Porr did his experiment, GPT-3 is now available to many, and more people would also be suspicious of texts as potentially generated to begin with.) </p>\n<p>For fun I prompted the GPT-3 playground with the title and first few lines of my last <a href=\"https://www.zylstra.org/blog/2022/09/10-thoughts-after-100-annotations-in-hypothes-is/\">posting on my recent use of the Hypothes.is social annotation tool</a>.</p>\n<h2>My post remade by GPT-3</h2>\n<p>Below is the result GPT-3 gave me. After pasting the block-quoted part from the original as prompt, it generated the <code>grey coded</code> part.</p>\n<blockquote>\n<h2>10 Thoughts After Making 100 Annotations in Hypothes.is</h2>\n<p>I’ve now added over 100 annotations using Hypothes.is (h.), almost all within the last month. This includes a few non-public ones. Two weeks ago I wrote down some early impressions, to which I’m now adding some additional observations.</p>\n<p> 1) 100 annotations (in a month) don’t seem like a lot to me, if h. is a regular tool in one’s browsing habit.</p>\n</blockquote>\n<p><code> 2) The act of annotation feels good, even empowering. It’s a way of taking control of the web, or at least of one’s web experience.</code> </p>\n<p> <code>3) Annotations can be very short, even just a single word. This is both good (e.g. for quickly annotating a lot of text) and bad (e.g. when trying to make a more nuanced point).</code></p>\n<p> <code>4) The annotation interface could be improved. In particular, it would be nice to have an easy way to see all annotations on a page, without having to open each one individually.</code></p>\n<p> <code>5) Annotations can be a great way to start a conversation. I’ve had a few annotations that have generated discussion, which is gratifying.</code></p>\n<p> <code>6) Annotations can also be a great way to keep track of thoughts and ideas. I’ve found myself using h. as a kind of “digital scratchpad”, jotting down things that I want to remember or follow up on later.</code></p>\n<p> <code>7) The fact that annotations are public by default is both good and bad. On the one hand, it encourages people to be thoughtful and considerate in their annotations. On the other hand, it can be intimidating, and I’ve found myself self-censoring on occasion.</code></p>\n<p> <code>8) The fact that annotations are tied to a specific URL can be both good and bad. On the one hand, it ensures that annotations are always relevant to the context in which they were made. On the other hand, it can be frustrating when the context changes (e.g. an article is updated) and the annotation is no longer relevant.</code></p>\n<p> <code>9) The fact that annotations are stored centrally (on h.'s servers) is both good and bad. On the one hand, it makes it easy to access and share annotations. On the other hand, it raises privacy and security concerns.</code></p>\n<p> <code> 10) Overall, I’m very happy with h. and find it to be a valuable tool. I’m looking forward to using it more in the future.</code></p>\n<h2>Some first reactions to that GPT-3 text</h2>\n<ul>\n<li>The title (10 things about…) and partly adding the first numbered element, created the expected 10 point list. It’s a common enough marketing/personal branding type format for GPT-3 to pick up on. (Why did I use it yesterday? Because I was too lazy to categorize my observations, so I just listed and numbered them as I wrote them.)</li>\n<li>Ignoring obvious things like the repetitiveness of the text, after reading you’re left with feeling like you’ve read a bunch of words but you remain unsure if you read anything of substance. The text suggests there’s substance though, the first person perspective, mentioning specific aspects. Yet then doesn’t really follow up. It reads like marketing text, content farmed text. It mentions things but doesn’t answer questions, nor pose them. Not a surprise, but it does show how much empty stuff there’s already out there (on which GPT-3 was trained in the first place). I recognise it as low-info text but not necessarily as generated text.</li>\n<li>No links! No links, other than sporadic internal links, is the default in the media, I know. Yet hyperlinks are the strands the Web is made of. It allows pointing to side paths of relevance, to the history and context of which the posting itself is a result, the conversation it is intended to be part of and situated in. Its absence, the pretense that the artefact is a stand alone and self contained thing, is a tell. It’s also a weakness in other online texts, or any text, as books and journals can be filled with links in the shape of footnotes, references and mentions in the text itself)</li>\n<li>No proof of work (to borrow a term) other than that the words have been written is conveyed by the text. No world behind the text, of which the text is a resulting expression. No examples that suggest or proof the author tried things out, looked things up. Compare that to the actual posting that in point 1 talks about social connections around the topic, links to other h. user profiles as data points for comparison, and elsewhere points to examples of behaviour, lists of h. users found created and shared, references other tools (Zotero, Obsidian) and larger scope (PKM workflows) outside the topic at hand, and experimental changes in the site it is published on itself. That all tells of some exploration, of which the posting is the annotation. This also goes back to my earlier remark of using a 10 point list as laziness in the face of categorising things as I’ve done in other posts (see what I did there? No links, cause lazy). </li>\n</ul>\n<p>I think that’s the biggest thing that I take from this: any text should at least hint at the rich tapestry of things it is resulting from, if not directly discuss it or link to it. A tapestry not just made from other texts, but other actions taken (things created, data collected, tools made or adapted), and people (whose thoughts you build on, whose behaviour you observe and adopt, who you interact with outside of the given text). Whether it’s been GPT-3 generated or not, that holds.</p>",
+                "value": "In the past weeks I’ve been playing at times in OpenAI’s GPT-3 playground. You give GPT-3 a prompt and then it will provide some generated text. You could use that as prompt again, or add something yourself and let GPT-3 continue.\nThis morning, I read Liam Porr’s 2020 posting about a GPT-3 generated blog he kept for a few weeks. (I think keeping it up longer and positioning it like a personal blog would mean certain detection as generated or inauthentic. Unlike when Porr did his experiment, GPT-3 is now available to many, and more people would also be suspicious of texts as potentially generated to begin with.) \nFor fun I prompted the GPT-3 playground with the title and first few lines of my last posting on my recent use of the Hypothes.is social annotation tool.\nMy post remade by GPT-3\nBelow is the result GPT-3 gave me. After pasting the block-quoted part from the original as prompt, it generated the grey coded part.\n\n10 Thoughts After Making 100 Annotations in Hypothes.is\nI’ve now added over 100 annotations using Hypothes.is (h.), almost all within the last month. This includes a few non-public ones. Two weeks ago I wrote down some early impressions, to which I’m now adding some additional observations.\n 1) 100 annotations (in a month) don’t seem like a lot to me, if h. is a regular tool in one’s browsing habit.\n 2) The act of annotation feels good, even empowering. It’s a way of taking control of the web, or at least of one’s web experience. \n 3) Annotations can be very short, even just a single word. This is both good (e.g. for quickly annotating a lot of text) and bad (e.g. when trying to make a more nuanced point).\n 4) The annotation interface could be improved. In particular, it would be nice to have an easy way to see all annotations on a page, without having to open each one individually.\n 5) Annotations can be a great way to start a conversation. I’ve had a few annotations that have generated discussion, which is gratifying.\n 6) Annotations can also be a great way to keep track of thoughts and ideas. I’ve found myself using h. as a kind of “digital scratchpad”, jotting down things that I want to remember or follow up on later.\n 7) The fact that annotations are public by default is both good and bad. On the one hand, it encourages people to be thoughtful and considerate in their annotations. On the other hand, it can be intimidating, and I’ve found myself self-censoring on occasion.\n 8) The fact that annotations are tied to a specific URL can be both good and bad. On the one hand, it ensures that annotations are always relevant to the context in which they were made. On the other hand, it can be frustrating when the context changes (e.g. an article is updated) and the annotation is no longer relevant.\n 9) The fact that annotations are stored centrally (on h.'s servers) is both good and bad. On the one hand, it makes it easy to access and share annotations. On the other hand, it raises privacy and security concerns.\n  10) Overall, I’m very happy with h. and find it to be a valuable tool. I’m looking forward to using it more in the future.\nSome first reactions to that GPT-3 text\n\nThe title (10 things about…) and partly adding the first numbered element, created the expected 10 point list. It’s a common enough marketing/personal branding type format for GPT-3 to pick up on. (Why did I use it yesterday? Because I was too lazy to categorize my observations, so I just listed and numbered them as I wrote them.)\nIgnoring obvious things like the repetitiveness of the text, after reading you’re left with feeling like you’ve read a bunch of words but you remain unsure if you read anything of substance. The text suggests there’s substance though, the first person perspective, mentioning specific aspects. Yet then doesn’t really follow up. It reads like marketing text, content farmed text. It mentions things but doesn’t answer questions, nor pose them. Not a surprise, but it does show how much empty stuff there’s already out there (on which GPT-3 was trained in the first place). I recognise it as low-info text but not necessarily as generated text.\nNo links! No links, other than sporadic internal links, is the default in the media, I know. Yet hyperlinks are the strands the Web is made of. It allows pointing to side paths of relevance, to the history and context of which the posting itself is a result, the conversation it is intended to be part of and situated in. Its absence, the pretense that the artefact is a stand alone and self contained thing, is a tell. It’s also a weakness in other online texts, or any text, as books and journals can be filled with links in the shape of footnotes, references and mentions in the text itself)\nNo proof of work (to borrow a term) other than that the words have been written is conveyed by the text. No world behind the text, of which the text is a resulting expression. No examples that suggest or proof the author tried things out, looked things up. Compare that to the actual posting that in point 1 talks about social connections around the topic, links to other h. user profiles as data points for comparison, and elsewhere points to examples of behaviour, lists of h. users found created and shared, references other tools (Zotero, Obsidian) and larger scope (PKM workflows) outside the topic at hand, and experimental changes in the site it is published on itself. That all tells of some exploration, of which the posting is the annotation. This also goes back to my earlier remark of using a 10 point list as laziness in the face of categorising things as I’ve done in other posts (see what I did there? No links, cause lazy). \n\nI think that’s the biggest thing that I take from this: any text should at least hint at the rich tapestry of things it is resulting from, if not directly discuss it or link to it. A tapestry not just made from other texts, but other actions taken (things created, data collected, tools made or adapted), and people (whose thoughts you build on, whose behaviour you observe and adopt, who you interact with outside of the given text). Whether it’s been GPT-3 generated or not, that holds."
+              }
+            ],
+            "category": [
+              "gpt3"
+            ]
+          },
+          "id": "post-22132"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "10 Thoughts After 100 Annotations in Hypothes.is"
+            ],
+            "url": [
+              "https://www.zylstra.org/blog/2022/09/10-thoughts-after-100-annotations-in-hypothes-is/",
+              "https://www.zylstra.org/blog/2022/09/10-thoughts-after-100-annotations-in-hypothes-is/"
+            ],
+            "updated": [
+              "2022-09-02T21:18:06+02:00"
+            ],
+            "published": [
+              "2022-09-02T21:18:06+02:00"
+            ],
+            "author": [
+              "Ton Zijlstra",
+              "Ton Zijlstra"
+            ],
+            "content": [
+              {
+                "html": "<p><img src=\"https://www.zylstra.org/wp/wp-content/uploads/2022/09/108annotations.png\" alt=\"\" width=\"243\" height=\"140\" class=\"aligncenter size-full wp-image-22124\"></p>\n<p>I’ve now added over <a href=\"https://hypothes.is/users/tonz\">100 annotations</a> using Hypothes.is (h.), almost all within the last month. This includes a few non-public ones. Two weeks ago I wrote down <a href=\"https://www.zylstra.org/blog/2022/08/using-hypothes-is-early-impressions/\">some early impressions</a>, to which I’m now adding some additional observations.</p>\n<ol>\n<li>100 annotations (in a month) don’t seem like a lot to me, if h. is a regular tool in one’s browsing habit. <a href=\"https://web.hypothes.is/blog/say-hello-to-anno/#annotations:CbAImiHUEe2rPAN8lFht1Q\">H. says</a> they have 1 million users, that have made 40 million annotations to over <a href=\"https://web.hypothes.is/blog/2-million-annotated-readings/\">2 million articles</a> (their API returns 2.187.262 results as I write this). H. has been in existence for a decade. These numbers average out to 20 annotations to 2 articles per user. This to me suggests that the mode is 1 annotation to 1 article by a user and then silence. My 100 annotations spread out over 30 articles, accumulated over a handful of weeks is then already well above average, even though I am a new and beginning user. My introduction to h. was through Chris Aldrich, whose <a href=\"https://hypothes.is/users/chrisaldrich\">stream of annotations</a> I follow daily with interest. He recently passed 10.000 annotations! That’s 100 times as many as mine, and apparently also an outlier to the h. team itself: they sent him a <a href=\"https://boffosocko.com/2022/08/29/a-small-10000-annotations-party/\">congratulatory package</a>. H.’s marketing director has <a href=\"https://hypothes.is/users/nateangell\">1348 public annotations</a> over almost 6 years, its founder <a href=\"https://hypothes.is/users/dwhly\">1200</a> in a decade. <a href=\"https://remikalir.com/\">Remi Kalir</a>, co-author of the (readworthy!) <a href=\"https://remikalir.com/annotation-mit-press-2021/\">Annotation book</a>, has <a href=\"https://hypothes.is/users/remikalir\">800</a> in six years. That does not seem that much from what I would expect to be power users. My blogging friend <a href=\"https://hypothes.is/users/HeinzWittenbrink\">Heinz has some 750 annotations</a> in three years. Fellow IndieWeb netizen <a href=\"https://maya.land/\">Maya</a> some <a href=\"https://hypothes.is/users/mayaland\">1800</a> in a year and a half. Those last two numbers, even if they differ by a factor 5 or so in average annotations/month, feel like what I’d expect as a regular range for <em>routine</em> users. </li>\n<li>The book Annotation I mentioned makes a lot of <em>social</em> annotation, where distributed conversations result beyond the core interaction of an annotator with an author through an original text. Such social annotation <em>requires</em> sharing. H. provides that sharing functionality and positions itself explicitly as a social tool (\"<em>Annotate the web, with anyone, anywhere</em>\" \"<em>Engage your students with social annotation</em>\"). The numbers above show that such social interaction around an annotated text within h. will be very rare in the public facing part of h., in the closed (safer) surroundings of classroom use interaction might be much more prominent. Users like me, or Heinz, Maya and Chris whom I named/linked above, will then be motivated by something else than the social aspects of h. If and when such interaction does happen (as it tends to do if you mutually follow eachothers annotations) it is a pleasant addition, not h.’s central benefit.</li>\n<li>What is odd to me is that when you do indeed engage into social interaction on h., that <a href=\"https://www.zylstra.org/blog/2022/08/hypothes-is-oddity-in-retrieving-own-comments/\">interaction cannot be found through the web interface</a> of my annotations. Once I comment, it disappears out of sight, unless I remember what I reacted to and go back to that annotation by another user directly, to find my comment underneath. It does show up in the RSS feed of my annotations, and my Hypothes.is-to-Obsidian plugin also captures them through the API. Just not in the web interface.</li>\n<li>Despite the social nature of h., discovery is very difficult. Purposefully ‘finding the others’ is mostly impossible. This is both an effect of the web-interface functionality, as well as I suspect because of the relatively sparse network of users (see observation 1). There’s no direct way of connecting or searching for users. The social object is the annotation, and you need to find others only through annotations you encounter. I’ve searched for tags and terms I am interested in, but those do not surface regular users easily. I’ve <a href=\"https://www.zylstra.org/blog/hypothes-is-roll/\">collated a list</a> of a dozen currently active or somewhat active annotators, and half a dozen who used to be or are sporadically active. I also <a href=\"https://www.zylstra.org/blog/2022/08/added-hypothes-is-annotations-link-to-posts/\">added annotations of my own blogposts to my blog</a>, and I actively follow (through an RSS feed) any new annotation of my blogposts. <strong>If you use h., I’d be interested to hear about it.</strong>\n</li>\n<li>Annotations are the first step of getting useful insights into my notes. This makes it a prerequisite to be able to capture annotations in my note making tool Obsidian, otherwise Hypothes.is is just another silo you’re wasting time on. Luckily h. isn’t meant as a silo and has an API. Using the API and the Hypothes.is-to-Obsidian plugin all my annotations are available to me locally. However, what I do locally with those notes does not get reflected back to h., meaning that you can’t really work through annotations locally until you’ve annotated an entire article or paper in the browser, otherwise sync issues may occur. I also find that having the individual annotations (including the annotated text, in one file), not the full text (the stuff I didn’t annotate), feels impractical at times as it cuts away a lot of context. It’s easily retrievable by visiting the url now, but maybe not over time (so I save web archive links too as an annotation). I also grab a local markdown copy of full articles if they are of higher interest to me. Using h. in the browser creates another inbox in this regard (having to return to a thing to finish annotation or for context), and I obviously don’t need more inboxes to keep track of. </li>\n<li>In response to not saving entire articles in my notes environment, I have started marking online articles I haven’t annotated yet at least with a note that contains the motivation and first associations I normally save with a full article. This is in the same spot as where I add a web archive link, as page note. I’ve tried that in recent days and that seems to work well. That way I do have a general note in my local system that contains the motivation for looking in more detail at an article.</li>\n<li>The API also supports sending annotations and updates <em>to</em> h. from e.g. my local system. Would this be potentially better for my workflow? Firefox and the h. add-on don’t always work flawlessly, not all docs can be opened, or the form stops working until I restart Firefox. This too points in the direction of annotating locally and sending annotations to h. for sharing through the API. Is there anyone already doing this? Built their own client, or using h. ‘headless’? Is there anyone who runs their own h. instance locally? If I could send things through the API, that might also include the Kindle highlights I pull in to my local system. </li>\n<li>In the same category of integrating h. into my pkm workflows, falls the interaction between h. and Zotero, especially now that Zotero has its own storage of annotations of PDFs in my library.  It might be of interest to be able to share those annotations, for a more complete overview of what I’m annotating. Either directly from Zotero, or by way of my notes in Obsidian (Zotero annotatins end up there in the end)</li>\n<li>These first 100 annotations I made in the browser, using an add-on. Annotating in the browser takes some getting used to, as I try to get myself out of my browser more usually. I don’t always fully realise I can return to an article for later annotation. Any time the sense I have to finish annotating an article surfaces, that is friction I can do without. Apart from that, it is a pleasant experience to annotate like this. And that pleasure is key to keep annotating. Being able to better integrate my h. use with Obsidian and Zotero would likely increase the pleasure of doing it.</li>\n<li>Another path of integration to think about is sharing annotated links from h. to my blog or the other way around. I blog links with a general annotation at times (<a href=\"https://www.zylstra.org/blog/2022/08/22073/\">example</a>). These  bloggable links I could grab from h. where I bookmark things in similar ways (<a href=\"https://via.hypothes.is/https://flowingdata.com/2022/09/01/looking-for-meaning-in-the-everyday/#annotations:5JMGfioIEe2G_9uPa5Qe8Q\">example</a>), usually to annotate further later on. I notice myself thinking I should do both, but unless I could do that simultaneously  I won’t do such a thing twice.</li>\n</ol>",
+                "value": "I’ve now added over 100 annotations using Hypothes.is (h.), almost all within the last month. This includes a few non-public ones. Two weeks ago I wrote down some early impressions, to which I’m now adding some additional observations.\n\n100 annotations (in a month) don’t seem like a lot to me, if h. is a regular tool in one’s browsing habit. H. says they have 1 million users, that have made 40 million annotations to over 2 million articles (their API returns 2.187.262 results as I write this). H. has been in existence for a decade. These numbers average out to 20 annotations to 2 articles per user. This to me suggests that the mode is 1 annotation to 1 article by a user and then silence. My 100 annotations spread out over 30 articles, accumulated over a handful of weeks is then already well above average, even though I am a new and beginning user. My introduction to h. was through Chris Aldrich, whose stream of annotations I follow daily with interest. He recently passed 10.000 annotations! That’s 100 times as many as mine, and apparently also an outlier to the h. team itself: they sent him a congratulatory package. H.’s marketing director has 1348 public annotations over almost 6 years, its founder 1200 in a decade. Remi Kalir, co-author of the (readworthy!) Annotation book, has 800 in six years. That does not seem that much from what I would expect to be power users. My blogging friend Heinz has some 750 annotations in three years. Fellow IndieWeb netizen Maya some 1800 in a year and a half. Those last two numbers, even if they differ by a factor 5 or so in average annotations/month, feel like what I’d expect as a regular range for routine users. \nThe book Annotation I mentioned makes a lot of social annotation, where distributed conversations result beyond the core interaction of an annotator with an author through an original text. Such social annotation requires sharing. H. provides that sharing functionality and positions itself explicitly as a social tool (\"Annotate the web, with anyone, anywhere\" \"Engage your students with social annotation\"). The numbers above show that such social interaction around an annotated text within h. will be very rare in the public facing part of h., in the closed (safer) surroundings of classroom use interaction might be much more prominent. Users like me, or Heinz, Maya and Chris whom I named/linked above, will then be motivated by something else than the social aspects of h. If and when such interaction does happen (as it tends to do if you mutually follow eachothers annotations) it is a pleasant addition, not h.’s central benefit.\nWhat is odd to me is that when you do indeed engage into social interaction on h., that interaction cannot be found through the web interface of my annotations. Once I comment, it disappears out of sight, unless I remember what I reacted to and go back to that annotation by another user directly, to find my comment underneath. It does show up in the RSS feed of my annotations, and my Hypothes.is-to-Obsidian plugin also captures them through the API. Just not in the web interface.\nDespite the social nature of h., discovery is very difficult. Purposefully ‘finding the others’ is mostly impossible. This is both an effect of the web-interface functionality, as well as I suspect because of the relatively sparse network of users (see observation 1). There’s no direct way of connecting or searching for users. The social object is the annotation, and you need to find others only through annotations you encounter. I’ve searched for tags and terms I am interested in, but those do not surface regular users easily. I’ve collated a list of a dozen currently active or somewhat active annotators, and half a dozen who used to be or are sporadically active. I also added annotations of my own blogposts to my blog, and I actively follow (through an RSS feed) any new annotation of my blogposts. If you use h., I’d be interested to hear about it.\nAnnotations are the first step of getting useful insights into my notes. This makes it a prerequisite to be able to capture annotations in my note making tool Obsidian, otherwise Hypothes.is is just another silo you’re wasting time on. Luckily h. isn’t meant as a silo and has an API. Using the API and the Hypothes.is-to-Obsidian plugin all my annotations are available to me locally. However, what I do locally with those notes does not get reflected back to h., meaning that you can’t really work through annotations locally until you’ve annotated an entire article or paper in the browser, otherwise sync issues may occur. I also find that having the individual annotations (including the annotated text, in one file), not the full text (the stuff I didn’t annotate), feels impractical at times as it cuts away a lot of context. It’s easily retrievable by visiting the url now, but maybe not over time (so I save web archive links too as an annotation). I also grab a local markdown copy of full articles if they are of higher interest to me. Using h. in the browser creates another inbox in this regard (having to return to a thing to finish annotation or for context), and I obviously don’t need more inboxes to keep track of. \nIn response to not saving entire articles in my notes environment, I have started marking online articles I haven’t annotated yet at least with a note that contains the motivation and first associations I normally save with a full article. This is in the same spot as where I add a web archive link, as page note. I’ve tried that in recent days and that seems to work well. That way I do have a general note in my local system that contains the motivation for looking in more detail at an article.\nThe API also supports sending annotations and updates to h. from e.g. my local system. Would this be potentially better for my workflow? Firefox and the h. add-on don’t always work flawlessly, not all docs can be opened, or the form stops working until I restart Firefox. This too points in the direction of annotating locally and sending annotations to h. for sharing through the API. Is there anyone already doing this? Built their own client, or using h. ‘headless’? Is there anyone who runs their own h. instance locally? If I could send things through the API, that might also include the Kindle highlights I pull in to my local system. \nIn the same category of integrating h. into my pkm workflows, falls the interaction between h. and Zotero, especially now that Zotero has its own storage of annotations of PDFs in my library.  It might be of interest to be able to share those annotations, for a more complete overview of what I’m annotating. Either directly from Zotero, or by way of my notes in Obsidian (Zotero annotatins end up there in the end)\nThese first 100 annotations I made in the browser, using an add-on. Annotating in the browser takes some getting used to, as I try to get myself out of my browser more usually. I don’t always fully realise I can return to an article for later annotation. Any time the sense I have to finish annotating an article surfaces, that is friction I can do without. Apart from that, it is a pleasant experience to annotate like this. And that pleasure is key to keep annotating. Being able to better integrate my h. use with Obsidian and Zotero would likely increase the pleasure of doing it.\nAnother path of integration to think about is sharing annotated links from h. to my blog or the other way around. I blog links with a general annotation at times (example). These  bloggable links I could grab from h. where I bookmark things in similar ways (example), usually to annotate further later on. I notice myself thinking I should do both, but unless I could do that simultaneously  I won’t do such a thing twice."
+              }
+            ],
+            "category": [
+              "annotation",
+              "bookmarks",
+              "hypothesis",
+              "tools",
+              "tools for thought"
+            ]
+          },
+          "id": "post-22121"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "A Noob In The Noosphere"
+            ],
+            "url": [
+              "https://www.zylstra.org/blog/2022/08/a-noob-in-the-noosphere/",
+              "https://www.zylstra.org/blog/2022/08/a-noob-in-the-noosphere/"
+            ],
+            "updated": [
+              "2022-08-23T09:22:29+02:00"
+            ],
+            "published": [
+              "2022-08-23T09:22:29+02:00"
+            ],
+            "author": [
+              "Ton Zijlstra",
+              "Ton Zijlstra"
+            ],
+            "content": [
+              {
+                "html": "<p>Attempting to understand the ‘Noosphere’ and Subconscious tooling that Gordon Brander is developing results in several questions. Brander proposes a new ‘low level infrastructure’ (<a href=\"https://github.com/subconsciousnetwork\">subconscious</a>) for sharing stuff across the internet, which should result in us thinking together on a global scale (the <a href=\"https://en.wikipedia.org/wiki/Noosphere\">noosphere</a>).</p>\n<p>I’ve followed the recent <a href=\"https://betaworkss-fabulous-project.webflow.io/event/render-tools-for-thinking\">Render conference on ‘tools for thought’</a> where Gordon Brander presented Noosphere and Subconscious. In the wake of it I joined the Discord server around this topic, and read the ‘<a href=\"https://docs.google.com/document/d/1oUunOtzj27JmCFAD5Qpt1EGKseUcTzk2xq3Aok0kDxk/edit\">Noosphere Explainer</a>‘. Brander’s Render talk roughly follows that same document.</p>\n<p>Brander says: The internet is already a tool for thought, so we should make it better at it. The tools at our disposal to deal with this new voluminous information environment haven’t reached their potential yet. Learning to think together at planetary scale is a needed ingredient to address global issues. There are many interesting tools out there, but they’re all silos of SaaS. They’re silos because of <a href=\"https://en.wikipedia.org/wiki/Same-origin_policy\">same origin policy</a> which prevents cross-site/host/domain/port sourcing of material. Subconscious is meant to solve that by providing a ‘protocol for thoughts’.</p>\n<p>This leaves me with a range of questions.</p>\n<ul>\n<li>Subconscious is meant to solve same origin policy. SOP however seems to be a <em>client</em> (i.e. browser) enforced thing, focused on (java)scripts, and otherwise e.g. ignores HTML. Apps are/can be viewers like browsers are viewers. So why isn’t the web suitable, with the app or a tweaked browser on top? Why a whole new ‘infrastructure’ over the internet? That sounds like it wants to solve a whole lot more than same origin to remove the bias towards silos. What are those additional things?</li>\n<li>The intended target is to make the internet a better tool for thought. Such thoughts are text based it seems so what does Subsoncsious do in contrast to current text based thoughts shared that e.g. the web doesn’t?</li>\n<li>Assuming Subconscious does what it intends, how do we get from a ‘low level infrastructure’ to the stated overarching aim of thinking together globally? I see texts, that may or not be expressed thoughts, being linked and shared like web resources, how do we get to ‘thinking together’ from there? The talk at Render paid tribute to that at the beginning but doesn’t show how it would be done (and the invocation of the Xanadu project at the start might well be meaningful in that sense), not even in any ‘and then the magic happens to get to the finish line’ fashion. Is the magic supposed to be emergent, like I and others assumed the web and social software would do 20-30 years ago? Is it enough to merely have a ‘protocol for thoughts’? What about non-infrastructure type decision and consensus building tools like <a href=\"https://en.wikipedia.org/wiki/LiquidFeedback\">Liquid Feedback</a> or <a href=\"https://www.nesta.org.uk/feature/six-pioneers-digital-democracy/vtaiwan/\">Audrey Tang’s quadratic voting in vTaiwan</a>? Those are geared to action, and seem more immediately useful towards solving global issues, don’t they?</li>\n</ul>\n<p>I’ll be hanging out in the Discord server, you can too (<a href=\"https://discord.com/invite/wyHPzGraBh\">invite link</a>), and going through <a href=\"https://subconscious.substack.com/\">Gordon Brander’s earlier postings</a>, to see if I can better understand what this is about.</p>",
+                "value": "Attempting to understand the ‘Noosphere’ and Subconscious tooling that Gordon Brander is developing results in several questions. Brander proposes a new ‘low level infrastructure’ (subconscious) for sharing stuff across the internet, which should result in us thinking together on a global scale (the noosphere).\nI’ve followed the recent Render conference on ‘tools for thought’ where Gordon Brander presented Noosphere and Subconscious. In the wake of it I joined the Discord server around this topic, and read the ‘Noosphere Explainer‘. Brander’s Render talk roughly follows that same document.\nBrander says: The internet is already a tool for thought, so we should make it better at it. The tools at our disposal to deal with this new voluminous information environment haven’t reached their potential yet. Learning to think together at planetary scale is a needed ingredient to address global issues. There are many interesting tools out there, but they’re all silos of SaaS. They’re silos because of same origin policy which prevents cross-site/host/domain/port sourcing of material. Subconscious is meant to solve that by providing a ‘protocol for thoughts’.\nThis leaves me with a range of questions.\n\nSubconscious is meant to solve same origin policy. SOP however seems to be a client (i.e. browser) enforced thing, focused on (java)scripts, and otherwise e.g. ignores HTML. Apps are/can be viewers like browsers are viewers. So why isn’t the web suitable, with the app or a tweaked browser on top? Why a whole new ‘infrastructure’ over the internet? That sounds like it wants to solve a whole lot more than same origin to remove the bias towards silos. What are those additional things?\nThe intended target is to make the internet a better tool for thought. Such thoughts are text based it seems so what does Subsoncsious do in contrast to current text based thoughts shared that e.g. the web doesn’t?\nAssuming Subconscious does what it intends, how do we get from a ‘low level infrastructure’ to the stated overarching aim of thinking together globally? I see texts, that may or not be expressed thoughts, being linked and shared like web resources, how do we get to ‘thinking together’ from there? The talk at Render paid tribute to that at the beginning but doesn’t show how it would be done (and the invocation of the Xanadu project at the start might well be meaningful in that sense), not even in any ‘and then the magic happens to get to the finish line’ fashion. Is the magic supposed to be emergent, like I and others assumed the web and social software would do 20-30 years ago? Is it enough to merely have a ‘protocol for thoughts’? What about non-infrastructure type decision and consensus building tools like Liquid Feedback or Audrey Tang’s quadratic voting in vTaiwan? Those are geared to action, and seem more immediately useful towards solving global issues, don’t they?\n\nI’ll be hanging out in the Discord server, you can too (invite link), and going through Gordon Brander’s earlier postings, to see if I can better understand what this is about."
+              }
+            ],
+            "category": [
+              "noosphere",
+              "tft",
+              "thinking",
+              "tools for thought"
+            ]
+          },
+          "id": "post-22096"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Communicating with GPT-3"
+            ],
+            "url": [
+              "https://www.zylstra.org/blog/2022/08/communicating-with-gpt-3/",
+              "https://www.zylstra.org/blog/2022/08/communicating-with-gpt-3/"
+            ],
+            "updated": [
+              "2022-08-10T22:17:43+02:00"
+            ],
+            "published": [
+              "2022-08-10T22:17:43+02:00"
+            ],
+            "author": [
+              "Ton Zijlstra",
+              "Ton Zijlstra"
+            ],
+            "content": [
+              {
+                "html": "<p><svg xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 384 512\" width=\"12\" height=\"17\"><path d=\"M0 512V48C0 21.49 21.49 0 48 0h288c26.51 0 48 21.49 48 48v464L192 400 0 512z\"></path></svg> <em>Bookmarked <a class=\"u-bookmark-of\" href=\"https://escapingflatland.substack.com/p/gpt-3\">Using GPT-3 to augment human intelligence: Learning through open-ended conversations with large language models</a> by Henrik Olof Karlsson</em></p>\n<p>Wow, this essay comes with a bunch of examples of using the <a href=\"https://en.wikipedia.org/wiki/GPT-3\">GPT-3</a> language model in such fascinating ways. Have it stage a discussion between two famous innovators and duke it out over a fundamental question, run your ideas by an impersonation of Steve Jobs, use it to first explore a new domain to you (while being aware that GPT-3 will likely confabulate a bunch of nonsense). Just wow.<br>\nSome immediate points:</p>\n<ul>\n<li>Karlsson talks about prompt engineering, to make the model spit out what you want more closely. Prompt design is an important feature in large scale listening, to tap into a rich interpreted stream of narrated experiences. I can do prompt design to get people to share their experiences, and it would be fascinating to try that experience out on GPT-3.</li>\n<li>He mentions <a href=\"https://interconnected.org/home/2020/09/04/idea_machine\">Matt Webbs 2020 post</a> about prompting, quoting “<em>it’s down to the human user to interview GPT-3</em>“. This morning I’ve started reading <a href=\"https://luhmann.surge.sh/communicating-with-slip-boxes\">Luhmann’s Communicating with Slip Boxes</a> with a view to annotation. Luhmann talks about the need for his notes collection to be thematically open ended, and the factual status or not of information to be a result of the moment of communication. GPT-3 is trained with the internet, and it hallucinates. Now here we are communicating with it, interviewing it, to elicit new thoughts, ideas and perspectives, similar to what Luhmann evocatively describes as communication with his notes. That GPT-3 results can be totally bogus is much less relevant as it’s the interaction that leads to new notions within yourself, and you’re not after using GPT-3s output as fact or as a finished result.</li>\n<li>Are all of us building notes collections, especially those mimicking Luhmann as if it was the originator of such systems of note taking, actually better off learning to prompt and interrogate GPT-3?</li>\n<li>Karlsson writes about treating GPT-3 as an <em>interface</em> to the internet, which allows using GPT-3 as a research assistant. In a much more specific way than he describes this is what <a href=\"https://www.zylstra.org/blog/2022/08/22024/\">the tool Elicit</a> I just mentioned here does based on GPT-3 too. You give Elicit your research question as a prompt and it will come up with relevant papers that may help answer it.</li>\n</ul>\n<p>On first reading this is like opening a treasure trove, albeit a boobytrapped one. Need to go through this in much more detail and follow up on sources and associations.</p>\n<blockquote>\n<p>Some people already do most of their learning by prompting GPT-3 to write custom-made essays about things they are trying to understand. I’ve talked to people who prompt GPT-3 to give them legal advice and diagnose their illnesses. I’ve talked to men who let their five-year-olds hang out with GPT-3, treating it as an eternally patient uncle, answering questions, while dad gets on with work.</p>\n<p>Henrik Olof Karlsson</p>\n</blockquote>",
+                "value": "Bookmarked Using GPT-3 to augment human intelligence: Learning through open-ended conversations with large language models by Henrik Olof Karlsson\nWow, this essay comes with a bunch of examples of using the GPT-3 language model in such fascinating ways. Have it stage a discussion between two famous innovators and duke it out over a fundamental question, run your ideas by an impersonation of Steve Jobs, use it to first explore a new domain to you (while being aware that GPT-3 will likely confabulate a bunch of nonsense). Just wow.\nSome immediate points:\n\nKarlsson talks about prompt engineering, to make the model spit out what you want more closely. Prompt design is an important feature in large scale listening, to tap into a rich interpreted stream of narrated experiences. I can do prompt design to get people to share their experiences, and it would be fascinating to try that experience out on GPT-3.\nHe mentions Matt Webbs 2020 post about prompting, quoting “it’s down to the human user to interview GPT-3“. This morning I’ve started reading Luhmann’s Communicating with Slip Boxes with a view to annotation. Luhmann talks about the need for his notes collection to be thematically open ended, and the factual status or not of information to be a result of the moment of communication. GPT-3 is trained with the internet, and it hallucinates. Now here we are communicating with it, interviewing it, to elicit new thoughts, ideas and perspectives, similar to what Luhmann evocatively describes as communication with his notes. That GPT-3 results can be totally bogus is much less relevant as it’s the interaction that leads to new notions within yourself, and you’re not after using GPT-3s output as fact or as a finished result.\nAre all of us building notes collections, especially those mimicking Luhmann as if it was the originator of such systems of note taking, actually better off learning to prompt and interrogate GPT-3?\nKarlsson writes about treating GPT-3 as an interface to the internet, which allows using GPT-3 as a research assistant. In a much more specific way than he describes this is what the tool Elicit I just mentioned here does based on GPT-3 too. You give Elicit your research question as a prompt and it will come up with relevant papers that may help answer it.\n\nOn first reading this is like opening a treasure trove, albeit a boobytrapped one. Need to go through this in much more detail and follow up on sources and associations.\nSome people already do most of their learning by prompting GPT-3 to write custom-made essays about things they are trying to understand. I’ve talked to people who prompt GPT-3 to give them legal advice and diagnose their illnesses. I’ve talked to men who let their five-year-olds hang out with GPT-3, treating it as an eternally patient uncle, answering questions, while dad gets on with work.\nHenrik Olof Karlsson"
+              }
+            ],
+            "bookmark-of": [
+              "https://escapingflatland.substack.com/p/gpt-3"
+            ],
+            "category": [
+              "gpt3",
+              "learning",
+              "pkm",
+              "research"
+            ]
+          },
+          "id": "post-22027"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Electric Drummer Outliner Handles OPML Includes"
+            ],
+            "url": [
+              "https://www.zylstra.org/blog/2022/08/electric-drummer-outliner-handles-opml-includes/",
+              "https://www.zylstra.org/blog/2022/08/electric-drummer-outliner-handles-opml-includes/"
+            ],
+            "updated": [
+              "2022-08-03T21:26:01+02:00"
+            ],
+            "published": [
+              "2022-08-03T21:26:01+02:00"
+            ],
+            "author": [
+              "Ton Zijlstra",
+              "Ton Zijlstra"
+            ],
+            "content": [
+              {
+                "html": "<p>Yesterday, <a href=\"https://www.zylstra.org/blog/2022/08/are-you-aware-of-any-open-web-social-graphs/\">musing about traversing my social graph through blogrolls</a>, I suggested using OPML’s include attribute as a way of adding the blogrolls of the blogs I follow in my own blogroll. Ideally using a spec compliant OPML reader, you’d be able to seamlessly navigate from my blogroll, through the blogroll of one of the blogs I follow, to the blogroll of someone they follow, and presumably back to me at some point.<br>\nIt does require having an OPML version of such blogrolls available. <a href=\"https://ruk.ca/\">Peter</a> publishes his blogroll as OPML as I do, allowing a first simple experiment: do includes get correctly parsed in some of the Outliner tools I have?</p>\n<h2>Adding an include into my OPML file</h2>\n<p>This little experiment starts with adding to <a href=\"https://zylstra.org/opml/tonzylstra.opml\">my list of RSS feeds I follow</a> a reference to <a href=\"https://images.ruk.ca/opml/peter_rukavina_blogroll.opml\">Peter’s own OPML file</a> of feeds he follows. I already follow two of Peter’s RSS feeds (blogposts and favourites) which I now placed in their own subfolder and to which I added an outline node of the include type, with the URL of Peter’s OPML file.</p>\n<p><a href=\"https://www.zylstra.org/wp/wp-content/uploads/2022/08/opmlsourcefile.png\"><img loading=\"lazy\" src=\"https://www.zylstra.org/wp/wp-content/uploads/2022/08/opmlsourcefile-640x252.png\" alt=\"\" width=\"640\" height=\"252\" class=\"aligncenter size-large wp-image-21996\" srcset=\"https://www.zylstra.org/wp/wp-content/uploads/2022/08/opmlsourcefile-640x252.png 640w, https://www.zylstra.org/wp/wp-content/uploads/2022/08/opmlsourcefile-300x118.png 300w, https://www.zylstra.org/wp/wp-content/uploads/2022/08/opmlsourcefile-768x302.png 768w, https://www.zylstra.org/wp/wp-content/uploads/2022/08/opmlsourcefile-1536x604.png 1536w, https://www.zylstra.org/wp/wp-content/uploads/2022/08/opmlsourcefile-2048x805.png 2048w, https://www.zylstra.org/wp/wp-content/uploads/2022/08/opmlsourcefile-668x263.png 668w\" sizes=\"(max-width: 640px) 100vw, 640px\"></a><br><em>Screenshot of my OPML file listing the RSS feeds I follow. Click to enlarge. On line 22 you see the line that includes Peter’s OPML file by mentioning its URL.</em></p>\n<h2>Trying three outliners</h2>\n<p><strong>Cloud Outliner</strong> (which I in the past used to first create outlines that could then be sent to Evernote) does not parse OPML includes correctly upon import. It also doesn’t maintain any additional attributes from OPML outline nodes, just the text attribute.</p>\n<p><a href=\"https://www.zylstra.org/wp/wp-content/uploads/2022/08/cloudlineropmlimport.png\"><img loading=\"lazy\" src=\"https://www.zylstra.org/wp/wp-content/uploads/2022/08/cloudlineropmlimport-499x640.png\" alt=\"\" width=\"499\" height=\"640\" class=\"aligncenter size-large wp-image-21999\" srcset=\"https://www.zylstra.org/wp/wp-content/uploads/2022/08/cloudlineropmlimport-499x640.png 499w, https://www.zylstra.org/wp/wp-content/uploads/2022/08/cloudlineropmlimport-234x300.png 234w, https://www.zylstra.org/wp/wp-content/uploads/2022/08/cloudlineropmlimport-768x986.png 768w, https://www.zylstra.org/wp/wp-content/uploads/2022/08/cloudlineropmlimport-668x857.png 668w, https://www.zylstra.org/wp/wp-content/uploads/2022/08/cloudlineropmlimport.png 1066w\" sizes=\"(max-width: 499px) 100vw, 499px\"></a><br><em>Screenshot of Cloud Outliner showing incorrect import of my OPML file. Click to enlarge.</em></p>\n<p><strong><a href=\"http://www.eastgate.com/Tinderbox/\">Tinderbox</a></strong> like Cloud Outliner fails to load OPML includes as per spec. It does load some of the attributes (web url, and description, next to the standard text attribute), but not any others (such as the feed url for instance, the crucial element in a list of RSS feeds). It looks like it only picks up on attributes that are directly mappable on pre-existing default attributes within Tinderbox itself.</p>\n<p><a href=\"https://www.zylstra.org/wp/wp-content/uploads/2022/08/tinderboxopmlimport.png\"><img loading=\"lazy\" src=\"https://www.zylstra.org/wp/wp-content/uploads/2022/08/tinderboxopmlimport-640x343.png\" alt=\"\" width=\"640\" height=\"343\" class=\"aligncenter size-large wp-image-21998\" srcset=\"https://www.zylstra.org/wp/wp-content/uploads/2022/08/tinderboxopmlimport-640x343.png 640w, https://www.zylstra.org/wp/wp-content/uploads/2022/08/tinderboxopmlimport-300x161.png 300w, https://www.zylstra.org/wp/wp-content/uploads/2022/08/tinderboxopmlimport-768x411.png 768w, https://www.zylstra.org/wp/wp-content/uploads/2022/08/tinderboxopmlimport-1536x823.png 1536w, https://www.zylstra.org/wp/wp-content/uploads/2022/08/tinderboxopmlimport-668x358.png 668w, https://www.zylstra.org/wp/wp-content/uploads/2022/08/tinderboxopmlimport.png 2042w\" sizes=\"(max-width: 640px) 100vw, 640px\"></a><br><em>Screenshot of how Tinderbox imports my OPML file. It keeps some attributes but ignores most, and for includes just mentions the URL</em></p>\n<p><strong><a href=\"http://docserver.scripting.com/drummer/about.opml\">Electric Drummer</a></strong> does correctly import the entire OPML outline. As Dave Winer is both the original creator of the OPML specification and more recently of the Electric Drummer app, this is consistent. Electric Drummer picks up on all attributes in an imported OPML file. Upon import it also fetches the external OPML files listed as includes from their URLs, and fully incorporates them into the imported outline.</p>\n<p><a href=\"https://www.zylstra.org/wp/wp-content/uploads/2022/08/drummeropmlimport.png\"><img loading=\"lazy\" src=\"https://www.zylstra.org/wp/wp-content/uploads/2022/08/drummeropmlimport-552x640.png\" alt=\"\" width=\"552\" height=\"640\" class=\"aligncenter size-large wp-image-21997\" srcset=\"https://www.zylstra.org/wp/wp-content/uploads/2022/08/drummeropmlimport-552x640.png 552w, https://www.zylstra.org/wp/wp-content/uploads/2022/08/drummeropmlimport-259x300.png 259w, https://www.zylstra.org/wp/wp-content/uploads/2022/08/drummeropmlimport-768x890.png 768w, https://www.zylstra.org/wp/wp-content/uploads/2022/08/drummeropmlimport-1325x1536.png 1325w, https://www.zylstra.org/wp/wp-content/uploads/2022/08/drummeropmlimport-668x774.png 668w, https://www.zylstra.org/wp/wp-content/uploads/2022/08/drummeropmlimport.png 1508w\" sizes=\"(max-width: 552px) 100vw, 552px\"></a><br><em>Screenshot of Drummer, which incorporates the content of Peter’s OPML file I linked to in my OPML file. Click to enlarge.</em></p>\n<h2>Opening up options for tinkering</h2>\n<p>So at least there is 1 general outliner tool that can work with includes. It probably also means that <a href=\"https://github.com/scripting/opmlPackage\">Dave’s OPML package</a> can do the same, which allows me to tinker at script level with this. One candidate for tinkering is, where a blogger has a blogroll, just not in OPML, to use the OPML package to convert scraped HTML to OPML, and include it locally. That allows me to traverse sets of blogrolls and see the overlap, closed triangles, feedback loops etc. I could also extend my own published blogroll by referencing all the published blogrolls of the bloggers I follow. For you my blogroll would then support exploration and discovery one step further outwards in the network. In parallel I can do something similar for <a href=\"https://www.zylstra.org/blog/federated-bookshelves/\">federated bookshelves</a> (both in terms of books as in terms of lists of people who’s booklists and their lists of people you follow)</p>",
+                "value": "Yesterday, musing about traversing my social graph through blogrolls, I suggested using OPML’s include attribute as a way of adding the blogrolls of the blogs I follow in my own blogroll. Ideally using a spec compliant OPML reader, you’d be able to seamlessly navigate from my blogroll, through the blogroll of one of the blogs I follow, to the blogroll of someone they follow, and presumably back to me at some point.\nIt does require having an OPML version of such blogrolls available. Peter publishes his blogroll as OPML as I do, allowing a first simple experiment: do includes get correctly parsed in some of the Outliner tools I have?\nAdding an include into my OPML file\nThis little experiment starts with adding to my list of RSS feeds I follow a reference to Peter’s own OPML file of feeds he follows. I already follow two of Peter’s RSS feeds (blogposts and favourites) which I now placed in their own subfolder and to which I added an outline node of the include type, with the URL of Peter’s OPML file.\n  Screenshot of my OPML file listing the RSS feeds I follow. Click to enlarge. On line 22 you see the line that includes Peter’s OPML file by mentioning its URL.\nTrying three outliners\nCloud Outliner (which I in the past used to first create outlines that could then be sent to Evernote) does not parse OPML includes correctly upon import. It also doesn’t maintain any additional attributes from OPML outline nodes, just the text attribute.\n  Screenshot of Cloud Outliner showing incorrect import of my OPML file. Click to enlarge.\nTinderbox like Cloud Outliner fails to load OPML includes as per spec. It does load some of the attributes (web url, and description, next to the standard text attribute), but not any others (such as the feed url for instance, the crucial element in a list of RSS feeds). It looks like it only picks up on attributes that are directly mappable on pre-existing default attributes within Tinderbox itself.\n  Screenshot of how Tinderbox imports my OPML file. It keeps some attributes but ignores most, and for includes just mentions the URL\nElectric Drummer does correctly import the entire OPML outline. As Dave Winer is both the original creator of the OPML specification and more recently of the Electric Drummer app, this is consistent. Electric Drummer picks up on all attributes in an imported OPML file. Upon import it also fetches the external OPML files listed as includes from their URLs, and fully incorporates them into the imported outline.\n  Screenshot of Drummer, which incorporates the content of Peter’s OPML file I linked to in my OPML file. Click to enlarge.\nOpening up options for tinkering\nSo at least there is 1 general outliner tool that can work with includes. It probably also means that Dave’s OPML package can do the same, which allows me to tinker at script level with this. One candidate for tinkering is, where a blogger has a blogroll, just not in OPML, to use the OPML package to convert scraped HTML to OPML, and include it locally. That allows me to traverse sets of blogrolls and see the overlap, closed triangles, feedback loops etc. I could also extend my own published blogroll by referencing all the published blogrolls of the bloggers I follow. For you my blogroll would then support exploration and discovery one step further outwards in the network. In parallel I can do something similar for federated bookshelves (both in terms of books as in terms of lists of people who’s booklists and their lists of people you follow)"
+              }
+            ],
+            "category": [
+              "opml",
+              "rss",
+              "socialgraph",
+              "triangulation"
+            ]
+          },
+          "id": "post-21994"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "RSS Support For MarkDown",
+              "dev Notes for Markdown in RSS"
+            ],
+            "url": [
+              "https://www.zylstra.org/blog/2022/07/rss-support-for-markdown/",
+              "https://www.zylstra.org/blog/2022/07/rss-support-for-markdown/"
+            ],
+            "updated": [
+              "2022-07-23T22:32:17+02:00"
+            ],
+            "published": [
+              "2022-07-23T22:32:17+02:00"
+            ],
+            "author": [
+              "Ton Zijlstra",
+              "Ton Zijlstra"
+            ],
+            "content": [
+              {
+                "html": "<p><svg xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 576 512\" width=\"15\" height=\"12\"><path d=\"M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z\"></path></svg> <em>Favorited <a class=\"u-favorite-of p-name\" href=\"http://scripting.com/2022/07/19/152235.html?title=devNotesForMarkdownInRss\">dev Notes for Markdown in RSS</a> by Dave Winer</em> </p>\n<p>As part of celebrating twenty years of RSS, Dave Winer adds the ability to incorporate markdown in RSS feeds. Essentially this was always possible, but there was no way to tell a RSS reader that something was to be interpreted not as HTML but as Markdown. Doing this makes it possible to provide both HTML and Markdown in the same feed, if Markdown is e.g. the way you’ve written a posting and want to be able to also edit it again in Markdown, and not in HTML. </p>\n<p>After my hiatus I think this is worth an experiment to see if I can generate an RSS feed directly from my markdown notes on my local system. Just like I already can generate OPML feeds and blogposts or website pages from my notes. Chris Aldrich recently asked about using WordPress and Webmention as a way of publishing your own notes with the capability of linking them to other peoples notes. Could RSS play a role there too? Could I provide selected RSS feeds for specific topics directly from my notes? Or for specific people? For them to read along? Is there something here that can play a role in social sharing of annotations, such as Hypothes.is provides? I need to play with this thought. RSS is well understood an broadly used, providing not just HTML but also Markdown through it sounds like a step worth exploring. </p>",
+                "value": "Favorited dev Notes for Markdown in RSS by Dave Winer \nAs part of celebrating twenty years of RSS, Dave Winer adds the ability to incorporate markdown in RSS feeds. Essentially this was always possible, but there was no way to tell a RSS reader that something was to be interpreted not as HTML but as Markdown. Doing this makes it possible to provide both HTML and Markdown in the same feed, if Markdown is e.g. the way you’ve written a posting and want to be able to also edit it again in Markdown, and not in HTML. \nAfter my hiatus I think this is worth an experiment to see if I can generate an RSS feed directly from my markdown notes on my local system. Just like I already can generate OPML feeds and blogposts or website pages from my notes. Chris Aldrich recently asked about using WordPress and Webmention as a way of publishing your own notes with the capability of linking them to other peoples notes. Could RSS play a role there too? Could I provide selected RSS feeds for specific topics directly from my notes? Or for specific people? For them to read along? Is there something here that can play a role in social sharing of annotations, such as Hypothes.is provides? I need to play with this thought. RSS is well understood an broadly used, providing not just HTML but also Markdown through it sounds like a step worth exploring."
+              }
+            ],
+            "favorite-of": [
+              "http://scripting.com/2022/07/19/152235.html?title=devNotesForMarkdownInRss"
+            ],
+            "category": [
+              "markdown",
+              "rss"
+            ]
+          },
+          "id": "post-21968"
+        },
+        {
+          "type": [
+            "h-card"
+          ],
+          "properties": {
+            "photo": [
+              {
+                "value": "https://www.zylstra.org/wp/wp-content/uploads/2012/03/AntonZijlstra_TheGreenLand-150x150.jpg",
+                "alt": ""
+              }
+            ],
+            "url": [
+              "https://www.zylstra.org/blog"
+            ],
+            "uid": [
+              "https://www.zylstra.org/blog"
+            ],
+            "name": [
+              "Ton Zijlstra"
+            ],
+            "note": [
+              "European citizen in a networked world. Based in the Netherlands, living in Europe, working globally. There are no Others. There is just me and many of you.\r\n\r\nI write about how our digital and networked world changes how we work, learn, decide and organize.  I explore the tools and strategies that help us navigate the networked world.  \r\nI am passionate about increasing people's ability to act (knowledge), and their ability to change (learning).  Key-words: open data, open government, fablabs, making, complexity, networked agency, networked learning, ethics by design."
+            ],
+            "country-name": [
+              "Netherlands"
+            ],
+            "email": [
+              "mailto:blog@zylstra.org",
+              "mailto:tonz@protonmail.ch"
+            ],
+            "key": [
+              "http://www.zylstra.org/blog/TonZijlstra _0xFE213A186E5FA4B1_public.asc"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "rels": {
+    "profile": [
+      "http://microformats.org/profile/specs",
+      "http://microformats.org/profile/hatom"
+    ],
+    "microsub": [
+      "https://aperture.p3k.io/microsub/144"
+    ],
+    "dns-prefetch": [
+      "http://s.w.org/"
+    ],
+    "alternate": [
+      "https://www.zylstra.org/blog/feed/",
+      "https://www.zylstra.org/blog/comments/feed/"
+    ],
+    "stylesheet": [
+      "http://www.zylstra.org/wp/wp-content/plugins/category-to-pages-wud/css/category-to-pages-wud.css",
+      "http://www.zylstra.org/wp/wp-content/plugins/category-to-pages-wud/css/jquery.ctp_wud.css",
+      "http://www.zylstra.org/wp/wp-includes/css/dist/block-library/style.min.css?ver=6.0.2",
+      "http://www.zylstra.org/wp/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
+      "http://www.zylstra.org/wp/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3",
+      "http://www.zylstra.org/wp/wp-content/themes/sempress/style.css?ver=6.0.2",
+      "http://www.zylstra.org/wp/wp-content/themes/tonsempress/style.css?ver=6.0.2"
+    ],
+    "https://api.w.org/": [
+      "https://www.zylstra.org/blog/wp-json/"
+    ],
+    "EditURI": [
+      "https://www.zylstra.org/wp/xmlrpc.php?rsd"
+    ],
+    "wlwmanifest": [
+      "http://www.zylstra.org/wp/wp-includes/wlwmanifest.xml"
+    ],
+    "authorization_endpoint": [
+      "https://www.zylstra.org/blog/wp-json/indieauth/1.0/auth"
+    ],
+    "token_endpoint": [
+      "https://www.zylstra.org/blog/wp-json/indieauth/1.0/token"
+    ],
+    "micropub_media": [
+      "https://www.zylstra.org/blog/wp-json/micropub/1.0/media"
+    ],
+    "micropub": [
+      "https://www.zylstra.org/blog/wp-json/micropub/1.0/endpoint"
+    ],
+    "home": [
+      "https://www.zylstra.org/blog/"
+    ],
+    "prev": [
+      "https://www.zylstra.org/blog/page/2/"
+    ],
+    "bookmark": [
+      "https://www.zylstra.org/blog/2022/09/gpt-3-ifying-that-last-blogpost/",
+      "https://www.zylstra.org/blog/2022/09/10-thoughts-after-100-annotations-in-hypothes-is/",
+      "https://www.zylstra.org/blog/2022/08/a-noob-in-the-noosphere/",
+      "https://www.zylstra.org/blog/2022/08/communicating-with-gpt-3/",
+      "https://www.zylstra.org/blog/2022/08/electric-drummer-outliner-handles-opml-includes/",
+      "https://www.zylstra.org/blog/2022/07/rss-support-for-markdown/"
+    ],
+    "author": [
+      "https://www.zylstra.org/blog/about-me/"
+    ],
+    "category": [
+      "https://www.zylstra.org/blog/category/eaap/",
+      "https://www.zylstra.org/blog/category/metablogging/",
+      "https://www.zylstra.org/blog/category/technology/",
+      "https://www.zylstra.org/blog/category/knowledge-management/",
+      "https://www.zylstra.org/blog/category/learning/",
+      "https://www.zylstra.org/blog/category/practices/",
+      "https://www.zylstra.org/blog/category/digital-disruption/",
+      "https://www.zylstra.org/blog/category/linklog/",
+      "https://www.zylstra.org/blog/category/agency/",
+      "https://www.zylstra.org/blog/category/social-networking/"
+    ],
+    "tag": [
+      "https://www.zylstra.org/blog/category/eaap/",
+      "https://www.zylstra.org/blog/category/metablogging/",
+      "https://www.zylstra.org/blog/category/technology/",
+      "https://www.zylstra.org/blog/tag/gpt3/",
+      "https://www.zylstra.org/blog/category/knowledge-management/",
+      "https://www.zylstra.org/blog/category/learning/",
+      "https://www.zylstra.org/blog/category/practices/",
+      "https://www.zylstra.org/blog/tag/annotation/",
+      "https://www.zylstra.org/blog/tag/bookmarks/",
+      "https://www.zylstra.org/blog/tag/hypothesis/",
+      "https://www.zylstra.org/blog/tag/tools/",
+      "https://www.zylstra.org/blog/tag/tools-for-thought/",
+      "https://www.zylstra.org/blog/tag/noosphere/",
+      "https://www.zylstra.org/blog/tag/tft/",
+      "https://www.zylstra.org/blog/tag/thinking/",
+      "https://www.zylstra.org/blog/category/digital-disruption/",
+      "https://www.zylstra.org/blog/category/linklog/",
+      "https://www.zylstra.org/blog/category/agency/",
+      "https://www.zylstra.org/blog/tag/learning/",
+      "https://www.zylstra.org/blog/tag/pkm/",
+      "https://www.zylstra.org/blog/tag/research/",
+      "https://www.zylstra.org/blog/category/social-networking/",
+      "https://www.zylstra.org/blog/tag/opml/",
+      "https://www.zylstra.org/blog/tag/rss/",
+      "https://www.zylstra.org/blog/tag/socialgraph/",
+      "https://www.zylstra.org/blog/tag/triangulation/",
+      "https://www.zylstra.org/blog/tag/markdown/"
+    ],
+    "license": [
+      "http://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "me": [
+      "https://www.zylstra.org/blog",
+      "https://m.tzyl.nl/@ton",
+      "https://twitter.com/ton_zylstra",
+      "https://keybase.io/ton",
+      "https://proto.tzyl.nl/wp/",
+      "https://meso.tzyl.nl/"
+    ],
+    "external": [
+      "https://mastodon.social/@teledyn",
+      "https://geekcompass.com/@jan",
+      "https://indieweb.social/@tchambers",
+      "https://eicker.news/@technews",
+      "https://mastodon.social/@johnjohnston"
+    ],
+    "nofollow": [
+      "https://mastodon.social/@teledyn",
+      "https://geekcompass.com/@jan",
+      "https://indieweb.social/@tchambers",
+      "https://eicker.news/@technews",
+      "https://mastodon.social/@johnjohnston"
+    ],
+    "ugc": [
+      "https://mastodon.social/@teledyn",
+      "https://geekcompass.com/@jan",
+      "https://indieweb.social/@tchambers",
+      "https://eicker.news/@technews",
+      "https://mastodon.social/@johnjohnston"
+    ],
+    "generator": [
+      "http://wordpress.org/"
+    ]
+  },
+  "rel-urls": {
+    "http://microformats.org/profile/specs": {
+      "rels": [
+        "profile"
+      ]
+    },
+    "http://microformats.org/profile/hatom": {
+      "rels": [
+        "profile"
+      ]
+    },
+    "https://aperture.p3k.io/microsub/144": {
+      "rels": [
+        "microsub"
+      ]
+    },
+    "http://s.w.org/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
+    "https://www.zylstra.org/blog/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Interdependent Thoughts » Feed",
+      "type": "application/rss+xml"
+    },
+    "https://www.zylstra.org/blog/comments/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Interdependent Thoughts » Comments Feed",
+      "type": "application/rss+xml"
+    },
+    "http://www.zylstra.org/wp/wp-content/plugins/category-to-pages-wud/css/category-to-pages-wud.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://www.zylstra.org/wp/wp-content/plugins/category-to-pages-wud/css/jquery.ctp_wud.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://www.zylstra.org/wp/wp-includes/css/dist/block-library/style.min.css?ver=6.0.2": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://www.zylstra.org/wp/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://www.zylstra.org/wp/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://www.zylstra.org/wp/wp-content/themes/sempress/style.css?ver=6.0.2": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://www.zylstra.org/wp/wp-content/themes/tonsempress/style.css?ver=6.0.2": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://www.zylstra.org/blog/wp-json/": {
+      "rels": [
+        "https://api.w.org/"
+      ]
+    },
+    "https://www.zylstra.org/wp/xmlrpc.php?rsd": {
+      "rels": [
+        "EditURI"
+      ],
+      "title": "RSD",
+      "type": "application/rsd+xml"
+    },
+    "http://www.zylstra.org/wp/wp-includes/wlwmanifest.xml": {
+      "rels": [
+        "wlwmanifest"
+      ],
+      "type": "application/wlwmanifest+xml"
+    },
+    "https://www.zylstra.org/blog/wp-json/indieauth/1.0/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://www.zylstra.org/blog/wp-json/indieauth/1.0/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://www.zylstra.org/blog/wp-json/micropub/1.0/media": {
+      "rels": [
+        "micropub_media"
+      ]
+    },
+    "https://www.zylstra.org/blog/wp-json/micropub/1.0/endpoint": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://www.zylstra.org/blog/": {
+      "rels": [
+        "home"
+      ],
+      "title": "Interdependent Thoughts",
+      "text": "Interdependent Thoughts"
+    },
+    "https://www.zylstra.org/blog/page/2/": {
+      "rels": [
+        "prev"
+      ],
+      "text": "← Older posts"
+    },
+    "https://www.zylstra.org/blog/2022/09/gpt-3-ifying-that-last-blogpost/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to GPT-3-ifying That Last Blogpost",
+      "text": "GPT-3-ifying That Last Blogpost"
+    },
+    "https://www.zylstra.org/blog/about-me/": {
+      "rels": [
+        "author"
+      ],
+      "title": "Ton Zijlstra",
+      "text": "Ton Zijlstra"
+    },
+    "https://www.zylstra.org/blog/category/eaap/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Ethics as a Practice"
+    },
+    "https://www.zylstra.org/blog/category/metablogging/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "metablogging"
+    },
+    "https://www.zylstra.org/blog/category/technology/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "technology"
+    },
+    "https://www.zylstra.org/blog/tag/gpt3/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "gpt3"
+    },
+    "https://www.zylstra.org/blog/2022/09/10-thoughts-after-100-annotations-in-hypothes-is/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to 10 Thoughts After 100 Annotations in Hypothes.is",
+      "text": "10 Thoughts After 100 Annotations in Hypothes.is"
+    },
+    "https://www.zylstra.org/blog/category/knowledge-management/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "knowledge work"
+    },
+    "https://www.zylstra.org/blog/category/learning/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Learning"
+    },
+    "https://www.zylstra.org/blog/category/practices/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Practices"
+    },
+    "https://www.zylstra.org/blog/tag/annotation/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "annotation"
+    },
+    "https://www.zylstra.org/blog/tag/bookmarks/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "bookmarks"
+    },
+    "https://www.zylstra.org/blog/tag/hypothesis/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "hypothesis"
+    },
+    "https://www.zylstra.org/blog/tag/tools/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "tools"
+    },
+    "https://www.zylstra.org/blog/tag/tools-for-thought/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "tools for thought"
+    },
+    "https://www.zylstra.org/blog/2022/08/a-noob-in-the-noosphere/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to A Noob In The Noosphere",
+      "text": "A Noob In The Noosphere"
+    },
+    "https://www.zylstra.org/blog/tag/noosphere/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "noosphere"
+    },
+    "https://www.zylstra.org/blog/tag/tft/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "tft"
+    },
+    "https://www.zylstra.org/blog/tag/thinking/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "thinking"
+    },
+    "https://www.zylstra.org/blog/2022/08/communicating-with-gpt-3/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to Communicating with GPT-3",
+      "text": "Communicating with GPT-3"
+    },
+    "https://www.zylstra.org/blog/category/digital-disruption/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Digital disruption"
+    },
+    "https://www.zylstra.org/blog/category/linklog/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Linklog"
+    },
+    "https://www.zylstra.org/blog/category/agency/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "networked agency"
+    },
+    "https://www.zylstra.org/blog/tag/learning/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "learning"
+    },
+    "https://www.zylstra.org/blog/tag/pkm/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "pkm"
+    },
+    "https://www.zylstra.org/blog/tag/research/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "research"
+    },
+    "https://www.zylstra.org/blog/2022/08/electric-drummer-outliner-handles-opml-includes/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to Electric Drummer Outliner Handles OPML Includes",
+      "text": "Electric Drummer Outliner Handles OPML Includes"
+    },
+    "https://www.zylstra.org/blog/category/social-networking/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "social networking"
+    },
+    "https://www.zylstra.org/blog/tag/opml/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "opml"
+    },
+    "https://www.zylstra.org/blog/tag/rss/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "rss"
+    },
+    "https://www.zylstra.org/blog/tag/socialgraph/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "socialgraph"
+    },
+    "https://www.zylstra.org/blog/tag/triangulation/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "triangulation"
+    },
+    "https://www.zylstra.org/blog/2022/07/rss-support-for-markdown/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to RSS Support For MarkDown",
+      "text": "RSS Support For MarkDown"
+    },
+    "https://www.zylstra.org/blog/tag/markdown/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "markdown"
+    },
+    "http://creativecommons.org/licenses/by-sa/4.0/": {
+      "rels": [
+        "license"
+      ]
+    },
+    "https://www.zylstra.org/blog": {
+      "rels": [
+        "me"
+      ],
+      "text": "Interdependent Thoughts"
+    },
+    "https://m.tzyl.nl/@ton": {
+      "rels": [
+        "me"
+      ],
+      "text": "@ton@m.tzyl.nl"
+    },
+    "https://twitter.com/ton_zylstra": {
+      "rels": [
+        "me"
+      ],
+      "text": "@ton_zylstra"
+    },
+    "https://keybase.io/ton": {
+      "rels": [
+        "me"
+      ],
+      "text": "keybase.io/ton"
+    },
+    "https://proto.tzyl.nl/wp/": {
+      "rels": [
+        "me"
+      ],
+      "text": "Proto"
+    },
+    "https://meso.tzyl.nl/": {
+      "rels": [
+        "me"
+      ],
+      "text": "Meso WP"
+    },
+    "https://mastodon.social/@teledyn": {
+      "rels": [
+        "external",
+        "nofollow",
+        "ugc"
+      ],
+      "text": "teledyn"
+    },
+    "https://geekcompass.com/@jan": {
+      "rels": [
+        "external",
+        "nofollow",
+        "ugc"
+      ],
+      "text": "Jan Boddez"
+    },
+    "https://indieweb.social/@tchambers": {
+      "rels": [
+        "external",
+        "nofollow",
+        "ugc"
+      ],
+      "text": "Tim Chambers"
+    },
+    "https://eicker.news/@technews": {
+      "rels": [
+        "external",
+        "nofollow",
+        "ugc"
+      ],
+      "text": "eicker.news #technews"
+    },
+    "https://mastodon.social/@johnjohnston": {
+      "rels": [
+        "external",
+        "nofollow",
+        "ugc"
+      ],
+      "text": "John Johnston"
+    },
+    "http://wordpress.org/": {
+      "rels": [
+        "generator"
+      ],
+      "text": "WordPress"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "items": [],
+  "rels": {
+    "openid.server": [
+      "https://indieauth.com/openid"
+    ],
+    "openid.delegate": [
+      "http://comandich.com/"
+    ],
+    "me": [
+      "https://github.com/kcomandich",
+      "https://twitter.com/kcomandich",
+      "https://www.last.fm/user/kcomandich",
+      "https://www.flickr.com/photos/kcomandich/"
+    ]
+  },
+  "rel-urls": {
+    "https://indieauth.com/openid": {
+      "rels": [
+        "openid.server"
+      ]
+    },
+    "http://comandich.com/": {
+      "rels": [
+        "openid.delegate"
+      ]
+    },
+    "https://github.com/kcomandich": {
+      "rels": [
+        "me"
+      ],
+      "text": "github"
+    },
+    "https://twitter.com/kcomandich": {
+      "rels": [
+        "me"
+      ],
+      "text": "twitter"
+    },
+    "https://www.last.fm/user/kcomandich": {
+      "rels": [
+        "me"
+      ],
+      "text": "last.fm"
+    },
+    "https://www.flickr.com/photos/kcomandich/": {
+      "rels": [
+        "me"
+      ],
+      "text": "flickr"
+    }
+  }
+}

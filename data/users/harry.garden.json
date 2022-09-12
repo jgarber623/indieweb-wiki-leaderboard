@@ -1,0 +1,74 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "photo": [
+          {
+            "value": "http://harry.garden/assets/images/harry_pic.jpeg",
+            "alt": "My profile photo"
+          }
+        ],
+        "name": [
+          "Harry Coburn"
+        ],
+        "note": [
+          "...and I am a human on the Internet."
+        ],
+        "uid": [
+          "http://harry.garden/"
+        ],
+        "url": [
+          "http://harry.garden/",
+          "https://github.com/HarryCoburn"
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "stylesheet": [
+      "https://harry.garden/garden.css"
+    ],
+    "me": [
+      "https://github.com/HarryCoburn",
+      "mailto:harryjcoburn@gmail.com"
+    ]
+  },
+  "rel-urls": {
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://harry.garden/garden.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://github.com/HarryCoburn": {
+      "rels": [
+        "me"
+      ],
+      "text": "GitHub: @HarryCoburn"
+    },
+    "mailto:harryjcoburn@gmail.com": {
+      "rels": [
+        "me"
+      ],
+      "text": "harryjcoburn@gmail.com"
+    }
+  }
+}

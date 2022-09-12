@@ -1,0 +1,271 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "url": [
+          "https://kam.black/"
+        ],
+        "name": [
+          "Kam Black"
+        ],
+        "photo": [
+          {
+            "value": "https://robohash.org/kam",
+            "alt": "robohash image acting as kam's profile photo"
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-feed"
+      ],
+      "properties": {},
+      "children": [
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Goals for 2020"
+            ],
+            "url": [
+              "https://kam.black/posts/2020/goals-for-2020/"
+            ],
+            "published": [
+              "Thu Jan 02 2020 21:30:10 GMT+0000 (Coordinated Universal Time)"
+            ],
+            "content": [
+              {
+                "html": "<ul>\n<li>\n<strong>Keep up with church curriculum</strong>\n<ul>\n<li>While this seems like a lot of extra work, it'll be worthwhile. If I can stick with this, it will enable me to be my best self in all the other areas.</li>\n</ul>\n</li>\n<li>\n<strong>Don’t start anything new during school</strong>\n<ul>\n<li>I am already spending all the extra time I have and then some by both trying to go to school full time and working full time. If I come across some new media, I won’t start going through it until I have the time to.</li>\n</ul>\n</li>\n<li>\n<strong>Wake up on time each day</strong>\n<ul>\n<li>Should go without saying, but starting the day off right enables everything else.</li>\n</ul>\n</li>\n<li>\n<strong>Go on at least 3 adventures</strong>\n<ul>\n<li>I don’t want to be stuck behind a desk all year. At least three times I will go on an out-of-town trip of some kind and try something new in the process.</li>\n</ul>\n</li>\n<li>\n<strong>Complete at least 3 side projects</strong>\n<ul>\n<li>Side projects are sometimes catalysts that progress a career. Whether they're a side hustle that brings in income or simply portfolio pieces, they are fun and worthwhile.</li>\n</ul>\n</li>\n<li>\n<strong>Begin storytelling project</strong>\n<ul>\n<li>I’ve wanted to tell longform stories online for years. Why wait? This might overlap with side projects.</li>\n</ul>\n</li>\n<li>\n<strong>Graduate at least once</strong>\n<ul>\n<li>This is a little tongue-in-cheek, but I intend to close out my work with the digital communication major at school and fully pivot to something like humanities.</li>\n</ul>\n</li>\n</ul>\n\n                <a class=\"visually-hidden u-syndication\" href=\"https://brid.gy/publish/twitter\"> </a>",
+                "value": "Keep up with church curriculum\n\nWhile this seems like a lot of extra work, it'll be worthwhile. If I can stick with this, it will enable me to be my best self in all the other areas.\n\n\nDon’t start anything new during school\n\nI am already spending all the extra time I have and then some by both trying to go to school full time and working full time. If I come across some new media, I won’t start going through it until I have the time to.\n\n\nWake up on time each day\n\nShould go without saying, but starting the day off right enables everything else.\n\n\nGo on at least 3 adventures\n\nI don’t want to be stuck behind a desk all year. At least three times I will go on an out-of-town trip of some kind and try something new in the process.\n\n\nComplete at least 3 side projects\n\nSide projects are sometimes catalysts that progress a career. Whether they're a side hustle that brings in income or simply portfolio pieces, they are fun and worthwhile.\n\n\nBegin storytelling project\n\nI’ve wanted to tell longform stories online for years. Why wait? This might overlap with side projects.\n\n\nGraduate at least once\n\nThis is a little tongue-in-cheek, but I intend to close out my work with the digital communication major at school and fully pivot to something like humanities.\n\n\n\n\n                 "
+              }
+            ],
+            "syndication": [
+              "https://brid.gy/publish/twitter"
+            ],
+            "category": [
+              "blog"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Tip 035 - Going with the Flow"
+            ],
+            "url": [
+              "https://kam.black/posts/2019/tip-035-going-with-the-flow/"
+            ],
+            "published": [
+              "Tue Oct 15 2019 16:30:10 GMT+0000 (Coordinated Universal Time)"
+            ],
+            "content": [
+              {
+                "html": "<p>Last time we covered the basics of flow layout - including inline vs block elements and flow vs writing direction. Flow layout is the default for an element without any CSS involved. On top of this, there are user agent styles - some bare-bones, core CSS that each browser writes themselves that comes default on top of flow layout. This produces the basic margins between paragraphs, for example.</p>\n<p>Flow layout is automatically adaptive and accessible, right out of the box. Text wraps around as the blocks get smaller, buttons look like buttons while links look like links, headers have a visual hierarchy, and text is black on white, with easy-to-read serifs. Covering all this with swaths of CSS to create our own layouts, aesthetics, and brands brings us a lot of power. But you know what they say about power and responsibility.</p>\n<p>As we change the fonts, colors, and aesthetic, we need to be sure and maintain legibility and accessibility. Likewise, we have a number of tools at our disposal to replace or disregard the basic flow layout. As we do, we need to maintain a logical progression of the source order as well as the visual elements on screen. With these warnings out of the way, here are some ways to screw with the flow:</p>\n<dl>\n<dt>Floats</dt>\n<dd>Adding a declaration of <code>float: left;</code> or <code>float: right;</code> takes the element in question out of the flow, aligning it on one side of the writing direction or the other, but text and other inline elements will continue to wrap themselves around it. Ideal usage is for images within a paragraph. Requires a <code>clear</code> rule to keep the floated thing from behaving too weirdly.</dd>\n<dt>Hidden via Visibility or Display</dt>\n<dd>A <code>visibility</code> declaration other than the default or <code>display: none;</code> can remove an element entirely. Depending on the value for <code>visibility</code>, you can choose to keep the space where the element was available or not. <code>display: none;</code> removes something from the DOM entirely - far more drastic than taking something out of flow. Use this wisely.</dd>\n<dt>Absolute or Fixed Positioning</dt>\n<dd>Setting something with <code>position: absolute;</code> or <code>position: fixed;</code> will pop the thing out of flow, and place it precisely where you want, relative to either the window or a parent element, depending on your markup. I've seen sites that, in their quest for pixel perfection, absolutely positioned every single element in the DOM to be precisely where they wanted it. Please don't do this. Use with soberness.</dd>\n<dt>Flexbox</dt>\n<dd>Getting into the good stuff - if you set <code>display: flex;</code> on something, it does nothing to that element, besides making it act like a block element if it didn't before. (Quick tip: if you need flex, but you need the container to act inline, <code>display: inline-flex;</code> is your friend) Setting flexbox only affects the direct children of that element - in flex's case, they will all pack together in a line along the writing direction, or whatever <code>flex-direction</code> you've set. Watch that source order there.</dd>\n<dt>Grid</dt>\n<dd>Just like flexbox, setting <code>display: grid;</code> doesn't do anything besides making the element behave like a block. (Pro-tip, <code>inline-grid</code> is a thing too, see above) It just changes the way the direct children behave. Instead of flow, they will position themselves based on an auto-generated grid - which by default is only one column wide, so it might look an awful lot like flow until you add more columns. (Albeit things that should be inline acting like blocks) Source order can get weird too - both grid and flex have <code>order</code> but grid also has things like <code>grid-auto-flow</code> which can change the way the browser decides how to order things within the grid.</dd>\n</dl>\n\n                <a class=\"visually-hidden u-syndication\" href=\"https://brid.gy/publish/twitter\"> </a>",
+                "value": "Last time we covered the basics of flow layout - including inline vs block elements and flow vs writing direction. Flow layout is the default for an element without any CSS involved. On top of this, there are user agent styles - some bare-bones, core CSS that each browser writes themselves that comes default on top of flow layout. This produces the basic margins between paragraphs, for example.\nFlow layout is automatically adaptive and accessible, right out of the box. Text wraps around as the blocks get smaller, buttons look like buttons while links look like links, headers have a visual hierarchy, and text is black on white, with easy-to-read serifs. Covering all this with swaths of CSS to create our own layouts, aesthetics, and brands brings us a lot of power. But you know what they say about power and responsibility.\nAs we change the fonts, colors, and aesthetic, we need to be sure and maintain legibility and accessibility. Likewise, we have a number of tools at our disposal to replace or disregard the basic flow layout. As we do, we need to maintain a logical progression of the source order as well as the visual elements on screen. With these warnings out of the way, here are some ways to screw with the flow:\n\nFloats\nAdding a declaration of float: left; or float: right; takes the element in question out of the flow, aligning it on one side of the writing direction or the other, but text and other inline elements will continue to wrap themselves around it. Ideal usage is for images within a paragraph. Requires a clear rule to keep the floated thing from behaving too weirdly.\nHidden via Visibility or Display\nA visibility declaration other than the default or display: none; can remove an element entirely. Depending on the value for visibility, you can choose to keep the space where the element was available or not. display: none; removes something from the DOM entirely - far more drastic than taking something out of flow. Use this wisely.\nAbsolute or Fixed Positioning\nSetting something with position: absolute; or position: fixed; will pop the thing out of flow, and place it precisely where you want, relative to either the window or a parent element, depending on your markup. I've seen sites that, in their quest for pixel perfection, absolutely positioned every single element in the DOM to be precisely where they wanted it. Please don't do this. Use with soberness.\nFlexbox\nGetting into the good stuff - if you set display: flex; on something, it does nothing to that element, besides making it act like a block element if it didn't before. (Quick tip: if you need flex, but you need the container to act inline, display: inline-flex; is your friend) Setting flexbox only affects the direct children of that element - in flex's case, they will all pack together in a line along the writing direction, or whatever flex-direction you've set. Watch that source order there.\nGrid\nJust like flexbox, setting display: grid; doesn't do anything besides making the element behave like a block. (Pro-tip, inline-grid is a thing too, see above) It just changes the way the direct children behave. Instead of flow, they will position themselves based on an auto-generated grid - which by default is only one column wide, so it might look an awful lot like flow until you add more columns. (Albeit things that should be inline acting like blocks) Source order can get weird too - both grid and flex have order but grid also has things like grid-auto-flow which can change the way the browser decides how to order things within the grid.\n\n\n                 "
+              }
+            ],
+            "syndication": [
+              "https://brid.gy/publish/twitter"
+            ],
+            "category": [
+              "tips"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Tip 034 - Flow Layout"
+            ],
+            "url": [
+              "https://kam.black/posts/2019/tip-034-flow-layout/"
+            ],
+            "published": [
+              "Thu Oct 10 2019 16:30:10 GMT+0000 (Coordinated Universal Time)"
+            ],
+            "content": [
+              {
+                "html": "<p>What will follow is a summary of the fundamentals you need to understand in order to use CSS to its fullest extent to create amazing layouts on the web. I'm not pretending to be an expert - as I've alluded to in previous posts, one of the best ways for me to learn something is to write about it, and try to teach it with clarity. Let's begin with what it means when we talk about a block element as opposed to an inline element.</p>\n<h2>Block vs Inline</h2>\n<p>Everything on the web is a box, or at least takes the shape of a box originally. If you were to strip out all the styling from a web page and look at its bare bones, it would be a series of boxes stacked on top of each other. Inside those boxes are yet more boxes, some of them stacked sideways instead. Let's use a paragraph (<code>&lt;p&gt;</code>) as an example.</p>\n<pre><code>&lt;p&gt;\n  Lorem ipsum dolor sit amet, &lt;a&gt;consetetur sadipscing elitr&lt;/a&gt;, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.\n&lt;/p&gt;\n</code></pre>\n<p>The resulting code on the page would be boring indeed, true. These are the basics, remember. In this example, the paragraph is a block-level element. It takes up the whole of the available horizontal space on the page. If you were to add another paragraph, it would appear below the first one, because there's no more room to the side. Also, being another block element, it would want to take up all the space it can anyway.</p>\n<p>Vertically, it's a different story. A paragraph will only take up as much room as it needs, which is almost always going to be determined by the amount of text inside that paragraph. If there weren't so much space horizontally, the paragraph would be taller because the text inside would wrap more.</p>\n<p>Inline elements behave differently. In our example, the anchor (<code>&lt;a&gt;</code>), as well as the text around it, is considered an inline element. It does not volunteer to take all the space a block element does, as it only takes what it needs, in both directions. It may even wrap, splitting the element into multiple pieces, if the text in the link were close enough to the edge.</p>\n<p>Inline elements will ignore any extra spacing you give it vertically. Otherwise, the rest of the line before and after it would be unaligned. However, you can add extra space horizontally, giving the element more room before and after it.</p>\n<p>(There's another display mode you can apply to something called <code>inline-block</code>. This ends up being a hybrid of the two. It appears inline, alongside all the other inline and inline-block elements around. The difference is that it will actually respect the spacing you give it vertically, as a block element would.)</p>\n<h2>Flow Direction and Writing Direction</h2>\n<p>Before we get much further (tomorrow's tip anyway), I want to clarify something about block and inline elements. When describing how much space these elements use and which rules they respect, I've been talking about the space in terms of horizontal and vertical space. From now on, I'll be referring to those axes as the flow direction (the axis along which paragraphs will stack on top of each other, or block) and the writing direction (the axis along which one word comes after another, or inline).</p>\n<p>There are situations where you may end up working with a language that does not have the same reading orientation or direction, and in these circumstances, you would set a different <code>writing-mode</code> in CSS. This will change the entire flow direction. By default a series of paragraphs may start at the top of the screen and go down, but another language would have those paragraphs starting on the right, sideways, and progressing to the left. In this case, for example, the flow direction is to the left and the paragraphs now take all the available space in the <em>writing direction</em>, which is the vertical space.</p>\n<p>While you may not end up working with different languages like these, there are design decisions that might involve changing the writing mode for a piece of the page. By thinking in flow direction instead of rigidly thinking in vertical terms, you can save yourself some troubleshooting headaches down the line. It also helps to think of everything on the web as being relative. As opposed to print or other media, we don't have any control over how our users consume this content, so we can't design anything with a particular context in mind. We somehow have to create designs and layouts that adapt to any circumstance, and thinking about the flow axes in this way helps to bolster that mindset.</p>\n<p>Part 2 coming next time...</p>\n\n                <a class=\"visually-hidden u-syndication\" href=\"https://brid.gy/publish/twitter\"> </a>",
+                "value": "What will follow is a summary of the fundamentals you need to understand in order to use CSS to its fullest extent to create amazing layouts on the web. I'm not pretending to be an expert - as I've alluded to in previous posts, one of the best ways for me to learn something is to write about it, and try to teach it with clarity. Let's begin with what it means when we talk about a block element as opposed to an inline element.\nBlock vs Inline\nEverything on the web is a box, or at least takes the shape of a box originally. If you were to strip out all the styling from a web page and look at its bare bones, it would be a series of boxes stacked on top of each other. Inside those boxes are yet more boxes, some of them stacked sideways instead. Let's use a paragraph (<p>) as an example.\n<p>\n  Lorem ipsum dolor sit amet, <a>consetetur sadipscing elitr</a>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.\n</p>\n\nThe resulting code on the page would be boring indeed, true. These are the basics, remember. In this example, the paragraph is a block-level element. It takes up the whole of the available horizontal space on the page. If you were to add another paragraph, it would appear below the first one, because there's no more room to the side. Also, being another block element, it would want to take up all the space it can anyway.\nVertically, it's a different story. A paragraph will only take up as much room as it needs, which is almost always going to be determined by the amount of text inside that paragraph. If there weren't so much space horizontally, the paragraph would be taller because the text inside would wrap more.\nInline elements behave differently. In our example, the anchor (<a>), as well as the text around it, is considered an inline element. It does not volunteer to take all the space a block element does, as it only takes what it needs, in both directions. It may even wrap, splitting the element into multiple pieces, if the text in the link were close enough to the edge.\nInline elements will ignore any extra spacing you give it vertically. Otherwise, the rest of the line before and after it would be unaligned. However, you can add extra space horizontally, giving the element more room before and after it.\n(There's another display mode you can apply to something called inline-block. This ends up being a hybrid of the two. It appears inline, alongside all the other inline and inline-block elements around. The difference is that it will actually respect the spacing you give it vertically, as a block element would.)\nFlow Direction and Writing Direction\nBefore we get much further (tomorrow's tip anyway), I want to clarify something about block and inline elements. When describing how much space these elements use and which rules they respect, I've been talking about the space in terms of horizontal and vertical space. From now on, I'll be referring to those axes as the flow direction (the axis along which paragraphs will stack on top of each other, or block) and the writing direction (the axis along which one word comes after another, or inline).\nThere are situations where you may end up working with a language that does not have the same reading orientation or direction, and in these circumstances, you would set a different writing-mode in CSS. This will change the entire flow direction. By default a series of paragraphs may start at the top of the screen and go down, but another language would have those paragraphs starting on the right, sideways, and progressing to the left. In this case, for example, the flow direction is to the left and the paragraphs now take all the available space in the writing direction, which is the vertical space.\nWhile you may not end up working with different languages like these, there are design decisions that might involve changing the writing mode for a piece of the page. By thinking in flow direction instead of rigidly thinking in vertical terms, you can save yourself some troubleshooting headaches down the line. It also helps to think of everything on the web as being relative. As opposed to print or other media, we don't have any control over how our users consume this content, so we can't design anything with a particular context in mind. We somehow have to create designs and layouts that adapt to any circumstance, and thinking about the flow axes in this way helps to bolster that mindset.\nPart 2 coming next time...\n\n                 "
+              }
+            ],
+            "syndication": [
+              "https://brid.gy/publish/twitter"
+            ],
+            "category": [
+              "tips"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Tip 033 - More on Flexbox"
+            ],
+            "url": [
+              "https://kam.black/posts/2019/tip-033-more-on-flexbox/"
+            ],
+            "published": [
+              "Wed Oct 09 2019 16:30:00 GMT+0000 (Coordinated Universal Time)"
+            ],
+            "content": [
+              {
+                "html": "<p>I wrote a little bit about <code>flex-basis</code> a month or two ago, but I suppose at the time it hadn't quite sunk in the sheer power of flexbox, and by extension, CSS as a whole. I figure this thought experiment is worth a whole blog post, so I'll save most of the pontificating for that and get to the point here.</p>\n<p>Flexbox gives you a lot of options, both to be applied to the flex parent (the element with <code>display:flex</code>) and to the flex children (the direct children of <code>display:flex</code>). On the parent, you have options like which direction you want things to flow, how the items should align and justify themselves, and how the items will wrap to different lines. On the children you can define the order they display themselves, how much they're allowed to grow and shrink according to the available space, how much space the items will ideally take up, and how each item is aligned unique to the others. There is so much power here to create beautiful, adaptive layouts that resize themselves intrinsically. But to really understand how flexbox works the way it does, we need to talk about how different layout modes work. Specifically, what is \"flow\" and why is it different from flexbox, grid, or floats? What is the actual difference between <code>inline</code> and <code>block</code>? What does CSS do that the browser doesn't already do?</p>\n<p>More on this .... next time.</p>\n\n                <a class=\"visually-hidden u-syndication\" href=\"https://brid.gy/publish/twitter\"> </a>",
+                "value": "I wrote a little bit about flex-basis a month or two ago, but I suppose at the time it hadn't quite sunk in the sheer power of flexbox, and by extension, CSS as a whole. I figure this thought experiment is worth a whole blog post, so I'll save most of the pontificating for that and get to the point here.\nFlexbox gives you a lot of options, both to be applied to the flex parent (the element with display:flex) and to the flex children (the direct children of display:flex). On the parent, you have options like which direction you want things to flow, how the items should align and justify themselves, and how the items will wrap to different lines. On the children you can define the order they display themselves, how much they're allowed to grow and shrink according to the available space, how much space the items will ideally take up, and how each item is aligned unique to the others. There is so much power here to create beautiful, adaptive layouts that resize themselves intrinsically. But to really understand how flexbox works the way it does, we need to talk about how different layout modes work. Specifically, what is \"flow\" and why is it different from flexbox, grid, or floats? What is the actual difference between inline and block? What does CSS do that the browser doesn't already do?\nMore on this .... next time.\n\n                 "
+              }
+            ],
+            "syndication": [
+              "https://brid.gy/publish/twitter"
+            ],
+            "category": [
+              "tips"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Tip 032 - Logic Gate in CSS"
+            ],
+            "url": [
+              "https://kam.black/posts/2019/tip-032-logic-gate-in-css/"
+            ],
+            "published": [
+              "Tue Oct 08 2019 16:30:00 GMT+0000 (Coordinated Universal Time)"
+            ],
+            "content": [
+              {
+                "html": "<p>Here are a few random CSS facts:</p>\n<ul>\n<li>You can use the <code>calc()</code> function to perform mathematics with different numbers and length values.</li>\n<li>CSS is error-resilient - if a line is off, the browser will ignore the one line and continue on.</li>\n<li>Length values might be invalid if they are a negative number</li>\n</ul>\n<p>Get ready for a wild ride today.</p>\n<p>Lets say you really wished CSS was more programmatic, and had something like an if/then statement. Depending on the property you're looking to set and how clever you are about it, you can absolutely do that.</p>\n<p>First off, you can test your condition with a <code>calc()</code> run, usually something like <code>400px - 100%</code>. This will result in either a positive or a negative number, depending on the context of the element. In most cases a negative length is not allowed, and is therefore ignored. A positive value is used normally. Congratulations, you now have some rudimentary logic!</p>\n<p>What's a use case for this? <a href=\"https://css-tricks.com/css-variables-calc-rgb-enforcing-high-contrast-colors/\">Here, this is used to automatically determine an accessible text color based on the background color</a>. And <a href=\"https://www.heydonworks.com/article/the-flexbox-holy-albatross\">here, it's used to help a flexbox layout go straight from three columns to one</a> without <s>all that tedious mucking about in hyperspace</s> passing through a two-column layout in the middle.</p>\n\n                <a class=\"visually-hidden u-syndication\" href=\"https://brid.gy/publish/twitter\"> </a>",
+                "value": "Here are a few random CSS facts:\n\nYou can use the calc() function to perform mathematics with different numbers and length values.\nCSS is error-resilient - if a line is off, the browser will ignore the one line and continue on.\nLength values might be invalid if they are a negative number\n\nGet ready for a wild ride today.\nLets say you really wished CSS was more programmatic, and had something like an if/then statement. Depending on the property you're looking to set and how clever you are about it, you can absolutely do that.\nFirst off, you can test your condition with a calc() run, usually something like 400px - 100%. This will result in either a positive or a negative number, depending on the context of the element. In most cases a negative length is not allowed, and is therefore ignored. A positive value is used normally. Congratulations, you now have some rudimentary logic!\nWhat's a use case for this? Here, this is used to automatically determine an accessible text color based on the background color. And here, it's used to help a flexbox layout go straight from three columns to one without all that tedious mucking about in hyperspace passing through a two-column layout in the middle.\n\n                 "
+              }
+            ],
+            "syndication": [
+              "https://brid.gy/publish/twitter"
+            ],
+            "category": [
+              "tips"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "rels": {
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "webmention": [
+      "https://webmention.io/kam.black/webmention"
+    ],
+    "pingback": [
+      "https://webmention.io/kam.black/xmlrpc"
+    ],
+    "stylesheet": [
+      "https://use.typekit.net/jrf8hww.css",
+      "https://kam.black/src/css/prism.css",
+      "https://kam.black/src/css/main.css"
+    ],
+    "me": [
+      "https://kam.black/",
+      "https://twitter.com/kambowithak",
+      "https://github.com/kamblack",
+      "https://codepen.io/kamblack",
+      "mailto:me@kam.black",
+      "https://kam.black/rss.xml"
+    ]
+  },
+  "rel-urls": {
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://webmention.io/kam.black/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://webmention.io/kam.black/xmlrpc": {
+      "rels": [
+        "pingback"
+      ]
+    },
+    "https://use.typekit.net/jrf8hww.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://kam.black/src/css/prism.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://kam.black/src/css/main.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://kam.black/": {
+      "rels": [
+        "me"
+      ],
+      "text": "Kam Black"
+    },
+    "https://twitter.com/kambowithak": {
+      "rels": [
+        "me"
+      ],
+      "text": "Twitter"
+    },
+    "https://github.com/kamblack": {
+      "rels": [
+        "me"
+      ],
+      "text": "GitHub"
+    },
+    "https://codepen.io/kamblack": {
+      "rels": [
+        "me"
+      ],
+      "text": "CodePen"
+    },
+    "mailto:me@kam.black": {
+      "rels": [
+        "me"
+      ],
+      "text": "Contact"
+    },
+    "https://kam.black/rss.xml": {
+      "rels": [
+        "me"
+      ],
+      "text": "RSS"
+    }
+  }
+}

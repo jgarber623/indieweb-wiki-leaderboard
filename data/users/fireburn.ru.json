@@ -1,0 +1,694 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "photo": [
+          "https://avatars.githubusercontent.com/u/7953163?v=4"
+        ],
+        "url": [
+          "https://fireburn.ru/",
+          "https://gitlab.com/vikanezrimaya",
+          "https://github.com/vikanezrimaya"
+        ],
+        "uid": [
+          "https://fireburn.ru/"
+        ],
+        "name": [
+          "Vika"
+        ],
+        "pronoun": [
+          "she/her"
+        ],
+        "note": [
+          "Programmer, trans, an IndieWeb addict. Doesn't know if she's real or merely a vestige of a past long gone."
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-feed"
+      ],
+      "properties": {
+        "name": [
+          "Main feed"
+        ]
+      },
+      "children": [
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              "https://fireburn.ru/"
+            ],
+            "url": [
+              "https://fireburn.ru/posts/abhcVjd"
+            ],
+            "uid": [
+              "https://fireburn.ru/posts/abhcVjd"
+            ],
+            "published": [
+              "2022-08-26T12:26:59.078311191+03:00"
+            ],
+            "category": [
+              "Kittybox"
+            ],
+            "content": [
+              {
+                "html": "<p>Sometimes you have to scale your ambitions back and go slow to prevent yourself from overworking and subsequently burning out. It is sometimes hard to admit, but it is the truth of this world.</p>",
+                "value": "Sometimes you have to scale your ambitions back and go slow to prevent yourself from overworking and subsequently burning out. It is sometimes hard to admit, but it is the truth of this world."
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              "https://fireburn.ru/"
+            ],
+            "url": [
+              "https://fireburn.ru/posts/aaQaFhZ"
+            ],
+            "uid": [
+              "https://fireburn.ru/posts/aaQaFhZ"
+            ],
+            "published": [
+              "2022-08-14T19:30:56.553764323+03:00"
+            ],
+            "category": [
+              "Kittybox"
+            ],
+            "content": [
+              {
+                "html": "<p>I hate OpenSSL, but the <a href=\"https://crates.io/crates/webauthn-rs\">webauthn-rs</a> crate happens to use it. Ugh. I don’t want to ship C code in Kittybox! But it looks like rewriting the whole webauthn-rs crate to remove OpenSSL dependency might be the only option, if it’s possible at all.</p>",
+                "value": "I hate OpenSSL, but the webauthn-rs crate happens to use it. Ugh. I don’t want to ship C code in Kittybox! But it looks like rewriting the whole webauthn-rs crate to remove OpenSSL dependency might be the only option, if it’s possible at all."
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              "https://fireburn.ru/"
+            ],
+            "url": [
+              "https://fireburn.ru/posts/a_eJ0dk"
+            ],
+            "uid": [
+              "https://fireburn.ru/posts/a_eJ0dk"
+            ],
+            "published": [
+              "2022-08-08T00:28:50.325491087+03:00"
+            ],
+            "content": [
+              {
+                "html": "<p>Oh well. It looks like I tried to implement an asynchronous template system for Rust, but instead of actual templates I ended up manually writing a stream of <code>Bytes</code> instances. It takes 10 times as much space as its output. But it’s asynchronous, and I expect that TTFB for, say, a large feed, would be much better with it.</p>\n\n<p>For completeness, here is one template I wrote. It should’ve been an h-card.</p>\n\n<pre><code>pub fn card(mut mf2: serde_json::Value) -&gt; impl Stream&lt;Item = Bytes&gt; + Unpin + Send {\n    let uid: String = match mf2[\"properties\"][\"uid\"][0].take() {\n        serde_json::Value::String(uid) =&gt; uid,\n        _ =&gt; panic!(\"h-card without a uid\")\n    };\n    let photo: Option&lt;String&gt; = match mf2[\"properties\"][\"photo\"][0].take() {\n        serde_json::Value::String(url) =&gt; Some(url),\n        _ =&gt; None\n    };\n    let name: String = match mf2[\"properties\"][\"name\"][0].take() {\n        serde_json::Value::String(name) =&gt; name,\n        _ =&gt; panic!(\"encountered h-card without a name\")\n    };\n    chunk(b\"&lt;article class=\\\"h-card\\\"&gt;\")\n        .chain(futures::stream::once(std::future::ready(\n            match photo {\n                Some(url) =&gt; {\n                    let mut tag = Vec::new();\n                    tag.extend_from_slice(b\"&lt;img class=\\\"u-photo\\\" src=\\\"\");\n                    html_escape::encode_double_quoted_attribute_to_vec(url, &amp;mut tag);\n                    tag.extend_from_slice(b\"\\\" /&gt;\");\n\n                    Bytes::from(tag)\n                },\n                None =&gt; Bytes::new()\n            }\n        )))\n        .chain(futures::stream::once(std::future::ready({\n            let mut buf = Vec::new();\n            buf.extend_from_slice(b\"&lt;h1&gt;&lt;a class=\\\"u-url u-uid p-name\\\" href=\\\"\");\n            html_escape::encode_double_quoted_attribute_to_vec(uid, &amp;mut buf);\n            buf.extend_from_slice(b\"\\\"&gt;\");\n\n            html_escape::encode_text_to_vec(&amp;name, &amp;mut buf);\n\n            buf.extend_from_slice(b\"&lt;/a&gt;&lt;/h1&gt;\");\n\n            Bytes::from(buf)\n        })))\n        .chain(chunk(b\"&lt;/article&gt;\"))\n}</code></pre>\n\n<p>It’s huge. Here is the output it should produce (whitespace is mine):</p>\n\n<pre><code>&lt;article class=\"h-card\"&gt;\n    &lt;img class=\"u-photo\" src=\"https://example.com/media/me.png\" /&gt;\n    &lt;h1&gt;&lt;a class=\"u-url u-uid p-name\" href=\"https://example.com/\"&gt;Jane Doe&lt;/a&gt;&lt;/h1&gt;\n&lt;/article&gt;</code></pre>\n\n<p>I need some sort of macro system to work with these. The idea itself seems good, but the implementation... meh.</p>",
+                "value": "Oh well. It looks like I tried to implement an asynchronous template system for Rust, but instead of actual templates I ended up manually writing a stream of Bytes instances. It takes 10 times as much space as its output. But it’s asynchronous, and I expect that TTFB for, say, a large feed, would be much better with it.\n\nFor completeness, here is one template I wrote. It should’ve been an h-card.\n\npub fn card(mut mf2: serde_json::Value) -> impl Stream<Item = Bytes> + Unpin + Send {\n    let uid: String = match mf2[\"properties\"][\"uid\"][0].take() {\n        serde_json::Value::String(uid) => uid,\n        _ => panic!(\"h-card without a uid\")\n    };\n    let photo: Option<String> = match mf2[\"properties\"][\"photo\"][0].take() {\n        serde_json::Value::String(url) => Some(url),\n        _ => None\n    };\n    let name: String = match mf2[\"properties\"][\"name\"][0].take() {\n        serde_json::Value::String(name) => name,\n        _ => panic!(\"encountered h-card without a name\")\n    };\n    chunk(b\"<article class=\\\"h-card\\\">\")\n        .chain(futures::stream::once(std::future::ready(\n            match photo {\n                Some(url) => {\n                    let mut tag = Vec::new();\n                    tag.extend_from_slice(b\"<img class=\\\"u-photo\\\" src=\\\"\");\n                    html_escape::encode_double_quoted_attribute_to_vec(url, &mut tag);\n                    tag.extend_from_slice(b\"\\\" />\");\n\n                    Bytes::from(tag)\n                },\n                None => Bytes::new()\n            }\n        )))\n        .chain(futures::stream::once(std::future::ready({\n            let mut buf = Vec::new();\n            buf.extend_from_slice(b\"<h1><a class=\\\"u-url u-uid p-name\\\" href=\\\"\");\n            html_escape::encode_double_quoted_attribute_to_vec(uid, &mut buf);\n            buf.extend_from_slice(b\"\\\">\");\n\n            html_escape::encode_text_to_vec(&name, &mut buf);\n\n            buf.extend_from_slice(b\"</a></h1>\");\n\n            Bytes::from(buf)\n        })))\n        .chain(chunk(b\"</article>\"))\n}\n\nIt’s huge. Here is the output it should produce (whitespace is mine):\n\n<article class=\"h-card\">\n    <img class=\"u-photo\" src=\"https://example.com/media/me.png\" />\n    <h1><a class=\"u-url u-uid p-name\" href=\"https://example.com/\">Jane Doe</a></h1>\n</article>\n\nI need some sort of macro system to work with these. The idea itself seems good, but the implementation... meh."
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Proposal for a new-generation social reader concept"
+            ],
+            "author": [
+              "https://fireburn.ru/"
+            ],
+            "url": [
+              "https://fireburn.ru/posts/aZMsCbz",
+              "https://fireburn.ru/posts/a-new-generation-of-social-readers"
+            ],
+            "uid": [
+              "https://fireburn.ru/posts/aZMsCbz"
+            ],
+            "published": [
+              "2022-07-27T09:43:57.419006560+03:00"
+            ],
+            "category": [
+              "IndieWeb",
+              "Microsub",
+              "social reader"
+            ],
+            "content": [
+              {
+                "html": "<p><i>This content is also featured in <a href=\"https://news.indieweb.org/en\" class=\"u-syndication\">IndieNews</a>, the IndieWeb news aggregator.</i></p>\n<p>The new generation of my own website was in its early stages of development for way too long. Several years passed before I was able to finally ship even a proof-of-concept, and yet ambitious thoughts don't stop leaving my head. While not being able to use my website and fully engage with the IndieWeb, I was forced to regress to some older technologies, such as RSS feeds and traditional social network silos, and yet I think this might've inspired me to create something new.</p>\n<p>This is a proposal for a new generation of social readers, built right into the browser and based on open standards, such as Microsub and Micropub; allowing the user to seamlessly transition from the old-style web that we know to the new generation of social web - self-hosted, self-sovereign and free of unneccesary corporate influence, while not being bound to inferior and redundant technologies such as the blockchain and the \"Web 3.0\" fad that it started.</p>\n<h2>The role of a modern web browser</h2>\n<p>The modern web landscape has significantly changed since the invention of the World Wide Web by <a href=\"https://www.w3.org/People/Berners-Lee/\">Tim Berners-Lee</a> in 1989. From a document sharing system it was then transformed by its users into a proto-social network of personal webpages that mixed graphical media with textual content. Then it was once again transformed by the \"dot-com boom\", which accelerated both development of the technology and its commercialization and centralization.</p>\n<p>The modern web browser is now the center-piece of every computing device, since without the web, modern computing as we know it wouldn't exist. The Internet supports many usecases we have, from simple filesharing to videoconferencing, completely transforming our lives. And all of this in a single app. But... something is lacking here.</p>\n<p>Current social networks present in the Internet landscape are mostly designed to show undesirable and irrelevant advertisments to users, and not to connect them and facilitate communication. Many services which were used by friend groups to communicate now transition away from a social network paradigm and turn into content-pushing machines, where the only choice the user has is to whether scroll down or stay on the current page. Control is being slowly taken away from users, turning what was intended into a primary means of communication and information exchange in the 21st century into a glorified TV with a touchscreen instead of buttons.</p>\n<h2>The fundamental concepts of \"self-hosting\" and \"the social web\"</h2>\n<p>But control can be taken back. Taking control of one's own social web experience and shaping it can primarily be facilitated through the concept of \"self-hosting\" - provisioning resources for oneself that facilitate information exchange and are controlled by the user instead of third-parties. Delegation of control is possible when neccesary and authorized - but data souvereignity is a must. Corporations come and go; their services may come down and never return. By taking control of one's own data and the responsibility for hosting content produced, an individual will gain the ability to fully control and curate their own unique online experience.</p>\n<p>\n  The <a href=\"https://indieweb.org/\" style=\"font-weight:bold;\">IndieWeb</a> community is based on exactly that thought and is building new Internet protocols to help people reclaim their space on the modern web. As part of their work, open standards and protocols were developed to facilitate the new generation of social web and data exchange, using a personal website as the centerpoint of data souvereignity and control. The user, being in control of their website, uses it to engage with other people on the social web while staying in control of the content they produce and consume, unlike current social networks, where accounts can be banned instantly with all their data gone, and instead of choosing things to read or watch or listen to, content is being forced down a user's throat by a black-box set of numbers masquerading as \"artificial intelligence\" (which is sometimes acting directly against its own moniker, lacking any true intelligence or understanding of human nature and humanity's wishes).\n  <br>\n</p>\n<p>However, this concept, while being perfect otherwise, is incomplete. The level of integration between the IndieWeb and its protocols and the old-style web is lower than it could be, and the main point where the two can be reconciled is what we use the most to interact with the web - the web browser itself.</p>\n<h2>Current state of affairs in the social web</h2>\n<p>In the collection of protocols and concepts developed by the IndieWeb community, there is a certain one that stands out the most, encompassing one of the central concepts of any social network - the feed. It's called a \"<a href=\"https://indieweb.org/social_reader\">social reader</a>\" - an application, most commonly a web app, that presents to user a social network-style interactive feed or a set of feeds that allows not only to consume content, but actively engage and interact with it. It borrows from conventional social network experience, but uses modern IndieWeb protocols such as <a href=\"https://indieweb.org/Microsub\">Microsub</a> to let the user stay in control of their data and prevent any third parties from messing with it without the user's explicit consent or disrespecting the user's freedoms in any way.</p>\n<p>The social reader allows one to curate a set of feeds filled with content, and then interact with them, posting replies, comments and notes (and even bookmarking whole articles, or expressing their appreciation of content with a \"like\" post, mirroring the \"like\" feature of conventional social network silos) to one's own website, allowing the user to stay in control of their own data and rely on third parties as little as possible while retaining the ability to interact with the wider World Wide Web. Sadly, being often confined to a web application, social readers are limited in their ability to interact with anything outside of the user's feeds, which limits the user's reach on the social web. While discovery engines based on syndication (such as <a href=\"https://indieweb.xyz/\">indieweb.xyz</a>, created by the community, or the old-style \"planet\" content aggregators) allow to expand that, the current experience of discovering new content can eventually take the user out of the social reader on a standalone non-social-web-aware webpage, where social interactions on one's own website are harder to facilitate. Solutions are being explored to remedy that, such as \"<a href=\"https://indieweb.org/webactions\">webactions</a>\" - custom protocol handlers that indicate a prompt for an action to be performed inside of a social reader app and posted to the user's website.</p>\n<p>However, webactions are not natively supported by browsers, requiring JavaScript polyfills and often degrading user experience because of that. The epitome of that concept would be integrating the social reader directly into the browser, allowing it to facilitiate social web interactions without any external client-side software.</p>\n<h2>A new generation of social readers</h2>\n<p>Modern web browsers include a \"new tab\" page that opens whenever an empty tab or window is opened. This experience can be redesigned to take users straight to their social reader, integrated directly into the browser instead of being a standalone web page. This will allow users to never degrade their experience, even when they're taken out of their reader to a standalone webpage - the browser could show buttons corresponding to actions that can be taken on the current page being viewed - for example, posting a comment on one's own website and then notifying the author using a <a href=\"https://indieweb.org/Webmention\">Webmention</a>, or syndicating the content to one's own website (commonly called \"repost\" in social network silo parlance), or simply bookmarking it as something interesting to refer to in later discussions, or for personal use.</p>\n<p>Native UX should be designed so that the social reader doesn't feel like a wart on top of a browser, but a natural extension of it. Such a design could allow users to seamlessly interact even with pages that aren't aware of the new generation of \"social web\", since the user's website will still be able to retain their interactions with the old-style page.</p>\n<p>Most browsers allow usage of so-called \"Web Extensions\" to augment the browser experience. Sadly, this often leaves the \"extension\" with minimal UI to show the user, aside from a single button beside the omnibox, or injecting itself into every webpage and projecting its UI in there, potentially breaking the page's layout in process. This leaves this mechanism ill-suited for integrating a social reader experience into the browser. Therefore, development of a new browser chrome, powered by one of the conventional engines such as Gecko or Blink, would be the most likely way to proceed with the implementation of this concept. </p>\n<p>Web Extensions could still be used to prototype and experiment with the concept. <a href=\"https://indieweb.org/Omnibear\">Omnibear</a> is an existing extension that allows one to author posts and interact with the social web. However, it was abandoned around 2019, and doesn't provide the social reader experience - only minimal ways to send interactions with foreign content to one's own website. Some of the concepts are similar enough to be reused, and inspiration could be taken from its UX.</p>\n<h2>The endgame</h2>\n<p>By fully taking control of one's own data, the user will gain control over their social web life. A modern web browser must be augmented with features to faciliate social web interactions to prevent UX degradation when inevitably landing on a page not aware of social web features. This will help users have a more pleasant and seamless experience on the social web, and help boost adoption by enhancing experience where social web interactions aren't natively supported by the websites themselves, due to ignorance, oversight or corporate malice.</p>",
+                "value": "This content is also featured in IndieNews, the IndieWeb news aggregator.The new generation of my own website was in its early stages of development for way too long. Several years passed before I was able to finally ship even a proof-of-concept, and yet ambitious thoughts don't stop leaving my head. While not being able to use my website and fully engage with the IndieWeb, I was forced to regress to some older technologies, such as RSS feeds and traditional social network silos, and yet I think this might've inspired me to create something new.\nThis is a proposal for a new generation of social readers, built right into the browser and based on open standards, such as Microsub and Micropub; allowing the user to seamlessly transition from the old-style web that we know to the new generation of social web - self-hosted, self-sovereign and free of unneccesary corporate influence, while not being bound to inferior and redundant technologies such as the blockchain and the \"Web 3.0\" fad that it started.\nThe role of a modern web browser\nThe modern web landscape has significantly changed since the invention of the World Wide Web by Tim Berners-Lee in 1989. From a document sharing system it was then transformed by its users into a proto-social network of personal webpages that mixed graphical media with textual content. Then it was once again transformed by the \"dot-com boom\", which accelerated both development of the technology and its commercialization and centralization.\nThe modern web browser is now the center-piece of every computing device, since without the web, modern computing as we know it wouldn't exist. The Internet supports many usecases we have, from simple filesharing to videoconferencing, completely transforming our lives. And all of this in a single app. But... something is lacking here.\nCurrent social networks present in the Internet landscape are mostly designed to show undesirable and irrelevant advertisments to users, and not to connect them and facilitate communication. Many services which were used by friend groups to communicate now transition away from a social network paradigm and turn into content-pushing machines, where the only choice the user has is to whether scroll down or stay on the current page. Control is being slowly taken away from users, turning what was intended into a primary means of communication and information exchange in the 21st century into a glorified TV with a touchscreen instead of buttons.\nThe fundamental concepts of \"self-hosting\" and \"the social web\"\nBut control can be taken back. Taking control of one's own social web experience and shaping it can primarily be facilitated through the concept of \"self-hosting\" - provisioning resources for oneself that facilitate information exchange and are controlled by the user instead of third-parties. Delegation of control is possible when neccesary and authorized - but data souvereignity is a must. Corporations come and go; their services may come down and never return. By taking control of one's own data and the responsibility for hosting content produced, an individual will gain the ability to fully control and curate their own unique online experience.\n\n  The IndieWeb community is based on exactly that thought and is building new Internet protocols to help people reclaim their space on the modern web. As part of their work, open standards and protocols were developed to facilitate the new generation of social web and data exchange, using a personal website as the centerpoint of data souvereignity and control. The user, being in control of their website, uses it to engage with other people on the social web while staying in control of the content they produce and consume, unlike current social networks, where accounts can be banned instantly with all their data gone, and instead of choosing things to read or watch or listen to, content is being forced down a user's throat by a black-box set of numbers masquerading as \"artificial intelligence\" (which is sometimes acting directly against its own moniker, lacking any true intelligence or understanding of human nature and humanity's wishes).\n  \n\nHowever, this concept, while being perfect otherwise, is incomplete. The level of integration between the IndieWeb and its protocols and the old-style web is lower than it could be, and the main point where the two can be reconciled is what we use the most to interact with the web - the web browser itself.\nCurrent state of affairs in the social web\nIn the collection of protocols and concepts developed by the IndieWeb community, there is a certain one that stands out the most, encompassing one of the central concepts of any social network - the feed. It's called a \"social reader\" - an application, most commonly a web app, that presents to user a social network-style interactive feed or a set of feeds that allows not only to consume content, but actively engage and interact with it. It borrows from conventional social network experience, but uses modern IndieWeb protocols such as Microsub to let the user stay in control of their data and prevent any third parties from messing with it without the user's explicit consent or disrespecting the user's freedoms in any way.\nThe social reader allows one to curate a set of feeds filled with content, and then interact with them, posting replies, comments and notes (and even bookmarking whole articles, or expressing their appreciation of content with a \"like\" post, mirroring the \"like\" feature of conventional social network silos) to one's own website, allowing the user to stay in control of their own data and rely on third parties as little as possible while retaining the ability to interact with the wider World Wide Web. Sadly, being often confined to a web application, social readers are limited in their ability to interact with anything outside of the user's feeds, which limits the user's reach on the social web. While discovery engines based on syndication (such as indieweb.xyz, created by the community, or the old-style \"planet\" content aggregators) allow to expand that, the current experience of discovering new content can eventually take the user out of the social reader on a standalone non-social-web-aware webpage, where social interactions on one's own website are harder to facilitate. Solutions are being explored to remedy that, such as \"webactions\" - custom protocol handlers that indicate a prompt for an action to be performed inside of a social reader app and posted to the user's website.\nHowever, webactions are not natively supported by browsers, requiring JavaScript polyfills and often degrading user experience because of that. The epitome of that concept would be integrating the social reader directly into the browser, allowing it to facilitiate social web interactions without any external client-side software.\nA new generation of social readers\nModern web browsers include a \"new tab\" page that opens whenever an empty tab or window is opened. This experience can be redesigned to take users straight to their social reader, integrated directly into the browser instead of being a standalone web page. This will allow users to never degrade their experience, even when they're taken out of their reader to a standalone webpage - the browser could show buttons corresponding to actions that can be taken on the current page being viewed - for example, posting a comment on one's own website and then notifying the author using a Webmention, or syndicating the content to one's own website (commonly called \"repost\" in social network silo parlance), or simply bookmarking it as something interesting to refer to in later discussions, or for personal use.\nNative UX should be designed so that the social reader doesn't feel like a wart on top of a browser, but a natural extension of it. Such a design could allow users to seamlessly interact even with pages that aren't aware of the new generation of \"social web\", since the user's website will still be able to retain their interactions with the old-style page.\nMost browsers allow usage of so-called \"Web Extensions\" to augment the browser experience. Sadly, this often leaves the \"extension\" with minimal UI to show the user, aside from a single button beside the omnibox, or injecting itself into every webpage and projecting its UI in there, potentially breaking the page's layout in process. This leaves this mechanism ill-suited for integrating a social reader experience into the browser. Therefore, development of a new browser chrome, powered by one of the conventional engines such as Gecko or Blink, would be the most likely way to proceed with the implementation of this concept. \nWeb Extensions could still be used to prototype and experiment with the concept. Omnibear is an existing extension that allows one to author posts and interact with the social web. However, it was abandoned around 2019, and doesn't provide the social reader experience - only minimal ways to send interactions with foreign content to one's own website. Some of the concepts are similar enough to be reused, and inspiration could be taken from its UX.\nThe endgame\nBy fully taking control of one's own data, the user will gain control over their social web life. A modern web browser must be augmented with features to faciliate social web interactions to prevent UX degradation when inevitably landing on a page not aware of social web features. This will help users have a more pleasant and seamless experience on the social web, and help boost adoption by enhancing experience where social web interactions aren't natively supported by the websites themselves, due to ignorance, oversight or corporate malice."
+              }
+            ],
+            "syndication": [
+              "https://news.indieweb.org/en"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              "https://fireburn.ru/"
+            ],
+            "url": [
+              "https://fireburn.ru/posts/aZMUGLe"
+            ],
+            "uid": [
+              "https://fireburn.ru/posts/aZMUGLe"
+            ],
+            "published": [
+              "2022-07-27T08:17:46.839915260+03:00"
+            ],
+            "category": [
+              "IndieWeb"
+            ],
+            "content": [
+              {
+                "html": "<p>did I just start an outline for a small essay on modern web and social readers?</p>\n\n<p>this will be interesting, I promise</p>",
+                "value": "did I just start an outline for a small essay on modern web and social readers?\n\nthis will be interesting, I promise"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              "https://fireburn.ru/"
+            ],
+            "url": [
+              "https://fireburn.ru/posts/aXrczD2"
+            ],
+            "uid": [
+              "https://fireburn.ru/posts/aXrczD2"
+            ],
+            "published": [
+              "2022-07-13T20:52:45.182326540+03:00"
+            ],
+            "category": [
+              "Kittybox",
+              "programming"
+            ],
+            "content": [
+              {
+                "html": "<p>Wow, it turns out buffering file uploads and downloads in my media endpoint doubled my upload speed!</p>",
+                "value": "Wow, it turns out buffering file uploads and downloads in my media endpoint doubled my upload speed!"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              "https://fireburn.ru/"
+            ],
+            "url": [
+              "https://fireburn.ru/posts/aXW0v4n",
+              "https://fireburn.ru/posts/kittybox-status-update-2022-07-10"
+            ],
+            "uid": [
+              "https://fireburn.ru/posts/aXW0v4n"
+            ],
+            "published": [
+              "2022-07-10T15:03:18.287307354+03:00"
+            ],
+            "category": [
+              "Kittybox"
+            ],
+            "content": [
+              {
+                "html": "<p>It looks like Kittybox is close to its finish line and general protocol-compliance goal. The only unimplemented parts are:</p>\n\n<ul>\n<li>In-house IndieAuth (auth and tokens)</li>\n\n<li>Webmentions</li>\n\n<li>WebSub pings</li>\n</ul>\n\n<p>Then it will reach full protocol-compliance status, and I could go on to develop other things like pretty UI for posting, the Microsub server (because I really want my own!) etc.</p>",
+                "value": "It looks like Kittybox is close to its finish line and general protocol-compliance goal. The only unimplemented parts are:\n\n\nIn-house IndieAuth (auth and tokens)\n\nWebmentions\n\nWebSub pings\n\n\nThen it will reach full protocol-compliance status, and I could go on to develop other things like pretty UI for posting, the Microsub server (because I really want my own!) etc."
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              "https://fireburn.ru/"
+            ],
+            "url": [
+              "https://fireburn.ru/posts/aXW09A9",
+              "https://fireburn.ru/posts/indieauth-woes-part-0"
+            ],
+            "uid": [
+              "https://fireburn.ru/posts/aXW09A9"
+            ],
+            "published": [
+              "2022-07-10T15:00:33.009962176+03:00"
+            ],
+            "category": [
+              "IndieAuth",
+              "kittybox"
+            ],
+            "content": [
+              {
+                "html": "<p>Time to traumatize myself by implementing <a href=\"https://indieauth.spec.indieweb.org/\">the entire IndieAuth spec</a> by hand. The newest version that seems to be twice as complex as the one from three years ago.</p>\n\n<p>I’m not sure if I should draft a will first, it seems overwhelming to me... (but I’m sure that in the event that I succeed, I will reap major rewards from it)</p>",
+                "value": "Time to traumatize myself by implementing the entire IndieAuth spec by hand. The newest version that seems to be twice as complex as the one from three years ago.\n\nI’m not sure if I should draft a will first, it seems overwhelming to me... (but I’m sure that in the event that I succeed, I will reap major rewards from it)"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              "https://fireburn.ru/"
+            ],
+            "url": [
+              "https://fireburn.ru/posts/aVi3akn"
+            ],
+            "uid": [
+              "https://fireburn.ru/posts/aVi3akn"
+            ],
+            "published": [
+              "2022-06-24T14:00:56.747138603+03:00"
+            ],
+            "category": [
+              "Rust",
+              "programming"
+            ],
+            "content": [
+              {
+                "html": "<p>Big endian vs little endian is a pain. I had to go through two conversions to serialize an <a href=\"https://doc.rust-lang.org/nightly/std/net/struct.Ipv4Addr.html\">`std::net::Ipv4Addr`</a> to a big-endian <code>[u8; 4]</code> - the middle conversion was a <code>u32</code> of native endianness.</p>\n\n<p>The most surprising thing is that the compiler optimizes this down to nothing. Maybe the IP addresses are already stored internally as big endian? Would make sense to store them in the same order they’re commonly used.</p>",
+                "value": "Big endian vs little endian is a pain. I had to go through two conversions to serialize an `std::net::Ipv4Addr` to a big-endian [u8; 4] - the middle conversion was a u32 of native endianness.\n\nThe most surprising thing is that the compiler optimizes this down to nothing. Maybe the IP addresses are already stored internally as big endian? Would make sense to store them in the same order they’re commonly used."
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              "https://fireburn.ru/"
+            ],
+            "url": [
+              "https://fireburn.ru/posts/aSB098y",
+              "https://fireburn.ru/posts/kittybox-templates-unit-tests"
+            ],
+            "uid": [
+              "https://fireburn.ru/posts/aSB098y"
+            ],
+            "published": [
+              "2022-05-23T18:36:32.938018799+03:00"
+            ],
+            "category": [
+              "Kittybox"
+            ],
+            "content": [
+              {
+                "html": "<p>I think <a href=\"https://git.sr.ht/~vikanezrimaya/kittybox/tree/main/item/kittybox-rs/templates/src/lib.rs\">my template unit-tests</a> are one of the most beautilful think I’ve ever written. An MF2-JSON document is randomly generated, rendered using the appropriate template and then checked for expected properties matching whatever was in the MF2-JSON.</p>\n\n<p>These are some of the best unit-tests I’ve ever attempted to write.</p>",
+                "value": "I think my template unit-tests are one of the most beautilful think I’ve ever written. An MF2-JSON document is randomly generated, rendered using the appropriate template and then checked for expected properties matching whatever was in the MF2-JSON.\n\nThese are some of the best unit-tests I’ve ever attempted to write."
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              "https://fireburn.ru/"
+            ],
+            "url": [
+              "https://fireburn.ru/posts/aRR3Aea"
+            ],
+            "uid": [
+              "https://fireburn.ru/posts/aRR3Aea"
+            ],
+            "published": [
+              "2022-05-16T21:11:26.375033075+03:00"
+            ],
+            "category": [
+              "programming",
+              "microformats"
+            ],
+            "content": [
+              {
+                "html": "<p>That feeling when you write a unit test using a library and then accidentally discover a bug in that exact library instead of your own code...</p>\n\n<p><a href=\"https://gitlab.com/maxburon/microformats-parser/-/issues/7\">The bug in question</a>, if you’re interested.</p>",
+                "value": "That feeling when you write a unit test using a library and then accidentally discover a bug in that exact library instead of your own code...\n\nThe bug in question, if you’re interested."
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              "https://fireburn.ru/"
+            ],
+            "url": [
+              "https://fireburn.ru/posts/aQz5SGt",
+              "https://fireburn.ru/posts/kittybox-loves-srht"
+            ],
+            "uid": [
+              "https://fireburn.ru/posts/aQz5SGt"
+            ],
+            "published": [
+              "2022-05-12T23:43:34.613260084+03:00"
+            ],
+            "category": [
+              "Kittybox"
+            ],
+            "content": [
+              {
+                "html": "<p>I am pleased to announce that Kittybox is moving to Sourcehut! <a href=\"https://sr.ht/~vikanezrimaya/kittybox\">https://sr.ht/~vikanezrimaya/kittybox</a></p>",
+                "value": "I am pleased to announce that Kittybox is moving to Sourcehut! https://sr.ht/~vikanezrimaya/kittybox"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              "https://fireburn.ru/"
+            ],
+            "url": [
+              "https://fireburn.ru/posts/aQnEECN"
+            ],
+            "uid": [
+              "https://fireburn.ru/posts/aQnEECN"
+            ],
+            "published": [
+              "2022-05-11T05:03:15.142870698+03:00"
+            ],
+            "category": [
+              "personal"
+            ],
+            "content": [
+              {
+                "html": "<p>i really want to add webmention support and display into Kittybox right now so I wouldn’t be bored of not being able to see if someone interacts with me but i cant code for too much or i will blow a fuse in my brain become a dumb kitty for a week</p>\n\n<p>so i will rest and play minecraft like a responsible person</p>\n\n<p>see? im caring for myself!</p>",
+                "value": "i really want to add webmention support and display into Kittybox right now so I wouldn’t be bored of not being able to see if someone interacts with me but i cant code for too much or i will blow a fuse in my brain become a dumb kitty for a week\n\nso i will rest and play minecraft like a responsible person\n\nsee? im caring for myself!"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              "https://fireburn.ru/"
+            ],
+            "url": [
+              "https://fireburn.ru/posts/aQk0akz"
+            ],
+            "uid": [
+              "https://fireburn.ru/posts/aQk0akz"
+            ],
+            "published": [
+              "2022-05-10T21:02:08.759838269+03:00"
+            ],
+            "category": [
+              "Kittybox"
+            ],
+            "content": [
+              {
+                "html": "<p>Next thing I should do since I fixed the bug: webmentions. I really need to handle webmentions, and I think I actually will be able to do so rather easily now that I know my database doesn’t lock up anymore. I just need to attach an MF2 parser.</p>\n\n<p>In general, what I would want to have in a perfect world is:</p>\n\n<ul>\n<li>My own IndieAuth implementation</li>\n\n<li>My own webmention acceptor (I already have plans but I need some extra software for it to work)</li>\n\n<li>My own media endpoint (that autoconverts pictures to webp)</li>\n\n<li>My own Microsub server</li>\n\n<li>Editing posts in-band when logged in via IndieAuth</li>\n\n<li>Make that second widget at the homepage do something interesting</li>\n</ul>",
+                "value": "Next thing I should do since I fixed the bug: webmentions. I really need to handle webmentions, and I think I actually will be able to do so rather easily now that I know my database doesn’t lock up anymore. I just need to attach an MF2 parser.\n\nIn general, what I would want to have in a perfect world is:\n\n\nMy own IndieAuth implementation\n\nMy own webmention acceptor (I already have plans but I need some extra software for it to work)\n\nMy own media endpoint (that autoconverts pictures to webp)\n\nMy own Microsub server\n\nEditing posts in-band when logged in via IndieAuth\n\nMake that second widget at the homepage do something interesting"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              "https://fireburn.ru/"
+            ],
+            "url": [
+              "https://fireburn.ru/posts/aQfEs_y"
+            ],
+            "uid": [
+              "https://fireburn.ru/posts/aQfEs_y"
+            ],
+            "published": [
+              "2022-05-10T03:53:33.298429642+03:00"
+            ],
+            "category": [
+              "Kittybox"
+            ],
+            "content": [
+              {
+                "html": "<p>No more bug. I squashed it for real now.</p>\n\n<p>I should consider adding a regression test so it never shows up anymore. But is it worth it if I caused the bug by being stupid?</p>\n\n<p>Maybe tests were in fact made to guard from stupidity.</p>",
+                "value": "No more bug. I squashed it for real now.\n\nI should consider adding a regression test so it never shows up anymore. But is it worth it if I caused the bug by being stupid?\n\nMaybe tests were in fact made to guard from stupidity."
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              "https://fireburn.ru/"
+            ],
+            "url": [
+              "https://fireburn.ru/posts/aQVY30Z"
+            ],
+            "uid": [
+              "https://fireburn.ru/posts/aQVY30Z"
+            ],
+            "published": [
+              "2022-05-08T13:19:22.833544450+03:00"
+            ],
+            "category": [
+              "Kittybox"
+            ],
+            "content": [
+              {
+                "html": "<p>Ok, looks like the bug I was talking about (constant hangs in production) was not fixed but rather mitigated. Good news: it’s not hanging now! Bad news: it’s still draining resources and making my server heat up, which makes the onboard fan spin, which makes a lot of noise.</p>",
+                "value": "Ok, looks like the bug I was talking about (constant hangs in production) was not fixed but rather mitigated. Good news: it’s not hanging now! Bad news: it’s still draining resources and making my server heat up, which makes the onboard fan spin, which makes a lot of noise."
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              "https://fireburn.ru/"
+            ],
+            "url": [
+              "https://fireburn.ru/posts/aQTVSRS"
+            ],
+            "uid": [
+              "https://fireburn.ru/posts/aQTVSRS"
+            ],
+            "published": [
+              "2022-05-08T05:57:59.126438105+03:00"
+            ],
+            "category": [
+              "kittybox",
+              "quill"
+            ],
+            "content": [
+              {
+                "html": "<p>it feels good to write again but <a href=\"https://quill.p3k.io/\">quill</a> post editor is not good for tecnical posts with a lot of code because it seems to collapse whitespace in pre blocks</p>\n\n<p>i really need my own editor</p>",
+                "value": "it feels good to write again but quill post editor is not good for tecnical posts with a lot of code because it seems to collapse whitespace in pre blocks\n\ni really need my own editor"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Mending what's broken, or how I discovered some broken links on my website"
+            ],
+            "author": [
+              "https://fireburn.ru/"
+            ],
+            "url": [
+              "https://fireburn.ru/posts/aQTPbzL",
+              "https://fireburn.ru/posts/mending-broken-permalinks-part-1"
+            ],
+            "uid": [
+              "https://fireburn.ru/posts/aQTPbzL"
+            ],
+            "published": [
+              "2022-05-08T05:37:01.160733218+03:00"
+            ],
+            "category": [
+              "kittybox",
+              "indieweb"
+            ],
+            "content": [
+              {
+                "html": "<p>\n  It was a restless night. I just fixed my personal website's software, Kittybox, so it wouldn't hang after the first few hours of working (I hope my bugfix finally worked! I've been chasing that bug for months). In an attempt to stimulate my bored brain I was reading some articles on the <a href=\"https://indieweb.org/Main_Page\">IndieWeb wiki</a> and stumbled upon discussions that my posts on this very website sparked.\n  <br>\n</p>\n<p>Except the links didn't work. Argh, I can't read my own posts, this won't do!</p>\n<p>Of course, this was all my fault. But, thanks to past me having a lot of foresight, this should be rather easy to fix. First thing I decided to do was to patch articles containing links to my posts so the links would actually point to something - despite me wiping my website's main feed, all of the articles are still there because I know some people in the IndieWeb community have been linking to me. The second thing I did not do yet, and if I don't write it down, I might forget it all, so here's the post so I don't forget to do it.</p>\n<h2>Preserving compatibility</h2>\n<p>When I was designing the first versions of Kittybox (back then it didn't even had the name!) I was very inspired by <a href=\"https://00dani.me/\">00dani.me</a>'s proposed <a href=\"https://00dani.me/articles/53/lemoncurry-1-10-0-what-s-new-and-what-s-next\">approach</a> of storing MF2-JSON directly in the database. First I stored it in flat files. Then, as I realized my file storage is incredibly slow, I migrated to Redis to keep my dataset in memory. Then several rewrites happened, and the Rust rewrite happened. The database's underlying format was still almost the same, so it was rather easy to port it over. Except I might've forgotten an important step.</p>\n<p>In Kittybox, one post can contain several links. One of them is a UID - an authoritative link to the post, the one that Kittybox would use as a primary key in an SQL database if it used one. But since I use the filesystem as my database, the authoritative link gets transformed into an authoritative path which refers directly to the file with the MF2-JSON blob. All other links are supposed to be symlinks.</p>\n<p>Except apparently when I was importing the posts in the new file storage backend, I somehow forgot to make all of those symlinks. And that's why the posts don't work.</p>\n<h2>Past Vika's foresight</h2>\n<p>Storing the posts in MF2-JSON as processed Micropub data was actually a very good idea. Pretty much all versions of Kittybox filled in alternative URLs (which would be u-url in MF2-HTML and .properties.url[] in MF2-JSON) which actually can be used to restore those permalinks!</p>\n<p>\n  Eventually permalink checking will need to be built into the software itself as a consistency check. I could probably write it like this:\n  <br>\n</p>\n<pre><code>\nuse futures::stream::StreamExt;\nlet urls = json[\"properties\"][\"url\"]\n    .as_array()\n    .unwrap_or_default()\n    .into_iter()\n    .filter_map(|s: serde_json::Value| s.as_str().ok())\n    .map(|url| url_to_path(&amp;self.root_dir, url);\n\nlet mut url_stream = tokio_stream::iter(urls);\nurl_stream.for_each_concurrent(2, |path| async move {\n    if let Err(err) = tokio::fs::symlink_metadata(path).await {\n        if err.kind() == std::io::ErrorKind::NotFound {\n            let link = url_to_path(&amp;self.root_dir, url);\n            let basedir = link.parent();\n            if basedir.is_err() {\n                warn!(\"Database consistency check: couldn't calculate parent for {}\", link);\n                return;\n            }\n            let basedir = basedir.unwrap();\n            let relative = path_relative_from(&amp;canonical_path, basedir).unwrap();\n            if let Err(Err) = tokio::fs::symlink(relative, link).await {\n                warn!(\"Database consistency check: failed to restore symlink {} for {}: {:?}\", canonical, path);\n            }\n        }\n    }\n});</code></pre>\n<p>I'm pretty sure this won't compile out of the box because of borrow checking and variables which need to be bound, but you get the idea. It can be performed on every read (for maximum correctness) or there could be scheduled tasks that sweep the database and perform those consistency checks - I think the second one is the better idea, since it allows me to check even posts that were completely forgotten by everyone. But I'll need to learn how to schedule tasks to run at certain intervals in Tokio - I'm sure there's a function for that though.</p>\n<h3>\n  When will it be complete?\n  <br>\n</h3>\n<p>I hope it will be built into the software soon. For now, I will leave this as a to-do of sorts. A reminder to myself and an example for the others - of both my foresight and my mistakes.</p>\n<p>And for now, I could potentially build a script that recursively walks my directory tree and restores symlinks via a cron job. It'll probably work just as well too. But I'll do it later. <i>I wanna sleep...and coffeeeee....</i></p>",
+                "value": "It was a restless night. I just fixed my personal website's software, Kittybox, so it wouldn't hang after the first few hours of working (I hope my bugfix finally worked! I've been chasing that bug for months). In an attempt to stimulate my bored brain I was reading some articles on the IndieWeb wiki and stumbled upon discussions that my posts on this very website sparked.\n  \n\nExcept the links didn't work. Argh, I can't read my own posts, this won't do!\nOf course, this was all my fault. But, thanks to past me having a lot of foresight, this should be rather easy to fix. First thing I decided to do was to patch articles containing links to my posts so the links would actually point to something - despite me wiping my website's main feed, all of the articles are still there because I know some people in the IndieWeb community have been linking to me. The second thing I did not do yet, and if I don't write it down, I might forget it all, so here's the post so I don't forget to do it.\nPreserving compatibility\nWhen I was designing the first versions of Kittybox (back then it didn't even had the name!) I was very inspired by 00dani.me's proposed approach of storing MF2-JSON directly in the database. First I stored it in flat files. Then, as I realized my file storage is incredibly slow, I migrated to Redis to keep my dataset in memory. Then several rewrites happened, and the Rust rewrite happened. The database's underlying format was still almost the same, so it was rather easy to port it over. Except I might've forgotten an important step.\nIn Kittybox, one post can contain several links. One of them is a UID - an authoritative link to the post, the one that Kittybox would use as a primary key in an SQL database if it used one. But since I use the filesystem as my database, the authoritative link gets transformed into an authoritative path which refers directly to the file with the MF2-JSON blob. All other links are supposed to be symlinks.\nExcept apparently when I was importing the posts in the new file storage backend, I somehow forgot to make all of those symlinks. And that's why the posts don't work.\nPast Vika's foresight\nStoring the posts in MF2-JSON as processed Micropub data was actually a very good idea. Pretty much all versions of Kittybox filled in alternative URLs (which would be u-url in MF2-HTML and .properties.url[] in MF2-JSON) which actually can be used to restore those permalinks!\n\n  Eventually permalink checking will need to be built into the software itself as a consistency check. I could probably write it like this:\n  \n\n\nuse futures::stream::StreamExt;\nlet urls = json[\"properties\"][\"url\"]\n    .as_array()\n    .unwrap_or_default()\n    .into_iter()\n    .filter_map(|s: serde_json::Value| s.as_str().ok())\n    .map(|url| url_to_path(&self.root_dir, url);\n\nlet mut url_stream = tokio_stream::iter(urls);\nurl_stream.for_each_concurrent(2, |path| async move {\n    if let Err(err) = tokio::fs::symlink_metadata(path).await {\n        if err.kind() == std::io::ErrorKind::NotFound {\n            let link = url_to_path(&self.root_dir, url);\n            let basedir = link.parent();\n            if basedir.is_err() {\n                warn!(\"Database consistency check: couldn't calculate parent for {}\", link);\n                return;\n            }\n            let basedir = basedir.unwrap();\n            let relative = path_relative_from(&canonical_path, basedir).unwrap();\n            if let Err(Err) = tokio::fs::symlink(relative, link).await {\n                warn!(\"Database consistency check: failed to restore symlink {} for {}: {:?}\", canonical, path);\n            }\n        }\n    }\n});\nI'm pretty sure this won't compile out of the box because of borrow checking and variables which need to be bound, but you get the idea. It can be performed on every read (for maximum correctness) or there could be scheduled tasks that sweep the database and perform those consistency checks - I think the second one is the better idea, since it allows me to check even posts that were completely forgotten by everyone. But I'll need to learn how to schedule tasks to run at certain intervals in Tokio - I'm sure there's a function for that though.\n\n  When will it be complete?\n  \n\nI hope it will be built into the software soon. For now, I will leave this as a to-do of sorts. A reminder to myself and an example for the others - of both my foresight and my mistakes.\nAnd for now, I could potentially build a script that recursively walks my directory tree and restores symlinks via a cron job. It'll probably work just as well too. But I'll do it later. I wanna sleep...and coffeeeee...."
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              "https://fireburn.ru/"
+            ],
+            "url": [
+              "https://fireburn.ru/posts/aQRsZZZ"
+            ],
+            "uid": [
+              "https://fireburn.ru/posts/aQRsZZZ"
+            ],
+            "published": [
+              "2022-05-08T00:09:12.813629086+03:00"
+            ],
+            "category": [
+              "kittybox"
+            ],
+            "content": [
+              {
+                "html": "<p>good morning indieweb</p>\n\n<p>i have returned somehow from having my site in semipermanent downtime</p>\n\n<p>please don’t be gentle with it i need a little bit of sustained load so i can check a hypothesis</p>",
+                "value": "good morning indieweb\n\ni have returned somehow from having my site in semipermanent downtime\n\nplease don’t be gentle with it i need a little bit of sustained load so i can check a hypothesis"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              "https://fireburn.ru/"
+            ],
+            "url": [
+              "https://fireburn.ru/posts/aG3u0Kp"
+            ],
+            "uid": [
+              "https://fireburn.ru/posts/aG3u0Kp"
+            ],
+            "published": [
+              "2022-02-21T17:02:25.189392271+03:00"
+            ],
+            "category": [
+              "webdev",
+              "programming"
+            ],
+            "content": [
+              {
+                "html": "<p><a href=\"https://github.com/seanmonstar/warp\">warp</a> is amazing to cover your code with unit tests. Since everything is a filter, your logic can be tested in isolation (and components that are required, such as database connections, can simply be mocked).</p>",
+                "value": "warp is amazing to cover your code with unit tests. Since everything is a filter, your logic can be tested in isolation (and components that are required, such as database connections, can simply be mocked)."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "rels": {
+    "preconnect": [
+      "https://fonts.gstatic.com/"
+    ],
+    "stylesheet": [
+      "https://fireburn.ru/.kittybox/static/style.css"
+    ],
+    "micropub": [
+      "https://fireburn.ru/.kittybox/micropub"
+    ],
+    "micropub_media": [
+      "https://fireburn.ru/.kittybox/media"
+    ],
+    "me": [
+      "https://gitlab.com/vikanezrimaya",
+      "https://github.com/vikanezrimaya"
+    ],
+    "feed": [
+      "https://fireburn.ru/feeds/main"
+    ],
+    "prev": [
+      "https://fireburn.ru/feeds/main?after=https://fireburn.ru/posts/aG3u0Kp"
+    ]
+  },
+  "rel-urls": {
+    "https://fonts.gstatic.com/": {
+      "rels": [
+        "preconnect"
+      ]
+    },
+    "https://fireburn.ru/.kittybox/static/style.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://fireburn.ru/.kittybox/micropub": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://fireburn.ru/.kittybox/media": {
+      "rels": [
+        "micropub_media"
+      ]
+    },
+    "https://gitlab.com/vikanezrimaya": {
+      "rels": [
+        "me"
+      ],
+      "text": "https://gitlab.com/vikanezrimaya"
+    },
+    "https://github.com/vikanezrimaya": {
+      "rels": [
+        "me"
+      ],
+      "text": "https://github.com/vikanezrimaya"
+    },
+    "https://fireburn.ru/feeds/main": {
+      "rels": [
+        "feed"
+      ],
+      "text": "Main feed"
+    },
+    "https://fireburn.ru/feeds/main?after=https://fireburn.ru/posts/aG3u0Kp": {
+      "rels": [
+        "prev"
+      ],
+      "text": "Older posts"
+    }
+  }
+}

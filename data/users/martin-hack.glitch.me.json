@@ -1,0 +1,39 @@
+{
+  "items": [],
+  "rels": {
+    "openid.server": [
+      "https://indieauth.com/openid"
+    ],
+    "openid.delegate": [
+      "http://martin-hack.glitch.me/"
+    ],
+    "pgpkey": [
+      "http://martin-hack.glitch.me/key.txt"
+    ],
+    "stylesheet": [
+      "http://martin-hack.glitch.me/style.css"
+    ]
+  },
+  "rel-urls": {
+    "https://indieauth.com/openid": {
+      "rels": [
+        "openid.server"
+      ]
+    },
+    "http://martin-hack.glitch.me/": {
+      "rels": [
+        "openid.delegate"
+      ]
+    },
+    "http://martin-hack.glitch.me/key.txt": {
+      "rels": [
+        "pgpkey"
+      ]
+    },
+    "http://martin-hack.glitch.me/style.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    }
+  }
+}

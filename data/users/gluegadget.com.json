@@ -1,0 +1,39 @@
+{
+  "items": [],
+  "rels": {
+    "openid.server": [
+      "http://www.myopenid.com/server"
+    ],
+    "openid.delegate": [
+      "http://amir.mohammad.myopenid.com/"
+    ],
+    "me": [
+      "https://github.com/amir",
+      "https://twitter.com/gluegadget"
+    ]
+  },
+  "rel-urls": {
+    "http://www.myopenid.com/server": {
+      "rels": [
+        "openid.server"
+      ]
+    },
+    "http://amir.mohammad.myopenid.com/": {
+      "rels": [
+        "openid.delegate"
+      ]
+    },
+    "https://github.com/amir": {
+      "rels": [
+        "me"
+      ],
+      "text": "github page"
+    },
+    "https://twitter.com/gluegadget": {
+      "rels": [
+        "me"
+      ],
+      "text": "twitter"
+    }
+  }
+}

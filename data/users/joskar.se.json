@@ -1,0 +1,191 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "url": [
+          "https://joskar.se/",
+          "https://github.com/ojohnny"
+        ],
+        "uid": [
+          "https://joskar.se/"
+        ],
+        "photo": [
+          {
+            "value": "https://joskar.se/joskar.jpg",
+            "alt": ""
+          }
+        ],
+        "name": [
+          "Johnny Oskarsson"
+        ],
+        "note": [
+          {
+            "html": "En <span class=\"p-role\">utvecklare</span> från <span class=\"p-locality\">Göteborg</span>strakten vars intressen varierar kraftigt.",
+            "value": "En utvecklare från Göteborgstrakten vars intressen varierar kraftigt."
+          }
+        ],
+        "role": [
+          "utvecklare"
+        ],
+        "locality": [
+          "Göteborg"
+        ],
+        "email": [
+          "mailto:jo%40joskar.se"
+        ]
+      },
+      "children": [
+        {
+          "type": [
+            "h-feed"
+          ],
+          "properties": {
+            "name": [
+              "Saker jag har sagt på internet"
+            ]
+          },
+          "children": [
+            {
+              "type": [
+                "h-entry"
+              ],
+              "properties": {
+                "url": [
+                  "https://joskar.se/2014/tentaveckor-och-kommentarer-i-marginalen"
+                ],
+                "name": [
+                  "Tentaveckor och kommentarer i marginalen"
+                ],
+                "summary": [
+                  "Tentaveckor och kommentarer i marginalen"
+                ],
+                "published": [
+                  "2014-10-31T22:07:36+0100"
+                ]
+              },
+              "children": [
+                {
+                  "type": [
+                    "h-x-stats"
+                  ],
+                  "properties": {
+                    "comments": [
+                      "2"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "type": [
+                "h-entry"
+              ],
+              "properties": {
+                "url": [
+                  "https://joskar.se/2014/kommentarer-via-webmention"
+                ],
+                "name": [
+                  "Nu kan jag ta emot kommentarer via webmention på den här sidan (hoppas jag). Testa!"
+                ],
+                "summary": [
+                  "Nu kan jag ta emot kommentarer via webmention på den här sidan (hoppas jag). Testa!"
+                ],
+                "published": [
+                  "2014-10-23T23:23+0200"
+                ]
+              },
+              "children": [
+                {
+                  "type": [
+                    "h-x-stats"
+                  ],
+                  "properties": {
+                    "comments": [
+                      "3"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rels": {
+    "stylesheet": [
+      "https://joskar.se/css/index.css"
+    ],
+    "icon": [
+      "https://joskar.se/joskar.jpg"
+    ],
+    "openid.server": [
+      "https://indieauth.com/openid"
+    ],
+    "openid.delegate": [
+      "https://joskar.se/"
+    ],
+    "alternate": [
+      "https://joskar.se/en/",
+      "https://joskar.se/"
+    ],
+    "pgpkey": [
+      "https://joskar.se/pgp.asc"
+    ],
+    "me": [
+      "https://joskar.se/",
+      "https://github.com/ojohnny",
+      "mailto:jo%40joskar.se"
+    ]
+  },
+  "rel-urls": {
+    "https://joskar.se/css/index.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://joskar.se/joskar.jpg": {
+      "rels": [
+        "icon"
+      ]
+    },
+    "https://indieauth.com/openid": {
+      "rels": [
+        "openid.server"
+      ]
+    },
+    "https://joskar.se/": {
+      "rels": [
+        "openid.delegate"
+      ]
+    },
+    "https://joskar.se/en/": {
+      "rels": [
+        "alternate"
+      ],
+      "hreflang": "en",
+      "title": "In English"
+    },
+    "https://joskar.se/pgp.asc": {
+      "rels": [
+        "pgpkey"
+      ]
+    },
+    "https://github.com/ojohnny": {
+      "rels": [
+        "me"
+      ],
+      "text": "Github"
+    },
+    "mailto:jo%40joskar.se": {
+      "rels": [
+        "me"
+      ],
+      "text": "E-mail"
+    }
+  }
+}

@@ -1,0 +1,400 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "photo": [
+          {
+            "value": "https://leivajd.com/static/headshot-182f1e41cb704f39416f0241e47490d4.jpg",
+            "alt": ""
+          }
+        ],
+        "url": [
+          "https://leivajd.com/",
+          "https://twitter.com/leivajd",
+          "https://github.com/jleiva",
+          "https://www.drupal.org/user/634642",
+          "https://cr.linkedin.com/in/leivajd",
+          "https://www.instagram.com/leivajd/"
+        ],
+        "uid": [
+          "https://leivajd.com/"
+        ],
+        "name": [
+          "José Leiva"
+        ],
+        "job-title": [
+          "web designer"
+        ],
+        "region": [
+          "San José"
+        ],
+        "country-name": [
+          "Costa Rica"
+        ],
+        "note": [
+          "Actualmente trabajo para Backcountry.com como full snack developer. Me gusta cocinar, leer y escuchar podcasts."
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-feed"
+      ],
+      "properties": {
+        "name": [
+          "Del blog"
+        ],
+        "summary": [
+          "Algunas notas y links que voy recopilando; te podés suscribir al RSS feed."
+        ]
+      },
+      "children": [
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "input de tipo search"
+            ],
+            "url": [
+              "https://leivajd.com/nota/til-input-search"
+            ],
+            "published": [
+              "2022-05-17"
+            ],
+            "content": [
+              {
+                "html": "<p><strong>TIL</strong> que los elementos <code>input</code> cuando reciben el valor de <code>search</code> para atributo <code>type</code>, nos proveen funcionalidades como autocomplete y una manera nativa de limpiar el input.</p>\n<pre><code>&lt;form&gt;\n    &lt;div&gt;\n        &lt;input type=\"search\" id=\"mySearch\" name=\"q\"&gt;\n        &lt;button&gt;Search&lt;/button&gt;\n    &lt;/div&gt;\n&lt;/form&gt;\n</code></pre>\n<p>Funciona similar al atributo <code>text</code>, pero dependiendo del browser el estilo es diferente, en Chrome muestra una X que cuando se le da click limpia el input.</p>\n<p>Referencia: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/search\"><code>MDN &lt;input type=\"search\"&gt;</code></a></p>",
+                "value": "TIL que los elementos input cuando reciben el valor de search para atributo type, nos proveen funcionalidades como autocomplete y una manera nativa de limpiar el input.\n<form>\n    <div>\n        <input type=\"search\" id=\"mySearch\" name=\"q\">\n        <button>Search</button>\n    </div>\n</form>\n\nFunciona similar al atributo text, pero dependiendo del browser el estilo es diferente, en Chrome muestra una X que cuando se le da click limpia el input.\nReferencia: MDN <input type=\"search\">"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "String.prototype.repeat()"
+            ],
+            "url": [
+              "https://leivajd.com/nota/til-string-repeat"
+            ],
+            "published": [
+              "2022-05-11"
+            ],
+            "content": [
+              {
+                "html": "<p><strong>TIL</strong> el objeto String tiene un método repeat() </p>\n<blockquote>\n<p>The repeat() method constructs and returns a new string which contains the specified number of copies of the string on which it was called, concatenated together.</p>\n</blockquote>\n<p><a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat\">String.prototype.repeat()</a></p>",
+                "value": "TIL el objeto String tiene un método repeat() \n\nThe repeat() method constructs and returns a new string which contains the specified number of copies of the string on which it was called, concatenated together.\n\nString.prototype.repeat()"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "url": [
+              "https://leivajd.com/note/you-get-what-you-ask-03-09",
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "name": [
+                    "José Leiva"
+                  ],
+                  "url": [
+                    "https://leivajd.com/"
+                  ]
+                },
+                "value": "https://leivajd.com/"
+              }
+            ],
+            "published": [
+              "2022-03-09"
+            ],
+            "content": [
+              {
+                "html": "<blockquote>\n<p>“You get in life what you have the courage to ask for.”\n― Oprah Winfrey</p>\n</blockquote>",
+                "value": "“You get in life what you have the courage to ask for.”\n― Oprah Winfrey"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "url": [
+              "https://leivajd.com/note/the-infinite-machine-02-21",
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "name": [
+                    "José Leiva"
+                  ],
+                  "url": [
+                    "https://leivajd.com/"
+                  ]
+                },
+                "value": "https://leivajd.com/"
+              }
+            ],
+            "published": [
+              "2022-02-21"
+            ],
+            "content": [
+              {
+                "html": "<p>Empecé el libro <a href=\"https://www.amazon.com/Infinite-Machine-Crypto-hackers-Building-Internet-ebook/dp/B07X8HS2WC\">The Infinite Machine: How an Army of Crypto-hackers Is Building the Next Internet with Ethereum</a> de <a href=\"https://www.camirusso.com/\">Camila Russo</a>.</p>",
+                "value": "Empecé el libro The Infinite Machine: How an Army of Crypto-hackers Is Building the Next Internet with Ethereum de Camila Russo."
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Refrescando conceptos de DevOps"
+            ],
+            "url": [
+              "https://leivajd.com/nota/refresh-devops"
+            ],
+            "published": [
+              "2022-02-21"
+            ],
+            "content": [
+              {
+                "html": "<p>Encontré el canal de Youtube <a href=\"https://www.youtube.com/channel/UCdngmbVKX1Tgre699-XLlUA\">TechWorld with Nana</a> y me ha ayudado a refrescar conceptos de DevOps, algunos de los que he visto en las ültimas semanas:</p>\n<ul>\n<li><a href=\"https://youtu.be/R8_veQiYBjI\">GitHub Actions Tutorial - Basic Concepts and CI/CD Pipeline with Docker</a></li>\n<li><a href=\"https://youtu.be/3c-iBn73dDE\">Docker Tutorial for Beginners [FULL COURSE in 3 Hours]</a></li>\n<li><a href=\"https://youtu.be/f5EpcWp0THw\">What is GitOps, How GitOps works and Why it's so useful</a></li>\n<li><a href=\"https://youtu.be/MeU5_k9ssrs\">ArgoCD Tutorial for Beginners | GitOps CD for Kubernetes</a></li>\n</ul>",
+                "value": "Encontré el canal de Youtube TechWorld with Nana y me ha ayudado a refrescar conceptos de DevOps, algunos de los que he visto en las ültimas semanas:\n\nGitHub Actions Tutorial - Basic Concepts and CI/CD Pipeline with Docker\nDocker Tutorial for Beginners [FULL COURSE in 3 Hours]\nWhat is GitOps, How GitOps works and Why it's so useful\nArgoCD Tutorial for Beginners | GitOps CD for Kubernetes"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "rels": {
+    "alternate": [
+      "https://leivajd.com/rss.xml"
+    ],
+    "icon": [
+      "https://leivajd.com/icons/icon-48x48.png?v=962eca55980480d36c11ce8363ff5854"
+    ],
+    "manifest": [
+      "https://leivajd.com/manifest.webmanifest"
+    ],
+    "apple-touch-icon": [
+      "https://leivajd.com/icons/icon-48x48.png?v=962eca55980480d36c11ce8363ff5854",
+      "https://leivajd.com/icons/icon-72x72.png?v=962eca55980480d36c11ce8363ff5854",
+      "https://leivajd.com/icons/icon-96x96.png?v=962eca55980480d36c11ce8363ff5854",
+      "https://leivajd.com/icons/icon-144x144.png?v=962eca55980480d36c11ce8363ff5854",
+      "https://leivajd.com/icons/icon-192x192.png?v=962eca55980480d36c11ce8363ff5854",
+      "https://leivajd.com/icons/icon-256x256.png?v=962eca55980480d36c11ce8363ff5854",
+      "https://leivajd.com/icons/icon-384x384.png?v=962eca55980480d36c11ce8363ff5854",
+      "https://leivajd.com/icons/icon-512x512.png?v=962eca55980480d36c11ce8363ff5854"
+    ],
+    "dns-prefetch": [
+      "https://www.google-analytics.com/"
+    ],
+    "preconnect": [
+      "https://www.google-analytics.com/"
+    ],
+    "preload": [
+      "https://leivajd.com/webpack-runtime-9dff1443911c25a236a7.js",
+      "https://leivajd.com/framework-f2db165fb1960f050581.js",
+      "https://leivajd.com/app-85bf80e47552516e0bfe.js",
+      "https://leivajd.com/styles-0dd9b16d06f2e4f550cc.js",
+      "https://leivajd.com/e266ba8dd2f1aa7a006ac17023aa0aa6c88f3854-ba94ebad75cd7138dc8a.js",
+      "https://leivajd.com/component---src-pages-index-js-f75ca38daf7e0fc3d037.js",
+      "https://leivajd.com/page-data/index/page-data.json",
+      "https://leivajd.com/page-data/app-data.json"
+    ],
+    "me": [
+      "https://twitter.com/leivajd",
+      "https://github.com/jleiva",
+      "https://www.drupal.org/user/634642",
+      "https://cr.linkedin.com/in/leivajd",
+      "https://www.instagram.com/leivajd/"
+    ],
+    "bookmark": [
+      "https://leivajd.com/nota/til-input-search",
+      "https://leivajd.com/nota/til-string-repeat",
+      "https://leivajd.com/note/you-get-what-you-ask-03-09",
+      "https://leivajd.com/note/the-infinite-machine-02-21",
+      "https://leivajd.com/nota/refresh-devops"
+    ]
+  },
+  "rel-urls": {
+    "https://leivajd.com/rss.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/rss+xml"
+    },
+    "https://leivajd.com/icons/icon-48x48.png?v=962eca55980480d36c11ce8363ff5854": {
+      "rels": [
+        "icon"
+      ]
+    },
+    "https://leivajd.com/manifest.webmanifest": {
+      "rels": [
+        "manifest"
+      ]
+    },
+    "https://leivajd.com/icons/icon-72x72.png?v=962eca55980480d36c11ce8363ff5854": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://leivajd.com/icons/icon-96x96.png?v=962eca55980480d36c11ce8363ff5854": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://leivajd.com/icons/icon-144x144.png?v=962eca55980480d36c11ce8363ff5854": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://leivajd.com/icons/icon-192x192.png?v=962eca55980480d36c11ce8363ff5854": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://leivajd.com/icons/icon-256x256.png?v=962eca55980480d36c11ce8363ff5854": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://leivajd.com/icons/icon-384x384.png?v=962eca55980480d36c11ce8363ff5854": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://leivajd.com/icons/icon-512x512.png?v=962eca55980480d36c11ce8363ff5854": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://www.google-analytics.com/": {
+      "rels": [
+        "dns-prefetch",
+        "preconnect"
+      ]
+    },
+    "https://leivajd.com/webpack-runtime-9dff1443911c25a236a7.js": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://leivajd.com/framework-f2db165fb1960f050581.js": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://leivajd.com/app-85bf80e47552516e0bfe.js": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://leivajd.com/styles-0dd9b16d06f2e4f550cc.js": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://leivajd.com/e266ba8dd2f1aa7a006ac17023aa0aa6c88f3854-ba94ebad75cd7138dc8a.js": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://leivajd.com/component---src-pages-index-js-f75ca38daf7e0fc3d037.js": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://leivajd.com/page-data/index/page-data.json": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://leivajd.com/page-data/app-data.json": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://twitter.com/leivajd": {
+      "rels": [
+        "me"
+      ],
+      "text": "twitter.com/leivajd"
+    },
+    "https://github.com/jleiva": {
+      "rels": [
+        "me"
+      ],
+      "text": "github.com/jleiva"
+    },
+    "https://www.drupal.org/user/634642": {
+      "rels": [
+        "me"
+      ],
+      "text": "drupal.org/user/634642"
+    },
+    "https://cr.linkedin.com/in/leivajd": {
+      "rels": [
+        "me"
+      ],
+      "text": "linkedin.com/in/leivajd"
+    },
+    "https://www.instagram.com/leivajd/": {
+      "rels": [
+        "me"
+      ],
+      "text": "instagram.com/leivajd/"
+    },
+    "https://leivajd.com/nota/til-input-search": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "input de tipo search"
+    },
+    "https://leivajd.com/nota/til-string-repeat": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "String.prototype.repeat()"
+    },
+    "https://leivajd.com/note/you-get-what-you-ask-03-09": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "2022-03-09"
+    },
+    "https://leivajd.com/note/the-infinite-machine-02-21": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "2022-02-21"
+    },
+    "https://leivajd.com/nota/refresh-devops": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "Refrescando conceptos de DevOps"
+    }
+  }
+}

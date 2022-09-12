@@ -1,0 +1,285 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-feed"
+      ],
+      "properties": {},
+      "children": [
+        {
+          "type": [
+            "h-card"
+          ],
+          "properties": {
+            "photo": [
+              "https://stark-moon-46.s3.amazonaws.com/images/16299.jpg"
+            ],
+            "url": [
+              "https://herestomwiththeweather.com/"
+            ],
+            "uid": [
+              "https://herestomwiththeweather.com/"
+            ],
+            "name": [
+              "Tom"
+            ],
+            "email": [
+              "mailto:herestomwiththeweather@gmail.com"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "url": [
+              "https://herestomwiththeweather.com/social/2022/08/02/4466/"
+            ],
+            "time": [
+              "2022-08-02T01:14:26+00:00"
+            ],
+            "name": [
+              {
+                "type": [
+                  "h-entry"
+                ],
+                "properties": {
+                  "like-of": [
+                    "https://martymcgui.re/2022/07/31/switching-costs-for-an-indieauth-server/"
+                  ],
+                  "name": [
+                    "Liked\n    \n      https://martymcgui.re/2022/07/31/switching-costs-for-an-indieauth-server/"
+                  ]
+                },
+                "value": "Liked\n    \n      https://martymcgui.re/2022/07/31/switching-costs-for-an-indieauth-server/"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "P-Hacking Example",
+              ""
+            ],
+            "url": [
+              "https://herestomwiththeweather.com/2022/07/29/p-hacking-example/"
+            ],
+            "time": [
+              "2022-07-29T21:09:37+00:00"
+            ],
+            "content": [
+              {
+                "html": "<p>One of the most interesting lessons from the pandemic is the harm that can be caused by <a href=\"https://en.wikipedia.org/wiki/Data_dredging\">p-hacking</a>.  A paper with errors related to p-hacking that hasn’t been peer-reviewed is promoted by one or more people with millions of followers on social media and then some of those followers suffer horrible outcomes because they had a false sense of security.  Maybe the authors of the paper did not even realize the problem but for whatever reason, the social media rock stars felt the need to spread the misinformation.  And another very interesting lesson is that the social media rock stars seem to almost never issue a correction after the paper is reviewed and rejected.</p>\n\n<p>To illustrate p-hacking with a non-serious example, I am using real public data with my experience attending drop-in hockey.</p>\n\n<p>I wanted to know if goalies tended to show up more or less frequently on any particular day of the week because it is more fun to play when at least one goalie shows up.  I collected 85 independent samples.</p>\n\n<p>For all days, there were 27 days with 1 goalie and 27 days with 2 goalies and 31 days with 0 goalies.</p>\n\n<p>Our test procedure will define the test statistic X = the number of days that at least one goalie registered.</p>\n\n<p>I am not smart so instead of committing to a hypothesis to test prior to looking at the data, I cheat and look at the data first and notice that the numbers for Tuesday look especially low.  So, I focus on goalie registrations on Tuesdays.  Using the data above for all days, the null hypothesis <script type=\"math/tex\">H_0</script> is that the probability that at least one goalie registered on a Tuesday is 0.635.</p>\n\n<p>For perspective, taking 19 samples for Tuesday would give an expected value of 12 samples where at least 1 goalie registered.</p>\n\n<p>Suppose we wanted to propose an alternative hypothesis that p &lt; 0.635 for Tuesday.  What is the rejection region of values that would refute the null hypothesis (p=0.635)?</p>\n\n<p>Let’s aim for α = 0.05 as the level of significance.  This means that (pretending that I had not egregiously cherry-picked data beforehand) we want there to be less than a 5% chance that the experimental result would occur inside the rejection region if the null hypothesis was true (Type I error).</p>\n\n<p>For a binomial random variable X, the pmf b(x; n, p) is</p>\n\n<script type=\"math/tex; mode=display\">{n \\choose x} p^x (1-p)^{n-x}</script>\n\n<div class=\"highlighter-rouge\">\n<pre class=\"highlight\"><code>def factorial(n)\n  (1..n).inject(:*) || 1\nend\n\ndef combination(n,k)\n  factorial(n) / (factorial(k)*factorial(n-k))\nend\n\ndef pmf(x,n,p)\n  combination(n,x) * (p ** x) * ((1 - p) ** (n-x))\nend\n</code></pre>\n</div>\n<p>The cdf B(x; n, p) = P(X <script type=\"math/tex\">\\le</script> x) is</p>\n\n<script type=\"math/tex; mode=display\">\\sum_{i=0}^x b(i; n, p)</script>\n\n<div class=\"highlighter-rouge\">\n<pre class=\"highlight\"><code>def cdf(x,n,p)\n  (0..x).map {|i| pmf(i,n,p)}.sum\nend\n</code></pre>\n</div>\n\n<p>For n=19 samples, if x <script type=\"math/tex\">\\le</script> 9 was chosen as the rejection region, then α = P(X <script type=\"math/tex\">\\le</script> 9 when X ~ Bin(19, 0.635)) = 0.112</p>\n\n<div class=\"highlighter-rouge\">\n<pre class=\"highlight\"><code>2.4.10 :001 &gt; load 'stats.rb'\n =&gt; true \n2.4.10 :002 &gt; cdf(9,19,0.635)\n =&gt; 0.1121416295262306 \n</code></pre>\n</div>\n<p>This choice is not good enough because even if the null hypothesis is true, there is a large 11% chance (again, pretending I had not cherry-picked the data) that the test statistic falls in the rejection region.</p>\n\n<p>So, if we narrow the rejection region to x <script type=\"math/tex\">\\le</script> 8, then α = P(X <script type=\"math/tex\">\\le</script> 8 when X ~ Bin(19, 0.635)) = 0.047</p>\n\n<div class=\"highlighter-rouge\">\n<pre class=\"highlight\"><code>2.4.10 :003 &gt; cdf(8,19,0.635)\n =&gt; 0.04705965393607316\n</code></pre>\n</div>\n\n<p>This rejection region satisfies the requirement of a 0.05 significance level.</p>\n\n<p>The n=19 samples for Tuesday are [0, 0, 0, 1, 0, 0, 0, 0, 1, 2, 0, 1, 1, 0, 1, 2, 2, 0, 0].</p>\n\n<p>Since x=8 falls within the rejection region, the null hypothesis is (supposedly) rejected for Tuesday samples.  So I announce to my hockey friends on social media “Beware! Compared to all days of the week, it is less likely that at least one goalie will register on a Tuesday!”</p>\n\n<p><img src=\"https://coffeebucks.s3.amazonaws.com/nope_not_how_it_works.jpg\" alt=\"Nope, not how it works\"></p>\n\n<p>Before addressing the p-hacking, let’s first address another issue.  The experimental result was x = 8 which gave us a 0.047 probability of obtaining 8 or less days in a sample of 19 assuming that the null hypothesis (p=0.635) is true.  This result just barely makes the 0.05 cutoff by the skin of its teeth.  So, just saying that the null hypothesis was refuted with α = 0.05 does not reveal that it was barely refuted.  Therefore, it is much more informative to say the <a href=\"https://en.wikipedia.org/wiki/P-value\">p-value</a> was 0.047 and also does not impose a particular α on readers who want to draw their own conclusions.</p>\n\n<p>Now let’s discuss the p-hacking problem.  I gave myself the impression that there was only a 5% chance that I would see a significant result even if the null hypothesis (p=0.635) were true.  However, since there is data for 5 days (Monday, Tuesday, Wednesday, Thursday, Friday), I could have performed 5 different tests.  If I chose that same p &lt; 0.635 alternative hypothesis for each, then there would similarly be a 5% chance of a significant result for each test.  The probability that all 5 tests would not be significant would be 0.95 * 0.95 * 0.95 * 0.95 * 0.95 = 0.77.  Therefore, the probability that at least one test would be significant is 1 - 0.77 = 0.23 (the <a href=\"https://en.wikipedia.org/wiki/Family-wise_error_rate\">Family-wise error rate</a>) which is much higher than 0.05.  That’s like flipping a coin twice and getting two heads which is not surprising at all.  We should expect such a result even if the null hypothesis is true.  Therefore, there is not a significant result for Tuesday.</p>\n\n<p>I was inspired to write this blog post after watching <a href=\"https://twitter.com/DrSusanOliver1\">Dr. Susan Oliver</a>’s <a href=\"https://www.youtube.com/watch?v=drSAsfuMkuw\">Antivaxxers fooled by P-Hacking and apples to oranges comparisons</a>.  The video references the paper <a href=\"https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002106\">The Extent and Consequences of P-Hacking in Science</a> (2015).</p>",
+                "value": "One of the most interesting lessons from the pandemic is the harm that can be caused by p-hacking.  A paper with errors related to p-hacking that hasn’t been peer-reviewed is promoted by one or more people with millions of followers on social media and then some of those followers suffer horrible outcomes because they had a false sense of security.  Maybe the authors of the paper did not even realize the problem but for whatever reason, the social media rock stars felt the need to spread the misinformation.  And another very interesting lesson is that the social media rock stars seem to almost never issue a correction after the paper is reviewed and rejected.\n\nTo illustrate p-hacking with a non-serious example, I am using real public data with my experience attending drop-in hockey.\n\nI wanted to know if goalies tended to show up more or less frequently on any particular day of the week because it is more fun to play when at least one goalie shows up.  I collected 85 independent samples.\n\nFor all days, there were 27 days with 1 goalie and 27 days with 2 goalies and 31 days with 0 goalies.\n\nOur test procedure will define the test statistic X = the number of days that at least one goalie registered.\n\nI am not smart so instead of committing to a hypothesis to test prior to looking at the data, I cheat and look at the data first and notice that the numbers for Tuesday look especially low.  So, I focus on goalie registrations on Tuesdays.  Using the data above for all days, the null hypothesis  is that the probability that at least one goalie registered on a Tuesday is 0.635.\n\nFor perspective, taking 19 samples for Tuesday would give an expected value of 12 samples where at least 1 goalie registered.\n\nSuppose we wanted to propose an alternative hypothesis that p < 0.635 for Tuesday.  What is the rejection region of values that would refute the null hypothesis (p=0.635)?\n\nLet’s aim for α = 0.05 as the level of significance.  This means that (pretending that I had not egregiously cherry-picked data beforehand) we want there to be less than a 5% chance that the experimental result would occur inside the rejection region if the null hypothesis was true (Type I error).\n\nFor a binomial random variable X, the pmf b(x; n, p) is\n\n\n\ndef factorial(n)\n  (1..n).inject(:*) || 1\nend\n\ndef combination(n,k)\n  factorial(n) / (factorial(k)*factorial(n-k))\nend\n\ndef pmf(x,n,p)\n  combination(n,x) * (p ** x) * ((1 - p) ** (n-x))\nend\n\n\nThe cdf B(x; n, p) = P(X  x) is\n\n\n\ndef cdf(x,n,p)\n  (0..x).map {|i| pmf(i,n,p)}.sum\nend\n\n\n\nFor n=19 samples, if x  9 was chosen as the rejection region, then α = P(X  9 when X ~ Bin(19, 0.635)) = 0.112\n\n2.4.10 :001 > load 'stats.rb'\n => true \n2.4.10 :002 > cdf(9,19,0.635)\n => 0.1121416295262306 \n\n\nThis choice is not good enough because even if the null hypothesis is true, there is a large 11% chance (again, pretending I had not cherry-picked the data) that the test statistic falls in the rejection region.\n\nSo, if we narrow the rejection region to x  8, then α = P(X  8 when X ~ Bin(19, 0.635)) = 0.047\n\n2.4.10 :003 > cdf(8,19,0.635)\n => 0.04705965393607316\n\n\n\nThis rejection region satisfies the requirement of a 0.05 significance level.\n\nThe n=19 samples for Tuesday are [0, 0, 0, 1, 0, 0, 0, 0, 1, 2, 0, 1, 1, 0, 1, 2, 2, 0, 0].\n\nSince x=8 falls within the rejection region, the null hypothesis is (supposedly) rejected for Tuesday samples.  So I announce to my hockey friends on social media “Beware! Compared to all days of the week, it is less likely that at least one goalie will register on a Tuesday!”\n\n Nope, not how it works \n\nBefore addressing the p-hacking, let’s first address another issue.  The experimental result was x = 8 which gave us a 0.047 probability of obtaining 8 or less days in a sample of 19 assuming that the null hypothesis (p=0.635) is true.  This result just barely makes the 0.05 cutoff by the skin of its teeth.  So, just saying that the null hypothesis was refuted with α = 0.05 does not reveal that it was barely refuted.  Therefore, it is much more informative to say the p-value was 0.047 and also does not impose a particular α on readers who want to draw their own conclusions.\n\nNow let’s discuss the p-hacking problem.  I gave myself the impression that there was only a 5% chance that I would see a significant result even if the null hypothesis (p=0.635) were true.  However, since there is data for 5 days (Monday, Tuesday, Wednesday, Thursday, Friday), I could have performed 5 different tests.  If I chose that same p < 0.635 alternative hypothesis for each, then there would similarly be a 5% chance of a significant result for each test.  The probability that all 5 tests would not be significant would be 0.95 * 0.95 * 0.95 * 0.95 * 0.95 = 0.77.  Therefore, the probability that at least one test would be significant is 1 - 0.77 = 0.23 (the Family-wise error rate) which is much higher than 0.05.  That’s like flipping a coin twice and getting two heads which is not surprising at all.  We should expect such a result even if the null hypothesis is true.  Therefore, there is not a significant result for Tuesday.\n\nI was inspired to write this blog post after watching Dr. Susan Oliver’s Antivaxxers fooled by P-Hacking and apples to oranges comparisons.  The video references the paper The Extent and Consequences of P-Hacking in Science (2015)."
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Good time to wear N95s",
+              ""
+            ],
+            "url": [
+              "https://herestomwiththeweather.com/2022/06/13/good-time-to-wear-n95s/"
+            ],
+            "time": [
+              "2022-06-13T05:34:45+00:00"
+            ],
+            "content": [
+              {
+                "html": "<p>A few weeks ago, I ordered a <a href=\"https://www.staples.com/3m-aura-n95-particulate-respirator-white-20-pack-9205p-20-dc/product_24503827\">box of N95 masks</a> as I had been following the rising positivity rate.  Both <a href=\"https://www.washingtonpost.com/health/2022/05/25/long-covid-vaccines-slight-protection/\">Vaccines may not prevent many symptoms of long covid, study suggests</a> and <a href=\"https://www.washingtonpost.com/health/2022/05/25/long-covid-vaccines-slight-protection/\">1 Of 5 With Covid May Develop Long Covid, CDC Finds</a> were also persuasive.</p>",
+                "value": "A few weeks ago, I ordered a box of N95 masks as I had been following the rising positivity rate.  Both Vaccines may not prevent many symptoms of long covid, study suggests and 1 Of 5 With Covid May Develop Long Covid, CDC Finds were also persuasive."
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Memory Fail",
+              ""
+            ],
+            "url": [
+              "https://herestomwiththeweather.com/2022/06/11/memory-fail/"
+            ],
+            "time": [
+              "2022-06-11T14:40:40+00:00"
+            ],
+            "content": [
+              {
+                "html": "<p>A long time ago, I read <a href=\"https://openlibrary.org/isbn/0060976519\">The Language Instinct</a>.  Inside the back page of my book are notes with page numbers.  This is a practice I learned from a <a href=\"https://openlibrary.org/books/OL7563133M/World_Is_My_Home\">book</a> by <a href=\"https://en.wikipedia.org/wiki/James_A._Michener\">James Michener</a>.  At some point, I started sharing in conversations something I learned.  Unfortunately, I had not made a note for this that I could check and the information was more complex than I remembered.  Since I had shared this more than once, I thought I should really find the reference and it was not easy but I found it on page 293.  The first part I had right.</p>\n\n<div class=\"highlighter-rouge\">\n<pre class=\"highlight\"><code>In sum, acquisition of a normal language is guaranteed for children up to the age of six, is steadily compromised from then until shortly after puberty, and is rare thereafter.\n</code></pre>\n</div>\n\n<p>Here is the part I screwed up.</p>\n\n<div class=\"highlighter-rouge\">\n<pre class=\"highlight\"><code>We do know that the language-learning circuitry of the brain is more plastic in childhood; children learn or recover language when the left hemisphere of the brain is damaged or even surgically removed (though not quite at normal levels), but comparable damage in an adult usually leads to permanent aphasia.\n</code></pre>\n</div>\n\n<p>While this itself is fascinating to me, I had been embellishing the story to say language is acquired in the brain’s right hemisphere in children and the left for adults.  Now that I’m rereading it after so many years, it is clear that the book says this can happen but is not necessarily so.</p>",
+                "value": "A long time ago, I read The Language Instinct.  Inside the back page of my book are notes with page numbers.  This is a practice I learned from a book by James Michener.  At some point, I started sharing in conversations something I learned.  Unfortunately, I had not made a note for this that I could check and the information was more complex than I remembered.  Since I had shared this more than once, I thought I should really find the reference and it was not easy but I found it on page 293.  The first part I had right.\n\nIn sum, acquisition of a normal language is guaranteed for children up to the age of six, is steadily compromised from then until shortly after puberty, and is rare thereafter.\n\n\n\nHere is the part I screwed up.\n\nWe do know that the language-learning circuitry of the brain is more plastic in childhood; children learn or recover language when the left hemisphere of the brain is damaged or even surgically removed (though not quite at normal levels), but comparable damage in an adult usually leads to permanent aphasia.\n\n\n\nWhile this itself is fascinating to me, I had been embellishing the story to say language is acquired in the brain’s right hemisphere in children and the left for adults.  Now that I’m rereading it after so many years, it is clear that the book says this can happen but is not necessarily so."
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Linking to OpenLibrary for read posts",
+              ""
+            ],
+            "url": [
+              "https://herestomwiththeweather.com/2022/05/29/linking-to-openlibrary-for-read-posts/"
+            ],
+            "time": [
+              "2022-05-29T22:59:02+00:00"
+            ],
+            "content": [
+              {
+                "html": "<p>My blog is now linking to <a href=\"https://openlibrary.org/\">openlibrary.org</a> for <a href=\"https://indieweb.org/read\">read posts</a>. If you have the book’s ISBN, then it is trivial to link to openlibrary’s page for your book.  It would be cool if those pages accepted webmention so that you could see who is reading the book.</p>",
+                "value": "My blog is now linking to openlibrary.org for read posts. If you have the book’s ISBN, then it is trivial to link to openlibrary’s page for your book.  It would be cool if those pages accepted webmention so that you could see who is reading the book."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "rels": {
+    "stylesheet": [
+      "https://herestomwiththeweather.com/css/main.css"
+    ],
+    "canonical": [
+      "https://herestomwiththeweather.com/"
+    ],
+    "alternate": [
+      "https://herestomwiththeweather.com/feed.xml"
+    ],
+    "micropub": [
+      "https://supermicropub.herokuapp.com/micropub/main"
+    ],
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "microsub": [
+      "https://aperture.p3k.io/microsub/20"
+    ],
+    "me": [
+      "https://micro.blog/tomwiththeweather",
+      "https://herestomwiththeweather.com/",
+      "https://mastodon.social/@herestomwiththeweather",
+      "https://www.goodreads.com/user/show/656838-tom-brown",
+      "https://twitter.com/tomwiththeweath",
+      "https://github.com/herestomwiththeweather",
+      "https://keybase.io/tbbrown",
+      "https://www.flickr.com/photos/tbbrown"
+    ],
+    "webmention": [
+      "https://elro.herokuapp.com/api/webmention"
+    ],
+    "next": [
+      "https://herestomwiththeweather.com/page2"
+    ]
+  },
+  "rel-urls": {
+    "https://herestomwiththeweather.com/css/main.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://herestomwiththeweather.com/": {
+      "rels": [
+        "canonical"
+      ]
+    },
+    "https://herestomwiththeweather.com/feed.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "HeresTomWithTheWeather",
+      "type": "application/rss+xml"
+    },
+    "https://supermicropub.herokuapp.com/micropub/main": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://aperture.p3k.io/microsub/20": {
+      "rels": [
+        "microsub"
+      ]
+    },
+    "https://micro.blog/tomwiththeweather": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://elro.herokuapp.com/api/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://herestomwiththeweather.com/page2": {
+      "rels": [
+        "next"
+      ]
+    },
+    "https://mastodon.social/@herestomwiththeweather": {
+      "rels": [
+        "me"
+      ],
+      "title": "Mastodon"
+    },
+    "https://www.goodreads.com/user/show/656838-tom-brown": {
+      "rels": [
+        "me"
+      ],
+      "title": "Goodreads"
+    },
+    "https://twitter.com/tomwiththeweath": {
+      "rels": [
+        "me"
+      ],
+      "title": "Twitter"
+    },
+    "https://github.com/herestomwiththeweather": {
+      "rels": [
+        "me"
+      ],
+      "title": "GitHub"
+    },
+    "https://keybase.io/tbbrown": {
+      "rels": [
+        "me"
+      ],
+      "title": "Keybase",
+      "text": "\n.st0{fill:#cccccc;}\n\t"
+    },
+    "https://www.flickr.com/photos/tbbrown": {
+      "rels": [
+        "me"
+      ],
+      "title": "Flickr"
+    }
+  }
+}

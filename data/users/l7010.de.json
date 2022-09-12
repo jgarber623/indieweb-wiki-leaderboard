@@ -1,0 +1,64 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "name": [
+          "squiddle"
+        ],
+        "url": [
+          "http://l7010.de/"
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "openid.server": [
+      "http://l7010.de/simpleid/"
+    ],
+    "openid.delegate": [
+      "http://l7010.de/"
+    ],
+    "openid2.provider": [
+      "http://l7010.de/simpleid/"
+    ],
+    "openid2.local_id": [
+      "http://l7010.de/"
+    ],
+    "me": [
+      "https://twitter.com/squiddle",
+      "https://github.com/squiddle",
+      "http://twitter.com/squiddle"
+    ]
+  },
+  "rel-urls": {
+    "http://l7010.de/simpleid/": {
+      "rels": [
+        "openid.server"
+      ]
+    },
+    "http://l7010.de/": {
+      "rels": [
+        "openid.delegate"
+      ]
+    },
+    "https://twitter.com/squiddle": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://github.com/squiddle": {
+      "rels": [
+        "me"
+      ]
+    },
+    "http://twitter.com/squiddle": {
+      "rels": [
+        "me"
+      ],
+      "text": "twitter"
+    }
+  }
+}

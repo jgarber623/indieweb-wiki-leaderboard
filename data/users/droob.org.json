@@ -1,0 +1,51 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "photo": [
+          {
+            "value": "https://droob.org/drew.jpg",
+            "alt": "Diana drew this Drew."
+          }
+        ],
+        "note": [
+          "Drew Bell is a designer and front-end developer who\n          can help you with your next project."
+        ],
+        "email": [
+          "mailto:drew@droob.org"
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "me": [
+      "https://github.com/droob",
+      "https://micro.blog/droob"
+    ],
+    "alternate": [
+      "https://droob.org/feed.json"
+    ]
+  },
+  "rel-urls": {
+    "https://github.com/droob": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://micro.blog/droob": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://droob.org/feed.json": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Drew’s Writing Feed",
+      "type": "application/json"
+    }
+  }
+}

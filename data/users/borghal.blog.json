@@ -47,22 +47,22 @@
           }
         ],
         "url": [
-          "https://borghal.blog/note/2022/09/142100/"
+          "https://borghal.blog/note/2022/09/11/194932/"
         ],
         "published": [
-          "2022-09-09 14:22:00 -0400 -0400"
+          "2022-09-11 19:49:32.513468 -0400 -0400"
         ],
         "in-reply-to": [
-          "https://chringel.dev/2022/09/09/0926/"
+          "https://blog.libove.org/posts/1662922088-reply-to-leveling-up-my-indieweb-game/"
         ],
         "name": [
-          "Thanks for the comment, fellow Christian!\nI wasn’t familiar with Wouter Groenevald’s article, but now I have bookmarked. It’s full of good stuff! But, like you, I feel comfortable with the webmentions being rendered server-side when the site is build. This is not Twitter, after all. They can wait.\nI’m also looking forward to start implementing micropub. I’ll document as I go along. I’ll keep an eye on your progress, too!"
+          "Hey, I received your webmention! But webmention.io (the service I use to process the webmentions) didn’t find your name in your markup, I guess.\nThank you for your encouragement about the way I display webmentions! And the fact that yours came through without an author will help me better deal with that edge case.\nAnd certainly, reducing the friction in publishing is my main goal with implementing micropub! Though I’m still a long way from even starting working on that."
         ],
         "content": [
-          "Thanks for the comment, fellow Christian!\nI wasn’t familiar with Wouter Groenevald’s article, but now I have bookmarked. It’s full of good stuff! But, like you, I feel comfortable with the webmentions being rendered server-side when the site is build. This is not Twitter, after all. They can wait.\nI’m also looking forward to start implementing micropub. I’ll document as I go along. I’ll keep an eye on your progress, too!",
+          "Hey, I received your webmention! But webmention.io (the service I use to process the webmentions) didn’t find your name in your markup, I guess.\nThank you for your encouragement about the way I display webmentions! And the fact that yours came through without an author will help me better deal with that edge case.\nAnd certainly, reducing the friction in publishing is my main goal with implementing micropub! Though I’m still a long way from even starting working on that.",
           {
-            "html": "<p>Thanks for the comment, fellow Christian!</p>\n<p>I wasn’t familiar with <a href=\"https://brainbaking.com/post/2021/05/beyond-webmention-io/\">Wouter Groenevald’s article</a>, but now I have bookmarked. It’s full of good stuff! But, like you, I feel comfortable with the webmentions being rendered server-side when the site is build. This is not Twitter, after all. They can wait.</p>\n<p>I’m also looking forward to start implementing micropub. I’ll document as I go along. I’ll keep an eye on your progress, too!</p>",
-            "value": "Thanks for the comment, fellow Christian!\nI wasn’t familiar with Wouter Groenevald’s article, but now I have bookmarked. It’s full of good stuff! But, like you, I feel comfortable with the webmentions being rendered server-side when the site is build. This is not Twitter, after all. They can wait.\nI’m also looking forward to start implementing micropub. I’ll document as I go along. I’ll keep an eye on your progress, too!"
+            "html": "<p>Hey, I received your webmention! But webmention.io (the service I use to process the webmentions) didn’t find your name in your markup, I guess.</p>\n<p>Thank you for your encouragement about the way I display webmentions! And the fact that yours came through without an author will help me better deal with that edge case.</p>\n<p>And certainly, reducing the friction in publishing is my main goal with implementing micropub! Though I’m still a long way from even starting working on that.</p>",
+            "value": "Hey, I received your webmention! But webmention.io (the service I use to process the webmentions) didn’t find your name in your markup, I guess.\nThank you for your encouragement about the way I display webmentions! And the fact that yours came through without an author will help me better deal with that edge case.\nAnd certainly, reducing the friction in publishing is my main goal with implementing micropub! Though I’m still a long way from even starting working on that."
           }
         ],
         "category": [
@@ -91,6 +91,9 @@
     ],
     "webmention": [
       "https://webmention.io/borghal.blog/webmention"
+    ],
+    "canonical": [
+      "https://borghal.blog/"
     ],
     "stylesheet": [
       "https://borghal.blog/css/borghal.css"
@@ -138,6 +141,11 @@
     "https://webmention.io/borghal.blog/webmention": {
       "rels": [
         "webmention"
+      ]
+    },
+    "https://borghal.blog/": {
+      "rels": [
+        "canonical"
       ]
     },
     "https://borghal.blog/css/borghal.css": {

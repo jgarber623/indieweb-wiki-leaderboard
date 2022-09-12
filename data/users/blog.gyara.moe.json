@@ -1,0 +1,129 @@
+{
+  "items": [],
+  "rels": {
+    "alternate": [
+      "https://blog.gyara.moe/atom.xml"
+    ],
+    "authn": [
+      "https://meta.sr.ht/%7Efubuki.pgp"
+    ],
+    "pgpkey": [
+      "https://meta.sr.ht/%7Efubuki.pgp"
+    ],
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "hub": [
+      "https://pubsubhubbub.appspot.com/"
+    ],
+    "self": [
+      "https://blog.gyara.moe/atom.xml"
+    ],
+    "webmention": [
+      "https://webmention.io/blog.gyara.moe/webmention"
+    ],
+    "pingback": [
+      "https://webmention.io/blog.gyara.moe/xmlrpc"
+    ],
+    "stylesheet": [
+      "https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap",
+      "https://storage.googleapis.com/blog_gyara/font/iosevka-fixed-ss10.css",
+      "https://storage.googleapis.com/blog_gyara/font/phi.css",
+      "https://unpkg.com/heti/umd/heti.min.css",
+      "https://blog.gyara.moe/main-6eeb79c861b2606c.css"
+    ],
+    "icon": [
+      "https://blog.gyara.moe/favicon-a6ee5a006f8d3f6a.ico"
+    ],
+    "preload": [
+      "https://blog.gyara.moe/fubuki-d6afff960c07ed95_bg.wasm"
+    ],
+    "modulepreload": [
+      "https://blog.gyara.moe/fubuki-d6afff960c07ed95.js"
+    ]
+  },
+  "rel-urls": {
+    "https://blog.gyara.moe/atom.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Gyara Studio",
+      "type": "application/atom+xml"
+    },
+    "https://meta.sr.ht/%7Efubuki.pgp": {
+      "rels": [
+        "authn",
+        "pgpkey"
+      ]
+    },
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://pubsubhubbub.appspot.com/": {
+      "rels": [
+        "hub"
+      ]
+    },
+    "https://webmention.io/blog.gyara.moe/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://webmention.io/blog.gyara.moe/xmlrpc": {
+      "rels": [
+        "pingback"
+      ]
+    },
+    "https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://storage.googleapis.com/blog_gyara/font/iosevka-fixed-ss10.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://storage.googleapis.com/blog_gyara/font/phi.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://unpkg.com/heti/umd/heti.min.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://blog.gyara.moe/main-6eeb79c861b2606c.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://blog.gyara.moe/favicon-a6ee5a006f8d3f6a.ico": {
+      "rels": [
+        "icon"
+      ]
+    },
+    "https://blog.gyara.moe/fubuki-d6afff960c07ed95_bg.wasm": {
+      "rels": [
+        "preload"
+      ],
+      "type": "application/wasm"
+    },
+    "https://blog.gyara.moe/fubuki-d6afff960c07ed95.js": {
+      "rels": [
+        "modulepreload"
+      ]
+    }
+  }
+}

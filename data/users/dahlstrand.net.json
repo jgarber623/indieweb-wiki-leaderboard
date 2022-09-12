@@ -1,0 +1,88 @@
+{
+  "items": [],
+  "rels": {
+    "canonical": [
+      "https://dahlstrand.net/"
+    ],
+    "webmention": [
+      "https://webmention.io/dahlstrand.net/webmention"
+    ],
+    "pingback": [
+      "https://webmention.io/dahlstrand.net/xmlrpc"
+    ],
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "author": [
+      "https://dahlstrand.net/humans.txt"
+    ],
+    "me": [
+      "https://github.com/svendahlstrand",
+      "https://micro.blog/sod"
+    ],
+    "alternate": [
+      "https://dahlstrand.net/notes/feed.rss"
+    ],
+    "preload": [
+      "https://dahlstrand.net/images/sven.jpg"
+    ]
+  },
+  "rel-urls": {
+    "https://dahlstrand.net/": {
+      "rels": [
+        "canonical"
+      ]
+    },
+    "https://webmention.io/dahlstrand.net/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://webmention.io/dahlstrand.net/xmlrpc": {
+      "rels": [
+        "pingback"
+      ]
+    },
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://dahlstrand.net/humans.txt": {
+      "rels": [
+        "author"
+      ],
+      "type": "text/plain"
+    },
+    "https://github.com/svendahlstrand": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://micro.blog/sod": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://dahlstrand.net/notes/feed.rss": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Sven's Notes",
+      "type": "application/rss+xml"
+    },
+    "https://dahlstrand.net/images/sven.jpg": {
+      "rels": [
+        "preload"
+      ]
+    }
+  }
+}

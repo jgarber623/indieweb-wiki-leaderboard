@@ -1,0 +1,106 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "url": [
+          "http://kodfabrik.se/"
+        ],
+        "uid": [
+          "http://kodfabrik.se/"
+        ],
+        "org": [
+          "Pelles Kodfabrik"
+        ],
+        "photo": [
+          {
+            "value": "https://voxpelli.com/avatar.jpg",
+            "alt": ""
+          }
+        ],
+        "name": [
+          "Pelle Wessman"
+        ],
+        "note": [
+          "I'm a full-stack web developer, open source contributor and IndieWeb participant."
+        ],
+        "job-title": [
+          "full-stack web developer"
+        ],
+        "email": [
+          "mailto:pelle@kodfabrik.se"
+        ],
+        "tel": [
+          "+46 705-15 88 21"
+        ]
+      },
+      "children": [
+        {
+          "type": [
+            "h-adr"
+          ],
+          "properties": {
+            "locality": [
+              "Malmö"
+            ],
+            "country-name": [
+              "Sweden"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "rels": {
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "me": [
+      "https://twitter.com/voxpelli",
+      "https://github.com/voxpelli",
+      "https://voxpelli.com/",
+      "https://npmjs.org/~voxpelli"
+    ]
+  },
+  "rel-urls": {
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://twitter.com/voxpelli": {
+      "rels": [
+        "me"
+      ],
+      "text": "tweet"
+    },
+    "https://github.com/voxpelli": {
+      "rels": [
+        "me"
+      ],
+      "text": "GitHub"
+    },
+    "https://voxpelli.com/": {
+      "rels": [
+        "me"
+      ],
+      "text": "blog"
+    },
+    "https://npmjs.org/~voxpelli": {
+      "rels": [
+        "me"
+      ],
+      "text": "npm modules"
+    }
+  }
+}

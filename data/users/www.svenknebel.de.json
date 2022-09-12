@@ -1,0 +1,454 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-feed"
+      ],
+      "properties": {
+        "name": [
+          "svenknebel.de"
+        ],
+        "url": [
+          "https://www.svenknebel.de/"
+        ]
+      },
+      "children": [
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "bookmark-of": [
+              "https://dmitry.khlebnikov.net/2020/05/10/wrap-indicator-in-pre-blocks/"
+            ],
+            "content": [
+              {
+                "html": "In a <a href=\"https://www.svenknebel.de/posts/2022/5/2/\">recent post</a> I used large <code>&lt;pre&gt;&lt;code&gt;</code> blocks, and I'm not happy with how these look for long lines that overflow, and thus cause a scrollbar. On the other hand, I don't just want to force them to wrap, because that also looks confusing IMHO.\n<p>In a computer magazine I read often, they do put a small arrow at the end of lines that are force-wrapped to fit the page layout, to make it clear that it is just a visual wrap. I quite like that formatting, but replicating it on the web seems to be complicated. This page has the best implementation I've seen yet, but a) requires wrapping each line in a <code>&lt;div&gt;</code> and b) puts it at the end of the container, not right behind the wrapping point. The first would be ok, I could add processing to the site code to automatically add those, the second I need to investigate if it can be changed or not.\n</p>",
+                "value": "In a recent post I used large <pre><code> blocks, and I'm not happy with how these look for long lines that overflow, and thus cause a scrollbar. On the other hand, I don't just want to force them to wrap, because that also looks confusing IMHO.\nIn a computer magazine I read often, they do put a small arrow at the end of lines that are force-wrapped to fit the page layout, to make it clear that it is just a visual wrap. I quite like that formatting, but replicating it on the web seems to be complicated. This page has the best implementation I've seen yet, but a) requires wrapping each line in a <div> and b) puts it at the end of the container, not right behind the wrapping point. The first would be ok, I could add processing to the site code to automatically add those, the second I need to investigate if it can be changed or not."
+              }
+            ],
+            "name": [
+              "In a recent post I used large <pre><code> blocks, and I'm not happy with how these look for long lines that overflow, and thus cause a scrollbar. On the other hand, I don't just want to force them to wrap, because that also looks confusing IMHO.\nIn a computer magazine I read often, they do put a small arrow at the end of lines that are force-wrapped to fit the page layout, to make it clear that it is just a visual wrap. I quite like that formatting, but replicating it on the web seems to be complicated. This page has the best implementation I've seen yet, but a) requires wrapping each line in a <div> and b) puts it at the end of the container, not right behind the wrapping point. The first would be ok, I could add processing to the site code to automatically add those, the second I need to investigate if it can be changed or not."
+            ],
+            "url": [
+              "https://www.svenknebel.de/posts/2022/9/8/"
+            ],
+            "uid": [
+              "https://www.svenknebel.de/posts/2022/9/8/"
+            ],
+            "published": [
+              "2022-09-04 12:01:08.642742+00:00"
+            ],
+            "author": [
+              "https://www.svenknebel.de/"
+            ],
+            "category": [
+              "web",
+              "CSS"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "Indiewebcamp hide-and-seek: Which audio device is Zoom connected now? Are they in the laptop? Are they in the headphones? ...",
+                "value": "Indiewebcamp hide-and-seek: Which audio device is Zoom connected now? Are they in the laptop? Are they in the headphones? ..."
+              }
+            ],
+            "name": [
+              "Indiewebcamp hide-and-seek: Which audio device is Zoom connected now? Are they in the laptop? Are they in the headphones? ..."
+            ],
+            "url": [
+              "https://www.svenknebel.de/posts/2022/9/6/"
+            ],
+            "uid": [
+              "https://www.svenknebel.de/posts/2022/9/6/"
+            ],
+            "published": [
+              "2022-09-03 13:47:13.307245+00:00"
+            ],
+            "author": [
+              "https://www.svenknebel.de/"
+            ],
+            "category": [
+              "IWC"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "Hi IWC Berlin!",
+                "value": "Hi IWC Berlin!"
+              }
+            ],
+            "name": [
+              "Hi IWC Berlin!"
+            ],
+            "url": [
+              "https://www.svenknebel.de/posts/2022/9/4/"
+            ],
+            "uid": [
+              "https://www.svenknebel.de/posts/2022/9/4/"
+            ],
+            "published": [
+              "2022-09-03 11:16:14.343597+00:00"
+            ],
+            "author": [
+              "https://www.svenknebel.de/"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Poking around the filesystem on a Steam Deck"
+            ],
+            "content": [
+              {
+                "html": "<p>The Steam Deck is a nice candidate for some light exploration because it's not just a default install of some standard Linux distro (SteamOS 3.0 is based on Arch, but has been customized), and at the same time it is unlike your usual embedded target: wide open, comes with all the usual system tools we'd immediately strip normally (or not even build in the first place) when making a Linux for a device, and intended to allow breaking out of the safety net and using it as a general-purpose computer.\nTo do this I enabled SSH access to the Deck, because I don't have a USB-C adapter for a keyboard and the on-screen keyboard, while not entirely terrible, really isn't nice to use for shell stuff. So I only used it to set a password for the default \"deck\" user with passwd and turned on SSH temporarily with sudo systemctl enable sshd.\nBy default the Steam Deck ships with a read-only rootfs, and while you can disable this it is warned that updates will reset it. At the same time, it clearly needs some places to have games/settings/user data, so those will be mounted elsewhere. So lets look at the block devices:</p>\n<pre><code>(deck@steamdeck ~)$ lsblk\nNAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS\nnvme0n1     259:0    0 476.9G  0 disk\n├─nvme0n1p1 259:1    0    64M  0 part\n├─nvme0n1p2 259:2    0    32M  0 part\n├─nvme0n1p3 259:3    0    32M  0 part\n├─nvme0n1p4 259:4    0     5G  0 part\n├─nvme0n1p5 259:5    0     5G  0 part /\n├─nvme0n1p6 259:6    0   256M  0 part\n├─nvme0n1p7 259:7    0   256M  0 part /var\n└─nvme0n1p8 259:8    0 466.3G  0 part /var/tmp\n                                      /var/log\n                                      /var/lib/systemd/coredump\n                                      /var/lib/flatpak\n                                      /var/lib/docker\n                                      /root\n                                      /var/cache/pacman\n                                      /srv\n                                      /opt\n                                      /home\n</code></pre>\n<p>A small-ish root partition, small <code>/var</code> and then a large partition holding all the rest. And a pile of unmounted partitions, several of which are paired in size. Likely bootloader etc, and I'd guess the pairs are for A/B updates, where the updater writes to whichever one currently isn't in use. That way the current one is preserved and available for boot if anything goes wrong during the update or the update is faulty. This is very common in embedded and appliance setups.\nAt least the latter for sure is writeable and holding data - certainly makes sense for <code>/var/tmp</code>, <code>/var/log</code>, <code>/var/lib/systemd/coredump</code>. <code>/var/lib/flatpak</code> also isn't surprising, given that Flatpaks are the recommended way of installing apps outside the Steam ecosystem. The desktop environment ships with the KDE Discover \"app store\", and Flatpaks are nicely self-contained without dependencies on the rest of the OS that might change.\n<code>/var/lib/docker</code> … does this thing ship docker for whatever reason? </p>\n<pre><code>(deck@steamdeck ~)$ sudo ls -Al /var/lib/docker\ntotal 0\n(deck@steamdeck ~)$\n</code></pre>\n<p>directory is empty at least.</p>\n<pre><code>(deck@steamdeck ~)$ which docker\nwhich: no docker in (/usr/local/sbin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl)\n(1)(deck@steamdeck ~)$ which dockerd\nwhich: no dockerd in (/usr/local/sbin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl)\n(1)(deck@steamdeck ~)$\n</code></pre>\n<p>Doesn't seem like it. Maybe they use it in development setups for some reason, or planned to have it and this was left over, who knows.</p>\n<p>/srv and /opt are also basically empty, but I guess it just makes things easier for people that do manually install things if they exist (and reduces the chances something gets messed up when they try to fix it). <code>/root</code> just has a smathering of default-ish dotfiles.</p>\n<p>I've already installed quite a few GB of games, so where are those? </p>\n<pre><code>(deck@steamdeck ~)$ df -h\nFilesystem      Size  Used Avail Use% Mounted on\ndevtmpfs        7.3G     0  7.3G   0% /dev\ntmpfs           7.3G  592M  6.7G   8% /dev/shm\ntmpfs           2.9G  9.8M  2.9G   1% /run\n/dev/nvme0n1p5  5.0G  3.3G  1.5G  69% /\n/dev/nvme0n1p7  230M   32M  182M  15% /var\noverlay         230M   32M  182M  15% /etc\n/dev/nvme0n1p8  466G   83G  383G  18% /home\ntmpfs           7.3G  1.2M  7.3G   1% /tmp\ntmpfs           1.5G  124K  1.5G   1% /run/user/1000\n</code></pre>\n<p>Ok, in <code>/home</code>. Let's leave digging deep into that for later, we still don't know what all those unmounted partitions are. Sometimes those are mounted by labels, lets check if it is so nice to list those in the fs …</p>\n<pre><code>(deck@steamdeck /)$ ls -Al /dev/disk/by- [tab]\nby-id/        by-label/     by-partlabel/ by-partsets/  by-partuuid/  by-path/      by-uuid/\n</code></pre>\n<p>… partlabel? partsets? What's that?</p>\n<pre><code>(deck@steamdeck ~)$ ls -Al /dev/disk/by-partlabel/\ntotal 0\nlrwxrwxrwx 1 root root 15 May  6 23:06 efi-A -&gt; ../../nvme0n1p2\nlrwxrwxrwx 1 root root 15 May  6 23:06 efi-B -&gt; ../../nvme0n1p3\nlrwxrwxrwx 1 root root 15 May  6 23:06 esp -&gt; ../../nvme0n1p1\nlrwxrwxrwx 1 root root 15 May  6 23:06 home -&gt; ../../nvme0n1p8\nlrwxrwxrwx 1 root root 15 May  6 23:06 rootfs-A -&gt; ../../nvme0n1p4\nlrwxrwxrwx 1 root root 15 May  6 23:06 rootfs-B -&gt; ../../nvme0n1p5\nlrwxrwxrwx 1 root root 15 May  6 23:06 var-A -&gt; ../../nvme0n1p6\nlrwxrwxrwx 1 root root 15 May  6 23:06 var-B -&gt; ../../nvme0n1p7\n</code></pre>\n<p>Well, that confirms the assumption about there being A/B boot for updates. Given that we above saw that <code>nvme0n1p5</code> and <code>nvme0n1p7</code> have mountpoints right now, we clearly are booted into the B image. <a href=\"https://wiki.archlinux.org/title/EFI_system_partition#Mount_the_partition\">The Arch wiki confirms</a> that ESP is also an UEFI thing (<b>E</b>FI <b>S</b>ystem <b>P</b>artition), even though it suggests other mount point names. Apropos, in / there are an /esp and /efi, why did lsblk didn't see them? </p>\n<pre><code>(deck@steamdeck ~)$ mount\n[...]\nsystemd-1 on /efi type autofs (rw,relatime,fd=47,pgrp=1,timeout=60,minproto=5,maxproto=5,direct,pipe_ino=12040)\nsystemd-1 on /esp type autofs (rw,relatime,fd=51,pgrp=1,timeout=60,minproto=5,maxproto=5,direct,pipe_ino=12043)\n[...]\n</code></pre>\n<p>Automounts!</p>\n<pre><code>(deck@steamdeck ~)$ ls /esp\nls: cannot open directory '/esp': Permission denied\n(deck@steamdeck ~)$ ls /efi\nls: cannot open directory '/efi': Permission denied\n\n(deck@steamdeck ~)$ lsblk\nNAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS\nnvme0n1     259:0    0 476.9G  0 disk\n├─nvme0n1p1 259:1    0    64M  0 part /esp\n├─nvme0n1p2 259:2    0    32M  0 part\n├─nvme0n1p3 259:3    0    32M  0 part /efi\n[...]\n</code></pre>\n<p>There they are! Note for the future: check mount earlier, because automounts don't show up in lsblk. They also were quickly gone, because the automount is set (as visible in the output of mount above) with timeout=60, so it gets quickly unmounted again. Is this a safety feature to sync the filesystems to disk quickly, especially since those are probably FAT-something and nothing modern and crash-resistant? Just a sign of \"you shouldn't need this\"? I'm not sure. \nJust quickly, what were those other <code>by-*</code> groups? </p>\n<pre><code>(deck@steamdeck ~)$ ls -Al /dev/disk/by-label\ntotal 0\nlrwxrwxrwx 1 root root 15 May  6 23:06 efi -&gt; ../../nvme0n1p2\nlrwxrwxrwx 1 root root 15 May  6 23:06 esp -&gt; ../../nvme0n1p1\nlrwxrwxrwx 1 root root 15 May  6 23:06 home -&gt; ../../nvme0n1p8\nlrwxrwxrwx 1 root root 15 May  6 23:06 rootfs -&gt; ../../nvme0n1p5\nlrwxrwxrwx 1 root root 15 May  6 23:06 var -&gt; ../../nvme0n1p7\n\n(deck@steamdeck ~)$ ls -Al /dev/disk/by-partsets\ntotal 0\ndrwxr-xr-x 2 root root 100 May  6 23:06 A\ndrwxr-xr-x 2 root root 200 May  6 23:06 all\ndrwxr-xr-x 2 root root 100 May  6 23:06 B\ndrwxr-xr-x 2 root root 100 May  6 23:06 other\ndrwxr-xr-x 2 root root 100 May  6 23:06 self\ndrwxr-xr-x 2 root root  80 May  6 23:06 shared\n</code></pre>\n<p>Ok, so by-label is only the currently active ones, with the prefix stripped, and by-partsets has them grouped by the \"absolute\" set (A or B), relative to the current one (self, right now B, and other, right now A), common being always used and all again being everything.</p>\n<pre><code>(deck@steamdeck ~)$ ls -Al /dev/disk/by-partsets/self\ntotal 0\nlrwxrwxrwx 1 root root 18 May  6 23:06 efi -&gt; ../../../nvme0n1p3\nlrwxrwxrwx 1 root root 18 May  6 23:06 rootfs -&gt; ../../../nvme0n1p5\nlrwxrwxrwx 1 root root 18 May  6 23:06 var -&gt; ../../../nvme0n1p7\n(deck@steamdeck ~)$ ls -Al /dev/disk/by-partsets/B\ntotal 0\nlrwxrwxrwx 1 root root 18 May  6 23:06 efi -&gt; ../../../nvme0n1p3\nlrwxrwxrwx 1 root root 18 May  6 23:06 rootfs -&gt; ../../../nvme0n1p5\nlrwxrwxrwx 1 root root 18 May  6 23:06 var -&gt; ../../../nvme0n1p7\n\n(deck@steamdeck ~)$ ls -Al /dev/disk/by-partsets/shared\ntotal 0\nlrwxrwxrwx 1 root root 18 May  6 23:06 esp -&gt; ../../../nvme0n1p1\nlrwxrwxrwx 1 root root 18 May  6 23:06 home -&gt; ../../../nvme0n1p8\n</code></pre>\n<p>I don't know off-hand what kind of mechanism is in use here to implement this and on what level these things get re-labelled and added, but the principle is quite clear. </p>\n<p>Back to mount, there were two other things:</p>\n<pre><code>(deck@steamdeck ~)$ mount\n[...]\n/dev/nvme0n1p5 on / type btrfs (rw,relatime,ssd,space_cache=v2,subvolid=5,subvol=/)\n[...]\noverlay on /etc type overlay (rw,relatime,lowerdir=/sysroot/etc,upperdir=/sysroot/var/lib/overlays/etc/upper,workdir=/sysroot/var/lib/overlays/etc/work)\n</code></pre>\n<p>The second one is fairly straight forward: <code>/etc</code> gets overlayFS so it can be written for things that insist on hardcoded path while being inside the read-only root for most of its files (<code>/etc/resolv.conf</code> is a classic example of a file that gets updated at runtime that really needs to be in this place, symlinks don't cut it).\nWith the former, why \"rw\"? Aren't we in a read-only root filesystem?</p>\n<pre><code>(deck@steamdeck work)$ touch /x\ntouch: cannot touch '/x': Read-only file system\n</code></pre>\n<p>Appears so. Is that something btrfs can do independently? How exactly is the unlocking done if requested? According to <a href=\"https://help.steampowered.com/faqs/view/671A-4453-E8D2-323C\">the docs</a> there is a command sudo steamos-readonly disable, and with a bit of luck …</p>\n<pre><code>(deck@steamdeck work)$ file `which steamos-readonly`\n/usr/bin/steamos-readonly: Bourne-Again shell script, Unicode text, UTF-8 text executable\n</code></pre>\n<p>… that's a shell script. And a quick skim shows that indeed, that's a btrfs setting (key parts extracted):</p>\n<pre><code># mark root partition writable\nread_write_btrfs() {\n    mount -o remount,rw /\n    btrfs property set / ro false\n}\n\n# mark root partition read-only\nread_only_btrfs() {\n    btrfs property set / ro true\n}\n</code></pre>\n<p>From above we still have some open questions about the large<code>/home</code> (et al) partition. Where exactly is the meat of things, games and such, and where exactly to all these sub-mounts live.</p>\n<p>Games a large, so the former should be easy to answer: </p>\n<pre><code>(deck@steamdeck ~)$ du -a /home | sort -n -r | head -n 20\n79973096        /home\n77606552        /home/deck\n77208228        /home/deck/.local\n77208176        /home/deck/.local/share\n77206516        /home/deck/.local/share/Steam\n74580616        /home/deck/.local/share/Steam/steamapps\n72520748        /home/deck/.local/share/Steam/steamapps/common\n33437560        /home/deck/.local/share/Steam/steamapps/common/Wreckfest\n31347448        /home/deck/.local/share/Steam/steamapps/common/Wreckfest/data\n15509760        /home/deck/.local/share/Steam/steamapps/common/Wreckfest/data/vehicle\n14933888        /home/deck/.local/share/Steam/steamapps/common/Wreckfest/data/art\n12532840        /home/deck/.local/share/Steam/steamapps/common/Portal 2\n10486772        /home/deck/.local/share/Steam/steamapps/common/Portal 2/portal2\n8737256 /home/deck/.local/share/Steam/steamapps/common/Wreckfest/data/art/levels\n6921936 /home/deck/.local/share/Steam/steamapps/common/Cloudpunk\n6870380 /home/deck/.local/share/Steam/steamapps/common/Cloudpunk/Cloudpunk_Data\n5590476 /home/deck/.local/share/Steam/steamapps/common/Portal Reloaded\n4357676 /home/deck/.local/share/Steam/steamapps/common/Aperture Desk Job\n4357672 /home/deck/.local/share/Steam/steamapps/common/Aperture Desk Job/game\n3799168 /home/deck/.local/share/Steam/steamapps/common/Portal Reloaded/portal2\n</code></pre>\n<p>would be where. And presumably the wine/proton-runtimes are also in there somewhere?</p>\n<pre><code>(deck@steamdeck ~)$ find -name \"*proton*\"\n./.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/wine/vkd3d-proton\n./.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/wine/vkd3d-proton/libvkd3d-proton-utils-3.dll\n./.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/gstreamer-1.0/libprotonmediaconverter.so\n./.local/share/Steam/steamapps/common/Proton 7.0/dist/lib/wine/vkd3d-proton\n./.local/share/Steam/steamapps/common/Proton 7.0/dist/lib/wine/vkd3d-proton/libvkd3d-proton-utils-3.dll\n./.local/share/Steam/steamapps/common/Proton 7.0/dist/lib/gstreamer-1.0/libprotonmediaconverter.so\n./.local/share/Steam/steamapps/common/Proton 7.0/proton\n./.local/share/Steam/steamapps/common/Proton 7.0/proton_3.7_tracked_files\n./.local/share/Steam/steamapps/common/Proton 7.0/proton_dist.tar\n</code></pre>\n<p>Indeed they are. And actually I omitted some errors from the du output above, which already give us a good hint about where the <code>/var/tmp</code>, <code>/var/log</code>, <code>/var/lib/*</code>, <code>/root</code>, … are:</p>\n<pre><code>du: cannot read directory '/home/lost+found': Permission denied\ndu: cannot read directory '/home/.steamos/offload/var/log/private': Permission denied\ndu: cannot read directory '/home/.steamos/offload/var/tmp/systemd-private-720d8377f2b248368e65c4b7a6f69ee5-systemd-logind.service-dILMLM': Permission denied\ndu: cannot read directory '/home/.steamos/offload/var/tmp/systemd-private-720d8377f2b248368e65c4b7a6f69ee5-iwd.service-JOU9yF': Permission denied\ndu: cannot read directory '/home/.steamos/offload/var/tmp/systemd-private-720d8377f2b248368e65c4b7a6f69ee5-upower.service-2jH9Wu': Permission denied\ndu: cannot read directory '/home/.steamos/offload/var/tmp/systemd-private-720d8377f2b248368e65c4b7a6f69ee5-systemd-timesyncd.service-bDMH37': Permission denied\ndu: cannot read directory '/home/.steamos/offload/root': Permission denied\n</code></pre>\n<p>Quick check:</p>\n<pre><code>(deck@steamdeck ~)$ sudo ls /home/.steamos\noffload\n(deck@steamdeck ~)$ sudo ls /home/.steamos/offload/\nopt  root  srv  usr  var\n(deck@steamdeck ~)$ sudo ls /home/.steamos/offload/var/\ncache  lib  log  tmp\n(deck@steamdeck ~)$ sudo ls /home/.steamos/offload/var/lib/\ndocker  flatpak  systemd\n</code></pre>\n<p>As guessed. Their mounts are are all handled through systemd:</p>\n<pre><code>(deck@steamdeck ~)$ ls /usr/lib/systemd/system/*.mount\n/usr/lib/systemd/system/boot.mount                     /usr/lib/systemd/system/sys-kernel-tracing.mount\n/usr/lib/systemd/system/dev-hugepages.mount            /usr/lib/systemd/system/tmp.mount\n/usr/lib/systemd/system/dev-mqueue.mount               /usr/lib/systemd/system/usr-lib-debug.mount\n/usr/lib/systemd/system/etc.mount                      /usr/lib/systemd/system/usr-local.mount\n/usr/lib/systemd/system/opt.mount                      /usr/lib/systemd/system/var-cache-pacman.mount\n/usr/lib/systemd/system/proc-sys-fs-binfmt_misc.mount  /usr/lib/systemd/system/var-lib-docker.mount\n/usr/lib/systemd/system/root.mount                     /usr/lib/systemd/system/var-lib-flatpak.mount\n/usr/lib/systemd/system/srv.mount                      /usr/lib/systemd/system/var-lib-machines.mount\n/usr/lib/systemd/system/sys-fs-fuse-connections.mount  /usr/lib/systemd/system/var-lib-systemd-coredump.mount\n/usr/lib/systemd/system/sys-kernel-config.mount        /usr/lib/systemd/system/var-log.mount\n/usr/lib/systemd/system/sys-kernel-debug.mount         /usr/lib/systemd/system/var-tmp.mount\n</code></pre>\n<p>They all are straightforward bind mounds putting various folders from <code>/home/.steamos/offload</code> in the right places. A few (like <code>/usr/lib/debug</code>) are masked and thus not active, which explains why there are more than we'd expect.\nThis covers the filesystem side of this. Potential next points: What software/services are running here? What does the deck-specific hardware look like to Linux?</p>",
+                "value": "The Steam Deck is a nice candidate for some light exploration because it's not just a default install of some standard Linux distro (SteamOS 3.0 is based on Arch, but has been customized), and at the same time it is unlike your usual embedded target: wide open, comes with all the usual system tools we'd immediately strip normally (or not even build in the first place) when making a Linux for a device, and intended to allow breaking out of the safety net and using it as a general-purpose computer.\nTo do this I enabled SSH access to the Deck, because I don't have a USB-C adapter for a keyboard and the on-screen keyboard, while not entirely terrible, really isn't nice to use for shell stuff. So I only used it to set a password for the default \"deck\" user with passwd and turned on SSH temporarily with sudo systemctl enable sshd.\nBy default the Steam Deck ships with a read-only rootfs, and while you can disable this it is warned that updates will reset it. At the same time, it clearly needs some places to have games/settings/user data, so those will be mounted elsewhere. So lets look at the block devices:\n(deck@steamdeck ~)$ lsblk\nNAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS\nnvme0n1     259:0    0 476.9G  0 disk\n├─nvme0n1p1 259:1    0    64M  0 part\n├─nvme0n1p2 259:2    0    32M  0 part\n├─nvme0n1p3 259:3    0    32M  0 part\n├─nvme0n1p4 259:4    0     5G  0 part\n├─nvme0n1p5 259:5    0     5G  0 part /\n├─nvme0n1p6 259:6    0   256M  0 part\n├─nvme0n1p7 259:7    0   256M  0 part /var\n└─nvme0n1p8 259:8    0 466.3G  0 part /var/tmp\n                                      /var/log\n                                      /var/lib/systemd/coredump\n                                      /var/lib/flatpak\n                                      /var/lib/docker\n                                      /root\n                                      /var/cache/pacman\n                                      /srv\n                                      /opt\n                                      /home\n\nA small-ish root partition, small /var and then a large partition holding all the rest. And a pile of unmounted partitions, several of which are paired in size. Likely bootloader etc, and I'd guess the pairs are for A/B updates, where the updater writes to whichever one currently isn't in use. That way the current one is preserved and available for boot if anything goes wrong during the update or the update is faulty. This is very common in embedded and appliance setups.\nAt least the latter for sure is writeable and holding data - certainly makes sense for /var/tmp, /var/log, /var/lib/systemd/coredump. /var/lib/flatpak also isn't surprising, given that Flatpaks are the recommended way of installing apps outside the Steam ecosystem. The desktop environment ships with the KDE Discover \"app store\", and Flatpaks are nicely self-contained without dependencies on the rest of the OS that might change.\n/var/lib/docker … does this thing ship docker for whatever reason? \n(deck@steamdeck ~)$ sudo ls -Al /var/lib/docker\ntotal 0\n(deck@steamdeck ~)$\n\ndirectory is empty at least.\n(deck@steamdeck ~)$ which docker\nwhich: no docker in (/usr/local/sbin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl)\n(1)(deck@steamdeck ~)$ which dockerd\nwhich: no dockerd in (/usr/local/sbin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl)\n(1)(deck@steamdeck ~)$\n\nDoesn't seem like it. Maybe they use it in development setups for some reason, or planned to have it and this was left over, who knows.\n/srv and /opt are also basically empty, but I guess it just makes things easier for people that do manually install things if they exist (and reduces the chances something gets messed up when they try to fix it). /root just has a smathering of default-ish dotfiles.\nI've already installed quite a few GB of games, so where are those? \n(deck@steamdeck ~)$ df -h\nFilesystem      Size  Used Avail Use% Mounted on\ndevtmpfs        7.3G     0  7.3G   0% /dev\ntmpfs           7.3G  592M  6.7G   8% /dev/shm\ntmpfs           2.9G  9.8M  2.9G   1% /run\n/dev/nvme0n1p5  5.0G  3.3G  1.5G  69% /\n/dev/nvme0n1p7  230M   32M  182M  15% /var\noverlay         230M   32M  182M  15% /etc\n/dev/nvme0n1p8  466G   83G  383G  18% /home\ntmpfs           7.3G  1.2M  7.3G   1% /tmp\ntmpfs           1.5G  124K  1.5G   1% /run/user/1000\n\nOk, in /home. Let's leave digging deep into that for later, we still don't know what all those unmounted partitions are. Sometimes those are mounted by labels, lets check if it is so nice to list those in the fs …\n(deck@steamdeck /)$ ls -Al /dev/disk/by- [tab]\nby-id/        by-label/     by-partlabel/ by-partsets/  by-partuuid/  by-path/      by-uuid/\n\n… partlabel? partsets? What's that?\n(deck@steamdeck ~)$ ls -Al /dev/disk/by-partlabel/\ntotal 0\nlrwxrwxrwx 1 root root 15 May  6 23:06 efi-A -> ../../nvme0n1p2\nlrwxrwxrwx 1 root root 15 May  6 23:06 efi-B -> ../../nvme0n1p3\nlrwxrwxrwx 1 root root 15 May  6 23:06 esp -> ../../nvme0n1p1\nlrwxrwxrwx 1 root root 15 May  6 23:06 home -> ../../nvme0n1p8\nlrwxrwxrwx 1 root root 15 May  6 23:06 rootfs-A -> ../../nvme0n1p4\nlrwxrwxrwx 1 root root 15 May  6 23:06 rootfs-B -> ../../nvme0n1p5\nlrwxrwxrwx 1 root root 15 May  6 23:06 var-A -> ../../nvme0n1p6\nlrwxrwxrwx 1 root root 15 May  6 23:06 var-B -> ../../nvme0n1p7\n\nWell, that confirms the assumption about there being A/B boot for updates. Given that we above saw that nvme0n1p5 and nvme0n1p7 have mountpoints right now, we clearly are booted into the B image. The Arch wiki confirms that ESP is also an UEFI thing (EFI System Partition), even though it suggests other mount point names. Apropos, in / there are an /esp and /efi, why did lsblk didn't see them? \n(deck@steamdeck ~)$ mount\n[...]\nsystemd-1 on /efi type autofs (rw,relatime,fd=47,pgrp=1,timeout=60,minproto=5,maxproto=5,direct,pipe_ino=12040)\nsystemd-1 on /esp type autofs (rw,relatime,fd=51,pgrp=1,timeout=60,minproto=5,maxproto=5,direct,pipe_ino=12043)\n[...]\n\nAutomounts!\n(deck@steamdeck ~)$ ls /esp\nls: cannot open directory '/esp': Permission denied\n(deck@steamdeck ~)$ ls /efi\nls: cannot open directory '/efi': Permission denied\n\n(deck@steamdeck ~)$ lsblk\nNAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS\nnvme0n1     259:0    0 476.9G  0 disk\n├─nvme0n1p1 259:1    0    64M  0 part /esp\n├─nvme0n1p2 259:2    0    32M  0 part\n├─nvme0n1p3 259:3    0    32M  0 part /efi\n[...]\n\nThere they are! Note for the future: check mount earlier, because automounts don't show up in lsblk. They also were quickly gone, because the automount is set (as visible in the output of mount above) with timeout=60, so it gets quickly unmounted again. Is this a safety feature to sync the filesystems to disk quickly, especially since those are probably FAT-something and nothing modern and crash-resistant? Just a sign of \"you shouldn't need this\"? I'm not sure. \nJust quickly, what were those other by-* groups? \n(deck@steamdeck ~)$ ls -Al /dev/disk/by-label\ntotal 0\nlrwxrwxrwx 1 root root 15 May  6 23:06 efi -> ../../nvme0n1p2\nlrwxrwxrwx 1 root root 15 May  6 23:06 esp -> ../../nvme0n1p1\nlrwxrwxrwx 1 root root 15 May  6 23:06 home -> ../../nvme0n1p8\nlrwxrwxrwx 1 root root 15 May  6 23:06 rootfs -> ../../nvme0n1p5\nlrwxrwxrwx 1 root root 15 May  6 23:06 var -> ../../nvme0n1p7\n\n(deck@steamdeck ~)$ ls -Al /dev/disk/by-partsets\ntotal 0\ndrwxr-xr-x 2 root root 100 May  6 23:06 A\ndrwxr-xr-x 2 root root 200 May  6 23:06 all\ndrwxr-xr-x 2 root root 100 May  6 23:06 B\ndrwxr-xr-x 2 root root 100 May  6 23:06 other\ndrwxr-xr-x 2 root root 100 May  6 23:06 self\ndrwxr-xr-x 2 root root  80 May  6 23:06 shared\n\nOk, so by-label is only the currently active ones, with the prefix stripped, and by-partsets has them grouped by the \"absolute\" set (A or B), relative to the current one (self, right now B, and other, right now A), common being always used and all again being everything.\n(deck@steamdeck ~)$ ls -Al /dev/disk/by-partsets/self\ntotal 0\nlrwxrwxrwx 1 root root 18 May  6 23:06 efi -> ../../../nvme0n1p3\nlrwxrwxrwx 1 root root 18 May  6 23:06 rootfs -> ../../../nvme0n1p5\nlrwxrwxrwx 1 root root 18 May  6 23:06 var -> ../../../nvme0n1p7\n(deck@steamdeck ~)$ ls -Al /dev/disk/by-partsets/B\ntotal 0\nlrwxrwxrwx 1 root root 18 May  6 23:06 efi -> ../../../nvme0n1p3\nlrwxrwxrwx 1 root root 18 May  6 23:06 rootfs -> ../../../nvme0n1p5\nlrwxrwxrwx 1 root root 18 May  6 23:06 var -> ../../../nvme0n1p7\n\n(deck@steamdeck ~)$ ls -Al /dev/disk/by-partsets/shared\ntotal 0\nlrwxrwxrwx 1 root root 18 May  6 23:06 esp -> ../../../nvme0n1p1\nlrwxrwxrwx 1 root root 18 May  6 23:06 home -> ../../../nvme0n1p8\n\nI don't know off-hand what kind of mechanism is in use here to implement this and on what level these things get re-labelled and added, but the principle is quite clear. \nBack to mount, there were two other things:\n(deck@steamdeck ~)$ mount\n[...]\n/dev/nvme0n1p5 on / type btrfs (rw,relatime,ssd,space_cache=v2,subvolid=5,subvol=/)\n[...]\noverlay on /etc type overlay (rw,relatime,lowerdir=/sysroot/etc,upperdir=/sysroot/var/lib/overlays/etc/upper,workdir=/sysroot/var/lib/overlays/etc/work)\n\nThe second one is fairly straight forward: /etc gets overlayFS so it can be written for things that insist on hardcoded path while being inside the read-only root for most of its files (/etc/resolv.conf is a classic example of a file that gets updated at runtime that really needs to be in this place, symlinks don't cut it).\nWith the former, why \"rw\"? Aren't we in a read-only root filesystem?\n(deck@steamdeck work)$ touch /x\ntouch: cannot touch '/x': Read-only file system\n\nAppears so. Is that something btrfs can do independently? How exactly is the unlocking done if requested? According to the docs there is a command sudo steamos-readonly disable, and with a bit of luck …\n(deck@steamdeck work)$ file `which steamos-readonly`\n/usr/bin/steamos-readonly: Bourne-Again shell script, Unicode text, UTF-8 text executable\n\n… that's a shell script. And a quick skim shows that indeed, that's a btrfs setting (key parts extracted):\n# mark root partition writable\nread_write_btrfs() {\n    mount -o remount,rw /\n    btrfs property set / ro false\n}\n\n# mark root partition read-only\nread_only_btrfs() {\n    btrfs property set / ro true\n}\n\nFrom above we still have some open questions about the large/home (et al) partition. Where exactly is the meat of things, games and such, and where exactly to all these sub-mounts live.\nGames a large, so the former should be easy to answer: \n(deck@steamdeck ~)$ du -a /home | sort -n -r | head -n 20\n79973096        /home\n77606552        /home/deck\n77208228        /home/deck/.local\n77208176        /home/deck/.local/share\n77206516        /home/deck/.local/share/Steam\n74580616        /home/deck/.local/share/Steam/steamapps\n72520748        /home/deck/.local/share/Steam/steamapps/common\n33437560        /home/deck/.local/share/Steam/steamapps/common/Wreckfest\n31347448        /home/deck/.local/share/Steam/steamapps/common/Wreckfest/data\n15509760        /home/deck/.local/share/Steam/steamapps/common/Wreckfest/data/vehicle\n14933888        /home/deck/.local/share/Steam/steamapps/common/Wreckfest/data/art\n12532840        /home/deck/.local/share/Steam/steamapps/common/Portal 2\n10486772        /home/deck/.local/share/Steam/steamapps/common/Portal 2/portal2\n8737256 /home/deck/.local/share/Steam/steamapps/common/Wreckfest/data/art/levels\n6921936 /home/deck/.local/share/Steam/steamapps/common/Cloudpunk\n6870380 /home/deck/.local/share/Steam/steamapps/common/Cloudpunk/Cloudpunk_Data\n5590476 /home/deck/.local/share/Steam/steamapps/common/Portal Reloaded\n4357676 /home/deck/.local/share/Steam/steamapps/common/Aperture Desk Job\n4357672 /home/deck/.local/share/Steam/steamapps/common/Aperture Desk Job/game\n3799168 /home/deck/.local/share/Steam/steamapps/common/Portal Reloaded/portal2\n\nwould be where. And presumably the wine/proton-runtimes are also in there somewhere?\n(deck@steamdeck ~)$ find -name \"*proton*\"\n./.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/wine/vkd3d-proton\n./.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/wine/vkd3d-proton/libvkd3d-proton-utils-3.dll\n./.local/share/Steam/steamapps/common/Proton 7.0/dist/lib64/gstreamer-1.0/libprotonmediaconverter.so\n./.local/share/Steam/steamapps/common/Proton 7.0/dist/lib/wine/vkd3d-proton\n./.local/share/Steam/steamapps/common/Proton 7.0/dist/lib/wine/vkd3d-proton/libvkd3d-proton-utils-3.dll\n./.local/share/Steam/steamapps/common/Proton 7.0/dist/lib/gstreamer-1.0/libprotonmediaconverter.so\n./.local/share/Steam/steamapps/common/Proton 7.0/proton\n./.local/share/Steam/steamapps/common/Proton 7.0/proton_3.7_tracked_files\n./.local/share/Steam/steamapps/common/Proton 7.0/proton_dist.tar\n\nIndeed they are. And actually I omitted some errors from the du output above, which already give us a good hint about where the /var/tmp, /var/log, /var/lib/*, /root, … are:\ndu: cannot read directory '/home/lost+found': Permission denied\ndu: cannot read directory '/home/.steamos/offload/var/log/private': Permission denied\ndu: cannot read directory '/home/.steamos/offload/var/tmp/systemd-private-720d8377f2b248368e65c4b7a6f69ee5-systemd-logind.service-dILMLM': Permission denied\ndu: cannot read directory '/home/.steamos/offload/var/tmp/systemd-private-720d8377f2b248368e65c4b7a6f69ee5-iwd.service-JOU9yF': Permission denied\ndu: cannot read directory '/home/.steamos/offload/var/tmp/systemd-private-720d8377f2b248368e65c4b7a6f69ee5-upower.service-2jH9Wu': Permission denied\ndu: cannot read directory '/home/.steamos/offload/var/tmp/systemd-private-720d8377f2b248368e65c4b7a6f69ee5-systemd-timesyncd.service-bDMH37': Permission denied\ndu: cannot read directory '/home/.steamos/offload/root': Permission denied\n\nQuick check:\n(deck@steamdeck ~)$ sudo ls /home/.steamos\noffload\n(deck@steamdeck ~)$ sudo ls /home/.steamos/offload/\nopt  root  srv  usr  var\n(deck@steamdeck ~)$ sudo ls /home/.steamos/offload/var/\ncache  lib  log  tmp\n(deck@steamdeck ~)$ sudo ls /home/.steamos/offload/var/lib/\ndocker  flatpak  systemd\n\nAs guessed. Their mounts are are all handled through systemd:\n(deck@steamdeck ~)$ ls /usr/lib/systemd/system/*.mount\n/usr/lib/systemd/system/boot.mount                     /usr/lib/systemd/system/sys-kernel-tracing.mount\n/usr/lib/systemd/system/dev-hugepages.mount            /usr/lib/systemd/system/tmp.mount\n/usr/lib/systemd/system/dev-mqueue.mount               /usr/lib/systemd/system/usr-lib-debug.mount\n/usr/lib/systemd/system/etc.mount                      /usr/lib/systemd/system/usr-local.mount\n/usr/lib/systemd/system/opt.mount                      /usr/lib/systemd/system/var-cache-pacman.mount\n/usr/lib/systemd/system/proc-sys-fs-binfmt_misc.mount  /usr/lib/systemd/system/var-lib-docker.mount\n/usr/lib/systemd/system/root.mount                     /usr/lib/systemd/system/var-lib-flatpak.mount\n/usr/lib/systemd/system/srv.mount                      /usr/lib/systemd/system/var-lib-machines.mount\n/usr/lib/systemd/system/sys-fs-fuse-connections.mount  /usr/lib/systemd/system/var-lib-systemd-coredump.mount\n/usr/lib/systemd/system/sys-kernel-config.mount        /usr/lib/systemd/system/var-log.mount\n/usr/lib/systemd/system/sys-kernel-debug.mount         /usr/lib/systemd/system/var-tmp.mount\n\nThey all are straightforward bind mounds putting various folders from /home/.steamos/offload in the right places. A few (like /usr/lib/debug) are masked and thus not active, which explains why there are more than we'd expect.\nThis covers the filesystem side of this. Potential next points: What software/services are running here? What does the deck-specific hardware look like to Linux?"
+              }
+            ],
+            "url": [
+              "https://www.svenknebel.de/posts/2022/5/2/"
+            ],
+            "uid": [
+              "https://www.svenknebel.de/posts/2022/5/2/"
+            ],
+            "published": [
+              "2022-05-09 20:25:14.778050+00:00"
+            ],
+            "author": [
+              "https://www.svenknebel.de/"
+            ],
+            "category": [
+              "steam deck",
+              "linux",
+              "software"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "TIL that the word \"boycott\" comes from a person who was targeted by one:\n\n<blockquote>On 19 Sept. [] he made a speech at Ennis which marked an epoch in the struggle. ‘When a man,’ he told his peasant hearers, ‘takes a farm from which another had been evicted, you must shun him on the roadside when you meet him, you must shun him in the streets of the town, you must shun him at the shop-counter, you must shun him in the fair and in the market-place, and even in the house of worship, by leaving him severely alone, by putting him into a moral Coventry, by isolating him from the rest of his kind as if he was a leper of old—you must show him your detestation of the crime he has committed; and you may depend upon it, if the population of a county in Ireland carry out this doctrine, that there will be no man so full of avarice, so lost to shame, as to dare the public opinion of all right-thinking men within the county, and to transgress your unwritten code of laws.’\n\nThe method of intimidation thus recommended by Parnell was at once adopted in its full rigour by the peasant members of all branches of the league, and was soon known as ‘boycotting,’ after the name of its first important victim, Captain Boycott of Lough Mask, co. Galway. \n</blockquote>\n\n(from <cite>Dictionary of National Biography, 1885-1900, Vol. 43</cite>, transcribed on <a href=\"https://en.wikisource.org/wiki/Index:Dictionary_of_National_Biography_volume_43.djvu\">Wikisource</a>, pg. <a href=\"https://en.wikisource.org/wiki/Page:Dictionary_of_National_Biography_volume_43.djvu/333\">327</a>/<a href=\"https://en.wikisource.org/wiki/Page:Dictionary_of_National_Biography_volume_43.djvu/334\">328</a>)\n\nIn German the spelling is adjusted (\"Boykott\"), so clearly that it was a specific name was lost at that point.\n\nfound via <a href=\"https://twitter.com/NaomiOhReally/status/1511287087315795975\">Naomi O'Leary</a>",
+                "value": "TIL that the word \"boycott\" comes from a person who was targeted by one:\n\nOn 19 Sept. [] he made a speech at Ennis which marked an epoch in the struggle. ‘When a man,’ he told his peasant hearers, ‘takes a farm from which another had been evicted, you must shun him on the roadside when you meet him, you must shun him in the streets of the town, you must shun him at the shop-counter, you must shun him in the fair and in the market-place, and even in the house of worship, by leaving him severely alone, by putting him into a moral Coventry, by isolating him from the rest of his kind as if he was a leper of old—you must show him your detestation of the crime he has committed; and you may depend upon it, if the population of a county in Ireland carry out this doctrine, that there will be no man so full of avarice, so lost to shame, as to dare the public opinion of all right-thinking men within the county, and to transgress your unwritten code of laws.’\n\nThe method of intimidation thus recommended by Parnell was at once adopted in its full rigour by the peasant members of all branches of the league, and was soon known as ‘boycotting,’ after the name of its first important victim, Captain Boycott of Lough Mask, co. Galway. \n\n\n(from Dictionary of National Biography, 1885-1900, Vol. 43, transcribed on Wikisource, pg. 327/328)\n\nIn German the spelling is adjusted (\"Boykott\"), so clearly that it was a specific name was lost at that point.\n\nfound via Naomi O'Leary"
+              }
+            ],
+            "name": [
+              "TIL that the word \"boycott\" comes from a person who was targeted by one:\n\nOn 19 Sept. [] he made a speech at Ennis which marked an epoch in the struggle. ‘When a man,’ he told his peasant hearers, ‘takes a farm from which another had been evicted, you must shun him on the roadside when you meet him, you must shun him in the streets of the town, you must shun him at the shop-counter, you must shun him in the fair and in the market-place, and even in the house of worship, by leaving him severely alone, by putting him into a moral Coventry, by isolating him from the rest of his kind as if he was a leper of old—you must show him your detestation of the crime he has committed; and you may depend upon it, if the population of a county in Ireland carry out this doctrine, that there will be no man so full of avarice, so lost to shame, as to dare the public opinion of all right-thinking men within the county, and to transgress your unwritten code of laws.’\n\nThe method of intimidation thus recommended by Parnell was at once adopted in its full rigour by the peasant members of all branches of the league, and was soon known as ‘boycotting,’ after the name of its first important victim, Captain Boycott of Lough Mask, co. Galway. \n\n\n(from Dictionary of National Biography, 1885-1900, Vol. 43, transcribed on Wikisource, pg. 327/328)\n\nIn German the spelling is adjusted (\"Boykott\"), so clearly that it was a specific name was lost at that point.\n\nfound via Naomi O'Leary"
+            ],
+            "url": [
+              "https://www.svenknebel.de/posts/2022/4/2/"
+            ],
+            "uid": [
+              "https://www.svenknebel.de/posts/2022/4/2/"
+            ],
+            "published": [
+              "2022-04-05 20:00:15.741860+00:00"
+            ],
+            "author": [
+              "https://www.svenknebel.de/"
+            ],
+            "category": [
+              "TIL"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "pet peeve: people that reference twitter discussions from their blog posts (i.e. \"this post sparked some interesting discussion on Twitter, see here\"), but also delete all tweets older than X days, destroying those links.",
+                "value": "pet peeve: people that reference twitter discussions from their blog posts (i.e. \"this post sparked some interesting discussion on Twitter, see here\"), but also delete all tweets older than X days, destroying those links."
+              }
+            ],
+            "name": [
+              "pet peeve: people that reference twitter discussions from their blog posts (i.e. \"this post sparked some interesting discussion on Twitter, see here\"), but also delete all tweets older than X days, destroying those links."
+            ],
+            "url": [
+              "https://www.svenknebel.de/posts/2021/4/2/"
+            ],
+            "uid": [
+              "https://www.svenknebel.de/posts/2021/4/2/"
+            ],
+            "published": [
+              "2021-04-18 16:25:14.224095+00:00"
+            ],
+            "author": [
+              "https://www.svenknebel.de/"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "On the way to 36C3 - getting into the train to Leipzig, see a sea of stickered laptops",
+                "value": "On the way to 36C3 - getting into the train to Leipzig, see a sea of stickered laptops"
+              }
+            ],
+            "name": [
+              "On the way to 36C3 - getting into the train to Leipzig, see a sea of stickered laptops"
+            ],
+            "url": [
+              "https://www.svenknebel.de/posts/2019/12/2/"
+            ],
+            "uid": [
+              "https://www.svenknebel.de/posts/2019/12/2/"
+            ],
+            "published": [
+              "2019-12-26 15:39:57.065015+00:00"
+            ],
+            "author": [
+              "https://www.svenknebel.de/"
+            ],
+            "category": [
+              "36c3"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "Indiewebcamp Brighton, Demo time:<br>\n\n\"Nobody is deploying to production right now, right? Everyone's finished.\"<br>\n\n\"It's not \"deploying\" if you're editing on the live server!\"",
+                "value": "Indiewebcamp Brighton, Demo time:\n\n\"Nobody is deploying to production right now, right? Everyone's finished.\"\n\n\"It's not \"deploying\" if you're editing on the live server!\""
+              }
+            ],
+            "name": [
+              "Indiewebcamp Brighton, Demo time:\n\n\"Nobody is deploying to production right now, right? Everyone's finished.\"\n\n\"It's not \"deploying\" if you're editing on the live server!\""
+            ],
+            "url": [
+              "https://www.svenknebel.de/posts/2019/10/22/"
+            ],
+            "uid": [
+              "https://www.svenknebel.de/posts/2019/10/22/"
+            ],
+            "published": [
+              "2019-10-20 15:15:04.760393+00:00"
+            ],
+            "author": [
+              "https://www.svenknebel.de/"
+            ],
+            "category": [
+              "IWC"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "photo": [
+              {
+                "value": "https://www.svenknebel.de/posts/2019/8/2/thermo.png",
+                "alt": "thermal image of my face"
+              }
+            ],
+            "content": [
+              {
+                "html": "Wärmebildkameraselfie (mit kühlschrankkalter Mate)",
+                "value": "Wärmebildkameraselfie (mit kühlschrankkalter Mate)"
+              }
+            ],
+            "name": [
+              "Wärmebildkameraselfie (mit kühlschrankkalter Mate)"
+            ],
+            "url": [
+              "https://www.svenknebel.de/posts/2019/8/2/"
+            ],
+            "uid": [
+              "https://www.svenknebel.de/posts/2019/8/2/"
+            ],
+            "published": [
+              "2019-08-11 15:39:50.673702+00:00"
+            ],
+            "author": [
+              "https://www.svenknebel.de/"
+            ],
+            "category": [
+              "electronics",
+              "Chaostreff",
+              "thermal"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<div class=\"fullwidth_container\"><video src=\"https://www.svenknebel.de/posts/2019/7/2/erika_schnell.m4v\" alt=\"a typing typewriter\" controls loop></video></div>\n<p>Progress from last sunday at <a href=\"https://www.ccc-p.org/\">Chaostreff</a>: We got our Erika 3004 type writer to type fast and error free by getting hardware flow control for its serial port to work. We tried first with a FT232RL-based USB-serial adapter, but it's flow control implementation is not fast enough: if the Erika signals \"stop sending\", it continues sending for up to 3 characters, which the Erika can't handle. But a Raspberry Pi can react fast enough if configured correctly, so now we can remove a bunch of pessimistic sleeps from <a href=\"https://github.com/Chaostreff-Potsdam/erika3004\">the code</a>.</p>\n<p>I also worked on hooking it up as a terminal to other programs, so we hopefully can run text adventures or something on it for CCCamp.</p>",
+                "value": "Progress from last sunday at Chaostreff: We got our Erika 3004 type writer to type fast and error free by getting hardware flow control for its serial port to work. We tried first with a FT232RL-based USB-serial adapter, but it's flow control implementation is not fast enough: if the Erika signals \"stop sending\", it continues sending for up to 3 characters, which the Erika can't handle. But a Raspberry Pi can react fast enough if configured correctly, so now we can remove a bunch of pessimistic sleeps from the code.\nI also worked on hooking it up as a terminal to other programs, so we hopefully can run text adventures or something on it for CCCamp."
+              }
+            ],
+            "name": [
+              "Progress from last sunday at Chaostreff: We got our Erika 3004 type writer to type fast and error free by getting hardware flow control for its serial port to work. We tried first with a FT232RL-based USB-serial adapter, but it's flow control implementation is not fast enough: if the Erika signals \"stop sending\", it continues sending for up to 3 characters, which the Erika can't handle. But a Raspberry Pi can react fast enough if configured correctly, so now we can remove a bunch of pessimistic sleeps from the code.\nI also worked on hooking it up as a terminal to other programs, so we hopefully can run text adventures or something on it for CCCamp."
+            ],
+            "url": [
+              "https://www.svenknebel.de/posts/2019/7/2/"
+            ],
+            "uid": [
+              "https://www.svenknebel.de/posts/2019/7/2/"
+            ],
+            "published": [
+              "2019-07-31 16:34:36.194178+00:00"
+            ],
+            "author": [
+              "https://www.svenknebel.de/"
+            ],
+            "category": [
+              "video",
+              "cccp",
+              "erika3004"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "url": [
+          "https://www.svenknebel.de/"
+        ],
+        "uid": [
+          "https://www.svenknebel.de/"
+        ],
+        "name": [
+          "Sven Knebel"
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "stylesheet": [
+      "https://www.svenknebel.de/static/normalize.css",
+      "https://www.svenknebel.de/static/lavasand.css"
+    ],
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "micropub": [
+      "https://www.svenknebel.de/micropub"
+    ],
+    "microsub": [
+      "http://svenknebel.de:8088/microsub"
+    ],
+    "webmention": [
+      "https://www.svenknebel.de/webmention"
+    ],
+    "next": [
+      "https://www.svenknebel.de/posts/?after=2019-07-31T16-34-36.194178+00-00_7-2"
+    ],
+    "me": [
+      "https://www.svenknebel.de/",
+      "https://chaos.social/@HeNeArXn",
+      "https://www.github.com/sknebel",
+      "https://twitter.com/HeNeArXn"
+    ]
+  },
+  "rel-urls": {
+    "https://www.svenknebel.de/static/normalize.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://www.svenknebel.de/static/lavasand.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "title": "default_css",
+      "type": "text/css"
+    },
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://www.svenknebel.de/micropub": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "http://svenknebel.de:8088/microsub": {
+      "rels": [
+        "microsub"
+      ]
+    },
+    "https://www.svenknebel.de/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://www.svenknebel.de/posts/?after=2019-07-31T16-34-36.194178+00-00_7-2": {
+      "rels": [
+        "next"
+      ]
+    },
+    "https://www.svenknebel.de/": {
+      "rels": [
+        "me"
+      ],
+      "text": "index"
+    },
+    "https://chaos.social/@HeNeArXn": {
+      "rels": [
+        "me"
+      ],
+      "text": "Fediverse"
+    },
+    "https://www.github.com/sknebel": {
+      "rels": [
+        "me"
+      ],
+      "text": "GitHub"
+    },
+    "https://twitter.com/HeNeArXn": {
+      "rels": [
+        "me"
+      ],
+      "text": "Twitter"
+    }
+  }
+}

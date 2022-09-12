@@ -1,0 +1,239 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "What’s the smallest amount of currency that can’t be represented by a floating-point number?"
+        ],
+        "url": [
+          "https://esham.io/2020/05/currency-in-floating-point"
+        ],
+        "uid": [
+          "https://esham.io/2020/05/currency-in-floating-point"
+        ],
+        "published": [
+          "2020-05-25T18:22:36-05:00"
+        ],
+        "content": [
+          {
+            "html": "<p>At this point it’s common wisdom among software developers that if you’re going to store amounts of currency, you shouldn’t use floating-point numbers. Floats can represent numbers within a huge range, but only some numbers in that range can be represented exactly, and while this is fine sometimes <a href=\"https://stackoverflow.com/a/3730040/371228\">it’s almost never what you want</a> when dealing with money.</p>\n<p>I got to wondering: counting up cent by cent from zero, where would you first run into a problem if you were using a float to store an amount in dollars? (For U.S. currency, the base unit is the dollar and the smallest subdivision is the cent, which is one hundredth of a dollar.)</p>\n<p>If we want to express a number exactly in binary floating point, one requirement is that we be able to write it as a fraction <em>p</em>/<em>q</em> in lowest terms, where <em>p</em> and <em>q</em> are integers and <em>q</em> = 2<sup><em>n</em></sup> for some integer <em>n</em>.<a href=\"https://esham.io/#currency-in-floating-point_fn1\" class=\"footnote-ref\" id=\"currency-in-floating-point_fnref1\" role=\"doc-noteref\"><sup>1</sup></a> Let’s consider the smallest nonzero amount of currency: one cent. Expressed in dollars, this amount is 0.01, or 1/100. The denominator, 100, cannot be written as 2<sup><em>n</em></sup> for any integer <em>n</em>, so 0.01 cannot be expressed exactly as a binary floating-point number. Notice that we didn’t even get as far as asking whether it would be representable in an <abbr>IEEE</abbr> float, or double, or any other specific format—the decimal number 0.01 just can’t be represented by any finite string of binary digits, period.</p>\n<p>So there we have our answer: the problems with representing decimal amounts in floats start with the “first” decimal amount, at least as far as dollars and cents go. Of course, if you were to write <code class=\"sourceCode c\"><span class=\"dt\">double</span> x <span class=\"op\">=</span> <span class=\"fl\">0.01</span></code> in your program and then do some calculations with <code>x</code>, your results wouldn’t necessarily be wrong—but they wouldn’t necessarily be right, either.</p>\n<section class=\"footnotes\" role=\"doc-endnotes\">\n<hr>\n<ol>\n<li id=\"currency-in-floating-point_fn1\" role=\"doc-endnote\"><p>According to <a href=\"https://stackoverflow.com/a/12124973/371228\">a Stack Overflow answer</a> by <a href=\"https://stackoverflow.com/users/922184/mysticial\">Alexander Yee</a>, “A number can be represented exactly in binary if the prime factorization of the denominator contains only 2.” This might seem to suggest that integers aren’t exactly representable, but they are. A more precise statement would be, “…if the denominator is unity or if its prime factorization contains only powers of 2.”<a href=\"https://esham.io/#currency-in-floating-point_fnref1\" class=\"footnote-back\" role=\"doc-backlink\">↩︎</a></p></li>\n</ol>\n</section>",
+            "value": "At this point it’s common wisdom among software developers that if you’re going to store amounts of currency, you shouldn’t use floating-point numbers. Floats can represent numbers within a huge range, but only some numbers in that range can be represented exactly, and while this is fine sometimes it’s almost never what you want when dealing with money.\nI got to wondering: counting up cent by cent from zero, where would you first run into a problem if you were using a float to store an amount in dollars? (For U.S. currency, the base unit is the dollar and the smallest subdivision is the cent, which is one hundredth of a dollar.)\nIf we want to express a number exactly in binary floating point, one requirement is that we be able to write it as a fraction p/q in lowest terms, where p and q are integers and q = 2n for some integer n.1 Let’s consider the smallest nonzero amount of currency: one cent. Expressed in dollars, this amount is 0.01, or 1/100. The denominator, 100, cannot be written as 2n for any integer n, so 0.01 cannot be expressed exactly as a binary floating-point number. Notice that we didn’t even get as far as asking whether it would be representable in an IEEE float, or double, or any other specific format—the decimal number 0.01 just can’t be represented by any finite string of binary digits, period.\nSo there we have our answer: the problems with representing decimal amounts in floats start with the “first” decimal amount, at least as far as dollars and cents go. Of course, if you were to write double x = 0.01 in your program and then do some calculations with x, your results wouldn’t necessarily be wrong—but they wouldn’t necessarily be right, either.\n\n\n\nAccording to a Stack Overflow answer by Alexander Yee, “A number can be represented exactly in binary if the prime factorization of the denominator contains only 2.” This might seem to suggest that integers aren’t exactly representable, but they are. A more precise statement would be, “…if the denominator is unity or if its prime factorization contains only powers of 2.”↩︎"
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Counterfactual fgrep"
+        ],
+        "url": [
+          "https://esham.io/2019/11/fgrep"
+        ],
+        "uid": [
+          "https://esham.io/2019/11/fgrep"
+        ],
+        "published": [
+          "2019-11-19T00:58:53-05:00"
+        ],
+        "content": [
+          {
+            "html": "<p>For years and years I thought the <code>fgrep</code> command was a shorthand for running <code>grep</code> with the <code>-f</code> flag (“Obtain patterns from <code>FILE</code>, one per line”). I thought this was a weird flag to promote to its own command; I <em>never</em> used it. Why did other people have all of these files full of regexes to search for but I’d never needed such a thing?</p>\n<p>Life made so much more sense when I realized that <code>fgrep</code> was a shortcut not for <code>grep -f</code> but for <code>grep -F</code>, which interprets the given pattern as a plain string instead of as a regex. Okay, now <em>that’s</em> an option I’ve used plenty of times.</p>\n<hr>\n<p>Here’s a thought experiment: if you had an alias for <code>grep -f</code>, how it would even work? The synopsis for this form of <code>grep</code> looks like</p>\n<pre><code>grep [OPTION...] -f PATTERN_FILE [FILE...]</code></pre>\n<p>Presumably the heretical fgrep would work like</p>\n<pre><code>fgrep [OPTION...] PATTERN_FILE [FILE...]</code></pre>\n<p>What if you had multiple pattern files, though? How would you distinguish them from the files to be searched? Maybe you could separate them with the <code>--</code> dummy argument, like</p>\n<pre><code>fgrep patterns1 patterns2 -- file.txt</code></pre>\n<p>But in that case, how would a command like</p>\n<pre><code>fgrep filename1 filename2</code></pre>\n<p>be interpreted? Is <code>filename2</code> a file to read patterns from or a file to search? If all filenames up to <code>--</code> are assumed to be pattern files then suddenly the user needs to type a <code>--</code> every single time they want to search a file! The only sane way to specify multiple pattern files would be to require an <code>-f</code> to precede each one after the first:</p>\n<pre><code>fgrep patterns1 -f patterns2 file.txt</code></pre>\n<p>This asymmetric syntax is definitely not an improvement on just typing out <code>grep -f</code>.</p>",
+            "value": "For years and years I thought the fgrep command was a shorthand for running grep with the -f flag (“Obtain patterns from FILE, one per line”). I thought this was a weird flag to promote to its own command; I never used it. Why did other people have all of these files full of regexes to search for but I’d never needed such a thing?\nLife made so much more sense when I realized that fgrep was a shortcut not for grep -f but for grep -F, which interprets the given pattern as a plain string instead of as a regex. Okay, now that’s an option I’ve used plenty of times.\n\nHere’s a thought experiment: if you had an alias for grep -f, how it would even work? The synopsis for this form of grep looks like\ngrep [OPTION...] -f PATTERN_FILE [FILE...]\nPresumably the heretical fgrep would work like\nfgrep [OPTION...] PATTERN_FILE [FILE...]\nWhat if you had multiple pattern files, though? How would you distinguish them from the files to be searched? Maybe you could separate them with the -- dummy argument, like\nfgrep patterns1 patterns2 -- file.txt\nBut in that case, how would a command like\nfgrep filename1 filename2\nbe interpreted? Is filename2 a file to read patterns from or a file to search? If all filenames up to -- are assumed to be pattern files then suddenly the user needs to type a -- every single time they want to search a file! The only sane way to specify multiple pattern files would be to require an -f to precede each one after the first:\nfgrep patterns1 -f patterns2 file.txt\nThis asymmetric syntax is definitely not an improvement on just typing out grep -f."
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Road work, next few miles"
+        ],
+        "url": [
+          "https://esham.io/2019/10/two-and-a-half"
+        ],
+        "uid": [
+          "https://esham.io/2019/10/two-and-a-half"
+        ],
+        "published": [
+          "2019-10-09T23:13:30-05:00"
+        ],
+        "content": [
+          {
+            "html": "<div class=\"lightly-bordered-table\">\n<table>\n<caption>Ways of writing “two and a half” on highway signage</caption>\n<thead>\n<tr class=\"header\">\n<th>Notation</th>\n<th>What it means to a mathematician</th>\n<th>How often is it used on highway signage?</th>\n</tr>\n</thead>\n<tbody>\n<tr class=\"odd\">\n<td>2 1/2</td>\n<td>10.5</td>\n<td>All the time</td>\n</tr>\n<tr class=\"even\">\n<td>2–1/2</td>\n<td>1.5</td>\n<td>Pretty often</td>\n</tr>\n<tr class=\"odd\">\n<td>2<sup>1/2</sup>\n</td>\n<td>1.414…</td>\n<td>Occasionally</td>\n</tr>\n<tr class=\"even\">\n<td>2 + 1/2</td>\n<td>2.5</td>\n<td>Never ever</td>\n</tr>\n</tbody>\n</table>\n</div>",
+            "value": "Ways of writing “two and a half” on highway signage\n\n\nNotation\nWhat it means to a mathematician\nHow often is it used on highway signage?\n\n\n\n\n2 1/2\n10.5\nAll the time\n\n\n2–1/2\n1.5\nPretty often\n\n\n21/2\n1.414…\nOccasionally\n\n\n2 + 1/2\n2.5\nNever ever"
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Wikipedia curiosity of the day"
+        ],
+        "url": [
+          "https://esham.io/2019/09/mzscheme"
+        ],
+        "uid": [
+          "https://esham.io/2019/09/mzscheme"
+        ],
+        "published": [
+          "2019-09-22T18:00:23-05:00"
+        ],
+        "content": [
+          {
+            "html": "<p>The Vim text editor can run scripts written in several programming languages: Python, Ruby, and Lua, to name just three, and MzScheme, to name one more. I got curious about this last one. I assumed from the name that MzScheme is a dialect of Lisp, but I’ve never seen evidence of anyone actually writing a Vim script in this language. I popped open LaunchBar (whose ability to search Wikipedia <a href=\"https://esham.io/2019/04/launchbar-autocomplete\">I’ve mentioned before</a>), selected Wikipedia, and typed in “mzscheme,” which gave me these results:</p>\n<figure class=\"wide-container\">\n<img class=\"bordered rounded-mac-window\" src=\"https://esham.io/images/2019/09/mzscheme/suggestions.png\" srcset=\"https://esham.io/images/2019/09/mzscheme/suggestions@2x.png 2x\" width=\"500\" height=\"140\" alt=\"A screenshot of LaunchBar showing two search results: the articles on the Racket programming language and Abraham M. Schermerhorn.\">\n</figure>\n<p><em>That</em> wasn’t what I expected. Okay, apparently “MzScheme” is an older name for the programming language and environment that are <a href=\"https://racket-lang.org/new-name.html\">now called Racket</a>. But Abraham M. Scher­mer­horn was… the mayor of Rochester, New York? The city I used to live in? And he died in 1855, preceding even ancient Lisp by over a century. What the hell was he doing in the search results for “mzscheme”? It took me a lot of squinting to realize that “M. Scher­mer­horn” does sort of, a little bit, look like “mzscheme.”<a href=\"https://esham.io/#mzscheme_fn1\" class=\"footnote-ref\" id=\"mzscheme_fnref1\" role=\"doc-noteref\"><sup>1</sup></a></p>\n<p>One mystery still remains: why are Vim users so uninterested in writing scripts in Lisp? Snarky Emacs-related answers aside, I think the answer at this point may just be that many distributions ship a Vim that’s been compiled without support for Racket.<a href=\"https://esham.io/#mzscheme_fn2\" class=\"footnote-ref\" id=\"mzscheme_fnref2\" role=\"doc-noteref\"><sup>2</sup></a> <a href=\"https://github.com/vim/vim/issues/2596\">This issue thread</a> suggests that you can’t build a Racket-enabled Vim under Ubuntu unless you compile Racket yourself. Homebrew doesn’t include Racket support in <a href=\"https://github.com/Homebrew/homebrew-core/blob/master/Formula/vim.rb\">its formula for Vim</a>, and even the flexibility-obsessed Nix doesn’t offer Racket support in <a href=\"https://github.com/NixOS/nixpkgs/blob/35d68ef143412f579544eaac7aaa87e29f84b15e/pkgs/applications/editors/vim/configurable.nix\">its vim_configurable derivation</a>. This leads to a chicken-and-egg problem where people don’t script Vim with Racket because their copy of Vim doesn’t support that, and packagers don’t build in Racket support because no one is asking for it.</p>\n<section class=\"footnotes\" role=\"doc-endnotes\">\n<hr>\n<ol>\n<li id=\"mzscheme_fn1\" role=\"doc-endnote\"><p>Wikipedia has an article called “A. M. Schemerhorn”—note the missing “r”—that redirects to “Abraham M. Scher­mer­horn.” I don’t think the search algorithm would have even identified a match had this redirect not existed.<a href=\"https://esham.io/#mzscheme_fnref1\" class=\"footnote-back\" role=\"doc-backlink\">↩︎</a></p></li>\n<li id=\"mzscheme_fn2\" role=\"doc-endnote\"><p>If only Vim had supported the <abbr>GNU</abbr> flavor of Scheme instead, we could call these builds <a href=\"https://en.wikipedia.org/wiki/GNU_Guile\">guileless</a>.<a href=\"https://esham.io/#mzscheme_fnref2\" class=\"footnote-back\" role=\"doc-backlink\">↩︎</a></p></li>\n</ol>\n</section>",
+            "value": "The Vim text editor can run scripts written in several programming languages: Python, Ruby, and Lua, to name just three, and MzScheme, to name one more. I got curious about this last one. I assumed from the name that MzScheme is a dialect of Lisp, but I’ve never seen evidence of anyone actually writing a Vim script in this language. I popped open LaunchBar (whose ability to search Wikipedia I’ve mentioned before), selected Wikipedia, and typed in “mzscheme,” which gave me these results:\n\n A screenshot of LaunchBar showing two search results: the articles on the Racket programming language and Abraham M. Schermerhorn. \n\nThat wasn’t what I expected. Okay, apparently “MzScheme” is an older name for the programming language and environment that are now called Racket. But Abraham M. Scher­mer­horn was… the mayor of Rochester, New York? The city I used to live in? And he died in 1855, preceding even ancient Lisp by over a century. What the hell was he doing in the search results for “mzscheme”? It took me a lot of squinting to realize that “M. Scher­mer­horn” does sort of, a little bit, look like “mzscheme.”1\nOne mystery still remains: why are Vim users so uninterested in writing scripts in Lisp? Snarky Emacs-related answers aside, I think the answer at this point may just be that many distributions ship a Vim that’s been compiled without support for Racket.2 This issue thread suggests that you can’t build a Racket-enabled Vim under Ubuntu unless you compile Racket yourself. Homebrew doesn’t include Racket support in its formula for Vim, and even the flexibility-obsessed Nix doesn’t offer Racket support in its vim_configurable derivation. This leads to a chicken-and-egg problem where people don’t script Vim with Racket because their copy of Vim doesn’t support that, and packagers don’t build in Racket support because no one is asking for it.\n\n\n\nWikipedia has an article called “A. M. Schemerhorn”—note the missing “r”—that redirects to “Abraham M. Scher­mer­horn.” I don’t think the search algorithm would have even identified a match had this redirect not existed.↩︎\nIf only Vim had supported the GNU flavor of Scheme instead, we could call these builds guileless.↩︎"
+          }
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "alternate": [
+      "https://esham.io/feeds/everything.json",
+      "https://esham.io/atom.xml",
+      "https://esham.io/feeds/notes.json",
+      "https://esham.io/feeds/photos.json"
+    ],
+    "stylesheet": [
+      "https://esham.io/style.css"
+    ],
+    "icon": [
+      "https://esham.io/images/favicon.png"
+    ],
+    "shortcut": [
+      "https://esham.io/images/favicon.png"
+    ],
+    "apple-touch-icon": [
+      "https://esham.io/images/apple-touch-icon.png"
+    ],
+    "pingback": [
+      "https://webmention.io/esham.io/xmlrpc"
+    ],
+    "webmention": [
+      "https://webmention.io/esham.io/webmention"
+    ],
+    "canonical": [
+      "https://esham.io/"
+    ],
+    "me": [
+      "https://twitter.com/bdesham",
+      "https://github.com/bdesham",
+      "https://www.instagram.com/bdesham",
+      "mailto:benjamin@esham.io"
+    ],
+    "feed": [
+      "https://esham.io/micro"
+    ],
+    "author": [
+      "https://esham.io/about"
+    ]
+  },
+  "rel-urls": {
+    "https://esham.io/feeds/everything.json": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "All posts (JSON Feed)",
+      "type": "application/json"
+    },
+    "https://esham.io/atom.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Articles (Atom)",
+      "type": "application/atom+xml"
+    },
+    "https://esham.io/feeds/notes.json": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Notes (JSON Feed)",
+      "type": "application/json"
+    },
+    "https://esham.io/feeds/photos.json": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Photos (JSON Feed)",
+      "type": "application/json"
+    },
+    "https://esham.io/style.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://esham.io/images/favicon.png": {
+      "rels": [
+        "icon",
+        "shortcut"
+      ],
+      "type": "image/png"
+    },
+    "https://esham.io/images/apple-touch-icon.png": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://webmention.io/esham.io/xmlrpc": {
+      "rels": [
+        "pingback"
+      ]
+    },
+    "https://webmention.io/esham.io/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://esham.io/": {
+      "rels": [
+        "canonical"
+      ]
+    },
+    "https://twitter.com/bdesham": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://github.com/bdesham": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://www.instagram.com/bdesham": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://esham.io/micro": {
+      "rels": [
+        "feed"
+      ]
+    },
+    "https://esham.io/about": {
+      "rels": [
+        "author"
+      ],
+      "text": "About"
+    },
+    "mailto:benjamin@esham.io": {
+      "rels": [
+        "me"
+      ],
+      "text": "Email"
+    }
+  }
+}

@@ -1,0 +1,461 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Installing Xdebug on PHP 8.1 installed with Homebrew\n                                \n                    I have recently set up a new M2 MacBook Air and as usual, installed Homebrew and then installed PHP. Homebrew is always up to date, so it installed PHP 8.1 for me. Again, as usual, I installed Xdebug using pecl install xdebug. This whirrs and clicks for a while downloading and compiling the xdebug.so and then fails with: rob@ardent ~ $ pecl install xdebug downloading xdebug-3.1.5.tgz … Starting to download xdebug-3.1.5.tgz (232,070 bytes) … Build… continue reading.\n                    Posted on\n                            26 July 2022                            in PHP, Software\n\n                                                    \n                                One comment so far"
+        ]
+      },
+      "id": "post-6482"
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "BBEdit Hosts File Syntax Highlighting\n                                \n                    While editing my Hosts file in BBEdit, I wondered how hard it would be to create syntax highlighting for it. A quick google later, I discovered that I needed to create a Codeless Language Module and this is my first attempt: To install, download Hosts.plist and copy to your iCloud Drive's BBEdit/Application Support/Language Modules directory, restart BBEdit and you're done. I've kept it really simple and just highlight comments and the IP address, but it… continue reading.\n                    Posted on\n                            23 June 2022                            in Software\n\n                                                    \n                                Leave a comment"
+        ]
+      },
+      "id": "post-6464"
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Background images and multiple styles in rst2pdf\n                                \n                    Over the weekend I released rst2pdf 0.99. The list of changes is quite long as it's been over a year since the last release. There are some key things in this release that I'm particularly pleased about including Python 3.9 and 3.10 & Sphinx 4 support, multiple styles in the class directive and the ability to specify background images in the raw:: pdf directive. There's also a number of bug fixes, particular to math rendering… continue reading.\n                    Posted on\n                            11 January 2022                            in rst2pdf\n\n                                                    \n                                Leave a comment"
+        ]
+      },
+      "id": "post-6443"
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "2021 in Pictures\n                                \n                    2021 is over! A very strange year where I have been vaccinated against COVID-19, with an additional booster, yet I caught it and took months to recover. Fortunately, I continued to take a photo every day though my Project 365 which allows me to appreciate what happened during this year of my life. January January started out quietly with a hint of snow. I did a lot of walking, presented at The Online & my… continue reading.\n                    Posted on\n                            31 December 2021                            in Me, Year in Pictures\n\n                                                    \n                                Leave a comment"
+        ]
+      },
+      "id": "post-6438"
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Add TouchID authentication to sudo\n                                \n                    Now that I have a TouchID enabled Mac, I want to be able use TouchID for sudo access. There's a pam module available, so it just needs enabling: Edit /etc/pam.d/sudo Add a new line under line 1 (which is a comment) containing: auth sufficient pam_tid.so (Leave all other lines in this file.) That's it. Now, whenever you use sudo, you have the option of using TouchID to authenticate. Scripting it It turns out that whenever… continue reading.\n                    Posted on\n                            17 November 2021                            in Computing\n\n                                                    \n                                One comment so far"
+        ]
+      },
+      "id": "post-6432"
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Quick script to (re)create my python virtualenv\n                                \n                    When working on rst2pdf, I use pyenv as I've written about before. Recently, I've found myself needing to recreate virtualenvs for various Python versions and then recreate them to easily reset the list of packages installed into them via pip. To my my life easier, I created a script that I can run from the command line: $ newenv rst2pdf-dev-py3.9 3.9.5 This creates a new virtualenv called rst2pdf-dev-py3.9 from Python version 3.9.5, upgrade pip and… continue reading.\n                    Posted on\n                            8 September 2021                            in Development, Python\n\n                                                    \n                                Leave a comment"
+        ]
+      },
+      "id": "post-6413"
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Changelog generator for GitHub milestones\n                                \n                    For many years now, I've been using Matthew Weier O'Phinney's changelog_generator script to generate an easy-to-read list of changes for a given milestone. Time has moved on; the Laminas project now uses Laminas Automatic Releases and Matthew hasn't updated his script since 2013. Since PHP 8, warnings have started appear, so it's clear updates were required. While I fully intend to see if I can use Automatic Releases on some projects, I have others where… continue reading.\n                    Posted on\n                            18 August 2021                            in PHP\n\n                                                    \n                                Leave a comment"
+        ]
+      },
+      "id": "post-6410"
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Setting HTTP status code based on Exception in Slim 4\n                                \n                    One thing that's quite convenient is to be able to throw an exception with a valid HTTP code set and have that code sent to the client. For example, you may have: throw new \\RuntimeException(\"Not Found\", 404); With the standard Slim 4 error handler, this response is sent to the client: $ curl -i -H \"Accept:application/json\" http://localhost:8888 HTTP/1.1 500 Internal Server Error Host: localhost:8888 Content-type: application/json { \"message\": \"Slim Application Error\" } Ideally we want… continue reading.\n                    Posted on\n                            19 July 2021                            in PHP, Slim Framework, Slim Framework 4\n\n                                                    \n                                Leave a comment"
+        ]
+      },
+      "id": "post-6404"
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "A few Git tips\n                                \n                    I don't do that much that's clever with git, but I've found the following helpful. Automatically prune When you do a git fetch or git pull, you can ask it to remove remote tracking branches for a branch that has been removed on the remote by using the –prune flag. This can be automated globally with: git config –global fetch.prune true and if you only want it for a specific repository, you can use: git… continue reading.\n                    Posted on\n                            30 March 2021                            in Development\n\n                                                    \n                                View all 3 comments"
+        ]
+      },
+      "id": "post-6372"
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "OpenConnect on Mac\n                                \n                    One of my clients has recently moved to AnyConnect VPN and I've been having routing problems with the official Mac client. As my colleagues on Linux on the project have not had these issues, I investigated and installed the OpenConnect client. These are my notes after scouring the Internet to set it up how I want it. Installation I used Homebrew: $ brew install openconnect OpenConnect is a CLI tool. If you want a GUI… continue reading.\n                    Posted on\n                            23 March 2021                            in Computing, Software\n\n                                                    \n                                View all 7 comments"
+        ]
+      },
+      "id": "post-6367"
+    },
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "note": [
+          "Rob Allen is a sofware consultant and developer concentrating on HTTP APIs. He develops in PHP, Python and other interesting languages, contributing to rst2pdf, Slim Framework, Apache OpenWhisk amongst other OSS projects.\nBased in Worcester, UK, he runs Nineteen Feet and is the author of Zend Framework in Action."
+        ],
+        "name": [
+          "Rob Allen"
+        ],
+        "url": [
+          "https://akrabat.com/"
+        ],
+        "photo": [
+          {
+            "value": "https://akrabat.com/stuff/rob_allen.jpg",
+            "alt": "profile image"
+          }
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "dns-prefetch": [
+      "https://s.w.org/"
+    ],
+    "alternate": [
+      "https://akrabat.com/feed/",
+      "https://akrabat.com/comments/feed/"
+    ],
+    "stylesheet": [
+      "https://akrabat.com/wp-includes/css/dist/block-library/style.min.css?ver=6.0.2",
+      "https://akrabat.com/wp-content/plugins/indieweb/static/css/indieweb-bw.css?ver=3.4.7",
+      "https://akrabat.com/wp-content/themes/akrabat3/vendor/css/bootstrap.min.css?ver=3.37",
+      "https://akrabat.com/wp-content/themes/akrabat3/style.css?ver=6.0.2",
+      "https://akrabat.com/wp-content/plugins/shutter-reloaded-plus/shutter-reloaded.css",
+      "https://fonts.googleapis.com/css?family=Lato:300|PT+Serif:400,400i,700,700i"
+    ],
+    "https://api.w.org/": [
+      "https://akrabat.com/wp-json/"
+    ],
+    "EditURI": [
+      "https://akrabat.com/xmlrpc.php?rsd"
+    ],
+    "wlwmanifest": [
+      "https://akrabat.com/wp-includes/wlwmanifest.xml"
+    ],
+    "shortlink": [
+      "https://akrabat.com/0"
+    ],
+    "me": [
+      "https://github.com/akrabat",
+      "https://twitter.com/akrabat",
+      "https://www.instagram.com/akrabat1",
+      "https://www.flickr.com/people/akrabat",
+      "https://micro.blog/akrabat",
+      "https://akrabat.com/",
+      "https://www.instagram.com/akrabatic"
+    ],
+    "bookmark": [
+      "https://akrabat.com/installing-xdebug-on-php-8-1-installed-with-homebrew/",
+      "https://akrabat.com/bbedit-hosts-file-syntax-highlighting/",
+      "https://akrabat.com/background-images-in-rst2pdf-0-99/",
+      "https://akrabat.com/2021-in-pictures/",
+      "https://akrabat.com/add-touchid-authentication-to-sudo/",
+      "https://akrabat.com/quick-script-to-recreate-my-python-virtualenv/",
+      "https://akrabat.com/changelog-generator-for-github-milestones/",
+      "https://akrabat.com/setting-http-status-code-based-on-exception-in-slim-4/",
+      "https://akrabat.com/a-few-git-tips/",
+      "https://akrabat.com/openconnect-on-mac/"
+    ],
+    "category": [
+      "https://akrabat.com/category/php/",
+      "https://akrabat.com/category/software/",
+      "https://akrabat.com/category/rst2pdf/",
+      "https://akrabat.com/category/me/",
+      "https://akrabat.com/category/year-in-pictures/",
+      "https://akrabat.com/category/computing/",
+      "https://akrabat.com/category/development/",
+      "https://akrabat.com/category/python/",
+      "https://akrabat.com/category/slim-framework/",
+      "https://akrabat.com/category/slim-framework-4/"
+    ],
+    "tag": [
+      "https://akrabat.com/category/php/",
+      "https://akrabat.com/category/software/",
+      "https://akrabat.com/category/rst2pdf/",
+      "https://akrabat.com/category/me/",
+      "https://akrabat.com/category/year-in-pictures/",
+      "https://akrabat.com/category/computing/",
+      "https://akrabat.com/category/development/",
+      "https://akrabat.com/category/python/",
+      "https://akrabat.com/category/slim-framework/",
+      "https://akrabat.com/category/slim-framework-4/"
+    ]
+  },
+  "rel-urls": {
+    "https://s.w.org/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
+    "https://akrabat.com/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Rob Allen's DevNotes » Feed",
+      "type": "application/rss+xml"
+    },
+    "https://akrabat.com/comments/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Rob Allen's DevNotes » Comments Feed",
+      "type": "application/rss+xml"
+    },
+    "https://akrabat.com/wp-includes/css/dist/block-library/style.min.css?ver=6.0.2": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://akrabat.com/wp-content/plugins/indieweb/static/css/indieweb-bw.css?ver=3.4.7": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://akrabat.com/wp-content/themes/akrabat3/vendor/css/bootstrap.min.css?ver=3.37": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://akrabat.com/wp-content/themes/akrabat3/style.css?ver=6.0.2": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://akrabat.com/wp-json/": {
+      "rels": [
+        "https://api.w.org/"
+      ]
+    },
+    "https://akrabat.com/xmlrpc.php?rsd": {
+      "rels": [
+        "EditURI"
+      ],
+      "title": "RSD",
+      "type": "application/rsd+xml"
+    },
+    "https://akrabat.com/wp-includes/wlwmanifest.xml": {
+      "rels": [
+        "wlwmanifest"
+      ],
+      "type": "application/wlwmanifest+xml"
+    },
+    "https://akrabat.com/0": {
+      "rels": [
+        "shortlink"
+      ]
+    },
+    "https://akrabat.com/wp-content/plugins/shutter-reloaded-plus/shutter-reloaded.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "screen",
+      "type": "text/css"
+    },
+    "https://github.com/akrabat": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://twitter.com/akrabat": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://www.instagram.com/akrabat1": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://www.flickr.com/people/akrabat": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://fonts.googleapis.com/css?family=Lato:300|PT+Serif:400,400i,700,700i": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://micro.blog/akrabat": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://akrabat.com/installing-xdebug-on-php-8-1-installed-with-homebrew/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "Installing Xdebug on PHP 8.1 installed with Homebrew"
+    },
+    "https://akrabat.com/category/php/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "PHP"
+    },
+    "https://akrabat.com/category/software/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Software"
+    },
+    "https://akrabat.com/bbedit-hosts-file-syntax-highlighting/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "BBEdit Hosts File Syntax Highlighting"
+    },
+    "https://akrabat.com/background-images-in-rst2pdf-0-99/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "Background images and multiple styles in rst2pdf"
+    },
+    "https://akrabat.com/category/rst2pdf/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "rst2pdf"
+    },
+    "https://akrabat.com/2021-in-pictures/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "2021 in Pictures"
+    },
+    "https://akrabat.com/category/me/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Me"
+    },
+    "https://akrabat.com/category/year-in-pictures/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Year in Pictures"
+    },
+    "https://akrabat.com/add-touchid-authentication-to-sudo/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "Add TouchID authentication to sudo"
+    },
+    "https://akrabat.com/category/computing/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Computing"
+    },
+    "https://akrabat.com/quick-script-to-recreate-my-python-virtualenv/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "Quick script to (re)create my python virtualenv"
+    },
+    "https://akrabat.com/category/development/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Development"
+    },
+    "https://akrabat.com/category/python/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Python"
+    },
+    "https://akrabat.com/changelog-generator-for-github-milestones/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "Changelog generator for GitHub milestones"
+    },
+    "https://akrabat.com/setting-http-status-code-based-on-exception-in-slim-4/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "Setting HTTP status code based on Exception in Slim 4"
+    },
+    "https://akrabat.com/category/slim-framework/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Slim Framework"
+    },
+    "https://akrabat.com/category/slim-framework-4/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Slim Framework 4"
+    },
+    "https://akrabat.com/a-few-git-tips/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "A few Git tips"
+    },
+    "https://akrabat.com/openconnect-on-mac/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "OpenConnect on Mac"
+    },
+    "https://akrabat.com/": {
+      "rels": [
+        "me"
+      ],
+      "text": "Rob Allen"
+    },
+    "https://www.instagram.com/akrabatic": {
+      "rels": [
+        "me"
+      ],
+      "text": "akrabatic"
+    }
+  }
+}

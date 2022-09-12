@@ -1,0 +1,65 @@
+{
+  "items": [],
+  "rels": {
+    "me": [
+      "https://hobbsy.com/",
+      "https://micro.blog/hobbsy",
+      "https://twitter.com/hobbsy",
+      "https://www.instagram.com/hobbsy/",
+      "https://www.youtube.com/user/hobbsy/videos",
+      "https://github.com/hobbsy"
+    ],
+    "authorization_endpoint": [
+      "https://micro.blog/indieauth/auth"
+    ],
+    "token_endpoint": [
+      "https://micro.blog/indieauth/token"
+    ]
+  },
+  "rel-urls": {
+    "https://hobbsy.com/": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://micro.blog/hobbsy": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://micro.blog/indieauth/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://micro.blog/indieauth/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://twitter.com/hobbsy": {
+      "rels": [
+        "me"
+      ],
+      "text": "Twitter"
+    },
+    "https://www.instagram.com/hobbsy/": {
+      "rels": [
+        "me"
+      ],
+      "text": "Instagram"
+    },
+    "https://www.youtube.com/user/hobbsy/videos": {
+      "rels": [
+        "me"
+      ],
+      "text": "YouTube"
+    },
+    "https://github.com/hobbsy": {
+      "rels": [
+        "me"
+      ],
+      "text": "Github"
+    }
+  }
+}

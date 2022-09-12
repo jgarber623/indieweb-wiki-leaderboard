@@ -1,0 +1,131 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Boghop.com Homepage"
+        ],
+        "content": [
+          {
+            "html": "<!-- slug : index -->\n\n<p>I changed websites. I'm now using <a href=\"http://sawv.org/\">sawv.org</a></p>\n\n<p>Old boghop.com pages:</p>\n\n<ul>\n<li><a href=\"http://boghop.com/about\">about</a></li>\n<li><a href=\"http://boghop.com/boghopcom-tech-stack.html\">tech stack</a></li>\n</ul>\n\n<p>boghop.com uses Amazon Web Services</p>\n\n<ul>\n<li>Route 53: domain registration and DNS</li>\n<li>EC2: Ubuntu Linux instance to host my Wren web app</li>\n<li>S3: bucket to host HTML files</li>\n<li>CloudFront: caching HTML files</li>\n</ul>",
+            "value": "I changed websites. I'm now using sawv.org\n\nOld boghop.com pages:\n\n\nabout\ntech stack\n\n\nboghop.com uses Amazon Web Services\n\n\nRoute 53: domain registration and DNS\nEC2: Ubuntu Linux instance to host my Wren web app\nS3: bucket to host HTML files\nCloudFront: caching HTML files"
+          }
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "name": [
+                "jr"
+              ],
+              "url": [
+                "http://boghop.com/about.html"
+              ]
+            },
+            "value": "jr"
+          }
+        ],
+        "url": [
+          "http://boghop.com/#"
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "icon": [
+      "http://boghop.com/images/favicon.ico"
+    ],
+    "shortcut": [
+      "http://boghop.com/images/favicon.ico"
+    ],
+    "apple-touch-icon": [
+      "http://boghop.com/images/cawr-60x60.png"
+    ],
+    "alternate": [
+      "http://boghop.com/rss.xml",
+      "http://boghop.com/feed.json"
+    ],
+    "feed": [
+      "http://boghop.com/mft.html"
+    ],
+    "webmention": [
+      "http://boghop.net/api/v1/webmentions"
+    ],
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "me": [
+      "https://twitter.com/sawv"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "micropub": [
+      "http://boghop.net/api/v1/micropub"
+    ]
+  },
+  "rel-urls": {
+    "http://boghop.com/images/favicon.ico": {
+      "rels": [
+        "icon",
+        "shortcut"
+      ],
+      "type": "image/ico"
+    },
+    "http://boghop.com/images/cawr-60x60.png": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "http://boghop.com/rss.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/rss+xml"
+    },
+    "http://boghop.com/feed.json": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "JSON Feed",
+      "type": "application/json"
+    },
+    "http://boghop.com/mft.html": {
+      "rels": [
+        "feed"
+      ],
+      "title": "Microformatted HTML feed page",
+      "type": "text/html"
+    },
+    "http://boghop.net/api/v1/webmentions": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://twitter.com/sawv": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "http://boghop.net/api/v1/micropub": {
+      "rels": [
+        "micropub"
+      ]
+    }
+  }
+}

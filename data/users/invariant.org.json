@@ -1,0 +1,58 @@
+{
+  "items": [],
+  "rels": {
+    "stylesheet": [
+      "http://invariant.org/soft.css",
+      "http://invariant.org/bib.css"
+    ],
+    "openid2.provider": [
+      "https://openid.stackexchange.com/openid/provider"
+    ],
+    "openid2.local_id": [
+      "https://openid.stackexchange.com/user/b04aaaa0-5fd2-4a33-8ef1-fe48bae4170e"
+    ],
+    "meta": [
+      "http://invariant.org/foaf.rdf"
+    ],
+    "pgpkey": [
+      "http://invariant.org/files/peter-key.asc"
+    ]
+  },
+  "rel-urls": {
+    "http://invariant.org/soft.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "http://invariant.org/bib.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://openid.stackexchange.com/openid/provider": {
+      "rels": [
+        "openid2.provider"
+      ]
+    },
+    "https://openid.stackexchange.com/user/b04aaaa0-5fd2-4a33-8ef1-fe48bae4170e": {
+      "rels": [
+        "openid2.local_id"
+      ]
+    },
+    "http://invariant.org/foaf.rdf": {
+      "rels": [
+        "meta"
+      ],
+      "title": "FOAF",
+      "type": "application/rdf+xml"
+    },
+    "http://invariant.org/files/peter-key.asc": {
+      "rels": [
+        "pgpkey"
+      ],
+      "type": "application/pgp-keys"
+    }
+  }
+}

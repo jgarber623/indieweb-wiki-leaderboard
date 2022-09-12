@@ -1,0 +1,930 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-feed"
+      ],
+      "properties": {
+        "name": [
+          "Cedric.io"
+        ],
+        "url": [
+          "https://twitter.com/akyrho",
+          "https://www.facebook.com/cedric.bousmanne",
+          "https://github.com/cedricbousmanne",
+          "https://www.instagram.com/akyrh0",
+          "https://www.linkedin.com/in/bousmannecedric",
+          "https://ruby.social/@akyrho"
+        ]
+      },
+      "children": [
+        {
+          "type": [
+            "h-card"
+          ],
+          "properties": {
+            "url": [
+              "https://cedric.io/profile/cedric",
+              "https://cedric.io/profile/cedric",
+              "https://twitter.com/akyrho",
+              "https://www.facebook.com/cedric.bousmanne",
+              "https://github.com/cedricbousmanne",
+              "https://www.instagram.com/akyrh0",
+              "https://www.linkedin.com/in/bousmannecedric",
+              "https://ruby.social/@akyrho"
+            ],
+            "photo": [
+              "https://cedric.io/file/a9f243aeea2b7492aa7d64a52289f955/thumb.jpg"
+            ],
+            "profile": [
+              "Cédric Bousmanne"
+            ],
+            "name": [
+              "Cédric Bousmanne"
+            ],
+            "note": [
+              {
+                "html": "<div class=\"highlightedText\">\n<p>Father of 3, Indieweb enthousiast, I code for a living</p>\n</div>",
+                "value": "Father of 3, Indieweb enthousiast, I code for a living"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "url": [
+                    "https://cedric.io/profile/cedric",
+                    "https://cedric.io/profile/cedric"
+                  ],
+                  "photo": [
+                    "https://cedric.io/file/a9f243aeea2b7492aa7d64a52289f955/thumb.jpg"
+                  ],
+                  "name": [
+                    "Cédric Bousmanne"
+                  ]
+                },
+                "value": "Cédric Bousmanne"
+              }
+            ],
+            "name": [
+              "Building myself a framed e-calendar"
+            ],
+            "content": [
+              {
+                "html": "<p>I am terrible at both planning and remembering stuff. It's been a curse for the past 36 years and I can't imagine it getting better over time.</p>\n<p>I've tried a bunch of things over the years to overcome that, including <a href=\"https://cedric.io/tag/bulletjournal\">writing a bullet journal</a> - which I did for almost 3 years - but I was constantly frustrated by the fact that I never seem to have it on hand. The journal was living on my desk or in my bagpack, which was fine during working hours, but not outside of those hours.</p>\n<p>A few months ago I started to look at <a href=\"https://taskwarrior.org/\">TaskWarrior</a>. I was instantly seduced by the tool - mainly because it lives in the CLI, of course - but it was definitely not a more portable option until I discovered <a href=\"https://wingtask.com/\">WingTask</a>, the mobile-first <abbr title=\"Progressive Web App\">PWA</abbr> companion to TaskWarrior.</p>\n<p>Things went better, but not just yet. I soon realised that I was too often surprised by my schedule - that sneaky Slack notification that catch you off-guard : \"&lt;important meeting&gt; starts in 1 min\" was constantly taking me aback.</p>\n<p>Not only am I terrible at planning and remembering - I already said that, didn't I? - But I'm also terribly lazy. If the information doesn't come to me, chances are that I'll never even try to find it.</p>\n<p>And then on a beautiful morning, I stumbled upon <a href=\"https://github.com/speedyg0nz/MagInkCal\">MagInkCal</a>, a project built with Raspberry Pi, e-ink screen, and a wooden frame. This was it : I needed something to remind me of stuff right in front of me, and luckily, I have just the space in front of my eyes.</p>\n<p><img src=\"https://cedric.io/file/34e027ac991757ef063e20ed182eca46/thumb.jpg\" alt=\"My home-office space, with the perfect place for a framed e-ink screen calendar\" width=\"768\" height=\"1024\"></p>\n<p>Now I am known to get really excited real quick, and I have a Raspeberry Pi Zero on hand, so I promptly order a <a href=\"https://amzn.to/3LSxhZQ\">7.5inch E-Paper E-Ink Display</a> and a <a href=\"https://amzn.to/39AGNlX\">battery</a>, completely ignoring the fact that my very old Rpi Zero is not build with a Wi-Fi chipset.</p>\n<p>Obviously I took way too long trying to make my Rpi Zero play nice with a USB Wi-Fi dongle - which is surprisingly frustrating - before I realise that the Wi-Fi dongle would require the use of an additional power supply. The idea being to have a low-consumption e-ink calendar, relying on a powered USB hub would make no sense.</p>\n<p>What I didn't know though, is that there is currently a <a href=\"https://cedric.io/2022/what-the-heck-happened-with-the-raspberry\">global Raspberry Pi shortage</a>, so buying a brand new Raspberry Pi Zero with built-in Wi-Fi was not an option. I was this close to let that project die in a corner of my head when I discovered the <a href=\"https://amzn.to/3yf8RFS\">ESP32 - A tiny, low-consumption, Wi-Fi and bluetooth-ready microcontroller that is dirt-cheap</a>.</p>\n<p>But that's a story for another day.</p>\n<p><a href=\"https://cedric.io/tag/esp32\" class=\"p-category\" rel=\"tag\">#esp32</a> <a href=\"https://cedric.io/tag/eink\" class=\"p-category\" rel=\"tag\">#eink</a> <a href=\"https://cedric.io/tag/calendar\" class=\"p-category\" rel=\"tag\">#calendar</a></p>",
+                "value": "I am terrible at both planning and remembering stuff. It's been a curse for the past 36 years and I can't imagine it getting better over time.I've tried a bunch of things over the years to overcome that, including writing a bullet journal - which I did for almost 3 years - but I was constantly frustrated by the fact that I never seem to have it on hand. The journal was living on my desk or in my bagpack, which was fine during working hours, but not outside of those hours.A few months ago I started to look at TaskWarrior. I was instantly seduced by the tool - mainly because it lives in the CLI, of course - but it was definitely not a more portable option until I discovered WingTask, the mobile-first PWA companion to TaskWarrior.Things went better, but not just yet. I soon realised that I was too often surprised by my schedule - that sneaky Slack notification that catch you off-guard : \"<important meeting> starts in 1 min\" was constantly taking me aback.Not only am I terrible at planning and remembering - I already said that, didn't I? - But I'm also terribly lazy. If the information doesn't come to me, chances are that I'll never even try to find it.And then on a beautiful morning, I stumbled upon MagInkCal, a project built with Raspberry Pi, e-ink screen, and a wooden frame. This was it : I needed something to remind me of stuff right in front of me, and luckily, I have just the space in front of my eyes. My home-office space, with the perfect place for a framed e-ink screen calendar Now I am known to get really excited real quick, and I have a Raspeberry Pi Zero on hand, so I promptly order a 7.5inch E-Paper E-Ink Display and a battery, completely ignoring the fact that my very old Rpi Zero is not build with a Wi-Fi chipset.Obviously I took way too long trying to make my Rpi Zero play nice with a USB Wi-Fi dongle - which is surprisingly frustrating - before I realise that the Wi-Fi dongle would require the use of an additional power supply. The idea being to have a low-consumption e-ink calendar, relying on a powered USB hub would make no sense.What I didn't know though, is that there is currently a global Raspberry Pi shortage, so buying a brand new Raspberry Pi Zero with built-in Wi-Fi was not an option. I was this close to let that project die in a corner of my head when I discovered the ESP32 - A tiny, low-consumption, Wi-Fi and bluetooth-ready microcontroller that is dirt-cheap.But that's a story for another day.#esp32 #eink #calendar"
+              }
+            ],
+            "category": [
+              "#esp32",
+              "#eink",
+              "#calendar"
+            ],
+            "url": [
+              "https://cedric.io/2022/building-myself-a-framed-e-calendar"
+            ],
+            "published": [
+              "2022-05-06T09:16:08+0000"
+            ],
+            "syndication": [
+              "https://twitter.com/akyrho/status/1522505490051350528"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "url": [
+                    "https://cedric.io/profile/cedric",
+                    "https://cedric.io/profile/cedric"
+                  ],
+                  "photo": [
+                    "https://cedric.io/file/a9f243aeea2b7492aa7d64a52289f955/thumb.jpg"
+                  ],
+                  "name": [
+                    "Cédric Bousmanne"
+                  ]
+                },
+                "value": "Cédric Bousmanne"
+              }
+            ],
+            "name": [
+              "They say “buy a plunger before you need one”. \r\nThey forgot to mention “buy a second one in case you break the first in the toilet”."
+            ],
+            "content": [
+              {
+                "html": "They say “buy a plunger before you need one”. <br>\r\nThey forgot to mention “buy a second one in case you break the first in the toilet”.",
+                "value": "They say “buy a plunger before you need one”. \r\nThey forgot to mention “buy a second one in case you break the first in the toilet”."
+              }
+            ],
+            "url": [
+              "https://cedric.io/2022/they-say-buy-a-plunger-before-you"
+            ],
+            "published": [
+              "2022-04-09T23:05:54+0000"
+            ],
+            "syndication": [
+              "https://twitter.com/akyrho/status/1512929836066656257"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "url": [
+                    "https://cedric.io/profile/cedric",
+                    "https://cedric.io/profile/cedric"
+                  ],
+                  "photo": [
+                    "https://cedric.io/file/a9f243aeea2b7492aa7d64a52289f955/thumb.jpg"
+                  ],
+                  "name": [
+                    "Cédric Bousmanne"
+                  ]
+                },
+                "value": "Cédric Bousmanne"
+              }
+            ],
+            "name": [
+              "Migrating photos from iCloud / iPhone to Nextcloud - part 1"
+            ],
+            "summary": [
+              ""
+            ],
+            "content": [
+              {
+                "html": "<p>Today I finally decided to give Nextcloud a try. I want to free myself out of iCloud / Google Photos / Amazon Photos and the like, so after I installed Nextcloud on a brand new digitalocean droplet, it was time for the great migration.</p>\n<p>At first I tried to sync all my photos with my Nextcloud instance straight from the Nextcloud's iPhone App but I bumped into a few issues :</p>\n<ul>\n<li>The app was detecting some 13k photos - whereas the Photo app on my phone claims 7.6k</li>\n<li>The app was crashing every so often</li>\n<li>After a few crashes, I had to log back in, and redo the whole process from the start</li>\n</ul>\n<p>No need to mentionned it bored me quite quickly, so I decide to look for another solution and cutting the process in half : first getting my photos back from iCloud, then sending them to Nextcloud.</p>\n<p>I quickly discovered a tool just for that : <a href=\"https://github.com/icloud-photos-downloader/icloud_photos_downloader\">icloud-photos-downloader/icloud_photos_downloader</a></p>\n<p>Sadly at the time of writing, the tool is not compatible with the stable version of python (3.10.x).</p>\n<p>I installed python38 via the AUR and thanks <a href=\"https://github.com/icloud-photos-downloader/icloud_photos_downloader/issues/390\">to this comment</a>, I was able to run the tool to download all my photo off iCloud</p>\n<pre>yay -S python38<br>virtualenv --python=/usr/bin/python3.8 .venv\n.venv/bin/pip install icloudpd\n.venv/bin/icloudpd --directory ./Photos \\\n--username testuser@example.com \\\n--password pass1234 \\</pre>",
+                "value": "Today I finally decided to give Nextcloud a try. I want to free myself out of iCloud / Google Photos / Amazon Photos and the like, so after I installed Nextcloud on a brand new digitalocean droplet, it was time for the great migration.At first I tried to sync all my photos with my Nextcloud instance straight from the Nextcloud's iPhone App but I bumped into a few issues :\nThe app was detecting some 13k photos - whereas the Photo app on my phone claims 7.6k\nThe app was crashing every so often\nAfter a few crashes, I had to log back in, and redo the whole process from the start\nNo need to mentionned it bored me quite quickly, so I decide to look for another solution and cutting the process in half : first getting my photos back from iCloud, then sending them to Nextcloud.I quickly discovered a tool just for that : icloud-photos-downloader/icloud_photos_downloaderSadly at the time of writing, the tool is not compatible with the stable version of python (3.10.x).I installed python38 via the AUR and thanks to this comment, I was able to run the tool to download all my photo off iCloudyay -S python38virtualenv --python=/usr/bin/python3.8 .venv\n.venv/bin/pip install icloudpd\n.venv/bin/icloudpd --directory ./Photos \\\n--username testuser@example.com \\\n--password pass1234 \\"
+              }
+            ],
+            "url": [
+              "https://cedric.io/2022/migrating-photos-from-icloud-iphone-to-nextcloud---part-1"
+            ],
+            "published": [
+              "2022-04-09T20:56:39+0000"
+            ],
+            "syndication": [
+              "https://twitter.com/akyrho/status/1512897307628421121"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "url": [
+                    "https://cedric.io/profile/cedric",
+                    "https://cedric.io/profile/cedric"
+                  ],
+                  "photo": [
+                    "https://cedric.io/file/a9f243aeea2b7492aa7d64a52289f955/thumb.jpg"
+                  ],
+                  "name": [
+                    "Cédric Bousmanne"
+                  ]
+                },
+                "value": "Cédric Bousmanne"
+              }
+            ],
+            "name": [
+              "What the heck happened with the Raspberry Pi Zero stock? It's nowhere to be found :(\r\nhttps://brid.gy/publish/mastodon"
+            ],
+            "content": [
+              {
+                "html": "What the heck happened with the Raspberry Pi Zero stock? It's nowhere to be found :(<br>\r\n<a href=\"https://brid.gy/publish/mastodon\" target=\"_blank\">https://<wbr></wbr>brid.gy/<wbr></wbr>publish/<wbr></wbr>mastodon</a>",
+                "value": "What the heck happened with the Raspberry Pi Zero stock? It's nowhere to be found :(\r\nhttps://brid.gy/publish/mastodon"
+              }
+            ],
+            "url": [
+              "https://cedric.io/2022/what-the-heck-happened-with-the-raspberry"
+            ],
+            "published": [
+              "2022-04-07T08:44:29+0000"
+            ],
+            "syndication": [
+              "https://twitter.com/akyrho/status/1511988276386746370"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "url": [
+                    "https://cedric.io/profile/cedric",
+                    "https://cedric.io/profile/cedric"
+                  ],
+                  "photo": [
+                    "https://cedric.io/file/a9f243aeea2b7492aa7d64a52289f955/thumb.jpg"
+                  ],
+                  "name": [
+                    "Cédric Bousmanne"
+                  ]
+                },
+                "value": "Cédric Bousmanne"
+              }
+            ],
+            "name": [
+              "3D printed Mario wallart with wooden frame"
+            ],
+            "summary": [
+              ""
+            ],
+            "content": [
+              {
+                "html": "<p>I wanted something special to decorate my home office when I came upon this <a href=\"https://www.thingiverse.com/thing:4870865\">vintage-looking Mario wallart on Thingiverse</a> (<a href=\"https://www.thingiverse.com/make:1025542\">Details of the make</a>). The original photo picture the 3D printed framed, so I figured, why not?</p>\n<p>First step, fire the 3D printer and extrude the hell out of Mario</p>\n<p><img src=\"https://cedric.io/file/ffb2caa89c099acb4b9a1e77564e8b2c\" alt=\"Vintage Mario - 3D printed on black PLA\" width=\"720\" height=\"960\"></p>\n<p>Retrospectively, I could have done a better job with the printer, I used a 0.6mm nozzle whereas a 0.4 would have given a cleaner look.</p>\n<p>Also, I am aware that the painter's tape on the magnetic bed is old school, but I do have layer adhesion issue and so far I couldn't bother trying and fixing them.</p>\n<p>Next to the frame : I have some oak that I received from a friend. The blank was to thic and too wide for my taste so I took care of that on my table saw.</p>\n<p>For the backgroud, I had a piece of 3mm plywood laying around. The original color was too dark to my taste and didn't play well with the oak frame so I decided to cover it up with a few thin layer of white spray paint.</p>\n<p>The joins were really weak. It took me 3 tries to get them to hold onto each other. On my third try I ended up drilling through-holes in the corner and filling them with wood dowels to have a better joins.<img src=\"https://cedric.io/file/2bd91d4a48d2701f68878a6adacc091c\" alt=\"Oak frame with a painted plywood base\" width=\"720\" height=\"960\"></p>\n<p>Lieke I mentionned, the PLA was a bit too rough to my taste. I sanded it down to 220 grid and spray painted the print.</p>\n<p>I alternated between black and red layers of spray paint just to experiment a bit and I ended up with this rusty/metalic look that I very much like.<img src=\"https://cedric.io/file/ada67e5be8f1c26c9a10aba27a56247b\" alt=\"3D printed vintage Mario wall art in an oak frame\" width=\"720\" height=\"960\"></p>",
+                "value": "I wanted something special to decorate my home office when I came upon this vintage-looking Mario wallart on Thingiverse (Details of the make). The original photo picture the 3D printed framed, so I figured, why not?First step, fire the 3D printer and extrude the hell out of Mario Vintage Mario - 3D printed on black PLA Retrospectively, I could have done a better job with the printer, I used a 0.6mm nozzle whereas a 0.4 would have given a cleaner look.Also, I am aware that the painter's tape on the magnetic bed is old school, but I do have layer adhesion issue and so far I couldn't bother trying and fixing them.Next to the frame : I have some oak that I received from a friend. The blank was to thic and too wide for my taste so I took care of that on my table saw.For the backgroud, I had a piece of 3mm plywood laying around. The original color was too dark to my taste and didn't play well with the oak frame so I decided to cover it up with a few thin layer of white spray paint.The joins were really weak. It took me 3 tries to get them to hold onto each other. On my third try I ended up drilling through-holes in the corner and filling them with wood dowels to have a better joins. Oak frame with a painted plywood base Lieke I mentionned, the PLA was a bit too rough to my taste. I sanded it down to 220 grid and spray painted the print.I alternated between black and red layers of spray paint just to experiment a bit and I ended up with this rusty/metalic look that I very much like. 3D printed vintage Mario wall art in an oak frame"
+              }
+            ],
+            "url": [
+              "https://cedric.io/2022/3d-printed-mario-wallart-with-wooden-frame"
+            ],
+            "published": [
+              "2022-04-06T14:51:10+0000"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "url": [
+                    "https://cedric.io/profile/cedric",
+                    "https://cedric.io/profile/cedric"
+                  ],
+                  "photo": [
+                    "https://cedric.io/file/a9f243aeea2b7492aa7d64a52289f955/thumb.jpg"
+                  ],
+                  "name": [
+                    "Cédric Bousmanne"
+                  ]
+                },
+                "value": "Cédric Bousmanne"
+              }
+            ],
+            "name": [
+              "Jack Skelington 3D printed pumpkin"
+            ],
+            "content": [
+              {
+                "html": "<div class=\"photo-view\">\n                <a href=\"https://cedric.io/2021/jack-skelington-3d-printed-pumpkin\" data-gallery=\"Jack Skelington 3D printed pumpkin\" data-original-img=\"https://cedric.io/file/09595f778dd335d62a64cb19bea34826/245871911_592958958815591_2493370757003146241_n.jpg\" data-title=\"Jack Skelington 3D printed pumpkin\" data-footer=\"STL source : https://www.thingiverse.com/thing:2590046\"><img src=\"https://cedric.io/file/09595f778dd335d62a64cb19bea34826/245871911_592958958815591_2493370757003146241_n.jpg\" class=\"u-photo\" alt=\"Jack Skelington 3D printed pumpkin\"></a>\n            </div>\n                <p>STL source : <a href=\"https://www.thingiverse.com/thing:2590046\" target=\"_blank\">https://<wbr></wbr>www.thingiverse.com/<wbr></wbr>thing:2590046</a></p>",
+                "value": "Jack Skelington 3D printed pumpkin \n            \n                STL source : https://www.thingiverse.com/thing:2590046"
+              }
+            ],
+            "photo": [
+              {
+                "value": "https://cedric.io/file/09595f778dd335d62a64cb19bea34826/245871911_592958958815591_2493370757003146241_n.jpg",
+                "alt": "Jack Skelington 3D printed pumpkin"
+              }
+            ],
+            "url": [
+              "https://cedric.io/2021/jack-skelington-3d-printed-pumpkin"
+            ],
+            "published": [
+              "2021-10-15T15:36:48+0000"
+            ],
+            "syndication": [
+              "https://twitter.com/akyrho/status/1449036634901688322"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "url": [
+                    "https://cedric.io/profile/cedric",
+                    "https://cedric.io/profile/cedric"
+                  ],
+                  "photo": [
+                    "https://cedric.io/file/a9f243aeea2b7492aa7d64a52289f955/thumb.jpg"
+                  ],
+                  "name": [
+                    "Cédric Bousmanne"
+                  ]
+                },
+                "value": "Cédric Bousmanne"
+              }
+            ],
+            "name": [
+              "Sewing my very first hoodie"
+            ],
+            "content": [
+              {
+                "html": "<div class=\"photo-view\">\n                <a href=\"https://cedric.io/2021/sewing-my-very-first-hoodie\" data-gallery=\"Sewing my very first hoodie\" data-original-img=\"https://cedric.io/file/0e8b0efdcadf1f50dd515530641f4687/8FC951DD-0F83-43A7-924D-B065C190B375.jpeg\" data-title=\"Sewing my very first hoodie\" data-footer=\"\"><img src=\"https://cedric.io/file/f7446254bc92fac55bd8a0f978cff010/thumb.jpg\" class=\"u-photo\" alt=\"Sewing my very first hoodie\"></a>\n            </div>",
+                "value": "Sewing my very first hoodie"
+              }
+            ],
+            "photo": [
+              {
+                "value": "https://cedric.io/file/f7446254bc92fac55bd8a0f978cff010/thumb.jpg",
+                "alt": "Sewing my very first hoodie"
+              }
+            ],
+            "url": [
+              "https://cedric.io/2021/sewing-my-very-first-hoodie"
+            ],
+            "published": [
+              "2021-10-14T07:48:01+0000"
+            ],
+            "syndication": [
+              "https://twitter.com/akyrho/status/1448556189822947333"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "url": [
+                    "https://cedric.io/profile/cedric",
+                    "https://cedric.io/profile/cedric"
+                  ],
+                  "photo": [
+                    "https://cedric.io/file/a9f243aeea2b7492aa7d64a52289f955/thumb.jpg"
+                  ],
+                  "name": [
+                    "Cédric Bousmanne"
+                  ]
+                },
+                "value": "Cédric Bousmanne"
+              }
+            ],
+            "name": [
+              "Easter themed wood basket - work in progress"
+            ],
+            "content": [
+              {
+                "html": "Easter themed wood basket - work in progress",
+                "value": "Easter themed wood basket - work in progress"
+              }
+            ],
+            "url": [
+              "https://cedric.io/2021/easter-themed-wood-basket---work-in"
+            ],
+            "published": [
+              "2021-03-14T17:34:15+0000"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "url": [
+                    "https://cedric.io/profile/cedric",
+                    "https://cedric.io/profile/cedric"
+                  ],
+                  "photo": [
+                    "https://cedric.io/file/a9f243aeea2b7492aa7d64a52289f955/thumb.jpg"
+                  ],
+                  "name": [
+                    "Cédric Bousmanne"
+                  ]
+                },
+                "value": "Cédric Bousmanne"
+              }
+            ],
+            "content": [
+              {
+                "html": "<p>Commandline Challenge</p>\n\t\t<a href=\"https://cedric.io/\" class=\"u-like-of p-name\" target=\"_blank\">Link</a>",
+                "value": "Commandline Challenge\n\t\tLink"
+              }
+            ],
+            "like-of": [
+              "https://cedric.io/"
+            ],
+            "name": [
+              "Link"
+            ],
+            "category": [
+              "#reddit",
+              "#commandline"
+            ],
+            "url": [
+              "https://cedric.io/2020/commandline-challenge"
+            ],
+            "published": [
+              "2020-11-13T21:22:35+0000"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "url": [
+                    "https://cedric.io/profile/cedric",
+                    "https://cedric.io/profile/cedric"
+                  ],
+                  "photo": [
+                    "https://cedric.io/file/a9f243aeea2b7492aa7d64a52289f955/thumb.jpg"
+                  ],
+                  "name": [
+                    "Cédric Bousmanne"
+                  ]
+                },
+                "value": "Cédric Bousmanne"
+              }
+            ],
+            "name": [
+              "Coronovirus Deaths as a Percentage of Population"
+            ],
+            "summary": [
+              ""
+            ],
+            "content": [
+              {
+                "html": "<p><a href=\"https://i.redd.it/rohz73fjesy51.png\" target=\"_blank\">https://<wbr></wbr>i.redd.it/<wbr></wbr>rohz73fjesy51.png</a></p>\n        <p class=\"tag-row\">\n            <i class=\"fa fa-tag\"></i>\n                        <a href=\"https://cedric.io/tag/+%23reddit\" class=\"p-category\" rel=\"tag\"> #reddit</a>\n                        <a href=\"https://cedric.io/tag/+%23Wallonia\" class=\"p-category\" rel=\"tag\"> #Wallonia</a>\n                    </p>",
+                "value": "https://i.redd.it/rohz73fjesy51.png\n        \n            \n                         #reddit\n                         #Wallonia"
+              }
+            ],
+            "category": [
+              "#reddit",
+              "#Wallonia"
+            ],
+            "url": [
+              "https://cedric.io/2020/coronovirus-deaths-as-a-percentage-of-population"
+            ],
+            "published": [
+              "2020-11-12T20:32:13+0000"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "rels": {
+    "apple-touch-icon": [
+      "https://cedric.io/gfx/logos/apple-icon-57x57.png",
+      "https://cedric.io/gfx/logos/apple-icon-72x72.png",
+      "https://cedric.io/gfx/logos/apple-icon-114x114.png",
+      "https://cedric.io/gfx/logos/apple-icon-144x144.png",
+      "https://cedric.io/file/a9f243aeea2b7492aa7d64a52289f955/thumb.jpg"
+    ],
+    "icon": [
+      "https://cedric.io/file/a9f243aeea2b7492aa7d64a52289f955/thumb.jpg"
+    ],
+    "shortcut": [
+      "https://cedric.io/file/a9f243aeea2b7492aa7d64a52289f955/thumb.jpg"
+    ],
+    "apple-touch-icon-precomposed": [
+      "https://cedric.io/file/a9f243aeea2b7492aa7d64a52289f955/thumb.jpg"
+    ],
+    "manifest": [
+      "https://cedric.io/chrome/manifest.json"
+    ],
+    "schema.DC": [
+      "http://purl.org/dc/elements/1.1/"
+    ],
+    "stylesheet": [
+      "https://cedric.io/vendor/twbs/bootstrap/dist/css/bootstrap.min.css",
+      "https://cedric.io/vendor/npm-asset/bootstrap-accessibility-plugin/plugins/css/bootstrap-accessibility.css",
+      "https://cedric.io/vendor/forkawesome/fork-awesome/css/fork-awesome.min.css",
+      "https://cedric.io/vendor/forkawesome/fork-awesome/css/v5-compat.min.css",
+      "https://cedric.io/css/1634196944/known.min.css",
+      "https://cedric.io/vendor/npm-asset/bootstrap-toggle/css/bootstrap-toggle.min.css",
+      "https://cedric.io/vendor/idno/mentionjs/recommended-styles.css",
+      "https://cedric.io/vendor/npm-asset/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css",
+      "https://cedric.io/IdnoPlugins/Checkin/external/leaflet/leaflet.min.css",
+      "https://cedric.io/vendor/npm-asset/mediaelement/build/mediaelementplayer.min.css"
+    ],
+    "alternate": [
+      "https://cedric.io/?_t=rss",
+      "https://cedric.io/content/all?_t=rss"
+    ],
+    "feed": [
+      "https://cedric.io/?_t=rss",
+      "https://cedric.io/content/all?_t=rss",
+      "https://cedric.io/content/all"
+    ],
+    "http://webmention.org/": [
+      "https://cedric.io/webmention/"
+    ],
+    "webmention": [
+      "https://cedric.io/webmention/"
+    ],
+    "hub": [
+      "https://withknown.superfeedr.com/"
+    ],
+    "me": [
+      "https://twitter.com/akyrho",
+      "https://www.facebook.com/cedric.bousmanne",
+      "https://github.com/cedricbousmanne",
+      "https://www.instagram.com/akyrh0",
+      "https://www.linkedin.com/in/bousmannecedric",
+      "https://ruby.social/@akyrho"
+    ],
+    "openid.delegate": [
+      "https://cedric.io/"
+    ],
+    "openid.server": [
+      "https://indieauth.com/openid"
+    ],
+    "authorization_endpoint": [
+      "https://cedric.io/indieauth/auth"
+    ],
+    "token_endpoint": [
+      "https://cedric.io/indieauth/token"
+    ],
+    "micropub": [
+      "https://cedric.io/micropub/endpoint"
+    ],
+    "tag": [
+      "https://cedric.io/tag/esp32",
+      "https://cedric.io/tag/eink",
+      "https://cedric.io/tag/calendar",
+      "https://cedric.io/tag/+%23reddit",
+      "https://cedric.io/tag/+%23commandline",
+      "https://cedric.io/tag/+%23Wallonia"
+    ],
+    "permalink": [
+      "https://cedric.io/2022/building-myself-a-framed-e-calendar",
+      "https://cedric.io/2022/they-say-buy-a-plunger-before-you",
+      "https://cedric.io/2022/migrating-photos-from-icloud-iphone-to-nextcloud---part-1",
+      "https://cedric.io/2022/what-the-heck-happened-with-the-raspberry",
+      "https://cedric.io/2022/3d-printed-mario-wallart-with-wooden-frame",
+      "https://cedric.io/2021/jack-skelington-3d-printed-pumpkin",
+      "https://cedric.io/2021/sewing-my-very-first-hoodie",
+      "https://cedric.io/2021/easter-themed-wood-basket---work-in",
+      "https://cedric.io/2020/commandline-challenge",
+      "https://cedric.io/2020/coronovirus-deaths-as-a-percentage-of-population"
+    ],
+    "next": [
+      "https://cedric.io/?offset=0"
+    ],
+    "prev": [
+      "https://cedric.io/?offset=10"
+    ],
+    "microsub": [
+      "https://aperture.p3k.io/microsub/123"
+    ]
+  },
+  "rel-urls": {
+    "https://cedric.io/gfx/logos/apple-icon-57x57.png": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://cedric.io/gfx/logos/apple-icon-72x72.png": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://cedric.io/gfx/logos/apple-icon-114x114.png": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://cedric.io/gfx/logos/apple-icon-144x144.png": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://cedric.io/file/a9f243aeea2b7492aa7d64a52289f955/thumb.jpg": {
+      "rels": [
+        "icon",
+        "shortcut"
+      ],
+      "type": "image/jpg"
+    },
+    "https://cedric.io/chrome/manifest.json": {
+      "rels": [
+        "manifest"
+      ]
+    },
+    "http://purl.org/dc/elements/1.1/": {
+      "rels": [
+        "schema.DC"
+      ]
+    },
+    "https://cedric.io/vendor/twbs/bootstrap/dist/css/bootstrap.min.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://cedric.io/vendor/npm-asset/bootstrap-accessibility-plugin/plugins/css/bootstrap-accessibility.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://cedric.io/vendor/forkawesome/fork-awesome/css/fork-awesome.min.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://cedric.io/vendor/forkawesome/fork-awesome/css/v5-compat.min.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://cedric.io/css/1634196944/known.min.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://cedric.io/vendor/npm-asset/bootstrap-toggle/css/bootstrap-toggle.min.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://cedric.io/vendor/idno/mentionjs/recommended-styles.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://cedric.io/vendor/npm-asset/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://cedric.io/?_t=rss": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Cedric.io",
+      "type": "application/rss+xml"
+    },
+    "https://cedric.io/content/all?_t=rss": {
+      "rels": [
+        "alternate",
+        "feed"
+      ],
+      "title": "Cedric.io: all content",
+      "type": "application/rss+xml"
+    },
+    "https://cedric.io/content/all": {
+      "rels": [
+        "feed"
+      ],
+      "title": "Cedric.io",
+      "type": "text/html"
+    },
+    "https://cedric.io/webmention/": {
+      "rels": [
+        "http://webmention.org/"
+      ]
+    },
+    "https://withknown.superfeedr.com/": {
+      "rels": [
+        "hub"
+      ]
+    },
+    "https://twitter.com/akyrho": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://www.facebook.com/cedric.bousmanne": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://github.com/cedricbousmanne": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://www.instagram.com/akyrh0": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://www.linkedin.com/in/bousmannecedric": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://ruby.social/@akyrho": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://cedric.io/IdnoPlugins/Checkin/external/leaflet/leaflet.min.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://cedric.io/": {
+      "rels": [
+        "openid.delegate"
+      ]
+    },
+    "https://indieauth.com/openid": {
+      "rels": [
+        "openid.server"
+      ]
+    },
+    "https://cedric.io/indieauth/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://cedric.io/indieauth/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://cedric.io/micropub/endpoint": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://cedric.io/tag/esp32": {
+      "rels": [
+        "tag"
+      ],
+      "text": "#esp32"
+    },
+    "https://cedric.io/tag/eink": {
+      "rels": [
+        "tag"
+      ],
+      "text": "#eink"
+    },
+    "https://cedric.io/tag/calendar": {
+      "rels": [
+        "tag"
+      ],
+      "text": "#calendar"
+    },
+    "https://cedric.io/2022/building-myself-a-framed-e-calendar": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "06 May 2022"
+    },
+    "https://cedric.io/2022/they-say-buy-a-plunger-before-you": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "09 Apr 2022"
+    },
+    "https://cedric.io/2022/migrating-photos-from-icloud-iphone-to-nextcloud---part-1": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "09 Apr 2022"
+    },
+    "https://cedric.io/2022/what-the-heck-happened-with-the-raspberry": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "07 Apr 2022"
+    },
+    "https://cedric.io/2022/3d-printed-mario-wallart-with-wooden-frame": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "06 Apr 2022"
+    },
+    "https://cedric.io/2021/jack-skelington-3d-printed-pumpkin": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "15 Oct 2021"
+    },
+    "https://cedric.io/2021/sewing-my-very-first-hoodie": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "14 Oct 2021"
+    },
+    "https://cedric.io/2021/easter-themed-wood-basket---work-in": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "14 Mar 2021"
+    },
+    "https://cedric.io/tag/+%23reddit": {
+      "rels": [
+        "tag"
+      ],
+      "text": " #reddit"
+    },
+    "https://cedric.io/tag/+%23commandline": {
+      "rels": [
+        "tag"
+      ],
+      "text": " #commandline"
+    },
+    "https://cedric.io/2020/commandline-challenge": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "13 Nov 2020"
+    },
+    "https://cedric.io/tag/+%23Wallonia": {
+      "rels": [
+        "tag"
+      ],
+      "text": " #Wallonia"
+    },
+    "https://cedric.io/2020/coronovirus-deaths-as-a-percentage-of-population": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "12 Nov 2020"
+    },
+    "https://cedric.io/?offset=0": {
+      "rels": [
+        "next"
+      ],
+      "title": "Newer",
+      "text": "« Newer"
+    },
+    "https://cedric.io/?offset=10": {
+      "rels": [
+        "prev"
+      ],
+      "title": "Older",
+      "text": "Older »"
+    },
+    "https://cedric.io/vendor/npm-asset/mediaelement/build/mediaelementplayer.min.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://aperture.p3k.io/microsub/123": {
+      "rels": [
+        "microsub"
+      ]
+    }
+  }
+}

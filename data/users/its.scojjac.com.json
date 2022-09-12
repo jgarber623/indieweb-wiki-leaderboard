@@ -1,0 +1,795 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-feed"
+      ],
+      "properties": {},
+      "children": [
+        {
+          "type": [
+            "h-card"
+          ],
+          "properties": {
+            "photo": [
+              {
+                "value": "http://2.gravatar.com/avatar/53d66dc0b1081dd38bfe9645286b28a7?s=100&d=404&r=g",
+                "alt": ""
+              }
+            ],
+            "url": [
+              "https://scojjac.com/"
+            ],
+            "note": [
+              "Domained since 2012"
+            ],
+            "email": [
+              "http://its.scojjac.com/scott@scojjac.com"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<div class=\"e-content\">I was very excited to discover Zero Motorcycles. I’m not sure I’m so thrilled about their business model, which now includes building in bike features that can be unlocked over-the-air for a fee. Loved NewZeroland’s take on it.\n<p></p>\n<center><iframe width=\"560\" height=\"315\" src=\"https://www.youtube-nocookie.com/embed/FS5Df4UBMsM\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></center>\n</div>",
+                "value": "I was very excited to discover Zero Motorcycles. I’m not sure I’m so thrilled about their business model, which now includes building in bike features that can be unlocked over-the-air for a fee. Loved NewZeroland’s take on it."
+              },
+              {
+                "html": "I was very excited to discover Zero Motorcycles. I’m not sure I’m so thrilled about their business model, which now includes building in bike features that can be unlocked over-the-air for a fee. Loved NewZeroland’s take on it.\n<p></p>\n<center><iframe width=\"560\" height=\"315\" src=\"https://www.youtube-nocookie.com/embed/FS5Df4UBMsM\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></center>",
+                "value": "I was very excited to discover Zero Motorcycles. I’m not sure I’m so thrilled about their business model, which now includes building in bike features that can be unlocked over-the-air for a fee. Loved NewZeroland’s take on it."
+              }
+            ],
+            "url": [
+              "https://scojjac.com/36223-2/"
+            ]
+          },
+          "id": "post-36223"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Find and copy photos from old disk using PowerShell",
+              "Find and copy photos from old disk using PowerShell"
+            ],
+            "url": [
+              "https://scojjac.com/ps-copy-photos/"
+            ],
+            "content": [
+              {
+                "html": "<div class=\"e-content\">My mom has been lugging around an old, non-booting Toshiba consumer laptop because the hard drive has photos on it she doesn’t want to lose. I finally decided to work on getting the photos off of it today.\n<pre>\r\n$SourceDir = \"D:\\Users\\dir\"\r\n$DestinationDir = \"F:\\\"\r\nGet-ChildItem -Path \"$SourceDir\" -Filter *.jpg -File -Recurse | Copy-Item -Destination \"$DestinationDir\"\r\n</pre>\n<p>That probably isn’t the best way. It probably would have been better and faster to use something like:</p>\n<pre>\nGet-ChildItem -Path \"$SourceDir\" -recurse | where {$_.extension -in \".jpg\",\".png\"} | Copy-Item -Destination \"$DestinationDir\"\n</pre>\n</div>",
+                "value": "My mom has been lugging around an old, non-booting Toshiba consumer laptop because the hard drive has photos on it she doesn’t want to lose. I finally decided to work on getting the photos off of it today.\n\r\n$SourceDir = \"D:\\Users\\dir\"\r\n$DestinationDir = \"F:\\\"\r\nGet-ChildItem -Path \"$SourceDir\" -Filter *.jpg -File -Recurse | Copy-Item -Destination \"$DestinationDir\"\r\n\nThat probably isn’t the best way. It probably would have been better and faster to use something like:\n\nGet-ChildItem -Path \"$SourceDir\" -recurse | where {$_.extension -in \".jpg\",\".png\"} | Copy-Item -Destination \"$DestinationDir\""
+              },
+              {
+                "html": "My mom has been lugging around an old, non-booting Toshiba consumer laptop because the hard drive has photos on it she doesn’t want to lose. I finally decided to work on getting the photos off of it today.\n<pre>\r\n$SourceDir = \"D:\\Users\\dir\"\r\n$DestinationDir = \"F:\\\"\r\nGet-ChildItem -Path \"$SourceDir\" -Filter *.jpg -File -Recurse | Copy-Item -Destination \"$DestinationDir\"\r\n</pre>\n<p>That probably isn’t the best way. It probably would have been better and faster to use something like:</p>\n<pre>\nGet-ChildItem -Path \"$SourceDir\" -recurse | where {$_.extension -in \".jpg\",\".png\"} | Copy-Item -Destination \"$DestinationDir\"\n</pre>",
+                "value": "My mom has been lugging around an old, non-booting Toshiba consumer laptop because the hard drive has photos on it she doesn’t want to lose. I finally decided to work on getting the photos off of it today.\n\r\n$SourceDir = \"D:\\Users\\dir\"\r\n$DestinationDir = \"F:\\\"\r\nGet-ChildItem -Path \"$SourceDir\" -Filter *.jpg -File -Recurse | Copy-Item -Destination \"$DestinationDir\"\r\n\nThat probably isn’t the best way. It probably would have been better and faster to use something like:\n\nGet-ChildItem -Path \"$SourceDir\" -recurse | where {$_.extension -in \".jpg\",\".png\"} | Copy-Item -Destination \"$DestinationDir\""
+              }
+            ]
+          },
+          "id": "post-10642"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<div class=\"e-content\">Found this <a href=\"https://github.com/hartator/wayback-machine-downloader\">Wayback Machine Downloader</a> Ruby gem via <a href=\"https://simonwillison.net/2017/Oct/8/missing-content/\">Simon Willison</a>. Trying it out since my site has moved around a bit over the years and I’m definitely missing some old content. Eventually I’ll comb through it and repost what seems relevant.</div>",
+                "value": "Found this Wayback Machine Downloader Ruby gem via Simon Willison. Trying it out since my site has moved around a bit over the years and I’m definitely missing some old content. Eventually I’ll comb through it and repost what seems relevant."
+              },
+              {
+                "html": "Found this <a href=\"https://github.com/hartator/wayback-machine-downloader\">Wayback Machine Downloader</a> Ruby gem via <a href=\"https://simonwillison.net/2017/Oct/8/missing-content/\">Simon Willison</a>. Trying it out since my site has moved around a bit over the years and I’m definitely missing some old content. Eventually I’ll comb through it and repost what seems relevant.",
+                "value": "Found this Wayback Machine Downloader Ruby gem via Simon Willison. Trying it out since my site has moved around a bit over the years and I’m definitely missing some old content. Eventually I’ll comb through it and repost what seems relevant."
+              }
+            ],
+            "url": [
+              "https://scojjac.com/5124-2/"
+            ]
+          },
+          "id": "post-5124"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<div class=\"e-content\">iOS 16 supports as far back as the iPhone 8/X. Likely, then, iOS 17 will be the last version to support my XS Max. That means that in either 2023 or 2024 I will need to upgrade. Time to start saving!</div>",
+                "value": "iOS 16 supports as far back as the iPhone 8/X. Likely, then, iOS 17 will be the last version to support my XS Max. That means that in either 2023 or 2024 I will need to upgrade. Time to start saving!"
+              },
+              {
+                "html": "iOS 16 supports as far back as the iPhone 8/X. Likely, then, iOS 17 will be the last version to support my XS Max. That means that in either 2023 or 2024 I will need to upgrade. Time to start saving!",
+                "value": "iOS 16 supports as far back as the iPhone 8/X. Likely, then, iOS 17 will be the last version to support my XS Max. That means that in either 2023 or 2024 I will need to upgrade. Time to start saving!"
+              }
+            ],
+            "url": [
+              "https://scojjac.com/4413-2/"
+            ]
+          },
+          "id": "post-4413"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<div class=\"e-content\">Today I successfully changed out the screen on my XS Max using a $100 part from iFixit. TrueTone may be broken (thanks, Apple), but my phone is functional again. Now, if only I had an easier way to replace the rear glass panel. \n<p>P.S.—Some sources say that a hot plate at 100C for 1-2 minutes is good at loosening up the back. And there are Chinese-origin handheld programmers for transferring TrueTone data to a new screen (if the screen has an embedded EEPROM chip).</p>\n</div>",
+                "value": "Today I successfully changed out the screen on my XS Max using a $100 part from iFixit. TrueTone may be broken (thanks, Apple), but my phone is functional again. Now, if only I had an easier way to replace the rear glass panel. \nP.S.—Some sources say that a hot plate at 100C for 1-2 minutes is good at loosening up the back. And there are Chinese-origin handheld programmers for transferring TrueTone data to a new screen (if the screen has an embedded EEPROM chip)."
+              },
+              {
+                "html": "Today I successfully changed out the screen on my XS Max using a $100 part from iFixit. TrueTone may be broken (thanks, Apple), but my phone is functional again. Now, if only I had an easier way to replace the rear glass panel. \n<p>P.S.—Some sources say that a hot plate at 100C for 1-2 minutes is good at loosening up the back. And there are Chinese-origin handheld programmers for transferring TrueTone data to a new screen (if the screen has an embedded EEPROM chip).</p>",
+                "value": "Today I successfully changed out the screen on my XS Max using a $100 part from iFixit. TrueTone may be broken (thanks, Apple), but my phone is functional again. Now, if only I had an easier way to replace the rear glass panel. \nP.S.—Some sources say that a hot plate at 100C for 1-2 minutes is good at loosening up the back. And there are Chinese-origin handheld programmers for transferring TrueTone data to a new screen (if the screen has an embedded EEPROM chip)."
+              }
+            ],
+            "url": [
+              "https://scojjac.com/4230-2/"
+            ]
+          },
+          "id": "post-4230"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<div class=\"e-content\">Mark, if I can be of assistance with IndiePass documentation, please let me know. Thanks for your work on revamping the app.</div>",
+                "value": "Mark, if I can be of assistance with IndiePass documentation, please let me know. Thanks for your work on revamping the app."
+              },
+              {
+                "html": "Mark, if I can be of assistance with IndiePass documentation, please let me know. Thanks for your work on revamping the app.",
+                "value": "Mark, if I can be of assistance with IndiePass documentation, please let me know. Thanks for your work on revamping the app."
+              }
+            ],
+            "in-reply-to": [
+              {
+                "type": [
+                  "h-cite"
+                ],
+                "properties": {
+                  "name": [
+                    "IndiePass Dev Update"
+                  ],
+                  "url": [
+                    "https://marksuth.dev/posts/2022/01/indiepass-dev-update"
+                  ],
+                  "author": [
+                    {
+                      "type": [
+                        "h-card"
+                      ],
+                      "properties": {
+                        "photo": [
+                          {
+                            "value": "https://marksuth.dev/images/avatar.jpg",
+                            "alt": "Mark Sutherland"
+                          }
+                        ],
+                        "name": [
+                          "Mark Sutherland"
+                        ]
+                      },
+                      "value": "Mark Sutherland"
+                    }
+                  ],
+                  "publication": [
+                    "marksuth.dev"
+                  ],
+                  "summary": [
+                    {
+                      "html": "<p>It’s been a couple of weeks since I posted purely about IndiePass, and the current status of the new app.<br>\nFirstly, I had hoped to have an update for Android released by now that had renamed everything to IndiePass, however renaming the app triggered the app being manually reviewed, and the update …</p>",
+                      "value": "It’s been a couple of weeks since I posted purely about IndiePass, and the current status of the new app.\nFirstly, I had hoped to have an update for Android released by now that had renamed everything to IndiePass, however renaming the app triggered the app being manually reviewed, and the update …"
+                    }
+                  ]
+                },
+                "value": "https://marksuth.dev/posts/2022/01/indiepass-dev-update"
+              }
+            ],
+            "url": [
+              "https://scojjac.com/788-2/"
+            ]
+          },
+          "id": "post-788"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<div class=\"e-content\">I feel like this is what Automattic is doing with the WordPress.com Reader and Tumblr. The proposed indieweb version is Microsub https://indieweb.org/Microsub, of which there are some working examples.</div>",
+                "value": "I feel like this is what Automattic is doing with the WordPress.com Reader and Tumblr. The proposed indieweb version is Microsub https://indieweb.org/Microsub, of which there are some working examples."
+              },
+              {
+                "html": "I feel like this is what Automattic is doing with the WordPress.com Reader and Tumblr. The proposed indieweb version is Microsub https://indieweb.org/Microsub, of which there are some working examples.",
+                "value": "I feel like this is what Automattic is doing with the WordPress.com Reader and Tumblr. The proposed indieweb version is Microsub https://indieweb.org/Microsub, of which there are some working examples."
+              }
+            ],
+            "in-reply-to": [
+              {
+                "type": [
+                  "h-cite"
+                ],
+                "properties": {
+                  "name": [
+                    "https://twitter.com/cr0ybot/status/1536089688695574529"
+                  ],
+                  "url": [
+                    "https://twitter.com/cr0ybot/status/1536089688695574529"
+                  ],
+                  "author": [
+                    {
+                      "type": [
+                        "h-card"
+                      ],
+                      "properties": {
+                        "photo": [
+                          {
+                            "value": "https://pbs.twimg.com/profile_images/1332921574924705794/Zt9QWAsf_400x400.jpg",
+                            "alt": "cory hughart .com"
+                          }
+                        ],
+                        "name": [
+                          "cory hughart .com"
+                        ]
+                      },
+                      "value": "cory hughart .com"
+                    }
+                  ],
+                  "publication": [
+                    "Twitter"
+                  ],
+                  "summary": [
+                    {
+                      "html": "<p>In all honesty, I’d rather have something that lets me subscribe to other WordPress sites within the backend and creates a distributed social network instead of constantly chasing the social media flavor of the week. I really think <a href=\"https://twitter.com/mor10?ref_src=twsrc%5Etfw\">@mor10</a> is onto something though. <a href=\"https://twitter.com/mor10/status/1535680258019500032\">https://twitter.com/mor10/status/1535680258019500032</a></p>",
+                      "value": "In all honesty, I’d rather have something that lets me subscribe to other WordPress sites within the backend and creates a distributed social network instead of constantly chasing the social media flavor of the week. I really think @mor10 is onto something though. https://twitter.com/mor10/status/1535680258019500032"
+                    }
+                  ]
+                },
+                "value": "https://twitter.com/cr0ybot/status/1536089688695574529"
+              }
+            ],
+            "url": [
+              "https://scojjac.com/781-2/"
+            ]
+          },
+          "id": "post-781"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "My BMW 335i",
+              "My BMW 335i"
+            ],
+            "url": [
+              "https://scojjac.com/335i/"
+            ],
+            "content": [
+              {
+                "html": "<div class=\"e-content\">From 2015 to 2019, I drove a 2008 BMW 335i (with Sport package). I <em>loved</em> that car; it was just so fun to drive. Everything was stock but the sound was great, the handling excellent, the engine powerful, the controls well thought out, and the heated leather bucket seats comfortable for long drives. I even liked the orange lighting on the instrumentation. It’s been 3 years since we parted and I still miss my baby.\n<p>Let me go back to the controls for just a moment. Some cars, many cars—maybe even most cars—have controls that seem to have been an afterthought. It’s as if they were designed by someone who hates driving, tolerates driving, or doesn’t drive. They are maddening and confusing, with maddening and confusing symbols disguised as help.</p>\n<p>The Bimmer was not this way. My E90 had the most delightful controls I have ever used. Every button and lever was in the most logical, practical place. My favorite example of a well-designed control in that car was the cruise control. Accelerating and decelerating could be done in multiples of 1mph or 5mph thanks to a “resistance point” – much like the half-click of a shutter. Resuming was a button at the end of the lever. To disable, simply push the lever up or down or brake. The car would resume cruise speed after passing and would engine brake going downhill.</p>\n<p>I don’t miss the repairs; in fact, I traded it into a used car dealer that had a service center because of a major leak that was the last straw. Thankfully, they had a CR-V in great condition and I’ve been driving it for the last 3 years.</p>\n</div>",
+                "value": "From 2015 to 2019, I drove a 2008 BMW 335i (with Sport package). I loved that car; it was just so fun to drive. Everything was stock but the sound was great, the handling excellent, the engine powerful, the controls well thought out, and the heated leather bucket seats comfortable for long drives. I even liked the orange lighting on the instrumentation. It’s been 3 years since we parted and I still miss my baby.\nLet me go back to the controls for just a moment. Some cars, many cars—maybe even most cars—have controls that seem to have been an afterthought. It’s as if they were designed by someone who hates driving, tolerates driving, or doesn’t drive. They are maddening and confusing, with maddening and confusing symbols disguised as help.\nThe Bimmer was not this way. My E90 had the most delightful controls I have ever used. Every button and lever was in the most logical, practical place. My favorite example of a well-designed control in that car was the cruise control. Accelerating and decelerating could be done in multiples of 1mph or 5mph thanks to a “resistance point” – much like the half-click of a shutter. Resuming was a button at the end of the lever. To disable, simply push the lever up or down or brake. The car would resume cruise speed after passing and would engine brake going downhill.\nI don’t miss the repairs; in fact, I traded it into a used car dealer that had a service center because of a major leak that was the last straw. Thankfully, they had a CR-V in great condition and I’ve been driving it for the last 3 years."
+              },
+              {
+                "html": "From 2015 to 2019, I drove a 2008 BMW 335i (with Sport package). I <em>loved</em> that car; it was just so fun to drive. Everything was stock but the sound was great, the handling excellent, the engine powerful, the controls well thought out, and the heated leather bucket seats comfortable for long drives. I even liked the orange lighting on the instrumentation. It’s been 3 years since we parted and I still miss my baby.\n<p>Let me go back to the controls for just a moment. Some cars, many cars—maybe even most cars—have controls that seem to have been an afterthought. It’s as if they were designed by someone who hates driving, tolerates driving, or doesn’t drive. They are maddening and confusing, with maddening and confusing symbols disguised as help.</p>\n<p>The Bimmer was not this way. My E90 had the most delightful controls I have ever used. Every button and lever was in the most logical, practical place. My favorite example of a well-designed control in that car was the cruise control. Accelerating and decelerating could be done in multiples of 1mph or 5mph thanks to a “resistance point” – much like the half-click of a shutter. Resuming was a button at the end of the lever. To disable, simply push the lever up or down or brake. The car would resume cruise speed after passing and would engine brake going downhill.</p>\n<p>I don’t miss the repairs; in fact, I traded it into a used car dealer that had a service center because of a major leak that was the last straw. Thankfully, they had a CR-V in great condition and I’ve been driving it for the last 3 years.</p>",
+                "value": "From 2015 to 2019, I drove a 2008 BMW 335i (with Sport package). I loved that car; it was just so fun to drive. Everything was stock but the sound was great, the handling excellent, the engine powerful, the controls well thought out, and the heated leather bucket seats comfortable for long drives. I even liked the orange lighting on the instrumentation. It’s been 3 years since we parted and I still miss my baby.\nLet me go back to the controls for just a moment. Some cars, many cars—maybe even most cars—have controls that seem to have been an afterthought. It’s as if they were designed by someone who hates driving, tolerates driving, or doesn’t drive. They are maddening and confusing, with maddening and confusing symbols disguised as help.\nThe Bimmer was not this way. My E90 had the most delightful controls I have ever used. Every button and lever was in the most logical, practical place. My favorite example of a well-designed control in that car was the cruise control. Accelerating and decelerating could be done in multiples of 1mph or 5mph thanks to a “resistance point” – much like the half-click of a shutter. Resuming was a button at the end of the lever. To disable, simply push the lever up or down or brake. The car would resume cruise speed after passing and would engine brake going downhill.\nI don’t miss the repairs; in fact, I traded it into a used car dealer that had a service center because of a major leak that was the last straw. Thankfully, they had a CR-V in great condition and I’ve been driving it for the last 3 years."
+              }
+            ]
+          },
+          "id": "post-768"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<div class=\"e-content\">I want to come back to this.<br>\n<strong>Tom’s assumptions</strong><br>\n1. Consulting can build cash freedom<br>\n2. Positioning is for the ego, not for the market<br>\n3. Change is continuous and self-directed, so you should stomach “bad work” because you can escape it faster<br>\n4. How much “time” you have is really about how much energy you have<br>\n<strong>Tom’s map</strong><br>\nPhase 1: Making the leap, zero to one<br>\nPhase 2: Getting started<br>\nPhase 3: Find stability<br>\nPhase 4: Find freedom<br>\nPhase 5: Build equity\n<p>(via <a href=\"https://twitter.com/cliophate/status/1534842902425309193?s=20&amp;t=IEVTXTODp43hLxbztGpbDg\">Kevin Wammer</a>)</p>\n</div>",
+                "value": "I want to come back to this.\nTom’s assumptions\n1. Consulting can build cash freedom\n2. Positioning is for the ego, not for the market\n3. Change is continuous and self-directed, so you should stomach “bad work” because you can escape it faster\n4. How much “time” you have is really about how much energy you have\nTom’s map\nPhase 1: Making the leap, zero to one\nPhase 2: Getting started\nPhase 3: Find stability\nPhase 4: Find freedom\nPhase 5: Build equity\n(via Kevin Wammer)"
+              },
+              {
+                "html": "I want to come back to this.<br>\n<strong>Tom’s assumptions</strong><br>\n1. Consulting can build cash freedom<br>\n2. Positioning is for the ego, not for the market<br>\n3. Change is continuous and self-directed, so you should stomach “bad work” because you can escape it faster<br>\n4. How much “time” you have is really about how much energy you have<br>\n<strong>Tom’s map</strong><br>\nPhase 1: Making the leap, zero to one<br>\nPhase 2: Getting started<br>\nPhase 3: Find stability<br>\nPhase 4: Find freedom<br>\nPhase 5: Build equity\n<p>(via <a href=\"https://twitter.com/cliophate/status/1534842902425309193?s=20&amp;t=IEVTXTODp43hLxbztGpbDg\">Kevin Wammer</a>)</p>",
+                "value": "I want to come back to this.\nTom’s assumptions\n1. Consulting can build cash freedom\n2. Positioning is for the ego, not for the market\n3. Change is continuous and self-directed, so you should stomach “bad work” because you can escape it faster\n4. How much “time” you have is really about how much energy you have\nTom’s map\nPhase 1: Making the leap, zero to one\nPhase 2: Getting started\nPhase 3: Find stability\nPhase 4: Find freedom\nPhase 5: Build equity\n(via Kevin Wammer)"
+              }
+            ],
+            "bookmark-of": [
+              {
+                "type": [
+                  "h-cite"
+                ],
+                "properties": {
+                  "name": [
+                    "🔖 A map for indie living"
+                  ],
+                  "url": [
+                    "https://tomcritchlow.com/2022/06/03/indie-consulting-map/"
+                  ],
+                  "author": [
+                    {
+                      "type": [
+                        "h-card"
+                      ],
+                      "properties": {
+                        "photo": [
+                          {
+                            "value": "https://tomcritchlow.com/images/tomsmallnew.JPG",
+                            "alt": "Tom Critchlow"
+                          }
+                        ],
+                        "name": [
+                          "Tom Critchlow"
+                        ]
+                      },
+                      "value": "Tom Critchlow"
+                    }
+                  ],
+                  "publication": [
+                    "tomcritchlow.com"
+                  ],
+                  "summary": [
+                    {
+                      "html": "<p>Phase by phase, one foot in front of the other</p>",
+                      "value": "Phase by phase, one foot in front of the other"
+                    }
+                  ]
+                },
+                "value": "https://tomcritchlow.com/2022/06/03/indie-consulting-map/"
+              }
+            ],
+            "url": [
+              "https://scojjac.com/756-2/"
+            ]
+          },
+          "id": "post-756"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Resolving SSL error on Wi-Fi",
+              "Resolving SSL error on Wi-Fi"
+            ],
+            "url": [
+              "https://scojjac.com/ssl-error-wifi/"
+            ],
+            "content": [
+              {
+                "html": "<div class=\"e-content\">I was getting an SSL error when adding or refreshing my FreshRSS feeds in mobile apps like Reeder 5 and NetNewsWire for iOS. My troubleshooting steps:\n<ul>\n<li>Verify that my SSL cert was properly configured.</li>\n<li>Verify that FreshRSS API access and API password were set up.</li>\n<li>Verify that all details were entered accurately in the mobile apps.</li>\n<li>Turn off Wi-Fi and try refreshing over LTE. <strong>This worked, indicating that the issue is not the client/server app configuration, but the network configuration.</strong>\n</li>\n<li>Reset iPhone network settings and re-join Wi-Fi. Errored again.</li>\n<li>Change DNS settings on my Wi-Fi connection to use Cloudflare resolvers (1.1.1.1, 1.0.0.1) instead of Spectrum. This worked (update: temporarily. <strong>It also works over VPN.</strong>)</li>\n</ul>\n<p>Based on my troubleshooting, I suspect Spectrum is doing something funky with DNS or SSL. (Possibly related: The Spectrum TV app is in Day 2 of an extended outage that started around 06:00 UTC -4, 8 June 2022).</p>\n</div>",
+                "value": "I was getting an SSL error when adding or refreshing my FreshRSS feeds in mobile apps like Reeder 5 and NetNewsWire for iOS. My troubleshooting steps:\n\nVerify that my SSL cert was properly configured.\nVerify that FreshRSS API access and API password were set up.\nVerify that all details were entered accurately in the mobile apps.\nTurn off Wi-Fi and try refreshing over LTE. This worked, indicating that the issue is not the client/server app configuration, but the network configuration.\nReset iPhone network settings and re-join Wi-Fi. Errored again.\nChange DNS settings on my Wi-Fi connection to use Cloudflare resolvers (1.1.1.1, 1.0.0.1) instead of Spectrum. This worked (update: temporarily. It also works over VPN.)\n\nBased on my troubleshooting, I suspect Spectrum is doing something funky with DNS or SSL. (Possibly related: The Spectrum TV app is in Day 2 of an extended outage that started around 06:00 UTC -4, 8 June 2022)."
+              },
+              {
+                "html": "I was getting an SSL error when adding or refreshing my FreshRSS feeds in mobile apps like Reeder 5 and NetNewsWire for iOS. My troubleshooting steps:\n<ul>\n<li>Verify that my SSL cert was properly configured.</li>\n<li>Verify that FreshRSS API access and API password were set up.</li>\n<li>Verify that all details were entered accurately in the mobile apps.</li>\n<li>Turn off Wi-Fi and try refreshing over LTE. <strong>This worked, indicating that the issue is not the client/server app configuration, but the network configuration.</strong>\n</li>\n<li>Reset iPhone network settings and re-join Wi-Fi. Errored again.</li>\n<li>Change DNS settings on my Wi-Fi connection to use Cloudflare resolvers (1.1.1.1, 1.0.0.1) instead of Spectrum. This worked (update: temporarily. <strong>It also works over VPN.</strong>)</li>\n</ul>\n<p>Based on my troubleshooting, I suspect Spectrum is doing something funky with DNS or SSL. (Possibly related: The Spectrum TV app is in Day 2 of an extended outage that started around 06:00 UTC -4, 8 June 2022).</p>",
+                "value": "I was getting an SSL error when adding or refreshing my FreshRSS feeds in mobile apps like Reeder 5 and NetNewsWire for iOS. My troubleshooting steps:\n\nVerify that my SSL cert was properly configured.\nVerify that FreshRSS API access and API password were set up.\nVerify that all details were entered accurately in the mobile apps.\nTurn off Wi-Fi and try refreshing over LTE. This worked, indicating that the issue is not the client/server app configuration, but the network configuration.\nReset iPhone network settings and re-join Wi-Fi. Errored again.\nChange DNS settings on my Wi-Fi connection to use Cloudflare resolvers (1.1.1.1, 1.0.0.1) instead of Spectrum. This worked (update: temporarily. It also works over VPN.)\n\nBased on my troubleshooting, I suspect Spectrum is doing something funky with DNS or SSL. (Possibly related: The Spectrum TV app is in Day 2 of an extended outage that started around 06:00 UTC -4, 8 June 2022)."
+              }
+            ]
+          },
+          "id": "post-749"
+        }
+      ]
+    }
+  ],
+  "rels": {
+    "profile": [
+      "http://gmpg.org/xfn/11"
+    ],
+    "dns-prefetch": [
+      "http://scojjac.com/",
+      "http://use.fontawesome.com/",
+      "http://s.w.org/"
+    ],
+    "alternate": [
+      "https://scojjac.com/feed/",
+      "https://scojjac.com/comments/feed/"
+    ],
+    "stylesheet": [
+      "http://scojjac.com/wp-content/plugins/gutenberg/build/block-library/style.css?ver=14.0.2",
+      "http://scojjac.com/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
+      "http://scojjac.com/wp-content/plugins/indieweb-post-kinds/css/kind.min.css?ver=3.6.1",
+      "http://scojjac.com/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3",
+      "http://scojjac.com/wp-content/themes/indieweb-publisher-trunk/fonts/genericons-neue/Genericons-Neue.min.css?ver=4.0.5",
+      "http://scojjac.com/wp-content/themes/indieweb-publisher-trunk/css/default.min.css?ver=6.0.2",
+      "http://scojjac.com/wp-content/themes/indieweb-publisher-child/style.css?ver=6.0.2",
+      "https://scojjac.com/wp-admin/admin-ajax.php?action=indieweb_publisher_customizer_css&ver=1.7",
+      "http://scojjac.com/wp-content/plugins/syndication-links/css/syn-bw.min.css?ver=4.3.12",
+      "https://use.fontawesome.com/releases/v5.15.4/css/all.css",
+      "https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css"
+    ],
+    "https://api.w.org/": [
+      "https://scojjac.com/wp-json/"
+    ],
+    "EditURI": [
+      "https://scojjac.com/xmlrpc.php?rsd"
+    ],
+    "wlwmanifest": [
+      "http://scojjac.com/wp-includes/wlwmanifest.xml"
+    ],
+    "authorization_endpoint": [
+      "https://scojjac.com/wp-json/indieauth/1.0/auth"
+    ],
+    "token_endpoint": [
+      "https://scojjac.com/wp-json/indieauth/1.0/token"
+    ],
+    "me": [
+      "https://github.com/scojjac",
+      "https://twitter.com/scojjac",
+      "https://micro.blog/scojjac",
+      "https://www.instagram.com/scojjac",
+      "https://scojjac.com/"
+    ],
+    "icon": [
+      "https://scojjac.com/wp-content/uploads/2022/06/cropped-android-chrome-512x512-4-32x32.png",
+      "https://scojjac.com/wp-content/uploads/2022/06/cropped-android-chrome-512x512-4-192x192.png"
+    ],
+    "apple-touch-icon": [
+      "https://scojjac.com/wp-content/uploads/2022/06/cropped-android-chrome-512x512-4-180x180.png"
+    ],
+    "micropub_media": [
+      "https://scojjac.com/wp-json/micropub/1.0/media"
+    ],
+    "micropub": [
+      "https://scojjac.com/wp-json/micropub/1.0/endpoint"
+    ],
+    "home": [
+      "https://scojjac.com/"
+    ],
+    "bookmark": [
+      "https://scojjac.com/36223-2/",
+      "https://scojjac.com/ps-copy-photos/",
+      "https://scojjac.com/5124-2/",
+      "https://scojjac.com/4413-2/",
+      "https://scojjac.com/4230-2/",
+      "https://scojjac.com/788-2/",
+      "https://scojjac.com/781-2/",
+      "https://scojjac.com/335i/",
+      "https://scojjac.com/756-2/",
+      "https://scojjac.com/ssl-error-wifi/"
+    ],
+    "feed": [
+      "https://scojjac.com/kind/article/",
+      "https://scojjac.com/kind/reply/",
+      "https://scojjac.com/kind/like/",
+      "https://scojjac.com/kind/bookmark/",
+      "https://scojjac.com/kind/photo/",
+      "https://scojjac.com/kind/note/"
+    ],
+    "designer": [
+      "http://independentpublisher.me/"
+    ],
+    "generator": [
+      "http://wordpress.org/"
+    ]
+  },
+  "rel-urls": {
+    "http://gmpg.org/xfn/11": {
+      "rels": [
+        "profile"
+      ]
+    },
+    "http://scojjac.com/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
+    "http://use.fontawesome.com/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
+    "http://s.w.org/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
+    "https://scojjac.com/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Scott Jack » Feed",
+      "type": "application/rss+xml"
+    },
+    "https://scojjac.com/comments/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Scott Jack » Comments Feed",
+      "type": "application/rss+xml"
+    },
+    "http://scojjac.com/wp-content/plugins/gutenberg/build/block-library/style.css?ver=14.0.2": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://scojjac.com/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://scojjac.com/wp-content/plugins/indieweb-post-kinds/css/kind.min.css?ver=3.6.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://scojjac.com/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://scojjac.com/wp-content/themes/indieweb-publisher-trunk/fonts/genericons-neue/Genericons-Neue.min.css?ver=4.0.5": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://scojjac.com/wp-content/themes/indieweb-publisher-trunk/css/default.min.css?ver=6.0.2": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://scojjac.com/wp-content/themes/indieweb-publisher-child/style.css?ver=6.0.2": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://scojjac.com/wp-admin/admin-ajax.php?action=indieweb_publisher_customizer_css&ver=1.7": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://scojjac.com/wp-content/plugins/syndication-links/css/syn-bw.min.css?ver=4.3.12": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://use.fontawesome.com/releases/v5.15.4/css/all.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://scojjac.com/wp-json/": {
+      "rels": [
+        "https://api.w.org/"
+      ]
+    },
+    "https://scojjac.com/xmlrpc.php?rsd": {
+      "rels": [
+        "EditURI"
+      ],
+      "title": "RSD",
+      "type": "application/rsd+xml"
+    },
+    "http://scojjac.com/wp-includes/wlwmanifest.xml": {
+      "rels": [
+        "wlwmanifest"
+      ],
+      "type": "application/wlwmanifest+xml"
+    },
+    "https://scojjac.com/wp-json/indieauth/1.0/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://scojjac.com/wp-json/indieauth/1.0/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://github.com/scojjac": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://twitter.com/scojjac": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://micro.blog/scojjac": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://www.instagram.com/scojjac": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://scojjac.com/wp-content/uploads/2022/06/cropped-android-chrome-512x512-4-32x32.png": {
+      "rels": [
+        "icon"
+      ]
+    },
+    "https://scojjac.com/wp-content/uploads/2022/06/cropped-android-chrome-512x512-4-192x192.png": {
+      "rels": [
+        "icon"
+      ]
+    },
+    "https://scojjac.com/wp-content/uploads/2022/06/cropped-android-chrome-512x512-4-180x180.png": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://scojjac.com/wp-json/micropub/1.0/media": {
+      "rels": [
+        "micropub_media"
+      ]
+    },
+    "https://scojjac.com/wp-json/micropub/1.0/endpoint": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://scojjac.com/": {
+      "rels": [
+        "home"
+      ]
+    },
+    "https://scojjac.com/36223-2/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to"
+    },
+    "https://scojjac.com/ps-copy-photos/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to Find and copy photos from old disk using PowerShell",
+      "text": "Find and copy photos from old disk using PowerShell"
+    },
+    "https://scojjac.com/5124-2/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to"
+    },
+    "https://scojjac.com/4413-2/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to Note by Scott Jack"
+    },
+    "https://scojjac.com/4230-2/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to"
+    },
+    "https://scojjac.com/788-2/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to"
+    },
+    "https://scojjac.com/781-2/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to"
+    },
+    "https://scojjac.com/335i/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to My BMW 335i",
+      "text": "My BMW 335i"
+    },
+    "https://scojjac.com/756-2/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to"
+    },
+    "https://scojjac.com/ssl-error-wifi/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to Resolving SSL error on Wi-Fi",
+      "text": "Resolving SSL error on Wi-Fi"
+    },
+    "https://scojjac.com/kind/article/": {
+      "rels": [
+        "feed"
+      ],
+      "title": "Scott Jack Article Feed",
+      "type": "text/html",
+      "text": "Articles"
+    },
+    "https://scojjac.com/kind/reply/": {
+      "rels": [
+        "feed"
+      ],
+      "title": "Scott Jack Reply Feed",
+      "type": "text/html",
+      "text": "Replies"
+    },
+    "https://scojjac.com/kind/like/": {
+      "rels": [
+        "feed"
+      ],
+      "title": "Scott Jack Like Feed",
+      "type": "text/html",
+      "text": "Likes"
+    },
+    "https://scojjac.com/kind/bookmark/": {
+      "rels": [
+        "feed"
+      ],
+      "title": "Scott Jack Bookmark Feed",
+      "type": "text/html",
+      "text": "Bookmarks"
+    },
+    "https://scojjac.com/kind/photo/": {
+      "rels": [
+        "feed"
+      ],
+      "title": "Scott Jack Photo Feed",
+      "type": "text/html",
+      "text": "Photos"
+    },
+    "https://scojjac.com/kind/note/": {
+      "rels": [
+        "feed"
+      ],
+      "title": "Scott Jack Note Feed",
+      "type": "text/html",
+      "text": "Notes"
+    },
+    "http://independentpublisher.me/": {
+      "rels": [
+        "designer"
+      ],
+      "title": "Indieweb Publisher: A beautiful reader-focused WordPress theme, for you.",
+      "text": "Indieweb Publisher"
+    },
+    "http://wordpress.org/": {
+      "rels": [
+        "generator"
+      ],
+      "title": "WordPress: A free open-source publishing platform",
+      "text": "WordPress"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "items": [],
+  "rels": {
+    "authorization_endpoint": [
+      "https://fossil.include-once.org/fossil-skins/ext/auth"
+    ],
+    "token_endpoint": [
+      "https://fossil.include-once.org/fossil-skins/ext/token"
+    ],
+    "micropub": [
+      "https://fossil.include-once.org/fossil-skins/ext/micropub"
+    ],
+    "openid.server": [
+      "https://openid.indieauth.com/openid"
+    ],
+    "openid.delegate": [
+      "https://milki.include-once.org/"
+    ]
+  },
+  "rel-urls": {
+    "https://fossil.include-once.org/fossil-skins/ext/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://fossil.include-once.org/fossil-skins/ext/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://fossil.include-once.org/fossil-skins/ext/micropub": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://openid.indieauth.com/openid": {
+      "rels": [
+        "openid.server"
+      ]
+    },
+    "https://milki.include-once.org/": {
+      "rels": [
+        "openid.delegate"
+      ]
+    }
+  }
+}

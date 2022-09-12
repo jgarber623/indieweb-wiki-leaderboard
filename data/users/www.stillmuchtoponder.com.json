@@ -1,0 +1,71 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "name": [
+          "Danyao Wang"
+        ],
+        "url": [
+          "https://www.stillmuchtoponder.com/blog",
+          "https://twitter.com/danyaowang",
+          "https://github.com/danyao"
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "stylesheet": [
+      "https://www.stillmuchtoponder.com/css/styles.css"
+    ],
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "micropub": [
+      "https://www.stillmuchtoponder.com/blog/?micropub=endpoint"
+    ],
+    "me": [
+      "https://twitter.com/danyaowang",
+      "https://github.com/danyao"
+    ]
+  },
+  "rel-urls": {
+    "https://www.stillmuchtoponder.com/css/styles.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://www.stillmuchtoponder.com/blog/?micropub=endpoint": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://twitter.com/danyaowang": {
+      "rels": [
+        "me"
+      ],
+      "text": "@danyaowang"
+    },
+    "https://github.com/danyao": {
+      "rels": [
+        "me"
+      ],
+      "text": "GitHub"
+    }
+  }
+}

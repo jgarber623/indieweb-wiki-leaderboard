@@ -1,0 +1,57 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "name": [
+          "Waldi.Bow"
+        ],
+        "photo": [
+          {
+            "value": "https://commentpara.de/img/anonymous.svg",
+            "alt": ""
+          }
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "authorization_endpoint": [
+      "https://commentpara.de/auth.php"
+    ],
+    "token_endpoint": [
+      "https://commentpara.de/token.php"
+    ],
+    "micropub": [
+      "https://commentpara.de/micropub.php"
+    ],
+    "stylesheet": [
+      "https://commentpara.de/css/user.css"
+    ]
+  },
+  "rel-urls": {
+    "https://commentpara.de/auth.php": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://commentpara.de/token.php": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://commentpara.de/micropub.php": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://commentpara.de/css/user.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    }
+  }
+}

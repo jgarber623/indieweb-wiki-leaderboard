@@ -1,0 +1,1043 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-feed"
+      ],
+      "properties": {
+        "title": [
+          "On docs, learning to code, and life"
+        ],
+        "url": [
+          "http://www.yourmom.io/",
+          "https://brid-gy.appspot.com/like/twitter/Bradamante/1031361437732691968/1268161",
+          "https://twitter.com/TheMikeJang",
+          "http://jaredleonmorgan.net/",
+          "http://uk.linkedin.com/in/mattgourd",
+          "https://twitter.com/paulhafalla"
+        ],
+        "summary": [
+          ""
+        ],
+        "content": [
+          {
+            "html": "",
+            "value": ""
+          }
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "url": [
+                "http://www.yourmom.io/",
+                "https://github.com/bradamant3",
+                "https://twitter.com/bradamante"
+              ],
+              "uid": [
+                "http://www.yourmom.io/"
+              ],
+              "photo": [
+                {
+                  "value": "http://1.gravatar.com/avatar/7c86209c65fbbdadffa69eecd800b335?s=125&d=default&r=g",
+                  "alt": ""
+                }
+              ],
+              "name": [
+                "Bradamante"
+              ],
+              "note": [
+                ""
+              ]
+            },
+            "children": [
+              {
+                "type": [
+                  "h-adr"
+                ],
+                "properties": {
+                  "locality": [
+                    ""
+                  ],
+                  "region": [
+                    ""
+                  ],
+                  "country-name": [
+                    ""
+                  ]
+                }
+              }
+            ],
+            "value": "http://www.yourmom.io/"
+          }
+        ]
+      },
+      "children": [
+        {
+          "type": [
+            "h-as-article",
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Technical writers and “Subject-Matter Experts”"
+            ],
+            "url": [
+              "http://www.yourmom.io/2016/06/sme_rant/",
+              "http://www.yourmom.io/2016/06/sme_rant/"
+            ],
+            "updated": [
+              "2016-06-28T16:51:04+00:00"
+            ],
+            "published": [
+              "2016-06-28T16:51:04+00:00"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "photo": [
+                    {
+                      "value": "http://1.gravatar.com/avatar/7c86209c65fbbdadffa69eecd800b335?s=40&d=blank&r=g",
+                      "alt": ""
+                    }
+                  ],
+                  "url": [
+                    "http://www.yourmom.io/author/jrondeau/"
+                  ],
+                  "uid": [
+                    "http://www.yourmom.io/author/jrondeau/"
+                  ],
+                  "name": [
+                    "Bradamante"
+                  ]
+                },
+                "value": "Bradamante"
+              }
+            ],
+            "content": [
+              {
+                "html": "<p>Subtitle: What do technical writers do, anyway?</p>\n<p>About two years ago, I had an at first dismaying but ultimately enlightening conversation with someone I met socially. She asked what I did, and when I told her that I was a technical writer, she said, O really, I used to do that too. What do you write about? I said that I wrote software documentation for programmers and system administrators, and she replied, O, and do you really understand what you write about?</p>\n<p>At the time, her question simply made no sense to me — how can anyone possibly write about things they don’t understand? Two thousand years ago, the great Roman orator and great-grandfather of the study of style and persuasion, Marcus Tullius Cicero, wrote that we cannot speak well (and by extension, write well) well if we do not have something to say. In the language of the web, presentation depends on content. He would have been puzzled by the notion that one could write about something that one did not understand.</p>\n<p>Yet in the world of software development, the assumption is endemic that writing is something distinct from the subject matter that it presents (or indeed more generally that presentation can be divorced from the content that it presents). Project managers, programmers, and writers alike tend to operate with a model that assumes that Subject Matter Experts (SMEs) provide information, and writers turn that information into useful, or at least somewhat more coherent, English instructions or information for the software customer.</p>\n<p>When I wrote the first draft of this post, in frustrated response to the question about whether I understood what I wrote, I thought that this model was beginning to fade, or at least to be challenged. But it’s emerged again in one of the last places I expected to find it, the Write the Docs general Slack channel. The other day as I began to revise yet again, it appeared in a fairly extended Twitter conversation. So I decided it was time to get the post out and finally publish it. This is difficult stuff to write about, and I’ve been dissatisfied with every attempt I’ve made to get it down. But it’s clearly too important to leave in the Drafts folder any longer.</p>\n<p>Writing as a mode and role distinct from subject matter expertise is not really about writing, it’s about editing. And generally, if you don’t understand what you’re writing about very well, you’re not doing the writing part very well. Writing and understanding are two halves of the same coin. (By extension, too, if you don’t understand the subject matter, you’ll almost undoubtedly do a terrible job of editing.)</p>\n<p>And in the real world, the best technical writers understand very well what they’re writing about — usually better than the folks who built whatever’s being documented. Writers’ backgrounds are not all in software development. But good tech writers know both how to construct good English sentences and paragraphs and how to research product functionality, how to identify missing information, how to test the product — they are far more than expert editors of language. Their skills lie equally in their command of language and in their ability to research and understand both the processes required for software development and the domain-specific knowledge that an application helps manage. They are good at understanding the customers of the products they document, too — they often possess formidable user experience expertise.</p>\n<p>How and why have these skills and contributions come to be so little recognized or under-utilized? I think the answer is two-fold.</p>\n<p>First, the persistent arrogance of the world(s) of software programming generally. Programmers aren’t trained as steel fabricators or security analysts or project managers (to take a few examples from the kinds of software that I’ve helped document over the years). They’re trained to write code. They learn as much as they need to learn about the subject matter that an application helps manage, when they need to learn it — and therefore also about the customers for the software that their code contributes to. But their basic skills lie in breaking down any task into sufficiently small components that each component can be translated into a set of binary instructions. We’ve all seen too many times, however, the tendency of “the truly technical” to assume that their fundamentally limited skillset can be applied to All The World’s Problems: the Greek economy, the sad state of education in the United States, and even urban planning and infrastructure.</p>\n<p>Of course, to do a decent job of breaking down any individual domain’s tasks into code-able bits, programmers do need to learn the domain, or at least enough of it to work on their assigned bits. Technical writers, on the other hand, inevitably must help to explain all those bits, and to put them into the larger context of managing the domain, which the entire software package presumably will help the customer with.</p>\n<p>No domain-specific knowledge is necessarily assumed up front for either coders or writers, and expectations and skills around customer knowledge and understanding vary wildly between individuals and across projects and companies. Somehow over the years, though, coding has come to be seen as an arcane art, related to Math And Other Scary Things That Most People Cannot Understand. (And the notion that we just need to do a better job of instructing in the Dark Arts of STEM only reinforces the notion that coding is More Special Than Everything Else, no matter how many conference panels are organized around the theme of “non-technical contributions are just as important …”)</p>\n<p>But here we come to the second thing.</p>\n<p>Technical writers themselves have contributed significantly to the perception of their work as separate from both software development and domain knowledge. Documentation, technical writing, and the currently fashionable jobs of user experience designer, information experience manager, information architect, or content manager, with which software documentation is or ought to be closely associated, have become highly professionalized to a remarkably content-free degree. Conferences for people who call themselves technical writers, with the notable exception of Write the Docs, tend to focus on specialized documentation tools or on “content marketing” (a term whose ambiguity suggests that perhaps the real word people aren’t participating much in its discussions any more either). The ambiguous if not entirely meaningless term “technical communicator” has come to be associated with this empty professionalization that seems to know only how to speak to itself. Software development generally suffers from a tendency to create and reinforce silos around product development roles, no matter how much “agile” discussions may challenge some limited aspected of this tendency. Writers are almost invariably excluded from any efforts to collaborate across roles, but far too many of us seems to prefer it that way. Instead of true collaboration, we rely on specialized documentation tools and workflows to which we allow no one else access, we assume that Other People Know More Than We Do, and we turn ourselves into marginalized tools monkeys, scrabbling for the leftover scraps occasionally tossed to us by The Really Important People.</p>\n<p>How can we expect other members of the product development team to take our skills and contributions seriously if we don’t do so ourselves? Let’s start by eliminating the term and the notion of “Subject-Matter Experts” from our own vocabularies, and working to educate the rest of our teams about what we really have to offer.</p>\n<div class=\"syndication-links\"></div>",
+                "value": "Subtitle: What do technical writers do, anyway?\nAbout two years ago, I had an at first dismaying but ultimately enlightening conversation with someone I met socially. She asked what I did, and when I told her that I was a technical writer, she said, O really, I used to do that too. What do you write about? I said that I wrote software documentation for programmers and system administrators, and she replied, O, and do you really understand what you write about?\nAt the time, her question simply made no sense to me — how can anyone possibly write about things they don’t understand? Two thousand years ago, the great Roman orator and great-grandfather of the study of style and persuasion, Marcus Tullius Cicero, wrote that we cannot speak well (and by extension, write well) well if we do not have something to say. In the language of the web, presentation depends on content. He would have been puzzled by the notion that one could write about something that one did not understand.\nYet in the world of software development, the assumption is endemic that writing is something distinct from the subject matter that it presents (or indeed more generally that presentation can be divorced from the content that it presents). Project managers, programmers, and writers alike tend to operate with a model that assumes that Subject Matter Experts (SMEs) provide information, and writers turn that information into useful, or at least somewhat more coherent, English instructions or information for the software customer.\nWhen I wrote the first draft of this post, in frustrated response to the question about whether I understood what I wrote, I thought that this model was beginning to fade, or at least to be challenged. But it’s emerged again in one of the last places I expected to find it, the Write the Docs general Slack channel. The other day as I began to revise yet again, it appeared in a fairly extended Twitter conversation. So I decided it was time to get the post out and finally publish it. This is difficult stuff to write about, and I’ve been dissatisfied with every attempt I’ve made to get it down. But it’s clearly too important to leave in the Drafts folder any longer.\nWriting as a mode and role distinct from subject matter expertise is not really about writing, it’s about editing. And generally, if you don’t understand what you’re writing about very well, you’re not doing the writing part very well. Writing and understanding are two halves of the same coin. (By extension, too, if you don’t understand the subject matter, you’ll almost undoubtedly do a terrible job of editing.)\nAnd in the real world, the best technical writers understand very well what they’re writing about — usually better than the folks who built whatever’s being documented. Writers’ backgrounds are not all in software development. But good tech writers know both how to construct good English sentences and paragraphs and how to research product functionality, how to identify missing information, how to test the product — they are far more than expert editors of language. Their skills lie equally in their command of language and in their ability to research and understand both the processes required for software development and the domain-specific knowledge that an application helps manage. They are good at understanding the customers of the products they document, too — they often possess formidable user experience expertise.\nHow and why have these skills and contributions come to be so little recognized or under-utilized? I think the answer is two-fold.\nFirst, the persistent arrogance of the world(s) of software programming generally. Programmers aren’t trained as steel fabricators or security analysts or project managers (to take a few examples from the kinds of software that I’ve helped document over the years). They’re trained to write code. They learn as much as they need to learn about the subject matter that an application helps manage, when they need to learn it — and therefore also about the customers for the software that their code contributes to. But their basic skills lie in breaking down any task into sufficiently small components that each component can be translated into a set of binary instructions. We’ve all seen too many times, however, the tendency of “the truly technical” to assume that their fundamentally limited skillset can be applied to All The World’s Problems: the Greek economy, the sad state of education in the United States, and even urban planning and infrastructure.\nOf course, to do a decent job of breaking down any individual domain’s tasks into code-able bits, programmers do need to learn the domain, or at least enough of it to work on their assigned bits. Technical writers, on the other hand, inevitably must help to explain all those bits, and to put them into the larger context of managing the domain, which the entire software package presumably will help the customer with.\nNo domain-specific knowledge is necessarily assumed up front for either coders or writers, and expectations and skills around customer knowledge and understanding vary wildly between individuals and across projects and companies. Somehow over the years, though, coding has come to be seen as an arcane art, related to Math And Other Scary Things That Most People Cannot Understand. (And the notion that we just need to do a better job of instructing in the Dark Arts of STEM only reinforces the notion that coding is More Special Than Everything Else, no matter how many conference panels are organized around the theme of “non-technical contributions are just as important …”)\nBut here we come to the second thing.\nTechnical writers themselves have contributed significantly to the perception of their work as separate from both software development and domain knowledge. Documentation, technical writing, and the currently fashionable jobs of user experience designer, information experience manager, information architect, or content manager, with which software documentation is or ought to be closely associated, have become highly professionalized to a remarkably content-free degree. Conferences for people who call themselves technical writers, with the notable exception of Write the Docs, tend to focus on specialized documentation tools or on “content marketing” (a term whose ambiguity suggests that perhaps the real word people aren’t participating much in its discussions any more either). The ambiguous if not entirely meaningless term “technical communicator” has come to be associated with this empty professionalization that seems to know only how to speak to itself. Software development generally suffers from a tendency to create and reinforce silos around product development roles, no matter how much “agile” discussions may challenge some limited aspected of this tendency. Writers are almost invariably excluded from any efforts to collaborate across roles, but far too many of us seems to prefer it that way. Instead of true collaboration, we rely on specialized documentation tools and workflows to which we allow no one else access, we assume that Other People Know More Than We Do, and we turn ourselves into marginalized tools monkeys, scrabbling for the leftover scraps occasionally tossed to us by The Really Important People.\nHow can we expect other members of the product development team to take our skills and contributions seriously if we don’t do so ourselves? Let’s start by eliminating the term and the notion of “Subject-Matter Experts” from our own vocabularies, and working to educate the rest of our teams about what we really have to offer."
+              }
+            ]
+          },
+          "id": "post-173"
+        },
+        {
+          "type": [
+            "h-as-article",
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "For DC residents: you can still speak out to Congress"
+            ],
+            "url": [
+              "http://www.yourmom.io/2016/06/dc_letter_pulse/",
+              "http://www.yourmom.io/2016/06/dc_letter_pulse/"
+            ],
+            "updated": [
+              "2016-06-12T17:45:13+00:00"
+            ],
+            "published": [
+              "2016-06-12T17:45:13+00:00"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "photo": [
+                    {
+                      "value": "http://1.gravatar.com/avatar/7c86209c65fbbdadffa69eecd800b335?s=40&d=blank&r=g",
+                      "alt": ""
+                    }
+                  ],
+                  "url": [
+                    "http://www.yourmom.io/author/jrondeau/"
+                  ],
+                  "uid": [
+                    "http://www.yourmom.io/author/jrondeau/"
+                  ],
+                  "name": [
+                    "Bradamante"
+                  ]
+                },
+                "value": "Bradamante"
+              }
+            ],
+            "content": [
+              {
+                "html": "<p>Not part of my (ir-)regularly scheduled programming, but too important not to put here.</p>\n<p>I live in Washington, DC, where we have no elected representatives. Which means that if you are outraged by current events, it’s a little hard to do the Standard Thing and write to your congresscritter or Senator.</p>\n<p>So I’m writing (and calling, and delivering paper in person) to the Senate Majority Leader (Mitch McConnell) and the Speaker of the House (Paul Ryan) (yes, the bitterest of ironies …). I’m calling on them as congressional leaders, who ought therefore to take special interest in the concerns of DC residents since we are supposed to be represented by All of Congress.</p>\n<p>If this idea appeals to you, but if you want some help getting started, here’s what I’m saying (please feel free to adapt — in fact, I encourage you to do so! But do copy if that’s the only way you’ll get it done.):</p>\n<p>Dear Senator McConnell | Congressman Ryan,</p>\n<p>As Senate Majority Leader | Speaker of the House of Representatives, you have an extra obligation to me and to other citizens of Washington, DC, because we lack territorially based representation and must therefore depend upon Congress as a whole to respond to our needs and concerns.</p>\n<p>I write to urge you to abandon your enslavement to the gun lobby and to act as a true leader in helping to enact the right gun control legislation. We desperately need laws that require background checks on anyone who tries to buy a gun in this country, and that ban sales to dangerous people. Danger comes from many places: from mental illness, from known histories of violence, from terrorist watch lists.</p>\n<p>Gun violence in our country has reached epidemic proportions. We should have worked harder to stop it after Sandy Hook. But now, in the wake of the Orlando shooting which represents the second largest terrorist tack ever on American soil, it is beyond time to take action.</p>\n<p>I urge you strongly to lead the Senate | House of Representatives in putting strong background checks on gun sales in place across our great nation. These background checks need not impinge on the Second Amendment; instead, they can only help to ensure its appropriate enforcement.</p>\n<p>Thank you for your attention.</p>\n<p>Regards,</p>\n<p>Jennifer Rondeau<br>\nWashington, DC</p>\n<div class=\"syndication-links\"></div>",
+                "value": "Not part of my (ir-)regularly scheduled programming, but too important not to put here.\nI live in Washington, DC, where we have no elected representatives. Which means that if you are outraged by current events, it’s a little hard to do the Standard Thing and write to your congresscritter or Senator.\nSo I’m writing (and calling, and delivering paper in person) to the Senate Majority Leader (Mitch McConnell) and the Speaker of the House (Paul Ryan) (yes, the bitterest of ironies …). I’m calling on them as congressional leaders, who ought therefore to take special interest in the concerns of DC residents since we are supposed to be represented by All of Congress.\nIf this idea appeals to you, but if you want some help getting started, here’s what I’m saying (please feel free to adapt — in fact, I encourage you to do so! But do copy if that’s the only way you’ll get it done.):\nDear Senator McConnell | Congressman Ryan,\nAs Senate Majority Leader | Speaker of the House of Representatives, you have an extra obligation to me and to other citizens of Washington, DC, because we lack territorially based representation and must therefore depend upon Congress as a whole to respond to our needs and concerns.\nI write to urge you to abandon your enslavement to the gun lobby and to act as a true leader in helping to enact the right gun control legislation. We desperately need laws that require background checks on anyone who tries to buy a gun in this country, and that ban sales to dangerous people. Danger comes from many places: from mental illness, from known histories of violence, from terrorist watch lists.\nGun violence in our country has reached epidemic proportions. We should have worked harder to stop it after Sandy Hook. But now, in the wake of the Orlando shooting which represents the second largest terrorist tack ever on American soil, it is beyond time to take action.\nI urge you strongly to lead the Senate | House of Representatives in putting strong background checks on gun sales in place across our great nation. These background checks need not impinge on the Second Amendment; instead, they can only help to ensure its appropriate enforcement.\nThank you for your attention.\nRegards,\nJennifer Rondeau\nWashington, DC"
+              }
+            ]
+          },
+          "id": "post-170"
+        },
+        {
+          "type": [
+            "h-as-article",
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "I’m going to IndieWebCamp 2016"
+            ],
+            "url": [
+              "http://www.yourmom.io/2016/05/162/",
+              "http://www.yourmom.io/2016/05/162/"
+            ],
+            "updated": [
+              "2016-05-30T22:13:10+00:00"
+            ],
+            "published": [
+              "2016-05-30T22:13:10+00:00"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "photo": [
+                    {
+                      "value": "http://1.gravatar.com/avatar/7c86209c65fbbdadffa69eecd800b335?s=40&d=blank&r=g",
+                      "alt": ""
+                    }
+                  ],
+                  "url": [
+                    "http://www.yourmom.io/author/jrondeau/"
+                  ],
+                  "uid": [
+                    "http://www.yourmom.io/author/jrondeau/"
+                  ],
+                  "name": [
+                    "Bradamante"
+                  ]
+                },
+                "value": "Bradamante"
+              }
+            ],
+            "content": [
+              {
+                "html": "<p>RSVP <span class=\"p-rsvp\">yes</span><br>\nto <a href=\"http://2016.indieweb.org/\" class=\"u-in-reply-to\">IndieWebCamp 2016</a></p>\n<div class=\"syndication-links\"></div>",
+                "value": "RSVP yes\nto IndieWebCamp 2016"
+              }
+            ],
+            "rsvp": [
+              "yes"
+            ],
+            "in-reply-to": [
+              "http://2016.indieweb.org/"
+            ]
+          },
+          "id": "post-162"
+        },
+        {
+          "type": [
+            "h-as-article",
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "So you want to learn about API documentation"
+            ],
+            "url": [
+              "http://www.yourmom.io/2016/05/apis_new_writers/",
+              "http://www.yourmom.io/2016/05/apis_new_writers/"
+            ],
+            "updated": [
+              "2016-05-16T00:09:04+00:00"
+            ],
+            "published": [
+              "2016-05-16T00:09:04+00:00"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "photo": [
+                    {
+                      "value": "http://1.gravatar.com/avatar/7c86209c65fbbdadffa69eecd800b335?s=40&d=blank&r=g",
+                      "alt": ""
+                    }
+                  ],
+                  "url": [
+                    "http://www.yourmom.io/author/jrondeau/"
+                  ],
+                  "uid": [
+                    "http://www.yourmom.io/author/jrondeau/"
+                  ],
+                  "name": [
+                    "Bradamante"
+                  ]
+                },
+                "value": "Bradamante"
+              }
+            ],
+            "content": [
+              {
+                "html": "<p>This is a post for beginners. Specifically, it’s a post for technical writers (regardless of specific job title) who want to learn more about API documentation, a realm traditionally separated from other forms of software documentation, and often made mysterious by folks who don’t use it or make it.</p>\n<p>That I find this post necessary says quite a lot about the state of software documentation and the technical writers who produce much of it, but that’s a point I’ll explore in more detail another day. For the time being, I want to offer advice that’s meant to complement what other technical writers have said or written on the subject.</p>\n<p>Here’s the why of my advice, which is bigger than just API documentation. In case you hadn’t noticed (and it seems that this particular rearguard action is still being fought), the new (or renewed) world of software documentation is moving rapidly toward a world that no longer isolates writers in their own little silos with their own proprietary tools and workflows to which no one else has access. This is particularly true for developer documentation, of which API docs are (partly) a subset. So if you haven’t done it already, you need to start thinking of yourself as part of a product development team, not (just) as part of a documentation team. You are writing with and for product teams, and especially for product managers and developers. Which means you need to turn yourself into as much of a PM/dev as you possible can.</p>\n<p>So, try shifting focus. Stop reading about “API documentation.” At least for a while. And start reading about APIs. Specifically, read about REST, because that’s what almost everyone means by “API” these days.</p>\n<p>(As I write, the one highly visible exception to the mainstream equation of “API” with “REST” is the Oracle v Google case. But the high level issues around what an API is are still the same — they are all interfaces, surfaces that other things can connect to without knowing what’s underneath the surface. And indeed, they should not know.)</p>\n<p>Try some of these suggestions:</p>\n<ul>\n<li>Read API and developer blogs, and read up on the major API management platforms. Yes, these are commercial ventures, but the folks who have built them have invested a lot in educating communities about APIs and in providing great information that any aspiring API documentarian should be familiar with. Here are just a few of my favorite resources. This list is not comprehensive — explore on your own and come up with your own set of tabs and bookmarks of similar material.\n<ul>\n<li>The <a href=\"http://nordicapis.com/blog/\">Nordic APIs blog</a>\n</li>\n<li>Matthew Reinbold’s <a href=\"https://tinyletter.com/RESTAPINotes\">REST API Notes</a>, his <a href=\"http://voxpop.co/\">website</a>, and <a href=\"http://webapi.events/\">his listing of API events</a>. (Matthew is a colleague and I’m very fortunate to be working with him. Read his stuff, and anything he recommends.)</li>\n<li>\n<a href=\"http://launchany.com/\">James Higginbotham’s site</a>. Also, <a href=\"http://launchany.us2.list-manage1.com/subscribe?u=5005148108dfbac726f74e31e&amp;id=239e48d26e\">sign up for API Developer Weekly</a>,the newsletter that he puts out with Keith Casey</li>\n<li>Kin Lane’s API Evangelist site (start with the <a href=\"http://apievangelist.com/blog/\">blog</a>, and then explore further)</li>\n<li>\n<a href=\"http://www.programmableweb.com/\">Programmable Web</a>. It’s a lot about the business side of APIs, but you need that, too.</li>\n<li>(Not for the faint of heart) The words that started it all, <a href=\"http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm\">Roy Fielding’s dissertation</a> (although as Fielding continues to point out, REST is really just how the web works. Or ought to work.)</li>\n</ul>\n</li>\n<li>(shameless plug) I said not to read me, but I mention a few other good resources (tools, folks to follow on twitter) in <a href=\"http://apieconomist.com/blog/jennifer-rondeau-on-the-mix-of-grammar-and-tech-in-api-documentation\">this interview with Jennifer Riggins on APIEconomist</a>.</li>\n<li>Attend local API meetups.</li>\n<li>Learn about OAuth 2.0 (and about the controversies surrounding it). I mean really learn — read the spec, and read a lot of different docs (about different implementations — everybody implements OAuth in their own way, because it’s not a tool, it’s a specification).\n<ul>\n<li><a href=\"https://tools.ietf.org/html/rfc6749\">OAuth 2 spec</a></li>\n</ul>\n</li>\n<li>Learn about API security — properly speaking about web security more generally. Learn about certificate stores, and encryption. This, with OAuth, is an area that far too few folks pay sufficient attention to, and it badly needs the help of good documentarians who can help developers understand its importance and show them good security solutions.</li>\n</ul>\n<p>Remember that the developers who are the audience for API documentation are users, too. Developer Experience (DX) is your new UX. As you learn more about APIs, you’ll learn about good API design, and this is tremendously important. As with any other interface, if you’re having a hard time documenting an API, and the docs are getting complex and convoluted as you chase down tangled details, chances are the API could use a good redesign. Catch these issues, as you would poorly worded GUI text or a badly laid out GUI, and you’ll make life easier for everyone. (You’ll also help evangelize the role of writer as a key member of the product dev team while you’re at it.)</p>\n<p>I’ll post a separate list of my favorite discussions about API documentation.</p>\n<p> </p>\n<div class=\"syndication-links\">\n<span class=\"syn-text\">Also on:</span><ul class=\"relsyn\"><li><a aria-label=\"org\" class=\"u-syndication syn-link\" href=\"http://www.istc.org.uk/guest-post-so-you-want-to-learn-about-api-documentation/\"> <span class=\"syndication-link-icon svg-org\" style=\"display: inline-block; max-width: 1rem; margin: 2px;\" aria-hidden=\"true\" aria-label=\"Org\" title=\"Org\"><svg role=\"img\" viewbox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><title>Org</title>\n<path d=\"M17.169 0c-.566.004-2.16 3.312-3.376 5.94a2.19 2.19 0 01-.408-1.267c-.03-.582-1.089.237-.936 1.275-.068-.035-1.26.227-1.26.23-.23-.93-.802-1.618-1.15-.563-.701 1.663-.88 2.984.115 4.585-.908 4.058-6.948 6.053-6.32 9.33.175.004 1.634 3.48 6.337 2.057 5.557-1.577 8.624 2.116 8.978 2.375.52.526-1.348-4.573-5.302-6.865-2.339-1.276-.87-3.474-.703-4.25 0 0 1.874 1.312 3.232-.692 1.227.316 2.05-.224 3.105.158.64.28 3.336.11 2.334-1.396-.148.129.07.27-.075.46-.043.056-.128.232-.408.315-.314.149-.83.27-1.43-.37-.434-.32-.748-.04-.992-.063.152-.098.577-.315 1.264-.315.388 0 .594.336.854.338.174 0 .685-.262.787-.365.63-.41.697-.278 1.012-.905.17-.759-.215-.92-.332-1.129-.032-.483-.436-.67-.919-.326-1.106-.198-2.192-.105-2.728-.15-1.175-.164-2.153-.786-2.153-.786.143-.19.075-.6-.842-.628-.315-.104-.45-.2-.745-.307.61-1.37.674-2.007 1.418-4.004.261-1.053 1.039-2.685.643-2.682zm-4.297 8.093c.03-.086.443.138.952.176.395.03.805.048 1.296-.025.03-.005.172.095-.15.194-.02.01-.062-.01-.065.196 0 .022-.01.04-.02.046-.15.152-.708.223-1.065.1-.436-.17-.482-.316-.517-.443-.305-.147-.47-.123-.43-.244zM9.685 10.2C8.86 9 8.929 8.36 8.96 7.256 7.961 8.288 6.855 8.3 5.18 8.58c-1.299.234-3.657 2.447-4.025 4.742-.043.608-.08 2.183.424 3.498.492 1.13.828 1.727 1.844 2.335-.882-3.169 5.296-5.33 6.263-8.955z\"></path></svg></span></a></li></ul>\n</div>",
+                "value": "This is a post for beginners. Specifically, it’s a post for technical writers (regardless of specific job title) who want to learn more about API documentation, a realm traditionally separated from other forms of software documentation, and often made mysterious by folks who don’t use it or make it.\nThat I find this post necessary says quite a lot about the state of software documentation and the technical writers who produce much of it, but that’s a point I’ll explore in more detail another day. For the time being, I want to offer advice that’s meant to complement what other technical writers have said or written on the subject.\nHere’s the why of my advice, which is bigger than just API documentation. In case you hadn’t noticed (and it seems that this particular rearguard action is still being fought), the new (or renewed) world of software documentation is moving rapidly toward a world that no longer isolates writers in their own little silos with their own proprietary tools and workflows to which no one else has access. This is particularly true for developer documentation, of which API docs are (partly) a subset. So if you haven’t done it already, you need to start thinking of yourself as part of a product development team, not (just) as part of a documentation team. You are writing with and for product teams, and especially for product managers and developers. Which means you need to turn yourself into as much of a PM/dev as you possible can.\nSo, try shifting focus. Stop reading about “API documentation.” At least for a while. And start reading about APIs. Specifically, read about REST, because that’s what almost everyone means by “API” these days.\n(As I write, the one highly visible exception to the mainstream equation of “API” with “REST” is the Oracle v Google case. But the high level issues around what an API is are still the same — they are all interfaces, surfaces that other things can connect to without knowing what’s underneath the surface. And indeed, they should not know.)\nTry some of these suggestions:\n\nRead API and developer blogs, and read up on the major API management platforms. Yes, these are commercial ventures, but the folks who have built them have invested a lot in educating communities about APIs and in providing great information that any aspiring API documentarian should be familiar with. Here are just a few of my favorite resources. This list is not comprehensive — explore on your own and come up with your own set of tabs and bookmarks of similar material.\n\nThe Nordic APIs blog\nMatthew Reinbold’s REST API Notes, his website, and his listing of API events. (Matthew is a colleague and I’m very fortunate to be working with him. Read his stuff, and anything he recommends.)\nJames Higginbotham’s site. Also, sign up for API Developer Weekly,the newsletter that he puts out with Keith Casey\nKin Lane’s API Evangelist site (start with the blog, and then explore further)\nProgrammable Web. It’s a lot about the business side of APIs, but you need that, too.\n(Not for the faint of heart) The words that started it all, Roy Fielding’s dissertation (although as Fielding continues to point out, REST is really just how the web works. Or ought to work.)\n\n\n(shameless plug) I said not to read me, but I mention a few other good resources (tools, folks to follow on twitter) in this interview with Jennifer Riggins on APIEconomist.\nAttend local API meetups.\nLearn about OAuth 2.0 (and about the controversies surrounding it). I mean really learn — read the spec, and read a lot of different docs (about different implementations — everybody implements OAuth in their own way, because it’s not a tool, it’s a specification).\n\nOAuth 2 spec\n\n\nLearn about API security — properly speaking about web security more generally. Learn about certificate stores, and encryption. This, with OAuth, is an area that far too few folks pay sufficient attention to, and it badly needs the help of good documentarians who can help developers understand its importance and show them good security solutions.\n\nRemember that the developers who are the audience for API documentation are users, too. Developer Experience (DX) is your new UX. As you learn more about APIs, you’ll learn about good API design, and this is tremendously important. As with any other interface, if you’re having a hard time documenting an API, and the docs are getting complex and convoluted as you chase down tangled details, chances are the API could use a good redesign. Catch these issues, as you would poorly worded GUI text or a badly laid out GUI, and you’ll make life easier for everyone. (You’ll also help evangelize the role of writer as a key member of the product dev team while you’re at it.)\nI’ll post a separate list of my favorite discussions about API documentation.\n \nAlso on: Org"
+              }
+            ],
+            "syndication": [
+              "http://www.istc.org.uk/guest-post-so-you-want-to-learn-about-api-documentation/"
+            ]
+          },
+          "id": "post-143"
+        },
+        {
+          "type": [
+            "h-as-article",
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "We are all technical"
+            ],
+            "url": [
+              "http://www.yourmom.io/2015/08/we-are-all-technical/",
+              "http://www.yourmom.io/2015/08/we-are-all-technical/"
+            ],
+            "updated": [
+              "2015-08-18T01:37:38+00:00"
+            ],
+            "published": [
+              "2015-08-18T01:37:38+00:00"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "photo": [
+                    {
+                      "value": "http://1.gravatar.com/avatar/7c86209c65fbbdadffa69eecd800b335?s=40&d=blank&r=g",
+                      "alt": ""
+                    }
+                  ],
+                  "url": [
+                    "http://www.yourmom.io/author/jrondeau/"
+                  ],
+                  "uid": [
+                    "http://www.yourmom.io/author/jrondeau/"
+                  ],
+                  "name": [
+                    "Bradamante"
+                  ]
+                },
+                "value": "Bradamante"
+              }
+            ],
+            "content": [
+              {
+                "html": "<p>This post was conceived at OSBridge in Portland this past June, but its birth has taken a while. And in the meantime, this brilliant talk by Leslie Hawthorn, given at eurucamp 2015, appeared:</p>\n<p><a class=\"twitter-timeline-link\" dir=\"ltr\" title=\"https://youtu.be/QZxcg1NiN2A\" href=\"https://t.co/SE7rur9sCv\" target=\"_blank\" rel=\"nofollow\" data-expanded-url=\"https://youtu.be/QZxcg1NiN2A\"><span class=\"js-display-url\">youtu.be/QZxcg1NiN2A</span></a></p>\n<p>Leslie says everything that I say here, only better and more succinctly. If you want the TL;DR version, just go watch her. I had already written these words, though, and I want to tell my story as it relates states of being “technical.” Or not.</p>\n<p>When it comes right down to it, we are all “technical.” And technology is everywhere in our lives, not because software is eating the world, but because human beings make all sorts of tools, and every single one of those tools is a technology.</p>\n<p>“Techne” = “art, craft, skill”</p>\n<p>“Technical” and its close cognate, “technology,” have come to be defined more narrowly over the past 50+ years, to refer almost exclusively to industrial and scientific applications (and those terms have in their turn been defined more narrowly over the centuries). But what’s happened to the word “technical” goes beyond simple shifts in usage over time. This word has become a key way to identify people — not things made by people — as belonging to a certain privileged elite. Or, in the case of “non-technical” — being ruthlessly excluded from that same elite. (Because then we can wring our hands over the “problem” of “bringing non-technical people into tech.” Whatever that’s supposed to mean.)</p>\n<p>This matters not just because “technical” is a useful word in many contexts other than software programming. It’s important because this particular word has come to distinguish the coders — who are also The Most Important People — from everybody else. There are “technical” contributors to software projects, and there are “non-technical” contributors. And the technical guys (noun choice deliberate) stand tall over all the rest of us.</p>\n<p>A few years ago, “technical” had already come to refer mostly if not entirely to software development, but its appropriation was a bit more general. When I started working at my present company, nearly eight years ago now, my manager told me that she had hired me in spite of the reservations of one of my interviewers, who had expressed concern about my apparent lack of “technical” knowledge or skills. What exactly that meant, nobody seemed to know. I certainly wasn’t expected to code. But being insufficiently technical was a thing, and was considered a cause for concern.</p>\n<p>Fast forward five years. I’m compulsively curious, I like to learn new things, and I work with programmers. I’d been reading code for years (before my assessment as “not technical enough”), but now I learned to code, at least enough to write sample code for an SDK, and to work with the programmers on code comments to produce reference documentation. It was a proud moment when the SDK was presented to the company, the architect acknowledged my contributions, and he described my work explicitly as “very technical.” I’m sad to say, in hindsight, that I was proud at that moment. A Real Programmer had pronounced me Technical. I had Arrived. I was part of the in-crowd.</p>\n<p>Because that’s the point behind current uses of the word “technical.” It separates the sheep from the goats. The folks with the real cred from everyone else.</p>\n<p>And in the years since I was welcomed into the ranks of the “very technical,” the word’s definition has gotten more and more narrow. At two major recent conferences I attended, I encountered it extensively and pervasively, to describe only the act of writing software code. All the time. Testers not allowed. Only Real Full-time Programmers can be technical, in this view of the world. According to this world view, I no longer have “technical” status — but then, I no longer want or seek it.</p>\n<p>Yes, I want to develop my coding skills, and to apply them more in my daily work. But I want no part of a taxonomy designed to mark an exclusive and narrow geek elite as fundamentally More Important Than All The Rest of Us. I want to challenge all such taxonomies, and the taxonomy of the technical and technology in particular.</p>\n<p>When I started teaching with the web — which amounted to no more than putting my course syllabuses online, and updating them with links to external resources — I was in the vanguard of classroom technology. Most of my students had computers, but they didn’t all have Internet access. Those who did, had dial-up. Most of them accessed the web from library workstations. I still printed out paper syllabuses, and wrote the updates on the chalkboard. I wrote out my lecture outlines on the that same chalkboard, or took notes on the board if class discussion was the order of the day. Yes, PowerPoint was available, but I never went that route. (You really shouldn’t have to ask …)</p>\n<p>I started every term with a pencil and a pen in my hand, together with the syllabus projected on a screen. And I took the time to explain that the laptop on my lectern and the pen and pencil in my hand were all technologies — tools made to help humans make other things. I’d mention the printing press — a taste of things to come in the Renaissance history courses I often taught. The astrolabe, the compass, the jacquard loom (an important progenitor of programming technologies), the automobile — these are all technologies. And I’d mention them. But I’d start with the simple pencil and pen because they were so accessible, and because they and the laptop computer — or more precisely, the web page that I was displaying in its browser — were equivalent technologies for the purposes of the classroom. It was absolutely vital that in bringing a new technology into the classroom I do everything I could to keep the classroom experience familiar, and accessible, and unthreatening. Like the world my students knew, not different from it. Representing continuity with the past, not break from it.</p>\n<p>Sure, the context of those not-really-so-very-long-ago classrooms was different. But software development these days, and the rest of the world too, could use a more generous understanding of what technology means, what it means to “be technical” — a clearer-eyed and all-encompassing view of the many different techniques required to produce a piece of software, or any other human endeavor.</p>\n<p>Software is eating the world, and its creators and masters are all too eager to stake their exclusive claims to the privilege that their work confers. Let’s take back one not-so-little word, and celebrate the whole of human technical endeavor.</p>\n<div class=\"syndication-links\"></div>",
+                "value": "This post was conceived at OSBridge in Portland this past June, but its birth has taken a while. And in the meantime, this brilliant talk by Leslie Hawthorn, given at eurucamp 2015, appeared:\nyoutu.be/QZxcg1NiN2A\nLeslie says everything that I say here, only better and more succinctly. If you want the TL;DR version, just go watch her. I had already written these words, though, and I want to tell my story as it relates states of being “technical.” Or not.\nWhen it comes right down to it, we are all “technical.” And technology is everywhere in our lives, not because software is eating the world, but because human beings make all sorts of tools, and every single one of those tools is a technology.\n“Techne” = “art, craft, skill”\n“Technical” and its close cognate, “technology,” have come to be defined more narrowly over the past 50+ years, to refer almost exclusively to industrial and scientific applications (and those terms have in their turn been defined more narrowly over the centuries). But what’s happened to the word “technical” goes beyond simple shifts in usage over time. This word has become a key way to identify people — not things made by people — as belonging to a certain privileged elite. Or, in the case of “non-technical” — being ruthlessly excluded from that same elite. (Because then we can wring our hands over the “problem” of “bringing non-technical people into tech.” Whatever that’s supposed to mean.)\nThis matters not just because “technical” is a useful word in many contexts other than software programming. It’s important because this particular word has come to distinguish the coders — who are also The Most Important People — from everybody else. There are “technical” contributors to software projects, and there are “non-technical” contributors. And the technical guys (noun choice deliberate) stand tall over all the rest of us.\nA few years ago, “technical” had already come to refer mostly if not entirely to software development, but its appropriation was a bit more general. When I started working at my present company, nearly eight years ago now, my manager told me that she had hired me in spite of the reservations of one of my interviewers, who had expressed concern about my apparent lack of “technical” knowledge or skills. What exactly that meant, nobody seemed to know. I certainly wasn’t expected to code. But being insufficiently technical was a thing, and was considered a cause for concern.\nFast forward five years. I’m compulsively curious, I like to learn new things, and I work with programmers. I’d been reading code for years (before my assessment as “not technical enough”), but now I learned to code, at least enough to write sample code for an SDK, and to work with the programmers on code comments to produce reference documentation. It was a proud moment when the SDK was presented to the company, the architect acknowledged my contributions, and he described my work explicitly as “very technical.” I’m sad to say, in hindsight, that I was proud at that moment. A Real Programmer had pronounced me Technical. I had Arrived. I was part of the in-crowd.\nBecause that’s the point behind current uses of the word “technical.” It separates the sheep from the goats. The folks with the real cred from everyone else.\nAnd in the years since I was welcomed into the ranks of the “very technical,” the word’s definition has gotten more and more narrow. At two major recent conferences I attended, I encountered it extensively and pervasively, to describe only the act of writing software code. All the time. Testers not allowed. Only Real Full-time Programmers can be technical, in this view of the world. According to this world view, I no longer have “technical” status — but then, I no longer want or seek it.\nYes, I want to develop my coding skills, and to apply them more in my daily work. But I want no part of a taxonomy designed to mark an exclusive and narrow geek elite as fundamentally More Important Than All The Rest of Us. I want to challenge all such taxonomies, and the taxonomy of the technical and technology in particular.\nWhen I started teaching with the web — which amounted to no more than putting my course syllabuses online, and updating them with links to external resources — I was in the vanguard of classroom technology. Most of my students had computers, but they didn’t all have Internet access. Those who did, had dial-up. Most of them accessed the web from library workstations. I still printed out paper syllabuses, and wrote the updates on the chalkboard. I wrote out my lecture outlines on the that same chalkboard, or took notes on the board if class discussion was the order of the day. Yes, PowerPoint was available, but I never went that route. (You really shouldn’t have to ask …)\nI started every term with a pencil and a pen in my hand, together with the syllabus projected on a screen. And I took the time to explain that the laptop on my lectern and the pen and pencil in my hand were all technologies — tools made to help humans make other things. I’d mention the printing press — a taste of things to come in the Renaissance history courses I often taught. The astrolabe, the compass, the jacquard loom (an important progenitor of programming technologies), the automobile — these are all technologies. And I’d mention them. But I’d start with the simple pencil and pen because they were so accessible, and because they and the laptop computer — or more precisely, the web page that I was displaying in its browser — were equivalent technologies for the purposes of the classroom. It was absolutely vital that in bringing a new technology into the classroom I do everything I could to keep the classroom experience familiar, and accessible, and unthreatening. Like the world my students knew, not different from it. Representing continuity with the past, not break from it.\nSure, the context of those not-really-so-very-long-ago classrooms was different. But software development these days, and the rest of the world too, could use a more generous understanding of what technology means, what it means to “be technical” — a clearer-eyed and all-encompassing view of the many different techniques required to produce a piece of software, or any other human endeavor.\nSoftware is eating the world, and its creators and masters are all too eager to stake their exclusive claims to the privilege that their work confers. Let’s take back one not-so-little word, and celebrate the whole of human technical endeavor."
+              }
+            ]
+          },
+          "id": "post-129"
+        },
+        {
+          "type": [
+            "h-as-article",
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Lowering the bar | Leading Technical Communication"
+            ],
+            "url": [
+              "http://www.yourmom.io/2015/07/lowering-the-bar-leading-technical-communication/",
+              "http://www.yourmom.io/2015/07/lowering-the-bar-leading-technical-communication/"
+            ],
+            "updated": [
+              "2015-07-22T15:30:50+00:00"
+            ],
+            "published": [
+              "2015-07-22T15:30:50+00:00"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "photo": [
+                    {
+                      "value": "http://1.gravatar.com/avatar/7c86209c65fbbdadffa69eecd800b335?s=40&d=blank&r=g",
+                      "alt": ""
+                    }
+                  ],
+                  "url": [
+                    "http://www.yourmom.io/author/jrondeau/"
+                  ],
+                  "uid": [
+                    "http://www.yourmom.io/author/jrondeau/"
+                  ],
+                  "name": [
+                    "Bradamante"
+                  ]
+                },
+                "value": "Bradamante"
+              }
+            ],
+            "content": [
+              {
+                "html": "<p>The interwebs are saying the things that I’ve been thinking, here and elsewhere. My experience suggests, sadly, an interpretation more akin to Larry’s than to Mark’s. When a doc conference includes a talk about how “engineering” (don’t get me started on the the software appropriation of vocabulary that has more general meaning) processes should inform doc processes, and suggests that a conversation between “engineers” and “writers” should in effect be defined by the former — or when a recent entry into the doc publishing platform market says, all you need is a platform that makes it as easy to write docs as to write email, because we all write email (and yeah, we all know what effective communication email provides ;P) — well, the bar is being set (far too) low.</p>\n<p>Apologies for the run-on sentence and the parenthetical asides. (At least I know ’em when I see ’em, *and* when I perpetuate ’em.)</p>\n<div class=\"syndication-links\"></div>",
+                "value": "The interwebs are saying the things that I’ve been thinking, here and elsewhere. My experience suggests, sadly, an interpretation more akin to Larry’s than to Mark’s. When a doc conference includes a talk about how “engineering” (don’t get me started on the the software appropriation of vocabulary that has more general meaning) processes should inform doc processes, and suggests that a conversation between “engineers” and “writers” should in effect be defined by the former — or when a recent entry into the doc publishing platform market says, all you need is a platform that makes it as easy to write docs as to write email, because we all write email (and yeah, we all know what effective communication email provides ;P) — well, the bar is being set (far too) low.\nApologies for the run-on sentence and the parenthetical asides. (At least I know ’em when I see ’em, *and* when I perpetuate ’em.)"
+              }
+            ]
+          },
+          "id": "post-123"
+        },
+        {
+          "type": [
+            "h-as-article",
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "IndieWebifying I"
+            ],
+            "url": [
+              "http://www.yourmom.io/2015/07/indiewebifying1/",
+              "http://www.yourmom.io/2015/07/indiewebifying1/"
+            ],
+            "updated": [
+              "2015-07-12T19:29:58+00:00"
+            ],
+            "published": [
+              "2015-07-12T19:29:58+00:00"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "photo": [
+                    {
+                      "value": "http://1.gravatar.com/avatar/7c86209c65fbbdadffa69eecd800b335?s=40&d=blank&r=g",
+                      "alt": ""
+                    }
+                  ],
+                  "url": [
+                    "http://www.yourmom.io/author/jrondeau/"
+                  ],
+                  "uid": [
+                    "http://www.yourmom.io/author/jrondeau/"
+                  ],
+                  "name": [
+                    "Bradamante"
+                  ]
+                },
+                "value": "Bradamante"
+              }
+            ],
+            "content": [
+              {
+                "html": "<p>This weekend I’m (finally!) at IndieWebCamp, where I’m doing some new things to my site and not incidentally putting the site out more publicly. It’s exciting, because before I started the site, as I’ve mentioned before, I had <a href=\"http://www.yourmom.io/2014/09/the_beginning/\">loftier ambitions</a> for what I wanted to build and how I wanted to manage things. IndieWeb was part of those ambitions, so the weekend feels like a return of sorts to a bigger vision of what I might eventually do on the web.</p>\n<p>If you’re not familiar with <a href=\"https://indiewebcamp.com/\">IndieWeb</a> and <a href=\"http://microformats.org/\">microformats</a>, check them out!</p>\n<p>And instead of liveblogging my efforts to continue the IndieWebification, I’ll just keep adding to this post.</p>\n<p>I’ve now changed my theme, because the new one fully supports microformats2, but also because it is more fully semantic, which pleases me even if I’m not working directly in the HTML myself. It’s also reasonably in keeping with my previous theme, although I do want to tweak the CSS a bit. In all that free time I have to work on this site, y’know. …</p>\n<div class=\"syndication-links\"></div>",
+                "value": "This weekend I’m (finally!) at IndieWebCamp, where I’m doing some new things to my site and not incidentally putting the site out more publicly. It’s exciting, because before I started the site, as I’ve mentioned before, I had loftier ambitions for what I wanted to build and how I wanted to manage things. IndieWeb was part of those ambitions, so the weekend feels like a return of sorts to a bigger vision of what I might eventually do on the web.\nIf you’re not familiar with IndieWeb and microformats, check them out!\nAnd instead of liveblogging my efforts to continue the IndieWebification, I’ll just keep adding to this post.\nI’ve now changed my theme, because the new one fully supports microformats2, but also because it is more fully semantic, which pleases me even if I’m not working directly in the HTML myself. It’s also reasonably in keeping with my previous theme, although I do want to tweak the CSS a bit. In all that free time I have to work on this site, y’know. …"
+              }
+            ]
+          },
+          "id": "post-90"
+        },
+        {
+          "type": [
+            "h-as-article",
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Posting to my website! Let’s see who can reply to this by the end of tomorrow! #indiewebcamp – Aaron Parecki"
+            ],
+            "url": [
+              "http://www.yourmom.io/2015/07/posting-to-my-website-lets-see-who-can-reply-to-this-by-the-end-of-tomorrow-indiewebcamp-aaron-parecki/",
+              "http://www.yourmom.io/2015/07/posting-to-my-website-lets-see-who-can-reply-to-this-by-the-end-of-tomorrow-indiewebcamp-aaron-parecki/"
+            ],
+            "updated": [
+              "2015-07-12T18:31:43+00:00"
+            ],
+            "published": [
+              "2015-07-12T18:31:43+00:00"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "photo": [
+                    {
+                      "value": "http://1.gravatar.com/avatar/7c86209c65fbbdadffa69eecd800b335?s=40&d=blank&r=g",
+                      "alt": ""
+                    }
+                  ],
+                  "url": [
+                    "http://www.yourmom.io/author/jrondeau/"
+                  ],
+                  "uid": [
+                    "http://www.yourmom.io/author/jrondeau/"
+                  ],
+                  "name": [
+                    "Bradamante"
+                  ]
+                },
+                "value": "Bradamante"
+              }
+            ],
+            "content": [
+              {
+                "html": "<p>Howdy, Aaron, step &lt;n&gt; of &lt;n+m&gt; achieved 🙂 <a class=\"u-in-reply-to\" href=\"https://aaronparecki.com/notes/2015/07/11/1/indiewebcamp\"> </a></p>\n<div class=\"syndication-links\"></div>",
+                "value": "Howdy, Aaron, step <n> of <n+m> achieved 🙂  "
+              }
+            ],
+            "in-reply-to": [
+              "https://aaronparecki.com/notes/2015/07/11/1/indiewebcamp"
+            ]
+          },
+          "id": "post-87"
+        },
+        {
+          "type": [
+            "h-as-article",
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Fetishizing documentation"
+            ],
+            "url": [
+              "http://www.yourmom.io/2015/06/fetishizing-docs/",
+              "http://www.yourmom.io/2015/06/fetishizing-docs/"
+            ],
+            "updated": [
+              "2015-06-03T02:41:47+00:00"
+            ],
+            "published": [
+              "2015-06-03T02:41:47+00:00"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "photo": [
+                    {
+                      "value": "http://1.gravatar.com/avatar/7c86209c65fbbdadffa69eecd800b335?s=40&d=blank&r=g",
+                      "alt": ""
+                    }
+                  ],
+                  "url": [
+                    "http://www.yourmom.io/author/jrondeau/"
+                  ],
+                  "uid": [
+                    "http://www.yourmom.io/author/jrondeau/"
+                  ],
+                  "name": [
+                    "Bradamante"
+                  ]
+                },
+                "value": "Bradamante"
+              }
+            ],
+            "content": [
+              {
+                "html": "<p>I’ve been trying to understand my own uncomfortable reaction to a lot of discussions about software documentation. To most of them, in fact.</p>\n<p>I write documentation for a living, and I find the challenge of writing good docs pretty compelling. So why do I squirm and feel like running away every time someone I follow on Twitter posts a link to another resource about documentation? Why do I try to avoid most of the standard resources in my chosen field of endeavor? I don’t mind telling people what I do, and like many folks who care about good docs, I am in love with the Write The Docs conferences. So what gives?</p>\n<p>Part of the answer lies, I think, in the title of this post. It’s also part of the answer to why I was uncomfortable for so long with the idea of even starting a blog (and why I’ve malingered over really getting it going).</p>\n<p>As I see it, writing documentation is a thing you do, not a thing you discuss in the abstract. Or if you discuss it outside the context of a particular deliverable, you do so in immediately practical ways: what’s the most appropriate way to call out a particular kind of UI element (or should you even call it out)? How should programmers and writers jointly contribute to Javadoc comments? What are some good ways to organize a programming guide/a user manual/a knowledge base? What does this error in my doc build mean and how can I fix it? What’s the best way to support localization?</p>\n<p>These aren’t, obviously, the only sorts of documentation questions people are interested in, or even the only sorts of doc question I care about. But more abstract discussions often very quickly move into generalizations about Documentation As A Self-Evident Truth, and that’s where I think my discomfort starts. This is what I’m calling “fetishizing.” Documentation Matters, doncha know. Good Documentation Can Save The World.</p>\n<p>And There Is One Right Way. Thou shalt write according to the dictates of “structured authoring” — a term that continues to bewilder me, even though I work within the constraints of some of its dictates. What does “unstructured” authoring look like? And does anybody really “author” software documentation? (I sure hope not …) Or thou shalt “single-source” — a term whose practical meaning has looked pretty slippery to me over the years. Or use a particular toolset/platform/workflow. Or not. (Just ask a group of folks who write about “agile” …)</p>\n<p>Context. Context is what fetishized documentation discussions lack. If your doc content, however it’s organized, however it’s presented, gets the job of helping your users get their jobs done, that’s what matters. Sure, there are ways of thinking about and organizing docs that can help you achieve this goal. But ultimately it’s your product and your users who matter, not the theorizing of folks who are overly invested in whatever the latest doc trend might be. And maybe it’s ultimately that lack of context that makes me uneasy when doc discussions go all abstract. All the carefully chosen stories or examples that prove the abstract point can’t make up for the fact that somebody else’s abstraction does not take your context into account.</p>\n<div class=\"syndication-links\"></div>",
+                "value": "I’ve been trying to understand my own uncomfortable reaction to a lot of discussions about software documentation. To most of them, in fact.\nI write documentation for a living, and I find the challenge of writing good docs pretty compelling. So why do I squirm and feel like running away every time someone I follow on Twitter posts a link to another resource about documentation? Why do I try to avoid most of the standard resources in my chosen field of endeavor? I don’t mind telling people what I do, and like many folks who care about good docs, I am in love with the Write The Docs conferences. So what gives?\nPart of the answer lies, I think, in the title of this post. It’s also part of the answer to why I was uncomfortable for so long with the idea of even starting a blog (and why I’ve malingered over really getting it going).\nAs I see it, writing documentation is a thing you do, not a thing you discuss in the abstract. Or if you discuss it outside the context of a particular deliverable, you do so in immediately practical ways: what’s the most appropriate way to call out a particular kind of UI element (or should you even call it out)? How should programmers and writers jointly contribute to Javadoc comments? What are some good ways to organize a programming guide/a user manual/a knowledge base? What does this error in my doc build mean and how can I fix it? What’s the best way to support localization?\nThese aren’t, obviously, the only sorts of documentation questions people are interested in, or even the only sorts of doc question I care about. But more abstract discussions often very quickly move into generalizations about Documentation As A Self-Evident Truth, and that’s where I think my discomfort starts. This is what I’m calling “fetishizing.” Documentation Matters, doncha know. Good Documentation Can Save The World.\nAnd There Is One Right Way. Thou shalt write according to the dictates of “structured authoring” — a term that continues to bewilder me, even though I work within the constraints of some of its dictates. What does “unstructured” authoring look like? And does anybody really “author” software documentation? (I sure hope not …) Or thou shalt “single-source” — a term whose practical meaning has looked pretty slippery to me over the years. Or use a particular toolset/platform/workflow. Or not. (Just ask a group of folks who write about “agile” …)\nContext. Context is what fetishized documentation discussions lack. If your doc content, however it’s organized, however it’s presented, gets the job of helping your users get their jobs done, that’s what matters. Sure, there are ways of thinking about and organizing docs that can help you achieve this goal. But ultimately it’s your product and your users who matter, not the theorizing of folks who are overly invested in whatever the latest doc trend might be. And maybe it’s ultimately that lack of context that makes me uneasy when doc discussions go all abstract. All the carefully chosen stories or examples that prove the abstract point can’t make up for the fact that somebody else’s abstraction does not take your context into account."
+              }
+            ]
+          },
+          "id": "post-70"
+        },
+        {
+          "type": [
+            "h-as-article",
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "A (minor) Swagger rant"
+            ],
+            "url": [
+              "http://www.yourmom.io/2015/05/a-minor-swagger-rant/",
+              "http://www.yourmom.io/2015/05/a-minor-swagger-rant/"
+            ],
+            "updated": [
+              "2015-05-28T19:11:13+00:00"
+            ],
+            "published": [
+              "2015-05-28T19:11:13+00:00"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "photo": [
+                    {
+                      "value": "http://1.gravatar.com/avatar/7c86209c65fbbdadffa69eecd800b335?s=40&d=blank&r=g",
+                      "alt": ""
+                    }
+                  ],
+                  "url": [
+                    "http://www.yourmom.io/author/jrondeau/"
+                  ],
+                  "uid": [
+                    "http://www.yourmom.io/author/jrondeau/"
+                  ],
+                  "name": [
+                    "Bradamante"
+                  ]
+                },
+                "value": "Bradamante"
+              }
+            ],
+            "content": [
+              {
+                "html": "<p>I keep writing and publishing posts about (REST) API related matters, when I keep thinking that I have more to say about The Whole World of Software Documentation. Some day I’ll figure out why. In the meantime:</p>\n<p>I’ll start with a word-related peeve. Or, more precisely, a definition-related peeve. It also happens to be documentation-related.</p>\n<p>Swagger is not a documentation tool.</p>\n<p>Got that, writers who are presumably the guardians of vocabulary and meaning and precision and usefulness?</p>\n<p>I’ve lost track of how many times I’ve seen this error repeated. I am not the only one to call it out — see, notably and more authoritatively, <a href=\"http://apievangelist.com/2015/03/30/quantifying-the-community-around-the-swagger-api-specification/\" target=\"_blank\">Kin Lane’s related post</a> — but I am the only writer I know to do so.</p>\n<p>Why does it matter? After all, you can do some things with Swagger to produce documentation, so why not call it a tool?</p>\n<p>Because in fact it is something else. It’s a specification. And the difference matters a lot when it comes to producing either (a) documentation or (b) the multitude of other useful tools that Swagger is inspiring these days.</p>\n<p>In fact, as I write, I realize more clearly than I have before just how much reducing the definition of Swagger (not to be confused with a “Swagger definition”) to a mere documentation tool does a great disservice to everyone who’s not already involved in the nascent space of API development. And even to some of those who are already so involved. It also does a disservice to those writers who don’t know any better, but who are approaching the world of API documentation for the first time and who might understandably be confused when they discover that no, Swagger doesn’t work like doxygen. Not even close. Swagger-UI doesn’t even work like doxygen. And again, not even close. Depending on your development environment, you may be in for a very rude shock if you start from this assumption (whether you’re a developer or a writer).</p>\n<p>Naming things is notoriously difficult in software development. Mis-using or redefining words already in common and valid use *in the world of software development* only makes things more difficult. (Appropriating perfectly good words already in general use for very specific and unintuitive meanings in software contexts is a peeve I’ll save for another day.) This word person at least is trying to do her part to set the record straight for at least one term and its (software-related) meaning.</p>\n<p>p.s. After I wrote the preceding, but before I published it, I learned that the Silicon Valley chapter of the STC has scheduled <a href=\"http://www.stc-siliconvalley.org/2014/10/09/october-11-2015-spec-driven-development-raml-api-documentation/\">this meeting</a>, which represents a move in the right direction. It focuses on RAML, not on Swagger, but in the context of my screed here that’s a minor detail.</p>\n<div class=\"syndication-links\"></div>",
+                "value": "I keep writing and publishing posts about (REST) API related matters, when I keep thinking that I have more to say about The Whole World of Software Documentation. Some day I’ll figure out why. In the meantime:\nI’ll start with a word-related peeve. Or, more precisely, a definition-related peeve. It also happens to be documentation-related.\nSwagger is not a documentation tool.\nGot that, writers who are presumably the guardians of vocabulary and meaning and precision and usefulness?\nI’ve lost track of how many times I’ve seen this error repeated. I am not the only one to call it out — see, notably and more authoritatively, Kin Lane’s related post — but I am the only writer I know to do so.\nWhy does it matter? After all, you can do some things with Swagger to produce documentation, so why not call it a tool?\nBecause in fact it is something else. It’s a specification. And the difference matters a lot when it comes to producing either (a) documentation or (b) the multitude of other useful tools that Swagger is inspiring these days.\nIn fact, as I write, I realize more clearly than I have before just how much reducing the definition of Swagger (not to be confused with a “Swagger definition”) to a mere documentation tool does a great disservice to everyone who’s not already involved in the nascent space of API development. And even to some of those who are already so involved. It also does a disservice to those writers who don’t know any better, but who are approaching the world of API documentation for the first time and who might understandably be confused when they discover that no, Swagger doesn’t work like doxygen. Not even close. Swagger-UI doesn’t even work like doxygen. And again, not even close. Depending on your development environment, you may be in for a very rude shock if you start from this assumption (whether you’re a developer or a writer).\nNaming things is notoriously difficult in software development. Mis-using or redefining words already in common and valid use *in the world of software development* only makes things more difficult. (Appropriating perfectly good words already in general use for very specific and unintuitive meanings in software contexts is a peeve I’ll save for another day.) This word person at least is trying to do her part to set the record straight for at least one term and its (software-related) meaning.\np.s. After I wrote the preceding, but before I published it, I learned that the Silicon Valley chapter of the STC has scheduled this meeting, which represents a move in the right direction. It focuses on RAML, not on Swagger, but in the context of my screed here that’s a minor detail."
+              }
+            ]
+          },
+          "id": "post-51"
+        }
+      ]
+    }
+  ],
+  "rels": {
+    "profile": [
+      "http://microformats.org/profile/specs",
+      "http://microformats.org/profile/hatom"
+    ],
+    "pingback": [
+      "http://www.yourmom.io/xmlrpc.php"
+    ],
+    "dns-prefetch": [
+      "http://s.w.org/"
+    ],
+    "alternate": [
+      "http://www.yourmom.io/feed/",
+      "http://www.yourmom.io/comments/feed/"
+    ],
+    "stylesheet": [
+      "http://www.yourmom.io/wp-includes/css/dist/block-library/style.min.css?ver=6.0.2",
+      "http://www.yourmom.io/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
+      "http://www.yourmom.io/wp-content/plugins/indieweb-post-kinds/css/kind.min.css?ver=3.5.12",
+      "http://www.yourmom.io/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3",
+      "http://www.yourmom.io/wp-content/themes/sempress/style.css?ver=6.0.2",
+      "http://www.yourmom.io/wp-content/plugins/syndication-links/css/syn.min.css?ver=4.3.12"
+    ],
+    "https://api.w.org/": [
+      "http://www.yourmom.io/wp-json/"
+    ],
+    "EditURI": [
+      "http://www.yourmom.io/xmlrpc.php?rsd"
+    ],
+    "wlwmanifest": [
+      "http://www.yourmom.io/wp-includes/wlwmanifest.xml"
+    ],
+    "authorization_endpoint": [
+      "http://www.yourmom.io/wp-json/indieauth/1.0/auth"
+    ],
+    "token_endpoint": [
+      "http://www.yourmom.io/wp-json/indieauth/1.0/token"
+    ],
+    "me": [
+      "https://github.com/bradamant3",
+      "https://twitter.com/bradamante",
+      "https://www.linkedin.com/in/jenniferrondeau"
+    ],
+    "micropub_media": [
+      "http://www.yourmom.io/wp-json/micropub/1.0/media"
+    ],
+    "micropub": [
+      "http://www.yourmom.io/wp-json/micropub/1.0/endpoint"
+    ],
+    "home": [
+      "http://www.yourmom.io/"
+    ],
+    "prev": [
+      "http://www.yourmom.io/page/2/"
+    ],
+    "bookmark": [
+      "http://www.yourmom.io/2016/06/sme_rant/",
+      "http://www.yourmom.io/2016/06/dc_letter_pulse/",
+      "http://www.yourmom.io/2016/05/162/",
+      "http://www.yourmom.io/2016/05/apis_new_writers/",
+      "http://www.yourmom.io/2015/08/we-are-all-technical/",
+      "http://www.yourmom.io/2015/07/lowering-the-bar-leading-technical-communication/",
+      "http://www.yourmom.io/2015/07/indiewebifying1/",
+      "http://www.yourmom.io/2015/07/posting-to-my-website-lets-see-who-can-reply-to-this-by-the-end-of-tomorrow-indiewebcamp-aaron-parecki/",
+      "http://www.yourmom.io/2015/06/fetishizing-docs/",
+      "http://www.yourmom.io/2015/05/a-minor-swagger-rant/"
+    ],
+    "author": [
+      "http://www.yourmom.io/author/jrondeau/"
+    ],
+    "category": [
+      "http://www.yourmom.io/category/uncategorized/",
+      "http://www.yourmom.io/category/apis/",
+      "http://www.yourmom.io/category/doc-rants/",
+      "http://www.yourmom.io/category/misc/",
+      "http://www.yourmom.io/category/indieweb-tests/"
+    ],
+    "tag": [
+      "http://www.yourmom.io/category/uncategorized/",
+      "http://www.yourmom.io/category/apis/",
+      "http://www.yourmom.io/category/doc-rants/",
+      "http://www.yourmom.io/category/misc/",
+      "http://www.yourmom.io/category/indieweb-tests/"
+    ],
+    "nofollow": [
+      "https://t.co/SE7rur9sCv",
+      "https://brid-gy.appspot.com/like/twitter/Bradamante/1031361437732691968/1268161",
+      "https://twitter.com/TheMikeJang",
+      "http://jaredleonmorgan.net/",
+      "http://uk.linkedin.com/in/mattgourd",
+      "https://twitter.com/paulhafalla"
+    ],
+    "external": [
+      "https://brid-gy.appspot.com/like/twitter/Bradamante/1031361437732691968/1268161",
+      "https://twitter.com/TheMikeJang",
+      "http://jaredleonmorgan.net/",
+      "http://uk.linkedin.com/in/mattgourd",
+      "https://twitter.com/paulhafalla"
+    ],
+    "ugc": [
+      "https://brid-gy.appspot.com/like/twitter/Bradamante/1031361437732691968/1268161",
+      "https://twitter.com/TheMikeJang",
+      "http://jaredleonmorgan.net/",
+      "http://uk.linkedin.com/in/mattgourd",
+      "https://twitter.com/paulhafalla"
+    ],
+    "generator": [
+      "http://wordpress.org/"
+    ]
+  },
+  "rel-urls": {
+    "http://microformats.org/profile/specs": {
+      "rels": [
+        "profile"
+      ]
+    },
+    "http://microformats.org/profile/hatom": {
+      "rels": [
+        "profile"
+      ]
+    },
+    "http://www.yourmom.io/xmlrpc.php": {
+      "rels": [
+        "pingback"
+      ]
+    },
+    "http://s.w.org/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
+    "http://www.yourmom.io/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "On docs, learning to code, and life » Feed",
+      "type": "application/rss+xml"
+    },
+    "http://www.yourmom.io/comments/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "On docs, learning to code, and life » Comments Feed",
+      "type": "application/rss+xml"
+    },
+    "http://www.yourmom.io/wp-includes/css/dist/block-library/style.min.css?ver=6.0.2": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://www.yourmom.io/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://www.yourmom.io/wp-content/plugins/indieweb-post-kinds/css/kind.min.css?ver=3.5.12": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://www.yourmom.io/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://www.yourmom.io/wp-content/themes/sempress/style.css?ver=6.0.2": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://www.yourmom.io/wp-content/plugins/syndication-links/css/syn.min.css?ver=4.3.12": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://www.yourmom.io/wp-json/": {
+      "rels": [
+        "https://api.w.org/"
+      ]
+    },
+    "http://www.yourmom.io/xmlrpc.php?rsd": {
+      "rels": [
+        "EditURI"
+      ],
+      "title": "RSD",
+      "type": "application/rsd+xml"
+    },
+    "http://www.yourmom.io/wp-includes/wlwmanifest.xml": {
+      "rels": [
+        "wlwmanifest"
+      ],
+      "type": "application/wlwmanifest+xml"
+    },
+    "http://www.yourmom.io/wp-json/indieauth/1.0/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "http://www.yourmom.io/wp-json/indieauth/1.0/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://github.com/bradamant3": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://twitter.com/bradamante": {
+      "rels": [
+        "me"
+      ]
+    },
+    "http://www.yourmom.io/wp-json/micropub/1.0/media": {
+      "rels": [
+        "micropub_media"
+      ]
+    },
+    "http://www.yourmom.io/wp-json/micropub/1.0/endpoint": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "http://www.yourmom.io/": {
+      "rels": [
+        "home"
+      ],
+      "title": "On docs, learning to code, and life",
+      "text": "On docs, learning to code, and life"
+    },
+    "http://www.yourmom.io/page/2/": {
+      "rels": [
+        "prev"
+      ],
+      "text": "← Older posts"
+    },
+    "http://www.yourmom.io/2016/06/sme_rant/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to Technical writers and “Subject-Matter Experts”",
+      "text": "Technical writers and “Subject-Matter Experts”"
+    },
+    "http://www.yourmom.io/author/jrondeau/": {
+      "rels": [
+        "author"
+      ],
+      "title": "View all posts by Bradamante",
+      "text": "Bradamante"
+    },
+    "http://www.yourmom.io/category/uncategorized/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Uncategorized"
+    },
+    "http://www.yourmom.io/2016/06/dc_letter_pulse/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to For DC residents: you can still speak out to Congress",
+      "text": "For DC residents: you can still speak out to Congress"
+    },
+    "http://www.yourmom.io/2016/05/162/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to I’m going to IndieWebCamp 2016",
+      "text": "I’m going to IndieWebCamp 2016"
+    },
+    "http://www.yourmom.io/2016/05/apis_new_writers/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to So you want to learn about API documentation",
+      "text": "So you want to learn about API documentation"
+    },
+    "http://www.yourmom.io/category/apis/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "APIs"
+    },
+    "http://www.yourmom.io/2015/08/we-are-all-technical/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to We are all technical",
+      "text": "We are all technical"
+    },
+    "https://t.co/SE7rur9sCv": {
+      "rels": [
+        "nofollow"
+      ],
+      "title": "https://youtu.be/QZxcg1NiN2A",
+      "text": "youtu.be/QZxcg1NiN2A"
+    },
+    "http://www.yourmom.io/category/doc-rants/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Doc rants"
+    },
+    "http://www.yourmom.io/2015/07/lowering-the-bar-leading-technical-communication/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to Lowering the bar | Leading Technical Communication",
+      "text": "Lowering the bar | Leading Technical Communication"
+    },
+    "http://www.yourmom.io/category/misc/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Miscellaneous"
+    },
+    "http://www.yourmom.io/2015/07/indiewebifying1/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to IndieWebifying I",
+      "text": "IndieWebifying I"
+    },
+    "http://www.yourmom.io/2015/07/posting-to-my-website-lets-see-who-can-reply-to-this-by-the-end-of-tomorrow-indiewebcamp-aaron-parecki/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to Posting to my website! Let’s see who can reply to this by the end of tomorrow! #indiewebcamp – Aaron Parecki",
+      "text": "Posting to my website! Let’s see who can reply to this by the end of tomorrow! #indiewebcamp – Aaron Parecki"
+    },
+    "http://www.yourmom.io/category/indieweb-tests/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "IndieWeb Tests"
+    },
+    "http://www.yourmom.io/2015/06/fetishizing-docs/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to Fetishizing documentation",
+      "text": "Fetishizing documentation"
+    },
+    "http://www.yourmom.io/2015/05/a-minor-swagger-rant/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to A (minor) Swagger rant",
+      "text": "A (minor) Swagger rant"
+    },
+    "https://www.linkedin.com/in/jenniferrondeau": {
+      "rels": [
+        "me"
+      ],
+      "text": "LinkedIn"
+    },
+    "https://brid-gy.appspot.com/like/twitter/Bradamante/1031361437732691968/1268161": {
+      "rels": [
+        "external",
+        "nofollow",
+        "ugc"
+      ],
+      "text": "Daniel D. Beck"
+    },
+    "https://twitter.com/TheMikeJang": {
+      "rels": [
+        "external",
+        "nofollow",
+        "ugc"
+      ],
+      "text": "Mike Jang"
+    },
+    "http://jaredleonmorgan.net/": {
+      "rels": [
+        "external",
+        "nofollow",
+        "ugc"
+      ],
+      "text": "Jared Morgan"
+    },
+    "http://uk.linkedin.com/in/mattgourd": {
+      "rels": [
+        "external",
+        "nofollow",
+        "ugc"
+      ],
+      "text": "Matt Gourd"
+    },
+    "https://twitter.com/paulhafalla": {
+      "rels": [
+        "external",
+        "nofollow",
+        "ugc"
+      ],
+      "text": "Paul Hafalla"
+    },
+    "http://wordpress.org/": {
+      "rels": [
+        "generator"
+      ],
+      "text": "WordPress"
+    }
+  }
+}

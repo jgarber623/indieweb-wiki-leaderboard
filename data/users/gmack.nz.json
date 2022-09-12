@@ -1,0 +1,70 @@
+{
+  "items": [],
+  "rels": {
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "stylesheet": [
+      "https://gmack.nz/assets/styles/index.css"
+    ],
+    "icon": [
+      "https://gmack.nz/assets/images/favicon.ico"
+    ],
+    "me": [
+      "http://gmack.nz/index",
+      "https://github.com/grantmacken",
+      "https://twitter.com/grantmacken",
+      "mailto:grantmacken@gmail.com"
+    ]
+  },
+  "rel-urls": {
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://gmack.nz/assets/styles/index.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://gmack.nz/assets/images/favicon.ico": {
+      "rels": [
+        "icon"
+      ]
+    },
+    "http://gmack.nz/index": {
+      "rels": [
+        "me"
+      ],
+      "text": "gmack.nz"
+    },
+    "https://github.com/grantmacken": {
+      "rels": [
+        "me"
+      ],
+      "text": " @grantmacken"
+    },
+    "https://twitter.com/grantmacken": {
+      "rels": [
+        "me"
+      ],
+      "text": " @grantmacken"
+    },
+    "mailto:grantmacken@gmail.com": {
+      "rels": [
+        "me"
+      ],
+      "text": "grantmacken@gmail.com"
+    }
+  }
+}

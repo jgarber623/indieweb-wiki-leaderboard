@@ -1,0 +1,289 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-feed"
+      ],
+      "properties": {},
+      "children": [
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<p>\nWhile uploading the picture of the bread I noticed that somewhere in the upload process the page would just turn blank and the upload would fail without any error message. </p>\n<p>\nWhen I checked the server process in <code class=\"inline\">journalctl</code>, I realized that the elixir process gets killed because it’s exhausting the memory of my (admittedly undersized) VPS. Since I do some processing (mostly dithering and resizing) of all uploaded images, it takes up to 400MB at one point. </p>\n<p>\nSometimes that’s less than is available so the <code class=\"inline\">OOM Killer</code> (badass name) steps in and kills the process.</p>",
+                "value": "While uploading the picture of the bread I noticed that somewhere in the upload process the page would just turn blank and the upload would fail without any error message. \n\nWhen I checked the server process in journalctl, I realized that the elixir process gets killed because it’s exhausting the memory of my (admittedly undersized) VPS. Since I do some processing (mostly dithering and resizing) of all uploaded images, it takes up to 400MB at one point. \n\nSometimes that’s less than is available so the OOM Killer (badass name) steps in and kills the process."
+              }
+            ],
+            "uid": [
+              "https://inhji.de/notes/1662411546"
+            ],
+            "url": [
+              "https://inhji.de/notes/1662411546"
+            ],
+            "published": [
+              "2022-09-05T21:03:37"
+            ],
+            "category": [
+              "{Microblog}",
+              "[Devops]",
+              "[Elixir]"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<p>\nToday I baked my second loaf of bread. I did it once with my mother a while ago.</p>\n\n    <span class=\"more\">» More</span>",
+                "value": "Today I baked my second loaf of bread. I did it once with my mother a while ago.\n\n    » More"
+              }
+            ],
+            "uid": [
+              "https://inhji.de/notes/1662409628"
+            ],
+            "url": [
+              "https://inhji.de/notes/1662409628"
+            ],
+            "published": [
+              "2022-09-05T20:52:55"
+            ],
+            "category": [
+              "{Microblog}",
+              "[Bread]",
+              "[Baking]",
+              "[Health]"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<p>\nThere is a very annoying issue in the Bitwarden Extension for Firefox where characters get lost while performing a search. Seems like somebody from the developers was able to reproduce the issue and proposed a workaround:</p>\n<blockquote>\n  <p>\nTL;DR If you’re on the “Current Tab” view, and attempt to perform a search, especially in a large vault, you can run into this issue.  </p>\n  <p>\nThe current workaround is to ensure that you are on the “My Vault” view when performing a search, as I have not been able to reproduce this issue when starting from there. That’s not ideal, but hopefully this helps until a fix can be made.  </p>\n</blockquote>",
+                "value": "There is a very annoying issue in the Bitwarden Extension for Firefox where characters get lost while performing a search. Seems like somebody from the developers was able to reproduce the issue and proposed a workaround:\n\n  \nTL;DR If you’re on the “Current Tab” view, and attempt to perform a search, especially in a large vault, you can run into this issue.  \n  \nThe current workaround is to ensure that you are on the “My Vault” view when performing a search, as I have not been able to reproduce this issue when starting from there. That’s not ideal, but hopefully this helps until a fix can be made."
+              }
+            ],
+            "uid": [
+              "https://inhji.de/notes/1662381962"
+            ],
+            "url": [
+              "https://inhji.de/notes/1662381962"
+            ],
+            "published": [
+              "2022-09-05T12:46:02"
+            ],
+            "category": [
+              "{Microblog}",
+              "[Bitwarden]",
+              "[Bug]"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<p>\nYesterday I updated the kernel of my Reform to 5.19-reform2 and something broke. I could not start the machine anymore, the screen would just say:</p>\n<pre><code>Waking up LPC... 0%\r\nNo response from LPC\r</code></pre>\n<p>\nand then go blank. When I got home, I booted off of the sdcard with the rescue image (which is just a normal reform-system-v3 image) and used the following commands to overwrite the borked kernel with a slightly older, working one:</p>\n<pre><code>reform-flash-rescue\r\n# answer \"y\" twice\r\nreform-boot-config --emmc nvme\r</code></pre>\n<p>\nI got the command from <a href=\"https://community.mnt.re/t/trouble-booting-from-emmc/915/4\">https://community.mnt.re/t/trouble-booting-from-emmc/915/4</a>, where it is used to setup and NVME and the internal EMMC storage.</p>\n<p>\nApart from that, I also found this issue that improves the Reform Operator Handbook with documentation about this and other commands: </p>\n<p>\n<a href=\"https://source.mnt.re/reform/reform-handbook/-/issues/2\">https://source.mnt.re/reform/reform-handbook/-/issues/2</a></p>",
+                "value": "Yesterday I updated the kernel of my Reform to 5.19-reform2 and something broke. I could not start the machine anymore, the screen would just say:\nWaking up LPC... 0%\r\nNo response from LPC\r\n\nand then go blank. When I got home, I booted off of the sdcard with the rescue image (which is just a normal reform-system-v3 image) and used the following commands to overwrite the borked kernel with a slightly older, working one:\nreform-flash-rescue\r\n# answer \"y\" twice\r\nreform-boot-config --emmc nvme\r\n\nI got the command from https://community.mnt.re/t/trouble-booting-from-emmc/915/4, where it is used to setup and NVME and the internal EMMC storage.\n\nApart from that, I also found this issue that improves the Reform Operator Handbook with documentation about this and other commands: \n\nhttps://source.mnt.re/reform/reform-handbook/-/issues/2"
+              }
+            ],
+            "uid": [
+              "https://inhji.de/notes/1662320263"
+            ],
+            "url": [
+              "https://inhji.de/notes/1662320263"
+            ],
+            "published": [
+              "2022-09-04T19:43:11"
+            ],
+            "category": [
+              "{Microblog}",
+              "[Kernel]",
+              "[MNTReform]"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<p>\nUpdated my VPS to Ubuntu 22.04 LTS today. The process went very smooth, so I also <a href=\"https://inhji.de/notes/how-to-upgrade-postgresql-from-13-to-14\">updated</a> the postgres database from 12 to 14.</p>\n<p>\nI also added zstd/gzip compression for Mirage / Caddy which was super simple (just added <code class=\"inline\">encode zstd gzip</code> to the server block) and compressed my 90kb of live_view js down to 30kb! \\o/</p>",
+                "value": "Updated my VPS to Ubuntu 22.04 LTS today. The process went very smooth, so I also updated the postgres database from 12 to 14.\n\nI also added zstd/gzip compression for Mirage / Caddy which was super simple (just added encode zstd gzip to the server block) and compressed my 90kb of live_view js down to 30kb! \\o/"
+              }
+            ],
+            "uid": [
+              "https://inhji.de/notes/1661853214"
+            ],
+            "url": [
+              "https://inhji.de/notes/1661853214"
+            ],
+            "published": [
+              "2022-08-30T11:05:08"
+            ],
+            "category": [
+              "{Microblog}",
+              "[Server]",
+              "[Ubuntu]",
+              "[Webdev]"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "rels": {
+    "manifest": [
+      "https://inhji.de/manifest-8468cb17377a20befa301f40f45e6a23.json?vsn=d"
+    ],
+    "icon": [
+      "https://inhji.de/favicon-1c680b9403485efa5efdafed11d12a47.ico?vsn=d",
+      "https://inhji.de/images/favicon-16x16-ca34ca4a3307710797195172f7f1fab5.png?vsn=d",
+      "https://inhji.de/images/favicon-32x32-b816dd544369731af56b6cb4dd526d66.png?vsn=d"
+    ],
+    "apple-touch-icon": [
+      "https://inhji.de/images/apple-touch-icon-33e690939d43c3daa4d18e03d5139b32.png?vsn=d"
+    ],
+    "microsub": [
+      "https://aperture.p3k.io/microsub/171"
+    ],
+    "webmention": [
+      "https://webmention.io/inhji.de/webmention"
+    ],
+    "pingback": [
+      "https://webmention.io/inhji.de/xmlrpc"
+    ],
+    "me": [
+      "https://github.com/inhji",
+      "https://listenbrainz.org/user/inhji/",
+      "https://bandcamp.com/inhji",
+      "https://inhji.itch.io/",
+      "https://chaos.social/@inhji"
+    ],
+    "micropub": [
+      "https://inhji.de/indie/micropub"
+    ],
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "alternate": [
+      "https://inhji.de/follow/home"
+    ],
+    "stylesheet": [
+      "https://inhji.de/assets/app-a84b3acc81504dc844de7e494fd57d09.css?vsn=d"
+    ]
+  },
+  "rel-urls": {
+    "https://inhji.de/manifest-8468cb17377a20befa301f40f45e6a23.json?vsn=d": {
+      "rels": [
+        "manifest"
+      ]
+    },
+    "https://inhji.de/favicon-1c680b9403485efa5efdafed11d12a47.ico?vsn=d": {
+      "rels": [
+        "icon"
+      ]
+    },
+    "https://inhji.de/images/favicon-16x16-ca34ca4a3307710797195172f7f1fab5.png?vsn=d": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/png"
+    },
+    "https://inhji.de/images/favicon-32x32-b816dd544369731af56b6cb4dd526d66.png?vsn=d": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/png"
+    },
+    "https://inhji.de/images/apple-touch-icon-33e690939d43c3daa4d18e03d5139b32.png?vsn=d": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://aperture.p3k.io/microsub/171": {
+      "rels": [
+        "microsub"
+      ]
+    },
+    "https://webmention.io/inhji.de/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://webmention.io/inhji.de/xmlrpc": {
+      "rels": [
+        "pingback"
+      ]
+    },
+    "https://github.com/inhji": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://listenbrainz.org/user/inhji/": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://bandcamp.com/inhji": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://inhji.itch.io/": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://chaos.social/@inhji": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://inhji.de/indie/micropub": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://inhji.de/follow/home": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Blog Feed for Mirage",
+      "type": "application/atom+xml"
+    },
+    "https://inhji.de/assets/app-a84b3acc81504dc844de7e494fd57d09.css?vsn=d": {
+      "rels": [
+        "stylesheet"
+      ]
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "items": [],
+  "rels": {
+    "meta": [
+      "https://matej.ceplovi.cz/matej/foaf.rdf"
+    ],
+    "openid.server": [
+      "https://openid.indieauth.com/openid"
+    ],
+    "openid.delegate": [
+      "https://matej.ceplovi.cz/"
+    ],
+    "stylesheet": [
+      "https://matej.ceplovi.cz/images/homepage.css"
+    ],
+    "me": [
+      "mailto:matej@ceplovi.cz",
+      "sms:+420604893825",
+      "https://github.com/mcepl",
+      "xmpp:matej@ceplovi.cz",
+      "https://matej.ceplovi.cz/key.asc"
+    ],
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "alternate": [
+      "https://matej.ceplovi.cz/matej/blog/index.xml"
+    ],
+    "pgpkey": [
+      "https://matej.ceplovi.cz/mcepl-gpg.asc"
+    ],
+    "license": [
+      "http://creativecommons.org/licenses/by-sa/2.5/"
+    ]
+  },
+  "rel-urls": {
+    "https://matej.ceplovi.cz/matej/foaf.rdf": {
+      "rels": [
+        "meta"
+      ],
+      "title": "FOAF",
+      "type": "application/rdf+xml"
+    },
+    "https://openid.indieauth.com/openid": {
+      "rels": [
+        "openid.server"
+      ]
+    },
+    "https://matej.ceplovi.cz/": {
+      "rels": [
+        "openid.delegate"
+      ]
+    },
+    "https://matej.ceplovi.cz/images/homepage.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "mailto:matej@ceplovi.cz": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://matej.ceplovi.cz/matej/blog/index.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Feed",
+      "type": "application/xml"
+    },
+    "https://matej.ceplovi.cz/mcepl-gpg.asc": {
+      "rels": [
+        "pgpkey"
+      ]
+    },
+    "sms:+420604893825": {
+      "rels": [
+        "me"
+      ],
+      "text": "+420 604\n        893 825"
+    },
+    "https://github.com/mcepl": {
+      "rels": [
+        "me"
+      ],
+      "text": "Github"
+    },
+    "xmpp:matej@ceplovi.cz": {
+      "rels": [
+        "me"
+      ],
+      "text": "Jabber"
+    },
+    "https://matej.ceplovi.cz/key.asc": {
+      "rels": [
+        "me"
+      ],
+      "text": "89EF\n      4BC6 288A BF43 1BAB 25C3 E09F EF25 D964 84AC"
+    },
+    "http://creativecommons.org/licenses/by-sa/2.5/": {
+      "rels": [
+        "license"
+      ]
+    }
+  }
+}

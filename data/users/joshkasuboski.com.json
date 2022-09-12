@@ -1,0 +1,86 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "photo": [
+          {
+            "value": "https://www.joshkasuboski.com/img/josh-scotland.jpg",
+            "alt": "profile photo"
+          }
+        ],
+        "url": [
+          "https://www.joshkasuboski.com/",
+          "https://github.com/kasuboski"
+        ],
+        "name": [
+          "Josh Kasuboski"
+        ],
+        "email": [
+          "mailto:josh.kasuboski@gmail.com"
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "me": [
+      "mailto:josh.kasuboski@gmail.com",
+      "https://github.com/kasuboski"
+    ],
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "microsub": [
+      "https://microsub.joshcorp.co/microsub"
+    ],
+    "alternate": [
+      "https://www.joshkasuboski.com/index.xml"
+    ],
+    "stylesheet": [
+      "https://unpkg.com/turretcss/dist/turretcss.min.css"
+    ]
+  },
+  "rel-urls": {
+    "mailto:josh.kasuboski@gmail.com": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://github.com/kasuboski": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://microsub.joshcorp.co/microsub": {
+      "rels": [
+        "microsub"
+      ]
+    },
+    "https://www.joshkasuboski.com/index.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/rss+xml"
+    },
+    "https://unpkg.com/turretcss/dist/turretcss.min.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    }
+  }
+}

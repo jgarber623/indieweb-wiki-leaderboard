@@ -1,0 +1,239 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "nickname": [
+          "deltawhy.me"
+        ],
+        "photo": [
+          "https://deltawhy.me/images/logo.png"
+        ],
+        "url": [
+          "https://deltawhy.me/"
+        ],
+        "uid": [
+          "https://deltawhy.me/"
+        ],
+        "name": [
+          "Michael Limiero"
+        ],
+        "note": [
+          "I do computer stuff. Sometimes other stuff too."
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-feed"
+      ],
+      "properties": {
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "url": [
+                "https://deltawhy.me/"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "content": [
+          {
+            "html": "",
+            "value": ""
+          }
+        ]
+      },
+      "children": [
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "url": [
+              "https://deltawhy.me/micro/1581191050/"
+            ],
+            "name": [
+              "Test post please ignore"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "url": [
+              "https://deltawhy.me/micro/1581191002/"
+            ],
+            "name": [
+              "Test post please ignore"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "url": [
+              "https://deltawhy.me/micro/test-post-please-ignore/"
+            ],
+            "name": [
+              "Test post please ignore"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "url": [
+              "https://deltawhy.me/micro/1581190574/"
+            ],
+            "name": [
+              "Micropub test of creating an h-entry with categories. This post should have two categories, test1 and test2"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "url": [
+              "https://deltawhy.me/micro/1581190548/"
+            ],
+            "name": [
+              "Micropub test of creating a basic h-entry"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "url": [
+              "https://deltawhy.me/notes/test/"
+            ],
+            "name": [
+              "0001-01-01 00:00:00 +0000 UTC"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Test"
+            ],
+            "url": [
+              "https://deltawhy.me/test/"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "rels": {
+    "stylesheet": [
+      "https://deltawhy.me/css/normalize.css"
+    ],
+    "webmention": [
+      "https://webmention.io/deltawhy.me/webmention"
+    ],
+    "pingback": [
+      "https://webmention.io/deltawhy.me/xmlrpc"
+    ],
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "micropub": [
+      "https://stark-forest-31183.herokuapp.com/"
+    ],
+    "me": [
+      "https://twitter.com/michaellimiero",
+      "https://github.com/DeltaWhy",
+      "https://gitlab.com/DeltaWhy",
+      "https://keybase.io/deltawhy",
+      "https://deltawhy.me/"
+    ],
+    "author": [
+      "https://deltawhy.me/"
+    ]
+  },
+  "rel-urls": {
+    "https://deltawhy.me/css/normalize.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://webmention.io/deltawhy.me/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://webmention.io/deltawhy.me/xmlrpc": {
+      "rels": [
+        "pingback"
+      ]
+    },
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://stark-forest-31183.herokuapp.com/": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://twitter.com/michaellimiero": {
+      "rels": [
+        "me"
+      ],
+      "text": "Twitter"
+    },
+    "https://github.com/DeltaWhy": {
+      "rels": [
+        "me"
+      ],
+      "text": "GitHub"
+    },
+    "https://gitlab.com/DeltaWhy": {
+      "rels": [
+        "me"
+      ],
+      "text": "GitLab"
+    },
+    "https://keybase.io/deltawhy": {
+      "rels": [
+        "me"
+      ],
+      "text": "Keybase"
+    },
+    "https://deltawhy.me/": {
+      "rels": [
+        "me"
+      ]
+    }
+  }
+}

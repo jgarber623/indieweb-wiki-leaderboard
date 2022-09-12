@@ -1,0 +1,353 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "photo": [
+          {
+            "value": "https://jeena.net/avatar_home.jpg",
+            "alt": "Photo of me"
+          }
+        ],
+        "name": [
+          "Jeena"
+        ],
+        "email": [
+          "mailto:hello@jeena.net"
+        ]
+      },
+      "id": "about"
+    },
+    {
+      "type": [
+        "h-as-photo"
+      ],
+      "properties": {
+        "name": [
+          "20220827 130757\n\t\t\tTwo years ago I became a Swedish citizen, so today I finally was allowed to vote for the Riksdag (like parlament in Sweden) for the first time!\r\n\r\nBut life is funny, so in between I moved to Korea and I had to vote at the ambassy in Seoul today."
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-as-note",
+        "h-entry"
+      ],
+      "properties": {
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "photo": [
+                {
+                  "value": "https://jeena.net/avatar.jpg",
+                  "alt": ""
+                }
+              ],
+              "name": [
+                "Jeena"
+              ],
+              "url": [
+                "https://jeena.net/"
+              ]
+            },
+            "value": "Jeena"
+          }
+        ],
+        "url": [
+          "https://jeena.net/notes/1297"
+        ],
+        "published": [
+          "2022-09-08T13:34:26Z"
+        ],
+        "updated": [
+          "2022-09-08T13:34:26Z"
+        ],
+        "content": [
+          {
+            "html": "<p></p>\n<p>Today something weird happened with my computer. First it hang and I couldn't move the mouse anymore, then I hard rebooted it and it couldn't find my root partition anymore. I thought the SSD broke so I switched it to a different computer and it works fine there. I put in a new SSD and the new one has the same problem.</p>\n\n<p>Then the bios tells me that the date is not set, while setting the date I see that the SATA setting is set to Raid, while I remember that I set it to AHCI when I installed my OS for the first time.</p>\n\n<p>Setting it back to AHCI resolved the issue and I can boot again. It seems somehow the bios settings reset them selves to default or something.</p>",
+            "value": "Today something weird happened with my computer. First it hang and I couldn't move the mouse anymore, then I hard rebooted it and it couldn't find my root partition anymore. I thought the SSD broke so I switched it to a different computer and it works fine there. I put in a new SSD and the new one has the same problem.\n\nThen the bios tells me that the date is not set, while setting the date I see that the SATA setting is set to Raid, while I remember that I set it to AHCI when I installed my OS for the first time.\n\nSetting it back to AHCI resolved the issue and I can boot again. It seems somehow the bios settings reset them selves to default or something."
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-as-podcast",
+        "h-entry"
+      ],
+      "properties": {
+        "url": [
+          "https://jeena.net/pods/24"
+        ],
+        "published": [
+          "2020-05-25T06:00:00Z"
+        ],
+        "updated": [
+          "2020-05-15T17:24:34Z"
+        ],
+        "audio": [
+          "https://jeena.net/system/pods/files/000/000/024/original/JEE024-In-Japan.mp3?1589563473"
+        ],
+        "name": [
+          "In japan\n          In Japan\n          \n            \n\t\t      over 2 years ago\n\t\t      2020-05-15 17:24:34\n\t      \n                \n          My vacation in Japan with Luna."
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-as-article",
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Photo backup solution\n\t\t\t\t\n\t\t\t\t\tself hosted"
+        ],
+        "url": [
+          "https://jeena.net/photo-backup"
+        ],
+        "published": [
+          "2022-06-09T23:34:24Z"
+        ],
+        "updated": [
+          "2022-06-09T23:53:40Z"
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "name": [
+                "Jeena"
+              ],
+              "url": [
+                "https://jeena.net/"
+              ],
+              "photo": [
+                {
+                  "value": "https://jeena.net/avatar.jpg",
+                  "alt": "Jeena"
+                }
+              ]
+            },
+            "value": "Jeena"
+          }
+        ],
+        "summary": [
+          "Can't find one which fitts me"
+        ],
+        "content": [
+          {
+            "html": "I'm using Synology DiskStation DS220+ as my backup solution which I host at my parents house and it is cool and works well. I use open source tools for backing up things via ssh to it so that I theoretically could take the hard drive connect it to a computer and get all my files back, even if the...\n\t\t\t\t<p> <a href=\"https://jeena.net/photo-backup\">read more</a> …</p>",
+            "value": "I'm using Synology DiskStation DS220+ as my backup solution which I host at my parents house and it is cool and works well. I use open source tools for backing up things via ssh to it so that I theoretically could take the hard drive connect it to a computer and get all my files back, even if the...\n\t\t\t\t read more …"
+          }
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "alternate": [
+      "https://jeena.net/posts.atom",
+      "https://jeena.net/notes.atom",
+      "https://jeena.net/photos.atom",
+      "https://jeena.net/pods.rss",
+      "https://jeena.net/all.atom"
+    ],
+    "apple-touch-icon": [
+      "https://jeena.net/avatar.jpg"
+    ],
+    "openid.server": [
+      "http://www.clavid.com/provider/openid"
+    ],
+    "openid2.provider": [
+      "http://www.clavid.com/provider/openid"
+    ],
+    "openid.delegate": [
+      "http://jeena.clavid.com/"
+    ],
+    "openid2.local_id": [
+      "http://jeena.clavid.com/"
+    ],
+    "pingback": [
+      "http://webmention.io/webmention?forward=https://jeena.net/webmentions"
+    ],
+    "authorization_endpoint": [
+      "https://jeena.net/indieauth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "micropub": [
+      "https://jeena.net/pub"
+    ],
+    "author": [
+      "https://jeena.net/humans.txt",
+      "https://jeena.net/"
+    ],
+    "stylesheet": [
+      "https://jeena.net/assets/application-7e94136398987f1ed24b6e2e9cb56b0779374ab4c36d736687ef8fca697e7835.css"
+    ],
+    "feed": [
+      "https://jeena.net/posts",
+      "https://jeena.net/pods",
+      "https://jeena.net/notes",
+      "https://jeena.net/photos"
+    ],
+    "me": [
+      "https://jeena.net/about",
+      "mailto:hello@jeena.net",
+      "https://github.com/jeena",
+      "https://www.instagram.com/jeenap/",
+      "https://toot.jeena.net/@jeena"
+    ]
+  },
+  "rel-urls": {
+    "https://jeena.net/posts.atom": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Blog",
+      "type": "application/atom+xml"
+    },
+    "https://jeena.net/notes.atom": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Notes",
+      "type": "application/atom+xml"
+    },
+    "https://jeena.net/photos.atom": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Photos",
+      "type": "application/atom+xml"
+    },
+    "https://jeena.net/pods.rss": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Podcast",
+      "type": "application/rss+xml"
+    },
+    "https://jeena.net/all.atom": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Combined",
+      "type": "application/atom+xml"
+    },
+    "https://jeena.net/avatar.jpg": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "http://www.clavid.com/provider/openid": {
+      "rels": [
+        "openid.server"
+      ]
+    },
+    "http://jeena.clavid.com/": {
+      "rels": [
+        "openid.delegate"
+      ]
+    },
+    "http://webmention.io/webmention?forward=https://jeena.net/webmentions": {
+      "rels": [
+        "pingback"
+      ]
+    },
+    "https://jeena.net/indieauth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://jeena.net/pub": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://jeena.net/humans.txt": {
+      "rels": [
+        "author"
+      ],
+      "type": "text/plain"
+    },
+    "https://jeena.net/assets/application-7e94136398987f1ed24b6e2e9cb56b0779374ab4c36d736687ef8fca697e7835.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://jeena.net/posts": {
+      "rels": [
+        "feed"
+      ],
+      "text": "blog"
+    },
+    "https://jeena.net/pods": {
+      "rels": [
+        "feed"
+      ],
+      "text": "podcasts"
+    },
+    "https://jeena.net/notes": {
+      "rels": [
+        "feed"
+      ],
+      "text": "notes"
+    },
+    "https://jeena.net/photos": {
+      "rels": [
+        "feed"
+      ],
+      "text": "photos"
+    },
+    "https://jeena.net/about": {
+      "rels": [
+        "me"
+      ],
+      "text": "about"
+    },
+    "mailto:hello@jeena.net": {
+      "rels": [
+        "me"
+      ],
+      "text": "hello@jeena.net"
+    },
+    "https://github.com/jeena": {
+      "rels": [
+        "me"
+      ],
+      "text": "software"
+    },
+    "https://www.instagram.com/jeenap/": {
+      "rels": [
+        "me"
+      ],
+      "text": "photographer"
+    },
+    "https://toot.jeena.net/@jeena": {
+      "rels": [
+        "me"
+      ],
+      "text": "Mastodon"
+    },
+    "https://jeena.net/": {
+      "rels": [
+        "author"
+      ],
+      "text": "Jeena"
+    }
+  }
+}

@@ -1,0 +1,321 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Micropub"
+        ],
+        "url": [
+          "http://davemenninger.com/#micropub"
+        ],
+        "published": [
+          "2015-04-10"
+        ],
+        "content": [
+          {
+            "html": "<p>I've been reading up on <a href=\"https://indiewebcamp.com/\">IndieWeb</a> ideas and trying to implement them on my own site.  One idea in particular was interesting enough to me to make me break my 'no scripting' rule.  <a href=\"https://indiewebcamp.com/Micropub\">Micropub</a> is a standard for creating posts on your own site, using third-party clients.  The idea is that you use IndieAuth to authenticate to your own domain, then your site accepts a POST with form-encoded values and creats a note, article, or whatever, in whatever format you want.  Separating the client implementation from the server implementation has some advantages.</p>\n\t\t\t\t<p>I'm attempting to use it in a particular way on my site, which means I need to write some code.  I've always wanted to create a linkblog like Andy Baio's at <a href=\"http://waxy.org/links/\">Waxy.org</a>.  I currently use <a href=\"https://buffer.com/\">Buffer</a> to post links and they get posted to Twitter and then to Facebook.  Buffer is really nice, but the big downside is that I don't have a nice archive on my own site of what I've posted.  So I'd like to use Micropub to post links to my own site and then <a href=\"https://indiewebcamp.com/POSSE\">POSSE</a> them elsewhere.</p>\n\t\t\t\t<p>The steps to accomplish this are several.  First, I need a micropub endpoint here so I can post here from other clients.  That's what I have now.  I've used Jeremy Keith's <a href=\"https://gist.github.com/adactio/8168e6b78da7b16a4644\">PHP code</a> to accept micropub posts and store them to <a href=\"http://davemenninger.com/microposts.json\">a file</a> locally.  I am still figuring out whether storing the posts locally in JSON is the best option.  I thought it would be easier to render from JSON to HTML, but after reading <a href=\"http://www.kevinmarks.com/we-like-indieweb-software.html\">this</a>, I'm not sure.</p>\n\t\t\t\t<p>Once I have that figured out, I may attempt to write some micropub clients.  In order to abandon Buffer, I'll need a Chrome extension and a native Android app.  There are some things out there, but I have some ideas I want to add.</p>",
+            "value": "I've been reading up on IndieWeb ideas and trying to implement them on my own site.  One idea in particular was interesting enough to me to make me break my 'no scripting' rule.  Micropub is a standard for creating posts on your own site, using third-party clients.  The idea is that you use IndieAuth to authenticate to your own domain, then your site accepts a POST with form-encoded values and creats a note, article, or whatever, in whatever format you want.  Separating the client implementation from the server implementation has some advantages.\n\t\t\t\tI'm attempting to use it in a particular way on my site, which means I need to write some code.  I've always wanted to create a linkblog like Andy Baio's at Waxy.org.  I currently use Buffer to post links and they get posted to Twitter and then to Facebook.  Buffer is really nice, but the big downside is that I don't have a nice archive on my own site of what I've posted.  So I'd like to use Micropub to post links to my own site and then POSSE them elsewhere.\n\t\t\t\tThe steps to accomplish this are several.  First, I need a micropub endpoint here so I can post here from other clients.  That's what I have now.  I've used Jeremy Keith's PHP code to accept micropub posts and store them to a file locally.  I am still figuring out whether storing the posts locally in JSON is the best option.  I thought it would be easier to render from JSON to HTML, but after reading this, I'm not sure.\n\t\t\t\tOnce I have that figured out, I may attempt to write some micropub clients.  In order to abandon Buffer, I'll need a Chrome extension and a native Android app.  There are some things out there, but I have some ideas I want to add."
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "How I Get News"
+        ],
+        "url": [
+          "http://davemenninger.com/#how-i-get-news"
+        ],
+        "published": [
+          "2014-10-14"
+        ],
+        "content": [
+          {
+            "html": "<p>I shared <a href=\"https://medium.com/@thehandsomepig/why-i-stopped-reading-hearing-watching-the-news-2e1b62d75c7d\">this link</a> recently about quitting reading/hearing/watching the news and took a moment to think about to what extent I've personally done so.  I don't watch very much TV, especially not TV news.  I don't read the paper or magazines.  For years, I was a my-radio-never-leaves-NPR type of person, but I've recently switched to listening to podcasts and my music collection in the car.</p>\n\t\t\t\t<p>I'm online almost constantly so I get all my news that way now.  I don't visit \"news\" sites though.  I get almost everything that would be considered \"news\" from two main sources.  First, I subscribe to a lot of people on Twitter.  Again, I don't really follow traditional news outlets, but I follow a few journalists that I like as well as a horde of other people that I know will surface any stories that I'm likely to be interested in.  Because I follow so many people, there is no chance I'll be able to watch every tweet, so the way I use Twitter is two-fold.  First, I dip into the firehose whenever there is something interesting happening in real-time using Tweetdeck, lists, and hashtags.  An example would be the civil unrest in Ferguson or the Cincinnati City Council meetings where an important issue is being decided.  The second way I use Twitter is via an aggregator called <a href=\"http://news.me/\">news.me</a>.  News.me looks at all the links tweeted by everyone you follow and picks out the ones that have been tweeted by the most people, then it sends you a digest every day.  This is my morning paper, essentially.  I have tuned the people I follow in such a way that I know news.me will almost always have just the right stories that I want to read.  Yes it is a bit of an echo chamber, so I try to keep that in mind as I read.</p>\n\t\t\t\t<p>The second main way I get \"news\" is by subscribing to <a href=\"http://nextdraft.com/\">NextDraft</a>.  It's a daily email newsletter by Dave Pell.  The idea is that he sifts through each days news stories and viral content and picks out the best handful of articles on a given topic and a few miscellaneous links of interest.  I like his choices and it cuts way back on reading article after article on a given topic until you find the one that covers the topic well.  He links to current events as well as other quality longform writing and some fun stuff too.  I never read every article in the newsletter and sometimes I don't read any, but it gives me that feeling of being aware of what's going on in the news without being a slave to it.</p>\n\t\t\t\t<p>Apart from Twitter and NextDraft, I still consume a lot of blogs with <a href=\"http://theoldreader.com/\">theoldreader</a> and content on Medium and so forth, but most of that is not for \"news\" purposes.  I listen to a lot of podcasts, including MarketPlace which has a news bent, but I listen to them mostly for pleasure on an arbitrary schedule, not in a timely-manner.</p>\n\t\t\t\t<p>For me, this is all about being more intentional about the content I consume and the time I spend with my eyes pointed at a screen.  I tend to agree with the assessment that normal daily \"news\" consumption (TV in particular) is not as valuable as it's assumed to be.</p>",
+            "value": "I shared this link recently about quitting reading/hearing/watching the news and took a moment to think about to what extent I've personally done so.  I don't watch very much TV, especially not TV news.  I don't read the paper or magazines.  For years, I was a my-radio-never-leaves-NPR type of person, but I've recently switched to listening to podcasts and my music collection in the car.\n\t\t\t\tI'm online almost constantly so I get all my news that way now.  I don't visit \"news\" sites though.  I get almost everything that would be considered \"news\" from two main sources.  First, I subscribe to a lot of people on Twitter.  Again, I don't really follow traditional news outlets, but I follow a few journalists that I like as well as a horde of other people that I know will surface any stories that I'm likely to be interested in.  Because I follow so many people, there is no chance I'll be able to watch every tweet, so the way I use Twitter is two-fold.  First, I dip into the firehose whenever there is something interesting happening in real-time using Tweetdeck, lists, and hashtags.  An example would be the civil unrest in Ferguson or the Cincinnati City Council meetings where an important issue is being decided.  The second way I use Twitter is via an aggregator called news.me.  News.me looks at all the links tweeted by everyone you follow and picks out the ones that have been tweeted by the most people, then it sends you a digest every day.  This is my morning paper, essentially.  I have tuned the people I follow in such a way that I know news.me will almost always have just the right stories that I want to read.  Yes it is a bit of an echo chamber, so I try to keep that in mind as I read.\n\t\t\t\tThe second main way I get \"news\" is by subscribing to NextDraft.  It's a daily email newsletter by Dave Pell.  The idea is that he sifts through each days news stories and viral content and picks out the best handful of articles on a given topic and a few miscellaneous links of interest.  I like his choices and it cuts way back on reading article after article on a given topic until you find the one that covers the topic well.  He links to current events as well as other quality longform writing and some fun stuff too.  I never read every article in the newsletter and sometimes I don't read any, but it gives me that feeling of being aware of what's going on in the news without being a slave to it.\n\t\t\t\tApart from Twitter and NextDraft, I still consume a lot of blogs with theoldreader and content on Medium and so forth, but most of that is not for \"news\" purposes.  I listen to a lot of podcasts, including MarketPlace which has a news bent, but I listen to them mostly for pleasure on an arbitrary schedule, not in a timely-manner.\n\t\t\t\tFor me, this is all about being more intentional about the content I consume and the time I spend with my eyes pointed at a screen.  I tend to agree with the assessment that normal daily \"news\" consumption (TV in particular) is not as valuable as it's assumed to be."
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Restoring Old Content"
+        ],
+        "url": [
+          "http://davemenninger.com/#restoring-old-content"
+        ],
+        "published": [
+          "2014-06-17"
+        ],
+        "content": [
+          {
+            "html": "<p>My personal site used to run a lot of ugly, insecure PHP scripts and was thereby hacked a year or so ago.  That is one big reason I'm avoiding server-side code on this new site.  I don't want to devote energy to keeping scripts secure for something that should be extremely simple.</p>\n\t\t\t\t<p>My old personal site had a lot of miscellaneous content that I had created and I'm currently debating what to restore and what to leave out. A lot of things I used to keep here have been superceded by various online services.  I used to have my resume, but now I pretty much use LinkedIn for that.  I used to have a set of my feeds from various social sites, but now Facebook is pretty much the hub for that.  I used to have a good FOAF file, but About.me kind of does that now.  I also used to mess around with web programming but now I use my VPS or Heroku to host projects.  I used to have a haiku page, but I started a Tumblr for that.</p>\n\t\t\t\t<p>So now as part of my attitude toward re-decentralization, I'm going to try to bring some things back home instead of relying on these other sites.  I'm also looking forward to hosting oddball things like the collection of web comics I made one time, recipes I've worked on, and maybe even some new experiments.</p>",
+            "value": "My personal site used to run a lot of ugly, insecure PHP scripts and was thereby hacked a year or so ago.  That is one big reason I'm avoiding server-side code on this new site.  I don't want to devote energy to keeping scripts secure for something that should be extremely simple.\n\t\t\t\tMy old personal site had a lot of miscellaneous content that I had created and I'm currently debating what to restore and what to leave out. A lot of things I used to keep here have been superceded by various online services.  I used to have my resume, but now I pretty much use LinkedIn for that.  I used to have a set of my feeds from various social sites, but now Facebook is pretty much the hub for that.  I used to have a good FOAF file, but About.me kind of does that now.  I also used to mess around with web programming but now I use my VPS or Heroku to host projects.  I used to have a haiku page, but I started a Tumblr for that.\n\t\t\t\tSo now as part of my attitude toward re-decentralization, I'm going to try to bring some things back home instead of relying on these other sites.  I'm also looking forward to hosting oddball things like the collection of web comics I made one time, recipes I've worked on, and maybe even some new experiments."
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Inspirations"
+        ],
+        "url": [
+          "http://davemenninger.com/#inspirations"
+        ],
+        "published": [
+          "2014-06-10"
+        ],
+        "content": [
+          {
+            "html": "<p>I already mentioned <a href=\"http://ranprieur.com/\">Ran Prieur</a> as one inspriation for this new site.  I like his writing style, his general philosophy, and I am intrigued by the fact that he writes his site's HTML by hand with no blogging tool or static-site generator.  I like the idea of writing my HTML by hand for two reasons.</p>\n\t\t\t\t<p>One is that I don't want to introduce unnecessary dependencies in my process.  I looked at Octopress and Jekyll and decided I didn't want to have to maintain a \"build environment\" just to put some words on a page on the internet.  I also considered hosted options like Blogger and Tumblr, but part of this is about staying independent.  This way my content stays mine and I don't have to export or migrate it to have a re-usable copy of it.  I can just copy these files to any web host and they will work.</p>\n\t\t\t\t<p>The second reason I'm writing my own HTML by hand is that I'm hoping to make sure my web skills stay sharp.  I am learning new things all the time about what HTML5 can do.  I have a goal of only including something on this site if I know exactly how it works.  No copying and pasting snippets of HTML or CSS, no Bootstrap or jQuery.  I want to know that I understand and can control each part of what I'm creating.  I figure that way the end product will be truly personal.  This is a personal site.</p>\n\t\t\t\t<p>Another aspect of this site is that I want to get better at writing personal posts.  I've gotten into a bad habit of doing a lot of link re-posting with practically no commentary.  I really enjoy the writing of bloggers who write posts when they have something to say, and aren't trying to bait traffic or be super popular.  Short, personal posts with a point are a thousand times better than air-headed posts that just re-share the day's most viral story without adding anything.  A few of the many other sites and writers that I'm taking inspiration from these days are:</p>\n\t\t\t\t<ul>\n\t\t\t\t\t<li>\n<a href=\"https://www.miskatonic.org/\">Miskatonic University Press</a> by William Denton</li>\n\t\t\t\t\t<li>\n<a href=\"http://inkdroid.org/journal/\">inkdroid</a> by Ed Summers</li>\n\t\t\t\t\t<li>\n<a href=\"https://bibwild.wordpress.com/\">Bibliographic Wilderness</a> by Jonathan Rochkind</li>\n\t\t\t\t\t<li>\n<a href=\"http://scripting.com/\">Scripting News</a> by Dave Winer</li>\n\t\t\t\t\t<li><a href=\"http://www.somebits.com/weblog\">Nelson Minar's Weblog</a></li>\n\t\t\t\t\t<li>\n<a href=\"http://adactio.com/journal/\">Adactio</a> by Jeremy Keith</li>\n\t\t\t\t\t<li>\n<a href=\"http://ascii.textfiles.com/\">ASCII</a> by Jason Scott</li>\n\t\t\t\t\t<li>\n<a href=\"http://www.librarian.net/\">librarian.net</a> by Jessamyn West</li>\n\t\t\t\t\t<li>\n<a href=\"http://local-guru.net/blog/\">GuruBlog</a> by Nikolaus Gradwohl</li>\n\t\t\t\t\t<li><a href=\"http://chris.hive13.org/\">Chris @ Hive13</a></li>\n\t\t\t\t\t<li><a href=\"http://5chw4r7z.blogspot.com/\">5chw4r7z</a></li>\n\t\t\t\t\t<li>Warren Ellis' <a href=\"http://www.warrenellis.com/?p=15075\">Orbital Operations</a>\n</li>\n\t\t\t\t</ul>\n\t\t\t\t<p>I like each one for different reasons, but the general themes are minimalism, only including what is necessary, writing only when there's something to say rather than cranking out posts on an arbitrary schedule, and posting genuinely personal and original thoughts.  I may not cover all those right now, but that's the goal here.</p>",
+            "value": "I already mentioned Ran Prieur as one inspriation for this new site.  I like his writing style, his general philosophy, and I am intrigued by the fact that he writes his site's HTML by hand with no blogging tool or static-site generator.  I like the idea of writing my HTML by hand for two reasons.\n\t\t\t\tOne is that I don't want to introduce unnecessary dependencies in my process.  I looked at Octopress and Jekyll and decided I didn't want to have to maintain a \"build environment\" just to put some words on a page on the internet.  I also considered hosted options like Blogger and Tumblr, but part of this is about staying independent.  This way my content stays mine and I don't have to export or migrate it to have a re-usable copy of it.  I can just copy these files to any web host and they will work.\n\t\t\t\tThe second reason I'm writing my own HTML by hand is that I'm hoping to make sure my web skills stay sharp.  I am learning new things all the time about what HTML5 can do.  I have a goal of only including something on this site if I know exactly how it works.  No copying and pasting snippets of HTML or CSS, no Bootstrap or jQuery.  I want to know that I understand and can control each part of what I'm creating.  I figure that way the end product will be truly personal.  This is a personal site.\n\t\t\t\tAnother aspect of this site is that I want to get better at writing personal posts.  I've gotten into a bad habit of doing a lot of link re-posting with practically no commentary.  I really enjoy the writing of bloggers who write posts when they have something to say, and aren't trying to bait traffic or be super popular.  Short, personal posts with a point are a thousand times better than air-headed posts that just re-share the day's most viral story without adding anything.  A few of the many other sites and writers that I'm taking inspiration from these days are:\n\t\t\t\t\n\t\t\t\t\tMiskatonic University Press by William Denton\n\t\t\t\t\tinkdroid by Ed Summers\n\t\t\t\t\tBibliographic Wilderness by Jonathan Rochkind\n\t\t\t\t\tScripting News by Dave Winer\n\t\t\t\t\tNelson Minar's Weblog\n\t\t\t\t\tAdactio by Jeremy Keith\n\t\t\t\t\tASCII by Jason Scott\n\t\t\t\t\tlibrarian.net by Jessamyn West\n\t\t\t\t\tGuruBlog by Nikolaus Gradwohl\n\t\t\t\t\tChris @ Hive13\n\t\t\t\t\t5chw4r7z\n\t\t\t\t\tWarren Ellis' Orbital Operations\n\t\t\t\t\n\t\t\t\tI like each one for different reasons, but the general themes are minimalism, only including what is necessary, writing only when there's something to say rather than cranking out posts on an arbitrary schedule, and posting genuinely personal and original thoughts.  I may not cover all those right now, but that's the goal here."
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "RSS"
+        ],
+        "url": [
+          "http://davemenninger.com/#rss"
+        ],
+        "published": [
+          "2014-06-05"
+        ],
+        "content": [
+          {
+            "html": "<p>If it's slightly crazy to create a blog by editing HTML by hand, then it's at least twice as insane to edit the RSS feed for the blog by hand.  But I'm going to try anyway.  I can imagine having a little fun with the feed in ways that wouldn't be possible with a machine generated feed.  So, this site now has <a href=\"http://davemenninger.com/rss.xml\">an RSS feed</a> that may or may not have anything in common with the content you see on this page.</p>",
+            "value": "If it's slightly crazy to create a blog by editing HTML by hand, then it's at least twice as insane to edit the RSS feed for the blog by hand.  But I'm going to try anyway.  I can imagine having a little fun with the feed in ways that wouldn't be possible with a machine generated feed.  So, this site now has an RSS feed that may or may not have anything in common with the content you see on this page."
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Tools"
+        ],
+        "url": [
+          "http://davemenninger.com/#tools"
+        ],
+        "published": [
+          "2014-06-04"
+        ],
+        "content": [
+          {
+            "html": "<p>The tools I'm using to build this site are about as simple as possible: ssh, vim, git.  I'm hosting on my Dreamhost shared hosting account currently, but I'm contemplating moving to a VPS or something at some point.</p>",
+            "value": "The tools I'm using to build this site are about as simple as possible: ssh, vim, git.  I'm hosting on my Dreamhost shared hosting account currently, but I'm contemplating moving to a VPS or something at some point."
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Rebuilding"
+        ],
+        "url": [
+          "http://davemenninger.com/#rebuilding"
+        ],
+        "published": [
+          "2014-06-03"
+        ],
+        "content": [
+          {
+            "html": "<p>Some time ago this site was compromised and then taken down.  Now I'm taking the opportunity to rebuild it and, inspired in part by <a href=\"http://ranprieur.com/\">Ran Prieur</a> and general <a href=\"http://www.warrenellis.com/?p=15111\">\"indieweb\"</a> sentiment, I thought I would try writing HTML5 by hand instead of trying to make use of some fancy framework.  I'm re-learning my HTML basics from:</p>\n\t\t\t\t<ul>\n\t\t\t\t\t<li><a href=\"http://diveinto.html5doctor.com/\">Dive Into HTML5</a></li>\n\t\t\t\t\t<li><a href=\"http://learn.shayhowe.com/html-css/\">Learn to Code HTML &amp; CSS</a></li>\n\t\t\t\t</ul>",
+            "value": "Some time ago this site was compromised and then taken down.  Now I'm taking the opportunity to rebuild it and, inspired in part by Ran Prieur and general \"indieweb\" sentiment, I thought I would try writing HTML5 by hand instead of trying to make use of some fancy framework.  I'm re-learning my HTML basics from:\n\t\t\t\t\n\t\t\t\t\tDive Into HTML5\n\t\t\t\t\tLearn to Code HTML & CSS"
+          }
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "icon": [
+      "http://davemenninger.com/dave.png"
+    ],
+    "stylesheet": [
+      "http://davemenninger.com/style.css"
+    ],
+    "alternate": [
+      "http://davemenninger.com/rss.xml"
+    ],
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "micropub": [
+      "http://davemenninger.com/micropub.php"
+    ],
+    "bookmark": [
+      "http://davemenninger.com/#micropub",
+      "http://davemenninger.com/#how-i-get-news",
+      "http://davemenninger.com/#restoring-old-content",
+      "http://davemenninger.com/#inspirations",
+      "http://davemenninger.com/#rss",
+      "http://davemenninger.com/#tools",
+      "http://davemenninger.com/#rebuilding"
+    ],
+    "me": [
+      "https://twitter.com/dave_menninger",
+      "https://github.com/davemenninger",
+      "https://plus.google.com/+DaveMenninger",
+      "https://www.flickr.com/people/dave_menninger/",
+      "http://about.me/davemenninger",
+      "http://davemenninger.com/",
+      "mailto:dave.menninger@gmail.com"
+    ]
+  },
+  "rel-urls": {
+    "http://davemenninger.com/dave.png": {
+      "rels": [
+        "icon"
+      ]
+    },
+    "http://davemenninger.com/style.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "http://davemenninger.com/rss.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "RSS for DaveMenninger.com",
+      "type": "application/rss+xml"
+    },
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "http://davemenninger.com/micropub.php": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "http://davemenninger.com/#micropub": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "link to this post",
+      "text": "Micropub"
+    },
+    "http://davemenninger.com/#how-i-get-news": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "link to this post",
+      "text": "How I Get News"
+    },
+    "http://davemenninger.com/#restoring-old-content": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "link to this post",
+      "text": "Restoring Old Content"
+    },
+    "http://davemenninger.com/#inspirations": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "link to this post",
+      "text": "Inspirations"
+    },
+    "http://davemenninger.com/#rss": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "link to this post",
+      "text": "RSS"
+    },
+    "http://davemenninger.com/#tools": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "link to this post",
+      "text": "Tools"
+    },
+    "http://davemenninger.com/#rebuilding": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "link to this post",
+      "text": "Rebuilding"
+    },
+    "https://twitter.com/dave_menninger": {
+      "rels": [
+        "me"
+      ],
+      "text": "Twitter"
+    },
+    "https://github.com/davemenninger": {
+      "rels": [
+        "me"
+      ],
+      "text": "GitHub"
+    },
+    "https://plus.google.com/+DaveMenninger": {
+      "rels": [
+        "me"
+      ],
+      "text": "G+"
+    },
+    "https://www.flickr.com/people/dave_menninger/": {
+      "rels": [
+        "me"
+      ],
+      "text": "Flickr"
+    },
+    "http://about.me/davemenninger": {
+      "rels": [
+        "me"
+      ],
+      "text": "About.me"
+    },
+    "http://davemenninger.com/": {
+      "rels": [
+        "me"
+      ],
+      "text": "Dave Menninger"
+    },
+    "mailto:dave.menninger@gmail.com": {
+      "rels": [
+        "me"
+      ],
+      "text": "dave.menninger@gmail.com"
+    }
+  }
+}
