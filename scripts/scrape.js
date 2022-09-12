@@ -35,12 +35,19 @@ Promise
           JSON.stringify(response.data, null, 2)
         );
       } else {
-        const { status, statusText, config: { params } } = response.response;
+        // The server responded, but with an HTTP status code outside the 2xx range.
+        if (response.response) {
+          const { status, statusText, config: { params } } = response.response;
 
-        // Log a specially-formatted message for GitHub Actions.
-        //
-        // https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions
-        console.log(`::${setWorkflowCommand(status)} title=${status} ${statusText}::${JSON.stringify(params)}`);
+          // Log a specially-formatted message for GitHub Actions.
+          //
+          // https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions
+          console.log(`::${setWorkflowCommand(status)} title=${status} ${statusText}::${JSON.stringify(params)}`);
+        // Either the request was made and no response was received, or an error
+        // was encountered while setting up the request.
+        } else {
+          console.log(`::error title=Axios Error::${response.toJSON()}`);
+        }
       }
     });
   });
