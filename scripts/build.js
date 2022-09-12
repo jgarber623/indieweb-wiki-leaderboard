@@ -16,11 +16,17 @@ const engine = new Liquid();
 
   fs.writeFileSync('data/leaderboard.json', JSON.stringify(leaderboard, null, 2));
 
+  console.log('✅ Successfully wrote data to ./data/leaderboard.json');
+
   engine
     .renderFile('README.md.liquid', { leaderboard, datestamp, timestamp })
     .then(data => fs.writeFileSync('README.md', data));
 
+  console.log('✅ Successfully updated ./README.md');
+
   const users = await getAllUsers();
 
   fs.writeFileSync('data/users.json', JSON.stringify(users, null, 2));
+
+  console.log('✅ Successfully wrote data to ./data/users.json');
 })();
