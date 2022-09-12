@@ -1,0 +1,774 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-feed"
+      ],
+      "properties": {},
+      "children": [
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Fafi 0.2.2"
+            ],
+            "content": [
+              {
+                "html": "<p>Search Firefox bookmark contents, with this commandline client. Fafi extracts the page content of bookmarks and stores them into a searchable SQLite database.</p>\n<h2>What’s Changed</h2>\n<ul>\n<li>\n<a href=\"https://github.com/pantsbuild/pex\">Pex</a> Support! Just run the <code>fafi.pex</code> file from the terminal.</li>\n<li>Skip localhost indexing.</li>\n<li>Correct console_script entrypoint, fixing <a href=\"https://pypi.org/project/pipx/\">pipx</a> install.</li>\n<li>Updated dependencies.</li>\n</ul>\n<p>You can download the pex file, or use <code>pipx install fafi</code> (requires pipx), and run it.</p>\n<p><a href=\"https://github.com/svandragt/fafi/releases/tag/0.2.2\">View on Github</a></p>\n<div class=\"syndication-links\"></div>",
+                "value": "Search Firefox bookmark contents, with this commandline client. Fafi extracts the page content of bookmarks and stores them into a searchable SQLite database.\nWhat’s Changed\nPex Support! Just run the fafi.pex file from the terminal.Skip localhost indexing.Correct console_script entrypoint, fixing pipx install.Updated dependencies.\nYou can download the pex file, or use pipx install fafi (requires pipx), and run it.\nView on Github"
+              }
+            ]
+          },
+          "id": "post-618"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Using python – best practices"
+            ],
+            "content": [
+              {
+                "html": "<p>This is how I do it:</p>\n<ol>\n<li>Manage python versions with <code>pyenv</code>. Modern python comes with <code>pip</code> already installed. </li>\n<li>Don’t touch system python if you have it, in terms of installing packages, updating it etc. </li>\n<li>For projects, use virtual environments using one of the python version installed with step 1. I prefer <code>poetry</code> at the moment to manage them.</li>\n<li>Use <code>pipx</code> if you want to install a global utility, so it’s isolated from any projects.</li>\n</ol>\n<p>Feedback welcome.</p>\n<div class=\"syndication-links\"></div>",
+                "value": "This is how I do it:\nManage python versions with pyenv. Modern python comes with pip already installed. Don’t touch system python if you have it, in terms of installing packages, updating it etc. For projects, use virtual environments using one of the python version installed with step 1. I prefer poetry at the moment to manage them.Use pipx if you want to install a global utility, so it’s isolated from any projects.\nFeedback welcome."
+              }
+            ]
+          },
+          "id": "post-615"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              ""
+            ],
+            "content": [
+              {
+                "html": "<p>Working on an RSS service in 2022.</p>\n<div class=\"syndication-links\"></div>",
+                "value": "Working on an RSS service in 2022."
+              }
+            ]
+          },
+          "id": "post-612"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              ""
+            ],
+            "content": [
+              {
+                "html": "<p>Castro podcast player seems abandoned? What have people moved to?</p>\n<div class=\"syndication-links\"></div>",
+                "value": "Castro podcast player seems abandoned? What have people moved to?"
+              }
+            ]
+          },
+          "id": "post-610"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              ""
+            ],
+            "content": [
+              {
+                "html": "<p>It’s possible to drag and drop a link from the Firefox download list directly onto a webpage!</p>\n<div class=\"syndication-links\"></div>",
+                "value": "It’s possible to drag and drop a link from the Firefox download list directly onto a webpage!"
+              }
+            ]
+          },
+          "id": "post-602"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Introducing HTMXpress = HTMX for WordPress"
+            ],
+            "content": [
+              {
+                "html": "<p>I have recently been interested in using <a href=\"https://htmx.org/\">HTMX</a>, but there’s <a href=\"https://duckduckgo.com/?t=ffab&amp;q=htmx+wordpress&amp;ia=web\">not been any activity within the WordPress community</a> as far as I can see. I hope to change that with HTMXpress (pronounced as HTM express).</p>\n<p>HTMX allows you to annotate dynamic script style behaviour via custom HTML properties, using progressive enhancement. Perhaps you’re familiar with <a href=\"https://hotwired.dev/\">Hotwire</a> (ruby on rails) or <a href=\"https://intercoolerjs.org/\">Intercooler.js </a>(htmx predecessor).</p>\n<h2>The approach</h2>\n<p>By using the <a href=\"https://make.wordpress.org/plugins/2012/06/07/rewrite-endpoints-api/\">Rewrite Endpoints API</a> to create a custom endpoint; and a bit of custom template logic, we can output a serverside partial or custom theme template.</p>\n<p>Using this setup, WordPress can leverage HTML over the wire solutions such as HTMX.</p>\n<p>HTMX then allows us to do dynamic serverside based rendering; live search and other features without the overhead and complexity of reactive JavaScript frameworks, whilst benefiting from trusted object and full page caching solutions. </p>\n<p>Currently it’s a prototype. I’ll be blogging more about progress as things go on. </p>\n<div class=\"wp-container-1 wp-block-buttons\">\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link\" href=\"https://github.com/svandragt/htmxpress\">Visit HTMXpress</a></div>\n</div>\n<div class=\"syndication-links\"></div>",
+                "value": "I have recently been interested in using HTMX, but there’s not been any activity within the WordPress community as far as I can see. I hope to change that with HTMXpress (pronounced as HTM express).\nHTMX allows you to annotate dynamic script style behaviour via custom HTML properties, using progressive enhancement. Perhaps you’re familiar with Hotwire (ruby on rails) or Intercooler.js (htmx predecessor).\nThe approach\nBy using the Rewrite Endpoints API to create a custom endpoint; and a bit of custom template logic, we can output a serverside partial or custom theme template.\nUsing this setup, WordPress can leverage HTML over the wire solutions such as HTMX.\nHTMX then allows us to do dynamic serverside based rendering; live search and other features without the overhead and complexity of reactive JavaScript frameworks, whilst benefiting from trusted object and full page caching solutions. \nCurrently it’s a prototype. I’ll be blogging more about progress as things go on. \n\nVisit HTMXpress"
+              }
+            ]
+          },
+          "id": "post-600"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              ""
+            ],
+            "content": [
+              {
+                "html": "<p>This is a test</p>\n<p></p>\n<div class=\"syndication-links\"></div>",
+                "value": "This is a test"
+              }
+            ]
+          },
+          "id": "post-597"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Enable Playlist Radio on Spotify’s Liked Songs tracks"
+            ],
+            "content": [
+              {
+                "html": "<p>I tested and created a IFTTT recipe for backing up Liked Songs’ tracks : <a href=\"https://ifttt.com/applets/iMnNGt3V-backup-spotify-likes\">https://ifttt.com/applets/iMnNGt3V-backup-spotify-likes</a>.</p>\n<p>Despite the incorrect labelling “Saving a spotify track” means liking it, not “downloading to your device”. So you can add it to another Spotify playlist.</p>\n<p>To get historical likes, cmd-a / ctrl-a (or equivalent) all Liked Songs tracks and drag them into the backup playlist.</p>\n<p>This enables playlist options such as Playlist Radio giving you similar songs to the ones in the backup playlist.</p>\n<p></p>\n<div class=\"syndication-links\"></div>",
+                "value": "I tested and created a IFTTT recipe for backing up Liked Songs’ tracks : https://ifttt.com/applets/iMnNGt3V-backup-spotify-likes.\nDespite the incorrect labelling “Saving a spotify track” means liking it, not “downloading to your device”. So you can add it to another Spotify playlist.\nTo get historical likes, cmd-a / ctrl-a (or equivalent) all Liked Songs tracks and drag them into the backup playlist.\nThis enables playlist options such as Playlist Radio giving you similar songs to the ones in the backup playlist."
+              }
+            ]
+          },
+          "id": "post-585"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Two slices please"
+            ],
+            "content": [
+              {
+                "html": "<figure class=\"wp-block-image size-full\"><img width=\"357\" height=\"166\" src=\"https://vandragt.com/wp-content/uploads/sites/13/2022/04/image.png\" alt=\"\" class=\"wp-image-582\" srcset=\"https://vandragt.com/wp-content/uploads/sites/13/2022/04/image.png 357w, https://vandragt.com/wp-content/uploads/sites/13/2022/04/image-300x139.png 300w\" sizes=\"(max-width: 357px) 100vw, 357px\"><figcaption><em>Sort stack by compound slice none (?)</em></figcaption></figure>\n<div class=\"syndication-links\"></div>",
+                "value": "Sort stack by compound slice none (?)"
+              }
+            ]
+          },
+          "id": "post-581"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "How to export Safari’s Reading List into other services"
+            ],
+            "content": [
+              {
+                "html": "<p>I’m always collecting interesting links to read later, but like to try out a bunch of services. It’s very easy to add links to Safari’s reading list (particulary on iOS), so I used it quite a bit. Now I’ve switched to Pocket, I’d like to get those links out.</p>\n<p><strong>The thing you might not know is that Reading List items are stored as bookmarks. </strong></p>\n<p>Pocket can <a href=\"https://getpocket.com/import/browser\">import browser bookmarks</a>, but you might not want to import non Reading List items. This is how you do that:</p>\n<h2>Step by step</h2>\n<ol>\n<li>In Safari, File &gt; Export &gt; Bookmarks. Save all your bookmarks, this is the disaster recovery backup.</li>\n<li>Delete all your non-reading list items.</li>\n<li>Export the bookmarks again, as <code>reading-list.html</code>. Delete them from Safari.</li>\n<li>Import the reading-list bookmark file into Pocket.</li>\n</ol>\n<p>If you use Safari for regular bookmarks, restore the browser bookmarks without the reading list items:</p>\n<ol>\n<li>Import the bookmarks you exported in step 1. </li>\n<li>Delete your reading list items.</li>\n</ol>\n<h2>Bonus</h2>\n<p>If you have other browsers with bookmarks you want to add to your reading list, you can use the same idea to get them into pocket, using Safari as a way to prune any bookmarks you don’t want to import.</p>\n<div class=\"syndication-links\"></div>",
+                "value": "I’m always collecting interesting links to read later, but like to try out a bunch of services. It’s very easy to add links to Safari’s reading list (particulary on iOS), so I used it quite a bit. Now I’ve switched to Pocket, I’d like to get those links out.\nThe thing you might not know is that Reading List items are stored as bookmarks. \nPocket can import browser bookmarks, but you might not want to import non Reading List items. This is how you do that:\nStep by step\nIn Safari, File > Export > Bookmarks. Save all your bookmarks, this is the disaster recovery backup.Delete all your non-reading list items.Export the bookmarks again, as reading-list.html. Delete them from Safari.Import the reading-list bookmark file into Pocket.\nIf you use Safari for regular bookmarks, restore the browser bookmarks without the reading list items:\nImport the bookmarks you exported in step 1. Delete your reading list items.\nBonus\nIf you have other browsers with bookmarks you want to add to your reading list, you can use the same idea to get them into pocket, using Safari as a way to prune any bookmarks you don’t want to import."
+              }
+            ]
+          },
+          "id": "post-577"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Truly Muting Gmail Conversations"
+            ],
+            "content": [
+              {
+                "html": "<p>You might have noticed that after muting a Gmail conversation it pops back into the inbox.</p>\n<p>Google says:</p>\n<blockquote class=\"wp-block-quote\"><p>“Muted conversations will only pop back into your inbox ready for your attention if a new message in the conversation is addressed to you and no one else, or if you’re added to the ‘To’ or ‘CC’ line in a new message.”</p></blockquote>\n<p>If you find conversations are popping back into the inbox you can create a new Apps Script (from Google Drive) with the following contents and add a Timed project trigger (most easily available from the classic editor) to run it every 15 minutes:</p>\n<pre class=\"wp-block-code\"><code>function archiveMuted() {\n  var threads = GmailApp.search('is:muted',0,100);\n  GmailApp.moveThreadsToArchive(threads);\n}</code></pre>\n<p>Adjust the number 100 to the amount of muted email threads you expect in your inbox every 15 minutes.</p>\n<div class=\"syndication-links\"></div>",
+                "value": "You might have noticed that after muting a Gmail conversation it pops back into the inbox.\nGoogle says:\n“Muted conversations will only pop back into your inbox ready for your attention if a new message in the conversation is addressed to you and no one else, or if you’re added to the ‘To’ or ‘CC’ line in a new message.”\nIf you find conversations are popping back into the inbox you can create a new Apps Script (from Google Drive) with the following contents and add a Timed project trigger (most easily available from the classic editor) to run it every 15 minutes:\nfunction archiveMuted() {\n  var threads = GmailApp.search('is:muted',0,100);\n  GmailApp.moveThreadsToArchive(threads);\n}\nAdjust the number 100 to the amount of muted email threads you expect in your inbox every 15 minutes."
+              }
+            ]
+          },
+          "id": "post-570"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Global node packages"
+            ],
+            "content": [
+              {
+                "html": "<p>This is non-obvious, but might save you some time when using node based tooling:</p>\n<ul>\n<li>When installing a package <strong>globally</strong> in <strong>system</strong> node it works across all versions of node ✅. </li>\n<li>When installing it <strong>globally</strong> in a <strong>non-system</strong> node, it works only in that particular version of node.</li>\n</ul>\n<p></p>\n<div class=\"syndication-links\"></div>",
+                "value": "This is non-obvious, but might save you some time when using node based tooling:\nWhen installing a package globally in system node it works across all versions of node ✅. When installing it globally in a non-system node, it works only in that particular version of node."
+              }
+            ]
+          },
+          "id": "post-568"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Managing homebrew package updates"
+            ],
+            "content": [
+              {
+                "html": "<p>I’ve taken to upgrade <code>homebrew</code> packages once a week on Monday morning, and replacing any packages that cause issues in my workflow and managing them some other way. This seems to work quite well, and is a better workflow than waiting until a new package needs to be installed and then breaking lots of things.</p>\n<div class=\"syndication-links\"></div>",
+                "value": "I’ve taken to upgrade homebrew packages once a week on Monday morning, and replacing any packages that cause issues in my workflow and managing them some other way. This seems to work quite well, and is a better workflow than waiting until a new package needs to be installed and then breaking lots of things."
+              }
+            ]
+          },
+          "id": "post-565"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Privacy Forest"
+            ],
+            "content": [
+              {
+                "html": "<p>It turns out Mail’s “Mail Privacy Protection” warns you it does not work, this can be because you have Network’s “Limit IP Address Tracking” enabled (it also doesn’t work with proxy’s and VPNs). The latter works only in Mail and Safari, so if you use another main browser you could simply disable the “Limit IP Address Tracking” option and benefit from Mail privacy.</p>\n<p>How both these options work with iCloud Private Relay on Mac I’m not sure.</p>\n<div class=\"syndication-links\"></div>",
+                "value": "It turns out Mail’s “Mail Privacy Protection” warns you it does not work, this can be because you have Network’s “Limit IP Address Tracking” enabled (it also doesn’t work with proxy’s and VPNs). The latter works only in Mail and Safari, so if you use another main browser you could simply disable the “Limit IP Address Tracking” option and benefit from Mail privacy.\nHow both these options work with iCloud Private Relay on Mac I’m not sure."
+              }
+            ]
+          },
+          "id": "post-559"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "How to develop a library and a project in PHP concurrently"
+            ],
+            "content": [
+              {
+                "html": "<p>I keep forgetting the best way to do this, so thought it best to write it down.</p>\n<p>Suppose you are building a library and an example project that implements it. You can do this in a single repository with an example folder, for small examples.</p>\n<p>But for larger examples you might want to use a separate repository, with it’s own issues and documentation.</p>\n<p>This can make it a hassle to work with the library and keep the project in sync.</p>\n<p>Let’s say these are <code>mylibrary</code> and <code>myproject</code> which is using the library. Let’s assume you’re using PHP and Composer. <code>mylibrary</code> is at version 0.1 but there are newer commits in the <code>develop</code> branch.</p>\n<h2>Require a Git repository</h2>\n<pre class=\"wp-block-code\"><code>$ cd myproject\n$ composer config repositories.me vcs https://github.com/me/mylibrary\n$ composer require me/mylibrary:0.1 --prefer-source</code></pre>\n<p><code>--prefer-source</code> means Composer will install from <code>source</code> if there is one, the result is a git repository.</p>\n<h2>Switch to the develop branch</h2>\n<p>Once installed it’s then easy to switch to any other branch you want to work on:</p>\n<pre class=\"wp-block-code\"><code>$ cd vendor/me/mylibrary; git switch develop</code></pre>\n<p>You don’t have to register the repository with packagist if you follow this workflow! As a bonus when after you run <code>composer update</code> in <code>myproject</code> the mylibrary directory sticks with the branch.</p>\n<div class=\"syndication-links\"></div>",
+                "value": "I keep forgetting the best way to do this, so thought it best to write it down.\nSuppose you are building a library and an example project that implements it. You can do this in a single repository with an example folder, for small examples.\nBut for larger examples you might want to use a separate repository, with it’s own issues and documentation.\nThis can make it a hassle to work with the library and keep the project in sync.\nLet’s say these are mylibrary and myproject which is using the library. Let’s assume you’re using PHP and Composer. mylibrary is at version 0.1 but there are newer commits in the develop branch.\nRequire a Git repository\n$ cd myproject\n$ composer config repositories.me vcs https://github.com/me/mylibrary\n$ composer require me/mylibrary:0.1 --prefer-source\n--prefer-source means Composer will install from source if there is one, the result is a git repository.\nSwitch to the develop branch\nOnce installed it’s then easy to switch to any other branch you want to work on:\n$ cd vendor/me/mylibrary; git switch develop\nYou don’t have to register the repository with packagist if you follow this workflow! As a bonus when after you run composer update in myproject the mylibrary directory sticks with the branch."
+              }
+            ]
+          },
+          "id": "post-539"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Daily Clean Trash"
+            ],
+            "content": [
+              {
+                "html": "<p>I use <code>trash-cli</code> on every linux install, and today I realised it’s not actually removing files from the trash, so I’ve set up this little scheduled task to delete items that have been trashed at least 30 days ago:<br></p>\n<pre class=\"wp-block-code\"><code>$ crontab -e\n# daily trash clean\n@daily /usr/bin/trash-empty 30</code></pre>\n<div class=\"syndication-links\"></div>",
+                "value": "I use trash-cli on every linux install, and today I realised it’s not actually removing files from the trash, so I’ve set up this little scheduled task to delete items that have been trashed at least 30 days ago:\n$ crontab -e\n# daily trash clean\n@daily /usr/bin/trash-empty 30"
+              }
+            ]
+          },
+          "id": "post-534"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "OpenSUSE Tumbleweed Installation Notes"
+            ],
+            "content": [
+              {
+                "html": "<p>For future reference here are some issues I’ve come across installing and setting up Tumbleweed on my workstation.</p>\n<p>The reason for switching from macOS is that a commercial operating system focused on services builts in too many distractions for me. Also long term the Apple hardware is priced above what I’m prepared to pay, so it makes sense for me to look for an alternative.</p>\n<p>Tumbleweed is a rolling distribution which makes for a long term maintained setup, and packages are tested thoroughly but are quickly updated.</p>\n<p>So far these are just little niggles.</p>\n<h2>Day one issues</h2>\n<ul>\n<li>The old Grub menu from my previous Linux installation wasn’t wiped, I simply reinstalled making sure all existing partitions were deleted before partitioning.</li>\n<li>\n<em>avahi is not allowed to start itself due to security policies</em>. This was because dbus needed to restart after avahi installed configuration into it. I could have rebooted.</li>\n<li>My Apple Magic Keyboard must be selected in KDE after the installation as it’s not an option during the installation routine.</li>\n<li>Opening ports for OpenSSH means that they’re open on the <em>public</em> zone. I didn’t realise this as I want to use the <em>home</em> zone as default.Yast Firewall sorted this out.</li>\n<li>After installing Lutris, Steam and Proton Experimental, certain games would not start, due to missing vulkan drivers. <a href=\"https://github.com/lutris/docs/blob/master/InstallingDrivers.md\">This Lutris Wiki link</a> describes the issue, I had to search Yast Software for <code>vulkan</code> showed I had to install <code>libvulkan_intel</code> and <code>libvulkan_intel-32bit</code>. </li>\n</ul>\n<h2>Interesting links</h2>\n<ul><li>There’s a nice tiling window manager script for KDE called <a href=\"https://github.com/esjeon/krohnkite\">Krohnkite</a>. Meta-D conflicted with show desktop, after reassigning the latter I still think that shortcut doesn’t do anything, though.</li></ul>\n<p>So far so good. The interface is more snappy than macOS and more powerful, and the system is working nicely.</p>\n<div class=\"syndication-links\"></div>",
+                "value": "For future reference here are some issues I’ve come across installing and setting up Tumbleweed on my workstation.\nThe reason for switching from macOS is that a commercial operating system focused on services builts in too many distractions for me. Also long term the Apple hardware is priced above what I’m prepared to pay, so it makes sense for me to look for an alternative.\nTumbleweed is a rolling distribution which makes for a long term maintained setup, and packages are tested thoroughly but are quickly updated.\nSo far these are just little niggles.\nDay one issues\nThe old Grub menu from my previous Linux installation wasn’t wiped, I simply reinstalled making sure all existing partitions were deleted before partitioning.avahi is not allowed to start itself due to security policies. This was because dbus needed to restart after avahi installed configuration into it. I could have rebooted.My Apple Magic Keyboard must be selected in KDE after the installation as it’s not an option during the installation routine.Opening ports for OpenSSH means that they’re open on the public zone. I didn’t realise this as I want to use the home zone as default.Yast Firewall sorted this out.After installing Lutris, Steam and Proton Experimental, certain games would not start, due to missing vulkan drivers. This Lutris Wiki link describes the issue, I had to search Yast Software for vulkan showed I had to install libvulkan_intel and libvulkan_intel-32bit. \nInteresting links\nThere’s a nice tiling window manager script for KDE called Krohnkite. Meta-D conflicted with show desktop, after reassigning the latter I still think that shortcut doesn’t do anything, though.\nSo far so good. The interface is more snappy than macOS and more powerful, and the system is working nicely."
+              }
+            ]
+          },
+          "id": "post-520"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Bye Twitter"
+            ],
+            "content": [
+              {
+                "html": "<p>I’ve deactivated my Twitter account.</p>\n<p>Twitter didn’t like it, you get unceremoniously dumped out of the service with an error message. All your tweets disappear. Like you weren’t welcome anyway, social media with a nasty streak.</p>\n<p>The problem with Twitter is that there’s only space for black/white arguments and replies. It harms compassion and collaboration. It’s algorithms are optimised for making money, not your wellbeing.</p>\n<p>Let’s go make something beautiful instead with all the time saved!</p>\n<div class=\"syndication-links\"></div>",
+                "value": "I’ve deactivated my Twitter account.\nTwitter didn’t like it, you get unceremoniously dumped out of the service with an error message. All your tweets disappear. Like you weren’t welcome anyway, social media with a nasty streak.\nThe problem with Twitter is that there’s only space for black/white arguments and replies. It harms compassion and collaboration. It’s algorithms are optimised for making money, not your wellbeing.\nLet’s go make something beautiful instead with all the time saved!"
+              }
+            ]
+          },
+          "id": "post-508"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              ""
+            ],
+            "content": [
+              {
+                "html": "<p>Added a little timestamp to my zsh prompt and it makes all the difference. Open <code>~/.zshrc</code> and add:</p>\n<pre class=\"wp-block-code\"><code><code># prompt time\npreexec () {\n  DATE=$(date +\"%H:%M:%S\")\n  C=$(($COLUMNS-10))\n  echo -e \"\\033[1A\\033[${C}C ${DATE} \"\n}\n</code></code></pre>\n<div class=\"syndication-links\"></div>",
+                "value": "Added a little timestamp to my zsh prompt and it makes all the difference. Open ~/.zshrc and add:\n# prompt time\npreexec () {\n  DATE=$(date +\"%H:%M:%S\")\n  C=$(($COLUMNS-10))\n  echo -e \"\\033[1A\\033[${C}C ${DATE} \"\n}"
+              }
+            ]
+          },
+          "id": "post-504"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "VVV utility for ElasticSeach / ElasticPress"
+            ],
+            "content": [
+              {
+                "html": "<p>I’ve been switching my local WordPress sideprojects development setup to <a href=\"https://varyingvagrantvagrants.org/\">VVV</a> and one thing I couldn’t find documented is how to setup ElasticSearch and ElasticPress.</p>\n<p>There’s a VVV-ElasticSearch plugin on GitHub but it is missing documentation and it’s not been updated for 6 years :D), so I made my own:</p>\n<div class=\"wp-container-2 wp-block-buttons\">\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link\" href=\"https://github.com/svandragt/elasticsearch-vvv-utility\">View on GitHub</a></div>\n</div>\n<div class=\"syndication-links\"></div>",
+                "value": "I’ve been switching my local WordPress sideprojects development setup to VVV and one thing I couldn’t find documented is how to setup ElasticSearch and ElasticPress.\nThere’s a VVV-ElasticSearch plugin on GitHub but it is missing documentation and it’s not been updated for 6 years :D), so I made my own:\n\nView on GitHub"
+              }
+            ]
+          },
+          "id": "post-497"
+        }
+      ]
+    }
+  ],
+  "rels": {
+    "profile": [
+      "https://gmpg.org/xfn/11"
+    ],
+    "pingback": [
+      "https://vandragt.com/xmlrpc.php"
+    ],
+    "dns-prefetch": [
+      "https://vandragt.com/",
+      "https://s.w.org/"
+    ],
+    "alternate": [
+      "https://vandragt.com/feed/",
+      "https://vandragt.com/comments/feed/"
+    ],
+    "stylesheet": [
+      "https://vandragt.com/wp-includes/css/dist/block-library/style.min.css?ver=6.0.2",
+      "https://vandragt.com/wp-content/plugins/indieweb/static/css/indieweb-bw.css?ver=3.4.7",
+      "https://vandragt.com/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3",
+      "https://vandragt.com/wp-content/themes/independent-publisher/fonts/genericons/genericons.css?ver=3.1",
+      "https://vandragt.com/wp-content/themes/independent-publisher/style.css?ver=6.0.2",
+      "https://vandragt.com/wp-admin/admin-ajax.php?action=independent_publisher_customizer_css&ver=1.7",
+      "https://vandragt.com/wp-content/plugins/syndication-links/css/syn-large.min.css?ver=4.3.12"
+    ],
+    "https://api.w.org/": [
+      "https://vandragt.com/wp-json/"
+    ],
+    "EditURI": [
+      "https://amasan.co.uk/vandragt/xmlrpc.php?rsd"
+    ],
+    "wlwmanifest": [
+      "https://vandragt.com/wp-includes/wlwmanifest.xml"
+    ],
+    "authorization_endpoint": [
+      "https://vandragt.com/wp-json/indieauth/1.0/auth"
+    ],
+    "token_endpoint": [
+      "https://vandragt.com/wp-json/indieauth/1.0/token"
+    ],
+    "me": [
+      "https://github.com/svandragt",
+      "https://micro.blog/sander",
+      "https://www.flickr.com/people/hermyhermy"
+    ],
+    "icon": [
+      "https://vandragt.com/wp-content/uploads/sites/13/2021/11/cropped-8bit-profile-square-32x32.png",
+      "https://vandragt.com/wp-content/uploads/sites/13/2021/11/cropped-8bit-profile-square-192x192.png"
+    ],
+    "apple-touch-icon": [
+      "https://vandragt.com/wp-content/uploads/sites/13/2021/11/cropped-8bit-profile-square-180x180.png"
+    ],
+    "micropub_media": [
+      "https://vandragt.com/wp-json/micropub/1.0/media"
+    ],
+    "micropub": [
+      "https://vandragt.com/wp-json/micropub/1.0/endpoint"
+    ],
+    "home": [
+      "https://vandragt.com/"
+    ],
+    "bookmark": [
+      "https://vandragt.com/project/fafi-0-2-2/",
+      "https://vandragt.com/technology/using-python-best-practices/",
+      "https://vandragt.com/status/612/",
+      "https://vandragt.com/status/610/",
+      "https://vandragt.com/status/602/",
+      "https://vandragt.com/project/introducing-htmxpress-htmx-for-wordpress/",
+      "https://vandragt.com/status/597/",
+      "https://vandragt.com/project/enable-playlist-radio-on-spotifys-liked-songs-tracks/",
+      "https://vandragt.com/status/two-slices-please/",
+      "https://vandragt.com/technology/how-to-export-safaris-reading-list-into-other-services/",
+      "https://vandragt.com/technology/truly-muting-gmail-conversations/",
+      "https://vandragt.com/technology/global-node-packages/",
+      "https://vandragt.com/technology/managing-homebrew-package-updates/",
+      "https://vandragt.com/technology/privacy-forest/",
+      "https://vandragt.com/technology/how-to-develop-a-library-and-a-project-in-php-concurrently/",
+      "https://vandragt.com/technology/daily-clean-trash/",
+      "https://vandragt.com/technology/opensuse-tumbleweed-installation-notes/",
+      "https://vandragt.com/technology/bye-twitter/",
+      "https://vandragt.com/status/504/",
+      "https://vandragt.com/project/vvv-and-elasticpress/"
+    ],
+    "category": [
+      "https://vandragt.com/category/project/",
+      "https://vandragt.com/category/technology/",
+      "https://vandragt.com/category/status/"
+    ],
+    "tag": [
+      "https://vandragt.com/category/project/",
+      "https://vandragt.com/category/technology/",
+      "https://vandragt.com/category/status/"
+    ],
+    "designer": [
+      "http://independentpublisher.me/"
+    ],
+    "generator": [
+      "https://wordpress.org/"
+    ]
+  },
+  "rel-urls": {
+    "https://gmpg.org/xfn/11": {
+      "rels": [
+        "profile"
+      ]
+    },
+    "https://vandragt.com/xmlrpc.php": {
+      "rels": [
+        "pingback"
+      ]
+    },
+    "https://vandragt.com/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
+    "https://s.w.org/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
+    "https://vandragt.com/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Sander's Blurbs » Feed",
+      "type": "application/rss+xml"
+    },
+    "https://vandragt.com/comments/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Sander's Blurbs » Comments Feed",
+      "type": "application/rss+xml"
+    },
+    "https://vandragt.com/wp-includes/css/dist/block-library/style.min.css?ver=6.0.2": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://vandragt.com/wp-content/plugins/indieweb/static/css/indieweb-bw.css?ver=3.4.7": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://vandragt.com/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://vandragt.com/wp-content/themes/independent-publisher/fonts/genericons/genericons.css?ver=3.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://vandragt.com/wp-content/themes/independent-publisher/style.css?ver=6.0.2": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://vandragt.com/wp-admin/admin-ajax.php?action=independent_publisher_customizer_css&ver=1.7": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://vandragt.com/wp-content/plugins/syndication-links/css/syn-large.min.css?ver=4.3.12": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://vandragt.com/wp-json/": {
+      "rels": [
+        "https://api.w.org/"
+      ]
+    },
+    "https://amasan.co.uk/vandragt/xmlrpc.php?rsd": {
+      "rels": [
+        "EditURI"
+      ],
+      "title": "RSD",
+      "type": "application/rsd+xml"
+    },
+    "https://vandragt.com/wp-includes/wlwmanifest.xml": {
+      "rels": [
+        "wlwmanifest"
+      ],
+      "type": "application/wlwmanifest+xml"
+    },
+    "https://vandragt.com/wp-json/indieauth/1.0/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://vandragt.com/wp-json/indieauth/1.0/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://github.com/svandragt": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://micro.blog/sander": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://www.flickr.com/people/hermyhermy": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://vandragt.com/wp-content/uploads/sites/13/2021/11/cropped-8bit-profile-square-32x32.png": {
+      "rels": [
+        "icon"
+      ]
+    },
+    "https://vandragt.com/wp-content/uploads/sites/13/2021/11/cropped-8bit-profile-square-192x192.png": {
+      "rels": [
+        "icon"
+      ]
+    },
+    "https://vandragt.com/wp-content/uploads/sites/13/2021/11/cropped-8bit-profile-square-180x180.png": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://vandragt.com/wp-json/micropub/1.0/media": {
+      "rels": [
+        "micropub_media"
+      ]
+    },
+    "https://vandragt.com/wp-json/micropub/1.0/endpoint": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://vandragt.com/project/fafi-0-2-2/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to Fafi 0.2.2",
+      "text": "Fafi 0.2.2"
+    },
+    "https://vandragt.com/category/project/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Project"
+    },
+    "https://vandragt.com/technology/using-python-best-practices/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to Using python – best practices",
+      "text": "Using python – best practices"
+    },
+    "https://vandragt.com/category/technology/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Technology"
+    },
+    "https://vandragt.com/status/612/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to"
+    },
+    "https://vandragt.com/category/status/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Status"
+    },
+    "https://vandragt.com/status/610/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to"
+    },
+    "https://vandragt.com/status/602/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to"
+    },
+    "https://vandragt.com/project/introducing-htmxpress-htmx-for-wordpress/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to Introducing HTMXpress = HTMX for WordPress",
+      "text": "Introducing HTMXpress = HTMX for WordPress"
+    },
+    "https://vandragt.com/status/597/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to"
+    },
+    "https://vandragt.com/project/enable-playlist-radio-on-spotifys-liked-songs-tracks/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to Enable Playlist Radio on Spotify’s Liked Songs tracks",
+      "text": "Enable Playlist Radio on Spotify’s Liked Songs tracks"
+    },
+    "https://vandragt.com/status/two-slices-please/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to Two slices please",
+      "text": "Two slices please"
+    },
+    "https://vandragt.com/technology/how-to-export-safaris-reading-list-into-other-services/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to How to export  Safari’s Reading List into other services",
+      "text": "How to export Safari’s Reading List into other services"
+    },
+    "https://vandragt.com/technology/truly-muting-gmail-conversations/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to Truly Muting Gmail Conversations",
+      "text": "Truly Muting Gmail Conversations"
+    },
+    "https://vandragt.com/technology/global-node-packages/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to Global node packages",
+      "text": "Global node packages"
+    },
+    "https://vandragt.com/technology/managing-homebrew-package-updates/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to Managing homebrew package updates",
+      "text": "Managing homebrew package updates"
+    },
+    "https://vandragt.com/technology/privacy-forest/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to Privacy Forest",
+      "text": "Privacy Forest"
+    },
+    "https://vandragt.com/technology/how-to-develop-a-library-and-a-project-in-php-concurrently/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to How to develop a library and a project in PHP concurrently",
+      "text": "How to develop a library and a project in PHP concurrently"
+    },
+    "https://vandragt.com/technology/daily-clean-trash/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to Daily Clean Trash",
+      "text": "Daily Clean Trash"
+    },
+    "https://vandragt.com/technology/opensuse-tumbleweed-installation-notes/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to OpenSUSE Tumbleweed Installation Notes",
+      "text": "OpenSUSE Tumbleweed Installation Notes"
+    },
+    "https://vandragt.com/technology/bye-twitter/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to Bye Twitter",
+      "text": "Bye Twitter"
+    },
+    "https://vandragt.com/status/504/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to"
+    },
+    "https://vandragt.com/project/vvv-and-elasticpress/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to VVV utility for ElasticSeach / ElasticPress",
+      "text": "VVV utility for ElasticSeach / ElasticPress"
+    },
+    "http://independentpublisher.me/": {
+      "rels": [
+        "designer"
+      ],
+      "title": "Independent Publisher: A beautiful reader-focused WordPress theme, for you.",
+      "text": "Independent Publisher"
+    },
+    "https://wordpress.org/": {
+      "rels": [
+        "generator"
+      ],
+      "title": "WordPress: A free open-source publishing platform",
+      "text": "WordPress"
+    }
+  }
+}

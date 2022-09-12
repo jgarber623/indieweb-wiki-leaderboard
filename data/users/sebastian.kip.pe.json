@@ -1,0 +1,84 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "name": [
+          "Sebastian Kippe"
+        ],
+        "email": [
+          "https://sebastian.kip.pe/sebastian@kip.pe"
+        ],
+        "impp": [
+          "xmpp:raucao@kosmos.org"
+        ],
+        "key": [
+          "https://sebastian.kip.pe/pgp.asc"
+        ]
+      },
+      "id": "container"
+    }
+  ],
+  "rels": {
+    "me": [
+      "ni:/sha-256;JBfokbHRs9cEB8xHixpp6Vezs_9vYpnY5rPhYXrzCfw?ct=application/x-x509-user-cert",
+      "xmpp:raucao@kosmos.org"
+    ],
+    "authorization_endpoint": [
+      "https://indiecert.net/auth"
+    ],
+    "token_endpoint": [
+      "https://indiecert.net/token"
+    ],
+    "stylesheet": [
+      "https://sebastian.kip.pe/fonts/style.css",
+      "https://sebastian.kip.pe/css/style.css"
+    ],
+    "pgpkey": [
+      "https://sebastian.kip.pe/pgp.asc"
+    ]
+  },
+  "rel-urls": {
+    "ni:/sha-256;JBfokbHRs9cEB8xHixpp6Vezs_9vYpnY5rPhYXrzCfw?ct=application/x-x509-user-cert": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://indiecert.net/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://indiecert.net/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://sebastian.kip.pe/fonts/style.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://sebastian.kip.pe/css/style.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "xmpp:raucao@kosmos.org": {
+      "rels": [
+        "me"
+      ],
+      "text": "raucao@kosmos.org"
+    },
+    "https://sebastian.kip.pe/pgp.asc": {
+      "rels": [
+        "pgpkey"
+      ],
+      "text": "F0FB ECDD 160D 0AB6 8768 90BA 9F88 009D 31D9 9C72"
+    }
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Fiddly git tricks"
+        ],
+        "published": [
+          "2022-01-23T14:50:50-08:00"
+        ],
+        "content": [
+          {
+            "html": "<p>\nGit.\nLet us enforce some simple rules.\nWe always want merges to our main branch to be complete merge commits, with reference to the source branch, but we want to avoid such back into dev branches.\n</p>\n<p>\nRemembering to always apply the proper <code>--no-ff</code> or <code>--ff-only</code> flags on the fly is, well, unreliable.  Can we automate this?\n</p>\n\n<p>\nAll we need is a way to pick which behavior we want based on the active branch:\n</p>\n<pre>\n<label for=\"git-config-contents\">.git/config</label>\n<code id=\"git-config-contents\">\n[includeIf \"onbranch:main\"]\n\tpath=config.main\n[includeIf \"onbranch:*-dev\"]\n\tpath=config.dev\n</code>\n</pre>\n\n\n<p>\nAnd to define those behaviors:\n</p>\n<pre>\n<label for=\"git-config-main-contents\">.git/config.main</label>\n<code id=\"git-config-main-contents\">\n[merge]\n\tff = no\n[pull]\n\t# pull uses merge, but should be able to do as it pleases\n\tff = yes \n</code>\n</pre>\n\n<pre>\n<label for=\"git-config-dev-contents\">.git/config.dev</label>\n<code id=\"git-config-dev-contents\">\n[merge]\n\tff = only\n</code>\n</pre>",
+            "value": "Git.\nLet us enforce some simple rules.\nWe always want merges to our main branch to be complete merge commits, with reference to the source branch, but we want to avoid such back into dev branches.\n\n\nRemembering to always apply the proper --no-ff or --ff-only flags on the fly is, well, unreliable.  Can we automate this?\n\n\n\nAll we need is a way to pick which behavior we want based on the active branch:\n\n.git/config\n\n[includeIf \"onbranch:main\"]\n\tpath=config.main\n[includeIf \"onbranch:*-dev\"]\n\tpath=config.dev\n\n\n\n\n\nAnd to define those behaviors:\n\n.git/config.main\n\n[merge]\n\tff = no\n[pull]\n\t# pull uses merge, but should be able to do as it pleases\n\tff = yes \n\n\n\n\n.git/config.dev\n\n[merge]\n\tff = only"
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Welcome to my NAS"
+        ],
+        "updated": [
+          "2019-03-14T13:33:45-07:00"
+        ],
+        "published": [
+          "2018-07-05T11:44:34-07:00"
+        ],
+        "content": [
+          {
+            "html": "<p>\nDocumenting and ruminating on an effort to assemble a quiet, compact, expandable, and perhaps overly-capable converged storage server.\n\t\t\t\t\t\t</p>",
+            "value": "Documenting and ruminating on an effort to assemble a quiet, compact, expandable, and perhaps overly-capable converged storage server."
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "name": [
+          "Thuza"
+        ],
+        "url": [
+          "http://thuza.ratfeathers.com/"
+        ],
+        "photo": [
+          "http://thuza.ratfeathers.com/yapok.jpg"
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "icon": [
+      "http://thuza.ratfeathers.com/yapok.jpg"
+    ],
+    "indieauth-metadata": [
+      "https://ia.squeep.com/meta"
+    ],
+    "authorization_endpoint": [
+      "https://ia.squeep.com/auth"
+    ],
+    "token_endpoint": [
+      "https://ia.squeep.com/token"
+    ],
+    "canonical": [
+      "https://thuza.ratfeathers.com/"
+    ],
+    "self": [
+      "http://thuza.ratfeathers.com/"
+    ],
+    "hub": [
+      "https://hub.squeep.com/"
+    ],
+    "tag": [
+      "http://thuza.ratfeathers.com/tag/notes-to-future-self"
+    ],
+    "author": [
+      "http://thuza.ratfeathers.com/"
+    ],
+    "me": [
+      "http://thuza.ratfeathers.com/"
+    ]
+  },
+  "rel-urls": {
+    "http://thuza.ratfeathers.com/yapok.jpg": {
+      "rels": [
+        "icon"
+      ]
+    },
+    "https://ia.squeep.com/meta": {
+      "rels": [
+        "indieauth-metadata"
+      ]
+    },
+    "https://ia.squeep.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://ia.squeep.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://thuza.ratfeathers.com/": {
+      "rels": [
+        "canonical"
+      ]
+    },
+    "http://thuza.ratfeathers.com/": {
+      "rels": [
+        "self"
+      ]
+    },
+    "https://hub.squeep.com/": {
+      "rels": [
+        "hub"
+      ]
+    },
+    "http://thuza.ratfeathers.com/tag/notes-to-future-self": {
+      "rels": [
+        "tag"
+      ],
+      "text": "notes to future self"
+    }
+  }
+}

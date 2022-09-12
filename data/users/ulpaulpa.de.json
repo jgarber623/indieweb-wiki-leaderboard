@@ -1,0 +1,253 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "photo": [
+          {
+            "value": "https://ulpaulpa.de/ulpa.png",
+            "alt": "my avatar. It shoud reassemble a face"
+          }
+        ],
+        "name": [
+          "ulPa"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Webfinger with Caddy"
+        ],
+        "summary": [
+          "This is how you can add webfinger support if you’re using caddy"
+        ],
+        "url": [
+          "https://ulpaulpa.de/p/this-is-how-you/"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Petitionscraper"
+        ],
+        "summary": [
+          "Für Petitions For Future habe ich einen Scraper für die Petitionsseiten geschrieben, damit man schneller an Informationen wie die Forderung, den Initiator, Unterschriftenziel, etc. kommt."
+        ],
+        "url": [
+          "https://ulpaulpa.de/p/p/"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Shortlinks with Gum"
+        ],
+        "summary": [
+          "I just found gum by Will Norris, so I set it up to work with this site and úl.de. I just had to add a rel=canonical link tag to my head and have a shortlink rel on the anchor tag pointing to the shortlink."
+        ],
+        "url": [
+          "https://ulpaulpa.de/p/i-just-found-gum/"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Internationalized Domain Name und Email"
+        ],
+        "summary": [
+          "Ich habe mir vorgestern úl.de gekauft, um eine noch kürzere Domain als u1l.de zu haben und um p@úl.de als Email-Adresse zu haben. Da Sonderzeichen in Domains nicht erlaubt sind, wird stattdessen die IDN-Version der Domain registriert, in diesem Fall xn--l-8ga.de. Aber auch wenn man den IDN aufruft, zeigt Firefox nur die Version mit Sonderzeichen an.\nNachdem die Domain registriert und der DNS eingestellt war, habe ich es direkt ausprobiert, um zu sehen, ob es wirklich funktioniert."
+        ],
+        "url": [
+          "https://ulpaulpa.de/p/ich-habe-mir-vorgestern-lde-x3qs/"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          ""
+        ],
+        "summary": [
+          "Ich hab das Design der website mitlerweile komplett neu ohne Tailwind gemacht, das hat auch Hugos Renderzeit beschleunigt, weil ich dadurch Post CSS komplett weglassen konnte."
+        ],
+        "url": [
+          "https://ulpaulpa.de/p/ich-hab-das-design-der-0u9p/"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Matrix Ist Besser Als Telegram"
+        ],
+        "summary": [
+          "und (fast) alle anderen Messenger Viele Menschen, die lieber FOSS benutzen und sich versuchen so datensparsam wie möglich zu leben benutzen gerne Telegram, warscheinlich weil es den Client auch bei FDroid gibt. Aber außer dem Client ist alles Closed Source.\nTelegram ist (zurzeit) komplett kostenlos. Telegrams kosten sind aber sehr hoch, die haben ziemlich sicher festangestellte Programmierer, denn die App ist wirklich gut gemacht. Es wird wohl alles von Pavel Durov bezahlt, ich weiß nicht woher er das ganze Geld hat."
+        ],
+        "url": [
+          "https://ulpaulpa.de/p/matrix-ist-besser-als-telegram/"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Go Einkaufsliste"
+        ],
+        "summary": [
+          "Da ich sehr viel gutes über Go gehört hab, wollte ich Go lernen und da “learning by doing” am einfachsten ist, hab ich mir als Projekt eine digitale (Einkaufs)listen webapp vorgenommen."
+        ],
+        "url": [
+          "https://ulpaulpa.de/p/golists/"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Wie ich den Blog gemacht hab"
+        ],
+        "summary": [
+          "Dieser Blog wird mit Hugo generiert. Ich benutze kein Theme, sondern hab alles mit Tailwindcss selbst gemacht. Im Internet findet man relativ viele Anleitungen wie man PostCSS mit Tailwind für Hugo aufsetzt. Tailwindcss entfernt zwar unnötige Klassennamen, aber irgendwie scheint das trotzdem noch ziemlich viel css zu sein und weil ich den css link ans ende der seite gesetzt hab, wird erst die plain html seite gerendert. Ich muss also noch wichtiges css raussuchen und an den Anfang der des HTMLs setzen und vielleicht sogar einfach die Seite ohne Tailwind neu machen."
+        ],
+        "url": [
+          "https://ulpaulpa.de/p/wie-ich-den-blog-gemacht-hab/"
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "stylesheet": [
+      "https://ulpaulpa.de/styles/base/critical.css",
+      "https://ulpaulpa.de/styles/base/full.css",
+      "https://ulpaulpa.de/index.css"
+    ],
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "micropub": [
+      "https://ulpaulpa.de/micropub"
+    ],
+    "pgpkey": [
+      "https://ulpaulpa.de/public.key"
+    ],
+    "webmention": [
+      "https://webmention.io/ulpaulpa.de/webmention"
+    ],
+    "pingback": [
+      "https://webmention.io/ulpaulpa.de/xmlrpc"
+    ],
+    "microsub": [
+      "https://aperture.p3k.io/microsub/637"
+    ],
+    "http://tools.ietf.org/id/draft-dejong-remotestorage": [
+      "https://storage.5apps.com/u1l"
+    ],
+    "acct:_@ulpaulpa.de": [
+      "https://ulpaulpa.de/"
+    ],
+    "noopener": [
+      "https://websitecarbon.com/"
+    ]
+  },
+  "rel-urls": {
+    "https://ulpaulpa.de/styles/base/critical.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://ulpaulpa.de/micropub": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://ulpaulpa.de/public.key": {
+      "rels": [
+        "pgpkey"
+      ]
+    },
+    "https://webmention.io/ulpaulpa.de/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://webmention.io/ulpaulpa.de/xmlrpc": {
+      "rels": [
+        "pingback"
+      ]
+    },
+    "https://aperture.p3k.io/microsub/637": {
+      "rels": [
+        "microsub"
+      ]
+    },
+    "https://storage.5apps.com/u1l": {
+      "rels": [
+        "http://tools.ietf.org/id/draft-dejong-remotestorage"
+      ]
+    },
+    "https://ulpaulpa.de/": {
+      "rels": [
+        "acct:_@ulpaulpa.de"
+      ]
+    },
+    "https://websitecarbon.com/": {
+      "rels": [
+        "noopener"
+      ],
+      "text": "Website Carbon"
+    },
+    "https://ulpaulpa.de/styles/base/full.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://ulpaulpa.de/index.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    }
+  }
+}
