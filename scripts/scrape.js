@@ -31,7 +31,7 @@ Promise
     responses.forEach((response, index) => {
       if (response.status === 200) {
         fs.writeFileSync(
-          `${outputPath}/${users[index].replace('/', '_')}.json`,
+          `${outputPath}/${users[index].replace(/\//g, '_')}.json`,
           JSON.stringify(response.data, null, 2)
         );
       } else {
