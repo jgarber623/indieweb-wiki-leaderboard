@@ -5,12 +5,12 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 | Rank | Actions | User |
 |-----:|--------:|:-----|
 {% for entry in leaderboard -%}
-| **{{ forloop.index }}** | [{{ entry.actions }}]({{ entry.contributions }}) | [{{ entry.user }}](https://{{ entry.user }}) |
+| **{{ forloop.index }}** | [{{ entry.actions }}]({{ entry.contributions }}) | [{{ entry.user }}](http://{{ entry.user }}) |
 {% endfor %}
 
 ## Colophon
 
-Data is gathered from the [Active users list]({{ url }}) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on {{ datestamp }} at {{ timestamp }}.
+Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on {{ datestamp }} at {{ timestamp }}.
 
 ## License
 
