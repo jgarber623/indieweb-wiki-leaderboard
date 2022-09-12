@@ -3,10 +3,9 @@
 const fs = require('node:fs');
 
 const axios = require('axios').default;
-const leaderboard = require('../data/leaderboard.json');
+const users = require('../data/users.json');
 
 const outputPath = 'data/users';
-const users = leaderboard.map(({ user }) => user);
 
 const setWorkflowCommand = status => {
   switch(Number(String(status)[0])) {

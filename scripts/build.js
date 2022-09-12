@@ -2,35 +2,25 @@
 
 const fs = require('node:fs');
 
-const { JSDOM } = require('jsdom');
 const { Liquid } = require('liquidjs');
+const { getActiveUsers, getAllUsers } = require('../src/users.js');
 
 const engine = new Liquid();
 
-const url = 'https://indieweb.org/Special:ActiveUsers';
+(async () => {
+  const date = new Date();
+  const datestamp = date.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric'});
+  const timestamp = date.toLocaleTimeString('en-GB', { timeZone: 'UTC', timeZoneName: 'short' });
 
-const date = new Date();
-const datestamp = date.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric'});
-const timestamp = date.toLocaleTimeString('en-GB', { timeZone: 'UTC', timeZoneName: 'short' });
-
-JSDOM.fromURL(url).then(dom => {
-  const items = dom.window.document.querySelectorAll('#mw-content-text ul li');
-
-  const leaderboard = Array.from(items).map(item => {
-    const user = item.querySelector('.mw-userlink bdi').textContent.trim().toLowerCase().replace(/\s/, '/');
-    const contributions = item.querySelector('.mw-usertoollinks-contribs').href;
-    const actions = item.textContent.trim().match(/\[(?<count>\d+) actions? in the last 30 days\]$/);
-
-    return {
-      user,
-      contributions,
-      actions: Number(actions.groups.count)
-    };
-  }).sort((a, b) => b.actions - a.actions);
+  const leaderboard = await getActiveUsers();
 
   fs.writeFileSync('data/leaderboard.json', JSON.stringify(leaderboard, null, 2));
 
   engine
-    .renderFile('README.md.liquid', { leaderboard, datestamp, timestamp, url })
+    .renderFile('README.md.liquid', { leaderboard, datestamp, timestamp })
     .then(data => fs.writeFileSync('README.md', data));
-});
+
+  const users = await getAllUsers();
+
+  fs.writeFileSync('data/users.json', JSON.stringify(users, null, 2));
+})();
