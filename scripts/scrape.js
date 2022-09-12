@@ -20,8 +20,6 @@ const setWorkflowCommand = status => {
 
 Promise
   .all(users.map(profile => {
-    console.log(`📡 Parsing ${profile}...`);
-
     return axios.get('https://micromicro.cc/search', {
       headers: { 'Accept': 'application/json' },
       params: { url: `http://${profile}` }
