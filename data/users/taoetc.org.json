@@ -1,0 +1,106 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "photo": [
+          {
+            "value": "https://www.gravatar.com/avatar/58b573d3eac03131faee739dfc7b360a?s=300",
+            "alt": ""
+          }
+        ],
+        "name": [
+          "Beto Dealmeida"
+        ],
+        "url": [
+          "https://taoetc.org/"
+        ],
+        "email": [
+          "mailto:roberto@dealmeida.net"
+        ],
+        "street-address": [
+          "PO BOX 644"
+        ],
+        "locality": [
+          "Bodega Bay"
+        ],
+        "region": [
+          "CA"
+        ],
+        "postal-code": [
+          "94923"
+        ],
+        "country-name": [
+          "USA"
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "authorization_endpoint": [
+      "https://taoetc.org/auth"
+    ],
+    "token_endpoint": [
+      "https://taoetc.org/token"
+    ],
+    "stylesheet": [
+      "https://unpkg.com/chota@latest"
+    ],
+    "me": [
+      "gemini://taoetc.org/",
+      "https://blog.taoetc.org/",
+      "https://2c.taoetc.org/@beto",
+      "https://thefishermenandthepriestess.com/",
+      "https://github.com/betodealmeida"
+    ]
+  },
+  "rel-urls": {
+    "https://taoetc.org/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://taoetc.org/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://unpkg.com/chota@latest": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "gemini://taoetc.org/": {
+      "rels": [
+        "me"
+      ],
+      "text": "Gemini"
+    },
+    "https://blog.taoetc.org/": {
+      "rels": [
+        "me"
+      ],
+      "text": "Blog"
+    },
+    "https://2c.taoetc.org/@beto": {
+      "rels": [
+        "me"
+      ],
+      "text": "Mastodon"
+    },
+    "https://thefishermenandthepriestess.com/": {
+      "rels": [
+        "me"
+      ],
+      "text": "Music"
+    },
+    "https://github.com/betodealmeida": {
+      "rels": [
+        "me"
+      ],
+      "text": "Code"
+    }
+  }
+}

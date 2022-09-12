@@ -1,0 +1,79 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "name": [
+          "superkuh"
+        ],
+        "url": [
+          "http://www.superkuh.com/"
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "stylesheet": [
+      "http://superkuh.com/meh.css"
+    ],
+    "alternate": [
+      "http://superkuh.com/rss.xml",
+      "http://superkuh.com/blog/rss.xml",
+      "http://superkuh.com/rss-all.xml"
+    ],
+    "webmention": [
+      "http://superkuh.com/webmention"
+    ],
+    "me": [
+      "mailto:indieauth@superkuh.com",
+      "http://www.superkuh.com/"
+    ]
+  },
+  "rel-urls": {
+    "http://superkuh.com/meh.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "http://superkuh.com/rss.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "superkuh's latest library documents",
+      "type": "application/rss+xml"
+    },
+    "http://superkuh.com/blog/rss.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "superkuh's latest blog posts",
+      "type": "application/rss+xml"
+    },
+    "http://superkuh.com/rss-all.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "all superkuh's blog posts",
+      "type": "application/rss+xml"
+    },
+    "http://superkuh.com/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "mailto:indieauth@superkuh.com": {
+      "rels": [
+        "me"
+      ]
+    },
+    "http://www.superkuh.com/": {
+      "rels": [
+        "me"
+      ],
+      "text": "superkuh"
+    }
+  }
+}

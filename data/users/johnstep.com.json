@@ -1,0 +1,37 @@
+{
+  "items": [],
+  "rels": {
+    "openid.server": [
+      "https://openid.indieauth.com/openid"
+    ],
+    "openid.delegate": [
+      "http://johnstep.com/"
+    ],
+    "me": [
+      "https://twitter.com/johnstep",
+      "https://github.com/johnstep"
+    ]
+  },
+  "rel-urls": {
+    "https://openid.indieauth.com/openid": {
+      "rels": [
+        "openid.server"
+      ]
+    },
+    "http://johnstep.com/": {
+      "rels": [
+        "openid.delegate"
+      ]
+    },
+    "https://twitter.com/johnstep": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://github.com/johnstep": {
+      "rels": [
+        "me"
+      ]
+    }
+  }
+}

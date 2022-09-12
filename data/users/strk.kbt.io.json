@@ -1,0 +1,56 @@
+{
+  "items": [],
+  "rels": {
+    "stylesheet": [
+      "http://strk.kbt.io/style.css"
+    ],
+    "openid2.provider": [
+      "https://id.kbt.io/"
+    ],
+    "openid2.local_id": [
+      "https://strk.kbt.io/openid/"
+    ],
+    "me": [
+      "mailto:strk@kbt.io"
+    ],
+    "pgpkey": [
+      "http://strk.kbt.io/strk.pubkey.gpg"
+    ],
+    "authorization_endpoint": [
+      "https://id.kbt.io/indieauth/"
+    ]
+  },
+  "rel-urls": {
+    "http://strk.kbt.io/style.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://id.kbt.io/": {
+      "rels": [
+        "openid2.provider"
+      ]
+    },
+    "https://strk.kbt.io/openid/": {
+      "rels": [
+        "openid2.local_id"
+      ]
+    },
+    "mailto:strk@kbt.io": {
+      "rels": [
+        "me"
+      ]
+    },
+    "http://strk.kbt.io/strk.pubkey.gpg": {
+      "rels": [
+        "pgpkey"
+      ]
+    },
+    "https://id.kbt.io/indieauth/": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    }
+  }
+}

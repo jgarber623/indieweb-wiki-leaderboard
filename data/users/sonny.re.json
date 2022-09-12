@@ -1,0 +1,104 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "url": [
+          "https://sonny.re/"
+        ],
+        "photo": [
+          {
+            "value": "https://sonny.re/static/avatar.jpg",
+            "alt": "avatar"
+          }
+        ],
+        "name": [
+          "Sonny Piers"
+        ]
+      },
+      "id": "header"
+    }
+  ],
+  "rels": {
+    "icon": [
+      "https://sonny.re/static/avatar.jpg"
+    ],
+    "authorization_endpoint": [
+      "https://sonny.re/authorize"
+    ],
+    "token_endpoint": [
+      "https://sonny.re/token"
+    ],
+    "micropub": [
+      "https://sonny.re/micropub"
+    ],
+    "webmention": [
+      "https://sonny.re/webmention"
+    ],
+    "alternate": [
+      "https://sonny.re/feed.json",
+      "https://sonny.re/feed.atom",
+      "https://sonny.re/feed.rss"
+    ],
+    "tag": [
+      "https://sonny.re/tag/linux"
+    ]
+  },
+  "rel-urls": {
+    "https://sonny.re/static/avatar.jpg": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/jpeg"
+    },
+    "https://sonny.re/authorize": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://sonny.re/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://sonny.re/micropub": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://sonny.re/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://sonny.re/feed.json": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Sonny Piers",
+      "type": "application/json"
+    },
+    "https://sonny.re/feed.atom": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Sonny Piers",
+      "type": "application/atom+xml"
+    },
+    "https://sonny.re/feed.rss": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Sonny Piers",
+      "type": "application/rss+xml"
+    },
+    "https://sonny.re/tag/linux": {
+      "rels": [
+        "tag"
+      ],
+      "text": "linux"
+    }
+  }
+}
