@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const fs = require('node:fs');
+const timers = require('node:timers/promises');
 
 const axios = require('axios').default;
 const users = require('../data/users.json');
@@ -19,7 +20,9 @@ const setWorkflowCommand = status => {
 };
 
 Promise
-  .all(users.map(profile => {
+  .all(users.map(async (profile) => {
+    await timers.setTimeout(Math.floor(Math.random() * (60 - 1) + 1) * 1000);
+
     return axios.get('https://micromicro.cc/search', {
       headers: { 'Accept': 'application/json' },
       params: { url: `http://${profile}` }
