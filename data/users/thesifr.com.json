@@ -1,0 +1,82 @@
+{
+  "items": [],
+  "rels": {
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "microsub": [
+      "https://aperture.p3k.io/microsub/614"
+    ],
+    "stylesheet": [
+      "https://thesifr.com/normalize.css",
+      "https://thesifr.com/concrete.css",
+      "https://thesifr.com/footer.css"
+    ],
+    "me": [
+      "https://thesifr.com/",
+      "mailto:sifr@thesifr.com",
+      "https://github.com/sifrnihilum",
+      "https://social.linux.pizza/@alchemistswater"
+    ]
+  },
+  "rel-urls": {
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://aperture.p3k.io/microsub/614": {
+      "rels": [
+        "microsub"
+      ]
+    },
+    "https://thesifr.com/normalize.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://thesifr.com/concrete.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://thesifr.com/footer.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://thesifr.com/": {
+      "rels": [
+        "me"
+      ],
+      "text": "thesifr.com"
+    },
+    "mailto:sifr@thesifr.com": {
+      "rels": [
+        "me"
+      ],
+      "text": "sifr@thesifr.com"
+    },
+    "https://github.com/sifrnihilum": {
+      "rels": [
+        "me"
+      ],
+      "text": "sifrnihilum"
+    },
+    "https://social.linux.pizza/@alchemistswater": {
+      "rels": [
+        "me"
+      ],
+      "text": "Mastodon"
+    }
+  }
+}

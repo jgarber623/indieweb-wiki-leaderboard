@@ -1,0 +1,61 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "name": [
+          "Guilherme Puida"
+        ],
+        "note": [
+          "IndieWeb enthusiast."
+        ],
+        "uid": [
+          "https://puida.xyz/"
+        ],
+        "url": [
+          "https://puida.xyz/",
+          "https://github.com/guilherme-puida"
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "stylesheet": [
+      "https://puida.xyz/assets/5de6200b.eaa64fbc.css"
+    ],
+    "me": [
+      "https://github.com/guilherme-puida"
+    ]
+  },
+  "rel-urls": {
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://puida.xyz/assets/5de6200b.eaa64fbc.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://github.com/guilherme-puida": {
+      "rels": [
+        "me"
+      ],
+      "text": "@guilherme-puida"
+    }
+  }
+}

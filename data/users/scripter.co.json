@@ -1,0 +1,510 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-feed"
+      ],
+      "properties": {
+        "url": [
+          "https://scripter.co/"
+        ],
+        "author": [
+          "https://scripter.co/"
+        ],
+        "name": [
+          "A Scripter's Notes"
+        ]
+      },
+      "children": [
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Version controlling Jenkins config"
+            ],
+            "url": [
+              "https://scripter.co/version-controlling-jenkins-config/"
+            ],
+            "category": [
+              "unix",
+              "git",
+              "jenkins"
+            ],
+            "published": [
+              "2022-07-20T00:18:00-0400"
+            ],
+            "summary": [
+              "Jenkins is an amazing free and open source continuous integration and\ndeployment software. But its primary means of configuration is a web\nUI, and recently that cost me a lot of debug time. That set me down\nthe path of figuring out a way to version control the Jenkins config\n(the $JENKINS_HOME directory)."
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Using Git Delta with Magit"
+            ],
+            "url": [
+              "https://scripter.co/using-git-delta-with-magit/"
+            ],
+            "category": [
+              "emacs",
+              "git",
+              "magit",
+              "diff"
+            ],
+            "published": [
+              "2022-07-06T22:04:00-0400"
+            ],
+            "summary": [
+              "Git Delta is a command line utility that beautifies git diffs in the\nterminal. But did you know that it can do the same in Magit too?"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Gujarati Transliteration"
+            ],
+            "url": [
+              "https://scripter.co/gujarati-transliteration/"
+            ],
+            "category": [
+              "emacs",
+              "Gujarati in Emacs",
+              "gujarati",
+              "transliteration"
+            ],
+            "published": [
+              "2022-06-27T18:43:00-0400"
+            ],
+            "summary": [
+              "You can phonetically write a non-English language on an English\nkeyword in Emacs, and that transforms into that non-English\nscript. This is called transliteration, and I demonstrate that for\nthe Gujarati language in this post."
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Cleaning up ${GOPATH}/pkg/"
+            ],
+            "url": [
+              "https://scripter.co/cleaning-up-gopath-pkg/"
+            ],
+            "category": [
+              "programming",
+              "golang"
+            ],
+            "published": [
+              "2022-06-25T10:48:00-0400"
+            ],
+            "summary": [
+              "Use go clean -modcache to clean up all the old auto-downloaded Go\nmodules in ${GOPATH}/pkg/. That’s all you need to know. Rest of the\npost gives just the history of how I got there."
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "View GitHub Pull Requests in Magit"
+            ],
+            "url": [
+              "https://scripter.co/view-github-pull-requests-in-magit/"
+            ],
+            "category": [
+              "emacs",
+              "elisp",
+              "git",
+              "magit",
+              "github",
+              "git-reference"
+            ],
+            "published": [
+              "2022-06-23T17:51:00-0400"
+            ],
+            "summary": [
+              "How to view GitHub Pull Request branches locally in the cloned repo,\nand more importantly, how to do that automatically from within Emacs."
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Gujarati fonts in Emacs"
+            ],
+            "url": [
+              "https://scripter.co/gujarati-fonts-in-emacs/"
+            ],
+            "category": [
+              "emacs",
+              "Gujarati in Emacs",
+              "gujarati",
+              "font"
+            ],
+            "published": [
+              "2022-06-19T01:31:00-0400"
+            ],
+            "summary": [
+              "Setting a different font for a specific script or language in Emacs."
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Emacs Lisp: Advice Combinators"
+            ],
+            "url": [
+              "https://scripter.co/emacs-lisp-advice-combinators/"
+            ],
+            "category": [
+              "emacs",
+              "elisp",
+              "advice",
+              "plantuml"
+            ],
+            "published": [
+              "2022-06-17T21:30:00-0400"
+            ],
+            "updated": [
+              "[Sat Jun 18, 2022]"
+            ],
+            "summary": [
+              "My diagrammatic take on summarizing all the Emacs advice combinators."
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Org: Show only Post subtree headings"
+            ],
+            "url": [
+              "https://scripter.co/org-show-only-post-subtree-headings/"
+            ],
+            "category": [
+              "emacs",
+              "org",
+              "elisp",
+              "subtree",
+              "looping",
+              "advice"
+            ],
+            "published": [
+              "2022-06-16T00:21:00-0400"
+            ],
+            "summary": [
+              "How to define a custom org-global-cycle-like command that collapses\nonly the Org subtrees with specific properties."
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Firefox: Always open a New Tab after Current"
+            ],
+            "url": [
+              "https://scripter.co/firefox-always-open-a-new-tab-after-current/"
+            ],
+            "category": [
+              "web",
+              "firefox",
+              "tab",
+              "add-on"
+            ],
+            "published": [
+              "2022-06-15T02:08:00-0400"
+            ],
+            "summary": [
+              "The default behavior of Firefox opening new tabs from links had been\ntroubling me for a while .. it was time I tried to do something about\nit."
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Saving Python pip dependencies"
+            ],
+            "url": [
+              "https://scripter.co/saving-python-pip-dependencies/"
+            ],
+            "category": [
+              "web",
+              "HTML5 Validator",
+              "html",
+              "validator",
+              "python",
+              "pip",
+              "netlify"
+            ],
+            "published": [
+              "2022-06-14T00:38:00-0400"
+            ],
+            "summary": [
+              "How I generated the Python dependencies file requirements.txt so\nthat Netlify can install and run the HTML5 Validator before deploying\nthis site."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "url": [
+          "https://alongtheray.social/users/blogroll"
+        ],
+        "name": [
+          "@blogroll"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "url": [
+          "https://mastodon.technology/@kaushalmodi"
+        ],
+        "name": [
+          "@kaushalmodi"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "url": [
+          "https://mastodon.technology/@kaushalmodi"
+        ],
+        "name": [
+          "@kaushalmodi"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "url": [
+          "https://alongtheray.social/users/blogroll"
+        ],
+        "name": [
+          "@blogroll"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "photo": [
+          {
+            "value": "https://scripter.co/images/me--optimized.1cdf3eb11e9bf7be99d0292930537426d0ffff3f03c0a489a4c45034aebbd5be.jpg",
+            "alt": "Photo of Kaushal Modi"
+          }
+        ],
+        "name": [
+          "Kaushal Modi"
+        ],
+        "url": [
+          "https://scripter.co/"
+        ],
+        "email": [
+          "mailto:kaushal.modi@gmail.com"
+        ],
+        "note": [
+          "A coder, a geek who likes playing with command-line tools. Uses Emacs."
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "profile": [
+      "https://gmpg.org/xfn/11"
+    ],
+    "stylesheet": [
+      "https://scripter.co/css/refined.min.2b8a165c1548d4a3fac47edd6e34071f93872f1131116f68d96d3b02ae7e15da.css"
+    ],
+    "preload": [
+      "https://scripter.co/css/refined.min.2b8a165c1548d4a3fac47edd6e34071f93872f1131116f68d96d3b02ae7e15da.css",
+      "https://scripter.co/js/responsive-nav-orig.min.e2b5f2a956b488f466da513820636134defdc38b90ed566248960593f2bb4ba5.js",
+      "https://scripter.co/js/libs/fa/fontawesome-all.min.8ac746494d9cdfb9bdf9d92e51cdd8b855ab69bcfc81918e2c6d95e7372b8529.js"
+    ],
+    "apple-touch-icon": [
+      "https://scripter.co/apple-touch-icon.dc2be6e42401451e087de7a1bc56cf3e195d4635607ce67031cf30d2ae7a812c.png"
+    ],
+    "icon": [
+      "https://scripter.co/favicon-32x32.c522b7406f156d650a1ade52c1dbb471775858504b32f9faad28b4ba063f7769.png",
+      "https://scripter.co/favicon-16x16.30da33df67e4ae4a58e94188d1d05862d27dbaaf5d2dd661b3b31810ea0005ee.png"
+    ],
+    "manifest": [
+      "https://scripter.co/manifest.928643512486c5d2126650a17b7d7d09999bb442454484735a0a43cc1df7136c.json"
+    ],
+    "mask-icon": [
+      "https://scripter.co/safari-pinned-tab.2e3872a4e4cd9905da5e154950bfb4121c4fcf26b3c442335cfbc83ed12cb3e1.svg"
+    ],
+    "me": [
+      "https://github.com/kaushalmodi/",
+      "https://mastodon.technology/@kaushalmodi",
+      "mailto:kaushal.modi@gmail.com"
+    ],
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "pingback": [
+      "https://webmention.io/scripter.co/xmlrpc"
+    ],
+    "webmention": [
+      "https://webmention.io/scripter.co/webmention"
+    ],
+    "alternate": [
+      "https://scripter.co/index.xml",
+      "https://scripter.co/atom.xml",
+      "https://scripter.co/jf2feed.json"
+    ]
+  },
+  "rel-urls": {
+    "https://gmpg.org/xfn/11": {
+      "rels": [
+        "profile"
+      ]
+    },
+    "https://scripter.co/css/refined.min.2b8a165c1548d4a3fac47edd6e34071f93872f1131116f68d96d3b02ae7e15da.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://scripter.co/js/responsive-nav-orig.min.e2b5f2a956b488f466da513820636134defdc38b90ed566248960593f2bb4ba5.js": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://scripter.co/js/libs/fa/fontawesome-all.min.8ac746494d9cdfb9bdf9d92e51cdd8b855ab69bcfc81918e2c6d95e7372b8529.js": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://scripter.co/apple-touch-icon.dc2be6e42401451e087de7a1bc56cf3e195d4635607ce67031cf30d2ae7a812c.png": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://scripter.co/favicon-32x32.c522b7406f156d650a1ade52c1dbb471775858504b32f9faad28b4ba063f7769.png": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/png"
+    },
+    "https://scripter.co/favicon-16x16.30da33df67e4ae4a58e94188d1d05862d27dbaaf5d2dd661b3b31810ea0005ee.png": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/png"
+    },
+    "https://scripter.co/manifest.928643512486c5d2126650a17b7d7d09999bb442454484735a0a43cc1df7136c.json": {
+      "rels": [
+        "manifest"
+      ]
+    },
+    "https://scripter.co/safari-pinned-tab.2e3872a4e4cd9905da5e154950bfb4121c4fcf26b3c442335cfbc83ed12cb3e1.svg": {
+      "rels": [
+        "mask-icon"
+      ]
+    },
+    "https://github.com/kaushalmodi/": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://mastodon.technology/@kaushalmodi": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://webmention.io/scripter.co/xmlrpc": {
+      "rels": [
+        "pingback"
+      ]
+    },
+    "https://webmention.io/scripter.co/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://scripter.co/index.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "RSS for A Scripter's Notes",
+      "type": "application/rss+xml"
+    },
+    "https://scripter.co/atom.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Atom for A Scripter's Notes",
+      "type": "application/atom+xml"
+    },
+    "https://scripter.co/jf2feed.json": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Jf2feed for A Scripter's Notes",
+      "type": "application/jf2feed+json"
+    },
+    "mailto:kaushal.modi@gmail.com": {
+      "rels": [
+        "me"
+      ],
+      "text": "kaushal.modi@gmail.com"
+    }
+  }
+}

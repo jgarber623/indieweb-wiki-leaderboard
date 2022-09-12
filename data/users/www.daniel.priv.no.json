@@ -1,0 +1,188 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "photo": [
+          "https://www.daniel.priv.no/",
+          {
+            "value": "https://www.ctrl.blog/media/people/daniel.jpeg",
+            "alt": "Daniel’s profile photo"
+          }
+        ],
+        "name": [
+          "Daniel Aleksandersen"
+        ],
+        "url": [
+          "https://www.daniel.priv.no/"
+        ],
+        "given-name": [
+          "Daniel"
+        ],
+        "family-name": [
+          "Aleksandersen"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-feed"
+      ],
+      "properties": {},
+      "children": [
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "url": [
+              "https://www.ctrl.blog/entry/tplink-band-steering.html"
+            ],
+            "name": [
+              "TP-Link band-steers 2,4 to 5 GHz Wi-Fi even when the radio is off"
+            ],
+            "summary": [
+              "TP-Link Wi-Fi access points mindlessly band-steer clients off 2,4 GHz to the 5 GHz radio; even during periods when the 5 GHz radio is powered off."
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "url": [
+              "https://www.ctrl.blog/entry/troubleshoot-stuttering.html"
+            ],
+            "name": [
+              "Finally fixed my PC’s persistent graphics and audio stutters"
+            ],
+            "summary": [
+              "I experienced intermittent stuttering when my PC ran Linux and Windows. A mix of hardware, firmware, and driver issues created a difficult to diagnose problem."
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "url": [
+              "https://www.ctrl.blog/entry/dict-protocol-privacy.html"
+            ],
+            "name": [
+              "Stop using DICT dictionary apps (such as GNOME/MATE Dictionary)"
+            ],
+            "summary": [
+              "MATE Desktop installs a Dictionary app (a fork of the retired GNOME Dictionary app). The apps don’t protect your pricacy, and you might want to stop using them."
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "url": [
+              "https://www.ctrl.blog/entry/gigabit-router.html"
+            ],
+            "name": [
+              "“Gigabit Router” doesn’t mean it can deliver gigabit internet speed"
+            ],
+            "summary": [
+              "Make sure you buy a network router that can fully exploit your gigabit internet connection. Many routers say gigabit on the box, but doesn’t deliver gigabit speed."
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "url": [
+              "https://www.ctrl.blog/entry/teamviewer-font-privacy.html"
+            ],
+            "name": [
+              "TeamViewer installs suspicious font only useful for web fingerprinting"
+            ],
+            "summary": [
+              "A weird almost unreadable font file bundled with TeamViewer for Windows software lets website detect if you’ve installed the software. Raises privacy concerns."
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "url": [
+              "https://www.ctrl.blog/entry/firefox-translations.html"
+            ],
+            "name": [
+              "On-device browser translations with Firefox Translations"
+            ],
+            "summary": [
+              "Firefox can now do offline and privacy-preserving translation of eight languages with more on the way. Powered by open-source and machine-learning."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "rels": {
+    "dns-prefetch": [
+      "https://www.ctrl.blog/"
+    ],
+    "alternate": [
+      "https://feed.ctrl.blog/latest.atom"
+    ],
+    "canonical": [
+      "https://www.daniel.priv.no/"
+    ],
+    "stylesheet": [
+      "https://www.daniel.priv.no/stylesheet.css"
+    ],
+    "webmention": [
+      "https://webmention.io/www.daniel.priv.no/webmention"
+    ],
+    "me": [
+      "https://twitter.com/DaAleksandersen"
+    ]
+  },
+  "rel-urls": {
+    "https://www.ctrl.blog/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
+    "https://feed.ctrl.blog/latest.atom": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/atom+xml"
+    },
+    "https://www.daniel.priv.no/": {
+      "rels": [
+        "canonical"
+      ]
+    },
+    "https://www.daniel.priv.no/stylesheet.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://webmention.io/www.daniel.priv.no/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://twitter.com/DaAleksandersen": {
+      "rels": [
+        "me"
+      ],
+      "text": "Twitter"
+    }
+  }
+}

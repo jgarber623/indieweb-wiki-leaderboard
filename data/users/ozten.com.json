@@ -1,0 +1,40 @@
+{
+  "items": [],
+  "rels": {
+    "stylesheet": [
+      "https://ozten.com/style/reset.css",
+      "https://ozten.com/style/ozten.css"
+    ],
+    "alternate": [
+      "https://ozten.com/feed/"
+    ],
+    "me": [
+      "https://mastodon.technology/@ozten"
+    ]
+  },
+  "rel-urls": {
+    "https://ozten.com/style/reset.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://ozten.com/style/ozten.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://ozten.com/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Ozten.com feed",
+      "type": "application/rss+xml"
+    },
+    "https://mastodon.technology/@ozten": {
+      "rels": [
+        "me"
+      ],
+      "text": "Mastodon"
+    }
+  }
+}

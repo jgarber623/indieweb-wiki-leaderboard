@@ -1,0 +1,358 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "静态检查能力升级 - ESLint + TypeScript 自定义规则"
+        ],
+        "published": [
+          "2022-01-19"
+        ],
+        "summary": [
+          "一个 BUG 引起的思考 之前修过一个 bug，由于 class 组件上的方法没有 @autobind，也没有使用箭头函数，导致取 this 时候报错。大致示意如下： 有没有办法静态分析出来这种问题呢？ 使用 typescript-eslint…Read more →"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "为 Pintora 写一个 VSCode 插件"
+        ],
+        "published": [
+          "2022-01-15"
+        ],
+        "summary": [
+          "Pintora 是我最近在折腾的一个开源项目，类似于 Mermaid.js 和 PlantUML，由文字生成图表。 光是有在线编辑器还不太够，花了几天折腾了一个 VSCode 插件 - pintora-vscode…Read more →"
+        ],
+        "photo": [
+          "https://i.imgur.com/kyQEexU.png"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "懒惰是美德 ✌ 别再用手拖时序图了"
+        ],
+        "published": [
+          "2021-11-24"
+        ],
+        "summary": [
+          "Diagram as Text 可以省去手绘 UML 图表时调整布局等的时间。\n通过文本 DSL 生成图表。文本本身也具有一些可读性，以及（划重点！）对 git diff 友好。在不断演变的技术文档内使用还是比较合理的。 适合什么情况 画常用的几种 UML…Read more →"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Chromium 90, 给前端用的 devtools 的前端写得有性能问题"
+        ],
+        "published": [
+          "2021-04-25"
+        ],
+        "summary": [
+          "以此拗口又搞笑的标题纪念一下人生第一次给 Chromium 项目提的 issue，在学会了 tracing 工具的使用方式之后，也会有更多提 bug issue 的机会。 缘起 4月中旬后的一周里，感觉使用 Chrome Devtools…Read more →"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "TS 实现一个可在 React 项目中使用的简单依赖注入系统"
+        ],
+        "published": [
+          "2021-01-21"
+        ],
+        "summary": [
+          "简介，什么是依赖注入 在说依赖注入之前，我们发现有个概念叫做 “控制反转”经常一起出现，它们区别是： 控制反转(Inversion of Control)是一种设计思想 依赖注入(Dependency Injection…Read more →"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "万物皆可 fzf"
+        ],
+        "published": [
+          "2021-01-08"
+        ],
+        "summary": [
+          "fzf 是一个速度和适用范围都极好的模糊搜索工具，借助 UNIX 管道，可以接入日常几乎所有终端 CLI 操作中，对所有的 list 都能有美好的可交互式模糊过滤体验。 It's an interactive Unix filter for command-line that…Read more →"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Caddy 2 和 Cloudflare 配合"
+        ],
+        "published": [
+          "2020-11-06"
+        ],
+        "summary": [
+          "最近重装云主机，需要重新安装和部署以前一些个人站点，我的需求比较简单，一般就是部署静态文件或是 Vue/React SSR 应用，还有一些尝鲜的开源 self-host 项目(miniflux / plausible analytics…Read more →"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "博客改写迁移记"
+        ],
+        "published": [
+          "2020-10-24"
+        ],
+        "summary": [
+          "最近看到 Digital Garden 这个 Gatsby 主题，觉得 Gatsby 这种轻易转换不同数据源（一般多通过 remark 支持 markdown 文件， 作者自己订制支持了 Roam Research）的能力很不错。 决定迁移一下自己旧的 Hexo…Read more →"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "使用 zimfw 作为 zsh 配置框架"
+        ],
+        "published": [
+          "2020-10-14"
+        ],
+        "summary": [
+          "之前使用 oh-my-zsh 的自带 git/nvm 等插件有时候有性能问题，同时据说其框架本身相比其他一些主打速度的配置框架(prezto/zimfw 等)也会慢一点。 稍微折腾了一下，使用 zimfw 作为 zsh…Read more →"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Hiding My Heart 🎵"
+        ],
+        "published": [
+          "2020-09-04"
+        ],
+        "summary": [
+          "一首词曲创作和演唱都很优秀的乡谣，出自 Brandi Carlile 2007 年的专辑 The Story 。 The Story 词曲都由 Tim Hanseroth (Timothy Jay Hanseroth) 所做，他是与 Brandi Carlile…Read more →"
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "preconnect": [
+      "https://www.google-analytics.com/"
+    ],
+    "dns-prefetch": [
+      "https://www.google-analytics.com/"
+    ],
+    "alternate": [
+      "http://www.hikerpig.cn/rss.xml"
+    ],
+    "icon": [
+      "http://www.hikerpig.cn/favicon-32x32.png?v=010f7f2435f789857c3869d667cf9d0c"
+    ],
+    "manifest": [
+      "http://www.hikerpig.cn/manifest.webmanifest"
+    ],
+    "apple-touch-icon": [
+      "http://www.hikerpig.cn/icons/icon-48x48.png?v=010f7f2435f789857c3869d667cf9d0c",
+      "http://www.hikerpig.cn/icons/icon-72x72.png?v=010f7f2435f789857c3869d667cf9d0c",
+      "http://www.hikerpig.cn/icons/icon-96x96.png?v=010f7f2435f789857c3869d667cf9d0c",
+      "http://www.hikerpig.cn/icons/icon-144x144.png?v=010f7f2435f789857c3869d667cf9d0c",
+      "http://www.hikerpig.cn/icons/icon-192x192.png?v=010f7f2435f789857c3869d667cf9d0c",
+      "http://www.hikerpig.cn/icons/icon-256x256.png?v=010f7f2435f789857c3869d667cf9d0c",
+      "http://www.hikerpig.cn/icons/icon-384x384.png?v=010f7f2435f789857c3869d667cf9d0c",
+      "http://www.hikerpig.cn/icons/icon-512x512.png?v=010f7f2435f789857c3869d667cf9d0c"
+    ],
+    "sitemap": [
+      "http://www.hikerpig.cn/sitemap-index.xml"
+    ],
+    "preload": [
+      "http://www.hikerpig.cn/webpack-runtime-82520de69d3dbe1c926e.js",
+      "http://www.hikerpig.cn/framework-2a5fd9c14ff162d99fbb.js",
+      "http://www.hikerpig.cn/app-a269f5512e2f162393b5.js",
+      "http://www.hikerpig.cn/commons-d7f8635672769581705e.js",
+      "http://www.hikerpig.cn/23c3d3a3a2879427593569aafa02d04d4d5b9e2a-ceaaec4d60331c74df95.js",
+      "http://www.hikerpig.cn/component---src-templates-index-js-6c029ad1dacbc22d4e03.js",
+      "http://www.hikerpig.cn/page-data/index/page-data.json",
+      "http://www.hikerpig.cn/page-data/sq/d/1425477374.json",
+      "http://www.hikerpig.cn/page-data/sq/d/3128451518.json",
+      "http://www.hikerpig.cn/page-data/app-data.json",
+      "https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap",
+      "https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css",
+      "https://cdn.jsdelivr.net/npm/prism-themes@1.8.0/themes/prism-hopscotch.css"
+    ],
+    "me": [
+      "https://github.com/hikerpig"
+    ]
+  },
+  "rel-urls": {
+    "https://www.google-analytics.com/": {
+      "rels": [
+        "preconnect"
+      ]
+    },
+    "http://www.hikerpig.cn/rss.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Hikerpig 万事记",
+      "type": "application/rss+xml"
+    },
+    "http://www.hikerpig.cn/favicon-32x32.png?v=010f7f2435f789857c3869d667cf9d0c": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/png"
+    },
+    "http://www.hikerpig.cn/manifest.webmanifest": {
+      "rels": [
+        "manifest"
+      ]
+    },
+    "http://www.hikerpig.cn/icons/icon-48x48.png?v=010f7f2435f789857c3869d667cf9d0c": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "http://www.hikerpig.cn/icons/icon-72x72.png?v=010f7f2435f789857c3869d667cf9d0c": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "http://www.hikerpig.cn/icons/icon-96x96.png?v=010f7f2435f789857c3869d667cf9d0c": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "http://www.hikerpig.cn/icons/icon-144x144.png?v=010f7f2435f789857c3869d667cf9d0c": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "http://www.hikerpig.cn/icons/icon-192x192.png?v=010f7f2435f789857c3869d667cf9d0c": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "http://www.hikerpig.cn/icons/icon-256x256.png?v=010f7f2435f789857c3869d667cf9d0c": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "http://www.hikerpig.cn/icons/icon-384x384.png?v=010f7f2435f789857c3869d667cf9d0c": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "http://www.hikerpig.cn/icons/icon-512x512.png?v=010f7f2435f789857c3869d667cf9d0c": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "http://www.hikerpig.cn/sitemap-index.xml": {
+      "rels": [
+        "sitemap"
+      ],
+      "type": "application/xml"
+    },
+    "http://www.hikerpig.cn/webpack-runtime-82520de69d3dbe1c926e.js": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "http://www.hikerpig.cn/framework-2a5fd9c14ff162d99fbb.js": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "http://www.hikerpig.cn/app-a269f5512e2f162393b5.js": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "http://www.hikerpig.cn/commons-d7f8635672769581705e.js": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "http://www.hikerpig.cn/23c3d3a3a2879427593569aafa02d04d4d5b9e2a-ceaaec4d60331c74df95.js": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "http://www.hikerpig.cn/component---src-templates-index-js-6c029ad1dacbc22d4e03.js": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "http://www.hikerpig.cn/page-data/index/page-data.json": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "http://www.hikerpig.cn/page-data/sq/d/1425477374.json": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "http://www.hikerpig.cn/page-data/sq/d/3128451518.json": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "http://www.hikerpig.cn/page-data/app-data.json": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap": {
+      "rels": [
+        "preload"
+      ],
+      "media": "min-width: 1024px"
+    },
+    "https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://cdn.jsdelivr.net/npm/prism-themes@1.8.0/themes/prism-hopscotch.css": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://github.com/hikerpig": {
+      "rels": [
+        "me"
+      ],
+      "text": "hikerpig"
+    }
+  }
+}

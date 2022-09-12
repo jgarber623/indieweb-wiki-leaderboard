@@ -1,0 +1,39 @@
+{
+  "items": [],
+  "rels": {
+    "stylesheet": [
+      "https://toni.mattis.berlin/fonts.css",
+      "https://toni.mattis.berlin/main.css"
+    ],
+    "authorization_endpoint": [
+      "https://toni.mattis.berlin/auth/auth"
+    ],
+    "token_endpoint": [
+      "https://toni.mattis.berlin/auth/token"
+    ]
+  },
+  "rel-urls": {
+    "https://toni.mattis.berlin/fonts.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://toni.mattis.berlin/main.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://toni.mattis.berlin/auth/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://toni.mattis.berlin/auth/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    }
+  }
+}
