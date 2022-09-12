@@ -1,0 +1,537 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "photo": [
+          {
+            "value": "data:image/jpeg;base64,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",
+            "alt": "A picture of the site author Vincent Pickering"
+          }
+        ],
+        "name": [
+          "Vincent Pickering"
+        ],
+        "pronoun": [
+          "https://en.wiktionary.org/wiki/he#Pronoun"
+        ],
+        "job-title": [
+          "Design Lead"
+        ],
+        "locality": [
+          "Wellington"
+        ],
+        "country-name": [
+          "New Zealand"
+        ],
+        "email": [
+          "mailto:hello@vincentp.me"
+        ],
+        "url": [
+          "https://vincentp.me/",
+          "https://www.github.com/vipickering",
+          "https://www.are.na/vincent-pickering/channels"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-feed"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "<h1 class=\"p-name ma0 pa0 mb3 f3 f1-ns lh-heading\">Lifestream</h1>\n<p class=\"p-summary grey fw3 f6 italic lh-heading mb7 \">A feed of my life</p> \n\n        \n            \n                <article class=\"h-entry ba b-pale-grey br-5 mb5 relative\">\n    \n    <div class=\"pa5 bg-white-t w-100 brt-5\">\n        <div class=\"e-content  f5 ma0 pa0\">\n<p>Had an hour tonight to add in some quality of life code, auto-tagging links and Twitter handle links.</p>\n<p>It has irked me for a while that when using a Micropub client I couldn’t link these up as easily as manually writing the file.</p>\n<p><a href=\"https://github.com/vipickering/vincentp/blob/main/lib/parsers/markdown/markdown.js\">My code is here</a> which you can copy wholesale if you are running Eleventy, just make sure you set the linkify option to true (as well as the code below) or it won’t work.</p>\n<p>I have also had a change of heart around pausing the syndication and webmention servers, so they are back online and I can receive webmentions.</p>\n</div>\n        <time class=\"dt-published db f7 grey\" datetime=\"2020-11-22T08:50:00Z\">\n    <a href=\"https://vincentp.me/notes/2020-11-22-21-50/\" class=\"u-url rm-underline\" title=\"2020-11-22T08:50:00Z\">Sunday, 22 November 2020, 21:50:00 GMT+13</a>\n</time>\n\n    </div>\n</article>\n\n\n            \n        \n            \n                <article class=\"h-entry ba b-pale-grey br-5 mb5 relative\">\n    \n    <div class=\"pa5 bg-white-t w-100 brt-5\">\n        <div class=\"e-content  f5 ma0 pa0\">\n<p>Just a quick update on the redesign, while this is happening all my <a href=\"https://vincentp.me/tags/micropub\">#micropub</a> <a href=\"https://vincentp.me/tags/syndication\">#syndication</a> and <a href=\"https://vincentp.me/tags/webmention\">#webmention</a> functions are paused.</p>\n<p>I won’t be sending or recieveing content for a while as I move the main pillars of the website around.</p>\n<p>The easiest way to follow my content during this period is to <a href=\"https://vincentp.me/feeds\">subscribe to my RSS feed</a>.</p>\n</div>\n        <time class=\"dt-published db f7 grey\" datetime=\"2020-11-07T07:40:00Z\">\n    <a href=\"https://vincentp.me/notes/2020-11-08-09-40/\" class=\"u-url rm-underline\" title=\"2020-11-07T07:40:00Z\">Saturday, 7 November 2020, 20:40:00 GMT+13</a>\n</time>\n\n    </div>\n</article>\n\n\n            \n        \n            \n                <article class=\"h-entry ba b-pale-grey br-5 mb5 relative\">\n    \n    <div class=\"pa5 bg-white-t w-100 brt-5\">\n        <div class=\"e-content  f5 ma0 pa0\">\n<p>Playing whack-a-mole with a few bugs and being a grown-up, before racing to the fun redesign stuff. Being a grown-up is hard.</p>\n</div>\n        <time class=\"dt-published db f7 grey\" datetime=\"2020-10-09T22:40:25Z\">\n    <a href=\"https://vincentp.me/notes/2020/10/10/11-40/\" class=\"u-url rm-underline\" title=\"2020-10-09T22:40:25Z\">Saturday, 10 October 2020, 11:40:25 GMT+13</a>\n</time>\n\n    </div>\n</article>\n\n\n            \n        \n            \n                <article class=\"h-entry ba b-pale-grey br-5 mb5 relative\">\n    \n    <div class=\"pa5 bg-white-t w-100 brt-5\">\n        <div class=\"e-content  f5 ma0 pa0\">\n<p>Today is new Macbook Pro day! Finally got my data migrated from the broken machine and I am back in business, itching to get started on the blog.</p>\n</div>\n        <time class=\"dt-published db f7 grey\" datetime=\"2020-10-07T06:28:53Z\">\n    <a href=\"https://vincentp.me/notes/2020/10/07/19-28/\" class=\"u-url rm-underline\" title=\"2020-10-07T06:28:53Z\">Wednesday, 7 October 2020, 19:28:53 GMT+13</a>\n</time>\n\n    </div>\n</article>\n\n\n            \n        \n            \n                <article class=\"h-entry ba b-pale-grey br-5 mb5 relative\">\n    \n    <div class=\"pa5 bg-white-t w-100 brt-5\">\n        <div class=\"e-content  f5 ma0 pa0\">\n<p>Squinting in to an iPad, using Sidecar so I can do a few things on my broken laptop before the new one arrives… it kinda works. Kinda.</p>\n</div>\n        <time class=\"dt-published db f7 grey\" datetime=\"2020-10-03T04:41:34Z\">\n    <a href=\"https://vincentp.me/notes/2020/10/03/17-41/\" class=\"u-url rm-underline\" title=\"2020-10-03T04:41:34Z\">Saturday, 3 October 2020, 17:41:34 GMT+13</a>\n</time>\n\n    </div>\n</article>\n\n\n            \n        \n            \n                <article class=\"h-entry ba b-pale-grey br-5 mb5 relative\">\n    \n    <div class=\"pa5 bg-white-t w-100 brt-5\">\n        <div class=\"e-content  f5 ma0 pa0\">\n<p>My 2016 MacBook has been slowly dying over the last two years. It started with broken keys and random restarts and today the screen died and it’s borderline useless. This is going to get expensive…</p>\n</div>\n        <time class=\"dt-published db f7 grey\" datetime=\"2020-09-25T04:05:43Z\">\n    <a href=\"https://vincentp.me/notes/2020/09/25/18-05/\" class=\"u-url rm-underline\" title=\"2020-09-25T04:05:43Z\">Friday, 25 September 2020, 16:05:43 GMT+12</a>\n</time>\n\n    </div>\n</article>\n\n\n            \n        \n            \n                <article class=\"h-entry ba b-pale-grey br-5 mb5 relative\">\n    <img src=\"https://vincentp.me/images/blog/2020-09-12/5MCFAcjst.jpg\" class=\"u-photo db w-100\" alt=\"View of the olive grove from the decking\">\n    <div class=\"pa5 bg-white-t w-100 brt-5\">\n        <div class=\"e-content  f5 ma0 pa0\">\n<p>Staying at a cottage in an olive grove, visiting vineyards. Someone has to I suppose.</p>\n</div>\n        <time class=\"dt-published db f7 grey\" datetime=\"2020-09-12T05:24:00Z\">\n    <a href=\"https://vincentp.me/photos/2020/09/12/17-24/\" class=\"u-url rm-underline\" title=\"2020-09-12T05:24:00Z\">Saturday, 12 September 2020, 17:24:00 GMT+12</a>\n</time>\n\n    </div>\n</article>\n\n\n            \n        \n            \n                <article class=\"h-entry ba b-pale-grey br-5 mb5 relative\">\n    \n    <div class=\"pa5 bg-white-t w-100 brt-5\">\n        <div class=\"e-content  f5 ma0 pa0\">\n<p>Fixed that bug causing the 2019 redesign post to get republished in the JSON and XML feeds everytime I deployed the website. Sorry about that!</p>\n</div>\n        <time class=\"dt-published db f7 grey\" datetime=\"2020-09-06T00:52:24Z\">\n    <a href=\"https://vincentp.me/notes/2020/09/06/12-52/\" class=\"u-url rm-underline\" title=\"2020-09-06T00:52:24Z\">Sunday, 6 September 2020, 12:52:24 GMT+12</a>\n</time>\n\n    </div>\n</article>\n\n\n            \n        \n            \n                <article class=\"h-entry ba b-pale-grey br-5 mb5 relative\">\n    \n    <div class=\"pa5 bg-white-t w-100 brt-5\">\n        <div class=\"e-content  f5 ma0 pa0\">\n<p>Bought myself a new dot grid moleskin to design my website on. I find when I step back from the computer my creativity isn’t bound by constraints and my mind can wonder to interesting places</p>\n</div>\n        <time class=\"dt-published db f7 grey\" datetime=\"2020-08-18T09:19:33Z\">\n    <a href=\"https://vincentp.me/notes/2020/08/18/21-19/\" class=\"u-url rm-underline\" title=\"2020-08-18T09:19:33Z\">Tuesday, 18 August 2020, 21:19:33 GMT+12</a>\n</time>\n\n    </div>\n</article>\n\n\n            \n        \n            \n                <article class=\"h-entry ba b-pale-grey br-5 mb5 relative\">\n    \n    <div class=\"pa5 bg-white-t w-100 brt-5\">\n        <div class=\"e-content  f5 ma0 pa0\">\n<p>Just as naming something sets the tone for what a thing can and cannot do in a persons mind. A good content author can really influence a service in a positive way by changing the way a user interacts with your service or interprets what they can do.</p>\n</div>\n        <time class=\"dt-published db f7 grey\" datetime=\"2020-08-12T23:19:37Z\">\n    <a href=\"https://vincentp.me/notes/2020/08/13/11-19/\" class=\"u-url rm-underline\" title=\"2020-08-12T23:19:37Z\">Thursday, 13 August 2020, 11:19:37 GMT+12</a>\n</time>\n\n    </div>\n</article>\n\n\n            \n        \n\n        <div class=\"w-120-fixed tc center mt5 mb5\">\n    <a href=\"https://vincentp.me/2/\" class=\"f5 red\" rel=\"prev\">Previous</a>\n    \n</div>",
+            "value": "Lifestream\nA feed of my life \n\n        \n            \n                \n    \n    \n        Had an hour tonight to add in some quality of life code, auto-tagging links and Twitter handle links.\nIt has irked me for a while that when using a Micropub client I couldn’t link these up as easily as manually writing the file.\nMy code is here which you can copy wholesale if you are running Eleventy, just make sure you set the linkify option to true (as well as the code below) or it won’t work.\nI have also had a change of heart around pausing the syndication and webmention servers, so they are back online and I can receive webmentions.\n\n        \n    Sunday, 22 November 2020, 21:50:00 GMT+13\n\n\n    \n\n\n\n            \n        \n            \n                \n    \n    \n        Just a quick update on the redesign, while this is happening all my #micropub #syndication and #webmention functions are paused.\nI won’t be sending or recieveing content for a while as I move the main pillars of the website around.\nThe easiest way to follow my content during this period is to subscribe to my RSS feed.\n\n        \n    Saturday, 7 November 2020, 20:40:00 GMT+13\n\n\n    \n\n\n\n            \n        \n            \n                \n    \n    \n        Playing whack-a-mole with a few bugs and being a grown-up, before racing to the fun redesign stuff. Being a grown-up is hard.\n\n        \n    Saturday, 10 October 2020, 11:40:25 GMT+13\n\n\n    \n\n\n\n            \n        \n            \n                \n    \n    \n        Today is new Macbook Pro day! Finally got my data migrated from the broken machine and I am back in business, itching to get started on the blog.\n\n        \n    Wednesday, 7 October 2020, 19:28:53 GMT+13\n\n\n    \n\n\n\n            \n        \n            \n                \n    \n    \n        Squinting in to an iPad, using Sidecar so I can do a few things on my broken laptop before the new one arrives… it kinda works. Kinda.\n\n        \n    Saturday, 3 October 2020, 17:41:34 GMT+13\n\n\n    \n\n\n\n            \n        \n            \n                \n    \n    \n        My 2016 MacBook has been slowly dying over the last two years. It started with broken keys and random restarts and today the screen died and it’s borderline useless. This is going to get expensive…\n\n        \n    Friday, 25 September 2020, 16:05:43 GMT+12\n\n\n    \n\n\n\n            \n        \n            \n                \n     View of the olive grove from the decking \n    \n        Staying at a cottage in an olive grove, visiting vineyards. Someone has to I suppose.\n\n        \n    Saturday, 12 September 2020, 17:24:00 GMT+12\n\n\n    \n\n\n\n            \n        \n            \n                \n    \n    \n        Fixed that bug causing the 2019 redesign post to get republished in the JSON and XML feeds everytime I deployed the website. Sorry about that!\n\n        \n    Sunday, 6 September 2020, 12:52:24 GMT+12\n\n\n    \n\n\n\n            \n        \n            \n                \n    \n    \n        Bought myself a new dot grid moleskin to design my website on. I find when I step back from the computer my creativity isn’t bound by constraints and my mind can wonder to interesting places\n\n        \n    Tuesday, 18 August 2020, 21:19:33 GMT+12\n\n\n    \n\n\n\n            \n        \n            \n                \n    \n    \n        Just as naming something sets the tone for what a thing can and cannot do in a persons mind. A good content author can really influence a service in a positive way by changing the way a user interacts with your service or interprets what they can do.\n\n        \n    Thursday, 13 August 2020, 11:19:37 GMT+12\n\n\n    \n\n\n\n            \n        \n\n        \n    Previous"
+          }
+        ],
+        "name": [
+          "Lifestream"
+        ],
+        "summary": [
+          "A feed of my life"
+        ]
+      },
+      "id": "content",
+      "children": [
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<p>Had an hour tonight to add in some quality of life code, auto-tagging links and Twitter handle links.</p>\n<p>It has irked me for a while that when using a Micropub client I couldn’t link these up as easily as manually writing the file.</p>\n<p><a href=\"https://github.com/vipickering/vincentp/blob/main/lib/parsers/markdown/markdown.js\">My code is here</a> which you can copy wholesale if you are running Eleventy, just make sure you set the linkify option to true (as well as the code below) or it won’t work.</p>\n<p>I have also had a change of heart around pausing the syndication and webmention servers, so they are back online and I can receive webmentions.</p>",
+                "value": "Had an hour tonight to add in some quality of life code, auto-tagging links and Twitter handle links.\nIt has irked me for a while that when using a Micropub client I couldn’t link these up as easily as manually writing the file.\nMy code is here which you can copy wholesale if you are running Eleventy, just make sure you set the linkify option to true (as well as the code below) or it won’t work.\nI have also had a change of heart around pausing the syndication and webmention servers, so they are back online and I can receive webmentions."
+              }
+            ],
+            "published": [
+              "2020-11-22T08:50:00Z"
+            ],
+            "url": [
+              "https://vincentp.me/notes/2020-11-22-21-50/"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<p>Just a quick update on the redesign, while this is happening all my <a href=\"https://vincentp.me/tags/micropub\">#micropub</a> <a href=\"https://vincentp.me/tags/syndication\">#syndication</a> and <a href=\"https://vincentp.me/tags/webmention\">#webmention</a> functions are paused.</p>\n<p>I won’t be sending or recieveing content for a while as I move the main pillars of the website around.</p>\n<p>The easiest way to follow my content during this period is to <a href=\"https://vincentp.me/feeds\">subscribe to my RSS feed</a>.</p>",
+                "value": "Just a quick update on the redesign, while this is happening all my #micropub #syndication and #webmention functions are paused.\nI won’t be sending or recieveing content for a while as I move the main pillars of the website around.\nThe easiest way to follow my content during this period is to subscribe to my RSS feed."
+              }
+            ],
+            "published": [
+              "2020-11-07T07:40:00Z"
+            ],
+            "url": [
+              "https://vincentp.me/notes/2020-11-08-09-40/"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<p>Playing whack-a-mole with a few bugs and being a grown-up, before racing to the fun redesign stuff. Being a grown-up is hard.</p>",
+                "value": "Playing whack-a-mole with a few bugs and being a grown-up, before racing to the fun redesign stuff. Being a grown-up is hard."
+              }
+            ],
+            "published": [
+              "2020-10-09T22:40:25Z"
+            ],
+            "url": [
+              "https://vincentp.me/notes/2020/10/10/11-40/"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<p>Today is new Macbook Pro day! Finally got my data migrated from the broken machine and I am back in business, itching to get started on the blog.</p>",
+                "value": "Today is new Macbook Pro day! Finally got my data migrated from the broken machine and I am back in business, itching to get started on the blog."
+              }
+            ],
+            "published": [
+              "2020-10-07T06:28:53Z"
+            ],
+            "url": [
+              "https://vincentp.me/notes/2020/10/07/19-28/"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<p>Squinting in to an iPad, using Sidecar so I can do a few things on my broken laptop before the new one arrives… it kinda works. Kinda.</p>",
+                "value": "Squinting in to an iPad, using Sidecar so I can do a few things on my broken laptop before the new one arrives… it kinda works. Kinda."
+              }
+            ],
+            "published": [
+              "2020-10-03T04:41:34Z"
+            ],
+            "url": [
+              "https://vincentp.me/notes/2020/10/03/17-41/"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<p>My 2016 MacBook has been slowly dying over the last two years. It started with broken keys and random restarts and today the screen died and it’s borderline useless. This is going to get expensive…</p>",
+                "value": "My 2016 MacBook has been slowly dying over the last two years. It started with broken keys and random restarts and today the screen died and it’s borderline useless. This is going to get expensive…"
+              }
+            ],
+            "published": [
+              "2020-09-25T04:05:43Z"
+            ],
+            "url": [
+              "https://vincentp.me/notes/2020/09/25/18-05/"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "photo": [
+              {
+                "value": "https://vincentp.me/images/blog/2020-09-12/5MCFAcjst.jpg",
+                "alt": "View of the olive grove from the decking"
+              }
+            ],
+            "content": [
+              {
+                "html": "<p>Staying at a cottage in an olive grove, visiting vineyards. Someone has to I suppose.</p>",
+                "value": "Staying at a cottage in an olive grove, visiting vineyards. Someone has to I suppose."
+              }
+            ],
+            "published": [
+              "2020-09-12T05:24:00Z"
+            ],
+            "url": [
+              "https://vincentp.me/photos/2020/09/12/17-24/"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<p>Fixed that bug causing the 2019 redesign post to get republished in the JSON and XML feeds everytime I deployed the website. Sorry about that!</p>",
+                "value": "Fixed that bug causing the 2019 redesign post to get republished in the JSON and XML feeds everytime I deployed the website. Sorry about that!"
+              }
+            ],
+            "published": [
+              "2020-09-06T00:52:24Z"
+            ],
+            "url": [
+              "https://vincentp.me/notes/2020/09/06/12-52/"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<p>Bought myself a new dot grid moleskin to design my website on. I find when I step back from the computer my creativity isn’t bound by constraints and my mind can wonder to interesting places</p>",
+                "value": "Bought myself a new dot grid moleskin to design my website on. I find when I step back from the computer my creativity isn’t bound by constraints and my mind can wonder to interesting places"
+              }
+            ],
+            "published": [
+              "2020-08-18T09:19:33Z"
+            ],
+            "url": [
+              "https://vincentp.me/notes/2020/08/18/21-19/"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<p>Just as naming something sets the tone for what a thing can and cannot do in a persons mind. A good content author can really influence a service in a positive way by changing the way a user interacts with your service or interprets what they can do.</p>",
+                "value": "Just as naming something sets the tone for what a thing can and cannot do in a persons mind. A good content author can really influence a service in a positive way by changing the way a user interacts with your service or interprets what they can do."
+              }
+            ],
+            "published": [
+              "2020-08-12T23:19:37Z"
+            ],
+            "url": [
+              "https://vincentp.me/notes/2020/08/13/11-19/"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "rels": {
+    "canonical": [
+      "https://vincentp.me/"
+    ],
+    "author": [
+      "https://vincentp.me/humans.txt"
+    ],
+    "apple-touch-icon": [
+      "https://vincentp.me/images/favicons/apple-touch-icon.png"
+    ],
+    "icon": [
+      "https://vincentp.me/images/favicons/favicon-32x32.png",
+      "https://vincentp.me/images/favicons/favicon-16x16.png"
+    ],
+    "manifest": [
+      "https://vincentp.me/manifest.webmanifest"
+    ],
+    "mask-icon": [
+      "https://vincentp.me/images/favicons/safari-pinned-tab.svg"
+    ],
+    "webmention": [
+      "https://webmention.io/vincentp.me/webmention"
+    ],
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "micropub": [
+      "https://mastr-cntrl.herokuapp.com/micropub"
+    ],
+    "microsub": [
+      "https://aperture.p3k.io/microsub/142"
+    ],
+    "me": [
+      "https://www.github.com/vipickering",
+      "https://vincentp.me/",
+      "https://www.are.na/vincent-pickering/channels",
+      "https://vincentp.me/articles",
+      "https://vincentp.me/about",
+      "mailto:hello@vincentp.me",
+      "https://vincentp.me/feeds"
+    ],
+    "alternate": [
+      "https://vincentp.me/feeds/feed.json",
+      "https://vincentp.me/feeds/feed.xml",
+      "https://vincentp.me/feeds/articles.json",
+      "https://vincentp.me/feeds/articles.xml",
+      "https://vincentp.me/feeds/notes.json",
+      "https://vincentp.me/feeds/notes.xml"
+    ],
+    "feed": [
+      "https://vincentp.me/feeds/feed.json",
+      "https://vincentp.me/feeds/feed.xml",
+      "https://vincentp.me/feeds/articles.json",
+      "https://vincentp.me/feeds/articles.xml",
+      "https://vincentp.me/feeds/notes.json",
+      "https://vincentp.me/feeds/notes.xml"
+    ],
+    "home": [
+      "https://vincentp.me/feeds/feed.json"
+    ],
+    "stylesheet": [
+      "https://vincentp.me/css/application.min.css"
+    ],
+    "external": [
+      "https://www.github.com/vipickering",
+      "https://www.are.na/vincent-pickering/channels",
+      "https://www.11ty.dev/",
+      "https://www.netlify.com/",
+      "https://github.com/",
+      "https://www.heroku.com/",
+      "https://webmention.net/",
+      "https://github.com/vipickering/vincentp/blob/master/LICENSE"
+    ],
+    "prev": [
+      "https://vincentp.me/2/"
+    ]
+  },
+  "rel-urls": {
+    "https://vincentp.me/": {
+      "rels": [
+        "canonical"
+      ]
+    },
+    "https://vincentp.me/humans.txt": {
+      "rels": [
+        "author"
+      ],
+      "type": "text/plain"
+    },
+    "https://vincentp.me/images/favicons/apple-touch-icon.png": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://vincentp.me/images/favicons/favicon-32x32.png": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/png"
+    },
+    "https://vincentp.me/images/favicons/favicon-16x16.png": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/png"
+    },
+    "https://vincentp.me/manifest.webmanifest": {
+      "rels": [
+        "manifest"
+      ]
+    },
+    "https://vincentp.me/images/favicons/safari-pinned-tab.svg": {
+      "rels": [
+        "mask-icon"
+      ]
+    },
+    "https://webmention.io/vincentp.me/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://mastr-cntrl.herokuapp.com/micropub": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://aperture.p3k.io/microsub/142": {
+      "rels": [
+        "microsub"
+      ]
+    },
+    "https://www.github.com/vipickering": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://www.are.na/vincent-pickering/channels": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://vincentp.me/feeds/feed.json": {
+      "rels": [
+        "alternate",
+        "feed",
+        "home"
+      ],
+      "title": "Vincent Pickering Lifestream",
+      "type": "application/json"
+    },
+    "https://vincentp.me/feeds/feed.xml": {
+      "rels": [
+        "alternate",
+        "feed"
+      ],
+      "title": "Vincent Pickering Lifestream",
+      "type": "application/xml"
+    },
+    "https://vincentp.me/feeds/articles.json": {
+      "rels": [
+        "alternate",
+        "feed"
+      ],
+      "title": "Articles by Vincent Pickering",
+      "type": "application/json"
+    },
+    "https://vincentp.me/feeds/articles.xml": {
+      "rels": [
+        "alternate",
+        "feed"
+      ],
+      "title": "Articles by Vincent Pickering",
+      "type": "application/xml"
+    },
+    "https://vincentp.me/feeds/notes.json": {
+      "rels": [
+        "alternate",
+        "feed"
+      ],
+      "title": "Notes by Vincent Pickering",
+      "type": "application/json"
+    },
+    "https://vincentp.me/feeds/notes.xml": {
+      "rels": [
+        "alternate",
+        "feed"
+      ],
+      "title": "Notes by Vincent Pickering",
+      "type": "application/xml"
+    },
+    "https://vincentp.me/css/application.min.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://vincentp.me/articles": {
+      "rels": [
+        "me"
+      ],
+      "title": "Longer articles on topics",
+      "text": "Articles"
+    },
+    "https://vincentp.me/about": {
+      "rels": [
+        "me"
+      ],
+      "title": "Background information and past experience",
+      "text": "About"
+    },
+    "mailto:hello@vincentp.me": {
+      "rels": [
+        "me"
+      ],
+      "title": "Get in contact",
+      "text": "Contact me"
+    },
+    "https://vincentp.me/feeds": {
+      "rels": [
+        "me"
+      ],
+      "title": "Follow Vincent Pickering",
+      "text": "Follow me"
+    },
+    "https://vincentp.me/2/": {
+      "rels": [
+        "prev"
+      ],
+      "text": "Previous"
+    },
+    "https://www.11ty.dev/": {
+      "rels": [
+        "external"
+      ],
+      "text": "Eleventy"
+    },
+    "https://www.netlify.com/": {
+      "rels": [
+        "external"
+      ],
+      "text": "Netlify"
+    },
+    "https://github.com/": {
+      "rels": [
+        "external"
+      ],
+      "text": "Github"
+    },
+    "https://www.heroku.com/": {
+      "rels": [
+        "external"
+      ],
+      "text": "Heroku"
+    },
+    "https://webmention.net/": {
+      "rels": [
+        "external"
+      ],
+      "text": "Webmention"
+    },
+    "https://github.com/vipickering/vincentp/blob/master/LICENSE": {
+      "rels": [
+        "external"
+      ],
+      "text": "MIT License"
+    }
+  }
+}
