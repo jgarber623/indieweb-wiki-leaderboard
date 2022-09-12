@@ -46,7 +46,7 @@ Promise
         // Either the request was made and no response was received, or an error
         // was encountered while setting up the request.
         } else {
-          console.log(`::error title=Axios Error::${response.toJSON()}`);
+          console.log(`::error title=Axios Error::${JSON.stringify(response.toJSON())}`);
         }
       }
     });
