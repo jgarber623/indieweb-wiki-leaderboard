@@ -13,6 +13,34 @@
           "properties": {
             "content": [
               {
+                "html": "<p>\nOne of my raspis died after a failed package upgrade. Since I couldn’t be bothered to search for the cause and the thing was ‘only’ hosting my adblocker anyways (AdGuard Home), I decided to let it walk the plank and install Pi-Hole on my main raspi again. After some fiddling everything mostly works again.</p>",
+                "value": "One of my raspis died after a failed package upgrade. Since I couldn’t be bothered to search for the cause and the thing was ‘only’ hosting my adblocker anyways (AdGuard Home), I decided to let it walk the plank and install Pi-Hole on my main raspi again. After some fiddling everything mostly works again."
+              }
+            ],
+            "uid": [
+              "https://inhji.de/notes/1663011594"
+            ],
+            "url": [
+              "https://inhji.de/notes/1663011594"
+            ],
+            "published": [
+              "2022-09-12T19:39:54"
+            ],
+            "category": [
+              "{Microblog}",
+              "[Homenet]",
+              "[Raspberry Pi]",
+              "[Selfhosting]"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
                 "html": "<p>\nWhile uploading the picture of the bread I noticed that somewhere in the upload process the page would just turn blank and the upload would fail without any error message. </p>\n<p>\nWhen I checked the server process in <code class=\"inline\">journalctl</code>, I realized that the elixir process gets killed because it’s exhausting the memory of my (admittedly undersized) VPS. Since I do some processing (mostly dithering and resizing) of all uploaded images, it takes up to 400MB at one point. </p>\n<p>\nSometimes that’s less than is available so the <code class=\"inline\">OOM Killer</code> (badass name) steps in and kills the process.</p>",
                 "value": "While uploading the picture of the bread I noticed that somewhere in the upload process the page would just turn blank and the upload would fail without any error message. \n\nWhen I checked the server process in journalctl, I realized that the elixir process gets killed because it’s exhausting the memory of my (admittedly undersized) VPS. Since I do some processing (mostly dithering and resizing) of all uploaded images, it takes up to 400MB at one point. \n\nSometimes that’s less than is available so the OOM Killer (badass name) steps in and kills the process."
               }
@@ -28,8 +56,8 @@
             ],
             "category": [
               "{Microblog}",
-              "[Devops]",
-              "[Elixir]"
+              "[Elixir]",
+              "[Devops]"
             ]
           }
         },
@@ -56,8 +84,8 @@
             "category": [
               "{Microblog}",
               "[Health]",
-              "[Bread]",
-              "[Baking]"
+              "[Baking]",
+              "[Bread]"
             ]
           }
         },
@@ -138,8 +166,8 @@
             "category": [
               "{Microblog}",
               "[Server]",
-              "[Ubuntu]",
-              "[Webdev]"
+              "[Webdev]",
+              "[Ubuntu]"
             ]
           }
         }

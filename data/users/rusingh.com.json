@@ -11,23 +11,21 @@
     "canonical": [
       "https://rusingh.com/"
     ],
-    "next": [
-      "https://rusingh.com/page/2/"
-    ],
     "alternate": [
-      "https://rusingh.com/feed/"
+      "https://rusingh.com/feed/",
+      "https://rusingh.com/wp-json/wp/v2/pages/5167",
+      "https://rusingh.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Frusingh.com%2F",
+      "https://rusingh.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Frusingh.com%2F&format=xml"
     ],
     "stylesheet": [
       "https://rusinghcom.b-cdn.net/wp-includes/css/dist/block-library/style.min.css?ver=da3dabde34902556ac21640a2fffe36e",
       "https://rusinghcom.b-cdn.net/wp-content/plugins/details-summary-block/src/editor.css?ver=1.0.0",
-      "https://rusinghcom.b-cdn.net/wp-content/plugins/code-syntax-block/assets/prism-a11y-dark.css?ver=1656148839",
       "https://rusinghcom.b-cdn.net/wp-includes/css/dashicons.min.css?ver=da3dabde34902556ac21640a2fffe36e",
       "https://rusinghcom.b-cdn.net/wp-content/plugins/love-me//love-me.css?ver=da3dabde34902556ac21640a2fffe36e",
       "https://rusinghcom.b-cdn.net/wp-content/themes/generatepress/assets/css/components/widget-areas.min.css?ver=3.1.3",
       "https://rusinghcom.b-cdn.net/wp-content/themes/generatepress/assets/css/main.min.css?ver=3.1.3",
-      "https://rusinghcom.b-cdn.net/wp-content/uploads/generatepress/style.min.css?ver=1662570690",
-      "https://rusinghcom.b-cdn.net/wp-content/themes/wp_child-theme_pinkone/style.css?ver=1661360079",
-      "https://rusinghcom.b-cdn.net/wp-content/plugins/gp-premium/blog/functions/css/featured-images.min.css?ver=2.1.2"
+      "https://rusinghcom.b-cdn.net/wp-content/uploads/generatepress/style.min.css?ver=1662997443",
+      "https://rusinghcom.b-cdn.net/wp-content/themes/wp_child-theme_pinkone/style.css?ver=1661360079"
     ],
     "https://api.w.org/": [
       "https://rusingh.com/wp-json/"
@@ -37,6 +35,9 @@
     ],
     "wlwmanifest": [
       "https://rusinghcom.b-cdn.net/wp-includes/wlwmanifest.xml"
+    ],
+    "shortlink": [
+      "https://rusingh.com/"
     ],
     "icon": [
       "https://rusinghcom.b-cdn.net/wp-content/uploads/2022/05/Profile-Picture-Memoji-May-2022-Teal250x250-150x150.png",
@@ -65,11 +66,6 @@
         "canonical"
       ]
     },
-    "https://rusingh.com/page/2/": {
-      "rels": [
-        "next"
-      ]
-    },
     "https://s.w.org/": {
       "rels": [
         "dns-prefetch"
@@ -89,12 +85,6 @@
       "media": "all"
     },
     "https://rusinghcom.b-cdn.net/wp-content/plugins/details-summary-block/src/editor.css?ver=1.0.0": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "all"
-    },
-    "https://rusinghcom.b-cdn.net/wp-content/plugins/code-syntax-block/assets/prism-a11y-dark.css?ver=1656148839": {
       "rels": [
         "stylesheet"
       ],
@@ -124,7 +114,7 @@
       ],
       "media": "all"
     },
-    "https://rusinghcom.b-cdn.net/wp-content/uploads/generatepress/style.min.css?ver=1662570690": {
+    "https://rusinghcom.b-cdn.net/wp-content/uploads/generatepress/style.min.css?ver=1662997443": {
       "rels": [
         "stylesheet"
       ],
@@ -136,16 +126,16 @@
       ],
       "media": "all"
     },
-    "https://rusinghcom.b-cdn.net/wp-content/plugins/gp-premium/blog/functions/css/featured-images.min.css?ver=2.1.2": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "all"
-    },
     "https://rusingh.com/wp-json/": {
       "rels": [
         "https://api.w.org/"
       ]
+    },
+    "https://rusingh.com/wp-json/wp/v2/pages/5167": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/json"
     },
     "https://rusingh.com/xmlrpc.php?rsd": {
       "rels": [
@@ -159,6 +149,18 @@
         "wlwmanifest"
       ],
       "type": "application/wlwmanifest+xml"
+    },
+    "https://rusingh.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Frusingh.com%2F": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/json+oembed"
+    },
+    "https://rusingh.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Frusingh.com%2F&format=xml": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "text/xml+oembed"
     },
     "https://rusinghcom.b-cdn.net/wp-content/uploads/2022/05/Profile-Picture-Memoji-May-2022-Teal250x250-150x150.png": {
       "rels": [

@@ -4,17 +4,17 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 
 | Rank | Actions | User |
 |-----:|--------:|:-----|
-| **1** | [150](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](http://gregorlove.com) |
+| **1** | [118](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](http://gregorlove.com) |
 | **2** | [78](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
-| **3** | [67](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
-| **4** | [35](https://indieweb.org/Special:Contributions/Jamesg.blog) | [jamesg.blog](http://jamesg.blog) |
-| **5** | [24](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
+| **3** | [69](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
+| **4** | [37](https://indieweb.org/Special:Contributions/Jamesg.blog) | [jamesg.blog](http://jamesg.blog) |
+| **5** | [26](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
 | **6** | [23](https://indieweb.org/Special:Contributions/Cali.jamesg.blog) | [cali.jamesg.blog](http://cali.jamesg.blog) |
-| **7** | [22](https://indieweb.org/Special:Contributions/Corlaez.com) | [corlaez.com](http://corlaez.com) |
+| **7** | [23](https://indieweb.org/Special:Contributions/Corlaez.com) | [corlaez.com](http://corlaez.com) |
 | **8** | [7](https://indieweb.org/Special:Contributions/Blog.libove.org) | [blog.libove.org](http://blog.libove.org) |
-| **9** | [7](https://indieweb.org/Special:Contributions/David.shanske.com) | [david.shanske.com](http://david.shanske.com) |
-| **10** | [6](https://indieweb.org/Special:Contributions/Bucci.onl_about.html) | [bucci.onl/about.html](http://bucci.onl/about.html) |
-| **11** | [6](https://indieweb.org/Special:Contributions/Waterpigs.co.uk) | [waterpigs.co.uk](http://waterpigs.co.uk) |
+| **9** | [6](https://indieweb.org/Special:Contributions/Bucci.onl_about.html) | [bucci.onl/about.html](http://bucci.onl/about.html) |
+| **10** | [6](https://indieweb.org/Special:Contributions/Waterpigs.co.uk) | [waterpigs.co.uk](http://waterpigs.co.uk) |
+| **11** | [5](https://indieweb.org/Special:Contributions/David.shanske.com) | [david.shanske.com](http://david.shanske.com) |
 | **12** | [4](https://indieweb.org/Special:Contributions/Campegg.com) | [campegg.com](http://campegg.com) |
 | **13** | [4](https://indieweb.org/Special:Contributions/Shindakun.dev) | [shindakun.dev](http://shindakun.dev) |
 | **14** | [4](https://indieweb.org/Special:Contributions/Snarfed.org) | [snarfed.org](http://snarfed.org) |
@@ -39,7 +39,7 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 
 ## Colophon
 
-Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 12 September 2022 at 15:18:06 UTC.
+Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 13 September 2022 at 6:42:21 UTC.
 
 Additionally, a list of all IndieWeb wiki users is available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users.json). Parsed microformats2 data from user homepages is available in [the `./data/users` directory](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users).
 
