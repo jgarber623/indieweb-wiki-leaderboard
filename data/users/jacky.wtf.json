@@ -130,17 +130,15 @@
               {
                 "type": [
                   "h-cite",
-                  "h-entry"
+                  "h-entry",
+                  "h-koype-stubbed-from-ogp"
                 ],
                 "properties": {
                   "name": [
-                    "Switching costs for an IndieAuth server"
+                    "My next book will be “Practical Math for Programmers”"
                   ],
-                  "content": [
-                    {
-                      "html": "<p>One of the things I love about building with <a href=\"https://indieweb.org/Category:building-blocks\">IndieWeb building blocks</a> is that (sometimes through more work than anticipated) you can swap out pieces of your site without (much) disruption because the seams between building blocks are well specified.</p>\n<br><br><p>So, this is me documenting how I replaced my <a href=\"https://indieauth.spec.indieweb.org/\">IndieAuth</a> setup to stop leaning on <a href=\"https://aaronparecki.com/\">Aaron’s</a> <a href=\"https://indieauth.com/\">IndieAuth.com</a> (which has been on the verge of retiring any day now for some years).</p>\n<br><br><p>Please excuse this long and rambling post. Feel free to skip around!</p>\n<br><br><br><br><h2 id=\"what-is-indieauth\">What is IndieAuth?</h2>\n<br><br><p>At a high-level, IndieAuth is a way to sign in using your website as an identity.</p>\n<br><br><p>Without digging too deeply into the plumbing, you start by updating your website’s homepage with some extra header info that says “my IndieAuth service is over there”. From there, you can sign into services that support IndieAuth (like the <a href=\"https://indieauth.org/\">IndieWeb wiki</a>, the social feed reader service <a href=\"https://aperture.p3k.io/\">Aperture</a>, and more. And you can use your IndieAuth server to protect your own services, such as a <a href=\"https://indieweb.org/Micropub\">Micropub server</a> that can create new posts on your site.</p>\n<br><br><h2 id=\"why-switch\">Why switch?</h2>\n<br><br><p>I’ve been using indieauth.com as my IndieAuth setup since late 2016 because it was easy to set up, because it uses something called <a href=\"https://indieweb.org/RelMeAuth\">RelMeAuth</a> to let me sign in using services I already trust (like GitHub).</p>\n<br><br><p>However, indieauth.com has been growing stale as the IndieAuth spec has evolved. indieauth.com’s maintainer has been <a href=\"https://chat.indieweb.org/dev/2017-12-17#t1513485617181300\">discussing replacing it since at least 2017</a>.</p>\n<br><br><p>The inciting incident for my switch was looking at <a href=\"https://owncast.online/\">OwnCast</a> - a self-hostable video streaming service with attached chatroom. OwnCast’s chat allows using IndieAuth to sign in, which sounded great to me, but OwnCast’s implementation wasn’t expecting indieauth.com’s old-style response format.</p>\n<br><br><h3 id=\"why-set-up-my-own\">Why set up my own?</h3>\n<br><br><p>There are <a href=\"https://indieweb.org/IndieAuth#Server_Implementations\">a bunch of IndieAuth server implementations listed on the IndieWeb wiki</a>. However: simplest of them (selfauth + mintoken) are now out of date with the spec and haven’t been replaced, yet. Others tend to be built into other CMSes like WordPress. A couple of standalone servers exist but are in languages I am not comfortable working in (hello Rust and Go) or have deployment requirements I wasn’t thrilled about supporting (hello Rails).</p>\n<br><br><p>I found <a href=\"https://github.com/taproot/indieauth\">Taproot/IndieAuth</a> on this page and that looked promising - a PHP library intended to be deployed within a fairly standard PHP web app style (“any PSR-7 compatible app”).</p>\n<br><br><p>I knew this would be some work but it sounded promising and so I began the week-ish long process of actually writing and deploying that “PSR-7 compatible app” built on taproot/indieauth.</p>\n<br><br><h2 id=\"tl-dr-say-hello-to-belding\">tl;dr say hello to Belding</h2>\n<br><br><p><a href=\"https://git.schmarty.net/schmarty/belding\">Belding</a> is an “PSR-7 compatible” PHP web app that provides a standalone IndieAuth endpoint for a single user with a simple password form for authentication.</p>\n<br><br><p>I would love to go into the process and pitfalls of putting it together, but instead I’ll link to the <a href=\"https://git.schmarty.net/schmarty/belding#user-content-belding\">README</a> where you can learn more about how it works, how to use it, its limitations, etc.</p>\n<br><br><h2 id=\"switching-costs-for-an-indieauth-server\">Switching costs for an IndieAuth server</h2>\n<br><br><h3 id=\"1-tell-the-world\">1. Tell the World</h3>\n<br><br><p>First up, you’ll need to update the headers on your site. I switched my <code>authorization_endpoint</code> and <code>token_endpoint</code> to my new server from indieauth.com. Since I’m updating to support the latest spec, I also added the <code>indieauth-metadata</code> header (which should eventually replace the other two).</p>\n<br><br><p>Now that your site is advertising the new IndieAuth server, you will likely experience logouts or weird access denied reponses everywhere that your site has been used with IndieAuth.</p>\n<br><br><h3 id=\"2-tell-your-own-services\">2. Tell your own services</h3>\n<br><br><p>I needed to configure my own “relying apps” so they know to talk to the new server when checking that a request is allowed. This list thankfully wasn’t too long.</p>\n<br><br><ul>\n<br><li><a href=\"https://github.com/martymcguire/micropub-1\">My Micropub server</a></li>\n<br><li><a href=\"https://github.com/martymcguire/spano\">My Micropub media server</a></li>\n<br>\n</ul>\n<br><br><p>Beyond the effort of getting my server working as an indieauth.com replacement, I also took steps to try and support the latest in the IndieAuth spec. That meant updating these micropub servers to use the new “token introspection” feature which has some tighter security requirements.</p>\n<br><br><p>(<em><strong>Note:</strong> I initially made the same change for my self-hosted copy of Aperture, but found it would be too many changes for me to take on at the moment. Instead, I updated by IndieAuth server to allow the older and less secure token verification method used by Aperture.</em>)</p>\n<br><br><h3 id=\"3-sign-in-to-all-the-things-again-o\">3. Sign-in to all the things again \\o|</h3>\n<br><br><p>Once all my relying apps were all talking to the new IndieAuth server, it was time to re-sign-in to all the things:</p>\n<br><br><ul>\n<br><li><a href=\"https://indieweb.org/\">The IndieWeb wiki</a></li>\n<br><li>\n<a href=\"https://indieweb.org/Monocle\">Monocle</a> social reader client</li>\n<br><li>\n<a href=\"https://indieweb.org/Quill\">Quill</a> Micropub posting client</li>\n<br><li><a href=\"https://indieweb.org/OwnYourSwarm\">OwnYourSwarm</a></li>\n<br><li>iOS apps<br><br><ul>\n<br><li><a href=\"https://indieweb.org/Micro.blog\">micro.blog</a></li>\n<br><li><a href=\"https://indieweb.org/Indigenous_for_iOS\">Indigenous</a></li>\n<br>\n</ul>\n</li>\n<br><li>Manually issue new IndieAuth tokens for automation that uses them:<br><br><ul>\n<br><li>My <a href=\"https://martymcgui.re/2020/10/03/unsubscribing-from-youtubes-recommender/\">personal YouTube manager</a>\n</li>\n<br><li>My command line tool for media uploads</li>\n<br><li>iOS shortcuts like the one I use to post <a href=\"https://martymcgui.re/tag/caturday/\">Caturday</a>.</li>\n<br>\n</ul>\n</li>\n<br>\n</ul>\n<br><br><h2 id=\"takeaways\">Takeaways</h2>\n<br><br><p>There are <a href=\"https://git.schmarty.net/schmarty/belding#user-content-possible-future-work\">a lot of improvements I’d like to make to Belding</a>, but in general I am happy that it seems to work and, outside of the time to develop the server itself, my website and the tools I use to manage it were only broken for about a day.</p>\n<br><br><p>I think it’d also be really nice to wrap up Belding a bit so it’s easy to configure and deploy on free-and-cheap platforms like <a href=\"https://fly.io/\">fly.io</a>. I believe it should be easier for folks to spin up and control their own IndieWeb building blocks where possible!</p>\n<br><br><p>It’s also become clear to me that there are some user- and developer-experience holes around setting up relying apps. The auth requirements for token introspection, for example, means you need a way to manage access for each “backend” that you have that relies on IndieAuth to protect itself!</p>\n<br><br><p>Long story short (too late) I am finally able to sign into OwnCast server chat using my domain. 😂😅</p>",
-                      "value": "One of the things I love about building with IndieWeb building blocks is that (sometimes through more work than anticipated) you can swap out pieces of your site without (much) disruption because the seams between building blocks are well specified.So, this is me documenting how I replaced my IndieAuth setup to stop leaning on Aaron’s IndieAuth.com (which has been on the verge of retiring any day now for some years).Please excuse this long and rambling post. Feel free to skip around!What is IndieAuth?At a high-level, IndieAuth is a way to sign in using your website as an identity.Without digging too deeply into the plumbing, you start by updating your website’s homepage with some extra header info that says “my IndieAuth service is over there”. From there, you can sign into services that support IndieAuth (like the IndieWeb wiki, the social feed reader service Aperture, and more. And you can use your IndieAuth server to protect your own services, such as a Micropub server that can create new posts on your site.Why switch?I’ve been using indieauth.com as my IndieAuth setup since late 2016 because it was easy to set up, because it uses something called RelMeAuth to let me sign in using services I already trust (like GitHub).However, indieauth.com has been growing stale as the IndieAuth spec has evolved. indieauth.com’s maintainer has been discussing replacing it since at least 2017.The inciting incident for my switch was looking at OwnCast - a self-hostable video streaming service with attached chatroom. OwnCast’s chat allows using IndieAuth to sign in, which sounded great to me, but OwnCast’s implementation wasn’t expecting indieauth.com’s old-style response format.Why set up my own?There are a bunch of IndieAuth server implementations listed on the IndieWeb wiki. However: simplest of them (selfauth + mintoken) are now out of date with the spec and haven’t been replaced, yet. Others tend to be built into other CMSes like WordPress. A couple of standalone servers exist but are in languages I am not comfortable working in (hello Rust and Go) or have deployment requirements I wasn’t thrilled about supporting (hello Rails).I found Taproot/IndieAuth on this page and that looked promising - a PHP library intended to be deployed within a fairly standard PHP web app style (“any PSR-7 compatible app”).I knew this would be some work but it sounded promising and so I began the week-ish long process of actually writing and deploying that “PSR-7 compatible app” built on taproot/indieauth.tl;dr say hello to BeldingBelding is an “PSR-7 compatible” PHP web app that provides a standalone IndieAuth endpoint for a single user with a simple password form for authentication.I would love to go into the process and pitfalls of putting it together, but instead I’ll link to the README where you can learn more about how it works, how to use it, its limitations, etc.Switching costs for an IndieAuth server1. Tell the WorldFirst up, you’ll need to update the headers on your site. I switched my authorization_endpoint and token_endpoint to my new server from indieauth.com. Since I’m updating to support the latest spec, I also added the indieauth-metadata header (which should eventually replace the other two).Now that your site is advertising the new IndieAuth server, you will likely experience logouts or weird access denied reponses everywhere that your site has been used with IndieAuth.2. Tell your own servicesI needed to configure my own “relying apps” so they know to talk to the new server when checking that a request is allowed. This list thankfully wasn’t too long.My Micropub serverMy Micropub media serverBeyond the effort of getting my server working as an indieauth.com replacement, I also took steps to try and support the latest in the IndieAuth spec. That meant updating these micropub servers to use the new “token introspection” feature which has some tighter security requirements.(Note: I initially made the same change for my self-hosted copy of Aperture, but found it would be too many changes for me to take on at the moment. Instead, I updated by IndieAuth server to allow the older and less secure token verification method used by Aperture.)3. Sign-in to all the things again \\o|Once all my relying apps were all talking to the new IndieAuth server, it was time to re-sign-in to all the things:The IndieWeb wikiMonocle social reader clientQuill Micropub posting clientOwnYourSwarmiOS appsmicro.blogIndigenousManually issue new IndieAuth tokens for automation that uses them:My personal YouTube managerMy command line tool for media uploadsiOS shortcuts like the one I use to post Caturday.TakeawaysThere are a lot of improvements I’d like to make to Belding, but in general I am happy that it seems to work and, outside of the time to develop the server itself, my website and the tools I use to manage it were only broken for about a day.I think it’d also be really nice to wrap up Belding a bit so it’s easy to configure and deploy on free-and-cheap platforms like fly.io. I believe it should be easier for folks to spin up and control their own IndieWeb building blocks where possible!It’s also become clear to me that there are some user- and developer-experience holes around setting up relying apps. The auth requirements for token introspection, for example, means you need a way to manage access for each “backend” that you have that relies on IndieAuth to protect itself!Long story short (too late) I am finally able to sign into OwnCast server chat using my domain. 😂😅"
-                    }
+                  "summary": [
+                    "tl;dr: I’m writing a new book, sign up for the announcements mailing list. I’ve written exactly zero new technical blog posts this year because I’ve been spending all my writing e…"
                   ],
                   "author": [
                     {
@@ -148,31 +146,25 @@
                         "h-card"
                       ],
                       "properties": {
-                        "photo": [
-                          {
-                            "value": "https://martymcgui.re/images/logo.jpg",
-                            "alt": "Marty McGuire"
-                          }
-                        ],
                         "name": [
-                          "Marty McGuire"
+                          "Math ∩ Programming"
                         ]
                       },
-                      "value": "https://martymcgui.re/"
+                      "value": "Math ∩ Programming"
                     }
                   ],
                   "url": [
-                    "https://martymcgui.re/2022/07/31/switching-costs-for-an-indieauth-server/"
+                    "https://jeremykun.com/2022/03/16/my-next-book-will-be-practical-math-for-programmers/"
                   ]
                 },
-                "value": "https://martymcgui.re/2022/07/31/switching-costs-for-an-indieauth-server/"
+                "value": "https://jeremykun.com/2022/03/16/my-next-book-will-be-practical-math-for-programmers/"
               }
             ],
             "url": [
-              "https://jacky.wtf/2022/8/Oi5u"
+              "https://jacky.wtf/2022/9/8HdR"
             ],
             "published": [
-              "2022-08-29T00:24:54Z"
+              "2022-09-11T05:06:55Z"
             ]
           }
         },
@@ -188,8 +180,18 @@
                   "h-entry"
                 ],
                 "properties": {
+                  "photo": [
+                    {
+                      "value": "https://pbs.twimg.com/media/FcVR0eeWAAMiJE7.jpg",
+                      "alt": "https://pbs.twimg.com/media/FcVR0eeWAAMiJE7.jpg"
+                    },
+                    {
+                      "value": "https://pbs.twimg.com/media/FcVR0eeXoAAPOZR.jpg",
+                      "alt": "https://pbs.twimg.com/media/FcVR0eeXoAAPOZR.jpg"
+                    }
+                  ],
                   "content": [
-                    "Seeing someone share good news and responding “it must be nice” is really corny to me. It’s okay to be happy for others and want more for yourself, but don’t be a hater in the process."
+                    "New look at Samuel L. Jackson in #SecretInvasion 😤"
                   ],
                   "author": [
                     {
@@ -199,29 +201,32 @@
                       "properties": {
                         "photo": [
                           {
-                            "value": "https://pbs.twimg.com/profile_images/1553150069557174272/gtjy6vnO_normal.jpg",
+                            "value": "https://pbs.twimg.com/profile_images/1542986224788553731/DzpL-3B9_normal.jpg",
                             "alt": ""
                           }
                         ],
                         "name": [
-                          "Bri ✨"
+                          "New Rockstars @ D23"
                         ]
                       },
-                      "value": "https://twitter.com/storymodebae"
+                      "value": "https://twitter.com/NewRockstars"
                     }
                   ],
                   "url": [
-                    "https://twitter.com/storymodebae/status/1560317807291551744"
+                    "https://twitter.com/NewRockstars/status/1568750009998360576"
                   ]
                 },
-                "value": "https://twitter.com/storymodebae/status/1560317807291551744"
+                "value": "https://twitter.com/NewRockstars/status/1568750009998360576"
               }
             ],
             "url": [
-              "https://jacky.wtf/2022/8/XCs_"
+              "https://jacky.wtf/2022/9/wpqy"
             ],
             "published": [
-              "2022-08-18T17:57:46Z"
+              "2022-09-10T23:58:23Z"
+            ],
+            "syndication": [
+              "https://twitter.com/NewRockstars/status/1568750009998360576"
             ]
           }
         },
@@ -234,25 +239,46 @@
               {
                 "type": [
                   "h-cite",
-                  "h-entry",
-                  "h-koype-stubbed-from-twitter-card"
+                  "h-entry"
                 ],
                 "properties": {
-                  "name": [
-                    "How Owncast could support recordings, VODs and clips"
+                  "content": [
+                    "and honestly, the older I get, the more tired I am of action games that want me to kill stuff and just generally base their gameplay on violence. I find I end up feeling way more satisfied with lower-key experiences that explore human stories instead."
+                  ],
+                  "author": [
+                    {
+                      "type": [
+                        "h-card"
+                      ],
+                      "properties": {
+                        "photo": [
+                          {
+                            "value": "https://pbs.twimg.com/profile_images/1550263449120165888/sM0F_l2i_normal.jpg",
+                            "alt": ""
+                          }
+                        ],
+                        "name": [
+                          "kat"
+                        ]
+                      },
+                      "value": "https://twitter.com/zkat__"
+                    }
                   ],
                   "url": [
-                    "https://www.youtube.com/watch?v=0f-vIyXIG_k"
+                    "https://twitter.com/zkat__/status/1568378546246283267"
                   ]
                 },
-                "value": "https://www.youtube.com/watch?v=0f-vIyXIG_k"
+                "value": "https://twitter.com/zkat__/status/1568378546246283267"
               }
             ],
             "url": [
-              "https://jacky.wtf/2022/8/LGs8"
+              "https://jacky.wtf/2022/9/5-bP"
             ],
             "published": [
-              "2022-08-18T17:36:08Z"
+              "2022-09-09T23:22:00Z"
+            ],
+            "syndication": [
+              "https://twitter.com/zkat__/status/1568378546246283267"
             ]
           }
         }
@@ -282,19 +308,78 @@
           "properties": {
             "content": [
               {
-                "html": "<p>My birthday was in July but if you gifted this for me on Steam, I would shout you out and play with you for a month. <a href=\"https://store.steampowered.com/app/1372110/JoJos_Bizarre_Adventure_AllStar_Battle_R/\">https://store.steampowered.com/app/1372110/JoJos_Bizarre_Adventure_AllStar_Battle_R/</a></p>",
-                "value": "My birthday was in July but if you gifted this for me on Steam, I would shout you out and play with you for a month. https://store.steampowered.com/app/1372110/JoJos_Bizarre_Adventure_AllStar_Battle_R/"
+                "html": "<p>I'm still confused why people got support behind people whose wealth quite literally came from slave trades and shit. Like directly. And those who choose to INTEGRATE into those systems with no intent to tear it down. Y'all don't want shit to change.</p>",
+                "value": "I'm still confused why people got support behind people whose wealth quite literally came from slave trades and shit. Like directly. And those who choose to INTEGRATE into those systems with no intent to tear it down. Y'all don't want shit to change."
               }
             ],
             "url": [
-              "https://jacky.wtf/2022/9/FoRs"
+              "https://jacky.wtf/2022/9/7oXw"
             ],
             "published": [
-              "2022-09-01T21:35:04Z"
+              "2022-09-13T17:36:14Z"
             ],
             "syndication": [
-              "https://twitter.com/jackyalcine/status/1565453260194025472",
-              "https://todon.eu/@jalcine/108925296227651444"
+              "https://twitter.com/jackyalcine/status/1569741793654095874",
+              "https://todon.eu/@jalcine/108992304541878733"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "in-reply-to": [
+              {
+                "type": [
+                  "h-cite",
+                  "h-entry"
+                ],
+                "properties": {
+                  "content": [
+                    {
+                      "html": "<p>What was the name of that fairy game that Nintendo just announced?</p>",
+                      "value": "What was the name of that fairy game that Nintendo just announced?"
+                    }
+                  ],
+                  "author": [
+                    {
+                      "type": [
+                        "h-card"
+                      ],
+                      "properties": {
+                        "name": [
+                          "https://jacky.wtf"
+                        ],
+                        "url": [
+                          "https://jacky.wtf/about"
+                        ]
+                      },
+                      "value": "https://jacky.wtf/about"
+                    }
+                  ],
+                  "url": [
+                    "https://jacky.wtf/2022/9/46n9"
+                  ]
+                },
+                "value": "https://jacky.wtf/2022/9/46n9"
+              }
+            ],
+            "content": [
+              {
+                "html": "<p>Fae Farm!</p>",
+                "value": "Fae Farm!"
+              }
+            ],
+            "url": [
+              "https://jacky.wtf/2022/9/3mBp"
+            ],
+            "published": [
+              "2022-09-13T16:30:20Z"
+            ],
+            "syndication": [
+              "https://twitter.com/jackyalcine/status/1569725272831758336",
+              "https://todon.eu/@jalcine/108992046556808089"
             ]
           }
         },
@@ -305,42 +390,19 @@
           "properties": {
             "content": [
               {
-                "html": "<p>Let's go! <a href=\"https://mashable.com/article/etsy-indie-sellers-guild-launch\">https://mashable.com/article/etsy-indie-sellers-guild-launch</a></p>",
-                "value": "Let's go! https://mashable.com/article/etsy-indie-sellers-guild-launch"
+                "html": "<p>What was the name of that fairy game that Nintendo just announced?</p>",
+                "value": "What was the name of that fairy game that Nintendo just announced?"
               }
             ],
             "url": [
-              "https://jacky.wtf/2022/9/DdXX"
+              "https://jacky.wtf/2022/9/46n9"
             ],
             "published": [
-              "2022-09-01T16:41:58Z"
+              "2022-09-13T16:28:29Z"
             ],
             "syndication": [
-              "https://twitter.com/jackyalcine/status/1565379471871561728",
-              "https://todon.eu/@jalcine/108924143255030840"
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "content": [
-              {
-                "html": "<p>Definitely copping this. <a href=\"https://validategame.com/\">https://validategame.com/</a>. Looks like it'll be in most places.</p>",
-                "value": "Definitely copping this. https://validategame.com/. Looks like it'll be in most places."
-              }
-            ],
-            "url": [
-              "https://jacky.wtf/2022/9/Kogv"
-            ],
-            "published": [
-              "2022-09-01T15:48:49Z"
-            ],
-            "syndication": [
-              "https://twitter.com/jackyalcine/status/1565366140909625345",
-              "https://todon.eu/@jalcine/108923934951885382"
+              "https://twitter.com/jackyalcine/status/1569724740499116032",
+              "https://todon.eu/@jalcine/108992038141328129"
             ]
           }
         }

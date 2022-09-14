@@ -12,6 +12,23 @@
           ],
           "properties": {
             "name": [
+              ""
+            ],
+            "content": [
+              {
+                "html": "<p><a href=\"https://github.com/svandragt/fafi\">Fafi</a> developer builds can now index individual urls, and extract urls from text based files (such as .html). That should make it more interesting if you want to search page content but don’t use Firefox.</p>\n<div class=\"syndication-links\"></div>",
+                "value": "Fafi developer builds can now index individual urls, and extract urls from text based files (such as .html). That should make it more interesting if you want to search page content but don’t use Firefox."
+              }
+            ]
+          },
+          "id": "post-622"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               "Mail: a local privacy focused searchable database"
             ],
             "content": [
@@ -328,23 +345,6 @@
             ]
           },
           "id": "post-508"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              ""
-            ],
-            "content": [
-              {
-                "html": "<p>Added a little timestamp to my zsh prompt and it makes all the difference. Open <code>~/.zshrc</code> and add:</p>\n<pre class=\"wp-block-code\"><code><code># prompt time\npreexec () {\n  DATE=$(date +\"%H:%M:%S\")\n  C=$(($COLUMNS-10))\n  echo -e \"\\033[1A\\033[${C}C ${DATE} \"\n}\n</code></code></pre>\n<div class=\"syndication-links\"></div>",
-                "value": "Added a little timestamp to my zsh prompt and it makes all the difference. Open ~/.zshrc and add:\n# prompt time\npreexec () {\n  DATE=$(date +\"%H:%M:%S\")\n  C=$(($COLUMNS-10))\n  echo -e \"\\033[1A\\033[${C}C ${DATE} \"\n}"
-              }
-            ]
-          },
-          "id": "post-504"
         }
       ]
     }
@@ -410,6 +410,7 @@
       "https://vandragt.com/"
     ],
     "bookmark": [
+      "https://vandragt.com/project/622/",
       "https://vandragt.com/technology/mail-a-local-privacy-focused-searchable-database/",
       "https://vandragt.com/project/fafi-0-2-2/",
       "https://vandragt.com/technology/using-python-best-practices/",
@@ -428,18 +429,17 @@
       "https://vandragt.com/technology/how-to-develop-a-library-and-a-project-in-php-concurrently/",
       "https://vandragt.com/technology/daily-clean-trash/",
       "https://vandragt.com/technology/opensuse-tumbleweed-installation-notes/",
-      "https://vandragt.com/technology/bye-twitter/",
-      "https://vandragt.com/status/504/"
+      "https://vandragt.com/technology/bye-twitter/"
     ],
     "category": [
-      "https://vandragt.com/category/technology/",
       "https://vandragt.com/category/project/",
-      "https://vandragt.com/category/status/"
+      "https://vandragt.com/category/status/",
+      "https://vandragt.com/category/technology/"
     ],
     "tag": [
-      "https://vandragt.com/category/technology/",
       "https://vandragt.com/category/project/",
-      "https://vandragt.com/category/status/"
+      "https://vandragt.com/category/status/",
+      "https://vandragt.com/category/technology/"
     ],
     "designer": [
       "http://independentpublisher.me/"
@@ -600,6 +600,26 @@
         "micropub"
       ]
     },
+    "https://vandragt.com/project/622/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to"
+    },
+    "https://vandragt.com/category/project/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Project"
+    },
+    "https://vandragt.com/category/status/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Status"
+    },
     "https://vandragt.com/technology/mail-a-local-privacy-focused-searchable-database/": {
       "rels": [
         "bookmark"
@@ -621,13 +641,6 @@
       "title": "Permalink to Fafi 0.2.2",
       "text": "Fafi 0.2.2"
     },
-    "https://vandragt.com/category/project/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "Project"
-    },
     "https://vandragt.com/technology/using-python-best-practices/": {
       "rels": [
         "bookmark"
@@ -640,13 +653,6 @@
         "bookmark"
       ],
       "title": "Permalink to"
-    },
-    "https://vandragt.com/category/status/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "Status"
     },
     "https://vandragt.com/status/610/": {
       "rels": [
@@ -749,12 +755,6 @@
       ],
       "title": "Permalink to Bye Twitter",
       "text": "Bye Twitter"
-    },
-    "https://vandragt.com/status/504/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Permalink to"
     },
     "http://independentpublisher.me/": {
       "rels": [

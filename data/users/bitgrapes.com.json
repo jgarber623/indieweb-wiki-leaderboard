@@ -1,25 +1,36 @@
 {
   "items": [],
   "rels": {
+    "me": [
+      "https://twitter.com/bitgrapes"
+    ],
     "stylesheet": [
-      "https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic",
-      "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      "https://bitgrapes.com/site/templates/styles/style.css",
+      "https://fonts.googleapis.com/css?family=EB+Garamond|Lato:400,700,900",
+      "https://bitgrapes.com/site/templates/scripts/simplebar.css"
     ]
   },
   "rel-urls": {
-    "https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic": {
+    "https://twitter.com/bitgrapes": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://bitgrapes.com/site/templates/styles/style.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://fonts.googleapis.com/css?family=EB+Garamond|Lato:400,700,900": {
       "rels": [
         "stylesheet"
       ],
-      "media": "all",
       "type": "text/css"
     },
-    "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css": {
+    "https://bitgrapes.com/site/templates/scripts/simplebar.css": {
       "rels": [
         "stylesheet"
-      ],
-      "media": "all",
-      "type": "text/css"
+      ]
     }
   }
 }
