@@ -20,7 +20,7 @@
             "properties": {
               "photo": [
                 {
-                  "value": "https://corlaez.com/assets/signature-white-210.webp",
+                  "value": "https://corlaez.com/assets/signature-white-210.png",
                   "alt": "Logo that reads A R"
                 }
               ],
@@ -127,12 +127,15 @@
     "canonical": [
       "https://corlaez.com/"
     ],
+    "alternate": [
+      "https://corlaez.com/es/"
+    ],
     "icon": [
       "https://corlaez.com/assets/favicon/favicon-16x16.png",
       "https://corlaez.com/assets/favicon/favicon-32x32.png",
       "https://corlaez.com/assets/favicon/favicon-96x96.png",
       "https://corlaez.com/assets/favicon/android-icon-192x192.png",
-      "https://corlaez.com/assets/favicon/favicon.ico"
+      "https://corlaez.com/favicon.ico"
     ],
     "apple-touch-icon": [
       "https://corlaez.com/assets/favicon/apple-icon-57x57.png",
@@ -149,7 +152,28 @@
       "https://corlaez.com/manifest.json"
     ],
     "shortcut": [
-      "https://corlaez.com/assets/favicon/favicon.ico"
+      "https://corlaez.com/favicon.ico"
+    ],
+    "webmention": [
+      "https://webmention.io/corlaez.com/webmention"
+    ],
+    "pingback": [
+      "https://webmention.io/corlaez.com/xmlrpc"
+    ],
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "microsub": [
+      "https://aperture.p3k.io/microsub/781"
+    ],
+    "legal": [
+      "https://corlaez.com/legal.html"
+    ],
+    "privacy": [
+      "https://corlaez.com/legal.html"
     ],
     "authn": [
       "https://github.com/corlaez"
@@ -157,7 +181,8 @@
     "me": [
       "https://github.com/corlaez",
       "https://linkedin.com/in/corlaez",
-      "https://twitter.com/corlaez"
+      "https://twitter.com/corlaez",
+      "https://indieweb.rocks/corlaez.com"
     ],
     "nofollow": [
       "https://xn--sr8hvo.ws/%F0%9F%94%AE%F0%9F%90%9C%F0%9F%9A%87/previous",
@@ -175,6 +200,12 @@
       "rels": [
         "canonical"
       ]
+    },
+    "https://corlaez.com/es/": {
+      "rels": [
+        "alternate"
+      ],
+      "hreflang": "es"
     },
     "https://corlaez.com/assets/favicon/favicon-16x16.png": {
       "rels": [
@@ -250,11 +281,43 @@
         "manifest"
       ]
     },
-    "https://corlaez.com/assets/favicon/favicon.ico": {
+    "https://corlaez.com/favicon.ico": {
       "rels": [
         "icon",
         "shortcut"
       ]
+    },
+    "https://webmention.io/corlaez.com/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://webmention.io/corlaez.com/xmlrpc": {
+      "rels": [
+        "pingback"
+      ]
+    },
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://aperture.p3k.io/microsub/781": {
+      "rels": [
+        "microsub"
+      ]
+    },
+    "https://corlaez.com/legal.html": {
+      "rels": [
+        "legal",
+        "privacy"
+      ],
+      "text": "Legal"
     },
     "https://github.com/corlaez": {
       "rels": [
@@ -292,6 +355,11 @@
         "nofollow"
       ],
       "text": "→"
+    },
+    "https://indieweb.rocks/corlaez.com": {
+      "rels": [
+        "me"
+      ]
     }
   }
 }

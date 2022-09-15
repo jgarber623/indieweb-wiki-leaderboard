@@ -1,29 +1,112 @@
 {
   "items": [],
   "rels": {
+    "dns-prefetch": [
+      "https://s.w.org/"
+    ],
+    "alternate": [
+      "https://willtmonroe.com/feed/",
+      "https://willtmonroe.com/comments/feed/",
+      "https://willtmonroe.com/sample-page/feed/",
+      "https://willtmonroe.com/wp-json/wp/v2/pages/2",
+      "https://willtmonroe.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwilltmonroe.com%2F",
+      "https://willtmonroe.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwilltmonroe.com%2F&format=xml"
+    ],
     "stylesheet": [
-      "http://use.fontawesome.com/releases/v5.0.6/css/all.css"
+      "https://willtmonroe.com/wp-content/themes/davis-blocks/style.css?ver=0.1.2"
     ],
-    "noopener": [
-      "http://reclaimhosting.com/"
+    "https://api.w.org/": [
+      "https://willtmonroe.com/wp-json/"
     ],
-    "noreferrer": [
-      "http://reclaimhosting.com/"
+    "EditURI": [
+      "https://willtmonroe.com/xmlrpc.php?rsd"
+    ],
+    "wlwmanifest": [
+      "https://willtmonroe.com/wp-includes/wlwmanifest.xml"
+    ],
+    "canonical": [
+      "https://willtmonroe.com/"
+    ],
+    "shortlink": [
+      "https://willtmonroe.com/"
+    ],
+    "home": [
+      "https://willtmonroe.com/"
     ]
   },
   "rel-urls": {
-    "http://use.fontawesome.com/releases/v5.0.6/css/all.css": {
+    "https://s.w.org/": {
       "rels": [
-        "stylesheet"
+        "dns-prefetch"
       ]
     },
-    "http://reclaimhosting.com/": {
+    "https://willtmonroe.com/feed/": {
       "rels": [
-        "noopener",
-        "noreferrer"
+        "alternate"
       ],
-      "title": "Reclaim Hosting",
-      "text": "Contact your hosting provider"
+      "title": "Will Monroe » Feed",
+      "type": "application/rss+xml"
+    },
+    "https://willtmonroe.com/comments/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Will Monroe » Comments Feed",
+      "type": "application/rss+xml"
+    },
+    "https://willtmonroe.com/sample-page/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Will Monroe » About Comments Feed",
+      "type": "application/rss+xml"
+    },
+    "https://willtmonroe.com/wp-content/themes/davis-blocks/style.css?ver=0.1.2": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://willtmonroe.com/wp-json/": {
+      "rels": [
+        "https://api.w.org/"
+      ]
+    },
+    "https://willtmonroe.com/wp-json/wp/v2/pages/2": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/json"
+    },
+    "https://willtmonroe.com/xmlrpc.php?rsd": {
+      "rels": [
+        "EditURI"
+      ],
+      "title": "RSD",
+      "type": "application/rsd+xml"
+    },
+    "https://willtmonroe.com/wp-includes/wlwmanifest.xml": {
+      "rels": [
+        "wlwmanifest"
+      ],
+      "type": "application/wlwmanifest+xml"
+    },
+    "https://willtmonroe.com/": {
+      "rels": [
+        "canonical"
+      ]
+    },
+    "https://willtmonroe.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwilltmonroe.com%2F": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/json+oembed"
+    },
+    "https://willtmonroe.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwilltmonroe.com%2F&format=xml": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "text/xml+oembed"
     }
   }
 }
