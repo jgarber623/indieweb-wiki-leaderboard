@@ -121,6 +121,67 @@
           ],
           "properties": {
             "kind": [
+              "Repost"
+            ],
+            "repost-of": [
+              {
+                "type": [
+                  "h-cite"
+                ],
+                "properties": {
+                  "url": [
+                    "https://twitter.com/jessitron/status/1569386381780357120",
+                    "https://twitter.com/jessitron/status/1569386381780357120"
+                  ],
+                  "content": [
+                    {
+                      "html": "<div style=\"white-space:pre\">You: I submitted that pull request. Time to start a new thing!\nMe: can we not?\nAre there pull requests to review?\nUntended upkeep, like libraries to upgrade?\nTo keep WIP low, avoid starting a new thing. Move anything in-progress forward first.</div>",
+                      "value": "You: I submitted that pull request. Time to start a new thing!\nMe: can we not?\nAre there pull requests to review?\nUntended upkeep, like libraries to upgrade?\nTo keep WIP low, avoid starting a new thing. Move anything in-progress forward first."
+                    }
+                  ]
+                },
+                "value": "https://twitter.com/jessitron/status/1569386381780357120"
+              }
+            ],
+            "uid": [
+              "https://www.jvt.me/mf2/2022/09/nzuh4/"
+            ],
+            "url": [
+              "https://www.jvt.me/mf2/2022/09/nzuh4/"
+            ],
+            "published": [
+              "2022-09-15T08:27:00+0100"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "photo": [
+                    {
+                      "value": "https://www.jvt.me/img/profile.png",
+                      "alt": "Jamie Tanna's profile image"
+                    }
+                  ],
+                  "name": [
+                    "Jamie Tanna"
+                  ],
+                  "url": [
+                    "https://www.jvt.me/"
+                  ]
+                },
+                "value": "Jamie Tanna"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "kind": [
               "Bookmark"
             ],
             "summary": [
@@ -3220,64 +3281,6 @@
                 },
                 "value": "Jamie Tanna"
               }
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "kind": [
-              "Article"
-            ],
-            "name": [
-              "Releasing a Go library for content-type negotiation"
-            ],
-            "url": [
-              "https://www.jvt.me/posts/2022/08/05/content-negotiation-go/",
-              "https://www.jvt.me/posts/2022/08/05/content-negotiation-go/"
-            ],
-            "featured": [
-              {
-                "value": "https://media.jvt.me/b41202acf7.png",
-                "alt": "Featured image for sharing metadata for article"
-              }
-            ],
-            "summary": [
-              "Introducing a new Go library for performing server-driven content negotiation."
-            ],
-            "uid": [
-              "https://www.jvt.me/posts/2022/08/05/content-negotiation-go/"
-            ],
-            "published": [
-              "2022-08-05T09:28:10+01:00"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "photo": [
-                    {
-                      "value": "https://www.jvt.me/img/profile.png",
-                      "alt": "Jamie Tanna's profile image"
-                    }
-                  ],
-                  "name": [
-                    "Jamie Tanna"
-                  ],
-                  "url": [
-                    "https://www.jvt.me/"
-                  ]
-                },
-                "value": "Jamie Tanna"
-              }
-            ],
-            "category": [
-              "go",
-              "content-negotiation"
             ]
           }
         }

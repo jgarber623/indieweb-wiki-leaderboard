@@ -12,6 +12,109 @@
           "https://shindakun.dev/"
         ]
       }
+    },
+    {
+      "type": [
+        "h-feed"
+      ],
+      "properties": {},
+      "children": [
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "WIP Hugo Theme"
+            ],
+            "url": [
+              "https://shindakun.dev/posts/wip-hugo-theme/"
+            ],
+            "content": [
+              {
+                "html": "Intro I’ve been putting in some time “Indiewebifying” my Hugo theme, which started as a fork of the Solar theme by Bake. It’s slowly becoming more and more of my own. I’m not much of a front end developer so I’ve keep most of the basic CSS, removing only small bits and adding things where needed to fit my needs. This little post is just to remind me of what I’ve been doing, if you would like to know more just ask.  …",
+                "value": "Intro I’ve been putting in some time “Indiewebifying” my Hugo theme, which started as a fork of the Solar theme by Bake. It’s slowly becoming more and more of my own. I’m not much of a front end developer so I’ve keep most of the basic CSS, removing only small bits and adding things where needed to fit my needs. This little post is just to remind me of what I’ve been doing, if you would like to know more just ask.  …"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Adding gcc to git bash"
+            ],
+            "url": [
+              "https://shindakun.dev/posts/adding-gcc-to-git-bash/"
+            ],
+            "content": [
+              {
+                "html": "So today I was working on my “main” computer which didn’t have much set up on it. Basically only git bash. Problem is I wanted to work on my Hugo site and theme. To do that I needed to install the version of Hugo with extended support for SCSS. This requires gcc. The quickest solution I found was to just install msys2. Once installed it was just a matter of changing to the Hugo directory and running go install --tags extended.  …",
+                "value": "So today I was working on my “main” computer which didn’t have much set up on it. Basically only git bash. Problem is I wanted to work on my Hugo site and theme. To do that I needed to install the version of Hugo with extended support for SCSS. This requires gcc. The quickest solution I found was to just install msys2. Once installed it was just a matter of changing to the Hugo directory and running go install --tags extended.  …"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Getting Reacquainted With Hugo"
+            ],
+            "url": [
+              "https://shindakun.dev/posts/getting-reacquainted-with-hugo/"
+            ],
+            "content": [
+              {
+                "html": "Testing testing testing It’s been a bit since I’ve looked at my Hugo blog here on shindakun.dev.\nHugo First things first, I need to get all my repositories in line. When I originally set everything up I had it separated in a couple different repos. The main repo held everything needed to build the base Hugo. I had two submodules for the themes that power the site. Finally, I had a repo just for blog posts.  …",
+                "value": "Testing testing testing It’s been a bit since I’ve looked at my Hugo blog here on shindakun.dev.\nHugo First things first, I need to get all my repositories in line. When I originally set everything up I had it separated in a couple different repos. The main repo held everything needed to build the base Hugo. I had two submodules for the themes that power the site. Finally, I had a repo just for blog posts.  …"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "2020 Roguelikedev Tutorial Week 2"
+            ],
+            "url": [
+              "https://shindakun.dev/posts/2020-roguelikedev-tutorial-week-2/"
+            ],
+            "content": [
+              {
+                "html": "RoguelikeDev Does The Complete Roguelike Tutorial Week 2 - June 23rd - 29th 2020 Introduction That’s right - we are continuing our work on the Roguelike Tutorial! This week we’ll try to get through parts 2 and 3 (and almost make it). I did have one small update after the last post that I briefly mentioned on Twitter so, I figured I should mention it here.\nAnd with that out of the way, let’s continue on!  …",
+                "value": "RoguelikeDev Does The Complete Roguelike Tutorial Week 2 - June 23rd - 29th 2020 Introduction That’s right - we are continuing our work on the Roguelike Tutorial! This week we’ll try to get through parts 2 and 3 (and almost make it). I did have one small update after the last post that I briefly mentioned on Twitter so, I figured I should mention it here.\nAnd with that out of the way, let’s continue on!  …"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "2020 Roguelikedev Tutorial Week 1"
+            ],
+            "url": [
+              "https://shindakun.dev/posts/2020-roguelikedev-tutorial-week-1/"
+            ],
+            "content": [
+              {
+                "html": "RoguelikeDev Does The Complete Roguelike Tutorial Week 1 - June 16th - 22nd 2020 Introduction Welcome back! It’s been a bit since my last post. The quarantine was not the boon I thought it would be for side projects. I haven’t really been motivated to do much of anything.\nI thought I might take part in the Portland Indie Game Squads Summer Slow Jam but, that didn’t really work out so far.  …",
+                "value": "RoguelikeDev Does The Complete Roguelike Tutorial Week 1 - June 16th - 22nd 2020 Introduction Welcome back! It’s been a bit since my last post. The quarantine was not the boon I thought it would be for side projects. I haven’t really been motivated to do much of anything.\nI thought I might take part in the Portland Indie Game Squads Summer Slow Jam but, that didn’t really work out so far.  …"
+              }
+            ]
+          }
+        }
+      ]
     }
   ],
   "rels": {
@@ -46,6 +149,9 @@
       "https://github.com/shindakun",
       "https://mastodon.social/web/@shindakun",
       "https://twitter.com/shindakun"
+    ],
+    "next": [
+      "https://shindakun.dev/page/2/"
     ]
   },
   "rel-urls": {
@@ -121,6 +227,12 @@
         "me"
       ],
       "text": "Twitter"
+    },
+    "https://shindakun.dev/page/2/": {
+      "rels": [
+        "next"
+      ],
+      "text": "Older Posts →"
     }
   }
 }

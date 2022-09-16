@@ -35,6 +35,254 @@
         "h-entry"
       ],
       "properties": {
+        "name": [
+          "Let’s get logical"
+        ],
+        "url": [
+          "https://adactio.com/journal/19457"
+        ],
+        "content": [
+          {
+            "html": "<p>I was refactoring some CSS on <a href=\"https://thesession.org/\">The Session</a> over the weekend. I thought it would be good to switch over to using <a href=\"https://web.dev/learn/css/logical-properties/\">logical properties</a> exclusively. I did this partly to make the site more easily translatable into languages with different writing modes, but mostly as an exercise to help train <em>me</em> in thinking with logical properties by default.</p>\n\n<p>All in all, it went pretty smoothly. You can kick the tyres by opening up dev tools on <a href=\"https://thesession.org/\">The Session</a> and adding a <code>writing-mode</code> declaration to the <code>body</code> or <code>html</code> element.</p>\n\n<p>For the most part, the switchover was smooth. It mostly involved swapping out property names with <code>left</code>, <code>right</code>, <code>top</code>, and <code>bottom</code> for <code>inline-start</code>, <code>inline-end</code>, <code>block-start</code>, and <code>block-end</code>.</p>\n\n<p>The <code>border-radius</code> properties tripped me up a little. You have to use shorthand like <code>border-radius-start-end</code>, not <code>border-radius-block-start-inline-end</code> (that doesn’t exist). So you have to keep the order of the properties in mind:</p>\n\n<p><code>\nborder-radius-{{block direction}}-{{inline-direction}}\n</code></p>\n\n<p>Speaking of shorthand, I also had to kiss some shorthand declarations goodbye. Let’s say I use this shorthand for something like <code>margin</code> or <code>padding</code>:</p>\n\n<p><code>\nmargin: 1em 1.5em 2em 0.5em;\n</code></p>\n\n<p>Those values get applied to <code>margin-top</code>, <code>margin-right</code>, <code>margin-bottom</code>, and <code>margin-left</code>, <em>not</em> the logical equivalents (<code>block-start</code>, <code>inline-end</code>, <code>block-end</code>, and <code>inline-start</code>). So separate declarations are needed instead:</p>\n\n<p><code><pre>\nmargin-block-start: 1em;\nmargin-inline-end: 1.5em;\nmargin-block-end: 2em;\nmargin-inline-start: 0.5em;\n</pre></code></p>\n\n<p>Same goes for shorthand like this:</p>\n\n<p><code>\nmargin: 1em 2em;\n</code></p>\n\n<p>That needs to be written as two declarations:</p>\n\n<p><code><pre>\nmargin-block: 1em;\nmargin-inline: 2em;\n</pre></code></p>\n\n<p>Now <a href=\"https://adactio.com/journal/18640\">I’ve said it before</a> and I’ll say it again: it feels really weird that you can’t use logical properties in media queries. Although as I said:</p>\n\n<blockquote>\n  <p>Now you could rightly argue that in this instance we’re talking about the physical dimensions of the viewport. So maybe width and height make more sense than inline and block.</p>\n</blockquote>\n\n<p>But along comes the new kid on the block (or inline), <a href=\"https://web.dev/learn/design/micro-layouts/#container-queries\">container queries</a>, ready to roll with <code>container-type</code> values like <code>inline-size</code>. I hope it’s just a matter of time until we can use logical properties in all our conditional queries.</p>\n\n<p>The other place where there’s still a cognitive mismatch is in transforms and animations. We’ve got a <code>translateX()</code> function but no <code>translate-inline()</code>. We’ve got <code>translateY()</code> but no <code>translate-block()</code>.</p>\n\n<p>On <a href=\"https://thesession.org/\">The Session</a> I’m using some JavaScript to figure out the details of some animation effects. I’m using methods like <code>getBoundingClientRect()</code>. It doesn’t return logical properties. So if I ever want to adjust my animations based on writing direction, I’ll need to fork my JavaScript code.</p>\n\n<p>Oh, and one other thing: the <code>aspect-ratio</code> property takes values in the form of <code>width/height</code>, not <code>inline/block</code>. That makes sense if you’re dealing with images, videos, or other embedded content but it makes it really tricky to use <code>aspect-ratio</code> on elements that contain text. I mean, it works fine as long as the text is in a language using a top-to-bottom writing mode, but not for any other languages.</p>",
+            "value": "I was refactoring some CSS on The Session over the weekend. I thought it would be good to switch over to using logical properties exclusively. I did this partly to make the site more easily translatable into languages with different writing modes, but mostly as an exercise to help train me in thinking with logical properties by default.\n\nAll in all, it went pretty smoothly. You can kick the tyres by opening up dev tools on The Session and adding a writing-mode declaration to the body or html element.\n\nFor the most part, the switchover was smooth. It mostly involved swapping out property names with left, right, top, and bottom for inline-start, inline-end, block-start, and block-end.\n\nThe border-radius properties tripped me up a little. You have to use shorthand like border-radius-start-end, not border-radius-block-start-inline-end (that doesn’t exist). So you have to keep the order of the properties in mind:\n\n\nborder-radius-{{block direction}}-{{inline-direction}}\n\n\nSpeaking of shorthand, I also had to kiss some shorthand declarations goodbye. Let’s say I use this shorthand for something like margin or padding:\n\n\nmargin: 1em 1.5em 2em 0.5em;\n\n\nThose values get applied to margin-top, margin-right, margin-bottom, and margin-left, not the logical equivalents (block-start, inline-end, block-end, and inline-start). So separate declarations are needed instead:\n\n\nmargin-block-start: 1em;\nmargin-inline-end: 1.5em;\nmargin-block-end: 2em;\nmargin-inline-start: 0.5em;\n\n\nSame goes for shorthand like this:\n\n\nmargin: 1em 2em;\n\n\nThat needs to be written as two declarations:\n\n\nmargin-block: 1em;\nmargin-inline: 2em;\n\n\nNow I’ve said it before and I’ll say it again: it feels really weird that you can’t use logical properties in media queries. Although as I said:\n\n\n  Now you could rightly argue that in this instance we’re talking about the physical dimensions of the viewport. So maybe width and height make more sense than inline and block.\n\n\nBut along comes the new kid on the block (or inline), container queries, ready to roll with container-type values like inline-size. I hope it’s just a matter of time until we can use logical properties in all our conditional queries.\n\nThe other place where there’s still a cognitive mismatch is in transforms and animations. We’ve got a translateX() function but no translate-inline(). We’ve got translateY() but no translate-block().\n\nOn The Session I’m using some JavaScript to figure out the details of some animation effects. I’m using methods like getBoundingClientRect(). It doesn’t return logical properties. So if I ever want to adjust my animations based on writing direction, I’ll need to fork my JavaScript code.\n\nOh, and one other thing: the aspect-ratio property takes values in the form of width/height, not inline/block. That makes sense if you’re dealing with images, videos, or other embedded content but it makes it really tricky to use aspect-ratio on elements that contain text. I mean, it works fine as long as the text is in a language using a top-to-bottom writing mode, but not for any other languages."
+          }
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "50.83253926"
+              ],
+              "longitude": [
+                "-0.11816187"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "published": [
+          "2022-09-15T16:47:31Z"
+        ],
+        "category": [
+          "css",
+          "logical",
+          "properties",
+          "styling",
+          "writingmodes",
+          "inline",
+          "block",
+          "margin",
+          "padding",
+          "borders",
+          "frontend",
+          "development",
+          "refactoring",
+          "thesession"
+        ],
+        "syndication": [
+          "https://adactio.medium.com/85625837821e"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://btribble.com/dconstruct-22/\">\nReflections on Dconstruct 2022 – Bill Tribble\n</a>\n</h3>\n\n<blockquote>\n  <p>Wow, what a day. A really diverse selection of talks that went all over the map. From building vast world-changing health systems, to scaling and archiving global online communities, to the beauty and joy of calligraphy. And lasers. I enjoyed the lot, which is rare for me at an event like this.</p>\n</blockquote>\n\n<p>A rather lovely write-up of the final dConstruct!</p>\n\n<blockquote>\n  <p>Above all it was nice to see the diversity of approaches and reasons for doing ‘design’ / art / whatever. Some of us are solving the hard problems, some of us are thinking philosophically or creating new tools, and some of us are just having fun – and all approaches are valid and useful.</p>\n</blockquote>",
+            "value": "Reflections on Dconstruct 2022 – Bill Tribble\n\n\n\n\n  Wow, what a day. A really diverse selection of talks that went all over the map. From building vast world-changing health systems, to scaling and archiving global online communities, to the beauty and joy of calligraphy. And lasers. I enjoyed the lot, which is rare for me at an event like this.\n\n\nA rather lovely write-up of the final dConstruct!\n\n\n  Above all it was nice to see the diversity of approaches and reasons for doing ‘design’ / art / whatever. Some of us are solving the hard problems, some of us are thinking philosophically or creating new tools, and some of us are just having fun – and all approaches are valid and useful."
+          }
+        ],
+        "name": [
+          "Reflections on Dconstruct 2022 – Bill Tribble"
+        ],
+        "bookmark-of": [
+          "https://btribble.com/dconstruct-22/"
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "50.83245988"
+              ],
+              "longitude": [
+                "-0.11814075"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/links/19456"
+        ],
+        "published": [
+          "2022-09-15T14:02:31Z"
+        ],
+        "category": [
+          "dconstruct",
+          "conferences",
+          "events",
+          "brighton",
+          "clearleft",
+          "lineup",
+          "speakers",
+          "talks",
+          "presentations"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "<p>Now we go live to <a href=\"https://twitter.com/Figma\">@Figma</a> announcing its acquisition by <a href=\"https://twitter.com/Adobe\">@Adobe</a>…</p>\n\n<p><a href=\"https://www.youtube.com/watch?v=vsLH70BrnnM\">https://www.youtube.com/watch?v=vsLH70BrnnM</a></p>\n<div><a class=\"videoimglink\" href=\"https://www.youtube.com/watch?v=vsLH70BrnnM\" onclick=\"event.preventDefault();this.parentNode.className='embed';this.parentNode.innerHTML='&lt;iframe src=https://www.youtube-nocookie.com/embed/vsLH70BrnnM?autoplay=1&gt;&lt;/iframe&gt;';\"><img style=\"width: 100%\" loading=\"lazy\" src=\"https://i.ytimg.com/vi/vsLH70BrnnM/mqdefault.jpg\" alt=\"David's \" bad news and irrelevant the office srcset=\"https://i.ytimg.com/vi/vsLH70BrnnM/mqdefault.jpg 320w, https://i.ytimg.com/vi/vsLH70BrnnM/hqdefault.jpg 480w, https://i.ytimg.com/vi/vsLH70BrnnM/sddefault.jpg 640w, https://i.ytimg.com/vi/vsLH70BrnnM/maxresdefault.jpg 1280w\" sizes=\"(min-width: 65em) 55vw, 90vw\"></a></div>",
+            "value": "Now we go live to @Figma announcing its acquisition by @Adobe…\n\nhttps://www.youtube.com/watch?v=vsLH70BrnnM\n David's"
+          }
+        ],
+        "name": [
+          "Now we go live to @Figma announcing its acquisition by @Adobe…\n\nhttps://www.youtube.com/watch?v=vsLH70BrnnM\n David's"
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "50.83251455"
+              ],
+              "longitude": [
+                "-0.11815341"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/notes/19455"
+        ],
+        "published": [
+          "2022-09-15T13:11:14Z"
+        ],
+        "syndication": [
+          "https://twitter.com/adactio/status/1570399847957553152"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://www.doc.cc/articles/the-aesthetics-of-our-new-fictions\">\nDOC • The aesthetics of our new fictions\n</a>\n</h3>\n\n<blockquote>\n  <p>As designers, with every new project we tend to leverage existing symbols and reinforce their meaning to be able to benefit from mental associations people will naturally make. But we also have the power to modify and repurpose those symbols, should that be our intention.</p>\n</blockquote>",
+            "value": "DOC • The aesthetics of our new fictions\n\n\n\n\n  As designers, with every new project we tend to leverage existing symbols and reinforce their meaning to be able to benefit from mental associations people will naturally make. But we also have the power to modify and repurpose those symbols, should that be our intention."
+          }
+        ],
+        "name": [
+          "DOC • The aesthetics of our new fictions"
+        ],
+        "bookmark-of": [
+          "https://www.doc.cc/articles/the-aesthetics-of-our-new-fictions"
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "50.83251546"
+              ],
+              "longitude": [
+                "-0.11812973"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/links/19454"
+        ],
+        "published": [
+          "2022-09-15T08:18:13Z"
+        ],
+        "category": [
+          "design",
+          "history",
+          "aesthetics",
+          "fictions",
+          "culture",
+          "belief",
+          "symbols"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "photo": [
+          {
+            "value": "https://adactio.com/images/uploaded/19453/small.jpg",
+            "alt": "A group of musicians gathered around a table in a pub playing on fiddles and accordions."
+          }
+        ],
+        "content": [
+          {
+            "html": "<p>Good tunes last night.</p>",
+            "value": "Good tunes last night."
+          }
+        ],
+        "name": [
+          "Good tunes last night."
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "50.83898611"
+              ],
+              "longitude": [
+                "-0.13346111"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/notes/19453"
+        ],
+        "published": [
+          "2022-09-15T07:51:46Z"
+        ],
+        "syndication": [
+          "https://twitter.com/adactio/status/1570319480735281152",
+          "https://www.instagram.com/p/CihQn3htzfS/"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
         "content": [
           {
             "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://jacobian.org/2022/sep/9/quality-is-systemic/\">\nQuality Is Systemic - Jacob Kaplan-Moss\n</a>\n</h3>\n\n<blockquote>\n  <p><strong>Software quality is more the result of a system designed to produce quality, and not so much the result of individual performance.</strong> That is: a group of mediocre programmers working with a structure designed to produce quality will produce better software than a group of fantastic programmers working in a system designed with other goals.</p>\n</blockquote>\n\n<p>This talks about development, but I believe it applies equally—if not more—to design.</p>\n\n<p>And this is very insightful:</p>\n\n<blockquote>\n  <p>Instead of spending tons of time and effort on hiring because you believe that you can “only hire the best”, direct some of that effort towards building a system that produces great results out of a wider spectrum of individual performance.</p>\n</blockquote>",
@@ -810,267 +1058,6 @@
     },
     {
       "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "content": [
-          {
-            "html": "<p>Reading Mind Of My Mind by by Octavia E. Butler.</p>",
-            "value": "Reading Mind Of My Mind by by Octavia E. Butler."
-          }
-        ],
-        "name": [
-          "Reading Mind Of My Mind by by Octavia E. Butler."
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83248770"
-              ],
-              "longitude": [
-                "-0.11816652"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/notes/19433"
-        ],
-        "published": [
-          "2022-09-10T10:18:42Z"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "content": [
-          {
-            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://calibreapp.com/blog/largest-contentful-paint\">\nHow To Improve Largest Contentful Paint for Faster Load Times - Calibre\n</a>\n</h3>\n\n<p>A no-nonsense checklist of good performance advice from Karolina.</p>",
-            "value": "How To Improve Largest Contentful Paint for Faster Load Times - Calibre\n\n\n\nA no-nonsense checklist of good performance advice from Karolina."
-          }
-        ],
-        "name": [
-          "How To Improve Largest Contentful Paint for Faster Load Times - Calibre"
-        ],
-        "bookmark-of": [
-          "https://calibreapp.com/blog/largest-contentful-paint"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83252121"
-              ],
-              "longitude": [
-                "-0.11814735"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/links/19431"
-        ],
-        "published": [
-          "2022-09-08T11:19:54Z"
-        ],
-        "category": [
-          "performance",
-          "lcp",
-          "speed",
-          "cwv",
-          "frontend",
-          "development",
-          "fonts",
-          "images",
-          "ttfb",
-          "lazyloading",
-          "preloading"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "content": [
-          {
-            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://daverupert.com/2022/08/modern-alternatives-to-bem/\">\nModern alternatives to BEM - daverupert.com\n</a>\n</h3>\n\n<p>Dave rounds up some of the acronymtastic ways of scoping your CSS now that we’ve got a whole new toolkit at our disposal.</p>\n\n<blockquote>\n  <p>If your goal is to reduce specificity, new native CSS tools make reducing specificity a lot easier. You can author your CSS with near-zero specificity and even control the order in which your rules cascade.</p>\n</blockquote>",
-            "value": "Modern alternatives to BEM - daverupert.com\n\n\n\nDave rounds up some of the acronymtastic ways of scoping your CSS now that we’ve got a whole new toolkit at our disposal.\n\n\n  If your goal is to reduce specificity, new native CSS tools make reducing specificity a lot easier. You can author your CSS with near-zero specificity and even control the order in which your rules cascade."
-          }
-        ],
-        "name": [
-          "Modern alternatives to BEM - daverupert.com"
-        ],
-        "bookmark-of": [
-          "https://daverupert.com/2022/08/modern-alternatives-to-bem/"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83256258"
-              ],
-              "longitude": [
-                "-0.11819616"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/links/19430"
-        ],
-        "published": [
-          "2022-09-08T11:16:45Z"
-        ],
-        "category": [
-          "css",
-          ":where",
-          ":is",
-          "scope",
-          "styles",
-          "scoping",
-          "styling",
-          "components",
-          "bem",
-          "oocss",
-          "smacss",
-          "cascadelayers",
-          "standards",
-          "cube",
-          "hecs",
-          "wils",
-          "goc"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "content": [
-          {
-            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://www.kryogenix.org/days/2022/08/31/farmbound-or-how-i-built-an-app-in-2022/\">\nas days pass by — Farmbound, or how I built an app in 2022\n</a>\n</h3>\n\n<p>Stuart writes up the process up making a mobile game as a web app—<em>not</em> a native app. The Wordle effect reverberates.</p>\n\n<blockquote>\n  <p>It’s a web app. Works for everyone. And I thought it would be useful to explain why it is, why I think that’s the way to do things, and some of the interesting parts of building an app for everyone to play which is delivered over the web rather than via app stores and downloads.</p>\n</blockquote>",
-            "value": "as days pass by — Farmbound, or how I built an app in 2022\n\n\n\nStuart writes up the process up making a mobile game as a web app—not a native app. The Wordle effect reverberates.\n\n\n  It’s a web app. Works for everyone. And I thought it would be useful to explain why it is, why I think that’s the way to do things, and some of the interesting parts of building an app for everyone to play which is delivered over the web rather than via app stores and downloads."
-          }
-        ],
-        "name": [
-          "as days pass by — Farmbound, or how I built an app in 2022"
-        ],
-        "bookmark-of": [
-          "https://www.kryogenix.org/days/2022/08/31/farmbound-or-how-i-built-an-app-in-2022/"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83246965"
-              ],
-              "longitude": [
-                "-0.11811505"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/links/19429"
-        ],
-        "published": [
-          "2022-09-08T11:04:23Z"
-        ],
-        "category": [
-          "web",
-          "native",
-          "mobile",
-          "games",
-          "frontend",
-          "development",
-          "apps",
-          "serviceworkers",
-          "browsers",
-          "standards",
-          "farmbound",
-          "gaming"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "name": [
-          "One day to dConstruct"
-        ],
-        "url": [
-          "https://adactio.com/journal/19427"
-        ],
-        "content": [
-          {
-            "html": "<p>Just one more sleep until <a href=\"https://2022.dconstruct.org/\">dConstruct</a>—squee!</p>\n\n<p>Not that I anticipate getting much sleep. My sleepnessness will partly be like that of a child on the night before Christmas. But my sleepnessness will also inevitably be that of an adult neurotically worrying about trifling details.</p>\n\n<p>In reality, everything is all set. Thanks to the stellar <a href=\"https://clearleft.com/\">Clearleft</a> events team, I don’t need to lose any sleep. But my stupid brain can’t help but run a conveyer belt of potential problems through my mind: what about dongles? Power? Timings? What if there’s an impromptu rail strike? A deluge? Other emergencies you can’t even imagine?</p>\n\n<p>I try to ignore those pestering pointless questions and instead think about the fantastic talks we’re going to get. I’m genuinely excited about each and every speaker. I’m pretty sure that once the day begins, I’ll forget all my worries and bliss out to the mind-expanding presentations.</p>\n\n<p>The day before a conference feels kind of like the build-up to a battle. All the strategic decisions have been made, everything is in place, and now there’s nothing to do but wait.</p>\n\n<p>I’ve communicated (or maybe over-communicated) all the relevant details to the speakers. And one week ago I sent one final email to the attendees with <a href=\"https://adactio.com/journal/19373\">details of the schedule and some suggestions for lunch</a>.</p>\n\n<p>I also included this request:</p>\n\n<blockquote>\n  <p>Could you do me a favour? Would you mind getting a hold of a Covid test sometime in the next week and taking a test a day or two before dConstruct? (And if you test positive, please don’t come to the event.)</p>\n  \n  <p>If you can’t get hold of a test (I know it can be tricky), then could you please bring a mask to wear when inside the venue?</p>\n</blockquote>\n\n<p>I think asking everyone to take a test is a reasonable request, and nobody has objected to it. I worry that it’s yet another form of hygiene theatre (like providing anti-<em>bacterial</em> handwash for an airborne <em>virus</em>). After all, the antigen tests are most effective when you’ve already got symptoms. Taking a test when you don’t have symptoms might well give a negative result, but it doesn’t necessarily mean you don’t have Covid. Still, it’s a little intervention that might catch an infection that otherwise would’ve spread further.</p>\n\n<p>I’m assuming that everyone coming to dConstruct is vaccinated. Maybe that’s naive on my part, but I figure if you’re intelligent enough to get a dConstruct ticket, you’re intelligent enough to protect yourself and others. So we won’t be requesting proof of vaccination. I hope my naivety aligns with reality.</p>\n\n<p>See, this is all one more thing for my brain to gnaw on when I should be thinking about what a fantastic day of talks I’ve got ahead of me. Roll on tomorrow!</p>",
-            "value": "Just one more sleep until dConstruct—squee!\n\nNot that I anticipate getting much sleep. My sleepnessness will partly be like that of a child on the night before Christmas. But my sleepnessness will also inevitably be that of an adult neurotically worrying about trifling details.\n\nIn reality, everything is all set. Thanks to the stellar Clearleft events team, I don’t need to lose any sleep. But my stupid brain can’t help but run a conveyer belt of potential problems through my mind: what about dongles? Power? Timings? What if there’s an impromptu rail strike? A deluge? Other emergencies you can’t even imagine?\n\nI try to ignore those pestering pointless questions and instead think about the fantastic talks we’re going to get. I’m genuinely excited about each and every speaker. I’m pretty sure that once the day begins, I’ll forget all my worries and bliss out to the mind-expanding presentations.\n\nThe day before a conference feels kind of like the build-up to a battle. All the strategic decisions have been made, everything is in place, and now there’s nothing to do but wait.\n\nI’ve communicated (or maybe over-communicated) all the relevant details to the speakers. And one week ago I sent one final email to the attendees with details of the schedule and some suggestions for lunch.\n\nI also included this request:\n\n\n  Could you do me a favour? Would you mind getting a hold of a Covid test sometime in the next week and taking a test a day or two before dConstruct? (And if you test positive, please don’t come to the event.)\n  \n  If you can’t get hold of a test (I know it can be tricky), then could you please bring a mask to wear when inside the venue?\n\n\nI think asking everyone to take a test is a reasonable request, and nobody has objected to it. I worry that it’s yet another form of hygiene theatre (like providing anti-bacterial handwash for an airborne virus). After all, the antigen tests are most effective when you’ve already got symptoms. Taking a test when you don’t have symptoms might well give a negative result, but it doesn’t necessarily mean you don’t have Covid. Still, it’s a little intervention that might catch an infection that otherwise would’ve spread further.\n\nI’m assuming that everyone coming to dConstruct is vaccinated. Maybe that’s naive on my part, but I figure if you’re intelligent enough to get a dConstruct ticket, you’re intelligent enough to protect yourself and others. So we won’t be requesting proof of vaccination. I hope my naivety aligns with reality.\n\nSee, this is all one more thing for my brain to gnaw on when I should be thinking about what a fantastic day of talks I’ve got ahead of me. Roll on tomorrow!"
-          }
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83253904"
-              ],
-              "longitude": [
-                "-0.11819975"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "published": [
-          "2022-09-08T09:58:23Z"
-        ],
-        "category": [
-          "dconstruct",
-          "conferences",
-          "events",
-          "brighton",
-          "clearleft",
-          "lineup",
-          "speakers",
-          "covid",
-          "coronavirus",
-          "planning",
-          "anticipation"
-        ],
-        "syndication": [
-          "https://adactio.medium.com/2538a024c868"
-        ]
-      }
-    },
-    {
-      "type": [
         "h-card"
       ],
       "properties": {
@@ -1809,6 +1796,11 @@
       "https://adactio.com/includes/css/print.css"
     ],
     "bookmark": [
+      "https://adactio.com/journal/19457",
+      "https://adactio.com/links/19456",
+      "https://adactio.com/notes/19455",
+      "https://adactio.com/links/19454",
+      "https://adactio.com/notes/19453",
       "https://adactio.com/links/19450",
       "https://adactio.com/links/19449",
       "https://adactio.com/notes/19448",
@@ -1823,33 +1815,49 @@
       "https://adactio.com/notes/19438",
       "https://adactio.com/notes/19436",
       "https://adactio.com/links/19435",
-      "https://adactio.com/links/19434",
-      "https://adactio.com/notes/19433",
-      "https://adactio.com/links/19431",
-      "https://adactio.com/links/19430",
-      "https://adactio.com/links/19429",
-      "https://adactio.com/journal/19427"
+      "https://adactio.com/links/19434"
     ],
     "tag": [
-      "https://adactio.com/tags/quality",
-      "https://adactio.com/tags/software",
-      "https://adactio.com/tags/systems",
-      "https://adactio.com/tags/work",
-      "https://adactio.com/tags/culture",
-      "https://adactio.com/tags/processes",
-      "https://adactio.com/tags/design",
-      "https://adactio.com/tags/development",
-      "https://adactio.com/tags/react",
-      "https://adactio.com/tags/javascript",
-      "https://adactio.com/tags/frameworks",
-      "https://adactio.com/tags/libraries",
-      "https://adactio.com/tags/popularity",
+      "https://adactio.com/tags/css",
+      "https://adactio.com/tags/logical",
+      "https://adactio.com/tags/properties",
+      "https://adactio.com/tags/styling",
+      "https://adactio.com/tags/writingmodes",
+      "https://adactio.com/tags/inline",
+      "https://adactio.com/tags/block",
+      "https://adactio.com/tags/margin",
+      "https://adactio.com/tags/padding",
+      "https://adactio.com/tags/borders",
       "https://adactio.com/tags/frontend",
+      "https://adactio.com/tags/development",
+      "https://adactio.com/tags/refactoring",
+      "https://adactio.com/tags/thesession",
       "https://adactio.com/tags/dconstruct",
       "https://adactio.com/tags/conferences",
       "https://adactio.com/tags/events",
       "https://adactio.com/tags/brighton",
       "https://adactio.com/tags/clearleft",
+      "https://adactio.com/tags/lineup",
+      "https://adactio.com/tags/speakers",
+      "https://adactio.com/tags/talks",
+      "https://adactio.com/tags/presentations",
+      "https://adactio.com/tags/design",
+      "https://adactio.com/tags/history",
+      "https://adactio.com/tags/aesthetics",
+      "https://adactio.com/tags/fictions",
+      "https://adactio.com/tags/culture",
+      "https://adactio.com/tags/belief",
+      "https://adactio.com/tags/symbols",
+      "https://adactio.com/tags/quality",
+      "https://adactio.com/tags/software",
+      "https://adactio.com/tags/systems",
+      "https://adactio.com/tags/work",
+      "https://adactio.com/tags/processes",
+      "https://adactio.com/tags/react",
+      "https://adactio.com/tags/javascript",
+      "https://adactio.com/tags/frameworks",
+      "https://adactio.com/tags/libraries",
+      "https://adactio.com/tags/popularity",
       "https://adactio.com/tags/music",
       "https://adactio.com/tags/playlist",
       "https://adactio.com/tags/spotify",
@@ -1865,8 +1873,6 @@
       "https://adactio.com/tags/film",
       "https://adactio.com/tags/btconf",
       "https://adactio.com/tags/covid",
-      "https://adactio.com/tags/lineup",
-      "https://adactio.com/tags/speakers",
       "https://adactio.com/tags/diversity",
       "https://adactio.com/tags/life",
       "https://adactio.com/tags/food",
@@ -1888,9 +1894,7 @@
       "https://adactio.com/tags/photos",
       "https://adactio.com/tags/pictures",
       "https://adactio.com/tags/speaking",
-      "https://adactio.com/tags/talks",
       "https://adactio.com/tags/transformation",
-      "https://adactio.com/tags/presentations",
       "https://adactio.com/tags/progressive",
       "https://adactio.com/tags/enhancement",
       "https://adactio.com/tags/mvp",
@@ -1898,47 +1902,13 @@
       "https://adactio.com/tags/priorities",
       "https://adactio.com/tags/resilience",
       "https://adactio.com/tags/technical",
-      "https://adactio.com/tags/credit",
-      "https://adactio.com/tags/performance",
-      "https://adactio.com/tags/lcp",
-      "https://adactio.com/tags/speed",
-      "https://adactio.com/tags/cwv",
-      "https://adactio.com/tags/fonts",
-      "https://adactio.com/tags/images",
-      "https://adactio.com/tags/ttfb",
-      "https://adactio.com/tags/lazyloading",
-      "https://adactio.com/tags/preloading",
-      "https://adactio.com/tags/css",
-      "https://adactio.com/tags/:where",
-      "https://adactio.com/tags/:is",
-      "https://adactio.com/tags/scope",
-      "https://adactio.com/tags/styles",
-      "https://adactio.com/tags/scoping",
-      "https://adactio.com/tags/styling",
-      "https://adactio.com/tags/components",
-      "https://adactio.com/tags/bem",
-      "https://adactio.com/tags/oocss",
-      "https://adactio.com/tags/smacss",
-      "https://adactio.com/tags/cascadelayers",
-      "https://adactio.com/tags/standards",
-      "https://adactio.com/tags/cube",
-      "https://adactio.com/tags/hecs",
-      "https://adactio.com/tags/wils",
-      "https://adactio.com/tags/goc",
-      "https://adactio.com/tags/web",
-      "https://adactio.com/tags/native",
-      "https://adactio.com/tags/mobile",
-      "https://adactio.com/tags/games",
-      "https://adactio.com/tags/apps",
-      "https://adactio.com/tags/serviceworkers",
-      "https://adactio.com/tags/browsers",
-      "https://adactio.com/tags/farmbound",
-      "https://adactio.com/tags/gaming",
-      "https://adactio.com/tags/coronavirus",
-      "https://adactio.com/tags/planning",
-      "https://adactio.com/tags/anticipation"
+      "https://adactio.com/tags/credit"
     ],
     "syndication": [
+      "https://adactio.medium.com/85625837821e",
+      "https://twitter.com/adactio/status/1570399847957553152",
+      "https://twitter.com/adactio/status/1570319480735281152",
+      "https://www.instagram.com/p/CihQn3htzfS/",
       "https://www.instagram.com/p/CidnL8BN8bB/",
       "https://adactio.medium.com/c4799d0a94e",
       "https://www.instagram.com/p/CiaUNl2ty0F/",
@@ -1947,8 +1917,7 @@
       "https://adactio.medium.com/f647d21dbca3",
       "https://www.swarmapp.com/user/112073/checkin/631dffca891e29053034a021",
       "https://twitter.com/adactio/status/1568955718803259397",
-      "https://www.instagram.com/p/CiXkbckN32K/",
-      "https://adactio.medium.com/2538a024c868"
+      "https://www.instagram.com/p/CiXkbckN32K/"
     ],
     "next": [
       "https://adactio.com/?start=20"
@@ -2339,6 +2308,240 @@
       ],
       "text": "music"
     },
+    "https://adactio.com/journal/19457": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n4:47pm\n\n"
+    },
+    "https://adactio.com/tags/css": {
+      "rels": [
+        "tag"
+      ],
+      "text": "css"
+    },
+    "https://adactio.com/tags/logical": {
+      "rels": [
+        "tag"
+      ],
+      "text": "logical"
+    },
+    "https://adactio.com/tags/properties": {
+      "rels": [
+        "tag"
+      ],
+      "text": "properties"
+    },
+    "https://adactio.com/tags/styling": {
+      "rels": [
+        "tag"
+      ],
+      "text": "styling"
+    },
+    "https://adactio.com/tags/writingmodes": {
+      "rels": [
+        "tag"
+      ],
+      "text": "writingmodes"
+    },
+    "https://adactio.com/tags/inline": {
+      "rels": [
+        "tag"
+      ],
+      "text": "inline"
+    },
+    "https://adactio.com/tags/block": {
+      "rels": [
+        "tag"
+      ],
+      "text": "block"
+    },
+    "https://adactio.com/tags/margin": {
+      "rels": [
+        "tag"
+      ],
+      "text": "margin"
+    },
+    "https://adactio.com/tags/padding": {
+      "rels": [
+        "tag"
+      ],
+      "text": "padding"
+    },
+    "https://adactio.com/tags/borders": {
+      "rels": [
+        "tag"
+      ],
+      "text": "borders"
+    },
+    "https://adactio.com/tags/frontend": {
+      "rels": [
+        "tag"
+      ],
+      "text": "frontend"
+    },
+    "https://adactio.com/tags/development": {
+      "rels": [
+        "tag"
+      ],
+      "text": "development"
+    },
+    "https://adactio.com/tags/refactoring": {
+      "rels": [
+        "tag"
+      ],
+      "text": "refactoring"
+    },
+    "https://adactio.com/tags/thesession": {
+      "rels": [
+        "tag"
+      ],
+      "text": "thesession"
+    },
+    "https://adactio.medium.com/85625837821e": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "Medium"
+    },
+    "https://adactio.com/links/19456": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n2:02pm\n\n"
+    },
+    "https://adactio.com/tags/dconstruct": {
+      "rels": [
+        "tag"
+      ],
+      "text": "dconstruct"
+    },
+    "https://adactio.com/tags/conferences": {
+      "rels": [
+        "tag"
+      ],
+      "text": "conferences"
+    },
+    "https://adactio.com/tags/events": {
+      "rels": [
+        "tag"
+      ],
+      "text": "events"
+    },
+    "https://adactio.com/tags/brighton": {
+      "rels": [
+        "tag"
+      ],
+      "text": "brighton"
+    },
+    "https://adactio.com/tags/clearleft": {
+      "rels": [
+        "tag"
+      ],
+      "text": "clearleft"
+    },
+    "https://adactio.com/tags/lineup": {
+      "rels": [
+        "tag"
+      ],
+      "text": "lineup"
+    },
+    "https://adactio.com/tags/speakers": {
+      "rels": [
+        "tag"
+      ],
+      "text": "speakers"
+    },
+    "https://adactio.com/tags/talks": {
+      "rels": [
+        "tag"
+      ],
+      "text": "talks"
+    },
+    "https://adactio.com/tags/presentations": {
+      "rels": [
+        "tag"
+      ],
+      "text": "presentations"
+    },
+    "https://adactio.com/notes/19455": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n1:11pm\n\n"
+    },
+    "https://twitter.com/adactio/status/1570399847957553152": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "Twitter"
+    },
+    "https://adactio.com/links/19454": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n8:18am\n\n"
+    },
+    "https://adactio.com/tags/design": {
+      "rels": [
+        "tag"
+      ],
+      "text": "design"
+    },
+    "https://adactio.com/tags/history": {
+      "rels": [
+        "tag"
+      ],
+      "text": "history"
+    },
+    "https://adactio.com/tags/aesthetics": {
+      "rels": [
+        "tag"
+      ],
+      "text": "aesthetics"
+    },
+    "https://adactio.com/tags/fictions": {
+      "rels": [
+        "tag"
+      ],
+      "text": "fictions"
+    },
+    "https://adactio.com/tags/culture": {
+      "rels": [
+        "tag"
+      ],
+      "text": "culture"
+    },
+    "https://adactio.com/tags/belief": {
+      "rels": [
+        "tag"
+      ],
+      "text": "belief"
+    },
+    "https://adactio.com/tags/symbols": {
+      "rels": [
+        "tag"
+      ],
+      "text": "symbols"
+    },
+    "https://adactio.com/notes/19453": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n7:51am\n\n"
+    },
+    "https://twitter.com/adactio/status/1570319480735281152": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "Twitter"
+    },
+    "https://www.instagram.com/p/CihQn3htzfS/": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "Instagram"
+    },
     "https://adactio.com/links/19450": {
       "rels": [
         "bookmark"
@@ -2369,29 +2572,11 @@
       ],
       "text": "work"
     },
-    "https://adactio.com/tags/culture": {
-      "rels": [
-        "tag"
-      ],
-      "text": "culture"
-    },
     "https://adactio.com/tags/processes": {
       "rels": [
         "tag"
       ],
       "text": "processes"
-    },
-    "https://adactio.com/tags/design": {
-      "rels": [
-        "tag"
-      ],
-      "text": "design"
-    },
-    "https://adactio.com/tags/development": {
-      "rels": [
-        "tag"
-      ],
-      "text": "development"
     },
     "https://adactio.com/links/19449": {
       "rels": [
@@ -2429,12 +2614,6 @@
       ],
       "text": "popularity"
     },
-    "https://adactio.com/tags/frontend": {
-      "rels": [
-        "tag"
-      ],
-      "text": "frontend"
-    },
     "https://adactio.com/notes/19448": {
       "rels": [
         "bookmark"
@@ -2452,36 +2631,6 @@
         "bookmark"
       ],
       "text": "\n\n3:11pm\n\n"
-    },
-    "https://adactio.com/tags/dconstruct": {
-      "rels": [
-        "tag"
-      ],
-      "text": "dconstruct"
-    },
-    "https://adactio.com/tags/conferences": {
-      "rels": [
-        "tag"
-      ],
-      "text": "conferences"
-    },
-    "https://adactio.com/tags/events": {
-      "rels": [
-        "tag"
-      ],
-      "text": "events"
-    },
-    "https://adactio.com/tags/brighton": {
-      "rels": [
-        "tag"
-      ],
-      "text": "brighton"
-    },
-    "https://adactio.com/tags/clearleft": {
-      "rels": [
-        "tag"
-      ],
-      "text": "clearleft"
     },
     "https://adactio.com/tags/music": {
       "rels": [
@@ -2584,18 +2733,6 @@
         "bookmark"
       ],
       "text": "\n\n2:44pm\n\n"
-    },
-    "https://adactio.com/tags/lineup": {
-      "rels": [
-        "tag"
-      ],
-      "text": "lineup"
-    },
-    "https://adactio.com/tags/speakers": {
-      "rels": [
-        "tag"
-      ],
-      "text": "speakers"
     },
     "https://adactio.com/tags/diversity": {
       "rels": [
@@ -2819,23 +2956,11 @@
       ],
       "text": "\n\n9:19am\n\n"
     },
-    "https://adactio.com/tags/talks": {
-      "rels": [
-        "tag"
-      ],
-      "text": "talks"
-    },
     "https://adactio.com/tags/transformation": {
       "rels": [
         "tag"
       ],
       "text": "transformation"
-    },
-    "https://adactio.com/tags/presentations": {
-      "rels": [
-        "tag"
-      ],
-      "text": "presentations"
     },
     "https://adactio.com/links/19434": {
       "rels": [
@@ -2890,270 +3015,6 @@
         "tag"
       ],
       "text": "credit"
-    },
-    "https://adactio.com/notes/19433": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n10:18am\n\n"
-    },
-    "https://adactio.com/links/19431": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n11:19am\n\n"
-    },
-    "https://adactio.com/tags/performance": {
-      "rels": [
-        "tag"
-      ],
-      "text": "performance"
-    },
-    "https://adactio.com/tags/lcp": {
-      "rels": [
-        "tag"
-      ],
-      "text": "lcp"
-    },
-    "https://adactio.com/tags/speed": {
-      "rels": [
-        "tag"
-      ],
-      "text": "speed"
-    },
-    "https://adactio.com/tags/cwv": {
-      "rels": [
-        "tag"
-      ],
-      "text": "cwv"
-    },
-    "https://adactio.com/tags/fonts": {
-      "rels": [
-        "tag"
-      ],
-      "text": "fonts"
-    },
-    "https://adactio.com/tags/images": {
-      "rels": [
-        "tag"
-      ],
-      "text": "images"
-    },
-    "https://adactio.com/tags/ttfb": {
-      "rels": [
-        "tag"
-      ],
-      "text": "ttfb"
-    },
-    "https://adactio.com/tags/lazyloading": {
-      "rels": [
-        "tag"
-      ],
-      "text": "lazyloading"
-    },
-    "https://adactio.com/tags/preloading": {
-      "rels": [
-        "tag"
-      ],
-      "text": "preloading"
-    },
-    "https://adactio.com/links/19430": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n11:16am\n\n"
-    },
-    "https://adactio.com/tags/css": {
-      "rels": [
-        "tag"
-      ],
-      "text": "css"
-    },
-    "https://adactio.com/tags/:where": {
-      "rels": [
-        "tag"
-      ],
-      "text": ":where"
-    },
-    "https://adactio.com/tags/:is": {
-      "rels": [
-        "tag"
-      ],
-      "text": ":is"
-    },
-    "https://adactio.com/tags/scope": {
-      "rels": [
-        "tag"
-      ],
-      "text": "scope"
-    },
-    "https://adactio.com/tags/styles": {
-      "rels": [
-        "tag"
-      ],
-      "text": "styles"
-    },
-    "https://adactio.com/tags/scoping": {
-      "rels": [
-        "tag"
-      ],
-      "text": "scoping"
-    },
-    "https://adactio.com/tags/styling": {
-      "rels": [
-        "tag"
-      ],
-      "text": "styling"
-    },
-    "https://adactio.com/tags/components": {
-      "rels": [
-        "tag"
-      ],
-      "text": "components"
-    },
-    "https://adactio.com/tags/bem": {
-      "rels": [
-        "tag"
-      ],
-      "text": "bem"
-    },
-    "https://adactio.com/tags/oocss": {
-      "rels": [
-        "tag"
-      ],
-      "text": "oocss"
-    },
-    "https://adactio.com/tags/smacss": {
-      "rels": [
-        "tag"
-      ],
-      "text": "smacss"
-    },
-    "https://adactio.com/tags/cascadelayers": {
-      "rels": [
-        "tag"
-      ],
-      "text": "cascadelayers"
-    },
-    "https://adactio.com/tags/standards": {
-      "rels": [
-        "tag"
-      ],
-      "text": "standards"
-    },
-    "https://adactio.com/tags/cube": {
-      "rels": [
-        "tag"
-      ],
-      "text": "cube"
-    },
-    "https://adactio.com/tags/hecs": {
-      "rels": [
-        "tag"
-      ],
-      "text": "hecs"
-    },
-    "https://adactio.com/tags/wils": {
-      "rels": [
-        "tag"
-      ],
-      "text": "wils"
-    },
-    "https://adactio.com/tags/goc": {
-      "rels": [
-        "tag"
-      ],
-      "text": "goc"
-    },
-    "https://adactio.com/links/19429": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n11:04am\n\n"
-    },
-    "https://adactio.com/tags/web": {
-      "rels": [
-        "tag"
-      ],
-      "text": "web"
-    },
-    "https://adactio.com/tags/native": {
-      "rels": [
-        "tag"
-      ],
-      "text": "native"
-    },
-    "https://adactio.com/tags/mobile": {
-      "rels": [
-        "tag"
-      ],
-      "text": "mobile"
-    },
-    "https://adactio.com/tags/games": {
-      "rels": [
-        "tag"
-      ],
-      "text": "games"
-    },
-    "https://adactio.com/tags/apps": {
-      "rels": [
-        "tag"
-      ],
-      "text": "apps"
-    },
-    "https://adactio.com/tags/serviceworkers": {
-      "rels": [
-        "tag"
-      ],
-      "text": "serviceworkers"
-    },
-    "https://adactio.com/tags/browsers": {
-      "rels": [
-        "tag"
-      ],
-      "text": "browsers"
-    },
-    "https://adactio.com/tags/farmbound": {
-      "rels": [
-        "tag"
-      ],
-      "text": "farmbound"
-    },
-    "https://adactio.com/tags/gaming": {
-      "rels": [
-        "tag"
-      ],
-      "text": "gaming"
-    },
-    "https://adactio.com/journal/19427": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n9:58am\n\n"
-    },
-    "https://adactio.com/tags/coronavirus": {
-      "rels": [
-        "tag"
-      ],
-      "text": "coronavirus"
-    },
-    "https://adactio.com/tags/planning": {
-      "rels": [
-        "tag"
-      ],
-      "text": "planning"
-    },
-    "https://adactio.com/tags/anticipation": {
-      "rels": [
-        "tag"
-      ],
-      "text": "anticipation"
-    },
-    "https://adactio.medium.com/2538a024c868": {
-      "rels": [
-        "syndication"
-      ],
-      "text": "Medium"
     },
     "https://adactio.com/?start=20": {
       "rels": [
