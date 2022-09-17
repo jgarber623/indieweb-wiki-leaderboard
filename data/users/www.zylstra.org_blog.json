@@ -10,11 +10,11 @@
         ],
         "url": [
           "https://www.zylstra.org/blog/",
-          "https://twitter.com/ton_zylstra",
-          "https://twitter.com/DataG",
-          "https://twitter.com/frankmeeuwsen",
-          "https://twitter.com/frankmeeuwsen",
-          "https://indieweb.social/@cambridgeport90"
+          "https://johnjohnston.info/blog/author/john/",
+          "https://willtmonroe.com/microblog/1198818/",
+          "https://twitter.com/loginn",
+          "https://idf.social/@djoerd",
+          "https://twitter.com/ton_zylstra"
         ],
         "summary": [
           "by Ton Zĳlstra"
@@ -26,10 +26,48 @@
           }
         ],
         "bridgy-twitter-content": [
-          "Some jottings on using OPML blogrolls to include the blogrolls of bloggers I follow, as a means of discovery. Tried 3 outliner tools to see how they handle such OPML includes."
+          "Can we all stop talking to our Luhmannesque index cards and learn to interview GPT-3 instead?"
         ]
       },
       "children": [
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "WordPress+IndieWeb as the OS of the Open Social Web"
+            ],
+            "url": [
+              "https://www.zylstra.org/blog/2022/09/wordpressindieweb-as-the-os-of-the-open-social-web/",
+              "https://www.zylstra.org/blog/2022/09/wordpressindieweb-as-the-os-of-the-open-social-web/"
+            ],
+            "updated": [
+              "2022-09-16T12:43:35+02:00"
+            ],
+            "published": [
+              "2022-09-16T12:43:35+02:00"
+            ],
+            "author": [
+              "Ton Zijlstra",
+              "Ton Zijlstra"
+            ],
+            "content": [
+              {
+                "html": "<p>I presented during the <a href=\"https://netherlands.wordcamp.org/2022/\">2022 Netherlands WordCamp</a> edition in Arnhem on turning all WordPress sites into fully IndieWeb enabled sites. Meaning turning well over a third of the web into the open <em>social</em> web. Outside all the silos.</p>\n<p>The <a href=\"https://tonz.eu/nlwordcamp\">slides are available</a> in my self-hosted Slideshare replacement for embed and download, and shown below.</p>\n<p>I have been blogging a long time, and can tinker a bit with code (like a <a href=\"https://www.zylstra.org/blog/2020/02/i-am-the-programming-equivalent-of-a-home-cook/\">home cook</a>). I want my site to be the center of how I read and write the web. Its purpose is to create conversations with others, who write in their own spaces on the web. The <a href=\"https://indieweb.org/\">IndieWeb community</a> supports that with a number of technical building blocks that allow me a set of pretty cool things. But all that IndieWeb offers has a high threshold for entry.</p>\n<p>The key parts of IndieWeb to me, the parts that make interaction between websites possible, that allow any site to be an active part of many conversations, are much simpler though: </p>\n<ul>\n<li>\n<a href=\"http://microformats.org/\">Microformats2</a> so that computers know how to interpret our blogposts,</li>\n<li>some class declarations, so computers know why we link to some other web page,</li>\n<li>and <a href=\"https://www.w3.org/TR/webmention/\">WebMention</a>, the protocol that lets a web page know another page is linking to them.</li>\n</ul>\n<p>Making interaction possible between site authors, across sites, just by writing as they already do, is both the simplest to arrange and the most impactful. It’s not something that site authors should have to deal with though, it should be in your website’s engine. WordPress in my case, and an enormous amount of other websites.<br>\nEnsuring that WordPress Themes, and Gutenberg blocks would support and could handle Microformats2 and classes correctly therefore will have a huge impact.</p>\n<p>Over 40% of the open web would then with a single stroke be the open <em>social</em> web. No need for data hungry silo’s, no place for algorithmic timelines designed to keep you hooked.</p>\n<p><a href=\"https://techcrunch.com/2019/09/19/automattic-ceo-matt-mullenweg-about-raising-300-million-and-the-open-web/\">WordPress wants to be the Operating System for the Web</a>. That OS is missing <em>social</em> features, and it’s not a big leap to add them with existing web protocols. No website owner would have to be a coder, be it home cooking style or professional, to use those social features and create conversations. <em>It would just be there</em>.</p>\n<p>If you build WP Themes, if you create Gutenberg blocks, you’re invited to help make this happen.</p>\n<p>\n(<a href=\"https://news.indieweb.org/en\" class=\"u-syndication\">also posted to Indienews</a>)</p>\n<div class=\"speaker-stack-responsive-embed\" style=\"position:relative;display:block;width:100%;padding:0;padding-bottom:75%;\"><iframe src=\"https://tonz.eu/presentation/wordpress-and-indieweb/\" webkitallowfullscreen mozallowfullscreen allowfullscreen style=\"position:absolute;top:0;left:0;width:100%;height:100%;border:none;\"></iframe></div>",
+                "value": "I presented during the 2022 Netherlands WordCamp edition in Arnhem on turning all WordPress sites into fully IndieWeb enabled sites. Meaning turning well over a third of the web into the open social web. Outside all the silos.\nThe slides are available in my self-hosted Slideshare replacement for embed and download, and shown below.\nI have been blogging a long time, and can tinker a bit with code (like a home cook). I want my site to be the center of how I read and write the web. Its purpose is to create conversations with others, who write in their own spaces on the web. The IndieWeb community supports that with a number of technical building blocks that allow me a set of pretty cool things. But all that IndieWeb offers has a high threshold for entry.\nThe key parts of IndieWeb to me, the parts that make interaction between websites possible, that allow any site to be an active part of many conversations, are much simpler though: \n\nMicroformats2 so that computers know how to interpret our blogposts,\nsome class declarations, so computers know why we link to some other web page,\nand WebMention, the protocol that lets a web page know another page is linking to them.\n\nMaking interaction possible between site authors, across sites, just by writing as they already do, is both the simplest to arrange and the most impactful. It’s not something that site authors should have to deal with though, it should be in your website’s engine. WordPress in my case, and an enormous amount of other websites.\nEnsuring that WordPress Themes, and Gutenberg blocks would support and could handle Microformats2 and classes correctly therefore will have a huge impact.\nOver 40% of the open web would then with a single stroke be the open social web. No need for data hungry silo’s, no place for algorithmic timelines designed to keep you hooked.\nWordPress wants to be the Operating System for the Web. That OS is missing social features, and it’s not a big leap to add them with existing web protocols. No website owner would have to be a coder, be it home cooking style or professional, to use those social features and create conversations. It would just be there.\nIf you build WP Themes, if you create Gutenberg blocks, you’re invited to help make this happen.\n\n(also posted to Indienews)"
+              }
+            ],
+            "syndication": [
+              "https://news.indieweb.org/en"
+            ],
+            "category": [
+              "IndieWeb",
+              "wordcamp"
+            ]
+          },
+          "id": "post-22186"
+        },
         {
           "type": [
             "h-entry"
@@ -123,7 +161,7 @@
             ],
             "content": [
               {
-                "html": "<p><img src=\"https://www.zylstra.org/wp/wp-content/uploads/2022/09/108annotations.png\" alt=\"\" width=\"243\" height=\"140\" class=\"aligncenter size-full wp-image-22124\"></p>\n<p>I’ve now added over <a href=\"https://hypothes.is/users/tonz\">100 annotations</a> using Hypothes.is (h.), almost all within the last month. This includes a few non-public ones. Two weeks ago I wrote down <a href=\"https://www.zylstra.org/blog/2022/08/using-hypothes-is-early-impressions/\">some early impressions</a>, to which I’m now adding some additional observations.</p>\n<ol>\n<li>100 annotations (in a month) don’t seem like a lot to me, if h. is a regular tool in one’s browsing habit. <a href=\"https://web.hypothes.is/blog/say-hello-to-anno/#annotations:CbAImiHUEe2rPAN8lFht1Q\">H. says</a> they have 1 million users, that have made 40 million annotations to over <a href=\"https://web.hypothes.is/blog/2-million-annotated-readings/\">2 million articles</a> (their API returns 2.187.262 results as I write this). H. has been in existence for a decade. These numbers average out to 20 annotations to 2 articles per user. This to me suggests that the mode is 1 annotation to 1 article by a user and then silence. My 100 annotations spread out over 30 articles, accumulated over a handful of weeks is then already well above average, even though I am a new and beginning user. My introduction to h. was through Chris Aldrich, whose <a href=\"https://hypothes.is/users/chrisaldrich\">stream of annotations</a> I follow daily with interest. He recently passed 10.000 annotations! That’s 100 times as many as mine, and apparently also an outlier to the h. team itself: they sent him a <a href=\"https://boffosocko.com/2022/08/29/a-small-10000-annotations-party/\">congratulatory package</a>. H.’s marketing director has <a href=\"https://hypothes.is/users/nateangell\">1348 public annotations</a> over almost 6 years, its founder <a href=\"https://hypothes.is/users/dwhly\">1200</a> in a decade. <a href=\"https://remikalir.com/\">Remi Kalir</a>, co-author of the (readworthy!) <a href=\"https://remikalir.com/annotation-mit-press-2021/\">Annotation book</a>, has <a href=\"https://hypothes.is/users/remikalir\">800</a> in six years. That does not seem that much from what I would expect to be power users. My blogging friend <a href=\"https://hypothes.is/users/HeinzWittenbrink\">Heinz has some 750 annotations</a> in three years. Fellow IndieWeb netizen <a href=\"https://maya.land/\">Maya</a> some <a href=\"https://hypothes.is/users/mayaland\">1800</a> in a year and a half. Those last two numbers, even if they differ by a factor 5 or so in average annotations/month, feel like what I’d expect as a regular range for <em>routine</em> users. </li>\n<li>The book Annotation I mentioned makes a lot of <em>social</em> annotation, where distributed conversations result beyond the core interaction of an annotator with an author through an original text. Such social annotation <em>requires</em> sharing. H. provides that sharing functionality and positions itself explicitly as a social tool (\"<em>Annotate the web, with anyone, anywhere</em>\" \"<em>Engage your students with social annotation</em>\"). The numbers above show that such social interaction around an annotated text within h. will be very rare in the public facing part of h., in the closed (safer) surroundings of classroom use interaction might be much more prominent. Users like me, or Heinz, Maya and Chris whom I named/linked above, will then be motivated by something else than the social aspects of h. If and when such interaction does happen (as it tends to do if you mutually follow eachothers annotations) it is a pleasant addition, not h.’s central benefit.</li>\n<li>What is odd to me is that when you do indeed engage into social interaction on h., that <a href=\"https://www.zylstra.org/blog/2022/08/hypothes-is-oddity-in-retrieving-own-comments/\">interaction cannot be found through the web interface</a> of my annotations. Once I comment, it disappears out of sight, unless I remember what I reacted to and go back to that annotation by another user directly, to find my comment underneath. It does show up in the RSS feed of my annotations, and my Hypothes.is-to-Obsidian plugin also captures them through the API. Just not in the web interface.</li>\n<li>Despite the social nature of h., discovery is very difficult. Purposefully ‘finding the others’ is mostly impossible. This is both an effect of the web-interface functionality, as well as I suspect because of the relatively sparse network of users (see observation 1). There’s no direct way of connecting or searching for users. The social object is the annotation, and you need to find others only through annotations you encounter. I’ve searched for tags and terms I am interested in, but those do not surface regular users easily. I’ve <a href=\"https://www.zylstra.org/blog/hypothes-is-roll/\">collated a list</a> of a dozen currently active or somewhat active annotators, and half a dozen who used to be or are sporadically active. I also <a href=\"https://www.zylstra.org/blog/2022/08/added-hypothes-is-annotations-link-to-posts/\">added annotations of my own blogposts to my blog</a>, and I actively follow (through an RSS feed) any new annotation of my blogposts. <strong>If you use h., I’d be interested to hear about it.</strong>\n</li>\n<li>Annotations are the first step of getting useful insights into my notes. This makes it a prerequisite to be able to capture annotations in my note making tool Obsidian, otherwise Hypothes.is is just another silo you’re wasting time on. Luckily h. isn’t meant as a silo and has an API. Using the API and the Hypothes.is-to-Obsidian plugin all my annotations are available to me locally. However, what I do locally with those notes does not get reflected back to h., meaning that you can’t really work through annotations locally until you’ve annotated an entire article or paper in the browser, otherwise sync issues may occur. I also find that having the individual annotations (including the annotated text, in one file), not the full text (the stuff I didn’t annotate), feels impractical at times as it cuts away a lot of context. It’s easily retrievable by visiting the url now, but maybe not over time (so I save web archive links too as an annotation). I also grab a local markdown copy of full articles if they are of higher interest to me. Using h. in the browser creates another inbox in this regard (having to return to a thing to finish annotation or for context), and I obviously don’t need more inboxes to keep track of. </li>\n<li>In response to not saving entire articles in my notes environment, I have started marking online articles I haven’t annotated yet at least with a note that contains the motivation and first associations I normally save with a full article. This is in the same spot as where I add a web archive link, as page note. I’ve tried that in recent days and that seems to work well. That way I do have a general note in my local system that contains the motivation for looking in more detail at an article.</li>\n<li>The API also supports sending annotations and updates <em>to</em> h. from e.g. my local system. Would this be potentially better for my workflow? Firefox and the h. add-on don’t always work flawlessly, not all docs can be opened, or the form stops working until I restart Firefox. This too points in the direction of annotating locally and sending annotations to h. for sharing through the API. Is there anyone already doing this? Built their own client, or using h. ‘headless’? Is there anyone who runs their own h. instance locally? If I could send things through the API, that might also include the Kindle highlights I pull in to my local system. </li>\n<li>In the same category of integrating h. into my pkm workflows, falls the interaction between h. and Zotero, especially now that Zotero has its own storage of annotations of PDFs in my library.  It might be of interest to be able to share those annotations, for a more complete overview of what I’m annotating. Either directly from Zotero, or by way of my notes in Obsidian (Zotero annotatins end up there in the end)</li>\n<li>These first 100 annotations I made in the browser, using an add-on. Annotating in the browser takes some getting used to, as I try to get myself out of my browser more usually. I don’t always fully realise I can return to an article for later annotation. Any time the sense I have to finish annotating an article surfaces, that is friction I can do without. Apart from that, it is a pleasant experience to annotate like this. And that pleasure is key to keep annotating. Being able to better integrate my h. use with Obsidian and Zotero would likely increase the pleasure of doing it.</li>\n<li>Another path of integration to think about is sharing annotated links from h. to my blog or the other way around. I blog links with a general annotation at times (<a href=\"https://www.zylstra.org/blog/2022/08/22073/\">example</a>). These  bloggable links I could grab from h. where I bookmark things in similar ways (<a href=\"https://via.hypothes.is/https://flowingdata.com/2022/09/01/looking-for-meaning-in-the-everyday/#annotations:5JMGfioIEe2G_9uPa5Qe8Q\">example</a>), usually to annotate further later on. I notice myself thinking I should do both, but unless I could do that simultaneously  I won’t do such a thing twice.</li>\n</ol>",
+                "html": "<p><img loading=\"lazy\" src=\"https://www.zylstra.org/wp/wp-content/uploads/2022/09/108annotations.png\" alt=\"\" width=\"243\" height=\"140\" class=\"aligncenter size-full wp-image-22124\"></p>\n<p>I’ve now added over <a href=\"https://hypothes.is/users/tonz\">100 annotations</a> using Hypothes.is (h.), almost all within the last month. This includes a few non-public ones. Two weeks ago I wrote down <a href=\"https://www.zylstra.org/blog/2022/08/using-hypothes-is-early-impressions/\">some early impressions</a>, to which I’m now adding some additional observations.</p>\n<ol>\n<li>100 annotations (in a month) don’t seem like a lot to me, if h. is a regular tool in one’s browsing habit. <a href=\"https://web.hypothes.is/blog/say-hello-to-anno/#annotations:CbAImiHUEe2rPAN8lFht1Q\">H. says</a> they have 1 million users, that have made 40 million annotations to over <a href=\"https://web.hypothes.is/blog/2-million-annotated-readings/\">2 million articles</a> (their API returns 2.187.262 results as I write this). H. has been in existence for a decade. These numbers average out to 20 annotations to 2 articles per user. This to me suggests that the mode is 1 annotation to 1 article by a user and then silence. My 100 annotations spread out over 30 articles, accumulated over a handful of weeks is then already well above average, even though I am a new and beginning user. My introduction to h. was through Chris Aldrich, whose <a href=\"https://hypothes.is/users/chrisaldrich\">stream of annotations</a> I follow daily with interest. He recently passed 10.000 annotations! That’s 100 times as many as mine, and apparently also an outlier to the h. team itself: they sent him a <a href=\"https://boffosocko.com/2022/08/29/a-small-10000-annotations-party/\">congratulatory package</a>. H.’s marketing director has <a href=\"https://hypothes.is/users/nateangell\">1348 public annotations</a> over almost 6 years, its founder <a href=\"https://hypothes.is/users/dwhly\">1200</a> in a decade. <a href=\"https://remikalir.com/\">Remi Kalir</a>, co-author of the (readworthy!) <a href=\"https://remikalir.com/annotation-mit-press-2021/\">Annotation book</a>, has <a href=\"https://hypothes.is/users/remikalir\">800</a> in six years. That does not seem that much from what I would expect to be power users. My blogging friend <a href=\"https://hypothes.is/users/HeinzWittenbrink\">Heinz has some 750 annotations</a> in three years. Fellow IndieWeb netizen <a href=\"https://maya.land/\">Maya</a> some <a href=\"https://hypothes.is/users/mayaland\">1800</a> in a year and a half. Those last two numbers, even if they differ by a factor 5 or so in average annotations/month, feel like what I’d expect as a regular range for <em>routine</em> users. </li>\n<li>The book Annotation I mentioned makes a lot of <em>social</em> annotation, where distributed conversations result beyond the core interaction of an annotator with an author through an original text. Such social annotation <em>requires</em> sharing. H. provides that sharing functionality and positions itself explicitly as a social tool (\"<em>Annotate the web, with anyone, anywhere</em>\" \"<em>Engage your students with social annotation</em>\"). The numbers above show that such social interaction around an annotated text within h. will be very rare in the public facing part of h., in the closed (safer) surroundings of classroom use interaction might be much more prominent. Users like me, or Heinz, Maya and Chris whom I named/linked above, will then be motivated by something else than the social aspects of h. If and when such interaction does happen (as it tends to do if you mutually follow eachothers annotations) it is a pleasant addition, not h.’s central benefit.</li>\n<li>What is odd to me is that when you do indeed engage into social interaction on h., that <a href=\"https://www.zylstra.org/blog/2022/08/hypothes-is-oddity-in-retrieving-own-comments/\">interaction cannot be found through the web interface</a> of my annotations. Once I comment, it disappears out of sight, unless I remember what I reacted to and go back to that annotation by another user directly, to find my comment underneath. It does show up in the RSS feed of my annotations, and my Hypothes.is-to-Obsidian plugin also captures them through the API. Just not in the web interface.</li>\n<li>Despite the social nature of h., discovery is very difficult. Purposefully ‘finding the others’ is mostly impossible. This is both an effect of the web-interface functionality, as well as I suspect because of the relatively sparse network of users (see observation 1). There’s no direct way of connecting or searching for users. The social object is the annotation, and you need to find others only through annotations you encounter. I’ve searched for tags and terms I am interested in, but those do not surface regular users easily. I’ve <a href=\"https://www.zylstra.org/blog/hypothes-is-roll/\">collated a list</a> of a dozen currently active or somewhat active annotators, and half a dozen who used to be or are sporadically active. I also <a href=\"https://www.zylstra.org/blog/2022/08/added-hypothes-is-annotations-link-to-posts/\">added annotations of my own blogposts to my blog</a>, and I actively follow (through an RSS feed) any new annotation of my blogposts. <strong>If you use h., I’d be interested to hear about it.</strong>\n</li>\n<li>Annotations are the first step of getting useful insights into my notes. This makes it a prerequisite to be able to capture annotations in my note making tool Obsidian, otherwise Hypothes.is is just another silo you’re wasting time on. Luckily h. isn’t meant as a silo and has an API. Using the API and the Hypothes.is-to-Obsidian plugin all my annotations are available to me locally. However, what I do locally with those notes does not get reflected back to h., meaning that you can’t really work through annotations locally until you’ve annotated an entire article or paper in the browser, otherwise sync issues may occur. I also find that having the individual annotations (including the annotated text, in one file), not the full text (the stuff I didn’t annotate), feels impractical at times as it cuts away a lot of context. It’s easily retrievable by visiting the url now, but maybe not over time (so I save web archive links too as an annotation). I also grab a local markdown copy of full articles if they are of higher interest to me. Using h. in the browser creates another inbox in this regard (having to return to a thing to finish annotation or for context), and I obviously don’t need more inboxes to keep track of. </li>\n<li>In response to not saving entire articles in my notes environment, I have started marking online articles I haven’t annotated yet at least with a note that contains the motivation and first associations I normally save with a full article. This is in the same spot as where I add a web archive link, as page note. I’ve tried that in recent days and that seems to work well. That way I do have a general note in my local system that contains the motivation for looking in more detail at an article.</li>\n<li>The API also supports sending annotations and updates <em>to</em> h. from e.g. my local system. Would this be potentially better for my workflow? Firefox and the h. add-on don’t always work flawlessly, not all docs can be opened, or the form stops working until I restart Firefox. This too points in the direction of annotating locally and sending annotations to h. for sharing through the API. Is there anyone already doing this? Built their own client, or using h. ‘headless’? Is there anyone who runs their own h. instance locally? If I could send things through the API, that might also include the Kindle highlights I pull in to my local system. </li>\n<li>In the same category of integrating h. into my pkm workflows, falls the interaction between h. and Zotero, especially now that Zotero has its own storage of annotations of PDFs in my library.  It might be of interest to be able to share those annotations, for a more complete overview of what I’m annotating. Either directly from Zotero, or by way of my notes in Obsidian (Zotero annotatins end up there in the end)</li>\n<li>These first 100 annotations I made in the browser, using an add-on. Annotating in the browser takes some getting used to, as I try to get myself out of my browser more usually. I don’t always fully realise I can return to an article for later annotation. Any time the sense I have to finish annotating an article surfaces, that is friction I can do without. Apart from that, it is a pleasant experience to annotate like this. And that pleasure is key to keep annotating. Being able to better integrate my h. use with Obsidian and Zotero would likely increase the pleasure of doing it.</li>\n<li>Another path of integration to think about is sharing annotated links from h. to my blog or the other way around. I blog links with a general annotation at times (<a href=\"https://www.zylstra.org/blog/2022/08/22073/\">example</a>). These  bloggable links I could grab from h. where I bookmark things in similar ways (<a href=\"https://via.hypothes.is/https://flowingdata.com/2022/09/01/looking-for-meaning-in-the-everyday/#annotations:5JMGfioIEe2G_9uPa5Qe8Q\">example</a>), usually to annotate further later on. I notice myself thinking I should do both, but unless I could do that simultaneously  I won’t do such a thing twice.</li>\n</ol>",
                 "value": "I’ve now added over 100 annotations using Hypothes.is (h.), almost all within the last month. This includes a few non-public ones. Two weeks ago I wrote down some early impressions, to which I’m now adding some additional observations.\n\n100 annotations (in a month) don’t seem like a lot to me, if h. is a regular tool in one’s browsing habit. H. says they have 1 million users, that have made 40 million annotations to over 2 million articles (their API returns 2.187.262 results as I write this). H. has been in existence for a decade. These numbers average out to 20 annotations to 2 articles per user. This to me suggests that the mode is 1 annotation to 1 article by a user and then silence. My 100 annotations spread out over 30 articles, accumulated over a handful of weeks is then already well above average, even though I am a new and beginning user. My introduction to h. was through Chris Aldrich, whose stream of annotations I follow daily with interest. He recently passed 10.000 annotations! That’s 100 times as many as mine, and apparently also an outlier to the h. team itself: they sent him a congratulatory package. H.’s marketing director has 1348 public annotations over almost 6 years, its founder 1200 in a decade. Remi Kalir, co-author of the (readworthy!) Annotation book, has 800 in six years. That does not seem that much from what I would expect to be power users. My blogging friend Heinz has some 750 annotations in three years. Fellow IndieWeb netizen Maya some 1800 in a year and a half. Those last two numbers, even if they differ by a factor 5 or so in average annotations/month, feel like what I’d expect as a regular range for routine users. \nThe book Annotation I mentioned makes a lot of social annotation, where distributed conversations result beyond the core interaction of an annotator with an author through an original text. Such social annotation requires sharing. H. provides that sharing functionality and positions itself explicitly as a social tool (\"Annotate the web, with anyone, anywhere\" \"Engage your students with social annotation\"). The numbers above show that such social interaction around an annotated text within h. will be very rare in the public facing part of h., in the closed (safer) surroundings of classroom use interaction might be much more prominent. Users like me, or Heinz, Maya and Chris whom I named/linked above, will then be motivated by something else than the social aspects of h. If and when such interaction does happen (as it tends to do if you mutually follow eachothers annotations) it is a pleasant addition, not h.’s central benefit.\nWhat is odd to me is that when you do indeed engage into social interaction on h., that interaction cannot be found through the web interface of my annotations. Once I comment, it disappears out of sight, unless I remember what I reacted to and go back to that annotation by another user directly, to find my comment underneath. It does show up in the RSS feed of my annotations, and my Hypothes.is-to-Obsidian plugin also captures them through the API. Just not in the web interface.\nDespite the social nature of h., discovery is very difficult. Purposefully ‘finding the others’ is mostly impossible. This is both an effect of the web-interface functionality, as well as I suspect because of the relatively sparse network of users (see observation 1). There’s no direct way of connecting or searching for users. The social object is the annotation, and you need to find others only through annotations you encounter. I’ve searched for tags and terms I am interested in, but those do not surface regular users easily. I’ve collated a list of a dozen currently active or somewhat active annotators, and half a dozen who used to be or are sporadically active. I also added annotations of my own blogposts to my blog, and I actively follow (through an RSS feed) any new annotation of my blogposts. If you use h., I’d be interested to hear about it.\nAnnotations are the first step of getting useful insights into my notes. This makes it a prerequisite to be able to capture annotations in my note making tool Obsidian, otherwise Hypothes.is is just another silo you’re wasting time on. Luckily h. isn’t meant as a silo and has an API. Using the API and the Hypothes.is-to-Obsidian plugin all my annotations are available to me locally. However, what I do locally with those notes does not get reflected back to h., meaning that you can’t really work through annotations locally until you’ve annotated an entire article or paper in the browser, otherwise sync issues may occur. I also find that having the individual annotations (including the annotated text, in one file), not the full text (the stuff I didn’t annotate), feels impractical at times as it cuts away a lot of context. It’s easily retrievable by visiting the url now, but maybe not over time (so I save web archive links too as an annotation). I also grab a local markdown copy of full articles if they are of higher interest to me. Using h. in the browser creates another inbox in this regard (having to return to a thing to finish annotation or for context), and I obviously don’t need more inboxes to keep track of. \nIn response to not saving entire articles in my notes environment, I have started marking online articles I haven’t annotated yet at least with a note that contains the motivation and first associations I normally save with a full article. This is in the same spot as where I add a web archive link, as page note. I’ve tried that in recent days and that seems to work well. That way I do have a general note in my local system that contains the motivation for looking in more detail at an article.\nThe API also supports sending annotations and updates to h. from e.g. my local system. Would this be potentially better for my workflow? Firefox and the h. add-on don’t always work flawlessly, not all docs can be opened, or the form stops working until I restart Firefox. This too points in the direction of annotating locally and sending annotations to h. for sharing through the API. Is there anyone already doing this? Built their own client, or using h. ‘headless’? Is there anyone who runs their own h. instance locally? If I could send things through the API, that might also include the Kindle highlights I pull in to my local system. \nIn the same category of integrating h. into my pkm workflows, falls the interaction between h. and Zotero, especially now that Zotero has its own storage of annotations of PDFs in my library.  It might be of interest to be able to share those annotations, for a more complete overview of what I’m annotating. Either directly from Zotero, or by way of my notes in Obsidian (Zotero annotatins end up there in the end)\nThese first 100 annotations I made in the browser, using an add-on. Annotating in the browser takes some getting used to, as I try to get myself out of my browser more usually. I don’t always fully realise I can return to an article for later annotation. Any time the sense I have to finish annotating an article surfaces, that is friction I can do without. Apart from that, it is a pleasant experience to annotate like this. And that pleasure is key to keep annotating. Being able to better integrate my h. use with Obsidian and Zotero would likely increase the pleasure of doing it.\nAnother path of integration to think about is sharing annotated links from h. to my blog or the other way around. I blog links with a general annotation at times (example). These  bloggable links I could grab from h. where I bookmark things in similar ways (example), usually to annotate further later on. I notice myself thinking I should do both, but unless I could do that simultaneously  I won’t do such a thing twice."
               }
             ],
@@ -216,43 +254,6 @@
         },
         {
           "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Electric Drummer Outliner Handles OPML Includes"
-            ],
-            "url": [
-              "https://www.zylstra.org/blog/2022/08/electric-drummer-outliner-handles-opml-includes/",
-              "https://www.zylstra.org/blog/2022/08/electric-drummer-outliner-handles-opml-includes/"
-            ],
-            "updated": [
-              "2022-08-03T21:26:01+02:00"
-            ],
-            "published": [
-              "2022-08-03T21:26:01+02:00"
-            ],
-            "author": [
-              "Ton Zijlstra",
-              "Ton Zijlstra"
-            ],
-            "content": [
-              {
-                "html": "<p>Yesterday, <a href=\"https://www.zylstra.org/blog/2022/08/are-you-aware-of-any-open-web-social-graphs/\">musing about traversing my social graph through blogrolls</a>, I suggested using OPML’s include attribute as a way of adding the blogrolls of the blogs I follow in my own blogroll. Ideally using a spec compliant OPML reader, you’d be able to seamlessly navigate from my blogroll, through the blogroll of one of the blogs I follow, to the blogroll of someone they follow, and presumably back to me at some point.<br>\nIt does require having an OPML version of such blogrolls available. <a href=\"https://ruk.ca/\">Peter</a> publishes his blogroll as OPML as I do, allowing a first simple experiment: do includes get correctly parsed in some of the Outliner tools I have?</p>\n<h2>Adding an include into my OPML file</h2>\n<p>This little experiment starts with adding to <a href=\"https://zylstra.org/opml/tonzylstra.opml\">my list of RSS feeds I follow</a> a reference to <a href=\"https://images.ruk.ca/opml/peter_rukavina_blogroll.opml\">Peter’s own OPML file</a> of feeds he follows. I already follow two of Peter’s RSS feeds (blogposts and favourites) which I now placed in their own subfolder and to which I added an outline node of the include type, with the URL of Peter’s OPML file.</p>\n<p><a href=\"https://www.zylstra.org/wp/wp-content/uploads/2022/08/opmlsourcefile.png\"><img loading=\"lazy\" src=\"https://www.zylstra.org/wp/wp-content/uploads/2022/08/opmlsourcefile-640x252.png\" alt=\"\" width=\"640\" height=\"252\" class=\"aligncenter size-large wp-image-21996\" srcset=\"https://www.zylstra.org/wp/wp-content/uploads/2022/08/opmlsourcefile-640x252.png 640w, https://www.zylstra.org/wp/wp-content/uploads/2022/08/opmlsourcefile-300x118.png 300w, https://www.zylstra.org/wp/wp-content/uploads/2022/08/opmlsourcefile-768x302.png 768w, https://www.zylstra.org/wp/wp-content/uploads/2022/08/opmlsourcefile-1536x604.png 1536w, https://www.zylstra.org/wp/wp-content/uploads/2022/08/opmlsourcefile-2048x805.png 2048w, https://www.zylstra.org/wp/wp-content/uploads/2022/08/opmlsourcefile-668x263.png 668w\" sizes=\"(max-width: 640px) 100vw, 640px\"></a><br><em>Screenshot of my OPML file listing the RSS feeds I follow. Click to enlarge. On line 22 you see the line that includes Peter’s OPML file by mentioning its URL.</em></p>\n<h2>Trying three outliners</h2>\n<p><strong>Cloud Outliner</strong> (which I in the past used to first create outlines that could then be sent to Evernote) does not parse OPML includes correctly upon import. It also doesn’t maintain any additional attributes from OPML outline nodes, just the text attribute.</p>\n<p><a href=\"https://www.zylstra.org/wp/wp-content/uploads/2022/08/cloudlineropmlimport.png\"><img loading=\"lazy\" src=\"https://www.zylstra.org/wp/wp-content/uploads/2022/08/cloudlineropmlimport-499x640.png\" alt=\"\" width=\"499\" height=\"640\" class=\"aligncenter size-large wp-image-21999\" srcset=\"https://www.zylstra.org/wp/wp-content/uploads/2022/08/cloudlineropmlimport-499x640.png 499w, https://www.zylstra.org/wp/wp-content/uploads/2022/08/cloudlineropmlimport-234x300.png 234w, https://www.zylstra.org/wp/wp-content/uploads/2022/08/cloudlineropmlimport-768x986.png 768w, https://www.zylstra.org/wp/wp-content/uploads/2022/08/cloudlineropmlimport-668x857.png 668w, https://www.zylstra.org/wp/wp-content/uploads/2022/08/cloudlineropmlimport.png 1066w\" sizes=\"(max-width: 499px) 100vw, 499px\"></a><br><em>Screenshot of Cloud Outliner showing incorrect import of my OPML file. Click to enlarge.</em></p>\n<p><strong><a href=\"http://www.eastgate.com/Tinderbox/\">Tinderbox</a></strong> like Cloud Outliner fails to load OPML includes as per spec. It does load some of the attributes (web url, and description, next to the standard text attribute), but not any others (such as the feed url for instance, the crucial element in a list of RSS feeds). It looks like it only picks up on attributes that are directly mappable on pre-existing default attributes within Tinderbox itself.</p>\n<p><a href=\"https://www.zylstra.org/wp/wp-content/uploads/2022/08/tinderboxopmlimport.png\"><img loading=\"lazy\" src=\"https://www.zylstra.org/wp/wp-content/uploads/2022/08/tinderboxopmlimport-640x343.png\" alt=\"\" width=\"640\" height=\"343\" class=\"aligncenter size-large wp-image-21998\" srcset=\"https://www.zylstra.org/wp/wp-content/uploads/2022/08/tinderboxopmlimport-640x343.png 640w, https://www.zylstra.org/wp/wp-content/uploads/2022/08/tinderboxopmlimport-300x161.png 300w, https://www.zylstra.org/wp/wp-content/uploads/2022/08/tinderboxopmlimport-768x411.png 768w, https://www.zylstra.org/wp/wp-content/uploads/2022/08/tinderboxopmlimport-1536x823.png 1536w, https://www.zylstra.org/wp/wp-content/uploads/2022/08/tinderboxopmlimport-668x358.png 668w, https://www.zylstra.org/wp/wp-content/uploads/2022/08/tinderboxopmlimport.png 2042w\" sizes=\"(max-width: 640px) 100vw, 640px\"></a><br><em>Screenshot of how Tinderbox imports my OPML file. It keeps some attributes but ignores most, and for includes just mentions the URL</em></p>\n<p><strong><a href=\"http://docserver.scripting.com/drummer/about.opml\">Electric Drummer</a></strong> does correctly import the entire OPML outline. As Dave Winer is both the original creator of the OPML specification and more recently of the Electric Drummer app, this is consistent. Electric Drummer picks up on all attributes in an imported OPML file. Upon import it also fetches the external OPML files listed as includes from their URLs, and fully incorporates them into the imported outline.</p>\n<p><a href=\"https://www.zylstra.org/wp/wp-content/uploads/2022/08/drummeropmlimport.png\"><img loading=\"lazy\" src=\"https://www.zylstra.org/wp/wp-content/uploads/2022/08/drummeropmlimport-552x640.png\" alt=\"\" width=\"552\" height=\"640\" class=\"aligncenter size-large wp-image-21997\" srcset=\"https://www.zylstra.org/wp/wp-content/uploads/2022/08/drummeropmlimport-552x640.png 552w, https://www.zylstra.org/wp/wp-content/uploads/2022/08/drummeropmlimport-259x300.png 259w, https://www.zylstra.org/wp/wp-content/uploads/2022/08/drummeropmlimport-768x890.png 768w, https://www.zylstra.org/wp/wp-content/uploads/2022/08/drummeropmlimport-1325x1536.png 1325w, https://www.zylstra.org/wp/wp-content/uploads/2022/08/drummeropmlimport-668x774.png 668w, https://www.zylstra.org/wp/wp-content/uploads/2022/08/drummeropmlimport.png 1508w\" sizes=\"(max-width: 552px) 100vw, 552px\"></a><br><em>Screenshot of Drummer, which incorporates the content of Peter’s OPML file I linked to in my OPML file. Click to enlarge.</em></p>\n<h2>Opening up options for tinkering</h2>\n<p>So at least there is 1 general outliner tool that can work with includes. It probably also means that <a href=\"https://github.com/scripting/opmlPackage\">Dave’s OPML package</a> can do the same, which allows me to tinker at script level with this. One candidate for tinkering is, where a blogger has a blogroll, just not in OPML, to use the OPML package to convert scraped HTML to OPML, and include it locally. That allows me to traverse sets of blogrolls and see the overlap, closed triangles, feedback loops etc. I could also extend my own published blogroll by referencing all the published blogrolls of the bloggers I follow. For you my blogroll would then support exploration and discovery one step further outwards in the network. In parallel I can do something similar for <a href=\"https://www.zylstra.org/blog/federated-bookshelves/\">federated bookshelves</a> (both in terms of books as in terms of lists of people who’s booklists and their lists of people you follow)</p>",
-                "value": "Yesterday, musing about traversing my social graph through blogrolls, I suggested using OPML’s include attribute as a way of adding the blogrolls of the blogs I follow in my own blogroll. Ideally using a spec compliant OPML reader, you’d be able to seamlessly navigate from my blogroll, through the blogroll of one of the blogs I follow, to the blogroll of someone they follow, and presumably back to me at some point.\nIt does require having an OPML version of such blogrolls available. Peter publishes his blogroll as OPML as I do, allowing a first simple experiment: do includes get correctly parsed in some of the Outliner tools I have?\nAdding an include into my OPML file\nThis little experiment starts with adding to my list of RSS feeds I follow a reference to Peter’s own OPML file of feeds he follows. I already follow two of Peter’s RSS feeds (blogposts and favourites) which I now placed in their own subfolder and to which I added an outline node of the include type, with the URL of Peter’s OPML file.\n  Screenshot of my OPML file listing the RSS feeds I follow. Click to enlarge. On line 22 you see the line that includes Peter’s OPML file by mentioning its URL.\nTrying three outliners\nCloud Outliner (which I in the past used to first create outlines that could then be sent to Evernote) does not parse OPML includes correctly upon import. It also doesn’t maintain any additional attributes from OPML outline nodes, just the text attribute.\n  Screenshot of Cloud Outliner showing incorrect import of my OPML file. Click to enlarge.\nTinderbox like Cloud Outliner fails to load OPML includes as per spec. It does load some of the attributes (web url, and description, next to the standard text attribute), but not any others (such as the feed url for instance, the crucial element in a list of RSS feeds). It looks like it only picks up on attributes that are directly mappable on pre-existing default attributes within Tinderbox itself.\n  Screenshot of how Tinderbox imports my OPML file. It keeps some attributes but ignores most, and for includes just mentions the URL\nElectric Drummer does correctly import the entire OPML outline. As Dave Winer is both the original creator of the OPML specification and more recently of the Electric Drummer app, this is consistent. Electric Drummer picks up on all attributes in an imported OPML file. Upon import it also fetches the external OPML files listed as includes from their URLs, and fully incorporates them into the imported outline.\n  Screenshot of Drummer, which incorporates the content of Peter’s OPML file I linked to in my OPML file. Click to enlarge.\nOpening up options for tinkering\nSo at least there is 1 general outliner tool that can work with includes. It probably also means that Dave’s OPML package can do the same, which allows me to tinker at script level with this. One candidate for tinkering is, where a blogger has a blogroll, just not in OPML, to use the OPML package to convert scraped HTML to OPML, and include it locally. That allows me to traverse sets of blogrolls and see the overlap, closed triangles, feedback loops etc. I could also extend my own published blogroll by referencing all the published blogrolls of the bloggers I follow. For you my blogroll would then support exploration and discovery one step further outwards in the network. In parallel I can do something similar for federated bookshelves (both in terms of books as in terms of lists of people who’s booklists and their lists of people you follow)"
-              }
-            ],
-            "category": [
-              "opml",
-              "rss",
-              "socialgraph",
-              "triangulation"
-            ]
-          },
-          "id": "post-21994"
-        },
-        {
-          "type": [
             "h-card"
           ],
           "properties": {
@@ -341,32 +342,39 @@
       "https://www.zylstra.org/blog/page/2/"
     ],
     "bookmark": [
+      "https://www.zylstra.org/blog/2022/09/wordpressindieweb-as-the-os-of-the-open-social-web/",
       "https://www.zylstra.org/blog/2022/09/een-gesprek-over-pkm-en-data-in-de-digitale-fitheid-podcast/",
       "https://www.zylstra.org/blog/2022/09/gpt-3-ifying-that-last-blogpost/",
       "https://www.zylstra.org/blog/2022/09/10-thoughts-after-100-annotations-in-hypothes-is/",
       "https://www.zylstra.org/blog/2022/08/a-noob-in-the-noosphere/",
-      "https://www.zylstra.org/blog/2022/08/communicating-with-gpt-3/",
-      "https://www.zylstra.org/blog/2022/08/electric-drummer-outliner-handles-opml-includes/"
+      "https://www.zylstra.org/blog/2022/08/communicating-with-gpt-3/"
     ],
     "author": [
       "https://www.zylstra.org/blog/about-me/"
     ],
     "category": [
+      "https://www.zylstra.org/blog/category/conferences/",
+      "https://www.zylstra.org/blog/category/digital-disruption/",
+      "https://www.zylstra.org/blog/category/social-networking/",
+      "https://www.zylstra.org/blog/category/technology/",
       "https://www.zylstra.org/blog/category/effectivity/",
       "https://www.zylstra.org/blog/category/eaap/",
       "https://www.zylstra.org/blog/category/nederlands/",
       "https://www.zylstra.org/blog/category/personal/",
       "https://www.zylstra.org/blog/category/practices/",
       "https://www.zylstra.org/blog/category/metablogging/",
-      "https://www.zylstra.org/blog/category/technology/",
       "https://www.zylstra.org/blog/category/knowledge-management/",
       "https://www.zylstra.org/blog/category/learning/",
-      "https://www.zylstra.org/blog/category/digital-disruption/",
       "https://www.zylstra.org/blog/category/linklog/",
-      "https://www.zylstra.org/blog/category/agency/",
-      "https://www.zylstra.org/blog/category/social-networking/"
+      "https://www.zylstra.org/blog/category/agency/"
     ],
     "tag": [
+      "https://www.zylstra.org/blog/category/conferences/",
+      "https://www.zylstra.org/blog/category/digital-disruption/",
+      "https://www.zylstra.org/blog/category/social-networking/",
+      "https://www.zylstra.org/blog/category/technology/",
+      "https://www.zylstra.org/blog/tag/indieweb/",
+      "https://www.zylstra.org/blog/tag/wordcamp/",
       "https://www.zylstra.org/blog/category/effectivity/",
       "https://www.zylstra.org/blog/category/eaap/",
       "https://www.zylstra.org/blog/category/nederlands/",
@@ -375,7 +383,6 @@
       "https://www.zylstra.org/blog/tag/infostrat/",
       "https://www.zylstra.org/blog/tag/pkm/",
       "https://www.zylstra.org/blog/category/metablogging/",
-      "https://www.zylstra.org/blog/category/technology/",
       "https://www.zylstra.org/blog/tag/gpt3/",
       "https://www.zylstra.org/blog/category/knowledge-management/",
       "https://www.zylstra.org/blog/category/learning/",
@@ -387,16 +394,10 @@
       "https://www.zylstra.org/blog/tag/noosphere/",
       "https://www.zylstra.org/blog/tag/tft/",
       "https://www.zylstra.org/blog/tag/thinking/",
-      "https://www.zylstra.org/blog/category/digital-disruption/",
       "https://www.zylstra.org/blog/category/linklog/",
       "https://www.zylstra.org/blog/category/agency/",
       "https://www.zylstra.org/blog/tag/learning/",
-      "https://www.zylstra.org/blog/tag/research/",
-      "https://www.zylstra.org/blog/category/social-networking/",
-      "https://www.zylstra.org/blog/tag/opml/",
-      "https://www.zylstra.org/blog/tag/rss/",
-      "https://www.zylstra.org/blog/tag/socialgraph/",
-      "https://www.zylstra.org/blog/tag/triangulation/"
+      "https://www.zylstra.org/blog/tag/research/"
     ],
     "license": [
       "http://creativecommons.org/licenses/by-sa/4.0/"
@@ -410,22 +411,25 @@
       "https://meso.tzyl.nl/"
     ],
     "external": [
-      "https://twitter.com/ton_zylstra",
-      "https://twitter.com/DataG",
-      "https://twitter.com/frankmeeuwsen",
-      "https://indieweb.social/@cambridgeport90"
+      "https://johnjohnston.info/blog/author/john/",
+      "https://willtmonroe.com/microblog/1198818/",
+      "https://twitter.com/loginn",
+      "https://idf.social/@djoerd",
+      "https://twitter.com/ton_zylstra"
     ],
     "nofollow": [
-      "https://twitter.com/ton_zylstra",
-      "https://twitter.com/DataG",
-      "https://twitter.com/frankmeeuwsen",
-      "https://indieweb.social/@cambridgeport90"
+      "https://johnjohnston.info/blog/author/john/",
+      "https://willtmonroe.com/microblog/1198818/",
+      "https://twitter.com/loginn",
+      "https://idf.social/@djoerd",
+      "https://twitter.com/ton_zylstra"
     ],
     "ugc": [
-      "https://twitter.com/ton_zylstra",
-      "https://twitter.com/DataG",
-      "https://twitter.com/frankmeeuwsen",
-      "https://indieweb.social/@cambridgeport90"
+      "https://johnjohnston.info/blog/author/john/",
+      "https://willtmonroe.com/microblog/1198818/",
+      "https://twitter.com/loginn",
+      "https://idf.social/@djoerd",
+      "https://twitter.com/ton_zylstra"
     ],
     "generator": [
       "http://wordpress.org/"
@@ -566,12 +570,12 @@
       ],
       "text": "← Older posts"
     },
-    "https://www.zylstra.org/blog/2022/09/een-gesprek-over-pkm-en-data-in-de-digitale-fitheid-podcast/": {
+    "https://www.zylstra.org/blog/2022/09/wordpressindieweb-as-the-os-of-the-open-social-web/": {
       "rels": [
         "bookmark"
       ],
-      "title": "Permalink to Een gesprek over PKM en data in de Digitale Fitheid Podcast",
-      "text": "Een gesprek over PKM en data in de Digitale Fitheid Podcast"
+      "title": "Permalink to WordPress+IndieWeb as the OS of the Open Social Web",
+      "text": "WordPress+IndieWeb as the OS of the Open Social Web"
     },
     "https://www.zylstra.org/blog/about-me/": {
       "rels": [
@@ -579,6 +583,53 @@
       ],
       "title": "Ton Zijlstra",
       "text": "Ton Zijlstra"
+    },
+    "https://www.zylstra.org/blog/category/conferences/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "conferences"
+    },
+    "https://www.zylstra.org/blog/category/digital-disruption/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Digital disruption"
+    },
+    "https://www.zylstra.org/blog/category/social-networking/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "social networking"
+    },
+    "https://www.zylstra.org/blog/category/technology/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "technology"
+    },
+    "https://www.zylstra.org/blog/tag/indieweb/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "IndieWeb"
+    },
+    "https://www.zylstra.org/blog/tag/wordcamp/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "wordcamp"
+    },
+    "https://www.zylstra.org/blog/2022/09/een-gesprek-over-pkm-en-data-in-de-digitale-fitheid-podcast/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to Een gesprek over PKM en data in de Digitale Fitheid Podcast",
+      "text": "Een gesprek over PKM en data in de Digitale Fitheid Podcast"
     },
     "https://www.zylstra.org/blog/category/effectivity/": {
       "rels": [
@@ -640,13 +691,6 @@
         "tag"
       ],
       "text": "metablogging"
-    },
-    "https://www.zylstra.org/blog/category/technology/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "technology"
     },
     "https://www.zylstra.org/blog/tag/gpt3/": {
       "rels": [
@@ -737,13 +781,6 @@
       "title": "Permalink to Communicating with GPT-3",
       "text": "Communicating with GPT-3"
     },
-    "https://www.zylstra.org/blog/category/digital-disruption/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "Digital disruption"
-    },
     "https://www.zylstra.org/blog/category/linklog/": {
       "rels": [
         "category",
@@ -769,44 +806,6 @@
         "tag"
       ],
       "text": "research"
-    },
-    "https://www.zylstra.org/blog/2022/08/electric-drummer-outliner-handles-opml-includes/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Permalink to Electric Drummer Outliner Handles OPML Includes",
-      "text": "Electric Drummer Outliner Handles OPML Includes"
-    },
-    "https://www.zylstra.org/blog/category/social-networking/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "social networking"
-    },
-    "https://www.zylstra.org/blog/tag/opml/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "opml"
-    },
-    "https://www.zylstra.org/blog/tag/rss/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "rss"
-    },
-    "https://www.zylstra.org/blog/tag/socialgraph/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "socialgraph"
-    },
-    "https://www.zylstra.org/blog/tag/triangulation/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "triangulation"
     },
     "http://creativecommons.org/licenses/by-sa/4.0/": {
       "rels": [
@@ -849,29 +848,37 @@
       ],
       "text": "Meso WP"
     },
-    "https://twitter.com/DataG": {
+    "https://johnjohnston.info/blog/author/john/": {
       "rels": [
         "external",
         "nofollow",
         "ugc"
       ],
-      "text": "Peter Murray"
+      "text": "john"
     },
-    "https://twitter.com/frankmeeuwsen": {
+    "https://willtmonroe.com/microblog/1198818/": {
       "rels": [
         "external",
         "nofollow",
         "ugc"
       ],
-      "text": "Frank Meeuwsen"
+      "text": "Will Monroe"
     },
-    "https://indieweb.social/@cambridgeport90": {
+    "https://twitter.com/loginn": {
       "rels": [
         "external",
         "nofollow",
         "ugc"
       ],
-      "text": "Kat M. Moss"
+      "text": "Jan van den Berg"
+    },
+    "https://idf.social/@djoerd": {
+      "rels": [
+        "external",
+        "nofollow",
+        "ugc"
+      ],
+      "text": "Djoerd Hiemstra"
     },
     "http://wordpress.org/": {
       "rels": [

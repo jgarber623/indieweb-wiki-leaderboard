@@ -30,6 +30,18 @@
     "shortlink": [
       "https://willtmonroe.com/"
     ],
+    "authorization_endpoint": [
+      "https://willtmonroe.com/wp-json/indieauth/1.0/auth"
+    ],
+    "token_endpoint": [
+      "https://willtmonroe.com/wp-json/indieauth/1.0/token"
+    ],
+    "webmention": [
+      "https://willtmonroe.com/wp-json/webmention/1.0/endpoint"
+    ],
+    "http://webmention.org/": [
+      "https://willtmonroe.com/wp-json/webmention/1.0/endpoint"
+    ],
     "home": [
       "https://willtmonroe.com/"
     ]
@@ -107,6 +119,21 @@
         "alternate"
       ],
       "type": "text/xml+oembed"
+    },
+    "https://willtmonroe.com/wp-json/indieauth/1.0/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://willtmonroe.com/wp-json/indieauth/1.0/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://willtmonroe.com/wp-json/webmention/1.0/endpoint": {
+      "rels": [
+        "webmention"
+      ]
     }
   }
 }

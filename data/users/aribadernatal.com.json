@@ -33,8 +33,26 @@
       "https://www.linkedin.com/in/aribadernatal",
       "https://sparkwise.co/team/ari-bader-natal"
     ],
+    "preconnect": [
+      "https://fonts.googleapis.com/",
+      "https://fonts.gstatic.com/"
+    ],
+    "preload": [
+      "https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,300;0,500;0,700;1,100&display=swap",
+      "https://aribadernatal.com/logo-512-512.png",
+      "https://aribadernatal.com/img/icons/get-pocket.svg",
+      "https://aribadernatal.com/img/icons/twitter.svg",
+      "https://aribadernatal.com/img/icons/github.svg",
+      "https://aribadernatal.com/img/icons/rss-square.svg",
+      "https://aribadernatal.com/public/images/aribadernatal-200.jpg",
+      "https://aribadernatal.com/img/sparkwise_logo.svg",
+      "https://aribadernatal.com/img/calbright_state_star_bw.svg",
+      "https://aribadernatal.com/img/minerva-logo-only.svg",
+      "https://aribadernatal.com/common/sketchpad_128x128.png",
+      "https://favorites.aribadernatal.com/wp-json/wp/v2/posts?per_page=18&context=embed"
+    ],
     "stylesheet": [
-      "https://aribadernatal.com/public/css/main.css"
+      "https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,300;0,500;0,700;1,100&display=swap"
     ],
     "apple-touch-icon": [
       "https://aribadernatal.com/apple-touch-icon.png"
@@ -48,19 +66,7 @@
     ],
     "dns-prefetch": [
       "https://favorites.aribadernatal.com/",
-      "https://sketchpad.cc/",
-      "https://studio.sketchpad.cc/",
       "https://blog.sketchpad.cc/"
-    ],
-    "prefetch": [
-      "https://aribadernatal.com/projects/",
-      "https://aribadernatal.com/projects/Sparkwise/",
-      "https://aribadernatal.com/projects/Calbright/",
-      "https://aribadernatal.com/projects/Minerva/",
-      "https://aribadernatal.com/projects/Grockit/",
-      "https://aribadernatal.com/projects/Sketchpad/",
-      "https://aribadernatal.com/blog/",
-      "https://aribadernatal.com/publications/"
     ],
     "noopener": [
       "https://twitter.com/aribadernatal/",
@@ -99,9 +105,19 @@
         "me"
       ]
     },
-    "https://aribadernatal.com/public/css/main.css": {
+    "https://fonts.googleapis.com/": {
       "rels": [
-        "stylesheet"
+        "preconnect"
+      ]
+    },
+    "https://fonts.gstatic.com/": {
+      "rels": [
+        "preconnect"
+      ]
+    },
+    "https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,300;0,500;0,700;1,100&display=swap": {
+      "rels": [
+        "preload"
       ]
     },
     "https://aribadernatal.com/apple-touch-icon.png": {
@@ -126,17 +142,32 @@
         "manifest"
       ]
     },
+    "https://aribadernatal.com/logo-512-512.png": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://aribadernatal.com/img/icons/get-pocket.svg": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://aribadernatal.com/img/icons/twitter.svg": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://aribadernatal.com/img/icons/github.svg": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://aribadernatal.com/img/icons/rss-square.svg": {
+      "rels": [
+        "preload"
+      ]
+    },
     "https://favorites.aribadernatal.com/": {
-      "rels": [
-        "dns-prefetch"
-      ]
-    },
-    "https://sketchpad.cc/": {
-      "rels": [
-        "dns-prefetch"
-      ]
-    },
-    "https://studio.sketchpad.cc/": {
       "rels": [
         "dns-prefetch"
       ]
@@ -146,44 +177,34 @@
         "dns-prefetch"
       ]
     },
-    "https://aribadernatal.com/projects/": {
+    "https://aribadernatal.com/public/images/aribadernatal-200.jpg": {
       "rels": [
-        "prefetch"
+        "preload"
       ]
     },
-    "https://aribadernatal.com/projects/Sparkwise/": {
+    "https://aribadernatal.com/img/sparkwise_logo.svg": {
       "rels": [
-        "prefetch"
+        "preload"
       ]
     },
-    "https://aribadernatal.com/projects/Calbright/": {
+    "https://aribadernatal.com/img/calbright_state_star_bw.svg": {
       "rels": [
-        "prefetch"
+        "preload"
       ]
     },
-    "https://aribadernatal.com/projects/Minerva/": {
+    "https://aribadernatal.com/img/minerva-logo-only.svg": {
       "rels": [
-        "prefetch"
+        "preload"
       ]
     },
-    "https://aribadernatal.com/projects/Grockit/": {
+    "https://aribadernatal.com/common/sketchpad_128x128.png": {
       "rels": [
-        "prefetch"
+        "preload"
       ]
     },
-    "https://aribadernatal.com/projects/Sketchpad/": {
+    "https://favorites.aribadernatal.com/wp-json/wp/v2/posts?per_page=18&context=embed": {
       "rels": [
-        "prefetch"
-      ]
-    },
-    "https://aribadernatal.com/blog/": {
-      "rels": [
-        "prefetch"
-      ]
-    },
-    "https://aribadernatal.com/publications/": {
-      "rels": [
-        "prefetch"
+        "preload"
       ]
     },
     "https://twitter.com/aribadernatal/": {

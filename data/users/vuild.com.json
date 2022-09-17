@@ -18,6 +18,24 @@
     "wlwmanifest": [
       "https://vuild.com/wp-includes/wlwmanifest.xml"
     ],
+    "icon": [
+      "https://vuild.com/wp-content/uploads/cropped-vuild-32x32.png",
+      "https://vuild.com/wp-content/uploads/cropped-vuild-192x192.png",
+      "https://vuild.com/ico/favicon.png"
+    ],
+    "apple-touch-icon": [
+      "https://vuild.com/wp-content/uploads/cropped-vuild-180x180.png",
+      "https://vuild.com/ico/favicon.png",
+      "https://vuild.com/ico/57x57.png",
+      "https://vuild.com/ico/60x60.png",
+      "https://vuild.com/ico/72x72.png",
+      "https://vuild.com/ico/76x76.png",
+      "https://vuild.com/ico/114x114.png",
+      "https://vuild.com/ico/120x120.png",
+      "https://vuild.com/ico/144x144.png",
+      "https://vuild.com/ico/152x152.png",
+      "https://vuild.com/ico/180x180.png"
+    ],
     "alternate": [
       "https://vuild.com/rss"
     ],
@@ -31,23 +49,8 @@
       "https://vuild.com/fonts/nevis.woff2",
       "https://vuild.com/fonts/manrope-regular.woff2"
     ],
-    "icon": [
-      "https://vuild.com/ico/favicon.png"
-    ],
     "shortcut": [
       "https://vuild.com/ico/favicon.png"
-    ],
-    "apple-touch-icon": [
-      "https://vuild.com/ico/favicon.png",
-      "https://vuild.com/ico/57x57.png",
-      "https://vuild.com/ico/60x60.png",
-      "https://vuild.com/ico/72x72.png",
-      "https://vuild.com/ico/76x76.png",
-      "https://vuild.com/ico/114x114.png",
-      "https://vuild.com/ico/120x120.png",
-      "https://vuild.com/ico/144x144.png",
-      "https://vuild.com/ico/152x152.png",
-      "https://vuild.com/ico/180x180.png"
     ],
     "manifest": [
       "https://vuild.com/manifest.json"
@@ -59,7 +62,7 @@
       "https://vuild.com/"
     ],
     "nofollow": [
-      "https://vuild.com/?blackhole=78e9675058"
+      "https://vuild.com/?blackhole=2ea0c13dbd"
     ]
   },
   "rel-urls": {
@@ -92,6 +95,21 @@
         "wlwmanifest"
       ],
       "type": "application/wlwmanifest+xml"
+    },
+    "https://vuild.com/wp-content/uploads/cropped-vuild-32x32.png": {
+      "rels": [
+        "icon"
+      ]
+    },
+    "https://vuild.com/wp-content/uploads/cropped-vuild-192x192.png": {
+      "rels": [
+        "icon"
+      ]
+    },
+    "https://vuild.com/wp-content/uploads/cropped-vuild-180x180.png": {
+      "rels": [
+        "apple-touch-icon"
+      ]
     },
     "https://vuild.com/rss": {
       "rels": [
@@ -192,7 +210,7 @@
         "apple-touch-icon"
       ]
     },
-    "https://vuild.com/?blackhole=78e9675058": {
+    "https://vuild.com/?blackhole=2ea0c13dbd": {
       "rels": [
         "nofollow"
       ],
