@@ -1,5 +1,229 @@
 {
-  "items": [],
-  "rels": {},
-  "rel-urls": {}
+  "items": [
+    {
+      "type": [
+        "h-feed"
+      ],
+      "properties": {
+        "name": [
+          "Not a title"
+        ],
+        "url": [
+          "https://blog.jeremykidwell.info/"
+        ],
+        "summary": [
+          "Just another WordPress site"
+        ],
+        "content": [
+          {
+            "html": "Just another WordPress site",
+            "value": "Just another WordPress site"
+          }
+        ]
+      },
+      "children": [
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Hello world!"
+            ],
+            "url": [
+              "https://blog.jeremykidwell.info/2021/08/22/hello-world/",
+              "https://blog.jeremykidwell.info/2021/08/22/hello-world/"
+            ],
+            "updated": [
+              "2021-08-22T08:34:44+01:00"
+            ],
+            "published": [
+              "2021-08-22T08:34:44+01:00"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "photo": [
+                    {
+                      "value": "https://secure.gravatar.com/avatar/66d1198c4c3fe7300f6f5777cd623810?s=40&d=mm&r=g",
+                      "alt": ""
+                    }
+                  ],
+                  "url": [
+                    "https://blog.jeremykidwell.info/author/kidwellj/"
+                  ],
+                  "uid": [
+                    "https://blog.jeremykidwell.info/author/kidwellj/"
+                  ],
+                  "name": [
+                    "kidwellj"
+                  ]
+                },
+                "value": "kidwellj"
+              }
+            ],
+            "content": [
+              {
+                "html": "<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>",
+                "value": "Welcome to WordPress. This is your first post. Edit or delete it, then start writing!"
+              }
+            ]
+          },
+          "id": "post-1"
+        }
+      ]
+    }
+  ],
+  "rels": {
+    "profile": [
+      "https://microformats.org/profile/specs",
+      "https://microformats.org/profile/hatom"
+    ],
+    "dns-prefetch": [
+      "https://s.w.org/"
+    ],
+    "alternate": [
+      "https://blog.jeremykidwell.info/feed/",
+      "https://blog.jeremykidwell.info/comments/feed/"
+    ],
+    "stylesheet": [
+      "https://blog.jeremykidwell.info/wp-includes/css/dist/block-library/style.min.css?ver=6.0.2",
+      "https://blog.jeremykidwell.info/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
+      "https://blog.jeremykidwell.info/wp-content/themes/sempress/style.css?ver=6.0.2"
+    ],
+    "https://api.w.org/": [
+      "https://blog.jeremykidwell.info/wp-json/"
+    ],
+    "EditURI": [
+      "https://blog.jeremykidwell.info/xmlrpc.php?rsd"
+    ],
+    "wlwmanifest": [
+      "https://blog.jeremykidwell.info/wp-includes/wlwmanifest.xml"
+    ],
+    "home": [
+      "https://blog.jeremykidwell.info/"
+    ],
+    "bookmark": [
+      "https://blog.jeremykidwell.info/2021/08/22/hello-world/"
+    ],
+    "author": [
+      "https://blog.jeremykidwell.info/author/kidwellj/"
+    ],
+    "category": [
+      "https://blog.jeremykidwell.info/category/uncategorised/"
+    ],
+    "tag": [
+      "https://blog.jeremykidwell.info/category/uncategorised/"
+    ],
+    "generator": [
+      "https://wordpress.org/"
+    ]
+  },
+  "rel-urls": {
+    "https://microformats.org/profile/specs": {
+      "rels": [
+        "profile"
+      ]
+    },
+    "https://microformats.org/profile/hatom": {
+      "rels": [
+        "profile"
+      ]
+    },
+    "https://s.w.org/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
+    "https://blog.jeremykidwell.info/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Not a title » Feed",
+      "type": "application/rss+xml"
+    },
+    "https://blog.jeremykidwell.info/comments/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Not a title » Comments Feed",
+      "type": "application/rss+xml"
+    },
+    "https://blog.jeremykidwell.info/wp-includes/css/dist/block-library/style.min.css?ver=6.0.2": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://blog.jeremykidwell.info/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://blog.jeremykidwell.info/wp-content/themes/sempress/style.css?ver=6.0.2": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://blog.jeremykidwell.info/wp-json/": {
+      "rels": [
+        "https://api.w.org/"
+      ]
+    },
+    "https://blog.jeremykidwell.info/xmlrpc.php?rsd": {
+      "rels": [
+        "EditURI"
+      ],
+      "title": "RSD",
+      "type": "application/rsd+xml"
+    },
+    "https://blog.jeremykidwell.info/wp-includes/wlwmanifest.xml": {
+      "rels": [
+        "wlwmanifest"
+      ],
+      "type": "application/wlwmanifest+xml"
+    },
+    "https://blog.jeremykidwell.info/": {
+      "rels": [
+        "home"
+      ],
+      "title": "Not a title",
+      "text": "Not a title"
+    },
+    "https://blog.jeremykidwell.info/2021/08/22/hello-world/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to Hello world!",
+      "text": "Hello world!"
+    },
+    "https://blog.jeremykidwell.info/author/kidwellj/": {
+      "rels": [
+        "author"
+      ],
+      "title": "View all posts by kidwellj",
+      "text": "kidwellj"
+    },
+    "https://blog.jeremykidwell.info/category/uncategorised/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Uncategorised"
+    },
+    "https://wordpress.org/": {
+      "rels": [
+        "generator"
+      ],
+      "text": "WordPress"
+    }
+  }
 }

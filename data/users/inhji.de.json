@@ -13,8 +13,8 @@
           "properties": {
             "content": [
               {
-                "html": "<p>\n  <img src=\"https://inhji.de/uploads/notes/a-loaf-of-nice-bread/full.png?v=63830548641\" alt=\"A loaf of nice bread\">\n</p>\n<p>\nAfter my first attempt at baking bread resulted in a very dense, hard loaf, I decided to try baking in a baking dish. Since I do not have one specifially for making bread, I used a glass dish from Ikea. I was not sure if the dough would fit but it very much did. I also changed the baking times to the one my mother uses, as documented in the <a href=\"https://inhji.de/notes/simple-bread\">recipe</a>.</p>\n<p>\nAfter taking it out of the oven, it seems like this bread turned out very nice.</p>",
-                "value": "A loaf of nice bread \n\n\nAfter my first attempt at baking bread resulted in a very dense, hard loaf, I decided to try baking in a baking dish. Since I do not have one specifially for making bread, I used a glass dish from Ikea. I was not sure if the dough would fit but it very much did. I also changed the baking times to the one my mother uses, as documented in the recipe.\n\nAfter taking it out of the oven, it seems like this bread turned out very nice."
+                "html": "<p>\nAfter my first attempt at baking bread resulted in a very dense, hard loaf, I decided to try baking in a baking dish. Since I do not have one specifially for making bread, I used a glass dish from Ikea.</p>\n\n    <span class=\"more\">» More</span>",
+                "value": "After my first attempt at baking bread resulted in a very dense, hard loaf, I decided to try baking in a baking dish. Since I do not have one specifially for making bread, I used a glass dish from Ikea.\n\n    » More"
               }
             ],
             "uid": [
@@ -28,8 +28,8 @@
             ],
             "category": [
               "{Microblog}",
-              "[Bread]",
-              "[Baking]"
+              "[Baking]",
+              "[Bread]"
             ]
           }
         },
@@ -55,10 +55,10 @@
             ],
             "category": [
               "{Microblog}",
+              "[Meta]",
               "[CSS]",
               "[Webdev]",
-              "[Climate]",
-              "[Meta]"
+              "[Climate]"
             ],
             "syndication": [
               "https://chaos.social/@inhji/108995453055109294"
@@ -87,9 +87,9 @@
             ],
             "category": [
               "{Microblog}",
-              "[Raspberry Pi]",
               "[Homenet]",
-              "[Selfhosting]"
+              "[Selfhosting]",
+              "[Raspberry Pi]"
             ]
           }
         },
@@ -115,8 +115,8 @@
             ],
             "category": [
               "{Microblog}",
-              "[Devops]",
-              "[Elixir]"
+              "[Elixir]",
+              "[Devops]"
             ]
           }
         },
@@ -170,8 +170,8 @@
             ],
             "category": [
               "{Microblog}",
-              "[Bitwarden]",
-              "[Bug]"
+              "[Bug]",
+              "[Bitwarden]"
             ]
           }
         },
@@ -199,6 +199,318 @@
               "{Microblog}",
               "[MNTReform]",
               "[Kernel]"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<p>\nUpdated my VPS to Ubuntu 22.04 LTS today. The process went very smooth, so I also <a href=\"https://inhji.de/notes/how-to-upgrade-postgresql-from-13-to-14\">updated</a> the postgres database from 12 to 14.</p>\n<p>\nI also added zstd/gzip compression for Mirage / Caddy which was super simple (just added <code class=\"inline\">encode zstd gzip</code> to the server block) and compressed my 90kb of live_view js down to 30kb! \\o/</p>",
+                "value": "Updated my VPS to Ubuntu 22.04 LTS today. The process went very smooth, so I also updated the postgres database from 12 to 14.\n\nI also added zstd/gzip compression for Mirage / Caddy which was super simple (just added encode zstd gzip to the server block) and compressed my 90kb of live_view js down to 30kb! \\o/"
+              }
+            ],
+            "uid": [
+              "https://inhji.de/notes/1661853214"
+            ],
+            "url": [
+              "https://inhji.de/notes/1661853214"
+            ],
+            "published": [
+              "2022-08-30T11:05:08"
+            ],
+            "category": [
+              "{Microblog}",
+              "[Ubuntu]",
+              "[Server]",
+              "[Webdev]"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<p>\nOver the weekend I went out to meet with my brothers. We had a nice time going for a walk in the woods, playing games and working on a gift for our mother.</p>",
+                "value": "Over the weekend I went out to meet with my brothers. We had a nice time going for a walk in the woods, playing games and working on a gift for our mother."
+              }
+            ],
+            "uid": [
+              "https://inhji.de/notes/1661158649"
+            ],
+            "url": [
+              "https://inhji.de/notes/1661158649"
+            ],
+            "published": [
+              "2022-08-22T09:03:52"
+            ],
+            "category": [
+              "{Microblog}"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<p>\nThe <code class=\"inline\">Spoof HTTP referrer string of third-party requests</code> option in uMatrix will prevent codepen.io pages from working. Codepen checks if the referer has been changed and refuses to show the preview if that happens.</p>",
+                "value": "The Spoof HTTP referrer string of third-party requests option in uMatrix will prevent codepen.io pages from working. Codepen checks if the referer has been changed and refuses to show the preview if that happens."
+              }
+            ],
+            "uid": [
+              "https://inhji.de/notes/1660597084"
+            ],
+            "url": [
+              "https://inhji.de/notes/1660597084"
+            ],
+            "published": [
+              "2022-08-15T21:01:02"
+            ],
+            "category": [
+              "{Microblog}",
+              "[uMatrix]",
+              "[TIL]",
+              "[Webdev]"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<p>\nI did a few bike repairs yesterday:</p>\n<ul>\n  <li>\nFastened one handle which suddenly went loose  </li>\n  <li>\nReplaced one valve cap  </li>\n  <li>\nReplaced my break pads  </li>\n</ul>\n<p>\nThe breakpad replacment was pretty straightforward after getting a rough grasp from a video. For next time, I need to remember that:</p>\n<ul>\n  <li>\nbefore starting the repair, switch to the highest gear to get the chain in a favourable position for removing the tires  </li>\n  <li>\nthere is an easy way to get the tires out if you push back the chain holder on the back tire  </li>\n  <li>\non the front wheel, be sure to remove the cable of the dynamo by removing the cap on the wires  </li>\n  <li>\nbefore putting the new brake pads in, push the cylinders inside the casing in to make space for the pads. Otherwise it will be hard to get them in.  </li>\n  <li>\ndon’t use the brake while repearing to avoid getting the cylinders stuck  </li>\n</ul>",
+                "value": "I did a few bike repairs yesterday:\n\n  \nFastened one handle which suddenly went loose  \n  \nReplaced one valve cap  \n  \nReplaced my break pads  \n\n\nThe breakpad replacment was pretty straightforward after getting a rough grasp from a video. For next time, I need to remember that:\n\n  \nbefore starting the repair, switch to the highest gear to get the chain in a favourable position for removing the tires  \n  \nthere is an easy way to get the tires out if you push back the chain holder on the back tire  \n  \non the front wheel, be sure to remove the cable of the dynamo by removing the cap on the wires  \n  \nbefore putting the new brake pads in, push the cylinders inside the casing in to make space for the pads. Otherwise it will be hard to get them in.  \n  \ndon’t use the brake while repearing to avoid getting the cylinders stuck"
+              }
+            ],
+            "uid": [
+              "https://inhji.de/notes/1660207031"
+            ],
+            "url": [
+              "https://inhji.de/notes/1660207031"
+            ],
+            "published": [
+              "2022-08-11T08:37:12"
+            ],
+            "category": [
+              "{Microblog}",
+              "[Cycling]",
+              "[Repair]"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<p>\nI just submitted a ticket to the Pine64 support system because my PineTime does not power on anymore. I’ve had this device for a few weeks now, I hope this is not a proper hardware failure.</p>",
+                "value": "I just submitted a ticket to the Pine64 support system because my PineTime does not power on anymore. I’ve had this device for a few weeks now, I hope this is not a proper hardware failure."
+              }
+            ],
+            "uid": [
+              "https://inhji.de/notes/1659965655"
+            ],
+            "url": [
+              "https://inhji.de/notes/1659965655"
+            ],
+            "published": [
+              "2022-08-08T13:34:15"
+            ],
+            "category": [
+              "{Microblog}",
+              "[PineTime]",
+              "[Smartwatch]"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "uid": [
+              "https://inhji.de/Another Redesign",
+              "https://inhji.de/notes/another-redesign"
+            ],
+            "url": [
+              "https://inhji.de/Another Redesign",
+              "https://inhji.de/notes/another-redesign"
+            ],
+            "name": [
+              "Another Redesign"
+            ],
+            "content": [
+              {
+                "html": "<p>\nI trimmed and simplified the styles for mirage a few days ago. Mainly, that meant getting rid of all custom fonts (Inter, Cascadia and an Icon font I never used) and replacing it with system fonts as suggested by <a href=\"https://inhji.de/notes/systemfontstack\">systemfontstack</a>. </p>\n\n    <span class=\"more\">» More</span>",
+                "value": "I trimmed and simplified the styles for mirage a few days ago. Mainly, that meant getting rid of all custom fonts (Inter, Cascadia and an Icon font I never used) and replacing it with system fonts as suggested by systemfontstack. \n\n    » More"
+              }
+            ],
+            "published": [
+              "2022-07-26T13:11:46"
+            ],
+            "category": [
+              "{Microblog}",
+              "[Meta]",
+              "[Mirage]",
+              "[Webdev]"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "uid": [
+              "https://inhji.de/Gardening in July",
+              "https://inhji.de/notes/gardening-in-july"
+            ],
+            "url": [
+              "https://inhji.de/Gardening in July",
+              "https://inhji.de/notes/gardening-in-july"
+            ],
+            "name": [
+              "Gardening in July"
+            ],
+            "content": [
+              {
+                "html": "<p>\nI spent my week of vacation at A’s place and took care of our plants. It’s such a pleasure to see them grow and to push your nose into them so soak up the happiness they are spreading.</p>\n\n    <span class=\"more\">» More</span>",
+                "value": "I spent my week of vacation at A’s place and took care of our plants. It’s such a pleasure to see them grow and to push your nose into them so soak up the happiness they are spreading.\n\n    » More"
+              }
+            ],
+            "published": [
+              "2022-07-25T10:41:11"
+            ],
+            "category": [
+              "{Microblog}",
+              "[Food]",
+              "[Gardening]",
+              "[Tomato]"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<p>\nI’ve updated my home network,</p>\n<ul>\n  <li>\nfinally all services are secured by TLS, thanks to my own CA.  </li>\n  <li>\n<a href=\"https://inhji.de/notes/paperless-ngx\">Paperless NGX</a> runs and is munching my documents (^.^)  </li>\n  <li>\nVaultwarden now runs locally instead of on my VPS.  </li>\n  <li>\nVaultwarden and Paperless were added to my dashboard.  </li>\n</ul>",
+                "value": "I’ve updated my home network,\n\n  \nfinally all services are secured by TLS, thanks to my own CA.  \n  \nPaperless NGX runs and is munching my documents (^.^)  \n  \nVaultwarden now runs locally instead of on my VPS.  \n  \nVaultwarden and Paperless were added to my dashboard."
+              }
+            ],
+            "uid": [
+              "https://inhji.de/notes/1657830382"
+            ],
+            "url": [
+              "https://inhji.de/notes/1657830382"
+            ],
+            "published": [
+              "2022-07-14T20:31:59"
+            ],
+            "category": [
+              "{Microblog}",
+              "[Selfhosted]",
+              "[Homenet]",
+              "[Paperless]",
+              "[TLS]",
+              "[Vaultwarden]"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<p>\nAfter struggling a bit with a <a href=\"https://github.com/paperless-ngx/paperless-ngx/issues/817\">CSRF issue</a>, migrating to <a href=\"https://inhji.de/notes/paperless-ngx\">paperless-ngx</a> has really been as easy as changing the referenced image in the <code class=\"inline\">docker-compose.yml</code>, so now I’m running that an am really happy with the results and confident of running a supported and actively developed paperless. </p>\n<p>\nAs for someone who has not had a lot of experience with OCR (despite my <a href=\"https://inhji.de/notes/1657563891\">job</a>), the quality has been superb for me.</p>\n<p>\nI’m going through my folders of paychecks, rent contracts and things of that nature and scanning everything that seems important/worthy of archiving.</p>\n<p>\nI would like to move on to purchase receipts and the scanner includes a template for scanning these kinds of small, non standard documents, but it has not been so far. So that’s for another day.</p>",
+                "value": "After struggling a bit with a CSRF issue, migrating to paperless-ngx has really been as easy as changing the referenced image in the docker-compose.yml, so now I’m running that an am really happy with the results and confident of running a supported and actively developed paperless. \n\nAs for someone who has not had a lot of experience with OCR (despite my job), the quality has been superb for me.\n\nI’m going through my folders of paychecks, rent contracts and things of that nature and scanning everything that seems important/worthy of archiving.\n\nI would like to move on to purchase receipts and the scanner includes a template for scanning these kinds of small, non standard documents, but it has not been so far. So that’s for another day."
+              }
+            ],
+            "uid": [
+              "https://inhji.de/notes/1657775449"
+            ],
+            "url": [
+              "https://inhji.de/notes/1657775449"
+            ],
+            "published": [
+              "2022-07-14T05:23:00"
+            ],
+            "category": [
+              "{Microblog}",
+              "[Digitalisation]",
+              "[Scanner]"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<p>\nYesterday I got my scanner set up in a way that I can work with it. I’m using <a href=\"https://gitlab.gnome.org/GNOME/simple-scan\">simple-scan</a> now which has a straight-forward interface while also providing me with almost all options that I would like to have right now.</p>\n<p>\nDuplex scanning works now, <a href=\"https://inhji.de/notes/paperless-ng\">paperless-ng</a> is running and I’m in the process of migrating to paperless-ngx, which is a successor fork.</p>\n<p>\nThe importing of the scanned pdfs into paperless is manual work for now, but for the time being that’s fine.</p>",
+                "value": "Yesterday I got my scanner set up in a way that I can work with it. I’m using simple-scan now which has a straight-forward interface while also providing me with almost all options that I would like to have right now.\n\nDuplex scanning works now, paperless-ng is running and I’m in the process of migrating to paperless-ngx, which is a successor fork.\n\nThe importing of the scanned pdfs into paperless is manual work for now, but for the time being that’s fine."
+              }
+            ],
+            "uid": [
+              "https://inhji.de/notes/1657654506"
+            ],
+            "url": [
+              "https://inhji.de/notes/1657654506"
+            ],
+            "published": [
+              "2022-07-12T19:40:31"
+            ],
+            "category": [
+              "{Microblog}",
+              "[Digitalisation]",
+              "[Scanner]"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<p>\nFor a while now, I wanted to digitalize my paper documents. I’ve been working in a company specializing in that and over the years, I’ve grown tired of these big folders in my shelf.</p>\n<p>\nI got a brother ADS-2100e off ebay-kleinanzeigen and been trying to get it to scan (which it does) duplex (not yet), ideally to a folder or something (also no dice yet), so I can feed the scanned files to a fresh <a href=\"https://inhji.de/notes/paperless-ng\">Paperless NG</a> instance.</p>",
+                "value": "For a while now, I wanted to digitalize my paper documents. I’ve been working in a company specializing in that and over the years, I’ve grown tired of these big folders in my shelf.\n\nI got a brother ADS-2100e off ebay-kleinanzeigen and been trying to get it to scan (which it does) duplex (not yet), ideally to a folder or something (also no dice yet), so I can feed the scanned files to a fresh Paperless NG instance."
+              }
+            ],
+            "uid": [
+              "https://inhji.de/notes/1657563891"
+            ],
+            "url": [
+              "https://inhji.de/notes/1657563891"
+            ],
+            "published": [
+              "2022-07-11T18:28:23"
+            ],
+            "category": [
+              "{Microblog}",
+              "[Scanner]",
+              "[Digitalisation]"
             ]
           }
         }
@@ -246,7 +558,7 @@
       "https://inhji.de/follow/home"
     ],
     "stylesheet": [
-      "https://inhji.de/assets/app-f1393bec02eb26ef8bcf82b15b7a789f.css?vsn=d"
+      "https://inhji.de/assets/app-46cd4e294d84cfee8635e791842ccee5.css?vsn=d"
     ]
   },
   "rel-urls": {
@@ -339,7 +651,7 @@
       "title": "Blog Feed for Mirage",
       "type": "application/atom+xml"
     },
-    "https://inhji.de/assets/app-f1393bec02eb26ef8bcf82b15b7a789f.css?vsn=d": {
+    "https://inhji.de/assets/app-46cd4e294d84cfee8635e791842ccee5.css?vsn=d": {
       "rels": [
         "stylesheet"
       ]
