@@ -21,6 +21,10 @@
       "properties": {
         "content": [
           {
+            "html": "<div class=\"field field-name-field-body field-type-text-long field-label-hidden view-mode-full\"><div class=\"field-items\"><div class=\"field-item even\" property=\"schema:articleBody\">\n<p>The <a href=\"https://www.princeedwardisland.ca/en/service/search-the-library-catalogue\">Public Library Service here in Prince Edward Island</a> has self-checkout machines in some branches: touch screens with barcode scanners that allow patrons to check books out themselves, similar to self-checkout machines in grocery stores. The machines come from <a href=\"https://d-techinternational.com/library-technology-solutions/\">D-Tech</a>, and when you opt for an emailed receipt from at the end of your session, you receive an email like this from <strong>notifications@d-techinternational.com</strong>:</p>\n\n<pre>\n<pre><code>PEI Public Library Service\n\nSelf Service Receipt for Borrowed Items\n\nName: **********5366\n\nTitle\nCOVID chronicles : a comics anthology\n\nItem ID\n33392010658484\n\nDue Back\n8/10/2022\n\n***************************\n\nDate: 17/09/2022 4:41:31 PM\n\nThank you for visiting the Library!</code></pre></pre>\n\n<p>To automatically parse this email and create macOS Reminders for each item, I wrote this AppleScript:</p>\n\n<pre>\n<code lang=\"applescript\">using terms from application \"Mail\"\n    on perform mail action with messages caughtMessages for rule catchingRule\n        repeat with caughtMessage in caughtMessages\n            try\n                -- Get the body text of the email message\n                set receipt to content of caughtMessage\n                -- Split the body text into individual lines\n                set theLinesList to paragraphs of receipt\n                -- Loop through each of the lines in the body text\n                repeat with a from 1 to length of theLinesList\n                    -- Get the current line\n                    set theCurrentListItem to item a of theLinesList\n                    -- If the current line is \"Title\" then...\n                    if theCurrentListItem as string is equal to \"Title\" then\n                        -- The actual title of the book is the next line, so store this\n                        set theTitle to item (a + 1) of theLinesList\n                        -- If the title is not empty then...\n                        if theTitle as string is not equal to \"\" then\n                            -- The date due is 7 lines later in the body of the email\n                            set theDateDue to item (a + 7) of theLinesList\n                            -- Re-format the date from D/M/Y to M/D/Y\n                            set command to \"date -j -f '%d/%m/%Y' \" &amp; theDateDue &amp; \" +'%m/%d/%Y'\"\n                            set theFormattedDate to do shell script (command as rich text)\n                            -- Create a reminder in the \"Project\" list of the Reminders app                            \n                            tell application \"Reminders\"\n                                set mylist to list \"Projects\"\n                                make new reminder at end with properties {name:\"'\" &amp; theTitle &amp; \"' is due\", allday due date:date theFormattedDate}\n                                -- Say the title out loud!\n                                say theTitle\n                            end tell\n                        end if           \n                    end if\n                end repeat\n            end try\n        end repeat\n    end perform mail action with messages\nend using terms from</code>\n</pre>\n\n<p>This script looks for every book in the incoming email, grabs the title and the date due, and creates a reminder.</p>\n\n<p>To connect it to Mail.app, save the script in <strong>/Users/peter/Library/Application Scripts/com.apple.mail/LibraryDateDueReminders.scpt.</strong></p>\n\n<p>Finally, create a new Mail.app Rule that looks for incoming email from <strong>notifications@d-techinternational.com</strong> and passes each email that matches to the AppleScript:</p>\n\n<p class=\"rtecenter\"><img alt=\"Screen shot of creating a new Mail.app rule for creating a date due reminder\" src=\"https://ruk.ca/sites/ruk.ca/files/new-mail-rule.png\" style=\"width: 639px; height: 244px;\"></p>\n\n<p>From this point, whenever a new email arrives from the self-checkout machine, a new reminder will be created. Like this one:</p>\n\n<p class=\"rtecenter\"><img alt=\"Screen shot of the reminder created for the date due in the Reminders app\" src=\"https://ruk.ca/sites/ruk.ca/files/newreminderbook.png\" style=\"width: 450px; height: 577px;\"></p>\n\n<p>I am very much a <a href=\"https://www.zylstra.org/blog/2020/02/i-am-the-programming-equivalent-of-a-home-cook/\">home cook</a> when it comes to AppleScript: most scripts I write by Googling things like “date conversion in AppleScript” and “parsing strings in AppleScript.” It’s forever a language just on the edge of my ability to perceive it logically; it’s “human-like” syntax always seems like more a hindrance than a help. But it’s also a powerful Swiss Army knife of amazement if you’re willing to put the time in to figure it out every time anew.</p>\n</div></div></div>\n<div class=\"field field-name-field-topics field-type-taxonomy-term-reference field-label-hidden view-mode-full\"><ul class=\"field-items\">\n<li class=\"field-item even\" rel=\"schema:keywords\"><a href=\"https://ruk.ca/topics/public-library-service\" typeof=\"skos:Concept\" property=\"rdfs:label skos:prefLabel\" datatype=\"\" class=\"p-category\">Public Library Service</a></li>\n<li class=\"field-item odd\" rel=\"schema:keywords\"><a href=\"https://ruk.ca/topics/prince-edward-island\" typeof=\"skos:Concept\" property=\"rdfs:label skos:prefLabel\" datatype=\"\" class=\"p-category\">Prince Edward Island</a></li>\n<li class=\"field-item even\" rel=\"schema:keywords\"><a href=\"https://ruk.ca/topics/technology/applescript\" typeof=\"skos:Concept\" property=\"rdfs:label skos:prefLabel\" datatype=\"\" class=\"p-category\">Applescript</a></li>\n<li class=\"field-item odd\" rel=\"schema:keywords\"><a href=\"https://ruk.ca/topics/technology/email\" typeof=\"skos:Concept\" property=\"rdfs:label skos:prefLabel\" datatype=\"\" class=\"p-category\">Email</a></li>\n</ul></div>",
+            "value": "The Public Library Service here in Prince Edward Island has self-checkout machines in some branches: touch screens with barcode scanners that allow patrons to check books out themselves, similar to self-checkout machines in grocery stores. The machines come from D-Tech, and when you opt for an emailed receipt from at the end of your session, you receive an email like this from notifications@d-techinternational.com:\n\n\nPEI Public Library Service\n\nSelf Service Receipt for Borrowed Items\n\nName: **********5366\n\nTitle\nCOVID chronicles : a comics anthology\n\nItem ID\n33392010658484\n\nDue Back\n8/10/2022\n\n***************************\n\nDate: 17/09/2022 4:41:31 PM\n\nThank you for visiting the Library!\n\nTo automatically parse this email and create macOS Reminders for each item, I wrote this AppleScript:\n\n\nusing terms from application \"Mail\"\n    on perform mail action with messages caughtMessages for rule catchingRule\n        repeat with caughtMessage in caughtMessages\n            try\n                -- Get the body text of the email message\n                set receipt to content of caughtMessage\n                -- Split the body text into individual lines\n                set theLinesList to paragraphs of receipt\n                -- Loop through each of the lines in the body text\n                repeat with a from 1 to length of theLinesList\n                    -- Get the current line\n                    set theCurrentListItem to item a of theLinesList\n                    -- If the current line is \"Title\" then...\n                    if theCurrentListItem as string is equal to \"Title\" then\n                        -- The actual title of the book is the next line, so store this\n                        set theTitle to item (a + 1) of theLinesList\n                        -- If the title is not empty then...\n                        if theTitle as string is not equal to \"\" then\n                            -- The date due is 7 lines later in the body of the email\n                            set theDateDue to item (a + 7) of theLinesList\n                            -- Re-format the date from D/M/Y to M/D/Y\n                            set command to \"date -j -f '%d/%m/%Y' \" & theDateDue & \" +'%m/%d/%Y'\"\n                            set theFormattedDate to do shell script (command as rich text)\n                            -- Create a reminder in the \"Project\" list of the Reminders app                            \n                            tell application \"Reminders\"\n                                set mylist to list \"Projects\"\n                                make new reminder at end with properties {name:\"'\" & theTitle & \"' is due\", allday due date:date theFormattedDate}\n                                -- Say the title out loud!\n                                say theTitle\n                            end tell\n                        end if           \n                    end if\n                end repeat\n            end try\n        end repeat\n    end perform mail action with messages\nend using terms from\n\n\nThis script looks for every book in the incoming email, grabs the title and the date due, and creates a reminder.\n\nTo connect it to Mail.app, save the script in /Users/peter/Library/Application Scripts/com.apple.mail/LibraryDateDueReminders.scpt.\n\nFinally, create a new Mail.app Rule that looks for incoming email from notifications@d-techinternational.com and passes each email that matches to the AppleScript:\n\n Screen shot of creating a new Mail.app rule for creating a date due reminder \n\nFrom this point, whenever a new email arrives from the self-checkout machine, a new reminder will be created. Like this one:\n\n Screen shot of the reminder created for the date due in the Reminders app \n\nI am very much a home cook when it comes to AppleScript: most scripts I write by Googling things like “date conversion in AppleScript” and “parsing strings in AppleScript.” It’s forever a language just on the edge of my ability to perceive it logically; it’s “human-like” syntax always seems like more a hindrance than a help. But it’s also a powerful Swiss Army knife of amazement if you’re willing to put the time in to figure it out every time anew.\nPublic Library ServicePrince Edward IslandApplescriptEmail"
+          },
+          {
             "html": "<div class=\"field field-name-field-body field-type-text-long field-label-hidden view-mode-full\"><div class=\"field-items\"><div class=\"field-item even\" property=\"schema:articleBody\">\n<p>My old friend and former Home and School colleague Heather Mullen is <a href=\"https://www.facebook.com/HeatherinCharlottetown/\">running for school trustee in Charlottetown</a>:</p>\n<blockquote>\n<p>Today I went outside my comfort zone to become a candidate for a public election. I did this because the public education system in PEl is very important to me. I will be running in the Charlottetown area (I moved to town this spring) however my time with PEI Home and School Federation has taught me the importance of representing the needs of students, schools, and staff across PEl and I will continue to listen to those concerns. I hope wherever you live in PEI, you would consider being involved in the Public Schools Branch election, either as a candidate or by voting.</p>\n</blockquote>\n<p>Heather is a dynamo: smart, progressive, organized, compassionate. She took the school food program baton handed to her when she became President of the PEI Home and School Federation and, with enormous dedication, expenditure of her own time, and deftly building a focused team of others, took it to the finish line. </p>\n<p>I’ve every confidence she’ll take the same energy and passion to her role as school trustee. </p>\n<p>The process for voting in this election is more involved than you might expect it to be: <a href=\"https://www.electionspei.ca/mail-in-ballot-application-for-school-board-elections\">all electors need to apply for a mail-in ballot</a> before October 9, 2022. It’s not difficult and will only take a moment. It’s worth it to ensure we have a school board with a strong mandate. </p>\n</div></div></div>",
             "value": "My old friend and former Home and School colleague Heather Mullen is running for school trustee in Charlottetown:\n\nToday I went outside my comfort zone to become a candidate for a public election. I did this because the public education system in PEl is very important to me. I will be running in the Charlottetown area (I moved to town this spring) however my time with PEI Home and School Federation has taught me the importance of representing the needs of students, schools, and staff across PEl and I will continue to listen to those concerns. I hope wherever you live in PEI, you would consider being involved in the Public Schools Branch election, either as a candidate or by voting.\n\nHeather is a dynamo: smart, progressive, organized, compassionate. She took the school food program baton handed to her when she became President of the PEI Home and School Federation and, with enormous dedication, expenditure of her own time, and deftly building a focused team of others, took it to the finish line. \nI’ve every confidence she’ll take the same energy and passion to her role as school trustee. \nThe process for voting in this election is more involved than you might expect it to be: all electors need to apply for a mail-in ballot before October 9, 2022. It’s not difficult and will only take a moment. It’s worth it to ensure we have a school board with a strong mandate."
           },
@@ -47,31 +51,45 @@
           {
             "html": "<div class=\"field field-name-field-body field-type-text-long field-label-hidden view-mode-full\"><div class=\"field-items\"><div class=\"field-item even\" property=\"schema:articleBody\">\n<p>﻿Eleven years ago I <a href=\"https://ruk.ca/content/dave%E2%80%99s-service-centre\">brought my car to Dave’s Service Centre for the first time</a>.</p>\n\n<p>The garage was on St. Peters Road back then, in a building long-since-demolished.</p>\n\n<p>A year or two after that first visit—<a href=\"https://ruk.ca/topics/daves-service-centre\">Dave had become my regular mechanic by that time</a>—Dorothy joined him, running the front-of-house. Indeed, the move from St. Peter’s Road down to Belmont Street was precipitated by Dorthy’s insistence they find new space, after a concrete chunk of that original building fell off; she found the space on Belmont on Kijiji that same afternoon.</p>\n\n<p>Dave and Dorothy helped me keep my 2000 VW Jetta on the road for almost 20 years. Every year that the Jetta carried on, we celebrated; it became a joint project to see how long we could keep it on the road.</p>\n\n<p>When I purchased an electric car in 2019, I was afraid that I’d have to go elsewhere for service. But it turns out that the Kia Soul EV, mechanically, outside of the engine, is just a regular old Kia Soul. So I continue to take it to Dave and Dorothy for brakes, winter tires, yearly inspection.</p>\n\n<p>This summer, as I was picking up my car after a brake job, and chatting with Dave and Dorothy, as I often do, Dorothy mentioned that they were getting married this weekend.</p>\n\n<p>When I took Lisa‘s car back a few weeks later, Dorothy gave me an invitation to the wedding reception.</p>\n\n<p>Dave and Dorothy are exceptional people: kind, honest, resourceful, good at explaining complicated things. They’re good businesspeople because they care about building long term relationships with their customers; it comes naturally to them.</p>\n\n<p>So, <em>of course</em>, Lisa and I went to their wedding reception last night, down at the Merchantman. It was a great do: good food, friendly people, and a lot of love for Dorothy and Dave.</p>\n\n<p>This being PEI, it turns out that Lisa and Dorothy are cousins, through the Uigg and Vernon River MacLeods. There was much family-connection-making, and I felt like I’d unlocked a new level of Islanderhood by simple proximity.</p>\n\n<p>Congratulations to Dave and Dorothy on their wedding. I’ll be in for my MVI in a few weeks.</p>\n</div></div></div>\n<div class=\"field field-name-field-topics field-type-taxonomy-term-reference field-label-hidden view-mode-full\"><ul class=\"field-items\">\n<li class=\"field-item even\" rel=\"schema:keywords\"><a href=\"https://ruk.ca/topics/daves-service-centre\" typeof=\"skos:Concept\" property=\"rdfs:label skos:prefLabel\" datatype=\"\" class=\"p-category\">Dave's Service Centre</a></li>\n<li class=\"field-item odd\" rel=\"schema:keywords\"><a href=\"https://ruk.ca/topics/marriage\" typeof=\"skos:Concept\" property=\"rdfs:label skos:prefLabel\" datatype=\"\" class=\"p-category\">Marriage</a></li>\n</ul></div>",
             "value": "﻿Eleven years ago I brought my car to Dave’s Service Centre for the first time.\n\nThe garage was on St. Peters Road back then, in a building long-since-demolished.\n\nA year or two after that first visit—Dave had become my regular mechanic by that time—Dorothy joined him, running the front-of-house. Indeed, the move from St. Peter’s Road down to Belmont Street was precipitated by Dorthy’s insistence they find new space, after a concrete chunk of that original building fell off; she found the space on Belmont on Kijiji that same afternoon.\n\nDave and Dorothy helped me keep my 2000 VW Jetta on the road for almost 20 years. Every year that the Jetta carried on, we celebrated; it became a joint project to see how long we could keep it on the road.\n\nWhen I purchased an electric car in 2019, I was afraid that I’d have to go elsewhere for service. But it turns out that the Kia Soul EV, mechanically, outside of the engine, is just a regular old Kia Soul. So I continue to take it to Dave and Dorothy for brakes, winter tires, yearly inspection.\n\nThis summer, as I was picking up my car after a brake job, and chatting with Dave and Dorothy, as I often do, Dorothy mentioned that they were getting married this weekend.\n\nWhen I took Lisa‘s car back a few weeks later, Dorothy gave me an invitation to the wedding reception.\n\nDave and Dorothy are exceptional people: kind, honest, resourceful, good at explaining complicated things. They’re good businesspeople because they care about building long term relationships with their customers; it comes naturally to them.\n\nSo, of course, Lisa and I went to their wedding reception last night, down at the Merchantman. It was a great do: good food, friendly people, and a lot of love for Dorothy and Dave.\n\nThis being PEI, it turns out that Lisa and Dorothy are cousins, through the Uigg and Vernon River MacLeods. There was much family-connection-making, and I felt like I’d unlocked a new level of Islanderhood by simple proximity.\n\nCongratulations to Dave and Dorothy on their wedding. I’ll be in for my MVI in a few weeks.\nDave's Service CentreMarriage"
-          },
-          {
-            "html": "<div class=\"field field-name-field-body field-type-text-long field-label-hidden view-mode-full\"><div class=\"field-items\"><div class=\"field-item even\" property=\"schema:articleBody\">\n<p>The <a href=\"https://en.wikipedia.org/wiki/Barra_Airport\">airport at Barra, Scotland</a> uses runways in the beach:</p>\n\n<blockquote>\n<p>The beach is set out with three runways in a triangle, marked by permanent wooden poles at their ends, in directions 07/25, 11/29, 15/33. This almost always allows the Twin Otters that serve the airport to land into the wind. At high tide these runways are under the sea; flight times vary with the tide. Emergency flights occasionally operate at night from the airport, with vehicle lights used to illuminate the runway and reflective strips laid on to the beach.</p>\n</blockquote>\n\n<p>(via <a href=\"https://youtu.be/L6AdKbipGAI\">this entertaining video</a> about visiting Britain’s westernmost bus stop)</p>\n</div></div></div>\n<div class=\"field field-name-field-topics field-type-taxonomy-term-reference field-label-hidden view-mode-full\"><ul class=\"field-items\">\n<li class=\"field-item even\" rel=\"schema:keywords\"><a href=\"https://ruk.ca/topics/geoff-marshall\" typeof=\"skos:Concept\" property=\"rdfs:label skos:prefLabel\" datatype=\"\" class=\"p-category\">Geoff Marshall</a></li>\n<li class=\"field-item odd\" rel=\"schema:keywords\"><a href=\"https://ruk.ca/topics/barra\" typeof=\"skos:Concept\" property=\"rdfs:label skos:prefLabel\" datatype=\"\" class=\"p-category\">Barra</a></li>\n<li class=\"field-item even\" rel=\"schema:keywords\"><a href=\"https://ruk.ca/topics/scotland\" typeof=\"skos:Concept\" property=\"rdfs:label skos:prefLabel\" datatype=\"\" class=\"p-category\">Scotland</a></li>\n<li class=\"field-item odd\" rel=\"schema:keywords\"><a href=\"https://ruk.ca/topics/airports\" typeof=\"skos:Concept\" property=\"rdfs:label skos:prefLabel\" datatype=\"\" class=\"p-category\">Airports</a></li>\n</ul></div>",
-            "value": "The airport at Barra, Scotland uses runways in the beach:\n\n\nThe beach is set out with three runways in a triangle, marked by permanent wooden poles at their ends, in directions 07/25, 11/29, 15/33. This almost always allows the Twin Otters that serve the airport to land into the wind. At high tide these runways are under the sea; flight times vary with the tide. Emergency flights occasionally operate at night from the airport, with vehicle lights used to illuminate the runway and reflective strips laid on to the beach.\n\n\n(via this entertaining video about visiting Britain’s westernmost bus stop)\nGeoff MarshallBarraScotlandAirports"
           }
         ],
+        "category": [
+          "Public Library Service",
+          "Prince Edward Island",
+          "Applescript",
+          "Email",
+          "Charlottetown Farmers’ Market",
+          "Design",
+          "Patrick Rhone",
+          "Fear",
+          "Design",
+          "Work",
+          "Provincial Library Service",
+          "Codabar",
+          "iPhone",
+          "Charlottetown Library Hacks",
+          "Dave's Service Centre",
+          "Marriage"
+        ],
         "url": [
+          "https://ruk.ca/content/automatically-creating-date-due-reminders-library-books-checked-out-out-using-self-checkout",
           "https://ruk.ca/content/heather-mullen-school-board",
           "https://ruk.ca/content/they-moved-stairs",
           "https://ruk.ca/content/i-explain-main-thing-my-lack-fear",
           "https://ruk.ca/content/cyanometer",
           "https://ruk.ca/content/how-add-your-pei-library-card-apple-wallet",
           "https://ruk.ca/content/more-charlottetown-library-hacks",
-          "https://ruk.ca/content/dave-and-dorothy-get-married",
-          "https://ruk.ca/content/high-tide-these-runways-are-under-sea…"
+          "https://ruk.ca/content/dave-and-dorothy-get-married"
         ],
         "published": [
+          "2022-09-18 10:23:41",
           "2022-09-17 09:15:00",
           "2022-09-15 11:21:40",
           "2022-09-14 02:39:56",
           "2022-09-13 11:05:17",
           "2022-09-13 08:29:27",
           "2022-09-12 04:48:00",
-          "2022-09-11 10:24:43",
-          "2022-09-06 11:05:47"
+          "2022-09-11 10:24:43"
         ],
         "author": [
           {
@@ -258,24 +276,6 @@
             },
             "value": "Peter Rukavina"
           }
-        ],
-        "category": [
-          "Charlottetown Farmers’ Market",
-          "Design",
-          "Patrick Rhone",
-          "Fear",
-          "Design",
-          "Work",
-          "Provincial Library Service",
-          "Codabar",
-          "iPhone",
-          "Charlottetown Library Hacks",
-          "Dave's Service Centre",
-          "Marriage",
-          "Geoff Marshall",
-          "Barra",
-          "Scotland",
-          "Airports"
         ]
       },
       "id": "main-content"
@@ -372,18 +372,22 @@
       "https://ruk.ca/rss/podcast.xml"
     ],
     "stylesheet": [
-      "https://ruk.ca/sites/ruk.ca/files/advagg_css/css__1AhcMJSKDbTdtFSd5SOcEiVRFgRodWm7pI8NvRKIGjI__Nui5DXKw-HRIEM24Y_OLvnlQ6-KKA82T7Ne9lfcEGXs__5iKpygb31HWZfWrSaHhI9cTqeKdkcHkkHn0OiUnu4zI.css",
-      "https://ruk.ca/sites/ruk.ca/files/advagg_css/css__KviPNOKtNMltlyUkYb2_SEmSa_kkbptuHJz76KxVO5U__qsEF5uDTvaIbOfGdwxwQzHzvN7FHQfFrDYbLM33_3UU__5iKpygb31HWZfWrSaHhI9cTqeKdkcHkkHn0OiUnu4zI.css"
+      "https://ruk.ca/sites/ruk.ca/files/advagg_css/css__uaM0n2U-VuvFdJi4sPhmq-jb1fYdpEqTlSxmYGj-ghI__H8ckAbdUf8HYiMXfkBC7w8ZLLifg1voYSWiP1fLqptw__TTYry4XbgkL5rLFFAPVzwDZifJma419B8nXpGoNJZxo.css",
+      "https://ruk.ca/sites/ruk.ca/files/advagg_css/css__wK8H5gfZTT0uvlQiKTOcmJ4tENvVY4qJ8c-oQu_7N9g__NrAWmqAnJmCIiGJPkOR_OYfghlpqXFleKYs8_83E3k4__TTYry4XbgkL5rLFFAPVzwDZifJma419B8nXpGoNJZxo.css",
+      "https://ruk.ca/sites/ruk.ca/files/advagg_css/css__WRtK9dgSwyoGE2ZRHb3i0xKWxbbXblccq7HaD-cC6Cw__uruH4KpKTZOnyj-MItar3YQYLRfBYchGW356Fai3a9U__TTYry4XbgkL5rLFFAPVzwDZifJma419B8nXpGoNJZxo.css",
+      "https://ruk.ca/sites/ruk.ca/files/advagg_css/css__uJCZX7_12F-g2WKEvirMtz8jhS7O8c8DDZa5Q6GhhxE__OrX6mhzSa5R8WMT4V1-KyuJmdxIdd6Y8n8Y2K3a9WNE__TTYry4XbgkL5rLFFAPVzwDZifJma419B8nXpGoNJZxo.css",
+      "https://ruk.ca/sites/ruk.ca/files/advagg_css/css__zg4pzrmmR2q5Jf2W9wLmbnR-VEJ50i74e-5AMhN06jE__UVXqWmOP_TZnT9zd6FWwua90EK7wvps7qJDiip6ZYik__TTYry4XbgkL5rLFFAPVzwDZifJma419B8nXpGoNJZxo.css",
+      "https://ruk.ca/sites/ruk.ca/files/advagg_css/css__TWWIA2lrICob2JXs_dHc7TqlUviRCIBMCzbCgicBEp4__BgjWfxlDx92v3BklKTc93iTjJByy6Dx56eFbSeOxuMk__TTYry4XbgkL5rLFFAPVzwDZifJma419B8nXpGoNJZxo.css"
     ],
     "bookmark": [
+      "https://ruk.ca/content/automatically-creating-date-due-reminders-library-books-checked-out-out-using-self-checkout",
       "https://ruk.ca/content/heather-mullen-school-board",
       "https://ruk.ca/content/they-moved-stairs",
       "https://ruk.ca/content/i-explain-main-thing-my-lack-fear",
       "https://ruk.ca/content/cyanometer",
       "https://ruk.ca/content/how-add-your-pei-library-card-apple-wallet",
       "https://ruk.ca/content/more-charlottetown-library-hacks",
-      "https://ruk.ca/content/dave-and-dorothy-get-married",
-      "https://ruk.ca/content/high-tide-these-runways-are-under-sea%E2%80%A6"
+      "https://ruk.ca/content/dave-and-dorothy-get-married"
     ],
     "author": [
       "https://ruk.ca/about-peter-rukavina",
@@ -511,31 +515,65 @@
       "title": "ruk.ca » sounds",
       "type": "application/rss+xml"
     },
-    "https://ruk.ca/sites/ruk.ca/files/advagg_css/css__1AhcMJSKDbTdtFSd5SOcEiVRFgRodWm7pI8NvRKIGjI__Nui5DXKw-HRIEM24Y_OLvnlQ6-KKA82T7Ne9lfcEGXs__5iKpygb31HWZfWrSaHhI9cTqeKdkcHkkHn0OiUnu4zI.css": {
+    "https://ruk.ca/sites/ruk.ca/files/advagg_css/css__uaM0n2U-VuvFdJi4sPhmq-jb1fYdpEqTlSxmYGj-ghI__H8ckAbdUf8HYiMXfkBC7w8ZLLifg1voYSWiP1fLqptw__TTYry4XbgkL5rLFFAPVzwDZifJma419B8nXpGoNJZxo.css": {
       "rels": [
         "stylesheet"
       ],
       "media": "all",
       "type": "text/css"
     },
-    "https://ruk.ca/sites/ruk.ca/files/advagg_css/css__KviPNOKtNMltlyUkYb2_SEmSa_kkbptuHJz76KxVO5U__qsEF5uDTvaIbOfGdwxwQzHzvN7FHQfFrDYbLM33_3UU__5iKpygb31HWZfWrSaHhI9cTqeKdkcHkkHn0OiUnu4zI.css": {
+    "https://ruk.ca/sites/ruk.ca/files/advagg_css/css__wK8H5gfZTT0uvlQiKTOcmJ4tENvVY4qJ8c-oQu_7N9g__NrAWmqAnJmCIiGJPkOR_OYfghlpqXFleKYs8_83E3k4__TTYry4XbgkL5rLFFAPVzwDZifJma419B8nXpGoNJZxo.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "screen",
+      "type": "text/css"
+    },
+    "https://ruk.ca/sites/ruk.ca/files/advagg_css/css__WRtK9dgSwyoGE2ZRHb3i0xKWxbbXblccq7HaD-cC6Cw__uruH4KpKTZOnyj-MItar3YQYLRfBYchGW356Fai3a9U__TTYry4XbgkL5rLFFAPVzwDZifJma419B8nXpGoNJZxo.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "print",
+      "type": "text/css"
+    },
+    "https://ruk.ca/sites/ruk.ca/files/advagg_css/css__uJCZX7_12F-g2WKEvirMtz8jhS7O8c8DDZa5Q6GhhxE__OrX6mhzSa5R8WMT4V1-KyuJmdxIdd6Y8n8Y2K3a9WNE__TTYry4XbgkL5rLFFAPVzwDZifJma419B8nXpGoNJZxo.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "screen",
+      "type": "text/css"
+    },
+    "https://ruk.ca/sites/ruk.ca/files/advagg_css/css__zg4pzrmmR2q5Jf2W9wLmbnR-VEJ50i74e-5AMhN06jE__UVXqWmOP_TZnT9zd6FWwua90EK7wvps7qJDiip6ZYik__TTYry4XbgkL5rLFFAPVzwDZifJma419B8nXpGoNJZxo.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "only screen",
+      "type": "text/css"
+    },
+    "https://ruk.ca/sites/ruk.ca/files/advagg_css/css__TWWIA2lrICob2JXs_dHc7TqlUviRCIBMCzbCgicBEp4__BgjWfxlDx92v3BklKTc93iTjJByy6Dx56eFbSeOxuMk__TTYry4XbgkL5rLFFAPVzwDZifJma419B8nXpGoNJZxo.css": {
       "rels": [
         "stylesheet"
       ],
       "media": "all",
       "type": "text/css"
     },
-    "https://ruk.ca/content/heather-mullen-school-board": {
+    "https://ruk.ca/content/automatically-creating-date-due-reminders-library-books-checked-out-out-using-self-checkout": {
       "rels": [
         "bookmark"
       ],
-      "text": "Heather Mullen for School Board"
+      "text": "Automatically creating date due reminders for library books checked out out using a self-checkout machine"
     },
     "https://ruk.ca/about-peter-rukavina": {
       "rels": [
         "author"
       ],
       "text": "Peter Rukavina"
+    },
+    "https://ruk.ca/content/heather-mullen-school-board": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "Heather Mullen for School Board"
     },
     "https://ruk.ca/content/they-moved-stairs": {
       "rels": [
@@ -572,12 +610,6 @@
         "bookmark"
       ],
       "text": "Dave and Dorothy Get Married"
-    },
-    "https://ruk.ca/content/high-tide-these-runways-are-under-sea%E2%80%A6": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "At high tide these runways are under the sea…"
     }
   }
 }

@@ -21,11 +21,18 @@
     }
   ],
   "rels": {
+    "canonical": [
+      "https://aribadernatal.com/"
+    ],
     "alternate": [
       "https://aribadernatal.com/feed.xml"
     ],
-    "canonical": [
-      "https://aribadernatal.com/"
+    "apple-touch-icon": [
+      "https://aribadernatal.com/logo-180-180.png"
+    ],
+    "icon": [
+      "https://aribadernatal.com/favicon-32x32.png",
+      "https://aribadernatal.com/favicon-16x16.png"
     ],
     "me": [
       "https://github.com/aribn",
@@ -55,14 +62,8 @@
       "https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,300;0,500;0,700;1,100&display=swap",
       "https://aribadernatal.com/public/css/tippy/light-border.css"
     ],
-    "apple-touch-icon": [
-      "https://aribadernatal.com/logo-180-180.png"
-    ],
-    "icon": [
-      "https://aribadernatal.com/favicon-32x32.png",
-      "https://aribadernatal.com/favicon-16x16.png"
-    ],
     "noopener": [
+      "https://favorites.aribadernatal.com/github-favorites/2022/09/aribn-starred-microlinkhq-metascraper/",
       "https://favorites.aribadernatal.com/pocket-favorites/2022/09/how-stripe-builds-interactive-docs-with-markdoc/",
       "https://favorites.aribadernatal.com/pocket-favorites/2022/09/buttericks-practical-typography/",
       "https://favorites.aribadernatal.com/twitter-favorites/2022/09/favorited-tweet-by-rainmaker1973-2/",
@@ -77,23 +78,39 @@
       "https://favorites.aribadernatal.com/pocket-favorites/2022/08/opening-the-pandoras-box-of-ai-art/",
       "https://favorites.aribadernatal.com/twitter-favorites/2022/08/favorited-tweet-by-reesesandcoke-2/",
       "https://favorites.aribadernatal.com/twitter-favorites/2022/08/favorited-tweet-by-andy_matuschak-14/",
-      "https://favorites.aribadernatal.com/github-favorites/2022/08/aribn-starred-clayh53-tufte-jekyll/",
       "https://favorites.aribadernatal.com/",
       "https://www.linkedin.com/in/aribadernatal/",
       "https://twitter.com/aribadernatal/"
     ]
   },
   "rel-urls": {
+    "https://aribadernatal.com/": {
+      "rels": [
+        "canonical"
+      ]
+    },
     "https://aribadernatal.com/feed.xml": {
       "rels": [
         "alternate"
       ],
       "type": "application/rss+xml"
     },
-    "https://aribadernatal.com/": {
+    "https://aribadernatal.com/logo-180-180.png": {
       "rels": [
-        "canonical"
+        "apple-touch-icon"
       ]
+    },
+    "https://aribadernatal.com/favicon-32x32.png": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/png"
+    },
+    "https://aribadernatal.com/favicon-16x16.png": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/png"
     },
     "https://github.com/aribn": {
       "rels": [
@@ -129,23 +146,6 @@
       "rels": [
         "preload"
       ]
-    },
-    "https://aribadernatal.com/logo-180-180.png": {
-      "rels": [
-        "apple-touch-icon"
-      ]
-    },
-    "https://aribadernatal.com/favicon-32x32.png": {
-      "rels": [
-        "icon"
-      ],
-      "type": "image/png"
-    },
-    "https://aribadernatal.com/favicon-16x16.png": {
-      "rels": [
-        "icon"
-      ],
-      "type": "image/png"
     },
     "https://aribadernatal.com/public/css/tippy/light-border.css": {
       "rels": [
@@ -196,6 +196,13 @@
       "rels": [
         "preload"
       ]
+    },
+    "https://favorites.aribadernatal.com/github-favorites/2022/09/aribn-starred-microlinkhq-metascraper/": {
+      "rels": [
+        "noopener"
+      ],
+      "title": "aribn starred microlinkhq/metascraper Sep 18, 2022 microlinkhq/metascraper Get unified metadata from websites using Open Graph, Microdata, RDFa, Twitter Cards, JSON-LD, HTML, and more. HTML 1.8k Updated Sep 18",
+      "text": "aribn starred microlinkhq/metascraper"
     },
     "https://favorites.aribadernatal.com/pocket-favorites/2022/09/how-stripe-builds-interactive-docs-with-markdoc/": {
       "rels": [
@@ -294,13 +301,6 @@
       ],
       "title": "As an experiment, I held an impromptu unconference with Gather Town.\nOrganizing was surprisingly effortless (moved the schedule board to a GSheet).\nI still strongly dislike synchronous online social interfaces, but this was noticeably less unpleasant than Slack+Zoom confs. https://t.co/bYu4Fmdhcc",
       "text": "Favorited tweet by andy_matuschak"
-    },
-    "https://favorites.aribadernatal.com/github-favorites/2022/08/aribn-starred-clayh53-tufte-jekyll/": {
-      "rels": [
-        "noopener"
-      ],
-      "title": "aribn starred clayh53/tufte-jekyll Aug 21, 2022 clayh53/tufte-jekyll Minimal Jekyll blog styled to resemble the look and layout of Edward Tufte’s books SCSS 552 Updated Apr 12",
-      "text": "aribn starred clayh53/tufte-jekyll"
     },
     "https://favorites.aribadernatal.com/": {
       "rels": [

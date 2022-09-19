@@ -1,12 +1,6 @@
 {
   "items": [],
   "rels": {
-    "webmention": [
-      "https://webmention.io/kevincox.ca/webmention"
-    ],
-    "pingback": [
-      "https://webmention.io/kevincox.ca/xmlrpc"
-    ],
     "icon": [
       "https://kevincox.ca/logo.png",
       "https://kevincox.ca/logo.svg"
@@ -17,21 +11,17 @@
     "canonical": [
       "https://kevincox.ca/"
     ],
+    "webmention": [
+      "https://webmention.io/kevincox.ca/webmention"
+    ],
+    "pingback": [
+      "https://webmention.io/kevincox.ca/xmlrpc"
+    ],
     "me": [
       "mailto:kevincox@kevincox.ca"
     ]
   },
   "rel-urls": {
-    "https://webmention.io/kevincox.ca/webmention": {
-      "rels": [
-        "webmention"
-      ]
-    },
-    "https://webmention.io/kevincox.ca/xmlrpc": {
-      "rels": [
-        "pingback"
-      ]
-    },
     "https://kevincox.ca/logo.png": {
       "rels": [
         "icon"
@@ -54,6 +44,16 @@
     "https://kevincox.ca/": {
       "rels": [
         "canonical"
+      ]
+    },
+    "https://webmention.io/kevincox.ca/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://webmention.io/kevincox.ca/xmlrpc": {
+      "rels": [
+        "pingback"
       ]
     },
     "mailto:kevincox@kevincox.ca": {

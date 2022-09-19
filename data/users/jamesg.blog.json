@@ -273,11 +273,18 @@
     ],
     "me": [
       "mailto:jamesg@jamesg.blog",
+      "https://indieweb.rocks/jamesg.blog",
       "https://www.linkedin.com/in/jg12927/",
       "https://www.instagram.com/capjamesg/",
       "https://indieweb.org/User:Jamesg.blog",
       "https://github.com/capjamesg",
       "https://sr.ht/~capjamesg/"
+    ],
+    "search": [
+      "https://jamesg.blog/assets/opensearch.xml"
+    ],
+    "manifest": [
+      "https://jamesg.blog/assets/manifest.json"
     ],
     "icon": [
       "https://jamesg.blog/favicon.ico"
@@ -331,9 +338,26 @@
         "me"
       ]
     },
+    "https://indieweb.rocks/jamesg.blog": {
+      "rels": [
+        "me"
+      ]
+    },
     "https://www.linkedin.com/in/jg12927/": {
       "rels": [
         "me"
+      ]
+    },
+    "https://jamesg.blog/assets/opensearch.xml": {
+      "rels": [
+        "search"
+      ],
+      "title": "IndieWeb Search",
+      "type": "application/opensearchdescription+xml"
+    },
+    "https://jamesg.blog/assets/manifest.json": {
+      "rels": [
+        "manifest"
       ]
     },
     "https://jamesg.blog/favicon.ico": {
