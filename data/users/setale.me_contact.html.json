@@ -10,7 +10,7 @@
     "me": [
       "https://mastodon.social/@koalalorenzo",
       "https://matrix.to/#/@koalalorenzo:matrix.org",
-      "https://setale.me/cdn-cgi/l/email-protection#0a6570646f7865664a796f7e6b666f24676f",
+      "https://setale.me/cdn-cgi/l/email-protection#afc0d5c1caddc0c3efdccadbcec3ca81c2ca",
       "https://telegram.me/koalalorenzo",
       "https://twitter.com/koalalorenzo",
       "https://instagram.com/koalalorenzo",
@@ -20,6 +20,12 @@
     ],
     "stylesheet": [
       "https://setale.me/css/style.css?v7"
+    ],
+    "dns-prefetch": [
+      "https://blog.setale.me/"
+    ],
+    "prefetch": [
+      "https://setale.me/"
     ],
     "home": [
       "https://setale.me/index.html"
@@ -52,6 +58,11 @@
         "stylesheet"
       ]
     },
+    "https://blog.setale.me/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
     "https://setale.me/index.html": {
       "rels": [
         "home"
@@ -59,7 +70,7 @@
       "title": "Lorenzo Setale",
       "text": "\n\nLorenzo Setale\n"
     },
-    "https://setale.me/cdn-cgi/l/email-protection#0a6570646f7865664a796f7e6b666f24676f": {
+    "https://setale.me/cdn-cgi/l/email-protection#afc0d5c1caddc0c3efdccadbcec3ca81c2ca": {
       "rels": [
         "me"
       ],

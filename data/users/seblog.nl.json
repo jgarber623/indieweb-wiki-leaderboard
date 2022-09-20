@@ -39,6 +39,42 @@
           ],
           "properties": {
             "name": [
+              "Customising Git: some things I did"
+            ],
+            "content": [
+              {
+                "html": "<p>One thing that always puzzled me a bit about my own workflow, is that almost all of it is based in the terminal (I use Vim and Tmux), except for Git: where most people seem to use the Git CLI commands, I use a graphical program (<a href=\"https://git-fork.com/\">Fork</a>, which is quite good).</p>\n<p>Another thing then: I never used <a href=\"https://github.com/\">Github</a> professionally, apart from the time I was a self employed web developer, but back then I was the only developer on my projects. All my previous jobs had a self-hosted <a href=\"https://gitlab.com/\">Gitlab</a> running somewhere.</p>\n<p>Long story short: I am trying to get better at Git in the terminal and using Github. And 'better at Git' to me both means 'being able to confidently rebase' as well as 'customise my workflow'.</p>\n<h2>Aliases in the Gitconfig file</h2>\n<p>Customising Git means setting configuration in the <code>~/.gitconfig</code> file. This file contains settings for Git, like your name and email, but can also be used to add aliases. To create the first alias you can run <code>git config --global alias.co checkout</code>. After this, you can use <code>git co</code> as <code>git checkout</code>, which is shorter to type and yes I use this often now.</p>\n<p>Another alias I have is this one:</p>\n<pre><code>publish = !git push --set-upstream origin $(git symbolic-ref --short HEAD)</code></pre>\n<p>If you try to push a branch that has no linked branch on Github (the upstream), Git will complain about it. It will be nice to you and state the command you should have ran, but I got tired of having to copy and paste that new command.</p>\n<pre><code>fatal: The current branch feature/new-shoes has no upstream branch.\nTo push the current branch and set the remote as upstream, use\n\n    git push --set-upstream origin feature/new-shoes</code></pre>\n<p>In Fork, this was just a checkbox away. With my new <code>git publish</code> command I get the convenience again: it will push the branch and set the upstream with the same name as I have locally, exactly as Git suggested I should have done, but in less typing.</p>\n<h2>Links to Github</h2>\n<p>So far we have seen two kinds of aliases: one that just aliases a simple Git command (<code>b = branch</code>) and one that actually ran a shell command, because we started it with a <code>!</code> (note that you will have to start with <code>! git</code> there). But there is another way: having a command that starts with <code>git-</code> in your path.</p>\n<p>I have the following file as <code>~/bin/git-github</code>, marked as executable (<code>chmod +x ~/bin/git-github</code>) and in my path (<code>export PATH=\"$HOME/bin:$PATH\"</code> in my <code>~/.zshrc</code> file):</p>\n<pre><code>#!/bin/zsh\n\nlocal url\nurl=$(git remote get-url $(git remote))\nurl=$(echo $url | sed 's/.*github\\.com[:\\/]\\(.*\\).git$/https:\\/\\/github.com\\/\\1/')\n\nif [ -n \"$1\" ]; then\n  append=\"/$1/$(git symbolic-ref --short HEAD)\"\nfi\n\nopen -u \"$url$append\"</code></pre>\n<p>Yes, my ZSH is crude. Yes, I can better share this in Bash. Yes, it could've probably been on one line and be included as an alias in my Gitconfig. But it works for me.</p>\n<p>The command figures out the Github URL of the project, based on the URL of the remote (it assumes you have only one). It then opens that URL with the macOS <code>open</code> command. If an argument is given, it appends that to the URL, with the name of the branch too.</p>\n<p>In my Gitconfig I have two aliases that use this command:</p>\n<pre><code>pr = github pull/new\ncompare = github compare</code></pre>\n<p>With <code>git github</code>, my default browser will open a tab with the 'homepage' of the repository. With <code>git compare</code>, it will open a tab that contains a diff of the current branch and the default branch on Github (the remote versions of those). With <code>git pr</code>, the browser will open the correct page to open a for the current branch.</p>\n<h2>And you mentioned Vim and Tmux?</h2>\n<p>Yes, I actually use the obligatory Tim Pope plugin <a href=\"https://github.com/tpope/vim-fugitive\">Fugitive</a>. This means I can do a lot of things which you can also read about in the <a href=\"https://github.com/tpope/vim-fugitive/blob/master/doc/fugitive.txt\">help file</a>. (Which I read a lot these days.)</p>\n<p>But this allows me to stage and commit and rebase and reword all my changes in Vim, and then when I am ready, run <code>:G publish</code> and <code>:G pr</code> and make a PR for it on Github. These two commands alone make me feel so much more productive: no longer do I have to search for another program to compose commits and then search for the browser to handle the cooperative side of it... I just handle everything in my editor.</p>\n<p>For Tmux I have another nice addition: in my <code>~/.tmux.conf</code> I have the following command:</p>\n<pre><code>bind-key y display-popup -E -h \"90%\" \"git log --oneline --decorate --graph --all\"</code></pre>\n<p>This will – when I press <code>&lt;prefix&gt; + y</code> – open a popup window, which closes when the command exits and has a certain height. It will show me an ASCII-art style graph of all the commits – one of the features I missed from Fork – as an overlay over my editor, a small keystroke away.</p>\n<p>With this configuration – and a lot of reading the Fugitive help file – I feel much more at home with Git in the terminal.</p>\n<p><em>I also watched <a href=\"https://thoughtbot.com/upcase/mastering-git\">this</a> fantastic series on mastering Git and <a href=\"http://vimcasts.org/blog/2011/05/the-fugitive-series/\">these</a> unfortunately dated but still useful screencasts on Fugitive.</em></p>",
+                "value": "One thing that always puzzled me a bit about my own workflow, is that almost all of it is based in the terminal (I use Vim and Tmux), except for Git: where most people seem to use the Git CLI commands, I use a graphical program (Fork, which is quite good).\nAnother thing then: I never used Github professionally, apart from the time I was a self employed web developer, but back then I was the only developer on my projects. All my previous jobs had a self-hosted Gitlab running somewhere.\nLong story short: I am trying to get better at Git in the terminal and using Github. And 'better at Git' to me both means 'being able to confidently rebase' as well as 'customise my workflow'.\nAliases in the Gitconfig file\nCustomising Git means setting configuration in the ~/.gitconfig file. This file contains settings for Git, like your name and email, but can also be used to add aliases. To create the first alias you can run git config --global alias.co checkout. After this, you can use git co as git checkout, which is shorter to type and yes I use this often now.\nAnother alias I have is this one:\npublish = !git push --set-upstream origin $(git symbolic-ref --short HEAD)\nIf you try to push a branch that has no linked branch on Github (the upstream), Git will complain about it. It will be nice to you and state the command you should have ran, but I got tired of having to copy and paste that new command.\nfatal: The current branch feature/new-shoes has no upstream branch.\nTo push the current branch and set the remote as upstream, use\n\n    git push --set-upstream origin feature/new-shoes\nIn Fork, this was just a checkbox away. With my new git publish command I get the convenience again: it will push the branch and set the upstream with the same name as I have locally, exactly as Git suggested I should have done, but in less typing.\nLinks to Github\nSo far we have seen two kinds of aliases: one that just aliases a simple Git command (b = branch) and one that actually ran a shell command, because we started it with a ! (note that you will have to start with ! git there). But there is another way: having a command that starts with git- in your path.\nI have the following file as ~/bin/git-github, marked as executable (chmod +x ~/bin/git-github) and in my path (export PATH=\"$HOME/bin:$PATH\" in my ~/.zshrc file):\n#!/bin/zsh\n\nlocal url\nurl=$(git remote get-url $(git remote))\nurl=$(echo $url | sed 's/.*github\\.com[:\\/]\\(.*\\).git$/https:\\/\\/github.com\\/\\1/')\n\nif [ -n \"$1\" ]; then\n  append=\"/$1/$(git symbolic-ref --short HEAD)\"\nfi\n\nopen -u \"$url$append\"\nYes, my ZSH is crude. Yes, I can better share this in Bash. Yes, it could've probably been on one line and be included as an alias in my Gitconfig. But it works for me.\nThe command figures out the Github URL of the project, based on the URL of the remote (it assumes you have only one). It then opens that URL with the macOS open command. If an argument is given, it appends that to the URL, with the name of the branch too.\nIn my Gitconfig I have two aliases that use this command:\npr = github pull/new\ncompare = github compare\nWith git github, my default browser will open a tab with the 'homepage' of the repository. With git compare, it will open a tab that contains a diff of the current branch and the default branch on Github (the remote versions of those). With git pr, the browser will open the correct page to open a for the current branch.\nAnd you mentioned Vim and Tmux?\nYes, I actually use the obligatory Tim Pope plugin Fugitive. This means I can do a lot of things which you can also read about in the help file. (Which I read a lot these days.)\nBut this allows me to stage and commit and rebase and reword all my changes in Vim, and then when I am ready, run :G publish and :G pr and make a PR for it on Github. These two commands alone make me feel so much more productive: no longer do I have to search for another program to compose commits and then search for the browser to handle the cooperative side of it... I just handle everything in my editor.\nFor Tmux I have another nice addition: in my ~/.tmux.conf I have the following command:\nbind-key y display-popup -E -h \"90%\" \"git log --oneline --decorate --graph --all\"\nThis will – when I press <prefix> + y – open a popup window, which closes when the command exits and has a certain height. It will show me an ASCII-art style graph of all the commits – one of the features I missed from Fork – as an overlay over my editor, a small keystroke away.\nWith this configuration – and a lot of reading the Fugitive help file – I feel much more at home with Git in the terminal.\nI also watched this fantastic series on mastering Git and these unfortunately dated but still useful screencasts on Fugitive."
+              }
+            ],
+            "url": [
+              "https://seblog.nl/2022/09/19/1/customising-git"
+            ],
+            "published": [
+              "2022-09-19T18:51:48+0000"
+            ],
+            "updated": [
+              "2022-09-19T18:51:48+0000"
+            ],
+            "uid": [
+              "https://seblog.nl/2022/262/1"
+            ],
+            "author": [
+              "https://seblog.nl/"
+            ],
+            "category": [
+              "git",
+              "vim",
+              "tmux"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               "Storing posts by juggling with Git internals"
             ],
             "content": [
@@ -674,38 +710,6 @@
             ],
             "uid": [
               "https://seblog.nl/2022/123/1"
-            ],
-            "author": [
-              "https://seblog.nl/"
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "url": [
-              "https://seblog.nl/2022/05/01/2/like",
-              "https://seblog.nl/2022/05/01/2/like"
-            ],
-            "content": [
-              "Seb vindt een foto van Calum Ryan leuk."
-            ],
-            "name": [
-              "Seb vindt een foto van Calum Ryan leuk."
-            ],
-            "like-of": [
-              "https://calumryan.com/notes/3637"
-            ],
-            "published": [
-              "2022-05-01T09:24:41+0000"
-            ],
-            "updated": [
-              "2022-05-01T09:24:41+0000"
-            ],
-            "uid": [
-              "https://seblog.nl/2022/121/2"
             ],
             "author": [
               "https://seblog.nl/"

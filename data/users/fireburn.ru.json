@@ -634,6 +634,15 @@
     "micropub_media": [
       "https://fireburn.ru/.kittybox/media"
     ],
+    "indieauth_metadata": [
+      "https://fireburn.ru/.kittybox/indieauth/metadata"
+    ],
+    "authorization_endpoint": [
+      "https://fireburn.ru/.kittybox/indieauth/auth"
+    ],
+    "token_endpoint": [
+      "https://fireburn.ru/.kittybox/indieauth/token"
+    ],
     "me": [
       "https://gitlab.com/vikanezrimaya",
       "https://github.com/vikanezrimaya"
@@ -664,6 +673,21 @@
     "https://fireburn.ru/.kittybox/media": {
       "rels": [
         "micropub_media"
+      ]
+    },
+    "https://fireburn.ru/.kittybox/indieauth/metadata": {
+      "rels": [
+        "indieauth_metadata"
+      ]
+    },
+    "https://fireburn.ru/.kittybox/indieauth/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://fireburn.ru/.kittybox/indieauth/token": {
+      "rels": [
+        "token_endpoint"
       ]
     },
     "https://gitlab.com/vikanezrimaya": {

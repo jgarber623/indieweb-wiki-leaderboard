@@ -195,6 +195,7 @@
     ],
     "stylesheet": [
       "https://andysylvester.com/wp-includes/css/dist/block-library/style.min.css?ver=5.9.4",
+      "https://andysylvester.com/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
       "https://andysylvester.com/wp-content/themes/independent-publisher/fonts/genericons/genericons.css?ver=3.1",
       "https://andysylvester.com/wp-content/themes/independent-publisher/style.css?ver=5.9.4",
       "https://andysylvester.com/wp-admin/admin-ajax.php?action=independent_publisher_customizer_css&ver=1.7"
@@ -207,6 +208,10 @@
     ],
     "wlwmanifest": [
       "https://andysylvester.com/wp-includes/wlwmanifest.xml"
+    ],
+    "me": [
+      "https://github.com/andysylvester",
+      "https://twitter.com/AndySylvester99"
     ],
     "home": [
       "https://andysylvester.com/"
@@ -297,6 +302,13 @@
       "media": "all",
       "type": "text/css"
     },
+    "https://andysylvester.com/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
     "https://andysylvester.com/wp-content/themes/independent-publisher/fonts/genericons/genericons.css?ver=3.1": {
       "rels": [
         "stylesheet"
@@ -335,6 +347,16 @@
         "wlwmanifest"
       ],
       "type": "application/wlwmanifest+xml"
+    },
+    "https://github.com/andysylvester": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://twitter.com/AndySylvester99": {
+      "rels": [
+        "me"
+      ]
     },
     "https://andysylvester.com/": {
       "rels": [

@@ -1,5 +1,94 @@
 {
   "items": [],
-  "rels": {},
-  "rel-urls": {}
+  "rels": {
+    "dns-prefetch": [
+      "https://s.w.org/"
+    ],
+    "alternate": [
+      "https://davidpeach.me/?feed=rss2",
+      "https://davidpeach.me/?feed=comments-rss2"
+    ],
+    "stylesheet": [
+      "https://davidpeach.me/wp-includes/blocks/navigation/style.min.css?ver=6.0.2",
+      "https://davidpeach.me/wp-content/themes/twentytwentytwo/style.css?ver=1.2"
+    ],
+    "https://api.w.org/": [
+      "https://davidpeach.me/index.php?rest_route=/"
+    ],
+    "EditURI": [
+      "https://davidpeach.me/xmlrpc.php?rsd"
+    ],
+    "wlwmanifest": [
+      "https://davidpeach.me/wp-includes/wlwmanifest.xml"
+    ],
+    "home": [
+      "https://davidpeach.me/"
+    ],
+    "nofollow": [
+      "https://wordpress.org/"
+    ]
+  },
+  "rel-urls": {
+    "https://s.w.org/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
+    "https://davidpeach.me/?feed=rss2": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "David Peach » Feed",
+      "type": "application/rss+xml"
+    },
+    "https://davidpeach.me/?feed=comments-rss2": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "David Peach » Comments Feed",
+      "type": "application/rss+xml"
+    },
+    "https://davidpeach.me/wp-includes/blocks/navigation/style.min.css?ver=6.0.2": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://davidpeach.me/wp-content/themes/twentytwentytwo/style.css?ver=1.2": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://davidpeach.me/index.php?rest_route=/": {
+      "rels": [
+        "https://api.w.org/"
+      ]
+    },
+    "https://davidpeach.me/xmlrpc.php?rsd": {
+      "rels": [
+        "EditURI"
+      ],
+      "title": "RSD",
+      "type": "application/rsd+xml"
+    },
+    "https://davidpeach.me/wp-includes/wlwmanifest.xml": {
+      "rels": [
+        "wlwmanifest"
+      ],
+      "type": "application/wlwmanifest+xml"
+    },
+    "https://davidpeach.me/": {
+      "rels": [
+        "home"
+      ],
+      "text": "David Peach"
+    },
+    "https://wordpress.org/": {
+      "rels": [
+        "nofollow"
+      ],
+      "text": "WordPress"
+    }
+  }
 }

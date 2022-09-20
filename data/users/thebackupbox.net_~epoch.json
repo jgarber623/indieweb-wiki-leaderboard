@@ -1,75 +1,43 @@
 {
-  "items": [
-    {
-      "type": [
-        "h-card"
-      ],
-      "properties": {
-        "name": [
-          "epoch"
-        ],
-        "url": [
-          "https://thebackupbox.net/~epoch/"
-        ],
-        "sound": [
-          "http://thebackupbox.net/~epoch/epoch.ogg"
-        ],
-        "photo": [
-          "http://thebackupbox.net/cgi-bin/xface.cgi?IlrD8fxN=HlbdLwwiJkkn=qs4%3EtlW=8)AJX~vDBf8=,%7B4m5iD0Rt@uJMy%25c%5C%5Ez%3E0%25.N$,QXXY)A@GPVl%3CtFo3A%605XDxcUh%7BtZj=]%3Co[%5EGH-Thr%7Cl+F)x~j%25Gb4U!XyXX;?a(hC6@yPNl5V%7B7[$~P=M"
-        ],
-        "note": [
-          "hacks"
-        ]
-      }
-    }
-  ],
+  "items": [],
   "rels": {
-    "me": [
-      "https://tilde.zone/@epoch",
-      "fmrl:epoch@thebackupbox.net",
-      "https://thebackupbox.net/cgi-bin/fmrl-client.cgi?user=epoch"
+    "icon": [
+      "http://thebackupbox.net/favicon.ico"
     ],
-    "authn": [
-      "http://thebackupbox.net/~epoch/pgp.asc",
-      "http://thebackupbox.net/~epoch/pgp.txt"
+    "stylesheet": [
+      "http://thebackupbox.net/style.css"
     ],
-    "pgpkey": [
-      "http://thebackupbox.net/~epoch/pgp.asc",
-      "http://thebackupbox.net/~epoch/pgp.txt"
+    "author": [
+      "acct:epoch@thebackupbox.net"
+    ],
+    "search": [
+      "http://thebackupbox.net/search.xml"
     ]
   },
   "rel-urls": {
-    "https://tilde.zone/@epoch": {
+    "http://thebackupbox.net/favicon.ico": {
       "rels": [
-        "me"
+        "icon"
       ],
-      "text": "Fediverse"
+      "type": "image/png"
     },
-    "http://thebackupbox.net/~epoch/pgp.asc": {
+    "http://thebackupbox.net/style.css": {
       "rels": [
-        "authn",
-        "pgpkey"
+        "stylesheet"
       ],
-      "text": "my public PGP key"
+      "type": "text/css"
     },
-    "http://thebackupbox.net/~epoch/pgp.txt": {
+    "acct:epoch@thebackupbox.net": {
       "rels": [
-        "authn",
-        "pgpkey"
-      ],
-      "text": "(txt version)"
+        "author"
+      ]
     },
-    "fmrl:epoch@thebackupbox.net": {
+    "http://thebackupbox.net/search.xml": {
       "rels": [
-        "me"
+        "search"
       ],
-      "text": "my fmrl uri"
-    },
-    "https://thebackupbox.net/cgi-bin/fmrl-client.cgi?user=epoch": {
-      "rels": [
-        "me"
-      ],
-      "text": "(with fmrl client)"
+      "title": "TBB links",
+      "type": "application/opensearchdescription+xml"
     }
   }
 }
