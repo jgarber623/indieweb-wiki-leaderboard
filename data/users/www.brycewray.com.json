@@ -15,26 +15,24 @@
     }
   ],
   "rels": {
-    "me": [
-      "https://twitter.com/BryceWrayTX",
-      "https://github.com/brycewray",
-      "https://www.brycewray.com/"
-    ],
-    "webmention": [
-      "https://webmention.io/www.brycewray.com/webmention"
-    ],
-    "pingback": [
-      "https://webmention.io/www.brycewray.com/xmlrpc"
-    ],
     "canonical": [
       "https://www.brycewray.com/"
     ],
     "icon": [
-      "https://www.brycewray.com/assets/svg/svgNavIcon_reduced.svg",
-      "https://www.brycewray.com/images/icons/favicon-16x16.png",
+      "https://www.brycewray.com/assets/svg/svgNavIcon_reduced-2021-05-22.svg",
       "https://www.brycewray.com/images/icons/favicon-32x32.png",
+      "https://www.brycewray.com/images/icons/favicon-16x16.png",
+      "https://www.brycewray.com/images/icons/favicon-57x57.png",
       "https://www.brycewray.com/images/icons/favicon-96x96.png",
       "https://www.brycewray.com/images/icons/favicon-196x196.png"
+    ],
+    "alternate": [
+      "https://www.brycewray.com/images/icons/favicon-32x32.png",
+      "https://www.brycewray.com/index.json",
+      "https://www.brycewray.com/index.xml"
+    ],
+    "mask-icon": [
+      "https://www.brycewray.com/assets/svg/svgNavIcon_reduced_black.svg"
     ],
     "apple-touch-icon": [
       "https://www.brycewray.com/images/icons/apple-icon-120x120.png",
@@ -46,64 +44,48 @@
     "shortcut": [
       "https://www.brycewray.com/images/icons/favicon-196x196.png"
     ],
-    "preconnect": [
-      "https://giscus.app/"
-    ],
     "dns-prefetch": [
+      "https://res.cloudinary.com/",
       "https://giscus.app/"
     ],
-    "alternate": [
-      "https://www.brycewray.com/index.xml",
-      "https://www.brycewray.com/index.json"
+    "preconnect": [
+      "https://res.cloudinary.com/",
+      "https://giscus.app/"
     ],
     "preload": [
-      "https://www.brycewray.com/fonts/Inter-3-19_subset_2021-06-18.woff2",
-      "https://www.brycewray.com/css/index.8b0243e5be7866f796b9dff2047b6b40.css"
+      "https://www.brycewray.com/assets/fonts/Inter-3-19_subset_2021-06-18.woff2"
     ],
     "stylesheet": [
-      "https://www.brycewray.com/css/index.8b0243e5be7866f796b9dff2047b6b40.css"
+      "https://www.brycewray.com/styles/index-920919f5.css"
     ],
     "noopener": [
       "https://github.com/brycewray",
       "https://twitter.com/BryceWrayTX",
       "https://mastodon.technology/@BryceWrayTX",
-      "https://www.brycewray.com/index.xml",
-      "https://www.brycewray.com/index.json",
       "https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/dqunpyaeqiizezj6lbdu",
       "https://usefathom.com/ref/ZKHYWX"
+    ],
+    "me": [
+      "https://www.brycewray.com/"
     ]
   },
   "rel-urls": {
-    "https://twitter.com/BryceWrayTX": {
-      "rels": [
-        "me"
-      ]
-    },
-    "https://github.com/brycewray": {
-      "rels": [
-        "me"
-      ]
-    },
-    "https://webmention.io/www.brycewray.com/webmention": {
-      "rels": [
-        "webmention"
-      ]
-    },
-    "https://webmention.io/www.brycewray.com/xmlrpc": {
-      "rels": [
-        "pingback"
-      ]
-    },
     "https://www.brycewray.com/": {
       "rels": [
         "canonical"
       ]
     },
-    "https://www.brycewray.com/assets/svg/svgNavIcon_reduced.svg": {
+    "https://www.brycewray.com/assets/svg/svgNavIcon_reduced-2021-05-22.svg": {
       "rels": [
         "icon"
       ],
       "type": "image/svg+xml"
+    },
+    "https://www.brycewray.com/images/icons/favicon-32x32.png": {
+      "rels": [
+        "alternate",
+        "icon"
+      ]
     },
     "https://www.brycewray.com/images/icons/favicon-16x16.png": {
       "rels": [
@@ -111,7 +93,7 @@
       ],
       "type": "image/png"
     },
-    "https://www.brycewray.com/images/icons/favicon-32x32.png": {
+    "https://www.brycewray.com/images/icons/favicon-57x57.png": {
       "rels": [
         "icon"
       ],
@@ -122,6 +104,11 @@
         "icon"
       ],
       "type": "image/png"
+    },
+    "https://www.brycewray.com/assets/svg/svgNavIcon_reduced_black.svg": {
+      "rels": [
+        "mask-icon"
+      ]
     },
     "https://www.brycewray.com/images/icons/apple-icon-120x120.png": {
       "rels": [
@@ -154,41 +141,56 @@
         "shortcut"
       ]
     },
-    "https://giscus.app/": {
+    "https://res.cloudinary.com/": {
       "rels": [
-        "preconnect"
+        "dns-prefetch"
       ]
     },
-    "https://www.brycewray.com/index.xml": {
+    "https://giscus.app/": {
       "rels": [
-        "alternate"
-      ],
-      "title": "News feed - RSS",
-      "type": "application/rss+xml"
+        "dns-prefetch"
+      ]
     },
     "https://www.brycewray.com/index.json": {
       "rels": [
         "alternate"
       ],
-      "title": "News feed - JSON",
+      "title": "BryceWray.com - JSON",
       "type": "application/feed+json"
     },
-    "https://www.brycewray.com/fonts/Inter-3-19_subset_2021-06-18.woff2": {
+    "https://www.brycewray.com/index.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "BryceWray.com - RSS",
+      "type": "application/rss+xml"
+    },
+    "https://www.brycewray.com/assets/fonts/Inter-3-19_subset_2021-06-18.woff2": {
       "rels": [
         "preload"
       ],
       "type": "font/woff2"
     },
-    "https://www.brycewray.com/css/index.8b0243e5be7866f796b9dff2047b6b40.css": {
+    "https://www.brycewray.com/styles/index-920919f5.css": {
       "rels": [
-        "preload"
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://github.com/brycewray": {
+      "rels": [
+        "noopener"
+      ]
+    },
+    "https://twitter.com/BryceWrayTX": {
+      "rels": [
+        "noopener"
       ]
     },
     "https://mastodon.technology/@BryceWrayTX": {
       "rels": [
         "noopener"
-      ],
-      "title": "Mastodon"
+      ]
     },
     "https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/dqunpyaeqiizezj6lbdu": {
       "rels": [

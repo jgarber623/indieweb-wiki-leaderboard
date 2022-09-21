@@ -12,6 +12,23 @@
           ],
           "properties": {
             "name": [
+              "Some choices for how to host a podcast and create a podcast feed"
+            ],
+            "content": [
+              {
+                "html": "<p>I was talking with <a href=\"http://oldschool.scripting.com/KenSmith/\">Ken Smith</a> about hosting audio files and how to make them available. Here is a summary of the tools/techniques we discussed.</p>\n\n\n\n<p>The key elements of a podcast are the audio file and a RSS feed which points to where the audio file resides. If you are using the Old School <a href=\"http://docserver.scripting.com/drummer/blogging.opml\">blogging </a>tool in <a href=\"http://drummer.scripting.com/\">Drummer</a>, you have a way to create a RSS feed which can reference audio files. The Drummer Change Notes blog has a <a href=\"http://scripting.com/drummer/blog/2021/11/13/141043.html?title=addingAPodcastToYourFeed\">post </a>on specifics for referencing an audio file. Now, the audio file has to be hosted somewhere. If you have an Amazon Web Services account, you could store static audio files there and point to those files. Amazon Web Services has a <a href=\"https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/getting-started-s3.html\">page </a>on how to host a static website (which could just be the audio files, or some website as well).</p>\n\n\n\n<p>The method I use for my podcast <a href=\"http://thinkingabouttoolsforthought.com/\">Thinking About Tools for Thought</a> is to use a standard self-hosted WordPress weblog to create the RSS feed and host the audio file. To my disgust, I could not find a single page with the minimum info needed to add an audio file to a WordPress post, so here is my short list (this assumes you are using a current WordPress install with the Gutenberg block editor):</p>\n\n\n\n<p>1. Create a new post</p>\n\n\n\n<p>2. Add whatever text you want</p>\n\n\n\n<p>3. Click on the Audio block in the Gutenberg block editor and navigate to the audio file on your computer, then select the file. WordPress will display a player in the post.</p>\n\n\n\n<p>4. Publish the post. Once the post is published, you can load the feed URL for the WordPress site (https://site/feed/) (<a href=\"https://thinkingabouttoolsforthought.com/feed/\">example</a>) to a podcast player, and the player will pick up the episodes.</p>",
+                "value": "I was talking with Ken Smith about hosting audio files and how to make them available. Here is a summary of the tools/techniques we discussed.\n\n\n\nThe key elements of a podcast are the audio file and a RSS feed which points to where the audio file resides. If you are using the Old School blogging tool in Drummer, you have a way to create a RSS feed which can reference audio files. The Drummer Change Notes blog has a post on specifics for referencing an audio file. Now, the audio file has to be hosted somewhere. If you have an Amazon Web Services account, you could store static audio files there and point to those files. Amazon Web Services has a page on how to host a static website (which could just be the audio files, or some website as well).\n\n\n\nThe method I use for my podcast Thinking About Tools for Thought is to use a standard self-hosted WordPress weblog to create the RSS feed and host the audio file. To my disgust, I could not find a single page with the minimum info needed to add an audio file to a WordPress post, so here is my short list (this assumes you are using a current WordPress install with the Gutenberg block editor):\n\n\n\n1. Create a new post\n\n\n\n2. Add whatever text you want\n\n\n\n3. Click on the Audio block in the Gutenberg block editor and navigate to the audio file on your computer, then select the file. WordPress will display a player in the post.\n\n\n\n4. Publish the post. Once the post is published, you can load the feed URL for the WordPress site (https://site/feed/) (example) to a podcast player, and the player will pick up the episodes."
+              }
+            ]
+          },
+          "id": "post-2565"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               "Adding value to information"
             ],
             "content": [
@@ -158,23 +175,6 @@
             ]
           },
           "id": "post-2541"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              ""
-            ],
-            "content": [
-              {
-                "html": "<p>When Dave Winer <a href=\"http://scripting.com/2022/08/05.html#a143410\">wrote </a>about his recent trip to <a href=\"https://www.utopiabagelsny.com/\">Utopia Bagels</a>, I decided to take a look at Portland and Salem (Oregon) to see if there were any bagel shops of note, and found this Eater.com <a href=\"https://pdx.eater.com/maps/best-portland-bagels-new-york-style-chewiness\">list </a>of Portland shops, and one <a href=\"https://www.rollingbagelssalem.com/\">shop </a>in Salem. Yummy times ahead!</p>",
-                "value": "When Dave Winer wrote about his recent trip to Utopia Bagels, I decided to take a look at Portland and Salem (Oregon) to see if there were any bagel shops of note, and found this Eater.com list of Portland shops, and one shop in Salem. Yummy times ahead!"
-              }
-            ]
-          },
-          "id": "post-2539"
         }
       ]
     }
@@ -217,6 +217,7 @@
       "https://andysylvester.com/"
     ],
     "bookmark": [
+      "https://andysylvester.com/2022/09/20/some-choices-for-how-to-host-a-podcast-and-create-a-podcast-feed/",
       "https://andysylvester.com/2022/09/13/adding-value-to-information/",
       "https://andysylvester.com/2022/09/07/some-thoughts-on-why-write/",
       "https://andysylvester.com/2022/08/19/2555/",
@@ -225,10 +226,10 @@
       "https://andysylvester.com/2022/08/16/explainers-on-donald-trump-legal-troubles/",
       "https://andysylvester.com/2022/08/14/a-tale-of-pizza-shops-then-and-now/",
       "https://andysylvester.com/2022/08/11/2543/",
-      "https://andysylvester.com/2022/08/10/resources-for-writing/",
-      "https://andysylvester.com/2022/08/10/2539/"
+      "https://andysylvester.com/2022/08/10/resources-for-writing/"
     ],
     "category": [
+      "https://andysylvester.com/category/podcasting/",
       "https://andysylvester.com/category/knowledge-management/",
       "https://andysylvester.com/category/learning/",
       "https://andysylvester.com/category/tools-for-thought/",
@@ -244,6 +245,7 @@
       "https://andysylvester.com/category/opml/"
     ],
     "tag": [
+      "https://andysylvester.com/category/podcasting/",
       "https://andysylvester.com/category/knowledge-management/",
       "https://andysylvester.com/category/learning/",
       "https://andysylvester.com/category/tools-for-thought/",
@@ -363,6 +365,20 @@
         "home"
       ],
       "title": "Andy Sylvester's Web"
+    },
+    "https://andysylvester.com/2022/09/20/some-choices-for-how-to-host-a-podcast-and-create-a-podcast-feed/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to Some choices for how to host a podcast and create a podcast feed",
+      "text": "Some choices for how to host a podcast and create a podcast feed"
+    },
+    "https://andysylvester.com/category/podcasting/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Podcasting"
     },
     "https://andysylvester.com/2022/09/13/adding-value-to-information/": {
       "rels": [
@@ -513,12 +529,6 @@
       ],
       "title": "Permalink to Resources for writing",
       "text": "Resources for writing"
-    },
-    "https://andysylvester.com/2022/08/10/2539/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Permalink to"
     },
     "http://independentpublisher.me/": {
       "rels": [

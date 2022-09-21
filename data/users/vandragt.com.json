@@ -16,6 +16,23 @@
             ],
             "content": [
               {
+                "html": "<p>Drinking coffee is a form of time travelling.</p>\n<div class=\"syndication-links\"></div>",
+                "value": "Drinking coffee is a form of time travelling."
+              }
+            ]
+          },
+          "id": "post-625"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              ""
+            ],
+            "content": [
+              {
                 "html": "<p><a href=\"https://github.com/svandragt/fafi\">Fafi</a> developer builds can now index individual urls, and extract urls from text based files (such as .html). That should make it more interesting if you want to search page content but don’t use Firefox.</p>\n<div class=\"syndication-links\"></div>",
                 "value": "Fafi developer builds can now index individual urls, and extract urls from text based files (such as .html). That should make it more interesting if you want to search page content but don’t use Firefox."
               }
@@ -328,23 +345,6 @@
             ]
           },
           "id": "post-520"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Bye Twitter"
-            ],
-            "content": [
-              {
-                "html": "<p>I’ve deactivated my Twitter account.</p>\n<p>Twitter didn’t like it, you get unceremoniously dumped out of the service with an error message. All your tweets disappear. Like you weren’t welcome anyway, social media with a nasty streak.</p>\n<p>The problem with Twitter is that there’s only space for black/white arguments and replies. It harms compassion and collaboration. It’s algorithms are optimised for making money, not your wellbeing.</p>\n<p>Let’s go make something beautiful instead with all the time saved!</p>\n<div class=\"syndication-links\"></div>",
-                "value": "I’ve deactivated my Twitter account.\nTwitter didn’t like it, you get unceremoniously dumped out of the service with an error message. All your tweets disappear. Like you weren’t welcome anyway, social media with a nasty streak.\nThe problem with Twitter is that there’s only space for black/white arguments and replies. It harms compassion and collaboration. It’s algorithms are optimised for making money, not your wellbeing.\nLet’s go make something beautiful instead with all the time saved!"
-              }
-            ]
-          },
-          "id": "post-508"
         }
       ]
     }
@@ -410,6 +410,7 @@
       "https://vandragt.com/"
     ],
     "bookmark": [
+      "https://vandragt.com/status/625/",
       "https://vandragt.com/project/622/",
       "https://vandragt.com/technology/mail-a-local-privacy-focused-searchable-database/",
       "https://vandragt.com/project/fafi-0-2-2/",
@@ -428,17 +429,16 @@
       "https://vandragt.com/technology/privacy-forest/",
       "https://vandragt.com/technology/how-to-develop-a-library-and-a-project-in-php-concurrently/",
       "https://vandragt.com/technology/daily-clean-trash/",
-      "https://vandragt.com/technology/opensuse-tumbleweed-installation-notes/",
-      "https://vandragt.com/technology/bye-twitter/"
+      "https://vandragt.com/technology/opensuse-tumbleweed-installation-notes/"
     ],
     "category": [
-      "https://vandragt.com/category/project/",
       "https://vandragt.com/category/status/",
+      "https://vandragt.com/category/project/",
       "https://vandragt.com/category/technology/"
     ],
     "tag": [
-      "https://vandragt.com/category/project/",
       "https://vandragt.com/category/status/",
+      "https://vandragt.com/category/project/",
       "https://vandragt.com/category/technology/"
     ],
     "designer": [
@@ -600,6 +600,19 @@
         "micropub"
       ]
     },
+    "https://vandragt.com/status/625/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to"
+    },
+    "https://vandragt.com/category/status/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Status"
+    },
     "https://vandragt.com/project/622/": {
       "rels": [
         "bookmark"
@@ -612,13 +625,6 @@
         "tag"
       ],
       "text": "Project"
-    },
-    "https://vandragt.com/category/status/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "Status"
     },
     "https://vandragt.com/technology/mail-a-local-privacy-focused-searchable-database/": {
       "rels": [
@@ -748,13 +754,6 @@
       ],
       "title": "Permalink to OpenSUSE Tumbleweed Installation Notes",
       "text": "OpenSUSE Tumbleweed Installation Notes"
-    },
-    "https://vandragt.com/technology/bye-twitter/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Permalink to Bye Twitter",
-      "text": "Bye Twitter"
     },
     "http://independentpublisher.me/": {
       "rels": [
