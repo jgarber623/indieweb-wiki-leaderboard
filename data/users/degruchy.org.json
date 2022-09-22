@@ -16,6 +16,29 @@
           ],
           "properties": {
             "name": [
+              "Plumbing the Depths: Rec Mode\n\t\t\t\t\t\t🔗"
+            ],
+            "url": [
+              "https://degruchy.org/#20220921-plumbing-the-depths"
+            ],
+            "published": [
+              "2022-09-21T16:32:24-0400"
+            ],
+            "content": [
+              {
+                "html": "<p>Another article about disused Emacs features\n\t\t\t\t\t\tthat I likely wont use? Youbetcha!</p>\n\t\t\t\t\t<p>Today's bit of archaeology is\n\t\t\t\t\t<code>rec-mode</code>. It's a mode that is meant\n\t\t\t\t\tto be used in conjunction with the <a href=\"https://www.gnu.org/software/recutils/\">GNU\n\t\t\t\t\tRecutils package</a>. These tools generate,\n\t\t\t\t\tmaintain and operate on plain-text database of\n\t\t\t\t\t<em>records</em>. These can be used for a wide\n\t\t\t\t\tvariety of data, from loaned books, to movies\n\t\t\t\t\twatched to <a href=\"https://git.gnunet.org/gana.git/tree/gnu-name-system-record-types/registry.rec\">a\n\t\t\t\t\tsort of DNS-esque databse for GNUNet</a>. Handy\n\t\t\t\t\tstuff. In Emacs, this functionality is exposed\n\t\t\t\t\twhen you open a file with the extension of\n\t\t\t\t\t<code>.rec</code>. By default, you get a read-only\n\t\t\t\t\t<code>narrow'd</code> view of records that you can\n\t\t\t\t\tpage through and manipulate. Typically, you're\n\t\t\t\t\tsupposed to use the command-line tool\n\t\t\t\t\t<code>recins</code> to add items (so that the data\n\t\t\t\t\tintegrity can be maintained), but of course Emacs\n\t\t\t\t\tcan edit that buffer, as well.</p>\n\t\t\t\t\t<p>I am, proverbially, kicking the tires on this\n\t\t\t\t\tmode by making a simple address book that can be\n\t\t\t\t\tqueried for things like email addresses, names and\n\t\t\t\t\tphone numbers. The nice thing about this that\n\t\t\t\t\t<em>it's just text</em>. I can manipulate it,\n\t\t\t\t\tcompress it, encrypt it, slice it, dice it and\n\t\t\t\t\teven store it in a version control system like\n\t\t\t\t\t<code>git</code>. I don't have to worry about the\n\t\t\t\t\tformat going out-of-date, or not being able to\n\t\t\t\t\tread it in the future. Again, <em>it's just\n\t\t\t\t\ttext</em>. Obviously, there are some downsides. A\n\t\t\t\t\tlot of downsides, actually. It's really a nice\n\t\t\t\t\tsolution, though.</p>\n\t\t\t\t\t<p><code>rec-mode</code> has some nice features.\n\t\t\t\t\tYou can query the database and get information\n\t\t\t\t\tabout the contents, right inside Emacs. There is a\n\t\t\t\t\tlot of nice features and because it's text, and\n\t\t\t\t\tbecause the features use standard lisp functions,\n\t\t\t\t\tyou can integrate it with all sorts of other Emacs\n\t\t\t\t\ttooling. Even <code>org-mode</code> has query\n\t\t\t\t\t\tsupport to look up data in your database(s).</p>\n\t\t\t\t\t<p>While there are some rough edges with editing\n\t\t\t\t\tthings, and I had to come up with my own skeletons\n\t\t\t\t\tfor adding new records, I feel like there is a lot\n\t\t\t\t\tthat can be done with this tool.</p>",
+                "value": "Another article about disused Emacs features\n\t\t\t\t\t\tthat I likely wont use? Youbetcha!\n\t\t\t\t\tToday's bit of archaeology is\n\t\t\t\t\trec-mode. It's a mode that is meant\n\t\t\t\t\tto be used in conjunction with the GNU\n\t\t\t\t\tRecutils package. These tools generate,\n\t\t\t\t\tmaintain and operate on plain-text database of\n\t\t\t\t\trecords. These can be used for a wide\n\t\t\t\t\tvariety of data, from loaned books, to movies\n\t\t\t\t\twatched to a\n\t\t\t\t\tsort of DNS-esque databse for GNUNet. Handy\n\t\t\t\t\tstuff. In Emacs, this functionality is exposed\n\t\t\t\t\twhen you open a file with the extension of\n\t\t\t\t\t.rec. By default, you get a read-only\n\t\t\t\t\tnarrow'd view of records that you can\n\t\t\t\t\tpage through and manipulate. Typically, you're\n\t\t\t\t\tsupposed to use the command-line tool\n\t\t\t\t\trecins to add items (so that the data\n\t\t\t\t\tintegrity can be maintained), but of course Emacs\n\t\t\t\t\tcan edit that buffer, as well.\n\t\t\t\t\tI am, proverbially, kicking the tires on this\n\t\t\t\t\tmode by making a simple address book that can be\n\t\t\t\t\tqueried for things like email addresses, names and\n\t\t\t\t\tphone numbers. The nice thing about this that\n\t\t\t\t\tit's just text. I can manipulate it,\n\t\t\t\t\tcompress it, encrypt it, slice it, dice it and\n\t\t\t\t\teven store it in a version control system like\n\t\t\t\t\tgit. I don't have to worry about the\n\t\t\t\t\tformat going out-of-date, or not being able to\n\t\t\t\t\tread it in the future. Again, it's just\n\t\t\t\t\ttext. Obviously, there are some downsides. A\n\t\t\t\t\tlot of downsides, actually. It's really a nice\n\t\t\t\t\tsolution, though.\n\t\t\t\t\trec-mode has some nice features.\n\t\t\t\t\tYou can query the database and get information\n\t\t\t\t\tabout the contents, right inside Emacs. There is a\n\t\t\t\t\tlot of nice features and because it's text, and\n\t\t\t\t\tbecause the features use standard lisp functions,\n\t\t\t\t\tyou can integrate it with all sorts of other Emacs\n\t\t\t\t\ttooling. Even org-mode has query\n\t\t\t\t\t\tsupport to look up data in your database(s).\n\t\t\t\t\tWhile there are some rough edges with editing\n\t\t\t\t\tthings, and I had to come up with my own skeletons\n\t\t\t\t\tfor adding new records, I feel like there is a lot\n\t\t\t\t\tthat can be done with this tool."
+              }
+            ]
+          },
+          "id": "20220921-plumbing-the-depths"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               "I Am so Tired\n\t\t\t\t\t\t🔗"
             ],
             "url": [

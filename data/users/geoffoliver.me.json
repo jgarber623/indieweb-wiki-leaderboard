@@ -32,6 +32,45 @@
           ],
           "properties": {
             "name": [
+              "Shared: The Northern Boys - Party Time - YouTube"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "name": [
+                    "Geoff Oliver"
+                  ],
+                  "url": [
+                    "https://geoffoliver.me/"
+                  ]
+                },
+                "value": "Geoff Oliver"
+              }
+            ],
+            "url": [
+              "https://geoffoliver.me/view-post/6be635a7-1bfb-419e-ab1a-7e2a6488462f"
+            ],
+            "published": [
+              "2022-09-21 17:08:42",
+              "2022-09-21 17:09:05"
+            ],
+            "content": [
+              {
+                "html": "<div class=\"post-content\"><p>Do you want to make love to a sad old man?</p></div>\n<div class=\"post-embeds\"><div class=\"pf-oembed\"><iframe allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen frameborder=\"0\" height=\"315\" src=\"https://www.youtube.com/embed/sLLQFLXz6VE?feature=oembed\" title=\"The Northern Boys - Party Time\" width=\"560\"></iframe></div></div>",
+                "value": "Do you want to make love to a sad old man?"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               "La Junta Trip"
             ],
             "author": [
@@ -1946,45 +1985,6 @@
               {
                 "html": "<div class=\"post-content\">\n<p>I had an idea tonight about being able to truncate text in the middle with CSS and a little bit of \"extra\" markup. This is what I came up with. </p>\n<p>Wanna see a demo? Copy this code into HTML file, crack it open in a browser, and you'll see something like \"Lorem ipsum dolor sit ...neque vitae turpis\" and resize the browser to see it change :-) </p>\n<p>Obviously the extra content isn't ideal, and there's probably a better/more efficient way to do this, but the idea struck me, so this happened. </p>\n<pre><code class=\"language-html\">&lt;style type=\"text/css\"&gt;\n  .top {\n    display: flex;\n    flex-direction: row;\n    max-width: 80%;\n    margin: 30px auto;\n  }\n\n  .trunc {\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: '';\n  }\n\n  .trunc:first-child {\n    width: 70%;\n  }\n\n  .trunc:last-child {\n    text-overflow: ellipsis;\n    direction: rtl;\n    width: 30%;\n  }\n&lt;/style&gt;\n&lt;div class=\"top\"&gt;\n  &lt;div class=\"trunc\"&gt;\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n    Ut vehicula lobortis euismod. Maecenas condimentum,\n    sem sit amet consectetur convallis, quam tellus\n    tincidunt nisl, ut posuere lectus neque vitae turpis.\n  &lt;/div&gt;\n  &lt;div class=\"trunc\"&gt;\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n    Ut vehicula lobortis euismod. Maecenas condimentum,\n    sem sit amet consectetur convallis, quam tellus\n    tincidunt nisl, ut posuere lectus neque vitae turpis.\n  &lt;/div&gt;\n&lt;/div&gt;</code></pre>\n</div>",
                 "value": "I had an idea tonight about being able to truncate text in the middle with CSS and a little bit of \"extra\" markup. This is what I came up with. Wanna see a demo? Copy this code into HTML file, crack it open in a browser, and you'll see something like \"Lorem ipsum dolor sit ...neque vitae turpis\" and resize the browser to see it change :-) Obviously the extra content isn't ideal, and there's probably a better/more efficient way to do this, but the idea struck me, so this happened. <style type=\"text/css\">\n  .top {\n    display: flex;\n    flex-direction: row;\n    max-width: 80%;\n    margin: 30px auto;\n  }\n\n  .trunc {\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: '';\n  }\n\n  .trunc:first-child {\n    width: 70%;\n  }\n\n  .trunc:last-child {\n    text-overflow: ellipsis;\n    direction: rtl;\n    width: 30%;\n  }\n</style>\n<div class=\"top\">\n  <div class=\"trunc\">\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n    Ut vehicula lobortis euismod. Maecenas condimentum,\n    sem sit amet consectetur convallis, quam tellus\n    tincidunt nisl, ut posuere lectus neque vitae turpis.\n  </div>\n  <div class=\"trunc\">\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n    Ut vehicula lobortis euismod. Maecenas condimentum,\n    sem sit amet consectetur convallis, quam tellus\n    tincidunt nisl, ut posuere lectus neque vitae turpis.\n  </div>\n</div>"
-              }
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "I made another thing"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "name": [
-                    "Geoff Oliver"
-                  ],
-                  "url": [
-                    "https://geoffoliver.me/"
-                  ]
-                },
-                "value": "Geoff Oliver"
-              }
-            ],
-            "url": [
-              "https://geoffoliver.me/view-post/61acc6a5-85ba-4e05-b334-ad80600ebc3d"
-            ],
-            "published": [
-              "2020-10-05 02:39:42",
-              "2020-10-05 02:39:52"
-            ],
-            "content": [
-              {
-                "html": "<div class=\"post-content\"><p>I needed a dynamic DNS service, because Comcast apparently can't give me a static IP if I buy my own modem (bullshit), and I know there's free options, but I thought \"how hard could it be?\" It wasn't that bad. <a href=\"https://ns3.me/\">Check it out.</a></p></div>",
-                "value": "I needed a dynamic DNS service, because Comcast apparently can't give me a static IP if I buy my own modem (bullshit), and I know there's free options, but I thought \"how hard could it be?\" It wasn't that bad. Check it out."
               }
             ]
           }

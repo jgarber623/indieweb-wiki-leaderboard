@@ -4,18 +4,17 @@
     "canonical": [
       "https://rodriguezcommaj.com/"
     ],
+    "alternate": [
+      "https://rodriguezcommaj.com/feed.xml"
+    ],
     "icon": [
-      "https://rodriguezcommaj.com/img/favicon.png"
+      "https://rodriguezcommaj.com/favicon.png"
     ],
     "shortcut": [
-      "https://rodriguezcommaj.com/img/favicon.png"
+      "https://rodriguezcommaj.com/favicon.png"
     ],
     "stylesheet": [
-      "https://rodriguezcommaj.com/css/index.css"
-    ],
-    "alternate": [
-      "https://rodriguezcommaj.com/feed/feed.xml",
-      "https://rodriguezcommaj.com/feed/feed.json"
+      "https://rodriguezcommaj.com/css/styles.css"
     ]
   },
   "rel-urls": {
@@ -24,31 +23,24 @@
         "canonical"
       ]
     },
-    "https://rodriguezcommaj.com/img/favicon.png": {
+    "https://rodriguezcommaj.com/feed.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "RodriguezCommaJ RSS",
+      "type": "application/rss+xml"
+    },
+    "https://rodriguezcommaj.com/favicon.png": {
       "rels": [
         "icon",
         "shortcut"
       ],
       "type": "image/png"
     },
-    "https://rodriguezcommaj.com/css/index.css": {
+    "https://rodriguezcommaj.com/css/styles.css": {
       "rels": [
         "stylesheet"
       ]
-    },
-    "https://rodriguezcommaj.com/feed/feed.xml": {
-      "rels": [
-        "alternate"
-      ],
-      "title": "Jason Rodriguez",
-      "type": "application/atom+xml"
-    },
-    "https://rodriguezcommaj.com/feed/feed.json": {
-      "rels": [
-        "alternate"
-      ],
-      "title": "Jason Rodriguez",
-      "type": "application/json"
     }
   }
 }
