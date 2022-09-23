@@ -5,8 +5,17 @@
         "h-card"
       ],
       "properties": {
-        "name": [
-          "Jacob Densford"
+        "url": [
+          "https://jacobdensford.com/"
+        ],
+        "logo": [
+          "https://jacobdensford.com/images/icon-full.png"
+        ],
+        "photo": [
+          "https://jacobdensford.com/images/icon-full.png"
+        ],
+        "email": [
+          "mailto:contact@jacobdensford.com"
         ]
       }
     },
@@ -15,24 +24,16 @@
         "h-card"
       ],
       "properties": {
-        "url": [
-          "https://jacobdensford.com/"
-        ],
-        "email": [
-          "mailto:contact@jacobdensford.com"
-        ],
-        "logo": [
-          "https://jacobdensford.com/images/icon-full.png"
-        ],
-        "photo": [
-          "https://jacobdensford.com/images/icon-full.png"
+        "name": [
+          "Jacob Densford"
         ]
       }
     }
   ],
   "rels": {
     "stylesheet": [
-      "https://jacobdensford.com/css/styles.css"
+      "https://jacobdensford.com/css/variables.css",
+      "https://jacobdensford.com/css/styles-ef.css"
     ],
     "icon": [
       "https://jacobdensford.com/favicon.ico",
@@ -52,14 +53,19 @@
     ],
     "me": [
       "https://jacobdensford.com/",
-      "mailto:contact@jacobdensford.com",
       "https://post.lurk.org/@jacobdensford",
       "https://github.com/jacobdensford",
-      "https://jacobdensford.com/images/icon-full.png"
+      "https://jacobdensford.com/images/icon-full.png",
+      "mailto:contact@jacobdensford.com"
     ]
   },
   "rel-urls": {
-    "https://jacobdensford.com/css/styles.css": {
+    "https://jacobdensford.com/css/variables.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://jacobdensford.com/css/styles-ef.css": {
       "rels": [
         "stylesheet"
       ]
@@ -114,11 +120,6 @@
         "me"
       ]
     },
-    "mailto:contact@jacobdensford.com": {
-      "rels": [
-        "me"
-      ]
-    },
     "https://post.lurk.org/@jacobdensford": {
       "rels": [
         "me"
@@ -130,6 +131,11 @@
       ]
     },
     "https://jacobdensford.com/images/icon-full.png": {
+      "rels": [
+        "me"
+      ]
+    },
+    "mailto:contact@jacobdensford.com": {
       "rels": [
         "me"
       ]

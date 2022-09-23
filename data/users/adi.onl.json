@@ -1,79 +1,457 @@
 {
-  "items": [
-    {
-      "type": [
-        "h-card"
-      ],
-      "properties": {
-        "nickname": [
-          "adi"
-        ],
-        "url": [
-          "https://adi.onl/"
-        ]
-      }
-    }
-  ],
+  "items": [],
   "rels": {
-    "authorization_endpoint": [
-      "https://indieauth.com/auth"
+    "profile": [
+      "https://gmpg.org/xfn/11"
     ],
-    "token_endpoint": [
-      "https://tokens.indieauth.com/token"
+    "dns-prefetch": [
+      "https://fonts.googleapis.com/",
+      "https://s.w.org/"
     ],
-    "webmention": [
-      "https://webmention.io/adi.onl/webmention"
+    "alternate": [
+      "https://brokerfinanciar.ro/index.php/feed/",
+      "https://brokerfinanciar.ro/index.php/comments/feed/",
+      "https://brokerfinanciar.ro/index.php/wp-json/wp/v2/pages/1057",
+      "https://brokerfinanciar.ro/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbrokerfinanciar.ro%2F",
+      "https://brokerfinanciar.ro/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbrokerfinanciar.ro%2F&format=xml"
     ],
-    "pingback": [
-      "https://webmention.io/adi.onl/xmlrpc"
+    "stylesheet": [
+      "https://brokerfinanciar.ro/wp-includes/css/dist/block-library/style.min.css?ver=5.5.5",
+      "https://brokerfinanciar.ro/wp-includes/css/dist/block-library/theme.min.css?ver=5.5.5",
+      "https://brokerfinanciar.ro/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.4.2",
+      "https://brokerfinanciar.ro/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-public.css?ver=2.0.5",
+      "https://brokerfinanciar.ro/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-gdpr.css?ver=2.0.5",
+      "https://brokerfinanciar.ro/wp-content/plugins/ultimate-social-media-icons/css/sfsi-style.css?ver=5.5.5",
+      "https://brokerfinanciar.ro/wp-content/themes/eastend/assets/css/bootstrap.min.css?ver=5.5.5",
+      "https://fonts.googleapis.com/css?family=Nunito%3A300%2C400%2C500%2C600%2C700%2C800%2C900%7CMuli%3A300%2C400%2C600%2C700%2C800%2C900&subset=latin%2Clatin-ext&ver=5.5.5",
+      "https://brokerfinanciar.ro/wp-content/themes/eastend/venobox/venobox.css?ver=5.5.5",
+      "https://brokerfinanciar.ro/wp-content/themes/eastend/assets/css/nivo-slider.css?ver=5.5.5",
+      "https://brokerfinanciar.ro/wp-content/themes/eastend/assets/css/animate.css?ver=5.5.5",
+      "https://brokerfinanciar.ro/wp-content/themes/eastend/assets/css/slick.css?ver=5.5.5",
+      "https://brokerfinanciar.ro/wp-content/themes/eastend/assets/css/owl.carousel.css?ver=5.5.5",
+      "https://brokerfinanciar.ro/wp-content/themes/eastend/assets/css/owl.transitions.css?ver=5.5.5",
+      "https://brokerfinanciar.ro/wp-content/themes/eastend/assets/fontawesome/css/all.css?ver=5.5.5",
+      "https://brokerfinanciar.ro/wp-content/themes/eastend/assets/css/meanmenu.css?ver=5.5.5",
+      "https://brokerfinanciar.ro/wp-content/themes/eastend/assets/css/flaticon.css?ver=5.5.5",
+      "https://brokerfinanciar.ro/wp-content/themes/eastend/assets/css/simple-line-icons.css?ver=5.5.5",
+      "https://brokerfinanciar.ro/wp-content/themes/eastend/assets/css/eastend-font-icon.css?ver=5.5.5",
+      "https://brokerfinanciar.ro/wp-content/themes/eastend/assets/css/theme-default.css?ver=5.5.5",
+      "https://brokerfinanciar.ro/wp-content/themes/eastend/assets/css/widget.css?ver=5.5.5",
+      "https://brokerfinanciar.ro/wp-content/themes/eastend/assets/css/unittest.css?ver=5.5.5",
+      "https://brokerfinanciar.ro/wp-content/themes/eastend/style.css?ver=5.5.5",
+      "https://brokerfinanciar.ro/wp-content/themes/eastend/assets/css/responsive.css?ver=5.5.5",
+      "https://brokerfinanciar.ro/wp-content/plugins/creame-whatsapp-me/public/css/joinchat.min.css?ver=4.1.15",
+      "https://brokerfinanciar.ro/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.12.0",
+      "https://brokerfinanciar.ro/wp-content/plugins/elementor/assets/css/frontend-legacy.min.css?ver=3.4.0",
+      "https://brokerfinanciar.ro/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.4.0",
+      "https://brokerfinanciar.ro/wp-content/uploads/elementor/css/post-3593.css?ver=1626252413",
+      "https://brokerfinanciar.ro/wp-content/uploads/elementor/css/global.css?ver=1626252414",
+      "https://brokerfinanciar.ro/wp-content/uploads/elementor/css/post-1057.css?ver=1626275856",
+      "https://brokerfinanciar.ro/wp-content/plugins/carousel-slider/assets/css/frontend.css?ver=1.10.2",
+      "https://brokerfinanciar.ro/wp-content/themes/eastend/assets/css/em-breadcrumb.css?ver=5.5.5",
+      "https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&display=auto&subset=latin-ext&ver=5.5.5",
+      "https://brokerfinanciar.ro/wp-content/plugins/smart-slider-3/Public/SmartSlider3/Application/Frontend/Assets/dist/smartslider.min.css?ver=bc3b14c4",
+      "https://fonts.googleapis.com/css?display=swap&family=Raleway:300,400&subset=latin",
+      "https://brokerfinanciar.ro/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.4.0"
     ],
-    "microsub": [
-      "https://aperture.p3k.io/microsub/686"
+    "https://api.w.org/": [
+      "https://brokerfinanciar.ro/index.php/wp-json/"
+    ],
+    "EditURI": [
+      "https://brokerfinanciar.ro/xmlrpc.php?rsd"
+    ],
+    "wlwmanifest": [
+      "https://brokerfinanciar.ro/wp-includes/wlwmanifest.xml"
     ],
     "canonical": [
-      "https://adi.onl/"
+      "https://brokerfinanciar.ro/"
     ],
-    "me": [
-      "https://adi.onl/",
-      "mailto:adrian.emil.grigore@gmail.com"
+    "shortlink": [
+      "https://brokerfinanciar.ro/"
+    ],
+    "icon": [
+      "https://brokerfinanciar.ro/wp-content/uploads/2020/05/Broker2.ico"
+    ],
+    "apple-touch-icon": [
+      "https://brokerfinanciar.ro/wp-content/uploads/2020/05/Broker2.ico"
+    ],
+    "noopener": [
+      "https://brokerfinanciar.ro/index.php/services/",
+      "https://brokerfinanciar.ro/index.php/country-details/",
+      "https://brokerfinanciar.ro/index.php/coaching-list-2/",
+      "https://join.chat/en/powered/?site=brokerfinanciar.ro&url=https%3A%2F%2Fbrokerfinanciar.ro"
+    ],
+    "noreferrer": [
+      "https://brokerfinanciar.ro/index.php/services/",
+      "https://brokerfinanciar.ro/index.php/country-details/",
+      "https://brokerfinanciar.ro/index.php/coaching-list-2/"
+    ],
+    "nofollow": [
+      "https://join.chat/en/powered/?site=brokerfinanciar.ro&url=https%3A%2F%2Fbrokerfinanciar.ro"
     ]
   },
   "rel-urls": {
-    "https://indieauth.com/auth": {
+    "https://gmpg.org/xfn/11": {
       "rels": [
-        "authorization_endpoint"
+        "profile"
       ]
     },
-    "https://tokens.indieauth.com/token": {
+    "https://fonts.googleapis.com/": {
       "rels": [
-        "token_endpoint"
+        "dns-prefetch"
       ]
     },
-    "https://webmention.io/adi.onl/webmention": {
+    "https://s.w.org/": {
       "rels": [
-        "webmention"
+        "dns-prefetch"
       ]
     },
-    "https://webmention.io/adi.onl/xmlrpc": {
+    "https://brokerfinanciar.ro/index.php/feed/": {
       "rels": [
-        "pingback"
+        "alternate"
+      ],
+      "title": "brokerfinanciar.ro » Flux",
+      "type": "application/rss+xml"
+    },
+    "https://brokerfinanciar.ro/index.php/comments/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "brokerfinanciar.ro » Flux comentarii",
+      "type": "application/rss+xml"
+    },
+    "https://brokerfinanciar.ro/wp-includes/css/dist/block-library/style.min.css?ver=5.5.5": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://brokerfinanciar.ro/wp-includes/css/dist/block-library/theme.min.css?ver=5.5.5": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://brokerfinanciar.ro/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.4.2": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://brokerfinanciar.ro/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-public.css?ver=2.0.5": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://brokerfinanciar.ro/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-gdpr.css?ver=2.0.5": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://brokerfinanciar.ro/wp-content/plugins/ultimate-social-media-icons/css/sfsi-style.css?ver=5.5.5": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://brokerfinanciar.ro/wp-content/themes/eastend/assets/css/bootstrap.min.css?ver=5.5.5": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://fonts.googleapis.com/css?family=Nunito%3A300%2C400%2C500%2C600%2C700%2C800%2C900%7CMuli%3A300%2C400%2C600%2C700%2C800%2C900&subset=latin%2Clatin-ext&ver=5.5.5": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://brokerfinanciar.ro/wp-content/themes/eastend/venobox/venobox.css?ver=5.5.5": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://brokerfinanciar.ro/wp-content/themes/eastend/assets/css/nivo-slider.css?ver=5.5.5": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://brokerfinanciar.ro/wp-content/themes/eastend/assets/css/animate.css?ver=5.5.5": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://brokerfinanciar.ro/wp-content/themes/eastend/assets/css/slick.css?ver=5.5.5": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://brokerfinanciar.ro/wp-content/themes/eastend/assets/css/owl.carousel.css?ver=5.5.5": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://brokerfinanciar.ro/wp-content/themes/eastend/assets/css/owl.transitions.css?ver=5.5.5": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://brokerfinanciar.ro/wp-content/themes/eastend/assets/fontawesome/css/all.css?ver=5.5.5": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://brokerfinanciar.ro/wp-content/themes/eastend/assets/css/meanmenu.css?ver=5.5.5": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://brokerfinanciar.ro/wp-content/themes/eastend/assets/css/flaticon.css?ver=5.5.5": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://brokerfinanciar.ro/wp-content/themes/eastend/assets/css/simple-line-icons.css?ver=5.5.5": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://brokerfinanciar.ro/wp-content/themes/eastend/assets/css/eastend-font-icon.css?ver=5.5.5": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://brokerfinanciar.ro/wp-content/themes/eastend/assets/css/theme-default.css?ver=5.5.5": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://brokerfinanciar.ro/wp-content/themes/eastend/assets/css/widget.css?ver=5.5.5": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://brokerfinanciar.ro/wp-content/themes/eastend/assets/css/unittest.css?ver=5.5.5": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://brokerfinanciar.ro/wp-content/themes/eastend/style.css?ver=5.5.5": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://brokerfinanciar.ro/wp-content/themes/eastend/assets/css/responsive.css?ver=5.5.5": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://brokerfinanciar.ro/wp-content/plugins/creame-whatsapp-me/public/css/joinchat.min.css?ver=4.1.15": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://brokerfinanciar.ro/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.12.0": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://brokerfinanciar.ro/wp-content/plugins/elementor/assets/css/frontend-legacy.min.css?ver=3.4.0": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://brokerfinanciar.ro/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.4.0": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://brokerfinanciar.ro/wp-content/uploads/elementor/css/post-3593.css?ver=1626252413": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://brokerfinanciar.ro/wp-content/uploads/elementor/css/global.css?ver=1626252414": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://brokerfinanciar.ro/wp-content/uploads/elementor/css/post-1057.css?ver=1626275856": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://brokerfinanciar.ro/wp-content/plugins/carousel-slider/assets/css/frontend.css?ver=1.10.2": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://brokerfinanciar.ro/wp-content/themes/eastend/assets/css/em-breadcrumb.css?ver=5.5.5": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&display=auto&subset=latin-ext&ver=5.5.5": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://brokerfinanciar.ro/wp-content/plugins/smart-slider-3/Public/SmartSlider3/Application/Frontend/Assets/dist/smartslider.min.css?ver=bc3b14c4": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://fonts.googleapis.com/css?display=swap&family=Raleway:300,400&subset=latin": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://brokerfinanciar.ro/index.php/wp-json/": {
+      "rels": [
+        "https://api.w.org/"
       ]
     },
-    "https://aperture.p3k.io/microsub/686": {
+    "https://brokerfinanciar.ro/index.php/wp-json/wp/v2/pages/1057": {
       "rels": [
-        "microsub"
-      ]
+        "alternate"
+      ],
+      "type": "application/json"
     },
-    "https://adi.onl/": {
+    "https://brokerfinanciar.ro/xmlrpc.php?rsd": {
+      "rels": [
+        "EditURI"
+      ],
+      "title": "RSD",
+      "type": "application/rsd+xml"
+    },
+    "https://brokerfinanciar.ro/wp-includes/wlwmanifest.xml": {
+      "rels": [
+        "wlwmanifest"
+      ],
+      "type": "application/wlwmanifest+xml"
+    },
+    "https://brokerfinanciar.ro/": {
       "rels": [
         "canonical"
       ]
     },
-    "mailto:adrian.emil.grigore@gmail.com": {
+    "https://brokerfinanciar.ro/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbrokerfinanciar.ro%2F": {
       "rels": [
-        "me"
+        "alternate"
       ],
-      "text": "\nAdrian Emil Grigore\n"
+      "type": "application/json+oembed"
+    },
+    "https://brokerfinanciar.ro/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbrokerfinanciar.ro%2F&format=xml": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "text/xml+oembed"
+    },
+    "https://brokerfinanciar.ro/wp-content/uploads/2020/05/Broker2.ico": {
+      "rels": [
+        "icon"
+      ]
+    },
+    "https://brokerfinanciar.ro/index.php/services/": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "Locuri de munca strainatate"
+    },
+    "https://brokerfinanciar.ro/index.php/country-details/": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "Radiere din biroul de credit"
+    },
+    "https://brokerfinanciar.ro/index.php/coaching-list-2/": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "Recuperari taxe strainatate"
+    },
+    "https://join.chat/en/powered/?site=brokerfinanciar.ro&url=https%3A%2F%2Fbrokerfinanciar.ro": {
+      "rels": [
+        "nofollow",
+        "noopener"
+      ],
+      "text": "\n\t\t\t\t\t\tPowered by Join.chat\n\t\t\t\t\t"
+    },
+    "https://brokerfinanciar.ro/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.4.0": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
     }
   }
 }
