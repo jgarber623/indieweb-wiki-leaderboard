@@ -32,6 +32,44 @@
           ],
           "properties": {
             "name": [
+              "Shared: San Francisco passes controversial surveillance plan"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "name": [
+                    "Geoff Oliver"
+                  ],
+                  "url": [
+                    "https://geoffoliver.me/"
+                  ]
+                },
+                "value": "Geoff Oliver"
+              }
+            ],
+            "url": [
+              "https://geoffoliver.me/view-post/ebb5e461-cd52-4e18-820d-17840a15f78c"
+            ],
+            "published": [
+              "2022-09-23 22:11:48"
+            ],
+            "content": [
+              {
+                "html": "<div class=\"post-content\"><p>I don't see how this could go terribly wrong.</p></div>",
+                "value": "I don't see how this could go terribly wrong."
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               "Shared: The Northern Boys - Party Time - YouTube"
             ],
             "author": [
@@ -1946,45 +1984,6 @@
               {
                 "html": "<div class=\"post-content\"><p>You remember those books you read when you were a kid? The ones that let you decide how to continue the story? I can't remember what they're called, but I made a thing that lets you read (and write) stories like that on the internet. Check it out. <a href=\"https://plotfork.com/\">https://plotfork.com/</a></p></div>",
                 "value": "You remember those books you read when you were a kid? The ones that let you decide how to continue the story? I can't remember what they're called, but I made a thing that lets you read (and write) stories like that on the internet. Check it out. https://plotfork.com/"
-              }
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Truncate text in the middle with CSS"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "name": [
-                    "Geoff Oliver"
-                  ],
-                  "url": [
-                    "https://geoffoliver.me/"
-                  ]
-                },
-                "value": "Geoff Oliver"
-              }
-            ],
-            "url": [
-              "https://geoffoliver.me/view-post/d1504c77-ef07-4218-b80c-6fbe915d322a"
-            ],
-            "published": [
-              "2021-02-09 06:14:09",
-              "2021-02-09 06:16:14"
-            ],
-            "content": [
-              {
-                "html": "<div class=\"post-content\">\n<p>I had an idea tonight about being able to truncate text in the middle with CSS and a little bit of \"extra\" markup. This is what I came up with. </p>\n<p>Wanna see a demo? Copy this code into HTML file, crack it open in a browser, and you'll see something like \"Lorem ipsum dolor sit ...neque vitae turpis\" and resize the browser to see it change :-) </p>\n<p>Obviously the extra content isn't ideal, and there's probably a better/more efficient way to do this, but the idea struck me, so this happened. </p>\n<pre><code class=\"language-html\">&lt;style type=\"text/css\"&gt;\n  .top {\n    display: flex;\n    flex-direction: row;\n    max-width: 80%;\n    margin: 30px auto;\n  }\n\n  .trunc {\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: '';\n  }\n\n  .trunc:first-child {\n    width: 70%;\n  }\n\n  .trunc:last-child {\n    text-overflow: ellipsis;\n    direction: rtl;\n    width: 30%;\n  }\n&lt;/style&gt;\n&lt;div class=\"top\"&gt;\n  &lt;div class=\"trunc\"&gt;\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n    Ut vehicula lobortis euismod. Maecenas condimentum,\n    sem sit amet consectetur convallis, quam tellus\n    tincidunt nisl, ut posuere lectus neque vitae turpis.\n  &lt;/div&gt;\n  &lt;div class=\"trunc\"&gt;\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n    Ut vehicula lobortis euismod. Maecenas condimentum,\n    sem sit amet consectetur convallis, quam tellus\n    tincidunt nisl, ut posuere lectus neque vitae turpis.\n  &lt;/div&gt;\n&lt;/div&gt;</code></pre>\n</div>",
-                "value": "I had an idea tonight about being able to truncate text in the middle with CSS and a little bit of \"extra\" markup. This is what I came up with. Wanna see a demo? Copy this code into HTML file, crack it open in a browser, and you'll see something like \"Lorem ipsum dolor sit ...neque vitae turpis\" and resize the browser to see it change :-) Obviously the extra content isn't ideal, and there's probably a better/more efficient way to do this, but the idea struck me, so this happened. <style type=\"text/css\">\n  .top {\n    display: flex;\n    flex-direction: row;\n    max-width: 80%;\n    margin: 30px auto;\n  }\n\n  .trunc {\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: '';\n  }\n\n  .trunc:first-child {\n    width: 70%;\n  }\n\n  .trunc:last-child {\n    text-overflow: ellipsis;\n    direction: rtl;\n    width: 30%;\n  }\n</style>\n<div class=\"top\">\n  <div class=\"trunc\">\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n    Ut vehicula lobortis euismod. Maecenas condimentum,\n    sem sit amet consectetur convallis, quam tellus\n    tincidunt nisl, ut posuere lectus neque vitae turpis.\n  </div>\n  <div class=\"trunc\">\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n    Ut vehicula lobortis euismod. Maecenas condimentum,\n    sem sit amet consectetur convallis, quam tellus\n    tincidunt nisl, ut posuere lectus neque vitae turpis.\n  </div>\n</div>"
               }
             ]
           }

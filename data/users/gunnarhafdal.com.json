@@ -1,5 +1,167 @@
 {
   "items": [],
-  "rels": {},
-  "rel-urls": {}
+  "rels": {
+    "preload": [
+      "https://www.gunnarhafdal.com/app.min.css",
+      "https://www.gunnarhafdal.com/theme.png",
+      "https://www.gunnarhafdal.com/twitter.svg",
+      "https://www.gunnarhafdal.com/github.svg",
+      "https://www.gunnarhafdal.com/instagram.svg",
+      "https://www.gunnarhafdal.com/microdotblog.svg",
+      "https://www.gunnarhafdal.com/buymeacoffee.svg"
+    ],
+    "stylesheet": [
+      "https://www.gunnarhafdal.com/app.min.css",
+      "https://www.gunnarhafdal.com/custom.css?1663965740"
+    ],
+    "icon": [
+      "https://micro.blog/gunnsi/favicon.png"
+    ],
+    "shortcut": [
+      "https://micro.blog/gunnsi/favicon.png"
+    ],
+    "apple-touch-icon": [
+      "https://micro.blog/gunnsi/favicon.png"
+    ],
+    "alternate": [
+      "https://www.gunnarhafdal.com/feed.xml",
+      "https://www.gunnarhafdal.com/feed.json"
+    ],
+    "me": [
+      "https://micro.blog/gunnsi"
+    ],
+    "authorization_endpoint": [
+      "https://micro.blog/indieauth/auth"
+    ],
+    "token_endpoint": [
+      "https://micro.blog/indieauth/token"
+    ],
+    "micropub": [
+      "https://micro.blog/micropub"
+    ],
+    "microsub": [
+      "https://micro.blog/microsub"
+    ],
+    "webmention": [
+      "https://micro.blog/webmention"
+    ],
+    "subscribe": [
+      "https://micro.blog/users/follow"
+    ],
+    "noopener": [
+      "https://gohugo.io/",
+      "https://micro.blog/"
+    ]
+  },
+  "rel-urls": {
+    "https://www.gunnarhafdal.com/app.min.css": {
+      "rels": [
+        "preload",
+        "stylesheet"
+      ]
+    },
+    "https://www.gunnarhafdal.com/custom.css?1663965740": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://www.gunnarhafdal.com/theme.png": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://www.gunnarhafdal.com/twitter.svg": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://www.gunnarhafdal.com/github.svg": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://www.gunnarhafdal.com/instagram.svg": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://www.gunnarhafdal.com/microdotblog.svg": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://www.gunnarhafdal.com/buymeacoffee.svg": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://micro.blog/gunnsi/favicon.png": {
+      "rels": [
+        "icon",
+        "shortcut"
+      ],
+      "type": "image/x-icon"
+    },
+    "https://www.gunnarhafdal.com/feed.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Gunnar Hafdal",
+      "type": "application/rss+xml"
+    },
+    "https://www.gunnarhafdal.com/feed.json": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Gunnar Hafdal",
+      "type": "application/json"
+    },
+    "https://micro.blog/gunnsi": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://micro.blog/indieauth/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://micro.blog/indieauth/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://micro.blog/micropub": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://micro.blog/microsub": {
+      "rels": [
+        "microsub"
+      ]
+    },
+    "https://micro.blog/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://micro.blog/users/follow": {
+      "rels": [
+        "subscribe"
+      ]
+    },
+    "https://gohugo.io/": {
+      "rels": [
+        "noopener"
+      ],
+      "text": "Hugo️️"
+    },
+    "https://micro.blog/": {
+      "rels": [
+        "noopener"
+      ],
+      "text": "Micro.blog"
+    }
+  }
 }
