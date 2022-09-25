@@ -13,6 +13,11 @@
         "photo": [
           {
             "value": "https://adactio.com/images/photo-150.jpg",
+            "srcset": {
+              "600w": "https://adactio.com/images/photo-600.jpg",
+              "300w": "https://adactio.com/images/photo-300.jpg",
+              "150w": "https://adactio.com/images/photo-150.jpg"
+            },
             "alt": "Jeremy Keith"
           }
         ],
@@ -35,9 +40,52 @@
         "h-entry"
       ],
       "properties": {
+        "content": [
+          {
+            "html": "<p>Reading Clay’s Ark by Octavia E. Butler.</p>",
+            "value": "Reading Clay’s Ark by Octavia E. Butler."
+          }
+        ],
+        "name": [
+          "Reading Clay’s Ark by Octavia E. Butler."
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "50.83242128"
+              ],
+              "longitude": [
+                "-0.11811878"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/notes/19475"
+        ],
+        "published": [
+          "2022-09-24T15:32:07Z"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
         "photo": [
           {
             "value": "https://adactio.com/images/uploaded/19473/small.jpg",
+            "srcset": {
+              "320w": "https://adactio.com/images/uploaded/19473/small.jpg",
+              "480w": "https://adactio.com/images/uploaded/19473/medium.jpg",
+              "800w": "https://adactio.com/images/uploaded/19473/large.jpg"
+            },
             "alt": "Checked in at Jolly Brewer. A full house of musicians for tonight’s session — with Jessica"
           }
         ],
@@ -501,6 +549,11 @@
         "photo": [
           {
             "value": "https://adactio.com/images/uploaded/19463/small.jpg",
+            "srcset": {
+              "320w": "https://adactio.com/images/uploaded/19463/small.jpg",
+              "480w": "https://adactio.com/images/uploaded/19463/medium.jpg",
+              "800w": "https://adactio.com/images/uploaded/19463/large.jpg"
+            },
             "alt": "Checked in at The Bugle Inn. Playing some tunes with Rowan"
           }
         ],
@@ -856,6 +909,11 @@
         "photo": [
           {
             "value": "https://adactio.com/images/uploaded/19453/small.jpg",
+            "srcset": {
+              "320w": "https://adactio.com/images/uploaded/19453/small.jpg",
+              "480w": "https://adactio.com/images/uploaded/19453/medium.jpg",
+              "800w": "https://adactio.com/images/uploaded/19453/large.jpg"
+            },
             "alt": "A group of musicians gathered around a table in a pub playing on fiddles and accordions."
           }
         ],
@@ -994,53 +1052,6 @@
           "popularity",
           "frontend",
           "development"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "photo": [
-          {
-            "value": "https://adactio.com/images/uploaded/19448/small.jpg",
-            "alt": "John playing whistle and James playing a Greek bouzouki in the corner of a pub."
-          }
-        ],
-        "content": [
-          {
-            "html": "<p>Enjoying the classic Mary Bergin/Alec Finn  combo of whistle and bouzouki.</p>",
-            "value": "Enjoying the classic Mary Bergin/Alec Finn  combo of whistle and bouzouki."
-          }
-        ],
-        "name": [
-          "Enjoying the classic Mary Bergin/Alec Finn  combo of whistle and bouzouki."
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.82808611"
-              ],
-              "longitude": [
-                "-0.12851667"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/notes/19448"
-        ],
-        "published": [
-          "2022-09-13T21:52:24Z"
-        ],
-        "syndication": [
-          "https://www.instagram.com/p/CidnL8BN8bB/"
         ]
       }
     },
@@ -1784,6 +1795,7 @@
       "https://adactio.com/includes/css/print.css"
     ],
     "bookmark": [
+      "https://adactio.com/notes/19475",
       "https://adactio.com/notes/19473",
       "https://adactio.com/links/19472",
       "https://adactio.com/links/19471",
@@ -1802,8 +1814,7 @@
       "https://adactio.com/links/19454",
       "https://adactio.com/notes/19453",
       "https://adactio.com/links/19450",
-      "https://adactio.com/links/19449",
-      "https://adactio.com/notes/19448"
+      "https://adactio.com/links/19449"
     ],
     "syndication": [
       "https://www.instagram.com/p/CiyJCSWq639/",
@@ -1814,8 +1825,7 @@
       "https://adactio.medium.com/85625837821e",
       "https://twitter.com/adactio/status/1570399847957553152",
       "https://twitter.com/adactio/status/1570319480735281152",
-      "https://www.instagram.com/p/CihQn3htzfS/",
-      "https://www.instagram.com/p/CidnL8BN8bB/"
+      "https://www.instagram.com/p/CihQn3htzfS/"
     ],
     "tag": [
       "https://adactio.com/tags/performance",
@@ -2302,6 +2312,12 @@
         "me"
       ],
       "text": "music"
+    },
+    "https://adactio.com/notes/19475": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n3:32pm\n\n"
     },
     "https://adactio.com/notes/19473": {
       "rels": [
@@ -3040,18 +3056,6 @@
         "tag"
       ],
       "text": "popularity"
-    },
-    "https://adactio.com/notes/19448": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n9:52pm\n\n"
-    },
-    "https://www.instagram.com/p/CidnL8BN8bB/": {
-      "rels": [
-        "syndication"
-      ],
-      "text": "Instagram"
     },
     "https://adactio.com/?start=20": {
       "rels": [

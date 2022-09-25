@@ -31,6 +31,10 @@
         "photo": [
           {
             "value": "https://kvibber.com/images/portrait.jpg",
+            "srcset": {
+              "1x": "https://kvibber.com/images/portrait.jpg",
+              "2x": "https://kvibber.com/images/portrait-300.jpg"
+            },
             "alt": "Head and shoulders of a man with short brown hair, light skin and glasses."
           }
         ]
@@ -42,6 +46,22 @@
           ],
           "properties": {},
           "children": [
+            {
+              "type": [
+                "h-entry"
+              ],
+              "properties": {
+                "updated": [
+                  "Sat Sep 24 17:24:50 2022"
+                ],
+                "url": [
+                  "https://hyperborea.org/journal/2022/09/wait-bees-are-fish/"
+                ],
+                "name": [
+                  "Wait, Bees are…Fish?"
+                ]
+              }
+            },
             {
               "type": [
                 "h-entry"
@@ -183,22 +203,6 @@
                 ],
                 "name": [
                   "Microforests"
-                ]
-              }
-            },
-            {
-              "type": [
-                "h-entry"
-              ],
-              "properties": {
-                "updated": [
-                  "Tue Aug  9 04:20:00 2022"
-                ],
-                "url": [
-                  "https://hyperborea.org/tech-tips/combine-feeds/"
-                ],
-                "name": [
-                  "Combining RSS and Atom Feeds with Python"
                 ]
               }
             }

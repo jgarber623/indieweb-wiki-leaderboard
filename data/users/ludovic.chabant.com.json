@@ -16,8 +16,8 @@
     }
   ],
   "rels": {
-    "canonical": [
-      "https://ludovic.chabant.com/"
+    "profile": [
+      "https://gmpg.org/xfn/11"
     ],
     "me": [
       "mailto:ludovic@chabant.com",
@@ -27,28 +27,43 @@
       "https://instagram.com/ludovicchabant",
       "https://ludovic.chabant.com/"
     ],
-    "authorization_endpoint": [
-      "https://indieauth.com/auth"
+    "pingback": [
+      "https://ludovic.chabant.com/xmlrpc.php"
     ],
-    "token_endpoint": [
-      "https://tokens.indieauth.com/token"
-    ],
-    "micropub": [
-      "https://ludovic.chabant.com/micropub/index.php"
-    ],
-    "stylesheet": [
-      "https://ludovic.chabant.com/css/style.min.de57b72bf2c72a726d399a9bf7acbc8e7d90ef8ee1eb95635009faae2b5f0604.css"
+    "dns-prefetch": [
+      "https://s.w.org/"
     ],
     "alternate": [
-      "https://ludovic.chabant.com/blog/feed.xml",
-      "https://ludovic.chabant.com/blog/longform.xml",
-      "https://ludovic.chabant.com/blog/micro.xml"
+      "https://ludovic.chabant.com/feed/",
+      "https://ludovic.chabant.com/comments/feed/",
+      "https://ludovic.chabant.com/wp-json/wp/v2/pages/1248",
+      "https://ludovic.chabant.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fludovic.chabant.com%2F",
+      "https://ludovic.chabant.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fludovic.chabant.com%2F&format=xml"
+    ],
+    "stylesheet": [
+      "https://ludovic.chabant.com/wp-includes/css/dist/block-library/style.min.css?ver=6.0.2",
+      "https://ludovic.chabant.com/wp-content/themes/stochastic/style.css?ver=6.0.2"
+    ],
+    "https://api.w.org/": [
+      "https://ludovic.chabant.com/wp-json/"
+    ],
+    "EditURI": [
+      "https://ludovic.chabant.com/xmlrpc.php?rsd"
+    ],
+    "wlwmanifest": [
+      "https://ludovic.chabant.com/wp-includes/wlwmanifest.xml"
+    ],
+    "canonical": [
+      "https://ludovic.chabant.com/"
+    ],
+    "shortlink": [
+      "https://ludovic.chabant.com/"
     ]
   },
   "rel-urls": {
-    "https://ludovic.chabant.com/": {
+    "https://gmpg.org/xfn/11": {
       "rels": [
-        "canonical"
+        "profile"
       ]
     },
     "mailto:ludovic@chabant.com": {
@@ -76,47 +91,84 @@
         "me"
       ]
     },
-    "https://indieauth.com/auth": {
+    "https://ludovic.chabant.com/xmlrpc.php": {
       "rels": [
-        "authorization_endpoint"
+        "pingback"
       ]
     },
-    "https://tokens.indieauth.com/token": {
+    "https://s.w.org/": {
       "rels": [
-        "token_endpoint"
+        "dns-prefetch"
       ]
     },
-    "https://ludovic.chabant.com/micropub/index.php": {
+    "https://ludovic.chabant.com/feed/": {
       "rels": [
-        "micropub"
-      ]
+        "alternate"
+      ],
+      "title": "The Stochastic Game » Feed",
+      "type": "application/rss+xml"
     },
-    "https://ludovic.chabant.com/css/style.min.de57b72bf2c72a726d399a9bf7acbc8e7d90ef8ee1eb95635009faae2b5f0604.css": {
+    "https://ludovic.chabant.com/comments/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "The Stochastic Game » Comments Feed",
+      "type": "application/rss+xml"
+    },
+    "https://ludovic.chabant.com/wp-includes/css/dist/block-library/style.min.css?ver=6.0.2": {
       "rels": [
         "stylesheet"
       ],
-      "media": "screen"
+      "media": "all",
+      "type": "text/css"
     },
-    "https://ludovic.chabant.com/blog/feed.xml": {
+    "https://ludovic.chabant.com/wp-content/themes/stochastic/style.css?ver=6.0.2": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://ludovic.chabant.com/wp-json/": {
+      "rels": [
+        "https://api.w.org/"
+      ]
+    },
+    "https://ludovic.chabant.com/wp-json/wp/v2/pages/1248": {
       "rels": [
         "alternate"
       ],
-      "title": "All Entries",
-      "type": "application/rss+xml"
+      "type": "application/json"
     },
-    "https://ludovic.chabant.com/blog/longform.xml": {
+    "https://ludovic.chabant.com/xmlrpc.php?rsd": {
+      "rels": [
+        "EditURI"
+      ],
+      "title": "RSD",
+      "type": "application/rsd+xml"
+    },
+    "https://ludovic.chabant.com/wp-includes/wlwmanifest.xml": {
+      "rels": [
+        "wlwmanifest"
+      ],
+      "type": "application/wlwmanifest+xml"
+    },
+    "https://ludovic.chabant.com/": {
+      "rels": [
+        "canonical"
+      ]
+    },
+    "https://ludovic.chabant.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fludovic.chabant.com%2F": {
       "rels": [
         "alternate"
       ],
-      "title": "Longform Articles",
-      "type": "application/rss+xml"
+      "type": "application/json+oembed"
     },
-    "https://ludovic.chabant.com/blog/micro.xml": {
+    "https://ludovic.chabant.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fludovic.chabant.com%2F&format=xml": {
       "rels": [
         "alternate"
       ],
-      "title": "Microblogging",
-      "type": "application/rss+xml"
+      "type": "text/xml+oembed"
     }
   }
 }
