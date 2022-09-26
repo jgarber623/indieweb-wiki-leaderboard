@@ -4,7 +4,11 @@
       "type": [
         "h-feed"
       ],
-      "properties": {},
+      "properties": {
+        "photo": [
+          "https://lohn.in/"
+        ]
+      },
       "children": [
         {
           "type": [
@@ -237,6 +241,7 @@
       "https://lohn.in/comments/feed/"
     ],
     "stylesheet": [
+      "https://lohn.in/wp-content/plugins/openid/f/openid.css?ver=519",
       "https://lohn.in/wp-includes/css/dist/block-library/style.min.css?ver=6.0.2",
       "https://lohn.in/wp-content/plugins/encyclopedia-lexicon-glossary-wiki-dictionary/assets/css/encyclopedia.css?ver=6.0.2",
       "https://lohn.in/wp-content/plugins/encyclopedia-lexicon-glossary-wiki-dictionary/assets/css/tooltips.css?ver=6.0.2",
@@ -264,6 +269,13 @@
     ],
     "token_endpoint": [
       "https://lohn.in/wp-json/indieauth/1.0/token"
+    ],
+    "icon": [
+      "https://lohn.in/wp-content/uploads/2022/09/cropped-cropped-289519475_746840293296755_12450514381079516_n-1-32x32.jpg",
+      "https://lohn.in/wp-content/uploads/2022/09/cropped-cropped-289519475_746840293296755_12450514381079516_n-1-192x192.jpg"
+    ],
+    "apple-touch-icon": [
+      "https://lohn.in/wp-content/uploads/2022/09/cropped-cropped-289519475_746840293296755_12450514381079516_n-1-180x180.jpg"
     ],
     "micropub_media": [
       "https://lohn.in/wp-json/micropub/1.0/media"
@@ -323,6 +335,12 @@
       ],
       "title": "Feed de comentários para Lohn »",
       "type": "application/rss+xml"
+    },
+    "https://lohn.in/wp-content/plugins/openid/f/openid.css?ver=519": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
     },
     "https://lohn.in/wp-includes/css/dist/block-library/style.min.css?ver=6.0.2": {
       "rels": [
@@ -409,6 +427,21 @@
     "https://lohn.in/wp-json/indieauth/1.0/token": {
       "rels": [
         "token_endpoint"
+      ]
+    },
+    "https://lohn.in/wp-content/uploads/2022/09/cropped-cropped-289519475_746840293296755_12450514381079516_n-1-32x32.jpg": {
+      "rels": [
+        "icon"
+      ]
+    },
+    "https://lohn.in/wp-content/uploads/2022/09/cropped-cropped-289519475_746840293296755_12450514381079516_n-1-192x192.jpg": {
+      "rels": [
+        "icon"
+      ]
+    },
+    "https://lohn.in/wp-content/uploads/2022/09/cropped-cropped-289519475_746840293296755_12450514381079516_n-1-180x180.jpg": {
+      "rels": [
+        "apple-touch-icon"
       ]
     },
     "https://lohn.in/wp-json/micropub/1.0/media": {

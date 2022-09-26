@@ -7,6 +7,9 @@
     "pingback": [
       "https://kuemmerle.name/xmlrpc.php"
     ],
+    "canonical": [
+      "https://kuemmerle.name/"
+    ],
     "dns-prefetch": [
       "https://translate.google.com/",
       "https://s.w.org/"
@@ -22,7 +25,6 @@
     "stylesheet": [
       "https://kuemmerle.name/wp-content/plugins/instagram-feed-pro/css/sbi-styles.min.css?ver=6.1",
       "https://kuemmerle.name/wp-content/plugins/social-wall/css/social-wall.min.css?ver=1.0.10",
-      "https://kuemmerle.name/wp-content/plugins/sydney-toolbox/css/styles.min.css?ver=20220107",
       "https://kuemmerle.name/wp-content/themes/sydney-pro-ii/css/bootstrap/bootstrap.min.css?ver=1",
       "https://kuemmerle.name/wp-content/themes/sydney-pro-ii/css/modules/ext-blog.min.css?ver=6.0.2",
       "https://kuemmerle.name/wp-content/themes/sydney-pro-ii/css/modules/page-headers.min.css?ver=6.0.2",
@@ -44,7 +46,6 @@
       "https://kuemmerle.name/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
       "https://kuemmerle.name/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3",
       "https://kuemmerle.name/wp-content/fonts/3bd7cd7ad36724caefb20109bef2b140.css",
-      "https://kuemmerle.name/wp-content/themes/sydney-pro-ii/css/components/elementor.min.css?ver=20220824",
       "https://kuemmerle.name/wp-content/themes/sydney-pro-ii/fonts/fontello.min.css?ver=6.0.2",
       "https://kuemmerle.name/wp-content/themes/sydney-pro-ii/style.css?ver=20220920",
       "https://kuemmerle.name/wp-content/themes/sydney-pro-ii/css/components/comments.min.css?ver=20220824",
@@ -64,9 +65,6 @@
     ],
     "wlwmanifest": [
       "https://kuemmerle.name/wp-includes/wlwmanifest.xml"
-    ],
-    "canonical": [
-      "https://kuemmerle.name/"
     ],
     "shortlink": [
       "https://kuemmerle.name/"
@@ -128,6 +126,11 @@
         "pingback"
       ]
     },
+    "https://kuemmerle.name/": {
+      "rels": [
+        "canonical"
+      ]
+    },
     "https://translate.google.com/": {
       "rels": [
         "dns-prefetch"
@@ -167,13 +170,6 @@
       "type": "text/css"
     },
     "https://kuemmerle.name/wp-content/plugins/social-wall/css/social-wall.min.css?ver=1.0.10": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "all",
-      "type": "text/css"
-    },
-    "https://kuemmerle.name/wp-content/plugins/sydney-toolbox/css/styles.min.css?ver=20220107": {
       "rels": [
         "stylesheet"
       ],
@@ -325,13 +321,6 @@
       "media": "all",
       "type": "text/css"
     },
-    "https://kuemmerle.name/wp-content/themes/sydney-pro-ii/css/components/elementor.min.css?ver=20220824": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "all",
-      "type": "text/css"
-    },
     "https://kuemmerle.name/wp-content/themes/sydney-pro-ii/fonts/fontello.min.css?ver=6.0.2": {
       "rels": [
         "stylesheet"
@@ -418,11 +407,6 @@
         "wlwmanifest"
       ],
       "type": "application/wlwmanifest+xml"
-    },
-    "https://kuemmerle.name/": {
-      "rels": [
-        "canonical"
-      ]
     },
     "https://kuemmerle.name/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkuemmerle.name%2F": {
       "rels": [
