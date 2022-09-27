@@ -1,5 +1,62 @@
 {
-  "items": [],
+  "items": [
+    {
+      "type": [
+        "h-feed"
+      ],
+      "properties": {
+        "url": [
+          {
+            "type": [
+              "h-entry"
+            ],
+            "properties": {
+              "name": [
+                "The Steam Deck"
+              ],
+              "url": [
+                "https://shindakun.net/post/the-steam-deck/"
+              ]
+            },
+            "value": "https://shindakun.net/post/the-steam-deck/"
+          },
+          {
+            "type": [
+              "h-entry"
+            ],
+            "properties": {
+              "name": [
+                "Test Post"
+              ],
+              "url": [
+                "https://shindakun.net/post/test-post/"
+              ]
+            },
+            "value": "https://shindakun.net/post/test-post/"
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "name": [
+          "Steve Layton"
+        ],
+        "url": [
+          "https://shindakun.net/"
+        ],
+        "nickname": [
+          "shindakun"
+        ],
+        "photo": [
+          "https://pbs.twimg.com/profile_images/3429611113/96fd4e59d4abf22f6934a5c3d114bc08_200x200.jpeg"
+        ]
+      }
+    }
+  ],
   "rels": {
     "alternate": [
       "https://shindakun.net/index.xml",
@@ -28,6 +85,16 @@
     ],
     "stylesheet": [
       "https://shindakun.net/style.main.min.c34e6915a95f1027dad7b48e5d1ff6e2bbf58b4e72c69d7ec6ac8e7352e961dc.css"
+    ],
+    "apple-touch-icon": [
+      "https://shindakun.net/apple-touch-icon.png"
+    ],
+    "icon": [
+      "https://shindakun.net/favicon-32x32.png",
+      "https://shindakun.net/favicon-16x16.png"
+    ],
+    "manifest": [
+      "https://shindakun.net/site.webmanifest"
     ],
     "noopener": [
       "https://jonathanjanssens.com/"
@@ -81,6 +148,28 @@
     "https://shindakun.net/style.main.min.c34e6915a95f1027dad7b48e5d1ff6e2bbf58b4e72c69d7ec6ac8e7352e961dc.css": {
       "rels": [
         "stylesheet"
+      ]
+    },
+    "https://shindakun.net/apple-touch-icon.png": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://shindakun.net/favicon-32x32.png": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/png"
+    },
+    "https://shindakun.net/favicon-16x16.png": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/png"
+    },
+    "https://shindakun.net/site.webmanifest": {
+      "rels": [
+        "manifest"
       ]
     },
     "https://jonathanjanssens.com/": {

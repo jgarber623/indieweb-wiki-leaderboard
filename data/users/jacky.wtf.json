@@ -130,15 +130,17 @@
               {
                 "type": [
                   "h-cite",
-                  "h-entry",
-                  "h-koype-stubbed-from-ogp"
+                  "h-entry"
                 ],
                 "properties": {
                   "name": [
-                    "My next book will be “Practical Math for Programmers”"
+                    "Owning My Scrobbles"
                   ],
-                  "summary": [
-                    "tl;dr: I’m writing a new book, sign up for the announcements mailing list. I’ve written exactly zero new technical blog posts this year because I’ve been spending all my writing e…"
+                  "content": [
+                    {
+                      "html": "<p>Some eight years ago, I stumbled upon an irreparable ’50s radio and turned it into a Pi-powered audio player.</p>\n<br><p>That is, I gave it a fresh coat of paint and a new grill cloth, and built in two small-ish speakers and an equally small “Class D” amp. The thing’s driven by a Raspberry Pi equipped with the cheapest of USB “sound cards.”</p>\n<br><p>The Pi runs MPD, and, alongside it, mpdscribble, a simple audio scrobbling service. Had it push song data to Last.fm—which I hadn’t used in years—for quite a while. And while that was fun, I ultimately decided to pull the plug. (I mean, “Who even cares?”)</p>\n<br><p>Fast-forward to today, or rather, a month or so ago, when I saw all of the year-end Spotify banners fly by, and thought, “Hey, I could totally do this <em>and retain ownership of my data</em>.”</p>\n<br><p>So, I looked at Libre.fm’s source code—Libre.fm being an open-source but somewhat outdated Last.fm alternative—and drew inspiration from it for a WordPress plugin of my own. (Of course, I later on <a href=\"https://jan.boddez.net/notes/b68f8dd82f\">discovered that such a plugin already existed</a>.)</p>\n<br><p>Luckily, mpdscribble’s config file—found at <code>/etc/mpdscribble.conf</code>—allows setting the Libre.fm endpoint. Pointed it to my site instead, and … it worked!</p>\n<br><p>Next up was scrobbling from my Windows computer. I vaguely remember Last.fm’s Audioscrobbler plugins for, e.g., Winamp, but those would obviously have Last.fm’s endpoint hardcoded within (and have updated to the newer scrobbling protocol, while my endpoint only accepts the much older 1.2 version).</p>\n<br><p>Anyhow, long story short: I mostly followed <a href=\"https://www.reddit.com/r/foobar2000/comments/3zaiy6/guide_to_librefm_scrobbling_lastfm_backup_to/\">this Reddit post</a> and used a hex editor to replace the default endpoint of a <a href=\"https://www.foobar2000.org/components/view/foo_audioscrobbler\">somewhat older foobar2000 plugin</a> with my own! (The rest of the post isn’t super relevant.) Had to shorten my URL a bit to make it all fit, but: this, too, ended up working!</p>\n<br><p>So … the result’s up at <a href=\"https://jan.boddez.net/listens\">/listens</a>. I’m still figuring out how to microformat these; don’t think too many parsers support <code>listen-of</code>.</p>",
+                      "value": "Some eight years ago, I stumbled upon an irreparable ’50s radio and turned it into a Pi-powered audio player.That is, I gave it a fresh coat of paint and a new grill cloth, and built in two small-ish speakers and an equally small “Class D” amp. The thing’s driven by a Raspberry Pi equipped with the cheapest of USB “sound cards.”The Pi runs MPD, and, alongside it, mpdscribble, a simple audio scrobbling service. Had it push song data to Last.fm—which I hadn’t used in years—for quite a while. And while that was fun, I ultimately decided to pull the plug. (I mean, “Who even cares?”)Fast-forward to today, or rather, a month or so ago, when I saw all of the year-end Spotify banners fly by, and thought, “Hey, I could totally do this and retain ownership of my data.”So, I looked at Libre.fm’s source code—Libre.fm being an open-source but somewhat outdated Last.fm alternative—and drew inspiration from it for a WordPress plugin of my own. (Of course, I later on discovered that such a plugin already existed.)Luckily, mpdscribble’s config file—found at /etc/mpdscribble.conf—allows setting the Libre.fm endpoint. Pointed it to my site instead, and … it worked!Next up was scrobbling from my Windows computer. I vaguely remember Last.fm’s Audioscrobbler plugins for, e.g., Winamp, but those would obviously have Last.fm’s endpoint hardcoded within (and have updated to the newer scrobbling protocol, while my endpoint only accepts the much older 1.2 version).Anyhow, long story short: I mostly followed this Reddit post and used a hex editor to replace the default endpoint of a somewhat older foobar2000 plugin with my own! (The rest of the post isn’t super relevant.) Had to shorten my URL a bit to make it all fit, but: this, too, ended up working!So … the result’s up at /listens. I’m still figuring out how to microformat these; don’t think too many parsers support listen-of."
+                    }
                   ],
                   "author": [
                     {
@@ -146,25 +148,31 @@
                         "h-card"
                       ],
                       "properties": {
+                        "photo": [
+                          {
+                            "value": "https://jan.boddez.net/images/photo.jpg",
+                            "alt": "Jan’s photo"
+                          }
+                        ],
                         "name": [
-                          "Math ∩ Programming"
+                          "Jan’s photo Jan Boddez"
                         ]
                       },
-                      "value": "Math ∩ Programming"
+                      "value": "https://jan.boddez.net/"
                     }
                   ],
                   "url": [
-                    "https://jeremykun.com/2022/03/16/my-next-book-will-be-practical-math-for-programmers/"
+                    "https://jan.boddez.net/articles/owning-my-scrobbles"
                   ]
                 },
-                "value": "https://jeremykun.com/2022/03/16/my-next-book-will-be-practical-math-for-programmers/"
+                "value": "https://jan.boddez.net/articles/owning-my-scrobbles"
               }
             ],
             "url": [
-              "https://jacky.wtf/2022/9/8HdR"
+              "https://jacky.wtf/2022/9/3NmK"
             ],
             "published": [
-              "2022-09-11T05:06:55Z"
+              "2022-09-25T03:00:04Z"
             ]
           }
         },
@@ -180,18 +188,14 @@
                   "h-entry"
                 ],
                 "properties": {
-                  "photo": [
-                    {
-                      "value": "https://pbs.twimg.com/media/FcVR0eeWAAMiJE7.jpg",
-                      "alt": "https://pbs.twimg.com/media/FcVR0eeWAAMiJE7.jpg"
-                    },
-                    {
-                      "value": "https://pbs.twimg.com/media/FcVR0eeXoAAPOZR.jpg",
-                      "alt": "https://pbs.twimg.com/media/FcVR0eeXoAAPOZR.jpg"
-                    }
+                  "name": [
+                    "My Reading Stack"
                   ],
                   "content": [
-                    "New look at Samuel L. Jackson in #SecretInvasion 😤"
+                    {
+                      "html": "<blockquote>\n<p>[M]y “Boring Reading Stack” uses Instapaper and my Kindle as the primary services to read content. […] My RSS reader of choice is Feedbin. […] The RSS feed of all my starred items is [piped] through IFTTT to Instapaper.</p>\n<br><p>—Stefan Zweifel, <cite><a href=\"https://stefanzweifel.io/posts/2021/09/13/boring-reading-stack\">Boring Reading Stack</a></cite></p>\n</blockquote>\n<br><p>Here’s mine:</p>\n<br><ul>\n<br><li>I still read off either a smartphone screen or computer monitor</li>\n<br><li>I’m using an RSS reader I built myself—well, it’s kind of a fork of <a href=\"https://github.com/aaronpk/Aperture\">Aperture</a> meets <a href=\"https://github.com/aaronpk/Monocle\">Monocle</a>, but quite different—and <em>doubles as a read-it-later app</em>\n</li>\n<br><li>I don’t do newsletters, ’cept those that offer RSS, of course</li>\n<br>\n</ul>\n<br><p>I used to also use <a href=\"https://github.com/wallabag/wallabag\">wallabag</a>, a read-it-later app that bypasses cookie walls and such, and that I’d set up to sign into paid-subscription sites on my behalf, but I’ve found I no longer need it.</p>\n<br><p>I’ve set up my RSS reader to fetch those paid articles instead, and I can send it random articles, too, using <a href=\"https://www.w3.org/TR/micropub/\">Micropub</a> and a <a href=\"https://jan.boddez.net/notes/332e2fd700\">bookmarklet</a> (or Indigenous on mobile). The way it works is I use those to create (private) “read” posts in my site’s CMS, which then adds, <a href=\"https://jan.boddez.net/articles/sending-webmention-notifications-to-my-social-reader\">again through Micropub</a>, the actual articles to my reader.</p>\n<br><p>This is less of a hassle than it may sound: Indigenous, for instance, is already tied to my CMS (through <a href=\"https://indieweb.org/IndieAuth\">IndieAuth</a>—think “Sign in with Twitter,” but with your <em>very own site</em> instead).</p>\n<br><p>Anyway, I’ve only got to host a single app anymore, and one that runs on just about any shared hosting platform at that!</p>",
+                      "value": "[M]y “Boring Reading Stack” uses Instapaper and my Kindle as the primary services to read content. […] My RSS reader of choice is Feedbin. […] The RSS feed of all my starred items is [piped] through IFTTT to Instapaper.—Stefan Zweifel, Boring Reading StackHere’s mine:I still read off either a smartphone screen or computer monitorI’m using an RSS reader I built myself—well, it’s kind of a fork of Aperture meets Monocle, but quite different—and doubles as a read-it-later appI don’t do newsletters, ’cept those that offer RSS, of courseI used to also use wallabag, a read-it-later app that bypasses cookie walls and such, and that I’d set up to sign into paid-subscription sites on my behalf, but I’ve found I no longer need it.I’ve set up my RSS reader to fetch those paid articles instead, and I can send it random articles, too, using Micropub and a bookmarklet (or Indigenous on mobile). The way it works is I use those to create (private) “read” posts in my site’s CMS, which then adds, again through Micropub, the actual articles to my reader.This is less of a hassle than it may sound: Indigenous, for instance, is already tied to my CMS (through IndieAuth—think “Sign in with Twitter,” but with your very own site instead).Anyway, I’ve only got to host a single app anymore, and one that runs on just about any shared hosting platform at that!"
+                    }
                   ],
                   "author": [
                     {
@@ -201,32 +205,29 @@
                       "properties": {
                         "photo": [
                           {
-                            "value": "https://pbs.twimg.com/profile_images/1542986224788553731/DzpL-3B9_normal.jpg",
-                            "alt": ""
+                            "value": "https://jan.boddez.net/images/photo.jpg",
+                            "alt": "Jan’s photo"
                           }
                         ],
                         "name": [
-                          "New Rockstars @ D23"
+                          "Jan’s photo Jan Boddez"
                         ]
                       },
-                      "value": "https://twitter.com/NewRockstars"
+                      "value": "https://jan.boddez.net/"
                     }
                   ],
                   "url": [
-                    "https://twitter.com/NewRockstars/status/1568750009998360576"
+                    "https://jan.boddez.net/articles/my-reading-stack"
                   ]
                 },
-                "value": "https://twitter.com/NewRockstars/status/1568750009998360576"
+                "value": "https://jan.boddez.net/articles/my-reading-stack"
               }
             ],
             "url": [
-              "https://jacky.wtf/2022/9/wpqy"
+              "https://jacky.wtf/2022/9/Tf5z"
             ],
             "published": [
-              "2022-09-10T23:58:23Z"
-            ],
-            "syndication": [
-              "https://twitter.com/NewRockstars/status/1568750009998360576"
+              "2022-09-25T02:59:29Z"
             ]
           }
         },
@@ -242,8 +243,14 @@
                   "h-entry"
                 ],
                 "properties": {
+                  "name": [
+                    "Micropub, Crossposting to Twitter, and Enabling “Tweetstorms”"
+                  ],
                   "content": [
-                    "and honestly, the older I get, the more tired I am of action games that want me to kill stuff and just generally base their gameplay on violence. I find I end up feeling way more satisfied with lower-key experiences that explore human stories instead."
+                    {
+                      "html": "<p>I’ve previously talked about how I <a href=\"https://jan.boddez.net/articles/micropub-syndication-targets-and-crossposting-to-mastodon\">crosspost from this blog to my Mastodon account</a> without the need for a third-party service, and how I leverage WordPress’s hook system to even <a href=\"https://jan.boddez.net/articles/tootstorms-using-micropub-and-share-on-mastodon\">enable toot threading</a>.</p>\n<br><p>In this post, I’m going to really quickly explain my (extremely similar) Twitter setup. (Note: I don’t actually syndicate <em>this</em> blog’s posts to Twitter, but I <em>do</em> use this very setup on another site of mine.)</p>\n<br><p>I liked the idea of a <a href=\"https://github.com/janboddez/share-on-twitter\">dead-simple Twitter plugin</a>, so I forked my Mastodon plugin and tweaked a few things here and there. Once I’ve installed it, and created a developer account, generated the necessary keys, and let WordPress know about them, things look, well, <em>very</em> familiar. In fact, crossposting should now <em>just work</em>.</p>\n<br><p>Now, to enable this when posting through Micropub rather than WordPress’s admin interface! Again, since posting through Micropub means no WordPress interface, and thus no “meta box” and no checkbox, and no way for WordPress to know if I wanted to crosspost a certain article or not, I’m going to have to use … <em>syndication targets</em> (which were invented precisely for this reason).</p>\n<br><p>First, I’m updating my Micropub config:</p>\n<br><pre><code>add_filter( 'micropub_syndicate-to', function( $syndicate_to, $user_id ) {<br>  return array(<br>    array(<br>      'uid'  =&gt; 'https://twitter.com/ochtendgrijs',<br>      'name' =&gt; 'Twitter',<br>    ),<br>    array(<br>      'uid'  =&gt; 'https://geekcompass.com/@jan',<br>      'name' =&gt; 'Mastodon',<br>    ),<br>  );<br>}, 10, 2 );</code></pre>\n<br><p>That should inform my Micropub client of the various endpoints my CMS supports.</p>\n<br><p>Then, the callback. As always, there’s quite a few ways to get what we want. What this snippet does, is set the custom field that tells Share on Twitter if it should crosspost, and then simply re-trigger the hook used by that same plugin.</p>\n<br><pre><code>add_action( 'micropub_syndication', function( $post_id, $synd_requested ) {<br>  $post      = get_post( $post_id );<br>  $syndicate = false;<br><br>  if ( in_array( 'https://twitter.com/ochtendgrijs', $synd_requested, true ) ) {<br>    // Update sharing setting.<br>    update_post_meta( $post_id, '_share_on_twitter', '1' );<br><br>    $syndicate = true;<br>  }<br><br>  if ( in_array( 'https://geekcompass.com/@jan', $synd_requested, true ) ) {<br>    // Update sharing setting.<br>    update_post_meta( $post_id, '_share_on_mastodon', '1' );<br><br>    $syndicate = true;<br>  }<br><br>  if ( $syndicate &amp;&amp; 'publish' === $post-&gt;post_status ) {<br>    // Re-run the `transition_post_status` hook, in order to trigger<br>    // syndication.<br>    wp_transition_post_status( 'publish', 'publish', $post );<br>  }<br>}, 10, 2 );</code></pre>\n<br><p><strong>Note:</strong> As the callback above is run <em>after</em> the <code>transition_post_status</code> hook, which is where the actual crossposting would’ve happened, we have to trigger it once more (for published posts only).</p>\n<br><p>And that’s literally all it takes to get syndication working in combination with Micropub! (Again, if you’ve seen my “Mastodon” implementation, all of this should be really familiar.)</p>\n<br><h2>Optional: Enabling Threaded Tweets</h2>\n<br><p>And, finally, the “Tweetstorm” bit, which is fairly ugly, mainly because I’m using <code>get_page_by_path()</code> instead of the somehow less robust—in my case—<code>url_to_postid()</code>. Also, part of this code references the specific custom post type I’m using for short-form content, and would not simply work elsewhere.</p>\n<br><p>Oh, and lastly, this would require you filter the actual statuses, too, so that they contain <em>actual notes</em> and not just a title and permalink.</p>\n<br><pre><code>add_filter( 'share_on_twitter_tweet_args', function( $args ) {<br>  $status = $args['status'];<br>  $post   = null;<br><br>  $pattern = '#&lt;a(?:.+?)href=\"' . home_url( '/notes/' ) . '(.+?)\"(?:.*?)&gt;(?:.+?)&lt;/a&gt;#'; // `notes`, without `front`, is what's definied as my note archive's permalink slug.<br><br>  if ( preg_match( $pattern, $status, $matches ) ) {<br>    // Status contains a link to an earlier note. Try to fetch it.<br>    $post = get_page_by_path( rtrim( $matches[1], '/' ), OBJECT, array( 'iwcpt_note' ) ); // `iwcpt_note` is my \"note\" CPT.<br>  } else {<br>    // Same thing, but for articles.<br>    $pattern = '#&lt;a(?:.+?)href=\"' . home_url( '/articles/' ) . '(.+?)\"(?:.*?)&gt;(?:.+?)&lt;/a&gt;#'; // The exact argument of `home_url()` would depend on your permalink `front`.<br><br>    if ( preg_match( $pattern, $status, $matches ) ) {<br>      // Status contains a link to an earlier article. Try to fetch it.<br>      $post = get_page_by_path( rtrim( $matches[1], '/' ), OBJECT, array( 'post' ) );<br>    }<br>  }<br><br>  if ( $post ) {<br>    $tweet_id = basename( get_post_meta( $post-&gt;ID, '_share_on_twitter_url', true ) );<br><br>    if ( ! empty( $tweet_id ) ) {<br>      $args['in_reply_to_status_id'] = $tweet_id ;<br><br>      // Twitter demands replies contain the username of the person replying to.<br>      $status = get_option( 'share_on_twitter_settings', array( 'twitter_username' =&gt; '' ) )['twitter_username'] . $status;<br>    }<br>  } elseif ( isset( $matches[1] ) ) {<br>    error_log( \"Could not convert URL to post ID for the page with slug {$matches[1]}.\" );<br>  }<br><br>  $args['status'] = trim( wp_strip_all_tags( $status ) );<br><br>  return $args;<br>} );</code></pre>\n<br><p><em><strong>Note:</strong> Still using <code>get_page_by_path()</code> rather than <code>url_to_postid()</code>, as that’s what works for me and my hacky WordPress install.</em></p>",
+                      "value": "I’ve previously talked about how I crosspost from this blog to my Mastodon account without the need for a third-party service, and how I leverage WordPress’s hook system to even enable toot threading.In this post, I’m going to really quickly explain my (extremely similar) Twitter setup. (Note: I don’t actually syndicate this blog’s posts to Twitter, but I do use this very setup on another site of mine.)I liked the idea of a dead-simple Twitter plugin, so I forked my Mastodon plugin and tweaked a few things here and there. Once I’ve installed it, and created a developer account, generated the necessary keys, and let WordPress know about them, things look, well, very familiar. In fact, crossposting should now just work.Now, to enable this when posting through Micropub rather than WordPress’s admin interface! Again, since posting through Micropub means no WordPress interface, and thus no “meta box” and no checkbox, and no way for WordPress to know if I wanted to crosspost a certain article or not, I’m going to have to use … syndication targets (which were invented precisely for this reason).First, I’m updating my Micropub config:add_filter( 'micropub_syndicate-to', function( $syndicate_to, $user_id ) {  return array(    array(      'uid'  => 'https://twitter.com/ochtendgrijs',      'name' => 'Twitter',    ),    array(      'uid'  => 'https://geekcompass.com/@jan',      'name' => 'Mastodon',    ),  );}, 10, 2 );That should inform my Micropub client of the various endpoints my CMS supports.Then, the callback. As always, there’s quite a few ways to get what we want. What this snippet does, is set the custom field that tells Share on Twitter if it should crosspost, and then simply re-trigger the hook used by that same plugin.add_action( 'micropub_syndication', function( $post_id, $synd_requested ) {  $post      = get_post( $post_id );  $syndicate = false;  if ( in_array( 'https://twitter.com/ochtendgrijs', $synd_requested, true ) ) {    // Update sharing setting.    update_post_meta( $post_id, '_share_on_twitter', '1' );    $syndicate = true;  }  if ( in_array( 'https://geekcompass.com/@jan', $synd_requested, true ) ) {    // Update sharing setting.    update_post_meta( $post_id, '_share_on_mastodon', '1' );    $syndicate = true;  }  if ( $syndicate && 'publish' === $post->post_status ) {    // Re-run the `transition_post_status` hook, in order to trigger    // syndication.    wp_transition_post_status( 'publish', 'publish', $post );  }}, 10, 2 );Note: As the callback above is run after the transition_post_status hook, which is where the actual crossposting would’ve happened, we have to trigger it once more (for published posts only).And that’s literally all it takes to get syndication working in combination with Micropub! (Again, if you’ve seen my “Mastodon” implementation, all of this should be really familiar.)Optional: Enabling Threaded TweetsAnd, finally, the “Tweetstorm” bit, which is fairly ugly, mainly because I’m using get_page_by_path() instead of the somehow less robust—in my case—url_to_postid(). Also, part of this code references the specific custom post type I’m using for short-form content, and would not simply work elsewhere.Oh, and lastly, this would require you filter the actual statuses, too, so that they contain actual notes and not just a title and permalink.add_filter( 'share_on_twitter_tweet_args', function( $args ) {  $status = $args['status'];  $post   = null;  $pattern = '#<a(?:.+?)href=\"' . home_url( '/notes/' ) . '(.+?)\"(?:.*?)>(?:.+?)</a>#'; // `notes`, without `front`, is what's definied as my note archive's permalink slug.  if ( preg_match( $pattern, $status, $matches ) ) {    // Status contains a link to an earlier note. Try to fetch it.    $post = get_page_by_path( rtrim( $matches[1], '/' ), OBJECT, array( 'iwcpt_note' ) ); // `iwcpt_note` is my \"note\" CPT.  } else {    // Same thing, but for articles.    $pattern = '#<a(?:.+?)href=\"' . home_url( '/articles/' ) . '(.+?)\"(?:.*?)>(?:.+?)</a>#'; // The exact argument of `home_url()` would depend on your permalink `front`.    if ( preg_match( $pattern, $status, $matches ) ) {      // Status contains a link to an earlier article. Try to fetch it.      $post = get_page_by_path( rtrim( $matches[1], '/' ), OBJECT, array( 'post' ) );    }  }  if ( $post ) {    $tweet_id = basename( get_post_meta( $post->ID, '_share_on_twitter_url', true ) );    if ( ! empty( $tweet_id ) ) {      $args['in_reply_to_status_id'] = $tweet_id ;      // Twitter demands replies contain the username of the person replying to.      $status = get_option( 'share_on_twitter_settings', array( 'twitter_username' => '' ) )['twitter_username'] . $status;    }  } elseif ( isset( $matches[1] ) ) {    error_log( \"Could not convert URL to post ID for the page with slug {$matches[1]}.\" );  }  $args['status'] = trim( wp_strip_all_tags( $status ) );  return $args;} );Note: Still using get_page_by_path() rather than url_to_postid(), as that’s what works for me and my hacky WordPress install."
+                    }
                   ],
                   "author": [
                     {
@@ -253,32 +260,29 @@
                       "properties": {
                         "photo": [
                           {
-                            "value": "https://pbs.twimg.com/profile_images/1550263449120165888/sM0F_l2i_normal.jpg",
-                            "alt": ""
+                            "value": "https://jan.boddez.net/images/photo.jpg",
+                            "alt": "Jan’s photo"
                           }
                         ],
                         "name": [
-                          "kat"
+                          "Jan’s photo Jan Boddez"
                         ]
                       },
-                      "value": "https://twitter.com/zkat__"
+                      "value": "https://jan.boddez.net/"
                     }
                   ],
                   "url": [
-                    "https://twitter.com/zkat__/status/1568378546246283267"
+                    "https://jan.boddez.net/articles/micropub-crossposting-to-twitter-and-enabling-tweetstorms"
                   ]
                 },
-                "value": "https://twitter.com/zkat__/status/1568378546246283267"
+                "value": "https://jan.boddez.net/articles/micropub-crossposting-to-twitter-and-enabling-tweetstorms"
               }
             ],
             "url": [
-              "https://jacky.wtf/2022/9/5-bP"
+              "https://jacky.wtf/2022/9/a60d"
             ],
             "published": [
-              "2022-09-09T23:22:00Z"
-            ],
-            "syndication": [
-              "https://twitter.com/zkat__/status/1568378546246283267"
+              "2022-09-25T02:58:38Z"
             ]
           }
         }
@@ -306,6 +310,52 @@
             "h-entry"
           ],
           "properties": {
+            "content": [
+              {
+                "html": "<p>My copy of \"You've Been Played\" (at <a href=\"https://bookshop.org/p/books/you-ve-been-played-how-corporations-governments-and-schools-use-games-to-control-us-all-adrian-hon/18041220?ean=9781541600171\">https://bookshop.org/p/books/you-ve-been-played-how-corporations-governments-and-schools-use-games-to-control-us-all-adrian-hon/18041220?ean=9781541600171</a> came recently from a pre-order. Very eager to dive into this one.</p>",
+                "value": "My copy of \"You've Been Played\" (at https://bookshop.org/p/books/you-ve-been-played-how-corporations-governments-and-schools-use-games-to-control-us-all-adrian-hon/18041220?ean=9781541600171 came recently from a pre-order. Very eager to dive into this one."
+              }
+            ],
+            "url": [
+              "https://jacky.wtf/2022/9/K2nJ"
+            ],
+            "published": [
+              "2022-09-25T19:57:49Z"
+            ],
+            "syndication": [
+              "https://twitter.com/jackyalcine/status/1574126069816463363",
+              "https://todon.eu/@jalcine/109060808848705442"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<p>it is so much easier to give in.</p>",
+                "value": "it is so much easier to give in."
+              }
+            ],
+            "url": [
+              "https://jacky.wtf/2022/9/3HZ2"
+            ],
+            "published": [
+              "2022-09-25T18:27:29Z"
+            ],
+            "syndication": [
+              "https://twitter.com/jackyalcine/status/1574103378573017088",
+              "https://todon.eu/@jalcine/109060454298882727"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
             "in-reply-to": [
               {
                 "type": [
@@ -315,8 +365,8 @@
                 "properties": {
                   "content": [
                     {
-                      "html": "<p>This is really the energy I'm on right now! <a href=\"https://twitter.com/ThatAndyGuy/status/1571608634773184516\">https://twitter.com/ThatAndyGuy/status/1571608634773184516</a> #gdoc</p>",
-                      "value": "This is really the energy I'm on right now! https://twitter.com/ThatAndyGuy/status/1571608634773184516 #gdoc"
+                      "html": "<p>I mentioned a while ago about how I mistook the leading games as an indicator of the kind of games people want — which is always incorrect. People don't even know that they've been monitored in the things they're using every day, so how can any \"metric\" be authentic of their behavior? This just motivates me to work with people who care about people to not feed into the excessively normalized state of violence that's randomly been deemed okay.</p>",
+                      "value": "I mentioned a while ago about how I mistook the leading games as an indicator of the kind of games people want — which is always incorrect. People don't even know that they've been monitored in the things they're using every day, so how can any \"metric\" be authentic of their behavior? This just motivates me to work with people who care about people to not feed into the excessively normalized state of violence that's randomly been deemed okay."
                     }
                   ],
                   "author": [
@@ -336,71 +386,27 @@
                     }
                   ],
                   "url": [
-                    "https://jacky.wtf/2022/9/LMBy"
+                    "https://jacky.wtf/2022/9/V6eS"
                   ]
                 },
-                "value": "https://jacky.wtf/2022/9/LMBy"
+                "value": "https://jacky.wtf/2022/9/V6eS"
               }
             ],
             "content": [
               {
-                "html": "<p>I'd want to write a recap post (because I need to blog more) but I'll hold off until the VODs drop so I can link to particular parts.</p>",
-                "value": "I'd want to write a recap post (because I need to blog more) but I'll hold off until the VODs drop so I can link to particular parts."
+                "html": "<p>I love the argument: \"but humans have always been violent\". That's further from the truth, and we really need to start getting people to either read or actually learn non-McGraw Hill approved textbooks. They barely talk about the Civil Rights movement and will have spreads about the \"glamour\" of killing indigenous people; why would that be an accurate representation of the state of humanity?</p>",
+                "value": "I love the argument: \"but humans have always been violent\". That's further from the truth, and we really need to start getting people to either read or actually learn non-McGraw Hill approved textbooks. They barely talk about the Civil Rights movement and will have spreads about the \"glamour\" of killing indigenous people; why would that be an accurate representation of the state of humanity?"
               }
             ],
             "url": [
-              "https://jacky.wtf/2022/9/RKt2"
+              "https://jacky.wtf/2022/9/zfCK"
             ],
             "published": [
-              "2022-09-18T21:34:02Z"
+              "2022-09-25T15:36:50Z"
             ],
             "syndication": [
-              "https://twitter.com/jackyalcine/status/1571613702511808515"
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "content": [
-              {
-                "html": "<p>This is really the energy I'm on right now! <a href=\"https://twitter.com/ThatAndyGuy/status/1571608634773184516\">https://twitter.com/ThatAndyGuy/status/1571608634773184516</a> #gdoc</p>",
-                "value": "This is really the energy I'm on right now! https://twitter.com/ThatAndyGuy/status/1571608634773184516 #gdoc"
-              }
-            ],
-            "url": [
-              "https://jacky.wtf/2022/9/LMBy"
-            ],
-            "published": [
-              "2022-09-18T21:31:57Z"
-            ],
-            "syndication": [
-              "https://twitter.com/jackyalcine/status/1571613065749331973"
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "content": [
-              {
-                "html": "<p>I'm going to make a game. And it'll be fun. For at least an hour, lol.</p>",
-                "value": "I'm going to make a game. And it'll be fun. For at least an hour, lol."
-              }
-            ],
-            "url": [
-              "https://jacky.wtf/2022/9/g7O6"
-            ],
-            "published": [
-              "2022-09-18T21:18:24Z"
-            ],
-            "syndication": [
-              "https://twitter.com/jackyalcine/status/1571609658875416581",
-              "https://todon.eu/@jalcine/109021489938795672"
+              "https://twitter.com/jackyalcine/status/1574060489012813828",
+              "https://todon.eu/@jalcine/109059784320323818"
             ]
           }
         }
@@ -463,7 +469,7 @@
       "https://jacky.wtf/assets/vendor.648808aa.js"
     ],
     "stylesheet": [
-      "https://jacky.wtf/assets/main.d0054b78.css"
+      "https://jacky.wtf/assets/main.a01452ff.css"
     ],
     "manifest": [
       "https://jacky.wtf/assets/manifest.webmanifest"
@@ -581,7 +587,7 @@
         "modulepreload"
       ]
     },
-    "https://jacky.wtf/assets/main.d0054b78.css": {
+    "https://jacky.wtf/assets/main.a01452ff.css": {
       "rels": [
         "stylesheet"
       ]

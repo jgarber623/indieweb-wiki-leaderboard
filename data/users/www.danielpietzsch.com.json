@@ -48,6 +48,28 @@
       ],
       "properties": {
         "url": [
+          "https://danielpietzsch.com/notes/no-spoilers"
+        ],
+        "published": [
+          "2022-09-26T16:38+0200"
+        ],
+        "content": [
+          {
+            "html": "<p>The text for <a href=\"https://danielpietzsch.com/watched/movies/\">movie posts</a> is now hidden at first, if it potentially contains spoilers (I simply used <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details\">the <code class=\"language-plaintext highlighter-rouge\">&lt;details&gt;</code> element</a> for this). This also applies to the <a href=\"https://en.m.wikipedia.org/wiki/Atom_(web_standard)\">Atom</a> feeds (<a href=\"https://danielpietzsch.com/watched/movies/feed.atom\">for movies</a> and <a href=\"https://danielpietzsch.com/feed.atom\">for everything</a>). The text is also no longer written in the <code class=\"language-plaintext highlighter-rouge\">description</code> and <code class=\"language-plaintext highlighter-rouge\">og:description</code> meta tags. All of this should make it harder to accidentally get spoiled.</p>\n\n\n    <div class=\"image-teaser-gallery\">\n      \n    </div>",
+            "value": "The text for movie posts is now hidden at first, if it potentially contains spoilers (I simply used the <details> element for this). This also applies to the Atom feeds (for movies and for everything). The text is also no longer written in the description and og:description meta tags. All of this should make it harder to accidentally get spoiled."
+          }
+        ],
+        "name": [
+          "The text for movie posts is now hidden at first, if it potentially contains spoilers (I simply used the <details> element for this). This also applies to the Atom feeds (for movies and for everything). The text is also no longer written in the description and og:description meta tags. All of this should make it harder to accidentally get spoiled."
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "url": [
           "https://danielpietzsch.com/articles/planck-ruin",
           "https://danielpietzsch.com/articles/planck-ruin"
         ],
@@ -79,29 +101,6 @@
         ],
         "summary": [
           "I recently dusted off an old Raspberry Pi and installed Samba to serve all the movies we have on two external hard drives on our local network."
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "url": [
-          "https://danielpietzsch.com/notes/hp5-developed",
-          "https://danielpietzsch.com/notes/hp5-developed"
-        ],
-        "published": [
-          "2022-07-17T13:13+0200"
-        ],
-        "content": [
-          {
-            "html": "<p>Finally developed some rolls of film again. It’s been months since the last time.</p>\n\n<p>Made 1.5 litres of fresh fixer, got the 5-reel tank out of the cupboard and developed some HP5 @1600. One of those rolls was from back in December.</p>\n\n<p>A second batch – 5 rolls of APX 400 – is also already hanging to dry. Feels good to make progress on that front again. (But let’s not talk about the scanning backlog or posting to <a href=\"http://photojournal.danielpietzsch.com/\">the journal</a>, ok!?)</p>\n\n\n    <div class=\"image-teaser-gallery\">\n      \n      <a href=\"https://danielpietzsch.com/notes/hp5-developed\" rel=\"bookmark\" class=\"u-url\">\n        \n<img loading=\"lazy\" src=\"https://danielpietzsch.com/images/2022/960w/film_dev.jpeg\" width=\"960\" height=\"640\" class=\"teaser\" srcset=\"https://danielpietzsch.com/images/2022/320w/film_dev.jpeg 320w, https://danielpietzsch.com/images/2022/640w/film_dev.jpeg 640w, https://danielpietzsch.com/images/2022/960w/film_dev.jpeg 960w, https://danielpietzsch.com/images/2022/1280w/film_dev.jpeg 1280w, https://danielpietzsch.com/images/2022/1920w/film_dev.jpeg 1920w, https://danielpietzsch.com/images/2022/film_dev.jpeg 2400w\" sizes=\"(min-width: 960px) calc(960px / 1), calc(94vw / 1)\">\n      </a>\n      \n    </div>",
-            "value": "Finally developed some rolls of film again. It’s been months since the last time.\n\nMade 1.5 litres of fresh fixer, got the 5-reel tank out of the cupboard and developed some HP5 @1600. One of those rolls was from back in December.\n\nA second batch – 5 rolls of APX 400 – is also already hanging to dry. Feels good to make progress on that front again. (But let’s not talk about the scanning backlog or posting to the journal, ok!?)\n\n\n    \n      \n      \n        \n https://danielpietzsch.com/images/2022/960w/film_dev.jpeg"
-          }
-        ],
-        "name": [
-          "Finally developed some rolls of film again. It’s been months since the last time.\n\nMade 1.5 litres of fresh fixer, got the 5-reel tank out of the cupboard and developed some HP5 @1600. One of those rolls was from back in December.\n\nA second batch – 5 rolls of APX 400 – is also already hanging to dry. Feels good to make progress on that front again. (But let’s not talk about the scanning backlog or posting to the journal, ok!?)\n\n\n    \n      \n      \n        \n https://danielpietzsch.com/images/2022/960w/film_dev.jpeg"
         ]
       }
     },
@@ -189,9 +188,9 @@
       "https://blog.danielpietzsch.com/"
     ],
     "bookmark": [
+      "https://danielpietzsch.com/notes/no-spoilers",
       "https://danielpietzsch.com/articles/planck-ruin",
       "https://danielpietzsch.com/articles/samba-pi",
-      "https://danielpietzsch.com/notes/hp5-developed",
       "https://danielpietzsch.com/watched/movies/the-fog",
       "https://danielpietzsch.com/watched/movies/blood-simple",
       "https://danielpietzsch.com/watched/movies/escape-from-new-york"
@@ -337,6 +336,12 @@
       ],
       "text": "Daniel Pietzsch"
     },
+    "https://danielpietzsch.com/notes/no-spoilers": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "Monday, September 26, 2022"
+    },
     "https://danielpietzsch.com/articles/planck-ruin": {
       "rels": [
         "bookmark"
@@ -348,12 +353,6 @@
         "bookmark"
       ],
       "text": "Saturday, September  3, 2022"
-    },
-    "https://danielpietzsch.com/notes/hp5-developed": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Sunday, July 17, 2022"
     },
     "https://danielpietzsch.com/watched/movies/the-fog": {
       "rels": [

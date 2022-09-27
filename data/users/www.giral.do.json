@@ -1,34 +1,48 @@
 {
   "items": [],
   "rels": {
-    "me": [
-      "https://micro.blog/sergiorgiraldo",
-      "https://twitter.com/sergiorgiraldo",
-      "https://github.com/sergiorgiraldo"
+    "stylesheet": [
+      "https://www.hostnet.com.br/pagina_congelado/style.css",
+      "https://fonts.googleapis.com/css?family=Roboto"
     ],
-    "pgpkey": [
-      "http://www.giral.do/public-key.txt"
+    "alternate": [
+      "https://www.hostnet.com.br/tutorial/feed/"
+    ],
+    "pingback": [
+      "https://www.hostnet.com.br/tutorial/xmlrpc.php"
+    ],
+    "canonical": [
+      "https://www.hostnet.com.br/tutorial/"
     ]
   },
   "rel-urls": {
-    "https://micro.blog/sergiorgiraldo": {
+    "https://www.hostnet.com.br/pagina_congelado/style.css": {
       "rels": [
-        "me"
+        "stylesheet"
+      ],
+      "media": "screen",
+      "type": "text/css"
+    },
+    "https://www.hostnet.com.br/tutorial/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "RSS 2.0",
+      "type": "application/rss+xml"
+    },
+    "https://fonts.googleapis.com/css?family=Roboto": {
+      "rels": [
+        "stylesheet"
       ]
     },
-    "https://twitter.com/sergiorgiraldo": {
+    "https://www.hostnet.com.br/tutorial/xmlrpc.php": {
       "rels": [
-        "me"
+        "pingback"
       ]
     },
-    "https://github.com/sergiorgiraldo": {
+    "https://www.hostnet.com.br/tutorial/": {
       "rels": [
-        "me"
-      ]
-    },
-    "http://www.giral.do/public-key.txt": {
-      "rels": [
-        "pgpkey"
+        "canonical"
       ]
     }
   }

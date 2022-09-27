@@ -17,7 +17,7 @@
     ],
     "stylesheet": [
       "https://djoerdhiemstra.com/wp-includes/css/dist/block-library/style.min.css?ver=5.9.4",
-      "https://djoerdhiemstra.com/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.6",
+      "https://djoerdhiemstra.com/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
       "https://djoerdhiemstra.com/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3",
       "https://djoerdhiemstra.com/wp-content/themes/twentysixteen/genericons/genericons.css?ver=20201208",
       "https://djoerdhiemstra.com/wp-content/themes/twentysixteen/style.css?ver=20201208",
@@ -49,6 +49,7 @@
       "https://djoerdhiemstra.com/"
     ],
     "bookmark": [
+      "https://djoerdhiemstra.com/2022/open-search-symposium-2022/",
       "https://djoerdhiemstra.com/2022/open-web-search-project-kicked-off/",
       "https://djoerdhiemstra.com/2022/mo-together-or-alone/",
       "https://djoerdhiemstra.com/2022/exposure-gerrymandering/",
@@ -57,11 +58,11 @@
       "https://djoerdhiemstra.com/2022/felipe-moraes-gomes-defends-phd-thesis-on-collaborative-search/",
       "https://djoerdhiemstra.com/2022/phd-vacancy-for-software-correctness/",
       "https://djoerdhiemstra.com/2022/dutch-belgian-information-retrieval-workshop-2021/",
-      "https://djoerdhiemstra.com/2021/web-analytics-privacy-workshop/",
-      "https://djoerdhiemstra.com/2021/maurice-verbrugge-graduates-on-the-bert-ranking-paradigm/"
+      "https://djoerdhiemstra.com/2021/web-analytics-privacy-workshop/"
     ],
     "category": [
       "https://djoerdhiemstra.com/category/distributed-search/",
+      "https://djoerdhiemstra.com/category/societal-impact/",
       "https://djoerdhiemstra.com/category/social-data/",
       "https://djoerdhiemstra.com/category/fair-ir/",
       "https://djoerdhiemstra.com/category/paper-abstracts/",
@@ -70,11 +71,11 @@
       "https://djoerdhiemstra.com/category/data-science/",
       "https://djoerdhiemstra.com/category/vacancies/",
       "https://djoerdhiemstra.com/category/conferences-workshops/",
-      "https://djoerdhiemstra.com/category/noga/",
-      "https://djoerdhiemstra.com/category/machine-learning/"
+      "https://djoerdhiemstra.com/category/noga/"
     ],
     "tag": [
       "https://djoerdhiemstra.com/category/distributed-search/",
+      "https://djoerdhiemstra.com/category/societal-impact/",
       "https://djoerdhiemstra.com/category/social-data/",
       "https://djoerdhiemstra.com/category/fair-ir/",
       "https://djoerdhiemstra.com/category/paper-abstracts/",
@@ -83,8 +84,7 @@
       "https://djoerdhiemstra.com/category/data-science/",
       "https://djoerdhiemstra.com/category/vacancies/",
       "https://djoerdhiemstra.com/category/conferences-workshops/",
-      "https://djoerdhiemstra.com/category/noga/",
-      "https://djoerdhiemstra.com/category/machine-learning/"
+      "https://djoerdhiemstra.com/category/noga/"
     ],
     "noopener": [
       "https://nogadata.nl/archive.html"
@@ -147,7 +147,7 @@
       ],
       "media": "all"
     },
-    "https://djoerdhiemstra.com/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.6": {
+    "https://djoerdhiemstra.com/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7": {
       "rels": [
         "stylesheet"
       ],
@@ -225,11 +225,11 @@
         "home"
       ]
     },
-    "https://djoerdhiemstra.com/2022/open-web-search-project-kicked-off/": {
+    "https://djoerdhiemstra.com/2022/open-search-symposium-2022/": {
       "rels": [
         "bookmark"
       ],
-      "text": "Open Web Search project kicked off"
+      "text": "Open Search Symposium 2022"
     },
     "https://djoerdhiemstra.com/category/distributed-search/": {
       "rels": [
@@ -237,6 +237,19 @@
         "tag"
       ],
       "text": "Distributed Search"
+    },
+    "https://djoerdhiemstra.com/category/societal-impact/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Societal Impact"
+    },
+    "https://djoerdhiemstra.com/2022/open-web-search-project-kicked-off/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "Open Web Search project kicked off"
     },
     "https://djoerdhiemstra.com/2022/mo-together-or-alone/": {
       "rels": [
@@ -348,19 +361,6 @@
         "tag"
       ],
       "text": "NoGA"
-    },
-    "https://djoerdhiemstra.com/2021/maurice-verbrugge-graduates-on-the-bert-ranking-paradigm/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Maurice Verbrugge graduates on the BERT Ranking Paradigm"
-    },
-    "https://djoerdhiemstra.com/category/machine-learning/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "machine learning"
     },
     "https://nogadata.nl/archive.html": {
       "rels": [
