@@ -42,6 +42,62 @@
       "properties": {
         "content": [
           {
+            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://www.palladiummag.com/2022/09/21/the-future-history-of-the-nuclear-renaissance-with-isabelle-boemeke/\">\nThe Future History of the Nuclear Renaissance With Isabelle Boemeke\n</a>\n</h3>\n\n<p>I really like the format of this bit of journo-fiction. An interview from the future looking back at the turning point of today.</p>\n\n<p>It probably helps that I’m into nuclearpunk just as much as solarpunk, so I approve this message.</p>\n\n<p>Atomkraft? Ja, bitte!</p>",
+            "value": "The Future History of the Nuclear Renaissance With Isabelle Boemeke\n\n\n\nI really like the format of this bit of journo-fiction. An interview from the future looking back at the turning point of today.\n\nIt probably helps that I’m into nuclearpunk just as much as solarpunk, so I approve this message.\n\nAtomkraft? Ja, bitte!"
+          }
+        ],
+        "name": [
+          "The Future History of the Nuclear Renaissance With Isabelle Boemeke"
+        ],
+        "bookmark-of": [
+          "https://www.palladiummag.com/2022/09/21/the-future-history-of-the-nuclear-renaissance-with-isabelle-boemeke/"
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "50.83246727"
+              ],
+              "longitude": [
+                "-0.11813185"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/links/19482"
+        ],
+        "published": [
+          "2022-09-27T16:21:20Z"
+        ],
+        "category": [
+          "cli-fi",
+          "sci-fi",
+          "sciencefiction",
+          "future",
+          "history",
+          "climate",
+          "change",
+          "writing",
+          "publishing",
+          "interview",
+          "nuclear",
+          "power",
+          "energy"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
             "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://www.serpentinegalleries.org/art-and-ideas/fermented-code-modelling-the-microbial-through-miso/\">\nFermented Code: Modelling the Microbial Through Miso - Serpentine Galleries\n</a>\n</h3>\n\n<p>Y’know, I started reading this great piece by Claire L. Evans thinking about its connections to systems thinking, but I ended up thinking more about prototyping. And microbes.</p>",
             "value": "Fermented Code: Modelling the Microbial Through Miso - Serpentine Galleries\n\n\n\nY’know, I started reading this great piece by Claire L. Evans thinking about its connections to systems thinking, but I ended up thinking more about prototyping. And microbes."
           }
@@ -1024,63 +1080,6 @@
     },
     {
       "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "name": [
-          "Let’s get logical"
-        ],
-        "url": [
-          "https://adactio.com/journal/19457"
-        ],
-        "content": [
-          {
-            "html": "<p>I was refactoring some CSS on <a href=\"https://thesession.org/\">The Session</a> over the weekend. I thought it would be good to switch over to using <a href=\"https://web.dev/learn/css/logical-properties/\">logical properties</a> exclusively. I did this partly to make the site more easily translatable into languages with different writing modes, but mostly as an exercise to help train <em>me</em> in thinking with logical properties by default.</p>\n\n<p>All in all, it went pretty smoothly. You can kick the tyres by opening up dev tools on <a href=\"https://thesession.org/\">The Session</a> and adding a <code>writing-mode</code> declaration to the <code>body</code> or <code>html</code> element.</p>\n\n<p>For the most part, the switchover was smooth. It mostly involved swapping out property names with <code>left</code>, <code>right</code>, <code>top</code>, and <code>bottom</code> for <code>inline-start</code>, <code>inline-end</code>, <code>block-start</code>, and <code>block-end</code>.</p>\n\n<p>The <code>border-radius</code> properties tripped me up a little. You have to use shorthand like <code>border-start-end-radius</code>, not <code>border-block-start-inline-end-radius</code> (that doesn’t exist). So you have to keep the order of the properties in mind:</p>\n\n<p><code>\nborder-{{block direction}}-{{inline-direction}}-radius\n</code></p>\n\n<p>Speaking of shorthand, I also had to kiss some shorthand declarations goodbye. Let’s say I use this shorthand for something like <code>margin</code> or <code>padding</code>:</p>\n\n<p><code>\nmargin: 1em 1.5em 2em 0.5em;\n</code></p>\n\n<p>Those values get applied to <code>margin-top</code>, <code>margin-right</code>, <code>margin-bottom</code>, and <code>margin-left</code>, <em>not</em> the logical equivalents (<code>block-start</code>, <code>inline-end</code>, <code>block-end</code>, and <code>inline-start</code>). So separate declarations are needed instead:</p>\n\n<p><code><pre>\nmargin-block-start: 1em;\nmargin-inline-end: 1.5em;\nmargin-block-end: 2em;\nmargin-inline-start: 0.5em;\n</pre></code></p>\n\n<p>Same goes for shorthand like this:</p>\n\n<p><code>\nmargin: 1em 2em;\n</code></p>\n\n<p>That needs to be written as two declarations:</p>\n\n<p><code><pre>\nmargin-block: 1em;\nmargin-inline: 2em;\n</pre></code></p>\n\n<p>Now <a href=\"https://adactio.com/journal/18640\">I’ve said it before</a> and I’ll say it again: it feels really weird that you can’t use logical properties in media queries. Although as I said:</p>\n\n<blockquote>\n  <p>Now you could rightly argue that in this instance we’re talking about the physical dimensions of the viewport. So maybe width and height make more sense than inline and block.</p>\n</blockquote>\n\n<p>But along comes the new kid on the block (or inline), <a href=\"https://web.dev/learn/design/micro-layouts/#container-queries\">container queries</a>, ready to roll with <code>container-type</code> values like <code>inline-size</code>. I hope it’s just a matter of time until we can use logical properties in all our conditional queries.</p>\n\n<p>The other place where there’s still a cognitive mismatch is in transforms and animations. We’ve got a <code>translateX()</code> function but no <code>translate-inline()</code>. We’ve got <code>translateY()</code> but no <code>translate-block()</code>.</p>\n\n<p>On <a href=\"https://thesession.org/\">The Session</a> I’m using some JavaScript to figure out the details of some animation effects. I’m using methods like <code>getBoundingClientRect()</code>. It doesn’t return logical properties. So if I ever want to adjust my animations based on writing direction, I’ll need to fork my JavaScript code.</p>\n\n<p>Oh, and one other thing: the <code>aspect-ratio</code> property takes values in the form of <code>width/height</code>, not <code>inline/block</code>. That makes sense if you’re dealing with images, videos, or other embedded content but it makes it really tricky to use <code>aspect-ratio</code> on elements that contain text. I mean, it works fine as long as the text is in a language using a top-to-bottom writing mode, but not for any other languages.</p>",
-            "value": "I was refactoring some CSS on The Session over the weekend. I thought it would be good to switch over to using logical properties exclusively. I did this partly to make the site more easily translatable into languages with different writing modes, but mostly as an exercise to help train me in thinking with logical properties by default.\n\nAll in all, it went pretty smoothly. You can kick the tyres by opening up dev tools on The Session and adding a writing-mode declaration to the body or html element.\n\nFor the most part, the switchover was smooth. It mostly involved swapping out property names with left, right, top, and bottom for inline-start, inline-end, block-start, and block-end.\n\nThe border-radius properties tripped me up a little. You have to use shorthand like border-start-end-radius, not border-block-start-inline-end-radius (that doesn’t exist). So you have to keep the order of the properties in mind:\n\n\nborder-{{block direction}}-{{inline-direction}}-radius\n\n\nSpeaking of shorthand, I also had to kiss some shorthand declarations goodbye. Let’s say I use this shorthand for something like margin or padding:\n\n\nmargin: 1em 1.5em 2em 0.5em;\n\n\nThose values get applied to margin-top, margin-right, margin-bottom, and margin-left, not the logical equivalents (block-start, inline-end, block-end, and inline-start). So separate declarations are needed instead:\n\n\nmargin-block-start: 1em;\nmargin-inline-end: 1.5em;\nmargin-block-end: 2em;\nmargin-inline-start: 0.5em;\n\n\nSame goes for shorthand like this:\n\n\nmargin: 1em 2em;\n\n\nThat needs to be written as two declarations:\n\n\nmargin-block: 1em;\nmargin-inline: 2em;\n\n\nNow I’ve said it before and I’ll say it again: it feels really weird that you can’t use logical properties in media queries. Although as I said:\n\n\n  Now you could rightly argue that in this instance we’re talking about the physical dimensions of the viewport. So maybe width and height make more sense than inline and block.\n\n\nBut along comes the new kid on the block (or inline), container queries, ready to roll with container-type values like inline-size. I hope it’s just a matter of time until we can use logical properties in all our conditional queries.\n\nThe other place where there’s still a cognitive mismatch is in transforms and animations. We’ve got a translateX() function but no translate-inline(). We’ve got translateY() but no translate-block().\n\nOn The Session I’m using some JavaScript to figure out the details of some animation effects. I’m using methods like getBoundingClientRect(). It doesn’t return logical properties. So if I ever want to adjust my animations based on writing direction, I’ll need to fork my JavaScript code.\n\nOh, and one other thing: the aspect-ratio property takes values in the form of width/height, not inline/block. That makes sense if you’re dealing with images, videos, or other embedded content but it makes it really tricky to use aspect-ratio on elements that contain text. I mean, it works fine as long as the text is in a language using a top-to-bottom writing mode, but not for any other languages."
-          }
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83253926"
-              ],
-              "longitude": [
-                "-0.11816187"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "published": [
-          "2022-09-15T16:47:31Z"
-        ],
-        "category": [
-          "css",
-          "logical",
-          "properties",
-          "styling",
-          "writingmodes",
-          "inline",
-          "block",
-          "margin",
-          "padding",
-          "borders",
-          "frontend",
-          "development",
-          "refactoring",
-          "thesession"
-        ],
-        "syndication": [
-          "https://adactio.medium.com/85625837821e"
-        ]
-      }
-    },
-    {
-      "type": [
         "h-card"
       ],
       "properties": {
@@ -1819,6 +1818,7 @@
       "https://adactio.com/includes/css/print.css"
     ],
     "bookmark": [
+      "https://adactio.com/links/19482",
       "https://adactio.com/links/19481",
       "https://adactio.com/journal/19480",
       "https://adactio.com/links/19479",
@@ -1837,10 +1837,22 @@
       "https://adactio.com/links/19464",
       "https://adactio.com/notes/19463",
       "https://adactio.com/links/19462",
-      "https://adactio.com/links/19461",
-      "https://adactio.com/journal/19457"
+      "https://adactio.com/links/19461"
     ],
     "tag": [
+      "https://adactio.com/tags/cli-fi",
+      "https://adactio.com/tags/sci-fi",
+      "https://adactio.com/tags/sciencefiction",
+      "https://adactio.com/tags/future",
+      "https://adactio.com/tags/history",
+      "https://adactio.com/tags/climate",
+      "https://adactio.com/tags/change",
+      "https://adactio.com/tags/writing",
+      "https://adactio.com/tags/publishing",
+      "https://adactio.com/tags/interview",
+      "https://adactio.com/tags/nuclear",
+      "https://adactio.com/tags/power",
+      "https://adactio.com/tags/energy",
       "https://adactio.com/tags/systems",
       "https://adactio.com/tags/thinking",
       "https://adactio.com/tags/modelling",
@@ -1864,7 +1876,6 @@
       "https://adactio.com/tags/collective",
       "https://adactio.com/tags/principles",
       "https://adactio.com/tags/software",
-      "https://adactio.com/tags/power",
       "https://adactio.com/tags/ownership",
       "https://adactio.com/tags/control",
       "https://adactio.com/tags/data",
@@ -1910,8 +1921,6 @@
       "https://adactio.com/tags/processes",
       "https://adactio.com/tags/technology",
       "https://adactio.com/tags/hype",
-      "https://adactio.com/tags/history",
-      "https://adactio.com/tags/future",
       "https://adactio.com/tags/hardware",
       "https://adactio.com/tags/blockchain",
       "https://adactio.com/tags/vr",
@@ -1923,8 +1932,6 @@
       "https://adactio.com/tags/ui",
       "https://adactio.com/tags/engineering",
       "https://adactio.com/tags/personal",
-      "https://adactio.com/tags/publishing",
-      "https://adactio.com/tags/writing",
       "https://adactio.com/tags/indieweb",
       "https://adactio.com/tags/slides",
       "https://adactio.com/tags/ethics",
@@ -1937,7 +1944,6 @@
       "https://adactio.com/tags/freedom",
       "https://adactio.com/tags/oneweb",
       "https://adactio.com/tags/environment",
-      "https://adactio.com/tags/climate",
       "https://adactio.com/tags/sustainability",
       "https://adactio.com/tags/smashingconf",
       "https://adactio.com/tags/dconstruct",
@@ -1959,8 +1965,7 @@
       "https://adactio.com/tags/padding",
       "https://adactio.com/tags/borders",
       "https://adactio.com/tags/refactoring",
-      "https://adactio.com/tags/standards",
-      "https://adactio.com/tags/thesession"
+      "https://adactio.com/tags/standards"
     ],
     "syndication": [
       "https://adactio.medium.com/d10442fec7b2",
@@ -1970,8 +1975,7 @@
       "https://www.swarmapp.com/user/112073/checkin/632b65058d1ace43f39a2957",
       "https://twitter.com/adactio/status/1572535711714377730",
       "https://adactio.medium.com/dd9e411247ef",
-      "https://www.swarmapp.com/user/112073/checkin/63273b4f52383b62426f0258",
-      "https://adactio.medium.com/85625837821e"
+      "https://www.swarmapp.com/user/112073/checkin/63273b4f52383b62426f0258"
     ],
     "next": [
       "https://adactio.com/?start=20"
@@ -2362,6 +2366,90 @@
       ],
       "text": "music"
     },
+    "https://adactio.com/links/19482": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n4:21pm\n\n"
+    },
+    "https://adactio.com/tags/cli-fi": {
+      "rels": [
+        "tag"
+      ],
+      "text": "cli-fi"
+    },
+    "https://adactio.com/tags/sci-fi": {
+      "rels": [
+        "tag"
+      ],
+      "text": "sci-fi"
+    },
+    "https://adactio.com/tags/sciencefiction": {
+      "rels": [
+        "tag"
+      ],
+      "text": "sciencefiction"
+    },
+    "https://adactio.com/tags/future": {
+      "rels": [
+        "tag"
+      ],
+      "text": "future"
+    },
+    "https://adactio.com/tags/history": {
+      "rels": [
+        "tag"
+      ],
+      "text": "history"
+    },
+    "https://adactio.com/tags/climate": {
+      "rels": [
+        "tag"
+      ],
+      "text": "climate"
+    },
+    "https://adactio.com/tags/change": {
+      "rels": [
+        "tag"
+      ],
+      "text": "change"
+    },
+    "https://adactio.com/tags/writing": {
+      "rels": [
+        "tag"
+      ],
+      "text": "writing"
+    },
+    "https://adactio.com/tags/publishing": {
+      "rels": [
+        "tag"
+      ],
+      "text": "publishing"
+    },
+    "https://adactio.com/tags/interview": {
+      "rels": [
+        "tag"
+      ],
+      "text": "interview"
+    },
+    "https://adactio.com/tags/nuclear": {
+      "rels": [
+        "tag"
+      ],
+      "text": "nuclear"
+    },
+    "https://adactio.com/tags/power": {
+      "rels": [
+        "tag"
+      ],
+      "text": "power"
+    },
+    "https://adactio.com/tags/energy": {
+      "rels": [
+        "tag"
+      ],
+      "text": "energy"
+    },
     "https://adactio.com/links/19481": {
       "rels": [
         "bookmark"
@@ -2522,12 +2610,6 @@
         "tag"
       ],
       "text": "software"
-    },
-    "https://adactio.com/tags/power": {
-      "rels": [
-        "tag"
-      ],
-      "text": "power"
     },
     "https://adactio.com/tags/ownership": {
       "rels": [
@@ -2895,18 +2977,6 @@
       ],
       "text": "hype"
     },
-    "https://adactio.com/tags/history": {
-      "rels": [
-        "tag"
-      ],
-      "text": "history"
-    },
-    "https://adactio.com/tags/future": {
-      "rels": [
-        "tag"
-      ],
-      "text": "future"
-    },
     "https://adactio.com/tags/hardware": {
       "rels": [
         "tag"
@@ -2978,18 +3048,6 @@
         "tag"
       ],
       "text": "personal"
-    },
-    "https://adactio.com/tags/publishing": {
-      "rels": [
-        "tag"
-      ],
-      "text": "publishing"
-    },
-    "https://adactio.com/tags/writing": {
-      "rels": [
-        "tag"
-      ],
-      "text": "writing"
     },
     "https://adactio.com/tags/indieweb": {
       "rels": [
@@ -3074,12 +3132,6 @@
         "tag"
       ],
       "text": "environment"
-    },
-    "https://adactio.com/tags/climate": {
-      "rels": [
-        "tag"
-      ],
-      "text": "climate"
     },
     "https://adactio.com/tags/sustainability": {
       "rels": [
@@ -3236,24 +3288,6 @@
         "tag"
       ],
       "text": "standards"
-    },
-    "https://adactio.com/journal/19457": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n4:47pm\n\n"
-    },
-    "https://adactio.com/tags/thesession": {
-      "rels": [
-        "tag"
-      ],
-      "text": "thesession"
-    },
-    "https://adactio.medium.com/85625837821e": {
-      "rels": [
-        "syndication"
-      ],
-      "text": "Medium"
     },
     "https://adactio.com/?start=20": {
       "rels": [

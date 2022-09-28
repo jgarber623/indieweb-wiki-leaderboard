@@ -15,6 +15,7 @@
     ],
     "dns-prefetch": [
       "https://www.googletagmanager.com/",
+      "https://fonts.googleapis.com/",
       "https://s.w.org/",
       "https://v0.wordpress.com/",
       "https://i0.wp.com/",
@@ -26,14 +27,20 @@
       "https://2.gravatar.com/",
       "https://c0.wp.com/"
     ],
+    "preconnect": [
+      "https://fonts.gstatic.com/"
+    ],
     "stylesheet": [
       "https://marcoraaphorst.nl/wp-content/plugins/sem-external-links/sem-external-links.css?ver=20090903",
       "https://c0.wp.com/c/6.0.2/wp-includes/css/dist/block-library/style.min.css",
       "https://c0.wp.com/c/6.0.2/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css",
       "https://c0.wp.com/c/6.0.2/wp-includes/js/mediaelement/wp-mediaelement.min.css",
-      "https://marcoraaphorst.nl/wp-content/themes/twentytwentyone/style.css?ver=1.6",
+      "https://marcoraaphorst.nl/wp-content/plugins/twentig/dist/style-index.css?ver=75fec19f619acfe1994e",
+      "https://marcoraaphorst.nl/wp-content/plugins/twentig/dist/css/twentytwentyone/theme-style.min.css?ver=1.5",
       "https://marcoraaphorst.nl/wp-content/themes/twentytwentyone/assets/css/print.css?ver=1.6",
       "https://c0.wp.com/p/jetpack/11.3.2/modules/theme-tools/compat/twentytwentyone.css",
+      "https://marcoraaphorst.nl/wp-content/plugins/twentig/dist/css/twentytwentyone/style.min.css?ver=1.4.8",
+      "https://fonts.googleapis.com/css2?family=Inter%3Aital%2Cwght%400%2C400%3B0%2C700%3B1%2C400&display=swap",
       "https://c0.wp.com/p/jetpack/11.3.2/css/jetpack.css",
       "https://marcoraaphorst.nl/wp-content/plugins/gigpress/css/gigpress.css?ver=6.0.2"
     ],
@@ -53,14 +60,7 @@
     "apple-touch-icon": [
       "https://i0.wp.com/marcoraaphorst.nl/wp-content/uploads/2021/03/cropped-cropped-profiel-foto-2019-raaphorst-990px.jpg?fit=180%2C180&ssl=1"
     ],
-    "category": [
-      "https://marcoraaphorst.nl/categorie/muziek-geluid-podcast/",
-      "https://marcoraaphorst.nl/categorie/uitgesproken/",
-      "https://marcoraaphorst.nl/categorie/portfolio/"
-    ],
     "tag": [
-      "https://marcoraaphorst.nl/categorie/muziek-geluid-podcast/",
-      "https://marcoraaphorst.nl/categorie/uitgesproken/",
       "https://marcoraaphorst.nl/tag/creativiteit/",
       "https://marcoraaphorst.nl/tag/david-bowie/",
       "https://marcoraaphorst.nl/tag/kunst/",
@@ -77,7 +77,6 @@
       "https://marcoraaphorst.nl/tag/computer/",
       "https://marcoraaphorst.nl/tag/leven/",
       "https://marcoraaphorst.nl/tag/smartphone/",
-      "https://marcoraaphorst.nl/categorie/portfolio/",
       "https://marcoraaphorst.nl/tag/bob-gaulke/",
       "https://marcoraaphorst.nl/tag/gitaar/",
       "https://marcoraaphorst.nl/tag/gitaarspelen/",
@@ -106,6 +105,11 @@
       ]
     },
     "https://www.googletagmanager.com/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
+    "https://fonts.googleapis.com/": {
       "rels": [
         "dns-prefetch"
       ]
@@ -160,6 +164,11 @@
         "dns-prefetch"
       ]
     },
+    "https://fonts.gstatic.com/": {
+      "rels": [
+        "preconnect"
+      ]
+    },
     "https://marcoraaphorst.nl/feed/": {
       "rels": [
         "alternate"
@@ -198,7 +207,13 @@
       ],
       "media": "all"
     },
-    "https://marcoraaphorst.nl/wp-content/themes/twentytwentyone/style.css?ver=1.6": {
+    "https://marcoraaphorst.nl/wp-content/plugins/twentig/dist/style-index.css?ver=75fec19f619acfe1994e": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://marcoraaphorst.nl/wp-content/plugins/twentig/dist/css/twentytwentyone/theme-style.min.css?ver=1.5": {
       "rels": [
         "stylesheet"
       ],
@@ -211,6 +226,18 @@
       "media": "print"
     },
     "https://c0.wp.com/p/jetpack/11.3.2/modules/theme-tools/compat/twentytwentyone.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://marcoraaphorst.nl/wp-content/plugins/twentig/dist/css/twentytwentyone/style.min.css?ver=1.4.8": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://fonts.googleapis.com/css2?family=Inter%3Aital%2Cwght%400%2C400%3B0%2C700%3B1%2C400&display=swap": {
       "rels": [
         "stylesheet"
       ],
@@ -261,20 +288,6 @@
       "rels": [
         "apple-touch-icon"
       ]
-    },
-    "https://marcoraaphorst.nl/categorie/muziek-geluid-podcast/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "muziek/geluid/podcast"
-    },
-    "https://marcoraaphorst.nl/categorie/uitgesproken/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "uitgesproken"
     },
     "https://marcoraaphorst.nl/tag/creativiteit/": {
       "rels": [
@@ -371,13 +384,6 @@
         "tag"
       ],
       "text": "smartphone"
-    },
-    "https://marcoraaphorst.nl/categorie/portfolio/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "portfolio"
     },
     "https://marcoraaphorst.nl/tag/bob-gaulke/": {
       "rels": [
