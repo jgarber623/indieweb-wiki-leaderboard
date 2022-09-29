@@ -1,20 +1,94 @@
 {
   "items": [],
   "rels": {
-    "icon": [
-      "http://www.pierre-o.fr/favicon.ico"
+    "dns-prefetch": [
+      "http://s.w.org/"
     ],
-    "shortcut": [
-      "http://www.pierre-o.fr/favicon.ico"
+    "alternate": [
+      "https://pierre-o.fr/feed/",
+      "https://pierre-o.fr/comments/feed/"
+    ],
+    "stylesheet": [
+      "http://pierre-o.fr/wp-includes/blocks/navigation/style.min.css?ver=6.0.2",
+      "http://pierre-o.fr/wp-content/themes/twentytwentytwo/style.css?ver=1.2"
+    ],
+    "https://api.w.org/": [
+      "https://pierre-o.fr/wp-json/"
+    ],
+    "EditURI": [
+      "https://pierre-o.fr/xmlrpc.php?rsd"
+    ],
+    "wlwmanifest": [
+      "http://pierre-o.fr/wp-includes/wlwmanifest.xml"
+    ],
+    "home": [
+      "https://pierre-o.fr/"
+    ],
+    "nofollow": [
+      "https://fr.wordpress.org/"
     ]
   },
   "rel-urls": {
-    "http://www.pierre-o.fr/favicon.ico": {
+    "http://s.w.org/": {
       "rels": [
-        "icon",
-        "shortcut"
+        "dns-prefetch"
+      ]
+    },
+    "https://pierre-o.fr/feed/": {
+      "rels": [
+        "alternate"
       ],
-      "type": "image/x-icon"
+      "title": "Pierre-O.fr » Flux",
+      "type": "application/rss+xml"
+    },
+    "https://pierre-o.fr/comments/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Pierre-O.fr » Flux des commentaires",
+      "type": "application/rss+xml"
+    },
+    "http://pierre-o.fr/wp-includes/blocks/navigation/style.min.css?ver=6.0.2": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "http://pierre-o.fr/wp-content/themes/twentytwentytwo/style.css?ver=1.2": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://pierre-o.fr/wp-json/": {
+      "rels": [
+        "https://api.w.org/"
+      ]
+    },
+    "https://pierre-o.fr/xmlrpc.php?rsd": {
+      "rels": [
+        "EditURI"
+      ],
+      "title": "RSD",
+      "type": "application/rsd+xml"
+    },
+    "http://pierre-o.fr/wp-includes/wlwmanifest.xml": {
+      "rels": [
+        "wlwmanifest"
+      ],
+      "type": "application/wlwmanifest+xml"
+    },
+    "https://pierre-o.fr/": {
+      "rels": [
+        "home"
+      ],
+      "text": "Pierre-O.fr"
+    },
+    "https://fr.wordpress.org/": {
+      "rels": [
+        "nofollow"
+      ],
+      "text": "WordPress"
     }
   }
 }

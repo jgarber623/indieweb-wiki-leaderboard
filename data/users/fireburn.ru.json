@@ -10,8 +10,8 @@
         ],
         "url": [
           "https://fireburn.ru/",
-          "https://gitlab.com/vikanezrimaya",
-          "https://github.com/vikanezrimaya"
+          "https://sr.ht/~vikanezrimaya/",
+          "https://matrix.to/#/@vika:fireburn.ru"
         ],
         "uid": [
           "https://fireburn.ru/"
@@ -37,6 +37,62 @@
         ]
       },
       "children": [
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              "https://fireburn.ru/"
+            ],
+            "url": [
+              "https://fireburn.ru/posts/afSsLfi"
+            ],
+            "uid": [
+              "https://fireburn.ru/posts/afSsLfi"
+            ],
+            "published": [
+              "2022-09-29T03:44:26.443847998+03:00"
+            ],
+            "content": [
+              {
+                "html": "<p>i feel like destroying the universe</p>",
+                "value": "i feel like destroying the universe"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              "https://fireburn.ru/"
+            ],
+            "url": [
+              "https://fireburn.ru/posts/afR0agt",
+              "https://fireburn.ru/posts/legacy-indieauth-in-kittybox"
+            ],
+            "uid": [
+              "https://fireburn.ru/posts/afR0agt"
+            ],
+            "published": [
+              "2022-09-28T21:02:08.513843116+03:00"
+            ],
+            "category": [
+              "Kittybox",
+              "IndieWeb",
+              "IndieAuth"
+            ],
+            "content": [
+              {
+                "html": "<p>Since Kittybox (or more precisely, its IndieAuth library) doesn’t support omitting PKCE, I found myself unable to log into some apps like <a href=\"https://alltogethernow.io/\">Together</a>. Kinda sad, but that’s the price of being on the bleeding edge of the spec, with almost no support for legacy clients.</p>\n\n<p>Had to add <code>authorization_endpoint</code> and <code>token_endpoint</code> links into the header though, because it might be that I am pretty much the only one to use the newest spec and properly implement it. For now.</p>\n\n<p>Next step could probably be actually making webmentions work...</p>",
+                "value": "Since Kittybox (or more precisely, its IndieAuth library) doesn’t support omitting PKCE, I found myself unable to log into some apps like Together. Kinda sad, but that’s the price of being on the bleeding edge of the spec, with almost no support for legacy clients.\n\nHad to add authorization_endpoint and token_endpoint links into the header though, because it might be that I am pretty much the only one to use the newest spec and properly implement it. For now.\n\nNext step could probably be actually making webmentions work..."
+              }
+            ]
+          }
+        },
         {
           "type": [
             "h-entry"
@@ -551,68 +607,6 @@
               }
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "author": [
-              "https://fireburn.ru/"
-            ],
-            "url": [
-              "https://fireburn.ru/posts/aQTVSRS"
-            ],
-            "uid": [
-              "https://fireburn.ru/posts/aQTVSRS"
-            ],
-            "published": [
-              "2022-05-08T05:57:59.126438105+03:00"
-            ],
-            "category": [
-              "kittybox",
-              "quill"
-            ],
-            "content": [
-              {
-                "html": "<p>it feels good to write again but <a href=\"https://quill.p3k.io/\">quill</a> post editor is not good for tecnical posts with a lot of code because it seems to collapse whitespace in pre blocks</p>\n\n<p>i really need my own editor</p>",
-                "value": "it feels good to write again but quill post editor is not good for tecnical posts with a lot of code because it seems to collapse whitespace in pre blocks\n\ni really need my own editor"
-              }
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Mending what's broken, or how I discovered some broken links on my website"
-            ],
-            "author": [
-              "https://fireburn.ru/"
-            ],
-            "url": [
-              "https://fireburn.ru/posts/aQTPbzL",
-              "https://fireburn.ru/posts/mending-broken-permalinks-part-1"
-            ],
-            "uid": [
-              "https://fireburn.ru/posts/aQTPbzL"
-            ],
-            "published": [
-              "2022-05-08T05:37:01.160733218+03:00"
-            ],
-            "category": [
-              "kittybox",
-              "indieweb"
-            ],
-            "content": [
-              {
-                "html": "<p>\n  It was a restless night. I just fixed my personal website's software, Kittybox, so it wouldn't hang after the first few hours of working (I hope my bugfix finally worked! I've been chasing that bug for months). In an attempt to stimulate my bored brain I was reading some articles on the <a href=\"https://indieweb.org/Main_Page\">IndieWeb wiki</a> and stumbled upon discussions that my posts on this very website sparked.\n  <br>\n</p>\n<p>Except the links didn't work. Argh, I can't read my own posts, this won't do!</p>\n<p>Of course, this was all my fault. But, thanks to past me having a lot of foresight, this should be rather easy to fix. First thing I decided to do was to patch articles containing links to my posts so the links would actually point to something - despite me wiping my website's main feed, all of the articles are still there because I know some people in the IndieWeb community have been linking to me. The second thing I did not do yet, and if I don't write it down, I might forget it all, so here's the post so I don't forget to do it.</p>\n<h2>Preserving compatibility</h2>\n<p>When I was designing the first versions of Kittybox (back then it didn't even had the name!) I was very inspired by <a href=\"https://00dani.me/\">00dani.me</a>'s proposed <a href=\"https://00dani.me/articles/53/lemoncurry-1-10-0-what-s-new-and-what-s-next\">approach</a> of storing MF2-JSON directly in the database. First I stored it in flat files. Then, as I realized my file storage is incredibly slow, I migrated to Redis to keep my dataset in memory. Then several rewrites happened, and the Rust rewrite happened. The database's underlying format was still almost the same, so it was rather easy to port it over. Except I might've forgotten an important step.</p>\n<p>In Kittybox, one post can contain several links. One of them is a UID - an authoritative link to the post, the one that Kittybox would use as a primary key in an SQL database if it used one. But since I use the filesystem as my database, the authoritative link gets transformed into an authoritative path which refers directly to the file with the MF2-JSON blob. All other links are supposed to be symlinks.</p>\n<p>Except apparently when I was importing the posts in the new file storage backend, I somehow forgot to make all of those symlinks. And that's why the posts don't work.</p>\n<h2>Past Vika's foresight</h2>\n<p>Storing the posts in MF2-JSON as processed Micropub data was actually a very good idea. Pretty much all versions of Kittybox filled in alternative URLs (which would be u-url in MF2-HTML and .properties.url[] in MF2-JSON) which actually can be used to restore those permalinks!</p>\n<p>\n  Eventually permalink checking will need to be built into the software itself as a consistency check. I could probably write it like this:\n  <br>\n</p>\n<pre><code>\nuse futures::stream::StreamExt;\nlet urls = json[\"properties\"][\"url\"]\n    .as_array()\n    .unwrap_or_default()\n    .into_iter()\n    .filter_map(|s: serde_json::Value| s.as_str().ok())\n    .map(|url| url_to_path(&amp;self.root_dir, url);\n\nlet mut url_stream = tokio_stream::iter(urls);\nurl_stream.for_each_concurrent(2, |path| async move {\n    if let Err(err) = tokio::fs::symlink_metadata(path).await {\n        if err.kind() == std::io::ErrorKind::NotFound {\n            let link = url_to_path(&amp;self.root_dir, url);\n            let basedir = link.parent();\n            if basedir.is_err() {\n                warn!(\"Database consistency check: couldn't calculate parent for {}\", link);\n                return;\n            }\n            let basedir = basedir.unwrap();\n            let relative = path_relative_from(&amp;canonical_path, basedir).unwrap();\n            if let Err(Err) = tokio::fs::symlink(relative, link).await {\n                warn!(\"Database consistency check: failed to restore symlink {} for {}: {:?}\", canonical, path);\n            }\n        }\n    }\n});</code></pre>\n<p>I'm pretty sure this won't compile out of the box because of borrow checking and variables which need to be bound, but you get the idea. It can be performed on every read (for maximum correctness) or there could be scheduled tasks that sweep the database and perform those consistency checks - I think the second one is the better idea, since it allows me to check even posts that were completely forgotten by everyone. But I'll need to learn how to schedule tasks to run at certain intervals in Tokio - I'm sure there's a function for that though.</p>\n<h3>\n  When will it be complete?\n  <br>\n</h3>\n<p>I hope it will be built into the software soon. For now, I will leave this as a to-do of sorts. A reminder to myself and an example for the others - of both my foresight and my mistakes.</p>\n<p>And for now, I could potentially build a script that recursively walks my directory tree and restores symlinks via a cron job. It'll probably work just as well too. But I'll do it later. <i>I wanna sleep...and coffeeeee....</i></p>",
-                "value": "It was a restless night. I just fixed my personal website's software, Kittybox, so it wouldn't hang after the first few hours of working (I hope my bugfix finally worked! I've been chasing that bug for months). In an attempt to stimulate my bored brain I was reading some articles on the IndieWeb wiki and stumbled upon discussions that my posts on this very website sparked.\n  \n\nExcept the links didn't work. Argh, I can't read my own posts, this won't do!\nOf course, this was all my fault. But, thanks to past me having a lot of foresight, this should be rather easy to fix. First thing I decided to do was to patch articles containing links to my posts so the links would actually point to something - despite me wiping my website's main feed, all of the articles are still there because I know some people in the IndieWeb community have been linking to me. The second thing I did not do yet, and if I don't write it down, I might forget it all, so here's the post so I don't forget to do it.\nPreserving compatibility\nWhen I was designing the first versions of Kittybox (back then it didn't even had the name!) I was very inspired by 00dani.me's proposed approach of storing MF2-JSON directly in the database. First I stored it in flat files. Then, as I realized my file storage is incredibly slow, I migrated to Redis to keep my dataset in memory. Then several rewrites happened, and the Rust rewrite happened. The database's underlying format was still almost the same, so it was rather easy to port it over. Except I might've forgotten an important step.\nIn Kittybox, one post can contain several links. One of them is a UID - an authoritative link to the post, the one that Kittybox would use as a primary key in an SQL database if it used one. But since I use the filesystem as my database, the authoritative link gets transformed into an authoritative path which refers directly to the file with the MF2-JSON blob. All other links are supposed to be symlinks.\nExcept apparently when I was importing the posts in the new file storage backend, I somehow forgot to make all of those symlinks. And that's why the posts don't work.\nPast Vika's foresight\nStoring the posts in MF2-JSON as processed Micropub data was actually a very good idea. Pretty much all versions of Kittybox filled in alternative URLs (which would be u-url in MF2-HTML and .properties.url[] in MF2-JSON) which actually can be used to restore those permalinks!\n\n  Eventually permalink checking will need to be built into the software itself as a consistency check. I could probably write it like this:\n  \n\n\nuse futures::stream::StreamExt;\nlet urls = json[\"properties\"][\"url\"]\n    .as_array()\n    .unwrap_or_default()\n    .into_iter()\n    .filter_map(|s: serde_json::Value| s.as_str().ok())\n    .map(|url| url_to_path(&self.root_dir, url);\n\nlet mut url_stream = tokio_stream::iter(urls);\nurl_stream.for_each_concurrent(2, |path| async move {\n    if let Err(err) = tokio::fs::symlink_metadata(path).await {\n        if err.kind() == std::io::ErrorKind::NotFound {\n            let link = url_to_path(&self.root_dir, url);\n            let basedir = link.parent();\n            if basedir.is_err() {\n                warn!(\"Database consistency check: couldn't calculate parent for {}\", link);\n                return;\n            }\n            let basedir = basedir.unwrap();\n            let relative = path_relative_from(&canonical_path, basedir).unwrap();\n            if let Err(Err) = tokio::fs::symlink(relative, link).await {\n                warn!(\"Database consistency check: failed to restore symlink {} for {}: {:?}\", canonical, path);\n            }\n        }\n    }\n});\nI'm pretty sure this won't compile out of the box because of borrow checking and variables which need to be bound, but you get the idea. It can be performed on every read (for maximum correctness) or there could be scheduled tasks that sweep the database and perform those consistency checks - I think the second one is the better idea, since it allows me to check even posts that were completely forgotten by everyone. But I'll need to learn how to schedule tasks to run at certain intervals in Tokio - I'm sure there's a function for that though.\n\n  When will it be complete?\n  \n\nI hope it will be built into the software soon. For now, I will leave this as a to-do of sorts. A reminder to myself and an example for the others - of both my foresight and my mistakes.\nAnd for now, I could potentially build a script that recursively walks my directory tree and restores symlinks via a cron job. It'll probably work just as well too. But I'll do it later. I wanna sleep...and coffeeeee...."
-              }
-            ]
-          }
         }
       ]
     }
@@ -640,14 +634,14 @@
       "https://fireburn.ru/.kittybox/indieauth/token"
     ],
     "me": [
-      "https://gitlab.com/vikanezrimaya",
-      "https://github.com/vikanezrimaya"
+      "https://sr.ht/~vikanezrimaya/",
+      "https://matrix.to/#/@vika:fireburn.ru"
     ],
     "feed": [
       "https://fireburn.ru/feeds/main"
     ],
     "prev": [
-      "https://fireburn.ru/feeds/main?after=https://fireburn.ru/posts/aQTPbzL"
+      "https://fireburn.ru/feeds/main?after=https://fireburn.ru/posts/aQVY30Z"
     ]
   },
   "rel-urls": {
@@ -686,17 +680,17 @@
         "token_endpoint"
       ]
     },
-    "https://gitlab.com/vikanezrimaya": {
+    "https://sr.ht/~vikanezrimaya/": {
       "rels": [
         "me"
       ],
-      "text": "https://gitlab.com/vikanezrimaya"
+      "text": "https://sr.ht/~vikanezrimaya/"
     },
-    "https://github.com/vikanezrimaya": {
+    "https://matrix.to/#/@vika:fireburn.ru": {
       "rels": [
         "me"
       ],
-      "text": "https://github.com/vikanezrimaya"
+      "text": "https://matrix.to/#/@vika:fireburn.ru"
     },
     "https://fireburn.ru/feeds/main": {
       "rels": [
@@ -704,7 +698,7 @@
       ],
       "text": "Main feed"
     },
-    "https://fireburn.ru/feeds/main?after=https://fireburn.ru/posts/aQTPbzL": {
+    "https://fireburn.ru/feeds/main?after=https://fireburn.ru/posts/aQVY30Z": {
       "rels": [
         "prev"
       ],

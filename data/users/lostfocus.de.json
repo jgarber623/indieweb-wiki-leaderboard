@@ -53,6 +53,54 @@
           ],
           "properties": {
             "name": [
+              "The Maker"
+            ],
+            "content": [
+              {
+                "html": "<p>Bookmarked <a class=\"u-bookmark-of\" href=\"https://vimeo.com/152218119\">https://vimeo.com/152218119</a>.</p>\n<div class=\"e-content\">\nI’m usually not the biggest fan of \"inspirational\" content but this one is really worth watching. What a credit to the filmmaker that he is able to capture the passion of his subject in such a touching way.\n</div>",
+                "value": "Bookmarked https://vimeo.com/152218119.\n\nI’m usually not the biggest fan of \"inspirational\" content but this one is really worth watching. What a credit to the filmmaker that he is able to capture the passion of his subject in such a touching way."
+              },
+              {
+                "html": "I’m usually not the biggest fan of \"inspirational\" content but this one is really worth watching. What a credit to the filmmaker that he is able to capture the passion of his subject in such a touching way.",
+                "value": "I’m usually not the biggest fan of \"inspirational\" content but this one is really worth watching. What a credit to the filmmaker that he is able to capture the passion of his subject in such a touching way."
+              }
+            ],
+            "bookmark-of": [
+              "https://vimeo.com/152218119"
+            ],
+            "url": [
+              "https://lostfocus.de/2022/09/28/the-maker/"
+            ],
+            "published": [
+              "2022-09-28T14:25:46+02:00"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "url": [
+                    "https://lostfocus.de/"
+                  ],
+                  "photo": [
+                    "https://lostfocus.de/wp-content/themes/lostfocus-2020/image/ds-2020-square.jpg"
+                  ],
+                  "name": [
+                    "Dominik Schwind"
+                  ]
+                },
+                "value": "Dominik Schwind"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               ""
             ],
             "content": [
@@ -694,47 +742,6 @@
               "https://twitter.com/dominik/status/1569712397660700675"
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "How to mock a SoapClient request in PHPUnit"
-            ],
-            "content": [
-              {
-                "html": "<p>It is surprisingly hard to mock the <code>stdClass</code> response that we get from a <code>SoapClient</code> – there are workaround with <code>json_encode</code>/<code>json_decode</code> but that is really not a nice way to got about these things. <code>SimpleXML</code> doesn’t help, so why not use the <code>SoapClient</code> itself? Thanks to <a href=\"https://stackoverflow.com/questions/36406763/mock-soapclient-response-from-local-xml/56244749#56244749\">this comment</a> on StackOverflow we know how to do these things now.</p>\n\n\n\n<p>Let’s assume we have an example response and the WSDL file and that’s how we get the response: (and yes, I’m aware of the fact that I could just manually do that and have the finished <code>stdClass</code> in the test, but that seems tedious.)</p>\n\n\n\n<pre class=\"wp-block-code\"><code>$method = 'getData';\n$mockResonseFile = 'soapResponse.xml';\n$mockWsdl = 'test.wsdl';\n\n$xml = file_get_contents($mockResonseFile);\n\n$soapClientMock = $this-&gt;getMockBuilder(SoapClient::class)\n    -&gt;setConstructorArgs([$mockWsdl])\n    -&gt;onlyMethods(['__doRequest'])\n    -&gt;getMock();\n\n$soapClientMock-&gt;expects($this-&gt;once())-&gt;method('__doRequest')-&gt;willReturn($xml);\n\n$response = $soapClientMock-&gt;__soapCall($method, []);</code></pre>",
-                "value": "It is surprisingly hard to mock the stdClass response that we get from a SoapClient – there are workaround with json_encode/json_decode but that is really not a nice way to got about these things. SimpleXML doesn’t help, so why not use the SoapClient itself? Thanks to this comment on StackOverflow we know how to do these things now.\n\n\n\nLet’s assume we have an example response and the WSDL file and that’s how we get the response: (and yes, I’m aware of the fact that I could just manually do that and have the finished stdClass in the test, but that seems tedious.)\n\n\n\n$method = 'getData';\n$mockResonseFile = 'soapResponse.xml';\n$mockWsdl = 'test.wsdl';\n\n$xml = file_get_contents($mockResonseFile);\n\n$soapClientMock = $this->getMockBuilder(SoapClient::class)\n    ->setConstructorArgs([$mockWsdl])\n    ->onlyMethods(['__doRequest'])\n    ->getMock();\n\n$soapClientMock->expects($this->once())->method('__doRequest')->willReturn($xml);\n\n$response = $soapClientMock->__soapCall($method, []);"
-              }
-            ],
-            "url": [
-              "https://lostfocus.de/2022/09/13/how-to-mock-a-soapclient-request-in-phpunit/"
-            ],
-            "published": [
-              "2022-09-13T10:40:08+02:00"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "url": [
-                    "https://lostfocus.de/"
-                  ],
-                  "photo": [
-                    "https://lostfocus.de/wp-content/themes/lostfocus-2020/image/ds-2020-square.jpg"
-                  ],
-                  "name": [
-                    "Dominik Schwind"
-                  ]
-                },
-                "value": "Dominik Schwind"
-              }
-            ]
-          }
         }
       ]
     }
@@ -792,15 +799,8 @@
       "https://instagram.com/dominik",
       "https://github.com/lostfocus"
     ],
-    "syndication": [
-      "https://twitter.com/dominik/status/1574853371915341829",
-      "https://twitter.com/dominik/status/1574736858822709248",
-      "https://twitter.com/dominik/status/1573746277581463556",
-      "https://twitter.com/dominik/status/1572863021055090690",
-      "https://twitter.com/dominik/status/1570670792819740672",
-      "https://twitter.com/dominik/status/1569712397660700675"
-    ],
     "bookmark": [
+      "https://lostfocus.de/2022/09/28/the-maker/",
       "https://lostfocus.de/2022/09/26/introducing-meridian/",
       "https://lostfocus.de/2022/09/26/a-mysterious-voice-is-haunting-american-airlines-in-flight-announcements-and-nobody-knows-how/",
       "https://lostfocus.de/2022/09/22/how-platforms-turn-boring/",
@@ -808,8 +808,15 @@
       "https://lostfocus.de/2022/09/22/museums-on-prescription-brussels-tests-cultural-visits-to-treat-anxiety/",
       "https://lostfocus.de/2022/09/19/slack-reconsiders-the-green-dot-status-update/",
       "https://lostfocus.de/2022/09/19/20-mechanical-principles-combined-in-a-useless-lego-machine/",
-      "https://lostfocus.de/2022/09/19/the-10-year-old-tweet-that-still-defines-the-internet/",
-      "https://lostfocus.de/2022/09/13/how-to-mock-a-soapclient-request-in-phpunit/"
+      "https://lostfocus.de/2022/09/19/the-10-year-old-tweet-that-still-defines-the-internet/"
+    ],
+    "syndication": [
+      "https://twitter.com/dominik/status/1574853371915341829",
+      "https://twitter.com/dominik/status/1574736858822709248",
+      "https://twitter.com/dominik/status/1573746277581463556",
+      "https://twitter.com/dominik/status/1572863021055090690",
+      "https://twitter.com/dominik/status/1570670792819740672",
+      "https://twitter.com/dominik/status/1569712397660700675"
     ]
   },
   "rel-urls": {
@@ -932,6 +939,12 @@
       ],
       "text": "me on Twitter"
     },
+    "https://lostfocus.de/2022/09/28/the-maker/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "The Maker"
+    },
     "https://twitter.com/dominik/status/1574853371915341829": {
       "rels": [
         "syndication"
@@ -1015,12 +1028,6 @@
         "syndication"
       ],
       "text": "Twitter"
-    },
-    "https://lostfocus.de/2022/09/13/how-to-mock-a-soapclient-request-in-phpunit/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "How to mock a SoapClient request in PHPUnit"
     },
     "https://instagram.com/dominik": {
       "rels": [
