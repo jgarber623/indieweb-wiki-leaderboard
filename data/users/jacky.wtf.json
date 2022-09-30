@@ -133,6 +133,110 @@
                   "h-entry"
                 ],
                 "properties": {
+                  "content": [
+                    "you're talking about Mastodon/fediverse specifically, right? because indieweb encompasses a lot more than just that model"
+                  ],
+                  "author": [
+                    {
+                      "type": [
+                        "h-card"
+                      ],
+                      "properties": {
+                        "photo": [
+                          {
+                            "value": "https://pbs.twimg.com/profile_images/1477113672803622912/ljLUwFLP_normal.jpg",
+                            "alt": ""
+                          }
+                        ],
+                        "name": [
+                          "Aaron Parecki"
+                        ]
+                      },
+                      "value": "https://twitter.com/aaronpk"
+                    }
+                  ],
+                  "url": [
+                    "https://twitter.com/aaronpk/status/1575620814073843712"
+                  ]
+                },
+                "value": "https://twitter.com/aaronpk/status/1575620814073843712"
+              }
+            ],
+            "url": [
+              "https://jacky.wtf/2022/9/_QRQ"
+            ],
+            "published": [
+              "2022-09-29T22:58:44Z"
+            ],
+            "syndication": [
+              "https://twitter.com/aaronpk/status/1575620814073843712"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "like-of": [
+              {
+                "type": [
+                  "h-cite",
+                  "h-entry"
+                ],
+                "properties": {
+                  "name": [
+                    "Matrix Third Room"
+                  ],
+                  "summary": [
+                    "Back when the VRChat debacle took place, I’d rambled quite a lot about the idea of a standards-based truly-distributed VR system. I probably mentioned how back in the day I was designing something like that, and was intending to use XMPP as the actual transport mechanism; in my more recent reevaluation of the idea I was thinking that using WebRTC to stream the actual realtime data (voice, character animation, etc.) would be the way forward."
+                  ],
+                  "author": [
+                    {
+                      "type": [
+                        "h-card"
+                      ],
+                      "properties": {
+                        "photo": [
+                          {
+                            "value": "https://beesbuzz.biz/static/headshot.jpg",
+                            "alt": ""
+                          }
+                        ],
+                        "name": [
+                          "fluffy"
+                        ]
+                      },
+                      "value": "https://beesbuzz.biz/"
+                    }
+                  ],
+                  "url": [
+                    "https://beesbuzz.biz/blog/5558-Matrix-Third-Room"
+                  ]
+                },
+                "value": "https://beesbuzz.biz/blog/5558-Matrix-Third-Room"
+              }
+            ],
+            "url": [
+              "https://jacky.wtf/2022/9/g9z5"
+            ],
+            "published": [
+              "2022-09-29T19:03:39Z"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "like-of": [
+              {
+                "type": [
+                  "h-cite",
+                  "h-entry"
+                ],
+                "properties": {
                   "name": [
                     "Owning My Scrobbles"
                   ],
@@ -175,116 +279,6 @@
               "2022-09-25T03:00:04Z"
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "like-of": [
-              {
-                "type": [
-                  "h-cite",
-                  "h-entry"
-                ],
-                "properties": {
-                  "name": [
-                    "My Reading Stack"
-                  ],
-                  "content": [
-                    {
-                      "html": "<blockquote>\n<p>[M]y “Boring Reading Stack” uses Instapaper and my Kindle as the primary services to read content. […] My RSS reader of choice is Feedbin. […] The RSS feed of all my starred items is [piped] through IFTTT to Instapaper.</p>\n<br><p>—Stefan Zweifel, <cite><a href=\"https://stefanzweifel.io/posts/2021/09/13/boring-reading-stack\">Boring Reading Stack</a></cite></p>\n</blockquote>\n<br><p>Here’s mine:</p>\n<br><ul>\n<br><li>I still read off either a smartphone screen or computer monitor</li>\n<br><li>I’m using an RSS reader I built myself—well, it’s kind of a fork of <a href=\"https://github.com/aaronpk/Aperture\">Aperture</a> meets <a href=\"https://github.com/aaronpk/Monocle\">Monocle</a>, but quite different—and <em>doubles as a read-it-later app</em>\n</li>\n<br><li>I don’t do newsletters, ’cept those that offer RSS, of course</li>\n<br>\n</ul>\n<br><p>I used to also use <a href=\"https://github.com/wallabag/wallabag\">wallabag</a>, a read-it-later app that bypasses cookie walls and such, and that I’d set up to sign into paid-subscription sites on my behalf, but I’ve found I no longer need it.</p>\n<br><p>I’ve set up my RSS reader to fetch those paid articles instead, and I can send it random articles, too, using <a href=\"https://www.w3.org/TR/micropub/\">Micropub</a> and a <a href=\"https://jan.boddez.net/notes/332e2fd700\">bookmarklet</a> (or Indigenous on mobile). The way it works is I use those to create (private) “read” posts in my site’s CMS, which then adds, <a href=\"https://jan.boddez.net/articles/sending-webmention-notifications-to-my-social-reader\">again through Micropub</a>, the actual articles to my reader.</p>\n<br><p>This is less of a hassle than it may sound: Indigenous, for instance, is already tied to my CMS (through <a href=\"https://indieweb.org/IndieAuth\">IndieAuth</a>—think “Sign in with Twitter,” but with your <em>very own site</em> instead).</p>\n<br><p>Anyway, I’ve only got to host a single app anymore, and one that runs on just about any shared hosting platform at that!</p>",
-                      "value": "[M]y “Boring Reading Stack” uses Instapaper and my Kindle as the primary services to read content. […] My RSS reader of choice is Feedbin. […] The RSS feed of all my starred items is [piped] through IFTTT to Instapaper.—Stefan Zweifel, Boring Reading StackHere’s mine:I still read off either a smartphone screen or computer monitorI’m using an RSS reader I built myself—well, it’s kind of a fork of Aperture meets Monocle, but quite different—and doubles as a read-it-later appI don’t do newsletters, ’cept those that offer RSS, of courseI used to also use wallabag, a read-it-later app that bypasses cookie walls and such, and that I’d set up to sign into paid-subscription sites on my behalf, but I’ve found I no longer need it.I’ve set up my RSS reader to fetch those paid articles instead, and I can send it random articles, too, using Micropub and a bookmarklet (or Indigenous on mobile). The way it works is I use those to create (private) “read” posts in my site’s CMS, which then adds, again through Micropub, the actual articles to my reader.This is less of a hassle than it may sound: Indigenous, for instance, is already tied to my CMS (through IndieAuth—think “Sign in with Twitter,” but with your very own site instead).Anyway, I’ve only got to host a single app anymore, and one that runs on just about any shared hosting platform at that!"
-                    }
-                  ],
-                  "author": [
-                    {
-                      "type": [
-                        "h-card"
-                      ],
-                      "properties": {
-                        "photo": [
-                          {
-                            "value": "https://jan.boddez.net/images/photo.jpg",
-                            "alt": "Jan’s photo"
-                          }
-                        ],
-                        "name": [
-                          "Jan’s photo Jan Boddez"
-                        ]
-                      },
-                      "value": "https://jan.boddez.net/"
-                    }
-                  ],
-                  "url": [
-                    "https://jan.boddez.net/articles/my-reading-stack"
-                  ]
-                },
-                "value": "https://jan.boddez.net/articles/my-reading-stack"
-              }
-            ],
-            "url": [
-              "https://jacky.wtf/2022/9/Tf5z"
-            ],
-            "published": [
-              "2022-09-25T02:59:29Z"
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "like-of": [
-              {
-                "type": [
-                  "h-cite",
-                  "h-entry"
-                ],
-                "properties": {
-                  "name": [
-                    "Micropub, Crossposting to Twitter, and Enabling “Tweetstorms”"
-                  ],
-                  "content": [
-                    {
-                      "html": "<p>I’ve previously talked about how I <a href=\"https://jan.boddez.net/articles/micropub-syndication-targets-and-crossposting-to-mastodon\">crosspost from this blog to my Mastodon account</a> without the need for a third-party service, and how I leverage WordPress’s hook system to even <a href=\"https://jan.boddez.net/articles/tootstorms-using-micropub-and-share-on-mastodon\">enable toot threading</a>.</p>\n<br><p>In this post, I’m going to really quickly explain my (extremely similar) Twitter setup. (Note: I don’t actually syndicate <em>this</em> blog’s posts to Twitter, but I <em>do</em> use this very setup on another site of mine.)</p>\n<br><p>I liked the idea of a <a href=\"https://github.com/janboddez/share-on-twitter\">dead-simple Twitter plugin</a>, so I forked my Mastodon plugin and tweaked a few things here and there. Once I’ve installed it, and created a developer account, generated the necessary keys, and let WordPress know about them, things look, well, <em>very</em> familiar. In fact, crossposting should now <em>just work</em>.</p>\n<br><p>Now, to enable this when posting through Micropub rather than WordPress’s admin interface! Again, since posting through Micropub means no WordPress interface, and thus no “meta box” and no checkbox, and no way for WordPress to know if I wanted to crosspost a certain article or not, I’m going to have to use … <em>syndication targets</em> (which were invented precisely for this reason).</p>\n<br><p>First, I’m updating my Micropub config:</p>\n<br><pre><code>add_filter( 'micropub_syndicate-to', function( $syndicate_to, $user_id ) {<br>  return array(<br>    array(<br>      'uid'  =&gt; 'https://twitter.com/ochtendgrijs',<br>      'name' =&gt; 'Twitter',<br>    ),<br>    array(<br>      'uid'  =&gt; 'https://geekcompass.com/@jan',<br>      'name' =&gt; 'Mastodon',<br>    ),<br>  );<br>}, 10, 2 );</code></pre>\n<br><p>That should inform my Micropub client of the various endpoints my CMS supports.</p>\n<br><p>Then, the callback. As always, there’s quite a few ways to get what we want. What this snippet does, is set the custom field that tells Share on Twitter if it should crosspost, and then simply re-trigger the hook used by that same plugin.</p>\n<br><pre><code>add_action( 'micropub_syndication', function( $post_id, $synd_requested ) {<br>  $post      = get_post( $post_id );<br>  $syndicate = false;<br><br>  if ( in_array( 'https://twitter.com/ochtendgrijs', $synd_requested, true ) ) {<br>    // Update sharing setting.<br>    update_post_meta( $post_id, '_share_on_twitter', '1' );<br><br>    $syndicate = true;<br>  }<br><br>  if ( in_array( 'https://geekcompass.com/@jan', $synd_requested, true ) ) {<br>    // Update sharing setting.<br>    update_post_meta( $post_id, '_share_on_mastodon', '1' );<br><br>    $syndicate = true;<br>  }<br><br>  if ( $syndicate &amp;&amp; 'publish' === $post-&gt;post_status ) {<br>    // Re-run the `transition_post_status` hook, in order to trigger<br>    // syndication.<br>    wp_transition_post_status( 'publish', 'publish', $post );<br>  }<br>}, 10, 2 );</code></pre>\n<br><p><strong>Note:</strong> As the callback above is run <em>after</em> the <code>transition_post_status</code> hook, which is where the actual crossposting would’ve happened, we have to trigger it once more (for published posts only).</p>\n<br><p>And that’s literally all it takes to get syndication working in combination with Micropub! (Again, if you’ve seen my “Mastodon” implementation, all of this should be really familiar.)</p>\n<br><h2>Optional: Enabling Threaded Tweets</h2>\n<br><p>And, finally, the “Tweetstorm” bit, which is fairly ugly, mainly because I’m using <code>get_page_by_path()</code> instead of the somehow less robust—in my case—<code>url_to_postid()</code>. Also, part of this code references the specific custom post type I’m using for short-form content, and would not simply work elsewhere.</p>\n<br><p>Oh, and lastly, this would require you filter the actual statuses, too, so that they contain <em>actual notes</em> and not just a title and permalink.</p>\n<br><pre><code>add_filter( 'share_on_twitter_tweet_args', function( $args ) {<br>  $status = $args['status'];<br>  $post   = null;<br><br>  $pattern = '#&lt;a(?:.+?)href=\"' . home_url( '/notes/' ) . '(.+?)\"(?:.*?)&gt;(?:.+?)&lt;/a&gt;#'; // `notes`, without `front`, is what's definied as my note archive's permalink slug.<br><br>  if ( preg_match( $pattern, $status, $matches ) ) {<br>    // Status contains a link to an earlier note. Try to fetch it.<br>    $post = get_page_by_path( rtrim( $matches[1], '/' ), OBJECT, array( 'iwcpt_note' ) ); // `iwcpt_note` is my \"note\" CPT.<br>  } else {<br>    // Same thing, but for articles.<br>    $pattern = '#&lt;a(?:.+?)href=\"' . home_url( '/articles/' ) . '(.+?)\"(?:.*?)&gt;(?:.+?)&lt;/a&gt;#'; // The exact argument of `home_url()` would depend on your permalink `front`.<br><br>    if ( preg_match( $pattern, $status, $matches ) ) {<br>      // Status contains a link to an earlier article. Try to fetch it.<br>      $post = get_page_by_path( rtrim( $matches[1], '/' ), OBJECT, array( 'post' ) );<br>    }<br>  }<br><br>  if ( $post ) {<br>    $tweet_id = basename( get_post_meta( $post-&gt;ID, '_share_on_twitter_url', true ) );<br><br>    if ( ! empty( $tweet_id ) ) {<br>      $args['in_reply_to_status_id'] = $tweet_id ;<br><br>      // Twitter demands replies contain the username of the person replying to.<br>      $status = get_option( 'share_on_twitter_settings', array( 'twitter_username' =&gt; '' ) )['twitter_username'] . $status;<br>    }<br>  } elseif ( isset( $matches[1] ) ) {<br>    error_log( \"Could not convert URL to post ID for the page with slug {$matches[1]}.\" );<br>  }<br><br>  $args['status'] = trim( wp_strip_all_tags( $status ) );<br><br>  return $args;<br>} );</code></pre>\n<br><p><em><strong>Note:</strong> Still using <code>get_page_by_path()</code> rather than <code>url_to_postid()</code>, as that’s what works for me and my hacky WordPress install.</em></p>",
-                      "value": "I’ve previously talked about how I crosspost from this blog to my Mastodon account without the need for a third-party service, and how I leverage WordPress’s hook system to even enable toot threading.In this post, I’m going to really quickly explain my (extremely similar) Twitter setup. (Note: I don’t actually syndicate this blog’s posts to Twitter, but I do use this very setup on another site of mine.)I liked the idea of a dead-simple Twitter plugin, so I forked my Mastodon plugin and tweaked a few things here and there. Once I’ve installed it, and created a developer account, generated the necessary keys, and let WordPress know about them, things look, well, very familiar. In fact, crossposting should now just work.Now, to enable this when posting through Micropub rather than WordPress’s admin interface! Again, since posting through Micropub means no WordPress interface, and thus no “meta box” and no checkbox, and no way for WordPress to know if I wanted to crosspost a certain article or not, I’m going to have to use … syndication targets (which were invented precisely for this reason).First, I’m updating my Micropub config:add_filter( 'micropub_syndicate-to', function( $syndicate_to, $user_id ) {  return array(    array(      'uid'  => 'https://twitter.com/ochtendgrijs',      'name' => 'Twitter',    ),    array(      'uid'  => 'https://geekcompass.com/@jan',      'name' => 'Mastodon',    ),  );}, 10, 2 );That should inform my Micropub client of the various endpoints my CMS supports.Then, the callback. As always, there’s quite a few ways to get what we want. What this snippet does, is set the custom field that tells Share on Twitter if it should crosspost, and then simply re-trigger the hook used by that same plugin.add_action( 'micropub_syndication', function( $post_id, $synd_requested ) {  $post      = get_post( $post_id );  $syndicate = false;  if ( in_array( 'https://twitter.com/ochtendgrijs', $synd_requested, true ) ) {    // Update sharing setting.    update_post_meta( $post_id, '_share_on_twitter', '1' );    $syndicate = true;  }  if ( in_array( 'https://geekcompass.com/@jan', $synd_requested, true ) ) {    // Update sharing setting.    update_post_meta( $post_id, '_share_on_mastodon', '1' );    $syndicate = true;  }  if ( $syndicate && 'publish' === $post->post_status ) {    // Re-run the `transition_post_status` hook, in order to trigger    // syndication.    wp_transition_post_status( 'publish', 'publish', $post );  }}, 10, 2 );Note: As the callback above is run after the transition_post_status hook, which is where the actual crossposting would’ve happened, we have to trigger it once more (for published posts only).And that’s literally all it takes to get syndication working in combination with Micropub! (Again, if you’ve seen my “Mastodon” implementation, all of this should be really familiar.)Optional: Enabling Threaded TweetsAnd, finally, the “Tweetstorm” bit, which is fairly ugly, mainly because I’m using get_page_by_path() instead of the somehow less robust—in my case—url_to_postid(). Also, part of this code references the specific custom post type I’m using for short-form content, and would not simply work elsewhere.Oh, and lastly, this would require you filter the actual statuses, too, so that they contain actual notes and not just a title and permalink.add_filter( 'share_on_twitter_tweet_args', function( $args ) {  $status = $args['status'];  $post   = null;  $pattern = '#<a(?:.+?)href=\"' . home_url( '/notes/' ) . '(.+?)\"(?:.*?)>(?:.+?)</a>#'; // `notes`, without `front`, is what's definied as my note archive's permalink slug.  if ( preg_match( $pattern, $status, $matches ) ) {    // Status contains a link to an earlier note. Try to fetch it.    $post = get_page_by_path( rtrim( $matches[1], '/' ), OBJECT, array( 'iwcpt_note' ) ); // `iwcpt_note` is my \"note\" CPT.  } else {    // Same thing, but for articles.    $pattern = '#<a(?:.+?)href=\"' . home_url( '/articles/' ) . '(.+?)\"(?:.*?)>(?:.+?)</a>#'; // The exact argument of `home_url()` would depend on your permalink `front`.    if ( preg_match( $pattern, $status, $matches ) ) {      // Status contains a link to an earlier article. Try to fetch it.      $post = get_page_by_path( rtrim( $matches[1], '/' ), OBJECT, array( 'post' ) );    }  }  if ( $post ) {    $tweet_id = basename( get_post_meta( $post->ID, '_share_on_twitter_url', true ) );    if ( ! empty( $tweet_id ) ) {      $args['in_reply_to_status_id'] = $tweet_id ;      // Twitter demands replies contain the username of the person replying to.      $status = get_option( 'share_on_twitter_settings', array( 'twitter_username' => '' ) )['twitter_username'] . $status;    }  } elseif ( isset( $matches[1] ) ) {    error_log( \"Could not convert URL to post ID for the page with slug {$matches[1]}.\" );  }  $args['status'] = trim( wp_strip_all_tags( $status ) );  return $args;} );Note: Still using get_page_by_path() rather than url_to_postid(), as that’s what works for me and my hacky WordPress install."
-                    }
-                  ],
-                  "author": [
-                    {
-                      "type": [
-                        "h-card"
-                      ],
-                      "properties": {
-                        "photo": [
-                          {
-                            "value": "https://jan.boddez.net/images/photo.jpg",
-                            "alt": "Jan’s photo"
-                          }
-                        ],
-                        "name": [
-                          "Jan’s photo Jan Boddez"
-                        ]
-                      },
-                      "value": "https://jan.boddez.net/"
-                    }
-                  ],
-                  "url": [
-                    "https://jan.boddez.net/articles/micropub-crossposting-to-twitter-and-enabling-tweetstorms"
-                  ]
-                },
-                "value": "https://jan.boddez.net/articles/micropub-crossposting-to-twitter-and-enabling-tweetstorms"
-              }
-            ],
-            "url": [
-              "https://jacky.wtf/2022/9/a60d"
-            ],
-            "published": [
-              "2022-09-25T02:58:38Z"
-            ]
-          }
         }
       ]
     },
@@ -312,42 +306,15 @@
           "properties": {
             "content": [
               {
-                "html": "<p>My copy of \"You've Been Played\" (at <a href=\"https://bookshop.org/p/books/you-ve-been-played-how-corporations-governments-and-schools-use-games-to-control-us-all-adrian-hon/18041220?ean=9781541600171\">https://bookshop.org/p/books/you-ve-been-played-how-corporations-governments-and-schools-use-games-to-control-us-all-adrian-hon/18041220?ean=9781541600171</a> came recently from a pre-order. Very eager to dive into this one.</p>",
-                "value": "My copy of \"You've Been Played\" (at https://bookshop.org/p/books/you-ve-been-played-how-corporations-governments-and-schools-use-games-to-control-us-all-adrian-hon/18041220?ean=9781541600171 came recently from a pre-order. Very eager to dive into this one."
+                "html": "<p>I want to squeeze <a href=\"https://github.com/sveltejs/kit/blob/master/packages/adapter-node/src/handler.js\">https://github.com/sveltejs/kit/blob/master/packages/adapter-node/src/handler.js</a> into Rust somehow so I can get the SSR/CSR benefits of SvelteKit but from within Rust so I can use my own server. I wonder if I can do this somehow using WebAssembly.</p>",
+                "value": "I want to squeeze https://github.com/sveltejs/kit/blob/master/packages/adapter-node/src/handler.js into Rust somehow so I can get the SSR/CSR benefits of SvelteKit but from within Rust so I can use my own server. I wonder if I can do this somehow using WebAssembly."
               }
             ],
             "url": [
-              "https://jacky.wtf/2022/9/K2nJ"
+              "https://jacky.wtf/2022/9/fD1r"
             ],
             "published": [
-              "2022-09-25T19:57:49Z"
-            ],
-            "syndication": [
-              "https://twitter.com/jackyalcine/status/1574126069816463363",
-              "https://todon.eu/@jalcine/109060808848705442"
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "content": [
-              {
-                "html": "<p>it is so much easier to give in.</p>",
-                "value": "it is so much easier to give in."
-              }
-            ],
-            "url": [
-              "https://jacky.wtf/2022/9/3HZ2"
-            ],
-            "published": [
-              "2022-09-25T18:27:29Z"
-            ],
-            "syndication": [
-              "https://twitter.com/jackyalcine/status/1574103378573017088",
-              "https://todon.eu/@jalcine/109060454298882727"
+              "2022-09-30T03:31:05Z"
             ]
           }
         },
@@ -365,8 +332,8 @@
                 "properties": {
                   "content": [
                     {
-                      "html": "<p>I mentioned a while ago about how I mistook the leading games as an indicator of the kind of games people want — which is always incorrect. People don't even know that they've been monitored in the things they're using every day, so how can any \"metric\" be authentic of their behavior? This just motivates me to work with people who care about people to not feed into the excessively normalized state of violence that's randomly been deemed okay.</p>",
-                      "value": "I mentioned a while ago about how I mistook the leading games as an indicator of the kind of games people want — which is always incorrect. People don't even know that they've been monitored in the things they're using every day, so how can any \"metric\" be authentic of their behavior? This just motivates me to work with people who care about people to not feed into the excessively normalized state of violence that's randomly been deemed okay."
+                      "html": "I'm successfully using <a href=\"https://github.com/Gandem/bonjour-reflector\">https://github.com/Gandem/bonjour-reflector</a> and it's been really good!",
+                      "value": "I'm successfully using https://github.com/Gandem/bonjour-reflector and it's been really good!"
                     }
                   ],
                   "author": [
@@ -375,38 +342,59 @@
                         "h-card"
                       ],
                       "properties": {
-                        "name": [
-                          "https://jacky.wtf"
+                        "photo": [
+                          {
+                            "value": "https://pbs.twimg.com/profile_images/1326310311452946435/lJHLATN6_normal.jpg",
+                            "alt": ""
+                          }
                         ],
-                        "url": [
-                          "https://jacky.wtf/about"
+                        "name": [
+                          "𝓅𝒶𝓊𝓁    𝓉𝒶𝑔𝓁𝒾𝒶𝓂𝑜𝓃𝓉𝑒"
                         ]
                       },
-                      "value": "https://jacky.wtf/about"
+                      "value": "https://twitter.com/paultag"
                     }
                   ],
                   "url": [
-                    "https://jacky.wtf/2022/9/V6eS"
+                    "https://twitter.com/paultag/status/1575646988057874432"
                   ]
                 },
-                "value": "https://jacky.wtf/2022/9/V6eS"
+                "value": "https://twitter.com/paultag/status/1575646988057874432"
               }
             ],
             "content": [
               {
-                "html": "<p>I love the argument: \"but humans have always been violent\". That's further from the truth, and we really need to start getting people to either read or actually learn non-McGraw Hill approved textbooks. They barely talk about the Civil Rights movement and will have spreads about the \"glamour\" of killing indigenous people; why would that be an accurate representation of the state of humanity?</p>",
-                "value": "I love the argument: \"but humans have always been violent\". That's further from the truth, and we really need to start getting people to either read or actually learn non-McGraw Hill approved textbooks. They barely talk about the Civil Rights movement and will have spreads about the \"glamour\" of killing indigenous people; why would that be an accurate representation of the state of humanity?"
+                "html": "<p>heh this is going to enable some bad project ideas (tm), thank you!</p>",
+                "value": "heh this is going to enable some bad project ideas (tm), thank you!"
               }
             ],
             "url": [
-              "https://jacky.wtf/2022/9/zfCK"
+              "https://jacky.wtf/2022/9/CGnr"
             ],
             "published": [
-              "2022-09-25T15:36:50Z"
+              "2022-09-30T01:20:39Z"
             ],
             "syndication": [
-              "https://twitter.com/jackyalcine/status/1574060489012813828",
-              "https://todon.eu/@jalcine/109059784320323818"
+              "https://twitter.com/jackyalcine/status/1575656924363849728"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<p>Been debugging an issue in Sele for three hours, pulled in a mitm proxy tool only to finally see the issue in my tests once I bubbled up the error from another library I've written. The call's within the house!</p>",
+                "value": "Been debugging an issue in Sele for three hours, pulled in a mitm proxy tool only to finally see the issue in my tests once I bubbled up the error from another library I've written. The call's within the house!"
+              }
+            ],
+            "url": [
+              "https://jacky.wtf/2022/9/d0FL"
+            ],
+            "published": [
+              "2022-09-30T00:45:17Z"
             ]
           }
         }

@@ -10,10 +10,10 @@
         ],
         "url": [
           "https://www.zylstra.org/blog/",
+          "https://a2mi.social/@w8emv",
+          "https://ruk.ca/",
+          "https://www.zylstra.org/blog/2022/09/the-brain-comes-to-obsidian-as-excalibrain/",
           "https://mastodon.social/@Mdubbelm",
-          "https://micro.blog/AndySylvester",
-          "https://doenietzomoeilijk.nl/archief/een-bolt-site-verder-ombouwen-naar-digital-garden",
-          "https://micro.blog/ton",
           "https://micro.blog/AndySylvester"
         ],
         "summary": [
@@ -26,10 +26,46 @@
           }
         ],
         "bridgy-twitter-content": [
-          "In the past few weeks I made a hundred annotations using Hypothes.is. Some additional observations on how that works for me, following up on my first impressions from earlier in August."
+          "I took my previous blogpost and let GPT-3 write its own version (using the title and the first paragraph of the original as prompt). The result is as fascinating as it is bland. A text devoid of connection to the context that it emerged from ... because it didn't."
         ]
       },
       "children": [
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "The Brain Comes To Obsidian As ExcaliBrain"
+            ],
+            "url": [
+              "https://www.zylstra.org/blog/2022/09/the-brain-comes-to-obsidian-as-excalibrain/",
+              "https://www.zylstra.org/blog/2022/09/the-brain-comes-to-obsidian-as-excalibrain/"
+            ],
+            "updated": [
+              "2022-09-29T11:13:37+02:00"
+            ],
+            "published": [
+              "2022-09-29T11:13:37+02:00"
+            ],
+            "author": [
+              "Ton Zijlstra",
+              "Ton Zijlstra"
+            ],
+            "content": [
+              {
+                "html": "<p><a href=\"https://nicolevanderhoeven.com/blog/20220916-how-to-use-the-excalibrain-obsidian-plugin/\">Nicole van der Hoeven published</a> one of her videos on using Obsidian on the topic of the <a href=\"https://github.com/zsviczian/excalibrain\">ExcaliBrain plugin</a>. The plugin is made by <a href=\"https://www.zsolt.blog/\">Zsolt Viczián</a>, the same creator as the Excalidraw plugin which brings easy visualisation to Obsidian. I use <a href=\"https://www.zylstra.org/blog/2021/11/impressed-with-excalidraw-obsidian-integration/\">Excalidraw within Obsidian</a> with some regularity (I’m mostly text oriented).</p>\n<p>It’s not mentioned in the video, but the ExcaliBrain plugin is clearly inspired by <a href=\"https://www.thebrain.com/\">The Brain</a> software, both in terms of types of links between notes, and how it shows them (even the placement of the little circles where links attach). The name suggests so too, and the plugin author names The Brain as source of inspiration in the github reposository. I used The Brain as desktop interface from 1997 until 2004-ish, and this plugin seems to bring The Brain as a visualisation layer to my notes. That alone is enough to try it out.</p>\n<p>The plugin can both infer relationships between notes, through existing links, much as the general graph view in Obsidian does, but does so in a more navigable style. This I hope allows it to be used as a visual navigation interface to notes, something the graph view does not meaningfully, as The Brain so usefully did for me for a number of years.</p>\n<p>You can also set explicit relationships by adding named links to your notes, for which it uses the inline data fields (yourfieldname::) that the DataView plugin makes possible. I already use that plugin so that’s not an extra step for me.<br>\nI disagree with Nicole van der Hoeven on her suggestion to comment out explicit relationships so that the plugin will visualise them but the note won’t show the links, except in edit mode.<br>\nThe notes should always show all links I explicitly set, that’s the whole point of links.<br>\nMachine inferred links are a different matter, which deserve a toggle as they are suggestions made to me.<br>\nLinks are my own and real work in my notes. </p>\n<p>Setting explicit links (parent, child, friends ExcaliBrain calls them) is similar to how I already create links. When I write a new note I aim to link other notes in <a href=\"https://www.youtube.com/watch?v=GjpjE5pMZMI&amp;t=3933s\">the way Soren Bjornstadt describes in a video of his touring his Zettelkasten</a>. I make three links, if possible, from a new note. One to a higher level of abstraction note, one to a lower level of abstraction but more concrete note, and one to a related note at the same level. This creates ‘chains’ of 4 notes with a content-based implied order. </p>\n<p>For example: a note on the role of public transport might link to urban mobility and the liveability of car-free city centers as higher abstration concepts, to a note on urban rail systems or bus networks as a lower abstraction level, to the German 2022 summer reduced fare scheme as an example, and to another communal public service like urban public internet as a same level but different type of note.</p>\n<p>I strongly dislike the parent-child-sibling(-friend) vocabulary Excalibrain introduces though, as it implies an order of creation. Parents exist first, children from parents. This means for the way I described creating links in notes that abstract concepts come first. This is not how it mostly works for me. Abstract notions are often created from, intuited from, less abstratct ones. The scaffolding created by less abstract notes and concrete examples is what leads to them. Overarching concepts and insights emerge from linking lower level items. Thankfully the terms you actually use to denote such connections between notes can be freely chosen in the plugin settings. That is a design choice by Zsolt Viczián I greatly appreciate. </p>\n<p>Nicole van der Hoeven in her run-through of ExcaliBrain also talks about this implied hierarchy, and mentions a higher level type of use, which is adding more semantics to links using the renaming options in the plugin settings. For instance to express lines of argumentation, and how material reflects on eachother (e.g. Note A reinforces / contradicts Note B). This is the type of linking that Tinderbox allows you to do visually too, which I’ve used a lot. She hasn’t used it that way herself yet she says, but suggests it’s likely the most valuable use case. I think that rings true. It’s where linking becomes the work you have to do yourself again, as opposed to lazy or automatic linking between notes.</p>\n<p>I very much want to experiment with the ExcaliBrain plugin.</p>\n<p><img src=\"https://www.zylstra.org/wp/wp-content/uploads/2022/09/excalibrain-640x378.png\" alt=\"\" width=\"640\" height=\"378\" class=\"aligncenter size-large wp-image-22250\" srcset=\"https://www.zylstra.org/wp/wp-content/uploads/2022/09/excalibrain-640x378.png 640w, https://www.zylstra.org/wp/wp-content/uploads/2022/09/excalibrain-300x177.png 300w, https://www.zylstra.org/wp/wp-content/uploads/2022/09/excalibrain-768x453.png 768w, https://www.zylstra.org/wp/wp-content/uploads/2022/09/excalibrain-668x394.png 668w, https://www.zylstra.org/wp/wp-content/uploads/2022/09/excalibrain.png 1451w\" sizes=\"(max-width: 640px) 100vw, 640px\"><br><em>A screenshot after activating ExcaliBrain of the vicinity of a single note</em></p>",
+                "value": "Nicole van der Hoeven published one of her videos on using Obsidian on the topic of the ExcaliBrain plugin. The plugin is made by Zsolt Viczián, the same creator as the Excalidraw plugin which brings easy visualisation to Obsidian. I use Excalidraw within Obsidian with some regularity (I’m mostly text oriented).\nIt’s not mentioned in the video, but the ExcaliBrain plugin is clearly inspired by The Brain software, both in terms of types of links between notes, and how it shows them (even the placement of the little circles where links attach). The name suggests so too, and the plugin author names The Brain as source of inspiration in the github reposository. I used The Brain as desktop interface from 1997 until 2004-ish, and this plugin seems to bring The Brain as a visualisation layer to my notes. That alone is enough to try it out.\nThe plugin can both infer relationships between notes, through existing links, much as the general graph view in Obsidian does, but does so in a more navigable style. This I hope allows it to be used as a visual navigation interface to notes, something the graph view does not meaningfully, as The Brain so usefully did for me for a number of years.\nYou can also set explicit relationships by adding named links to your notes, for which it uses the inline data fields (yourfieldname::) that the DataView plugin makes possible. I already use that plugin so that’s not an extra step for me.\nI disagree with Nicole van der Hoeven on her suggestion to comment out explicit relationships so that the plugin will visualise them but the note won’t show the links, except in edit mode.\nThe notes should always show all links I explicitly set, that’s the whole point of links.\nMachine inferred links are a different matter, which deserve a toggle as they are suggestions made to me.\nLinks are my own and real work in my notes. \nSetting explicit links (parent, child, friends ExcaliBrain calls them) is similar to how I already create links. When I write a new note I aim to link other notes in the way Soren Bjornstadt describes in a video of his touring his Zettelkasten. I make three links, if possible, from a new note. One to a higher level of abstraction note, one to a lower level of abstraction but more concrete note, and one to a related note at the same level. This creates ‘chains’ of 4 notes with a content-based implied order. \nFor example: a note on the role of public transport might link to urban mobility and the liveability of car-free city centers as higher abstration concepts, to a note on urban rail systems or bus networks as a lower abstraction level, to the German 2022 summer reduced fare scheme as an example, and to another communal public service like urban public internet as a same level but different type of note.\nI strongly dislike the parent-child-sibling(-friend) vocabulary Excalibrain introduces though, as it implies an order of creation. Parents exist first, children from parents. This means for the way I described creating links in notes that abstract concepts come first. This is not how it mostly works for me. Abstract notions are often created from, intuited from, less abstratct ones. The scaffolding created by less abstract notes and concrete examples is what leads to them. Overarching concepts and insights emerge from linking lower level items. Thankfully the terms you actually use to denote such connections between notes can be freely chosen in the plugin settings. That is a design choice by Zsolt Viczián I greatly appreciate. \nNicole van der Hoeven in her run-through of ExcaliBrain also talks about this implied hierarchy, and mentions a higher level type of use, which is adding more semantics to links using the renaming options in the plugin settings. For instance to express lines of argumentation, and how material reflects on eachother (e.g. Note A reinforces / contradicts Note B). This is the type of linking that Tinderbox allows you to do visually too, which I’ve used a lot. She hasn’t used it that way herself yet she says, but suggests it’s likely the most valuable use case. I think that rings true. It’s where linking becomes the work you have to do yourself again, as opposed to lazy or automatic linking between notes.\nI very much want to experiment with the ExcaliBrain plugin.\n  A screenshot after activating ExcaliBrain of the vicinity of a single note"
+              }
+            ],
+            "category": [
+              "obsidianmd",
+              "pkm",
+              "plugin"
+            ]
+          },
+          "id": "post-22248"
+        },
         {
           "type": [
             "h-entry"
@@ -214,44 +250,6 @@
         },
         {
           "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "10 Thoughts After 100 Annotations in Hypothes.is"
-            ],
-            "url": [
-              "https://www.zylstra.org/blog/2022/09/10-thoughts-after-100-annotations-in-hypothes-is/",
-              "https://www.zylstra.org/blog/2022/09/10-thoughts-after-100-annotations-in-hypothes-is/"
-            ],
-            "updated": [
-              "2022-09-02T21:18:06+02:00"
-            ],
-            "published": [
-              "2022-09-02T21:18:06+02:00"
-            ],
-            "author": [
-              "Ton Zijlstra",
-              "Ton Zijlstra"
-            ],
-            "content": [
-              {
-                "html": "<p><img loading=\"lazy\" src=\"https://www.zylstra.org/wp/wp-content/uploads/2022/09/108annotations.png\" alt=\"\" width=\"243\" height=\"140\" class=\"aligncenter size-full wp-image-22124\"></p>\n<p>I’ve now added over <a href=\"https://hypothes.is/users/tonz\">100 annotations</a> using Hypothes.is (h.), almost all within the last month. This includes a few non-public ones. Two weeks ago I wrote down <a href=\"https://www.zylstra.org/blog/2022/08/using-hypothes-is-early-impressions/\">some early impressions</a>, to which I’m now adding some additional observations.</p>\n<ol>\n<li>100 annotations (in a month) don’t seem like a lot to me, if h. is a regular tool in one’s browsing habit. <a href=\"https://web.hypothes.is/blog/say-hello-to-anno/#annotations:CbAImiHUEe2rPAN8lFht1Q\">H. says</a> they have 1 million users, that have made 40 million annotations to over <a href=\"https://web.hypothes.is/blog/2-million-annotated-readings/\">2 million articles</a> (their API returns 2.187.262 results as I write this). H. has been in existence for a decade. These numbers average out to 20 annotations to 2 articles per user. This to me suggests that the mode is 1 annotation to 1 article by a user and then silence. My 100 annotations spread out over 30 articles, accumulated over a handful of weeks is then already well above average, even though I am a new and beginning user. My introduction to h. was through Chris Aldrich, whose <a href=\"https://hypothes.is/users/chrisaldrich\">stream of annotations</a> I follow daily with interest. He recently passed 10.000 annotations! That’s 100 times as many as mine, and apparently also an outlier to the h. team itself: they sent him a <a href=\"https://boffosocko.com/2022/08/29/a-small-10000-annotations-party/\">congratulatory package</a>. H.’s marketing director has <a href=\"https://hypothes.is/users/nateangell\">1348 public annotations</a> over almost 6 years, its founder <a href=\"https://hypothes.is/users/dwhly\">1200</a> in a decade. <a href=\"https://remikalir.com/\">Remi Kalir</a>, co-author of the (readworthy!) <a href=\"https://remikalir.com/annotation-mit-press-2021/\">Annotation book</a>, has <a href=\"https://hypothes.is/users/remikalir\">800</a> in six years. That does not seem that much from what I would expect to be power users. My blogging friend <a href=\"https://hypothes.is/users/HeinzWittenbrink\">Heinz has some 750 annotations</a> in three years. Fellow IndieWeb netizen <a href=\"https://maya.land/\">Maya</a> some <a href=\"https://hypothes.is/users/mayaland\">1800</a> in a year and a half. Those last two numbers, even if they differ by a factor 5 or so in average annotations/month, feel like what I’d expect as a regular range for <em>routine</em> users. </li>\n<li>The book Annotation I mentioned makes a lot of <em>social</em> annotation, where distributed conversations result beyond the core interaction of an annotator with an author through an original text. Such social annotation <em>requires</em> sharing. H. provides that sharing functionality and positions itself explicitly as a social tool (\"<em>Annotate the web, with anyone, anywhere</em>\" \"<em>Engage your students with social annotation</em>\"). The numbers above show that such social interaction around an annotated text within h. will be very rare in the public facing part of h., in the closed (safer) surroundings of classroom use interaction might be much more prominent. Users like me, or Heinz, Maya and Chris whom I named/linked above, will then be motivated by something else than the social aspects of h. If and when such interaction does happen (as it tends to do if you mutually follow eachothers annotations) it is a pleasant addition, not h.’s central benefit.</li>\n<li>What is odd to me is that when you do indeed engage into social interaction on h., that <a href=\"https://www.zylstra.org/blog/2022/08/hypothes-is-oddity-in-retrieving-own-comments/\">interaction cannot be found through the web interface</a> of my annotations. Once I comment, it disappears out of sight, unless I remember what I reacted to and go back to that annotation by another user directly, to find my comment underneath. It does show up in the RSS feed of my annotations, and my Hypothes.is-to-Obsidian plugin also captures them through the API. Just not in the web interface.</li>\n<li>Despite the social nature of h., discovery is very difficult. Purposefully ‘finding the others’ is mostly impossible. This is both an effect of the web-interface functionality, as well as I suspect because of the relatively sparse network of users (see observation 1). There’s no direct way of connecting or searching for users. The social object is the annotation, and you need to find others only through annotations you encounter. I’ve searched for tags and terms I am interested in, but those do not surface regular users easily. I’ve <a href=\"https://www.zylstra.org/blog/hypothes-is-roll/\">collated a list</a> of a dozen currently active or somewhat active annotators, and half a dozen who used to be or are sporadically active. I also <a href=\"https://www.zylstra.org/blog/2022/08/added-hypothes-is-annotations-link-to-posts/\">added annotations of my own blogposts to my blog</a>, and I actively follow (through an RSS feed) any new annotation of my blogposts. <strong>If you use h., I’d be interested to hear about it.</strong>\n</li>\n<li>Annotations are the first step of getting useful insights into my notes. This makes it a prerequisite to be able to capture annotations in my note making tool Obsidian, otherwise Hypothes.is is just another silo you’re wasting time on. Luckily h. isn’t meant as a silo and has an API. Using the API and the Hypothes.is-to-Obsidian plugin all my annotations are available to me locally. However, what I do locally with those notes does not get reflected back to h., meaning that you can’t really work through annotations locally until you’ve annotated an entire article or paper in the browser, otherwise sync issues may occur. I also find that having the individual annotations (including the annotated text, in one file), not the full text (the stuff I didn’t annotate), feels impractical at times as it cuts away a lot of context. It’s easily retrievable by visiting the url now, but maybe not over time (so I save web archive links too as an annotation). I also grab a local markdown copy of full articles if they are of higher interest to me. Using h. in the browser creates another inbox in this regard (having to return to a thing to finish annotation or for context), and I obviously don’t need more inboxes to keep track of. </li>\n<li>In response to not saving entire articles in my notes environment, I have started marking online articles I haven’t annotated yet at least with a note that contains the motivation and first associations I normally save with a full article. This is in the same spot as where I add a web archive link, as page note. I’ve tried that in recent days and that seems to work well. That way I do have a general note in my local system that contains the motivation for looking in more detail at an article.</li>\n<li>The API also supports sending annotations and updates <em>to</em> h. from e.g. my local system. Would this be potentially better for my workflow? Firefox and the h. add-on don’t always work flawlessly, not all docs can be opened, or the form stops working until I restart Firefox. This too points in the direction of annotating locally and sending annotations to h. for sharing through the API. Is there anyone already doing this? Built their own client, or using h. ‘headless’? Is there anyone who runs their own h. instance locally? If I could send things through the API, that might also include the Kindle highlights I pull in to my local system. </li>\n<li>In the same category of integrating h. into my pkm workflows, falls the interaction between h. and Zotero, especially now that Zotero has its own storage of annotations of PDFs in my library.  It might be of interest to be able to share those annotations, for a more complete overview of what I’m annotating. Either directly from Zotero, or by way of my notes in Obsidian (Zotero annotatins end up there in the end)</li>\n<li>These first 100 annotations I made in the browser, using an add-on. Annotating in the browser takes some getting used to, as I try to get myself out of my browser more usually. I don’t always fully realise I can return to an article for later annotation. Any time the sense I have to finish annotating an article surfaces, that is friction I can do without. Apart from that, it is a pleasant experience to annotate like this. And that pleasure is key to keep annotating. Being able to better integrate my h. use with Obsidian and Zotero would likely increase the pleasure of doing it.</li>\n<li>Another path of integration to think about is sharing annotated links from h. to my blog or the other way around. I blog links with a general annotation at times (<a href=\"https://www.zylstra.org/blog/2022/08/22073/\">example</a>). These  bloggable links I could grab from h. where I bookmark things in similar ways (<a href=\"https://via.hypothes.is/https://flowingdata.com/2022/09/01/looking-for-meaning-in-the-everyday/#annotations:5JMGfioIEe2G_9uPa5Qe8Q\">example</a>), usually to annotate further later on. I notice myself thinking I should do both, but unless I could do that simultaneously  I won’t do such a thing twice.</li>\n</ol>",
-                "value": "I’ve now added over 100 annotations using Hypothes.is (h.), almost all within the last month. This includes a few non-public ones. Two weeks ago I wrote down some early impressions, to which I’m now adding some additional observations.\n\n100 annotations (in a month) don’t seem like a lot to me, if h. is a regular tool in one’s browsing habit. H. says they have 1 million users, that have made 40 million annotations to over 2 million articles (their API returns 2.187.262 results as I write this). H. has been in existence for a decade. These numbers average out to 20 annotations to 2 articles per user. This to me suggests that the mode is 1 annotation to 1 article by a user and then silence. My 100 annotations spread out over 30 articles, accumulated over a handful of weeks is then already well above average, even though I am a new and beginning user. My introduction to h. was through Chris Aldrich, whose stream of annotations I follow daily with interest. He recently passed 10.000 annotations! That’s 100 times as many as mine, and apparently also an outlier to the h. team itself: they sent him a congratulatory package. H.’s marketing director has 1348 public annotations over almost 6 years, its founder 1200 in a decade. Remi Kalir, co-author of the (readworthy!) Annotation book, has 800 in six years. That does not seem that much from what I would expect to be power users. My blogging friend Heinz has some 750 annotations in three years. Fellow IndieWeb netizen Maya some 1800 in a year and a half. Those last two numbers, even if they differ by a factor 5 or so in average annotations/month, feel like what I’d expect as a regular range for routine users. \nThe book Annotation I mentioned makes a lot of social annotation, where distributed conversations result beyond the core interaction of an annotator with an author through an original text. Such social annotation requires sharing. H. provides that sharing functionality and positions itself explicitly as a social tool (\"Annotate the web, with anyone, anywhere\" \"Engage your students with social annotation\"). The numbers above show that such social interaction around an annotated text within h. will be very rare in the public facing part of h., in the closed (safer) surroundings of classroom use interaction might be much more prominent. Users like me, or Heinz, Maya and Chris whom I named/linked above, will then be motivated by something else than the social aspects of h. If and when such interaction does happen (as it tends to do if you mutually follow eachothers annotations) it is a pleasant addition, not h.’s central benefit.\nWhat is odd to me is that when you do indeed engage into social interaction on h., that interaction cannot be found through the web interface of my annotations. Once I comment, it disappears out of sight, unless I remember what I reacted to and go back to that annotation by another user directly, to find my comment underneath. It does show up in the RSS feed of my annotations, and my Hypothes.is-to-Obsidian plugin also captures them through the API. Just not in the web interface.\nDespite the social nature of h., discovery is very difficult. Purposefully ‘finding the others’ is mostly impossible. This is both an effect of the web-interface functionality, as well as I suspect because of the relatively sparse network of users (see observation 1). There’s no direct way of connecting or searching for users. The social object is the annotation, and you need to find others only through annotations you encounter. I’ve searched for tags and terms I am interested in, but those do not surface regular users easily. I’ve collated a list of a dozen currently active or somewhat active annotators, and half a dozen who used to be or are sporadically active. I also added annotations of my own blogposts to my blog, and I actively follow (through an RSS feed) any new annotation of my blogposts. If you use h., I’d be interested to hear about it.\nAnnotations are the first step of getting useful insights into my notes. This makes it a prerequisite to be able to capture annotations in my note making tool Obsidian, otherwise Hypothes.is is just another silo you’re wasting time on. Luckily h. isn’t meant as a silo and has an API. Using the API and the Hypothes.is-to-Obsidian plugin all my annotations are available to me locally. However, what I do locally with those notes does not get reflected back to h., meaning that you can’t really work through annotations locally until you’ve annotated an entire article or paper in the browser, otherwise sync issues may occur. I also find that having the individual annotations (including the annotated text, in one file), not the full text (the stuff I didn’t annotate), feels impractical at times as it cuts away a lot of context. It’s easily retrievable by visiting the url now, but maybe not over time (so I save web archive links too as an annotation). I also grab a local markdown copy of full articles if they are of higher interest to me. Using h. in the browser creates another inbox in this regard (having to return to a thing to finish annotation or for context), and I obviously don’t need more inboxes to keep track of. \nIn response to not saving entire articles in my notes environment, I have started marking online articles I haven’t annotated yet at least with a note that contains the motivation and first associations I normally save with a full article. This is in the same spot as where I add a web archive link, as page note. I’ve tried that in recent days and that seems to work well. That way I do have a general note in my local system that contains the motivation for looking in more detail at an article.\nThe API also supports sending annotations and updates to h. from e.g. my local system. Would this be potentially better for my workflow? Firefox and the h. add-on don’t always work flawlessly, not all docs can be opened, or the form stops working until I restart Firefox. This too points in the direction of annotating locally and sending annotations to h. for sharing through the API. Is there anyone already doing this? Built their own client, or using h. ‘headless’? Is there anyone who runs their own h. instance locally? If I could send things through the API, that might also include the Kindle highlights I pull in to my local system. \nIn the same category of integrating h. into my pkm workflows, falls the interaction between h. and Zotero, especially now that Zotero has its own storage of annotations of PDFs in my library.  It might be of interest to be able to share those annotations, for a more complete overview of what I’m annotating. Either directly from Zotero, or by way of my notes in Obsidian (Zotero annotatins end up there in the end)\nThese first 100 annotations I made in the browser, using an add-on. Annotating in the browser takes some getting used to, as I try to get myself out of my browser more usually. I don’t always fully realise I can return to an article for later annotation. Any time the sense I have to finish annotating an article surfaces, that is friction I can do without. Apart from that, it is a pleasant experience to annotate like this. And that pleasure is key to keep annotating. Being able to better integrate my h. use with Obsidian and Zotero would likely increase the pleasure of doing it.\nAnother path of integration to think about is sharing annotated links from h. to my blog or the other way around. I blog links with a general annotation at times (example). These  bloggable links I could grab from h. where I bookmark things in similar ways (example), usually to annotate further later on. I notice myself thinking I should do both, but unless I could do that simultaneously  I won’t do such a thing twice."
-              }
-            ],
-            "category": [
-              "annotation",
-              "bookmarks",
-              "hypothesis",
-              "tools",
-              "tools for thought"
-            ]
-          },
-          "id": "post-22121"
-        },
-        {
-          "type": [
             "h-card"
           ],
           "properties": {
@@ -340,35 +338,39 @@
       "https://www.zylstra.org/blog/page/2/"
     ],
     "bookmark": [
+      "https://www.zylstra.org/blog/2022/09/the-brain-comes-to-obsidian-as-excalibrain/",
       "https://www.zylstra.org/blog/2022/09/eu-directive-on-ai-liability/",
       "https://www.zylstra.org/blog/2022/09/buying-ukrainian/",
       "https://www.zylstra.org/blog/2022/09/wordpressindieweb-as-the-os-of-the-open-social-web/",
       "https://www.zylstra.org/blog/2022/09/een-gesprek-over-pkm-en-data-in-de-digitale-fitheid-podcast/",
-      "https://www.zylstra.org/blog/2022/09/gpt-3-ifying-that-last-blogpost/",
-      "https://www.zylstra.org/blog/2022/09/10-thoughts-after-100-annotations-in-hypothes-is/"
+      "https://www.zylstra.org/blog/2022/09/gpt-3-ifying-that-last-blogpost/"
     ],
     "author": [
       "https://www.zylstra.org/blog/about-me/"
     ],
     "category": [
-      "https://www.zylstra.org/blog/category/digital-disruption/",
+      "https://www.zylstra.org/blog/category/learning/",
       "https://www.zylstra.org/blog/category/linklog/",
+      "https://www.zylstra.org/blog/category/technology/",
+      "https://www.zylstra.org/blog/category/digital-disruption/",
       "https://www.zylstra.org/blog/category/misc/",
       "https://www.zylstra.org/blog/category/personal/",
       "https://www.zylstra.org/blog/category/conferences/",
       "https://www.zylstra.org/blog/category/social-networking/",
-      "https://www.zylstra.org/blog/category/technology/",
       "https://www.zylstra.org/blog/category/effectivity/",
       "https://www.zylstra.org/blog/category/eaap/",
       "https://www.zylstra.org/blog/category/nederlands/",
       "https://www.zylstra.org/blog/category/practices/",
-      "https://www.zylstra.org/blog/category/metablogging/",
-      "https://www.zylstra.org/blog/category/knowledge-management/",
-      "https://www.zylstra.org/blog/category/learning/"
+      "https://www.zylstra.org/blog/category/metablogging/"
     ],
     "tag": [
-      "https://www.zylstra.org/blog/category/digital-disruption/",
+      "https://www.zylstra.org/blog/category/learning/",
       "https://www.zylstra.org/blog/category/linklog/",
+      "https://www.zylstra.org/blog/category/technology/",
+      "https://www.zylstra.org/blog/tag/obsidianmd/",
+      "https://www.zylstra.org/blog/tag/pkm/",
+      "https://www.zylstra.org/blog/tag/plugin/",
+      "https://www.zylstra.org/blog/category/digital-disruption/",
       "https://www.zylstra.org/blog/tag/ai/",
       "https://www.zylstra.org/blog/tag/eu/",
       "https://www.zylstra.org/blog/tag/legislation/",
@@ -379,7 +381,6 @@
       "https://www.zylstra.org/blog/tag/ukraine/",
       "https://www.zylstra.org/blog/category/conferences/",
       "https://www.zylstra.org/blog/category/social-networking/",
-      "https://www.zylstra.org/blog/category/technology/",
       "https://www.zylstra.org/blog/tag/indieweb/",
       "https://www.zylstra.org/blog/tag/wordcamp/",
       "https://www.zylstra.org/blog/category/effectivity/",
@@ -387,16 +388,8 @@
       "https://www.zylstra.org/blog/category/nederlands/",
       "https://www.zylstra.org/blog/category/practices/",
       "https://www.zylstra.org/blog/tag/infostrat/",
-      "https://www.zylstra.org/blog/tag/pkm/",
       "https://www.zylstra.org/blog/category/metablogging/",
-      "https://www.zylstra.org/blog/tag/gpt3/",
-      "https://www.zylstra.org/blog/category/knowledge-management/",
-      "https://www.zylstra.org/blog/category/learning/",
-      "https://www.zylstra.org/blog/tag/annotation/",
-      "https://www.zylstra.org/blog/tag/bookmarks/",
-      "https://www.zylstra.org/blog/tag/hypothesis/",
-      "https://www.zylstra.org/blog/tag/tools/",
-      "https://www.zylstra.org/blog/tag/tools-for-thought/"
+      "https://www.zylstra.org/blog/tag/gpt3/"
     ],
     "license": [
       "http://creativecommons.org/licenses/by-sa/4.0/"
@@ -410,22 +403,25 @@
       "https://meso.tzyl.nl/"
     ],
     "external": [
+      "https://a2mi.social/@w8emv",
+      "https://ruk.ca/",
+      "https://www.zylstra.org/blog/2022/09/the-brain-comes-to-obsidian-as-excalibrain/",
       "https://mastodon.social/@Mdubbelm",
-      "https://micro.blog/AndySylvester",
-      "https://doenietzomoeilijk.nl/archief/een-bolt-site-verder-ombouwen-naar-digital-garden",
-      "https://micro.blog/ton"
+      "https://micro.blog/AndySylvester"
     ],
     "nofollow": [
+      "https://a2mi.social/@w8emv",
+      "https://ruk.ca/",
+      "https://www.zylstra.org/blog/2022/09/the-brain-comes-to-obsidian-as-excalibrain/",
       "https://mastodon.social/@Mdubbelm",
-      "https://micro.blog/AndySylvester",
-      "https://doenietzomoeilijk.nl/archief/een-bolt-site-verder-ombouwen-naar-digital-garden",
-      "https://micro.blog/ton"
+      "https://micro.blog/AndySylvester"
     ],
     "ugc": [
+      "https://a2mi.social/@w8emv",
+      "https://ruk.ca/",
+      "https://www.zylstra.org/blog/2022/09/the-brain-comes-to-obsidian-as-excalibrain/",
       "https://mastodon.social/@Mdubbelm",
-      "https://micro.blog/AndySylvester",
-      "https://doenietzomoeilijk.nl/archief/een-bolt-site-verder-ombouwen-naar-digital-garden",
-      "https://micro.blog/ton"
+      "https://micro.blog/AndySylvester"
     ],
     "generator": [
       "http://wordpress.org/"
@@ -566,12 +562,12 @@
       ],
       "text": "← Older posts"
     },
-    "https://www.zylstra.org/blog/2022/09/eu-directive-on-ai-liability/": {
+    "https://www.zylstra.org/blog/2022/09/the-brain-comes-to-obsidian-as-excalibrain/": {
       "rels": [
         "bookmark"
       ],
-      "title": "Permalink to EU Directive on AI Liability",
-      "text": "EU Directive on AI Liability"
+      "title": "Permalink to The Brain Comes To Obsidian As ExcaliBrain",
+      "text": "The Brain Comes To Obsidian As ExcaliBrain"
     },
     "https://www.zylstra.org/blog/about-me/": {
       "rels": [
@@ -580,12 +576,12 @@
       "title": "Ton Zijlstra",
       "text": "Ton Zijlstra"
     },
-    "https://www.zylstra.org/blog/category/digital-disruption/": {
+    "https://www.zylstra.org/blog/category/learning/": {
       "rels": [
         "category",
         "tag"
       ],
-      "text": "Digital disruption"
+      "text": "Learning"
     },
     "https://www.zylstra.org/blog/category/linklog/": {
       "rels": [
@@ -593,6 +589,45 @@
         "tag"
       ],
       "text": "Linklog"
+    },
+    "https://www.zylstra.org/blog/category/technology/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "technology"
+    },
+    "https://www.zylstra.org/blog/tag/obsidianmd/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "obsidianmd"
+    },
+    "https://www.zylstra.org/blog/tag/pkm/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "pkm"
+    },
+    "https://www.zylstra.org/blog/tag/plugin/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "plugin"
+    },
+    "https://www.zylstra.org/blog/2022/09/eu-directive-on-ai-liability/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to EU Directive on AI Liability",
+      "text": "EU Directive on AI Liability"
+    },
+    "https://www.zylstra.org/blog/category/digital-disruption/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Digital disruption"
     },
     "https://www.zylstra.org/blog/tag/ai/": {
       "rels": [
@@ -672,13 +707,6 @@
       ],
       "text": "social networking"
     },
-    "https://www.zylstra.org/blog/category/technology/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "technology"
-    },
     "https://www.zylstra.org/blog/tag/indieweb/": {
       "rels": [
         "tag"
@@ -732,12 +760,6 @@
       ],
       "text": "infostrat"
     },
-    "https://www.zylstra.org/blog/tag/pkm/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "pkm"
-    },
     "https://www.zylstra.org/blog/2022/09/gpt-3-ifying-that-last-blogpost/": {
       "rels": [
         "bookmark"
@@ -757,57 +779,6 @@
         "tag"
       ],
       "text": "gpt3"
-    },
-    "https://www.zylstra.org/blog/2022/09/10-thoughts-after-100-annotations-in-hypothes-is/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Permalink to 10 Thoughts After 100 Annotations in Hypothes.is",
-      "text": "10 Thoughts After 100 Annotations in Hypothes.is"
-    },
-    "https://www.zylstra.org/blog/category/knowledge-management/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "knowledge work"
-    },
-    "https://www.zylstra.org/blog/category/learning/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "Learning"
-    },
-    "https://www.zylstra.org/blog/tag/annotation/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "annotation"
-    },
-    "https://www.zylstra.org/blog/tag/bookmarks/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "bookmarks"
-    },
-    "https://www.zylstra.org/blog/tag/hypothesis/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "hypothesis"
-    },
-    "https://www.zylstra.org/blog/tag/tools/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "tools"
-    },
-    "https://www.zylstra.org/blog/tag/tools-for-thought/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "tools for thought"
     },
     "http://creativecommons.org/licenses/by-sa/4.0/": {
       "rels": [
@@ -850,6 +821,22 @@
       ],
       "text": "Meso WP"
     },
+    "https://a2mi.social/@w8emv": {
+      "rels": [
+        "external",
+        "nofollow",
+        "ugc"
+      ],
+      "text": "Ed W8EMV"
+    },
+    "https://ruk.ca/": {
+      "rels": [
+        "external",
+        "nofollow",
+        "ugc"
+      ],
+      "text": "Peter Rukavina"
+    },
     "https://mastodon.social/@Mdubbelm": {
       "rels": [
         "external",
@@ -865,22 +852,6 @@
         "ugc"
       ],
       "text": "AndySylvester"
-    },
-    "https://doenietzomoeilijk.nl/archief/een-bolt-site-verder-ombouwen-naar-digital-garden": {
-      "rels": [
-        "external",
-        "nofollow",
-        "ugc"
-      ],
-      "text": "Max Roeleveld"
-    },
-    "https://micro.blog/ton": {
-      "rels": [
-        "external",
-        "nofollow",
-        "ugc"
-      ],
-      "text": "ton"
     },
     "http://wordpress.org/": {
       "rels": [
