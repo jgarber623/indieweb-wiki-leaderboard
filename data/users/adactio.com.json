@@ -40,6 +40,117 @@
         "h-entry"
       ],
       "properties": {
+        "name": [
+          "Supporting logical properties"
+        ],
+        "url": [
+          "https://adactio.com/journal/19487"
+        ],
+        "content": [
+          {
+            "html": "<p>I wrote recently about <a href=\"https://adactio.com/journal/19457\">making the switch to logical properties</a> over on <a href=\"https://thesession.org/\">The Session</a>.</p>\n\n<p>Initially I tried ripping the band-aid off and swapping out all the directional properties for logical properties. After all, <a href=\"https://caniuse.com/css-logical-props\">support for logical properties is green across the board</a>.</p>\n\n<p>But then I got some reports of people seeing formating issues. These people were using Safari on devices that could no longer update their operating system. Because <a href=\"https://adactio.com/journal/17605\">versions of Safari are tied to versions of the operating system</a>, there was nothing they could do other than switch to using a different browser.</p>\n\n<p>I’ve said it before and I’ll say it again, but as long as this situation continues, <a href=\"https://adactio.com/journal/18335\">Safari is not an evergreen browser</a>. (I also understand that problem lies with the OS architecture—it must be incredibly frustrating for the folks working on WebKit and/or Safari.)</p>\n\n<p>So I needed to add fallbacks for <a href=\"https://caniuse.com/css-logical-props\">older browsers that don’t support logical properties</a>. Or, to put it another way, I needed to add logical properties as a progressive enhancement.</p>\n\n<p>“No problem!” I thought. “The way that CSS works, I can just put the logical version right after the directional version.”</p>\n\n<p><code><pre>\nelement {\n  margin-left: 1em;\n  margin-inline-start: 1em;\n}\n</pre></code></p>\n\n<p>But that’s not true in this case. I’m not over-riding a <em>value</em>, I’m setting two different properties.</p>\n\n<p>In a left-to-right language like English it’s true that <code>margin-inline-start</code> will over-ride <code>margin-left</code>. But in a right-to-left language, I’ve just set <code>margin-left</code> <em>and</em> <code>margin-inline-start</code> (which happens to be on the right).</p>\n\n<p>This is a job for <code>@supports</code>!</p>\n\n<p><code><pre>\nelement {\n  margin-left: 1em;\n}\n@supports (margin-inline-start: 1em) {\n  element {\n    margin-left: unset;\n    margin-inline-start: 1em;\n  }\n}\n</pre></code></p>\n\n<p>I’m doing two things inside the <code>@supports</code> block. I’m applying the logical property I’ve just tested for. I’m also undoing the previously declared directional property.</p>\n\n<p><a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/unset\">A value of  <code>unset</code></a> is perfect for this:</p>\n\n<blockquote>\n  <p>The <code>unset</code> CSS keyword resets a property to its inherited value if the property naturally inherits from its parent, and to its initial value if not. In other words, it behaves like the <code>inherit</code> keyword in the first case, when the property is an inherited property, and like the <code>initial</code> keyword in the second case, when the property is a non-inherited property.</p>\n</blockquote>\n\n<p>Now I’ve got three CSS features working very nicely together:</p>\n\n<ol>\n<li>\n<a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/@supports\"><code>@supports</code></a> (also known as feature queries),</li>\n<li>\n<a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties\">logical properties</a>, and</li>\n<li>\n<a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/unset\">the <code>unset</code> keyword</a>.</li>\n</ol>\n\n<p>For anyone using an up-to-date browser, none of this will make any difference. But for <a href=\"https://blog.jim-nielsen.com/2022/a-web-for-all/\">anyone who can’t update their Safari browser because they can’t update their operating system, because they don’t want to throw out their perfectly functional Apple device</a>, they’ll continue to get the older directional properties:</p>\n\n<blockquote>\n  <p>I discovered that my Mom’s iPad was a 1st generation iPad Air. Apple stopped supporting that device in iOS 12, which means it was stuck with whatever version of Safari last shipped with iOS 12.</p>\n</blockquote>",
+            "value": "I wrote recently about making the switch to logical properties over on The Session.\n\nInitially I tried ripping the band-aid off and swapping out all the directional properties for logical properties. After all, support for logical properties is green across the board.\n\nBut then I got some reports of people seeing formating issues. These people were using Safari on devices that could no longer update their operating system. Because versions of Safari are tied to versions of the operating system, there was nothing they could do other than switch to using a different browser.\n\nI’ve said it before and I’ll say it again, but as long as this situation continues, Safari is not an evergreen browser. (I also understand that problem lies with the OS architecture—it must be incredibly frustrating for the folks working on WebKit and/or Safari.)\n\nSo I needed to add fallbacks for older browsers that don’t support logical properties. Or, to put it another way, I needed to add logical properties as a progressive enhancement.\n\n“No problem!” I thought. “The way that CSS works, I can just put the logical version right after the directional version.”\n\n\nelement {\n  margin-left: 1em;\n  margin-inline-start: 1em;\n}\n\n\nBut that’s not true in this case. I’m not over-riding a value, I’m setting two different properties.\n\nIn a left-to-right language like English it’s true that margin-inline-start will over-ride margin-left. But in a right-to-left language, I’ve just set margin-left and margin-inline-start (which happens to be on the right).\n\nThis is a job for @supports!\n\n\nelement {\n  margin-left: 1em;\n}\n@supports (margin-inline-start: 1em) {\n  element {\n    margin-left: unset;\n    margin-inline-start: 1em;\n  }\n}\n\n\nI’m doing two things inside the @supports block. I’m applying the logical property I’ve just tested for. I’m also undoing the previously declared directional property.\n\nA value of  unset is perfect for this:\n\n\n  The unset CSS keyword resets a property to its inherited value if the property naturally inherits from its parent, and to its initial value if not. In other words, it behaves like the inherit keyword in the first case, when the property is an inherited property, and like the initial keyword in the second case, when the property is a non-inherited property.\n\n\nNow I’ve got three CSS features working very nicely together:\n\n\n@supports (also known as feature queries),\nlogical properties, and\nthe unset keyword.\n\n\nFor anyone using an up-to-date browser, none of this will make any difference. But for anyone who can’t update their Safari browser because they can’t update their operating system, because they don’t want to throw out their perfectly functional Apple device, they’ll continue to get the older directional properties:\n\n\n  I discovered that my Mom’s iPad was a 1st generation iPad Air. Apple stopped supporting that device in iOS 12, which means it was stuck with whatever version of Safari last shipped with iOS 12."
+          }
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "51.85453796"
+              ],
+              "longitude": [
+                "-8.27655982"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "published": [
+          "2022-09-30T15:00:23Z"
+        ],
+        "category": [
+          "css",
+          "logical",
+          "properties",
+          "styling",
+          "writingmodes",
+          "inline",
+          "block",
+          "thesession",
+          "frontend",
+          "development",
+          "refactoring",
+          "standards",
+          "browsers",
+          "safari",
+          "apple",
+          "evergreen",
+          "supports",
+          "unset"
+        ],
+        "syndication": [
+          "https://adactio.medium.com/2c6eb5680c33"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://werd.io/view/6332985786161202d67cc4f2\">\nIndiepeople\n</a>\n</h3>\n\n<blockquote>\n  <p>I believe strongly in the indieweb principles of distributed ownership, control, and independence. For me, the important thing is that this is how we get to a diverse web. A web where everyone can define not just <em>what</em> they write but <em>how</em> they present is by definition far more expressive, diverse, and interesting than one where most online content and identities must be squished into templates created by a handful of companies based on their financial needs. In other words, the open web is far superior to a medium controlled by corporations in order to sell ads. The former encourages expression; the latter encourages consumerist conformity.</p>\n</blockquote>",
+            "value": "Indiepeople\n\n\n\n\n  I believe strongly in the indieweb principles of distributed ownership, control, and independence. For me, the important thing is that this is how we get to a diverse web. A web where everyone can define not just what they write but how they present is by definition far more expressive, diverse, and interesting than one where most online content and identities must be squished into templates created by a handful of companies based on their financial needs. In other words, the open web is far superior to a medium controlled by corporations in order to sell ads. The former encourages expression; the latter encourages consumerist conformity."
+          }
+        ],
+        "name": [
+          "Indiepeople"
+        ],
+        "bookmark-of": [
+          "https://werd.io/view/6332985786161202d67cc4f2"
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "51.85457420"
+              ],
+              "longitude": [
+                "-8.27661800"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/links/19486"
+        ],
+        "published": [
+          "2022-09-30T10:44:53Z"
+        ],
+        "category": [
+          "indieweb",
+          "personal",
+          "publishing",
+          "identity",
+          "freedom",
+          "expression",
+          "politics"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
         "photo": [
           {
             "value": "https://adactio.com/images/uploaded/19485/small.jpg",
@@ -968,112 +1079,6 @@
     },
     {
       "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "content": [
-          {
-            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://tess.oconnor.cx/2022/09/ethical-web-principles\">\nW3C TAG Ethical Web Principles (slides)\n</a>\n</h3>\n\n<p>The slides from Tess’s presentation on the W3C’s <a href=\"https://www.w3.org/2001/tag/doc/ethical-web-principles/\">ethical web principles</a>—<a href=\"https://tess.oconnor.cx/2022/09/ewp-transcript\">there’s a transcript too</a>.</p>",
-            "value": "W3C TAG Ethical Web Principles (slides)\n\n\n\nThe slides from Tess’s presentation on the W3C’s ethical web principles—there’s a transcript too."
-          }
-        ],
-        "name": [
-          "W3C TAG Ethical Web Principles (slides)"
-        ],
-        "bookmark-of": [
-          "https://tess.oconnor.cx/2022/09/ethical-web-principles"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83252587"
-              ],
-              "longitude": [
-                "-0.11818340"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/links/19465"
-        ],
-        "published": [
-          "2022-09-19T16:19:06Z"
-        ],
-        "category": [
-          "slides",
-          "ethics",
-          "principles",
-          "wc3",
-          "tag",
-          "presentation",
-          "tpac",
-          "privacy",
-          "security",
-          "freedom",
-          "oneweb"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "content": [
-          {
-            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://css-irl.info/web-sustainability-and-the-ethical-dilemma/\">\nCSS { In Real Life } | Web Sustainability and the Ethical Dilemma\n</a>\n</h3>\n\n<blockquote>\n  <p>But is it always the case that faster websites are greener websites? We reluctantly have to consider another facet: if making a website for a car manufacturer faster leads to an increase in the number of cars sold, can we really say that our website is greener?</p>\n</blockquote>\n\n<p>This is very timely for me, given that <a href=\"https://clearleft.com/\">Clearleft</a> is currently engaged on a project that’s making me decidedly queasy for this exact reason—the success metrics of the project would be net negative for the world.</p>",
-            "value": "CSS { In Real Life } | Web Sustainability and the Ethical Dilemma\n\n\n\n\n  But is it always the case that faster websites are greener websites? We reluctantly have to consider another facet: if making a website for a car manufacturer faster leads to an increase in the number of cars sold, can we really say that our website is greener?\n\n\nThis is very timely for me, given that Clearleft is currently engaged on a project that’s making me decidedly queasy for this exact reason—the success metrics of the project would be net negative for the world."
-          }
-        ],
-        "name": [
-          "CSS { In Real Life } | Web Sustainability and the Ethical Dilemma"
-        ],
-        "bookmark-of": [
-          "https://css-irl.info/web-sustainability-and-the-ethical-dilemma/"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83248800"
-              ],
-              "longitude": [
-                "-0.11816735"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/links/19464"
-        ],
-        "published": [
-          "2022-09-19T16:13:56Z"
-        ],
-        "category": [
-          "environment",
-          "climate",
-          "performance",
-          "ethics",
-          "sustainability",
-          "design",
-          "frontend",
-          "development",
-          "smashingconf"
-        ]
-      }
-    },
-    {
-      "type": [
         "h-card"
       ],
       "properties": {
@@ -1812,6 +1817,8 @@
       "https://adactio.com/includes/css/print.css"
     ],
     "bookmark": [
+      "https://adactio.com/journal/19487",
+      "https://adactio.com/links/19486",
       "https://adactio.com/notes/19485",
       "https://adactio.com/notes/19484",
       "https://adactio.com/notes/19483",
@@ -1829,23 +1836,34 @@
       "https://adactio.com/notes/19470",
       "https://adactio.com/journal/19468",
       "https://adactio.com/links/19467",
-      "https://adactio.com/links/19466",
-      "https://adactio.com/links/19465",
-      "https://adactio.com/links/19464"
-    ],
-    "syndication": [
-      "https://www.swarmapp.com/user/112073/checkin/63361714363abb52eca04879",
-      "https://www.instagram.com/p/CjF2k89KtTu/",
-      "https://twitter.com/adactio/status/1575052509210677249",
-      "https://adactio.medium.com/d10442fec7b2",
-      "https://twitter.com/adactio/status/1573975694895456256",
-      "https://www.instagram.com/p/Ci7Q_1ctcT_/",
-      "https://www.instagram.com/p/CiyJCSWq639/",
-      "https://www.swarmapp.com/user/112073/checkin/632b65058d1ace43f39a2957",
-      "https://twitter.com/adactio/status/1572535711714377730",
-      "https://adactio.medium.com/dd9e411247ef"
+      "https://adactio.com/links/19466"
     ],
     "tag": [
+      "https://adactio.com/tags/css",
+      "https://adactio.com/tags/logical",
+      "https://adactio.com/tags/properties",
+      "https://adactio.com/tags/styling",
+      "https://adactio.com/tags/writingmodes",
+      "https://adactio.com/tags/inline",
+      "https://adactio.com/tags/block",
+      "https://adactio.com/tags/thesession",
+      "https://adactio.com/tags/frontend",
+      "https://adactio.com/tags/development",
+      "https://adactio.com/tags/refactoring",
+      "https://adactio.com/tags/standards",
+      "https://adactio.com/tags/browsers",
+      "https://adactio.com/tags/safari",
+      "https://adactio.com/tags/apple",
+      "https://adactio.com/tags/evergreen",
+      "https://adactio.com/tags/supports",
+      "https://adactio.com/tags/unset",
+      "https://adactio.com/tags/indieweb",
+      "https://adactio.com/tags/personal",
+      "https://adactio.com/tags/publishing",
+      "https://adactio.com/tags/identity",
+      "https://adactio.com/tags/freedom",
+      "https://adactio.com/tags/expression",
+      "https://adactio.com/tags/politics",
       "https://adactio.com/tags/cli-fi",
       "https://adactio.com/tags/sci-fi",
       "https://adactio.com/tags/sciencefiction",
@@ -1854,7 +1872,6 @@
       "https://adactio.com/tags/climate",
       "https://adactio.com/tags/change",
       "https://adactio.com/tags/writing",
-      "https://adactio.com/tags/publishing",
       "https://adactio.com/tags/interview",
       "https://adactio.com/tags/nuclear",
       "https://adactio.com/tags/power",
@@ -1908,8 +1925,6 @@
       "https://adactio.com/tags/measurements",
       "https://adactio.com/tags/javascript",
       "https://adactio.com/tags/webpagetest",
-      "https://adactio.com/tags/frontend",
-      "https://adactio.com/tags/development",
       "https://adactio.com/tags/icons",
       "https://adactio.com/tags/library",
       "https://adactio.com/tags/svgs",
@@ -1936,22 +1951,20 @@
       "https://adactio.com/tags/mrna",
       "https://adactio.com/tags/webbook",
       "https://adactio.com/tags/ui",
-      "https://adactio.com/tags/engineering",
-      "https://adactio.com/tags/personal",
-      "https://adactio.com/tags/indieweb",
-      "https://adactio.com/tags/slides",
-      "https://adactio.com/tags/ethics",
-      "https://adactio.com/tags/wc3",
-      "https://adactio.com/tags/tag",
-      "https://adactio.com/tags/presentation",
-      "https://adactio.com/tags/tpac",
-      "https://adactio.com/tags/privacy",
-      "https://adactio.com/tags/security",
-      "https://adactio.com/tags/freedom",
-      "https://adactio.com/tags/oneweb",
-      "https://adactio.com/tags/environment",
-      "https://adactio.com/tags/sustainability",
-      "https://adactio.com/tags/smashingconf"
+      "https://adactio.com/tags/engineering"
+    ],
+    "syndication": [
+      "https://adactio.medium.com/2c6eb5680c33",
+      "https://www.swarmapp.com/user/112073/checkin/63361714363abb52eca04879",
+      "https://www.instagram.com/p/CjF2k89KtTu/",
+      "https://twitter.com/adactio/status/1575052509210677249",
+      "https://adactio.medium.com/d10442fec7b2",
+      "https://twitter.com/adactio/status/1573975694895456256",
+      "https://www.instagram.com/p/Ci7Q_1ctcT_/",
+      "https://www.instagram.com/p/CiyJCSWq639/",
+      "https://www.swarmapp.com/user/112073/checkin/632b65058d1ace43f39a2957",
+      "https://twitter.com/adactio/status/1572535711714377730",
+      "https://adactio.medium.com/dd9e411247ef"
     ],
     "next": [
       "https://adactio.com/?start=20"
@@ -2342,6 +2355,174 @@
       ],
       "text": "music"
     },
+    "https://adactio.com/journal/19487": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n3:00pm\n\n"
+    },
+    "https://adactio.com/tags/css": {
+      "rels": [
+        "tag"
+      ],
+      "text": "css"
+    },
+    "https://adactio.com/tags/logical": {
+      "rels": [
+        "tag"
+      ],
+      "text": "logical"
+    },
+    "https://adactio.com/tags/properties": {
+      "rels": [
+        "tag"
+      ],
+      "text": "properties"
+    },
+    "https://adactio.com/tags/styling": {
+      "rels": [
+        "tag"
+      ],
+      "text": "styling"
+    },
+    "https://adactio.com/tags/writingmodes": {
+      "rels": [
+        "tag"
+      ],
+      "text": "writingmodes"
+    },
+    "https://adactio.com/tags/inline": {
+      "rels": [
+        "tag"
+      ],
+      "text": "inline"
+    },
+    "https://adactio.com/tags/block": {
+      "rels": [
+        "tag"
+      ],
+      "text": "block"
+    },
+    "https://adactio.com/tags/thesession": {
+      "rels": [
+        "tag"
+      ],
+      "text": "thesession"
+    },
+    "https://adactio.com/tags/frontend": {
+      "rels": [
+        "tag"
+      ],
+      "text": "frontend"
+    },
+    "https://adactio.com/tags/development": {
+      "rels": [
+        "tag"
+      ],
+      "text": "development"
+    },
+    "https://adactio.com/tags/refactoring": {
+      "rels": [
+        "tag"
+      ],
+      "text": "refactoring"
+    },
+    "https://adactio.com/tags/standards": {
+      "rels": [
+        "tag"
+      ],
+      "text": "standards"
+    },
+    "https://adactio.com/tags/browsers": {
+      "rels": [
+        "tag"
+      ],
+      "text": "browsers"
+    },
+    "https://adactio.com/tags/safari": {
+      "rels": [
+        "tag"
+      ],
+      "text": "safari"
+    },
+    "https://adactio.com/tags/apple": {
+      "rels": [
+        "tag"
+      ],
+      "text": "apple"
+    },
+    "https://adactio.com/tags/evergreen": {
+      "rels": [
+        "tag"
+      ],
+      "text": "evergreen"
+    },
+    "https://adactio.com/tags/supports": {
+      "rels": [
+        "tag"
+      ],
+      "text": "supports"
+    },
+    "https://adactio.com/tags/unset": {
+      "rels": [
+        "tag"
+      ],
+      "text": "unset"
+    },
+    "https://adactio.medium.com/2c6eb5680c33": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "Medium"
+    },
+    "https://adactio.com/links/19486": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n10:44am\n\n"
+    },
+    "https://adactio.com/tags/indieweb": {
+      "rels": [
+        "tag"
+      ],
+      "text": "indieweb"
+    },
+    "https://adactio.com/tags/personal": {
+      "rels": [
+        "tag"
+      ],
+      "text": "personal"
+    },
+    "https://adactio.com/tags/publishing": {
+      "rels": [
+        "tag"
+      ],
+      "text": "publishing"
+    },
+    "https://adactio.com/tags/identity": {
+      "rels": [
+        "tag"
+      ],
+      "text": "identity"
+    },
+    "https://adactio.com/tags/freedom": {
+      "rels": [
+        "tag"
+      ],
+      "text": "freedom"
+    },
+    "https://adactio.com/tags/expression": {
+      "rels": [
+        "tag"
+      ],
+      "text": "expression"
+    },
+    "https://adactio.com/tags/politics": {
+      "rels": [
+        "tag"
+      ],
+      "text": "politics"
+    },
     "https://adactio.com/notes/19485": {
       "rels": [
         "bookmark"
@@ -2431,12 +2612,6 @@
         "tag"
       ],
       "text": "writing"
-    },
-    "https://adactio.com/tags/publishing": {
-      "rels": [
-        "tag"
-      ],
-      "text": "publishing"
     },
     "https://adactio.com/tags/interview": {
       "rels": [
@@ -2839,18 +3014,6 @@
       ],
       "text": "webpagetest"
     },
-    "https://adactio.com/tags/frontend": {
-      "rels": [
-        "tag"
-      ],
-      "text": "frontend"
-    },
-    "https://adactio.com/tags/development": {
-      "rels": [
-        "tag"
-      ],
-      "text": "development"
-    },
     "https://adactio.com/links/19471": {
       "rels": [
         "bookmark"
@@ -3054,108 +3217,6 @@
         "tag"
       ],
       "text": "engineering"
-    },
-    "https://adactio.com/tags/personal": {
-      "rels": [
-        "tag"
-      ],
-      "text": "personal"
-    },
-    "https://adactio.com/tags/indieweb": {
-      "rels": [
-        "tag"
-      ],
-      "text": "indieweb"
-    },
-    "https://adactio.com/links/19465": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n4:19pm\n\n"
-    },
-    "https://adactio.com/tags/slides": {
-      "rels": [
-        "tag"
-      ],
-      "text": "slides"
-    },
-    "https://adactio.com/tags/ethics": {
-      "rels": [
-        "tag"
-      ],
-      "text": "ethics"
-    },
-    "https://adactio.com/tags/wc3": {
-      "rels": [
-        "tag"
-      ],
-      "text": "wc3"
-    },
-    "https://adactio.com/tags/tag": {
-      "rels": [
-        "tag"
-      ],
-      "text": "tag"
-    },
-    "https://adactio.com/tags/presentation": {
-      "rels": [
-        "tag"
-      ],
-      "text": "presentation"
-    },
-    "https://adactio.com/tags/tpac": {
-      "rels": [
-        "tag"
-      ],
-      "text": "tpac"
-    },
-    "https://adactio.com/tags/privacy": {
-      "rels": [
-        "tag"
-      ],
-      "text": "privacy"
-    },
-    "https://adactio.com/tags/security": {
-      "rels": [
-        "tag"
-      ],
-      "text": "security"
-    },
-    "https://adactio.com/tags/freedom": {
-      "rels": [
-        "tag"
-      ],
-      "text": "freedom"
-    },
-    "https://adactio.com/tags/oneweb": {
-      "rels": [
-        "tag"
-      ],
-      "text": "oneweb"
-    },
-    "https://adactio.com/links/19464": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n4:13pm\n\n"
-    },
-    "https://adactio.com/tags/environment": {
-      "rels": [
-        "tag"
-      ],
-      "text": "environment"
-    },
-    "https://adactio.com/tags/sustainability": {
-      "rels": [
-        "tag"
-      ],
-      "text": "sustainability"
-    },
-    "https://adactio.com/tags/smashingconf": {
-      "rels": [
-        "tag"
-      ],
-      "text": "smashingconf"
     },
     "https://adactio.com/?start=20": {
       "rels": [
