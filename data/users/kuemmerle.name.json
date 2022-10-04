@@ -7,6 +7,9 @@
     "pingback": [
       "https://kuemmerle.name/xmlrpc.php"
     ],
+    "canonical": [
+      "https://kuemmerle.name/"
+    ],
     "dns-prefetch": [
       "https://translate.google.com/",
       "https://s.w.org/"
@@ -62,9 +65,6 @@
     ],
     "wlwmanifest": [
       "https://kuemmerle.name/wp-includes/wlwmanifest.xml"
-    ],
-    "canonical": [
-      "https://kuemmerle.name/"
     ],
     "shortlink": [
       "https://kuemmerle.name/"
@@ -124,6 +124,11 @@
     "https://kuemmerle.name/xmlrpc.php": {
       "rels": [
         "pingback"
+      ]
+    },
+    "https://kuemmerle.name/": {
+      "rels": [
+        "canonical"
       ]
     },
     "https://translate.google.com/": {
@@ -402,11 +407,6 @@
         "wlwmanifest"
       ],
       "type": "application/wlwmanifest+xml"
-    },
-    "https://kuemmerle.name/": {
-      "rels": [
-        "canonical"
-      ]
     },
     "https://kuemmerle.name/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkuemmerle.name%2F": {
       "rels": [

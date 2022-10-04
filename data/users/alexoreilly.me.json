@@ -1,0 +1,76 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "name": [
+          "Alex O'Reilly"
+        ],
+        "nickname": [
+          "alekzandriia"
+        ],
+        "photo": [
+          "https://picsum.photos/200"
+        ],
+        "url": [
+          "https://alexoreilly.me/"
+        ],
+        "email": [
+          "mailto:hello@alekzandriia.com"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "published": [
+          "2022-10-03"
+        ],
+        "content": [
+          "I ate a cheese sandwich."
+        ],
+        "author": [
+          "http://alexoreilly.me/"
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "me": [
+      "mailto:hello@alekzandriia.com"
+    ],
+    "webmention": [
+      "https://webmention.io/alexoreilly/webmention"
+    ],
+    "pingback": [
+      "https://webmention.io/alexoreilly/xmlrpc",
+      "https://webmention.io/webmention?forward=https://alexoreilly.com/endpoint"
+    ]
+  },
+  "rel-urls": {
+    "mailto:hello@alekzandriia.com": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://webmention.io/alexoreilly/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://webmention.io/alexoreilly/xmlrpc": {
+      "rels": [
+        "pingback"
+      ]
+    },
+    "https://webmention.io/webmention?forward=https://alexoreilly.com/endpoint": {
+      "rels": [
+        "pingback"
+      ]
+    }
+  }
+}

@@ -33,18 +33,17 @@
     "dns-prefetch": [
       "https://s.w.org/"
     ],
-    "alternate": [
-      "https://ludovic.chabant.com/feed/",
-      "https://ludovic.chabant.com/comments/feed/",
-      "https://ludovic.chabant.com/wp-json/wp/v2/pages/1248",
-      "https://ludovic.chabant.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fludovic.chabant.com%2F",
-      "https://ludovic.chabant.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fludovic.chabant.com%2F&format=xml"
-    ],
     "stylesheet": [
       "https://ludovic.chabant.com/wp-content/themes/stochastic/style.css?ver=6.0.2"
     ],
     "https://api.w.org/": [
       "https://ludovic.chabant.com/wp-json/"
+    ],
+    "alternate": [
+      "https://ludovic.chabant.com/wp-json/wp/v2/pages/1248",
+      "https://ludovic.chabant.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fludovic.chabant.com%2F",
+      "https://ludovic.chabant.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fludovic.chabant.com%2F&format=xml",
+      "https://ludovic.chabant.com/feed/"
     ],
     "EditURI": [
       "https://ludovic.chabant.com/xmlrpc.php?rsd"
@@ -100,20 +99,6 @@
         "dns-prefetch"
       ]
     },
-    "https://ludovic.chabant.com/feed/": {
-      "rels": [
-        "alternate"
-      ],
-      "title": "The Stochastic Game » Feed",
-      "type": "application/rss+xml"
-    },
-    "https://ludovic.chabant.com/comments/feed/": {
-      "rels": [
-        "alternate"
-      ],
-      "title": "The Stochastic Game » Comments Feed",
-      "type": "application/rss+xml"
-    },
     "https://ludovic.chabant.com/wp-content/themes/stochastic/style.css?ver=6.0.2": {
       "rels": [
         "stylesheet"
@@ -161,6 +146,13 @@
         "alternate"
       ],
       "type": "text/xml+oembed"
+    },
+    "https://ludovic.chabant.com/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "The Stochastic Game",
+      "type": "application/rss+xml"
     }
   }
 }
