@@ -4,13 +4,18 @@
     "profile": [
       "https://gmpg.org/xfn/11"
     ],
+    "dns-prefetch": [
+      "https://i0.wp.com/",
+      "https://c0.wp.com/"
+    ],
     "alternate": [
       "https://jonathanfrei.com/feed",
       "https://jonathanfrei.com/comments/feed"
     ],
     "stylesheet": [
-      "https://jonathanfrei.com/wp-content/cache/559c09132ea6015eeef34272c39e7813.css",
-      "https://jonathanfrei.com/wp-content/cache/2305cf7579845bad19e97e9d2cb95baf.css"
+      "https://jonathanfrei.com/wp-content/cache/ffed42e48a7b8fcc2a31f5878892ba6f.css",
+      "https://jonathanfrei.com/wp-content/cache/dae8488ea7f99483fdd8b582bf822280.css",
+      "https://c0.wp.com/p/jetpack/11.3.2/css/jetpack.css"
     ],
     "https://api.w.org/": [
       "https://jonathanfrei.com/wp-json/"
@@ -25,10 +30,11 @@
       "https://jonathanfrei.com/"
     ],
     "icon": [
-      "https://jonathanfrei.com/wp-content/uploads/2015/08/favicon-160x1601.png"
+      "https://i0.wp.com/jonathanfrei.com/wp-content/uploads/2015/08/favicon-160x1601.png?fit=32%2C32&ssl=1",
+      "https://i0.wp.com/jonathanfrei.com/wp-content/uploads/2015/08/favicon-160x1601.png?fit=160%2C160&ssl=1"
     ],
     "apple-touch-icon": [
-      "https://jonathanfrei.com/wp-content/uploads/2015/08/favicon-160x1601.png"
+      "https://i0.wp.com/jonathanfrei.com/wp-content/uploads/2015/08/favicon-160x1601.png?fit=160%2C160&ssl=1"
     ],
     "home": [
       "https://jonathanfrei.com/"
@@ -85,10 +91,10 @@
       "https://jonathanfrei.com/tagged/thankfulness"
     ],
     "attachment": [
-      "https://jonathanfrei.com/wp-content/uploads/2016/02/img_9240.jpeg"
+      "https://i0.wp.com/jonathanfrei.com/wp-content/uploads/2016/02/img_9240.jpeg?ssl=1"
     ],
     "wp-att-7116": [
-      "https://jonathanfrei.com/wp-content/uploads/2016/02/img_9240.jpeg"
+      "https://i0.wp.com/jonathanfrei.com/wp-content/uploads/2016/02/img_9240.jpeg?ssl=1"
     ],
     "nofollow": [
       "https://www.instagram.com/p/BAIE2_ClxHa/?taken-by=briankesinger",
@@ -109,6 +115,16 @@
         "profile"
       ]
     },
+    "https://i0.wp.com/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
+    "https://c0.wp.com/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
     "https://jonathanfrei.com/feed": {
       "rels": [
         "alternate"
@@ -123,14 +139,21 @@
       "title": "Jonathan Frei » Comments Feed",
       "type": "application/rss+xml"
     },
-    "https://jonathanfrei.com/wp-content/cache/559c09132ea6015eeef34272c39e7813.css": {
+    "https://jonathanfrei.com/wp-content/cache/ffed42e48a7b8fcc2a31f5878892ba6f.css": {
       "rels": [
         "stylesheet"
       ],
       "media": "screen",
       "type": "text/css"
     },
-    "https://jonathanfrei.com/wp-content/cache/2305cf7579845bad19e97e9d2cb95baf.css": {
+    "https://jonathanfrei.com/wp-content/cache/dae8488ea7f99483fdd8b582bf822280.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://c0.wp.com/p/jetpack/11.3.2/css/jetpack.css": {
       "rels": [
         "stylesheet"
       ],
@@ -160,7 +183,12 @@
         "shortlink"
       ]
     },
-    "https://jonathanfrei.com/wp-content/uploads/2015/08/favicon-160x1601.png": {
+    "https://i0.wp.com/jonathanfrei.com/wp-content/uploads/2015/08/favicon-160x1601.png?fit=32%2C32&ssl=1": {
+      "rels": [
+        "icon"
+      ]
+    },
+    "https://i0.wp.com/jonathanfrei.com/wp-content/uploads/2015/08/favicon-160x1601.png?fit=160%2C160&ssl=1": {
       "rels": [
         "icon"
       ]
@@ -244,7 +272,7 @@
       ],
       "text": "Turning four"
     },
-    "https://jonathanfrei.com/wp-content/uploads/2016/02/img_9240.jpeg": {
+    "https://i0.wp.com/jonathanfrei.com/wp-content/uploads/2016/02/img_9240.jpeg?ssl=1": {
       "rels": [
         "attachment",
         "wp-att-7116"

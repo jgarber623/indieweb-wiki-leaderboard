@@ -16,6 +16,52 @@
           ],
           "properties": {
             "name": [
+              "Migration: Complete\n\t\t\t\t\t\t🔗"
+            ],
+            "url": [
+              "https://degruchy.org/#20221004-migration-complete"
+            ],
+            "published": [
+              "2022-10-04T12:55:19-0400"
+            ],
+            "content": [
+              {
+                "html": "<figure>\n\t\t\t\t\t\t<picture>\n\t\t\t\t\t\t\t<source srcset=\"https://degruchy.org/assets/images/posts/2022-10-04/easy-button.heic\" type=\"image/heic\"></source>\n\t\t\t\t\t\t\t<source srcset=\"https://degruchy.org/assets/images/posts/2022-10-04/easy-button.webp\" type=\"image/webp\"></source>\n\t\t\t\t\t\t\t<img href=\"/assets/images/posts/2022-10-04/easy-button.jpg\" alt=\"That was easy!\" height=\"428\" width=\"640\" loading=\"lazy\">\n\t\t\t\t\t\t</picture>\n\t\t\t\t\t\t<figcaption>That was easy!</figcaption>\n\t\t\t\t\t</figure>\n\t\t\t\t\t<p>Migration to AWS CloudFront complete! Now I\n\t\t\t\t\tjust need to migrate my git repositories.</p>",
+                "value": "That was easy! \n\t\t\t\t\t\t\n\t\t\t\t\t\tThat was easy!\n\t\t\t\t\t\n\t\t\t\t\tMigration to AWS CloudFront complete! Now I\n\t\t\t\t\tjust need to migrate my git repositories."
+              }
+            ]
+          },
+          "id": "20221004-migration-complete"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Some Sort of Issue\n\t\t\t\t\t\t🔗"
+            ],
+            "url": [
+              "https://degruchy.org/#20221004-some-sort-of-issue"
+            ],
+            "published": [
+              "2022-10-04T11:08:33-0400"
+            ],
+            "content": [
+              {
+                "html": "<p>Recently, there has been some issues with my\n\t\t\t\t\tserver. I keep running into an OOM killed set of\n\t\t\t\t\tprocesses for <code>redis</code> and possibly\n\t\t\t\t\tother applications, causing things to stall out\n\t\t\t\t\tand make the server slow or unresponsive. I've\n\t\t\t\t\tdisabled the services and I'm beginning to rethink\n\t\t\t\t\thosting my stuff on a VPS. I <em>used</em> host my\n\t\t\t\t\tsite on Amazon AWS CloudFront (static assets are\n\t\t\t\t\trelatively easy to push entirely to endpoints).\n\t\t\t\t\tHowever, I got the bug to host my own stuff, like\n\t\t\t\t\tMiniflux and Gitea, a choice that I'm wondering if\n\t\t\t\t\twas worth it. Right now I spend ~$5 for the VPS\n\t\t\t\t\talone (not including domain and DNS). I don't\n\t\t\t\t\treally <em>need</em> to host any of these. Github\n\t\t\t\t\tis sufficient for my code, and Miniflux has a\n\t\t\t\t\tcheap-as-all-get-out service that I could just\n\t\t\t\t\tplug into and go. I would only lose a server I\n\t\t\t\t\thave to properly secure and SSH access.</p>",
+                "value": "Recently, there has been some issues with my\n\t\t\t\t\tserver. I keep running into an OOM killed set of\n\t\t\t\t\tprocesses for redis and possibly\n\t\t\t\t\tother applications, causing things to stall out\n\t\t\t\t\tand make the server slow or unresponsive. I've\n\t\t\t\t\tdisabled the services and I'm beginning to rethink\n\t\t\t\t\thosting my stuff on a VPS. I used host my\n\t\t\t\t\tsite on Amazon AWS CloudFront (static assets are\n\t\t\t\t\trelatively easy to push entirely to endpoints).\n\t\t\t\t\tHowever, I got the bug to host my own stuff, like\n\t\t\t\t\tMiniflux and Gitea, a choice that I'm wondering if\n\t\t\t\t\twas worth it. Right now I spend ~$5 for the VPS\n\t\t\t\t\talone (not including domain and DNS). I don't\n\t\t\t\t\treally need to host any of these. Github\n\t\t\t\t\tis sufficient for my code, and Miniflux has a\n\t\t\t\t\tcheap-as-all-get-out service that I could just\n\t\t\t\t\tplug into and go. I would only lose a server I\n\t\t\t\t\thave to properly secure and SSH access."
+              }
+            ]
+          },
+          "id": "20221004-some-sort-of-issue"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               "Online Publishing\n\t\t\t\t\t\t🔗"
             ],
             "url": [
@@ -1859,7 +1905,7 @@
       "https://degruchy.org/assets/stylesheets/main.css"
     ],
     "icon": [
-      "https://degruchy.org/assets/images/2020-minimal-avatar-50.png"
+      "https://degruchy.org/assets/images/2020-minimal-avatar-50.webp"
     ],
     "author": [
       "mailto:nathan@degruchy.org"
@@ -1871,11 +1917,6 @@
       "https://degruchy.org/feed.xml"
     ],
     "me": [
-      "https://github.com/ndegruchy",
-      "https://fosstodon.org/@nathand",
-      "https://ndegruchy.itch.io/",
-      "https://linkedin.com/in/ndegruchy",
-      "https://www.flickr.com/people/nathandegruchy/",
       "https://degruchy.org/"
     ],
     "nofollow": [
@@ -1889,7 +1930,7 @@
       "https://wordpress.org/"
     ],
     "_blank": [
-      "https://git.degruchy.link/ndegruchy/degruchy-org/commits/branch/main/index.html"
+      "https://github.com/ndegruchy/degruchy-org/commits/main/index.html"
     ]
   },
   "rel-urls": {
@@ -1898,7 +1939,7 @@
         "stylesheet"
       ]
     },
-    "https://degruchy.org/assets/images/2020-minimal-avatar-50.png": {
+    "https://degruchy.org/assets/images/2020-minimal-avatar-50.webp": {
       "rels": [
         "icon"
       ],
@@ -1920,31 +1961,6 @@
       ],
       "title": "Atom Feed",
       "type": "application/atom+xml"
-    },
-    "https://github.com/ndegruchy": {
-      "rels": [
-        "me"
-      ]
-    },
-    "https://fosstodon.org/@nathand": {
-      "rels": [
-        "me"
-      ]
-    },
-    "https://ndegruchy.itch.io/": {
-      "rels": [
-        "me"
-      ]
-    },
-    "https://linkedin.com/in/ndegruchy": {
-      "rels": [
-        "me"
-      ]
-    },
-    "https://www.flickr.com/people/nathandegruchy/": {
-      "rels": [
-        "me"
-      ]
     },
     "https://degruchy.org/": {
       "rels": [
@@ -2000,7 +2016,7 @@
       ],
       "text": "historically"
     },
-    "https://git.degruchy.link/ndegruchy/degruchy-org/commits/branch/main/index.html": {
+    "https://github.com/ndegruchy/degruchy-org/commits/main/index.html": {
       "rels": [
         "_blank"
       ],

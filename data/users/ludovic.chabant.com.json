@@ -23,9 +23,20 @@
       "mailto:ludovic@chabant.com",
       "https://micro.blog/ludovicchabant",
       "https://twitter.com/ludovicchabant",
-      "https://github.com/ludovicchabant",
+      "https://chabant.social/@ludovic",
       "https://instagram.com/ludovicchabant",
+      "https://github.com/ludovicchabant",
+      "https://keybase.io/ludovicchabant",
       "https://ludovic.chabant.com/"
+    ],
+    "pgpkey": [
+      "https://ludovic.chabant.com/key.pub.asc"
+    ],
+    "openid.delegate": [
+      "https://ludovic.chabant.com/"
+    ],
+    "openid.server": [
+      "https://openid.indieauth.com/openid"
     ],
     "pingback": [
       "https://ludovic.chabant.com/xmlrpc.php"
@@ -79,7 +90,7 @@
         "me"
       ]
     },
-    "https://github.com/ludovicchabant": {
+    "https://chabant.social/@ludovic": {
       "rels": [
         "me"
       ]
@@ -87,6 +98,31 @@
     "https://instagram.com/ludovicchabant": {
       "rels": [
         "me"
+      ]
+    },
+    "https://github.com/ludovicchabant": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://keybase.io/ludovicchabant": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://ludovic.chabant.com/key.pub.asc": {
+      "rels": [
+        "pgpkey"
+      ]
+    },
+    "https://ludovic.chabant.com/": {
+      "rels": [
+        "openid.delegate"
+      ]
+    },
+    "https://openid.indieauth.com/openid": {
+      "rels": [
+        "openid.server"
       ]
     },
     "https://ludovic.chabant.com/xmlrpc.php": {
@@ -129,11 +165,6 @@
         "wlwmanifest"
       ],
       "type": "application/wlwmanifest+xml"
-    },
-    "https://ludovic.chabant.com/": {
-      "rels": [
-        "canonical"
-      ]
     },
     "https://ludovic.chabant.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fludovic.chabant.com%2F": {
       "rels": [

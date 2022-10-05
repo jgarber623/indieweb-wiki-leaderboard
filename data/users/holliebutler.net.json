@@ -1,37 +1,164 @@
 {
-  "items": [],
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "url": [
+          "https://holliebutler.net/about/"
+        ],
+        "photo": [
+          "https://micro.blog/hollie/avatar.jpg"
+        ],
+        "name": [
+          "Hollie Butler"
+        ],
+        "role": [
+          "Follow @hollie on Micro.blog."
+        ]
+      }
+    }
+  ],
   "rels": {
     "stylesheet": [
-      "https://holliebutler.net/css-hbnet.css"
+      "https://holliebutler.net/assets/css/style.css?1664918272",
+      "https://holliebutler.net/assets/css/highlight.css?1664918272",
+      "https://holliebutler.net/custom.css?1664918272",
+      "https://holliebutler.net/css/all.min.css"
+    ],
+    "icon": [
+      "https://micro.blog/hollie/favicon.png"
+    ],
+    "shortcut": [
+      "https://micro.blog/hollie/favicon.png"
+    ],
+    "alternate": [
+      "https://holliebutler.net/feed.xml",
+      "https://holliebutler.net/podcast.xml",
+      "https://holliebutler.net/feed.json"
+    ],
+    "EditURI": [
+      "https://holliebutler.net/rsd.xml"
     ],
     "me": [
-      "https://twitter.com/holliebutler",
-      "https://www.instagram.com/holliebutler/",
-      "https://github.com/holliebutler"
+      "https://micro.blog/hollie",
+      "https://weirder.earth/@hollie"
+    ],
+    "authorization_endpoint": [
+      "https://micro.blog/indieauth/auth"
+    ],
+    "token_endpoint": [
+      "https://micro.blog/indieauth/token"
+    ],
+    "micropub": [
+      "https://micro.blog/micropub"
+    ],
+    "microsub": [
+      "https://micro.blog/microsub"
+    ],
+    "webmention": [
+      "https://micro.blog/webmention"
+    ],
+    "subscribe": [
+      "https://micro.blog/users/follow"
     ]
   },
   "rel-urls": {
-    "https://holliebutler.net/css-hbnet.css": {
+    "https://holliebutler.net/assets/css/style.css?1664918272": {
       "rels": [
         "stylesheet"
       ]
     },
-    "https://twitter.com/holliebutler": {
+    "https://holliebutler.net/assets/css/highlight.css?1664918272": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://holliebutler.net/custom.css?1664918272": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://micro.blog/hollie/favicon.png": {
+      "rels": [
+        "icon",
+        "shortcut"
+      ],
+      "type": "image/x-icon"
+    },
+    "https://holliebutler.net/feed.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Hollie Butler",
+      "type": "application/rss+xml"
+    },
+    "https://holliebutler.net/podcast.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Podcast",
+      "type": "application/rss+xml"
+    },
+    "https://holliebutler.net/feed.json": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Hollie Butler",
+      "type": "application/json"
+    },
+    "https://holliebutler.net/rsd.xml": {
+      "rels": [
+        "EditURI"
+      ],
+      "type": "application/rsd+xml"
+    },
+    "https://micro.blog/hollie": {
       "rels": [
         "me"
       ]
     },
-    "https://www.instagram.com/holliebutler/": {
+    "https://micro.blog/indieauth/auth": {
       "rels": [
-        "me"
-      ],
-      "text": "@holliebutler"
+        "authorization_endpoint"
+      ]
     },
-    "https://github.com/holliebutler": {
+    "https://micro.blog/indieauth/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://micro.blog/micropub": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://micro.blog/microsub": {
+      "rels": [
+        "microsub"
+      ]
+    },
+    "https://micro.blog/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://micro.blog/users/follow": {
+      "rels": [
+        "subscribe"
+      ]
+    },
+    "https://holliebutler.net/css/all.min.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://weirder.earth/@hollie": {
       "rels": [
         "me"
       ],
-      "text": "@holliebutler"
+      "text": "Mastodon"
     }
   }
 }
