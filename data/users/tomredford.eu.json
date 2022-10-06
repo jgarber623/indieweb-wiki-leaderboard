@@ -2,8 +2,10 @@
   "items": [],
   "rels": {
     "me": [
+      "https://mastodon.lol/tredford01",
       "https://twitter.com/tredford01",
-      "https://www.instagram.com/tredford01"
+      "https://www.instagram.com/tredford01",
+      "https://mastodon.lol/@tredford01"
     ],
     "dns-prefetch": [
       "https://s.w.org/"
@@ -13,8 +15,8 @@
       "https://tomredford.eu/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.16",
       "https://tomredford.eu/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.0.2",
       "https://tomredford.eu/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
-      "https://tomredford.eu/wp-content/themes/september/style.css?ver=6.0.2",
-      "https://tomredford.eu/wp-content/plugins/jetpack/css/jetpack.css?ver=11.2"
+      "https://tomredford.eu/wp-content/themes/october/style.css?ver=6.0.2",
+      "https://tomredford.eu/wp-content/plugins/jetpack/css/jetpack.css?ver=11.4"
     ],
     "https://api.w.org/": [
       "https://tomredford.eu/wp-json/"
@@ -34,18 +36,22 @@
     ],
     "noopener": [
       "https://be.linkedin.com/in/tom-scott-redford",
-      "https://twitter.com/tredford01"
+      "https://twitter.com/tredford01",
+      "https://mastodon.lol/@tredford01",
+      "https://tumblelog.tomredford.eu/"
     ],
     "noreferrer": [
       "https://be.linkedin.com/in/tom-scott-redford",
-      "https://twitter.com/tredford01"
+      "https://twitter.com/tredford01",
+      "https://mastodon.lol/@tredford01",
+      "https://tumblelog.tomredford.eu/"
     ],
     "license": [
       "https://tomredford.eu/copyright-and-privacy"
     ]
   },
   "rel-urls": {
-    "https://twitter.com/tredford01": {
+    "https://mastodon.lol/tredford01": {
       "rels": [
         "me"
       ]
@@ -83,14 +89,14 @@
       "media": "all",
       "type": "text/css"
     },
-    "https://tomredford.eu/wp-content/themes/september/style.css?ver=6.0.2": {
+    "https://tomredford.eu/wp-content/themes/october/style.css?ver=6.0.2": {
       "rels": [
         "stylesheet"
       ],
       "media": "all",
       "type": "text/css"
     },
-    "https://tomredford.eu/wp-content/plugins/jetpack/css/jetpack.css?ver=11.2": {
+    "https://tomredford.eu/wp-content/plugins/jetpack/css/jetpack.css?ver=11.4": {
       "rels": [
         "stylesheet"
       ],
@@ -114,6 +120,11 @@
         "wlwmanifest"
       ],
       "type": "application/wlwmanifest+xml"
+    },
+    "https://twitter.com/tredford01": {
+      "rels": [
+        "me"
+      ]
     },
     "https://www.instagram.com/tredford01": {
       "rels": [
@@ -141,6 +152,21 @@
         "noreferrer"
       ],
       "text": "LinkedIn"
+    },
+    "https://mastodon.lol/@tredford01": {
+      "rels": [
+        "me",
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "Mastodon"
+    },
+    "https://tumblelog.tomredford.eu/": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "Tumblr"
     },
     "https://tomredford.eu/copyright-and-privacy": {
       "rels": [

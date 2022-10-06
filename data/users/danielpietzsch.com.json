@@ -1,5 +1,373 @@
 {
-  "items": [],
-  "rels": {},
-  "rel-urls": {}
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "photo": [
+          {
+            "value": "https://danielpietzsch.com/assets/images/avatar.jpeg",
+            "srcset": {
+              "300w": "https://danielpietzsch.com/assets/images/avatar.jpeg",
+              "600w": "https://danielpietzsch.com/assets/images/avatar_2x.jpeg"
+            },
+            "alt": "Portrait of Daniel Pietzsch"
+          }
+        ],
+        "name": [
+          "Daniel Pietzsch"
+        ],
+        "url": [
+          "https://danielpietzsch.com/"
+        ],
+        "note": [
+          "I’m a freelance web developer based in Düsseldorf, Germany.\nI’m also a passionate film photographer, a husband and father, a musician and metalhead.\nUse me@danielpietzsch.com, to get in touch."
+        ],
+        "job-title": [
+          "web developer"
+        ],
+        "adr": [
+          "Düsseldorf, Germany"
+        ],
+        "locality": [
+          "Düsseldorf"
+        ],
+        "country-name": [
+          "Germany"
+        ],
+        "email": [
+          "mailto:me@danielpietzsch.com"
+        ]
+      },
+      "id": "about"
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "url": [
+          "https://danielpietzsch.com/notes/no-spoilers"
+        ],
+        "published": [
+          "2022-09-26T16:38+0200"
+        ],
+        "content": [
+          {
+            "html": "<p>The text for <a href=\"https://danielpietzsch.com/watched/movies/\">movie posts</a> is now hidden at first, if it potentially contains spoilers (I simply used <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details\">the <code class=\"language-plaintext highlighter-rouge\">&lt;details&gt;</code> element</a> for this). This also applies to the <a href=\"https://en.m.wikipedia.org/wiki/Atom_(web_standard)\">Atom</a> feeds (<a href=\"https://danielpietzsch.com/watched/movies/feed.atom\">for movies</a> and <a href=\"https://danielpietzsch.com/feed.atom\">for everything</a>). The text is also no longer written in the <code class=\"language-plaintext highlighter-rouge\">description</code> and <code class=\"language-plaintext highlighter-rouge\">og:description</code> meta tags. All of this should make it harder to accidentally get spoiled.</p>\n\n\n    <div class=\"image-teaser-gallery\">\n      \n    </div>",
+            "value": "The text for movie posts is now hidden at first, if it potentially contains spoilers (I simply used the <details> element for this). This also applies to the Atom feeds (for movies and for everything). The text is also no longer written in the description and og:description meta tags. All of this should make it harder to accidentally get spoiled."
+          }
+        ],
+        "name": [
+          "The text for movie posts is now hidden at first, if it potentially contains spoilers (I simply used the <details> element for this). This also applies to the Atom feeds (for movies and for everything). The text is also no longer written in the description and og:description meta tags. All of this should make it harder to accidentally get spoiled."
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "url": [
+          "https://danielpietzsch.com/articles/planck-ruin",
+          "https://danielpietzsch.com/articles/planck-ruin"
+        ],
+        "published": [
+          "2022-09-05T21:58+0200"
+        ],
+        "name": [
+          "The Planck keyboard has ruined me"
+        ],
+        "summary": [
+          "The Planck is the only computer keyboard I use now. I do not want to – nor can I – use a standard keyboard anymore. My MacBook Pro’s keyboard that I’ve used for years? Of no use: the staggered keys, the size (way too big!), the low key travel, the non-customisability. Everything’s alien now."
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "url": [
+          "https://danielpietzsch.com/articles/samba-pi",
+          "https://danielpietzsch.com/articles/samba-pi"
+        ],
+        "published": [
+          "2022-09-03T12:10+0200"
+        ],
+        "name": [
+          "Samba Pi"
+        ],
+        "summary": [
+          "I recently dusted off an old Raspberry Pi and installed Samba to serve all the movies we have on two external hard drives on our local network."
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "url": [
+          "https://danielpietzsch.com/watched/movies/army-of-darkness"
+        ],
+        "name": [
+          "Army of Darkness"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "url": [
+          "https://danielpietzsch.com/watched/movies/rambo-first-blood-part-ii"
+        ],
+        "name": [
+          "Rambo: First Blood Part II"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "url": [
+          "https://danielpietzsch.com/watched/movies/hot-shots-part-deux"
+        ],
+        "name": [
+          "Hot Shots! Part Deux"
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "stylesheet": [
+      "https://danielpietzsch.com/assets/css/style.css"
+    ],
+    "alternate": [
+      "https://danielpietzsch.com/feed.atom",
+      "https://danielpietzsch.com/articles/feed.atom",
+      "https://danielpietzsch.com/notes/feed.atom",
+      "https://danielpietzsch.com/links/feed.atom",
+      "https://danielpietzsch.com/listened_to/music/feed.atom",
+      "https://danielpietzsch.com/watched/movies/feed.atom",
+      "https://danielpietzsch.com/read/books/feed.atom"
+    ],
+    "webmention": [
+      "https://webmention.io/danielpietzsch.com/webmention"
+    ],
+    "pingback": [
+      "https://webmention.io/danielpietzsch.com/xmlrpc"
+    ],
+    "me": [
+      "https://twitter.com/danielpietzsch",
+      "https://github.com/danielpietzsch",
+      "https://gitlab.com/danielpietzsch",
+      "https://www.xing.com/profile/Daniel_Pietzsch2",
+      "https://www.linkedin.com/in/danielpietzsch",
+      "http://stackexchange.com/users/72925/daniel-pietzsch",
+      "http://photojournal.danielpietzsch.com/",
+      "https://blog.danielpietzsch.com/",
+      "https://danielpietzsch.com/"
+    ],
+    "apple-touch-icon": [
+      "https://danielpietzsch.com/assets/images/apple-touch-icon.png"
+    ],
+    "icon": [
+      "https://danielpietzsch.com/assets/images/apple-touch-icon.png",
+      "https://danielpietzsch.com/assets/images/avatar-96x96.png",
+      "https://danielpietzsch.com/assets/images/avatar-32x32.png",
+      "https://danielpietzsch.com/assets/images/avatar-16x16.png"
+    ],
+    "external": [
+      "http://photojournal.danielpietzsch.com/",
+      "https://blog.danielpietzsch.com/"
+    ],
+    "bookmark": [
+      "https://danielpietzsch.com/notes/no-spoilers",
+      "https://danielpietzsch.com/articles/planck-ruin",
+      "https://danielpietzsch.com/articles/samba-pi",
+      "https://danielpietzsch.com/watched/movies/army-of-darkness",
+      "https://danielpietzsch.com/watched/movies/rambo-first-blood-part-ii",
+      "https://danielpietzsch.com/watched/movies/hot-shots-part-deux"
+    ]
+  },
+  "rel-urls": {
+    "https://danielpietzsch.com/assets/css/style.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://danielpietzsch.com/feed.atom": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Daniel Pietzsch",
+      "type": "application/atom+xml"
+    },
+    "https://danielpietzsch.com/articles/feed.atom": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Daniel Pietzsch – Articles",
+      "type": "application/atom+xml"
+    },
+    "https://danielpietzsch.com/notes/feed.atom": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Daniel Pietzsch – Notes",
+      "type": "application/atom+xml"
+    },
+    "https://danielpietzsch.com/links/feed.atom": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Daniel Pietzsch – Links",
+      "type": "application/atom+xml"
+    },
+    "https://danielpietzsch.com/listened_to/music/feed.atom": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Daniel Pietzsch – Music",
+      "type": "application/atom+xml"
+    },
+    "https://danielpietzsch.com/watched/movies/feed.atom": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Daniel Pietzsch – Movies",
+      "type": "application/atom+xml"
+    },
+    "https://danielpietzsch.com/read/books/feed.atom": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Daniel Pietzsch – Books",
+      "type": "application/atom+xml"
+    },
+    "https://webmention.io/danielpietzsch.com/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://webmention.io/danielpietzsch.com/xmlrpc": {
+      "rels": [
+        "pingback"
+      ]
+    },
+    "https://twitter.com/danielpietzsch": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://github.com/danielpietzsch": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://gitlab.com/danielpietzsch": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://www.xing.com/profile/Daniel_Pietzsch2": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://www.linkedin.com/in/danielpietzsch": {
+      "rels": [
+        "me"
+      ]
+    },
+    "http://stackexchange.com/users/72925/daniel-pietzsch": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://danielpietzsch.com/assets/images/apple-touch-icon.png": {
+      "rels": [
+        "apple-touch-icon",
+        "icon"
+      ],
+      "type": "image/png"
+    },
+    "https://danielpietzsch.com/assets/images/avatar-96x96.png": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/png"
+    },
+    "https://danielpietzsch.com/assets/images/avatar-32x32.png": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/png"
+    },
+    "https://danielpietzsch.com/assets/images/avatar-16x16.png": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/png"
+    },
+    "http://photojournal.danielpietzsch.com/": {
+      "rels": [
+        "external",
+        "me"
+      ],
+      "text": "The Photo Journal"
+    },
+    "https://blog.danielpietzsch.com/": {
+      "rels": [
+        "external",
+        "me"
+      ],
+      "text": "My Old Blog"
+    },
+    "https://danielpietzsch.com/": {
+      "rels": [
+        "me"
+      ],
+      "text": "Daniel Pietzsch"
+    },
+    "https://danielpietzsch.com/notes/no-spoilers": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "Monday, September 26, 2022"
+    },
+    "https://danielpietzsch.com/articles/planck-ruin": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "Monday, September  5, 2022"
+    },
+    "https://danielpietzsch.com/articles/samba-pi": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "Saturday, September  3, 2022"
+    },
+    "https://danielpietzsch.com/watched/movies/army-of-darkness": {
+      "rels": [
+        "bookmark"
+      ]
+    },
+    "https://danielpietzsch.com/watched/movies/rambo-first-blood-part-ii": {
+      "rels": [
+        "bookmark"
+      ]
+    },
+    "https://danielpietzsch.com/watched/movies/hot-shots-part-deux": {
+      "rels": [
+        "bookmark"
+      ]
+    }
+  }
 }

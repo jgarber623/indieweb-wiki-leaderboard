@@ -139,6 +139,60 @@
               }
             ],
             "url": [
+              "https://1500wordmtu.com/2022/enjoyed-this-atlantic-article-by-kaitlyn-tiffany"
+            ],
+            "published": [
+              "2022-10-05T15:04:25+00:00"
+            ],
+            "in-reply-to": [
+              "https://www.theatlantic.com/technology/archive/2022/10/internet-archive-decentralized-web-web3-brewster-kahle/671647/"
+            ],
+            "name": [
+              "Enjoyed this Atlantic article by Kaitlyn Tiffany that teases apart #web3 from the #dweb movement.  And great to see Mai Sutton, Compost and Danny O'Brien get some space!\r\n\r\n// @TheAtlantic @kait_tiffany @maira @COMPOSTmag @mala @GETDWeb\r\n\r\nhttps://www.theatlantic.com/technology/archive/2022/10/internet-archive-decentralized-web-web3-brews..."
+            ],
+            "content": [
+              {
+                "html": "Enjoyed this Atlantic article by Kaitlyn Tiffany that teases apart <a href=\"https://1500wordmtu.com/tag/web3\" class=\"p-category\" rel=\"tag\">#web3</a> from the <a href=\"https://1500wordmtu.com/tag/dweb\" class=\"p-category\" rel=\"tag\">#dweb</a> movement.  And great to see Mai Sutton, Compost and Danny O'Brien get some space!<br>\r\n<br>\r\n// @TheAtlantic @kait_tiffany @maira @COMPOSTmag @mala @GETDWeb<br>\r\n<br>\r\n<a href=\"https://www.theatlantic.com/technology/archive/2022/10/internet-archive-decentralized-web-web3-brewster-kahle/671647/\" target=\"_blank\">https://<wbr></wbr>www.theatlantic.com/<wbr></wbr>technology/<wbr></wbr>archive/<wbr></wbr>2022/<wbr></wbr>10/<wbr></wbr>internet-archive-decentralized-web-web3-brews...</a>",
+                "value": "Enjoyed this Atlantic article by Kaitlyn Tiffany that teases apart #web3 from the #dweb movement.  And great to see Mai Sutton, Compost and Danny O'Brien get some space!\r\n\r\n// @TheAtlantic @kait_tiffany @maira @COMPOSTmag @mala @GETDWeb\r\n\r\nhttps://www.theatlantic.com/technology/archive/2022/10/internet-archive-decentralized-web-web3-brews..."
+              }
+            ],
+            "category": [
+              "#web3",
+              "#dweb"
+            ],
+            "syndication": [
+              "https://social.coop/@lindner/109116277814788181",
+              "https://twitter.com/lindner/status/1577676092504125441"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "url": [
+                    "https://1500wordmtu.com/profile/lindner",
+                    "https://1500wordmtu.com/profile/lindner",
+                    "https://1500wordmtu.com/profile/lindner"
+                  ],
+                  "photo": [
+                    "https://1500wordmtu.com/file/3058b26090e897abebbc1de51e84b758/thumb.jpg"
+                  ],
+                  "name": [
+                    "Paul Lindner"
+                  ]
+                },
+                "value": "Paul Lindner"
+              }
+            ],
+            "url": [
               "https://1500wordmtu.com/2022/dirt-blading"
             ],
             "published": [
@@ -2477,52 +2531,6 @@
               }
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "url": [
-                    "https://1500wordmtu.com/profile/lindner",
-                    "https://1500wordmtu.com/profile/lindner",
-                    "https://1500wordmtu.com/profile/lindner"
-                  ],
-                  "photo": [
-                    "https://1500wordmtu.com/file/3058b26090e897abebbc1de51e84b758/thumb.jpg"
-                  ],
-                  "name": [
-                    "Paul Lindner"
-                  ]
-                },
-                "value": "Paul Lindner"
-              }
-            ],
-            "url": [
-              "https://1500wordmtu.com/2021/hacker-news-ingestedheres-some-qd-scripting-to"
-            ],
-            "published": [
-              "2021-10-02T02:32:41+00:00"
-            ],
-            "name": [
-              "Hacker News Ingested\r\n\r\nHere's some q&d scripting to pull your comments into a bunch of shpub commands.  You'll need to edit some of the quoting, but it works well!\r\n\r\ncurl https://hnrss.org/threads.jsonfeed?id=lindner |jq > hackernews-plindner-threads.json\r\ncat  hackernews-plindner-threads.json  | jq -r '.items[]| \"shpub note --html --syndication=\" + .url + \" --published=\" + .date_published + \" --name=\\\"\" + .title + \"\\\" - <<EOF\\n\" + .content_html + \"\\nEOF\\n\\n\"'"
-            ],
-            "content": [
-              {
-                "html": "Hacker News Ingested<br>\r\n<br>\r\nHere's some q&amp;d scripting to pull your comments into a bunch of shpub commands.  You'll need to edit some of the quoting, but it works well!<br>\r\n<br>\r\ncurl <a href=\"https://hnrss.org/threads.jsonfeed?id=lindner\" target=\"_blank\">https://<wbr></wbr>hnrss.org/<wbr></wbr>threads.jsonfeed?id=<wbr></wbr>lindner</a> |jq &gt; hackernews-plindner-threads.json<br>\r\ncat  hackernews-plindner-threads.json  | jq -r '.items[]| \"shpub note --html --syndication=\" + .url + \" --published=\" + .date_published + \" --name=\\\"\" + .title + \"\\\" - &lt;&lt;EOF\\n\" + .content_html + \"\\nEOF\\n\\n\"'",
-                "value": "Hacker News Ingested\r\n\r\nHere's some q&d scripting to pull your comments into a bunch of shpub commands.  You'll need to edit some of the quoting, but it works well!\r\n\r\ncurl https://hnrss.org/threads.jsonfeed?id=lindner |jq > hackernews-plindner-threads.json\r\ncat  hackernews-plindner-threads.json  | jq -r '.items[]| \"shpub note --html --syndication=\" + .url + \" --published=\" + .date_published + \" --name=\\\"\" + .title + \"\\\" - <<EOF\\n\" + .content_html + \"\\nEOF\\n\\n\"'"
-              }
-            ],
-            "syndication": [
-              "https://social.coop/@lindner/107029591620292585"
-            ]
-          }
         }
       ]
     }
@@ -2634,6 +2642,7 @@
       "https://1500wordmtu.com/micropub/endpoint"
     ],
     "permalink": [
+      "https://1500wordmtu.com/2022/enjoyed-this-atlantic-article-by-kaitlyn-tiffany",
       "https://1500wordmtu.com/2022/dirt-blading",
       "https://1500wordmtu.com/2022/this-totally-feels-like-a-web-10",
       "https://1500wordmtu.com/2022/an-thoughtful-longnow-session-happening-nowwatchvsbuviufitti",
@@ -2682,10 +2691,10 @@
       "https://1500wordmtu.com/2021/lindner-and-hi-to-everyone-in-germany",
       "https://1500wordmtu.com/2021/chrissip81-no-worries-i-get-misidentified-all",
       "https://1500wordmtu.com/2021/chrissip81-i-see-that-youre-popular",
-      "https://1500wordmtu.com/2021/loose-ends",
-      "https://1500wordmtu.com/2021/hacker-news-ingestedheres-some-qd-scripting-to"
+      "https://1500wordmtu.com/2021/loose-ends"
     ],
     "in-reply-to": [
+      "https://www.theatlantic.com/technology/archive/2022/10/internet-archive-decentralized-web-web3-brewster-kahle/671647/",
       "https://subconscious.substack.com/p/evolution-adjacent-possible",
       "https://twitter.com/lindner/status/1573727397618192385",
       "https://www.forbes.com/sites/michaeldelcastillo/2022/09/11/jack-dorseys-former-boss-is-building-a-decentralized-twitter",
@@ -2708,6 +2717,8 @@
       "https://twitter.com/Chrissip81/status/1463237734840115215"
     ],
     "tag": [
+      "https://1500wordmtu.com/tag/web3",
+      "https://1500wordmtu.com/tag/dweb",
       "https://1500wordmtu.com/tag/dwebcamp2022",
       "https://1500wordmtu.com/tag/DEFCON30",
       "https://1500wordmtu.com/tag/til",
@@ -3043,6 +3054,30 @@
       "rels": [
         "stylesheet"
       ]
+    },
+    "https://1500wordmtu.com/2022/enjoyed-this-atlantic-article-by-kaitlyn-tiffany": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "\n                            October 5, 2022\n                        "
+    },
+    "https://www.theatlantic.com/technology/archive/2022/10/internet-archive-decentralized-web-web3-brewster-kahle/671647/": {
+      "rels": [
+        "in-reply-to"
+      ],
+      "text": "a post on\n                                        www.theatlantic.com\n                                        "
+    },
+    "https://1500wordmtu.com/tag/web3": {
+      "rels": [
+        "tag"
+      ],
+      "text": "#web3"
+    },
+    "https://1500wordmtu.com/tag/dweb": {
+      "rels": [
+        "tag"
+      ],
+      "text": "#dweb"
     },
     "https://1500wordmtu.com/2022/dirt-blading": {
       "rels": [
@@ -3493,12 +3528,6 @@
         "permalink"
       ],
       "text": "\n                            October 4, 2021\n                        "
-    },
-    "https://1500wordmtu.com/2021/hacker-news-ingestedheres-some-qd-scripting-to": {
-      "rels": [
-        "permalink"
-      ],
-      "text": "\n                            October 2, 2021\n                        "
     },
     "https://1500wordmtu.com/?offset=0": {
       "rels": [

@@ -467,6 +467,15 @@
     "manifest": [
       "https://im.youronly.one/site.34053b6d5d972ca32bd41cf07399123358a5c4280e13d487e0b4c75579e4790a98444f98bb23b20f9cc072d0217f717934a95ca236d7d544b6d8cda26f0eb4f7.webmanifest"
     ],
+    "preload": [
+      "https://static.cloudflareinsights.com/beacon.min.js",
+      "https://microanalytics.io/js/script.js",
+      "https://wcs.naver.net/wcslog.js",
+      "https://im.youronly.one/js/analytics.min.97439e940e6e670e42694374d8f778e6e6375907f99d4882fabca7107538805491a7b9cc29934a9c2779b0701eade0aef9f9d83d02432b0c02e81186ada1affb.js",
+      "https://swetrix.org/swetrix.js",
+      "https://im.youronly.one/js/analytics-swetrix.min.13b194f175c83fdaf5ea88ee235c6321f6058ea947cb8e3398ea8708a3b96afb5d1f8aa653f9be0a24fd9947fafb02af971a661ce87a7f62061f77bb8bd1d1d8.js",
+      "https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+Display:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+Mono:wght@400;700&family=Noto+Sans+Tagalog&family=Noto+Sans+Tagbanwa&family=Noto+Sans+Buhid&family=Noto+Sans+Hanunoo&family=Noto+Sans+Phoenician&family=Noto+Sans+Hebrew:wght@400;700&family=Noto+Sans+KR:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap"
+    ],
     "license": [
       "https://creativecommons.org/licenses/by-sa/4.0/"
     ],
@@ -482,15 +491,6 @@
       "https://cdn.jsdelivr.net/",
       "https://unpkg.com/"
     ],
-    "preload": [
-      "https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+Display:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+Mono:wght@400;700&family=Noto+Sans+Tagalog&family=Noto+Sans+Tagbanwa&family=Noto+Sans+Buhid&family=Noto+Sans+Hanunoo&family=Noto+Sans+Phoenician&family=Noto+Sans+Hebrew:wght@400;700&family=Noto+Sans+KR:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap",
-      "https://static.cloudflareinsights.com/beacon.min.js",
-      "https://microanalytics.io/js/script.js",
-      "https://wcs.naver.net/wcslog.js",
-      "https://im.youronly.one/js/analytics.min.97439e940e6e670e42694374d8f778e6e6375907f99d4882fabca7107538805491a7b9cc29934a9c2779b0701eade0aef9f9d83d02432b0c02e81186ada1affb.js",
-      "https://swetrix.org/swetrix.js",
-      "https://im.youronly.one/js/analytics-swetrix.min.13b194f175c83fdaf5ea88ee235c6321f6058ea947cb8e3398ea8708a3b96afb5d1f8aa653f9be0a24fd9947fafb02af971a661ce87a7f62061f77bb8bd1d1d8.js"
-    ],
     "stylesheet": [
       "https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+Display:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+Mono:wght@400;700&family=Noto+Sans+Tagalog&family=Noto+Sans+Tagbanwa&family=Noto+Sans+Buhid&family=Noto+Sans+Hanunoo&family=Noto+Sans+Phoenician&family=Noto+Sans+Hebrew:wght@400;700&family=Noto+Sans+KR:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap",
       "https://im.youronly.one/css/main.min.2de2890c1b8e83381e8afcc7abd9dcde3baf85053298eb5704f489e3b84fe22069db2538cfb8a0a5c21dfab9cb0c71e79be46c5e5f25ea188ca4affefc882b10.css",
@@ -500,7 +500,7 @@
       "https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css",
       "https://rsc.youronly.one/css/paninap-fonts.min.css",
       "https://im.youronly.one/css/allicons.min.0eb4dce56009344abd6b3874e29f40481a8e685b5414e5d929183ab525975d265688825c977a6697b503f76e891c209653010d7868ff20946223959a1ddf19b7.css",
-      "https://im.youronly.one/css/yooki.min.afd13fc6399bc4e4f674073796178d00b1d7bac2cbf11c38d9d1afd9db4fe1e3ed52cbed92310a7030c5cb7f9efcb8a2c6ad6e196496681ed35321146ca87054.css"
+      "https://im.youronly.one/css/yooki.min.b785dcc54cb6ffa597fdbfef3a154752a056a1cd40db2b88846d01df45cb3e616a5c1969bedd988887d5a4c11e79311ca1d02e1fb12a528aac487911aa4b28ac.css"
     ],
     "sitemap": [
       "https://youronly.one/sitemap.index.xml",
@@ -686,6 +686,36 @@
     "https://im.youronly.one/site.34053b6d5d972ca32bd41cf07399123358a5c4280e13d487e0b4c75579e4790a98444f98bb23b20f9cc072d0217f717934a95ca236d7d544b6d8cda26f0eb4f7.webmanifest": {
       "rels": [
         "manifest"
+      ]
+    },
+    "https://static.cloudflareinsights.com/beacon.min.js": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://microanalytics.io/js/script.js": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://wcs.naver.net/wcslog.js": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://im.youronly.one/js/analytics.min.97439e940e6e670e42694374d8f778e6e6375907f99d4882fabca7107538805491a7b9cc29934a9c2779b0701eade0aef9f9d83d02432b0c02e81186ada1affb.js": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://swetrix.org/swetrix.js": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://im.youronly.one/js/analytics-swetrix.min.13b194f175c83fdaf5ea88ee235c6321f6058ea947cb8e3398ea8708a3b96afb5d1f8aa653f9be0a24fd9947fafb02af971a661ce87a7f62061f77bb8bd1d1d8.js": {
+      "rels": [
+        "preload"
       ]
     },
     "https://creativecommons.org/licenses/by-sa/4.0/": {
@@ -910,7 +940,7 @@
       "media": "all",
       "type": "text/css"
     },
-    "https://im.youronly.one/css/yooki.min.afd13fc6399bc4e4f674073796178d00b1d7bac2cbf11c38d9d1afd9db4fe1e3ed52cbed92310a7030c5cb7f9efcb8a2c6ad6e196496681ed35321146ca87054.css": {
+    "https://im.youronly.one/css/yooki.min.b785dcc54cb6ffa597fdbfef3a154752a056a1cd40db2b88846d01df45cb3e616a5c1969bedd988887d5a4c11e79311ca1d02e1fb12a528aac487911aa4b28ac.css": {
       "rels": [
         "stylesheet"
       ],
@@ -1219,36 +1249,6 @@
         "noopener"
       ],
       "text": "Varun A P"
-    },
-    "https://static.cloudflareinsights.com/beacon.min.js": {
-      "rels": [
-        "preload"
-      ]
-    },
-    "https://microanalytics.io/js/script.js": {
-      "rels": [
-        "preload"
-      ]
-    },
-    "https://wcs.naver.net/wcslog.js": {
-      "rels": [
-        "preload"
-      ]
-    },
-    "https://im.youronly.one/js/analytics.min.97439e940e6e670e42694374d8f778e6e6375907f99d4882fabca7107538805491a7b9cc29934a9c2779b0701eade0aef9f9d83d02432b0c02e81186ada1affb.js": {
-      "rels": [
-        "preload"
-      ]
-    },
-    "https://swetrix.org/swetrix.js": {
-      "rels": [
-        "preload"
-      ]
-    },
-    "https://im.youronly.one/js/analytics-swetrix.min.13b194f175c83fdaf5ea88ee235c6321f6058ea947cb8e3398ea8708a3b96afb5d1f8aa653f9be0a24fd9947fafb02af971a661ce87a7f62061f77bb8bd1d1d8.js": {
-      "rels": [
-        "preload"
-      ]
     }
   }
 }

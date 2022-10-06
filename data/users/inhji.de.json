@@ -11,6 +11,32 @@
             "h-entry"
           ],
           "properties": {
+            "content": [
+              {
+                "html": "<p>\nToday I wanted to flash some changes in the Reform keyboard firmware to the keyboard controller. Having done it before, I felt fairly confident with what I was doing. I took off the keyboard frame, flipped the dip-switch SW84 and pressed the button SW83. As expected, the keyboard controller restarted and showed up as <code class=\"inline\">Atmel DFU bootloader</code> in the USB devices. I connected an external keyboard and tried to flash the new firmware I compiled before. I was greeted with 3 lines of <code class=\"inline\">dfu-programmer: no device present</code>.</p>\n<p>\nAfter trying a few times unsuccessfully, I tried to switch back to the normal mode, so I flipped the switch again and reset the controller. It did not restart this time and did not respond to Circle key presses. Flipping the switch and trying again in programming mode also did not change things. The oled display is off and I have no way to interact with the controller. </p>\n<p>\nWhen flipping the laptop over, I noticed two leds being on permanently (D11, D12). I reset the lpc controller as well, but that also did not change anything.</p>\n<p>\nRight now I can’t turn on the laptop at all.</p>",
+                "value": "Today I wanted to flash some changes in the Reform keyboard firmware to the keyboard controller. Having done it before, I felt fairly confident with what I was doing. I took off the keyboard frame, flipped the dip-switch SW84 and pressed the button SW83. As expected, the keyboard controller restarted and showed up as Atmel DFU bootloader in the USB devices. I connected an external keyboard and tried to flash the new firmware I compiled before. I was greeted with 3 lines of dfu-programmer: no device present.\n\nAfter trying a few times unsuccessfully, I tried to switch back to the normal mode, so I flipped the switch again and reset the controller. It did not restart this time and did not respond to Circle key presses. Flipping the switch and trying again in programming mode also did not change things. The oled display is off and I have no way to interact with the controller. \n\nWhen flipping the laptop over, I noticed two leds being on permanently (D11, D12). I reset the lpc controller as well, but that also did not change anything.\n\nRight now I can’t turn on the laptop at all."
+              }
+            ],
+            "uid": [
+              "https://inhji.de/notes/1664993699"
+            ],
+            "url": [
+              "https://inhji.de/notes/1664993699"
+            ],
+            "published": [
+              "2022-10-05T18:14:59"
+            ],
+            "category": [
+              "{Microblog}",
+              "[MNT Reform]"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
             "uid": [
               "https://inhji.de/Music Releases September 2022",
               "https://inhji.de/notes/music-releases-september-2022"
@@ -86,8 +112,8 @@
             ],
             "category": [
               "{Microblog}",
-              "[CSS]",
               "[Climate]",
+              "[CSS]",
               "[Meta]",
               "[Webdev]"
             ],
@@ -118,9 +144,9 @@
             ],
             "category": [
               "{Microblog}",
-              "[Homenet]",
+              "[Selfhosting]",
               "[Raspberry Pi]",
-              "[Selfhosting]"
+              "[Homenet]"
             ]
           }
         },
@@ -146,8 +172,8 @@
             ],
             "category": [
               "{Microblog}",
-              "[Devops]",
-              "[Elixir]"
+              "[Elixir]",
+              "[Devops]"
             ]
           }
         },
@@ -173,8 +199,8 @@
             ],
             "category": [
               "{Microblog}",
-              "[Baking]",
               "[Health]",
+              "[Baking]",
               "[Bread]"
             ]
           }
@@ -308,9 +334,9 @@
             ],
             "category": [
               "{Microblog}",
+              "[Webdev]",
               "[uMatrix]",
-              "[TIL]",
-              "[Webdev]"
+              "[TIL]"
             ]
           }
         },
@@ -363,8 +389,8 @@
             ],
             "category": [
               "{Microblog}",
-              "[Smartwatch]",
-              "[PineTime]"
+              "[PineTime]",
+              "[Smartwatch]"
             ]
           }
         },
@@ -395,42 +421,9 @@
             ],
             "category": [
               "{Microblog}",
-              "[Webdev]",
+              "[Mirage]",
               "[Meta]",
-              "[Mirage]"
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "uid": [
-              "https://inhji.de/Gardening in July",
-              "https://inhji.de/notes/gardening-in-july"
-            ],
-            "url": [
-              "https://inhji.de/Gardening in July",
-              "https://inhji.de/notes/gardening-in-july"
-            ],
-            "name": [
-              "Gardening in July"
-            ],
-            "content": [
-              {
-                "html": "<p>\nI spent my week of vacation at A’s place and took care of our plants. It’s such a pleasure to see them grow and to push your nose into them so soak up the happiness they are spreading.</p>",
-                "value": "I spent my week of vacation at A’s place and took care of our plants. It’s such a pleasure to see them grow and to push your nose into them so soak up the happiness they are spreading."
-              }
-            ],
-            "published": [
-              "2022-07-25T10:41:11"
-            ],
-            "category": [
-              "{Microblog}",
-              "[Gardening]",
-              "[Food]",
-              "[Tomato]"
+              "[Webdev]"
             ]
           }
         }
