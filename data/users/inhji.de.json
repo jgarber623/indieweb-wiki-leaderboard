@@ -13,6 +13,32 @@
           "properties": {
             "content": [
               {
+                "html": "<p>\nAs as follow-up to <a href=\"https://inhji.de/notes/1664993699\">yesterday’s post</a>, after taking out the batteries and resetting the LPC, the keyboard controller is responsive again and I can turn on the laptop. I could still not flash the keyboard firmware. </p>",
+                "value": "As as follow-up to yesterday’s post, after taking out the batteries and resetting the LPC, the keyboard controller is responsive again and I can turn on the laptop. I could still not flash the keyboard firmware."
+              }
+            ],
+            "uid": [
+              "https://inhji.de/notes/1665041998"
+            ],
+            "url": [
+              "https://inhji.de/notes/1665041998"
+            ],
+            "published": [
+              "2022-10-06T07:42:33"
+            ],
+            "category": [
+              "{Microblog}",
+              "[MNTReform]"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
                 "html": "<p>\nToday I wanted to flash some changes in the Reform keyboard firmware to the keyboard controller. Having done it before, I felt fairly confident with what I was doing. I took off the keyboard frame, flipped the dip-switch SW84 and pressed the button SW83. As expected, the keyboard controller restarted and showed up as <code class=\"inline\">Atmel DFU bootloader</code> in the USB devices. I connected an external keyboard and tried to flash the new firmware I compiled before. I was greeted with 3 lines of <code class=\"inline\">dfu-programmer: no device present</code>.</p>\n<p>\nAfter trying a few times unsuccessfully, I tried to switch back to the normal mode, so I flipped the switch again and reset the controller. It did not restart this time and did not respond to Circle key presses. Flipping the switch and trying again in programming mode also did not change things. The oled display is off and I have no way to interact with the controller. </p>\n<p>\nWhen flipping the laptop over, I noticed two leds being on permanently (D11, D12). I reset the lpc controller as well, but that also did not change anything.</p>\n<p>\nRight now I can’t turn on the laptop at all.</p>",
                 "value": "Today I wanted to flash some changes in the Reform keyboard firmware to the keyboard controller. Having done it before, I felt fairly confident with what I was doing. I took off the keyboard frame, flipped the dip-switch SW84 and pressed the button SW83. As expected, the keyboard controller restarted and showed up as Atmel DFU bootloader in the USB devices. I connected an external keyboard and tried to flash the new firmware I compiled before. I was greeted with 3 lines of dfu-programmer: no device present.\n\nAfter trying a few times unsuccessfully, I tried to switch back to the normal mode, so I flipped the switch again and reset the controller. It did not restart this time and did not respond to Circle key presses. Flipping the switch and trying again in programming mode also did not change things. The oled display is off and I have no way to interact with the controller. \n\nWhen flipping the laptop over, I noticed two leds being on permanently (D11, D12). I reset the lpc controller as well, but that also did not change anything.\n\nRight now I can’t turn on the laptop at all."
               }
@@ -112,10 +138,10 @@
             ],
             "category": [
               "{Microblog}",
-              "[Climate]",
-              "[CSS]",
               "[Meta]",
-              "[Webdev]"
+              "[CSS]",
+              "[Webdev]",
+              "[Climate]"
             ],
             "syndication": [
               "https://chaos.social/@inhji/108995453055109294"
@@ -144,8 +170,8 @@
             ],
             "category": [
               "{Microblog}",
-              "[Selfhosting]",
               "[Raspberry Pi]",
+              "[Selfhosting]",
               "[Homenet]"
             ]
           }
@@ -172,8 +198,8 @@
             ],
             "category": [
               "{Microblog}",
-              "[Elixir]",
-              "[Devops]"
+              "[Devops]",
+              "[Elixir]"
             ]
           }
         },
@@ -199,9 +225,9 @@
             ],
             "category": [
               "{Microblog}",
-              "[Health]",
+              "[Bread]",
               "[Baking]",
-              "[Bread]"
+              "[Health]"
             ]
           }
         },
@@ -281,8 +307,8 @@
             ],
             "category": [
               "{Microblog}",
-              "[Webdev]",
               "[Ubuntu]",
+              "[Webdev]",
               "[Server]"
             ]
           }
@@ -362,8 +388,8 @@
             ],
             "category": [
               "{Microblog}",
-              "[Cycling]",
-              "[Repair]"
+              "[Repair]",
+              "[Cycling]"
             ]
           }
         },

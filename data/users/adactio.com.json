@@ -42,6 +42,58 @@
       "properties": {
         "photo": [
           {
+            "value": "https://adactio.com/images/uploaded/19502/small.jpg",
+            "srcset": {
+              "320w": "https://adactio.com/images/uploaded/19502/small.jpg",
+              "480w": "https://adactio.com/images/uploaded/19502/medium.jpg",
+              "800w": "https://adactio.com/images/uploaded/19502/large.jpg"
+            },
+            "alt": "A laptop on a podium in a dark cinema, showing a slide deck called Design Principles For The Web."
+          }
+        ],
+        "content": [
+          {
+            "html": "<p>Tech checking.</p>",
+            "value": "Tech checking."
+          }
+        ],
+        "name": [
+          "Tech checking."
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "51.45195278"
+              ],
+              "longitude": [
+                "-2.59781944"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/notes/19502"
+        ],
+        "published": [
+          "2022-10-06T13:04:52Z"
+        ],
+        "syndication": [
+          "https://twitter.com/adactio/status/1578008416324395016"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "photo": [
+          {
             "value": "https://adactio.com/images/uploaded/19500/small.jpg",
             "srcset": {
               "320w": "https://adactio.com/images/uploaded/19500/small.jpg",
@@ -1045,59 +1097,6 @@
     },
     {
       "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "content": [
-          {
-            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://malleable.systems/\">\nMalleable Systems Collective\n</a>\n</h3>\n\n<blockquote>\n  <p>Modern computing is far too rigid. Applications can only function in preset ways determined by some far away team. Software is trapped in hermetically sealed silos and is rewritten many times over rather than recomposed.</p>\n  \n  <p>This community catalogs and experiments with <em>malleable software and systems</em> that reset the balance of power via several essential principles…</p>\n</blockquote>\n\n<p>I’ll be adding <a href=\"https://malleable.systems/mission/#principles\">those principles</a> to <a href=\"https://principles.adactio.com/\">my collection</a>.</p>",
-            "value": "Malleable Systems Collective\n\n\n\n\n  Modern computing is far too rigid. Applications can only function in preset ways determined by some far away team. Software is trapped in hermetically sealed silos and is rewritten many times over rather than recomposed.\n  \n  This community catalogs and experiments with malleable software and systems that reset the balance of power via several essential principles…\n\n\nI’ll be adding those principles to my collection."
-          }
-        ],
-        "name": [
-          "Malleable Systems Collective"
-        ],
-        "bookmark-of": [
-          "https://malleable.systems/"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83254683"
-              ],
-              "longitude": [
-                "-0.11817607"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/links/19479"
-        ],
-        "published": [
-          "2022-09-26T08:26:34Z"
-        ],
-        "category": [
-          "malleable",
-          "systems",
-          "collective",
-          "design",
-          "principles",
-          "software",
-          "power",
-          "ownership",
-          "control",
-          "computing"
-        ]
-      }
-    },
-    {
-      "type": [
         "h-card"
       ],
       "properties": {
@@ -1836,6 +1835,7 @@
       "https://adactio.com/includes/css/print.css"
     ],
     "bookmark": [
+      "https://adactio.com/notes/19502",
       "https://adactio.com/notes/19500",
       "https://adactio.com/notes/19499",
       "https://adactio.com/notes/19497",
@@ -1854,10 +1854,10 @@
       "https://adactio.com/notes/19483",
       "https://adactio.com/links/19482",
       "https://adactio.com/links/19481",
-      "https://adactio.com/journal/19480",
-      "https://adactio.com/links/19479"
+      "https://adactio.com/journal/19480"
     ],
     "syndication": [
+      "https://twitter.com/adactio/status/1578008416324395016",
       "https://www.instagram.com/p/CjWY-uIDCfr/",
       "https://twitter.com/adactio/status/1577707174595362816",
       "https://www.instagram.com/p/CjVwIivq8le/",
@@ -1964,13 +1964,7 @@
       "https://adactio.com/tags/approaches",
       "https://adactio.com/tags/declarative",
       "https://adactio.com/tags/imperative",
-      "https://adactio.com/tags/understanding",
-      "https://adactio.com/tags/malleable",
-      "https://adactio.com/tags/collective",
-      "https://adactio.com/tags/principles",
-      "https://adactio.com/tags/software",
-      "https://adactio.com/tags/ownership",
-      "https://adactio.com/tags/control"
+      "https://adactio.com/tags/understanding"
     ],
     "next": [
       "https://adactio.com/?start=20"
@@ -2360,6 +2354,18 @@
         "me"
       ],
       "text": "music"
+    },
+    "https://adactio.com/notes/19502": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n1:04pm\n\n"
+    },
+    "https://twitter.com/adactio/status/1578008416324395016": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "Twitter"
     },
     "https://adactio.com/notes/19500": {
       "rels": [
@@ -3103,48 +3109,6 @@
         "syndication"
       ],
       "text": "Medium"
-    },
-    "https://adactio.com/links/19479": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n8:26am\n\n"
-    },
-    "https://adactio.com/tags/malleable": {
-      "rels": [
-        "tag"
-      ],
-      "text": "malleable"
-    },
-    "https://adactio.com/tags/collective": {
-      "rels": [
-        "tag"
-      ],
-      "text": "collective"
-    },
-    "https://adactio.com/tags/principles": {
-      "rels": [
-        "tag"
-      ],
-      "text": "principles"
-    },
-    "https://adactio.com/tags/software": {
-      "rels": [
-        "tag"
-      ],
-      "text": "software"
-    },
-    "https://adactio.com/tags/ownership": {
-      "rels": [
-        "tag"
-      ],
-      "text": "ownership"
-    },
-    "https://adactio.com/tags/control": {
-      "rels": [
-        "tag"
-      ],
-      "text": "control"
     },
     "https://adactio.com/?start=20": {
       "rels": [
