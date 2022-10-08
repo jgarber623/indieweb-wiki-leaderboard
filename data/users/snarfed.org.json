@@ -50,6 +50,58 @@
           ],
           "properties": {
             "name": [
+              "Micropub for Bridgy Publish"
+            ],
+            "url": [
+              "https://snarfed.org/2022-10-07_micropub-for-bridgy-publish"
+            ],
+            "published": [
+              "2022-10-07T22:05:58-07:00"
+            ],
+            "syndication": [
+              "https://news.indieweb.org/en",
+              "https://news.indieweb.org/en"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "photo": [
+                    {
+                      "value": "https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=96&d=blank&r=g",
+                      "srcset": {
+                        "2x": "https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=192&d=blank&r=g"
+                      },
+                      "alt": ""
+                    }
+                  ],
+                  "url": [
+                    "https://snarfed.org/"
+                  ],
+                  "name": [
+                    "Ryan Barrett"
+                  ]
+                },
+                "value": "Ryan Barrett"
+              }
+            ],
+            "content": [
+              {
+                "html": "<p class=\"right third\"><a href=\"https://brid.gy/\">\n<img src=\"https://snarfed.org/bridgy_logo.png\" data-lazy-src=\"/bridgy_logo.png?is-pending-load=1\" srcset=\"data:image/gif;base64, https://snarfed.org/R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" class=\" jetpack-lazy-image\"><noscript><img data-lazy-fallback=\"1\" src=\"https://snarfed.org/bridgy_logo.png\"></noscript></a></p>\n<p>I’ve added a significant new <a href=\"https://brid.gy/about#publishing\">Bridgy Publish</a> feature: <a href=\"https://brid.gy/about#micropub\">Micropub support</a>! Up until now, Bridgy Publish offered two ways to post to silos: interactively from user pages and via <a href=\"https://brid.gy/about#webmentions\">webmention trigger</a>. Now there’s a third way: <a href=\"https://micropub.net/\">Micropub</a>.</p>\n<p>You can now connect a Micropub client to Bridgy and use it to publish posts to <a href=\"https://brid.gy/about#publish-types\">any supported silo</a>. Bridgy publishes the exact contents of the Micropub request; it doesn’t depend on or use any original post on your web site. Otherwise, it <a href=\"https://brid.gy/about#microformats\">behaves exactly the same as normal Bridgy Publish, and supports the exact same microformats2 input</a>. It just gets that input from the Micropub request, not from a post on your site.</p>\n<p>To use it, go to your Bridgy user page for a given silo, click the <em>Get token</em> button, and copy and paste the token into your Micropub token. Bridgy’s Micropub endpoint is <code>https://brid.gy/micropub</code>; it supports create and delete and photo/video URLs but not update or file upload. (It doesn’t directly require an original post on your web site, but we expect that will still be the common case, and photos and videos will generally already be online.)</p>\n<p>Feel free to try it out, <a href=\"https://github.com/snarfed/bridgy/issues\">let us know what you think</a>, and happy hacking!</p>",
+                "value": "https://snarfed.org/bridgy_logo.png  https://snarfed.org/bridgy_logo.png \nI’ve added a significant new Bridgy Publish feature: Micropub support! Up until now, Bridgy Publish offered two ways to post to silos: interactively from user pages and via webmention trigger. Now there’s a third way: Micropub.\nYou can now connect a Micropub client to Bridgy and use it to publish posts to any supported silo. Bridgy publishes the exact contents of the Micropub request; it doesn’t depend on or use any original post on your web site. Otherwise, it behaves exactly the same as normal Bridgy Publish, and supports the exact same microformats2 input. It just gets that input from the Micropub request, not from a post on your site.\nTo use it, go to your Bridgy user page for a given silo, click the Get token button, and copy and paste the token into your Micropub token. Bridgy’s Micropub endpoint is https://brid.gy/micropub; it supports create and delete and photo/video URLs but not update or file upload. (It doesn’t directly require an original post on your web site, but we expect that will still be the common case, and photos and videos will generally already be online.)\nFeel free to try it out, let us know what you think, and happy hacking!"
+              }
+            ]
+          },
+          "id": "post-47623"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               ""
             ],
             "url": [
@@ -299,7 +351,7 @@
             ],
             "content": [
               {
-                "html": "<p>Coffee shops are adult study hall.</p>\n<figure class=\"wp-block-image\"><img data-attachment-id=\"47377\" data-permalink=\"https://snarfed.org/2022-08-19_47378/pxl_20220818_214043473#main\" data-orig-file=\"https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?fit=2560%2C2560&amp;ssl=1\" data-orig-size=\"2560,2560\" data-comments-opened=\"1\" data-image-meta='{\"aperture\":\"1.73\",\"credit\":\"\",\"camera\":\"Pixel 6a\",\"caption\":\"\",\"created_timestamp\":\"1660833643\",\"copyright\":\"\",\"focal_length\":\"4.38\",\"iso\":\"195\",\"shutter_speed\":\"0.008338\",\"title\":\"\",\"orientation\":\"1\"}' data-image-title=\"PXL_20220818_214043473\" data-image-description data-image-caption data-medium-file=\"https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?fit=300%2C300&amp;ssl=1\" data-large-file=\"https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?fit=696%2C696&amp;ssl=1\" width=\"696\" height=\"696\" src=\"https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473.jpg?resize=696%2C696&amp;ssl=1\" alt class=\"wp-image-47377 jetpack-lazy-image\" data-recalc-dims=\"1\" data-lazy-srcset=\"https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?resize=1024%2C1024&amp;ssl=1 1024w, https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?resize=1536%2C1536&amp;ssl=1 1536w, https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?resize=2048%2C2048&amp;ssl=1 2048w, https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?resize=1272%2C1272&amp;ssl=1 1272w, https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?w=1392&amp;ssl=1 1392w\" data-lazy-sizes=\"(max-width: 696px) 100vw, 696px\" data-lazy-src=\"https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473.jpg?resize=696%2C696&amp;is-pending-load=1#038;ssl=1\" srcset=\"data:image/gif;base64, https://snarfed.org/R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"><noscript><img data-lazy-fallback=\"1\" data-attachment-id=\"47377\" data-permalink=\"https://snarfed.org/2022-08-19_47378/pxl_20220818_214043473#main\" data-orig-file=\"https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?fit=2560%2C2560&amp;ssl=1\" data-orig-size=\"2560,2560\" data-comments-opened=\"1\" data-image-meta='{\"aperture\":\"1.73\",\"credit\":\"\",\"camera\":\"Pixel 6a\",\"caption\":\"\",\"created_timestamp\":\"1660833643\",\"copyright\":\"\",\"focal_length\":\"4.38\",\"iso\":\"195\",\"shutter_speed\":\"0.008338\",\"title\":\"\",\"orientation\":\"1\"}' data-image-title=\"PXL_20220818_214043473\" data-image-description=\"\" data-image-caption=\"\" data-medium-file=\"https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?fit=300%2C300&amp;ssl=1\" data-large-file=\"https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?fit=696%2C696&amp;ssl=1\" width=\"696\" height=\"696\" src=\"https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473.jpg?resize=696%2C696&amp;ssl=1\" alt=\"\" class=\"wp-image-47377\" srcset=\"https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?resize=1024%2C1024&amp;ssl=1 1024w, https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?resize=1536%2C1536&amp;ssl=1 1536w, https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?resize=2048%2C2048&amp;ssl=1 2048w, https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?resize=1272%2C1272&amp;ssl=1 1272w, https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?w=1392&amp;ssl=1 1392w\" sizes=\"(max-width: 696px) 100vw, 696px\" data-recalc-dims=\"1\"></noscript></figure>\n<p><em>At <a class=\"p-location\" href=\"https://flywheelcoffee.com/\">Flywheel Coffee Roasters</a>.</em></p>",
+                "html": "<p>Coffee shops are adult study hall.</p>\n<figure class=\"wp-block-image\"><img data-attachment-id=\"47377\" data-permalink=\"https://snarfed.org/2022-08-19_47378/pxl_20220818_214043473#main\" data-orig-file=\"https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?fit=2560%2C2560&amp;ssl=1\" data-orig-size=\"2560,2560\" data-comments-opened=\"1\" data-image-meta='{\"aperture\":\"1.73\",\"credit\":\"\",\"camera\":\"Pixel 6a\",\"caption\":\"\",\"created_timestamp\":\"1660833643\",\"copyright\":\"\",\"focal_length\":\"4.38\",\"iso\":\"195\",\"shutter_speed\":\"0.008338\",\"title\":\"\",\"orientation\":\"1\"}' data-image-title=\"PXL_20220818_214043473\" data-image-description data-image-caption data-medium-file=\"https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?fit=300%2C300&amp;ssl=1\" data-large-file=\"https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?fit=696%2C696&amp;ssl=1\" width=\"696\" height=\"696\" src=\"https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473.jpg?resize=696%2C696&amp;ssl=1\" alt class=\"wp-image-47377 jetpack-lazy-image\" data-recalc-dims=\"1\" data-lazy-srcset=\"https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?resize=1024%2C1024&amp;ssl=1 1024w, https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?resize=1536%2C1536&amp;ssl=1 1536w, https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?resize=2048%2C2048&amp;ssl=1 2048w, https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?resize=1272%2C1272&amp;ssl=1 1272w, https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?w=1392&amp;ssl=1 1392w\" data-lazy-sizes=\"(max-width: 696px) 100vw, 696px\" data-lazy-src=\"https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473.jpg?resize=696%2C696&amp;is-pending-load=1#038;ssl=1\" srcset=\"data:image/gif;base64, https://snarfed.org/R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"><noscript><img data-lazy-fallback=\"1\" data-attachment-id=\"47377\" data-permalink=\"https://snarfed.org/2022-08-19_47378/pxl_20220818_214043473#main\" data-orig-file=\"https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?fit=2560%2C2560&amp;ssl=1\" data-orig-size=\"2560,2560\" data-comments-opened=\"1\" data-image-meta='{\"aperture\":\"1.73\",\"credit\":\"\",\"camera\":\"Pixel 6a\",\"caption\":\"\",\"created_timestamp\":\"1660833643\",\"copyright\":\"\",\"focal_length\":\"4.38\",\"iso\":\"195\",\"shutter_speed\":\"0.008338\",\"title\":\"\",\"orientation\":\"1\"}' data-image-title=\"PXL_20220818_214043473\" data-image-description=\"\" data-image-caption=\"\" data-medium-file=\"https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?fit=300%2C300&amp;ssl=1\" data-large-file=\"https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?fit=696%2C696&amp;ssl=1\" loading=\"lazy\" width=\"696\" height=\"696\" src=\"https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473.jpg?resize=696%2C696&amp;ssl=1\" alt=\"\" class=\"wp-image-47377\" srcset=\"https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?resize=1024%2C1024&amp;ssl=1 1024w, https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?resize=1536%2C1536&amp;ssl=1 1536w, https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?resize=2048%2C2048&amp;ssl=1 2048w, https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?resize=1272%2C1272&amp;ssl=1 1272w, https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/08/PXL_20220818_214043473-scaled.jpg?w=1392&amp;ssl=1 1392w\" sizes=\"(max-width: 696px) 100vw, 696px\" data-recalc-dims=\"1\"></noscript></figure>\n<p><em>At <a class=\"p-location\" href=\"https://flywheelcoffee.com/\">Flywheel Coffee Roasters</a>.</em></p>",
                 "value": "Coffee shops are adult study hall.\n    \nAt Flywheel Coffee Roasters."
               }
             ],
@@ -522,58 +574,6 @@
             ]
           },
           "id": "post-47044"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              ""
-            ],
-            "url": [
-              "https://snarfed.org/2022-06-08_47024"
-            ],
-            "published": [
-              "2022-06-08T06:21:08-07:00"
-            ],
-            "syndication": [
-              "https://twitter.com/schnarfed/status/1534525766624391168",
-              "https://twitter.com/schnarfed/status/1534525766624391168"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "photo": [
-                    {
-                      "value": "https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=96&d=blank&r=g",
-                      "srcset": {
-                        "2x": "https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=192&d=blank&r=g"
-                      },
-                      "alt": ""
-                    }
-                  ],
-                  "url": [
-                    "https://snarfed.org/"
-                  ],
-                  "name": [
-                    "Ryan Barrett"
-                  ]
-                },
-                "value": "Ryan Barrett"
-              }
-            ],
-            "content": [
-              {
-                "html": "<p>Love to see this: <a href=\"https://www.theverge.com/2022/6/6/23157238/apple-mac-iphone-ipad-rapid-security-response-update\">no-touch security updates for consumer OSes</a>. About time too, servers have had them for a while, unattended-upgrades etc. Now do Windows and Android and browsers. 😎</p>",
-                "value": "Love to see this: no-touch security updates for consumer OSes. About time too, servers have had them for a while, unattended-upgrades etc. Now do Windows and Android and browsers. 😎"
-              }
-            ]
-          },
-          "id": "post-47024"
         }
       ]
     }
@@ -660,6 +660,7 @@
       "https://snarfed.org/category/uncategorized"
     ],
     "bookmark": [
+      "https://snarfed.org/2022-10-07_micropub-for-bridgy-publish",
       "https://snarfed.org/2022-10-04_47605",
       "https://snarfed.org/2022-09-10_47515",
       "https://snarfed.org/2022-09-01_47458",
@@ -668,8 +669,7 @@
       "https://snarfed.org/2022-07-04_47194",
       "https://snarfed.org/2022-07-03_47175",
       "https://snarfed.org/2022-06-12_47059",
-      "https://snarfed.org/2022-06-09_47044",
-      "https://snarfed.org/2022-06-08_47024"
+      "https://snarfed.org/2022-06-09_47044"
     ],
     "author": [
       "https://snarfed.org/"
@@ -940,6 +940,12 @@
       ],
       "text": "Uncategorized"
     },
+    "https://snarfed.org/2022-10-07_micropub-for-bridgy-publish": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "Micropub for Bridgy Publish"
+    },
     "https://snarfed.org/2022-10-04_47605": {
       "rels": [
         "bookmark"
@@ -981,11 +987,6 @@
       ]
     },
     "https://snarfed.org/2022-06-09_47044": {
-      "rels": [
-        "bookmark"
-      ]
-    },
-    "https://snarfed.org/2022-06-08_47024": {
       "rels": [
         "bookmark"
       ]

@@ -1,9 +1,6 @@
 {
   "items": [],
   "rels": {
-    "profile": [
-      "https://gmpg.org/xfn/11"
-    ],
     "dns-prefetch": [
       "https://s.w.org/"
     ],
@@ -12,11 +9,11 @@
       "https://davidpeach.me/comments/feed/"
     ],
     "stylesheet": [
-      "https://davidpeach.me/wp-includes/css/dist/block-library/style.min.css?ver=6.0.2",
-      "https://davidpeach.me/wp-content/plugins/twentig/dist/style-index.css?ver=75fec19f619acfe1994e",
-      "https://davidpeach.me/wp-content/themes/twentytwenty/style.css?ver=2.0",
-      "https://davidpeach.me/wp-content/themes/twentytwenty/print.css?ver=2.0",
-      "https://davidpeach.me/wp-content/plugins/twentig/dist/css/twentytwenty/style.min.css?ver=1.4.8"
+      "https://davidpeach.me/wp-includes/blocks/navigation/style.min.css?ver=6.0.2",
+      "https://davidpeach.me/wp-content/plugins/twentig/dist/blocks/common.min.css?ver=75fec19f619acfe1994e",
+      "https://davidpeach.me/wp-content/themes/twentytwentytwo/style.css?ver=1.2",
+      "https://davidpeach.me/wp-content/plugins/twentig/dist/blocks/tw-spacing.min.css?ver=1.4.8",
+      "https://davidpeach.me/wp-content/plugins/twentig/dist/css/twentytwentytwo/style.min.css?ver=1.4.8"
     ],
     "https://api.w.org/": [
       "https://davidpeach.me/wp-json/"
@@ -27,30 +24,14 @@
     "wlwmanifest": [
       "https://davidpeach.me/wp-includes/wlwmanifest.xml"
     ],
-    "category": [
-      "https://davidpeach.me/category/programming/",
-      "https://davidpeach.me/category/uncategorised/"
+    "home": [
+      "https://davidpeach.me/"
     ],
-    "tag": [
-      "https://davidpeach.me/category/programming/",
-      "https://davidpeach.me/tag/laravel/",
-      "https://davidpeach.me/tag/php/",
-      "https://davidpeach.me/tag/linux/",
-      "https://davidpeach.me/tag/servers/",
-      "https://davidpeach.me/tag/ubuntu/",
-      "https://davidpeach.me/tag/google/",
-      "https://davidpeach.me/tag/indieweb/",
-      "https://davidpeach.me/tag/music/",
-      "https://davidpeach.me/category/uncategorised/",
-      "https://davidpeach.me/tag/css/"
+    "nofollow": [
+      "https://en-gb.wordpress.org/"
     ]
   },
   "rel-urls": {
-    "https://gmpg.org/xfn/11": {
-      "rels": [
-        "profile"
-      ]
-    },
     "https://s.w.org/": {
       "rels": [
         "dns-prefetch"
@@ -70,31 +51,31 @@
       "title": "David Peach's Website » Comments Feed",
       "type": "application/rss+xml"
     },
-    "https://davidpeach.me/wp-includes/css/dist/block-library/style.min.css?ver=6.0.2": {
+    "https://davidpeach.me/wp-includes/blocks/navigation/style.min.css?ver=6.0.2": {
       "rels": [
         "stylesheet"
       ],
       "media": "all"
     },
-    "https://davidpeach.me/wp-content/plugins/twentig/dist/style-index.css?ver=75fec19f619acfe1994e": {
+    "https://davidpeach.me/wp-content/plugins/twentig/dist/blocks/common.min.css?ver=75fec19f619acfe1994e": {
       "rels": [
         "stylesheet"
       ],
       "media": "all"
     },
-    "https://davidpeach.me/wp-content/themes/twentytwenty/style.css?ver=2.0": {
+    "https://davidpeach.me/wp-content/themes/twentytwentytwo/style.css?ver=1.2": {
       "rels": [
         "stylesheet"
       ],
       "media": "all"
     },
-    "https://davidpeach.me/wp-content/themes/twentytwenty/print.css?ver=2.0": {
+    "https://davidpeach.me/wp-content/plugins/twentig/dist/blocks/tw-spacing.min.css?ver=1.4.8": {
       "rels": [
         "stylesheet"
       ],
-      "media": "print"
+      "media": "all"
     },
-    "https://davidpeach.me/wp-content/plugins/twentig/dist/css/twentytwenty/style.min.css?ver=1.4.8": {
+    "https://davidpeach.me/wp-content/plugins/twentig/dist/css/twentytwentytwo/style.min.css?ver=1.4.8": {
       "rels": [
         "stylesheet"
       ],
@@ -118,73 +99,17 @@
       ],
       "type": "application/wlwmanifest+xml"
     },
-    "https://davidpeach.me/category/programming/": {
+    "https://davidpeach.me/": {
       "rels": [
-        "category",
-        "tag"
+        "home"
       ],
-      "text": "Programming"
+      "text": "David Peach's Website"
     },
-    "https://davidpeach.me/tag/laravel/": {
+    "https://en-gb.wordpress.org/": {
       "rels": [
-        "tag"
+        "nofollow"
       ],
-      "text": "Laravel"
-    },
-    "https://davidpeach.me/tag/php/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "PHP"
-    },
-    "https://davidpeach.me/tag/linux/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Linux"
-    },
-    "https://davidpeach.me/tag/servers/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Servers"
-    },
-    "https://davidpeach.me/tag/ubuntu/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Ubuntu"
-    },
-    "https://davidpeach.me/tag/google/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Google"
-    },
-    "https://davidpeach.me/tag/indieweb/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Indieweb"
-    },
-    "https://davidpeach.me/tag/music/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Music"
-    },
-    "https://davidpeach.me/category/uncategorised/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "Uncategorised"
-    },
-    "https://davidpeach.me/tag/css/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "CSS"
+      "text": "WordPress"
     }
   }
 }

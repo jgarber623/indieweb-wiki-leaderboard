@@ -1,5 +1,37 @@
 {
   "items": [],
-  "rels": {},
-  "rel-urls": {}
+  "rels": {
+    "stylesheet": [
+      "https://www.madpoetfiles.com/cdn-cgi/styles/main.css"
+    ],
+    "noopener": [
+      "https://developers.cloudflare.com/argo-tunnel/reference/load-balancing/",
+      "https://www.cloudflare.com/5xx-error-landing"
+    ],
+    "noreferrer": [
+      "https://developers.cloudflare.com/argo-tunnel/reference/load-balancing/",
+      "https://www.cloudflare.com/5xx-error-landing"
+    ]
+  },
+  "rel-urls": {
+    "https://www.madpoetfiles.com/cdn-cgi/styles/main.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://developers.cloudflare.com/argo-tunnel/reference/load-balancing/": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "load balancing"
+    },
+    "https://www.cloudflare.com/5xx-error-landing": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "Cloudflare"
+    }
+  }
 }
