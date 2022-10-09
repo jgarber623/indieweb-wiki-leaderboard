@@ -5,9 +5,6 @@
         "h-entry"
       ],
       "properties": {
-        "url": [
-          "https://indieweb.org/User:Dym.cx"
-        ],
         "name": [
           "User:Dym.cx"
         ]
@@ -17,8 +14,8 @@
   ],
   "rels": {
     "stylesheet": [
-      "https://indieweb.org/wiki/load.php?debug=false&lang=en&modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cskins.vector.styles.responsive&only=styles&skin=vector",
-      "https://indieweb.org/wiki/load.php?debug=false&lang=en&modules=site.styles&only=styles&skin=vector"
+      "https://indieweb.org/wiki/load.php?lang=en&modules=skins.vector.styles.legacy&only=styles&skin=vector",
+      "https://indieweb.org/wiki/load.php?lang=en&modules=site.styles&only=styles&skin=vector"
     ],
     "icon": [
       "https://indieweb.org/favicon.ico"
@@ -32,12 +29,12 @@
     "EditURI": [
       "https://indieweb.org/wiki/api.php?action=rsd"
     ],
-    "copyright": [
+    "license": [
       "https://indieweb.org/IndieWebCamp:Copyrights"
     ],
     "alternate": [
       "https://indieweb.org/wiki/index.php?title=Special:RecentChanges&feed=atom",
-      "https://indieweb.org/wiki/index.php?title=User:Dym.cx&printable=yes"
+      "javascript:print();"
     ],
     "webmention": [
       "https://webmention.io/indiewebcamp/webmention"
@@ -53,12 +50,12 @@
     ]
   },
   "rel-urls": {
-    "https://indieweb.org/wiki/load.php?debug=false&lang=en&modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cskins.vector.styles.responsive&only=styles&skin=vector": {
+    "https://indieweb.org/wiki/load.php?lang=en&modules=skins.vector.styles.legacy&only=styles&skin=vector": {
       "rels": [
         "stylesheet"
       ]
     },
-    "https://indieweb.org/wiki/load.php?debug=false&lang=en&modules=site.styles&only=styles&skin=vector": {
+    "https://indieweb.org/wiki/load.php?lang=en&modules=site.styles&only=styles&skin=vector": {
       "rels": [
         "stylesheet"
       ]
@@ -84,7 +81,7 @@
     },
     "https://indieweb.org/IndieWebCamp:Copyrights": {
       "rels": [
-        "copyright"
+        "license"
       ]
     },
     "https://indieweb.org/wiki/index.php?title=Special:RecentChanges&feed=atom": {
@@ -108,7 +105,7 @@
       "rels": [
         "discussion"
       ],
-      "title": "Discussion about the content page [t]",
+      "title": "Discussion about the content page (page does not exist) [t]",
       "text": "Discussion"
     },
     "https://indieweb.org/Special:RecentChangesLinked/User:Dym.cx": {
@@ -118,7 +115,7 @@
       "title": "Recent changes in pages linked from this page [k]",
       "text": "Related changes"
     },
-    "https://indieweb.org/wiki/index.php?title=User:Dym.cx&printable=yes": {
+    "javascript:print();": {
       "rels": [
         "alternate"
       ],

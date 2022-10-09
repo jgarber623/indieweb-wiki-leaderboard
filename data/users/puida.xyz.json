@@ -1,61 +1,55 @@
 {
-  "items": [
-    {
-      "type": [
-        "h-card"
-      ],
-      "properties": {
-        "name": [
-          "Guilherme Puida"
-        ],
-        "note": [
-          "IndieWeb enthusiast."
-        ],
-        "uid": [
-          "https://puida.xyz/"
-        ],
-        "url": [
-          "https://puida.xyz/",
-          "https://github.com/guilherme-puida"
-        ]
-      }
-    }
-  ],
+  "items": [],
   "rels": {
-    "authorization_endpoint": [
-      "https://indieauth.com/auth"
+    "apple-touch-icon": [
+      "https://puida.xyz/apple-touch-icon.png"
     ],
-    "token_endpoint": [
-      "https://tokens.indieauth.com/token"
+    "icon": [
+      "https://puida.xyz/favicon-32x32.png",
+      "https://puida.xyz/favicon-16x16.png"
+    ],
+    "manifest": [
+      "https://puida.xyz/site.webmanifest"
+    ],
+    "mask-icon": [
+      "https://puida.xyz/safari-pinned-tab.svg"
     ],
     "stylesheet": [
-      "https://puida.xyz/assets/5de6200b.eaa64fbc.css"
-    ],
-    "me": [
-      "https://github.com/guilherme-puida"
+      "https://puida.xyz/assets/404-blog-index-index-tags-_tag_-tags-index.5d5e7de9.css"
     ]
   },
   "rel-urls": {
-    "https://indieauth.com/auth": {
+    "https://puida.xyz/apple-touch-icon.png": {
       "rels": [
-        "authorization_endpoint"
+        "apple-touch-icon"
       ]
     },
-    "https://tokens.indieauth.com/token": {
+    "https://puida.xyz/favicon-32x32.png": {
       "rels": [
-        "token_endpoint"
+        "icon"
+      ],
+      "type": "image/png"
+    },
+    "https://puida.xyz/favicon-16x16.png": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/png"
+    },
+    "https://puida.xyz/site.webmanifest": {
+      "rels": [
+        "manifest"
       ]
     },
-    "https://puida.xyz/assets/5de6200b.eaa64fbc.css": {
+    "https://puida.xyz/safari-pinned-tab.svg": {
+      "rels": [
+        "mask-icon"
+      ]
+    },
+    "https://puida.xyz/assets/404-blog-index-index-tags-_tag_-tags-index.5d5e7de9.css": {
       "rels": [
         "stylesheet"
       ]
-    },
-    "https://github.com/guilherme-puida": {
-      "rels": [
-        "me"
-      ],
-      "text": "@guilherme-puida"
     }
   }
 }
