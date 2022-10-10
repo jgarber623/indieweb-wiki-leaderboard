@@ -35,7 +35,7 @@
                 "UK"
               ],
               "note": [
-                "I like to build for the web. I am experimenting with functional programming and want to learn more about computer science."
+                "I like to build for the web. I also enjoy experimenting with new programming languages."
               ],
               "email": [
                 "mailto:readers@jamesg.blog"
@@ -64,6 +64,46 @@
         ]
       },
       "children": [
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Announcing getsitemap, a Python library for sitemap URL retrieval"
+            ],
+            "url": [
+              "https://jamesg.blog/2022/10/09/announcing-getsitemap/"
+            ],
+            "published": [
+              "2022-10-09 00:00:00"
+            ],
+            "category": [
+              "Coding"
+            ],
+            "summary": [
+              "I have worked on numerous projects that involve finding all of the URLs in the sitemaps \nassociated with a website. For example, one of the first steps the IndieWeb Search crawler \ntakes when it starts crawling a website is to find all of the URLs in all of the sitemaps. \nSeparately, I have written scripts that validate the status codes of all the URLs in a sitemap."
+            ],
+            "content": [
+              {
+                "html": "<p>I have worked on numerous projects that involve finding all of the URLs in the sitemaps \nassociated with a website. For example, one of the first steps the IndieWeb Search crawler \ntakes when it starts crawling a website is to find all of the URLs in all of the sitemaps. \nSeparately, I have written scripts that validate the status codes of all the URLs in a sitemap.  </p>",
+                "value": "I have worked on numerous projects that involve finding all of the URLs in the sitemaps \nassociated with a website. For example, one of the first steps the IndieWeb Search crawler \ntakes when it starts crawling a website is to find all of the URLs in all of the sitemaps. \nSeparately, I have written scripts that validate the status codes of all the URLs in a sitemap."
+              }
+            ],
+            "photo": [
+              {
+                "value": "https://jamesg.blog/assets/getsitemap.png",
+                "alt": "A screenshot of the getsitemap documentation homepage."
+              }
+            ],
+            "featured": [
+              {
+                "value": "https://jamesg.blog/assets/getsitemap.png",
+                "alt": "A screenshot of the getsitemap documentation homepage."
+              }
+            ]
+          }
+        },
         {
           "type": [
             "h-entry"
@@ -202,12 +242,12 @@
               "Programming"
             ],
             "summary": [
-              "TL;DR: I now have my own DNS resolver atjamesg.blog with some fun utilities. Read the GitHub documentation for a complete reference manual of all queries, and keep reading below for an explanation of the project and how it works."
+              "TL;DR: I now have my own DNS resolver at jamesg.blog with some fun utilities. Read the GitHub documentation for a complete reference manual of all queries, and keep reading below for an explanation of the project and how it works."
             ],
             "content": [
               {
-                "html": "<p><em><strong>TL;DR:</strong> I now have my own DNS resolver atjamesg.blog with some fun utilities. Read the <a href=\"https://github.com/capjamesg/dns-experiments/blob/main/indieweb.go\">GitHub documentation</a> for a complete reference manual of all queries, and keep reading below for an explanation of the project and how it works.</em></p>",
-                "value": "TL;DR: I now have my own DNS resolver atjamesg.blog with some fun utilities. Read the GitHub documentation for a complete reference manual of all queries, and keep reading below for an explanation of the project and how it works."
+                "html": "<p><em><strong>TL;DR:</strong> I now have my own DNS resolver at jamesg.blog with some fun utilities. Read the <a href=\"https://github.com/capjamesg/dns-experiments/blob/main/indieweb.go\">GitHub documentation</a> for a complete reference manual of all queries, and keep reading below for an explanation of the project and how it works.</em></p>",
+                "value": "TL;DR: I now have my own DNS resolver at jamesg.blog with some fun utilities. Read the GitHub documentation for a complete reference manual of all queries, and keep reading below for an explanation of the project and how it works."
               }
             ],
             "photo": [
@@ -220,46 +260,6 @@
               {
                 "value": "https://jamesg.blog/assets/dnsserver.png",
                 "alt": "Three 'dig' commands in a terminal to convert temperature, get the next IndieWeb event, and the most recent post on my blog"
-              }
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Berlin 2022 - More Photos"
-            ],
-            "url": [
-              "https://jamesg.blog/2022/09/07/berlin-2022-2/"
-            ],
-            "published": [
-              "2022-09-07 00:00:00"
-            ],
-            "category": [
-              "Travel"
-            ],
-            "summary": [
-              "I shared a few photos from my trip in Berlin on my notes blog yesterday. I realise I have a few more photos to share. I thought I would do that here so that they appear on my main blog (this one!) and in the feeds of all of those that subscribe to the blog."
-            ],
-            "content": [
-              {
-                "html": "<p>I shared a few photos from my trip in Berlin on my <a href=\"https://jamesg.coffee/2022/berlin-2022\">notes blog</a> yesterday. I realise I have a few more photos to share. I thought I would do that here so that they appear on my main blog (this one!) and in the feeds of all of those that subscribe to the blog.</p>",
-                "value": "I shared a few photos from my trip in Berlin on my notes blog yesterday. I realise I have a few more photos to share. I thought I would do that here so that they appear on my main blog (this one!) and in the feeds of all of those that subscribe to the blog."
-              }
-            ],
-            "photo": [
-              {
-                "value": "https://jamesg.blog/assets/9e6aba2f1b62a4020b03e0d6.jpeg",
-                "alt": "A Berlin city scape featuring a river, the Berlin city hall, a park, and other landmarks"
-              }
-            ],
-            "featured": [
-              {
-                "value": "https://jamesg.blog/assets/9e6aba2f1b62a4020b03e0d6.jpeg",
-                "alt": "A Berlin city scape featuring a river, the Berlin city hall, a park, and other landmarks"
               }
             ]
           }
@@ -275,7 +275,6 @@
       "mailto:jamesg@jamesg.blog",
       "https://indieweb.rocks/jamesg.blog",
       "https://www.linkedin.com/in/jg12927/",
-      "https://www.instagram.com/capjamesg/",
       "https://indieweb.org/User:Jamesg.blog",
       "https://github.com/capjamesg",
       "https://sr.ht/~capjamesg/"
@@ -413,12 +412,6 @@
       "rels": [
         "hub"
       ]
-    },
-    "https://www.instagram.com/capjamesg/": {
-      "rels": [
-        "me"
-      ],
-      "text": "Instagram"
     },
     "https://indieweb.org/User:Jamesg.blog": {
       "rels": [

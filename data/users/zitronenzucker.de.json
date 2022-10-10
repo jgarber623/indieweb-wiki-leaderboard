@@ -4,16 +4,12 @@
     "profile": [
       "https://gmpg.org/xfn/11"
     ],
-    "stylesheet": [
-      "https://zitronenzucker.de/wp-content/cache/autoptimize/1/css/autoptimize_1c47f7c5cb629ecc79c18eafac0d25c8.css",
-      "https://fonts.googleapis.com/css?family=Lato%3Aregular%7CLora%3Aregular&display=auto&ver=3.1.3",
-      "https://zitronenzucker.de/wp-content/cache/autoptimize/1/css/autoptimize_single_a2d8de90e29ffd96395c136e87485fd7.css"
-    ],
     "canonical": [
       "https://zitronenzucker.de/"
     ],
     "dns-prefetch": [
-      "https://fonts.googleapis.com/"
+      "https://fonts.googleapis.com/",
+      "https://s.w.org/"
     ],
     "preconnect": [
       "https://fonts.gstatic.com/"
@@ -24,6 +20,14 @@
       "https://zitronenzucker.de/wp-json/wp/v2/pages/8",
       "https://zitronenzucker.de/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fzitronenzucker.de%2F",
       "https://zitronenzucker.de/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fzitronenzucker.de%2F&format=xml"
+    ],
+    "stylesheet": [
+      "https://zitronenzucker.de/wp-includes/css/dist/block-library/style.min.css?ver=6.0.2",
+      "https://zitronenzucker.de/wp-content/themes/generatepress/assets/css/main.min.css?ver=3.1.3",
+      "https://fonts.googleapis.com/css?family=Lato%3Aregular%7CLora%3Aregular&display=auto&ver=3.1.3",
+      "https://zitronenzucker.de/wp-content/uploads/generateblocks/style-8.css?ver=1658922786",
+      "https://zitronenzucker.de/wp-content/plugins/gp-premium/menu-plus/functions/css/offside.min.css?ver=2.1.2",
+      "https://zitronenzucker.de/wp-content/plugins/gp-premium/menu-plus/functions/css/navigation-branding-flex.min.css?ver=2.1.2"
     ],
     "https://api.w.org/": [
       "https://zitronenzucker.de/wp-json/"
@@ -57,18 +61,17 @@
         "profile"
       ]
     },
-    "https://zitronenzucker.de/wp-content/cache/autoptimize/1/css/autoptimize_1c47f7c5cb629ecc79c18eafac0d25c8.css": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "all"
-    },
     "https://zitronenzucker.de/": {
       "rels": [
         "canonical"
       ]
     },
     "https://fonts.googleapis.com/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
+    "https://s.w.org/": {
       "rels": [
         "dns-prefetch"
       ]
@@ -92,13 +95,37 @@
       "title": "by;zitronenzucker » Kommentar-Feed",
       "type": "application/rss+xml"
     },
+    "https://zitronenzucker.de/wp-includes/css/dist/block-library/style.min.css?ver=6.0.2": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://zitronenzucker.de/wp-content/themes/generatepress/assets/css/main.min.css?ver=3.1.3": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
     "https://fonts.googleapis.com/css?family=Lato%3Aregular%7CLora%3Aregular&display=auto&ver=3.1.3": {
       "rels": [
         "stylesheet"
       ],
       "media": "all"
     },
-    "https://zitronenzucker.de/wp-content/cache/autoptimize/1/css/autoptimize_single_a2d8de90e29ffd96395c136e87485fd7.css": {
+    "https://zitronenzucker.de/wp-content/uploads/generateblocks/style-8.css?ver=1658922786": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://zitronenzucker.de/wp-content/plugins/gp-premium/menu-plus/functions/css/offside.min.css?ver=2.1.2": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://zitronenzucker.de/wp-content/plugins/gp-premium/menu-plus/functions/css/navigation-branding-flex.min.css?ver=2.1.2": {
       "rels": [
         "stylesheet"
       ],
