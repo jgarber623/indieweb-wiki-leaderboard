@@ -6,6 +6,28 @@
       ],
       "properties": {
         "name": [
+          "MiTubo 1.4 adds feed folders"
+        ],
+        "url": [
+          "http://www.mardy.it/blog/2022/10/mitubo-14-adds-feed-folders.html"
+        ],
+        "published": [
+          "2022-10-10T17:40:09+03:00"
+        ],
+        "content": [
+          {
+            "html": "<p>Exactly one month has passed since the previous release, just the right time\nneeded to complete the feafure I've been working on since several weeks and to\nfix a few bugfixes introduced with the previous release. So it's time a new\nrelease of <a href=\"https://gitlab.com/mardy/mitubo\">MiTubo</a>:</p>\n<p></p>\n<center>\n<video id=\"video\" controls preload=\"metadata\" width=\"100%\"><source src=\"http://www.mardy.it/archivos/videos/mitubo-1.4.webm\" type=\"video/webm\"></source></video><p></p>\n</center>\n<p>I realized that I'm not that good at making release videos, but the point of\nthe video above is to show that you can organize your feeds into folders. When\nclicking on a folder, a page opens with the folder's contents; but you can also\ndirectly click on a feed, as long as its preview is visible in the folder's\ndelegate, and then the feeds open directly. This means that if you organize the\nfeeds inside your folders so that the favourite ones are at the top, they'll\nalso be visible in the folder preview and you'll be able to jump to them in\njust one click.</p>\n<p>Maybe I'm not that good with textual explanations either, so why don't you\ncheck it out for yourself? ☺  Get it at\n<a href=\"http://www.mardy.it/mitubo\">mardy.it/mitubo</a> (builds for Linux, Ubuntu Touch,\nWindows and macOS are available)!</p>",
+            "value": "Exactly one month has passed since the previous release, just the right time\nneeded to complete the feafure I've been working on since several weeks and to\nfix a few bugfixes introduced with the previous release. So it's time a new\nrelease of MiTubo:\n\n\n\n\nI realized that I'm not that good at making release videos, but the point of\nthe video above is to show that you can organize your feeds into folders. When\nclicking on a folder, a page opens with the folder's contents; but you can also\ndirectly click on a feed, as long as its preview is visible in the folder's\ndelegate, and then the feeds open directly. This means that if you organize the\nfeeds inside your folders so that the favourite ones are at the top, they'll\nalso be visible in the folder preview and you'll be able to jump to them in\njust one click.\nMaybe I'm not that good with textual explanations either, so why don't you\ncheck it out for yourself? ☺  Get it at\nmardy.it/mitubo (builds for Linux, Ubuntu Touch,\nWindows and macOS are available)!"
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
           "The Media"
         ],
         "url": [
@@ -87,28 +109,6 @@
           }
         ]
       }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "name": [
-          "MiTubo 1.1: screensaver inhibitor"
-        ],
-        "url": [
-          "http://www.mardy.it/blog/2022/06/mitubo-11-screensaver-inhibitor.html"
-        ],
-        "published": [
-          "2022-06-04T13:46:54+03:00"
-        ],
-        "content": [
-          {
-            "html": "<p>Looks like I'm posting a bit too often about <a href=\"http://www.mardy.it/mitubo\">MiTubo</a>, but don't\nworry, I'll soon find something else to write about.</p>\n<p>Version 1.1 is now released, bringing you:</p>\n<ul>\n<li>A screensaver inhibitor, at last!</li>\n<li>AppImage now works in Arch and Manjaro</li>\n</ul>\n<p>More in detail, this means that your computer won't go to sleep or start the\nscreen saver while you are watching a video. To achieve this, I wrote a\nportable (well, for the time being it only supports Linux and Windows, but\nmacOS support will eventually arrive too) library for inhibiting the\nscreensaver: <a href=\"https://gitlab.com/qt-goodies/qscreensaver\">QScreenSaver</a>. It\nlives in its own repository, and it's written in a way that should be easy to\nintegrate with your own project. You are welcome to try it out (and add support\nfor cmake/qmake/meson/…).</p>\n<p>The AppImage support has been improved after a user filed a bug about MiTubo\nnot working in Arch; I myself could not verify the issue as I've grown too lazy\nto install a distribution like Arch, but I did it on Manjaro (which is also\nbased on Arch), and indeed the MiTubo AppImage contained some unnecessary\nlibraries (while missing some others) that rendered it non-functional in those\ndistributions. Now it's all fixed, so there's a good chance that the AppImage\nwill work on your distribution, too.</p>",
-            "value": "Looks like I'm posting a bit too often about MiTubo, but don't\nworry, I'll soon find something else to write about.\nVersion 1.1 is now released, bringing you:\n\nA screensaver inhibitor, at last!\nAppImage now works in Arch and Manjaro\n\nMore in detail, this means that your computer won't go to sleep or start the\nscreen saver while you are watching a video. To achieve this, I wrote a\nportable (well, for the time being it only supports Linux and Windows, but\nmacOS support will eventually arrive too) library for inhibiting the\nscreensaver: QScreenSaver. It\nlives in its own repository, and it's written in a way that should be easy to\nintegrate with your own project. You are welcome to try it out (and add support\nfor cmake/qmake/meson/…).\nThe AppImage support has been improved after a user filed a bug about MiTubo\nnot working in Arch; I myself could not verify the issue as I've grown too lazy\nto install a distribution like Arch, but I did it on Manjaro (which is also\nbased on Arch), and indeed the MiTubo AppImage contained some unnecessary\nlibraries (while missing some others) that rendered it non-functional in those\ndistributions. Now it's all fixed, so there's a good chance that the AppImage\nwill work on your distribution, too."
-          }
-        ]
-      }
     }
   ],
   "rels": {
@@ -141,14 +141,14 @@
       "http://www.mardy.it/cgi-bin/bussator.fcgi"
     ],
     "prefetch": [
-      "http://www.mardy.it/blog/2022/09/the-media.html"
+      "http://www.mardy.it/blog/2022/10/mitubo-14-adds-feed-folders.html"
     ],
     "bookmark": [
+      "http://www.mardy.it/blog/2022/10/mitubo-14-adds-feed-folders.html",
       "http://www.mardy.it/blog/2022/09/the-media.html",
       "http://www.mardy.it/blog/2022/09/mitubo-13-sorting-of-qml-listview-via-dragdrop.html",
       "http://www.mardy.it/blog/2022/07/auronzo-bivacco-tiziano-bivacco-musatti.html",
-      "http://www.mardy.it/blog/2022/06/mitubo-comes-to-macos.html",
-      "http://www.mardy.it/blog/2022/06/mitubo-11-screensaver-inhibitor.html"
+      "http://www.mardy.it/blog/2022/06/mitubo-comes-to-macos.html"
     ],
     "me": [
       "mailto:info@mardy.it"
@@ -238,7 +238,7 @@
         "webmention"
       ]
     },
-    "http://www.mardy.it/blog/2022/09/the-media.html": {
+    "http://www.mardy.it/blog/2022/10/mitubo-14-adds-feed-folders.html": {
       "rels": [
         "prefetch"
       ],
@@ -258,6 +258,12 @@
       "hreflang": "it",
       "text": "Italiano"
     },
+    "http://www.mardy.it/blog/2022/09/the-media.html": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n            September 15, 2022"
+    },
     "http://www.mardy.it/blog/2022/09/mitubo-13-sorting-of-qml-listview-via-dragdrop.html": {
       "rels": [
         "bookmark"
@@ -275,12 +281,6 @@
         "bookmark"
       ],
       "text": "\n            June 22, 2022"
-    },
-    "http://www.mardy.it/blog/2022/06/mitubo-11-screensaver-inhibitor.html": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n            June 4, 2022"
     },
     "mailto:info@mardy.it": {
       "rels": [

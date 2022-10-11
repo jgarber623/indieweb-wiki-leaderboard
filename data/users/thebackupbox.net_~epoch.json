@@ -1,43 +1,115 @@
 {
-  "items": [],
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "name": [
+          "epoch"
+        ],
+        "url": [
+          "https://thebackupbox.net/~epoch/"
+        ],
+        "sound": [
+          "http://thebackupbox.net/~epoch/epoch.ogg"
+        ],
+        "photo": [
+          "http://thebackupbox.net/cgi-bin/xface.cgi?IlrD8fxN=HlbdLwwiJkkn=qs4%3EtlW=8)AJX~vDBf8=,%7B4m5iD0Rt@uJMy%25c%5C%5Ez%3E0%25.N$,QXXY)A@GPVl%3CtFo3A%605XDxcUh%7BtZj=]%3Co[%5EGH-Thr%7Cl+F)x~j%25Gb4U!XyXX;?a(hC6@yPNl5V%7B7[$~P=M"
+        ],
+        "note": [
+          "hacks"
+        ],
+        "geo": [
+          "geo:35.5,-92.5"
+        ]
+      }
+    }
+  ],
   "rels": {
-    "icon": [
-      "http://thebackupbox.net/favicon.ico"
-    ],
     "stylesheet": [
-      "http://thebackupbox.net/style.css"
+      "http://thebackupbox.net/~epoch/h-card.css"
     ],
-    "author": [
-      "acct:epoch@thebackupbox.net"
+    "me": [
+      "https://tilde.zone/@epoch",
+      "fmrl:epoch@thebackupbox.net",
+      "https://thebackupbox.net/cgi-bin/fmrl-client.cgi?user=epoch",
+      "http://epoch.sdf.org/",
+      "https://en.wikipedia.org/wiki/User:Epoch_qwert",
+      "https://indieweb.org/User:Thebackupbox.net_~epoch",
+      "https://steamcommunity.com/profiles/76561199390746481/"
     ],
-    "search": [
-      "http://thebackupbox.net/search.xml"
+    "authn": [
+      "http://thebackupbox.net/~epoch/pgp.asc",
+      "http://thebackupbox.net/~epoch/pgp.txt"
+    ],
+    "pgpkey": [
+      "http://thebackupbox.net/~epoch/pgp.asc",
+      "http://thebackupbox.net/~epoch/pgp.txt"
     ]
   },
   "rel-urls": {
-    "http://thebackupbox.net/favicon.ico": {
-      "rels": [
-        "icon"
-      ],
-      "type": "image/png"
-    },
-    "http://thebackupbox.net/style.css": {
+    "http://thebackupbox.net/~epoch/h-card.css": {
       "rels": [
         "stylesheet"
       ],
       "type": "text/css"
     },
-    "acct:epoch@thebackupbox.net": {
+    "https://tilde.zone/@epoch": {
       "rels": [
-        "author"
-      ]
-    },
-    "http://thebackupbox.net/search.xml": {
-      "rels": [
-        "search"
+        "me"
       ],
-      "title": "TBB links",
-      "type": "application/opensearchdescription+xml"
+      "text": "Fediverse"
+    },
+    "http://thebackupbox.net/~epoch/pgp.asc": {
+      "rels": [
+        "authn",
+        "pgpkey"
+      ],
+      "text": "my public PGP key"
+    },
+    "http://thebackupbox.net/~epoch/pgp.txt": {
+      "rels": [
+        "authn",
+        "pgpkey"
+      ],
+      "text": "(txt version)"
+    },
+    "fmrl:epoch@thebackupbox.net": {
+      "rels": [
+        "me"
+      ],
+      "text": "my fmrl uri"
+    },
+    "https://thebackupbox.net/cgi-bin/fmrl-client.cgi?user=epoch": {
+      "rels": [
+        "me"
+      ],
+      "text": "(with fmrl client)"
+    },
+    "http://epoch.sdf.org/": {
+      "rels": [
+        "me"
+      ],
+      "text": "me on sdf"
+    },
+    "https://en.wikipedia.org/wiki/User:Epoch_qwert": {
+      "rels": [
+        "me"
+      ],
+      "text": "me on wikipedia"
+    },
+    "https://indieweb.org/User:Thebackupbox.net_~epoch": {
+      "rels": [
+        "me"
+      ],
+      "text": "me on indieweb.org"
+    },
+    "https://steamcommunity.com/profiles/76561199390746481/": {
+      "rels": [
+        "me"
+      ],
+      "text": "me on steam"
     }
   }
 }

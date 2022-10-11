@@ -1,37 +1,62 @@
 {
   "items": [],
   "rels": {
+    "canonical": [
+      "https://piperswe.me/"
+    ],
     "stylesheet": [
-      "https://piperswe.me/cdn-cgi/styles/main.css"
+      "https://piperswe.me/assets/pink.css"
     ],
-    "noopener": [
-      "https://developers.cloudflare.com/argo-tunnel/reference/load-balancing/",
-      "https://www.cloudflare.com/5xx-error-landing"
+    "apple-touch-icon": [
+      "https://piperswe.me/img/apple-touch-icon-192x192.png"
     ],
-    "noreferrer": [
-      "https://developers.cloudflare.com/argo-tunnel/reference/load-balancing/",
-      "https://www.cloudflare.com/5xx-error-landing"
+    "icon": [
+      "https://piperswe.me/img/favicon/pink.png"
+    ],
+    "shortcut": [
+      "https://piperswe.me/img/favicon/pink.png"
+    ],
+    "alternate": [
+      "https://piperswe.me/index.xml"
+    ],
+    "me": [
+      "https://social.piperswe.me/@pmc"
     ]
   },
   "rel-urls": {
-    "https://piperswe.me/cdn-cgi/styles/main.css": {
+    "https://piperswe.me/": {
+      "rels": [
+        "canonical"
+      ]
+    },
+    "https://piperswe.me/assets/pink.css": {
       "rels": [
         "stylesheet"
       ]
     },
-    "https://developers.cloudflare.com/argo-tunnel/reference/load-balancing/": {
+    "https://piperswe.me/img/apple-touch-icon-192x192.png": {
       "rels": [
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "load balancing"
+        "apple-touch-icon"
+      ]
     },
-    "https://www.cloudflare.com/5xx-error-landing": {
+    "https://piperswe.me/img/favicon/pink.png": {
       "rels": [
-        "noopener",
-        "noreferrer"
+        "icon",
+        "shortcut"
+      ]
+    },
+    "https://piperswe.me/index.xml": {
+      "rels": [
+        "alternate"
       ],
-      "text": "Cloudflare"
+      "title": "Computers? Computers.",
+      "type": "application/rss+xml"
+    },
+    "https://social.piperswe.me/@pmc": {
+      "rels": [
+        "me"
+      ],
+      "text": "the Fediverse"
     }
   }
 }
