@@ -1,37 +1,252 @@
 {
   "items": [],
   "rels": {
-    "stylesheet": [
-      "https://holliebutler.net/css-hbnet.css"
+    "profile": [
+      "http://gmpg.org/xfn/11"
     ],
-    "me": [
-      "https://twitter.com/holliebutler",
-      "https://www.instagram.com/holliebutler/",
-      "https://github.com/holliebutler"
+    "dns-prefetch": [
+      "https://fonts.googleapis.com/",
+      "https://twemoji.classicpress.net/"
+    ],
+    "alternate": [
+      "https://holliebutler.net/feed/",
+      "https://holliebutler.net/comments/feed/"
+    ],
+    "stylesheet": [
+      "https://holliebutler.net/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
+      "https://holliebutler.net/wp-content/plugins/indieweb-post-kinds/css/kind.min.css?ver=3.6.1",
+      "https://holliebutler.net/wp-content/themes/twentysixteen/style.css?ver=cp_e9701af3",
+      "https://holliebutler.net/wp-content/themes/classicpress-twentysixteen/style.css?ver=cp_e9701af3",
+      "https://fonts.googleapis.com/css?family=Merriweather%3A400%2C700%2C900%2C400italic%2C700italic%2C900italic%7CMontserrat%3A400%2C700%7CInconsolata%3A400&subset=latin%2Clatin-ext",
+      "https://holliebutler.net/wp-content/themes/twentysixteen/genericons/genericons.css?ver=3.4.1",
+      "https://holliebutler.net/wp-content/plugins/syndication-links/css/syn.min.css?ver=4.3.12"
+    ],
+    "https://api.w.org/": [
+      "https://holliebutler.net/wp-json/"
+    ],
+    "EditURI": [
+      "https://holliebutler.net/xmlrpc.php?rsd"
+    ],
+    "wlwmanifest": [
+      "https://holliebutler.net/wp-includes/wlwmanifest.xml"
+    ],
+    "authorization_endpoint": [
+      "https://holliebutler.net/wp-json/indieauth/1.0/auth"
+    ],
+    "token_endpoint": [
+      "https://holliebutler.net/wp-json/indieauth/1.0/token"
+    ],
+    "icon": [
+      "https://holliebutler.net/wp-content/uploads/2022/10/cropped-IMG_4324-32x32.jpeg",
+      "https://holliebutler.net/wp-content/uploads/2022/10/cropped-IMG_4324-192x192.jpeg"
+    ],
+    "apple-touch-icon-precomposed": [
+      "https://holliebutler.net/wp-content/uploads/2022/10/cropped-IMG_4324-180x180.jpeg"
+    ],
+    "home": [
+      "https://holliebutler.net/"
+    ],
+    "bookmark": [
+      "https://holliebutler.net/inktober-day-11-2022/",
+      "https://holliebutler.net/classicpress-is-fun/"
+    ],
+    "category": [
+      "https://holliebutler.net/topics/art/",
+      "https://holliebutler.net/topics/blogging/"
+    ],
+    "tag": [
+      "https://holliebutler.net/topics/art/",
+      "https://holliebutler.net/tag/inktober2022/",
+      "https://holliebutler.net/tag/penandink/",
+      "https://holliebutler.net/tag/watercolors/",
+      "https://holliebutler.net/topics/blogging/",
+      "https://holliebutler.net/tag/classicpress/",
+      "https://holliebutler.net/tag/indieweb/"
     ]
   },
   "rel-urls": {
-    "https://holliebutler.net/css-hbnet.css": {
+    "http://gmpg.org/xfn/11": {
+      "rels": [
+        "profile"
+      ]
+    },
+    "https://fonts.googleapis.com/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
+    "https://twemoji.classicpress.net/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
+    "https://holliebutler.net/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Hollie Butler » Feed",
+      "type": "application/rss+xml"
+    },
+    "https://holliebutler.net/comments/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Hollie Butler » Comments Feed",
+      "type": "application/rss+xml"
+    },
+    "https://holliebutler.net/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7": {
       "rels": [
         "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://holliebutler.net/wp-content/plugins/indieweb-post-kinds/css/kind.min.css?ver=3.6.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://holliebutler.net/wp-content/themes/twentysixteen/style.css?ver=cp_e9701af3": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://holliebutler.net/wp-content/themes/classicpress-twentysixteen/style.css?ver=cp_e9701af3": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://fonts.googleapis.com/css?family=Merriweather%3A400%2C700%2C900%2C400italic%2C700italic%2C900italic%7CMontserrat%3A400%2C700%7CInconsolata%3A400&subset=latin%2Clatin-ext": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://holliebutler.net/wp-content/themes/twentysixteen/genericons/genericons.css?ver=3.4.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://holliebutler.net/wp-content/plugins/syndication-links/css/syn.min.css?ver=4.3.12": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://holliebutler.net/wp-json/": {
+      "rels": [
+        "https://api.w.org/"
       ]
     },
-    "https://twitter.com/holliebutler": {
+    "https://holliebutler.net/xmlrpc.php?rsd": {
       "rels": [
-        "me"
+        "EditURI"
+      ],
+      "title": "RSD",
+      "type": "application/rsd+xml"
+    },
+    "https://holliebutler.net/wp-includes/wlwmanifest.xml": {
+      "rels": [
+        "wlwmanifest"
+      ],
+      "type": "application/wlwmanifest+xml"
+    },
+    "https://holliebutler.net/wp-json/indieauth/1.0/auth": {
+      "rels": [
+        "authorization_endpoint"
       ]
     },
-    "https://www.instagram.com/holliebutler/": {
+    "https://holliebutler.net/wp-json/indieauth/1.0/token": {
       "rels": [
-        "me"
-      ],
-      "text": "@holliebutler"
+        "token_endpoint"
+      ]
     },
-    "https://github.com/holliebutler": {
+    "https://holliebutler.net/wp-content/uploads/2022/10/cropped-IMG_4324-32x32.jpeg": {
       "rels": [
-        "me"
+        "icon"
+      ]
+    },
+    "https://holliebutler.net/wp-content/uploads/2022/10/cropped-IMG_4324-192x192.jpeg": {
+      "rels": [
+        "icon"
+      ]
+    },
+    "https://holliebutler.net/wp-content/uploads/2022/10/cropped-IMG_4324-180x180.jpeg": {
+      "rels": [
+        "apple-touch-icon-precomposed"
+      ]
+    },
+    "https://holliebutler.net/": {
+      "rels": [
+        "home"
       ],
-      "text": "@holliebutler"
+      "text": "Hollie Butler"
+    },
+    "https://holliebutler.net/inktober-day-11-2022/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "Inktober Day 11"
+    },
+    "https://holliebutler.net/topics/art/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Art"
+    },
+    "https://holliebutler.net/tag/inktober2022/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "inktober2022"
+    },
+    "https://holliebutler.net/tag/penandink/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "penandink"
+    },
+    "https://holliebutler.net/tag/watercolors/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "watercolors"
+    },
+    "https://holliebutler.net/classicpress-is-fun/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "ClassicPress is fun!"
+    },
+    "https://holliebutler.net/topics/blogging/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Blogging"
+    },
+    "https://holliebutler.net/tag/classicpress/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "classicpress"
+    },
+    "https://holliebutler.net/tag/indieweb/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "indieweb"
     }
   }
 }

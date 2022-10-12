@@ -46,6 +46,68 @@
               "https://fireburn.ru/"
             ],
             "url": [
+              "https://fireburn.ru/posts/agso6Vo"
+            ],
+            "uid": [
+              "https://fireburn.ru/posts/agso6Vo"
+            ],
+            "published": [
+              "2022-10-12T01:05:11.388894196+03:00"
+            ],
+            "category": [
+              "programming"
+            ],
+            "content": [
+              {
+                "html": "<p>Acquiring random bits of knowledge and experience allows one to comprehend concepts one would be unable to ordinarily comprehend and utilize due to lack of perceived usefulness.</p>\n\n<p>For example, actor frameworks in asynchronous systems. I thought that actors were extraneous entities that aren’t relevant to the problem space; and yet this concept has a use!</p>\n\n<p>By segregating responsibilities of the app and allowing actors to communicate in strictly predefined messages, one can improve the separation of the application modules and ease refactoring.</p>\n\n<p>Maybe I should try using this in a project to feel out the concept. Actually, I do have a pet project: I always wanted to write my own Microsub server...</p>",
+                "value": "Acquiring random bits of knowledge and experience allows one to comprehend concepts one would be unable to ordinarily comprehend and utilize due to lack of perceived usefulness.\n\nFor example, actor frameworks in asynchronous systems. I thought that actors were extraneous entities that aren’t relevant to the problem space; and yet this concept has a use!\n\nBy segregating responsibilities of the app and allowing actors to communicate in strictly predefined messages, one can improve the separation of the application modules and ease refactoring.\n\nMaybe I should try using this in a project to feel out the concept. Actually, I do have a pet project: I always wanted to write my own Microsub server..."
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              "https://fireburn.ru/"
+            ],
+            "url": [
+              "https://fireburn.ru/posts/ags94PA"
+            ],
+            "uid": [
+              "https://fireburn.ru/posts/ags94PA"
+            ],
+            "published": [
+              "2022-10-11T22:44:39.790859647+03:00"
+            ],
+            "category": [
+              "go"
+            ],
+            "photo": [
+              {
+                "value": "https://fireburn.ru/.kittybox/media/uploads/2f/e9/6a/52/8f5148a798e76ea49335275797ab9b751f027526abd776fac00ca14e",
+                "alt": "Output of the \"go mod tidy\" command, showing an error caused by ambiguous import in some package downstream."
+              }
+            ],
+            "content": [
+              {
+                "html": "<p>I love how robust go dependency handling is! /s</p>",
+                "value": "I love how robust go dependency handling is! /s"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              "https://fireburn.ru/"
+            ],
+            "url": [
               "https://fireburn.ru/posts/ageHtaR"
             ],
             "uid": [
@@ -544,64 +606,6 @@
               }
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "author": [
-              "https://fireburn.ru/"
-            ],
-            "url": [
-              "https://fireburn.ru/posts/aVi3akn"
-            ],
-            "uid": [
-              "https://fireburn.ru/posts/aVi3akn"
-            ],
-            "published": [
-              "2022-06-24T14:00:56.747138603+03:00"
-            ],
-            "category": [
-              "Rust",
-              "programming"
-            ],
-            "content": [
-              {
-                "html": "<p>Big endian vs little endian is a pain. I had to go through two conversions to serialize an <a href=\"https://doc.rust-lang.org/nightly/std/net/struct.Ipv4Addr.html\">`std::net::Ipv4Addr`</a> to a big-endian <code>[u8; 4]</code> - the middle conversion was a <code>u32</code> of native endianness.</p>\n\n<p>The most surprising thing is that the compiler optimizes this down to nothing. Maybe the IP addresses are already stored internally as big endian? Would make sense to store them in the same order they’re commonly used.</p>",
-                "value": "Big endian vs little endian is a pain. I had to go through two conversions to serialize an `std::net::Ipv4Addr` to a big-endian [u8; 4] - the middle conversion was a u32 of native endianness.\n\nThe most surprising thing is that the compiler optimizes this down to nothing. Maybe the IP addresses are already stored internally as big endian? Would make sense to store them in the same order they’re commonly used."
-              }
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "author": [
-              "https://fireburn.ru/"
-            ],
-            "url": [
-              "https://fireburn.ru/posts/aSB098y",
-              "https://fireburn.ru/posts/kittybox-templates-unit-tests"
-            ],
-            "uid": [
-              "https://fireburn.ru/posts/aSB098y"
-            ],
-            "published": [
-              "2022-05-23T18:36:32.938018799+03:00"
-            ],
-            "category": [
-              "Kittybox"
-            ],
-            "content": [
-              {
-                "html": "<p>I think <a href=\"https://git.sr.ht/~vikanezrimaya/kittybox/tree/main/item/kittybox-rs/templates/src/lib.rs\">my template unit-tests</a> are one of the most beautilful think I’ve ever written. An MF2-JSON document is randomly generated, rendered using the appropriate template and then checked for expected properties matching whatever was in the MF2-JSON.</p>\n\n<p>These are some of the best unit-tests I’ve ever attempted to write.</p>",
-                "value": "I think my template unit-tests are one of the most beautilful think I’ve ever written. An MF2-JSON document is randomly generated, rendered using the appropriate template and then checked for expected properties matching whatever was in the MF2-JSON.\n\nThese are some of the best unit-tests I’ve ever attempted to write."
-              }
-            ]
-          }
         }
       ]
     }
@@ -639,7 +643,7 @@
       "https://fireburn.ru/feeds/main"
     ],
     "prev": [
-      "https://fireburn.ru/feeds/main?after=https://fireburn.ru/posts/aSB098y"
+      "https://fireburn.ru/feeds/main?after=https://fireburn.ru/posts/aXW09A9"
     ]
   },
   "rel-urls": {
@@ -701,7 +705,7 @@
       ],
       "text": "Main feed"
     },
-    "https://fireburn.ru/feeds/main?after=https://fireburn.ru/posts/aSB098y": {
+    "https://fireburn.ru/feeds/main?after=https://fireburn.ru/posts/aXW09A9": {
       "rels": [
         "prev"
       ],

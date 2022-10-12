@@ -14,6 +14,7 @@
         "url": [
           "https://benji.dog/",
           "https://twitter.com/benjifs",
+          "https://fosstodon.org/@benji",
           "https://instagram.com/bnjfs",
           "https://linkedin.com/in/benjiencalada",
           "https://github.com/benjifs",
@@ -67,16 +68,20 @@
       "https://www.benji.dog/favicon.ico"
     ],
     "stylesheet": [
-      "https://www.benji.dog/assets/fontello-43962b4a/css/fontello.css",
+      "https://www.benji.dog/assets/fontello-9434ffc0/css/fontello.css",
       "https://www.benji.dog/build/css/main.min.css"
     ],
     "feed": [
-      "https://benji.dog/feed",
-      "https://www.benji.dog/feed"
+      "https://www.benji.dog/feed",
+      "https://www.benji.dog/all"
     ],
     "alternate": [
-      "https://benji.dog/feed.xml",
-      "https://benji.dog/feed.json"
+      "https://www.benji.dog/feed.xml",
+      "https://www.benji.dog/all.xml",
+      "https://www.benji.dog/feed.atom",
+      "https://www.benji.dog/all.atom",
+      "https://www.benji.dog/feed.json",
+      "https://www.benji.dog/all.json"
     ],
     "authorization_endpoint": [
       "https://indieauth.com/auth"
@@ -102,6 +107,7 @@
     "me": [
       "https://benji.dog/",
       "https://twitter.com/benjifs",
+      "https://fosstodon.org/@benji",
       "https://instagram.com/bnjfs",
       "https://linkedin.com/in/benjiencalada",
       "https://github.com/benjifs",
@@ -109,6 +115,7 @@
     ],
     "noreferrer": [
       "https://twitter.com/benjifs",
+      "https://fosstodon.org/@benji",
       "https://instagram.com/bnjfs",
       "https://linkedin.com/in/benjiencalada",
       "https://github.com/benjifs",
@@ -217,7 +224,7 @@
         "shortcut"
       ]
     },
-    "https://www.benji.dog/assets/fontello-43962b4a/css/fontello.css": {
+    "https://www.benji.dog/assets/fontello-9434ffc0/css/fontello.css": {
       "rels": [
         "stylesheet"
       ],
@@ -229,21 +236,56 @@
       ],
       "type": "text/css"
     },
-    "https://benji.dog/feed": {
+    "https://www.benji.dog/feed": {
       "rels": [
         "feed"
       ],
       "title": "feed",
       "type": "text/html"
     },
-    "https://benji.dog/feed.xml": {
+    "https://www.benji.dog/all": {
+      "rels": [
+        "feed"
+      ],
+      "title": "all",
+      "type": "text/html"
+    },
+    "https://www.benji.dog/feed.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "RSS Feed",
+      "type": "application/rss+xml"
+    },
+    "https://www.benji.dog/all.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "RSS Feed",
+      "type": "application/rss+xml"
+    },
+    "https://www.benji.dog/feed.atom": {
       "rels": [
         "alternate"
       ],
       "title": "RSS (Atom) Feed",
       "type": "application/atom+xml"
     },
-    "https://benji.dog/feed.json": {
+    "https://www.benji.dog/all.atom": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "RSS (Atom) Feed",
+      "type": "application/atom+xml"
+    },
+    "https://www.benji.dog/feed.json": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "JSON Feed",
+      "type": "application/json"
+    },
+    "https://www.benji.dog/all.json": {
       "rels": [
         "alternate"
       ],
@@ -285,12 +327,6 @@
         "microsub"
       ]
     },
-    "https://www.benji.dog/feed": {
-      "rels": [
-        "feed"
-      ],
-      "text": "feed"
-    },
     "https://benji.dog/": {
       "rels": [
         "me"
@@ -298,6 +334,12 @@
       "text": "Benji Encalada Mora"
     },
     "https://twitter.com/benjifs": {
+      "rels": [
+        "me",
+        "noreferrer"
+      ]
+    },
+    "https://fosstodon.org/@benji": {
       "rels": [
         "me",
         "noreferrer"

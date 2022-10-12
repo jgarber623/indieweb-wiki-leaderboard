@@ -1,23 +1,215 @@
 {
   "items": [],
   "rels": {
-    "nofollow": [
-      "http://httpd.apache.org/docs/2.4/mod/mod_userdir.html",
-      "https://bugs.launchpad.net/ubuntu/+source/apache2"
+    "icon": [
+      "https://dym.sh/favicon.ico",
+      "https://dym.sh/icon.png"
+    ],
+    "apple-touch-icon": [
+      "https://dym.sh/icon.png"
+    ],
+    "alternate": [
+      "https://dym.sh/feed.rss",
+      "https://dym.sh/podcast.rss"
+    ],
+    "canonical": [
+      "https://dym.sh/"
+    ],
+    "stylesheet": [
+      "https://dym.sh/style.css"
+    ],
+    "me": [
+      "mailto:re@dym.sh",
+      "https://twitter.com/dym_sh",
+      "https://reddit.com/u/dym_sh",
+      "https://instagram.com/dym_sh",
+      "https://behance.net/dym_sh",
+      "https://dribbble.com/dym_sh",
+      "https://figma.com/@dym_sh",
+      "https://github.com/dym-sh",
+      "https://codepen.io/dym-sh",
+      "https://npmjs.com/~dym_sh",
+      "https://gitlab.com/dym-sh",
+      "https://sr.ht/~dym_sh",
+      "https://linkedin.com/in/dym-sohin",
+      "https://xing.com/profile/Dym_Sohin",
+      "https://polywork.com/dym_sh",
+      "https://read.cv/dym_sh",
+      "https://soundcloud.com/dym_sh",
+      "https://coub.com/dym-sohin",
+      "https://youtube.com/channel/UCvguBDc8qAkMEzhiCbWwJHQ/videos"
     ]
   },
   "rel-urls": {
-    "http://httpd.apache.org/docs/2.4/mod/mod_userdir.html": {
+    "https://dym.sh/favicon.ico": {
       "rels": [
-        "nofollow"
+        "icon"
       ],
-      "text": "public_html"
+      "type": "image/png"
     },
-    "https://bugs.launchpad.net/ubuntu/+source/apache2": {
+    "https://dym.sh/icon.png": {
       "rels": [
-        "nofollow"
+        "icon"
       ],
-      "text": "existing bug reports"
+      "type": "image/png"
+    },
+    "https://dym.sh/feed.rss": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "global feed",
+      "type": "application/rss+xml"
+    },
+    "https://dym.sh/podcast.rss": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "podcast only",
+      "type": "application/rss+xml"
+    },
+    "https://dym.sh/": {
+      "rels": [
+        "canonical"
+      ]
+    },
+    "https://dym.sh/style.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "mailto:re@dym.sh": {
+      "rels": [
+        "me"
+      ],
+      "title": "email",
+      "text": "\n          \n            \n            \n              email\n            \n          \n        "
+    },
+    "https://twitter.com/dym_sh": {
+      "rels": [
+        "me"
+      ],
+      "title": "twitter",
+      "text": "\n          \n            \n            \n              twitter\n            \n          \n        "
+    },
+    "https://reddit.com/u/dym_sh": {
+      "rels": [
+        "me"
+      ],
+      "title": "reddit",
+      "text": "\n          \n            \n            \n              reddit\n            \n          \n        "
+    },
+    "https://instagram.com/dym_sh": {
+      "rels": [
+        "me"
+      ],
+      "title": "instagram",
+      "text": "\n          \n            \n            \n              instagram\n            \n          \n        "
+    },
+    "https://behance.net/dym_sh": {
+      "rels": [
+        "me"
+      ],
+      "title": "behance",
+      "text": "\n          \n            \n            \n              behance\n            \n          \n        "
+    },
+    "https://dribbble.com/dym_sh": {
+      "rels": [
+        "me"
+      ],
+      "title": "dribbble",
+      "text": "\n          \n            \n            \n              dribbble\n            \n          \n        "
+    },
+    "https://figma.com/@dym_sh": {
+      "rels": [
+        "me"
+      ],
+      "title": "figma",
+      "text": "\n          \n            \n            \n              figma\n            \n          \n        "
+    },
+    "https://github.com/dym-sh": {
+      "rels": [
+        "me"
+      ],
+      "title": "github",
+      "text": "\n          \n            \n            \n              github\n            \n          \n        "
+    },
+    "https://codepen.io/dym-sh": {
+      "rels": [
+        "me"
+      ],
+      "title": "codepen",
+      "text": "\n          \n            \n            \n              codepen\n            \n          \n        "
+    },
+    "https://npmjs.com/~dym_sh": {
+      "rels": [
+        "me"
+      ],
+      "title": "npmjs",
+      "text": "\n          \n            \n            \n              npmjs\n            \n          \n        "
+    },
+    "https://gitlab.com/dym-sh": {
+      "rels": [
+        "me"
+      ],
+      "title": "gitlab",
+      "text": "\n          \n            \n            \n              gitlab\n            \n          \n        "
+    },
+    "https://sr.ht/~dym_sh": {
+      "rels": [
+        "me"
+      ],
+      "title": "sourcehut",
+      "text": "\n          \n            \n            \n              sourcehut\n            \n          \n        "
+    },
+    "https://linkedin.com/in/dym-sohin": {
+      "rels": [
+        "me"
+      ],
+      "title": "linkedin",
+      "text": "\n          \n            \n            \n              linkedin\n            \n          \n        "
+    },
+    "https://xing.com/profile/Dym_Sohin": {
+      "rels": [
+        "me"
+      ],
+      "title": "xing",
+      "text": "\n          \n            \n            \n              xing\n            \n          \n        "
+    },
+    "https://polywork.com/dym_sh": {
+      "rels": [
+        "me"
+      ],
+      "title": "polywork",
+      "text": "\n          \n            \n            \n              polywork\n            \n          \n        "
+    },
+    "https://read.cv/dym_sh": {
+      "rels": [
+        "me"
+      ],
+      "title": "readcv",
+      "text": "\n          \n            \n            \n              readcv\n            \n          \n        "
+    },
+    "https://soundcloud.com/dym_sh": {
+      "rels": [
+        "me"
+      ],
+      "title": "soundcloud",
+      "text": "\n          \n            \n            \n              soundcloud\n            \n          \n        "
+    },
+    "https://coub.com/dym-sohin": {
+      "rels": [
+        "me"
+      ],
+      "title": "coub",
+      "text": "\n          \n            \n            \n              coub\n            \n          \n        "
+    },
+    "https://youtube.com/channel/UCvguBDc8qAkMEzhiCbWwJHQ/videos": {
+      "rels": [
+        "me"
+      ],
+      "title": "youtube",
+      "text": "\n          \n            \n            \n              youtube\n            \n          \n        "
     }
   }
 }

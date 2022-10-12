@@ -34,6 +34,28 @@
             "h-entry"
           ],
           "properties": {
+            "published": [
+              "2022-10-11T09:00:28Z"
+            ],
+            "in-reply-to": [
+              "https://www.manton.org/2022/10/10/big-improvements-to.html"
+            ],
+            "content": [
+              {
+                "html": "<blockquote><p>If there’s no custom domain, what does the Mastodon-compatible username look like? @username@micro.blog of course! In this way, Micro.blog looks a lot more like another Mastodon instance, but an instance that also has a full suite of blogging features, IndieWeb protocols, and everything else we’ve been building for years.</p></blockquote>\n<p>I abandoned my barely active account on birdsite <a href=\"https://kandr3s.co/notes/2022-10-07-qnwkp\">recently</a> and I was giving the <a href=\"https://fosstodon.org/about\" target=\"_blank\" rel=\"noopener\">Fosstodon</a> instance a try, but I’ve been cross-posting from my <em>IndieWebsite</em> to M.b for a while now. Micro.blog is offering (including free users like me) a great opportunity to bridge 3 communities together. This is game changer.</p>",
+                "value": "If there’s no custom domain, what does the Mastodon-compatible username look like? @username@micro.blog of course! In this way, Micro.blog looks a lot more like another Mastodon instance, but an instance that also has a full suite of blogging features, IndieWeb protocols, and everything else we’ve been building for years.I abandoned my barely active account on birdsite recently and I was giving the Fosstodon instance a try, but I’ve been cross-posting from my IndieWebsite to M.b for a while now. Micro.blog is offering (including free users like me) a great opportunity to bridge 3 communities together. This is game changer."
+              }
+            ],
+            "url": [
+              "https://kandr3s.co/notes/2022-10-11-xcgan"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
             "name": [
               "🍿 Watched: Summer with Monika, 1953 - ★★★★"
             ],
@@ -331,35 +353,13 @@
               "https://kandr3s.co/notes/2022/07/2022-07-28-wapys"
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "published": [
-              "2022-07-20T14:52:29Z"
-            ],
-            "in-reply-to": [
-              "https://wa.rner.me/2022/07/14/so-what-did.html"
-            ],
-            "content": [
-              {
-                "html": "<p>Never posted much on Twitter but this is a huge argument to finally getting rid of it. It’s been a while since I even logged in. I do follow my <a href=\"https://twitter-atom.appspot.com/\" target=\"_blank\" rel=\"noopener\">Timeline via RSS</a> and Brid.gy does its thing crossposting&amp;mldr; but with these numbers it’s like shouting into a void. <a href=\"https://brid.gy/publish/twitter?bridgy_omit_link=maybe\"></a><a href=\"https://brid.gy/publish/mastodon?bridgy_omit_link=maybe\"></a></p>",
-                "value": "Never posted much on Twitter but this is a huge argument to finally getting rid of it. It’s been a while since I even logged in. I do follow my Timeline via RSS and Brid.gy does its thing crossposting&mldr; but with these numbers it’s like shouting into a void."
-              }
-            ],
-            "url": [
-              "https://kandr3s.co/notes/2022/07/2022-07-20-tlujv"
-            ]
-          }
         }
       ]
     }
   ],
   "rels": {
     "stylesheet": [
-      "https://kandr3s.co/eb271261af0c26c9f9e1c5340196769fbce15c5fb588c78ddae1707397a4a870.css"
+      "https://kandr3s.co/c800721a4f3de1d5a9033f50fca01f696348fde994a83de2161ee5f0dcf3ce78.css"
     ],
     "canonical": [
       "https://kandr3s.co/"
@@ -401,6 +401,8 @@
       "https://kandr3s.co/"
     ],
     "noopener": [
+      "https://www.manton.org/2022/10/10/big-improvements-to.html",
+      "https://fosstodon.org/about",
       "https://goblog.app/updates/2022/10/updates-7",
       "https://jlelse.blog/",
       "https://tintaenlascintas.com/",
@@ -408,16 +410,14 @@
       "https://brid.gy/publish/mastodon?bridgy_omit_link=maybe",
       "https://hacdias.com/2022/08/15/evjibwnnjd",
       "https://hacdias.com/2022/08/14/bsxtksxyal",
-      "https://jlelse.blog/micro/2022/08/2022-08-14-nztyu",
-      "https://wa.rner.me/2022/07/14/so-what-did.html",
-      "https://twitter-atom.appspot.com/"
+      "https://jlelse.blog/micro/2022/08/2022-08-14-nztyu"
     ],
     "noreferrer": [
       "https://tintaenlascintas.com/"
     ]
   },
   "rel-urls": {
-    "https://kandr3s.co/eb271261af0c26c9f9e1c5340196769fbce15c5fb588c78ddae1707397a4a870.css": {
+    "https://kandr3s.co/c800721a4f3de1d5a9033f50fca01f696348fde994a83de2161ee5f0dcf3ce78.css": {
       "rels": [
         "stylesheet"
       ]
@@ -505,6 +505,18 @@
       "title": "@kandr3s online base",
       "type": "application/opensearchdescription+xml"
     },
+    "https://www.manton.org/2022/10/10/big-improvements-to.html": {
+      "rels": [
+        "noopener"
+      ],
+      "text": "Big improvements to ActivityPub on Micro.blog"
+    },
+    "https://fosstodon.org/about": {
+      "rels": [
+        "noopener"
+      ],
+      "text": "Fosstodon"
+    },
     "https://goblog.app/updates/2022/10/updates-7": {
       "rels": [
         "noopener"
@@ -545,18 +557,6 @@
         "noopener"
       ],
       "text": "https://jlelse.blog/micro/2022/08/2022-08-14-nztyu"
-    },
-    "https://wa.rner.me/2022/07/14/so-what-did.html": {
-      "rels": [
-        "noopener"
-      ],
-      "text": "https://wa.rner.me/2022/07/14/so-what-did.html"
-    },
-    "https://twitter-atom.appspot.com/": {
-      "rels": [
-        "noopener"
-      ],
-      "text": "Timeline via RSS"
     }
   }
 }
