@@ -44,8 +44,8 @@
         ],
         "content": [
           {
-            "html": "<p>This evening I sat down on the couch sleepy. We’d just gotten the kids into bed. I hadn’t planned on writing any code but figured I’d round the evening out with some reading.</p>\n<p>First I read through the docs and glossary of <a href=\"http://www.call-with-current-continuation.org/uf/README\">uf</a>, a forth system for uxn. Then I read through an <a href=\"https://gitlab.com/b2495/uf/-/blob/master/examples/bounce.f\">example program</a> provided by uf.</p>\n<p>…with my palette whetted I <a href=\"https://eli.li/_assets/bin/PocketForth/\">re-visited some other forth documentation</a>.</p>\n<p>Then I put things down and did the dishes. After doing the dishes I found myself back at a keyboard ready to write some code.</p>\n<p>My first thought was to re-implement the unix command <code>cat</code> in uxntal. After a bit of noodling I decided to go with <code>echo</code> instead of <code>cat</code>. I banged away at <code>echo</code> for a bit but then remembered the very first program demonstrated in a book I’m currently reading, <em>Programming from the Ground Up</em>, by Jonathan Bartlett. The first sample program there is one that exists. That is about it.</p>\n<p>Exiting felt achievable.</p>\n<p>Here is a teeny tiny program that prints the string <code>Hello Uxn!</code> and then exits.</p>\n<pre><code class=\"hljs plaintext\">( exit )\n\n|10 @Console &amp;vector $2 &amp;read $1 &amp;pad $5 &amp;write $1 &amp;error $1\n\n|0100 ( -&gt; )\n\n    ( print hello )\n    ;hello-txt\n\n    &amp;while\n        LDAk .Console/write DEO\n        INC2 LDAk ,&amp;while JCN\n    POP2\n\n    ( exit )\n    #010f DEO\n\nBRK\n\n\n@hello-txt \"Hello 20 \"Uxn! $1</code></pre>\n<p>It isn’t much, but it is a start.</p>\n<p>Some handy resources I poured over over this evenings explorations include:</p>\n<ul>\n<li><a href=\"https://wiki.xxiivv.com/site/uxntal_library.html\">uxntal library</a></li>\n<li>\n<a href=\"https://git.sr.ht/~rabbits/uxn/tree/main/item/projects/examples\">uxntal examples</a>, specifically the devices examples</li>\n<li><a href=\"http://plastic-idolatry.com/erik/nxu/regex.tal\">regex.tal</a></li>\n<li><a href=\"http://plastic-idolatry.com/erik/nxu/femto.tal\">femto.tal</a></li>\n<li><a href=\"http://plastic-idolatry.com/erik/nxu/grep.tal\">grep.tal</a></li>\n<li><a href=\"https://compudanzas.net/uxn_tutorial_day_7.html#the%20file%20devices\">day 7 of compudanzas’s uxn tutorial</a></li>\n<li>\n<a href=\"https://git.sr.ht/~rabbits/uxnlin/tree/main/item/src/uxnlin.tal\">uxnlin</a>, a uxntal linter in uxntal</li>\n</ul>\n<p>Also, big thanks to <a href=\"https://wiki.xxiivv.com/site/home.html\">Devine Lu Linvenga</a>, a primary force behind uxn, for pointing me in the right direction and suggesting some optimizations.</p>\n<p>I’m not sure if I’ll have it in me to write code every night moving forward, but this was a lot of fun and I still have big dreams for a homespun <code>cat.tal</code></p>",
-            "value": "This evening I sat down on the couch sleepy. We’d just gotten the kids into bed. I hadn’t planned on writing any code but figured I’d round the evening out with some reading.\nFirst I read through the docs and glossary of uf, a forth system for uxn. Then I read through an example program provided by uf.\n…with my palette whetted I re-visited some other forth documentation.\nThen I put things down and did the dishes. After doing the dishes I found myself back at a keyboard ready to write some code.\nMy first thought was to re-implement the unix command cat in uxntal. After a bit of noodling I decided to go with echo instead of cat. I banged away at echo for a bit but then remembered the very first program demonstrated in a book I’m currently reading, Programming from the Ground Up, by Jonathan Bartlett. The first sample program there is one that exists. That is about it.\nExiting felt achievable.\nHere is a teeny tiny program that prints the string Hello Uxn! and then exits.\n( exit )\n\n|10 @Console &vector $2 &read $1 &pad $5 &write $1 &error $1\n\n|0100 ( -> )\n\n    ( print hello )\n    ;hello-txt\n\n    &while\n        LDAk .Console/write DEO\n        INC2 LDAk ,&while JCN\n    POP2\n\n    ( exit )\n    #010f DEO\n\nBRK\n\n\n@hello-txt \"Hello 20 \"Uxn! $1\nIt isn’t much, but it is a start.\nSome handy resources I poured over over this evenings explorations include:\n\nuxntal library\nuxntal examples, specifically the devices examples\nregex.tal\nfemto.tal\ngrep.tal\nday 7 of compudanzas’s uxn tutorial\nuxnlin, a uxntal linter in uxntal\n\nAlso, big thanks to Devine Lu Linvenga, a primary force behind uxn, for pointing me in the right direction and suggesting some optimizations.\nI’m not sure if I’ll have it in me to write code every night moving forward, but this was a lot of fun and I still have big dreams for a homespun cat.tal"
+            "html": "<p>This evening I sat down on the couch sleepy. We’d just gotten the kids into bed. I hadn’t planned on writing any code but figured I’d round the evening out with some reading.</p>\n<p>First I read through the docs and glossary of <a href=\"http://www.call-with-current-continuation.org/uf/README\">uf</a>, a forth system for uxn. Then I read through an <a href=\"https://gitlab.com/b2495/uf/-/blob/master/examples/bounce.f\">example program</a> provided by uf.</p>\n<p>…with my palette whetted I <a href=\"https://eli.li/_assets/bin/PocketForth/\">re-visited some other forth documentation</a>.</p>\n<p>Then I put things down and did the dishes. After doing the dishes I found myself back at a keyboard ready to write some code.</p>\n<p>My first thought was to re-implement the unix command <code>cat</code> in uxntal. After a bit of noodling I decided to go with <code>echo</code> instead of <code>cat</code>. I banged away at <code>echo</code> for a bit but then remembered the very first program demonstrated in a book I’m currently reading, <em>Programming from the Ground Up</em>, by Jonathan Bartlett. The first sample program there is one that exits. That is about it.</p>\n<p>Exiting felt achievable.</p>\n<p>Here is a teeny tiny program that prints the string <code>Hello Uxn!</code> and then exits.</p>\n<pre><code class=\"hljs plaintext\">( exit )\n\n|10 @Console &amp;vector $2 &amp;read $1 &amp;pad $5 &amp;write $1 &amp;error $1\n\n|0100 ( -&gt; )\n\n    ( print hello )\n    ;hello-txt\n\n    &amp;while\n        LDAk .Console/write DEO\n        INC2 LDAk ,&amp;while JCN\n    POP2\n\n    ( exit )\n    #010f DEO\n\nBRK\n\n\n@hello-txt \"Hello 20 \"Uxn! $1</code></pre>\n<p>It isn’t much, but it is a start.</p>\n<p>Some handy resources I poured over over this evenings explorations include:</p>\n<ul>\n<li><a href=\"https://wiki.xxiivv.com/site/uxntal_library.html\">uxntal library</a></li>\n<li>\n<a href=\"https://git.sr.ht/~rabbits/uxn/tree/main/item/projects/examples\">uxntal examples</a>, specifically the devices examples</li>\n<li><a href=\"http://plastic-idolatry.com/erik/nxu/regex.tal\">regex.tal</a></li>\n<li><a href=\"http://plastic-idolatry.com/erik/nxu/femto.tal\">femto.tal</a></li>\n<li><a href=\"http://plastic-idolatry.com/erik/nxu/grep.tal\">grep.tal</a></li>\n<li><a href=\"https://compudanzas.net/uxn_tutorial_day_7.html#the%20file%20devices\">day 7 of compudanzas’s uxn tutorial</a></li>\n<li>\n<a href=\"https://git.sr.ht/~rabbits/uxnlin/tree/main/item/src/uxnlin.tal\">uxnlin</a>, a uxntal linter in uxntal</li>\n</ul>\n<p>Also, big thanks to <a href=\"https://wiki.xxiivv.com/site/home.html\">Devine Lu Linvenga</a>, a primary force behind uxn, for pointing me in the right direction and suggesting some optimizations.</p>\n<p>I’m not sure if I’ll have it in me to write code every night moving forward, but this was a lot of fun and I still have big dreams for a homespun <code>cat.tal</code></p>",
+            "value": "This evening I sat down on the couch sleepy. We’d just gotten the kids into bed. I hadn’t planned on writing any code but figured I’d round the evening out with some reading.\nFirst I read through the docs and glossary of uf, a forth system for uxn. Then I read through an example program provided by uf.\n…with my palette whetted I re-visited some other forth documentation.\nThen I put things down and did the dishes. After doing the dishes I found myself back at a keyboard ready to write some code.\nMy first thought was to re-implement the unix command cat in uxntal. After a bit of noodling I decided to go with echo instead of cat. I banged away at echo for a bit but then remembered the very first program demonstrated in a book I’m currently reading, Programming from the Ground Up, by Jonathan Bartlett. The first sample program there is one that exits. That is about it.\nExiting felt achievable.\nHere is a teeny tiny program that prints the string Hello Uxn! and then exits.\n( exit )\n\n|10 @Console &vector $2 &read $1 &pad $5 &write $1 &error $1\n\n|0100 ( -> )\n\n    ( print hello )\n    ;hello-txt\n\n    &while\n        LDAk .Console/write DEO\n        INC2 LDAk ,&while JCN\n    POP2\n\n    ( exit )\n    #010f DEO\n\nBRK\n\n\n@hello-txt \"Hello 20 \"Uxn! $1\nIt isn’t much, but it is a start.\nSome handy resources I poured over over this evenings explorations include:\n\nuxntal library\nuxntal examples, specifically the devices examples\nregex.tal\nfemto.tal\ngrep.tal\nday 7 of compudanzas’s uxn tutorial\nuxnlin, a uxntal linter in uxntal\n\nAlso, big thanks to Devine Lu Linvenga, a primary force behind uxn, for pointing me in the right direction and suggesting some optimizations.\nI’m not sure if I’ll have it in me to write code every night moving forward, but this was a lot of fun and I still have big dreams for a homespun cat.tal"
           }
         ],
         "published": [
@@ -393,14 +393,11 @@
     "alternate": [
       "https://eli.li/feed.rss"
     ],
-    "author": [
-      "https://txt.eli.li/humans.txt"
-    ],
     "icon": [
       "https://blotcdn.com/blog_7b49675ad4964db5a10b2e055c3fc5d8/_avatars/46f6db9e-6ed0-4124-9580-7db796f1cacd.jpg"
     ],
     "stylesheet": [
-      "https://eli.li/style.css?cache=1665545362885&extension=.css"
+      "https://eli.li/style.css?cache=1665619060161&extension=.css"
     ],
     "me": [
       "https://eli.li/",
@@ -408,7 +405,9 @@
       "https://dog.estate/@eli_oat",
       "https://twitter.com/eli_oat",
       "https://github.com/eli-oat",
-      "https://micro.blog/eli"
+      "https://micro.blog/eli",
+      "https://merveilles.town/@eli_oat",
+      "https://tenforward.social/@eli_oat"
     ],
     "license": [
       "https://creativecommons.org/licenses/by-sa/4.0/"
@@ -422,18 +421,13 @@
       "title": "RSS Feed for Oatmeal",
       "type": "application/rss+xml"
     },
-    "https://txt.eli.li/humans.txt": {
-      "rels": [
-        "author"
-      ]
-    },
     "https://blotcdn.com/blog_7b49675ad4964db5a10b2e055c3fc5d8/_avatars/46f6db9e-6ed0-4124-9580-7db796f1cacd.jpg": {
       "rels": [
         "icon"
       ],
       "type": "image/x-icon"
     },
-    "https://eli.li/style.css?cache=1665545362885&extension=.css": {
+    "https://eli.li/style.css?cache=1665619060161&extension=.css": {
       "rels": [
         "stylesheet"
       ]
@@ -467,6 +461,16 @@
       ]
     },
     "https://micro.blog/eli": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://merveilles.town/@eli_oat": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://tenforward.social/@eli_oat": {
       "rels": [
         "me"
       ]
