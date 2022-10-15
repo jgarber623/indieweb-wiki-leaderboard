@@ -1,68 +1,144 @@
 {
   "items": [],
   "rels": {
-    "stylesheet": [
-      "https://cdn-a.omg.lol/css/profile/profile.css",
-      "https://profile.omg.lol/timapple/theme"
+    "alternate": [
+      "https://timapple.com/feed.xml",
+      "https://timapple.com/podcast.xml",
+      "https://timapple.com/feed.json"
+    ],
+    "EditURI": [
+      "https://timapple.com/rsd.xml"
     ],
     "me": [
-      "https://blog.timapple.com/",
-      "https://microblog.timapple.com/",
-      "https://twitter.com/timappleomglol",
-      "https:/@social.lol",
-      "https://github.com/sgtapple",
-      "https://lichess.org/@/TimScrawls"
+      "https://micro.blog/timapple",
+      "https://twitter.com/timapplecodes",
+      "https://github.com/timapplecodes"
+    ],
+    "authorization_endpoint": [
+      "https://micro.blog/indieauth/auth"
+    ],
+    "token_endpoint": [
+      "https://micro.blog/indieauth/token"
+    ],
+    "micropub": [
+      "https://micro.blog/micropub"
+    ],
+    "microsub": [
+      "https://micro.blog/microsub"
+    ],
+    "webmention": [
+      "https://micro.blog/webmention"
+    ],
+    "subscribe": [
+      "https://micro.blog/users/follow"
+    ],
+    "icon": [
+      "https://micro.blog/timapple/favicon.png"
+    ],
+    "shortcut": [
+      "https://micro.blog/timapple/favicon.png"
+    ],
+    "stylesheet": [
+      "https://timapple.com/css/style.css?0",
+      "https://timapple.com/custom.css?0",
+      "https://timapple.com/css/all.min.css"
     ]
   },
   "rel-urls": {
-    "https://cdn-a.omg.lol/css/profile/profile.css": {
+    "https://timapple.com/feed.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Tim Apple",
+      "type": "application/rss+xml"
+    },
+    "https://timapple.com/podcast.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Podcast",
+      "type": "application/rss+xml"
+    },
+    "https://timapple.com/feed.json": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Tim Apple",
+      "type": "application/json"
+    },
+    "https://timapple.com/rsd.xml": {
+      "rels": [
+        "EditURI"
+      ],
+      "type": "application/rsd+xml"
+    },
+    "https://micro.blog/timapple": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://twitter.com/timapplecodes": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://github.com/timapplecodes": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://micro.blog/indieauth/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://micro.blog/indieauth/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://micro.blog/micropub": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://micro.blog/microsub": {
+      "rels": [
+        "microsub"
+      ]
+    },
+    "https://micro.blog/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://micro.blog/users/follow": {
+      "rels": [
+        "subscribe"
+      ]
+    },
+    "https://micro.blog/timapple/favicon.png": {
+      "rels": [
+        "icon",
+        "shortcut"
+      ],
+      "type": "image/x-icon"
+    },
+    "https://timapple.com/css/style.css?0": {
       "rels": [
         "stylesheet"
       ]
     },
-    "https://profile.omg.lol/timapple/theme": {
+    "https://timapple.com/custom.css?0": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://timapple.com/css/all.min.css": {
       "rels": [
         "stylesheet"
       ]
-    },
-    "https://blog.timapple.com/": {
-      "rels": [
-        "me"
-      ],
-      "text": "Blah! Blah! Blog!"
-    },
-    "https://microblog.timapple.com/": {
-      "rels": [
-        "me"
-      ],
-      "text": "Micro.Blog"
-    },
-    "https://twitter.com/timappleomglol": {
-      "rels": [
-        "me"
-      ],
-      "title": "Twitter",
-      "text": "timappleomglol"
-    },
-    "https:/@social.lol": {
-      "rels": [
-        "me"
-      ],
-      "text": "timapple@social.lol"
-    },
-    "https://github.com/sgtapple": {
-      "rels": [
-        "me"
-      ],
-      "title": "GitHub",
-      "text": "sgtapple"
-    },
-    "https://lichess.org/@/TimScrawls": {
-      "rels": [
-        "me"
-      ],
-      "title": "Lichess",
-      "text": "TimScrawls"
     }
   }
 }

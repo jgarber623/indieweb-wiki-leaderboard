@@ -34,6 +34,31 @@
           ],
           "properties": {
             "url": [
+              "https://defer.cc/twitter-export/"
+            ],
+            "uid": [
+              "https://defer.cc/twitter-export/"
+            ],
+            "published": [
+              "2022-10-14 12:17:00"
+            ],
+            "content": [
+              {
+                "html": "<p>I published a Go application today to export the last tweets from your twitter timeline to your\nlocal hugo repository.</p>\n<p>You can find it here <a href=\"https://github.com/mnlwldr/twitter2hugo-export\">twitter2hugo-export</a></p>",
+                "value": "I published a Go application today to export the last tweets from your twitter timeline to your\nlocal hugo repository.You can find it here twitter2hugo-export"
+              }
+            ],
+            "name": [
+              "I published a Go application today to export the last tweets from your twitter timeline to your\nlocal hugo repository.You can find it here twitter2hugo-export"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "url": [
               "https://defer.cc/think-thats-okay/"
             ],
             "uid": [
@@ -134,6 +159,56 @@
           ],
           "properties": {
             "url": [
+              "https://defer.cc/paris-2/"
+            ],
+            "uid": [
+              "https://defer.cc/paris-2/"
+            ],
+            "published": [
+              "2022-10-01 13:22:10"
+            ],
+            "content": [
+              {
+                "html": "<p>About today</p>\n<p><img src=\"https://defer.cc/paris_2.jpg\" alt=\"Paris\"></p>",
+                "value": "About today Paris"
+              }
+            ],
+            "name": [
+              "About today Paris"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "url": [
+              "https://defer.cc/who-the-fuck-did-that/"
+            ],
+            "uid": [
+              "https://defer.cc/who-the-fuck-did-that/"
+            ],
+            "published": [
+              "2022-09-28 13:25:38"
+            ],
+            "content": [
+              {
+                "html": "<p><img src=\"https://defer.cc/FdvuPvCWAAAPiDN.jpg\" alt></p>",
+                "value": ""
+              }
+            ],
+            "name": [
+              ""
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "url": [
               "https://defer.cc/mute-retweets-for-everyone/"
             ],
             "uid": [
@@ -159,6 +234,31 @@
           ],
           "properties": {
             "url": [
+              "https://defer.cc/about-today-20220925/"
+            ],
+            "uid": [
+              "https://defer.cc/about-today-20220925/"
+            ],
+            "published": [
+              "2022-09-25 21:28:46"
+            ],
+            "content": [
+              {
+                "html": "<p><img src=\"https://defer.cc/FdiAG28X0AAA7lS.jpg\" alt></p>",
+                "value": ""
+              }
+            ],
+            "name": [
+              ""
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "url": [
               "https://defer.cc/loose-weight-difficult/"
             ],
             "uid": [
@@ -169,112 +269,12 @@
             ],
             "content": [
               {
-                "html": "<p>Lose Weight the Slow and Incredibly Difficult Way</p>\n<p><a href=\"https://nautil.us/lose-weight-the-slow-and-incredibly-difficult-way-239703/\">nautil.us</a></p>",
-                "value": "Lose Weight the Slow and Incredibly Difficult Waynautil.us"
+                "html": "<p>Today I learned you can lose 10 kilogram bodyweight by removing 85 percent of the Earth’s mass.</p>\n<p><a href=\"https://nautil.us/lose-weight-the-slow-and-incredibly-difficult-way-239703/\">Source</a></p>",
+                "value": "Today I learned you can lose 10 kilogram bodyweight by removing 85 percent of the Earth’s mass.Source"
               }
             ],
             "name": [
-              "Lose Weight the Slow and Incredibly Difficult Waynautil.us"
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "url": [
-              "https://defer.cc/shamazing/"
-            ],
-            "uid": [
-              "https://defer.cc/shamazing/"
-            ],
-            "published": [
-              "2022-03-09 10:20:00"
-            ],
-            "content": [
-              {
-                "html": "<p>Find the longest string or integer in a SHA1 Hash (or whatever).\nIt’s just sha-mazing and without any sense.</p>\n<div class=\"highlight\"><pre class=\"chroma\"><code class=\"language-go\" data-lang=\"go\"><span class=\"kn\">package</span> <span class=\"nx\">shamazing</span>\n\n<span class=\"kn\">import</span> <span class=\"p\">(</span>\n\t<span class=\"s\">\"regexp\"</span>\n\t<span class=\"s\">\"strconv\"</span>\n<span class=\"p\">)</span>\n\n<span class=\"c1\">// FindLongestString will retrieve a string like a SHA1, MD5 or whatever\n</span><span class=\"c1\">// and return the longest string (first one)\n</span><span class=\"c1\"></span><span class=\"kd\">func</span> <span class=\"nf\">FindLongestString</span><span class=\"p\">(</span><span class=\"nx\">str</span> <span class=\"kt\">string</span><span class=\"p\">)</span> <span class=\"kt\">string</span> <span class=\"p\">{</span>\n\t<span class=\"kd\">var</span> <span class=\"nx\">re</span> <span class=\"p\">=</span> <span class=\"nx\">regexp</span><span class=\"p\">.</span><span class=\"nf\">MustCompile</span><span class=\"p\">(</span><span class=\"s\">\"[a-zA-Z]+\"</span><span class=\"p\">)</span>\n\t<span class=\"kd\">var</span> <span class=\"nx\">values</span> <span class=\"p\">=</span> <span class=\"nx\">re</span><span class=\"p\">.</span><span class=\"nf\">FindAll</span><span class=\"p\">([]</span><span class=\"nb\">byte</span><span class=\"p\">(</span><span class=\"nx\">str</span><span class=\"p\">),</span> <span class=\"o\">-</span><span class=\"mi\">1</span><span class=\"p\">)</span>\n\n\t<span class=\"k\">return</span> <span class=\"nb\">string</span><span class=\"p\">(</span><span class=\"nf\">findLongest</span><span class=\"p\">(</span><span class=\"nx\">values</span><span class=\"p\">))</span>\n<span class=\"p\">}</span>\n\n<span class=\"c1\">// FindLongestInteger will retrieve a string like a SHA1, MD5 or whatever\n</span><span class=\"c1\">// and return longest integer (first one)\n</span><span class=\"c1\"></span><span class=\"kd\">func</span> <span class=\"nf\">FindLongestInteger</span><span class=\"p\">(</span><span class=\"nx\">str</span> <span class=\"kt\">string</span><span class=\"p\">)</span> <span class=\"p\">(</span><span class=\"kt\">int64</span><span class=\"p\">,</span> <span class=\"kt\">error</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n\t<span class=\"kd\">var</span> <span class=\"nx\">re</span> <span class=\"p\">=</span> <span class=\"nx\">regexp</span><span class=\"p\">.</span><span class=\"nf\">MustCompile</span><span class=\"p\">(</span><span class=\"s\">\"[0-9]+\"</span><span class=\"p\">)</span>\n\t<span class=\"kd\">var</span> <span class=\"nx\">values</span> <span class=\"p\">=</span> <span class=\"nx\">re</span><span class=\"p\">.</span><span class=\"nf\">FindAll</span><span class=\"p\">([]</span><span class=\"nb\">byte</span><span class=\"p\">(</span><span class=\"nx\">str</span><span class=\"p\">),</span> <span class=\"o\">-</span><span class=\"mi\">1</span><span class=\"p\">)</span>\n\t<span class=\"kd\">var</span> <span class=\"nx\">max</span> <span class=\"p\">=</span> <span class=\"nf\">findLongest</span><span class=\"p\">(</span><span class=\"nx\">values</span><span class=\"p\">)</span>\n\n\t<span class=\"kd\">var</span> <span class=\"nx\">a</span><span class=\"p\">,</span> <span class=\"nx\">err</span> <span class=\"p\">=</span> <span class=\"nx\">strconv</span><span class=\"p\">.</span><span class=\"nf\">Atoi</span><span class=\"p\">(</span><span class=\"nb\">string</span><span class=\"p\">(</span><span class=\"nx\">max</span><span class=\"p\">))</span>\n\t<span class=\"k\">if</span> <span class=\"nx\">err</span> <span class=\"o\">!=</span> <span class=\"kc\">nil</span> <span class=\"p\">{</span>\n\t\t<span class=\"k\">return</span> <span class=\"mi\">0</span><span class=\"p\">,</span> <span class=\"nx\">err</span>\n\t<span class=\"p\">}</span>\n\t<span class=\"k\">return</span> <span class=\"nb\">int64</span><span class=\"p\">(</span><span class=\"nx\">a</span><span class=\"p\">),</span> <span class=\"kc\">nil</span>\n<span class=\"p\">}</span>\n\n<span class=\"kd\">func</span> <span class=\"nf\">findLongest</span><span class=\"p\">(</span><span class=\"nx\">values</span> <span class=\"p\">[][]</span><span class=\"kt\">byte</span><span class=\"p\">)</span> <span class=\"p\">[]</span><span class=\"kt\">byte</span> <span class=\"p\">{</span>\n\t<span class=\"kd\">var</span> <span class=\"nx\">max</span> <span class=\"p\">[]</span><span class=\"kt\">byte</span>\n\t<span class=\"k\">for</span> <span class=\"nx\">_</span><span class=\"p\">,</span> <span class=\"nx\">value</span> <span class=\"o\">:=</span> <span class=\"k\">range</span> <span class=\"nx\">values</span> <span class=\"p\">{</span>\n\t\t<span class=\"k\">if</span> <span class=\"nb\">len</span><span class=\"p\">(</span><span class=\"nx\">value</span><span class=\"p\">)</span> <span class=\"p\">&gt;</span> <span class=\"nb\">len</span><span class=\"p\">(</span><span class=\"nx\">max</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n\t\t\t<span class=\"nx\">max</span> <span class=\"p\">=</span> <span class=\"nx\">value</span>\n\t\t<span class=\"p\">}</span>\n\t<span class=\"p\">}</span>\n\t<span class=\"k\">return</span> <span class=\"nx\">max</span>\n<span class=\"p\">}</span>\n</code></pre></div>",
-                "value": "Find the longest string or integer in a SHA1 Hash (or whatever).\nIt’s just sha-mazing and without any sense.package shamazing\n\nimport (\n\t\"regexp\"\n\t\"strconv\"\n)\n\n// FindLongestString will retrieve a string like a SHA1, MD5 or whatever\n// and return the longest string (first one)\nfunc FindLongestString(str string) string {\n\tvar re = regexp.MustCompile(\"[a-zA-Z]+\")\n\tvar values = re.FindAll([]byte(str), -1)\n\n\treturn string(findLongest(values))\n}\n\n// FindLongestInteger will retrieve a string like a SHA1, MD5 or whatever\n// and return longest integer (first one)\nfunc FindLongestInteger(str string) (int64, error) {\n\tvar re = regexp.MustCompile(\"[0-9]+\")\n\tvar values = re.FindAll([]byte(str), -1)\n\tvar max = findLongest(values)\n\n\tvar a, err = strconv.Atoi(string(max))\n\tif err != nil {\n\t\treturn 0, err\n\t}\n\treturn int64(a), nil\n}\n\nfunc findLongest(values [][]byte) []byte {\n\tvar max []byte\n\tfor _, value := range values {\n\t\tif len(value) > len(max) {\n\t\t\tmax = value\n\t\t}\n\t}\n\treturn max\n}"
-              }
-            ],
-            "name": [
-              "Find the longest string or integer in a SHA1 Hash (or whatever).\nIt’s just sha-mazing and without any sense.package shamazing\n\nimport (\n\t\"regexp\"\n\t\"strconv\"\n)\n\n// FindLongestString will retrieve a string like a SHA1, MD5 or whatever\n// and return the longest string (first one)\nfunc FindLongestString(str string) string {\n\tvar re = regexp.MustCompile(\"[a-zA-Z]+\")\n\tvar values = re.FindAll([]byte(str), -1)\n\n\treturn string(findLongest(values))\n}\n\n// FindLongestInteger will retrieve a string like a SHA1, MD5 or whatever\n// and return longest integer (first one)\nfunc FindLongestInteger(str string) (int64, error) {\n\tvar re = regexp.MustCompile(\"[0-9]+\")\n\tvar values = re.FindAll([]byte(str), -1)\n\tvar max = findLongest(values)\n\n\tvar a, err = strconv.Atoi(string(max))\n\tif err != nil {\n\t\treturn 0, err\n\t}\n\treturn int64(a), nil\n}\n\nfunc findLongest(values [][]byte) []byte {\n\tvar max []byte\n\tfor _, value := range values {\n\t\tif len(value) > len(max) {\n\t\t\tmax = value\n\t\t}\n\t}\n\treturn max\n}"
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "url": [
-              "https://defer.cc/coinbase-api/"
-            ],
-            "uid": [
-              "https://defer.cc/coinbase-api/"
-            ],
-            "published": [
-              "2022-02-16 10:11:00"
-            ],
-            "content": [
-              {
-                "html": "<p>I created a new package today to retrieve the current price for an crypto currency from <a href=\"https://coinbase.com/\">Coinbase</a>.</p>\n<p>I used this in another project and thought it will make sense to publish this as an own package.\nFor this, you don’t need a <a href=\"https://coinbase.com/\">Coinbase</a> account or something.</p>\n<p>You can find the package on <a href=\"https://github.com/mnlwldr/coinbase\">GitHub</a> and on <a href=\"https://pkg.go.dev/github.com/mnlwldr/coinbase\">pkg.go.dev</a>.</p>\n<p><a href=\"https://pkg.go.dev/github.com/mnlwldr/coinbase\"><img src=\"https://pkg.go.dev/badge/github.com/mnlwldr/coinbase.svg\" alt=\"Go Reference\"></a></p>",
-                "value": "I created a new package today to retrieve the current price for an crypto currency from Coinbase.I used this in another project and thought it will make sense to publish this as an own package.\nFor this, you don’t need a Coinbase account or something.You can find the package on GitHub and on pkg.go.dev. Go Reference"
-              }
-            ],
-            "name": [
-              "I created a new package today to retrieve the current price for an crypto currency from Coinbase.I used this in another project and thought it will make sense to publish this as an own package.\nFor this, you don’t need a Coinbase account or something.You can find the package on GitHub and on pkg.go.dev. Go Reference"
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "url": [
-              "https://defer.cc/payone/"
-            ],
-            "uid": [
-              "https://defer.cc/payone/"
-            ],
-            "published": [
-              "2022-02-14 10:20:00"
-            ],
-            "content": [
-              {
-                "html": "<p>I created a new package today to create a <a href=\"https://www.payone.com/\">Payone</a> request.</p>\n<p>You can find the package on <a href=\"https://github.com/mnlwldr/payone\">GitHub</a> and on <a href=\"https://pkg.go.dev/github.com/mnlwldr/payone\">pkg.on.dev</a>.^:s</p>\n<p><a href=\"https://pkg.go.dev/github.com/mnlwldr/payone\"><img src=\"https://pkg.go.dev/badge/github.com/mnlwldr/payone.svg\" alt=\"Go Reference\"></a></p>",
-                "value": "I created a new package today to create a Payone request.You can find the package on GitHub and on pkg.on.dev.^:s Go Reference"
-              }
-            ],
-            "name": [
-              "I created a new package today to create a Payone request.You can find the package on GitHub and on pkg.on.dev.^:s Go Reference"
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "url": [
-              "https://defer.cc/rsstohtml/"
-            ],
-            "uid": [
-              "https://defer.cc/rsstohtml/"
-            ],
-            "published": [
-              "2022-02-04 10:20:00"
-            ],
-            "content": [
-              {
-                "html": "<p>I build a tool today to generate a HTML page from several RSS feeds.\nInspired by <a href=\"https://engineeringblogs.xyz/\">engineeringblogs.xyz</a> (<a href=\"https://github.com/peterc/engblogs\">GitHub</a>).</p>\n<p><kbd>go run Reader.go example-urls &gt; example-output.html</kbd></p>\n<p>The generated HTML page will lool like <a href=\"https://htmlpreview.github.io/?https://github.com/mnlwldr/rss-reader/blob/main/example-output.html\">this</a>. You can find the code <a href=\"https://github.com/mnlwldr/rss-feeds-to-html/\">on GitHub</a>.</p>",
-                "value": "I build a tool today to generate a HTML page from several RSS feeds.\nInspired by engineeringblogs.xyz (GitHub).go run Reader.go example-urls > example-output.htmlThe generated HTML page will lool like this. You can find the code on GitHub."
-              }
-            ],
-            "name": [
-              "I build a tool today to generate a HTML page from several RSS feeds.\nInspired by engineeringblogs.xyz (GitHub).go run Reader.go example-urls > example-output.htmlThe generated HTML page will lool like this. You can find the code on GitHub."
+              "Today I learned you can lose 10 kilogram bodyweight by removing 85 percent of the Earth’s mass.Source"
             ]
           }
         }
@@ -301,7 +301,7 @@
       "https://defer.cc/"
     ],
     "alternate": [
-      "https://defer.cc/atom.xml"
+      "https://defer.cc/"
     ]
   },
   "rel-urls": {
@@ -339,13 +339,6 @@
       "rels": [
         "canonical"
       ]
-    },
-    "https://defer.cc/atom.xml": {
-      "rels": [
-        "alternate"
-      ],
-      "title": "notes from mnlwldr",
-      "type": "application/rss+xml"
     }
   }
 }
