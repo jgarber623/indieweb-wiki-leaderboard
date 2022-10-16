@@ -1,5 +1,58 @@
 {
   "items": [],
-  "rels": {},
-  "rel-urls": {}
+  "rels": {
+    "stylesheet": [
+      "https://itorres.net/css/main.css"
+    ],
+    "alternate": [
+      "https://itorres.net/index.xml"
+    ],
+    "me": [
+      "https://social.xin.cat/@i",
+      "https://github.com/itorres",
+      "https://www.linkedin.com/in/ignaciotorresmasdeu"
+    ],
+    "license": [
+      "http://creativecommons.org/licenses/by-nc/4.0/"
+    ]
+  },
+  "rel-urls": {
+    "https://itorres.net/css/main.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://itorres.net/index.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Ignacio Torres Masdeu",
+      "type": "application/rss+xml"
+    },
+    "https://social.xin.cat/@i": {
+      "rels": [
+        "me"
+      ],
+      "text": "Mastodon"
+    },
+    "https://github.com/itorres": {
+      "rels": [
+        "me"
+      ],
+      "text": "Github"
+    },
+    "https://www.linkedin.com/in/ignaciotorresmasdeu": {
+      "rels": [
+        "me"
+      ],
+      "text": "LinkedIn"
+    },
+    "http://creativecommons.org/licenses/by-nc/4.0/": {
+      "rels": [
+        "license"
+      ],
+      "text": "Creative Commons Attribution-NonCommercial 4.0 International License"
+    }
+  }
 }
