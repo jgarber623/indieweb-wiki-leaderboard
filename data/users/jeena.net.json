@@ -59,18 +59,18 @@
           }
         ],
         "url": [
-          "https://jeena.net/notes/1302"
+          "https://jeena.net/notes/1303"
         ],
         "published": [
-          "2022-10-08T06:18:00Z"
+          "2022-10-18T02:04:15Z"
         ],
         "updated": [
-          "2022-10-08T06:18:00Z"
+          "2022-10-18T02:04:15Z"
         ],
         "content": [
           {
-            "html": "<p></p>\n<p>After 8 years I finally took the time to upgrade my websites framework from rails 4.2 to rails 7.0.4 and I'm amazed how easy it was. I expected a lot of rewrites like back then between rails 2 and 3, but I only had to change 2 lines of code, remove the hard coded dependencies in my Gemfile, add two config files and rewrite my systemd service file. So most things outside of the code itself.</p>\n\n<p>Sadly I don't have any automated tests, so I had to test everything manually which took quite some time and I probably missed some bugs which will show up over time. I also wasn't able to test all the connections to the outside world like Twitter, Mastodon, indie-web, etc. but those are not really essential to the functionality of the website anyway, so I'll test it over time.</p>\n\n<p>Anyway, great success! And now I am not afraid of extending the functionality, I really want to add a picture album functionality and move over all my 50 albums and 4000 pictures from flickr to be able to host them myself instead.</p>",
-            "value": "After 8 years I finally took the time to upgrade my websites framework from rails 4.2 to rails 7.0.4 and I'm amazed how easy it was. I expected a lot of rewrites like back then between rails 2 and 3, but I only had to change 2 lines of code, remove the hard coded dependencies in my Gemfile, add two config files and rewrite my systemd service file. So most things outside of the code itself.\n\nSadly I don't have any automated tests, so I had to test everything manually which took quite some time and I probably missed some bugs which will show up over time. I also wasn't able to test all the connections to the outside world like Twitter, Mastodon, indie-web, etc. but those are not really essential to the functionality of the website anyway, so I'll test it over time.\n\nAnyway, great success! And now I am not afraid of extending the functionality, I really want to add a picture album functionality and move over all my 50 albums and 4000 pictures from flickr to be able to host them myself instead."
+            "html": "<p></p>\n<p>Nice, finally I was able to move away from the deprecated Paperclip gem to the build in ActiveStorage on my website. It wasn't very straight forward but now everything is up to date, so I don't need to be afraid of some outdated packages and security problems. Also I can finally start thinking how to implement a picture Album feature so I can move all my pictures from Flickr to here.</p>",
+            "value": "Nice, finally I was able to move away from the deprecated Paperclip gem to the build in ActiveStorage on my website. It wasn't very straight forward but now everything is up to date, so I don't need to be afraid of some outdated packages and security problems. Also I can finally start thinking how to implement a picture Album feature so I can move all my pictures from Flickr to here."
           }
         ]
       }
@@ -91,7 +91,7 @@
           "2020-05-15T17:24:34Z"
         ],
         "audio": [
-          "https://jeena.net/system/pods/files/000/000/024/original/JEE024-In-Japan.mp3?1589563473"
+          "https://jeena.net/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBOQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ea5e4dde9f315f3e33f698a39a009e45013d7ef2/JEE024-In-Japan.mp3"
         ],
         "name": [
           "In Japan\n          \n            \n\t\t      over 2 years ago\n\t\t      2020-05-15 17:24:34\n\t      \n                \n          My vacation in Japan with Luna."
@@ -190,7 +190,7 @@
       "https://jeena.net/"
     ],
     "stylesheet": [
-      "https://jeena.net/assets/application-a5331dde9d84bfb6129e2248da110d8cb24f29ee04b3c93766922a131a303666.css"
+      "https://jeena.net/assets/application-580e723c52bd483a1fbc88d1474085e7c09021cdb2dbf6929ff3e78b5b02b562.css"
     ],
     "feed": [
       "https://jeena.net/posts",
@@ -283,7 +283,7 @@
       ],
       "type": "text/plain"
     },
-    "https://jeena.net/assets/application-a5331dde9d84bfb6129e2248da110d8cb24f29ee04b3c93766922a131a303666.css": {
+    "https://jeena.net/assets/application-580e723c52bd483a1fbc88d1474085e7c09021cdb2dbf6929ff3e78b5b02b562.css": {
       "rels": [
         "stylesheet"
       ],

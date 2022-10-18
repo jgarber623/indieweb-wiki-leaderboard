@@ -1,59 +1,144 @@
 {
   "items": [],
   "rels": {
-    "icon": [
-      "https://dj.je/favicon.ico"
-    ],
-    "shortcut": [
-      "https://dj.je/favicon.ico"
-    ],
     "stylesheet": [
-      "https://dj.je/style.css",
-      "https://fonts.googleapis.com/css2?family=Inter:wght@300;600&family=Rubik:wght@400;700&display=swap"
+      "https://dj.je/static/css/main.css?v=60171e14458ae127defba5b89d95c01d"
     ],
-    "me": [
-      "mailto:contact@dj.je",
-      "https://github.com/djsime1"
+    "alternate": [
+      "https://dj.je/feed.json",
+      "https://dj.je/feed.rss",
+      "https://dj.je/feed.atom",
+      "https://dj.je/"
     ],
-    "pgpkey": [
-      "https://dj.je/pgp"
+    "icon": [
+      "https://dj.je/static/favicon.ico"
+    ],
+    "indieauth-metadata": [
+      "https://dj.je/.well-known/oauth-authorization-server"
+    ],
+    "authorization_endpoint": [
+      "https://dj.je/auth"
+    ],
+    "token_endpoint": [
+      "https://dj.je/token"
+    ],
+    "micropub": [
+      "https://dj.je/micropub"
+    ],
+    "nofollow": [
+      "https://github.com/djsime1/dj.je",
+      "https://activitypub.rocks/",
+      "https://creativecommons.org/licenses/by/4.0/",
+      "https://dj.je/feed.rss",
+      "https://dj.je/feed.atom",
+      "https://dj.je/feed.json",
+      "https://youtu.be/hqi2Jy0UMiA",
+      "https://xn--sr8hvo.ws/%F0%9F%94%8F%F0%9F%98%B2%F0%9F%92%BA/previous",
+      "https://xn--sr8hvo.ws/",
+      "https://xn--sr8hvo.ws/%F0%9F%94%8F%F0%9F%98%B2%F0%9F%92%BA/next"
     ]
   },
   "rel-urls": {
-    "https://dj.je/favicon.ico": {
-      "rels": [
-        "icon",
-        "shortcut"
-      ]
-    },
-    "https://dj.je/style.css": {
-      "rels": [
-        "stylesheet"
-      ],
-      "type": "text/css"
-    },
-    "https://fonts.googleapis.com/css2?family=Inter:wght@300;600&family=Rubik:wght@400;700&display=swap": {
+    "https://dj.je/static/css/main.css?v=60171e14458ae127defba5b89d95c01d": {
       "rels": [
         "stylesheet"
       ]
     },
-    "mailto:contact@dj.je": {
+    "https://dj.je/feed.json": {
       "rels": [
-        "me"
+        "alternate"
       ],
-      "text": "\n                        Email \n                        contact@dj.je\n                    "
+      "title": "djsime1's microblog",
+      "type": "application/json"
     },
-    "https://github.com/djsime1": {
+    "https://dj.je/feed.rss": {
       "rels": [
-        "me"
+        "alternate"
       ],
-      "text": "\n                        GitHub\n                        djsime1\n                    "
+      "title": "djsime1's microblog",
+      "type": "application/rss+xml"
     },
-    "https://dj.je/pgp": {
+    "https://dj.je/feed.atom": {
       "rels": [
-        "pgpkey"
+        "alternate"
       ],
-      "text": "\n                        PGP Key\n                        DB63:DF1E:806E:CB73\n                    "
+      "title": "djsime1's microblog",
+      "type": "application/atom+xml"
+    },
+    "https://dj.je/static/favicon.ico": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/x-icon"
+    },
+    "https://dj.je/.well-known/oauth-authorization-server": {
+      "rels": [
+        "indieauth-metadata"
+      ]
+    },
+    "https://dj.je/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://dj.je/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://dj.je/micropub": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://dj.je/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "ActivityPub profile",
+      "type": "application/activity+json"
+    },
+    "https://github.com/djsime1/dj.je": {
+      "rels": [
+        "nofollow"
+      ],
+      "text": "a microblog.pub fork"
+    },
+    "https://activitypub.rocks/": {
+      "rels": [
+        "nofollow"
+      ],
+      "text": "ActivityPub"
+    },
+    "https://creativecommons.org/licenses/by/4.0/": {
+      "rels": [
+        "nofollow"
+      ],
+      "text": "CC BY 4.0."
+    },
+    "https://youtu.be/hqi2Jy0UMiA": {
+      "rels": [
+        "nofollow"
+      ],
+      "text": "Please, try the fish."
+    },
+    "https://xn--sr8hvo.ws/%F0%9F%94%8F%F0%9F%98%B2%F0%9F%92%BA/previous": {
+      "rels": [
+        "nofollow"
+      ],
+      "text": "←"
+    },
+    "https://xn--sr8hvo.ws/": {
+      "rels": [
+        "nofollow"
+      ],
+      "text": "IndieWeb Webring"
+    },
+    "https://xn--sr8hvo.ws/%F0%9F%94%8F%F0%9F%98%B2%F0%9F%92%BA/next": {
+      "rels": [
+        "nofollow"
+      ],
+      "text": "→"
     }
   }
 }
