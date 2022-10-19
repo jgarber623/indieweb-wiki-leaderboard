@@ -34,6 +34,31 @@
           ],
           "properties": {
             "url": [
+              "https://defer.cc/somafm/"
+            ],
+            "uid": [
+              "https://defer.cc/somafm/"
+            ],
+            "published": [
+              "2022-10-18 06:52:00"
+            ],
+            "content": [
+              {
+                "html": "<p>Listen to <a href=\"https://somafm.com/\">somafm</a> from the command line.</p>\n<div class=\"highlight\"><pre class=\"chroma\"><code class=\"language-sh\" data-lang=\"sh\"><span class=\"cp\">#!/bin/sh\n</span><span class=\"cp\"></span>\n<span class=\"nv\">DEFCON</span><span class=\"o\">=</span><span class=\"s2\">\"http://ice1.somafm.com/defcon-128-aac\"</span>\n<span class=\"nv\">GROOVE</span><span class=\"o\">=</span><span class=\"s2\">\"http://ice1.somafm.com/groovesalad-128-aac\"</span>\n<span class=\"nv\">DEEP_SPACE_ONE</span><span class=\"o\">=</span><span class=\"s2\">\"http://ice1.somafm.com/deepspaceone-128-aac\"</span>\n<span class=\"nv\">COVERS</span><span class=\"o\">=</span><span class=\"s2\">\"http://ice1.somafm.com/covers-128-aac\"</span>\n\n<span class=\"k\">case</span> <span class=\"nv\">$1</span> in\n        <span class=\"s2\">\"defcon\"</span><span class=\"o\">)</span> <span class=\"nv\">URL</span><span class=\"o\">=</span><span class=\"nv\">$DEFCON</span> <span class=\"p\">;;</span>\n        <span class=\"s2\">\"groove\"</span><span class=\"o\">)</span> <span class=\"nv\">URL</span><span class=\"o\">=</span><span class=\"nv\">$GROOVE</span> <span class=\"p\">;;</span>\n        <span class=\"s2\">\"space\"</span><span class=\"o\">)</span> <span class=\"nv\">URL</span><span class=\"o\">=</span><span class=\"nv\">$DEEP_SPACE_ONE</span> <span class=\"p\">;;</span>\n        <span class=\"s2\">\"covers\"</span><span class=\"o\">)</span> <span class=\"nv\">URL</span><span class=\"o\">=</span><span class=\"nv\">$COVERS</span> <span class=\"p\">;;</span>\n<span class=\"k\">esac</span>\n\n<span class=\"nb\">echo</span> <span class=\"s2\">\"Listen to </span><span class=\"nv\">$URL</span><span class=\"s2\">\"</span>\nmpv <span class=\"nv\">$URL</span> 2&gt; /dev/null <span class=\"p\">|</span> awk <span class=\"s1\">'/title/ { s = \"\"; for (i = 2; i &lt;= NF; i++) s = s $i \" \"; cmd=\"(date +'</span>%H:%M:%S<span class=\"s1\">')\"; cmd | getline d; print d,\"|\",s; close(cmd) }'</span>\n</code></pre></div>\n<p>Don’t forget to <a href=\"https://somafm.com/support/\">support</a></p>",
+                "value": "Listen to somafm from the command line.#!/bin/sh\n\nDEFCON=\"http://ice1.somafm.com/defcon-128-aac\"\nGROOVE=\"http://ice1.somafm.com/groovesalad-128-aac\"\nDEEP_SPACE_ONE=\"http://ice1.somafm.com/deepspaceone-128-aac\"\nCOVERS=\"http://ice1.somafm.com/covers-128-aac\"\n\ncase $1 in\n        \"defcon\") URL=$DEFCON ;;\n        \"groove\") URL=$GROOVE ;;\n        \"space\") URL=$DEEP_SPACE_ONE ;;\n        \"covers\") URL=$COVERS ;;\nesac\n\necho \"Listen to $URL\"\nmpv $URL 2> /dev/null | awk '/title/ { s = \"\"; for (i = 2; i <= NF; i++) s = s $i \" \"; cmd=\"(date +'%H:%M:%S')\"; cmd | getline d; print d,\"|\",s; close(cmd) }'\nDon’t forget to support"
+              }
+            ],
+            "name": [
+              "Listen to somafm from the command line.#!/bin/sh\n\nDEFCON=\"http://ice1.somafm.com/defcon-128-aac\"\nGROOVE=\"http://ice1.somafm.com/groovesalad-128-aac\"\nDEEP_SPACE_ONE=\"http://ice1.somafm.com/deepspaceone-128-aac\"\nCOVERS=\"http://ice1.somafm.com/covers-128-aac\"\n\ncase $1 in\n        \"defcon\") URL=$DEFCON ;;\n        \"groove\") URL=$GROOVE ;;\n        \"space\") URL=$DEEP_SPACE_ONE ;;\n        \"covers\") URL=$COVERS ;;\nesac\n\necho \"Listen to $URL\"\nmpv $URL 2> /dev/null | awk '/title/ { s = \"\"; for (i = 2; i <= NF; i++) s = s $i \" \"; cmd=\"(date +'%H:%M:%S')\"; cmd | getline d; print d,\"|\",s; close(cmd) }'\nDon’t forget to support"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "url": [
               "https://defer.cc/twitter-export/"
             ],
             "uid": [
@@ -250,31 +275,6 @@
             ],
             "name": [
               ""
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "url": [
-              "https://defer.cc/loose-weight-difficult/"
-            ],
-            "uid": [
-              "https://defer.cc/loose-weight-difficult/"
-            ],
-            "published": [
-              "2022-09-24 16:05:09"
-            ],
-            "content": [
-              {
-                "html": "<p>Today I learned that you can lose 10 kilogram bodyweight by removing 85 percent of the Earth’s mass.</p>\n<p><a href=\"https://nautil.us/lose-weight-the-slow-and-incredibly-difficult-way-239703/\">Source</a></p>",
-                "value": "Today I learned that you can lose 10 kilogram bodyweight by removing 85 percent of the Earth’s mass.Source"
-              }
-            ],
-            "name": [
-              "Today I learned that you can lose 10 kilogram bodyweight by removing 85 percent of the Earth’s mass.Source"
             ]
           }
         }

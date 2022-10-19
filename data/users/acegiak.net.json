@@ -1,5 +1,113 @@
 {
-  "items": [],
-  "rels": {},
-  "rel-urls": {}
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "photo": [
+          "https://acegiak.net/static/icon.png"
+        ],
+        "url": [
+          "https://acegiak.net/"
+        ],
+        "uid": [
+          "https://acegiak.net/"
+        ],
+        "name": [
+          "@ash@acegiak.net"
+        ],
+        "note": [
+          "Gameplay & Narrative Designer, Writer, Occasional Streamer, Anarchoqueer, and Goblin Queen."
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "stylesheet": [
+      "https://acegiak.net/static/css/main.css?v=bf8f6c43990163ac1713297fb09be5ab"
+    ],
+    "alternate": [
+      "https://acegiak.net/feed.json",
+      "https://acegiak.net/feed.rss",
+      "https://acegiak.net/feed.atom",
+      "https://acegiak.net/"
+    ],
+    "icon": [
+      "https://acegiak.net/static/favicon.ico"
+    ],
+    "indieauth-metadata": [
+      "https://acegiak.net/.well-known/oauth-authorization-server"
+    ],
+    "authorization_endpoint": [
+      "https://acegiak.net/auth"
+    ],
+    "token_endpoint": [
+      "https://acegiak.net/token"
+    ],
+    "micropub": [
+      "https://acegiak.net/micropub"
+    ]
+  },
+  "rel-urls": {
+    "https://acegiak.net/static/css/main.css?v=bf8f6c43990163ac1713297fb09be5ab": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://acegiak.net/feed.json": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Ash McAllan's microblog",
+      "type": "application/json"
+    },
+    "https://acegiak.net/feed.rss": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Ash McAllan's microblog",
+      "type": "application/rss+xml"
+    },
+    "https://acegiak.net/feed.atom": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Ash McAllan's microblog",
+      "type": "application/atom+xml"
+    },
+    "https://acegiak.net/static/favicon.ico": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/x-icon"
+    },
+    "https://acegiak.net/.well-known/oauth-authorization-server": {
+      "rels": [
+        "indieauth-metadata"
+      ]
+    },
+    "https://acegiak.net/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://acegiak.net/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://acegiak.net/micropub": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://acegiak.net/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "ActivityPub profile",
+      "type": "application/activity+json"
+    }
+  }
 }

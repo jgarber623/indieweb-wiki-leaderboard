@@ -1,33 +1,23 @@
 {
   "items": [],
   "rels": {
-    "preload": [
-      "https://www.amitgawande.com/app.min.css",
-      "https://www.amitgawande.com/theme.png",
-      "https://www.amitgawande.com/twitter.svg",
-      "https://www.amitgawande.com/github.svg",
-      "https://www.amitgawande.com/instagram.svg",
-      "https://www.amitgawande.com/microdotblog.svg",
-      "https://www.amitgawande.com/buymeacoffee.svg"
+    "icon": [
+      "https://micro.blog/amit/favicon.png"
+    ],
+    "shortcut": [
+      "https://micro.blog/amit/favicon.png"
+    ],
+    "apple-touch-icon": [
+      "https://micro.blog/amit/favicon.png"
     ],
     "stylesheet": [
-      "https://www.amitgawande.com/app.min.css",
-      "https://www.amitgawande.com/custom.css?1665922082",
+      "https://www.amitgawande.com/css/style.min.4d3cc3ed107c462640c45582f52b350c00b60f71e7e3fa045939c957357a3a2e.css",
+      "https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap",
       "https://www.amitgawande.com/assets/css/poststats.css",
       "https://www.amitgawande.com/assets/bigfoot/dist/bigfoot-default.css"
     ],
-    "icon": [
-      "https://www.amitgawande.com/uploads/2020/262374b94f.jpg"
-    ],
-    "shortcut": [
-      "https://www.amitgawande.com/uploads/2020/262374b94f.jpg"
-    ],
-    "apple-touch-icon": [
-      "https://www.amitgawande.com/uploads/2020/262374b94f.jpg"
-    ],
-    "alternate": [
-      "https://www.amitgawande.com/feed.xml",
-      "https://www.amitgawande.com/feed.json"
+    "preconnect": [
+      "https://fonts.gstatic.com/"
     ],
     "me": [
       "https://micro.blog/amit"
@@ -51,72 +41,35 @@
       "https://micro.blog/users/follow"
     ],
     "noopener": [
-      "https://gohugo.io/",
-      "https://micro.blog/"
+      "https://twitter.com/_am1t",
+      "https://github.com/am1t",
+      "https://www.linkedin.com/amitgawande",
+      "https://micro.blog/amit",
+      "https://buymeacoffee.com/amitgawande"
     ]
   },
   "rel-urls": {
-    "https://www.amitgawande.com/app.min.css": {
-      "rels": [
-        "preload",
-        "stylesheet"
-      ]
-    },
-    "https://www.amitgawande.com/custom.css?1665922082": {
-      "rels": [
-        "stylesheet"
-      ]
-    },
-    "https://www.amitgawande.com/theme.png": {
-      "rels": [
-        "preload"
-      ]
-    },
-    "https://www.amitgawande.com/twitter.svg": {
-      "rels": [
-        "preload"
-      ]
-    },
-    "https://www.amitgawande.com/github.svg": {
-      "rels": [
-        "preload"
-      ]
-    },
-    "https://www.amitgawande.com/instagram.svg": {
-      "rels": [
-        "preload"
-      ]
-    },
-    "https://www.amitgawande.com/microdotblog.svg": {
-      "rels": [
-        "preload"
-      ]
-    },
-    "https://www.amitgawande.com/buymeacoffee.svg": {
-      "rels": [
-        "preload"
-      ]
-    },
-    "https://www.amitgawande.com/uploads/2020/262374b94f.jpg": {
+    "https://micro.blog/amit/favicon.png": {
       "rels": [
         "icon",
         "shortcut"
       ],
       "type": "image/x-icon"
     },
-    "https://www.amitgawande.com/feed.xml": {
+    "https://www.amitgawande.com/css/style.min.4d3cc3ed107c462640c45582f52b350c00b60f71e7e3fa045939c957357a3a2e.css": {
       "rels": [
-        "alternate"
-      ],
-      "title": "Excursions",
-      "type": "application/rss+xml"
+        "stylesheet"
+      ]
     },
-    "https://www.amitgawande.com/feed.json": {
+    "https://fonts.gstatic.com/": {
       "rels": [
-        "alternate"
-      ],
-      "title": "Excursions",
-      "type": "application/json"
+        "preconnect"
+      ]
+    },
+    "https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap": {
+      "rels": [
+        "stylesheet"
+      ]
     },
     "https://micro.blog/amit": {
       "rels": [
@@ -164,17 +117,29 @@
       ],
       "type": "text/css"
     },
-    "https://gohugo.io/": {
+    "https://twitter.com/_am1t": {
       "rels": [
         "noopener"
       ],
-      "text": "Hugo️️"
+      "title": "Twitter"
     },
-    "https://micro.blog/": {
+    "https://github.com/am1t": {
       "rels": [
         "noopener"
       ],
-      "text": "Micro.blog"
+      "title": "GitHub"
+    },
+    "https://www.linkedin.com/amitgawande": {
+      "rels": [
+        "noopener"
+      ],
+      "title": "LinkedIn"
+    },
+    "https://buymeacoffee.com/amitgawande": {
+      "rels": [
+        "noopener"
+      ],
+      "title": "BuyMeACoffe"
     }
   }
 }

@@ -1,20 +1,14 @@
 {
   "items": [],
   "rels": {
+    "stylesheet": [
+      "https://ze.fontainhas.com/wp-content/cache/autoptimize/css/autoptimize_1b3b59e3e1f1d45824a6266da3759bae.css"
+    ],
     "profile": [
       "http://gmpg.org/xfn/11"
     ],
     "pingback": [
       "https://ze.fontainhas.com/xmlrpc.php"
-    ],
-    "stylesheet": [
-      "https://ze.fontainhas.com/wp-content/cache/autoptimize/css/autoptimize_1b3b59e3e1f1d45824a6266da3759bae.css"
-    ],
-    "canonical": [
-      "https://ze.fontainhas.com/"
-    ],
-    "next": [
-      "https://ze.fontainhas.com/page/2/"
     ],
     "dns-prefetch": [
       "https://twemoji.classicpress.net/"
@@ -26,7 +20,10 @@
     ],
     "alternate": [
       "https://ze.fontainhas.com/feed/",
-      "https://ze.fontainhas.com/comments/feed/"
+      "https://ze.fontainhas.com/comments/feed/",
+      "https://ze.fontainhas.com/static/feed/",
+      "https://ze.fontainhas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fze.fontainhas.com%2F",
+      "https://ze.fontainhas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fze.fontainhas.com%2F&format=xml"
     ],
     "https://api.w.org/": [
       "https://ze.fontainhas.com/wp-json/"
@@ -37,37 +34,27 @@
     "wlwmanifest": [
       "https://ze.fontainhas.com/wp-includes/wlwmanifest.xml"
     ],
+    "canonical": [
+      "https://ze.fontainhas.com/"
+    ],
+    "shortlink": [
+      "https://ze.fontainhas.com/"
+    ],
     "icon": [
       "https://ze.fontainhas.com/wp-content/uploads/2015/04/Z-blavatar-554270e4v1_site_icon-150x150.png",
       "https://ze.fontainhas.com/wp-content/uploads/2015/04/Z-blavatar-554270e4v1_site_icon.png"
     ],
     "apple-touch-icon-precomposed": [
       "https://ze.fontainhas.com/wp-content/uploads/2015/04/Z-blavatar-554270e4v1_site_icon.png"
-    ],
-    "bookmark": [
-      "https://ze.fontainhas.com/esta-tudo-bem/",
-      "https://ze.fontainhas.com/no-worries/",
-      "https://ze.fontainhas.com/almost/",
-      "https://ze.fontainhas.com/das-ganze-eigene-leben/",
-      "https://ze.fontainhas.com/insufficiencies/",
-      "https://ze.fontainhas.com/todos-os-nadas/",
-      "https://ze.fontainhas.com/uma-linha-reta/",
-      "https://ze.fontainhas.com/fica-ai/",
-      "https://ze.fontainhas.com/desgoverno/",
-      "https://ze.fontainhas.com/not-a-flaw/",
-      "https://ze.fontainhas.com/pronto/",
-      "https://ze.fontainhas.com/as-memorias-depois/",
-      "https://ze.fontainhas.com/anoes/",
-      "https://ze.fontainhas.com/as-perguntas-certas/",
-      "https://ze.fontainhas.com/mamihlapinatapai/",
-      "https://ze.fontainhas.com/dobra/",
-      "https://ze.fontainhas.com/nos/",
-      "https://ze.fontainhas.com/tao-longe/",
-      "https://ze.fontainhas.com/aesthetische-erziehung/",
-      "https://ze.fontainhas.com/agora/"
     ]
   },
   "rel-urls": {
+    "https://ze.fontainhas.com/wp-content/cache/autoptimize/css/autoptimize_1b3b59e3e1f1d45824a6266da3759bae.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
     "http://gmpg.org/xfn/11": {
       "rels": [
         "profile"
@@ -76,22 +63,6 @@
     "https://ze.fontainhas.com/xmlrpc.php": {
       "rels": [
         "pingback"
-      ]
-    },
-    "https://ze.fontainhas.com/wp-content/cache/autoptimize/css/autoptimize_1b3b59e3e1f1d45824a6266da3759bae.css": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "all"
-    },
-    "https://ze.fontainhas.com/": {
-      "rels": [
-        "canonical"
-      ]
-    },
-    "https://ze.fontainhas.com/page/2/": {
-      "rels": [
-        "next"
       ]
     },
     "https://twemoji.classicpress.net/": {
@@ -128,6 +99,13 @@
       "title": "Zé » Comments Feed",
       "type": "application/rss+xml"
     },
+    "https://ze.fontainhas.com/static/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Zé » Zé Comments Feed",
+      "type": "application/rss+xml"
+    },
     "https://ze.fontainhas.com/wp-json/": {
       "rels": [
         "https://api.w.org/"
@@ -146,6 +124,23 @@
       ],
       "type": "application/wlwmanifest+xml"
     },
+    "https://ze.fontainhas.com/": {
+      "rels": [
+        "canonical"
+      ]
+    },
+    "https://ze.fontainhas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fze.fontainhas.com%2F": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/json+oembed"
+    },
+    "https://ze.fontainhas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fze.fontainhas.com%2F&format=xml": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "text/xml+oembed"
+    },
     "https://ze.fontainhas.com/wp-content/uploads/2015/04/Z-blavatar-554270e4v1_site_icon-150x150.png": {
       "rels": [
         "icon"
@@ -155,126 +150,6 @@
       "rels": [
         "icon"
       ]
-    },
-    "https://ze.fontainhas.com/esta-tudo-bem/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Está Tudo Bem"
-    },
-    "https://ze.fontainhas.com/no-worries/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "No Worries"
-    },
-    "https://ze.fontainhas.com/almost/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Almost"
-    },
-    "https://ze.fontainhas.com/das-ganze-eigene-leben/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Das ganze eigene Leben"
-    },
-    "https://ze.fontainhas.com/insufficiencies/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Insufficiencies"
-    },
-    "https://ze.fontainhas.com/todos-os-nadas/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Todos Os Nadas"
-    },
-    "https://ze.fontainhas.com/uma-linha-reta/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Uma Linha Reta"
-    },
-    "https://ze.fontainhas.com/fica-ai/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Fica Aí"
-    },
-    "https://ze.fontainhas.com/desgoverno/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Desgoverno"
-    },
-    "https://ze.fontainhas.com/not-a-flaw/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Not A Flaw"
-    },
-    "https://ze.fontainhas.com/pronto/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Pronto"
-    },
-    "https://ze.fontainhas.com/as-memorias-depois/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "As Memórias Depois"
-    },
-    "https://ze.fontainhas.com/anoes/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Anões"
-    },
-    "https://ze.fontainhas.com/as-perguntas-certas/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "As perguntas certas"
-    },
-    "https://ze.fontainhas.com/mamihlapinatapai/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Mamihlapinatapai"
-    },
-    "https://ze.fontainhas.com/dobra/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Dobra"
-    },
-    "https://ze.fontainhas.com/nos/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Nós"
-    },
-    "https://ze.fontainhas.com/tao-longe/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Tão Longe"
-    },
-    "https://ze.fontainhas.com/aesthetische-erziehung/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Ästhetische Erziehung"
-    },
-    "https://ze.fontainhas.com/agora/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Agora"
     }
   }
 }
