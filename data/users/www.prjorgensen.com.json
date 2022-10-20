@@ -12,6 +12,74 @@
           ],
           "properties": {
             "name": [
+              "Scripting with sudo on Mac – BrettTerpstra.com"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "name": [
+                    "Paul"
+                  ]
+                },
+                "value": "Paul"
+              }
+            ],
+            "content": [
+              {
+                "html": "I was fiddling about with a script I need to run from time to time but need escalated privileges to run. Editing /etc/sudoers isn’t an option, so I took to the Reddit. I found this:\n<p><a href=\"https://brettterpstra.com/2021/04/06/scripting-with-sudo-on-mac/\">Scripting with sudo on Mac – BrettTerpstra.com</a>:</p>\n<blockquote>\n<p>\nThe gist is this: when you need to script a tool that requires administrator privileges, you want to make the process as automated as possible without creating glaring security problems (like including a password in plain text). …</p>\n<p>Fortunately, macOS has tools built in to make this work. We’ll use a combination of macOS’s Keychain Access and the security command to make running superuser tasks both convenient and secure.\n</p>\n</blockquote>\n<p>Yay! I already use Keychain for managing my SSH and GPG keys, so this definitely falls in with that.</p>\n<p>Here’s the pertinent article bits, but read the whole thing for screenshots and how this is used in Brett’s excellent Batch app.</p>\n<blockquote>\n<p>\nThe first step is to create a Keychain entry for the password you want to use. In our case, this will be your system password.<br>Open Keychain Access in /Applications/Utilities. Unlock your login keychain if needed, then click the “Create new” button in the toolbar. Give the item a unique name, any account name you want, and then enter the password and click “Add.” …</p>\n<p>Now this password entry can be accessed using the command line tool security, which we can use in a script. If the keychain is unlocked, the password will be retrieved without interaction. If it’s locked, you’ll get a dialog asking for your keychain password when the script runs.<br>In our script, we’ll call security and give it the name assigned to the keychain item (-l), and the account name (-a). The -w flag tells it to return only the password (otherwise there’s a lot of data it spits out). …</p>\n<p>To incorporate this into a shell script, we’ll just use tr to trim the newline off it and save it to a variable, and then pipe it to sudo. Using sudo -S tells sudo to read the password from STDIN (the result of the pipe). …</p>\n<p>The first time security is used from a script, you’ll get a prompt to allow access. Be sure to click “Always Allow” to avoid getting the same prompt every time.\n</p>\n</blockquote>",
+                "value": "I was fiddling about with a script I need to run from time to time but need escalated privileges to run. Editing /etc/sudoers isn’t an option, so I took to the Reddit. I found this:\nScripting with sudo on Mac – BrettTerpstra.com:\n\nThe gist is this: when you need to script a tool that requires administrator privileges, you want to make the process as automated as possible without creating glaring security problems (like including a password in plain text). …\nFortunately, macOS has tools built in to make this work. We’ll use a combination of macOS’s Keychain Access and the security command to make running superuser tasks both convenient and secure.\n\nYay! I already use Keychain for managing my SSH and GPG keys, so this definitely falls in with that.\nHere’s the pertinent article bits, but read the whole thing for screenshots and how this is used in Brett’s excellent Batch app.\n\nThe first step is to create a Keychain entry for the password you want to use. In our case, this will be your system password.Open Keychain Access in /Applications/Utilities. Unlock your login keychain if needed, then click the “Create new” button in the toolbar. Give the item a unique name, any account name you want, and then enter the password and click “Add.” …\nNow this password entry can be accessed using the command line tool security, which we can use in a script. If the keychain is unlocked, the password will be retrieved without interaction. If it’s locked, you’ll get a dialog asking for your keychain password when the script runs.In our script, we’ll call security and give it the name assigned to the keychain item (-l), and the account name (-a). The -w flag tells it to return only the password (otherwise there’s a lot of data it spits out). …\nTo incorporate this into a shell script, we’ll just use tr to trim the newline off it and save it to a variable, and then pipe it to sudo. Using sudo -S tells sudo to read the password from STDIN (the result of the pipe). …\nThe first time security is used from a script, you’ll get a prompt to allow access. Be sure to click “Always Allow” to avoid getting the same prompt every time."
+              }
+            ],
+            "syndication": [
+              "https://telegram.me/prjorg",
+              "http://line.me/"
+            ]
+          },
+          "id": "post-4685"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              " The iPad Kind Of Sucks Now"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "name": [
+                    "Paul"
+                  ]
+                },
+                "value": "Paul"
+              }
+            ],
+            "content": [
+              {
+                "html": "<a>The iPad Kind Of Sucks Now</a>:\n<blockquote><p>\nI’ve been mulling over these thoughts for months now, but resisted on posting them because of the backlash. I know I should never do that, and feel free to post what I want, but you know what the internet is like. Following yesterday’s <a href=\"https://www.apple.com/newsroom/2022/10/apple-unveils-completely-redesigned-ipad-in-four-vibrant-colors/\">meagre offering</a> following 18 months of development, the time has come. The iPad sucks now, and that’s a real shame.\n</p></blockquote>\n<p>Indeed. Apple’s releases are largely uninspired, especially in the mobile device space. For me, the best device they’ve released is the most recent iPad Mini (2021 or 6, depending how you look at it). USB-C? 🗸 Apple Pencil 2? 🗸 Improved display?  🗸 Touch-ID?  🗸 Portable?  🗸 Good storage option?  🗸</p>\n<p>The iPhone feels to me like it is treading water, especially since I don’t care a smidge about the camera. And the camera is the only thing that seems to change. The iPhone XS Max I have is more than sufficient, and the iPhone SE (2020) works perfectly for my work phone.</p>\n<p>Apple Watch is also meh. It also has incremental upgrades but it still seems like the software isn’t up to the task, mostly due to the app ecosystem stagnating. I still use a S1/2 when my main S5 charges, and it is totally fine (random powering off not withstanding).</p>\n<blockquote><p>\nThe answer to the age-old question of “what iPad should I buy” is now “last year’s model”. Should anyone dare to ask what tablet they can get to do some work on might need some follow-up questions, but in reality the correct reply is “a Surface Pro”. That hurts a little.\n</p></blockquote>\n<p>While I agree with Greg’s iPad thoughts throughout, it doesn’t hurt me at all to recommend the Microsoft option. The Surface Pro is a great device and Windows has come a long way.</p>\n<p>And, anyway, I’m loving the new MacBook Air.</p>",
+                "value": "The iPad Kind Of Sucks Now:\n\nI’ve been mulling over these thoughts for months now, but resisted on posting them because of the backlash. I know I should never do that, and feel free to post what I want, but you know what the internet is like. Following yesterday’s meagre offering following 18 months of development, the time has come. The iPad sucks now, and that’s a real shame.\n\nIndeed. Apple’s releases are largely uninspired, especially in the mobile device space. For me, the best device they’ve released is the most recent iPad Mini (2021 or 6, depending how you look at it). USB-C? 🗸 Apple Pencil 2? 🗸 Improved display?  🗸 Touch-ID?  🗸 Portable?  🗸 Good storage option?  🗸\nThe iPhone feels to me like it is treading water, especially since I don’t care a smidge about the camera. And the camera is the only thing that seems to change. The iPhone XS Max I have is more than sufficient, and the iPhone SE (2020) works perfectly for my work phone.\nApple Watch is also meh. It also has incremental upgrades but it still seems like the software isn’t up to the task, mostly due to the app ecosystem stagnating. I still use a S1/2 when my main S5 charges, and it is totally fine (random powering off not withstanding).\n\nThe answer to the age-old question of “what iPad should I buy” is now “last year’s model”. Should anyone dare to ask what tablet they can get to do some work on might need some follow-up questions, but in reality the correct reply is “a Surface Pro”. That hurts a little.\n\nWhile I agree with Greg’s iPad thoughts throughout, it doesn’t hurt me at all to recommend the Microsoft option. The Surface Pro is a great device and Windows has come a long way.\nAnd, anyway, I’m loving the new MacBook Air."
+              }
+            ],
+            "syndication": [
+              "http://line.me/",
+              "https://telegram.me/prjorg"
+            ]
+          },
+          "id": "post-4683"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               ""
             ],
             "author": [
@@ -282,91 +350,6 @@
             ]
           },
           "id": "post-4642"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "REQ: Local music media library organization app"
-            ],
-            "photo": [
-              {
-                "value": "https://secure.gravatar.com/avatar/d3a505f55d11383b1a25e05fd40b003c?s=65&r=r",
-                "srcset": {
-                  "1x": "data:image/gif;base64"
-                },
-                "alt": ""
-              },
-              {
-                "value": "https://secure.gravatar.com/avatar/d3a505f55d11383b1a25e05fd40b003c?s=65&r=r",
-                "srcset": {
-                  "2x": "https://secure.gravatar.com/avatar/d3a505f55d11383b1a25e05fd40b003c?s=130&r=r"
-                },
-                "alt": ""
-              }
-            ],
-            "content": [
-              {
-                "html": "Dear Lazyweb,\n<p>What app is best to help me organize my far flung music files? My music library is a mess, and I need it to be less of one. This is very much a 90’s to early 10’s question, yet here I am.</p>\n<p>Requirements:</p>\n<ul>\n<li>Not reliant on Apple iTunes/Music or Amazon Music or Google or similar</li>\n<li>Not reliant on Spotify or Pandora or similar streamer</li>\n<li>Handles open and closed (but DRM-free) formats (mp3, ogg, FLAC, ALAC, etc.)</li>\n<li>Properly tags files</li>\n<li>Actually organizes (moves files into a file structure)</li>\n<li>When uncertain, asks or leaves files to be reviewed (non-destructive)</li>\n</ul>\n<p>I buy music media – LPs, CDs, cassettes. Some are new; some are used. New stuff I source from <a href=\"https://bandcamp.com/\">Bandcamp</a> or artist sites or local stores.</p>\n<p>※ I host a live radio show on <a href=\"https://wawl.org/\">WAWL.org</a> every Thursday from 18:00-21:00 Eastern US Time (America/Detroit). There’s a story to it, one I will tell another day. I’ll also make a bigger deal about the show.</p>",
-                "value": "Dear Lazyweb,\nWhat app is best to help me organize my far flung music files? My music library is a mess, and I need it to be less of one. This is very much a 90’s to early 10’s question, yet here I am.\nRequirements:\n\nNot reliant on Apple iTunes/Music or Amazon Music or Google or similar\nNot reliant on Spotify or Pandora or similar streamer\nHandles open and closed (but DRM-free) formats (mp3, ogg, FLAC, ALAC, etc.)\nProperly tags files\nActually organizes (moves files into a file structure)\nWhen uncertain, asks or leaves files to be reviewed (non-destructive)\n\nI buy music media – LPs, CDs, cassettes. Some are new; some are used. New stuff I source from Bandcamp or artist sites or local stores.\n※ I host a live radio show on WAWL.org every Thursday from 18:00-21:00 Eastern US Time (America/Detroit). There’s a story to it, one I will tell another day. I’ll also make a bigger deal about the show."
-              }
-            ],
-            "syndication": [
-              "http://line.me/",
-              "https://telegram.me/prjorg"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "name": [
-                    "Paul"
-                  ]
-                },
-                "value": "Paul"
-              }
-            ]
-          },
-          "id": "post-4619"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              ""
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "name": [
-                    "Paul"
-                  ]
-                },
-                "value": "Paul"
-              }
-            ],
-            "content": [
-              {
-                "html": "I want Stanly Tucci to write and narrate the audiobook of a science fiction book where he describes alien elements like he describes food.",
-                "value": "I want Stanly Tucci to write and narrate the audiobook of a science fiction book where he describes alien elements like he describes food."
-              }
-            ],
-            "syndication": [
-              "http://line.me/",
-              "https://telegram.me/prjorg",
-              "https://twitter.com/prjorgensen/status/1540103965756489728"
-            ]
-          },
-          "id": "post-4601"
         }
       ]
     }
@@ -452,6 +435,8 @@
       "https://www.prjorgensen.com/"
     ],
     "bookmark": [
+      "https://www.prjorgensen.com/archives/4685",
+      "https://www.prjorgensen.com/archives/4683",
       "https://www.prjorgensen.com/archives/4675",
       "https://www.prjorgensen.com/archives/4670",
       "https://www.prjorgensen.com/archives/4666",
@@ -459,12 +444,35 @@
       "https://www.prjorgensen.com/archives/4654",
       "https://www.prjorgensen.com/archives/4649",
       "https://www.prjorgensen.com/archives/4646",
-      "https://www.prjorgensen.com/archives/4642",
-      "https://www.prjorgensen.com/archives/4619",
-      "https://www.prjorgensen.com/archives/4601"
+      "https://www.prjorgensen.com/archives/4642"
     ],
     "author": [
       "https://www.prjorgensen.com/archives/author/prjorgensen_h7tmb5"
+    ],
+    "category": [
+      "https://www.prjorgensen.com/archives/category/tech",
+      "https://www.prjorgensen.com/archives/category/business",
+      "https://www.prjorgensen.com/archives/category/i84d",
+      "https://www.prjorgensen.com/archives/category/books",
+      "https://www.prjorgensen.com/archives/category/culture",
+      "https://www.prjorgensen.com/archives/category/personal",
+      "https://www.prjorgensen.com/archives/category/travel"
+    ],
+    "tag": [
+      "https://www.prjorgensen.com/archives/category/tech",
+      "https://www.prjorgensen.com/archives/category/business",
+      "https://www.prjorgensen.com/archives/category/i84d",
+      "https://www.prjorgensen.com/archives/tag/newsletter",
+      "https://www.prjorgensen.com/archives/tag/rss",
+      "https://www.prjorgensen.com/archives/category/books",
+      "https://www.prjorgensen.com/archives/category/culture",
+      "https://www.prjorgensen.com/archives/tag/chattanooga",
+      "https://www.prjorgensen.com/archives/tag/moonriverfestival",
+      "https://www.prjorgensen.com/archives/tag/music",
+      "https://www.prjorgensen.com/archives/tag/thenationalband",
+      "https://www.prjorgensen.com/archives/category/personal",
+      "https://www.prjorgensen.com/archives/category/travel",
+      "https://www.prjorgensen.com/archives/tag/apple"
     ],
     "noopener": [
       "https://link.mail.bloombergbusiness.com/click/29177578.1197476/aHR0cHM6Ly93d3cuYmxvb21iZXJnLmNvbS9uZXdzL2FydGljbGVzLzIwMjItMDktMjYvYXJlLW1lZXRpbmdzLWEtd2FzdGUtb2YtdGltZS1wb2ludGxlc3MtcGxhbnMtY29zdC1iaWctY29tcGFuaWVzLTEwMG0_Y21waWQ9QkJEMDkyNjIyX0JJWiZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9zb3VyY2U9bmV3c2xldHRlciZ1dG1fdGVybT0yMjA5MjYmdXRtX2NhbXBhaWduPWJsb29tYmVyZ2RhaWx5/62c5bb75720e75165b018239B6045fe89",
@@ -483,31 +491,6 @@
       "https://en.wikipedia.org/wiki/Wilco",
       "https://en.wikipedia.org/wiki/Joy_Division",
       "https://wordpress.org/"
-    ],
-    "category": [
-      "https://www.prjorgensen.com/archives/category/business",
-      "https://www.prjorgensen.com/archives/category/i84d",
-      "https://www.prjorgensen.com/archives/category/tech",
-      "https://www.prjorgensen.com/archives/category/books",
-      "https://www.prjorgensen.com/archives/category/culture",
-      "https://www.prjorgensen.com/archives/category/personal",
-      "https://www.prjorgensen.com/archives/category/travel"
-    ],
-    "tag": [
-      "https://www.prjorgensen.com/archives/category/business",
-      "https://www.prjorgensen.com/archives/category/i84d",
-      "https://www.prjorgensen.com/archives/category/tech",
-      "https://www.prjorgensen.com/archives/tag/newsletter",
-      "https://www.prjorgensen.com/archives/tag/rss",
-      "https://www.prjorgensen.com/archives/category/books",
-      "https://www.prjorgensen.com/archives/category/culture",
-      "https://www.prjorgensen.com/archives/tag/chattanooga",
-      "https://www.prjorgensen.com/archives/tag/moonriverfestival",
-      "https://www.prjorgensen.com/archives/tag/music",
-      "https://www.prjorgensen.com/archives/tag/thenationalband",
-      "https://www.prjorgensen.com/archives/category/personal",
-      "https://www.prjorgensen.com/archives/category/travel",
-      "https://www.prjorgensen.com/archives/tag/apple"
     ],
     "noreferrer": [
       "https://www.papajojoradio.com/",
@@ -772,10 +755,11 @@
       ],
       "text": "Cautelous"
     },
-    "https://www.prjorgensen.com/archives/4675": {
+    "https://www.prjorgensen.com/archives/4685": {
       "rels": [
         "bookmark"
-      ]
+      ],
+      "text": "Scripting with sudo on Mac – BrettTerpstra.com"
     },
     "https://www.prjorgensen.com/archives/author/prjorgensen_h7tmb5": {
       "rels": [
@@ -783,6 +767,24 @@
       ],
       "title": "View all posts by <span class='p-author h-card'>Paul</span>",
       "text": "Paul"
+    },
+    "https://www.prjorgensen.com/archives/category/tech": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "tech"
+    },
+    "https://www.prjorgensen.com/archives/4683": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": " The iPad Kind Of Sucks Now"
+    },
+    "https://www.prjorgensen.com/archives/4675": {
+      "rels": [
+        "bookmark"
+      ]
     },
     "https://link.mail.bloombergbusiness.com/click/29177578.1197476/aHR0cHM6Ly93d3cuYmxvb21iZXJnLmNvbS9uZXdzL2FydGljbGVzLzIwMjItMDktMjYvYXJlLW1lZXRpbmdzLWEtd2FzdGUtb2YtdGltZS1wb2ludGxlc3MtcGxhbnMtY29zdC1iaWctY29tcGFuaWVzLTEwMG0_Y21waWQ9QkJEMDkyNjIyX0JJWiZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9zb3VyY2U9bmV3c2xldHRlciZ1dG1fdGVybT0yMjA5MjYmdXRtX2NhbXBhaWduPWJsb29tYmVyZ2RhaWx5/62c5bb75720e75165b018239B6045fe89": {
       "rels": [
@@ -809,13 +811,6 @@
         "bookmark"
       ],
       "text": "Taking Things Internal, Part ichi:"
-    },
-    "https://www.prjorgensen.com/archives/category/tech": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "tech"
     },
     "https://www.prjorgensen.com/archives/tag/newsletter": {
       "rels": [
@@ -1020,17 +1015,6 @@
         "bookmark"
       ],
       "text": "Anniversary Edition"
-    },
-    "https://www.prjorgensen.com/archives/4619": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "REQ: Local music media library organization app"
-    },
-    "https://www.prjorgensen.com/archives/4601": {
-      "rels": [
-        "bookmark"
-      ]
     },
     "https://wordpress.org/": {
       "rels": [

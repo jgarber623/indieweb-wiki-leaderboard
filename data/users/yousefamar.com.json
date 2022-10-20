@@ -1,18 +1,78 @@
 {
-  "items": [],
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "photo": [
+          {
+            "value": "https://yousefamar.com/headshot-square.jpg",
+            "alt": "A headshot of Yousef Amar"
+          }
+        ],
+        "name": [
+          "Yousef\n        Amar"
+        ],
+        "given-name": [
+          "Yousef"
+        ],
+        "family-name": [
+          "Amar"
+        ],
+        "note": [
+          "CTO and co-founder of Krew, PhD in networked systems"
+        ],
+        "url": [
+          "https://yousefamar.com/"
+        ],
+        "uid": [
+          "https://yousefamar.com/"
+        ],
+        "email": [
+          "mailto:yousef@amar.io"
+        ],
+        "tel": [
+          "+44 7845 443890"
+        ],
+        "job-title": [
+          "CTO"
+        ],
+        "role": [
+          "CTO"
+        ],
+        "org": [
+          "Krew Live Ltd"
+        ]
+      }
+    }
+  ],
   "rels": {
     "stylesheet": [
-      "https://cdn.jsdelivr.net/npm/prismjs@1.25.0/themes/prism-tomorrow.css",
       "https://cdn.jsdelivr.net/npm/water.css@2/out/dark.min.css",
       "https://yousefamar.com/memo/assets/styles/index.css"
+    ],
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "webmention": [
+      "https://webmention.io/yousefamar.com/webmention"
+    ],
+    "pingback": [
+      "https://webmention.io/yousefamar.com/xmlrpc"
+    ],
+    "microsub": [
+      "https://aperture.p3k.io/microsub/790"
+    ],
+    "me": [
+      "https://yousefamar.com/",
+      "tel:+447845443890"
     ]
   },
   "rel-urls": {
-    "https://cdn.jsdelivr.net/npm/prismjs@1.25.0/themes/prism-tomorrow.css": {
-      "rels": [
-        "stylesheet"
-      ]
-    },
     "https://cdn.jsdelivr.net/npm/water.css@2/out/dark.min.css": {
       "rels": [
         "stylesheet"
@@ -22,6 +82,42 @@
       "rels": [
         "stylesheet"
       ]
+    },
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://webmention.io/yousefamar.com/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://webmention.io/yousefamar.com/xmlrpc": {
+      "rels": [
+        "pingback"
+      ]
+    },
+    "https://aperture.p3k.io/microsub/790": {
+      "rels": [
+        "microsub"
+      ]
+    },
+    "https://yousefamar.com/": {
+      "rels": [
+        "me"
+      ]
+    },
+    "tel:+447845443890": {
+      "rels": [
+        "me"
+      ],
+      "text": "+44 7845 443890"
     }
   }
 }

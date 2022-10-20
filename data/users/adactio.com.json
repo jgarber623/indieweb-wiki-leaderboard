@@ -40,6 +40,173 @@
         "h-entry"
       ],
       "properties": {
+        "name": [
+          "JavaScript"
+        ],
+        "url": [
+          "https://adactio.com/journal/19531"
+        ],
+        "content": [
+          {
+            "html": "<p>A recurring theme in my writing and talks is “lay off the JavaScript, people!” But I have to make a conscious effort to specify that I mean <em>client-side</em> JavaScript.</p>\n\n<p>I thought it would be obvious from the context that I was talking about the copious amounts of JavaScript being shipped to end users to download, parse, and execute. But nothing’s ever really obvious. If I don’t explicitly say JavaScript <em>in the browser</em>, then someone inevitably thinks I’m having a go at JavaScript, <em>the language</em>.</p>\n\n<p>I have absolutely nothing against JavaScript the language. Just like I have nothing against Python or Ruby or any other language that you might write with on your machine or your web server. But as soon as you deliver bytes over the wire, I start having opinions. It just so happens that JavaScript is the universal language for client-side coding so that’s why I call for restraint with JavaScript specifically.</p>\n\n<p>There was a time when JavaScript only existed in web browsers. That changed with Node. Now it’s possible to write code for your web server and code for web browsers using the same language. Very handy!</p>\n\n<p>But just because it’s the same language doesn’t mean you should treat it the same in both circumstance. <a href=\"https://remysharp.com/2022/10/13/two-javascripts\">As Remy puts it</a>:</p>\n\n<blockquote>\n  <p>There are two JavaScripts.</p>\n  \n  <p>One for the server - where you can go wild.</p>\n  \n  <p>One for the client - that should be thoughtful and careful.</p>\n</blockquote>\n\n<p>I was reading something recently that referred to <a href=\"https://www.11ty.dev/\">Eleventy</a> as a JavaScript library. It really brought me up short. I mean, on the one hand, yes, it’s a library of code and it’s written in JavaScript. It is absolutely technically correct to call it a JavaScript library.</p>\n\n<p>But in my mind, a JavaScript library is something you ship to web browsers—jQuery, React, Vue, and so on. Whereas Eleventy executes its code in order to generate HTML and <em>that’s</em> what gets sent to end users. Conceptually, it’s like the opposite of a JavaScript library. Eleventy does its work before any user requests a URL—JavaScript libraries do their work after a user requests a URL.</p>\n\n<p>To me it seems obvious that there should an entirely different mindset for writing code intended for a web browser. But nothing’s ever really obvious.</p>\n\n<p>I remember when Node was getting really popular and <code>npm</code> came along as a way to manage all the bundles of code that people were assembling in their Node programmes. Makes total sense. But then I thought I heard about people using <code>npm</code> to do the same thing for client-side code. “That can’t be right!” I thought. I must’ve misunderstood. So <a href=\"https://adactio.com/journal/16138\">I talked to someone from <code>npm</code></a> and explained how I must be misunderstanding something.</p>\n\n<p>But it turned out that people really were treating client-side JavaScript no different than server-side JavaScript. People really were pulling in megabytes of other people’s code to ship to end users so that they could, I dunno, left pad numbers or something.</p>\n\n<p>Listen, I don’t care what you get up to in the privacy of your own codebase. But don’t poison the well of the web with profligate <em>client-side</em> JavaScript.</p>",
+            "value": "A recurring theme in my writing and talks is “lay off the JavaScript, people!” But I have to make a conscious effort to specify that I mean client-side JavaScript.\n\nI thought it would be obvious from the context that I was talking about the copious amounts of JavaScript being shipped to end users to download, parse, and execute. But nothing’s ever really obvious. If I don’t explicitly say JavaScript in the browser, then someone inevitably thinks I’m having a go at JavaScript, the language.\n\nI have absolutely nothing against JavaScript the language. Just like I have nothing against Python or Ruby or any other language that you might write with on your machine or your web server. But as soon as you deliver bytes over the wire, I start having opinions. It just so happens that JavaScript is the universal language for client-side coding so that’s why I call for restraint with JavaScript specifically.\n\nThere was a time when JavaScript only existed in web browsers. That changed with Node. Now it’s possible to write code for your web server and code for web browsers using the same language. Very handy!\n\nBut just because it’s the same language doesn’t mean you should treat it the same in both circumstance. As Remy puts it:\n\n\n  There are two JavaScripts.\n  \n  One for the server - where you can go wild.\n  \n  One for the client - that should be thoughtful and careful.\n\n\nI was reading something recently that referred to Eleventy as a JavaScript library. It really brought me up short. I mean, on the one hand, yes, it’s a library of code and it’s written in JavaScript. It is absolutely technically correct to call it a JavaScript library.\n\nBut in my mind, a JavaScript library is something you ship to web browsers—jQuery, React, Vue, and so on. Whereas Eleventy executes its code in order to generate HTML and that’s what gets sent to end users. Conceptually, it’s like the opposite of a JavaScript library. Eleventy does its work before any user requests a URL—JavaScript libraries do their work after a user requests a URL.\n\nTo me it seems obvious that there should an entirely different mindset for writing code intended for a web browser. But nothing’s ever really obvious.\n\nI remember when Node was getting really popular and npm came along as a way to manage all the bundles of code that people were assembling in their Node programmes. Makes total sense. But then I thought I heard about people using npm to do the same thing for client-side code. “That can’t be right!” I thought. I must’ve misunderstood. So I talked to someone from npm and explained how I must be misunderstanding something.\n\nBut it turned out that people really were treating client-side JavaScript no different than server-side JavaScript. People really were pulling in megabytes of other people’s code to ship to end users so that they could, I dunno, left pad numbers or something.\n\nListen, I don’t care what you get up to in the privacy of your own codebase. But don’t poison the well of the web with profligate client-side JavaScript."
+          }
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "50.83258878"
+              ],
+              "longitude": [
+                "-0.11817124"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "published": [
+          "2022-10-19T14:49:06Z"
+        ],
+        "category": [
+          "javascript",
+          "frontend",
+          "development",
+          "backend",
+          "clients",
+          "servers",
+          "programming",
+          "coding",
+          "performance",
+          "node",
+          "npm",
+          "libraries",
+          "frameworks",
+          "evaluating",
+          "technology"
+        ],
+        "syndication": [
+          "https://adactio.medium.com/7dc09f41ae6e"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://tink.uk/why-we-need-css-speech/\">\nWhy we need CSS Speech - Tink - Léonie Watson\n</a>\n</h3>\n\n<p>I was talking about this with Léonie just yesterday. I, for one, would <em>love</em> to have CSS speech support. You know who else would love it? Content designers!</p>\n\n<blockquote>\n  <p>In these days of voice interaction on every platform, there is a growing expectation that it should be possible to design that experience just like we can the visual experience. In the same way an organisation chooses a logo and colour palette for its website, it stands to reason that they may also choose a particular voice that represents their brand.</p>\n</blockquote>\n\n<p>It’s wild that there’s no way to do this on the web.</p>",
+            "value": "Why we need CSS Speech - Tink - Léonie Watson\n\n\n\nI was talking about this with Léonie just yesterday. I, for one, would love to have CSS speech support. You know who else would love it? Content designers!\n\n\n  In these days of voice interaction on every platform, there is a growing expectation that it should be possible to design that experience just like we can the visual experience. In the same way an organisation chooses a logo and colour palette for its website, it stands to reason that they may also choose a particular voice that represents their brand.\n\n\nIt’s wild that there’s no way to do this on the web."
+          }
+        ],
+        "name": [
+          "Why we need CSS Speech - Tink - Léonie Watson"
+        ],
+        "bookmark-of": [
+          "https://tink.uk/why-we-need-css-speech/"
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "50.83254458"
+              ],
+              "longitude": [
+                "-0.11820546"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/links/19530"
+        ],
+        "published": [
+          "2022-10-19T14:01:45Z"
+        ],
+        "category": [
+          "css",
+          "speech",
+          "aural",
+          "stylesheets",
+          "specs",
+          "standards",
+          "audio",
+          "ux",
+          "experience",
+          "branding"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://chriscoyier.net/2022/10/17/the-proprietary-syndication-formats/\">\nThe Proprietary Syndication Formats - Chris Coyier\n</a>\n</h3>\n\n<blockquote>\n  <p>Guess which format is going to outlast all these proprietary syndication formats. I’d say RSS, which I believe to be true, but really, it’s HTML.</p>\n</blockquote>",
+            "value": "The Proprietary Syndication Formats - Chris Coyier\n\n\n\n\n  Guess which format is going to outlast all these proprietary syndication formats. I’d say RSS, which I believe to be true, but really, it’s HTML."
+          }
+        ],
+        "name": [
+          "The Proprietary Syndication Formats - Chris Coyier"
+        ],
+        "bookmark-of": [
+          "https://chriscoyier.net/2022/10/17/the-proprietary-syndication-formats/"
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "50.83248935"
+              ],
+              "longitude": [
+                "-0.11815141"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/links/19529"
+        ],
+        "published": [
+          "2022-10-19T07:17:56Z"
+        ],
+        "category": [
+          "syndication",
+          "formats",
+          "distribution",
+          "google",
+          "amp",
+          "facebook",
+          "articles",
+          "apple",
+          "news",
+          "rss",
+          "html",
+          "proprietary",
+          "standards"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
         "content": [
           {
             "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://longnow.org/ideas/02022/10/13/envision-andrew-dana-hudson/\">\nEnvisioning Our Shared Storm with Andrew Dana Hudson - Long Now\n</a>\n</h3>\n\n<p>This observation feels spot-on to me:</p>\n\n<blockquote>\n  <p>The shift that I noticed, totally anecdotally, is literary writers are starting to write more dystopian climate futures and science fiction writers are starting to write about climate solutions.</p>\n</blockquote>",
@@ -919,149 +1086,6 @@
     },
     {
       "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "photo": [
-          {
-            "value": "https://adactio.com/images/uploaded/19509/small.jpg",
-            "srcset": {
-              "320w": "https://adactio.com/images/uploaded/19509/small.jpg",
-              "480w": "https://adactio.com/images/uploaded/19509/medium.jpg",
-              "800w": "https://adactio.com/images/uploaded/19509/large.jpg"
-            },
-            "alt": "Checked in at The Brunswick. Ye Vagabonds — with Jessica"
-          }
-        ],
-        "content": [
-          {
-            "html": "<p>Checked in at The Brunswick. Ye Vagabonds — with Jessica</p>",
-            "value": "Checked in at The Brunswick. Ye Vagabonds — with Jessica"
-          }
-        ],
-        "name": [
-          "Checked in at The Brunswick. Ye Vagabonds — with Jessica"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.82421489"
-              ],
-              "longitude": [
-                "-0.16253211"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/notes/19509"
-        ],
-        "published": [
-          "2022-10-08T21:34:53Z"
-        ],
-        "syndication": [
-          "https://www.swarmapp.com/user/112073/checkin/6341ece94b1e5a65e80d4d21"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "photo": [
-          {
-            "value": "https://adactio.com/images/uploaded/19508/small.jpg",
-            "srcset": {
-              "320w": "https://adactio.com/images/uploaded/19508/small.jpg",
-              "480w": "https://adactio.com/images/uploaded/19508/medium.jpg",
-              "800w": "https://adactio.com/images/uploaded/19508/large.jpg"
-            },
-            "alt": "Lots of fiddles and one mandolin resting on tables."
-          }
-        ],
-        "content": [
-          {
-            "html": "<p>A break between tunes.</p>",
-            "value": "A break between tunes."
-          }
-        ],
-        "name": [
-          "A break between tunes."
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.82975833"
-              ],
-              "longitude": [
-                "-0.11649444"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/notes/19508"
-        ],
-        "published": [
-          "2022-10-08T15:27:29Z"
-        ],
-        "syndication": [
-          "https://twitter.com/adactio/status/1578769081984962560",
-          "https://www.instagram.com/p/CjdTDS9tlPw/"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "content": [
-          {
-            "html": "<p>Reading Patternmaster by Octavia E. Butler.</p>",
-            "value": "Reading Patternmaster by Octavia E. Butler."
-          }
-        ],
-        "name": [
-          "Reading Patternmaster by Octavia E. Butler."
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83253369"
-              ],
-              "longitude": [
-                "-0.11815021"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/notes/19506"
-        ],
-        "published": [
-          "2022-10-08T14:09:15Z"
-        ]
-      }
-    },
-    {
-      "type": [
         "h-card"
       ],
       "properties": {
@@ -1800,6 +1824,9 @@
       "https://adactio.com/includes/css/print.css"
     ],
     "bookmark": [
+      "https://adactio.com/journal/19531",
+      "https://adactio.com/links/19530",
+      "https://adactio.com/links/19529",
       "https://adactio.com/links/19528",
       "https://adactio.com/links/19527",
       "https://adactio.com/links/19526",
@@ -1816,12 +1843,46 @@
       "https://adactio.com/notes/19513",
       "https://adactio.com/notes/19512",
       "https://adactio.com/links/19511",
-      "https://adactio.com/links/19510",
-      "https://adactio.com/notes/19509",
-      "https://adactio.com/notes/19508",
-      "https://adactio.com/notes/19506"
+      "https://adactio.com/links/19510"
     ],
     "tag": [
+      "https://adactio.com/tags/javascript",
+      "https://adactio.com/tags/frontend",
+      "https://adactio.com/tags/development",
+      "https://adactio.com/tags/backend",
+      "https://adactio.com/tags/clients",
+      "https://adactio.com/tags/servers",
+      "https://adactio.com/tags/programming",
+      "https://adactio.com/tags/coding",
+      "https://adactio.com/tags/performance",
+      "https://adactio.com/tags/node",
+      "https://adactio.com/tags/npm",
+      "https://adactio.com/tags/libraries",
+      "https://adactio.com/tags/frameworks",
+      "https://adactio.com/tags/evaluating",
+      "https://adactio.com/tags/technology",
+      "https://adactio.com/tags/css",
+      "https://adactio.com/tags/speech",
+      "https://adactio.com/tags/aural",
+      "https://adactio.com/tags/stylesheets",
+      "https://adactio.com/tags/specs",
+      "https://adactio.com/tags/standards",
+      "https://adactio.com/tags/audio",
+      "https://adactio.com/tags/ux",
+      "https://adactio.com/tags/experience",
+      "https://adactio.com/tags/branding",
+      "https://adactio.com/tags/syndication",
+      "https://adactio.com/tags/formats",
+      "https://adactio.com/tags/distribution",
+      "https://adactio.com/tags/google",
+      "https://adactio.com/tags/amp",
+      "https://adactio.com/tags/facebook",
+      "https://adactio.com/tags/articles",
+      "https://adactio.com/tags/apple",
+      "https://adactio.com/tags/news",
+      "https://adactio.com/tags/rss",
+      "https://adactio.com/tags/html",
+      "https://adactio.com/tags/proprietary",
       "https://adactio.com/tags/cli-fi",
       "https://adactio.com/tags/sci-fi",
       "https://adactio.com/tags/sciencefiction",
@@ -1834,11 +1895,7 @@
       "https://adactio.com/tags/dystopias",
       "https://adactio.com/tags/button",
       "https://adactio.com/tags/component",
-      "https://adactio.com/tags/frontend",
-      "https://adactio.com/tags/development",
       "https://adactio.com/tags/markup",
-      "https://adactio.com/tags/html",
-      "https://adactio.com/tags/javascript",
       "https://adactio.com/tags/accessibility",
       "https://adactio.com/tags/a11y",
       "https://adactio.com/tags/aria",
@@ -1851,8 +1908,6 @@
       "https://adactio.com/tags/thinking",
       "https://adactio.com/tags/declarative",
       "https://adactio.com/tags/design",
-      "https://adactio.com/tags/evaluating",
-      "https://adactio.com/tags/technology",
       "https://adactio.com/tags/trends",
       "https://adactio.com/tags/material",
       "https://adactio.com/tags/web",
@@ -1865,24 +1920,17 @@
       "https://adactio.com/tags/enhancement",
       "https://adactio.com/tags/rendering",
       "https://adactio.com/tags/hydration",
-      "https://adactio.com/tags/frameworks",
-      "https://adactio.com/tags/libraries",
-      "https://adactio.com/tags/backend",
       "https://adactio.com/tags/pdf",
       "https://adactio.com/tags/download",
       "https://adactio.com/tags/handbook",
       "https://adactio.com/tags/customer",
       "https://adactio.com/tags/onboarding",
-      "https://adactio.com/tags/ux",
-      "https://adactio.com/tags/branding",
       "https://adactio.com/tags/research",
       "https://adactio.com/tags/surveys",
       "https://adactio.com/tags/journeymapping",
       "https://adactio.com/tags/cx",
       "https://adactio.com/tags/wired",
       "https://adactio.com/tags/redesign",
-      "https://adactio.com/tags/standards",
-      "https://adactio.com/tags/css",
       "https://adactio.com/tags/history",
       "https://adactio.com/tags/process",
       "https://adactio.com/tags/variable",
@@ -1899,7 +1947,6 @@
       "https://adactio.com/tags/forms",
       "https://adactio.com/tags/bunnyfonts",
       "https://adactio.com/tags/webfonts",
-      "https://adactio.com/tags/google",
       "https://adactio.com/tags/replacement",
       "https://adactio.com/tags/alternative",
       "https://adactio.com/tags/tracking",
@@ -1930,13 +1977,11 @@
       "https://adactio.com/tags/software"
     ],
     "syndication": [
+      "https://adactio.medium.com/7dc09f41ae6e",
       "https://twitter.com/adactio/status/1580541181548957696",
       "https://www.instagram.com/p/Cjp5BBqtZsA/",
       "https://adactio.medium.com/e10304608537",
-      "https://www.swarmapp.com/user/112073/checkin/634471b9404aae189e750f63",
-      "https://www.swarmapp.com/user/112073/checkin/6341ece94b1e5a65e80d4d21",
-      "https://twitter.com/adactio/status/1578769081984962560",
-      "https://www.instagram.com/p/CjdTDS9tlPw/"
+      "https://www.swarmapp.com/user/112073/checkin/634471b9404aae189e750f63"
     ],
     "next": [
       "https://adactio.com/?start=20"
@@ -2327,6 +2372,252 @@
       ],
       "text": "music"
     },
+    "https://adactio.com/journal/19531": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n2:49pm\n\n"
+    },
+    "https://adactio.com/tags/javascript": {
+      "rels": [
+        "tag"
+      ],
+      "text": "javascript"
+    },
+    "https://adactio.com/tags/frontend": {
+      "rels": [
+        "tag"
+      ],
+      "text": "frontend"
+    },
+    "https://adactio.com/tags/development": {
+      "rels": [
+        "tag"
+      ],
+      "text": "development"
+    },
+    "https://adactio.com/tags/backend": {
+      "rels": [
+        "tag"
+      ],
+      "text": "backend"
+    },
+    "https://adactio.com/tags/clients": {
+      "rels": [
+        "tag"
+      ],
+      "text": "clients"
+    },
+    "https://adactio.com/tags/servers": {
+      "rels": [
+        "tag"
+      ],
+      "text": "servers"
+    },
+    "https://adactio.com/tags/programming": {
+      "rels": [
+        "tag"
+      ],
+      "text": "programming"
+    },
+    "https://adactio.com/tags/coding": {
+      "rels": [
+        "tag"
+      ],
+      "text": "coding"
+    },
+    "https://adactio.com/tags/performance": {
+      "rels": [
+        "tag"
+      ],
+      "text": "performance"
+    },
+    "https://adactio.com/tags/node": {
+      "rels": [
+        "tag"
+      ],
+      "text": "node"
+    },
+    "https://adactio.com/tags/npm": {
+      "rels": [
+        "tag"
+      ],
+      "text": "npm"
+    },
+    "https://adactio.com/tags/libraries": {
+      "rels": [
+        "tag"
+      ],
+      "text": "libraries"
+    },
+    "https://adactio.com/tags/frameworks": {
+      "rels": [
+        "tag"
+      ],
+      "text": "frameworks"
+    },
+    "https://adactio.com/tags/evaluating": {
+      "rels": [
+        "tag"
+      ],
+      "text": "evaluating"
+    },
+    "https://adactio.com/tags/technology": {
+      "rels": [
+        "tag"
+      ],
+      "text": "technology"
+    },
+    "https://adactio.medium.com/7dc09f41ae6e": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "Medium"
+    },
+    "https://adactio.com/links/19530": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n2:01pm\n\n"
+    },
+    "https://adactio.com/tags/css": {
+      "rels": [
+        "tag"
+      ],
+      "text": "css"
+    },
+    "https://adactio.com/tags/speech": {
+      "rels": [
+        "tag"
+      ],
+      "text": "speech"
+    },
+    "https://adactio.com/tags/aural": {
+      "rels": [
+        "tag"
+      ],
+      "text": "aural"
+    },
+    "https://adactio.com/tags/stylesheets": {
+      "rels": [
+        "tag"
+      ],
+      "text": "stylesheets"
+    },
+    "https://adactio.com/tags/specs": {
+      "rels": [
+        "tag"
+      ],
+      "text": "specs"
+    },
+    "https://adactio.com/tags/standards": {
+      "rels": [
+        "tag"
+      ],
+      "text": "standards"
+    },
+    "https://adactio.com/tags/audio": {
+      "rels": [
+        "tag"
+      ],
+      "text": "audio"
+    },
+    "https://adactio.com/tags/ux": {
+      "rels": [
+        "tag"
+      ],
+      "text": "ux"
+    },
+    "https://adactio.com/tags/experience": {
+      "rels": [
+        "tag"
+      ],
+      "text": "experience"
+    },
+    "https://adactio.com/tags/branding": {
+      "rels": [
+        "tag"
+      ],
+      "text": "branding"
+    },
+    "https://adactio.com/links/19529": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n7:17am\n\n"
+    },
+    "https://adactio.com/tags/syndication": {
+      "rels": [
+        "tag"
+      ],
+      "text": "syndication"
+    },
+    "https://adactio.com/tags/formats": {
+      "rels": [
+        "tag"
+      ],
+      "text": "formats"
+    },
+    "https://adactio.com/tags/distribution": {
+      "rels": [
+        "tag"
+      ],
+      "text": "distribution"
+    },
+    "https://adactio.com/tags/google": {
+      "rels": [
+        "tag"
+      ],
+      "text": "google"
+    },
+    "https://adactio.com/tags/amp": {
+      "rels": [
+        "tag"
+      ],
+      "text": "amp"
+    },
+    "https://adactio.com/tags/facebook": {
+      "rels": [
+        "tag"
+      ],
+      "text": "facebook"
+    },
+    "https://adactio.com/tags/articles": {
+      "rels": [
+        "tag"
+      ],
+      "text": "articles"
+    },
+    "https://adactio.com/tags/apple": {
+      "rels": [
+        "tag"
+      ],
+      "text": "apple"
+    },
+    "https://adactio.com/tags/news": {
+      "rels": [
+        "tag"
+      ],
+      "text": "news"
+    },
+    "https://adactio.com/tags/rss": {
+      "rels": [
+        "tag"
+      ],
+      "text": "rss"
+    },
+    "https://adactio.com/tags/html": {
+      "rels": [
+        "tag"
+      ],
+      "text": "html"
+    },
+    "https://adactio.com/tags/proprietary": {
+      "rels": [
+        "tag"
+      ],
+      "text": "proprietary"
+    },
     "https://adactio.com/links/19528": {
       "rels": [
         "bookmark"
@@ -2411,35 +2702,11 @@
       ],
       "text": "component"
     },
-    "https://adactio.com/tags/frontend": {
-      "rels": [
-        "tag"
-      ],
-      "text": "frontend"
-    },
-    "https://adactio.com/tags/development": {
-      "rels": [
-        "tag"
-      ],
-      "text": "development"
-    },
     "https://adactio.com/tags/markup": {
       "rels": [
         "tag"
       ],
       "text": "markup"
-    },
-    "https://adactio.com/tags/html": {
-      "rels": [
-        "tag"
-      ],
-      "text": "html"
-    },
-    "https://adactio.com/tags/javascript": {
-      "rels": [
-        "tag"
-      ],
-      "text": "javascript"
     },
     "https://adactio.com/tags/accessibility": {
       "rels": [
@@ -2525,18 +2792,6 @@
       ],
       "text": "design"
     },
-    "https://adactio.com/tags/evaluating": {
-      "rels": [
-        "tag"
-      ],
-      "text": "evaluating"
-    },
-    "https://adactio.com/tags/technology": {
-      "rels": [
-        "tag"
-      ],
-      "text": "technology"
-    },
     "https://adactio.com/tags/trends": {
       "rels": [
         "tag"
@@ -2615,24 +2870,6 @@
       ],
       "text": "hydration"
     },
-    "https://adactio.com/tags/frameworks": {
-      "rels": [
-        "tag"
-      ],
-      "text": "frameworks"
-    },
-    "https://adactio.com/tags/libraries": {
-      "rels": [
-        "tag"
-      ],
-      "text": "libraries"
-    },
-    "https://adactio.com/tags/backend": {
-      "rels": [
-        "tag"
-      ],
-      "text": "backend"
-    },
     "https://adactio.com/notes/19522": {
       "rels": [
         "bookmark"
@@ -2687,18 +2924,6 @@
       ],
       "text": "onboarding"
     },
-    "https://adactio.com/tags/ux": {
-      "rels": [
-        "tag"
-      ],
-      "text": "ux"
-    },
-    "https://adactio.com/tags/branding": {
-      "rels": [
-        "tag"
-      ],
-      "text": "branding"
-    },
     "https://adactio.com/tags/research": {
       "rels": [
         "tag"
@@ -2740,18 +2965,6 @@
         "tag"
       ],
       "text": "redesign"
-    },
-    "https://adactio.com/tags/standards": {
-      "rels": [
-        "tag"
-      ],
-      "text": "standards"
-    },
-    "https://adactio.com/tags/css": {
-      "rels": [
-        "tag"
-      ],
-      "text": "css"
     },
     "https://adactio.com/tags/history": {
       "rels": [
@@ -2872,12 +3085,6 @@
         "tag"
       ],
       "text": "webfonts"
-    },
-    "https://adactio.com/tags/google": {
-      "rels": [
-        "tag"
-      ],
-      "text": "google"
     },
     "https://adactio.com/tags/replacement": {
       "rels": [
@@ -3088,42 +3295,6 @@
         "tag"
       ],
       "text": "software"
-    },
-    "https://adactio.com/notes/19509": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n9:34pm\n\n"
-    },
-    "https://www.swarmapp.com/user/112073/checkin/6341ece94b1e5a65e80d4d21": {
-      "rels": [
-        "syndication"
-      ],
-      "text": "Swarm"
-    },
-    "https://adactio.com/notes/19508": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n3:27pm\n\n"
-    },
-    "https://twitter.com/adactio/status/1578769081984962560": {
-      "rels": [
-        "syndication"
-      ],
-      "text": "Twitter"
-    },
-    "https://www.instagram.com/p/CjdTDS9tlPw/": {
-      "rels": [
-        "syndication"
-      ],
-      "text": "Instagram"
-    },
-    "https://adactio.com/notes/19506": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n2:09pm\n\n"
     },
     "https://adactio.com/?start=20": {
       "rels": [
