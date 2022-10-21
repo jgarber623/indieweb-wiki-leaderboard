@@ -134,6 +134,58 @@
                 ],
                 "properties": {
                   "content": [
+                    {
+                      "html": "Today’s Staff Engineer Pro Tip™ <br><br><br><br>When you’re pushing many commits over and over trying to debug something (say, it only runs in CI or something), instead the same commit message over and over, try this:<br><br><br><br>“Debugging: `date`”<br><br><br><br>Gets you:<br><br><br><br>Debug Tue Oct 18 10:26:57 PDT 2022",
+                      "value": "Today’s Staff Engineer Pro Tip™ When you’re pushing many commits over and over trying to debug something (say, it only runs in CI or something), instead the same commit message over and over, try this:“Debugging: `date`”Gets you:Debug Tue Oct 18 10:26:57 PDT 2022"
+                    }
+                  ],
+                  "author": [
+                    {
+                      "type": [
+                        "h-card"
+                      ],
+                      "properties": {
+                        "photo": [
+                          {
+                            "value": "https://pbs.twimg.com/profile_images/1296884164923281410/-RH9LjMI_normal.jpg",
+                            "alt": ""
+                          }
+                        ],
+                        "name": [
+                          "Shane Becker Ⓐ🏴🖤"
+                        ]
+                      },
+                      "value": "https://twitter.com/veganstraightedge"
+                    }
+                  ],
+                  "url": [
+                    "https://twitter.com/veganstraightedge/status/1582423818886615041"
+                  ]
+                },
+                "value": "https://twitter.com/veganstraightedge/status/1582423818886615041"
+              }
+            ],
+            "url": [
+              "https://jacky.wtf/2022/10/TPnF"
+            ],
+            "published": [
+              "2022-10-18T17:35:22Z"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "like-of": [
+              {
+                "type": [
+                  "h-cite",
+                  "h-entry"
+                ],
+                "properties": {
+                  "content": [
                     "you're talking about Mastodon/fediverse specifically, right? because indieweb encompasses a lot more than just that model"
                   ],
                   "author": [
@@ -224,61 +276,6 @@
               "2022-09-29T19:03:39Z"
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "like-of": [
-              {
-                "type": [
-                  "h-cite",
-                  "h-entry"
-                ],
-                "properties": {
-                  "name": [
-                    "Owning My Scrobbles"
-                  ],
-                  "content": [
-                    {
-                      "html": "<p>Some eight years ago, I stumbled upon an irreparable ’50s radio and turned it into a Pi-powered audio player.</p>\n<br><p>That is, I gave it a fresh coat of paint and a new grill cloth, and built in two small-ish speakers and an equally small “Class D” amp. The thing’s driven by a Raspberry Pi equipped with the cheapest of USB “sound cards.”</p>\n<br><p>The Pi runs MPD, and, alongside it, mpdscribble, a simple audio scrobbling service. Had it push song data to Last.fm—which I hadn’t used in years—for quite a while. And while that was fun, I ultimately decided to pull the plug. (I mean, “Who even cares?”)</p>\n<br><p>Fast-forward to today, or rather, a month or so ago, when I saw all of the year-end Spotify banners fly by, and thought, “Hey, I could totally do this <em>and retain ownership of my data</em>.”</p>\n<br><p>So, I looked at Libre.fm’s source code—Libre.fm being an open-source but somewhat outdated Last.fm alternative—and drew inspiration from it for a WordPress plugin of my own. (Of course, I later on <a href=\"https://jan.boddez.net/notes/b68f8dd82f\">discovered that such a plugin already existed</a>.)</p>\n<br><p>Luckily, mpdscribble’s config file—found at <code>/etc/mpdscribble.conf</code>—allows setting the Libre.fm endpoint. Pointed it to my site instead, and … it worked!</p>\n<br><p>Next up was scrobbling from my Windows computer. I vaguely remember Last.fm’s Audioscrobbler plugins for, e.g., Winamp, but those would obviously have Last.fm’s endpoint hardcoded within (and have updated to the newer scrobbling protocol, while my endpoint only accepts the much older 1.2 version).</p>\n<br><p>Anyhow, long story short: I mostly followed <a href=\"https://www.reddit.com/r/foobar2000/comments/3zaiy6/guide_to_librefm_scrobbling_lastfm_backup_to/\">this Reddit post</a> and used a hex editor to replace the default endpoint of a <a href=\"https://www.foobar2000.org/components/view/foo_audioscrobbler\">somewhat older foobar2000 plugin</a> with my own! (The rest of the post isn’t super relevant.) Had to shorten my URL a bit to make it all fit, but: this, too, ended up working!</p>\n<br><p>So … the result’s up at <a href=\"https://jan.boddez.net/listens\">/listens</a>. I’m still figuring out how to microformat these; don’t think too many parsers support <code>listen-of</code>.</p>",
-                      "value": "Some eight years ago, I stumbled upon an irreparable ’50s radio and turned it into a Pi-powered audio player.That is, I gave it a fresh coat of paint and a new grill cloth, and built in two small-ish speakers and an equally small “Class D” amp. The thing’s driven by a Raspberry Pi equipped with the cheapest of USB “sound cards.”The Pi runs MPD, and, alongside it, mpdscribble, a simple audio scrobbling service. Had it push song data to Last.fm—which I hadn’t used in years—for quite a while. And while that was fun, I ultimately decided to pull the plug. (I mean, “Who even cares?”)Fast-forward to today, or rather, a month or so ago, when I saw all of the year-end Spotify banners fly by, and thought, “Hey, I could totally do this and retain ownership of my data.”So, I looked at Libre.fm’s source code—Libre.fm being an open-source but somewhat outdated Last.fm alternative—and drew inspiration from it for a WordPress plugin of my own. (Of course, I later on discovered that such a plugin already existed.)Luckily, mpdscribble’s config file—found at /etc/mpdscribble.conf—allows setting the Libre.fm endpoint. Pointed it to my site instead, and … it worked!Next up was scrobbling from my Windows computer. I vaguely remember Last.fm’s Audioscrobbler plugins for, e.g., Winamp, but those would obviously have Last.fm’s endpoint hardcoded within (and have updated to the newer scrobbling protocol, while my endpoint only accepts the much older 1.2 version).Anyhow, long story short: I mostly followed this Reddit post and used a hex editor to replace the default endpoint of a somewhat older foobar2000 plugin with my own! (The rest of the post isn’t super relevant.) Had to shorten my URL a bit to make it all fit, but: this, too, ended up working!So … the result’s up at /listens. I’m still figuring out how to microformat these; don’t think too many parsers support listen-of."
-                    }
-                  ],
-                  "author": [
-                    {
-                      "type": [
-                        "h-card"
-                      ],
-                      "properties": {
-                        "photo": [
-                          {
-                            "value": "https://jan.boddez.net/images/photo.jpg",
-                            "alt": "Jan’s photo"
-                          }
-                        ],
-                        "name": [
-                          "Jan’s photo Jan Boddez"
-                        ]
-                      },
-                      "value": "https://jan.boddez.net/"
-                    }
-                  ],
-                  "url": [
-                    "https://jan.boddez.net/articles/owning-my-scrobbles"
-                  ]
-                },
-                "value": "https://jan.boddez.net/articles/owning-my-scrobbles"
-              }
-            ],
-            "url": [
-              "https://jacky.wtf/2022/9/3NmK"
-            ],
-            "published": [
-              "2022-09-25T03:00:04Z"
-            ]
-          }
         }
       ]
     },
@@ -306,19 +303,19 @@
           "properties": {
             "content": [
               {
-                "html": "<p>This is an interesting new feature. Would probably use this if I was going to a conference or something. <a href=\"https://blog.mozilla.org/en/privacy-security/hide-your-phone-number-with-firefox-relay/\">https://blog.mozilla.org/en/privacy-security/hide-your-phone-number-with-firefox-relay/</a></p>",
-                "value": "This is an interesting new feature. Would probably use this if I was going to a conference or something. https://blog.mozilla.org/en/privacy-security/hide-your-phone-number-with-firefox-relay/"
+                "html": "<p><a href=\"https://www.youtube.com/watch?v=GlC93foozCE\">https://www.youtube.com/watch?v=GlC93foozCE</a></p>",
+                "value": "https://www.youtube.com/watch?v=GlC93foozCE"
               }
             ],
             "url": [
-              "https://jacky.wtf/2022/10/kkNl"
+              "https://jacky.wtf/2022/10/J9Xi"
             ],
             "published": [
-              "2022-10-12T00:10:20Z"
+              "2022-10-20T19:15:14Z"
             ],
             "syndication": [
-              "https://twitter.com/jackyalcine/status/1579987841874026496",
-              "https://todon.eu/@jalcine/109152399057660246"
+              "https://twitter.com/jackyalcine/status/1583175076597624832",
+              "https://todon.eu/@jalcine/109202199582871198"
             ]
           }
         },
@@ -329,18 +326,19 @@
           "properties": {
             "content": [
               {
-                "html": "<p>Surveillance; in this frontier and beyond. Microsoft does have a knack for conceding to \"competition\" if they have an angle elsewhere (OOB boot locks, licensing). Looks like their office suite is being used here again. <a href=\"https://www.theverge.com/2022/10/11/23397251/meta-microsoft-partnership-quest-teams-office-windows-features-vr\">https://www.theverge.com/2022/10/11/23397251/meta-microsoft-partnership-quest-teams-office-windows-features-vr</a></p>",
-                "value": "Surveillance; in this frontier and beyond. Microsoft does have a knack for conceding to \"competition\" if they have an angle elsewhere (OOB boot locks, licensing). Looks like their office suite is being used here again. https://www.theverge.com/2022/10/11/23397251/meta-microsoft-partnership-quest-teams-office-windows-features-vr"
+                "html": "<p>The UN, Henry and the US is really trying to wipe the country off the fucking map.</p>",
+                "value": "The UN, Henry and the US is really trying to wipe the country off the fucking map."
               }
             ],
             "url": [
-              "https://jacky.wtf/2022/10/Z7ZM"
+              "https://jacky.wtf/2022/10/fOQ5"
             ],
             "published": [
-              "2022-10-11T18:30:51Z"
+              "2022-10-20T19:10:27Z"
             ],
             "syndication": [
-              "https://todon.eu/@jalcine/109151064249800513"
+              "https://twitter.com/jackyalcine/status/1583173882357305344",
+              "https://todon.eu/@jalcine/109202180949870709"
             ]
           }
         },
@@ -351,19 +349,19 @@
           "properties": {
             "content": [
               {
-                "html": "<p>The call for a \"community-run\" version of SQLite is compelling. We do it for HTTP and Web browsers (if you're wealthy enough), why not a archive-friendly database? <a href=\"https://glaubercosta-11125.medium.com/sqlite-qemu-all-over-again-aedad19c9a1c\">https://glaubercosta-11125.medium.com/sqlite-qemu-all-over-again-aedad19c9a1c</a>. <a href=\"https://libsql.org/\">https://libsql.org/</a></p>",
-                "value": "The call for a \"community-run\" version of SQLite is compelling. We do it for HTTP and Web browsers (if you're wealthy enough), why not a archive-friendly database? https://glaubercosta-11125.medium.com/sqlite-qemu-all-over-again-aedad19c9a1c. https://libsql.org/"
+                "html": "<p>What does Canada have to gain by promoting the US-backed gangs in Haiti?</p>",
+                "value": "What does Canada have to gain by promoting the US-backed gangs in Haiti?"
               }
             ],
             "url": [
-              "https://jacky.wtf/2022/10/3DNG"
+              "https://jacky.wtf/2022/10/_-xW"
             ],
             "published": [
-              "2022-10-06T03:19:20Z"
+              "2022-10-20T14:40:23Z"
             ],
             "syndication": [
-              "https://twitter.com/jackyalcine/status/1577861053853081600",
-              "https://todon.eu/@jalcine/109119167994872667"
+              "https://twitter.com/jackyalcine/status/1583105943612850176",
+              "https://todon.eu/@jalcine/109201119453278919"
             ]
           }
         }

@@ -1,27 +1,22 @@
 {
   "items": [],
   "rels": {
-    "preconnect": [
-      "https://cdn.ampproject.org/"
-    ],
-    "preload": [
-      "https://pfauth.com/wp-content/themes/wabi/assets/fonts/inter-roman.woff2",
-      "https://pfauth.com/wp-content/themes/wabi/assets/fonts/inter-semibold.woff2",
-      "https://pfauth.com/wp-content/themes/wabi/assets/fonts/inter-italic.woff2"
-    ],
-    "icon": [
-      "https://pfauth.com/wp-content/uploads/2016/03/cropped-favicon-32x32.png",
-      "https://pfauth.com/wp-content/uploads/2016/03/cropped-favicon-192x192.png"
-    ],
     "canonical": [
       "https://pfauth.com/"
     ],
     "next": [
       "https://pfauth.com/page/2/"
     ],
+    "dns-prefetch": [
+      "https://s.w.org/"
+    ],
     "alternate": [
       "https://pfauth.com/feed/",
       "https://pfauth.com/comments/feed/"
+    ],
+    "stylesheet": [
+      "https://pfauth.com/wp-content/cache/wpo-minify/1666334581/assets/wpo-minify-header-e0e62a88.min.css",
+      "https://pfauth.com/wp-content/cache/wpo-minify/1666334581/assets/wpo-minify-header-dec9279b.min.css"
     ],
     "https://api.w.org/": [
       "https://pfauth.com/wp-json/"
@@ -32,6 +27,13 @@
     "wlwmanifest": [
       "https://pfauth.com/wp-includes/wlwmanifest.xml"
     ],
+    "preload": [
+      "https://pfauth.com/wp-content/themes/wabi/assets/fonts/inter-roman.woff2"
+    ],
+    "icon": [
+      "https://pfauth.com/wp-content/uploads/2016/03/cropped-favicon-32x32.png",
+      "https://pfauth.com/wp-content/uploads/2016/03/cropped-favicon-192x192.png"
+    ],
     "apple-touch-icon": [
       "https://pfauth.com/wp-content/uploads/2016/03/cropped-favicon-180x180.png"
     ],
@@ -40,36 +42,6 @@
     ]
   },
   "rel-urls": {
-    "https://cdn.ampproject.org/": {
-      "rels": [
-        "preconnect"
-      ]
-    },
-    "https://pfauth.com/wp-content/themes/wabi/assets/fonts/inter-roman.woff2": {
-      "rels": [
-        "preload"
-      ]
-    },
-    "https://pfauth.com/wp-content/themes/wabi/assets/fonts/inter-semibold.woff2": {
-      "rels": [
-        "preload"
-      ]
-    },
-    "https://pfauth.com/wp-content/themes/wabi/assets/fonts/inter-italic.woff2": {
-      "rels": [
-        "preload"
-      ]
-    },
-    "https://pfauth.com/wp-content/uploads/2016/03/cropped-favicon-32x32.png": {
-      "rels": [
-        "icon"
-      ]
-    },
-    "https://pfauth.com/wp-content/uploads/2016/03/cropped-favicon-192x192.png": {
-      "rels": [
-        "icon"
-      ]
-    },
     "https://pfauth.com/": {
       "rels": [
         "canonical"
@@ -78,6 +50,11 @@
     "https://pfauth.com/page/2/": {
       "rels": [
         "next"
+      ]
+    },
+    "https://s.w.org/": {
+      "rels": [
+        "dns-prefetch"
       ]
     },
     "https://pfauth.com/feed/": {
@@ -93,6 +70,18 @@
       ],
       "title": "Ernst-Jan Pfauth » Reactiesfeed",
       "type": "application/rss+xml"
+    },
+    "https://pfauth.com/wp-content/cache/wpo-minify/1666334581/assets/wpo-minify-header-e0e62a88.min.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://pfauth.com/wp-content/cache/wpo-minify/1666334581/assets/wpo-minify-header-dec9279b.min.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
     },
     "https://pfauth.com/wp-json/": {
       "rels": [
@@ -111,6 +100,22 @@
         "wlwmanifest"
       ],
       "type": "application/wlwmanifest+xml"
+    },
+    "https://pfauth.com/wp-content/themes/wabi/assets/fonts/inter-roman.woff2": {
+      "rels": [
+        "preload"
+      ],
+      "type": "font/woff2"
+    },
+    "https://pfauth.com/wp-content/uploads/2016/03/cropped-favicon-32x32.png": {
+      "rels": [
+        "icon"
+      ]
+    },
+    "https://pfauth.com/wp-content/uploads/2016/03/cropped-favicon-192x192.png": {
+      "rels": [
+        "icon"
+      ]
     },
     "https://pfauth.com/wp-content/uploads/2016/03/cropped-favicon-180x180.png": {
       "rels": [
