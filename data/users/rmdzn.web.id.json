@@ -1,44 +1,24 @@
 {
   "items": [],
   "rels": {
-    "stylesheet": [
-      "http://rmdzn.web.id/css/write.css?e42ba390ed9c9ce4164cb"
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
     ],
-    "icon": [
-      "http://rmdzn.web.id/favicon.ico"
-    ],
-    "shortcut": [
-      "http://rmdzn.web.id/favicon.ico"
-    ],
-    "nofollow": [
-      "https://pixelfed.org/",
-      "https://joinmastodon.org/"
+    "me": [
+      "https://github.com/rafeyu"
     ]
   },
   "rel-urls": {
-    "http://rmdzn.web.id/css/write.css?e42ba390ed9c9ce4164cb": {
+    "https://indieauth.com/auth": {
       "rels": [
-        "stylesheet"
-      ],
-      "type": "text/css"
-    },
-    "http://rmdzn.web.id/favicon.ico": {
-      "rels": [
-        "icon",
-        "shortcut"
+        "authorization_endpoint"
       ]
     },
-    "https://pixelfed.org/": {
+    "https://github.com/rafeyu": {
       "rels": [
-        "nofollow"
+        "me"
       ],
-      "text": "PixelFed"
-    },
-    "https://joinmastodon.org/": {
-      "rels": [
-        "nofollow"
-      ],
-      "text": "Mastodon"
+      "text": "GitHub"
     }
   }
 }
