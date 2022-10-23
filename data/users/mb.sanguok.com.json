@@ -29,8 +29,7 @@
     ],
     "stylesheet": [
       "https://c0.wp.com/c/6.0.3/wp-includes/blocks/navigation/style.min.css",
-      "https://sanguok.com/wp-content/fonts/92a2f10d5237541b3ebf4983564bd94b.css?ver=20201110",
-      "https://sanguok.com/wp-content/themes/lawson/style.css?ver=1.0",
+      "https://sanguok.com/wp-content/themes/twentytwentytwo/style.css?ver=1.2",
       "https://sanguok.com/wp-content/plugins/syndication-links/css/syn.min.css?ver=4.3.12",
       "https://c0.wp.com/p/jetpack/11.4/css/jetpack.css"
     ],
@@ -56,9 +55,8 @@
     "home": [
       "https://sanguok.com/"
     ],
-    "tag": [
-      "https://sanguok.com/blog/category/essay/",
-      "https://sanguok.com/blog/category/internet/"
+    "nofollow": [
+      "https://wordpress.org/"
     ]
   },
   "rel-urls": {
@@ -190,13 +188,7 @@
       ],
       "media": "all"
     },
-    "https://sanguok.com/wp-content/fonts/92a2f10d5237541b3ebf4983564bd94b.css?ver=20201110": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "all"
-    },
-    "https://sanguok.com/wp-content/themes/lawson/style.css?ver=1.0": {
+    "https://sanguok.com/wp-content/themes/twentytwentytwo/style.css?ver=1.2": {
       "rels": [
         "stylesheet"
       ],
@@ -252,17 +244,11 @@
         "apple-touch-icon"
       ]
     },
-    "https://sanguok.com/blog/category/essay/": {
+    "https://wordpress.org/": {
       "rels": [
-        "tag"
+        "nofollow"
       ],
-      "text": "隨筆"
-    },
-    "https://sanguok.com/blog/category/internet/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "網隅"
+      "text": "WordPress"
     }
   }
 }
