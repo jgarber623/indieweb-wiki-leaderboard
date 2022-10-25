@@ -76,6 +76,327 @@
             "h-entry"
           ],
           "properties": {
+            "in-reply-to": [
+              {
+                "type": [
+                  "h-cite"
+                ],
+                "properties": {
+                  "name": [
+                    "Creating a Catalogue in Google Sheets"
+                  ],
+                  "url": [
+                    "https://readwriterespond.com/2021/09/creating-a-catalogue-in-google-sheets/"
+                  ],
+                  "author": [
+                    {
+                      "type": [
+                        "h-card"
+                      ],
+                      "properties": {
+                        "photo": [
+                          {
+                            "value": "https://secure.gravatar.com/avatar/d00e7ca24ca1b9c853da43af229c0e0e?s=40&d=mm&r=g",
+                            "alt": "Aaron Davis"
+                          }
+                        ],
+                        "name": [
+                          "Aaron Davis"
+                        ]
+                      },
+                      "value": "Aaron Davis"
+                    }
+                  ],
+                  "publication": [
+                    "readwriterespond.com"
+                  ],
+                  "summary": [
+                    {
+                      "html": "<p>To create the <a href=\"https://www.benlcollins.com/spreadsheets/switch-function/\">SWITCH</a>, I created a UNIQUE list of all the folders and then pasted them as values so that I could delete those not required to be displayed in the directory. After culling the list, I then added the area in the cell next to each folder. Once I had these two columns complete, I used <a href=\"https://stackoverflow.com/questions/3315636/how-to-enclose-every-cell-with-double-quotes-in-google-docs-spreadsheet\">this formula</a> to add quotation marks to them all:</p>\n<blockquote><p>=ArrayFormula(“”””&amp;Sheet1!A:D&amp;””””)</p></blockquote>\n<p>I then copied this list into the SWITCH formula and added in the commas</p>",
+                      "value": "To create the SWITCH, I created a UNIQUE list of all the folders and then pasted them as values so that I could delete those not required to be displayed in the directory. After culling the list, I then added the area in the cell next to each folder. Once I had these two columns complete, I used this formula to add quotation marks to them all:\n=ArrayFormula(“”””&Sheet1!A:D&””””)\nI then copied this list into the SWITCH formula and added in the commas"
+                    }
+                  ]
+                },
+                "value": "https://readwriterespond.com/2021/09/creating-a-catalogue-in-google-sheets/"
+              },
+              "https://collect.readwriterespond.com/use-switch-function-to-categorize/"
+            ],
+            "content": [
+              {
+                "html": "I have found a cleaner method for adding in the commas and quotations required for the <a class=\"u-in-reply-to\" href=\"https://collect.readwriterespond.com/use-switch-function-to-categorize/\" title=\"Use SWITCH Function to Categorise\" rel=\"noopener\" target=\"_blank\">SWITCH formula</a>:\n<blockquote><p>=char(34)&amp;join(“””, “””,ARRAYFORMULA(QUERY(A1:A,”SELECT A WHERE A IS NOT NULL”)&amp;”””,”””&amp;QUERY(B1:B,”SELECT B WHERE B IS NOT NULL”)))&amp;char(34)</p></blockquote>",
+                "value": "I have found a cleaner method for adding in the commas and quotations required for the SWITCH formula:\n=char(34)&join(“””, “””,ARRAYFORMULA(QUERY(A1:A,”SELECT A WHERE A IS NOT NULL”)&”””,”””&QUERY(B1:B,”SELECT B WHERE B IS NOT NULL”)))&char(34)"
+              }
+            ],
+            "url": [
+              "https://collect.readwriterespond.com/adding-commas-and-quotations-for-a-switch-formula/"
+            ],
+            "published": [
+              "2022-10-25T11:18:18+11:00"
+            ],
+            "updated": [
+              "2022-10-25T11:18:18+11:00"
+            ]
+          },
+          "id": "post-24084",
+          "children": [
+            {
+              "type": [
+                "h-card"
+              ],
+              "properties": {
+                "photo": [
+                  {
+                    "value": "https://secure.gravatar.com/avatar/d00e7ca24ca1b9c853da43af229c0e0e?s=49&d=mm&r=g",
+                    "srcset": {
+                      "2x": "https://secure.gravatar.com/avatar/d00e7ca24ca1b9c853da43af229c0e0e?s=98&d=mm&r=g"
+                    },
+                    "alt": ""
+                  }
+                ],
+                "url": [
+                  "https://collect.readwriterespond.com/author/admin/"
+                ],
+                "name": [
+                  "Author  Aaron Davis"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "like-of": [
+              {
+                "type": [
+                  "h-cite"
+                ],
+                "properties": {
+                  "name": [
+                    "Pluralistic: 07 Oct 2022 “Don’t spy on a privacy lab,” and other career advice for university provosts"
+                  ],
+                  "url": [
+                    "https://pluralistic.net/2022/10/07/sensory-deprivation/#sensorship"
+                  ],
+                  "author": [
+                    {
+                      "type": [
+                        "h-card"
+                      ],
+                      "properties": {
+                        "photo": [
+                          {
+                            "value": "https://secure.gravatar.com/avatar/bdd2b71f7e0f6b5e4e2fdf809cd8e3dc?s=49&d=mm&r=pg",
+                            "alt": "Cory Doctorow"
+                          }
+                        ],
+                        "name": [
+                          "Cory Doctorow"
+                        ]
+                      },
+                      "value": "Cory Doctorow"
+                    }
+                  ],
+                  "publication": [
+                    "pluralistic.net"
+                  ],
+                  "summary": [
+                    {
+                      "html": "<p>the students arrange the sensors into a “public art piece” in the lobby – a table covered in sensors spelling out “NO!,” surrounded by Sharpie annotations decrying the program.</p>\n<p>Meanwhile, students are still furious. It’s not just that the sensors are invasive, nor that they are scientifically incoherent, nor that they cost more than a year’s salary – they also emit lots of RF noise that interferes with the students’ own research.</p>",
+                      "value": "the students arrange the sensors into a “public art piece” in the lobby – a table covered in sensors spelling out “NO!,” surrounded by Sharpie annotations decrying the program.\nMeanwhile, students are still furious. It’s not just that the sensors are invasive, nor that they are scientifically incoherent, nor that they cost more than a year’s salary – they also emit lots of RF noise that interferes with the students’ own research."
+                    }
+                  ]
+                },
+                "value": "https://pluralistic.net/2022/10/07/sensory-deprivation/#sensorship"
+              }
+            ],
+            "url": [
+              "https://collect.readwriterespond.com/dont-spy-on-a-privacy-lab-and-other-career-advice-for-university-provosts/"
+            ],
+            "published": [
+              "2022-10-24T22:19:54+11:00"
+            ],
+            "updated": [
+              "2022-10-24T22:19:54+11:00"
+            ]
+          },
+          "id": "post-24081",
+          "children": [
+            {
+              "type": [
+                "h-card"
+              ],
+              "properties": {
+                "photo": [
+                  {
+                    "value": "https://secure.gravatar.com/avatar/d00e7ca24ca1b9c853da43af229c0e0e?s=49&d=mm&r=g",
+                    "srcset": {
+                      "2x": "https://secure.gravatar.com/avatar/d00e7ca24ca1b9c853da43af229c0e0e?s=98&d=mm&r=g"
+                    },
+                    "alt": ""
+                  }
+                ],
+                "url": [
+                  "https://collect.readwriterespond.com/author/admin/"
+                ],
+                "name": [
+                  "Author  Aaron Davis"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "bookmark-of": [
+              {
+                "type": [
+                  "h-cite"
+                ],
+                "properties": {
+                  "name": [
+                    "The GIF Is on Its Deathbed"
+                  ],
+                  "url": [
+                    "https://www.theatlantic.com/technology/archive/2022/10/using-reaction-gifs-over-tumblr-giphy/671680/"
+                  ],
+                  "publication": [
+                    "theatlantic.com"
+                  ],
+                  "summary": [
+                    {
+                      "html": "<p>I think there will always be, at least, a handful of masochists who want to struggle to make a GIF and struggle again to post it somewhere—all because they are devoted to the perfect animated loop, and because they think there is something spiritually important about contorting themselves to create it. “[Igor] Stravinsky has a quote about constraints,” Kohler told me. Then he read the whole thing aloud: “The more constraints one imposes, the more one frees one’s self. And the arbitrariness of the constraint serves only to obtain precision of execution.”</p>",
+                      "value": "I think there will always be, at least, a handful of masochists who want to struggle to make a GIF and struggle again to post it somewhere—all because they are devoted to the perfect animated loop, and because they think there is something spiritually important about contorting themselves to create it. “[Igor] Stravinsky has a quote about constraints,” Kohler told me. Then he read the whole thing aloud: “The more constraints one imposes, the more one frees one’s self. And the arbitrariness of the constraint serves only to obtain precision of execution.”"
+                    }
+                  ]
+                },
+                "value": "https://www.theatlantic.com/technology/archive/2022/10/using-reaction-gifs-over-tumblr-giphy/671680/"
+              }
+            ],
+            "content": [
+              {
+                "html": "Kaitlyn Tiffany reflects on the demise of GIFs. She discusses the embarrassing nature in which particular GIFs are used on repeat. In addition to this, the MP4 format is a lot smaller. \n<p>Ir is interesting to look back on when I presented on <a class=\"u-in-reply-to\" href=\"https://readwriterespond.com/2015/07/an-introduction-to-the-gif/\" rel=\"noopener\" target=\"_blank\">GIFs as a form of quick makes</a>.</p>",
+                "value": "Kaitlyn Tiffany reflects on the demise of GIFs. She discusses the embarrassing nature in which particular GIFs are used on repeat. In addition to this, the MP4 format is a lot smaller. \nIr is interesting to look back on when I presented on GIFs as a form of quick makes."
+              }
+            ],
+            "in-reply-to": [
+              "https://readwriterespond.com/2015/07/an-introduction-to-the-gif/"
+            ],
+            "url": [
+              "https://collect.readwriterespond.com/the-gif-is-on-its-deathbed/"
+            ],
+            "published": [
+              "2022-10-24T22:10:45+11:00"
+            ],
+            "updated": [
+              "2022-10-24T22:10:45+11:00"
+            ]
+          },
+          "id": "post-24078",
+          "children": [
+            {
+              "type": [
+                "h-card"
+              ],
+              "properties": {
+                "photo": [
+                  {
+                    "value": "https://secure.gravatar.com/avatar/d00e7ca24ca1b9c853da43af229c0e0e?s=49&d=mm&r=g",
+                    "srcset": {
+                      "2x": "https://secure.gravatar.com/avatar/d00e7ca24ca1b9c853da43af229c0e0e?s=98&d=mm&r=g"
+                    },
+                    "alt": ""
+                  }
+                ],
+                "url": [
+                  "https://collect.readwriterespond.com/author/admin/"
+                ],
+                "name": [
+                  "Author  Aaron Davis"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "in-reply-to": [
+              {
+                "type": [
+                  "h-cite"
+                ],
+                "properties": {
+                  "summary": [
+                    {
+                      "html": "<div class=\"kind-embed\">\n<blockquote class=\"twitter-tweet\" data-width=\"550\" data-dnt=\"true\">\n<p lang=\"en\" dir=\"ltr\">Pals, I make nice enough roast potatoes, in that it’s hard to go wrong with the concept of potatoes + oil + seasoning + oven, but need to up my game. How do you make yours?</p>\n<p>— Fiona Hardly Spooky (@fionathehardy) <a href=\"https://twitter.com/fionathehardy/status/1584360496870088705?ref_src=twsrc%5Etfw\">October 24, 2022</a></p>\n</blockquote>\n<p><script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script><a class=\"u-url\" href=\"https://twitter.com/fionathehardy/status/1584360496870088705\"></a></p>\n</div>",
+                      "value": "Pals, I make nice enough roast potatoes, in that it’s hard to go wrong with the concept of potatoes + oil + seasoning + oven, but need to up my game. How do you make yours?\n— Fiona Hardly Spooky (@fionathehardy) October 24, 2022"
+                    }
+                  ],
+                  "url": [
+                    "https://twitter.com/fionathehardy/status/1584360496870088705"
+                  ]
+                },
+                "value": "https://twitter.com/fionathehardy/status/1584360496870088705"
+              }
+            ],
+            "content": [
+              {
+                "html": "We recently purchased an air fryer and have not looked back. Soak the potatoes in water before.  Can do spuds, wedges, fries … all awesome.",
+                "value": "We recently purchased an air fryer and have not looked back. Soak the potatoes in water before.  Can do spuds, wedges, fries … all awesome."
+              }
+            ],
+            "url": [
+              "https://collect.readwriterespond.com/roast-potatoes/"
+            ],
+            "published": [
+              "2022-10-24T21:30:47+11:00"
+            ],
+            "updated": [
+              "2022-10-24T21:30:47+11:00"
+            ],
+            "syndication": [
+              "https://twitter.com/mrkrndvs/status/1584492636206878720"
+            ]
+          },
+          "id": "post-24076",
+          "children": [
+            {
+              "type": [
+                "h-card"
+              ],
+              "properties": {
+                "photo": [
+                  {
+                    "value": "https://secure.gravatar.com/avatar/d00e7ca24ca1b9c853da43af229c0e0e?s=49&d=mm&r=g",
+                    "srcset": {
+                      "2x": "https://secure.gravatar.com/avatar/d00e7ca24ca1b9c853da43af229c0e0e?s=98&d=mm&r=g"
+                    },
+                    "alt": ""
+                  }
+                ],
+                "url": [
+                  "https://collect.readwriterespond.com/author/admin/"
+                ],
+                "name": [
+                  "Author  Aaron Davis"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
             "like-of": [
               {
                 "type": [
@@ -421,7 +742,7 @@
             ],
             "content": [
               {
-                "html": "Another month and another change to the team at work. Why is it that everyone seems to have had such amazing lives? The new manager at work ran a 10 hour charity music conference in his spare time. I am often happy if I have done the washing and got food on the table, I clearly need to work harder on my pitch.\n<p>On the family front, we went on our first holiday post-COVID to <a href=\"https://collect.readwriterespond.com/albury-22/\">country Victoria</a>. It was interesting returning to various places with children. I think it is fair to say wine tasting and children do not always match.</p>\n<p>Personally, I finally got around to loading <a title=\"📑 Linux On The Laptop Works So Damn Well That It’s Boring\" href=\"https://collect.readwriterespond.com/linux-on-the-laptop-works-so-damn-well-that-its-boring/\" target=\"_blank\" rel=\"noopener\">Linux on my old Macbook Pro and Chromebook</a>. Other than the ability to run music applications, I am pretty happy and not missing a think. I continued my dive back into books listening to <a title=\"📚 Utopia (Thomas More)\" href=\"https://collect.readwriterespond.com/utopia-thomas-more/\" target=\"_blank\" rel=\"noopener\">Thomas More’s Utopia</a>, <a title=\"📚 The Three-Body Problem (Liu Cixin)\" href=\"https://collect.readwriterespond.com/the-three-body-problem/\" target=\"_blank\" rel=\"noopener\">Liu Cixin’s The Three-Body Problem</a> and <a title=\"📚 The Bell Jar (Sylvia Plath)\" href=\"https://collect.readwriterespond.com/the-bell-jar-sylvia-plath/\" target=\"_blank\" rel=\"noopener\">Sylvia Plath’s The Bell Jar</a>. I also nostalgically binged The Dark Crystal: Age of Resistance. (Was this really made for children?) In regards to music, <a title=\"🎵 Making It (Montaigne)\" href=\"https://collect.readwriterespond.com/making-it-montaigne/\" target=\"_blank\" rel=\"noopener\">Montaigne’s Making It</a> has been on repeat.</p>\n<p>Here then are some of the other dots that have had me thinking:</p>\n<h2>Education</h2>\n<h3><a href=\"https://collect.readwriterespond.com/the-tricky-ethics-of-being-a-teacher-on-tiktok/\" target=\"_blank\" rel=\"noopener\">The Tricky Ethics of Being a Teacher on TikTok</a></h3>\n<p>Amelia Tate considers the place of TikTok in the classroom. She discusses the trend of content created about and even with students.</p>\n<h3><a href=\"https://collect.readwriterespond.com/the-enduring-allure-of-choose-your-own-adventure-books/\" target=\"_blank\" rel=\"noopener\">The Enduring Allure of Choose Your Own Adventure Books</a></h3>\n<p>Leslie Jamison dives back into the world of the Choose Your Own Adventure book series.</p>\n<h3><a href=\"https://collect.readwriterespond.com/unbeaching-the-whale/\" target=\"_blank\" rel=\"noopener\">Unbeaching the whale – The education revolution failed — and so did its way of thinking</a></h3>\n<p>Dean Ashenden reflects on the failure of Gonski and the education revolution.</p>\n<h3><a href=\"https://collect.readwriterespond.com/timetable-absurdity/\" target=\"_blank\" rel=\"noopener\">Timetable Absurdity</a></h3>\n<p>Cameron Paterson discusses the way in which schools are still held hostage by the timetable.</p>\n<h3><a href=\"https://collect.readwriterespond.com/i-want-i-wish-i-hope-i-dream/\" target=\"_blank\" rel=\"noopener\">I want, I wish, I hope, I dream</a></h3>\n<p>David Truss shares an activity where he creates a portrait wall with a want, a wish, a hope or a dream underneath it.</p>\n<h2>Technology</h2>\n<h3><a href=\"https://collect.readwriterespond.com/after-self-hosting-my-email-for-twenty-three-years-i-have-thrown-in-the-towel-the-oligopoloy-has-won/\" target=\"_blank\" rel=\"noopener\">After Self-Hosting My Email for Twenty-Three Years, I have Thrown In the Towel. The Oligopoloy has Won.</a></h3>\n<p>Carlos Fenollosa reflects on the demise of self-hosted email. One of the main reasons he argues for the failure is the crude blacklisting of large swaths of email, rather than a penalty process.</p>\n<h3><a href=\"https://collect.readwriterespond.com/we-spoke-with-the-last-person-standing-in-the-floppy-disk-business/\" target=\"_blank\" rel=\"noopener\">We Spoke With the Last Person Standing in the Floppy Disk Business</a></h3>\n<p>Niek Hilkmann and Thomas Walskaar interview Tom Persky about the dying art of maintaining floppy disks.</p>\n<h3><a href=\"https://collect.readwriterespond.com/interoperable-facebook/\" target=\"_blank\" rel=\"noopener\">Interoperable Facebook</a></h3>\n<p>Cory Doctorow unpacks how an interoperable Facebook might work.</p>\n<h3><a href=\"https://collect.readwriterespond.com/tech-fear-mongering-isnt-new-but-its-time-to-break-the-cycle/\" target=\"_blank\" rel=\"noopener\">Tech Fear-Mongering Isn’t New—But It’s Time to Break the Cycle</a></h3>\n<p>Jason Feifer provides insight into Amy Orben’s four-step Sisyphean cycle of technology panics.</p>\n<h3><a href=\"https://collect.readwriterespond.com/we-need-to-deal-with-data-privacy-in-our-classrooms/\" target=\"_blank\" rel=\"noopener\">We need to deal with data privacy in our classrooms</a></h3>\n<p>Bonnie Stewart reflects upon the online learning with the return to the classroom in a post-COVID world.</p>\n<h3><a href=\"https://collect.readwriterespond.com/techscape-ais-dark-arts-come-into-their-own/\" target=\"_blank\" rel=\"noopener\">AI’s dark arts come into their own</a></h3>\n<p>Alex Hern discusses the dark-side to the magic of artificial intelligence.</p>\n<h2>General</h2>\n<h3><a href=\"https://collect.readwriterespond.com/electric-bike-stupid-love-of-my-life/\" target=\"_blank\" rel=\"noopener\">Electric Bike, Stupid Love of My Life</a></h3>\n<p>Craig Mod shares his passion for electric bikes.</p>\n<h3><a href=\"https://collect.readwriterespond.com/after-queen-elizabeth-iis-death-indigenous-australia-cant-be-expected-to-shut-up-our-sorry-business-is-without-end/\" target=\"_blank\" rel=\"noopener\">After Queen Elizabeth II’s death, Indigenous Australia can’t be expected to shut up. Our sorry business is without end</a></h3>\n<p>With the passing of Queen Elizabeth, Stan Grant considers legacy of colonisation for indigenous people around the world.</p>\n<h3><a href=\"https://collect.readwriterespond.com/music-on-the-brain-listening-can-influence-our-brains-activity/\" target=\"_blank\" rel=\"noopener\">Music on the brain: Listening can influence our brain’s activity</a></h3>\n<p>Abdullah Iqbal unpacks some of the research into the benefits of music on the brain.</p>\n<h3><a href=\"https://collect.readwriterespond.com/ark-head/\" target=\"_blank\" rel=\"noopener\">Ark Head</a></h3>\n<p>In order to survived the battered psyche, Venkatesh Rao explains that way have resorted to the ‘ark head’ mental model. This involves giving up on solving the world’s ills and simply hiding in our ark.</p>\n<h3><a href=\"https://collect.readwriterespond.com/the-credibility-of-science-is-damaged-when-universities-brag-about-themselves/\" target=\"_blank\" rel=\"noopener\">The credibility of science is damaged when universities brag about themselves</a></h3>\n<p>Adrian Lenardic and Johnny Seales argue that the rewarding of attention economy has corrupted scientific research.</p>\n<h3><a href=\"https://collect.readwriterespond.com/florence-nightingale-was-born-197-years-ago-and-her-infographics-were-better-than-most-of-the-internets/\" target=\"_blank\" rel=\"noopener\">Florence Nightingale Was Born 197 Years Ago, and Her Infographics Were Better Than Most of the Internet’s</a></h3>\n<p>Celebrating the birth of , Cara Giaimo discusses Florence Nightingale’s impact in regards to the spread of ideas, not just as the ‘Lady with the Lamp’.</p>\n<h2>Read Write Respond #080</h2>\n<p>So that was September for me, how about you? As always, hope you are safe and well.</p>\n<figure id=\"attachment_409\" aria-describedby=\"caption-attachment-409\" style=\"width: 640px\" class=\"wp-caption alignnone\"><img class=\"size-full wp-image-409\" src=\"https://collect.readwriterespond.com/wp-content/uploads/2017/12/RRR.png\" alt=\"\" width=\"640\" height=\"463\" srcset=\"https://collect.readwriterespond.com/wp-content/uploads/2017/12/RRR.png 640w, https://collect.readwriterespond.com/wp-content/uploads/2017/12/RRR-300x217.png 300w\" sizes=\"(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 984px) 61vw, (max-width: 1362px) 45vw, 600px\"><figcaption id=\"caption-attachment-409\" class=\"wp-caption-text\">Image by Bryan Mathers</figcaption></figure>\n<p> </p>",
+                "html": "Another month and another change to the team at work. Why is it that everyone seems to have had such amazing lives? The new manager at work ran a 10 hour charity music conference in his spare time. I am often happy if I have done the washing and got food on the table, I clearly need to work harder on my pitch.\n<p>On the family front, we went on our first holiday post-COVID to <a href=\"https://collect.readwriterespond.com/albury-22/\">country Victoria</a>. It was interesting returning to various places with children. I think it is fair to say wine tasting and children do not always match.</p>\n<p>Personally, I finally got around to loading <a title=\"📑 Linux On The Laptop Works So Damn Well That It’s Boring\" href=\"https://collect.readwriterespond.com/linux-on-the-laptop-works-so-damn-well-that-its-boring/\" target=\"_blank\" rel=\"noopener\">Linux on my old Macbook Pro and Chromebook</a>. Other than the ability to run music applications, I am pretty happy and not missing a think. I continued my dive back into books listening to <a title=\"📚 Utopia (Thomas More)\" href=\"https://collect.readwriterespond.com/utopia-thomas-more/\" target=\"_blank\" rel=\"noopener\">Thomas More’s Utopia</a>, <a title=\"📚 The Three-Body Problem (Liu Cixin)\" href=\"https://collect.readwriterespond.com/the-three-body-problem/\" target=\"_blank\" rel=\"noopener\">Liu Cixin’s The Three-Body Problem</a> and <a title=\"📚 The Bell Jar (Sylvia Plath)\" href=\"https://collect.readwriterespond.com/the-bell-jar-sylvia-plath/\" target=\"_blank\" rel=\"noopener\">Sylvia Plath’s The Bell Jar</a>. I also nostalgically binged The Dark Crystal: Age of Resistance. (Was this really made for children?) In regards to music, <a title=\"🎵 Making It (Montaigne)\" href=\"https://collect.readwriterespond.com/making-it-montaigne/\" target=\"_blank\" rel=\"noopener\">Montaigne’s Making It</a> has been on repeat.</p>\n<p>Here then are some of the other dots that have had me thinking:</p>\n<h2>Education</h2>\n<h3><a href=\"https://collect.readwriterespond.com/the-tricky-ethics-of-being-a-teacher-on-tiktok/\" target=\"_blank\" rel=\"noopener\">The Tricky Ethics of Being a Teacher on TikTok</a></h3>\n<p>Amelia Tate considers the place of TikTok in the classroom. She discusses the trend of content created about and even with students.</p>\n<h3><a href=\"https://collect.readwriterespond.com/the-enduring-allure-of-choose-your-own-adventure-books/\" target=\"_blank\" rel=\"noopener\">The Enduring Allure of Choose Your Own Adventure Books</a></h3>\n<p>Leslie Jamison dives back into the world of the Choose Your Own Adventure book series.</p>\n<h3><a href=\"https://collect.readwriterespond.com/unbeaching-the-whale/\" target=\"_blank\" rel=\"noopener\">Unbeaching the whale – The education revolution failed — and so did its way of thinking</a></h3>\n<p>Dean Ashenden reflects on the failure of Gonski and the education revolution.</p>\n<h3><a href=\"https://collect.readwriterespond.com/timetable-absurdity/\" target=\"_blank\" rel=\"noopener\">Timetable Absurdity</a></h3>\n<p>Cameron Paterson discusses the way in which schools are still held hostage by the timetable.</p>\n<h3><a href=\"https://collect.readwriterespond.com/i-want-i-wish-i-hope-i-dream/\" target=\"_blank\" rel=\"noopener\">I want, I wish, I hope, I dream</a></h3>\n<p>David Truss shares an activity where he creates a portrait wall with a want, a wish, a hope or a dream underneath it.</p>\n<h2>Technology</h2>\n<h3><a href=\"https://collect.readwriterespond.com/after-self-hosting-my-email-for-twenty-three-years-i-have-thrown-in-the-towel-the-oligopoloy-has-won/\" target=\"_blank\" rel=\"noopener\">After Self-Hosting My Email for Twenty-Three Years, I have Thrown In the Towel. The Oligopoloy has Won.</a></h3>\n<p>Carlos Fenollosa reflects on the demise of self-hosted email. One of the main reasons he argues for the failure is the crude blacklisting of large swaths of email, rather than a penalty process.</p>\n<h3><a href=\"https://collect.readwriterespond.com/we-spoke-with-the-last-person-standing-in-the-floppy-disk-business/\" target=\"_blank\" rel=\"noopener\">We Spoke With the Last Person Standing in the Floppy Disk Business</a></h3>\n<p>Niek Hilkmann and Thomas Walskaar interview Tom Persky about the dying art of maintaining floppy disks.</p>\n<h3><a href=\"https://collect.readwriterespond.com/interoperable-facebook/\" target=\"_blank\" rel=\"noopener\">Interoperable Facebook</a></h3>\n<p>Cory Doctorow unpacks how an interoperable Facebook might work.</p>\n<h3><a href=\"https://collect.readwriterespond.com/tech-fear-mongering-isnt-new-but-its-time-to-break-the-cycle/\" target=\"_blank\" rel=\"noopener\">Tech Fear-Mongering Isn’t New—But It’s Time to Break the Cycle</a></h3>\n<p>Jason Feifer provides insight into Amy Orben’s four-step Sisyphean cycle of technology panics.</p>\n<h3><a href=\"https://collect.readwriterespond.com/we-need-to-deal-with-data-privacy-in-our-classrooms/\" target=\"_blank\" rel=\"noopener\">We need to deal with data privacy in our classrooms</a></h3>\n<p>Bonnie Stewart reflects upon the online learning with the return to the classroom in a post-COVID world.</p>\n<h3><a href=\"https://collect.readwriterespond.com/techscape-ais-dark-arts-come-into-their-own/\" target=\"_blank\" rel=\"noopener\">AI’s dark arts come into their own</a></h3>\n<p>Alex Hern discusses the dark-side to the magic of artificial intelligence.</p>\n<h2>General</h2>\n<h3><a href=\"https://collect.readwriterespond.com/electric-bike-stupid-love-of-my-life/\" target=\"_blank\" rel=\"noopener\">Electric Bike, Stupid Love of My Life</a></h3>\n<p>Craig Mod shares his passion for electric bikes.</p>\n<h3><a href=\"https://collect.readwriterespond.com/after-queen-elizabeth-iis-death-indigenous-australia-cant-be-expected-to-shut-up-our-sorry-business-is-without-end/\" target=\"_blank\" rel=\"noopener\">After Queen Elizabeth II’s death, Indigenous Australia can’t be expected to shut up. Our sorry business is without end</a></h3>\n<p>With the passing of Queen Elizabeth, Stan Grant considers legacy of colonisation for indigenous people around the world.</p>\n<h3><a href=\"https://collect.readwriterespond.com/music-on-the-brain-listening-can-influence-our-brains-activity/\" target=\"_blank\" rel=\"noopener\">Music on the brain: Listening can influence our brain’s activity</a></h3>\n<p>Abdullah Iqbal unpacks some of the research into the benefits of music on the brain.</p>\n<h3><a href=\"https://collect.readwriterespond.com/ark-head/\" target=\"_blank\" rel=\"noopener\">Ark Head</a></h3>\n<p>In order to survived the battered psyche, Venkatesh Rao explains that way have resorted to the ‘ark head’ mental model. This involves giving up on solving the world’s ills and simply hiding in our ark.</p>\n<h3><a href=\"https://collect.readwriterespond.com/the-credibility-of-science-is-damaged-when-universities-brag-about-themselves/\" target=\"_blank\" rel=\"noopener\">The credibility of science is damaged when universities brag about themselves</a></h3>\n<p>Adrian Lenardic and Johnny Seales argue that the rewarding of attention economy has corrupted scientific research.</p>\n<h3><a href=\"https://collect.readwriterespond.com/florence-nightingale-was-born-197-years-ago-and-her-infographics-were-better-than-most-of-the-internets/\" target=\"_blank\" rel=\"noopener\">Florence Nightingale Was Born 197 Years Ago, and Her Infographics Were Better Than Most of the Internet’s</a></h3>\n<p>Celebrating the birth of , Cara Giaimo discusses Florence Nightingale’s impact in regards to the spread of ideas, not just as the ‘Lady with the Lamp’.</p>\n<h2>Read Write Respond #080</h2>\n<p>So that was September for me, how about you? As always, hope you are safe and well.</p>\n<figure id=\"attachment_409\" aria-describedby=\"caption-attachment-409\" style=\"width: 640px\" class=\"wp-caption alignnone\"><img loading=\"lazy\" class=\"size-full wp-image-409\" src=\"https://collect.readwriterespond.com/wp-content/uploads/2017/12/RRR.png\" alt=\"\" width=\"640\" height=\"463\" srcset=\"https://collect.readwriterespond.com/wp-content/uploads/2017/12/RRR.png 640w, https://collect.readwriterespond.com/wp-content/uploads/2017/12/RRR-300x217.png 300w\" sizes=\"(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 984px) 61vw, (max-width: 1362px) 45vw, 600px\"><figcaption id=\"caption-attachment-409\" class=\"wp-caption-text\">Image by Bryan Mathers</figcaption></figure>\n<p> </p>",
                 "value": "Another month and another change to the team at work. Why is it that everyone seems to have had such amazing lives? The new manager at work ran a 10 hour charity music conference in his spare time. I am often happy if I have done the washing and got food on the table, I clearly need to work harder on my pitch.\nOn the family front, we went on our first holiday post-COVID to country Victoria. It was interesting returning to various places with children. I think it is fair to say wine tasting and children do not always match.\nPersonally, I finally got around to loading Linux on my old Macbook Pro and Chromebook. Other than the ability to run music applications, I am pretty happy and not missing a think. I continued my dive back into books listening to Thomas More’s Utopia, Liu Cixin’s The Three-Body Problem and Sylvia Plath’s The Bell Jar. I also nostalgically binged The Dark Crystal: Age of Resistance. (Was this really made for children?) In regards to music, Montaigne’s Making It has been on repeat.\nHere then are some of the other dots that have had me thinking:\nEducation\nThe Tricky Ethics of Being a Teacher on TikTok\nAmelia Tate considers the place of TikTok in the classroom. She discusses the trend of content created about and even with students.\nThe Enduring Allure of Choose Your Own Adventure Books\nLeslie Jamison dives back into the world of the Choose Your Own Adventure book series.\nUnbeaching the whale – The education revolution failed — and so did its way of thinking\nDean Ashenden reflects on the failure of Gonski and the education revolution.\nTimetable Absurdity\nCameron Paterson discusses the way in which schools are still held hostage by the timetable.\nI want, I wish, I hope, I dream\nDavid Truss shares an activity where he creates a portrait wall with a want, a wish, a hope or a dream underneath it.\nTechnology\nAfter Self-Hosting My Email for Twenty-Three Years, I have Thrown In the Towel. The Oligopoloy has Won.\nCarlos Fenollosa reflects on the demise of self-hosted email. One of the main reasons he argues for the failure is the crude blacklisting of large swaths of email, rather than a penalty process.\nWe Spoke With the Last Person Standing in the Floppy Disk Business\nNiek Hilkmann and Thomas Walskaar interview Tom Persky about the dying art of maintaining floppy disks.\nInteroperable Facebook\nCory Doctorow unpacks how an interoperable Facebook might work.\nTech Fear-Mongering Isn’t New—But It’s Time to Break the Cycle\nJason Feifer provides insight into Amy Orben’s four-step Sisyphean cycle of technology panics.\nWe need to deal with data privacy in our classrooms\nBonnie Stewart reflects upon the online learning with the return to the classroom in a post-COVID world.\nAI’s dark arts come into their own\nAlex Hern discusses the dark-side to the magic of artificial intelligence.\nGeneral\nElectric Bike, Stupid Love of My Life\nCraig Mod shares his passion for electric bikes.\nAfter Queen Elizabeth II’s death, Indigenous Australia can’t be expected to shut up. Our sorry business is without end\nWith the passing of Queen Elizabeth, Stan Grant considers legacy of colonisation for indigenous people around the world.\nMusic on the brain: Listening can influence our brain’s activity\nAbdullah Iqbal unpacks some of the research into the benefits of music on the brain.\nArk Head\nIn order to survived the battered psyche, Venkatesh Rao explains that way have resorted to the ‘ark head’ mental model. This involves giving up on solving the world’s ills and simply hiding in our ark.\nThe credibility of science is damaged when universities brag about themselves\nAdrian Lenardic and Johnny Seales argue that the rewarding of attention economy has corrupted scientific research.\nFlorence Nightingale Was Born 197 Years Ago, and Her Infographics Were Better Than Most of the Internet’s\nCelebrating the birth of , Cara Giaimo discusses Florence Nightingale’s impact in regards to the spread of ideas, not just as the ‘Lady with the Lamp’.\nRead Write Respond #080\nSo that was September for me, how about you? As always, hope you are safe and well.\n  Image by Bryan Mathers\n "
               }
             ],
@@ -1290,289 +1611,6 @@
               }
             }
           ]
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "bookmark-of": [
-              {
-                "type": [
-                  "h-cite"
-                ],
-                "properties": {
-                  "name": [
-                    "We need to deal with data privacy in our classrooms — University Affairs"
-                  ],
-                  "url": [
-                    "https://www.universityaffairs.ca/career-advice/the-digital-classroom/we-need-to-deal-with-data-privacy-in-our-classrooms/"
-                  ],
-                  "publication": [
-                    "universityaffairs.ca"
-                  ],
-                  "summary": [
-                    {
-                      "html": "<p>Data is the currency of the tools we enhance our classrooms with. Yet no individual educator can assure safe usage: there are simply too many tools and too many TOS that aren’t meant to be read, or that don’t address educational or ethical concerns.</p>\n<p>As a sector, we don’t have to cede our educational infrastructures to corporate entities and data brokers. We could use our collective voices and procurement power – on postsecondary campuses and in K-12 – to demand that educational technology platforms post clear, plain language, and pedagogically-focused data privacy assurances. As institutions and individuals, we could refuse tools that don’t comply. We could protect our students from extraction and surveillance, while educating them – and ourselves – about privacy in this brave new world.</p>\n<p>This would take a culture shift. Like everyone else living through the last decade, educators have become acculturated to a “click yes and ignore” approach to data.</p>",
-                      "value": "Data is the currency of the tools we enhance our classrooms with. Yet no individual educator can assure safe usage: there are simply too many tools and too many TOS that aren’t meant to be read, or that don’t address educational or ethical concerns.\nAs a sector, we don’t have to cede our educational infrastructures to corporate entities and data brokers. We could use our collective voices and procurement power – on postsecondary campuses and in K-12 – to demand that educational technology platforms post clear, plain language, and pedagogically-focused data privacy assurances. As institutions and individuals, we could refuse tools that don’t comply. We could protect our students from extraction and surveillance, while educating them – and ourselves – about privacy in this brave new world.\nThis would take a culture shift. Like everyone else living through the last decade, educators have become acculturated to a “click yes and ignore” approach to data."
-                    }
-                  ]
-                },
-                "value": "https://www.universityaffairs.ca/career-advice/the-digital-classroom/we-need-to-deal-with-data-privacy-in-our-classrooms/"
-              }
-            ],
-            "content": [
-              {
-                "html": "<a href=\"https://www.universityaffairs.ca/career-advice/the-digital-classroom/we-need-to-deal-with-data-privacy-in-our-classrooms/\" rel=\"noopener\" target=\"_blank\">Bonnie Stewart</a> reflects upon the online learning with the return to the classroom in a post-COVID world. She discusses the problem we have with understanding <a href=\"https://collect.readwriterespond.com/irl-podcast-the-privacy-policy-policy/\" title=\"The “Privacy Policy” Policy (IRL Podcast)\" rel=\"noopener\" target=\"_blank\">terms of service and data privacy</a>. One suggestion provided is to <a href=\"https://www.insidehighered.com/blogs/university-venus/why-higher-ed-needs-data-ethics\" rel=\"noopener\" target=\"_blank\">come together and work collaboratively to understand the impact</a>.",
-                "value": "Bonnie Stewart reflects upon the online learning with the return to the classroom in a post-COVID world. She discusses the problem we have with understanding terms of service and data privacy. One suggestion provided is to come together and work collaboratively to understand the impact."
-              }
-            ],
-            "url": [
-              "https://collect.readwriterespond.com/we-need-to-deal-with-data-privacy-in-our-classrooms/"
-            ],
-            "published": [
-              "2022-10-06T17:54:44+11:00"
-            ],
-            "updated": [
-              "2022-10-06T17:54:44+11:00"
-            ]
-          },
-          "id": "post-24004",
-          "children": [
-            {
-              "type": [
-                "h-card"
-              ],
-              "properties": {
-                "photo": [
-                  {
-                    "value": "https://secure.gravatar.com/avatar/d00e7ca24ca1b9c853da43af229c0e0e?s=49&d=mm&r=g",
-                    "srcset": {
-                      "2x": "https://secure.gravatar.com/avatar/d00e7ca24ca1b9c853da43af229c0e0e?s=98&d=mm&r=g"
-                    },
-                    "alt": ""
-                  }
-                ],
-                "url": [
-                  "https://collect.readwriterespond.com/author/admin/"
-                ],
-                "name": [
-                  "Author  Aaron Davis"
-                ]
-              }
-            }
-          ]
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "like-of": [
-              {
-                "type": [
-                  "h-cite"
-                ],
-                "properties": {
-                  "name": [
-                    "GitHub – ocrmypdf/OCRmyPDF: OCRmyPDF adds an OCR text layer to scanned PDF files, allowing them to be searched"
-                  ],
-                  "url": [
-                    "https://github.com/ocrmypdf/OCRmyPDF"
-                  ],
-                  "publication": [
-                    "GitHub"
-                  ],
-                  "summary": [
-                    {
-                      "html": "<p>OCRmyPDF adds an OCR text layer to scanned PDF files, allowing them to be searched – GitHub – ocrmypdf/OCRmyPDF: OCRmyPDF adds an OCR text layer to scanned PDF files, allowing them to be searched</p>",
-                      "value": "OCRmyPDF adds an OCR text layer to scanned PDF files, allowing them to be searched – GitHub – ocrmypdf/OCRmyPDF: OCRmyPDF adds an OCR text layer to scanned PDF files, allowing them to be searched"
-                    }
-                  ]
-                },
-                "value": "https://github.com/ocrmypdf/OCRmyPDF"
-              }
-            ],
-            "url": [
-              "https://collect.readwriterespond.com/ocrmypdf/"
-            ],
-            "published": [
-              "2022-10-06T17:38:32+11:00"
-            ],
-            "updated": [
-              "2022-10-06T17:38:32+11:00"
-            ]
-          },
-          "id": "post-24016",
-          "children": [
-            {
-              "type": [
-                "h-card"
-              ],
-              "properties": {
-                "photo": [
-                  {
-                    "value": "https://secure.gravatar.com/avatar/d00e7ca24ca1b9c853da43af229c0e0e?s=49&d=mm&r=g",
-                    "srcset": {
-                      "2x": "https://secure.gravatar.com/avatar/d00e7ca24ca1b9c853da43af229c0e0e?s=98&d=mm&r=g"
-                    },
-                    "alt": ""
-                  }
-                ],
-                "url": [
-                  "https://collect.readwriterespond.com/author/admin/"
-                ],
-                "name": [
-                  "Author  Aaron Davis"
-                ]
-              }
-            }
-          ]
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "like-of": [
-              {
-                "type": [
-                  "h-cite"
-                ],
-                "properties": {
-                  "name": [
-                    "Slouching Towards Innovation"
-                  ],
-                  "url": [
-                    "https://tomcritchlow.com/2022/09/13/flow-innovation/"
-                  ],
-                  "publication": [
-                    "tomcritchlow.com"
-                  ],
-                  "summary": [
-                    {
-                      "html": "<p>Innovation work should start with narrative. Create a perspective on the world and from there develop a set of research / data / prototypes / experiments that all ladder back to your narrative.</p>\n<p>This narrative-first approach to innovation feels designed for a professional world that is increasingly a “space of flows”.</p>\n<p>Of course, it’s harder. Because most innovation teams don’t have a perspective on the world. They don’t have a thesis or core insight about how the world is changing or where things are headed. Instead they get obsessed with new shiny things.</p>",
-                      "value": "Innovation work should start with narrative. Create a perspective on the world and from there develop a set of research / data / prototypes / experiments that all ladder back to your narrative.\nThis narrative-first approach to innovation feels designed for a professional world that is increasingly a “space of flows”.\nOf course, it’s harder. Because most innovation teams don’t have a perspective on the world. They don’t have a thesis or core insight about how the world is changing or where things are headed. Instead they get obsessed with new shiny things."
-                    }
-                  ]
-                },
-                "value": "https://tomcritchlow.com/2022/09/13/flow-innovation/"
-              }
-            ],
-            "url": [
-              "https://collect.readwriterespond.com/slouching-towards-innovation/"
-            ],
-            "published": [
-              "2022-10-06T17:36:25+11:00"
-            ],
-            "updated": [
-              "2022-10-06T17:36:25+11:00"
-            ]
-          },
-          "id": "post-24014",
-          "children": [
-            {
-              "type": [
-                "h-card"
-              ],
-              "properties": {
-                "photo": [
-                  {
-                    "value": "https://secure.gravatar.com/avatar/d00e7ca24ca1b9c853da43af229c0e0e?s=49&d=mm&r=g",
-                    "srcset": {
-                      "2x": "https://secure.gravatar.com/avatar/d00e7ca24ca1b9c853da43af229c0e0e?s=98&d=mm&r=g"
-                    },
-                    "alt": ""
-                  }
-                ],
-                "url": [
-                  "https://collect.readwriterespond.com/author/admin/"
-                ],
-                "name": [
-                  "Author  Aaron Davis"
-                ]
-              }
-            }
-          ]
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "like-of": [
-              {
-                "type": [
-                  "h-cite"
-                ],
-                "properties": {
-                  "name": [
-                    "The death of Mikhail Gorbachev has returned us to a time that haunts us"
-                  ],
-                  "url": [
-                    "https://www.abc.net.au/news/2022-09-04/mikhail-gorbachev-cold-war-end-of-democracy-rise-of-china/101399508"
-                  ],
-                  "author": [
-                    {
-                      "type": [
-                        "h-card"
-                      ],
-                      "properties": {
-                        "name": [
-                          "Stan Grant"
-                        ]
-                      },
-                      "value": "Stan Grant"
-                    }
-                  ],
-                  "publication": [
-                    "ABC News"
-                  ],
-                  "summary": [
-                    {
-                      "html": "<p>Of the books to emerge in the wake of the fall of the Berlin Wall, Jacques Derrida best captured the paradox of the time, in Specters of Marx.</p>\n<p>At the end of the Cold War, Derrida saw the shadow of Hamlet. There could be no good ending. “To be out of joint”, he wrote, “…is the very possibility of evil.”</p>\n<p>Derrida coined the word “hauntology”, to describe how the traces of our past — our ghosts — throw shadows on our world.</p>\n<p>As Derrida wrote: “What does it mean to follow a ghost? And what if this came down to being followed by it, always, persecuted by the very chase we are leading?”</p>\n<p>To Derrida, “the future, comes back in advance: from the past….”</p>\n<p>Derrida looked at the liberal triumphalists and saw those “who puff out their chests with the good conscience of capitalism, liberalism, and the virtues of parliamentary democracy.”</p>\n<p>The certainty and triumph he wrote was “obscene in its euphoria.”</p>\n<p>In their moment of victory they did not sense the ghosts returning. The past was lying in wait.</p>\n<p>Indeed, Derrida wrote, “never, never in history has the horizon of the thing whose survival is being celebrated…been as dark, threatening and threatened.”</p>\n<p>The end of the Cold War would unleash the forces of neoliberalism that would in time eat at the heart of democracy itself.</p>",
-                      "value": "Of the books to emerge in the wake of the fall of the Berlin Wall, Jacques Derrida best captured the paradox of the time, in Specters of Marx.\nAt the end of the Cold War, Derrida saw the shadow of Hamlet. There could be no good ending. “To be out of joint”, he wrote, “…is the very possibility of evil.”\nDerrida coined the word “hauntology”, to describe how the traces of our past — our ghosts — throw shadows on our world.\nAs Derrida wrote: “What does it mean to follow a ghost? And what if this came down to being followed by it, always, persecuted by the very chase we are leading?”\nTo Derrida, “the future, comes back in advance: from the past….”\nDerrida looked at the liberal triumphalists and saw those “who puff out their chests with the good conscience of capitalism, liberalism, and the virtues of parliamentary democracy.”\nThe certainty and triumph he wrote was “obscene in its euphoria.”\nIn their moment of victory they did not sense the ghosts returning. The past was lying in wait.\nIndeed, Derrida wrote, “never, never in history has the horizon of the thing whose survival is being celebrated…been as dark, threatening and threatened.”\nThe end of the Cold War would unleash the forces of neoliberalism that would in time eat at the heart of democracy itself."
-                    }
-                  ]
-                },
-                "value": "https://www.abc.net.au/news/2022-09-04/mikhail-gorbachev-cold-war-end-of-democracy-rise-of-china/101399508"
-              }
-            ],
-            "url": [
-              "https://collect.readwriterespond.com/the-death-of-mikhail-gorbachev-has-returned-us-to-a-time-that-haunts-us/"
-            ],
-            "published": [
-              "2022-10-06T17:31:27+11:00"
-            ],
-            "updated": [
-              "2022-10-06T17:31:27+11:00"
-            ]
-          },
-          "id": "post-24012",
-          "children": [
-            {
-              "type": [
-                "h-card"
-              ],
-              "properties": {
-                "photo": [
-                  {
-                    "value": "https://secure.gravatar.com/avatar/d00e7ca24ca1b9c853da43af229c0e0e?s=49&d=mm&r=g",
-                    "srcset": {
-                      "2x": "https://secure.gravatar.com/avatar/d00e7ca24ca1b9c853da43af229c0e0e?s=98&d=mm&r=g"
-                    },
-                    "alt": ""
-                  }
-                ],
-                "url": [
-                  "https://collect.readwriterespond.com/author/admin/"
-                ],
-                "name": [
-                  "Author  Aaron Davis"
-                ]
-              }
-            }
-          ]
         }
       ]
     }
@@ -1663,60 +1701,9 @@
     "home": [
       "https://collect.readwriterespond.com/"
     ],
-    "tag": [
-      "https://collect.readwriterespond.com/tag/education/",
-      "https://collect.readwriterespond.com/tag/representation/",
-      "https://collect.readwriterespond.com/tag/teaching/",
-      "https://collect.readwriterespond.com/tag/coding/",
-      "https://collect.readwriterespond.com/tag/javascript/",
-      "https://collect.readwriterespond.com/tag/music/",
-      "https://collect.readwriterespond.com/tag/bookmarklet/",
-      "https://collect.readwriterespond.com/tag/browsers/",
-      "https://collect.readwriterespond.com/tag/concert/",
-      "https://collect.readwriterespond.com/tag/live-music/",
-      "https://collect.readwriterespond.com/tag/montaigne/",
-      "https://collect.readwriterespond.com/tag/art-of-fighting/",
-      "https://collect.readwriterespond.com/series/rwr-newsletter/",
-      "https://collect.readwriterespond.com/tag/readwriterespond/",
-      "https://collect.readwriterespond.com/tag/literature/",
-      "https://collect.readwriterespond.com/tag/novel/",
-      "https://collect.readwriterespond.com/tag/sylvia-plath/",
-      "https://collect.readwriterespond.com/tag/ideas/",
-      "https://collect.readwriterespond.com/tag/thomas-more/",
-      "https://collect.readwriterespond.com/tag/utopia/",
-      "https://collect.readwriterespond.com/tag/data/",
-      "https://collect.readwriterespond.com/tag/data-visualisation/",
-      "https://collect.readwriterespond.com/tag/florence-nightingale/",
-      "https://collect.readwriterespond.com/tag/history/",
-      "https://collect.readwriterespond.com/tag/adrian-lenardic/",
-      "https://collect.readwriterespond.com/tag/attention/",
-      "https://collect.readwriterespond.com/tag/johnny-seales/",
-      "https://collect.readwriterespond.com/tag/science/",
-      "https://collect.readwriterespond.com/tag/social-media/",
-      "https://collect.readwriterespond.com/tag/ukraine/",
-      "https://collect.readwriterespond.com/tag/alex-christian/",
-      "https://collect.readwriterespond.com/tag/digital-literacies/",
-      "https://collect.readwriterespond.com/tag/work/",
-      "https://collect.readwriterespond.com/tag/complex-systems/",
-      "https://collect.readwriterespond.com/tag/venkatesh-rao/",
-      "https://collect.readwriterespond.com/tag/tania-sheko/",
-      "https://collect.readwriterespond.com/tag/writing/",
-      "https://collect.readwriterespond.com/tag/pitchfork/",
-      "https://collect.readwriterespond.com/tag/playlist/",
-      "https://collect.readwriterespond.com/tag/alex-hern/",
-      "https://collect.readwriterespond.com/tag/artificial-intelligence/",
-      "https://collect.readwriterespond.com/tag/techscape/",
-      "https://collect.readwriterespond.com/tag/bonnie-stewart/",
-      "https://collect.readwriterespond.com/tag/technology/",
-      "https://collect.readwriterespond.com/tag/applications/",
-      "https://collect.readwriterespond.com/tag/ocr/",
-      "https://collect.readwriterespond.com/tag/pdf/",
-      "https://collect.readwriterespond.com/tag/innovation/",
-      "https://collect.readwriterespond.com/tag/tom-critchlow/",
-      "https://collect.readwriterespond.com/tag/jacques-derrida/",
-      "https://collect.readwriterespond.com/tag/mikhail-gorbachev/"
-    ],
     "noopener": [
+      "https://collect.readwriterespond.com/use-switch-function-to-categorize/",
+      "https://readwriterespond.com/2015/07/an-introduction-to-the-gif/",
       "https://www.songkick.com/concerts/40519886-montaigne-at-corner-hotel",
       "https://collect.readwriterespond.com/making-it-montaigne/",
       "https://collect.readwriterespond.com/the-2010s-a-music-making-evolution-and-revolution/",
@@ -1762,26 +1749,85 @@
       "https://collect.readwriterespond.com/the-approaching-tsunami-of-addictive-ai-created-content-will-overwhelm-us/",
       "https://twitter.com/goodside/status/1569128808308957185",
       "https://twitter.com/remoteli_io/status/1570559928284110853?ref_src=twsrc%5Etfw",
-      "https://twitter.com/remoteli_io/status/1570479943775141889?ref_src=twsrc%5Etfw",
-      "https://www.universityaffairs.ca/career-advice/the-digital-classroom/we-need-to-deal-with-data-privacy-in-our-classrooms/",
-      "https://collect.readwriterespond.com/irl-podcast-the-privacy-policy-policy/",
-      "https://www.insidehighered.com/blogs/university-venus/why-higher-ed-needs-data-ethics"
+      "https://twitter.com/remoteli_io/status/1570479943775141889?ref_src=twsrc%5Etfw"
+    ],
+    "tag": [
+      "https://collect.readwriterespond.com/tag/formulas/",
+      "https://collect.readwriterespond.com/tag/google-sheets/",
+      "https://collect.readwriterespond.com/tag/cory-doctorow/",
+      "https://collect.readwriterespond.com/tag/surveillance/",
+      "https://collect.readwriterespond.com/tag/technology/",
+      "https://collect.readwriterespond.com/tag/gif/",
+      "https://collect.readwriterespond.com/tag/kaitlyn-tiffany/",
+      "https://collect.readwriterespond.com/tag/fiona-hardy/",
+      "https://collect.readwriterespond.com/tag/tweet/",
+      "https://collect.readwriterespond.com/tag/education/",
+      "https://collect.readwriterespond.com/tag/representation/",
+      "https://collect.readwriterespond.com/tag/teaching/",
+      "https://collect.readwriterespond.com/tag/coding/",
+      "https://collect.readwriterespond.com/tag/javascript/",
+      "https://collect.readwriterespond.com/tag/music/",
+      "https://collect.readwriterespond.com/tag/bookmarklet/",
+      "https://collect.readwriterespond.com/tag/browsers/",
+      "https://collect.readwriterespond.com/tag/concert/",
+      "https://collect.readwriterespond.com/tag/live-music/",
+      "https://collect.readwriterespond.com/tag/montaigne/",
+      "https://collect.readwriterespond.com/tag/art-of-fighting/",
+      "https://collect.readwriterespond.com/series/rwr-newsletter/",
+      "https://collect.readwriterespond.com/tag/readwriterespond/",
+      "https://collect.readwriterespond.com/tag/literature/",
+      "https://collect.readwriterespond.com/tag/novel/",
+      "https://collect.readwriterespond.com/tag/sylvia-plath/",
+      "https://collect.readwriterespond.com/tag/ideas/",
+      "https://collect.readwriterespond.com/tag/thomas-more/",
+      "https://collect.readwriterespond.com/tag/utopia/",
+      "https://collect.readwriterespond.com/tag/data/",
+      "https://collect.readwriterespond.com/tag/data-visualisation/",
+      "https://collect.readwriterespond.com/tag/florence-nightingale/",
+      "https://collect.readwriterespond.com/tag/history/",
+      "https://collect.readwriterespond.com/tag/adrian-lenardic/",
+      "https://collect.readwriterespond.com/tag/attention/",
+      "https://collect.readwriterespond.com/tag/johnny-seales/",
+      "https://collect.readwriterespond.com/tag/science/",
+      "https://collect.readwriterespond.com/tag/social-media/",
+      "https://collect.readwriterespond.com/tag/ukraine/",
+      "https://collect.readwriterespond.com/tag/alex-christian/",
+      "https://collect.readwriterespond.com/tag/digital-literacies/",
+      "https://collect.readwriterespond.com/tag/work/",
+      "https://collect.readwriterespond.com/tag/complex-systems/",
+      "https://collect.readwriterespond.com/tag/venkatesh-rao/",
+      "https://collect.readwriterespond.com/tag/tania-sheko/",
+      "https://collect.readwriterespond.com/tag/writing/",
+      "https://collect.readwriterespond.com/tag/pitchfork/",
+      "https://collect.readwriterespond.com/tag/playlist/",
+      "https://collect.readwriterespond.com/tag/alex-hern/",
+      "https://collect.readwriterespond.com/tag/artificial-intelligence/",
+      "https://collect.readwriterespond.com/tag/techscape/"
     ],
     "bookmark": [
       "https://collect.readwriterespond.com/read-write-respond-080/"
     ],
     "external": [
+      "https://twitter.com/fionathehardy",
       "https://readwriterespond.com/",
-      "https://chat.brainbaking.com/users/wouter"
+      "https://twitter.com/mrkrndvs",
+      "https://twitter.com/StellaGlorie",
+      "https://johnjohnston.info/blog/author/john/"
     ],
     "nofollow": [
+      "https://twitter.com/fionathehardy",
       "https://readwriterespond.com/",
-      "https://chat.brainbaking.com/users/wouter",
+      "https://twitter.com/mrkrndvs",
+      "https://twitter.com/StellaGlorie",
+      "https://johnjohnston.info/blog/author/john/",
       "http://indieweb.org/"
     ],
     "ugc": [
+      "https://twitter.com/fionathehardy",
       "https://readwriterespond.com/",
-      "https://chat.brainbaking.com/users/wouter"
+      "https://twitter.com/mrkrndvs",
+      "https://twitter.com/StellaGlorie",
+      "https://johnjohnston.info/blog/author/john/"
     ]
   },
   "rel-urls": {
@@ -2002,6 +2048,73 @@
       "rels": [
         "micropub"
       ]
+    },
+    "https://collect.readwriterespond.com/use-switch-function-to-categorize/": {
+      "rels": [
+        "noopener"
+      ],
+      "title": "Use SWITCH Function to Categorise",
+      "text": "SWITCH formula"
+    },
+    "https://collect.readwriterespond.com/tag/formulas/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Formulas"
+    },
+    "https://collect.readwriterespond.com/tag/google-sheets/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Google Sheets"
+    },
+    "https://collect.readwriterespond.com/tag/cory-doctorow/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Cory Doctorow"
+    },
+    "https://collect.readwriterespond.com/tag/surveillance/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Surveillance"
+    },
+    "https://collect.readwriterespond.com/tag/technology/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Technology"
+    },
+    "https://readwriterespond.com/2015/07/an-introduction-to-the-gif/": {
+      "rels": [
+        "noopener"
+      ],
+      "text": "GIFs as a form of quick makes"
+    },
+    "https://collect.readwriterespond.com/tag/gif/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Gif"
+    },
+    "https://collect.readwriterespond.com/tag/kaitlyn-tiffany/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Kaitlyn Tiffany"
+    },
+    "https://collect.readwriterespond.com/tag/fiona-hardy/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Fiona Hardy"
+    },
+    "https://collect.readwriterespond.com/tag/tweet/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Tweet"
     },
     "https://collect.readwriterespond.com/tag/education/": {
       "rels": [
@@ -2547,79 +2660,6 @@
       ],
       "text": "Techscape"
     },
-    "https://www.universityaffairs.ca/career-advice/the-digital-classroom/we-need-to-deal-with-data-privacy-in-our-classrooms/": {
-      "rels": [
-        "noopener"
-      ],
-      "text": "Bonnie Stewart"
-    },
-    "https://collect.readwriterespond.com/irl-podcast-the-privacy-policy-policy/": {
-      "rels": [
-        "noopener"
-      ],
-      "title": "The “Privacy Policy” Policy (IRL Podcast)",
-      "text": "terms of service and data privacy"
-    },
-    "https://www.insidehighered.com/blogs/university-venus/why-higher-ed-needs-data-ethics": {
-      "rels": [
-        "noopener"
-      ],
-      "text": "come together and work collaboratively to understand the impact"
-    },
-    "https://collect.readwriterespond.com/tag/bonnie-stewart/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Bonnie Stewart"
-    },
-    "https://collect.readwriterespond.com/tag/technology/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Technology"
-    },
-    "https://collect.readwriterespond.com/tag/applications/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "applications"
-    },
-    "https://collect.readwriterespond.com/tag/ocr/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "OCR"
-    },
-    "https://collect.readwriterespond.com/tag/pdf/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "PDF"
-    },
-    "https://collect.readwriterespond.com/tag/innovation/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Innovation"
-    },
-    "https://collect.readwriterespond.com/tag/tom-critchlow/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Tom Critchlow"
-    },
-    "https://collect.readwriterespond.com/tag/jacques-derrida/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Jacques Derrida"
-    },
-    "https://collect.readwriterespond.com/tag/mikhail-gorbachev/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Mikhail Gorbachev"
-    },
     "https://www.instagram.com/mrkrndvs": {
       "rels": [
         "me"
@@ -2697,13 +2737,29 @@
       "title": "Aaron Davis @ website",
       "text": "buttondown.email"
     },
-    "https://chat.brainbaking.com/users/wouter": {
+    "https://twitter.com/fionathehardy": {
       "rels": [
         "external",
         "nofollow",
         "ugc"
       ],
-      "text": "Wouter Groeneveld"
+      "text": "Fiona Hardly Spooky"
+    },
+    "https://twitter.com/StellaGlorie": {
+      "rels": [
+        "external",
+        "nofollow",
+        "ugc"
+      ],
+      "text": "Stella Glorie"
+    },
+    "https://johnjohnston.info/blog/author/john/": {
+      "rels": [
+        "external",
+        "nofollow",
+        "ugc"
+      ],
+      "text": "john"
     },
     "http://indieweb.org/": {
       "rels": [

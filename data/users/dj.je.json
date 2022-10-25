@@ -22,6 +22,9 @@
     "token_endpoint": [
       "https://dj.je/token"
     ],
+    "webmention": [
+      "https://dj.je/webmentions"
+    ],
     "micropub": [
       "https://dj.je/micropub"
     ]
@@ -72,6 +75,11 @@
     "https://dj.je/token": {
       "rels": [
         "token_endpoint"
+      ]
+    },
+    "https://dj.je/webmentions": {
+      "rels": [
+        "webmention"
       ]
     },
     "https://dj.je/micropub": {
