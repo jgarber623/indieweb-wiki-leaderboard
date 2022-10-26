@@ -34,6 +34,29 @@
           ],
           "properties": {
             "name": [
+              "IndieAuth login history",
+              ""
+            ],
+            "url": [
+              "https://herestomwiththeweather.com/2022/10/25/indieauth-login-history/"
+            ],
+            "time": [
+              "2022-10-25T16:51:16+00:00"
+            ],
+            "content": [
+              {
+                "html": "<p>In my last post, I mentioned that I planned to add login history to <a href=\"https://github.com/herestomwiththeweather/irwin\">Irwin</a>.  As I was testing my code, I logged into <a href=\"https://indieweb.org/\">indieweb.org</a> and noticed that I needed to update my code to support <a href=\"https://indieauth.spec.indieweb.org/#profile-url-response\">5.3.2 Profile URL Response</a> of the IndieAuth spec as this IndieAuth client does not need an access token.  Here’s what the history looks like on my IndieAuth server:</p>\n\n<p><img src=\"https://coffeebucks.s3.amazonaws.com/images/image/jekyll/indieauth_login_history.png\" alt=\"IndieAuth login history\"></p>\n\n<p>If I click on a login timestamp, I have the option to revoke the access token associated with the login if it exists and has not already expired.  My next step is to test some other <a href=\"https://indieweb.org/Micropub/Servers\">micropub servers</a> than the one I use to see what interoperability updates I may need to make.</p>",
+                "value": "In my last post, I mentioned that I planned to add login history to Irwin.  As I was testing my code, I logged into indieweb.org and noticed that I needed to update my code to support 5.3.2 Profile URL Response of the IndieAuth spec as this IndieAuth client does not need an access token.  Here’s what the history looks like on my IndieAuth server:\n\n IndieAuth login history \n\nIf I click on a login timestamp, I have the option to revoke the access token associated with the login if it exists and has not already expired.  My next step is to test some other micropub servers than the one I use to see what interoperability updates I may need to make."
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               "Minimum Viable IndieAuth Server",
               ""
             ],
@@ -114,35 +137,6 @@
                   ]
                 },
                 "value": "Liked\n    \n      https://aaronparecki.com/2022/09/16/16/oauth"
-              }
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "url": [
-              "https://herestomwiththeweather.com/social/2022/08/02/4466/"
-            ],
-            "time": [
-              "2022-08-02T01:14:26+00:00"
-            ],
-            "name": [
-              {
-                "type": [
-                  "h-entry"
-                ],
-                "properties": {
-                  "like-of": [
-                    "https://martymcgui.re/2022/07/31/switching-costs-for-an-indieauth-server/"
-                  ],
-                  "name": [
-                    "Liked\n    \n      https://martymcgui.re/2022/07/31/switching-costs-for-an-indieauth-server/"
-                  ]
-                },
-                "value": "Liked\n    \n      https://martymcgui.re/2022/07/31/switching-costs-for-an-indieauth-server/"
               }
             ]
           }
