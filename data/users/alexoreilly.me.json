@@ -6,71 +6,99 @@
       ],
       "properties": {
         "name": [
-          "Alex O'Reilly"
-        ],
-        "nickname": [
-          "alekzandriia"
-        ],
-        "photo": [
-          "https://picsum.photos/200"
+          "Alexandria O'Reilly"
         ],
         "url": [
           "https://alexoreilly.me/"
-        ],
-        "email": [
-          "mailto:hello@alekzandriia.com"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "published": [
-          "2022-10-03"
-        ],
-        "content": [
-          "I ate a cheese sandwich."
-        ],
-        "author": [
-          "http://alexoreilly.me/"
         ]
       }
     }
   ],
   "rels": {
+    "icon": [
+      "https://alexoreilly.me/favicon.ico"
+    ],
+    "shortcut": [
+      "https://alexoreilly.me/favicon.ico"
+    ],
+    "noopener": [
+      "https://tiddlywiki.com/"
+    ],
+    "noreferrer": [
+      "https://tiddlywiki.com/"
+    ],
     "me": [
+      "https://alexoreilly.me/",
+      "https://alekz.dev/",
+      "https://twitter.com/alekzandriia",
+      "https://github.com/alekzandriia",
+      "https://www.linkedin.com/in/alekzandriia/",
+      "https://codepen.io/alekzandriia",
+      "https://dribbble.com/alekzandriia",
       "mailto:hello@alekzandriia.com"
-    ],
-    "webmention": [
-      "https://webmention.io/alexoreilly/webmention"
-    ],
-    "pingback": [
-      "https://webmention.io/alexoreilly/xmlrpc",
-      "https://webmention.io/webmention?forward=https://alexoreilly.com/endpoint"
     ]
   },
   "rel-urls": {
+    "https://alexoreilly.me/favicon.ico": {
+      "rels": [
+        "icon",
+        "shortcut"
+      ]
+    },
+    "https://tiddlywiki.com/": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "TiddlyWiki"
+    },
+    "https://alexoreilly.me/": {
+      "rels": [
+        "me"
+      ],
+      "text": "Alexandria O'Reilly"
+    },
+    "https://alekz.dev/": {
+      "rels": [
+        "me"
+      ],
+      "text": "blog"
+    },
+    "https://twitter.com/alekzandriia": {
+      "rels": [
+        "me"
+      ],
+      "text": "twitter"
+    },
+    "https://github.com/alekzandriia": {
+      "rels": [
+        "me"
+      ],
+      "text": "github"
+    },
+    "https://www.linkedin.com/in/alekzandriia/": {
+      "rels": [
+        "me"
+      ],
+      "text": "linkedin"
+    },
+    "https://codepen.io/alekzandriia": {
+      "rels": [
+        "me"
+      ],
+      "text": "codepen"
+    },
+    "https://dribbble.com/alekzandriia": {
+      "rels": [
+        "me"
+      ],
+      "text": "dribbble"
+    },
     "mailto:hello@alekzandriia.com": {
       "rels": [
         "me"
-      ]
-    },
-    "https://webmention.io/alexoreilly/webmention": {
-      "rels": [
-        "webmention"
-      ]
-    },
-    "https://webmention.io/alexoreilly/xmlrpc": {
-      "rels": [
-        "pingback"
-      ]
-    },
-    "https://webmention.io/webmention?forward=https://alexoreilly.com/endpoint": {
-      "rels": [
-        "pingback"
-      ]
+      ],
+      "text": "email"
     }
   }
 }
