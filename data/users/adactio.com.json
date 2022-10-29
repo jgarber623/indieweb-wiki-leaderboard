@@ -40,6 +40,47 @@
         "h-entry"
       ],
       "properties": {
+        "content": [
+          {
+            "html": "<p>If you watch this video at 0.5 playback speed, it sounds like an angry drunk hobo slurring his speech has wandered onto the stage—so much better that way:</p>\n\n<p><a href=\"https://www.youtube.com/watch?v=8q03gUCB690\">https://www.youtube.com/watch?v=8q03gUCB690</a></p>\n<div><a class=\"videoimglink\" href=\"https://www.youtube.com/watch?v=8q03gUCB690\" onclick=\"event.preventDefault();this.parentNode.className='embed';this.parentNode.innerHTML='&lt;iframe src=https://www.youtube-nocookie.com/embed/8q03gUCB690?autoplay=1&gt;&lt;/iframe&gt;';\"><img style=\"width: 100%\" loading=\"lazy\" src=\"https://i.ytimg.com/vi/8q03gUCB690/mqdefault.jpg\" alt=\"Design Principles For The Web - Jeremy Keith\" srcset=\"https://i.ytimg.com/vi/8q03gUCB690/mqdefault.jpg 320w, https://i.ytimg.com/vi/8q03gUCB690/hqdefault.jpg 480w, https://i.ytimg.com/vi/8q03gUCB690/sddefault.jpg 640w, https://i.ytimg.com/vi/8q03gUCB690/maxresdefault.jpg 1280w\" sizes=\"(min-width: 65em) 55vw, 90vw\"></a></div>",
+            "value": "If you watch this video at 0.5 playback speed, it sounds like an angry drunk hobo slurring his speech has wandered onto the stage—so much better that way:\n\nhttps://www.youtube.com/watch?v=8q03gUCB690\n Design Principles For The Web - Jeremy Keith"
+          }
+        ],
+        "name": [
+          "If you watch this video at 0.5 playback speed, it sounds like an angry drunk hobo slurring his speech has wandered onto the stage—so much better that way:\n\nhttps://www.youtube.com/watch?v=8q03gUCB690\n Design Principles For The Web - Jeremy Keith"
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "50.83252944"
+              ],
+              "longitude": [
+                "-0.11814775"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/notes/19554"
+        ],
+        "published": [
+          "2022-10-28T15:10:33Z"
+        ],
+        "syndication": [
+          "https://twitter.com/adactio/status/1586012551896252418"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
         "photo": [
           {
             "value": "https://adactio.com/images/uploaded/19552/small.jpg",
@@ -1012,64 +1053,6 @@
     },
     {
       "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "name": [
-          "JavaScript"
-        ],
-        "url": [
-          "https://adactio.com/journal/19531"
-        ],
-        "content": [
-          {
-            "html": "<p>A recurring theme in my writing and talks is “lay off the JavaScript, people!” But I have to make a conscious effort to specify that I mean <em>client-side</em> JavaScript.</p>\n\n<p>I thought it would be obvious from the context that I was talking about the copious amounts of JavaScript being shipped to end users to download, parse, and execute. But nothing’s ever really obvious. If I don’t explicitly say JavaScript <em>in the browser</em>, then someone inevitably thinks I’m having a go at JavaScript, <em>the language</em>.</p>\n\n<p>I have absolutely nothing against JavaScript the language. Just like I have nothing against Python or Ruby or any other language that you might write with on your machine or your web server. But as soon as you deliver bytes over the wire, I start having opinions. It just so happens that JavaScript is the universal language for client-side coding so that’s why I call for restraint with JavaScript specifically.</p>\n\n<p>There was a time when JavaScript only existed in web browsers. That changed with Node. Now it’s possible to write code for your web server and code for web browsers using the same language. Very handy!</p>\n\n<p>But just because it’s the same language doesn’t mean you should treat it the same in both circumstance. <a href=\"https://remysharp.com/2022/10/13/two-javascripts\">As Remy puts it</a>:</p>\n\n<blockquote>\n  <p>There are two JavaScripts.</p>\n  \n  <p>One for the server - where you can go wild.</p>\n  \n  <p>One for the client - that should be thoughtful and careful.</p>\n</blockquote>\n\n<p>I was reading something recently that referred to <a href=\"https://www.11ty.dev/\">Eleventy</a> as a JavaScript library. It really brought me up short. I mean, on the one hand, yes, it’s a library of code and it’s written in JavaScript. It is absolutely technically correct to call it a JavaScript library.</p>\n\n<p>But in my mind, a JavaScript library is something you ship to web browsers—jQuery, React, Vue, and so on. Whereas Eleventy executes its code in order to generate HTML and <em>that’s</em> what gets sent to end users. Conceptually, it’s like the opposite of a JavaScript library. Eleventy does its work before any user requests a URL—JavaScript libraries do their work after a user requests a URL.</p>\n\n<p>To me it seems obvious that there should an entirely different mindset for writing code intended for a web browser. But nothing’s ever really obvious.</p>\n\n<p>I remember when Node was getting really popular and <code>npm</code> came along as a way to manage all the bundles of code that people were assembling in their Node programmes. Makes total sense. But then I thought I heard about people using <code>npm</code> to do the same thing for client-side code. “That can’t be right!” I thought. I must’ve misunderstood. So <a href=\"https://adactio.com/journal/16138\">I talked to someone from <code>npm</code></a> and explained how I must be misunderstanding something.</p>\n\n<p>But it turned out that people really were treating client-side JavaScript no different than server-side JavaScript. People really were pulling in megabytes of other people’s code to ship to end users so that they could, I dunno, left pad numbers or something.</p>\n\n<p>Listen, I don’t care what you get up to in the privacy of your own codebase. But don’t poison the well of the web with profligate <em>client-side</em> JavaScript.</p>",
-            "value": "A recurring theme in my writing and talks is “lay off the JavaScript, people!” But I have to make a conscious effort to specify that I mean client-side JavaScript.\n\nI thought it would be obvious from the context that I was talking about the copious amounts of JavaScript being shipped to end users to download, parse, and execute. But nothing’s ever really obvious. If I don’t explicitly say JavaScript in the browser, then someone inevitably thinks I’m having a go at JavaScript, the language.\n\nI have absolutely nothing against JavaScript the language. Just like I have nothing against Python or Ruby or any other language that you might write with on your machine or your web server. But as soon as you deliver bytes over the wire, I start having opinions. It just so happens that JavaScript is the universal language for client-side coding so that’s why I call for restraint with JavaScript specifically.\n\nThere was a time when JavaScript only existed in web browsers. That changed with Node. Now it’s possible to write code for your web server and code for web browsers using the same language. Very handy!\n\nBut just because it’s the same language doesn’t mean you should treat it the same in both circumstance. As Remy puts it:\n\n\n  There are two JavaScripts.\n  \n  One for the server - where you can go wild.\n  \n  One for the client - that should be thoughtful and careful.\n\n\nI was reading something recently that referred to Eleventy as a JavaScript library. It really brought me up short. I mean, on the one hand, yes, it’s a library of code and it’s written in JavaScript. It is absolutely technically correct to call it a JavaScript library.\n\nBut in my mind, a JavaScript library is something you ship to web browsers—jQuery, React, Vue, and so on. Whereas Eleventy executes its code in order to generate HTML and that’s what gets sent to end users. Conceptually, it’s like the opposite of a JavaScript library. Eleventy does its work before any user requests a URL—JavaScript libraries do their work after a user requests a URL.\n\nTo me it seems obvious that there should an entirely different mindset for writing code intended for a web browser. But nothing’s ever really obvious.\n\nI remember when Node was getting really popular and npm came along as a way to manage all the bundles of code that people were assembling in their Node programmes. Makes total sense. But then I thought I heard about people using npm to do the same thing for client-side code. “That can’t be right!” I thought. I must’ve misunderstood. So I talked to someone from npm and explained how I must be misunderstanding something.\n\nBut it turned out that people really were treating client-side JavaScript no different than server-side JavaScript. People really were pulling in megabytes of other people’s code to ship to end users so that they could, I dunno, left pad numbers or something.\n\nListen, I don’t care what you get up to in the privacy of your own codebase. But don’t poison the well of the web with profligate client-side JavaScript."
-          }
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83258878"
-              ],
-              "longitude": [
-                "-0.11817124"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "published": [
-          "2022-10-19T14:49:06Z"
-        ],
-        "category": [
-          "javascript",
-          "frontend",
-          "development",
-          "backend",
-          "clients",
-          "servers",
-          "programming",
-          "coding",
-          "performance",
-          "node",
-          "npm",
-          "libraries",
-          "frameworks",
-          "evaluating",
-          "technology"
-        ],
-        "syndication": [
-          "https://adactio.medium.com/7dc09f41ae6e"
-        ]
-      }
-    },
-    {
-      "type": [
         "h-card"
       ],
       "properties": {
@@ -1808,6 +1791,7 @@
       "https://adactio.com/includes/css/print.css"
     ],
     "bookmark": [
+      "https://adactio.com/notes/19554",
       "https://adactio.com/notes/19552",
       "https://adactio.com/notes/19551",
       "https://adactio.com/links/19550",
@@ -1826,10 +1810,10 @@
       "https://adactio.com/notes/19536",
       "https://adactio.com/notes/19535",
       "https://adactio.com/links/19534",
-      "https://adactio.com/links/19533",
-      "https://adactio.com/journal/19531"
+      "https://adactio.com/links/19533"
     ],
     "syndication": [
+      "https://twitter.com/adactio/status/1586012551896252418",
       "https://www.swarmapp.com/user/112073/checkin/635ae45b1879724c765ebb59",
       "https://www.swarmapp.com/user/112073/checkin/63598cd860a6dd72268be792",
       "https://adactio.medium.com/f85884bd2525",
@@ -1842,8 +1826,7 @@
       "https://twitter.com/adactio/status/1583829140989706243",
       "https://twitter.com/adactio/status/1583814967077527553",
       "https://www.instagram.com/p/Cj-nwzVNcLK/",
-      "https://twitter.com/adactio/status/1583399872161452032",
-      "https://adactio.medium.com/7dc09f41ae6e"
+      "https://twitter.com/adactio/status/1583399872161452032"
     ],
     "tag": [
       "https://adactio.com/tags/interfaces",
@@ -1920,14 +1903,7 @@
       "https://adactio.com/tags/scalable",
       "https://adactio.com/tags/slider",
       "https://adactio.com/tags/sizing",
-      "https://adactio.com/tags/spacing",
-      "https://adactio.com/tags/backend",
-      "https://adactio.com/tags/clients",
-      "https://adactio.com/tags/servers",
-      "https://adactio.com/tags/coding",
-      "https://adactio.com/tags/performance",
-      "https://adactio.com/tags/node",
-      "https://adactio.com/tags/npm"
+      "https://adactio.com/tags/spacing"
     ],
     "next": [
       "https://adactio.com/?start=20"
@@ -2317,6 +2293,18 @@
         "me"
       ],
       "text": "music"
+    },
+    "https://adactio.com/notes/19554": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n3:10pm\n\n"
+    },
+    "https://twitter.com/adactio/status/1586012551896252418": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "Twitter"
     },
     "https://adactio.com/notes/19552": {
       "rels": [
@@ -2959,60 +2947,6 @@
         "tag"
       ],
       "text": "spacing"
-    },
-    "https://adactio.com/journal/19531": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n2:49pm\n\n"
-    },
-    "https://adactio.com/tags/backend": {
-      "rels": [
-        "tag"
-      ],
-      "text": "backend"
-    },
-    "https://adactio.com/tags/clients": {
-      "rels": [
-        "tag"
-      ],
-      "text": "clients"
-    },
-    "https://adactio.com/tags/servers": {
-      "rels": [
-        "tag"
-      ],
-      "text": "servers"
-    },
-    "https://adactio.com/tags/coding": {
-      "rels": [
-        "tag"
-      ],
-      "text": "coding"
-    },
-    "https://adactio.com/tags/performance": {
-      "rels": [
-        "tag"
-      ],
-      "text": "performance"
-    },
-    "https://adactio.com/tags/node": {
-      "rels": [
-        "tag"
-      ],
-      "text": "node"
-    },
-    "https://adactio.com/tags/npm": {
-      "rels": [
-        "tag"
-      ],
-      "text": "npm"
-    },
-    "https://adactio.medium.com/7dc09f41ae6e": {
-      "rels": [
-        "syndication"
-      ],
-      "text": "Medium"
     },
     "https://adactio.com/?start=20": {
       "rels": [

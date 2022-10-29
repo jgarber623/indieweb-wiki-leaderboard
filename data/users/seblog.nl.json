@@ -39,6 +39,42 @@
           ],
           "properties": {
             "name": [
+              "Using PHPStan to fill Vim's Quickfix list"
+            ],
+            "content": [
+              {
+                "html": "<p>I am using PHPStan and the <a href=\"https://github.com/w0rp/ale\">ALE plugin</a> to add some error checking to my Vim. It gives red arrows on lines that contain errors in my currently opened files. But sometimes, in a big refactor, I want to know all errors in my project.</p>\n<p>Vim has a build-in feature for this: the quickfix list. It is designed to take the error output of a compiler and lets you jump to all those locations with the <code>:cnext</code> and <code>:cprev</code> commands. I personally use the essential <a href=\"https://github.com/tpope/vim-unimpaired\">Unimpaired</a> plugin by the one and only tpope, which maps these to <code>]q</code> and <code>[q</code>.</p>\n<p>I use these a lot: the <code>:grep</code> command fills the quickfix list with all the occurrences of your search, like normal grep but with pagination (or, if you set your <code>grepprg</code> to something faster: like ripgrep with pagination).</p>\n<p>To get PHPStan to fill this quickfix list, I looked for plugins, but they all seemed hairy. I was convinced this should be simple, and it was. The following leader mapping seems to just work:</p>\n<pre><code class=\"language-vim\">nmap &lt;leader&gt;pa :cexpr system('vendor/bin/phpstan analyse --no-progress --error-format=raw')&lt;cr&gt;</code></pre>",
+                "value": "I am using PHPStan and the ALE plugin to add some error checking to my Vim. It gives red arrows on lines that contain errors in my currently opened files. But sometimes, in a big refactor, I want to know all errors in my project.\nVim has a build-in feature for this: the quickfix list. It is designed to take the error output of a compiler and lets you jump to all those locations with the :cnext and :cprev commands. I personally use the essential Unimpaired plugin by the one and only tpope, which maps these to ]q and [q.\nI use these a lot: the :grep command fills the quickfix list with all the occurrences of your search, like normal grep but with pagination (or, if you set your grepprg to something faster: like ripgrep with pagination).\nTo get PHPStan to fill this quickfix list, I looked for plugins, but they all seemed hairy. I was convinced this should be simple, and it was. The following leader mapping seems to just work:\nnmap <leader>pa :cexpr system('vendor/bin/phpstan analyse --no-progress --error-format=raw')<cr>"
+              }
+            ],
+            "url": [
+              "https://seblog.nl/2022/10/28/1/phpstan-vim-quickfix-list"
+            ],
+            "published": [
+              "2022-10-28T11:19:39+0000"
+            ],
+            "updated": [
+              "2022-10-28T11:19:39+0000"
+            ],
+            "uid": [
+              "https://seblog.nl/2022/301/1"
+            ],
+            "author": [
+              "https://seblog.nl/"
+            ],
+            "category": [
+              "vim",
+              "phpstan",
+              "php"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               "Customising Git: some things I did"
             ],
             "content": [
@@ -682,37 +718,6 @@
             ],
             "category": [
               "nfc"
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "content": [
-              {
-                "html": "<p>Je bent altijd één plugin verwijderd van je ideale WordPress-setup.</p>",
-                "value": "Je bent altijd één plugin verwijderd van je ideale WordPress-setup."
-              }
-            ],
-            "url": [
-              "https://seblog.nl/2022/05/03/1/wordpress"
-            ],
-            "published": [
-              "2022-05-03T14:46:39+0000"
-            ],
-            "updated": [
-              "2022-05-03T14:48:15+0000"
-            ],
-            "syndication": [
-              "https://twitter.com/sebsel/status/1521501638925729795"
-            ],
-            "uid": [
-              "https://seblog.nl/2022/123/1"
-            ],
-            "author": [
-              "https://seblog.nl/"
             ]
           }
         }

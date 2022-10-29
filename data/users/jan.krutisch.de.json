@@ -6,6 +6,25 @@
       ],
       "properties": {
         "url": [
+          "https://jan.krutisch.de/en/2022/10/28/the-end-of-an-era.html"
+        ],
+        "name": [
+          "The End of an Era?"
+        ],
+        "published": [
+          "2022-10-28T00:00:00+02:00"
+        ],
+        "summary": [
+          "So Twitter is now officially the playball of a billionaire with a history of questionable business practices, a strong anti union stance and a self proclaimed free-speech-absolutionism.\n\nSounds like a plan. Not necessarily a good one, but a plan."
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "url": [
           "https://jan.krutisch.de/en/2021/08/12/one-of-the-fundamental-questions.html"
         ],
         "name": [
@@ -173,25 +192,6 @@
     },
     {
       "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "url": [
-          "https://jan.krutisch.de/en/2016/11/10/what-could-possibly-go-wrong.html"
-        ],
-        "name": [
-          "What could possibly go wrong with a president Trump?"
-        ],
-        "published": [
-          "2016-11-10T00:00:00+01:00"
-        ],
-        "summary": [
-          "Over the last few weeks, I had random conversations with people where the US presidential elections came up. On more than one occasion, someone brought up the typical “Well, Trump is a crazy person, but the American president doesn’t have that much power anyway, so what should go wrong. And by the way, Hillary is a Hawk and that might be really bad, too” line.\n\nBy the way, this is a European perspective, but I assume it is something Americans have heard in conversations as well.\n\nHere’s a few reasons why I think this line of thinking is extremely lazy and dangerous:"
-        ]
-      }
-    },
-    {
-      "type": [
         "h-card"
       ],
       "properties": {
@@ -199,7 +199,8 @@
           "mailto:jan+www@krutisch.de"
         ],
         "url": [
-          "http://twitter.com/halfbyte"
+          "http://twitter.com/halfbyte",
+          "http://ruby.social/@halfbyte"
         ],
         "tel": [
           "+49-175-2935345"
@@ -209,7 +210,6 @@
   ],
   "rels": {
     "stylesheet": [
-      "https://fonts.googleapis.com/css?family=Fira+Mono",
       "https://jan.krutisch.de/css/screen.css"
     ],
     "openid2.provider": [
@@ -225,12 +225,15 @@
       "https://openid.stackexchange.com/user/8a2dd437-b3d3-4382-87b1-d2c861579ca4"
     ],
     "me": [
-      "http://twitter.com/halfbyte",
-      "http://github.com/halfbyte",
+      "https://twitter.com/halfbyte",
+      "https://soundcloud.com/halfbyte",
+      "https://github.com/halfbyte",
       "https://www.flickr.com/photos/jankrutisch/",
-      "http://pants.halfbyte.org/",
+      "https://ruby.social/@halfbyte",
+      "https://write.halfbyte.org/",
       "mailto:jan+www@krutisch.de",
-      "skype:JanKrutisch?chat",
+      "http://twitter.com/halfbyte",
+      "http://ruby.social/@halfbyte",
       "tel:+49-175-2935345"
     ],
     "pingback": [
@@ -253,12 +256,6 @@
     ]
   },
   "rel-urls": {
-    "https://fonts.googleapis.com/css?family=Fira+Mono": {
-      "rels": [
-        "stylesheet"
-      ],
-      "type": "text/css"
-    },
     "https://jan.krutisch.de/css/screen.css": {
       "rels": [
         "stylesheet"
@@ -276,12 +273,17 @@
         "openid2.local_id"
       ]
     },
-    "http://twitter.com/halfbyte": {
+    "https://twitter.com/halfbyte": {
       "rels": [
         "me"
       ]
     },
-    "http://github.com/halfbyte": {
+    "https://soundcloud.com/halfbyte": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://github.com/halfbyte": {
       "rels": [
         "me"
       ]
@@ -291,7 +293,12 @@
         "me"
       ]
     },
-    "http://pants.halfbyte.org/": {
+    "https://ruby.social/@halfbyte": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://write.halfbyte.org/": {
       "rels": [
         "me"
       ]
@@ -333,11 +340,17 @@
       ],
       "text": "via Email"
     },
-    "skype:JanKrutisch?chat": {
+    "http://twitter.com/halfbyte": {
       "rels": [
         "me"
       ],
-      "text": "...via Skype"
+      "text": "on Twitter"
+    },
+    "http://ruby.social/@halfbyte": {
+      "rels": [
+        "me"
+      ],
+      "text": "on the Fediverse"
     },
     "tel:+49-175-2935345": {
       "rels": [

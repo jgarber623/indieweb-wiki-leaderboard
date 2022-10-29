@@ -413,8 +413,8 @@
             ],
             "content": [
               {
-                "html": "<small class=\"twt-context\">\n&amp;rdsh;\n<a href=\"https://yarn.mills.io/conv/k5by7pa#6ft327a\" title=\"Show conversation for #k5by7pa\">In-reply-to</a>\n»\nHey look another post right now. <strong>@6:46PM</strong>\n</small>\n<p></p>\n<p><a href=\"https://yarn.mills.io/external?uri=https://devtxt.quisquiliae.com/user/ullarah/twtxt.txt&amp;nick=ullarah\">@ullarah<em>@devtxt.quisquiliae.com</em></a> And a reply for you good sir :)</p>",
-                "value": "&rdsh;\nIn-reply-to\n»\nHey look another post right now. @6:46PM\n\n@ullarah@devtxt.quisquiliae.com And a reply for you good sir :)"
+                "html": "<small class=\"twt-context\">\n&amp;rdsh;\n<a href=\"https://yarn.mills.io/conv/k5by7pa#6ft327a\" title=\"Show conversation for #k5by7pa\">In-reply-to</a>\n»\nHey look another post right now. <strong>@6:46PM</strong>\n</small>\n<p></p>\n<p><a href=\"https://yarn.mills.io/external?uri=https://devtxt.quisquiliae.com/user/ullarah/twtxt.txt&amp;nick=ullarah#ullarah\" target=\"_blank\" rel=\"nofollow noopener\">@ullarah</a> And a reply for you good sir :)</p>",
+                "value": "&rdsh;\nIn-reply-to\n»\nHey look another post right now. @6:46PM\n\n@ullarah And a reply for you good sir :)"
               }
             ]
           },
@@ -1057,8 +1057,8 @@
             ],
             "content": [
               {
-                "html": "<p></p>\n<p>Hello <a href=\"https://yarn.mills.io/external?uri=https://devtxt.quisquiliae.com/user/ullarah/twtxt.txt&amp;nick=ullarah\">@ullarah<em>@devtxt.quisquiliae.com</em></a></p>",
-                "value": "Hello @ullarah@devtxt.quisquiliae.com"
+                "html": "<p></p>\n<p>Hello <a href=\"https://yarn.mills.io/external?uri=https://devtxt.quisquiliae.com/user/ullarah/twtxt.txt&amp;nick=ullarah#ullarah\" target=\"_blank\" rel=\"nofollow noopener\">@ullarah</a></p>",
+                "value": "Hello @ullarah"
               }
             ]
           },
@@ -1115,10 +1115,10 @@
   ],
   "rels": {
     "stylesheet": [
-      "https://yarn.mills.io/css/b27bc006/yarn.min.css"
+      "https://yarn.mills.io/css/38446146/yarn.min.css"
     ],
     "icon": [
-      "https://yarn.mills.io/img/b27bc006/favicon.png"
+      "https://yarn.mills.io/img/38446146/favicon.png"
     ],
     "authorization_endpoint": [
       "https://yarn.mills.io/indieauth/auth"
@@ -1134,15 +1134,21 @@
       "https://yarn.mills.io/atom.xml",
       "https://yarn.mills.io/user/james/twtxt.txt",
       "https://yarn.mills.io/user/james/atom.xml"
+    ],
+    "nofollow": [
+      "https://yarn.mills.io/external?uri=https://devtxt.quisquiliae.com/user/ullarah/twtxt.txt&nick=ullarah#ullarah"
+    ],
+    "noopener": [
+      "https://yarn.mills.io/external?uri=https://devtxt.quisquiliae.com/user/ullarah/twtxt.txt&nick=ullarah#ullarah"
     ]
   },
   "rel-urls": {
-    "https://yarn.mills.io/css/b27bc006/yarn.min.css": {
+    "https://yarn.mills.io/css/38446146/yarn.min.css": {
       "rels": [
         "stylesheet"
       ]
     },
-    "https://yarn.mills.io/img/b27bc006/favicon.png": {
+    "https://yarn.mills.io/img/38446146/favicon.png": {
       "rels": [
         "icon"
       ],
@@ -1188,6 +1194,13 @@
       "rels": [
         "webmention"
       ]
+    },
+    "https://yarn.mills.io/external?uri=https://devtxt.quisquiliae.com/user/ullarah/twtxt.txt&nick=ullarah#ullarah": {
+      "rels": [
+        "nofollow",
+        "noopener"
+      ],
+      "text": "@ullarah"
     }
   }
 }
