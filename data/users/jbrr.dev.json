@@ -84,6 +84,12 @@
       "https://github.com/jbrr",
       "https://mastodon.lol/@jbrr",
       "https://micro.jbrr.dev/"
+    ],
+    "webmention": [
+      "https://webmention.io/jbrr.dev/webmention"
+    ],
+    "pingback": [
+      "https://webmention.io/jbrr.dev/xmlrpc"
     ]
   },
   "rel-urls": {
@@ -166,6 +172,16 @@
         "me"
       ],
       "text": "Micro.blog"
+    },
+    "https://webmention.io/jbrr.dev/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://webmention.io/jbrr.dev/xmlrpc": {
+      "rels": [
+        "pingback"
+      ]
     }
   }
 }

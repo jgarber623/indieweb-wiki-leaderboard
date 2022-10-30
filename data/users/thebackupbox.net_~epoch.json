@@ -28,12 +28,17 @@
   ],
   "rels": {
     "stylesheet": [
-      "http://thebackupbox.net/~epoch/h-card.css"
+      "http://thebackupbox.net/~epoch/h-card.css",
+      "http://thebackupbox.net/~epoch/rel.css"
     ],
     "me": [
       "https://tilde.zone/@epoch",
+      "http://thebackupbox.net/~epoch/pgp.asc",
       "fmrl:epoch@thebackupbox.net",
       "https://thebackupbox.net/cgi-bin/fmrl-client.cgi?user=epoch",
+      "http://thebackupbox.net/cgi-bin/fmrl-uri.cgi?user=epoch",
+      "mailto:epoch@thebackupbox.net",
+      "finger://thebackupbox.net/epoch",
       "http://epoch.sdf.org/",
       "https://en.wikipedia.org/wiki/User:Epoch_qwert",
       "https://indieweb.org/User:Thebackupbox.net_~epoch",
@@ -55,6 +60,12 @@
       ],
       "type": "text/css"
     },
+    "http://thebackupbox.net/~epoch/rel.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
     "https://tilde.zone/@epoch": {
       "rels": [
         "me"
@@ -64,6 +75,7 @@
     "http://thebackupbox.net/~epoch/pgp.asc": {
       "rels": [
         "authn",
+        "me",
         "pgpkey"
       ],
       "text": "my public PGP key"
@@ -86,6 +98,23 @@
         "me"
       ],
       "text": "(with fmrl client)"
+    },
+    "http://thebackupbox.net/cgi-bin/fmrl-uri.cgi?user=epoch": {
+      "rels": [
+        "me"
+      ]
+    },
+    "mailto:epoch@thebackupbox.net": {
+      "rels": [
+        "me"
+      ],
+      "text": "mailto"
+    },
+    "finger://thebackupbox.net/epoch": {
+      "rels": [
+        "me"
+      ],
+      "text": "finger"
     },
     "http://epoch.sdf.org/": {
       "rels": [

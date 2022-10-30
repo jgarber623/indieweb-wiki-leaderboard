@@ -53,6 +53,50 @@
           ],
           "properties": {
             "name": [
+              ""
+            ],
+            "content": [
+              {
+                "html": "<p>Apropos of nothing, here we go: <br><a href=\"https://mastodon.xyz/@dominik\">@dominik@mastodon.xyz</a> <br>and my blog (at some point everything should come from that account) <br>@dominik@lostfocus.de</p>",
+                "value": "Apropos of nothing, here we go: @dominik@mastodon.xyz and my blog (at some point everything should come from that account) @dominik@lostfocus.de"
+              }
+            ],
+            "url": [
+              "https://lostfocus.de/2022/10/29/230897/"
+            ],
+            "published": [
+              "2022-10-29T15:55:49+02:00"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "url": [
+                    "https://lostfocus.de/"
+                  ],
+                  "photo": [
+                    "https://lostfocus.de/wp-content/themes/lostfocus-2020/image/ds-2020-square.jpg"
+                  ],
+                  "name": [
+                    "Dominik Schwind"
+                  ]
+                },
+                "value": "Dominik Schwind"
+              }
+            ],
+            "syndication": [
+              "https://twitter.com/dominik/status/1586355739555033089"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               "Welcome to hell, Elon – The Verge"
             ],
             "content": [
@@ -677,54 +721,6 @@
               "https://twitter.com/dominik/status/1574736858822709248"
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Introducing Meridian"
-            ],
-            "content": [
-              {
-                "html": "<p>Bookmarked <a class=\"u-bookmark-of\" href=\"https://www.manton.org/2022/09/26/introducing-meridian.html\">https://www.manton.org/2022/09/26/introducing-meridian.html</a>.</p>\n<div class=\"e-content\">\nThis looks pretty useful – I’ve been trying to build something like it with OSM overpass but it’s always been a slog. Great URL, too.\n</div>",
-                "value": "Bookmarked https://www.manton.org/2022/09/26/introducing-meridian.html.\n\nThis looks pretty useful – I’ve been trying to build something like it with OSM overpass but it’s always been a slog. Great URL, too."
-              },
-              {
-                "html": "This looks pretty useful – I’ve been trying to build something like it with OSM overpass but it’s always been a slog. Great URL, too.",
-                "value": "This looks pretty useful – I’ve been trying to build something like it with OSM overpass but it’s always been a slog. Great URL, too."
-              }
-            ],
-            "bookmark-of": [
-              "https://www.manton.org/2022/09/26/introducing-meridian.html"
-            ],
-            "url": [
-              "https://lostfocus.de/2022/09/26/introducing-meridian/"
-            ],
-            "published": [
-              "2022-09-26T17:41:59+02:00"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "url": [
-                    "https://lostfocus.de/"
-                  ],
-                  "photo": [
-                    "https://lostfocus.de/wp-content/themes/lostfocus-2020/image/ds-2020-square.jpg"
-                  ],
-                  "name": [
-                    "Dominik Schwind"
-                  ]
-                },
-                "value": "Dominik Schwind"
-              }
-            ]
-          }
         }
       ]
     }
@@ -782,13 +778,8 @@
       "https://instagram.com/dominik",
       "https://github.com/lostfocus"
     ],
-    "bookmark": [
-      "https://lostfocus.de/2022/10/28/welcome-to-hell-elon-the-verge/",
-      "https://lostfocus.de/2022/10/21/authentizitat-ist-tot-was-suchen-wir-stattdessen/",
-      "https://lostfocus.de/2022/09/28/the-maker/",
-      "https://lostfocus.de/2022/09/26/introducing-meridian/"
-    ],
     "syndication": [
+      "https://twitter.com/dominik/status/1586355739555033089",
       "https://twitter.com/dominik/status/1584569250865238018",
       "https://twitter.com/dominik/status/1584446185041203200",
       "https://twitter.com/dominik/status/1583477005462679552",
@@ -799,6 +790,11 @@
       "https://twitter.com/dominik/status/1575394006426591233",
       "https://twitter.com/dominik/status/1574853371915341829",
       "https://twitter.com/dominik/status/1574736858822709248"
+    ],
+    "bookmark": [
+      "https://lostfocus.de/2022/10/28/welcome-to-hell-elon-the-verge/",
+      "https://lostfocus.de/2022/10/21/authentizitat-ist-tot-was-suchen-wir-stattdessen/",
+      "https://lostfocus.de/2022/09/28/the-maker/"
     ]
   },
   "rel-urls": {
@@ -921,6 +917,12 @@
       ],
       "text": "me on Twitter"
     },
+    "https://twitter.com/dominik/status/1586355739555033089": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "Twitter"
+    },
     "https://lostfocus.de/2022/10/28/welcome-to-hell-elon-the-verge/": {
       "rels": [
         "bookmark"
@@ -998,12 +1000,6 @@
         "syndication"
       ],
       "text": "Twitter"
-    },
-    "https://lostfocus.de/2022/09/26/introducing-meridian/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Introducing Meridian"
     },
     "https://instagram.com/dominik": {
       "rels": [
