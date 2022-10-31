@@ -44,6 +44,43 @@
         "h-entry"
       ],
       "properties": {
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "url": [
+                "https://nicolas-hoizey.com/"
+              ],
+              "name": [
+                "Nicolas Hoizey"
+              ]
+            },
+            "value": "https://nicolas-hoizey.com/"
+          }
+        ],
+        "published": [
+          "2022-10-29T17:01:48.000+02:00"
+        ],
+        "category": [
+          "Netlify",
+          "performance",
+          "TTFB"
+        ],
+        "url": [
+          "https://nicolas-hoizey.com/notes/2022/10/29/1/"
+        ],
+        "summary": [
+          ""
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
         "photo": [
           {
             "value": "https://res.cloudinary.com/nho/image/fetch/q_auto,f_auto,w_auto:100:32,c_limit/https://res.cloudinary.com/nho/image/twitter_name/AaronGustafson",
@@ -230,43 +267,6 @@
         "h-entry"
       ],
       "properties": {
-        "author": [
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "url": [
-                "https://nicolas-hoizey.com/"
-              ],
-              "name": [
-                "Nicolas Hoizey"
-              ]
-            },
-            "value": "https://nicolas-hoizey.com/"
-          }
-        ],
-        "published": [
-          "2022-10-26T09:55:46.000+02:00"
-        ],
-        "category": [
-          "image",
-          "performance",
-          "SpeedCurve"
-        ],
-        "url": [
-          "https://nicolas-hoizey.com/notes/2022/10/26/1/"
-        ],
-        "summary": [
-          ""
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
         "name": [
           "JAMstack is fast only if you make it so"
         ],
@@ -418,19 +418,20 @@
       "https://nicolas-hoizey.com/about/"
     ],
     "tag": [
+      "https://nicolas-hoizey.com/tags/netlify/",
+      "https://nicolas-hoizey.com/tags/performance/",
+      "https://nicolas-hoizey.com/tags/ttfb/",
       "https://nicolas-hoizey.com/tags/progressive-enhancement/",
       "https://nicolas-hoizey.com/tags/indieweb/",
       "https://nicolas-hoizey.com/tags/posse/",
       "https://nicolas-hoizey.com/tags/cwv/",
       "https://nicolas-hoizey.com/tags/eleventy/",
       "https://nicolas-hoizey.com/tags/lcp/",
-      "https://nicolas-hoizey.com/tags/performance/",
       "https://nicolas-hoizey.com/tags/accessibility/",
-      "https://nicolas-hoizey.com/tags/image/",
-      "https://nicolas-hoizey.com/tags/speedcurve/",
       "https://nicolas-hoizey.com/tags/jamstack/",
       "https://nicolas-hoizey.com/tags/api/",
       "https://nicolas-hoizey.com/tags/webmention/",
+      "https://nicolas-hoizey.com/tags/speedcurve/",
       "https://nicolas-hoizey.com/tags/font/",
       "https://nicolas-hoizey.com/tags/em/",
       "https://nicolas-hoizey.com/tags/advertisement/",
@@ -456,6 +457,7 @@
       "https://nicolas-hoizey.com/tags/grid/",
       "https://nicolas-hoizey.com/tags/html/",
       "https://nicolas-hoizey.com/tags/humour/",
+      "https://nicolas-hoizey.com/tags/image/",
       "https://nicolas-hoizey.com/tags/javascript/",
       "https://nicolas-hoizey.com/tags/leisure/",
       "https://nicolas-hoizey.com/tags/lighthouse/",
@@ -465,7 +467,6 @@
       "https://nicolas-hoizey.com/tags/movie/",
       "https://nicolas-hoizey.com/tags/mozilla/",
       "https://nicolas-hoizey.com/tags/music/",
-      "https://nicolas-hoizey.com/tags/netlify/",
       "https://nicolas-hoizey.com/tags/opensource/",
       "https://nicolas-hoizey.com/tags/photography/",
       "https://nicolas-hoizey.com/tags/php/",
@@ -577,6 +578,24 @@
       ],
       "title": "Link to my Mastodon profile"
     },
+    "https://nicolas-hoizey.com/tags/netlify/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Netlify"
+    },
+    "https://nicolas-hoizey.com/tags/performance/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "performance"
+    },
+    "https://nicolas-hoizey.com/tags/ttfb/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "TTFB"
+    },
     "https://nicolas-hoizey.com/tags/progressive-enhancement/": {
       "rels": [
         "tag"
@@ -613,29 +632,11 @@
       ],
       "text": "LCP"
     },
-    "https://nicolas-hoizey.com/tags/performance/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "performance"
-    },
     "https://nicolas-hoizey.com/tags/accessibility/": {
       "rels": [
         "tag"
       ],
       "text": "accessibility"
-    },
-    "https://nicolas-hoizey.com/tags/image/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "image"
-    },
-    "https://nicolas-hoizey.com/tags/speedcurve/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "SpeedCurve"
     },
     "https://nicolas-hoizey.com/tags/jamstack/": {
       "rels": [
@@ -654,6 +655,12 @@
         "tag"
       ],
       "text": "Webmention"
+    },
+    "https://nicolas-hoizey.com/tags/speedcurve/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "SpeedCurve"
     },
     "https://nicolas-hoizey.com/tags/font/": {
       "rels": [
@@ -805,6 +812,12 @@
       ],
       "text": "humour"
     },
+    "https://nicolas-hoizey.com/tags/image/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "image"
+    },
     "https://nicolas-hoizey.com/tags/javascript/": {
       "rels": [
         "tag"
@@ -858,12 +871,6 @@
         "tag"
       ],
       "text": "music"
-    },
-    "https://nicolas-hoizey.com/tags/netlify/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Netlify"
     },
     "https://nicolas-hoizey.com/tags/opensource/": {
       "rels": [

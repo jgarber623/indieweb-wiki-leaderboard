@@ -4,10 +4,28 @@
     "stylesheet": [
       "https://germain.souquet.com/style.css"
     ],
-    "me": [
+    "noopener": [
+      "https://matrix.org/",
+      "https://element.io/",
+      "https://about.grabyo.com/",
+      "https://codebar.io/",
+      "https://github.com/gsouquet",
       "mailto:germain@souquet.com",
-      "https://matrix.to/#/@germain:souquet.com",
-      "https://github.com/gsouquet"
+      "https://matrix.to/#/@germain:souquet.com"
+    ],
+    "noreferrer": [
+      "https://matrix.org/",
+      "https://element.io/",
+      "https://about.grabyo.com/",
+      "https://codebar.io/",
+      "https://github.com/gsouquet",
+      "mailto:germain@souquet.com",
+      "https://matrix.to/#/@germain:souquet.com"
+    ],
+    "me": [
+      "https://github.com/gsouquet",
+      "mailto:germain@souquet.com",
+      "https://matrix.to/#/@germain:souquet.com"
     ]
   },
   "rel-urls": {
@@ -16,23 +34,58 @@
         "stylesheet"
       ]
     },
-    "mailto:germain@souquet.com": {
+    "https://matrix.org/": {
       "rels": [
-        "me"
+        "noopener",
+        "noreferrer"
       ],
-      "text": "germain@souquet.com"
+      "text": "\n                \n                Matrix"
     },
-    "https://matrix.to/#/@germain:souquet.com": {
+    "https://element.io/": {
       "rels": [
-        "me"
+        "noopener",
+        "noreferrer"
       ],
-      "text": "@germain:souquet.com"
+      "text": "\n                \n                Element"
+    },
+    "https://about.grabyo.com/": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "\n                Grabyo"
+    },
+    "https://codebar.io/": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": " codebar"
     },
     "https://github.com/gsouquet": {
       "rels": [
-        "me"
+        "me",
+        "noopener",
+        "noreferrer"
       ],
-      "text": "gsouquet"
+      "text": " GitHub"
+    },
+    "mailto:germain@souquet.com": {
+      "rels": [
+        "me",
+        "noopener",
+        "noreferrer"
+      ],
+      "title": "germain@souquet.com",
+      "text": " email"
+    },
+    "https://matrix.to/#/@germain:souquet.com": {
+      "rels": [
+        "me",
+        "noopener",
+        "noreferrer"
+      ],
+      "text": " Matrix"
     }
   }
 }
