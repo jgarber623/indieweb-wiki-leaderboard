@@ -40,6 +40,10 @@
     }
   ],
   "rels": {
+    "author": [
+      "https://saphi.re/creatures.txt",
+      "https://saphi.re/humans.txt"
+    ],
     "canonical": [
       "https://saphi.re/"
     ],
@@ -63,6 +67,18 @@
     ]
   },
   "rel-urls": {
+    "https://saphi.re/creatures.txt": {
+      "rels": [
+        "author"
+      ],
+      "type": "text/plain"
+    },
+    "https://saphi.re/humans.txt": {
+      "rels": [
+        "author"
+      ],
+      "type": "text/plain"
+    },
     "https://saphi.re/": {
       "rels": [
         "canonical"

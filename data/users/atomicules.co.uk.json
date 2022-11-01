@@ -6,6 +6,50 @@
       ],
       "properties": {
         "url": [
+          "https://atomicules.co.uk/2022/10/31/Save-the-Belmont-Cinema.html"
+        ],
+        "published": [
+          "2022-10-31 00:00 GMT"
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "name": [
+                "atomicules"
+              ],
+              "photo": [
+                {
+                  "value": "https://atomicules.co.uk/images/favicon.png",
+                  "alt": "atomicules"
+                }
+              ]
+            },
+            "value": "atomicules"
+          }
+        ],
+        "name": [
+          "LINK: Save The Belmont Cinema"
+        ],
+        "content": [
+          {
+            "html": "<div class=\"descrip\">\n<p>We actually can’t remember the first time we went to Belmont, but presumably was <em>years</em> ago when the girls were little. And I don’t know if we stumbled across it or someone (who? We don’t know anyone) told us about it. Anyway, when we lived in the countryside we didn’t go as much as we’d have liked to because it was a fair trek, but this was one thing we were all excited about being nearer to after we’d moved to the city. We were all gutted to here about the sudden closing. Me and A went to the <a href=\"https://twitter.com/JacobMCampbell/status/1578737502147334144?cxt=HHwWgMCikZnZ5ugrAAAA\">first meeting</a> (waiting to hear if there’ll be others).</p>\n<p>The Belmont reminds me of <a href=\"https://gregson.co.uk/\">The Gregson</a> in Lancaster (although, in Aberdeen, <a href=\"https://www.bonobotribe.co.uk/\">Bonobo</a> is perhaps a closer direct comparison): One of those true gems of the city that really make the place wonderful, but for some crazy reason are overlooked by the majority of people that live there.</p>\n<p>I really hope it can come back.</p>\n<p><em>A bit late mentioning this. Sneaking in some kind of post before the end of the month. Been Busy. Also, the Facebook group is more active and has more information, but I don’t use Facebook so might as well link to Twitter instead</em></p>\n\t\t\t\t\t</div>\n\t\t\t\t\t<ul class=\"post-tags\">\n\t\t\t\t\t\t<li class=\"tags\">Tags: <ul><li><a class=\"p-category\" href=\"https://atomicules.co.uk/owtelse.html\">owtelse</a></li></ul>\n</li>\n\t\t\t\t\t</ul>",
+            "value": "We actually can’t remember the first time we went to Belmont, but presumably was years ago when the girls were little. And I don’t know if we stumbled across it or someone (who? We don’t know anyone) told us about it. Anyway, when we lived in the countryside we didn’t go as much as we’d have liked to because it was a fair trek, but this was one thing we were all excited about being nearer to after we’d moved to the city. We were all gutted to here about the sudden closing. Me and A went to the first meeting (waiting to hear if there’ll be others).\nThe Belmont reminds me of The Gregson in Lancaster (although, in Aberdeen, Bonobo is perhaps a closer direct comparison): One of those true gems of the city that really make the place wonderful, but for some crazy reason are overlooked by the majority of people that live there.\nI really hope it can come back.\nA bit late mentioning this. Sneaking in some kind of post before the end of the month. Been Busy. Also, the Facebook group is more active and has more information, but I don’t use Facebook so might as well link to Twitter instead\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\tTags: owtelse"
+          }
+        ],
+        "category": [
+          "owtelse"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "url": [
           "https://atomicules.co.uk/2022/09/21/Run-over.html"
         ],
         "published": [
@@ -503,50 +547,6 @@
           }
         }
       ]
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "url": [
-          "https://atomicules.co.uk/2022/07/23/Controlling-Postfix-outbound-ipv6-address.html"
-        ],
-        "published": [
-          "2022-07-23 00:00 BST"
-        ],
-        "author": [
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "name": [
-                "atomicules"
-              ],
-              "photo": [
-                {
-                  "value": "https://atomicules.co.uk/images/favicon.png",
-                  "alt": "atomicules"
-                }
-              ]
-            },
-            "value": "atomicules"
-          }
-        ],
-        "name": [
-          "Controlling Postfix Outbound IPv6 Address"
-        ],
-        "content": [
-          {
-            "html": "<p>Continuing from this <a href=\"https://atomicules.co.uk/2022/05/30/Static-IPv6-for-NetBSD-on-Linode.html\">Static IPv6 post</a> I discovered that my outbound emails were still sometimes going from the wrong IPv6 address and therefore being <a href=\"https://atomicules.co.uk/2020/07/27/Spamhaus-SBL-CSS-and-Linode.html\">flagged as Spam</a>. I had thought using a different sub-domain for that IP and then using these:</p>\n<div class=\"language-plaintext highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code>myhostname = ducks0.heysi.co.uk\nsmtp_helo_name = ducks0.heysi.co.uk\n</code></pre></div></div>\n<p>would be enough, but nope. The secret is explictly setting the IP address for smtp:</p>\n<div class=\"language-plaintext highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code>smtp_bind_address6 = 2a01:7e00:e000:35b::1\n</code></pre></div></div>\n<p>Hopefully I <em>finally</em> have it working properly now. Life sure would be easier if I wasn’t bothered about IPv6 <em>and</em> hosting my own email.</p>\n<p><em>I don’t know why, but it feels weird including actual IP addresses and domain names in a blog post even though they are very much public</em></p>\n\t\t\t\t\t<ul class=\"post-tags\">\n\t\t\t\t\t\t<li class=\"tags\">Tags: <ul><li><a class=\"p-category\" href=\"https://atomicules.co.uk/program.html\">program</a></li></ul>\n</li>\n\t\t\t\t\t</ul>",
-            "value": "Continuing from this Static IPv6 post I discovered that my outbound emails were still sometimes going from the wrong IPv6 address and therefore being flagged as Spam. I had thought using a different sub-domain for that IP and then using these:\nmyhostname = ducks0.heysi.co.uk\nsmtp_helo_name = ducks0.heysi.co.uk\n\nwould be enough, but nope. The secret is explictly setting the IP address for smtp:\nsmtp_bind_address6 = 2a01:7e00:e000:35b::1\n\nHopefully I finally have it working properly now. Life sure would be easier if I wasn’t bothered about IPv6 and hosting my own email.\nI don’t know why, but it feels weird including actual IP addresses and domain names in a blog post even though they are very much public\n\t\t\t\t\t\n\t\t\t\t\t\tTags: program"
-          }
-        ],
-        "category": [
-          "program"
-        ]
-      }
     },
     {
       "type": [

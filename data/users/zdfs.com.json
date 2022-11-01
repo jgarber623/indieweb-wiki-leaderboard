@@ -2,36 +2,67 @@
   "items": [],
   "rels": {
     "stylesheet": [
-      "https://uploads-ssl.webflow.com/5e7bc3bbbdd0451354c789b2/css/zdfs.webflow.db126bab8.min.css"
+      "https://zdfs.com/assets/built/screen.css?v=d0d1150c12",
+      "https://zdfs.com/public/cards.min.css?v=d0d1150c12"
     ],
     "icon": [
-      "https://uploads-ssl.webflow.com/5e7bc3bbbdd0451354c789b2/5e8faee0af3886c6c16b4542_heart-icon.png"
+      "https://zdfs.com/content/images/size/w256h256/format/png/2022/10/zdfs-icon.svg"
     ],
-    "shortcut": [
-      "https://uploads-ssl.webflow.com/5e7bc3bbbdd0451354c789b2/5e8faee0af3886c6c16b4542_heart-icon.png"
+    "canonical": [
+      "https://zdfs.com/"
     ],
-    "apple-touch-icon": [
-      "https://uploads-ssl.webflow.com/5e7bc3bbbdd0451354c789b2/5e8faee479bbed128888aa46_heart-webclip.png"
+    "alternate": [
+      "https://zdfs.com/rss/"
+    ],
+    "noopener": [
+      "https://twitter.com/zdfs",
+      "https://ghost.org/"
+    ],
+    "noreferrer": [
+      "https://twitter.com/zdfs"
     ]
   },
   "rel-urls": {
-    "https://uploads-ssl.webflow.com/5e7bc3bbbdd0451354c789b2/css/zdfs.webflow.db126bab8.min.css": {
+    "https://zdfs.com/assets/built/screen.css?v=d0d1150c12": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://zdfs.com/content/images/size/w256h256/format/png/2022/10/zdfs-icon.svg": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/png"
+    },
+    "https://zdfs.com/": {
+      "rels": [
+        "canonical"
+      ]
+    },
+    "https://zdfs.com/rss/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "zdfs",
+      "type": "application/rss+xml"
+    },
+    "https://zdfs.com/public/cards.min.css?v=d0d1150c12": {
       "rels": [
         "stylesheet"
       ],
       "type": "text/css"
     },
-    "https://uploads-ssl.webflow.com/5e7bc3bbbdd0451354c789b2/5e8faee0af3886c6c16b4542_heart-icon.png": {
+    "https://twitter.com/zdfs": {
       "rels": [
-        "icon",
-        "shortcut"
-      ],
-      "type": "image/x-icon"
-    },
-    "https://uploads-ssl.webflow.com/5e7bc3bbbdd0451354c789b2/5e8faee479bbed128888aa46_heart-webclip.png": {
-      "rels": [
-        "apple-touch-icon"
+        "noopener",
+        "noreferrer"
       ]
+    },
+    "https://ghost.org/": {
+      "rels": [
+        "noopener"
+      ],
+      "text": "Powered by Ghost"
     }
   }
 }

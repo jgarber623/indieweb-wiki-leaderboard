@@ -22,6 +22,7 @@
           "",
           "",
           "",
+          "",
           ""
         ]
       }
@@ -47,6 +48,7 @@
       "https://jp.caruana.fr/site.webmanifest"
     ],
     "alternate": [
+      "https://jp.caruana.fr/feed.xml",
       "https://jp.caruana.fr/index.xml",
       "https://jp.caruana.fr/index.json"
     ],
@@ -69,6 +71,7 @@
       "https://jp.caruana.fr/",
       "https://github.com/jpcaruana",
       "https://gitlab.com/jp.caruana",
+      "https://indieweb.social/@jpcaruana",
       "https://twitter.com/jpcaruana",
       "https://www.linkedin.com/in/jpcaruana"
     ]
@@ -112,6 +115,13 @@
       "rels": [
         "manifest"
       ]
+    },
+    "https://jp.caruana.fr/feed.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Le ramasse miettes",
+      "type": "application/atom"
     },
     "https://jp.caruana.fr/index.xml": {
       "rels": [
@@ -158,6 +168,11 @@
       ]
     },
     "https://gitlab.com/jp.caruana": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://indieweb.social/@jpcaruana": {
       "rels": [
         "me"
       ]
