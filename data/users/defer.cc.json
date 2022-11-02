@@ -34,6 +34,31 @@
           ],
           "properties": {
             "url": [
+              "https://defer.cc/somafm-2/"
+            ],
+            "uid": [
+              "https://defer.cc/somafm-2/"
+            ],
+            "published": [
+              "2022-11-01 15:52:00"
+            ],
+            "content": [
+              {
+                "html": "<p>Moved my somafm ‘player’ to bashrc</p>\n<div class=\"highlight\"><pre class=\"chroma\"><code class=\"language-sh\" data-lang=\"sh\">_somafm<span class=\"o\">()</span> <span class=\"o\">{</span> \n   mpv <span class=\"nv\">$1</span> 2&gt; /dev/null <span class=\"p\">|</span> awk <span class=\"s1\">'/title/ { s = \"\"; for (i = 2; i &lt;= NF; i++) s = s $i \" \"; cmd=\"(date +'</span>%H:%M:%S<span class=\"s1\">')\"; cmd | getline d; print d,\"|\",s; close(cmd) }'</span> \n<span class=\"o\">}</span>\n<span class=\"nb\">alias</span> <span class=\"nv\">groovesalad</span><span class=\"o\">=</span><span class=\"s1\">'_somafm \"http://ice.somafm.com/groovesalad-128-aac\"'</span>\n<span class=\"nb\">alias</span> <span class=\"nv\">defcon</span><span class=\"o\">=</span><span class=\"s1\">'_somafm \"http://ice.somafm.com/defcon-128-aac\"'</span>\n<span class=\"nb\">alias</span> <span class=\"nv\">deepspaceone</span><span class=\"o\">=</span><span class=\"s1\">'_somafm \"http://ice.somafm.com/deepspaceone-128-aac\"'</span>\n</code></pre></div>\n<p>Don’t forget to <a href=\"https://somafm.com/support/\">support</a></p>",
+                "value": "Moved my somafm ‘player’ to bashrc_somafm() { \n   mpv $1 2> /dev/null | awk '/title/ { s = \"\"; for (i = 2; i <= NF; i++) s = s $i \" \"; cmd=\"(date +'%H:%M:%S')\"; cmd | getline d; print d,\"|\",s; close(cmd) }' \n}\nalias groovesalad='_somafm \"http://ice.somafm.com/groovesalad-128-aac\"'\nalias defcon='_somafm \"http://ice.somafm.com/defcon-128-aac\"'\nalias deepspaceone='_somafm \"http://ice.somafm.com/deepspaceone-128-aac\"'\nDon’t forget to support"
+              }
+            ],
+            "name": [
+              "Moved my somafm ‘player’ to bashrc_somafm() { \n   mpv $1 2> /dev/null | awk '/title/ { s = \"\"; for (i = 2; i <= NF; i++) s = s $i \" \"; cmd=\"(date +'%H:%M:%S')\"; cmd | getline d; print d,\"|\",s; close(cmd) }' \n}\nalias groovesalad='_somafm \"http://ice.somafm.com/groovesalad-128-aac\"'\nalias defcon='_somafm \"http://ice.somafm.com/defcon-128-aac\"'\nalias deepspaceone='_somafm \"http://ice.somafm.com/deepspaceone-128-aac\"'\nDon’t forget to support"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "url": [
               "https://defer.cc/somafm/"
             ],
             "uid": [
@@ -250,31 +275,6 @@
             ],
             "name": [
               "Today I learned that Twitter still uses the\noriginal retweet style format “RT @” in the background for native retweets too.So I muted “RT @” for everyone in my Home timeline and it looks like that it works.Go to your Twitter settingshttps://twitter.com/settings/muted_keywordsGo to “Muted words”Add “+”Enter the phrase “RT @”Check “Home timeline”Check “Until you unmute the word”Click “Save”"
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "url": [
-              "https://defer.cc/about-today-20220925/"
-            ],
-            "uid": [
-              "https://defer.cc/about-today-20220925/"
-            ],
-            "published": [
-              "2022-09-25 21:28:46"
-            ],
-            "content": [
-              {
-                "html": "<p><img src=\"https://defer.cc/FdiAG28X0AAA7lS.jpg\" alt></p>",
-                "value": ""
-              }
-            ],
-            "name": [
-              ""
             ]
           }
         }

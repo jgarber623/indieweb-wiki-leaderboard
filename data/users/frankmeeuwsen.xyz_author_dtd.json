@@ -1,14 +1,12 @@
 {
   "items": [],
   "rels": {
-    "dns-prefetch": [
-      "http://s.w.org/"
-    ],
     "alternate": [
       "http://frankmeeuwsen.xyz/feed/",
       "http://frankmeeuwsen.xyz/comments/feed/"
     ],
     "stylesheet": [
+      "http://frankmeeuwsen.xyz/wp-includes/blocks/navigation/style.min.css?ver=6.1",
       "http://frankmeeuwsen.xyz/wp-content/plugins/indieweb-post-kinds-3.5.12/css/kind.min.css?ver=3.5.12",
       "http://frankmeeuwsen.xyz/wp-content/themes/twentytwentytwo/style.css?ver=1.2"
     ],
@@ -35,11 +33,6 @@
     ]
   },
   "rel-urls": {
-    "http://s.w.org/": {
-      "rels": [
-        "dns-prefetch"
-      ]
-    },
     "http://frankmeeuwsen.xyz/feed/": {
       "rels": [
         "alternate"
@@ -53,6 +46,12 @@
       ],
       "title": "fmxyz » Reactiesfeed",
       "type": "application/rss+xml"
+    },
+    "http://frankmeeuwsen.xyz/wp-includes/blocks/navigation/style.min.css?ver=6.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
     },
     "http://frankmeeuwsen.xyz/wp-content/plugins/indieweb-post-kinds-3.5.12/css/kind.min.css?ver=3.5.12": {
       "rels": [

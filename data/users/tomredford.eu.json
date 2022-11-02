@@ -8,15 +8,17 @@
       "https://mastodon.lol/@tredford01"
     ],
     "dns-prefetch": [
-      "https://s.w.org/"
+      "https://s.w.org/",
+      "https://i0.wp.com/",
+      "https://c0.wp.com/"
     ],
     "stylesheet": [
-      "https://tomredford.eu/wp-includes/css/dist/block-library/style.min.css?ver=6.0.3",
-      "https://tomredford.eu/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.16",
-      "https://tomredford.eu/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.0.3",
+      "https://c0.wp.com/c/6.0.3/wp-includes/css/dist/block-library/style.min.css",
+      "https://c0.wp.com/c/6.0.3/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css",
+      "https://c0.wp.com/c/6.0.3/wp-includes/js/mediaelement/wp-mediaelement.min.css",
       "https://tomredford.eu/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
       "https://tomredford.eu/wp-content/themes/october/style.css?ver=6.0.3",
-      "https://tomredford.eu/wp-content/plugins/jetpack/css/jetpack.css?ver=11.4"
+      "https://c0.wp.com/p/jetpack/11.5/css/jetpack.css"
     ],
     "https://api.w.org/": [
       "https://tomredford.eu/wp-json/"
@@ -28,11 +30,11 @@
       "https://tomredford.eu/wp-includes/wlwmanifest.xml"
     ],
     "icon": [
-      "https://tomredford.eu/wp-content/uploads/2021/07/cropped-favicon-512-32x32.png",
-      "https://tomredford.eu/wp-content/uploads/2021/07/cropped-favicon-512-192x192.png"
+      "https://i0.wp.com/tomredford.eu/wp-content/uploads/2021/07/cropped-favicon-512.png?fit=32%2C32&ssl=1",
+      "https://i0.wp.com/tomredford.eu/wp-content/uploads/2021/07/cropped-favicon-512.png?fit=192%2C192&ssl=1"
     ],
     "apple-touch-icon": [
-      "https://tomredford.eu/wp-content/uploads/2021/07/cropped-favicon-512-180x180.png"
+      "https://i0.wp.com/tomredford.eu/wp-content/uploads/2021/07/cropped-favicon-512.png?fit=180%2C180&ssl=1"
     ],
     "noopener": [
       "https://be.linkedin.com/in/tom-scott-redford",
@@ -61,21 +63,31 @@
         "dns-prefetch"
       ]
     },
-    "https://tomredford.eu/wp-includes/css/dist/block-library/style.min.css?ver=6.0.3": {
+    "https://i0.wp.com/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
+    "https://c0.wp.com/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
+    "https://c0.wp.com/c/6.0.3/wp-includes/css/dist/block-library/style.min.css": {
       "rels": [
         "stylesheet"
       ],
       "media": "all",
       "type": "text/css"
     },
-    "https://tomredford.eu/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.16": {
+    "https://c0.wp.com/c/6.0.3/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css": {
       "rels": [
         "stylesheet"
       ],
       "media": "all",
       "type": "text/css"
     },
-    "https://tomredford.eu/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.0.3": {
+    "https://c0.wp.com/c/6.0.3/wp-includes/js/mediaelement/wp-mediaelement.min.css": {
       "rels": [
         "stylesheet"
       ],
@@ -96,7 +108,7 @@
       "media": "all",
       "type": "text/css"
     },
-    "https://tomredford.eu/wp-content/plugins/jetpack/css/jetpack.css?ver=11.4": {
+    "https://c0.wp.com/p/jetpack/11.5/css/jetpack.css": {
       "rels": [
         "stylesheet"
       ],
@@ -131,17 +143,17 @@
         "me"
       ]
     },
-    "https://tomredford.eu/wp-content/uploads/2021/07/cropped-favicon-512-32x32.png": {
+    "https://i0.wp.com/tomredford.eu/wp-content/uploads/2021/07/cropped-favicon-512.png?fit=32%2C32&ssl=1": {
       "rels": [
         "icon"
       ]
     },
-    "https://tomredford.eu/wp-content/uploads/2021/07/cropped-favicon-512-192x192.png": {
+    "https://i0.wp.com/tomredford.eu/wp-content/uploads/2021/07/cropped-favicon-512.png?fit=192%2C192&ssl=1": {
       "rels": [
         "icon"
       ]
     },
-    "https://tomredford.eu/wp-content/uploads/2021/07/cropped-favicon-512-180x180.png": {
+    "https://i0.wp.com/tomredford.eu/wp-content/uploads/2021/07/cropped-favicon-512.png?fit=180%2C180&ssl=1": {
       "rels": [
         "apple-touch-icon"
       ]

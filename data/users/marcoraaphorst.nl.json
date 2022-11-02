@@ -3,15 +3,16 @@
   "rels": {
     "alternate": [
       "https://marcoraaphorst.nl/",
+      "http://melodiefabriek.com/now/",
       "https://marcoraaphorst.nl/feed/",
       "https://marcoraaphorst.nl/comments/feed/",
+      "https://marcoraaphorst.nl/wp-json/wp/v2/pages/48598",
+      "https://marcoraaphorst.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmarcoraaphorst.nl%2F",
+      "https://marcoraaphorst.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmarcoraaphorst.nl%2F&format=xml",
       "https://marcoraaphorst.nl/?feed=gigpress"
     ],
     "canonical": [
       "https://marcoraaphorst.nl/"
-    ],
-    "next": [
-      "https://marcoraaphorst.nl/page/2/"
     ],
     "dns-prefetch": [
       "https://www.googletagmanager.com/",
@@ -63,10 +64,11 @@
       ],
       "hreflang": "nl_NL"
     },
-    "https://marcoraaphorst.nl/page/2/": {
+    "http://melodiefabriek.com/now/": {
       "rels": [
-        "next"
-      ]
+        "alternate"
+      ],
+      "hreflang": "en"
     },
     "https://www.googletagmanager.com/": {
       "rels": [
@@ -202,6 +204,12 @@
         "https://api.w.org/"
       ]
     },
+    "https://marcoraaphorst.nl/wp-json/wp/v2/pages/48598": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/json"
+    },
     "https://marcoraaphorst.nl/xmlrpc.php?rsd": {
       "rels": [
         "EditURI"
@@ -214,6 +222,18 @@
         "wlwmanifest"
       ],
       "type": "application/wlwmanifest+xml"
+    },
+    "https://marcoraaphorst.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmarcoraaphorst.nl%2F": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/json+oembed"
+    },
+    "https://marcoraaphorst.nl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmarcoraaphorst.nl%2F&format=xml": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "text/xml+oembed"
     },
     "https://marcoraaphorst.nl/?feed=gigpress": {
       "rels": [

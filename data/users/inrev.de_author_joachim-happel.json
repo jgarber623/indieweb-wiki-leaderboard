@@ -10,6 +10,7 @@
     "stylesheet": [
       "http://fonts.googleapis.com/css?family=Archivo+Narrow:500&display=swap",
       "http://inrev.de/wp-includes/css/dist/block-library/style.min.css",
+      "http://inrev.de/wp-includes/css/classic-themes.min.css",
       "http://inrev.de/wp-content/plugins/cookie-bar/css/cookie-bar.css",
       "http://inrev.de/wp-content/plugins/download-attachments/css/frontend.css",
       "http://inrev.de/wp-content/plugins/wp-accessibility/toolbar/fonts/css/a11y-toolbar.css",
@@ -30,9 +31,6 @@
       "http://inrev.de/wp-content/themes/customizr-child/style.css",
       "http://inrev.de/wp-content/plugins/newsletter/style.css",
       "http://inrev.de/wp-content/plugins/syndication-links/css/syn.min.css"
-    ],
-    "dns-prefetch": [
-      "http://s.w.org/"
     ],
     "alternate": [
       "https://inrev.de/feed/",
@@ -67,6 +65,9 @@
       "https://www.ew.uni-hamburg.de/ueber-die-fakultaet/personen/knauth-t.html",
       "http://www.ev-theologie.uni-wuerzburg.de/lehrbereiche/religionspaedagogik/prof-dr-ilona-nord/",
       "https://comenius.de/"
+    ],
+    "nofollow": [
+      "https://aboutcookies.com/"
     ]
   },
   "rel-urls": {
@@ -83,11 +84,6 @@
     "http://fonts.googleapis.com/css?family=Archivo+Narrow:500&display=swap": {
       "rels": [
         "stylesheet"
-      ]
-    },
-    "http://s.w.org/": {
-      "rels": [
-        "dns-prefetch"
       ]
     },
     "https://inrev.de/feed/": {
@@ -112,6 +108,12 @@
       "type": "application/rss+xml"
     },
     "http://inrev.de/wp-includes/css/dist/block-library/style.min.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "http://inrev.de/wp-includes/css/classic-themes.min.css": {
       "rels": [
         "stylesheet"
       ],
@@ -312,6 +314,12 @@
       ],
       "title": "rpi-virtuell",
       "text": "rpi-virtuell"
+    },
+    "https://aboutcookies.com/": {
+      "rels": [
+        "nofollow"
+      ],
+      "text": "use of cookies"
     }
   }
 }

@@ -12,7 +12,6 @@
     ],
     "dns-prefetch": [
       "http://fonts.googleapis.com/",
-      "http://s.w.org/",
       "http://i0.wp.com/",
       "http://c0.wp.com/"
     ],
@@ -21,9 +20,10 @@
       "https://frankcetera.net/index.php/comments/feed/"
     ],
     "stylesheet": [
-      "https://c0.wp.com/c/6.0.3/wp-includes/css/dist/block-library/style.min.css",
-      "https://c0.wp.com/c/6.0.3/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css",
-      "https://c0.wp.com/c/6.0.3/wp-includes/js/mediaelement/wp-mediaelement.min.css",
+      "https://c0.wp.com/c/6.1/wp-includes/css/dist/block-library/style.min.css",
+      "https://c0.wp.com/c/6.1/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css",
+      "https://c0.wp.com/c/6.1/wp-includes/js/mediaelement/wp-mediaelement.min.css",
+      "https://c0.wp.com/c/6.1/wp-includes/css/classic-themes.min.css",
       "http://frankcetera.net/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.6.4",
       "http://frankcetera.net/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
       "http://frankcetera.net/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3",
@@ -32,7 +32,7 @@
       "http://frankcetera.net/wp-content/themes/elsie/assets/css/styles.min.css?ver=1.0.3",
       "http://frankcetera.net/wp-content/plugins/syndication-links/css/syn-bw.min.css?ver=4.3.12",
       "http://frankcetera.net/wp-content/plugins/glossary-by-codeat/assets/css/tooltip-classic.css?ver=2.1.23",
-      "https://c0.wp.com/p/jetpack/11.4/css/jetpack.css"
+      "https://c0.wp.com/p/jetpack/11.5/css/jetpack.css"
     ],
     "https://api.w.org/": [
       "https://frankcetera.net/index.php/wp-json/"
@@ -129,11 +129,6 @@
         "dns-prefetch"
       ]
     },
-    "http://s.w.org/": {
-      "rels": [
-        "dns-prefetch"
-      ]
-    },
     "http://i0.wp.com/": {
       "rels": [
         "dns-prefetch"
@@ -158,19 +153,25 @@
       "title": "Frank Cetera » Comments Feed",
       "type": "application/rss+xml"
     },
-    "https://c0.wp.com/c/6.0.3/wp-includes/css/dist/block-library/style.min.css": {
+    "https://c0.wp.com/c/6.1/wp-includes/css/dist/block-library/style.min.css": {
       "rels": [
         "stylesheet"
       ],
       "media": "all"
     },
-    "https://c0.wp.com/c/6.0.3/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css": {
+    "https://c0.wp.com/c/6.1/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css": {
       "rels": [
         "stylesheet"
       ],
       "media": "all"
     },
-    "https://c0.wp.com/c/6.0.3/wp-includes/js/mediaelement/wp-mediaelement.min.css": {
+    "https://c0.wp.com/c/6.1/wp-includes/js/mediaelement/wp-mediaelement.min.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://c0.wp.com/c/6.1/wp-includes/css/classic-themes.min.css": {
       "rels": [
         "stylesheet"
       ],
@@ -224,7 +225,7 @@
       ],
       "media": "all"
     },
-    "https://c0.wp.com/p/jetpack/11.4/css/jetpack.css": {
+    "https://c0.wp.com/p/jetpack/11.5/css/jetpack.css": {
       "rels": [
         "stylesheet"
       ],

@@ -41,11 +41,9 @@
     "pingback": [
       "https://ludovic.chabant.com/xmlrpc.php"
     ],
-    "dns-prefetch": [
-      "https://s.w.org/"
-    ],
     "stylesheet": [
-      "https://ludovic.chabant.com/wp-content/themes/stochastic/style.css?ver=6.0.3"
+      "https://ludovic.chabant.com/wp-includes/css/classic-themes.min.css?ver=1",
+      "https://ludovic.chabant.com/wp-content/themes/stochastic/style.css?ver=6.1"
     ],
     "https://api.w.org/": [
       "https://ludovic.chabant.com/wp-json/"
@@ -130,12 +128,14 @@
         "pingback"
       ]
     },
-    "https://s.w.org/": {
+    "https://ludovic.chabant.com/wp-includes/css/classic-themes.min.css?ver=1": {
       "rels": [
-        "dns-prefetch"
-      ]
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
     },
-    "https://ludovic.chabant.com/wp-content/themes/stochastic/style.css?ver=6.0.3": {
+    "https://ludovic.chabant.com/wp-content/themes/stochastic/style.css?ver=6.1": {
       "rels": [
         "stylesheet"
       ],

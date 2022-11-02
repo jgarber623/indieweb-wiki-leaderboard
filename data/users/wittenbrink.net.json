@@ -656,7 +656,6 @@
       "http://microformats.org/profile/hatom"
     ],
     "dns-prefetch": [
-      "https://s.w.org/",
       "https://i0.wp.com/",
       "https://c0.wp.com/",
       "https://v0.wordpress.com/"
@@ -675,13 +674,14 @@
       "https://wittenbrink.net/type/standard/feed/"
     ],
     "stylesheet": [
-      "https://c0.wp.com/c/6.0.3/wp-includes/css/dist/block-library/style.min.css",
-      "https://c0.wp.com/c/6.0.3/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css",
-      "https://c0.wp.com/c/6.0.3/wp-includes/js/mediaelement/wp-mediaelement.min.css",
+      "https://c0.wp.com/c/6.1/wp-includes/css/dist/block-library/style.min.css",
+      "https://c0.wp.com/c/6.1/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css",
+      "https://c0.wp.com/c/6.1/wp-includes/js/mediaelement/wp-mediaelement.min.css",
+      "https://c0.wp.com/c/6.1/wp-includes/css/classic-themes.min.css",
       "https://wittenbrink.net/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
       "https://wittenbrink.net/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3",
-      "https://c0.wp.com/c/6.0.3/wp-includes/css/dashicons.min.css",
-      "https://wittenbrink.net/wp-content/themes/autonomie-master/style.css?ver=6.0.3",
+      "https://c0.wp.com/c/6.1/wp-includes/css/dashicons.min.css",
+      "https://wittenbrink.net/wp-content/themes/autonomie-master/style.css?ver=6.1",
       "https://wittenbrink.net/wp-content/themes/autonomie-master/assets/css/print.css?ver=1.0.0",
       "https://wittenbrink.net/wp-content/themes/autonomie-master/assets/css/narrow-width.css?ver=1.0.0",
       "https://wittenbrink.net/wp-content/themes/autonomie-master/assets/css/default-width.css?ver=1.0.0",
@@ -751,11 +751,6 @@
         "profile"
       ]
     },
-    "https://s.w.org/": {
-      "rels": [
-        "dns-prefetch"
-      ]
-    },
     "https://i0.wp.com/": {
       "rels": [
         "dns-prefetch"
@@ -799,21 +794,28 @@
       "title": "Lost and Found » Activity-Streams Comments Feed",
       "type": "application/stream+json"
     },
-    "https://c0.wp.com/c/6.0.3/wp-includes/css/dist/block-library/style.min.css": {
+    "https://c0.wp.com/c/6.1/wp-includes/css/dist/block-library/style.min.css": {
       "rels": [
         "stylesheet"
       ],
       "media": "all",
       "type": "text/css"
     },
-    "https://c0.wp.com/c/6.0.3/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css": {
+    "https://c0.wp.com/c/6.1/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css": {
       "rels": [
         "stylesheet"
       ],
       "media": "all",
       "type": "text/css"
     },
-    "https://c0.wp.com/c/6.0.3/wp-includes/js/mediaelement/wp-mediaelement.min.css": {
+    "https://c0.wp.com/c/6.1/wp-includes/js/mediaelement/wp-mediaelement.min.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://c0.wp.com/c/6.1/wp-includes/css/classic-themes.min.css": {
       "rels": [
         "stylesheet"
       ],
@@ -834,14 +836,14 @@
       "media": "all",
       "type": "text/css"
     },
-    "https://c0.wp.com/c/6.0.3/wp-includes/css/dashicons.min.css": {
+    "https://c0.wp.com/c/6.1/wp-includes/css/dashicons.min.css": {
       "rels": [
         "stylesheet"
       ],
       "media": "all",
       "type": "text/css"
     },
-    "https://wittenbrink.net/wp-content/themes/autonomie-master/style.css?ver=6.0.3": {
+    "https://wittenbrink.net/wp-content/themes/autonomie-master/style.css?ver=6.1": {
       "rels": [
         "stylesheet"
       ],
