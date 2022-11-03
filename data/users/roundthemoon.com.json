@@ -70,7 +70,7 @@
             ],
             "content": [
               {
-                "html": "<div class=\"postie-post\">*Hello!* This is a test to see how it deals with html. Here’s a picture of some Oystercatchers. [image: IMG20220324102911.jpg]\n<div class=\"postie-attachments\"><a href=\"https://roundthemoon.com/?attachment_id=25\"><img src=\"https://roundthemoon.com/wp-content/uploads/2022/04/IMG20220324102911-225x300.jpg\" alt=\"\" width=\"225px\" height=\"300px\" class=\"alignnone size-medium wp-image-25\" srcset=\"https://roundthemoon.com/wp-content/uploads/2022/04/IMG20220324102911-225x300.jpg 225w, https://roundthemoon.com/wp-content/uploads/2022/04/IMG20220324102911-768x1024.jpg 768w, https://roundthemoon.com/wp-content/uploads/2022/04/IMG20220324102911-1152x1536.jpg 1152w, https://roundthemoon.com/wp-content/uploads/2022/04/IMG20220324102911-1536x2048.jpg 1536w, https://roundthemoon.com/wp-content/uploads/2022/04/IMG20220324102911-668x891.jpg 668w, https://roundthemoon.com/wp-content/uploads/2022/04/IMG20220324102911-scaled.jpg 1920w\" sizes=\"(max-width: 225px) 100vw, 225px\"></a></div>\n</div>",
+                "html": "<div class=\"postie-post\">*Hello!* This is a test to see how it deals with html. Here’s a picture of some Oystercatchers. [image: IMG20220324102911.jpg]\n<div class=\"postie-attachments\"><a href=\"https://roundthemoon.com/?attachment_id=25\"><img decoding=\"async\" src=\"https://roundthemoon.com/wp-content/uploads/2022/04/IMG20220324102911-225x300.jpg\" alt=\"\" width=\"225px\" height=\"300px\" class=\"alignnone size-medium wp-image-25\" srcset=\"https://roundthemoon.com/wp-content/uploads/2022/04/IMG20220324102911-225x300.jpg 225w, https://roundthemoon.com/wp-content/uploads/2022/04/IMG20220324102911-768x1024.jpg 768w, https://roundthemoon.com/wp-content/uploads/2022/04/IMG20220324102911-1152x1536.jpg 1152w, https://roundthemoon.com/wp-content/uploads/2022/04/IMG20220324102911-1536x2048.jpg 1536w, https://roundthemoon.com/wp-content/uploads/2022/04/IMG20220324102911-668x891.jpg 668w, https://roundthemoon.com/wp-content/uploads/2022/04/IMG20220324102911-scaled.jpg 1920w\" sizes=\"(max-width: 225px) 100vw, 225px\"></a></div>\n</div>",
                 "value": "*Hello!* This is a test to see how it deals with html. Here’s a picture of some Oystercatchers. [image: IMG20220324102911.jpg]"
               }
             ]
@@ -125,7 +125,7 @@
             ],
             "content": [
               {
-                "html": "<div class=\"postie-post\">Testing attachment.\n<div class=\"postie-attachments\"><a href=\"https://roundthemoon.com/?attachment_id=23\"><img loading=\"lazy\" src=\"https://roundthemoon.com/wp-content/uploads/2022/04/P1080468-300x225.jpg\" alt=\"\" width=\"300px\" height=\"225px\" class=\"alignnone size-medium wp-image-23\" srcset=\"https://roundthemoon.com/wp-content/uploads/2022/04/P1080468-300x225.jpg 300w, https://roundthemoon.com/wp-content/uploads/2022/04/P1080468-1024x769.jpg 1024w, https://roundthemoon.com/wp-content/uploads/2022/04/P1080468-768x577.jpg 768w, https://roundthemoon.com/wp-content/uploads/2022/04/P1080468-1536x1153.jpg 1536w, https://roundthemoon.com/wp-content/uploads/2022/04/P1080468-2048x1538.jpg 2048w, https://roundthemoon.com/wp-content/uploads/2022/04/P1080468-668x502.jpg 668w\" sizes=\"(max-width: 300px) 100vw, 300px\"></a></div>\n</div>",
+                "html": "<div class=\"postie-post\">Testing attachment.\n<div class=\"postie-attachments\"><a href=\"https://roundthemoon.com/?attachment_id=23\"><img decoding=\"async\" loading=\"lazy\" src=\"https://roundthemoon.com/wp-content/uploads/2022/04/P1080468-300x225.jpg\" alt=\"\" width=\"300px\" height=\"225px\" class=\"alignnone size-medium wp-image-23\" srcset=\"https://roundthemoon.com/wp-content/uploads/2022/04/P1080468-300x225.jpg 300w, https://roundthemoon.com/wp-content/uploads/2022/04/P1080468-1024x769.jpg 1024w, https://roundthemoon.com/wp-content/uploads/2022/04/P1080468-768x577.jpg 768w, https://roundthemoon.com/wp-content/uploads/2022/04/P1080468-1536x1153.jpg 1536w, https://roundthemoon.com/wp-content/uploads/2022/04/P1080468-2048x1538.jpg 2048w, https://roundthemoon.com/wp-content/uploads/2022/04/P1080468-668x502.jpg 668w\" sizes=\"(max-width: 300px) 100vw, 300px\"></a></div>\n</div>",
                 "value": "Testing attachment."
               }
             ]
@@ -393,19 +393,17 @@
       "http://microformats.org/profile/specs",
       "http://microformats.org/profile/hatom"
     ],
-    "dns-prefetch": [
-      "https://s.w.org/"
-    ],
     "alternate": [
       "https://roundthemoon.com/feed/",
       "https://roundthemoon.com/comments/feed/"
     ],
     "stylesheet": [
-      "https://roundthemoon.com/wp-includes/css/dist/block-library/style.min.css?ver=6.0.3",
+      "https://roundthemoon.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1",
+      "https://roundthemoon.com/wp-includes/css/classic-themes.min.css?ver=1",
       "https://roundthemoon.com/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
       "https://roundthemoon.com/wp-content/plugins/simple-location/css/location.min.css?ver=4.5.0",
       "https://roundthemoon.com/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3",
-      "https://roundthemoon.com/wp-content/themes/sempress/style.css?ver=6.0.3"
+      "https://roundthemoon.com/wp-content/themes/sempress/style.css?ver=6.1"
     ],
     "https://api.w.org/": [
       "https://roundthemoon.com/wp-json/"
@@ -477,11 +475,6 @@
         "profile"
       ]
     },
-    "https://s.w.org/": {
-      "rels": [
-        "dns-prefetch"
-      ]
-    },
     "https://roundthemoon.com/feed/": {
       "rels": [
         "alternate"
@@ -496,7 +489,14 @@
       "title": "Round the Moon » Comments Feed",
       "type": "application/rss+xml"
     },
-    "https://roundthemoon.com/wp-includes/css/dist/block-library/style.min.css?ver=6.0.3": {
+    "https://roundthemoon.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://roundthemoon.com/wp-includes/css/classic-themes.min.css?ver=1": {
       "rels": [
         "stylesheet"
       ],
@@ -524,7 +524,7 @@
       "media": "all",
       "type": "text/css"
     },
-    "https://roundthemoon.com/wp-content/themes/sempress/style.css?ver=6.0.3": {
+    "https://roundthemoon.com/wp-content/themes/sempress/style.css?ver=6.1": {
       "rels": [
         "stylesheet"
       ],

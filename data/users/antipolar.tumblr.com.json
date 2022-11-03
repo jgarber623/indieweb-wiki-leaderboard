@@ -32,22 +32,26 @@
       "https://64.media.tumblr.com/"
     ],
     "stylesheet": [
-      "https://assets.tumblr.com/pop/css/main-33b95cde.css",
-      "https://assets.tumblr.com/pop/6305-55074f5c.css",
+      "https://assets.tumblr.com/pop/css/main-b1610492.css",
+      "https://assets.tumblr.com/pop/6305-f902bec3.css",
       "https://assets.tumblr.com/pop/6628-0b6e829f.css",
-      "https://assets.tumblr.com/pop/7045-454915cf.css",
+      "https://assets.tumblr.com/pop/7045-c91bc3dd.css",
       "https://assets.tumblr.com/pop/333-1af53245.css",
-      "https://assets.tumblr.com/pop/peepr-route-348a0a9e.css"
+      "https://assets.tumblr.com/pop/peepr-route-abc06240.css"
     ],
     "manifest": [
       "https://assets.tumblr.com/pop/manifest/manifest-f4317ada.json"
     ],
     "noopener": [
       "https://www.tumblr.com/antipolar",
+      "https://www.tumblr.com/settings/ad-free-browsing?source=rail",
       "https://www.google.com/chrome",
       "https://www.mozilla.org/firefox",
       "https://support.apple.com/downloads/safari",
       "https://www.microsoft.com/windows/microsoft-edge"
+    ],
+    "noreferrer": [
+      "https://www.tumblr.com/settings/ad-free-browsing?source=rail"
     ]
   },
   "rel-urls": {
@@ -111,13 +115,13 @@
         "preconnect"
       ]
     },
-    "https://assets.tumblr.com/pop/css/main-33b95cde.css": {
+    "https://assets.tumblr.com/pop/css/main-b1610492.css": {
       "rels": [
         "stylesheet"
       ],
       "type": "text/css"
     },
-    "https://assets.tumblr.com/pop/6305-55074f5c.css": {
+    "https://assets.tumblr.com/pop/6305-f902bec3.css": {
       "rels": [
         "stylesheet"
       ],
@@ -129,7 +133,7 @@
       ],
       "type": "text/css"
     },
-    "https://assets.tumblr.com/pop/7045-454915cf.css": {
+    "https://assets.tumblr.com/pop/7045-c91bc3dd.css": {
       "rels": [
         "stylesheet"
       ],
@@ -141,7 +145,7 @@
       ],
       "type": "text/css"
     },
-    "https://assets.tumblr.com/pop/peepr-route-348a0a9e.css": {
+    "https://assets.tumblr.com/pop/peepr-route-abc06240.css": {
       "rels": [
         "stylesheet"
       ],
@@ -151,6 +155,13 @@
       "rels": [
         "manifest"
       ]
+    },
+    "https://www.tumblr.com/settings/ad-free-browsing?source=rail": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "Wanna go ad-free?"
     },
     "https://www.google.com/chrome": {
       "rels": [

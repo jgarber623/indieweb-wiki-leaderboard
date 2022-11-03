@@ -1,15 +1,13 @@
 {
   "items": [],
   "rels": {
-    "dns-prefetch": [
-      "https://s.w.org/"
-    ],
     "alternate": [
       "https://jayhoffmann.com/feed/",
       "https://jayhoffmann.com/comments/feed/"
     ],
     "stylesheet": [
-      "https://jayhoffmann.com/wp-includes/css/dist/block-library/style.min.css?ver=6.0.3",
+      "https://jayhoffmann.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1",
+      "https://jayhoffmann.com/wp-includes/css/classic-themes.min.css?ver=1",
       "https://jayhoffmann.com/wp-content/themes/twentytwentyone/style.css?ver=1.1",
       "https://jayhoffmann.com/wp-content/themes/twentytwentyone/assets/css/print.css?ver=1.1"
     ],
@@ -59,11 +57,6 @@
     ]
   },
   "rel-urls": {
-    "https://s.w.org/": {
-      "rels": [
-        "dns-prefetch"
-      ]
-    },
     "https://jayhoffmann.com/feed/": {
       "rels": [
         "alternate"
@@ -78,7 +71,13 @@
       "title": "Jay Hoffmann » Comments Feed",
       "type": "application/rss+xml"
     },
-    "https://jayhoffmann.com/wp-includes/css/dist/block-library/style.min.css?ver=6.0.3": {
+    "https://jayhoffmann.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://jayhoffmann.com/wp-includes/css/classic-themes.min.css?ver=1": {
       "rels": [
         "stylesheet"
       ],

@@ -3,9 +3,10 @@
   "rels": {
     "stylesheet": [
       "https://cambridgeport90.net/wp-content/themes/mobile-first/style.css",
-      "https://cambridgeport90.net/wp-includes/css/dist/block-library/style.min.css?ver=6.0.3",
+      "https://cambridgeport90.net/wp-includes/css/dist/block-library/style.min.css?ver=6.1",
+      "https://cambridgeport90.net/wp-includes/css/classic-themes.min.css?ver=1",
       "https://cambridgeport90.net/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.6.4",
-      "https://fonts.googleapis.com/css?family=Open+Sans%3A300&ver=6.0.3"
+      "https://fonts.googleapis.com/css?family=Open+Sans%3A300&ver=6.1"
     ],
     "canonical": [
       "https://cambridgeport90.net/"
@@ -16,8 +17,7 @@
     "dns-prefetch": [
       "https://platform.twitter.com/",
       "https://apis.google.com/",
-      "https://fonts.googleapis.com/",
-      "https://s.w.org/"
+      "https://fonts.googleapis.com/"
     ],
     "alternate": [
       "https://cambridgeport90.net/feed/",
@@ -91,11 +91,6 @@
         "dns-prefetch"
       ]
     },
-    "https://s.w.org/": {
-      "rels": [
-        "dns-prefetch"
-      ]
-    },
     "https://cambridgeport90.net/feed/": {
       "rels": [
         "alternate"
@@ -110,7 +105,14 @@
       "title": "Cherokee casino » Comments Feed",
       "type": "application/rss+xml"
     },
-    "https://cambridgeport90.net/wp-includes/css/dist/block-library/style.min.css?ver=6.0.3": {
+    "https://cambridgeport90.net/wp-includes/css/dist/block-library/style.min.css?ver=6.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://cambridgeport90.net/wp-includes/css/classic-themes.min.css?ver=1": {
       "rels": [
         "stylesheet"
       ],
@@ -124,7 +126,7 @@
       "media": "all",
       "type": "text/css"
     },
-    "https://fonts.googleapis.com/css?family=Open+Sans%3A300&ver=6.0.3": {
+    "https://fonts.googleapis.com/css?family=Open+Sans%3A300&ver=6.1": {
       "rels": [
         "stylesheet"
       ],

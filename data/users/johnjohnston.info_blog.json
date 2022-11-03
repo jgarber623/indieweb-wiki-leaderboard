@@ -10,11 +10,10 @@
         ],
         "url": [
           "https://johnjohnston.info/blog/",
+          "https://preslav.me/",
           "https://twitter.com/mmcshane",
           "https://micro.blog/johnjohnston",
           "https://twitter.com/TricksyBell",
-          "https://twitter.com/FHSComputing",
-          "https://twitter.com/grammasheri",
           "https://github.com/troutcolor",
           "https://twitter.com/johnjohnston",
           "https://micro.blog/johnjohnston",
@@ -663,7 +662,7 @@
             ],
             "content": [
               {
-                "html": "<p>The Village of Banton, where I teach, celebrates Halloween on the Friday before the 31. Which is nice ’cause you can have a Friday party. We had one yesterday afternoon, in the morning we did some halloween related work.</p>\n<p>When I sat down at my desk yesterday morning I had a quick look at twitter. I’d been in a conversation over breakfast. I ended up having a quick scroll through <a href=\"https://twitter.com/MrMorrison_\">Mr Morrison</a>‘s timeline. I saw a couple of interesting micro:bits things:</p>\n<blockquote class=\"twitter-tweet\" data-width=\"550\" data-dnt=\"true\">\n<p lang=\"en\" dir=\"ltr\">Perfect time to engage in some Halloween coding with <a href=\"https://twitter.com/microbit_edu?ref_src=twsrc%5Etfw\">@microbit_edu</a> &amp; <a href=\"https://twitter.com/MakeCode?ref_src=twsrc%5Etfw\">@makecode</a>! Get Haven the ghost to appear on your micro:bit V2 and then blow him away!! Beware…it is highly addictive and simply great fun!👻 <a href=\"https://t.co/6nzhdswfDY\">https://t.co/6nzhdswfDY</a> <a href=\"https://t.co/8JCqaWwO3L\">pic.twitter.com/8JCqaWwO3L</a></p>\n<p>— SSERCdigital (@SSERCDigital) <a href=\"https://twitter.com/SSERCDigital/status/1585251905428918272?ref_src=twsrc%5Etfw\">October 26, 2022</a></p>\n</blockquote>\n<p><script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script></p>\n<p>and</p>\n<blockquote class=\"twitter-tweet\" data-width=\"550\" data-dnt=\"true\">\n<p lang=\"en\" dir=\"ltr\">Grade 4 students coding jack-o-lantern faces with micro:bits in the LLC this week.<a href=\"https://twitter.com/StLeoCS?ref_src=twsrc%5Etfw\">@StLeoCS</a> <a href=\"https://twitter.com/DCDSB_STEM?ref_src=twsrc%5Etfw\">@DCDSB_STEM</a> <a href=\"https://twitter.com/DurhamCatholic?ref_src=twsrc%5Etfw\">@DurhamCatholic</a> <a href=\"https://twitter.com/microbit_edu?ref_src=twsrc%5Etfw\">@microbit_edu</a> <a href=\"https://twitter.com/hashtag/halloweenstem?src=hash&amp;ref_src=twsrc%5Etfw\">#halloweenstem</a></p>\n<p>Found the template here: <a href=\"https://t.co/3dp9wJm1uc\">https://t.co/3dp9wJm1uc</a> <a href=\"https://t.co/tesE0Kk1Yh\">pic.twitter.com/tesE0Kk1Yh</a></p>\n<p>— MrsBintheLC (@MrsBintheLc) <a href=\"https://twitter.com/MrsBintheLc/status/1582674818968666113?ref_src=twsrc%5Etfw\">October 19, 2022</a></p>\n</blockquote>\n<p><script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script></p>\n<p>The first was to blow away a ghost. I couldn’t see instructions, but presumed it would be simple enough to figure out. The second was really simple, but linked to a blog post which had a nice wee pumpkin <a title=\"Micro:bit Pumpkin | For Toffee\" href=\"https://fortoffee.org.uk/2018/10/microbit-pumpkin/\">cardboard template</a> that fitted a micro:bit.</p>\n<p><img loading=\"lazy\" class=\"aligncenter\" src=\"https://johnjohnston.info/blog/wp-content/uploads/2022/10/pumkin_ghost.jpg\" alt=\"Pumkin Ghost\" width=\"500\" height=\"506\"></p>\n<p>My class have done a varying amount of coding, so I though we could do this as a stepped challenge. The more experienced could help the other out.</p>\n<p>I printed off the templates and cut out the holes for the micro:bit buttons. I’ve found that making a neat job of these is difficult, but helps keep the cardboard on the micro:bit. Quite glad I’ve got a small class.</p>\n<p>I then worked out and made the code to, add a face to the pumpkin with button A and a ghost with button B. Blowing on the micro:bit would blow (animate) the ghost off the screen.</p>\n<p>I made a quick slide with the challenge and pictures of a few useful blocks.</p>\n<p><img loading=\"lazy\" src=\"https://johnjohnston.info/blog/wp-content/uploads/2022/10/microbit_halloween_challenge.png\" alt=\"Microbit Halloween Challenge: 1. Show a ghost for pumpkin on button a 2. Show a face on button b 3. Animate face 4. make ghost go away when you blow 5. make ghost only go when it is already on screen 6. play a sound when ghost flies off\" width=\"959\" height=\"538\"></p>\n<p>We started the lesson by being really quiet and watching me demo. The class is 1-2-1 iPads and we use the micro:bit editor, we have enough micro:bits for one each too.</p>\n<p>My though was that the least experienced could manage 1, 2 &amp; 3. I hoped the images of the blocks would remind the others of enough to get them started on the harder ones.</p>\n<p>Most of the class managed the first couple of tasks straightaway. To my surprise quite a few asked to skip the third. The vanishing ghost was too tempting.</p>\n<p>The next step, to animate the ghost away on a sound was managed by quite a few of the class. The tricky part was only showing the animation if the ghost was on the screen. A few, having seen the clues on the slide, created variables to test for at the start of sound block. We did need to stop a few times to figure out when and where to toggle the variable and how to test for it in the right place. Lots of useful mistakes were made.</p>\n<p>By this point a few children had managed to solve the complete problem, adding some sounds to their animation. They could then help, (without using their fingers), their peers. A couple of the class didn’t manage to get the whole thing done, not getting a full understanding, but they all managed at least some of the challenge.</p>\n<p>Given the class have done at least a couple of recent micro:bit lessons covering inputs and decisions the challenge approach worked well. Some had used code that was not particularly efficient. Some strange and unnecessary repeats. I am not really sure my own approach to the code was the best.</p>\n<p>As everyone put the finishing touches, cutting out pumpkins and tweaking code I though we could finish with a quick demo of the radio feature. For this bit I did just put the code up on the board.</p>\n<p>One child, remembering radio code from previous years volunteered to make the controller. We finished by testing and recording the radio controller, setting all the micro:bits to show a ghost via the controller and getting all the ghosts to fly off by shouting boo!</p>\n<h3>A few interesting points emerged</h3>\n<ul>\n<li>This idea came to me though some tweets at around 8:00am I had to through some resources together before 9, scrap (recycle) some of the morning plans. The final section, using the radios, just came to me while teaching and extended the process by half an hour. I am sure this says something about my professionalism &amp; planning.</li>\n<li>Working through the logic is hard. The children with more experience are beginning to be able to debug sometimes. Noticing typos (or bad values for variables, blocks avoid a lot of these problems) you have made or miss-ordering or putting blocks in slightly the wrong place is easy. I was listening to a WordPress lesson driving into work on Friday and noticed that the tutor, presumably prepped and a confident coder, still made mistakes like these.</li>\n<li>Somethings just didn’t work. Adding sound work if we used the play sound block with pre add sounds. Using the melody block or the block that plays sounds you write yourself tended to cause problems. All the code would stop working after a while. I am not sure if it is a bug or problem with the micro:bits or we just don’t know something.</li>\n<li>A couple of pupils had exactly the correct radio code but it just did not work exactly as expected. The code used an if else block to switch depending on if it received a 1 or something else. The micro:bits just executed the first choice every time. The pupils and their pals couldn’t see any problem with the code and neither could I.</li>\n<li>Most of the class wanted to get to the more dramatic bit of code quickly and asked to skip the simple animation of the face. Quite a few wanted to work in the code editor without testing their code until they got to the end. I was quite happy with the skipping bits but I did ask them to do quick tests as they went along.</li>\n<li>One pupil who had got into a bit a mixup with the code had made a nice change to the animation, the ghost going off the screen at an angle rather than straight up.</li>\n</ul>\n<p>The micro:bit editor has a nice print feature, I used it to make the featured image for this post.</p>",
+                "html": "<p>The Village of Banton, where I teach, celebrates Halloween on the Friday before the 31. Which is nice ’cause you can have a Friday party. We had one yesterday afternoon, in the morning we did some halloween related work.</p>\n<p>When I sat down at my desk yesterday morning I had a quick look at twitter. I’d been in a conversation over breakfast. I ended up having a quick scroll through <a href=\"https://twitter.com/MrMorrison_\">Mr Morrison</a>‘s timeline. I saw a couple of interesting micro:bits things:</p>\n<blockquote class=\"twitter-tweet\" data-width=\"550\" data-dnt=\"true\">\n<p lang=\"en\" dir=\"ltr\">Perfect time to engage in some Halloween coding with <a href=\"https://twitter.com/microbit_edu?ref_src=twsrc%5Etfw\">@microbit_edu</a> &amp; <a href=\"https://twitter.com/MakeCode?ref_src=twsrc%5Etfw\">@makecode</a>! Get Haven the ghost to appear on your micro:bit V2 and then blow him away!! Beware…it is highly addictive and simply great fun!👻 <a href=\"https://t.co/6nzhdswfDY\">https://t.co/6nzhdswfDY</a> <a href=\"https://t.co/8JCqaWwO3L\">pic.twitter.com/8JCqaWwO3L</a></p>\n<p>— SSERCdigital (@SSERCDigital) <a href=\"https://twitter.com/SSERCDigital/status/1585251905428918272?ref_src=twsrc%5Etfw\">October 26, 2022</a></p>\n</blockquote>\n<p><script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script></p>\n<p>and</p>\n<blockquote class=\"twitter-tweet\" data-width=\"550\" data-dnt=\"true\">\n<p lang=\"en\" dir=\"ltr\">Grade 4 students coding jack-o-lantern faces with micro:bits in the LLC this week.<a href=\"https://twitter.com/StLeoCS?ref_src=twsrc%5Etfw\">@StLeoCS</a> <a href=\"https://twitter.com/DCDSB_STEM?ref_src=twsrc%5Etfw\">@DCDSB_STEM</a> <a href=\"https://twitter.com/DurhamCatholic?ref_src=twsrc%5Etfw\">@DurhamCatholic</a> <a href=\"https://twitter.com/microbit_edu?ref_src=twsrc%5Etfw\">@microbit_edu</a> <a href=\"https://twitter.com/hashtag/halloweenstem?src=hash&amp;ref_src=twsrc%5Etfw\">#halloweenstem</a></p>\n<p>Found the template here: <a href=\"https://t.co/3dp9wJm1uc\">https://t.co/3dp9wJm1uc</a> <a href=\"https://t.co/tesE0Kk1Yh\">pic.twitter.com/tesE0Kk1Yh</a></p>\n<p>— MrsBintheLC (@MrsBintheLc) <a href=\"https://twitter.com/MrsBintheLc/status/1582674818968666113?ref_src=twsrc%5Etfw\">October 19, 2022</a></p>\n</blockquote>\n<p><script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script></p>\n<p>The first was to blow away a ghost. I couldn’t see instructions, but presumed it would be simple enough to figure out. The second was really simple, but linked to a blog post which had a nice wee pumpkin <a title=\"Micro:bit Pumpkin | For Toffee\" href=\"https://fortoffee.org.uk/2018/10/microbit-pumpkin/\">cardboard template</a> that fitted a micro:bit.</p>\n<p><img decoding=\"async\" loading=\"lazy\" class=\"aligncenter\" src=\"https://johnjohnston.info/blog/wp-content/uploads/2022/10/pumkin_ghost.jpg\" alt=\"Pumkin Ghost\" width=\"500\" height=\"506\"></p>\n<p>My class have done a varying amount of coding, so I though we could do this as a stepped challenge. The more experienced could help the other out.</p>\n<p>I printed off the templates and cut out the holes for the micro:bit buttons. I’ve found that making a neat job of these is difficult, but helps keep the cardboard on the micro:bit. Quite glad I’ve got a small class.</p>\n<p>I then worked out and made the code to, add a face to the pumpkin with button A and a ghost with button B. Blowing on the micro:bit would blow (animate) the ghost off the screen.</p>\n<p>I made a quick slide with the challenge and pictures of a few useful blocks.</p>\n<p><img decoding=\"async\" loading=\"lazy\" src=\"https://johnjohnston.info/blog/wp-content/uploads/2022/10/microbit_halloween_challenge.png\" alt=\"Microbit Halloween Challenge: 1. Show a ghost for pumpkin on button a 2. Show a face on button b 3. Animate face 4. make ghost go away when you blow 5. make ghost only go when it is already on screen 6. play a sound when ghost flies off\" width=\"959\" height=\"538\"></p>\n<p>We started the lesson by being really quiet and watching me demo. The class is 1-2-1 iPads and we use the micro:bit editor, we have enough micro:bits for one each too.</p>\n<p>My though was that the least experienced could manage 1, 2 &amp; 3. I hoped the images of the blocks would remind the others of enough to get them started on the harder ones.</p>\n<p>Most of the class managed the first couple of tasks straightaway. To my surprise quite a few asked to skip the third. The vanishing ghost was too tempting.</p>\n<p>The next step, to animate the ghost away on a sound was managed by quite a few of the class. The tricky part was only showing the animation if the ghost was on the screen. A few, having seen the clues on the slide, created variables to test for at the start of sound block. We did need to stop a few times to figure out when and where to toggle the variable and how to test for it in the right place. Lots of useful mistakes were made.</p>\n<p>By this point a few children had managed to solve the complete problem, adding some sounds to their animation. They could then help, (without using their fingers), their peers. A couple of the class didn’t manage to get the whole thing done, not getting a full understanding, but they all managed at least some of the challenge.</p>\n<p>Given the class have done at least a couple of recent micro:bit lessons covering inputs and decisions the challenge approach worked well. Some had used code that was not particularly efficient. Some strange and unnecessary repeats. I am not really sure my own approach to the code was the best.</p>\n<p>As everyone put the finishing touches, cutting out pumpkins and tweaking code I though we could finish with a quick demo of the radio feature. For this bit I did just put the code up on the board.</p>\n<p>One child, remembering radio code from previous years volunteered to make the controller. We finished by testing and recording the radio controller, setting all the micro:bits to show a ghost via the controller and getting all the ghosts to fly off by shouting boo!</p>\n<h3>A few interesting points emerged</h3>\n<ul>\n<li>This idea came to me though some tweets at around 8:00am I had to through some resources together before 9, scrap (recycle) some of the morning plans. The final section, using the radios, just came to me while teaching and extended the process by half an hour. I am sure this says something about my professionalism &amp; planning.</li>\n<li>Working through the logic is hard. The children with more experience are beginning to be able to debug sometimes. Noticing typos (or bad values for variables, blocks avoid a lot of these problems) you have made or miss-ordering or putting blocks in slightly the wrong place is easy. I was listening to a WordPress lesson driving into work on Friday and noticed that the tutor, presumably prepped and a confident coder, still made mistakes like these.</li>\n<li>Somethings just didn’t work. Adding sound work if we used the play sound block with pre add sounds. Using the melody block or the block that plays sounds you write yourself tended to cause problems. All the code would stop working after a while. I am not sure if it is a bug or problem with the micro:bits or we just don’t know something.</li>\n<li>A couple of pupils had exactly the correct radio code but it just did not work exactly as expected. The code used an if else block to switch depending on if it received a 1 or something else. The micro:bits just executed the first choice every time. The pupils and their pals couldn’t see any problem with the code and neither could I.</li>\n<li>Most of the class wanted to get to the more dramatic bit of code quickly and asked to skip the simple animation of the face. Quite a few wanted to work in the code editor without testing their code until they got to the end. I was quite happy with the skipping bits but I did ask them to do quick tests as they went along.</li>\n<li>One pupil who had got into a bit a mixup with the code had made a nice change to the animation, the ghost going off the screen at an angle rather than straight up.</li>\n</ul>\n<p>The micro:bit editor has a nice print feature, I used it to make the featured image for this post.</p>",
                 "value": "The Village of Banton, where I teach, celebrates Halloween on the Friday before the 31. Which is nice ’cause you can have a Friday party. We had one yesterday afternoon, in the morning we did some halloween related work.\nWhen I sat down at my desk yesterday morning I had a quick look at twitter. I’d been in a conversation over breakfast. I ended up having a quick scroll through Mr Morrison‘s timeline. I saw a couple of interesting micro:bits things:\n\nPerfect time to engage in some Halloween coding with @microbit_edu & @makecode! Get Haven the ghost to appear on your micro:bit V2 and then blow him away!! Beware…it is highly addictive and simply great fun!👻 https://t.co/6nzhdswfDY pic.twitter.com/8JCqaWwO3L\n— SSERCdigital (@SSERCDigital) October 26, 2022\n\nand\n\nGrade 4 students coding jack-o-lantern faces with micro:bits in the LLC this week.@StLeoCS @DCDSB_STEM @DurhamCatholic @microbit_edu #halloweenstem\nFound the template here: https://t.co/3dp9wJm1uc pic.twitter.com/tesE0Kk1Yh\n— MrsBintheLC (@MrsBintheLc) October 19, 2022\n\nThe first was to blow away a ghost. I couldn’t see instructions, but presumed it would be simple enough to figure out. The second was really simple, but linked to a blog post which had a nice wee pumpkin cardboard template that fitted a micro:bit.\n Pumkin Ghost \nMy class have done a varying amount of coding, so I though we could do this as a stepped challenge. The more experienced could help the other out.\nI printed off the templates and cut out the holes for the micro:bit buttons. I’ve found that making a neat job of these is difficult, but helps keep the cardboard on the micro:bit. Quite glad I’ve got a small class.\nI then worked out and made the code to, add a face to the pumpkin with button A and a ghost with button B. Blowing on the micro:bit would blow (animate) the ghost off the screen.\nI made a quick slide with the challenge and pictures of a few useful blocks.\n Microbit Halloween Challenge: 1. Show a ghost for pumpkin on button a 2. Show a face on button b 3. Animate face 4. make ghost go away when you blow 5. make ghost only go when it is already on screen 6. play a sound when ghost flies off \nWe started the lesson by being really quiet and watching me demo. The class is 1-2-1 iPads and we use the micro:bit editor, we have enough micro:bits for one each too.\nMy though was that the least experienced could manage 1, 2 & 3. I hoped the images of the blocks would remind the others of enough to get them started on the harder ones.\nMost of the class managed the first couple of tasks straightaway. To my surprise quite a few asked to skip the third. The vanishing ghost was too tempting.\nThe next step, to animate the ghost away on a sound was managed by quite a few of the class. The tricky part was only showing the animation if the ghost was on the screen. A few, having seen the clues on the slide, created variables to test for at the start of sound block. We did need to stop a few times to figure out when and where to toggle the variable and how to test for it in the right place. Lots of useful mistakes were made.\nBy this point a few children had managed to solve the complete problem, adding some sounds to their animation. They could then help, (without using their fingers), their peers. A couple of the class didn’t manage to get the whole thing done, not getting a full understanding, but they all managed at least some of the challenge.\nGiven the class have done at least a couple of recent micro:bit lessons covering inputs and decisions the challenge approach worked well. Some had used code that was not particularly efficient. Some strange and unnecessary repeats. I am not really sure my own approach to the code was the best.\nAs everyone put the finishing touches, cutting out pumpkins and tweaking code I though we could finish with a quick demo of the radio feature. For this bit I did just put the code up on the board.\nOne child, remembering radio code from previous years volunteered to make the controller. We finished by testing and recording the radio controller, setting all the micro:bits to show a ghost via the controller and getting all the ghosts to fly off by shouting boo!\nA few interesting points emerged\n\nThis idea came to me though some tweets at around 8:00am I had to through some resources together before 9, scrap (recycle) some of the morning plans. The final section, using the radios, just came to me while teaching and extended the process by half an hour. I am sure this says something about my professionalism & planning.\nWorking through the logic is hard. The children with more experience are beginning to be able to debug sometimes. Noticing typos (or bad values for variables, blocks avoid a lot of these problems) you have made or miss-ordering or putting blocks in slightly the wrong place is easy. I was listening to a WordPress lesson driving into work on Friday and noticed that the tutor, presumably prepped and a confident coder, still made mistakes like these.\nSomethings just didn’t work. Adding sound work if we used the play sound block with pre add sounds. Using the melody block or the block that plays sounds you write yourself tended to cause problems. All the code would stop working after a while. I am not sure if it is a bug or problem with the micro:bits or we just don’t know something.\nA couple of pupils had exactly the correct radio code but it just did not work exactly as expected. The code used an if else block to switch depending on if it received a 1 or something else. The micro:bits just executed the first choice every time. The pupils and their pals couldn’t see any problem with the code and neither could I.\nMost of the class wanted to get to the more dramatic bit of code quickly and asked to skip the simple animation of the face. Quite a few wanted to work in the code editor without testing their code until they got to the end. I was quite happy with the skipping bits but I did ask them to do quick tests as they went along.\nOne pupil who had got into a bit a mixup with the code had made a nice change to the animation, the ghost going off the screen at an angle rather than straight up.\n\nThe micro:bit editor has a nice print feature, I used it to make the featured image for this post."
               }
             ],
@@ -1070,15 +1069,16 @@
       "http://feeds.feedburner.com/johnjohnston"
     ],
     "stylesheet": [
-      "http://johnjohnston.info/blog/wp-includes/css/dist/block-library/style.min.css?ver=6.0.3",
-      "http://johnjohnston.info/blog/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.16",
-      "http://johnjohnston.info/blog/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.0.3",
+      "http://johnjohnston.info/blog/wp-includes/css/dist/block-library/style.min.css?ver=6.1",
+      "http://johnjohnston.info/blog/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17",
+      "http://johnjohnston.info/blog/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.1",
+      "http://johnjohnston.info/blog/wp-includes/css/classic-themes.min.css?ver=1",
       "http://johnjohnston.info/blog/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
       "http://johnjohnston.info/blog/wp-content/plugins/simple-location/css/location.min.css?ver=4.5.0",
       "http://johnjohnston.info/blog/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3",
-      "http://johnjohnston.info/blog/wp-content/themes/sempress-child/style.css?ver=6.0.3",
+      "http://johnjohnston.info/blog/wp-content/themes/sempress-child/style.css?ver=6.1",
       "http://johnjohnston.info/blog/wp-content/plugins/simple-lightbox/client/css/app.css?ver=2.9.2",
-      "http://johnjohnston.info/blog/wp-content/plugins/jetpack/css/jetpack.css?ver=11.5"
+      "http://johnjohnston.info/blog/wp-content/plugins/jetpack/css/jetpack.css?ver=11.5.1"
     ],
     "https://api.w.org/": [
       "https://johnjohnston.info/blog/wp-json/"
@@ -1164,26 +1164,23 @@
       "https://johnjohnston.info/blog/tag/ds106/"
     ],
     "external": [
+      "https://preslav.me/",
       "https://twitter.com/mmcshane",
       "https://micro.blog/johnjohnston",
-      "https://twitter.com/TricksyBell",
-      "https://twitter.com/FHSComputing",
-      "https://twitter.com/grammasheri"
+      "https://twitter.com/TricksyBell"
     ],
     "nofollow": [
+      "https://preslav.me/",
       "https://twitter.com/mmcshane",
       "https://micro.blog/johnjohnston",
       "https://twitter.com/TricksyBell",
-      "https://twitter.com/FHSComputing",
-      "https://twitter.com/grammasheri",
       "https://automattic.com/cookies/"
     ],
     "ugc": [
+      "https://preslav.me/",
       "https://twitter.com/mmcshane",
       "https://micro.blog/johnjohnston",
-      "https://twitter.com/TricksyBell",
-      "https://twitter.com/FHSComputing",
-      "https://twitter.com/grammasheri"
+      "https://twitter.com/TricksyBell"
     ],
     "license": [
       "http://creativecommons.org/licenses/by-sa/4.0/"
@@ -1265,21 +1262,28 @@
       "title": "John's World Wide Wall Display » Comments Feed",
       "type": "application/rss+xml"
     },
-    "http://johnjohnston.info/blog/wp-includes/css/dist/block-library/style.min.css?ver=6.0.3": {
+    "http://johnjohnston.info/blog/wp-includes/css/dist/block-library/style.min.css?ver=6.1": {
       "rels": [
         "stylesheet"
       ],
       "media": "all",
       "type": "text/css"
     },
-    "http://johnjohnston.info/blog/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.16": {
+    "http://johnjohnston.info/blog/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17": {
       "rels": [
         "stylesheet"
       ],
       "media": "all",
       "type": "text/css"
     },
-    "http://johnjohnston.info/blog/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.0.3": {
+    "http://johnjohnston.info/blog/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://johnjohnston.info/blog/wp-includes/css/classic-themes.min.css?ver=1": {
       "rels": [
         "stylesheet"
       ],
@@ -1307,7 +1311,7 @@
       "media": "all",
       "type": "text/css"
     },
-    "http://johnjohnston.info/blog/wp-content/themes/sempress-child/style.css?ver=6.0.3": {
+    "http://johnjohnston.info/blog/wp-content/themes/sempress-child/style.css?ver=6.1": {
       "rels": [
         "stylesheet"
       ],
@@ -1321,7 +1325,7 @@
       "media": "all",
       "type": "text/css"
     },
-    "http://johnjohnston.info/blog/wp-content/plugins/jetpack/css/jetpack.css?ver=11.5": {
+    "http://johnjohnston.info/blog/wp-content/plugins/jetpack/css/jetpack.css?ver=11.5.1": {
       "rels": [
         "stylesheet"
       ],
@@ -1626,6 +1630,14 @@
       ],
       "type": "application/rss+xml"
     },
+    "https://preslav.me/": {
+      "rels": [
+        "external",
+        "nofollow",
+        "ugc"
+      ],
+      "text": "Preslav Rachev"
+    },
     "https://twitter.com/mmcshane": {
       "rels": [
         "external",
@@ -1641,22 +1653,6 @@
         "ugc"
       ],
       "text": "TricksyBell❣"
-    },
-    "https://twitter.com/FHSComputing": {
-      "rels": [
-        "external",
-        "nofollow",
-        "ugc"
-      ],
-      "text": "ℍℂ"
-    },
-    "https://twitter.com/grammasheri": {
-      "rels": [
-        "external",
-        "nofollow",
-        "ugc"
-      ],
-      "text": "Sheri Edwards"
     },
     "http://creativecommons.org/licenses/by-sa/4.0/": {
       "rels": [

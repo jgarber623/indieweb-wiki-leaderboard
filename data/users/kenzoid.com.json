@@ -620,21 +620,19 @@
       "http://microformats.org/profile/specs",
       "http://microformats.org/profile/hatom"
     ],
-    "dns-prefetch": [
-      "http://s.w.org/"
-    ],
     "alternate": [
       "http://kenzoid.com/feed/",
       "http://kenzoid.com/comments/feed/",
       "http://kenzoid.com/feed/json/"
     ],
     "stylesheet": [
-      "http://kenzoid.com/wp-includes/css/dist/block-library/style.min.css?ver=6.0.3",
+      "http://kenzoid.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1",
+      "http://kenzoid.com/wp-includes/css/classic-themes.min.css?ver=1",
       "http://kenzoid.com/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
       "http://kenzoid.com/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3",
-      "http://kenzoid.com/wp-content/themes/sempress/style.css?ver=6.0.3",
-      "http://kenzoid.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.16",
-      "http://kenzoid.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.0.3"
+      "http://kenzoid.com/wp-content/themes/sempress/style.css?ver=6.1",
+      "http://kenzoid.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17",
+      "http://kenzoid.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.1"
     ],
     "https://api.w.org/": [
       "http://kenzoid.com/wp-json/"
@@ -756,11 +754,6 @@
         "profile"
       ]
     },
-    "http://s.w.org/": {
-      "rels": [
-        "dns-prefetch"
-      ]
-    },
     "http://kenzoid.com/feed/": {
       "rels": [
         "alternate"
@@ -775,7 +768,14 @@
       "title": "Kenzoid's Autonomous Zone » Comments Feed",
       "type": "application/rss+xml"
     },
-    "http://kenzoid.com/wp-includes/css/dist/block-library/style.min.css?ver=6.0.3": {
+    "http://kenzoid.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://kenzoid.com/wp-includes/css/classic-themes.min.css?ver=1": {
       "rels": [
         "stylesheet"
       ],
@@ -796,7 +796,7 @@
       "media": "all",
       "type": "text/css"
     },
-    "http://kenzoid.com/wp-content/themes/sempress/style.css?ver=6.0.3": {
+    "http://kenzoid.com/wp-content/themes/sempress/style.css?ver=6.1": {
       "rels": [
         "stylesheet"
       ],
@@ -1166,14 +1166,14 @@
         "license"
       ]
     },
-    "http://kenzoid.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.16": {
+    "http://kenzoid.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17": {
       "rels": [
         "stylesheet"
       ],
       "media": "all",
       "type": "text/css"
     },
-    "http://kenzoid.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.0.3": {
+    "http://kenzoid.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.1": {
       "rels": [
         "stylesheet"
       ],

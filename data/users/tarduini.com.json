@@ -380,19 +380,17 @@
       "http://microformats.org/profile/specs",
       "http://microformats.org/profile/hatom"
     ],
-    "dns-prefetch": [
-      "https://s.w.org/"
-    ],
     "alternate": [
       "https://tarduini.com/feed/",
       "https://tarduini.com/comments/feed/"
     ],
     "stylesheet": [
-      "https://tarduini.com/wp-includes/css/dist/block-library/style.min.css?ver=6.0.3",
+      "https://tarduini.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1",
+      "https://tarduini.com/wp-includes/css/classic-themes.min.css?ver=1",
       "https://tarduini.com/wp-content/plugins/h5p/h5p-php-library/styles/h5p.css?ver=1.15.4",
       "https://tarduini.com/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
       "https://tarduini.com/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3",
-      "https://tarduini.com/wp-content/themes/sempress/style.css?ver=6.0.3",
+      "https://tarduini.com/wp-content/themes/sempress/style.css?ver=6.1",
       "https://tarduini.com/wp-content/plugins/h5p/h5p-php-library/styles/h5p-confirmation-dialog.css?ver=1.15.4",
       "https://tarduini.com/wp-content/plugins/h5p/h5p-php-library/styles/h5p-core-button.css?ver=1.15.4"
     ],
@@ -474,11 +472,6 @@
         "profile"
       ]
     },
-    "https://s.w.org/": {
-      "rels": [
-        "dns-prefetch"
-      ]
-    },
     "https://tarduini.com/feed/": {
       "rels": [
         "alternate"
@@ -493,7 +486,14 @@
       "title": "Basics and Beyond » Comments Feed",
       "type": "application/rss+xml"
     },
-    "https://tarduini.com/wp-includes/css/dist/block-library/style.min.css?ver=6.0.3": {
+    "https://tarduini.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://tarduini.com/wp-includes/css/classic-themes.min.css?ver=1": {
       "rels": [
         "stylesheet"
       ],
@@ -521,7 +521,7 @@
       "media": "all",
       "type": "text/css"
     },
-    "https://tarduini.com/wp-content/themes/sempress/style.css?ver=6.0.3": {
+    "https://tarduini.com/wp-content/themes/sempress/style.css?ver=6.1": {
       "rels": [
         "stylesheet"
       ],
