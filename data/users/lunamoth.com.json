@@ -18,10 +18,10 @@
     "alternate": [
       "http://feeds.feedburner.com/Lunamoth",
       "http://lunamoth.biz/rss/comment",
+      "http://lunamoth.biz/rss/response/2307",
+      "http://lunamoth.biz/atom/response/2307",
       "http://lunamoth.biz/rss/response/2303",
-      "http://lunamoth.biz/atom/response/2303",
-      "http://lunamoth.biz/rss/response/2306",
-      "http://lunamoth.biz/atom/response/2306"
+      "http://lunamoth.biz/atom/response/2303"
     ],
     "search": [
       "http://lunamoth.biz/provider.xml"
@@ -44,10 +44,13 @@
       "http://lunamoth.biz/foaf"
     ],
     "bookmark": [
-      "http://lunamoth.com/2303",
-      "http://lunamoth.com/2306"
+      "http://lunamoth.com/2307",
+      "http://lunamoth.com/2303"
     ],
     "tag": [
+      "http://lunamoth.biz/tag/lunamoth",
+      "http://lunamoth.biz/tag/Newsletter",
+      "http://lunamoth.biz/tag/뉴스레터",
       "http://lunamoth.biz/tag/9",
       "http://lunamoth.biz/tag/Autofiction",
       "http://lunamoth.biz/tag/Brett%20Anderson",
@@ -59,10 +62,7 @@
       "http://lunamoth.biz/tag/Simon%20Gilbert",
       "http://lunamoth.biz/tag/Suede",
       "http://lunamoth.biz/tag/Suede9",
-      "http://lunamoth.biz/tag/Video",
-      "http://lunamoth.biz/tag/lunamoth",
-      "http://lunamoth.biz/tag/Newsletter",
-      "http://lunamoth.biz/tag/뉴스레터"
+      "http://lunamoth.biz/tag/Video"
     ],
     "license": [
       "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ko"
@@ -168,6 +168,20 @@
       "title": "FOAF",
       "type": "application/rdf+xml"
     },
+    "http://lunamoth.biz/rss/response/2307": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Responses (RSS) : lunamoth 뉴스레터 - lunamoth 4th",
+      "type": "application/rss+xml"
+    },
+    "http://lunamoth.biz/atom/response/2307": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Responses (ATOM) : lunamoth 뉴스레터 - lunamoth 4th",
+      "type": "application/atom+xml"
+    },
     "http://lunamoth.biz/rss/response/2303": {
       "rels": [
         "alternate"
@@ -182,26 +196,37 @@
       "title": "Responses (ATOM) : Suede - Autofiction - lunamoth 4th",
       "type": "application/atom+xml"
     },
-    "http://lunamoth.biz/rss/response/2306": {
-      "rels": [
-        "alternate"
-      ],
-      "title": "Responses (RSS) : lunamoth 뉴스레터 - lunamoth 4th",
-      "type": "application/rss+xml"
-    },
-    "http://lunamoth.biz/atom/response/2306": {
-      "rels": [
-        "alternate"
-      ],
-      "title": "Responses (ATOM) : lunamoth 뉴스레터 - lunamoth 4th",
-      "type": "application/atom+xml"
-    },
     "http://lunamoth.com/plugins/MT_Meta_RecentPS_Default/style.css": {
       "rels": [
         "stylesheet"
       ],
       "media": "screen",
       "type": "text/css"
+    },
+    "http://lunamoth.com/2307": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "lunamoth 뉴스레터",
+      "text": "lunamoth 뉴스레터"
+    },
+    "http://lunamoth.biz/tag/lunamoth": {
+      "rels": [
+        "tag"
+      ],
+      "text": "lunamoth"
+    },
+    "http://lunamoth.biz/tag/Newsletter": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Newsletter"
+    },
+    "http://lunamoth.biz/tag/뉴스레터": {
+      "rels": [
+        "tag"
+      ],
+      "text": "뉴스레터"
     },
     "http://lunamoth.com/2303": {
       "rels": [
@@ -281,31 +306,6 @@
         "tag"
       ],
       "text": "Video"
-    },
-    "http://lunamoth.com/2306": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "lunamoth 뉴스레터",
-      "text": "lunamoth 뉴스레터"
-    },
-    "http://lunamoth.biz/tag/lunamoth": {
-      "rels": [
-        "tag"
-      ],
-      "text": "lunamoth"
-    },
-    "http://lunamoth.biz/tag/Newsletter": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Newsletter"
-    },
-    "http://lunamoth.biz/tag/뉴스레터": {
-      "rels": [
-        "tag"
-      ],
-      "text": "뉴스레터"
     },
     "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ko": {
       "rels": [

@@ -1,0 +1,95 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "photo": [
+          "https://d3z.me/images/hulk.png"
+        ],
+        "note": [
+          "Smart enough to know I'm not smart enough."
+        ],
+        "nickname": [
+          "d3z"
+        ],
+        "url": [
+          "mailto:g@d3z.me",
+          "https://indieweb.social/web/@d3z"
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "authn": [
+      "https://d3z.me/key.txt"
+    ],
+    "pgpkey": [
+      "https://d3z.me/key.txt"
+    ],
+    "stylesheet": [
+      "https://d3z.me/styles.css"
+    ],
+    "micropub": [
+      "https://micropub.d3z.me/"
+    ],
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "me": [
+      "https://d3z.me/",
+      "mailto:g@d3z.me",
+      "https://indieweb.social/web/@d3z"
+    ]
+  },
+  "rel-urls": {
+    "https://d3z.me/key.txt": {
+      "rels": [
+        "authn",
+        "pgpkey"
+      ]
+    },
+    "https://d3z.me/styles.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://micropub.d3z.me/": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://d3z.me/": {
+      "rels": [
+        "me"
+      ],
+      "text": "d3z"
+    },
+    "mailto:g@d3z.me": {
+      "rels": [
+        "me"
+      ],
+      "text": "email"
+    },
+    "https://indieweb.social/web/@d3z": {
+      "rels": [
+        "me"
+      ],
+      "text": "fediverse"
+    }
+  }
+}

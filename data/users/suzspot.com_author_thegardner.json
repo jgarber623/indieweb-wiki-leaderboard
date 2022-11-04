@@ -78,9 +78,6 @@
     }
   ],
   "rels": {
-    "dns-prefetch": [
-      "https://s.w.org/"
-    ],
     "alternate": [
       "https://suzspot.com/feed/",
       "https://suzspot.com/comments/feed/",
@@ -88,11 +85,12 @@
       "https://suzspot.com/wp-json/wp/v2/users/2"
     ],
     "stylesheet": [
-      "https://suzspot.com/wp-includes/css/dist/block-library/style.css?ver=6.0.3",
+      "https://suzspot.com/wp-includes/css/dist/block-library/style.css?ver=6.1",
+      "https://suzspot.com/wp-includes/css/classic-themes.css?ver=1",
       "https://suzspot.com/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
       "https://suzspot.com/wp-content/plugins/indieweb-post-kinds/css/kind.min.css?ver=3.6.1",
       "https://suzspot.com/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3",
-      "https://suzspot.com/wp-content/themes/twentytwentyone/style.css?ver=6.0.3",
+      "https://suzspot.com/wp-content/themes/twentytwentyone/style.css?ver=6.1",
       "https://suzspot.com/wp-content/themes/twentytwentyone/style.css?ver=1.0.0",
       "https://suzspot.com/wp-content/themes/twentytwentyone/assets/css/print.css?ver=1.0.0"
     ],
@@ -129,11 +127,6 @@
     ]
   },
   "rel-urls": {
-    "https://s.w.org/": {
-      "rels": [
-        "dns-prefetch"
-      ]
-    },
     "https://suzspot.com/feed/": {
       "rels": [
         "alternate"
@@ -155,7 +148,13 @@
       "title": "A Place For Me » Posts by Sue Feed",
       "type": "application/rss+xml"
     },
-    "https://suzspot.com/wp-includes/css/dist/block-library/style.css?ver=6.0.3": {
+    "https://suzspot.com/wp-includes/css/dist/block-library/style.css?ver=6.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://suzspot.com/wp-includes/css/classic-themes.css?ver=1": {
       "rels": [
         "stylesheet"
       ],
@@ -179,7 +178,7 @@
       ],
       "media": "all"
     },
-    "https://suzspot.com/wp-content/themes/twentytwentyone/style.css?ver=6.0.3": {
+    "https://suzspot.com/wp-content/themes/twentytwentyone/style.css?ver=6.1": {
       "rels": [
         "stylesheet"
       ],
