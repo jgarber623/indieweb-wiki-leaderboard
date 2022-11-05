@@ -7,18 +7,10 @@
     "shortcut": [
       "https://jmichaelward.com/wp-content/themes/jmw-2021-theme/favicon.ico"
     ],
-    "dns-prefetch": [
-      "https://s.w.org/",
-      "https://secure.gravatar.com/",
-      "https://twitter.com/",
-      "https://platform.twitter.com/",
-      "https://syndication.twitter.com/",
-      "https://cdn.syndication.twimg.com/",
-      "https://gist.github.com/"
-    ],
     "stylesheet": [
-      "https://jmichaelward.com/wp/wp-includes/css/dist/block-library/style.min.css?ver=6.0.3",
-      "https://jmichaelward.com/wp-content/themes/jmw-2021-theme/assets/dist/main.css?ver=1666533272"
+      "https://jmichaelward.com/wp/wp-includes/css/dist/block-library/style.min.css?ver=6.1",
+      "https://jmichaelward.com/wp/wp-includes/css/classic-themes.min.css?ver=1",
+      "https://jmichaelward.com/wp-content/themes/jmw-2021-theme/assets/dist/main.css?ver=1667603775"
     ],
     "https://api.w.org/": [
       "https://jmichaelward.com/wp-json/"
@@ -36,6 +28,17 @@
       "https://syndication.twitter.com/",
       "https://cdn.syndication.twimg.com/",
       "https://gist.github.com/"
+    ],
+    "dns-prefetch": [
+      "https://secure.gravatar.com/",
+      "https://twitter.com/",
+      "https://platform.twitter.com/",
+      "https://syndication.twitter.com/",
+      "https://cdn.syndication.twimg.com/",
+      "https://gist.github.com/"
+    ],
+    "me": [
+      "https://phpc.social/@jmichaelward"
     ],
     "noopener": [
       "https://sheepandstitch.com/",
@@ -65,19 +68,21 @@
         "shortcut"
       ]
     },
-    "https://s.w.org/": {
-      "rels": [
-        "dns-prefetch"
-      ]
-    },
-    "https://jmichaelward.com/wp/wp-includes/css/dist/block-library/style.min.css?ver=6.0.3": {
+    "https://jmichaelward.com/wp/wp-includes/css/dist/block-library/style.min.css?ver=6.1": {
       "rels": [
         "stylesheet"
       ],
       "media": "all",
       "type": "text/css"
     },
-    "https://jmichaelward.com/wp-content/themes/jmw-2021-theme/assets/dist/main.css?ver=1666533272": {
+    "https://jmichaelward.com/wp/wp-includes/css/classic-themes.min.css?ver=1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://jmichaelward.com/wp-content/themes/jmw-2021-theme/assets/dist/main.css?ver=1667603775": {
       "rels": [
         "stylesheet"
       ],
@@ -130,6 +135,11 @@
     "https://gist.github.com/": {
       "rels": [
         "preconnect"
+      ]
+    },
+    "https://phpc.social/@jmichaelward": {
+      "rels": [
+        "me"
       ]
     },
     "https://sheepandstitch.com/": {

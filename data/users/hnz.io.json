@@ -4,11 +4,11 @@
     "pingback": [
       "https://hnz.io/xmlrpc.php"
     ],
+    "preconnect": [
+      "https://fonts.gstatic.com/"
+    ],
     "canonical": [
       "https://hnz.io/"
-    ],
-    "dns-prefetch": [
-      "https://fonts.googleapis.com/"
     ],
     "alternate": [
       "https://hnz.io/feed/",
@@ -21,15 +21,15 @@
       "https://hnz.io/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17",
       "https://hnz.io/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.1",
       "https://hnz.io/wp-content/uploads/wtfdivi/wp_head.css?ver=6.1",
-      "https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=cyrillic,cyrillic-ext,greek,greek-ext,hebrew,latin,latin-ext,vietnamese&display=swap",
       "https://hnz.io/wp-content/themes/workin-media/style.css?ver=4.19.0",
       "https://hnz.io/wp-content/plugins/jetpack/css/jetpack.css?ver=11.5.1",
       "https://hnz.io/wp-content/plugins/divi-booster/core/icons/socicon/style.css?ver=3.2.1"
     ],
     "preload": [
-      "https://hnz.io/wp-content/et-cache/41/et-divi-dynamic-tb-165-41.css?ver=1667501727",
+      "https://hnz.io/wp-content/et-cache/41/et-divi-dynamic-tb-165-41-late.css?ver=1667581007",
+      "https://hnz.io/wp-content/et-cache/41/et-divi-dynamic-tb-165-41.css?ver=1667581007",
       "https://hnz.io/wp-content/plugins/divi-booster/core/icons/socicon/fonts/Socicon.woff2?87visu",
-      "https://hnz.io/wp-content/et-cache/41/et-core-unified-tb-0-tb-165-deferred-41.min.css?ver=1667501728"
+      "https://hnz.io/wp-content/et-cache/41/et-core-unified-tb-0-tb-165-deferred-41.min.css?ver=1667582043"
     ],
     "https://api.w.org/": [
       "https://hnz.io/wp-json/"
@@ -57,9 +57,6 @@
     "noreferrer": [
       "https://www.wikigeeks.de/",
       "https://www.chateau-picard.de/"
-    ],
-    "me": [
-      "https://chaos.social/@floyboy"
     ]
   },
   "rel-urls": {
@@ -68,14 +65,14 @@
         "pingback"
       ]
     },
+    "https://fonts.gstatic.com/": {
+      "rels": [
+        "preconnect"
+      ]
+    },
     "https://hnz.io/": {
       "rels": [
         "canonical"
-      ]
-    },
-    "https://fonts.googleapis.com/": {
-      "rels": [
-        "dns-prefetch"
       ]
     },
     "https://hnz.io/feed/": {
@@ -113,14 +110,13 @@
       "media": "all",
       "type": "text/css"
     },
-    "https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=cyrillic,cyrillic-ext,greek,greek-ext,hebrew,latin,latin-ext,vietnamese&display=swap": {
+    "https://hnz.io/wp-content/et-cache/41/et-divi-dynamic-tb-165-41-late.css?ver=1667581007": {
       "rels": [
-        "stylesheet"
+        "preload"
       ],
-      "media": "all",
-      "type": "text/css"
+      "media": "all"
     },
-    "https://hnz.io/wp-content/et-cache/41/et-divi-dynamic-tb-165-41.css?ver=1667501727": {
+    "https://hnz.io/wp-content/et-cache/41/et-divi-dynamic-tb-165-41.css?ver=1667581007": {
       "rels": [
         "preload"
       ],
@@ -196,7 +192,7 @@
         "apple-touch-icon"
       ]
     },
-    "https://hnz.io/wp-content/et-cache/41/et-core-unified-tb-0-tb-165-deferred-41.min.css?ver=1667501728": {
+    "https://hnz.io/wp-content/et-cache/41/et-core-unified-tb-0-tb-165-deferred-41.min.css?ver=1667582043": {
       "rels": [
         "preload"
       ]
@@ -214,12 +210,6 @@
         "noreferrer"
       ],
       "text": "Château Picard"
-    },
-    "https://chaos.social/@floyboy": {
-      "rels": [
-        "me"
-      ],
-      "text": "Mastodon"
     },
     "https://hnz.io/wp-content/plugins/divi-booster/core/icons/socicon/style.css?ver=3.2.1": {
       "rels": [

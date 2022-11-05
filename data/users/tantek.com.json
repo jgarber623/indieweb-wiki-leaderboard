@@ -13,14 +13,12 @@
         ],
         "url": [
           "http://tantek.com/",
-          "https://en.wikipedia.org/wiki/User:Tantek",
-          "http://last.fm/user/tantekc",
           "https://micro.blog/t",
+          "https://www.instagram.com/tantek/",
           "https://twitter.com/intent/user?screen_name=t",
           "https://github.com/tantek",
-          "https://www.flickr.com/people/tantek/",
-          "http://dribbble.com/tantek/",
-          "https://www.instagram.com/tantek/"
+          "https://indieweb.org/User:Tantek.com",
+          "https://en.wikipedia.org/wiki/User:Tantek"
         ],
         "uid": [
           "http://tantek.com/"
@@ -83,7 +81,7 @@
           "Falcon"
         ],
         "note": [
-          "Hello\nHi. I work on web standards and the indie web. I run trails at sunrise, practice yoga movement & philosophy, code & design my website, and write when I can. \nMy pronouns are \nhe/him.\n🏠 \n📺 \n🔵\n\n\n\n\n\n\n\n\n\n💬 Contact\n👏 Tip\n\n\n\n\n\n\nFounder at IndieWeb\n\n\nFounder at microformats.org\n\n\nWeb Standards Lead at Mozilla\n\n\nAC  & CSS WG member at W3C\n\nBSCS & MSCS Stanford University"
+          "Hello\nHi. I work on web standards and the indie web. I run trails at sunrise, practice yoga movement & philosophy, code & design my website, and write when I can. \nMy pronouns are \nhe/him.\n🏠 \n📺 \n🔵\n\n\n\n\n💬 Contact\n👏 Tip\n\n\n\n\n\n\nFounder at IndieWeb\n\n\nFounder at microformats.org\n\n\nWeb Standards Lead at Mozilla\n\n\nAC  & CSS WG member at W3C\n\nBSCS & MSCS Stanford University"
         ],
         "pronouns": [
           "he/him"
@@ -2175,7 +2173,7 @@
     }
   ],
   "rels": {
-    "canonical": [
+    "self": [
       "https://tantek.com/"
     ],
     "icon": [
@@ -2189,9 +2187,6 @@
     ],
     "hub": [
       "https://pubsubhubbub.superfeedr.com/"
-    ],
-    "self": [
-      "https://tantek.com/"
     ],
     "openid.delegate": [
       "https://tantek.com/"
@@ -2229,21 +2224,22 @@
       "http://tantek.com/?skin=vtx",
       "http://tantek.com/?skin=trn"
     ],
+    "canonical": [
+      "https://tantek.com/"
+    ],
     "me": [
-      "https://en.wikipedia.org/wiki/User:Tantek",
-      "http://last.fm/user/tantekc",
       "https://micro.blog/t",
+      "https://www.instagram.com/tantek/",
       "https://twitter.com/intent/user?screen_name=t",
       "https://github.com/tantek",
-      "https://www.flickr.com/people/tantek/",
-      "http://dribbble.com/tantek/",
-      "https://www.instagram.com/tantek/"
+      "https://indieweb.org/User:Tantek.com",
+      "https://en.wikipedia.org/wiki/User:Tantek"
     ]
   },
   "rel-urls": {
     "https://tantek.com/": {
       "rels": [
-        "canonical"
+        "self"
       ]
     },
     "http://tantek.com/logo.jpg": {
@@ -2337,59 +2333,46 @@
       "title": "Choose TRON:Legacy theme",
       "text": "🔵"
     },
-    "https://en.wikipedia.org/wiki/User:Tantek": {
-      "rels": [
-        "me"
-      ],
-      "title": "encyclopedia contributions on Wikipedia",
-      "text": " Wikipedia"
-    },
-    "http://last.fm/user/tantekc": {
-      "rels": [
-        "me"
-      ],
-      "title": "music on last.fm",
-      "text": " last.fm"
-    },
     "https://micro.blog/t": {
       "rels": [
         "me"
       ],
-      "text": "\n  \n    \n      \n      \n    \n    \n      \n      \n    \n  \n  \n  \n micro.blog"
-    },
-    "https://twitter.com/intent/user?screen_name=t": {
-      "rels": [
-        "me"
-      ],
-      "text": " Twitter"
-    },
-    "https://github.com/tantek": {
-      "rels": [
-        "me"
-      ],
-      "title": "open source on Github",
-      "text": " Github"
-    },
-    "https://www.flickr.com/people/tantek/": {
-      "rels": [
-        "me"
-      ],
-      "title": "photos on Flickr",
-      "text": " Flickr"
-    },
-    "http://dribbble.com/tantek/": {
-      "rels": [
-        "me"
-      ],
-      "title": "design snippets on Dribbble",
-      "text": " Dribbble"
+      "text": "\n  \n    \n      \n      \n    \n    \n      \n      \n    \n  \n  \n  \n micro.blog @t"
     },
     "https://www.instagram.com/tantek/": {
       "rels": [
         "me"
       ],
       "title": "Private Instagram Account primarily as a means to the ends of posting photos from my iPod touch",
-      "text": " Instagram"
+      "text": " Instagram @tantek"
+    },
+    "https://twitter.com/intent/user?screen_name=t": {
+      "rels": [
+        "me"
+      ],
+      "title": "Follow Tantek on Twitter",
+      "text": " Twitter @t"
+    },
+    "https://github.com/tantek": {
+      "rels": [
+        "me"
+      ],
+      "title": "open source on Github",
+      "text": " Github @tantek"
+    },
+    "https://indieweb.org/User:Tantek.com": {
+      "rels": [
+        "me"
+      ],
+      "title": "contributions to IndieWeb wiki",
+      "text": " IndieWeb User:Tantek.com"
+    },
+    "https://en.wikipedia.org/wiki/User:Tantek": {
+      "rels": [
+        "me"
+      ],
+      "title": "contributions to Wikipedia",
+      "text": " Wikipedia User:Tantek"
     }
   }
 }

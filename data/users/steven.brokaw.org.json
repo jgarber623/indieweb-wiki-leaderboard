@@ -1,32 +1,27 @@
 {
   "items": [],
   "rels": {
-    "profile": [
-      "https://gmpg.org/xfn/11"
-    ],
     "canonical": [
       "https://steven.brokaw.org/"
     ],
     "next": [
       "https://steven.brokaw.org/page/2"
     ],
-    "dns-prefetch": [
-      "https://s.w.org/"
-    ],
     "alternate": [
       "https://steven.brokaw.org/feed",
       "https://steven.brokaw.org/comments/feed"
     ],
     "stylesheet": [
-      "https://steven.brokaw.org/wp-includes/css/dist/block-library/style.min.css?ver=6.0.3",
+      "https://steven.brokaw.org/wp-includes/css/dist/block-library/style.min.css?ver=6.1",
+      "https://steven.brokaw.org/wp-includes/css/classic-themes.min.css?ver=1",
       "https://steven.brokaw.org/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
       "https://steven.brokaw.org/wp-content/plugins/indieweb-post-kinds/css/kind.min.css?ver=3.6.1",
       "https://steven.brokaw.org/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3",
-      "https://steven.brokaw.org/wp-content/themes/generatepress/assets/css/all.min.css?ver=3.1.3",
-      "https://steven.brokaw.org/wp-content/themes/generatepress/assets/css/components/font-icons.min.css?ver=3.1.3",
+      "https://steven.brokaw.org/wp-content/themes/generatepress/assets/css/all.min.css?ver=3.2.1",
+      "https://steven.brokaw.org/wp-content/themes/generatepress/assets/css/components/font-icons.min.css?ver=3.2.1",
       "https://steven.brokaw.org/wp-content/themes/generatepress/assets/css/components/font-awesome.min.css?ver=4.7",
       "https://steven.brokaw.org/wp-content/plugins/syndication-links/css/syn.min.css?ver=4.3.12",
-      "https://steven.brokaw.org/wp-content/plugins/gp-premium/blog/functions/css/featured-images.min.css?ver=2.1.2"
+      "https://steven.brokaw.org/wp-content/plugins/gp-premium/blog/functions/css/featured-images.min.css?ver=2.2.0"
     ],
     "https://api.w.org/": [
       "https://steven.brokaw.org/wp-json/"
@@ -73,11 +68,6 @@
     ]
   },
   "rel-urls": {
-    "https://gmpg.org/xfn/11": {
-      "rels": [
-        "profile"
-      ]
-    },
     "https://steven.brokaw.org/": {
       "rels": [
         "canonical"
@@ -86,11 +76,6 @@
     "https://steven.brokaw.org/page/2": {
       "rels": [
         "next"
-      ]
-    },
-    "https://s.w.org/": {
-      "rels": [
-        "dns-prefetch"
       ]
     },
     "https://steven.brokaw.org/feed": {
@@ -107,7 +92,13 @@
       "title": "Steven Brokaw » Comments Feed",
       "type": "application/rss+xml"
     },
-    "https://steven.brokaw.org/wp-includes/css/dist/block-library/style.min.css?ver=6.0.3": {
+    "https://steven.brokaw.org/wp-includes/css/dist/block-library/style.min.css?ver=6.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://steven.brokaw.org/wp-includes/css/classic-themes.min.css?ver=1": {
       "rels": [
         "stylesheet"
       ],
@@ -131,13 +122,13 @@
       ],
       "media": "all"
     },
-    "https://steven.brokaw.org/wp-content/themes/generatepress/assets/css/all.min.css?ver=3.1.3": {
+    "https://steven.brokaw.org/wp-content/themes/generatepress/assets/css/all.min.css?ver=3.2.1": {
       "rels": [
         "stylesheet"
       ],
       "media": "all"
     },
-    "https://steven.brokaw.org/wp-content/themes/generatepress/assets/css/components/font-icons.min.css?ver=3.1.3": {
+    "https://steven.brokaw.org/wp-content/themes/generatepress/assets/css/components/font-icons.min.css?ver=3.2.1": {
       "rels": [
         "stylesheet"
       ],
@@ -155,7 +146,7 @@
       ],
       "media": "all"
     },
-    "https://steven.brokaw.org/wp-content/plugins/gp-premium/blog/functions/css/featured-images.min.css?ver=2.1.2": {
+    "https://steven.brokaw.org/wp-content/plugins/gp-premium/blog/functions/css/featured-images.min.css?ver=2.2.0": {
       "rels": [
         "stylesheet"
       ],

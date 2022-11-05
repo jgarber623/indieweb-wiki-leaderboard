@@ -18,18 +18,21 @@
     ],
     "me": [
       "https://github.com/simonw",
-      "https://twitter.com/simonw"
+      "https://twitter.com/simonw",
+      "https://fedi.simonwillison.net/@simon"
     ],
     "authorization_endpoint": [
       "https://indieauth.com/auth"
     ],
     "bookmark": [
+      "https://simonwillison.net/2022/Nov/5/mastodon/",
       "https://simonwillison.net/2022/Oct/29/the-perfect-commit/",
       "https://simonwillison.net/2022/Oct/27/datasette-0-63/",
       "https://simonwillison.net/2022/Oct/23/datasette-gunicorn/",
       "https://simonwillison.net/2022/Oct/19/measuring-traffic/",
       "https://simonwillison.net/2022/Oct/14/automating-screenshots/",
-      "https://simonwillison.net/2022/Oct/12/publishing-data/",
+      "https://simonwillison.net/2022/Nov/5/nikodemus-guide-to-mastodon/",
+      "https://simonwillison.net/2022/Nov/4/dont-read-off-the-screen/",
       "https://simonwillison.net/2022/Nov/1/rfc-7807/",
       "https://simonwillison.net/2022/Oct/31/insta/",
       "https://simonwillison.net/2022/Oct/28/about-the-sqlite3-wasmjs-subproject/",
@@ -39,9 +42,7 @@
       "https://simonwillison.net/2022/Oct/24/leveraging-shot-scraper-and-creating-image-diffs/",
       "https://simonwillison.net/2022/Oct/21/the-commodordion/",
       "https://simonwillison.net/2022/Oct/19/simple-fast-and-scalable-reverse-image-search-using-perceptual-h/",
-      "https://simonwillison.net/2022/Oct/18/chris-amicos-python-setup/",
-      "https://simonwillison.net/2022/Oct/17/you-are-gpt-3/",
-      "https://simonwillison.net/2022/Oct/16/half-moon-bay-pumpkin-festival-traffic/"
+      "https://simonwillison.net/2022/Oct/18/chris-amicos-python-setup/"
     ],
     "nofollow": [
       "https://pumpkinfest.miramarevents.com/",
@@ -106,10 +107,21 @@
         "me"
       ]
     },
+    "https://fedi.simonwillison.net/@simon": {
+      "rels": [
+        "me"
+      ]
+    },
     "https://indieauth.com/auth": {
       "rels": [
         "authorization_endpoint"
       ]
+    },
+    "https://simonwillison.net/2022/Nov/5/mastodon/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "It looks like I’m moving to Mastodon"
     },
     "https://simonwillison.net/2022/Oct/29/the-perfect-commit/": {
       "rels": [
@@ -267,11 +279,17 @@
       ],
       "text": "Automating screenshots for the Datasette documentation using shot-scraper"
     },
-    "https://simonwillison.net/2022/Oct/12/publishing-data/": {
+    "https://simonwillison.net/2022/Nov/5/nikodemus-guide-to-mastodon/": {
       "rels": [
         "bookmark"
       ],
-      "text": "Weeknotes: Publishing data using Datasette Cloud"
+      "text": "#"
+    },
+    "https://simonwillison.net/2022/Nov/4/dont-read-off-the-screen/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "#"
     },
     "https://simonwillison.net/2022/Nov/1/rfc-7807/": {
       "rels": [
@@ -328,18 +346,6 @@
       "text": "#"
     },
     "https://simonwillison.net/2022/Oct/18/chris-amicos-python-setup/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "#"
-    },
-    "https://simonwillison.net/2022/Oct/17/you-are-gpt-3/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "#"
-    },
-    "https://simonwillison.net/2022/Oct/16/half-moon-bay-pumpkin-festival-traffic/": {
       "rels": [
         "bookmark"
       ],

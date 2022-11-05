@@ -21,6 +21,10 @@
       "properties": {
         "content": [
           {
+            "html": "<div class=\"field field-name-field-body field-type-text-long field-label-hidden view-mode-full\"><div class=\"field-items\"><div class=\"field-item even\" property=\"schema:articleBody\">\n<p>A coworker was having an issue logging into a website that requires two-factor authentication. We keep the authentication information for this site, including the TFA code, in a corporate <a href=\"http://1password.com/\">1Password</a> account. </p>\n\n<p>While he was getting his TFA codes rejected 100% of the time, I was having no troubles, using the same account, same 1Password, etc.</p>\n\n<p>The problem?</p>\n\n<p><em>His system clock on his PC was running two minutes slow.</em></p>\n\n<p>TFA codes are time-sensitive: the time is one of the factors in their generation (that’s why they expire every minute). If your system has the wrong time, your 1Password will generate the wrong TFA code.</p>\n\n<p>The solution: he set his PC clock to the right time.</p>\n</div></div></div>\n<div class=\"field field-name-field-topics field-type-taxonomy-term-reference field-label-hidden view-mode-full\"><ul class=\"field-items\">\n<li class=\"field-item even\" rel=\"schema:keywords\"><a href=\"https://ruk.ca/topics/tfa\" typeof=\"skos:Concept\" property=\"rdfs:label skos:prefLabel\" datatype=\"\" class=\"p-category\">TFA</a></li>\n<li class=\"field-item odd\" rel=\"schema:keywords\"><a href=\"https://ruk.ca/topics/authentication\" typeof=\"skos:Concept\" property=\"rdfs:label skos:prefLabel\" datatype=\"\" class=\"p-category\">Authentication</a></li>\n<li class=\"field-item even\" rel=\"schema:keywords\"><a href=\"https://ruk.ca/topics/security\" typeof=\"skos:Concept\" property=\"rdfs:label skos:prefLabel\" datatype=\"\" class=\"p-category\">Security</a></li>\n<li class=\"field-item odd\" rel=\"schema:keywords\"><a href=\"https://ruk.ca/topics/clock\" typeof=\"skos:Concept\" property=\"rdfs:label skos:prefLabel\" datatype=\"\" class=\"p-category\">Clock</a></li>\n<li class=\"field-item even\" rel=\"schema:keywords\"><a href=\"https://ruk.ca/topics/time\" typeof=\"skos:Concept\" property=\"rdfs:label skos:prefLabel\" datatype=\"\" class=\"p-category\">Time</a></li>\n</ul></div>",
+            "value": "A coworker was having an issue logging into a website that requires two-factor authentication. We keep the authentication information for this site, including the TFA code, in a corporate 1Password account. \n\nWhile he was getting his TFA codes rejected 100% of the time, I was having no troubles, using the same account, same 1Password, etc.\n\nThe problem?\n\nHis system clock on his PC was running two minutes slow.\n\nTFA codes are time-sensitive: the time is one of the factors in their generation (that’s why they expire every minute). If your system has the wrong time, your 1Password will generate the wrong TFA code.\n\nThe solution: he set his PC clock to the right time.\nTFAAuthenticationSecurityClockTime"
+          },
+          {
             "html": "<div class=\"field field-name-field-body field-type-text-long field-label-hidden view-mode-full\"><div class=\"field-items\"><div class=\"field-item even\" property=\"schema:articleBody\">\n<p>﻿<a href=\"https://therealsarahmiller.substack.com/p/carrots\">This piece by K’eguro Macharia</a> may be the single best thing ever written about vegetables.</p>\n\n<p>Or at least about beets:</p>\n\n<blockquote>\n<p>I have roasted beets. I have roasted them when they are wrapped in foil and I have roasted them when they are wrapped in banana leaves and I have roasted them without any covering. I have roasted them on a bed of whole spices and I have roasted them on their own. Roasting does nothing magical. Roasted beets still taste like beet. And beets taste like dirt and despair.</p>\n</blockquote>\n\n<p>Macharia has no love for cabbage either, which should cause my friend Ann, doyen of cabbage, to spring into restorative action.</p>\n</div></div></div>\n<div class=\"field field-name-field-topics field-type-taxonomy-term-reference field-label-hidden view-mode-full\"><ul class=\"field-items\">\n<li class=\"field-item even\" rel=\"schema:keywords\"><a href=\"https://ruk.ca/topics/writing\" typeof=\"skos:Concept\" property=\"rdfs:label skos:prefLabel\" datatype=\"\" class=\"p-category\">Writing</a></li>\n<li class=\"field-item odd\" rel=\"schema:keywords\"><a href=\"https://ruk.ca/topics/vegetables\" typeof=\"skos:Concept\" property=\"rdfs:label skos:prefLabel\" datatype=\"\" class=\"p-category\">Vegetables</a></li>\n<li class=\"field-item even\" rel=\"schema:keywords\"><a href=\"https://ruk.ca/topics/keguro-macharia\" typeof=\"skos:Concept\" property=\"rdfs:label skos:prefLabel\" datatype=\"\" class=\"p-category\">K'eguro Macharia</a></li>\n<li class=\"field-item odd\" rel=\"schema:keywords\"><a href=\"https://ruk.ca/topics/beets\" typeof=\"skos:Concept\" property=\"rdfs:label skos:prefLabel\" datatype=\"\" class=\"p-category\">Beets</a></li>\n<li class=\"field-item even\" rel=\"schema:keywords\"><a href=\"https://ruk.ca/topics/cabbage\" typeof=\"skos:Concept\" property=\"rdfs:label skos:prefLabel\" datatype=\"\" class=\"p-category\">Cabbage</a></li>\n</ul></div>",
             "value": "﻿This piece by K’eguro Macharia may be the single best thing ever written about vegetables.\n\nOr at least about beets:\n\n\nI have roasted beets. I have roasted them when they are wrapped in foil and I have roasted them when they are wrapped in banana leaves and I have roasted them without any covering. I have roasted them on a bed of whole spices and I have roasted them on their own. Roasting does nothing magical. Roasted beets still taste like beet. And beets taste like dirt and despair.\n\n\nMacharia has no love for cabbage either, which should cause my friend Ann, doyen of cabbage, to spring into restorative action.\nWritingVegetablesK'eguro MachariaBeetsCabbage"
           },
@@ -47,13 +51,14 @@
           {
             "html": "<div class=\"field field-name-field-body field-type-text-long field-label-hidden view-mode-full\"><div class=\"field-items\"><div class=\"field-item even\" property=\"schema:articleBody\">\n<p>Ida Josefiina, in <em><a href=\"https://app.sane.fyi/space/ida-ida-josefiina-75044/sane-space-node/ida-ida-josefiina-75044-me-a-brief-history-6620\">Me (a brief history)</a></em>:</p>\n\n<blockquote>\n<p>I moved to Shenzhen, China as a desperate attempt to immerse myself in the unknown. I wanted to feel like I was drowning in a pool of unfamiliarity and novelty, deprived of the air that was my known reality.</p>\n</blockquote>\n</div></div></div>\n<div class=\"field field-name-field-topics field-type-taxonomy-term-reference field-label-hidden view-mode-full\"><ul class=\"field-items\">\n<li class=\"field-item even\" rel=\"schema:keywords\"><a href=\"https://ruk.ca/topics/ida-josefiina\" typeof=\"skos:Concept\" property=\"rdfs:label skos:prefLabel\" datatype=\"\" class=\"p-category\">Ida Josefiina</a></li>\n<li class=\"field-item odd\" rel=\"schema:keywords\"><a href=\"https://ruk.ca/topics/sane\" typeof=\"skos:Concept\" property=\"rdfs:label skos:prefLabel\" datatype=\"\" class=\"p-category\">Sane</a></li>\n</ul></div>",
             "value": "Ida Josefiina, in Me (a brief history):\n\n\nI moved to Shenzhen, China as a desperate attempt to immerse myself in the unknown. I wanted to feel like I was drowning in a pool of unfamiliarity and novelty, deprived of the air that was my known reality.\n\nIda JosefiinaSane"
-          },
-          {
-            "html": "<div class=\"field field-name-field-body field-type-text-long field-label-hidden view-mode-full\"><div class=\"field-items\"><div class=\"field-item even\" property=\"schema:articleBody\">\n<p>Hurricane Fiona spared our apple trees, and, indeed, almost spared the plum tree but for the large Norway maple that fell on top of it. </p>\n\n<p>The plum tree wasn’t snapped, however, and its roots stayed in the ground—it was simply smushed down from its regular 90º to the ground down to something closer to 20º.</p>\n\n<p>With the help of our neighbour Doug, and some tie-down straps from Home Hardware, Lisa and I righted the tree, and lashed it in place at the original 90º, with hopes that nature will now take over and allow it to bear fruit another day.</p>\n\n<p>Here’s its journey, from downed:</p>\n\n<p class=\"rtecenter\"><img alt=\"Downed plum tree\" src=\"https://ruk.ca/sites/ruk.ca/files/plum1.jpg\" style=\"border-width: 1px; border-style: solid; width: 768px; height: 698px;\"></p>\n\n<p>To raising it up, with Lisa’s help (it’s her arms and knees on the left!):</p>\n\n<p class=\"rtecenter\"><img alt=\"Raising the plum tree by hand\" src=\"https://ruk.ca/sites/ruk.ca/files/plum2.jpg\" style=\"border-width: 1px; border-style: solid; width: 768px; height: 698px;\"></p>\n\n<p>To holding the tree upright so that Lisa could ratchet it into place:</p>\n\n<p class=\"rtecenter\"><img alt=\"Raised tree!\" src=\"https://ruk.ca/sites/ruk.ca/files/plum3.jpg\" style=\"border-width: 1px; border-style: solid; width: 768px; height: 698px;\"></p>\n\n<p>Here’s where it rests now. Godspeed, plum tree!</p>\n\n<p class=\"rtecenter\"><img alt=\"Plum tree in our back year, with yellow tie-down straps holding in vertical.\" src=\"https://ruk.ca/sites/ruk.ca/files/plumtree.jpg\" style=\"border-width: 1px; border-style: solid; width: 768px; height: 1024px;\"></p>\n</div></div></div>\n<div class=\"field field-name-field-topics field-type-taxonomy-term-reference field-label-hidden view-mode-full\"><ul class=\"field-items\">\n<li class=\"field-item even\" rel=\"schema:keywords\"><a href=\"https://ruk.ca/topics/plum-tree\" typeof=\"skos:Concept\" property=\"rdfs:label skos:prefLabel\" datatype=\"\" class=\"p-category\">Plum Tree</a></li>\n<li class=\"field-item odd\" rel=\"schema:keywords\"><a href=\"https://ruk.ca/topics/prince-edward-island/100-prince-street\" typeof=\"skos:Concept\" property=\"rdfs:label skos:prefLabel\" datatype=\"\" class=\"p-category\">100 Prince Street</a></li>\n<li class=\"field-item even\" rel=\"schema:keywords\"><a href=\"https://ruk.ca/topics/hurricane-fiona\" typeof=\"skos:Concept\" property=\"rdfs:label skos:prefLabel\" datatype=\"\" class=\"p-category\">Hurricane Fiona</a></li>\n</ul></div>",
-            "value": "Hurricane Fiona spared our apple trees, and, indeed, almost spared the plum tree but for the large Norway maple that fell on top of it. \n\nThe plum tree wasn’t snapped, however, and its roots stayed in the ground—it was simply smushed down from its regular 90º to the ground down to something closer to 20º.\n\nWith the help of our neighbour Doug, and some tie-down straps from Home Hardware, Lisa and I righted the tree, and lashed it in place at the original 90º, with hopes that nature will now take over and allow it to bear fruit another day.\n\nHere’s its journey, from downed:\n\n Downed plum tree \n\nTo raising it up, with Lisa’s help (it’s her arms and knees on the left!):\n\n Raising the plum tree by hand \n\nTo holding the tree upright so that Lisa could ratchet it into place:\n\n Raised tree! \n\nHere’s where it rests now. Godspeed, plum tree!\n\n Plum tree in our back year, with yellow tie-down straps holding in vertical. \nPlum Tree100 Prince StreetHurricane Fiona"
           }
         ],
         "category": [
+          "TFA",
+          "Authentication",
+          "Security",
+          "Clock",
+          "Time",
           "Writing",
           "Vegetables",
           "K'eguro Macharia",
@@ -74,30 +79,27 @@
           "Public Schools Branch",
           "Elections",
           "Ida Josefiina",
-          "Sane",
-          "Plum Tree",
-          "100 Prince Street",
-          "Hurricane Fiona"
+          "Sane"
         ],
         "url": [
+          "https://ruk.ca/content/my-tfa-codes-arent-working",
           "https://ruk.ca/content/“and-beets-taste-dirt-and-despair”",
           "https://ruk.ca/content/cleaning-out-full-google-drive",
           "https://ruk.ca/content/frightening-essence-our-ai-distilled-selves",
           "https://ruk.ca/content/favourites-what-favourites",
           "https://ruk.ca/content/these-hands",
           "https://ruk.ca/content/zone-5-public-schools-branch-candidates-sane",
-          "https://ruk.ca/content/desperate-attempt-immerse-myself-unknown",
-          "https://ruk.ca/content/plum-tree-remediation-project"
+          "https://ruk.ca/content/desperate-attempt-immerse-myself-unknown"
         ],
         "published": [
+          "2022-11-04 12:10:48",
           "2022-11-02 08:34:54",
           "2022-11-02 03:23:07",
           "2022-11-01 03:05:18",
           "2022-11-01 11:37:08",
           "2022-11-01 10:07:45",
           "2022-10-31 10:12:12",
-          "2022-10-31 09:44:01",
-          "2022-10-30 07:55:29"
+          "2022-10-31 09:44:01"
         ],
         "author": [
           {
@@ -388,14 +390,14 @@
       "https://ruk.ca/sites/ruk.ca/files/advagg_css/css__TWWIA2lrICob2JXs_dHc7TqlUviRCIBMCzbCgicBEp4__BgjWfxlDx92v3BklKTc93iTjJByy6Dx56eFbSeOxuMk__TTYry4XbgkL5rLFFAPVzwDZifJma419B8nXpGoNJZxo.css"
     ],
     "bookmark": [
+      "https://ruk.ca/content/my-tfa-codes-arent-working",
       "https://ruk.ca/content/%E2%80%9Cand-beets-taste-dirt-and-despair%E2%80%9D",
       "https://ruk.ca/content/cleaning-out-full-google-drive",
       "https://ruk.ca/content/frightening-essence-our-ai-distilled-selves",
       "https://ruk.ca/content/favourites-what-favourites",
       "https://ruk.ca/content/these-hands",
       "https://ruk.ca/content/zone-5-public-schools-branch-candidates-sane",
-      "https://ruk.ca/content/desperate-attempt-immerse-myself-unknown",
-      "https://ruk.ca/content/plum-tree-remediation-project"
+      "https://ruk.ca/content/desperate-attempt-immerse-myself-unknown"
     ],
     "author": [
       "https://ruk.ca/about-peter-rukavina",
@@ -565,17 +567,23 @@
       "media": "all",
       "type": "text/css"
     },
-    "https://ruk.ca/content/%E2%80%9Cand-beets-taste-dirt-and-despair%E2%80%9D": {
+    "https://ruk.ca/content/my-tfa-codes-arent-working": {
       "rels": [
         "bookmark"
       ],
-      "text": "“And beets taste like dirt and despair”"
+      "text": "My TFA Codes Aren’t Working!"
     },
     "https://ruk.ca/about-peter-rukavina": {
       "rels": [
         "author"
       ],
       "text": "Peter Rukavina"
+    },
+    "https://ruk.ca/content/%E2%80%9Cand-beets-taste-dirt-and-despair%E2%80%9D": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "“And beets taste like dirt and despair”"
     },
     "https://ruk.ca/content/cleaning-out-full-google-drive": {
       "rels": [
@@ -612,12 +620,6 @@
         "bookmark"
       ],
       "text": "“as a desperate attempt to immerse myself in the unknown”"
-    },
-    "https://ruk.ca/content/plum-tree-remediation-project": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Plum Tree Remediation Project"
     }
   }
 }

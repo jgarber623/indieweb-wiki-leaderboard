@@ -686,7 +686,7 @@
       "https://assets.sixtwothree.org/jgarber.png"
     ],
     "authorization_endpoint": [
-      "https://authenticate.computer/auth"
+      "https://indieauth.com/auth"
     ],
     "microsub": [
       "https://aperture.p3k.io/microsub/219"
@@ -695,7 +695,7 @@
       "https://sixtwothree.org/auth"
     ],
     "token_endpoint": [
-      "https://authenticate.computer/token"
+      "https://indieauth.com/token"
     ],
     "webmention": [
       "https://sixtwothree.org/webmentions"
@@ -733,6 +733,9 @@
       "https://twitter.com/jgarber",
       "https://upcoming.org/@jgarber",
       "https://vimeo.com/jgarber"
+    ],
+    "authn": [
+      "https://github.com/jgarber623"
     ],
     "license": [
       "https://creativecommons.org/licenses/by-nc-sa/4.0/"
@@ -787,7 +790,7 @@
       ],
       "type": "application/opensearchdescription+xml"
     },
-    "https://authenticate.computer/auth": {
+    "https://indieauth.com/auth": {
       "rels": [
         "authorization_endpoint"
       ]
@@ -802,7 +805,7 @@
         "redirect_uri"
       ]
     },
-    "https://authenticate.computer/token": {
+    "https://indieauth.com/token": {
       "rels": [
         "token_endpoint"
       ]
@@ -873,6 +876,7 @@
     },
     "https://github.com/jgarber623": {
       "rels": [
+        "authn",
         "me"
       ],
       "text": "GitHub"
