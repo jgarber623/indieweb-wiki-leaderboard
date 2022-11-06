@@ -30,6 +30,10 @@
     "webmention": [
       "https://brntn.me/webmentions/"
     ],
+    "alternate": [
+      "https://brntn.me/rss/",
+      "https://brntn.me/feed.json"
+    ],
     "me": [
       "https://github.com/sesh"
     ]
@@ -64,6 +68,20 @@
       "rels": [
         "webmention"
       ]
+    },
+    "https://brntn.me/rss/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "RSS",
+      "type": "application/rss+xml"
+    },
+    "https://brntn.me/feed.json": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "JSON Feed",
+      "type": "application/feed+json"
     },
     "https://github.com/sesh": {
       "rels": [

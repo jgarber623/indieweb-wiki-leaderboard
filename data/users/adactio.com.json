@@ -42,6 +42,206 @@
       "properties": {
         "content": [
           {
+            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://skiptocontent.huxleydigital.co.uk/video/caring-about-the-world-wide-web-with-jeremy-keith/\">\nVideo Interview Series #10: Caring about the World Wide Web, with Jeremy Keith - Skip To Content\n</a>\n</h3>\n\n<p>Here’s a short fifteen minute video (and transcript) of an interview I did about accessibility and inclusive design. I quite like how it turned out!</p>",
+            "value": "Video Interview Series #10: Caring about the World Wide Web, with Jeremy Keith - Skip To Content\n\n\n\nHere’s a short fifteen minute video (and transcript) of an interview I did about accessibility and inclusive design. I quite like how it turned out!"
+          }
+        ],
+        "name": [
+          "Video Interview Series #10: Caring about the World Wide Web, with Jeremy Keith - Skip To Content"
+        ],
+        "bookmark-of": [
+          "https://skiptocontent.huxleydigital.co.uk/video/caring-about-the-world-wide-web-with-jeremy-keith/"
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "50.83250323"
+              ],
+              "longitude": [
+                "-0.11813238"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/links/19579"
+        ],
+        "published": [
+          "2022-11-05T16:24:36Z"
+        ],
+        "category": [
+          "podcast",
+          "interview",
+          "youtube",
+          "video",
+          "accessibility",
+          "a11y",
+          "inclusive",
+          "design",
+          "frontend",
+          "development"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Negativity bias"
+        ],
+        "url": [
+          "https://adactio.com/journal/19578"
+        ],
+        "content": [
+          {
+            "html": "<p>When <a href=\"https://adactio.com/journal/19573\">I wrote about my hopes and fears</a> for <a href=\"https://github.com/WICG/view-transitions/blob/main/explainer.md\">the View Transitions API</a>, a few people latched on to this sentiment:</p>\n\n<blockquote>\n  <p>If the View Transitions API only works for single page apps, it could be the single worst thing to happen to the web in years.</p>\n</blockquote>\n\n<p>But I also wrote:</p>\n\n<blockquote>\n  <p>If the View Transitions API works across page navigations, it could be the single best thing to happen to the web in years.</p>\n</blockquote>\n\n<p>I think it’s worth focusing on <em>that</em>.</p>\n\n<p>Part of the problem is that I gave my hopes and fears an equal airing. But they’re not equally likely.</p>\n\n<p>Take the possibility that the View Transitions API only ships for single page apps, but never ships for regular page transitions. The consequences of that would be big—the API would act as an incentive to build single page apps. But the likelihood of that happening is small. In fact, <a href=\"https://twitter.com/jaffathecake/status/1588839787229609985\">according to Jake</a>, there’s already an implemention for page transitions in the works at Chrome.</p>\n\n<p>Now what if the View Transitions API ships for pages? The consequences would be equally big—the API would act as an incentive to ditch single page apps and build in a more performant, resilient way. Best of all, the chances of that happening are very large indeed (pretty much a certainty now, given Jake’s update).</p>\n\n<p>So I made a comparison between both of the <em>consequences</em>, which are equally large, but I didn’t make a corresponding comparison of the <em>likelihoods</em>, which are not equally large. Mea culpa!</p>\n\n<p>I should’ve made it clearer that, although the consequences would be really bad if the View Transitions API only supports single page apps, the actual likelihood of that is pretty slim.</p>\n\n<p>That’s probably my negativity bias showing through. (The reason I have a negativity bias is because I am a human. Like, have you ever noticed that if you get feedback on something and 98% of it is positive, you inevitably fixate on the 2%?)</p>\n\n<p>Anyway, the real takeaway here is that if the View Transitions API ships for pages, then the consequences will be really, really good! It would be another nail in the coffin for monolithic JavaScript frameworks slowing down the web. And best of all, the likelihood of this happening is very high!</p>\n\n<p>So let me amend my closing sentences from <a href=\"https://adactio.com/journal/19573\">my previous post</a>:</p>\n\n<p>If the View Transitions API only works for single page apps—<em>which is very unlikely</em>—it could be the single worst thing to happen to the web in years.</p>\n\n<p>If the View Transitions API works across page navigations—<em>which is very, very likely</em>—it could be the single best thing to happen to the web in years.</p>\n\n<p>The glass is half full and it’s only going to get fuller. Time to start planning for a turbo-charged web now.</p>\n\n<p>If you’ve got a website with full page navigations, start thinking about how you’ll be able to apply the View Transitions API as a progressive enhancement to improve the user experience.</p>\n\n<p>If you’ve got a single page app, start thinking about how to ditch a whole bunch of uneccessary dependencies to make a more lightweight foundation of HTML instead of JavaScript, and still get all those slick transitions you get in a single page app!</p>",
+            "value": "When I wrote about my hopes and fears for the View Transitions API, a few people latched on to this sentiment:\n\n\n  If the View Transitions API only works for single page apps, it could be the single worst thing to happen to the web in years.\n\n\nBut I also wrote:\n\n\n  If the View Transitions API works across page navigations, it could be the single best thing to happen to the web in years.\n\n\nI think it’s worth focusing on that.\n\nPart of the problem is that I gave my hopes and fears an equal airing. But they’re not equally likely.\n\nTake the possibility that the View Transitions API only ships for single page apps, but never ships for regular page transitions. The consequences of that would be big—the API would act as an incentive to build single page apps. But the likelihood of that happening is small. In fact, according to Jake, there’s already an implemention for page transitions in the works at Chrome.\n\nNow what if the View Transitions API ships for pages? The consequences would be equally big—the API would act as an incentive to ditch single page apps and build in a more performant, resilient way. Best of all, the chances of that happening are very large indeed (pretty much a certainty now, given Jake’s update).\n\nSo I made a comparison between both of the consequences, which are equally large, but I didn’t make a corresponding comparison of the likelihoods, which are not equally large. Mea culpa!\n\nI should’ve made it clearer that, although the consequences would be really bad if the View Transitions API only supports single page apps, the actual likelihood of that is pretty slim.\n\nThat’s probably my negativity bias showing through. (The reason I have a negativity bias is because I am a human. Like, have you ever noticed that if you get feedback on something and 98% of it is positive, you inevitably fixate on the 2%?)\n\nAnyway, the real takeaway here is that if the View Transitions API ships for pages, then the consequences will be really, really good! It would be another nail in the coffin for monolithic JavaScript frameworks slowing down the web. And best of all, the likelihood of this happening is very high!\n\nSo let me amend my closing sentences from my previous post:\n\nIf the View Transitions API only works for single page apps—which is very unlikely—it could be the single worst thing to happen to the web in years.\n\nIf the View Transitions API works across page navigations—which is very, very likely—it could be the single best thing to happen to the web in years.\n\nThe glass is half full and it’s only going to get fuller. Time to start planning for a turbo-charged web now.\n\nIf you’ve got a website with full page navigations, start thinking about how you’ll be able to apply the View Transitions API as a progressive enhancement to improve the user experience.\n\nIf you’ve got a single page app, start thinking about how to ditch a whole bunch of uneccessary dependencies to make a more lightweight foundation of HTML instead of JavaScript, and still get all those slick transitions you get in a single page app!"
+          }
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "50.83249404"
+              ],
+              "longitude": [
+                "-0.11812532"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "published": [
+          "2022-11-05T15:55:46Z"
+        ],
+        "category": [
+          "view",
+          "transitions",
+          "api",
+          "singlepageapps",
+          "spas",
+          "mpas",
+          "standards",
+          "browsers",
+          "frontend",
+          "development"
+        ],
+        "syndication": [
+          "https://adactio.medium.com/1376034bed13"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "<p>Very, very good news indeed! 👏👏👏</p>\n\n<p><a href=\"https://twitter.com/jaffathecake/status/1588839787229609985\">https://twitter.com/jaffathecake/status/1588839787229609985</a></p>",
+            "value": "Very, very good news indeed! 👏👏👏\n\nhttps://twitter.com/jaffathecake/status/1588839787229609985"
+          }
+        ],
+        "name": [
+          "Very, very good news indeed! 👏👏👏\n\nhttps://twitter.com/jaffathecake/status/1588839787229609985"
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "50.83251411"
+              ],
+              "longitude": [
+                "-0.11815824"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/notes/19575"
+        ],
+        "published": [
+          "2022-11-05T14:16:42Z"
+        ],
+        "syndication": [
+          "https://twitter.com/adactio/status/1588898102399967233"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Time for transitions"
+        ],
+        "url": [
+          "https://adactio.com/journal/19573"
+        ],
+        "content": [
+          {
+            "html": "<p>I am simultaneously very excited and very nervous about <a href=\"https://www.w3.org/TR/css-view-transitions-1/\">the View Transitions API</a>.</p>\n\n<p>You may know it by its former name—Shared Element Transitions. <a href=\"https://twitter.com/jaffathecake/status/1587373841508081664\">The name change is very recent</a>.</p>\n\n<p>I’ve been <a href=\"https://adactio.com/links/12885\">saying for years</a> that some kind of API like this would be brilliant:</p>\n\n<blockquote>\n  <p>I honestly think if browsers implemented this, 80% of client-rendered Single Page Apps could be done as regular good ol’-fashioned websites.</p>\n</blockquote>\n\n<p><a href=\"https://www.oddbird.net/2022/06/29/shared-elements/\">Miriam Suzanne describes</a> the theory of View Transitions succinctly:</p>\n\n<blockquote>\n  <p>Shared-element transitions are designed to work with standard web navigation <em>across multiple page loads</em>, as well as page transitions in ‘single-page’ apps (often called SPAs).</p>\n</blockquote>\n\n<p>This all sounds brilliant. But the devil is in the implementation details. Right now, the API only works for single page apps. This is totally understandable. For purely pragmatic reasons, single page apps are a simple use case to solve for. It’s going to take a lot more work to get this API to work for multi-page apps (or as we used to call them, websites).</p>\n\n<p>If we get a View Transitions API that works across page navigations, it could potentially turbo-charge the web. It will act as a <em>disencentive</em> to building single page apps—you’d be able to provide swish transitions without sacrificing performance or resilience at the alter of a heavy-handed JavaScript-only architecture.</p>\n\n<p>But if the API only ever works for single page apps (which is the current situation), then it will act as an <em>incentive</em> to make any kind of website into a single page app, regardless of whether it’s actually the appropriate architecture.</p>\n\n<p>That prospect has me very worried indeed.</p>\n\n<p>I’m making my feelings on this known just in case any of the implementators out there are thinking, “Hey, maybe it’s fine that this API only works for single page apps—I’m sure most people would be happy with that.”</p>\n\n<p>If the View Transitions API works across page navigations, it could be the single best thing to happen to the web in years.</p>\n\n<p>If the View Transitions API only works for single page apps, it could be the single worst thing to happen to the web in years.</p>\n\n<p><strong>Update</strong>: <a href=\"https://twitter.com/jaffathecake/status/1588839787229609985\">Jake says</a>:</p>\n\n<blockquote><p>We’re currently landing code in Chrome for the MPA version.</p></blockquote>\n\n<p>Very happy to hear that! <a href=\"https://github.com/WICG/view-transitions/blob/main/explainer.md#mpa-vs-spa-solutions\">It’s already in the spec</a>, but it’s good to hear that the implementation isn’t going to lag too much.</p>\n\n<p>Also, <a href=\"https://adactio.com/journal/19578\">read this follow-up</a>.</p>",
+            "value": "I am simultaneously very excited and very nervous about the View Transitions API.\n\nYou may know it by its former name—Shared Element Transitions. The name change is very recent.\n\nI’ve been saying for years that some kind of API like this would be brilliant:\n\n\n  I honestly think if browsers implemented this, 80% of client-rendered Single Page Apps could be done as regular good ol’-fashioned websites.\n\n\nMiriam Suzanne describes the theory of View Transitions succinctly:\n\n\n  Shared-element transitions are designed to work with standard web navigation across multiple page loads, as well as page transitions in ‘single-page’ apps (often called SPAs).\n\n\nThis all sounds brilliant. But the devil is in the implementation details. Right now, the API only works for single page apps. This is totally understandable. For purely pragmatic reasons, single page apps are a simple use case to solve for. It’s going to take a lot more work to get this API to work for multi-page apps (or as we used to call them, websites).\n\nIf we get a View Transitions API that works across page navigations, it could potentially turbo-charge the web. It will act as a disencentive to building single page apps—you’d be able to provide swish transitions without sacrificing performance or resilience at the alter of a heavy-handed JavaScript-only architecture.\n\nBut if the API only ever works for single page apps (which is the current situation), then it will act as an incentive to make any kind of website into a single page app, regardless of whether it’s actually the appropriate architecture.\n\nThat prospect has me very worried indeed.\n\nI’m making my feelings on this known just in case any of the implementators out there are thinking, “Hey, maybe it’s fine that this API only works for single page apps—I’m sure most people would be happy with that.”\n\nIf the View Transitions API works across page navigations, it could be the single best thing to happen to the web in years.\n\nIf the View Transitions API only works for single page apps, it could be the single worst thing to happen to the web in years.\n\nUpdate: Jake says:\n\nWe’re currently landing code in Chrome for the MPA version.\n\nVery happy to hear that! It’s already in the spec, but it’s good to hear that the implementation isn’t going to lag too much.\n\nAlso, read this follow-up."
+          }
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "50.83252579"
+              ],
+              "longitude": [
+                "-0.11815564"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "published": [
+          "2022-11-05T09:01:19Z"
+        ],
+        "category": [
+          "view",
+          "transitions",
+          "api",
+          "singlepageapps",
+          "spas",
+          "mpas",
+          "standards",
+          "browsers",
+          "frontend",
+          "development"
+        ],
+        "syndication": [
+          "https://adactio.medium.com/85f05369313c"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
             "html": "<blockquote>\n  <p>I think a life or a time looks simple when you leave out the details, the way a planet looks smooth from orbit.</p>\n</blockquote>\n\n<p>— Ursula K. Le Guin, Solitude</p>",
             "value": "I think a life or a time looks simple when you leave out the details, the way a planet looks smooth from orbit.\n\n\n— Ursula K. Le Guin, Solitude"
           }
@@ -838,204 +1038,6 @@
     },
     {
       "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "content": [
-          {
-            "html": "<p>If you watch this video at 0.5 playback speed, it sounds like an angry drunk hobo slurring his speech has wandered onto the stage—so much better that way:</p>\n\n<p><a href=\"https://www.youtube.com/watch?v=8q03gUCB690\">https://www.youtube.com/watch?v=8q03gUCB690</a></p>\n<div><a class=\"videoimglink\" href=\"https://www.youtube.com/watch?v=8q03gUCB690\" onclick=\"event.preventDefault();this.parentNode.className='embed';this.parentNode.innerHTML='&lt;iframe src=https://www.youtube-nocookie.com/embed/8q03gUCB690?autoplay=1&gt;&lt;/iframe&gt;';\"><img style=\"width: 100%\" loading=\"lazy\" src=\"https://i.ytimg.com/vi/8q03gUCB690/mqdefault.jpg\" alt=\"Design Principles For The Web - Jeremy Keith\" srcset=\"https://i.ytimg.com/vi/8q03gUCB690/mqdefault.jpg 320w, https://i.ytimg.com/vi/8q03gUCB690/hqdefault.jpg 480w, https://i.ytimg.com/vi/8q03gUCB690/sddefault.jpg 640w, https://i.ytimg.com/vi/8q03gUCB690/maxresdefault.jpg 1280w\" sizes=\"(min-width: 65em) 55vw, 90vw\"></a></div>",
-            "value": "If you watch this video at 0.5 playback speed, it sounds like an angry drunk hobo slurring his speech has wandered onto the stage—so much better that way:\n\nhttps://www.youtube.com/watch?v=8q03gUCB690\n Design Principles For The Web - Jeremy Keith"
-          }
-        ],
-        "name": [
-          "If you watch this video at 0.5 playback speed, it sounds like an angry drunk hobo slurring his speech has wandered onto the stage—so much better that way:\n\nhttps://www.youtube.com/watch?v=8q03gUCB690\n Design Principles For The Web - Jeremy Keith"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83252944"
-              ],
-              "longitude": [
-                "-0.11814775"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/notes/19554"
-        ],
-        "published": [
-          "2022-10-28T15:10:33Z"
-        ],
-        "syndication": [
-          "https://twitter.com/adactio/status/1586012551896252418"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "photo": [
-          {
-            "value": "https://adactio.com/images/uploaded/19552/small.jpg",
-            "srcset": {
-              "320w": "https://adactio.com/images/uploaded/19552/small.jpg",
-              "480w": "https://adactio.com/images/uploaded/19552/medium.jpg",
-              "800w": "https://adactio.com/images/uploaded/19552/large.jpg"
-            },
-            "alt": "Checked in at The Lord Nelson Inn. Monthly session in The Nelson 🎶"
-          }
-        ],
-        "content": [
-          {
-            "html": "<p>Checked in at The Lord Nelson Inn. Monthly session in The Nelson 🎶</p>",
-            "value": "Checked in at The Lord Nelson Inn. Monthly session in The Nelson 🎶"
-          }
-        ],
-        "name": [
-          "Checked in at The Lord Nelson Inn. Monthly session in The Nelson 🎶"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.82837901"
-              ],
-              "longitude": [
-                "-0.13921648"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/notes/19552"
-        ],
-        "published": [
-          "2022-10-27T20:05:01Z"
-        ],
-        "syndication": [
-          "https://www.swarmapp.com/user/112073/checkin/635ae45b1879724c765ebb59"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "photo": [
-          {
-            "value": "https://adactio.com/images/uploaded/19551/small.jpg",
-            "srcset": {
-              "320w": "https://adactio.com/images/uploaded/19551/small.jpg",
-              "480w": "https://adactio.com/images/uploaded/19551/medium.jpg",
-              "800w": "https://adactio.com/images/uploaded/19551/large.jpg"
-            },
-            "alt": "Checked in at Jolly Brewer. Wednesday night session 🎶🎻☘️ — with Jessica"
-          }
-        ],
-        "content": [
-          {
-            "html": "<p>Checked in at Jolly Brewer. Wednesday night session 🎶🎻☘️ — with Jessica</p>",
-            "value": "Checked in at Jolly Brewer. Wednesday night session 🎶🎻☘️ — with Jessica"
-          }
-        ],
-        "name": [
-          "Checked in at Jolly Brewer. Wednesday night session 🎶🎻☘️ — with Jessica"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83893121"
-              ],
-              "longitude": [
-                "-0.13357020"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/notes/19551"
-        ],
-        "published": [
-          "2022-10-26T19:39:23Z"
-        ],
-        "syndication": [
-          "https://www.swarmapp.com/user/112073/checkin/63598cd860a6dd72268be792"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "content": [
-          {
-            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://maggieappleton.com/programming-portals\">\nProgramming Portals\n</a>\n</h3>\n\n<p>A terrific piece by Maggie Appleton that starts with a comparison of graphical user interfaces and command line tools—which reminds me of the trade-offs between seamless and <a href=\"https://adactio.com/journal/6786\">seamful</a> design—and then moves into a proposed paradigm for <a href=\"https://adactio.com/journal/18982\">declarative design</a> tools:</p>\n\n<blockquote>\n  <p>Small, scoped areas within a graphical interface that allow users to read and write simple programmes</p>\n</blockquote>",
-            "value": "Programming Portals\n\n\n\nA terrific piece by Maggie Appleton that starts with a comparison of graphical user interfaces and command line tools—which reminds me of the trade-offs between seamless and seamful design—and then moves into a proposed paradigm for declarative design tools:\n\n\n  Small, scoped areas within a graphical interface that allow users to read and write simple programmes"
-          }
-        ],
-        "name": [
-          "Programming Portals"
-        ],
-        "bookmark-of": [
-          "https://maggieappleton.com/programming-portals"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83250429"
-              ],
-              "longitude": [
-                "-0.11811186"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/links/19550"
-        ],
-        "published": [
-          "2022-10-26T15:43:30Z"
-        ],
-        "category": [
-          "interfaces",
-          "cli",
-          "gui",
-          "seams",
-          "seamful",
-          "design",
-          "programming",
-          "empowerment",
-          "portals",
-          "hypercard"
-        ]
-      }
-    },
-    {
-      "type": [
         "h-card"
       ],
       "properties": {
@@ -1774,6 +1776,10 @@
       "https://adactio.com/includes/css/print.css"
     ],
     "bookmark": [
+      "https://adactio.com/links/19579",
+      "https://adactio.com/journal/19578",
+      "https://adactio.com/notes/19575",
+      "https://adactio.com/journal/19573",
       "https://adactio.com/notes/19572",
       "https://adactio.com/notes/19571",
       "https://adactio.com/notes/19570",
@@ -1789,27 +1795,27 @@
       "https://adactio.com/links/19558",
       "https://adactio.com/links/19557",
       "https://adactio.com/links/19556",
-      "https://adactio.com/links/19555",
-      "https://adactio.com/notes/19554",
-      "https://adactio.com/notes/19552",
-      "https://adactio.com/notes/19551",
-      "https://adactio.com/links/19550"
-    ],
-    "syndication": [
-      "https://twitter.com/adactio/status/1588238101683609600",
-      "https://twitter.com/adactio/status/1587808147191828480",
-      "https://twitter.com/adactio/status/1587771752402255877",
-      "https://twitter.com/adactio/status/1587408686812741633",
-      "https://adactio.medium.com/70d40dcb1460",
-      "https://twitter.com/adactio/status/1586846211684073473",
-      "https://www.swarmapp.com/user/112073/checkin/635eaa8a91fe8a29654e7ceb",
-      "https://www.swarmapp.com/user/112073/checkin/635e8b6588b4cb3602b057db",
-      "https://adactio.medium.com/32ff839f4658",
-      "https://twitter.com/adactio/status/1586012551896252418",
-      "https://www.swarmapp.com/user/112073/checkin/635ae45b1879724c765ebb59",
-      "https://www.swarmapp.com/user/112073/checkin/63598cd860a6dd72268be792"
+      "https://adactio.com/links/19555"
     ],
     "tag": [
+      "https://adactio.com/tags/podcast",
+      "https://adactio.com/tags/interview",
+      "https://adactio.com/tags/youtube",
+      "https://adactio.com/tags/video",
+      "https://adactio.com/tags/accessibility",
+      "https://adactio.com/tags/a11y",
+      "https://adactio.com/tags/inclusive",
+      "https://adactio.com/tags/design",
+      "https://adactio.com/tags/frontend",
+      "https://adactio.com/tags/development",
+      "https://adactio.com/tags/view",
+      "https://adactio.com/tags/transitions",
+      "https://adactio.com/tags/api",
+      "https://adactio.com/tags/singlepageapps",
+      "https://adactio.com/tags/spas",
+      "https://adactio.com/tags/mpas",
+      "https://adactio.com/tags/standards",
+      "https://adactio.com/tags/browsers",
       "https://adactio.com/tags/music",
       "https://adactio.com/tags/saltercane",
       "https://adactio.com/tags/theroebucks",
@@ -1823,13 +1829,7 @@
       "https://adactio.com/tags/break-after",
       "https://adactio.com/tags/break-before",
       "https://adactio.com/tags/chrome",
-      "https://adactio.com/tags/browsers",
-      "https://adactio.com/tags/standards",
-      "https://adactio.com/tags/frontend",
-      "https://adactio.com/tags/development",
       "https://adactio.com/tags/aria",
-      "https://adactio.com/tags/accessibility",
-      "https://adactio.com/tags/a11y",
       "https://adactio.com/tags/buttons",
       "https://adactio.com/tags/interface",
       "https://adactio.com/tags/ui",
@@ -1868,17 +1868,21 @@
       "https://adactio.com/tags/observations",
       "https://adactio.com/tags/psychology",
       "https://adactio.com/tags/economics",
-      "https://adactio.com/tags/people",
-      "https://adactio.com/tags/interfaces",
-      "https://adactio.com/tags/cli",
-      "https://adactio.com/tags/gui",
-      "https://adactio.com/tags/seams",
-      "https://adactio.com/tags/seamful",
-      "https://adactio.com/tags/design",
-      "https://adactio.com/tags/programming",
-      "https://adactio.com/tags/empowerment",
-      "https://adactio.com/tags/portals",
-      "https://adactio.com/tags/hypercard"
+      "https://adactio.com/tags/people"
+    ],
+    "syndication": [
+      "https://adactio.medium.com/1376034bed13",
+      "https://twitter.com/adactio/status/1588898102399967233",
+      "https://adactio.medium.com/85f05369313c",
+      "https://twitter.com/adactio/status/1588238101683609600",
+      "https://twitter.com/adactio/status/1587808147191828480",
+      "https://twitter.com/adactio/status/1587771752402255877",
+      "https://twitter.com/adactio/status/1587408686812741633",
+      "https://adactio.medium.com/70d40dcb1460",
+      "https://twitter.com/adactio/status/1586846211684073473",
+      "https://www.swarmapp.com/user/112073/checkin/635eaa8a91fe8a29654e7ceb",
+      "https://www.swarmapp.com/user/112073/checkin/635e8b6588b4cb3602b057db",
+      "https://adactio.medium.com/32ff839f4658"
     ],
     "next": [
       "https://adactio.com/?start=20"
@@ -2269,6 +2273,156 @@
       ],
       "text": "music"
     },
+    "https://adactio.com/links/19579": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n4:24pm\n\n"
+    },
+    "https://adactio.com/tags/podcast": {
+      "rels": [
+        "tag"
+      ],
+      "text": "podcast"
+    },
+    "https://adactio.com/tags/interview": {
+      "rels": [
+        "tag"
+      ],
+      "text": "interview"
+    },
+    "https://adactio.com/tags/youtube": {
+      "rels": [
+        "tag"
+      ],
+      "text": "youtube"
+    },
+    "https://adactio.com/tags/video": {
+      "rels": [
+        "tag"
+      ],
+      "text": "video"
+    },
+    "https://adactio.com/tags/accessibility": {
+      "rels": [
+        "tag"
+      ],
+      "text": "accessibility"
+    },
+    "https://adactio.com/tags/a11y": {
+      "rels": [
+        "tag"
+      ],
+      "text": "a11y"
+    },
+    "https://adactio.com/tags/inclusive": {
+      "rels": [
+        "tag"
+      ],
+      "text": "inclusive"
+    },
+    "https://adactio.com/tags/design": {
+      "rels": [
+        "tag"
+      ],
+      "text": "design"
+    },
+    "https://adactio.com/tags/frontend": {
+      "rels": [
+        "tag"
+      ],
+      "text": "frontend"
+    },
+    "https://adactio.com/tags/development": {
+      "rels": [
+        "tag"
+      ],
+      "text": "development"
+    },
+    "https://adactio.com/journal/19578": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n3:55pm\n\n"
+    },
+    "https://adactio.com/tags/view": {
+      "rels": [
+        "tag"
+      ],
+      "text": "view"
+    },
+    "https://adactio.com/tags/transitions": {
+      "rels": [
+        "tag"
+      ],
+      "text": "transitions"
+    },
+    "https://adactio.com/tags/api": {
+      "rels": [
+        "tag"
+      ],
+      "text": "api"
+    },
+    "https://adactio.com/tags/singlepageapps": {
+      "rels": [
+        "tag"
+      ],
+      "text": "singlepageapps"
+    },
+    "https://adactio.com/tags/spas": {
+      "rels": [
+        "tag"
+      ],
+      "text": "spas"
+    },
+    "https://adactio.com/tags/mpas": {
+      "rels": [
+        "tag"
+      ],
+      "text": "mpas"
+    },
+    "https://adactio.com/tags/standards": {
+      "rels": [
+        "tag"
+      ],
+      "text": "standards"
+    },
+    "https://adactio.com/tags/browsers": {
+      "rels": [
+        "tag"
+      ],
+      "text": "browsers"
+    },
+    "https://adactio.medium.com/1376034bed13": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "Medium"
+    },
+    "https://adactio.com/notes/19575": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n2:16pm\n\n"
+    },
+    "https://twitter.com/adactio/status/1588898102399967233": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "Twitter"
+    },
+    "https://adactio.com/journal/19573": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n9:01am\n\n"
+    },
+    "https://adactio.medium.com/85f05369313c": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "Medium"
+    },
     "https://adactio.com/notes/19572": {
       "rels": [
         "bookmark"
@@ -2455,30 +2609,6 @@
       ],
       "text": "chrome"
     },
-    "https://adactio.com/tags/browsers": {
-      "rels": [
-        "tag"
-      ],
-      "text": "browsers"
-    },
-    "https://adactio.com/tags/standards": {
-      "rels": [
-        "tag"
-      ],
-      "text": "standards"
-    },
-    "https://adactio.com/tags/frontend": {
-      "rels": [
-        "tag"
-      ],
-      "text": "frontend"
-    },
-    "https://adactio.com/tags/development": {
-      "rels": [
-        "tag"
-      ],
-      "text": "development"
-    },
     "https://adactio.com/journal/19560": {
       "rels": [
         "bookmark"
@@ -2490,18 +2620,6 @@
         "tag"
       ],
       "text": "aria"
-    },
-    "https://adactio.com/tags/accessibility": {
-      "rels": [
-        "tag"
-      ],
-      "text": "accessibility"
-    },
-    "https://adactio.com/tags/a11y": {
-      "rels": [
-        "tag"
-      ],
-      "text": "a11y"
     },
     "https://adactio.com/tags/buttons": {
       "rels": [
@@ -2772,108 +2890,6 @@
         "tag"
       ],
       "text": "people"
-    },
-    "https://adactio.com/notes/19554": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n3:10pm\n\n"
-    },
-    "https://twitter.com/adactio/status/1586012551896252418": {
-      "rels": [
-        "syndication"
-      ],
-      "text": "Twitter"
-    },
-    "https://adactio.com/notes/19552": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n8:05pm\n\n"
-    },
-    "https://www.swarmapp.com/user/112073/checkin/635ae45b1879724c765ebb59": {
-      "rels": [
-        "syndication"
-      ],
-      "text": "Swarm"
-    },
-    "https://adactio.com/notes/19551": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n7:39pm\n\n"
-    },
-    "https://www.swarmapp.com/user/112073/checkin/63598cd860a6dd72268be792": {
-      "rels": [
-        "syndication"
-      ],
-      "text": "Swarm"
-    },
-    "https://adactio.com/links/19550": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n3:43pm\n\n"
-    },
-    "https://adactio.com/tags/interfaces": {
-      "rels": [
-        "tag"
-      ],
-      "text": "interfaces"
-    },
-    "https://adactio.com/tags/cli": {
-      "rels": [
-        "tag"
-      ],
-      "text": "cli"
-    },
-    "https://adactio.com/tags/gui": {
-      "rels": [
-        "tag"
-      ],
-      "text": "gui"
-    },
-    "https://adactio.com/tags/seams": {
-      "rels": [
-        "tag"
-      ],
-      "text": "seams"
-    },
-    "https://adactio.com/tags/seamful": {
-      "rels": [
-        "tag"
-      ],
-      "text": "seamful"
-    },
-    "https://adactio.com/tags/design": {
-      "rels": [
-        "tag"
-      ],
-      "text": "design"
-    },
-    "https://adactio.com/tags/programming": {
-      "rels": [
-        "tag"
-      ],
-      "text": "programming"
-    },
-    "https://adactio.com/tags/empowerment": {
-      "rels": [
-        "tag"
-      ],
-      "text": "empowerment"
-    },
-    "https://adactio.com/tags/portals": {
-      "rels": [
-        "tag"
-      ],
-      "text": "portals"
-    },
-    "https://adactio.com/tags/hypercard": {
-      "rels": [
-        "tag"
-      ],
-      "text": "hypercard"
     },
     "https://adactio.com/?start=20": {
       "rels": [
