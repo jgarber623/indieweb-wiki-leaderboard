@@ -1,5 +1,104 @@
 {
-  "items": [],
-  "rels": {},
-  "rel-urls": {}
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "fn": [
+          "Audrey Eschright"
+        ],
+        "url": [
+          "http://lifeofaudrey.com/"
+        ],
+        "email": [
+          "audrey@lifeofaudrey.com"
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "stylesheet": [
+      "http://lifeofaudrey.com/assets/css/reset.css",
+      "http://lifeofaudrey.com/assets/css/all.css",
+      "https://fonts.googleapis.com/css?family=Lekton&subset=latin&v2",
+      "https://fonts.googleapis.com/css?family=Tinos:700italic&subset=latin&v2"
+    ],
+    "icon": [
+      "http://lifeofaudrey.com/favicon.png"
+    ],
+    "shortcut": [
+      "http://lifeofaudrey.com/favicon.png"
+    ],
+    "openid.server": [
+      "https://recompiler.wordpress.com/?openidserver=1"
+    ],
+    "openid.delegate": [
+      "https://recompiler.wordpress.com/"
+    ],
+    "alternate": [
+      "http://lifeofaudrey.com/atom.xml"
+    ],
+    "me": [
+      "https://github.com/aeschright"
+    ]
+  },
+  "rel-urls": {
+    "http://lifeofaudrey.com/assets/css/reset.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://lifeofaudrey.com/assets/css/all.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://lifeofaudrey.com/favicon.png": {
+      "rels": [
+        "icon",
+        "shortcut"
+      ],
+      "type": "image/x-icon"
+    },
+    "https://fonts.googleapis.com/css?family=Lekton&subset=latin&v2": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://fonts.googleapis.com/css?family=Tinos:700italic&subset=latin&v2": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://recompiler.wordpress.com/?openidserver=1": {
+      "rels": [
+        "openid.server"
+      ]
+    },
+    "https://recompiler.wordpress.com/": {
+      "rels": [
+        "openid.delegate"
+      ]
+    },
+    "http://lifeofaudrey.com/atom.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Feed for lifeofaudrey.com",
+      "type": "application/atom+xml"
+    },
+    "https://github.com/aeschright": {
+      "rels": [
+        "me"
+      ],
+      "text": "Code"
+    }
+  }
 }

@@ -5,6 +5,47 @@
         "h-entry"
       ],
       "properties": {
+        "url": [
+          "https://francescoschwarz.com/notes/2022-11-06-18-31-18/"
+        ],
+        "published": [
+          "2022-11-06T18:31:18+01:00"
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "photo": [
+                {
+                  "value": "https://francescoschwarz.com/site/assets/files/1029/francesco-schwarz.400x0.jpg",
+                  "alt": ""
+                }
+              ],
+              "name": [
+                "Francesco Schwarz"
+              ]
+            },
+            "value": "Francesco Schwarz"
+          }
+        ],
+        "content": [
+          {
+            "html": "<p>Test to see if Mastodon integration works with brid.gy and my website.</p>",
+            "value": "Test to see if Mastodon integration works with brid.gy and my website."
+          }
+        ],
+        "name": [
+          "Test to see if Mastodon integration works with brid.gy and my website."
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
         "published": [
           "2022-11-04T12:43:45+01:00"
         ],
@@ -317,41 +358,6 @@
     },
     {
       "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "published": [
-          "2022-09-23T18:50:58+02:00"
-        ],
-        "author": [
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "photo": [
-                {
-                  "value": "https://francescoschwarz.com/site/assets/files/1029/francesco-schwarz.400x0.jpg",
-                  "alt": ""
-                }
-              ],
-              "name": [
-                "Francesco Schwarz"
-              ]
-            },
-            "value": "Francesco Schwarz"
-          }
-        ],
-        "name": [
-          "4k Cycling"
-        ],
-        "url": [
-          "https://francescoschwarz.com/activities/cycling/2022-09-23-18-50-58/"
-        ]
-      }
-    },
-    {
-      "type": [
         "h-card"
       ],
       "properties": {
@@ -362,7 +368,7 @@
           }
         ],
         "note": [
-          "I’m Francesco Schwarz, a Frontend Developer from Munich, Germany. I’m passionate about the web and its technologies, but what I love most is to build experiences for people on the web that are responsive, fast, and accessible. Get in touch with me via Mastodon, Twitter, GitHub, or email."
+          "I’m Francesco Schwarz, a Frontend Developer from Munich, Germany. I’m passionate about the web and its technologies, but what I love most is to build experiences for people on the web that are responsive, fast, and accessible. Get in touch with me via Mastodon, GitHub, or email."
         ],
         "name": [
           "Francesco Schwarz"
@@ -380,7 +386,6 @@
     "me": [
       "mailto:francesco.schwarz@posteo.de",
       "https://mastodon.social/@isellsoap",
-      "https://twitter.com/isellsoap",
       "https://github.com/isellsoap",
       "https://micro.blog/isellsoap"
     ],
@@ -407,7 +412,8 @@
       "https://francescoschwarz.com/notes/feed.json",
       "https://francescoschwarz.com/activities/feed.json",
       "https://francescoschwarz.com/activities/running/feed.json",
-      "https://francescoschwarz.com/activities/cycling/feed.json"
+      "https://francescoschwarz.com/activities/cycling/feed.json",
+      "https://granary.io/url?url=https://francescoschwarz.com/&input=html&output=atom&hub=https://bridgy-fed.superfeedr.com/"
     ],
     "icon": [
       "https://francescoschwarz.com/favicon.ico",
@@ -420,6 +426,7 @@
       "https://francescoschwarz.com/manifest.json"
     ],
     "bookmark": [
+      "https://francescoschwarz.com/notes/2022-11-06-18-31-18/",
       "https://francescoschwarz.com/activities/cycling/2022-11-04-12-43-45/",
       "https://francescoschwarz.com/activities/cycling/2022-11-04-11-22-25/",
       "https://francescoschwarz.com/activities/cycling/2022-11-04-09-40-53/",
@@ -428,8 +435,7 @@
       "https://francescoschwarz.com/activities/cycling/2022-10-21-15-36-59/",
       "https://francescoschwarz.com/activities/cycling/2022-10-21-09-11-01/",
       "https://francescoschwarz.com/activities/cycling/2022-10-20-11-36-19/",
-      "https://francescoschwarz.com/activities/cycling/2022-09-23-22-53-22/",
-      "https://francescoschwarz.com/activities/cycling/2022-09-23-18-50-58/"
+      "https://francescoschwarz.com/activities/cycling/2022-09-23-22-53-22/"
     ],
     "next": [
       "https://francescoschwarz.com/page-2/"
@@ -447,11 +453,6 @@
       ]
     },
     "https://mastodon.social/@isellsoap": {
-      "rels": [
-        "me"
-      ]
-    },
-    "https://twitter.com/isellsoap": {
       "rels": [
         "me"
       ]
@@ -569,6 +570,12 @@
       "title": "Cycling JSON feed",
       "type": "application/json"
     },
+    "https://granary.io/url?url=https://francescoschwarz.com/&input=html&output=atom&hub=https://bridgy-fed.superfeedr.com/": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/atom+xml"
+    },
     "https://francescoschwarz.com/favicon.ico": {
       "rels": [
         "icon"
@@ -589,6 +596,12 @@
       "rels": [
         "manifest"
       ]
+    },
+    "https://francescoschwarz.com/notes/2022-11-06-18-31-18/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": " Nov 6, 2022 "
     },
     "https://francescoschwarz.com/activities/cycling/2022-11-04-12-43-45/": {
       "rels": [
@@ -639,12 +652,6 @@
       "text": "\n5k Cycling"
     },
     "https://francescoschwarz.com/activities/cycling/2022-09-23-22-53-22/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n4k Cycling"
-    },
-    "https://francescoschwarz.com/activities/cycling/2022-09-23-18-50-58/": {
       "rels": [
         "bookmark"
       ],

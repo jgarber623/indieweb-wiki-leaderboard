@@ -41,10 +41,11 @@
       "https://sparkwise.co/team/ari-bader-natal"
     ],
     "preload": [
-      "https://aribadernatal.com/fonts/MyFontsWebfontsKit.css",
       "https://aribadernatal.com/fonts/webFonts/CallunaRegular/font.woff2",
       "https://aribadernatal.com/fonts/webFonts/CallunaBold/font.woff2",
-      "https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,300;0,500;0,700;1,100&display=swap",
+      "https://aribadernatal.com/fonts/webFonts/CallunaItalic/font.woff2",
+      "https://aribadernatal.com/public/js/tippy/popper.min.js",
+      "https://aribadernatal.com/public/js/tippy/tippy-bundle.umd.min.js",
       "https://aribadernatal.com/logo-180-180.png",
       "https://aribadernatal.com/public/images/aribadernatal-200.jpg",
       "https://aribadernatal.com/img/sparkwise_logo.svg",
@@ -55,14 +56,6 @@
       "https://aribadernatal.com/img/icons/twitter.svg",
       "https://aribadernatal.com/img/icons/github.svg",
       "https://aribadernatal.com/img/icons/bookmark.svg"
-    ],
-    "stylesheet": [
-      "https://aribadernatal.com/fonts/MyFontsWebfontsKit.css",
-      "https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,300;0,500;0,700;1,100&display=swap"
-    ],
-    "preconnect": [
-      "https://fonts.googleapis.com/",
-      "https://fonts.gstatic.com/"
     ],
     "noopener": [
       "https://favorites.aribadernatal.com/pocket-favorites/2022/11/fonts-webfonts/",
@@ -134,11 +127,6 @@
         "me"
       ]
     },
-    "https://aribadernatal.com/fonts/MyFontsWebfontsKit.css": {
-      "rels": [
-        "preload"
-      ]
-    },
     "https://aribadernatal.com/fonts/webFonts/CallunaRegular/font.woff2": {
       "rels": [
         "preload"
@@ -151,20 +139,23 @@
       ],
       "type": "font/woff2"
     },
-    "https://fonts.googleapis.com/": {
-      "rels": [
-        "preconnect"
-      ]
-    },
-    "https://fonts.gstatic.com/": {
-      "rels": [
-        "preconnect"
-      ]
-    },
-    "https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,300;0,500;0,700;1,100&display=swap": {
+    "https://aribadernatal.com/fonts/webFonts/CallunaItalic/font.woff2": {
       "rels": [
         "preload"
-      ]
+      ],
+      "type": "font/woff2"
+    },
+    "https://aribadernatal.com/public/js/tippy/popper.min.js": {
+      "rels": [
+        "preload"
+      ],
+      "type": "text/javascript"
+    },
+    "https://aribadernatal.com/public/js/tippy/tippy-bundle.umd.min.js": {
+      "rels": [
+        "preload"
+      ],
+      "type": "text/javascript"
     },
     "https://aribadernatal.com/public/images/aribadernatal-200.jpg": {
       "rels": [
@@ -316,7 +307,7 @@
       "rels": [
         "noopener"
       ],
-      "text": "\nMore at favorites.aribadernatal.com\n"
+      "text": "\nMore: favorites.aribadernatal.com\n"
     },
     "https://www.linkedin.com/in/aribadernatal/": {
       "rels": [

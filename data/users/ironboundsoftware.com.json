@@ -1,38 +1,79 @@
 {
   "items": [],
   "rels": {
-    "stylesheet": [
-      "https://d1a6zytsvzb7ig.cloudfront.net/newpanel/css/singlepage.css"
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
     ],
-    "nofollow": [
-      "https://help.dreamhost.com/hc/en-us/articles/215613517",
-      "https://panel.dreamhost.com/index.cgi?tree=support.msg",
-      "https://www.dreamhost.com/"
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "me": [
+      "https://ironboundsoftware.com/blog",
+      "https://delicious.com/nloadholtes",
+      "https://www.reddit.com/user/nloadholtes",
+      "https://news.ycombinator.com/user?id=nloadholtes2",
+      "https://www.linkedin.com/in/nickloadholtes",
+      "https://bitbucket.org/nloadholtes",
+      "https://github.com/nloadholtes",
+      "https://twitter.com/nloadholtes",
+      "https://social.ironboundsoftware.com/nloadholtes"
     ]
   },
   "rel-urls": {
-    "https://d1a6zytsvzb7ig.cloudfront.net/newpanel/css/singlepage.css": {
+    "https://indieauth.com/auth": {
       "rels": [
-        "stylesheet"
+        "authorization_endpoint"
       ]
     },
-    "https://help.dreamhost.com/hc/en-us/articles/215613517": {
+    "https://tokens.indieauth.com/token": {
       "rels": [
-        "nofollow"
-      ],
-      "text": "Get more info"
+        "token_endpoint"
+      ]
     },
-    "https://panel.dreamhost.com/index.cgi?tree=support.msg": {
+    "https://ironboundsoftware.com/blog": {
       "rels": [
-        "nofollow"
-      ],
-      "text": "contact\n\t\t\t\t\t\tsupport"
+        "me"
+      ]
     },
-    "https://www.dreamhost.com/": {
+    "https://delicious.com/nloadholtes": {
       "rels": [
-        "nofollow"
-      ],
-      "text": "DreamHost"
+        "me"
+      ]
+    },
+    "https://www.reddit.com/user/nloadholtes": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://news.ycombinator.com/user?id=nloadholtes2": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://www.linkedin.com/in/nickloadholtes": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://bitbucket.org/nloadholtes": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://github.com/nloadholtes": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://twitter.com/nloadholtes": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://social.ironboundsoftware.com/nloadholtes": {
+      "rels": [
+        "me"
+      ]
     }
   }
 }

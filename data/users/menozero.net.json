@@ -1,5 +1,73 @@
 {
   "items": [],
-  "rels": {},
-  "rel-urls": {}
+  "rels": {
+    "alternate": [
+      "http://menozero.net/atom.xml"
+    ],
+    "stylesheet": [
+      "http://menozero.net/style/menozero.css"
+    ],
+    "me": [
+      "http://menozero.tumblr.com/",
+      "https://twitter.com/menozero",
+      "https://instagram.com/menozero",
+      "https://github.com/menozero"
+    ],
+    "license": [
+      "http://creativecommons.org/licenses/by-sa/3.0/"
+    ],
+    "cc:attributionURL": [
+      "http://menozero.net/"
+    ]
+  },
+  "rel-urls": {
+    "http://menozero.net/atom.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "menozero",
+      "type": "application/atom+xml"
+    },
+    "http://menozero.net/style/menozero.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "http://menozero.tumblr.com/": {
+      "rels": [
+        "me"
+      ],
+      "title": "Tumblr"
+    },
+    "https://twitter.com/menozero": {
+      "rels": [
+        "me"
+      ],
+      "title": "Twitter"
+    },
+    "https://instagram.com/menozero": {
+      "rels": [
+        "me"
+      ],
+      "title": "Instagram"
+    },
+    "https://github.com/menozero": {
+      "rels": [
+        "me"
+      ],
+      "title": "Github"
+    },
+    "http://creativecommons.org/licenses/by-sa/3.0/": {
+      "rels": [
+        "license"
+      ]
+    },
+    "http://menozero.net/": {
+      "rels": [
+        "cc:attributionURL"
+      ],
+      "text": "menozero"
+    }
+  }
 }

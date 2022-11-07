@@ -44,6 +44,42 @@
         "h-entry"
       ],
       "properties": {
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "url": [
+                "https://nicolas-hoizey.com/"
+              ],
+              "name": [
+                "Nicolas Hoizey"
+              ]
+            },
+            "value": "https://nicolas-hoizey.com/"
+          }
+        ],
+        "published": [
+          "2022-11-06T13:47:57.000+01:00"
+        ],
+        "category": [
+          "mobile",
+          "UX"
+        ],
+        "url": [
+          "https://nicolas-hoizey.com/notes/2022/11/06/1/"
+        ],
+        "summary": [
+          ""
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
         "name": [
           "Why We're Breaking Up with CSS-in-JS"
         ],
@@ -222,42 +258,6 @@
         "h-entry"
       ],
       "properties": {
-        "author": [
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "url": [
-                "https://nicolas-hoizey.com/"
-              ],
-              "name": [
-                "Nicolas Hoizey"
-              ]
-            },
-            "value": "https://nicolas-hoizey.com/"
-          }
-        ],
-        "published": [
-          "2022-11-02T22:07:46.000+01:00"
-        ],
-        "category": [
-          "CSS",
-          "responsive"
-        ],
-        "url": [
-          "https://nicolas-hoizey.com/notes/2022/11/02/1/"
-        ],
-        "summary": [
-          ""
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
         "name": [
           "JAMstack is fast only if you make it so"
         ],
@@ -409,6 +409,8 @@
       "https://nicolas-hoizey.com/about/"
     ],
     "tag": [
+      "https://nicolas-hoizey.com/tags/mobile/",
+      "https://nicolas-hoizey.com/tags/ux/",
       "https://nicolas-hoizey.com/tags/javascript/",
       "https://nicolas-hoizey.com/tags/css/",
       "https://nicolas-hoizey.com/tags/performance/",
@@ -416,10 +418,8 @@
       "https://nicolas-hoizey.com/tags/font/",
       "https://nicolas-hoizey.com/tags/icon/",
       "https://nicolas-hoizey.com/tags/mastodon/",
-      "https://nicolas-hoizey.com/tags/ux/",
       "https://nicolas-hoizey.com/tags/image/",
       "https://nicolas-hoizey.com/tags/jpeg-xl/",
-      "https://nicolas-hoizey.com/tags/responsive/",
       "https://nicolas-hoizey.com/tags/jamstack/",
       "https://nicolas-hoizey.com/tags/api/",
       "https://nicolas-hoizey.com/tags/webmention/",
@@ -455,7 +455,6 @@
       "https://nicolas-hoizey.com/tags/lighthouse/",
       "https://nicolas-hoizey.com/tags/me/",
       "https://nicolas-hoizey.com/tags/microsoft/",
-      "https://nicolas-hoizey.com/tags/mobile/",
       "https://nicolas-hoizey.com/tags/movie/",
       "https://nicolas-hoizey.com/tags/mozilla/",
       "https://nicolas-hoizey.com/tags/music/",
@@ -468,6 +467,7 @@
       "https://nicolas-hoizey.com/tags/pwa/",
       "https://nicolas-hoizey.com/tags/quality/",
       "https://nicolas-hoizey.com/tags/quote/",
+      "https://nicolas-hoizey.com/tags/responsive/",
       "https://nicolas-hoizey.com/tags/search/",
       "https://nicolas-hoizey.com/tags/security/",
       "https://nicolas-hoizey.com/tags/seo/",
@@ -571,6 +571,18 @@
       ],
       "title": "Link to my Mastodon profile"
     },
+    "https://nicolas-hoizey.com/tags/mobile/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "mobile"
+    },
+    "https://nicolas-hoizey.com/tags/ux/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "UX"
+    },
     "https://nicolas-hoizey.com/tags/javascript/": {
       "rels": [
         "tag"
@@ -613,12 +625,6 @@
       ],
       "text": "Mastodon"
     },
-    "https://nicolas-hoizey.com/tags/ux/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "UX"
-    },
     "https://nicolas-hoizey.com/tags/image/": {
       "rels": [
         "tag"
@@ -630,12 +636,6 @@
         "tag"
       ],
       "text": "JPEG XL"
-    },
-    "https://nicolas-hoizey.com/tags/responsive/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "responsive"
     },
     "https://nicolas-hoizey.com/tags/jamstack/": {
       "rels": [
@@ -847,12 +847,6 @@
       ],
       "text": "Microsoft"
     },
-    "https://nicolas-hoizey.com/tags/mobile/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "mobile"
-    },
     "https://nicolas-hoizey.com/tags/movie/": {
       "rels": [
         "tag"
@@ -924,6 +918,12 @@
         "tag"
       ],
       "text": "quote"
+    },
+    "https://nicolas-hoizey.com/tags/responsive/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "responsive"
     },
     "https://nicolas-hoizey.com/tags/search/": {
       "rels": [

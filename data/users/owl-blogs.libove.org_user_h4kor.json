@@ -117,6 +117,12 @@
     ],
     "authorization_endpoint": [
       "https://owl-blogs.libove.org/user/h4kor/auth/"
+    ],
+    "token_endpoint": [
+      "https://owl-blogs.libove.org/user/h4kor/auth/token/"
+    ],
+    "micropub": [
+      "https://owl-blogs.libove.org/user/h4kor/micropub"
     ]
   },
   "rel-urls": {
@@ -138,6 +144,16 @@
     "https://owl-blogs.libove.org/user/h4kor/auth/": {
       "rels": [
         "authorization_endpoint"
+      ]
+    },
+    "https://owl-blogs.libove.org/user/h4kor/auth/token/": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://owl-blogs.libove.org/user/h4kor/micropub": {
+      "rels": [
+        "micropub"
       ]
     }
   }
