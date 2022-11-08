@@ -44,6 +44,120 @@
           ],
           "properties": {
             "name": [
+              "How to date a recording using background electrical noise"
+            ],
+            "url": [
+              "https://danq.me/2022/11/07/how-to-date-a-recording-using-background-electrical-noise/"
+            ],
+            "uid": [
+              "https://danq.me/2022/11/07/how-to-date-a-recording-using-background-electrical-noise/"
+            ],
+            "published": [
+              "2022-11-07T14:16:30+00:00"
+            ],
+            "content": [
+              {
+                "html": "<section class=\"h-cite response p-in-reply-to \">\n<header>\n<span class=\"p-name\"> </span></header>\n<blockquote class=\"e-summary\"></blockquote>\n</section>\n<div class=\"u-in-reply-to\"></div>\n<blockquote class=\"h-cite u-repost-of\" cite=\"https://robertheaton.com/enf/\">\n<p><a href=\"https://danq.me/wp-content/uploads/2022/11/basic-matching-21.png\"><img decoding=\"async\" class=\"lazy lazy-hidden size-large wp-image-20643 alignnone\" src=\"https://danq.me/wp-content/uploads/2022/11/xbasic-matching-21-30x23.png.pagespeed.ic.qiqtJPVtCn.jpg\" data-lazy-type=\"image\" data-lazy-src=\"https://danq.me/wp-content/uploads/2022/11/basic-matching-21-1024x778.png\" alt=\"Matching a target ENF series with a section of a reference series\" width=\"640\" height=\"486\" data-lazy-srcset=\"https://danq.me/wp-content/uploads/2022/11/basic-matching-21-1024x778.png 1024w, https://danq.me/wp-content/uploads/2022/11/basic-matching-21-300x228.png 300w, https://danq.me/wp-content/uploads/2022/11/basic-matching-21-768x583.png 768w, https://danq.me/wp-content/uploads/2022/11/basic-matching-21-30x23.png 30w, https://danq.me/wp-content/uploads/2022/11/basic-matching-21-898x682.png 898w, https://danq.me/wp-content/uploads/2022/11/basic-matching-21.png 1500w\" data-lazy-sizes=\"(max-width: 640px) 100vw, 640px\"><noscript><img decoding=\"async\" class=\"size-large wp-image-20643 alignnone\" src=\"https://danq.me/wp-content/uploads/2022/11/640x486xbasic-matching-21-1024x778.png.pagespeed.ic.HvwW718cy5.png\" alt=\"Matching a target ENF series with a section of a reference series\" width=\"640\" height=\"486\" srcset=\"https://danq.me/wp-content/uploads/2022/11/xbasic-matching-21-1024x778.png.pagespeed.ic.wl1h2OVFxE.png 1024w, https://danq.me/wp-content/uploads/2022/11/xbasic-matching-21-300x228.png.pagespeed.ic.k48wlHb1Yu.png 300w, https://danq.me/wp-content/uploads/2022/11/xbasic-matching-21-768x583.png.pagespeed.ic.K0Ghla1c2q.png 768w, https://danq.me/wp-content/uploads/2022/11/xbasic-matching-21-30x23.png.pagespeed.ic.qiqtJPVtCn.jpg 30w, https://danq.me/wp-content/uploads/2022/11/xbasic-matching-21-898x682.png.pagespeed.ic.9HGHltX9Ll.png 898w, https://danq.me/wp-content/uploads/2022/11/xbasic-matching-21.png.pagespeed.ic.-4OwjgGdZL.png 1500w\" sizes=\"(max-width: 640px) 100vw, 640px\"></noscript></a></p>\n<p>We’re going to use ENF matching to answer the question “here’s a recording, when was it was (probably) taken?” I say “probably” because all that ENF matching can give us is a statistical best guess, not a guarantee. Mains hum isn’t always present on recordings, and even when it is, our target recording’s ENF can still match with the wrong section of the reference database by statistical misfortune.</p>\n<p>Still, even though all ENF matching gives us is a guess, it’s usually a good one. The longer the recording, the more reliable the estimate; in the academic papers that I’ve read 10 minutes is typically given as a lower bound for getting a decent match.</p>\n<p>To make our guess, we’ll need to:</p>\n<ol>\n<li>Extract the target recording’s ENF values over time</li>\n<li>Find a database of reference ENF values, taken directly from the electrical grid serving the area where the recording was made</li>\n<li>Find the section of the reference ENF series that best matches the target. This section is our best guess for when the target recording was taken</li>\n</ol>\n<p>We’ll start at the top.</p>\n<p>…</p>\n<footer><cite class=\"p-author h-card\"><a class=\"u-url p-name\" href=\"https://robertheaton.com/\">Robert Heaton</a></cite></footer>\n</blockquote>\n<p>About a year after <a href=\"https://www.youtube.com/watch?v=e0elNU0iOMY\">Tom Scott did a video</a> summarising how deviation over time (and location!) of the background electrical “hum” produced by <abbr class=\"abbr\" title=\"Alternating Current\">AC</abbr> power can act as a forensic marker on audio recordings, Robert Heaton’s produced an excellent deep-dive into how you can play with it for yourself, including <a href=\"https://github.com/robert/enf-matching\">some pretty neat code</a>.</p>\n<p>I remember first learning about this technique a few years ago during my <a href=\"https://danq.me/2020/02/09/dissertation-hand-in-2/\">masters in digital forensics</a>, and my first thought was about how it might be effectively faked. Faking the time of recording of some audio after the fact (as well as removing the markers) is challenging, mostly because you’ve got to ensure you pick up on the harmonics of the frequencies, but it seems to me that faking it at time-of-recording ought to be reasonably easy: at least, so long as you’re already equipped with a mechanism to protect against recording legitimate electrical hum (isolated quiet-room, etc.):</p>\n<p>Taking a known historical hum-pattern, it ought to be reasonably easy to produce a <abbr class=\"abbr\" title=\"Direct Current\">DC</abbr>-to-<abbr class=\"abbr\" title=\"Alternating Current\">AC</abbr> converter (obviously you want to be running off a <abbr class=\"abbr\" title=\"Direct Current\">DC</abbr> circuit to begin with, e.g. from batteries, so you don’t pick up legitimate hum) that regulates the hum frequency in a way that matches the historical pattern. Sure, you could simply produce the correct “noise”, but doing it this way helps ensure that the noise behaves appropriately under the widest range of conditions. I almost want to build such a device, perhaps out of an existing portable transformer (they come in big battery packs nowadays, providing a two-for-one!) but of course: who has the time? Plus, if you’d ever seen my soldering skills you’d know why I shouldn’t be allowed to work on <em>anything</em> like this.</p>\n<div class=\"syndication-links\"><span class=\"relsyn\"><data class=\"u-syndication\" value=\"https://twitter.com/scatmandan/status/1589622945722286081\"></data> <data class=\"u-syndication\" value=\"https://m.danq.me/@dan/109302952842761722\"></data></span></div>",
+                "value": "Matching a target ENF series with a section of a reference series  Matching a target ENF series with a section of a reference series \nWe’re going to use ENF matching to answer the question “here’s a recording, when was it was (probably) taken?” I say “probably” because all that ENF matching can give us is a statistical best guess, not a guarantee. Mains hum isn’t always present on recordings, and even when it is, our target recording’s ENF can still match with the wrong section of the reference database by statistical misfortune.\nStill, even though all ENF matching gives us is a guess, it’s usually a good one. The longer the recording, the more reliable the estimate; in the academic papers that I’ve read 10 minutes is typically given as a lower bound for getting a decent match.\nTo make our guess, we’ll need to:\n\nExtract the target recording’s ENF values over time\nFind a database of reference ENF values, taken directly from the electrical grid serving the area where the recording was made\nFind the section of the reference ENF series that best matches the target. This section is our best guess for when the target recording was taken\n\nWe’ll start at the top.\n…\nRobert Heaton\n\nAbout a year after Tom Scott did a video summarising how deviation over time (and location!) of the background electrical “hum” produced by AC power can act as a forensic marker on audio recordings, Robert Heaton’s produced an excellent deep-dive into how you can play with it for yourself, including some pretty neat code.\nI remember first learning about this technique a few years ago during my masters in digital forensics, and my first thought was about how it might be effectively faked. Faking the time of recording of some audio after the fact (as well as removing the markers) is challenging, mostly because you’ve got to ensure you pick up on the harmonics of the frequencies, but it seems to me that faking it at time-of-recording ought to be reasonably easy: at least, so long as you’re already equipped with a mechanism to protect against recording legitimate electrical hum (isolated quiet-room, etc.):\nTaking a known historical hum-pattern, it ought to be reasonably easy to produce a DC-to-AC converter (obviously you want to be running off a DC circuit to begin with, e.g. from batteries, so you don’t pick up legitimate hum) that regulates the hum frequency in a way that matches the historical pattern. Sure, you could simply produce the correct “noise”, but doing it this way helps ensure that the noise behaves appropriately under the widest range of conditions. I almost want to build such a device, perhaps out of an existing portable transformer (they come in big battery packs nowadays, providing a two-for-one!) but of course: who has the time? Plus, if you’d ever seen my soldering skills you’d know why I shouldn’t be allowed to work on anything like this."
+              }
+            ],
+            "in-reply-to": [
+              {
+                "type": [
+                  "h-cite"
+                ],
+                "properties": {
+                  "name": [
+                    ""
+                  ],
+                  "summary": [
+                    {
+                      "html": "",
+                      "value": ""
+                    }
+                  ]
+                },
+                "value": ""
+              },
+              "https://danq.me/author/dan/"
+            ],
+            "repost-of": [
+              {
+                "type": [
+                  "h-cite"
+                ],
+                "properties": {
+                  "author": [
+                    {
+                      "type": [
+                        "h-card"
+                      ],
+                      "properties": {
+                        "url": [
+                          "https://robertheaton.com/"
+                        ],
+                        "name": [
+                          "Robert Heaton"
+                        ]
+                      },
+                      "value": "Robert Heaton"
+                    }
+                  ]
+                },
+                "value": "https://danq.me/author/dan/Matching a target ENF series with a section of a reference series  Matching a target ENF series with a section of a reference series \nWe’re going to use ENF matching to answer the question “here’s a recording, when was it was (probably) taken?” I say “probably” because all that ENF matching can give us is a statistical best guess, not a guarantee. Mains hum isn’t always present on recordings, and even when it is, our target recording’s ENF can still match with the wrong section of the reference database by statistical misfortune.\nStill, even though all ENF matching gives us is a guess, it’s usually a good one. The longer the recording, the more reliable the estimate; in the academic papers that I’ve read 10 minutes is typically given as a lower bound for getting a decent match.\nTo make our guess, we’ll need to:\n\nExtract the target recording’s ENF values over time\nFind a database of reference ENF values, taken directly from the electrical grid serving the area where the recording was made\nFind the section of the reference ENF series that best matches the target. This section is our best guess for when the target recording was taken\n\nWe’ll start at the top.\n…\nRobert Heaton"
+              }
+            ],
+            "syndication": [
+              "https://twitter.com/scatmandan/status/1589622945722286081",
+              "https://m.danq.me/@dan/109302952842761722",
+              "https://twitter.com/scatmandan/status/1589622945722286081",
+              "https://m.danq.me/@dan/109302952842761722"
+            ],
+            "category": [
+              "crime",
+              "electricity",
+              "forensics",
+              "police",
+              "security"
+            ]
+          },
+          "id": "post-20642"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "url": [
+              "https://danq.me/2022/11/07/maze-xml/"
+            ],
+            "uid": [
+              "https://danq.me/2022/11/07/maze-xml/"
+            ],
+            "published": [
+              "2022-11-07T13:39:32+00:00"
+            ],
+            "content": [
+              {
+                "html": "<p class=\"no-auto-linkify\">Just when I thought I’d seen every conceivable <abbr class=\"abbr\" title=\"Extensible Markup Language\">XML</abbr> data format <a href=\"https://www.iana.org/assignments/media-types/application/vnd.amundsen.maze+xml\">with an approved <abbr class=\"abbr\" title=\"Multipurpose Internet Mail Extensions\">MIME</abbr> type</a> (!) I discover <a href=\"https://twitter.com/mamund\">@mamund</a>‘s <a href=\"http://amundsen.com/media-types/maze/\">Maze+XML</a>, a format for describing orthoganally-connected squares of a maze.</p>\n<div class=\"syndication-links\"><span class=\"relsyn\"><data class=\"u-syndication\" value=\"https://twitter.com/scatmandan/status/1589613584216121345\"></data> <data class=\"u-syndication\" value=\"https://m.danq.me/@dan/109302813986317668\"></data></span></div>",
+                "value": "Just when I thought I’d seen every conceivable XML data format with an approved MIME type (!) I discover @mamund‘s Maze+XML, a format for describing orthoganally-connected squares of a maze."
+              }
+            ],
+            "syndication": [
+              "https://twitter.com/scatmandan/status/1589613584216121345",
+              "https://m.danq.me/@dan/109302813986317668",
+              "https://twitter.com/scatmandan/status/1589613584216121345",
+              "https://m.danq.me/@dan/109302813986317668"
+            ]
+          },
+          "id": "post-20639"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               "Reply to OpenID for WP"
             ],
             "url": [
@@ -157,7 +271,7 @@
             ],
             "content": [
               {
-                "html": "<section class=\"response\">\n<header>\n<span class=\"h-card p-checkin\"> </span></header>\n</section>\n<p>Super quick find on lunch break during a day coworking in Cheltenham. Love the hiding spot which seems pretty much made for a cache of this shape and size! <abbr class=\"abbr\" title=\"Thanks For The Cache\">TFTC</abbr>!</p>\n<p><a href=\"https://danq.me/wp-content/uploads/2022/10/neptune-statue.jpg\"><img decoding=\"async\" class=\"lazy lazy-hidden aligncenter size-full wp-image-20632\" src=\"https://danq.me/wp-content/uploads/2022/10/xneptune-statue-30x17.jpg.pagespeed.ic.XPfWpQjAuD.jpg\" data-lazy-type=\"image\" data-lazy-src=\"https://danq.me/wp-content/uploads/2022/10/neptune-statue.jpg\" alt=\"In an urban environment, Dan waves. Behind him, a stone fountain-statue representing Neptune, surrounded by sea creatures, can be seen.\" width=\"1024\" height=\"577\" data-lazy-srcset=\"https://danq.me/wp-content/uploads/2022/10/neptune-statue.jpg 1024w, https://danq.me/wp-content/uploads/2022/10/neptune-statue-300x169.jpg 300w, https://danq.me/wp-content/uploads/2022/10/neptune-statue-768x433.jpg 768w, https://danq.me/wp-content/uploads/2022/10/neptune-statue-30x17.jpg 30w, https://danq.me/wp-content/uploads/2022/10/neptune-statue-898x506.jpg 898w\" data-lazy-sizes=\"(max-width: 1024px) 100vw, 1024px\"><noscript><img decoding=\"async\" class=\"aligncenter size-full wp-image-20632\" src=\"https://danq.me/wp-content/uploads/2022/10/xneptune-statue.jpg.pagespeed.ic.1h1jfDsEwj.jpg\" alt=\"In an urban environment, Dan waves. Behind him, a stone fountain-statue representing Neptune, surrounded by sea creatures, can be seen.\" width=\"1024\" height=\"577\" srcset=\"https://danq.me/wp-content/uploads/2022/10/xneptune-statue.jpg.pagespeed.ic.1h1jfDsEwj.jpg 1024w, https://danq.me/wp-content/uploads/2022/10/xneptune-statue-300x169.jpg.pagespeed.ic.xnsytmcegi.jpg 300w, https://danq.me/wp-content/uploads/2022/10/xneptune-statue-768x433.jpg.pagespeed.ic._aYUeXN5-q.jpg 768w, https://danq.me/wp-content/uploads/2022/10/xneptune-statue-30x17.jpg.pagespeed.ic.XPfWpQjAuD.jpg 30w, https://danq.me/wp-content/uploads/2022/10/xneptune-statue-898x506.jpg.pagespeed.ic.KENTYU_MiD.jpg 898w\" sizes=\"(max-width: 1024px) 100vw, 1024px\"></noscript></a></p>\n<div class=\"syndication-links\"></div>\n          <img class=\"aligncenter size-full danq-map\" width=\"600\" src=\"https://danq.me/wp-content/themes/q18/xmap.php,qcenter=51.898333,,-2.078567,azoom=17,ascale=false,asize=600x300,amaptype=roadmap,aformat=png,avisual_refresh=true,amarkers=size,3Amid,P7Ccolor,3A0x1dc6df,P7Clabel,3A,P7C51.898333,,-2.078567.pagespeed.ic.RT9v2Thb7C.jpg\" alt=\"Map of 51.898333,-2.078567\">",
+                "html": "<section class=\"response\">\n<header>\n<span class=\"h-card p-checkin\"> </span></header>\n</section>\n<p>Super quick find on lunch break during a day coworking in Cheltenham. Love the hiding spot which seems pretty much made for a cache of this shape and size! <abbr class=\"abbr\" title=\"Thanks For The Cache\">TFTC</abbr>!</p>\n<p><a href=\"https://danq.me/wp-content/uploads/2022/10/neptune-statue.jpg\"><img decoding=\"async\" loading=\"lazy\" class=\"lazy lazy-hidden aligncenter size-full wp-image-20632\" src=\"https://danq.me/wp-content/uploads/2022/10/xneptune-statue-30x17.jpg.pagespeed.ic.XPfWpQjAuD.jpg\" data-lazy-type=\"image\" data-lazy-src=\"https://danq.me/wp-content/uploads/2022/10/neptune-statue.jpg\" alt=\"In an urban environment, Dan waves. Behind him, a stone fountain-statue representing Neptune, surrounded by sea creatures, can be seen.\" width=\"1024\" height=\"577\" data-lazy-srcset=\"https://danq.me/wp-content/uploads/2022/10/neptune-statue.jpg 1024w, https://danq.me/wp-content/uploads/2022/10/neptune-statue-300x169.jpg 300w, https://danq.me/wp-content/uploads/2022/10/neptune-statue-768x433.jpg 768w, https://danq.me/wp-content/uploads/2022/10/neptune-statue-30x17.jpg 30w, https://danq.me/wp-content/uploads/2022/10/neptune-statue-898x506.jpg 898w\" data-lazy-sizes=\"(max-width: 1024px) 100vw, 1024px\"><noscript><img decoding=\"async\" loading=\"lazy\" class=\"aligncenter size-full wp-image-20632\" src=\"https://danq.me/wp-content/uploads/2022/10/xneptune-statue.jpg.pagespeed.ic.1h1jfDsEwj.jpg\" alt=\"In an urban environment, Dan waves. Behind him, a stone fountain-statue representing Neptune, surrounded by sea creatures, can be seen.\" width=\"1024\" height=\"577\" srcset=\"https://danq.me/wp-content/uploads/2022/10/xneptune-statue.jpg.pagespeed.ic.1h1jfDsEwj.jpg 1024w, https://danq.me/wp-content/uploads/2022/10/xneptune-statue-300x169.jpg.pagespeed.ic.xnsytmcegi.jpg 300w, https://danq.me/wp-content/uploads/2022/10/xneptune-statue-768x433.jpg.pagespeed.ic._aYUeXN5-q.jpg 768w, https://danq.me/wp-content/uploads/2022/10/xneptune-statue-30x17.jpg.pagespeed.ic.XPfWpQjAuD.jpg 30w, https://danq.me/wp-content/uploads/2022/10/xneptune-statue-898x506.jpg.pagespeed.ic.KENTYU_MiD.jpg 898w\" sizes=\"(max-width: 1024px) 100vw, 1024px\"></noscript></a></p>\n<div class=\"syndication-links\"></div>\n          <img class=\"aligncenter size-full danq-map\" width=\"600\" src=\"https://danq.me/wp-content/themes/q18/xmap.php,qcenter=51.898333,,-2.078567,azoom=17,ascale=false,asize=600x300,amaptype=roadmap,aformat=png,avisual_refresh=true,amarkers=size,3Amid,P7Ccolor,3A0x1dc6df,P7Clabel,3A,P7C51.898333,,-2.078567.pagespeed.ic.RT9v2Thb7C.jpg\" alt=\"Map of 51.898333,-2.078567\">",
                 "value": "Super quick find on lunch break during a day coworking in Cheltenham. Love the hiding spot which seems pretty much made for a cache of this shape and size! TFTC!\n In an urban environment, Dan waves. Behind him, a stone fountain-statue representing Neptune, surrounded by sea creatures, can be seen.  In an urban environment, Dan waves. Behind him, a stone fountain-statue representing Neptune, surrounded by sea creatures, can be seen. \n\n           Map of 51.898333,-2.078567"
               }
             ],
@@ -730,122 +844,6 @@
             ]
           },
           "id": "post-20520"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "url": [
-              "https://danq.me/2022/09/26/saxophonetic/"
-            ],
-            "uid": [
-              "https://danq.me/2022/09/26/saxophonetic/"
-            ],
-            "published": [
-              "2022-09-26T19:46:15+01:00"
-            ],
-            "content": [
-              {
-                "html": "<p>Was a 10th century speaker of Old Saxon a “Saxophone”? 🤔</p>\n<div class=\"syndication-links\"><span class=\"relsyn\"><data class=\"u-syndication\" value=\"https://twitter.com/scatmandan/status/1574470439862243358\"></data></span></div>",
-                "value": "Was a 10th century speaker of Old Saxon a “Saxophone”? 🤔"
-              }
-            ],
-            "syndication": [
-              "https://twitter.com/scatmandan/status/1574470439862243358",
-              "https://twitter.com/scatmandan/status/1574470439862243358"
-            ],
-            "category": [
-              "funny",
-              "joke",
-              "language",
-              "languages",
-              "puns",
-              "words"
-            ]
-          },
-          "id": "post-20517"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "All the game descriptions from the sale"
-            ],
-            "url": [
-              "https://danq.me/2022/09/26/all-the-game-descriptions-from-the-sale/"
-            ],
-            "uid": [
-              "https://danq.me/2022/09/26/all-the-game-descriptions-from-the-sale/"
-            ],
-            "published": [
-              "2022-09-26T15:17:23+01:00"
-            ],
-            "content": [
-              {
-                "html": "<section class=\"h-cite response p-repost-of \">\n<header>\n<span class=\"p-name\"> </span></header>\n<blockquote class=\"e-summary\"></blockquote>\n</section>\n<blockquote class=\"h-cite u-repost-of\" cite=\"https://shoomlah.tumblr.com/post/694761216326975488/shoomlah-heyyy-the-steam-summer-sale-has\">\n<p class=\"e-content\"><a href=\"https://danq.me/wp-content/uploads/2022/09/95858498e0ba869d036182e29b21f92dee2db8e41.jpg\"><img decoding=\"async\" loading=\"lazy\" class=\"lazy lazy-hidden size-large wp-image-20513 alignnone\" src=\"https://danq.me/wp-content/uploads/2022/09/95858498e0ba869d036182e29b21f92dee2db8e41-30x14.jpg\" data-lazy-type=\"image\" data-lazy-src=\"https://danq.me/wp-content/uploads/2022/09/95858498e0ba869d036182e29b21f92dee2db8e41-1024x478.jpg\" alt=\"Video game poster for &quot;It's Probably Fine&quot;, showing a woman driving with red and blue lights behind her.\" width=\"640\" height=\"299\" data-lazy-srcset=\"https://danq.me/wp-content/uploads/2022/09/95858498e0ba869d036182e29b21f92dee2db8e41-1024x478.jpg 1024w, https://danq.me/wp-content/uploads/2022/09/95858498e0ba869d036182e29b21f92dee2db8e41-300x140.jpg 300w, https://danq.me/wp-content/uploads/2022/09/95858498e0ba869d036182e29b21f92dee2db8e41-768x359.jpg 768w, https://danq.me/wp-content/uploads/2022/09/95858498e0ba869d036182e29b21f92dee2db8e41-30x14.jpg 30w, https://danq.me/wp-content/uploads/2022/09/95858498e0ba869d036182e29b21f92dee2db8e41-898x420.jpg 898w, https://danq.me/wp-content/uploads/2022/09/95858498e0ba869d036182e29b21f92dee2db8e41.jpg 1280w\" data-lazy-sizes=\"(max-width: 640px) 100vw, 640px\"><noscript><img decoding=\"async\" loading=\"lazy\" class=\"size-large wp-image-20513 alignnone\" src=\"https://danq.me/wp-content/uploads/2022/09/640x299x95858498e0ba869d036182e29b21f92dee2db8e41-1024x478.jpg.pagespeed.ic.WyaAAelNm8.jpg\" alt=\"Video game poster for &quot;It's Probably Fine&quot;, showing a woman driving with red and blue lights behind her.\" width=\"640\" height=\"299\" srcset=\"https://danq.me/wp-content/uploads/2022/09/x95858498e0ba869d036182e29b21f92dee2db8e41-1024x478.jpg.pagespeed.ic.l9nEdBgNPP.jpg 1024w, https://danq.me/wp-content/uploads/2022/09/95858498e0ba869d036182e29b21f92dee2db8e41-300x140.jpg 300w, https://danq.me/wp-content/uploads/2022/09/x95858498e0ba869d036182e29b21f92dee2db8e41-768x359.jpg.pagespeed.ic.Ip1MBmtA2U.jpg 768w, https://danq.me/wp-content/uploads/2022/09/95858498e0ba869d036182e29b21f92dee2db8e41-30x14.jpg 30w, https://danq.me/wp-content/uploads/2022/09/x95858498e0ba869d036182e29b21f92dee2db8e41-898x420.jpg.pagespeed.ic.IMTipqxAbw.jpg 898w, https://danq.me/wp-content/uploads/2022/09/x95858498e0ba869d036182e29b21f92dee2db8e41.jpg.pagespeed.ic.M7YDZUgziP.jpg 1280w\" sizes=\"(max-width: 640px) 100vw, 640px\"></noscript></a></p>\n<p>You’ve got 37 unpaid parking tickets. You just got pulled over for speeding. In your defense, you were texting your sister about how drunk you are. Plus there’s all that blood on your windshield. Obviously you know it’s deer blood, but the police officers walking toward your vehicle don’t. Still, in the time it takes them to figure that out, maybe you’ll sober up. Or escape on foot! Either way, it’ll probably be fine.</p>\n<p><b>User Tags:</b> Poor Choices / Story Rich / Multiple Endings / Parkour</p>\n<p><a href=\"https://danq.me/wp-content/uploads/2022/09/a811eeed5998cb86b81adaee31561b04b0e4b4601.jpg\"><img decoding=\"async\" loading=\"lazy\" class=\"lazy lazy-hidden size-large wp-image-20514 alignnone\" src=\"https://danq.me/wp-content/uploads/2022/09/a811eeed5998cb86b81adaee31561b04b0e4b4601-30x14.jpg\" data-lazy-type=\"image\" data-lazy-src=\"https://danq.me/wp-content/uploads/2022/09/a811eeed5998cb86b81adaee31561b04b0e4b4601-1024x478.jpg\" alt=\"Video game poster for Dead Seagull Zoo Magnate, showing dead seagulls in a cartoony style.\" width=\"640\" height=\"299\" data-lazy-srcset=\"https://danq.me/wp-content/uploads/2022/09/a811eeed5998cb86b81adaee31561b04b0e4b4601-1024x478.jpg 1024w, https://danq.me/wp-content/uploads/2022/09/a811eeed5998cb86b81adaee31561b04b0e4b4601-300x140.jpg 300w, https://danq.me/wp-content/uploads/2022/09/a811eeed5998cb86b81adaee31561b04b0e4b4601-768x359.jpg 768w, https://danq.me/wp-content/uploads/2022/09/a811eeed5998cb86b81adaee31561b04b0e4b4601-30x14.jpg 30w, https://danq.me/wp-content/uploads/2022/09/a811eeed5998cb86b81adaee31561b04b0e4b4601-898x420.jpg 898w, https://danq.me/wp-content/uploads/2022/09/a811eeed5998cb86b81adaee31561b04b0e4b4601.jpg 1280w\" data-lazy-sizes=\"(max-width: 640px) 100vw, 640px\"><noscript><img decoding=\"async\" loading=\"lazy\" class=\"size-large wp-image-20514 alignnone\" src=\"https://danq.me/wp-content/uploads/2022/09/640x299xa811eeed5998cb86b81adaee31561b04b0e4b4601-1024x478.jpg.pagespeed.ic.blw9Kekz43.jpg\" alt=\"Video game poster for Dead Seagull Zoo Magnate, showing dead seagulls in a cartoony style.\" width=\"640\" height=\"299\" srcset=\"https://danq.me/wp-content/uploads/2022/09/a811eeed5998cb86b81adaee31561b04b0e4b4601-1024x478.jpg 1024w, https://danq.me/wp-content/uploads/2022/09/a811eeed5998cb86b81adaee31561b04b0e4b4601-300x140.jpg 300w, https://danq.me/wp-content/uploads/2022/09/a811eeed5998cb86b81adaee31561b04b0e4b4601-768x359.jpg 768w, https://danq.me/wp-content/uploads/2022/09/a811eeed5998cb86b81adaee31561b04b0e4b4601-30x14.jpg 30w, https://danq.me/wp-content/uploads/2022/09/a811eeed5998cb86b81adaee31561b04b0e4b4601-898x420.jpg 898w, https://danq.me/wp-content/uploads/2022/09/xa811eeed5998cb86b81adaee31561b04b0e4b4601.jpg.pagespeed.ic.YEc-YPHw5m.jpg 1280w\" sizes=\"(max-width: 640px) 100vw, 640px\"></noscript></a></p>\n<p>Collect dead seagulls and build a zoo to house them all. Beautify the zoo with artistic flair and deodorizing sprays. Design creative group promotions to stir up interest! Is that a customer? You’d better hope it’s not the owner of the live seagull zoo down the street, because he’s probably got some questions.</p>\n<p><b>User Tags:</b> Hard Work / Supply / Demand / Diseases &amp; Parasites</p>\n<p>…</p>\n<footer><cite class=\"p-author h-card\"><a class=\"u-url p-name\" href=\"https://www.clairehummel.com/\">Claire Hummel</a></cite></footer>\n</blockquote>\n<p>Claire Hummel <a href=\"https://shoomlah.tumblr.com/post/689149624749096960/heyyy-the-steam-summer-sale-has-concluded-so-i\">produced fake video game art</a> for the Steam Summer Sale, which was already excellent, but when <a href=\"https://g-a-y-g-o-y-l-e.tumblr.com/\">@g-a-y-g-o-y-l-e</a> reblogged, <a href=\"https://g-a-y-g-o-y-l-e.tumblr.com/post/694743669535916032/shoomlah-heyyy-the-steam-summer-sale-has\">asking for more context</a>, Claire <a href=\"https://shoomlah.tumblr.com/post/694761216326975488/shoomlah-heyyy-the-steam-summer-sale-has\">delivered and then some</a>. Every single one of these “game descriptions” is a special kind of comedy gold… and yet somehow believable from the store that sells us <a href=\"https://store.steampowered.com/app/654880/Dream_Daddy_A_Dad_Dating_Simulator/\"><em>Dream Daddy</em></a>, <a href=\"https://store.steampowered.com/app/611120/IKEA_VR_Pancake_Kitchen/\"><em>IKEA VR Pancake Kitchen</em></a>, <a href=\"https://store.steampowered.com/app/233740/Organ_Trail_Directors_Cut/\"><em>Organ Trail</em></a>, <a href=\"https://store.steampowered.com/app/512250/OhSir_The_Insult_Simulator/\"><em>Oh… Sir!! The Insult Simulator</em></a>, and <a href=\"https://store.steampowered.com/app/265930/Goat_Simulator/\"><em>Goat Simulator</em></a> (all of which I own copies of). <a href=\"https://shoomlah.tumblr.com/post/694761216326975488/shoomlah-heyyy-the-steam-summer-sale-has\">Go read the full list</a>.</p>\n<div class=\"syndication-links\"></div>",
-                "value": "Video game poster for \"It's Probably Fine\", showing a woman driving with red and blue lights behind her.  Video game poster for \"It's Probably Fine\", showing a woman driving with red and blue lights behind her. \nYou’ve got 37 unpaid parking tickets. You just got pulled over for speeding. In your defense, you were texting your sister about how drunk you are. Plus there’s all that blood on your windshield. Obviously you know it’s deer blood, but the police officers walking toward your vehicle don’t. Still, in the time it takes them to figure that out, maybe you’ll sober up. Or escape on foot! Either way, it’ll probably be fine.\nUser Tags: Poor Choices / Story Rich / Multiple Endings / Parkour\n Video game poster for Dead Seagull Zoo Magnate, showing dead seagulls in a cartoony style.  Video game poster for Dead Seagull Zoo Magnate, showing dead seagulls in a cartoony style. \nCollect dead seagulls and build a zoo to house them all. Beautify the zoo with artistic flair and deodorizing sprays. Design creative group promotions to stir up interest! Is that a customer? You’d better hope it’s not the owner of the live seagull zoo down the street, because he’s probably got some questions.\nUser Tags: Hard Work / Supply / Demand / Diseases & Parasites\n…\nClaire Hummel\n\nClaire Hummel produced fake video game art for the Steam Summer Sale, which was already excellent, but when @g-a-y-g-o-y-l-e reblogged, asking for more context, Claire delivered and then some. Every single one of these “game descriptions” is a special kind of comedy gold… and yet somehow believable from the store that sells us Dream Daddy, IKEA VR Pancake Kitchen, Organ Trail, Oh… Sir!! The Insult Simulator, and Goat Simulator (all of which I own copies of). Go read the full list."
-              }
-            ],
-            "repost-of": [
-              {
-                "type": [
-                  "h-cite"
-                ],
-                "properties": {
-                  "name": [
-                    ""
-                  ],
-                  "summary": [
-                    {
-                      "html": "",
-                      "value": ""
-                    }
-                  ]
-                },
-                "value": ""
-              },
-              {
-                "type": [
-                  "h-cite"
-                ],
-                "properties": {
-                  "content": [
-                    {
-                      "html": "<a href=\"https://danq.me/wp-content/uploads/2022/09/95858498e0ba869d036182e29b21f92dee2db8e41.jpg\"><img decoding=\"async\" loading=\"lazy\" class=\"lazy lazy-hidden size-large wp-image-20513 alignnone\" src=\"https://danq.me/wp-content/uploads/2022/09/95858498e0ba869d036182e29b21f92dee2db8e41-30x14.jpg\" data-lazy-type=\"image\" data-lazy-src=\"https://danq.me/wp-content/uploads/2022/09/95858498e0ba869d036182e29b21f92dee2db8e41-1024x478.jpg\" alt=\"Video game poster for &quot;It's Probably Fine&quot;, showing a woman driving with red and blue lights behind her.\" width=\"640\" height=\"299\" data-lazy-srcset=\"https://danq.me/wp-content/uploads/2022/09/95858498e0ba869d036182e29b21f92dee2db8e41-1024x478.jpg 1024w, https://danq.me/wp-content/uploads/2022/09/95858498e0ba869d036182e29b21f92dee2db8e41-300x140.jpg 300w, https://danq.me/wp-content/uploads/2022/09/95858498e0ba869d036182e29b21f92dee2db8e41-768x359.jpg 768w, https://danq.me/wp-content/uploads/2022/09/95858498e0ba869d036182e29b21f92dee2db8e41-30x14.jpg 30w, https://danq.me/wp-content/uploads/2022/09/95858498e0ba869d036182e29b21f92dee2db8e41-898x420.jpg 898w, https://danq.me/wp-content/uploads/2022/09/95858498e0ba869d036182e29b21f92dee2db8e41.jpg 1280w\" data-lazy-sizes=\"(max-width: 640px) 100vw, 640px\"><noscript><img decoding=\"async\" loading=\"lazy\" class=\"size-large wp-image-20513 alignnone\" src=\"https://danq.me/wp-content/uploads/2022/09/640x299x95858498e0ba869d036182e29b21f92dee2db8e41-1024x478.jpg.pagespeed.ic.WyaAAelNm8.jpg\" alt=\"Video game poster for &quot;It's Probably Fine&quot;, showing a woman driving with red and blue lights behind her.\" width=\"640\" height=\"299\" srcset=\"https://danq.me/wp-content/uploads/2022/09/x95858498e0ba869d036182e29b21f92dee2db8e41-1024x478.jpg.pagespeed.ic.l9nEdBgNPP.jpg 1024w, https://danq.me/wp-content/uploads/2022/09/95858498e0ba869d036182e29b21f92dee2db8e41-300x140.jpg 300w, https://danq.me/wp-content/uploads/2022/09/x95858498e0ba869d036182e29b21f92dee2db8e41-768x359.jpg.pagespeed.ic.Ip1MBmtA2U.jpg 768w, https://danq.me/wp-content/uploads/2022/09/95858498e0ba869d036182e29b21f92dee2db8e41-30x14.jpg 30w, https://danq.me/wp-content/uploads/2022/09/x95858498e0ba869d036182e29b21f92dee2db8e41-898x420.jpg.pagespeed.ic.IMTipqxAbw.jpg 898w, https://danq.me/wp-content/uploads/2022/09/x95858498e0ba869d036182e29b21f92dee2db8e41.jpg.pagespeed.ic.M7YDZUgziP.jpg 1280w\" sizes=\"(max-width: 640px) 100vw, 640px\"></noscript></a>",
-                      "value": "Video game poster for \"It's Probably Fine\", showing a woman driving with red and blue lights behind her.  Video game poster for \"It's Probably Fine\", showing a woman driving with red and blue lights behind her."
-                    }
-                  ],
-                  "author": [
-                    {
-                      "type": [
-                        "h-card"
-                      ],
-                      "properties": {
-                        "url": [
-                          "https://www.clairehummel.com/"
-                        ],
-                        "name": [
-                          "Claire Hummel"
-                        ]
-                      },
-                      "value": "Claire Hummel"
-                    }
-                  ]
-                },
-                "value": "Video game poster for \"It's Probably Fine\", showing a woman driving with red and blue lights behind her.  Video game poster for \"It's Probably Fine\", showing a woman driving with red and blue lights behind her. \nYou’ve got 37 unpaid parking tickets. You just got pulled over for speeding. In your defense, you were texting your sister about how drunk you are. Plus there’s all that blood on your windshield. Obviously you know it’s deer blood, but the police officers walking toward your vehicle don’t. Still, in the time it takes them to figure that out, maybe you’ll sober up. Or escape on foot! Either way, it’ll probably be fine.\nUser Tags: Poor Choices / Story Rich / Multiple Endings / Parkour\n Video game poster for Dead Seagull Zoo Magnate, showing dead seagulls in a cartoony style.  Video game poster for Dead Seagull Zoo Magnate, showing dead seagulls in a cartoony style. \nCollect dead seagulls and build a zoo to house them all. Beautify the zoo with artistic flair and deodorizing sprays. Design creative group promotions to stir up interest! Is that a customer? You’d better hope it’s not the owner of the live seagull zoo down the street, because he’s probably got some questions.\nUser Tags: Hard Work / Supply / Demand / Diseases & Parasites\n…\nClaire Hummel"
-              }
-            ],
-            "category": [
-              "funny",
-              "games",
-              "steam",
-              "video games"
-            ]
-          },
-          "id": "post-20511"
         }
       ]
     }
@@ -934,6 +932,8 @@
       "https://danq.me/"
     ],
     "bookmark": [
+      "https://danq.me/2022/11/07/how-to-date-a-recording-using-background-electrical-noise/",
+      "https://danq.me/2022/11/07/maze-xml/",
       "https://danq.me/2022/11/06/reply-to-openid-for-wp/",
       "https://danq.me/2022/10/25/dan-q-found-gc20gbc-neptune-the-mystic/",
       "https://danq.me/2022/10/24/geohashing-expedition-2022-10-24-51-1/",
@@ -946,11 +946,34 @@
       "https://danq.me/2022/10/06/20578/",
       "https://danq.me/2022/10/05/dan-q-temporarily-disabled-gc9gkja-a-fine-pair-1625-eynsham/",
       "https://danq.me/2022/10/02/my-first-mp3/",
-      "https://danq.me/2022/09/27/freshrss-xpath/",
-      "https://danq.me/2022/09/26/saxophonetic/",
-      "https://danq.me/2022/09/26/all-the-game-descriptions-from-the-sale/"
+      "https://danq.me/2022/09/27/freshrss-xpath/"
+    ],
+    "syndication": [
+      "https://twitter.com/scatmandan/status/1589622945722286081",
+      "https://m.danq.me/@dan/109302952842761722",
+      "https://twitter.com/scatmandan/status/1589613584216121345",
+      "https://m.danq.me/@dan/109302813986317668",
+      "https://geohashing.site/geohashing/2022-10-24_51_-1",
+      "https://twitter.com/scatmandan/status/1582288833089253376",
+      "https://scatmania.livejournal.com/248287.html",
+      "https://www.facebook.com/DanQBlog/posts/pfbid033FRqd5GB6zExi27FVvmrwVdkEiURpm5QzY7rULWCWRMFTELVsEry5SXrj8DZmaYjl",
+      "https://www.linkedin.com/feed/update/urn:li:share:6988054821593358336/",
+      "https://twitter.com/scatmandan/status/1579095781860335618",
+      "https://twitter.com/scatmandan/status/1576548888382685184",
+      "https://scatmania.livejournal.com/247919.html",
+      "https://www.facebook.com/DanQBlog/posts/pfbid02QQwcF7JvwNouZkZyHU9eQh3YzwiobVjG178cbNewgNoGzt5Gzrj6RigbBqZXK6Pyl",
+      "https://www.linkedin.com/posts/itsdanq_my-first-mp3-activity-6982315220299882496-MbtZ",
+      "https://scatmania.livejournal.com/247724.html",
+      "https://twitter.com/scatmandan/status/1574757253391028229",
+      "https://www.facebook.com/DanQBlog/posts/pfbid02Wv3QTWa7Zf1XDTWdqoqj3g955kcbpsnYtR7yUeCJ43Lg67bN6z1BEXHFeckDE6Lcl",
+      "https://www.linkedin.com/posts/itsdanq_xpath-scraping-with-freshrss-activity-6980523403556364288-DRtL"
     ],
     "tag": [
+      "https://danq.me/tag/crime/",
+      "https://danq.me/tag/electricity/",
+      "https://danq.me/tag/forensics/",
+      "https://danq.me/tag/police/",
+      "https://danq.me/tag/security/",
       "https://danq.me/tag/automattic/",
       "https://danq.me/tag/openid/",
       "https://danq.me/tag/web/",
@@ -990,34 +1013,11 @@
       "https://danq.me/tag/freshrss/",
       "https://danq.me/tag/indieweb/",
       "https://danq.me/tag/rss/",
-      "https://danq.me/tag/xml/",
-      "https://danq.me/tag/joke/",
-      "https://danq.me/tag/puns/",
-      "https://danq.me/tag/words/",
-      "https://danq.me/tag/games/",
-      "https://danq.me/tag/steam/",
-      "https://danq.me/tag/video-games/"
+      "https://danq.me/tag/xml/"
     ],
     "nofollow": [
       "https://www.arkells.com/pub/the-talbot-inn-eynsham.htm",
       "https://en.wikipedia.org/wiki/Swinford_Toll_Bridge"
-    ],
-    "syndication": [
-      "https://geohashing.site/geohashing/2022-10-24_51_-1",
-      "https://twitter.com/scatmandan/status/1582288833089253376",
-      "https://scatmania.livejournal.com/248287.html",
-      "https://www.facebook.com/DanQBlog/posts/pfbid033FRqd5GB6zExi27FVvmrwVdkEiURpm5QzY7rULWCWRMFTELVsEry5SXrj8DZmaYjl",
-      "https://www.linkedin.com/feed/update/urn:li:share:6988054821593358336/",
-      "https://twitter.com/scatmandan/status/1579095781860335618",
-      "https://twitter.com/scatmandan/status/1576548888382685184",
-      "https://scatmania.livejournal.com/247919.html",
-      "https://www.facebook.com/DanQBlog/posts/pfbid02QQwcF7JvwNouZkZyHU9eQh3YzwiobVjG178cbNewgNoGzt5Gzrj6RigbBqZXK6Pyl",
-      "https://www.linkedin.com/posts/itsdanq_my-first-mp3-activity-6982315220299882496-MbtZ",
-      "https://scatmania.livejournal.com/247724.html",
-      "https://twitter.com/scatmandan/status/1574757253391028229",
-      "https://www.facebook.com/DanQBlog/posts/pfbid02Wv3QTWa7Zf1XDTWdqoqj3g955kcbpsnYtR7yUeCJ43Lg67bN6z1BEXHFeckDE6Lcl",
-      "https://www.linkedin.com/posts/itsdanq_xpath-scraping-with-freshrss-activity-6980523403556364288-DRtL",
-      "https://twitter.com/scatmandan/status/1574470439862243358"
     ],
     "license": [
       "https://creativecommons.org/licenses/by-nc/4.0/"
@@ -1273,6 +1273,72 @@
         "home"
       ],
       "text": "\n            Dan\n            Q\n          "
+    },
+    "https://danq.me/2022/11/07/how-to-date-a-recording-using-background-electrical-noise/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "7 November 2022 14:16"
+    },
+    "https://twitter.com/scatmandan/status/1589622945722286081": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "\n                ​​                twitter.com\n              "
+    },
+    "https://m.danq.me/@dan/109302952842761722": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "\n                                m.danq.me\n              "
+    },
+    "https://danq.me/tag/crime/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "crime"
+    },
+    "https://danq.me/tag/electricity/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "electricity"
+    },
+    "https://danq.me/tag/forensics/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "forensics"
+    },
+    "https://danq.me/tag/police/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "police"
+    },
+    "https://danq.me/tag/security/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "security"
+    },
+    "https://danq.me/2022/11/07/maze-xml/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "7 November 2022 13:39"
+    },
+    "https://twitter.com/scatmandan/status/1589613584216121345": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "\n                ​​                twitter.com\n              "
+    },
+    "https://m.danq.me/@dan/109302813986317668": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "\n                                m.danq.me\n              "
     },
     "https://danq.me/2022/11/06/reply-to-openid-for-wp/": {
       "rels": [
@@ -1687,60 +1753,6 @@
         "tag"
       ],
       "text": "xml"
-    },
-    "https://danq.me/2022/09/26/saxophonetic/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "26 September 2022 19:46"
-    },
-    "https://twitter.com/scatmandan/status/1574470439862243358": {
-      "rels": [
-        "syndication"
-      ],
-      "text": "\n                ​​                twitter.com\n              "
-    },
-    "https://danq.me/tag/joke/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "joke"
-    },
-    "https://danq.me/tag/puns/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "puns"
-    },
-    "https://danq.me/tag/words/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "words"
-    },
-    "https://danq.me/2022/09/26/all-the-game-descriptions-from-the-sale/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "26 September 2022 15:17"
-    },
-    "https://danq.me/tag/games/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "games"
-    },
-    "https://danq.me/tag/steam/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "steam"
-    },
-    "https://danq.me/tag/video-games/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "video games"
     },
     "https://creativecommons.org/licenses/by-nc/4.0/": {
       "rels": [

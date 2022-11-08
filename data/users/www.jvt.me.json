@@ -121,6 +121,64 @@
           ],
           "properties": {
             "kind": [
+              "Repost"
+            ],
+            "repost-of": [
+              {
+                "type": [
+                  "h-cite"
+                ],
+                "properties": {
+                  "url": [
+                    "https://twitter.com/RealSexyCyborg/status/1589534173928501248",
+                    "https://twitter.com/RealSexyCyborg/status/1589534173928501248"
+                  ],
+                  "content": [
+                    "If nothing else Mastodon is introducing people into the whole Open Source tradition of trying to be enthusiastic about something really bad that doesn't work at all because you don't want to be rude to the maintainers and the thing you really want to use doesn't work anymore."
+                  ]
+                },
+                "value": "https://twitter.com/RealSexyCyborg/status/1589534173928501248"
+              }
+            ],
+            "uid": [
+              "https://www.jvt.me/mf2/2022/11/yvm2j/"
+            ],
+            "url": [
+              "https://www.jvt.me/mf2/2022/11/yvm2j/"
+            ],
+            "published": [
+              "2022-11-07T12:50:00+0000"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "photo": [
+                    {
+                      "value": "https://www.jvt.me/img/profile.png",
+                      "alt": "Jamie Tanna's profile image"
+                    }
+                  ],
+                  "name": [
+                    "Jamie Tanna"
+                  ],
+                  "url": [
+                    "https://www.jvt.me/"
+                  ]
+                },
+                "value": "Jamie Tanna"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "kind": [
               "Article"
             ],
             "name": [
@@ -3309,67 +3367,6 @@
               "morph"
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "kind": [
-              "Repost"
-            ],
-            "repost-of": [
-              {
-                "type": [
-                  "h-cite"
-                ],
-                "properties": {
-                  "url": [
-                    "https://twitter.com/DeliverooEng/status/1577673740598509570",
-                    "https://twitter.com/DeliverooEng/status/1577673740598509570"
-                  ],
-                  "content": [
-                    {
-                      "html": "New on the blog: <a href=\"https://twitter.com/JamieTanna\">@JamieTanna</a> writes about how we've been looking at our <a href=\"https://twitter.com/search?q=%23OpenSource\">#OpenSource</a> dependencies to determine where best to prioritise for contributions over <a href=\"https://twitter.com/search?q=%23Hacktoberfest\">#Hacktoberfest</a> and beyond <a href=\"https://deliveroo.engineering/2022/09/29/hacktoberfest-dependency-analysis.html\">deliveroo.engineering/2022/09/29/hac…</a>",
-                      "value": "New on the blog: @JamieTanna writes about how we've been looking at our #OpenSource dependencies to determine where best to prioritise for contributions over #Hacktoberfest and beyond deliveroo.engineering/2022/09/29/hac…"
-                    }
-                  ]
-                },
-                "value": "https://twitter.com/DeliverooEng/status/1577673740598509570"
-              }
-            ],
-            "uid": [
-              "https://www.jvt.me/mf2/2022/10/dy9s0/"
-            ],
-            "url": [
-              "https://www.jvt.me/mf2/2022/10/dy9s0/"
-            ],
-            "published": [
-              "2022-10-05T15:55:00+0100"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "photo": [
-                    {
-                      "value": "https://www.jvt.me/img/profile.png",
-                      "alt": "Jamie Tanna's profile image"
-                    }
-                  ],
-                  "name": [
-                    "Jamie Tanna"
-                  ],
-                  "url": [
-                    "https://www.jvt.me/"
-                  ]
-                },
-                "value": "Jamie Tanna"
-              }
-            ]
-          }
         }
       ]
     }
@@ -3415,7 +3412,6 @@
     ],
     "alternate": [
       "https://www.jvt.me/feed.xml",
-      "https://www.jvt.me/application/rss+xml",
       "https://www.jvt.me/feed.json",
       "https://www.jvt.me/post-frequency.json",
       "https://www.jvt.me/content-deduplication.json"
@@ -3509,13 +3505,6 @@
       ],
       "title": "Jamie Tanna | Software Engineer",
       "type": "application/rss+xml"
-    },
-    "https://www.jvt.me/application/rss+xml": {
-      "rels": [
-        "alternate"
-      ],
-      "title": "/feed.xml",
-      "type": "application/atom+xml"
     },
     "https://www.jvt.me/feed.json": {
       "rels": [

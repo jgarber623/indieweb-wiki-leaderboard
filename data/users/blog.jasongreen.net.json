@@ -2,22 +2,7 @@
   "items": [],
   "rels": {
     "profile": [
-      "http://gmpg.org/xfn/11"
-    ],
-    "icon": [
-      "http://blog.jasongreen.net/favicon.ico"
-    ],
-    "shortcut": [
-      "http://blog.jasongreen.net/favicon.ico"
-    ],
-    "stylesheet": [
-      "http://blog.jasongreen.net/wp-content/themes/futhark/style.css",
-      "http://blog.jasongreen.net/wp-includes/css/dist/block-library/style.min.css?ver=5.4.12",
-      "http://blog.jasongreen.net/wp-content/plugins/jetpack/_inc/genericons/genericons/genericons.css?ver=3.1",
-      "http://blog.jasongreen.net/wp-content/plugins/indieweb-taxonomy-master/css/kind-style.css?ver=5.4.12",
-      "http://blog.jasongreen.net/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.2",
-      "http://blog.jasongreen.net/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.1",
-      "http://blog.jasongreen.net/wp-content/plugins/jetpack/css/jetpack.css?ver=8.7.2"
+      "https://gmpg.org/xfn/11"
     ],
     "pingback": [
       "http://blog.jasongreen.net/xmlrpc.php"
@@ -30,6 +15,17 @@
     "alternate": [
       "http://blog.jasongreen.net/feed/",
       "http://blog.jasongreen.net/comments/feed/"
+    ],
+    "stylesheet": [
+      "http://blog.jasongreen.net/wp-includes/css/dist/block-library/style.min.css?ver=5.4.12",
+      "http://blog.jasongreen.net/wp-includes/css/dist/block-library/theme.min.css?ver=5.4.12",
+      "http://blog.jasongreen.net/wp-content/plugins/jetpack/_inc/genericons/genericons/genericons.css?ver=3.1",
+      "http://blog.jasongreen.net/wp-content/plugins/indieweb-taxonomy-master/css/kind-style.css?ver=5.4.12",
+      "http://blog.jasongreen.net/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
+      "http://blog.jasongreen.net/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3",
+      "http://blog.jasongreen.net/wp-content/themes/twentytwelve/style.css?ver=20221101",
+      "http://blog.jasongreen.net/wp-content/themes/twentytwelve/css/blocks.css?ver=20190406",
+      "http://blog.jasongreen.net/wp-content/plugins/jetpack/css/jetpack.css?ver=8.7.2"
     ],
     "https://api.w.org/": [
       "http://blog.jasongreen.net/wp-json/"
@@ -49,12 +45,6 @@
     "token_endpoint": [
       "http://blog.jasongreen.net/wp-json/indieauth/1.0/token"
     ],
-    "micropub_media": [
-      "http://blog.jasongreen.net/wp-json/micropub/1.0/media"
-    ],
-    "micropub": [
-      "http://blog.jasongreen.net/wp-json/micropub/1.0/endpoint"
-    ],
     "microsub": [
       "http://blog.jasongreen.net/wp-json/yarns-microsub/1.0/endpoint"
     ],
@@ -62,6 +52,7 @@
       "http://blog.jasongreen.net/"
     ],
     "bookmark": [
+      "http://blog.jasongreen.net/2022/11/more-thoughts-on-the-fediverse/",
       "http://blog.jasongreen.net/2020/07/ian-bogost-discovery-and-why-dave-winer-was-right/",
       "http://blog.jasongreen.net/2019/12/744/",
       "http://blog.jasongreen.net/2019/12/672/",
@@ -70,11 +61,7 @@
       "http://blog.jasongreen.net/2017/11/meeting-the-general-education-computer-requirement-with-a-course-on-technology-and-society/",
       "http://blog.jasongreen.net/2017/11/aggregating-the-decentralized-social-web/",
       "http://blog.jasongreen.net/2017/11/weapons-of-math-destruction-part-4/",
-      "http://blog.jasongreen.net/2017/11/weapons-of-math-destruction-part-3/",
-      "http://blog.jasongreen.net/2017/11/weapons-of-math-destruction-part-2/"
-    ],
-    "author": [
-      "http://blog.jasongreen.net/author/jgreen/"
+      "http://blog.jasongreen.net/2017/11/weapons-of-math-destruction-part-3/"
     ],
     "category": [
       "http://blog.jasongreen.net/category/uncategorized/"
@@ -83,6 +70,9 @@
       "http://blog.jasongreen.net/category/uncategorized/",
       "http://blog.jasongreen.net/tag/book-club/",
       "http://blog.jasongreen.net/tag/weaponsofmathdestruction/"
+    ],
+    "author": [
+      "http://blog.jasongreen.net/author/jgreen/"
     ],
     "external": [
       "https://stream.jeremycherfas.net/profile/jeremy",
@@ -104,33 +94,13 @@
       "https://twitter.com/ChrisAldrich",
       "http://www.boffosocko.com/",
       "http://boffosocko.com/author/chrisaldrich/"
-    ],
-    "me": [
-      "https://mastodon.social/@jasongreen",
-      "https://twitter.com/jasongreen/"
-    ],
-    "generator": [
-      "http://wordpress.org/"
     ]
   },
   "rel-urls": {
-    "http://gmpg.org/xfn/11": {
+    "https://gmpg.org/xfn/11": {
       "rels": [
         "profile"
       ]
-    },
-    "http://blog.jasongreen.net/favicon.ico": {
-      "rels": [
-        "icon",
-        "shortcut"
-      ]
-    },
-    "http://blog.jasongreen.net/wp-content/themes/futhark/style.css": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "all",
-      "type": "text/css"
     },
     "http://blog.jasongreen.net/xmlrpc.php": {
       "rels": [
@@ -168,6 +138,13 @@
       "media": "all",
       "type": "text/css"
     },
+    "http://blog.jasongreen.net/wp-includes/css/dist/block-library/theme.min.css?ver=5.4.12": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
     "http://blog.jasongreen.net/wp-content/plugins/jetpack/_inc/genericons/genericons/genericons.css?ver=3.1": {
       "rels": [
         "stylesheet"
@@ -182,14 +159,28 @@
       "media": "all",
       "type": "text/css"
     },
-    "http://blog.jasongreen.net/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.2": {
+    "http://blog.jasongreen.net/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7": {
       "rels": [
         "stylesheet"
       ],
       "media": "all",
       "type": "text/css"
     },
-    "http://blog.jasongreen.net/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.1": {
+    "http://blog.jasongreen.net/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://blog.jasongreen.net/wp-content/themes/twentytwelve/style.css?ver=20221101": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://blog.jasongreen.net/wp-content/themes/twentytwelve/css/blocks.css?ver=20190406": {
       "rels": [
         "stylesheet"
       ],
@@ -241,34 +232,16 @@
         "dns-prefetch"
       ]
     },
-    "http://blog.jasongreen.net/wp-json/micropub/1.0/media": {
-      "rels": [
-        "micropub_media"
-      ]
-    },
-    "http://blog.jasongreen.net/wp-json/micropub/1.0/endpoint": {
-      "rels": [
-        "micropub"
-      ]
-    },
     "http://blog.jasongreen.net/wp-json/yarns-microsub/1.0/endpoint": {
       "rels": [
         "microsub"
       ]
     },
-    "http://blog.jasongreen.net/2020/07/ian-bogost-discovery-and-why-dave-winer-was-right/": {
+    "http://blog.jasongreen.net/2022/11/more-thoughts-on-the-fediverse/": {
       "rels": [
         "bookmark"
       ],
-      "title": "Permalink to Ian Bogost, discovery, and why Dave Winer was right",
-      "text": "Ian Bogost, discovery, and why Dave Winer was right"
-    },
-    "http://blog.jasongreen.net/author/jgreen/": {
-      "rels": [
-        "author"
-      ],
-      "title": "View all posts by Jason Green",
-      "text": "Jason Green"
+      "text": "More Thoughts on the Fediverse"
     },
     "http://blog.jasongreen.net/category/uncategorized/": {
       "rels": [
@@ -277,50 +250,56 @@
       ],
       "text": "Uncategorized"
     },
-    "http://blog.jasongreen.net/2019/12/744/": {
+    "http://blog.jasongreen.net/author/jgreen/": {
+      "rels": [
+        "author"
+      ],
+      "title": "View all posts by Jason Green",
+      "text": "Jason Green"
+    },
+    "http://blog.jasongreen.net/2020/07/ian-bogost-discovery-and-why-dave-winer-was-right/": {
       "rels": [
         "bookmark"
       ],
-      "title": "Permalink to"
+      "text": "Ian Bogost, discovery, and why Dave Winer was right"
+    },
+    "http://blog.jasongreen.net/2019/12/744/": {
+      "rels": [
+        "bookmark"
+      ]
     },
     "http://blog.jasongreen.net/2019/12/672/": {
       "rels": [
         "bookmark"
-      ],
-      "title": "Permalink to"
+      ]
     },
     "http://blog.jasongreen.net/2019/12/643/": {
       "rels": [
         "bookmark"
-      ],
-      "title": "Permalink to"
+      ]
     },
     "http://blog.jasongreen.net/2017/12/who-imagined-epistemology-would-be-cyclical/": {
       "rels": [
         "bookmark"
       ],
-      "title": "Permalink to Who imagined epistemology would be cyclical?",
       "text": "Who imagined epistemology would be cyclical?"
     },
     "http://blog.jasongreen.net/2017/11/meeting-the-general-education-computer-requirement-with-a-course-on-technology-and-society/": {
       "rels": [
         "bookmark"
       ],
-      "title": "Permalink to Meeting the General Education Computer Requirement with a Course on Technology and Society",
       "text": "Meeting the General Education Computer Requirement with a Course on Technology and Society"
     },
     "http://blog.jasongreen.net/2017/11/aggregating-the-decentralized-social-web/": {
       "rels": [
         "bookmark"
       ],
-      "title": "Permalink to Aggregating the Decentralized Social Web",
       "text": "Aggregating the Decentralized Social Web"
     },
     "http://blog.jasongreen.net/2017/11/weapons-of-math-destruction-part-4/": {
       "rels": [
         "bookmark"
       ],
-      "title": "Permalink to Weapons of Math Destruction Part 4",
       "text": "Weapons of Math Destruction Part 4"
     },
     "http://blog.jasongreen.net/tag/book-club/": {
@@ -339,15 +318,7 @@
       "rels": [
         "bookmark"
       ],
-      "title": "Permalink to Weapons of Math Destruction Part 3",
       "text": "Weapons of Math Destruction Part 3"
-    },
-    "http://blog.jasongreen.net/2017/11/weapons-of-math-destruction-part-2/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Permalink to Weapons of Math Destruction Part 2",
-      "text": "Weapons of Math Destruction Part 2"
     },
     "https://stream.jeremycherfas.net/profile/jeremy": {
       "rels": [
@@ -388,25 +359,6 @@
         "ugc"
       ],
       "text": "Chris Aldrich"
-    },
-    "https://mastodon.social/@jasongreen": {
-      "rels": [
-        "me"
-      ],
-      "text": "mastodon.social"
-    },
-    "https://twitter.com/jasongreen/": {
-      "rels": [
-        "me"
-      ],
-      "text": "Twitter"
-    },
-    "http://wordpress.org/": {
-      "rels": [
-        "generator"
-      ],
-      "title": "Semantic Personal Publishing Platform",
-      "text": "Proudly powered by WordPress"
     }
   }
 }

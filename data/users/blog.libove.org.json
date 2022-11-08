@@ -34,6 +34,22 @@
           ],
           "properties": {
             "url": [
+              "https://blog.libove.org/posts/implemented-indieauth/"
+            ],
+            "published": [
+              "2022-11-07 19:56:44.236318499 +0000 UTC"
+            ],
+            "name": [
+              "Implemented IndieAuth\n        \n            Published:\n            \n                07-11-2022 19:56:44"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "url": [
               "https://blog.libove.org/posts/analyse-multiple-log-archives-with-goaccess/"
             ],
             "published": [
@@ -1497,6 +1513,15 @@
     "webmention": [
       "https://blog.libove.org/webmention/"
     ],
+    "indieauth-metadata": [
+      "https://blog.libove.org/.well-known/oauth-authorization-server"
+    ],
+    "authorization_endpoint": [
+      "https://blog.libove.org/auth/"
+    ],
+    "token_endpoint": [
+      "https://blog.libove.org/auth/token/"
+    ],
     "me": [
       "https://twitter.com/h4kor",
       "https://github.com/h4kor",
@@ -1517,6 +1542,21 @@
     "https://blog.libove.org/webmention/": {
       "rels": [
         "webmention"
+      ]
+    },
+    "https://blog.libove.org/.well-known/oauth-authorization-server": {
+      "rels": [
+        "indieauth-metadata"
+      ]
+    },
+    "https://blog.libove.org/auth/": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://blog.libove.org/auth/token/": {
+      "rels": [
+        "token_endpoint"
       ]
     },
     "https://twitter.com/h4kor": {
