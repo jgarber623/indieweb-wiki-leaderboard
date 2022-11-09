@@ -5,11 +5,7 @@
       "https://gmpg.org/xfn/11"
     ],
     "dns-prefetch": [
-      "https://fonts.googleapis.com/",
       "https://s.w.org/"
-    ],
-    "preconnect": [
-      "https://fonts.gstatic.com/"
     ],
     "alternate": [
       "https://djoerdhiemstra.com/feed/",
@@ -19,6 +15,7 @@
       "https://djoerdhiemstra.com/wp-includes/css/dist/block-library/style.min.css?ver=5.9.5",
       "https://djoerdhiemstra.com/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
       "https://djoerdhiemstra.com/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3",
+      "https://djoerdhiemstra.com/wp-content/uploads/omgf/twentysixteen-fonts/twentysixteen-fonts.css?ver=1667893740",
       "https://djoerdhiemstra.com/wp-content/themes/twentysixteen/genericons/genericons.css?ver=20201208",
       "https://djoerdhiemstra.com/wp-content/themes/twentysixteen/style.css?ver=20201208",
       "https://djoerdhiemstra.com/wp-content/themes/twentysixteen/css/blocks.css?ver=20190102"
@@ -112,19 +109,9 @@
         "profile"
       ]
     },
-    "https://fonts.googleapis.com/": {
-      "rels": [
-        "dns-prefetch"
-      ]
-    },
     "https://s.w.org/": {
       "rels": [
         "dns-prefetch"
-      ]
-    },
-    "https://fonts.gstatic.com/": {
-      "rels": [
-        "preconnect"
       ]
     },
     "https://djoerdhiemstra.com/feed/": {
@@ -154,6 +141,12 @@
       "media": "all"
     },
     "https://djoerdhiemstra.com/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://djoerdhiemstra.com/wp-content/uploads/omgf/twentysixteen-fonts/twentysixteen-fonts.css?ver=1667893740": {
       "rels": [
         "stylesheet"
       ],

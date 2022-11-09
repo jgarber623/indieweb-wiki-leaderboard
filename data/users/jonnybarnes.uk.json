@@ -7,6 +7,7 @@
       "properties": {
         "name": [
           "",
+          "CloudFormation ain’t half bad once you get into the swing of things #Devops #AWS",
           "Sometimes Dependabot takes ages to actually rebase open PRs :shakes fist:",
           "Do we have the right tokens to cross-post now?",
           "Getting closer to getting cross-posting to Mastodon working 🤞🏼",
@@ -15,10 +16,13 @@
           "Mastodon cross-posting is quite hard it seems!",
           "I think I’ve configured stuff correctly to post to Mastodon now from my site…",
           "Well that didn’t work 😭 #indieweb",
-          "Test post to check Mastodon syndication #indieweb",
-          "Can highly recommend Spring for Twitter, runs on iOS and macOS #happycustomer"
+          "Test post to check Mastodon syndication #indieweb"
         ],
         "content": [
+          {
+            "html": "<p>CloudFormation ain’t half bad once you get into the swing of things <a rel=\"tag\" class=\"p-category\" href=\"https://jonnybarnes.uk/notes/tagged/devops\">#Devops</a> <a rel=\"tag\" class=\"p-category\" href=\"https://jonnybarnes.uk/notes/tagged/aws\">#AWS</a></p>",
+            "value": "CloudFormation ain’t half bad once you get into the swing of things #Devops #AWS"
+          },
           {
             "html": "<p>Sometimes Dependabot takes ages to actually rebase open PRs :shakes fist:</p>",
             "value": "Sometimes Dependabot takes ages to actually rebase open PRs :shakes fist:"
@@ -54,13 +58,16 @@
           {
             "html": "<p>Test post to check Mastodon syndication <a rel=\"tag\" class=\"p-category\" href=\"https://jonnybarnes.uk/notes/tagged/indieweb\">#indieweb</a></p>",
             "value": "Test post to check Mastodon syndication #indieweb"
-          },
-          {
-            "html": "<p>Can highly recommend Spring for Twitter, runs on iOS and macOS <a rel=\"tag\" class=\"p-category\" href=\"https://jonnybarnes.uk/notes/tagged/happycustomer\">#happycustomer</a></p>",
-            "value": "Can highly recommend Spring for Twitter, runs on iOS and macOS #happycustomer"
           }
         ],
+        "category": [
+          "#Devops",
+          "#AWS",
+          "#indieweb",
+          "#indieweb"
+        ],
         "url": [
+          "https://jonnybarnes.uk/notes/NT",
           "https://jonnybarnes.uk/notes/NS",
           "https://jonnybarnes.uk/notes/NR",
           "https://jonnybarnes.uk/notes/NQ",
@@ -69,10 +76,10 @@
           "https://jonnybarnes.uk/notes/NM",
           "https://jonnybarnes.uk/notes/NL",
           "https://jonnybarnes.uk/notes/NK",
-          "https://jonnybarnes.uk/notes/NJ",
-          "https://jonnybarnes.uk/notes/NH"
+          "https://jonnybarnes.uk/notes/NJ"
         ],
         "published": [
+          "2022-11-08T09:48:15+00:00",
           "2022-11-07T20:50:03+00:00",
           "2022-11-07T17:37:03+00:00",
           "2022-11-06T12:24:04+00:00",
@@ -81,10 +88,29 @@
           "2022-11-05T18:35:39+00:00",
           "2022-11-05T17:52:16+00:00",
           "2022-11-04T19:14:36+00:00",
-          "2022-11-04T19:12:02+00:00",
-          "2022-11-02T08:12:58+00:00"
+          "2022-11-04T19:12:02+00:00"
         ],
         "location": [
+          {
+            "type": [
+              "h-adr"
+            ],
+            "properties": {
+              "locality": [
+                "Besses o' th' Barn"
+              ],
+              "country-name": [
+                "United Kingdom"
+              ],
+              "latitude": [
+                "53.54258"
+              ],
+              "longitude": [
+                "-2.29048"
+              ]
+            },
+            "value": "Besses o' th' Barn, United Kingdom"
+          },
           {
             "type": [
               "h-adr"
@@ -264,38 +290,14 @@
               ]
             },
             "value": "Besses o' th' Barn, United Kingdom"
-          },
-          {
-            "type": [
-              "h-adr"
-            ],
-            "properties": {
-              "locality": [
-                "Besses o' th' Barn"
-              ],
-              "country-name": [
-                "United Kingdom"
-              ],
-              "latitude": [
-                "53.5426"
-              ],
-              "longitude": [
-                "-2.29036"
-              ]
-            },
-            "value": "Besses o' th' Barn, United Kingdom"
           }
         ],
         "syndication": [
+          "https://twitter.com/i/web/status/1589917700049903616",
+          "https://mastodon.thebeeches.house/@jonny/109307553043746189",
           "https://twitter.com/i/web/status/1589721858982584320",
           "https://mastodon.thebeeches.house/@jonny/109304493024831609",
-          "https://mastodon.thebeeches.house/@jonny/109303734152437320",
-          "https://twitter.com/i/web/status/1587719398898409472"
-        ],
-        "category": [
-          "#indieweb",
-          "#indieweb",
-          "#happycustomer"
+          "https://mastodon.thebeeches.house/@jonny/109303734152437320"
         ]
       }
     },
@@ -394,8 +396,9 @@
       "https://jonnybarnes.uk/"
     ],
     "tag": [
-      "https://jonnybarnes.uk/notes/tagged/indieweb",
-      "https://jonnybarnes.uk/notes/tagged/happycustomer"
+      "https://jonnybarnes.uk/notes/tagged/devops",
+      "https://jonnybarnes.uk/notes/tagged/aws",
+      "https://jonnybarnes.uk/notes/tagged/indieweb"
     ],
     "me": [
       "https://jonnybarnes.uk/",
@@ -521,17 +524,23 @@
         "pgpkey"
       ]
     },
+    "https://jonnybarnes.uk/notes/tagged/devops": {
+      "rels": [
+        "tag"
+      ],
+      "text": "#Devops"
+    },
+    "https://jonnybarnes.uk/notes/tagged/aws": {
+      "rels": [
+        "tag"
+      ],
+      "text": "#AWS"
+    },
     "https://jonnybarnes.uk/notes/tagged/indieweb": {
       "rels": [
         "tag"
       ],
       "text": "#indieweb"
-    },
-    "https://jonnybarnes.uk/notes/tagged/happycustomer": {
-      "rels": [
-        "tag"
-      ],
-      "text": "#happycustomer"
     },
     "https://www.facebook.com/jonnybarnes": {
       "rels": [

@@ -25,12 +25,12 @@
       "https://indieauth.com/auth"
     ],
     "bookmark": [
+      "https://simonwillison.net/2022/Nov/8/mastodon-is-just-blogs/",
       "https://simonwillison.net/2022/Nov/6/what-to-blog-about/",
       "https://simonwillison.net/2022/Nov/5/mastodon/",
       "https://simonwillison.net/2022/Oct/29/the-perfect-commit/",
       "https://simonwillison.net/2022/Oct/27/datasette-0-63/",
       "https://simonwillison.net/2022/Oct/23/datasette-gunicorn/",
-      "https://simonwillison.net/2022/Oct/19/measuring-traffic/",
       "https://simonwillison.net/2022/Nov/7/blessedrs/",
       "https://simonwillison.net/2022/Nov/5/govuk-rules-for-getting-production-access/",
       "https://simonwillison.net/2022/Nov/5/nikodemus-guide-to-mastodon/",
@@ -44,29 +44,6 @@
       "https://simonwillison.net/2022/Oct/24/leveraging-shot-scraper-and-creating-image-diffs/",
       "https://simonwillison.net/2022/Oct/21/the-commodordion/",
       "https://simonwillison.net/2022/Oct/19/simple-fast-and-scalable-reverse-image-search-using-perceptual-h/"
-    ],
-    "nofollow": [
-      "https://pumpkinfest.miramarevents.com/",
-      "https://twitter.com/natbat",
-      "https://simonwillison.net/2020/Oct/9/git-scraping/",
-      "https://developers.google.com/maps/documentation/directions/overview",
-      "https://www.google.com/maps/search/FH78%2BQJ+Half+Moon+Bay,+CA,+USA",
-      "https://www.google.com/maps/search/GG49%2BCH+El+Granada+CA,+USA",
-      "https://simonwillison.net/2021/Dec/7/git-history/",
-      "https://datasette.io/plugins/datasette-vega",
-      "https://lite.datasette.io/?url=https://github.com/simonw/scrape-hmb-traffic/blob/main/hmb.db?&install=datasette-copyable#/hmb?sql=with+item1+as+(%0A++select%0A++++time(datetime(commits.commit_at%2C+'-7+hours'))+as+t%2C%0A++++duration_in_traffic+%2F+60+as+mins_in_traffic%0A++from%0A++++item_version%0A++++join+commits+on+item_version._commit+%3D+commits.id%0A++order+by%0A++++commits.commit_at%0A)%2C%0Aitem2+as+(%0A++select%0A++++time(datetime(commits.commit_at%2C+'-7+hours'))+as+t%2C%0A++++duration_in_traffic+%2F+60+as+mins_in_traffic%0A++from%0A++++item2_version%0A++++join+commits+on+item2_version._commit+%3D+commits.id%0A++order+by%0A++++commits.commit_at%0A)%0Aselect%0A++item1.*%2C%0A++item2.mins_in_traffic+as+mins_in_traffic_other_way%0Afrom%0A++item1%0A++join+item2+on+item1.t+%3D+item2.t",
-      "https://docs.google.com/spreadsheets/d/1JOimtkugZBF_YQxqn0Gn6NiIhNz-OMH2rpOZtmECAY4/edit#gid=0",
-      "https://simonwillison.net/2022/May/4/datasette-lite/",
-      "https://lite.datasette.io/?url=https://github.com/simonw/scrape-hmb-traffic/blob/main/hmb.db",
-      "https://simonwillison.net/2022/Sep/16/weeknotes/",
-      "https://lite.datasette.io/?url=https://github.com/simonw/scrape-hmb-traffic/blob/main/hmb.db#/hmb?sql=with+item1+as+(%0A++select%0A++++time(datetime(commits.commit_at%2C+'-7+hours'))+as+t%2C%0A++++duration_in_traffic+%2F+60+as+mins_in_traffic%0A++from%0A++++item_version%0A++++join+commits+on+item_version._commit+%3D+commits.id%0A++order+by%0A++++commits.commit_at%0A)%2C%0Aitem2+as+(%0A++select%0A++++time(datetime(commits.commit_at%2C+'-7+hours'))+as+t%2C%0A++++duration_in_traffic+%2F+60+as+mins_in_traffic%0A++from%0A++++item2_version%0A++++join+commits+on+item2_version._commit+%3D+commits.id%0A++order+by%0A++++commits.commit_at%0A)%0Aselect%0A++item1.*%2C%0A++item2.mins_in_traffic+as+mins_in_traffic_other_way%0Afrom%0A++item1%0A++join+item2+on+item1.t+%3D+item2.t",
-      "https://simonwillison.net/2022/Aug/17/datasette-lite-plugins/",
-      "https://datasette.io/plugins/datasette-copyable",
-      "https://lite.datasette.io/?url=https://github.com/simonw/scrape-hmb-traffic/blob/main/hmb.db&install=datasette-copyable#/hmb.copyable?sql=with+item1+as+%28%0A++select%0A++++time%28datetime%28commits.commit_at%2C+%27-7+hours%27%29%29+as+t%2C%0A++++duration_in_traffic+%2F+60+as+mins_in_traffic%0A++from%0A++++item_version%0A++++join+commits+on+item_version._commit+%3D+commits.id%0A++order+by%0A++++commits.commit_at%0A%29%2C%0Aitem2+as+%28%0A++select%0A++++time%28datetime%28commits.commit_at%2C+%27-7+hours%27%29%29+as+t%2C%0A++++duration_in_traffic+%2F+60+as+mins_in_traffic%0A++from%0A++++item2_version%0A++++join+commits+on+item2_version._commit+%3D+commits.id%0A++order+by%0A++++commits.commit_at%0A%29%0Aselect%0A++item1.%2A%2C%0A++item2.mins_in_traffic+as+mins_in_traffic_other_way%0Afrom%0A++item1%0A++join+item2+on+item1.t+%3D+item2.t&_table_format=github",
-      "https://simonwillison.net/series/git-scraping/",
-      "https://simonwillison.net/tags/githubactions/",
-      "https://simonwillison.net/tags/githistory/",
-      "https://simonwillison.net/series/datasette-lite/"
     ]
   },
   "rel-urls": {
@@ -118,6 +95,12 @@
         "authorization_endpoint"
       ]
     },
+    "https://simonwillison.net/2022/Nov/8/mastodon-is-just-blogs/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "Mastodon is just blogs"
+    },
     "https://simonwillison.net/2022/Nov/6/what-to-blog-about/": {
       "rels": [
         "bookmark"
@@ -147,138 +130,6 @@
         "bookmark"
       ],
       "text": "Weeknotes: DjangoCon, SQLite in Django, datasette-gunicorn"
-    },
-    "https://simonwillison.net/2022/Oct/19/measuring-traffic/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Measuring traffic during the Half Moon Bay Pumpkin Festival"
-    },
-    "https://pumpkinfest.miramarevents.com/": {
-      "rels": [
-        "nofollow"
-      ],
-      "text": "50th annual Half Moon Bay Pumpkin Festival"
-    },
-    "https://twitter.com/natbat": {
-      "rels": [
-        "nofollow"
-      ],
-      "text": "Natalie"
-    },
-    "https://simonwillison.net/2020/Oct/9/git-scraping/": {
-      "rels": [
-        "nofollow"
-      ],
-      "text": "git scraper"
-    },
-    "https://developers.google.com/maps/documentation/directions/overview": {
-      "rels": [
-        "nofollow"
-      ],
-      "text": "Directions API"
-    },
-    "https://www.google.com/maps/search/FH78%2BQJ+Half+Moon+Bay,+CA,+USA": {
-      "rels": [
-        "nofollow"
-      ],
-      "text": "FH78+QJ Half Moon Bay, CA, USA"
-    },
-    "https://www.google.com/maps/search/GG49%2BCH+El+Granada+CA,+USA": {
-      "rels": [
-        "nofollow"
-      ],
-      "text": "GG49+CH El Granada CA, USA"
-    },
-    "https://simonwillison.net/2021/Dec/7/git-history/": {
-      "rels": [
-        "nofollow"
-      ],
-      "text": "git-history tool"
-    },
-    "https://datasette.io/plugins/datasette-vega": {
-      "rels": [
-        "nofollow"
-      ],
-      "text": "datasette-vega"
-    },
-    "https://lite.datasette.io/?url=https://github.com/simonw/scrape-hmb-traffic/blob/main/hmb.db?&install=datasette-copyable#/hmb?sql=with+item1+as+(%0A++select%0A++++time(datetime(commits.commit_at%2C+'-7+hours'))+as+t%2C%0A++++duration_in_traffic+%2F+60+as+mins_in_traffic%0A++from%0A++++item_version%0A++++join+commits+on+item_version._commit+%3D+commits.id%0A++order+by%0A++++commits.commit_at%0A)%2C%0Aitem2+as+(%0A++select%0A++++time(datetime(commits.commit_at%2C+'-7+hours'))+as+t%2C%0A++++duration_in_traffic+%2F+60+as+mins_in_traffic%0A++from%0A++++item2_version%0A++++join+commits+on+item2_version._commit+%3D+commits.id%0A++order+by%0A++++commits.commit_at%0A)%0Aselect%0A++item1.*%2C%0A++item2.mins_in_traffic+as+mins_in_traffic_other_way%0Afrom%0A++item1%0A++join+item2+on+item1.t+%3D+item2.t": {
-      "rels": [
-        "nofollow"
-      ],
-      "text": "Try running this query"
-    },
-    "https://docs.google.com/spreadsheets/d/1JOimtkugZBF_YQxqn0Gn6NiIhNz-OMH2rpOZtmECAY4/edit#gid=0": {
-      "rels": [
-        "nofollow"
-      ],
-      "text": "Google Sheet is here"
-    },
-    "https://simonwillison.net/2022/May/4/datasette-lite/": {
-      "rels": [
-        "nofollow"
-      ],
-      "text": "Datasette Lite"
-    },
-    "https://lite.datasette.io/?url=https://github.com/simonw/scrape-hmb-traffic/blob/main/hmb.db": {
-      "rels": [
-        "nofollow"
-      ],
-      "text": "https://lite.datasette.io/?url=https://github.com/simonw/scrape-hmb-traffic/blob/main/hmb.db"
-    },
-    "https://simonwillison.net/2022/Sep/16/weeknotes/": {
-      "rels": [
-        "nofollow"
-      ],
-      "text": "feature I added"
-    },
-    "https://lite.datasette.io/?url=https://github.com/simonw/scrape-hmb-traffic/blob/main/hmb.db#/hmb?sql=with+item1+as+(%0A++select%0A++++time(datetime(commits.commit_at%2C+'-7+hours'))+as+t%2C%0A++++duration_in_traffic+%2F+60+as+mins_in_traffic%0A++from%0A++++item_version%0A++++join+commits+on+item_version._commit+%3D+commits.id%0A++order+by%0A++++commits.commit_at%0A)%2C%0Aitem2+as+(%0A++select%0A++++time(datetime(commits.commit_at%2C+'-7+hours'))+as+t%2C%0A++++duration_in_traffic+%2F+60+as+mins_in_traffic%0A++from%0A++++item2_version%0A++++join+commits+on+item2_version._commit+%3D+commits.id%0A++order+by%0A++++commits.commit_at%0A)%0Aselect%0A++item1.*%2C%0A++item2.mins_in_traffic+as+mins_in_traffic_other_way%0Afrom%0A++item1%0A++join+item2+on+item1.t+%3D+item2.t": {
-      "rels": [
-        "nofollow"
-      ],
-      "text": "https://lite.datasette.io/?url=https://github.com/simonw/scrape-hmb-traffic/blob/main/hmb.db#/hmb?sql=with+item1+as+(%0A++select%0A++++time(datetime(commits.commit_at%2C+’-7+hours’))+as+t%2C%0A++++duration_in_traffic+%2F+60+as+mins_in_traffic%0A++from%0A++++item_version%0A++++join+commits+on+item_version._commit+%3D+commits.id%0A++order+by%0A++++commits.commit_at%0A)%2C%0Aitem2+as+(%0A++select%0A++++time(datetime(commits.commit_at%2C+’-7+hours’))+as+t%2C%0A++++duration_in_traffic+%2F+60+as+mins_in_traffic%0A++from%0A++++item2_version%0A++++join+commits+on+item2_version._commit+%3D+commits.id%0A++order+by%0A++++commits.commit_at%0A)%0Aselect%0A++item1.*%2C%0A++item2.mins_in_traffic+as+mins_in_traffic_other_way%0Afrom%0A++item1%0A++join+item2+on+item1.t+%3D+item2.t"
-    },
-    "https://simonwillison.net/2022/Aug/17/datasette-lite-plugins/": {
-      "rels": [
-        "nofollow"
-      ],
-      "text": "has plugin support"
-    },
-    "https://datasette.io/plugins/datasette-copyable": {
-      "rels": [
-        "nofollow"
-      ],
-      "text": "datasette-copyable"
-    },
-    "https://lite.datasette.io/?url=https://github.com/simonw/scrape-hmb-traffic/blob/main/hmb.db&install=datasette-copyable#/hmb.copyable?sql=with+item1+as+%28%0A++select%0A++++time%28datetime%28commits.commit_at%2C+%27-7+hours%27%29%29+as+t%2C%0A++++duration_in_traffic+%2F+60+as+mins_in_traffic%0A++from%0A++++item_version%0A++++join+commits+on+item_version._commit+%3D+commits.id%0A++order+by%0A++++commits.commit_at%0A%29%2C%0Aitem2+as+%28%0A++select%0A++++time%28datetime%28commits.commit_at%2C+%27-7+hours%27%29%29+as+t%2C%0A++++duration_in_traffic+%2F+60+as+mins_in_traffic%0A++from%0A++++item2_version%0A++++join+commits+on+item2_version._commit+%3D+commits.id%0A++order+by%0A++++commits.commit_at%0A%29%0Aselect%0A++item1.%2A%2C%0A++item2.mins_in_traffic+as+mins_in_traffic_other_way%0Afrom%0A++item1%0A++join+item2+on+item1.t+%3D+item2.t&_table_format=github": {
-      "rels": [
-        "nofollow"
-      ],
-      "text": "an example"
-    },
-    "https://simonwillison.net/series/git-scraping/": {
-      "rels": [
-        "nofollow"
-      ],
-      "text": "Git scraping"
-    },
-    "https://simonwillison.net/tags/githubactions/": {
-      "rels": [
-        "nofollow"
-      ],
-      "text": "GitHub Actions"
-    },
-    "https://simonwillison.net/tags/githistory/": {
-      "rels": [
-        "nofollow"
-      ],
-      "text": "git-history"
-    },
-    "https://simonwillison.net/series/datasette-lite/": {
-      "rels": [
-        "nofollow"
-      ],
-      "text": "Datasette Lite"
     },
     "https://simonwillison.net/2022/Nov/7/blessedrs/": {
       "rels": [

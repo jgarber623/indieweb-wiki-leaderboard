@@ -43,17 +43,79 @@
           ],
           "properties": {
             "author": [
+              "https://fireburn.ru/"
+            ],
+            "url": [
+              "https://fireburn.ru/posts/ajyssrQ"
+            ],
+            "uid": [
+              "https://fireburn.ru/posts/ajyssrQ"
+            ],
+            "published": [
+              "2022-11-08T22:58:22.284226662+03:00"
+            ],
+            "category": [
+              "telegram"
+            ],
+            "content": [
+              {
+                "html": "<p>i bought telegram premium by accident 💀💀💀</p>\n\n<p>ok not really by accident, but I wanted to send it to a friend, and turns out you need to have premium to gift premium which is really dumb</p>\n\n<p>i suppose i shall use my right to free speech to say: f💀ck you, pavel durov</p>",
+                "value": "i bought telegram premium by accident 💀💀💀\n\nok not really by accident, but I wanted to send it to a friend, and turns out you need to have premium to gift premium which is really dumb\n\ni suppose i shall use my right to free speech to say: f💀ck you, pavel durov"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              "https://fireburn.ru/"
+            ],
+            "url": [
+              "https://fireburn.ru/posts/ajvi8X1"
+            ],
+            "uid": [
+              "https://fireburn.ru/posts/ajvi8X1"
+            ],
+            "published": [
+              "2022-11-08T11:35:18.661057610+03:00"
+            ],
+            "in-reply-to": [
+              "https://webmention.rocks/test/3"
+            ],
+            "content": [
+              {
+                "html": "<p>Testing webmentions</p>",
+                "value": "Testing webmentions"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
               "https://fireburn.ru/Vika",
               "https://fireburn.ru/"
             ],
             "like-of": [
               "https://rsapkf.org/weblog/q2z"
             ],
+            "url": [
+              "https://fireburn.ru/posts/ajixhtc"
+            ],
+            "uid": [
+              "https://fireburn.ru/posts/ajixhtc"
+            ],
             "published": [
               "2022-11-06T17:15:46.417139945+03:00"
             ],
             "name": [
-              "Vika ❤️ https://rsapkf.org/weblog/q2zon Sun Nov  6 17:15:46 2022"
+              "Vika ❤️ https://rsapkf.org/weblog/q2z on Sun Nov  6 17:15:46 2022"
             ]
           }
         },
@@ -532,59 +594,6 @@
               }
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "author": [
-              "https://fireburn.ru/"
-            ],
-            "url": [
-              "https://fireburn.ru/posts/aaQaFhZ"
-            ],
-            "uid": [
-              "https://fireburn.ru/posts/aaQaFhZ"
-            ],
-            "published": [
-              "2022-08-14T19:30:56.553764323+03:00"
-            ],
-            "category": [
-              "Kittybox"
-            ],
-            "content": [
-              {
-                "html": "<p>I hate OpenSSL, but the <a href=\"https://crates.io/crates/webauthn-rs\">webauthn-rs</a> crate happens to use it. Ugh. I don’t want to ship C code in Kittybox! But it looks like rewriting the whole webauthn-rs crate to remove OpenSSL dependency might be the only option, if it’s possible at all.</p>",
-                "value": "I hate OpenSSL, but the webauthn-rs crate happens to use it. Ugh. I don’t want to ship C code in Kittybox! But it looks like rewriting the whole webauthn-rs crate to remove OpenSSL dependency might be the only option, if it’s possible at all."
-              }
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "author": [
-              "https://fireburn.ru/"
-            ],
-            "url": [
-              "https://fireburn.ru/posts/a_eJ0dk"
-            ],
-            "uid": [
-              "https://fireburn.ru/posts/a_eJ0dk"
-            ],
-            "published": [
-              "2022-08-08T00:28:50.325491087+03:00"
-            ],
-            "content": [
-              {
-                "html": "<p>Oh well. It looks like I tried to implement an asynchronous template system for Rust, but instead of actual templates I ended up manually writing a stream of <code>Bytes</code> instances. It takes 10 times as much space as its output. But it’s asynchronous, and I expect that TTFB for, say, a large feed, would be much better with it.</p>\n\n<p>For completeness, here is one template I wrote. It should’ve been an h-card.</p>\n\n<pre><code>pub fn card(mut mf2: serde_json::Value) -&gt; impl Stream&lt;Item = Bytes&gt; + Unpin + Send {\n    let uid: String = match mf2[\"properties\"][\"uid\"][0].take() {\n        serde_json::Value::String(uid) =&gt; uid,\n        _ =&gt; panic!(\"h-card without a uid\")\n    };\n    let photo: Option&lt;String&gt; = match mf2[\"properties\"][\"photo\"][0].take() {\n        serde_json::Value::String(url) =&gt; Some(url),\n        _ =&gt; None\n    };\n    let name: String = match mf2[\"properties\"][\"name\"][0].take() {\n        serde_json::Value::String(name) =&gt; name,\n        _ =&gt; panic!(\"encountered h-card without a name\")\n    };\n    chunk(b\"&lt;article class=\\\"h-card\\\"&gt;\")\n        .chain(futures::stream::once(std::future::ready(\n            match photo {\n                Some(url) =&gt; {\n                    let mut tag = Vec::new();\n                    tag.extend_from_slice(b\"&lt;img class=\\\"u-photo\\\" src=\\\"\");\n                    html_escape::encode_double_quoted_attribute_to_vec(url, &amp;mut tag);\n                    tag.extend_from_slice(b\"\\\" /&gt;\");\n\n                    Bytes::from(tag)\n                },\n                None =&gt; Bytes::new()\n            }\n        )))\n        .chain(futures::stream::once(std::future::ready({\n            let mut buf = Vec::new();\n            buf.extend_from_slice(b\"&lt;h1&gt;&lt;a class=\\\"u-url u-uid p-name\\\" href=\\\"\");\n            html_escape::encode_double_quoted_attribute_to_vec(uid, &amp;mut buf);\n            buf.extend_from_slice(b\"\\\"&gt;\");\n\n            html_escape::encode_text_to_vec(&amp;name, &amp;mut buf);\n\n            buf.extend_from_slice(b\"&lt;/a&gt;&lt;/h1&gt;\");\n\n            Bytes::from(buf)\n        })))\n        .chain(chunk(b\"&lt;/article&gt;\"))\n}</code></pre>\n\n<p>It’s huge. Here is the output it should produce (whitespace is mine):</p>\n\n<pre><code>&lt;article class=\"h-card\"&gt;\n    &lt;img class=\"u-photo\" src=\"https://example.com/media/me.png\" /&gt;\n    &lt;h1&gt;&lt;a class=\"u-url u-uid p-name\" href=\"https://example.com/\"&gt;Jane Doe&lt;/a&gt;&lt;/h1&gt;\n&lt;/article&gt;</code></pre>\n\n<p>I need some sort of macro system to work with these. The idea itself seems good, but the implementation... meh.</p>",
-                "value": "Oh well. It looks like I tried to implement an asynchronous template system for Rust, but instead of actual templates I ended up manually writing a stream of Bytes instances. It takes 10 times as much space as its output. But it’s asynchronous, and I expect that TTFB for, say, a large feed, would be much better with it.\n\nFor completeness, here is one template I wrote. It should’ve been an h-card.\n\npub fn card(mut mf2: serde_json::Value) -> impl Stream<Item = Bytes> + Unpin + Send {\n    let uid: String = match mf2[\"properties\"][\"uid\"][0].take() {\n        serde_json::Value::String(uid) => uid,\n        _ => panic!(\"h-card without a uid\")\n    };\n    let photo: Option<String> = match mf2[\"properties\"][\"photo\"][0].take() {\n        serde_json::Value::String(url) => Some(url),\n        _ => None\n    };\n    let name: String = match mf2[\"properties\"][\"name\"][0].take() {\n        serde_json::Value::String(name) => name,\n        _ => panic!(\"encountered h-card without a name\")\n    };\n    chunk(b\"<article class=\\\"h-card\\\">\")\n        .chain(futures::stream::once(std::future::ready(\n            match photo {\n                Some(url) => {\n                    let mut tag = Vec::new();\n                    tag.extend_from_slice(b\"<img class=\\\"u-photo\\\" src=\\\"\");\n                    html_escape::encode_double_quoted_attribute_to_vec(url, &mut tag);\n                    tag.extend_from_slice(b\"\\\" />\");\n\n                    Bytes::from(tag)\n                },\n                None => Bytes::new()\n            }\n        )))\n        .chain(futures::stream::once(std::future::ready({\n            let mut buf = Vec::new();\n            buf.extend_from_slice(b\"<h1><a class=\\\"u-url u-uid p-name\\\" href=\\\"\");\n            html_escape::encode_double_quoted_attribute_to_vec(uid, &mut buf);\n            buf.extend_from_slice(b\"\\\">\");\n\n            html_escape::encode_text_to_vec(&name, &mut buf);\n\n            buf.extend_from_slice(b\"</a></h1>\");\n\n            Bytes::from(buf)\n        })))\n        .chain(chunk(b\"</article>\"))\n}\n\nIt’s huge. Here is the output it should produce (whitespace is mine):\n\n<article class=\"h-card\">\n    <img class=\"u-photo\" src=\"https://example.com/media/me.png\" />\n    <h1><a class=\"u-url u-uid p-name\" href=\"https://example.com/\">Jane Doe</a></h1>\n</article>\n\nI need some sort of macro system to work with these. The idea itself seems good, but the implementation... meh."
-              }
-            ]
-          }
         }
       ]
     }
@@ -622,7 +631,7 @@
       "https://fireburn.ru/feeds/main"
     ],
     "prev": [
-      "https://fireburn.ru/feeds/main?after=https://fireburn.ru/posts/a_eJ0dk"
+      "https://fireburn.ru/feeds/main?after=https://fireburn.ru/posts/abhcVjd"
     ]
   },
   "rel-urls": {
@@ -684,7 +693,7 @@
       ],
       "text": "Main feed"
     },
-    "https://fireburn.ru/feeds/main?after=https://fireburn.ru/posts/a_eJ0dk": {
+    "https://fireburn.ru/feeds/main?after=https://fireburn.ru/posts/abhcVjd": {
       "rels": [
         "prev"
       ],
