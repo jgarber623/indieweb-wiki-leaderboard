@@ -1,41 +1,156 @@
 {
-  "items": [],
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "url": [
+          "https://jeffperry.blog/about/"
+        ],
+        "photo": [
+          "https://micro.blog/jeffperry/avatar.jpg"
+        ],
+        "name": [
+          "Jeff Perry"
+        ],
+        "role": [
+          "Follow @jeffperry on Micro.blog."
+        ]
+      }
+    }
+  ],
   "rels": {
-    "alternate": [
-      "https://jeffperry.blog/feed.rss"
+    "stylesheet": [
+      "https://jeffperry.blog/assets/css/style.css?1668018147",
+      "https://jeffperry.blog/assets/css/highlight.css?1668018147",
+      "https://jeffperry.blog/custom.css?1668018147"
     ],
     "icon": [
-      "https://blotcdn.com/blog_65a3e8d5ec0748aead1d9e40dcf18b9d/_avatars/23cc2b90-4879-4ab4-b762-5c35e974f163.png"
+      "https://micro.blog/jeffperry/favicon.png"
     ],
-    "stylesheet": [
-      "https://jeffperry.blog/style.css?cache=1667928444625&extension=.css"
+    "shortcut": [
+      "https://micro.blog/jeffperry/favicon.png"
+    ],
+    "alternate": [
+      "https://jeffperry.blog/feed.xml",
+      "https://jeffperry.blog/podcast.xml",
+      "https://jeffperry.blog/feed.json"
+    ],
+    "EditURI": [
+      "https://jeffperry.blog/rsd.xml"
     ],
     "me": [
-      "https://social.lol/@jeffperry"
+      "https://micro.blog/jeffperry",
+      "https://twitter.com/iamjeffperry"
+    ],
+    "authorization_endpoint": [
+      "https://micro.blog/indieauth/auth"
+    ],
+    "token_endpoint": [
+      "https://micro.blog/indieauth/token"
+    ],
+    "micropub": [
+      "https://micro.blog/micropub"
+    ],
+    "microsub": [
+      "https://micro.blog/microsub"
+    ],
+    "webmention": [
+      "https://micro.blog/webmention"
+    ],
+    "subscribe": [
+      "https://micro.blog/users/follow"
     ]
   },
   "rel-urls": {
-    "https://jeffperry.blog/feed.rss": {
+    "https://jeffperry.blog/assets/css/style.css?1668018147": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://jeffperry.blog/assets/css/highlight.css?1668018147": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://jeffperry.blog/custom.css?1668018147": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://micro.blog/jeffperry/favicon.png": {
+      "rels": [
+        "icon",
+        "shortcut"
+      ],
+      "type": "image/x-icon"
+    },
+    "https://jeffperry.blog/feed.xml": {
       "rels": [
         "alternate"
       ],
       "title": "Jeff Perry",
       "type": "application/rss+xml"
     },
-    "https://blotcdn.com/blog_65a3e8d5ec0748aead1d9e40dcf18b9d/_avatars/23cc2b90-4879-4ab4-b762-5c35e974f163.png": {
+    "https://jeffperry.blog/podcast.xml": {
       "rels": [
-        "icon"
+        "alternate"
       ],
-      "type": "image/x-icon"
+      "title": "Podcast",
+      "type": "application/rss+xml"
     },
-    "https://jeffperry.blog/style.css?cache=1667928444625&extension=.css": {
+    "https://jeffperry.blog/feed.json": {
       "rels": [
-        "stylesheet"
-      ]
+        "alternate"
+      ],
+      "title": "Jeff Perry",
+      "type": "application/json"
     },
-    "https://social.lol/@jeffperry": {
+    "https://jeffperry.blog/rsd.xml": {
+      "rels": [
+        "EditURI"
+      ],
+      "type": "application/rsd+xml"
+    },
+    "https://micro.blog/jeffperry": {
       "rels": [
         "me"
+      ]
+    },
+    "https://twitter.com/iamjeffperry": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://micro.blog/indieauth/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://micro.blog/indieauth/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://micro.blog/micropub": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://micro.blog/microsub": {
+      "rels": [
+        "microsub"
+      ]
+    },
+    "https://micro.blog/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://micro.blog/users/follow": {
+      "rels": [
+        "subscribe"
       ]
     }
   }

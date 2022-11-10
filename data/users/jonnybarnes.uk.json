@@ -7,6 +7,7 @@
       "properties": {
         "name": [
           "",
+          "Lots of articles being published recently about #Mastodon\nOne I quite enjoyed was https://www.hughrundle.net/home-invasion/",
           "CloudFormation ain’t half bad once you get into the swing of things #Devops #AWS",
           "Sometimes Dependabot takes ages to actually rebase open PRs :shakes fist:",
           "Do we have the right tokens to cross-post now?",
@@ -15,10 +16,13 @@
           "Sometimes computers annoy me",
           "Mastodon cross-posting is quite hard it seems!",
           "I think I’ve configured stuff correctly to post to Mastodon now from my site…",
-          "Well that didn’t work 😭 #indieweb",
-          "Test post to check Mastodon syndication #indieweb"
+          "Well that didn’t work 😭 #indieweb"
         ],
         "content": [
+          {
+            "html": "<p>Lots of articles being published recently about <a rel=\"tag\" class=\"p-category\" href=\"https://jonnybarnes.uk/notes/tagged/mastodon\">#Mastodon</a></p>\n<p>One I quite enjoyed was <a href=\"https://www.hughrundle.net/home-invasion/\">https://www.hughrundle.net/home-invasion/</a></p>",
+            "value": "Lots of articles being published recently about #Mastodon\nOne I quite enjoyed was https://www.hughrundle.net/home-invasion/"
+          },
           {
             "html": "<p>CloudFormation ain’t half bad once you get into the swing of things <a rel=\"tag\" class=\"p-category\" href=\"https://jonnybarnes.uk/notes/tagged/devops\">#Devops</a> <a rel=\"tag\" class=\"p-category\" href=\"https://jonnybarnes.uk/notes/tagged/aws\">#AWS</a></p>",
             "value": "CloudFormation ain’t half bad once you get into the swing of things #Devops #AWS"
@@ -54,19 +58,16 @@
           {
             "html": "<p>Well that didn’t work 😭 <a rel=\"tag\" class=\"p-category\" href=\"https://jonnybarnes.uk/notes/tagged/indieweb\">#indieweb</a></p>",
             "value": "Well that didn’t work 😭 #indieweb"
-          },
-          {
-            "html": "<p>Test post to check Mastodon syndication <a rel=\"tag\" class=\"p-category\" href=\"https://jonnybarnes.uk/notes/tagged/indieweb\">#indieweb</a></p>",
-            "value": "Test post to check Mastodon syndication #indieweb"
           }
         ],
         "category": [
+          "#Mastodon",
           "#Devops",
           "#AWS",
-          "#indieweb",
           "#indieweb"
         ],
         "url": [
+          "https://jonnybarnes.uk/notes/NU",
           "https://jonnybarnes.uk/notes/NT",
           "https://jonnybarnes.uk/notes/NS",
           "https://jonnybarnes.uk/notes/NR",
@@ -75,10 +76,10 @@
           "https://jonnybarnes.uk/notes/NN",
           "https://jonnybarnes.uk/notes/NM",
           "https://jonnybarnes.uk/notes/NL",
-          "https://jonnybarnes.uk/notes/NK",
-          "https://jonnybarnes.uk/notes/NJ"
+          "https://jonnybarnes.uk/notes/NK"
         ],
         "published": [
+          "2022-11-09T18:41:19+00:00",
           "2022-11-08T09:48:15+00:00",
           "2022-11-07T20:50:03+00:00",
           "2022-11-07T17:37:03+00:00",
@@ -87,10 +88,29 @@
           "2022-11-05T18:52:01+00:00",
           "2022-11-05T18:35:39+00:00",
           "2022-11-05T17:52:16+00:00",
-          "2022-11-04T19:14:36+00:00",
-          "2022-11-04T19:12:02+00:00"
+          "2022-11-04T19:14:36+00:00"
         ],
         "location": [
+          {
+            "type": [
+              "h-adr"
+            ],
+            "properties": {
+              "locality": [
+                "Besses o' th' Barn"
+              ],
+              "country-name": [
+                "United Kingdom"
+              ],
+              "latitude": [
+                "53.5426"
+              ],
+              "longitude": [
+                "-2.29025"
+              ]
+            },
+            "value": "Besses o' th' Barn, United Kingdom"
+          },
           {
             "type": [
               "h-adr"
@@ -270,26 +290,6 @@
               ]
             },
             "value": "Besses o' th' Barn, United Kingdom"
-          },
-          {
-            "type": [
-              "h-adr"
-            ],
-            "properties": {
-              "locality": [
-                "Besses o' th' Barn"
-              ],
-              "country-name": [
-                "United Kingdom"
-              ],
-              "latitude": [
-                "53.5426"
-              ],
-              "longitude": [
-                "-2.29017"
-              ]
-            },
-            "value": "Besses o' th' Barn, United Kingdom"
           }
         ],
         "syndication": [
@@ -396,6 +396,7 @@
       "https://jonnybarnes.uk/"
     ],
     "tag": [
+      "https://jonnybarnes.uk/notes/tagged/mastodon",
       "https://jonnybarnes.uk/notes/tagged/devops",
       "https://jonnybarnes.uk/notes/tagged/aws",
       "https://jonnybarnes.uk/notes/tagged/indieweb"
@@ -523,6 +524,12 @@
       "rels": [
         "pgpkey"
       ]
+    },
+    "https://jonnybarnes.uk/notes/tagged/mastodon": {
+      "rels": [
+        "tag"
+      ],
+      "text": "#Mastodon"
     },
     "https://jonnybarnes.uk/notes/tagged/devops": {
       "rels": [

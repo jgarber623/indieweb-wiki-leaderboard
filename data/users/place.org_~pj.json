@@ -16,10 +16,9 @@
         ],
         "url": [
           "https://place.org/~pj/",
+          "https://indieweb.social/@pjz",
           "https://github.com/pjz",
           "https://twitter.com/bitjuggler",
-          "https://google.com/+PaulJimenez3",
-          "https://stackoverflow.com/users/story/8002",
           "https://www.linkedin.com/in/bitjuggler/"
         ]
       }
@@ -28,10 +27,9 @@
   "rels": {
     "me": [
       "mailto:pj@place.org",
+      "https://indieweb.social/@pjz",
       "https://github.com/pjz",
       "https://twitter.com/bitjuggler",
-      "https://google.com/+PaulJimenez3",
-      "https://stackoverflow.com/users/story/8002",
       "https://www.linkedin.com/in/bitjuggler/"
     ]
   },
@@ -41,6 +39,12 @@
         "me"
       ],
       "text": "Email"
+    },
+    "https://indieweb.social/@pjz": {
+      "rels": [
+        "me"
+      ],
+      "text": "mastodon"
     },
     "https://github.com/pjz": {
       "rels": [
@@ -54,23 +58,11 @@
       ],
       "text": "twitter"
     },
-    "https://google.com/+PaulJimenez3": {
-      "rels": [
-        "me"
-      ],
-      "text": "google+"
-    },
-    "https://stackoverflow.com/users/story/8002": {
-      "rels": [
-        "me"
-      ],
-      "text": "stackoverflow jobs"
-    },
     "https://www.linkedin.com/in/bitjuggler/": {
       "rels": [
         "me"
       ],
-      "text": "bitjuggler"
+      "text": "linkedin"
     }
   }
 }

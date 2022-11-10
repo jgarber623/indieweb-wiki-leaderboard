@@ -4,8 +4,8 @@
     "canonical": [
       "https://luqman.ca/"
     ],
-    "stylesheet": [
-      "https://luqman.ca/css/style.css"
+    "alternate": [
+      "https://luqman.ca/atom.xml"
     ],
     "icon": [
       "https://luqman.ca/favicon.ico",
@@ -21,6 +21,9 @@
     "manifest": [
       "https://luqman.ca/site.webmanifest"
     ],
+    "stylesheet": [
+      "https://luqman.ca/css/style.css"
+    ],
     "noopener": [
       "https://luqman.ca/resume/"
     ],
@@ -34,10 +37,12 @@
         "canonical"
       ]
     },
-    "https://luqman.ca/css/style.css": {
+    "https://luqman.ca/atom.xml": {
       "rels": [
-        "stylesheet"
-      ]
+        "alternate"
+      ],
+      "title": "Atom Feed",
+      "type": "application/atom+xml"
     },
     "https://luqman.ca/favicon.ico": {
       "rels": [
@@ -66,6 +71,11 @@
     "https://luqman.ca/site.webmanifest": {
       "rels": [
         "manifest"
+      ]
+    },
+    "https://luqman.ca/css/style.css": {
+      "rels": [
+        "stylesheet"
       ]
     },
     "https://luqman.ca/resume/": {

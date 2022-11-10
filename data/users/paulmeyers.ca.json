@@ -24,17 +24,18 @@
       "https://www.paulmeyers.ca/wp-includes/wlwmanifest.xml"
     ],
     "category": [
-      "https://www.paulmeyers.ca/category/business-owners/",
       "https://www.paulmeyers.ca/category/crm/",
+      "https://www.paulmeyers.ca/category/business-owners/",
       "https://www.paulmeyers.ca/category/contractor-marketing/",
       "https://www.paulmeyers.ca/category/leads/",
       "https://www.paulmeyers.ca/category/digital-marketing-tips/",
       "https://www.paulmeyers.ca/category/seo/"
     ],
     "tag": [
-      "https://www.paulmeyers.ca/category/business-owners/",
       "https://www.paulmeyers.ca/category/crm/",
       "https://www.paulmeyers.ca/tag/crm/",
+      "https://www.paulmeyers.ca/tag/customer-relationship-management-tool/",
+      "https://www.paulmeyers.ca/category/business-owners/",
       "https://www.paulmeyers.ca/category/contractor-marketing/",
       "https://www.paulmeyers.ca/tag/contractor-websites/",
       "https://www.paulmeyers.ca/category/leads/",
@@ -44,16 +45,15 @@
       "https://www.paulmeyers.ca/category/digital-marketing-tips/",
       "https://www.paulmeyers.ca/tag/google-business-profile/",
       "https://www.paulmeyers.ca/tag/website/",
-      "https://www.paulmeyers.ca/tag/customer-relationship-management-tool/",
       "https://www.paulmeyers.ca/tag/saas/",
       "https://www.paulmeyers.ca/tag/search-engine-optimization/",
       "https://www.paulmeyers.ca/tag/seo/",
       "https://www.paulmeyers.ca/tag/seo-north-bay/",
       "https://www.paulmeyers.ca/category/seo/",
-      "https://www.paulmeyers.ca/tag/business-owners/",
-      "https://www.paulmeyers.ca/tag/contractor-marketing/"
+      "https://www.paulmeyers.ca/tag/business-owners/"
     ],
     "noopener": [
+      "http://clarkleads.ca/",
       "https://paulmeyersconsulting.com/digital-marketing/contact/"
     ]
   },
@@ -118,13 +118,6 @@
       ],
       "type": "application/wlwmanifest+xml"
     },
-    "https://www.paulmeyers.ca/category/business-owners/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "Business Owners"
-    },
     "https://www.paulmeyers.ca/category/crm/": {
       "rels": [
         "category",
@@ -132,11 +125,30 @@
       ],
       "text": "CRM"
     },
+    "http://clarkleads.ca/": {
+      "rels": [
+        "noopener"
+      ],
+      "text": "CLARKLeads"
+    },
     "https://www.paulmeyers.ca/tag/crm/": {
       "rels": [
         "tag"
       ],
       "text": "crm"
+    },
+    "https://www.paulmeyers.ca/tag/customer-relationship-management-tool/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "customer relationship management tool"
+    },
+    "https://www.paulmeyers.ca/category/business-owners/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Business Owners"
     },
     "https://www.paulmeyers.ca/category/contractor-marketing/": {
       "rels": [
@@ -201,12 +213,6 @@
       ],
       "text": "website"
     },
-    "https://www.paulmeyers.ca/tag/customer-relationship-management-tool/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "customer relationship management tool"
-    },
     "https://www.paulmeyers.ca/tag/saas/": {
       "rels": [
         "tag"
@@ -243,12 +249,6 @@
         "tag"
       ],
       "text": "business owners"
-    },
-    "https://www.paulmeyers.ca/tag/contractor-marketing/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Contractor Marketing"
     }
   }
 }

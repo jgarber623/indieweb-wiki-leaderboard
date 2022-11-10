@@ -151,9 +151,6 @@
     "next": [
       "https://piperhaywood.com/page/2/"
     ],
-    "dns-prefetch": [
-      "https://s.w.org/"
-    ],
     "alternate": [
       "https://piperhaywood.com/feed/",
       "https://piperhaywood.com/comments/feed/"
@@ -162,6 +159,7 @@
       "https://piperhaywood.com/wp-includes/css/dist/block-library/style.min.css?ver=0.1.5.1",
       "https://piperhaywood.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=0.1.5.1",
       "https://piperhaywood.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=0.1.5.1",
+      "https://piperhaywood.com/wp-includes/css/classic-themes.min.css?ver=0.1.5.1",
       "https://piperhaywood.com/wp-content/plugins/related-posts-by-taxonomy/includes/assets/css/styles.css?ver=0.1.5.1",
       "https://piperhaywood.com/wp-content/plugins/indieweb/static/css/indieweb-bw.css?ver=0.1.5.1",
       "https://piperhaywood.com/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=0.1.5.1",
@@ -199,11 +197,6 @@
         "next"
       ]
     },
-    "https://s.w.org/": {
-      "rels": [
-        "dns-prefetch"
-      ]
-    },
     "https://piperhaywood.com/feed/": {
       "rels": [
         "alternate"
@@ -233,6 +226,13 @@
       "type": "text/css"
     },
     "https://piperhaywood.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=0.1.5.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://piperhaywood.com/wp-includes/css/classic-themes.min.css?ver=0.1.5.1": {
       "rels": [
         "stylesheet"
       ],
