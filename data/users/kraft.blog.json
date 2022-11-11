@@ -12,6 +12,39 @@
           ],
           "properties": {
             "name": [
+              "ActivityPub"
+            ],
+            "photo": [
+              {
+                "value": "https://secure.gravatar.com/avatar/da003d7fd0071b044093f48ea94dfaf5?s=44&d=retro&r=g",
+                "srcset": {
+                  "1x": "data:image/gif;base64"
+                },
+                "alt": ""
+              },
+              {
+                "value": "https://secure.gravatar.com/avatar/da003d7fd0071b044093f48ea94dfaf5?s=44&d=retro&r=g",
+                "srcset": {
+                  "2x": "https://secure.gravatar.com/avatar/da003d7fd0071b044093f48ea94dfaf5?s=88&d=retro&r=g"
+                },
+                "alt": ""
+              }
+            ],
+            "content": [
+              {
+                "html": "<p>What the hell—added ActivityPub support to the site so you can follow the site via @kraft@kraft.blog via Mastodon or your favorite ActivityPub-powered social site.</p>",
+                "value": "What the hell—added ActivityPub support to the site so you can follow the site via @kraft@kraft.blog via Mastodon or your favorite ActivityPub-powered social site."
+              }
+            ]
+          },
+          "id": "post-63152"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               "Finally Caught It"
             ],
             "photo": [
@@ -170,39 +203,6 @@
             ]
           },
           "id": "post-62966"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "One Year Later"
-            ],
-            "photo": [
-              {
-                "value": "https://secure.gravatar.com/avatar/da003d7fd0071b044093f48ea94dfaf5?s=44&d=retro&r=g",
-                "srcset": {
-                  "1x": "data:image/gif;base64"
-                },
-                "alt": ""
-              },
-              {
-                "value": "https://secure.gravatar.com/avatar/da003d7fd0071b044093f48ea94dfaf5?s=44&d=retro&r=g",
-                "srcset": {
-                  "2x": "https://secure.gravatar.com/avatar/da003d7fd0071b044093f48ea94dfaf5?s=88&d=retro&r=g"
-                },
-                "alt": ""
-              }
-            ],
-            "content": [
-              {
-                "html": "<p>One year ago today, I was watching a livestream of the U.S. Presidential Election Certification while at work. I didn’t pay attention leading up to January 6, 2021 to know about President Trump’s rally that morning and, since I was watching only what was happening in the chamber, I was overall ignorant of what was happening outside the Capitol.</p>\n\n\n\n<p>The livestream I was watching had a comment that maybe they should start watching the other feeds coming from outside because it looked like it was becoming very charged, but I didn’t think much of it until the session was disrupted to allow the Congressmen to evacuate.</p>\n\n\n\n<p>I am sadden that we can’t agree as a country to the events of that day. People intentionally came to the Capitol that day to disrupt the legal and constitutional proceedings to enact the election carried out the previous November. This was not a simple protest. This was not people exercising their rights.</p>\n\n\n\n<p>This was domestic terrorism, insurrection, treason—whatever word you want to use—with the aim of violently promoting the lie that the election was fraudulent. It’s been a year and multiple states have tried to scrape the bottom to find proof of this lie. There is none. Instead, states across the country are trying to make electing our leaders harder in an attempt to not win elections by being the person the most citizens want, but winning through making it harder for people who likely wouldn’t want to vote for you to vote.</p>\n\n\n\n<p>The American experiment is still that, an experiment. We’ve been lucky and blessed that it has been able to withstand what it has, but we’re still at a critical moment.</p>\n\n\n\n<p>I pray that, as a country, we find ways to accept reality together and ensure that our democracy is protected from those within who seek their own gains.</p>",
-                "value": "One year ago today, I was watching a livestream of the U.S. Presidential Election Certification while at work. I didn’t pay attention leading up to January 6, 2021 to know about President Trump’s rally that morning and, since I was watching only what was happening in the chamber, I was overall ignorant of what was happening outside the Capitol.\n\n\n\nThe livestream I was watching had a comment that maybe they should start watching the other feeds coming from outside because it looked like it was becoming very charged, but I didn’t think much of it until the session was disrupted to allow the Congressmen to evacuate.\n\n\n\nI am sadden that we can’t agree as a country to the events of that day. People intentionally came to the Capitol that day to disrupt the legal and constitutional proceedings to enact the election carried out the previous November. This was not a simple protest. This was not people exercising their rights.\n\n\n\nThis was domestic terrorism, insurrection, treason—whatever word you want to use—with the aim of violently promoting the lie that the election was fraudulent. It’s been a year and multiple states have tried to scrape the bottom to find proof of this lie. There is none. Instead, states across the country are trying to make electing our leaders harder in an attempt to not win elections by being the person the most citizens want, but winning through making it harder for people who likely wouldn’t want to vote for you to vote.\n\n\n\nThe American experiment is still that, an experiment. We’ve been lucky and blessed that it has been able to withstand what it has, but we’re still at a critical moment.\n\n\n\nI pray that, as a country, we find ways to accept reality together and ensure that our democracy is protected from those within who seek their own gains."
-              }
-            ]
-          },
-          "id": "post-62928"
         }
       ]
     }
@@ -261,6 +261,7 @@
       "https://kraft.blog/wp-content/plugins/genesis-page-builder/build/frontend.styles.build.css?ver=1623296035",
       "https://kraft.blog/wp-content/plugins/simple-urls/admin/assets/css/lasso-lite.css?ver=1667491149",
       "https://kraft.blog/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
+      "https://kraft.blog/wp-content/plugins/simple-location/css/location.min.css?ver=5.0.1",
       "https://kraft.blog/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3",
       "https://kraft.blog/wp-content/plugins/jetpack-dev/modules/carousel/swiper-bundle.css?ver=11.6-a.4",
       "https://kraft.blog/wp-content/plugins/jetpack-dev/modules/carousel/jetpack-carousel.css?ver=11.6-a.4",
@@ -290,7 +291,8 @@
       "https://twitter.com/kraft",
       "https://facebook.com/brandon.kraft/",
       "https://instagram.com/kraft.im/",
-      "https://instagram.com/kraft.im"
+      "https://instagram.com/kraft.im",
+      "https://mastodon.online/@kraft"
     ],
     "pgpkey": [
       "https://kraft.blog/pgpkey/"
@@ -306,14 +308,17 @@
       "https://kraft.blog/"
     ],
     "bookmark": [
+      "https://kraft.blog/2022/11/activitypub/",
       "https://kraft.blog/2022/09/finally-caught-it/",
       "https://kraft.blog/2022/08/incident-at-the-elementary-school/",
       "https://kraft.blog/2022/05/uvalde/",
       "https://kraft.blog/2022/05/getting-started-with-matrix/",
-      "https://kraft.blog/2022/02/history-repeats/",
-      "https://kraft.blog/2022/01/one-year-later/"
+      "https://kraft.blog/2022/02/history-repeats/"
     ],
     "nofollow": [
+      "https://kraft.blog/2022/11/activitypub/?share=twitter",
+      "https://kraft.blog/2022/11/activitypub/?share=tumblr",
+      "https://kraft.blog/2022/11/activitypub/?share=telegram",
       "https://kraft.blog/2022/09/finally-caught-it/?share=twitter",
       "https://kraft.blog/2022/09/finally-caught-it/?share=tumblr",
       "https://kraft.blog/2022/09/finally-caught-it/?share=telegram",
@@ -329,12 +334,12 @@
       "https://kraft.blog/2022/02/history-repeats/?share=twitter",
       "https://kraft.blog/2022/02/history-repeats/?share=tumblr",
       "https://kraft.blog/2022/02/history-repeats/?share=telegram",
-      "https://kraft.blog/2022/01/one-year-later/?share=twitter",
-      "https://kraft.blog/2022/01/one-year-later/?share=tumblr",
-      "https://kraft.blog/2022/01/one-year-later/?share=telegram",
       "https://atomicblocks.com/"
     ],
     "noopener": [
+      "https://kraft.blog/2022/11/activitypub/?share=twitter",
+      "https://kraft.blog/2022/11/activitypub/?share=tumblr",
+      "https://kraft.blog/2022/11/activitypub/?share=telegram",
       "https://kraft.blog/2022/09/finally-caught-it/?share=twitter",
       "https://kraft.blog/2022/09/finally-caught-it/?share=tumblr",
       "https://kraft.blog/2022/09/finally-caught-it/?share=telegram",
@@ -350,12 +355,12 @@
       "https://kraft.blog/2022/02/history-repeats/?share=twitter",
       "https://kraft.blog/2022/02/history-repeats/?share=tumblr",
       "https://kraft.blog/2022/02/history-repeats/?share=telegram",
-      "https://kraft.blog/2022/01/one-year-later/?share=twitter",
-      "https://kraft.blog/2022/01/one-year-later/?share=tumblr",
-      "https://kraft.blog/2022/01/one-year-later/?share=telegram",
       "https://akismet.com/"
     ],
     "noreferrer": [
+      "https://kraft.blog/2022/11/activitypub/?share=twitter",
+      "https://kraft.blog/2022/11/activitypub/?share=tumblr",
+      "https://kraft.blog/2022/11/activitypub/?share=telegram",
       "https://kraft.blog/2022/09/finally-caught-it/?share=twitter",
       "https://kraft.blog/2022/09/finally-caught-it/?share=tumblr",
       "https://kraft.blog/2022/09/finally-caught-it/?share=telegram",
@@ -370,10 +375,7 @@
       "https://kraft.blog/2022/05/getting-started-with-matrix/?share=telegram",
       "https://kraft.blog/2022/02/history-repeats/?share=twitter",
       "https://kraft.blog/2022/02/history-repeats/?share=tumblr",
-      "https://kraft.blog/2022/02/history-repeats/?share=telegram",
-      "https://kraft.blog/2022/01/one-year-later/?share=twitter",
-      "https://kraft.blog/2022/01/one-year-later/?share=tumblr",
-      "https://kraft.blog/2022/01/one-year-later/?share=telegram"
+      "https://kraft.blog/2022/02/history-repeats/?share=telegram"
     ]
   },
   "rel-urls": {
@@ -600,6 +602,13 @@
       "media": "all",
       "type": "text/css"
     },
+    "https://kraft.blog/wp-content/plugins/simple-location/css/location.min.css?ver=5.0.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
     "https://kraft.blog/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3": {
       "rels": [
         "stylesheet"
@@ -760,6 +769,39 @@
       "rels": [
         "apple-touch-icon"
       ]
+    },
+    "https://kraft.blog/2022/11/activitypub/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "ActivityPub"
+    },
+    "https://kraft.blog/2022/11/activitypub/?share=twitter": {
+      "rels": [
+        "nofollow",
+        "noopener",
+        "noreferrer"
+      ],
+      "title": "Click to share on Twitter",
+      "text": "Twitter"
+    },
+    "https://kraft.blog/2022/11/activitypub/?share=tumblr": {
+      "rels": [
+        "nofollow",
+        "noopener",
+        "noreferrer"
+      ],
+      "title": "Click to share on Tumblr",
+      "text": "Tumblr"
+    },
+    "https://kraft.blog/2022/11/activitypub/?share=telegram": {
+      "rels": [
+        "nofollow",
+        "noopener",
+        "noreferrer"
+      ],
+      "title": "Click to share on Telegram",
+      "text": "Telegram"
     },
     "https://kraft.blog/2022/09/finally-caught-it/": {
       "rels": [
@@ -926,39 +968,6 @@
       "title": "Click to share on Telegram",
       "text": "Telegram"
     },
-    "https://kraft.blog/2022/01/one-year-later/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "One Year Later"
-    },
-    "https://kraft.blog/2022/01/one-year-later/?share=twitter": {
-      "rels": [
-        "nofollow",
-        "noopener",
-        "noreferrer"
-      ],
-      "title": "Click to share on Twitter",
-      "text": "Twitter"
-    },
-    "https://kraft.blog/2022/01/one-year-later/?share=tumblr": {
-      "rels": [
-        "nofollow",
-        "noopener",
-        "noreferrer"
-      ],
-      "title": "Click to share on Tumblr",
-      "text": "Tumblr"
-    },
-    "https://kraft.blog/2022/01/one-year-later/?share=telegram": {
-      "rels": [
-        "nofollow",
-        "noopener",
-        "noreferrer"
-      ],
-      "title": "Click to share on Telegram",
-      "text": "Telegram"
-    },
     "https://atomicblocks.com/": {
       "rels": [
         "nofollow"
@@ -971,11 +980,17 @@
       ],
       "text": "Instagram"
     },
+    "https://mastodon.online/@kraft": {
+      "rels": [
+        "me"
+      ],
+      "text": "Mastodon"
+    },
     "https://akismet.com/": {
       "rels": [
         "noopener"
       ],
-      "text": "\n\t\t\t29,361 spam blocked by Akismet\t\t"
+      "text": "\n\t\t\t29,371 spam blocked by Akismet\t\t"
     }
   }
 }

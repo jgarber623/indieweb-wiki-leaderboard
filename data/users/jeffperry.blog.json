@@ -1,156 +1,41 @@
 {
-  "items": [
-    {
-      "type": [
-        "h-card"
-      ],
-      "properties": {
-        "url": [
-          "https://jeffperry.blog/about/"
-        ],
-        "photo": [
-          "https://micro.blog/jeffperry/avatar.jpg"
-        ],
-        "name": [
-          "Jeff Perry"
-        ],
-        "role": [
-          "Follow @jeffperry on Micro.blog."
-        ]
-      }
-    }
-  ],
+  "items": [],
   "rels": {
-    "stylesheet": [
-      "https://jeffperry.blog/assets/css/style.css?1668018147",
-      "https://jeffperry.blog/assets/css/highlight.css?1668018147",
-      "https://jeffperry.blog/custom.css?1668018147"
+    "alternate": [
+      "https://jeffperry.blog/feed.rss"
     ],
     "icon": [
-      "https://micro.blog/jeffperry/favicon.png"
+      "https://blotcdn.com/blog_65a3e8d5ec0748aead1d9e40dcf18b9d/_avatars/23cc2b90-4879-4ab4-b762-5c35e974f163.png"
     ],
-    "shortcut": [
-      "https://micro.blog/jeffperry/favicon.png"
-    ],
-    "alternate": [
-      "https://jeffperry.blog/feed.xml",
-      "https://jeffperry.blog/podcast.xml",
-      "https://jeffperry.blog/feed.json"
-    ],
-    "EditURI": [
-      "https://jeffperry.blog/rsd.xml"
+    "stylesheet": [
+      "https://jeffperry.blog/style.css?cache=1668129927027&extension=.css"
     ],
     "me": [
-      "https://micro.blog/jeffperry",
-      "https://twitter.com/iamjeffperry"
-    ],
-    "authorization_endpoint": [
-      "https://micro.blog/indieauth/auth"
-    ],
-    "token_endpoint": [
-      "https://micro.blog/indieauth/token"
-    ],
-    "micropub": [
-      "https://micro.blog/micropub"
-    ],
-    "microsub": [
-      "https://micro.blog/microsub"
-    ],
-    "webmention": [
-      "https://micro.blog/webmention"
-    ],
-    "subscribe": [
-      "https://micro.blog/users/follow"
+      "https://social.lol/@jeffperry"
     ]
   },
   "rel-urls": {
-    "https://jeffperry.blog/assets/css/style.css?1668018147": {
+    "https://jeffperry.blog/feed.rss": {
       "rels": [
-        "stylesheet"
-      ]
+        "alternate"
+      ],
+      "title": "Jeff Perry",
+      "type": "application/rss+xml"
     },
-    "https://jeffperry.blog/assets/css/highlight.css?1668018147": {
+    "https://blotcdn.com/blog_65a3e8d5ec0748aead1d9e40dcf18b9d/_avatars/23cc2b90-4879-4ab4-b762-5c35e974f163.png": {
       "rels": [
-        "stylesheet"
-      ]
-    },
-    "https://jeffperry.blog/custom.css?1668018147": {
-      "rels": [
-        "stylesheet"
-      ]
-    },
-    "https://micro.blog/jeffperry/favicon.png": {
-      "rels": [
-        "icon",
-        "shortcut"
+        "icon"
       ],
       "type": "image/x-icon"
     },
-    "https://jeffperry.blog/feed.xml": {
+    "https://jeffperry.blog/style.css?cache=1668129927027&extension=.css": {
       "rels": [
-        "alternate"
-      ],
-      "title": "Jeff Perry",
-      "type": "application/rss+xml"
+        "stylesheet"
+      ]
     },
-    "https://jeffperry.blog/podcast.xml": {
-      "rels": [
-        "alternate"
-      ],
-      "title": "Podcast",
-      "type": "application/rss+xml"
-    },
-    "https://jeffperry.blog/feed.json": {
-      "rels": [
-        "alternate"
-      ],
-      "title": "Jeff Perry",
-      "type": "application/json"
-    },
-    "https://jeffperry.blog/rsd.xml": {
-      "rels": [
-        "EditURI"
-      ],
-      "type": "application/rsd+xml"
-    },
-    "https://micro.blog/jeffperry": {
+    "https://social.lol/@jeffperry": {
       "rels": [
         "me"
-      ]
-    },
-    "https://twitter.com/iamjeffperry": {
-      "rels": [
-        "me"
-      ]
-    },
-    "https://micro.blog/indieauth/auth": {
-      "rels": [
-        "authorization_endpoint"
-      ]
-    },
-    "https://micro.blog/indieauth/token": {
-      "rels": [
-        "token_endpoint"
-      ]
-    },
-    "https://micro.blog/micropub": {
-      "rels": [
-        "micropub"
-      ]
-    },
-    "https://micro.blog/microsub": {
-      "rels": [
-        "microsub"
-      ]
-    },
-    "https://micro.blog/webmention": {
-      "rels": [
-        "webmention"
-      ]
-    },
-    "https://micro.blog/users/follow": {
-      "rels": [
-        "subscribe"
       ]
     }
   }

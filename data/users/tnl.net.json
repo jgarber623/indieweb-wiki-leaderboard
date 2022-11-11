@@ -53,17 +53,16 @@
     "apple-touch-icon": [
       "https://www.tnl.net/wp-content/uploads/2014/01/apple-touch-icon.png"
     ],
+    "me": [
+      "https://mastodon.social/@TNLNYC"
+    ],
     "nofollow": [
-      "https://www.twitter.com/TNLNYC",
       "https://www.linkedin.com/in/tristanlouis",
-      "http://feeds.tnl.net/tnlnet",
-      "https://join.slack.com/t/tnlnet/shared_invite/zt-ed6c6hz5-ikSRN8Kaw92NwBY4HbbDlw"
+      "http://feeds.tnl.net/tnlnet"
     ],
     "noopener": [
-      "https://www.twitter.com/TNLNYC",
       "https://www.linkedin.com/in/tristanlouis",
-      "http://feeds.tnl.net/tnlnet",
-      "https://join.slack.com/t/tnlnet/shared_invite/zt-ed6c6hz5-ikSRN8Kaw92NwBY4HbbDlw"
+      "http://feeds.tnl.net/tnlnet"
     ]
   },
   "rel-urls": {
@@ -199,12 +198,11 @@
         "icon"
       ]
     },
-    "https://www.twitter.com/TNLNYC": {
+    "https://mastodon.social/@TNLNYC": {
       "rels": [
-        "nofollow",
-        "noopener"
+        "me"
       ],
-      "title": "Twitter"
+      "text": "@TNLNYC on Mastodon Social"
     },
     "https://www.linkedin.com/in/tristanlouis": {
       "rels": [
@@ -219,13 +217,6 @@
         "noopener"
       ],
       "title": "RSS"
-    },
-    "https://join.slack.com/t/tnlnet/shared_invite/zt-ed6c6hz5-ikSRN8Kaw92NwBY4HbbDlw": {
-      "rels": [
-        "nofollow",
-        "noopener"
-      ],
-      "title": "Title"
     }
   }
 }

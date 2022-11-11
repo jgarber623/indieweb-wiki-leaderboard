@@ -86,13 +86,21 @@
       "http://gmpg.org/xfn/11"
     ],
     "pingback": [
-      "https://kuemmerle.name/"
+      "https://kuemmerle.name/xmlrpc.php"
     ],
     "canonical": [
       "https://kuemmerle.name/"
     ],
     "dns-prefetch": [
       "https://translate.google.com/"
+    ],
+    "alternate": [
+      "https://kuemmerle.name/feed",
+      "https://kuemmerle.name/comments/feed",
+      "https://kuemmerle.name/willkommen/feed",
+      "https://kuemmerle.name/wp-json/wp/v2/pages/2",
+      "https://kuemmerle.name/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkuemmerle.name%2F",
+      "https://kuemmerle.name/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkuemmerle.name%2F&format=xml"
     ],
     "stylesheet": [
       "https://kuemmerle.name/wp-content/plugins/instagram-feed-pro/css/sbi-styles.min.css?ver=6.1",
@@ -129,12 +137,17 @@
       "https://kuemmerle.name/wp-content/plugins/email-subscribers-premium/pro/assets/css/pro-main.css?ver=5.4.19",
       "https://kuemmerle.name/wp-content/plugins/shariff/css/shariff.min.css?ver=4.6.7"
     ],
+    "https://api.w.org/": [
+      "https://kuemmerle.name/wp-json/"
+    ],
+    "EditURI": [
+      "https://kuemmerle.name/xmlrpc.php?rsd"
+    ],
+    "wlwmanifest": [
+      "https://kuemmerle.name/wp-includes/wlwmanifest.xml"
+    ],
     "shortlink": [
       "https://kuemmerle.name/"
-    ],
-    "alternate": [
-      "https://kuemmerle.name/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkuemmerle.name%2F",
-      "https://kuemmerle.name/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkuemmerle.name%2F&format=xml"
     ],
     "me": [
       "https://twitter.com/301062K51219",
@@ -150,6 +163,12 @@
     ],
     "apple-touch-icon": [
       "https://kuemmerle.name/wp-content/uploads/2021/04/cropped-Icon-180x180.png"
+    ],
+    "webmention": [
+      "https://kuemmerle.name/wp-json/webmention/1.0/endpoint"
+    ],
+    "http://webmention.org/": [
+      "https://kuemmerle.name/wp-json/webmention/1.0/endpoint"
     ],
     "home": [
       "https://kuemmerle.name/"
@@ -192,15 +211,41 @@
         "profile"
       ]
     },
-    "https://kuemmerle.name/": {
+    "https://kuemmerle.name/xmlrpc.php": {
       "rels": [
         "pingback"
+      ]
+    },
+    "https://kuemmerle.name/": {
+      "rels": [
+        "canonical"
       ]
     },
     "https://translate.google.com/": {
       "rels": [
         "dns-prefetch"
       ]
+    },
+    "https://kuemmerle.name/feed": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Kümmerles Weblog » Feed",
+      "type": "application/rss+xml"
+    },
+    "https://kuemmerle.name/comments/feed": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Kümmerles Weblog » Kommentar-Feed",
+      "type": "application/rss+xml"
+    },
+    "https://kuemmerle.name/willkommen/feed": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Kümmerles Weblog » Herzlich willkommen! Kommentar-Feed",
+      "type": "application/rss+xml"
     },
     "https://kuemmerle.name/wp-content/plugins/instagram-feed-pro/css/sbi-styles.min.css?ver=6.1": {
       "rels": [
@@ -424,6 +469,30 @@
       "media": "all",
       "type": "text/css"
     },
+    "https://kuemmerle.name/wp-json/": {
+      "rels": [
+        "https://api.w.org/"
+      ]
+    },
+    "https://kuemmerle.name/wp-json/wp/v2/pages/2": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/json"
+    },
+    "https://kuemmerle.name/xmlrpc.php?rsd": {
+      "rels": [
+        "EditURI"
+      ],
+      "title": "RSD",
+      "type": "application/rsd+xml"
+    },
+    "https://kuemmerle.name/wp-includes/wlwmanifest.xml": {
+      "rels": [
+        "wlwmanifest"
+      ],
+      "type": "application/wlwmanifest+xml"
+    },
     "https://kuemmerle.name/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkuemmerle.name%2F": {
       "rels": [
         "alternate"
@@ -479,6 +548,11 @@
     "https://kuemmerle.name/wp-content/uploads/2021/04/cropped-Icon-180x180.png": {
       "rels": [
         "apple-touch-icon"
+      ]
+    },
+    "https://kuemmerle.name/wp-json/webmention/1.0/endpoint": {
+      "rels": [
+        "webmention"
       ]
     },
     "https://kuemmerle.name/kommentare": {

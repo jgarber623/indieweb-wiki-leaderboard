@@ -6,7 +6,8 @@
     ],
     "stylesheet": [
       "https://sebstein.hpfsc.de/wp-content/themes/html5tutorial/style.css",
-      "https://sebstein.hpfsc.de/wp-includes/css/dist/block-library/style.min.css?ver=6.0.1",
+      "https://sebstein.hpfsc.de/wp-includes/css/dist/block-library/style.min.css?ver=6.1",
+      "https://sebstein.hpfsc.de/wp-includes/css/classic-themes.min.css?ver=1",
       "https://sebstein.hpfsc.de/wp-content/plugins/code-syntax-block/assets/prism-ghcolors.css?ver=1656098618"
     ],
     "pingback": [
@@ -19,8 +20,7 @@
       "https://sebstein.hpfsc.de/page/2/"
     ],
     "dns-prefetch": [
-      "https://www.googletagmanager.com/",
-      "https://s.w.org/"
+      "https://www.googletagmanager.com/"
     ],
     "alternate": [
       "https://sebstein.hpfsc.de/feed/",
@@ -70,15 +70,6 @@
       "https://github.com/postmanlabs/newman",
       "https://kotlinlang.org/",
       "https://spring.io/projects/spring-boot",
-      "https://twitter.com/stein2",
-      "https://allesokjordi.blogspot.com/",
-      "https://www.skulptist.de/",
-      "https://pudelskern.blogspot.com/",
-      "https://lillij.hpfsc.de/",
-      "https://fahrradtour-wandern-reisen.hpfsc.de/content/wanderungen/alpen_sued_tirol/",
-      "https://www.halle-ist-schoen.de/",
-      "https://latex.hpfsc.de/",
-      "https://www.progressit.services/",
       "https://github.com/steinsag",
       "https://edu.kde.org/kbruch/",
       "https://stackoverflow.com/users/324531/sebi",
@@ -92,15 +83,6 @@
       "https://github.com/postmanlabs/newman",
       "https://kotlinlang.org/",
       "https://spring.io/projects/spring-boot",
-      "https://twitter.com/stein2",
-      "https://allesokjordi.blogspot.com/",
-      "https://www.skulptist.de/",
-      "https://pudelskern.blogspot.com/",
-      "https://lillij.hpfsc.de/",
-      "https://fahrradtour-wandern-reisen.hpfsc.de/content/wanderungen/alpen_sued_tirol/",
-      "https://www.halle-ist-schoen.de/",
-      "https://latex.hpfsc.de/",
-      "https://www.progressit.services/",
       "https://github.com/steinsag",
       "https://edu.kde.org/kbruch/",
       "https://stackoverflow.com/users/324531/sebi",
@@ -112,6 +94,13 @@
       "https://github.com/postmanlabs/newman",
       "https://kotlinlang.org/",
       "https://spring.io/projects/spring-boot"
+    ],
+    "me": [
+      "https://det.social/@steinchen",
+      "https://twitter.com/stein2",
+      "https://www.progressit.services/",
+      "https://github.com/steinsag",
+      "https://stackoverflow.com/users/324531/sebi"
     ]
   },
   "rel-urls": {
@@ -146,11 +135,6 @@
         "dns-prefetch"
       ]
     },
-    "https://s.w.org/": {
-      "rels": [
-        "dns-prefetch"
-      ]
-    },
     "https://sebstein.hpfsc.de/feed/": {
       "rels": [
         "alternate"
@@ -165,7 +149,14 @@
       "title": "Sent from Hauptstadt! » Kommentar-Feed",
       "type": "application/rss+xml"
     },
-    "https://sebstein.hpfsc.de/wp-includes/css/dist/block-library/style.min.css?ver=6.0.1": {
+    "https://sebstein.hpfsc.de/wp-includes/css/dist/block-library/style.min.css?ver=6.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://sebstein.hpfsc.de/wp-includes/css/classic-themes.min.css?ver=1": {
       "rels": [
         "stylesheet"
       ],
@@ -387,71 +378,27 @@
       ],
       "text": "Spring Boot Framework"
     },
+    "https://det.social/@steinchen": {
+      "rels": [
+        "me"
+      ],
+      "text": "Mastodon"
+    },
     "https://twitter.com/stein2": {
       "rels": [
-        "noopener",
-        "noreferrer"
+        "me"
       ],
       "text": "Twitter"
     },
-    "https://allesokjordi.blogspot.com/": {
-      "rels": [
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "Alles O.K. Jordi"
-    },
-    "https://www.skulptist.de/": {
-      "rels": [
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "Der Skulptist"
-    },
-    "https://pudelskern.blogspot.com/": {
-      "rels": [
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "Des Pudels Kern"
-    },
-    "https://lillij.hpfsc.de/": {
-      "rels": [
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "Lilli J."
-    },
-    "https://fahrradtour-wandern-reisen.hpfsc.de/content/wanderungen/alpen_sued_tirol/": {
-      "rels": [
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "Alpenwanderung"
-    },
-    "https://www.halle-ist-schoen.de/": {
-      "rels": [
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "Halle ist schön"
-    },
-    "https://latex.hpfsc.de/": {
-      "rels": [
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "LaTeX Tutorial"
-    },
     "https://www.progressit.services/": {
       "rels": [
-        "noopener",
-        "noreferrer"
+        "me"
       ],
       "text": "progressIT"
     },
     "https://github.com/steinsag": {
       "rels": [
+        "me",
         "noopener",
         "noreferrer"
       ],
@@ -466,6 +413,7 @@
     },
     "https://stackoverflow.com/users/324531/sebi": {
       "rels": [
+        "me",
         "noopener",
         "noreferrer"
       ],

@@ -29,6 +29,104 @@
       "properties": {
         "content": [
           {
+            "html": "<p>Today I learned there is an <a href=\"https://github.com/code-lts/doctum/issues/13\">issue regarding inline documentation for shaped arrays in PHP</a>. The Doctum maintainers want to move forward but there is no conformal description that satisfies both the static analysis and inline documentation use-cases. Asked to collaborate towards conformance the author of phpstan, <a href=\"https://ondrej.mirtes.cz/\">Ondřej Mirtes</a>, suggests that with such close scrutiny an <code>object</code> should be used instead.</p>\n<p>I had written the following <ins>PHP</ins> code, or similar:</p>\n<pre><code class=\"language-php line-numbers\">/**\n * A summary.\n *\n * A few paragraphs of description.\n *\n * @var array&lt;string, array{\n *          count: int,\n *          messages: array&lt;string, list&lt;string&gt;&gt;,\n *      }&gt;\n */\npublic array $shapedArray = [];\n</code></pre>\n<p>I find it self-evident that the few paragraphs of description are absolutely necessary to grok wtf is happening in that array we're supposed to use now, but also self-evident is the shape of the array in complete detail without any further documentation on the <code>@var</code>. I agree w/ Ondřej that were I to consume that <code>$shapedArray</code> from outside this class, as appears to be the intention given its <code>public</code> visibility, it would be better to work with an <code>object</code> and document the interface there.</p>\n<p>Now for the truly twisted part of my post. This shaped array is part of a service which carries out a localized, one-way encoding. The data is elsewhere decoded by software operating in a different runtime, and written in a different language. The multilingual programmer needn't look elsewhere than the inline documentation on the PHP to understand this data structure regardless of the implementation details. Why shouldn't there be an inline documentation directly on the shaped array to aid in recall after having read the verbose notes to the shaped array's purpose? It's an interesting opportunity to flatten a class hierarchy, avoid complexity, and convey the relevant details concisely.</p>\n<p>This code originated from a recent series of development days in which I did not apply test driven development. It was suggested I try out an alternative for a little bit, the tl;dm approach, and see how it works for me. At the time I came to writing tests this shape was arrayed with private visibility. It became public as I wrote the tests. Yuck. Had I written tests to consume the class API and drive fluency in each touch <ins>from</ins> <del>at</del> the outset, I might have an object there now.</p>",
+            "value": "Today I learned there is an issue regarding inline documentation for shaped arrays in PHP. The Doctum maintainers want to move forward but there is no conformal description that satisfies both the static analysis and inline documentation use-cases. Asked to collaborate towards conformance the author of phpstan, Ondřej Mirtes, suggests that with such close scrutiny an object should be used instead.\nI had written the following PHP code, or similar:\n/**\n * A summary.\n *\n * A few paragraphs of description.\n *\n * @var array<string, array{\n *          count: int,\n *          messages: array<string, list<string>>,\n *      }>\n */\npublic array $shapedArray = [];\n\nI find it self-evident that the few paragraphs of description are absolutely necessary to grok wtf is happening in that array we're supposed to use now, but also self-evident is the shape of the array in complete detail without any further documentation on the @var. I agree w/ Ondřej that were I to consume that $shapedArray from outside this class, as appears to be the intention given its public visibility, it would be better to work with an object and document the interface there.\nNow for the truly twisted part of my post. This shaped array is part of a service which carries out a localized, one-way encoding. The data is elsewhere decoded by software operating in a different runtime, and written in a different language. The multilingual programmer needn't look elsewhere than the inline documentation on the PHP to understand this data structure regardless of the implementation details. Why shouldn't there be an inline documentation directly on the shaped array to aid in recall after having read the verbose notes to the shaped array's purpose? It's an interesting opportunity to flatten a class hierarchy, avoid complexity, and convey the relevant details concisely.\nThis code originated from a recent series of development days in which I did not apply test driven development. It was suggested I try out an alternative for a little bit, the tl;dm approach, and see how it works for me. At the time I came to writing tests this shape was arrayed with private visibility. It became public as I wrote the tests. Yuck. Had I written tests to consume the class API and drive fluency in each touch from at the outset, I might have an object there now."
+          }
+        ],
+        "author": [
+          "https://cj.w6k.ca/"
+        ],
+        "category": [
+          "TIL",
+          "php",
+          "tdd",
+          "tl;dm"
+        ],
+        "uid": [
+          "https://cj.w6k.ca/2022/11/08/3/"
+        ],
+        "url": [
+          "https://cj.w6k.ca/2022/11/08/3/"
+        ],
+        "published": [
+          "2022-11-08T21:25:08-04:00"
+        ],
+        "updated": [
+          "2022-11-08T21:49:36-04:00"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "<p>I worked for <ins>507</ins> <del>532</del> minutes today. I streamed Tom Petty &amp; the Heartbreakers playing \"Wildflowers\" <ins>157</ins> <del>165</del> times in a row!</p>",
+            "value": "I worked for 507 532 minutes today. I streamed Tom Petty & the Heartbreakers playing \"Wildflowers\" 157 165 times in a row!"
+          }
+        ],
+        "author": [
+          "https://cj.w6k.ca/"
+        ],
+        "category": [
+          "journal"
+        ],
+        "uid": [
+          "https://cj.w6k.ca/2022/11/08/1/"
+        ],
+        "url": [
+          "https://cj.w6k.ca/2022/11/08/1/"
+        ],
+        "published": [
+          "2022-11-08T19:07:40-04:00"
+        ],
+        "updated": [
+          "2022-11-08T19:14:02-04:00"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "<aside>\n<p>Aside: This is the first in what I hope will be a series of <b>Today I Learned</b> posts, following the suggestion of <a href=\"https://fedi.simonwillison.net/@simon\">Simon Willison</a>. In his recent article, \"<a href=\"https://simonwillison.net/2022/Nov/6/what-to-blog-about/\">What to blog about</a>,\" Simon writes: <q>A TIL—Today I Learned—is the most liberating form of content I know of.</q> I'm tagging each post with <a href=\"https://cj.w6k.ca/category/TIL/\">TIL</a>.</p>\n</aside>\n<p>Today I learned to play \"Wildflowers\", by Tom Petty, on my acoustic guitar. I <a href=\"https://cj.w6k.ca/2022/11/07/1/\">bookmarked some tablature</a> earlier. The linked tab, version 4, has a 5-star rating with 311 reviews. I noticed with some dismay after making the post that version 3 has a 5-star rating with 1656 reviews. I checked out v3 and noted it calls for a capo on the third fret. It's arguably easier to play but it doesn't sound quite right. With v4 the capo is on the 5th fret.</p>\n<p>I searched up 'tom petty wildflowers live youtube' and found <a href=\"https://cj.w6k.ca/2022/11/07/2/\">the man himself playing it on</a>. He's got a capo on the fifth, that's v4.</p>\n<p>My original tab search was at <a href=\"https://duckduckgo.com/\">ddg</a>. I <kbd>ctrl</kbd>-clicked the second link, the fifth and sixth (or similar) -opening new browser tabs- then clicked the top link in the search results. I had four pages open showing different versions of tablature for the song, spanning multiple sources. I include both the <b>chord</b> and <b>tab</b> options in the results I review. Usually the chords are the rhythm part, while the tab is the lead part. It helps to flip back and forth in selection and later on in study.</p>\n<p>I had both v3 and v4 open and reviewed all four while searching, evaluating the options quickly. While v3 had the more 5-star ratings, some knowing person had v3 and felt obliged to share alike, going some way further in authoring v4. Interesting!</p>\n<p>I turn the volume up quite loud to play along. I toil in taming the howl. I haven't played at all in years. My fingertips soon hurt, a lot, but not so much after a break to trim the scratchers a mite. I play along during the better part of an hour, streaming the 17th track of \"The Live Anthology\" album. I rewind and replay the opening bars and first verse a half-dozen times. The half before the bridge a dozen times. The entirety up to the outro, many more.</p>\n<p>Coming on closing time I've got all but the bridge fit into my rendition. A bit more study and much more practice ahead.</p>\n<p>While programming, I'll sometimes listen to one song on repeat for a few hours. Yes, one! Yes, hours! I'll take this song to work tomorrow.</p>",
+            "value": "Aside: This is the first in what I hope will be a series of Today I Learned posts, following the suggestion of Simon Willison. In his recent article, \"What to blog about,\" Simon writes: A TIL—Today I Learned—is the most liberating form of content I know of. I'm tagging each post with TIL.\n\nToday I learned to play \"Wildflowers\", by Tom Petty, on my acoustic guitar. I bookmarked some tablature earlier. The linked tab, version 4, has a 5-star rating with 311 reviews. I noticed with some dismay after making the post that version 3 has a 5-star rating with 1656 reviews. I checked out v3 and noted it calls for a capo on the third fret. It's arguably easier to play but it doesn't sound quite right. With v4 the capo is on the 5th fret.\nI searched up 'tom petty wildflowers live youtube' and found the man himself playing it on. He's got a capo on the fifth, that's v4.\nMy original tab search was at ddg. I ctrl-clicked the second link, the fifth and sixth (or similar) -opening new browser tabs- then clicked the top link in the search results. I had four pages open showing different versions of tablature for the song, spanning multiple sources. I include both the chord and tab options in the results I review. Usually the chords are the rhythm part, while the tab is the lead part. It helps to flip back and forth in selection and later on in study.\nI had both v3 and v4 open and reviewed all four while searching, evaluating the options quickly. While v3 had the more 5-star ratings, some knowing person had v3 and felt obliged to share alike, going some way further in authoring v4. Interesting!\nI turn the volume up quite loud to play along. I toil in taming the howl. I haven't played at all in years. My fingertips soon hurt, a lot, but not so much after a break to trim the scratchers a mite. I play along during the better part of an hour, streaming the 17th track of \"The Live Anthology\" album. I rewind and replay the opening bars and first verse a half-dozen times. The half before the bridge a dozen times. The entirety up to the outro, many more.\nComing on closing time I've got all but the bridge fit into my rendition. A bit more study and much more practice ahead.\nWhile programming, I'll sometimes listen to one song on repeat for a few hours. Yes, one! Yes, hours! I'll take this song to work tomorrow."
+          }
+        ],
+        "author": [
+          "https://cj.w6k.ca/"
+        ],
+        "category": [
+          "TIL",
+          "guitar",
+          "Tom Petty"
+        ],
+        "uid": [
+          "https://cj.w6k.ca/2022/11/07/3/"
+        ],
+        "url": [
+          "https://cj.w6k.ca/2022/11/07/3/"
+        ],
+        "published": [
+          "2022-11-07T21:45:35-04:00"
+        ],
+        "updated": [
+          "2022-11-07T22:00:59-04:00"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
             "html": "<p>I have been giving Twitter a bit of my time in the last few months. It reminds me, in parts, of the buzzing crowd in Neal Stephenson's book, \"Fall; or, Dodge in Hell.\" I didn't get it when I read the book. I get it now.</p>\n<p>Saw an H. Clinton tweet (paraphrasing): the group of people whom normalize extreme conspiratorial positions as rational rhetoric suitable for the public forum bear some responsibility for the actions of extremist individuals that hold the conspiratorial positions as truths rather than knowing the nature of such statements as devices in service of the democratic process. They, the former, must bear some responsibility for others whom take immoral actions such as have recently been enacted at the Pelosi's San Francisco residence. </p>\n<p>The toxic response to this statement is the worst part of humanity, only available on Twitter in my day-to-day participation with 'social'-media. Dozens parading extreme vitriol against the tweet-maker, buoyed by affirmations from like-minded sensationalists, catching a buzz from the clamour and feedback arising from the zeitgeist within the onslaught, the mentality of the mob physically dispersed though together online. Of all responses I reviewed, there was not one on the same topic as that in the original statement. Supporters of the statement, or the statement-maker, showed agreement with a 'like.' Some others immediately complimented the author with supportive statements on her character and personal worth, for sharing an opinion, but this is quickly lost among the rain of shit that follows. Is it really appropriate that there is this unbordered positive reinforcement loop in the immediate screenspace immediately following the original statement, completely derailing the author's intent? Is that where you need to be, politics person, to reach the voters? How sad. That's Twitter?</p>\n<p>People that think some combination of facebook and twitter make up the whole of the disussion, of the internet, its so so sad. That's not the internet, that can't be the internet. What happened here?</p>\n<p>Human soup, whipped into a zealous fervour, all abuzz at election time. Rationality devalued, antagonism of the other side held up as duty. No civil limit to the extent of each textual and verbal attack, launched on individuals that would share an opinion of ANY subject. Grand poohbah close at hand to share in the mass attack. Not for the accuracy, precision or rationale behind the statement or embodied by it, but for the author's character, their integrity. This each and every time they tweet, or share sentiment with their retweets and similar.</p>\n<p>This pile-on is somehow a reasonable thing to do in the society of the purveyors for the obvious reason that the statement-maker is known for having chosen a different political affiliation than that which they prefer. There in San Francisco, one alone holding the same positions and further taking action based on the literal messages, acting out the very sentiments found therein has sharply broken with reason. Blind to the power of high office, the actual true purpose of the rhetoric, seeing only the mad desolation of the world as if all of that drivel were real, one feeble mind snaps and takes extreme, illegal action. This is the least surprising thing in my own reckoning of the sorry state of affairs.</p>\n<p>How I long for discussion based on the merits. That is the capacity we have in 2022 with our social media machines. Instead, it is as though each person, each tweet, takes place beyond the reach of any decency, any notion of etiquette, any sense of grace or constructivist intention. A terror of a place, to be sure. Consider the newly arrived Chief Twit, who responds to Clinton, not on the topic raised and merits of the statement, but instead calls into question the character of the victim; details of the relationship between attacker and victim. Of course, nuance, but so disheartening that the real topic is sidelined for more small-mind puppetshow. But of course, it's a dangerous thing if one doesn't buzz along. The shock-value exceeds the humanity. This is not my internet. It is a distraction serving no purpose outside the machinations of a democracy burdened with beastmasters and their beasts.</p>\n<p>I am ultra-modern. There are any number of twisted behaviours that may have been underway which do not force me into a position that I will judge either person concerned. Whatever abnormality or lasciviousness is turned up. Does this change the fact that a man was savagely beaten with a hammer? One chance -was it self-defence- after which it is without question that the guilty party is known to be the one wielding the hammer in aggression. It's so sad when we hear that a person has snapped, diverged from civility. In this case, what was the day-to-day social fabric of the assailant? What were his norms? That's what we have an opportunity to examine, in the context of the political discourse, its recent departure, a few elections, on a tangent from its former composure, a few millenia. I see that Twitter will never be the venue where that discussion takes place, other than as it sways the mass of the whole-of-smalls from one frightful too-atrocious-to-be-real trepidation-with-a-laugh-we-don't-see, to the next.</p>\n<p>After the recent hurricane, there are many solo hornets buzzing about with nothing to work on. They have lost their purpose. So many trees came down in the wind, that hives were destroyed in great numbers. A local news article described this as the cause of the over-abundance of aimless creatures. Sucks to be in a hive mind.</p>\n<p>I still go to my backyard and hornets are just hornets. As I go to Twitter I can feel it buzzing. But I do not buzz along.</p>",
             "value": "I have been giving Twitter a bit of my time in the last few months. It reminds me, in parts, of the buzzing crowd in Neal Stephenson's book, \"Fall; or, Dodge in Hell.\" I didn't get it when I read the book. I get it now.Saw an H. Clinton tweet (paraphrasing): the group of people whom normalize extreme conspiratorial positions as rational rhetoric suitable for the public forum bear some responsibility for the actions of extremist individuals that hold the conspiratorial positions as truths rather than knowing the nature of such statements as devices in service of the democratic process. They, the former, must bear some responsibility for others whom take immoral actions such as have recently been enacted at the Pelosi's San Francisco residence. The toxic response to this statement is the worst part of humanity, only available on Twitter in my day-to-day participation with 'social'-media. Dozens parading extreme vitriol against the tweet-maker, buoyed by affirmations from like-minded sensationalists, catching a buzz from the clamour and feedback arising from the zeitgeist within the onslaught, the mentality of the mob physically dispersed though together online. Of all responses I reviewed, there was not one on the same topic as that in the original statement. Supporters of the statement, or the statement-maker, showed agreement with a 'like.' Some others immediately complimented the author with supportive statements on her character and personal worth, for sharing an opinion, but this is quickly lost among the rain of shit that follows. Is it really appropriate that there is this unbordered positive reinforcement loop in the immediate screenspace immediately following the original statement, completely derailing the author's intent? Is that where you need to be, politics person, to reach the voters? How sad. That's Twitter?People that think some combination of facebook and twitter make up the whole of the disussion, of the internet, its so so sad. That's not the internet, that can't be the internet. What happened here?Human soup, whipped into a zealous fervour, all abuzz at election time. Rationality devalued, antagonism of the other side held up as duty. No civil limit to the extent of each textual and verbal attack, launched on individuals that would share an opinion of ANY subject. Grand poohbah close at hand to share in the mass attack. Not for the accuracy, precision or rationale behind the statement or embodied by it, but for the author's character, their integrity. This each and every time they tweet, or share sentiment with their retweets and similar.This pile-on is somehow a reasonable thing to do in the society of the purveyors for the obvious reason that the statement-maker is known for having chosen a different political affiliation than that which they prefer. There in San Francisco, one alone holding the same positions and further taking action based on the literal messages, acting out the very sentiments found therein has sharply broken with reason. Blind to the power of high office, the actual true purpose of the rhetoric, seeing only the mad desolation of the world as if all of that drivel were real, one feeble mind snaps and takes extreme, illegal action. This is the least surprising thing in my own reckoning of the sorry state of affairs.How I long for discussion based on the merits. That is the capacity we have in 2022 with our social media machines. Instead, it is as though each person, each tweet, takes place beyond the reach of any decency, any notion of etiquette, any sense of grace or constructivist intention. A terror of a place, to be sure. Consider the newly arrived Chief Twit, who responds to Clinton, not on the topic raised and merits of the statement, but instead calls into question the character of the victim; details of the relationship between attacker and victim. Of course, nuance, but so disheartening that the real topic is sidelined for more small-mind puppetshow. But of course, it's a dangerous thing if one doesn't buzz along. The shock-value exceeds the humanity. This is not my internet. It is a distraction serving no purpose outside the machinations of a democracy burdened with beastmasters and their beasts.I am ultra-modern. There are any number of twisted behaviours that may have been underway which do not force me into a position that I will judge either person concerned. Whatever abnormality or lasciviousness is turned up. Does this change the fact that a man was savagely beaten with a hammer? One chance -was it self-defence- after which it is without question that the guilty party is known to be the one wielding the hammer in aggression. It's so sad when we hear that a person has snapped, diverged from civility. In this case, what was the day-to-day social fabric of the assailant? What were his norms? That's what we have an opportunity to examine, in the context of the political discourse, its recent departure, a few elections, on a tangent from its former composure, a few millenia. I see that Twitter will never be the venue where that discussion takes place, other than as it sways the mass of the whole-of-smalls from one frightful too-atrocious-to-be-real trepidation-with-a-laugh-we-don't-see, to the next.After the recent hurricane, there are many solo hornets buzzing about with nothing to work on. They have lost their purpose. So many trees came down in the wind, that hives were destroyed in great numbers. A local news article described this as the cause of the over-abundance of aimless creatures. Sucks to be in a hive mind.I still go to my backyard and hornets are just hornets. As I go to Twitter I can feel it buzzing. But I do not buzz along."
           }
@@ -80,96 +178,6 @@
         ],
         "updated": [
           "2022-10-23T19:35:35-04:00"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "content": [
-          {
-            "html": "<p>Shaq pantomimed the zoo gorilla, wolrdwide average, reaction to meeting Shaq.</p>\n<p>Surreal moment.</p>\n<p>OG: rapt. <del>inattention, diminutive.</del></p>\n<p>Shaq: rapt.</p>",
-            "value": "Shaq pantomimed the zoo gorilla, wolrdwide average, reaction to meeting Shaq.Surreal moment.OG: rapt. inattention, diminutive.Shaq: rapt."
-          }
-        ],
-        "author": [
-          "https://cj.w6k.ca/"
-        ],
-        "category": [
-          "journal"
-        ],
-        "uid": [
-          "https://cj.w6k.ca/2022/10/22/2/"
-        ],
-        "url": [
-          "https://cj.w6k.ca/2022/10/22/2/"
-        ],
-        "published": [
-          "2022-10-22T15:59:34-03:00"
-        ],
-        "updated": [
-          "2022-10-22T15:30:37-04:00"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "content": [
-          {
-            "html": "<p>A friend of mine said to me this evening, \"When I'm out in public I still need to be careful.\" Consummate businessman.</p>\n<p>\"I know, right?\" I said. \"I live only a couple doors down from you but I am living a completely different experience.\"</p>\n<p>He nodded.</p>\n<p>\"The way I see it, there are two paths. Play it safe, or conquer the village.\"</p>",
-            "value": "A friend of mine said to me this evening, \"When I'm out in public I still need to be careful.\" Consummate businessman.\"I know, right?\" I said. \"I live only a couple doors down from you but I am living a completely different experience.\"He nodded.\"The way I see it, there are two paths. Play it safe, or conquer the village.\""
-          }
-        ],
-        "author": [
-          "https://cj.w6k.ca/"
-        ],
-        "category": [
-          "journal"
-        ],
-        "uid": [
-          "https://cj.w6k.ca/2022/10/14/4/"
-        ],
-        "url": [
-          "https://cj.w6k.ca/2022/10/14/4/"
-        ],
-        "published": [
-          "2022-10-14T02:25:05-03:00"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "content": [
-          {
-            "html": "<p>I played pool today. Just forget that happened.</p>\n<p>Interrupted a cursing jay walker (it was later and indoors) to state that he was rude! He grumbled about bums, cursedly calling 'asshole' while not looking at me directly but rather at the person situated behind the bar. Talking to me, oh yes, he spake bullshit once. He was, in fact, being rude to myself and my associate only for being in sight when he was originally interrupted. By me.</p>\n<p>\"You are a very rude person,\" I said loudly, while looking directly at him.</p>\n<p>His associates at the bar immediately began apologizing to me.</p>\n<p>Such is life, and his drunken game.</p>\n<p>I implied that I along with many others present were all assholes and listening. Couple of laughs around. He less-frowned. I described the modern contrivance, the automated and lit cross-walk. </p>\n<p>He was speechless. His friend got it and asked if I was in that car earlier.</p>\n<p>\"Yes,\" says I. </p>\n<p>\"Don't mind him\", says he.</p>\n<p>Met people. Bought beer for two strangers (coors light; <ins>other side of the bar</ins>). Drank with an entire bar full of people for eight (8) minutes before the bar closed at 11pm. Good times.</p>",
-            "value": "I played pool today. Just forget that happened.Interrupted a cursing jay walker (it was later and indoors) to state that he was rude! He grumbled about bums, cursedly calling 'asshole' while not looking at me directly but rather at the person situated behind the bar. Talking to me, oh yes, he spake bullshit once. He was, in fact, being rude to myself and my associate only for being in sight when he was originally interrupted. By me.\"You are a very rude person,\" I said loudly, while looking directly at him.His associates at the bar immediately began apologizing to me.Such is life, and his drunken game.I implied that I along with many others present were all assholes and listening. Couple of laughs around. He less-frowned. I described the modern contrivance, the automated and lit cross-walk. He was speechless. His friend got it and asked if I was in that car earlier.\"Yes,\" says I. \"Don't mind him\", says he.Met people. Bought beer for two strangers (coors light; other side of the bar). Drank with an entire bar full of people for eight (8) minutes before the bar closed at 11pm. Good times."
-          }
-        ],
-        "author": [
-          "https://cj.w6k.ca/"
-        ],
-        "category": [
-          "journal"
-        ],
-        "uid": [
-          "https://cj.w6k.ca/2022/10/14/3/"
-        ],
-        "url": [
-          "https://cj.w6k.ca/2022/10/14/3/"
-        ],
-        "published": [
-          "2022-10-14T02:04:53-03:00"
-        ],
-        "updated": [
-          "2022-10-14T01:32:12-04:00"
         ]
       }
     },

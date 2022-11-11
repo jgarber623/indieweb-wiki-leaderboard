@@ -20,10 +20,7 @@
     ],
     "alternate": [
       "https://ze.fontainhas.com/feed/",
-      "https://ze.fontainhas.com/comments/feed/",
-      "https://ze.fontainhas.com/static/feed/",
-      "https://ze.fontainhas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fze.fontainhas.com%2F",
-      "https://ze.fontainhas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fze.fontainhas.com%2F&format=xml"
+      "https://ze.fontainhas.com/comments/feed/"
     ],
     "https://api.w.org/": [
       "https://ze.fontainhas.com/wp-json/"
@@ -34,12 +31,6 @@
     "wlwmanifest": [
       "https://ze.fontainhas.com/wp-includes/wlwmanifest.xml"
     ],
-    "canonical": [
-      "https://ze.fontainhas.com/"
-    ],
-    "shortlink": [
-      "https://ze.fontainhas.com/"
-    ],
     "icon": [
       "https://ze.fontainhas.com/wp-content/uploads/2015/04/Z-blavatar-554270e4v1_site_icon-150x150.png",
       "https://ze.fontainhas.com/wp-content/uploads/2015/04/Z-blavatar-554270e4v1_site_icon.png"
@@ -49,6 +40,14 @@
     ],
     "me": [
       "https://mastodon.social/@zedejose"
+    ],
+    "noopener": [
+      "https://mastodon.social/@zedejose"
+    ],
+    "bookmark": [
+      "https://ze.fontainhas.com/esta-tudo-bem/",
+      "https://ze.fontainhas.com/no-worries/",
+      "https://ze.fontainhas.com/almost/"
     ]
   },
   "rel-urls": {
@@ -102,13 +101,6 @@
       "title": "Zé » Comments Feed",
       "type": "application/rss+xml"
     },
-    "https://ze.fontainhas.com/static/feed/": {
-      "rels": [
-        "alternate"
-      ],
-      "title": "Zé » Zé Comments Feed",
-      "type": "application/rss+xml"
-    },
     "https://ze.fontainhas.com/wp-json/": {
       "rels": [
         "https://api.w.org/"
@@ -127,23 +119,6 @@
       ],
       "type": "application/wlwmanifest+xml"
     },
-    "https://ze.fontainhas.com/": {
-      "rels": [
-        "canonical"
-      ]
-    },
-    "https://ze.fontainhas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fze.fontainhas.com%2F": {
-      "rels": [
-        "alternate"
-      ],
-      "type": "application/json+oembed"
-    },
-    "https://ze.fontainhas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fze.fontainhas.com%2F&format=xml": {
-      "rels": [
-        "alternate"
-      ],
-      "type": "text/xml+oembed"
-    },
     "https://ze.fontainhas.com/wp-content/uploads/2015/04/Z-blavatar-554270e4v1_site_icon-150x150.png": {
       "rels": [
         "icon"
@@ -156,8 +131,28 @@
     },
     "https://mastodon.social/@zedejose": {
       "rels": [
-        "me"
-      ]
+        "me",
+        "noopener"
+      ],
+      "text": "@zedejose@mastodon.social"
+    },
+    "https://ze.fontainhas.com/esta-tudo-bem/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "Está Tudo Bem"
+    },
+    "https://ze.fontainhas.com/no-worries/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "No Worries"
+    },
+    "https://ze.fontainhas.com/almost/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "Almost"
     }
   }
 }
