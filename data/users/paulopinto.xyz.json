@@ -16,9 +16,9 @@
             "properties": {
               "url": [
                 "https://paulopinto.xyz/",
-                "https://twitter.com/w3bk3rn3l",
+                "https://twitter.com/ct1ete",
                 "https://fosstodon.org/@paulopinto",
-                "https://indieweb.org/User:Paulopinto.page"
+                "https://indieweb.org/User:Paulopinto.xyz"
               ],
               "uid": [
                 "https://paulopinto.xyz/"
@@ -56,6 +56,54 @@
         ]
       },
       "children": [
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "test",
+                "value": "test"
+              }
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "photo": [
+                    {
+                      "value": "https://secure.gravatar.com/avatar/91c65dfecd16e399ba7e7cb7386919bc?s=49&d=mm&r=g",
+                      "srcset": {
+                        "2x": "https://secure.gravatar.com/avatar/91c65dfecd16e399ba7e7cb7386919bc?s=98&d=mm&r=g"
+                      },
+                      "alt": ""
+                    }
+                  ],
+                  "url": [
+                    "https://paulopinto.xyz/author/admin/"
+                  ],
+                  "name": [
+                    "Paulo Pinto"
+                  ]
+                },
+                "value": "Paulo Pinto"
+              }
+            ],
+            "url": [
+              "https://paulopinto.xyz/2022/11/3130/"
+            ],
+            "published": [
+              "2022-11-11T15:00:46+00:00"
+            ],
+            "syndication": [
+              "https://brid.gy/publish/twitter"
+            ]
+          },
+          "id": "post-3130"
+        },
         {
           "type": [
             "h-entry"
@@ -534,61 +582,6 @@
             ]
           },
           "id": "post-2824"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "content": [
-              {
-                "html": "<h1 class=\"title style-scope ytd-video-primary-info-renderer\">Why the world does not exist | Markus Gabriel | TEDxMünchen</h1>",
-                "value": "Why the world does not exist | Markus Gabriel | TEDxMünchen"
-              }
-            ],
-            "summary": [
-              {
-                "html": "<div class=\"kind-embed\">\n<iframe loading=\"lazy\" title=\"Why the world does not exist | Markus Gabriel | TEDxMünchen\" width=\"840\" height=\"473\" src=\"https://www.youtube.com/embed/hzvesGB_TI0?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe><a class=\"u-url\" href=\"https://www.youtube.com/watch?v=hzvesGB_TI0\"></a>\n</div>",
-                "value": ""
-              }
-            ],
-            "url": [
-              "https://www.youtube.com/watch?v=hzvesGB_TI0",
-              "https://paulopinto.xyz/2021/05/2813/"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "photo": [
-                    {
-                      "value": "https://secure.gravatar.com/avatar/91c65dfecd16e399ba7e7cb7386919bc?s=49&d=mm&r=g",
-                      "srcset": {
-                        "2x": "https://secure.gravatar.com/avatar/91c65dfecd16e399ba7e7cb7386919bc?s=98&d=mm&r=g"
-                      },
-                      "alt": ""
-                    }
-                  ],
-                  "url": [
-                    "https://paulopinto.xyz/author/admin/"
-                  ],
-                  "name": [
-                    "Paulo Pinto"
-                  ]
-                },
-                "value": "Paulo Pinto"
-              }
-            ],
-            "published": [
-              "2021-05-05T16:10:59+01:00"
-            ],
-            "syndication": [
-              "https://twitter.com/w3bk3rn3l/status/1389960857178808320"
-            ]
-          },
-          "id": "post-2813"
         }
       ]
     }
@@ -635,9 +628,9 @@
       "https://paulopinto.xyz/wp-json/indieauth/1.0/token"
     ],
     "me": [
-      "https://twitter.com/w3bk3rn3l",
+      "https://twitter.com/ct1ete",
       "https://fosstodon.org/@paulopinto",
-      "https://indieweb.org/User:Paulopinto.page"
+      "https://indieweb.org/User:Paulopinto.xyz"
     ],
     "icon": [
       "https://paulopinto.xyz/wp-content/uploads/2020/06/cropped-duplop_verde-3-32x32.png",
@@ -660,8 +653,7 @@
       "https://paulopinto.xyz/tag/palestine/",
       "https://paulopinto.xyz/tag/annotation/",
       "https://paulopinto.xyz/tag/markus-gabriel/",
-      "https://paulopinto.xyz/tag/philosophy/",
-      "https://paulopinto.xyz/tag/metaontology/"
+      "https://paulopinto.xyz/tag/philosophy/"
     ],
     "feed": [
       "https://paulopinto.xyz/kind/reply/",
@@ -806,7 +798,7 @@
         "token_endpoint"
       ]
     },
-    "https://twitter.com/w3bk3rn3l": {
+    "https://twitter.com/ct1ete": {
       "rels": [
         "me"
       ]
@@ -816,7 +808,7 @@
         "me"
       ]
     },
-    "https://indieweb.org/User:Paulopinto.page": {
+    "https://indieweb.org/User:Paulopinto.xyz": {
       "rels": [
         "me"
       ]
@@ -907,12 +899,6 @@
         "tag"
       ],
       "text": "Philosophy"
-    },
-    "https://paulopinto.xyz/tag/metaontology/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "metaontology"
     },
     "https://paulopinto.xyz/kind/reply/": {
       "rels": [
@@ -1024,7 +1010,7 @@
       ],
       "title": "Paulo Pinto's Digital Notebook Note Feed",
       "type": "text/html",
-      "text": "Notes (44)"
+      "text": "Notes (45)"
     },
     "http://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1": {
       "rels": [

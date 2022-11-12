@@ -1,28 +1,90 @@
 {
   "items": [],
   "rels": {
+    "canonical": [
+      "https://bmannconsulting.com/"
+    ],
+    "apple-touch-icon": [
+      "https://bmannconsulting.com/assets/bmann_hair_orange_256x256.png"
+    ],
     "stylesheet": [
-      "https://bmannconsulting.com/cdn-cgi/styles/challenges.css"
+      "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css",
+      "https://bmannconsulting.com/assets/css/style.css",
+      "https://unpkg.com/littlefoot/dist/littlefoot.css"
     ],
-    "noopener": [
-      "https://www.cloudflare.com/?utm_source=challenge&utm_campaign=m"
+    "icon": [
+      "https://bmannconsulting.com/assets/bmann_hair_orange_256x256.png"
     ],
-    "noreferrer": [
-      "https://www.cloudflare.com/?utm_source=challenge&utm_campaign=m"
+    "alternate": [
+      "https://bmannconsulting.com/feed/notes.xml"
+    ],
+    "micropub": [
+      "https://bmann-indiekit-bmcgarden.herokuapp.com/micropub"
+    ],
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "me": [
+      "https://github.com/bmann"
     ]
   },
   "rel-urls": {
-    "https://bmannconsulting.com/cdn-cgi/styles/challenges.css": {
+    "https://bmannconsulting.com/": {
+      "rels": [
+        "canonical"
+      ]
+    },
+    "https://bmannconsulting.com/assets/bmann_hair_orange_256x256.png": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://bmannconsulting.com/assets/css/style.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://unpkg.com/littlefoot/dist/littlefoot.css": {
       "rels": [
         "stylesheet"
       ]
     },
-    "https://www.cloudflare.com/?utm_source=challenge&utm_campaign=m": {
+    "https://bmannconsulting.com/feed/notes.xml": {
       "rels": [
-        "noopener",
-        "noreferrer"
+        "alternate"
       ],
-      "text": "Cloudflare"
+      "type": "application/rss+xml"
+    },
+    "https://bmann-indiekit-bmcgarden.herokuapp.com/micropub": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://github.com/bmann": {
+      "rels": [
+        "me"
+      ],
+      "text": "GitHub »"
     }
   }
 }

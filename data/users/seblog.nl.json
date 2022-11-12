@@ -38,6 +38,40 @@
             "h-entry"
           ],
           "properties": {
+            "name": [
+              "Slome Mastodon"
+            ],
+            "content": [
+              {
+                "html": "<p>Mastodon is nog steeds een hot-topic op mijn Mastodon- en feedreader-tijdlijn. Zo kwam ik <a href=\"https://ar.al/2022/11/09/is-the-fediverse-about-to-get-fryed-or-why-every-toot-is-also-a-potential-denial-of-service-attack/\">dit artikel</a> van Aral tegen waarin hij uitlegt hoe een beetje populair zijn (22.000 volgers op 3000 servers) en een beetje actief posten en reacties uitlokken al snel kan leiden tot een enorme queue en dus vastzittende instances.</p>\n<p>Zijn oplossing: populaire mensen moeten hun eigen server draaien. Ergens is daar wat voor te zeggen, op Twitter waren het ook de populaire mensen die het meeste geld kosten (en opleverden waarschijnlijk maar soit). Het is logisch dat als jij veel interactie hebt, computers daar dus harder voor moeten werken, en dat je dan misschien wat meer moet betalen aan je Mastodon-host.</p>\n<p>Maar los van dat computers draaien geld kost, kosten computers ook stroom en dus naar alle waarschijnlijkheid CO². Een beetje minder daarvan zou best fijn zijn, en dit is in mijn optiek wel een beetje een tekortkoming van Activitypub (te actief) en Mastodon (gekke technische keuzes).</p>\n<p>Toen Twitter begon bouwden ze het platform op Ruby on Rails, een framework bekend om het gemak waarmee je een nieuwe applicatie kan opzetten, maar niet om z'n snelheid. Twitter liep echter tegen de grenzen aan van die architectuur, met veel plaatjes van een door vogels opgetilde walvis als het weer mis ging. In <a href=\"https://blog.twitter.com/engineering/en_us/a/2011/twitter-search-is-now-3x-faster\"></a> stapten ze over naar een andere architectuur en kwam er eindelijk een eind aan de 'fail whale'.</p>\n<p>In 2016 deed Gargron de eerste commit voor Mastodon. Het zette een lege Ruby on Rails applicatie neer, die later uitgroeide tot de Mastodon die we nu hebben. Als het Twitter niet lukte ermee te schalen, heb ik ook vraagtekens of Mastodon het wel kan.</p>\n<p>Maar daarnaast ook Activitypub nogal onnodig werk: op moment van schrijven heb ik drie features van het protocol geïmplementeerd op dit weblog (webfinger, de actor, de inbox) en één keer mijn 'profiel' bezocht via Mastodon.social. Sindsdien heb ik 1507 berichten ontvangen over verwijderde gebruikers. 1507 berichten, alleen omdat iemand anders (oké ik zelf) mijn profiel bezocht. (Ik begon vanochtend al met schrijven aan deze post, maar inmiddels zie ik dat Aaron <a href=\"https://aaronparecki.com/2022/11/11/51/activitypub\">nog meer</a> deletes heeft ontvangen. Oeps.)</p>\n<p>Ik ben een voorstander van 'eerst gebruiken dan pas de protocollen', en aangezien we nu Activitypub gebruiken is dat een beter protocol dan elke nieuwe die we verzinnen zonder actieve gebruikers, maar ergens hoop ik wel dat we dit nog kunnen fixen.</p>",
+                "value": "Mastodon is nog steeds een hot-topic op mijn Mastodon- en feedreader-tijdlijn. Zo kwam ik dit artikel van Aral tegen waarin hij uitlegt hoe een beetje populair zijn (22.000 volgers op 3000 servers) en een beetje actief posten en reacties uitlokken al snel kan leiden tot een enorme queue en dus vastzittende instances.\nZijn oplossing: populaire mensen moeten hun eigen server draaien. Ergens is daar wat voor te zeggen, op Twitter waren het ook de populaire mensen die het meeste geld kosten (en opleverden waarschijnlijk maar soit). Het is logisch dat als jij veel interactie hebt, computers daar dus harder voor moeten werken, en dat je dan misschien wat meer moet betalen aan je Mastodon-host.\nMaar los van dat computers draaien geld kost, kosten computers ook stroom en dus naar alle waarschijnlijkheid CO². Een beetje minder daarvan zou best fijn zijn, en dit is in mijn optiek wel een beetje een tekortkoming van Activitypub (te actief) en Mastodon (gekke technische keuzes).\nToen Twitter begon bouwden ze het platform op Ruby on Rails, een framework bekend om het gemak waarmee je een nieuwe applicatie kan opzetten, maar niet om z'n snelheid. Twitter liep echter tegen de grenzen aan van die architectuur, met veel plaatjes van een door vogels opgetilde walvis als het weer mis ging. In  stapten ze over naar een andere architectuur en kwam er eindelijk een eind aan de 'fail whale'.\nIn 2016 deed Gargron de eerste commit voor Mastodon. Het zette een lege Ruby on Rails applicatie neer, die later uitgroeide tot de Mastodon die we nu hebben. Als het Twitter niet lukte ermee te schalen, heb ik ook vraagtekens of Mastodon het wel kan.\nMaar daarnaast ook Activitypub nogal onnodig werk: op moment van schrijven heb ik drie features van het protocol geïmplementeerd op dit weblog (webfinger, de actor, de inbox) en één keer mijn 'profiel' bezocht via Mastodon.social. Sindsdien heb ik 1507 berichten ontvangen over verwijderde gebruikers. 1507 berichten, alleen omdat iemand anders (oké ik zelf) mijn profiel bezocht. (Ik begon vanochtend al met schrijven aan deze post, maar inmiddels zie ik dat Aaron nog meer deletes heeft ontvangen. Oeps.)\nIk ben een voorstander van 'eerst gebruiken dan pas de protocollen', en aangezien we nu Activitypub gebruiken is dat een beter protocol dan elke nieuwe die we verzinnen zonder actieve gebruikers, maar ergens hoop ik wel dat we dit nog kunnen fixen."
+              }
+            ],
+            "url": [
+              "https://seblog.nl/2022/11/11/1/slome-mastodon"
+            ],
+            "published": [
+              "2022-11-11T22:50:31+0000"
+            ],
+            "updated": [
+              "2022-11-11T22:50:31+0000"
+            ],
+            "uid": [
+              "https://seblog.nl/2022/315/1"
+            ],
+            "author": [
+              "https://seblog.nl/"
+            ],
+            "category": [
+              "mastodon"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
             "content": [
               {
                 "html": "<p>Sinds ik van <a href=\"https://hacdias.com/\">Henrique</a> een account heb gekregen op zijn Miniflux RSS-reader ben ik weer wat fanatieker aan het lezen en bloggen. Henrique moedigt mij steeds aan om ergens over te bloggen, en ik hem ook. In mijn geval gaat dat natuurlijk nergens over, maar hij komt met uitgebreide analyses van <a href=\"https://hacdias.com/2022/11/04/trying-out-ovpay\">onze nieuwe OV-chipkaart, OVPay</a>, en <a href=\"https://hacdias.com/2022/11/08/issues-with-digid-as-foreigner\">problemen met DigiD</a> waar hij als Portugees in Nederland tegenaan loopt. Volg en lees.</p>",
@@ -708,34 +742,6 @@
               "recept"
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "content": [
-              {
-                "html": "<p>Ik was dit weekend in Utrecht voor een <a href=\"https://www.goclubutrecht.nl/toernooi-van-utrecht-2022/\">go-toernooi</a> en in de pauze daarvan ben ik nog even de binnenstad in gewandeld. Op mijn lijstje van plekken om te bezoeken stond nog boekhandel Broesse, want die zijn verhuisd en ik was er nog niet wezen kijken. Dat is de eerste tip: ga daar heen, het is een mooie boekhandel.</p>\n<p>Eenmaal daar stond ik oog in oog met een <a href=\"https://bambook.org/\">Bambook</a>. Dit is precies wat ik al een tijdje beschrijf als wat ik wil hebben: een meeneembaar whiteboard in de vorm van een opschrijfboekje. Ik heb in het verleden daarwerkelijk een whiteboardje van 30 bij 30 cm meegenomen naar kantoor voor dit doel, maar het was nooit echt handzaam. Ik heb natuurlijk direct de kleinste Bambook meegenomen als impulsaankoopje.</p>\n<p>En dat is dus de tweede tip: dit is een heel fijn ding. Nee, het is wat gladder dan papier en de pen schrijft niet zoals balpen of potlood, maar het werkt heel aardig. Met nul schuldgevoel schrijf ik hele pagina’s vol.</p>\n<p>De laatste tip is om die aantekeningen binnen het uur van je meeting even uit te tikken. Ik heb dat nu al twee keer gedaan voor twee verschillende behoorlijk informatie-zware afspraken, en in beide gevallen voel ik me een stuk lichter omdat ik het idee heb dat alle informatie netjes in een lopende tekst is gevat. Moet ik wel bij zeggen dat ik snel en makkelijk typ.</p>",
-                "value": "Ik was dit weekend in Utrecht voor een go-toernooi en in de pauze daarvan ben ik nog even de binnenstad in gewandeld. Op mijn lijstje van plekken om te bezoeken stond nog boekhandel Broesse, want die zijn verhuisd en ik was er nog niet wezen kijken. Dat is de eerste tip: ga daar heen, het is een mooie boekhandel.\nEenmaal daar stond ik oog in oog met een Bambook. Dit is precies wat ik al een tijdje beschrijf als wat ik wil hebben: een meeneembaar whiteboard in de vorm van een opschrijfboekje. Ik heb in het verleden daarwerkelijk een whiteboardje van 30 bij 30 cm meegenomen naar kantoor voor dit doel, maar het was nooit echt handzaam. Ik heb natuurlijk direct de kleinste Bambook meegenomen als impulsaankoopje.\nEn dat is dus de tweede tip: dit is een heel fijn ding. Nee, het is wat gladder dan papier en de pen schrijft niet zoals balpen of potlood, maar het werkt heel aardig. Met nul schuldgevoel schrijf ik hele pagina’s vol.\nDe laatste tip is om die aantekeningen binnen het uur van je meeting even uit te tikken. Ik heb dat nu al twee keer gedaan voor twee verschillende behoorlijk informatie-zware afspraken, en in beide gevallen voel ik me een stuk lichter omdat ik het idee heb dat alle informatie netjes in een lopende tekst is gevat. Moet ik wel bij zeggen dat ik snel en makkelijk typ."
-              }
-            ],
-            "url": [
-              "https://seblog.nl/2022/06/22/1/aantekeningen"
-            ],
-            "published": [
-              "2022-06-22T17:11:07+0000"
-            ],
-            "updated": [
-              "2022-06-22T17:11:07+0000"
-            ],
-            "uid": [
-              "https://seblog.nl/2022/173/1"
-            ],
-            "author": [
-              "https://seblog.nl/"
-            ]
-          }
         }
       ]
     }
@@ -788,11 +794,13 @@
       "https://seblog.nl/"
     ],
     "shortlink": [
+      "https://5eb.nl/5Mn1",
       "https://5eb.nl/5Lu1",
       "https://5eb.nl/5L_1",
       "https://5eb.nl/5LP1"
     ],
     "canonical": [
+      "https://seblog.nl/2022/315/1",
       "https://seblog.nl/2022/262/1",
       "https://seblog.nl/2022/242/1",
       "https://seblog.nl/2022/231/1"
@@ -908,6 +916,18 @@
     "https://micro.blog/sebsel": {
       "rels": [
         "me"
+      ]
+    },
+    "https://5eb.nl/5Mn1": {
+      "rels": [
+        "shortlink"
+      ],
+      "title": "2022/315/1",
+      "text": "•"
+    },
+    "https://seblog.nl/2022/315/1": {
+      "rels": [
+        "canonical"
       ]
     },
     "https://5eb.nl/5Lu1": {

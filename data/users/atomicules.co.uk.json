@@ -6,6 +6,50 @@
       ],
       "properties": {
         "url": [
+          "https://atomicules.co.uk/2022/11/11/Album-of-the-year-Confidence-Man-Tilt.html"
+        ],
+        "published": [
+          "2022-11-11 00:00 GMT"
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "name": [
+                "atomicules"
+              ],
+              "photo": [
+                {
+                  "value": "https://atomicules.co.uk/images/favicon.png",
+                  "alt": "atomicules"
+                }
+              ]
+            },
+            "value": "atomicules"
+          }
+        ],
+        "name": [
+          "Album of the year: Confidence Man: Tilt"
+        ],
+        "content": [
+          {
+            "html": "<p>So many good albums this year, but Confidence Man have it because:</p>\n<ol>\n  <li>It just makes you feel happy. As <a href=\"https://atomicules.co.uk/2022/08/31/August-Audio.html\">previously mentioned</a> Feels Like A Different Thing and Holiday are my favourites.</li>\n  <li>Re-Tilt exists. Totally Enormous Extinct Dinosaur’s remix of Lovin’ U Is Easy is just mind-blowingly good.</li>\n  <li>Their Glastonbury performance (only saw it on the telly) was amazing.</li>\n  <li>I got to see them live in Glasgow this week. Probably the best gig I have ever been to and there were so many things against it (terrible journey there and back and minor surgery two days before) and yet was still <em>that</em> good.</li>\n</ol>\n<p><em>Meant to write this on the day of the gig since I’d been waiting and waiting for it, but was too knackered afterwards</em></p>\n\t\t\t\t\t<ul class=\"post-tags\">\n\t\t\t\t\t\t<li class=\"tags\">Tags: <ul><li><a class=\"p-category\" href=\"https://atomicules.co.uk/owtlelse.html\">owtlelse</a></li></ul>\n</li>\n\t\t\t\t\t</ul>",
+            "value": "So many good albums this year, but Confidence Man have it because:\n\n  It just makes you feel happy. As previously mentioned Feels Like A Different Thing and Holiday are my favourites.\n  Re-Tilt exists. Totally Enormous Extinct Dinosaur’s remix of Lovin’ U Is Easy is just mind-blowingly good.\n  Their Glastonbury performance (only saw it on the telly) was amazing.\n  I got to see them live in Glasgow this week. Probably the best gig I have ever been to and there were so many things against it (terrible journey there and back and minor surgery two days before) and yet was still that good.\n\nMeant to write this on the day of the gig since I’d been waiting and waiting for it, but was too knackered afterwards\n\t\t\t\t\t\n\t\t\t\t\t\tTags: owtlelse"
+          }
+        ],
+        "category": [
+          "owtlelse"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "url": [
           "https://atomicules.co.uk/2022/11/08/NetBSD-install-from-Linode-volume-woes.html"
         ],
         "published": [
@@ -35,8 +79,8 @@
         ],
         "content": [
           {
-            "html": "<p>After <a href=\"https://atomicules.co.uk/2022/01/10/Scaling-my-NetBSD-install-down-to-Nanode.html\">scaling my NetBSD install down to Nanode</a> I had planned to take advantage of <a href=\"https://www.linode.com/products/block-storage/\">Linode volumes</a> to perform my NetBSD upgrades as I had in the past:</p>\n<ol>\n  <li>Use a volume to attach and mount to the rescue image so I have enough space to download and extract the NetBSD USB image (this still works well)</li>\n  <li>Use a volume attached to the rescue image, but not mounted, to <code class=\"language-plaintext highlighter-rouge\">dd</code> the NetBSD installer image onto and then boot from this volume (this sadly doesn’t work)</li>\n</ol>\n<p>Linode do support <a href=\"https://www.linode.com/docs/products/storage/block-storage/guides/boot-from-a-volume/\">booting from volumes</a>, but it wouldn’t boot for me. I tried using <code class=\"language-plaintext highlighter-rouge\">dd</code> and <code class=\"language-plaintext highlighter-rouge\">pv</code>, but it made no difference. Maybe it’s just an issue with Direct Disk kernels?</p>\n<p>Anyway, since I didn’t have time for experimenting and investigating any further I went for <a href=\"https://www.netbsd.org/docs/guide/en/chap-upgrading.html#using-sysupgrade\"><code class=\"language-plaintext highlighter-rouge\">sysupgrade</code></a> instead which fortunately worked a treat and meant I <em>finally</em> got to NetBSD 9.3.</p>\n<p><em>Just as I published this post I found <a href=\"https://www.linode.com/community/questions/20083/direct-disk-booting-from-block-storage\">this in the Linode Community</a>.</em></p>\n\t\t\t\t\t<ul class=\"post-tags\">\n\t\t\t\t\t\t<li class=\"tags\">Tags: <ul><li><a class=\"p-category\" href=\"https://atomicules.co.uk/site.html\">site</a></li></ul>\n</li>\n\t\t\t\t\t</ul>",
-            "value": "After scaling my NetBSD install down to Nanode I had planned to take advantage of Linode volumes to perform my NetBSD upgrades as I had in the past:\n\n  Use a volume to attach and mount to the rescue image so I have enough space to download and extract the NetBSD USB image (this still works well)\n  Use a volume attached to the rescue image, but not mounted, to dd the NetBSD installer image onto and then boot from this volume (this sadly doesn’t work)\n\nLinode do support booting from volumes, but it wouldn’t boot for me. I tried using dd and pv, but it made no difference. Maybe it’s just an issue with Direct Disk kernels?\nAnyway, since I didn’t have time for experimenting and investigating any further I went for sysupgrade instead which fortunately worked a treat and meant I finally got to NetBSD 9.3.\nJust as I published this post I found this in the Linode Community.\n\t\t\t\t\t\n\t\t\t\t\t\tTags: site"
+            "html": "<p>After <a href=\"https://atomicules.co.uk/2022/01/10/Scaling-my-NetBSD-install-down-to-Nanode.html\">scaling my NetBSD install down to Nanode</a> I had planned to take advantage of <a href=\"https://www.linode.com/products/block-storage/\">Linode volumes</a> to perform my NetBSD upgrades as I had in the past:</p>\n<ol>\n  <li>Use a volume to attach and mount to the rescue image so I have enough space to download and extract the NetBSD USB image (this still works well)</li>\n  <li>Use a volume attached to the rescue image, but not mounted, to <code class=\"language-plaintext highlighter-rouge\">dd</code> the NetBSD installer image onto and then boot from this volume (this sadly doesn’t work)</li>\n</ol>\n<p>Linode do support <a href=\"https://www.linode.com/docs/products/storage/block-storage/guides/boot-from-a-volume/\">booting from volumes</a>, but it wouldn’t boot for me. I tried using <code class=\"language-plaintext highlighter-rouge\">dd</code> and <code class=\"language-plaintext highlighter-rouge\">pv</code>, but it made no difference. Maybe it’s just an issue with Direct Disk kernels?</p>\n<p>Anyway, since I didn’t have time for experimenting and investigating any further I went for <a href=\"https://www.netbsd.org/docs/guide/en/chap-upgrading.html#using-sysupgrade\"><code class=\"language-plaintext highlighter-rouge\">sysupgrade</code></a> instead which fortunately worked a treat and meant I <em>finally</em> got to NetBSD 9.3.</p>\n<p><em>Just as I published this post I found <a href=\"https://www.linode.com/community/questions/20083/direct-disk-booting-from-block-storage\">this in the Linode Community</a>.</em></p>\n<hr>\n<p><strong>[EDIT: 2022-11-11]</strong> I forgot to mention that the whole reason this took me so long is <a href=\"https://atomicules.co.uk/2022/05/28/Computerless.html\">because of this</a>: I have to use the “family” computer, which is basically my daughter’s, so that means when she’s at school, but then, of course, most of that time I’m working. Sigh.</p>\n\t\t\t\t\t<ul class=\"post-tags\">\n\t\t\t\t\t\t<li class=\"tags\">Tags: <ul><li><a class=\"p-category\" href=\"https://atomicules.co.uk/site.html\">site</a></li></ul>\n</li>\n\t\t\t\t\t</ul>",
+            "value": "After scaling my NetBSD install down to Nanode I had planned to take advantage of Linode volumes to perform my NetBSD upgrades as I had in the past:\n\n  Use a volume to attach and mount to the rescue image so I have enough space to download and extract the NetBSD USB image (this still works well)\n  Use a volume attached to the rescue image, but not mounted, to dd the NetBSD installer image onto and then boot from this volume (this sadly doesn’t work)\n\nLinode do support booting from volumes, but it wouldn’t boot for me. I tried using dd and pv, but it made no difference. Maybe it’s just an issue with Direct Disk kernels?\nAnyway, since I didn’t have time for experimenting and investigating any further I went for sysupgrade instead which fortunately worked a treat and meant I finally got to NetBSD 9.3.\nJust as I published this post I found this in the Linode Community.\n\n[EDIT: 2022-11-11] I forgot to mention that the whole reason this took me so long is because of this: I have to use the “family” computer, which is basically my daughter’s, so that means when she’s at school, but then, of course, most of that time I’m working. Sigh.\n\t\t\t\t\t\n\t\t\t\t\t\tTags: site"
           }
         ],
         "category": [
@@ -457,68 +501,6 @@
           "properties": {
             "content": [
               "\"...and that is how Kostas Kazantzakis slow shut himself off, carving an island for himself inside an island, retreating into silence.\""
-            ],
-            "name": [
-              "The Island of the Missing Trees"
-            ],
-            "author": [
-              "Elif Shafak"
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "url": [
-          "https://atomicules.co.uk/2022/08/21/choppy-waters.html"
-        ],
-        "published": [
-          "2022-08-21 00:00 BST"
-        ],
-        "author": [
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "name": [
-                "atomicules"
-              ],
-              "photo": [
-                {
-                  "value": "https://atomicules.co.uk/images/favicon.png",
-                  "alt": "atomicules"
-                }
-              ]
-            },
-            "value": "atomicules"
-          }
-        ],
-        "name": [
-          "Choppy Waters"
-        ],
-        "content": [
-          {
-            "html": "<blockquote class=\"h-cite\">\n\t\t\t\t\t\t<p class=\"quote p-content\">\"The ground that feels rock hard to others is choppy waters for our kind\"</p>\n\t\t\t\t\t\t<footer>\n\t\t\t\t\t\t—\n\t\t\t\t\t\t\t<cite>\n\t\t\t\t\t\t\t\t<em><span class=\"p-name\">The Island of the Missing Trees</span> by <span class=\"p-author\">Elif Shafak</span></em>\n\t\t\t\t\t\t\t</cite>\n\t\t\t\t\t\t</footer>\n\t\t\t\t\t</blockquote>\n\t\t\t\t\t<div class=\"descrip\">\n\t\t\t\t\t</div>\n\t\t\t\t\t<ul class=\"post-tags\">\n\t\t\t\t\t\t<li class=\"tags\">Tags: <ul><li><a class=\"p-category\" href=\"https://atomicules.co.uk/owtelse.html\">owtelse</a></li></ul>\n</li>\n\t\t\t\t\t</ul>",
-            "value": "\"The ground that feels rock hard to others is choppy waters for our kind\"\n\t\t\t\t\t\t\n\t\t\t\t\t\t—\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\tThe Island of the Missing Trees by Elif Shafak\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\tTags: owtelse"
-          }
-        ],
-        "category": [
-          "owtelse"
-        ]
-      },
-      "children": [
-        {
-          "type": [
-            "h-cite"
-          ],
-          "properties": {
-            "content": [
-              "\"The ground that feels rock hard to others is choppy waters for our kind\""
             ],
             "name": [
               "The Island of the Missing Trees"

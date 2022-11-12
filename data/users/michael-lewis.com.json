@@ -12,7 +12,7 @@
           "https://michael-lewis.com/"
         ],
         "name": [
-          "avatar\n      \n    \n    \n    Michael I Lewis\n    personal website"
+          "avatar\n  \n\n\n\n\n    Michael I Lewis\n\npersonal website"
         ]
       }
     }
@@ -21,11 +21,11 @@
     "canonical": [
       "https://michael-lewis.com/"
     ],
+    "preload": [
+      "https://michael-lewis.com/fonts/forkawesome-webfont.woff2?v=1.2.0"
+    ],
     "stylesheet": [
-      "https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap",
-      "https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css",
-      "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css",
-      "https://michael-lewis.com/css/coder.min.f01c647a0d25b40da992a37c3376291185eed8a50ced8c26cc2c0bcfe38c97df.css"
+      "https://michael-lewis.com/css/coder.min.c4d7e93a158eda5a65b3df343745d2092a0a1e2170feeec909b8a89443903c6a.css"
     ],
     "icon": [
       "https://michael-lewis.com/images/favicon-32x32.png",
@@ -33,6 +33,12 @@
     ],
     "apple-touch-icon": [
       "https://michael-lewis.com/images/apple-touch-icon.png"
+    ],
+    "manifest": [
+      "https://michael-lewis.com/site.webmanifest"
+    ],
+    "mask-icon": [
+      "https://michael-lewis.com/images/safari-pinned-tab.svg"
     ],
     "alternate": [
       "https://michael-lewis.com/index.xml"
@@ -51,22 +57,13 @@
         "canonical"
       ]
     },
-    "https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap": {
+    "https://michael-lewis.com/fonts/forkawesome-webfont.woff2?v=1.2.0": {
       "rels": [
-        "stylesheet"
-      ]
+        "preload"
+      ],
+      "type": "font/woff2"
     },
-    "https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css": {
-      "rels": [
-        "stylesheet"
-      ]
-    },
-    "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css": {
-      "rels": [
-        "stylesheet"
-      ]
-    },
-    "https://michael-lewis.com/css/coder.min.f01c647a0d25b40da992a37c3376291185eed8a50ced8c26cc2c0bcfe38c97df.css": {
+    "https://michael-lewis.com/css/coder.min.c4d7e93a158eda5a65b3df343745d2092a0a1e2170feeec909b8a89443903c6a.css": {
       "rels": [
         "stylesheet"
       ],
@@ -87,6 +84,16 @@
     "https://michael-lewis.com/images/apple-touch-icon.png": {
       "rels": [
         "apple-touch-icon"
+      ]
+    },
+    "https://michael-lewis.com/site.webmanifest": {
+      "rels": [
+        "manifest"
+      ]
+    },
+    "https://michael-lewis.com/images/safari-pinned-tab.svg": {
+      "rels": [
+        "mask-icon"
       ]
     },
     "https://michael-lewis.com/index.xml": {
