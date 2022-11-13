@@ -7,7 +7,6 @@
     "dns-prefetch": [
       "http://secure.gravatar.com/",
       "http://fonts.googleapis.com/",
-      "http://s.w.org/",
       "http://v0.wordpress.com/"
     ],
     "preconnect": [
@@ -18,14 +17,15 @@
       "https://www.homefries.org/comments/feed/"
     ],
     "stylesheet": [
-      "http://www.homefries.org/wp-includes/css/dist/block-library/style.min.css?ver=6.0.3",
-      "http://www.homefries.org/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.16",
-      "http://www.homefries.org/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.0.3",
+      "http://www.homefries.org/wp-includes/css/dist/block-library/style.min.css?ver=6.1",
+      "http://www.homefries.org/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17",
+      "http://www.homefries.org/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.1",
+      "http://www.homefries.org/wp-includes/css/classic-themes.min.css?ver=1",
       "https://fonts.googleapis.com/css?family=Libre+Franklin%3A300%2C300i%2C400%2C400i%2C600%2C600i%2C800%2C800i&subset=latin%2Clatin-ext&display=fallback",
       "http://www.homefries.org/wp-content/themes/twentyseventeen/style.css?ver=20201208",
       "http://www.homefries.org/wp-content/themes/twentyseventeen/assets/css/blocks.css?ver=20190105",
-      "http://www.homefries.org/wp-content/plugins/jetpack/_inc/social-logos/social-logos.min.css?ver=10.9.1",
-      "http://www.homefries.org/wp-content/plugins/jetpack/css/jetpack.css?ver=10.9.1"
+      "http://www.homefries.org/wp-content/plugins/jetpack/_inc/social-logos/social-logos.min.css?ver=11.5.1",
+      "http://www.homefries.org/wp-content/plugins/jetpack/css/jetpack.css?ver=11.5.1"
     ],
     "https://api.w.org/": [
       "https://www.homefries.org/wp-json/"
@@ -167,11 +167,6 @@
         "dns-prefetch"
       ]
     },
-    "http://s.w.org/": {
-      "rels": [
-        "dns-prefetch"
-      ]
-    },
     "http://v0.wordpress.com/": {
       "rels": [
         "dns-prefetch"
@@ -196,19 +191,25 @@
       "title": "Homefries » Comments Feed",
       "type": "application/rss+xml"
     },
-    "http://www.homefries.org/wp-includes/css/dist/block-library/style.min.css?ver=6.0.3": {
+    "http://www.homefries.org/wp-includes/css/dist/block-library/style.min.css?ver=6.1": {
       "rels": [
         "stylesheet"
       ],
       "media": "all"
     },
-    "http://www.homefries.org/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.16": {
+    "http://www.homefries.org/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17": {
       "rels": [
         "stylesheet"
       ],
       "media": "all"
     },
-    "http://www.homefries.org/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.0.3": {
+    "http://www.homefries.org/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "http://www.homefries.org/wp-includes/css/classic-themes.min.css?ver=1": {
       "rels": [
         "stylesheet"
       ],
@@ -232,13 +233,13 @@
       ],
       "media": "all"
     },
-    "http://www.homefries.org/wp-content/plugins/jetpack/_inc/social-logos/social-logos.min.css?ver=10.9.1": {
+    "http://www.homefries.org/wp-content/plugins/jetpack/_inc/social-logos/social-logos.min.css?ver=11.5.1": {
       "rels": [
         "stylesheet"
       ],
       "media": "all"
     },
-    "http://www.homefries.org/wp-content/plugins/jetpack/css/jetpack.css?ver=10.9.1": {
+    "http://www.homefries.org/wp-content/plugins/jetpack/css/jetpack.css?ver=11.5.1": {
       "rels": [
         "stylesheet"
       ],

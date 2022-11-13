@@ -14,8 +14,6 @@
       "https://use.fontawesome.com/releases/v5.12.0/css/all.css",
       "https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css",
       "https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css",
-      "https://rsms.me/inter/inter.css",
-      "https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin",
       "https://du.nkel.dev/css/bootstrap-custom.min.css",
       "https://du.nkel.dev/css/base.min.css",
       "https://du.nkel.dev/css/cinder.min.css",
@@ -24,6 +22,9 @@
     "alternate": [
       "https://du.nkel.dev/feed_rss_created.xml",
       "https://du.nkel.dev/feed_rss_updated.xml"
+    ],
+    "me": [
+      "https://github.com/sieboldianus"
     ]
   },
   "rel-urls": {
@@ -53,18 +54,6 @@
         "stylesheet"
       ]
     },
-    "https://rsms.me/inter/inter.css": {
-      "rels": [
-        "stylesheet"
-      ],
-      "type": "text/css"
-    },
-    "https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin": {
-      "rels": [
-        "stylesheet"
-      ],
-      "type": "text/css"
-    },
     "https://du.nkel.dev/css/bootstrap-custom.min.css": {
       "rels": [
         "stylesheet"
@@ -93,6 +82,11 @@
       ],
       "title": "RSS feed of updated content",
       "type": "application/rss+xml"
+    },
+    "https://github.com/sieboldianus": {
+      "rels": [
+        "me"
+      ]
     },
     "https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css": {
       "rels": [

@@ -30,6 +30,17 @@
           ],
           "properties": {
             "name": [
+              "Fediverse\n\n\t\t\t\t\n\t\t\t\t\tSeit der rasanten Talfahrt von Twitter erfreut sich Mastodon großer Beliebtheit. Mich freut das Erwachen dieses sozialen Netzwerks auch deswegen, weil es auf einem standardisierten Kommunikationsprotokoll basiert und somit dem Charakter des offenen und dezentralen Internets entspricht."
+            ]
+          },
+          "id": "post-1574"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               "Ende und Anfang\n\n\t\t\t\t\n\t\t\t\t\tNach 13,5 Jahren beende ich heute dankbar meine freiberufliche Tätigkeit und arbeite ab morgen im Team von wemakeit als Senior Frontend Entwickler. Yeah!"
             ]
           },
@@ -78,17 +89,6 @@
             ]
           },
           "id": "post-1487"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Merkzettel für die Kommandozeile\n\n\t\t\t\t\n\t\t\t\t\tBei Kommandos, die ich nur ab und an verwende, bin ich mir selten ganz sicher. Zwei davon erläutere ich in diesem Eintrag um sie mir besser merken zu können."
-            ]
-          },
-          "id": "post-1474"
         }
       ]
     },
@@ -155,13 +155,10 @@
     ],
     "me": [
       "https://twitter.com/depone",
-      "https://mastodon.social/@depone"
+      "https://chaos.social/@depone"
     ],
     "pgpkey": [
       "https://depone.net/daniel.asc"
-    ],
-    "dns-prefetch": [
-      "https://s.w.org/"
     ],
     "alternate": [
       "https://depone.net/feed/",
@@ -171,6 +168,7 @@
       "https://depone.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdepone.net%2F&format=xml"
     ],
     "stylesheet": [
+      "https://depone.net/wp-includes/css/classic-themes.min.css?ver=1",
       "https://depone.net/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3",
       "https://depone.net/wp-content/themes/netz/style.css?ver=2.0.2"
     ],
@@ -202,12 +200,12 @@
       "https://depone.net/wp-json/micropub/1.0/endpoint"
     ],
     "bookmark": [
+      "https://depone.net/2022/11/12/fediverse/",
       "https://depone.net/2021/09/30/ende-und-anfang/",
       "https://depone.net/2020/05/14/von-ia-writer-direkt-ins-blog/",
       "https://depone.net/2020/02/19/fairness-und-respekt/",
       "https://depone.net/2019/11/08/design-umschreiben/",
-      "https://depone.net/2019/10/15/information-veraendert-sich/",
-      "https://depone.net/2019/10/11/merkzettel-fuer-die-kommandozeile/"
+      "https://depone.net/2019/10/15/information-veraendert-sich/"
     ],
     "author": [
       "https://depone.net/"
@@ -246,7 +244,7 @@
         "me"
       ]
     },
-    "https://mastodon.social/@depone": {
+    "https://chaos.social/@depone": {
       "rels": [
         "me"
       ]
@@ -254,11 +252,6 @@
     "https://depone.net/daniel.asc": {
       "rels": [
         "pgpkey"
-      ]
-    },
-    "https://s.w.org/": {
-      "rels": [
-        "dns-prefetch"
       ]
     },
     "https://depone.net/feed/": {
@@ -274,6 +267,13 @@
       ],
       "title": "DEPONE Netzgestaltung » Kommentar-Feed",
       "type": "application/rss+xml"
+    },
+    "https://depone.net/wp-includes/css/classic-themes.min.css?ver=1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
     },
     "https://depone.net/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3": {
       "rels": [
@@ -350,6 +350,13 @@
         "micropub"
       ]
     },
+    "https://depone.net/2022/11/12/fediverse/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Link zum Blogeintrag ›Fediverse‹",
+      "text": "Fediverse"
+    },
     "https://depone.net/2021/09/30/ende-und-anfang/": {
       "rels": [
         "bookmark"
@@ -384,13 +391,6 @@
       ],
       "title": "Link zum Blogeintrag ›Information verändert sich‹",
       "text": "Information verändert sich"
-    },
-    "https://depone.net/2019/10/11/merkzettel-fuer-die-kommandozeile/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Link zum Blogeintrag ›Merkzettel für die Kommandozeile‹",
-      "text": "Merkzettel für die Kommandozeile"
     }
   }
 }

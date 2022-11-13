@@ -887,11 +887,10 @@
       ],
       "properties": {
         "name": [
-          "Ragt.ag"
+          "Angelo Gladding"
         ],
         "url": [
-          "https://ragt.ag/",
-          "irc://irc.libera.chat/angelo,isnick"
+          "https://ragt.ag/"
         ],
         "uid": [
           "https://ragt.ag/"
@@ -901,9 +900,6 @@
         ],
         "email": [
           "mailto:angelo@ragt.ag"
-        ],
-        "tel": [
-          "sms:+16262437654"
         ]
       }
     }
@@ -918,6 +914,15 @@
     "stylesheet": [
       "https://ragt.ag/static/screen.css"
     ],
+    "authorization_endpoint": [
+      "https://ragt.ag/auth"
+    ],
+    "token_endpoint": [
+      "https://ragt.ag/auth/tokens"
+    ],
+    "indieauth-metadata": [
+      "https://ragt.ag/auth/metadata"
+    ],
     "webmention": [
       "https://ragt.ag/mentions"
     ],
@@ -927,8 +932,6 @@
     "me": [
       "https://ragt.ag/",
       "mailto:angelo@ragt.ag",
-      "irc://irc.libera.chat/angelo,isnick",
-      "sms:+16262437654",
       "https://indieweb.rocks/ragt.ag"
     ],
     "license": [
@@ -952,6 +955,21 @@
       ],
       "media": "screen"
     },
+    "https://ragt.ag/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://ragt.ag/auth/tokens": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://ragt.ag/auth/metadata": {
+      "rels": [
+        "indieauth-metadata"
+      ]
+    },
     "https://ragt.ag/mentions": {
       "rels": [
         "webmention"
@@ -966,25 +984,13 @@
       "rels": [
         "me"
       ],
-      "text": "Ragt.ag"
+      "text": "Angelo Gladding"
     },
     "mailto:angelo@ragt.ag": {
       "rels": [
         "me"
       ],
       "text": "angelo@ragt.ag"
-    },
-    "irc://irc.libera.chat/angelo,isnick": {
-      "rels": [
-        "me"
-      ],
-      "text": "angelo@irc.libera.chat"
-    },
-    "sms:+16262437654": {
-      "rels": [
-        "me"
-      ],
-      "text": "+1 (626) 243-7654"
     },
     "https://creativecommons.org/licenses/by-nc-sa/4.0/": {
       "rels": [
