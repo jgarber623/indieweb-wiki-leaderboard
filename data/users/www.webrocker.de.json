@@ -257,21 +257,39 @@
         "h-card"
       ],
       "properties": {
+        "photo": [
+          {
+            "value": "https://webrocker.de/blog/wp-content/uploads/2020/04/profile-300x300.png",
+            "srcset": {
+              "300w": "https://webrocker.de/blog/wp-content/uploads/2020/04/profile-300x300.png",
+              "210w": "https://webrocker.de/blog/wp-content/uploads/2020/04/profile-210x210.png",
+              "500w": "https://webrocker.de/blog/wp-content/uploads/2020/04/profile.png"
+            },
+            "alt": "Webrocker"
+          }
+        ],
         "name": [
-          "Webrocker"
+          "Tom"
+        ],
+        "note": [
+          "my blog, my personal home page, my castle in the www"
         ],
         "url": [
           "https://webrocker.de/"
+        ],
+        "nickname": [
+          "Webrocker"
+        ],
+        "email": [
+          "mailto:blog@webrocker.de"
         ]
-      }
+      },
+      "id": "about"
     }
   ],
   "rels": {
     "profile": [
       "https://gmpg.org/xfn/11"
-    ],
-    "dns-prefetch": [
-      "https://s.w.org/"
     ],
     "alternate": [
       "https://webrocker.de/feed/",
@@ -279,6 +297,7 @@
       "https://webrocker.de/?feed=atom"
     ],
     "stylesheet": [
+      "https://webrocker.de/blog/wp-includes/css/classic-themes.min.css?ver=1",
       "https://webrocker.de/blog/wp-content/plugins/wp-syntax/css/wp-syntax.css?ver=1.1",
       "https://webrocker.de/blog/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3",
       "https://webrocker.de/blog/wp-content/themes/wbr-theme/style.css?ver=9.2.0",
@@ -308,6 +327,7 @@
       "mailto:blog@webrocker.de",
       "https://codepen.io/webrocker",
       "https://github.com/iamwebrocker",
+      "https://mastodon.social/@webrocker.de@webrocker.de",
       "https://webrocker.de/"
     ],
     "author": [
@@ -401,11 +421,6 @@
         "profile"
       ]
     },
-    "https://s.w.org/": {
-      "rels": [
-        "dns-prefetch"
-      ]
-    },
     "https://webrocker.de/feed/": {
       "rels": [
         "alternate"
@@ -419,6 +434,12 @@
       ],
       "title": "Webrocker » Kommentar-Feed",
       "type": "application/rss+xml"
+    },
+    "https://webrocker.de/blog/wp-includes/css/classic-themes.min.css?ver=1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
     },
     "https://webrocker.de/blog/wp-content/plugins/wp-syntax/css/wp-syntax.css?ver=1.1": {
       "rels": [
@@ -909,6 +930,12 @@
         "me"
       ],
       "text": "github"
+    },
+    "https://mastodon.social/@webrocker.de@webrocker.de": {
+      "rels": [
+        "me"
+      ],
+      "text": "@webrocker.de@webrocker.de"
     }
   }
 }

@@ -2,34 +2,44 @@
   "items": [
     {
       "type": [
-        "h-card"
+        "h-entry"
       ],
       "properties": {
-        "photo": [
+        "author": [
           {
-            "value": "https://brainbaking.com//img/avatar.jpg",
-            "alt": "A photo of Me!"
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "photo": [
+                {
+                  "value": "https://brainbaking.com//img/avatar.jpg",
+                  "alt": "A photo of Me!"
+                }
+              ],
+              "note": [
+                "Hey! I'm Wouter Groeneveld, a Brain Baker living in Belgium. I currently find myself teaching, writing, programming, researching, and of course baking bread! Brain Baking is my way to inspire myself and others to ponder and learn. Read more about me here."
+              ],
+              "name": [
+                "Wouter Groeneveld"
+              ],
+              "uid": [
+                "https://brainbaking.com/"
+              ],
+              "url": [
+                "https://brainbaking.com/",
+                "https://brainbaking.com/about",
+                "https://chat.brainbaking.com/@wouter"
+              ],
+              "job-title": [
+                "Brain Baker"
+              ],
+              "locality": [
+                "Belgium"
+              ]
+            },
+            "value": "Wouter Groeneveld"
           }
-        ],
-        "note": [
-          "Hey! I'm Wouter Groeneveld, a Brain Baker living in Belgium. I currently find myself teaching, writing, programming, researching, and of course baking bread! Brain Baking is my way to inspire myself and others to ponder and learn. Read more about me here."
-        ],
-        "name": [
-          "Wouter Groeneveld"
-        ],
-        "uid": [
-          "https://brainbaking.com/"
-        ],
-        "url": [
-          "https://brainbaking.com/",
-          "https://brainbaking.com/about",
-          "https://chat.brainbaking.com/@wouter"
-        ],
-        "job-title": [
-          "Brain Baker"
-        ],
-        "locality": [
-          "Belgium"
         ]
       }
     }
@@ -42,6 +52,7 @@
       "https://chat.brainbaking.com/@wouter",
       "https://github.com/wgroeneveld",
       "https://brainbaking.com/",
+      "https://www.paypal.com/donate/?hosted_button_id=R2WTKY7G9V2KQ",
       "https://ko-fi.com/woutergroeneveld"
     ],
     "author": [
@@ -64,7 +75,7 @@
     ],
     "stylesheet": [
       "https://brainbaking.com/css/simple-lightbox.min.css",
-      "https://brainbaking.com/css/styles.6f22cf7063525afb4ea0f03e4fc72564ae54c389b1733b2029f1f09711f1c0b27e7b8825cbf58472f4f4dfa61773afa4860cafb4ff1a50e5f2c0232cc246dc1d.css"
+      "https://brainbaking.com/css/styles.679185dbace182ffed9f6157e9d59b280434e3a57c9a8312adc9b25dd7eede309e5f7457da512b752a92edc496912c35ac71788d6a7b66426ba39998a6708d35.css"
     ],
     "preload": [
       "https://brainbaking.com/css/Metropolis-Light.woff2",
@@ -122,7 +133,7 @@
         "stylesheet"
       ]
     },
-    "https://brainbaking.com/css/styles.6f22cf7063525afb4ea0f03e4fc72564ae54c389b1733b2029f1f09711f1c0b27e7b8825cbf58472f4f4dfa61773afa4860cafb4ff1a50e5f2c0232cc246dc1d.css": {
+    "https://brainbaking.com/css/styles.679185dbace182ffed9f6157e9d59b280434e3a57c9a8312adc9b25dd7eede309e5f7457da512b752a92edc496912c35ac71788d6a7b66426ba39998a6708d35.css": {
       "rels": [
         "stylesheet"
       ]
@@ -152,11 +163,17 @@
       "title": "Brain Baking",
       "type": "application/rss+xml"
     },
+    "https://www.paypal.com/donate/?hosted_button_id=R2WTKY7G9V2KQ": {
+      "rels": [
+        "me"
+      ],
+      "text": "via PayPal"
+    },
     "https://ko-fi.com/woutergroeneveld": {
       "rels": [
         "me"
       ],
-      "text": "buy me a coffee"
+      "text": "via Ko-Fi"
     }
   }
 }

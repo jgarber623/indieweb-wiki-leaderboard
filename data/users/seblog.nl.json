@@ -38,6 +38,38 @@
             "h-entry"
           ],
           "properties": {
+            "content": [
+              {
+                "html": "<p>In mijn <a href=\"https://seblog.nl/2022/11/05/3/poging-tot-mastodon\">post van vorig weekend</a> wilde ik niet toegeven dat de requests die Mastdon naar mijn inbox stuurde helemaal niet door mijn eigen verificatie-code heen kwamen.</p>\n<p>Het stappenplan is als volgt: Mastodon stuurt een bericht naar mijn inbox, stuurt daarbij een HTTP-header met daarin een <code>keyId</code>, een <code>signature</code> en een lijstje aan namen van headers. Ik moet dan de waardes van de HTTP-headers bij de namen zoeken, de <code>keyId</code> ophalen (dit is een URL) en dan verifiëren of de signature van de headers inderdaad ondertekend is met de public key uit de <code>keyId</code>. Omdat het cryptografie is gaf de functie alleen maar <code>false</code> terug, zonder enige verder info.</p>\n<p>Na heel veel zoeken bleek dat in elk geval de deletes een simpele verklaring hadden: zodra de Actor is verwijderd is ook de public key weg, en dus valt er niets te verifyen. Dat is geen bug, <a href=\"https://github.com/mastodon/mastodon/issues/10286\">zeggen ze</a>. Ik negeer nu lekker alle Actor-deletes want ik haal toch geen profielen op. Follows en Follow-Undo's die ik als test bleef doen bleven wel falen.</p>\n<p>Na letterlijk uren te hebben doorgebracht met specs zoeken en code lezen uit <a href=\"https://pixelfed.org/\">Pixelfed</a> (PHP Laravel) en <a href=\"https://pleroma.social/\">Pleroma</a> (Elixir), bleef ik er toch echt van overtuigd dat ik alles goed berekende, aan elkaar knoopte, ophaalde, alles. Heel frustrerend.</p>\n<p>Maar, wat bleek: de <code>(request-target)</code> vulde ik aan als <code>(request-target) /inbox</code>, terwijl ik mijn inbox op <code>/activitypub/inbox</code> had neergezet. De andere implementaties plakten die path dynamisch op uit de Request/conn. Daar ging 6 uur waarin ik al heel veel verder kon zijn geweest met Activitypub. Maar goed, volgend weekend weer een weekend.</p>",
+                "value": "In mijn post van vorig weekend wilde ik niet toegeven dat de requests die Mastdon naar mijn inbox stuurde helemaal niet door mijn eigen verificatie-code heen kwamen.\nHet stappenplan is als volgt: Mastodon stuurt een bericht naar mijn inbox, stuurt daarbij een HTTP-header met daarin een keyId, een signature en een lijstje aan namen van headers. Ik moet dan de waardes van de HTTP-headers bij de namen zoeken, de keyId ophalen (dit is een URL) en dan verifiëren of de signature van de headers inderdaad ondertekend is met de public key uit de keyId. Omdat het cryptografie is gaf de functie alleen maar false terug, zonder enige verder info.\nNa heel veel zoeken bleek dat in elk geval de deletes een simpele verklaring hadden: zodra de Actor is verwijderd is ook de public key weg, en dus valt er niets te verifyen. Dat is geen bug, zeggen ze. Ik negeer nu lekker alle Actor-deletes want ik haal toch geen profielen op. Follows en Follow-Undo's die ik als test bleef doen bleven wel falen.\nNa letterlijk uren te hebben doorgebracht met specs zoeken en code lezen uit Pixelfed (PHP Laravel) en Pleroma (Elixir), bleef ik er toch echt van overtuigd dat ik alles goed berekende, aan elkaar knoopte, ophaalde, alles. Heel frustrerend.\nMaar, wat bleek: de (request-target) vulde ik aan als (request-target) /inbox, terwijl ik mijn inbox op /activitypub/inbox had neergezet. De andere implementaties plakten die path dynamisch op uit de Request/conn. Daar ging 6 uur waarin ik al heel veel verder kon zijn geweest met Activitypub. Maar goed, volgend weekend weer een weekend."
+              }
+            ],
+            "url": [
+              "https://seblog.nl/2022/11/13/1/mastodon-debuggen"
+            ],
+            "published": [
+              "2022-11-13T21:27:24+0000"
+            ],
+            "updated": [
+              "2022-11-13T21:27:24+0000"
+            ],
+            "uid": [
+              "https://seblog.nl/2022/317/1"
+            ],
+            "author": [
+              "https://seblog.nl/"
+            ],
+            "category": [
+              "mastodon",
+              "activitypub"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
             "name": [
               "Muis"
             ],
@@ -705,43 +737,6 @@
               "maand"
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "content": [
-              {
-                "html": "<p>Net de Pride Walk in Amsterdam gelopen, omdat ik vorige jaren steeds pas op de botenparade bedacht dat ik daar ook aan had willen meerdoen. Pride is een leuk feest, maar pride is ook een protest, zo lang als dat nodig is.</p>\n<p>Ik ga nu snel terug naar Nijmegen waar de Eurogames bezig zijn. Vanavond nog even 5km hardlopen bij een side-event ervan. Hopelijk gaat dat sneller dan de Pride Walk.</p>\n<p>Van de week liep ik met wat collega’s en hun vraag was: moet dat nou, een sportevenement voor homo’s? Zo sluit je je af, maak je het juist apart. Mijn antwoord was dat er meer zichtbaarheid moet zijn, maar ze werden alleen maar stelliger.</p>\n<p>‘Voor een gaybar heb ik nog respect,’ zei iemand, ‘dat is makkelijker, als je on the hunt bent, dat je niet hoeft te vragen.’ Maar een sportevenement was daarin niet praktisch, dus overbodig, vond hij.</p>\n<p>Ik heb daar dus nu een halve week mee in mijn maag gezeten. Is het overbodig?</p>\n<p>Ik had geen antwoord. Maar het antwoord is: zolang een dergelijk evenement als politiek wordt ervaren, is het politiek en dus nodig als protest. En als het niet meer politiek is, is het er alleen voor de leuk, en dan is het nodig omdat het leuk is.</p>\n<p>Ergens vind ik het nog steeds eng: ik zit nu bij een nieuwe atletiekvereniging en ik ben daar niet expliciet uit de kast, dus zit ik er nog in, zo gaat dat. Ga ik de run van vanavond op Strava zetten? En de Pride Run volgende week? Het doet niet ter zake maar toch wel.</p>\n<p>Eerst maar even zorgen dat ik daar op tijd aankom en überhaupt meeren. Het is nodig. Pride is protest.</p>",
-                "value": "Net de Pride Walk in Amsterdam gelopen, omdat ik vorige jaren steeds pas op de botenparade bedacht dat ik daar ook aan had willen meerdoen. Pride is een leuk feest, maar pride is ook een protest, zo lang als dat nodig is.\nIk ga nu snel terug naar Nijmegen waar de Eurogames bezig zijn. Vanavond nog even 5km hardlopen bij een side-event ervan. Hopelijk gaat dat sneller dan de Pride Walk.\nVan de week liep ik met wat collega’s en hun vraag was: moet dat nou, een sportevenement voor homo’s? Zo sluit je je af, maak je het juist apart. Mijn antwoord was dat er meer zichtbaarheid moet zijn, maar ze werden alleen maar stelliger.\n‘Voor een gaybar heb ik nog respect,’ zei iemand, ‘dat is makkelijker, als je on the hunt bent, dat je niet hoeft te vragen.’ Maar een sportevenement was daarin niet praktisch, dus overbodig, vond hij.\nIk heb daar dus nu een halve week mee in mijn maag gezeten. Is het overbodig?\nIk had geen antwoord. Maar het antwoord is: zolang een dergelijk evenement als politiek wordt ervaren, is het politiek en dus nodig als protest. En als het niet meer politiek is, is het er alleen voor de leuk, en dan is het nodig omdat het leuk is.\nErgens vind ik het nog steeds eng: ik zit nu bij een nieuwe atletiekvereniging en ik ben daar niet expliciet uit de kast, dus zit ik er nog in, zo gaat dat. Ga ik de run van vanavond op Strava zetten? En de Pride Run volgende week? Het doet niet ter zake maar toch wel.\nEerst maar even zorgen dat ik daar op tijd aankom en überhaupt meeren. Het is nodig. Pride is protest."
-              }
-            ],
-            "url": [
-              "https://seblog.nl/2022/07/30/3/net-de-pride-walk-gelopen"
-            ],
-            "published": [
-              "2022-07-30T12:41:26+0000"
-            ],
-            "updated": [
-              "2022-08-01T11:25:54+0000"
-            ],
-            "syndication": [
-              "https://twitter.com/Sebsel/status/1553360221673820160",
-              "https://twitter.com/Sebsel/status/1553360223334719490",
-              "https://twitter.com/Sebsel/status/1553360224995663872",
-              "https://twitter.com/Sebsel/status/1553360233740779520",
-              "https://twitter.com/Sebsel/status/1553360235460427781",
-              "https://twitter.com/Sebsel/status/1553360237184393217",
-              "https://twitter.com/Sebsel/status/1553360239696572417"
-            ],
-            "uid": [
-              "https://seblog.nl/2022/211/3"
-            ],
-            "author": [
-              "https://seblog.nl/"
-            ]
-          }
         }
       ]
     }
@@ -794,6 +789,7 @@
       "https://seblog.nl/"
     ],
     "shortlink": [
+      "https://5eb.nl/5Mp1",
       "https://5eb.nl/5Mo2",
       "https://5eb.nl/5Mn1",
       "https://5eb.nl/5Lu1",
@@ -801,6 +797,7 @@
       "https://5eb.nl/5LP1"
     ],
     "canonical": [
+      "https://seblog.nl/2022/317/1",
       "https://seblog.nl/2022/316/2",
       "https://seblog.nl/2022/315/1",
       "https://seblog.nl/2022/262/1",
@@ -918,6 +915,18 @@
     "https://micro.blog/sebsel": {
       "rels": [
         "me"
+      ]
+    },
+    "https://5eb.nl/5Mp1": {
+      "rels": [
+        "shortlink"
+      ],
+      "title": "2022/317/1",
+      "text": "•"
+    },
+    "https://seblog.nl/2022/317/1": {
+      "rels": [
+        "canonical"
       ]
     },
     "https://5eb.nl/5Mo2": {

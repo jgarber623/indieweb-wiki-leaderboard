@@ -816,7 +816,10 @@
     ],
     "alternate": [
       "https://mabulledu.net/feed/",
-      "https://mabulledu.net/comments/feed/"
+      "https://mabulledu.net/comments/feed/",
+      "https://mabulledu.net/feed/as1/",
+      "https://mabulledu.net/comments/feed/as1/",
+      "https://mabulledu.net/feed/json/"
     ],
     "shortlink": [
       "https://mabulledu.net/"
@@ -903,10 +906,31 @@
       "title": "Ma bulle du Net » Flux des commentaires",
       "type": "application/rss+xml"
     },
+    "https://mabulledu.net/feed/as1/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Ma bulle du Net » Activity-Streams Feed",
+      "type": "application/stream+json"
+    },
+    "https://mabulledu.net/comments/feed/as1/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Ma bulle du Net » Activity-Streams Comments Feed",
+      "type": "application/stream+json"
+    },
     "https://mabulledu.net/": {
       "rels": [
         "shortlink"
       ]
+    },
+    "https://mabulledu.net/feed/json/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Ma bulle du Net » JSON Feed",
+      "type": "application/feed+json"
     },
     "https://mabulledu.net/wp-json/indieauth/1.0/auth": {
       "rels": [

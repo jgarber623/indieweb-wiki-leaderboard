@@ -32,6 +32,12 @@
       "https://isakawa.run/",
       "https://isakawa.run/en/"
     ],
+    "webmention": [
+      "https://webmention.io/isakawa.run/webmention"
+    ],
+    "pingback": [
+      "https://webmention.io/isakawa.run/xmlrpc"
+    ],
     "noopener": [
       "https://bgme.me/@sadalsuud",
       "https://www.instagram.com/_isakawa_/",
@@ -90,6 +96,16 @@
         "alternate"
       ],
       "hreflang": "en"
+    },
+    "https://webmention.io/isakawa.run/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://webmention.io/isakawa.run/xmlrpc": {
+      "rels": [
+        "pingback"
+      ]
     },
     "https://bgme.me/@sadalsuud": {
       "rels": [

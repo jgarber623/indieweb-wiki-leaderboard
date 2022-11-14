@@ -1,8 +1,37 @@
 {
-  "items": [],
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "name": [
+          "Ed Beck"
+        ],
+        "url": [
+          "https://ed-beck.com/Ed Beck",
+          "https://ed-beck.com/Mastodon",
+          "https://ed-beck.com/LinkedIn"
+        ],
+        "job-title": [
+          "Instructional Designer,Open and Online Learning Specialist"
+        ],
+        "photo": [
+          "https://ed-beck.com/"
+        ]
+      }
+    }
+  ],
   "rels": {
     "profile": [
       "https://gmpg.org/xfn/11"
+    ],
+    "me": [
+      "https://indieweb.social/@ed_beck",
+      "https://indieweb.social/web/@ed_beck",
+      "https://www.linkedin.com/in/ed-beck/",
+      "https://twitter.com/Edward_Beck",
+      "https://www.linkedin.com/in/ed-beck-3281a936/"
     ],
     "dns-prefetch": [
       "https://fonts.googleapis.com/",
@@ -60,6 +89,9 @@
     "home": [
       "https://ed-beck.com/"
     ],
+    "u-email": [
+      "mailto:beckej@alumni.lemoyne.edu"
+    ],
     "tag": [
       "https://ed-beck.com/category/domain-of-ones-own/",
       "https://ed-beck.com/category/open-source/",
@@ -84,6 +116,11 @@
     "https://gmpg.org/xfn/11": {
       "rels": [
         "profile"
+      ]
+    },
+    "https://indieweb.social/@ed_beck": {
+      "rels": [
+        "me"
       ]
     },
     "https://fonts.googleapis.com/": {
@@ -267,6 +304,24 @@
         "token_endpoint"
       ]
     },
+    "https://indieweb.social/web/@ed_beck": {
+      "rels": [
+        "me"
+      ],
+      "text": "Mastodon"
+    },
+    "https://www.linkedin.com/in/ed-beck/": {
+      "rels": [
+        "me"
+      ],
+      "text": "LinkedIn"
+    },
+    "mailto:beckej@alumni.lemoyne.edu": {
+      "rels": [
+        "u-email"
+      ],
+      "text": "Email"
+    },
     "https://ed-beck.com/category/domain-of-ones-own/": {
       "rels": [
         "tag"
@@ -314,6 +369,18 @@
         "tag"
       ],
       "text": "WordPress"
+    },
+    "https://twitter.com/Edward_Beck": {
+      "rels": [
+        "me"
+      ],
+      "text": "Twitter"
+    },
+    "https://www.linkedin.com/in/ed-beck-3281a936/": {
+      "rels": [
+        "me"
+      ],
+      "text": "LinkedIn"
     },
     "http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1": {
       "rels": [
