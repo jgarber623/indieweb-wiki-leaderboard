@@ -38,6 +38,38 @@
             "h-entry"
           ],
           "properties": {
+            "url": [
+              "https://seblog.nl/2022/11/14/1/like",
+              "https://seblog.nl/2022/11/14/1/like"
+            ],
+            "content": [
+              "Seb vindt een foto van Henrique Dias leuk."
+            ],
+            "name": [
+              "Seb vindt een foto van Henrique Dias leuk."
+            ],
+            "like-of": [
+              "https://hacdias.com/2022/11/14/verified-checkmark"
+            ],
+            "published": [
+              "2022-11-14T10:53:44+0000"
+            ],
+            "updated": [
+              "2022-11-14T10:53:44+0000"
+            ],
+            "uid": [
+              "https://seblog.nl/2022/318/1"
+            ],
+            "author": [
+              "https://seblog.nl/"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
             "content": [
               {
                 "html": "<p>In mijn <a href=\"https://seblog.nl/2022/11/05/3/poging-tot-mastodon\">post van vorig weekend</a> wilde ik niet toegeven dat de requests die Mastdon naar mijn inbox stuurde helemaal niet door mijn eigen verificatie-code heen kwamen.</p>\n<p>Het stappenplan is als volgt: Mastodon stuurt een bericht naar mijn inbox, stuurt daarbij een HTTP-header met daarin een <code>keyId</code>, een <code>signature</code> en een lijstje aan namen van headers. Ik moet dan de waardes van de HTTP-headers bij de namen zoeken, de <code>keyId</code> ophalen (dit is een URL) en dan verifiëren of de signature van de headers inderdaad ondertekend is met de public key uit de <code>keyId</code>. Omdat het cryptografie is gaf de functie alleen maar <code>false</code> terug, zonder enige verder info.</p>\n<p>Na heel veel zoeken bleek dat in elk geval de deletes een simpele verklaring hadden: zodra de Actor is verwijderd is ook de public key weg, en dus valt er niets te verifyen. Dat is geen bug, <a href=\"https://github.com/mastodon/mastodon/issues/10286\">zeggen ze</a>. Ik negeer nu lekker alle Actor-deletes want ik haal toch geen profielen op. Follows en Follow-Undo's die ik als test bleef doen bleven wel falen.</p>\n<p>Na letterlijk uren te hebben doorgebracht met specs zoeken en code lezen uit <a href=\"https://pixelfed.org/\">Pixelfed</a> (PHP Laravel) en <a href=\"https://pleroma.social/\">Pleroma</a> (Elixir), bleef ik er toch echt van overtuigd dat ik alles goed berekende, aan elkaar knoopte, ophaalde, alles. Heel frustrerend.</p>\n<p>Maar, wat bleek: de <code>(request-target)</code> vulde ik aan als <code>(request-target) /inbox</code>, terwijl ik mijn inbox op <code>/activitypub/inbox</code> had neergezet. De andere implementaties plakten die path dynamisch op uit de Request/conn. Daar ging 6 uur waarin ik al heel veel verder kon zijn geweest met Activitypub. Maar goed, volgend weekend weer een weekend.</p>",
@@ -703,40 +735,6 @@
               "https://seblog.nl/"
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Juli 2022"
-            ],
-            "content": [
-              {
-                "html": "<p>Geen idee of ik dit goed ga volhouden, maar ik zag een paar mensen die wekelijks of maandelijks een overzicht van gebeurtenissen uit hun leven schrijven. Ik schrijf niet al te veel meer over mijn dagelijkse bezigheden – er was een tijd dat ik dagelijks een maf stukje typte – maar eenmaal per maand een overzicht lijkt me wel een leuk idee. Hier de eerste editie voor juli 2022.</p>\n<ul>\n<li>De maand begon met mijn eerste meerdaagse festival: Down The Rabbit Hole. Ik had er speciaal een nieuwe tent voor aangeschaft (al had ik er al twee) en ik vond vooral het kampeer-aspect heel leuk. Qua optredens vond ik Moderat het hoogtepunt, maar ook leuke dingen gezien die ik nog niet kende (zoals L’Imperatrice). Ik zou zo nog eens gaan (en ik wil nog eens kamperen deze zomer).</li>\n<li>Ook heb ik deze maand besloten een overstap te maken qua werkgever: ik maak nu <a href=\"https://www.iphoned.nl/apple/iphone-13-pro/abonnement/\">een prijsvergelijker</a> maar ga binnenkort <a href=\"https://www.sneakerdistrict.nl/\">schoenen verkopen</a>. Of ja, daarbij helpen dan, en pas vanaf september.</li>\n<li>Mijn stiefmoeder was jarig en vierde dat met een heerlijke lunch aan het water met alle broers. Sowieso ben ik veel in Leiden geweest omdat het steeds iets minder gaat met mijn vader, waarvoor veel geregeld moet worden.</li>\n<li>Juli is natuurlijk ook de maand van de Nijmeegse Vierdaagse. Ik ben op zaterdag naar het vuurwerk wezen kijken, ben op dinsdag (heetst van de dag, 39º) met collega’s ‘de stad’ in geweest (meer in de schaduw hangen), heb op woensdag in de pauze een collega aangemoedigd die langs kantoor kwam en op vrijdag kwamen er wat vrienden uit Amsterdam over voor de intocht. Ook zonder de hele week vrij te nemen was het best wel een fijne Vierdaagseweek.</li>\n<li>Go spelen ligt een beetje stil vanwege de zomerstop op de club, maar ik ben wel nog een middagje bij de Hubert gaan zitten, waar op vrijdag vaak wel spelers zijn. Was een fijne partij in de schaduw, die ik wel verloor, maar de muziek was goed.</li>\n<li>Hardlopen gaat juist steeds beter. Ik trek nu meerdere keren per week de schoenen aan voor een rondje en dat voelt lekker. Ik ben nog nooit in de buurt geweest van dik zijn, maar merk toch een verschil in mijn lichaam nu ik weer fit ben. Ik dacht juli af te sluiten met een 5k race, maar ben gister alsnog naar de zondagochtendtraining gegaan. Het is een beetje verslavend.</li>\n<li>De 5k race was in het kader van de Eurogames. Die ochtend heb ik ook nog in Amsterdam meegelopen aan de Pride Walk, want <a href=\"https://seblog.nl/2022/07/30/3/net-de-pride-walk-gelopen\">Pride is a protest</a>. Komende week ook nog een 5k bij de Pride Run, maar dat is augustus.</li>\n</ul>",
-                "value": "Geen idee of ik dit goed ga volhouden, maar ik zag een paar mensen die wekelijks of maandelijks een overzicht van gebeurtenissen uit hun leven schrijven. Ik schrijf niet al te veel meer over mijn dagelijkse bezigheden – er was een tijd dat ik dagelijks een maf stukje typte – maar eenmaal per maand een overzicht lijkt me wel een leuk idee. Hier de eerste editie voor juli 2022.\n\nDe maand begon met mijn eerste meerdaagse festival: Down The Rabbit Hole. Ik had er speciaal een nieuwe tent voor aangeschaft (al had ik er al twee) en ik vond vooral het kampeer-aspect heel leuk. Qua optredens vond ik Moderat het hoogtepunt, maar ook leuke dingen gezien die ik nog niet kende (zoals L’Imperatrice). Ik zou zo nog eens gaan (en ik wil nog eens kamperen deze zomer).\nOok heb ik deze maand besloten een overstap te maken qua werkgever: ik maak nu een prijsvergelijker maar ga binnenkort schoenen verkopen. Of ja, daarbij helpen dan, en pas vanaf september.\nMijn stiefmoeder was jarig en vierde dat met een heerlijke lunch aan het water met alle broers. Sowieso ben ik veel in Leiden geweest omdat het steeds iets minder gaat met mijn vader, waarvoor veel geregeld moet worden.\nJuli is natuurlijk ook de maand van de Nijmeegse Vierdaagse. Ik ben op zaterdag naar het vuurwerk wezen kijken, ben op dinsdag (heetst van de dag, 39º) met collega’s ‘de stad’ in geweest (meer in de schaduw hangen), heb op woensdag in de pauze een collega aangemoedigd die langs kantoor kwam en op vrijdag kwamen er wat vrienden uit Amsterdam over voor de intocht. Ook zonder de hele week vrij te nemen was het best wel een fijne Vierdaagseweek.\nGo spelen ligt een beetje stil vanwege de zomerstop op de club, maar ik ben wel nog een middagje bij de Hubert gaan zitten, waar op vrijdag vaak wel spelers zijn. Was een fijne partij in de schaduw, die ik wel verloor, maar de muziek was goed.\nHardlopen gaat juist steeds beter. Ik trek nu meerdere keren per week de schoenen aan voor een rondje en dat voelt lekker. Ik ben nog nooit in de buurt geweest van dik zijn, maar merk toch een verschil in mijn lichaam nu ik weer fit ben. Ik dacht juli af te sluiten met een 5k race, maar ben gister alsnog naar de zondagochtendtraining gegaan. Het is een beetje verslavend.\nDe 5k race was in het kader van de Eurogames. Die ochtend heb ik ook nog in Amsterdam meegelopen aan de Pride Walk, want Pride is a protest. Komende week ook nog een 5k bij de Pride Run, maar dat is augustus."
-              }
-            ],
-            "url": [
-              "https://seblog.nl/2022/08/01/1/juli-2022"
-            ],
-            "published": [
-              "2022-08-01T11:50:17+0000"
-            ],
-            "updated": [
-              "2022-08-01T11:50:17+0000"
-            ],
-            "uid": [
-              "https://seblog.nl/2022/213/1"
-            ],
-            "author": [
-              "https://seblog.nl/"
-            ],
-            "category": [
-              "maand"
-            ]
-          }
         }
       ]
     }
@@ -856,7 +854,7 @@
       "rels": [
         "me"
       ],
-      "text": "\n        Seblog.nl\n      "
+      "text": "\n        Seblog.nl\n        \n          \n          \n        \n      "
     },
     "https://sebastiaanandeweg.nl/": {
       "rels": [

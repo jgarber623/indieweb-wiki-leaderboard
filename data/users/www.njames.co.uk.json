@@ -1,0 +1,80 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "photo": [
+          {
+            "value": "http://www.njames.co.uk/avat_400x400.jpg",
+            "alt": "My profile photo"
+          }
+        ],
+        "uid": [
+          "http://www.njames.co.uk/"
+        ],
+        "url": [
+          "http://www.njames.co.uk/",
+          "https://github.com/njamescouk/",
+          "https://twitter.com/kuocsemajn"
+        ],
+        "name": [
+          "My profile photo\n\n    \n      \n      www.njames.co.uk/\n\n      \n      @njamescouk\n\n      \n      @kuocsemajn"
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "icon": [
+      "http://www.njames.co.uk/avat_400x400.jpg"
+    ],
+    "microsub": [
+      "https://aperture.p3k.io/microsub/799"
+    ],
+    "me": [
+      "https://github.com/njamescouk/",
+      "https://twitter.com/kuocsemajn"
+    ]
+  },
+  "rel-urls": {
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "http://www.njames.co.uk/avat_400x400.jpg": {
+      "rels": [
+        "icon"
+      ]
+    },
+    "https://aperture.p3k.io/microsub/799": {
+      "rels": [
+        "microsub"
+      ]
+    },
+    "https://github.com/njamescouk/": {
+      "rels": [
+        "me"
+      ],
+      "text": "@njamescouk"
+    },
+    "https://twitter.com/kuocsemajn": {
+      "rels": [
+        "me"
+      ],
+      "text": "@kuocsemajn"
+    }
+  }
+}
