@@ -18,7 +18,7 @@
           "Henrique Dias"
         ],
         "email": [
-          "https://hacdias.com/cdn-cgi/l/email-protection#a0cdc1c9cce0c8c1c3c4c9c1d38ec3cfcd"
+          "https://hacdias.com/cdn-cgi/l/email-protection#e18c80888da189808285888092cf828e8c"
         ],
         "key": [
           "https://hacdias.com/pubkey.txt"
@@ -31,6 +31,44 @@
       ],
       "properties": {},
       "children": [
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<p><abbr title=\"Today I learned\">TIL</abbr> that the name of the PEM block of encoded public keys matters. I had a key that was using a block name <code>PUBLIC KEY</code>, where it should’ve been <code>RSA PUBLIC KEY</code>. Therefore, the client was rejecting the key as it was decoding it using the incorrect format. Here’s <a href=\"https://jpassing.com/2021/11/30/using-pem-to-encode-public-keys/\" rel=\"noopener noreferrer\" target=\"_blank\">a very nice post</a> about this.</p>",
+                "value": "TIL that the name of the PEM block of encoded public keys matters. I had a key that was using a block name PUBLIC KEY, where it should’ve been RSA PUBLIC KEY. Therefore, the client was rejecting the key as it was decoding it using the incorrect format. Here’s a very nice post about this."
+              }
+            ],
+            "published": [
+              "2022-11-15T19:23:33+01:00"
+            ],
+            "url": [
+              "https://hacdias.com/2022/11/15/19h23m33s63"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "photo": [
+                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
+                  ],
+                  "url": [
+                    "https://hacdias.com/"
+                  ],
+                  "name": [
+                    "Henrique Dias"
+                  ]
+                },
+                "value": "https://hacdias.com/"
+              }
+            ]
+          }
+        },
         {
           "type": [
             "h-entry"
@@ -625,44 +663,6 @@
               }
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Recently in October '22"
-            ],
-            "summary": [
-              "October is probably one of my favorite months of the year. Not only because of the vibes falling onto us 🍁 - no pun intented -, or my birthday, but it is also usually packed with events happening here and there. But before we continue, I wish you a great All Hallows’ Eve 🎃!"
-            ],
-            "published": [
-              "2022-10-31T15:43:53+01:00"
-            ],
-            "url": [
-              "https://hacdias.com/2022/10/31/october-22"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "photo": [
-                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
-                  ],
-                  "url": [
-                    "https://hacdias.com/"
-                  ],
-                  "name": [
-                    "Henrique Dias"
-                  ]
-                },
-                "value": "https://hacdias.com/"
-              }
-            ]
-          }
         }
       ]
     }
@@ -707,7 +707,7 @@
       "https://lobste.rs/u/hacdias",
       "mailto:mail@hacdias.com",
       "mailto:hacdias@gmail.com",
-      "https://hacdias.com/cdn-cgi/l/email-protection#a0cdc1c9cce0c8c1c3c4c9c1d38ec3cfcd"
+      "https://hacdias.com/cdn-cgi/l/email-protection#e18c80888da189808285888092cf828e8c"
     ],
     "webmention": [
       "https://webmention.io/hacdias.com/webmention"
@@ -716,7 +716,7 @@
       "https://webmention.io/hacdias.com/xmlrpc"
     ],
     "noopener": [
-      "https://hacdias.com/cdn-cgi/l/email-protection#1578747c79557d7476717c74663b767a78",
+      "https://hacdias.com/cdn-cgi/l/email-protection#5538343c39153d3436313c34267b363a38",
       "https://t.me/hacdias",
       "https://discord.com/users/hacdias#2540",
       "https://matrix.to/#/@hacdias:tchncs.de",
@@ -724,6 +724,7 @@
       "https://twitter.com/hacdias",
       "https://instagram.com/hacdias",
       "https://linkedin.com/in/hacdias",
+      "https://jpassing.com/2021/11/30/using-pem-to-encode-public-keys/",
       "https://twitter.com/mxbck/status/1590809274808147990",
       "https://blog.jim-nielsen.com/2022/verified-personal-website/",
       "https://brainbaking.com/post/2022/11/finding-stuff-on-big-blogs/",
@@ -743,7 +744,7 @@
       "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/next"
     ],
     "noreferrer": [
-      "https://hacdias.com/cdn-cgi/l/email-protection#1578747c79557d7476717c74663b767a78",
+      "https://hacdias.com/cdn-cgi/l/email-protection#5538343c39153d3436313c34267b363a38",
       "https://t.me/hacdias",
       "https://discord.com/users/hacdias#2540",
       "https://matrix.to/#/@hacdias:tchncs.de",
@@ -751,6 +752,7 @@
       "https://twitter.com/hacdias",
       "https://instagram.com/hacdias",
       "https://linkedin.com/in/hacdias",
+      "https://jpassing.com/2021/11/30/using-pem-to-encode-public-keys/",
       "https://twitter.com/mxbck/status/1590809274808147990",
       "https://blog.jim-nielsen.com/2022/verified-personal-website/",
       "https://brainbaking.com/post/2022/11/finding-stuff-on-big-blogs/",
@@ -885,7 +887,7 @@
         "pingback"
       ]
     },
-    "https://hacdias.com/cdn-cgi/l/email-protection#1578747c79557d7476717c74663b767a78": {
+    "https://hacdias.com/cdn-cgi/l/email-protection#5538343c39153d3436313c34267b363a38": {
       "rels": [
         "noopener",
         "noreferrer"
@@ -913,11 +915,18 @@
       ],
       "text": "✨ Matrix: @hacdias:tchncs.de"
     },
-    "https://hacdias.com/cdn-cgi/l/email-protection#a0cdc1c9cce0c8c1c3c4c9c1d38ec3cfcd": {
+    "https://hacdias.com/cdn-cgi/l/email-protection#e18c80888da189808285888092cf828e8c": {
       "rels": [
         "me"
       ],
       "text": "[email protected]"
+    },
+    "https://jpassing.com/2021/11/30/using-pem-to-encode-public-keys/": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "a very nice post"
     },
     "https://twitter.com/mxbck/status/1590809274808147990": {
       "rels": [

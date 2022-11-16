@@ -12,6 +12,12 @@
     ],
     "alternate": [
       "https://www.simone.org/feed/?type=rss"
+    ],
+    "authn": [
+      "https://twitter.com/salis"
+    ],
+    "me": [
+      "https://twitter.com/salis"
     ]
   },
   "rel-urls": {
@@ -32,6 +38,13 @@
         "alternate"
       ],
       "type": "application/rss+xml"
+    },
+    "https://twitter.com/salis": {
+      "rels": [
+        "authn",
+        "me"
+      ],
+      "text": "Twitter"
     }
   }
 }

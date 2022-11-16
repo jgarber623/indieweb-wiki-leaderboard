@@ -121,6 +121,59 @@
           ],
           "properties": {
             "kind": [
+              "Note"
+            ],
+            "content": [
+              {
+                "html": "<p></p>\n<p>Fun JS bug of the day introduced by a linting change, that lost me a good amount of time trying to work out what was going wrong:</p>\n<div class=\"highlight\"><pre tabindex=\"0\" class=\"chroma\"><code class=\"language-diff\" data-lang=\"diff\"><span class=\"line\"><span class=\"cl\"><span class=\"gd\">-  const tokenSet = await client.oauthCallback(redirect, params, { code_verifier });\n</span></span></span><span class=\"line\"><span class=\"cl\"><span class=\"gd\"></span><span class=\"gi\">+  const tokenSet = await client.oauthCallback(redirect, params, { codeVerifier })\n</span></span></span></code></pre></div>\n<p>Silently changed the meaning of the code here, and needed to be fixed with:</p>\n<div class=\"highlight\"><pre tabindex=\"0\" class=\"chroma\"><code class=\"language-diff\" data-lang=\"diff\"><span class=\"line\"><span class=\"cl\"><span class=\"gd\">-  const tokenSet = await client.oauthCallback(redirect, params, { codeVerifier }).catch((err) =&gt; {\n</span></span></span><span class=\"line\"><span class=\"cl\"><span class=\"gd\"></span><span class=\"gi\">+  const tokenSet = await client.oauthCallback(redirect, params, { code_verifier: codeVerifier }).catch((err) =&gt; {\n</span></span></span></code></pre></div>\n<p>Funnily enough, I've had this lead to <a href=\"https://www.jvt.me/posts/2022/02/03/common-dangerous-logs/\">dangerous logging</a> in the past, but didn't spot this at first. That'll teach me!</p>",
+                "value": "Fun JS bug of the day introduced by a linting change, that lost me a good amount of time trying to work out what was going wrong:-  const tokenSet = await client.oauthCallback(redirect, params, { code_verifier });\n+  const tokenSet = await client.oauthCallback(redirect, params, { codeVerifier })\nSilently changed the meaning of the code here, and needed to be fixed with:-  const tokenSet = await client.oauthCallback(redirect, params, { codeVerifier }).catch((err) => {\n+  const tokenSet = await client.oauthCallback(redirect, params, { code_verifier: codeVerifier }).catch((err) => {\nFunnily enough, I've had this lead to dangerous logging in the past, but didn't spot this at first. That'll teach me!"
+              }
+            ],
+            "bridgy-twitter-content": [
+              "Fun JS bug of the day introduced by a linting change, that lost me a good amount of time trying to work out what was going wrong:-  const tokenSet = await client.oauthCallback(redirect, params, { code_verifier });\n+  const tokenSet = await client.oauthCallback(redirect, params, { codeVerifier })\nSilently changed the meaning of the code here, and needed to be fixed with:-  const tokenSet = await client.oauthCallback(redirect, params, { codeVerifier }).catch((err) => {\n+  const tokenSet = await client.oauthCallback(redirect, params, { code_verifier: codeVerifier }).catch((err) => {\nFunnily enough, I've had this lead to dangerous logging in the past, but didn't spot this at first. That'll teach me!"
+            ],
+            "uid": [
+              "https://www.jvt.me/mf2/2022/11/jp3cj/"
+            ],
+            "url": [
+              "https://www.jvt.me/mf2/2022/11/jp3cj/"
+            ],
+            "published": [
+              "2022-11-15T13:15:31.681596611Z"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "photo": [
+                    {
+                      "value": "https://www.jvt.me/img/profile.png",
+                      "alt": "Jamie Tanna's profile image"
+                    }
+                  ],
+                  "name": [
+                    "Jamie Tanna"
+                  ],
+                  "url": [
+                    "https://www.jvt.me/"
+                  ]
+                },
+                "value": "Jamie Tanna"
+              }
+            ],
+            "category": [
+              "javascript"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "kind": [
               "Repost"
             ],
             "repost-of": [
@@ -3301,75 +3354,6 @@
             ],
             "category": [
               "morph"
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "kind": [
-              "Listen"
-            ],
-            "summary": [
-              {
-                "html": "Listened to\n<span class=\"u-listen-of h-cite\"><a class=\"u-url\" href=\"https://changelog.com/shipit/74\"><span class=\"p-name\">Vorsprung durch Technik with Sebastian Kister, Team Lead, Kubernetes Competence Center, Audi 🚙 (Ship It! #74)</span></a>\n<details open><summary>Post details</summary><blockquote class=\"p-summary\">I don’t think that you can imagine just how excited Gerhard was to find out that Audi, his favourite car company, has a Kubernetes competence centre. We have Sebastian Kister joining us today to tell us why people, followed by tech make the process. The right thing to focus on is the genuine smiles that people give in ...</blockquote>\n<img class=\"u-featured\" src=\"https://cdn.changelog.com/static/images/share/twitter-shipit-feb3710d53361bb8a02164926b99f023.png\" loading=\"lazy\"></details></span>",
-                "value": "Listened to\nVorsprung durch Technik with Sebastian Kister, Team Lead, Kubernetes Competence Center, Audi 🚙 (Ship It! #74)\nPost detailsI don’t think that you can imagine just how excited Gerhard was to find out that Audi, his favourite car company, has a Kubernetes competence centre. We have Sebastian Kister joining us today to tell us why people, followed by tech make the process. The right thing to focus on is the genuine smiles that people give in ... https://cdn.changelog.com/static/images/share/twitter-shipit-feb3710d53361bb8a02164926b99f023.png"
-              }
-            ],
-            "listen-of": [
-              {
-                "type": [
-                  "h-cite"
-                ],
-                "properties": {
-                  "url": [
-                    "https://changelog.com/shipit/74"
-                  ],
-                  "name": [
-                    "Vorsprung durch Technik with Sebastian Kister, Team Lead, Kubernetes Competence Center, Audi 🚙 (Ship It! #74)"
-                  ],
-                  "summary": [
-                    "I don’t think that you can imagine just how excited Gerhard was to find out that Audi, his favourite car company, has a Kubernetes competence centre. We have Sebastian Kister joining us today to tell us why people, followed by tech make the process. The right thing to focus on is the genuine smiles that people give in ..."
-                  ],
-                  "featured": [
-                    "https://cdn.changelog.com/static/images/share/twitter-shipit-feb3710d53361bb8a02164926b99f023.png"
-                  ]
-                },
-                "value": "https://changelog.com/shipit/74"
-              }
-            ],
-            "uid": [
-              "https://www.jvt.me/mf2/2022/10/akahr/"
-            ],
-            "url": [
-              "https://www.jvt.me/mf2/2022/10/akahr/"
-            ],
-            "published": [
-              "2022-10-19T07:04:14Z"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "photo": [
-                    {
-                      "value": "https://www.jvt.me/img/profile.png",
-                      "alt": "Jamie Tanna's profile image"
-                    }
-                  ],
-                  "name": [
-                    "Jamie Tanna"
-                  ],
-                  "url": [
-                    "https://www.jvt.me/"
-                  ]
-                },
-                "value": "Jamie Tanna"
-              }
             ]
           }
         }

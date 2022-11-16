@@ -8,8 +8,7 @@
       "https://haystack.co.uk/xmlrpc.php"
     ],
     "dns-prefetch": [
-      "https://fonts.googleapis.com/",
-      "https://s.w.org/"
+      "https://fonts.googleapis.com/"
     ],
     "preconnect": [
       "https://fonts.gstatic.com/"
@@ -19,14 +18,15 @@
       "https://haystack.co.uk/comments/feed/"
     ],
     "stylesheet": [
-      "https://haystack.co.uk/wp-includes/css/dist/block-library/style.min.css?ver=5.8.6",
+      "https://haystack.co.uk/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1",
+      "https://haystack.co.uk/wp-includes/css/classic-themes.min.css?ver=1",
       "https://fonts.googleapis.com/css?family=Noto+Sans%3A400italic%2C700italic%2C400%2C700%7CNoto+Serif%3A400italic%2C700italic%2C400%2C700%7CInconsolata%3A400%2C700&subset=latin%2Clatin-ext&display=fallback",
-      "https://haystack.co.uk/wp-content/themes/twentyfifteen/genericons/genericons.css?ver=20201208",
-      "https://haystack.co.uk/wp-content/themes/haystack-2015/style.css?ver=20201208",
-      "https://haystack.co.uk/wp-content/themes/twentyfifteen/css/blocks.css?ver=20190102",
+      "https://haystack.co.uk/wp-content/themes/twentyfifteen/genericons/genericons.css?ver=20201026",
+      "https://haystack.co.uk/wp-content/themes/haystack-2015/style.css?ver=20221101",
+      "https://haystack.co.uk/wp-content/themes/twentyfifteen/css/blocks.css?ver=20220914",
       "https://haystack.co.uk/wp-content/themes/haystack-2015/assets/css/style-overrides.css?ver=1.0",
-      "https://haystack.co.uk/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.16",
-      "https://haystack.co.uk/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=5.8.6"
+      "https://haystack.co.uk/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17",
+      "https://haystack.co.uk/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.1.1"
     ],
     "https://api.w.org/": [
       "https://haystack.co.uk/wp-json/"
@@ -87,11 +87,6 @@
         "dns-prefetch"
       ]
     },
-    "https://s.w.org/": {
-      "rels": [
-        "dns-prefetch"
-      ]
-    },
     "https://fonts.gstatic.com/": {
       "rels": [
         "preconnect"
@@ -111,7 +106,13 @@
       "title": "Haystack » Comments Feed",
       "type": "application/rss+xml"
     },
-    "https://haystack.co.uk/wp-includes/css/dist/block-library/style.min.css?ver=5.8.6": {
+    "https://haystack.co.uk/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://haystack.co.uk/wp-includes/css/classic-themes.min.css?ver=1": {
       "rels": [
         "stylesheet"
       ],
@@ -123,19 +124,19 @@
       ],
       "media": "all"
     },
-    "https://haystack.co.uk/wp-content/themes/twentyfifteen/genericons/genericons.css?ver=20201208": {
+    "https://haystack.co.uk/wp-content/themes/twentyfifteen/genericons/genericons.css?ver=20201026": {
       "rels": [
         "stylesheet"
       ],
       "media": "all"
     },
-    "https://haystack.co.uk/wp-content/themes/haystack-2015/style.css?ver=20201208": {
+    "https://haystack.co.uk/wp-content/themes/haystack-2015/style.css?ver=20221101": {
       "rels": [
         "stylesheet"
       ],
       "media": "all"
     },
-    "https://haystack.co.uk/wp-content/themes/twentyfifteen/css/blocks.css?ver=20190102": {
+    "https://haystack.co.uk/wp-content/themes/twentyfifteen/css/blocks.css?ver=20220914": {
       "rels": [
         "stylesheet"
       ],
@@ -279,13 +280,13 @@
       ],
       "text": "Change Your World"
     },
-    "https://haystack.co.uk/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.16": {
+    "https://haystack.co.uk/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17": {
       "rels": [
         "stylesheet"
       ],
       "media": "all"
     },
-    "https://haystack.co.uk/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=5.8.6": {
+    "https://haystack.co.uk/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.1.1": {
       "rels": [
         "stylesheet"
       ],

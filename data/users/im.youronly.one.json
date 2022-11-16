@@ -249,25 +249,6 @@
       "properties": {
         "photo": [
           {
-            "value": "https://rsc.youronly.one/img/logos/vero.png",
-            "alt": ""
-          }
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-full"
-      ],
-      "properties": {}
-    },
-    {
-      "type": [
-        "h-full"
-      ],
-      "properties": {
-        "photo": [
-          {
             "value": "https://rsc.youronly.one/img/logos/wikimediacommons.svg",
             "alt": ""
           }
@@ -483,13 +464,17 @@
       "https://fonts.googleapis.com/",
       "https://fonts.gstatic.com/",
       "https://cdn.jsdelivr.net/",
-      "https://unpkg.com/"
+      "https://unpkg.com/",
+      "https://cdnjs.cloudflare.com/",
+      "https://ajax.cloudflare.com/"
     ],
     "dns-prefetch": [
       "https://fonts.googleapis.com/",
       "https://fonts.gstatic.com/",
       "https://cdn.jsdelivr.net/",
-      "https://unpkg.com/"
+      "https://unpkg.com/",
+      "https://cdnjs.cloudflare.com/",
+      "https://ajax.cloudflare.com/"
     ],
     "stylesheet": [
       "https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+Display:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+Mono:wght@400;700&family=Noto+Sans+Tagalog&family=Noto+Sans+Tagbanwa&family=Noto+Sans+Buhid&family=Noto+Sans+Hanunoo&family=Noto+Sans+Phoenician&family=Noto+Sans+Hebrew:wght@400;700&family=Noto+Sans+KR:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap",
@@ -500,7 +485,7 @@
       "https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css",
       "https://rsc.youronly.one/css/paninap-fonts.min.css",
       "https://im.youronly.one/css/allicons.min.0eb4dce56009344abd6b3874e29f40481a8e685b5414e5d929183ab525975d265688825c977a6697b503f76e891c209653010d7868ff20946223959a1ddf19b7.css",
-      "https://im.youronly.one/css/yooki.min.b785dcc54cb6ffa597fdbfef3a154752a056a1cd40db2b88846d01df45cb3e616a5c1969bedd988887d5a4c11e79311ca1d02e1fb12a528aac487911aa4b28ac.css"
+      "https://im.youronly.one/css/yooki.min.0c18e66ffe65eea2760b9041821568731f2347130e8497defa16158abc62859ddc2286a50ee7588968f6d3a634d74358e153ade83dd501861d8901b8c82dd2b9.css"
     ],
     "sitemap": [
       "https://youronly.one/sitemap.index.xml",
@@ -555,6 +540,9 @@
       "https://mastodon.social/@youronlyone",
       "https://mastodon.online/@youronlyone",
       "https://pixelfed.social/youronlyone",
+      "https://bookwyrm.social/@youronlyone",
+      "https://inventaire.io/users/YourOnlyOne/",
+      "https://aleph.land/@yahananxie",
       "https://eyeem.com/u/youronlyone",
       "https://linkedin.com/in/youronlyone/",
       "https://www.goodreads.com/youronlyone",
@@ -591,7 +579,6 @@
       "https://twitter.com/YourOnlyONEofcl",
       "https://mastodon.social/@youronlyone",
       "https://facebook.com/YourOnly.ONE.ofcl",
-      "https://vero.co/youronlyone",
       "https://commons.wikimedia.org/w/index.php?title=Special:Search&limit=100&offset=0&ns6=1&sort=create_timestamp_desc&search=%22JC+John+Sese+Cuneta%22&sort=create_timestamp_desc",
       "https://www.eyeem.com/u/YourOnlyOne",
       "https://pixelfed.social/youronlyone",
@@ -739,6 +726,16 @@
       ]
     },
     "https://unpkg.com/": {
+      "rels": [
+        "preconnect"
+      ]
+    },
+    "https://cdnjs.cloudflare.com/": {
+      "rels": [
+        "preconnect"
+      ]
+    },
+    "https://ajax.cloudflare.com/": {
       "rels": [
         "preconnect"
       ]
@@ -940,7 +937,7 @@
       "media": "all",
       "type": "text/css"
     },
-    "https://im.youronly.one/css/yooki.min.b785dcc54cb6ffa597fdbfef3a154752a056a1cd40db2b88846d01df45cb3e616a5c1969bedd988887d5a4c11e79311ca1d02e1fb12a528aac487911aa4b28ac.css": {
+    "https://im.youronly.one/css/yooki.min.0c18e66ffe65eea2760b9041821568731f2347130e8497defa16158abc62859ddc2286a50ee7588968f6d3a634d74358e153ade83dd501861d8901b8c82dd2b9.css": {
       "rels": [
         "stylesheet"
       ],
@@ -1031,6 +1028,21 @@
       ]
     },
     "https://pixelfed.social/youronlyone": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://bookwyrm.social/@youronlyone": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://inventaire.io/users/YourOnlyOne/": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://aleph.land/@yahananxie": {
       "rels": [
         "me"
       ]

@@ -2,45 +2,20 @@
   "items": [
     {
       "type": [
-        "h-card"
+        "h-adr"
       ],
       "properties": {
-        "url": [
-          "https://warmedal.se/~bjorn/index.html"
+        "street-address": [
+          "Vänskapsgränd 13"
         ],
-        "name": [
-          "Björn Wärmedal"
+        "postal-code": [
+          "90362"
         ],
-        "note": [
-          "I am a parent, role-player, devops engineer/sysadmin, all around decent guy."
+        "locality": [
+          "Umeå"
         ],
-        "email": [
-          "https://warmedal.se/~bjorn/bjorn.warmedal@gmail.com"
-        ],
-        "tel": [
-          "+46702450316"
-        ],
-        "adr": [
-          {
-            "type": [
-              "h-adr"
-            ],
-            "properties": {
-              "street-address": [
-                "Vänskapsgränd 13"
-              ],
-              "postal-code": [
-                "90362"
-              ],
-              "locality": [
-                "Umeå"
-              ],
-              "country-name": [
-                "Sweden"
-              ]
-            },
-            "value": "Vänskapsgränd 13, 90362 Umeå, Sweden"
-          }
+        "country-name": [
+          "Sweden"
         ]
       }
     }
@@ -54,6 +29,7 @@
     ],
     "me": [
       "mailto:bjorn.warmedal@gmail.com",
+      "https://floss.social/@tinyrabbit",
       "https://warmedal.se/~bjorn/index.html"
     ]
   },
@@ -71,6 +47,11 @@
       ]
     },
     "mailto:bjorn.warmedal@gmail.com": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://floss.social/@tinyrabbit": {
       "rels": [
         "me"
       ]

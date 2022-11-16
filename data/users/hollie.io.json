@@ -2,7 +2,12 @@
   "items": [],
   "rels": {
     "stylesheet": [
-      "https://hollie.io/io.css"
+      "https://hollie.io/io.css",
+      "https://fonts.googleapis.com/css2?family=Merienda+One&family=Oxygen:wght@300&display=swap"
+    ],
+    "preconnect": [
+      "https://fonts.googleapis.com/",
+      "https://fonts.gstatic.com/"
     ],
     "me": [
       "https://weirder.earth/@hollie",
@@ -17,6 +22,21 @@
   },
   "rel-urls": {
     "https://hollie.io/io.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://fonts.googleapis.com/": {
+      "rels": [
+        "preconnect"
+      ]
+    },
+    "https://fonts.gstatic.com/": {
+      "rels": [
+        "preconnect"
+      ]
+    },
+    "https://fonts.googleapis.com/css2?family=Merienda+One&family=Oxygen:wght@300&display=swap": {
       "rels": [
         "stylesheet"
       ]

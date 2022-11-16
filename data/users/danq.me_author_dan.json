@@ -44,6 +44,95 @@
           ],
           "properties": {
             "name": [
+              "Reply to Decentralization and verification"
+            ],
+            "url": [
+              "https://danq.me/2022/11/15/reply-to-decentralization-and-verification/",
+              "https://derekkedziora.com/notes/20221114211528"
+            ],
+            "uid": [
+              "https://danq.me/2022/11/15/reply-to-decentralization-and-verification/"
+            ],
+            "published": [
+              "2022-11-15T18:51:20+00:00"
+            ],
+            "content": [
+              {
+                "html": "<section class=\"h-cite response p-in-reply-to \">\n<header>\n<span class=\"p-name\"> </span></header>\n<blockquote class=\"e-summary\"></blockquote>\n</section>\n<div class=\"u-in-reply-to\">\n<p><a class=\"u-url\" href=\"https://derekkedziora.com/notes/20221114211528\">In “Decentralization and verification”, Derek Kedziora said:</a></p>\n<blockquote class=\"h-cite\">\n<div class=\"p-content\">\n<p>…Mastodon by its very nature as a decentralized service <em>can’t</em> verify accounts.</p>\n<p>We’d still need some trusted third party to do offline verifications and host them in a centralized repository.</p>\n<p>…</p>\n</div>\n<footer><cite class=\"p-author h-card\"><a class=\"u-url p-name\" href=\"https://derekkedziora.com/\">Derek Kedziora</a></cite></footer>\n</blockquote>\n</div>\n<p>Let’s not sell Mastodon short here. The service you compare it to – Twitter – solves this problem… <em>but</em> only if you trust Twitter as an authority on the identity of people. Mastodon <em>also</em> solves the problem, but it puts the trust in a different place: domain names and account pages.</p>\n<p>If you want to “verify” yourself on Mastodon, <a href=\"https://microformats.org/wiki/rel-me\">you can use a rel=”me” link</a> from a page or domain you control. It looks like this:</p>\n<figure id=\"attachment_20723\" aria-describedby=\"caption-attachment-20723\" style=\"width: 573px\" class=\"wp-caption aligncenter\"><a href=\"https://danq.me/wp-content/uploads/2022/11/danq-mastodon-verified.png\"><img decoding=\"async\" class=\"lazy lazy-hidden size-full wp-image-20723\" src=\"https://danq.me/wp-content/uploads/2022/11/xdanq-mastodon-verified-30x25.png.pagespeed.ic.uoG8XJlM2T.png\" data-lazy-type=\"image\" data-lazy-src=\"https://danq.me/wp-content/uploads/2022/11/danq-mastodon-verified.png\" alt=\"Screenshot showing @dan@danq.me's Mastodon account as the verified owner of website DanQ.me.\" width=\"573\" height=\"468\" data-lazy-srcset=\"https://danq.me/wp-content/uploads/2022/11/danq-mastodon-verified.png 573w, https://danq.me/wp-content/uploads/2022/11/danq-mastodon-verified-300x245.png 300w, https://danq.me/wp-content/uploads/2022/11/danq-mastodon-verified-30x25.png 30w\" data-lazy-sizes=\"(max-width: 573px) 100vw, 573px\"><noscript><img decoding=\"async\" class=\"size-full wp-image-20723\" src=\"https://danq.me/wp-content/uploads/2022/11/xdanq-mastodon-verified.png.pagespeed.ic.EIgF9tGcsm.png\" alt=\"Screenshot showing @dan@danq.me's Mastodon account as the verified owner of website DanQ.me.\" width=\"573\" height=\"468\" srcset=\"https://danq.me/wp-content/uploads/2022/11/xdanq-mastodon-verified.png.pagespeed.ic.EIgF9tGcsm.png 573w, https://danq.me/wp-content/uploads/2022/11/xdanq-mastodon-verified-300x245.png.pagespeed.ic.8JmGpqqvYn.png 300w, https://danq.me/wp-content/uploads/2022/11/xdanq-mastodon-verified-30x25.png.pagespeed.ic.uoG8XJlM2T.png 30w\" sizes=\"(max-width: 573px) 100vw, 573px\"></noscript></a><figcaption id=\"caption-attachment-20723\" class=\"wp-caption-text\">The tick is green, not blue, but I can’t imagine anybody complains.</figcaption></figure>\n<p>A great thing about this form of verification is <em>you don’t have to trust my server</em> (and you probably shouldn’t): you can check it for yourself to ensure that the listed website <em>really does</em> state that this is the official Mastodon account of “me”.</p>\n<p>You can argue this just moves the problem further down the road – instead of trusting a corporation that have shown that they’re not above <em>selling</em> the rights to your identity you have to trust that a website is legitimate – and you’d be right. But in my case for example you can use years of history, archive.org, cross-links etc. to verify that the domain is “me”, and from that you can confirm the legitimacy of my Mastodon account. Anybody who can spoof multiple decades of my history and maintain that lie for a decade of indepdendent web archiving probably deserves to be able to pretend to be me!</p>\n<p>There are lots of other distributed methods too: web-of-trust systems, signed keys, even <abbr class=\"abbr\" title=\"Secure Socket Layer\">SSL</abbr> certificates would be a potential solution. Looking again at my profile, you’ll see that I list the fingerprint of <a href=\"https://danq.me/contact/gpg/\">my GPG key</a>, which you can compare to ones in public directories (which are co-signed by other people). This way you’d know that if you sent an encrypted DM to my Mastodon inbox it could only be decrypted if I were legitimately me. Or I could post a message signed with that key to prove my identity, insofar as my web-of-trust meets your satisfaction.</p>\n<p><strong>If <a href=\"https://www.gov.uk/government/organisations/prime-ministers-office-10-downing-street\">gov.uk’s page about 10 Downing Street</a> had profile pages for cabinet members with rel=”me” links to their social profiles I’d be <em>more</em>-likely to trust the legitimacy of those social profiles than I would if they had a centralised verification such as a Twitter “blue tick”.</strong></p>\n<p>Fediverse identify verification isn’t as hard a problem to solve as Derek implies, and indeed it’s already partially-solved. Not having a single point of authority is less convenient, sure, but it also protects you from some of the more-insidious identity problems that systems like Twitter’s have.</p>\n<div class=\"syndication-links\"><span class=\"relsyn\"><data class=\"u-syndication\" value=\"https://twitter.com/scatmandan/status/1592591207741390854\"></data> <data class=\"u-syndication\" value=\"https://m.danq.me/@dan/109349343478858634\"></data></span></div>",
+                "value": "In “Decentralization and verification”, Derek Kedziora said:\n\n\n…Mastodon by its very nature as a decentralized service can’t verify accounts.\nWe’d still need some trusted third party to do offline verifications and host them in a centralized repository.\n…\n\nDerek Kedziora\n\n\nLet’s not sell Mastodon short here. The service you compare it to – Twitter – solves this problem… but only if you trust Twitter as an authority on the identity of people. Mastodon also solves the problem, but it puts the trust in a different place: domain names and account pages.\nIf you want to “verify” yourself on Mastodon, you can use a rel=”me” link from a page or domain you control. It looks like this:\n Screenshot showing @dan@danq.me's Mastodon account as the verified owner of website DanQ.me.  Screenshot showing @dan@danq.me's Mastodon account as the verified owner of website DanQ.me. The tick is green, not blue, but I can’t imagine anybody complains.\nA great thing about this form of verification is you don’t have to trust my server (and you probably shouldn’t): you can check it for yourself to ensure that the listed website really does state that this is the official Mastodon account of “me”.\nYou can argue this just moves the problem further down the road – instead of trusting a corporation that have shown that they’re not above selling the rights to your identity you have to trust that a website is legitimate – and you’d be right. But in my case for example you can use years of history, archive.org, cross-links etc. to verify that the domain is “me”, and from that you can confirm the legitimacy of my Mastodon account. Anybody who can spoof multiple decades of my history and maintain that lie for a decade of indepdendent web archiving probably deserves to be able to pretend to be me!\nThere are lots of other distributed methods too: web-of-trust systems, signed keys, even SSL certificates would be a potential solution. Looking again at my profile, you’ll see that I list the fingerprint of my GPG key, which you can compare to ones in public directories (which are co-signed by other people). This way you’d know that if you sent an encrypted DM to my Mastodon inbox it could only be decrypted if I were legitimately me. Or I could post a message signed with that key to prove my identity, insofar as my web-of-trust meets your satisfaction.\nIf gov.uk’s page about 10 Downing Street had profile pages for cabinet members with rel=”me” links to their social profiles I’d be more-likely to trust the legitimacy of those social profiles than I would if they had a centralised verification such as a Twitter “blue tick”.\nFediverse identify verification isn’t as hard a problem to solve as Derek implies, and indeed it’s already partially-solved. Not having a single point of authority is less convenient, sure, but it also protects you from some of the more-insidious identity problems that systems like Twitter’s have."
+              }
+            ],
+            "in-reply-to": [
+              {
+                "type": [
+                  "h-cite"
+                ],
+                "properties": {
+                  "name": [
+                    ""
+                  ],
+                  "summary": [
+                    {
+                      "html": "",
+                      "value": ""
+                    }
+                  ]
+                },
+                "value": ""
+              },
+              "In “Decentralization and verification”, Derek Kedziora said:\n\n\n…Mastodon by its very nature as a decentralized service can’t verify accounts.\nWe’d still need some trusted third party to do offline verifications and host them in a centralized repository.\n…\n\nDerek Kedziora"
+            ],
+            "syndication": [
+              "https://twitter.com/scatmandan/status/1592591207741390854",
+              "https://m.danq.me/@dan/109349343478858634",
+              "https://twitter.com/scatmandan/status/1592591207741390854",
+              "https://m.danq.me/@dan/109349343478858634"
+            ],
+            "category": [
+              "fediverse",
+              "identity",
+              "mastodon",
+              "security",
+              "social networking",
+              "twitter"
+            ]
+          },
+          "id": "post-20722",
+          "children": [
+            {
+              "type": [
+                "h-cite"
+              ],
+              "properties": {
+                "content": [
+                  "…Mastodon by its very nature as a decentralized service can’t verify accounts.\nWe’d still need some trusted third party to do offline verifications and host them in a centralized repository.\n…"
+                ],
+                "author": [
+                  {
+                    "type": [
+                      "h-card"
+                    ],
+                    "properties": {
+                      "url": [
+                        "https://derekkedziora.com/"
+                      ],
+                      "name": [
+                        "Derek Kedziora"
+                      ]
+                    },
+                    "value": "Derek Kedziora"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               "Dan Q performed maintenance for GC9GKJA A Fine Pair # 1625 ~ Eynsham"
             ],
             "url": [
@@ -309,7 +398,7 @@
             ],
             "content": [
               {
-                "html": "<section class=\"response\">\n<header>\n<span class=\"h-card p-checkin\"> </span></header>\n</section>\n<p><abbr class=\"abbr\" title=\"Quick Easy Find\">QEF</abbr> for the geopup and I while out on a morning walk, although I did get somewhat prickled retrieving the cache from its hiding place. <abbr class=\"abbr\" title=\"Signed Log\">SL</abbr>, <abbr class=\"abbr\" title=\"Thanks For The Cache\">TFTC</abbr>.</p>\n<p><a href=\"https://danq.me/wp-content/uploads/2022/11/20221113_091037-scaled.jpg\"><img decoding=\"async\" class=\"lazy lazy-hidden aligncenter size-large wp-image-20692\" src=\"https://danq.me/wp-content/uploads/2022/11/x20221113_091037-30x14.jpg.pagespeed.ic.IxXBG9Mx7f.jpg\" data-lazy-type=\"image\" data-lazy-src=\"https://danq.me/wp-content/uploads/2022/11/20221113_091037-1024x475.jpg\" alt=\"Panorama showing flat autumn fields, fallow, on the other side of a ditch. A distant tree line and farm buildings mark the far end of the field.\" width=\"640\" height=\"297\" data-lazy-srcset=\"https://danq.me/wp-content/uploads/2022/11/20221113_091037-1024x475.jpg 1024w, https://danq.me/wp-content/uploads/2022/11/20221113_091037-300x139.jpg 300w, https://danq.me/wp-content/uploads/2022/11/20221113_091037-768x357.jpg 768w, https://danq.me/wp-content/uploads/2022/11/20221113_091037-1536x713.jpg 1536w, https://danq.me/wp-content/uploads/2022/11/20221113_091037-2048x951.jpg 2048w, https://danq.me/wp-content/uploads/2022/11/20221113_091037-30x14.jpg 30w, https://danq.me/wp-content/uploads/2022/11/20221113_091037-898x417.jpg 898w\" data-lazy-sizes=\"(max-width: 640px) 100vw, 640px\"><noscript><img decoding=\"async\" class=\"aligncenter size-large wp-image-20692\" src=\"https://danq.me/wp-content/uploads/2022/11/640x297x20221113_091037-1024x475.jpg.pagespeed.ic.OMtwSctBVf.jpg\" alt=\"Panorama showing flat autumn fields, fallow, on the other side of a ditch. A distant tree line and farm buildings mark the far end of the field.\" width=\"640\" height=\"297\" srcset=\"https://danq.me/wp-content/uploads/2022/11/x20221113_091037-1024x475.jpg.pagespeed.ic.fqg-ip4tgc.jpg 1024w, https://danq.me/wp-content/uploads/2022/11/x20221113_091037-300x139.jpg.pagespeed.ic.nUdvzE_VHx.jpg 300w, https://danq.me/wp-content/uploads/2022/11/x20221113_091037-768x357.jpg.pagespeed.ic.cfyGYRHrbm.jpg 768w, https://danq.me/wp-content/uploads/2022/11/x20221113_091037-1536x713.jpg.pagespeed.ic.E_FoIAdA_2.jpg 1536w, https://danq.me/wp-content/uploads/2022/11/x20221113_091037-2048x951.jpg.pagespeed.ic.-0inPXFwZ_.jpg 2048w, https://danq.me/wp-content/uploads/2022/11/x20221113_091037-30x14.jpg.pagespeed.ic.IxXBG9Mx7f.jpg 30w, https://danq.me/wp-content/uploads/2022/11/x20221113_091037-898x417.jpg.pagespeed.ic.ZjGUQAmXpr.jpg 898w\" sizes=\"(max-width: 640px) 100vw, 640px\"></noscript></a></p>\n<div class=\"syndication-links\"></div>\n          <img class=\"aligncenter size-full danq-map\" width=\"600\" src=\"https://danq.me/wp-content/themes/q18/xmap.php,qcenter=51.6273,,-1.4186,azoom=17,ascale=false,asize=600x300,amaptype=roadmap,aformat=png,avisual_refresh=true,amarkers=size,3Amid,P7Ccolor,3A0x1dc6df,P7Clabel,3A,P7C51.6273,,-1.4186.pagespeed.ic.UZP5kuzb9T.png\" alt=\"Map of 51.6273,-1.4186\">",
+                "html": "<section class=\"response\">\n<header>\n<span class=\"h-card p-checkin\"> </span></header>\n</section>\n<p><abbr class=\"abbr\" title=\"Quick Easy Find\">QEF</abbr> for the geopup and I while out on a morning walk, although I did get somewhat prickled retrieving the cache from its hiding place. <abbr class=\"abbr\" title=\"Signed Log\">SL</abbr>, <abbr class=\"abbr\" title=\"Thanks For The Cache\">TFTC</abbr>.</p>\n<p><a href=\"https://danq.me/wp-content/uploads/2022/11/20221113_091037-scaled.jpg\"><img decoding=\"async\" loading=\"lazy\" class=\"lazy lazy-hidden aligncenter size-large wp-image-20692\" src=\"https://danq.me/wp-content/uploads/2022/11/x20221113_091037-30x14.jpg.pagespeed.ic.IxXBG9Mx7f.jpg\" data-lazy-type=\"image\" data-lazy-src=\"https://danq.me/wp-content/uploads/2022/11/20221113_091037-1024x475.jpg\" alt=\"Panorama showing flat autumn fields, fallow, on the other side of a ditch. A distant tree line and farm buildings mark the far end of the field.\" width=\"640\" height=\"297\" data-lazy-srcset=\"https://danq.me/wp-content/uploads/2022/11/20221113_091037-1024x475.jpg 1024w, https://danq.me/wp-content/uploads/2022/11/20221113_091037-300x139.jpg 300w, https://danq.me/wp-content/uploads/2022/11/20221113_091037-768x357.jpg 768w, https://danq.me/wp-content/uploads/2022/11/20221113_091037-1536x713.jpg 1536w, https://danq.me/wp-content/uploads/2022/11/20221113_091037-2048x951.jpg 2048w, https://danq.me/wp-content/uploads/2022/11/20221113_091037-30x14.jpg 30w, https://danq.me/wp-content/uploads/2022/11/20221113_091037-898x417.jpg 898w\" data-lazy-sizes=\"(max-width: 640px) 100vw, 640px\"><noscript><img decoding=\"async\" loading=\"lazy\" class=\"aligncenter size-large wp-image-20692\" src=\"https://danq.me/wp-content/uploads/2022/11/640x297x20221113_091037-1024x475.jpg.pagespeed.ic.OMtwSctBVf.jpg\" alt=\"Panorama showing flat autumn fields, fallow, on the other side of a ditch. A distant tree line and farm buildings mark the far end of the field.\" width=\"640\" height=\"297\" srcset=\"https://danq.me/wp-content/uploads/2022/11/x20221113_091037-1024x475.jpg.pagespeed.ic.fqg-ip4tgc.jpg 1024w, https://danq.me/wp-content/uploads/2022/11/x20221113_091037-300x139.jpg.pagespeed.ic.nUdvzE_VHx.jpg 300w, https://danq.me/wp-content/uploads/2022/11/x20221113_091037-768x357.jpg.pagespeed.ic.cfyGYRHrbm.jpg 768w, https://danq.me/wp-content/uploads/2022/11/x20221113_091037-1536x713.jpg.pagespeed.ic.E_FoIAdA_2.jpg 1536w, https://danq.me/wp-content/uploads/2022/11/x20221113_091037-2048x951.jpg.pagespeed.ic.-0inPXFwZ_.jpg 2048w, https://danq.me/wp-content/uploads/2022/11/x20221113_091037-30x14.jpg.pagespeed.ic.IxXBG9Mx7f.jpg 30w, https://danq.me/wp-content/uploads/2022/11/x20221113_091037-898x417.jpg.pagespeed.ic.ZjGUQAmXpr.jpg 898w\" sizes=\"(max-width: 640px) 100vw, 640px\"></noscript></a></p>\n<div class=\"syndication-links\"></div>\n          <img class=\"aligncenter size-full danq-map\" width=\"600\" src=\"https://danq.me/wp-content/themes/q18/xmap.php,qcenter=51.6273,,-1.4186,azoom=17,ascale=false,asize=600x300,amaptype=roadmap,aformat=png,avisual_refresh=true,amarkers=size,3Amid,P7Ccolor,3A0x1dc6df,P7Clabel,3A,P7C51.6273,,-1.4186.pagespeed.ic.UZP5kuzb9T.png\" alt=\"Map of 51.6273,-1.4186\">",
                 "value": "QEF for the geopup and I while out on a morning walk, although I did get somewhat prickled retrieving the cache from its hiding place. SL, TFTC.\n Panorama showing flat autumn fields, fallow, on the other side of a ditch. A distant tree line and farm buildings mark the far end of the field.  Panorama showing flat autumn fields, fallow, on the other side of a ditch. A distant tree line and farm buildings mark the far end of the field. \n\n           Map of 51.6273,-1.4186"
               }
             ],
@@ -866,64 +955,6 @@
             ]
           },
           "id": "post-20682"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Dan Q found GC20GBC Neptune – The Mystic"
-            ],
-            "url": [
-              "https://danq.me/2022/10/25/dan-q-found-gc20gbc-neptune-the-mystic/"
-            ],
-            "uid": [
-              "https://danq.me/2022/10/25/dan-q-found-gc20gbc-neptune-the-mystic/"
-            ],
-            "published": [
-              "2022-10-25T11:30:00+01:00"
-            ],
-            "checkin": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "name": [
-                    "GC20GBC Neptune - The Mystic"
-                  ],
-                  "latitude": [
-                    "51.898333"
-                  ],
-                  "longitude": [
-                    "-2.078567"
-                  ]
-                },
-                "value": "https://danq.me/author/dan/This checkin to\n      GC20GBC Neptune - The Mystic\n      reflects\n      a geocaching.com log entry. See\n      more of Dan's cache logs."
-              },
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {},
-                "value": ""
-              }
-            ],
-            "content": [
-              {
-                "html": "<section class=\"response\">\n<header>\n<span class=\"h-card p-checkin\"> </span></header>\n</section>\n<p>Super quick find on lunch break during a day coworking in Cheltenham. Love the hiding spot which seems pretty much made for a cache of this shape and size! <abbr class=\"abbr\" title=\"Thanks For The Cache\">TFTC</abbr>!</p>\n<p><a href=\"https://danq.me/wp-content/uploads/2022/10/neptune-statue.jpg\"><img decoding=\"async\" loading=\"lazy\" class=\"lazy lazy-hidden aligncenter size-full wp-image-20632\" src=\"https://danq.me/wp-content/uploads/2022/10/xneptune-statue-30x17.jpg.pagespeed.ic.XPfWpQjAuD.jpg\" data-lazy-type=\"image\" data-lazy-src=\"https://danq.me/wp-content/uploads/2022/10/neptune-statue.jpg\" alt=\"In an urban environment, Dan waves. Behind him, a stone fountain-statue representing Neptune, surrounded by sea creatures, can be seen.\" width=\"1024\" height=\"577\" data-lazy-srcset=\"https://danq.me/wp-content/uploads/2022/10/neptune-statue.jpg 1024w, https://danq.me/wp-content/uploads/2022/10/neptune-statue-300x169.jpg 300w, https://danq.me/wp-content/uploads/2022/10/neptune-statue-768x433.jpg 768w, https://danq.me/wp-content/uploads/2022/10/neptune-statue-30x17.jpg 30w, https://danq.me/wp-content/uploads/2022/10/neptune-statue-898x506.jpg 898w\" data-lazy-sizes=\"(max-width: 1024px) 100vw, 1024px\"><noscript><img decoding=\"async\" loading=\"lazy\" class=\"aligncenter size-full wp-image-20632\" src=\"https://danq.me/wp-content/uploads/2022/10/xneptune-statue.jpg.pagespeed.ic.1h1jfDsEwj.jpg\" alt=\"In an urban environment, Dan waves. Behind him, a stone fountain-statue representing Neptune, surrounded by sea creatures, can be seen.\" width=\"1024\" height=\"577\" srcset=\"https://danq.me/wp-content/uploads/2022/10/xneptune-statue.jpg.pagespeed.ic.1h1jfDsEwj.jpg 1024w, https://danq.me/wp-content/uploads/2022/10/xneptune-statue-300x169.jpg.pagespeed.ic.xnsytmcegi.jpg 300w, https://danq.me/wp-content/uploads/2022/10/xneptune-statue-768x433.jpg.pagespeed.ic._aYUeXN5-q.jpg 768w, https://danq.me/wp-content/uploads/2022/10/xneptune-statue-30x17.jpg.pagespeed.ic.XPfWpQjAuD.jpg 30w, https://danq.me/wp-content/uploads/2022/10/xneptune-statue-898x506.jpg.pagespeed.ic.KENTYU_MiD.jpg 898w\" sizes=\"(max-width: 1024px) 100vw, 1024px\"></noscript></a></p>\n<div class=\"syndication-links\"></div>\n          <img class=\"aligncenter size-full danq-map\" width=\"600\" src=\"https://danq.me/wp-content/themes/q18/xmap.php,qcenter=51.898333,,-2.078567,azoom=17,ascale=false,asize=600x300,amaptype=roadmap,aformat=png,avisual_refresh=true,amarkers=size,3Amid,P7Ccolor,3A0x1dc6df,P7Clabel,3A,P7C51.898333,,-2.078567.pagespeed.ic.RT9v2Thb7C.jpg\" alt=\"Map of 51.898333,-2.078567\">",
-                "value": "Super quick find on lunch break during a day coworking in Cheltenham. Love the hiding spot which seems pretty much made for a cache of this shape and size! TFTC!\n In an urban environment, Dan waves. Behind him, a stone fountain-statue representing Neptune, surrounded by sea creatures, can be seen.  In an urban environment, Dan waves. Behind him, a stone fountain-statue representing Neptune, surrounded by sea creatures, can be seen. \n\n           Map of 51.898333,-2.078567"
-              }
-            ],
-            "category": [
-              "cache log",
-              "geocaching",
-              "teleworking",
-              "work"
-            ]
-          },
-          "id": "post-20631"
         }
       ]
     }
@@ -938,9 +969,9 @@
       "https://danq.me/comments/feed/"
     ],
     "stylesheet": [
-      "https://c0.wp.com/c/6.1/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css",
-      "https://c0.wp.com/c/6.1/wp-includes/js/mediaelement/wp-mediaelement.min.css",
-      "https://c0.wp.com/c/6.1/wp-includes/css/classic-themes.min.css",
+      "https://c0.wp.com/c/6.1.1/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css",
+      "https://c0.wp.com/c/6.1.1/wp-includes/js/mediaelement/wp-mediaelement.min.css",
+      "https://c0.wp.com/c/6.1.1/wp-includes/css/classic-themes.min.css",
       "https://danq.me/wp-content/themes/q18/A.style.css,qver=20220928160841.pagespeed.cf.f1Fd_skx3N.css",
       "https://danq.me/wp-content/plugins/social-networks-auto-poster-facebook-twitter-g/js-css/A.jquery.modal.min.css,qver=4.3.25.pagespeed.cf.X1GJ3YWF3I.css"
     ],
@@ -1012,6 +1043,7 @@
       "https://danq.me/"
     ],
     "bookmark": [
+      "https://danq.me/2022/11/15/reply-to-decentralization-and-verification/",
       "https://danq.me/2022/11/14/dan-q-performed-maintenance-for-gc9gkja-a-fine-pair-1625-eynsham-5/",
       "https://danq.me/2022/11/14/dan-q-posted-a-note-for-gc9gkja-a-fine-pair-1625-eynsham/",
       "https://danq.me/2022/11/14/dan-q-performed-maintenance-for-gc9gtv3-drive-slowly-fox-crossing/",
@@ -1025,19 +1057,36 @@
       "https://danq.me/2022/11/07/how-to-date-a-recording-using-background-electrical-noise/",
       "https://danq.me/2022/11/07/maze-xml/",
       "https://danq.me/2022/11/06/reply-to-openid-for-wp/",
-      "https://danq.me/2022/10/31/dan-q-found-gc4pypf-chester-services-tb-hotel/",
-      "https://danq.me/2022/10/25/dan-q-found-gc20gbc-neptune-the-mystic/"
+      "https://danq.me/2022/10/31/dan-q-found-gc4pypf-chester-services-tb-hotel/"
+    ],
+    "syndication": [
+      "https://twitter.com/scatmandan/status/1592591207741390854",
+      "https://m.danq.me/@dan/109349343478858634",
+      "https://www.facebook.com/1353711854741727/posts/1124744398313496",
+      "https://scatmania.livejournal.com/248546.html",
+      "https://twitter.com/scatmandan/status/1590437523293184000",
+      "https://m.danq.me/web/@dan/109315672391861930",
+      "https://twitter.com/scatmandan/status/1590316475167911936",
+      "https://m.danq.me/@dan/109313782459619843",
+      "https://twitter.com/scatmandan/status/1590127976531755009",
+      "https://twitter.com/scatmandan/status/1589622945722286081",
+      "https://m.danq.me/@dan/109302952842761722",
+      "https://twitter.com/scatmandan/status/1589613584216121345",
+      "https://m.danq.me/@dan/109302813986317668"
     ],
     "tag": [
+      "https://danq.me/tag/fediverse/",
+      "https://danq.me/tag/identity/",
+      "https://danq.me/tag/mastodon/",
+      "https://danq.me/tag/security/",
+      "https://danq.me/tag/social-networking/",
+      "https://danq.me/tag/twitter/",
       "https://danq.me/tag/cache-log/",
       "https://danq.me/tag/geocaching/",
       "https://danq.me/tag/dogs/",
       "https://danq.me/tag/memorable/",
-      "https://danq.me/tag/fediverse/",
       "https://danq.me/tag/indieweb/",
-      "https://danq.me/tag/mastodon/",
       "https://danq.me/tag/technology/",
-      "https://danq.me/tag/twitter/",
       "https://danq.me/tag/choose-your-own-adventure/",
       "https://danq.me/tag/programming/",
       "https://danq.me/tag/study/",
@@ -1051,29 +1100,13 @@
       "https://danq.me/tag/electricity/",
       "https://danq.me/tag/forensics/",
       "https://danq.me/tag/police/",
-      "https://danq.me/tag/security/",
       "https://danq.me/tag/standards/",
       "https://danq.me/tag/xml/",
       "https://danq.me/tag/automattic/",
       "https://danq.me/tag/openid/",
       "https://danq.me/tag/web/",
       "https://danq.me/tag/wordpress/",
-      "https://danq.me/tag/halloween/",
-      "https://danq.me/tag/teleworking/",
-      "https://danq.me/tag/work/"
-    ],
-    "syndication": [
-      "https://www.facebook.com/1353711854741727/posts/1124744398313496",
-      "https://scatmania.livejournal.com/248546.html",
-      "https://twitter.com/scatmandan/status/1590437523293184000",
-      "https://m.danq.me/web/@dan/109315672391861930",
-      "https://twitter.com/scatmandan/status/1590316475167911936",
-      "https://m.danq.me/@dan/109313782459619843",
-      "https://twitter.com/scatmandan/status/1590127976531755009",
-      "https://twitter.com/scatmandan/status/1589622945722286081",
-      "https://m.danq.me/@dan/109302952842761722",
-      "https://twitter.com/scatmandan/status/1589613584216121345",
-      "https://m.danq.me/@dan/109302813986317668"
+      "https://danq.me/tag/halloween/"
     ],
     "license": [
       "https://creativecommons.org/licenses/by-nc/4.0/"
@@ -1087,21 +1120,21 @@
       "title": "Dan Q » Posts by Dan Q Feed",
       "type": "application/rss+xml"
     },
-    "https://c0.wp.com/c/6.1/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css": {
+    "https://c0.wp.com/c/6.1.1/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css": {
       "rels": [
         "stylesheet"
       ],
       "media": "all",
       "type": "text/css"
     },
-    "https://c0.wp.com/c/6.1/wp-includes/js/mediaelement/wp-mediaelement.min.css": {
+    "https://c0.wp.com/c/6.1.1/wp-includes/js/mediaelement/wp-mediaelement.min.css": {
       "rels": [
         "stylesheet"
       ],
       "media": "all",
       "type": "text/css"
     },
-    "https://c0.wp.com/c/6.1/wp-includes/css/classic-themes.min.css": {
+    "https://c0.wp.com/c/6.1.1/wp-includes/css/classic-themes.min.css": {
       "rels": [
         "stylesheet"
       ],
@@ -1330,6 +1363,60 @@
       ],
       "text": "\n            Dan\n            Q\n          "
     },
+    "https://danq.me/2022/11/15/reply-to-decentralization-and-verification/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "Reply to Decentralization and verification"
+    },
+    "https://twitter.com/scatmandan/status/1592591207741390854": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "\n                ​​                twitter.com\n              "
+    },
+    "https://m.danq.me/@dan/109349343478858634": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "\n                                m.danq.me\n              "
+    },
+    "https://danq.me/tag/fediverse/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "fediverse"
+    },
+    "https://danq.me/tag/identity/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "identity"
+    },
+    "https://danq.me/tag/mastodon/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "mastodon"
+    },
+    "https://danq.me/tag/security/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "security"
+    },
+    "https://danq.me/tag/social-networking/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "social networking"
+    },
+    "https://danq.me/tag/twitter/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "twitter"
+    },
     "https://danq.me/2022/11/14/dan-q-performed-maintenance-for-gc9gkja-a-fine-pair-1625-eynsham-5/": {
       "rels": [
         "bookmark"
@@ -1426,35 +1513,17 @@
       ],
       "text": "\n                                m.danq.me\n              "
     },
-    "https://danq.me/tag/fediverse/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "fediverse"
-    },
     "https://danq.me/tag/indieweb/": {
       "rels": [
         "tag"
       ],
       "text": "indieweb"
     },
-    "https://danq.me/tag/mastodon/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "mastodon"
-    },
     "https://danq.me/tag/technology/": {
       "rels": [
         "tag"
       ],
       "text": "technology"
-    },
-    "https://danq.me/tag/twitter/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "twitter"
     },
     "https://danq.me/2022/11/09/debugging-mysteries/": {
       "rels": [
@@ -1582,12 +1651,6 @@
       ],
       "text": "police"
     },
-    "https://danq.me/tag/security/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "security"
-    },
     "https://danq.me/2022/11/07/maze-xml/": {
       "rels": [
         "bookmark"
@@ -1659,24 +1722,6 @@
         "tag"
       ],
       "text": "halloween"
-    },
-    "https://danq.me/2022/10/25/dan-q-found-gc20gbc-neptune-the-mystic/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Dan Q found GC20GBC Neptune – The Mystic"
-    },
-    "https://danq.me/tag/teleworking/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "teleworking"
-    },
-    "https://danq.me/tag/work/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "work"
     },
     "https://creativecommons.org/licenses/by-nc/4.0/": {
       "rels": [

@@ -33,18 +33,23 @@
       "https://spezi.social/@lukas"
     ],
     "pgpkey": [
-      "https://lukasmalkmus.com/keys/gpg.txt"
+      "https://lukasmalkmus.com/gpg.txt"
     ],
     "authorization_endpoint": [
       "https://indieauth.com/auth"
+    ],
+    "openid.delegate": [
+      "https://lukasmalkmus.com/"
+    ],
+    "openid.server": [
+      "https://openid.indieauth.com/openid"
     ],
     "noopener": [
       "https://www.axiom.co/",
       "https://github.com/lukasmalkmus",
       "https://twitter.com/lukasmalkmus",
       "https://spezi.social/@lukas",
-      "https://age-encryption.org/",
-      "https://cal.com/lukasmalkmus"
+      "https://age-encryption.org/"
     ]
   },
   "rel-urls": {
@@ -112,7 +117,7 @@
         "me"
       ]
     },
-    "https://lukasmalkmus.com/keys/gpg.txt": {
+    "https://lukasmalkmus.com/gpg.txt": {
       "rels": [
         "pgpkey"
       ]
@@ -120,6 +125,16 @@
     "https://indieauth.com/auth": {
       "rels": [
         "authorization_endpoint"
+      ]
+    },
+    "https://lukasmalkmus.com/": {
+      "rels": [
+        "openid.delegate"
+      ]
+    },
+    "https://openid.indieauth.com/openid": {
+      "rels": [
+        "openid.server"
       ]
     },
     "https://www.axiom.co/": {
@@ -133,12 +148,6 @@
         "noopener"
       ],
       "text": "age"
-    },
-    "https://cal.com/lukasmalkmus": {
-      "rels": [
-        "noopener"
-      ],
-      "text": "check my available meetings"
     }
   }
 }

@@ -97,11 +97,13 @@
       "https://medium.com/@marksuth",
       "https://marksuth.dev/",
       "mailto:mark@marksuth.dev",
-      "https://instagram.com/marksuth"
+      "https://instagram.com/marksuth",
+      "https://mastodon.social/@marksuth"
     ],
     "alternate": [
       "https://marksuth.dev/feed/posts.xml",
-      "https://marksuth.dev/feed/photos.xml"
+      "https://marksuth.dev/feed/photos.xml",
+      "https://marksuth.dev/feed/stream.xml"
     ],
     "icon": [
       "https://marksuth.dev/images/icon.png",
@@ -146,13 +148,6 @@
     ],
     "author": [
       "https://marksuth.dev/"
-    ],
-    "noopener": [
-      "https://twitter.com/marksuth",
-      "https://github.com/marksuth",
-      "https://instagram.com/marksuth",
-      "https://www.linkedin.com/in/marksuth",
-      "https://medium.com/@marksuth"
     ]
   },
   "rel-urls": {
@@ -198,6 +193,13 @@
         "alternate"
       ],
       "title": "Mark Sutherland - Photos",
+      "type": "application/rss+xml"
+    },
+    "https://marksuth.dev/feed/stream.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Mark Sutherland - Stream",
       "type": "application/rss+xml"
     },
     "https://marksuth.dev/images/icon.png": {
@@ -275,10 +277,15 @@
     },
     "https://instagram.com/marksuth": {
       "rels": [
-        "me",
-        "noopener"
+        "me"
       ],
       "title": "Instagram"
+    },
+    "https://mastodon.social/@marksuth": {
+      "rels": [
+        "me"
+      ],
+      "title": "Mastodon"
     }
   }
 }
