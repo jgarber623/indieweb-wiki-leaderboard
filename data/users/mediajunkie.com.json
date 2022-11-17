@@ -13,14 +13,13 @@
       "https://mediajunkie.com/wp-content/themes/mediajunkie/css/screen.css",
       "https://mediajunkie.com/wp-content/themes/mediajunkie/css/pages.css",
       "https://mediajunkie.com/wp-content/themes/mediajunkie/css/widgets.css",
-      "https://mediajunkie.com/wp-includes/css/dist/block-library/style.min.css?ver=6.0.3",
+      "https://mediajunkie.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1",
+      "https://mediajunkie.com/wp-includes/css/classic-themes.min.css?ver=1",
+      "https://mediajunkie.com/wp-content/plugins/fediembedi/assets/mastodon.css?ver=1668355440",
       "https://mediajunkie.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70"
     ],
     "pingback": [
       "https://mediajunkie.com/xmlrpc.php"
-    ],
-    "dns-prefetch": [
-      "https://s.w.org/"
     ],
     "alternate": [
       "https://mediajunkie.com/feed/",
@@ -40,9 +39,9 @@
     ],
     "bookmark": [
       "https://mediajunkie.com/2022/getting-the-itch/",
+      "https://mediajunkie.com/2022/got-my-flu-shot-yesterday/",
       "https://mediajunkie.com/2022/more-geek-stuff/",
       "https://mediajunkie.com/2022/rip-van-weblog/",
-      "https://mediajunkie.com/2022/quick-recursive-test/",
       "https://mediajunkie.com/project/subreddit-style-communities-for-7-cups/",
       "https://mediajunkie.com/project/ears/",
       "https://mediajunkie.com/2014/uxpin-interview/",
@@ -114,11 +113,6 @@
         "pingback"
       ]
     },
-    "https://s.w.org/": {
-      "rels": [
-        "dns-prefetch"
-      ]
-    },
     "https://mediajunkie.com/feed/": {
       "rels": [
         "alternate"
@@ -133,7 +127,21 @@
       "title": "Mediajunkie » Comments Feed",
       "type": "application/rss+xml"
     },
-    "https://mediajunkie.com/wp-includes/css/dist/block-library/style.min.css?ver=6.0.3": {
+    "https://mediajunkie.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://mediajunkie.com/wp-includes/css/classic-themes.min.css?ver=1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://mediajunkie.com/wp-content/plugins/fediembedi/assets/mastodon.css?ver=1668355440": {
       "rels": [
         "stylesheet"
       ],
@@ -226,6 +234,13 @@
       ],
       "text": "ux"
     },
+    "https://mediajunkie.com/2022/got-my-flu-shot-yesterday/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to Got my flu shot yesterday",
+      "text": "Got my flu shot yesterday"
+    },
     "https://mediajunkie.com/2022/more-geek-stuff/": {
       "rels": [
         "bookmark"
@@ -239,13 +254,6 @@
       ],
       "title": "Permalink to rip van weblog",
       "text": "rip van weblog"
-    },
-    "https://mediajunkie.com/2022/quick-recursive-test/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Permalink to Quick recursive test",
-      "text": "Quick recursive test"
     },
     "https://mediajunkie.com/project/subreddit-style-communities-for-7-cups/": {
       "rels": [

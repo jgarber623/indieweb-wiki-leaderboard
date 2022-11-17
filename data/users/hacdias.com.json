@@ -18,7 +18,7 @@
           "Henrique Dias"
         ],
         "email": [
-          "https://hacdias.com/cdn-cgi/l/email-protection#e18c80888da189808285888092cf828e8c"
+          "https://hacdias.com/cdn-cgi/l/email-protection#f39e929a9fb39b9290979a9280dd909c9e"
         ],
         "key": [
           "https://hacdias.com/pubkey.txt"
@@ -38,6 +38,74 @@
           "properties": {
             "content": [
               {
+                "html": "<p>In September, I traveled to Italy with my partner. Here are some of the pictures I took at the time, finally seeing the light of the day. I took many other pictures, and it is very hard to choose what to show. Italy is such a beautiful country. We visited Napoli, Roma, Firenze, Pisa, Venezia, Bologna, Milano and Bergamo.</p>\n<style>.grid-italie-2022{grid-template-columns:repeat(6,1fr);grid-template-areas:\"a a a b b b\" \"c c d d e e\" \"f f f f f f\" \"g g h h i i\"}.grid-italie-2022>*:nth-child(1){grid-area:a}.grid-italie-2022>*:nth-child(2){grid-area:b}.grid-italie-2022>*:nth-child(3){grid-area:c}.grid-italie-2022>*:nth-child(4){grid-area:d}.grid-italie-2022>*:nth-child(5){grid-area:e}.grid-italie-2022>*:nth-child(6){grid-area:f}.grid-italie-2022>*:nth-child(7){grid-area:g}.grid-italie-2022>*:nth-child(8){grid-area:h}.grid-italie-2022>*:nth-child(9){grid-area:i}</style>",
+                "value": "In September, I traveled to Italy with my partner. Here are some of the pictures I took at the time, finally seeing the light of the day. I took many other pictures, and it is very hard to choose what to show. Italy is such a beautiful country. We visited Napoli, Roma, Firenze, Pisa, Venezia, Bologna, Milano and Bergamo."
+              }
+            ],
+            "photo": [
+              "https://cdn.hacdias.com/img/2000/ece0c9110b225ff12ecf8118466a674a17fc740d13394ef991ece3d97be2c6aa.jpeg",
+              "https://cdn.hacdias.com/img/2000/9f969a9e9f385cbbcef6c5f7b2c25503a8b4cd022f5fb7f63e6e5c1e3474460c.jpeg",
+              "https://cdn.hacdias.com/img/2000/638a05816f171d5bb0cfd6a3d99d73c2f67e314ad009d5aca83e35c2ad17eb2d.jpeg",
+              "https://cdn.hacdias.com/img/2000/7eea4e777e53a52b98f99b13a9318034ebf7d7e012be959884e5b262a2ad8d58.jpeg",
+              "https://cdn.hacdias.com/img/2000/31c47486b3c31c948cd6db3ef7f4f484d922a2202f39a1415b6175aaea7ed602.jpeg",
+              "https://cdn.hacdias.com/img/2000/f01370c2567a0285aea86f89b0c7300136e4fb01df1b9badf2d025e6f98d0733.jpeg",
+              "https://cdn.hacdias.com/img/2000/4f60cb20ed4e9f754e035f0f677713d4a284acf181d8a748988294ab9bfe882f.jpeg",
+              "https://cdn.hacdias.com/img/2000/d525fdf790ad117cf5b47664b742e9266117823ae60c20fbaf6b6ab39f86b8e4.jpeg",
+              "https://cdn.hacdias.com/img/2000/ee3a9b458f3d0d3f1e66d6d90cce223aa976d3e2ae08cb2d2b097d425f1f46b5.jpeg"
+            ],
+            "location": [
+              {
+                "type": [
+                  "h-adr"
+                ],
+                "properties": {
+                  "locality": [
+                    "Eindhoven"
+                  ],
+                  "region": [
+                    "North Brabant"
+                  ],
+                  "country": [
+                    "Netherlands"
+                  ]
+                },
+                "value": "Eindhoven, North Brabant, Netherlands"
+              }
+            ],
+            "published": [
+              "2022-11-16T14:28:29+01:00"
+            ],
+            "url": [
+              "https://hacdias.com/2022/11/16/trip-to-italy-in-photos"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "photo": [
+                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
+                  ],
+                  "url": [
+                    "https://hacdias.com/"
+                  ],
+                  "name": [
+                    "Henrique Dias"
+                  ]
+                },
+                "value": "https://hacdias.com/"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
                 "html": "<p><abbr title=\"Today I learned\">TIL</abbr> that the name of the PEM block of encoded public keys matters. I had a key that was using a block name <code>PUBLIC KEY</code>, where it should’ve been <code>RSA PUBLIC KEY</code>. Therefore, the client was rejecting the key as it was decoding it using the incorrect format. Here’s <a href=\"https://jpassing.com/2021/11/30/using-pem-to-encode-public-keys/\" rel=\"noopener noreferrer\" target=\"_blank\">a very nice post</a> about this.</p>",
                 "value": "TIL that the name of the PEM block of encoded public keys matters. I had a key that was using a block name PUBLIC KEY, where it should’ve been RSA PUBLIC KEY. Therefore, the client was rejecting the key as it was decoding it using the incorrect format. Here’s a very nice post about this."
               }
@@ -47,6 +115,10 @@
             ],
             "url": [
               "https://hacdias.com/2022/11/15/19h23m33s63"
+            ],
+            "category": [
+              "cryptography",
+              "security"
             ],
             "author": [
               {
@@ -606,63 +678,6 @@
               }
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "content": [
-              {
-                "html": "<p>I’m finally in Delft - after wanting to come here since quite some time ago - and it’s so nice. It’s cute, old, there’s canals. Also, I shockingly got a tram from Den Haag to Delft. Yes, a tram.</p>",
-                "value": "I’m finally in Delft - after wanting to come here since quite some time ago - and it’s so nice. It’s cute, old, there’s canals. Also, I shockingly got a tram from Den Haag to Delft. Yes, a tram."
-              }
-            ],
-            "location": [
-              {
-                "type": [
-                  "h-adr"
-                ],
-                "properties": {
-                  "locality": [
-                    "Delft"
-                  ],
-                  "region": [
-                    "South Holland"
-                  ],
-                  "country": [
-                    "Netherlands"
-                  ]
-                },
-                "value": "Delft, South Holland, Netherlands"
-              }
-            ],
-            "published": [
-              "2022-11-04T12:00:01+01:00"
-            ],
-            "url": [
-              "https://hacdias.com/2022/11/04/12h00m01s84"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "photo": [
-                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
-                  ],
-                  "url": [
-                    "https://hacdias.com/"
-                  ],
-                  "name": [
-                    "Henrique Dias"
-                  ]
-                },
-                "value": "https://hacdias.com/"
-              }
-            ]
-          }
         }
       ]
     }
@@ -707,7 +722,7 @@
       "https://lobste.rs/u/hacdias",
       "mailto:mail@hacdias.com",
       "mailto:hacdias@gmail.com",
-      "https://hacdias.com/cdn-cgi/l/email-protection#e18c80888da189808285888092cf828e8c"
+      "https://hacdias.com/cdn-cgi/l/email-protection#f39e929a9fb39b9290979a9280dd909c9e"
     ],
     "webmention": [
       "https://webmention.io/hacdias.com/webmention"
@@ -716,14 +731,6 @@
       "https://webmention.io/hacdias.com/xmlrpc"
     ],
     "noopener": [
-      "https://hacdias.com/cdn-cgi/l/email-protection#5538343c39153d3436313c34267b363a38",
-      "https://t.me/hacdias",
-      "https://discord.com/users/hacdias#2540",
-      "https://matrix.to/#/@hacdias:tchncs.de",
-      "https://github.com/hacdias",
-      "https://twitter.com/hacdias",
-      "https://instagram.com/hacdias",
-      "https://linkedin.com/in/hacdias",
       "https://jpassing.com/2021/11/30/using-pem-to-encode-public-keys/",
       "https://twitter.com/mxbck/status/1590809274808147990",
       "https://blog.jim-nielsen.com/2022/verified-personal-website/",
@@ -744,14 +751,6 @@
       "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/next"
     ],
     "noreferrer": [
-      "https://hacdias.com/cdn-cgi/l/email-protection#5538343c39153d3436313c34267b363a38",
-      "https://t.me/hacdias",
-      "https://discord.com/users/hacdias#2540",
-      "https://matrix.to/#/@hacdias:tchncs.de",
-      "https://github.com/hacdias",
-      "https://twitter.com/hacdias",
-      "https://instagram.com/hacdias",
-      "https://linkedin.com/in/hacdias",
       "https://jpassing.com/2021/11/30/using-pem-to-encode-public-keys/",
       "https://twitter.com/mxbck/status/1590809274808147990",
       "https://blog.jim-nielsen.com/2022/verified-personal-website/",
@@ -887,35 +886,7 @@
         "pingback"
       ]
     },
-    "https://hacdias.com/cdn-cgi/l/email-protection#5538343c39153d3436313c34267b363a38": {
-      "rels": [
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "✉️ E-mail: [email protected]"
-    },
-    "https://t.me/hacdias": {
-      "rels": [
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "☎️ Telegram: @hacdias"
-    },
-    "https://discord.com/users/hacdias#2540": {
-      "rels": [
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "🎮 Discord: hacdias#2540"
-    },
-    "https://matrix.to/#/@hacdias:tchncs.de": {
-      "rels": [
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "✨ Matrix: @hacdias:tchncs.de"
-    },
-    "https://hacdias.com/cdn-cgi/l/email-protection#e18c80888da189808285888092cf828e8c": {
+    "https://hacdias.com/cdn-cgi/l/email-protection#f39e929a9fb39b9290979a9280dd909c9e": {
       "rels": [
         "me"
       ],

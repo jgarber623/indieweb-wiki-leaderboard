@@ -34,6 +34,29 @@
           ],
           "properties": {
             "name": [
+              "Mastodon Discovery",
+              ""
+            ],
+            "url": [
+              "https://herestomwiththeweather.com/2022/11/15/mastodon-discovery/"
+            ],
+            "time": [
+              "2022-11-15T16:42:33+00:00"
+            ],
+            "content": [
+              {
+                "html": "<p>Making notes is helpful when reading and running unfamiliar code for the first time.  I usually start with happy paths.  Here’s some notes I made while learning about Mastodon account search and discovery.  It’s really cool to poke around the code that so many people are using every day to find each other.</p>\n\n<p>When you search on an account identifier on Mastodon, your browser makes a request to your Mastodon instance:</p>\n\n<blockquote>\n  <p>/api/v2/search?q=%40herestomwiththeweather%40mastodon.social&amp;resolve=true&amp;limit=5</p>\n</blockquote>\n\n<p>The resolve=true parameter tells your Mastodon instance to make a webfinger request to the target Mastodon instance if necessary. The search controller <a href=\"https://github.com/herestomwiththeweather/mastodon/blob/main/app/controllers/api/v2/search_controller.rb#L32\">makes a call to the SearchService</a></p>\n\n<div class=\"highlighter-rouge\">\n<pre class=\"highlight\"><code>  def search_results\n    SearchService.new.call(\n      params[:q],\n      current_account,\n      limit_param(RESULTS_LIMIT),\n      search_params.merge(resolve: truthy_param?(:resolve), exclude_unreviewed: truthy_param?(:exclude_unreviewed))\n    )\n  end\n</code></pre>\n</div>\n\n<p>and since resolve=true, SearchService <a href=\"https://github.com/herestomwiththeweather/mastodon/blob/main/app/services/account_search_service.rb#L36\">makes a call to the ResolveAccountService</a></p>\n\n<div class=\"highlighter-rouge\">\n<pre class=\"highlight\"><code>      if options[:resolve]\n        ResolveAccountService.new.call(query)\n</code></pre>\n</div>\n\n<p>The purpose of ResolveAccountService is to “Find or create an account record for a remote user” and return an account object to the search controller. It includes <a href=\"https://github.com/herestomwiththeweather/mastodon/blob/main/app/helpers/webfinger_helper.rb\">WebfingerHelper</a> which is a trivial module with just one one-line method named webfinger!()</p>\n\n<div class=\"highlighter-rouge\">\n<pre class=\"highlight\"><code>module WebfingerHelper\n  def webfinger!(uri)\n    Webfinger.new(uri).perform\n  end\nend\n</code></pre>\n</div>\n\n<p>This method returns a webfinger object. Rather than call it directly, ResolveAccountService <a href=\"https://github.com/herestomwiththeweather/mastodon/blob/main/app/services/resolve_account_service.rb#L34\">invokes process_webfinger!</a> which <a href=\"https://github.com/herestomwiththeweather/mastodon/blob/main/app/services/resolve_account_service.rb#L86\">invokes it</a> and then asks the returned webfinger object’s subject method for its username and domain and makes them instance variables of the service object.</p>\n\n<div class=\"highlighter-rouge\">\n<pre class=\"highlight\"><code>  def process_webfinger!(uri)\n    @webfinger                           = webfinger!(\"acct:#{uri}\")\n    confirmed_username, confirmed_domain = split_acct(@webfinger.subject)\n\n    if confirmed_username.casecmp(@username).zero? &amp;&amp; confirmed_domain.casecmp(@domain).zero?\n      @username = confirmed_username\n      @domain   = confirmed_domain\n      return\n    end\n</code></pre>\n</div>\n\n<p>If the Mastodon instance does not already know about this account, ResolveAccountService <a href=\"https://github.com/herestomwiththeweather/mastodon/blob/main/app/services/resolve_account_service.rb#L55\">invokes fetch_account!</a> which <a href=\"https://github.com/herestomwiththeweather/mastodon/blob/main/app/services/resolve_account_service.rb#L114\">calls the ActivityPub::FetchRemoteAccountService</a> which inherits from <a href=\"https://github.com/herestomwiththeweather/mastodon/blob/main/app/services/activitypub/fetch_remote_actor_service.rb\">ActivityPub::FetchRemoteActorService</a></p>\n\n<div class=\"highlighter-rouge\">\n<pre class=\"highlight\"><code>      @account = ActivityPub::FetchRemoteAccountService.new.call(actor_url, suppress_errors: @options[:suppress_errors])\n</code></pre>\n</div>\n\n<p>The actor_url will look something like</p>\n\n<blockquote>\n  <p>https://mastodon.social/users/herestomwiththeweather</p>\n</blockquote>\n\n<p>The ActivityPub::FetchRemoteActorService <a href=\"https://github.com/mastodon/mastodon/blob/main/app/services/activitypub/fetch_remote_actor_service.rb#L19\">passes the actor_url parameter to fetch_resource</a> to receive a json response for the remote account.</p>\n\n<div class=\"highlighter-rouge\">\n<pre class=\"highlight\"><code>    @json = begin\n      if prefetched_body.nil?\n        fetch_resource(uri, id)\n      else\n\n</code></pre>\n</div>\n\n<p>The response includes a lot of information including name, summary, publicKey, images and urls to fetch more information like followers and following.</p>\n\n<p>Finally, the ActivityPub::FetchRemoteActorService <a href=\"https://github.com/mastodon/mastodon/blob/main/app/services/activitypub/fetch_remote_actor_service.rb#L38\">calls the ActivityPub::ProcessAccountService</a>, passing it the json response.</p>\n\n<div class=\"highlighter-rouge\">\n<pre class=\"highlight\"><code>    ActivityPub::ProcessAccountService.new.call(@username, @domain, @json, only_key: only_key, verified_webfinger: !only_key)\n</code></pre>\n</div>\n\n<p>If the Mastodon instance does not know about the account, ActivityPub::ProcessAccountService <a href=\"https://github.com/mastodon/mastodon/blob/main/app/services/activitypub/process_account_service.rb#L28\">invokes create_account and update_account</a> to save the username, domain and all the associated urls from the json response to a new account record in the database.</p>\n\n<div class=\"highlighter-rouge\">\n<pre class=\"highlight\"><code>      create_account if @account.nil?\n      update_account\n</code></pre>\n</div>\n\n<p>I have several questions about how following others works and will probably look at that soon.  I may start out by reading <a href=\"https://tinysubversions.com/notes/reading-activitypub/\">A highly opinionated guide to learning about ActivityPub</a> which I bookmarked a while ago.</p>",
+                "value": "Making notes is helpful when reading and running unfamiliar code for the first time.  I usually start with happy paths.  Here’s some notes I made while learning about Mastodon account search and discovery.  It’s really cool to poke around the code that so many people are using every day to find each other.\n\nWhen you search on an account identifier on Mastodon, your browser makes a request to your Mastodon instance:\n\n\n  /api/v2/search?q=%40herestomwiththeweather%40mastodon.social&resolve=true&limit=5\n\n\nThe resolve=true parameter tells your Mastodon instance to make a webfinger request to the target Mastodon instance if necessary. The search controller makes a call to the SearchService\n\n  def search_results\n    SearchService.new.call(\n      params[:q],\n      current_account,\n      limit_param(RESULTS_LIMIT),\n      search_params.merge(resolve: truthy_param?(:resolve), exclude_unreviewed: truthy_param?(:exclude_unreviewed))\n    )\n  end\n\n\n\nand since resolve=true, SearchService makes a call to the ResolveAccountService\n\n      if options[:resolve]\n        ResolveAccountService.new.call(query)\n\n\n\nThe purpose of ResolveAccountService is to “Find or create an account record for a remote user” and return an account object to the search controller. It includes WebfingerHelper which is a trivial module with just one one-line method named webfinger!()\n\nmodule WebfingerHelper\n  def webfinger!(uri)\n    Webfinger.new(uri).perform\n  end\nend\n\n\n\nThis method returns a webfinger object. Rather than call it directly, ResolveAccountService invokes process_webfinger! which invokes it and then asks the returned webfinger object’s subject method for its username and domain and makes them instance variables of the service object.\n\n  def process_webfinger!(uri)\n    @webfinger                           = webfinger!(\"acct:#{uri}\")\n    confirmed_username, confirmed_domain = split_acct(@webfinger.subject)\n\n    if confirmed_username.casecmp(@username).zero? && confirmed_domain.casecmp(@domain).zero?\n      @username = confirmed_username\n      @domain   = confirmed_domain\n      return\n    end\n\n\n\nIf the Mastodon instance does not already know about this account, ResolveAccountService invokes fetch_account! which calls the ActivityPub::FetchRemoteAccountService which inherits from ActivityPub::FetchRemoteActorService\n\n      @account = ActivityPub::FetchRemoteAccountService.new.call(actor_url, suppress_errors: @options[:suppress_errors])\n\n\n\nThe actor_url will look something like\n\n\n  https://mastodon.social/users/herestomwiththeweather\n\n\nThe ActivityPub::FetchRemoteActorService passes the actor_url parameter to fetch_resource to receive a json response for the remote account.\n\n    @json = begin\n      if prefetched_body.nil?\n        fetch_resource(uri, id)\n      else\n\n\n\n\nThe response includes a lot of information including name, summary, publicKey, images and urls to fetch more information like followers and following.\n\nFinally, the ActivityPub::FetchRemoteActorService calls the ActivityPub::ProcessAccountService, passing it the json response.\n\n    ActivityPub::ProcessAccountService.new.call(@username, @domain, @json, only_key: only_key, verified_webfinger: !only_key)\n\n\n\nIf the Mastodon instance does not know about the account, ActivityPub::ProcessAccountService invokes create_account and update_account to save the username, domain and all the associated urls from the json response to a new account record in the database.\n\n      create_account if @account.nil?\n      update_account\n\n\n\nI have several questions about how following others works and will probably look at that soon.  I may start out by reading A highly opinionated guide to learning about ActivityPub which I bookmarked a while ago."
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               "RubyConf in Houston",
               ""
             ],
@@ -107,25 +130,6 @@
             ],
             "time": [
               "2022-09-30T23:33:46+00:00"
-            ],
-            "content": [
-              {
-                "html": "",
-                "value": ""
-              }
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "url": [
-              "https://herestomwiththeweather.com/social/2022/09/30/2432/"
-            ],
-            "time": [
-              "2022-09-30T00:40:32+00:00"
             ],
             "content": [
               {

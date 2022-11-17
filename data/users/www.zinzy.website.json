@@ -1,5 +1,19 @@
 {
-  "items": [],
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "name": [
+          "Zinzy Waleson"
+        ],
+        "url": [
+          "https://www.zinzy.website/"
+        ]
+      }
+    }
+  ],
   "rels": {
     "canonical": [
       "https://www.zinzy.website/index"
@@ -9,6 +23,15 @@
     ],
     "stylesheet": [
       "https://www.zinzy.website/styles.css"
+    ],
+    "me": [
+      "https://github.com/zinzy",
+      "https://tech.lgbt/@zinzy",
+      "https://twitter.com/zinzywaleson",
+      "mailto:zinzy@pm.me"
+    ],
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
     ]
   },
   "rel-urls": {
@@ -26,6 +49,31 @@
     "https://www.zinzy.website/styles.css": {
       "rels": [
         "stylesheet"
+      ]
+    },
+    "https://github.com/zinzy": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://tech.lgbt/@zinzy": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://twitter.com/zinzywaleson": {
+      "rels": [
+        "me"
+      ]
+    },
+    "mailto:zinzy@pm.me": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
       ]
     }
   }

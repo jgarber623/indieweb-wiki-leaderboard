@@ -124,6 +124,9 @@
     ],
     "pgpkey": [
       "https://www.benji.dog/pub.asc"
+    ],
+    "noopener": [
+      "https://webring.xxiivv.com/#benji"
     ]
   },
   "rel-urls": {
@@ -261,7 +264,7 @@
       "rels": [
         "alternate"
       ],
-      "title": "RSS Feed",
+      "title": "RSS Feed - All Posts",
       "type": "application/rss+xml"
     },
     "https://www.benji.dog/feed.atom": {
@@ -275,7 +278,7 @@
       "rels": [
         "alternate"
       ],
-      "title": "RSS (Atom) Feed",
+      "title": "RSS (Atom) Feed - All Posts",
       "type": "application/atom+xml"
     },
     "https://www.benji.dog/feed.json": {
@@ -289,7 +292,7 @@
       "rels": [
         "alternate"
       ],
-      "title": "JSON Feed",
+      "title": "JSON Feed - All Posts",
       "type": "application/json"
     },
     "https://indieauth.com/auth": {
@@ -343,7 +346,8 @@
       "rels": [
         "me",
         "noreferrer"
-      ]
+      ],
+      "title": "twitter"
     },
     "https://instagram.com/bnjfs": {
       "rels": [
@@ -376,6 +380,11 @@
       ],
       "type": "application/pgp-keys",
       "text": "7EBF 284E 2F90 ABB9"
+    },
+    "https://webring.xxiivv.com/#benji": {
+      "rels": [
+        "noopener"
+      ]
     }
   }
 }
