@@ -1,20 +1,18 @@
 {
   "items": [],
   "rels": {
-    "stylesheet": [
-      "https://www.byzero.de/assets/css/style.css?1668346907",
-      "https://www.byzero.de/assets/css/highlight.css?1668346907",
-      "https://www.byzero.de/assets/css/alpine.css?1668346907",
-      "https://www.byzero.de/custom.css?1668346907",
-      "https://www.byzero.de/assets/css/poststats.css",
-      "https://www.byzero.de/css/photos-grid.css",
-      "https://www.byzero.de/assets/bigfoot/dist/bigfoot-default.css"
-    ],
     "icon": [
       "https://micro.blog/muhh/favicon.png"
     ],
     "shortcut": [
       "https://micro.blog/muhh/favicon.png"
+    ],
+    "stylesheet": [
+      "https://www.byzero.de/css/style.css?1668346907",
+      "https://www.byzero.de/custom.css?1668346907",
+      "https://www.byzero.de/assets/css/poststats.css",
+      "https://www.byzero.de/css/photos-grid.css",
+      "https://www.byzero.de/assets/bigfoot/dist/bigfoot-default.css"
     ],
     "alternate": [
       "https://www.byzero.de/feed.xml",
@@ -57,20 +55,20 @@
     ],
     "subscribe": [
       "https://micro.blog/users/follow"
+    ],
+    "canonical": [
+      "https://www.byzero.de/"
     ]
   },
   "rel-urls": {
-    "https://www.byzero.de/assets/css/style.css?1668346907": {
+    "https://micro.blog/muhh/favicon.png": {
       "rels": [
-        "stylesheet"
-      ]
+        "icon",
+        "shortcut"
+      ],
+      "type": "image/x-icon"
     },
-    "https://www.byzero.de/assets/css/highlight.css?1668346907": {
-      "rels": [
-        "stylesheet"
-      ]
-    },
-    "https://www.byzero.de/assets/css/alpine.css?1668346907": {
+    "https://www.byzero.de/css/style.css?1668346907": {
       "rels": [
         "stylesheet"
       ]
@@ -79,13 +77,6 @@
       "rels": [
         "stylesheet"
       ]
-    },
-    "https://micro.blog/muhh/favicon.png": {
-      "rels": [
-        "icon",
-        "shortcut"
-      ],
-      "type": "image/x-icon"
     },
     "https://www.byzero.de/feed.xml": {
       "rels": [
@@ -149,6 +140,11 @@
         "subscribe"
       ]
     },
+    "https://www.byzero.de/": {
+      "rels": [
+        "canonical"
+      ]
+    },
     "https://www.byzero.de/assets/css/poststats.css": {
       "rels": [
         "stylesheet"
@@ -191,11 +187,6 @@
       ]
     },
     "https://social.lol/@muhh": {
-      "rels": [
-        "me"
-      ]
-    },
-    "https://www.byzero.de/": {
       "rels": [
         "me"
       ]

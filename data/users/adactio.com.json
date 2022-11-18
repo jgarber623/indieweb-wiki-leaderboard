@@ -40,6 +40,211 @@
         "h-entry"
       ],
       "properties": {
+        "content": [
+          {
+            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://no-ht.ml/\">\nYou don’t need HTML!\n</a>\n</h3>\n\n<p>View source on this bit of tongue-in-cheek fun from <a href=\"https://shkspr.mobi/blog/\">Terence</a>.</p>",
+            "value": "You don’t need HTML!\n\n\n\nView source on this bit of tongue-in-cheek fun from Terence."
+          }
+        ],
+        "name": [
+          "You don’t need HTML!"
+        ],
+        "bookmark-of": [
+          "https://no-ht.ml/"
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "29.84526062"
+              ],
+              "longitude": [
+                "-81.26610464"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/links/19647"
+        ],
+        "published": [
+          "2022-11-17T22:07:50Z"
+        ],
+        "category": [
+          "html",
+          "unicode",
+          "ascii",
+          "fun",
+          "text"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Syndicating to Mastodon"
+        ],
+        "url": [
+          "https://adactio.com/journal/19645"
+        ],
+        "content": [
+          {
+            "html": "<p>I’ve been contemplating a checkbox. The label for this checkbox reads:</p>\n\n<blockquote>\n  <p>This is a bot account</p>\n</blockquote>\n\n<p>Let me back up…</p>\n\n<p>In what seems like decades ago, but was in fact just a few weeks, Elon Musk bought Twitter and began burning it to the ground. His admirers insist he’s playing some form of four-dimensional chess, but to the rest of us, his actions are indistinguishable from a spoilt rich kid not understanding what a social network is.</p>\n\n<p>It wasn’t giving me much cause for anguish personally. For <a href=\"https://adactio.com/journal/6826\">the past eight years</a>, I’ve only used Twitter as a syndication endpoint for my own notes. But I understand that’s a very privileged position to be in. Most people on Twitter don’t have the same luxury of independence. It’s genuinely maddening and saddening to see their years of sharing destroyed by one cruel idiot.</p>\n\n<p>Lots of people started moving to <a href=\"https://joinmastodon.org/\">Mastodon</a>. I figured I should do the same for my syndicated notes.</p>\n\n<p>At first, I signed up for an account on mastodon.cloud. No particular reason. But that’s where <a href=\"https://adactio.com/links/19582\">I saw</a> this <a href=\"https://mastodon.cloud/@anildash/109299991009836007\">very insightful post from Anil Dash</a>:</p>\n\n<blockquote>\n  <p>When it came time to reckon with social media’s failings, nobody ran to the “web3” platforms. Nobody asked “can I get paid per message”? Nobody asked about the blockchain. The community of people who’ve been quietly doing this work for years (decades!) ended up being the ones who welcomed everyone over, as always.</p>\n</blockquote>\n\n<p>I was getting my account all set up and beginning to follow some other folks, when I realised that I actually already had <a href=\"https://mastodon.social/@adactio\">an exisiting account over on mastodon.social</a>. Doh! Turns out that I signed up back in 2017 to kick the tyres, but never did much else because there weren’t many other people around back then. Oh, how times have changed!</p>\n\n<p>Anyway, I thought I had really screwed up by having two accounts but this turned out to be an opportunity to experience some of the thoughtfulness in Mastodon’s design. The process of migrating from one Mastodon account to another—on a completely different instance—was <em>very</em> smooth! It was clear that this wasn’t an afterthought. This is an essential part of the fediverse and the design of the migration flow reflects that.</p>\n\n<p>This gives me enormous peace of mind. If I ever want to switch to a different instance and still keep my network intact, I know it won’t be a problem. Mastodon is like the opposite of the roach-motel mentality that permeates most VC-backed so-called social networks.</p>\n\n<p>As I played around some more—reading, following, exploring—my feelings of fondness only grew stronger. I like this place a lot!</p>\n\n<p>I definitely wanted to syndicate my notes to Mastodon. At first, I implemented a straightforward RSS-to-Mastodon syndication using <a href=\"https://ifttt.com/\">IFTTT</a> (IF This, Then That), thanks to <a href=\"https://matthiasott.com/notes/syndicating-posts-personal-website-twitter-mastodon\">Matthias’s excellent tutorial</a>.</p>\n\n<p>But that didn’t feel quite right. When I syndicate to Twitter, I make a conscious choice each time. There’s a “Twitter” toggle that I can enable or disable in my posting interface. Mastodon deserved the same level of thoughtfulness.</p>\n\n<p>So I switched off the IFTTT recipe and started exploring <a href=\"https://docs.joinmastodon.org/api/\">the Mastodon API</a>. It’s going to sound like a humblebrag when I tell you that I got cross-posting working in almost no time at all, but that’s not a testament to my coding prowess (I’m really not very good), but rather a testament to the Mastodon API, which was a joy to work with.</p>\n\n<ol>\n<li>On your Mastodon instance, go to <code>/settings/applications</code>.</li>\n<li>Click on <code>New Application</code>.</li>\n<li>Fill in the details about your website and select <code>write:statuses</code> (and probably <code>write:media</code>) from the Scopes list.</li>\n<li>Copy <code>Your access token</code> to use in API calls.</li>\n<li>Write <a href=\"https://gist.github.com/adactio/c3652f2241c29bdc5af116bb02594d61\">some sloppy code</a> (in my case, PHP that uses CURL).</li>\n</ol>\n\n<p>I did hit a wall when it came to posting images. That took me a while to get working, and I couldn’t figure out why. Was it something at Mastodon’s end while it was struggling under the influx of new users? As it turns out, no. It was entirely down to me being an idiot. (You know that situation where you’re working on a problem for ages and you’ve become convinced it’s an extremely gnarly rocket-science problem, but then turns out to be something stupid like a typo? Yeah. That.)</p>\n\n<p>Then there’s the whole question of how to receive replies, likes, and reboosts from Mastodon here on my own site. Luckily, that was super easy, thanks to <a href=\"https://brid.gy/\">Brid.gy</a>. One click and I was done. I love Brid.gy!</p>\n\n<p>Take <a href=\"https://adactio.com/notes/19615\">this note, for example</a>. There’s <a href=\"https://twitter.com/adactio/status/1592231930304466944\">a version on Twitter</a> and <a href=\"https://mastodon.social/@adactio/109343712638768951\">a version on Mastodon</a>. The original version on my own site gets responses from both places.</p>\n\n<p>If <a href=\"https://adactio.com/notes/19616\">I’m replying</a> to <a href=\"https://twitter.com/nutsmuggler/status/1592236101124739073\">a response on Twitter</a>, I do <em>not</em> syndicate that to Mastodon.</p>\n\n<p>Likewise, if <a href=\"https://adactio.com/notes/19639\">I’m replying</a> to <a href=\"https://mastodon.social/@sgarrity/109353762964696165\">a response on Mastodon</a>, I do <em>not</em> syndicate that to Twitter.</p>\n\n<p>Oh, one thing worth mentioning: if you’re sending a reply to something on Mastodon using the API, there’s an <code>in_reply_to_id</code> field for you to provide. But you should also include the full @username@instance of the person you’re replying to at the beginning of the message to ensure that it’s displayed as a reply rather than showing up as a regular post. Note the difference between <a href=\"https://adactio.com/notes/19639\">this note on my site</a> and <a href=\"https://mastodon.social/@adactio/109352196388205690\">its syndicated version on Mastodon</a>.</p>\n\n<p>Anyway, now I’m posting to Mastodon, but I’m doing it through the the interface of my own website. Which brings me to that checkbox in Mastodon’s profile settings:</p>\n\n<blockquote>\n  <p>This is a bot account</p>\n</blockquote>\n\n<p>The help text reads:</p>\n\n<blockquote>\n  <p>Signal to others that the account mainly performs automated actions and might not be monitored</p>\n</blockquote>\n\n<p>If I were doing the automatic cross-posting from RSS, I’d definitely tick that box. But as I’m making a conscious decision whenever I syndicate to Mastodon, I think I’m going to leave that checkbox unticked.</p>\n\n<p>My cross-posting is not automated and I’m very much monitoring my Mastodon account …because I’m enjoying my Mastodon experience more than I’ve enjoyed anything online for quite some time. Highly recommended!</p>",
+            "value": "I’ve been contemplating a checkbox. The label for this checkbox reads:\n\n\n  This is a bot account\n\n\nLet me back up…\n\nIn what seems like decades ago, but was in fact just a few weeks, Elon Musk bought Twitter and began burning it to the ground. His admirers insist he’s playing some form of four-dimensional chess, but to the rest of us, his actions are indistinguishable from a spoilt rich kid not understanding what a social network is.\n\nIt wasn’t giving me much cause for anguish personally. For the past eight years, I’ve only used Twitter as a syndication endpoint for my own notes. But I understand that’s a very privileged position to be in. Most people on Twitter don’t have the same luxury of independence. It’s genuinely maddening and saddening to see their years of sharing destroyed by one cruel idiot.\n\nLots of people started moving to Mastodon. I figured I should do the same for my syndicated notes.\n\nAt first, I signed up for an account on mastodon.cloud. No particular reason. But that’s where I saw this very insightful post from Anil Dash:\n\n\n  When it came time to reckon with social media’s failings, nobody ran to the “web3” platforms. Nobody asked “can I get paid per message”? Nobody asked about the blockchain. The community of people who’ve been quietly doing this work for years (decades!) ended up being the ones who welcomed everyone over, as always.\n\n\nI was getting my account all set up and beginning to follow some other folks, when I realised that I actually already had an exisiting account over on mastodon.social. Doh! Turns out that I signed up back in 2017 to kick the tyres, but never did much else because there weren’t many other people around back then. Oh, how times have changed!\n\nAnyway, I thought I had really screwed up by having two accounts but this turned out to be an opportunity to experience some of the thoughtfulness in Mastodon’s design. The process of migrating from one Mastodon account to another—on a completely different instance—was very smooth! It was clear that this wasn’t an afterthought. This is an essential part of the fediverse and the design of the migration flow reflects that.\n\nThis gives me enormous peace of mind. If I ever want to switch to a different instance and still keep my network intact, I know it won’t be a problem. Mastodon is like the opposite of the roach-motel mentality that permeates most VC-backed so-called social networks.\n\nAs I played around some more—reading, following, exploring—my feelings of fondness only grew stronger. I like this place a lot!\n\nI definitely wanted to syndicate my notes to Mastodon. At first, I implemented a straightforward RSS-to-Mastodon syndication using IFTTT (IF This, Then That), thanks to Matthias’s excellent tutorial.\n\nBut that didn’t feel quite right. When I syndicate to Twitter, I make a conscious choice each time. There’s a “Twitter” toggle that I can enable or disable in my posting interface. Mastodon deserved the same level of thoughtfulness.\n\nSo I switched off the IFTTT recipe and started exploring the Mastodon API. It’s going to sound like a humblebrag when I tell you that I got cross-posting working in almost no time at all, but that’s not a testament to my coding prowess (I’m really not very good), but rather a testament to the Mastodon API, which was a joy to work with.\n\n\nOn your Mastodon instance, go to /settings/applications.\nClick on New Application.\nFill in the details about your website and select write:statuses (and probably write:media) from the Scopes list.\nCopy Your access token to use in API calls.\nWrite some sloppy code (in my case, PHP that uses CURL).\n\n\nI did hit a wall when it came to posting images. That took me a while to get working, and I couldn’t figure out why. Was it something at Mastodon’s end while it was struggling under the influx of new users? As it turns out, no. It was entirely down to me being an idiot. (You know that situation where you’re working on a problem for ages and you’ve become convinced it’s an extremely gnarly rocket-science problem, but then turns out to be something stupid like a typo? Yeah. That.)\n\nThen there’s the whole question of how to receive replies, likes, and reboosts from Mastodon here on my own site. Luckily, that was super easy, thanks to Brid.gy. One click and I was done. I love Brid.gy!\n\nTake this note, for example. There’s a version on Twitter and a version on Mastodon. The original version on my own site gets responses from both places.\n\nIf I’m replying to a response on Twitter, I do not syndicate that to Mastodon.\n\nLikewise, if I’m replying to a response on Mastodon, I do not syndicate that to Twitter.\n\nOh, one thing worth mentioning: if you’re sending a reply to something on Mastodon using the API, there’s an in_reply_to_id field for you to provide. But you should also include the full @username@instance of the person you’re replying to at the beginning of the message to ensure that it’s displayed as a reply rather than showing up as a regular post. Note the difference between this note on my site and its syndicated version on Mastodon.\n\nAnyway, now I’m posting to Mastodon, but I’m doing it through the the interface of my own website. Which brings me to that checkbox in Mastodon’s profile settings:\n\n\n  This is a bot account\n\n\nThe help text reads:\n\n\n  Signal to others that the account mainly performs automated actions and might not be monitored\n\n\nIf I were doing the automatic cross-posting from RSS, I’d definitely tick that box. But as I’m making a conscious decision whenever I syndicate to Mastodon, I think I’m going to leave that checkbox unticked.\n\nMy cross-posting is not automated and I’m very much monitoring my Mastodon account …because I’m enjoying my Mastodon experience more than I’ve enjoyed anything online for quite some time. Highly recommended!"
+          }
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "29.84558777"
+              ],
+              "longitude": [
+                "-81.26625776"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "published": [
+          "2022-11-17T16:12:49Z"
+        ],
+        "category": [
+          "indieweb",
+          "syndication",
+          "mastodon",
+          "fediverse",
+          "social",
+          "networks",
+          "bridgy",
+          "code",
+          "coding",
+          "api"
+        ],
+        "syndication": [
+          "https://adactio.medium.com/b5c1c8597c69"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://russelldavies.typepad.com/planning/2022/11/the-internet-of-good-things.html\">\nRussell Davies: The internet of good things\n</a>\n</h3>\n\n<p>An <a href=\"https://kettlecompanion.com/\">internet-enabled kettle</a> sounds stupid, but this is a genuinely thoughtful piece of hardware.</p>",
+            "value": "Russell Davies: The internet of good things\n\n\n\nAn internet-enabled kettle sounds stupid, but this is a genuinely thoughtful piece of hardware."
+          }
+        ],
+        "name": [
+          "Russell Davies: The internet of good things"
+        ],
+        "bookmark-of": [
+          "https://russelldavies.typepad.com/planning/2022/11/the-internet-of-good-things.html"
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "29.84628361"
+              ],
+              "longitude": [
+                "-81.26755226"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/links/19644"
+        ],
+        "published": [
+          "2022-11-17T14:34:39Z"
+        ],
+        "category": [
+          "iot",
+          "hardware",
+          "technology",
+          "kettle",
+          "caregiving",
+          "tea"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://www.baldurbjarnason.com/2022/theory-building/\">\nTheory-building and why employee churn is lethal to software companies – Baldur Bjarnason\n</a>\n</h3>\n\n<p>This extract from <a href=\"https://softwarecrisis.baldurbjarnason.com/\">Baldur’s new book</a> is particularly timely in light of the twipocalypse.</p>",
+            "value": "Theory-building and why employee churn is lethal to software companies – Baldur Bjarnason\n\n\n\nThis extract from Baldur’s new book is particularly timely in light of the twipocalypse."
+          }
+        ],
+        "name": [
+          "Theory-building and why employee churn is lethal to software companies – Baldur Bjarnason"
+        ],
+        "bookmark-of": [
+          "https://www.baldurbjarnason.com/2022/theory-building/"
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "29.84663392"
+              ],
+              "longitude": [
+                "-81.26751126"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/links/19643"
+        ],
+        "published": [
+          "2022-11-17T14:32:01Z"
+        ],
+        "category": [
+          "software",
+          "engineering",
+          "theory",
+          "code",
+          "churn",
+          "programmers",
+          "programming",
+          "development",
+          "process",
+          "bitrot",
+          "collaboration",
+          "management"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
         "name": [
           "Artemis rising"
         ],
@@ -905,213 +1110,6 @@
     },
     {
       "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "photo": [
-          {
-            "value": "https://adactio.com/images/uploaded/19619/small.jpg",
-            "srcset": {
-              "320w": "https://adactio.com/images/uploaded/19619/small.jpg",
-              "480w": "https://adactio.com/images/uploaded/19619/medium.jpg",
-              "800w": "https://adactio.com/images/uploaded/19619/large.jpg"
-            },
-            "alt": "A greying elegant little poodle mix who has made herself comfy on some sofa cushions."
-          }
-        ],
-        "content": [
-          {
-            "html": "<p>Happy #mondog from Ellie!</p>",
-            "value": "Happy #mondog from Ellie!"
-          }
-        ],
-        "name": [
-          "Happy #mondog from Ellie!"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "29.84554444"
-              ],
-              "longitude": [
-                "-81.26647222"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/notes/19619"
-        ],
-        "published": [
-          "2022-11-14T21:11:42Z"
-        ],
-        "syndication": [
-          "https://mastodon.social/@adactio/109344214828898760"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "photo": [
-          {
-            "value": "https://adactio.com/images/uploaded/19615/small.jpg",
-            "srcset": {
-              "320w": "https://adactio.com/images/uploaded/19615/small.jpg",
-              "480w": "https://adactio.com/images/uploaded/19615/medium.jpg",
-              "800w": "https://adactio.com/images/uploaded/19615/large.jpg"
-            },
-            "alt": "Me sitting in a rocking chair holding a mandolin on a sun-dappled wooden porch."
-          }
-        ],
-        "content": [
-          {
-            "html": "<p>Sitting on the porch, playing tunes on my mandolin.</p>",
-            "value": "Sitting on the porch, playing tunes on my mandolin."
-          }
-        ],
-        "name": [
-          "Sitting on the porch, playing tunes on my mandolin."
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "29.84546944"
-              ],
-              "longitude": [
-                "-81.26643333"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/notes/19615"
-        ],
-        "published": [
-          "2022-11-14T19:03:59Z"
-        ],
-        "syndication": [
-          "https://mastodon.social/@adactio/109343712638768951",
-          "https://twitter.com/adactio/status/1592231930304466944"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "content": [
-          {
-            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://jackrusher.com/classic-ux/\">\nJack Rusher ☞ Classic HCI demos\n</a>\n</h3>\n\n<p>At Clarity last week, I had the great pleasure of introducing and interviewing Linda Dong who spoke about Apple’s Human Interface Guidelines. I loved the way she looked at the history of the HIG from 1977 onwards. This collection of videos is just what I need to keep spelunking into the interfaces of the past:</p>\n\n<blockquote>\n  <p>A curated collection of HCI demo videos produced during the golden age from 1983-2002.</p>\n</blockquote>",
-            "value": "Jack Rusher ☞ Classic HCI demos\n\n\n\nAt Clarity last week, I had the great pleasure of introducing and interviewing Linda Dong who spoke about Apple’s Human Interface Guidelines. I loved the way she looked at the history of the HIG from 1977 onwards. This collection of videos is just what I need to keep spelunking into the interfaces of the past:\n\n\n  A curated collection of HCI demo videos produced during the golden age from 1983-2002."
-          }
-        ],
-        "name": [
-          "Jack Rusher ☞ Classic HCI demos"
-        ],
-        "bookmark-of": [
-          "https://jackrusher.com/classic-ux/"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "29.84627502"
-              ],
-              "longitude": [
-                "-81.26753227"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/links/19614"
-        ],
-        "published": [
-          "2022-11-14T14:45:28Z"
-        ],
-        "category": [
-          "hci",
-          "demos",
-          "videos",
-          "computing",
-          "history",
-          "interfaces",
-          "ui",
-          "software"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "content": [
-          {
-            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://mxb.dev/blog/the-indieweb-for-everyone/\">\nThe IndieWeb for Everyone | Max Böck\n</a>\n</h3>\n\n<p>Spot-on analysis by Max:</p>\n\n<blockquote>\n  <p>Generally speaking: <strong>The more independence a technology gives you, the higher its barrier for adoption</strong>.</p>\n</blockquote>\n\n<p>I really hope that this when smart folks start putting their skills towards making the ideas of the indie web more widely available:</p>\n\n<blockquote>\n  <p>I think we’re at a special moment right now. People have been fed up with social media and its various problems (surveillance capitalism, erosion of mental health, active destruction of democracy, bla bla bla) for quite a while now. But it needs a special bang to get a critical mass of users to actually pack up their stuff and move.</p>\n</blockquote>",
-            "value": "The IndieWeb for Everyone | Max Böck\n\n\n\nSpot-on analysis by Max:\n\n\n  Generally speaking: The more independence a technology gives you, the higher its barrier for adoption.\n\n\nI really hope that this when smart folks start putting their skills towards making the ideas of the indie web more widely available:\n\n\n  I think we’re at a special moment right now. People have been fed up with social media and its various problems (surveillance capitalism, erosion of mental health, active destruction of democracy, bla bla bla) for quite a while now. But it needs a special bang to get a critical mass of users to actually pack up their stuff and move."
-          }
-        ],
-        "name": [
-          "The IndieWeb for Everyone | Max Böck"
-        ],
-        "bookmark-of": [
-          "https://mxb.dev/blog/the-indieweb-for-everyone/"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "29.84619374"
-              ],
-              "longitude": [
-                "-81.26750539"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/links/19613"
-        ],
-        "published": [
-          "2022-11-14T14:42:17Z"
-        ],
-        "category": [
-          "indieweb",
-          "democratisation",
-          "fediverse",
-          "twitter",
-          "mastodon",
-          "complexity",
-          "simplicity",
-          "ux"
-        ]
-      }
-    },
-    {
-      "type": [
         "h-card"
       ],
       "properties": {
@@ -1851,6 +1849,10 @@
       "https://adactio.com/includes/css/print.css"
     ],
     "bookmark": [
+      "https://adactio.com/links/19647",
+      "https://adactio.com/journal/19645",
+      "https://adactio.com/links/19644",
+      "https://adactio.com/links/19643",
       "https://adactio.com/journal/19642",
       "https://adactio.com/links/19641",
       "https://adactio.com/links/19640",
@@ -1866,13 +1868,41 @@
       "https://adactio.com/links/19623",
       "https://adactio.com/links/19622",
       "https://adactio.com/notes/19621",
-      "https://adactio.com/notes/19620",
-      "https://adactio.com/notes/19619",
-      "https://adactio.com/notes/19615",
-      "https://adactio.com/links/19614",
-      "https://adactio.com/links/19613"
+      "https://adactio.com/notes/19620"
     ],
     "tag": [
+      "https://adactio.com/tags/html",
+      "https://adactio.com/tags/unicode",
+      "https://adactio.com/tags/ascii",
+      "https://adactio.com/tags/fun",
+      "https://adactio.com/tags/text",
+      "https://adactio.com/tags/indieweb",
+      "https://adactio.com/tags/syndication",
+      "https://adactio.com/tags/mastodon",
+      "https://adactio.com/tags/fediverse",
+      "https://adactio.com/tags/social",
+      "https://adactio.com/tags/networks",
+      "https://adactio.com/tags/bridgy",
+      "https://adactio.com/tags/code",
+      "https://adactio.com/tags/coding",
+      "https://adactio.com/tags/api",
+      "https://adactio.com/tags/iot",
+      "https://adactio.com/tags/hardware",
+      "https://adactio.com/tags/technology",
+      "https://adactio.com/tags/kettle",
+      "https://adactio.com/tags/caregiving",
+      "https://adactio.com/tags/tea",
+      "https://adactio.com/tags/software",
+      "https://adactio.com/tags/engineering",
+      "https://adactio.com/tags/theory",
+      "https://adactio.com/tags/churn",
+      "https://adactio.com/tags/programmers",
+      "https://adactio.com/tags/programming",
+      "https://adactio.com/tags/development",
+      "https://adactio.com/tags/process",
+      "https://adactio.com/tags/bitrot",
+      "https://adactio.com/tags/collaboration",
+      "https://adactio.com/tags/management",
       "https://adactio.com/tags/artemis",
       "https://adactio.com/tags/space",
       "https://adactio.com/tags/nasa",
@@ -1900,21 +1930,12 @@
       "https://adactio.com/tags/society",
       "https://adactio.com/tags/bledwel",
       "https://adactio.com/tags/test",
-      "https://adactio.com/tags/indieweb",
-      "https://adactio.com/tags/syndication",
       "https://adactio.com/tags/indiekit",
       "https://adactio.com/tags/posse",
-      "https://adactio.com/tags/fediverse",
-      "https://adactio.com/tags/mastodon",
       "https://adactio.com/tags/twitter",
-      "https://adactio.com/tags/social",
-      "https://adactio.com/tags/networks",
       "https://adactio.com/tags/personal",
       "https://adactio.com/tags/publishing",
-      "https://adactio.com/tags/coding",
-      "https://adactio.com/tags/code",
       "https://adactio.com/tags/telegraphy",
-      "https://adactio.com/tags/technology",
       "https://adactio.com/tags/history",
       "https://adactio.com/tags/communications",
       "https://adactio.com/tags/beacons",
@@ -1926,10 +1947,8 @@
       "https://adactio.com/tags/writing",
       "https://adactio.com/tags/graphic",
       "https://adactio.com/tags/design",
-      "https://adactio.com/tags/process",
       "https://adactio.com/tags/quality",
       "https://adactio.com/tags/craft",
-      "https://adactio.com/tags/software",
       "https://adactio.com/tags/systems",
       "https://adactio.com/tags/priorities",
       "https://adactio.com/tags/prototyping",
@@ -1948,28 +1967,17 @@
       "https://adactio.com/tags/standards",
       "https://adactio.com/tags/css",
       "https://adactio.com/tags/frontend",
-      "https://adactio.com/tags/development",
       "https://adactio.com/tags/progress",
       "https://adactio.com/tags/change",
       "https://adactio.com/tags/timeline",
       "https://adactio.com/tags/webstandards",
       "https://adactio.com/tags/styling",
-      "https://adactio.com/tags/programming",
       "https://adactio.com/tags/languages",
       "https://adactio.com/tags/worldwideweb",
-      "https://adactio.com/tags/browsers",
-      "https://adactio.com/tags/hci",
-      "https://adactio.com/tags/demos",
-      "https://adactio.com/tags/videos",
-      "https://adactio.com/tags/computing",
-      "https://adactio.com/tags/interfaces",
-      "https://adactio.com/tags/ui",
-      "https://adactio.com/tags/democratisation",
-      "https://adactio.com/tags/complexity",
-      "https://adactio.com/tags/simplicity",
-      "https://adactio.com/tags/ux"
+      "https://adactio.com/tags/browsers"
     ],
     "syndication": [
+      "https://adactio.medium.com/b5c1c8597c69",
       "https://adactio.medium.com/10fbf9706c1f",
       "https://mastodon.social/@adactio/109354757581944739",
       "https://twitter.com/adactio/status/1592938801902542848",
@@ -1984,10 +1992,7 @@
       "https://twitter.com/adactio/status/1592509520298840069",
       "https://mastodon.social/@adactio/109344523424789776",
       "https://twitter.com/adactio/status/1592283841799954432",
-      "https://www.instagram.com/p/Ck9U5KpvNxj/",
-      "https://mastodon.social/@adactio/109344214828898760",
-      "https://mastodon.social/@adactio/109343712638768951",
-      "https://twitter.com/adactio/status/1592231930304466944"
+      "https://www.instagram.com/p/Ck9U5KpvNxj/"
     ],
     "next": [
       "https://adactio.com/?start=20"
@@ -2378,6 +2383,228 @@
       ],
       "text": "music"
     },
+    "https://adactio.com/links/19647": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n10:07pm\n\n"
+    },
+    "https://adactio.com/tags/html": {
+      "rels": [
+        "tag"
+      ],
+      "text": "html"
+    },
+    "https://adactio.com/tags/unicode": {
+      "rels": [
+        "tag"
+      ],
+      "text": "unicode"
+    },
+    "https://adactio.com/tags/ascii": {
+      "rels": [
+        "tag"
+      ],
+      "text": "ascii"
+    },
+    "https://adactio.com/tags/fun": {
+      "rels": [
+        "tag"
+      ],
+      "text": "fun"
+    },
+    "https://adactio.com/tags/text": {
+      "rels": [
+        "tag"
+      ],
+      "text": "text"
+    },
+    "https://adactio.com/journal/19645": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n4:12pm\n\n"
+    },
+    "https://adactio.com/tags/indieweb": {
+      "rels": [
+        "tag"
+      ],
+      "text": "indieweb"
+    },
+    "https://adactio.com/tags/syndication": {
+      "rels": [
+        "tag"
+      ],
+      "text": "syndication"
+    },
+    "https://adactio.com/tags/mastodon": {
+      "rels": [
+        "tag"
+      ],
+      "text": "mastodon"
+    },
+    "https://adactio.com/tags/fediverse": {
+      "rels": [
+        "tag"
+      ],
+      "text": "fediverse"
+    },
+    "https://adactio.com/tags/social": {
+      "rels": [
+        "tag"
+      ],
+      "text": "social"
+    },
+    "https://adactio.com/tags/networks": {
+      "rels": [
+        "tag"
+      ],
+      "text": "networks"
+    },
+    "https://adactio.com/tags/bridgy": {
+      "rels": [
+        "tag"
+      ],
+      "text": "bridgy"
+    },
+    "https://adactio.com/tags/code": {
+      "rels": [
+        "tag"
+      ],
+      "text": "code"
+    },
+    "https://adactio.com/tags/coding": {
+      "rels": [
+        "tag"
+      ],
+      "text": "coding"
+    },
+    "https://adactio.com/tags/api": {
+      "rels": [
+        "tag"
+      ],
+      "text": "api"
+    },
+    "https://adactio.medium.com/b5c1c8597c69": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "Medium"
+    },
+    "https://adactio.com/links/19644": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n2:34pm\n\n"
+    },
+    "https://adactio.com/tags/iot": {
+      "rels": [
+        "tag"
+      ],
+      "text": "iot"
+    },
+    "https://adactio.com/tags/hardware": {
+      "rels": [
+        "tag"
+      ],
+      "text": "hardware"
+    },
+    "https://adactio.com/tags/technology": {
+      "rels": [
+        "tag"
+      ],
+      "text": "technology"
+    },
+    "https://adactio.com/tags/kettle": {
+      "rels": [
+        "tag"
+      ],
+      "text": "kettle"
+    },
+    "https://adactio.com/tags/caregiving": {
+      "rels": [
+        "tag"
+      ],
+      "text": "caregiving"
+    },
+    "https://adactio.com/tags/tea": {
+      "rels": [
+        "tag"
+      ],
+      "text": "tea"
+    },
+    "https://adactio.com/links/19643": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n2:32pm\n\n"
+    },
+    "https://adactio.com/tags/software": {
+      "rels": [
+        "tag"
+      ],
+      "text": "software"
+    },
+    "https://adactio.com/tags/engineering": {
+      "rels": [
+        "tag"
+      ],
+      "text": "engineering"
+    },
+    "https://adactio.com/tags/theory": {
+      "rels": [
+        "tag"
+      ],
+      "text": "theory"
+    },
+    "https://adactio.com/tags/churn": {
+      "rels": [
+        "tag"
+      ],
+      "text": "churn"
+    },
+    "https://adactio.com/tags/programmers": {
+      "rels": [
+        "tag"
+      ],
+      "text": "programmers"
+    },
+    "https://adactio.com/tags/programming": {
+      "rels": [
+        "tag"
+      ],
+      "text": "programming"
+    },
+    "https://adactio.com/tags/development": {
+      "rels": [
+        "tag"
+      ],
+      "text": "development"
+    },
+    "https://adactio.com/tags/process": {
+      "rels": [
+        "tag"
+      ],
+      "text": "process"
+    },
+    "https://adactio.com/tags/bitrot": {
+      "rels": [
+        "tag"
+      ],
+      "text": "bitrot"
+    },
+    "https://adactio.com/tags/collaboration": {
+      "rels": [
+        "tag"
+      ],
+      "text": "collaboration"
+    },
+    "https://adactio.com/tags/management": {
+      "rels": [
+        "tag"
+      ],
+      "text": "management"
+    },
     "https://adactio.com/journal/19642": {
       "rels": [
         "bookmark"
@@ -2606,18 +2833,6 @@
       ],
       "text": "\n\n4:46am\n\n"
     },
-    "https://adactio.com/tags/indieweb": {
-      "rels": [
-        "tag"
-      ],
-      "text": "indieweb"
-    },
-    "https://adactio.com/tags/syndication": {
-      "rels": [
-        "tag"
-      ],
-      "text": "syndication"
-    },
     "https://adactio.com/tags/indiekit": {
       "rels": [
         "tag"
@@ -2630,35 +2845,11 @@
       ],
       "text": "posse"
     },
-    "https://adactio.com/tags/fediverse": {
-      "rels": [
-        "tag"
-      ],
-      "text": "fediverse"
-    },
-    "https://adactio.com/tags/mastodon": {
-      "rels": [
-        "tag"
-      ],
-      "text": "mastodon"
-    },
     "https://adactio.com/tags/twitter": {
       "rels": [
         "tag"
       ],
       "text": "twitter"
-    },
-    "https://adactio.com/tags/social": {
-      "rels": [
-        "tag"
-      ],
-      "text": "social"
-    },
-    "https://adactio.com/tags/networks": {
-      "rels": [
-        "tag"
-      ],
-      "text": "networks"
     },
     "https://adactio.com/tags/personal": {
       "rels": [
@@ -2672,18 +2863,6 @@
       ],
       "text": "publishing"
     },
-    "https://adactio.com/tags/coding": {
-      "rels": [
-        "tag"
-      ],
-      "text": "coding"
-    },
-    "https://adactio.com/tags/code": {
-      "rels": [
-        "tag"
-      ],
-      "text": "code"
-    },
     "https://adactio.com/links/19635": {
       "rels": [
         "bookmark"
@@ -2695,12 +2874,6 @@
         "tag"
       ],
       "text": "telegraphy"
-    },
-    "https://adactio.com/tags/technology": {
-      "rels": [
-        "tag"
-      ],
-      "text": "technology"
     },
     "https://adactio.com/tags/history": {
       "rels": [
@@ -2822,12 +2995,6 @@
       ],
       "text": "design"
     },
-    "https://adactio.com/tags/process": {
-      "rels": [
-        "tag"
-      ],
-      "text": "process"
-    },
     "https://adactio.com/links/19625": {
       "rels": [
         "bookmark"
@@ -2845,12 +3012,6 @@
         "tag"
       ],
       "text": "craft"
-    },
-    "https://adactio.com/tags/software": {
-      "rels": [
-        "tag"
-      ],
-      "text": "software"
     },
     "https://adactio.com/tags/systems": {
       "rels": [
@@ -2972,12 +3133,6 @@
       ],
       "text": "frontend"
     },
-    "https://adactio.com/tags/development": {
-      "rels": [
-        "tag"
-      ],
-      "text": "development"
-    },
     "https://adactio.com/tags/progress": {
       "rels": [
         "tag"
@@ -3013,12 +3168,6 @@
         "tag"
       ],
       "text": "styling"
-    },
-    "https://adactio.com/tags/programming": {
-      "rels": [
-        "tag"
-      ],
-      "text": "programming"
     },
     "https://adactio.com/tags/languages": {
       "rels": [
@@ -3073,108 +3222,6 @@
         "syndication"
       ],
       "text": "Instagram"
-    },
-    "https://adactio.com/notes/19619": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n9:11pm\n\n"
-    },
-    "https://mastodon.social/@adactio/109344214828898760": {
-      "rels": [
-        "syndication"
-      ],
-      "text": "Mastodon"
-    },
-    "https://adactio.com/notes/19615": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n7:03pm\n\n"
-    },
-    "https://mastodon.social/@adactio/109343712638768951": {
-      "rels": [
-        "syndication"
-      ],
-      "text": "Mastodon"
-    },
-    "https://twitter.com/adactio/status/1592231930304466944": {
-      "rels": [
-        "syndication"
-      ],
-      "text": "Twitter"
-    },
-    "https://adactio.com/links/19614": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n2:45pm\n\n"
-    },
-    "https://adactio.com/tags/hci": {
-      "rels": [
-        "tag"
-      ],
-      "text": "hci"
-    },
-    "https://adactio.com/tags/demos": {
-      "rels": [
-        "tag"
-      ],
-      "text": "demos"
-    },
-    "https://adactio.com/tags/videos": {
-      "rels": [
-        "tag"
-      ],
-      "text": "videos"
-    },
-    "https://adactio.com/tags/computing": {
-      "rels": [
-        "tag"
-      ],
-      "text": "computing"
-    },
-    "https://adactio.com/tags/interfaces": {
-      "rels": [
-        "tag"
-      ],
-      "text": "interfaces"
-    },
-    "https://adactio.com/tags/ui": {
-      "rels": [
-        "tag"
-      ],
-      "text": "ui"
-    },
-    "https://adactio.com/links/19613": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n2:42pm\n\n"
-    },
-    "https://adactio.com/tags/democratisation": {
-      "rels": [
-        "tag"
-      ],
-      "text": "democratisation"
-    },
-    "https://adactio.com/tags/complexity": {
-      "rels": [
-        "tag"
-      ],
-      "text": "complexity"
-    },
-    "https://adactio.com/tags/simplicity": {
-      "rels": [
-        "tag"
-      ],
-      "text": "simplicity"
-    },
-    "https://adactio.com/tags/ux": {
-      "rels": [
-        "tag"
-      ],
-      "text": "ux"
     },
     "https://adactio.com/?start=20": {
       "rels": [

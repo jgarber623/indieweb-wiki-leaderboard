@@ -44,6 +44,55 @@
           ],
           "properties": {
             "name": [
+              "Finger Portal to WordPress Blog"
+            ],
+            "url": [
+              "https://danq.me/2022/11/17/wp-finger/"
+            ],
+            "uid": [
+              "https://danq.me/2022/11/17/wp-finger/"
+            ],
+            "published": [
+              "2022-11-17T21:46:50+00:00"
+            ],
+            "content": [
+              {
+                "html": "<h2>Finger Primer</h2>\n<p>The <code>finger</code> protocol, first <a title=\"RFC742: NAME/FINGER\" href=\"https://www.rfc-editor.org/rfc/rfc742\">standardised way back in 1977</a>, is a lightweight directory system for querying resources on a local or remote shared system. Despite barely being used today, it’s so well-established that virtually every modern desktop operating system – Windows, MacOS, Linux etc. – comes with a copy of <code>finger</code>, giving it a similar ubiquity to web browsers! (If you haven’t yet, <a title=\"ComputerHope's guide to the finger command\" href=\"https://www.computerhope.com/unix/ufinger.htm\">give it a go</a>.)</p>\n<p>If you were using a shared UNIX-like system in the 1970s through 1990s, you might run <code>finger</code> to see who else was logged on at the same time as you, <code>finger chris</code> to get more information about Chris, or <code>finger alice@example.net</code> to look up the details of Alice on the server example.net. Its ability to transcend the boundaries of different systems meant that it was, after a fashion, an example of an early decentralised social network!</p>\n<p>I first actively used <code>finger</code> when I was a student at <a href=\"https://www.aber.ac.uk/\">Aberystwyth University</a>. The shared central computers <code>osfa</code> and <code>osfb</code> supported it in what was a pretty typical way: users could add a <code>.plan</code> and/or <code>.project</code> file to their home directory and the contents of these would be output to anybody using finger to look up that user, along with other information like what department they belonged to. I’m simulating from memory so this won’t be remotely accurate, but broadly speaking it looked a little like this –</p>\n<pre style=\"padding-left: 40px;\">$ finger dlq9@aber.ac.uk\r\nLogin: dlq9                           Name: Dan Q\r\nDirectory: /users/9/d/dlq9      Department: Computer Science\r\n\r\nProject:\r\nWorking on my BEng Software Engineering.\r\n\r\nPlan:\r\n    _______\r\n---'   ____)____\r\n          ______)  Finger me!\r\n       _____)\r\n      (____)\r\n---.__(___)\r\n</pre>\n<p>It’s not just about a directory of people, though: you could <code>finger</code> printers to see what their queues were like, <code>finger</code> a time server to ask what time it was, <code>finger</code> a vending machine <a title=\"Story of the Coke Vending Machine that answered to Finger.\" href=\"https://www.cs.cmu.edu/~coke/history_long.txt\">to see what drinks it had available</a>… even <code>finger</code> for a weather forecast where you are (this one still works as shown below; try it for your own location!) –</p>\n<pre style=\"padding-left: 40px;\">$ finger oxford@graph.no\r\n        -= Meteogram for Oxford, Oxfordshire, England, United Kingdom =-\r\n 'C                                                                   Rain (mm)\r\n 12\r\n 11\r\n 10                                                         ^^^=--=--\r\n  9^^^                                                   ===\r\n  8   ^^^===      ======                              ^^^\r\n  7         ======      ===============^^^         =--\r\n  6                                       =--=-----\r\n  5\r\n  4\r\n  3        |  |  |  |  |  |  |                                        1 mm\r\n    17 18 19 20 21 22 23 18/11 02 03 04 05 06 07_08_09_10_11_12_13_14 Hour\r\n\r\n     W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W Wind dir.\r\n     6  6  7  7  7  7  7  7  6  6  6  5  5  4  4  4  4  5  6  6  5  5 Wind(m/s)\r\n\r\nLegend left axis:   - Sunny   ^ Scattered   = Clouded   =V= Thunder   # Fog\r\nLegend right axis:  | Rain    ! Sleet       * Snow\r\n</pre>\n<p>If you’d just like to play with finger, then <a href=\"https://finger.farm/\">finger.farm</a> is a great starting point. They provide free finger hosting and they’re easy to use (try <code>finger dan@finger.farm</code> to find me!). But I had something bigger in mind…</p>\n<h2>Fingering WordPress</h2>\n<p>What if you could <code>finger</code> <em>my blog</em>. I.e. if you ran <code>finger blog@danq.me</code> you’d see a summary of some of my recent posts, along with <em>additional</em> addresses you could finger to read the full content of each. This could be the world’s first <code>finger</code>-to-<a href=\"https://wordpress.org/\">WordPress</a> gateway; y’know, for if you thought the world needed such a thing. Here’s how I did it:</p>\n<ol>\n<li>\n<a title=\"efingerd repository from Debian\" href=\"https://sources.debian.org/src/efingerd/1.6.7-1/\">Installed </a><code><a title=\"efingerd repository from Debian\" href=\"https://sources.debian.org/src/efingerd/1.6.7-1/\">efingerd</a></code>; I’m using the Debian binaries.</li>\n<li>Opened a hole in the firewall on port 79 so the outside world could access it (<code>ufw allow 1965; utf reload</code>).</li>\n<li>The default configuration for <code>efingerd</code> acts like a “typical” <code>finger</code> server, but it’s highly programmable to make it “smarter”. I:\n<ol>\n<li>Blanked <code>/etc/efingerd/list</code> to prevent any output from “listing” the server (<code>finger @danq.me</code>).</li>\n<li>Replaced the contents of <code>/etc/efingerd/list</code> and <code>/etc/efingerd/nouser</code>(which are run when a request matches, or doesn’t match, a user account name) with a call to my script: <code>/usr/local/bin/finger-to-wordpress \"$3\"</code>. <code>$3</code> holds the username that was requested, so we can act on it.</li>\n<li>Created <code>/usr/local/bin/finger-to-wordpress</code> – <a title=\"Source code of my program that routes efingerd requests to WordPress\" href=\"https://gist.github.com/Dan-Q/bfdd8e2b4cf6b6ff8dbe7233fc9e0ab4\">a Ruby program</a> that either (a) lists a selection of posts or (b) returns a specific post (stripping the HTML tags)</li>\n</ol>\n</li>\n</ol>\n<p><a title=\"Screenshot showing finger blog@danq.me\" href=\"https://danq.me/wp-content/uploads/2022/11/finger-blog.png\"><img decoding=\"async\" class=\"lazy lazy-hidden aligncenter size-full wp-image-20792\" src=\"https://danq.me/wp-content/uploads/2022/11/xfinger-blog-30x22.png.pagespeed.ic.QPbyJkDuUK.jpg\" data-lazy-type=\"image\" data-lazy-src=\"https://danq.me/wp-content/uploads/2022/11/finger-blog.png\" alt=\"Screenshot showing this blog rendered as plain text as the result of running finger blog@danq.me at a Linux terminal.\" width=\"722\" height=\"530\" data-lazy-srcset=\"https://danq.me/wp-content/uploads/2022/11/finger-blog.png 722w, https://danq.me/wp-content/uploads/2022/11/finger-blog-300x220.png 300w, https://danq.me/wp-content/uploads/2022/11/finger-blog-30x22.png 30w\" data-lazy-sizes=\"(max-width: 722px) 100vw, 722px\"><noscript><img decoding=\"async\" class=\"aligncenter size-full wp-image-20792\" src=\"https://danq.me/wp-content/uploads/2022/11/xfinger-blog.png.pagespeed.ic.YWDIJpy3_6.png\" alt=\"Screenshot showing this blog rendered as plain text as the result of running finger blog@danq.me at a Linux terminal.\" width=\"722\" height=\"530\" srcset=\"https://danq.me/wp-content/uploads/2022/11/xfinger-blog.png.pagespeed.ic.YWDIJpy3_6.png 722w, https://danq.me/wp-content/uploads/2022/11/xfinger-blog-300x220.png.pagespeed.ic.HpZ7j5Xoc-.png 300w, https://danq.me/wp-content/uploads/2022/11/xfinger-blog-30x22.png.pagespeed.ic.QPbyJkDuUK.jpg 30w\" sizes=\"(max-width: 722px) 100vw, 722px\"></noscript></a></p>\n<p>In future, I might use some extra tags or metadata to enhance <code>finger</code>-friendly WordPress posts. The infrastructure’s in place already (I already have tags that I use to make certain kinds of content available only via certain media – shh!). You might rightly as <em>what the point</em> is of this entire enterprise, of course, and you’d be well within your rights to ask such a question. But I think the best answer available is “because Dan”.</p>\n<p><a title=\"Screenshot showing finger wp-finger@danq.me\" href=\"https://danq.me/wp-content/uploads/2022/11/finger-post2.png\"><img decoding=\"async\" loading=\"lazy\" class=\"lazy lazy-hidden aligncenter size-full wp-image-20795\" src=\"https://danq.me/wp-content/uploads/2022/11/xfinger-post2-30x21.png.pagespeed.ic.7wFYQL5dp6.jpg\" data-lazy-type=\"image\" data-lazy-src=\"https://danq.me/wp-content/uploads/2022/11/finger-post2.png\" alt=\"Screenshot showing this blog post rendered as plain text as the result of running finger wp-finger@danq.me at a Linux terminal.\" width=\"726\" height=\"505\" data-lazy-srcset=\"https://danq.me/wp-content/uploads/2022/11/finger-post2.png 726w, https://danq.me/wp-content/uploads/2022/11/finger-post2-300x209.png 300w, https://danq.me/wp-content/uploads/2022/11/finger-post2-30x21.png 30w\" data-lazy-sizes=\"(max-width: 726px) 100vw, 726px\"><noscript><img decoding=\"async\" loading=\"lazy\" class=\"aligncenter size-full wp-image-20795\" src=\"https://danq.me/wp-content/uploads/2022/11/xfinger-post2.png.pagespeed.ic.IOcPEb-HHP.png\" alt=\"Screenshot showing this blog post rendered as plain text as the result of running finger wp-finger@danq.me at a Linux terminal.\" width=\"726\" height=\"505\" srcset=\"https://danq.me/wp-content/uploads/2022/11/xfinger-post2.png.pagespeed.ic.IOcPEb-HHP.png 726w, https://danq.me/wp-content/uploads/2022/11/xfinger-post2-300x209.png.pagespeed.ic.760RrIIKo5.jpg 300w, https://danq.me/wp-content/uploads/2022/11/xfinger-post2-30x21.png.pagespeed.ic.7wFYQL5dp6.jpg 30w\" sizes=\"(max-width: 726px) 100vw, 726px\"></noscript></a></p>\n<p>If you want to see my blog in a whole new way, give it a go: run <code>finger blog@danq.me</code> on your computer and follow the instructions.</p>\n<div class=\"syndication-links\"><span class=\"relsyn\"><data class=\"u-syndication\" value=\"https://www.facebook.com/1353711854741727/posts/1132227477565188\"></data> <data class=\"u-syndication\" value=\"https://scatmania.livejournal.com/249003.html\"></data> <data class=\"u-syndication\" value=\"https://twitter.com/scatmandan/status/1593360366146576385\"></data> <data class=\"u-syndication\" value=\"https://www.facebook.com/DanQBlog/posts/pfbid0T6V5oWcQRSsnjMiH62XDcqnkPK4ZritG2NvVJHKGyBotdpxGh8VP5qE5Y7cXj3Hol\"></data> <data class=\"u-syndication\" value=\"https://www.tumblr.com/dan--q/701205515145003008/finger-portal-to-wordpress-blog\"></data> <data class=\"u-syndication\" value=\"https://m.danq.me/@dan/109361352374027802\"></data> <data class=\"u-syndication\" value=\"https://www.linkedin.com/feed/update/urn:li:share:6999127314768785408/\"></data></span></div>",
+                "value": "Finger Primer\nThe finger protocol, first standardised way back in 1977, is a lightweight directory system for querying resources on a local or remote shared system. Despite barely being used today, it’s so well-established that virtually every modern desktop operating system – Windows, MacOS, Linux etc. – comes with a copy of finger, giving it a similar ubiquity to web browsers! (If you haven’t yet, give it a go.)\nIf you were using a shared UNIX-like system in the 1970s through 1990s, you might run finger to see who else was logged on at the same time as you, finger chris to get more information about Chris, or finger alice@example.net to look up the details of Alice on the server example.net. Its ability to transcend the boundaries of different systems meant that it was, after a fashion, an example of an early decentralised social network!\nI first actively used finger when I was a student at Aberystwyth University. The shared central computers osfa and osfb supported it in what was a pretty typical way: users could add a .plan and/or .project file to their home directory and the contents of these would be output to anybody using finger to look up that user, along with other information like what department they belonged to. I’m simulating from memory so this won’t be remotely accurate, but broadly speaking it looked a little like this –\n$ finger dlq9@aber.ac.uk\r\nLogin: dlq9                           Name: Dan Q\r\nDirectory: /users/9/d/dlq9      Department: Computer Science\r\n\r\nProject:\r\nWorking on my BEng Software Engineering.\r\n\r\nPlan:\r\n    _______\r\n---'   ____)____\r\n          ______)  Finger me!\r\n       _____)\r\n      (____)\r\n---.__(___)\r\n\nIt’s not just about a directory of people, though: you could finger printers to see what their queues were like, finger a time server to ask what time it was, finger a vending machine to see what drinks it had available… even finger for a weather forecast where you are (this one still works as shown below; try it for your own location!) –\n$ finger oxford@graph.no\r\n        -= Meteogram for Oxford, Oxfordshire, England, United Kingdom =-\r\n 'C                                                                   Rain (mm)\r\n 12\r\n 11\r\n 10                                                         ^^^=--=--\r\n  9^^^                                                   ===\r\n  8   ^^^===      ======                              ^^^\r\n  7         ======      ===============^^^         =--\r\n  6                                       =--=-----\r\n  5\r\n  4\r\n  3        |  |  |  |  |  |  |                                        1 mm\r\n    17 18 19 20 21 22 23 18/11 02 03 04 05 06 07_08_09_10_11_12_13_14 Hour\r\n\r\n     W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W Wind dir.\r\n     6  6  7  7  7  7  7  7  6  6  6  5  5  4  4  4  4  5  6  6  5  5 Wind(m/s)\r\n\r\nLegend left axis:   - Sunny   ^ Scattered   = Clouded   =V= Thunder   # Fog\r\nLegend right axis:  | Rain    ! Sleet       * Snow\r\n\nIf you’d just like to play with finger, then finger.farm is a great starting point. They provide free finger hosting and they’re easy to use (try finger dan@finger.farm to find me!). But I had something bigger in mind…\nFingering WordPress\nWhat if you could finger my blog. I.e. if you ran finger blog@danq.me you’d see a summary of some of my recent posts, along with additional addresses you could finger to read the full content of each. This could be the world’s first finger-to-WordPress gateway; y’know, for if you thought the world needed such a thing. Here’s how I did it:\n\nInstalled efingerd; I’m using the Debian binaries.\nOpened a hole in the firewall on port 79 so the outside world could access it (ufw allow 1965; utf reload).\nThe default configuration for efingerd acts like a “typical” finger server, but it’s highly programmable to make it “smarter”. I:\n\nBlanked /etc/efingerd/list to prevent any output from “listing” the server (finger @danq.me).\nReplaced the contents of /etc/efingerd/list and /etc/efingerd/nouser(which are run when a request matches, or doesn’t match, a user account name) with a call to my script: /usr/local/bin/finger-to-wordpress \"$3\". $3 holds the username that was requested, so we can act on it.\nCreated /usr/local/bin/finger-to-wordpress – a Ruby program that either (a) lists a selection of posts or (b) returns a specific post (stripping the HTML tags)\n\n\n\n Screenshot showing this blog rendered as plain text as the result of running finger blog@danq.me at a Linux terminal.  Screenshot showing this blog rendered as plain text as the result of running finger blog@danq.me at a Linux terminal. \nIn future, I might use some extra tags or metadata to enhance finger-friendly WordPress posts. The infrastructure’s in place already (I already have tags that I use to make certain kinds of content available only via certain media – shh!). You might rightly as what the point is of this entire enterprise, of course, and you’d be well within your rights to ask such a question. But I think the best answer available is “because Dan”.\n Screenshot showing this blog post rendered as plain text as the result of running finger wp-finger@danq.me at a Linux terminal.  Screenshot showing this blog post rendered as plain text as the result of running finger wp-finger@danq.me at a Linux terminal. \nIf you want to see my blog in a whole new way, give it a go: run finger blog@danq.me on your computer and follow the instructions."
+              }
+            ],
+            "syndication": [
+              "https://www.facebook.com/1353711854741727/posts/1132227477565188",
+              "https://scatmania.livejournal.com/249003.html",
+              "https://twitter.com/scatmandan/status/1593360366146576385",
+              "https://www.facebook.com/DanQBlog/posts/pfbid0T6V5oWcQRSsnjMiH62XDcqnkPK4ZritG2NvVJHKGyBotdpxGh8VP5qE5Y7cXj3Hol",
+              "https://www.tumblr.com/dan--q/701205515145003008/finger-portal-to-wordpress-blog",
+              "https://m.danq.me/@dan/109361352374027802",
+              "https://www.linkedin.com/feed/update/urn:li:share:6999127314768785408/",
+              "https://www.facebook.com/1353711854741727/posts/1132227477565188",
+              "https://scatmania.livejournal.com/249003.html",
+              "https://twitter.com/scatmandan/status/1593360366146576385",
+              "https://www.facebook.com/DanQBlog/posts/pfbid0T6V5oWcQRSsnjMiH62XDcqnkPK4ZritG2NvVJHKGyBotdpxGh8VP5qE5Y7cXj3Hol",
+              "https://www.tumblr.com/dan--q/701205515145003008/finger-portal-to-wordpress-blog",
+              "https://m.danq.me/@dan/109361352374027802",
+              "https://www.linkedin.com/feed/update/urn:li:share:6999127314768785408/"
+            ],
+            "category": [
+              "blogging",
+              "finger",
+              "nostalgia",
+              "published on gemini",
+              "technology"
+            ]
+          },
+          "id": "post-20779"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               "Counselling and Constellations"
             ],
             "url": [
@@ -57,7 +106,7 @@
             ],
             "content": [
               {
-                "html": "<p>Over the last three or four years I’ve undertaken a couple of different rounds of psychotherapy. I liken the experience to that of spotting constellations in the night sky.</p>\n<figure id=\"attachment_20730\" aria-describedby=\"caption-attachment-20730\" style=\"width: 640px\" class=\"wp-caption aligncenter\"><a href=\"https://danq.me/wp-content/uploads/2022/11/constellation-1b.jpg\"><img decoding=\"async\" class=\"lazy lazy-hidden size-large wp-image-20730\" src=\"https://danq.me/wp-content/uploads/2022/11/xconstellation-1b-30x16.jpg.pagespeed.ic.C4FgSsN9aI.jpg\" data-lazy-type=\"image\" data-lazy-src=\"https://danq.me/wp-content/uploads/2022/11/constellation-1b-1024x559.jpg\" alt=\"A deep red sky over the silhouette of a treeline, with stars beginning to appear. Six crisscrossing straight lines each connect three to five stars in a row, giving the illusion that their location is not random.\" width=\"640\" height=\"349\" data-lazy-srcset=\"https://danq.me/wp-content/uploads/2022/11/constellation-1b-1024x559.jpg 1024w, https://danq.me/wp-content/uploads/2022/11/constellation-1b-300x164.jpg 300w, https://danq.me/wp-content/uploads/2022/11/constellation-1b-768x420.jpg 768w, https://danq.me/wp-content/uploads/2022/11/constellation-1b-1536x839.jpg 1536w, https://danq.me/wp-content/uploads/2022/11/constellation-1b-2048x1119.jpg 2048w, https://danq.me/wp-content/uploads/2022/11/constellation-1b-30x16.jpg 30w, https://danq.me/wp-content/uploads/2022/11/constellation-1b-898x491.jpg 898w\" data-lazy-sizes=\"(max-width: 640px) 100vw, 640px\"><noscript><img decoding=\"async\" class=\"size-large wp-image-20730\" src=\"https://danq.me/wp-content/uploads/2022/11/640x349xconstellation-1b-1024x559.jpg.pagespeed.ic.qTeCvfbrCN.jpg\" alt=\"A deep red sky over the silhouette of a treeline, with stars beginning to appear. Six crisscrossing straight lines each connect three to five stars in a row, giving the illusion that their location is not random.\" width=\"640\" height=\"349\" srcset=\"https://danq.me/wp-content/uploads/2022/11/constellation-1b-1024x559.jpg 1024w, https://danq.me/wp-content/uploads/2022/11/xconstellation-1b-300x164.jpg.pagespeed.ic.aRiNLPPU4L.jpg 300w, https://danq.me/wp-content/uploads/2022/11/constellation-1b-768x420.jpg 768w, https://danq.me/wp-content/uploads/2022/11/constellation-1b-1536x839.jpg 1536w, https://danq.me/wp-content/uploads/2022/11/constellation-1b-2048x1119.jpg 2048w, https://danq.me/wp-content/uploads/2022/11/xconstellation-1b-30x16.jpg.pagespeed.ic.C4FgSsN9aI.jpg 30w, https://danq.me/wp-content/uploads/2022/11/constellation-1b-898x491.jpg 898w\" sizes=\"(max-width: 640px) 100vw, 640px\"></noscript></a><figcaption id=\"caption-attachment-20730\" class=\"wp-caption-text\">If you’ve got enough arbitrary points, of course, <a href=\"https://en.wikipedia.org/wiki/Alignments_of_random_points\">you can draw whatever lines you want</a>. But that’s not the metaphor I’m going for.</figcaption></figure>\n<p>That’s probably the result of the goal I stated when going in to the first round: <em>I’d like you to help while I take myself apart, try to understand how I work, and then put myself back together again.</em><sup><a name=\"footnote-ref-20729-1\" href=\"https://danq.me/author/dan/#footnote-20729-1\" title=\"To nobody’s surprise whatsoever, I can reveal that ever since I was a child I’ve enjoyed taking things apart to understand how they work. I wasn’t always so good at putting them back together again, though. My first alarm clock died that way, as did countless small clockwork and electronic toys.\" class=\"q18-footnote-ref\">1</a></sup> <em>I’m trying to connect the dots between who-I-once-was and who-I-am-now and find causal influences.</em></p>\n<p>As I’m sure you can imagine: with an opening statement like that I needed to contact a few different therapists before I found one who was compatible with my aims<sup><a name=\"footnote-ref-20729-2\" href=\"https://danq.me/author/dan/#footnote-20729-2\" title=\"I also used my introductory contact to lay out my counselling qualifications, in case they were a barrier for a potential therapist, but it turns out this wasn’t as much of a barrier as the fact that I arrived with a concrete mandate.\" class=\"q18-footnote-ref\">2</a></sup>. But then, I was always taught to get three quotes before hiring a professional.</p>\n<figure id=\"attachment_20733\" aria-describedby=\"caption-attachment-20733\" style=\"width: 640px\" class=\"wp-caption aligncenter\"><a href=\"https://danq.me/wp-content/uploads/2022/11/constellation-2-scaled.jpg\"><img decoding=\"async\" loading=\"lazy\" class=\"lazy lazy-hidden wp-image-20733 size-large\" src=\"https://danq.me/wp-content/uploads/2022/11/xconstellation-2-30x20.jpg.pagespeed.ic.Xag3sEOH-_.jpg\" data-lazy-type=\"image\" data-lazy-src=\"https://danq.me/wp-content/uploads/2022/11/constellation-2-1024x683.jpg\" alt=\"Two abstract constellations of stars drawn onto a picture of stars over the hills as the last of the sunlight begins to vanish.\" width=\"640\" height=\"427\" data-lazy-srcset=\"https://danq.me/wp-content/uploads/2022/11/constellation-2-1024x683.jpg 1024w, https://danq.me/wp-content/uploads/2022/11/constellation-2-300x200.jpg 300w, https://danq.me/wp-content/uploads/2022/11/constellation-2-768x512.jpg 768w, https://danq.me/wp-content/uploads/2022/11/constellation-2-1536x1024.jpg 1536w, https://danq.me/wp-content/uploads/2022/11/constellation-2-2048x1365.jpg 2048w, https://danq.me/wp-content/uploads/2022/11/constellation-2-30x20.jpg 30w, https://danq.me/wp-content/uploads/2022/11/constellation-2-898x599.jpg 898w\" data-lazy-sizes=\"(max-width: 640px) 100vw, 640px\"><noscript><img decoding=\"async\" loading=\"lazy\" class=\"wp-image-20733 size-large\" src=\"https://danq.me/wp-content/uploads/2022/11/640x427xconstellation-2-1024x683.jpg.pagespeed.ic.c8L2RWtqE7.jpg\" alt=\"Two abstract constellations of stars drawn onto a picture of stars over the hills as the last of the sunlight begins to vanish.\" width=\"640\" height=\"427\" srcset=\"https://danq.me/wp-content/uploads/2022/11/constellation-2-1024x683.jpg 1024w, https://danq.me/wp-content/uploads/2022/11/xconstellation-2-300x200.jpg.pagespeed.ic.AkLabs8Xij.jpg 300w, https://danq.me/wp-content/uploads/2022/11/constellation-2-768x512.jpg 768w, https://danq.me/wp-content/uploads/2022/11/constellation-2-1536x1024.jpg 1536w, https://danq.me/wp-content/uploads/2022/11/constellation-2-2048x1365.jpg 2048w, https://danq.me/wp-content/uploads/2022/11/xconstellation-2-30x20.jpg.pagespeed.ic.Xag3sEOH-_.jpg 30w, https://danq.me/wp-content/uploads/2022/11/constellation-2-898x599.jpg 898w\" sizes=\"(max-width: 640px) 100vw, 640px\"></noscript></a><figcaption id=\"caption-attachment-20733\" class=\"wp-caption-text\">Constellations are necessarily subjective. It’s always pleased me to think about how Orion the Hunter, one of the Northern hemisphere’s most-recognisable Winter visitors, was  interpreted by the Lakota people to represent a bison, and some Indian traditions see it as a deer.</figcaption></figure>\n<p>It’s that “connecting the dots” that feels like constellation-spotting. A lot of the counselling work (and the “homework” that came afterwards) has stemmed from ideas like:</p>\n<ul>\n<li>This star represents a moment in my past.</li>\n<li>This star represents a facet of my identity today.</li>\n<li>If we draw a line from one to the other, what does the resulting constellation look like?</li>\n</ul>\n<p>I suppose that what I’ve been doing is using the lens of retrospection to ask: “Hey, <em>why am I like this?</em> Is <em>this</em> part of it? And what impact did <em>that</em> have on me? Why can’t I see it?”</p>\n<p>When you’re stargazing, sometimes you have to ask somebody to point out the shape in front of you before you can see it for yourself.</p>\n<figure id=\"attachment_20746\" aria-describedby=\"caption-attachment-20746\" style=\"width: 640px\" class=\"wp-caption aligncenter\"><a href=\"https://danq.me/wp-content/uploads/2022/11/pexels-pixabay-33825.jpg\"><img decoding=\"async\" loading=\"lazy\" class=\"lazy lazy-hidden size-large wp-image-20746\" src=\"https://danq.me/wp-content/uploads/2022/11/xpexels-pixabay-33825-30x20.jpg.pagespeed.ic.9K6CbTLyM3.jpg\" data-lazy-type=\"image\" data-lazy-src=\"https://danq.me/wp-content/uploads/2022/11/pexels-pixabay-33825-1024x682.jpg\" alt=\"A silhouette of a person sits on a rock, gazing up at an incredible number of stars in an inky black sky.\" width=\"640\" height=\"426\" data-lazy-srcset=\"https://danq.me/wp-content/uploads/2022/11/pexels-pixabay-33825-1024x682.jpg 1024w, https://danq.me/wp-content/uploads/2022/11/pexels-pixabay-33825-300x200.jpg 300w, https://danq.me/wp-content/uploads/2022/11/pexels-pixabay-33825-768x512.jpg 768w, https://danq.me/wp-content/uploads/2022/11/pexels-pixabay-33825-1536x1024.jpg 1536w, https://danq.me/wp-content/uploads/2022/11/pexels-pixabay-33825-30x20.jpg 30w, https://danq.me/wp-content/uploads/2022/11/pexels-pixabay-33825-898x599.jpg 898w, https://danq.me/wp-content/uploads/2022/11/pexels-pixabay-33825.jpg 2000w\" data-lazy-sizes=\"(max-width: 640px) 100vw, 640px\"><noscript><img decoding=\"async\" loading=\"lazy\" class=\"size-large wp-image-20746\" src=\"https://danq.me/wp-content/uploads/2022/11/640x426xpexels-pixabay-33825-1024x682.jpg.pagespeed.ic.lw9P6zRNZC.jpg\" alt=\"A silhouette of a person sits on a rock, gazing up at an incredible number of stars in an inky black sky.\" width=\"640\" height=\"426\" srcset=\"https://danq.me/wp-content/uploads/2022/11/xpexels-pixabay-33825-1024x682.jpg.pagespeed.ic.bVRVeohG8g.jpg 1024w, https://danq.me/wp-content/uploads/2022/11/xpexels-pixabay-33825-300x200.jpg.pagespeed.ic.C9326zcvxf.jpg 300w, https://danq.me/wp-content/uploads/2022/11/xpexels-pixabay-33825-768x512.jpg.pagespeed.ic.kVaJNHZLJW.jpg 768w, https://danq.me/wp-content/uploads/2022/11/xpexels-pixabay-33825-1536x1024.jpg.pagespeed.ic.ybEuYY0aNQ.jpg 1536w, https://danq.me/wp-content/uploads/2022/11/xpexels-pixabay-33825-30x20.jpg.pagespeed.ic.9K6CbTLyM3.jpg 30w, https://danq.me/wp-content/uploads/2022/11/xpexels-pixabay-33825-898x599.jpg.pagespeed.ic.9QTRxSXp5-.jpg 898w, https://danq.me/wp-content/uploads/2022/11/xpexels-pixabay-33825.jpg.pagespeed.ic.yQWc-gb8yD.jpg 2000w\" sizes=\"(max-width: 640px) 100vw, 640px\"></noscript></a><figcaption id=\"caption-attachment-20746\" class=\"wp-caption-text\">A better writer would make an allusion to looking into one’s past through the symbolism of looking into the Universe’s past, but I’m not that writer.</figcaption></figure>\n<p>I haven’t yet finished this self-analytical journey, but I’m in an extended “homework” phase where I’m finding my own way: joining the dots for myself. Once somebody’s helped you find those constellations that mean something to you, it’s easier to pick them out when you stargaze alone.</p>\n<div class=\"q18-footnotes\" style=\"font-size: 80%; margin-top: 0.5em; padding-top: 0.5em; border-top: 1px solid #666;\">\n<h2 class=\"sr-only\">Footnotes</h2>\n<p class=\"q18-footnote\" data-footnote-name=\"footnote-20729-1\"><sup><a name=\"footnote-20729-1\" href=\"https://danq.me/author/dan/#footnote-ref-20729-1\">1</a></sup> To nobody’s surprise whatsoever, I can reveal that ever since I was a child I’ve enjoyed taking things apart to understand how they work. I wasn’t always so good at putting them back together again, though. My first alarm clock died that way, as did countless small clockwork and electronic toys.</p>\n<p class=\"q18-footnote\" data-footnote-name=\"footnote-20729-2\"><sup><a name=\"footnote-20729-2\" href=\"https://danq.me/author/dan/#footnote-ref-20729-2\">2</a></sup> I also used my introductory contact to lay out <em>my</em> counselling qualifications, in case they were a barrier for a potential therapist, but it turns out this wasn’t as much of a barrier as the fact that I arrived with a concrete mandate.</p>\n</div>\n<div class=\"syndication-links\"><span class=\"relsyn\"><data class=\"u-syndication\" value=\"https://www.facebook.com/1353711854741727/posts/1130810047706931\"></data> <data class=\"u-syndication\" value=\"https://scatmania.livejournal.com/248600.html\"></data> <data class=\"u-syndication\" value=\"https://twitter.com/scatmandan/status/1592873821291233281\"></data> <data class=\"u-syndication\" value=\"https://www.facebook.com/DanQBlog/posts/pfbid0vMdMk2k9qbKEVPBPxy1iszDmcfsLWMCX2sdW7jgn1P8frki6LRerPnJ62fjSNjsHl\"></data> <data class=\"u-syndication\" value=\"https://www.tumblr.com/dan--q/701083879061241856/counselling-and-constellations\"></data> <data class=\"u-syndication\" value=\"https://m.danq.me/@dan/109353740274780689\"></data></span></div>",
+                "html": "<p>Over the last three or four years I’ve undertaken a couple of different rounds of psychotherapy. I liken the experience to that of spotting constellations in the night sky.</p>\n<figure id=\"attachment_20730\" aria-describedby=\"caption-attachment-20730\" style=\"width: 640px\" class=\"wp-caption aligncenter\"><a href=\"https://danq.me/wp-content/uploads/2022/11/constellation-1b.jpg\"><img decoding=\"async\" loading=\"lazy\" class=\"lazy lazy-hidden size-large wp-image-20730\" src=\"https://danq.me/wp-content/uploads/2022/11/xconstellation-1b-30x16.jpg.pagespeed.ic.C4FgSsN9aI.jpg\" data-lazy-type=\"image\" data-lazy-src=\"https://danq.me/wp-content/uploads/2022/11/constellation-1b-1024x559.jpg\" alt=\"A deep red sky over the silhouette of a treeline, with stars beginning to appear. Six crisscrossing straight lines each connect three to five stars in a row, giving the illusion that their location is not random.\" width=\"640\" height=\"349\" data-lazy-srcset=\"https://danq.me/wp-content/uploads/2022/11/constellation-1b-1024x559.jpg 1024w, https://danq.me/wp-content/uploads/2022/11/constellation-1b-300x164.jpg 300w, https://danq.me/wp-content/uploads/2022/11/constellation-1b-768x420.jpg 768w, https://danq.me/wp-content/uploads/2022/11/constellation-1b-1536x839.jpg 1536w, https://danq.me/wp-content/uploads/2022/11/constellation-1b-2048x1119.jpg 2048w, https://danq.me/wp-content/uploads/2022/11/constellation-1b-30x16.jpg 30w, https://danq.me/wp-content/uploads/2022/11/constellation-1b-898x491.jpg 898w\" data-lazy-sizes=\"(max-width: 640px) 100vw, 640px\"><noscript><img decoding=\"async\" loading=\"lazy\" class=\"size-large wp-image-20730\" src=\"https://danq.me/wp-content/uploads/2022/11/640x349xconstellation-1b-1024x559.jpg.pagespeed.ic.qTeCvfbrCN.jpg\" alt=\"A deep red sky over the silhouette of a treeline, with stars beginning to appear. Six crisscrossing straight lines each connect three to five stars in a row, giving the illusion that their location is not random.\" width=\"640\" height=\"349\" srcset=\"https://danq.me/wp-content/uploads/2022/11/constellation-1b-1024x559.jpg 1024w, https://danq.me/wp-content/uploads/2022/11/xconstellation-1b-300x164.jpg.pagespeed.ic.aRiNLPPU4L.jpg 300w, https://danq.me/wp-content/uploads/2022/11/constellation-1b-768x420.jpg 768w, https://danq.me/wp-content/uploads/2022/11/constellation-1b-1536x839.jpg 1536w, https://danq.me/wp-content/uploads/2022/11/constellation-1b-2048x1119.jpg 2048w, https://danq.me/wp-content/uploads/2022/11/xconstellation-1b-30x16.jpg.pagespeed.ic.C4FgSsN9aI.jpg 30w, https://danq.me/wp-content/uploads/2022/11/constellation-1b-898x491.jpg 898w\" sizes=\"(max-width: 640px) 100vw, 640px\"></noscript></a><figcaption id=\"caption-attachment-20730\" class=\"wp-caption-text\">If you’ve got enough arbitrary points, of course, <a href=\"https://en.wikipedia.org/wiki/Alignments_of_random_points\">you can draw whatever lines you want</a>. But that’s not the metaphor I’m going for.</figcaption></figure>\n<p>That’s probably the result of the goal I stated when going in to the first round: <em>I’d like you to help while I take myself apart, try to understand how I work, and then put myself back together again.</em><sup><a name=\"footnote-ref-20729-1\" href=\"https://danq.me/author/dan/#footnote-20729-1\" title=\"To nobody’s surprise whatsoever, I can reveal that ever since I was a child I’ve enjoyed taking things apart to understand how they work. I wasn’t always so good at putting them back together again, though. My first alarm clock died that way, as did countless small clockwork and electronic toys.\" class=\"q18-footnote-ref\">1</a></sup> <em>I’m trying to connect the dots between who-I-once-was and who-I-am-now and find causal influences.</em></p>\n<p>As I’m sure you can imagine: with an opening statement like that I needed to contact a few different therapists before I found one who was compatible with my aims<sup><a name=\"footnote-ref-20729-2\" href=\"https://danq.me/author/dan/#footnote-20729-2\" title=\"I also used my introductory contact to lay out my counselling qualifications, in case they were a barrier for a potential therapist, but it turns out this wasn’t as much of a barrier as the fact that I arrived with a concrete mandate.\" class=\"q18-footnote-ref\">2</a></sup>. But then, I was always taught to get three quotes before hiring a professional.</p>\n<figure id=\"attachment_20733\" aria-describedby=\"caption-attachment-20733\" style=\"width: 640px\" class=\"wp-caption aligncenter\"><a href=\"https://danq.me/wp-content/uploads/2022/11/constellation-2-scaled.jpg\"><img decoding=\"async\" loading=\"lazy\" class=\"lazy lazy-hidden wp-image-20733 size-large\" src=\"https://danq.me/wp-content/uploads/2022/11/xconstellation-2-30x20.jpg.pagespeed.ic.Xag3sEOH-_.jpg\" data-lazy-type=\"image\" data-lazy-src=\"https://danq.me/wp-content/uploads/2022/11/constellation-2-1024x683.jpg\" alt=\"Two abstract constellations of stars drawn onto a picture of stars over the hills as the last of the sunlight begins to vanish.\" width=\"640\" height=\"427\" data-lazy-srcset=\"https://danq.me/wp-content/uploads/2022/11/constellation-2-1024x683.jpg 1024w, https://danq.me/wp-content/uploads/2022/11/constellation-2-300x200.jpg 300w, https://danq.me/wp-content/uploads/2022/11/constellation-2-768x512.jpg 768w, https://danq.me/wp-content/uploads/2022/11/constellation-2-1536x1024.jpg 1536w, https://danq.me/wp-content/uploads/2022/11/constellation-2-2048x1365.jpg 2048w, https://danq.me/wp-content/uploads/2022/11/constellation-2-30x20.jpg 30w, https://danq.me/wp-content/uploads/2022/11/constellation-2-898x599.jpg 898w\" data-lazy-sizes=\"(max-width: 640px) 100vw, 640px\"><noscript><img decoding=\"async\" loading=\"lazy\" class=\"wp-image-20733 size-large\" src=\"https://danq.me/wp-content/uploads/2022/11/640x427xconstellation-2-1024x683.jpg.pagespeed.ic.c8L2RWtqE7.jpg\" alt=\"Two abstract constellations of stars drawn onto a picture of stars over the hills as the last of the sunlight begins to vanish.\" width=\"640\" height=\"427\" srcset=\"https://danq.me/wp-content/uploads/2022/11/constellation-2-1024x683.jpg 1024w, https://danq.me/wp-content/uploads/2022/11/xconstellation-2-300x200.jpg.pagespeed.ic.AkLabs8Xij.jpg 300w, https://danq.me/wp-content/uploads/2022/11/constellation-2-768x512.jpg 768w, https://danq.me/wp-content/uploads/2022/11/constellation-2-1536x1024.jpg 1536w, https://danq.me/wp-content/uploads/2022/11/constellation-2-2048x1365.jpg 2048w, https://danq.me/wp-content/uploads/2022/11/xconstellation-2-30x20.jpg.pagespeed.ic.Xag3sEOH-_.jpg 30w, https://danq.me/wp-content/uploads/2022/11/constellation-2-898x599.jpg 898w\" sizes=\"(max-width: 640px) 100vw, 640px\"></noscript></a><figcaption id=\"caption-attachment-20733\" class=\"wp-caption-text\">Constellations are necessarily subjective. It’s always pleased me to think about how Orion the Hunter, one of the Northern hemisphere’s most-recognisable Winter visitors, was  interpreted by the Lakota people to represent a bison, and some Indian traditions see it as a deer.</figcaption></figure>\n<p>It’s that “connecting the dots” that feels like constellation-spotting. A lot of the counselling work (and the “homework” that came afterwards) has stemmed from ideas like:</p>\n<ul>\n<li>This star represents a moment in my past.</li>\n<li>This star represents a facet of my identity today.</li>\n<li>If we draw a line from one to the other, what does the resulting constellation look like?</li>\n</ul>\n<p>I suppose that what I’ve been doing is using the lens of retrospection to ask: “Hey, <em>why am I like this?</em> Is <em>this</em> part of it? And what impact did <em>that</em> have on me? Why can’t I see it?”</p>\n<p>When you’re stargazing, sometimes you have to ask somebody to point out the shape in front of you before you can see it for yourself.</p>\n<figure id=\"attachment_20746\" aria-describedby=\"caption-attachment-20746\" style=\"width: 640px\" class=\"wp-caption aligncenter\"><a href=\"https://danq.me/wp-content/uploads/2022/11/pexels-pixabay-33825.jpg\"><img decoding=\"async\" loading=\"lazy\" class=\"lazy lazy-hidden size-large wp-image-20746\" src=\"https://danq.me/wp-content/uploads/2022/11/xpexels-pixabay-33825-30x20.jpg.pagespeed.ic.9K6CbTLyM3.jpg\" data-lazy-type=\"image\" data-lazy-src=\"https://danq.me/wp-content/uploads/2022/11/pexels-pixabay-33825-1024x682.jpg\" alt=\"A silhouette of a person sits on a rock, gazing up at an incredible number of stars in an inky black sky.\" width=\"640\" height=\"426\" data-lazy-srcset=\"https://danq.me/wp-content/uploads/2022/11/pexels-pixabay-33825-1024x682.jpg 1024w, https://danq.me/wp-content/uploads/2022/11/pexels-pixabay-33825-300x200.jpg 300w, https://danq.me/wp-content/uploads/2022/11/pexels-pixabay-33825-768x512.jpg 768w, https://danq.me/wp-content/uploads/2022/11/pexels-pixabay-33825-1536x1024.jpg 1536w, https://danq.me/wp-content/uploads/2022/11/pexels-pixabay-33825-30x20.jpg 30w, https://danq.me/wp-content/uploads/2022/11/pexels-pixabay-33825-898x599.jpg 898w, https://danq.me/wp-content/uploads/2022/11/pexels-pixabay-33825.jpg 2000w\" data-lazy-sizes=\"(max-width: 640px) 100vw, 640px\"><noscript><img decoding=\"async\" loading=\"lazy\" class=\"size-large wp-image-20746\" src=\"https://danq.me/wp-content/uploads/2022/11/640x426xpexels-pixabay-33825-1024x682.jpg.pagespeed.ic.lw9P6zRNZC.jpg\" alt=\"A silhouette of a person sits on a rock, gazing up at an incredible number of stars in an inky black sky.\" width=\"640\" height=\"426\" srcset=\"https://danq.me/wp-content/uploads/2022/11/xpexels-pixabay-33825-1024x682.jpg.pagespeed.ic.bVRVeohG8g.jpg 1024w, https://danq.me/wp-content/uploads/2022/11/xpexels-pixabay-33825-300x200.jpg.pagespeed.ic.C9326zcvxf.jpg 300w, https://danq.me/wp-content/uploads/2022/11/xpexels-pixabay-33825-768x512.jpg.pagespeed.ic.kVaJNHZLJW.jpg 768w, https://danq.me/wp-content/uploads/2022/11/xpexels-pixabay-33825-1536x1024.jpg.pagespeed.ic.ybEuYY0aNQ.jpg 1536w, https://danq.me/wp-content/uploads/2022/11/xpexels-pixabay-33825-30x20.jpg.pagespeed.ic.9K6CbTLyM3.jpg 30w, https://danq.me/wp-content/uploads/2022/11/xpexels-pixabay-33825-898x599.jpg.pagespeed.ic.9QTRxSXp5-.jpg 898w, https://danq.me/wp-content/uploads/2022/11/xpexels-pixabay-33825.jpg.pagespeed.ic.yQWc-gb8yD.jpg 2000w\" sizes=\"(max-width: 640px) 100vw, 640px\"></noscript></a><figcaption id=\"caption-attachment-20746\" class=\"wp-caption-text\">A better writer would make an allusion to looking into one’s past through the symbolism of looking into the Universe’s past, but I’m not that writer.</figcaption></figure>\n<p>I haven’t yet finished this self-analytical journey, but I’m in an extended “homework” phase where I’m finding my own way: joining the dots for myself. Once somebody’s helped you find those constellations that mean something to you, it’s easier to pick them out when you stargaze alone.</p>\n<div class=\"q18-footnotes\" style=\"font-size: 80%; margin-top: 0.5em; padding-top: 0.5em; border-top: 1px solid #666;\">\n<h2 class=\"sr-only\">Footnotes</h2>\n<p class=\"q18-footnote\" data-footnote-name=\"footnote-20729-1\"><sup><a name=\"footnote-20729-1\" href=\"https://danq.me/author/dan/#footnote-ref-20729-1\">1</a></sup> To nobody’s surprise whatsoever, I can reveal that ever since I was a child I’ve enjoyed taking things apart to understand how they work. I wasn’t always so good at putting them back together again, though. My first alarm clock died that way, as did countless small clockwork and electronic toys.</p>\n<p class=\"q18-footnote\" data-footnote-name=\"footnote-20729-2\"><sup><a name=\"footnote-20729-2\" href=\"https://danq.me/author/dan/#footnote-ref-20729-2\">2</a></sup> I also used my introductory contact to lay out <em>my</em> counselling qualifications, in case they were a barrier for a potential therapist, but it turns out this wasn’t as much of a barrier as the fact that I arrived with a concrete mandate.</p>\n</div>\n<div class=\"syndication-links\"><span class=\"relsyn\"><data class=\"u-syndication\" value=\"https://www.facebook.com/1353711854741727/posts/1130810047706931\"></data> <data class=\"u-syndication\" value=\"https://scatmania.livejournal.com/248600.html\"></data> <data class=\"u-syndication\" value=\"https://twitter.com/scatmandan/status/1592873821291233281\"></data> <data class=\"u-syndication\" value=\"https://www.facebook.com/DanQBlog/posts/pfbid0vMdMk2k9qbKEVPBPxy1iszDmcfsLWMCX2sdW7jgn1P8frki6LRerPnJ62fjSNjsHl\"></data> <data class=\"u-syndication\" value=\"https://www.tumblr.com/dan--q/701083879061241856/counselling-and-constellations\"></data> <data class=\"u-syndication\" value=\"https://m.danq.me/@dan/109353740274780689\"></data></span></div>",
                 "value": "Over the last three or four years I’ve undertaken a couple of different rounds of psychotherapy. I liken the experience to that of spotting constellations in the night sky.\n A deep red sky over the silhouette of a treeline, with stars beginning to appear. Six crisscrossing straight lines each connect three to five stars in a row, giving the illusion that their location is not random.  A deep red sky over the silhouette of a treeline, with stars beginning to appear. Six crisscrossing straight lines each connect three to five stars in a row, giving the illusion that their location is not random. If you’ve got enough arbitrary points, of course, you can draw whatever lines you want. But that’s not the metaphor I’m going for.\nThat’s probably the result of the goal I stated when going in to the first round: I’d like you to help while I take myself apart, try to understand how I work, and then put myself back together again.1 I’m trying to connect the dots between who-I-once-was and who-I-am-now and find causal influences.\nAs I’m sure you can imagine: with an opening statement like that I needed to contact a few different therapists before I found one who was compatible with my aims2. But then, I was always taught to get three quotes before hiring a professional.\n Two abstract constellations of stars drawn onto a picture of stars over the hills as the last of the sunlight begins to vanish.  Two abstract constellations of stars drawn onto a picture of stars over the hills as the last of the sunlight begins to vanish. Constellations are necessarily subjective. It’s always pleased me to think about how Orion the Hunter, one of the Northern hemisphere’s most-recognisable Winter visitors, was  interpreted by the Lakota people to represent a bison, and some Indian traditions see it as a deer.\nIt’s that “connecting the dots” that feels like constellation-spotting. A lot of the counselling work (and the “homework” that came afterwards) has stemmed from ideas like:\n\nThis star represents a moment in my past.\nThis star represents a facet of my identity today.\nIf we draw a line from one to the other, what does the resulting constellation look like?\n\nI suppose that what I’ve been doing is using the lens of retrospection to ask: “Hey, why am I like this? Is this part of it? And what impact did that have on me? Why can’t I see it?”\nWhen you’re stargazing, sometimes you have to ask somebody to point out the shape in front of you before you can see it for yourself.\n A silhouette of a person sits on a rock, gazing up at an incredible number of stars in an inky black sky.  A silhouette of a person sits on a rock, gazing up at an incredible number of stars in an inky black sky. A better writer would make an allusion to looking into one’s past through the symbolism of looking into the Universe’s past, but I’m not that writer.\nI haven’t yet finished this self-analytical journey, but I’m in an extended “homework” phase where I’m finding my own way: joining the dots for myself. Once somebody’s helped you find those constellations that mean something to you, it’s easier to pick them out when you stargaze alone.\nFootnotes1 To nobody’s surprise whatsoever, I can reveal that ever since I was a child I’ve enjoyed taking things apart to understand how they work. I wasn’t always so good at putting them back together again, though. My first alarm clock died that way, as did countless small clockwork and electronic toys.2 I also used my introductory contact to lay out my counselling qualifications, in case they were a barrier for a potential therapist, but it turns out this wasn’t as much of a barrier as the fact that I arrived with a concrete mandate."
               }
             ],
@@ -868,80 +917,6 @@
             ]
           },
           "id": "post-20639"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Reply to OpenID for WP"
-            ],
-            "url": [
-              "https://danq.me/2022/11/06/reply-to-openid-for-wp/",
-              "https://ma.tt/2006/04/openid-for-wp/"
-            ],
-            "uid": [
-              "https://danq.me/2022/11/06/reply-to-openid-for-wp/"
-            ],
-            "published": [
-              "2022-11-06T09:28:40+00:00"
-            ],
-            "content": [
-              {
-                "html": "<section class=\"h-cite response p-in-reply-to \">\n<header>\n<span class=\"p-name\"> </span></header>\n<blockquote class=\"e-summary\"></blockquote>\n</section>\n<div class=\"u-in-reply-to\">\n<p>On 14 April 2006, <a class=\"u-url\" href=\"https://ma.tt/2006/04/openid-for-wp/\">Matt Mullenweg said:</a></p>\n<blockquote class=\"h-cite\">\n<div class=\"p-content\">\n<p><a href=\"http://blog.scatmania.org/archives/2005/08/06/openid-for-wordpress/\">OpenID for WordPress plugin</a><cite class=\"p-author h-card\"></cite></p>\n</div>\n</blockquote>\n</div>\n<p>This weekend I was experimentally reimplenting how my blog displays comments. For testing I needed to find an old post with both trackbacks and pingbacks on it. I found <a href=\"https://danq.me/2005/08/06/openid-for-wordpress/\">my post that you linked, here</a>, and was delighted to be reminded that despite both of our blogs changing domain name (from photomatt.net to ma.tt and from blog.scatmania.org to danq.me, respectively), all the links back and forth still work perfectly because clearly we share an apporopriate dedication to the principle that <a href=\"https://www.w3.org/Provider/Style/URI.html\">Cool URIs Don’t Change</a>, and set up our redirects accordingly. 🙌</p>\n<p>Incidentally, this was about the point in time at which I first thought to myself “hey, I like what Matt’s doing with this Automattic thing; I should work there someday”. It took me like a decade to a decade-and-a-half to get around to applying, though… 😅</p>\n<p>Anyway: thanks for keeping your URIs cool so I could enjoy this trip down memory lane (and debug an experimental <code>wp_list_comments</code> callback!).</p>\n<div class=\"syndication-links\"></div>",
-                "value": "On 14 April 2006, Matt Mullenweg said:\n\n\nOpenID for WordPress plugin\n\n\n\nThis weekend I was experimentally reimplenting how my blog displays comments. For testing I needed to find an old post with both trackbacks and pingbacks on it. I found my post that you linked, here, and was delighted to be reminded that despite both of our blogs changing domain name (from photomatt.net to ma.tt and from blog.scatmania.org to danq.me, respectively), all the links back and forth still work perfectly because clearly we share an apporopriate dedication to the principle that Cool URIs Don’t Change, and set up our redirects accordingly. 🙌\nIncidentally, this was about the point in time at which I first thought to myself “hey, I like what Matt’s doing with this Automattic thing; I should work there someday”. It took me like a decade to a decade-and-a-half to get around to applying, though… 😅\nAnyway: thanks for keeping your URIs cool so I could enjoy this trip down memory lane (and debug an experimental wp_list_comments callback!)."
-              }
-            ],
-            "in-reply-to": [
-              {
-                "type": [
-                  "h-cite"
-                ],
-                "properties": {
-                  "name": [
-                    ""
-                  ],
-                  "summary": [
-                    {
-                      "html": "",
-                      "value": ""
-                    }
-                  ]
-                },
-                "value": ""
-              },
-              "On 14 April 2006, Matt Mullenweg said:\n\n\nOpenID for WordPress plugin"
-            ],
-            "category": [
-              "automattic",
-              "openid",
-              "web",
-              "wordpress"
-            ]
-          },
-          "id": "post-20637",
-          "children": [
-            {
-              "type": [
-                "h-cite"
-              ],
-              "properties": {
-                "content": [
-                  "OpenID for WordPress plugin"
-                ],
-                "author": [
-                  {
-                    "type": [
-                      "h-card"
-                    ],
-                    "properties": {},
-                    "value": ""
-                  }
-                ]
-              }
-            }
-          ]
         }
       ]
     }
@@ -1030,6 +1005,7 @@
       "https://danq.me/"
     ],
     "bookmark": [
+      "https://danq.me/2022/11/17/wp-finger/",
       "https://danq.me/2022/11/16/constellations/",
       "https://danq.me/2022/11/15/reply-to-decentralization-and-verification/",
       "https://danq.me/2022/11/14/dan-q-performed-maintenance-for-gc9gkja-a-fine-pair-1625-eynsham-5/",
@@ -1043,10 +1019,16 @@
       "https://danq.me/2022/11/09/debugging-mysteries/",
       "https://danq.me/2022/11/08/smart-pocketwatch/",
       "https://danq.me/2022/11/07/how-to-date-a-recording-using-background-electrical-noise/",
-      "https://danq.me/2022/11/07/maze-xml/",
-      "https://danq.me/2022/11/06/reply-to-openid-for-wp/"
+      "https://danq.me/2022/11/07/maze-xml/"
     ],
     "syndication": [
+      "https://www.facebook.com/1353711854741727/posts/1132227477565188",
+      "https://scatmania.livejournal.com/249003.html",
+      "https://twitter.com/scatmandan/status/1593360366146576385",
+      "https://www.facebook.com/DanQBlog/posts/pfbid0T6V5oWcQRSsnjMiH62XDcqnkPK4ZritG2NvVJHKGyBotdpxGh8VP5qE5Y7cXj3Hol",
+      "https://www.tumblr.com/dan--q/701205515145003008/finger-portal-to-wordpress-blog",
+      "https://m.danq.me/@dan/109361352374027802",
+      "https://www.linkedin.com/feed/update/urn:li:share:6999127314768785408/",
       "https://www.facebook.com/DanQBlog/posts/pfbid0vMdMk2k9qbKEVPBPxy1iszDmcfsLWMCX2sdW7jgn1P8frki6LRerPnJ62fjSNjsHl",
       "https://scatmania.livejournal.com/248600.html",
       "https://twitter.com/scatmandan/status/1592873821291233281",
@@ -1067,6 +1049,11 @@
       "https://m.danq.me/@dan/109302813986317668"
     ],
     "tag": [
+      "https://danq.me/tag/blogging/",
+      "https://danq.me/tag/finger/",
+      "https://danq.me/tag/nostalgia/",
+      "https://danq.me/tag/published-on-gemini/",
+      "https://danq.me/tag/technology/",
       "https://danq.me/tag/abuse/",
       "https://danq.me/tag/astronomy/",
       "https://danq.me/tag/counselling/",
@@ -1082,14 +1069,12 @@
       "https://danq.me/tag/dogs/",
       "https://danq.me/tag/memorable/",
       "https://danq.me/tag/indieweb/",
-      "https://danq.me/tag/technology/",
       "https://danq.me/tag/choose-your-own-adventure/",
       "https://danq.me/tag/programming/",
       "https://danq.me/tag/study/",
       "https://danq.me/tag/twine/",
       "https://danq.me/tag/clock/",
       "https://danq.me/tag/hipsters/",
-      "https://danq.me/tag/published-on-gemini/",
       "https://danq.me/tag/telephone/",
       "https://danq.me/tag/telephones/",
       "https://danq.me/tag/crime/",
@@ -1097,11 +1082,7 @@
       "https://danq.me/tag/forensics/",
       "https://danq.me/tag/police/",
       "https://danq.me/tag/standards/",
-      "https://danq.me/tag/xml/",
-      "https://danq.me/tag/automattic/",
-      "https://danq.me/tag/openid/",
-      "https://danq.me/tag/web/",
-      "https://danq.me/tag/wordpress/"
+      "https://danq.me/tag/xml/"
     ],
     "license": [
       "https://creativecommons.org/licenses/by-nc/4.0/"
@@ -1358,6 +1339,84 @@
       ],
       "text": "\n            Dan\n            Q\n          "
     },
+    "https://danq.me/2022/11/17/wp-finger/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "Finger Portal to WordPress Blog"
+    },
+    "https://www.facebook.com/1353711854741727/posts/1132227477565188": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "\n                ​​                facebook.com\n              "
+    },
+    "https://scatmania.livejournal.com/249003.html": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "\n                ​​                scatmania.livejournal.com\n              "
+    },
+    "https://twitter.com/scatmandan/status/1593360366146576385": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "\n                ​​                twitter.com\n              "
+    },
+    "https://www.facebook.com/DanQBlog/posts/pfbid0T6V5oWcQRSsnjMiH62XDcqnkPK4ZritG2NvVJHKGyBotdpxGh8VP5qE5Y7cXj3Hol": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "\n                ​​                facebook.com\n              "
+    },
+    "https://www.tumblr.com/dan--q/701205515145003008/finger-portal-to-wordpress-blog": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "\n                                tumblr.com\n              "
+    },
+    "https://m.danq.me/@dan/109361352374027802": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "\n                                m.danq.me\n              "
+    },
+    "https://www.linkedin.com/feed/update/urn:li:share:6999127314768785408/": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "\n                                linkedin.com\n              "
+    },
+    "https://danq.me/tag/blogging/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "blogging"
+    },
+    "https://danq.me/tag/finger/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "finger"
+    },
+    "https://danq.me/tag/nostalgia/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "nostalgia"
+    },
+    "https://danq.me/tag/published-on-gemini/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "published on gemini"
+    },
+    "https://danq.me/tag/technology/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "technology"
+    },
     "https://danq.me/2022/11/16/constellations/": {
       "rels": [
         "bookmark"
@@ -1574,12 +1633,6 @@
       ],
       "text": "indieweb"
     },
-    "https://danq.me/tag/technology/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "technology"
-    },
     "https://danq.me/2022/11/09/debugging-mysteries/": {
       "rels": [
         "bookmark"
@@ -1645,12 +1698,6 @@
         "tag"
       ],
       "text": "hipsters"
-    },
-    "https://danq.me/tag/published-on-gemini/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "published on gemini"
     },
     "https://danq.me/tag/telephone/": {
       "rels": [
@@ -1735,36 +1782,6 @@
         "tag"
       ],
       "text": "xml"
-    },
-    "https://danq.me/2022/11/06/reply-to-openid-for-wp/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Reply to OpenID for WP"
-    },
-    "https://danq.me/tag/automattic/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "automattic"
-    },
-    "https://danq.me/tag/openid/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "openid"
-    },
-    "https://danq.me/tag/web/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "web"
-    },
-    "https://danq.me/tag/wordpress/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "wordpress"
     },
     "https://creativecommons.org/licenses/by-nc/4.0/": {
       "rels": [

@@ -1,6 +1,16 @@
 {
   "items": [],
   "rels": {
+    "apple-touch-icon": [
+      "https://6a68.net/apple-touch-icon.png"
+    ],
+    "icon": [
+      "https://6a68.net/favicon-32x32.png",
+      "https://6a68.net/favicon-16x16.png"
+    ],
+    "manifest": [
+      "https://6a68.net/site.webmanifest"
+    ],
     "stylesheet": [
       "https://6a68.net/css/main.css"
     ],
@@ -9,9 +19,36 @@
     ],
     "alternate": [
       "https://6a68.net/feed.xml"
+    ],
+    "me": [
+      "https://mastodon.social/@jaredhirsch",
+      "https://mathstodon.xyz/@jaredhirsch",
+      "https://jaredhirsch.com/"
     ]
   },
   "rel-urls": {
+    "https://6a68.net/apple-touch-icon.png": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://6a68.net/favicon-32x32.png": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/png"
+    },
+    "https://6a68.net/favicon-16x16.png": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/png"
+    },
+    "https://6a68.net/site.webmanifest": {
+      "rels": [
+        "manifest"
+      ]
+    },
     "https://6a68.net/css/main.css": {
       "rels": [
         "stylesheet"
@@ -26,8 +63,26 @@
       "rels": [
         "alternate"
       ],
-      "title": "6a68.net",
+      "title": "tech blog // jared hirsch // ¯\\_(ツ)_/¯",
       "type": "application/rss+xml"
+    },
+    "https://mastodon.social/@jaredhirsch": {
+      "rels": [
+        "me"
+      ],
+      "text": "mastodon.social"
+    },
+    "https://mathstodon.xyz/@jaredhirsch": {
+      "rels": [
+        "me"
+      ],
+      "text": "mathstodon.xyz"
+    },
+    "https://jaredhirsch.com/": {
+      "rels": [
+        "me"
+      ],
+      "text": "jaredhirsch.com"
     }
   }
 }

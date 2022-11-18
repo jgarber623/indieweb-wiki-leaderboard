@@ -4,6 +4,15 @@
     "alternate": [
       "https://tess.oconnor.cx/feed"
     ],
+    "micropub": [
+      "https://indieweb.oconnor.cx/micropub"
+    ],
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://indieweb.oconnor.cx/token"
+    ],
     "apple-touch-icon": [
       "https://tess.oconnor.cx/images/apple-touch-icon.png"
     ],
@@ -18,7 +27,12 @@
       "https://tess.oconnor.cx/"
     ],
     "me": [
-      "https://mastodon.social/@hober"
+      "https://cohost.org/hober",
+      "https://facebook.com/hober",
+      "https://github.com/hober",
+      "https://instagram.com/hober",
+      "https://mastodon.social/@hober",
+      "https://twitter.com/hober"
     ]
   },
   "rel-urls": {
@@ -28,6 +42,21 @@
       ],
       "title": "Theresa O’Connor",
       "type": "application/atom+xml"
+    },
+    "https://indieweb.oconnor.cx/micropub": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://indieweb.oconnor.cx/token": {
+      "rels": [
+        "token_endpoint"
+      ]
     },
     "https://tess.oconnor.cx/images/apple-touch-icon.png": {
       "rels": [
@@ -55,11 +84,41 @@
       ],
       "text": "Theresa O’Connor"
     },
+    "https://cohost.org/hober": {
+      "rels": [
+        "me"
+      ],
+      "text": "cohost"
+    },
+    "https://facebook.com/hober": {
+      "rels": [
+        "me"
+      ],
+      "text": "Facebook"
+    },
+    "https://github.com/hober": {
+      "rels": [
+        "me"
+      ],
+      "text": "GitHub"
+    },
+    "https://instagram.com/hober": {
+      "rels": [
+        "me"
+      ],
+      "text": "Instagram"
+    },
     "https://mastodon.social/@hober": {
       "rels": [
         "me"
       ],
       "text": "Mastodon"
+    },
+    "https://twitter.com/hober": {
+      "rels": [
+        "me"
+      ],
+      "text": "Twitter"
     }
   }
 }

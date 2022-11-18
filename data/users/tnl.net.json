@@ -53,22 +53,20 @@
       "https://tnl.net/"
     ],
     "icon": [
-      "https://tnl.net/wp-content/uploads/2014/10/tnl.net_1-150x75.webp",
-      "https://tnl.net/wp-content/uploads/2014/10/tnl.net_1.webp"
+      "https://tnl.net/wp-content/uploads/2014/01/apple-touch-icon.webp"
     ],
     "apple-touch-icon": [
-      "https://tnl.net/wp-content/uploads/2014/10/tnl.net_1.webp"
+      "https://tnl.net/wp-content/uploads/2014/01/apple-touch-icon.webp"
     ],
     "nofollow": [
       "https://www.linkedin.com/in/tristanlouis",
-      "http://feeds.tnl.net/tnlnet"
+      "http://feeds.tnl.net/tnlnet",
+      "https://mastodon.social/@tnlnyc"
     ],
     "noopener": [
       "https://www.linkedin.com/in/tristanlouis",
-      "http://feeds.tnl.net/tnlnet"
-    ],
-    "me": [
-      "https://mastodon.social/@TNLNYC"
+      "http://feeds.tnl.net/tnlnet",
+      "https://mastodon.social/@tnlnyc"
     ]
   },
   "rel-urls": {
@@ -248,12 +246,7 @@
       ],
       "type": "text/xml+oembed"
     },
-    "https://tnl.net/wp-content/uploads/2014/10/tnl.net_1-150x75.webp": {
-      "rels": [
-        "icon"
-      ]
-    },
-    "https://tnl.net/wp-content/uploads/2014/10/tnl.net_1.webp": {
+    "https://tnl.net/wp-content/uploads/2014/01/apple-touch-icon.webp": {
       "rels": [
         "icon"
       ]
@@ -272,11 +265,12 @@
       ],
       "title": "RSS"
     },
-    "https://mastodon.social/@TNLNYC": {
+    "https://mastodon.social/@tnlnyc": {
       "rels": [
-        "me"
+        "nofollow",
+        "noopener"
       ],
-      "text": "Mastodon"
+      "title": "on Mastodon"
     },
     "https://tnl.net/wp-content/plugins/Ultimate_VC_Addons/assets/min-css/background-style.min.css?ver=3.19.12": {
       "rels": [

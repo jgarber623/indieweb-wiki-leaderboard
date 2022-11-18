@@ -58,6 +58,8 @@
       "https://lektoren.dk/feed/",
       "https://lektoren.dk/comments/feed/",
       "https://lektoren.dk/author/adjunkt389/feed/",
+      "https://lektoren.dk/feed/mf2/",
+      "https://lektoren.dk/feed/jf2/",
       "https://lektoren.dk/wp-json/wp/v2/users/66"
     ],
     "stylesheet": [
@@ -82,7 +84,8 @@
       "https://lektoren.dk/wp-content/plugins/quotes-collection/css/quotes-collection.css?ver=2.5.2",
       "https://lektoren.dk/wp-content/plugins/wordpress-popular-posts/assets/css/wpp.css?ver=6.1.0",
       "https://lektoren.dk/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3",
-      "https://lektoren.dk/wp-content/plugins/tablepress/css/default.min.css?ver=1.14"
+      "https://lektoren.dk/wp-content/plugins/tablepress/css/default.min.css?ver=1.14",
+      "https://lektoren.dk/wp-content/plugins/syndication-links/css/syn.min.css?ver=4.3.12"
     ],
     "https://api.w.org/": [
       "https://lektoren.dk/wp-json/"
@@ -161,6 +164,18 @@
       ],
       "title": "lektoren » feed for indlæg af Lektoren",
       "type": "application/rss+xml"
+    },
+    "https://lektoren.dk/feed/mf2/": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/mf2+json"
+    },
+    "https://lektoren.dk/feed/jf2/": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/jf2feed+json"
     },
     "https://lektoren.dk/wp-content/plugins/wp-courseware/css/wpcw_frontend.css?ver=3.0": {
       "rels": [
@@ -289,6 +304,12 @@
       "media": "all"
     },
     "https://lektoren.dk/wp-content/plugins/tablepress/css/default.min.css?ver=1.14": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://lektoren.dk/wp-content/plugins/syndication-links/css/syn.min.css?ver=4.3.12": {
       "rels": [
         "stylesheet"
       ],
