@@ -1,5 +1,140 @@
 {
   "items": [],
-  "rels": {},
-  "rel-urls": {}
+  "rels": {
+    "pingback": [
+      "https://mark.brudos.net/xmlrpc.php"
+    ],
+    "dns-prefetch": [
+      "https://fonts.googleapis.com/"
+    ],
+    "alternate": [
+      "https://mark.brudos.net/feed/",
+      "https://mark.brudos.net/comments/feed/",
+      "https://mark.brudos.net/wp-json/wp/v2/pages/8",
+      "https://mark.brudos.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmark.brudos.net%2F",
+      "https://mark.brudos.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmark.brudos.net%2F&format=xml"
+    ],
+    "stylesheet": [
+      "https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,latin-ext&display=swap",
+      "https://mark.brudos.net/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1"
+    ],
+    "https://api.w.org/": [
+      "https://mark.brudos.net/wp-json/"
+    ],
+    "EditURI": [
+      "https://mark.brudos.net/xmlrpc.php?rsd"
+    ],
+    "wlwmanifest": [
+      "https://mark.brudos.net/wp-includes/wlwmanifest.xml"
+    ],
+    "canonical": [
+      "https://mark.brudos.net/"
+    ],
+    "shortlink": [
+      "https://mark.brudos.net/"
+    ],
+    "icon": [
+      "https://mark.brudos.net/wp-content/uploads/2022/11/cropped-logo_v2-32x32.png",
+      "https://mark.brudos.net/wp-content/uploads/2022/11/cropped-logo_v2-192x192.png"
+    ],
+    "apple-touch-icon": [
+      "https://mark.brudos.net/wp-content/uploads/2022/11/cropped-logo_v2-180x180.png"
+    ]
+  },
+  "rel-urls": {
+    "https://mark.brudos.net/xmlrpc.php": {
+      "rels": [
+        "pingback"
+      ]
+    },
+    "https://fonts.googleapis.com/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
+    "https://mark.brudos.net/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Mark Brudos » Feed",
+      "type": "application/rss+xml"
+    },
+    "https://mark.brudos.net/comments/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Mark Brudos » Comments Feed",
+      "type": "application/rss+xml"
+    },
+    "https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,latin-ext&display=swap": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://mark.brudos.net/wp-json/": {
+      "rels": [
+        "https://api.w.org/"
+      ]
+    },
+    "https://mark.brudos.net/wp-json/wp/v2/pages/8": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/json"
+    },
+    "https://mark.brudos.net/xmlrpc.php?rsd": {
+      "rels": [
+        "EditURI"
+      ],
+      "title": "RSD",
+      "type": "application/rsd+xml"
+    },
+    "https://mark.brudos.net/wp-includes/wlwmanifest.xml": {
+      "rels": [
+        "wlwmanifest"
+      ],
+      "type": "application/wlwmanifest+xml"
+    },
+    "https://mark.brudos.net/": {
+      "rels": [
+        "canonical"
+      ]
+    },
+    "https://mark.brudos.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmark.brudos.net%2F": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/json+oembed"
+    },
+    "https://mark.brudos.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmark.brudos.net%2F&format=xml": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "text/xml+oembed"
+    },
+    "https://mark.brudos.net/wp-content/uploads/2022/11/cropped-logo_v2-32x32.png": {
+      "rels": [
+        "icon"
+      ]
+    },
+    "https://mark.brudos.net/wp-content/uploads/2022/11/cropped-logo_v2-192x192.png": {
+      "rels": [
+        "icon"
+      ]
+    },
+    "https://mark.brudos.net/wp-content/uploads/2022/11/cropped-logo_v2-180x180.png": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://mark.brudos.net/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "none",
+      "type": "text/css"
+    }
+  }
 }

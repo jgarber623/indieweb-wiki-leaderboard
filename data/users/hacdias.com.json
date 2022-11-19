@@ -18,7 +18,7 @@
           "Henrique Dias"
         ],
         "email": [
-          "https://hacdias.com/cdn-cgi/l/email-protection#3c515d55507c545d5f58555d4f125f5351"
+          "https://hacdias.com/cdn-cgi/l/email-protection#cea3afa7a28ea6afadaaa7afbde0ada1a3"
         ],
         "key": [
           "https://hacdias.com/pubkey.txt"
@@ -38,7 +38,68 @@
           "properties": {
             "content": [
               {
-                "html": "<p>Since everyone is moving to Mastodon and such, I decided to re-add experimental support for ActivityPub in this website. The implementation is based on my old ActivityPub implementation, but it is massively improved&amp;mldr; I think. There are still some things to do, but I feel like I will stick with it this time. However, if you want to help me test, follow me at @<a href=\"https://hacdias.com/cdn-cgi/l/email-protection\" class=\"__cf_email__\" data-cfemail=\"1b737a787f727a685b737a787f727a6835787476\">[email protected]</a> 😜 You may still see my old profile from 2020 still lingering in some instances, but if you try following me, it should work.</p>",
+                "html": "<p>Today, <a href=\"https://seblog.nl/\" rel=\"noopener noreferrer\" target=\"_blank\">Sebastiaan</a> shared with me this nice post by Wouter, entitled <a href=\"https://brainbaking.com/post/2022/11/the-great-mastodon-influx/\" rel=\"noopener noreferrer\" target=\"_blank\">“The Great Mastodon Influx”</a>. I wanted to add to that that I implemented ActivityPub a few days ago, and I’ve been improving it since on my spare time. But&amp;mldr; I am afraid. I don’t have any real followers (just myself from different instances to test). But what if I get a few followers and then get spammed with many requests? Will my tiny server in Finland handle it?</p>\n<p>The idea of <a href=\"https://hacdias.com/2022/11/09/15h43m59s11\" rel=\"noopener noreferrer\" target=\"_blank\">POSSEing to Mastodon</a> doesn’t sound that bad and reduces much of the complexity associated with running a federated server. In addition, what will happen if I want to follow people? I had a very simple idea of creating a private RSS feed with incoming posts from people I would follow. The idea seems reasonably simple. But why reinvent the wheel? There’s already client apps for ActivityPub that work well. And I didn’t want to have multiple identities. Thoughts?</p>",
+                "value": "Today, Sebastiaan shared with me this nice post by Wouter, entitled “The Great Mastodon Influx”. I wanted to add to that that I implemented ActivityPub a few days ago, and I’ve been improving it since on my spare time. But&mldr; I am afraid. I don’t have any real followers (just myself from different instances to test). But what if I get a few followers and then get spammed with many requests? Will my tiny server in Finland handle it?The idea of POSSEing to Mastodon doesn’t sound that bad and reduces much of the complexity associated with running a federated server. In addition, what will happen if I want to follow people? I had a very simple idea of creating a private RSS feed with incoming posts from people I would follow. The idea seems reasonably simple. But why reinvent the wheel? There’s already client apps for ActivityPub that work well. And I didn’t want to have multiple identities. Thoughts?"
+              }
+            ],
+            "location": [
+              {
+                "type": [
+                  "h-adr"
+                ],
+                "properties": {
+                  "locality": [
+                    "Eindhoven"
+                  ],
+                  "region": [
+                    "North Brabant"
+                  ],
+                  "country": [
+                    "Netherlands"
+                  ]
+                },
+                "value": "Eindhoven, North Brabant, Netherlands"
+              }
+            ],
+            "published": [
+              "2022-11-18T23:28:13+01:00"
+            ],
+            "url": [
+              "https://hacdias.com/2022/11/18/23h28m13s83"
+            ],
+            "category": [
+              "activitypub",
+              "meta"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "photo": [
+                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
+                  ],
+                  "url": [
+                    "https://hacdias.com/"
+                  ],
+                  "name": [
+                    "Henrique Dias"
+                  ]
+                },
+                "value": "https://hacdias.com/"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<p>Since everyone is moving to Mastodon and such, I decided to re-add experimental support for ActivityPub in this website. The implementation is based on my old ActivityPub implementation, but it is massively improved&amp;mldr; I think. There are still some things to do, but I feel like I will stick with it this time. However, if you want to help me test, follow me at @<a href=\"https://hacdias.com/cdn-cgi/l/email-protection\" class=\"__cf_email__\" data-cfemail=\"95fdf4f6f1fcf4e6d5fdf4f6f1fcf4e6bbf6faf8\">[email protected]</a> 😜 You may still see my old profile from 2020 still lingering in some instances, but if you try following me, it should work.</p>",
                 "value": "Since everyone is moving to Mastodon and such, I decided to re-add experimental support for ActivityPub in this website. The implementation is based on my old ActivityPub implementation, but it is massively improved&mldr; I think. There are still some things to do, but I feel like I will stick with it this time. However, if you want to help me test, follow me at @[email protected] 😜 You may still see my old profile from 2020 still lingering in some instances, but if you try following me, it should work."
               }
             ],
@@ -587,66 +648,6 @@
               }
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "content": [
-              {
-                "html": "<p>Just like everyone else, I’ve also been following the stampede - not sure if it’s the correct word to translate <a href=\"https://dicionario.priberam.org/debandada\" rel=\"noopener noreferrer\" target=\"_blank\">debandada</a> - of people from Twitter to Mastodon. And I’ve been considering, <a href=\"https://hacdias.com/tags/activitypub\">again</a>, to add ActivityPub to this website. However, an interesting alternative has surged in the past days: it seems to be <a href=\"https://blog.maartenballiauw.be/post/2022/11/05/mastodon-own-donain-without-hosting-server.html\" rel=\"noopener noreferrer\" target=\"_blank\">reasonably possible</a> to use my own domain with an external Mastodon instance. Then, I could just <a href=\"https://barryfrost.com/2022/11/i-ve-added-mastodon-syndication-to\" rel=\"noopener noreferrer\" target=\"_blank\">syndicate</a> from this website to my Mastodon account and use <a href=\"https://brid.gy/\" rel=\"noopener noreferrer\" target=\"_blank\">brid.gy</a> to do its magic on bringing comments and reactions via Webmentions to my website. Just a thought.</p>",
-                "value": "Just like everyone else, I’ve also been following the stampede - not sure if it’s the correct word to translate debandada - of people from Twitter to Mastodon. And I’ve been considering, again, to add ActivityPub to this website. However, an interesting alternative has surged in the past days: it seems to be reasonably possible to use my own domain with an external Mastodon instance. Then, I could just syndicate from this website to my Mastodon account and use brid.gy to do its magic on bringing comments and reactions via Webmentions to my website. Just a thought."
-              }
-            ],
-            "location": [
-              {
-                "type": [
-                  "h-adr"
-                ],
-                "properties": {
-                  "locality": [
-                    "Eindhoven"
-                  ],
-                  "region": [
-                    "North Brabant"
-                  ],
-                  "country": [
-                    "Netherlands"
-                  ]
-                },
-                "value": "Eindhoven, North Brabant, Netherlands"
-              }
-            ],
-            "published": [
-              "2022-11-09T15:43:59+01:00"
-            ],
-            "url": [
-              "https://hacdias.com/2022/11/09/15h43m59s11"
-            ],
-            "category": [
-              "activitypub"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "photo": [
-                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
-                  ],
-                  "url": [
-                    "https://hacdias.com/"
-                  ],
-                  "name": [
-                    "Henrique Dias"
-                  ]
-                },
-                "value": "https://hacdias.com/"
-              }
-            ]
-          }
         }
       ]
     }
@@ -691,7 +692,7 @@
       "https://lobste.rs/u/hacdias",
       "mailto:mail@hacdias.com",
       "mailto:hacdias@gmail.com",
-      "https://hacdias.com/cdn-cgi/l/email-protection#3c515d55507c545d5f58555d4f125f5351"
+      "https://hacdias.com/cdn-cgi/l/email-protection#cea3afa7a28ea6afadaaa7afbde0ada1a3"
     ],
     "webmention": [
       "https://webmention.io/hacdias.com/webmention"
@@ -700,30 +701,28 @@
       "https://webmention.io/hacdias.com/xmlrpc"
     ],
     "noopener": [
+      "https://seblog.nl/",
+      "https://brainbaking.com/post/2022/11/the-great-mastodon-influx/",
+      "https://hacdias.com/2022/11/09/15h43m59s11",
       "https://jpassing.com/2021/11/30/using-pem-to-encode-public-keys/",
       "https://twitter.com/mxbck/status/1590809274808147990",
       "https://blog.jim-nielsen.com/2022/verified-personal-website/",
       "https://brainbaking.com/post/2022/11/finding-stuff-on-big-blogs/",
       "https://jan.boddez.net/notes/4f8879145f",
       "https://www.digid.nl/en/living-abroad/",
-      "https://dicionario.priberam.org/debandada",
-      "https://blog.maartenballiauw.be/post/2022/11/05/mastodon-own-donain-without-hosting-server.html",
-      "https://barryfrost.com/2022/11/i-ve-added-mastodon-syndication-to",
-      "https://brid.gy/",
       "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/previous",
       "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/next"
     ],
     "noreferrer": [
+      "https://seblog.nl/",
+      "https://brainbaking.com/post/2022/11/the-great-mastodon-influx/",
+      "https://hacdias.com/2022/11/09/15h43m59s11",
       "https://jpassing.com/2021/11/30/using-pem-to-encode-public-keys/",
       "https://twitter.com/mxbck/status/1590809274808147990",
       "https://blog.jim-nielsen.com/2022/verified-personal-website/",
       "https://brainbaking.com/post/2022/11/finding-stuff-on-big-blogs/",
       "https://jan.boddez.net/notes/4f8879145f",
       "https://www.digid.nl/en/living-abroad/",
-      "https://dicionario.priberam.org/debandada",
-      "https://blog.maartenballiauw.be/post/2022/11/05/mastodon-own-donain-without-hosting-server.html",
-      "https://barryfrost.com/2022/11/i-ve-added-mastodon-syndication-to",
-      "https://brid.gy/",
       "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/previous",
       "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/next"
     ]
@@ -843,11 +842,32 @@
         "pingback"
       ]
     },
-    "https://hacdias.com/cdn-cgi/l/email-protection#3c515d55507c545d5f58555d4f125f5351": {
+    "https://hacdias.com/cdn-cgi/l/email-protection#cea3afa7a28ea6afadaaa7afbde0ada1a3": {
       "rels": [
         "me"
       ],
       "text": "[email protected]"
+    },
+    "https://seblog.nl/": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "Sebastiaan"
+    },
+    "https://brainbaking.com/post/2022/11/the-great-mastodon-influx/": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "“The Great Mastodon Influx”"
+    },
+    "https://hacdias.com/2022/11/09/15h43m59s11": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "POSSEing to Mastodon"
     },
     "https://jpassing.com/2021/11/30/using-pem-to-encode-public-keys/": {
       "rels": [
@@ -890,34 +910,6 @@
         "noreferrer"
       ],
       "text": "access to DigiD"
-    },
-    "https://dicionario.priberam.org/debandada": {
-      "rels": [
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "debandada"
-    },
-    "https://blog.maartenballiauw.be/post/2022/11/05/mastodon-own-donain-without-hosting-server.html": {
-      "rels": [
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "reasonably possible"
-    },
-    "https://barryfrost.com/2022/11/i-ve-added-mastodon-syndication-to": {
-      "rels": [
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "syndicate"
-    },
-    "https://brid.gy/": {
-      "rels": [
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "brid.gy"
     },
     "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/previous": {
       "rels": [

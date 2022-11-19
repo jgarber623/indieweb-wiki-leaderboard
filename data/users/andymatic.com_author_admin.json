@@ -12,7 +12,6 @@
     ],
     "dns-prefetch": [
       "http://secure.gravatar.com/",
-      "http://s.w.org/",
       "http://v0.wordpress.com/",
       "http://c0.wp.com/"
     ],
@@ -24,7 +23,8 @@
     ],
     "stylesheet": [
       "https://c0.wp.com/p/jetpack/8.9.2/modules/theme-tools/compat/twentynineteen.css",
-      "https://c0.wp.com/c/6.0.3/wp-includes/css/dist/block-library/style.min.css",
+      "https://c0.wp.com/c/6.1.1/wp-includes/css/dist/block-library/style.min.css",
+      "https://c0.wp.com/c/6.1.1/wp-includes/css/classic-themes.min.css",
       "http://andymatic.com/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.3",
       "http://andymatic.com/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3",
       "http://andymatic.com/wp-content/themes/twentynineteen/style.css?ver=1.7",
@@ -75,11 +75,6 @@
         "dns-prefetch"
       ]
     },
-    "http://s.w.org/": {
-      "rels": [
-        "dns-prefetch"
-      ]
-    },
     "http://v0.wordpress.com/": {
       "rels": [
         "dns-prefetch"
@@ -117,7 +112,13 @@
       ],
       "media": "all"
     },
-    "https://c0.wp.com/c/6.0.3/wp-includes/css/dist/block-library/style.min.css": {
+    "https://c0.wp.com/c/6.1.1/wp-includes/css/dist/block-library/style.min.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://c0.wp.com/c/6.1.1/wp-includes/css/classic-themes.min.css": {
       "rels": [
         "stylesheet"
       ],
