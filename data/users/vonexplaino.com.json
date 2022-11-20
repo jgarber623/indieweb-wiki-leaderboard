@@ -2,54 +2,114 @@
   "items": [
     {
       "type": [
-        "h-card"
+        "h-entry"
       ],
       "properties": {
-        "photo": [
+        "name": [
+          "Welcome"
+        ],
+        "author": [
           {
-            "value": "https://vonexplaino.com/blog/media/2013/11/2013Professor-200x300.jpg",
-            "alt": "Colin as Professor von Explaino, circa 2013"
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "name": [
+                "Professor von Explaino"
+              ],
+              "url": [
+                "https://vonexplaino.com/"
+              ]
+            },
+            "value": "Professor von Explaino"
           }
         ],
-        "note": [
-          "I'm Colin Morris, this site contains little web-widgets I've built over the years along with documenting some of my explorations of the steampunk genre.",
-          "For the code-savvy: I server-side code in PHP and web front end I've started avoiding frameworks by using the new CSS/JS capabilities native to browsers. I'm very keen on the Behat implementation of Gherkin for user-testing and am happy to chat about my efforts. I'm also participating as much as I can in the IndieWeb, an excellent initiative for owning your own content.",
-          "For the steampunk afficionado: I'm of the steampulp persuasion, a middling tinkerer, and a member of R.O.S.E.A, S.T.E.A.M and the Steampunk Ghostbusters.",
-          "I've written a tongue-in-cheek book \"Code of the Coder Code of the Coder cover \", giving those who call themselves Code Ninja or CSS Samurai a list of disciplines and virtues from Togakure-ry&umacr; ninjutsu and Bushido samurai. I've also got a role in a podcast called \"Copperheart COPPERHeart album cover \", it's scripted by author Michael J Rigg.",
-          "You can find me elsewhere on  Twitter (@vonexplaino),  Github (colinmo), Mastodon (@vonexplaino@mstdn.social), and you can  subscribe to my Blog feed."
+        "published": [
+          "2022-11-20T14:16:25+10:00"
         ],
-        "name": [
-          "Colin Morris"
+        "updated": [
+          "2022-11-20T14:16:28+10:00"
         ],
-        "url": [
-          "https://vonexplaino.com/"
+        "category": [
+          "vonexplaino",
+          "colin",
+          "code",
+          "steampunk"
         ],
-        "uid": [
-          "https://vonexplaino.com/"
+        "content": [
+          {
+            "html": "<section id=\"introduction\" class=\"h-card\">\n    <img src=\"https://vonexplaino.com/blog/media/2013/11/2013Professor-200x300.jpg\" class=\"u-photo\" alt=\"Colin as Professor von Explaino, circa 2013\" width=\"200\" height=\"300\">\n    <p class=\"p-note\">I'm <a class=\"p-name u-url u-uid\" rel=\"me\" href=\"https://vonexplaino.com/\">Colin Morris</a>, this site contains little web-widgets I've built over the years along with documenting some of my explorations of the steampunk genre.</p>\n    <p class=\"p-note\">For the code-savvy: I server-side code in PHP and web front end I've started avoiding frameworks by using the new CSS/JS capabilities native to browsers. I'm very keen on the <a href=\"http://docs.behat.org/\">Behat</a> implementation of <a href=\"http://docs.behat.org/en/v2.5/guides/1.gherkin.html\">Gherkin</a> for user-testing and am happy to chat about my efforts. I'm also participating as much as I can in the <a href=\"https://indieweb.org/\">IndieWeb</a>, an excellent initiative for owning your own content.</p>\n    <p class=\"p-note\">For the steampunk afficionado: I'm of the <a href=\"https://vonexplaino.com/blog/posts/page/steampunk.html#steampulp\">steampulp</a> persuasion, a middling tinkerer, and a member of <a href=\"https://vonexplaino.com/blog/posts/article/2012/03/royal-omnitological-society-for-electrodyne-adventurers.html\">R.O.S.E.A</a>, <a href=\"https://www.facebook.com/groups/STEAMBRISBANE/\">S.T.E.A.M</a> and the <a href=\"https://web.archive.org/web/20180822215244/http://www.steampunkcharityball.com.au/\">Steampunk Ghostbusters</a>.</p>\n    <p class=\"p-note\">I've written a tongue-in-cheek book \"<a href=\"http://www.lulu.com/au/en/shop/colin-morris/code-of-the-coder/paperback/product-23864781.html\">Code of the Coder<span><img src=\"https://vonexplaino.com/blog/media/2018/11/code-of-the-coder-cover.jpeg\" alt=\"Code of the Coder cover\" width=\"224\" height=\"300\"></span></a>\", giving those who call themselves Code Ninja or CSS Samurai a list of disciplines and virtues from Togakure-ryū ninjutsu and Bushido samurai. I've also got a role in a podcast called \"<a href=\"https://copperheart.libsyn.com/\">Copperheart<span><img src=\"https://vonexplaino.com/blog/media/2020/05/27/COPPERHEART_Album_Cover-thumb.jpg\" alt=\"COPPERHeart album cover\" width=\"150\" height=\"150\"></span></a>\", it's scripted by author Michael J Rigg.</p>\n    <p class=\"p-note\">You can find me elsewhere on <a rel=\"me\" href=\"https://twitter.com/vonexplaino\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"black\" class=\"bi bi-twitter\" viewbox=\"0 0 16 16\"><path d=\"M5.026 15c6.038 0 9.341-5.003  9.341-9.334 0-.14 0-.282-.006-.422A6.685  6.685 0 0 0 16 3.542a6.658 6.658 0 0  1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0  0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429  3.289 3.289 0 0 0 1.018 4.382A3.323 3.323  0 0 1 .64 6.575v.045a3.288 3.288 0 0 0  2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23  3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067  2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32  0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z\"></path></svg> Twitter (@vonexplaino)</a>, <a rel=\"me\" href=\"https://github.com/colinmo\"><svg height=\"16\" aria-hidden=\"true\" viewbox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-mark-github\"><path fill-rule=\"evenodd\" d=\"M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z\"></path></svg> Github (colinmo)</a>, <a rel=\"me\" href=\"https://mstdn.social/@vonExplaino\"><svg width=\"16\" height=\"16\" viewbox=\"0 0 61 65\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M60.7539 14.3904C59.8143 7.40642 53.7273 1.90257 46.5117 0.836066C45.2943 0.655854 40.6819 0 29.9973 0H29.9175C19.2299 0 16.937 0.655854 15.7196 0.836066C8.70488 1.87302 2.29885 6.81852 0.744617 13.8852C-0.00294988 17.3654 -0.0827298 21.2237 0.0561464 24.7629C0.254119 29.8384 0.292531 34.905 0.753482 39.9598C1.07215 43.3175 1.62806 46.6484 2.41704 49.9276C3.89445 55.9839 9.87499 61.0239 15.7344 63.0801C22.0077 65.2244 28.7542 65.5804 35.2184 64.1082C35.9295 63.9428 36.6318 63.7508 37.3252 63.5321C38.8971 63.0329 40.738 62.4745 42.0913 61.4937C42.1099 61.4799 42.1251 61.4621 42.1358 61.4417C42.1466 61.4212 42.1526 61.3986 42.1534 61.3755V56.4773C42.153 56.4557 42.1479 56.4345 42.1383 56.4151C42.1287 56.3958 42.1149 56.3788 42.0979 56.3655C42.0809 56.3522 42.0611 56.3429 42.04 56.3382C42.019 56.3335 41.9971 56.3336 41.9761 56.3384C37.8345 57.3276 33.5905 57.8234 29.3324 57.8156C22.0045 57.8156 20.0336 54.3384 19.4693 52.8908C19.0156 51.6397 18.7275 50.3346 18.6124 49.0088C18.6112 48.9866 18.6153 48.9643 18.6243 48.9439C18.6333 48.9236 18.647 48.9056 18.6643 48.8915C18.6816 48.8774 18.7019 48.8675 18.7237 48.8628C18.7455 48.858 18.7681 48.8585 18.7897 48.8641C22.8622 49.8465 27.037 50.3423 31.2265 50.3412C32.234 50.3412 33.2387 50.3412 34.2463 50.3146C38.4598 50.1964 42.9009 49.9808 47.0465 49.1713C47.1499 49.1506 47.2534 49.1329 47.342 49.1063C53.881 47.8507 60.1038 43.9097 60.7362 33.9301C60.7598 33.5372 60.8189 29.8148 60.8189 29.4071C60.8218 28.0215 61.2651 19.5781 60.7539 14.3904 M50.3943 22.237V39.5876H43.5185V22.7481C43.5185 19.2029 42.0411 17.3949 39.036 17.3949C35.7325 17.3949 34.0778 19.5338 34.0778 23.7585V32.9759H27.2434V23.7585C27.2434 19.5338 25.5857 17.3949 22.2822 17.3949C19.2949 17.3949 17.8027 19.2029 17.8027 22.7481V39.5876H10.9298V22.237C10.9298 18.6918 11.835 15.8754 13.6453 13.7877C15.5128 11.7049 17.9623 10.6355 21.0028 10.6355C24.522 10.6355 27.1813 11.9885 28.9542 14.6917L30.665 17.5633L32.3788 14.6917C34.1517 11.9885 36.811 10.6355 40.3243 10.6355C43.3619 10.6355 45.8114 11.7049 47.6847 13.7877C49.4931 15.8734 50.3963 18.6899 50.3943 22.237Z\" fill=\"black\"></path><defs><lineargradient id=\"paint0_linear_89_8\" x1=\"30.5\" y1=\"0\" x2=\"30.5\" y2=\"65\" gradientunits=\"userSpaceOnUse\"><stop stop-color=\"#6364FF\"></stop><stop offset=\"1\" stop-color=\"#563ACC\"></stop></lineargradient></defs></svg>Mastodon (@vonexplaino@mstdn.social)</a>, and you can <a rel=\"me\" href=\"https://vonexplaino.com/blog/rss.xml\"><svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" width=\"16\" height=\"16\" id=\"RSSicon\" viewbox=\"0 0 256 200\"><circle cx=\"68\" cy=\"189\" r=\"24\" fill=\"#000\"></circle><path d=\"M160 213h-34a82 82 0 0 0 -82 -82v-34a116 116 0 0 1 116 116z\" fill=\"#000\"></path><path d=\"M184 213A140 140 0 0 0 44 73 V 38a175 175 0 0 1 175 175z\" fill=\"#000\"></path></svg> subscribe to my Blog feed</a>.</p>\n</section>\n<p id=\"stuff-container\"><br></p>\n<script>\n    fetch('/blog/latest-post.html').then(function (response) {\n        return response.text()\n    }).then(function (text) {\n        document.getElementById('stuff-container').parentNode.insertBefore(document.createRange().createContextualFragment(text), document.getElementById('stuff-container'))\n    })\n</script>\n<section id=\"code-of-the-coder\">\n    <h2 style=\"text-align: center;\"><a href=\"http://www.lulu.com/au/en/shop/colin-morris/code-of-the-coder/paperback/product-23864781.html\"><img src=\"https://vonexplaino.com/blog/media/CodeOfTheCoderH1.png\" alt=\"Code of the Coder\" style=\"max-width:100%;\"></a></h2>\n    <blockquote>People claim to be Code Ninja or CSS Samurai, but how many of them follow a code? How many of them practice daily katas to keep in the best condition? This book foolishly applies the Seven Virtues of Bushido and the Eighteen Disciplines of Togekure-ry&amp;umacr; ninjutsu to the coding arts, mistakenly finding some wisdom along the way.</blockquote>\n    <p>This book took a long time to write - as you can tell I'm more a coder than a good English… userer… but I really had a drive to put together my collected experience/ thoughts on coding and the misuse of cultural touchstones like Ninja and Samurai. I took about a year of Ninjutsu training when I was <em>much</em> younger and healthier, and I was lucky to have a great sensei and class. After training we'd talk about the culture and backstory. We had the code and the disciplines. Something I feel that coders really need to have. Even moreso now I look at web3 and NFTs and Muskworship.</p>\n    <p>I eat my own dogfood here - I've made a poster of the Bushido code and Togekure-ry&amp;umacr; disciplines as applicable to coding, they're up at glance-level at home and at work. It has actually helped me - re-reading my section on Glory and Honour I started contributing to issues in other people's Git repositories, submitted bugs, worked harder to evangelise developers and testing at work, sharing my skills as much as I could. Heck, even talking more in Twitch.tv streams to help and interact with people came from Respect. Similarly in Disciplines I'm checking libraries more, patching more, taking note of my surroundings. So writing the book distilled my thoughts, reading it again helps reinforce action. If you'd like to buy the book, it's Print On Demand on Lulu. If you'd like to read it first, why not grab a <a href=\"https://vonexplaino.com/blog/media/2022/01/26/CodeOfTheCoderContents.pdf\">PDF version</a> of the book and let me know your thoughts? Or even start with the <a href=\"https://vonexplaino.com/blog/media/CodeOfTheCoderPoster.pdf\">Code of the Coder Poster</a>.</p>\n</section>\n<p><br></p>\n<section id=\"copperheart\" style=\"padding-top:2em;\">\n    <h2 style=\"text-align: center;\"><img src=\"https://vonexplaino.com/blog/media/Copperheart.png\" width=\"750\" height=\"95\" style=\"max-width:700px;width:100%;filter:drop-shadow(0 0 0.62rem #333);\" alt=\"Copperheart\"></h2>\n    <blockquote cite=\"http://riggstories.com/copperheart\">\n        <p>COPPERHEART follows the story of one of America's \"Reconstruction Bunkers,\" an enormous underground facility housing thousands of people all working together toward the day they can return to the surface following a global nuclear mishap.</p>\n    </blockquote>\n    <p>I've been following Michael J Rigg's stories for a while, his books Clockwork Looking Glass and Clockwork Pandora are great reads, and the Steam Rollers Adventure Podcast is a great podcast. A call to action from Michael got me to submit some voices for background acting in the SRAPCast. Once he asked for auditions to a new audiodrama I was all in. I didn't get the part I auditioned for... but I got the role of the titular Copperheart itself! Astounding!</p>\n    <p>The first season is done, casting is happening for an inbetween season, and season two is being written. Can't wait to dive back in to more voice acting and this universe.</p>\n    <p><a href=\"https://copperheart.libsyn.com/\">Listen on Libsyn</a> | <a href=\"http://feeds.libsyn.com/174362/rss\"><svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" width=\"16\" height=\"16\" id=\"RSSicon\" viewbox=\"0 0 256 200\"><circle cx=\"68\" cy=\"189\" r=\"24\" fill=\"#000\"></circle><path d=\"M160 213h-34a82 82 0 0 0 -82 -82v-34a116 116 0 0 1 116 116z\" fill=\"#000\"></path><path d=\"M184 213A140 140 0 0 0 44 73 V 38a175 175 0 0 1 175 175z\" fill=\"#000\"></path></svg> Subscribe to the feed</a></p>\n</section>\n<!-- ye Olde radio player -->\n<script>\n    const pp=document.createElement(\"SECTION\");pp.id=\"podcast-player\";pp.style=\"width:400px; height:440px; background-image: url(/theme/images/radio.svg);background-size: 400px 620px;background-position: 0 -90px;background-repeat: repeat;position:relative;float:right;\";const ppd=document.createElement(\"DIV\");ppd.style=\"position:absolute;bottom:80px;text-align:center;width:100%;\";const ppda=document.createElement(\"AUDIO\");ppda.setAttribute(\"controls\",\"true\");const ppdas=document.createElement(\"SOURCE\");ppda.append(ppdas);ppd.append(ppda);pp.append(ppd);document.getElementById(\"copperheart\").insertBefore(pp, document.querySelector(\"#copperheart blockquote\"));let volKnob=document.createElement(\"DIV\");volKnob.setAttribute(\"style\",\"width:100px;height:100px;position:absolute;bottom:130px;left:145px;\");volKnob.id=\"volume-knob\";volKnob.innerHTML=`<svg style=\"position:absolute;z-index:1\" viewPort=\"0 0 100 100\" width=\"100\" height=\"100\"><circle cx=\"50\" cy=\"50\" r=\"47\" fill=\"rgba(255,228,196,0.9)\"/><path d=\"M30 90 a 45 45 0 1 1 40 0\" stroke=\"rgba(0,0,0,0.3)\" fill=\"rgba(255,255,255,0.3)\" stroke-width=\"1px\" /><circle cx=\"30\" cy=\"90\" r=\"5\" fill=\"burnsienna\" id=\"volume-dot\" /><circle cx=\"50\" cy=\"50\" r=\"5\" fill=\"silver\" /></svg>`;pp.append(volKnob);const d2=document.createElement(\"DIV\");d2.style=\"position:absolute;bottom:60px;text-align:center;width:100%;\";const l=document.createElement(\"SELECT\");l.style=\"text-align: center;\";l.setAttribute(\"id\",\"podcast-episodes\");d2.append(l);document.getElementById(\"podcast-player\").append(d2);fetch(\"https://feeds.libsyn.com/174362/rss\").then(response=>response.text()).then(str=>new window.DOMParser().parseFromString(str,\"text/xml\")).then(data=>{const items=data.querySelectorAll(\"item\");let html=``;const target=document.getElementById(\"podcast-episodes\");target.innerHTML=\"\";items.forEach(el=>{let opt=document.createElement(\"OPTION\");opt.innerText=el.querySelector(\"title\").innerHTML;opt.value=el.querySelector(\"enclosure\").getAttribute(\"url\");opt.setAttribute(\"data-type\",el.querySelector(\"enclosure\").getAttribute(\"type\"));target.prepend(opt)});target.onchange=(e)=>{e.preventDefault();let selected_option=e.target.options[e.target.selectedIndex];let target_audio=document.querySelector(\"audio\");let target_src=document.querySelector(\"audio source\");target_src.setAttribute('src',e.target.value);target_src.setAttribute('type',selected_option.getAttribute(\"data-type\"));target_audio.load()};target.value=target.querySelector(\"option:last-child\").value;target.querySelector(\"option:last-child\").selected=true;document.querySelector(\"#podcast-player source\").setAttribute(\"src\",target.value);document.querySelector(\"#podcast-player source\").setAttribute(\"type\",target.querySelector(\"option:last-child\").getAttribute(\"data-type\"));document.querySelector(\"audio\").load()});const mainbox=document.getElementById(\"volume-knob\"),volumeDot=document.getElementById(\"volume-dot\");var volumeAdjusting=false,volumeMousePlace=[0,0];mainbox.addEventListener('mousedown',(e)=>{volumeAdjusting=true;volumeMousePlace=getRelativeMousePosition(e.clientX,e.clientY);adjustSlider()});mainbox.addEventListener('touchstart',(e)=>{volumeAdjusting=true;volumeMousePlace=getRelativeMousePosition(e.clientX,e.clientY);adjustSlider()});mainbox.addEventListener('mouseup',(e)=>{volumeAdjusting=false});mainbox.addEventListener('mouseout',(e)=>{volumeAdjusting=false});mainbox.addEventListener('touchcancel',(e)=>{volumeAdjusting=false});mainbox.addEventListener('touchend',(e)=>{volumeAdjusting=false});mainbox.addEventListener('mousemove',(e)=>{if(volumeAdjusting){volumeMousePlace=getRelativeMousePosition(e.clientX,e.clientY);adjustSlider()}});mainbox.addEventListener('touchmove',(e)=>{if(volumeAdjusting){volumeMousePlace=getRelativeMousePosition(e.clientX,e.clientY);adjustSlider()}});function getRelativeMousePosition(x,y){let masterPosition=document.getElementById(\"volume-knob\").getBoundingClientRect(),masterX=masterPosition.x,masterY=masterPosition.y;return[x-masterX,y-masterY]}function adjustSlider(){let dangle=getAngle();volumeDot.setAttribute(\"transform\",`rotate(${ dangle },50,50)`);document.querySelector(\"audio\").volume=dangle/310}function adjustKnob(){volumeDot.setAttribute(\"transform\",`rotate(${document.querySelector(\"audio\").volume*310}, 50, 50)`)}adjustKnob();document.querySelector(\"audio\").addEventListener(\"volumechange\",adjustKnob,false);function getAngle(){let opposite=(48-volumeMousePlace[1]),adjacent=(48-volumeMousePlace[0]),rangle=Math.atan(opposite/adjacent),dangle=radiansToDegrees(rangle)+53;if(volumeMousePlace[0]>48){dangle=dangle+180}if(dangle<0){dangle=0}if(dangle>305){dangle=310}return dangle}function radiansToDegrees(radians){return radians*(180/Math.PI)}\n</script>\n<style>\n#search{\n    width:100%;\n    margin-top:6px;\n    text-align:center\n}\n#search input[type=text]{\n    min-width:50%\n}\n#introduction p.p-note a span img{\n    max-width:200px\n}\n@media only screen and (min-width: 800px){\n     section#introduction p.p-note a span{\n        display:block;\n        position:absolute;\n        top:0;\n        right:10px;\n        max-height:300px;\n        max-width:200px;\n        border:thin solid rgba(0,0,0,0.4);\n        padding:3px 3px 20px;\n        background:white;\n        transform:rotate(-3deg);\n        transform-origin:100% 0;\n        z-index:0;\n        box-shadow:2px 2px rgba(33,33,33,0.3)\n    }\n    #introduction p.p-note a:nth-child(2) span{\n        transform:rotate(-6deg)\n    }\n    #introduction p.p-note a:hover span{\n        z-index:1\n    }\n}\n@media only screen and (max-width: 799px){\n    section#introduction p.p-note a span{\n        display:none\n    }\n}\nfooter {\n     background: var(--border-color);\n     text-shadow: -1px 1px 1px rgba(255,255,255,.3), -1px -1px 0 rgba(0,0,0,1);\n}\n#introduction .u-photo {\n    margin-top: -140px !important;\n    margin-right: -50px !important\n}\n#webmentions {\n    display: none;\n}\n</style>",
+            "value": "Colin as Professor von Explaino, circa 2013 \n    I'm Colin Morris, this site contains little web-widgets I've built over the years along with documenting some of my explorations of the steampunk genre.\n    For the code-savvy: I server-side code in PHP and web front end I've started avoiding frameworks by using the new CSS/JS capabilities native to browsers. I'm very keen on the Behat implementation of Gherkin for user-testing and am happy to chat about my efforts. I'm also participating as much as I can in the IndieWeb, an excellent initiative for owning your own content.\n    For the steampunk afficionado: I'm of the steampulp persuasion, a middling tinkerer, and a member of R.O.S.E.A, S.T.E.A.M and the Steampunk Ghostbusters.\n    I've written a tongue-in-cheek book \"Code of the Coder Code of the Coder cover \", giving those who call themselves Code Ninja or CSS Samurai a list of disciplines and virtues from Togakure-ryū ninjutsu and Bushido samurai. I've also got a role in a podcast called \"Copperheart COPPERHeart album cover \", it's scripted by author Michael J Rigg.\n    You can find me elsewhere on  Twitter (@vonexplaino),  Github (colinmo), Mastodon (@vonexplaino@mstdn.social), and you can  subscribe to my Blog feed.\n\n\n\n\n     Code of the Coder \n    People claim to be Code Ninja or CSS Samurai, but how many of them follow a code? How many of them practice daily katas to keep in the best condition? This book foolishly applies the Seven Virtues of Bushido and the Eighteen Disciplines of Togekure-ry&umacr; ninjutsu to the coding arts, mistakenly finding some wisdom along the way.\n    This book took a long time to write - as you can tell I'm more a coder than a good English… userer… but I really had a drive to put together my collected experience/ thoughts on coding and the misuse of cultural touchstones like Ninja and Samurai. I took about a year of Ninjutsu training when I was much younger and healthier, and I was lucky to have a great sensei and class. After training we'd talk about the culture and backstory. We had the code and the disciplines. Something I feel that coders really need to have. Even moreso now I look at web3 and NFTs and Muskworship.\n    I eat my own dogfood here - I've made a poster of the Bushido code and Togekure-ry&umacr; disciplines as applicable to coding, they're up at glance-level at home and at work. It has actually helped me - re-reading my section on Glory and Honour I started contributing to issues in other people's Git repositories, submitted bugs, worked harder to evangelise developers and testing at work, sharing my skills as much as I could. Heck, even talking more in Twitch.tv streams to help and interact with people came from Respect. Similarly in Disciplines I'm checking libraries more, patching more, taking note of my surroundings. So writing the book distilled my thoughts, reading it again helps reinforce action. If you'd like to buy the book, it's Print On Demand on Lulu. If you'd like to read it first, why not grab a PDF version of the book and let me know your thoughts? Or even start with the Code of the Coder Poster.\n\n\n\n     Copperheart \n    \n        COPPERHEART follows the story of one of America's \"Reconstruction Bunkers,\" an enormous underground facility housing thousands of people all working together toward the day they can return to the surface following a global nuclear mishap.\n    \n    I've been following Michael J Rigg's stories for a while, his books Clockwork Looking Glass and Clockwork Pandora are great reads, and the Steam Rollers Adventure Podcast is a great podcast. A call to action from Michael got me to submit some voices for background acting in the SRAPCast. Once he asked for auditions to a new audiodrama I was all in. I didn't get the part I auditioned for... but I got the role of the titular Copperheart itself! Astounding!\n    The first season is done, casting is happening for an inbetween season, and season two is being written. Can't wait to dive back in to more voice acting and this universe.\n    Listen on Libsyn |  Subscribe to the feed"
+          }
         ]
       },
-      "id": "introduction"
+      "children": [
+        {
+          "type": [
+            "h-card"
+          ],
+          "properties": {
+            "photo": [
+              {
+                "value": "https://vonexplaino.com/blog/media/2013/11/2013Professor-200x300.jpg",
+                "alt": "Colin as Professor von Explaino, circa 2013"
+              }
+            ],
+            "note": [
+              "I'm Colin Morris, this site contains little web-widgets I've built over the years along with documenting some of my explorations of the steampunk genre.",
+              "For the code-savvy: I server-side code in PHP and web front end I've started avoiding frameworks by using the new CSS/JS capabilities native to browsers. I'm very keen on the Behat implementation of Gherkin for user-testing and am happy to chat about my efforts. I'm also participating as much as I can in the IndieWeb, an excellent initiative for owning your own content.",
+              "For the steampunk afficionado: I'm of the steampulp persuasion, a middling tinkerer, and a member of R.O.S.E.A, S.T.E.A.M and the Steampunk Ghostbusters.",
+              "I've written a tongue-in-cheek book \"Code of the Coder Code of the Coder cover \", giving those who call themselves Code Ninja or CSS Samurai a list of disciplines and virtues from Togakure-ryū ninjutsu and Bushido samurai. I've also got a role in a podcast called \"Copperheart COPPERHeart album cover \", it's scripted by author Michael J Rigg.",
+              "You can find me elsewhere on  Twitter (@vonexplaino),  Github (colinmo), Mastodon (@vonexplaino@mstdn.social), and you can  subscribe to my Blog feed."
+            ],
+            "name": [
+              "Colin Morris"
+            ],
+            "url": [
+              "https://vonexplaino.com/"
+            ],
+            "uid": [
+              "https://vonexplaino.com/"
+            ]
+          },
+          "id": "introduction"
+        }
+      ]
     }
   ],
   "rels": {
-    "preload": [
-      "https://vonexplaino.com/theme/blog/style/blog.css"
-    ],
-    "stylesheet": [
-      "https://vonexplaino.com/theme/blog/style/blog.css"
-    ],
-    "alternate": [
-      "https://vonexplaino.com/blog/rss.xml"
-    ],
     "pingback": [
       "https://webmention.io/vonexplaino.com/xmlrpc"
     ],
     "webmention": [
       "https://webmention.io/vonexplaino.com/webmention"
     ],
+    "stylesheet": [
+      "https://vonexplaino.com/blog/style/blog.css"
+    ],
+    "whostyle": [
+      "https://vonexplaino.com/blog/style/whostyle.css"
+    ],
+    "alternate": [
+      "https://vonexplaino.com/blog/rss.xml"
+    ],
     "icon": [
       "https://vonexplaino.com/favicon.svg",
       "https://vonexplaino.com/favicon.png"
+    ],
+    "apple-touch-icon": [
+      "https://vonexplaino.com/theme/images/favicon/apple-icon-57x57.png",
+      "https://vonexplaino.com/theme/images/favicon/apple-icon-60x60.png",
+      "https://vonexplaino.com/theme/images/favicon/apple-icon-72x72.png",
+      "https://vonexplaino.com/theme/images/favicon/apple-icon-76x76.png",
+      "https://vonexplaino.com/theme/images/favicon/apple-icon-114x114.png",
+      "https://vonexplaino.com/theme/images/favicon/apple-icon-120x120.png",
+      "https://vonexplaino.com/theme/images/favicon/apple-icon-144x144.png",
+      "https://vonexplaino.com/theme/images/favicon/apple-icon-152x152.png",
+      "https://vonexplaino.com/theme/images/favicon/apple-icon-180x180.png"
+    ],
+    "manifest": [
+      "https://vonexplaino.com/manifest.json"
     ],
     "me": [
       "https://vonexplaino.com/",
@@ -57,24 +117,9 @@
       "https://github.com/colinmo",
       "https://mstdn.social/@vonExplaino",
       "https://vonexplaino.com/blog/rss.xml"
-    ],
-    "license": [
-      "http://creativecommons.org/licenses/by-sa/4.0/"
     ]
   },
   "rel-urls": {
-    "https://vonexplaino.com/theme/blog/style/blog.css": {
-      "rels": [
-        "preload"
-      ]
-    },
-    "https://vonexplaino.com/blog/rss.xml": {
-      "rels": [
-        "alternate"
-      ],
-      "title": "Professor von Explaino's Journal RSS Feed",
-      "type": "application/rss+xml"
-    },
     "https://webmention.io/vonexplaino.com/xmlrpc": {
       "rels": [
         "pingback"
@@ -84,6 +129,23 @@
       "rels": [
         "webmention"
       ]
+    },
+    "https://vonexplaino.com/blog/style/blog.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://vonexplaino.com/blog/style/whostyle.css": {
+      "rels": [
+        "whostyle"
+      ]
+    },
+    "https://vonexplaino.com/blog/rss.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Professor von Explaino's Journal RSS Feed",
+      "type": "application/rss+xml"
     },
     "https://vonexplaino.com/favicon.svg": {
       "rels": [
@@ -96,6 +158,56 @@
         "icon"
       ],
       "type": "image/png"
+    },
+    "https://vonexplaino.com/theme/images/favicon/apple-icon-57x57.png": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://vonexplaino.com/theme/images/favicon/apple-icon-60x60.png": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://vonexplaino.com/theme/images/favicon/apple-icon-72x72.png": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://vonexplaino.com/theme/images/favicon/apple-icon-76x76.png": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://vonexplaino.com/theme/images/favicon/apple-icon-114x114.png": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://vonexplaino.com/theme/images/favicon/apple-icon-120x120.png": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://vonexplaino.com/theme/images/favicon/apple-icon-144x144.png": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://vonexplaino.com/theme/images/favicon/apple-icon-152x152.png": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://vonexplaino.com/theme/images/favicon/apple-icon-180x180.png": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://vonexplaino.com/manifest.json": {
+      "rels": [
+        "manifest"
+      ]
     },
     "https://vonexplaino.com/": {
       "rels": [
@@ -120,11 +232,6 @@
         "me"
       ],
       "text": "Mastodon (@vonexplaino@mstdn.social)"
-    },
-    "http://creativecommons.org/licenses/by-sa/4.0/": {
-      "rels": [
-        "license"
-      ]
     }
   }
 }

@@ -1,0 +1,84 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "photo": [
+          {
+            "value": "https://gweezlebur.com/me.jpg",
+            "alt": "My profile photo"
+          }
+        ],
+        "name": [
+          "Michael D. Ivey"
+        ],
+        "note": [
+          "Software engineer. Video game maker. RPG enthusiast. Wrangler of cats. Girl Scout."
+        ],
+        "uid": [
+          "https://gweezlebur.com/"
+        ],
+        "url": [
+          "https://gweezlebur.com/",
+          "https://tilde.zone/@ivey",
+          "https://github.com/ivey",
+          "https://twitter.com/ivey"
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "pgpkey": [
+      "https://gweezlebur.com/BA7ECBB6D4F40AEC02F38B05D65AFD1028BBA035.asc"
+    ],
+    "me": [
+      "https://tilde.zone/@ivey",
+      "https://github.com/ivey",
+      "https://twitter.com/ivey"
+    ]
+  },
+  "rel-urls": {
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://gweezlebur.com/BA7ECBB6D4F40AEC02F38B05D65AFD1028BBA035.asc": {
+      "rels": [
+        "pgpkey"
+      ],
+      "text": "new GPG key for 2022"
+    },
+    "https://tilde.zone/@ivey": {
+      "rels": [
+        "me"
+      ],
+      "text": "fediverse - @ivey@tilde.zone"
+    },
+    "https://github.com/ivey": {
+      "rels": [
+        "me"
+      ],
+      "text": "github - @ivey"
+    },
+    "https://twitter.com/ivey": {
+      "rels": [
+        "me"
+      ],
+      "text": "twitter - @ivey"
+    }
+  }
+}

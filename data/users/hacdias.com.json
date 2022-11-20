@@ -5,9 +5,6 @@
         "h-card"
       ],
       "properties": {
-        "photo": [
-          "https://hacdias.com/profile/2022-03-26/me-256.jpg"
-        ],
         "uid": [
           "https://hacdias.com/"
         ],
@@ -17,11 +14,11 @@
         "name": [
           "Henrique Dias"
         ],
-        "email": [
-          "https://hacdias.com/cdn-cgi/l/email-protection#cea3afa7a28ea6afadaaa7afbde0ada1a3"
+        "photo": [
+          "https://hacdias.com/profile/2022-03-26/me-256.jpg"
         ],
         "key": [
-          "https://hacdias.com/pubkey.txt"
+          "https://hacdias.com/{{ absURL \"/pubkey.txt\" }}"
         ]
       }
     },
@@ -38,7 +35,64 @@
           "properties": {
             "content": [
               {
-                "html": "<p>Today, <a href=\"https://seblog.nl/\" rel=\"noopener noreferrer\" target=\"_blank\">Sebastiaan</a> shared with me this nice post by Wouter, entitled <a href=\"https://brainbaking.com/post/2022/11/the-great-mastodon-influx/\" rel=\"noopener noreferrer\" target=\"_blank\">“The Great Mastodon Influx”</a>. I wanted to add to that that I implemented ActivityPub a few days ago, and I’ve been improving it since on my spare time. But&amp;mldr; I am afraid. I don’t have any real followers (just myself from different instances to test). But what if I get a few followers and then get spammed with many requests? Will my tiny server in Finland handle it?</p>\n<p>The idea of <a href=\"https://hacdias.com/2022/11/09/15h43m59s11\" rel=\"noopener noreferrer\" target=\"_blank\">POSSEing to Mastodon</a> doesn’t sound that bad and reduces much of the complexity associated with running a federated server. In addition, what will happen if I want to follow people? I had a very simple idea of creating a private RSS feed with incoming posts from people I would follow. The idea seems reasonably simple. But why reinvent the wheel? There’s already client apps for ActivityPub that work well. And I didn’t want to have multiple identities. Thoughts?</p>",
+                "html": "<p>Today, we are trying to finish painting 🎨 the walls of the living room and kitchen. Everything else, except for one wall in the bedroom which will have a different colour, is painted. Unfortunately, I can’t help much today because I have to rest my foot due to a tendinitis, which has been a bummer. Got it in Italy but it takes a long time to recover and last week it got a bit worse. My parents are also traveling today to The Netherlands and it’s their first time going to a foreign country and second time flying. Well&amp;mldr; they have been to Spain next to the border but that doesn’t count. So I have to ensure that my foot is the most recovered as it can to show them around a bit over next week.</p>",
+                "value": "Today, we are trying to finish painting 🎨 the walls of the living room and kitchen. Everything else, except for one wall in the bedroom which will have a different colour, is painted. Unfortunately, I can’t help much today because I have to rest my foot due to a tendinitis, which has been a bummer. Got it in Italy but it takes a long time to recover and last week it got a bit worse. My parents are also traveling today to The Netherlands and it’s their first time going to a foreign country and second time flying. Well&mldr; they have been to Spain next to the border but that doesn’t count. So I have to ensure that my foot is the most recovered as it can to show them around a bit over next week."
+              }
+            ],
+            "location": [
+              {
+                "type": [
+                  "h-adr"
+                ],
+                "properties": {
+                  "locality": [
+                    "Eindhoven"
+                  ],
+                  "region": [
+                    "North Brabant"
+                  ],
+                  "country": [
+                    "Netherlands"
+                  ]
+                },
+                "value": "Eindhoven, North Brabant, Netherlands"
+              }
+            ],
+            "published": [
+              "2022-11-19T14:59:27+01:00"
+            ],
+            "url": [
+              "https://hacdias.com/2022/11/19/14h59m27s32"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "url": [
+                    "https://hacdias.com/"
+                  ],
+                  "name": [
+                    "Henrique Dias"
+                  ],
+                  "photo": [
+                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
+                  ]
+                },
+                "value": "https://hacdias.com/"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<p>Today, <a href=\"https://seblog.nl/\" rel=\"noopener noreferrer\" target=\"_blank\">Sebastiaan</a> shared with me this nice post by Wouter, entitled <a href=\"https://brainbaking.com/post/2022/11/the-great-mastodon-influx/\" rel=\"noopener noreferrer\" target=\"_blank\">“The Great Mastodon Influx”</a>. I wanted to add to that that I implemented ActivityPub a few days ago, and I’ve been improving it since on my spare time. But&amp;mldr; I am afraid. I don’t have any real followers (just myself from different instances to test). But what if I get a few followers and then get spammed with many requests? Will my tiny server in Finland handle it?</p>\n<p>The idea of <a href=\"https://hacdias.com/2022/11/09/15h43m59s11\">POSSEing to Mastodon</a> doesn’t sound that bad and reduces much of the complexity associated with running a federated server. In addition, what will happen if I want to follow people? I had a very simple idea of creating a private RSS feed with incoming posts from people I would follow. The idea seems reasonably simple. But why reinvent the wheel? There’s already client apps for ActivityPub that work well. And I didn’t want to have multiple identities. Thoughts?</p>",
                 "value": "Today, Sebastiaan shared with me this nice post by Wouter, entitled “The Great Mastodon Influx”. I wanted to add to that that I implemented ActivityPub a few days ago, and I’ve been improving it since on my spare time. But&mldr; I am afraid. I don’t have any real followers (just myself from different instances to test). But what if I get a few followers and then get spammed with many requests? Will my tiny server in Finland handle it?The idea of POSSEing to Mastodon doesn’t sound that bad and reduces much of the complexity associated with running a federated server. In addition, what will happen if I want to follow people? I had a very simple idea of creating a private RSS feed with incoming posts from people I would follow. The idea seems reasonably simple. But why reinvent the wheel? There’s already client apps for ActivityPub that work well. And I didn’t want to have multiple identities. Thoughts?"
               }
             ],
@@ -77,14 +131,14 @@
                   "h-card"
                 ],
                 "properties": {
-                  "photo": [
-                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
-                  ],
                   "url": [
                     "https://hacdias.com/"
                   ],
                   "name": [
                     "Henrique Dias"
+                  ],
+                  "photo": [
+                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
                   ]
                 },
                 "value": "https://hacdias.com/"
@@ -99,7 +153,7 @@
           "properties": {
             "content": [
               {
-                "html": "<p>Since everyone is moving to Mastodon and such, I decided to re-add experimental support for ActivityPub in this website. The implementation is based on my old ActivityPub implementation, but it is massively improved&amp;mldr; I think. There are still some things to do, but I feel like I will stick with it this time. However, if you want to help me test, follow me at @<a href=\"https://hacdias.com/cdn-cgi/l/email-protection\" class=\"__cf_email__\" data-cfemail=\"95fdf4f6f1fcf4e6d5fdf4f6f1fcf4e6bbf6faf8\">[email protected]</a> 😜 You may still see my old profile from 2020 still lingering in some instances, but if you try following me, it should work.</p>",
+                "html": "<p>Since everyone is moving to Mastodon and such, I decided to re-add experimental support for ActivityPub in this website. The implementation is based on my old ActivityPub implementation, but it is massively improved&amp;mldr; I think. There are still some things to do, but I feel like I will stick with it this time. However, if you want to help me test, follow me at @<span class=\"__cf_email__\" data-cfemail=\"600801030409011320080103040901134e030f0d\">[email protected]</span> 😜 You may still see my old profile from 2020 still lingering in some instances, but if you try following me, it should work.</p>",
                 "value": "Since everyone is moving to Mastodon and such, I decided to re-add experimental support for ActivityPub in this website. The implementation is based on my old ActivityPub implementation, but it is massively improved&mldr; I think. There are still some things to do, but I feel like I will stick with it this time. However, if you want to help me test, follow me at @[email protected] 😜 You may still see my old profile from 2020 still lingering in some instances, but if you try following me, it should work."
               }
             ],
@@ -138,14 +192,14 @@
                   "h-card"
                 ],
                 "properties": {
-                  "photo": [
-                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
-                  ],
                   "url": [
                     "https://hacdias.com/"
                   ],
                   "name": [
                     "Henrique Dias"
+                  ],
+                  "photo": [
+                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
                   ]
                 },
                 "value": "https://hacdias.com/"
@@ -198,14 +252,14 @@
                   "h-card"
                 ],
                 "properties": {
-                  "photo": [
-                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
-                  ],
                   "url": [
                     "https://hacdias.com/"
                   ],
                   "name": [
                     "Henrique Dias"
+                  ],
+                  "photo": [
+                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
                   ]
                 },
                 "value": "https://hacdias.com/"
@@ -255,14 +309,14 @@
                   "h-card"
                 ],
                 "properties": {
-                  "photo": [
-                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
-                  ],
                   "url": [
                     "https://hacdias.com/"
                   ],
                   "name": [
                     "Henrique Dias"
+                  ],
+                  "photo": [
+                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
                   ]
                 },
                 "value": "https://hacdias.com/"
@@ -315,14 +369,14 @@
                   "h-card"
                 ],
                 "properties": {
-                  "photo": [
-                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
-                  ],
                   "url": [
                     "https://hacdias.com/"
                   ],
                   "name": [
                     "Henrique Dias"
+                  ],
+                  "photo": [
+                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
                   ]
                 },
                 "value": "https://hacdias.com/"
@@ -383,14 +437,14 @@
                   "h-card"
                 ],
                 "properties": {
-                  "photo": [
-                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
-                  ],
                   "url": [
                     "https://hacdias.com/"
                   ],
                   "name": [
                     "Henrique Dias"
+                  ],
+                  "photo": [
+                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
                   ]
                 },
                 "value": "https://hacdias.com/"
@@ -425,14 +479,14 @@
                   "h-card"
                 ],
                 "properties": {
-                  "photo": [
-                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
-                  ],
                   "url": [
                     "https://hacdias.com/"
                   ],
                   "name": [
                     "Henrique Dias"
+                  ],
+                  "photo": [
+                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
                   ]
                 },
                 "value": "https://hacdias.com/"
@@ -485,14 +539,14 @@
                   "h-card"
                 ],
                 "properties": {
-                  "photo": [
-                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
-                  ],
                   "url": [
                     "https://hacdias.com/"
                   ],
                   "name": [
                     "Henrique Dias"
+                  ],
+                  "photo": [
+                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
                   ]
                 },
                 "value": "https://hacdias.com/"
@@ -542,106 +596,14 @@
                   "h-card"
                 ],
                 "properties": {
-                  "photo": [
-                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
-                  ],
                   "url": [
                     "https://hacdias.com/"
                   ],
                   "name": [
                     "Henrique Dias"
-                  ]
-                },
-                "value": "https://hacdias.com/"
-              }
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "in-reply-to": [
-              {
-                "type": [
-                  "h-cite"
-                ],
-                "properties": {
-                  "author": [
-                    {
-                      "type": [
-                        "h-card"
-                      ],
-                      "properties": {
-                        "name": [
-                          "Jan Boddez"
-                        ]
-                      },
-                      "value": "https://hacdias.com/Jan Boddez"
-                    }
                   ],
-                  "url": [
-                    "https://jan.boddez.net/notes/4f8879145f"
-                  ],
-                  "content": [
-                    {
-                      "html": "My wife, a non-EU citizen, holds a (permanent) Belgian residence permit. She can use it just as any Belgian would use their (regular, and mandatory) electronic ID card. (Nowadays, there’s also an app for this sort of thing, which works quite well.) We do use eIDAS, which we discovered only fairly re…",
-                      "value": "My wife, a non-EU citizen, holds a (permanent) Belgian residence permit. She can use it just as any Belgian would use their (regular, and mandatory) electronic ID card. (Nowadays, there’s also an app for this sort of thing, which works quite well.) We do use eIDAS, which we discovered only fairly re…"
-                    }
-                  ],
-                  "name": [
-                    "My wife, a non-EU citizen, holds a (permanent) Belgian residence permit. She can use it just as any Belgian would use their (regular, and mandatory) electronic ID card. (Nowadays, there’s also an app for this sort of thing, which works quite well.) We do use eIDAS, which we discovered only fairly re…"
-                  ]
-                },
-                "value": "https://jan.boddez.net/notes/4f8879145f"
-              }
-            ],
-            "content": [
-              {
-                "html": "<p>Interesting. Are you a cross-border worker? I would have assumed that anyone with a BSN (which I think you should have as you fill Dutch taxes) would have <a href=\"https://www.digid.nl/en/living-abroad/\" rel=\"noopener noreferrer\" target=\"_blank\">access to DigiD</a>.</p>",
-                "value": "Interesting. Are you a cross-border worker? I would have assumed that anyone with a BSN (which I think you should have as you fill Dutch taxes) would have access to DigiD."
-              }
-            ],
-            "location": [
-              {
-                "type": [
-                  "h-adr"
-                ],
-                "properties": {
-                  "locality": [
-                    "Eindhoven"
-                  ],
-                  "region": [
-                    "North Brabant"
-                  ],
-                  "country": [
-                    "Netherlands"
-                  ]
-                },
-                "value": "Eindhoven, North Brabant, Netherlands"
-              }
-            ],
-            "published": [
-              "2022-11-09T23:40:03+01:00"
-            ],
-            "url": [
-              "https://hacdias.com/2022/11/09/23h40m03s47"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
                   "photo": [
                     "https://hacdias.com/profile/2022-03-26/me-256.jpg"
-                  ],
-                  "url": [
-                    "https://hacdias.com/"
-                  ],
-                  "name": [
-                    "Henrique Dias"
                   ]
                 },
                 "value": "https://hacdias.com/"
@@ -665,7 +627,7 @@
       "https://hacdias.com/.rss"
     ],
     "stylesheet": [
-      "https://hacdias.com/assets/7847364ef23bc6820b8d3ee931f424d603cc4c64370a6e1a021ffc8036cacec7.css"
+      "https://hacdias.com/assets/e817a2fb60e430a3f542e626320945af8f67f970ac44de14b8c0f516bf9e6908.css"
     ],
     "indieauth-metadata": [
       "https://hacdias.com/.well-known/oauth-authorization-server"
@@ -683,16 +645,16 @@
       "https://aperture.p3k.io/microsub/455"
     ],
     "me": [
-      "https://hacdias.com/%20/pubkey.txt",
+      "https://hacdias.com/pubkey.txt",
       "https://twitter.com/hacdias",
       "https://github.com/hacdias",
       "https://instagram.com/hacdias",
       "https://linkedin.com/in/hacdias",
       "https://news.ycombinator.com/user?id=hacdias",
       "https://lobste.rs/u/hacdias",
+      "https://fosstodon.org/@hacdias",
       "mailto:mail@hacdias.com",
-      "mailto:hacdias@gmail.com",
-      "https://hacdias.com/cdn-cgi/l/email-protection#cea3afa7a28ea6afadaaa7afbde0ada1a3"
+      "mailto:hacdias@gmail.com"
     ],
     "webmention": [
       "https://webmention.io/hacdias.com/webmention"
@@ -700,29 +662,29 @@
     "pingback": [
       "https://webmention.io/hacdias.com/xmlrpc"
     ],
+    "class=": [
+      "https://hacdias.com/cdn-cgi/l/email-protection#7d101c14113d151c1e19141c0e531e1210"
+    ],
+    "me\"": [
+      "https://hacdias.com/cdn-cgi/l/email-protection#7d101c14113d151c1e19141c0e531e1210"
+    ],
     "noopener": [
       "https://seblog.nl/",
       "https://brainbaking.com/post/2022/11/the-great-mastodon-influx/",
-      "https://hacdias.com/2022/11/09/15h43m59s11",
       "https://jpassing.com/2021/11/30/using-pem-to-encode-public-keys/",
       "https://twitter.com/mxbck/status/1590809274808147990",
       "https://blog.jim-nielsen.com/2022/verified-personal-website/",
       "https://brainbaking.com/post/2022/11/finding-stuff-on-big-blogs/",
-      "https://jan.boddez.net/notes/4f8879145f",
-      "https://www.digid.nl/en/living-abroad/",
       "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/previous",
       "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/next"
     ],
     "noreferrer": [
       "https://seblog.nl/",
       "https://brainbaking.com/post/2022/11/the-great-mastodon-influx/",
-      "https://hacdias.com/2022/11/09/15h43m59s11",
       "https://jpassing.com/2021/11/30/using-pem-to-encode-public-keys/",
       "https://twitter.com/mxbck/status/1590809274808147990",
       "https://blog.jim-nielsen.com/2022/verified-personal-website/",
       "https://brainbaking.com/post/2022/11/finding-stuff-on-big-blogs/",
-      "https://jan.boddez.net/notes/4f8879145f",
-      "https://www.digid.nl/en/living-abroad/",
       "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/previous",
       "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/next"
     ]
@@ -757,7 +719,7 @@
       ],
       "type": "application/rss+xml"
     },
-    "https://hacdias.com/assets/7847364ef23bc6820b8d3ee931f424d603cc4c64370a6e1a021ffc8036cacec7.css": {
+    "https://hacdias.com/assets/e817a2fb60e430a3f542e626320945af8f67f970ac44de14b8c0f516bf9e6908.css": {
       "rels": [
         "stylesheet"
       ]
@@ -787,7 +749,7 @@
         "microsub"
       ]
     },
-    "https://hacdias.com/%20/pubkey.txt": {
+    "https://hacdias.com/pubkey.txt": {
       "rels": [
         "me"
       ]
@@ -822,6 +784,11 @@
         "me"
       ]
     },
+    "https://fosstodon.org/@hacdias": {
+      "rels": [
+        "me"
+      ]
+    },
     "mailto:mail@hacdias.com": {
       "rels": [
         "me"
@@ -842,9 +809,10 @@
         "pingback"
       ]
     },
-    "https://hacdias.com/cdn-cgi/l/email-protection#cea3afa7a28ea6afadaaa7afbde0ada1a3": {
+    "https://hacdias.com/cdn-cgi/l/email-protection#7d101c14113d151c1e19141c0e531e1210": {
       "rels": [
-        "me"
+        "class=",
+        "me\""
       ],
       "text": "[email protected]"
     },
@@ -861,13 +829,6 @@
         "noreferrer"
       ],
       "text": "“The Great Mastodon Influx”"
-    },
-    "https://hacdias.com/2022/11/09/15h43m59s11": {
-      "rels": [
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "POSSEing to Mastodon"
     },
     "https://jpassing.com/2021/11/30/using-pem-to-encode-public-keys/": {
       "rels": [
@@ -896,20 +857,6 @@
         "noreferrer"
       ],
       "text": "Finding Stuff on Big Blogs"
-    },
-    "https://jan.boddez.net/notes/4f8879145f": {
-      "rels": [
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "09 Nov 2022"
-    },
-    "https://www.digid.nl/en/living-abroad/": {
-      "rels": [
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "access to DigiD"
     },
     "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/previous": {
       "rels": [
