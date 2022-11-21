@@ -6,6 +6,17 @@
       ],
       "properties": {
         "name": [
+          "Package Install Without Use-Package\n\t\t\t\t\t\t🔗\n\t\t\t\t\t\n\t\t\t\t\t15:13:15 on 2022-11-20\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\tSo, one of the things I had to sort out when\n\t\t\t\t\tslimming down on the amount of external packages\n\t\t\t\t\tthat I use is to get things installed\n\t\t\t\t\twithout use-package. Typically, I\n\t\t\t\t\t\tused a form that looked a lot like this:\n\t\t\t\t\t\n\t\t\t\t\t\t\n(unless (package-installed-p 'package)\n\t(package-refresh-contents)\n\t(package-install 'package))\n\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\tFor a small amount of packages, this was fine,\n\t\t\t\t\teven if it was inefficient by refreshing the\n\t\t\t\t\tpackage contents for each instance of that. It was\n\t\t\t\t\t\tbarely a problem with 1 or 2 packages.\n\t\t\t\t\tOf course, there is a much more\n\t\t\t\t\tefficient manner, already built into Emacs, and\n\t\t\t\t\tmuch easier to implement:\n\t\t\t\t\t\n\t\t\t\t\t\t\n(setq package-selected-packages '(ef-themes emms))\n(package-install-selected-packages)\n\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\tYeah. So, just make a list of package names you\n\t\t\t\t\twant to install and uh, tell it to do that. No\n\t\t\t\t\tmultiple refreshes, just here's what I want, go do\n\t\t\t\t\tthat. Magic."
+        ]
+      },
+      "id": "20221120-package-install-without-use-package"
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
           "Recession is Coming\n\t\t\t\t\t\t🔗\n\t\t\t\t\t\n\t\t\t\t\t14:04:12 on 2022-11-17\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tRecession is coming\n\t\t\t\t\t\t\n\t\t\t\t\t\tRecession is Coming\n\t\t\t\t\t\n\t\t\t\t\tI mean, I'm no economist, but I don't think\n\t\t\t\t\twatching\n\t\t\t\t\tthe FAANG\n\t\t\t\t\tcompanies planning multi-thousand person layoffs,\n\t\t\t\t\twith plenty of lower-ranking copy-cats, inflation\n\t\t\t\t\tand pricing on the rise that things are not going\n\t\t\t\t\twell. Record profits, though, so congrats,\n\t\t\t\t\tcorporate fat cats. You've earnedstolen\n\t\t\t\t\tit.\n\t\t\t\t\tTime to hibernate. Survive until more favorable\n\t\t\t\t\tconditions to thrive."
         ]
       },

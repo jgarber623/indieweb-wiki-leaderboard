@@ -14,6 +14,9 @@
         "name": [
           "Michael D. Ivey"
         ],
+        "nickname": [
+          "(Gweezlebur)"
+        ],
         "note": [
           "Software engineer. Video game maker. RPG enthusiast. Wrangler of cats. Girl Scout."
         ],
@@ -21,31 +24,81 @@
           "https://gweezlebur.com/"
         ],
         "url": [
-          "https://gweezlebur.com/",
-          "https://tilde.zone/@ivey",
-          "https://github.com/ivey",
-          "https://twitter.com/ivey"
+          "https://gweezlebur.com/"
+        ],
+        "email": [
+          "mailto:ivey@gweezlebur.com"
         ]
       }
     }
   ],
   "rels": {
+    "canonical": [
+      "https://gweezlebur.com/"
+    ],
+    "alternate": [
+      "https://gweezlebur.com/feed.xml"
+    ],
+    "icon": [
+      "https://gweezlebur.com/"
+    ],
+    "shortcut": [
+      "https://gweezlebur.com/"
+    ],
+    "stylesheet": [
+      "https://gweezlebur.com/assets/css/main.css"
+    ],
     "authorization_endpoint": [
       "https://indieauth.com/auth"
     ],
     "token_endpoint": [
       "https://tokens.indieauth.com/token"
     ],
+    "microsub": [
+      "https://aperture.p3k.io/microsub/806"
+    ],
     "pgpkey": [
       "https://gweezlebur.com/BA7ECBB6D4F40AEC02F38B05D65AFD1028BBA035.asc"
     ],
     "me": [
+      "mailto:ivey@gweezlebur.com",
       "https://tilde.zone/@ivey",
       "https://github.com/ivey",
-      "https://twitter.com/ivey"
+      "https://twitter.com/ivey",
+      "mailto:ivey@tilde.club",
+      "mailto:michael.ivey@google.com",
+      "https://mltshp.com/user/ivey",
+      "https://cohost.org/ivey",
+      "https://twitch.tv/gweezlebur",
+      "https://steamcommunity.com/id/gweezlebur/",
+      "https://robertsspaceindustries.com/citizens/Gweezlebur",
+      "https://www.instagram.com/ivey/",
+      "https://www.facebook.com/michaelivey/",
+      "https://www.linkedin.com/in/michaelivey/",
+      "https://reddit.com/u/ivey"
+    ],
+    "discord": [
+      "https://discord.gg/ZcUq4Hu"
     ]
   },
   "rel-urls": {
+    "https://gweezlebur.com/": {
+      "rels": [
+        "canonical"
+      ]
+    },
+    "https://gweezlebur.com/feed.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "gweezlebur.com",
+      "type": "application/atom+xml"
+    },
+    "https://gweezlebur.com/assets/css/main.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
     "https://indieauth.com/auth": {
       "rels": [
         "authorization_endpoint"
@@ -56,29 +109,111 @@
         "token_endpoint"
       ]
     },
+    "https://aperture.p3k.io/microsub/806": {
+      "rels": [
+        "microsub"
+      ]
+    },
     "https://gweezlebur.com/BA7ECBB6D4F40AEC02F38B05D65AFD1028BBA035.asc": {
       "rels": [
         "pgpkey"
+      ]
+    },
+    "mailto:ivey@gweezlebur.com": {
+      "rels": [
+        "me"
       ],
-      "text": "new GPG key for 2022"
+      "text": "ivey@gweezlebur.com"
     },
     "https://tilde.zone/@ivey": {
       "rels": [
         "me"
       ],
-      "text": "fediverse - @ivey@tilde.zone"
+      "text": "Fediverse - @ivey@tilde.zone"
+    },
+    "https://discord.gg/ZcUq4Hu": {
+      "rels": [
+        "discord"
+      ],
+      "text": "My Discord Server"
     },
     "https://github.com/ivey": {
       "rels": [
         "me"
       ],
-      "text": "github - @ivey"
+      "text": "Github - @ivey"
     },
     "https://twitter.com/ivey": {
       "rels": [
         "me"
       ],
-      "text": "twitter - @ivey"
+      "text": "Twitter - @ivey"
+    },
+    "mailto:ivey@tilde.club": {
+      "rels": [
+        "me"
+      ],
+      "text": "ivey@tilde.club - alt email"
+    },
+    "mailto:michael.ivey@google.com": {
+      "rels": [
+        "me"
+      ],
+      "text": "michael.ivey@gmail.com - Google"
+    },
+    "https://mltshp.com/user/ivey": {
+      "rels": [
+        "me"
+      ],
+      "text": "mltshp - ivey"
+    },
+    "https://cohost.org/ivey": {
+      "rels": [
+        "me"
+      ],
+      "text": "cohost - ivey"
+    },
+    "https://twitch.tv/gweezlebur": {
+      "rels": [
+        "me"
+      ],
+      "text": "Twitch - Gweezlebur"
+    },
+    "https://steamcommunity.com/id/gweezlebur/": {
+      "rels": [
+        "me"
+      ],
+      "text": "Steam - gweezlebur"
+    },
+    "https://robertsspaceindustries.com/citizens/Gweezlebur": {
+      "rels": [
+        "me"
+      ],
+      "text": "Star Citizen - Gweezlebur"
+    },
+    "https://www.instagram.com/ivey/": {
+      "rels": [
+        "me"
+      ],
+      "text": "Instagram"
+    },
+    "https://www.facebook.com/michaelivey/": {
+      "rels": [
+        "me"
+      ],
+      "text": "Facebook"
+    },
+    "https://www.linkedin.com/in/michaelivey/": {
+      "rels": [
+        "me"
+      ],
+      "text": "LinkedIn"
+    },
+    "https://reddit.com/u/ivey": {
+      "rels": [
+        "me"
+      ],
+      "text": "Reddit - ivey"
     }
   }
 }

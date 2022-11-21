@@ -15,12 +15,11 @@
     "canonical": [
       "https://dym.sh/"
     ],
+    "me": [
+      "mailto:re@dym.sh"
+    ],
     "stylesheet": [
       "https://dym.sh/style.css"
-    ],
-    "me": [
-      "mailto:re@dym.sh",
-      "https://dym.sh/feed.rss"
     ]
   },
   "rel-urls": {
@@ -55,18 +54,16 @@
         "canonical"
       ]
     },
+    "mailto:re@dym.sh": {
+      "rels": [
+        "me"
+      ]
+    },
     "https://dym.sh/style.css": {
       "rels": [
         "stylesheet"
       ],
       "type": "text/css"
-    },
-    "mailto:re@dym.sh": {
-      "rels": [
-        "me"
-      ],
-      "title": "email",
-      "text": "email\n    "
     }
   }
 }

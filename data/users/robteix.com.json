@@ -4,6 +4,10 @@
     "profile": [
       "http://gmpg.org/xfn/11"
     ],
+    "dns-prefetch": [
+      "https://i0.wp.com/",
+      "https://c0.wp.com/"
+    ],
     "alternate": [
       "https://roberto.selbach.ca/feed/",
       "https://roberto.selbach.ca/comments/feed/",
@@ -13,6 +17,8 @@
     ],
     "stylesheet": [
       "https://roberto.selbach.ca/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1",
+      "https://roberto.selbach.ca/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17",
+      "https://roberto.selbach.ca/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.1.1",
       "https://roberto.selbach.ca/wp-includes/css/classic-themes.min.css?ver=1",
       "https://roberto.selbach.ca/wp-content/plugins/sillyquote/sillyquote/sillyquote.css?ver=6.1.1",
       "https://roberto.selbach.ca/wp-content/cache/autoptimize/css/autoptimize_single_4a62e9999e28745a0143f48ad41b245a.css?ver=6.1.1"
@@ -44,11 +50,11 @@
       "http://mercury.postlight.com/amp?url=https://roberto.selbach.ca/"
     ],
     "icon": [
-      "https://roberto.selbach.ca/wp-content/uploads/2015/02/beto-54e1ef8dv1_site_icon-32x32.jpg",
-      "https://roberto.selbach.ca/wp-content/uploads/2015/02/beto-54e1ef8dv1_site_icon-256x256.jpg"
+      "https://i0.wp.com/roberto.selbach.ca/wp-content/uploads/2015/02/beto-54e1ef8dv1_site_icon.jpg?fit=32%2C32&ssl=1",
+      "https://i0.wp.com/roberto.selbach.ca/wp-content/uploads/2015/02/beto-54e1ef8dv1_site_icon.jpg?fit=192%2C192&ssl=1"
     ],
     "apple-touch-icon": [
-      "https://roberto.selbach.ca/wp-content/uploads/2015/02/beto-54e1ef8dv1_site_icon-256x256.jpg"
+      "https://i0.wp.com/roberto.selbach.ca/wp-content/uploads/2015/02/beto-54e1ef8dv1_site_icon.jpg?fit=180%2C180&ssl=1"
     ],
     "home": [
       "https://roberto.selbach.ca/"
@@ -61,6 +67,16 @@
     "http://gmpg.org/xfn/11": {
       "rels": [
         "profile"
+      ]
+    },
+    "https://i0.wp.com/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
+    "https://c0.wp.com/": {
+      "rels": [
+        "dns-prefetch"
       ]
     },
     "https://roberto.selbach.ca/feed/": {
@@ -78,6 +94,20 @@
       "type": "application/rss+xml"
     },
     "https://roberto.selbach.ca/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://roberto.selbach.ca/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://roberto.selbach.ca/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.1.1": {
       "rels": [
         "stylesheet"
       ],
@@ -171,21 +201,26 @@
         "amphtml"
       ]
     },
-    "https://roberto.selbach.ca/wp-content/uploads/2015/02/beto-54e1ef8dv1_site_icon-32x32.jpg": {
+    "https://i0.wp.com/roberto.selbach.ca/wp-content/uploads/2015/02/beto-54e1ef8dv1_site_icon.jpg?fit=32%2C32&ssl=1": {
       "rels": [
         "icon"
       ]
     },
-    "https://roberto.selbach.ca/wp-content/uploads/2015/02/beto-54e1ef8dv1_site_icon-256x256.jpg": {
+    "https://i0.wp.com/roberto.selbach.ca/wp-content/uploads/2015/02/beto-54e1ef8dv1_site_icon.jpg?fit=192%2C192&ssl=1": {
       "rels": [
         "icon"
+      ]
+    },
+    "https://i0.wp.com/roberto.selbach.ca/wp-content/uploads/2015/02/beto-54e1ef8dv1_site_icon.jpg?fit=180%2C180&ssl=1": {
+      "rels": [
+        "apple-touch-icon"
       ]
     },
     "https://selbach.social/@roberto": {
       "rels": [
         "me"
       ],
-      "text": "@roberto@selbach.social (mastodon)"
+      "text": "Mastodon"
     },
     "https://www.linkedin.com/in/robteix": {
       "rels": [

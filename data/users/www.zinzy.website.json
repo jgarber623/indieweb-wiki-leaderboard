@@ -5,8 +5,23 @@
         "h-card"
       ],
       "properties": {
+        "photo": [
+          {
+            "value": "https://res.cloudinary.com/dbi2zounq/image/upload/c_scale,w_200/v1635344340/me/zinzy-1_zarupx.jpg",
+            "alt": "Portrait photo of Zinzy Waleson Geene laughing hysterically, as she does"
+          }
+        ],
         "name": [
-          "Zinzy Waleson"
+          "Zinzy  \n            Waleson Geene"
+        ],
+        "given-name": [
+          "Zinzy"
+        ],
+        "family-name": [
+          "Waleson Geene"
+        ],
+        "locality": [
+          "Amsterdam"
         ],
         "url": [
           "https://www.zinzy.website/"
@@ -16,10 +31,10 @@
   ],
   "rels": {
     "canonical": [
-      "https://www.zinzy.website/index"
+      "https://www.zinzy.website/"
     ],
     "icon": [
-      "https://emojicdn.elk.sh/💈"
+      "https://emojicdn.elk.sh/🦄"
     ],
     "stylesheet": [
       "https://www.zinzy.website/styles.css"
@@ -52,15 +67,23 @@
     ],
     "micropub": [
       "https://zinzy.website/micropub/main"
+    ],
+    "noopener": [
+      "https://pronoun.is/she",
+      "https://pronoun.is/they"
+    ],
+    "noreferrer": [
+      "https://pronoun.is/she",
+      "https://pronoun.is/they"
     ]
   },
   "rel-urls": {
-    "https://www.zinzy.website/index": {
+    "https://www.zinzy.website/": {
       "rels": [
         "canonical"
       ]
     },
-    "https://emojicdn.elk.sh/💈": {
+    "https://emojicdn.elk.sh/🦄": {
       "rels": [
         "icon"
       ],
@@ -137,6 +160,20 @@
       "rels": [
         "micropub"
       ]
+    },
+    "https://pronoun.is/she": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "she"
+    },
+    "https://pronoun.is/they": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "they"
     }
   }
 }

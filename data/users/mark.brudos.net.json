@@ -5,6 +5,7 @@
       "https://mark.brudos.net/xmlrpc.php"
     ],
     "dns-prefetch": [
+      "https://cdn.jsdelivr.net/",
       "https://fonts.googleapis.com/"
     ],
     "alternate": [
@@ -45,6 +46,11 @@
     "https://mark.brudos.net/xmlrpc.php": {
       "rels": [
         "pingback"
+      ]
+    },
+    "https://cdn.jsdelivr.net/": {
+      "rels": [
+        "dns-prefetch"
       ]
     },
     "https://fonts.googleapis.com/": {
