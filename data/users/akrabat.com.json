@@ -6,6 +6,17 @@
       ],
       "properties": {
         "name": [
+          "Override Nginx media type for a URL\n                                \n                    I followed Maarten Balliauw's article on setting up a pointer to my @akrabat@phpc.social Mastodon account on my own domain at @rob@akrabat.com. I'm not sure how useful it is and would prefer to have my own domain as the main account. Something to think about at least. When setting up https://akrabat.com/.well-known/webfinger, I realised that it was being served with a Content-Type of application/octet-stream, when it should be application/json. To fix this, I added this to my… continue reading.\n                    Posted on\n                            21 November 2022                            in Web\n\n                                                    \n                                One comment so far"
+        ]
+      },
+      "id": "post-6491"
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
           "Installing Xdebug on PHP 8.1 installed with Homebrew\n                                \n                    I have recently set up a new M2 MacBook Air and as usual, installed Homebrew and then installed PHP. Homebrew is always up to date, so it installed PHP 8.1 for me. Again, as usual, I installed Xdebug using pecl install xdebug. This whirrs and clicks for a while downloading and compiling the xdebug.so and then fails with: rob@ardent ~ $ pecl install xdebug downloading xdebug-3.1.5.tgz … Starting to download xdebug-3.1.5.tgz (232,070 bytes) … Build… continue reading.\n                    Posted on\n                            26 July 2022                            in PHP, Software\n\n                                                    \n                                View all 3 comments"
         ]
       },
@@ -101,17 +112,6 @@
     },
     {
       "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "name": [
-          "OpenConnect on Mac\n                                \n                    One of my clients has recently moved to AnyConnect VPN and I've been having routing problems with the official Mac client. As my colleagues on Linux on the project have not had these issues, I investigated and installed the OpenConnect client. These are my notes after scouring the Internet to set it up how I want it. Installation I used Homebrew: $ brew install openconnect OpenConnect is a CLI tool. If you want a GUI… continue reading.\n                    Posted on\n                            23 March 2021                            in Computing, Software\n\n                                                    \n                                View all 7 comments"
-        ]
-      },
-      "id": "post-6367"
-    },
-    {
-      "type": [
         "h-card"
       ],
       "properties": {
@@ -171,6 +171,7 @@
       "https://www.instagram.com/akrabatic"
     ],
     "bookmark": [
+      "https://akrabat.com/override-nginx-media-type-for-a-url/",
       "https://akrabat.com/installing-xdebug-on-php-8-1-installed-with-homebrew/",
       "https://akrabat.com/bbedit-hosts-file-syntax-highlighting/",
       "https://akrabat.com/background-images-in-rst2pdf-0-99/",
@@ -179,10 +180,10 @@
       "https://akrabat.com/quick-script-to-recreate-my-python-virtualenv/",
       "https://akrabat.com/changelog-generator-for-github-milestones/",
       "https://akrabat.com/setting-http-status-code-based-on-exception-in-slim-4/",
-      "https://akrabat.com/a-few-git-tips/",
-      "https://akrabat.com/openconnect-on-mac/"
+      "https://akrabat.com/a-few-git-tips/"
     ],
     "category": [
+      "https://akrabat.com/category/web/",
       "https://akrabat.com/category/php/",
       "https://akrabat.com/category/software/",
       "https://akrabat.com/category/rst2pdf/",
@@ -195,6 +196,7 @@
       "https://akrabat.com/category/slim-framework-4/"
     ],
     "tag": [
+      "https://akrabat.com/category/web/",
       "https://akrabat.com/category/php/",
       "https://akrabat.com/category/software/",
       "https://akrabat.com/category/rst2pdf/",
@@ -327,6 +329,19 @@
         "me"
       ]
     },
+    "https://akrabat.com/override-nginx-media-type-for-a-url/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "Override Nginx media type for a URL"
+    },
+    "https://akrabat.com/category/web/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Web"
+    },
     "https://akrabat.com/installing-xdebug-on-php-8-1-installed-with-homebrew/": {
       "rels": [
         "bookmark"
@@ -450,12 +465,6 @@
         "bookmark"
       ],
       "text": "A few Git tips"
-    },
-    "https://akrabat.com/openconnect-on-mac/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "OpenConnect on Mac"
     },
     "https://akrabat.com/": {
       "rels": [

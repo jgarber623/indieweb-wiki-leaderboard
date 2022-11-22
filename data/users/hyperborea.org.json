@@ -131,6 +131,9 @@
     "stylesheet": [
       "https://hyperborea.org/standard2204c.css"
     ],
+    "authorization_endpoint": [
+      "https://hyperborea.org/ia/"
+    ],
     "webmention": [
       "https://webmention.io/hyperborea.org/webmention"
     ],
@@ -178,6 +181,11 @@
     "https://github.com/kvibber": {
       "rels": [
         "me"
+      ]
+    },
+    "https://hyperborea.org/ia/": {
+      "rels": [
+        "authorization_endpoint"
       ]
     },
     "https://webmention.io/hyperborea.org/webmention": {

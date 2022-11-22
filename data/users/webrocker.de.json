@@ -266,6 +266,15 @@
               "500w": "https://webrocker.de/blog/wp-content/uploads/2020/04/profile.png"
             },
             "alt": "Webrocker"
+          },
+          {
+            "value": "https://webrocker.de/blog/wp-content/uploads/2020/04/profile-300x300.png",
+            "srcset": {
+              "300w": "https://webrocker.de/blog/wp-content/uploads/2020/04/profile-300x300.png",
+              "210w": "https://webrocker.de/blog/wp-content/uploads/2020/04/profile-210x210.png",
+              "500w": "https://webrocker.de/blog/wp-content/uploads/2020/04/profile.png"
+            },
+            "alt": "Webrocker"
           }
         ],
         "name": [
@@ -324,11 +333,11 @@
     "me": [
       "https://mastodon.social/@webrocker",
       "https://twitter.com/webrocker",
+      "https://webrocker.de/",
       "mailto:blog@webrocker.de",
       "https://codepen.io/webrocker",
       "https://github.com/iamwebrocker",
-      "https://mastodon.social/@webrocker.de@webrocker.de",
-      "https://webrocker.de/"
+      "https://mastodon.social/@webrocker.de@webrocker.de"
     ],
     "author": [
       "https://webrocker.de/impressum/",
@@ -352,6 +361,7 @@
       "https://webrocker.de/wp-json/webmention/1.0/endpoint"
     ],
     "bookmark": [
+      "https://webrocker.de/2022/11/21/corduroy-lebendiger-adventskalender-frankfurt-roedelheim/",
       "https://webrocker.de/2022/10/04/css-grid-layout-system/",
       "https://webrocker.de/2022/09/23/processwire-use-unpublished-pages-in-page-relation-field/",
       "https://webrocker.de/2022/09/22/typo3-update-v10-v11-htaccess-changes/",
@@ -362,10 +372,15 @@
       "https://webrocker.de/2022/06/23/frank-carter-i-hate-you-banquet-records/",
       "https://webrocker.de/2022/06/22/backstage-das-ende-einer-aera-beves-welt/",
       "https://webrocker.de/2022/05/29/der-kleinste-leopard-frankfurts/",
-      "https://webrocker.de/2022/05/20/europacup-in-diesem-jahr/",
-      "https://webrocker.de/2022/05/06/im-herzen-von-europa/"
+      "https://webrocker.de/2022/05/20/europacup-in-diesem-jahr/"
     ],
     "tag": [
+      "https://webrocker.de/tag/adventskalender/",
+      "https://webrocker.de/tag/band/",
+      "https://webrocker.de/tag/corduroy/",
+      "https://webrocker.de/tag/gig/",
+      "https://webrocker.de/tag/rock/",
+      "https://webrocker.de/tag/roedelheim/",
       "https://webrocker.de/tag/codepen-2/",
       "https://webrocker.de/tag/css/",
       "https://webrocker.de/tag/css-grids/",
@@ -387,10 +402,7 @@
       "https://webrocker.de/tag/video/",
       "https://webrocker.de/tag/cover/",
       "https://webrocker.de/tag/deatangel/",
-      "https://webrocker.de/tag/rock/",
-      "https://webrocker.de/tag/corduroy/",
       "https://webrocker.de/tag/frankfurt/",
-      "https://webrocker.de/tag/gig/",
       "https://webrocker.de/tag/illustration/",
       "https://webrocker.de/tag/logo/",
       "https://webrocker.de/tag/wondertom/",
@@ -408,11 +420,7 @@
       "https://webrocker.de/tag/europapokal/",
       "https://webrocker.de/tag/sge/",
       "https://webrocker.de/tag/sgeuropa/",
-      "https://webrocker.de/tag/uefael2022/",
-      "https://webrocker.de/tag/legendaer/",
-      "https://webrocker.de/tag/sgewhu/",
-      "https://webrocker.de/tag/uel/",
-      "https://webrocker.de/tag/waldstadion/"
+      "https://webrocker.de/tag/uefael2022/"
     ]
   },
   "rel-urls": {
@@ -549,18 +557,60 @@
         "webmention"
       ]
     },
-    "https://webrocker.de/2022/10/04/css-grid-layout-system/": {
+    "https://webrocker.de/2022/11/21/corduroy-lebendiger-adventskalender-frankfurt-roedelheim/": {
       "rels": [
         "bookmark"
       ],
-      "hreflang": "en",
-      "text": "(Simple) CSS Grid Layout System"
+      "text": "corduroy @ Lebendiger Adventskalender, Frankfurt Rödelheim"
     },
     "https://webrocker.de/": {
       "rels": [
         "author"
       ],
       "text": "Webrocker"
+    },
+    "https://webrocker.de/tag/adventskalender/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "adventskalender"
+    },
+    "https://webrocker.de/tag/band/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Band"
+    },
+    "https://webrocker.de/tag/corduroy/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "corduroy"
+    },
+    "https://webrocker.de/tag/gig/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Gig"
+    },
+    "https://webrocker.de/tag/rock/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "rock!"
+    },
+    "https://webrocker.de/tag/roedelheim/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Rödelheim"
+    },
+    "https://webrocker.de/2022/10/04/css-grid-layout-system/": {
+      "rels": [
+        "bookmark"
+      ],
+      "hreflang": "en",
+      "text": "(Simple) CSS Grid Layout System"
     },
     "https://webrocker.de/tag/codepen-2/": {
       "rels": [
@@ -715,35 +765,17 @@
       ],
       "text": "DeatAngel"
     },
-    "https://webrocker.de/tag/rock/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "rock!"
-    },
     "https://webrocker.de/2022/07/16/coeur-du-roi/": {
       "rels": [
         "bookmark"
       ],
       "text": "Coeur Du Roi"
     },
-    "https://webrocker.de/tag/corduroy/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "corduroy"
-    },
     "https://webrocker.de/tag/frankfurt/": {
       "rels": [
         "tag"
       ],
       "text": "Frankfurt"
-    },
-    "https://webrocker.de/tag/gig/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Gig"
     },
     "https://webrocker.de/tag/illustration/": {
       "rels": [
@@ -882,36 +914,6 @@
         "tag"
       ],
       "text": "UEFAEL2022"
-    },
-    "https://webrocker.de/2022/05/06/im-herzen-von-europa/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Im Herzen von Europa"
-    },
-    "https://webrocker.de/tag/legendaer/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "legendaer"
-    },
-    "https://webrocker.de/tag/sgewhu/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "SGEWHU"
-    },
-    "https://webrocker.de/tag/uel/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "UEL"
-    },
-    "https://webrocker.de/tag/waldstadion/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Waldstadion"
     },
     "mailto:blog@webrocker.de": {
       "rels": [

@@ -29,7 +29,6 @@
       "https://tedcurran.net/wp-content/plugins/wp-trending-post-slider-and-widget/assets/css/wtpsw-public.css?ver=1.5.6",
       "https://tedcurran.net/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70",
       "https://tedcurran.net/wp-content/plugins/h5p/h5p-php-library/styles/h5p.css?ver=1.15.4",
-      "https://tedcurran.net/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
       "https://tedcurran.net/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3",
       "https://tedcurran.net/wp-content/themes/fluida/resources/fonts/fontfaces.css?ver=1.8.8",
       "https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A%7CNews+Cycle%3A%7CSource+Sans+Pro%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%7CSource+Sans+Pro%3A700%7CSource+Sans+Pro%3A400%7CNews+Cycle%3A400&ver=1.8.8",
@@ -48,30 +47,34 @@
     "wlwmanifest": [
       "https://tedcurran.net/wp-includes/wlwmanifest.xml"
     ],
+    "me": [
+      "https://tedcurran\">mastodon</a>/@<a rel=\"me\" href=\"https://indieweb.social/"
+    ],
     "home": [
       "https://tedcurran.net/"
     ],
     "category": [
+      "https://tedcurran.net/category/edtech/",
       "https://tedcurran.net/category/androidedu/",
       "https://tedcurran.net/category/free-software/",
       "https://tedcurran.net/category/learning-design/",
       "https://tedcurran.net/category/teacherhax/",
       "https://tedcurran.net/category/featured/",
-      "https://tedcurran.net/category/edtech/",
       "https://tedcurran.net/category/freeapps/",
       "https://tedcurran.net/category/html5edtech/"
     ],
     "tag": [
+      "https://tedcurran.net/category/edtech/",
       "https://tedcurran.net/category/androidedu/",
       "https://tedcurran.net/category/free-software/",
       "https://tedcurran.net/category/learning-design/",
       "https://tedcurran.net/category/teacherhax/",
       "https://tedcurran.net/category/featured/",
-      "https://tedcurran.net/category/edtech/",
       "https://tedcurran.net/category/freeapps/",
       "https://tedcurran.net/category/html5edtech/"
     ],
     "bookmark": [
+      "https://tedcurran.net/2022/11/by-the-power-of-wordpress-verified-on-mastodon-by-my-blog/",
       "https://tedcurran.net/2022/10/ios-is-cool-but-android-is-better-fight-me/",
       "https://tedcurran.net/2022/09/stages-of-learning-and-edtech-improvements/",
       "https://tedcurran.net/2022/09/interactive-pdfs-for-elearning-how-and-why/",
@@ -80,8 +83,7 @@
       "https://tedcurran.net/2022/05/the-metaverse-in-education-how-bout-no/",
       "https://tedcurran.net/2022/05/alfred-for-mac-ferocious-tools-for-instructional-designers/",
       "https://tedcurran.net/2022/03/from-word-docs-in-a-file-to-a-non-linear-visual-knowledge-base-using-markdown/",
-      "https://tedcurran.net/2022/02/teacher-instructional-designer/",
-      "https://tedcurran.net/2021/12/this-is-important-tell-me-why-its-great-a-fallacy/"
+      "https://tedcurran.net/2022/02/teacher-instructional-designer/"
     ]
   },
   "rel-urls": {
@@ -203,12 +205,6 @@
       ],
       "media": "all"
     },
-    "https://tedcurran.net/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "all"
-    },
     "https://tedcurran.net/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3": {
       "rels": [
         "stylesheet"
@@ -275,12 +271,30 @@
       ],
       "type": "application/wlwmanifest+xml"
     },
+    "https://tedcurran\">mastodon</a>/@<a rel=\"me\" href=\"https://indieweb.social/": {
+      "rels": [
+        "me"
+      ]
+    },
     "https://tedcurran.net/": {
       "rels": [
         "home"
       ],
       "title": "Tips, Tricks, and Lifehacks for Online Educators",
       "text": "Ted Curran.net"
+    },
+    "https://tedcurran.net/category/edtech/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "EdTech"
+    },
+    "https://tedcurran.net/2022/11/by-the-power-of-wordpress-verified-on-mastodon-by-my-blog/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "By The Power of WordPress! Verified on Mastodon by my Blog"
     },
     "https://tedcurran.net/category/androidedu/": {
       "rels": [
@@ -347,13 +361,6 @@
       ],
       "text": "Notifications in Online Learning: Alert with Care"
     },
-    "https://tedcurran.net/category/edtech/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "EdTech"
-    },
     "https://tedcurran.net/2022/05/the-metaverse-in-education-how-bout-no/": {
       "rels": [
         "bookmark"
@@ -391,12 +398,6 @@
         "bookmark"
       ],
       "text": "Teachers: Don’t Get an Instructional Designer Job, Transform the Teaching Role with ID"
-    },
-    "https://tedcurran.net/2021/12/this-is-important-tell-me-why-its-great-a-fallacy/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "“This is important, tell me why it’s great” – A Fallacy"
     }
   }
 }

@@ -68,6 +68,7 @@
       "https://www.benji.dog/favicon.ico"
     ],
     "stylesheet": [
+      "https://www.benji.dog/assets/fontello-9434ffc0/css/fontello.css",
       "https://www.benji.dog/build/css/main.min.css"
     ],
     "feed": [
@@ -123,9 +124,6 @@
     ],
     "pgpkey": [
       "https://www.benji.dog/pub.asc"
-    ],
-    "noopener": [
-      "https://webring.xxiivv.com/#benji"
     ]
   },
   "rel-urls": {
@@ -226,6 +224,12 @@
         "shortcut"
       ]
     },
+    "https://www.benji.dog/assets/fontello-9434ffc0/css/fontello.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
     "https://www.benji.dog/build/css/main.min.css": {
       "rels": [
         "stylesheet"
@@ -257,7 +261,7 @@
       "rels": [
         "alternate"
       ],
-      "title": "RSS Feed - All Posts",
+      "title": "RSS Feed",
       "type": "application/rss+xml"
     },
     "https://www.benji.dog/feed.atom": {
@@ -271,7 +275,7 @@
       "rels": [
         "alternate"
       ],
-      "title": "RSS (Atom) Feed - All Posts",
+      "title": "RSS (Atom) Feed",
       "type": "application/atom+xml"
     },
     "https://www.benji.dog/feed.json": {
@@ -285,7 +289,7 @@
       "rels": [
         "alternate"
       ],
-      "title": "JSON Feed - All Posts",
+      "title": "JSON Feed",
       "type": "application/json"
     },
     "https://indieauth.com/auth": {
@@ -372,11 +376,6 @@
       ],
       "type": "application/pgp-keys",
       "text": "7EBF 284E 2F90 ABB9"
-    },
-    "https://webring.xxiivv.com/#benji": {
-      "rels": [
-        "noopener"
-      ]
     }
   }
 }

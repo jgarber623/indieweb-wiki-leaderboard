@@ -57,6 +57,228 @@
           }
         ],
         "name": [
+          "The value of a tool is not the money it can make for its creators."
+        ],
+        "content": [
+          {
+            "html": "The value of a tool is not the money it can make for its creators.",
+            "value": "The value of a tool is not the money it can make for its creators."
+          }
+        ],
+        "url": [
+          "https://werd.io/2022/the-value-of-a-tool-is-not"
+        ],
+        "published": [
+          "2022-11-22T01:36:59+00:00"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "url": [
+                "https://werd.io/profile/benwerd",
+                "https://werd.io/profile/benwerd",
+                "https://werd.io/profile/benwerd"
+              ],
+              "photo": [
+                "https://werd.io/file/5d388c5fb16ea14aac640912/thumb.jpg"
+              ],
+              "name": [
+                "Ben Werdmuller"
+              ]
+            },
+            "value": "Ben Werdmuller"
+          }
+        ],
+        "name": [
+          "Moderation on Mastodon: there's a lot of work to do"
+        ],
+        "content": [
+          {
+            "html": "<p><img style=\"margin-left:auto;margin-right:auto;\" src=\"https://werd.io/file/637bf77d282eda7c281b6c32\" alt=\"\" width=\"799\" height=\"600\"></p>\n<p>I’ve realized that I need to temper my enthusiasm for Mastodon. I worked on open source social networking platforms for a full decade of my life, and I’m very emotionally attached to this moment. I <em>really want</em> the fediverse to work.</p>\n<p>I come by it honestly: I do think that a collectively-owned platform based on open protocols and an ecosystem of compatible tools - a social commons - is both more ethical and more resilient than a platform that is owned and run by a giant corporation with thousands of employees, shareholder obligations, and valuation requirements.</p>\n<p>But my emotional involvement has led to me finding myself wanting to be reflexively defensive about its shortcomings, and this serves nobody. I’m enthusiastic about it, but many of the problems that people are bringing up are legitimate worries - and some of them may be showstoppers if they aren’t dealt with quickly.</p>\n<p>I’m particularly concerned with moderation. In the fediverse, every server has a different set of content policies and a different team of moderators. Theoretically, this is good: people with specific needs or from vulnerable communities can find themselves posting from a more supportive context than they might find on monolithic social media. Field-specific instances, for example in genetics, can establish content policies relating to scientific accuracy that couldn’t possibly be enforceable on a monolithic site. But at the same time, this patchwork of content policies mean that moderation can be arbitrary and hard to understand.</p>\n<p><a href=\"https://twitter.com/wickdchiq/status/1594711597359980547\">Journalist Erica Ifill woke up this morning to find that she’d been banned from her Mastodon instance</a> for no obvious reason. <a href=\"https://twitter.com/triketora/status/1594348646396559361\">Block Party founder Tracy Chou’s content was removed from the largest instance</a> on the grounds that criticizing patriarchy was sexism. In both cases, the action was reversed with an apology, but harm was done. An understanding of power imbalances is an important part of being a content moderator, but while software is provided to <em>technically</em> moderate, there are very few ecosystem resources to explain how to approach this from a human perspective. Open source software can sometimes fall into the trap of confusing code for policy, and Mastodon is no exception.</p>\n<p>And then there’s the harassment. As <a href=\"https://medium.com/@carolinesinders/im-sinders-on-mastodon-but-i-m-not-giving-up-on-twitter-yet-5dcd4fb810e1\">caroline sinders wrote</a>:</p>\n<blockquote><p>The blocking feature is like horror house anxiety game- I block when I see their new account, hoping I’ve now blocked all of them but knowing I probably never will. Because it’s a federated system, and you can have accounts on multiple servers, it means there’s multiple accounts I have to block to create some digital safety and distance.</p></blockquote>\n<p>All this turns the selection of an instance when you join the network into a high-stakes choice. Does the instance have the technical resources to stay online? Does it have the social resources and insight to moderate effectively? By what rules? What are the spoken and unspoken beliefs of its owners that might affect how you post and who you can reach?</p>\n<p>Which isn’t to say that commercial services don’t have the same problem. Clearly, they do, as can clearly be illustrated by the change in content policies at Twitter under Elon Musk compared to its previous management. Not only are content policies on commercial services notoriously imperfect, but moderation there is <a href=\"https://www.bbc.com/news/technology-57088382\">often undertaken by low-paid workers who frequently experience PTSD</a>.</p>\n<p>With a commercial service, though, you’re dealing with <em>one</em> service provider, rather than a patchwork, and the choice is more binary: you can take it or leave it. The fediverse gives its participants more choice, and there’s correspondingly more nuance to the decisions a user must make.</p>\n<p>It’s unwise to dismiss these issues. They disproportionately affect people from more vulnerable communities who are more likely to experience harassment, both from admins and from other users. At their worst, they can represent real threats to physical safety; at best, they make the platform hard to trust for someone trying to use it as a basis for sharing and discussion. Mastodon has been the home for some queer communities for some time, but it’s notable that women and people of color have often had a bad experience.</p>\n<p>I think the fediverse needs some real investment in online safety beyond what’s been done so far. Incremental approaches are probably the most feasible, rather than trying to get to the perfect thing more quickly.</p>\n<p>Here are some suggestions as a subset of what might be useful:</p>\n<p><strong>A free course for moderators, with certification.</strong> Take the course - which should stress inclusion and power dynamics - in your own time. Then get a verified certification that admins can place on their Mastodon profiles. New Mastodon users could search for instances that have trained admins. Mastodon instances could actively solicit participation from potential moderators who have passed the course. (Perhaps there could be levels: for example, basic, intermediate, and advanced.)</p>\n<p><strong>Search that highlights moderators.</strong> The identities and beliefs of an instance’s moderators are so important that they should be placed front and center when selecting a new instance. In one recent example, I’m aware of a journalist picking an instance only to discover that its owner was notoriously transphobic. Some users might prefer instances run by women or people of color.</p>\n<p><strong>Standardized content policies.</strong> Content policies that can be built using pre-defined blocks, in the same way that Creative Commons licenses can be chosen based on your needs. These could be advertised in a machine-readable way, so that new users can more easily search for instances that meet their needs. Better user interfaces could be built around selection, like a wizard that asks the new user about themselves and what they care about.</p>\n<p><strong>Instance ratings.</strong> Right now an instance is often defederated by other instances for bad behavior, but there’s no equivalent for new users. Reviews on instances could help users pick the right one.</p>\n<p><strong>Shared, themed blocklists.</strong> Shared blocklists for both users and instances would make the process of removing harmful content far easier for admins. Here, if my instance blocked another instance for hosting racist content, every other instance subscribed to my racism blocklist would also block that instance.) Similarly, if I blocked a <em>user</em> for racism, every other user subscribed to my racism blocklist would block them too. The reverse would be true if they blocked an instance or a user, too.</p>\n<p>These are some ideas, but experts who have worked in harassment and user security would likely have others. These are skills that are badly in demand.</p>\n<p>Please don’t mistake this post: I’m very bullish on the fediverse. I’d love for you to <a href=\"https://werd.social/@ben\">follow me at</a> <a class=\"autolink\" href=\"https://werd.social/@ben\"></a><a href=\"https://werd.social/@ben\" target=\"_blank\" rel=\"in-reply-to\" class=\"u-in-reply-to\">https://<wbr></wbr>werd.social/<wbr></wbr>@ben</a>. But particularly for those of us who have been waiting for this moment for a very long time, it’s important that we temper our excitement with an understanding of the work that still needs to happen, and that there’s much to do if we’re to create a network that is welcoming to everyone.</p>",
+            "value": "I’ve realized that I need to temper my enthusiasm for Mastodon. I worked on open source social networking platforms for a full decade of my life, and I’m very emotionally attached to this moment. I really want the fediverse to work.I come by it honestly: I do think that a collectively-owned platform based on open protocols and an ecosystem of compatible tools - a social commons - is both more ethical and more resilient than a platform that is owned and run by a giant corporation with thousands of employees, shareholder obligations, and valuation requirements.But my emotional involvement has led to me finding myself wanting to be reflexively defensive about its shortcomings, and this serves nobody. I’m enthusiastic about it, but many of the problems that people are bringing up are legitimate worries - and some of them may be showstoppers if they aren’t dealt with quickly.I’m particularly concerned with moderation. In the fediverse, every server has a different set of content policies and a different team of moderators. Theoretically, this is good: people with specific needs or from vulnerable communities can find themselves posting from a more supportive context than they might find on monolithic social media. Field-specific instances, for example in genetics, can establish content policies relating to scientific accuracy that couldn’t possibly be enforceable on a monolithic site. But at the same time, this patchwork of content policies mean that moderation can be arbitrary and hard to understand.Journalist Erica Ifill woke up this morning to find that she’d been banned from her Mastodon instance for no obvious reason. Block Party founder Tracy Chou’s content was removed from the largest instance on the grounds that criticizing patriarchy was sexism. In both cases, the action was reversed with an apology, but harm was done. An understanding of power imbalances is an important part of being a content moderator, but while software is provided to technically moderate, there are very few ecosystem resources to explain how to approach this from a human perspective. Open source software can sometimes fall into the trap of confusing code for policy, and Mastodon is no exception.And then there’s the harassment. As caroline sinders wrote:The blocking feature is like horror house anxiety game- I block when I see their new account, hoping I’ve now blocked all of them but knowing I probably never will. Because it’s a federated system, and you can have accounts on multiple servers, it means there’s multiple accounts I have to block to create some digital safety and distance.All this turns the selection of an instance when you join the network into a high-stakes choice. Does the instance have the technical resources to stay online? Does it have the social resources and insight to moderate effectively? By what rules? What are the spoken and unspoken beliefs of its owners that might affect how you post and who you can reach?Which isn’t to say that commercial services don’t have the same problem. Clearly, they do, as can clearly be illustrated by the change in content policies at Twitter under Elon Musk compared to its previous management. Not only are content policies on commercial services notoriously imperfect, but moderation there is often undertaken by low-paid workers who frequently experience PTSD.With a commercial service, though, you’re dealing with one service provider, rather than a patchwork, and the choice is more binary: you can take it or leave it. The fediverse gives its participants more choice, and there’s correspondingly more nuance to the decisions a user must make.It’s unwise to dismiss these issues. They disproportionately affect people from more vulnerable communities who are more likely to experience harassment, both from admins and from other users. At their worst, they can represent real threats to physical safety; at best, they make the platform hard to trust for someone trying to use it as a basis for sharing and discussion. Mastodon has been the home for some queer communities for some time, but it’s notable that women and people of color have often had a bad experience.I think the fediverse needs some real investment in online safety beyond what’s been done so far. Incremental approaches are probably the most feasible, rather than trying to get to the perfect thing more quickly.Here are some suggestions as a subset of what might be useful:A free course for moderators, with certification. Take the course - which should stress inclusion and power dynamics - in your own time. Then get a verified certification that admins can place on their Mastodon profiles. New Mastodon users could search for instances that have trained admins. Mastodon instances could actively solicit participation from potential moderators who have passed the course. (Perhaps there could be levels: for example, basic, intermediate, and advanced.)Search that highlights moderators. The identities and beliefs of an instance’s moderators are so important that they should be placed front and center when selecting a new instance. In one recent example, I’m aware of a journalist picking an instance only to discover that its owner was notoriously transphobic. Some users might prefer instances run by women or people of color.Standardized content policies. Content policies that can be built using pre-defined blocks, in the same way that Creative Commons licenses can be chosen based on your needs. These could be advertised in a machine-readable way, so that new users can more easily search for instances that meet their needs. Better user interfaces could be built around selection, like a wizard that asks the new user about themselves and what they care about.Instance ratings. Right now an instance is often defederated by other instances for bad behavior, but there’s no equivalent for new users. Reviews on instances could help users pick the right one.Shared, themed blocklists. Shared blocklists for both users and instances would make the process of removing harmful content far easier for admins. Here, if my instance blocked another instance for hosting racist content, every other instance subscribed to my racism blocklist would also block that instance.) Similarly, if I blocked a user for racism, every other user subscribed to my racism blocklist would block them too. The reverse would be true if they blocked an instance or a user, too.These are some ideas, but experts who have worked in harassment and user security would likely have others. These are skills that are badly in demand.Please don’t mistake this post: I’m very bullish on the fediverse. I’d love for you to follow me at https://werd.social/@ben. But particularly for those of us who have been waiting for this moment for a very long time, it’s important that we temper our excitement with an understanding of the work that still needs to happen, and that there’s much to do if we’re to create a network that is welcoming to everyone."
+          }
+        ],
+        "in-reply-to": [
+          "https://werd.social/@ben"
+        ],
+        "url": [
+          "https://werd.io/2022/moderation-on-mastodon-theres-a-lot-of-work-to-do"
+        ],
+        "published": [
+          "2022-11-21T22:11:17+00:00"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "url": [
+                "https://werd.io/profile/benwerd",
+                "https://werd.io/profile/benwerd",
+                "https://werd.io/profile/benwerd"
+              ],
+              "photo": [
+                "https://werd.io/file/5d388c5fb16ea14aac640912/thumb.jpg"
+              ],
+              "name": [
+                "Ben Werdmuller"
+              ]
+            },
+            "value": "Ben Werdmuller"
+          }
+        ],
+        "name": [
+          "Join us for our last event of the year. Free and online as always.\n\nWe’re talking with leaders who are taking bold actions, both locally and nationally, to develop equitable and sustainable communities that are more livable and adaptable for the most vulnerable groups. We’ll learn from them about the steps we can take, individually, to make a difference where we live now — and which ideas are scalable for broad impact.\n\nSpeakers include:\n\nPete Buttigieg, U.S. Secretary of Transportation\nLeah Thomas, Author and Advocate, \"The Intersectional Environmentalist\"\nJenny Wu, Managing Director of Development, Jonathan Rose Companies\n\n#event #sustainability\n\nhttps://19thne.ws/decevent"
+        ],
+        "content": [
+          {
+            "html": "Join us for our last event of the year. Free and online as always.<br>\n<br>\nWe’re talking with leaders who are taking bold actions, both locally and nationally, to develop equitable and sustainable communities that are more livable and adaptable for the most vulnerable groups. We’ll learn from them about the steps we can take, individually, to make a difference where we live now — and which ideas are scalable for broad impact.<br>\n<br>\nSpeakers include:<br>\n<br>\nPete Buttigieg, U.S. Secretary of Transportation<br>\nLeah Thomas, Author and Advocate, \"The Intersectional Environmentalist\"<br>\nJenny Wu, Managing Director of Development, Jonathan Rose Companies<br>\n<br>\n<a href=\"https://werd.io/tag/event\" class=\"p-category\" rel=\"tag\">#event</a> <a href=\"https://werd.io/tag/sustainability\" class=\"p-category\" rel=\"tag\">#sustainability</a><br>\n<br>\n<a href=\"https://19thne.ws/decevent\" target=\"_blank\">https://<wbr></wbr>19thne.ws/<wbr></wbr>decevent</a>",
+            "value": "Join us for our last event of the year. Free and online as always.\n\nWe’re talking with leaders who are taking bold actions, both locally and nationally, to develop equitable and sustainable communities that are more livable and adaptable for the most vulnerable groups. We’ll learn from them about the steps we can take, individually, to make a difference where we live now — and which ideas are scalable for broad impact.\n\nSpeakers include:\n\nPete Buttigieg, U.S. Secretary of Transportation\nLeah Thomas, Author and Advocate, \"The Intersectional Environmentalist\"\nJenny Wu, Managing Director of Development, Jonathan Rose Companies\n\n#event #sustainability\n\nhttps://19thne.ws/decevent"
+          }
+        ],
+        "category": [
+          "#event",
+          "#sustainability"
+        ],
+        "url": [
+          "https://werd.io/2022/join-us-for-our-last-event-of"
+        ],
+        "published": [
+          "2022-11-21T19:34:20+00:00"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "url": [
+                "https://werd.io/profile/benwerd",
+                "https://werd.io/profile/benwerd",
+                "https://werd.io/profile/benwerd"
+              ],
+              "photo": [
+                "https://werd.io/file/5d388c5fb16ea14aac640912/thumb.jpg"
+              ],
+              "name": [
+                "Ben Werdmuller"
+              ]
+            },
+            "value": "Ben Werdmuller"
+          }
+        ],
+        "name": [
+          "I’m on the waitlist and I’m interested to try it, but I’m super-skeptical about Post. It sounds like they’re trying to drop a fully-established social network designed around newsy influencers. Every successful network has always grown a community organically."
+        ],
+        "content": [
+          {
+            "html": "I’m on the waitlist and I’m interested to try it, but I’m super-skeptical about Post. It sounds like they’re trying to drop a fully-established social network designed around newsy influencers. Every successful network has always grown a community organically.",
+            "value": "I’m on the waitlist and I’m interested to try it, but I’m super-skeptical about Post. It sounds like they’re trying to drop a fully-established social network designed around newsy influencers. Every successful network has always grown a community organically."
+          }
+        ],
+        "url": [
+          "https://werd.io/2022/im-on-the-waitlist-and-im-interested"
+        ],
+        "published": [
+          "2022-11-21T15:52:31+00:00"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "url": [
+                "https://werd.io/profile/benwerd",
+                "https://werd.io/profile/benwerd",
+                "https://werd.io/profile/benwerd"
+              ],
+              "photo": [
+                "https://werd.io/file/5d388c5fb16ea14aac640912/thumb.jpg"
+              ],
+              "name": [
+                "Ben Werdmuller"
+              ]
+            },
+            "value": "Ben Werdmuller"
+          }
+        ],
+        "name": [
+          "Matt Mullenweg has reportedly committed to add ActivityPub to Tumblr. This is a huge deal. Exactly what I hoped to see: a growing federation of social platforms, all committing to work with each other. It’s happening."
+        ],
+        "content": [
+          {
+            "html": "Matt Mullenweg has reportedly committed to add ActivityPub to Tumblr. This is a huge deal. Exactly what I hoped to see: a growing federation of social platforms, all committing to work with each other. It’s happening.",
+            "value": "Matt Mullenweg has reportedly committed to add ActivityPub to Tumblr. This is a huge deal. Exactly what I hoped to see: a growing federation of social platforms, all committing to work with each other. It’s happening."
+          }
+        ],
+        "url": [
+          "https://werd.io/2022/matt-mullenweg-has-reportedly-committed-to-add"
+        ],
+        "published": [
+          "2022-11-21T15:45:20+00:00"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "url": [
+                "https://werd.io/profile/benwerd",
+                "https://werd.io/profile/benwerd",
+                "https://werd.io/profile/benwerd"
+              ],
+              "photo": [
+                "https://werd.io/file/5d388c5fb16ea14aac640912/thumb.jpg"
+              ],
+              "name": [
+                "Ben Werdmuller"
+              ]
+            },
+            "value": "Ben Werdmuller"
+          }
+        ],
+        "name": [
           "Tweet you again someday"
         ],
         "content": [
@@ -889,221 +1111,6 @@
           "2022-11-11T19:30:37+00:00"
         ]
       }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "author": [
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "url": [
-                "https://werd.io/profile/benwerd",
-                "https://werd.io/profile/benwerd",
-                "https://werd.io/profile/benwerd"
-              ],
-              "photo": [
-                "https://werd.io/file/5d388c5fb16ea14aac640912/thumb.jpg"
-              ],
-              "name": [
-                "Ben Werdmuller"
-              ]
-            },
-            "value": "Ben Werdmuller"
-          }
-        ],
-        "name": [
-          "Nothing that promises to make you rich quick is worth getting into."
-        ],
-        "content": [
-          {
-            "html": "Nothing that promises to make you rich quick is worth getting into.",
-            "value": "Nothing that promises to make you rich quick is worth getting into."
-          }
-        ],
-        "url": [
-          "https://werd.io/2022/nothing-that-promises-to-make-you-rich"
-        ],
-        "published": [
-          "2022-11-11T04:43:00+00:00"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "author": [
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "url": [
-                "https://werd.io/profile/benwerd",
-                "https://werd.io/profile/benwerd",
-                "https://werd.io/profile/benwerd"
-              ],
-              "photo": [
-                "https://werd.io/file/5d388c5fb16ea14aac640912/thumb.jpg"
-              ],
-              "name": [
-                "Ben Werdmuller"
-              ]
-            },
-            "value": "Ben Werdmuller"
-          }
-        ],
-        "name": [
-          "If Twitter's looking for a new CEO any time soon, I'll do it\n\nObviously in addition to my current role, but I hear that's OK"
-        ],
-        "content": [
-          {
-            "html": "If Twitter's looking for a new CEO any time soon, I'll do it<br>\n<br>\nObviously in addition to my current role, but I hear that's OK",
-            "value": "If Twitter's looking for a new CEO any time soon, I'll do it\n\nObviously in addition to my current role, but I hear that's OK"
-          }
-        ],
-        "url": [
-          "https://werd.io/2022/if-twitters-looking-for-a-new-ceo"
-        ],
-        "published": [
-          "2022-11-10T23:28:52+00:00"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "author": [
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "url": [
-                "https://werd.io/profile/benwerd",
-                "https://werd.io/profile/benwerd",
-                "https://werd.io/profile/benwerd"
-              ],
-              "photo": [
-                "https://werd.io/file/5d388c5fb16ea14aac640912/thumb.jpg"
-              ],
-              "name": [
-                "Ben Werdmuller"
-              ]
-            },
-            "value": "Ben Werdmuller"
-          }
-        ],
-        "name": [
-          "Love having to send an emergency internal security advisory about the main social network I've used for the last fifteen years."
-        ],
-        "content": [
-          {
-            "html": "Love having to send an emergency internal security advisory about the main social network I've used for the last fifteen years.",
-            "value": "Love having to send an emergency internal security advisory about the main social network I've used for the last fifteen years."
-          }
-        ],
-        "url": [
-          "https://werd.io/2022/love-having-to-send-an-emergency-internal"
-        ],
-        "published": [
-          "2022-11-10T19:25:44+00:00"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "author": [
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "url": [
-                "https://werd.io/profile/benwerd",
-                "https://werd.io/profile/benwerd",
-                "https://werd.io/profile/benwerd"
-              ],
-              "photo": [
-                "https://werd.io/file/5d388c5fb16ea14aac640912/thumb.jpg"
-              ],
-              "name": [
-                "Ben Werdmuller"
-              ]
-            },
-            "value": "Ben Werdmuller"
-          }
-        ],
-        "name": [
-          "Publishing for the privileged"
-        ],
-        "content": [
-          {
-            "html": "<p>Two service updates I’m interested in:</p>\n<p><a href=\"https://open.substack.com/pub/on/p/badge?utm_campaign=post&amp;utm_medium=web\">Substack has introduced a “bestseller” badge for its top-selling newsletters</a>, as a sign of quality. Newsletters on Substack don’t need to have paid tiers, but this badge is only given out to newsletters that have a lot of paid subscribers. The implication is that non-paid newsletters will experience FOMO - and potentially a drop in new subscribers because they don’t have the badge - and try to climb the ladder. It’s the first time that Substack, to my knowledge, has tied quality visibly to revenue.</p>\n<p><a href=\"https://help.twitter.com/en/using-twitter/twitter-blue\">Twitter has started selling its blue “verified” badge for $8 a month</a>, replacing the previous system that gave badges to notable individuals in order to protect them from impersonation and abuse. Twitter will also demote tweets from non-verified users, <a href=\"https://www.pcmag.com/news/elon-musk-tweets-from-unverified-users-will-be-treated-like-email-spam\">treating them like “email spam”</a>, effectively meaning that you’ll need to pay a minimum of $96 a year to get reach on the platform. Again, this ties revenue to quality: the only people worth being heard, according to Twitter’s new leadership, are people with money. Notably, the feature is only available on iOS in the “US, Canada, Australia, New Zealand, and the UK”, which fundamentally limits the global inclusivity, and therefore the value, of the platform. It’s an odd choice. Based on precedent from Musk, I expect it to be partially rolled-back on a whim, but it’s here for now.</p>\n<p>The danger with both plans is that only people with money can be heard. A Substack newsletter by someone with no existing following is unlikely to make it into the bestsellers list; therefore, people who already have privilege and power will find it cemented by the platform. And while $96 might not seem like a lot of money from an upper middle class American perspective, for most people in the world it’s an unjustifiable cost. Without mitigations, we’re likely to find ourselves in a world where voices from vulnerable populations remain underheard or even suppressed.</p>\n<p>That’s clearly a problem from an equity and inclusion standpoint - and therefore also in terms of reader experience. The narrower the context and demographics of the people who produce most visible content are, the more homogenous it becomes, and therefore the more <em>boring</em>. We all gain a lot by being exposed to people from contexts and backgrounds different to our own. Not only is building a platform that elevates diversity the right thing to do ethically, it builds a healthier community with more interesting conversations. It’s better all the way around.</p>\n<p>I think we’ll see the two platforms diverge in their approaches. Substack will quickly figure out that it needs to elevate different voices to continue to grow: audience diversification is key to it. Twitter, meanwhile, will probably not figure this out in a way that it can act on, not because there isn’t a way for it to be acted on, but because it seems to have lost all semblance of acting on a coherent strategy or mindset under Musk. Substack has some <a href=\"https://www.lawfareblog.com/substacks-curious-views-content-moderation\">real editorial ethics problems to contend with</a>, but it seems to be adept at the fundamentals of community growth.</p>\n<p>I also want to call out that <a href=\"https://medium.com/\">Medium</a> under Tony Stubblebine is <a href=\"https://blog.medium.com/hello-medium-readers-authors-editors-and-publishers-65bb728de2d8\">figuring out these problems</a> in a <a href=\"https://coachtony.medium.com/im-pretty-available-and-so-you-don-t-have-to-go-reading-into-vague-behavioral-signaling-90c61cc513df\">very thoughtful and transparent way</a>. As Tony points out in the last link, the quality bar is not up for debate; the question is, who’s in consideration to find an audience to begin with.</p>",
-            "value": "Two service updates I’m interested in:Substack has introduced a “bestseller” badge for its top-selling newsletters, as a sign of quality. Newsletters on Substack don’t need to have paid tiers, but this badge is only given out to newsletters that have a lot of paid subscribers. The implication is that non-paid newsletters will experience FOMO - and potentially a drop in new subscribers because they don’t have the badge - and try to climb the ladder. It’s the first time that Substack, to my knowledge, has tied quality visibly to revenue.Twitter has started selling its blue “verified” badge for $8 a month, replacing the previous system that gave badges to notable individuals in order to protect them from impersonation and abuse. Twitter will also demote tweets from non-verified users, treating them like “email spam”, effectively meaning that you’ll need to pay a minimum of $96 a year to get reach on the platform. Again, this ties revenue to quality: the only people worth being heard, according to Twitter’s new leadership, are people with money. Notably, the feature is only available on iOS in the “US, Canada, Australia, New Zealand, and the UK”, which fundamentally limits the global inclusivity, and therefore the value, of the platform. It’s an odd choice. Based on precedent from Musk, I expect it to be partially rolled-back on a whim, but it’s here for now.The danger with both plans is that only people with money can be heard. A Substack newsletter by someone with no existing following is unlikely to make it into the bestsellers list; therefore, people who already have privilege and power will find it cemented by the platform. And while $96 might not seem like a lot of money from an upper middle class American perspective, for most people in the world it’s an unjustifiable cost. Without mitigations, we’re likely to find ourselves in a world where voices from vulnerable populations remain underheard or even suppressed.That’s clearly a problem from an equity and inclusion standpoint - and therefore also in terms of reader experience. The narrower the context and demographics of the people who produce most visible content are, the more homogenous it becomes, and therefore the more boring. We all gain a lot by being exposed to people from contexts and backgrounds different to our own. Not only is building a platform that elevates diversity the right thing to do ethically, it builds a healthier community with more interesting conversations. It’s better all the way around.I think we’ll see the two platforms diverge in their approaches. Substack will quickly figure out that it needs to elevate different voices to continue to grow: audience diversification is key to it. Twitter, meanwhile, will probably not figure this out in a way that it can act on, not because there isn’t a way for it to be acted on, but because it seems to have lost all semblance of acting on a coherent strategy or mindset under Musk. Substack has some real editorial ethics problems to contend with, but it seems to be adept at the fundamentals of community growth.I also want to call out that Medium under Tony Stubblebine is figuring out these problems in a very thoughtful and transparent way. As Tony points out in the last link, the quality bar is not up for debate; the question is, who’s in consideration to find an audience to begin with."
-          }
-        ],
-        "url": [
-          "https://werd.io/2022/publishing-for-the-privileged"
-        ],
-        "published": [
-          "2022-11-10T18:23:17+00:00"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "author": [
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "url": [
-                "https://werd.io/profile/benwerd",
-                "https://werd.io/profile/benwerd",
-                "https://werd.io/profile/benwerd"
-              ],
-              "photo": [
-                "https://werd.io/file/5d388c5fb16ea14aac640912/thumb.jpg"
-              ],
-              "name": [
-                "Ben Werdmuller"
-              ]
-            },
-            "value": "Ben Werdmuller"
-          }
-        ],
-        "name": [
-          "My targeted ads are all email newsletter-based news startups. But I don’t see how a single one of them is differentiated. News isn’t absolved from the hard product work of listening to its community, gathering unique insights, and solving a real need."
-        ],
-        "content": [
-          {
-            "html": "My targeted ads are all email newsletter-based news startups. But I don’t see how a single one of them is differentiated. News isn’t absolved from the hard product work of listening to its community, gathering unique insights, and solving a real need.",
-            "value": "My targeted ads are all email newsletter-based news startups. But I don’t see how a single one of them is differentiated. News isn’t absolved from the hard product work of listening to its community, gathering unique insights, and solving a real need."
-          }
-        ],
-        "url": [
-          "https://werd.io/2022/my-targeted-ads-are-all-email-newsletter-based"
-        ],
-        "published": [
-          "2022-11-10T15:44:53+00:00"
-        ]
-      }
     }
   ],
   "rels": {
@@ -1183,9 +1190,14 @@
       "https://werd.io/micropub/endpoint"
     ],
     "canonical": [
-      "https://werd.io/2022/my-targeted-ads-are-all-email-newsletter-based"
+      "https://werd.io/2022/security-on-twitter"
     ],
     "permalink": [
+      "https://werd.io/2022/the-value-of-a-tool-is-not",
+      "https://werd.io/2022/moderation-on-mastodon-theres-a-lot-of-work-to-do",
+      "https://werd.io/2022/join-us-for-our-last-event-of",
+      "https://werd.io/2022/im-on-the-waitlist-and-im-interested",
+      "https://werd.io/2022/matt-mullenweg-has-reportedly-committed-to-add",
       "https://werd.io/2022/tweet-you-again-someday",
       "https://werd.io/2022/i-disabled-syndication-to-twitter-i-wont",
       "https://werd.io/2022/i-cant-imagine-the-horror-of-being",
@@ -1205,12 +1217,14 @@
       "https://werd.io/2022/at-this-point-its-worth-asking-how",
       "https://werd.io/2022/on-twitter-dms",
       "https://werd.io/2022/new-conspiracy-theory-hes-intentionally-tanking-the",
-      "https://werd.io/2022/security-on-twitter",
-      "https://werd.io/2022/nothing-that-promises-to-make-you-rich",
-      "https://werd.io/2022/if-twitters-looking-for-a-new-ceo",
-      "https://werd.io/2022/love-having-to-send-an-emergency-internal",
-      "https://werd.io/2022/publishing-for-the-privileged",
-      "https://werd.io/2022/my-targeted-ads-are-all-email-newsletter-based"
+      "https://werd.io/2022/security-on-twitter"
+    ],
+    "in-reply-to": [
+      "https://werd.social/@ben"
+    ],
+    "tag": [
+      "https://werd.io/tag/event",
+      "https://werd.io/tag/sustainability"
     ],
     "next": [
       "https://werd.io/profile/benwerd?offset=0"
@@ -1376,7 +1390,7 @@
         "micropub"
       ]
     },
-    "https://werd.io/2022/my-targeted-ads-are-all-email-newsletter-based": {
+    "https://werd.io/2022/security-on-twitter": {
       "rels": [
         "canonical"
       ]
@@ -1396,6 +1410,48 @@
       "rels": [
         "stylesheet"
       ]
+    },
+    "https://werd.io/2022/the-value-of-a-tool-is-not": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "\nNovember 22, 2022\n"
+    },
+    "https://werd.io/2022/moderation-on-mastodon-theres-a-lot-of-work-to-do": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "\nNovember 21, 2022\n"
+    },
+    "https://werd.io/tag/event": {
+      "rels": [
+        "tag"
+      ],
+      "text": "#event"
+    },
+    "https://werd.io/tag/sustainability": {
+      "rels": [
+        "tag"
+      ],
+      "text": "#sustainability"
+    },
+    "https://werd.io/2022/join-us-for-our-last-event-of": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "\nNovember 21, 2022\n"
+    },
+    "https://werd.io/2022/im-on-the-waitlist-and-im-interested": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "\nNovember 21, 2022\n"
+    },
+    "https://werd.io/2022/matt-mullenweg-has-reportedly-committed-to-add": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "\nNovember 21, 2022\n"
     },
     "https://werd.io/2022/tweet-you-again-someday": {
       "rels": [
@@ -1431,7 +1487,7 @@
       "rels": [
         "permalink"
       ],
-      "text": "\nNovember 19, 2022\n"
+      "text": "\nNovember 19, 2022\n "
     },
     "https://werd.io/2022/i-made-two-concrete-life-decisions-this": {
       "rels": [
@@ -1510,36 +1566,6 @@
         "permalink"
       ],
       "text": "\nNovember 11, 2022\n"
-    },
-    "https://werd.io/2022/security-on-twitter": {
-      "rels": [
-        "permalink"
-      ],
-      "text": "\nNovember 11, 2022\n"
-    },
-    "https://werd.io/2022/nothing-that-promises-to-make-you-rich": {
-      "rels": [
-        "permalink"
-      ],
-      "text": "\nNovember 11, 2022\n"
-    },
-    "https://werd.io/2022/if-twitters-looking-for-a-new-ceo": {
-      "rels": [
-        "permalink"
-      ],
-      "text": "\nNovember 10, 2022\n"
-    },
-    "https://werd.io/2022/love-having-to-send-an-emergency-internal": {
-      "rels": [
-        "permalink"
-      ],
-      "text": "\nNovember 10, 2022\n"
-    },
-    "https://werd.io/2022/publishing-for-the-privileged": {
-      "rels": [
-        "permalink"
-      ],
-      "text": "\nNovember 10, 2022\n"
     },
     "https://werd.io/profile/benwerd?offset=0": {
       "rels": [
