@@ -33,6 +33,158 @@
             "h-entry"
           ],
           "properties": {
+            "in-reply-to": [
+              {
+                "type": [
+                  "h-cite"
+                ],
+                "properties": {
+                  "author": [
+                    {
+                      "type": [
+                        "h-card"
+                      ],
+                      "properties": {
+                        "name": [
+                          "Henrique Dias"
+                        ]
+                      },
+                      "value": "https://hacdias.com/Henrique Dias"
+                    }
+                  ],
+                  "url": [
+                    "https://hacdias.com/2022/11/22/08h16m07s25"
+                  ],
+                  "content": [
+                    {
+                      "html": "Yesterday, I boosted (announced) a post on ActivityPub. It was automatically sent to the instance of the original post, as well as the instance of my remaining followers. Requests were successful. However, the boost only shows up in the instance of the original post. I have absolutely no clue why. W…",
+                      "value": "Yesterday, I boosted (announced) a post on ActivityPub. It was automatically sent to the instance of the original post, as well as the instance of my remaining followers. Requests were successful. However, the boost only shows up in the instance of the original post. I have absolutely no clue why. W…"
+                    }
+                  ],
+                  "name": [
+                    "Yesterday, I boosted (announced) a post on ActivityPub. It was automatically sent to the instance of the original post, as well as the instance of my remaining followers. Requests were successful. However, the boost only shows up in the instance of the original post. I have absolutely no clue why. W…"
+                  ]
+                },
+                "value": "https://hacdias.com/2022/11/22/08h16m07s25"
+              }
+            ],
+            "content": [
+              {
+                "html": "<p>Finally understood the problem. For Mastodon (and possibly Pleroma), a post ID is not always its URL. At least, not the URL the user usually sees. What I do now is: (1) fetch the URL from the post that I want to reply, boost or like; (2) then use that URL in the object field in the Activity I send to my followers. Seems to work successfully now.</p>",
+                "value": "Finally understood the problem. For Mastodon (and possibly Pleroma), a post ID is not always its URL. At least, not the URL the user usually sees. What I do now is: (1) fetch the URL from the post that I want to reply, boost or like; (2) then use that URL in the object field in the Activity I send to my followers. Seems to work successfully now."
+              }
+            ],
+            "location": [
+              {
+                "type": [
+                  "h-adr"
+                ],
+                "properties": {
+                  "locality": [
+                    "Eindhoven"
+                  ],
+                  "region": [
+                    "North Brabant"
+                  ],
+                  "country": [
+                    "Netherlands"
+                  ]
+                },
+                "value": "Eindhoven, North Brabant, Netherlands"
+              }
+            ],
+            "updated": [
+              "2022-11-22T23:28:21+01:00"
+            ],
+            "url": [
+              "https://hacdias.com/2022/11/22/23h02m39s99"
+            ],
+            "published": [
+              "2022-11-22T23:02:39+01:00"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "url": [
+                    "https://hacdias.com/"
+                  ],
+                  "name": [
+                    "Henrique Dias"
+                  ],
+                  "photo": [
+                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
+                  ]
+                },
+                "value": "https://hacdias.com/"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<p>Yesterday, I boosted (announced) a post on ActivityPub. It was automatically sent to the instance of the original post, as well as the instance of my remaining followers. Requests were successful. However, the boost only shows up in the instance of the original post. I have absolutely no clue why. What’s the point of boosts if this is how it behaves? Maybe there’s something very obvious that I’m missing. What is it though?</p>",
+                "value": "Yesterday, I boosted (announced) a post on ActivityPub. It was automatically sent to the instance of the original post, as well as the instance of my remaining followers. Requests were successful. However, the boost only shows up in the instance of the original post. I have absolutely no clue why. What’s the point of boosts if this is how it behaves? Maybe there’s something very obvious that I’m missing. What is it though?"
+              }
+            ],
+            "location": [
+              {
+                "type": [
+                  "h-adr"
+                ],
+                "properties": {
+                  "locality": [
+                    "Eindhoven"
+                  ],
+                  "region": [
+                    "North Brabant"
+                  ],
+                  "country": [
+                    "Netherlands"
+                  ]
+                },
+                "value": "Eindhoven, North Brabant, Netherlands"
+              }
+            ],
+            "published": [
+              "2022-11-22T08:16:07+01:00"
+            ],
+            "url": [
+              "https://hacdias.com/2022/11/22/08h16m07s25"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "url": [
+                    "https://hacdias.com/"
+                  ],
+                  "name": [
+                    "Henrique Dias"
+                  ],
+                  "photo": [
+                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
+                  ]
+                },
+                "value": "https://hacdias.com/"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
             "content": [
               {
                 "html": "<p>Today, we are trying to finish painting 🎨 the walls of the living room and kitchen. Everything else, except for one wall in the bedroom which will have a different colour, is painted. Unfortunately, I can’t help much today because I have to rest my foot due to a tendinitis, which has been a bummer. Got it in Italy but it takes a long time to recover and last week it got a bit worse. My parents are also traveling today to The Netherlands and it’s their first time going to a foreign country and second time flying. Well&amp;mldr; they have been to Spain next to the border but that doesn’t count. So I have to ensure that my foot is the most recovered as it can to show them around a bit over next week.</p>",
@@ -153,8 +305,8 @@
           "properties": {
             "content": [
               {
-                "html": "<p>Since everyone is moving to Mastodon and such, I decided to re-add experimental support for ActivityPub in this website. The implementation is based on my old ActivityPub implementation, but it is massively improved&amp;mldr; I think. There are still some things to do, but I feel like I will stick with it this time. However, if you want to help me test, follow me at @<span class=\"__cf_email__\" data-cfemail=\"3e565f5d5a575f4d7e565f5d5a575f4d105d5153\">[email protected]</span> 😜 You may still see my old profile from 2020 still lingering in some instances, but if you try following me, it should work.</p>",
-                "value": "Since everyone is moving to Mastodon and such, I decided to re-add experimental support for ActivityPub in this website. The implementation is based on my old ActivityPub implementation, but it is massively improved&mldr; I think. There are still some things to do, but I feel like I will stick with it this time. However, if you want to help me test, follow me at @[email protected] 😜 You may still see my old profile from 2020 still lingering in some instances, but if you try following me, it should work."
+                "html": "<p>Since everyone is moving to Mastodon and such, I decided to re-add experimental support for ActivityPub in this website. The implementation is based on my old ActivityPub implementation, but it is massively improved&amp;mldr; I think. There are still some things to do, but I feel like I will stick with it this time. However, if you want to help me test, follow me at @hacdias@hacdias.com 😜 You may still see my old profile from 2020 still lingering in some instances, but if you try following me, it should work.</p>",
+                "value": "Since everyone is moving to Mastodon and such, I decided to re-add experimental support for ActivityPub in this website. The implementation is based on my old ActivityPub implementation, but it is massively improved&mldr; I think. There are still some things to do, but I feel like I will stick with it this time. However, if you want to help me test, follow me at @hacdias@hacdias.com 😜 You may still see my old profile from 2020 still lingering in some instances, but if you try following me, it should work."
               }
             ],
             "location": [
@@ -493,123 +645,6 @@
               }
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "content": [
-              {
-                "html": "<p>In the spirit of what has been happening to Twitter, Max <a href=\"https://twitter.com/mxbck/status/1590809274808147990\" rel=\"noopener noreferrer\" target=\"_blank\">added</a> a verified checkmark to his personal website. Then, Jim <a href=\"https://blog.jim-nielsen.com/2022/verified-personal-website/\" rel=\"noopener noreferrer\" target=\"_blank\">followed</a> with the idea. Since I also found the idea quite funny, now I also got myself a verified checkmark 😂. And it costs less than having one on Twitter!</p>",
-                "value": "In the spirit of what has been happening to Twitter, Max added a verified checkmark to his personal website. Then, Jim followed with the idea. Since I also found the idea quite funny, now I also got myself a verified checkmark 😂. And it costs less than having one on Twitter!"
-              }
-            ],
-            "photo": [
-              "https://cdn.hacdias.com/img/2000/1858a747667c2d9b8c64ccac04679aae7c3caacabadcf172c44ceca288aaae7b.jpeg"
-            ],
-            "location": [
-              {
-                "type": [
-                  "h-adr"
-                ],
-                "properties": {
-                  "locality": [
-                    "Eindhoven"
-                  ],
-                  "region": [
-                    "North Brabant"
-                  ],
-                  "country": [
-                    "Netherlands"
-                  ]
-                },
-                "value": "Eindhoven, North Brabant, Netherlands"
-              }
-            ],
-            "published": [
-              "2022-11-14T11:41:03+01:00"
-            ],
-            "url": [
-              "https://hacdias.com/2022/11/14/verified-checkmark"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "url": [
-                    "https://hacdias.com/"
-                  ],
-                  "name": [
-                    "Henrique Dias"
-                  ],
-                  "photo": [
-                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
-                  ]
-                },
-                "value": "https://hacdias.com/"
-              }
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "content": [
-              {
-                "html": "<p>Today Wouter posted about <a href=\"https://brainbaking.com/post/2022/11/finding-stuff-on-big-blogs/\" rel=\"noopener noreferrer\" target=\"_blank\">Finding Stuff on Big Blogs</a>, which was quite an interesting read. I noticed that quite some people had a “on this day” page. It turns out, I already had it implemented 99% of the functionality to get it done. I just add to add 3 lines of code and now you can access <a href=\"https://hacdias.com/on-this-day\">/on-this-day</a> and you’ll see everything published on this day. And yes, “More” is just a glorified name for “Sitemap” 🤭</p>",
-                "value": "Today Wouter posted about Finding Stuff on Big Blogs, which was quite an interesting read. I noticed that quite some people had a “on this day” page. It turns out, I already had it implemented 99% of the functionality to get it done. I just add to add 3 lines of code and now you can access /on-this-day and you’ll see everything published on this day. And yes, “More” is just a glorified name for “Sitemap” 🤭"
-              }
-            ],
-            "location": [
-              {
-                "type": [
-                  "h-adr"
-                ],
-                "properties": {
-                  "locality": [
-                    "Eindhoven"
-                  ],
-                  "region": [
-                    "North Brabant"
-                  ],
-                  "country": [
-                    "Netherlands"
-                  ]
-                },
-                "value": "Eindhoven, North Brabant, Netherlands"
-              }
-            ],
-            "published": [
-              "2022-11-11T16:01:21+01:00"
-            ],
-            "url": [
-              "https://hacdias.com/2022/11/11/16h01m21s69"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "url": [
-                    "https://hacdias.com/"
-                  ],
-                  "name": [
-                    "Henrique Dias"
-                  ],
-                  "photo": [
-                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
-                  ]
-                },
-                "value": "https://hacdias.com/"
-              }
-            ]
-          }
         }
       ]
     }
@@ -663,28 +698,24 @@
       "https://webmention.io/hacdias.com/xmlrpc"
     ],
     "class=": [
-      "https://hacdias.com/cdn-cgi/l/email-protection#6508040c09250d0406010c04164b060a08"
+      "mailto:mail@hacdias.com"
     ],
     "me\"": [
-      "https://hacdias.com/cdn-cgi/l/email-protection#6508040c09250d0406010c04164b060a08"
+      "mailto:mail@hacdias.com"
     ],
     "noopener": [
+      "https://hacdias.com/2022/11/22/08h16m07s25",
       "https://seblog.nl/",
       "https://brainbaking.com/post/2022/11/the-great-mastodon-influx/",
       "https://jpassing.com/2021/11/30/using-pem-to-encode-public-keys/",
-      "https://twitter.com/mxbck/status/1590809274808147990",
-      "https://blog.jim-nielsen.com/2022/verified-personal-website/",
-      "https://brainbaking.com/post/2022/11/finding-stuff-on-big-blogs/",
       "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/previous",
       "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/next"
     ],
     "noreferrer": [
+      "https://hacdias.com/2022/11/22/08h16m07s25",
       "https://seblog.nl/",
       "https://brainbaking.com/post/2022/11/the-great-mastodon-influx/",
       "https://jpassing.com/2021/11/30/using-pem-to-encode-public-keys/",
-      "https://twitter.com/mxbck/status/1590809274808147990",
-      "https://blog.jim-nielsen.com/2022/verified-personal-website/",
-      "https://brainbaking.com/post/2022/11/finding-stuff-on-big-blogs/",
       "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/previous",
       "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/next"
     ]
@@ -809,12 +840,12 @@
         "pingback"
       ]
     },
-    "https://hacdias.com/cdn-cgi/l/email-protection#6508040c09250d0406010c04164b060a08": {
+    "https://hacdias.com/2022/11/22/08h16m07s25": {
       "rels": [
-        "class=",
-        "me\""
+        "noopener",
+        "noreferrer"
       ],
-      "text": "[email protected]"
+      "text": "22 Nov 2022"
     },
     "https://seblog.nl/": {
       "rels": [
@@ -836,27 +867,6 @@
         "noreferrer"
       ],
       "text": "a very nice post"
-    },
-    "https://twitter.com/mxbck/status/1590809274808147990": {
-      "rels": [
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "added"
-    },
-    "https://blog.jim-nielsen.com/2022/verified-personal-website/": {
-      "rels": [
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "followed"
-    },
-    "https://brainbaking.com/post/2022/11/finding-stuff-on-big-blogs/": {
-      "rels": [
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "Finding Stuff on Big Blogs"
     },
     "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/previous": {
       "rels": [

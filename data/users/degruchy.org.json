@@ -6,6 +6,17 @@
       ],
       "properties": {
         "name": [
+          "Tumblr to Add ActivityPub Support\n\t\t\t\t\t\t🔗\n\t\t\t\t\t\n\t\t\t\t\t13:09:05 on 2022-11-22\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\tTumblr to add support\n\t\t\t\t\tfor ActivityPub, the social protocol powering\n\t\t\t\t\tMastodon and other apps\n\t\t\t\t\tBy ActivityPub support, they (largely) mean\n\t\t\t\t\tfederating with systems like Mastodon. That means\n\t\t\t\t\tyou could (depending on how it's setup) post to\n\t\t\t\t\tthe Fediverse and get reactions and whatnot right\n\t\t\t\t\tfrom your Tumblog. THAT is a tempting\n\t\t\t\t\toffer."
+        ]
+      },
+      "id": "20221122-tumblr-to-add-activity-pub-support"
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
           "Package Install Without Use-Package\n\t\t\t\t\t\t🔗\n\t\t\t\t\t\n\t\t\t\t\t15:13:15 on 2022-11-20\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\tSo, one of the things I had to sort out when\n\t\t\t\t\tslimming down on the amount of external packages\n\t\t\t\t\tthat I use is to get things installed\n\t\t\t\t\twithout use-package. Typically, I\n\t\t\t\t\t\tused a form that looked a lot like this:\n\t\t\t\t\t\n\t\t\t\t\t\t\n(unless (package-installed-p 'package)\n\t(package-refresh-contents)\n\t(package-install 'package))\n\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\tFor a small amount of packages, this was fine,\n\t\t\t\t\teven if it was inefficient by refreshing the\n\t\t\t\t\tpackage contents for each instance of that. It was\n\t\t\t\t\t\tbarely a problem with 1 or 2 packages.\n\t\t\t\t\tOf course, there is a much more\n\t\t\t\t\tefficient manner, already built into Emacs, and\n\t\t\t\t\tmuch easier to implement:\n\t\t\t\t\t\n\t\t\t\t\t\t\n(setq package-selected-packages '(ef-themes emms))\n(package-install-selected-packages)\n\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\tYeah. So, just make a list of package names you\n\t\t\t\t\twant to install and uh, tell it to do that. No\n\t\t\t\t\tmultiple refreshes, just here's what I want, go do\n\t\t\t\t\tthat. Magic."
         ]
       },
@@ -228,6 +239,7 @@
       "https://degruchy.org/feed.xml"
     ],
     "nofollow": [
+      "https://techcrunch.com/2022/11/21/tumblr-to-add-support-for-activitypub-the-social-protocol-powering-mastodon-and-other-apps/",
       "https://arstechnica.com/tech-policy/2022/10/elon-musk-completes-twitter-purchase-immediately-fires-ceo-and-other-execs/",
       "https://mindustrygame.github.io/",
       "https://fosstodon.org/",
@@ -271,6 +283,12 @@
       ],
       "title": "Atom Feed",
       "type": "application/atom+xml"
+    },
+    "https://techcrunch.com/2022/11/21/tumblr-to-add-support-for-activitypub-the-social-protocol-powering-mastodon-and-other-apps/": {
+      "rels": [
+        "nofollow"
+      ],
+      "text": "Tumblr to add support\n\t\t\t\t\tfor ActivityPub, the social protocol powering\n\t\t\t\t\tMastodon and other apps"
     },
     "https://arstechnica.com/tech-policy/2022/10/elon-musk-completes-twitter-purchase-immediately-fires-ceo-and-other-execs/": {
       "rels": [

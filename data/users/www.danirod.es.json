@@ -1,29 +1,131 @@
 {
   "items": [],
   "rels": {
+    "dns-prefetch": [
+      "https://static.danirod.es/"
+    ],
+    "alternate": [
+      "https://danirod.es/feed/",
+      "https://danirod.es/comments/feed/",
+      "https://danirod.es/wp-json/wp/v2/pages/1616",
+      "https://danirod.es/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdanirod.es%2F",
+      "https://danirod.es/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdanirod.es%2F&format=xml"
+    ],
     "stylesheet": [
-      "https://fonts.googleapis.com/css?family=Anton|Anton|PT+Sans|Pacifico|PT+Sans",
-      "https://danirod.es/wp-content/plugins/wp-maintenance/themes/default/css/knacss.css",
-      "https://danirod.es/wp-content/plugins/wp-maintenance/themes/default/css/styles.css"
+      "https://danirod.es/wp-includes/blocks/navigation/style.min.css?ver=6.1.1",
+      "https://danirod.es/wp-includes/blocks/social-links/style.min.css?ver=6.1.1"
+    ],
+    "https://api.w.org/": [
+      "https://danirod.es/wp-json/"
+    ],
+    "EditURI": [
+      "https://danirod.es/xmlrpc.php?rsd"
+    ],
+    "wlwmanifest": [
+      "https://danirod.es/wp-includes/wlwmanifest.xml"
+    ],
+    "canonical": [
+      "https://danirod.es/"
+    ],
+    "shortlink": [
+      "https://danirod.es/"
+    ],
+    "icon": [
+      "https://static.danirod.es/2020/09/32x32.png"
+    ],
+    "apple-touch-icon": [
+      "https://static.danirod.es/2020/09/32x32.png"
+    ],
+    "home": [
+      "https://danirod.es/"
+    ],
+    "nofollow": [
+      "https://es.wordpress.org/"
     ]
   },
   "rel-urls": {
-    "https://fonts.googleapis.com/css?family=Anton|Anton|PT+Sans|Pacifico|PT+Sans": {
+    "https://static.danirod.es/": {
       "rels": [
-        "stylesheet"
+        "dns-prefetch"
       ]
     },
-    "https://danirod.es/wp-content/plugins/wp-maintenance/themes/default/css/knacss.css": {
+    "https://danirod.es/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Dani Rodríguez » Feed",
+      "type": "application/rss+xml"
+    },
+    "https://danirod.es/comments/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Dani Rodríguez » Feed de los comentarios",
+      "type": "application/rss+xml"
+    },
+    "https://danirod.es/wp-includes/blocks/navigation/style.min.css?ver=6.1.1": {
       "rels": [
         "stylesheet"
       ],
       "media": "all"
     },
-    "https://danirod.es/wp-content/plugins/wp-maintenance/themes/default/css/styles.css": {
+    "https://danirod.es/wp-includes/blocks/social-links/style.min.css?ver=6.1.1": {
       "rels": [
         "stylesheet"
       ],
       "media": "all"
+    },
+    "https://danirod.es/wp-json/": {
+      "rels": [
+        "https://api.w.org/"
+      ]
+    },
+    "https://danirod.es/wp-json/wp/v2/pages/1616": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/json"
+    },
+    "https://danirod.es/xmlrpc.php?rsd": {
+      "rels": [
+        "EditURI"
+      ],
+      "title": "RSD",
+      "type": "application/rsd+xml"
+    },
+    "https://danirod.es/wp-includes/wlwmanifest.xml": {
+      "rels": [
+        "wlwmanifest"
+      ],
+      "type": "application/wlwmanifest+xml"
+    },
+    "https://danirod.es/": {
+      "rels": [
+        "canonical"
+      ]
+    },
+    "https://danirod.es/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdanirod.es%2F": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/json+oembed"
+    },
+    "https://danirod.es/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdanirod.es%2F&format=xml": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "text/xml+oembed"
+    },
+    "https://static.danirod.es/2020/09/32x32.png": {
+      "rels": [
+        "icon"
+      ]
+    },
+    "https://es.wordpress.org/": {
+      "rels": [
+        "nofollow"
+      ],
+      "text": "WordPress"
     }
   }
 }
