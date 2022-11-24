@@ -1,33 +1,7 @@
 {
   "items": [],
   "rels": {
-    "me": [
-      "https://mastodon.social/@drikkes",
-      "https://github.com/drikkes",
-      "https://twitter.com/drikkes",
-      "https://micro.blog/drikkes",
-      "https://mastodon.social/web/@drikkes",
-      "https://wordsmith.social/drikkes/",
-      "https://www.reddit.com/user/drikkes",
-      "https://www.are.na/drik-s",
-      "mailto:hendrikspree@gmail.com"
-    ],
-    "profile": [
-      "http://gmpg.org/xfn/11"
-    ],
-    "pingback": [
-      "https://drikkes.com/xmlrpc.php"
-    ],
-    "alternate": [
-      "http://drikkes.com/?feed=atom",
-      "https://drikkes.com/?feed=rss2",
-      "https://drikkes.com/?feed=comments-rss2",
-      "https://drikkes.com/index.php?rest_route=/wp/v2/pages/16668",
-      "https://drikkes.com/index.php?rest_route=%2Foembed%2F1.0%2Fembed&url=https%3A%2F%2Fdrikkes.com%2F",
-      "https://drikkes.com/index.php?rest_route=%2Foembed%2F1.0%2Fembed&url=https%3A%2F%2Fdrikkes.com%2F&format=xml"
-    ],
     "dns-prefetch": [
-      "https://fonts.googleapis.com/",
       "https://i0.wp.com/",
       "https://c0.wp.com/",
       "https://jetpack.wordpress.com/",
@@ -37,16 +11,19 @@
       "https://1.gravatar.com/",
       "https://2.gravatar.com/"
     ],
+    "alternate": [
+      "https://drikkes.com/?feed=rss2",
+      "https://drikkes.com/?feed=comments-rss2",
+      "https://drikkes.com/index.php?rest_route=/wp/v2/pages/16668",
+      "https://drikkes.com/index.php?rest_route=%2Foembed%2F1.0%2Fembed&url=https%3A%2F%2Fdrikkes.com%2F",
+      "https://drikkes.com/index.php?rest_route=%2Foembed%2F1.0%2Fembed&url=https%3A%2F%2Fdrikkes.com%2F&format=xml"
+    ],
     "stylesheet": [
-      "https://c0.wp.com/c/6.1.1/wp-includes/css/dist/block-library/style.min.css",
-      "https://c0.wp.com/c/6.1.1/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css",
-      "https://c0.wp.com/c/6.1.1/wp-includes/js/mediaelement/wp-mediaelement.min.css",
-      "https://c0.wp.com/c/6.1.1/wp-includes/css/classic-themes.min.css",
+      "https://c0.wp.com/c/6.1.1/wp-includes/blocks/navigation/style.min.css",
       "https://drikkes.com/wp-content/plugins/indieweb/static/css/indieweb-bw.css?ver=3.4.7",
       "https://drikkes.com/wp-content/plugins/indieweb-post-kinds/css/kind.min.css?ver=3.6.2",
       "https://drikkes.com/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3",
-      "https://drikkes.com/wp-content/themes/iA4/style.css?ver=6.1.1",
-      "https://fonts.googleapis.com/css?family=Merriweather%3A400italic%2C400%2C300italic%2C300%2C700%2C700italic&subset=latin%2Clatin-ext",
+      "https://drikkes.com/wp-content/themes/loudness/style.css?ver=1.0.5",
       "https://drikkes.com/wp-content/plugins/syndication-links/css/syn-bw.min.css?ver=4.3.12",
       "https://c0.wp.com/p/jetpack/11.5.1/css/jetpack.css"
     ],
@@ -71,6 +48,15 @@
     "token_endpoint": [
       "https://drikkes.com/index.php?rest_route=/indieauth/1.0/token"
     ],
+    "me": [
+      "https://github.com/drikkes",
+      "https://twitter.com/drikkes",
+      "https://micro.blog/drikkes",
+      "https://mastodon.social/web/@drikkes",
+      "https://wordsmith.social/drikkes/",
+      "https://www.reddit.com/user/drikkes",
+      "https://www.are.na/drik-s"
+    ],
     "icon": [
       "https://i0.wp.com/drikkes.com/wp-content/uploads/2019/03/cropped-IMG_1949.png?fit=32%2C32&ssl=1",
       "https://i0.wp.com/drikkes.com/wp-content/uploads/2019/03/cropped-IMG_1949.png?fit=192%2C192&ssl=1"
@@ -92,33 +78,6 @@
     ]
   },
   "rel-urls": {
-    "https://mastodon.social/@drikkes": {
-      "rels": [
-        "me"
-      ],
-      "text": "_"
-    },
-    "http://gmpg.org/xfn/11": {
-      "rels": [
-        "profile"
-      ]
-    },
-    "https://drikkes.com/xmlrpc.php": {
-      "rels": [
-        "pingback"
-      ]
-    },
-    "http://drikkes.com/?feed=atom": {
-      "rels": [
-        "alternate"
-      ],
-      "type": "application/atom+xml"
-    },
-    "https://fonts.googleapis.com/": {
-      "rels": [
-        "dns-prefetch"
-      ]
-    },
     "https://i0.wp.com/": {
       "rels": [
         "dns-prefetch"
@@ -173,82 +132,47 @@
       "title": "Hendrik Spree » Kommentar-Feed",
       "type": "application/rss+xml"
     },
-    "https://c0.wp.com/c/6.1.1/wp-includes/css/dist/block-library/style.min.css": {
+    "https://c0.wp.com/c/6.1.1/wp-includes/blocks/navigation/style.min.css": {
       "rels": [
         "stylesheet"
       ],
-      "media": "all",
-      "type": "text/css"
-    },
-    "https://c0.wp.com/c/6.1.1/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "all",
-      "type": "text/css"
-    },
-    "https://c0.wp.com/c/6.1.1/wp-includes/js/mediaelement/wp-mediaelement.min.css": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "all",
-      "type": "text/css"
-    },
-    "https://c0.wp.com/c/6.1.1/wp-includes/css/classic-themes.min.css": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "all",
-      "type": "text/css"
+      "media": "all"
     },
     "https://drikkes.com/wp-content/plugins/indieweb/static/css/indieweb-bw.css?ver=3.4.7": {
       "rels": [
         "stylesheet"
       ],
-      "media": "all",
-      "type": "text/css"
+      "media": "all"
     },
     "https://drikkes.com/wp-content/plugins/indieweb-post-kinds/css/kind.min.css?ver=3.6.2": {
       "rels": [
         "stylesheet"
       ],
-      "media": "all",
-      "type": "text/css"
+      "media": "all"
     },
     "https://drikkes.com/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3": {
       "rels": [
         "stylesheet"
       ],
-      "media": "all",
-      "type": "text/css"
+      "media": "all"
     },
-    "https://drikkes.com/wp-content/themes/iA4/style.css?ver=6.1.1": {
+    "https://drikkes.com/wp-content/themes/loudness/style.css?ver=1.0.5": {
       "rels": [
         "stylesheet"
       ],
-      "media": "all",
-      "type": "text/css"
-    },
-    "https://fonts.googleapis.com/css?family=Merriweather%3A400italic%2C400%2C300italic%2C300%2C700%2C700italic&subset=latin%2Clatin-ext": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "all",
-      "type": "text/css"
+      "media": "all"
     },
     "https://drikkes.com/wp-content/plugins/syndication-links/css/syn-bw.min.css?ver=4.3.12": {
       "rels": [
         "stylesheet"
       ],
-      "media": "all",
-      "type": "text/css"
+      "media": "all"
     },
     "https://c0.wp.com/p/jetpack/11.5.1/css/jetpack.css": {
       "rels": [
         "stylesheet"
       ],
-      "media": "all",
-      "type": "text/css"
+      "media": "all"
     },
     "https://drikkes.com/index.php?rest_route=/": {
       "rels": [
@@ -366,12 +290,6 @@
         "noopener"
       ],
       "text": "Lebenslauf"
-    },
-    "mailto:hendrikspree@gmail.com": {
-      "rels": [
-        "me"
-      ],
-      "text": "Mail"
     }
   }
 }

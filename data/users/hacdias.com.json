@@ -33,6 +33,67 @@
             "h-entry"
           ],
           "properties": {
+            "content": [
+              {
+                "html": "<style>.grid-09h07m14s20{grid-template-columns:repeat(2,1fr)}</style>\n<p>My university has this thing called “Alumni Avenue”. It’s one of the air bridges between buildings, but this one is special. On this one, old masters students can engrave their names in the glass. On Monday, it was my turn, right before the graduation ceremony. It was quite an intriguing experience: I’ve never engraved anything in glass, so it took quite some time to make sure it was clear and visible 😅 There’s some pictures from the graduation, which I will post once I have access to them!</p>",
+                "value": "My university has this thing called “Alumni Avenue”. It’s one of the air bridges between buildings, but this one is special. On this one, old masters students can engrave their names in the glass. On Monday, it was my turn, right before the graduation ceremony. It was quite an intriguing experience: I’ve never engraved anything in glass, so it took quite some time to make sure it was clear and visible 😅 There’s some pictures from the graduation, which I will post once I have access to them!"
+              }
+            ],
+            "photo": [
+              "https://cdn.hacdias.com/img/2000/458b464c438f63713288bc36fb08b9e60d8a7a3497924b4e41362cca7376f9f8.jpeg",
+              "https://cdn.hacdias.com/img/2000/c45177091ab660ec4cb9e03f1db751fd8ae3831e66ceedeb7d625fb9d2720229.jpeg"
+            ],
+            "location": [
+              {
+                "type": [
+                  "h-adr"
+                ],
+                "properties": {
+                  "locality": [
+                    "Eindhoven"
+                  ],
+                  "region": [
+                    "North Brabant"
+                  ],
+                  "country": [
+                    "Netherlands"
+                  ]
+                },
+                "value": "Eindhoven, North Brabant, Netherlands"
+              }
+            ],
+            "published": [
+              "2022-11-23T09:07:14+01:00"
+            ],
+            "url": [
+              "https://hacdias.com/2022/11/23/09h07m14s20"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "url": [
+                    "https://hacdias.com/"
+                  ],
+                  "name": [
+                    "Henrique Dias"
+                  ],
+                  "photo": [
+                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
+                  ]
+                },
+                "value": "https://hacdias.com/"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
             "in-reply-to": [
               {
                 "type": [
@@ -603,48 +664,6 @@
               }
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "content": [
-              {
-                "html": "<p><abbr title=\"Today I learned\">TIL</abbr> that the name of the PEM block of encoded public keys matters. I had a key that was using a block name <code>PUBLIC KEY</code>, where it should’ve been <code>RSA PUBLIC KEY</code>. Therefore, the client was rejecting the key as it was decoding it using the incorrect format. Here’s <a href=\"https://jpassing.com/2021/11/30/using-pem-to-encode-public-keys/\" rel=\"noopener noreferrer\" target=\"_blank\">a very nice post</a> about this.</p>",
-                "value": "TIL that the name of the PEM block of encoded public keys matters. I had a key that was using a block name PUBLIC KEY, where it should’ve been RSA PUBLIC KEY. Therefore, the client was rejecting the key as it was decoding it using the incorrect format. Here’s a very nice post about this."
-              }
-            ],
-            "published": [
-              "2022-11-15T19:23:33+01:00"
-            ],
-            "url": [
-              "https://hacdias.com/2022/11/15/19h23m33s63"
-            ],
-            "category": [
-              "cryptography",
-              "security"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "url": [
-                    "https://hacdias.com/"
-                  ],
-                  "name": [
-                    "Henrique Dias"
-                  ],
-                  "photo": [
-                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
-                  ]
-                },
-                "value": "https://hacdias.com/"
-              }
-            ]
-          }
         }
       ]
     }
@@ -662,7 +681,7 @@
       "https://hacdias.com/.rss"
     ],
     "stylesheet": [
-      "https://hacdias.com/assets/e817a2fb60e430a3f542e626320945af8f67f970ac44de14b8c0f516bf9e6908.css"
+      "https://hacdias.com/assets/efcd9c762ac3cf4db74968e36cbfd56cee2f5fa0509666226d7f10e4945c417a.css"
     ],
     "indieauth-metadata": [
       "https://hacdias.com/.well-known/oauth-authorization-server"
@@ -707,7 +726,6 @@
       "https://hacdias.com/2022/11/22/08h16m07s25",
       "https://seblog.nl/",
       "https://brainbaking.com/post/2022/11/the-great-mastodon-influx/",
-      "https://jpassing.com/2021/11/30/using-pem-to-encode-public-keys/",
       "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/previous",
       "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/next"
     ],
@@ -715,7 +733,6 @@
       "https://hacdias.com/2022/11/22/08h16m07s25",
       "https://seblog.nl/",
       "https://brainbaking.com/post/2022/11/the-great-mastodon-influx/",
-      "https://jpassing.com/2021/11/30/using-pem-to-encode-public-keys/",
       "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/previous",
       "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/next"
     ]
@@ -750,7 +767,7 @@
       ],
       "type": "application/rss+xml"
     },
-    "https://hacdias.com/assets/e817a2fb60e430a3f542e626320945af8f67f970ac44de14b8c0f516bf9e6908.css": {
+    "https://hacdias.com/assets/efcd9c762ac3cf4db74968e36cbfd56cee2f5fa0509666226d7f10e4945c417a.css": {
       "rels": [
         "stylesheet"
       ]
@@ -860,13 +877,6 @@
         "noreferrer"
       ],
       "text": "“The Great Mastodon Influx”"
-    },
-    "https://jpassing.com/2021/11/30/using-pem-to-encode-public-keys/": {
-      "rels": [
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "a very nice post"
     },
     "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/previous": {
       "rels": [

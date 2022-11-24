@@ -12,7 +12,9 @@
       "https://www.paulmeyers.ca/wp-includes/css/classic-themes.min.css?ver=1",
       "https://www.paulmeyers.ca/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.6.4",
       "https://www.paulmeyers.ca/wp-content/themes/twentytwenty/style.css?ver=2.1",
-      "https://www.paulmeyers.ca/wp-content/themes/twentytwenty/print.css?ver=2.1"
+      "https://www.paulmeyers.ca/wp-content/themes/twentytwenty/print.css?ver=2.1",
+      "https://www.paulmeyers.ca/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17",
+      "https://www.paulmeyers.ca/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.1.1"
     ],
     "https://api.w.org/": [
       "https://www.paulmeyers.ca/wp-json/"
@@ -24,14 +26,17 @@
       "https://www.paulmeyers.ca/wp-includes/wlwmanifest.xml"
     ],
     "category": [
+      "https://www.paulmeyers.ca/category/seo/",
       "https://www.paulmeyers.ca/category/crm/",
       "https://www.paulmeyers.ca/category/business-owners/",
       "https://www.paulmeyers.ca/category/contractor-marketing/",
       "https://www.paulmeyers.ca/category/leads/",
-      "https://www.paulmeyers.ca/category/digital-marketing-tips/",
-      "https://www.paulmeyers.ca/category/seo/"
+      "https://www.paulmeyers.ca/category/digital-marketing-tips/"
     ],
     "tag": [
+      "https://www.paulmeyers.ca/category/seo/",
+      "https://www.paulmeyers.ca/tag/local-citations/",
+      "https://www.paulmeyers.ca/tag/seo/",
       "https://www.paulmeyers.ca/category/crm/",
       "https://www.paulmeyers.ca/tag/crm/",
       "https://www.paulmeyers.ca/tag/customer-relationship-management-tool/",
@@ -47,9 +52,7 @@
       "https://www.paulmeyers.ca/tag/website/",
       "https://www.paulmeyers.ca/tag/saas/",
       "https://www.paulmeyers.ca/tag/search-engine-optimization/",
-      "https://www.paulmeyers.ca/tag/seo/",
       "https://www.paulmeyers.ca/tag/seo-north-bay/",
-      "https://www.paulmeyers.ca/category/seo/",
       "https://www.paulmeyers.ca/tag/business-owners/"
     ],
     "nofollow": [
@@ -123,6 +126,25 @@
         "wlwmanifest"
       ],
       "type": "application/wlwmanifest+xml"
+    },
+    "https://www.paulmeyers.ca/category/seo/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "SEO"
+    },
+    "https://www.paulmeyers.ca/tag/local-citations/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "local citations"
+    },
+    "https://www.paulmeyers.ca/tag/seo/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "SEO"
     },
     "https://www.paulmeyers.ca/category/crm/": {
       "rels": [
@@ -245,30 +267,29 @@
       ],
       "text": "Search Engine Optimization"
     },
-    "https://www.paulmeyers.ca/tag/seo/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "SEO"
-    },
     "https://www.paulmeyers.ca/tag/seo-north-bay/": {
       "rels": [
         "tag"
       ],
       "text": "seo north bay"
     },
-    "https://www.paulmeyers.ca/category/seo/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "SEO"
-    },
     "https://www.paulmeyers.ca/tag/business-owners/": {
       "rels": [
         "tag"
       ],
       "text": "business owners"
+    },
+    "https://www.paulmeyers.ca/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://www.paulmeyers.ca/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.1.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
     }
   }
 }
