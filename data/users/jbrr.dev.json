@@ -1,5 +1,56 @@
 {
-  "items": [],
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "name": [
+          "Jeff Ruane"
+        ],
+        "given-name": [
+          "Jeff"
+        ],
+        "family-name": [
+          "Ruane"
+        ],
+        "nickname": [
+          "jbrr"
+        ],
+        "photo": [
+          {
+            "value": "https://jbrr.dev/jbrr-512x518px.jpg",
+            "alt": "Photo of Jeff Ruane"
+          }
+        ],
+        "email": [
+          "mailto:yo@jbrr.dev"
+        ],
+        "url": [
+          "https://jbrr.dev/"
+        ],
+        "adr": [
+          {
+            "type": [
+              "h-adr"
+            ],
+            "properties": {
+              "locality": [
+                "Denver"
+              ],
+              "region": [
+                "Colorado"
+              ],
+              "country-name": [
+                "United States of America"
+              ]
+            },
+            "value": "Denver\nCO,\nUnited States of America"
+          }
+        ]
+      }
+    }
+  ],
   "rels": {
     "icon": [
       "https://jbrr.dev/favicon.ico"
@@ -9,6 +60,17 @@
     ],
     "alternate": [
       "https://jbrr.dev/index.xml"
+    ],
+    "me": [
+      "https://twitter.com/jefbrr",
+      "https://github.com/jbrr",
+      "https://mastodon.sdf.org/@jbrr"
+    ],
+    "webmention": [
+      "https://webmention.io/jbrr.dev/webmention"
+    ],
+    "pingback": [
+      "https://webmention.io/jbrr.dev/xmlrpc"
     ]
   },
   "rel-urls": {
@@ -24,6 +86,34 @@
       ],
       "title": "Jeff Ruane",
       "type": "application/rss+xml"
+    },
+    "https://twitter.com/jefbrr": {
+      "rels": [
+        "me"
+      ],
+      "text": "@jefbrr on Twitter"
+    },
+    "https://github.com/jbrr": {
+      "rels": [
+        "me"
+      ],
+      "text": "Github"
+    },
+    "https://mastodon.sdf.org/@jbrr": {
+      "rels": [
+        "me"
+      ],
+      "text": "Mastodon"
+    },
+    "https://webmention.io/jbrr.dev/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://webmention.io/jbrr.dev/xmlrpc": {
+      "rels": [
+        "pingback"
+      ]
     }
   }
 }

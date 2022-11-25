@@ -63,6 +63,12 @@
     "micropub": [
       "https://micropub.gweezlebur.com/.netlify/functions/micropub"
     ],
+    "webmention": [
+      "https://webmention.io/gweezlebur.com/webmention"
+    ],
+    "pingback": [
+      "https://webmention.io/gweezlebur.com/xmlrpc"
+    ],
     "me": [
       "mailto:ivey@gweezlebur.com",
       "https://tilde.zone/@ivey",
@@ -125,6 +131,16 @@
     "https://micropub.gweezlebur.com/.netlify/functions/micropub": {
       "rels": [
         "micropub"
+      ]
+    },
+    "https://webmention.io/gweezlebur.com/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://webmention.io/gweezlebur.com/xmlrpc": {
+      "rels": [
+        "pingback"
       ]
     },
     "mailto:ivey@gweezlebur.com": {

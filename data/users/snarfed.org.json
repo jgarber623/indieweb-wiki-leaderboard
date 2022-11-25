@@ -53,6 +53,60 @@
               ""
             ],
             "url": [
+              "https://snarfed.org/2022-11-24_48058"
+            ],
+            "published": [
+              "2022-11-24T11:53:49-08:00"
+            ],
+            "syndication": [
+              "https://twitter.com/schnarfed/status/1595868519203483648",
+              "https://fed.brid.gy/",
+              "https://twitter.com/schnarfed/status/1595868519203483648",
+              "https://fed.brid.gy/"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "photo": [
+                    {
+                      "value": "https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=96&d=blank&r=g",
+                      "srcset": {
+                        "2x": "https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=192&d=blank&r=g"
+                      },
+                      "alt": ""
+                    }
+                  ],
+                  "url": [
+                    "https://snarfed.org/"
+                  ],
+                  "name": [
+                    "Ryan Barrett"
+                  ]
+                },
+                "value": "Ryan Barrett"
+              }
+            ],
+            "content": [
+              {
+                "html": "<div class=\"wp-block-jetpack-markdown\">\n<blockquote>\n<p>A rocket scientist responsible for calculating propulsion capacity approached a software engineer. The rocket scientist wanted to calculate the effect of all that software on the mass of the system. The software engineer didn’t understand; was he asking about the weight of the computers? No, the computers’ weight was already accounted for. Then what was the problem?<br>\n\"Well, you guys are using hundreds of thousands of lines of software in this moon shot, right?\"<br>\n\"Right,\" said the software engineer.<br>\n\"Well,\" asked the rocket scientist, \"how much does all that stuff weigh?\"<br>\nThe reply: \"…Nothing!\"</p>\n</blockquote>\n</div>\n<div class=\"wp-block-jetpack-markdown\">\n<p>– <a href=\"https://www.google.com/books/edition/Software_as_Capital/K7JQAAAAMAAJ\">Howard Baetjer Jr., <em>Software as Capital</em></a>. \"This story was told to me in a personal conversation with Robert Polutchko of Martin Marietta Corporation.\"</p>\n</div>",
+                "value": "A rocket scientist responsible for calculating propulsion capacity approached a software engineer. The rocket scientist wanted to calculate the effect of all that software on the mass of the system. The software engineer didn’t understand; was he asking about the weight of the computers? No, the computers’ weight was already accounted for. Then what was the problem?\n\"Well, you guys are using hundreds of thousands of lines of software in this moon shot, right?\"\n\"Right,\" said the software engineer.\n\"Well,\" asked the rocket scientist, \"how much does all that stuff weigh?\"\nThe reply: \"…Nothing!\"\n\n\n\n– Howard Baetjer Jr., Software as Capital. \"This story was told to me in a personal conversation with Robert Polutchko of Martin Marietta Corporation.\""
+              }
+            ]
+          },
+          "id": "post-48058"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              ""
+            ],
+            "url": [
               "https://snarfed.org/2022-11-19_47987"
             ],
             "published": [
@@ -521,58 +575,6 @@
             ]
           },
           "id": "post-47645"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Micropub for Bridgy Publish"
-            ],
-            "url": [
-              "https://snarfed.org/2022-10-07_micropub-for-bridgy-publish"
-            ],
-            "published": [
-              "2022-10-07T22:05:58-07:00"
-            ],
-            "syndication": [
-              "https://news.indieweb.org/en",
-              "https://news.indieweb.org/en"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "photo": [
-                    {
-                      "value": "https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=96&d=blank&r=g",
-                      "srcset": {
-                        "2x": "https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=192&d=blank&r=g"
-                      },
-                      "alt": ""
-                    }
-                  ],
-                  "url": [
-                    "https://snarfed.org/"
-                  ],
-                  "name": [
-                    "Ryan Barrett"
-                  ]
-                },
-                "value": "Ryan Barrett"
-              }
-            ],
-            "content": [
-              {
-                "html": "<p class=\"right third\"><a href=\"https://brid.gy/\">\n<img decoding=\"async\" src=\"https://snarfed.org/bridgy_logo.png\" data-lazy-src=\"/bridgy_logo.png?is-pending-load=1\" srcset=\"data:image/gif;base64, https://snarfed.org/R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" class=\" jetpack-lazy-image\"><noscript><img data-lazy-fallback=\"1\" decoding=\"async\" src=\"https://snarfed.org/bridgy_logo.png\"></noscript></a></p>\n<p>I’ve added a significant new <a href=\"https://brid.gy/about#publishing\">Bridgy Publish</a> feature: <a href=\"https://brid.gy/about#micropub\">Micropub support</a>! Up until now, Bridgy Publish offered two ways to post to silos: interactively from user pages and via <a href=\"https://brid.gy/about#webmentions\">webmention trigger</a>. Now there’s a third way: <a href=\"https://micropub.net/\">Micropub</a>.</p>\n<p>You can now connect a Micropub client to Bridgy and use it to publish posts to <a href=\"https://brid.gy/about#publish-types\">any supported silo</a>. Bridgy publishes the exact contents of the Micropub request; it doesn’t depend on or use any original post on your web site. Otherwise, it <a href=\"https://brid.gy/about#microformats\">behaves exactly the same as normal Bridgy Publish, and supports the exact same microformats2 input</a>. It just gets that input from the Micropub request, not from a post on your site.</p>\n<p>To use it, go to your Bridgy user page for a given silo, click the <em>Get token</em> button, and copy and paste the token into your Micropub token. Bridgy’s Micropub endpoint is <code>https://brid.gy/micropub</code>; it supports create and delete and photo/video URLs but not update or file upload. (It doesn’t directly require an original post on your web site, but we expect that will still be the common case, and photos and videos will generally already be online.)</p>\n<p>Feel free to try it out, <a href=\"https://github.com/snarfed/bridgy/issues\">let us know what you think</a>, and happy hacking!</p>",
-                "value": "https://snarfed.org/bridgy_logo.png  https://snarfed.org/bridgy_logo.png \nI’ve added a significant new Bridgy Publish feature: Micropub support! Up until now, Bridgy Publish offered two ways to post to silos: interactively from user pages and via webmention trigger. Now there’s a third way: Micropub.\nYou can now connect a Micropub client to Bridgy and use it to publish posts to any supported silo. Bridgy publishes the exact contents of the Micropub request; it doesn’t depend on or use any original post on your web site. Otherwise, it behaves exactly the same as normal Bridgy Publish, and supports the exact same microformats2 input. It just gets that input from the Micropub request, not from a post on your site.\nTo use it, go to your Bridgy user page for a given silo, click the Get token button, and copy and paste the token into your Micropub token. Bridgy’s Micropub endpoint is https://brid.gy/micropub; it supports create and delete and photo/video URLs but not update or file upload. (It doesn’t directly require an original post on your web site, but we expect that will still be the common case, and photos and videos will generally already be online.)\nFeel free to try it out, let us know what you think, and happy hacking!"
-              }
-            ]
-          },
-          "id": "post-47623"
         }
       ]
     }
@@ -661,6 +663,7 @@
       "https://snarfed.org/category/essay"
     ],
     "bookmark": [
+      "https://snarfed.org/2022-11-24_48058",
       "https://snarfed.org/2022-11-19_47987",
       "https://snarfed.org/2022-11-09_47872",
       "https://snarfed.org/2022-11-06_47842",
@@ -669,8 +672,7 @@
       "https://snarfed.org/2022-10-19_47721",
       "https://snarfed.org/2022-10-18_47697",
       "https://snarfed.org/2022-10-13_47662",
-      "https://snarfed.org/2022-10-12_47645",
-      "https://snarfed.org/2022-10-07_micropub-for-bridgy-publish"
+      "https://snarfed.org/2022-10-12_47645"
     ],
     "author": [
       "https://snarfed.org/"
@@ -943,6 +945,11 @@
       ],
       "text": "Uncategorized"
     },
+    "https://snarfed.org/2022-11-24_48058": {
+      "rels": [
+        "bookmark"
+      ]
+    },
     "https://snarfed.org/2022-11-19_47987": {
       "rels": [
         "bookmark"
@@ -995,12 +1002,6 @@
       "rels": [
         "bookmark"
       ]
-    },
-    "https://snarfed.org/2022-10-07_micropub-for-bridgy-publish": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Micropub for Bridgy Publish"
     },
     "http://wordpress.org/": {
       "rels": [

@@ -1,41 +1,21 @@
 {
-  "items": [
-    {
-      "type": [
-        "h-card"
-      ],
-      "properties": {
-        "photo": [
-          {
-            "value": "https://elmarjansen.nl/elmar.jpg",
-            "alt": "Elmar Jansen"
-          }
-        ],
-        "name": [
-          "Elmar Jansen"
-        ],
-        "url": [
-          "https://elmarjansen.nl/"
-        ]
-      }
-    }
-  ],
+  "items": [],
   "rels": {
     "canonical": [
       "https://elmarjansen.nl/"
     ],
-    "stylesheet": [
-      "https://elmarjansen.nl/assets/main.css"
-    ],
     "me": [
       "https://mastodon.social/@elmarj",
-      "https://elmarjansen.nl/",
-      "https://twitter.com/elmarj",
-      "https://www.goodreads.com/user/show/11607541-elmar-jansen",
       "https://github.com/ElmarJ",
+      "https://twitter.com/elmarj",
+      "https://www.uva.nl/profiel/j/a/e.f.jansen/e.f.jansen.html",
+      "mailto:elmar@elmarjansen.nl",
+      "https://www.goodreads.com/user/show/11607541-elmar-jansen",
       "https://facebook.com/elmarjansen",
-      "https://www.linkedin.com/in/elmarjansen/",
-      "mailto:elmar@elmarjansen.nl"
+      "https://www.linkedin.com/in/elmarjansen/"
+    ],
+    "stylesheet": [
+      "https://elmarjansen.nl/main.css"
     ]
   },
   "rel-urls": {
@@ -44,35 +24,42 @@
         "canonical"
       ]
     },
-    "https://elmarjansen.nl/assets/main.css": {
-      "rels": [
-        "stylesheet"
-      ],
-      "type": "text/css"
-    },
     "https://mastodon.social/@elmarj": {
       "rels": [
         "me"
-      ],
-      "text": "Mastodonprofiel"
+      ]
+    },
+    "https://github.com/ElmarJ": {
+      "rels": [
+        "me"
+      ]
     },
     "https://twitter.com/elmarj": {
       "rels": [
         "me"
+      ]
+    },
+    "https://www.uva.nl/profiel/j/a/e.f.jansen/e.f.jansen.html": {
+      "rels": [
+        "me"
+      ]
+    },
+    "mailto:elmar@elmarjansen.nl": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://elmarjansen.nl/main.css": {
+      "rels": [
+        "stylesheet"
       ],
-      "text": "twitter"
+      "type": "text/css"
     },
     "https://www.goodreads.com/user/show/11607541-elmar-jansen": {
       "rels": [
         "me"
       ],
       "text": "goodreads"
-    },
-    "https://github.com/ElmarJ": {
-      "rels": [
-        "me"
-      ],
-      "text": "github"
     },
     "https://facebook.com/elmarjansen": {
       "rels": [
@@ -85,12 +72,6 @@
         "me"
       ],
       "text": "linkedin"
-    },
-    "mailto:elmar@elmarjansen.nl": {
-      "rels": [
-        "me"
-      ],
-      "text": "elmar@elmarjansen.nl"
     }
   }
 }

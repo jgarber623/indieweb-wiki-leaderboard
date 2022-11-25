@@ -1,5 +1,355 @@
 {
-  "items": [],
-  "rels": {},
-  "rel-urls": {}
+  "items": [
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Using PRs in Nixpkgs before they actually land in Nixpkgs"
+        ],
+        "summary": [
+          "A guide on using overlays to enable your impatience",
+          "Nixpkgs is a very rich package repository, but sometimes it doesn't have the\npackage that you want. However, if you're lucky, someone else might be working\non adding it right this instant! You can check\n\nthe current pending pull requests\n to\nconfirm this.\nThere's a good chance… read more"
+        ],
+        "published": [
+          "2022-11-03T01:44:56.000Z"
+        ],
+        "category": [
+          "nixos",
+          "fediverse"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "A GPU Passthrough Setup for NixOS (with VR passthrough too!)"
+        ],
+        "summary": [
+          "I'm doing VR on Windows on QEMU on NixOS because kernel anti-cheat is poison",
+          "This week, I built a new gaming PC and got GPU passthrough set up on it! In this\narticle I'll talk about how I got it working, and stuff I learned about\nvirtualization along the way.\n![Neofetches for Kali on WSL on Windows on QEMU in Libvirt on NixOS showing all my… read more"
+        ],
+        "published": [
+          "2022-09-22T22:15:17.000Z"
+        ],
+        "category": [
+          "gaming",
+          "nixos",
+          "virtual-reality",
+          "vm",
+          "vfio"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Blink Mini RE, Part 4 -- Staring into the heart of the binary"
+        ],
+        "summary": [
+          "With pretty graphs in coincidentally non-binary colors!",
+          "Because I had the privilege of obtaining factory-fresh ROMs from the cameras\n(\nas covered in the last episode\n),\nI realized that I could use those to perform some deeper analysis of the ROM's\nstructure. So, that's what this post will set out to do.\nThis post was made in a Jupyter… read more"
+        ],
+        "published": [
+          "2022-08-06T02:08:09.000Z"
+        ],
+        "category": [
+          "/projects/blink-re",
+          "reverse-engineering",
+          "Python",
+          "Jupyter",
+          "Numpy"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Blink Mini RE, Part 3 -- Staring into the eye of the binary"
+        ],
+        "summary": [
+          "If we stare at a binary for long enough, we will intimidate it into giving us its little secrets",
+          "This is a continuation of\n\nthe last post, where I desoldered and dumped the ROM\n.\nIn this post, I will discuss some of my initial findings from the firmware. I'll\nwrite about more juicy findings in the next post because this one is getting\nquite long, and the next one deserves a… read more"
+        ],
+        "published": [
+          "2022-08-03T17:01:19.000Z"
+        ],
+        "category": [
+          "/projects/blink-mini-re",
+          "reverse-engineering",
+          "ghidra",
+          "Python",
+          "Jupyter"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Blink Mini RE, Part 2 -- Desoldering and dumping the ROM"
+        ],
+        "summary": [
+          "I desoldered and resoldered a chip without legs, so I'm officially an expert on all things electronics",
+          "![The Blink Mini board, focused on the ROM.](https://astrid.tech/\\_/2022/07/07/0/focus-rom.jpg)This is a continuation from\n\nthe post where I disassembled the lil guy\n.\nLast time, I couldn't do anything about this chip because I was waiting for my\nSPI flash programmer kit to… read more"
+        ],
+        "published": [
+          "2022-07-13T00:47:14.000Z"
+        ],
+        "category": [
+          "/projects/blink-mini-re",
+          "Electrical Engineering",
+          "ghidra",
+          "reverse-engineering",
+          "soldering"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Disassembling an Amazon Blink Mini camera"
+        ],
+        "summary": [
+          "I used Ghidra twice, so that means I'm officially an expert in reverse engineering",
+          "Strap in kids, this post is about me physically hacking apart Amazon's\n\nBlink Mini\n to get\naccess to its firmware! No firmware was harmed or modified in the making of this\npost... yet.\nBig thanks to \nAda\n and\n\nErin\n for helping me figure this stuff out!\nBackground\nI attended the… read more"
+        ],
+        "published": [
+          "2022-07-07T21:38:11.000Z"
+        ],
+        "category": [
+          "/projects/blink-mini-re",
+          "Electrical Engineering",
+          "teardown",
+          "incompetency",
+          "cybersecurity"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "summary": [
+          "TIL that you can analyze live packets from remote network interfaces in\nWireshark with the following command:\n```bash\nssh $SSH_TARGET \"tcpdump -w- -i $REMOTE_INTERFACE\" | wireshark -k -i-\n```It's essentially three commands glued together in a big pipe.\nOn the left side of the… read more"
+        ],
+        "published": [
+          "2022-04-29T05:00:18.000Z"
+        ],
+        "category": [
+          "wireshark",
+          "networking",
+          "cybersecurity",
+          "blogumentation"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "name": [
+          "Astrid Yu"
+        ],
+        "url": [
+          "https://astrid.tech/",
+          "https://astrid.tech/",
+          "https://github.com/ifd3f",
+          "https://matrix.to/#/@astralbijection:matrix.org"
+        ],
+        "uid": [
+          "https://astrid.tech/"
+        ],
+        "pronoun": [
+          "https://pronoun.is/she"
+        ],
+        "email": [
+          "mailto:astrid@astrid.tech"
+        ],
+        "os": [
+          "https://nixos.org/"
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "alternate": [
+      "https://astrid.tech/rss.xml",
+      "https://astrid.tech/atom.xml",
+      "https://astrid.tech/feed.json"
+    ],
+    "author": [
+      "https://astrid.tech/humans.txt"
+    ],
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "webmention": [
+      "https://api.astrid.tech/api/webmention"
+    ],
+    "micropub": [
+      "https://api.astrid.tech/api/micropub"
+    ],
+    "preload": [
+      "https://astrid.tech/_next/static/css/5593f819bcbf9e52c6f9.css",
+      "https://astrid.tech/_next/static/css/9c01163bb94ab035f328.css"
+    ],
+    "stylesheet": [
+      "https://astrid.tech/_next/static/css/5593f819bcbf9e52c6f9.css",
+      "https://astrid.tech/_next/static/css/9c01163bb94ab035f328.css"
+    ],
+    "home": [
+      "https://astrid.tech/"
+    ],
+    "me": [
+      "https://astrid.tech/",
+      "https://github.com/ifd3f",
+      "https://matrix.to/#/@astralbijection:matrix.org"
+    ],
+    "prev": [
+      "https://xn--sr8hvo.ws/%F0%9F%9A%AF%F0%9F%90%9E%F0%9F%8C%8A/previous",
+      "https://webring.xxiivv.com/#yhnck"
+    ],
+    "next": [
+      "https://xn--sr8hvo.ws/%F0%9F%9A%AF%F0%9F%90%9E%F0%9F%8C%8A/next",
+      "https://webring.xxiivv.com/#xxiivv"
+    ],
+    "license": [
+      "https://www.gnu.org/licenses/agpl-3.0.en.html",
+      "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+    ],
+    "cc:attributionURL": [
+      "https://astrid.tech/"
+    ]
+  },
+  "rel-urls": {
+    "https://astrid.tech/rss.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "astrid.tech RSS",
+      "type": "application/rss+xml"
+    },
+    "https://astrid.tech/atom.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "astrid.tech Atom",
+      "type": "application/atom+xml"
+    },
+    "https://astrid.tech/feed.json": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "astrid.tech JSON feed",
+      "type": "application/feed+json"
+    },
+    "https://astrid.tech/humans.txt": {
+      "rels": [
+        "author"
+      ]
+    },
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://api.astrid.tech/api/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://api.astrid.tech/api/micropub": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://astrid.tech/_next/static/css/5593f819bcbf9e52c6f9.css": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://astrid.tech/_next/static/css/9c01163bb94ab035f328.css": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://astrid.tech/": {
+      "rels": [
+        "home"
+      ],
+      "text": "astrid.tech"
+    },
+    "https://github.com/ifd3f": {
+      "rels": [
+        "me"
+      ],
+      "text": "ifd3f"
+    },
+    "https://matrix.to/#/@astralbijection:matrix.org": {
+      "rels": [
+        "me"
+      ],
+      "text": "@astralbijection:matrix.org"
+    },
+    "https://xn--sr8hvo.ws/%F0%9F%9A%AF%F0%9F%90%9E%F0%9F%8C%8A/previous": {
+      "rels": [
+        "prev"
+      ],
+      "text": "←"
+    },
+    "https://xn--sr8hvo.ws/%F0%9F%9A%AF%F0%9F%90%9E%F0%9F%8C%8A/next": {
+      "rels": [
+        "next"
+      ],
+      "text": "→"
+    },
+    "https://webring.xxiivv.com/#yhnck": {
+      "rels": [
+        "prev"
+      ],
+      "text": "←"
+    },
+    "https://webring.xxiivv.com/#xxiivv": {
+      "rels": [
+        "next"
+      ],
+      "text": "→"
+    },
+    "https://www.gnu.org/licenses/agpl-3.0.en.html": {
+      "rels": [
+        "license"
+      ]
+    },
+    "http://creativecommons.org/licenses/by-nc-sa/4.0/": {
+      "rels": [
+        "license"
+      ]
+    }
+  }
 }
