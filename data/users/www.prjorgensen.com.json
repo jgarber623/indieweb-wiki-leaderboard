@@ -12,6 +12,52 @@
           ],
           "properties": {
             "name": [
+              ""
+            ],
+            "photo": [
+              {
+                "value": "https://secure.gravatar.com/avatar/d3a505f55d11383b1a25e05fd40b003c?s=65&r=r",
+                "srcset": {
+                  "1x": "data:image/gif;base64"
+                },
+                "alt": ""
+              },
+              {
+                "value": "https://secure.gravatar.com/avatar/d3a505f55d11383b1a25e05fd40b003c?s=65&r=r",
+                "srcset": {
+                  "2x": "https://secure.gravatar.com/avatar/d3a505f55d11383b1a25e05fd40b003c?s=130&r=r"
+                },
+                "alt": ""
+              }
+            ],
+            "content": [
+              {
+                "html": "Via Dave Pell:\n<blockquote><p>\nI’m very, very bored of Musk’s time in charge of Twitter so far. Every week feels as long as a Covid year.\n</p></blockquote>\n<p>Cannot agree more.</p>",
+                "value": "Via Dave Pell:\n\nI’m very, very bored of Musk’s time in charge of Twitter so far. Every week feels as long as a Covid year.\n\nCannot agree more."
+              }
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "name": [
+                    "Paul"
+                  ]
+                },
+                "value": "Paul"
+              }
+            ]
+          },
+          "id": "post-4714"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               "Security by pity"
             ],
             "author": [
@@ -298,40 +344,6 @@
             ]
           },
           "id": "post-4690"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Scripting with sudo on Mac – BrettTerpstra.com"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "name": [
-                    "Paul"
-                  ]
-                },
-                "value": "Paul"
-              }
-            ],
-            "content": [
-              {
-                "html": "I was fiddling about with a script I need to run from time to time but need escalated privileges to run. Editing /etc/sudoers isn’t an option, so I took to the Reddit. I found this:\n<p><a href=\"https://brettterpstra.com/2021/04/06/scripting-with-sudo-on-mac/\">Scripting with sudo on Mac – BrettTerpstra.com</a>:</p>\n<blockquote>\n<p>\nThe gist is this: when you need to script a tool that requires administrator privileges, you want to make the process as automated as possible without creating glaring security problems (like including a password in plain text). …</p>\n<p>Fortunately, macOS has tools built in to make this work. We’ll use a combination of macOS’s Keychain Access and the security command to make running superuser tasks both convenient and secure.\n</p>\n</blockquote>\n<p>Yay! I already use Keychain for managing my SSH and GPG keys, so this definitely falls in with that.</p>\n<p>Here’s the pertinent article bits, but read the whole thing for screenshots and how this is used in Brett’s excellent Batch app.</p>\n<blockquote>\n<p>\nThe first step is to create a Keychain entry for the password you want to use. In our case, this will be your system password.<br>Open Keychain Access in /Applications/Utilities. Unlock your login keychain if needed, then click the “Create new” button in the toolbar. Give the item a unique name, any account name you want, and then enter the password and click “Add.” …</p>\n<p>Now this password entry can be accessed using the command line tool security, which we can use in a script. If the keychain is unlocked, the password will be retrieved without interaction. If it’s locked, you’ll get a dialog asking for your keychain password when the script runs.<br>In our script, we’ll call security and give it the name assigned to the keychain item (-l), and the account name (-a). The -w flag tells it to return only the password (otherwise there’s a lot of data it spits out). …</p>\n<p>To incorporate this into a shell script, we’ll just use tr to trim the newline off it and save it to a variable, and then pipe it to sudo. Using sudo -S tells sudo to read the password from STDIN (the result of the pipe). …</p>\n<p>The first time security is used from a script, you’ll get a prompt to allow access. Be sure to click “Always Allow” to avoid getting the same prompt every time.\n</p>\n</blockquote>",
-                "value": "I was fiddling about with a script I need to run from time to time but need escalated privileges to run. Editing /etc/sudoers isn’t an option, so I took to the Reddit. I found this:\nScripting with sudo on Mac – BrettTerpstra.com:\n\nThe gist is this: when you need to script a tool that requires administrator privileges, you want to make the process as automated as possible without creating glaring security problems (like including a password in plain text). …\nFortunately, macOS has tools built in to make this work. We’ll use a combination of macOS’s Keychain Access and the security command to make running superuser tasks both convenient and secure.\n\nYay! I already use Keychain for managing my SSH and GPG keys, so this definitely falls in with that.\nHere’s the pertinent article bits, but read the whole thing for screenshots and how this is used in Brett’s excellent Batch app.\n\nThe first step is to create a Keychain entry for the password you want to use. In our case, this will be your system password.Open Keychain Access in /Applications/Utilities. Unlock your login keychain if needed, then click the “Create new” button in the toolbar. Give the item a unique name, any account name you want, and then enter the password and click “Add.” …\nNow this password entry can be accessed using the command line tool security, which we can use in a script. If the keychain is unlocked, the password will be retrieved without interaction. If it’s locked, you’ll get a dialog asking for your keychain password when the script runs.In our script, we’ll call security and give it the name assigned to the keychain item (-l), and the account name (-a). The -w flag tells it to return only the password (otherwise there’s a lot of data it spits out). …\nTo incorporate this into a shell script, we’ll just use tr to trim the newline off it and save it to a variable, and then pipe it to sudo. Using sudo -S tells sudo to read the password from STDIN (the result of the pipe). …\nThe first time security is used from a script, you’ll get a prompt to allow access. Be sure to click “Always Allow” to avoid getting the same prompt every time."
-              }
-            ],
-            "syndication": [
-              "https://telegram.me/prjorg",
-              "http://line.me/"
-            ]
-          },
-          "id": "post-4685"
         }
       ]
     }
@@ -347,7 +359,7 @@
       "https://c0.wp.com/c/6.1.1/wp-includes/js/mediaelement/wp-mediaelement.min.css",
       "https://c0.wp.com/c/6.1.1/wp-includes/css/classic-themes.min.css",
       "https://www.prjorgensen.com/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
-      "https://www.prjorgensen.com/wp-content/plugins/simple-location/css/location.min.css?ver=5.0.3",
+      "https://www.prjorgensen.com/wp-content/plugins/simple-location/css/location.min.css?ver=5.0.4",
       "https://www.prjorgensen.com/wp-content/plugins/indieweb-post-kinds/css/kind.min.css?ver=3.6.2",
       "https://www.prjorgensen.com/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3",
       "https://www.prjorgensen.com/wp-content/themes/twentyeleven/blocks.css?ver=20220927",
@@ -425,6 +437,7 @@
       "https://www.prjorgensen.com/"
     ],
     "bookmark": [
+      "https://www.prjorgensen.com/archives/4714",
       "https://www.prjorgensen.com/archives/4713",
       "https://www.prjorgensen.com/archives/4706",
       "https://www.prjorgensen.com/archives/4704",
@@ -433,8 +446,7 @@
       "https://www.prjorgensen.com/archives/4696",
       "https://www.prjorgensen.com/archives/4694",
       "https://www.prjorgensen.com/archives/4692",
-      "https://www.prjorgensen.com/archives/4690",
-      "https://www.prjorgensen.com/archives/4685"
+      "https://www.prjorgensen.com/archives/4690"
     ],
     "author": [
       "https://www.prjorgensen.com/archives/author/prjorgensen_h7tmb5"
@@ -599,7 +611,7 @@
       "media": "all",
       "type": "text/css"
     },
-    "https://www.prjorgensen.com/wp-content/plugins/simple-location/css/location.min.css?ver=5.0.3": {
+    "https://www.prjorgensen.com/wp-content/plugins/simple-location/css/location.min.css?ver=5.0.4": {
       "rels": [
         "stylesheet"
       ],
@@ -752,11 +764,10 @@
       ],
       "text": "Cautelous"
     },
-    "https://www.prjorgensen.com/archives/4713": {
+    "https://www.prjorgensen.com/archives/4714": {
       "rels": [
         "bookmark"
-      ],
-      "text": "Security by pity"
+      ]
     },
     "https://www.prjorgensen.com/archives/author/prjorgensen_h7tmb5": {
       "rels": [
@@ -764,6 +775,12 @@
       ],
       "title": "View all posts by <span class='p-author h-card'>Paul</span>",
       "text": "Paul"
+    },
+    "https://www.prjorgensen.com/archives/4713": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "Security by pity"
     },
     "https://grahamcluley.com/ouch-ransomware-gang-says-it-wont-attack-airasia-again-due-to-the-chaotic-organisation-and-sloppy-security-of-hacked-companys-network/": {
       "rels": [
@@ -918,12 +935,6 @@
       "rels": [
         "bookmark"
       ]
-    },
-    "https://www.prjorgensen.com/archives/4685": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Scripting with sudo on Mac – BrettTerpstra.com"
     },
     "https://wordpress.org/": {
       "rels": [

@@ -1,6 +1,12 @@
 {
   "items": [],
   "rels": {
+    "webmention": [
+      "https://webmention.io/macwright.com/webmention"
+    ],
+    "pingback": [
+      "https://webmention.io/macwright.com/xmlrpc"
+    ],
     "alternate": [
       "https://macwright.com/rss.xml",
       "https://macwright.com/atom.xml"
@@ -10,6 +16,7 @@
     ],
     "me": [
       "https://twitter.com/tmcw",
+      "https://mastodon.social/@tmcw",
       "https://github.com/tmcw",
       "mailto:tom@macwright.com"
     ],
@@ -18,6 +25,16 @@
     ]
   },
   "rel-urls": {
+    "https://webmention.io/macwright.com/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://webmention.io/macwright.com/xmlrpc": {
+      "rels": [
+        "pingback"
+      ]
+    },
     "https://macwright.com/rss.xml": {
       "rels": [
         "alternate"
@@ -39,6 +56,11 @@
       "type": "image/x-icon"
     },
     "https://twitter.com/tmcw": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://mastodon.social/@tmcw": {
       "rels": [
         "me"
       ]

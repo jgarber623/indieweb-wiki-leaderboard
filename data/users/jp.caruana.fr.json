@@ -50,7 +50,8 @@
     "alternate": [
       "https://jp.caruana.fr/feed.xml",
       "https://jp.caruana.fr/index.xml",
-      "https://jp.caruana.fr/index.json"
+      "https://jp.caruana.fr/index.json",
+      "gemini://jp.caruana.fr/index.gmi"
     ],
     "authorization_endpoint": [
       "https://indieauth.com/auth"
@@ -136,6 +137,13 @@
       ],
       "title": "Le ramasse miettes",
       "type": "application/json"
+    },
+    "gemini://jp.caruana.fr/index.gmi": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Le ramasse miettes",
+      "type": "text/gemini"
     },
     "https://indieauth.com/auth": {
       "rels": [

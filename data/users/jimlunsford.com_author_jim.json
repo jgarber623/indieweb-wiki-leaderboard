@@ -24,9 +24,8 @@
     "alternate": [
       "https://jimlunsford.com/feed/",
       "https://jimlunsford.com/comments/feed/",
-      "https://jimlunsford.com/wp-json/wp/v2/pages/4881",
-      "https://jimlunsford.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fjimlunsford.com%2F",
-      "https://jimlunsford.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fjimlunsford.com%2F&format=xml"
+      "https://jimlunsford.com/author/jim/feed/",
+      "https://jimlunsford.com/wp-json/wp/v2/users/26"
     ],
     "stylesheet": [
       "https://c0.wp.com/p/jetpack/11.5.1/modules/theme-tools/compat/twentysixteen.css",
@@ -53,17 +52,20 @@
     "wlwmanifest": [
       "https://jimlunsford.com/wp-includes/wlwmanifest.xml"
     ],
-    "canonical": [
-      "https://jimlunsford.com/"
-    ],
     "shortlink": [
-      "https://jiml.in/v1"
+      "https://jiml.in/ys"
     ],
     "authorization_endpoint": [
       "https://jimlunsford.com/wp-json/indieauth/1.0/auth"
     ],
     "token_endpoint": [
       "https://jimlunsford.com/wp-json/indieauth/1.0/token"
+    ],
+    "me": [
+      "https://twitter.com/jimlunsford",
+      "https://twit.social/@jim",
+      "https://www.linkedin.com/in/lunsfordjim/",
+      "https://jimlunsford.com/"
     ],
     "icon": [
       "https://i0.wp.com/jimlunsford.com/wp-content/uploads/2020/02/JPEG_20190725_142356.png?fit=32%2C32&ssl=1",
@@ -75,9 +77,19 @@
     "home": [
       "https://jimlunsford.com/"
     ],
-    "me": [
-      "https://jimlunsford.com/",
-      "https://twit.social/@jim"
+    "bookmark": [
+      "https://jimlunsford.com/blog/all-cleaned-up-and-ready-to-go/",
+      "https://jimlunsford.com/blog/please-hold-for-the-next-available-blog-post/",
+      "https://jimlunsford.com/blog/im-on-twit-social-mastodon/"
+    ],
+    "tag": [
+      "https://jimlunsford.com/tag/back/",
+      "https://jimlunsford.com/tag/blog/",
+      "https://jimlunsford.com/tag/fediverse/",
+      "https://jimlunsford.com/tag/rss/",
+      "https://jimlunsford.com/tag/website/",
+      "https://jimlunsford.com/tag/link/",
+      "https://jimlunsford.com/tag/mastodon/"
     ]
   },
   "rel-urls": {
@@ -163,6 +175,13 @@
         "alternate"
       ],
       "title": "The Official Site of Jim Lunsford » Comments Feed",
+      "type": "application/rss+xml"
+    },
+    "https://jimlunsford.com/author/jim/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "The Official Site of Jim Lunsford » Posts by Jim Lunsford Feed",
       "type": "application/rss+xml"
     },
     "https://c0.wp.com/p/jetpack/11.5.1/modules/theme-tools/compat/twentysixteen.css": {
@@ -254,7 +273,7 @@
         "https://api.w.org/"
       ]
     },
-    "https://jimlunsford.com/wp-json/wp/v2/pages/4881": {
+    "https://jimlunsford.com/wp-json/wp/v2/users/26": {
       "rels": [
         "alternate"
       ],
@@ -273,27 +292,10 @@
       ],
       "type": "application/wlwmanifest+xml"
     },
-    "https://jimlunsford.com/": {
-      "rels": [
-        "canonical"
-      ]
-    },
-    "https://jiml.in/v1": {
+    "https://jiml.in/ys": {
       "rels": [
         "shortlink"
       ]
-    },
-    "https://jimlunsford.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fjimlunsford.com%2F": {
-      "rels": [
-        "alternate"
-      ],
-      "type": "application/json+oembed"
-    },
-    "https://jimlunsford.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fjimlunsford.com%2F&format=xml": {
-      "rels": [
-        "alternate"
-      ],
-      "type": "text/xml+oembed"
     },
     "https://jimlunsford.com/wp-json/indieauth/1.0/auth": {
       "rels": [
@@ -303,6 +305,21 @@
     "https://jimlunsford.com/wp-json/indieauth/1.0/token": {
       "rels": [
         "token_endpoint"
+      ]
+    },
+    "https://twitter.com/jimlunsford": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://twit.social/@jim": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://www.linkedin.com/in/lunsfordjim/": {
+      "rels": [
+        "me"
       ]
     },
     "https://i0.wp.com/jimlunsford.com/wp-content/uploads/2020/02/JPEG_20190725_142356.png?fit=32%2C32&ssl=1": {
@@ -320,11 +337,71 @@
         "apple-touch-icon"
       ]
     },
-    "https://twit.social/@jim": {
+    "https://jimlunsford.com/": {
       "rels": [
-        "me"
+        "home"
       ],
-      "text": "Mastodon (fediverse)"
+      "text": "The Official Site of Jim Lunsford"
+    },
+    "https://jimlunsford.com/blog/all-cleaned-up-and-ready-to-go/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "All cleaned up and ready to go."
+    },
+    "https://jimlunsford.com/tag/back/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "back"
+    },
+    "https://jimlunsford.com/tag/blog/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "blog"
+    },
+    "https://jimlunsford.com/tag/fediverse/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "fediverse"
+    },
+    "https://jimlunsford.com/tag/rss/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "rss"
+    },
+    "https://jimlunsford.com/tag/website/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "website"
+    },
+    "https://jimlunsford.com/blog/please-hold-for-the-next-available-blog-post/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "Please hold for the next available blog post."
+    },
+    "https://jimlunsford.com/blog/im-on-twit-social-mastodon/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "I’m on TWIT.Social (Mastodon)"
+    },
+    "https://jimlunsford.com/tag/link/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "link"
+    },
+    "https://jimlunsford.com/tag/mastodon/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "mastodon"
     }
   }
 }
