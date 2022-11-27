@@ -1,168 +1,91 @@
 {
   "items": [],
   "rels": {
+    "preconnect": [
+      "https://fonts.googleapis.com/",
+      "https://fonts.gstatic.com/"
+    ],
     "stylesheet": [
-      "https://samclarke.blog/assets/css/style.css?1668970432",
-      "https://samclarke.blog/assets/css/highlight.css?1668970432",
-      "https://samclarke.blog/assets/css/alpine.css?1668970432",
-      "https://samclarke.blog/custom.css?1668970432",
-      "https://samclarke.blog/css/photos-grid.css"
+      "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap",
+      "https://sam.clrk.space/assets/css/style.css",
+      "https://sam.clrk.space/assets/css/main.css",
+      "https://sam.clrk.space/assets/css/Util.css",
+      "https://sam.clrk.space/assets/css/vendor/Katex.css"
+    ],
+    "canonical": [
+      "https://sam.clrk.space/"
+    ],
+    "apple-touch-icon": [
+      "https://sam.clrk.space/assets/img/profile.png"
     ],
     "icon": [
-      "https://micro.blog/samclarke/favicon.png"
-    ],
-    "shortcut": [
-      "https://micro.blog/samclarke/favicon.png"
+      "https://sam.clrk.space/assets/img/favicon.png"
     ],
     "alternate": [
-      "https://samclarke.blog/feed.xml",
-      "https://samclarke.blog/podcast.xml",
-      "https://samclarke.blog/feed.json"
-    ],
-    "EditURI": [
-      "https://samclarke.blog/rsd.xml"
-    ],
-    "me": [
-      "https://micro.blog/samclarke",
-      "https://twitter.com/samclarke",
-      "https://github.com/fiveslashtwo",
-      "https://instagram.com/fiveslashtwo",
-      "https://clrk.space/@sam"
-    ],
-    "authorization_endpoint": [
-      "https://micro.blog/indieauth/auth"
-    ],
-    "token_endpoint": [
-      "https://micro.blog/indieauth/token"
-    ],
-    "micropub": [
-      "https://micro.blog/micropub"
-    ],
-    "microsub": [
-      "https://micro.blog/microsub"
-    ],
-    "webmention": [
-      "https://micro.blog/webmention"
-    ],
-    "subscribe": [
-      "https://micro.blog/users/follow"
+      "https://sam.clrk.space/feed.xml"
     ]
   },
   "rel-urls": {
-    "https://samclarke.blog/assets/css/style.css?1668970432": {
+    "https://fonts.googleapis.com/": {
+      "rels": [
+        "preconnect"
+      ]
+    },
+    "https://fonts.gstatic.com/": {
+      "rels": [
+        "preconnect"
+      ]
+    },
+    "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap": {
       "rels": [
         "stylesheet"
       ]
     },
-    "https://samclarke.blog/assets/css/highlight.css?1668970432": {
+    "https://sam.clrk.space/": {
       "rels": [
-        "stylesheet"
+        "canonical"
       ]
     },
-    "https://samclarke.blog/assets/css/alpine.css?1668970432": {
+    "https://sam.clrk.space/assets/img/profile.png": {
       "rels": [
-        "stylesheet"
+        "apple-touch-icon"
       ]
     },
-    "https://samclarke.blog/custom.css?1668970432": {
+    "https://sam.clrk.space/assets/img/favicon.png": {
       "rels": [
-        "stylesheet"
-      ]
-    },
-    "https://micro.blog/samclarke/favicon.png": {
-      "rels": [
-        "icon",
-        "shortcut"
+        "icon"
       ],
-      "type": "image/x-icon"
+      "type": "image/png"
     },
-    "https://samclarke.blog/feed.xml": {
+    "https://sam.clrk.space/assets/css/style.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://sam.clrk.space/assets/css/main.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://sam.clrk.space/assets/css/Util.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://sam.clrk.space/assets/css/vendor/Katex.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://sam.clrk.space/feed.xml": {
       "rels": [
         "alternate"
       ],
-      "title": "Sam Clarke",
       "type": "application/rss+xml"
-    },
-    "https://samclarke.blog/podcast.xml": {
-      "rels": [
-        "alternate"
-      ],
-      "title": "Podcast",
-      "type": "application/rss+xml"
-    },
-    "https://samclarke.blog/feed.json": {
-      "rels": [
-        "alternate"
-      ],
-      "title": "Sam Clarke",
-      "type": "application/json"
-    },
-    "https://samclarke.blog/rsd.xml": {
-      "rels": [
-        "EditURI"
-      ],
-      "type": "application/rsd+xml"
-    },
-    "https://micro.blog/samclarke": {
-      "rels": [
-        "me"
-      ]
-    },
-    "https://twitter.com/samclarke": {
-      "rels": [
-        "me"
-      ]
-    },
-    "https://github.com/fiveslashtwo": {
-      "rels": [
-        "me"
-      ]
-    },
-    "https://instagram.com/fiveslashtwo": {
-      "rels": [
-        "me"
-      ]
-    },
-    "https://micro.blog/indieauth/auth": {
-      "rels": [
-        "authorization_endpoint"
-      ]
-    },
-    "https://micro.blog/indieauth/token": {
-      "rels": [
-        "token_endpoint"
-      ]
-    },
-    "https://micro.blog/micropub": {
-      "rels": [
-        "micropub"
-      ]
-    },
-    "https://micro.blog/microsub": {
-      "rels": [
-        "microsub"
-      ]
-    },
-    "https://micro.blog/webmention": {
-      "rels": [
-        "webmention"
-      ]
-    },
-    "https://micro.blog/users/follow": {
-      "rels": [
-        "subscribe"
-      ]
-    },
-    "https://samclarke.blog/css/photos-grid.css": {
-      "rels": [
-        "stylesheet"
-      ]
-    },
-    "https://clrk.space/@sam": {
-      "rels": [
-        "me"
-      ],
-      "text": "Mastodon"
     }
   }
 }

@@ -1,16 +1,79 @@
 {
   "items": [],
   "rels": {
+    "alternate": [
+      "https://suitbertmonz.de/?feed=rss2",
+      "https://suitbertmonz.de/?feed=comments-rss2"
+    ],
+    "stylesheet": [
+      "https://suitbertmonz.de/wp-includes/blocks/navigation/style.min.css?ver=6.1.1"
+    ],
+    "https://api.w.org/": [
+      "https://suitbertmonz.de/index.php?rest_route=/"
+    ],
+    "EditURI": [
+      "https://suitbertmonz.de/xmlrpc.php?rsd"
+    ],
+    "wlwmanifest": [
+      "https://suitbertmonz.de/wp-includes/wlwmanifest.xml"
+    ],
+    "home": [
+      "https://suitbertmonz.de/"
+    ],
     "nofollow": [
-      "https://www.strato.de/"
+      "https://de.wordpress.org/"
     ]
   },
   "rel-urls": {
-    "https://www.strato.de/": {
+    "https://suitbertmonz.de/?feed=rss2": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Suitbert Monz » Feed",
+      "type": "application/rss+xml"
+    },
+    "https://suitbertmonz.de/?feed=comments-rss2": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Suitbert Monz » Kommentar-Feed",
+      "type": "application/rss+xml"
+    },
+    "https://suitbertmonz.de/wp-includes/blocks/navigation/style.min.css?ver=6.1.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://suitbertmonz.de/index.php?rest_route=/": {
+      "rels": [
+        "https://api.w.org/"
+      ]
+    },
+    "https://suitbertmonz.de/xmlrpc.php?rsd": {
+      "rels": [
+        "EditURI"
+      ],
+      "title": "RSD",
+      "type": "application/rsd+xml"
+    },
+    "https://suitbertmonz.de/wp-includes/wlwmanifest.xml": {
+      "rels": [
+        "wlwmanifest"
+      ],
+      "type": "application/wlwmanifest+xml"
+    },
+    "https://suitbertmonz.de/": {
+      "rels": [
+        "home"
+      ],
+      "text": "Suitbert Monz"
+    },
+    "https://de.wordpress.org/": {
       "rels": [
         "nofollow"
       ],
-      "text": "\r\n          .a{fill:#f80;}.b{fill:#f80;}STRATO\r\n        "
+      "text": "WordPress"
     }
   }
 }

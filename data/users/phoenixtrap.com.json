@@ -34,12 +34,12 @@
                 "https://github.com/mjgardner",
                 "https://twitter.com/markjgardner",
                 "https://www.facebook.com/mjgardner",
-                "https://micro.blog/mjg",
                 "https://www.instagram.com/mjgardner",
                 "https://www.flickr.com/people/mjgardner",
                 "https://mastodon.sdf.org/@mjgardner",
                 "https://www.linkedin.com/in/mjgardner",
                 "https://reddit.com/user/mjgardner",
+                "https://keyoxide.org/4dadfefe8e4ad0f92bcbbb8142f3ca898cb08a45",
                 "https://keybase.io/mjgardner",
                 "https://www.last.fm/user/mjgardner",
                 "https://www.youtube.com/channel/UCo-bgiroS9CMQzfA_5r5Z0A/about",
@@ -68,7 +68,7 @@
                 "Mark Gardner"
               ],
               "email": [
-                "https://phoenixtrap.com/cdn-cgi/l/email-protection#f79a9d90b7879f9892999e8f83859687d994989a"
+                "https://phoenixtrap.com/cdn-cgi/l/email-protection#f09d9a97b080989f959e998884829180de939f9d"
               ],
               "note": [
                 "I help professional Perl developers engineer modern, disciplined applications so they can become experts that write easy-to-maintain code with confidence."
@@ -599,7 +599,8 @@
     "alternate": [
       "https://phoenixtrap.com/feed/",
       "https://phoenixtrap.com/comments/feed/",
-      "https://phoenixtrap.com/feed/atom/"
+      "https://phoenixtrap.com/feed/atom/",
+      "https://phoenixtrap.com/comments/feed/atom/"
     ],
     "stylesheet": [
       "https://c0.wp.com/c/6.1.1/wp-includes/css/dist/block-library/style.min.css",
@@ -640,17 +641,17 @@
       "https://github.com/mjgardner",
       "https://twitter.com/markjgardner",
       "https://www.facebook.com/mjgardner",
-      "https://micro.blog/mjg",
       "https://www.instagram.com/mjgardner",
       "https://www.flickr.com/people/mjgardner",
       "https://mastodon.sdf.org/@mjgardner",
       "https://www.linkedin.com/in/mjgardner",
       "https://reddit.com/user/mjgardner",
+      "https://keyoxide.org/4dadfefe8e4ad0f92bcbbb8142f3ca898cb08a45",
       "https://keybase.io/mjgardner",
       "https://www.last.fm/user/mjgardner",
       "https://www.youtube.com/channel/UCo-bgiroS9CMQzfA_5r5Z0A/about",
       "https://www.goodreads.com/user/show/5299642-mark",
-      "https://phoenixtrap.com/cdn-cgi/l/email-protection#f79a9d90b7879f9892999e8f83859687d994989a"
+      "https://phoenixtrap.com/cdn-cgi/l/email-protection#f09d9a97b080989f959e998884829180de939f9d"
     ],
     "pgpkey": [
       "https://phoenixtrap.com/.well-known/pka/mjg_pubkey_8CB08A45.txt"
@@ -994,6 +995,14 @@
       "rels": [
         "alternate"
       ],
+      "title": "The Phoenix Trap Atom Feed",
+      "type": "application/atom+xml"
+    },
+    "https://phoenixtrap.com/comments/feed/atom/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "The Phoenix Trap Atom Comments Feed",
       "type": "application/atom+xml"
     },
     "https://phoenixtrap.com/wp-json/indieauth/1.0/auth": {
@@ -1026,11 +1035,6 @@
         "me"
       ]
     },
-    "https://micro.blog/mjg": {
-      "rels": [
-        "me"
-      ]
-    },
     "https://www.instagram.com/mjgardner": {
       "rels": [
         "me"
@@ -1052,6 +1056,11 @@
       ]
     },
     "https://reddit.com/user/mjgardner": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://keyoxide.org/4dadfefe8e4ad0f92bcbbb8142f3ca898cb08a45": {
       "rels": [
         "me"
       ]
@@ -1485,7 +1494,7 @@
       ],
       "text": "Type::Params"
     },
-    "https://phoenixtrap.com/cdn-cgi/l/email-protection#f79a9d90b7879f9892999e8f83859687d994989a": {
+    "https://phoenixtrap.com/cdn-cgi/l/email-protection#f09d9a97b080989f959e998884829180de939f9d": {
       "rels": [
         "me"
       ],

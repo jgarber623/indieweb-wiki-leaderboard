@@ -53,7 +53,7 @@
       "https://jimlunsford.com/wp-includes/wlwmanifest.xml"
     ],
     "shortlink": [
-      "https://jiml.in/ys"
+      "https://jiml.in/yt"
     ],
     "authorization_endpoint": [
       "https://jimlunsford.com/wp-json/indieauth/1.0/auth"
@@ -62,7 +62,6 @@
       "https://jimlunsford.com/wp-json/indieauth/1.0/token"
     ],
     "me": [
-      "https://twitter.com/jimlunsford",
       "https://twit.social/@jim",
       "https://www.linkedin.com/in/lunsfordjim/",
       "https://jimlunsford.com/"
@@ -78,14 +77,16 @@
       "https://jimlunsford.com/"
     ],
     "bookmark": [
+      "https://jimlunsford.com/blog/history-of-the-fediverse/",
       "https://jimlunsford.com/blog/all-cleaned-up-and-ready-to-go/",
       "https://jimlunsford.com/blog/please-hold-for-the-next-available-blog-post/",
       "https://jimlunsford.com/blog/im-on-twit-social-mastodon/"
     ],
     "tag": [
+      "https://jimlunsford.com/tag/fediverse/",
+      "https://jimlunsford.com/tag/history/",
       "https://jimlunsford.com/tag/back/",
       "https://jimlunsford.com/tag/blog/",
-      "https://jimlunsford.com/tag/fediverse/",
       "https://jimlunsford.com/tag/rss/",
       "https://jimlunsford.com/tag/website/",
       "https://jimlunsford.com/tag/link/",
@@ -292,7 +293,7 @@
       ],
       "type": "application/wlwmanifest+xml"
     },
-    "https://jiml.in/ys": {
+    "https://jiml.in/yt": {
       "rels": [
         "shortlink"
       ]
@@ -305,11 +306,6 @@
     "https://jimlunsford.com/wp-json/indieauth/1.0/token": {
       "rels": [
         "token_endpoint"
-      ]
-    },
-    "https://twitter.com/jimlunsford": {
-      "rels": [
-        "me"
       ]
     },
     "https://twit.social/@jim": {
@@ -343,6 +339,24 @@
       ],
       "text": "The Official Site of Jim Lunsford"
     },
+    "https://jimlunsford.com/blog/history-of-the-fediverse/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "History of the Fediverse"
+    },
+    "https://jimlunsford.com/tag/fediverse/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "fediverse"
+    },
+    "https://jimlunsford.com/tag/history/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "history"
+    },
     "https://jimlunsford.com/blog/all-cleaned-up-and-ready-to-go/": {
       "rels": [
         "bookmark"
@@ -360,12 +374,6 @@
         "tag"
       ],
       "text": "blog"
-    },
-    "https://jimlunsford.com/tag/fediverse/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "fediverse"
     },
     "https://jimlunsford.com/tag/rss/": {
       "rels": [

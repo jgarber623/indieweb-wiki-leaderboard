@@ -17,13 +17,14 @@
         "url": [
           "https://mattstine.com/",
           "https://mastodon.sdf.org/@mstine",
-          "https://github.com/mstine"
+          "https://github.com/mstine",
+          "https://gitlab.com/mstine"
         ],
         "note": [
           "Member of the Shouting Class • Indignant Curmudgeon • Domain-Oriented Adaptive Software Architectures • Bitter Southerner • PKM • Staff+ Engineer"
         ],
         "email": [
-          "https://mattstine.com/cdn-cgi/l/email-protection#6c010d18182c010d18181f18050209420f0301"
+          "https://mattstine.com/cdn-cgi/l/email-protection#5e333f2a2a1e333f2a2a2d2a37303b703d3133"
         ]
       }
     }
@@ -32,17 +33,34 @@
     "stylesheet": [
       "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     ],
+    "webmention": [
+      "https://webmention.io/mattstine.com/webmention"
+    ],
+    "pingback": [
+      "https://webmention.io/mattstine.com/xmlrpc"
+    ],
     "me": [
       "https://mattstine.com/",
       "https://mastodon.sdf.org/@mstine",
-      "https://mattstine.com/cdn-cgi/l/email-protection#6c010d18182c010d18181f18050209420f0301",
-      "https://github.com/mstine"
+      "https://mattstine.com/cdn-cgi/l/email-protection#5e333f2a2a1e333f2a2a2d2a37303b703d3133",
+      "https://github.com/mstine",
+      "https://gitlab.com/mstine"
     ]
   },
   "rel-urls": {
     "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css": {
       "rels": [
         "stylesheet"
+      ]
+    },
+    "https://webmention.io/mattstine.com/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://webmention.io/mattstine.com/xmlrpc": {
+      "rels": [
+        "pingback"
       ]
     },
     "https://mattstine.com/": {
@@ -57,7 +75,7 @@
       ],
       "text": "\n                  \n                  Mastodon"
     },
-    "https://mattstine.com/cdn-cgi/l/email-protection#6c010d18182c010d18181f18050209420f0301": {
+    "https://mattstine.com/cdn-cgi/l/email-protection#5e333f2a2a1e333f2a2a2d2a37303b703d3133": {
       "rels": [
         "me"
       ],
@@ -68,6 +86,12 @@
         "me"
       ],
       "text": "\n                  \n                  GitHub"
+    },
+    "https://gitlab.com/mstine": {
+      "rels": [
+        "me"
+      ],
+      "text": "\n                  \n                  GitLab"
     }
   }
 }

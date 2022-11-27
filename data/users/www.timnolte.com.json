@@ -6,13 +6,57 @@
       ],
       "properties": {
         "bridgy-twitter-content": [
-          "As my running has gotten harder I decided that sharing my runs would do a few things... #HWI #Run4Water #GroundhogMarathon #Garmin #Running #snow"
+          "For the sake of my own reference, and potentially to help others through the process, I'm documenting and sharing here the steps I took to upgrade my #Mastodon instance, that I host with a #DigitalOcean Droplet, from version 3.5.3 to version 4.0.2."
         ],
         "bridgy-mastodon-content": [
-          "As my running has gotten harder I decided that sharing my runs would do a few things... #HWI #Run4Water #GroundhogMarathon #Garmin #Running #snow"
+          "For the sake of my own reference, and potentially to help others through the process, I'm documenting and sharing here the steps I took to upgrade my #Mastodon instance, that I host with a #DigitalOcean Droplet, from version 3.5.3 to version 4.0.2."
         ]
       },
       "children": [
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Installing Mastodon on an Oracle Cloud Infrastructure Ampere arm64 Always Free Instance"
+            ],
+            "content": [
+              {
+                "html": "This guide can be followed for setting up a brand new #Mastodon instance on #Oracle Cloud Infrastructure, if you are just getting started, but the second half will be more focused on moving an existing instance over from another hosting provider. #HowTo #OCI #arm64 #Ubuntu #DigitalOcean",
+                "value": "This guide can be followed for setting up a brand new #Mastodon instance on #Oracle Cloud Infrastructure, if you are just getting started, but the second half will be more focused on moving an existing instance over from another hosting provider. #HowTo #OCI #arm64 #Ubuntu #DigitalOcean"
+              }
+            ],
+            "summary": [
+              "This guide can be followed for setting up a brand new #Mastodon instance on #Oracle Cloud Infrastructure, if you are just getting started, but the second half will be more focused on moving an existing instance over from another hosting provider. #HowTo #OCI #arm64 #Ubuntu #DigitalOcean"
+            ],
+            "url": [
+              "https://www.timnolte.com/2022/11/26/installing-mastodon-on-an-oracle-cloud-infrastructure-ampere-arm64-always-free-instance/"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Post Thanksgiving Long Run"
+            ],
+            "content": [
+              {
+                "html": "So I didn’t manage to get my run in on Thanksgiving day, we had a very early morning and by the time the kids were in bed it was getting late and I just didn’t feel up to an hour long run that late at night. I did get out and get it done. #HWI #Run4Water #GroundhogMarathon #Garmin #Running",
+                "value": "So I didn’t manage to get my run in on Thanksgiving day, we had a very early morning and by the time the kids were in bed it was getting late and I just didn’t feel up to an hour long run that late at night. I did get out and get it done. #HWI #Run4Water #GroundhogMarathon #Garmin #Running"
+              }
+            ],
+            "summary": [
+              "So I didn’t manage to get my run in on Thanksgiving day, we had a very early morning and by the time the kids were in bed it was getting late and I just didn’t feel up to an hour long run that late at night. I did get out and get it done. #HWI #Run4Water #GroundhogMarathon #Garmin #Running"
+            ],
+            "url": [
+              "https://www.timnolte.com/2022/11/26/post-thanksgiving-long-run/"
+            ]
+          }
+        },
         {
           "type": [
             "h-entry"
@@ -100,50 +144,6 @@
               "https://www.timnolte.com/2022/11/19/upgrading-my-digital-ocean-mastodon-instance-from-3-5-3-to-4-0-2/"
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "An Early Morning Snowy Progressive Run"
-            ],
-            "content": [
-              {
-                "html": "It was a hard run, especially with the snow, but I got it done. #HWI #Run4Water #GroundhogMarathon #Garmin #Running #snow",
-                "value": "It was a hard run, especially with the snow, but I got it done. #HWI #Run4Water #GroundhogMarathon #Garmin #Running #snow"
-              }
-            ],
-            "summary": [
-              "It was a hard run, especially with the snow, but I got it done. #HWI #Run4Water #GroundhogMarathon #Garmin #Running #snow"
-            ],
-            "url": [
-              "https://www.timnolte.com/2022/11/19/an-early-morning-snowy-progressive-run/"
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Yes, It’s Another Run, But There is Snow"
-            ],
-            "content": [
-              {
-                "html": "As my running has gotten harder I decided that sharing my runs would do a few things… #HWI #Run4Water #GroundhogMarathon #Garmin #Running #snow",
-                "value": "As my running has gotten harder I decided that sharing my runs would do a few things… #HWI #Run4Water #GroundhogMarathon #Garmin #Running #snow"
-              }
-            ],
-            "summary": [
-              "As my running has gotten harder I decided that sharing my runs would do a few things… #HWI #Run4Water #GroundhogMarathon #Garmin #Running #snow"
-            ],
-            "url": [
-              "https://www.timnolte.com/2022/11/17/yes-its-another-run-but-there-is-snow/"
-            ]
-          }
         }
       ]
     }
@@ -188,7 +188,7 @@
       "https://www.timnolte.com/wp-includes/wlwmanifest.xml"
     ],
     "shortlink": [
-      "https://timn.me/3Ey0czW"
+      "https://timn.me/3Vq8hOt"
     ],
     "authorization_endpoint": [
       "https://www.timnolte.com/wp-json/indieauth/1.0/auth"
@@ -219,20 +219,21 @@
       "https://www.kadencewp.com/"
     ],
     "tag": [
-      "https://www.timnolte.com/category/blogging/",
-      "https://www.timnolte.com/category/dailythoughts/",
       "https://www.timnolte.com/category/featured/",
       "https://www.timnolte.com/category/indieweb/",
       "https://www.timnolte.com/category/social-networking/",
-      "https://www.timnolte.com/category/running/"
+      "https://www.timnolte.com/category/tech/",
+      "https://www.timnolte.com/category/running/",
+      "https://www.timnolte.com/category/blogging/",
+      "https://www.timnolte.com/category/dailythoughts/"
     ],
     "bookmark": [
+      "https://www.timnolte.com/2022/11/26/installing-mastodon-on-an-oracle-cloud-infrastructure-ampere-arm64-always-free-instance/",
+      "https://www.timnolte.com/2022/11/26/post-thanksgiving-long-run/",
       "https://www.timnolte.com/2022/11/22/a-world-of-blogs-and-the-fediverse-bridging-rss-and-activitypub/",
       "https://www.timnolte.com/2022/11/22/cold-but-clear-a-better-day-for-running/",
       "https://www.timnolte.com/2022/11/21/monday-running-with-high-winds-and-snowy-footing/",
-      "https://www.timnolte.com/2022/11/19/upgrading-my-digital-ocean-mastodon-instance-from-3-5-3-to-4-0-2/",
-      "https://www.timnolte.com/2022/11/19/an-early-morning-snowy-progressive-run/",
-      "https://www.timnolte.com/2022/11/17/yes-its-another-run-but-there-is-snow/"
+      "https://www.timnolte.com/2022/11/19/upgrading-my-digital-ocean-mastodon-instance-from-3-5-3-to-4-0-2/"
     ],
     "me": [
       "https://www.faithshaping.org/",
@@ -374,7 +375,7 @@
       ],
       "type": "application/wlwmanifest+xml"
     },
-    "https://timn.me/3Ey0czW": {
+    "https://timn.me/3Vq8hOt": {
       "rels": [
         "shortlink"
       ]
@@ -421,18 +422,6 @@
       "title": "Hope Water International Fundraising – Bringing Clean Water Wells to Africa",
       "text": "Run For Wells In Africa"
     },
-    "https://www.timnolte.com/category/blogging/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Blogging"
-    },
-    "https://www.timnolte.com/category/dailythoughts/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Daily Thoughts"
-    },
     "https://www.timnolte.com/category/featured/": {
       "rels": [
         "tag"
@@ -451,17 +440,47 @@
       ],
       "text": "Social Networking"
     },
-    "https://www.timnolte.com/2022/11/22/a-world-of-blogs-and-the-fediverse-bridging-rss-and-activitypub/": {
+    "https://www.timnolte.com/category/tech/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Tech"
+    },
+    "https://www.timnolte.com/2022/11/26/installing-mastodon-on-an-oracle-cloud-infrastructure-ampere-arm64-always-free-instance/": {
       "rels": [
         "bookmark"
       ],
-      "text": "A World of Blogs and the Fediverse, Bridging RSS and ActivityPub"
+      "text": "Installing Mastodon on an Oracle Cloud Infrastructure Ampere arm64 Always Free Instance"
     },
     "https://www.timnolte.com/category/running/": {
       "rels": [
         "tag"
       ],
       "text": "Running"
+    },
+    "https://www.timnolte.com/2022/11/26/post-thanksgiving-long-run/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "Post Thanksgiving Long Run"
+    },
+    "https://www.timnolte.com/category/blogging/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Blogging"
+    },
+    "https://www.timnolte.com/category/dailythoughts/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Daily Thoughts"
+    },
+    "https://www.timnolte.com/2022/11/22/a-world-of-blogs-and-the-fediverse-bridging-rss-and-activitypub/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "A World of Blogs and the Fediverse, Bridging RSS and ActivityPub"
     },
     "https://www.timnolte.com/2022/11/22/cold-but-clear-a-better-day-for-running/": {
       "rels": [
@@ -480,18 +499,6 @@
         "bookmark"
       ],
       "text": "Upgrading My Digital Ocean Mastodon Instance from 3.5.3 to 4.0.2"
-    },
-    "https://www.timnolte.com/2022/11/19/an-early-morning-snowy-progressive-run/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "An Early Morning Snowy Progressive Run"
-    },
-    "https://www.timnolte.com/2022/11/17/yes-its-another-run-but-there-is-snow/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Yes, It’s Another Run, But There is Snow"
     },
     "https://www.faithshaping.org/": {
       "rels": [
