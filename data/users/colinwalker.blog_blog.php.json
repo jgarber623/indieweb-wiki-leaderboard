@@ -6,57 +6,16 @@
       ],
       "properties": {
         "name": [
-          "Colin Walker"
+          "404"
+        ],
+        "content": [
+          {
+            "html": "<p>The page <strong>https://colinwalker.blog/blog.php</strong> could not be found on the site.</p>\n\t\t\t\t\t\t\t<p>Go to <a href=\"https://colinwalker.blog/\">Today</a> or try a <a href=\"https://colinwalker.blog/search/\">search</a>.</p>",
+            "value": "The page https://colinwalker.blog/blog.php could not be found on the site.\n\t\t\t\t\t\t\tGo to Today or try a search."
+          }
         ]
       },
-      "id": "page",
-      "children": [
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "url": [
-              "https://colinwalker.blog/blog/?date=2022-11-26#p1"
-            ],
-            "content": [
-              {
-                "html": "<p>When I stopped blogging I also cut down my reading on the web. I just didn't have the headspace or concentration to keep up with it all.</p>\n<p>I exported the feeds from /reader as OPML (for backup purposes) and was pretty ruthless in what I retained — a core of only about 20 feeds.</p>\n<p>Since planning the return I looked back at that export and realised that most of the feeds in there didn't really appeal to me any more. I've re-added a few, focusing on people and their stories, but most are no longer relevant to where I want to be.</p>",
-                "value": "When I stopped blogging I also cut down my reading on the web. I just didn't have the headspace or concentration to keep up with it all.\nI exported the feeds from /reader as OPML (for backup purposes) and was pretty ruthless in what I retained — a core of only about 20 feeds.\nSince planning the return I looked back at that export and realised that most of the feeds in there didn't really appeal to me any more. I've re-added a few, focusing on people and their stories, but most are no longer relevant to where I want to be."
-              }
-            ],
-            "name": [
-              "When I stopped blogging I also cut down my reading on the web. I just didn't have the headspace or concentration to keep up with it all.\nI exported the feeds from /reader as OPML (for backup purposes) and was pretty ruthless in what I retained — a core of only about 20 feeds.\nSince planning the return I looked back at that export and realised that most of the feeds in there didn't really appeal to me any more. I've re-added a few, focusing on people and their stories, but most are no longer relevant to where I want to be."
-            ],
-            "published": [
-              "2022-11-26T13:49:09+00:00"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "photo": [
-                    {
-                      "value": "https://colinwalker.blog/images/colinwalker-thumb.jpg",
-                      "alt": "Colin Walker"
-                    }
-                  ],
-                  "url": [
-                    "https://colinwalker.blog/"
-                  ],
-                  "name": [
-                    "Colin Walker"
-                  ]
-                },
-                "value": "Colin Walker"
-              }
-            ]
-          },
-          "id": "p1"
-        }
-      ]
+      "id": "page"
     },
     {
       "type": [
@@ -85,53 +44,25 @@
     }
   ],
   "rels": {
-    "icon": [
-      "https://colinwalker.blog/favicon-32x32.png",
-      "https://colinwalker.blog/favicon-16x16.png"
-    ],
     "stylesheet": [
-      "https://colinwalker.blog/bigfoot/bigfoot-bottom.css",
-      "https://colinwalker.blog/alt_min.css"
-    ],
-    "webmention": [
-      "https://colinwalker.blog/endpoint/"
-    ],
-    "http://webmention.org/": [
-      "https://colinwalker.blog/endpoint/"
-    ],
-    "alternate": [
-      "https://colinwalker.blog/dailyfeed.xml",
-      "https://colinwalker.blog/livefeed.xml"
+      "https://colinwalker.blog/alt.css",
+      "https://colinwalker.blog/bigfoot/bigfoot-bottom.css"
     ],
     "home": [
-      "https://colinwalker.blog/dailyfeed.xml",
       "https://colinwalker.blog/"
-    ],
-    "canonical": [
-      "https://colinwalker.blog/blog"
     ],
     "me": [
-      "mailto:colin@colinwalker.blog",
-      "https://micro.blog/colinwalker",
-      "https://github.com/colin-walker",
-      "https://colinwalker.blog/"
-    ],
-    "author": [
-      "https://colinwalker.blog/humans.txt"
+      "https://colinwalker.blog/",
+      "mailto:colin@colinwalker.blog"
     ]
   },
   "rel-urls": {
-    "https://colinwalker.blog/favicon-32x32.png": {
+    "https://colinwalker.blog/alt.css": {
       "rels": [
-        "icon"
+        "stylesheet"
       ],
-      "type": "image/png"
-    },
-    "https://colinwalker.blog/favicon-16x16.png": {
-      "rels": [
-        "icon"
-      ],
-      "type": "image/png"
+      "media": "all",
+      "type": "text/css"
     },
     "https://colinwalker.blog/bigfoot/bigfoot-bottom.css": {
       "rels": [
@@ -140,64 +71,17 @@
       "media": "all",
       "type": "text/css"
     },
-    "https://colinwalker.blog/alt_min.css": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "all",
-      "type": "text/css"
-    },
-    "https://colinwalker.blog/endpoint/": {
-      "rels": [
-        "webmention"
-      ]
-    },
-    "https://colinwalker.blog/dailyfeed.xml": {
-      "rels": [
-        "alternate",
-        "home"
-      ],
-      "title": "Colin Walker :: Daily Feed",
-      "type": "application/rss+xml"
-    },
-    "https://colinwalker.blog/livefeed.xml": {
-      "rels": [
-        "alternate"
-      ],
-      "title": "Colin Walker :: Live Feed",
-      "type": "application/rss+xml"
-    },
-    "https://colinwalker.blog/blog": {
-      "rels": [
-        "canonical"
-      ]
-    },
-    "mailto:colin@colinwalker.blog": {
-      "rels": [
-        "me"
-      ]
-    },
-    "https://micro.blog/colinwalker": {
-      "rels": [
-        "me"
-      ]
-    },
-    "https://github.com/colin-walker": {
-      "rels": [
-        "me"
-      ]
-    },
-    "https://colinwalker.blog/humans.txt": {
-      "rels": [
-        "author"
-      ],
-      "type": "text/plain"
-    },
     "https://colinwalker.blog/": {
       "rels": [
         "home"
       ],
-      "text": "\n                        Colin Walker\n                    "
+      "text": "\n                        404\n                    "
+    },
+    "mailto:colin@colinwalker.blog": {
+      "rels": [
+        "me"
+      ],
+      "text": "colin@colinwalker.blog"
     }
   }
 }

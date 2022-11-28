@@ -9,7 +9,7 @@
           "Stephen Sauceda"
         ],
         "job-title": [
-          "/ Web developer"
+          "/ Web Developer"
         ],
         "url": [
           "https://mastodon.online/@stephensauceda",
@@ -17,54 +17,66 @@
           "https://github.com/stephensauceda"
         ],
         "region": [
-          "South Carolina"
+          "South\nCarolina"
         ]
       }
     }
   ],
   "rels": {
+    "webmention": [
+      "https://webmention.io/stephensauceda.com/webmention"
+    ],
+    "pingback": [
+      "https://webmention.io/stephensauceda.com/xmlrpc"
+    ],
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "micropub": [
+      "https://stephensauceda.com/micropub"
+    ],
     "stylesheet": [
-      "https://stephensauceda.com/assets/built/main.css?v=68a072cfbc",
-      "https://stephensauceda.com/public/cards.min.css?v=68a072cfbc"
-    ],
-    "canonical": [
-      "https://stephensauceda.com/"
-    ],
-    "alternate": [
-      "https://stephensauceda.com/archive/rss/"
+      "https://stephensauceda.com/assets/css/main.css"
     ],
     "me": [
       "https://mastodon.online/@stephensauceda",
       "https://instagram.com/stephensauceda/",
       "https://github.com/stephensauceda"
-    ],
-    "noopener": [
-      "https://ghost.org/"
     ]
   },
   "rel-urls": {
-    "https://stephensauceda.com/assets/built/main.css?v=68a072cfbc": {
+    "https://webmention.io/stephensauceda.com/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://webmention.io/stephensauceda.com/xmlrpc": {
+      "rels": [
+        "pingback"
+      ]
+    },
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://stephensauceda.com/micropub": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://stephensauceda.com/assets/css/main.css": {
       "rels": [
         "stylesheet"
       ]
-    },
-    "https://stephensauceda.com/": {
-      "rels": [
-        "canonical"
-      ]
-    },
-    "https://stephensauceda.com/archive/rss/": {
-      "rels": [
-        "alternate"
-      ],
-      "title": "Stephen Sauceda",
-      "type": "application/rss+xml"
-    },
-    "https://stephensauceda.com/public/cards.min.css?v=68a072cfbc": {
-      "rels": [
-        "stylesheet"
-      ],
-      "type": "text/css"
     },
     "https://mastodon.online/@stephensauceda": {
       "rels": [
@@ -83,12 +95,6 @@
         "me"
       ],
       "text": "Github"
-    },
-    "https://ghost.org/": {
-      "rels": [
-        "noopener"
-      ],
-      "text": "Ghost"
     }
   }
 }

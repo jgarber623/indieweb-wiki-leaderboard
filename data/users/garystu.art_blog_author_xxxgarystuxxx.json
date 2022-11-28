@@ -72,10 +72,10 @@
                     }
                   ],
                   "url": [
-                    "https://garystu.art/blog/author/xxxgarystuxxx/"
+                    "https://garystu.art/"
                   ],
                   "uid": [
-                    "https://garystu.art/blog/author/xxxgarystuxxx/"
+                    "https://garystu.art/"
                   ],
                   "name": [
                     "GaryStu"
@@ -127,10 +127,10 @@
                     }
                   ],
                   "url": [
-                    "https://garystu.art/blog/author/xxxgarystuxxx/"
+                    "https://garystu.art/"
                   ],
                   "uid": [
-                    "https://garystu.art/blog/author/xxxgarystuxxx/"
+                    "https://garystu.art/"
                   ],
                   "name": [
                     "GaryStu"
@@ -171,6 +171,10 @@
     "stylesheet": [
       "http://garystu.art/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1",
       "http://garystu.art/wp-includes/css/classic-themes.min.css?ver=1",
+      "http://garystu.art/wp-content/plugins/age-gate/dist/main.css?ver=3.0.11",
+      "http://garystu.art/wp-content/plugins/hide-featured-image-on-all-single-pagepost//tnado-styles.css?ver=6.1.1",
+      "http://garystu.art/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
+      "http://garystu.art/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3",
       "http://garystu.art/wp-content/themes/autonomie-master/style.css?ver=6.1.1",
       "http://garystu.art/wp-content/themes/autonomie-child-2-autonomie-master-child/style.css?ver=6.1.1",
       "http://garystu.art/wp-includes/css/dashicons.min.css?ver=6.1.1",
@@ -188,6 +192,12 @@
     "wlwmanifest": [
       "http://garystu.art/wp-includes/wlwmanifest.xml"
     ],
+    "authorization_endpoint": [
+      "https://garystu.art/wp-json/indieauth/1.0/auth"
+    ],
+    "token_endpoint": [
+      "https://garystu.art/wp-json/indieauth/1.0/token"
+    ],
     "home": [
       "https://garystu.art/"
     ],
@@ -196,7 +206,7 @@
       "https://garystu.art/blog/2021/33/pee/"
     ],
     "author": [
-      "https://garystu.art/blog/author/xxxgarystuxxx/"
+      "https://garystu.art/"
     ]
   },
   "rel-urls": {
@@ -239,6 +249,34 @@
       "type": "text/css"
     },
     "http://garystu.art/wp-includes/css/classic-themes.min.css?ver=1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://garystu.art/wp-content/plugins/age-gate/dist/main.css?ver=3.0.11": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://garystu.art/wp-content/plugins/hide-featured-image-on-all-single-pagepost//tnado-styles.css?ver=6.1.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://garystu.art/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://garystu.art/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3": {
       "rels": [
         "stylesheet"
       ],
@@ -318,6 +356,16 @@
       ],
       "type": "application/wlwmanifest+xml"
     },
+    "https://garystu.art/wp-json/indieauth/1.0/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://garystu.art/wp-json/indieauth/1.0/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
     "https://garystu.art/": {
       "rels": [
         "home"
@@ -329,13 +377,6 @@
       ],
       "title": "Permalink to test",
       "text": "\n\t\t\t\t\ttest\t\t\t\t"
-    },
-    "https://garystu.art/blog/author/xxxgarystuxxx/": {
-      "rels": [
-        "author"
-      ],
-      "title": "View all posts by GaryStu",
-      "text": "GaryStu"
     },
     "https://garystu.art/blog/2021/33/pee/": {
       "rels": [

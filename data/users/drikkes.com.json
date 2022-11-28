@@ -14,12 +14,14 @@
     "alternate": [
       "https://drikkes.com/?feed=rss2",
       "https://drikkes.com/?feed=comments-rss2",
-      "https://drikkes.com/index.php?rest_route=/wp/v2/pages/16668",
+      "https://drikkes.com/?feed=rss2&page_id=16885",
+      "https://drikkes.com/index.php?rest_route=/wp/v2/pages/16885",
       "https://drikkes.com/index.php?rest_route=%2Foembed%2F1.0%2Fembed&url=https%3A%2F%2Fdrikkes.com%2F",
       "https://drikkes.com/index.php?rest_route=%2Foembed%2F1.0%2Fembed&url=https%3A%2F%2Fdrikkes.com%2F&format=xml"
     ],
     "stylesheet": [
       "https://c0.wp.com/c/6.1.1/wp-includes/blocks/navigation/style.min.css",
+      "https://c0.wp.com/c/6.1.1/wp-includes/blocks/social-links/style.min.css",
       "https://drikkes.com/wp-content/plugins/indieweb/static/css/indieweb-bw.css?ver=3.4.7",
       "https://drikkes.com/wp-content/plugins/indieweb-post-kinds/css/kind.min.css?ver=3.6.2",
       "https://drikkes.com/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3",
@@ -70,11 +72,20 @@
     "micropub": [
       "https://drikkes.com/index.php?rest_route=/micropub/1.0/endpoint"
     ],
+    "webmention": [
+      "https://drikkes.com/index.php?rest_route=/webmention/1.0/endpoint"
+    ],
+    "http://webmention.org/": [
+      "https://drikkes.com/index.php?rest_route=/webmention/1.0/endpoint"
+    ],
     "home": [
       "https://drikkes.com/"
     ],
     "noopener": [
-      "https://standardresume.co/r/hspree"
+      "mailto:spree@duck.com?subject=Hallo&body=Lieber%20Hendrik%2C%0A..."
+    ],
+    "noreferrer": [
+      "mailto:spree@duck.com?subject=Hallo&body=Lieber%20Hendrik%2C%0A..."
     ]
   },
   "rel-urls": {
@@ -132,7 +143,20 @@
       "title": "Hendrik Spree » Kommentar-Feed",
       "type": "application/rss+xml"
     },
+    "https://drikkes.com/?feed=rss2&page_id=16885": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Hendrik Spree » Hi! Nett von Dir, daß Du hier vorbeischaust. Kommentar-Feed",
+      "type": "application/rss+xml"
+    },
     "https://c0.wp.com/c/6.1.1/wp-includes/blocks/navigation/style.min.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://c0.wp.com/c/6.1.1/wp-includes/blocks/social-links/style.min.css": {
       "rels": [
         "stylesheet"
       ],
@@ -179,7 +203,7 @@
         "https://api.w.org/"
       ]
     },
-    "https://drikkes.com/index.php?rest_route=/wp/v2/pages/16668": {
+    "https://drikkes.com/index.php?rest_route=/wp/v2/pages/16885": {
       "rels": [
         "alternate"
       ],
@@ -285,11 +309,17 @@
         "micropub"
       ]
     },
-    "https://standardresume.co/r/hspree": {
+    "https://drikkes.com/index.php?rest_route=/webmention/1.0/endpoint": {
       "rels": [
-        "noopener"
+        "webmention"
+      ]
+    },
+    "mailto:spree@duck.com?subject=Hallo&body=Lieber%20Hendrik%2C%0A...": {
+      "rels": [
+        "noopener",
+        "noreferrer"
       ],
-      "text": "Lebenslauf"
+      "text": "Programm öffnen"
     }
   }
 }

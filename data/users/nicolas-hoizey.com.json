@@ -44,17 +44,46 @@
         "h-entry"
       ],
       "properties": {
-        "photo": [
+        "name": [
+          "Layout & Grid in Design Systems"
+        ],
+        "url": [
+          "https://nicolas-hoizey.com/links/2022/11/27/layout-and-grid-in-design-systems/"
+        ],
+        "author": [
           {
-            "value": "https://res.cloudinary.com/nho/image/fetch/q_auto,f_auto,w_auto:100:32,c_limit/https://res.cloudinary.com/nho/image/twitter_name/donniedamato",
-            "srcset": {
-              "1x": "https://res.cloudinary.com/nho/image/fetch/q_auto",
-              "32w": "https://nicolas-hoizey.com/c_limit/https://res.cloudinary.com/nho/image/twitter_name/donniedamato",
-              "48w": "https://nicolas-hoizey.com/c_limit/https://res.cloudinary.com/nho/image/twitter_name/donniedamato"
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "url": [
+                "https://nicolas-hoizey.com/"
+              ],
+              "name": [
+                "Nicolas Hoizey"
+              ]
             },
-            "alt": "Donnie D'Amato avatar"
+            "value": "https://nicolas-hoizey.com/"
           }
         ],
+        "published": [
+          "2022-11-27T15:36:29.000+01:00"
+        ],
+        "category": [
+          "Grid",
+          "CSS",
+          "Design System"
+        ],
+        "summary": [
+          "This interdisciplinary disconnect around grid’s mental model affects how teams execute grid. In a broken, unidirectional, “developer handoff” process, design comps are treated as sacrosanct, and developers see that 12-column semi-transparent pink guideline as a hard requirement that must implemented exactly as articulated by the static design tool. This is how a “how to do a 12-column grid in HTML/CSS?” Google search ultimately led to massive success for tools like Bootstrap. Despite the introduction of many new CSS technologies and layout techniques over many years, this antiquated 12-column mental model still dominates a lot of conversations around layout and grid."
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
         "name": [
           "gridless.design"
         ],
@@ -96,17 +125,6 @@
         "h-entry"
       ],
       "properties": {
-        "photo": [
-          {
-            "value": "https://res.cloudinary.com/nho/image/fetch/q_auto,f_auto,w_auto:100:32,c_limit/https://res.cloudinary.com/nho/image/twitter_name/trysmudford",
-            "srcset": {
-              "1x": "https://res.cloudinary.com/nho/image/fetch/q_auto",
-              "32w": "https://nicolas-hoizey.com/c_limit/https://res.cloudinary.com/nho/image/twitter_name/trysmudford",
-              "48w": "https://nicolas-hoizey.com/c_limit/https://res.cloudinary.com/nho/image/twitter_name/trysmudford"
-            },
-            "alt": "Trys Mudford avatar"
-          }
-        ],
         "name": [
           "It's all about that space"
         ],
@@ -212,45 +230,6 @@
         ],
         "summary": [
           ""
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "name": [
-          "Languages on Mastodon"
-        ],
-        "url": [
-          "https://nicolas-hoizey.com/links/2022/11/24/languages-on-mastodon/"
-        ],
-        "author": [
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "url": [
-                "https://nicolas-hoizey.com/"
-              ],
-              "name": [
-                "Nicolas Hoizey"
-              ]
-            },
-            "value": "https://nicolas-hoizey.com/"
-          }
-        ],
-        "published": [
-          "2022-11-24T11:02:18.000+01:00"
-        ],
-        "category": [
-          "Mastodon",
-          "Fediverse"
-        ],
-        "summary": [
-          "I was not aware of this new Mastodon feature, this is great!"
         ]
       }
     },
@@ -411,8 +390,9 @@
     ],
     "tag": [
       "https://nicolas-hoizey.com/tags/grid/",
-      "https://nicolas-hoizey.com/tags/flexbox/",
       "https://nicolas-hoizey.com/tags/css/",
+      "https://nicolas-hoizey.com/tags/design-system/",
+      "https://nicolas-hoizey.com/tags/flexbox/",
       "https://nicolas-hoizey.com/tags/layout/",
       "https://nicolas-hoizey.com/tags/cms/",
       "https://nicolas-hoizey.com/tags/forestry/",
@@ -420,7 +400,6 @@
       "https://nicolas-hoizey.com/tags/indieweb/",
       "https://nicolas-hoizey.com/tags/mastodon/",
       "https://nicolas-hoizey.com/tags/posse/",
-      "https://nicolas-hoizey.com/tags/fediverse/",
       "https://nicolas-hoizey.com/tags/jamstack/",
       "https://nicolas-hoizey.com/tags/performance/",
       "https://nicolas-hoizey.com/tags/api/",
@@ -581,17 +560,23 @@
       ],
       "text": "Grid"
     },
-    "https://nicolas-hoizey.com/tags/flexbox/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Flexbox"
-    },
     "https://nicolas-hoizey.com/tags/css/": {
       "rels": [
         "tag"
       ],
       "text": "CSS"
+    },
+    "https://nicolas-hoizey.com/tags/design-system/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Design System"
+    },
+    "https://nicolas-hoizey.com/tags/flexbox/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Flexbox"
     },
     "https://nicolas-hoizey.com/tags/layout/": {
       "rels": [
@@ -634,12 +619,6 @@
         "tag"
       ],
       "text": "POSSE"
-    },
-    "https://nicolas-hoizey.com/tags/fediverse/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Fediverse"
     },
     "https://nicolas-hoizey.com/tags/jamstack/": {
       "rels": [

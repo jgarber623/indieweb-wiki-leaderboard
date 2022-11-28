@@ -117,8 +117,8 @@
       "https://jeffpaul.com/feed/jf2/"
     ],
     "stylesheet": [
-      "https://jeffpaul.com/wp-content/plugins/gutenberg/build/block-library/blocks/navigation/style.css?ver=14.5.0",
-      "https://jeffpaul.com/wp-content/plugins/gutenberg/build/block-library/blocks/social-links/style.css?ver=14.5.0",
+      "https://jeffpaul.com/wp-content/plugins/gutenberg/build/block-library/blocks/navigation/style.css?ver=14.6.1",
+      "https://jeffpaul.com/wp-content/plugins/gutenberg/build/block-library/blocks/social-links/style.css?ver=14.6.1",
       "https://jeffpaul.com/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
       "https://jeffpaul.com/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3",
       "https://jeffpaul.com/wp-content/plugins/syndication-links/css/syn.min.css?ver=4.3.12"
@@ -132,13 +132,26 @@
     "wlwmanifest": [
       "https://jeffpaul.com/wp-includes/wlwmanifest.xml"
     ],
+    "authorization_endpoint": [
+      "https://jeffpaul.com/wp-json/indieauth/1.0/auth"
+    ],
+    "token_endpoint": [
+      "https://jeffpaul.com/wp-json/indieauth/1.0/token"
+    ],
     "me": [
       "https://github.com/jeffpaul",
       "https://twitter.com/jeffpaul",
+      "https://www.flickr.com/people/jbpaul17",
+      "https://mastodon.social/@jeffpaul",
       "https://www.linkedin.com/in/jeffpaul/",
       "https://profiles.wordpress.org/jeffpaul/",
-      "https://www.youtube.com/@jeffpaul",
-      "https://mastodon.social/@jeffpaul"
+      "https://www.youtube.com/@jeffpaul"
+    ],
+    "micropub_media": [
+      "https://jeffpaul.com/wp-json/micropub/1.0/media"
+    ],
+    "micropub": [
+      "https://jeffpaul.com/wp-json/micropub/1.0/endpoint"
     ],
     "home": [
       "https://jeffpaul.com/"
@@ -174,13 +187,13 @@
       ],
       "type": "application/jf2feed+json"
     },
-    "https://jeffpaul.com/wp-content/plugins/gutenberg/build/block-library/blocks/navigation/style.css?ver=14.5.0": {
+    "https://jeffpaul.com/wp-content/plugins/gutenberg/build/block-library/blocks/navigation/style.css?ver=14.6.1": {
       "rels": [
         "stylesheet"
       ],
       "media": "all"
     },
-    "https://jeffpaul.com/wp-content/plugins/gutenberg/build/block-library/blocks/social-links/style.css?ver=14.5.0": {
+    "https://jeffpaul.com/wp-content/plugins/gutenberg/build/block-library/blocks/social-links/style.css?ver=14.6.1": {
       "rels": [
         "stylesheet"
       ],
@@ -222,6 +235,16 @@
       ],
       "type": "application/wlwmanifest+xml"
     },
+    "https://jeffpaul.com/wp-json/indieauth/1.0/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://jeffpaul.com/wp-json/indieauth/1.0/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
     "https://github.com/jeffpaul": {
       "rels": [
         "me"
@@ -230,6 +253,26 @@
     "https://twitter.com/jeffpaul": {
       "rels": [
         "me"
+      ]
+    },
+    "https://www.flickr.com/people/jbpaul17": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://mastodon.social/@jeffpaul": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://jeffpaul.com/wp-json/micropub/1.0/media": {
+      "rels": [
+        "micropub_media"
+      ]
+    },
+    "https://jeffpaul.com/wp-json/micropub/1.0/endpoint": {
+      "rels": [
+        "micropub"
       ]
     },
     "https://jeffpaul.com/": {
@@ -255,12 +298,6 @@
         "me"
       ],
       "text": "YouTube"
-    },
-    "https://mastodon.social/@jeffpaul": {
-      "rels": [
-        "me"
-      ],
-      "text": "Mastodon"
     },
     "https://wordpress.org/": {
       "rels": [
