@@ -7,7 +7,7 @@
       "properties": {
         "photo": [
           {
-            "value": "http://catgirlin.space/images/pfp.jpg",
+            "value": "https://catgirlin.space/images/pfp.jpg",
             "alt": "kitt"
           }
         ],
@@ -40,10 +40,10 @@
                 "tracking my salmon run jobs"
               ],
               "url": [
-                "http://catgirlin.space/posts/tracking-my-salmon-run-jobs/"
+                "https://catgirlin.space/posts/tracking-my-salmon-run-jobs/"
               ]
             },
-            "value": "http://catgirlin.space/posts/tracking-my-salmon-run-jobs/"
+            "value": "https://catgirlin.space/posts/tracking-my-salmon-run-jobs/"
           },
           {
             "type": [
@@ -54,10 +54,10 @@
                 "moving to the fediverse and indieweb"
               ],
               "url": [
-                "http://catgirlin.space/posts/moving-to-the-fediverse-and-indieweb/"
+                "https://catgirlin.space/posts/moving-to-the-fediverse-and-indieweb/"
               ]
             },
-            "value": "http://catgirlin.space/posts/moving-to-the-fediverse-and-indieweb/"
+            "value": "https://catgirlin.space/posts/moving-to-the-fediverse-and-indieweb/"
           },
           {
             "type": [
@@ -68,10 +68,10 @@
                 "building a splatoon stats tracker"
               ],
               "url": [
-                "http://catgirlin.space/posts/building-a-splatoon-stats-tracker/"
+                "https://catgirlin.space/posts/building-a-splatoon-stats-tracker/"
               ]
             },
-            "value": "http://catgirlin.space/posts/building-a-splatoon-stats-tracker/"
+            "value": "https://catgirlin.space/posts/building-a-splatoon-stats-tracker/"
           }
         ]
       }
@@ -84,8 +84,17 @@
     "pingback": [
       "https://webmention.io/catgirlin.space/xmlrpc"
     ],
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "microsub": [
+      "https://aperture.p3k.io/microsub/804"
+    ],
     "pgpkey": [
-      "http://catgirlin.space/key.txt"
+      "https://catgirlin.space/key.txt"
     ],
     "me": [
       "https://fediverse.catgirlin.space/catgirl",
@@ -93,13 +102,13 @@
       "mailto:catgirl@catgirlin.space"
     ],
     "alternate": [
-      "http://catgirlin.space/feed.xml"
+      "https://catgirlin.space/feed.xml"
     ],
     "icon": [
-      "http://catgirlin.space/images/pfp.jpg"
+      "https://catgirlin.space/images/pfp.jpg"
     ],
     "stylesheet": [
-      "http://catgirlin.space/index.css"
+      "https://catgirlin.space/index.css"
     ],
     "author": [
       "https://catgirlin.space/"
@@ -116,7 +125,22 @@
         "pingback"
       ]
     },
-    "http://catgirlin.space/key.txt": {
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://aperture.p3k.io/microsub/804": {
+      "rels": [
+        "microsub"
+      ]
+    },
+    "https://catgirlin.space/key.txt": {
       "rels": [
         "pgpkey"
       ]
@@ -126,19 +150,19 @@
         "me"
       ]
     },
-    "http://catgirlin.space/feed.xml": {
+    "https://catgirlin.space/feed.xml": {
       "rels": [
         "alternate"
       ],
       "title": "atom feed",
       "type": "application/atom+xml"
     },
-    "http://catgirlin.space/images/pfp.jpg": {
+    "https://catgirlin.space/images/pfp.jpg": {
       "rels": [
         "icon"
       ]
     },
-    "http://catgirlin.space/index.css": {
+    "https://catgirlin.space/index.css": {
       "rels": [
         "stylesheet"
       ]

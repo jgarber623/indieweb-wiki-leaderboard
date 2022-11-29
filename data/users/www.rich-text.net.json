@@ -40,10 +40,10 @@
       "https://www.rich-text.net/assets/favicon.ico"
     ],
     "authorization_endpoint": [
-      "https://indieauth.com/auth"
+      "https://micropub.rich-text.net/auth"
     ],
     "token_endpoint": [
-      "https://micropub.rich-text.net/token"
+      "https://micropub.rich-text.net/auth/token"
     ],
     "microsub": [
       "https://aperture.p3k.io/microsub/176"
@@ -76,12 +76,12 @@
       ],
       "type": "image/x-icon"
     },
-    "https://indieauth.com/auth": {
+    "https://micropub.rich-text.net/auth": {
       "rels": [
         "authorization_endpoint"
       ]
     },
-    "https://micropub.rich-text.net/token": {
+    "https://micropub.rich-text.net/auth/token": {
       "rels": [
         "token_endpoint"
       ]

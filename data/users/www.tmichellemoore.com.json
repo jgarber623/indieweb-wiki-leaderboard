@@ -42,7 +42,12 @@
     "dns-prefetch": [
       "https://www.googletagmanager.com/",
       "https://i0.wp.com/",
-      "https://c0.wp.com/"
+      "https://c0.wp.com/",
+      "https://widgets.wp.com/",
+      "https://s0.wp.com/",
+      "https://0.gravatar.com/",
+      "https://1.gravatar.com/",
+      "https://2.gravatar.com/"
     ],
     "alternate": [
       "https://www.tmichellemoore.com/feed/",
@@ -79,6 +84,9 @@
     "shortlink": [
       "https://www.tmichellemoore.com/"
     ],
+    "preconnect": [
+      "https://cdnjs.cloudflare.com/"
+    ],
     "authorization_endpoint": [
       "https://www.tmichellemoore.com/wp-json/indieauth/1.0/auth"
     ],
@@ -102,12 +110,6 @@
     "apple-touch-icon": [
       "https://i0.wp.com/www.tmichellemoore.com/wp-content/uploads/2022/05/M-Icon-200.png?fit=180%2C180&ssl=1"
     ],
-    "micropub_media": [
-      "https://www.tmichellemoore.com/wp-json/micropub/1.0/media"
-    ],
-    "micropub": [
-      "https://www.tmichellemoore.com/wp-json/micropub/1.0/endpoint"
-    ],
     "home": [
       "https://www.tmichellemoore.com/"
     ]
@@ -124,6 +126,31 @@
       ]
     },
     "https://c0.wp.com/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
+    "https://widgets.wp.com/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
+    "https://s0.wp.com/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
+    "https://0.gravatar.com/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
+    "https://1.gravatar.com/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
+    "https://2.gravatar.com/": {
       "rels": [
         "dns-prefetch"
       ]
@@ -249,6 +276,11 @@
       ],
       "type": "text/xml+oembed"
     },
+    "https://cdnjs.cloudflare.com/": {
+      "rels": [
+        "preconnect"
+      ]
+    },
     "https://www.tmichellemoore.com/wp-json/indieauth/1.0/auth": {
       "rels": [
         "authorization_endpoint"
@@ -302,16 +334,6 @@
     "https://i0.wp.com/www.tmichellemoore.com/wp-content/uploads/2022/05/M-Icon-200.png?fit=180%2C180&ssl=1": {
       "rels": [
         "apple-touch-icon"
-      ]
-    },
-    "https://www.tmichellemoore.com/wp-json/micropub/1.0/media": {
-      "rels": [
-        "micropub_media"
-      ]
-    },
-    "https://www.tmichellemoore.com/wp-json/micropub/1.0/endpoint": {
-      "rels": [
-        "micropub"
       ]
     },
     "https://www.linkedin.com/in/tmichellemoore/": {

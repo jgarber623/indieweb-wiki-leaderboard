@@ -4,6 +4,26 @@
       "type": [
         "h-full"
       ],
+      "properties": {
+        "name": [
+          "Ahmet ALMAZ"
+        ],
+        "photo": [
+          {
+            "value": "https://www.news47ell.com/_next/image?url=%2Fimages%2Fothers%2Fme.png&w=1920&q=75",
+            "srcset": {
+              "1x": "https://www.news47ell.com/_next/image?url=%2Fimages%2Fothers%2Fme.png&w=750&q=75",
+              "2x": "https://www.news47ell.com/_next/image?url=%2Fimages%2Fothers%2Fme.png&w=1920&q=75"
+            },
+            "alt": "Ahmet ALMAZ"
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-full"
+      ],
       "properties": {}
     },
     {
@@ -75,16 +95,22 @@
             "alt": "Ahmet ALMAZ"
           }
         ],
+        "email": [
+          "mailto:ahmet@news47ell.com"
+        ],
         "name": [
           "Ahmet ALMAZ"
         ],
-        "email": [
-          "mailto:ahmet@news47ell.com"
+        "url": [
+          "https://www.news47ell.com/"
+        ],
+        "uid": [
+          "https://www.news47ell.com/"
         ],
         "nickname": [
           "Music47ell"
         ],
-        "note": [
+        "role": [
           "Founder and Editor-in-Chief"
         ],
         "country-name": [
@@ -92,6 +118,9 @@
         ],
         "country-flag": [
           ""
+        ],
+        "note": [
+          "My name is Ahmet. I'm Full Stack Developer from Türkiye 🇹🇷. This site is where I conduct all my experiments, and share my thoughts and ideas."
         ]
       }
     }
@@ -121,31 +150,64 @@
     "preconnect": [
       "https://vitals.vercel-insights.com/"
     ],
+    "webmention": [
+      "https://webmention.io/www.news47ell.com/webmention"
+    ],
+    "pingback": [
+      "https://webmention.io/www.news47ell.com/xmlrpc"
+    ],
     "preload": [
-      "https://www.news47ell.com/_next/static/css/507de4475e6f153d.css"
+      "https://www.news47ell.com/_next/static/css/a28fe04be2f8fbe5.css"
     ],
     "stylesheet": [
-      "https://www.news47ell.com/_next/static/css/507de4475e6f153d.css"
+      "https://www.news47ell.com/_next/static/css/a28fe04be2f8fbe5.css"
+    ],
+    "me": [
+      "https://twitter.com/music47ell",
+      "https://github.com/music47ell",
+      "https://www.linkedin.com/in/music47ell",
+      "https://mastodon.social/@music47ell",
+      "mailto:ahmet@news47ell.com"
     ],
     "noopener": [
-      "https://www.news47ell.com/",
+      "https://twitter.com/music47ell",
+      "https://github.com/music47ell",
+      "https://www.linkedin.com/in/music47ell",
+      "https://mastodon.social/@music47ell",
       "https://supabase.io/",
       "https://nextjs.org/",
       "https://tailwindcss.com/",
       "https://vercel.com/",
       "mailto:ahmet@news47ell.com",
+      "https://www.news47ell.com/",
       "https://xn--sr8hvo.ws/%F0%9F%9B%81%F0%9F%9A%BC%F0%9F%A6%83/previous",
       "https://xn--sr8hvo.ws/%F0%9F%9B%81%F0%9F%9A%BC%F0%9F%A6%83/next"
     ],
     "noreferrer": [
-      "https://www.news47ell.com/",
+      "https://twitter.com/music47ell",
+      "https://github.com/music47ell",
+      "https://www.linkedin.com/in/music47ell",
+      "https://mastodon.social/@music47ell",
       "https://supabase.io/",
       "https://nextjs.org/",
       "https://tailwindcss.com/",
       "https://vercel.com/",
       "mailto:ahmet@news47ell.com",
+      "https://www.news47ell.com/",
       "https://xn--sr8hvo.ws/%F0%9F%9B%81%F0%9F%9A%BC%F0%9F%A6%83/previous",
       "https://xn--sr8hvo.ws/%F0%9F%9B%81%F0%9F%9A%BC%F0%9F%A6%83/next"
+    ],
+    "undefined": [
+      "https://supabase.io/",
+      "https://nextjs.org/",
+      "https://tailwindcss.com/",
+      "https://vercel.com/",
+      "https://www.news47ell.com/",
+      "https://xn--sr8hvo.ws/%F0%9F%9B%81%F0%9F%9A%BC%F0%9F%A6%83/previous",
+      "https://xn--sr8hvo.ws/%F0%9F%9B%81%F0%9F%9A%BC%F0%9F%A6%83/next"
+    ],
+    "authn": [
+      "mailto:ahmet@news47ell.com"
     ]
   },
   "rel-urls": {
@@ -204,41 +266,89 @@
         "preconnect"
       ]
     },
-    "https://www.news47ell.com/_next/static/css/507de4475e6f153d.css": {
+    "https://webmention.io/www.news47ell.com/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://webmention.io/www.news47ell.com/xmlrpc": {
+      "rels": [
+        "pingback"
+      ]
+    },
+    "https://www.news47ell.com/_next/static/css/a28fe04be2f8fbe5.css": {
       "rels": [
         "preload"
       ]
     },
+    "https://twitter.com/music47ell": {
+      "rels": [
+        "me",
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "Twitter iconTwitter"
+    },
+    "https://github.com/music47ell": {
+      "rels": [
+        "me",
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "GitHubGitHub"
+    },
+    "https://www.linkedin.com/in/music47ell": {
+      "rels": [
+        "me",
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "LinkedInLinkedIn"
+    },
+    "https://mastodon.social/@music47ell": {
+      "rels": [
+        "me",
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "MastodonMastodon"
+    },
     "https://supabase.io/": {
       "rels": [
         "noopener",
-        "noreferrer"
+        "noreferrer",
+        "undefined"
       ],
       "text": "Supabase"
     },
     "https://nextjs.org/": {
       "rels": [
         "noopener",
-        "noreferrer"
+        "noreferrer",
+        "undefined"
       ],
       "text": "Next.js"
     },
     "https://tailwindcss.com/": {
       "rels": [
         "noopener",
-        "noreferrer"
+        "noreferrer",
+        "undefined"
       ],
       "text": "Tailwind CSS"
     },
     "https://vercel.com/": {
       "rels": [
         "noopener",
-        "noreferrer"
+        "noreferrer",
+        "undefined"
       ],
       "text": "Vercel"
     },
     "mailto:ahmet@news47ell.com": {
       "rels": [
+        "authn",
+        "me",
         "noopener",
         "noreferrer"
       ],
@@ -247,14 +357,16 @@
     "https://xn--sr8hvo.ws/%F0%9F%9B%81%F0%9F%9A%BC%F0%9F%A6%83/previous": {
       "rels": [
         "noopener",
-        "noreferrer"
+        "noreferrer",
+        "undefined"
       ],
       "text": "←"
     },
     "https://xn--sr8hvo.ws/%F0%9F%9B%81%F0%9F%9A%BC%F0%9F%A6%83/next": {
       "rels": [
         "noopener",
-        "noreferrer"
+        "noreferrer",
+        "undefined"
       ],
       "text": "→"
     }

@@ -38,6 +38,9 @@
     "micropub": [
       "https://stephensauceda.com/micropub"
     ],
+    "alternate": [
+      "https://stephensauceda.com/feed.xml"
+    ],
     "stylesheet": [
       "https://stephensauceda.com/assets/css/main.css"
     ],
@@ -72,6 +75,13 @@
       "rels": [
         "micropub"
       ]
+    },
+    "https://stephensauceda.com/feed.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "RSS Feed",
+      "type": "application/rss+xml"
     },
     "https://stephensauceda.com/assets/css/main.css": {
       "rels": [

@@ -40,6 +40,65 @@
           "properties": {
             "content": [
               {
+                "html": "<p>Het is een leuk concept, zo'n zuignapafwasborstel, maar telkens als ik thuis kom ligt hij gewoon in de wasbak; dat kon die oude ook wel.</p>",
+                "value": "Het is een leuk concept, zo'n zuignapafwasborstel, maar telkens als ik thuis kom ligt hij gewoon in de wasbak; dat kon die oude ook wel."
+              }
+            ],
+            "url": [
+              "https://seblog.nl/2022/11/28/2/zuignapafwasborstel"
+            ],
+            "published": [
+              "2022-11-28T22:32:45+0000"
+            ],
+            "updated": [
+              "2022-11-28T22:34:09+0000"
+            ],
+            "syndication": [
+              "https://mastodon.social/@sebsel/109423806188303700"
+            ],
+            "uid": [
+              "https://seblog.nl/2022/332/2"
+            ],
+            "author": [
+              "https://seblog.nl/"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<p>It seems like a lot of people (<a href=\"https://brainbaking.com/post/2022/11/bloggers-dump-your-twitter-card-tags/\">W</a>, <a href=\"https://jlelse.blog/links/2022/11/dump-twitter-card-tags\">J</a> and <a href=\"https://hacdias.com/2022/11/28/10h34m54s87\">H</a>) are cleaning up their <code>&lt;head&gt;</code>. I always tried to be minimalist in my HTML (and I did meditate back when I build the current version of my site), so my head was actually already rather empty. I did however removed 'add Twitter metadata' from my personal backlog. Feels freeing.</p>",
+                "value": "It seems like a lot of people (W, J and H) are cleaning up their <head>. I always tried to be minimalist in my HTML (and I did meditate back when I build the current version of my site), so my head was actually already rather empty. I did however removed 'add Twitter metadata' from my personal backlog. Feels freeing."
+              }
+            ],
+            "url": [
+              "https://seblog.nl/2022/11/28/1/twitter-metadata"
+            ],
+            "published": [
+              "2022-11-28T16:14:33+0000"
+            ],
+            "updated": [
+              "2022-11-28T16:14:33+0000"
+            ],
+            "uid": [
+              "https://seblog.nl/2022/332/1"
+            ],
+            "author": [
+              "https://seblog.nl/"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
                 "html": "<p>Van de week boostte ik op Mastodon twee toots, over <a href=\"https://tech.lgbt/@laurakm/109370867899322648\">Twitter</a> en over <a href=\"https://mastodon.me.uk/@Floppy/109376014036726541\">Github</a>, maar zojuist had ik precies diezelfde ervaring op Youtube. Een popupje vertelde me dat ik nu ook posts en videos kan 'delen met mijn publiek' en mijn eerste reactie was: mijn publiek op Youtube, hoezo op Youtube?</p>\n<p>Ik hoop dat meer en meer mensen dit blijven hebben. Het is zo'n verademing als die muren weg zijn.</p>",
                 "value": "Van de week boostte ik op Mastodon twee toots, over Twitter en over Github, maar zojuist had ik precies diezelfde ervaring op Youtube. Een popupje vertelde me dat ik nu ook posts en videos kan 'delen met mijn publiek' en mijn eerste reactie was: mijn publiek op Youtube, hoezo op Youtube?\nIk hoop dat meer en meer mensen dit blijven hebben. Het is zo'n verademing als die muren weg zijn."
               }
@@ -669,75 +728,6 @@
               "tmux"
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Storing posts by juggling with Git internals"
-            ],
-            "content": [
-              {
-                "html": "<p>I have been wanting to rework the core of this website for a couple of years now, but since the current setup still works, and since I have many other things to do, and finally since I am very picky about how I <em>want</em> it to work, I have never really finished this part at all. This makes me stuck at the save version of this site, both visually as behind the scenes.</p>\n<p>Now that I am in between jobs I wanted to work on it a bit more, but I still do not have time enough to fully finish it. I guess it all comes down to a few choices I have to make regarding trade-offs. In order to make better decisions, I wanted document my current storage and the one I have been working on. After I wrote it all out I think I am deciding not to use it, but it was a nice exploration so I will share it anyway.</p>\n<p>The description heavily leans on some knowledge about Git, which is software for versioning your code, or in this case, plain text files. I will try to explain a bit along the way but it is useful to have some familiarity with it already.</p>\n<p><em>tl;dr: I did fancy with Git but might not pursue.</em></p>\n<h2>How it is currently done</h2>\n<p>At the time of writing, my posts are stored in a plain text format with a lot of folders. It is derived from the format which the <a href=\"https://getkirby.com/\">Kirby CMS</a> expects: folders for pages with text files within it, of which the name of the text file dictates the template that is being used to render the page. In my case, it is always <code>entry.txt</code>.</p>\n<p>I have one folder per year, one folder per day of the year and one folder per post of the day. In that last folder is the <code>entry.txt</code> and some other files related to the post, like pictures, but also metadata like received and sent <a href=\"https://indieweb.org/Webmention\">Webmentions</a>.</p>\n<p>An example of the <code>tree</code> view is below. It shows two entries on two days in one year. Note that days and years also have their own <code>.txt</code> file that is actually almost empty and pretty much useless in this setup, but still required for Kirby to work properly. The first day of the year my site is broken because it does not automatically create the required <code>year.txt</code> (or did I fix that finally?).</p>\n<pre><code>./content\n└── 2022\n    ├── 001\n    │   ├── 1\n    │   │   └── entry.txt\n    │   │   ├── .webmentions\n    │   │   │   ├── 1641117941-f6bc3209f3f33f0cb8e4d92e5d46b5090b53aa11.json\n    │   │   │   └── pings.json\n    │   └── day.txt\n    ├── 002\n    │   ├── 1\n    │   │   ├── some_image.jpg\n    │   │   └── entry.txt\n    │   └── day.txt\n    └── year.txt</code></pre>\n<p>Also note that there is a hidden <code>.webmentions</code> folder which contains a <code>pings.json</code> for all the sent webmentions and a JSON file with timestamp and content hash in the name for every received webmention. Not in the diagram but also present are some other folders for pages like <code>./login/login.txt</code> (because that is how Kirby works) and <code>./isbn/9780349411903/book.txt</code> (for <a href=\"https://seblog.nl/isbn/9780349411903\">books</a>).</p>\n<p>All these files are stored in a Git repository, which I <em>manually</em> update every so often (more bimonthly than weekly, sadly) via SSH to my server. I give it a very generic commit name (’sync’ or so) and push to a private repo on Github, which takes a while because the commits and the repo contain all those images and all those folders.</p>\n<h2>What is wrong with this</h2>\n<p>The main point of wanting to move off of this structure by Kirby, is that it requires those placeholder pages in my content folder. I have no need for a <code>./login/login.txt</code>: the login page is just a feature of the software and should be handled by that part of the code. But at least that file contains some text for that page: the files for <code>year.txt</code> and <code>day.txt</code> are completely useless.</p>\n<p>Another point is that I want to make the Git commits automatically with every <a href=\"https://indieweb.org/Micropub\">Micropub</a> request: Git provides me with a history, but only if I actually commit the files once I changed them. Also, if I do not push the changes to Github, I have no backup of recent posts.</p>\n<p>The metadata of the received and sent Webmentions are now also available in the repo. This is nice, as it stores the information right next to the post it belongs to, but on the other hand it feels kind of polluting: these Webmentions contain content by <em>others</em>, where as the rest of the content is by me. There is some other external content hidden in the <code>entry.txt</code> file but I’ll get to that later.</p>\n<p>The last point is that the full size images are stored in the repo and every book and article about Git says that you should not use it to store big files in it. Doing a <code>git status</code> takes a while and also the pushes are much slower than any other Git repository I work with.</p>\n<h2>Git history: the Git Object Model</h2>\n<p>Before I go further into the avenue I am taking to solve the problem, I need to explain a bit about the Git Object Model, also known as ‘how Git works under the hood’. For a more thorough explanation, see <a href=\"https://git-scm.com/book/en/v2/Git-Internals-Git-Objects\">this chapter</a> in the Git Book.</p>\n<p>As you’ll learn from that chapter, every object is represented as a file, referenced by the SHA1 hash of its contents. And there are three (no, four) types of objects:</p>\n<ul>\n<li>\n<strong>blobs</strong>, which are the contents of files tracked by Git (and thus also the versions of those files)</li>\n<li>\n<strong>trees</strong>, which are listings of filenames with references to blobs or other trees. These trees together create the file structure of a version.</li>\n<li>\n<strong>commits</strong>, which are versions. A commit contains a reference to the root tree of the files you are tracking, a parent commit (the previous version) and a message and some metadata.</li>\n<li>\n<strong>tags</strong>, are not mentioned by the chapter, but do exists: these look like commits, but create a way to store a message with a tag (making annotated tags, I’ll explain plain tags soon).</li>\n</ul>\n<p>Note that Git does not store diffs, it always stores the full contents of every version of the file, albeit zlib compressed and sometimes even packed in a single file, but let’s not get into that right now.</p>\n<p>Git’s tags and branches are just files and folders (they can have <code>/</code> in their names) which contain the hashes (names) of the specific commits they point to. The tags can also point to a tag object, which will then contain a message about the tag (which makes them ‘annotated tags’).</p>\n<p>This all brings me to the final point about my storage: for every new post, Git has to create a lot of files. First, it needs to add a blob for the <code>entry.txt</code>, possibly also a blob for the image and blobs for other metadata. Then it needs to create a tree for the entry folder, listing <code>entry.txt</code> and if present the filenames of the images and metadata files. Then it creates a new tree for the day, with all the existing entries plus the newly created one. Then it creates a new tree for the year, to point to this new version (tree) of the day. Then it creates a new tree for the root, with this new version of the year in it. And finally it also needs to create a commit object to point to that new root tree. Every update requires all these new trees. The trees are cheap, but it feels wasteful.</p>\n<p>Also note that a version of a file always relies on the version of all other files. This is what you want for code (code is designed to work with other code), but it does not feel like the right model for posts (I might come back on this tho).</p>\n<p>And there is also the question of identifiers: currently, my posts are identified as year, day of year, number (<code>2022/242/1</code>), but especially that number can only be found in the name of the folder and thus in the tree, not in the blob. I have not yet found a good solution for this, but maybe I am seeing too many problems.</p>\n<h2>The new setup</h2>\n<p>To get rid of some of the trees, I tried to apply my knowledge of the Git Object Model to store my posts in another way. To do this, I used the commands suggested by the chapter in the Git Book in a script that looped over all my files, to store them in a new blank repo to try things out.</p>\n<p>For each year, for each day, for each post, I would find the <code>entry.txt</code> and put the contents in a Git blob with <code>git hash-object -w ./content/2022/242/1/entry.txt</code>. The resulting hash I used in the command <code>git update-index --add --cacheinfo 100644 $hash entry.txt</code> to stage the file for a new tree. I would do that too for all images and related files, and then I would run <code>git write-tree</code> to write the tree and get the hash for it and <code>git commit-tree $hash -m \"commit\"</code> to create a commit based on it (with a bad message indeed). With that last hash I would run <code>git update-ref refs/heads/2022/242/1 $hash</code> to create a branch for that commit. (I contemplate adding an annotated tag in between, for storing some metadata like ‘published at’ date.)</p>\n<p>This would result in a Git repository with over 10,000 branches (I have many posts) neatly organised in folders per year and day. When one were to check out one of these branches, just the files of that posts will appear in the root of your repo: there are no folders. When you check out another branch, other files will appear. This is not how Git usually works, but it decouples all posts from one-another.</p>\n<h2>Multiple types of pages</h2>\n<p>The posts I describe above all follow the year-day-number pattern because they are posts: they are sequential entries tied to a date. There are other objects I track, though, that are not date-specific. One example is topical wiki-style pages: these pages may receive edits over time, but their topic is not tied to a date. (I don’t have these yet.)</p>\n<p>Another example is the books that I track to base my ‘read’ posts off. I haven’t posted them in a while, but I would like to expand this book collection to also include other types of objects to reference, such as movies, games or locations. These objects also have no date to them attached, at least not a date meaningful to my posts.</p>\n<p>I could generate UUIDs for these objects and pages, and store branches for those commits in the same way Git does store it’s objects internally, with a folder per first two characters of the hash (or UUID) and a filename of the rest:</p>\n<pre><code>./refs/heads\n├── 0a\n│   ├── 8342d2-d6f1-4363-a287-a32948d04eaa\n│   └── edcb13-433c-48d2-b683-a407c3a88f57\n└── 3d\n    ├── 243a27-114e-4eee-9bd8-2a51b01939e6\n    ├── 25965b-2da5-422d-abce-f3337fa97fc4\n    └── 611b59-499a-48a0-b931-afe06192e778</code></pre>\n<p>I could even reference the same post/object with multiple identifiers this way. Maybe I want to give every book a UUID, but also reference it by its ISBN. The downside to that, however, is that I need to update both branches to point to the same commit once I make an update do the book-page.</p>\n<h2>Drawbacks of the approach</h2>\n<p>The multiple identifiers are probably not feasible, but there are some other drawbacks too. My main concern is that it is much harder to know whether or not you pushed all the changes: one would have to loop over all 10,000+ branches and perform a push or check. In this loop you would probably have to check out the branch as well. It is of course better to just push right after you make a change, but my point is that the ‘just for sure’ push is a lot of work.</p>\n<p>Another drawback is actually the counter to what I initially was seeking: wiki-style pages might actually reference each other, and thus their version may depend on a version of another page. In this case, you would want the history to capture all the pages, just as the normal Git workings do. My problem was with the date-specific posts, but once you are mixing date-specific and wiki-style pages, you might be better off with the all-file history.</p>\n<p>One problem this whole setup still does not solve is that of large files. The <code>git status</code> command is much faster for it does not have to check all the blobs in the repo to get an answer, but the files are still in the repo, taking up space. And there do exist other solutions for big files in git, such as <a href=\"https://git-lfs.github.com/\">Git LFS</a>, the Large File Storage extension.</p>\n<p>Also, I am still not 100% sure it is a good idea to store metadata in the Git commits and tags. When we already store the identifier in the tree objects, I thought I could also add the ‘published at’ date into the commit. Information about the author is already present, and as my site supports private posts, it also seemed like a reasonable location to store lists of people who can view the post. But again, maybe that should be stored in another way, and not be so deeply integrated with Git.</p>\n<h2>Conclusion</h2>\n<p>It was very helpful to write this all out, for by doing so I made up my mind: this is just all a bit too complicated and way too much deeply coupled to Git internals. I would be throwing out the ‘just plain text files’ principle, because I would store a lot of data in Git’s objects, which are actually not plain text, since they are compressed with a certain algorithm.</p>\n<p>My favourite Git GUI <a href=\"https://git-fork.com/\">Fork</a> is able to work with the monstrous repository my script produced, but many of the features are now strange and unusable, because the repo is so strangely set up. I would have to create my own software to maintain the integrity of the repo and that could lead to bugs and thus faulty data and maybe even data loss.</p>\n<p>I still think there are some nice properties to the system I describe above, but I won’t be using it. But I learned a few new things about Git internals along the way, and I hope you did too.</p>",
-                "value": "I have been wanting to rework the core of this website for a couple of years now, but since the current setup still works, and since I have many other things to do, and finally since I am very picky about how I want it to work, I have never really finished this part at all. This makes me stuck at the save version of this site, both visually as behind the scenes.\nNow that I am in between jobs I wanted to work on it a bit more, but I still do not have time enough to fully finish it. I guess it all comes down to a few choices I have to make regarding trade-offs. In order to make better decisions, I wanted document my current storage and the one I have been working on. After I wrote it all out I think I am deciding not to use it, but it was a nice exploration so I will share it anyway.\nThe description heavily leans on some knowledge about Git, which is software for versioning your code, or in this case, plain text files. I will try to explain a bit along the way but it is useful to have some familiarity with it already.\ntl;dr: I did fancy with Git but might not pursue.\nHow it is currently done\nAt the time of writing, my posts are stored in a plain text format with a lot of folders. It is derived from the format which the Kirby CMS expects: folders for pages with text files within it, of which the name of the text file dictates the template that is being used to render the page. In my case, it is always entry.txt.\nI have one folder per year, one folder per day of the year and one folder per post of the day. In that last folder is the entry.txt and some other files related to the post, like pictures, but also metadata like received and sent Webmentions.\nAn example of the tree view is below. It shows two entries on two days in one year. Note that days and years also have their own .txt file that is actually almost empty and pretty much useless in this setup, but still required for Kirby to work properly. The first day of the year my site is broken because it does not automatically create the required year.txt (or did I fix that finally?).\n./content\n└── 2022\n    ├── 001\n    │   ├── 1\n    │   │   └── entry.txt\n    │   │   ├── .webmentions\n    │   │   │   ├── 1641117941-f6bc3209f3f33f0cb8e4d92e5d46b5090b53aa11.json\n    │   │   │   └── pings.json\n    │   └── day.txt\n    ├── 002\n    │   ├── 1\n    │   │   ├── some_image.jpg\n    │   │   └── entry.txt\n    │   └── day.txt\n    └── year.txt\nAlso note that there is a hidden .webmentions folder which contains a pings.json for all the sent webmentions and a JSON file with timestamp and content hash in the name for every received webmention. Not in the diagram but also present are some other folders for pages like ./login/login.txt (because that is how Kirby works) and ./isbn/9780349411903/book.txt (for books).\nAll these files are stored in a Git repository, which I manually update every so often (more bimonthly than weekly, sadly) via SSH to my server. I give it a very generic commit name (’sync’ or so) and push to a private repo on Github, which takes a while because the commits and the repo contain all those images and all those folders.\nWhat is wrong with this\nThe main point of wanting to move off of this structure by Kirby, is that it requires those placeholder pages in my content folder. I have no need for a ./login/login.txt: the login page is just a feature of the software and should be handled by that part of the code. But at least that file contains some text for that page: the files for year.txt and day.txt are completely useless.\nAnother point is that I want to make the Git commits automatically with every Micropub request: Git provides me with a history, but only if I actually commit the files once I changed them. Also, if I do not push the changes to Github, I have no backup of recent posts.\nThe metadata of the received and sent Webmentions are now also available in the repo. This is nice, as it stores the information right next to the post it belongs to, but on the other hand it feels kind of polluting: these Webmentions contain content by others, where as the rest of the content is by me. There is some other external content hidden in the entry.txt file but I’ll get to that later.\nThe last point is that the full size images are stored in the repo and every book and article about Git says that you should not use it to store big files in it. Doing a git status takes a while and also the pushes are much slower than any other Git repository I work with.\nGit history: the Git Object Model\nBefore I go further into the avenue I am taking to solve the problem, I need to explain a bit about the Git Object Model, also known as ‘how Git works under the hood’. For a more thorough explanation, see this chapter in the Git Book.\nAs you’ll learn from that chapter, every object is represented as a file, referenced by the SHA1 hash of its contents. And there are three (no, four) types of objects:\n\nblobs, which are the contents of files tracked by Git (and thus also the versions of those files)\ntrees, which are listings of filenames with references to blobs or other trees. These trees together create the file structure of a version.\ncommits, which are versions. A commit contains a reference to the root tree of the files you are tracking, a parent commit (the previous version) and a message and some metadata.\ntags, are not mentioned by the chapter, but do exists: these look like commits, but create a way to store a message with a tag (making annotated tags, I’ll explain plain tags soon).\n\nNote that Git does not store diffs, it always stores the full contents of every version of the file, albeit zlib compressed and sometimes even packed in a single file, but let’s not get into that right now.\nGit’s tags and branches are just files and folders (they can have / in their names) which contain the hashes (names) of the specific commits they point to. The tags can also point to a tag object, which will then contain a message about the tag (which makes them ‘annotated tags’).\nThis all brings me to the final point about my storage: for every new post, Git has to create a lot of files. First, it needs to add a blob for the entry.txt, possibly also a blob for the image and blobs for other metadata. Then it needs to create a tree for the entry folder, listing entry.txt and if present the filenames of the images and metadata files. Then it creates a new tree for the day, with all the existing entries plus the newly created one. Then it creates a new tree for the year, to point to this new version (tree) of the day. Then it creates a new tree for the root, with this new version of the year in it. And finally it also needs to create a commit object to point to that new root tree. Every update requires all these new trees. The trees are cheap, but it feels wasteful.\nAlso note that a version of a file always relies on the version of all other files. This is what you want for code (code is designed to work with other code), but it does not feel like the right model for posts (I might come back on this tho).\nAnd there is also the question of identifiers: currently, my posts are identified as year, day of year, number (2022/242/1), but especially that number can only be found in the name of the folder and thus in the tree, not in the blob. I have not yet found a good solution for this, but maybe I am seeing too many problems.\nThe new setup\nTo get rid of some of the trees, I tried to apply my knowledge of the Git Object Model to store my posts in another way. To do this, I used the commands suggested by the chapter in the Git Book in a script that looped over all my files, to store them in a new blank repo to try things out.\nFor each year, for each day, for each post, I would find the entry.txt and put the contents in a Git blob with git hash-object -w ./content/2022/242/1/entry.txt. The resulting hash I used in the command git update-index --add --cacheinfo 100644 $hash entry.txt to stage the file for a new tree. I would do that too for all images and related files, and then I would run git write-tree to write the tree and get the hash for it and git commit-tree $hash -m \"commit\" to create a commit based on it (with a bad message indeed). With that last hash I would run git update-ref refs/heads/2022/242/1 $hash to create a branch for that commit. (I contemplate adding an annotated tag in between, for storing some metadata like ‘published at’ date.)\nThis would result in a Git repository with over 10,000 branches (I have many posts) neatly organised in folders per year and day. When one were to check out one of these branches, just the files of that posts will appear in the root of your repo: there are no folders. When you check out another branch, other files will appear. This is not how Git usually works, but it decouples all posts from one-another.\nMultiple types of pages\nThe posts I describe above all follow the year-day-number pattern because they are posts: they are sequential entries tied to a date. There are other objects I track, though, that are not date-specific. One example is topical wiki-style pages: these pages may receive edits over time, but their topic is not tied to a date. (I don’t have these yet.)\nAnother example is the books that I track to base my ‘read’ posts off. I haven’t posted them in a while, but I would like to expand this book collection to also include other types of objects to reference, such as movies, games or locations. These objects also have no date to them attached, at least not a date meaningful to my posts.\nI could generate UUIDs for these objects and pages, and store branches for those commits in the same way Git does store it’s objects internally, with a folder per first two characters of the hash (or UUID) and a filename of the rest:\n./refs/heads\n├── 0a\n│   ├── 8342d2-d6f1-4363-a287-a32948d04eaa\n│   └── edcb13-433c-48d2-b683-a407c3a88f57\n└── 3d\n    ├── 243a27-114e-4eee-9bd8-2a51b01939e6\n    ├── 25965b-2da5-422d-abce-f3337fa97fc4\n    └── 611b59-499a-48a0-b931-afe06192e778\nI could even reference the same post/object with multiple identifiers this way. Maybe I want to give every book a UUID, but also reference it by its ISBN. The downside to that, however, is that I need to update both branches to point to the same commit once I make an update do the book-page.\nDrawbacks of the approach\nThe multiple identifiers are probably not feasible, but there are some other drawbacks too. My main concern is that it is much harder to know whether or not you pushed all the changes: one would have to loop over all 10,000+ branches and perform a push or check. In this loop you would probably have to check out the branch as well. It is of course better to just push right after you make a change, but my point is that the ‘just for sure’ push is a lot of work.\nAnother drawback is actually the counter to what I initially was seeking: wiki-style pages might actually reference each other, and thus their version may depend on a version of another page. In this case, you would want the history to capture all the pages, just as the normal Git workings do. My problem was with the date-specific posts, but once you are mixing date-specific and wiki-style pages, you might be better off with the all-file history.\nOne problem this whole setup still does not solve is that of large files. The git status command is much faster for it does not have to check all the blobs in the repo to get an answer, but the files are still in the repo, taking up space. And there do exist other solutions for big files in git, such as Git LFS, the Large File Storage extension.\nAlso, I am still not 100% sure it is a good idea to store metadata in the Git commits and tags. When we already store the identifier in the tree objects, I thought I could also add the ‘published at’ date into the commit. Information about the author is already present, and as my site supports private posts, it also seemed like a reasonable location to store lists of people who can view the post. But again, maybe that should be stored in another way, and not be so deeply integrated with Git.\nConclusion\nIt was very helpful to write this all out, for by doing so I made up my mind: this is just all a bit too complicated and way too much deeply coupled to Git internals. I would be throwing out the ‘just plain text files’ principle, because I would store a lot of data in Git’s objects, which are actually not plain text, since they are compressed with a certain algorithm.\nMy favourite Git GUI Fork is able to work with the monstrous repository my script produced, but many of the features are now strange and unusable, because the repo is so strangely set up. I would have to create my own software to maintain the integrity of the repo and that could lead to bugs and thus faulty data and maybe even data loss.\nI still think there are some nice properties to the system I describe above, but I won’t be using it. But I learned a few new things about Git internals along the way, and I hope you did too."
-              }
-            ],
-            "url": [
-              "https://seblog.nl/2022/08/30/1/storing-posts-with-git-internals"
-            ],
-            "published": [
-              "2022-08-30T17:21:34+0000"
-            ],
-            "updated": [
-              "2022-08-30T17:21:34+0000"
-            ],
-            "uid": [
-              "https://seblog.nl/2022/242/1"
-            ],
-            "author": [
-              "https://seblog.nl/"
-            ],
-            "category": [
-              "indieweb",
-              "meta"
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Quickly look up PHP docs from Vim"
-            ],
-            "content": [
-              {
-                "html": "<p>As I don’t use a full IDE like PHPStorm, I don’t get much help with the parameters to function calls from my editor. On one hand I find this a good thing: IDE users rely so much on autocomplete that they don’t remember names of things at all. On the other hand: who has the mental space to waist on such things?</p>\n<p>My middle ground is that I look up a lot of things on PHP.net. They make that very simple: just add the name of the function you are looking for after the slash and they will give you the correct documentation. But: switching to a browser and typing out the address requires a lot of keystrokes. I found a solution.</p>\n<pre><code class=\"language-vim\">nmap &lt;Leader&gt;pd :silent !open https://php.net/&lt;c-r&gt;&lt;c-w&gt;&lt;cr&gt;</code></pre>\n<p>This adds a leader key mapping to look up the word (so: function name) under the cursor. I prefix all my PHP related leader mappings with a <code>p</code>, but feel free to pick something else.</p>\n<p>The <code>:!</code> runs a shell command, in this case <code>open</code>, which on Mac can be given a URL, which will then be opened in the default browser. I added <code>silent</code> to ignore the output of the command: I just want to open a URL.</p>\n<p>As the URL, I let Vim type out the address to PHP.net, and since we are in command mode, one can do Ctrl+R, Ctrl+W, which will paste the word that is currently under the cursor (very nice to know in itself). We end the sequence with an enter (carriage return) to run it.</p>\n<p>So the tip within the tip is Ctrl+R (register) Ctrl+W (word). In general Ctrl+R in insert mode gives you this interesting ‘paste from register’ mode that is good to know. See <code>:help i_ctrl-r</code> and <code>:help c_ctrl-r</code> for more.</p>",
-                "value": "As I don’t use a full IDE like PHPStorm, I don’t get much help with the parameters to function calls from my editor. On one hand I find this a good thing: IDE users rely so much on autocomplete that they don’t remember names of things at all. On the other hand: who has the mental space to waist on such things?\nMy middle ground is that I look up a lot of things on PHP.net. They make that very simple: just add the name of the function you are looking for after the slash and they will give you the correct documentation. But: switching to a browser and typing out the address requires a lot of keystrokes. I found a solution.\nnmap <Leader>pd :silent !open https://php.net/<c-r><c-w><cr>\nThis adds a leader key mapping to look up the word (so: function name) under the cursor. I prefix all my PHP related leader mappings with a p, but feel free to pick something else.\nThe :! runs a shell command, in this case open, which on Mac can be given a URL, which will then be opened in the default browser. I added silent to ignore the output of the command: I just want to open a URL.\nAs the URL, I let Vim type out the address to PHP.net, and since we are in command mode, one can do Ctrl+R, Ctrl+W, which will paste the word that is currently under the cursor (very nice to know in itself). We end the sequence with an enter (carriage return) to run it.\nSo the tip within the tip is Ctrl+R (register) Ctrl+W (word). In general Ctrl+R in insert mode gives you this interesting ‘paste from register’ mode that is good to know. See :help i_ctrl-r and :help c_ctrl-r for more."
-              }
-            ],
-            "url": [
-              "https://seblog.nl/2022/08/19/1/vim-php-docs"
-            ],
-            "published": [
-              "2022-08-19T10:24:31+0000"
-            ],
-            "updated": [
-              "2022-08-19T10:24:31+0000"
-            ],
-            "uid": [
-              "https://seblog.nl/2022/231/1"
-            ],
-            "author": [
-              "https://seblog.nl/"
-            ],
-            "category": [
-              "vim"
-            ]
-          }
         }
       ]
     }
@@ -789,21 +779,24 @@
     "author": [
       "https://seblog.nl/"
     ],
+    "syndication": [
+      "https://mastodon.social/@sebsel/109423806188303700"
+    ],
     "shortlink": [
+      "https://5eb.nl/5N42",
+      "https://5eb.nl/5N41",
       "https://5eb.nl/5Mp1",
       "https://5eb.nl/5Mo2",
       "https://5eb.nl/5Mn1",
-      "https://5eb.nl/5Lu1",
-      "https://5eb.nl/5L_1",
-      "https://5eb.nl/5LP1"
+      "https://5eb.nl/5Lu1"
     ],
     "canonical": [
+      "https://seblog.nl/2022/332/2",
+      "https://seblog.nl/2022/332/1",
       "https://seblog.nl/2022/317/1",
       "https://seblog.nl/2022/316/2",
       "https://seblog.nl/2022/315/1",
-      "https://seblog.nl/2022/262/1",
-      "https://seblog.nl/2022/242/1",
-      "https://seblog.nl/2022/231/1"
+      "https://seblog.nl/2022/262/1"
     ]
   },
   "rel-urls": {
@@ -918,6 +911,35 @@
         "me"
       ]
     },
+    "https://mastodon.social/@sebsel/109423806188303700": {
+      "rels": [
+        "syndication"
+      ]
+    },
+    "https://5eb.nl/5N42": {
+      "rels": [
+        "shortlink"
+      ],
+      "title": "2022/332/2",
+      "text": "•"
+    },
+    "https://seblog.nl/2022/332/2": {
+      "rels": [
+        "canonical"
+      ]
+    },
+    "https://5eb.nl/5N41": {
+      "rels": [
+        "shortlink"
+      ],
+      "title": "2022/332/1",
+      "text": "•"
+    },
+    "https://seblog.nl/2022/332/1": {
+      "rels": [
+        "canonical"
+      ]
+    },
     "https://5eb.nl/5Mp1": {
       "rels": [
         "shortlink"
@@ -962,30 +984,6 @@
       "text": "•"
     },
     "https://seblog.nl/2022/262/1": {
-      "rels": [
-        "canonical"
-      ]
-    },
-    "https://5eb.nl/5L_1": {
-      "rels": [
-        "shortlink"
-      ],
-      "title": "2022/242/1",
-      "text": "•"
-    },
-    "https://seblog.nl/2022/242/1": {
-      "rels": [
-        "canonical"
-      ]
-    },
-    "https://5eb.nl/5LP1": {
-      "rels": [
-        "shortlink"
-      ],
-      "title": "2022/231/1",
-      "text": "•"
-    },
-    "https://seblog.nl/2022/231/1": {
       "rels": [
         "canonical"
       ]

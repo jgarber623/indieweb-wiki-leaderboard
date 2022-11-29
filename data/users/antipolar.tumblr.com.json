@@ -37,7 +37,7 @@
       "https://assets.tumblr.com/pop/802-38a21ff4.css",
       "https://assets.tumblr.com/pop/2429-bbe2644c.css",
       "https://assets.tumblr.com/pop/8622-b10ca4eb.css",
-      "https://assets.tumblr.com/pop/3870-cfb5c9b3.css",
+      "https://assets.tumblr.com/pop/9482-effe22db.css",
       "https://assets.tumblr.com/pop/peepr-route-da880ca8.css"
     ],
     "manifest": [
@@ -45,10 +45,14 @@
     ],
     "noopener": [
       "https://www.tumblr.com/antipolar",
+      "https://www.tumblr.com/settings/ad-free-browsing?source=rail",
       "https://www.google.com/chrome",
       "https://www.mozilla.org/firefox",
       "https://support.apple.com/downloads/safari",
       "https://www.microsoft.com/windows/microsoft-edge"
+    ],
+    "noreferrer": [
+      "https://www.tumblr.com/settings/ad-free-browsing?source=rail"
     ]
   },
   "rel-urls": {
@@ -142,7 +146,7 @@
       ],
       "type": "text/css"
     },
-    "https://assets.tumblr.com/pop/3870-cfb5c9b3.css": {
+    "https://assets.tumblr.com/pop/9482-effe22db.css": {
       "rels": [
         "stylesheet"
       ],
@@ -158,6 +162,13 @@
       "rels": [
         "manifest"
       ]
+    },
+    "https://www.tumblr.com/settings/ad-free-browsing?source=rail": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "Wanna go ad-free?"
     },
     "https://www.google.com/chrome": {
       "rels": [
