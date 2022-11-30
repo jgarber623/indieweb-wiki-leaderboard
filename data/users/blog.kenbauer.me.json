@@ -51,6 +51,7 @@
       "https://blog.kenbauer.me/wp-json/indieauth/1.0/token"
     ],
     "me": [
+      "https://fosstodon.org/@kenbauer",
       "https://github.com/kenwbauer",
       "https://twitter.com/ken_bauer",
       "https://www.facebook.com/kenbauer",
@@ -59,8 +60,7 @@
       "https://www.linkedin.com/in/kenbauer/",
       "https://pinboard.in/u:kenbauer",
       "https://en.gravatar.com/kenbauer",
-      "https://known.kenbauer.me/",
-      "https://fosstodon.org/@kenbauer"
+      "https://known.kenbauer.me/"
     ],
     "icon": [
       "https://i0.wp.com/blog.kenbauer.me/wp-content/uploads/2020/04/wp-1587005673357.jpg?fit=32%2C32&ssl=1",
@@ -108,22 +108,22 @@
       "https://creativecommons.org/licenses/by/4.0/"
     ],
     "external": [
+      "https://carlos-ojeda.github.io/",
       "https://blog.kenbauer.me/",
       "https://twitter.com/Tabantaj",
-      "https://twitter.com/Enrro",
-      "https://twitter.com/PaulAlo46731374"
+      "https://twitter.com/Enrro"
     ],
     "nofollow": [
+      "https://carlos-ojeda.github.io/",
       "https://blog.kenbauer.me/",
       "https://twitter.com/Tabantaj",
-      "https://twitter.com/Enrro",
-      "https://twitter.com/PaulAlo46731374"
+      "https://twitter.com/Enrro"
     ],
     "ugc": [
+      "https://carlos-ojeda.github.io/",
       "https://blog.kenbauer.me/",
       "https://twitter.com/Tabantaj",
-      "https://twitter.com/Enrro",
-      "https://twitter.com/PaulAlo46731374"
+      "https://twitter.com/Enrro"
     ]
   },
   "rel-urls": {
@@ -329,6 +329,11 @@
         "token_endpoint"
       ]
     },
+    "https://fosstodon.org/@kenbauer": {
+      "rels": [
+        "me"
+      ]
+    },
     "https://github.com/kenwbauer": {
       "rels": [
         "me"
@@ -520,6 +525,14 @@
         "license"
       ]
     },
+    "https://carlos-ojeda.github.io/": {
+      "rels": [
+        "external",
+        "nofollow",
+        "ugc"
+      ],
+      "text": "Carlos Ojeda"
+    },
     "https://twitter.com/Tabantaj": {
       "rels": [
         "external",
@@ -535,20 +548,6 @@
         "ugc"
       ],
       "text": "Edgar Briceño"
-    },
-    "https://twitter.com/PaulAlo46731374": {
-      "rels": [
-        "external",
-        "nofollow",
-        "ugc"
-      ],
-      "text": "Paul Alonso"
-    },
-    "https://fosstodon.org/@kenbauer": {
-      "rels": [
-        "me"
-      ],
-      "text": "Mastodon"
     }
   }
 }

@@ -5,18 +5,20 @@
       "https://www.jeroenenevita.nl/src/images/logo-192.png"
     ],
     "icon": [
-      "https://www.jeroenenevita.nl/src/images/logo-192.png"
+      "http://www.jeroenenevita.nl/src/images/logo-192.png"
     ],
     "manifest": [
-      "https://www.jeroenenevita.nl/manifest.json"
+      "http://www.jeroenenevita.nl/manifest.json"
     ],
     "stylesheet": [
-      "https://d33wubrfki0l68.cloudfront.net/bundles/81afc37ffafa432f3fd2f908207b026aba50c6af.css",
+      "http://www.jeroenenevita.nl/src/css/styles.css",
+      "http://www.jeroenenevita.nl/src/css/comments.css",
+      "http://www.jeroenenevita.nl/src/css/anim.css",
       "https://rsms.me/inter/inter.css"
     ],
     "alternate": [
-      "https://www.jeroenenevita.nl/feed/feed.xml",
-      "https://www.jeroenenevita.nl/feed/feed.json"
+      "http://www.jeroenenevita.nl/feed/feed.xml",
+      "http://www.jeroenenevita.nl/feed/feed.json"
     ]
   },
   "rel-urls": {
@@ -25,12 +27,28 @@
         "apple-touch-icon"
       ]
     },
-    "https://www.jeroenenevita.nl/manifest.json": {
+    "http://www.jeroenenevita.nl/src/images/logo-192.png": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/x-icon"
+    },
+    "http://www.jeroenenevita.nl/manifest.json": {
       "rels": [
         "manifest"
       ]
     },
-    "https://d33wubrfki0l68.cloudfront.net/bundles/81afc37ffafa432f3fd2f908207b026aba50c6af.css": {
+    "http://www.jeroenenevita.nl/src/css/styles.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "http://www.jeroenenevita.nl/src/css/comments.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "http://www.jeroenenevita.nl/src/css/anim.css": {
       "rels": [
         "stylesheet"
       ]
@@ -40,14 +58,14 @@
         "stylesheet"
       ]
     },
-    "https://www.jeroenenevita.nl/feed/feed.xml": {
+    "http://www.jeroenenevita.nl/feed/feed.xml": {
       "rels": [
         "alternate"
       ],
       "title": "Jeroen&Evita",
       "type": "application/atom+xml"
     },
-    "https://www.jeroenenevita.nl/feed/feed.json": {
+    "http://www.jeroenenevita.nl/feed/feed.json": {
       "rels": [
         "alternate"
       ],

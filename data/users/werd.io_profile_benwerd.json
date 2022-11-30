@@ -57,6 +57,135 @@
           }
         ],
         "name": [
+          "The fediverse and the indieweb"
+        ],
+        "content": [
+          {
+            "html": "<p>I love <a href=\"https://indieweb.org/\">the indieweb</a> and what it stands for:</p>\n<blockquote><p>When you post something on the web, it should belong to you, not a corporation. Too many companies have gone out of business and lost all of their users’ data. By joining the IndieWeb, your content stays yours and in your control.</p></blockquote>\n<p>This principle is absolutely true, but on a deeper level, I’m also uncomfortable with the level of wealth hoarding and rent seeking on the modern internet. There’s no need for us all to be pouring our conversations, identities, and data into someone’s multi-billion-dollar for-profit enterprise. By owning it ourselves, we’re decentralizing the value created. While it’s not <em>necessarily</em> an anti-capitalist stance, it’s certainly an anti-monopoly one.</p>\n<p>I didn’t start <a href=\"https://withknown.com/\">Known</a> to be an indieweb platform: I initially built it, back when it was called Idno, to be a simple way to start a private community on your own terms. My intention was always to add decentralization to these communities, and I was enamored by the vision of the indieweb when I met members of the community and saw what they were building. Turning it into a way for a single person to post using the indieweb just made sense to me, and that’s how a lot of people use it - including me on <a href=\"https://werd.io/\">my own website</a>.</p>\n<p>The best way to drive adoption for a web standard is to make it as easy as possible to build with. Any good web technology should be implementable inside of an afternoon, so that a casual hacker can feel like they’ve made good progress. (Too many technologies are built to be used at Facebook scale, which is needless.) HTML works this way; so does RSS. And the indieweb technologies - <a href=\"https://microformats.org/wiki/microformats2\">microformats</a> to add machine-readable meaning to content, <a href=\"https://indieweb.org/Micropub\">micropub</a> to provide a standard way to publish, and <a href=\"https://indieweb.org/Webmention\">webmention</a> as a mechanism for decentralized replies chiefly among them - all follow this rule too. They’re easy, fault-tolerant, and are built using a very similar mindset to the web itself. I love them.</p>\n<p>Lately I’ve been drawn into the fediverse through Mastodon - <a href=\"https://werd.social/@ben\">you can follow me at @ben@werd.social</a>. The underlying technology behind the fediverse, <a href=\"https://activitypub.rocks/\">ActivityPub</a>, at first glance seems a little harder to implement. In fact, I was a little scared of it, because it requires a mix of light cryptography and a handful of less HTML-like document standards that seem easy to get wrong. But dig a little deeper and <a href=\"https://blog.joinmastodon.org/2018/06/how-to-implement-a-basic-activitypub-server/\">it’s not particularly difficult to get started with</a>, with huge reward: connecting to a network of millions of people who are all actively having conversations.</p>\n<p>So I’m newly-invested in implementing ActivityPub and building end-user tools that join the network. I’m excited to build things that people can use to, in turn, build something new. There are a ton of opportunities here: we’re in a particular moment where the fediverse looks like it could be the future, and the more tools and onramps we build, the more likely that becomes. That fits directly into those indieweb principles of owning your own content, and my additive principles of devolving wealth and ownership.</p>\n<p>Luckily, it’s not a zero-sum game. I can still keep and maintain my indieweb implementations and participate in its network of blogs and personal sites, while also adding ActivityPub and widening my lens to the fediverse’s interlocking communities. I get to own my content and online identity, which means I get to choose who and what I interact with.</p>\n<p>I have one exception. One of the indieweb’s oldest ideas, <a href=\"https://indieweb.org/POSSE\">Publish (on your) Own Site, Syndicate Elsewhere</a>, is something I plan to retire in my own use. The idea is that you publish on your own site but then mirror that content to a third-party silo like Twitter, ideally with a link back to your site. But with the growth of the fediverse, I’d like to be done with doing that. I’ve already stopped publishing to Twitter, and I think Instagram and Facebook will quickly follow suit. Right now my only real syndication is to LinkedIn, and I don’t know that I want to make that network exactly central to my existence online.</p>\n<p>So instead of Publishing on my Own Site and Syndicating Elsewhere, I plan to just Publish and Participate. I want my site to connect to the indieweb; to the fediverse; to people who are connecting via RSS; to people who are connecting via email. No more syndication to third parties. My own website sits in the center of my online identity, using open standards to communicate with outside communities.</p>\n<p>That principle wasn’t possible when I started building Known, and I’m excited that it is now. I’m late to the party: <a href=\"https://micro.blog/\">micro.blog</a>, for example, does this already. But better late than never. Let’s participate and embrace every open network out there - and do what we came to do, which is publish, reply, converse, and learn from each other. I can’t wait.</p>",
+            "value": "I love the indieweb and what it stands for:When you post something on the web, it should belong to you, not a corporation. Too many companies have gone out of business and lost all of their users’ data. By joining the IndieWeb, your content stays yours and in your control.This principle is absolutely true, but on a deeper level, I’m also uncomfortable with the level of wealth hoarding and rent seeking on the modern internet. There’s no need for us all to be pouring our conversations, identities, and data into someone’s multi-billion-dollar for-profit enterprise. By owning it ourselves, we’re decentralizing the value created. While it’s not necessarily an anti-capitalist stance, it’s certainly an anti-monopoly one.I didn’t start Known to be an indieweb platform: I initially built it, back when it was called Idno, to be a simple way to start a private community on your own terms. My intention was always to add decentralization to these communities, and I was enamored by the vision of the indieweb when I met members of the community and saw what they were building. Turning it into a way for a single person to post using the indieweb just made sense to me, and that’s how a lot of people use it - including me on my own website.The best way to drive adoption for a web standard is to make it as easy as possible to build with. Any good web technology should be implementable inside of an afternoon, so that a casual hacker can feel like they’ve made good progress. (Too many technologies are built to be used at Facebook scale, which is needless.) HTML works this way; so does RSS. And the indieweb technologies - microformats to add machine-readable meaning to content, micropub to provide a standard way to publish, and webmention as a mechanism for decentralized replies chiefly among them - all follow this rule too. They’re easy, fault-tolerant, and are built using a very similar mindset to the web itself. I love them.Lately I’ve been drawn into the fediverse through Mastodon - you can follow me at @ben@werd.social. The underlying technology behind the fediverse, ActivityPub, at first glance seems a little harder to implement. In fact, I was a little scared of it, because it requires a mix of light cryptography and a handful of less HTML-like document standards that seem easy to get wrong. But dig a little deeper and it’s not particularly difficult to get started with, with huge reward: connecting to a network of millions of people who are all actively having conversations.So I’m newly-invested in implementing ActivityPub and building end-user tools that join the network. I’m excited to build things that people can use to, in turn, build something new. There are a ton of opportunities here: we’re in a particular moment where the fediverse looks like it could be the future, and the more tools and onramps we build, the more likely that becomes. That fits directly into those indieweb principles of owning your own content, and my additive principles of devolving wealth and ownership.Luckily, it’s not a zero-sum game. I can still keep and maintain my indieweb implementations and participate in its network of blogs and personal sites, while also adding ActivityPub and widening my lens to the fediverse’s interlocking communities. I get to own my content and online identity, which means I get to choose who and what I interact with.I have one exception. One of the indieweb’s oldest ideas, Publish (on your) Own Site, Syndicate Elsewhere, is something I plan to retire in my own use. The idea is that you publish on your own site but then mirror that content to a third-party silo like Twitter, ideally with a link back to your site. But with the growth of the fediverse, I’d like to be done with doing that. I’ve already stopped publishing to Twitter, and I think Instagram and Facebook will quickly follow suit. Right now my only real syndication is to LinkedIn, and I don’t know that I want to make that network exactly central to my existence online.So instead of Publishing on my Own Site and Syndicating Elsewhere, I plan to just Publish and Participate. I want my site to connect to the indieweb; to the fediverse; to people who are connecting via RSS; to people who are connecting via email. No more syndication to third parties. My own website sits in the center of my online identity, using open standards to communicate with outside communities.That principle wasn’t possible when I started building Known, and I’m excited that it is now. I’m late to the party: micro.blog, for example, does this already. But better late than never. Let’s participate and embrace every open network out there - and do what we came to do, which is publish, reply, converse, and learn from each other. I can’t wait."
+          }
+        ],
+        "url": [
+          "https://werd.io/2022/the-fediverse-and-the-indieweb"
+        ],
+        "published": [
+          "2022-11-29T23:03:16+00:00"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "url": [
+                "https://werd.io/profile/benwerd",
+                "https://werd.io/profile/benwerd",
+                "https://werd.io/profile/benwerd"
+              ],
+              "photo": [
+                "https://werd.io/file/5d388c5fb16ea14aac640912/thumb.jpg"
+              ],
+              "name": [
+                "Ben Werdmuller"
+              ]
+            },
+            "value": "Ben Werdmuller"
+          }
+        ],
+        "name": [
+          "Support our work"
+        ],
+        "content": [
+          {
+            "html": "<p><a href=\"https://werd.io/2022/doing-management-training-today\">Speaking of The 19th</a>:</p>\n<p>The 19th is a non-profit newsroom that reports at the intersection of gender, politics, and policy. <a href=\"https://19thnews.org/2022/11/election-focus-voters-audience-media/\">We were one of the only newsrooms to call this election correctly</a> - because we listened to women and people of color.</p>\n<p>Some pieces we’ve published include <a href=\"https://19thnews.org/2022/05/abortion-rights-restrictions-laws-in-your-state/\">a dashboard exploring abortion legislation in the post-Roe world</a>, <a href=\"https://19thnews.org/2022/09/19th-explains-nursing-shortage/\">coverage of nursing shortages</a>, and <a href=\"https://19thnews.org/2021/12/women-draft-qualify-what-you-need-to-know/\">an exploration of whether women will qualify for the draft</a>.</p>\n<p>We need your help. This Giving Tuesday, <a href=\"https://the19th.donorsupport.co/-/NVXBQRUH?2\">please consider donating to support our inclusive newsroom and help us keep reporting</a>. Even a little bit helps. Thank you.</p>\n<p><a href=\"https://the19th.donorsupport.co/-/NVXBQRUH?2\"><img src=\"https://werd.io/file/638642dbfdd04511fb6a5e92/thumb.jpg\" alt=\"\" width=\"1024\" height=\"1024\"></a></p>\n<p>By the way, how cool is this preview image? <a href=\"https://19thnews.org/2022/06/19th-brand-designer-rena-li-product-designer-vanessa-gregorchik/\">Rena Li</a> is a genius.</p>",
+            "value": "Speaking of The 19th:The 19th is a non-profit newsroom that reports at the intersection of gender, politics, and policy. We were one of the only newsrooms to call this election correctly - because we listened to women and people of color.Some pieces we’ve published include a dashboard exploring abortion legislation in the post-Roe world, coverage of nursing shortages, and an exploration of whether women will qualify for the draft.We need your help. This Giving Tuesday, please consider donating to support our inclusive newsroom and help us keep reporting. Even a little bit helps. Thank you.  By the way, how cool is this preview image? Rena Li is a genius."
+          }
+        ],
+        "url": [
+          "https://werd.io/2022/support-our-work"
+        ],
+        "published": [
+          "2022-11-29T17:36:00+00:00"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "url": [
+                "https://werd.io/profile/benwerd",
+                "https://werd.io/profile/benwerd",
+                "https://werd.io/profile/benwerd"
+              ],
+              "photo": [
+                "https://werd.io/file/5d388c5fb16ea14aac640912/thumb.jpg"
+              ],
+              "name": [
+                "Ben Werdmuller"
+              ]
+            },
+            "value": "Ben Werdmuller"
+          }
+        ],
+        "name": [
+          "Doing management training today"
+        ],
+        "content": [
+          {
+            "html": "<p>I’m doing management training today with all the other managers at <a href=\"https://19thnews.org/\">The 19th</a>. We're spending a lot of time considering how to be an anti-racist leader, which I'm finding tremendously valuable. I’m very glad to be doing this, and I’m glad for techniques and tactics to actively work towards equity.</p>\n<p>I will never work for an organization whose leaders are not invested in DEI or consider it to be a hindrance. It says so much about what they care about and who will benefit from their work. I won’t link to them here, but there have been lots of examples lately of leaders complaining about movements for equality. I find it mind-blowing: the reddest of red flags.</p>\n<p>I’m really glad to be working here. Equity should be distributed, not hoarded. And I’m grateful to listen and learn how to do this more effectively.</p>",
+            "value": "I’m doing management training today with all the other managers at The 19th. We're spending a lot of time considering how to be an anti-racist leader, which I'm finding tremendously valuable. I’m very glad to be doing this, and I’m glad for techniques and tactics to actively work towards equity.I will never work for an organization whose leaders are not invested in DEI or consider it to be a hindrance. It says so much about what they care about and who will benefit from their work. I won’t link to them here, but there have been lots of examples lately of leaders complaining about movements for equality. I find it mind-blowing: the reddest of red flags.I’m really glad to be working here. Equity should be distributed, not hoarded. And I’m grateful to listen and learn how to do this more effectively."
+          }
+        ],
+        "url": [
+          "https://werd.io/2022/doing-management-training-today"
+        ],
+        "published": [
+          "2022-11-29T17:26:51+00:00"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "url": [
+                "https://werd.io/profile/benwerd",
+                "https://werd.io/profile/benwerd",
+                "https://werd.io/profile/benwerd"
+              ],
+              "photo": [
+                "https://werd.io/file/5d388c5fb16ea14aac640912/thumb.jpg"
+              ],
+              "name": [
+                "Ben Werdmuller"
+              ]
+            },
+            "value": "Ben Werdmuller"
+          }
+        ],
+        "name": [
           "I find it very emotionally hard when my baby is sad. I wish I could fix it for him. Poor little guy."
         ],
         "content": [
@@ -982,135 +1111,6 @@
           "2022-11-19T20:28:38+00:00"
         ]
       }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "author": [
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "url": [
-                "https://werd.io/profile/benwerd",
-                "https://werd.io/profile/benwerd",
-                "https://werd.io/profile/benwerd"
-              ],
-              "photo": [
-                "https://werd.io/file/5d388c5fb16ea14aac640912/thumb.jpg"
-              ],
-              "name": [
-                "Ben Werdmuller"
-              ]
-            },
-            "value": "Ben Werdmuller"
-          }
-        ],
-        "name": [
-          "I made two concrete life decisions this week. Keeping them to myself, but I'll probably reference this post in the future."
-        ],
-        "content": [
-          {
-            "html": "I made two concrete life decisions this week. Keeping them to myself, but I'll probably reference this post in the future.",
-            "value": "I made two concrete life decisions this week. Keeping them to myself, but I'll probably reference this post in the future."
-          }
-        ],
-        "url": [
-          "https://werd.io/2022/i-made-two-concrete-life-decisions-this"
-        ],
-        "published": [
-          "2022-11-19T00:58:29+00:00"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "author": [
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "url": [
-                "https://werd.io/profile/benwerd",
-                "https://werd.io/profile/benwerd",
-                "https://werd.io/profile/benwerd"
-              ],
-              "photo": [
-                "https://werd.io/file/5d388c5fb16ea14aac640912/thumb.jpg"
-              ],
-              "name": [
-                "Ben Werdmuller"
-              ]
-            },
-            "value": "Ben Werdmuller"
-          }
-        ],
-        "name": [
-          "Twitter had 7500 staff to begin with. Then Musk fired a lot, dropping the total to 3700. Now 1200 have opted to take severance, leaving the total at 2500. Do I have that right? I wonder what that looks like across teams?"
-        ],
-        "content": [
-          {
-            "html": "Twitter had 7500 staff to begin with. Then Musk fired a lot, dropping the total to 3700. Now 1200 have opted to take severance, leaving the total at 2500. Do I have that right? I wonder what that looks like across teams?",
-            "value": "Twitter had 7500 staff to begin with. Then Musk fired a lot, dropping the total to 3700. Now 1200 have opted to take severance, leaving the total at 2500. Do I have that right? I wonder what that looks like across teams?"
-          }
-        ],
-        "url": [
-          "https://werd.io/2022/twitter-had-7500-staff-to-begin-with"
-        ],
-        "published": [
-          "2022-11-18T22:40:46+00:00"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "author": [
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "url": [
-                "https://werd.io/profile/benwerd",
-                "https://werd.io/profile/benwerd",
-                "https://werd.io/profile/benwerd"
-              ],
-              "photo": [
-                "https://werd.io/file/5d388c5fb16ea14aac640912/thumb.jpg"
-              ],
-              "name": [
-                "Ben Werdmuller"
-              ]
-            },
-            "value": "Ben Werdmuller"
-          }
-        ],
-        "name": [
-          "People are saying things like “let’s get back on AIM” and I’m just sitting in the corner pre-dating everything everyone comes up with and feeling as old as literal dust.\n\n“Remember MySpace?” Why, yes I do. I was saving into a pension at the time."
-        ],
-        "content": [
-          {
-            "html": "People are saying things like “let’s get back on AIM” and I’m just sitting in the corner pre-dating everything everyone comes up with and feeling as old as literal dust.<br>\n<br>\n“Remember MySpace?” Why, yes I do. I was saving into a pension at the time.",
-            "value": "People are saying things like “let’s get back on AIM” and I’m just sitting in the corner pre-dating everything everyone comes up with and feeling as old as literal dust.\n\n“Remember MySpace?” Why, yes I do. I was saving into a pension at the time."
-          }
-        ],
-        "url": [
-          "https://werd.io/2022/people-are-saying-things-like-lets-get"
-        ],
-        "published": [
-          "2022-11-18T02:07:53+00:00"
-        ]
-      }
     }
   ],
   "rels": {
@@ -1190,9 +1190,12 @@
       "https://werd.io/micropub/endpoint"
     ],
     "canonical": [
-      "https://werd.io/2022/people-are-saying-things-like-lets-get"
+      "https://werd.io/2022/unpopular-opinion-im-not-sure-quotunityquot-is"
     ],
     "permalink": [
+      "https://werd.io/2022/the-fediverse-and-the-indieweb",
+      "https://werd.io/2022/support-our-work",
+      "https://werd.io/2022/doing-management-training-today",
       "https://werd.io/2022/i-find-it-very-emotionally-hard-when",
       "https://werd.io/2022/quotfeedback-is-a-gift-but-not-a",
       "https://werd.io/2022/i-really-hate-the-pushback-against-woke",
@@ -1214,10 +1217,7 @@
       "https://werd.io/2022/i-cant-imagine-the-horror-of-being",
       "https://werd.io/2022/what-is-a-globalist",
       "https://werd.io/2022/my-career-mission-to-work-on-projects",
-      "https://werd.io/2022/unpopular-opinion-im-not-sure-quotunityquot-is",
-      "https://werd.io/2022/i-made-two-concrete-life-decisions-this",
-      "https://werd.io/2022/twitter-had-7500-staff-to-begin-with",
-      "https://werd.io/2022/people-are-saying-things-like-lets-get"
+      "https://werd.io/2022/unpopular-opinion-im-not-sure-quotunityquot-is"
     ],
     "in-reply-to": [
       "https://werd.social/@ben"
@@ -1390,7 +1390,7 @@
         "micropub"
       ]
     },
-    "https://werd.io/2022/people-are-saying-things-like-lets-get": {
+    "https://werd.io/2022/unpopular-opinion-im-not-sure-quotunityquot-is": {
       "rels": [
         "canonical"
       ]
@@ -1410,6 +1410,24 @@
       "rels": [
         "stylesheet"
       ]
+    },
+    "https://werd.io/2022/the-fediverse-and-the-indieweb": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "\nNovember 29, 2022\n"
+    },
+    "https://werd.io/2022/support-our-work": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "\nNovember 29, 2022\n"
+    },
+    "https://werd.io/2022/doing-management-training-today": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "\nNovember 29, 2022\n"
     },
     "https://werd.io/2022/i-find-it-very-emotionally-hard-when": {
       "rels": [
@@ -1529,7 +1547,7 @@
       "rels": [
         "permalink"
       ],
-      "text": "\nNovember 21, 2022\n"
+      "text": "\n November 21, 2022\n"
     },
     "https://werd.io/2022/i-cant-imagine-the-horror-of-being": {
       "rels": [
@@ -1548,24 +1566,6 @@
         "permalink"
       ],
       "text": "\nNovember 20, 2022\n"
-    },
-    "https://werd.io/2022/unpopular-opinion-im-not-sure-quotunityquot-is": {
-      "rels": [
-        "permalink"
-      ],
-      "text": "\nNovember 19, 2022\n"
-    },
-    "https://werd.io/2022/i-made-two-concrete-life-decisions-this": {
-      "rels": [
-        "permalink"
-      ],
-      "text": "\nNovember 19, 2022\n"
-    },
-    "https://werd.io/2022/twitter-had-7500-staff-to-begin-with": {
-      "rels": [
-        "permalink"
-      ],
-      "text": "\nNovember 18, 2022\n"
     },
     "https://werd.io/profile/benwerd?offset=0": {
       "rels": [

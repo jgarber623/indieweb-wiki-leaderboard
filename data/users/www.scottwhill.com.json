@@ -300,6 +300,7 @@
       "https://scottwhill.com/thoughts.rss"
     ],
     "next": [
+      "https://hotserrano.com/thoughts/page/2",
       "https://scottwhill.com/thoughts/page/2"
     ],
     "prev": [
@@ -310,7 +311,8 @@
       "https://mastodon.social/@scotthill",
       "https://glass.photo/stmpjmpr",
       "https://www.strava.com/athletes/scott",
-      "https://github.com/stmpjmpr"
+      "https://github.com/stmpjmpr",
+      "https://www.chess.com/member/stmpjmpr"
     ]
   },
   "rel-urls": {
@@ -386,10 +388,16 @@
       "title": "RSS",
       "type": "application/rss+xml"
     },
-    "https://scottwhill.com/thoughts/page/2": {
+    "https://hotserrano.com/thoughts/page/2": {
       "rels": [
         "next"
       ]
+    },
+    "https://scottwhill.com/thoughts/page/2": {
+      "rels": [
+        "next"
+      ],
+      "text": "Next ›"
     },
     "https://twitter.com/stmpjmpr": {
       "rels": [
@@ -420,6 +428,12 @@
         "me"
       ],
       "text": "stmpjmpr on Github"
+    },
+    "https://www.chess.com/member/stmpjmpr": {
+      "rels": [
+        "me"
+      ],
+      "text": "stmpjmpr on chess.com"
     }
   }
 }

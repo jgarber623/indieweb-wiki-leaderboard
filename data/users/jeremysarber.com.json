@@ -1,5 +1,25 @@
 {
-  "items": [],
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "name": [
+          "Jeremy Sarber"
+        ],
+        "url": [
+          "https://jeremysarber.com/"
+        ],
+        "note": [
+          "Disciple of our great God and Savior Jesus Christ, Reformed Baptist, funeral home chaplain, and host of Sunday Tapes. All glory be to Christ."
+        ],
+        "photo": [
+          "https://jeremysarber.com/images/fav/_h-card.jpg"
+        ]
+      }
+    }
+  ],
   "rels": {
     "apple-touch-icon": [
       "https://jeremysarber.com/images/fav/_apple-icon-57x57.png",
@@ -23,6 +43,18 @@
     ],
     "alternate": [
       "https://jeremysarber.com/feed.rss"
+    ],
+    "webmention": [
+      "https://webmention.io/jeremysarber.com/webmention"
+    ],
+    "pingback": [
+      "https://webmention.io/jeremysarber.com/xmlrpc"
+    ],
+    "me": [
+      "https://jeremysarber.com/",
+      "https://twitter.com/jeremysarber",
+      "https://theway.social/@jeremy",
+      "mailto:hello@jeremysarber.com"
     ]
   },
   "rel-urls": {
@@ -106,6 +138,40 @@
       ],
       "title": "Jeremy Sarber",
       "type": "application/rss+xml"
+    },
+    "https://webmention.io/jeremysarber.com/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://webmention.io/jeremysarber.com/xmlrpc": {
+      "rels": [
+        "pingback"
+      ]
+    },
+    "https://jeremysarber.com/": {
+      "rels": [
+        "me"
+      ],
+      "text": "Jeremy Sarber"
+    },
+    "https://twitter.com/jeremysarber": {
+      "rels": [
+        "me"
+      ],
+      "text": "@jeremysarber"
+    },
+    "https://theway.social/@jeremy": {
+      "rels": [
+        "me"
+      ],
+      "text": "jeremy@theway.social"
+    },
+    "mailto:hello@jeremysarber.com": {
+      "rels": [
+        "me"
+      ],
+      "text": "hello@jeremysarber.com"
     }
   }
 }
