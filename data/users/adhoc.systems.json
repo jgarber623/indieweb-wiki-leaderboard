@@ -48,6 +48,40 @@
           ],
           "properties": {
             "url": [
+              "https://adhoc.systems/notes/6cd40a02-3d0e-4d59-869d-44cd73229d09"
+            ],
+            "published": [
+              "2022-11-30 14:11:26Z"
+            ],
+            "content": [
+              {
+                "html": "Most <a href=\"https://adhoc.systems/tags/indieweb\">#IndieWeb</a> capable services allow you to log in with just your domain name, which is pretty awesome. But then they display login info like",
+                "value": "Most #IndieWeb capable services allow you to log in with just your domain name, which is pretty awesome. But then they display login info like"
+              },
+              {
+                "html": "<p>\nLogged in as <a href=\"https://adhoc.systems/\">https://adhoc.systems</a>  </p>",
+                "value": "Logged in as https://adhoc.systems"
+              },
+              {
+                "html": "which looks strange to most people. Since they're also parsing the <code class=\"inline\">h-card</code>, I think we could make this look nicer. We could display the person's name instead of their domain. Or if we wanted to make it look closer to the fediverse, we could use <em>nickname@domain</em>. Of course, we could always fall back to using the domain if none of the above are available.",
+                "value": "which looks strange to most people. Since they're also parsing the h-card, I think we could make this look nicer. We could display the person's name instead of their domain. Or if we wanted to make it look closer to the fediverse, we could use nickname@domain. Of course, we could always fall back to using the domain if none of the above are available."
+              },
+              {
+                "html": "I'll be making this change on my personal services soon.",
+                "value": "I'll be making this change on my personal services soon."
+              }
+            ],
+            "category": [
+              "IndieWeb"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "url": [
               "https://adhoc.systems/boosts/d0515b08-0a25-4d24-847e-514742d66a6b"
             ],
             "published": [
@@ -622,67 +656,6 @@
                 "html": "Looks like it worked; it showed up in my feed reader! I agree with you about the weirdness of Micropub, but i guess that's what you get when a spec is developed alongside usage instead of designed beforehand.",
                 "value": "Looks like it worked; it showed up in my feed reader! I agree with you about the weirdness of Micropub, but i guess that's what you get when a spec is developed alongside usage instead of designed beforehand."
               }
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "url": [
-              "https://adhoc.systems/replies/fortnite-on-the-iphone"
-            ],
-            "published": [
-              "2022-05-06 17:27:30Z"
-            ],
-            "in-reply-to": [
-              {
-                "type": [
-                  "h-cite"
-                ],
-                "properties": {
-                  "summary": [
-                    "Epic changed its mind about keeping Fortnite off of Xbox Cloud Gaming."
-                  ],
-                  "url": [
-                    "https://arstechnica.com/gadgets/2022/05/despite-the-epic-v-apple-battle-fortnite-is-officially-back-on-the-iphone/"
-                  ],
-                  "name": [
-                    "Despite the Epic v. Apple battle, Fortnite is officially back on the iPhone"
-                  ],
-                  "author": [
-                    {
-                      "type": [
-                        "h-card"
-                      ],
-                      "properties": {
-                        "url": [
-                          "https://arstechnica.com/author/samuelaxon/"
-                        ],
-                        "name": [
-                          "Samuel Axon"
-                        ]
-                      },
-                      "value": "Samuel Axon"
-                    }
-                  ]
-                },
-                "value": "https://arstechnica.com/gadgets/2022/05/despite-the-epic-v-apple-battle-fortnite-is-officially-back-on-the-iphone/"
-              }
-            ],
-            "content": [
-              {
-                "html": "I think Apple's policies are indefensible and hugely anti-competitive, so on one hand, I like that this sort of sticks it to them. But on the other hand, they'll use this as justification for how they're not anti-competitive despite being based on technology Microsoft has nearly a decade of experience in and spent millions of dollars building. This isn't a solution for every developer and forces them to rely on a different platform holder anyway.",
-                "value": "I think Apple's policies are indefensible and hugely anti-competitive, so on one hand, I like that this sort of sticks it to them. But on the other hand, they'll use this as justification for how they're not anti-competitive despite being based on technology Microsoft has nearly a decade of experience in and spent millions of dollars building. This isn't a solution for every developer and forces them to rely on a different platform holder anyway."
-              },
-              {
-                "html": "I also don't like that this was an exception made just for Epic. Microsoft says they want to do this more, but starting with Epic feels very backroom deal. I'm hopeful, though, that Microsoft will expand this policy to all free-to-play games. Allowing consumers to stream these free-to-play games is very consumer friendly and gets them in the door to see how good Game Pass is.",
-                "value": "I also don't like that this was an exception made just for Epic. Microsoft says they want to do this more, but starting with Epic feels very backroom deal. I'm hopeful, though, that Microsoft will expand this policy to all free-to-play games. Allowing consumers to stream these free-to-play games is very consumer friendly and gets them in the door to see how good Game Pass is."
-              }
-            ],
-            "category": [
-              "gaming"
             ]
           }
         }

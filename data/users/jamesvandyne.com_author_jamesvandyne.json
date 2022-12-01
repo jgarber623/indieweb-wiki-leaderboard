@@ -5,6 +5,53 @@
         "h-entry"
       ],
       "properties": {
+        "name": [
+          "Running Tanzawa with Fly.io"
+        ],
+        "published": [
+          "2022-11-30T23:23:03.719881+00:00"
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "photo": [
+                {
+                  "value": "https://www.gravatar.com/avatar/38fc6c615f36a579152118d7abf2e55b?d=mm&r=g&s=80 2x",
+                  "alt": ""
+                }
+              ],
+              "url": [
+                "https://jamesvandyne.com/author/jamesvandyne/"
+              ],
+              "uid": [
+                "https://jamesvandyne.com/author/jamesvandyne/"
+              ],
+              "name": [
+                "James"
+              ]
+            },
+            "value": "James"
+          }
+        ],
+        "content": [
+          {
+            "html": "<div>Taking a page out of Simon Willison's <a href=\"https://simonwillison.net/2022/Nov/26/productivity/\">Coping strategies for the serial project hoarder</a> presentation, I'm going to write a blog post about what I've done on my projects as part of the \"unit of work\".<br><br>One of the largest hurdles to running Tanzawa is one that plagues any Django app: getting it setup properly on a server. This usually involves connecting to a server, setting up a gunicorn or uWSGI server to run the app, editing nginx configurations, and fiddling with systemd, at a minimum.<br><br>Each of these are a large barrier to entry. All of them combined means only the most dedicated users would attempt to use it. And the reality is nobody will use it.<br><br>Making Tanzawa easier to install and run has long been a goal of mine. For a while my approach was to basically automate my own setup on Digital Ocean. I attempted this with two puppet scripts: one, created an Ubuntu server that automatically applied security patches and installed Docker, and the second would build a Tanzawa image to run on the server. Using puppet would also allow flexibility for people to host wherever they wanted.<br><br>Ultimately this approach was flawed because you'd still end up needing to maintain a server, even if it updates itself. <br><br>Getting Tanzawa to run on a fully managed platform like Fly.io would lower the barrier to entry quite a bit as it would remove the need to maintain a server and fiddle with configuration files. After migrating my blog from a Digital Ocean to Fly.io, I <a href=\"https://jamesvandyne.github.io/tanzawa/deployment/\">documented</a> how others can do the same.<br><br>Hosting with Fly.io is now the recommended way to use Tanzawa.</div>",
+            "value": "Taking a page out of Simon Willison's Coping strategies for the serial project hoarder presentation, I'm going to write a blog post about what I've done on my projects as part of the \"unit of work\".One of the largest hurdles to running Tanzawa is one that plagues any Django app: getting it setup properly on a server. This usually involves connecting to a server, setting up a gunicorn or uWSGI server to run the app, editing nginx configurations, and fiddling with systemd, at a minimum.Each of these are a large barrier to entry. All of them combined means only the most dedicated users would attempt to use it. And the reality is nobody will use it.Making Tanzawa easier to install and run has long been a goal of mine. For a while my approach was to basically automate my own setup on Digital Ocean. I attempted this with two puppet scripts: one, created an Ubuntu server that automatically applied security patches and installed Docker, and the second would build a Tanzawa image to run on the server. Using puppet would also allow flexibility for people to host wherever they wanted.Ultimately this approach was flawed because you'd still end up needing to maintain a server, even if it updates itself. Getting Tanzawa to run on a fully managed platform like Fly.io would lower the barrier to entry quite a bit as it would remove the need to maintain a server and fiddle with configuration files. After migrating my blog from a Digital Ocean to Fly.io, I documented how others can do the same.Hosting with Fly.io is now the recommended way to use Tanzawa."
+          }
+        ],
+        "url": [
+          "https://jamesvandyne.com/4278d37e-5a06-42cd-b965-c8adcd568da7"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
         "published": [
           "2022-11-30T00:05:30.464590+00:00"
         ],
@@ -479,53 +526,6 @@
     },
     {
       "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "name": [
-          "The Week #124"
-        ],
-        "published": [
-          "2022-11-14T21:20:02.254000+00:00"
-        ],
-        "author": [
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "photo": [
-                {
-                  "value": "https://www.gravatar.com/avatar/38fc6c615f36a579152118d7abf2e55b?d=mm&r=g&s=80 2x",
-                  "alt": ""
-                }
-              ],
-              "url": [
-                "https://jamesvandyne.com/author/jamesvandyne/"
-              ],
-              "uid": [
-                "https://jamesvandyne.com/author/jamesvandyne/"
-              ],
-              "name": [
-                "James"
-              ]
-            },
-            "value": "James"
-          }
-        ],
-        "content": [
-          {
-            "html": "<ul>\n<li>Last week I joined Mastodon and this week I've got to say, I'm enjoying it. Social media without the algorithms and outrage machine makes connecting with people on the web <em>great</em> again. While I'm using <a href=\"https://social.coop/\">indieweb.social</a>, browsing some hashtags, I also discovered some instances like <a href=\"https://social.coop/\">social.coop</a> and <a href=\"https://mastodon.green/\">mastodon.green</a> where I've been able to find some interesting people to follow. I also donated to my first <a href=\"https://www.patreon.com/indiewebsocial\">patron</a> to help keep indieweb.social's lights on.</li>\n<li>The US mid-terms happened and, by Jove the Dems managed to hold the Senate and the House is still up for grabs (though leaning Republican, slim majority). Typically when there's full party control of House/Senate/Executive by the same party, the mid-terms results in 60 seat losses in the house, but that wasn't the same this year at all. That's incredible. Given all of the \"red wave\" talk in the media to see them be so wrong is great. <br><br>I reckon there's a number of reasons for this: Roe vs Wade energizing women, the Biden admin making actual action on climate with the ira, and Gen. Z getting out the vote. To his credit Michael Moore was on TV a few days before the election saying that the red wave won't materialize because of sheer numbers i.e. the number of registered Dems out numbers R's, so if people show up the Dems will win. People showed up.<br><br>Glad to see that my hastily prepared ballot was accepted and counted.<br><figure class=\"attachment attachment--preview attachment--png\" data-trix-attachment='{\"contentType\":\"image/png\",\"filename\":\"2022_midterm.png\",\"filesize\":91684,\"height\":524,\"href\":\"https://jamesvandyne.com/files/96466be1-30fb-4bc3-9ee3-51b24257300d?content-disposition=attachment\",\"url\":\"https://jamesvandyne.com/files/96466be1-30fb-4bc3-9ee3-51b24257300d\",\"width\":1188}' data-trix-attributes='{\"caption\":\"Better luck next time\",\"presentation\":\"gallery\"}' data-trix-content-type=\"image/png\"><a href=\"https://jamesvandyne.com/files/96466be1-30fb-4bc3-9ee3-51b24257300d?content-disposition=attachment\"><picture>\n<source srcset=\"https://jamesvandyne.com/files/96466be1-30fb-4bc3-9ee3-51b24257300d?f=image/webp\" type=\"image/webp\"></source>\n<img height=\"524\" loading=\"lazy\" src=\"https://jamesvandyne.com/files/96466be1-30fb-4bc3-9ee3-51b24257300d\" width=\"1188\">\n</picture><figcaption class=\"attachment__caption attachment__caption--edited\">Better luck next time</figcaption></a></figure>\n</li>\n<li>Leo has been getting more and more into his own room. He decorates it with things he's made and makes lists of stuff he needs for it (mirror and a printer?). On Saturday he said that he was going to sleep in his own room, instead of with us. Or rather we (me and him) were going to. He slept like he always does and I slept...about the same as usual (so-so).<br><br>Sunday he said that he was going to sleep by himself. We did the regular reading routine in his bed and I left after he fell asleep. Going back to my own bed, it felt a bit lonely. I've grown so accustomed to just being able to roll over, open my eyes, and see the little guy snoozing. Leo starting to sleep in his own room by himself is a bit more bittersweet than I was expecting it would be. Thankfully he came in to our room at 2:30am and joined us 🥰.<br><br>I've heard people (in the West) argue against co-sleeping with kids when they're young because it's difficult to get them to sleep in their own room...but he's taking all leadership here. </li>\n</ul>",
-            "value": "Last week I joined Mastodon and this week I've got to say, I'm enjoying it. Social media without the algorithms and outrage machine makes connecting with people on the web great again. While I'm using indieweb.social, browsing some hashtags, I also discovered some instances like social.coop and mastodon.green where I've been able to find some interesting people to follow. I also donated to my first patron to help keep indieweb.social's lights on.The US mid-terms happened and, by Jove the Dems managed to hold the Senate and the House is still up for grabs (though leaning Republican, slim majority). Typically when there's full party control of House/Senate/Executive by the same party, the mid-terms results in 60 seat losses in the house, but that wasn't the same this year at all. That's incredible. Given all of the \"red wave\" talk in the media to see them be so wrong is great. I reckon there's a number of reasons for this: Roe vs Wade energizing women, the Biden admin making actual action on climate with the ira, and Gen. Z getting out the vote. To his credit Michael Moore was on TV a few days before the election saying that the red wave won't materialize because of sheer numbers i.e. the number of registered Dems out numbers R's, so if people show up the Dems will win. People showed up.Glad to see that my hastily prepared ballot was accepted and counted.\n\n https://jamesvandyne.com/files/96466be1-30fb-4bc3-9ee3-51b24257300d \nBetter luck next timeLeo has been getting more and more into his own room. He decorates it with things he's made and makes lists of stuff he needs for it (mirror and a printer?). On Saturday he said that he was going to sleep in his own room, instead of with us. Or rather we (me and him) were going to. He slept like he always does and I slept...about the same as usual (so-so).Sunday he said that he was going to sleep by himself. We did the regular reading routine in his bed and I left after he fell asleep. Going back to my own bed, it felt a bit lonely. I've grown so accustomed to just being able to roll over, open my eyes, and see the little guy snoozing. Leo starting to sleep in his own room by himself is a bit more bittersweet than I was expecting it would be. Thankfully he came in to our room at 2:30am and joined us 🥰.I've heard people (in the West) argue against co-sleeping with kids when they're young because it's difficult to get them to sleep in their own room...but he's taking all leadership here. "
-          }
-        ],
-        "url": [
-          "https://jamesvandyne.com/7ee51a31-ffcd-419a-aa2d-4190313b4131"
-        ]
-      }
-    },
-    {
-      "type": [
         "h-card"
       ],
       "properties": {
@@ -591,6 +591,7 @@
       "https://jamesvandyne.com/author/jamesvandyne/"
     ],
     "bookmark": [
+      "https://jamesvandyne.com/4278d37e-5a06-42cd-b965-c8adcd568da7",
       "https://jamesvandyne.com/3a4cac77-9341-4bb7-9b72-a99d1d1015d0",
       "https://jamesvandyne.com/7db2b448-e73e-4deb-8043-259161410a0b",
       "https://jamesvandyne.com/1226cb62-3c6e-42cc-b2dd-dee21565ec3b",
@@ -599,8 +600,7 @@
       "https://jamesvandyne.com/3e7a2391-5924-45c0-8439-2c112690d89c",
       "https://jamesvandyne.com/f2a0f092-2d89-41fd-9bad-159de007414d",
       "https://jamesvandyne.com/67996c0c-2058-4f2b-8808-9e7dfcef1520",
-      "https://jamesvandyne.com/0d11e1df-7475-4a07-a916-5f1a765b36a1",
-      "https://jamesvandyne.com/7ee51a31-ffcd-419a-aa2d-4190313b4131"
+      "https://jamesvandyne.com/0d11e1df-7475-4a07-a916-5f1a765b36a1"
     ]
   },
   "rel-urls": {
@@ -703,6 +703,13 @@
       "title": "View all posts by James",
       "text": "\n        James"
     },
+    "https://jamesvandyne.com/4278d37e-5a06-42cd-b965-c8adcd568da7": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "permalink",
+      "text": "🔗permalink"
+    },
     "https://jamesvandyne.com/3a4cac77-9341-4bb7-9b72-a99d1d1015d0": {
       "rels": [
         "bookmark"
@@ -760,13 +767,6 @@
       "text": "🔗permalink"
     },
     "https://jamesvandyne.com/0d11e1df-7475-4a07-a916-5f1a765b36a1": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "permalink",
-      "text": "🔗permalink"
-    },
-    "https://jamesvandyne.com/7ee51a31-ffcd-419a-aa2d-4190313b4131": {
       "rels": [
         "bookmark"
       ],

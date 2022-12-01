@@ -248,9 +248,17 @@
           "properties": {
             "content": [
               {
-                "html": "<p>Good riddance, #chrome. Hello #brave. But #firefox forever. I can’t find a reason to install Chrome on any new computer anymore and have removed it from my existing devices. #privacy</p>",
+                "html": "<p>Good riddance, #chrome. Hello #brave. But <a rel=\"tag\" class=\"u-tag u-category\" href=\"https://asuh.com/tag/firefox/\">#firefox</a> forever. I can’t find a reason to install Chrome on any new computer anymore and have removed it from my existing devices. <a rel=\"tag\" class=\"u-tag u-category\" href=\"https://asuh.com/tag/privacy/\">#privacy</a></p>",
                 "value": "Good riddance, #chrome. Hello #brave. But #firefox forever. I can’t find a reason to install Chrome on any new computer anymore and have removed it from my existing devices. #privacy"
               }
+            ],
+            "tag": [
+              "https://asuh.com/tag/firefox/",
+              "https://asuh.com/tag/privacy/"
+            ],
+            "category": [
+              "https://asuh.com/tag/firefox/",
+              "https://asuh.com/tag/privacy/"
             ],
             "url": [
               "https://asuh.com/bye-bye-chrome/"
@@ -336,7 +344,7 @@
       "https://asuh.com/feed/"
     ],
     "stylesheet": [
-      "https://asuh.com/wp/wp-content/mmr/b49d46f5-1668488454.min.css"
+      "https://asuh.com/wp/wp-content/mmr/85b14ee8-1669829597.min.css"
     ],
     "authorization_endpoint": [
       "https://asuh.com/wp-json/indieauth/1.0/auth"
@@ -358,6 +366,10 @@
     ],
     "micropub": [
       "https://asuh.com/wp-json/micropub/1.0/endpoint"
+    ],
+    "tag": [
+      "https://asuh.com/tag/firefox/",
+      "https://asuh.com/tag/privacy/"
     ]
   },
   "rel-urls": {
@@ -378,7 +390,7 @@
       "title": "asuh.com » Feed",
       "type": "application/rss+xml"
     },
-    "https://asuh.com/wp/wp-content/mmr/b49d46f5-1668488454.min.css": {
+    "https://asuh.com/wp/wp-content/mmr/85b14ee8-1669829597.min.css": {
       "rels": [
         "stylesheet"
       ]
@@ -432,6 +444,18 @@
       "rels": [
         "micropub"
       ]
+    },
+    "https://asuh.com/tag/firefox/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "#firefox"
+    },
+    "https://asuh.com/tag/privacy/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "#privacy"
     }
   }
 }

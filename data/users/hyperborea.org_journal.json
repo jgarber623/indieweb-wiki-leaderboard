@@ -19,15 +19,68 @@
             "html": "Sci-fi, comics, humor, photos…it's all fair game.",
             "value": "Sci-fi, comics, humor, photos…it's all fair game."
           }
-        ],
-        "bridgy-twitter-content": [
-          "Making the blue check mark mean “This person can afford $20/month” instead of “This person is who they say they are” is only the latest way Twitter has downgraded its signal/noise ratio over the years."
-        ],
-        "bridgy-mastodon-content": [
-          "Making the blue check mark mean “This person can afford $20/month” instead of “This person is who they say they are” is only the latest way Twitter has downgraded its signal/noise ratio over the years."
         ]
       },
       "children": [
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Important Update to the Mastodon/IFTTT How-To"
+            ],
+            "url": [
+              "https://hyperborea.org/journal/2022/11/mastodon-ifttt-update/",
+              "https://hyperborea.org/journal/2022/11/mastodon-ifttt-update/"
+            ],
+            "updated": [
+              "2022-11-29T22:45:08-08:00"
+            ],
+            "published": [
+              "2022-11-29T22:45:08-08:00"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "photo": [
+                    {
+                      "value": "https://secure.gravatar.com/avatar/7d976a58ee7858db8ed467d35e91d5de?s=90&d=wavatar&r=g",
+                      "srcset": {
+                        "2x": "https://secure.gravatar.com/avatar/7d976a58ee7858db8ed467d35e91d5de?s=180&d=wavatar&r=g"
+                      },
+                      "alt": ""
+                    }
+                  ],
+                  "url": [
+                    "https://hyperborea.org/journal/author/kelson/"
+                  ],
+                  "uid": [
+                    "https://hyperborea.org/journal/author/kelson/"
+                  ],
+                  "name": [
+                    "Kelson"
+                  ]
+                },
+                "value": "Kelson"
+              }
+            ],
+            "content": [
+              {
+                "html": "<p>I made a huge mistake in my article on how to <a href=\"https://hyperborea.org/journal/2017/12/mastodon-ifttt/\">post to Mastodon through IFTTT</a>.</p>\n<p>I gave the wrong directions on what to put in the Application Website field in Mastodon. It just needs to be <code>https://ifttt.com</code>. It isn’t used for identifying the source to your Mastodon server as I thought it was, but appears as a link when the post is viewed by itself on the web. If you followed on my mistake, I highly recommend (1) removing the URL from your Mastodon config and just putting in ifttt.com and (2) going into your <a href=\"https://ifttt.com/maker_webhooks/settings\">Webhooks settings at IFTTT</a> and generating a new key. I feel horrible that I messed this up, and I am so sorry to everyone I steered wrong.</p>\n<div class=\"lj-moods-meta\"></div>",
+                "value": "I made a huge mistake in my article on how to post to Mastodon through IFTTT.\nI gave the wrong directions on what to put in the Application Website field in Mastodon. It just needs to be https://ifttt.com. It isn’t used for identifying the source to your Mastodon server as I thought it was, but appears as a link when the post is viewed by itself on the web. If you followed on my mistake, I highly recommend (1) removing the URL from your Mastodon config and just putting in ifttt.com and (2) going into your Webhooks settings at IFTTT and generating a new key. I feel horrible that I messed this up, and I am so sorry to everyone I steered wrong."
+              }
+            ],
+            "category": [
+              "IFTTT",
+              "Mastodon"
+            ]
+          },
+          "id": "post-82465"
+        },
         {
           "type": [
             "h-entry"
@@ -310,69 +363,6 @@
             ]
           },
           "id": "post-82088"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Twitter: Amp Up the Noise"
-            ],
-            "url": [
-              "https://hyperborea.org/journal/2022/10/twitter-noise/",
-              "https://hyperborea.org/journal/2022/10/twitter-noise/"
-            ],
-            "updated": [
-              "2022-10-31T12:21:14-07:00"
-            ],
-            "published": [
-              "2022-10-31T12:21:14-07:00"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "photo": [
-                    {
-                      "value": "https://secure.gravatar.com/avatar/7d976a58ee7858db8ed467d35e91d5de?s=90&d=wavatar&r=g",
-                      "srcset": {
-                        "2x": "https://secure.gravatar.com/avatar/7d976a58ee7858db8ed467d35e91d5de?s=180&d=wavatar&r=g"
-                      },
-                      "alt": ""
-                    }
-                  ],
-                  "url": [
-                    "https://hyperborea.org/journal/author/kelson/"
-                  ],
-                  "uid": [
-                    "https://hyperborea.org/journal/author/kelson/"
-                  ],
-                  "name": [
-                    "Kelson"
-                  ]
-                },
-                "value": "Kelson"
-              }
-            ],
-            "content": [
-              {
-                "html": "<p><i>Making the blue check mark mean “This person can afford $20/month” instead of “This person is who they say they are” is only the latest way Twitter has downgraded its signal/noise ratio over the years.</i></p>\n<p>Word is that Twitter’s new owner is planning to <a href=\"https://hyperborea.org/journal/2022/06/attention-fediverse/\">charge $20/month for a blue check mark</a>.</p>\n<p>Which of course, means the blue checkmark will now be useless. Well, useless to the <em>users</em> of the site, anyway. It won’t tell you which of several accounts is really the person you’re looking for, just who has $20/month to spend on it. (Not that it was perfect, but at least it was <em>a</em> signal.)</p>\n<p>It’s sort of like when SSL certificates went from being expensive and needing verification — so they were a sign that you were on the right website — to cheap and later free. Except an SSL/TLS cert still tells you <em>something</em>: your connection is protected from eavesdropping. The checkmark doesn’t tell you anything valuable.</p>\n<p>But Twitter’s been messing with the signal/noise ratio for ages.</p>\n<h3>Downgrade the Signal</h3>\n<p>Ads themselves (or promoted tweets, or whatever you call them) are already adding noise. Then they started <a href=\"https://hyperborea.org/journal/2017/10/broadcasting-likes/\">showing you other people’s “likes,”</a> removing some meaning from the action and adding noise to the stream. These days they even show you tweets from people that people you follow are following.</p>\n<p>On Mastodon I’ll sometimes get distracted from something I wanted to do or look for, but I can almost always get back to it. I’ll pop onto Twitter for 5 minutes to look for something and I’m there twice as long because <em>I can’t find it</em> in all the <a href=\"https://hyperborea.org/journal/2022/06/attention-fediverse/\">attention-grabbing “features.”</a> The other day I decided to unfollow all the corporations and organizations and only keep the actual people on the list, and I <em>still</em> had trouble finding things.</p>\n<p>I suppose from Twitter’s perspective it worked, because I was there for 10 minutes instead of 5…but it makes me less interested in coming back later.</p>\n<p>Every bit of noise you add to a signal cuts down on how much value the listener gets out of it. Eventually the ratio is no longer worth it, and all that attention you managed to extract from them by ratcheting up the noise drops to zero.</p>\n<div class=\"lj-moods-meta\"></div>",
-                "value": "Making the blue check mark mean “This person can afford $20/month” instead of “This person is who they say they are” is only the latest way Twitter has downgraded its signal/noise ratio over the years.\nWord is that Twitter’s new owner is planning to charge $20/month for a blue check mark.\nWhich of course, means the blue checkmark will now be useless. Well, useless to the users of the site, anyway. It won’t tell you which of several accounts is really the person you’re looking for, just who has $20/month to spend on it. (Not that it was perfect, but at least it was a signal.)\nIt’s sort of like when SSL certificates went from being expensive and needing verification — so they were a sign that you were on the right website — to cheap and later free. Except an SSL/TLS cert still tells you something: your connection is protected from eavesdropping. The checkmark doesn’t tell you anything valuable.\nBut Twitter’s been messing with the signal/noise ratio for ages.\nDowngrade the Signal\nAds themselves (or promoted tweets, or whatever you call them) are already adding noise. Then they started showing you other people’s “likes,” removing some meaning from the action and adding noise to the stream. These days they even show you tweets from people that people you follow are following.\nOn Mastodon I’ll sometimes get distracted from something I wanted to do or look for, but I can almost always get back to it. I’ll pop onto Twitter for 5 minutes to look for something and I’m there twice as long because I can’t find it in all the attention-grabbing “features.” The other day I decided to unfollow all the corporations and organizations and only keep the actual people on the list, and I still had trouble finding things.\nI suppose from Twitter’s perspective it worked, because I was there for 10 minutes instead of 5…but it makes me less interested in coming back later.\nEvery bit of noise you add to a signal cuts down on how much value the listener gets out of it. Eventually the ratio is no longer worth it, and all that attention you managed to extract from them by ratcheting up the noise drops to zero."
-              }
-            ],
-            "category": [
-              "social networking",
-              "Twitter"
-            ],
-            "syndication": [
-              "https://twitter.com/KelsonV/status/1587162858068279296",
-              "https://wandering.shop/@KelsonV/109264836744862063"
-            ]
-          },
-          "id": "post-82065"
         }
       ]
     }
@@ -427,24 +417,27 @@
       "https://hyperborea.org/journal/page/2/"
     ],
     "bookmark": [
+      "https://hyperborea.org/journal/2022/11/mastodon-ifttt-update/",
       "https://hyperborea.org/journal/2022/11/saucer-country/",
       "https://hyperborea.org/journal/2022/11/mastodon-what/",
       "https://hyperborea.org/journal/2022/11/ds-what/",
-      "https://hyperborea.org/journal/2022/10/halloween-tldr/",
-      "https://hyperborea.org/journal/2022/10/twitter-noise/"
+      "https://hyperborea.org/journal/2022/10/halloween-tldr/"
     ],
     "author": [
       "https://hyperborea.org/journal/author/kelson/"
     ],
     "category": [
+      "https://hyperborea.org/journal/category/tech/computer-security/",
       "https://hyperborea.org/journal/category/entertainment/comics/",
       "https://hyperborea.org/journal/category/entertainment/sci-fifantasy/",
       "https://hyperborea.org/journal/category/tech/computersinternet/",
       "https://hyperborea.org/journal/category/entertainment/humor/you-must-be-mistaken/",
-      "https://hyperborea.org/journal/category/life/photos/",
-      "https://hyperborea.org/journal/category/life/annoyances/"
+      "https://hyperborea.org/journal/category/life/photos/"
     ],
     "tag": [
+      "https://hyperborea.org/journal/category/tech/computer-security/",
+      "https://hyperborea.org/journal/tag/ifttt/",
+      "https://hyperborea.org/journal/tag/mastodon/",
       "https://hyperborea.org/journal/category/entertainment/comics/",
       "https://hyperborea.org/journal/category/entertainment/sci-fifantasy/",
       "https://hyperborea.org/journal/tag/campaign/",
@@ -452,15 +445,12 @@
       "https://hyperborea.org/journal/tag/saucer-country/",
       "https://hyperborea.org/journal/tag/ufo/",
       "https://hyperborea.org/journal/category/tech/computersinternet/",
-      "https://hyperborea.org/journal/tag/mastodon/",
       "https://hyperborea.org/journal/tag/social-networking/",
       "https://hyperborea.org/journal/category/entertainment/humor/you-must-be-mistaken/",
       "https://hyperborea.org/journal/category/life/photos/",
       "https://hyperborea.org/journal/tag/halloween/",
       "https://hyperborea.org/journal/tag/pumpkin/",
-      "https://hyperborea.org/journal/tag/teal-pumpkin-project/",
-      "https://hyperborea.org/journal/category/life/annoyances/",
-      "https://hyperborea.org/journal/tag/twitter/"
+      "https://hyperborea.org/journal/tag/teal-pumpkin-project/"
     ],
     "me": [
       "https://www.flickr.com/photos/kelsonv/",
@@ -566,12 +556,12 @@
         "apple-touch-icon"
       ]
     },
-    "https://hyperborea.org/journal/2022/11/saucer-country/": {
+    "https://hyperborea.org/journal/2022/11/mastodon-ifttt-update/": {
       "rels": [
         "bookmark"
       ],
-      "title": "Permalink to Saucer Country is finally being completed!",
-      "text": "Saucer Country is finally being completed!"
+      "title": "Permalink to Important Update to the Mastodon/IFTTT How-To",
+      "text": "Important Update to the Mastodon/IFTTT How-To"
     },
     "https://hyperborea.org/journal/author/kelson/": {
       "rels": [
@@ -579,6 +569,32 @@
       ],
       "title": "View all posts by Kelson",
       "text": "Kelson"
+    },
+    "https://hyperborea.org/journal/category/tech/computer-security/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Computer Security"
+    },
+    "https://hyperborea.org/journal/tag/ifttt/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "IFTTT"
+    },
+    "https://hyperborea.org/journal/tag/mastodon/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Mastodon"
+    },
+    "https://hyperborea.org/journal/2022/11/saucer-country/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to Saucer Country is finally being completed!",
+      "text": "Saucer Country is finally being completed!"
     },
     "https://hyperborea.org/journal/category/entertainment/comics/": {
       "rels": [
@@ -632,12 +648,6 @@
       ],
       "text": "Computers/Internet"
     },
-    "https://hyperborea.org/journal/tag/mastodon/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Mastodon"
-    },
     "https://hyperborea.org/journal/tag/social-networking/": {
       "rels": [
         "tag"
@@ -689,26 +699,6 @@
         "tag"
       ],
       "text": "Teal Pumpkin Project"
-    },
-    "https://hyperborea.org/journal/2022/10/twitter-noise/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Permalink to Twitter: Amp Up the Noise",
-      "text": "Twitter: Amp Up the Noise"
-    },
-    "https://hyperborea.org/journal/category/life/annoyances/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "Annoyances"
-    },
-    "https://hyperborea.org/journal/tag/twitter/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Twitter"
     },
     "https://www.flickr.com/photos/kelsonv/": {
       "rels": [

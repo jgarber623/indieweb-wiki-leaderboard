@@ -68,7 +68,6 @@
       "https://www.benji.dog/favicon.ico"
     ],
     "stylesheet": [
-      "https://www.benji.dog/assets/fontello-9434ffc0/css/fontello.css",
       "https://www.benji.dog/build/css/main.min.css"
     ],
     "feed": [
@@ -82,6 +81,9 @@
       "https://www.benji.dog/all.atom",
       "https://www.benji.dog/feed.json",
       "https://www.benji.dog/all.json"
+    ],
+    "indieauth-metadata": [
+      "https://benji.dog/.well-known/oauth-authorization-server"
     ],
     "authorization_endpoint": [
       "https://indieauth.com/auth"
@@ -224,12 +226,6 @@
         "shortcut"
       ]
     },
-    "https://www.benji.dog/assets/fontello-9434ffc0/css/fontello.css": {
-      "rels": [
-        "stylesheet"
-      ],
-      "type": "text/css"
-    },
     "https://www.benji.dog/build/css/main.min.css": {
       "rels": [
         "stylesheet"
@@ -261,7 +257,7 @@
       "rels": [
         "alternate"
       ],
-      "title": "RSS Feed",
+      "title": "RSS Feed - All Posts",
       "type": "application/rss+xml"
     },
     "https://www.benji.dog/feed.atom": {
@@ -275,7 +271,7 @@
       "rels": [
         "alternate"
       ],
-      "title": "RSS (Atom) Feed",
+      "title": "RSS (Atom) Feed - All Posts",
       "type": "application/atom+xml"
     },
     "https://www.benji.dog/feed.json": {
@@ -289,8 +285,13 @@
       "rels": [
         "alternate"
       ],
-      "title": "JSON Feed",
+      "title": "JSON Feed - All Posts",
       "type": "application/json"
+    },
+    "https://benji.dog/.well-known/oauth-authorization-server": {
+      "rels": [
+        "indieauth-metadata"
+      ]
     },
     "https://indieauth.com/auth": {
       "rels": [

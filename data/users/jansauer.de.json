@@ -1,50 +1,66 @@
 {
-  "items": [
-    {
-      "type": [
-        "h-feed"
-      ],
-      "properties": {
-        "name": [
-          "Hello World"
-        ]
-      }
-    }
-  ],
+  "items": [],
   "rels": {
-    "modulepreload": [
-      "https://jansauer.de/_nuxt/entry-a8d95e8a.mjs",
-      "https://jansauer.de/_nuxt/index-c8af38b7.mjs"
+    "icon": [
+      "https://jansauer.de/favicon.svg"
     ],
-    "preload": [
-      "https://jansauer.de/_nuxt/entry.0032ff7a.css"
+    "canonical": [
+      "https://jansauer.de/"
     ],
-    "prefetch": [
-      "https://jansauer.de/_nuxt/_...slug_-1d5f3649.mjs"
+    "me": [
+      "https://indieweb.social/@jansauer",
+      "https://twitter.com/jansauer",
+      "https://www.linkedin.com/in/jan-sauer/"
     ],
     "stylesheet": [
-      "https://jansauer.de/_nuxt/entry.0032ff7a.css"
+      "https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap",
+      "https://jansauer.de/assets/_...slug_.c029dad9.css",
+      "https://jansauer.de/assets/index.bfc41d7d.css"
+    ],
+    "home": [
+      "https://jansauer.de/"
     ]
   },
   "rel-urls": {
-    "https://jansauer.de/_nuxt/entry-a8d95e8a.mjs": {
+    "https://jansauer.de/favicon.svg": {
       "rels": [
-        "modulepreload"
+        "icon"
+      ],
+      "type": "image/svg+xml"
+    },
+    "https://jansauer.de/": {
+      "rels": [
+        "canonical"
       ]
     },
-    "https://jansauer.de/_nuxt/entry.0032ff7a.css": {
+    "https://indieweb.social/@jansauer": {
       "rels": [
-        "preload"
+        "me"
       ]
     },
-    "https://jansauer.de/_nuxt/index-c8af38b7.mjs": {
+    "https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap": {
       "rels": [
-        "modulepreload"
+        "stylesheet"
       ]
     },
-    "https://jansauer.de/_nuxt/_...slug_-1d5f3649.mjs": {
+    "https://jansauer.de/assets/_...slug_.c029dad9.css": {
       "rels": [
-        "prefetch"
+        "stylesheet"
+      ]
+    },
+    "https://jansauer.de/assets/index.bfc41d7d.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://twitter.com/jansauer": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://www.linkedin.com/in/jan-sauer/": {
+      "rels": [
+        "me"
       ]
     }
   }
