@@ -1,24 +1,716 @@
 {
-  "items": [],
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "tz": [
+          "-0500"
+        ],
+        "photo": [
+          {
+            "value": "https://jacky.wtf/assets/favicon.2fb16a8e.svg",
+            "alt": ""
+          }
+        ]
+      },
+      "id": "hCard"
+    },
+    {
+      "type": [
+        "h-feed"
+      ],
+      "properties": {
+        "name": [
+          "Essays"
+        ],
+        "url": [
+          "https://jacky.wtf/archive/article"
+        ],
+        "note": [
+          {
+            "html": "A few <a href=\"https://indieweb.org/article\">articles</a> that I've\n          written most recently.",
+            "value": "A few articles that I've\n          written most recently."
+          }
+        ]
+      },
+      "id": "essays",
+      "children": [
+        {
+          "type": [
+            "h-cite"
+          ],
+          "properties": {
+            "name": [
+              "Things to Do to Celebrate my 29th"
+            ],
+            "url": [
+              "https://jacky.wtf/2022/7/jGyU"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-cite"
+          ],
+          "properties": {
+            "name": [
+              "A Web that Reflects People and their Values"
+            ],
+            "url": [
+              "https://jacky.wtf/2022/6/Cpq0"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-cite"
+          ],
+          "properties": {
+            "name": [
+              "Implementing Property Searching for Micropub"
+            ],
+            "url": [
+              "https://jacky.wtf/2022/6/fDu9"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-cite"
+          ],
+          "properties": {
+            "name": [
+              "Thoughts on BlueSky's \"Self Authenticating Social\" Protocol"
+            ],
+            "url": [
+              "https://jacky.wtf/thoughts-bluesky-social-protocol"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-cite"
+          ],
+          "properties": {
+            "name": [
+              "HWCs: Glad I Went!"
+            ],
+            "url": [
+              "https://jacky.wtf/2022/3/oo/ooK1B0udp16W9yQp2BHBhyz5"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": [
+        "h-feed"
+      ],
+      "properties": {
+        "name": [
+          "Links"
+        ],
+        "note": [
+          {
+            "html": "Here lies the things I've liked, bookmarked or interacted with across\n          the Web (and beyond). Some people call them\n          <a href=\"https://indieweb.org/reactions\">reactions</a> or\n          <a href=\"https://indieweb.org/replies\">replies</a> - I consider them\n          my feedback back to the Web from my site.",
+            "value": "Here lies the things I've liked, bookmarked or interacted with across\n          the Web (and beyond). Some people call them\n          reactions or\n          replies - I consider them\n          my feedback back to the Web from my site."
+          }
+        ]
+      },
+      "id": "linklog",
+      "children": [
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "like-of": [
+              {
+                "type": [
+                  "h-cite",
+                  "h-entry"
+                ],
+                "properties": {
+                  "name": [
+                    "Warning signs with social media platforms"
+                  ],
+                  "summary": [
+                    "In the aftermath of the issues with the major social media platforms, there have been a number of initiatives to reclaim social networking in a way that makes sense for people, with safety and personal control being at the forefront of a lot of peoples&#x27; minds."
+                  ],
+                  "author": [
+                    {
+                      "type": [
+                        "h-card"
+                      ],
+                      "properties": {
+                        "photo": [
+                          {
+                            "value": "https://beesbuzz.biz/static/headshot.jpg",
+                            "alt": ""
+                          }
+                        ],
+                        "name": [
+                          "fluffy"
+                        ]
+                      },
+                      "value": "https://beesbuzz.biz/"
+                    }
+                  ],
+                  "url": [
+                    "https://beesbuzz.biz/blog/10755-Warning-signs-with-social-media-platforms"
+                  ]
+                },
+                "value": "https://beesbuzz.biz/blog/10755-Warning-signs-with-social-media-platforms"
+              }
+            ],
+            "url": [
+              "https://jacky.wtf/2022/12/e9zm"
+            ],
+            "published": [
+              "2022-12-01T22:59:12Z"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Kapowski: reaction GIFs for the indie web"
+            ],
+            "bookmark-of": [
+              {
+                "type": [
+                  "h-cite",
+                  "h-entry"
+                ],
+                "properties": {
+                  "name": [
+                    "Kapowski: reaction GIFs for the indie web"
+                  ],
+                  "content": [
+                    {
+                      "html": "<p>tl;dr – <a href=\"https://kapowski.bayside.pub/\">Kapowski</a> is a simplified tool for finding and posting reaction GIFs to your personal website. It works without a sign-in and gives you HTML to copy-paste into <i>whatever</i> posting interface you use for your website. It's \"progressively enhanced\" with IndieWeb building blocks, so if your site supports them it becomes faster and easier to use. Search and content are currently powered by <a href=\"https://gfycat.com/\">Gfycat</a>.</p>\n<br><div class=\"gallery\">\n<br><figure><br>  <img src=\"https://media.martymcgui.re/61/1a/82/dc/c050acdd4c40291e5d29fa3b6d275e13ceeecd79e4770df5f702b502.jpg\" alt=\"\"><br>  <figcaption><br>    A Kapowski search for \"candy\"<br>    <br><br>  </figcaption><br></figure><br><figure><br>  <img src=\"https://media.martymcgui.re/dc/20/07/0a/728ee8a154114832340d2cacf781fbf5b710606ea1d384cfa0bcecc4.jpg\" alt=\"\"><br>  <figcaption>Preview of selected GIF with HTML source ready to copy-and-paste</figcaption><br></figure><br>\n</div>\n<br><h2>\n<br>  IndieWeb <a href=\"https://indieweb.org/building-blocks\">building blocks</a>, you say?<br>\n</h2>\n<br><p><br>  Kapowski supports <a href=\"https://indieweb.org/IndieAuth\">IndieAuth</a> and <a href=\"https://indieweb.org/Micropub\">Micropub</a>. If your site supports these, you can sign in using your website as your identity and then use Kapowski to post the image to your site directly.<br>  <br><br></p>\n<br><div class=\"gallery\">\n<br><figure><br>  <img src=\"https://media.martymcgui.re/c2/c1/7f/0c/61693700950d6999a3e9cd36a6fb4edc54f348baf833634cf63c9281.jpg\" alt=\"\"><br>  <figcaption>Preview page with sign-in form</figcaption><br></figure><br><figure><br>  <img src=\"https://media.martymcgui.re/68/6e/94/e1/680dec9e59be6c690d76383edae01441e603ddb958e84c991820e80d.jpg\" alt=\"\"><br>  <figcaption>Signed in, alt-text entered, ready to post!</figcaption><br></figure><br>\n</div>\n<br><p>But that's not all! If your site supports sending <a href=\"https://indieweb.org/Webmention\">Webmentions</a> and markup for <a href=\"https://indieweb.org/reply#How_To\">reply posts</a>, you can use Kapowski to make your post a <a href=\"https://indieweb.org/photo_reply\">photo reply</a>!</p>\n<br><div class=\"gallery\">\n<br><figure><br>  <img src=\"https://media.martymcgui.re/d5/7e/12/cd/72992063a317b3f6711828d19033cee7000561436ec7e4d9b4e3097a.jpg\" alt=\"\"><br>  <figcaption>Search page with a URL in the optional reply field</figcaption><br></figure><br><figure><br>  <img src=\"https://media.martymcgui.re/b3/33/9f/55/ecbc950763731fb06e06f209d773687aa5090fbd4d3321a91691ebdc.jpg\" alt=\"\"><br>  <figcaption>Reply post on my site with context about the post I'm replying to.</figcaption><br></figure><br>\n</div>\n<br><h2>Still reading? Here's some (too much) history.</h2>\n<br><p>I really like Micropub as an IndieWeb building block. As a developer, it's easy to understand on the wire. It's very extensible because the spec provides very few constraints over what you can post with it.</p>\n<br><p>However, that flexibility comes at a coordination cost. I had (have!) a dream that being able to rapidly iterate on special-purpose Micropub clients will let many <i>ways of posting</i> bloom. I also loved (love!) <a href=\"https://glitch.com/\">Glitch</a> as a place to build web apps in the open where other folk can see how they work and remix them to make them their own.</p>\n<br><p>So, I built and <a href=\"https://martymcgui.re/2018/05/29/hwc-baltimore-2018-05-29-wrap-up/\">stealth-launched Kapowski built on Glitch back in 2018</a>. I didn't use it myself very much (but definitely <a href=\"https://martymcgui.re/2018/04/10/193815/\">some</a>), and even shared it around some IndieWeb events, like when I talked about <a href=\"https://martymcgui.re/2019/06/19/152602/\">mobile posting at the 2019 IndieWeb Summit</a>.</p>\n<br><p>I kept Kapowski intentionally simple, hoping that some other IndieWeb folks might use it, give feedback, and iterate on the idea of what a good user experience might be for posting reply GIFs on the IndieWeb.</p>\n<br><p>I ... didn't get much feedback! As far as I know, few people have used it. However, I very much did notice that it <i>kept breaking</i>.</p>\n<br><p><br>  <a href=\"https://giphy.com/\">Giphy</a>, the original service Kapowski used, was bought by Facebook with the intention of, I don't know, tracking all the GIFs people posted. I didn't like that, so I switched things over to <a href=\"https://gfycat.com/\">Gfycat</a>. (Although with <a href=\"https://www.cnbc.com/2022/10/18/facebook-parent-meta-ordered-to-sell-giphy-by-uk-competition-regulator.html\">Facebook (Meta) being forced by UK regulators to sell off Giphy</a>, maybe it'll be time soon to bring it back.)<br>  <br><br></p>\n<br><p>The biggest problem, though, was that server-side Javascript bits rot. I want to be able to stand up a hobby project and forget it for months or years at a time. For a project of this pace, especially one that I think of as being <i>very simple</i>, the Javascript stack moves <i>fast.</i> I would get notices every week or so that this or that dependency had a required security update. Sometimes apply what looked like a small point update would cause a breaking change in an API (<i>Axios!)</i>. Eventually, it became not-fun to think about keeping up Kapowski.</p>\n<br><p>Multiplying this maintenance across a number of other Micropub clients I had managed to barely knock together on Glitch led to me burning out on the idea. So, I stopped maintaining it and at some point it stopped working.</p>\n<br><h2>Reviving the embers</h2>\n<br><p>I still want to see a thousand Micropub-powered flowers bloom, but I don't have the personal project bandwidth to build the tool set on Glitch that I thought would make that possible. I'm just not that fluent in server-side Javascript development and project management, and it's too far of a road right now to <i>git gud.</i></p>\n<br><p>That said, there are styles of web app development I am much more comfortable working in! I think I can take this stuff a lot further by sharpening the knives I already know how to use.</p>\n<br><p>So, I've spent a good chunk of free time this year quietly porting some of my IndieWeb projects to PHP and hosting them on a virtual private server. That's stuff I know how to do! As I've re-built each one, I've also looked to extract the common points of similarity and complexity into a kind of \"Micropub kit\", with a common-but-extensible engine. That's made each client easier to build and deploy, and that's very exciting.</p>\n<br><p>(This \"micropub kit\" isn't ready for public consumption <i>at all</i> but it <i>is</i> available for looking-at if you want. <a href=\"https://git.schmarty.net/schmarty/micropubkit\">Here's the micropubkit source</a>.)</p>\n<br><h3>\n<br>  What's next?<br>  <br><br>\n</h3>\n<br><p>Since it's <a href=\"https://indieweb.org/2022-12-indieweb-gift-calendar\">IndieWeb Gift Calendar season</a>, I think I'll spend the next month polishing up and posting more about this work.  If you have thoughts about Kapowski, \"micropubkit\", or posting weird stuff on the IndieWeb in general, I'd love to read them! Just reply to this post on your own site and send me a Webmention.</p>\n<br><p><br>  If you aren't ready to reply in words... <a href=\"https://kapowski.bayside.pub/?in-reply-to=https://martymcgui.re/2022/12/01/kapowski-reaction-gifs-for-the-indie-web/\">maybe a GIF would do?</a> :)<br>  <br><br></p>",
+                      "value": "tl;dr – Kapowski is a simplified tool for finding and posting reaction GIFs to your personal website. It works without a sign-in and gives you HTML to copy-paste into whatever posting interface you use for your website. It's \"progressively enhanced\" with IndieWeb building blocks, so if your site supports them it becomes faster and easier to use. Search and content are currently powered by Gfycat.          A Kapowski search for \"candy\"            Preview of selected GIF with HTML source ready to copy-and-paste  IndieWeb building blocks, you say?  Kapowski supports IndieAuth and Micropub. If your site supports these, you can sign in using your website as your identity and then use Kapowski to post the image to your site directly.        Preview page with sign-in form      Signed in, alt-text entered, ready to post!But that's not all! If your site supports sending Webmentions and markup for reply posts, you can use Kapowski to make your post a photo reply!      Search page with a URL in the optional reply field      Reply post on my site with context about the post I'm replying to.Still reading? Here's some (too much) history.I really like Micropub as an IndieWeb building block. As a developer, it's easy to understand on the wire. It's very extensible because the spec provides very few constraints over what you can post with it.However, that flexibility comes at a coordination cost. I had (have!) a dream that being able to rapidly iterate on special-purpose Micropub clients will let many ways of posting bloom. I also loved (love!) Glitch as a place to build web apps in the open where other folk can see how they work and remix them to make them their own.So, I built and stealth-launched Kapowski built on Glitch back in 2018. I didn't use it myself very much (but definitely some), and even shared it around some IndieWeb events, like when I talked about mobile posting at the 2019 IndieWeb Summit.I kept Kapowski intentionally simple, hoping that some other IndieWeb folks might use it, give feedback, and iterate on the idea of what a good user experience might be for posting reply GIFs on the IndieWeb.I ... didn't get much feedback! As far as I know, few people have used it. However, I very much did notice that it kept breaking.  Giphy, the original service Kapowski used, was bought by Facebook with the intention of, I don't know, tracking all the GIFs people posted. I didn't like that, so I switched things over to Gfycat. (Although with Facebook (Meta) being forced by UK regulators to sell off Giphy, maybe it'll be time soon to bring it back.)  The biggest problem, though, was that server-side Javascript bits rot. I want to be able to stand up a hobby project and forget it for months or years at a time. For a project of this pace, especially one that I think of as being very simple, the Javascript stack moves fast. I would get notices every week or so that this or that dependency had a required security update. Sometimes apply what looked like a small point update would cause a breaking change in an API (Axios!). Eventually, it became not-fun to think about keeping up Kapowski.Multiplying this maintenance across a number of other Micropub clients I had managed to barely knock together on Glitch led to me burning out on the idea. So, I stopped maintaining it and at some point it stopped working.Reviving the embersI still want to see a thousand Micropub-powered flowers bloom, but I don't have the personal project bandwidth to build the tool set on Glitch that I thought would make that possible. I'm just not that fluent in server-side Javascript development and project management, and it's too far of a road right now to git gud.That said, there are styles of web app development I am much more comfortable working in! I think I can take this stuff a lot further by sharpening the knives I already know how to use.So, I've spent a good chunk of free time this year quietly porting some of my IndieWeb projects to PHP and hosting them on a virtual private server. That's stuff I know how to do! As I've re-built each one, I've also looked to extract the common points of similarity and complexity into a kind of \"Micropub kit\", with a common-but-extensible engine. That's made each client easier to build and deploy, and that's very exciting.(This \"micropub kit\" isn't ready for public consumption at all but it is available for looking-at if you want. Here's the micropubkit source.)  What's next?  Since it's IndieWeb Gift Calendar season, I think I'll spend the next month polishing up and posting more about this work.  If you have thoughts about Kapowski, \"micropubkit\", or posting weird stuff on the IndieWeb in general, I'd love to read them! Just reply to this post on your own site and send me a Webmention.  If you aren't ready to reply in words... maybe a GIF would do? :)"
+                    }
+                  ],
+                  "author": [
+                    {
+                      "type": [
+                        "h-card"
+                      ],
+                      "properties": {
+                        "photo": [
+                          {
+                            "value": "https://martymcgui.re/images/logo.jpg",
+                            "alt": "Marty McGuire"
+                          }
+                        ],
+                        "name": [
+                          "Marty McGuire"
+                        ]
+                      },
+                      "value": "https://martymcgui.re/"
+                    }
+                  ],
+                  "url": [
+                    "https://martymcgui.re/2022/12/01/kapowski-reaction-gifs-for-the-indie-web/"
+                  ]
+                },
+                "value": "https://martymcgui.re/2022/12/01/kapowski-reaction-gifs-for-the-indie-web/"
+              }
+            ],
+            "content": [
+              {
+                "html": "<p>Shout out to <a href=\"https://jacky.wtf/\" class=\"u-mention u-category h-card\"></a> on launching <a href=\"https://jacky.wtf/\"></a>! Now, I got a nifty way to reply using GIFs, heh! <a href=\"https://jacky.wtf/2022/12/c_cu\">This is how I feel about it</a>!</p>",
+                "value": "Shout out to  on launching ! Now, I got a nifty way to reply using GIFs, heh! This is how I feel about it!"
+              }
+            ],
+            "mention": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "url": [
+                    "https://jacky.wtf/"
+                  ]
+                },
+                "value": "https://jacky.wtf/"
+              }
+            ],
+            "category": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "url": [
+                    "https://jacky.wtf/"
+                  ]
+                },
+                "value": "https://jacky.wtf/"
+              }
+            ],
+            "url": [
+              "https://jacky.wtf/2022/12/Tvef"
+            ],
+            "published": [
+              "2022-12-01T22:56:15Z"
+            ],
+            "syndication": [
+              "https://indieweb.xyz/en/indieweb"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "like-of": [
+              {
+                "type": [
+                  "h-cite",
+                  "h-entry"
+                ],
+                "properties": {
+                  "content": [
+                    {
+                      "html": "Some day we're going to look back at social media and say \"what are you talking about, there's no way everyone on Twitter was all on one instance\"",
+                      "value": "Some day we're going to look back at social media and say \"what are you talking about, there's no way everyone on Twitter was all on one instance\""
+                    }
+                  ],
+                  "author": [
+                    {
+                      "type": [
+                        "h-card"
+                      ],
+                      "properties": {
+                        "photo": [
+                          {
+                            "value": "https://aaronparecki.com/images/profile.jpg",
+                            "alt": "Aaron Parecki"
+                          }
+                        ],
+                        "name": [
+                          "Aaron Parecki"
+                        ]
+                      },
+                      "value": "https://aaronparecki.com/"
+                    }
+                  ],
+                  "url": [
+                    "https://aaronparecki.com/2022/11/19/28/instance"
+                  ]
+                },
+                "value": "https://aaronparecki.com/2022/11/19/28/instance"
+              }
+            ],
+            "url": [
+              "https://jacky.wtf/2022/11/SUYF"
+            ],
+            "published": [
+              "2022-11-20T18:42:56Z"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": [
+        "h-feed"
+      ],
+      "properties": {
+        "name": [
+          "Microblog"
+        ],
+        "note": [
+          {
+            "html": "My microblog is where I post quick notes or semi-formed posts. Things that don't quite\n          fit into what I'd consider a blog post but also would need a permalink.",
+            "value": "My microblog is where I post quick notes or semi-formed posts. Things that don't quite\n          fit into what I'd consider a blog post but also would need a permalink."
+          }
+        ]
+      },
+      "id": "microblog",
+      "children": [
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<p>This piece is one I was waiting to see <a href=\"https://www.washingtonpost.com/opinions/2022/11/30/twitter-elon-musk-black-women-resistance/\">https://www.washingtonpost.com/opinions/2022/11/30/twitter-elon-musk-black-women-resistance/</a> and I want Black people to completely reject this. There's no reason to <em>continue</em> to accept abuse, especially on a platform that, despite the gold it provided, took more blood and bodies from us. I have to finish reading <a href=\"https://techpolicy.press/the-whiteness-of-mastodon/\">https://techpolicy.press/the-whiteness-of-mastodon/</a> but from the Black radical tradition, it does not stand to reason for us to spend a decade in a place that optimized our pain for profit.</p>",
+                "value": "This piece is one I was waiting to see https://www.washingtonpost.com/opinions/2022/11/30/twitter-elon-musk-black-women-resistance/ and I want Black people to completely reject this. There's no reason to continue to accept abuse, especially on a platform that, despite the gold it provided, took more blood and bodies from us. I have to finish reading https://techpolicy.press/the-whiteness-of-mastodon/ but from the Black radical tradition, it does not stand to reason for us to spend a decade in a place that optimized our pain for profit."
+              }
+            ],
+            "url": [
+              "https://jacky.wtf/2022/12/Z0aj"
+            ],
+            "published": [
+              "2022-12-01T21:25:53Z"
+            ],
+            "syndication": [
+              "https://twitter.com/jackyalcine/status/1598428258218942487",
+              "https://todon.eu/@jalcine/109440530562148463"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "in-reply-to": [
+              {
+                "type": [
+                  "h-cite",
+                  "h-entry",
+                  "h-koype-stubbed-from-ogp"
+                ],
+                "properties": {
+                  "name": [
+                    "Bukky Adebayo (@Bukky@mastodon.social)"
+                  ],
+                  "summary": [
+                    "@jalcine@todon.eu at this point, a part of me is like let’s go back to flip phones."
+                  ],
+                  "author": [
+                    {
+                      "type": [
+                        "h-card"
+                      ],
+                      "properties": {
+                        "name": [
+                          "Mastodon"
+                        ]
+                      },
+                      "value": "Mastodon"
+                    }
+                  ],
+                  "url": [
+                    "https://mastodon.social/@Bukky/109440453026850890"
+                  ]
+                },
+                "value": "https://mastodon.social/@Bukky/109440453026850890"
+              }
+            ],
+            "content": [
+              {
+                "html": "<p>Listen! I've been looking at <a href=\"https://www.crowdsupply.com/sutajio-kosagi/precursor\">https://www.crowdsupply.com/sutajio-kosagi/precursor</a></p>",
+                "value": "Listen! I've been looking at https://www.crowdsupply.com/sutajio-kosagi/precursor"
+              }
+            ],
+            "url": [
+              "https://jacky.wtf/2022/12/ol_z"
+            ],
+            "published": [
+              "2022-12-01T21:11:19Z"
+            ],
+            "syndication": [
+              "https://todon.eu/@jalcine/109440473184504627"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "in-reply-to": [
+              {
+                "type": [
+                  "h-cite",
+                  "h-entry",
+                  "h-koype-stubbed-from-ogp"
+                ],
+                "properties": {
+                  "name": [
+                    "Bukky Adebayo (@Bukky@mastodon.social)"
+                  ],
+                  "summary": [
+                    "@jalcine@todon.eu I’m not sure that we will have it right now though. I feel like we’re having another AI hype cycle. In the post-Cambridge-Analytica world and the numerous data breaches maybe more folks with power are more interested in curtailing the indiscriminate data collection to facilitate the development of AI models."
+                  ],
+                  "author": [
+                    {
+                      "type": [
+                        "h-card"
+                      ],
+                      "properties": {
+                        "name": [
+                          "Mastodon"
+                        ]
+                      },
+                      "value": "Mastodon"
+                    }
+                  ],
+                  "url": [
+                    "https://mastodon.social/@Bukky/109440401669102602"
+                  ]
+                },
+                "value": "https://mastodon.social/@Bukky/109440401669102602"
+              }
+            ],
+            "content": [
+              {
+                "html": "<p>That's what's scaring me. It's bleeding over a lot into other circles I'm in and people are just dumping years of data to them without understanding how this can be used against them. It sometimes makes me look at Luddism a bit more, lol.</p>",
+                "value": "That's what's scaring me. It's bleeding over a lot into other circles I'm in and people are just dumping years of data to them without understanding how this can be used against them. It sometimes makes me look at Luddism a bit more, lol."
+              }
+            ],
+            "url": [
+              "https://jacky.wtf/2022/12/neeg"
+            ],
+            "published": [
+              "2022-12-01T21:00:28Z"
+            ],
+            "syndication": [
+              "https://todon.eu/@jalcine/109440430682315033"
+            ]
+          }
+        }
+      ]
+    }
+  ],
   "rels": {
-    "stylesheet": [
-      "https://jacky.wtf/__admin__/site.css"
+    "authorization_endpoint": [
+      "https://a.jacky.wtf/api/indieauth/authorization"
     ],
-    "icon": [
-      "data:;base64,="
+    "hub": [
+      "https://pubsubhubbub.appspot.com/"
+    ],
+    "micropub": [
+      "https://mp.jacky.wtf/mp"
+    ],
+    "microsub": [
+      "https://aperture.p3k.io/microsub/126"
+    ],
+    "ticket_endpoint": [
+      "https://a.jacky.wtf/api/indieauth/ticket"
+    ],
+    "token_endpoint": [
+      "https://a.jacky.wtf/api/indieauth/token"
+    ],
+    "webmention": [
+      "https://webmention.io/jacky.wtf/webmention"
+    ],
+    "bookmark": [
+      "https://jacky.wtf/?"
+    ],
+    "canonical": [
+      "https://jacky.wtf/?"
+    ],
+    "alternate": [
+      "https://jacky.wtf/feed.xml",
+      "https://granary.io/url?url=https://jacky.wtf/channel/all/&input=html&output=atom&hub=https://bridgy-fed.superfeedr.com/"
+    ],
+    "dns-prefetch": [
+      "https://unpkg.com/",
+      "https://plausible.io/",
+      "https://webring.xxiivv.com/"
+    ],
+    "preconnect": [
+      "https://unpkg.com/",
+      "https://plausible.io/"
+    ],
+    "key": [
+      "https://jacky.wtf/misc/pgp.pub.asc",
+      "https://jacky.wtf/misc/ssh.pub"
+    ],
+    "pgpkey": [
+      "https://jacky.wtf/misc/pgp.pub.asc"
+    ],
+    "ssh": [
+      "https://jacky.wtf/misc/ssh.pub"
+    ],
+    "modulepreload": [
+      "https://jacky.wtf/assets/modulepreload-polyfill.6874861d.js",
+      "https://jacky.wtf/assets/vendor.648808aa.js"
+    ],
+    "stylesheet": [
+      "https://jacky.wtf/assets/main.a01452ff.css"
+    ],
+    "manifest": [
+      "https://jacky.wtf/assets/manifest.webmanifest"
+    ],
+    "author": [
+      "https://jacky.wtf/about"
+    ],
+    "me": [
+      "https://jacky.wtf/about"
+    ],
+    "feed": [
+      "https://jacky.wtf/channel/all",
+      "https://jacky.wtf/channel/chnl_5pvvrZof",
+      "https://jacky.wtf/channel/chnl_JXmJLB7G",
+      "https://jacky.wtf/feeds",
+      "https://jacky.wtf/#linklog",
+      "https://jacky.wtf/#microblog"
+    ],
+    "license": [
+      "https://jacky.wtf/copyright"
     ]
   },
   "rel-urls": {
-    "https://jacky.wtf/__admin__/site.css": {
+    "https://a.jacky.wtf/api/indieauth/authorization": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://pubsubhubbub.appspot.com/": {
+      "rels": [
+        "hub"
+      ]
+    },
+    "https://mp.jacky.wtf/mp": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://aperture.p3k.io/microsub/126": {
+      "rels": [
+        "microsub"
+      ]
+    },
+    "https://a.jacky.wtf/api/indieauth/ticket": {
+      "rels": [
+        "ticket_endpoint"
+      ]
+    },
+    "https://a.jacky.wtf/api/indieauth/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://webmention.io/jacky.wtf/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://jacky.wtf/?": {
+      "rels": [
+        "bookmark",
+        "canonical"
+      ]
+    },
+    "https://jacky.wtf/feed.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Jacky Alciné's updates",
+      "type": "text/atom+xml"
+    },
+    "https://unpkg.com/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
+    "https://plausible.io/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
+    "https://webring.xxiivv.com/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
+    "https://jacky.wtf/misc/pgp.pub.asc": {
+      "rels": [
+        "key",
+        "pgpkey"
+      ],
+      "type": "application/pgp-signature"
+    },
+    "https://jacky.wtf/misc/ssh.pub": {
+      "rels": [
+        "key",
+        "ssh"
+      ],
+      "type": "text/plain"
+    },
+    "https://granary.io/url?url=https://jacky.wtf/channel/all/&input=html&output=atom&hub=https://bridgy-fed.superfeedr.com/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Everything I Post - Jacky Alciné",
+      "type": "application/atom+xml"
+    },
+    "https://jacky.wtf/assets/modulepreload-polyfill.6874861d.js": {
+      "rels": [
+        "modulepreload"
+      ]
+    },
+    "https://jacky.wtf/assets/vendor.648808aa.js": {
+      "rels": [
+        "modulepreload"
+      ]
+    },
+    "https://jacky.wtf/assets/main.a01452ff.css": {
       "rels": [
         "stylesheet"
-      ],
-      "type": "text/css"
-    },
-    "data:;base64,=": {
-      "rels": [
-        "icon"
       ]
+    },
+    "https://jacky.wtf/assets/manifest.webmanifest": {
+      "rels": [
+        "manifest"
+      ]
+    },
+    "https://jacky.wtf/about": {
+      "rels": [
+        "author",
+        "me"
+      ],
+      "title": "Jacky Alciné"
+    },
+    "https://jacky.wtf/channel/all": {
+      "rels": [
+        "feed"
+      ],
+      "type": "text/html",
+      "text": "Everything"
+    },
+    "https://jacky.wtf/channel/chnl_5pvvrZof": {
+      "rels": [
+        "feed"
+      ],
+      "type": "text/html",
+      "text": "TIL"
+    },
+    "https://jacky.wtf/channel/chnl_JXmJLB7G": {
+      "rels": [
+        "feed"
+      ],
+      "type": "text/html",
+      "text": "Books"
+    },
+    "https://jacky.wtf/feeds": {
+      "rels": [
+        "feed"
+      ],
+      "type": "text/html",
+      "text": "Archive"
+    },
+    "https://jacky.wtf/#linklog": {
+      "rels": [
+        "feed"
+      ],
+      "text": "Links"
+    },
+    "https://jacky.wtf/#microblog": {
+      "rels": [
+        "feed"
+      ],
+      "text": "Microblog"
+    },
+    "https://jacky.wtf/copyright": {
+      "rels": [
+        "license"
+      ],
+      "text": "licensed by Jacky Alciné for some use cases"
     }
   }
 }

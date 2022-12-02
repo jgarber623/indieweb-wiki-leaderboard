@@ -1,19 +1,77 @@
 {
   "items": [],
   "rels": {
-    "nofollow": [
-      "https://www.namecheap.com/"
+    "alternate": [
+      "https://andigalpern.com/feed/",
+      "https://andigalpern.com/comments/feed/"
     ],
-    "“nofollow”": [
-      "https://www.namecheap.com/"
+    "stylesheet": [
+      "http://andigalpern.com/wp-includes/blocks/navigation/style.min.css?ver=6.1.1",
+      "http://andigalpern.com/wp-content/plugins/jetpack/css/jetpack.css?ver=11.5.1"
+    ],
+    "https://api.w.org/": [
+      "https://andigalpern.com/wp-json/"
+    ],
+    "EditURI": [
+      "http://andigalpern.com/xmlrpc.php?rsd"
+    ],
+    "wlwmanifest": [
+      "http://andigalpern.com/wp-includes/wlwmanifest.xml"
+    ],
+    "nofollow": [
+      "https://wordpress.org/"
     ]
   },
   "rel-urls": {
-    "https://www.namecheap.com/": {
+    "https://andigalpern.com/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "» Feed",
+      "type": "application/rss+xml"
+    },
+    "https://andigalpern.com/comments/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "» Comments Feed",
+      "type": "application/rss+xml"
+    },
+    "http://andigalpern.com/wp-includes/blocks/navigation/style.min.css?ver=6.1.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "http://andigalpern.com/wp-content/plugins/jetpack/css/jetpack.css?ver=11.5.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://andigalpern.com/wp-json/": {
+      "rels": [
+        "https://api.w.org/"
+      ]
+    },
+    "http://andigalpern.com/xmlrpc.php?rsd": {
+      "rels": [
+        "EditURI"
+      ],
+      "title": "RSD",
+      "type": "application/rsd+xml"
+    },
+    "http://andigalpern.com/wp-includes/wlwmanifest.xml": {
+      "rels": [
+        "wlwmanifest"
+      ],
+      "type": "application/wlwmanifest+xml"
+    },
+    "https://wordpress.org/": {
       "rels": [
         "nofollow"
       ],
-      "title": "Registered at Namecheap.com"
+      "text": "WordPress"
     }
   }
 }

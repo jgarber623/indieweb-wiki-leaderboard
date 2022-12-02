@@ -182,23 +182,6 @@
           ],
           "properties": {
             "name": [
-              ""
-            ],
-            "content": [
-              {
-                "html": "<p>This is a test</p>\n<p></p>\n<div class=\"syndication-links\"></div>",
-                "value": "This is a test"
-              }
-            ]
-          },
-          "id": "post-597"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
               "Enable Playlist Radio on Spotify’s Liked Songs tracks"
             ],
             "content": [
@@ -345,6 +328,23 @@
             ]
           },
           "id": "post-534"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "OpenSUSE Tumbleweed Installation Notes"
+            ],
+            "content": [
+              {
+                "html": "<p>For future reference here are some issues I’ve come across installing and setting up Tumbleweed on my workstation.</p>\n<p>The reason for switching from macOS is that a commercial operating system focused on services builts in too many distractions for me. Also long term the Apple hardware is priced above what I’m prepared to pay, so it makes sense for me to look for an alternative.</p>\n<p>Tumbleweed is a rolling distribution which makes for a long term maintained setup, and packages are tested thoroughly but are quickly updated.</p>\n<p>So far these are just little niggles.</p>\n<h2>Day one issues</h2>\n<ul>\n<li>The old Grub menu from my previous Linux installation wasn’t wiped, I simply reinstalled making sure all existing partitions were deleted before partitioning.</li>\n<li>\n<em>avahi is not allowed to start itself due to security policies</em>. This was because dbus needed to restart after avahi installed configuration into it. I could have rebooted.</li>\n<li>My Apple Magic Keyboard must be selected in KDE after the installation as it’s not an option during the installation routine.</li>\n<li>Opening ports for OpenSSH means that they’re open on the <em>public</em> zone. I didn’t realise this as I want to use the <em>home</em> zone as default.Yast Firewall sorted this out.</li>\n<li>After installing Lutris, Steam and Proton Experimental, certain games would not start, due to missing vulkan drivers. <a href=\"https://github.com/lutris/docs/blob/master/InstallingDrivers.md\">This Lutris Wiki link</a> describes the issue, I had to search Yast Software for <code>vulkan</code> showed I had to install <code>libvulkan_intel</code> and <code>libvulkan_intel-32bit</code>. </li>\n</ul>\n<h2>Interesting links</h2>\n<ul><li>There’s a nice tiling window manager script for KDE called <a href=\"https://github.com/esjeon/krohnkite\">Krohnkite</a>. Meta-D conflicted with show desktop, after reassigning the latter I still think that shortcut doesn’t do anything, though.</li></ul>\n<p>So far so good. The interface is more snappy than macOS and more powerful, and the system is working nicely.</p>\n<div class=\"syndication-links\"></div>",
+                "value": "For future reference here are some issues I’ve come across installing and setting up Tumbleweed on my workstation.\nThe reason for switching from macOS is that a commercial operating system focused on services builts in too many distractions for me. Also long term the Apple hardware is priced above what I’m prepared to pay, so it makes sense for me to look for an alternative.\nTumbleweed is a rolling distribution which makes for a long term maintained setup, and packages are tested thoroughly but are quickly updated.\nSo far these are just little niggles.\nDay one issues\nThe old Grub menu from my previous Linux installation wasn’t wiped, I simply reinstalled making sure all existing partitions were deleted before partitioning.avahi is not allowed to start itself due to security policies. This was because dbus needed to restart after avahi installed configuration into it. I could have rebooted.My Apple Magic Keyboard must be selected in KDE after the installation as it’s not an option during the installation routine.Opening ports for OpenSSH means that they’re open on the public zone. I didn’t realise this as I want to use the home zone as default.Yast Firewall sorted this out.After installing Lutris, Steam and Proton Experimental, certain games would not start, due to missing vulkan drivers. This Lutris Wiki link describes the issue, I had to search Yast Software for vulkan showed I had to install libvulkan_intel and libvulkan_intel-32bit. \nInteresting links\nThere’s a nice tiling window manager script for KDE called Krohnkite. Meta-D conflicted with show desktop, after reassigning the latter I still think that shortcut doesn’t do anything, though.\nSo far so good. The interface is more snappy than macOS and more powerful, and the system is working nicely."
+              }
+            ]
+          },
+          "id": "post-520"
         }
       ]
     }
@@ -420,7 +420,6 @@
       "https://vandragt.com/status/610/",
       "https://vandragt.com/status/602/",
       "https://vandragt.com/project/introducing-htmxpress-htmx-for-wordpress/",
-      "https://vandragt.com/status/597/",
       "https://vandragt.com/project/enable-playlist-radio-on-spotifys-liked-songs-tracks/",
       "https://vandragt.com/status/two-slices-please/",
       "https://vandragt.com/technology/how-to-export-safaris-reading-list-into-other-services/",
@@ -429,7 +428,8 @@
       "https://vandragt.com/technology/managing-homebrew-package-updates/",
       "https://vandragt.com/technology/privacy-forest/",
       "https://vandragt.com/technology/how-to-develop-a-library-and-a-project-in-php-concurrently/",
-      "https://vandragt.com/technology/daily-clean-trash/"
+      "https://vandragt.com/technology/daily-clean-trash/",
+      "https://vandragt.com/technology/opensuse-tumbleweed-installation-notes/"
     ],
     "category": [
       "https://vandragt.com/category/project/",
@@ -687,12 +687,6 @@
       "title": "Permalink to Introducing HTMXpress = HTMX for WordPress",
       "text": "Introducing HTMXpress = HTMX for WordPress"
     },
-    "https://vandragt.com/status/597/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Permalink to"
-    },
     "https://vandragt.com/project/enable-playlist-radio-on-spotifys-liked-songs-tracks/": {
       "rels": [
         "bookmark"
@@ -755,6 +749,13 @@
       ],
       "title": "Permalink to Daily Clean Trash",
       "text": "Daily Clean Trash"
+    },
+    "https://vandragt.com/technology/opensuse-tumbleweed-installation-notes/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to OpenSUSE Tumbleweed Installation Notes",
+      "text": "OpenSUSE Tumbleweed Installation Notes"
     },
     "http://independentpublisher.me/": {
       "rels": [

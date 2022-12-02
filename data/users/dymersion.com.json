@@ -485,6 +485,9 @@
     "token_endpoint": [
       "https://dymersion.com/wp-json/indieauth/1.0/token"
     ],
+    "friends-base-url": [
+      "https://dymersion.com/wp-json/friends/v1"
+    ],
     "me": [
       "https://github.com/mikewmerritt",
       "https://twitter.com/mikewmerritt",
@@ -682,6 +685,11 @@
     "https://dymersion.com/wp-json/indieauth/1.0/token": {
       "rels": [
         "token_endpoint"
+      ]
+    },
+    "https://dymersion.com/wp-json/friends/v1": {
+      "rels": [
+        "friends-base-url"
       ]
     },
     "https://github.com/mikewmerritt": {

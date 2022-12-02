@@ -34,6 +34,129 @@
           ],
           "properties": {
             "name": [
+              "Homemade Fondue"
+            ],
+            "content": [
+              {
+                "html": "<p>My partner and I just had homemade fondue. Thanks to that, I discovered there’s a fondue 🫕 emoji. I love it. First time I had fondue was in Switzerland in 2019. Since then, I’ve only had it again in 2020 in Brussels. I’m happy to have it again. Looking forward for more 🧀 fondue!</p>",
+                "value": "My partner and I just had homemade fondue. Thanks to that, I discovered there’s a fondue 🫕 emoji. I love it. First time I had fondue was in Switzerland in 2019. Since then, I’ve only had it again in 2020 in Brussels. I’m happy to have it again. Looking forward for more 🧀 fondue!"
+              }
+            ],
+            "photo": [
+              "https://cdn.hacdias.com/img/2000/05ba3225fa891ea6c29c6ac0d5b7810a7308ceb9c82f5d58a731c393e708462e.jpeg"
+            ],
+            "location": [
+              {
+                "type": [
+                  "h-adr"
+                ],
+                "properties": {
+                  "locality": [
+                    "Eindhoven"
+                  ],
+                  "region": [
+                    "North Brabant"
+                  ],
+                  "country": [
+                    "Netherlands"
+                  ]
+                },
+                "value": "Eindhoven, North Brabant, Netherlands"
+              }
+            ],
+            "updated": [
+              "2022-12-01T20:52:52+01:00"
+            ],
+            "url": [
+              "https://hacdias.com/2022/12/01/19h50m04s00"
+            ],
+            "published": [
+              "2022-12-01T19:50:04Z"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "url": [
+                    "https://hacdias.com/"
+                  ],
+                  "name": [
+                    "Henrique Dias"
+                  ],
+                  "photo": [
+                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
+                  ]
+                },
+                "value": "https://hacdias.com/"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<p>Folks at work recently released NAT hole punching in libp2p and are now trying to find people to try it out to collect some valuable data. Libp2p is a modular network stack for <abbr title=\"Peer-to-peer\">P2P</abbr> applications. NAT traversal and hole punching are quite important topics when it comes to building p2p applications, since it enables different machines behind NATs to talk to each other. If you care about p2p applications, please <a href=\"https://discuss.libp2p.io/t/call-for-participation-nat-hole-punching-measurement-campaign/1690\" rel=\"noopener noreferrer\">join the experiment</a>! There’s more details in the linked page about how it works and the data collected.</p>",
+                "value": "Folks at work recently released NAT hole punching in libp2p and are now trying to find people to try it out to collect some valuable data. Libp2p is a modular network stack for P2P applications. NAT traversal and hole punching are quite important topics when it comes to building p2p applications, since it enables different machines behind NATs to talk to each other. If you care about p2p applications, please join the experiment! There’s more details in the linked page about how it works and the data collected."
+              }
+            ],
+            "location": [
+              {
+                "type": [
+                  "h-adr"
+                ],
+                "properties": {
+                  "locality": [
+                    "Eindhoven"
+                  ],
+                  "region": [
+                    "North Brabant"
+                  ],
+                  "country": [
+                    "Netherlands"
+                  ]
+                },
+                "value": "Eindhoven, North Brabant, Netherlands"
+              }
+            ],
+            "published": [
+              "2022-12-01T11:44:44+01:00"
+            ],
+            "url": [
+              "https://hacdias.com/2022/12/01/11h44m44s38"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "url": [
+                    "https://hacdias.com/"
+                  ],
+                  "name": [
+                    "Henrique Dias"
+                  ],
+                  "photo": [
+                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
+                  ]
+                },
+                "value": "https://hacdias.com/"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               "Recently in November '22"
             ],
             "summary": [
@@ -241,7 +364,7 @@
               "https://cdn.hacdias.com/media/00e246361088b8d2b72029b84bce9b15398e9e1a9196d400073b4a82ee389d8c.mp4"
             ],
             "updated": [
-              "2022-11-25T17:10:45+01:00"
+              "2022-12-01T15:30:15+01:00"
             ],
             "url": [
               "https://hacdias.com/2022/11/25/msc-graduation-ceremony"
@@ -539,128 +662,6 @@
               }
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "content": [
-              {
-                "html": "<p>Today, <a href=\"https://seblog.nl/\" rel=\"noopener noreferrer\">Sebastiaan</a> shared with me this nice post by Wouter, entitled <a href=\"https://brainbaking.com/post/2022/11/the-great-mastodon-influx/\" rel=\"noopener noreferrer\">“The Great Mastodon Influx”</a>. I wanted to add to that that I implemented ActivityPub a few days ago, and I’ve been improving it since on my spare time. But&amp;mldr; I am afraid. I don’t have any real followers (just myself from different instances to test). But what if I get a few followers and then get spammed with many requests? Will my tiny server in Finland handle it?</p>\n<p>The idea of <a href=\"https://hacdias.com/2022/11/09/15h43m59s11\">POSSEing to Mastodon</a> doesn’t sound that bad and reduces much of the complexity associated with running a federated server. In addition, what will happen if I want to follow people? I had a very simple idea of creating a private RSS feed with incoming posts from people I would follow. The idea seems reasonably simple. But why reinvent the wheel? There’s already client apps for ActivityPub that work well. And I didn’t want to have multiple identities. Thoughts?</p>",
-                "value": "Today, Sebastiaan shared with me this nice post by Wouter, entitled “The Great Mastodon Influx”. I wanted to add to that that I implemented ActivityPub a few days ago, and I’ve been improving it since on my spare time. But&mldr; I am afraid. I don’t have any real followers (just myself from different instances to test). But what if I get a few followers and then get spammed with many requests? Will my tiny server in Finland handle it?The idea of POSSEing to Mastodon doesn’t sound that bad and reduces much of the complexity associated with running a federated server. In addition, what will happen if I want to follow people? I had a very simple idea of creating a private RSS feed with incoming posts from people I would follow. The idea seems reasonably simple. But why reinvent the wheel? There’s already client apps for ActivityPub that work well. And I didn’t want to have multiple identities. Thoughts?"
-              }
-            ],
-            "location": [
-              {
-                "type": [
-                  "h-adr"
-                ],
-                "properties": {
-                  "locality": [
-                    "Eindhoven"
-                  ],
-                  "region": [
-                    "North Brabant"
-                  ],
-                  "country": [
-                    "Netherlands"
-                  ]
-                },
-                "value": "Eindhoven, North Brabant, Netherlands"
-              }
-            ],
-            "published": [
-              "2022-11-18T23:28:13+01:00"
-            ],
-            "url": [
-              "https://hacdias.com/2022/11/18/23h28m13s83"
-            ],
-            "category": [
-              "activitypub",
-              "meta"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "url": [
-                    "https://hacdias.com/"
-                  ],
-                  "name": [
-                    "Henrique Dias"
-                  ],
-                  "photo": [
-                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
-                  ]
-                },
-                "value": "https://hacdias.com/"
-              }
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "content": [
-              {
-                "html": "<p>Since everyone is moving to Mastodon and such, I decided to re-add experimental support for ActivityPub in this website. The implementation is based on my old ActivityPub implementation, but it is massively improved&amp;mldr; I think. There are still some things to do, but I feel like I will stick with it this time. However, if you want to help me test, follow me at @hacdias@hacdias.com 😜 You may still see my old profile from 2020 still lingering in some instances, but if you try following me, it should work.</p>",
-                "value": "Since everyone is moving to Mastodon and such, I decided to re-add experimental support for ActivityPub in this website. The implementation is based on my old ActivityPub implementation, but it is massively improved&mldr; I think. There are still some things to do, but I feel like I will stick with it this time. However, if you want to help me test, follow me at @hacdias@hacdias.com 😜 You may still see my old profile from 2020 still lingering in some instances, but if you try following me, it should work."
-              }
-            ],
-            "location": [
-              {
-                "type": [
-                  "h-adr"
-                ],
-                "properties": {
-                  "locality": [
-                    "Eindhoven"
-                  ],
-                  "region": [
-                    "North Brabant"
-                  ],
-                  "country": [
-                    "Netherlands"
-                  ]
-                },
-                "value": "Eindhoven, North Brabant, Netherlands"
-              }
-            ],
-            "published": [
-              "2022-11-17T23:22:45+01:00"
-            ],
-            "url": [
-              "https://hacdias.com/2022/11/17/23h22m45s19"
-            ],
-            "category": [
-              "activitypub",
-              "meta"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "url": [
-                    "https://hacdias.com/"
-                  ],
-                  "name": [
-                    "Henrique Dias"
-                  ],
-                  "photo": [
-                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
-                  ]
-                },
-                "value": "https://hacdias.com/"
-              }
-            ]
-          }
         }
       ]
     }
@@ -720,6 +721,7 @@
       "mailto:mail@hacdias.com"
     ],
     "noopener": [
+      "https://discuss.libp2p.io/t/call-for-participation-nat-hole-punching-measurement-campaign/1690",
       "https://en.wikipedia.org/wiki/Illegal_number",
       "https://shkspr.mobi/blog/2022/11/illegal-hashes/",
       "https://jlelse.blog/links/2022/11/dump-twitter-card-tags",
@@ -727,12 +729,11 @@
       "https://www.flickr.com/photos/129818819@N03/albums/72177720303968156",
       "https://youtu.be/PemFIEJtUSw?t=2904",
       "https://hacdias.com/2022/11/22/08h16m07s25",
-      "https://seblog.nl/",
-      "https://brainbaking.com/post/2022/11/the-great-mastodon-influx/",
       "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/previous",
       "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/next"
     ],
     "noreferrer": [
+      "https://discuss.libp2p.io/t/call-for-participation-nat-hole-punching-measurement-campaign/1690",
       "https://en.wikipedia.org/wiki/Illegal_number",
       "https://shkspr.mobi/blog/2022/11/illegal-hashes/",
       "https://jlelse.blog/links/2022/11/dump-twitter-card-tags",
@@ -740,8 +741,6 @@
       "https://www.flickr.com/photos/129818819@N03/albums/72177720303968156",
       "https://youtu.be/PemFIEJtUSw?t=2904",
       "https://hacdias.com/2022/11/22/08h16m07s25",
-      "https://seblog.nl/",
-      "https://brainbaking.com/post/2022/11/the-great-mastodon-influx/",
       "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/previous",
       "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/next"
     ]
@@ -866,6 +865,13 @@
         "pingback"
       ]
     },
+    "https://discuss.libp2p.io/t/call-for-participation-nat-hole-punching-measurement-campaign/1690": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "join the experiment"
+    },
     "https://en.wikipedia.org/wiki/Illegal_number": {
       "rels": [
         "noopener",
@@ -914,20 +920,6 @@
         "noreferrer"
       ],
       "text": "22 Nov 2022"
-    },
-    "https://seblog.nl/": {
-      "rels": [
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "Sebastiaan"
-    },
-    "https://brainbaking.com/post/2022/11/the-great-mastodon-influx/": {
-      "rels": [
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "“The Great Mastodon Influx”"
     },
     "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/previous": {
       "rels": [

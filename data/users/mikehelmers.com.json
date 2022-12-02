@@ -1,5 +1,28 @@
 {
   "items": [],
-  "rels": {},
-  "rel-urls": {}
+  "rels": {
+    "stylesheet": [
+      "https://mikehelmers.com/ananke/css/main.min.css"
+    ],
+    "alternate": [
+      "https://mikehelmers.com/index.xml"
+    ],
+    "feed": [
+      "https://mikehelmers.com/index.xml"
+    ]
+  },
+  "rel-urls": {
+    "https://mikehelmers.com/ananke/css/main.min.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://mikehelmers.com/index.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Mike Helmers: The Blog",
+      "type": "application/rss+xml"
+    }
+  }
 }

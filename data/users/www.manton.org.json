@@ -24,7 +24,8 @@
     "me": [
       "https://micro.blog/manton",
       "https://twitter.com/mantonsblog",
-      "https://github.com/manton"
+      "https://github.com/manton",
+      "https://micro.blog/activitypub/manton"
     ],
     "authorization_endpoint": [
       "https://micro.blog/indieauth/auth"
@@ -143,6 +144,11 @@
     "https://www.manton.org/dark.css": {
       "rels": [
         "stylesheet"
+      ]
+    },
+    "https://micro.blog/activitypub/manton": {
+      "rels": [
+        "me"
       ]
     }
   }
