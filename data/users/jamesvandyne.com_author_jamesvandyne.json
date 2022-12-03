@@ -6,6 +6,56 @@
       ],
       "properties": {
         "name": [
+          "Response to Allow editing of bookmark/reply titles"
+        ],
+        "in-reply-to": [
+          "https://github.com/jamesvandyne/tanzawa/issues"
+        ],
+        "published": [
+          "2022-12-02T23:51:29.780743+00:00"
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "photo": [
+                {
+                  "value": "https://www.gravatar.com/avatar/38fc6c615f36a579152118d7abf2e55b?d=mm&r=g&s=80 2x",
+                  "alt": ""
+                }
+              ],
+              "url": [
+                "https://jamesvandyne.com/author/jamesvandyne/"
+              ],
+              "uid": [
+                "https://jamesvandyne.com/author/jamesvandyne/"
+              ],
+              "name": [
+                "James"
+              ]
+            },
+            "value": "James"
+          }
+        ],
+        "content": [
+          {
+            "html": "<blockquote>Tanzawa is a blogging system designed for the IndieWeb that focuses on sustainability. - Issues · jamesvandyne/tanzawa</blockquote>\n        <div>\n<strong>Problem<br></strong>It's currently not possible to edit the title of bookmarks / replies without using the Django admin. This is an issue because sometimes the title contains meta information that you wouldn't want to appear in a comment / blog post.<br><br><figure class=\"attachment attachment--preview attachment--png\" data-trix-attachment='{\"contentType\":\"image/png\",\"filename\":\"image.png\",\"filesize\":36600,\"height\":208,\"href\":\"https://jamesvandyne.com/files/b5ef2cc8-63c4-48d8-9118-db3705bedadb?content-disposition=attachment\",\"url\":\"https://jamesvandyne.com/files/b5ef2cc8-63c4-48d8-9118-db3705bedadb\",\"width\":910}' data-trix-attributes='{\"caption\":\"An example title when posting a new issue from Tanzawa\",\"presentation\":\"gallery\"}' data-trix-content-type=\"image/png\"><a href=\"https://jamesvandyne.com/files/b5ef2cc8-63c4-48d8-9118-db3705bedadb?content-disposition=attachment\"><picture>\n<source srcset=\"https://jamesvandyne.com/files/b5ef2cc8-63c4-48d8-9118-db3705bedadb?f=image/webp\" type=\"image/webp\"></source>\n<img height=\"208\" loading=\"lazy\" src=\"https://jamesvandyne.com/files/b5ef2cc8-63c4-48d8-9118-db3705bedadb\" width=\"910\">\n</picture><figcaption class=\"attachment__caption attachment__caption--edited\">An example title when posting a new issue from Tanzawa</figcaption></a></figure><br><br>This is especially true as I try to experiment with creating Tanzawa issues on my blog and backfeeding all comments, with the goal of effectively keeping the \"lab notebook\" of the GitHub issues to also be on my website.<br><br><strong>Success</strong><br>There is an edit button that, when clicked, allows you to edit the the title. <br><br><strong>Implementation Details<br></strong>This should be implemented using htmx and act as the first page to allow us to remove turbo from Tanzawa.</div>",
+            "value": "Tanzawa is a blogging system designed for the IndieWeb that focuses on sustainability. - Issues · jamesvandyne/tanzawa\n        ProblemIt's currently not possible to edit the title of bookmarks / replies without using the Django admin. This is an issue because sometimes the title contains meta information that you wouldn't want to appear in a comment / blog post.\n\n https://jamesvandyne.com/files/b5ef2cc8-63c4-48d8-9118-db3705bedadb \nAn example title when posting a new issue from TanzawaThis is especially true as I try to experiment with creating Tanzawa issues on my blog and backfeeding all comments, with the goal of effectively keeping the \"lab notebook\" of the GitHub issues to also be on my website.SuccessThere is an edit button that, when clicked, allows you to edit the the title. Implementation DetailsThis should be implemented using htmx and act as the first page to allow us to remove turbo from Tanzawa."
+          }
+        ],
+        "url": [
+          "https://jamesvandyne.com/852667ce-9821-4722-a057-48eb8f74ba97"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
           "Checkin to Single O Hamacho"
         ],
         "checkin": [
@@ -501,53 +551,6 @@
     },
     {
       "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "name": [
-          "The Week #125"
-        ],
-        "published": [
-          "2022-11-21T21:13:48.050128+00:00"
-        ],
-        "author": [
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "photo": [
-                {
-                  "value": "https://www.gravatar.com/avatar/38fc6c615f36a579152118d7abf2e55b?d=mm&r=g&s=80 2x",
-                  "alt": ""
-                }
-              ],
-              "url": [
-                "https://jamesvandyne.com/author/jamesvandyne/"
-              ],
-              "uid": [
-                "https://jamesvandyne.com/author/jamesvandyne/"
-              ],
-              "name": [
-                "James"
-              ]
-            },
-            "value": "James"
-          }
-        ],
-        "content": [
-          {
-            "html": "<ul>\n<li>I signed out of Twitter for probably the first time since I opened the account 2007. Regular readers of my blog can probably guess, but the straw that broke the camels back was letting 45 back on the platform. Life's too short to spend it in proximity to self-important fascists. If you're interested in my Twitter-like microblogging, I'm on <a href=\"https://indieweb.social/@jamesvandyne\">Mastodon</a>. </li>\n<li>After getting my flu shot the previous week, this week I got my omnicron booster, shot #4. I went with what was readily available and switched back to team Pfizer. Beyond my arm being incredibly sore for a day, I didn't have any real side effects this round.</li>\n<li>Leo is taking more and more interest in letters and realizing that there's information encoded about the world all around him. When walking to school today he saw where stop (Tomaere) was written on the street – and he read \"re\" and asked what the middle character \"ma\" was. Though he kept insisting it said \"rema\" on the street because that's the order they're written in 🤣.</li>\n<li>Next to our house is a field. Part of it had a huge vegetable patch where one of our neighbors would grow everything under the sun. The owner of the land sold it recently and it will be turned into houses. After my neighbors harvested all their veg and grass and weeds took over the patch at an incredible rate. You'd hardly realize it used to be cultivated land, unless you look closely.<br><br>I'll miss living at the end of the street and not having any through traffic, but it was bound to happen. I'm glad we got over 3 years, especially while Leo was little, so he could play out front without needing to worry about cars.</li>\n</ul>",
-            "value": "I signed out of Twitter for probably the first time since I opened the account 2007. Regular readers of my blog can probably guess, but the straw that broke the camels back was letting 45 back on the platform. Life's too short to spend it in proximity to self-important fascists. If you're interested in my Twitter-like microblogging, I'm on Mastodon. After getting my flu shot the previous week, this week I got my omnicron booster, shot #4. I went with what was readily available and switched back to team Pfizer. Beyond my arm being incredibly sore for a day, I didn't have any real side effects this round.Leo is taking more and more interest in letters and realizing that there's information encoded about the world all around him. When walking to school today he saw where stop (Tomaere) was written on the street – and he read \"re\" and asked what the middle character \"ma\" was. Though he kept insisting it said \"rema\" on the street because that's the order they're written in 🤣.Next to our house is a field. Part of it had a huge vegetable patch where one of our neighbors would grow everything under the sun. The owner of the land sold it recently and it will be turned into houses. After my neighbors harvested all their veg and grass and weeds took over the patch at an incredible rate. You'd hardly realize it used to be cultivated land, unless you look closely.I'll miss living at the end of the street and not having any through traffic, but it was bound to happen. I'm glad we got over 3 years, especially while Leo was little, so he could play out front without needing to worry about cars."
-          }
-        ],
-        "url": [
-          "https://jamesvandyne.com/67996c0c-2058-4f2b-8808-9e7dfcef1520"
-        ]
-      }
-    },
-    {
-      "type": [
         "h-card"
       ],
       "properties": {
@@ -613,6 +616,7 @@
       "https://jamesvandyne.com/author/jamesvandyne/"
     ],
     "bookmark": [
+      "https://jamesvandyne.com/852667ce-9821-4722-a057-48eb8f74ba97",
       "https://jamesvandyne.com/e4ff5719-f810-4d9f-89e4-d56910dfa67d",
       "https://jamesvandyne.com/4278d37e-5a06-42cd-b965-c8adcd568da7",
       "https://jamesvandyne.com/3a4cac77-9341-4bb7-9b72-a99d1d1015d0",
@@ -621,8 +625,7 @@
       "https://jamesvandyne.com/54c6e771-d7b7-41f5-8aee-c725ccd306c0",
       "https://jamesvandyne.com/b6878aff-3531-4348-9214-bbf67698b089",
       "https://jamesvandyne.com/3e7a2391-5924-45c0-8439-2c112690d89c",
-      "https://jamesvandyne.com/f2a0f092-2d89-41fd-9bad-159de007414d",
-      "https://jamesvandyne.com/67996c0c-2058-4f2b-8808-9e7dfcef1520"
+      "https://jamesvandyne.com/f2a0f092-2d89-41fd-9bad-159de007414d"
     ]
   },
   "rel-urls": {
@@ -725,6 +728,13 @@
       "title": "View all posts by James",
       "text": "\n        James"
     },
+    "https://jamesvandyne.com/852667ce-9821-4722-a057-48eb8f74ba97": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "permalink",
+      "text": "🔗permalink"
+    },
     "https://jamesvandyne.com/e4ff5719-f810-4d9f-89e4-d56910dfa67d": {
       "rels": [
         "bookmark"
@@ -782,13 +792,6 @@
       "text": "🔗permalink"
     },
     "https://jamesvandyne.com/f2a0f092-2d89-41fd-9bad-159de007414d": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "permalink",
-      "text": "🔗permalink"
-    },
-    "https://jamesvandyne.com/67996c0c-2058-4f2b-8808-9e7dfcef1520": {
       "rels": [
         "bookmark"
       ],

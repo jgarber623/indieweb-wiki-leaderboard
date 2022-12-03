@@ -43,6 +43,9 @@
     "token_endpoint": [
       "https://kit.paulrobertlloyd.com/auth/token"
     ],
+    "indieauth-metadata": [
+      "https://kit.paulrobertlloyd.com/auth/metadata"
+    ],
     "micropub": [
       "https://kit.paulrobertlloyd.com/micropub"
     ],
@@ -123,6 +126,11 @@
     "https://kit.paulrobertlloyd.com/auth/token": {
       "rels": [
         "token_endpoint"
+      ]
+    },
+    "https://kit.paulrobertlloyd.com/auth/metadata": {
+      "rels": [
+        "indieauth-metadata"
       ]
     },
     "https://kit.paulrobertlloyd.com/micropub": {

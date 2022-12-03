@@ -33,6 +33,35 @@
             "h-entry"
           ],
           "properties": {
+            "url": [
+              "https://herestomwiththeweather.com/social/2022/12/02/77469/"
+            ],
+            "time": [
+              "2022-12-02T21:31:09+00:00"
+            ],
+            "name": [
+              {
+                "type": [
+                  "h-entry"
+                ],
+                "properties": {
+                  "like-of": [
+                    "https://www.manton.org/2022/12/02/moving-from-mastodon.html"
+                  ],
+                  "name": [
+                    "Liked\n    \n      https://www.manton.org/2022/12/02/moving-from-mastodon.html"
+                  ]
+                },
+                "value": "Liked\n    \n      https://www.manton.org/2022/12/02/moving-from-mastodon.html"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
             "name": [
               "Mastodon Discovery",
               ""
@@ -116,25 +145,6 @@
               {
                 "html": "<p>One of the building blocks of the <a href=\"https://indieweb.org/\">Indieweb</a> is <a href=\"https://indieweb.org/IndieAuth\">IndieAuth</a>. Like many others, I bootstrapped my experience with <a href=\"https://indieauth.com/\">indieauth.com</a> but as <a href=\"https://martymcgui.re/2022/07/31/switching-costs-for-an-indieauth-server/\">Marty McGuire explains</a>, there are good reasons to switch and even consider building your own.  Because I wanted a server as simple to understand as possible but also wanted to be able to add features that are usually not available, I created a rails project called <a href=\"https://github.com/herestomwiththeweather/irwin\">Irwin</a> and <a href=\"https://github.com/herestomwiththeweather/herestomwiththeweather.github.io/commit/554dbaad13250a97c2b26c034fbce3dd6908c273\">recently configured my blog to use it</a>.</p>\n\n<p>This is not production ready code.  While I know that <a href=\"https://github.com/voxpelli/webpage-micropub-to-github\">the micropub server I use</a> works with it, I expect others may not. Also, there is no support for refresh tokens and other things in the spec that I didn’t consider high priority.  It does support <a href=\"https://indieweb.org/PKCE\">PKCE</a> but not the less useful “plain” method.</p>\n\n<p>All of <a href=\"https://aaronparecki.com/2020/12/03/1/indieauth-2020\">IndieAuth Spec Updates 2020</a> was very clear and helpful.  In one case, I made the server probably too strict (as an easy way to curtail spam registrations).  It requires that the hosts for a blog’s authorization endpoint and token endpoint match the host of the IndieAuth server before a user can register an account on the indieauth server.</p>\n\n<p>I plan to add an option for a user to keep a history of logins to indieauth clients soon.  Please let me know if you have any questions or suggestions.</p>",
                 "value": "One of the building blocks of the Indieweb is IndieAuth. Like many others, I bootstrapped my experience with indieauth.com but as Marty McGuire explains, there are good reasons to switch and even consider building your own.  Because I wanted a server as simple to understand as possible but also wanted to be able to add features that are usually not available, I created a rails project called Irwin and recently configured my blog to use it.\n\nThis is not production ready code.  While I know that the micropub server I use works with it, I expect others may not. Also, there is no support for refresh tokens and other things in the spec that I didn’t consider high priority.  It does support PKCE but not the less useful “plain” method.\n\nAll of IndieAuth Spec Updates 2020 was very clear and helpful.  In one case, I made the server probably too strict (as an easy way to curtail spam registrations).  It requires that the hosts for a blog’s authorization endpoint and token endpoint match the host of the IndieAuth server before a user can register an account on the indieauth server.\n\nI plan to add an option for a user to keep a history of logins to indieauth clients soon.  Please let me know if you have any questions or suggestions."
-              }
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "url": [
-              "https://herestomwiththeweather.com/social/2022/09/30/84826/"
-            ],
-            "time": [
-              "2022-09-30T23:33:46+00:00"
-            ],
-            "content": [
-              {
-                "html": "",
-                "value": ""
               }
             ]
           }
