@@ -45,6 +45,45 @@
       ],
       "properties": {
         "name": [
+          "Font styles & font fallback"
+        ],
+        "url": [
+          "https://nicolas-hoizey.com/links/2022/12/03/font-styles-and-font-fallback/"
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "url": [
+                "https://nicolas-hoizey.com/"
+              ],
+              "name": [
+                "Nicolas Hoizey"
+              ]
+            },
+            "value": "https://nicolas-hoizey.com/"
+          }
+        ],
+        "published": [
+          "2022-12-03T22:29:04.000+01:00"
+        ],
+        "category": [
+          "language",
+          "font"
+        ],
+        "summary": [
+          "This is a great page on the W3C site showing multiple languages requiring different font styles and fallback."
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
           "Why you should have your own website"
         ],
         "url": [
@@ -192,48 +231,6 @@
         ],
         "summary": [
           ""
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "name": [
-          "Responsive images on Shopify with Liquid"
-        ],
-        "url": [
-          "https://nicolas-hoizey.com/links/2022/11/29/responsive-images-on-shopify-with-liquid/"
-        ],
-        "author": [
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "url": [
-                "https://nicolas-hoizey.com/"
-              ],
-              "name": [
-                "Nicolas Hoizey"
-              ]
-            },
-            "value": "https://nicolas-hoizey.com/"
-          }
-        ],
-        "published": [
-          "2022-11-30T00:32:54.000+01:00"
-        ],
-        "category": [
-          "responsive",
-          "image",
-          "performance",
-          "Shopify",
-          "Liquid"
-        ],
-        "summary": [
-          "We launched the image_tag and image_url filters to help with generating responsive images. Before we dive in, what do these filters do? What are the differences between them?"
         ]
       }
     },
@@ -393,6 +390,8 @@
       "https://nicolas-hoizey.com/about/"
     ],
     "tag": [
+      "https://nicolas-hoizey.com/tags/language/",
+      "https://nicolas-hoizey.com/tags/font/",
       "https://nicolas-hoizey.com/tags/indieweb/",
       "https://nicolas-hoizey.com/tags/standards/",
       "https://nicolas-hoizey.com/tags/html/",
@@ -403,16 +402,12 @@
       "https://nicolas-hoizey.com/tags/design-tokens/",
       "https://nicolas-hoizey.com/tags/shopify/",
       "https://nicolas-hoizey.com/tags/truncation/",
-      "https://nicolas-hoizey.com/tags/responsive/",
-      "https://nicolas-hoizey.com/tags/image/",
-      "https://nicolas-hoizey.com/tags/performance/",
-      "https://nicolas-hoizey.com/tags/liquid/",
       "https://nicolas-hoizey.com/tags/jamstack/",
+      "https://nicolas-hoizey.com/tags/performance/",
       "https://nicolas-hoizey.com/tags/api/",
       "https://nicolas-hoizey.com/tags/webmention/",
       "https://nicolas-hoizey.com/tags/speedcurve/",
       "https://nicolas-hoizey.com/tags/accessibility/",
-      "https://nicolas-hoizey.com/tags/font/",
       "https://nicolas-hoizey.com/tags/em/",
       "https://nicolas-hoizey.com/tags/advertisement/",
       "https://nicolas-hoizey.com/tags/algolia/",
@@ -437,6 +432,7 @@
       "https://nicolas-hoizey.com/tags/google/",
       "https://nicolas-hoizey.com/tags/grid/",
       "https://nicolas-hoizey.com/tags/humour/",
+      "https://nicolas-hoizey.com/tags/image/",
       "https://nicolas-hoizey.com/tags/leisure/",
       "https://nicolas-hoizey.com/tags/lighthouse/",
       "https://nicolas-hoizey.com/tags/mastodon/",
@@ -456,6 +452,7 @@
       "https://nicolas-hoizey.com/tags/pwa/",
       "https://nicolas-hoizey.com/tags/quality/",
       "https://nicolas-hoizey.com/tags/quote/",
+      "https://nicolas-hoizey.com/tags/responsive/",
       "https://nicolas-hoizey.com/tags/search/",
       "https://nicolas-hoizey.com/tags/security/",
       "https://nicolas-hoizey.com/tags/seo/",
@@ -559,6 +556,18 @@
       ],
       "title": "Link to my Mastodon profile"
     },
+    "https://nicolas-hoizey.com/tags/language/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "language"
+    },
+    "https://nicolas-hoizey.com/tags/font/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "font"
+    },
     "https://nicolas-hoizey.com/tags/indieweb/": {
       "rels": [
         "tag"
@@ -619,35 +628,17 @@
       ],
       "text": "truncation"
     },
-    "https://nicolas-hoizey.com/tags/responsive/": {
+    "https://nicolas-hoizey.com/tags/jamstack/": {
       "rels": [
         "tag"
       ],
-      "text": "responsive"
-    },
-    "https://nicolas-hoizey.com/tags/image/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "image"
+      "text": "JAMstack"
     },
     "https://nicolas-hoizey.com/tags/performance/": {
       "rels": [
         "tag"
       ],
       "text": "performance"
-    },
-    "https://nicolas-hoizey.com/tags/liquid/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Liquid"
-    },
-    "https://nicolas-hoizey.com/tags/jamstack/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "JAMstack"
     },
     "https://nicolas-hoizey.com/tags/api/": {
       "rels": [
@@ -672,12 +663,6 @@
         "tag"
       ],
       "text": "accessibility"
-    },
-    "https://nicolas-hoizey.com/tags/font/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "font"
     },
     "https://nicolas-hoizey.com/tags/em/": {
       "rels": [
@@ -823,6 +808,12 @@
       ],
       "text": "humour"
     },
+    "https://nicolas-hoizey.com/tags/image/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "image"
+    },
     "https://nicolas-hoizey.com/tags/leisure/": {
       "rels": [
         "tag"
@@ -936,6 +927,12 @@
         "tag"
       ],
       "text": "quote"
+    },
+    "https://nicolas-hoizey.com/tags/responsive/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "responsive"
     },
     "https://nicolas-hoizey.com/tags/search/": {
       "rels": [

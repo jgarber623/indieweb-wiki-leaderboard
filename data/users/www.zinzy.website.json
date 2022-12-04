@@ -6,7 +6,7 @@
       ],
       "properties": {
         "name": [
-          "Zinzy  \n        Waleson Geene"
+          "Zinzy  \n          Waleson Geene"
         ],
         "given-name": [
           "Zinzy"
@@ -24,8 +24,15 @@
     "canonical": [
       "https://www.zinzy.website/"
     ],
+    "apple-touch-icon": [
+      "https://www.zinzy.website/assets/img/apple-touch-icon.png"
+    ],
     "icon": [
-      "https://emojicdn.elk.sh/💾"
+      "https://www.zinzy.website/assets/img/favicon-32x32.png",
+      "https://www.zinzy.website/assets/img/favicon-16x16.png"
+    ],
+    "manifest": [
+      "https://www.zinzy.website/assets/img/site.webmanifest"
     ],
     "stylesheet": [
       "https://www.zinzy.website/styles.css"
@@ -48,24 +55,26 @@
     "microsub": [
       "https://aperture.p3k.io/microsub/596"
     ],
+    "micropub": [
+      "https://zinzy.website/micropub/main"
+    ],
     "webmention": [
       "https://webmention.io/www.zinzy.website/webmention"
     ],
     "pingback": [
       "https://webmention.io/www.zinzy.website/xmlrpc"
     ],
-    "micropub": [
-      "https://zinzy.website/micropub/main"
-    ],
     "noopener": [
       "https://pronoun.is/she",
       "https://pronoun.is/they",
-      "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode"
+      "https://ko-fi.com/zinzy",
+      "https://www.paypal.com/donate/?hosted_button_id=FSKX2SHD9PKL6"
     ],
     "noreferrer": [
       "https://pronoun.is/she",
       "https://pronoun.is/they",
-      "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode"
+      "https://ko-fi.com/zinzy",
+      "https://www.paypal.com/donate/?hosted_button_id=FSKX2SHD9PKL6"
     ]
   },
   "rel-urls": {
@@ -74,11 +83,27 @@
         "canonical"
       ]
     },
-    "https://emojicdn.elk.sh/💾": {
+    "https://www.zinzy.website/assets/img/apple-touch-icon.png": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://www.zinzy.website/assets/img/favicon-32x32.png": {
       "rels": [
         "icon"
       ],
       "type": "image/png"
+    },
+    "https://www.zinzy.website/assets/img/favicon-16x16.png": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/png"
+    },
+    "https://www.zinzy.website/assets/img/site.webmanifest": {
+      "rels": [
+        "manifest"
+      ]
     },
     "https://www.zinzy.website/styles.css": {
       "rels": [
@@ -127,6 +152,11 @@
         "microsub"
       ]
     },
+    "https://zinzy.website/micropub/main": {
+      "rels": [
+        "micropub"
+      ]
+    },
     "https://webmention.io/www.zinzy.website/webmention": {
       "rels": [
         "webmention"
@@ -135,11 +165,6 @@
     "https://webmention.io/www.zinzy.website/xmlrpc": {
       "rels": [
         "pingback"
-      ]
-    },
-    "https://zinzy.website/micropub/main": {
-      "rels": [
-        "micropub"
       ]
     },
     "https://pronoun.is/she": {
@@ -156,12 +181,19 @@
       ],
       "text": "they"
     },
-    "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode": {
+    "https://ko-fi.com/zinzy": {
       "rels": [
         "noopener",
         "noreferrer"
       ],
-      "text": "BY-NC-SA 4.0"
+      "text": "Ko-Fi"
+    },
+    "https://www.paypal.com/donate/?hosted_button_id=FSKX2SHD9PKL6": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "PayPal"
     }
   }
 }

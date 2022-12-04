@@ -48,6 +48,60 @@
           ],
           "properties": {
             "url": [
+              "https://adhoc.systems/boosts/7e609332-9d8b-4cc4-9f18-be9634909714"
+            ],
+            "published": [
+              "2022-12-03 15:50:16Z"
+            ],
+            "repost-of": [
+              {
+                "type": [
+                  "h-cite"
+                ],
+                "properties": {
+                  "summary": [
+                    "Mastodon has a feature to move accounts from one instance to another instance. I spent some time recently exploring how this works so that we could support it in Micro.blog. I used this to consolidate my ActivityPub presence from multiple Mastodon accounts to just @manton@manton.org, powered by my blog and Micro.blog.\nFrom what I can tell, this feature is not well-documented. It does not exist in the ActivityPub spec. The “Move” activity examples in the companion ActivityStreams spec also do not cover moving accounts."
+                  ],
+                  "url": [
+                    "https://www.manton.org/2022/12/02/moving-from-mastodon.html"
+                  ],
+                  "name": [
+                    "Moving from Mastodon to a new instance or to Micro.blog"
+                  ],
+                  "author": [
+                    {
+                      "type": [
+                        "h-card"
+                      ],
+                      "properties": {
+                        "photo": [
+                          {
+                            "value": "https://micro.blog/manton/avatar.jpg",
+                            "alt": "Manton Reece's avatar"
+                          }
+                        ],
+                        "url": [
+                          "https://www.manton.org/"
+                        ],
+                        "name": [
+                          "Manton Reece"
+                        ]
+                      },
+                      "value": "Manton Reece"
+                    }
+                  ]
+                },
+                "value": "https://www.manton.org/2022/12/02/moving-from-mastodon.html"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "url": [
               "https://adhoc.systems/notes/6cd40a02-3d0e-4d59-869d-44cd73229d09"
             ],
             "published": [
@@ -598,63 +652,6 @@
               {
                 "html": "lol. Not only is this an old post that i just replied to, but I replied to it 8 weeks ago when it was originally published. Sorry about that :)",
                 "value": "lol. Not only is this an old post that i just replied to, but I replied to it 8 weeks ago when it was originally published. Sorry about that :)"
-              }
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "url": [
-              "https://adhoc.systems/replies/8fa87562-460f-4216-a9f5-4617f1ba50d8"
-            ],
-            "published": [
-              "2022-05-06 20:01:19Z"
-            ],
-            "in-reply-to": [
-              {
-                "type": [
-                  "h-cite"
-                ],
-                "properties": {
-                  "url": [
-                    "https://andregarzia.com/2022/03/adding-micropub-support.html"
-                  ],
-                  "name": [
-                    "adding Micropub support"
-                  ],
-                  "author": [
-                    {
-                      "type": [
-                        "h-card"
-                      ],
-                      "properties": {
-                        "photo": [
-                          {
-                            "value": "https://andregarzia.com/img/andre.jpg",
-                            "alt": "Andre Alves Garzia's avatar"
-                          }
-                        ],
-                        "url": [
-                          "https://andregarzia.com/"
-                        ],
-                        "name": [
-                          "Andre Alves Garzia"
-                        ]
-                      },
-                      "value": "Andre Alves Garzia"
-                    }
-                  ]
-                },
-                "value": "https://andregarzia.com/2022/03/adding-micropub-support.html"
-              }
-            ],
-            "content": [
-              {
-                "html": "Looks like it worked; it showed up in my feed reader! I agree with you about the weirdness of Micropub, but i guess that's what you get when a spec is developed alongside usage instead of designed beforehand.",
-                "value": "Looks like it worked; it showed up in my feed reader! I agree with you about the weirdness of Micropub, but i guess that's what you get when a spec is developed alongside usage instead of designed beforehand."
               }
             ]
           }

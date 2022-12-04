@@ -44,6 +44,87 @@
           ],
           "properties": {
             "name": [
+              "Reply to The ethics of syndicating comments using WebMentions"
+            ],
+            "url": [
+              "https://danq.me/2022/12/03/reply-to-the-ethics-of-syndicating-comments-using-webmentions/",
+              "https://shkspr.mobi/blog/2022/12/the-ethics-of-syndicating-comments-using-webmentions/"
+            ],
+            "uid": [
+              "https://danq.me/2022/12/03/reply-to-the-ethics-of-syndicating-comments-using-webmentions/"
+            ],
+            "published": [
+              "2022-12-03T13:24:14+00:00"
+            ],
+            "content": [
+              {
+                "html": "<section class=\"h-cite response p-in-reply-to \">\n<header>\n<span class=\"p-name\"> </span></header>\n<blockquote class=\"e-summary\"></blockquote>\n</section>\n<div class=\"u-in-reply-to\">\n<p>In his blog post “The ethics of syndicating comments using WebMentions”, <a class=\"u-url\" title=\"Terence Eden's blog post, The ethics of syndicating comments using WebMentions\" href=\"https://shkspr.mobi/blog/2022/12/the-ethics-of-syndicating-comments-using-webmentions/\">Terence Eden said:</a></p>\n<blockquote class=\"h-cite\">\n<div class=\"p-content\">\n<p>…</p>\n<p>I want to see what people are writing in public about my posts. I also want to direct people to the conversations which are happening elsewhere on the web. But people – quite rightly – might not want their content permanently stored by my site.</p>\n<p>So I think I have a few options.</p>\n<ol>\n<li>Do nothing. My site; my rules. If you don’t want me to grab your hot takes, don’t post them in public. (Feels a bit rude, TBQH.)</li>\n<li>Be reactive. If someone asks me to remove their content, do so. (But, of course, how will they know I’ve made a copy?)</li>\n<li>Stop syndicating comments. (I don’t wanna!)</li>\n<li>Replace the verbatim comments with a link saying “Fred mentioned this article on Twitter” . (A bit of a disruptive experience for readers.)</li>\n<li>Use oEmbed to capture the user’s comment and dynamically load it from the 3rd party site. That would update automatically if the user changes their name or deleted the comment. (A massive faff to set up.)</li>\n</ol>\n<p>…</p>\n</div>\n<footer><cite class=\"p-author h-card\"><a class=\"u-url p-name\" href=\"https://danq.me/author/dan/Terence%20Eden\">Terence Eden</a></cite></footer>\n</blockquote>\n</div>\n<p>Terence describes a problem that I’ve wrestled with myself. If somebody comments <em>directly</em> on my blog using the form at the bottom of a post, that’s a pretty strong indicator of them giving their consent for their comment to be published at the bottom of that post (at my discretion). If somebody publicly replies somewhere my post is syndicated, that’s less-obvious, but still pretty clear. If somebody merely <em>mentions</em> my post publicly, writing their own post and linking to mine… that’s a real fuzzy area.</p>\n<p>I take a minimal approach; only capturing their full content if it’s short and otherwise trying to extract a snippet that contains the bit that mentioned my content, and I think that works great. But Terence points out an important follow-up: <em>what if the commenter deletes that content?</em></p>\n<p>My approach so far has always been a reactive one – the second in Terence’s list – and I think it’s a morally-acceptable stance for a personal blogger. But I’m not sure it scales. I find myself asking: what if a news outlet did this, taking my self-published feedback to their story and publishing it on their site, even if I later amended, retracted, or deleted it on my own? If somebody’s making money out of my content, that feels different: I’ve always been clear that <a title=\"Creative Commons By-NC license v4.0, as used on DanQ.me\" href=\"https://creativecommons.org/licenses/by-nc/4.0/\">what I write on my blog is permissively-licensed</a>, but that permissiveness is based on the prohibition of <em>commercial</em> use of my content.</p>\n<p>Perhaps down the line this can be solved technologically: something machine-readable akin to the <code>&lt;link rel=\"license\" ...&gt;</code> tag could state an author’s preference for how their content is syndicated by third parties they’ve mentioned, answering questions like:</p>\n<ul>\n<li>Can you quote me, or just link to me? <em>Who</em> do these rules apply to? (Should we be attaching metadata to individual links?)</li>\n<li>Should you inform me that you’ve done so, and if so: how (<a href=\"https://www.w3.org/TR/webmention/\">WebMention</a>, etc.)?</li>\n<li>If you (or your site) observe that my content has disappeared or changed for an extended time, should that be taken as revokation of consent to syndicate it?</li>\n</ul>\n<p>Right now, the relevant technologies are not well-established enough to even begin this kind of work, but if a modern interconected federated web of personal websites takes off, it’s the kind of question we might one day have to answer.</p>\n<p>For now my gut feeling is that option #2 (reactive moderation of syndicated comments) is ethically-sufficient for personal websites. But I’ll be watching the feedback Terence (who probably gets many more readers than I) receives in case my gut doesn’t represent the majority!</p>\n<div class=\"syndication-links\"></div>",
+                "value": "In his blog post “The ethics of syndicating comments using WebMentions”, Terence Eden said:\n\n\n…\nI want to see what people are writing in public about my posts. I also want to direct people to the conversations which are happening elsewhere on the web. But people – quite rightly – might not want their content permanently stored by my site.\nSo I think I have a few options.\n\nDo nothing. My site; my rules. If you don’t want me to grab your hot takes, don’t post them in public. (Feels a bit rude, TBQH.)\nBe reactive. If someone asks me to remove their content, do so. (But, of course, how will they know I’ve made a copy?)\nStop syndicating comments. (I don’t wanna!)\nReplace the verbatim comments with a link saying “Fred mentioned this article on Twitter” . (A bit of a disruptive experience for readers.)\nUse oEmbed to capture the user’s comment and dynamically load it from the 3rd party site. That would update automatically if the user changes their name or deleted the comment. (A massive faff to set up.)\n\n…\n\nTerence Eden\n\n\nTerence describes a problem that I’ve wrestled with myself. If somebody comments directly on my blog using the form at the bottom of a post, that’s a pretty strong indicator of them giving their consent for their comment to be published at the bottom of that post (at my discretion). If somebody publicly replies somewhere my post is syndicated, that’s less-obvious, but still pretty clear. If somebody merely mentions my post publicly, writing their own post and linking to mine… that’s a real fuzzy area.\nI take a minimal approach; only capturing their full content if it’s short and otherwise trying to extract a snippet that contains the bit that mentioned my content, and I think that works great. But Terence points out an important follow-up: what if the commenter deletes that content?\nMy approach so far has always been a reactive one – the second in Terence’s list – and I think it’s a morally-acceptable stance for a personal blogger. But I’m not sure it scales. I find myself asking: what if a news outlet did this, taking my self-published feedback to their story and publishing it on their site, even if I later amended, retracted, or deleted it on my own? If somebody’s making money out of my content, that feels different: I’ve always been clear that what I write on my blog is permissively-licensed, but that permissiveness is based on the prohibition of commercial use of my content.\nPerhaps down the line this can be solved technologically: something machine-readable akin to the <link rel=\"license\" ...> tag could state an author’s preference for how their content is syndicated by third parties they’ve mentioned, answering questions like:\n\nCan you quote me, or just link to me? Who do these rules apply to? (Should we be attaching metadata to individual links?)\nShould you inform me that you’ve done so, and if so: how (WebMention, etc.)?\nIf you (or your site) observe that my content has disappeared or changed for an extended time, should that be taken as revokation of consent to syndicate it?\n\nRight now, the relevant technologies are not well-established enough to even begin this kind of work, but if a modern interconected federated web of personal websites takes off, it’s the kind of question we might one day have to answer.\nFor now my gut feeling is that option #2 (reactive moderation of syndicated comments) is ethically-sufficient for personal websites. But I’ll be watching the feedback Terence (who probably gets many more readers than I) receives in case my gut doesn’t represent the majority!"
+              }
+            ],
+            "in-reply-to": [
+              {
+                "type": [
+                  "h-cite"
+                ],
+                "properties": {
+                  "name": [
+                    ""
+                  ],
+                  "summary": [
+                    {
+                      "html": "",
+                      "value": ""
+                    }
+                  ]
+                },
+                "value": ""
+              },
+              "In his blog post “The ethics of syndicating comments using WebMentions”, Terence Eden said:\n\n\n…\nI want to see what people are writing in public about my posts. I also want to direct people to the conversations which are happening elsewhere on the web. But people – quite rightly – might not want their content permanently stored by my site.\nSo I think I have a few options.\n\nDo nothing. My site; my rules. If you don’t want me to grab your hot takes, don’t post them in public. (Feels a bit rude, TBQH.)\nBe reactive. If someone asks me to remove their content, do so. (But, of course, how will they know I’ve made a copy?)\nStop syndicating comments. (I don’t wanna!)\nReplace the verbatim comments with a link saying “Fred mentioned this article on Twitter” . (A bit of a disruptive experience for readers.)\nUse oEmbed to capture the user’s comment and dynamically load it from the 3rd party site. That would update automatically if the user changes their name or deleted the comment. (A massive faff to set up.)\n\n…\n\nTerence Eden"
+            ],
+            "category": [
+              "indieweb",
+              "published on gemini",
+              "technology",
+              "web"
+            ]
+          },
+          "id": "post-20882",
+          "children": [
+            {
+              "type": [
+                "h-cite"
+              ],
+              "properties": {
+                "content": [
+                  "…\nI want to see what people are writing in public about my posts. I also want to direct people to the conversations which are happening elsewhere on the web. But people – quite rightly – might not want their content permanently stored by my site.\nSo I think I have a few options.\n\nDo nothing. My site; my rules. If you don’t want me to grab your hot takes, don’t post them in public. (Feels a bit rude, TBQH.)\nBe reactive. If someone asks me to remove their content, do so. (But, of course, how will they know I’ve made a copy?)\nStop syndicating comments. (I don’t wanna!)\nReplace the verbatim comments with a link saying “Fred mentioned this article on Twitter” . (A bit of a disruptive experience for readers.)\nUse oEmbed to capture the user’s comment and dynamically load it from the 3rd party site. That would update automatically if the user changes their name or deleted the comment. (A massive faff to set up.)\n\n…"
+                ],
+                "author": [
+                  {
+                    "type": [
+                      "h-card"
+                    ],
+                    "properties": {
+                      "url": [
+                        "https://danq.me/author/dan/Terence Eden"
+                      ],
+                      "name": [
+                        "Terence Eden"
+                      ]
+                    },
+                    "value": "Terence Eden"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               "Geohashing expedition 2022-12-02 51 -1"
             ],
             "url": [
@@ -790,97 +871,6 @@
             ]
           },
           "id": "post-20729"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Reply to Decentralization and verification"
-            ],
-            "url": [
-              "https://danq.me/2022/11/15/reply-to-decentralization-and-verification/",
-              "https://derekkedziora.com/notes/20221114211528"
-            ],
-            "uid": [
-              "https://danq.me/2022/11/15/reply-to-decentralization-and-verification/"
-            ],
-            "published": [
-              "2022-11-15T18:51:20+00:00"
-            ],
-            "content": [
-              {
-                "html": "<section class=\"h-cite response p-in-reply-to \">\n<header>\n<span class=\"p-name\"> </span></header>\n<blockquote class=\"e-summary\"></blockquote>\n</section>\n<div class=\"u-in-reply-to\">\n<p><a class=\"u-url\" href=\"https://derekkedziora.com/notes/20221114211528\">In “Decentralization and verification”, Derek Kedziora said:</a></p>\n<blockquote class=\"h-cite\">\n<div class=\"p-content\">\n<p>…Mastodon by its very nature as a decentralized service <em>can’t</em> verify accounts.</p>\n<p>We’d still need some trusted third party to do offline verifications and host them in a centralized repository.</p>\n<p>…</p>\n</div>\n<footer><cite class=\"p-author h-card\"><a class=\"u-url p-name\" href=\"https://derekkedziora.com/\">Derek Kedziora</a></cite></footer>\n</blockquote>\n</div>\n<p>Let’s not sell Mastodon short here. The service you compare it to – Twitter – solves this problem… <em>but</em> only if you trust Twitter as an authority on the identity of people. Mastodon <em>also</em> solves the problem, but it puts the trust in a different place: domain names and account pages.</p>\n<p>If you want to “verify” yourself on Mastodon, <a href=\"https://microformats.org/wiki/rel-me\">you can use a rel=”me” link</a> from a page or domain you control. It looks like this:</p>\n<figure id=\"attachment_20723\" aria-describedby=\"caption-attachment-20723\" style=\"width: 573px\" class=\"wp-caption aligncenter\"><a href=\"https://danq.me/wp-content/uploads/2022/11/danq-mastodon-verified.png\"><img decoding=\"async\" loading=\"lazy\" class=\"lazy lazy-hidden size-full wp-image-20723\" src=\"https://danq.me/wp-content/uploads/2022/11/xdanq-mastodon-verified-30x25.png.pagespeed.ic.uoG8XJlM2T.png\" data-lazy-type=\"image\" data-lazy-src=\"https://danq.me/wp-content/uploads/2022/11/danq-mastodon-verified.png\" alt=\"Screenshot showing @dan@danq.me's Mastodon account as the verified owner of website DanQ.me.\" width=\"573\" height=\"468\" data-lazy-srcset=\"https://danq.me/wp-content/uploads/2022/11/danq-mastodon-verified.png 573w, https://danq.me/wp-content/uploads/2022/11/danq-mastodon-verified-300x245.png 300w, https://danq.me/wp-content/uploads/2022/11/danq-mastodon-verified-30x25.png 30w\" data-lazy-sizes=\"(max-width: 573px) 100vw, 573px\"><noscript><img decoding=\"async\" loading=\"lazy\" class=\"size-full wp-image-20723\" src=\"https://danq.me/wp-content/uploads/2022/11/xdanq-mastodon-verified.png.pagespeed.ic.EIgF9tGcsm.png\" alt=\"Screenshot showing @dan@danq.me's Mastodon account as the verified owner of website DanQ.me.\" width=\"573\" height=\"468\" srcset=\"https://danq.me/wp-content/uploads/2022/11/xdanq-mastodon-verified.png.pagespeed.ic.EIgF9tGcsm.png 573w, https://danq.me/wp-content/uploads/2022/11/xdanq-mastodon-verified-300x245.png.pagespeed.ic.8JmGpqqvYn.png 300w, https://danq.me/wp-content/uploads/2022/11/xdanq-mastodon-verified-30x25.png.pagespeed.ic.uoG8XJlM2T.png 30w\" sizes=\"(max-width: 573px) 100vw, 573px\"></noscript></a><figcaption id=\"caption-attachment-20723\" class=\"wp-caption-text\">The tick is green, not blue, but I can’t imagine anybody complains.</figcaption></figure>\n<p>A great thing about this form of verification is <em>you don’t have to trust my server</em> (and you probably shouldn’t): you can check it for yourself to ensure that the listed website <em>really does</em> state that this is the official Mastodon account of “me”.</p>\n<p>You can argue this just moves the problem further down the road – instead of trusting a corporation that have shown that they’re not above <em>selling</em> the rights to your identity you have to trust that a website is legitimate – and you’d be right. But in my case for example you can use years of history, archive.org, cross-links etc. to verify that the domain is “me”, and from that you can confirm the legitimacy of my Mastodon account. Anybody who can spoof multiple decades of my history and maintain that lie for a decade of indepdendent web archiving probably deserves to be able to pretend to be me!</p>\n<p>There are lots of other distributed methods too: web-of-trust systems, signed keys, even <abbr class=\"abbr\" title=\"Secure Socket Layer\">SSL</abbr> certificates would be a potential solution. Looking again at my profile, you’ll see that I list the fingerprint of <a href=\"https://danq.me/contact/gpg/\">my GPG key</a>, which you can compare to ones in public directories (which are co-signed by other people). This way you’d know that if you sent an encrypted DM to my Mastodon inbox it could only be decrypted if I were legitimately me. Or I could post a message signed with that key to prove my identity, insofar as my web-of-trust meets your satisfaction.</p>\n<p><strong>If <a href=\"https://www.gov.uk/government/organisations/prime-ministers-office-10-downing-street\">gov.uk’s page about 10 Downing Street</a> had profile pages for cabinet members with rel=”me” links to their social profiles I’d be <em>more</em>-likely to trust the legitimacy of those social profiles than I would if they had a centralised verification such as a Twitter “blue tick”.</strong></p>\n<p>Fediverse identify verification isn’t as hard a problem to solve as Derek implies, and indeed it’s already partially-solved. Not having a single point of authority is less convenient, sure, but it also protects you from some of the more-insidious identity problems that systems like Twitter’s have.</p>\n<div class=\"syndication-links\"><span class=\"relsyn\"><data class=\"u-syndication\" value=\"https://twitter.com/scatmandan/status/1592591207741390854\"></data> <data class=\"u-syndication\" value=\"https://m.danq.me/@dan/109349343478858634\"></data> <data class=\"u-syndication\" value=\"https://m.danq.me/@blog/109432457500831638\"></data></span></div>",
-                "value": "In “Decentralization and verification”, Derek Kedziora said:\n\n\n…Mastodon by its very nature as a decentralized service can’t verify accounts.\nWe’d still need some trusted third party to do offline verifications and host them in a centralized repository.\n…\n\nDerek Kedziora\n\n\nLet’s not sell Mastodon short here. The service you compare it to – Twitter – solves this problem… but only if you trust Twitter as an authority on the identity of people. Mastodon also solves the problem, but it puts the trust in a different place: domain names and account pages.\nIf you want to “verify” yourself on Mastodon, you can use a rel=”me” link from a page or domain you control. It looks like this:\n Screenshot showing @dan@danq.me's Mastodon account as the verified owner of website DanQ.me.  Screenshot showing @dan@danq.me's Mastodon account as the verified owner of website DanQ.me. The tick is green, not blue, but I can’t imagine anybody complains.\nA great thing about this form of verification is you don’t have to trust my server (and you probably shouldn’t): you can check it for yourself to ensure that the listed website really does state that this is the official Mastodon account of “me”.\nYou can argue this just moves the problem further down the road – instead of trusting a corporation that have shown that they’re not above selling the rights to your identity you have to trust that a website is legitimate – and you’d be right. But in my case for example you can use years of history, archive.org, cross-links etc. to verify that the domain is “me”, and from that you can confirm the legitimacy of my Mastodon account. Anybody who can spoof multiple decades of my history and maintain that lie for a decade of indepdendent web archiving probably deserves to be able to pretend to be me!\nThere are lots of other distributed methods too: web-of-trust systems, signed keys, even SSL certificates would be a potential solution. Looking again at my profile, you’ll see that I list the fingerprint of my GPG key, which you can compare to ones in public directories (which are co-signed by other people). This way you’d know that if you sent an encrypted DM to my Mastodon inbox it could only be decrypted if I were legitimately me. Or I could post a message signed with that key to prove my identity, insofar as my web-of-trust meets your satisfaction.\nIf gov.uk’s page about 10 Downing Street had profile pages for cabinet members with rel=”me” links to their social profiles I’d be more-likely to trust the legitimacy of those social profiles than I would if they had a centralised verification such as a Twitter “blue tick”.\nFediverse identify verification isn’t as hard a problem to solve as Derek implies, and indeed it’s already partially-solved. Not having a single point of authority is less convenient, sure, but it also protects you from some of the more-insidious identity problems that systems like Twitter’s have."
-              }
-            ],
-            "in-reply-to": [
-              {
-                "type": [
-                  "h-cite"
-                ],
-                "properties": {
-                  "name": [
-                    ""
-                  ],
-                  "summary": [
-                    {
-                      "html": "",
-                      "value": ""
-                    }
-                  ]
-                },
-                "value": ""
-              },
-              "In “Decentralization and verification”, Derek Kedziora said:\n\n\n…Mastodon by its very nature as a decentralized service can’t verify accounts.\nWe’d still need some trusted third party to do offline verifications and host them in a centralized repository.\n…\n\nDerek Kedziora"
-            ],
-            "syndication": [
-              "https://twitter.com/scatmandan/status/1592591207741390854",
-              "https://m.danq.me/@dan/109349343478858634",
-              "https://m.danq.me/@blog/109432457500831638",
-              "https://twitter.com/scatmandan/status/1592591207741390854",
-              "https://m.danq.me/@dan/109349343478858634",
-              "https://m.danq.me/@blog/109432457500831638"
-            ],
-            "category": [
-              "fediverse",
-              "identity",
-              "mastodon",
-              "security",
-              "social networking",
-              "twitter"
-            ]
-          },
-          "id": "post-20722",
-          "children": [
-            {
-              "type": [
-                "h-cite"
-              ],
-              "properties": {
-                "content": [
-                  "…Mastodon by its very nature as a decentralized service can’t verify accounts.\nWe’d still need some trusted third party to do offline verifications and host them in a centralized repository.\n…"
-                ],
-                "author": [
-                  {
-                    "type": [
-                      "h-card"
-                    ],
-                    "properties": {
-                      "url": [
-                        "https://derekkedziora.com/"
-                      ],
-                      "name": [
-                        "Derek Kedziora"
-                      ]
-                    },
-                    "value": "Derek Kedziora"
-                  }
-                ]
-              }
-            }
-          ]
         }
       ]
     }
@@ -969,6 +959,7 @@
       "https://danq.me/"
     ],
     "bookmark": [
+      "https://danq.me/2022/12/03/reply-to-the-ethics-of-syndicating-comments-using-webmentions/",
       "https://danq.me/2022/12/02/geohashing-expedition-2022-12-02-51-1/",
       "https://danq.me/2022/12/01/automation/",
       "https://danq.me/2022/11/28/things-the-other-child-did-wrong/",
@@ -982,8 +973,66 @@
       "https://danq.me/2022/11/19/ogn52/",
       "https://danq.me/2022/11/18/spring83-keygen/",
       "https://danq.me/2022/11/17/wp-finger/",
-      "https://danq.me/2022/11/16/constellations/",
-      "https://danq.me/2022/11/15/reply-to-decentralization-and-verification/"
+      "https://danq.me/2022/11/16/constellations/"
+    ],
+    "tag": [
+      "https://danq.me/tag/indieweb/",
+      "https://danq.me/tag/published-on-gemini/",
+      "https://danq.me/tag/technology/",
+      "https://danq.me/tag/web/",
+      "https://danq.me/tag/dogs/",
+      "https://danq.me/tag/geohashing/",
+      "https://danq.me/tag/hash-log/",
+      "https://danq.me/tag/ai/",
+      "https://danq.me/tag/employment/",
+      "https://danq.me/tag/history/",
+      "https://danq.me/tag/job/",
+      "https://danq.me/tag/science/",
+      "https://danq.me/tag/work/",
+      "https://danq.me/tag/monday/",
+      "https://danq.me/tag/funny/",
+      "https://danq.me/tag/parenting/",
+      "https://danq.me/tag/cache-log/",
+      "https://danq.me/tag/geocaching/",
+      "https://danq.me/tag/comic/",
+      "https://danq.me/tag/freshrss/",
+      "https://danq.me/tag/rss/",
+      "https://danq.me/tag/xml/",
+      "https://danq.me/tag/geeky/",
+      "https://danq.me/tag/http/",
+      "https://danq.me/tag/internet/",
+      "https://danq.me/tag/joke/",
+      "https://danq.me/tag/memes/",
+      "https://danq.me/tag/pictures/",
+      "https://danq.me/tag/board-games/",
+      "https://danq.me/tag/games/",
+      "https://danq.me/tag/illness/",
+      "https://danq.me/tag/javascript/",
+      "https://danq.me/tag/maths/",
+      "https://danq.me/tag/open-source/",
+      "https://danq.me/tag/video-games/",
+      "https://danq.me/tag/automattic/",
+      "https://danq.me/tag/fediverse/",
+      "https://danq.me/tag/mastodon/",
+      "https://danq.me/tag/tumblr/",
+      "https://danq.me/tag/twitter/",
+      "https://danq.me/tag/wordpress/",
+      "https://danq.me/tag/gemini/",
+      "https://danq.me/tag/programming/",
+      "https://danq.me/tag/spring83/",
+      "https://danq.me/tag/web-development/",
+      "https://danq.me/tag/covid-19/",
+      "https://danq.me/tag/geek/",
+      "https://danq.me/tag/geek-night/",
+      "https://danq.me/tag/oxford/",
+      "https://danq.me/tag/cryptography/",
+      "https://danq.me/tag/blogging/",
+      "https://danq.me/tag/finger/",
+      "https://danq.me/tag/nostalgia/",
+      "https://danq.me/tag/abuse/",
+      "https://danq.me/tag/astronomy/",
+      "https://danq.me/tag/counselling/",
+      "https://danq.me/tag/health/"
     ],
     "syndication": [
       "https://geohashing.site/geohashing/2022-12-02_51_-1",
@@ -1049,72 +1098,7 @@
       "https://twitter.com/scatmandan/status/1592873821291233281",
       "https://www.tumblr.com/dan--q/701083879061241856/counselling-and-constellations",
       "https://m.danq.me/@dan/109353740274780689",
-      "https://m.danq.me/@blog/109432457517145891",
-      "https://twitter.com/scatmandan/status/1592591207741390854",
-      "https://m.danq.me/@dan/109349343478858634",
-      "https://m.danq.me/@blog/109432457500831638"
-    ],
-    "tag": [
-      "https://danq.me/tag/dogs/",
-      "https://danq.me/tag/geohashing/",
-      "https://danq.me/tag/hash-log/",
-      "https://danq.me/tag/ai/",
-      "https://danq.me/tag/employment/",
-      "https://danq.me/tag/history/",
-      "https://danq.me/tag/job/",
-      "https://danq.me/tag/science/",
-      "https://danq.me/tag/technology/",
-      "https://danq.me/tag/work/",
-      "https://danq.me/tag/monday/",
-      "https://danq.me/tag/funny/",
-      "https://danq.me/tag/parenting/",
-      "https://danq.me/tag/cache-log/",
-      "https://danq.me/tag/geocaching/",
-      "https://danq.me/tag/comic/",
-      "https://danq.me/tag/freshrss/",
-      "https://danq.me/tag/published-on-gemini/",
-      "https://danq.me/tag/rss/",
-      "https://danq.me/tag/xml/",
-      "https://danq.me/tag/geeky/",
-      "https://danq.me/tag/http/",
-      "https://danq.me/tag/internet/",
-      "https://danq.me/tag/joke/",
-      "https://danq.me/tag/memes/",
-      "https://danq.me/tag/pictures/",
-      "https://danq.me/tag/web/",
-      "https://danq.me/tag/board-games/",
-      "https://danq.me/tag/games/",
-      "https://danq.me/tag/illness/",
-      "https://danq.me/tag/javascript/",
-      "https://danq.me/tag/maths/",
-      "https://danq.me/tag/open-source/",
-      "https://danq.me/tag/video-games/",
-      "https://danq.me/tag/automattic/",
-      "https://danq.me/tag/fediverse/",
-      "https://danq.me/tag/mastodon/",
-      "https://danq.me/tag/tumblr/",
-      "https://danq.me/tag/twitter/",
-      "https://danq.me/tag/wordpress/",
-      "https://danq.me/tag/gemini/",
-      "https://danq.me/tag/indieweb/",
-      "https://danq.me/tag/programming/",
-      "https://danq.me/tag/spring83/",
-      "https://danq.me/tag/web-development/",
-      "https://danq.me/tag/covid-19/",
-      "https://danq.me/tag/geek/",
-      "https://danq.me/tag/geek-night/",
-      "https://danq.me/tag/oxford/",
-      "https://danq.me/tag/cryptography/",
-      "https://danq.me/tag/blogging/",
-      "https://danq.me/tag/finger/",
-      "https://danq.me/tag/nostalgia/",
-      "https://danq.me/tag/abuse/",
-      "https://danq.me/tag/astronomy/",
-      "https://danq.me/tag/counselling/",
-      "https://danq.me/tag/health/",
-      "https://danq.me/tag/identity/",
-      "https://danq.me/tag/security/",
-      "https://danq.me/tag/social-networking/"
+      "https://m.danq.me/@blog/109432457517145891"
     ],
     "license": [
       "https://creativecommons.org/licenses/by-nc/4.0/"
@@ -1371,6 +1355,36 @@
       ],
       "text": "\n            Dan\n            Q\n          "
     },
+    "https://danq.me/2022/12/03/reply-to-the-ethics-of-syndicating-comments-using-webmentions/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "Reply to The ethics of syndicating comments using WebMentions"
+    },
+    "https://danq.me/tag/indieweb/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "indieweb"
+    },
+    "https://danq.me/tag/published-on-gemini/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "published on gemini"
+    },
+    "https://danq.me/tag/technology/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "technology"
+    },
+    "https://danq.me/tag/web/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "web"
+    },
     "https://danq.me/2022/12/02/geohashing-expedition-2022-12-02-51-1/": {
       "rels": [
         "bookmark"
@@ -1478,12 +1492,6 @@
         "tag"
       ],
       "text": "science"
-    },
-    "https://danq.me/tag/technology/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "technology"
     },
     "https://danq.me/tag/work/": {
       "rels": [
@@ -1611,12 +1619,6 @@
       ],
       "text": "freshrss"
     },
-    "https://danq.me/tag/published-on-gemini/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "published on gemini"
-    },
     "https://danq.me/tag/rss/": {
       "rels": [
         "tag"
@@ -1712,12 +1714,6 @@
         "tag"
       ],
       "text": "pictures"
-    },
-    "https://danq.me/tag/web/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "web"
     },
     "https://danq.me/2022/11/21/sisyphus-game/": {
       "rels": [
@@ -1922,12 +1918,6 @@
         "tag"
       ],
       "text": "gemini"
-    },
-    "https://danq.me/tag/indieweb/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "indieweb"
     },
     "https://danq.me/tag/programming/": {
       "rels": [
@@ -2180,48 +2170,6 @@
         "tag"
       ],
       "text": "health"
-    },
-    "https://danq.me/2022/11/15/reply-to-decentralization-and-verification/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Reply to Decentralization and verification"
-    },
-    "https://twitter.com/scatmandan/status/1592591207741390854": {
-      "rels": [
-        "syndication"
-      ],
-      "text": "\n                ​​                twitter.com\n              "
-    },
-    "https://m.danq.me/@dan/109349343478858634": {
-      "rels": [
-        "syndication"
-      ],
-      "text": "\n                                m.danq.me\n              "
-    },
-    "https://m.danq.me/@blog/109432457500831638": {
-      "rels": [
-        "syndication"
-      ],
-      "text": "\n                                m.danq.me\n              "
-    },
-    "https://danq.me/tag/identity/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "identity"
-    },
-    "https://danq.me/tag/security/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "security"
-    },
-    "https://danq.me/tag/social-networking/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "social networking"
     },
     "https://creativecommons.org/licenses/by-nc/4.0/": {
       "rels": [

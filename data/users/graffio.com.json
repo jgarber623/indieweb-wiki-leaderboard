@@ -16,9 +16,6 @@
     "alternate": [
       "https://graffio.com/rss.xml"
     ],
-    "canonical": [
-      "https://graffio.com/"
-    ],
     "stylesheet": [
       "https://graffio.com/files/css/css_wZCxlrxNppNF54iw-MxiUTTxNb1B3g5rFTE1v03ijvs.css",
       "https://graffio.com/files/css/css_xaJU72jAuGdwaW-AT8DAVp4DqDeKRUXAJArM-ju9zyk.css",
@@ -61,11 +58,6 @@
       "title": "Home page feed",
       "type": "application/rss+xml"
     },
-    "https://graffio.com/": {
-      "rels": [
-        "canonical"
-      ]
-    },
     "https://graffio.com/files/css/css_wZCxlrxNppNF54iw-MxiUTTxNb1B3g5rFTE1v03ijvs.css": {
       "rels": [
         "stylesheet"
@@ -107,6 +99,12 @@
         "stylesheet"
       ],
       "media": "screen"
+    },
+    "https://graffio.com/": {
+      "rels": [
+        "home"
+      ],
+      "title": "Home"
     },
     "https://graffio.com/posts/greed-til-you-bleed": {
       "rels": [
