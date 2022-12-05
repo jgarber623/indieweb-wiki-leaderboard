@@ -42,6 +42,170 @@
       "properties": {
         "photo": [
           {
+            "value": "https://adactio.com/images/uploaded/19717/small.jpg",
+            "srcset": {
+              "320w": "https://adactio.com/images/uploaded/19717/small.jpg",
+              "480w": "https://adactio.com/images/uploaded/19717/medium.jpg",
+              "800w": "https://adactio.com/images/uploaded/19717/large.jpg"
+            },
+            "alt": "Checked in at The Bugle Inn. Sunday afternoon session 🎶🎻🎻🎻🎶"
+          }
+        ],
+        "content": [
+          {
+            "html": "<p>Checked in at The Bugle Inn. Sunday afternoon session 🎶🎻🎻🎻🎶</p>",
+            "value": "Checked in at The Bugle Inn. Sunday afternoon session 🎶🎻🎻🎻🎶"
+          }
+        ],
+        "name": [
+          "Checked in at The Bugle Inn. Sunday afternoon session 🎶🎻🎻🎻🎶"
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "50.83405515"
+              ],
+              "longitude": [
+                "-0.12860167"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/notes/19717"
+        ],
+        "published": [
+          "2022-12-04T16:15:40Z"
+        ],
+        "syndication": [
+          "https://www.swarmapp.com/user/112073/checkin/638cc799d88dc8485cf52f8f"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://github.com/dbohdan/classless-css\">\ndbohdan/classless-css: A list of classless CSS themes/frameworks with screenshots\n</a>\n</h3>\n\n<p>A collection of stylesheets that don’t use class selectors. Think of them as alternatives to default user-agent stylesheets.</p>",
+            "value": "dbohdan/classless-css: A list of classless CSS themes/frameworks with screenshots\n\n\n\nA collection of stylesheets that don’t use class selectors. Think of them as alternatives to default user-agent stylesheets."
+          }
+        ],
+        "name": [
+          "dbohdan/classless-css: A list of classless CSS themes/frameworks with screenshots"
+        ],
+        "bookmark-of": [
+          "https://github.com/dbohdan/classless-css"
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "50.83248899"
+              ],
+              "longitude": [
+                "-0.11814618"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/links/19716"
+        ],
+        "published": [
+          "2022-12-04T14:55:46Z"
+        ],
+        "category": [
+          "css",
+          "classless",
+          "stylesheets",
+          "styles",
+          "selectors",
+          "boilerplate",
+          "defaults",
+          "frontend",
+          "development",
+          "styling"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Tweaking navigation labelling"
+        ],
+        "url": [
+          "https://adactio.com/journal/19715"
+        ],
+        "content": [
+          {
+            "html": "<p>I’ve always liked the idea that your website can be your API. Like, you’ve already got URLs to identify resources, so why not make that URL structure predictable and those resources parsable?</p>\n\n<p>That’s why <a href=\"https://thesession.org/api\">the (read-only) API for The Session</a> doesn’t live at a separate subdomain. It uses the same URL structure as the regular site, but you can request the resources in an alternative format: JSON, XML, RSS.</p>\n\n<p>This works out pretty well, mostly because I put a lot of thought into the URL structure of the site. I’m something of a URL fetishist, but I think that taking a URL-first approach to information architecture can be a good exercise.</p>\n\n<p>Most of the resources on The Session involve nouns like tunes, events, discussions, and so on. There’s a consistent and predictable structure to the URLs for those sections:</p>\n\n<ul>\n<li><code>/things</code></li>\n<li><code>/things/new</code></li>\n<li><code>/things/search</code></li>\n</ul>\n\n<p>And then an idividual item can be found at:</p>\n\n<ul>\n<li><code>things/ID</code></li>\n</ul>\n\n<p>That’s all nice and predictable and the naming of the URLs matches what you’d expect to find:</p>\n\n<ul>\n<li><a href=\"https://thesession.org/tunes\"><code>tunes</code></a></li>\n<li><a href=\"https://thesession.org/tunes/new\"><code>tunes/new</code></a></li>\n<li><a href=\"https://thesession.org/tunes/search?q=Ireland\"><code>tunes/search?q=Ireland</code></a></li>\n<li><a href=\"https://thesession.org/tunes/320\"><code>tunes/320</code></a></li>\n</ul>\n\n<p>Tunes, events, discussions, sessions. Those are all fine. But there’s one section of the site that has this root URL:</p>\n\n<p><a href=\"https://thesession.org/recordings\"><code>/recordings</code></a></p>\n\n<p>When I was coming up with the URL structure twenty years ago, it was clear what you’d find there: track listings for albums of music. No one would’ve expected to find <em>actual</em> recordings of music available to listen to on-demand. The bandwidth constraints and technical limitations of the time made that clear.</p>\n\n<p>Two decades on, the situation has changed. Now someone new to the site might well expect to hit a link called “recordings” and expect to hear actual recordings of music.</p>\n\n<p>So I should probably change the label on the link. I don’t think “albums” is quite right—what even is an album any more? The word “discography” is probably the most appropriate label.</p>\n\n<p>Here’s my dilemma: if I update the <em>label</em>, should I also update the URL structure?</p>\n\n<p>Right now, the section of the site with <code>/tunes</code> URLs is labelled “tunes”. The section of the site with <code>/events</code> URLs is labelled “events”. Currently the section of the site with <code>/recordings</code> URLs is labelled “recordings”, but may soon be labelled “discography”.</p>\n\n<p>If you click on “tunes”, you end up at <code>/tunes</code>. But if you click on “discography”, you end up at <code>/recordings</code>.</p>\n\n<p>Is that okay? Am I the only one that would be bothered by that?</p>\n\n<p>I could update the URLs to match the labelling (with redirects for the old URLs, of course), but I’m not so keen on this URL structure:</p>\n\n<ul>\n<li><code>/discography</code></li>\n<li><code>/discography/new</code></li>\n<li><code>/discography/search</code></li>\n<li><code>/discography/ID</code></li>\n</ul>\n\n<p>It doesn’t seem as tidy as:</p>\n\n<ul>\n<li><code>/recordings</code></li>\n<li><code>/recordings/new</code></li>\n<li><code>/recordings/search</code></li>\n<li><code>/recordings/ID</code></li>\n</ul>\n\n<p>But if I don’t update the URLs to match the label, then I’m just going to have to live with the mismatch.</p>\n\n<p>I’m just thinking out loud here. I think I should definitely update the label. I just won’t make any decision on changing URLs for a while yet.</p>",
+            "value": "I’ve always liked the idea that your website can be your API. Like, you’ve already got URLs to identify resources, so why not make that URL structure predictable and those resources parsable?\n\nThat’s why the (read-only) API for The Session doesn’t live at a separate subdomain. It uses the same URL structure as the regular site, but you can request the resources in an alternative format: JSON, XML, RSS.\n\nThis works out pretty well, mostly because I put a lot of thought into the URL structure of the site. I’m something of a URL fetishist, but I think that taking a URL-first approach to information architecture can be a good exercise.\n\nMost of the resources on The Session involve nouns like tunes, events, discussions, and so on. There’s a consistent and predictable structure to the URLs for those sections:\n\n\n/things\n/things/new\n/things/search\n\n\nAnd then an idividual item can be found at:\n\n\nthings/ID\n\n\nThat’s all nice and predictable and the naming of the URLs matches what you’d expect to find:\n\n\ntunes\ntunes/new\ntunes/search?q=Ireland\ntunes/320\n\n\nTunes, events, discussions, sessions. Those are all fine. But there’s one section of the site that has this root URL:\n\n/recordings\n\nWhen I was coming up with the URL structure twenty years ago, it was clear what you’d find there: track listings for albums of music. No one would’ve expected to find actual recordings of music available to listen to on-demand. The bandwidth constraints and technical limitations of the time made that clear.\n\nTwo decades on, the situation has changed. Now someone new to the site might well expect to hit a link called “recordings” and expect to hear actual recordings of music.\n\nSo I should probably change the label on the link. I don’t think “albums” is quite right—what even is an album any more? The word “discography” is probably the most appropriate label.\n\nHere’s my dilemma: if I update the label, should I also update the URL structure?\n\nRight now, the section of the site with /tunes URLs is labelled “tunes”. The section of the site with /events URLs is labelled “events”. Currently the section of the site with /recordings URLs is labelled “recordings”, but may soon be labelled “discography”.\n\nIf you click on “tunes”, you end up at /tunes. But if you click on “discography”, you end up at /recordings.\n\nIs that okay? Am I the only one that would be bothered by that?\n\nI could update the URLs to match the labelling (with redirects for the old URLs, of course), but I’m not so keen on this URL structure:\n\n\n/discography\n/discography/new\n/discography/search\n/discography/ID\n\n\nIt doesn’t seem as tidy as:\n\n\n/recordings\n/recordings/new\n/recordings/search\n/recordings/ID\n\n\nBut if I don’t update the URLs to match the label, then I’m just going to have to live with the mismatch.\n\nI’m just thinking out loud here. I think I should definitely update the label. I just won’t make any decision on changing URLs for a while yet."
+          }
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "50.83252902"
+              ],
+              "longitude": [
+                "-0.11815946"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "published": [
+          "2022-12-04T11:20:31Z"
+        ],
+        "category": [
+          "thesession",
+          "navigation",
+          "urls",
+          "labels",
+          "labelling",
+          "api",
+          "structure",
+          "rest",
+          "information",
+          "architecture",
+          "ia",
+          "interface",
+          "ui",
+          "links",
+          "names",
+          "naming"
+        ],
+        "syndication": [
+          "https://adactio.medium.com/aa7a04754b39"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "photo": [
+          {
             "value": "https://adactio.com/images/uploaded/19714/small.jpg",
             "srcset": {
               "320w": "https://adactio.com/images/uploaded/19714/small.jpg",
@@ -869,164 +1033,6 @@
     },
     {
       "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "photo": [
-          {
-            "value": "https://adactio.com/images/uploaded/19689/small.jpg",
-            "srcset": {
-              "320w": "https://adactio.com/images/uploaded/19689/small.jpg",
-              "480w": "https://adactio.com/images/uploaded/19689/medium.jpg",
-              "800w": "https://adactio.com/images/uploaded/19689/large.jpg"
-            },
-            "alt": "Checked in at The Winding Stair. Stopping for lunch in Dublin before flying home — with Jessica"
-          }
-        ],
-        "content": [
-          {
-            "html": "<p>Checked in at The Winding Stair. Stopping for lunch in Dublin before flying home — with Jessica</p>",
-            "value": "Checked in at The Winding Stair. Stopping for lunch in Dublin before flying home — with Jessica"
-          }
-        ],
-        "name": [
-          "Checked in at The Winding Stair. Stopping for lunch in Dublin before flying home — with Jessica"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "53.34659600"
-              ],
-              "longitude": [
-                "-6.26378400"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/notes/19689"
-        ],
-        "published": [
-          "2022-11-25T14:40:24Z"
-        ],
-        "syndication": [
-          "https://www.swarmapp.com/user/112073/checkin/6380d3c5eb4e3239fa732145"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "content": [
-          {
-            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://notospypixels.com/\">\nNo To Spy Pixels\n</a>\n</h3>\n\n<p>Almost no-one has given informed constent to being tracked through spy pixels in emails, and yet the practice is endemic. This is wrong. It needs to change.</p>",
-            "value": "No To Spy Pixels\n\n\n\nAlmost no-one has given informed constent to being tracked through spy pixels in emails, and yet the practice is endemic. This is wrong. It needs to change."
-          }
-        ],
-        "name": [
-          "No To Spy Pixels"
-        ],
-        "bookmark-of": [
-          "https://notospypixels.com/"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "53.34302720"
-              ],
-              "longitude": [
-                "-6.28162560"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/links/19687"
-        ],
-        "published": [
-          "2022-11-25T12:39:01Z"
-        ],
-        "category": [
-          "spy",
-          "pixels",
-          "tracking",
-          "surveillance",
-          "email",
-          "pecr",
-          "gdpr",
-          "consent",
-          "privacy",
-          "ethics"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "name": [
-          "Tweaking navigation sizing"
-        ],
-        "url": [
-          "https://adactio.com/journal/19686"
-        ],
-        "content": [
-          {
-            "html": "<p><a href=\"https://gerrymcgovern.com/\">Gerry</a> talks about “top tasks” a lot. He literally <a href=\"https://gerrymcgovern.com/books/top-tasks-a-how-to-guide\">wrote the book</a> on it:</p>\n\n<blockquote>\n  <p>Top tasks are what matter most to your customers.</p>\n</blockquote>\n\n<p>Seems pretty obvious, right? But it’s actually pretty rare to see top tasks presented any differently than other options.</p>\n\n<p>Look at the global navigation on most websites. Typically all the options are given equal prominence. Even the semantics under the hood often reflect this egalitarian ideal, with each list in an <em>un</em>ordered list. All the navigation options are equal, but I bet that the reality for most websites is that some navigation options are more equal than others.</p>\n\n<p>I’ve been guilty of this on <a href=\"https://thesession.org/\">The Session</a>. The site-wide navigation shows a number of options: tunes, events, discussions, etc. Each one is given equal prominence, but I can tell you without even looking at my server logs that 90% of the traffic goes to the tunes section—that’s the beating heart of The Session. That’s why the home page has a search form that defaults to searching for tunes.</p>\n\n<p>I wanted the navigation to reflect the reality of what people are coming to the site for. I decided to make the link to the tunes section more prominent by bumping up the font size a bit.</p>\n\n<p>I was worried about how weird this might look; we’re so used to seeing all navigation items presented equally. But I think it worked out okay (though it might take a bit of getting used to if you’re accustomed to the previous styling). It helps that “tunes” is a nice short word, so bumping up the font size on that word doesn’t jostle everything else around.</p>\n\n<p>I think this adjustment is working well for this situation where there’s one very clear tippy-top task. I wouldn’t want to apply it across the board, making every item in the navigation proportionally bigger or smaller depending on how often it’s used. That would end up looking like a ransom note.</p>\n\n<p>But giving one single item prominence like this tweaks the visual hierarchy just enough to favour the option that’s most likely to be what a visitor wants.</p>\n\n<p>That last bit is crucial. The visual adjustment reflects what visitors want, not what I want. You <em>could</em> adjust the size of a navigation option that you want to drive traffic to, but in the long run, all you’re going to do is train people to trust your design less.</p>\n\n<p>You don’t get to decide what your top task is. The visitors to your website do. Trying to foist an arbitrary option on them would be the tail wagging the dog.</p>\n\n<p>Anway, I’m feeling a lot better about the site-wide navigation on <a href=\"https://thesession.org/\">The Session</a> now that it reflects reality a little bit more. Heck, I may even bump that font size up a little more.</p>",
-            "value": "Gerry talks about “top tasks” a lot. He literally wrote the book on it:\n\n\n  Top tasks are what matter most to your customers.\n\n\nSeems pretty obvious, right? But it’s actually pretty rare to see top tasks presented any differently than other options.\n\nLook at the global navigation on most websites. Typically all the options are given equal prominence. Even the semantics under the hood often reflect this egalitarian ideal, with each list in an unordered list. All the navigation options are equal, but I bet that the reality for most websites is that some navigation options are more equal than others.\n\nI’ve been guilty of this on The Session. The site-wide navigation shows a number of options: tunes, events, discussions, etc. Each one is given equal prominence, but I can tell you without even looking at my server logs that 90% of the traffic goes to the tunes section—that’s the beating heart of The Session. That’s why the home page has a search form that defaults to searching for tunes.\n\nI wanted the navigation to reflect the reality of what people are coming to the site for. I decided to make the link to the tunes section more prominent by bumping up the font size a bit.\n\nI was worried about how weird this might look; we’re so used to seeing all navigation items presented equally. But I think it worked out okay (though it might take a bit of getting used to if you’re accustomed to the previous styling). It helps that “tunes” is a nice short word, so bumping up the font size on that word doesn’t jostle everything else around.\n\nI think this adjustment is working well for this situation where there’s one very clear tippy-top task. I wouldn’t want to apply it across the board, making every item in the navigation proportionally bigger or smaller depending on how often it’s used. That would end up looking like a ransom note.\n\nBut giving one single item prominence like this tweaks the visual hierarchy just enough to favour the option that’s most likely to be what a visitor wants.\n\nThat last bit is crucial. The visual adjustment reflects what visitors want, not what I want. You could adjust the size of a navigation option that you want to drive traffic to, but in the long run, all you’re going to do is train people to trust your design less.\n\nYou don’t get to decide what your top task is. The visitors to your website do. Trying to foist an arbitrary option on them would be the tail wagging the dog.\n\nAnway, I’m feeling a lot better about the site-wide navigation on The Session now that it reflects reality a little bit more. Heck, I may even bump that font size up a little more."
-          }
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "53.31235372"
-              ],
-              "longitude": [
-                "-7.56384662"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "published": [
-          "2022-11-25T12:37:05Z"
-        ],
-        "category": [
-          "thesession",
-          "navigation",
-          "design",
-          "fonts",
-          "sizing",
-          "size",
-          "hierarchy",
-          "toptasks",
-          "typography",
-          "type"
-        ],
-        "syndication": [
-          "https://adactio.medium.com/395b47390151"
-        ]
-      }
-    },
-    {
-      "type": [
         "h-card"
       ],
       "properties": {
@@ -1766,6 +1772,9 @@
       "https://adactio.com/includes/css/print.css"
     ],
     "bookmark": [
+      "https://adactio.com/notes/19717",
+      "https://adactio.com/links/19716",
+      "https://adactio.com/journal/19715",
       "https://adactio.com/notes/19714",
       "https://adactio.com/links/19713",
       "https://adactio.com/links/19712",
@@ -1782,12 +1791,11 @@
       "https://adactio.com/notes/19696",
       "https://adactio.com/links/19695",
       "https://adactio.com/links/19694",
-      "https://adactio.com/links/19691",
-      "https://adactio.com/notes/19689",
-      "https://adactio.com/links/19687",
-      "https://adactio.com/journal/19686"
+      "https://adactio.com/links/19691"
     ],
     "syndication": [
+      "https://www.swarmapp.com/user/112073/checkin/638cc799d88dc8485cf52f8f",
+      "https://adactio.medium.com/aa7a04754b39",
       "https://mastodon.social/@adactio/109452271264684660",
       "https://www.instagram.com/p/CluUrFMthFP/",
       "https://mastodon.social/@adactio/109450978076239236",
@@ -1797,11 +1805,35 @@
       "https://www.swarmapp.com/user/112073/checkin/6387c3af74e4227cb47c90b9",
       "https://mastodon.social/@adactio/109433723084048454",
       "https://adactio.medium.com/c5d916dd58e3",
-      "https://www.swarmapp.com/user/112073/checkin/638392f8e8b4817e2f5f90f7",
-      "https://www.swarmapp.com/user/112073/checkin/6380d3c5eb4e3239fa732145",
-      "https://adactio.medium.com/395b47390151"
+      "https://www.swarmapp.com/user/112073/checkin/638392f8e8b4817e2f5f90f7"
     ],
     "tag": [
+      "https://adactio.com/tags/css",
+      "https://adactio.com/tags/classless",
+      "https://adactio.com/tags/stylesheets",
+      "https://adactio.com/tags/styles",
+      "https://adactio.com/tags/selectors",
+      "https://adactio.com/tags/boilerplate",
+      "https://adactio.com/tags/defaults",
+      "https://adactio.com/tags/frontend",
+      "https://adactio.com/tags/development",
+      "https://adactio.com/tags/styling",
+      "https://adactio.com/tags/thesession",
+      "https://adactio.com/tags/navigation",
+      "https://adactio.com/tags/urls",
+      "https://adactio.com/tags/labels",
+      "https://adactio.com/tags/labelling",
+      "https://adactio.com/tags/api",
+      "https://adactio.com/tags/structure",
+      "https://adactio.com/tags/rest",
+      "https://adactio.com/tags/information",
+      "https://adactio.com/tags/architecture",
+      "https://adactio.com/tags/ia",
+      "https://adactio.com/tags/interface",
+      "https://adactio.com/tags/ui",
+      "https://adactio.com/tags/links",
+      "https://adactio.com/tags/names",
+      "https://adactio.com/tags/naming",
       "https://adactio.com/tags/clearleft",
       "https://adactio.com/tags/ux",
       "https://adactio.com/tags/career",
@@ -1813,8 +1845,6 @@
       "https://adactio.com/tags/frameworks",
       "https://adactio.com/tags/libraries",
       "https://adactio.com/tags/history",
-      "https://adactio.com/tags/frontend",
-      "https://adactio.com/tags/development",
       "https://adactio.com/tags/browsers",
       "https://adactio.com/tags/twitter",
       "https://adactio.com/tags/social",
@@ -1826,7 +1856,6 @@
       "https://adactio.com/tags/events",
       "https://adactio.com/tags/talks",
       "https://adactio.com/tags/presenting",
-      "https://adactio.com/tags/links",
       "https://adactio.com/tags/resources",
       "https://adactio.com/tags/declarative",
       "https://adactio.com/tags/design",
@@ -1848,7 +1877,6 @@
       "https://adactio.com/tags/width",
       "https://adactio.com/tags/min",
       "https://adactio.com/tags/max",
-      "https://adactio.com/tags/urls",
       "https://adactio.com/tags/worldwideweb",
       "https://adactio.com/tags/native",
       "https://adactio.com/tags/apps",
@@ -1873,25 +1901,7 @@
       "https://adactio.com/tags/blogs",
       "https://adactio.com/tags/blogging",
       "https://adactio.com/tags/artisan",
-      "https://adactio.com/tags/platforms",
-      "https://adactio.com/tags/spy",
-      "https://adactio.com/tags/pixels",
-      "https://adactio.com/tags/tracking",
-      "https://adactio.com/tags/surveillance",
-      "https://adactio.com/tags/email",
-      "https://adactio.com/tags/pecr",
-      "https://adactio.com/tags/gdpr",
-      "https://adactio.com/tags/consent",
-      "https://adactio.com/tags/privacy",
-      "https://adactio.com/tags/ethics",
-      "https://adactio.com/tags/thesession",
-      "https://adactio.com/tags/navigation",
-      "https://adactio.com/tags/fonts",
-      "https://adactio.com/tags/sizing",
-      "https://adactio.com/tags/size",
-      "https://adactio.com/tags/hierarchy",
-      "https://adactio.com/tags/toptasks",
-      "https://adactio.com/tags/typography"
+      "https://adactio.com/tags/platforms"
     ],
     "next": [
       "https://adactio.com/?start=20"
@@ -2282,6 +2292,192 @@
       ],
       "text": "music"
     },
+    "https://adactio.com/notes/19717": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n4:15pm\n\n"
+    },
+    "https://www.swarmapp.com/user/112073/checkin/638cc799d88dc8485cf52f8f": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "Swarm"
+    },
+    "https://adactio.com/links/19716": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n2:55pm\n\n"
+    },
+    "https://adactio.com/tags/css": {
+      "rels": [
+        "tag"
+      ],
+      "text": "css"
+    },
+    "https://adactio.com/tags/classless": {
+      "rels": [
+        "tag"
+      ],
+      "text": "classless"
+    },
+    "https://adactio.com/tags/stylesheets": {
+      "rels": [
+        "tag"
+      ],
+      "text": "stylesheets"
+    },
+    "https://adactio.com/tags/styles": {
+      "rels": [
+        "tag"
+      ],
+      "text": "styles"
+    },
+    "https://adactio.com/tags/selectors": {
+      "rels": [
+        "tag"
+      ],
+      "text": "selectors"
+    },
+    "https://adactio.com/tags/boilerplate": {
+      "rels": [
+        "tag"
+      ],
+      "text": "boilerplate"
+    },
+    "https://adactio.com/tags/defaults": {
+      "rels": [
+        "tag"
+      ],
+      "text": "defaults"
+    },
+    "https://adactio.com/tags/frontend": {
+      "rels": [
+        "tag"
+      ],
+      "text": "frontend"
+    },
+    "https://adactio.com/tags/development": {
+      "rels": [
+        "tag"
+      ],
+      "text": "development"
+    },
+    "https://adactio.com/tags/styling": {
+      "rels": [
+        "tag"
+      ],
+      "text": "styling"
+    },
+    "https://adactio.com/journal/19715": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n11:20am\n\n"
+    },
+    "https://adactio.com/tags/thesession": {
+      "rels": [
+        "tag"
+      ],
+      "text": "thesession"
+    },
+    "https://adactio.com/tags/navigation": {
+      "rels": [
+        "tag"
+      ],
+      "text": "navigation"
+    },
+    "https://adactio.com/tags/urls": {
+      "rels": [
+        "tag"
+      ],
+      "text": "urls"
+    },
+    "https://adactio.com/tags/labels": {
+      "rels": [
+        "tag"
+      ],
+      "text": "labels"
+    },
+    "https://adactio.com/tags/labelling": {
+      "rels": [
+        "tag"
+      ],
+      "text": "labelling"
+    },
+    "https://adactio.com/tags/api": {
+      "rels": [
+        "tag"
+      ],
+      "text": "api"
+    },
+    "https://adactio.com/tags/structure": {
+      "rels": [
+        "tag"
+      ],
+      "text": "structure"
+    },
+    "https://adactio.com/tags/rest": {
+      "rels": [
+        "tag"
+      ],
+      "text": "rest"
+    },
+    "https://adactio.com/tags/information": {
+      "rels": [
+        "tag"
+      ],
+      "text": "information"
+    },
+    "https://adactio.com/tags/architecture": {
+      "rels": [
+        "tag"
+      ],
+      "text": "architecture"
+    },
+    "https://adactio.com/tags/ia": {
+      "rels": [
+        "tag"
+      ],
+      "text": "ia"
+    },
+    "https://adactio.com/tags/interface": {
+      "rels": [
+        "tag"
+      ],
+      "text": "interface"
+    },
+    "https://adactio.com/tags/ui": {
+      "rels": [
+        "tag"
+      ],
+      "text": "ui"
+    },
+    "https://adactio.com/tags/links": {
+      "rels": [
+        "tag"
+      ],
+      "text": "links"
+    },
+    "https://adactio.com/tags/names": {
+      "rels": [
+        "tag"
+      ],
+      "text": "names"
+    },
+    "https://adactio.com/tags/naming": {
+      "rels": [
+        "tag"
+      ],
+      "text": "naming"
+    },
+    "https://adactio.medium.com/aa7a04754b39": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "Medium"
+    },
     "https://adactio.com/notes/19714": {
       "rels": [
         "bookmark"
@@ -2377,18 +2573,6 @@
         "tag"
       ],
       "text": "history"
-    },
-    "https://adactio.com/tags/frontend": {
-      "rels": [
-        "tag"
-      ],
-      "text": "frontend"
-    },
-    "https://adactio.com/tags/development": {
-      "rels": [
-        "tag"
-      ],
-      "text": "development"
     },
     "https://adactio.com/tags/browsers": {
       "rels": [
@@ -2503,12 +2687,6 @@
         "tag"
       ],
       "text": "presenting"
-    },
-    "https://adactio.com/tags/links": {
-      "rels": [
-        "tag"
-      ],
-      "text": "links"
     },
     "https://adactio.com/tags/resources": {
       "rels": [
@@ -2690,12 +2868,6 @@
       ],
       "text": "\n\n1:50pm\n\n"
     },
-    "https://adactio.com/tags/urls": {
-      "rels": [
-        "tag"
-      ],
-      "text": "urls"
-    },
     "https://adactio.com/tags/worldwideweb": {
       "rels": [
         "tag"
@@ -2875,144 +3047,6 @@
         "tag"
       ],
       "text": "platforms"
-    },
-    "https://adactio.com/notes/19689": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n2:40pm\n\n"
-    },
-    "https://www.swarmapp.com/user/112073/checkin/6380d3c5eb4e3239fa732145": {
-      "rels": [
-        "syndication"
-      ],
-      "text": "Swarm"
-    },
-    "https://adactio.com/links/19687": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n12:39pm\n\n"
-    },
-    "https://adactio.com/tags/spy": {
-      "rels": [
-        "tag"
-      ],
-      "text": "spy"
-    },
-    "https://adactio.com/tags/pixels": {
-      "rels": [
-        "tag"
-      ],
-      "text": "pixels"
-    },
-    "https://adactio.com/tags/tracking": {
-      "rels": [
-        "tag"
-      ],
-      "text": "tracking"
-    },
-    "https://adactio.com/tags/surveillance": {
-      "rels": [
-        "tag"
-      ],
-      "text": "surveillance"
-    },
-    "https://adactio.com/tags/email": {
-      "rels": [
-        "tag"
-      ],
-      "text": "email"
-    },
-    "https://adactio.com/tags/pecr": {
-      "rels": [
-        "tag"
-      ],
-      "text": "pecr"
-    },
-    "https://adactio.com/tags/gdpr": {
-      "rels": [
-        "tag"
-      ],
-      "text": "gdpr"
-    },
-    "https://adactio.com/tags/consent": {
-      "rels": [
-        "tag"
-      ],
-      "text": "consent"
-    },
-    "https://adactio.com/tags/privacy": {
-      "rels": [
-        "tag"
-      ],
-      "text": "privacy"
-    },
-    "https://adactio.com/tags/ethics": {
-      "rels": [
-        "tag"
-      ],
-      "text": "ethics"
-    },
-    "https://adactio.com/journal/19686": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n12:37pm\n\n"
-    },
-    "https://adactio.com/tags/thesession": {
-      "rels": [
-        "tag"
-      ],
-      "text": "thesession"
-    },
-    "https://adactio.com/tags/navigation": {
-      "rels": [
-        "tag"
-      ],
-      "text": "navigation"
-    },
-    "https://adactio.com/tags/fonts": {
-      "rels": [
-        "tag"
-      ],
-      "text": "fonts"
-    },
-    "https://adactio.com/tags/sizing": {
-      "rels": [
-        "tag"
-      ],
-      "text": "sizing"
-    },
-    "https://adactio.com/tags/size": {
-      "rels": [
-        "tag"
-      ],
-      "text": "size"
-    },
-    "https://adactio.com/tags/hierarchy": {
-      "rels": [
-        "tag"
-      ],
-      "text": "hierarchy"
-    },
-    "https://adactio.com/tags/toptasks": {
-      "rels": [
-        "tag"
-      ],
-      "text": "toptasks"
-    },
-    "https://adactio.com/tags/typography": {
-      "rels": [
-        "tag"
-      ],
-      "text": "typography"
-    },
-    "https://adactio.medium.com/395b47390151": {
-      "rels": [
-        "syndication"
-      ],
-      "text": "Medium"
     },
     "https://adactio.com/?start=20": {
       "rels": [

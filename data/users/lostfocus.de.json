@@ -57,6 +57,50 @@
             ],
             "content": [
               {
+                "html": "<p>Likes <a class=\"u-like-of\" href=\"https://www.youtube.com/watch?v=l2LohSn8eiU\">https://www.youtube.com/watch?v=l2LohSn8eiU</a>.</p>",
+                "value": "Likes https://www.youtube.com/watch?v=l2LohSn8eiU."
+              }
+            ],
+            "like-of": [
+              "https://www.youtube.com/watch?v=l2LohSn8eiU"
+            ],
+            "url": [
+              "https://lostfocus.de/2022/12/04/231034/"
+            ],
+            "published": [
+              "2022-12-04T12:41:25+01:00"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "url": [
+                    "https://lostfocus.de/"
+                  ],
+                  "photo": [
+                    "https://lostfocus.de/wp-content/themes/lostfocus-2020/image/ds-2020-square.jpg"
+                  ],
+                  "name": [
+                    "Dominik Schwind"
+                  ]
+                },
+                "value": "Dominik Schwind"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              ""
+            ],
+            "content": [
+              {
                 "html": "<p>Just a quick reminder to myself: if you’re using Dependabot with Composer, the line <code>versioning-strategy: lockfile-only</code> makes life a lot easier.</p>\n\n\n\n<pre class=\"wp-block-code\"><code>version: 2\nupdates:\n  - package-ecosystem: \"composer\" # See documentation for possible values\n    directory: \"/app/\" # Location of package manifests\n    versioning-strategy: lockfile-only\n    schedule:\n      interval: \"daily\"</code></pre>",
                 "value": "Just a quick reminder to myself: if you’re using Dependabot with Composer, the line versioning-strategy: lockfile-only makes life a lot easier.\n\n\n\nversion: 2\nupdates:\n  - package-ecosystem: \"composer\" # See documentation for possible values\n    directory: \"/app/\" # Location of package manifests\n    versioning-strategy: lockfile-only\n    schedule:\n      interval: \"daily\""
               }
@@ -645,50 +689,6 @@
               }
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Morning Earworm #5: Limbo!"
-            ],
-            "content": [
-              {
-                "html": "<p>Bookmarked <a class=\"u-bookmark-of\" href=\"https://www.youtube.com/watch?v=7wt9lO-qpWg\">https://www.youtube.com/watch?v=7wt9lO-qpWg</a>.</p>\n\n\n<p><em>I often wake up with a random song as an <a href=\"https://en.wikipedia.org/wiki/Earworm\">earworm</a> – and now I note them down for your enjoyment.</em></p>",
-                "value": "Bookmarked https://www.youtube.com/watch?v=7wt9lO-qpWg.\n\n\nI often wake up with a random song as an earworm – and now I note them down for your enjoyment."
-              }
-            ],
-            "bookmark-of": [
-              "https://www.youtube.com/watch?v=7wt9lO-qpWg"
-            ],
-            "url": [
-              "https://lostfocus.de/2022/11/22/morning-earworm-5-limbo/"
-            ],
-            "published": [
-              "2022-11-22T11:48:17+01:00"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "url": [
-                    "https://lostfocus.de/"
-                  ],
-                  "photo": [
-                    "https://lostfocus.de/wp-content/themes/lostfocus-2020/image/ds-2020-square.jpg"
-                  ],
-                  "name": [
-                    "Dominik Schwind"
-                  ]
-                },
-                "value": "Dominik Schwind"
-              }
-            ]
-          }
         }
       ]
     }
@@ -749,8 +749,7 @@
       "https://lostfocus.de/2022/12/02/how-did-star-wars-get-serious/",
       "https://lostfocus.de/2022/11/28/morning-earworm-7-buddy-holly/",
       "https://lostfocus.de/2022/11/23/andor/",
-      "https://lostfocus.de/2022/11/23/morning-earworm-6-party-all-the-time/",
-      "https://lostfocus.de/2022/11/22/morning-earworm-5-limbo/"
+      "https://lostfocus.de/2022/11/23/morning-earworm-6-party-all-the-time/"
     ]
   },
   "rel-urls": {
@@ -898,12 +897,6 @@
         "bookmark"
       ],
       "text": "Morning Earworm #6: Party All The Time"
-    },
-    "https://lostfocus.de/2022/11/22/morning-earworm-5-limbo/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Morning Earworm #5: Limbo!"
     },
     "https://nona.social/@dominik": {
       "rels": [
