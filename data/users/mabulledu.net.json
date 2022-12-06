@@ -804,6 +804,9 @@
     "token_endpoint": [
       "https://mabulledu.net/wp-json/indieauth/1.0/token"
     ],
+    "friends-base-url": [
+      "https://mabulledu.net/wp-json/friends/v1"
+    ],
     "home": [
       "https://mabulledu.net/"
     ],
@@ -914,6 +917,11 @@
     "https://mabulledu.net/wp-json/indieauth/1.0/token": {
       "rels": [
         "token_endpoint"
+      ]
+    },
+    "https://mabulledu.net/wp-json/friends/v1": {
+      "rels": [
+        "friends-base-url"
       ]
     },
     "https://mabulledu.net/page/2/": {

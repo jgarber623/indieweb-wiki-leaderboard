@@ -6,13 +6,35 @@
       ],
       "properties": {
         "bridgy-twitter-content": [
-          "Things melted off pretty well as the day went on yesterday, which made for much better running conditions today. #HWI #Run4Water #GroundhogMarathon #Garmin #Running"
+          "In a perfect world all sites with RSS feeds would also support ActivityPub natively. #Mastodon #RSS #Tusky #WordPress #ActivityPub #Tumblr"
         ],
         "bridgy-mastodon-content": [
-          "Things melted off pretty well as the day went on yesterday, which made for much better running conditions today. #HWI #Run4Water #GroundhogMarathon #Garmin #Running"
+          "In a perfect world all sites with RSS feeds would also support ActivityPub natively. #Mastodon #RSS #Tusky #WordPress #ActivityPub #Tumblr"
         ]
       },
       "children": [
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Getting Back to it With an Early Monday Run"
+            ],
+            "content": [
+              {
+                "html": "Got back out for an easy 30 minute run this morning. #HWI #Run4Water #GroundhogMarathon #Garmin #Running",
+                "value": "Got back out for an easy 30 minute run this morning. #HWI #Run4Water #GroundhogMarathon #Garmin #Running"
+              }
+            ],
+            "summary": [
+              "Got back out for an easy 30 minute run this morning. #HWI #Run4Water #GroundhogMarathon #Garmin #Running"
+            ],
+            "url": [
+              "https://www.timnolte.com/2022/12/05/getting-back-to-it-with-an-early-monday-run/"
+            ]
+          }
+        },
         {
           "type": [
             "h-entry"
@@ -122,28 +144,6 @@
               "https://www.timnolte.com/2022/11/22/a-world-of-blogs-and-the-fediverse-bridging-rss-and-activitypub/"
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Cold But Clear, A Better Day For Running"
-            ],
-            "content": [
-              {
-                "html": "Things melted off pretty well as the day went on yesterday, which made for much better running conditions today. #HWI #Run4Water #GroundhogMarathon #Garmin #Running",
-                "value": "Things melted off pretty well as the day went on yesterday, which made for much better running conditions today. #HWI #Run4Water #GroundhogMarathon #Garmin #Running"
-              }
-            ],
-            "summary": [
-              "Things melted off pretty well as the day went on yesterday, which made for much better running conditions today. #HWI #Run4Water #GroundhogMarathon #Garmin #Running"
-            ],
-            "url": [
-              "https://www.timnolte.com/2022/11/22/cold-but-clear-a-better-day-for-running/"
-            ]
-          }
         }
       ]
     }
@@ -188,7 +188,7 @@
       "https://www.timnolte.com/wp-includes/wlwmanifest.xml"
     ],
     "shortlink": [
-      "https://timn.me/3um7Zff"
+      "https://timn.me/3iAuw5x"
     ],
     "authorization_endpoint": [
       "https://www.timnolte.com/wp-json/indieauth/1.0/auth"
@@ -228,12 +228,12 @@
       "https://www.timnolte.com/category/dailythoughts/"
     ],
     "bookmark": [
+      "https://www.timnolte.com/2022/12/05/getting-back-to-it-with-an-early-monday-run/",
       "https://www.timnolte.com/2022/12/01/tackling-another-early-thursday-morning-speed-run/",
       "https://www.timnolte.com/2022/11/29/progressing-through-the-garmin-half-marathon-training-on-a-tuesday-morning/",
       "https://www.timnolte.com/2022/11/26/installing-mastodon-on-an-oracle-cloud-infrastructure-ampere-arm64-always-free-instance/",
       "https://www.timnolte.com/2022/11/26/post-thanksgiving-long-run/",
-      "https://www.timnolte.com/2022/11/22/a-world-of-blogs-and-the-fediverse-bridging-rss-and-activitypub/",
-      "https://www.timnolte.com/2022/11/22/cold-but-clear-a-better-day-for-running/"
+      "https://www.timnolte.com/2022/11/22/a-world-of-blogs-and-the-fediverse-bridging-rss-and-activitypub/"
     ],
     "me": [
       "https://www.faithshaping.org/",
@@ -375,7 +375,7 @@
       ],
       "type": "application/wlwmanifest+xml"
     },
-    "https://timn.me/3um7Zff": {
+    "https://timn.me/3iAuw5x": {
       "rels": [
         "shortlink"
       ]
@@ -433,6 +433,12 @@
         "tag"
       ],
       "text": "Running"
+    },
+    "https://www.timnolte.com/2022/12/05/getting-back-to-it-with-an-early-monday-run/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "Getting Back to it With an Early Monday Run"
     },
     "https://www.timnolte.com/2022/12/01/tackling-another-early-thursday-morning-speed-run/": {
       "rels": [
@@ -493,12 +499,6 @@
         "bookmark"
       ],
       "text": "A World of Blogs and the Fediverse, Bridging RSS and ActivityPub"
-    },
-    "https://www.timnolte.com/2022/11/22/cold-but-clear-a-better-day-for-running/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Cold But Clear, A Better Day For Running"
     },
     "https://www.faithshaping.org/": {
       "rels": [

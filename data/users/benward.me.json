@@ -242,23 +242,12 @@
     "alternate": [
       "https://benward.uk/feed.atom"
     ],
-    "openid.server": [
-      "http://www.myopenid.com/server"
-    ],
-    "openid.delegate": [
-      "http://benward.myopenid.com/"
-    ],
-    "openid2.local_id": [
-      "http://benward.myopenid.com/"
-    ],
-    "openid2.provider": [
-      "http://www.myopenid.com/server"
-    ],
     "me": [
+      "https://benward.social/@benward",
       "http://benward.uk/",
       "https://benward.uk/about",
-      "https://benward.uk/cv",
-      "https://twitter.com/benward"
+      "https://linkedin.com/in/bnwrd",
+      "https://benward.uk/network"
     ],
     "bookmark": [
       "https://benward.uk/blog/out-of-time",
@@ -312,15 +301,11 @@
       "title": "Ben Ward",
       "type": "application/atom+xml"
     },
-    "http://www.myopenid.com/server": {
+    "https://benward.social/@benward": {
       "rels": [
-        "openid.server"
-      ]
-    },
-    "http://benward.myopenid.com/": {
-      "rels": [
-        "openid.delegate"
-      ]
+        "me"
+      ],
+      "title": "@benward on Mastodon"
     },
     "http://benward.uk/": {
       "rels": [
@@ -334,11 +319,11 @@
       ],
       "text": "Read more about Ben"
     },
-    "https://benward.uk/cv": {
+    "https://linkedin.com/in/bnwrd": {
       "rels": [
         "me"
       ],
-      "text": "his CV"
+      "text": "his resume"
     },
     "https://benward.uk/blog/out-of-time": {
       "rels": [
@@ -406,11 +391,11 @@
       ],
       "text": "↑ Archive"
     },
-    "https://twitter.com/benward": {
+    "https://benward.uk/network": {
       "rels": [
         "me"
       ],
-      "text": "Follow @benward"
+      "text": "Social Media"
     }
   }
 }

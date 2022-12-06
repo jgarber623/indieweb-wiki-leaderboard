@@ -12,90 +12,48 @@
       "children": [
         {
           "type": [
-            "h-card"
+            "h-entry"
           ],
           "properties": {
-            "name": [
-              "Chinese content"
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "logo": [
+                    "https://eindex.me/images/avatar.png"
+                  ],
+                  "photo": [
+                    "https://eindex.me/images/avatar.png"
+                  ],
+                  "nickname": [
+                    "EINDEX"
+                  ],
+                  "name": [
+                    "EINDEX"
+                  ],
+                  "url": [
+                    "https://eindex.me/"
+                  ],
+                  "note": [
+                    "My goal is make happy."
+                  ]
+                },
+                "value": "EINDEX"
+              }
             ],
-            "url": [
-              "https://eindex.me/cn/"
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-card"
-          ],
-          "properties": {
-            "name": [
-              "gallery"
+            "content": [
+              {
+                "html": "<p>This is my first memos, automatic public on my website. <code>#memos</code></p>",
+                "value": "This is my first memos, automatic public on my website. #memos"
+              }
             ],
-            "url": [
-              "https://eindex.me/gallery/"
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-card"
-          ],
-          "properties": {
-            "name": [
-              "wike site"
+            "summary": [
+              "This is my first memos, automatic public on my website. #memos"
             ],
-            "url": [
-              "https://wiki.eindex.me/"
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-card"
-          ],
-          "properties": {
-            "url": [
-              "https://twitter.com/eindex_li"
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-card"
-          ],
-          "properties": {
-            "url": [
-              "https://github.com/eindex"
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-card"
-          ],
-          "properties": {
-            "url": [
-              "https://t.me/eindex"
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-card"
-          ],
-          "properties": {
-            "url": [
-              "https://eindex.me/cdn-cgi/l/email-protection#e98c80878d8c91c7848ca9869c9d85868682c78a8684"
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-card"
-          ],
-          "properties": {
-            "url": [
-              "https://keybase.io/eindexli"
+            "published": [
+              "5 Dec, 2022"
             ]
           }
         },
@@ -124,6 +82,9 @@
                   ],
                   "url": [
                     "https://eindex.me/"
+                  ],
+                  "note": [
+                    "My goal is make happy."
                   ]
                 },
                 "value": "EINDEX"
@@ -168,6 +129,9 @@
                   ],
                   "url": [
                     "https://eindex.me/"
+                  ],
+                  "note": [
+                    "My goal is make happy."
                   ]
                 },
                 "value": "EINDEX"
@@ -212,6 +176,9 @@
                   ],
                   "url": [
                     "https://eindex.me/"
+                  ],
+                  "note": [
+                    "My goal is make happy."
                   ]
                 },
                 "value": "EINDEX"
@@ -239,10 +206,13 @@
       "https://eindex.me/feed.xml"
     ],
     "stylesheet": [
-      "https://eindex.me/css/index.css?h=64e3ebc7a0259534a9b1d2bad7fee2fbaeac6b90a92d110e8e75b40dfd8fce19"
+      "https://eindex.me/css/index.css?h=eaa229b7f71aaaaf4aa90c7f6087c589cc85e1ee3c3e4cc1c34d307e887dcf70"
     ],
     "webmention": [
-      "https://webmention.io/eindex.me/webmention"
+      "https://webmention.io/eindex.me/webmention",
+      "https://eindex.me/cn/",
+      "https://eindex.me/gallery/",
+      "https://eindex.me/content/changelog.md"
     ],
     "pingback": [
       "https://webmention.io/eindex.me/xmlrpc"
@@ -259,12 +229,13 @@
     ],
     "nofollow": [
       "https://wiki.eindex.me/",
-      "https://twitter.com/eindex_li",
-      "https://github.com/eindex",
       "https://t.me/eindex",
       "https://keybase.io/eindexli"
     ],
     "me": [
+      "https://twitter.com/eindex_li",
+      "https://github.com/eindex",
+      "https://eindex.me/cdn-cgi/l/email-protection#a4c1cdcac0c1dc8ac9c1e4cbd1d0c8cbcbcf8ac7cbc9",
       "https://github.com/EINDEX"
     ]
   },
@@ -276,7 +247,7 @@
       "title": "RSS",
       "type": "application/rss+xml"
     },
-    "https://eindex.me/css/index.css?h=64e3ebc7a0259534a9b1d2bad7fee2fbaeac6b90a92d110e8e75b40dfd8fce19": {
+    "https://eindex.me/css/index.css?h=eaa229b7f71aaaaf4aa90c7f6087c589cc85e1ee3c3e4cc1c34d307e887dcf70": {
       "rels": [
         "stylesheet"
       ]
@@ -307,6 +278,18 @@
         "manifest"
       ]
     },
+    "https://eindex.me/cn/": {
+      "rels": [
+        "webmention"
+      ],
+      "text": "Chinese content"
+    },
+    "https://eindex.me/gallery/": {
+      "rels": [
+        "webmention"
+      ],
+      "text": "gallery"
+    },
     "https://wiki.eindex.me/": {
       "rels": [
         "nofollow"
@@ -315,12 +298,12 @@
     },
     "https://twitter.com/eindex_li": {
       "rels": [
-        "nofollow"
+        "me"
       ]
     },
     "https://github.com/eindex": {
       "rels": [
-        "nofollow"
+        "me"
       ]
     },
     "https://t.me/eindex": {
@@ -328,10 +311,21 @@
         "nofollow"
       ]
     },
+    "https://eindex.me/cdn-cgi/l/email-protection#a4c1cdcac0c1dc8ac9c1e4cbd1d0c8cbcbcf8ac7cbc9": {
+      "rels": [
+        "me"
+      ]
+    },
     "https://keybase.io/eindexli": {
       "rels": [
         "nofollow"
       ]
+    },
+    "https://eindex.me/content/changelog.md": {
+      "rels": [
+        "webmention"
+      ],
+      "text": "Changelog"
     },
     "https://github.com/EINDEX": {
       "rels": [

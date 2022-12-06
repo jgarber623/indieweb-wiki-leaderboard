@@ -1,9 +1,112 @@
 {
-  "items": [],
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "name": [
+          "About"
+        ],
+        "url": [
+          "https://www.tnl.net/about/"
+        ]
+      },
+      "id": "menu-item-6920"
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "<span class=\"lt-line-clamp__line\">Smart, determined, focused on adding value, a good </span><span class=\"lt-line-clamp__line\">listener not afraid to challenge the status quo.</span>",
+            "value": "Smart, determined, focused on adding value, a good listener not afraid to challenge the status quo."
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "A unique ability to ask the right questions of industries to foster thoughtful progress",
+            "value": "A unique ability to ask the right questions of industries to foster thoughtful progress"
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "Tristan has the rare ability to articulate the future as though he is describing something in the here and now.",
+            "value": "Tristan has the rare ability to articulate the future as though he is describing something in the here and now."
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "An entrepreneur to his core as well as a business and team builder.",
+            "value": "An entrepreneur to his core as well as a business and team builder."
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "A leader of unequaled power in the digital media landscape.",
+            "value": "A leader of unequaled power in the digital media landscape."
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "A must read for anyone in our industry.",
+            "value": "A must read for anyone in our industry."
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "Tristan is one of the clearest thinkers of our time.",
+            "value": "Tristan is one of the clearest thinkers of our time."
+          }
+        ]
+      }
+    }
+  ],
   "rels": {
-    "amphtml": [
-      "https://tnl.net/amp/"
-    ],
     "dns-prefetch": [
       "https://use.fontawesome.com/",
       "https://i0.wp.com/",
@@ -28,6 +131,9 @@
       "https://tnl.net/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.6.4",
       "https://tnl.net/wp-content/plugins/vc-mailchimp/libs/jquery.growl/stylesheets/jquery.growl.css?ver=6.1.1",
       "https://tnl.net/wp-content/plugins/vc-mailchimp/assets/css/frontend.css?ver=6.1.1",
+      "https://tnl.net/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
+      "https://tnl.net/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3",
+      "https://tnl.net/wp-content/plugins/syndication-links/css/syn.min.css?ver=4.3.12",
       "https://use.fontawesome.com/releases/v6.2.1/css/all.css",
       "https://tnl.net/wp-content/themes/Impreza/css/style.min.css?ver=8.12",
       "https://tnl.net/wp-content/uploads/smile_fonts/Defaults/Defaults.css?ver=3.19.12",
@@ -52,12 +158,27 @@
     "shortlink": [
       "https://tnl.net/"
     ],
+    "authorization_endpoint": [
+      "https://tnl.net/wp-json/indieauth/1.0/auth"
+    ],
+    "token_endpoint": [
+      "https://tnl.net/wp-json/indieauth/1.0/token"
+    ],
     "icon": [
       "https://tnl.net/wp-content/uploads/2022/11/android-chrome-256x256-1-150x150.png",
       "https://tnl.net/wp-content/uploads/2022/11/android-chrome-256x256-1.png"
     ],
     "apple-touch-icon": [
       "https://tnl.net/wp-content/uploads/2022/11/android-chrome-256x256-1.png"
+    ],
+    "micropub_media": [
+      "https://tnl.net/wp-json/micropub/1.0/media"
+    ],
+    "micropub": [
+      "https://tnl.net/wp-json/micropub/1.0/endpoint"
+    ],
+    "me": [
+      "https://www.tnl.net/about/"
     ],
     "nofollow": [
       "https://www.linkedin.com/in/tristanlouis",
@@ -71,11 +192,6 @@
     ]
   },
   "rel-urls": {
-    "https://tnl.net/amp/": {
-      "rels": [
-        "amphtml"
-      ]
-    },
     "https://use.fontawesome.com/": {
       "rels": [
         "dns-prefetch"
@@ -164,6 +280,24 @@
       ],
       "media": "all"
     },
+    "https://tnl.net/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://tnl.net/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://tnl.net/wp-content/plugins/syndication-links/css/syn.min.css?ver=4.3.12": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
     "https://use.fontawesome.com/releases/v6.2.1/css/all.css": {
       "rels": [
         "stylesheet"
@@ -247,6 +381,16 @@
       ],
       "type": "text/xml+oembed"
     },
+    "https://tnl.net/wp-json/indieauth/1.0/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tnl.net/wp-json/indieauth/1.0/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
     "https://tnl.net/wp-content/uploads/2022/11/android-chrome-256x256-1-150x150.png": {
       "rels": [
         "icon"
@@ -256,6 +400,23 @@
       "rels": [
         "icon"
       ]
+    },
+    "https://tnl.net/wp-json/micropub/1.0/media": {
+      "rels": [
+        "micropub_media"
+      ]
+    },
+    "https://tnl.net/wp-json/micropub/1.0/endpoint": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://www.tnl.net/about/": {
+      "rels": [
+        "me"
+      ],
+      "title": "Tristan Louis",
+      "text": "About"
     },
     "https://www.linkedin.com/in/tristanlouis": {
       "rels": [

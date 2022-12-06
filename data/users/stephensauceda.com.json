@@ -11,6 +11,9 @@
         "job-title": [
           "/ Web Developer"
         ],
+        "note": [
+          "I'm a dad and husband. I like playing music and shooting little photos and videos. I'm also a developer\nbuilding\nthings\non the web.\nI can be found around the internet on Mastodon, Instagram and Github or in real life somewhere in South\nCarolina."
+        ],
         "url": [
           "https://mastodon.online/@stephensauceda",
           "https://instagram.com/stephensauceda/",
@@ -51,16 +54,18 @@
     "micropub": [
       "https://stephensauceda.com/micropub"
     ],
+    "me": [
+      "https://twitter.com/stephensauceda",
+      "mailto:contact@stephensauceda.com",
+      "https://mastodon.online/@stephensauceda",
+      "https://instagram.com/stephensauceda/",
+      "https://github.com/stephensauceda"
+    ],
     "alternate": [
       "https://stephensauceda.com/feed.xml"
     ],
     "stylesheet": [
       "https://stephensauceda.com/assets/css/main.css"
-    ],
-    "me": [
-      "https://mastodon.online/@stephensauceda",
-      "https://instagram.com/stephensauceda/",
-      "https://github.com/stephensauceda"
     ]
   },
   "rel-urls": {
@@ -114,6 +119,16 @@
     "https://stephensauceda.com/micropub": {
       "rels": [
         "micropub"
+      ]
+    },
+    "https://twitter.com/stephensauceda": {
+      "rels": [
+        "me"
+      ]
+    },
+    "mailto:contact@stephensauceda.com": {
+      "rels": [
+        "me"
       ]
     },
     "https://stephensauceda.com/feed.xml": {
