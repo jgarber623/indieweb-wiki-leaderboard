@@ -35,6 +35,63 @@
           "properties": {
             "content": [
               {
+                "html": "<p><abbr title=\"Today I learned\">TIL</abbr> that you can use <code>%q</code> instead of <code>%s</code> in Go’s <code>fmt.Printf</code> to safely escape an untrusted string.</p>",
+                "value": "TIL that you can use %q instead of %s in Go’s fmt.Printf to safely escape an untrusted string."
+              }
+            ],
+            "location": [
+              {
+                "type": [
+                  "h-adr"
+                ],
+                "properties": {
+                  "locality": [
+                    "Eindhoven"
+                  ],
+                  "region": [
+                    "North Brabant"
+                  ],
+                  "country": [
+                    "Netherlands"
+                  ]
+                },
+                "value": "Eindhoven, North Brabant, Netherlands"
+              }
+            ],
+            "published": [
+              "2022-12-06T22:43:41+01:00"
+            ],
+            "url": [
+              "https://hacdias.com/2022/12/06/22h43m41s16"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "url": [
+                    "https://hacdias.com/"
+                  ],
+                  "name": [
+                    "Henrique Dias"
+                  ],
+                  "photo": [
+                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
+                  ]
+                },
+                "value": "https://hacdias.com/"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
                 "html": "<p>Just met with some friends at some other friend’s house and it was very nice. On an unrelated note, I noticed that OVPay is now charging me immediately after the end of the trip and not the day after for the full payment. At least with Hermes 🚍. It makes sense since The Netherlands doesn’t have daily caps.</p>",
                 "value": "Just met with some friends at some other friend’s house and it was very nice. On an unrelated note, I noticed that OVPay is now charging me immediately after the end of the trip and not the day after for the full payment. At least with Hermes 🚍. It makes sense since The Netherlands doesn’t have daily caps."
               }
@@ -562,98 +619,6 @@
               }
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "in-reply-to": [
-              {
-                "type": [
-                  "h-cite"
-                ],
-                "properties": {
-                  "author": [
-                    {
-                      "type": [
-                        "h-card"
-                      ],
-                      "properties": {
-                        "name": [
-                          "Jan-Lukas Else"
-                        ]
-                      },
-                      "value": "https://hacdias.com/Jan-Lukas Else"
-                    }
-                  ],
-                  "url": [
-                    "https://jlelse.blog/links/2022/11/dump-twitter-card-tags"
-                  ],
-                  "content": [
-                    {
-                      "html": "It’s crazy to think how much bandwidth is being used by metadata tags. Every company wants to invent it’s own new system. Wouter Groeneveld gives a brief overview and recommends getting rid of them (for the most part). I agree with him completely. The only one of these systems that my blog supports…",
-                      "value": "It’s crazy to think how much bandwidth is being used by metadata tags. Every company wants to invent it’s own new system. Wouter Groeneveld gives a brief overview and recommends getting rid of them (for the most part). I agree with him completely. The only one of these systems that my blog supports…"
-                    }
-                  ],
-                  "name": [
-                    "It’s crazy to think how much bandwidth is being used by metadata tags. Every company wants to invent it’s own new system. Wouter Groeneveld gives a brief overview and recommends getting rid of them (for the most part). I agree with him completely. The only one of these systems that my blog supports…"
-                  ]
-                },
-                "value": "https://jlelse.blog/links/2022/11/dump-twitter-card-tags"
-              }
-            ],
-            "content": [
-              {
-                "html": "<p><a href=\"https://jlelse.blog/\" rel=\"noopener noreferrer\">@en@jlelse.blog</a> Thanks to this and Wouter’s post, I just reduced the amount of Open Graph meta tags on my website. I also decided to remove all the Twitter meta tags I was using. There is still some clutter on my website’s <code>&lt;head&gt;</code> element. I have to clean it up.</p>",
-                "value": "@en@jlelse.blog Thanks to this and Wouter’s post, I just reduced the amount of Open Graph meta tags on my website. I also decided to remove all the Twitter meta tags I was using. There is still some clutter on my website’s <head> element. I have to clean it up."
-              }
-            ],
-            "location": [
-              {
-                "type": [
-                  "h-adr"
-                ],
-                "properties": {
-                  "locality": [
-                    "Eindhoven"
-                  ],
-                  "region": [
-                    "North Brabant"
-                  ],
-                  "country": [
-                    "Netherlands"
-                  ]
-                },
-                "value": "Eindhoven, North Brabant, Netherlands"
-              }
-            ],
-            "published": [
-              "2022-11-28T10:34:54+01:00"
-            ],
-            "url": [
-              "https://hacdias.com/2022/11/28/10h34m54s87"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "url": [
-                    "https://hacdias.com/"
-                  ],
-                  "name": [
-                    "Henrique Dias"
-                  ],
-                  "photo": [
-                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
-                  ]
-                },
-                "value": "https://hacdias.com/"
-              }
-            ]
-          }
         }
       ]
     }
@@ -671,7 +636,7 @@
       "https://hacdias.com/.rss"
     ],
     "stylesheet": [
-      "https://hacdias.com/assets/4e99dcc05133c4fceac53a239686355f987347c7e606a49c105da0b74010ff7d.css"
+      "https://hacdias.com/assets/71d5148db6621027bb9a28fbc48dc5ee06344d90093f73f59e7b4337452a0ce7.css"
     ],
     "indieauth-metadata": [
       "https://hacdias.com/.well-known/oauth-authorization-server"
@@ -717,8 +682,6 @@
       "https://discuss.libp2p.io/t/call-for-participation-nat-hole-punching-measurement-campaign/1690",
       "https://en.wikipedia.org/wiki/Illegal_number",
       "https://shkspr.mobi/blog/2022/11/illegal-hashes/",
-      "https://jlelse.blog/links/2022/11/dump-twitter-card-tags",
-      "https://jlelse.blog/",
       "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/previous",
       "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/next"
     ],
@@ -727,8 +690,6 @@
       "https://discuss.libp2p.io/t/call-for-participation-nat-hole-punching-measurement-campaign/1690",
       "https://en.wikipedia.org/wiki/Illegal_number",
       "https://shkspr.mobi/blog/2022/11/illegal-hashes/",
-      "https://jlelse.blog/links/2022/11/dump-twitter-card-tags",
-      "https://jlelse.blog/",
       "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/previous",
       "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/next"
     ]
@@ -763,7 +724,7 @@
       ],
       "type": "application/rss+xml"
     },
-    "https://hacdias.com/assets/4e99dcc05133c4fceac53a239686355f987347c7e606a49c105da0b74010ff7d.css": {
+    "https://hacdias.com/assets/71d5148db6621027bb9a28fbc48dc5ee06344d90093f73f59e7b4337452a0ce7.css": {
       "rels": [
         "stylesheet"
       ]
@@ -880,20 +841,6 @@
         "noreferrer"
       ],
       "text": "illegal hashes"
-    },
-    "https://jlelse.blog/links/2022/11/dump-twitter-card-tags": {
-      "rels": [
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "27 Nov 2022"
-    },
-    "https://jlelse.blog/": {
-      "rels": [
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "@en@jlelse.blog"
     },
     "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/previous": {
       "rels": [

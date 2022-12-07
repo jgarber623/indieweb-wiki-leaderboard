@@ -1,5 +1,84 @@
 {
   "items": [],
-  "rels": {},
-  "rel-urls": {}
+  "rels": {
+    "webmention": [
+      "https://webmention.io/macwright.com/webmention"
+    ],
+    "pingback": [
+      "https://webmention.io/macwright.com/xmlrpc"
+    ],
+    "alternate": [
+      "https://macwright.com/rss.xml",
+      "https://macwright.com/atom.xml"
+    ],
+    "icon": [
+      "https://macwright.com/css/favicon.png"
+    ],
+    "me": [
+      "https://twitter.com/tmcw",
+      "https://mastodon.social/@tmcw",
+      "https://github.com/tmcw",
+      "mailto:tom@macwright.com"
+    ],
+    "canonical": [
+      "https://macwright.com/"
+    ]
+  },
+  "rel-urls": {
+    "https://webmention.io/macwright.com/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://webmention.io/macwright.com/xmlrpc": {
+      "rels": [
+        "pingback"
+      ]
+    },
+    "https://macwright.com/rss.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "macwright.com",
+      "type": "application/rss+xml"
+    },
+    "https://macwright.com/atom.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "macwright.com",
+      "type": "application/atom+xml"
+    },
+    "https://macwright.com/css/favicon.png": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/x-icon"
+    },
+    "https://twitter.com/tmcw": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://mastodon.social/@tmcw": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://github.com/tmcw": {
+      "rels": [
+        "me"
+      ]
+    },
+    "mailto:tom@macwright.com": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://macwright.com/": {
+      "rels": [
+        "canonical"
+      ]
+    }
+  }
 }

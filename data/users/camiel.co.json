@@ -1,28 +1,150 @@
 {
-  "items": [],
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "url": [
+          "https://camiel.co/about/"
+        ],
+        "photo": [
+          "https://micro.blog/camiel/avatar.jpg"
+        ],
+        "name": [
+          "Camiel Schoonens"
+        ],
+        "role": [
+          "Follow @camiel on Micro.blog."
+        ]
+      }
+    }
+  ],
   "rels": {
     "stylesheet": [
-      "https://www.antagonist.nl/static/css/bootstrap/bootstrap-4.3.1.min.css",
-      "https://fonts.googleapis.com/css?family=Kalam:400|Open+Sans:300,400,600,700&display=swap"
+      "https://camiel.co/assets/css/style.css?1670318909",
+      "https://camiel.co/assets/css/highlight.css?1670318909",
+      "https://camiel.co/custom.css?1670318909"
     ],
     "icon": [
-      "https://www.antagonist.nl/favicon.ico"
+      "https://micro.blog/camiel/favicon.png"
+    ],
+    "shortcut": [
+      "https://micro.blog/camiel/favicon.png"
+    ],
+    "alternate": [
+      "https://camiel.co/feed.xml",
+      "https://camiel.co/podcast.xml",
+      "https://camiel.co/feed.json"
+    ],
+    "EditURI": [
+      "https://camiel.co/rsd.xml"
+    ],
+    "me": [
+      "https://micro.blog/camiel"
+    ],
+    "authorization_endpoint": [
+      "https://micro.blog/indieauth/auth"
+    ],
+    "token_endpoint": [
+      "https://micro.blog/indieauth/token"
+    ],
+    "micropub": [
+      "https://micro.blog/micropub"
+    ],
+    "microsub": [
+      "https://micro.blog/microsub"
+    ],
+    "webmention": [
+      "https://micro.blog/webmention"
+    ],
+    "subscribe": [
+      "https://micro.blog/users/follow"
     ]
   },
   "rel-urls": {
-    "https://www.antagonist.nl/static/css/bootstrap/bootstrap-4.3.1.min.css": {
+    "https://camiel.co/assets/css/style.css?1670318909": {
       "rels": [
         "stylesheet"
       ]
     },
-    "https://fonts.googleapis.com/css?family=Kalam:400|Open+Sans:300,400,600,700&display=swap": {
+    "https://camiel.co/assets/css/highlight.css?1670318909": {
       "rels": [
         "stylesheet"
       ]
     },
-    "https://www.antagonist.nl/favicon.ico": {
+    "https://camiel.co/custom.css?1670318909": {
       "rels": [
-        "icon"
+        "stylesheet"
+      ]
+    },
+    "https://micro.blog/camiel/favicon.png": {
+      "rels": [
+        "icon",
+        "shortcut"
+      ],
+      "type": "image/x-icon"
+    },
+    "https://camiel.co/feed.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Camiel Schoonens",
+      "type": "application/rss+xml"
+    },
+    "https://camiel.co/podcast.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Podcast",
+      "type": "application/rss+xml"
+    },
+    "https://camiel.co/feed.json": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Camiel Schoonens",
+      "type": "application/json"
+    },
+    "https://camiel.co/rsd.xml": {
+      "rels": [
+        "EditURI"
+      ],
+      "type": "application/rsd+xml"
+    },
+    "https://micro.blog/camiel": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://micro.blog/indieauth/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://micro.blog/indieauth/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://micro.blog/micropub": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://micro.blog/microsub": {
+      "rels": [
+        "microsub"
+      ]
+    },
+    "https://micro.blog/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://micro.blog/users/follow": {
+      "rels": [
+        "subscribe"
       ]
     }
   }

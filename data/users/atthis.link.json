@@ -1,6 +1,13 @@
 {
   "items": [],
   "rels": {
+    "apple-touch-icon": [
+      "https://atthis.link/apple-touch-icon.png"
+    ],
+    "icon": [
+      "https://atthis.link/favicon-32x32.png",
+      "https://atthis.link/favicon-16x16.png"
+    ],
     "me": [
       "https://github.com/0066cc",
       "https://twitter.com/0066cc",
@@ -17,9 +24,6 @@
     "webmention": [
       "https://webmention.io/atthis.link/webmention"
     ],
-    "icon": [
-      "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⠵</text></svg>"
-    ],
     "canonical": [
       "https://atthis.link/index.html"
     ],
@@ -29,6 +33,23 @@
     ]
   },
   "rel-urls": {
+    "https://atthis.link/apple-touch-icon.png": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://atthis.link/favicon-32x32.png": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/png"
+    },
+    "https://atthis.link/favicon-16x16.png": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/png"
+    },
     "https://github.com/0066cc": {
       "rels": [
         "me"
@@ -69,11 +90,6 @@
     "https://webmention.io/atthis.link/webmention": {
       "rels": [
         "webmention"
-      ]
-    },
-    "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⠵</text></svg>": {
-      "rels": [
-        "icon"
       ]
     },
     "https://atthis.link/index.html": {

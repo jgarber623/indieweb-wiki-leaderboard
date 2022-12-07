@@ -1,5 +1,62 @@
 {
-  "items": [],
-  "rels": {},
-  "rel-urls": {}
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "name": [
+          "Josh Javier"
+        ],
+        "url": [
+          "https://github.com/joshjavier",
+          "https://twitter.com/joshjavierr",
+          "https://www.linkedin.com/in/joshjavier/"
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "me": [
+      "https://github.com/joshjavier",
+      "https://twitter.com/joshjavierr",
+      "https://www.linkedin.com/in/joshjavier/"
+    ]
+  },
+  "rel-urls": {
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://github.com/joshjavier": {
+      "rels": [
+        "me"
+      ],
+      "text": "GitHub"
+    },
+    "https://twitter.com/joshjavierr": {
+      "rels": [
+        "me"
+      ],
+      "text": "Twitter"
+    },
+    "https://www.linkedin.com/in/joshjavier/": {
+      "rels": [
+        "me"
+      ],
+      "text": "LinkedIn"
+    }
+  }
 }

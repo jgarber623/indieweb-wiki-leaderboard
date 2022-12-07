@@ -48,7 +48,17 @@
       "mailto:mail@jordanreger.com"
     ],
     "authn": [
-      "mailto:mail@jordanreger.com"
+      "mailto:mail@jordanreger.com",
+      "https://jordanreger.com/key"
+    ],
+    "pgpkey": [
+      "https://jordanreger.com/key"
+    ],
+    "webmention": [
+      "https://webmention.io/jordanreger.com/webmention"
+    ],
+    "pingback": [
+      "https://webmention.io/jordanreger.com/xmlrpc"
     ]
   },
   "rel-urls": {
@@ -72,7 +82,23 @@
         "authn",
         "me"
       ],
-      "text": "\n    \n      \n        ←\n        indieweb webring\n        →\n      \n      \n        CC BY-NC 4.0\n      \n    \n  "
+      "text": "\r\n\r\n\r\n\r\n\r\n\r\n\n    \n      \n        ←\n        indieweb webring\n        →\n      \n      \n        CC BY-NC 4.0\n      \n    \n  "
+    },
+    "https://jordanreger.com/key": {
+      "rels": [
+        "authn",
+        "pgpkey"
+      ]
+    },
+    "https://webmention.io/jordanreger.com/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://webmention.io/jordanreger.com/xmlrpc": {
+      "rels": [
+        "pingback"
+      ]
     }
   }
 }
