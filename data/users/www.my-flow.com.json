@@ -27,6 +27,9 @@
     }
   ],
   "rels": {
+    "canonical": [
+      "https://www.my-flow.com/"
+    ],
     "me": [
       "https://www.linkedin.com/in/florianjbreunig",
       "https://github.com/my-flow",
@@ -43,6 +46,11 @@
     ]
   },
   "rel-urls": {
+    "https://www.my-flow.com/": {
+      "rels": [
+        "canonical"
+      ]
+    },
     "https://www.linkedin.com/in/florianjbreunig": {
       "rels": [
         "me"
@@ -69,12 +77,6 @@
       "rels": [
         "stylesheet"
       ]
-    },
-    "https://www.my-flow.com/": {
-      "rels": [
-        "me"
-      ],
-      "text": "me"
     }
   }
 }
