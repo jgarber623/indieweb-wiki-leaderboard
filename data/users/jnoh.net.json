@@ -1,5 +1,91 @@
 {
-  "items": [],
-  "rels": {},
-  "rel-urls": {}
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "photo": [
+          {
+            "value": "https://jnoh.net/assets/2021-avatar-large.png",
+            "alt": "Me"
+          }
+        ],
+        "note": [
+          "https://jnoh.net/jnoh\n        is building tools for connection"
+        ],
+        "name": [
+          "jnoh"
+        ],
+        "url": [
+          "https://jnoh.net/",
+          "https://twitter.com/jnoh",
+          "https://instagram.com/jnoh",
+          "https://github.com/jnoh"
+        ],
+        "email": [
+          "mailto:j@jnoh.net"
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "stylesheet": [
+      "https://jnoh.net/assets/main.css"
+    ],
+    "icon": [
+      "https://jnoh.net/assets/favicon.ico"
+    ],
+    "shortcut": [
+      "https://jnoh.net/assets/favicon.ico"
+    ],
+    "me": [
+      "https://twitter.com/jnoh",
+      "https://github.com/jnoh",
+      "mailto:jeff@jnoh.net",
+      "https://instagram.com/jnoh",
+      "mailto:j@jnoh.net"
+    ]
+  },
+  "rel-urls": {
+    "https://jnoh.net/assets/main.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://jnoh.net/assets/favicon.ico": {
+      "rels": [
+        "icon",
+        "shortcut"
+      ]
+    },
+    "https://twitter.com/jnoh": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://github.com/jnoh": {
+      "rels": [
+        "me"
+      ]
+    },
+    "mailto:jeff@jnoh.net": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://instagram.com/jnoh": {
+      "rels": [
+        "me"
+      ],
+      "text": "instagram"
+    },
+    "mailto:j@jnoh.net": {
+      "rels": [
+        "me"
+      ],
+      "text": "j@jnoh.net"
+    }
+  }
 }

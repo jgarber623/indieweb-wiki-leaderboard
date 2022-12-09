@@ -1,5 +1,181 @@
 {
-  "items": [],
-  "rels": {},
-  "rel-urls": {}
+  "items": [
+    {
+      "type": [
+        "h-feed"
+      ],
+      "properties": {},
+      "children": [
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "url": [
+              "https://jarkad.net.eu.org/posts/hello-world/"
+            ],
+            "name": [
+              "2022-06-10 21:26:44 +0300 +0300 | Hello World"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "photo": [
+          {
+            "value": "https://jarkad.net.eu.org/avatar-128.webp",
+            "alt": "My avatar"
+          }
+        ],
+        "name": [
+          "Jarkad"
+        ],
+        "nickname": [
+          "Jarkad"
+        ],
+        "url": [
+          "https://github.com/jarkad/"
+        ],
+        "email": [
+          "mailto:jarkad@tuta.io"
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "self": [
+      "https://jarkad.net.eu.org/"
+    ],
+    "icon": [
+      "https://jarkad.net.eu.org/favicon.ico"
+    ],
+    "alternate": [
+      "https://jarkad.net.eu.org/index.xml"
+    ],
+    "webmention": [
+      "https://webmention.io/jarkad.net.eu.org/webmention"
+    ],
+    "pingback": [
+      "https://webmention.io/jarkad.net.eu.org/xmlrpc"
+    ],
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "microsub": [
+      "https://aperture.p3k.io/microsub/766"
+    ],
+    "openid.delegate": [
+      "https://jarkad.net.eu.org/"
+    ],
+    "openid.server": [
+      "https://openid.indieauth.com/openid"
+    ],
+    "hub": [
+      "https://pubsubhubbub.superfeedr.com/"
+    ],
+    "stylesheet": [
+      "https://jarkad.net.eu.org/style.css"
+    ],
+    "me": [
+      "https://github.com/jarkad/",
+      "mailto:jarkad@tuta.io"
+    ],
+    "license": [
+      "http://creativecommons.org/licenses/by-nc/4.0/"
+    ],
+    "noopener": [
+      "http://creativecommons.org/licenses/by-nc/4.0/"
+    ],
+    "noreferrer": [
+      "http://creativecommons.org/licenses/by-nc/4.0/"
+    ]
+  },
+  "rel-urls": {
+    "https://jarkad.net.eu.org/": {
+      "rels": [
+        "self"
+      ]
+    },
+    "https://jarkad.net.eu.org/favicon.ico": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/x-icon"
+    },
+    "https://jarkad.net.eu.org/index.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/rss+xml"
+    },
+    "https://webmention.io/jarkad.net.eu.org/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://webmention.io/jarkad.net.eu.org/xmlrpc": {
+      "rels": [
+        "pingback"
+      ]
+    },
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://aperture.p3k.io/microsub/766": {
+      "rels": [
+        "microsub"
+      ]
+    },
+    "https://openid.indieauth.com/openid": {
+      "rels": [
+        "openid.server"
+      ]
+    },
+    "https://pubsubhubbub.superfeedr.com/": {
+      "rels": [
+        "hub"
+      ]
+    },
+    "https://jarkad.net.eu.org/style.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://github.com/jarkad/": {
+      "rels": [
+        "me"
+      ],
+      "text": "GitHub"
+    },
+    "mailto:jarkad@tuta.io": {
+      "rels": [
+        "me"
+      ],
+      "text": "email"
+    },
+    "http://creativecommons.org/licenses/by-nc/4.0/": {
+      "rels": [
+        "license",
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "CC BY-NC 4.0"
+    }
+  }
 }

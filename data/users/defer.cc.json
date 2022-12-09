@@ -1,5 +1,344 @@
 {
-  "items": [],
-  "rels": {},
-  "rel-urls": {}
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "photo": [
+          {
+            "value": "https://defer.cc/favicon.jpg",
+            "alt": "me"
+          }
+        ],
+        "nickname": [
+          "mnlwldr"
+        ],
+        "note": [
+          "Thoughts about programming and other things I want to share"
+        ],
+        "email": [
+          "mailto:mnlwldr@gmail.com"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-feed"
+      ],
+      "properties": {},
+      "children": [
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "url": [
+              "https://defer.cc/somafm-2/"
+            ],
+            "uid": [
+              "https://defer.cc/somafm-2/"
+            ],
+            "published": [
+              "2022-11-01 15:52:00"
+            ],
+            "content": [
+              {
+                "html": "<p>Moved my somafm ‘player’ to bashrc</p>\n<div class=\"highlight\"><pre class=\"chroma\"><code class=\"language-sh\" data-lang=\"sh\">_somafm<span class=\"o\">()</span> <span class=\"o\">{</span> \n   mpv <span class=\"nv\">$1</span> 2&gt; /dev/null <span class=\"p\">|</span> awk <span class=\"s1\">'/title/ { s = \"\"; for (i = 2; i &lt;= NF; i++) s = s $i \" \"; cmd=\"(date +'</span>%H:%M:%S<span class=\"s1\">')\"; cmd | getline d; print d,\"|\",s; close(cmd) }'</span> \n<span class=\"o\">}</span>\n<span class=\"nb\">alias</span> <span class=\"nv\">groovesalad</span><span class=\"o\">=</span><span class=\"s1\">'_somafm \"http://ice.somafm.com/groovesalad-128-aac\"'</span>\n<span class=\"nb\">alias</span> <span class=\"nv\">defcon</span><span class=\"o\">=</span><span class=\"s1\">'_somafm \"http://ice.somafm.com/defcon-128-aac\"'</span>\n<span class=\"nb\">alias</span> <span class=\"nv\">deepspaceone</span><span class=\"o\">=</span><span class=\"s1\">'_somafm \"http://ice.somafm.com/deepspaceone-128-aac\"'</span>\n</code></pre></div>\n<p>Don’t forget to <a href=\"https://somafm.com/support/\">support</a></p>",
+                "value": "Moved my somafm ‘player’ to bashrc_somafm() { \n   mpv $1 2> /dev/null | awk '/title/ { s = \"\"; for (i = 2; i <= NF; i++) s = s $i \" \"; cmd=\"(date +'%H:%M:%S')\"; cmd | getline d; print d,\"|\",s; close(cmd) }' \n}\nalias groovesalad='_somafm \"http://ice.somafm.com/groovesalad-128-aac\"'\nalias defcon='_somafm \"http://ice.somafm.com/defcon-128-aac\"'\nalias deepspaceone='_somafm \"http://ice.somafm.com/deepspaceone-128-aac\"'\nDon’t forget to support"
+              }
+            ],
+            "name": [
+              "Moved my somafm ‘player’ to bashrc_somafm() { \n   mpv $1 2> /dev/null | awk '/title/ { s = \"\"; for (i = 2; i <= NF; i++) s = s $i \" \"; cmd=\"(date +'%H:%M:%S')\"; cmd | getline d; print d,\"|\",s; close(cmd) }' \n}\nalias groovesalad='_somafm \"http://ice.somafm.com/groovesalad-128-aac\"'\nalias defcon='_somafm \"http://ice.somafm.com/defcon-128-aac\"'\nalias deepspaceone='_somafm \"http://ice.somafm.com/deepspaceone-128-aac\"'\nDon’t forget to support"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "url": [
+              "https://defer.cc/somafm/"
+            ],
+            "uid": [
+              "https://defer.cc/somafm/"
+            ],
+            "published": [
+              "2022-10-18 06:52:00"
+            ],
+            "content": [
+              {
+                "html": "<p>Listen to <a href=\"https://somafm.com/\">somafm</a> from the command line.</p>\n<div class=\"highlight\"><pre class=\"chroma\"><code class=\"language-sh\" data-lang=\"sh\"><span class=\"cp\">#!/bin/sh\n</span><span class=\"cp\"></span>\n<span class=\"nv\">DEFCON</span><span class=\"o\">=</span><span class=\"s2\">\"http://ice1.somafm.com/defcon-128-aac\"</span>\n<span class=\"nv\">GROOVE</span><span class=\"o\">=</span><span class=\"s2\">\"http://ice1.somafm.com/groovesalad-128-aac\"</span>\n<span class=\"nv\">DEEP_SPACE_ONE</span><span class=\"o\">=</span><span class=\"s2\">\"http://ice1.somafm.com/deepspaceone-128-aac\"</span>\n<span class=\"nv\">COVERS</span><span class=\"o\">=</span><span class=\"s2\">\"http://ice1.somafm.com/covers-128-aac\"</span>\n\n<span class=\"k\">case</span> <span class=\"nv\">$1</span> in\n        <span class=\"s2\">\"defcon\"</span><span class=\"o\">)</span> <span class=\"nv\">URL</span><span class=\"o\">=</span><span class=\"nv\">$DEFCON</span> <span class=\"p\">;;</span>\n        <span class=\"s2\">\"groove\"</span><span class=\"o\">)</span> <span class=\"nv\">URL</span><span class=\"o\">=</span><span class=\"nv\">$GROOVE</span> <span class=\"p\">;;</span>\n        <span class=\"s2\">\"space\"</span><span class=\"o\">)</span> <span class=\"nv\">URL</span><span class=\"o\">=</span><span class=\"nv\">$DEEP_SPACE_ONE</span> <span class=\"p\">;;</span>\n        <span class=\"s2\">\"covers\"</span><span class=\"o\">)</span> <span class=\"nv\">URL</span><span class=\"o\">=</span><span class=\"nv\">$COVERS</span> <span class=\"p\">;;</span>\n<span class=\"k\">esac</span>\n\n<span class=\"nb\">echo</span> <span class=\"s2\">\"Listen to </span><span class=\"nv\">$URL</span><span class=\"s2\">\"</span>\nmpv <span class=\"nv\">$URL</span> 2&gt; /dev/null <span class=\"p\">|</span> awk <span class=\"s1\">'/title/ { s = \"\"; for (i = 2; i &lt;= NF; i++) s = s $i \" \"; cmd=\"(date +'</span>%H:%M:%S<span class=\"s1\">')\"; cmd | getline d; print d,\"|\",s; close(cmd) }'</span>\n</code></pre></div>\n<p>Don’t forget to <a href=\"https://somafm.com/support/\">support</a></p>",
+                "value": "Listen to somafm from the command line.#!/bin/sh\n\nDEFCON=\"http://ice1.somafm.com/defcon-128-aac\"\nGROOVE=\"http://ice1.somafm.com/groovesalad-128-aac\"\nDEEP_SPACE_ONE=\"http://ice1.somafm.com/deepspaceone-128-aac\"\nCOVERS=\"http://ice1.somafm.com/covers-128-aac\"\n\ncase $1 in\n        \"defcon\") URL=$DEFCON ;;\n        \"groove\") URL=$GROOVE ;;\n        \"space\") URL=$DEEP_SPACE_ONE ;;\n        \"covers\") URL=$COVERS ;;\nesac\n\necho \"Listen to $URL\"\nmpv $URL 2> /dev/null | awk '/title/ { s = \"\"; for (i = 2; i <= NF; i++) s = s $i \" \"; cmd=\"(date +'%H:%M:%S')\"; cmd | getline d; print d,\"|\",s; close(cmd) }'\nDon’t forget to support"
+              }
+            ],
+            "name": [
+              "Listen to somafm from the command line.#!/bin/sh\n\nDEFCON=\"http://ice1.somafm.com/defcon-128-aac\"\nGROOVE=\"http://ice1.somafm.com/groovesalad-128-aac\"\nDEEP_SPACE_ONE=\"http://ice1.somafm.com/deepspaceone-128-aac\"\nCOVERS=\"http://ice1.somafm.com/covers-128-aac\"\n\ncase $1 in\n        \"defcon\") URL=$DEFCON ;;\n        \"groove\") URL=$GROOVE ;;\n        \"space\") URL=$DEEP_SPACE_ONE ;;\n        \"covers\") URL=$COVERS ;;\nesac\n\necho \"Listen to $URL\"\nmpv $URL 2> /dev/null | awk '/title/ { s = \"\"; for (i = 2; i <= NF; i++) s = s $i \" \"; cmd=\"(date +'%H:%M:%S')\"; cmd | getline d; print d,\"|\",s; close(cmd) }'\nDon’t forget to support"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "url": [
+              "https://defer.cc/twitter-export/"
+            ],
+            "uid": [
+              "https://defer.cc/twitter-export/"
+            ],
+            "published": [
+              "2022-10-14 12:17:00"
+            ],
+            "content": [
+              {
+                "html": "<p>I published a Go application today to export the last tweets from your twitter timeline to your\nlocal hugo repository by using the Twitter API. You can find a copy of my tweets <a href=\"https://defer.cc/tweets/\">here</a>,\nmostly written in German.</p>\n<p><a href=\"https://github.com/mnlwldr/twitter2hugo-export\">twitter2hugo-export</a> on GitHub.</p>",
+                "value": "I published a Go application today to export the last tweets from your twitter timeline to your\nlocal hugo repository by using the Twitter API. You can find a copy of my tweets here,\nmostly written in German.twitter2hugo-export on GitHub."
+              }
+            ],
+            "name": [
+              "I published a Go application today to export the last tweets from your twitter timeline to your\nlocal hugo repository by using the Twitter API. You can find a copy of my tweets here,\nmostly written in German.twitter2hugo-export on GitHub."
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "url": [
+              "https://defer.cc/think-thats-okay/"
+            ],
+            "uid": [
+              "https://defer.cc/think-thats-okay/"
+            ],
+            "published": [
+              "2022-10-13 22:23:00"
+            ],
+            "content": [
+              {
+                "html": "<p><img src=\"https://defer.cc/Fd7fILZWAAYwgcG.jpeg\" alt=\"Bunny\"></p>",
+                "value": "Bunny"
+              }
+            ],
+            "name": [
+              "Bunny"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "url": [
+              "https://defer.cc/hugify/"
+            ],
+            "uid": [
+              "https://defer.cc/hugify/"
+            ],
+            "published": [
+              "2022-10-12 08:41:00"
+            ],
+            "content": [
+              {
+                "html": "<p>Thought about the Hugo -&gt; GitHub -&gt; Netlify stack and I think <strong>Hugify</strong> is a good name.</p>",
+                "value": "Thought about the Hugo -> GitHub -> Netlify stack and I think Hugify is a good name."
+              }
+            ],
+            "name": [
+              "Thought about the Hugo -> GitHub -> Netlify stack and I think Hugify is a good name."
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "url": [
+              "https://defer.cc/prepare-your-forkbomb-for-halloween/"
+            ],
+            "uid": [
+              "https://defer.cc/prepare-your-forkbomb-for-halloween/"
+            ],
+            "published": [
+              "2022-10-06 05:42:23"
+            ],
+            "content": [
+              {
+                "html": "<p>Found this tweet yesterday from <a href=\"https://twitter.com/ryancdotorg\">Ryan</a> and I did not know that either</p>\n<blockquote>\n<p>I am shocked to discover that this works in bash from at least version 4.4.x:</p>\n<p><code>🎃(){ 🎃|🎃&amp; };🎃</code></p>\n</blockquote>\n<p>Link to the original tweet <a href=\"https://twitter.com/ryancdotorg/status/1577729437785018368\">here</a></p>",
+                "value": "Found this tweet yesterday from Ryan and I did not know that eitherI am shocked to discover that this works in bash from at least version 4.4.x:🎃(){ 🎃|🎃& };🎃Link to the original tweet here"
+              }
+            ],
+            "name": [
+              "Found this tweet yesterday from Ryan and I did not know that eitherI am shocked to discover that this works in bash from at least version 4.4.x:🎃(){ 🎃|🎃& };🎃Link to the original tweet here"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "url": [
+              "https://defer.cc/as-if-nothing-happened/"
+            ],
+            "uid": [
+              "https://defer.cc/as-if-nothing-happened/"
+            ],
+            "published": [
+              "2022-10-05 20:00:21"
+            ],
+            "content": [
+              {
+                "html": "<blockquote><p>“As If Nothing Happened”: I Used Artificial Intelligence To See How Some Celebrities Would Look Today If They Were Alive</p></blockquote>\n<p><a href=\"https://www.boredpanda.com/ai-images-of-celebrities-as-if-nothing-happened-to-them-alper-yesiltas/\">Boredpanda</a></p>",
+                "value": "“As If Nothing Happened”: I Used Artificial Intelligence To See How Some Celebrities Would Look Today If They Were AliveBoredpanda"
+              }
+            ],
+            "name": [
+              "“As If Nothing Happened”: I Used Artificial Intelligence To See How Some Celebrities Would Look Today If They Were AliveBoredpanda"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "url": [
+              "https://defer.cc/paris-2/"
+            ],
+            "uid": [
+              "https://defer.cc/paris-2/"
+            ],
+            "published": [
+              "2022-10-01 13:22:10"
+            ],
+            "content": [
+              {
+                "html": "<p>Had a day trip to Paris today for a bit sightseeing. It’s around 5 years ago that I was here.</p>\n<p><img src=\"https://defer.cc/paris_2.jpg\" alt=\"Paris\"></p>",
+                "value": "Had a day trip to Paris today for a bit sightseeing. It’s around 5 years ago that I was here. Paris"
+              }
+            ],
+            "name": [
+              "Had a day trip to Paris today for a bit sightseeing. It’s around 5 years ago that I was here. Paris"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "url": [
+              "https://defer.cc/who-the-fuck-did-that/"
+            ],
+            "uid": [
+              "https://defer.cc/who-the-fuck-did-that/"
+            ],
+            "published": [
+              "2022-09-28 13:25:38"
+            ],
+            "content": [
+              {
+                "html": "<p><img src=\"https://defer.cc/FdvuPvCWAAAPiDN.jpg\" alt></p>",
+                "value": ""
+              }
+            ],
+            "name": [
+              ""
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "url": [
+              "https://defer.cc/mute-retweets-for-everyone/"
+            ],
+            "uid": [
+              "https://defer.cc/mute-retweets-for-everyone/"
+            ],
+            "published": [
+              "2022-09-26 00:00:00"
+            ],
+            "content": [
+              {
+                "html": "<p>Today I learned that <a href=\"https://twitter.com/\">Twitter</a> still uses the\noriginal retweet style format “RT @” in the background for native retweets too.</p>\n<p>So I muted “RT @” for everyone in my Home timeline and it looks like that it works.</p>\n<ul>\n<li>Go to your Twitter settings<ul><li><a href=\"https://twitter.com/settings/muted_keywords\">https://twitter.com/settings/muted_keywords</a></li></ul>\n</li>\n<li>Go to “Muted words”</li>\n<li>Add “+”</li>\n<li>Enter the phrase “RT @”</li>\n<li>Check “Home timeline”</li>\n<li>Check “Until you unmute the word”</li>\n<li>Click “Save”</li>\n</ul>",
+                "value": "Today I learned that Twitter still uses the\noriginal retweet style format “RT @” in the background for native retweets too.So I muted “RT @” for everyone in my Home timeline and it looks like that it works.Go to your Twitter settingshttps://twitter.com/settings/muted_keywordsGo to “Muted words”Add “+”Enter the phrase “RT @”Check “Home timeline”Check “Until you unmute the word”Click “Save”"
+              }
+            ],
+            "name": [
+              "Today I learned that Twitter still uses the\noriginal retweet style format “RT @” in the background for native retweets too.So I muted “RT @” for everyone in my Home timeline and it looks like that it works.Go to your Twitter settingshttps://twitter.com/settings/muted_keywordsGo to “Muted words”Add “+”Enter the phrase “RT @”Check “Home timeline”Check “Until you unmute the word”Click “Save”"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "rels": {
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "webmention": [
+      "https://webmention.io/defer.cc/webmention"
+    ],
+    "pingback": [
+      "https://webmention.io/defer.cc/xmlrpc"
+    ],
+    "me": [
+      "https://twitter.com/mnlwldr",
+      "https://github.com/mnlwldr",
+      "mailto:mnlwldr@gmail.com",
+      "https://defer.cc/"
+    ],
+    "canonical": [
+      "https://defer.cc/"
+    ],
+    "alternate": [
+      "https://defer.cc/"
+    ]
+  },
+  "rel-urls": {
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://webmention.io/defer.cc/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://webmention.io/defer.cc/xmlrpc": {
+      "rels": [
+        "pingback"
+      ]
+    },
+    "https://twitter.com/mnlwldr": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://github.com/mnlwldr": {
+      "rels": [
+        "me"
+      ]
+    },
+    "mailto:mnlwldr@gmail.com": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://defer.cc/": {
+      "rels": [
+        "canonical"
+      ]
+    }
+  }
 }

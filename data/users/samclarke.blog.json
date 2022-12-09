@@ -1,100 +1,124 @@
 {
-  "items": [],
+  "items": [
+    {
+      "type": [
+        "h-screen"
+      ],
+      "properties": {},
+      "children": [
+        {
+          "type": [
+            "h-full"
+          ],
+          "properties": {},
+          "children": [
+            {
+              "type": [
+                "h-full"
+              ],
+              "properties": {
+                "name": [
+                  "BlogAbout"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "rels": {
-    "preconnect": [
-      "https://fonts.googleapis.com/",
-      "https://fonts.gstatic.com/"
-    ],
-    "stylesheet": [
-      "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap",
-      "https://samclarke.blog/assets/css/style.css",
-      "https://samclarke.blog/assets/css/main.css",
-      "https://samclarke.blog/assets/css/Util.css",
-      "https://samclarke.blog/assets/css/vendor/Katex.css"
-    ],
     "canonical": [
-      "https://sam.clrk.space/"
+      "https://tailwind-nextjs-starter-blog.vercel.app/"
     ],
     "apple-touch-icon": [
-      "https://samclarke.blog/assets/img/profile.png"
+      "https://samclarke.blog/static/favicons/apple-touch-icon.png"
     ],
     "icon": [
-      "https://samclarke.blog/assets/img/favicon.png"
+      "https://samclarke.blog/static/favicons/favicon-32x32.png",
+      "https://samclarke.blog/static/favicons/favicon-16x16.png"
+    ],
+    "manifest": [
+      "https://samclarke.blog/static/favicons/site.webmanifest"
+    ],
+    "mask-icon": [
+      "https://samclarke.blog/static/favicons/safari-pinned-tab.svg"
     ],
     "alternate": [
-      "https://sam.clrk.space/feed.xml"
+      "https://samclarke.blog/feed.xml"
     ],
-    "me": [
+    "preload": [
+      "https://samclarke.blog/_next/static/css/522f3c595b7247b0.css"
+    ],
+    "stylesheet": [
+      "https://samclarke.blog/_next/static/css/522f3c595b7247b0.css"
+    ],
+    "noopener": [
+      "mailto:sam@clrk.space",
+      "https://clrk.space/@sam"
+    ],
+    "noreferrer": [
+      "mailto:sam@clrk.space",
       "https://clrk.space/@sam"
     ]
   },
   "rel-urls": {
-    "https://fonts.googleapis.com/": {
-      "rels": [
-        "preconnect"
-      ]
-    },
-    "https://fonts.gstatic.com/": {
-      "rels": [
-        "preconnect"
-      ]
-    },
-    "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap": {
-      "rels": [
-        "stylesheet"
-      ]
-    },
-    "https://sam.clrk.space/": {
+    "https://tailwind-nextjs-starter-blog.vercel.app/": {
       "rels": [
         "canonical"
       ]
     },
-    "https://samclarke.blog/assets/img/profile.png": {
+    "https://samclarke.blog/static/favicons/apple-touch-icon.png": {
       "rels": [
         "apple-touch-icon"
       ]
     },
-    "https://samclarke.blog/assets/img/favicon.png": {
+    "https://samclarke.blog/static/favicons/favicon-32x32.png": {
       "rels": [
         "icon"
       ],
       "type": "image/png"
     },
-    "https://samclarke.blog/assets/css/style.css": {
+    "https://samclarke.blog/static/favicons/favicon-16x16.png": {
       "rels": [
-        "stylesheet"
+        "icon"
       ],
-      "media": "all"
+      "type": "image/png"
     },
-    "https://samclarke.blog/assets/css/main.css": {
+    "https://samclarke.blog/static/favicons/site.webmanifest": {
       "rels": [
-        "stylesheet"
-      ],
-      "media": "all"
+        "manifest"
+      ]
     },
-    "https://samclarke.blog/assets/css/Util.css": {
+    "https://samclarke.blog/static/favicons/safari-pinned-tab.svg": {
       "rels": [
-        "stylesheet"
-      ],
-      "media": "all"
+        "mask-icon"
+      ]
     },
-    "https://samclarke.blog/assets/css/vendor/Katex.css": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "all"
-    },
-    "https://sam.clrk.space/feed.xml": {
+    "https://samclarke.blog/feed.xml": {
       "rels": [
         "alternate"
       ],
       "type": "application/rss+xml"
     },
+    "https://samclarke.blog/_next/static/css/522f3c595b7247b0.css": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "mailto:sam@clrk.space": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "mail"
+    },
     "https://clrk.space/@sam": {
       "rels": [
-        "me"
+        "noopener",
+        "noreferrer"
       ],
-      "text": "Mastodon"
+      "text": "mastodon"
     }
   }
 }

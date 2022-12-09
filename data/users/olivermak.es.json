@@ -1,5 +1,73 @@
 {
   "items": [],
-  "rels": {},
-  "rel-urls": {}
+  "rels": {
+    "icon": [
+      "https://oliverpattison.com/icons/icon-32.png",
+      "https://oliverpattison.com/icons/icon.svg"
+    ],
+    "apple-touch-icon": [
+      "https://oliverpattison.com/icons/apple-touch-icon.png"
+    ],
+    "manifest": [
+      "https://oliverpattison.com/manifest.webmanifest"
+    ],
+    "preload": [
+      "https://oliverpattison.com/fonts/IBMPlexSans-Regular-Latin1.woff2",
+      "https://oliverpattison.com/fonts/IBMPlexSans-Medium-Latin1.woff2",
+      "https://oliverpattison.com/fonts/IBMPlexSans-Light-Latin1.woff2"
+    ],
+    "preconnect": [
+      "https://oliverpattison.imgix.net/"
+    ],
+    "dns-prefetch": [
+      "https://oliverpattison.imgix.net/"
+    ]
+  },
+  "rel-urls": {
+    "https://oliverpattison.com/icons/icon-32.png": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/png"
+    },
+    "https://oliverpattison.com/icons/icon.svg": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/svg+xml"
+    },
+    "https://oliverpattison.com/icons/apple-touch-icon.png": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://oliverpattison.com/manifest.webmanifest": {
+      "rels": [
+        "manifest"
+      ]
+    },
+    "https://oliverpattison.com/fonts/IBMPlexSans-Regular-Latin1.woff2": {
+      "rels": [
+        "preload"
+      ],
+      "type": "font/woff2"
+    },
+    "https://oliverpattison.com/fonts/IBMPlexSans-Medium-Latin1.woff2": {
+      "rels": [
+        "preload"
+      ],
+      "type": "font/woff2"
+    },
+    "https://oliverpattison.com/fonts/IBMPlexSans-Light-Latin1.woff2": {
+      "rels": [
+        "preload"
+      ],
+      "type": "font/woff2"
+    },
+    "https://oliverpattison.imgix.net/": {
+      "rels": [
+        "preconnect"
+      ]
+    }
+  }
 }

@@ -37,6 +37,49 @@
           ],
           "properties": {
             "name": [
+              "Unit Testing Salesforce Bounced Email Addresses in Apex"
+            ],
+            "content": [
+              {
+                "html": "<p>Recently my team at work ran into a bug in an Apex class around trying to send email to a bounced email address. When going to write a unit test to confirm the behavior, we ran into a problem: the <code>Contact</code> object has a boolean <code>IsEmailBounced</code> field, but it has no setter. How can we simulate a bounced email in a unit test when we can't set the field?\r\n\r\n</p>\n<p><a href=\"https://trailhead.salesforce.com/trailblazer-community/feed/0D54S00000EA6drSAD\">We found the answer on the Trailblazer Community site.</a>\r\n\r\n</p>\n<p>Turns out <code>IsEmailBounced</code> is a computed field based on <code>EmailBouncedDate</code> and <code>EmailBouncedReason</code>. Setting those fields in the unit test allowed us to test and fix the bug.\r\n\r\n</p>\n<p><a href=\"https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_contact.htm\">Here's the documentation on the <code>Contact</code> object</a>, including the <code>IsEmailBounced</code>, <code>EmailBouncedDate</code>, and <code>EmailBouncedReason</code> fields.\n        \n    </p>",
+                "value": "Recently my team at work ran into a bug in an Apex class around trying to send email to a bounced email address. When going to write a unit test to confirm the behavior, we ran into a problem: the Contact object has a boolean IsEmailBounced field, but it has no setter. How can we simulate a bounced email in a unit test when we can't set the field?\r\n\r\nWe found the answer on the Trailblazer Community site.\r\n\r\nTurns out IsEmailBounced is a computed field based on EmailBouncedDate and EmailBouncedReason. Setting those fields in the unit test allowed us to test and fix the bug.\r\n\r\nHere's the documentation on the Contact object, including the IsEmailBounced, EmailBouncedDate, and EmailBouncedReason fields."
+              }
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "name": [
+                    "Brent Lineberry"
+                  ]
+                },
+                "value": "Brent Lineberry"
+              }
+            ],
+            "published": [
+              "2022-12-08T14:35:48.710418-05:00"
+            ],
+            "category": [
+              "Web Development",
+              "Salesforce",
+              "Apex"
+            ],
+            "url": [
+              "https://orangegnome.com/posts/2242/unit-testing-salesforce-bounced-email-address-in-apex"
+            ],
+            "syndication": [
+              "https://twitter.com/BrentLineberry/status/1600938456754098197"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               "Nov. 23, 2022, 2:49 p.m."
             ],
             "content": [
@@ -224,54 +267,6 @@
               "https://twitter.com/BrentLineberry/status/1592182297998102536"
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Oct. 27, 2022, 7:32 p.m."
-            ],
-            "in-reply-to": [
-              "https://twitter.com/naqiyfl/status/1585296300924235777"
-            ],
-            "content": [
-              {
-                "html": "Yes, but additionally transit should be free. It’s a public service: everyone benefits when anyone chooses transit instead of a car.",
-                "value": "Yes, but additionally transit should be free. It’s a public service: everyone benefits when anyone chooses transit instead of a car."
-              }
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "name": [
-                    "Brent Lineberry"
-                  ]
-                },
-                "value": "Brent Lineberry"
-              }
-            ],
-            "published": [
-              "2022-10-27T19:32:11.101568-04:00"
-            ],
-            "category": [
-              "Transportation",
-              "Atlanta",
-              "Urbanism",
-              "People-friendly Infrastructure",
-              "Transit"
-            ],
-            "url": [
-              "https://orangegnome.com/notes/2236"
-            ],
-            "syndication": [
-              "https://twitter.com/BrentLineberry/status/1585776404251267072"
-            ]
-          }
         }
       ]
     }
@@ -297,7 +292,15 @@
       "https://github.com/blineberry",
       "https://mastodon.online/@brentlineberry"
     ],
+    "category": [
+      "https://orangegnome.com/posts/category/13/web-development",
+      "https://orangegnome.com/posts/category/11/reviews",
+      "https://orangegnome.com/posts/category/10/life"
+    ],
     "tag": [
+      "https://orangegnome.com/posts/category/13/web-development",
+      "https://orangegnome.com/tag/491/salesforce",
+      "https://orangegnome.com/tag/492/apex",
       "https://orangegnome.com/tag/473/transportation",
       "https://orangegnome.com/tag/479/transit",
       "https://orangegnome.com/tag/490/trains",
@@ -318,10 +321,6 @@
       "https://orangegnome.com/tag/476/gdot",
       "https://orangegnome.com/tag/477/urbanism",
       "https://orangegnome.com/tag/478/people-friendly-infrastructure",
-      "https://orangegnome.com/posts/category/10/life"
-    ],
-    "category": [
-      "https://orangegnome.com/posts/category/11/reviews",
       "https://orangegnome.com/posts/category/10/life"
     ]
   },
@@ -370,6 +369,25 @@
         "me"
       ],
       "text": "Mastodon"
+    },
+    "https://orangegnome.com/posts/category/13/web-development": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Web Development"
+    },
+    "https://orangegnome.com/tag/491/salesforce": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Salesforce"
+    },
+    "https://orangegnome.com/tag/492/apex": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Apex"
     },
     "https://orangegnome.com/tag/473/transportation": {
       "rels": [

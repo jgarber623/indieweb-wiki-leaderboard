@@ -1,13 +1,11 @@
 {
   "items": [],
   "rels": {
-    "preload": [
-      "https://johnhame.link/subfont/Libre_Baskerville-400i-34370a0757.woff2",
-      "https://johnhame.link/subfont/Libre_Baskerville-700-b0e92dfd1d.woff2"
-    ],
     "stylesheet": [
-      "https://d33wubrfki0l68.cloudfront.net/bundles/ba314a2ed6e71c907d323c9138806c8b81fae1d8.css",
-      "https://d33wubrfki0l68.cloudfront.net/css/5519965d6a3082b2c3ffbf8e5c52d523b7fbd1d7/subfont/fallback-60e4bdcc86.css"
+      "https://johnhame.link/css/style.css",
+      "https://johnhame.link/css/fonts.css",
+      "https://johnhame.link/css/logo.css",
+      "https://johnhame.link/css/index.css"
     ],
     "icon": [
       "https://johnhame.link/images/favicon-32x32.png",
@@ -33,19 +31,22 @@
     ]
   },
   "rel-urls": {
-    "https://johnhame.link/subfont/Libre_Baskerville-400i-34370a0757.woff2": {
+    "https://johnhame.link/css/style.css": {
       "rels": [
-        "preload"
-      ],
-      "type": "font/woff2"
+        "stylesheet"
+      ]
     },
-    "https://johnhame.link/subfont/Libre_Baskerville-700-b0e92dfd1d.woff2": {
+    "https://johnhame.link/css/fonts.css": {
       "rels": [
-        "preload"
-      ],
-      "type": "font/woff2"
+        "stylesheet"
+      ]
     },
-    "https://d33wubrfki0l68.cloudfront.net/bundles/ba314a2ed6e71c907d323c9138806c8b81fae1d8.css": {
+    "https://johnhame.link/css/logo.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://johnhame.link/css/index.css": {
       "rels": [
         "stylesheet"
       ]
@@ -104,11 +105,6 @@
         "pgpkey"
       ],
       "text": "PGP Key"
-    },
-    "https://d33wubrfki0l68.cloudfront.net/css/5519965d6a3082b2c3ffbf8e5c52d523b7fbd1d7/subfont/fallback-60e4bdcc86.css": {
-      "rels": [
-        "stylesheet"
-      ]
     }
   }
 }

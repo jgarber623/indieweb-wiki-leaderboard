@@ -1,5 +1,25 @@
 {
   "items": [],
-  "rels": {},
-  "rel-urls": {}
+  "rels": {
+    "alternate": [
+      "https://www.joshcrompton.com/feeds/all.atom.xml"
+    ],
+    "stylesheet": [
+      "https://www.joshcrompton.com/theme/site.css"
+    ]
+  },
+  "rel-urls": {
+    "https://www.joshcrompton.com/feeds/all.atom.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Josh Crompton Full Atom Feed",
+      "type": "application/atom+xml"
+    },
+    "https://www.joshcrompton.com/theme/site.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    }
+  }
 }

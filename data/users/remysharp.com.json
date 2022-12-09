@@ -1,5 +1,236 @@
 {
   "items": [],
-  "rels": {},
-  "rel-urls": {}
+  "rels": {
+    "webmention": [
+      "https://webmention.io/remysharp.com/webmention"
+    ],
+    "pingback": [
+      "https://webmention.io/remysharp.com/xmlrpc"
+    ],
+    "canonical": [
+      "https://remysharp.com/"
+    ],
+    "search": [
+      "https://remysharp.com/opensearch.xml"
+    ],
+    "icon": [
+      "https://remysharp.com/images/avatar-favicon.png",
+      "https://remysharp.com/favicon.ico"
+    ],
+    "apple-touch-icon": [
+      "https://remysharp.com/images/avatar-favicon.png"
+    ],
+    "manifest": [
+      "https://remysharp.com/manifest.json"
+    ],
+    "shortcut": [
+      "https://remysharp.com/favicon.ico"
+    ],
+    "preconnect": [
+      "https://commento.io/",
+      "https://fonts.gstatic.com/"
+    ],
+    "preload": [
+      "https://fonts.gstatic.com/s/ubuntumono/v8/KFOjCneDtsqEr0keqCMhbCc6CsTYl4BO.woff2"
+    ],
+    "alternate": [
+      "https://remysharp.com/feed.xml",
+      "https://remysharp.com/blog.xml",
+      "https://remysharp.com/links.xml",
+      "https://remysharp.com/devlog.xml",
+      "https://remysharp.com/books.xml",
+      "https://www.youtube.com/feeds/videos.xml?playlist_id=PLXmT1r4krsTr8vT7enGZSsENjE2jyTsgW"
+    ],
+    "stylesheet": [
+      "https://remysharp.com/css/screen.css",
+      "https://remysharp.com/css/prism.css"
+    ],
+    "me": [
+      "https://leftlogic.com/",
+      "https://github.com/remy/",
+      "https://twitter.com/rem",
+      "https://front-end.social/@rem",
+      "https://remysharp.com/books",
+      "https://www.twitch.tv/remysharp",
+      "https://flickr.com/photos/remysharp",
+      "https://remysharp.com/speaking/",
+      "https://github.com/remy"
+    ],
+    "noopener": [
+      "https://github.com/remy",
+      "https://twitter.com/rem"
+    ]
+  },
+  "rel-urls": {
+    "https://webmention.io/remysharp.com/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://webmention.io/remysharp.com/xmlrpc": {
+      "rels": [
+        "pingback"
+      ]
+    },
+    "https://remysharp.com/": {
+      "rels": [
+        "canonical"
+      ]
+    },
+    "https://remysharp.com/opensearch.xml": {
+      "rels": [
+        "search"
+      ],
+      "title": "Remy Sharp's b:log",
+      "type": "application/opensearchdescription+xml"
+    },
+    "https://remysharp.com/images/avatar-favicon.png": {
+      "rels": [
+        "icon"
+      ]
+    },
+    "https://remysharp.com/manifest.json": {
+      "rels": [
+        "manifest"
+      ]
+    },
+    "https://remysharp.com/favicon.ico": {
+      "rels": [
+        "icon",
+        "shortcut"
+      ]
+    },
+    "https://commento.io/": {
+      "rels": [
+        "preconnect"
+      ]
+    },
+    "https://fonts.gstatic.com/": {
+      "rels": [
+        "preconnect"
+      ]
+    },
+    "https://fonts.gstatic.com/s/ubuntumono/v8/KFOjCneDtsqEr0keqCMhbCc6CsTYl4BO.woff2": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://remysharp.com/feed.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Remy Sharp's b:log",
+      "type": "application/rss+xml"
+    },
+    "https://remysharp.com/blog.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Remy Sharp's (just the) b:log",
+      "type": "application/rss+xml"
+    },
+    "https://remysharp.com/links.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Remy Sharp's l:inks",
+      "type": "application/rss+xml"
+    },
+    "https://remysharp.com/devlog.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Remy Sharp's d:evlog",
+      "type": "application/rss+xml"
+    },
+    "https://remysharp.com/books.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Remy Sharp's b:ooks",
+      "type": "application/rss+xml"
+    },
+    "https://www.youtube.com/feeds/videos.xml?playlist_id=PLXmT1r4krsTr8vT7enGZSsENjE2jyTsgW": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Remy Sharp's v:log",
+      "type": "application/rss+xml"
+    },
+    "https://remysharp.com/css/screen.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "preload"
+    },
+    "https://remysharp.com/css/prism.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "preload"
+    },
+    "https://leftlogic.com/": {
+      "rels": [
+        "me"
+      ],
+      "title": "my business: hire me",
+      "text": "Left Logic"
+    },
+    "https://github.com/remy/": {
+      "rels": [
+        "me"
+      ],
+      "title": "Fork me!",
+      "text": "@remy on Github"
+    },
+    "https://twitter.com/rem": {
+      "rels": [
+        "me"
+      ],
+      "title": "tweet, tweet",
+      "text": "@rem on Twitter"
+    },
+    "https://front-end.social/@rem": {
+      "rels": [
+        "me"
+      ],
+      "title": "toot, toot",
+      "text": "@rem on Mastodon"
+    },
+    "https://remysharp.com/books": {
+      "rels": [
+        "me"
+      ],
+      "title": "some for fun, some for geek",
+      "text": "Reading"
+    },
+    "https://www.twitch.tv/remysharp": {
+      "rels": [
+        "me"
+      ],
+      "title": "link goodness",
+      "text": "Streaming"
+    },
+    "https://flickr.com/photos/remysharp": {
+      "rels": [
+        "me"
+      ],
+      "title": "some for fun, some for geek",
+      "text": "Flickr"
+    },
+    "https://remysharp.com/speaking/": {
+      "rels": [
+        "me"
+      ],
+      "title": "my conf talks",
+      "text": "Speaking"
+    },
+    "https://github.com/remy": {
+      "rels": [
+        "me",
+        "noopener"
+      ],
+      "text": "On GitHub"
+    }
+  }
 }
