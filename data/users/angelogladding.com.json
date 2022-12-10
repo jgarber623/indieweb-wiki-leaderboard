@@ -15,7 +15,7 @@
           "2022-12-06T09:25:55.752165-08:00"
         ],
         "name": [
-          "Bookmarked https://www.justingarrison.com/blog/2022-12-06-mastodon-files-instance/\n2 days ago"
+          "Bookmarked https://www.justingarrison.com/blog/2022-12-06-mastodon-files-instance/\n3 days ago"
         ]
       }
     },
@@ -34,7 +34,7 @@
           "2022-12-02T12:12:13.479228-08:00"
         ],
         "name": [
-          "Bookmarked https://annas-blog.org/\n6 days ago"
+          "Bookmarked https://annas-blog.org/\n1 week ago"
         ]
       }
     },
@@ -53,7 +53,7 @@
           "2022-12-02T12:10:49.048230-08:00"
         ],
         "name": [
-          "Bookmarked https://www.saamfarahmand.com/\n6 days ago"
+          "Bookmarked https://www.saamfarahmand.com/\n1 week ago"
         ]
       }
     },
@@ -72,7 +72,7 @@
           "2022-12-02T11:39:25.855291-08:00"
         ],
         "name": [
-          "Bookmarked https://www.slynyrd.com/blog/2022/11/28/pixelblog-41-isometric-pixel-art\n6 days ago"
+          "Bookmarked https://www.slynyrd.com/blog/2022/11/28/pixelblog-41-isometric-pixel-art\n1 week ago"
         ]
       }
     },
@@ -167,7 +167,7 @@
           "2022-11-28T14:16:50.196452-08:00"
         ],
         "name": [
-          "About\n\n1 week ago"
+          "About\n\n2 weeks ago"
         ]
       }
     },
@@ -990,7 +990,8 @@
       "https://ragt.ag/manifest.json"
     ],
     "stylesheet": [
-      "https://ragt.ag/static/screen.css"
+      "https://ragt.ag/static/screen.css",
+      "https://vjs.zencdn.net/5.8.8/video-js.css"
     ],
     "authorization_endpoint": [
       "https://ragt.ag/auth"
@@ -1013,6 +1014,8 @@
     "me": [
       "https://ragt.ag/",
       "mailto:angelo@ragt.ag",
+      "http://hsp4hqyzeg2fnjw3ckw4itfz3355bwdqjbzj4xveqmzgo6ksinenjdid.onion/",
+      "https://ragt.ag/owner/key",
       "https://indieweb.rocks/ragt.ag"
     ],
     "license": [
@@ -1066,6 +1069,11 @@
         "micropub"
       ]
     },
+    "https://vjs.zencdn.net/5.8.8/video-js.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
     "https://ragt.ag/": {
       "rels": [
         "me"
@@ -1077,6 +1085,18 @@
         "me"
       ],
       "text": "angelo@ragt.ag"
+    },
+    "http://hsp4hqyzeg2fnjw3ckw4itfz3355bwdqjbzj4xveqmzgo6ksinenjdid.onion/": {
+      "rels": [
+        "me"
+      ],
+      "text": "hsp4hqyzeg"
+    },
+    "https://ragt.ag/owner/key": {
+      "rels": [
+        "me"
+      ],
+      "text": "07F2–717A"
     },
     "https://creativecommons.org/licenses/by-nc-sa/4.0/": {
       "rels": [

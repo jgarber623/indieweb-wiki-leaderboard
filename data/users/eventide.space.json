@@ -1,8 +1,44 @@
 {
-  "items": [],
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "photo": [
+          {
+            "value": "https://eventide.space/res/img/rei.gif",
+            "alt": "a pink haired fella"
+          }
+        ],
+        "note": [
+          "Hi! I'm Rei Eventide, but I go by a few names! (Rei, Avery, Rudy, Emil)\nI go by he/they pronouns and you can just refer to me as a boy™!"
+        ],
+        "name": [
+          "Rei Eventide"
+        ],
+        "url": [
+          "https://eventide.space/"
+        ],
+        "given-name": [
+          "Rei"
+        ],
+        "family-name": [
+          "Eventide"
+        ],
+        "gender-identity": [
+          "boy™"
+        ]
+      }
+    }
+  ],
   "rels": {
     "stylesheet": [
       "https://eventide.space/res/main.css"
+    ],
+    "me": [
+      "https://github.com/EVTRei",
+      "https://eventide.space/"
     ],
     "alternate": [
       "https://eventide.space/blog/rss.xml"
@@ -14,12 +50,23 @@
         "stylesheet"
       ]
     },
+    "https://github.com/EVTRei": {
+      "rels": [
+        "me"
+      ]
+    },
     "https://eventide.space/blog/rss.xml": {
       "rels": [
         "alternate"
       ],
       "title": "RSS Feed for eventide.space",
       "type": "application/rss+xml"
+    },
+    "https://eventide.space/": {
+      "rels": [
+        "me"
+      ],
+      "text": "Rei Eventide"
     }
   }
 }

@@ -219,13 +219,15 @@
     "author": [
       "https://kvibber.com/"
     ],
-    "apple-touch-icon": [
-      "https://kvibber.com/images/portrait.jpg"
-    ],
     "icon": [
+      "https://kvibber.com/favicon.png",
       "https://kvibber.com/images/portrait.jpg"
     ],
     "shortcut": [
+      "https://kvibber.com/favicon.png",
+      "https://kvibber.com/images/portrait.jpg"
+    ],
+    "apple-touch-icon": [
       "https://kvibber.com/images/portrait.jpg"
     ],
     "canonical": [
@@ -275,6 +277,13 @@
       "rels": [
         "author"
       ]
+    },
+    "https://kvibber.com/favicon.png": {
+      "rels": [
+        "icon",
+        "shortcut"
+      ],
+      "type": "image/png"
     },
     "https://kvibber.com/images/portrait.jpg": {
       "rels": [

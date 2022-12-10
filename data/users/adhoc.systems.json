@@ -670,18 +670,8 @@
       "https://adhoc.systems/static/css/scroll.css",
       "https://adhoc.systems/static/css/utils.css",
       "https://adhoc.systems/css/vars.css",
-      "https://adhoc.systems/css/app.css",
       "https://adhoc.systems/css/new.css",
       "https://adhoc.systems/css/print.css"
-    ],
-    "alternate": [
-      "https://adhoc.systems/css/app.css",
-      "https://adhoc.systems/feed.xml",
-      "https://adhoc.systems/notes/feed.xml",
-      "https://adhoc.systems/articles/feed.xml",
-      "https://adhoc.systems/boosts/feed.xml",
-      "https://adhoc.systems/likes/feed.xml",
-      "https://adhoc.systems/bookmarks/feed.xml"
     ],
     "manifest": [
       "https://adhoc.systems/manifest.json"
@@ -717,6 +707,14 @@
     "token_endpoint": [
       "https://tokens.indieauth.com/token"
     ],
+    "alternate": [
+      "https://adhoc.systems/feed.xml",
+      "https://adhoc.systems/notes/feed.xml",
+      "https://adhoc.systems/articles/feed.xml",
+      "https://adhoc.systems/boosts/feed.xml",
+      "https://adhoc.systems/likes/feed.xml",
+      "https://adhoc.systems/bookmarks/feed.xml"
+    ],
     "feed": [
       "https://adhoc.systems/",
       "https://adhoc.systems/notes",
@@ -751,13 +749,6 @@
       "rels": [
         "stylesheet"
       ]
-    },
-    "https://adhoc.systems/css/app.css": {
-      "rels": [
-        "alternate",
-        "stylesheet"
-      ],
-      "title": "Old Styles"
     },
     "https://adhoc.systems/css/new.css": {
       "rels": [

@@ -1,30 +1,30 @@
 {
   "items": [],
   "rels": {
-    "stylesheet": [
-      "https://andigalpern.com/wp-content/litespeed/css/5a43c0e868840d235ed208acc743256d.css?ver=8427e",
-      "https://c0.wp.com/c/6.1.1/wp-includes/css/dist/block-library/style.min.css",
-      "https://c0.wp.com/c/6.1.1/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css",
-      "https://c0.wp.com/c/6.1.1/wp-includes/js/mediaelement/wp-mediaelement.min.css",
-      "https://c0.wp.com/c/6.1.1/wp-includes/css/classic-themes.min.css",
-      "https://c0.wp.com/c/6.1.1/wp-includes/css/dashicons.min.css",
-      "https://c0.wp.com/p/jetpack/11.5.1/modules/theme-tools/compat/twentytwenty.css",
-      "https://c0.wp.com/p/jetpack/11.5.1/css/jetpack.css"
-    ],
     "profile": [
       "https://gmpg.org/xfn/11"
     ],
     "dns-prefetch": [
-      "http://andigalpern.com//www.googletagmanager.com",
-      "http://andigalpern.com//c0.wp.com",
-      "http://andigalpern.com//pagead2.googlesyndication.com"
+      "http://fonts.googleapis.com/"
     ],
     "alternate": [
-      "https://andigalpern.com/?feed=rss2",
-      "https://andigalpern.com/?feed=comments-rss2"
+      "https://andigalpern.com/feed/",
+      "https://andigalpern.com/comments/feed/"
+    ],
+    "stylesheet": [
+      "http://andigalpern.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1",
+      "http://andigalpern.com/wp-includes/css/classic-themes.min.css?ver=1",
+      "http://andigalpern.com/wp-includes/css/dashicons.min.css?ver=6.1.1",
+      "http://andigalpern.com/wp-content/plugins/post-views-counter/css/frontend.min.css?ver=1.3.12",
+      "http://fonts.googleapis.com/css?family=Muli%3A400%2C300italic%2C300&ver=6.1.1",
+      "http://fonts.googleapis.com/css?family=Poppins%3A400%2C500%2C600%2C700&ver=6.1.1",
+      "http://andigalpern.com/wp-content/themes/fairy/candidthemes/assets/framework/Font-Awesome/css/font-awesome.min.css?ver=1.3.7",
+      "http://andigalpern.com/wp-content/themes/fairy/candidthemes/assets/framework/slick/slick.css?ver=1.3.7",
+      "http://andigalpern.com/wp-content/themes/fairy/candidthemes/assets/framework/slick/slick-theme.css?ver=1.3.7",
+      "http://andigalpern.com/wp-content/themes/fairy/style.css?ver=1.3.7"
     ],
     "https://api.w.org/": [
-      "https://andigalpern.com/index.php?rest_route=/"
+      "https://andigalpern.com/wp-json/"
     ],
     "EditURI": [
       "http://andigalpern.com/xmlrpc.php?rsd"
@@ -32,93 +32,109 @@
     "wlwmanifest": [
       "http://andigalpern.com/wp-includes/wlwmanifest.xml"
     ],
+    "home": [
+      "https://andigalpern.com/"
+    ],
     "category": [
-      "https://andigalpern.com/?cat=2"
+      "https://andigalpern.com/category/uncategorized/"
+    ],
+    "tag": [
+      "https://andigalpern.com/category/uncategorized/"
+    ],
+    "bookmark": [
+      "https://andigalpern.com/2022/12/10/34/",
+      "https://andigalpern.com/2022/12/10/32/",
+      "https://andigalpern.com/2022/12/10/30/",
+      "https://andigalpern.com/2022/12/10/28/",
+      "https://andigalpern.com/2022/12/10/26/"
     ]
   },
   "rel-urls": {
-    "https://andigalpern.com/wp-content/litespeed/css/5a43c0e868840d235ed208acc743256d.css?ver=8427e": {
-      "rels": [
-        "stylesheet"
-      ]
-    },
     "https://gmpg.org/xfn/11": {
       "rels": [
         "profile"
       ]
     },
-    "http://andigalpern.com//www.googletagmanager.com": {
+    "http://fonts.googleapis.com/": {
       "rels": [
         "dns-prefetch"
       ]
     },
-    "http://andigalpern.com//c0.wp.com": {
-      "rels": [
-        "dns-prefetch"
-      ]
-    },
-    "http://andigalpern.com//pagead2.googlesyndication.com": {
-      "rels": [
-        "dns-prefetch"
-      ]
-    },
-    "https://andigalpern.com/?feed=rss2": {
+    "https://andigalpern.com/feed/": {
       "rels": [
         "alternate"
       ],
-      "title": "andigalpern » Feed",
+      "title": "» Feed",
       "type": "application/rss+xml"
     },
-    "https://andigalpern.com/?feed=comments-rss2": {
+    "https://andigalpern.com/comments/feed/": {
       "rels": [
         "alternate"
       ],
-      "title": "andigalpern » Comments Feed",
+      "title": "» Comments Feed",
       "type": "application/rss+xml"
     },
-    "https://c0.wp.com/c/6.1.1/wp-includes/css/dist/block-library/style.min.css": {
+    "http://andigalpern.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1": {
       "rels": [
         "stylesheet"
       ],
       "media": "all"
     },
-    "https://c0.wp.com/c/6.1.1/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css": {
+    "http://andigalpern.com/wp-includes/css/classic-themes.min.css?ver=1": {
       "rels": [
         "stylesheet"
       ],
       "media": "all"
     },
-    "https://c0.wp.com/c/6.1.1/wp-includes/js/mediaelement/wp-mediaelement.min.css": {
+    "http://andigalpern.com/wp-includes/css/dashicons.min.css?ver=6.1.1": {
       "rels": [
         "stylesheet"
       ],
       "media": "all"
     },
-    "https://c0.wp.com/c/6.1.1/wp-includes/css/classic-themes.min.css": {
+    "http://andigalpern.com/wp-content/plugins/post-views-counter/css/frontend.min.css?ver=1.3.12": {
       "rels": [
         "stylesheet"
       ],
       "media": "all"
     },
-    "https://c0.wp.com/c/6.1.1/wp-includes/css/dashicons.min.css": {
+    "http://fonts.googleapis.com/css?family=Muli%3A400%2C300italic%2C300&ver=6.1.1": {
       "rels": [
         "stylesheet"
       ],
       "media": "all"
     },
-    "https://c0.wp.com/p/jetpack/11.5.1/modules/theme-tools/compat/twentytwenty.css": {
+    "http://fonts.googleapis.com/css?family=Poppins%3A400%2C500%2C600%2C700&ver=6.1.1": {
       "rels": [
         "stylesheet"
       ],
       "media": "all"
     },
-    "https://c0.wp.com/p/jetpack/11.5.1/css/jetpack.css": {
+    "http://andigalpern.com/wp-content/themes/fairy/candidthemes/assets/framework/Font-Awesome/css/font-awesome.min.css?ver=1.3.7": {
       "rels": [
         "stylesheet"
       ],
       "media": "all"
     },
-    "https://andigalpern.com/index.php?rest_route=/": {
+    "http://andigalpern.com/wp-content/themes/fairy/candidthemes/assets/framework/slick/slick.css?ver=1.3.7": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "http://andigalpern.com/wp-content/themes/fairy/candidthemes/assets/framework/slick/slick-theme.css?ver=1.3.7": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "http://andigalpern.com/wp-content/themes/fairy/style.css?ver=1.3.7": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://andigalpern.com/wp-json/": {
       "rels": [
         "https://api.w.org/"
       ]
@@ -136,11 +152,47 @@
       ],
       "type": "application/wlwmanifest+xml"
     },
-    "https://andigalpern.com/?cat=2": {
+    "https://andigalpern.com/": {
       "rels": [
-        "category"
+        "home"
+      ]
+    },
+    "https://andigalpern.com/category/uncategorized/": {
+      "rels": [
+        "category",
+        "tag"
       ],
-      "text": "Cars"
+      "text": "Uncategorized"
+    },
+    "https://andigalpern.com/2022/12/10/34/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "andigalpern 138"
+    },
+    "https://andigalpern.com/2022/12/10/32/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "andigalpern 131"
+    },
+    "https://andigalpern.com/2022/12/10/30/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "andigalpern 2"
+    },
+    "https://andigalpern.com/2022/12/10/28/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "andigalpern1andigalpernandigalpern1andigalpernandigalpern1andigalpernandigalpern1andigalpernandigalpern1andigalpernandigalpern1andigalpernandigalpern1andigalpernandigalpern1andigalpern"
+    },
+    "https://andigalpern.com/2022/12/10/26/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "andigalpernandigalpernandigalpernandigalpernandigalpernandigalpernandigalpernandigalpern"
     }
   }
 }

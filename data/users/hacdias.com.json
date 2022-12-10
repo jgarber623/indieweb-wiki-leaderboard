@@ -33,6 +33,82 @@
             "h-entry"
           ],
           "properties": {
+            "bookmark-of": [
+              {
+                "type": [
+                  "h-cite"
+                ],
+                "properties": {
+                  "name": [
+                    "Playing with ActivityPub"
+                  ],
+                  "url": [
+                    "https://macwright.com/2022/12/09/activitypub.html"
+                  ]
+                },
+                "value": "https://macwright.com/2022/12/09/activitypub.html"
+              }
+            ],
+            "content": [
+              {
+                "html": "<p>Tom describes his experiences on implementing part of the ActivityPub specification on top of his Jekyll-based static website. It is indeed quite interesting to me to see how he achieved it, mostly through “serverless” lambdas and whatnot. He notices, very well, that ActivityPub can be quite messy and is very active when compared to other technologies, such as RSS.</p>\n<p>Similarly, most dynamic functionalities of my website could be implemented on top of a static website (as they once were). However, I’m not following that route now. Who knows if in the future I won’t switch back. An interesting&amp;mldr; continuous&amp;mldr; food for thought.</p>",
+                "value": "Tom describes his experiences on implementing part of the ActivityPub specification on top of his Jekyll-based static website. It is indeed quite interesting to me to see how he achieved it, mostly through “serverless” lambdas and whatnot. He notices, very well, that ActivityPub can be quite messy and is very active when compared to other technologies, such as RSS.Similarly, most dynamic functionalities of my website could be implemented on top of a static website (as they once were). However, I’m not following that route now. Who knows if in the future I won’t switch back. An interesting&mldr; continuous&mldr; food for thought."
+              }
+            ],
+            "location": [
+              {
+                "type": [
+                  "h-adr"
+                ],
+                "properties": {
+                  "locality": [
+                    "Eindhoven"
+                  ],
+                  "region": [
+                    "North Brabant"
+                  ],
+                  "country": [
+                    "Netherlands"
+                  ]
+                },
+                "value": "Eindhoven, North Brabant, Netherlands"
+              }
+            ],
+            "updated": [
+              "2022-12-09T22:25:49+01:00"
+            ],
+            "url": [
+              "https://hacdias.com/2022/12/09/22h25m18s79"
+            ],
+            "published": [
+              "2022-12-09T22:25:18+01:00"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "url": [
+                    "https://hacdias.com/"
+                  ],
+                  "name": [
+                    "Henrique Dias"
+                  ],
+                  "photo": [
+                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
+                  ]
+                },
+                "value": "https://hacdias.com/"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
             "content": [
               {
                 "html": "<p>I’ve been using Duolingo with Dutch since I moved here. I’ve noticed my comprehension skills have improved - albeit not as much as I wish but I also didn’t put the effort. I’m thinking of taking actual real classes soon. I think it’s important as I’m planning to stay here for the near future.</p>",
@@ -581,63 +657,6 @@
               }
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "content": [
-              {
-                "html": "<p>Folks at work recently released NAT hole punching in libp2p and are now trying to find people to try it out to collect some valuable data. Libp2p is a modular network stack for <abbr title=\"Peer-to-peer\">P2P</abbr> applications. NAT traversal and hole punching are quite important topics when it comes to building p2p applications, since it enables different machines behind NATs to talk to each other. If you care about p2p applications, please <a href=\"https://discuss.libp2p.io/t/call-for-participation-nat-hole-punching-measurement-campaign/1690\" rel=\"noopener noreferrer\">join the experiment</a>! There’s more details in the linked page about how it works and the data collected.</p>",
-                "value": "Folks at work recently released NAT hole punching in libp2p and are now trying to find people to try it out to collect some valuable data. Libp2p is a modular network stack for P2P applications. NAT traversal and hole punching are quite important topics when it comes to building p2p applications, since it enables different machines behind NATs to talk to each other. If you care about p2p applications, please join the experiment! There’s more details in the linked page about how it works and the data collected."
-              }
-            ],
-            "location": [
-              {
-                "type": [
-                  "h-adr"
-                ],
-                "properties": {
-                  "locality": [
-                    "Eindhoven"
-                  ],
-                  "region": [
-                    "North Brabant"
-                  ],
-                  "country": [
-                    "Netherlands"
-                  ]
-                },
-                "value": "Eindhoven, North Brabant, Netherlands"
-              }
-            ],
-            "published": [
-              "2022-12-01T11:44:44+01:00"
-            ],
-            "url": [
-              "https://hacdias.com/2022/12/01/11h44m44s38"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "url": [
-                    "https://hacdias.com/"
-                  ],
-                  "name": [
-                    "Henrique Dias"
-                  ],
-                  "photo": [
-                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
-                  ]
-                },
-                "value": "https://hacdias.com/"
-              }
-            ]
-          }
         }
       ]
     }
@@ -698,13 +717,11 @@
     ],
     "noopener": [
       "https://shkspr.mobi/blog/2022/12/the-ethics-of-syndicating-comments-using-webmentions/",
-      "https://discuss.libp2p.io/t/call-for-participation-nat-hole-punching-measurement-campaign/1690",
       "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/previous",
       "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/next"
     ],
     "noreferrer": [
       "https://shkspr.mobi/blog/2022/12/the-ethics-of-syndicating-comments-using-webmentions/",
-      "https://discuss.libp2p.io/t/call-for-participation-nat-hole-punching-measurement-campaign/1690",
       "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/previous",
       "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/next"
     ]
@@ -835,13 +852,6 @@
         "noreferrer"
       ],
       "text": "03 Dec 2022"
-    },
-    "https://discuss.libp2p.io/t/call-for-participation-nat-hole-punching-measurement-campaign/1690": {
-      "rels": [
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "join the experiment"
     },
     "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/previous": {
       "rels": [
