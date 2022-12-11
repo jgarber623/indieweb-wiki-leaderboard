@@ -28,8 +28,10 @@
     ],
     "alternate": [
       "https://www.brycewray.com/images/icons/favicon-32x32.png",
+      "https://www.brycewray.com/index.xml",
+      "https://www.brycewray.com/index-excerpts.xml",
       "https://www.brycewray.com/index.json",
-      "https://www.brycewray.com/index.xml"
+      "https://www.brycewray.com/index-excerpts.json"
     ],
     "mask-icon": [
       "https://www.brycewray.com/assets/svg/svgNavIcon_reduced_black.svg"
@@ -57,7 +59,7 @@
       "https://www.brycewray.com/assets/fonts/LibreFranklin-Italic-VariableFont_subset.woff2"
     ],
     "stylesheet": [
-      "https://www.brycewray.com/styles/index-99ab3274.css"
+      "https://www.brycewray.com/styles/index-e76e5521.css"
     ],
     "noopener": [
       "https://github.com/brycewray",
@@ -149,19 +151,33 @@
         "dns-prefetch"
       ]
     },
-    "https://www.brycewray.com/index.json": {
-      "rels": [
-        "alternate"
-      ],
-      "title": "BryceWray.com - JSON",
-      "type": "application/feed+json"
-    },
     "https://www.brycewray.com/index.xml": {
       "rels": [
         "alternate"
       ],
-      "title": "BryceWray.com - RSS",
+      "title": "BryceWray.com, full-text - RSS",
       "type": "application/rss+xml"
+    },
+    "https://www.brycewray.com/index-excerpts.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "BryceWray.com, excerpt-only - RSS",
+      "type": "application/rss+xml"
+    },
+    "https://www.brycewray.com/index.json": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "BryceWray.com, full-text - JSON",
+      "type": "application/feed+json"
+    },
+    "https://www.brycewray.com/index-excerpts.json": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "BryceWray.com, excerpt-only - JSON",
+      "type": "application/feed+json"
     },
     "https://www.brycewray.com/assets/fonts/LibreFranklin-Roman-VariableFont_subset.woff2": {
       "rels": [
@@ -175,7 +191,7 @@
       ],
       "type": "font/woff2"
     },
-    "https://www.brycewray.com/styles/index-99ab3274.css": {
+    "https://www.brycewray.com/styles/index-e76e5521.css": {
       "rels": [
         "stylesheet"
       ],

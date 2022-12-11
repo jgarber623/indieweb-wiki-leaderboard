@@ -53,7 +53,7 @@
       "https://jimlunsford.com/wp-includes/wlwmanifest.xml"
     ],
     "shortlink": [
-      "https://jiml.in/zm"
+      "https://jiml.in/zq"
     ],
     "authorization_endpoint": [
       "https://jimlunsford.com/wp-json/indieauth/1.0/auth"
@@ -77,19 +77,34 @@
       "https://jimlunsford.com/"
     ],
     "bookmark": [
+      "https://jimlunsford.com/blog/what-is-federation/",
+      "https://jimlunsford.com/blog/what-is-youtube/",
+      "https://jimlunsford.com/blog/what-is-google-docs/",
+      "https://jimlunsford.com/blog/what-is-linkedin/",
       "https://jimlunsford.com/blog/what-is-google-maps/",
       "https://jimlunsford.com/blog/what-is-gmail/",
       "https://jimlunsford.com/blog/what-is-pagerank/",
       "https://jimlunsford.com/blog/what-is-posterous/",
       "https://jimlunsford.com/blog/what-is-irc/",
-      "https://jimlunsford.com/blog/what-is-usenet/",
-      "https://jimlunsford.com/blog/what-is-tumblr/",
-      "https://jimlunsford.com/blog/what-is-instagram/",
-      "https://jimlunsford.com/blog/what-is-facebook/",
-      "https://jimlunsford.com/blog/what-is-mastodon/"
+      "https://jimlunsford.com/blog/what-is-usenet/"
+    ],
+    "category": [
+      "https://jimlunsford.com/category/blog/",
+      "https://jimlunsford.com/category/blog/technology/"
     ],
     "tag": [
+      "https://jimlunsford.com/category/blog/",
+      "https://jimlunsford.com/category/blog/technology/",
+      "https://jimlunsford.com/tag/federated/",
+      "https://jimlunsford.com/tag/federation/",
+      "https://jimlunsford.com/tag/network/",
+      "https://jimlunsford.com/tag/networks/",
       "https://jimlunsford.com/tag/google/",
+      "https://jimlunsford.com/tag/video/",
+      "https://jimlunsford.com/tag/youtube/",
+      "https://jimlunsford.com/tag/docs/",
+      "https://jimlunsford.com/tag/linkedin/",
+      "https://jimlunsford.com/tag/social-network/",
       "https://jimlunsford.com/tag/mapping/",
       "https://jimlunsford.com/tag/maps/",
       "https://jimlunsford.com/tag/email/",
@@ -99,19 +114,12 @@
       "https://jimlunsford.com/tag/search/",
       "https://jimlunsford.com/tag/microblog/",
       "https://jimlunsford.com/tag/microblogging/",
-      "https://jimlunsford.com/tag/network/",
       "https://jimlunsford.com/tag/posterous/",
       "https://jimlunsford.com/tag/social/",
-      "https://jimlunsford.com/tag/social-network/",
       "https://jimlunsford.com/tag/irc/",
       "https://jimlunsford.com/tag/messaging/",
       "https://jimlunsford.com/tag/decentralized/",
-      "https://jimlunsford.com/tag/usenet/",
-      "https://jimlunsford.com/tag/blogging/",
-      "https://jimlunsford.com/tag/tumblr/",
-      "https://jimlunsford.com/tag/instagram/",
-      "https://jimlunsford.com/tag/facebook/",
-      "https://jimlunsford.com/tag/mastodon/"
+      "https://jimlunsford.com/tag/usenet/"
     ]
   },
   "rel-urls": {
@@ -314,7 +322,7 @@
       ],
       "type": "application/wlwmanifest+xml"
     },
-    "https://jiml.in/zm": {
+    "https://jiml.in/zq": {
       "rels": [
         "shortlink"
       ]
@@ -360,17 +368,109 @@
       ],
       "text": "The Official Site of Jim Lunsford"
     },
-    "https://jimlunsford.com/blog/what-is-google-maps/": {
+    "https://jimlunsford.com/blog/what-is-federation/": {
       "rels": [
         "bookmark"
       ],
-      "text": "What is Google Maps?"
+      "text": "What is Federation?"
+    },
+    "https://jimlunsford.com/category/blog/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Blog"
+    },
+    "https://jimlunsford.com/category/blog/technology/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Technology"
+    },
+    "https://jimlunsford.com/tag/federated/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "federated"
+    },
+    "https://jimlunsford.com/tag/federation/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "federation"
+    },
+    "https://jimlunsford.com/tag/network/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "network"
+    },
+    "https://jimlunsford.com/tag/networks/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "networks"
+    },
+    "https://jimlunsford.com/blog/what-is-youtube/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "What is YouTube?"
     },
     "https://jimlunsford.com/tag/google/": {
       "rels": [
         "tag"
       ],
       "text": "google"
+    },
+    "https://jimlunsford.com/tag/video/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "video"
+    },
+    "https://jimlunsford.com/tag/youtube/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "youtube"
+    },
+    "https://jimlunsford.com/blog/what-is-google-docs/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "What is Google Docs?"
+    },
+    "https://jimlunsford.com/tag/docs/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "docs"
+    },
+    "https://jimlunsford.com/blog/what-is-linkedin/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "What is LinkedIn?"
+    },
+    "https://jimlunsford.com/tag/linkedin/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "linkedin"
+    },
+    "https://jimlunsford.com/tag/social-network/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "social network"
+    },
+    "https://jimlunsford.com/blog/what-is-google-maps/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "What is Google Maps?"
     },
     "https://jimlunsford.com/tag/mapping/": {
       "rels": [
@@ -444,12 +544,6 @@
       ],
       "text": "microblogging"
     },
-    "https://jimlunsford.com/tag/network/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "network"
-    },
     "https://jimlunsford.com/tag/posterous/": {
       "rels": [
         "tag"
@@ -461,12 +555,6 @@
         "tag"
       ],
       "text": "social"
-    },
-    "https://jimlunsford.com/tag/social-network/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "social network"
     },
     "https://jimlunsford.com/blog/what-is-irc/": {
       "rels": [
@@ -503,60 +591,6 @@
         "tag"
       ],
       "text": "usenet"
-    },
-    "https://jimlunsford.com/blog/what-is-tumblr/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "What is Tumblr?"
-    },
-    "https://jimlunsford.com/tag/blogging/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "blogging"
-    },
-    "https://jimlunsford.com/tag/tumblr/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "tumblr"
-    },
-    "https://jimlunsford.com/blog/what-is-instagram/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "What is Instagram?"
-    },
-    "https://jimlunsford.com/tag/instagram/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "instagram"
-    },
-    "https://jimlunsford.com/blog/what-is-facebook/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "What is Facebook?"
-    },
-    "https://jimlunsford.com/tag/facebook/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "facebook"
-    },
-    "https://jimlunsford.com/blog/what-is-mastodon/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "What is Mastodon?"
-    },
-    "https://jimlunsford.com/tag/mastodon/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "mastodon"
     }
   }
 }

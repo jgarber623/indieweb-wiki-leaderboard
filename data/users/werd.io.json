@@ -73,6 +73,55 @@
               }
             ],
             "bookmark-of": [
+              "https://macwright.com/2022/12/09/activitypub.html"
+            ],
+            "name": [
+              "Playing with ActivityPub"
+            ],
+            "content": [
+              {
+                "html": "<p>“What I built isn’t an ActivityPub system as much as a Mastodon-compatible one. I think this is the key contradiction of the ActivityPub system: it’s a specification broad enough to encompass many different services, but ends up being too general to be useful by itself.” Interesting - I’m not far enough along in my own journey to see if I agree. But it sounds like there’s scope for a lot more standardization here. <a href=\"https://werd.io/tag/Coding\" class=\"p-category\" rel=\"tag\">#Coding</a></p>",
+                "value": "“What I built isn’t an ActivityPub system as much as a Mastodon-compatible one. I think this is the key contradiction of the ActivityPub system: it’s a specification broad enough to encompass many different services, but ends up being too general to be useful by itself.” Interesting - I’m not far enough along in my own journey to see if I agree. But it sounds like there’s scope for a lot more standardization here. #Coding"
+              }
+            ],
+            "category": [
+              "#Coding"
+            ],
+            "url": [
+              "https://werd.io/2022/playing-with-activitypub"
+            ],
+            "published": [
+              "2022-12-10T20:38:34+00:00"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "url": [
+                    "https://werd.io/profile/benwerd",
+                    "https://werd.io/profile/benwerd",
+                    "https://werd.io/profile/benwerd"
+                  ],
+                  "photo": [
+                    "https://werd.io/file/5d388c5fb16ea14aac640912/thumb.jpg"
+                  ],
+                  "name": [
+                    "Ben Werdmuller"
+                  ]
+                },
+                "value": "Ben Werdmuller"
+              }
+            ],
+            "bookmark-of": [
               "https://www.axios.com/2022/12/09/bankman-fried-funded-crypto-news-site-block"
             ],
             "name": [
@@ -1185,55 +1234,6 @@
               "2022-12-05T17:14:50+00:00"
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "url": [
-                    "https://werd.io/profile/benwerd",
-                    "https://werd.io/profile/benwerd",
-                    "https://werd.io/profile/benwerd"
-                  ],
-                  "photo": [
-                    "https://werd.io/file/5d388c5fb16ea14aac640912/thumb.jpg"
-                  ],
-                  "name": [
-                    "Ben Werdmuller"
-                  ]
-                },
-                "value": "Ben Werdmuller"
-              }
-            ],
-            "bookmark-of": [
-              "https://simonwillison.net/2022/Dec/4/give-me-ideas-for-crimes-to-do/"
-            ],
-            "name": [
-              "A new AI game: Give me ideas for crimes to do"
-            ],
-            "content": [
-              {
-                "html": "<p>“OpenAI have put a lot of effort into preventing the model from doing bad things. […] Your challenge now is to convince it to give you a detailed list of ideas for crimes.” <a href=\"https://werd.io/tag/AI\" class=\"p-category\" rel=\"tag\">#AI</a></p>",
-                "value": "“OpenAI have put a lot of effort into preventing the model from doing bad things. […] Your challenge now is to convince it to give you a detailed list of ideas for crimes.” #AI"
-              }
-            ],
-            "category": [
-              "#AI"
-            ],
-            "url": [
-              "https://werd.io/2022/a-new-ai-game-give-me-ideas-for-crimes-to"
-            ],
-            "published": [
-              "2022-12-04T16:42:59+00:00"
-            ]
-          }
         }
       ]
     }
@@ -1315,6 +1315,7 @@
       "https://werd.io/micropub/endpoint"
     ],
     "tag": [
+      "https://werd.io/tag/Coding",
       "https://werd.io/tag/Crypto",
       "https://werd.io/tag/Labor",
       "https://werd.io/tag/Technology",
@@ -1328,6 +1329,7 @@
       "https://werd.io/tag/Culture"
     ],
     "permalink": [
+      "https://werd.io/2022/playing-with-activitypub",
       "https://werd.io/2022/exclusive-sbf-secretly-funded-crypto-news-site-the-block-and",
       "https://werd.io/2022/picket-line-notifier",
       "https://werd.io/2022/abusive-instagram-tiktok-hashtags-target-women-in-politics-study",
@@ -1351,8 +1353,7 @@
       "https://werd.io/2022/a-full-two-thirds-of-incoming-phone-calls",
       "https://werd.io/2022/linked-lack-of-trust-in-journalism-and-knowledge-of-news",
       "https://werd.io/2022/heres-how-states-plan-to-limit-abortion-even-where-it",
-      "https://werd.io/2022/should-we-name-our-beliefs-in-public",
-      "https://werd.io/2022/a-new-ai-game-give-me-ideas-for-crimes-to"
+      "https://werd.io/2022/should-we-name-our-beliefs-in-public"
     ],
     "next": [
       "https://werd.io/?offset=0"
@@ -1533,6 +1534,18 @@
       "rels": [
         "stylesheet"
       ]
+    },
+    "https://werd.io/tag/Coding": {
+      "rels": [
+        "tag"
+      ],
+      "text": "#Coding"
+    },
+    "https://werd.io/2022/playing-with-activitypub": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "\nDecember 10, 2022\n"
     },
     "https://werd.io/tag/Crypto": {
       "rels": [
@@ -1743,12 +1756,6 @@
         "permalink"
       ],
       "text": "\nDecember 5, 2022\n"
-    },
-    "https://werd.io/2022/a-new-ai-game-give-me-ideas-for-crimes-to": {
-      "rels": [
-        "permalink"
-      ],
-      "text": "\nDecember 4, 2022\n"
     },
     "https://werd.io/?offset=0": {
       "rels": [

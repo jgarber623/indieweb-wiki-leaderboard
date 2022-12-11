@@ -1,5 +1,23 @@
 {
   "items": [],
-  "rels": {},
-  "rel-urls": {}
+  "rels": {
+    "preconnect": [
+      "https://www.google.com/"
+    ],
+    "dns-prefetch": [
+      "https://parking.bodiscdn.com/"
+    ]
+  },
+  "rel-urls": {
+    "https://www.google.com/": {
+      "rels": [
+        "preconnect"
+      ]
+    },
+    "https://parking.bodiscdn.com/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    }
+  }
 }

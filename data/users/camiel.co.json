@@ -1,30 +1,11 @@
 {
-  "items": [
-    {
-      "type": [
-        "h-card"
-      ],
-      "properties": {
-        "url": [
-          "https://camiel.co/about/"
-        ],
-        "photo": [
-          "https://micro.blog/camiel/avatar.jpg"
-        ],
-        "name": [
-          "Camiel Fotografeert (en schrijft soms)"
-        ],
-        "role": [
-          "Follow @camiel on Micro.blog."
-        ]
-      }
-    }
-  ],
+  "items": [],
   "rels": {
     "stylesheet": [
-      "https://camiel.co/assets/css/style.css?1670441345",
-      "https://camiel.co/assets/css/highlight.css?1670441345",
-      "https://camiel.co/custom.css?1670441345",
+      "https://camiel.co/assets/css/style.css?1670697291",
+      "https://camiel.co/assets/css/highlight.css?1670697291",
+      "https://camiel.co/assets/css/alpine.css?1670697291",
+      "https://camiel.co/custom.css?1670697291",
       "https://camiel.co/css/photos-grid.css"
     ],
     "icon": [
@@ -42,7 +23,8 @@
       "https://camiel.co/rsd.xml"
     ],
     "me": [
-      "https://micro.blog/camiel"
+      "https://micro.blog/camiel",
+      "https://mastodon.nl/@camiel"
     ],
     "authorization_endpoint": [
       "https://micro.blog/indieauth/auth"
@@ -64,17 +46,22 @@
     ]
   },
   "rel-urls": {
-    "https://camiel.co/assets/css/style.css?1670441345": {
+    "https://camiel.co/assets/css/style.css?1670697291": {
       "rels": [
         "stylesheet"
       ]
     },
-    "https://camiel.co/assets/css/highlight.css?1670441345": {
+    "https://camiel.co/assets/css/highlight.css?1670697291": {
       "rels": [
         "stylesheet"
       ]
     },
-    "https://camiel.co/custom.css?1670441345": {
+    "https://camiel.co/assets/css/alpine.css?1670697291": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://camiel.co/custom.css?1670697291": {
       "rels": [
         "stylesheet"
       ]
@@ -90,7 +77,7 @@
       "rels": [
         "alternate"
       ],
-      "title": "Camiel Fotografeert (en schrijft soms)",
+      "title": "Camiel bookmarked, fotografeert en schrijft (soms)",
       "type": "application/rss+xml"
     },
     "https://camiel.co/podcast.xml": {
@@ -104,7 +91,7 @@
       "rels": [
         "alternate"
       ],
-      "title": "Camiel Fotografeert (en schrijft soms)",
+      "title": "Camiel bookmarked, fotografeert en schrijft (soms)",
       "type": "application/json"
     },
     "https://camiel.co/rsd.xml": {
@@ -152,6 +139,12 @@
       "rels": [
         "stylesheet"
       ]
+    },
+    "https://mastodon.nl/@camiel": {
+      "rels": [
+        "me"
+      ],
+      "text": "Follow me on Mastodon"
     }
   }
 }
