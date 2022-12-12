@@ -40,6 +40,98 @@
         "h-entry"
       ],
       "properties": {
+        "content": [
+          {
+            "html": "<p>Going to San Francisco. brb</p>",
+            "value": "Going to San Francisco. brb"
+          }
+        ],
+        "name": [
+          "Going to San Francisco. brb"
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "32.73146066"
+              ],
+              "longitude": [
+                "-117.20264278"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/notes/19740"
+        ],
+        "published": [
+          "2022-12-11T20:04:41Z"
+        ],
+        "syndication": [
+          "https://mastodon.social/@adactio/109496833289321667"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://www.flickr.com/photos/nasa2explore/albums/72177720303788800\">\nArtemis I | Flickr\n</a>\n</h3>\n\n<p>NASA is posting some lovely pictures on Flickr from the first Artemis mission.</p>\n\n<a data-flickr-embed=\"true\" href=\"https://www.flickr.com/photos/nasa2explore/albums/72177720303788800\" title=\"Artemis I by NASA Johnson, on Flickr\"><img src=\"https://live.staticflickr.com/65535/52547180935_00681d31ec_b.jpg\" width=\"800\" height=\"600\" alt=\"Flight Day 20: Orion and Our Moon\"></a><script async src=\"https://embedr.flickr.com/assets/client-code.js\" charset=\"utf-8\"></script>",
+            "value": "Artemis I | Flickr\n\n\n\nNASA is posting some lovely pictures on Flickr from the first Artemis mission.\n\n Flight Day 20: Orion and Our Moon"
+          }
+        ],
+        "name": [
+          "Artemis I | Flickr"
+        ],
+        "bookmark-of": [
+          "https://www.flickr.com/photos/nasa2explore/albums/72177720303788800"
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "32.95696017"
+              ],
+              "longitude": [
+                "-117.24932505"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/links/19739"
+        ],
+        "published": [
+          "2022-12-11T15:50:51Z"
+        ],
+        "category": [
+          "flickr",
+          "photos",
+          "nasa",
+          "space",
+          "artemis",
+          "moon",
+          "mission",
+          "pictures"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
         "photo": [
           {
             "value": "https://adactio.com/images/uploaded/19738/small.jpg",
@@ -944,118 +1036,6 @@
     },
     {
       "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "content": [
-          {
-            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://github.com/dbohdan/classless-css\">\ndbohdan/classless-css: A list of classless CSS themes/frameworks with screenshots\n</a>\n</h3>\n\n<p>A collection of stylesheets that don’t use class selectors. Think of them as alternatives to default user-agent stylesheets.</p>",
-            "value": "dbohdan/classless-css: A list of classless CSS themes/frameworks with screenshots\n\n\n\nA collection of stylesheets that don’t use class selectors. Think of them as alternatives to default user-agent stylesheets."
-          }
-        ],
-        "name": [
-          "dbohdan/classless-css: A list of classless CSS themes/frameworks with screenshots"
-        ],
-        "bookmark-of": [
-          "https://github.com/dbohdan/classless-css"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83248899"
-              ],
-              "longitude": [
-                "-0.11814618"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/links/19716"
-        ],
-        "published": [
-          "2022-12-04T14:55:46Z"
-        ],
-        "category": [
-          "css",
-          "classless",
-          "stylesheets",
-          "styles",
-          "selectors",
-          "boilerplate",
-          "defaults",
-          "frontend",
-          "development",
-          "styling"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "name": [
-          "Tweaking navigation labelling"
-        ],
-        "url": [
-          "https://adactio.com/journal/19715"
-        ],
-        "content": [
-          {
-            "html": "<p>I’ve always liked the idea that your website can be your API. Like, you’ve already got URLs to identify resources, so why not make that URL structure predictable and those resources parsable?</p>\n\n<p>That’s why <a href=\"https://thesession.org/api\">the (read-only) API for The Session</a> doesn’t live at a separate subdomain. It uses the same URL structure as the regular site, but you can request the resources in an alternative format: JSON, XML, RSS.</p>\n\n<p>This works out pretty well, mostly because I put a lot of thought into the URL structure of the site. I’m something of a URL fetishist, but I think that taking a URL-first approach to information architecture can be a good exercise.</p>\n\n<p>Most of the resources on The Session involve nouns like tunes, events, discussions, and so on. There’s a consistent and predictable structure to the URLs for those sections:</p>\n\n<ul>\n<li><code>/things</code></li>\n<li><code>/things/new</code></li>\n<li><code>/things/search</code></li>\n</ul>\n\n<p>And then an idividual item can be found at:</p>\n\n<ul>\n<li><code>things/ID</code></li>\n</ul>\n\n<p>That’s all nice and predictable and the naming of the URLs matches what you’d expect to find:</p>\n\n<ul>\n<li><a href=\"https://thesession.org/tunes\"><code>tunes</code></a></li>\n<li><a href=\"https://thesession.org/tunes/new\"><code>tunes/new</code></a></li>\n<li><a href=\"https://thesession.org/tunes/search?q=Ireland\"><code>tunes/search?q=Ireland</code></a></li>\n<li><a href=\"https://thesession.org/tunes/320\"><code>tunes/320</code></a></li>\n</ul>\n\n<p>Tunes, events, discussions, sessions. Those are all fine. But there’s one section of the site that has this root URL:</p>\n\n<p><a href=\"https://thesession.org/recordings\"><code>/recordings</code></a></p>\n\n<p>When I was coming up with the URL structure twenty years ago, it was clear what you’d find there: track listings for albums of music. No one would’ve expected to find <em>actual</em> recordings of music available to listen to on-demand. The bandwidth constraints and technical limitations of the time made that clear.</p>\n\n<p>Two decades on, the situation has changed. Now someone new to the site might well expect to hit a link called “recordings” and expect to hear actual recordings of music.</p>\n\n<p>So I should probably change the label on the link. I don’t think “albums” is quite right—what even is an album any more? The word “discography” is probably the most appropriate label.</p>\n\n<p>Here’s my dilemma: if I update the <em>label</em>, should I also update the URL structure?</p>\n\n<p>Right now, the section of the site with <code>/tunes</code> URLs is labelled “tunes”. The section of the site with <code>/events</code> URLs is labelled “events”. Currently the section of the site with <code>/recordings</code> URLs is labelled “recordings”, but may soon be labelled “discography”.</p>\n\n<p>If you click on “tunes”, you end up at <code>/tunes</code>. But if you click on “discography”, you end up at <code>/recordings</code>.</p>\n\n<p>Is that okay? Am I the only one that would be bothered by that?</p>\n\n<p>I could update the URLs to match the labelling (with redirects for the old URLs, of course), but I’m not so keen on this URL structure:</p>\n\n<ul>\n<li><code>/discography</code></li>\n<li><code>/discography/new</code></li>\n<li><code>/discography/search</code></li>\n<li><code>/discography/ID</code></li>\n</ul>\n\n<p>It doesn’t seem as tidy as:</p>\n\n<ul>\n<li><code>/recordings</code></li>\n<li><code>/recordings/new</code></li>\n<li><code>/recordings/search</code></li>\n<li><code>/recordings/ID</code></li>\n</ul>\n\n<p>But if I don’t update the URLs to match the label, then I’m just going to have to live with the mismatch.</p>\n\n<p>I’m just thinking out loud here. I think I should definitely update the label. I just won’t make any decision on changing URLs for a while yet.</p>",
-            "value": "I’ve always liked the idea that your website can be your API. Like, you’ve already got URLs to identify resources, so why not make that URL structure predictable and those resources parsable?\n\nThat’s why the (read-only) API for The Session doesn’t live at a separate subdomain. It uses the same URL structure as the regular site, but you can request the resources in an alternative format: JSON, XML, RSS.\n\nThis works out pretty well, mostly because I put a lot of thought into the URL structure of the site. I’m something of a URL fetishist, but I think that taking a URL-first approach to information architecture can be a good exercise.\n\nMost of the resources on The Session involve nouns like tunes, events, discussions, and so on. There’s a consistent and predictable structure to the URLs for those sections:\n\n\n/things\n/things/new\n/things/search\n\n\nAnd then an idividual item can be found at:\n\n\nthings/ID\n\n\nThat’s all nice and predictable and the naming of the URLs matches what you’d expect to find:\n\n\ntunes\ntunes/new\ntunes/search?q=Ireland\ntunes/320\n\n\nTunes, events, discussions, sessions. Those are all fine. But there’s one section of the site that has this root URL:\n\n/recordings\n\nWhen I was coming up with the URL structure twenty years ago, it was clear what you’d find there: track listings for albums of music. No one would’ve expected to find actual recordings of music available to listen to on-demand. The bandwidth constraints and technical limitations of the time made that clear.\n\nTwo decades on, the situation has changed. Now someone new to the site might well expect to hit a link called “recordings” and expect to hear actual recordings of music.\n\nSo I should probably change the label on the link. I don’t think “albums” is quite right—what even is an album any more? The word “discography” is probably the most appropriate label.\n\nHere’s my dilemma: if I update the label, should I also update the URL structure?\n\nRight now, the section of the site with /tunes URLs is labelled “tunes”. The section of the site with /events URLs is labelled “events”. Currently the section of the site with /recordings URLs is labelled “recordings”, but may soon be labelled “discography”.\n\nIf you click on “tunes”, you end up at /tunes. But if you click on “discography”, you end up at /recordings.\n\nIs that okay? Am I the only one that would be bothered by that?\n\nI could update the URLs to match the labelling (with redirects for the old URLs, of course), but I’m not so keen on this URL structure:\n\n\n/discography\n/discography/new\n/discography/search\n/discography/ID\n\n\nIt doesn’t seem as tidy as:\n\n\n/recordings\n/recordings/new\n/recordings/search\n/recordings/ID\n\n\nBut if I don’t update the URLs to match the label, then I’m just going to have to live with the mismatch.\n\nI’m just thinking out loud here. I think I should definitely update the label. I just won’t make any decision on changing URLs for a while yet."
-          }
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83252902"
-              ],
-              "longitude": [
-                "-0.11815946"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "published": [
-          "2022-12-04T11:20:31Z"
-        ],
-        "category": [
-          "thesession",
-          "navigation",
-          "urls",
-          "labels",
-          "labelling",
-          "api",
-          "structure",
-          "rest",
-          "information",
-          "architecture",
-          "ia",
-          "interface",
-          "ui",
-          "links",
-          "names",
-          "naming"
-        ],
-        "syndication": [
-          "https://adactio.medium.com/aa7a04754b39"
-        ]
-      }
-    },
-    {
-      "type": [
         "h-card"
       ],
       "properties": {
@@ -1795,6 +1775,8 @@
       "https://adactio.com/includes/css/print.css"
     ],
     "bookmark": [
+      "https://adactio.com/notes/19740",
+      "https://adactio.com/links/19739",
       "https://adactio.com/notes/19738",
       "https://adactio.com/notes/19737",
       "https://adactio.com/links/19736",
@@ -1812,11 +1794,10 @@
       "https://adactio.com/journal/19720",
       "https://adactio.com/notes/19719",
       "https://adactio.com/notes/19718",
-      "https://adactio.com/notes/19717",
-      "https://adactio.com/links/19716",
-      "https://adactio.com/journal/19715"
+      "https://adactio.com/notes/19717"
     ],
     "syndication": [
+      "https://mastodon.social/@adactio/109496833289321667",
       "https://mastodon.social/@adactio/109487884582177483",
       "https://www.instagram.com/p/Cl-hHWlOOok/",
       "https://mastodon.social/@adactio/109486229625005168",
@@ -1831,10 +1812,17 @@
       "https://adactio.medium.com/d7a9a82a17c5",
       "https://mastodon.social/@adactio/109461958001578263",
       "https://mastodon.social/@adactio/109460640551438744",
-      "https://www.swarmapp.com/user/112073/checkin/638cc799d88dc8485cf52f8f",
-      "https://adactio.medium.com/aa7a04754b39"
+      "https://www.swarmapp.com/user/112073/checkin/638cc799d88dc8485cf52f8f"
     ],
     "tag": [
+      "https://adactio.com/tags/flickr",
+      "https://adactio.com/tags/photos",
+      "https://adactio.com/tags/nasa",
+      "https://adactio.com/tags/space",
+      "https://adactio.com/tags/artemis",
+      "https://adactio.com/tags/moon",
+      "https://adactio.com/tags/mission",
+      "https://adactio.com/tags/pictures",
       "https://adactio.com/tags/writing",
       "https://adactio.com/tags/content",
       "https://adactio.com/tags/editing",
@@ -1876,33 +1864,7 @@
       "https://adactio.com/tags/saltercane",
       "https://adactio.com/tags/love",
       "https://adactio.com/tags/friendship",
-      "https://adactio.com/tags/grief",
-      "https://adactio.com/tags/css",
-      "https://adactio.com/tags/classless",
-      "https://adactio.com/tags/stylesheets",
-      "https://adactio.com/tags/styles",
-      "https://adactio.com/tags/selectors",
-      "https://adactio.com/tags/boilerplate",
-      "https://adactio.com/tags/defaults",
-      "https://adactio.com/tags/frontend",
-      "https://adactio.com/tags/development",
-      "https://adactio.com/tags/styling",
-      "https://adactio.com/tags/thesession",
-      "https://adactio.com/tags/navigation",
-      "https://adactio.com/tags/urls",
-      "https://adactio.com/tags/labels",
-      "https://adactio.com/tags/labelling",
-      "https://adactio.com/tags/api",
-      "https://adactio.com/tags/structure",
-      "https://adactio.com/tags/rest",
-      "https://adactio.com/tags/information",
-      "https://adactio.com/tags/architecture",
-      "https://adactio.com/tags/ia",
-      "https://adactio.com/tags/interface",
-      "https://adactio.com/tags/ui",
-      "https://adactio.com/tags/links",
-      "https://adactio.com/tags/names",
-      "https://adactio.com/tags/naming"
+      "https://adactio.com/tags/grief"
     ],
     "next": [
       "https://adactio.com/?start=20"
@@ -2292,6 +2254,72 @@
         "me"
       ],
       "text": "music"
+    },
+    "https://adactio.com/notes/19740": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n8:04pm\n\n"
+    },
+    "https://mastodon.social/@adactio/109496833289321667": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "Mastodon"
+    },
+    "https://adactio.com/links/19739": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n3:50pm\n\n"
+    },
+    "https://adactio.com/tags/flickr": {
+      "rels": [
+        "tag"
+      ],
+      "text": "flickr"
+    },
+    "https://adactio.com/tags/photos": {
+      "rels": [
+        "tag"
+      ],
+      "text": "photos"
+    },
+    "https://adactio.com/tags/nasa": {
+      "rels": [
+        "tag"
+      ],
+      "text": "nasa"
+    },
+    "https://adactio.com/tags/space": {
+      "rels": [
+        "tag"
+      ],
+      "text": "space"
+    },
+    "https://adactio.com/tags/artemis": {
+      "rels": [
+        "tag"
+      ],
+      "text": "artemis"
+    },
+    "https://adactio.com/tags/moon": {
+      "rels": [
+        "tag"
+      ],
+      "text": "moon"
+    },
+    "https://adactio.com/tags/mission": {
+      "rels": [
+        "tag"
+      ],
+      "text": "mission"
+    },
+    "https://adactio.com/tags/pictures": {
+      "rels": [
+        "tag"
+      ],
+      "text": "pictures"
     },
     "https://adactio.com/notes/19738": {
       "rels": [
@@ -2742,180 +2770,6 @@
         "syndication"
       ],
       "text": "Swarm"
-    },
-    "https://adactio.com/links/19716": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n2:55pm\n\n"
-    },
-    "https://adactio.com/tags/css": {
-      "rels": [
-        "tag"
-      ],
-      "text": "css"
-    },
-    "https://adactio.com/tags/classless": {
-      "rels": [
-        "tag"
-      ],
-      "text": "classless"
-    },
-    "https://adactio.com/tags/stylesheets": {
-      "rels": [
-        "tag"
-      ],
-      "text": "stylesheets"
-    },
-    "https://adactio.com/tags/styles": {
-      "rels": [
-        "tag"
-      ],
-      "text": "styles"
-    },
-    "https://adactio.com/tags/selectors": {
-      "rels": [
-        "tag"
-      ],
-      "text": "selectors"
-    },
-    "https://adactio.com/tags/boilerplate": {
-      "rels": [
-        "tag"
-      ],
-      "text": "boilerplate"
-    },
-    "https://adactio.com/tags/defaults": {
-      "rels": [
-        "tag"
-      ],
-      "text": "defaults"
-    },
-    "https://adactio.com/tags/frontend": {
-      "rels": [
-        "tag"
-      ],
-      "text": "frontend"
-    },
-    "https://adactio.com/tags/development": {
-      "rels": [
-        "tag"
-      ],
-      "text": "development"
-    },
-    "https://adactio.com/tags/styling": {
-      "rels": [
-        "tag"
-      ],
-      "text": "styling"
-    },
-    "https://adactio.com/journal/19715": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n11:20am\n\n"
-    },
-    "https://adactio.com/tags/thesession": {
-      "rels": [
-        "tag"
-      ],
-      "text": "thesession"
-    },
-    "https://adactio.com/tags/navigation": {
-      "rels": [
-        "tag"
-      ],
-      "text": "navigation"
-    },
-    "https://adactio.com/tags/urls": {
-      "rels": [
-        "tag"
-      ],
-      "text": "urls"
-    },
-    "https://adactio.com/tags/labels": {
-      "rels": [
-        "tag"
-      ],
-      "text": "labels"
-    },
-    "https://adactio.com/tags/labelling": {
-      "rels": [
-        "tag"
-      ],
-      "text": "labelling"
-    },
-    "https://adactio.com/tags/api": {
-      "rels": [
-        "tag"
-      ],
-      "text": "api"
-    },
-    "https://adactio.com/tags/structure": {
-      "rels": [
-        "tag"
-      ],
-      "text": "structure"
-    },
-    "https://adactio.com/tags/rest": {
-      "rels": [
-        "tag"
-      ],
-      "text": "rest"
-    },
-    "https://adactio.com/tags/information": {
-      "rels": [
-        "tag"
-      ],
-      "text": "information"
-    },
-    "https://adactio.com/tags/architecture": {
-      "rels": [
-        "tag"
-      ],
-      "text": "architecture"
-    },
-    "https://adactio.com/tags/ia": {
-      "rels": [
-        "tag"
-      ],
-      "text": "ia"
-    },
-    "https://adactio.com/tags/interface": {
-      "rels": [
-        "tag"
-      ],
-      "text": "interface"
-    },
-    "https://adactio.com/tags/ui": {
-      "rels": [
-        "tag"
-      ],
-      "text": "ui"
-    },
-    "https://adactio.com/tags/links": {
-      "rels": [
-        "tag"
-      ],
-      "text": "links"
-    },
-    "https://adactio.com/tags/names": {
-      "rels": [
-        "tag"
-      ],
-      "text": "names"
-    },
-    "https://adactio.com/tags/naming": {
-      "rels": [
-        "tag"
-      ],
-      "text": "naming"
-    },
-    "https://adactio.medium.com/aa7a04754b39": {
-      "rels": [
-        "syndication"
-      ],
-      "text": "Medium"
     },
     "https://adactio.com/?start=20": {
       "rels": [
