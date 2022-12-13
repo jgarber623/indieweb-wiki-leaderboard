@@ -52,12 +52,14 @@
       "https://jmtd.net/favicon.ico"
     ],
     "stylesheet": [
-      "https://jmtd.net/style.css",
-      "https://jmtd.net/local.css"
+      "https://jmtd.net/local.css",
+      "https://jmtd.net/dark.css",
+      "https://jmtd.net/light.css"
     ],
     "alternate": [
-      "https://jmtd.net/iki?do=edit&page=about",
-      "https://jmtd.net/about/comments.atom"
+      "https://jmtd.net/dark.css",
+      "https://jmtd.net/light.css",
+      "https://jmtd.net/iki?do=edit&page=about"
     ],
     "pingback": [
       "https://jmtd.net/pingback"
@@ -76,16 +78,27 @@
       ],
       "type": "image/x-icon"
     },
-    "https://jmtd.net/style.css": {
-      "rels": [
-        "stylesheet"
-      ],
-      "type": "text/css"
-    },
     "https://jmtd.net/local.css": {
       "rels": [
         "stylesheet"
       ],
+      "title": "default",
+      "type": "text/css"
+    },
+    "https://jmtd.net/dark.css": {
+      "rels": [
+        "alternate",
+        "stylesheet"
+      ],
+      "title": "dark",
+      "type": "text/css"
+    },
+    "https://jmtd.net/light.css": {
+      "rels": [
+        "alternate",
+        "stylesheet"
+      ],
+      "title": "light",
       "type": "text/css"
     },
     "https://jmtd.net/iki?do=edit&page=about": {
@@ -94,13 +107,6 @@
       ],
       "title": "Edit this page",
       "type": "application/x-wiki"
-    },
-    "https://jmtd.net/about/comments.atom": {
-      "rels": [
-        "alternate"
-      ],
-      "title": "jmtd (Atom feed)",
-      "type": "application/atom+xml"
     },
     "https://jmtd.net/pingback": {
       "rels": [

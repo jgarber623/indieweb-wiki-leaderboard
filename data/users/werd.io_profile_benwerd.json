@@ -57,6 +57,95 @@
           }
         ],
         "name": [
+          "The woke mind virus"
+        ],
+        "content": [
+          {
+            "html": "<p>This guy:</p>\n<p><img src=\"https://werd.io/file/63976f899cedc22d471265e2\" alt=\"Elon Musk tweet: \" the woke mind virus must be defeated or nothing else matters. width=\"1014\" height=\"200\"></p>\n<p>Musk’s tweet was published just after he was booed off stage at a Dave Chappelle gig. Chappelle’s transphobic material is hardly on the social justice end of the rhetorical spectrum, so it’s more about hurt feelings than substance.</p>\n<p>Anyway. “Woke” was originally about being aware of racial subjugation, and its modern-day usage usually relates to awareness of social power imbalances around race lines. Which are not imaginary and hold entire communities back.</p>\n<p>So, just for the record, it’s not a “mind virus”, it’s a civil rights movement, and in my view, it must succeed or nothing else matters. The goal has to be a more equal, inclusive, and educated world. I will leave considering what opposition to that idea says about a person up to the reader.</p>",
+            "value": "This guy: Elon Musk tweet:  Musk’s tweet was published just after he was booed off stage at a Dave Chappelle gig. Chappelle’s transphobic material is hardly on the social justice end of the rhetorical spectrum, so it’s more about hurt feelings than substance.Anyway. “Woke” was originally about being aware of racial subjugation, and its modern-day usage usually relates to awareness of social power imbalances around race lines. Which are not imaginary and hold entire communities back.So, just for the record, it’s not a “mind virus”, it’s a civil rights movement, and in my view, it must succeed or nothing else matters. The goal has to be a more equal, inclusive, and educated world. I will leave considering what opposition to that idea says about a person up to the reader."
+          }
+        ],
+        "url": [
+          "https://werd.io/2022/the-woke-mind-virus"
+        ],
+        "published": [
+          "2022-12-12T18:14:51+00:00"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "url": [
+                "https://werd.io/profile/benwerd",
+                "https://werd.io/profile/benwerd",
+                "https://werd.io/profile/benwerd"
+              ],
+              "photo": [
+                "https://werd.io/file/5d388c5fb16ea14aac640912/thumb.jpg"
+              ],
+              "name": [
+                "Ben Werdmuller"
+              ]
+            },
+            "value": "Ben Werdmuller"
+          }
+        ],
+        "name": [
+          "Building an open share button for the distributed social web"
+        ],
+        "content": [
+          {
+            "html": "<p>Thinking through a “share with Mastodon” button that anyone could embed on a website. It’s a harder problem than a “share with Twitter” button, because there’s no one central host, and it would be ideal to avoid creating a central location to handle these requests. (Mastodon is decentralized, after all.)</p>\n<p>As a bonus, I think it would work for indieweb or any other decentralized social platform. Maybe any social platform at all?</p>\n<p>This would all be easier if <a href=\"https://en.wikipedia.org/wiki/Web_Intents\">web intents</a> had stuck around. Nonetheless, here’s how it might work. Let’s call it “microshare”, to sit alongside <a href=\"https://indieweb.org/Micropub\">micropub</a>:</p>\n<ol>\n<li>User clicks button on page.</li>\n<li>JS on the page detects whether the <code>web+social</code> URI scheme has been registered (I wish this was easier, but you can do this by making an asynchronous request and waiting for it to succeed or fail).</li>\n<li>If it has, great! Just forward the user to that URI.</li>\n<li>If not, ask the user what the domain of their social profile is.</li>\n<li>JS (or a back-end server process) goes and fetches that base URL and looks for either a <code>microshare</code> metatag or an HTTP header of the form <code>Link: &lt;<a href=\"https://example.com/microshare&amp;gt\" target=\"_blank\" rel=\"in-reply-to\" class=\"u-in-reply-to\">https://<wbr></wbr>example.com/<wbr></wbr>microshare&amp;gt</a>;; rel=\"microshare\"</code>. (Mastodon etc would need to support this endpoint and discovery of same.)</li>\n<li>If the endpoint exists, the browser opens a new tab and forwards the user to that URI with additional <code>text</code> and <code>url</code> URL string parameters populated with the name and the URL of the page being shared respectively.</li>\n<li>This new page contains a button to register the URI as the handler for the <code>web+social</code> URI scheme. It may also either prompt the user to log in, or, if they’re already logged in, share to that social platform, with the text and URL pre-filled into the form.</li>\n</ol>\n<p>There are a few issues here that I’d like to iterate on: I wish URI scheme handling and detection was easier in a browser, for one. Secondly, there’s a potential phishing attack where a malicious website could show a fake login page and harvest someone’s login credentials.</p>\n<p>Still, what I like about it is that it uses the web’s existing capabilities and doesn’t enforce a central domain handler (or even a domain as a shim). While it seems more convoluted than a standard href link (and it is), it can be achieved on publisher websites with just a few lines of JavaScript.</p>\n<p>I’m sure I’ve missed something important, but I wanted to kick this off as a first step. Let me know what you think!</p>",
+            "value": "Thinking through a “share with Mastodon” button that anyone could embed on a website. It’s a harder problem than a “share with Twitter” button, because there’s no one central host, and it would be ideal to avoid creating a central location to handle these requests. (Mastodon is decentralized, after all.)As a bonus, I think it would work for indieweb or any other decentralized social platform. Maybe any social platform at all?This would all be easier if web intents had stuck around. Nonetheless, here’s how it might work. Let’s call it “microshare”, to sit alongside micropub:User clicks button on page.\nJS on the page detects whether the web+social URI scheme has been registered (I wish this was easier, but you can do this by making an asynchronous request and waiting for it to succeed or fail).\nIf it has, great! Just forward the user to that URI.\nIf not, ask the user what the domain of their social profile is.\nJS (or a back-end server process) goes and fetches that base URL and looks for either a microshare metatag or an HTTP header of the form Link: <https://example.com/microshare&gt;; rel=\"microshare\". (Mastodon etc would need to support this endpoint and discovery of same.)\nIf the endpoint exists, the browser opens a new tab and forwards the user to that URI with additional text and url URL string parameters populated with the name and the URL of the page being shared respectively.\nThis new page contains a button to register the URI as the handler for the web+social URI scheme. It may also either prompt the user to log in, or, if they’re already logged in, share to that social platform, with the text and URL pre-filled into the form.\nThere are a few issues here that I’d like to iterate on: I wish URI scheme handling and detection was easier in a browser, for one. Secondly, there’s a potential phishing attack where a malicious website could show a fake login page and harvest someone’s login credentials.Still, what I like about it is that it uses the web’s existing capabilities and doesn’t enforce a central domain handler (or even a domain as a shim). While it seems more convoluted than a standard href link (and it is), it can be achieved on publisher websites with just a few lines of JavaScript.I’m sure I’ve missed something important, but I wanted to kick this off as a first step. Let me know what you think!"
+          }
+        ],
+        "in-reply-to": [
+          "https://example.com/microshare&gt"
+        ],
+        "url": [
+          "https://werd.io/2022/building-an-open-share-button-for-the-distributed-social-web"
+        ],
+        "published": [
+          "2022-12-12T17:31:52+00:00"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "url": [
+                "https://werd.io/profile/benwerd",
+                "https://werd.io/profile/benwerd",
+                "https://werd.io/profile/benwerd"
+              ],
+              "photo": [
+                "https://werd.io/file/5d388c5fb16ea14aac640912/thumb.jpg"
+              ],
+              "name": [
+                "Ben Werdmuller"
+              ]
+            },
+            "value": "Ben Werdmuller"
+          }
+        ],
+        "name": [
           "Things I've learned about parenting"
         ],
         "content": [
@@ -1018,92 +1107,6 @@
           "2022-11-23T17:49:26+00:00"
         ]
       }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "author": [
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "url": [
-                "https://werd.io/profile/benwerd",
-                "https://werd.io/profile/benwerd",
-                "https://werd.io/profile/benwerd"
-              ],
-              "photo": [
-                "https://werd.io/file/5d388c5fb16ea14aac640912/thumb.jpg"
-              ],
-              "name": [
-                "Ben Werdmuller"
-              ]
-            },
-            "value": "Ben Werdmuller"
-          }
-        ],
-        "name": [
-          "They sell boy pacifiers and girl pacifiers. Our baby is biologically male, and - this will shock you!! - sucks on girl pacifiers. The whole thing is ridiculous; even more ridiculously, some people would actually care about this."
-        ],
-        "content": [
-          {
-            "html": "They sell boy pacifiers and girl pacifiers. Our baby is biologically male, and - this will shock you!! - sucks on girl pacifiers. The whole thing is ridiculous; even more ridiculously, some people would actually care about this.",
-            "value": "They sell boy pacifiers and girl pacifiers. Our baby is biologically male, and - this will shock you!! - sucks on girl pacifiers. The whole thing is ridiculous; even more ridiculously, some people would actually care about this."
-          }
-        ],
-        "url": [
-          "https://werd.io/2022/they-sell-boy-pacifiers-and-girl-pacifiers"
-        ],
-        "published": [
-          "2022-11-23T12:49:56+00:00"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "author": [
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "url": [
-                "https://werd.io/profile/benwerd",
-                "https://werd.io/profile/benwerd",
-                "https://werd.io/profile/benwerd"
-              ],
-              "photo": [
-                "https://werd.io/file/5d388c5fb16ea14aac640912/thumb.jpg"
-              ],
-              "name": [
-                "Ben Werdmuller"
-              ]
-            },
-            "value": "Ben Werdmuller"
-          }
-        ],
-        "name": [
-          "The best TV show ever made is 59 years old today. Happy birthday, Doctor Who."
-        ],
-        "content": [
-          {
-            "html": "The best TV show ever made is 59 years old today. Happy birthday, Doctor Who.",
-            "value": "The best TV show ever made is 59 years old today. Happy birthday, Doctor Who."
-          }
-        ],
-        "url": [
-          "https://werd.io/2022/the-best-tv-show-ever-made-is"
-        ],
-        "published": [
-          "2022-11-23T08:10:38+00:00"
-        ]
-      }
     }
   ],
   "rels": {
@@ -1183,9 +1186,11 @@
       "https://werd.io/micropub/endpoint"
     ],
     "canonical": [
-      "https://werd.io/2022/the-best-tv-show-ever-made-is"
+      "https://werd.io/2022/lets-just-say-ill-be-very-excited"
     ],
     "permalink": [
+      "https://werd.io/2022/the-woke-mind-virus",
+      "https://werd.io/2022/building-an-open-share-button-for-the-distributed-social-web",
       "https://werd.io/2022/things-ive-learned-about-parenting",
       "https://werd.io/2022/ai-generated-content-on-medium",
       "https://werd.io/2022/four-month-sleep-regression-is-go",
@@ -1208,9 +1213,10 @@
       "https://werd.io/2022/i-really-hate-the-pushback-against-woke",
       "https://werd.io/2022/thankful-1",
       "https://werd.io/2022/someone-keeps-trying-to-sign-up-to",
-      "https://werd.io/2022/lets-just-say-ill-be-very-excited",
-      "https://werd.io/2022/they-sell-boy-pacifiers-and-girl-pacifiers",
-      "https://werd.io/2022/the-best-tv-show-ever-made-is"
+      "https://werd.io/2022/lets-just-say-ill-be-very-excited"
+    ],
+    "in-reply-to": [
+      "https://example.com/microshare&gt"
     ],
     "next": [
       "https://werd.io/profile/benwerd?offset=0"
@@ -1376,7 +1382,7 @@
         "micropub"
       ]
     },
-    "https://werd.io/2022/the-best-tv-show-ever-made-is": {
+    "https://werd.io/2022/lets-just-say-ill-be-very-excited": {
       "rels": [
         "canonical"
       ]
@@ -1397,11 +1403,29 @@
         "stylesheet"
       ]
     },
+    "https://werd.io/2022/the-woke-mind-virus": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "\nDecember 12, 2022\n"
+    },
+    "https://example.com/microshare&gt": {
+      "rels": [
+        "in-reply-to"
+      ],
+      "text": "https://example.com/microshare&gt"
+    },
+    "https://werd.io/2022/building-an-open-share-button-for-the-distributed-social-web": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "\nDecember 12, 2022\n"
+    },
     "https://werd.io/2022/things-ive-learned-about-parenting": {
       "rels": [
         "permalink"
       ],
-      "text": "\n December 11, 2022\n"
+      "text": "\nDecember 11, 2022\n"
     },
     "https://werd.io/2022/ai-generated-content-on-medium": {
       "rels": [
@@ -1524,18 +1548,6 @@
       "text": "\nNovember 24, 2022\n"
     },
     "https://werd.io/2022/someone-keeps-trying-to-sign-up-to": {
-      "rels": [
-        "permalink"
-      ],
-      "text": "\nNovember 23, 2022\n"
-    },
-    "https://werd.io/2022/lets-just-say-ill-be-very-excited": {
-      "rels": [
-        "permalink"
-      ],
-      "text": "\nNovember 23, 2022\n"
-    },
-    "https://werd.io/2022/they-sell-boy-pacifiers-and-girl-pacifiers": {
       "rels": [
         "permalink"
       ],

@@ -6,6 +6,53 @@
       ],
       "properties": {
         "name": [
+          "The Week #128"
+        ],
+        "published": [
+          "2022-12-12T21:00:43.755773+00:00"
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "photo": [
+                {
+                  "value": "https://www.gravatar.com/avatar/38fc6c615f36a579152118d7abf2e55b?d=mm&r=g&s=80 2x",
+                  "alt": ""
+                }
+              ],
+              "url": [
+                "https://jamesvandyne.com/author/jamesvandyne/"
+              ],
+              "uid": [
+                "https://jamesvandyne.com/author/jamesvandyne/"
+              ],
+              "name": [
+                "James"
+              ]
+            },
+            "value": "James"
+          }
+        ],
+        "content": [
+          {
+            "html": "<ul>\n<li>We bought tickets to visit America for 2 weeks during February 🎉. Leo will turn 5 in Texas. I'm really excited for him to meet everyone. I'm also excited to see what happens when he's throw into a pure English environment. It's only two weeks, but will he come back speaking more English, even if just a temporary boost? Ticket prices were still a bit painful, but not ludicrous like they were 6 months ago.</li>\n<li>The US not having a proper public transit system sure makes visiting a pain because it means you've got to rent a car. Which means me getting an international driver's permit (my US license expired and I can no longer renew it online). And also means me potentially futzing with a child seat after a 14 hour flight...so much better to just have trains that connect people to the places they want to go.</li>\n<li>Last week I started on some upgrades to Tanzawa that will allow me to update reply/bookmark titles without resorting to the Django admin. And as I started, I realized that there was a yak that needed shaving. It was time to do the next chunk of refactoring: moving my business logic out of views/django forms and into re-usable \"application\" functions.<br><br>It's a much larger chunk of work, but also very important. You see, to share as much code as possible during my initial development of Tanzawa, my micropub endpoint mostly just converts the micropub request format to that of my authoring views, and uses the same forms for processing.<br><br>This is problematic, not because not because it doesn't work, but because it's all too entangled together. It's a problem because it doesn't make sense that editing my author form will effect my micropub endpoint (so change it as little as possible 🙃). <br><br>My functional end-to-end tests for posting just test micropub under the assumption that they're the same, so I never bothered writing tests for my author views because if it busted, I could always fallback to any micropub client for posting.<br><br>All of this is a long-winded way to say I've got a lot of refactoring ahead of me, but it's a lot of fun making things not just work, but making them right – with tests.</li>\n<li>I started watching <a href=\"https://www.netflix.com/title/81186296\">The Playlist</a>, a drama about starting Spotify. I''m really liking it. Each episode is told from the perspective of one founding / important member or another, which is something I've never seen before.</li>\n<li>I made some overnight white bread with Leo, as his request. Each time I make this, I think I should make it more often. It's vastly superior to anything I can buy locally in the shops. If I <em>could</em> find a loaf like this, it'd be at least ¥1,000.  And because it's done overnight, it's much easier to manage the fermenting/timing of things. Slam it in the fridge and bake it the next day (or so) when you have some time.<br><figure class=\"attachment attachment--preview attachment--jpeg\" data-trix-attachment='{\"contentType\":\"image/jpeg\",\"filename\":\"ED635A6E-F574-4CE0-A4FA-83C1A372503B_1_105_c.jpeg\",\"filesize\":337431,\"height\":1024,\"href\":\"https://jamesvandyne.com/files/673d42fa-cb90-4328-af96-c775d993755a?content-disposition=attachment\",\"url\":\"https://jamesvandyne.com/files/673d42fa-cb90-4328-af96-c775d993755a\",\"width\":768}' data-trix-attributes='{\"caption\":\"Overnight white bread\",\"presentation\":\"gallery\"}' data-trix-content-type=\"image/jpeg\"><a href=\"https://jamesvandyne.com/files/673d42fa-cb90-4328-af96-c775d993755a?content-disposition=attachment\"><picture>\n<source srcset=\"https://jamesvandyne.com/files/673d42fa-cb90-4328-af96-c775d993755a?f=image/webp\" type=\"image/webp\"></source>\n<img height=\"1024\" loading=\"lazy\" src=\"https://jamesvandyne.com/files/673d42fa-cb90-4328-af96-c775d993755a\" width=\"768\">\n</picture><figcaption class=\"attachment__caption attachment__caption--edited\">Overnight white bread</figcaption></a></figure>\n</li>\n</ul>",
+            "value": "We bought tickets to visit America for 2 weeks during February 🎉. Leo will turn 5 in Texas. I'm really excited for him to meet everyone. I'm also excited to see what happens when he's throw into a pure English environment. It's only two weeks, but will he come back speaking more English, even if just a temporary boost? Ticket prices were still a bit painful, but not ludicrous like they were 6 months ago.The US not having a proper public transit system sure makes visiting a pain because it means you've got to rent a car. Which means me getting an international driver's permit (my US license expired and I can no longer renew it online). And also means me potentially futzing with a child seat after a 14 hour flight...so much better to just have trains that connect people to the places they want to go.Last week I started on some upgrades to Tanzawa that will allow me to update reply/bookmark titles without resorting to the Django admin. And as I started, I realized that there was a yak that needed shaving. It was time to do the next chunk of refactoring: moving my business logic out of views/django forms and into re-usable \"application\" functions.It's a much larger chunk of work, but also very important. You see, to share as much code as possible during my initial development of Tanzawa, my micropub endpoint mostly just converts the micropub request format to that of my authoring views, and uses the same forms for processing.This is problematic, not because not because it doesn't work, but because it's all too entangled together. It's a problem because it doesn't make sense that editing my author form will effect my micropub endpoint (so change it as little as possible 🙃). My functional end-to-end tests for posting just test micropub under the assumption that they're the same, so I never bothered writing tests for my author views because if it busted, I could always fallback to any micropub client for posting.All of this is a long-winded way to say I've got a lot of refactoring ahead of me, but it's a lot of fun making things not just work, but making them right – with tests.I started watching The Playlist, a drama about starting Spotify. I''m really liking it. Each episode is told from the perspective of one founding / important member or another, which is something I've never seen before.I made some overnight white bread with Leo, as his request. Each time I make this, I think I should make it more often. It's vastly superior to anything I can buy locally in the shops. If I could find a loaf like this, it'd be at least ¥1,000.  And because it's done overnight, it's much easier to manage the fermenting/timing of things. Slam it in the fridge and bake it the next day (or so) when you have some time.\n\n https://jamesvandyne.com/files/673d42fa-cb90-4328-af96-c775d993755a \nOvernight white bread"
+          }
+        ],
+        "url": [
+          "https://jamesvandyne.com/f2dfac3e-48f7-410b-acf8-e7edfd12fc3e"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
           "Checkin to インドカリーダイニング コバラカフェ"
         ],
         "checkin": [
@@ -501,53 +548,6 @@
     },
     {
       "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "name": [
-          "Running Tanzawa with Fly.io"
-        ],
-        "published": [
-          "2022-11-30T23:23:03.719881+00:00"
-        ],
-        "author": [
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "photo": [
-                {
-                  "value": "https://www.gravatar.com/avatar/38fc6c615f36a579152118d7abf2e55b?d=mm&r=g&s=80 2x",
-                  "alt": ""
-                }
-              ],
-              "url": [
-                "https://jamesvandyne.com/author/jamesvandyne/"
-              ],
-              "uid": [
-                "https://jamesvandyne.com/author/jamesvandyne/"
-              ],
-              "name": [
-                "James"
-              ]
-            },
-            "value": "James"
-          }
-        ],
-        "content": [
-          {
-            "html": "<div>Taking a page out of Simon Willison's <a href=\"https://simonwillison.net/2022/Nov/26/productivity/\">Coping strategies for the serial project hoarder</a> presentation, I'm going to write a blog post about what I've done on my projects as part of the \"unit of work\".<br><br>One of the largest hurdles to running Tanzawa is one that plagues any Django app: getting it setup properly on a server. This usually involves connecting to a server, setting up a gunicorn or uWSGI server to run the app, editing nginx configurations, and fiddling with systemd, at a minimum.<br><br>Each of these are a large barrier to entry. All of them combined means only the most dedicated users would attempt to use it. And the reality is nobody will use it.<br><br>Making Tanzawa easier to install and run has long been a goal of mine. For a while my approach was to basically automate my own setup on Digital Ocean. I attempted this with two puppet scripts: one, created an Ubuntu server that automatically applied security patches and installed Docker, and the second would build a Tanzawa image to run on the server. Using puppet would also allow flexibility for people to host wherever they wanted.<br><br>Ultimately this approach was flawed because you'd still end up needing to maintain a server, even if it updates itself. <br><br>Getting Tanzawa to run on a fully managed platform like Fly.io would lower the barrier to entry quite a bit as it would remove the need to maintain a server and fiddle with configuration files. After migrating my blog from a Digital Ocean to Fly.io, I <a href=\"https://jamesvandyne.github.io/tanzawa/deployment/\">documented</a> how others can do the same.<br><br>Hosting with Fly.io is now the recommended way to use Tanzawa.</div>",
-            "value": "Taking a page out of Simon Willison's Coping strategies for the serial project hoarder presentation, I'm going to write a blog post about what I've done on my projects as part of the \"unit of work\".One of the largest hurdles to running Tanzawa is one that plagues any Django app: getting it setup properly on a server. This usually involves connecting to a server, setting up a gunicorn or uWSGI server to run the app, editing nginx configurations, and fiddling with systemd, at a minimum.Each of these are a large barrier to entry. All of them combined means only the most dedicated users would attempt to use it. And the reality is nobody will use it.Making Tanzawa easier to install and run has long been a goal of mine. For a while my approach was to basically automate my own setup on Digital Ocean. I attempted this with two puppet scripts: one, created an Ubuntu server that automatically applied security patches and installed Docker, and the second would build a Tanzawa image to run on the server. Using puppet would also allow flexibility for people to host wherever they wanted.Ultimately this approach was flawed because you'd still end up needing to maintain a server, even if it updates itself. Getting Tanzawa to run on a fully managed platform like Fly.io would lower the barrier to entry quite a bit as it would remove the need to maintain a server and fiddle with configuration files. After migrating my blog from a Digital Ocean to Fly.io, I documented how others can do the same.Hosting with Fly.io is now the recommended way to use Tanzawa."
-          }
-        ],
-        "url": [
-          "https://jamesvandyne.com/4278d37e-5a06-42cd-b965-c8adcd568da7"
-        ]
-      }
-    },
-    {
-      "type": [
         "h-card"
       ],
       "properties": {
@@ -613,6 +613,7 @@
       "https://jamesvandyne.com/author/jamesvandyne/"
     ],
     "bookmark": [
+      "https://jamesvandyne.com/f2dfac3e-48f7-410b-acf8-e7edfd12fc3e",
       "https://jamesvandyne.com/18b9b36a-cf82-4a57-ada9-8201e6a14548",
       "https://jamesvandyne.com/c14b2765-a133-4796-b9fa-320f0d128880",
       "https://jamesvandyne.com/a30cf659-89a1-4035-b6f9-cddf2dd69147",
@@ -621,8 +622,7 @@
       "https://jamesvandyne.com/9c352edc-e0a2-4971-81e4-fd466a7b3fc8",
       "https://jamesvandyne.com/416943b6-784a-41c1-b505-027a612f06ad",
       "https://jamesvandyne.com/852667ce-9821-4722-a057-48eb8f74ba97",
-      "https://jamesvandyne.com/e4ff5719-f810-4d9f-89e4-d56910dfa67d",
-      "https://jamesvandyne.com/4278d37e-5a06-42cd-b965-c8adcd568da7"
+      "https://jamesvandyne.com/e4ff5719-f810-4d9f-89e4-d56910dfa67d"
     ]
   },
   "rel-urls": {
@@ -725,6 +725,13 @@
       "title": "View all posts by James",
       "text": "\n        James"
     },
+    "https://jamesvandyne.com/f2dfac3e-48f7-410b-acf8-e7edfd12fc3e": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "permalink",
+      "text": "🔗permalink"
+    },
     "https://jamesvandyne.com/18b9b36a-cf82-4a57-ada9-8201e6a14548": {
       "rels": [
         "bookmark"
@@ -782,13 +789,6 @@
       "text": "🔗permalink"
     },
     "https://jamesvandyne.com/e4ff5719-f810-4d9f-89e4-d56910dfa67d": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "permalink",
-      "text": "🔗permalink"
-    },
-    "https://jamesvandyne.com/4278d37e-5a06-42cd-b965-c8adcd568da7": {
       "rels": [
         "bookmark"
       ],

@@ -2,7 +2,7 @@
   "items": [],
   "rels": {
     "profile": [
-      "https://gmpg.org/xfn/11"
+      "http://gmpg.org/xfn/11"
     ],
     "canonical": [
       "https://jinxmylo.com/"
@@ -12,12 +12,17 @@
     ],
     "alternate": [
       "https://jinxmylo.com/feed/",
-      "https://jinxmylo.com/comments/feed/"
+      "https://jinxmylo.com/comments/feed/",
+      "https://jinxmylo.com/wp-json/wp/v2/pages/4525",
+      "https://jinxmylo.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fjinxmylo.com%2F",
+      "https://jinxmylo.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fjinxmylo.com%2F&format=xml"
     ],
     "stylesheet": [
+      "https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap",
       "https://jinxmylo.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1",
       "https://jinxmylo.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17",
       "https://jinxmylo.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.1.1",
+      "https://jinxmylo.com/wp-content/plugins/otter-blocks/build/blocks/advanced-columns/style.css?ver=c35a444f68a1928fa0d9",
       "https://jinxmylo.com/wp-includes/css/classic-themes.min.css?ver=1",
       "https://fonts.googleapis.com/css?family=Fira+Sans%3Aital%2Cwght%400%2C400%3B0%2C500%3B1%2C400%7CPlayfair+Display%3Aital%2Cwght%400%2C400%3B0%2C700%3B1%2C400&subset=latin%2Clatin-ext",
       "https://jinxmylo.com/wp-content/themes/seedlet/style.css?ver=1.2.9",
@@ -35,15 +40,12 @@
     "wlwmanifest": [
       "https://jinxmylo.com/wp-includes/wlwmanifest.xml"
     ],
-    "home": [
+    "shortlink": [
       "https://jinxmylo.com/"
-    ],
-    "bookmark": [
-      "https://jinxmylo.com/2021/06/16/about-jinx/"
     ]
   },
   "rel-urls": {
-    "https://gmpg.org/xfn/11": {
+    "http://gmpg.org/xfn/11": {
       "rels": [
         "profile"
       ]
@@ -72,6 +74,12 @@
       "title": "Jinx Mylo » Comments Feed",
       "type": "application/rss+xml"
     },
+    "https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
     "https://jinxmylo.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1": {
       "rels": [
         "stylesheet"
@@ -85,6 +93,12 @@
       "media": "all"
     },
     "https://jinxmylo.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.1.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://jinxmylo.com/wp-content/plugins/otter-blocks/build/blocks/advanced-columns/style.css?ver=c35a444f68a1928fa0d9": {
       "rels": [
         "stylesheet"
       ],
@@ -137,6 +151,12 @@
         "https://api.w.org/"
       ]
     },
+    "https://jinxmylo.com/wp-json/wp/v2/pages/4525": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/json"
+    },
     "https://jinxmylo.com/xmlrpc.php?rsd": {
       "rels": [
         "EditURI"
@@ -150,11 +170,17 @@
       ],
       "type": "application/wlwmanifest+xml"
     },
-    "https://jinxmylo.com/2021/06/16/about-jinx/": {
+    "https://jinxmylo.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fjinxmylo.com%2F": {
       "rels": [
-        "bookmark"
+        "alternate"
       ],
-      "text": "About Jinx"
+      "type": "application/json+oembed"
+    },
+    "https://jinxmylo.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fjinxmylo.com%2F&format=xml": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "text/xml+oembed"
     }
   }
 }

@@ -1,5 +1,31 @@
 {
   "items": [],
-  "rels": {},
-  "rel-urls": {}
+  "rels": {
+    "stylesheet": [
+      "https://davidpeach.co.uk/style.css"
+    ],
+    "me": [
+      "https://mastodon.davidpeach.co.uk/",
+      "https://github.com/davidpeach"
+    ]
+  },
+  "rel-urls": {
+    "https://davidpeach.co.uk/style.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://mastodon.davidpeach.co.uk/": {
+      "rels": [
+        "me"
+      ],
+      "text": "my own Mastodon instance"
+    },
+    "https://github.com/davidpeach": {
+      "rels": [
+        "me"
+      ],
+      "text": "Github"
+    }
+  }
 }
