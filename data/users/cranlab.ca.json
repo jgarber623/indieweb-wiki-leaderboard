@@ -1,75 +1,37 @@
 {
-  "items": [
-    {
-      "type": [
-        "h-card"
-      ],
-      "properties": {
-        "photo": [
-          {
-            "value": "https://cranlab.ca/images/android-chrome-192x192.png",
-            "alt": "My profile photo"
-          }
-        ],
-        "name": [
-          "Wesley Cranston"
-        ],
-        "note": [
-          "...and I am a human on the Internet. My website is under construction!"
-        ],
-        "uid": [
-          "https://cranlab.ca/"
-        ],
-        "url": [
-          "https://cranlab.ca/",
-          "https://github.com/wescran",
-          "https://twitter.com/wescran"
-        ]
-      }
-    }
-  ],
+  "items": [],
   "rels": {
-    "authorization_endpoint": [
-      "https://indieauth.com/auth"
+    "stylesheet": [
+      "https://cranlab.ca/cdn-cgi/styles/main.css"
     ],
-    "token_endpoint": [
-      "https://tokens.indieauth.com/token"
+    "noopener": [
+      "https://developers.cloudflare.com/argo-tunnel/reference/load-balancing/",
+      "https://www.cloudflare.com/5xx-error-landing"
     ],
-    "icon": [
-      "https://cranlab.ca/images/favicon-32x32.png"
-    ],
-    "me": [
-      "https://github.com/wescran",
-      "https://twitter.com/wescran"
+    "noreferrer": [
+      "https://developers.cloudflare.com/argo-tunnel/reference/load-balancing/",
+      "https://www.cloudflare.com/5xx-error-landing"
     ]
   },
   "rel-urls": {
-    "https://indieauth.com/auth": {
+    "https://cranlab.ca/cdn-cgi/styles/main.css": {
       "rels": [
-        "authorization_endpoint"
+        "stylesheet"
       ]
     },
-    "https://tokens.indieauth.com/token": {
+    "https://developers.cloudflare.com/argo-tunnel/reference/load-balancing/": {
       "rels": [
-        "token_endpoint"
-      ]
-    },
-    "https://cranlab.ca/images/favicon-32x32.png": {
-      "rels": [
-        "icon"
-      ]
-    },
-    "https://github.com/wescran": {
-      "rels": [
-        "me"
+        "noopener",
+        "noreferrer"
       ],
-      "text": "[email protected]"
+      "text": "load balancing"
     },
-    "https://twitter.com/wescran": {
+    "https://www.cloudflare.com/5xx-error-landing": {
       "rels": [
-        "me"
+        "noopener",
+        "noreferrer"
       ],
-      "text": "[email protected]"
+      "text": "Cloudflare"
     }
   }
 }

@@ -2,7 +2,6 @@
   "items": [],
   "rels": {
     "dns-prefetch": [
-      "https://felipe.lavin.blog/",
       "https://widgets.wp.com/"
     ],
     "alternate": [
@@ -71,11 +70,6 @@
     ]
   },
   "rel-urls": {
-    "https://felipe.lavin.blog/": {
-      "rels": [
-        "dns-prefetch"
-      ]
-    },
     "https://widgets.wp.com/": {
       "rels": [
         "dns-prefetch"
@@ -141,6 +135,11 @@
         "wlwmanifest"
       ],
       "type": "application/wlwmanifest+xml"
+    },
+    "https://felipe.lavin.blog/": {
+      "rels": [
+        "canonical"
+      ]
     },
     "https://felipe.lavin.blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffelipe.lavin.blog%2F": {
       "rels": [

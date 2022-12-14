@@ -46,6 +46,62 @@
               "https://fireburn.ru/"
             ],
             "url": [
+              "https://fireburn.ru/posts/aopu4G6"
+            ],
+            "uid": [
+              "https://fireburn.ru/posts/aopu4G6"
+            ],
+            "published": [
+              "2022-12-13T14:38:39.366242145+03:00"
+            ],
+            "photo": [
+              "https://fireburn.ru/.kittybox/media/uploads/4e/d1/bf/64/ce005631487df966396c7e2b9f997a68c7eb6e19bb1f86031a5d0733"
+            ],
+            "content": [
+              {
+                "html": "<p>Kitty!!!</p>",
+                "value": "Kitty!!!"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              "https://fireburn.ru/"
+            ],
+            "url": [
+              "https://fireburn.ru/posts/aops1_4"
+            ],
+            "uid": [
+              "https://fireburn.ru/posts/aops1_4"
+            ],
+            "published": [
+              "2022-12-13T14:31:17.644757600+03:00"
+            ],
+            "category": [
+              "kittybox"
+            ],
+            "content": [
+              {
+                "html": "<p>I often forget that my new authentication system has short-lived tokens that live a week, and long-term refresh tokens that last up to two months.</p>\n\n<p>And Quill doesn’t seem to use refresh tokens...</p>",
+                "value": "I often forget that my new authentication system has short-lived tokens that live a week, and long-term refresh tokens that last up to two months.\n\nAnd Quill doesn’t seem to use refresh tokens..."
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              "https://fireburn.ru/"
+            ],
+            "url": [
               "https://fireburn.ru/posts/aoTQjSd"
             ],
             "uid": [
@@ -529,62 +585,6 @@
               }
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "author": [
-              "https://fireburn.ru/"
-            ],
-            "url": [
-              "https://fireburn.ru/posts/aiG5yE9"
-            ],
-            "uid": [
-              "https://fireburn.ru/posts/aiG5yE9"
-            ],
-            "published": [
-              "2022-10-24T12:57:29.649347009+03:00"
-            ],
-            "category": [
-              "workspace"
-            ],
-            "content": [
-              {
-                "html": "<p>I <s>kissed a girl</s> pivoted my monitor 270 degrees and I liked it!</p>\n<p>(This allows me to see so much more text and keep focus with more windows open! so interesting)</p>",
-                "value": "I kissed a girl pivoted my monitor 270 degrees and I liked it!(This allows me to see so much more text and keep focus with more windows open! so interesting)"
-              }
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "author": [
-              "https://fireburn.ru/"
-            ],
-            "url": [
-              "https://fireburn.ru/posts/ahtGqRb"
-            ],
-            "uid": [
-              "https://fireburn.ru/posts/ahtGqRb"
-            ],
-            "published": [
-              "2022-10-21T02:48:37.536207549+03:00"
-            ],
-            "category": [
-              "linux"
-            ],
-            "content": [
-              {
-                "html": "<p>For some reason, when asked how to stop mice from waking up a Linux PC, people recommend writing a udev rule and matching by a device ID. No more of this, I found a better way that works with any mouse!</p>\n\n<pre><code>ACTION==\"add\", ATTRS{bInterfaceClass}=\"03\", ATTRS{bInterfaceProtocol}==\"02\", ATTR{power/wakeup}=\"disabled\"</code></pre>\n\n<p>I read what is apparently the <a href=\"https://www.usb.org/sites/default/files/documents/hid1_11.pdf\">USB HID specification</a> to learn that HID devices use the <code>bInterfaceProtocol</code> field to signify if they are a keyboard, a mouse or some other device. The above udev rule matches on that field (apparently udev exposes a lot of interesting stuff about devices, including how much power they want to draw? I wonder if there’s any use for this...) to gather all USB mice in your system.</p>\n\n<p>No more your laptop has to turn on when you jiggle a mouse accidentally.</p>",
-                "value": "For some reason, when asked how to stop mice from waking up a Linux PC, people recommend writing a udev rule and matching by a device ID. No more of this, I found a better way that works with any mouse!\n\nACTION==\"add\", ATTRS{bInterfaceClass}=\"03\", ATTRS{bInterfaceProtocol}==\"02\", ATTR{power/wakeup}=\"disabled\"\n\nI read what is apparently the USB HID specification to learn that HID devices use the bInterfaceProtocol field to signify if they are a keyboard, a mouse or some other device. The above udev rule matches on that field (apparently udev exposes a lot of interesting stuff about devices, including how much power they want to draw? I wonder if there’s any use for this...) to gather all USB mice in your system.\n\nNo more your laptop has to turn on when you jiggle a mouse accidentally."
-              }
-            ]
-          }
         }
       ]
     }
@@ -622,7 +622,7 @@
       "https://fireburn.ru/feeds/main"
     ],
     "prev": [
-      "https://fireburn.ru/feeds/main?after=https://fireburn.ru/posts/ahtGqRb"
+      "https://fireburn.ru/feeds/main?after=https://fireburn.ru/posts/aikbxhQ"
     ]
   },
   "rel-urls": {
@@ -684,7 +684,7 @@
       ],
       "text": "Main feed"
     },
-    "https://fireburn.ru/feeds/main?after=https://fireburn.ru/posts/ahtGqRb": {
+    "https://fireburn.ru/feeds/main?after=https://fireburn.ru/posts/aikbxhQ": {
       "rels": [
         "prev"
       ],
