@@ -1,37 +1,75 @@
 {
-  "items": [],
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "photo": [
+          {
+            "value": "https://cranlab.ca/images/android-chrome-192x192.png",
+            "alt": "My profile photo"
+          }
+        ],
+        "name": [
+          "Wesley Cranston"
+        ],
+        "note": [
+          "...and I am a human on the Internet. My website is under construction!"
+        ],
+        "uid": [
+          "https://cranlab.ca/"
+        ],
+        "url": [
+          "https://cranlab.ca/",
+          "https://github.com/wescran",
+          "https://twitter.com/wescran"
+        ]
+      }
+    }
+  ],
   "rels": {
-    "stylesheet": [
-      "https://cranlab.ca/cdn-cgi/styles/main.css"
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
     ],
-    "noopener": [
-      "https://developers.cloudflare.com/argo-tunnel/reference/load-balancing/",
-      "https://www.cloudflare.com/5xx-error-landing"
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
     ],
-    "noreferrer": [
-      "https://developers.cloudflare.com/argo-tunnel/reference/load-balancing/",
-      "https://www.cloudflare.com/5xx-error-landing"
+    "icon": [
+      "https://cranlab.ca/images/favicon-32x32.png"
+    ],
+    "me": [
+      "https://github.com/wescran",
+      "https://twitter.com/wescran"
     ]
   },
   "rel-urls": {
-    "https://cranlab.ca/cdn-cgi/styles/main.css": {
+    "https://indieauth.com/auth": {
       "rels": [
-        "stylesheet"
+        "authorization_endpoint"
       ]
     },
-    "https://developers.cloudflare.com/argo-tunnel/reference/load-balancing/": {
+    "https://tokens.indieauth.com/token": {
       "rels": [
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "load balancing"
+        "token_endpoint"
+      ]
     },
-    "https://www.cloudflare.com/5xx-error-landing": {
+    "https://cranlab.ca/images/favicon-32x32.png": {
       "rels": [
-        "noopener",
-        "noreferrer"
+        "icon"
+      ]
+    },
+    "https://github.com/wescran": {
+      "rels": [
+        "me"
       ],
-      "text": "Cloudflare"
+      "text": "[email protected]"
+    },
+    "https://twitter.com/wescran": {
+      "rels": [
+        "me"
+      ],
+      "text": "[email protected]"
     }
   }
 }
