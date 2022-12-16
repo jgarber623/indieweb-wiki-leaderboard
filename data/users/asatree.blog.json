@@ -1,92 +1,61 @@
 {
   "items": [],
   "rels": {
-    "stylesheet": [
-      "http://asatree.blog/css.php?n=default&t=four-point-eight"
+    "icon": [
+      "http://asatree.blog/user/themes/quark/images/favicon.png"
     ],
     "canonical": [
       "http://asatree.blog/"
     ],
-    "alternate": [
-      "http://asatree.blog/atom/",
-      "http://asatree.blog/rss/"
-    ],
-    "home": [
-      "http://asatree.blog/"
-    ],
-    "author": [
-      "http://asatree.blog/author/Shawn+White/"
-    ],
-    "bookmark": [
-      "http://asatree.blog/articles/welcome-to-your-site"
-    ],
-    "external": [
-      "https://textpattern.com/",
-      "https://docs.textpattern.com/",
-      "https://textpattern.com/github",
-      "https://textpattern.com/@textpattern"
+    "stylesheet": [
+      "http://asatree.blog/user/plugins/markdown-notices/assets/notices.css",
+      "http://asatree.blog/user/themes/quark/css-compiled/spectre.min.css",
+      "http://asatree.blog/user/themes/quark/css-compiled/theme.min.css",
+      "http://asatree.blog/user/themes/quark/css/custom.css",
+      "http://asatree.blog/user/themes/quark/css/line-awesome.min.css"
     ]
   },
   "rel-urls": {
-    "http://asatree.blog/css.php?n=default&t=four-point-eight": {
+    "http://asatree.blog/user/themes/quark/images/favicon.png": {
       "rels": [
-        "stylesheet"
-      ]
+        "icon"
+      ],
+      "type": "image/png"
     },
     "http://asatree.blog/": {
       "rels": [
         "canonical"
       ]
     },
-    "http://asatree.blog/atom/": {
+    "http://asatree.blog/user/plugins/markdown-notices/assets/notices.css": {
       "rels": [
-        "alternate"
+        "stylesheet"
       ],
-      "title": "Atom feed",
-      "type": "application/atom+xml"
+      "type": "text/css"
     },
-    "http://asatree.blog/rss/": {
+    "http://asatree.blog/user/themes/quark/css-compiled/spectre.min.css": {
       "rels": [
-        "alternate"
+        "stylesheet"
       ],
-      "title": "RSS feed",
-      "type": "application/rss+xml"
+      "type": "text/css"
     },
-    "http://asatree.blog/author/Shawn+White/": {
+    "http://asatree.blog/user/themes/quark/css-compiled/theme.min.css": {
       "rels": [
-        "author"
+        "stylesheet"
       ],
-      "text": "Shawn White"
+      "type": "text/css"
     },
-    "http://asatree.blog/articles/welcome-to-your-site": {
+    "http://asatree.blog/user/themes/quark/css/custom.css": {
       "rels": [
-        "bookmark"
+        "stylesheet"
       ],
-      "text": "example article"
+      "type": "text/css"
     },
-    "https://textpattern.com/": {
+    "http://asatree.blog/user/themes/quark/css/line-awesome.min.css": {
       "rels": [
-        "external"
+        "stylesheet"
       ],
-      "text": "Textpattern website"
-    },
-    "https://docs.textpattern.com/": {
-      "rels": [
-        "external"
-      ],
-      "text": "Textpattern user documentation"
-    },
-    "https://textpattern.com/github": {
-      "rels": [
-        "external"
-      ],
-      "text": "Textpattern on GitHub"
-    },
-    "https://textpattern.com/@textpattern": {
-      "rels": [
-        "external"
-      ],
-      "text": "Textpattern on Twitter"
+      "type": "text/css"
     }
   }
 }

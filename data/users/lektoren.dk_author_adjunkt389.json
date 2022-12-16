@@ -105,7 +105,7 @@
     "stylesheet": [
       "https://lektoren.dk/wp-content/plugins/wp-courseware/css/wpcw_frontend.css?ver=3.0",
       "https://lektoren.dk/wp-content/plugins/genesis-blocks/dist/style-blocks.build.css?ver=1669114684",
-      "https://lektoren.dk/wp-includes/blocks/social-links/style.min.css?ver=6.1.1",
+      "https://lektoren.dk/wp-content/plugins/getwid/vendors/animate.css/animate.min.css?ver=3.7.0",
       "https://lektoren.dk/wp-content/plugins/getwid/vendors/fontawesome-free/css/all.min.css?ver=5.5.0",
       "https://lektoren.dk/wp-content/plugins/getwid/vendors/slick/slick/slick.min.css?ver=1.9.0",
       "https://lektoren.dk/wp-content/plugins/getwid/vendors/slick/slick/slick-theme.min.css?ver=1.9.0",
@@ -163,15 +163,15 @@
     "home": [
       "https://lektoren.dk/"
     ],
-    "nofollow": [
-      "https://mastodon.nu/@LarsHenriksen",
-      "https://pixelfed.social/lektoren",
-      "mailto:selveste@lektoren.dk"
-    ],
     "noopener": [
-      "https://mastodon.nu/@LarsHenriksen",
       "https://pixelfed.social/lektoren",
-      "mailto:selveste@lektoren.dk"
+      "https://lektoren.dk/feed",
+      "https://lektoren.dk/om-lektoren/"
+    ],
+    "noreferrer": [
+      "https://pixelfed.social/lektoren",
+      "https://lektoren.dk/feed",
+      "https://lektoren.dk/om-lektoren/"
     ]
   },
   "rel-urls": {
@@ -240,7 +240,7 @@
       ],
       "media": "all"
     },
-    "https://lektoren.dk/wp-includes/blocks/social-links/style.min.css?ver=6.1.1": {
+    "https://lektoren.dk/wp-content/plugins/getwid/vendors/animate.css/animate.min.css?ver=3.7.0": {
       "rels": [
         "stylesheet"
       ],
@@ -445,19 +445,17 @@
         "home"
       ]
     },
-    "https://mastodon.nu/@LarsHenriksen": {
+    "https://lektoren.dk/feed": {
       "rels": [
-        "nofollow",
-        "noopener"
-      ],
-      "text": "Connect på Mastodon"
+        "noopener",
+        "noreferrer"
+      ]
     },
-    "mailto:selveste@lektoren.dk": {
+    "https://lektoren.dk/om-lektoren/": {
       "rels": [
-        "nofollow",
-        "noopener"
-      ],
-      "text": "Send mig en mail"
+        "noopener",
+        "noreferrer"
+      ]
     }
   }
 }
