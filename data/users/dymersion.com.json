@@ -28,6 +28,67 @@
           ],
           "properties": {
             "name": [
+              "No Longer Just a Blog"
+            ],
+            "url": [
+              "https://dymersion.com/2022/12/no-longer-just-a-blog/",
+              "https://dymersion.com/2022/12/no-longer-just-a-blog/"
+            ],
+            "updated": [
+              "2022-12-16T23:29:12-05:00"
+            ],
+            "published": [
+              "2022-12-16T23:29:12-05:00"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "photo": [
+                    {
+                      "value": "https://secure.gravatar.com/avatar/62b54bcb7fd45d2957c03af7722dbc4c?s=90&d=mm&r=r",
+                      "srcset": {
+                        "2x": "https://secure.gravatar.com/avatar/62b54bcb7fd45d2957c03af7722dbc4c?s=180&d=mm&r=r"
+                      },
+                      "alt": ""
+                    }
+                  ],
+                  "url": [
+                    "https://dymersion.com/"
+                  ],
+                  "uid": [
+                    "https://dymersion.com/"
+                  ],
+                  "name": [
+                    "Mike Merritt"
+                  ]
+                },
+                "value": "Mike Merritt"
+              }
+            ],
+            "content": [
+              {
+                "html": "<p>I mentioned last week that I’ve installed the SemPress theme to take advantage of IndieWeb features like microformat labeling to enable parsing in webmentions, a kind of new-era trackback but better. Well, it’s more than just that. As I’m sure most people reading this are aware, there’s been a lot of activity in the world of social media in the past month or so. A new owner at Twitter, people moving to different platforms, and Elon Musk having a bit of a meltdown. All of this has gotten me thinking about the future of my own online presence and has encouraged me to look into revving this blog back up and using it as a hub for my own content of all types.</p>\n<p> <a href=\"https://dymersion.com/2022/12/no-longer-just-a-blog/#more-3510\" class=\"more-link\">Continue reading <span class=\"meta-nav\">→</span></a></p>",
+                "value": "I mentioned last week that I’ve installed the SemPress theme to take advantage of IndieWeb features like microformat labeling to enable parsing in webmentions, a kind of new-era trackback but better. Well, it’s more than just that. As I’m sure most people reading this are aware, there’s been a lot of activity in the world of social media in the past month or so. A new owner at Twitter, people moving to different platforms, and Elon Musk having a bit of a meltdown. All of this has gotten me thinking about the future of my own online presence and has encouraged me to look into revving this blog back up and using it as a hub for my own content of all types.\n Continue reading →"
+              }
+            ],
+            "category": [
+              "activitypub",
+              "fediverse",
+              "indieweb",
+              "WPFriends"
+            ]
+          },
+          "id": "post-3510"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               "Theme Updated",
               "Matthias Pfefferle"
             ],
@@ -533,61 +594,6 @@
             ]
           },
           "id": "post-1078"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "HTTPS Redirects Must be Above Everything Else in .htaccess"
-            ],
-            "url": [
-              "https://dymersion.com/2015/07/https-redirects-must-be-above-everything-else-in-htaccess/",
-              "https://dymersion.com/2015/07/https-redirects-must-be-above-everything-else-in-htaccess/"
-            ],
-            "updated": [
-              "2015-07-10T02:20:21-04:00"
-            ],
-            "published": [
-              "2015-07-10T02:20:21-04:00"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "photo": [
-                    {
-                      "value": "https://secure.gravatar.com/avatar/62b54bcb7fd45d2957c03af7722dbc4c?s=90&d=mm&r=r",
-                      "srcset": {
-                        "2x": "https://secure.gravatar.com/avatar/62b54bcb7fd45d2957c03af7722dbc4c?s=180&d=mm&r=r"
-                      },
-                      "alt": ""
-                    }
-                  ],
-                  "url": [
-                    "https://dymersion.com/"
-                  ],
-                  "uid": [
-                    "https://dymersion.com/"
-                  ],
-                  "name": [
-                    "Mike Merritt"
-                  ]
-                },
-                "value": "Mike Merritt"
-              }
-            ],
-            "content": [
-              {
-                "html": "<p>Recently I purchased and installed an SSL/TSL certificate for this website. Besides wanting to benefit from the security aspects of the installation, I just wanted to see if I could do it. Of course, CPanel, a common control panel on shared web hosts, makes it fairly simple.</p>\n<p>So I bought the cert, got it installed successfully, set up the 301 redirect from HTTP to HTTPS, enabled HSTS for so that all page loads are served by TLS, and even went through the tedious task of converting all image source attributes to be served securely. However, I noticed something odd. When I went to try out my redirect, I noticed that articles and second-level pages like the About the Author page would not redirect when I tried to access them from the HTTP protocol. The homepage redirected, but nothing else.</p>\n<p>I was baffled because everything I read said it was done correctly. Then I read that HSTS doesn’t work on the initial page load unless you apply for the pre-load program offered by browsers. It takes months to get on the approved list, though, and who has that kind of time where major hacks are now a monthly event?  Granted, TLS and HSTS won’t prevent the hack of an insecure piece of software, but I can at least ensure a secure connection for any visitors. In any case, it still didn’t make sense that it would be an HSTS issue, since a redirect should just forward the user to the specified URL format every time. My redirect from www to non-www worked, so why not this?</p>\n<p>I finally figured it out tonight. The HTTP to HTTPS redirect <strong>must</strong> be above everything else in .htaccess. At the very least, it must be above anything not having to do with redirect. In my case, I’m employing a caching plugin to enable gzip and other features, which also modifies .htaccess. For whatever reason, redirect on second-level pages will not work unless the redirect directive is the first one.</p>\n<p>I couldn’t find this solution anywhere else, so I hope it helps anyone who might be in the same boat.</p>",
-                "value": "Recently I purchased and installed an SSL/TSL certificate for this website. Besides wanting to benefit from the security aspects of the installation, I just wanted to see if I could do it. Of course, CPanel, a common control panel on shared web hosts, makes it fairly simple.\nSo I bought the cert, got it installed successfully, set up the 301 redirect from HTTP to HTTPS, enabled HSTS for so that all page loads are served by TLS, and even went through the tedious task of converting all image source attributes to be served securely. However, I noticed something odd. When I went to try out my redirect, I noticed that articles and second-level pages like the About the Author page would not redirect when I tried to access them from the HTTP protocol. The homepage redirected, but nothing else.\nI was baffled because everything I read said it was done correctly. Then I read that HSTS doesn’t work on the initial page load unless you apply for the pre-load program offered by browsers. It takes months to get on the approved list, though, and who has that kind of time where major hacks are now a monthly event?  Granted, TLS and HSTS won’t prevent the hack of an insecure piece of software, but I can at least ensure a secure connection for any visitors. In any case, it still didn’t make sense that it would be an HSTS issue, since a redirect should just forward the user to the specified URL format every time. My redirect from www to non-www worked, so why not this?\nI finally figured it out tonight. The HTTP to HTTPS redirect must be above everything else in .htaccess. At the very least, it must be above anything not having to do with redirect. In my case, I’m employing a caching plugin to enable gzip and other features, which also modifies .htaccess. For whatever reason, redirect on second-level pages will not work unless the redirect directive is the first one.\nI couldn’t find this solution anywhere else, so I hope it helps anyone who might be in the same boat."
-              }
-            ]
-          },
-          "id": "post-1069"
         }
       ]
     }
@@ -657,6 +663,7 @@
       "https://dymersion.com/page/2/"
     ],
     "bookmark": [
+      "https://dymersion.com/2022/12/no-longer-just-a-blog/",
       "https://dymersion.com/2022/12/theme-updated/",
       "https://dymersion.com/2022/11/the-moderation-conundrum/",
       "https://dymersion.com/2016/09/what-kind-of-temperament-do-we-want-in-a-president/",
@@ -665,16 +672,16 @@
       "https://dymersion.com/2015/09/leg-3-coast-starlight-and-los-angeles-sept-6-7/",
       "https://dymersion.com/2015/09/leg-2-san-francisco-sept-1-5/",
       "https://dymersion.com/2015/09/chicago-to-san-francisco-on-amtraks-california-zephyr/",
-      "https://dymersion.com/2015/08/cross-country-american-adventure-day-1/",
-      "https://dymersion.com/2015/07/https-redirects-must-be-above-everything-else-in-htaccess/"
+      "https://dymersion.com/2015/08/cross-country-american-adventure-day-1/"
     ],
     "author": [
       "https://dymersion.com/"
     ],
     "category": [
       "https://dymersion.com/category/dymersion/",
-      "https://dymersion.com/category/society/",
       "https://dymersion.com/category/technology/",
+      "https://dymersion.com/category/websites/",
+      "https://dymersion.com/category/society/",
       "https://dymersion.com/category/politics/",
       "https://dymersion.com/category/featured/",
       "https://dymersion.com/category/world-issues/",
@@ -682,10 +689,14 @@
     ],
     "tag": [
       "https://dymersion.com/category/dymersion/",
+      "https://dymersion.com/category/technology/",
+      "https://dymersion.com/category/websites/",
+      "https://dymersion.com/tag/activitypub/",
+      "https://dymersion.com/tag/fediverse/",
       "https://dymersion.com/tag/indieweb/",
+      "https://dymersion.com/tag/wpfriends/",
       "https://dymersion.com/tag/webmentions/",
       "https://dymersion.com/category/society/",
-      "https://dymersion.com/category/technology/",
       "https://dymersion.com/category/politics/",
       "https://dymersion.com/tag/donald-trump/",
       "https://dymersion.com/tag/rants/",
@@ -853,12 +864,12 @@
         "micropub"
       ]
     },
-    "https://dymersion.com/2022/12/theme-updated/": {
+    "https://dymersion.com/2022/12/no-longer-just-a-blog/": {
       "rels": [
         "bookmark"
       ],
-      "title": "Permalink to Theme Updated",
-      "text": "Theme Updated"
+      "title": "Permalink to No Longer Just a Blog",
+      "text": "No Longer Just a Blog"
     },
     "https://dymersion.com/category/dymersion/": {
       "rels": [
@@ -867,11 +878,50 @@
       ],
       "text": "Dymersion"
     },
+    "https://dymersion.com/category/technology/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Technology"
+    },
+    "https://dymersion.com/category/websites/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Websites"
+    },
+    "https://dymersion.com/tag/activitypub/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "activitypub"
+    },
+    "https://dymersion.com/tag/fediverse/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "fediverse"
+    },
     "https://dymersion.com/tag/indieweb/": {
       "rels": [
         "tag"
       ],
       "text": "indieweb"
+    },
+    "https://dymersion.com/tag/wpfriends/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "WPFriends"
+    },
+    "https://dymersion.com/2022/12/theme-updated/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to Theme Updated",
+      "text": "Theme Updated"
     },
     "https://dymersion.com/tag/webmentions/": {
       "rels": [
@@ -892,13 +942,6 @@
         "tag"
       ],
       "text": "Society"
-    },
-    "https://dymersion.com/category/technology/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "Technology"
     },
     "https://dymersion.com/2016/09/what-kind-of-temperament-do-we-want-in-a-president/": {
       "rels": [
@@ -994,13 +1037,6 @@
       ],
       "title": "Permalink to Cross-Country American Adventure: Day 1",
       "text": "Cross-Country American Adventure: Day 1"
-    },
-    "https://dymersion.com/2015/07/https-redirects-must-be-above-everything-else-in-htaccess/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Permalink to HTTPS Redirects Must be Above Everything Else in .htaccess",
-      "text": "HTTPS Redirects Must be Above Everything Else in .htaccess"
     },
     "http://wordpress.org/": {
       "rels": [

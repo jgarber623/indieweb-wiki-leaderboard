@@ -17,6 +17,28 @@
             ],
             "content": [
               {
+                "html": "<div class=\"e-content\">\n<p>Lazyweb request – I tried converting my OPML Zettelkasten <a href=\"http://drummer.this.how/AndySylvester99/Andy_Zettelkasten.opml\">file</a> into Markdown using <a href=\"https://pandoc.org/\">Pandoc</a>, but got an “Invalid XML” error, because I have URLs within the outline elements. Any suggestions for fixing this? I am looking at <a href=\"https://github.com/scripting/opmlToJs\">opmlToJs </a>to get the OPML in JSON, then use <a href=\"https://www.npmjs.com/package/sanitize-html\">sanitize-html</a> to escape the URLs, then write it back out using <a href=\"https://github.com/scripting/opmlToJs\">opmlToJs</a>. Other suggestions welcome!</p>\n</div>\n<div class=\"syndication-links\"></div>",
+                "value": "Lazyweb request – I tried converting my OPML Zettelkasten file into Markdown using Pandoc, but got an “Invalid XML” error, because I have URLs within the outline elements. Any suggestions for fixing this? I am looking at opmlToJs to get the OPML in JSON, then use sanitize-html to escape the URLs, then write it back out using opmlToJs. Other suggestions welcome!"
+              },
+              {
+                "html": "<p>Lazyweb request – I tried converting my OPML Zettelkasten <a href=\"http://drummer.this.how/AndySylvester99/Andy_Zettelkasten.opml\">file</a> into Markdown using <a href=\"https://pandoc.org/\">Pandoc</a>, but got an “Invalid XML” error, because I have URLs within the outline elements. Any suggestions for fixing this? I am looking at <a href=\"https://github.com/scripting/opmlToJs\">opmlToJs </a>to get the OPML in JSON, then use <a href=\"https://www.npmjs.com/package/sanitize-html\">sanitize-html</a> to escape the URLs, then write it back out using <a href=\"https://github.com/scripting/opmlToJs\">opmlToJs</a>. Other suggestions welcome!</p>",
+                "value": "Lazyweb request – I tried converting my OPML Zettelkasten file into Markdown using Pandoc, but got an “Invalid XML” error, because I have URLs within the outline elements. Any suggestions for fixing this? I am looking at opmlToJs to get the OPML in JSON, then use sanitize-html to escape the URLs, then write it back out using opmlToJs. Other suggestions welcome!"
+              }
+            ]
+          },
+          "id": "post-2705"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "",
+              ""
+            ],
+            "content": [
+              {
                 "html": "<div class=\"e-content\">\n<p>I was able to confirm this morning that <a href=\"http://walkthrough.rsscloud.co/\">rssCloud </a>support in <a href=\"http://feedland.org/\">FeedLand </a>worked for my WordPress.com test <a href=\"https://rsscloud4.wordpress.com/\">site </a>– hurray! Many thanks to <a href=\"https://blog.andrewshell.org/\">Andrew Shell</a> and <a href=\"http://scripting.com/?tab=blog\">Dave Winer</a> for working things out, along with support from <a href=\"https://blog.josephscott.org/\">Joseph Scott</a> at Automattic. Joseph Scott released a new version of the <a href=\"https://wordpress.org/plugins/rsscloud/\">RSS Cloud</a> plugin today for WordPress.org sites, I did an initial test, but FeedLand did not get a rssCloud update from my <a href=\"https://rsscloud.andysylvester.com/\">test site</a>. I got some <a href=\"https://gist.github.com/andrewshell/8b57f96bf62a1dea9fa1a8137e13951a?permalink_comment_id=4402647#gistcomment-4402647\">debug ideas</a> from Joseph Scott, working on those now.</p>\n</div>\n<div class=\"syndication-links\"></div>",
                 "value": "I was able to confirm this morning that rssCloud support in FeedLand worked for my WordPress.com test site – hurray! Many thanks to Andrew Shell and Dave Winer for working things out, along with support from Joseph Scott at Automattic. Joseph Scott released a new version of the RSS Cloud plugin today for WordPress.org sites, I did an initial test, but FeedLand did not get a rssCloud update from my test site. I got some debug ideas from Joseph Scott, working on those now."
               },
@@ -203,28 +225,6 @@
             ]
           },
           "id": "post-2679"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "",
-              ""
-            ],
-            "content": [
-              {
-                "html": "<div class=\"e-content\">\n<p>Lazyweb request – I am trying to make sure WordPress is not caching RSS feeds, I tried <a href=\"https://brightwhiz.com/how-to-stop-wordpress-from-displaying-a-cached-rss-feed/\">these things</a> but it did not work. WordPress devs, please get in touch if you have any ideas! I am trying to test a RSS Cloud plugin I developed.</p>\n</div>\n<div class=\"syndication-links\"></div>",
-                "value": "Lazyweb request – I am trying to make sure WordPress is not caching RSS feeds, I tried these things but it did not work. WordPress devs, please get in touch if you have any ideas! I am trying to test a RSS Cloud plugin I developed."
-              },
-              {
-                "html": "<p>Lazyweb request – I am trying to make sure WordPress is not caching RSS feeds, I tried <a href=\"https://brightwhiz.com/how-to-stop-wordpress-from-displaying-a-cached-rss-feed/\">these things</a> but it did not work. WordPress devs, please get in touch if you have any ideas! I am trying to test a RSS Cloud plugin I developed.</p>",
-                "value": "Lazyweb request – I am trying to make sure WordPress is not caching RSS feeds, I tried these things but it did not work. WordPress devs, please get in touch if you have any ideas! I am trying to test a RSS Cloud plugin I developed."
-              }
-            ]
-          },
-          "id": "post-2676"
         }
       ]
     }
@@ -282,6 +282,7 @@
       "https://andysylvester.com/"
     ],
     "bookmark": [
+      "https://andysylvester.com/2022/12/16/2705/",
       "https://andysylvester.com/2022/12/14/2703/",
       "https://andysylvester.com/2022/12/12/2699/",
       "https://andysylvester.com/2022/12/10/an-unfortunate-exercise-of-editorial-discretion-by-dave-winer/",
@@ -290,22 +291,21 @@
       "https://andysylvester.com/2022/12/09/2687/",
       "https://andysylvester.com/2022/12/07/2684/",
       "https://andysylvester.com/2022/12/04/rss-cloud-support-in-wordpress-com-not-working/",
-      "https://andysylvester.com/2022/12/02/2679/",
-      "https://andysylvester.com/2022/11/20/2676/"
+      "https://andysylvester.com/2022/12/02/2679/"
     ],
     "category": [
+      "https://andysylvester.com/category/opml/",
       "https://andysylvester.com/category/feed-readers/",
       "https://andysylvester.com/category/feeds/",
       "https://andysylvester.com/category/rsscloud/",
-      "https://andysylvester.com/category/mastodon/",
-      "https://andysylvester.com/category/wordpress/"
+      "https://andysylvester.com/category/mastodon/"
     ],
     "tag": [
+      "https://andysylvester.com/category/opml/",
       "https://andysylvester.com/category/feed-readers/",
       "https://andysylvester.com/category/feeds/",
       "https://andysylvester.com/category/rsscloud/",
-      "https://andysylvester.com/category/mastodon/",
-      "https://andysylvester.com/category/wordpress/"
+      "https://andysylvester.com/category/mastodon/"
     ],
     "designer": [
       "http://independentpublisher.me/"
@@ -454,6 +454,19 @@
       ],
       "title": "Andy Sylvester's Web"
     },
+    "https://andysylvester.com/2022/12/16/2705/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to"
+    },
+    "https://andysylvester.com/category/opml/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "OPML"
+    },
     "https://andysylvester.com/2022/12/14/2703/": {
       "rels": [
         "bookmark"
@@ -537,19 +550,6 @@
         "tag"
       ],
       "text": "Mastodon"
-    },
-    "https://andysylvester.com/2022/11/20/2676/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Permalink to"
-    },
-    "https://andysylvester.com/category/wordpress/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "WordPress"
     },
     "http://independentpublisher.me/": {
       "rels": [

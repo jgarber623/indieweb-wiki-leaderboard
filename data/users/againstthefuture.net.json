@@ -1,6 +1,16 @@
 {
   "items": [],
   "rels": {
+    "icon": [
+      "https://micro.blog/jdm/favicon.png"
+    ],
+    "shortcut": [
+      "https://micro.blog/jdm/favicon.png"
+    ],
+    "stylesheet": [
+      "https://againstthefuture.net/css/style.css?1671207261",
+      "https://againstthefuture.net/custom.css?1671207261"
+    ],
     "alternate": [
       "https://againstthefuture.net/feed.xml",
       "https://againstthefuture.net/podcast.xml",
@@ -9,18 +19,52 @@
     "EditURI": [
       "https://againstthefuture.net/rsd.xml"
     ],
-    "stylesheet": [
-      "https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap",
-      "https://fonts.googleapis.com/css?family=Roboto+Mono",
-      "https://againstthefuture.net/css/main.css?1671073492",
-      "https://againstthefuture.net/css/dark.css?1671073492",
-      "https://againstthefuture.net/custom.css?1671073492"
+    "me": [
+      "https://micro.blog/jdm"
+    ],
+    "authorization_endpoint": [
+      "https://micro.blog/indieauth/auth"
+    ],
+    "token_endpoint": [
+      "https://micro.blog/indieauth/token"
+    ],
+    "micropub": [
+      "https://micro.blog/micropub"
+    ],
+    "microsub": [
+      "https://micro.blog/microsub"
+    ],
+    "webmention": [
+      "https://micro.blog/webmention"
+    ],
+    "subscribe": [
+      "https://micro.blog/users/follow"
+    ],
+    "canonical": [
+      "https://againstthefuture.net/"
     ],
     "license": [
       "http://creativecommons.org/licenses/by-nc-nd/4.0/"
     ]
   },
   "rel-urls": {
+    "https://micro.blog/jdm/favicon.png": {
+      "rels": [
+        "icon",
+        "shortcut"
+      ],
+      "type": "image/x-icon"
+    },
+    "https://againstthefuture.net/css/style.css?1671207261": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://againstthefuture.net/custom.css?1671207261": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
     "https://againstthefuture.net/feed.xml": {
       "rels": [
         "alternate"
@@ -48,35 +92,45 @@
       ],
       "type": "application/rsd+xml"
     },
-    "https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap": {
+    "https://micro.blog/jdm": {
       "rels": [
-        "stylesheet"
+        "me"
       ]
     },
-    "https://fonts.googleapis.com/css?family=Roboto+Mono": {
+    "https://micro.blog/indieauth/auth": {
       "rels": [
-        "stylesheet"
+        "authorization_endpoint"
       ]
     },
-    "https://againstthefuture.net/css/main.css?1671073492": {
+    "https://micro.blog/indieauth/token": {
       "rels": [
-        "stylesheet"
-      ],
-      "media": "screen",
-      "type": "text/css"
+        "token_endpoint"
+      ]
     },
-    "https://againstthefuture.net/css/dark.css?1671073492": {
+    "https://micro.blog/micropub": {
       "rels": [
-        "stylesheet"
-      ],
-      "media": "(prefers-color-scheme: dark)",
-      "type": "text/css"
+        "micropub"
+      ]
     },
-    "https://againstthefuture.net/custom.css?1671073492": {
+    "https://micro.blog/microsub": {
       "rels": [
-        "stylesheet"
-      ],
-      "type": "text/css"
+        "microsub"
+      ]
+    },
+    "https://micro.blog/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://micro.blog/users/follow": {
+      "rels": [
+        "subscribe"
+      ]
+    },
+    "https://againstthefuture.net/": {
+      "rels": [
+        "canonical"
+      ]
     },
     "http://creativecommons.org/licenses/by-nc-nd/4.0/": {
       "rels": [

@@ -35,21 +35,25 @@
     "stylesheet": [
       "https://assets.tumblr.com/pop/css/main-6de3c2c4.css",
       "https://assets.tumblr.com/pop/1150-e4ff5810.css",
-      "https://assets.tumblr.com/pop/5941-e85d9ed6.css",
+      "https://assets.tumblr.com/pop/4806-312a5eed.css",
       "https://assets.tumblr.com/pop/2219-350dfd00.css",
       "https://assets.tumblr.com/pop/1026-04c23bc3.css",
       "https://assets.tumblr.com/pop/5693-5b366406.css",
-      "https://assets.tumblr.com/pop/peepr-route-64c93027.css"
+      "https://assets.tumblr.com/pop/peepr-route-2090a9c3.css"
     ],
     "manifest": [
       "https://www.tumblr.com/manifest.json"
     ],
     "noopener": [
       "https://www.tumblr.com/antipolar",
+      "https://www.tumblr.com/settings/ad-free-browsing?source=rail",
       "https://www.google.com/chrome",
       "https://www.mozilla.org/firefox",
       "https://support.apple.com/downloads/safari",
       "https://www.microsoft.com/windows/microsoft-edge"
+    ],
+    "noreferrer": [
+      "https://www.tumblr.com/settings/ad-free-browsing?source=rail"
     ]
   },
   "rel-urls": {
@@ -131,7 +135,7 @@
       ],
       "type": "text/css"
     },
-    "https://assets.tumblr.com/pop/5941-e85d9ed6.css": {
+    "https://assets.tumblr.com/pop/4806-312a5eed.css": {
       "rels": [
         "stylesheet"
       ],
@@ -155,7 +159,7 @@
       ],
       "type": "text/css"
     },
-    "https://assets.tumblr.com/pop/peepr-route-64c93027.css": {
+    "https://assets.tumblr.com/pop/peepr-route-2090a9c3.css": {
       "rels": [
         "stylesheet"
       ],
@@ -165,6 +169,13 @@
       "rels": [
         "manifest"
       ]
+    },
+    "https://www.tumblr.com/settings/ad-free-browsing?source=rail": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "Wanna go ad-free?"
     },
     "https://www.google.com/chrome": {
       "rels": [

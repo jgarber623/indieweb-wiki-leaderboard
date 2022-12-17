@@ -35,6 +35,72 @@
           "properties": {
             "content": [
               {
+                "html": "<p>(As)symmetry.</p>",
+                "value": "(As)symmetry."
+              }
+            ],
+            "photo": [
+              "https://cdn.hacdias.com/img/2000/7b6cbda7095232a61af0780fd23f1f5e43484a6178a8642366453190c6d2b280.jpeg"
+            ],
+            "location": [
+              {
+                "type": [
+                  "h-adr"
+                ],
+                "properties": {
+                  "locality": [
+                    "Eindhoven"
+                  ],
+                  "region": [
+                    "North Brabant"
+                  ],
+                  "country": [
+                    "Netherlands"
+                  ]
+                },
+                "value": "Eindhoven, North Brabant, Netherlands"
+              }
+            ],
+            "updated": [
+              "2022-12-16T20:36:46+01:00"
+            ],
+            "url": [
+              "https://hacdias.com/2022/12/16/symmetry"
+            ],
+            "published": [
+              "2022-12-16T20:35:05+01:00"
+            ],
+            "syndication": [
+              "https://www.instagram.com/p/CmPZ_VBoXh7"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "url": [
+                    "https://hacdias.com/"
+                  ],
+                  "name": [
+                    "Henrique Dias"
+                  ],
+                  "photo": [
+                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
+                  ]
+                },
+                "value": "https://hacdias.com/"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
                 "html": "<p>Programming is always a fun thing. And that’s what we, developers, do. Sometimes we also write functionalities that we never use, even if we think that we’re going to <a href=\"https://indieweb.org/selfdogfood\" rel=\"noopener noreferrer\">selfdogfood</a> them. Some time ago, I added authentication to this website such that anyone with IndieAuth could log in in it. In addition, I added private posts. However, have I ever used them? Basically no. Yes, I have used some private posts in the past but that is not something I have done for a long while. In addition, if I want to share something with someone specific, chances are that we already have some communication channel that is easier to use for both of us other than my website. I’m now considering removing private posts and login from others than me. Less code to maintain, less vectors of attack and issues. What do you think?</p>",
                 "value": "Programming is always a fun thing. And that’s what we, developers, do. Sometimes we also write functionalities that we never use, even if we think that we’re going to selfdogfood them. Some time ago, I added authentication to this website such that anyone with IndieAuth could log in in it. In addition, I added private posts. However, have I ever used them? Basically no. Yes, I have used some private posts in the past but that is not something I have done for a long while. In addition, if I want to share something with someone specific, chances are that we already have some communication channel that is easier to use for both of us other than my website. I’m now considering removing private posts and login from others than me. Less code to maintain, less vectors of attack and issues. What do you think?"
               }
@@ -585,47 +651,6 @@
               }
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "A Small Update On My OVPay Experiment"
-            ],
-            "summary": [
-              "In the beginning of last month, I wrote a post about trying out the new payment system for public transit in The Netherlands, OVPay 💳. On it, I mentioned quite a few things regarding different operators. It’s been around a month, and I’ve had the opportunity to travel again on Hermes 🚍 buses using OVPay. Here’s the update."
-            ],
-            "published": [
-              "2022-12-03T19:33:52+01:00"
-            ],
-            "url": [
-              "https://hacdias.com/2022/12/03/update-on-ovpay-experiment"
-            ],
-            "category": [
-              "ovpay"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "url": [
-                    "https://hacdias.com/"
-                  ],
-                  "name": [
-                    "Henrique Dias"
-                  ],
-                  "photo": [
-                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
-                  ]
-                },
-                "value": "https://hacdias.com/"
-              }
-            ]
-          }
         }
       ]
     }
@@ -643,7 +668,7 @@
       "https://hacdias.com/.rss"
     ],
     "stylesheet": [
-      "https://hacdias.com/assets/85de31736680aa47c8b09fadf6a24a1ee6f4339014c31a1d88cf8a16a8c49a44.css"
+      "https://hacdias.com/assets/7a58952110217928097a342a4d79c31cfcb907623615364f6b40cdb3f76d84fc.css"
     ],
     "indieauth-metadata": [
       "https://hacdias.com/.well-known/oauth-authorization-server"
@@ -685,11 +710,13 @@
       "mailto:mail@hacdias.com"
     ],
     "noopener": [
+      "https://www.instagram.com/p/CmPZ_VBoXh7",
       "https://indieweb.org/selfdogfood",
       "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/previous",
       "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/next"
     ],
     "noreferrer": [
+      "https://www.instagram.com/p/CmPZ_VBoXh7",
       "https://indieweb.org/selfdogfood",
       "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/previous",
       "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/next"
@@ -725,7 +752,7 @@
       ],
       "type": "application/rss+xml"
     },
-    "https://hacdias.com/assets/85de31736680aa47c8b09fadf6a24a1ee6f4339014c31a1d88cf8a16a8c49a44.css": {
+    "https://hacdias.com/assets/7a58952110217928097a342a4d79c31cfcb907623615364f6b40cdb3f76d84fc.css": {
       "rels": [
         "stylesheet"
       ]
@@ -814,6 +841,13 @@
       "rels": [
         "pingback"
       ]
+    },
+    "https://www.instagram.com/p/CmPZ_VBoXh7": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "📷"
     },
     "https://indieweb.org/selfdogfood": {
       "rels": [

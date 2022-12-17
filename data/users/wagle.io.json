@@ -1,5 +1,250 @@
 {
-  "items": [],
-  "rels": {},
-  "rel-urls": {}
+  "items": [
+    {
+      "type": [
+        "h-as-page",
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Overview"
+        ],
+        "content": [
+          {
+            "html": "<p style=\"padding-left: 40px;\">This is the root server for my all wordpress sites.</p>\n<div class=\"syndication-links\"></div>",
+            "value": "This is the root server for my all wordpress sites."
+          }
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "profile": [
+      "http://microformats.org/profile/specs",
+      "http://microformats.org/profile/hatom"
+    ],
+    "alternate": [
+      "https://wagle.io/feed/",
+      "https://wagle.io/comments/feed/",
+      "https://wagle.io/wp-json/wp/v2/pages/97",
+      "https://wagle.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwagle.io%2F"
+    ],
+    "stylesheet": [
+      "https://wagle.io/wp-content/plugins/wp-quicklatex/css/quicklatex-format.css?ver=6.1.1",
+      "https://wagle.io/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1",
+      "https://wagle.io/wp-includes/css/classic-themes.min.css?ver=1",
+      "https://wagle.io/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
+      "https://wagle.io/wp-content/plugins/simple-location/css/location.min.css?ver=5.0.4",
+      "https://wagle.io/wp-content/plugins/indieweb-post-kinds/css/kind.min.css?ver=3.6.2",
+      "https://wagle.io/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3",
+      "https://wagle.io/wp-content/themes/SemPress-master/sempress/style.css?ver=6.1.1",
+      "https://wagle.io/wp-content/plugins/syndication-links/css/syn.min.css?ver=4.3.12"
+    ],
+    "https://api.w.org/": [
+      "https://wagle.io/wp-json/"
+    ],
+    "EditURI": [
+      "https://wagle.io/xmlrpc.php?rsd"
+    ],
+    "wlwmanifest": [
+      "https://wagle.io/wp-includes/wlwmanifest.xml"
+    ],
+    "canonical": [
+      "https://wagle.io/"
+    ],
+    "authorization_endpoint": [
+      "https://wagle.io/wp-json/indieauth/1.0/auth"
+    ],
+    "token_endpoint": [
+      "https://wagle.io/wp-json/indieauth/1.0/token"
+    ],
+    "me": [
+      "https://github.com/wagle",
+      "https://twitter.com/PerryWagle",
+      "https://www.facebook.com/perry.wagle",
+      "https://www.flickr.com/people/perry_wagle"
+    ],
+    "micropub_media": [
+      "https://wagle.io/wp-json/micropub/1.0/media"
+    ],
+    "micropub": [
+      "https://wagle.io/wp-json/micropub/1.0/endpoint"
+    ],
+    "home": [
+      "https://wagle.io/"
+    ],
+    "generator": [
+      "http://wordpress.org/"
+    ]
+  },
+  "rel-urls": {
+    "http://microformats.org/profile/specs": {
+      "rels": [
+        "profile"
+      ]
+    },
+    "http://microformats.org/profile/hatom": {
+      "rels": [
+        "profile"
+      ]
+    },
+    "https://wagle.io/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Perry Wagle » Feed",
+      "type": "application/rss+xml"
+    },
+    "https://wagle.io/comments/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Perry Wagle » Comments Feed",
+      "type": "application/rss+xml"
+    },
+    "https://wagle.io/wp-content/plugins/wp-quicklatex/css/quicklatex-format.css?ver=6.1.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://wagle.io/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://wagle.io/wp-includes/css/classic-themes.min.css?ver=1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://wagle.io/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://wagle.io/wp-content/plugins/simple-location/css/location.min.css?ver=5.0.4": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://wagle.io/wp-content/plugins/indieweb-post-kinds/css/kind.min.css?ver=3.6.2": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://wagle.io/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://wagle.io/wp-content/themes/SemPress-master/sempress/style.css?ver=6.1.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://wagle.io/wp-content/plugins/syndication-links/css/syn.min.css?ver=4.3.12": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://wagle.io/wp-json/": {
+      "rels": [
+        "https://api.w.org/"
+      ]
+    },
+    "https://wagle.io/wp-json/wp/v2/pages/97": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/json"
+    },
+    "https://wagle.io/xmlrpc.php?rsd": {
+      "rels": [
+        "EditURI"
+      ],
+      "title": "RSD",
+      "type": "application/rsd+xml"
+    },
+    "https://wagle.io/wp-includes/wlwmanifest.xml": {
+      "rels": [
+        "wlwmanifest"
+      ],
+      "type": "application/wlwmanifest+xml"
+    },
+    "https://wagle.io/": {
+      "rels": [
+        "canonical"
+      ]
+    },
+    "https://wagle.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwagle.io%2F": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/json+oembed"
+    },
+    "https://wagle.io/wp-json/indieauth/1.0/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://wagle.io/wp-json/indieauth/1.0/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://github.com/wagle": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://twitter.com/PerryWagle": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://www.facebook.com/perry.wagle": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://www.flickr.com/people/perry_wagle": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://wagle.io/wp-json/micropub/1.0/media": {
+      "rels": [
+        "micropub_media"
+      ]
+    },
+    "https://wagle.io/wp-json/micropub/1.0/endpoint": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "http://wordpress.org/": {
+      "rels": [
+        "generator"
+      ],
+      "text": "WordPress"
+    }
+  }
 }
