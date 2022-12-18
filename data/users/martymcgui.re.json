@@ -74,21 +74,15 @@
       "properties": {
         "content": [
           {
-            "html": "<div class=\"videos\">\n    \n      <video loop controls preload=\"metadata\" muted playsinline poster=\"https://res.cloudinary.com/schmarty/video/upload/vc_h264/mmmgre/9a/b4/3a/1e/c77b9a13f90e90050c6c1bb5496f4e3edd43e1236e796dce824b1e34.jpg\" style=\"width: 100%\">\n  <source class=\"u-video\" type=\"video/mp4\" src=\"https://res.cloudinary.com/schmarty/video/upload/vc_h264/mmmgre/9a/b4/3a/1e/c77b9a13f90e90050c6c1bb5496f4e3edd43e1236e796dce824b1e34.mov\"></source>\n</video>\n\n</div>\n  <p>Are you escaping your shell during eternal Caturday?</p>",
-            "value": "Are you escaping your shell during eternal Caturday?"
+            "html": "<p>Gift calendar updates, Twitter meltdowns, and a return of webactions. It’s your &lt; 10min update on the #IndieWeb community!</p>\n<p>This Week in the IndieWeb audio edition for December 10th - 16th, 2022.\n<a href=\"https://martymcgui.re/2022/12/17/this-week-in-the-indieweb-audio-edition--december-10th---16th-2022/\">https://martymcgui.re/2022/12/17/this-week-in-the-indieweb-audio-edition--december-10th---16th-2022/</a></p>",
+            "value": "Gift calendar updates, Twitter meltdowns, and a return of webactions. It’s your < 10min update on the #IndieWeb community!\nThis Week in the IndieWeb audio edition for December 10th - 16th, 2022.\nhttps://martymcgui.re/2022/12/17/this-week-in-the-indieweb-audio-edition--december-10th---16th-2022/"
           }
         ],
-        "video": [
-          "https://res.cloudinary.com/schmarty/video/upload/vc_h264/mmmgre/9a/b4/3a/1e/c77b9a13f90e90050c6c1bb5496f4e3edd43e1236e796dce824b1e34.mov"
-        ],
-        "category": [
-          "Caturday"
-        ],
         "url": [
-          "https://martymcgui.re/2022/12/17/002821/"
+          "https://martymcgui.re/2022/12/17/145846/"
         ],
         "published": [
-          "2022-12-17T00:28:21-0500"
+          "2022-12-17T14:58:46-0500"
         ],
         "author": [
           {
@@ -111,8 +105,57 @@
             },
             "value": "https://martymcgui.re/"
           }
+        ],
+        "syndication": [
+          "https://fed.brid.gy/"
         ]
-      }
+      },
+      "children": [
+        {
+          "type": [
+            "h-cite"
+          ],
+          "properties": {
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "url": [
+                    "https://martymcgui.re/"
+                  ],
+                  "photo": [
+                    {
+                      "value": "https://res.cloudinary.com/schmarty/image/fetch/w_60,c_fill/https://martymcgui.re/images/logo.jpg",
+                      "alt": ""
+                    }
+                  ],
+                  "name": [
+                    "Marty McGuire"
+                  ]
+                },
+                "value": "Marty McGuire"
+              }
+            ],
+            "url": [
+              "https://martymcgui.re/2022/12/17/this-week-in-the-indieweb-audio-edition--december-10th---16th-2022/"
+            ],
+            "published": [
+              "2022-12-17T14:53:42-0500"
+            ],
+            "name": [
+              "This Week in the IndieWeb Audio Edition • December 10th - 16th, 2022"
+            ],
+            "summary": [
+              "Show/Hide Transcript"
+            ],
+            "audio": [
+              "https://media.martymcgui.re/ab/38/ef/f4/48a1e5bd16f6a68243de47ae50236b979632a74277ac06558e7958af.mp3"
+            ]
+          }
+        }
+      ]
     }
   ],
   "rels": {
@@ -176,10 +219,13 @@
       "https://martymcgui.re/pgp.asc"
     ],
     "shortlink": [
-      "http://mmg.re/5NP5UM"
+      "http://mmg.re/5NPKym"
     ],
     "author": [
       "https://martymcgui.re/"
+    ],
+    "syndication": [
+      "https://fed.brid.gy/"
     ]
   },
   "rel-urls": {
@@ -290,12 +336,17 @@
       "title": "PGP Key",
       "type": "application/pgp-keys"
     },
-    "http://mmg.re/5NP5UM": {
+    "http://mmg.re/5NPKym": {
       "rels": [
         "shortlink"
       ],
       "type": "text/html",
       "text": "🔗"
+    },
+    "https://fed.brid.gy/": {
+      "rels": [
+        "syndication"
+      ]
     }
   }
 }

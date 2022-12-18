@@ -1,5 +1,124 @@
 {
   "items": [],
-  "rels": {},
-  "rel-urls": {}
+  "rels": {
+    "dns-prefetch": [
+      "http://sarahmundy.com/"
+    ],
+    "alternate": [
+      "http://sarahmundy.com/feed/",
+      "http://sarahmundy.com/comments/feed/",
+      "http://sarahmundy.com/wp-json/wp/v2/pages/10",
+      "http://sarahmundy.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fsarahmundy.com%2F",
+      "http://sarahmundy.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fsarahmundy.com%2F&format=xml"
+    ],
+    "stylesheet": [
+      "http://sarahmundy.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1",
+      "http://sarahmundy.com/wp-includes/css/classic-themes.min.css?ver=1",
+      "http://sarahmundy.com/wp-content/themes/twentytwentyone/style.css?ver=1.4",
+      "http://sarahmundy.com/wp-content/themes/twentytwentyone/assets/css/print.css?ver=1.4",
+      "http://sarahmundy.com/wp-content/themes/twentytwentyone/assets/css/style-dark-mode.css?ver=1.4"
+    ],
+    "https://api.w.org/": [
+      "http://sarahmundy.com/wp-json/"
+    ],
+    "EditURI": [
+      "http://sarahmundy.com/xmlrpc.php?rsd"
+    ],
+    "wlwmanifest": [
+      "http://sarahmundy.com/wp-includes/wlwmanifest.xml"
+    ],
+    "canonical": [
+      "http://sarahmundy.com/"
+    ],
+    "shortlink": [
+      "http://sarahmundy.com/"
+    ]
+  },
+  "rel-urls": {
+    "http://sarahmundy.com/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
+    "http://sarahmundy.com/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Sarah Mundy » Feed",
+      "type": "application/rss+xml"
+    },
+    "http://sarahmundy.com/comments/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Sarah Mundy » Comments Feed",
+      "type": "application/rss+xml"
+    },
+    "http://sarahmundy.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "http://sarahmundy.com/wp-includes/css/classic-themes.min.css?ver=1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "http://sarahmundy.com/wp-content/themes/twentytwentyone/style.css?ver=1.4": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "http://sarahmundy.com/wp-content/themes/twentytwentyone/assets/css/print.css?ver=1.4": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "print"
+    },
+    "http://sarahmundy.com/wp-content/themes/twentytwentyone/assets/css/style-dark-mode.css?ver=1.4": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "http://sarahmundy.com/wp-json/": {
+      "rels": [
+        "https://api.w.org/"
+      ]
+    },
+    "http://sarahmundy.com/wp-json/wp/v2/pages/10": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/json"
+    },
+    "http://sarahmundy.com/xmlrpc.php?rsd": {
+      "rels": [
+        "EditURI"
+      ],
+      "title": "RSD",
+      "type": "application/rsd+xml"
+    },
+    "http://sarahmundy.com/wp-includes/wlwmanifest.xml": {
+      "rels": [
+        "wlwmanifest"
+      ],
+      "type": "application/wlwmanifest+xml"
+    },
+    "http://sarahmundy.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fsarahmundy.com%2F": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/json+oembed"
+    },
+    "http://sarahmundy.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fsarahmundy.com%2F&format=xml": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "text/xml+oembed"
+    }
+  }
 }

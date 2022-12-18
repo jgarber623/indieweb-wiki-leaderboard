@@ -67,13 +67,20 @@
     "wlwmanifest": [
       "https://shawfactor.com/wp-includes/wlwmanifest.xml"
     ],
+    "authorization_endpoint": [
+      "https://shawfactor.com/wp-json/indieauth/1.0/auth"
+    ],
+    "token_endpoint": [
+      "https://shawfactor.com/wp-json/indieauth/1.0/token"
+    ],
     "preload": [
       "https://localhero.biz/wp-content/plugins/lh-web-application/scripts/localforage.min.js?ver=1586195098",
       "https://localhero.biz/wp-content/plugins/lh-web-application/scripts/lh-web-application-main.js?ver=1646236861",
       "https://localhero.biz/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=7.2.0",
       "https://localhero.biz/wp-content/themes/twentysixteen/js/skip-link-focus-fix.js?ver=20170530",
       "https://localhero.biz/wp-content/themes/twentysixteen/js/functions.js?ver=20211130",
-      "https://localhero.biz/wp-content/plugins/lh-fresh-content/scripts/lh-fresh-content.js?ver=1645235437"
+      "https://localhero.biz/wp-content/plugins/lh-fresh-content/scripts/lh-fresh-content.js?ver=1645235437",
+      "https://localhero.biz/wp-content/plugins/lh-prefetch-and-render/scripts/lh-prefetch-and-render.js?ver=1648523667"
     ],
     "meta": [
       "http://shawfactor.com/?feed=lhrdf&format=json",
@@ -95,6 +102,12 @@
     ],
     "micropub": [
       "https://shawfactor.com/wp-json/micropub/1.0/endpoint"
+    ],
+    "next": [
+      "https://shawfactor.com/page/2/"
+    ],
+    "canonical": [
+      "https://shawfactor.com/"
     ],
     "home": [
       "https://shawfactor.com/"
@@ -390,6 +403,16 @@
         "alternate"
       ]
     },
+    "https://shawfactor.com/wp-json/indieauth/1.0/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://shawfactor.com/wp-json/indieauth/1.0/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
     "https://localhero.biz/wp-content/plugins/lh-web-application/scripts/localforage.min.js?ver=1586195098": {
       "rels": [
         "preload"
@@ -416,6 +439,11 @@
       ]
     },
     "https://localhero.biz/wp-content/plugins/lh-fresh-content/scripts/lh-fresh-content.js?ver=1645235437": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://localhero.biz/wp-content/plugins/lh-prefetch-and-render/scripts/lh-prefetch-and-render.js?ver=1648523667": {
       "rels": [
         "preload"
       ]
@@ -489,11 +517,15 @@
         "micropub"
       ]
     },
+    "https://shawfactor.com/page/2/": {
+      "rels": [
+        "next"
+      ]
+    },
     "https://shawfactor.com/": {
       "rels": [
-        "home"
-      ],
-      "text": "Shawfactor"
+        "canonical"
+      ]
     },
     "https://shawfactor.com/2022/04/01/princes-park-touch-winter-2021/": {
       "rels": [

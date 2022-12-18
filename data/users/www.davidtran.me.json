@@ -27,6 +27,12 @@
     "next": [
       "https://www.davidtran.me/page2"
     ],
+    "webmention": [
+      "https://webmention.io/www.davidtran.me/webmention"
+    ],
+    "pingback": [
+      "https://webmention.io/www.davidtran.me/xmlrpc"
+    ],
     "me": [
       "https://instagram.com/dtran",
       "https://github.com/dtran320",
@@ -54,6 +60,16 @@
     "https://www.davidtran.me/page2": {
       "rels": [
         "next"
+      ]
+    },
+    "https://webmention.io/www.davidtran.me/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://webmention.io/www.davidtran.me/xmlrpc": {
+      "rels": [
+        "pingback"
       ]
     },
     "https://instagram.com/dtran": {

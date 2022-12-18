@@ -17,6 +17,50 @@
             ],
             "content": [
               {
+                "html": "<div class=\"e-content\">\n<p>Lazyweb followup – After some testing with <a href=\"https://github.com/scripting/opmlPackage\">opmlPackage</a>, I figured out that I needed to get the OPML of my Zettelkasten file using <a href=\"http://drummer.scripting.com/AndySylvester99/Andy_Zettelkasten.opml\">this </a>URL and then selecting View Source and copying. Once I did that, I was able to process it using Pandoc.</p>\n</div>\n<div class=\"syndication-links\"></div>",
+                "value": "Lazyweb followup – After some testing with opmlPackage, I figured out that I needed to get the OPML of my Zettelkasten file using this URL and then selecting View Source and copying. Once I did that, I was able to process it using Pandoc."
+              },
+              {
+                "html": "<p>Lazyweb followup – After some testing with <a href=\"https://github.com/scripting/opmlPackage\">opmlPackage</a>, I figured out that I needed to get the OPML of my Zettelkasten file using <a href=\"http://drummer.scripting.com/AndySylvester99/Andy_Zettelkasten.opml\">this </a>URL and then selecting View Source and copying. Once I did that, I was able to process it using Pandoc.</p>",
+                "value": "Lazyweb followup – After some testing with opmlPackage, I figured out that I needed to get the OPML of my Zettelkasten file using this URL and then selecting View Source and copying. Once I did that, I was able to process it using Pandoc."
+              }
+            ]
+          },
+          "id": "post-2710"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Test results for rssCloud app from Dave Winer",
+              "Test results for rssCloud app from Dave Winer"
+            ],
+            "content": [
+              {
+                "html": "<div class=\"e-content\">\n<p>I couldn’t leave a comment on the <a href=\"https://github.com/scripting/reallysimple/issues/12\">reallySimple repo</a> for clouddemo.js (it appears to be locked), so I am writing a blog post.  I was able to run the app on port 443 and successfully register a WordPress.com site and a WordPress.org site using version 0.5.0 of the WordPress RSS Cloud plugin. When I ran my separate test script on the WordPress.org site, it worked, but I figured out that the WordPress.org site is caching the RSS feed, which explains why feed updates were not seen by FeedLand.</p>\n\n\n\n<p>The code for clouddemo.js looks good, I am pleased that it could run on port 443, since I already had an app running on port 80 on my server and did not want to change it.</p>\n</div>\n<div class=\"syndication-links\"></div>",
+                "value": "I couldn’t leave a comment on the reallySimple repo for clouddemo.js (it appears to be locked), so I am writing a blog post.  I was able to run the app on port 443 and successfully register a WordPress.com site and a WordPress.org site using version 0.5.0 of the WordPress RSS Cloud plugin. When I ran my separate test script on the WordPress.org site, it worked, but I figured out that the WordPress.org site is caching the RSS feed, which explains why feed updates were not seen by FeedLand.\n\n\n\nThe code for clouddemo.js looks good, I am pleased that it could run on port 443, since I already had an app running on port 80 on my server and did not want to change it."
+              },
+              {
+                "html": "<p>I couldn’t leave a comment on the <a href=\"https://github.com/scripting/reallysimple/issues/12\">reallySimple repo</a> for clouddemo.js (it appears to be locked), so I am writing a blog post.  I was able to run the app on port 443 and successfully register a WordPress.com site and a WordPress.org site using version 0.5.0 of the WordPress RSS Cloud plugin. When I ran my separate test script on the WordPress.org site, it worked, but I figured out that the WordPress.org site is caching the RSS feed, which explains why feed updates were not seen by FeedLand.</p>\n\n\n\n<p>The code for clouddemo.js looks good, I am pleased that it could run on port 443, since I already had an app running on port 80 on my server and did not want to change it.</p>",
+                "value": "I couldn’t leave a comment on the reallySimple repo for clouddemo.js (it appears to be locked), so I am writing a blog post.  I was able to run the app on port 443 and successfully register a WordPress.com site and a WordPress.org site using version 0.5.0 of the WordPress RSS Cloud plugin. When I ran my separate test script on the WordPress.org site, it worked, but I figured out that the WordPress.org site is caching the RSS feed, which explains why feed updates were not seen by FeedLand.\n\n\n\nThe code for clouddemo.js looks good, I am pleased that it could run on port 443, since I already had an app running on port 80 on my server and did not want to change it."
+              }
+            ]
+          },
+          "id": "post-2707"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "",
+              ""
+            ],
+            "content": [
+              {
                 "html": "<div class=\"e-content\">\n<p>Lazyweb request – I tried converting my OPML Zettelkasten <a href=\"http://drummer.this.how/AndySylvester99/Andy_Zettelkasten.opml\">file</a> into Markdown using <a href=\"https://pandoc.org/\">Pandoc</a>, but got an “Invalid XML” error, because I have URLs within the outline elements. Any suggestions for fixing this? I am looking at <a href=\"https://github.com/scripting/opmlToJs\">opmlToJs </a>to get the OPML in JSON, then use <a href=\"https://www.npmjs.com/package/sanitize-html\">sanitize-html</a> to escape the URLs, then write it back out using <a href=\"https://github.com/scripting/opmlToJs\">opmlToJs</a>. Other suggestions welcome!</p>\n</div>\n<div class=\"syndication-links\"></div>",
                 "value": "Lazyweb request – I tried converting my OPML Zettelkasten file into Markdown using Pandoc, but got an “Invalid XML” error, because I have URLs within the outline elements. Any suggestions for fixing this? I am looking at opmlToJs to get the OPML in JSON, then use sanitize-html to escape the URLs, then write it back out using opmlToJs. Other suggestions welcome!"
               },
@@ -181,50 +225,6 @@
             ]
           },
           "id": "post-2684"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "RSS Cloud support in WordPress.com not working",
-              "RSS Cloud support in WordPress.com not working"
-            ],
-            "content": [
-              {
-                "html": "<div class=\"e-content\">\n<p>UPDATE: Here is the link to the support forum <a href=\"https://wordpress.com/forums/topic/rss-cloud-support-in-wordpress-com-not-working-3/\">post </a>I made at WordPress.com</p>\n\n\n\n<p>This text is reposted from my test WordPress.com <a href=\"https://rsscloud4.wordpress.com/2022/12/04/rss-cloud-support-in-wordpress-com-not-working/\">site</a>:</p>\n\n\n\n<p>I am doing some testing of the RSS Cloud protocol (<a href=\"http://home.rsscloud.co/\">http://home.rsscloud.co/</a>) in WordPress.com (<a href=\"https://wordpress.com/support/rsscloud/\">https://wordpress.com/support/rsscloud/</a>, <a href=\"https://wordpress.com/blog/2009/09/07/rss-in-the-clouds/\">https://wordpress.com/blog/2009/09/07/rss-in-the-clouds/</a>) . I think there is a problem in the implementation, here is my bug report.</p>\n\n\n\n<p>What I did:</p>\n\n\n\n<p>1. Created a test WordPress.com site ( <a href=\"https://rsscloud4.wordpress.com/\">https://rsscloud4.wordpress.com</a>), checked the feed (<a href=\"https://rsscloud4.wordpress.com/feed/\">https://rsscloud4.wordpress.com/feed/</a>), made sure that the rssCloud element was present.</p>\n\n\n\n<p>2. Subscribed to the site in FeedLand (<a href=\"http://feedland.org/\">http://feedland.org/</a>) (best RSS reader for RSS Cloud support)</p>\n\n\n\n<p>3. Reviewed Joseph Scott original blog post on rssCloud support in WP and using WP plugin <a href=\"https://blog.josephscott.org/2009/09/07/rsscloud-for-wordpress/\">https://blog.josephscott.org/2009/09/07/rsscloud-for-wordpress/</a></p>\n\n\n\n<p>4. Modified my rssCloud test script (<a href=\"https://gist.github.com/andysylvester/d41a6ee6b3a7d0860c039ccbe3c6147f\">https://gist.github.com/andysylvester/d41a6ee6b3a7d0860c039ccbe3c6147f</a>) for Node.js RSS Cloud server (<a href=\"http://rpc.rsscloud.io:5337/\">http://rpc.rsscloud.io:5337/</a>) to access the RSS Cloud setup for my site (<a href=\"https://rsscloud4.wordpress.com/\">https://rsscloud4.wordpress.com</a>)</p>\n\n\n\n<p>a. var urlRssCloudServer = “<a href=\"https://rsscloud4.wordpress.com/?rsscloud=notify\">https://rsscloud4.wordpress.com/?rsscloud=notify</a>“;</p>\n\n\n\n<p>b. var urlHackerNews = “<a href=\"https://rsscloud4.wordpress.com/feed/\">https://rsscloud4.wordpress.com/feed/</a>“</p>\n\n\n\n<p>5. Modified function pleaseNotify to display the text of the response from the rssCloud server (my WordPress.com site).</p>\n\n\n\n<p>What I saw:</p>\n\n\n\n<p>1. Ran the test script (node testscript.js), got the following response:</p>\n\n\n\n<p>root@AndyDO-03:~/rssCloudSimple# node rssCloudTestOriginal05.js</p>\n\n\n\n<p>testRssCloud v0.40 running on port 2222.</p>\n\n\n\n<p>response: == &lt;?xml version=’1.0′?&gt;</p>\n\n\n\n<p>&lt;notifyResult success=’false’ msg=’Error testing notification URL : A valid URL was not provided.’ /&gt;</p>\n\n\n\n<p>.</p>\n\n\n\n<p>pleaseNotify: success == undefined, msg == “undefined”</p>\n\n\n\n<p>2. Made a post (<a href=\"https://rsscloud4.wordpress.com/2022/12/04/test-post-007/\">https://rsscloud4.wordpress.com/2022/12/04/test-post-007/</a>) at 2:18 pm, no response to my test script.</p>\n\n\n\n<p>3. Checked in FeedLand for new item, did not see it until 2:28pm (10 minutes later). In testing of other tools creating RSS feeds with rssCloud support, the item would appear in FeedLand within a few seconds. I have noticed that feed readers seem to take up to 30 minutes to detect that there has been a change in a RSS feed from WordPress.com or WordPress.org sites.</p>\n\n\n\n<p>What I expected:</p>\n\n\n\n<p>1. My script would get a notification that the registration was successful.</p>\n\n\n\n<p>2. My script would get a notification from the WordPress.com site when a new post was made.</p>\n\n\n\n<p>3. A new post from my WordPress.com site would appear within a few seconds in FeedLand, since I had seen this behavior for other tools creating RSS feeds with rssCloud support</p>\n\n\n\n<p>I did some searching on rssCloud problems with WordPress.com/WordPress.org, and found this post from 2009 (<a href=\"http://www.xn--8ws00zhy3a.com/blog/2009/10/rss-cloud-fail\">http://www.xn--8ws00zhy3a.com/blog/2009/10/rss-cloud-fail</a>) which described issues with notification URLs:</p>\n\n\n\n<p>“Still, we were getting somewhere. There were only two remaining unexplained failures. These were WordPress feeds that were somehow failing to connect to my notification URL. Eventually, after digging through various releases of the WordPress source code, I discovered that these servers were actually running a buggy, older version of the <a href=\"http://wordpress.org/extend/plugins/rsscloud/\">WordPress plugin</a>. Regardless of what the client specified, this version of the plugin would always attempt connections on port 80. “</p>\n\n\n\n<p>My app is running on port 2222, the notification URL that the WordPress.com site should be trying to contact is <a href=\"http://fedwiki.andysylvester.com:2222/feedupdated\">http://fedwiki.andysylvester.com:2222/feedupdated</a>. Could someone shed some light on this? Thanks.</p>\n</div>\n<div class=\"syndication-links\"></div>",
-                "value": "UPDATE: Here is the link to the support forum post I made at WordPress.com\n\n\n\nThis text is reposted from my test WordPress.com site:\n\n\n\nI am doing some testing of the RSS Cloud protocol (http://home.rsscloud.co/) in WordPress.com (https://wordpress.com/support/rsscloud/, https://wordpress.com/blog/2009/09/07/rss-in-the-clouds/) . I think there is a problem in the implementation, here is my bug report.\n\n\n\nWhat I did:\n\n\n\n1. Created a test WordPress.com site ( https://rsscloud4.wordpress.com), checked the feed (https://rsscloud4.wordpress.com/feed/), made sure that the rssCloud element was present.\n\n\n\n2. Subscribed to the site in FeedLand (http://feedland.org/) (best RSS reader for RSS Cloud support)\n\n\n\n3. Reviewed Joseph Scott original blog post on rssCloud support in WP and using WP plugin https://blog.josephscott.org/2009/09/07/rsscloud-for-wordpress/\n\n\n\n4. Modified my rssCloud test script (https://gist.github.com/andysylvester/d41a6ee6b3a7d0860c039ccbe3c6147f) for Node.js RSS Cloud server (http://rpc.rsscloud.io:5337/) to access the RSS Cloud setup for my site (https://rsscloud4.wordpress.com)\n\n\n\na. var urlRssCloudServer = “https://rsscloud4.wordpress.com/?rsscloud=notify“;\n\n\n\nb. var urlHackerNews = “https://rsscloud4.wordpress.com/feed/“\n\n\n\n5. Modified function pleaseNotify to display the text of the response from the rssCloud server (my WordPress.com site).\n\n\n\nWhat I saw:\n\n\n\n1. Ran the test script (node testscript.js), got the following response:\n\n\n\nroot@AndyDO-03:~/rssCloudSimple# node rssCloudTestOriginal05.js\n\n\n\ntestRssCloud v0.40 running on port 2222.\n\n\n\nresponse: == <?xml version=’1.0′?>\n\n\n\n<notifyResult success=’false’ msg=’Error testing notification URL : A valid URL was not provided.’ />\n\n\n\n.\n\n\n\npleaseNotify: success == undefined, msg == “undefined”\n\n\n\n2. Made a post (https://rsscloud4.wordpress.com/2022/12/04/test-post-007/) at 2:18 pm, no response to my test script.\n\n\n\n3. Checked in FeedLand for new item, did not see it until 2:28pm (10 minutes later). In testing of other tools creating RSS feeds with rssCloud support, the item would appear in FeedLand within a few seconds. I have noticed that feed readers seem to take up to 30 minutes to detect that there has been a change in a RSS feed from WordPress.com or WordPress.org sites.\n\n\n\nWhat I expected:\n\n\n\n1. My script would get a notification that the registration was successful.\n\n\n\n2. My script would get a notification from the WordPress.com site when a new post was made.\n\n\n\n3. A new post from my WordPress.com site would appear within a few seconds in FeedLand, since I had seen this behavior for other tools creating RSS feeds with rssCloud support\n\n\n\nI did some searching on rssCloud problems with WordPress.com/WordPress.org, and found this post from 2009 (http://www.xn--8ws00zhy3a.com/blog/2009/10/rss-cloud-fail) which described issues with notification URLs:\n\n\n\n“Still, we were getting somewhere. There were only two remaining unexplained failures. These were WordPress feeds that were somehow failing to connect to my notification URL. Eventually, after digging through various releases of the WordPress source code, I discovered that these servers were actually running a buggy, older version of the WordPress plugin. Regardless of what the client specified, this version of the plugin would always attempt connections on port 80. “\n\n\n\nMy app is running on port 2222, the notification URL that the WordPress.com site should be trying to contact is http://fedwiki.andysylvester.com:2222/feedupdated. Could someone shed some light on this? Thanks."
-              },
-              {
-                "html": "<p>UPDATE: Here is the link to the support forum <a href=\"https://wordpress.com/forums/topic/rss-cloud-support-in-wordpress-com-not-working-3/\">post </a>I made at WordPress.com</p>\n\n\n\n<p>This text is reposted from my test WordPress.com <a href=\"https://rsscloud4.wordpress.com/2022/12/04/rss-cloud-support-in-wordpress-com-not-working/\">site</a>:</p>\n\n\n\n<p>I am doing some testing of the RSS Cloud protocol (<a href=\"http://home.rsscloud.co/\">http://home.rsscloud.co/</a>) in WordPress.com (<a href=\"https://wordpress.com/support/rsscloud/\">https://wordpress.com/support/rsscloud/</a>, <a href=\"https://wordpress.com/blog/2009/09/07/rss-in-the-clouds/\">https://wordpress.com/blog/2009/09/07/rss-in-the-clouds/</a>) . I think there is a problem in the implementation, here is my bug report.</p>\n\n\n\n<p>What I did:</p>\n\n\n\n<p>1. Created a test WordPress.com site ( <a href=\"https://rsscloud4.wordpress.com/\">https://rsscloud4.wordpress.com</a>), checked the feed (<a href=\"https://rsscloud4.wordpress.com/feed/\">https://rsscloud4.wordpress.com/feed/</a>), made sure that the rssCloud element was present.</p>\n\n\n\n<p>2. Subscribed to the site in FeedLand (<a href=\"http://feedland.org/\">http://feedland.org/</a>) (best RSS reader for RSS Cloud support)</p>\n\n\n\n<p>3. Reviewed Joseph Scott original blog post on rssCloud support in WP and using WP plugin <a href=\"https://blog.josephscott.org/2009/09/07/rsscloud-for-wordpress/\">https://blog.josephscott.org/2009/09/07/rsscloud-for-wordpress/</a></p>\n\n\n\n<p>4. Modified my rssCloud test script (<a href=\"https://gist.github.com/andysylvester/d41a6ee6b3a7d0860c039ccbe3c6147f\">https://gist.github.com/andysylvester/d41a6ee6b3a7d0860c039ccbe3c6147f</a>) for Node.js RSS Cloud server (<a href=\"http://rpc.rsscloud.io:5337/\">http://rpc.rsscloud.io:5337/</a>) to access the RSS Cloud setup for my site (<a href=\"https://rsscloud4.wordpress.com/\">https://rsscloud4.wordpress.com</a>)</p>\n\n\n\n<p>a. var urlRssCloudServer = “<a href=\"https://rsscloud4.wordpress.com/?rsscloud=notify\">https://rsscloud4.wordpress.com/?rsscloud=notify</a>“;</p>\n\n\n\n<p>b. var urlHackerNews = “<a href=\"https://rsscloud4.wordpress.com/feed/\">https://rsscloud4.wordpress.com/feed/</a>“</p>\n\n\n\n<p>5. Modified function pleaseNotify to display the text of the response from the rssCloud server (my WordPress.com site).</p>\n\n\n\n<p>What I saw:</p>\n\n\n\n<p>1. Ran the test script (node testscript.js), got the following response:</p>\n\n\n\n<p>root@AndyDO-03:~/rssCloudSimple# node rssCloudTestOriginal05.js</p>\n\n\n\n<p>testRssCloud v0.40 running on port 2222.</p>\n\n\n\n<p>response: == &lt;?xml version=’1.0′?&gt;</p>\n\n\n\n<p>&lt;notifyResult success=’false’ msg=’Error testing notification URL : A valid URL was not provided.’ /&gt;</p>\n\n\n\n<p>.</p>\n\n\n\n<p>pleaseNotify: success == undefined, msg == “undefined”</p>\n\n\n\n<p>2. Made a post (<a href=\"https://rsscloud4.wordpress.com/2022/12/04/test-post-007/\">https://rsscloud4.wordpress.com/2022/12/04/test-post-007/</a>) at 2:18 pm, no response to my test script.</p>\n\n\n\n<p>3. Checked in FeedLand for new item, did not see it until 2:28pm (10 minutes later). In testing of other tools creating RSS feeds with rssCloud support, the item would appear in FeedLand within a few seconds. I have noticed that feed readers seem to take up to 30 minutes to detect that there has been a change in a RSS feed from WordPress.com or WordPress.org sites.</p>\n\n\n\n<p>What I expected:</p>\n\n\n\n<p>1. My script would get a notification that the registration was successful.</p>\n\n\n\n<p>2. My script would get a notification from the WordPress.com site when a new post was made.</p>\n\n\n\n<p>3. A new post from my WordPress.com site would appear within a few seconds in FeedLand, since I had seen this behavior for other tools creating RSS feeds with rssCloud support</p>\n\n\n\n<p>I did some searching on rssCloud problems with WordPress.com/WordPress.org, and found this post from 2009 (<a href=\"http://www.xn--8ws00zhy3a.com/blog/2009/10/rss-cloud-fail\">http://www.xn--8ws00zhy3a.com/blog/2009/10/rss-cloud-fail</a>) which described issues with notification URLs:</p>\n\n\n\n<p>“Still, we were getting somewhere. There were only two remaining unexplained failures. These were WordPress feeds that were somehow failing to connect to my notification URL. Eventually, after digging through various releases of the WordPress source code, I discovered that these servers were actually running a buggy, older version of the <a href=\"http://wordpress.org/extend/plugins/rsscloud/\">WordPress plugin</a>. Regardless of what the client specified, this version of the plugin would always attempt connections on port 80. “</p>\n\n\n\n<p>My app is running on port 2222, the notification URL that the WordPress.com site should be trying to contact is <a href=\"http://fedwiki.andysylvester.com:2222/feedupdated\">http://fedwiki.andysylvester.com:2222/feedupdated</a>. Could someone shed some light on this? Thanks.</p>",
-                "value": "UPDATE: Here is the link to the support forum post I made at WordPress.com\n\n\n\nThis text is reposted from my test WordPress.com site:\n\n\n\nI am doing some testing of the RSS Cloud protocol (http://home.rsscloud.co/) in WordPress.com (https://wordpress.com/support/rsscloud/, https://wordpress.com/blog/2009/09/07/rss-in-the-clouds/) . I think there is a problem in the implementation, here is my bug report.\n\n\n\nWhat I did:\n\n\n\n1. Created a test WordPress.com site ( https://rsscloud4.wordpress.com), checked the feed (https://rsscloud4.wordpress.com/feed/), made sure that the rssCloud element was present.\n\n\n\n2. Subscribed to the site in FeedLand (http://feedland.org/) (best RSS reader for RSS Cloud support)\n\n\n\n3. Reviewed Joseph Scott original blog post on rssCloud support in WP and using WP plugin https://blog.josephscott.org/2009/09/07/rsscloud-for-wordpress/\n\n\n\n4. Modified my rssCloud test script (https://gist.github.com/andysylvester/d41a6ee6b3a7d0860c039ccbe3c6147f) for Node.js RSS Cloud server (http://rpc.rsscloud.io:5337/) to access the RSS Cloud setup for my site (https://rsscloud4.wordpress.com)\n\n\n\na. var urlRssCloudServer = “https://rsscloud4.wordpress.com/?rsscloud=notify“;\n\n\n\nb. var urlHackerNews = “https://rsscloud4.wordpress.com/feed/“\n\n\n\n5. Modified function pleaseNotify to display the text of the response from the rssCloud server (my WordPress.com site).\n\n\n\nWhat I saw:\n\n\n\n1. Ran the test script (node testscript.js), got the following response:\n\n\n\nroot@AndyDO-03:~/rssCloudSimple# node rssCloudTestOriginal05.js\n\n\n\ntestRssCloud v0.40 running on port 2222.\n\n\n\nresponse: == <?xml version=’1.0′?>\n\n\n\n<notifyResult success=’false’ msg=’Error testing notification URL : A valid URL was not provided.’ />\n\n\n\n.\n\n\n\npleaseNotify: success == undefined, msg == “undefined”\n\n\n\n2. Made a post (https://rsscloud4.wordpress.com/2022/12/04/test-post-007/) at 2:18 pm, no response to my test script.\n\n\n\n3. Checked in FeedLand for new item, did not see it until 2:28pm (10 minutes later). In testing of other tools creating RSS feeds with rssCloud support, the item would appear in FeedLand within a few seconds. I have noticed that feed readers seem to take up to 30 minutes to detect that there has been a change in a RSS feed from WordPress.com or WordPress.org sites.\n\n\n\nWhat I expected:\n\n\n\n1. My script would get a notification that the registration was successful.\n\n\n\n2. My script would get a notification from the WordPress.com site when a new post was made.\n\n\n\n3. A new post from my WordPress.com site would appear within a few seconds in FeedLand, since I had seen this behavior for other tools creating RSS feeds with rssCloud support\n\n\n\nI did some searching on rssCloud problems with WordPress.com/WordPress.org, and found this post from 2009 (http://www.xn--8ws00zhy3a.com/blog/2009/10/rss-cloud-fail) which described issues with notification URLs:\n\n\n\n“Still, we were getting somewhere. There were only two remaining unexplained failures. These were WordPress feeds that were somehow failing to connect to my notification URL. Eventually, after digging through various releases of the WordPress source code, I discovered that these servers were actually running a buggy, older version of the WordPress plugin. Regardless of what the client specified, this version of the plugin would always attempt connections on port 80. “\n\n\n\nMy app is running on port 2222, the notification URL that the WordPress.com site should be trying to contact is http://fedwiki.andysylvester.com:2222/feedupdated. Could someone shed some light on this? Thanks."
-              }
-            ]
-          },
-          "id": "post-2681"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "",
-              ""
-            ],
-            "content": [
-              {
-                "html": "<div class=\"e-content\">\n<p>Did a test of <a href=\"https://github.com/scripting/feedToMasto\">feedToMasto </a>app from Dave Winer, it <a href=\"https://mastodon.social/@AndySylvester/109445295732030300\">worked</a>!</p>\n</div>\n<div class=\"syndication-links\"></div>",
-                "value": "Did a test of feedToMasto app from Dave Winer, it worked!"
-              },
-              {
-                "html": "<p>Did a test of <a href=\"https://github.com/scripting/feedToMasto\">feedToMasto </a>app from Dave Winer, it <a href=\"https://mastodon.social/@AndySylvester/109445295732030300\">worked</a>!</p>",
-                "value": "Did a test of feedToMasto app from Dave Winer, it worked!"
-              }
-            ]
-          },
-          "id": "post-2679"
         }
       ]
     }
@@ -282,6 +282,8 @@
       "https://andysylvester.com/"
     ],
     "bookmark": [
+      "https://andysylvester.com/2022/12/17/2710/",
+      "https://andysylvester.com/2022/12/17/test-results-for-rsscloud-app-from-dave-winer/",
       "https://andysylvester.com/2022/12/16/2705/",
       "https://andysylvester.com/2022/12/14/2703/",
       "https://andysylvester.com/2022/12/12/2699/",
@@ -289,23 +291,19 @@
       "https://andysylvester.com/2022/12/10/2692/",
       "https://andysylvester.com/2022/12/10/2690/",
       "https://andysylvester.com/2022/12/09/2687/",
-      "https://andysylvester.com/2022/12/07/2684/",
-      "https://andysylvester.com/2022/12/04/rss-cloud-support-in-wordpress-com-not-working/",
-      "https://andysylvester.com/2022/12/02/2679/"
+      "https://andysylvester.com/2022/12/07/2684/"
     ],
     "category": [
       "https://andysylvester.com/category/opml/",
-      "https://andysylvester.com/category/feed-readers/",
-      "https://andysylvester.com/category/feeds/",
       "https://andysylvester.com/category/rsscloud/",
-      "https://andysylvester.com/category/mastodon/"
+      "https://andysylvester.com/category/feed-readers/",
+      "https://andysylvester.com/category/feeds/"
     ],
     "tag": [
       "https://andysylvester.com/category/opml/",
-      "https://andysylvester.com/category/feed-readers/",
-      "https://andysylvester.com/category/feeds/",
       "https://andysylvester.com/category/rsscloud/",
-      "https://andysylvester.com/category/mastodon/"
+      "https://andysylvester.com/category/feed-readers/",
+      "https://andysylvester.com/category/feeds/"
     ],
     "designer": [
       "http://independentpublisher.me/"
@@ -454,7 +452,7 @@
       ],
       "title": "Andy Sylvester's Web"
     },
-    "https://andysylvester.com/2022/12/16/2705/": {
+    "https://andysylvester.com/2022/12/17/2710/": {
       "rels": [
         "bookmark"
       ],
@@ -466,6 +464,26 @@
         "tag"
       ],
       "text": "OPML"
+    },
+    "https://andysylvester.com/2022/12/17/test-results-for-rsscloud-app-from-dave-winer/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to Test results for rssCloud app from Dave Winer",
+      "text": "Test results for rssCloud app from Dave Winer"
+    },
+    "https://andysylvester.com/category/rsscloud/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "rssCloud"
+    },
+    "https://andysylvester.com/2022/12/16/2705/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to"
     },
     "https://andysylvester.com/2022/12/14/2703/": {
       "rels": [
@@ -486,13 +504,6 @@
         "tag"
       ],
       "text": "Feeds"
-    },
-    "https://andysylvester.com/category/rsscloud/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "rssCloud"
     },
     "https://andysylvester.com/2022/12/12/2699/": {
       "rels": [
@@ -530,26 +541,6 @@
         "bookmark"
       ],
       "title": "Permalink to"
-    },
-    "https://andysylvester.com/2022/12/04/rss-cloud-support-in-wordpress-com-not-working/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Permalink to RSS Cloud support in WordPress.com not working",
-      "text": "RSS Cloud support in WordPress.com not working"
-    },
-    "https://andysylvester.com/2022/12/02/2679/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Permalink to"
-    },
-    "https://andysylvester.com/category/mastodon/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "Mastodon"
     },
     "http://independentpublisher.me/": {
       "rels": [
