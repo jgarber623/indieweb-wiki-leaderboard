@@ -15,6 +15,9 @@
       "https://www.luisquintanilla.me/feed/photos.xml",
       "https://www.luisquintanilla.me/feed/videos.xml"
     ],
+    "webmention": [
+      "https://lqdevwebmentions.azurewebsites.net/api/inbox"
+    ],
     "me": [
       "https://toot.lqdev.tech/@lqdev",
       "https://github.com/lqdev",
@@ -83,6 +86,12 @@
       ],
       "title": "Luis Quintanilla Videos Feed RSS",
       "type": "application/rss+xml"
+    },
+    "https://lqdevwebmentions.azurewebsites.net/api/inbox": {
+      "rels": [
+        "webmention"
+      ],
+      "title": "Luis Quintanilla Webmention Endpoint"
     },
     "https://toot.lqdev.tech/@lqdev": {
       "rels": [

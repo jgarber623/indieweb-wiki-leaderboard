@@ -1,223 +1,158 @@
 {
-  "items": [],
+  "items": [
+    {
+      "type": [
+        "h-screen"
+      ],
+      "properties": {},
+      "children": [
+        {
+          "type": [
+            "h-full"
+          ],
+          "properties": {},
+          "children": [
+            {
+              "type": [
+                "h-full"
+              ],
+              "properties": {
+                "name": [
+                  "BlogTagsAbout"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "rels": {
-    "next": [
-      "https://www.danieldemmel.me/page/2"
-    ],
-    "alternate": [
-      "https://www.danieldemmel.me/rss.xml"
-    ],
-    "icon": [
-      "https://www.danieldemmel.me/favicon-32x32.png?v=250cfc1d36e9d7d50b4490161f7aae39"
-    ],
-    "manifest": [
-      "https://www.danieldemmel.me/manifest.webmanifest"
+    "canonical": [
+      "https://www.danieldemmel.me/"
     ],
     "apple-touch-icon": [
-      "https://www.danieldemmel.me/icons/icon-48x48.png?v=250cfc1d36e9d7d50b4490161f7aae39",
-      "https://www.danieldemmel.me/icons/icon-72x72.png?v=250cfc1d36e9d7d50b4490161f7aae39",
-      "https://www.danieldemmel.me/icons/icon-96x96.png?v=250cfc1d36e9d7d50b4490161f7aae39",
-      "https://www.danieldemmel.me/icons/icon-144x144.png?v=250cfc1d36e9d7d50b4490161f7aae39",
-      "https://www.danieldemmel.me/icons/icon-192x192.png?v=250cfc1d36e9d7d50b4490161f7aae39",
-      "https://www.danieldemmel.me/icons/icon-256x256.png?v=250cfc1d36e9d7d50b4490161f7aae39",
-      "https://www.danieldemmel.me/icons/icon-384x384.png?v=250cfc1d36e9d7d50b4490161f7aae39",
-      "https://www.danieldemmel.me/icons/icon-512x512.png?v=250cfc1d36e9d7d50b4490161f7aae39"
+      "https://www.danieldemmel.me/favicons/apple-touch-icon.png"
+    ],
+    "icon": [
+      "https://www.danieldemmel.me/favicons/favicon-32x32.png",
+      "https://www.danieldemmel.me/favicons/favicon-16x16.png"
+    ],
+    "manifest": [
+      "https://www.danieldemmel.me/favicons/site.webmanifest"
+    ],
+    "mask-icon": [
+      "https://www.danieldemmel.me/favicons/safari-pinned-tab.svg"
+    ],
+    "alternate": [
+      "https://www.danieldemmel.me/feed.xml"
     ],
     "preload": [
-      "https://www.danieldemmel.me/webpack-runtime-d5ae86b4a0137b626427.js",
-      "https://www.danieldemmel.me/framework-a45383fedbea7a016e3a.js",
-      "https://www.danieldemmel.me/app-63b23eda25019e235be7.js",
-      "https://www.danieldemmel.me/styles-29147cbc04bbc833f6a0.js",
-      "https://www.danieldemmel.me/cfc86df3-a47ae2c818040dae8cc9.js",
-      "https://www.danieldemmel.me/commons-6acb929308846dcdb569.js",
-      "https://www.danieldemmel.me/f7f859cd4bf156c2acc6f46f65ba39cb35d4c0a9-99b089b65d8a17f18e6c.js",
-      "https://www.danieldemmel.me/5adfd937054d18aa90c3653907d1d43da6549296-0abd22c404b59351f1b4.js",
-      "https://www.danieldemmel.me/component---node-modules-narative-gatsby-theme-novela-src-templates-articles-template-tsx-00c929dfd9cd6c13521a.js",
-      "https://www.danieldemmel.me/page-data/index/page-data.json",
-      "https://www.danieldemmel.me/page-data/sq/d/1143375668.json",
-      "https://www.danieldemmel.me/page-data/sq/d/1491088328.json",
-      "https://www.danieldemmel.me/page-data/sq/d/2444214635.json",
-      "https://www.danieldemmel.me/page-data/sq/d/3372861117.json",
-      "https://www.danieldemmel.me/page-data/app-data.json"
+      "https://www.danieldemmel.me/_next/static/media/2aaf0723e720e8b9.p.woff2",
+      "https://www.danieldemmel.me/_next/static/css/e5220903f7dded47.css"
     ],
-    "nofollow": [
-      "https://twitter.com/daaain",
-      "https://github.com/daaain",
-      "https://www.facebook.com/danieldemmel",
-      "https://www.linkedin.com/in/danieldemmel/"
+    "stylesheet": [
+      "https://www.danieldemmel.me/_next/static/css/e5220903f7dded47.css"
     ],
     "noopener": [
-      "https://twitter.com/daaain",
+      "mailto:hello@danieldemmel.me",
       "https://github.com/daaain",
-      "https://www.facebook.com/danieldemmel",
-      "https://www.linkedin.com/in/danieldemmel/"
+      "https://www.linkedin.com/in/danieldemmel/",
+      "https://twitter.com/daaain",
+      "https://github.com/daaain/danieldemmel.me-next"
+    ],
+    "noreferrer": [
+      "mailto:hello@danieldemmel.me",
+      "https://github.com/daaain",
+      "https://www.linkedin.com/in/danieldemmel/",
+      "https://twitter.com/daaain",
+      "https://github.com/daaain/danieldemmel.me-next"
     ]
   },
   "rel-urls": {
-    "https://www.danieldemmel.me/page/2": {
+    "https://www.danieldemmel.me/": {
       "rels": [
-        "next"
+        "canonical"
       ]
     },
-    "https://www.danieldemmel.me/rss.xml": {
+    "https://www.danieldemmel.me/favicons/apple-touch-icon.png": {
       "rels": [
-        "alternate"
-      ],
-      "type": "application/rss+xml"
+        "apple-touch-icon"
+      ]
     },
-    "https://www.danieldemmel.me/favicon-32x32.png?v=250cfc1d36e9d7d50b4490161f7aae39": {
+    "https://www.danieldemmel.me/favicons/favicon-32x32.png": {
       "rels": [
         "icon"
       ],
       "type": "image/png"
     },
-    "https://www.danieldemmel.me/manifest.webmanifest": {
+    "https://www.danieldemmel.me/favicons/favicon-16x16.png": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/png"
+    },
+    "https://www.danieldemmel.me/favicons/site.webmanifest": {
       "rels": [
         "manifest"
       ]
     },
-    "https://www.danieldemmel.me/icons/icon-48x48.png?v=250cfc1d36e9d7d50b4490161f7aae39": {
+    "https://www.danieldemmel.me/favicons/safari-pinned-tab.svg": {
       "rels": [
-        "apple-touch-icon"
+        "mask-icon"
       ]
     },
-    "https://www.danieldemmel.me/icons/icon-72x72.png?v=250cfc1d36e9d7d50b4490161f7aae39": {
+    "https://www.danieldemmel.me/feed.xml": {
       "rels": [
-        "apple-touch-icon"
-      ]
-    },
-    "https://www.danieldemmel.me/icons/icon-96x96.png?v=250cfc1d36e9d7d50b4490161f7aae39": {
-      "rels": [
-        "apple-touch-icon"
-      ]
-    },
-    "https://www.danieldemmel.me/icons/icon-144x144.png?v=250cfc1d36e9d7d50b4490161f7aae39": {
-      "rels": [
-        "apple-touch-icon"
-      ]
-    },
-    "https://www.danieldemmel.me/icons/icon-192x192.png?v=250cfc1d36e9d7d50b4490161f7aae39": {
-      "rels": [
-        "apple-touch-icon"
-      ]
-    },
-    "https://www.danieldemmel.me/icons/icon-256x256.png?v=250cfc1d36e9d7d50b4490161f7aae39": {
-      "rels": [
-        "apple-touch-icon"
-      ]
-    },
-    "https://www.danieldemmel.me/icons/icon-384x384.png?v=250cfc1d36e9d7d50b4490161f7aae39": {
-      "rels": [
-        "apple-touch-icon"
-      ]
-    },
-    "https://www.danieldemmel.me/icons/icon-512x512.png?v=250cfc1d36e9d7d50b4490161f7aae39": {
-      "rels": [
-        "apple-touch-icon"
-      ]
-    },
-    "https://www.danieldemmel.me/webpack-runtime-d5ae86b4a0137b626427.js": {
-      "rels": [
-        "preload"
-      ]
-    },
-    "https://www.danieldemmel.me/framework-a45383fedbea7a016e3a.js": {
-      "rels": [
-        "preload"
-      ]
-    },
-    "https://www.danieldemmel.me/app-63b23eda25019e235be7.js": {
-      "rels": [
-        "preload"
-      ]
-    },
-    "https://www.danieldemmel.me/styles-29147cbc04bbc833f6a0.js": {
-      "rels": [
-        "preload"
-      ]
-    },
-    "https://www.danieldemmel.me/cfc86df3-a47ae2c818040dae8cc9.js": {
-      "rels": [
-        "preload"
-      ]
-    },
-    "https://www.danieldemmel.me/commons-6acb929308846dcdb569.js": {
-      "rels": [
-        "preload"
-      ]
-    },
-    "https://www.danieldemmel.me/f7f859cd4bf156c2acc6f46f65ba39cb35d4c0a9-99b089b65d8a17f18e6c.js": {
-      "rels": [
-        "preload"
-      ]
-    },
-    "https://www.danieldemmel.me/5adfd937054d18aa90c3653907d1d43da6549296-0abd22c404b59351f1b4.js": {
-      "rels": [
-        "preload"
-      ]
-    },
-    "https://www.danieldemmel.me/component---node-modules-narative-gatsby-theme-novela-src-templates-articles-template-tsx-00c929dfd9cd6c13521a.js": {
-      "rels": [
-        "preload"
-      ]
-    },
-    "https://www.danieldemmel.me/page-data/index/page-data.json": {
-      "rels": [
-        "preload"
-      ]
-    },
-    "https://www.danieldemmel.me/page-data/sq/d/1143375668.json": {
-      "rels": [
-        "preload"
-      ]
-    },
-    "https://www.danieldemmel.me/page-data/sq/d/1491088328.json": {
-      "rels": [
-        "preload"
-      ]
-    },
-    "https://www.danieldemmel.me/page-data/sq/d/2444214635.json": {
-      "rels": [
-        "preload"
-      ]
-    },
-    "https://www.danieldemmel.me/page-data/sq/d/3372861117.json": {
-      "rels": [
-        "preload"
-      ]
-    },
-    "https://www.danieldemmel.me/page-data/app-data.json": {
-      "rels": [
-        "preload"
-      ]
-    },
-    "https://twitter.com/daaain": {
-      "rels": [
-        "nofollow",
-        "noopener"
+        "alternate"
       ],
-      "text": ".css-mglztx{width:0px;height:0px;visibility:hidden;opacity:0;overflow:hidden;display:inline-block;}Link to $https://twitter.com/daaain"
+      "type": "application/rss+xml"
+    },
+    "https://www.danieldemmel.me/_next/static/media/2aaf0723e720e8b9.p.woff2": {
+      "rels": [
+        "preload"
+      ],
+      "type": "font/woff2"
+    },
+    "https://www.danieldemmel.me/_next/static/css/e5220903f7dded47.css": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "mailto:hello@danieldemmel.me": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "mail"
     },
     "https://github.com/daaain": {
       "rels": [
-        "nofollow",
-        "noopener"
+        "noopener",
+        "noreferrer"
       ],
-      "text": "Link to $https://github.com/daaain"
-    },
-    "https://www.facebook.com/danieldemmel": {
-      "rels": [
-        "nofollow",
-        "noopener"
-      ],
-      "text": "Link to $https://www.facebook.com/danieldemmel"
+      "text": "github"
     },
     "https://www.linkedin.com/in/danieldemmel/": {
       "rels": [
-        "nofollow",
-        "noopener"
+        "noopener",
+        "noreferrer"
       ],
-      "text": "Link to $https://www.linkedin.com/in/danieldemmel/"
+      "text": "linkedin"
+    },
+    "https://twitter.com/daaain": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "twitter"
+    },
+    "https://github.com/daaain/danieldemmel.me-next": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "Open source on Github"
     }
   }
 }
