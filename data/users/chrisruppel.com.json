@@ -15,10 +15,10 @@
           }
         ],
         "role": [
-          "Hello, I'm Chris Ruppel,\n          a frontend developer, digital artist, and world traveler\n          last seen \n around Freiburg, Germany. Hire me!"
+          "Hello, I'm Chris Ruppel,\n          a frontend developer,\n          digital artist,\n          and traveler.\n          Find me on Mastodon,\n          or hire me!"
         ],
         "note": [
-          "Hello, I'm Chris Ruppel,\n          a frontend developer, digital artist, and world traveler\n          last seen \n around Freiburg, Germany. Hire me!"
+          "Hello, I'm Chris Ruppel,\n          a frontend developer,\n          digital artist,\n          and traveler.\n          Find me on Mastodon,\n          or hire me!"
         ],
         "name": [
           "Chris Ruppel"
@@ -53,6 +53,9 @@
       "https://mastodon.social/@rupl",
       "https://coil.com/u/rupl"
     ],
+    "authn": [
+      "https://github.com/rupl"
+    ],
     "pgpkey": [
       "https://chrisruppel.com/pgp.pub"
     ],
@@ -63,15 +66,13 @@
       "https://chrisruppel.com/travel.xml",
       "https://chrisruppel.com/blog.xml"
     ],
-    "preload": [
-      "https://fonts.gstatic.com/s/portlligatslab/v8/LDIpaoiQNgArA8kR7ulhZ8P_NYOsg70R9gOIifM.woff2",
-      "https://fonts.gstatic.com/s/ptsansnarrow/v11/BngRUXNadjH0qYEzV7ab-oWlsbCLwR2oefDofMY.woff2"
+    "preconnect": [
+      "https://fonts.googleapis.com/",
+      "https://fonts.gstatic.com/",
+      "https://assets.chrisruppel.com/"
     ],
     "stylesheet": [
-      "https://fonts.googleapis.com/css?family=Port+Lligat+Slab&display=swap"
-    ],
-    "preconnect": [
-      "https://assets.chrisruppel.com/"
+      "https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Port+Lligat+Slab&display=swap"
     ],
     "author": [
       "https://chrisruppel.com/"
@@ -100,6 +101,7 @@
     },
     "https://github.com/rupl": {
       "rels": [
+        "authn",
         "me"
       ]
     },
@@ -142,17 +144,17 @@
       "title": "Chris' Blog",
       "type": "application/rss+xml"
     },
-    "https://fonts.gstatic.com/s/portlligatslab/v8/LDIpaoiQNgArA8kR7ulhZ8P_NYOsg70R9gOIifM.woff2": {
+    "https://fonts.googleapis.com/": {
       "rels": [
-        "preload"
+        "preconnect"
       ]
     },
-    "https://fonts.gstatic.com/s/ptsansnarrow/v11/BngRUXNadjH0qYEzV7ab-oWlsbCLwR2oefDofMY.woff2": {
+    "https://fonts.gstatic.com/": {
       "rels": [
-        "preload"
+        "preconnect"
       ]
     },
-    "https://fonts.googleapis.com/css?family=Port+Lligat+Slab&display=swap": {
+    "https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Port+Lligat+Slab&display=swap": {
       "rels": [
         "stylesheet"
       ]

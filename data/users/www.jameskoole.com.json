@@ -1,18 +1,14 @@
 {
   "items": [],
   "rels": {
-    "profile": [
-      "https://gmpg.org/xfn/11"
-    ],
     "alternate": [
       "https://www.jameskoole.com/feed/",
       "https://www.jameskoole.com/comments/feed/"
     ],
     "stylesheet": [
-      "https://www.jameskoole.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1",
-      "https://www.jameskoole.com/wp-includes/css/classic-themes.min.css?ver=1",
-      "https://www.jameskoole.com/wp-content/themes/twentynineteen/style.css?ver=2.4",
-      "https://www.jameskoole.com/wp-content/themes/twentynineteen/print.css?ver=2.4"
+      "https://www.jameskoole.com/wp-includes/blocks/social-links/style.min.css?ver=6.1.1",
+      "https://www.jameskoole.com/wp-includes/blocks/navigation/style.min.css?ver=6.1.1",
+      "https://www.jameskoole.com/wp-content/themes/blockbase/assets/ponyfill.css?ver=3.1.3"
     ],
     "https://api.w.org/": [
       "https://www.jameskoole.com/wp-json/"
@@ -42,29 +38,15 @@
     "home": [
       "https://www.jameskoole.com/"
     ],
-    "bookmark": [
-      "https://www.jameskoole.com/vivaldi-browser/",
-      "https://www.jameskoole.com/uses-for-a-synology/",
-      "https://www.jameskoole.com/twitter-for-news-and-information/",
-      "https://www.jameskoole.com/wading-into-homekit/",
-      "https://www.jameskoole.com/some-mastodon-tips/",
-      "https://www.jameskoole.com/does-mastodon-need-twitter-to-die-to-succeed/"
-    ],
-    "category": [
-      "https://www.jameskoole.com/category/open-web/",
-      "https://www.jameskoole.com/category/smart-home/"
-    ],
     "tag": [
       "https://www.jameskoole.com/category/open-web/",
       "https://www.jameskoole.com/category/smart-home/"
+    ],
+    "nofollow": [
+      "https://wordpress.org/"
     ]
   },
   "rel-urls": {
-    "https://gmpg.org/xfn/11": {
-      "rels": [
-        "profile"
-      ]
-    },
     "https://www.jameskoole.com/feed/": {
       "rels": [
         "alternate"
@@ -79,29 +61,23 @@
       "title": "James Koole » Comments Feed",
       "type": "application/rss+xml"
     },
-    "https://www.jameskoole.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1": {
+    "https://www.jameskoole.com/wp-includes/blocks/social-links/style.min.css?ver=6.1.1": {
       "rels": [
         "stylesheet"
       ],
       "media": "all"
     },
-    "https://www.jameskoole.com/wp-includes/css/classic-themes.min.css?ver=1": {
+    "https://www.jameskoole.com/wp-includes/blocks/navigation/style.min.css?ver=6.1.1": {
       "rels": [
         "stylesheet"
       ],
       "media": "all"
     },
-    "https://www.jameskoole.com/wp-content/themes/twentynineteen/style.css?ver=2.4": {
+    "https://www.jameskoole.com/wp-content/themes/blockbase/assets/ponyfill.css?ver=3.1.3": {
       "rels": [
         "stylesheet"
       ],
       "media": "all"
-    },
-    "https://www.jameskoole.com/wp-content/themes/twentynineteen/print.css?ver=2.4": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "print"
     },
     "https://www.jameskoole.com/wp-json/": {
       "rels": [
@@ -151,55 +127,23 @@
         "home"
       ]
     },
-    "https://www.jameskoole.com/vivaldi-browser/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Vivaldi Browser"
-    },
     "https://www.jameskoole.com/category/open-web/": {
       "rels": [
-        "category",
         "tag"
       ],
       "text": "Open Web"
     },
-    "https://www.jameskoole.com/uses-for-a-synology/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Uses for a Synology"
-    },
     "https://www.jameskoole.com/category/smart-home/": {
       "rels": [
-        "category",
         "tag"
       ],
       "text": "Smart Home"
     },
-    "https://www.jameskoole.com/twitter-for-news-and-information/": {
+    "https://wordpress.org/": {
       "rels": [
-        "bookmark"
+        "nofollow"
       ],
-      "text": "Twitter for News and Information"
-    },
-    "https://www.jameskoole.com/wading-into-homekit/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Wading into HomeKit"
-    },
-    "https://www.jameskoole.com/some-mastodon-tips/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Some Mastodon Tips"
-    },
-    "https://www.jameskoole.com/does-mastodon-need-twitter-to-die-to-succeed/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Does Mastodon Need Twitter to Die to Succeed?"
+      "text": "WordPress"
     }
   }
 }

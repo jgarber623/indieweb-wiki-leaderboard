@@ -379,7 +379,7 @@
       "https://hyperborea.org/journal/comments/feed/"
     ],
     "stylesheet": [
-      "https://hyperborea.org/journal/wp-content/cache/wpo-minify/1671135478/assets/wpo-minify-header-13fc4a7f.min.css"
+      "https://hyperborea.org/journal/wp-content/cache/wpo-minify/1671513509/assets/wpo-minify-header-b3182c48.min.css"
     ],
     "https://api.w.org/": [
       "https://hyperborea.org/journal/wp-json/"
@@ -389,9 +389,6 @@
     ],
     "wlwmanifest": [
       "https://hyperborea.org/journal/wp-includes/wlwmanifest.xml"
-    ],
-    "shortlink": [
-      "https://wp.me/4vcr"
     ],
     "authorization_endpoint": [
       "https://hyperborea.org/journal/wp-json/indieauth/1.0/auth"
@@ -447,14 +444,19 @@
       "https://hyperborea.org/journal/category/entertainment/humor/you-must-be-mistaken/"
     ],
     "me": [
-      "https://www.flickr.com/photos/kelsonv/",
-      "https://instagram.com/kelsonv",
-      "https://photog.social/@kelsonv",
-      "https://pixelfed.social/KelsonV",
+      "https://kvibber.com/",
       "https://www.facebook.com/kelson",
       "https://www.linkedin.com/in/kvibber",
       "https://twitter.com/KelsonV",
-      "https://wandering.shop/@KelsonV"
+      "https://pinterest.com/kelsonv/",
+      "https://wandering.shop/@KelsonV",
+      "https://www.flickr.com/photos/kelsonv/",
+      "https://instagram.com/kelsonv",
+      "https://photog.social/@kelsonv",
+      "https://pixelfed.social/KelsonV"
+    ],
+    "nofollow": [
+      "https://hyperborea.org/journal/wp-login.php"
     ],
     "generator": [
       "http://wordpress.org/"
@@ -495,7 +497,7 @@
       "title": "K-Squared Ramblings » Comments Feed",
       "type": "application/rss+xml"
     },
-    "https://hyperborea.org/journal/wp-content/cache/wpo-minify/1671135478/assets/wpo-minify-header-13fc4a7f.min.css": {
+    "https://hyperborea.org/journal/wp-content/cache/wpo-minify/1671513509/assets/wpo-minify-header-b3182c48.min.css": {
       "rels": [
         "stylesheet"
       ],
@@ -519,11 +521,6 @@
         "wlwmanifest"
       ],
       "type": "application/wlwmanifest+xml"
-    },
-    "https://wp.me/4vcr": {
-      "rels": [
-        "shortlink"
-      ]
     },
     "https://hyperborea.org/journal/wp-json/indieauth/1.0/auth": {
       "rels": [
@@ -682,6 +679,41 @@
       ],
       "text": "You Must be Mistaken"
     },
+    "https://kvibber.com/": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://www.facebook.com/kelson": {
+      "rels": [
+        "me"
+      ],
+      "text": "Facebook"
+    },
+    "https://www.linkedin.com/in/kvibber": {
+      "rels": [
+        "me"
+      ],
+      "text": "LinkedIn"
+    },
+    "https://twitter.com/KelsonV": {
+      "rels": [
+        "me"
+      ],
+      "text": "Twitter"
+    },
+    "https://pinterest.com/kelsonv/": {
+      "rels": [
+        "me"
+      ],
+      "text": "Pinterest"
+    },
+    "https://wandering.shop/@KelsonV": {
+      "rels": [
+        "me"
+      ],
+      "text": "Mastodon"
+    },
     "https://www.flickr.com/photos/kelsonv/": {
       "rels": [
         "me"
@@ -706,29 +738,11 @@
       ],
       "text": "PixelFed"
     },
-    "https://www.facebook.com/kelson": {
+    "https://hyperborea.org/journal/wp-login.php": {
       "rels": [
-        "me"
+        "nofollow"
       ],
-      "text": "Facebook"
-    },
-    "https://www.linkedin.com/in/kvibber": {
-      "rels": [
-        "me"
-      ],
-      "text": "LinkedIn"
-    },
-    "https://twitter.com/KelsonV": {
-      "rels": [
-        "me"
-      ],
-      "text": "Twitter"
-    },
-    "https://wandering.shop/@KelsonV": {
-      "rels": [
-        "me"
-      ],
-      "text": "Wandering.Shop"
+      "text": "Log in"
     },
     "http://wordpress.org/": {
       "rels": [

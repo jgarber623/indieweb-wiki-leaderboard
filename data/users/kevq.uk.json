@@ -5,35 +5,16 @@
       "https://kevquirk.com/"
     ],
     "next": [
-      "https://kevquirk.com/page/2/"
-    ],
-    "dns-prefetch": [
-      "https://cdn.kevquirk.com/"
-    ],
-    "preconnect": [
-      "https://cdn.kevquirk.com/"
+      "https://kevquirk.com/page2/"
     ],
     "alternate": [
-      "https://kevquirk.com/feed/"
+      "https://kevquirk.com/feed.xml"
     ],
-    "https://api.w.org/": [
-      "https://kevquirk.com/wp-json/"
-    ],
-    "EditURI": [
-      "https://kevquirk.com/xmlrpc.php?rsd"
-    ],
-    "wlwmanifest": [
-      "https://cdn.kevquirk.com/wp-includes/wlwmanifest.xml"
+    "stylesheet": [
+      "https://kevquirk.com/assets/css/style.css"
     ],
     "icon": [
-      "https://cdn.kevquirk.com/wp-content/uploads/2022/05/cropped-favicon-32x32.png",
-      "https://cdn.kevquirk.com/wp-content/uploads/2022/05/cropped-favicon-192x192.png"
-    ],
-    "apple-touch-icon": [
-      "https://cdn.kevquirk.com/wp-content/uploads/2022/05/cropped-favicon-180x180.png"
-    ],
-    "me": [
-      "https://fosstodon.org/@kev"
+      "https://kevquirk.com/assets/images/favicon.webp"
     ]
   },
   "rel-urls": {
@@ -42,61 +23,28 @@
         "canonical"
       ]
     },
-    "https://kevquirk.com/page/2/": {
+    "https://kevquirk.com/page2/": {
       "rels": [
         "next"
       ]
     },
-    "https://cdn.kevquirk.com/": {
-      "rels": [
-        "dns-prefetch"
-      ]
-    },
-    "https://kevquirk.com/feed/": {
+    "https://kevquirk.com/feed.xml": {
       "rels": [
         "alternate"
       ],
-      "title": "Kev Quirk » Feed",
+      "title": "Kev Quirk",
       "type": "application/rss+xml"
     },
-    "https://kevquirk.com/wp-json/": {
+    "https://kevquirk.com/assets/css/style.css": {
       "rels": [
-        "https://api.w.org/"
+        "stylesheet"
       ]
     },
-    "https://kevquirk.com/xmlrpc.php?rsd": {
-      "rels": [
-        "EditURI"
-      ],
-      "title": "RSD",
-      "type": "application/rsd+xml"
-    },
-    "https://cdn.kevquirk.com/wp-includes/wlwmanifest.xml": {
-      "rels": [
-        "wlwmanifest"
-      ],
-      "type": "application/wlwmanifest+xml"
-    },
-    "https://cdn.kevquirk.com/wp-content/uploads/2022/05/cropped-favicon-32x32.png": {
+    "https://kevquirk.com/assets/images/favicon.webp": {
       "rels": [
         "icon"
-      ]
-    },
-    "https://cdn.kevquirk.com/wp-content/uploads/2022/05/cropped-favicon-192x192.png": {
-      "rels": [
-        "icon"
-      ]
-    },
-    "https://cdn.kevquirk.com/wp-content/uploads/2022/05/cropped-favicon-180x180.png": {
-      "rels": [
-        "apple-touch-icon"
-      ]
-    },
-    "https://fosstodon.org/@kev": {
-      "rels": [
-        "me"
       ],
-      "text": "Mastodon"
+      "type": "image/png"
     }
   }
 }

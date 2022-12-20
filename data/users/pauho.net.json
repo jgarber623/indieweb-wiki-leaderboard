@@ -363,6 +363,9 @@
     "token_endpoint": [
       "https://pauho.net/wp-json/indieauth/1.0/token"
     ],
+    "friends-base-url": [
+      "https://pauho.net/wp-json/friends/v1"
+    ],
     "me": [
       "https://github.com/pauho",
       "https://twitter.com/pauho",
@@ -404,6 +407,7 @@
       "https://aperture.p3k.io/microsub/183"
     ],
     "bookmark": [
+      "https://pauho.net/2022/12/20/662514/",
       "https://pauho.net/2022/12/05/662499/",
       "https://pauho.net/2022/12/05/662495/",
       "https://pauho.net/2022/11/07/662487/",
@@ -422,13 +426,12 @@
       "https://pauho.net/2022/08/16/662389/",
       "https://pauho.net/2022/08/16/662388/",
       "https://pauho.net/2022/08/07/662381/",
-      "https://pauho.net/2022/08/05/662373/",
-      "https://pauho.net/2022/08/02/662359/"
+      "https://pauho.net/2022/08/05/662373/"
     ],
     "category": [
+      "https://pauho.net/category/uncategorised/",
       "https://pauho.net/category/glasgow/",
       "https://pauho.net/category/photography/",
-      "https://pauho.net/category/uncategorised/",
       "https://pauho.net/category/astronomy/",
       "https://pauho.net/category/blogging/",
       "https://pauho.net/category/inspiration/",
@@ -440,9 +443,9 @@
       "https://pauho.net/category/govanhill/"
     ],
     "tag": [
+      "https://pauho.net/category/uncategorised/",
       "https://pauho.net/category/glasgow/",
       "https://pauho.net/category/photography/",
-      "https://pauho.net/category/uncategorised/",
       "https://pauho.net/tag/checkin/",
       "https://pauho.net/category/astronomy/",
       "https://pauho.net/category/blogging/",
@@ -703,6 +706,11 @@
         "token_endpoint"
       ]
     },
+    "https://pauho.net/wp-json/friends/v1": {
+      "rels": [
+        "friends-base-url"
+      ]
+    },
     "https://github.com/pauho": {
       "rels": [
         "me"
@@ -793,6 +801,19 @@
         "microsub"
       ]
     },
+    "https://pauho.net/2022/12/20/662514/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "20th December 2022"
+    },
+    "https://pauho.net/category/uncategorised/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Uncategorised"
+    },
     "https://pauho.net/2022/12/05/662499/": {
       "rels": [
         "bookmark"
@@ -818,13 +839,6 @@
         "bookmark"
       ],
       "text": "5th December 2022"
-    },
-    "https://pauho.net/category/uncategorised/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "Uncategorised"
     },
     "https://pauho.net/2022/11/07/662487/": {
       "rels": [
@@ -996,12 +1010,6 @@
         "tag"
       ],
       "text": "govanhill"
-    },
-    "https://pauho.net/2022/08/02/662359/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "2nd August 2022"
     }
   }
 }
