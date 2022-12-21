@@ -1,20 +1,88 @@
 {
   "items": [],
   "rels": {
-    "stylesheet": [
-      "https://mikehelmers.com/ananke/css/main.min.css"
+    "icon": [
+      "https://mikehelmers.com/favicon.ico",
+      "https://mikehelmers.com/favicon-32x32.png",
+      "https://mikehelmers.com/favicon-16x16.png"
+    ],
+    "shortcut": [
+      "https://mikehelmers.com/favicon.ico"
+    ],
+    "apple-touch-icon": [
+      "https://mikehelmers.com/apple-touch-icon.png"
+    ],
+    "mask-icon": [
+      "https://mikehelmers.com/safari-pinned-tab.svg"
+    ],
+    "manifest": [
+      "https://mikehelmers.com/site.webmanifest"
+    ],
+    "canonical": [
+      "http://mikehelmers.com/"
     ],
     "alternate": [
       "https://mikehelmers.com/index.xml"
     ],
     "feed": [
       "https://mikehelmers.com/index.xml"
+    ],
+    "stylesheet": [
+      "https://mikehelmers.com/css/style.min.css",
+      "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css",
+      "https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"
+    ],
+    "preload": [
+      "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css",
+      "https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"
+    ],
+    "noopener": [
+      "https://gohugo.io/",
+      "https://github.com/dillonzq/LoveIt"
+    ],
+    "noreffer": [
+      "https://gohugo.io/",
+      "https://github.com/dillonzq/LoveIt"
     ]
   },
   "rel-urls": {
-    "https://mikehelmers.com/ananke/css/main.min.css": {
+    "https://mikehelmers.com/favicon.ico": {
       "rels": [
-        "stylesheet"
+        "icon",
+        "shortcut"
+      ],
+      "type": "image/x-icon"
+    },
+    "https://mikehelmers.com/favicon-32x32.png": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/png"
+    },
+    "https://mikehelmers.com/favicon-16x16.png": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/png"
+    },
+    "https://mikehelmers.com/apple-touch-icon.png": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://mikehelmers.com/safari-pinned-tab.svg": {
+      "rels": [
+        "mask-icon"
+      ]
+    },
+    "https://mikehelmers.com/site.webmanifest": {
+      "rels": [
+        "manifest"
+      ]
+    },
+    "http://mikehelmers.com/": {
+      "rels": [
+        "canonical"
       ]
     },
     "https://mikehelmers.com/index.xml": {
@@ -23,6 +91,37 @@
       ],
       "title": "Mike Helmers: The Blog",
       "type": "application/rss+xml"
+    },
+    "https://mikehelmers.com/css/style.min.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://gohugo.io/": {
+      "rels": [
+        "noopener",
+        "noreffer"
+      ],
+      "title": "Hugo 0.104.3",
+      "text": "Hugo"
+    },
+    "https://github.com/dillonzq/LoveIt": {
+      "rels": [
+        "noopener",
+        "noreffer"
+      ],
+      "title": "LoveIt 0.2.11",
+      "text": " LoveIt"
     }
   }
 }

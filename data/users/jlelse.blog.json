@@ -32,6 +32,28 @@
           ],
           "properties": {
             "published": [
+              "2022-12-20T19:44:44+01:00"
+            ],
+            "updated": [
+              "2022-12-20T20:15:30+01:00"
+            ],
+            "content": [
+              {
+                "html": "<p>WordPress implemented SQLite support! 😱 (Not merged into Core yet, but you’re able to <a href=\"https://make.wordpress.org/core/2022/12/20/help-us-test-the-sqlite-implementation/\" target=\"_blank\" rel=\"noopener\">test it</a>.)</p>\n<p><em>Update:</em> Just tried the Performance Lab plugin with SQLite support enabled on a test WordPress instance using Docker. Do I see it right, that the plugin isn’t using <a href=\"https://www.sqlite.org/wal.html\" target=\"_blank\" rel=\"noopener\">SQLite WAL</a>? That would probably give the whole thing a big speed boost. At least that’s what I do with GoBlog and my website is fast, right? 🤓</p>",
+                "value": "WordPress implemented SQLite support! 😱 (Not merged into Core yet, but you’re able to test it.)Update: Just tried the Performance Lab plugin with SQLite support enabled on a test WordPress instance using Docker. Do I see it right, that the plugin isn’t using SQLite WAL? That would probably give the whole thing a big speed boost. At least that’s what I do with GoBlog and my website is fast, right? 🤓"
+              }
+            ],
+            "url": [
+              "https://jlelse.blog/micro/2022/12/2022-12-20-qdkff"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "published": [
               "2022-12-18T17:00:00+01:00"
             ],
             "content": [
@@ -203,25 +225,6 @@
               "https://jlelse.blog/micro/2022/12/2022-12-13-nsdzc"
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "published": [
-              "2022-12-10T07:56:00+01:00"
-            ],
-            "content": [
-              {
-                "html": "<p>I use Firefox as my preferred web browser both on PCs and my phone. One extension is always installed: uBlock Origin. The web is so much nicer with all the ads and tracking removed. But today I also retried an extension that will probably join the “must install” list: DarkReader. Especially when I’m browsing the web on my phone in the early morning, I don’t like to be blinded by white websites. Since March DarkReader has finally <a href=\"https://darkreader.org/blog/detect-dark-theme/\" target=\"_blank\" rel=\"noopener\">an option to detect if a website already has a dark theme</a> and only apply it’s color changes to those who haven’t.</p>",
-                "value": "I use Firefox as my preferred web browser both on PCs and my phone. One extension is always installed: uBlock Origin. The web is so much nicer with all the ads and tracking removed. But today I also retried an extension that will probably join the “must install” list: DarkReader. Especially when I’m browsing the web on my phone in the early morning, I don’t like to be blinded by white websites. Since March DarkReader has finally an option to detect if a website already has a dark theme and only apply it’s color changes to those who haven’t."
-              }
-            ],
-            "url": [
-              "https://jlelse.blog/micro/2022/12/2022-12-10-pfqhj"
-            ]
-          }
         }
       ]
     }
@@ -273,9 +276,10 @@
       "https://jlelse.blog/"
     ],
     "noopener": [
+      "https://make.wordpress.org/core/2022/12/20/help-us-test-the-sqlite-implementation/",
+      "https://www.sqlite.org/wal.html",
       "https://kandr3s.co/post/go-indieweb-goblog",
       "https://connect.mozilla.org/t5/discussions/firefox-now-saves-files-that-i-only-wanted-to-open/m-p/2607",
-      "https://darkreader.org/blog/detect-dark-theme/",
       "https://www.torproject.org/"
     ],
     "nofollow": [
@@ -382,6 +386,18 @@
         "apple-touch-icon"
       ]
     },
+    "https://make.wordpress.org/core/2022/12/20/help-us-test-the-sqlite-implementation/": {
+      "rels": [
+        "noopener"
+      ],
+      "text": "test it"
+    },
+    "https://www.sqlite.org/wal.html": {
+      "rels": [
+        "noopener"
+      ],
+      "text": "SQLite WAL"
+    },
     "https://kandr3s.co/post/go-indieweb-goblog": {
       "rels": [
         "noopener"
@@ -393,12 +409,6 @@
         "noopener"
       ],
       "text": "some work-arounds"
-    },
-    "https://darkreader.org/blog/detect-dark-theme/": {
-      "rels": [
-        "noopener"
-      ],
-      "text": "an option to detect if a website already has a dark theme"
     },
     "https://www.torproject.org/": {
       "rels": [

@@ -2,22 +2,36 @@
   "items": [],
   "rels": {
     "stylesheet": [
-      "https://stefanovski.io/packs/css/common-a844dc34.css",
-      "https://stefanovski.io/packs/css/default-0011e806.chunk.css"
+      "https://stefanovski.io/cdn-cgi/styles/main.css"
+    ],
+    "noopener": [
+      "https://developers.cloudflare.com/argo-tunnel/reference/load-balancing/",
+      "https://www.cloudflare.com/5xx-error-landing"
+    ],
+    "noreferrer": [
+      "https://developers.cloudflare.com/argo-tunnel/reference/load-balancing/",
+      "https://www.cloudflare.com/5xx-error-landing"
     ]
   },
   "rel-urls": {
-    "https://stefanovski.io/packs/css/common-a844dc34.css": {
+    "https://stefanovski.io/cdn-cgi/styles/main.css": {
       "rels": [
         "stylesheet"
-      ],
-      "media": "all"
+      ]
     },
-    "https://stefanovski.io/packs/css/default-0011e806.chunk.css": {
+    "https://developers.cloudflare.com/argo-tunnel/reference/load-balancing/": {
       "rels": [
-        "stylesheet"
+        "noopener",
+        "noreferrer"
       ],
-      "media": "all"
+      "text": "load balancing"
+    },
+    "https://www.cloudflare.com/5xx-error-landing": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "Cloudflare"
     }
   }
 }
