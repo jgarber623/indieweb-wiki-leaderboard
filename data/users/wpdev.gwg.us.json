@@ -277,6 +277,9 @@
     "token_endpoint": [
       "https://wpdev.gwg.us/wp-json/indieauth/1.0/token"
     ],
+    "indieauth-metadata": [
+      "https://wpdev.gwg.us/wp-json/indieauth/1.0/metadata"
+    ],
     "ticket_endpoint": [
       "https://wpdev.gwg.us/wp-json/indieauth/1.0/ticket"
     ],
@@ -455,6 +458,11 @@
     "https://wpdev.gwg.us/wp-json/indieauth/1.0/token": {
       "rels": [
         "token_endpoint"
+      ]
+    },
+    "https://wpdev.gwg.us/wp-json/indieauth/1.0/metadata": {
+      "rels": [
+        "indieauth-metadata"
       ]
     },
     "https://wpdev.gwg.us/wp-json/indieauth/1.0/ticket": {

@@ -1,31 +1,112 @@
 {
   "items": [],
   "rels": {
-    "stylesheet": [
-      "https://davidpeach.co.uk/style.css"
+    "alternate": [
+      "https://davidpeach.co.uk/?feed=rss2",
+      "https://davidpeach.co.uk/?feed=comments-rss2",
+      "https://davidpeach.co.uk/index.php?rest_route=/wp/v2/pages/7",
+      "https://davidpeach.co.uk/index.php?rest_route=%2Foembed%2F1.0%2Fembed&url=https%3A%2F%2Fdavidpeach.co.uk%2F"
     ],
-    "me": [
-      "https://mastodon.davidpeach.co.uk/",
-      "https://github.com/davidpeach"
+    "stylesheet": [
+      "https://davidpeach.co.uk/wp-includes/blocks/navigation/style.min.css?ver=6.1.1",
+      "https://davidpeach.co.uk/wp-content/plugins/twentig/dist/blocks/common.min.css?ver=be6428226d75d7a7464c",
+      "https://davidpeach.co.uk/wp-content/plugins/twentig/dist/blocks/tw-spacing.min.css?ver=1.5.3"
+    ],
+    "https://api.w.org/": [
+      "https://davidpeach.co.uk/index.php?rest_route=/"
+    ],
+    "EditURI": [
+      "https://davidpeach.co.uk/xmlrpc.php?rsd"
+    ],
+    "wlwmanifest": [
+      "https://davidpeach.co.uk/wp-includes/wlwmanifest.xml"
+    ],
+    "canonical": [
+      "https://davidpeach.co.uk/"
+    ],
+    "shortlink": [
+      "https://davidpeach.co.uk/"
+    ],
+    "home": [
+      "https://davidpeach.co.uk/"
+    ],
+    "nofollow": [
+      "https://wordpress.org/"
     ]
   },
   "rel-urls": {
-    "https://davidpeach.co.uk/style.css": {
+    "https://davidpeach.co.uk/?feed=rss2": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "David Peach » Feed",
+      "type": "application/rss+xml"
+    },
+    "https://davidpeach.co.uk/?feed=comments-rss2": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "David Peach » Comments Feed",
+      "type": "application/rss+xml"
+    },
+    "https://davidpeach.co.uk/wp-includes/blocks/navigation/style.min.css?ver=6.1.1": {
       "rels": [
         "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://davidpeach.co.uk/wp-content/plugins/twentig/dist/blocks/common.min.css?ver=be6428226d75d7a7464c": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://davidpeach.co.uk/wp-content/plugins/twentig/dist/blocks/tw-spacing.min.css?ver=1.5.3": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://davidpeach.co.uk/index.php?rest_route=/": {
+      "rels": [
+        "https://api.w.org/"
       ]
     },
-    "https://mastodon.davidpeach.co.uk/": {
+    "https://davidpeach.co.uk/index.php?rest_route=/wp/v2/pages/7": {
       "rels": [
-        "me"
+        "alternate"
       ],
-      "text": "my own Mastodon instance"
+      "type": "application/json"
     },
-    "https://github.com/davidpeach": {
+    "https://davidpeach.co.uk/xmlrpc.php?rsd": {
       "rels": [
-        "me"
+        "EditURI"
       ],
-      "text": "Github"
+      "title": "RSD",
+      "type": "application/rsd+xml"
+    },
+    "https://davidpeach.co.uk/wp-includes/wlwmanifest.xml": {
+      "rels": [
+        "wlwmanifest"
+      ],
+      "type": "application/wlwmanifest+xml"
+    },
+    "https://davidpeach.co.uk/": {
+      "rels": [
+        "canonical"
+      ]
+    },
+    "https://davidpeach.co.uk/index.php?rest_route=%2Foembed%2F1.0%2Fembed&url=https%3A%2F%2Fdavidpeach.co.uk%2F": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/json+oembed"
+    },
+    "https://wordpress.org/": {
+      "rels": [
+        "nofollow"
+      ],
+      "text": "WordPress"
     }
   }
 }

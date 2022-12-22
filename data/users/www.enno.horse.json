@@ -37,6 +37,9 @@
     "token_endpoint": [
       "https://www.enno.horse/wp-json/indieauth/1.0/token"
     ],
+    "indieauth-metadata": [
+      "https://www.enno.horse/wp-json/indieauth/1.0/metadata"
+    ],
     "icon": [
       "https://www.enno.horse/wp-content/uploads/2021/11/rufus-150x150.png",
       "https://www.enno.horse/wp-content/uploads/2021/11/rufus.png"
@@ -161,6 +164,11 @@
     "https://www.enno.horse/wp-json/indieauth/1.0/token": {
       "rels": [
         "token_endpoint"
+      ]
+    },
+    "https://www.enno.horse/wp-json/indieauth/1.0/metadata": {
+      "rels": [
+        "indieauth-metadata"
       ]
     },
     "https://www.enno.horse/wp-content/uploads/2021/11/rufus-150x150.png": {

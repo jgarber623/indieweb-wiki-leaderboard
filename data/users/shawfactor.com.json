@@ -73,10 +73,13 @@
     "token_endpoint": [
       "https://shawfactor.com/wp-json/indieauth/1.0/token"
     ],
+    "indieauth-metadata": [
+      "https://shawfactor.com/wp-json/indieauth/1.0/metadata"
+    ],
     "preload": [
       "https://localhero.biz/wp-content/plugins/lh-web-application/scripts/localforage.min.js?ver=1586195098",
       "https://localhero.biz/wp-content/plugins/lh-web-application/scripts/lh-web-application-main.js?ver=1646236861",
-      "https://localhero.biz/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=7.2.0",
+      "https://localhero.biz/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=7.2.2",
       "https://localhero.biz/wp-content/themes/twentysixteen/js/skip-link-focus-fix.js?ver=20170530",
       "https://localhero.biz/wp-content/themes/twentysixteen/js/functions.js?ver=20211130",
       "https://localhero.biz/wp-content/plugins/lh-fresh-content/scripts/lh-fresh-content.js?ver=1645235437",
@@ -413,6 +416,11 @@
         "token_endpoint"
       ]
     },
+    "https://shawfactor.com/wp-json/indieauth/1.0/metadata": {
+      "rels": [
+        "indieauth-metadata"
+      ]
+    },
     "https://localhero.biz/wp-content/plugins/lh-web-application/scripts/localforage.min.js?ver=1586195098": {
       "rels": [
         "preload"
@@ -423,7 +431,7 @@
         "preload"
       ]
     },
-    "https://localhero.biz/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=7.2.0": {
+    "https://localhero.biz/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=7.2.2": {
       "rels": [
         "preload"
       ]

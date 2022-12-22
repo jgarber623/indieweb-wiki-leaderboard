@@ -648,6 +648,9 @@
     "token_endpoint": [
       "https://mabulledu.net/wp-json/indieauth/1.0/token"
     ],
+    "indieauth-metadata": [
+      "https://mabulledu.net/wp-json/indieauth/1.0/metadata"
+    ],
     "friends-base-url": [
       "https://mabulledu.net/wp-json/friends/v1"
     ],
@@ -758,6 +761,11 @@
     "https://mabulledu.net/wp-json/indieauth/1.0/token": {
       "rels": [
         "token_endpoint"
+      ]
+    },
+    "https://mabulledu.net/wp-json/indieauth/1.0/metadata": {
+      "rels": [
+        "indieauth-metadata"
       ]
     },
     "https://mabulledu.net/wp-json/friends/v1": {

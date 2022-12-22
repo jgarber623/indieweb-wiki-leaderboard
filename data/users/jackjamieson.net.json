@@ -97,6 +97,9 @@
     "token_endpoint": [
       "https://jackjamieson.net/wp-json/indieauth/1.0/token"
     ],
+    "indieauth-metadata": [
+      "https://jackjamieson.net/wp-json/indieauth/1.0/metadata"
+    ],
     "micropub_media": [
       "https://jackjamieson.net/wp-json/micropub/1.0/media"
     ],
@@ -286,6 +289,11 @@
     "https://jackjamieson.net/wp-json/indieauth/1.0/token": {
       "rels": [
         "token_endpoint"
+      ]
+    },
+    "https://jackjamieson.net/wp-json/indieauth/1.0/metadata": {
+      "rels": [
+        "indieauth-metadata"
       ]
     },
     "https://jackjamieson.net/wp-json/micropub/1.0/media": {

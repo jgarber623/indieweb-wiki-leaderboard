@@ -53,6 +53,9 @@
     "token_endpoint": [
       "https://www.hammyhavoc.com/wp-json/indieauth/1.0/token"
     ],
+    "indieauth-metadata": [
+      "https://www.hammyhavoc.com/wp-json/indieauth/1.0/metadata"
+    ],
     "me": [
       "https://twitter.com/hammyhavoc",
       "https://www.facebook.com/TheRealHammyHavoc",
@@ -297,6 +300,11 @@
     "https://www.hammyhavoc.com/wp-json/indieauth/1.0/token": {
       "rels": [
         "token_endpoint"
+      ]
+    },
+    "https://www.hammyhavoc.com/wp-json/indieauth/1.0/metadata": {
+      "rels": [
+        "indieauth-metadata"
       ]
     },
     "https://twitter.com/hammyhavoc": {

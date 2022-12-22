@@ -83,6 +83,9 @@
     "token_endpoint": [
       "https://nicolas-bermond.com/wp-json/indieauth/1.0/token"
     ],
+    "indieauth-metadata": [
+      "https://nicolas-bermond.com/wp-json/indieauth/1.0/metadata"
+    ],
     "me": [
       "https://github.com/nicolas2fr",
       "https://twitter.com/nicolas2fr",
@@ -219,6 +222,11 @@
     "https://nicolas-bermond.com/wp-json/indieauth/1.0/token": {
       "rels": [
         "token_endpoint"
+      ]
+    },
+    "https://nicolas-bermond.com/wp-json/indieauth/1.0/metadata": {
+      "rels": [
+        "indieauth-metadata"
       ]
     },
     "https://github.com/nicolas2fr": {

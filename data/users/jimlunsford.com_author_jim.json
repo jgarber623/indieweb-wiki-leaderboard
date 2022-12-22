@@ -61,6 +61,9 @@
     "token_endpoint": [
       "https://jimlunsford.com/wp-json/indieauth/1.0/token"
     ],
+    "indieauth-metadata": [
+      "https://jimlunsford.com/wp-json/indieauth/1.0/metadata"
+    ],
     "me": [
       "https://twit.social/@jim",
       "https://www.linkedin.com/in/lunsfordjim/",
@@ -341,6 +344,11 @@
     "https://jimlunsford.com/wp-json/indieauth/1.0/token": {
       "rels": [
         "token_endpoint"
+      ]
+    },
+    "https://jimlunsford.com/wp-json/indieauth/1.0/metadata": {
+      "rels": [
+        "indieauth-metadata"
       ]
     },
     "https://twit.social/@jim": {

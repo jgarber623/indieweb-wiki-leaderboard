@@ -106,6 +106,9 @@
     "token_endpoint": [
       "https://garystu.art/wp-json/indieauth/1.0/token"
     ],
+    "indieauth-metadata": [
+      "https://garystu.art/wp-json/indieauth/1.0/metadata"
+    ],
     "feed": [
       "https://garystu.art/blog/"
     ],
@@ -298,6 +301,11 @@
     "https://garystu.art/wp-json/indieauth/1.0/token": {
       "rels": [
         "token_endpoint"
+      ]
+    },
+    "https://garystu.art/wp-json/indieauth/1.0/metadata": {
+      "rels": [
+        "indieauth-metadata"
       ]
     },
     "https://garystu.art/blog/": {

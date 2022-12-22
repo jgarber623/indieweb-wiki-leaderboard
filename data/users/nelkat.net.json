@@ -647,6 +647,9 @@
     "token_endpoint": [
       "https://nelkat.net/wp-json/indieauth/1.0/token"
     ],
+    "indieauth-metadata": [
+      "https://nelkat.net/wp-json/indieauth/1.0/metadata"
+    ],
     "micropub_media": [
       "https://nelkat.net/wp-json/micropub/1.0/media"
     ],
@@ -826,6 +829,11 @@
     "https://nelkat.net/wp-json/indieauth/1.0/token": {
       "rels": [
         "token_endpoint"
+      ]
+    },
+    "https://nelkat.net/wp-json/indieauth/1.0/metadata": {
+      "rels": [
+        "indieauth-metadata"
       ]
     },
     "https://nelkat.net/wp-json/micropub/1.0/media": {

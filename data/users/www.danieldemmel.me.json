@@ -23,6 +23,25 @@
               }
             }
           ]
+        },
+        {
+          "type": [
+            "h-card"
+          ],
+          "properties": {
+            "email": [
+              "https://www.danieldemmel.me/"
+            ],
+            "name": [
+              "Daniel Demmel"
+            ],
+            "url": [
+              "https://www.danieldemmel.me/"
+            ],
+            "uid": [
+              "https://www.danieldemmel.me/"
+            ]
+          }
         }
       ]
     }
@@ -49,16 +68,24 @@
     ],
     "preload": [
       "https://www.danieldemmel.me/_next/static/media/2aaf0723e720e8b9.p.woff2",
-      "https://www.danieldemmel.me/_next/static/css/a9a16310b1a84cf8.css"
+      "https://www.danieldemmel.me/_next/static/css/29b8aec66ecae5df.css"
     ],
     "stylesheet": [
-      "https://www.danieldemmel.me/_next/static/css/a9a16310b1a84cf8.css"
+      "https://www.danieldemmel.me/_next/static/css/29b8aec66ecae5df.css"
+    ],
+    "me": [
+      "mailto:hello@danieldemmel.me",
+      "https://github.com/daaain",
+      "https://www.linkedin.com/in/danieldemmel/",
+      "https://twitter.com/daaain",
+      "https://fosstodon.org/@daaain"
     ],
     "noopener": [
       "mailto:hello@danieldemmel.me",
       "https://github.com/daaain",
       "https://www.linkedin.com/in/danieldemmel/",
       "https://twitter.com/daaain",
+      "https://fosstodon.org/@daaain",
       "https://github.com/daaain/danieldemmel.me-next"
     ],
     "noreferrer": [
@@ -66,6 +93,7 @@
       "https://github.com/daaain",
       "https://www.linkedin.com/in/danieldemmel/",
       "https://twitter.com/daaain",
+      "https://fosstodon.org/@daaain",
       "https://github.com/daaain/danieldemmel.me-next"
     ]
   },
@@ -114,13 +142,14 @@
       ],
       "type": "font/woff2"
     },
-    "https://www.danieldemmel.me/_next/static/css/a9a16310b1a84cf8.css": {
+    "https://www.danieldemmel.me/_next/static/css/29b8aec66ecae5df.css": {
       "rels": [
         "preload"
       ]
     },
     "mailto:hello@danieldemmel.me": {
       "rels": [
+        "me",
         "noopener",
         "noreferrer"
       ],
@@ -128,6 +157,7 @@
     },
     "https://github.com/daaain": {
       "rels": [
+        "me",
         "noopener",
         "noreferrer"
       ],
@@ -135,6 +165,7 @@
     },
     "https://www.linkedin.com/in/danieldemmel/": {
       "rels": [
+        "me",
         "noopener",
         "noreferrer"
       ],
@@ -142,10 +173,19 @@
     },
     "https://twitter.com/daaain": {
       "rels": [
+        "me",
         "noopener",
         "noreferrer"
       ],
       "text": "twitter"
+    },
+    "https://fosstodon.org/@daaain": {
+      "rels": [
+        "me",
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "mastodon"
     },
     "https://github.com/daaain/danieldemmel.me-next": {
       "rels": [

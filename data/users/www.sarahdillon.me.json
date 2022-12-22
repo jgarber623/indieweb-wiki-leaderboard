@@ -170,6 +170,9 @@
       "https://www.sarahdillon.me/wp-json/indieauth/1.0/token",
       "https://micro.blog/indieauth/token"
     ],
+    "indieauth-metadata": [
+      "https://www.sarahdillon.me/wp-json/indieauth/1.0/metadata"
+    ],
     "pingback": [
       "https://www.sarahdillon.me/xmlrpc.php"
     ],
@@ -353,6 +356,11 @@
     "https://www.sarahdillon.me/wp-json/indieauth/1.0/token": {
       "rels": [
         "token_endpoint"
+      ]
+    },
+    "https://www.sarahdillon.me/wp-json/indieauth/1.0/metadata": {
+      "rels": [
+        "indieauth-metadata"
       ]
     },
     "https://www.sarahdillon.me/xmlrpc.php": {

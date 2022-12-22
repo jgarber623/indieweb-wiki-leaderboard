@@ -42,7 +42,7 @@
       "https://www.ozaj.sk/comments/feed/"
     ],
     "stylesheet": [
-      "http://www.ozaj.sk/wp-content/plugins/gutenberg/build/block-library/style.css?ver=14.7.3",
+      "http://www.ozaj.sk/wp-content/plugins/gutenberg/build/block-library/style.css?ver=14.8.0",
       "http://www.ozaj.sk/wp-content/plugins/getwid/vendors/fontawesome-free/css/all.min.css?ver=5.5.0",
       "http://www.ozaj.sk/wp-content/plugins/getwid/vendors/slick/slick/slick.min.css?ver=1.9.0",
       "http://www.ozaj.sk/wp-content/plugins/getwid/vendors/slick/slick/slick-theme.min.css?ver=1.9.0",
@@ -66,6 +66,9 @@
     ],
     "token_endpoint": [
       "https://www.ozaj.sk/wp-json/indieauth/1.0/token"
+    ],
+    "indieauth-metadata": [
+      "https://www.ozaj.sk/wp-json/indieauth/1.0/metadata"
     ],
     "home": [
       "https://www.ozaj.sk/"
@@ -99,7 +102,7 @@
       "title": "RSS kanál komentárov webu ozaj.sk »",
       "type": "application/rss+xml"
     },
-    "http://www.ozaj.sk/wp-content/plugins/gutenberg/build/block-library/style.css?ver=14.7.3": {
+    "http://www.ozaj.sk/wp-content/plugins/gutenberg/build/block-library/style.css?ver=14.8.0": {
       "rels": [
         "stylesheet"
       ],
@@ -188,6 +191,11 @@
     "https://www.ozaj.sk/wp-json/indieauth/1.0/token": {
       "rels": [
         "token_endpoint"
+      ]
+    },
+    "https://www.ozaj.sk/wp-json/indieauth/1.0/metadata": {
+      "rels": [
+        "indieauth-metadata"
       ]
     },
     "https://www.ozaj.sk/": {

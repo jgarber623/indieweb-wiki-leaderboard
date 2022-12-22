@@ -32,8 +32,20 @@
           "https://en.wiktionary.org/wiki/they#English:_third-person_singular_nominative"
         ],
         "nickname": [
-          "quantum",
-          "quantum_gautam"
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "name": [
+                "quantum"
+              ],
+              "url": [
+                "https://quantum.envs.net/"
+              ]
+            },
+            "value": "quantum"
+          }
         ],
         "note": [
           "I’m currently a (provisional) PhD candidate at the University\n      of Leeds researching the Geometry\n      and Dynamics of Topological Solitons. Roughly speaking, my\n      research lies in the intersection of geometry and mathematical\n      physics, specifically how we can use methods from geometry to\n      understand how certain singularities in classical field theories\n      behave. My broader research interests are in differential and\n      algebraic geometry, particularly gauge theory problems linked to\n      kähler geometry. My other mathematical interests include algebraic\n      topology, type theory, and combinatorics."
@@ -50,8 +62,8 @@
   ],
   "rels": {
     "stylesheet": [
-      "https://gchaudhuri.dev/reset.css",
-      "https://gchaudhuri.dev/style.css"
+      "https://gchaudhuri.dev/css/reset.css",
+      "https://gchaudhuri.dev/css/style.css"
     ],
     "author": [
       "https://gchaudhuri.dev/"
@@ -64,6 +76,7 @@
     ],
     "me": [
       "https://gchaudhuri.dev/",
+      "https://quantum.envs.net/",
       "https://eps.leeds.ac.uk/maths/pgr/10184/gautam-chaudhuri",
       "https://sr.ht/~quantum/",
       "https://github.com/quantumgc",
@@ -73,12 +86,12 @@
     ]
   },
   "rel-urls": {
-    "https://gchaudhuri.dev/reset.css": {
+    "https://gchaudhuri.dev/css/reset.css": {
       "rels": [
         "stylesheet"
       ]
     },
-    "https://gchaudhuri.dev/style.css": {
+    "https://gchaudhuri.dev/css/style.css": {
       "rels": [
         "stylesheet"
       ]
@@ -91,6 +104,12 @@
         "me"
       ],
       "text": " Gautam Chaudhuri"
+    },
+    "https://quantum.envs.net/": {
+      "rels": [
+        "me"
+      ],
+      "text": "quantum"
     },
     "https://eps.leeds.ac.uk/maths/pgr/10184/gautam-chaudhuri": {
       "rels": [

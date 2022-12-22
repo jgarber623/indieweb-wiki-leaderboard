@@ -1146,6 +1146,9 @@
     "token_endpoint": [
       "https://pilch.me/wp-json/indieauth/1.0/token"
     ],
+    "indieauth-metadata": [
+      "https://pilch.me/wp-json/indieauth/1.0/metadata"
+    ],
     "me": [
       "https://github.com/craigpilcher",
       "https://twitter.com/pi1ch",
@@ -1368,6 +1371,11 @@
     "https://pilch.me/wp-json/indieauth/1.0/token": {
       "rels": [
         "token_endpoint"
+      ]
+    },
+    "https://pilch.me/wp-json/indieauth/1.0/metadata": {
+      "rels": [
+        "indieauth-metadata"
       ]
     },
     "https://github.com/craigpilcher": {

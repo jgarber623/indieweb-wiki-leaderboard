@@ -382,6 +382,9 @@
     "token_endpoint": [
       "https://www.prjorgensen.com/wp-json/indieauth/1.0/token"
     ],
+    "indieauth-metadata": [
+      "https://www.prjorgensen.com/wp-json/indieauth/1.0/metadata"
+    ],
     "me": [
       "https://github.com/zenshinji",
       "https://twitter.com/prjorgensen",
@@ -454,9 +457,11 @@
     ],
     "noopener": [
       "https://grahamcluley.com/ouch-ransomware-gang-says-it-wont-attack-airasia-again-due-to-the-chaotic-organisation-and-sloppy-security-of-hacked-companys-network/",
+      "https://social.sdf.org/@prjorgensen",
       "https://wordpress.org/"
     ],
     "noreferrer": [
+      "https://social.sdf.org/@prjorgensen",
       "https://wordpress.org/"
     ]
   },
@@ -662,6 +667,11 @@
     "https://www.prjorgensen.com/wp-json/indieauth/1.0/token": {
       "rels": [
         "token_endpoint"
+      ]
+    },
+    "https://www.prjorgensen.com/wp-json/indieauth/1.0/metadata": {
+      "rels": [
+        "indieauth-metadata"
       ]
     },
     "https://github.com/zenshinji": {
@@ -881,6 +891,12 @@
         "tag"
       ],
       "text": "philosophy"
+    },
+    "https://social.sdf.org/@prjorgensen": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ]
     },
     "https://wordpress.org/": {
       "rels": [

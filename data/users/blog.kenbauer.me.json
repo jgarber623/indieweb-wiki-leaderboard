@@ -50,6 +50,9 @@
     "token_endpoint": [
       "https://blog.kenbauer.me/wp-json/indieauth/1.0/token"
     ],
+    "indieauth-metadata": [
+      "https://blog.kenbauer.me/wp-json/indieauth/1.0/metadata"
+    ],
     "me": [
       "https://fosstodon.org/@kenbauer",
       "https://github.com/kenwbauer",
@@ -327,6 +330,11 @@
     "https://blog.kenbauer.me/wp-json/indieauth/1.0/token": {
       "rels": [
         "token_endpoint"
+      ]
+    },
+    "https://blog.kenbauer.me/wp-json/indieauth/1.0/metadata": {
+      "rels": [
+        "indieauth-metadata"
       ]
     },
     "https://fosstodon.org/@kenbauer": {
