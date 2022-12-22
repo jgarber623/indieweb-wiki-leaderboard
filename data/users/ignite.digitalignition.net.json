@@ -1396,7 +1396,7 @@
       "https://ruxton.ninja/wp-includes/css/classic-themes.min.css?ver=1",
       "https://ruxton.ninja/wp-content/plugins/wp-polls/polls-css.css?ver=2.77.0",
       "https://ruxton.ninja/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
-      "https://ruxton.ninja/wp-content/plugins/simple-location/css/location.min.css?ver=5.0.1",
+      "https://ruxton.ninja/wp-content/plugins/simple-location/css/location.min.css?ver=5.0.4",
       "https://ruxton.ninja/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3",
       "https://ruxton.ninja/wp-includes/css/dashicons.min.css?ver=6.1.1",
       "https://ruxton.ninja/wp-content/themes/autonomie/style.css?ver=6.1.1",
@@ -1404,7 +1404,7 @@
       "https://ruxton.ninja/wp-content/themes/autonomie/assets/css/narrow-width.css?ver=1.0.0",
       "https://ruxton.ninja/wp-content/themes/autonomie/assets/css/default-width.css?ver=1.0.0",
       "https://ruxton.ninja/wp-content/themes/autonomie/assets/css/wide-width.css?ver=1.0.0",
-      "https://ruxton.ninja/wp-content/plugins/jetpack/css/jetpack.css?ver=11.5.1"
+      "https://ruxton.ninja/wp-content/plugins/jetpack/css/jetpack.css?ver=11.6"
     ],
     "https://api.w.org/": [
       "https://ruxton.ninja/wp-json/"
@@ -1426,6 +1426,9 @@
     ],
     "token_endpoint": [
       "https://ruxton.ninja/wp-json/indieauth/1.0/token"
+    ],
+    "indieauth-metadata": [
+      "https://ruxton.ninja/wp-json/indieauth/1.0/metadata"
     ],
     "me": [
       "https://github.com/ruxton",
@@ -1582,7 +1585,7 @@
       "media": "all",
       "type": "text/css"
     },
-    "https://ruxton.ninja/wp-content/plugins/simple-location/css/location.min.css?ver=5.0.1": {
+    "https://ruxton.ninja/wp-content/plugins/simple-location/css/location.min.css?ver=5.0.4": {
       "rels": [
         "stylesheet"
       ],
@@ -1638,7 +1641,7 @@
       "media": "(min-width: 1000px)",
       "type": "text/css"
     },
-    "https://ruxton.ninja/wp-content/plugins/jetpack/css/jetpack.css?ver=11.5.1": {
+    "https://ruxton.ninja/wp-content/plugins/jetpack/css/jetpack.css?ver=11.6": {
       "rels": [
         "stylesheet"
       ],
@@ -1676,6 +1679,11 @@
     "https://ruxton.ninja/wp-json/indieauth/1.0/token": {
       "rels": [
         "token_endpoint"
+      ]
+    },
+    "https://ruxton.ninja/wp-json/indieauth/1.0/metadata": {
+      "rels": [
+        "indieauth-metadata"
       ]
     },
     "https://ruxton.ninja/type/aside/feed/": {

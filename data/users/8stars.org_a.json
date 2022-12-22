@@ -24,7 +24,7 @@
       "http://8stars.org/a/wp-content/plugins/wp-gpx-maps/ThirdParties/leaflet.fullscreen-1.4.5/Control.FullScreen.css?ver=1.5.1",
       "http://8stars.org/a/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
       "http://8stars.org/a/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3",
-      "http://8stars.org/a/wp-content/plugins/jetpack/css/jetpack.css?ver=11.5.1"
+      "http://8stars.org/a/wp-content/plugins/jetpack/css/jetpack.css?ver=11.6"
     ],
     "https://api.w.org/": [
       "https://8stars.org/a/wp-json/"
@@ -43,6 +43,9 @@
     ],
     "token_endpoint": [
       "https://8stars.org/a/wp-json/indieauth/1.0/token"
+    ],
+    "indieauth-metadata": [
+      "https://8stars.org/a/wp-json/indieauth/1.0/metadata"
     ],
     "me": [
       "https://www.flickr.com/people/adamrice",
@@ -208,7 +211,7 @@
       ],
       "media": "all"
     },
-    "http://8stars.org/a/wp-content/plugins/jetpack/css/jetpack.css?ver=11.5.1": {
+    "http://8stars.org/a/wp-content/plugins/jetpack/css/jetpack.css?ver=11.6": {
       "rels": [
         "stylesheet"
       ],
@@ -245,6 +248,11 @@
     "https://8stars.org/a/wp-json/indieauth/1.0/token": {
       "rels": [
         "token_endpoint"
+      ]
+    },
+    "https://8stars.org/a/wp-json/indieauth/1.0/metadata": {
+      "rels": [
+        "indieauth-metadata"
       ]
     },
     "https://www.flickr.com/people/adamrice": {

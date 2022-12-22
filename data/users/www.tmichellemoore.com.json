@@ -102,6 +102,9 @@
     "token_endpoint": [
       "https://tmichellemoore.com/wp-json/indieauth/1.0/token"
     ],
+    "indieauth-metadata": [
+      "https://tmichellemoore.com/wp-json/indieauth/1.0/metadata"
+    ],
     "me": [
       "https://github.com/tmichellemoore",
       "https://twitter.com/tmichellemoore",
@@ -306,6 +309,11 @@
     "https://tmichellemoore.com/wp-json/indieauth/1.0/token": {
       "rels": [
         "token_endpoint"
+      ]
+    },
+    "https://tmichellemoore.com/wp-json/indieauth/1.0/metadata": {
+      "rels": [
+        "indieauth-metadata"
       ]
     },
     "https://github.com/tmichellemoore": {

@@ -52,6 +52,9 @@
     "token_endpoint": [
       "https://drikkes.com/index.php?rest_route=/indieauth/1.0/token"
     ],
+    "indieauth-metadata": [
+      "https://drikkes.com/index.php?rest_route=/indieauth/1.0/metadata"
+    ],
     "me": [
       "https://github.com/drikkes",
       "https://twitter.com/drikkes",
@@ -261,6 +264,11 @@
     "https://drikkes.com/index.php?rest_route=/indieauth/1.0/token": {
       "rels": [
         "token_endpoint"
+      ]
+    },
+    "https://drikkes.com/index.php?rest_route=/indieauth/1.0/metadata": {
+      "rels": [
+        "indieauth-metadata"
       ]
     },
     "https://github.com/drikkes": {

@@ -75,6 +75,9 @@
     "token_endpoint": [
       "https://glueckpress.com/wp-json/indieauth/1.0/token"
     ],
+    "indieauth-metadata": [
+      "https://glueckpress.com/wp-json/indieauth/1.0/metadata"
+    ],
     "me": [
       "https://github.com/casparhubinger",
       "https://twitter.com/casparhubinger",
@@ -225,6 +228,11 @@
     "https://glueckpress.com/wp-json/indieauth/1.0/token": {
       "rels": [
         "token_endpoint"
+      ]
+    },
+    "https://glueckpress.com/wp-json/indieauth/1.0/metadata": {
+      "rels": [
+        "indieauth-metadata"
       ]
     },
     "https://github.com/casparhubinger": {
