@@ -14,9 +14,6 @@
         "family-name": [
           "Moore"
         ],
-        "org": [
-          "Thelma Michelle Moore Photography"
-        ],
         "photo": [
           {
             "value": "https://tmichellemoore.com/wp-content/uploads/2022/11/DSC04496.jpg",
@@ -36,7 +33,7 @@
           "Project Manager, Photographer"
         ],
         "note": [
-          "LinkedIn\n  Mastodon\n  Twitter\n  Facebook\n  Instagram"
+          "Mastodon\n LinkedIn\nTwitter"
         ]
       }
     }
@@ -97,10 +94,15 @@
       "https://cdnjs.cloudflare.com/"
     ],
     "authorization_endpoint": [
-      "https://tmichellemoore.com/wp-json/indieauth/1.0/auth"
+      "https://tmichellemoore.com/wp-json/indieauth/1.0/auth",
+      "https://indieauth.com/auth"
     ],
     "token_endpoint": [
-      "https://tmichellemoore.com/wp-json/indieauth/1.0/token"
+      "https://tmichellemoore.com/wp-json/indieauth/1.0/token",
+      "https://tokens.indieauth.com/token"
+    ],
+    "indieauth-metadata": [
+      "https://tmichellemoore.com/wp-json/indieauth/1.0/metadata"
     ],
     "me": [
       "https://github.com/tmichellemoore",
@@ -109,9 +111,8 @@
       "https://tmichellemoore.com/feed/?microdotblog=1",
       "https://www.instagram.com/tmichellemoore",
       "https://mastodon.social/@tmichellemoore",
-      "https://tmichellemoore.com/",
       "https://www.linkedin.com/in/tmichellemoore/",
-      "https://www.instagram.com/tmichellemoore/"
+      "https://tmichellemoore.com/"
     ],
     "icon": [
       "https://i0.wp.com/tmichellemoore.com/wp-content/uploads/2022/05/M-Icon-200.png?fit=32%2C32&ssl=1",
@@ -308,6 +309,11 @@
         "token_endpoint"
       ]
     },
+    "https://tmichellemoore.com/wp-json/indieauth/1.0/metadata": {
+      "rels": [
+        "indieauth-metadata"
+      ]
+    },
     "https://github.com/tmichellemoore": {
       "rels": [
         "me"
@@ -338,6 +344,11 @@
         "me"
       ]
     },
+    "https://www.linkedin.com/in/tmichellemoore/": {
+      "rels": [
+        "me"
+      ]
+    },
     "https://i0.wp.com/tmichellemoore.com/wp-content/uploads/2022/05/M-Icon-200.png?fit=32%2C32&ssl=1": {
       "rels": [
         "icon"
@@ -363,22 +374,20 @@
         "micropub"
       ]
     },
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
     "https://tmichellemoore.com/micropub": {
       "rels": [
         "micropub"
       ]
-    },
-    "https://www.linkedin.com/in/tmichellemoore/": {
-      "rels": [
-        "me"
-      ],
-      "text": "LinkedIn"
-    },
-    "https://www.instagram.com/tmichellemoore/": {
-      "rels": [
-        "me"
-      ],
-      "text": "Instagram"
     },
     "https://tmichellemoore.com/wp-content/plugins/fifu-premium/includes/html/css/slider.css?ver=5.9.6": {
       "rels": [

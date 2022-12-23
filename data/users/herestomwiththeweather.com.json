@@ -33,6 +33,29 @@
             "h-entry"
           ],
           "properties": {
+            "name": [
+              "IndieWeb and Mastodon",
+              ""
+            ],
+            "url": [
+              "https://herestomwiththeweather.com/2022/12/22/indieweb-and-mastodon/"
+            ],
+            "time": [
+              "2022-12-22T20:06:15+00:00"
+            ],
+            "content": [
+              {
+                "html": "<p>Thanks to <a href=\"https://effaustin.org/\">EFF-Austin</a> for the opportunity to talk along with <a href=\"https://www.weblogsky.com/\">Jon Lebkowsky</a> about the relationship between <a href=\"https://indieweb.org/\">Indieweb</a> and the <a href=\"https://en.wikipedia.org/wiki/Fediverse\">Fediverse</a>. (<a href=\"https://herestomwiththeweather.com/effaustin/indieweb_mastodon\">Slides</a> and <a href=\"https://www.youtube.com/watch?v=VRu3i9u9I5Q\">video</a>)</p>\n\n<p>The meetup <a href=\"https://www.meetup.com/EFF-Austin/events/nltdcrydcqbrb/\">Indieweb and Mastodon: The Time is Now</a> was coincidentally in the same room as <a href=\"https://indieweb.org/2020/Austin\">IndieWebCamp Austin 2020</a>.</p>",
+                "value": "Thanks to EFF-Austin for the opportunity to talk along with Jon Lebkowsky about the relationship between Indieweb and the Fediverse. (Slides and video)\n\nThe meetup Indieweb and Mastodon: The Time is Now was coincidentally in the same room as IndieWebCamp Austin 2020."
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
             "url": [
               "https://herestomwiththeweather.com/social/2022/12/02/77469/"
             ],
@@ -122,29 +145,6 @@
               {
                 "html": "<p>In my last post, I mentioned that I planned to add login history to <a href=\"https://github.com/herestomwiththeweather/irwin\">Irwin</a>.  As I was testing my code, I logged into <a href=\"https://indieweb.org/\">indieweb.org</a> and noticed that I needed to update my code to support <a href=\"https://indieauth.spec.indieweb.org/#profile-url-response\">5.3.2 Profile URL Response</a> of the IndieAuth spec as this IndieAuth client does not need an access token.  Here’s what the history looks like on my IndieAuth server:</p>\n\n<p><img src=\"https://coffeebucks.s3.amazonaws.com/images/image/jekyll/indieauth_login_history.png\" alt=\"IndieAuth login history\"></p>\n\n<p>If I click on a login timestamp, I have the option to revoke the access token associated with the login if it exists and has not already expired.  My next step is to test some other <a href=\"https://indieweb.org/Micropub/Servers\">micropub servers</a> than the one I use to see what interoperability updates I may need to make.</p>",
                 "value": "In my last post, I mentioned that I planned to add login history to Irwin.  As I was testing my code, I logged into indieweb.org and noticed that I needed to update my code to support 5.3.2 Profile URL Response of the IndieAuth spec as this IndieAuth client does not need an access token.  Here’s what the history looks like on my IndieAuth server:\n\n IndieAuth login history \n\nIf I click on a login timestamp, I have the option to revoke the access token associated with the login if it exists and has not already expired.  My next step is to test some other micropub servers than the one I use to see what interoperability updates I may need to make."
-              }
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Minimum Viable IndieAuth Server",
-              ""
-            ],
-            "url": [
-              "https://herestomwiththeweather.com/2022/10/09/minimum-viable-indieauth-server/"
-            ],
-            "time": [
-              "2022-10-09T20:38:46+00:00"
-            ],
-            "content": [
-              {
-                "html": "<p>One of the building blocks of the <a href=\"https://indieweb.org/\">Indieweb</a> is <a href=\"https://indieweb.org/IndieAuth\">IndieAuth</a>. Like many others, I bootstrapped my experience with <a href=\"https://indieauth.com/\">indieauth.com</a> but as <a href=\"https://martymcgui.re/2022/07/31/switching-costs-for-an-indieauth-server/\">Marty McGuire explains</a>, there are good reasons to switch and even consider building your own.  Because I wanted a server as simple to understand as possible but also wanted to be able to add features that are usually not available, I created a rails project called <a href=\"https://github.com/herestomwiththeweather/irwin\">Irwin</a> and <a href=\"https://github.com/herestomwiththeweather/herestomwiththeweather.github.io/commit/554dbaad13250a97c2b26c034fbce3dd6908c273\">recently configured my blog to use it</a>.</p>\n\n<p>This is not production ready code.  While I know that <a href=\"https://github.com/voxpelli/webpage-micropub-to-github\">the micropub server I use</a> works with it, I expect others may not. Also, there is no support for refresh tokens and other things in the spec that I didn’t consider high priority.  It does support <a href=\"https://indieweb.org/PKCE\">PKCE</a> but not the less useful “plain” method.</p>\n\n<p>All of <a href=\"https://aaronparecki.com/2020/12/03/1/indieauth-2020\">IndieAuth Spec Updates 2020</a> was very clear and helpful.  In one case, I made the server probably too strict (as an easy way to curtail spam registrations).  It requires that the hosts for a blog’s authorization endpoint and token endpoint match the host of the IndieAuth server before a user can register an account on the indieauth server.</p>\n\n<p>I plan to add an option for a user to keep a history of logins to indieauth clients soon.  Please let me know if you have any questions or suggestions.</p>",
-                "value": "One of the building blocks of the Indieweb is IndieAuth. Like many others, I bootstrapped my experience with indieauth.com but as Marty McGuire explains, there are good reasons to switch and even consider building your own.  Because I wanted a server as simple to understand as possible but also wanted to be able to add features that are usually not available, I created a rails project called Irwin and recently configured my blog to use it.\n\nThis is not production ready code.  While I know that the micropub server I use works with it, I expect others may not. Also, there is no support for refresh tokens and other things in the spec that I didn’t consider high priority.  It does support PKCE but not the less useful “plain” method.\n\nAll of IndieAuth Spec Updates 2020 was very clear and helpful.  In one case, I made the server probably too strict (as an easy way to curtail spam registrations).  It requires that the hosts for a blog’s authorization endpoint and token endpoint match the host of the IndieAuth server before a user can register an account on the indieauth server.\n\nI plan to add an option for a user to keep a history of logins to indieauth clients soon.  Please let me know if you have any questions or suggestions."
               }
             ]
           }

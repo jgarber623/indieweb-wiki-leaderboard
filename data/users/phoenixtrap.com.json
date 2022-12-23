@@ -68,7 +68,7 @@
                 "Mark Gardner"
               ],
               "email": [
-                "https://phoenixtrap.com/cdn-cgi/l/email-protection#1c71767b5c6c747379727564686e7d6c327f7371"
+                "https://phoenixtrap.com/cdn-cgi/l/email-protection#6c01060b2c1c040309020514181e0d1c420f0301"
               ],
               "note": [
                 "I help professional Perl developers engineer modern, disciplined applications so they can become experts that write easy-to-maintain code with confidence."
@@ -624,6 +624,9 @@
     "token_endpoint": [
       "https://phoenixtrap.com/wp-json/indieauth/1.0/token"
     ],
+    "indieauth-metadata": [
+      "https://phoenixtrap.com/wp-json/indieauth/1.0/metadata"
+    ],
     "monetization": [
       "https://ilp.uphold.com/zy4NbUXE9Xwn"
     ],
@@ -641,7 +644,7 @@
       "https://www.last.fm/user/mjgardner",
       "https://www.youtube.com/channel/UCo-bgiroS9CMQzfA_5r5Z0A/about",
       "https://www.goodreads.com/user/show/5299642-mark",
-      "https://phoenixtrap.com/cdn-cgi/l/email-protection#1c71767b5c6c747379727564686e7d6c327f7371"
+      "https://phoenixtrap.com/cdn-cgi/l/email-protection#6c01060b2c1c040309020514181e0d1c420f0301"
     ],
     "pgpkey": [
       "https://phoenixtrap.com/.well-known/pka/mjg_pubkey_8CB08A45.txt"
@@ -745,6 +748,7 @@
       "https://phoenixtrap.com/tag/work/"
     ],
     "noopener": [
+      "https://www.instagram.com/p/CmdwScwOqpU/",
       "https://www.instagram.com/p/CmWsCr0pDrG/",
       "https://www.instagram.com/p/CmWA5LuOgB4/",
       "https://www.instagram.com/p/CmV2Foiu3Yd/",
@@ -752,10 +756,10 @@
       "https://www.instagram.com/p/CmAvRFxLXm9/",
       "https://www.instagram.com/p/Cl_LNIyu6yC/",
       "https://www.instagram.com/p/Cl9ctNkJC54/",
-      "https://www.instagram.com/p/Cl6Z6GqOnWf/",
-      "https://www.instagram.com/p/Cl4uNWGPY7g/"
+      "https://www.instagram.com/p/Cl6Z6GqOnWf/"
     ],
     "noreferrer": [
+      "https://www.instagram.com/p/CmdwScwOqpU/",
       "https://www.instagram.com/p/CmWsCr0pDrG/",
       "https://www.instagram.com/p/CmWA5LuOgB4/",
       "https://www.instagram.com/p/CmV2Foiu3Yd/",
@@ -763,8 +767,7 @@
       "https://www.instagram.com/p/CmAvRFxLXm9/",
       "https://www.instagram.com/p/Cl_LNIyu6yC/",
       "https://www.instagram.com/p/Cl9ctNkJC54/",
-      "https://www.instagram.com/p/Cl6Z6GqOnWf/",
-      "https://www.instagram.com/p/Cl4uNWGPY7g/"
+      "https://www.instagram.com/p/Cl6Z6GqOnWf/"
     ],
     "generator": [
       "https://wordpress.org/"
@@ -1006,6 +1009,11 @@
     "https://phoenixtrap.com/wp-json/indieauth/1.0/token": {
       "rels": [
         "token_endpoint"
+      ]
+    },
+    "https://phoenixtrap.com/wp-json/indieauth/1.0/metadata": {
+      "rels": [
+        "indieauth-metadata"
       ]
     },
     "https://ilp.uphold.com/zy4NbUXE9Xwn": {
@@ -1495,11 +1503,17 @@
       ],
       "text": "work"
     },
-    "https://phoenixtrap.com/cdn-cgi/l/email-protection#1c71767b5c6c747379727564686e7d6c327f7371": {
+    "https://phoenixtrap.com/cdn-cgi/l/email-protection#6c01060b2c1c040309020514181e0d1c420f0301": {
       "rels": [
         "me"
       ],
       "text": "[email protected]"
+    },
+    "https://www.instagram.com/p/CmdwScwOqpU/": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ]
     },
     "https://www.instagram.com/p/CmWsCr0pDrG/": {
       "rels": [
@@ -1544,12 +1558,6 @@
       ]
     },
     "https://www.instagram.com/p/Cl6Z6GqOnWf/": {
-      "rels": [
-        "noopener",
-        "noreferrer"
-      ]
-    },
-    "https://www.instagram.com/p/Cl4uNWGPY7g/": {
       "rels": [
         "noopener",
         "noreferrer"

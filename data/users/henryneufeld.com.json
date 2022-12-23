@@ -72,6 +72,9 @@
     "token_endpoint": [
       "https://henryneufeld.com/wp-json/indieauth/1.0/token"
     ],
+    "indieauth-metadata": [
+      "https://henryneufeld.com/wp-json/indieauth/1.0/metadata"
+    ],
     "me": [
       "https://twitter.com/hneufeld",
       "https://www.facebook.com/hneufeld",
@@ -377,6 +380,11 @@
     "https://henryneufeld.com/wp-json/indieauth/1.0/token": {
       "rels": [
         "token_endpoint"
+      ]
+    },
+    "https://henryneufeld.com/wp-json/indieauth/1.0/metadata": {
+      "rels": [
+        "indieauth-metadata"
       ]
     },
     "https://twitter.com/hneufeld": {
