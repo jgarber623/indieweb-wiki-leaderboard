@@ -34,6 +34,29 @@
           ],
           "properties": {
             "name": [
+              "check_webfinger!",
+              ""
+            ],
+            "url": [
+              "https://herestomwiththeweather.com/2022/12/23/check_webfinger/"
+            ],
+            "time": [
+              "2022-12-23T11:37:50+00:00"
+            ],
+            "content": [
+              {
+                "html": "<p>The notes I made in <a href=\"https://herestomwiththeweather.com/2022/11/15/mastodon-discovery/\">Mastodon Discovery</a> skipped over a noteworthy step.  In general, after mastodon fetches and parses the “well known” webfinger document (the so-called JSON Resource Descriptor), there is a 3 step process to learn about the actor referenced in that document.</p>\n\n<ol>\n  <li>fetch_resource</li>\n  <li>check_webfinger!</li>\n  <li>create_account</li>\n</ol>\n\n<p>As mentioned previously, in the first step, a very comprehensive json document for the actor is fetched and in the third step, an account is created for that actor if does not already exist.  However, between those two steps, mastodon does another webfinger lookup since, for instance, the domain serving the actor document may be a different domain than the one that originally served the first “well known” webfinger document.  Prior to this check, <a href=\"https://github.com/herestomwiththeweather/mastodon/blob/main/app/services/activitypub/fetch_remote_actor_service.rb#L32\">some instance variables are set</a>:</p>\n\n<div class=\"highlighter-rouge\">\n<pre class=\"highlight\"><code>    @uri      = @json['id']\n    @username = @json['preferredUsername']\n    @domain   = Addressable::URI.parse(@uri).normalized_host\n</code></pre>\n</div>\n<p>The @uri instance variable is the location of the actor document and the @domain instance variable is the domain that serves the actor document.  After these variables are set, <a href=\"https://github.com/herestomwiththeweather/mastodon/blob/main/app/services/activitypub/fetch_remote_actor_service.rb#L36\">the check is performed</a>:</p>\n\n<div class=\"highlighter-rouge\">\n<pre class=\"highlight\"><code>    check_webfinger! unless only_key\n</code></pre>\n</div>\n<p>This check enforces that the domain component of your identifier is the domain that serves your actor document. (It <a href=\"https://github.com/herestomwiththeweather/mastodon/blob/main/app/services/activitypub/fetch_remote_actor_service.rb#L48\">inspects the subject of the “well known” document</a> and if the username and domain of the subject match the instance variables above, the ‘self’ resource link is required to be the same as the @uri instance variable.  If the subject does not match, one more webfinger lookup for the redirection is allowed.)</p>\n\n<p>So, from the perspective of mastodon, the domain component of your identifier you are known as is determined by which domain serves your actor document rather than the domain serving the original “well known” webfinger document.  It seems if your domain is a static site and you want to be known by an identifier associated with your domain, your domain needs to serve the actor document in addition to “well known” webfinger document.</p>",
+                "value": "The notes I made in Mastodon Discovery skipped over a noteworthy step.  In general, after mastodon fetches and parses the “well known” webfinger document (the so-called JSON Resource Descriptor), there is a 3 step process to learn about the actor referenced in that document.\n\n\n  fetch_resource\n  check_webfinger!\n  create_account\n\n\nAs mentioned previously, in the first step, a very comprehensive json document for the actor is fetched and in the third step, an account is created for that actor if does not already exist.  However, between those two steps, mastodon does another webfinger lookup since, for instance, the domain serving the actor document may be a different domain than the one that originally served the first “well known” webfinger document.  Prior to this check, some instance variables are set:\n\n    @uri      = @json['id']\n    @username = @json['preferredUsername']\n    @domain   = Addressable::URI.parse(@uri).normalized_host\n\n\nThe @uri instance variable is the location of the actor document and the @domain instance variable is the domain that serves the actor document.  After these variables are set, the check is performed:\n\n    check_webfinger! unless only_key\n\n\nThis check enforces that the domain component of your identifier is the domain that serves your actor document. (It inspects the subject of the “well known” document and if the username and domain of the subject match the instance variables above, the ‘self’ resource link is required to be the same as the @uri instance variable.  If the subject does not match, one more webfinger lookup for the redirection is allowed.)\n\nSo, from the perspective of mastodon, the domain component of your identifier you are known as is determined by which domain serves your actor document rather than the domain serving the original “well known” webfinger document.  It seems if your domain is a static site and you want to be known by an identifier associated with your domain, your domain needs to serve the actor document in addition to “well known” webfinger document."
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               "IndieWeb and Mastodon",
               ""
             ],
@@ -122,29 +145,6 @@
               {
                 "html": "<p>Earlier this week, I signed up for <a href=\"https://rubyconf.org/\">RubyConf 2022</a> which is Nov. 29 - Dec. 1 in Houston.  This is my first conference since the pandemic started and I was glad to see the <a href=\"https://rubyconf.org/safety\">safety precautions</a>.  The <a href=\"https://rubyconf.org/schedule\">schedule</a> also looks great!  Please say “Hi!” if you see me there.</p>",
                 "value": "Earlier this week, I signed up for RubyConf 2022 which is Nov. 29 - Dec. 1 in Houston.  This is my first conference since the pandemic started and I was glad to see the safety precautions.  The schedule also looks great!  Please say “Hi!” if you see me there."
-              }
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "IndieAuth login history",
-              ""
-            ],
-            "url": [
-              "https://herestomwiththeweather.com/2022/10/25/indieauth-login-history/"
-            ],
-            "time": [
-              "2022-10-25T16:51:16+00:00"
-            ],
-            "content": [
-              {
-                "html": "<p>In my last post, I mentioned that I planned to add login history to <a href=\"https://github.com/herestomwiththeweather/irwin\">Irwin</a>.  As I was testing my code, I logged into <a href=\"https://indieweb.org/\">indieweb.org</a> and noticed that I needed to update my code to support <a href=\"https://indieauth.spec.indieweb.org/#profile-url-response\">5.3.2 Profile URL Response</a> of the IndieAuth spec as this IndieAuth client does not need an access token.  Here’s what the history looks like on my IndieAuth server:</p>\n\n<p><img src=\"https://coffeebucks.s3.amazonaws.com/images/image/jekyll/indieauth_login_history.png\" alt=\"IndieAuth login history\"></p>\n\n<p>If I click on a login timestamp, I have the option to revoke the access token associated with the login if it exists and has not already expired.  My next step is to test some other <a href=\"https://indieweb.org/Micropub/Servers\">micropub servers</a> than the one I use to see what interoperability updates I may need to make.</p>",
-                "value": "In my last post, I mentioned that I planned to add login history to Irwin.  As I was testing my code, I logged into indieweb.org and noticed that I needed to update my code to support 5.3.2 Profile URL Response of the IndieAuth spec as this IndieAuth client does not need an access token.  Here’s what the history looks like on my IndieAuth server:\n\n IndieAuth login history \n\nIf I click on a login timestamp, I have the option to revoke the access token associated with the login if it exists and has not already expired.  My next step is to test some other micropub servers than the one I use to see what interoperability updates I may need to make."
               }
             ]
           }
