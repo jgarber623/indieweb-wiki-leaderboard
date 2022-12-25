@@ -61,6 +61,15 @@
     "alternate": [
       "https://jbrr.dev/index.xml"
     ],
+    "authorization_endpoint": [
+      "https://kit.jbrr.dev/auth"
+    ],
+    "token_endpoint": [
+      "https://kit.jbrr.dev/auth/token"
+    ],
+    "micropub": [
+      "https://kit.jbrr.dev/micropub"
+    ],
     "me": [
       "https://twitter.com/jefbrr",
       "https://github.com/jbrr",
@@ -86,6 +95,21 @@
       ],
       "title": "Jeff Ruane",
       "type": "application/rss+xml"
+    },
+    "https://kit.jbrr.dev/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://kit.jbrr.dev/auth/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://kit.jbrr.dev/micropub": {
+      "rels": [
+        "micropub"
+      ]
     },
     "https://twitter.com/jefbrr": {
       "rels": [
