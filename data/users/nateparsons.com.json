@@ -1,11 +1,7 @@
 {
   "items": [],
   "rels": {
-    "profile": [
-      "http://gmpg.org/xfn/11"
-    ],
     "dns-prefetch": [
-      "http://fonts.googleapis.com/",
       "http://s.w.org/"
     ],
     "alternate": [
@@ -13,10 +9,9 @@
       "http://nateparsons.com/comments/feed"
     ],
     "stylesheet": [
-      "http://nateparsons.com/wp-includes/css/dist/block-library/style.min.css?ver=6.0",
-      "http://nateparsons.com/wp-content/themes/libre-2-wpcom/style.css?ver=6.0",
-      "http://nateparsons.com/wp-content/themes/libre-2-wpcom/css/blocks.css?ver=1.0",
-      "https://fonts.googleapis.com/css?family=Libre+Baskerville%3A400%2C400italic%2C700&subset=latin%2Clatin-ext"
+      "http://nateparsons.com/wp-includes/blocks/navigation/style.min.css?ver=6.0",
+      "http://nateparsons.com/wp-content/themes/blockbase-wpcom/assets/ponyfill.css?ver=1.1.46",
+      "http://nateparsons.com/wp-content/themes/quadrat-green-wpcom/assets/theme.css?ver=1.1.46"
     ],
     "https://api.w.org/": [
       "http://nateparsons.com/wp-json/"
@@ -30,29 +25,11 @@
     "home": [
       "http://nateparsons.com/"
     ],
-    "bookmark": [
-      "http://nateparsons.com/post/10/index.html",
-      "http://nateparsons.com/post/12/index.html",
-      "http://nateparsons.com/post/14/index.html",
-      "http://nateparsons.com/post/16/index.html",
-      "http://nateparsons.com/post/18/index.html",
-      "http://nateparsons.com/post/20/index.html"
-    ],
-    "designer": [
-      "http://wordpress.com/themes/"
+    "nofollow": [
+      "https://wordpress.org/"
     ]
   },
   "rel-urls": {
-    "http://gmpg.org/xfn/11": {
-      "rels": [
-        "profile"
-      ]
-    },
-    "http://fonts.googleapis.com/": {
-      "rels": [
-        "dns-prefetch"
-      ]
-    },
     "http://s.w.org/": {
       "rels": [
         "dns-prefetch"
@@ -62,43 +39,33 @@
       "rels": [
         "alternate"
       ],
-      "title": "Travel » Feed",
+      "title": "Podróż » Feed",
       "type": "application/rss+xml"
     },
     "http://nateparsons.com/comments/feed": {
       "rels": [
         "alternate"
       ],
-      "title": "Travel » Comments Feed",
+      "title": "Podróż » Comments Feed",
       "type": "application/rss+xml"
     },
-    "http://nateparsons.com/wp-includes/css/dist/block-library/style.min.css?ver=6.0": {
+    "http://nateparsons.com/wp-includes/blocks/navigation/style.min.css?ver=6.0": {
       "rels": [
         "stylesheet"
       ],
-      "media": "all",
-      "type": "text/css"
+      "media": "all"
     },
-    "http://nateparsons.com/wp-content/themes/libre-2-wpcom/style.css?ver=6.0": {
+    "http://nateparsons.com/wp-content/themes/blockbase-wpcom/assets/ponyfill.css?ver=1.1.46": {
       "rels": [
         "stylesheet"
       ],
-      "media": "all",
-      "type": "text/css"
+      "media": "all"
     },
-    "http://nateparsons.com/wp-content/themes/libre-2-wpcom/css/blocks.css?ver=1.0": {
+    "http://nateparsons.com/wp-content/themes/quadrat-green-wpcom/assets/theme.css?ver=1.1.46": {
       "rels": [
         "stylesheet"
       ],
-      "media": "all",
-      "type": "text/css"
-    },
-    "https://fonts.googleapis.com/css?family=Libre+Baskerville%3A400%2C400italic%2C700&subset=latin%2Clatin-ext": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "all",
-      "type": "text/css"
+      "media": "all"
     },
     "http://nateparsons.com/wp-json/": {
       "rels": [
@@ -122,49 +89,13 @@
       "rels": [
         "home"
       ],
-      "text": "Travel"
+      "text": "Podróż"
     },
-    "http://nateparsons.com/post/10/index.html": {
+    "https://wordpress.org/": {
       "rels": [
-        "bookmark"
+        "nofollow"
       ],
-      "text": "Transport firms continue to reap high profits as ocean rates fall slowly"
-    },
-    "http://nateparsons.com/post/12/index.html": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Your Guide to the North Shore alhali Town of Kahuku"
-    },
-    "http://nateparsons.com/post/14/index.html": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Tuskegee students paired with coast scientists for summer internships"
-    },
-    "http://nateparsons.com/post/16/index.html": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Tracking Nitrogen Pollution"
-    },
-    "http://nateparsons.com/post/18/index.html": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Mackinaw City hotels reach agreement with state over alleged deceptive practices"
-    },
-    "http://nateparsons.com/post/20/index.html": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Madame Tussauds Dubai Reveals Iconic New Figures for the Stars"
-    },
-    "http://wordpress.com/themes/": {
-      "rels": [
-        "designer"
-      ],
-      "text": "Automattic"
+      "text": "WordPress"
     }
   }
 }

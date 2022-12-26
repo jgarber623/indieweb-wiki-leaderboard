@@ -67,6 +67,9 @@
     "token_endpoint": [
       "https://kit.jbrr.dev/auth/token"
     ],
+    "indieauth-metadata": [
+      "https://kit.jbrr.dev/.well-known/oauth-authorization-server"
+    ],
     "micropub": [
       "https://kit.jbrr.dev/micropub"
     ],
@@ -104,6 +107,11 @@
     "https://kit.jbrr.dev/auth/token": {
       "rels": [
         "token_endpoint"
+      ]
+    },
+    "https://kit.jbrr.dev/.well-known/oauth-authorization-server": {
+      "rels": [
+        "indieauth-metadata"
       ]
     },
     "https://kit.jbrr.dev/micropub": {

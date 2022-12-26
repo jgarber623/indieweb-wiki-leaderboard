@@ -318,6 +318,9 @@
     "token_endpoint": [
       "https://www.zylstra.org/blog/wp-json/indieauth/1.0/token"
     ],
+    "indieauth-metadata": [
+      "https://www.zylstra.org/blog/wp-json/indieauth/1.0/metadata"
+    ],
     "micropub_media": [
       "https://www.zylstra.org/blog/wp-json/micropub/1.0/media"
     ],
@@ -531,6 +534,11 @@
     "https://www.zylstra.org/blog/wp-json/indieauth/1.0/token": {
       "rels": [
         "token_endpoint"
+      ]
+    },
+    "https://www.zylstra.org/blog/wp-json/indieauth/1.0/metadata": {
+      "rels": [
+        "indieauth-metadata"
       ]
     },
     "https://www.zylstra.org/blog/wp-json/micropub/1.0/media": {

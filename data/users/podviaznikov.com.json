@@ -4,14 +4,14 @@
     "stylesheet": [
       "https://podviaznikov.com/styles.css"
     ],
+    "canonical": [
+      "https://podviaznikov.com/"
+    ],
     "icon": [
       "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍉</text></svg>"
     ],
     "alternate": [
       "https://podviaznikov.com/feed.xml"
-    ],
-    "canonical": [
-      "https://podviaznikov.com/"
     ],
     "me": [
       "https://twitter.com/podviaznikov",
@@ -23,6 +23,11 @@
     "https://podviaznikov.com/styles.css": {
       "rels": [
         "stylesheet"
+      ]
+    },
+    "https://podviaznikov.com/": {
+      "rels": [
+        "canonical"
       ]
     },
     "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍉</text></svg>": {
@@ -37,11 +42,6 @@
       ],
       "title": "RSS Feed for Anton's site 💙💛",
       "type": "application/rss+xml"
-    },
-    "https://podviaznikov.com/": {
-      "rels": [
-        "canonical"
-      ]
     },
     "https://twitter.com/podviaznikov": {
       "rels": [

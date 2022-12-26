@@ -2,6 +2,22 @@
   "items": [
     {
       "type": [
+        "h-cite"
+      ],
+      "properties": {
+        "summary": [
+          {
+            "html": "<div class=\"kind-embed\">\n<blockquote class=\"twitter-tweet\" data-width=\"550\" data-dnt=\"true\">\n<p lang=\"en\" dir=\"ltr\">everyone is a person. they dont have stats or traits or roles they have relationships and actions. you arent a good person. you are a person who does good things or not. you make other peoples lives better or you dont.</p>\n<p>— LL Cool Jadzia 🖖🏴 (@jadziafacts) <a href=\"https://twitter.com/jadziafacts/status/1607160690229272576?ref_src=twsrc%5Etfw\">December 25, 2022</a></p>\n</blockquote>\n<p><script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script><a class=\"u-url\" href=\"https://twitter.com/jadziafacts/status/1607160690229272576\"></a></p>\n</div>",
+            "value": "everyone is a person. they dont have stats or traits or roles they have relationships and actions. you arent a good person. you are a person who does good things or not. you make other peoples lives better or you dont.\n— LL Cool Jadzia 🖖🏴 (@jadziafacts) December 25, 2022"
+          }
+        ],
+        "url": [
+          "https://twitter.com/jadziafacts/status/1607160690229272576"
+        ]
+      }
+    },
+    {
+      "type": [
         "h-entry"
       ],
       "properties": {
@@ -305,9 +321,6 @@
     "indieauth-metadata": [
       "https://pauho.net/wp-json/indieauth/1.0/metadata"
     ],
-    "friends-base-url": [
-      "https://pauho.net/wp-json/friends/v1"
-    ],
     "me": [
       "https://github.com/pauho",
       "https://twitter.com/pauho",
@@ -345,7 +358,11 @@
     "home": [
       "https://pauho.net/"
     ],
+    "microsub": [
+      "https://aperture.p3k.io/microsub/183"
+    ],
     "bookmark": [
+      "https://pauho.net/2022/12/25/662545/",
       "https://pauho.net/2022/12/25/662534/",
       "https://pauho.net/2022/12/20/662516/",
       "https://pauho.net/2022/12/20/662514/",
@@ -364,8 +381,7 @@
       "https://pauho.net/2022/08/20/662402/",
       "https://pauho.net/2022/08/19/662400/",
       "https://pauho.net/2022/08/16/662393/",
-      "https://pauho.net/2022/08/16/662389/",
-      "https://pauho.net/2022/08/16/662388/"
+      "https://pauho.net/2022/08/16/662389/"
     ],
     "category": [
       "https://pauho.net/category/uncategorised/",
@@ -639,11 +655,6 @@
         "indieauth-metadata"
       ]
     },
-    "https://pauho.net/wp-json/friends/v1": {
-      "rels": [
-        "friends-base-url"
-      ]
-    },
     "https://github.com/pauho": {
       "rels": [
         "me"
@@ -729,7 +740,12 @@
         "webmention"
       ]
     },
-    "https://pauho.net/2022/12/25/662534/": {
+    "https://aperture.p3k.io/microsub/183": {
+      "rels": [
+        "microsub"
+      ]
+    },
+    "https://pauho.net/2022/12/25/662545/": {
       "rels": [
         "bookmark"
       ],
@@ -741,6 +757,12 @@
         "tag"
       ],
       "text": "Uncategorised"
+    },
+    "https://pauho.net/2022/12/25/662534/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "25th December 2022"
     },
     "https://pauho.net/2022/12/20/662516/": {
       "rels": [
@@ -911,12 +933,6 @@
         "bookmark"
       ],
       "text": "16th August 202216th August 2022"
-    },
-    "https://pauho.net/2022/08/16/662388/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "16th August 2022"
     }
   }
 }
