@@ -3,6 +3,9 @@
   "rels": {
     "stylesheet": [
       "https://smol.pub/style.css"
+    ],
+    "alternate": [
+      "https://jordanreger.com/atom.xml"
     ]
   },
   "rel-urls": {
@@ -10,6 +13,12 @@
       "rels": [
         "stylesheet"
       ]
+    },
+    "https://jordanreger.com/atom.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/atom+xml"
     }
   }
 }

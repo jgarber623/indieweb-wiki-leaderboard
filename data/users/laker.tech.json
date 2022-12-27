@@ -1,25 +1,24 @@
 {
   "items": [],
   "rels": {
-    "preload": [
-      "https://laker.tech/Mona-Sans.woff2"
-    ],
     "me": [
       "https://social.dino.icu/@la"
+    ],
+    "preload": [
+      "https://laker.tech/Mona-Sans.woff2"
     ]
   },
   "rel-urls": {
+    "https://social.dino.icu/@la": {
+      "rels": [
+        "me"
+      ]
+    },
     "https://laker.tech/Mona-Sans.woff2": {
       "rels": [
         "preload"
       ],
       "type": "font/woff2"
-    },
-    "https://social.dino.icu/@la": {
-      "rels": [
-        "me"
-      ],
-      "text": "Mastodon"
     }
   }
 }

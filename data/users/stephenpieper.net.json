@@ -159,6 +159,50 @@
             "h-entry"
           ],
           "properties": {
+            "like-of": [
+              {
+                "type": [
+                  "h-cite"
+                ],
+                "properties": {
+                  "name": [
+                    "Simple Location 5.0.0 for WordPress Released"
+                  ],
+                  "url": [
+                    "https://david.shanske.com/2022/11/05/simple-location-5-0-0-for-wordpress-released/"
+                  ],
+                  "author": [
+                    {
+                      "type": [
+                        "h-card"
+                      ],
+                      "properties": {
+                        "photo": [
+                          {
+                            "value": "https://david.shanske.com/avatar/dshanske?s=42",
+                            "alt": "David Shanske"
+                          }
+                        ],
+                        "name": [
+                          "David Shanske"
+                        ]
+                      },
+                      "value": "David Shanske"
+                    }
+                  ],
+                  "publication": [
+                    "david.shanske.com"
+                  ],
+                  "summary": [
+                    {
+                      "html": "Weeks in the making, I’ve released version 5 of Simple Location. Several weeks in the making, it is a major rewrite of the lower level code, and will open up to a variety of different future features.\r\nThis version retires Zones, the way I used to keep where I was private by default. But it does so...",
+                      "value": "Weeks in the making, I’ve released version 5 of Simple Location. Several weeks in the making, it is a major rewrite of the lower level code, and will open up to a variety of different future features.\r\nThis version retires Zones, the way I used to keep where I was private by default. But it does so..."
+                    }
+                  ]
+                },
+                "value": "https://david.shanske.com/2022/11/05/simple-location-5-0-0-for-wordpress-released/"
+              }
+            ],
             "content": [
               {
                 "html": "",
@@ -358,10 +402,6 @@
     "indieauth-metadata": [
       "https://stephenpieper.net/wp-json/indieauth/1.0/metadata"
     ],
-    "webmention": [
-      "https://stephenpieper.net/wp-json/indieblocks/v1/webmention",
-      "https://stephenpieper.net/wp-json/webmention/1.0/endpoint"
-    ],
     "icon": [
       "https://stephenpieper.net/wp-content/uploads/2017/01/photoforgephoto.png"
     ],
@@ -370,6 +410,9 @@
     ],
     "micropub_media": [
       "https://stephenpieper.net/wp-json/micropub/1.0/media"
+    ],
+    "webmention": [
+      "https://stephenpieper.net/wp-json/webmention/1.0/endpoint"
     ],
     "http://webmention.org/": [
       "https://stephenpieper.net/wp-json/webmention/1.0/endpoint"
@@ -607,11 +650,6 @@
     "https://stephenpieper.net/wp-json/indieauth/1.0/metadata": {
       "rels": [
         "indieauth-metadata"
-      ]
-    },
-    "https://stephenpieper.net/wp-json/indieblocks/v1/webmention": {
-      "rels": [
-        "webmention"
       ]
     },
     "https://stephenpieper.net/wp-content/uploads/2017/01/photoforgephoto.png": {
