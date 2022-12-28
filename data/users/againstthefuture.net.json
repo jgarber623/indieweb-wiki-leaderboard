@@ -1,15 +1,23 @@
 {
   "items": [],
   "rels": {
-    "icon": [
-      "https://micro.blog/jdm/favicon.png"
-    ],
-    "shortcut": [
-      "https://micro.blog/jdm/favicon.png"
+    "canonical": [
+      "https://againstthefuture.net/"
     ],
     "stylesheet": [
-      "https://againstthefuture.net/css/style.css?1672085396",
-      "https://againstthefuture.net/custom.css?1672085396"
+      "https://againstthefuture.net/assets/style.css",
+      "https://againstthefuture.net/style.css",
+      "https://againstthefuture.net/custom.css",
+      "https://againstthefuture.net/assets/css/poststats.css"
+    ],
+    "apple-touch-icon-precomposed": [
+      "https://againstthefuture.net/img/apple-touch-icon-144-precomposed.png"
+    ],
+    "icon": [
+      "https://againstthefuture.net/img/favicon.png"
+    ],
+    "shortcut": [
+      "https://againstthefuture.net/img/favicon.png"
     ],
     "alternate": [
       "https://againstthefuture.net/feed.xml",
@@ -40,29 +48,41 @@
     "subscribe": [
       "https://micro.blog/users/follow"
     ],
-    "canonical": [
-      "https://againstthefuture.net/"
-    ],
     "license": [
       "http://creativecommons.org/licenses/by-nc-nd/4.0/"
     ]
   },
   "rel-urls": {
-    "https://micro.blog/jdm/favicon.png": {
+    "https://againstthefuture.net/": {
       "rels": [
-        "icon",
-        "shortcut"
-      ],
-      "type": "image/x-icon"
+        "canonical"
+      ]
     },
-    "https://againstthefuture.net/css/style.css?1672085396": {
+    "https://againstthefuture.net/assets/style.css": {
       "rels": [
         "stylesheet"
       ]
     },
-    "https://againstthefuture.net/custom.css?1672085396": {
+    "https://againstthefuture.net/style.css": {
       "rels": [
         "stylesheet"
+      ]
+    },
+    "https://againstthefuture.net/custom.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://againstthefuture.net/img/apple-touch-icon-144-precomposed.png": {
+      "rels": [
+        "apple-touch-icon-precomposed"
+      ]
+    },
+    "https://againstthefuture.net/img/favicon.png": {
+      "rels": [
+        "icon",
+        "shortcut"
       ]
     },
     "https://againstthefuture.net/feed.xml": {
@@ -127,9 +147,9 @@
         "subscribe"
       ]
     },
-    "https://againstthefuture.net/": {
+    "https://againstthefuture.net/assets/css/poststats.css": {
       "rels": [
-        "canonical"
+        "stylesheet"
       ]
     },
     "http://creativecommons.org/licenses/by-nc-nd/4.0/": {

@@ -37,6 +37,15 @@
     "pavatar": [
       "https://kevinyank.com/assets/images/pavatar.jpg"
     ],
+    "authorization_endpoint": [
+      "https://indiekit.kevinyank.com/auth"
+    ],
+    "token_endpoint": [
+      "https://indiekit.kevinyank.com/auth/token"
+    ],
+    "micropub": [
+      "https://indiekit.kevinyank.com/micropub"
+    ],
     "me": [
       "https://hachyderm.io/@sentience",
       "https://github.com/sentience",
@@ -68,6 +77,21 @@
     "https://kevinyank.com/assets/images/pavatar.jpg": {
       "rels": [
         "pavatar"
+      ]
+    },
+    "https://indiekit.kevinyank.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://indiekit.kevinyank.com/auth/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://indiekit.kevinyank.com/micropub": {
+      "rels": [
+        "micropub"
       ]
     },
     "https://hachyderm.io/@sentience": {
