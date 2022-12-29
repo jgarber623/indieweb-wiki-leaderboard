@@ -6,6 +6,17 @@
       ],
       "properties": {
         "name": [
+          "Only display body on error with curl\n                                \n                    Sometimes, I only want to display the response from a curl request if it errors – i.e. the status code is 400 or higher. With curl 7.76 or greater this is done using the –fail-with-body parameter: curl -s –fail-with-body \\ https://api.example.com/foo/${id} \\ -H \"Content-Type: application/json\" \\ –data \"@data.json\" On success, the return code ($?) is 0 and on failure the body is output with the return code set to 22. Prior to 7.76, you can… continue reading.\n                    Posted on\n                            28 December 2022                            in Development\n\n                                                    \n                                Leave a comment"
+        ]
+      },
+      "id": "post-6493"
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
           "Override Nginx media type for a URL\n                                \n                    I followed Maarten Balliauw's article on setting up a pointer to my @akrabat@phpc.social Mastodon account on my own domain at @rob@akrabat.com. I'm not sure how useful it is and would prefer to have my own domain as the main account. Something to think about at least. When setting up https://akrabat.com/.well-known/webfinger, I realised that it was being served with a Content-Type of application/octet-stream, when it should be application/json. To fix this, I added this to my… continue reading.\n                    Posted on\n                            21 November 2022                            in Web\n\n                                                    \n                                One comment so far"
         ]
       },
@@ -17,7 +28,7 @@
       ],
       "properties": {
         "name": [
-          "Installing Xdebug on PHP 8.1 installed with Homebrew\n                                \n                    I have recently set up a new M2 MacBook Air and as usual, installed Homebrew and then installed PHP. Homebrew is always up to date, so it installed PHP 8.1 for me. Again, as usual, I installed Xdebug using pecl install xdebug. This whirrs and clicks for a while downloading and compiling the xdebug.so and then fails with: rob@ardent ~ $ pecl install xdebug downloading xdebug-3.1.5.tgz … Starting to download xdebug-3.1.5.tgz (232,070 bytes) … Build… continue reading.\n                    Posted on\n                            26 July 2022                            in PHP, Software\n\n                                                    \n                                View all 3 comments"
+          "Installing Xdebug on PHP 8.1 installed with Homebrew\n                                \n                    I have recently set up a new M2 MacBook Air and as usual, installed Homebrew and then installed PHP. Homebrew is always up to date, so it installed PHP 8.1 for me. Again, as usual, I installed Xdebug using pecl install xdebug. This whirrs and clicks for a while downloading and compiling the xdebug.so and then fails with: rob@ardent ~ $ pecl install xdebug downloading xdebug-3.1.5.tgz … Starting to download xdebug-3.1.5.tgz (232,070 bytes) … Build… continue reading.\n                    Posted on\n                            26 July 2022                            in PHP, Software\n\n                                                    \n                                View all 6 comments"
         ]
       },
       "id": "post-6482"
@@ -101,17 +112,6 @@
     },
     {
       "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "name": [
-          "A few Git tips\n                                \n                    I don't do that much that's clever with git, but I've found the following helpful. Automatically prune When you do a git fetch or git pull, you can ask it to remove remote tracking branches for a branch that has been removed on the remote by using the –prune flag. This can be automated globally with: git config –global fetch.prune true and if you only want it for a specific repository, you can use: git… continue reading.\n                    Posted on\n                            30 March 2021                            in Development\n\n                                                    \n                                View all 3 comments"
-        ]
-      },
-      "id": "post-6372"
-    },
-    {
-      "type": [
         "h-card"
       ],
       "properties": {
@@ -171,6 +171,7 @@
       "https://www.instagram.com/akrabatic"
     ],
     "bookmark": [
+      "https://akrabat.com/only-display-body-on-error-with-curl/",
       "https://akrabat.com/override-nginx-media-type-for-a-url/",
       "https://akrabat.com/installing-xdebug-on-php-8-1-installed-with-homebrew/",
       "https://akrabat.com/bbedit-hosts-file-syntax-highlighting/",
@@ -179,10 +180,10 @@
       "https://akrabat.com/add-touchid-authentication-to-sudo/",
       "https://akrabat.com/quick-script-to-recreate-my-python-virtualenv/",
       "https://akrabat.com/changelog-generator-for-github-milestones/",
-      "https://akrabat.com/setting-http-status-code-based-on-exception-in-slim-4/",
-      "https://akrabat.com/a-few-git-tips/"
+      "https://akrabat.com/setting-http-status-code-based-on-exception-in-slim-4/"
     ],
     "category": [
+      "https://akrabat.com/category/development/",
       "https://akrabat.com/category/web/",
       "https://akrabat.com/category/php/",
       "https://akrabat.com/category/software/",
@@ -190,12 +191,12 @@
       "https://akrabat.com/category/me/",
       "https://akrabat.com/category/year-in-pictures/",
       "https://akrabat.com/category/computing/",
-      "https://akrabat.com/category/development/",
       "https://akrabat.com/category/python/",
       "https://akrabat.com/category/slim-framework/",
       "https://akrabat.com/category/slim-framework-4/"
     ],
     "tag": [
+      "https://akrabat.com/category/development/",
       "https://akrabat.com/category/web/",
       "https://akrabat.com/category/php/",
       "https://akrabat.com/category/software/",
@@ -203,7 +204,6 @@
       "https://akrabat.com/category/me/",
       "https://akrabat.com/category/year-in-pictures/",
       "https://akrabat.com/category/computing/",
-      "https://akrabat.com/category/development/",
       "https://akrabat.com/category/python/",
       "https://akrabat.com/category/slim-framework/",
       "https://akrabat.com/category/slim-framework-4/"
@@ -329,6 +329,19 @@
         "me"
       ]
     },
+    "https://akrabat.com/only-display-body-on-error-with-curl/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "Only display body on error with curl"
+    },
+    "https://akrabat.com/category/development/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Development"
+    },
     "https://akrabat.com/override-nginx-media-type-for-a-url/": {
       "rels": [
         "bookmark"
@@ -420,13 +433,6 @@
       ],
       "text": "Quick script to (re)create my python virtualenv"
     },
-    "https://akrabat.com/category/development/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "Development"
-    },
     "https://akrabat.com/category/python/": {
       "rels": [
         "category",
@@ -459,12 +465,6 @@
         "tag"
       ],
       "text": "Slim Framework 4"
-    },
-    "https://akrabat.com/a-few-git-tips/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "A few Git tips"
     },
     "https://akrabat.com/": {
       "rels": [

@@ -1,134 +1,46 @@
 {
   "items": [],
   "rels": {
-    "icon": [
-      "https://jonathan.garbee.me/favicon.ico"
-    ],
-    "canonical": [
-      "https://jonathan.garbee.me/"
-    ],
     "alternate": [
-      "https://jonathan.garbee.me/feeds/posts/default",
-      "https://jonathan.garbee.me/feeds/posts/default?alt=rss"
+      "https://jonathan.garbee.me/feed.xml"
     ],
-    "service.post": [
-      "https://www.blogger.com/feeds/7344529909712504683/posts/default"
+    "preload": [
+      "/assets/Readexpro[HEXP,wght].ttf"
     ],
-    "me": [
-      "https://www.blogger.com/profile/11387214821280773326"
-    ],
-    "bookmark": [
-      "https://jonathan.garbee.me/2015/02/my-php-wishlist.html",
-      "https://jonathan.garbee.me/2014/06/running-supervisord-on-codio.html",
-      "https://jonathan.garbee.me/2014/04/laravel-codio-and-nginx.html",
-      "https://jonathan.garbee.me/2014/03/you-may-not-need-meta-charset.html",
-      "https://jonathan.garbee.me/2013/09/form-macros-in-laravel.html",
-      "https://jonathan.garbee.me/2013/09/resources-and-tools.html"
-    ],
-    "nofollow": [
-      "https://www.blogger.com/profile/11387214821280773326",
-      "https://www.blogger.com/go/report-abuse",
-      "https://www.blogger.com/"
-    ],
-    "author": [
-      "https://www.blogger.com/profile/11387214821280773326"
-    ],
-    "noopener": [
-      "https://www.blogger.com/go/report-abuse"
+    "stylesheet": [
+      "https://jonathan.garbee.me/assets/nord.css?v=1f41ea55cafac44131843cb591935977ff54f2ca",
+      "https://jonathan.garbee.me/assets/nord-prism.css?v=83a9478b4ce976128de753e97ff2127cca5adf39",
+      "https://jonathan.garbee.me/assets/main.css?v=0ff00d392fc03401f475c86817c7ec7edb707139"
     ]
   },
   "rel-urls": {
-    "https://jonathan.garbee.me/favicon.ico": {
-      "rels": [
-        "icon"
-      ],
-      "type": "image/x-icon"
-    },
-    "https://jonathan.garbee.me/": {
-      "rels": [
-        "canonical"
-      ]
-    },
-    "https://jonathan.garbee.me/feeds/posts/default": {
+    "https://jonathan.garbee.me/feed.xml": {
       "rels": [
         "alternate"
       ],
-      "title": "Jonathan Garbee - Atom",
+      "title": "Sitewide Atom feed",
       "type": "application/atom+xml"
     },
-    "https://jonathan.garbee.me/feeds/posts/default?alt=rss": {
+    "/assets/Readexpro[HEXP,wght].ttf": {
       "rels": [
-        "alternate"
+        "preload"
       ],
-      "title": "Jonathan Garbee - RSS",
-      "type": "application/rss+xml"
+      "type": "font/ttf"
     },
-    "https://www.blogger.com/feeds/7344529909712504683/posts/default": {
+    "https://jonathan.garbee.me/assets/nord.css?v=1f41ea55cafac44131843cb591935977ff54f2ca": {
       "rels": [
-        "service.post"
-      ],
-      "title": "Jonathan Garbee - Atom",
-      "type": "application/atom+xml"
-    },
-    "https://www.blogger.com/profile/11387214821280773326": {
-      "rels": [
-        "me"
+        "stylesheet"
       ]
     },
-    "https://jonathan.garbee.me/2015/02/my-php-wishlist.html": {
+    "https://jonathan.garbee.me/assets/nord-prism.css?v=83a9478b4ce976128de753e97ff2127cca5adf39": {
       "rels": [
-        "bookmark"
-      ],
-      "title": "permanent link",
-      "text": "\n\nFebruary 15, 2015\n\n"
+        "stylesheet"
+      ]
     },
-    "https://jonathan.garbee.me/2014/06/running-supervisord-on-codio.html": {
+    "https://jonathan.garbee.me/assets/main.css?v=0ff00d392fc03401f475c86817c7ec7edb707139": {
       "rels": [
-        "bookmark"
-      ],
-      "title": "permanent link",
-      "text": "\n\nJune 18, 2014\n\n"
-    },
-    "https://jonathan.garbee.me/2014/04/laravel-codio-and-nginx.html": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "permanent link",
-      "text": "\n\nApril 01, 2014\n\n"
-    },
-    "https://jonathan.garbee.me/2014/03/you-may-not-need-meta-charset.html": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "permanent link",
-      "text": "\n\nMarch 19, 2014\n\n"
-    },
-    "https://jonathan.garbee.me/2013/09/form-macros-in-laravel.html": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "permanent link",
-      "text": "\n\nSeptember 26, 2013\n\n"
-    },
-    "https://jonathan.garbee.me/2013/09/resources-and-tools.html": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "permanent link",
-      "text": "\n\nSeptember 12, 2013\n\n"
-    },
-    "https://www.blogger.com/go/report-abuse": {
-      "rels": [
-        "nofollow",
-        "noopener"
-      ],
-      "text": "\nReport Abuse\n"
-    },
-    "https://www.blogger.com/": {
-      "rels": [
-        "nofollow"
-      ],
-      "text": "\n\n\n\nPowered by Blogger\n"
+        "stylesheet"
+      ]
     }
   }
 }

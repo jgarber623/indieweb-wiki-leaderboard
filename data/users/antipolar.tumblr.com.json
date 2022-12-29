@@ -35,9 +35,9 @@
     "stylesheet": [
       "https://assets.tumblr.com/pop/css/main-30e64352.css",
       "https://assets.tumblr.com/pop/8774-e4ff5810.css",
-      "https://assets.tumblr.com/pop/7697-178d367c.css",
-      "https://assets.tumblr.com/pop/889-3dd50084.css",
-      "https://assets.tumblr.com/pop/2799-b5d4f9a9.css",
+      "https://assets.tumblr.com/pop/7180-178d367c.css",
+      "https://assets.tumblr.com/pop/889-3abb7fc5.css",
+      "https://assets.tumblr.com/pop/2799-1331ac6d.css",
       "https://assets.tumblr.com/pop/4321-617e6264.css",
       "https://assets.tumblr.com/pop/7422-a0d03520.css",
       "https://assets.tumblr.com/pop/peepr-route-c7e25839.css"
@@ -47,10 +47,14 @@
     ],
     "noopener": [
       "https://www.tumblr.com/antipolar",
+      "https://www.tumblr.com/settings/ad-free-browsing?source=rail",
       "https://www.google.com/chrome",
       "https://www.mozilla.org/firefox",
       "https://support.apple.com/downloads/safari",
       "https://www.microsoft.com/windows/microsoft-edge"
+    ],
+    "noreferrer": [
+      "https://www.tumblr.com/settings/ad-free-browsing?source=rail"
     ]
   },
   "rel-urls": {
@@ -132,19 +136,19 @@
       ],
       "type": "text/css"
     },
-    "https://assets.tumblr.com/pop/7697-178d367c.css": {
+    "https://assets.tumblr.com/pop/7180-178d367c.css": {
       "rels": [
         "stylesheet"
       ],
       "type": "text/css"
     },
-    "https://assets.tumblr.com/pop/889-3dd50084.css": {
+    "https://assets.tumblr.com/pop/889-3abb7fc5.css": {
       "rels": [
         "stylesheet"
       ],
       "type": "text/css"
     },
-    "https://assets.tumblr.com/pop/2799-b5d4f9a9.css": {
+    "https://assets.tumblr.com/pop/2799-1331ac6d.css": {
       "rels": [
         "stylesheet"
       ],
@@ -172,6 +176,13 @@
       "rels": [
         "manifest"
       ]
+    },
+    "https://www.tumblr.com/settings/ad-free-browsing?source=rail": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "Wanna go ad-free?"
     },
     "https://www.google.com/chrome": {
       "rels": [

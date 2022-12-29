@@ -1,5 +1,124 @@
 {
-  "items": [],
-  "rels": {},
-  "rel-urls": {}
+  "items": [
+    {
+      "type": [
+        "h-screen"
+      ],
+      "properties": {},
+      "children": [
+        {
+          "type": [
+            "h-full"
+          ],
+          "properties": {},
+          "children": [
+            {
+              "type": [
+                "h-full"
+              ],
+              "properties": {
+                "name": [
+                  "BlogAboutReading"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rels": {
+    "canonical": [
+      "https://samclarke.blog/"
+    ],
+    "apple-touch-icon": [
+      "https://samclarke.space/static/favicons/apple-touch-icon.png"
+    ],
+    "icon": [
+      "https://samclarke.space/static/favicons/favicon-32x32.png",
+      "https://samclarke.space/static/favicons/favicon-16x16.png"
+    ],
+    "manifest": [
+      "https://samclarke.space/static/favicons/site.webmanifest"
+    ],
+    "mask-icon": [
+      "https://samclarke.space/static/favicons/safari-pinned-tab.svg"
+    ],
+    "alternate": [
+      "https://samclarke.space/feed.xml"
+    ],
+    "preload": [
+      "https://samclarke.space/_next/static/css/9dda698cc4125e8d.css"
+    ],
+    "stylesheet": [
+      "https://samclarke.space/_next/static/css/9dda698cc4125e8d.css"
+    ],
+    "noopener": [
+      "mailto:sam@clrk.space",
+      "https://clrk.space/@sam"
+    ],
+    "noreferrer": [
+      "mailto:sam@clrk.space",
+      "https://clrk.space/@sam"
+    ]
+  },
+  "rel-urls": {
+    "https://samclarke.blog/": {
+      "rels": [
+        "canonical"
+      ]
+    },
+    "https://samclarke.space/static/favicons/apple-touch-icon.png": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://samclarke.space/static/favicons/favicon-32x32.png": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/png"
+    },
+    "https://samclarke.space/static/favicons/favicon-16x16.png": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/png"
+    },
+    "https://samclarke.space/static/favicons/site.webmanifest": {
+      "rels": [
+        "manifest"
+      ]
+    },
+    "https://samclarke.space/static/favicons/safari-pinned-tab.svg": {
+      "rels": [
+        "mask-icon"
+      ]
+    },
+    "https://samclarke.space/feed.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/rss+xml"
+    },
+    "https://samclarke.space/_next/static/css/9dda698cc4125e8d.css": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "mailto:sam@clrk.space": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "mail"
+    },
+    "https://clrk.space/@sam": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "mastodon"
+    }
+  }
 }
