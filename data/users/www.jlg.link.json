@@ -2,43 +2,130 @@
   "items": [
     {
       "type": [
-        "h-feed"
+        "h-entry"
       ],
       "properties": {
-        "photo": [
+        "name": [
+          "About"
+        ],
+        "url": [
+          "https://www.jlg.link/",
+          "https://www.jlg.link/",
+          "https://www.jlg.link/b/2",
           "https://www.jlg.link/"
         ],
-        "entry-title": [
-          "Nothing Found"
-        ],
-        "entry-content": [
+        "author": [
           {
-            "html": "<p>It seems we can’t find what you’re looking for. Perhaps searching can help.</p>\n\t\t\t<form role=\"search\" method=\"get\" class=\"search-form\" action=\"https://www.jlg.link/\">\n\t\t\t\t<label>\n\t\t\t\t\t<span class=\"screen-reader-text\">Search for:</span>\n\t\t\t\t\t<input type=\"search\" class=\"search-field\" placeholder=\"Search …\" value=\"\" name=\"s\">\n\t\t\t\t</label>\n\t\t\t\t<input type=\"submit\" class=\"search-submit\" value=\"Search\">\n\t\t\t</form>",
-            "value": "It seems we can’t find what you’re looking for. Perhaps searching can help.\n\t\t\t\n\t\t\t\t\n\t\t\t\t\tSearch for:"
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "photo": [
+                {
+                  "value": "https://secure.gravatar.com/avatar/1ea11b8d9bc49d937c0266efe4ea87d2?s=40&d=mm&r=g",
+                  "srcset": {
+                    "2x": "https://secure.gravatar.com/avatar/1ea11b8d9bc49d937c0266efe4ea87d2?s=80&d=mm&r=g"
+                  },
+                  "alt": "User Avatar of j7"
+                }
+              ],
+              "url": [
+                "https://www.jlg.link/"
+              ],
+              "uid": [
+                "https://www.jlg.link/"
+              ],
+              "name": [
+                "j7"
+              ]
+            },
+            "value": "j7"
+          },
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "photo": [
+                {
+                  "value": "https://secure.gravatar.com/avatar/1ea11b8d9bc49d937c0266efe4ea87d2?s=100&d=mm&r=g",
+                  "srcset": {
+                    "2x": "https://secure.gravatar.com/avatar/1ea11b8d9bc49d937c0266efe4ea87d2?s=200&d=mm&r=g"
+                  },
+                  "alt": "User Avatar of j7"
+                }
+              ],
+              "url": [
+                "https://www.jlg.link/"
+              ],
+              "uid": [
+                "https://www.jlg.link/"
+              ],
+              "name": [
+                "j7"
+              ],
+              "note": [
+                {
+                  "html": "A human testing Wordpress as a Fediverse instance...",
+                  "value": "A human testing Wordpress as a Fediverse instance..."
+                }
+              ]
+            },
+            "value": "j7"
           }
+        ],
+        "published": [
+          "2022-12-29T09:12:40-05:00"
+        ],
+        "duration": [
+          "PT1M"
+        ],
+        "content": [
+          {
+            "html": "<p>Tokyoite, Atlantan, journalist, photographer, cloud engineer, open-source advocate, ramen enthusiast, train nerd, armchair urbanist, Cities: Skylines player/builder/modder.<br><br>Currently trying to test this wordpress instance as a new life journal/communications hub.</p>",
+            "value": "Tokyoite, Atlantan, journalist, photographer, cloud engineer, open-source advocate, ramen enthusiast, train nerd, armchair urbanist, Cities: Skylines player/builder/modder.Currently trying to test this wordpress instance as a new life journal/communications hub."
+          }
+        ],
+        "uid": [
+          "https://www.jlg.link/"
         ]
-      }
+      },
+      "id": "primary"
     }
   ],
   "rels": {
     "profile": [
-      "http://gmpg.org/xfn/11",
       "http://microformats.org/profile/specs",
       "http://microformats.org/profile/hatom"
     ],
     "alternate": [
       "https://www.jlg.link/feed/",
-      "https://www.jlg.link/comments/feed/"
+      "https://www.jlg.link/comments/feed/",
+      "https://www.jlg.link/sample-page/feed/",
+      "https://www.jlg.link/wp-json/wp/v2/pages/2",
+      "https://www.jlg.link/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.jlg.link%2F",
+      "https://www.jlg.link/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.jlg.link%2F&format=xml",
+      "https://www.jlg.link/author/j7/feed/",
+      "https://www.jlg.link/type/standard/feed/"
     ],
     "stylesheet": [
+      "https://www.jlg.link/wp-includes/css/dist/components/style.min.css?ver=6.1.1",
+      "https://www.jlg.link/wp-includes/css/dist/block-editor/style.min.css?ver=6.1.1",
+      "https://www.jlg.link/wp-includes/css/dist/nux/style.min.css?ver=6.1.1",
+      "https://www.jlg.link/wp-includes/css/dist/reusable-blocks/style.min.css?ver=6.1.1",
+      "https://www.jlg.link/wp-includes/css/dist/editor/style.min.css?ver=6.1.1",
+      "https://www.jlg.link/wp-content/plugins/emoji-autocomplete-gutenberg/dist/blocks.style.build.css?ver=1672380727",
       "https://www.jlg.link/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1",
       "https://www.jlg.link/wp-includes/css/classic-themes.min.css?ver=1",
       "https://www.jlg.link/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
       "https://www.jlg.link/wp-content/plugins/simple-location/css/location.min.css?ver=5.0.5",
-      "https://www.jlg.link/wp-content/plugins/indieweb-post-kinds/css/kind.min.css?ver=3.6.3",
       "https://www.jlg.link/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3",
-      "https://www.jlg.link/wp-content/themes/velox/style.css?ver=1.3.1",
-      "https://www.jlg.link/wp-content/plugins/syndication-links/css/syn.min.css?ver=4.4.2"
+      "https://www.jlg.link/wp-includes/css/dashicons.min.css?ver=6.1.1",
+      "https://www.jlg.link/wp-content/themes/autonomie/style.css?ver=6.1.1",
+      "https://www.jlg.link/wp-content/themes/autonomie/assets/css/print.css?ver=1.0.0",
+      "https://www.jlg.link/wp-content/themes/autonomie/assets/css/narrow-width.css?ver=1.0.0",
+      "https://www.jlg.link/wp-content/themes/autonomie/assets/css/default-width.css?ver=1.0.0",
+      "https://www.jlg.link/wp-content/themes/autonomie/assets/css/wide-width.css?ver=1.0.0"
     ],
     "https://api.w.org/": [
       "https://www.jlg.link/wp-json/"
@@ -48,6 +135,9 @@
     ],
     "wlwmanifest": [
       "https://www.jlg.link/wp-includes/wlwmanifest.xml"
+    ],
+    "canonical": [
+      "https://www.jlg.link/"
     ],
     "shortlink": [
       "https://www.jlg.link/"
@@ -61,11 +151,17 @@
     "indieauth-metadata": [
       "https://www.jlg.link/wp-json/indieauth/1.0/metadata"
     ],
-    "friends-base-url": [
-      "https://www.jlg.link/wp-json/friends/v1"
-    ],
     "me": [
       "https://mastodon.cloud/@jlgatewood"
+    ],
+    "pingback": [
+      "https://www.jlg.link/xmlrpc.php"
+    ],
+    "icon": [
+      "https://www.jlg.link/wp-content/uploads/2022/12/cropped-cropped-j7-8bit-round.png"
+    ],
+    "apple-touch-icon": [
+      "https://www.jlg.link/wp-content/uploads/2022/12/cropped-cropped-j7-8bit-round.png"
     ],
     "micropub_media": [
       "https://www.jlg.link/wp-json/micropub/1.0/media"
@@ -73,16 +169,26 @@
     "micropub": [
       "https://www.jlg.link/wp-json/micropub/1.0/endpoint"
     ],
+    "webmention": [
+      "https://www.jlg.link/wp-json/webmention/1.0/endpoint"
+    ],
+    "http://webmention.org/": [
+      "https://www.jlg.link/wp-json/webmention/1.0/endpoint"
+    ],
     "home": [
       "https://www.jlg.link/"
+    ],
+    "bookmark": [
+      "https://www.jlg.link/"
+    ],
+    "author": [
+      "https://www.jlg.link/"
+    ],
+    "generator": [
+      "https://wordpress.org/"
     ]
   },
   "rel-urls": {
-    "http://gmpg.org/xfn/11": {
-      "rels": [
-        "profile"
-      ]
-    },
     "http://microformats.org/profile/specs": {
       "rels": [
         "profile"
@@ -107,58 +213,142 @@
       "title": ".:JLG:. into the fediverse » Comments Feed",
       "type": "application/rss+xml"
     },
+    "https://www.jlg.link/sample-page/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": ".:JLG:. into the fediverse » About Comments Feed",
+      "type": "application/rss+xml"
+    },
+    "https://www.jlg.link/wp-includes/css/dist/components/style.min.css?ver=6.1.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://www.jlg.link/wp-includes/css/dist/block-editor/style.min.css?ver=6.1.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://www.jlg.link/wp-includes/css/dist/nux/style.min.css?ver=6.1.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://www.jlg.link/wp-includes/css/dist/reusable-blocks/style.min.css?ver=6.1.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://www.jlg.link/wp-includes/css/dist/editor/style.min.css?ver=6.1.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://www.jlg.link/wp-content/plugins/emoji-autocomplete-gutenberg/dist/blocks.style.build.css?ver=1672380727": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
     "https://www.jlg.link/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1": {
       "rels": [
         "stylesheet"
       ],
-      "media": "all"
+      "media": "all",
+      "type": "text/css"
     },
     "https://www.jlg.link/wp-includes/css/classic-themes.min.css?ver=1": {
       "rels": [
         "stylesheet"
       ],
-      "media": "all"
+      "media": "all",
+      "type": "text/css"
     },
     "https://www.jlg.link/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7": {
       "rels": [
         "stylesheet"
       ],
-      "media": "all"
+      "media": "all",
+      "type": "text/css"
     },
     "https://www.jlg.link/wp-content/plugins/simple-location/css/location.min.css?ver=5.0.5": {
       "rels": [
         "stylesheet"
       ],
-      "media": "all"
-    },
-    "https://www.jlg.link/wp-content/plugins/indieweb-post-kinds/css/kind.min.css?ver=3.6.3": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "all"
+      "media": "all",
+      "type": "text/css"
     },
     "https://www.jlg.link/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3": {
       "rels": [
         "stylesheet"
       ],
-      "media": "all"
+      "media": "all",
+      "type": "text/css"
     },
-    "https://www.jlg.link/wp-content/themes/velox/style.css?ver=1.3.1": {
+    "https://www.jlg.link/wp-includes/css/dashicons.min.css?ver=6.1.1": {
       "rels": [
         "stylesheet"
       ],
-      "media": "all"
+      "media": "all",
+      "type": "text/css"
     },
-    "https://www.jlg.link/wp-content/plugins/syndication-links/css/syn.min.css?ver=4.4.2": {
+    "https://www.jlg.link/wp-content/themes/autonomie/style.css?ver=6.1.1": {
       "rels": [
         "stylesheet"
       ],
-      "media": "all"
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://www.jlg.link/wp-content/themes/autonomie/assets/css/print.css?ver=1.0.0": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "print",
+      "type": "text/css"
+    },
+    "https://www.jlg.link/wp-content/themes/autonomie/assets/css/narrow-width.css?ver=1.0.0": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "(max-width: 800px)",
+      "type": "text/css"
+    },
+    "https://www.jlg.link/wp-content/themes/autonomie/assets/css/default-width.css?ver=1.0.0": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "(min-width: 800px)",
+      "type": "text/css"
+    },
+    "https://www.jlg.link/wp-content/themes/autonomie/assets/css/wide-width.css?ver=1.0.0": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "(min-width: 1000px)",
+      "type": "text/css"
     },
     "https://www.jlg.link/wp-json/": {
       "rels": [
         "https://api.w.org/"
       ]
+    },
+    "https://www.jlg.link/wp-json/wp/v2/pages/2": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/json"
     },
     "https://www.jlg.link/xmlrpc.php?rsd": {
       "rels": [
@@ -175,8 +365,20 @@
     },
     "https://www.jlg.link/": {
       "rels": [
-        "shortlink"
+        "canonical"
       ]
+    },
+    "https://www.jlg.link/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.jlg.link%2F": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/json+oembed"
+    },
+    "https://www.jlg.link/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.jlg.link%2F&format=xml": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "text/xml+oembed"
     },
     "https://www.jlg.link/wp-json/indieauth/1.0/auth": {
       "rels": [
@@ -193,14 +395,33 @@
         "indieauth-metadata"
       ]
     },
-    "https://www.jlg.link/wp-json/friends/v1": {
-      "rels": [
-        "friends-base-url"
-      ]
-    },
     "https://mastodon.cloud/@jlgatewood": {
       "rels": [
         "me"
+      ]
+    },
+    "https://www.jlg.link/xmlrpc.php": {
+      "rels": [
+        "pingback"
+      ]
+    },
+    "https://www.jlg.link/author/j7/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": ".:JLG:. into the fediverse » Posts by j7 Feed",
+      "type": "application/rss+xml"
+    },
+    "https://www.jlg.link/type/standard/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": ".:JLG:. into the fediverse » Standard Post-Type Feed",
+      "type": "application/rss+xml"
+    },
+    "https://www.jlg.link/wp-content/uploads/2022/12/cropped-cropped-j7-8bit-round.png": {
+      "rels": [
+        "icon"
       ]
     },
     "https://www.jlg.link/wp-json/micropub/1.0/media": {
@@ -212,6 +433,17 @@
       "rels": [
         "micropub"
       ]
+    },
+    "https://www.jlg.link/wp-json/webmention/1.0/endpoint": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://wordpress.org/": {
+      "rels": [
+        "generator"
+      ],
+      "text": "WordPress"
     }
   }
 }

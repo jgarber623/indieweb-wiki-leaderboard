@@ -6,6 +6,50 @@
       ],
       "properties": {
         "url": [
+          "https://atomicules.co.uk/2022/12/30/Succumbed-to-Dovecot.html"
+        ],
+        "published": [
+          "2022-12-30 00:00 GMT"
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "name": [
+                "atomicules"
+              ],
+              "photo": [
+                {
+                  "value": "https://atomicules.co.uk/images/favicon.png",
+                  "alt": "atomicules"
+                }
+              ]
+            },
+            "value": "atomicules"
+          }
+        ],
+        "name": [
+          "Succumbed To Dovecot"
+        ],
+        "content": [
+          {
+            "html": "<p>I finally succumbed and set up Dovecot on my server. I still profess that (remote, using a tmux session) mutt straight into a (postfix) maildir is the ultimate email experience, but now that I’m back to my main computing device being a phone it has become a pain in the arse using mutt via a teeny tiny terminal on my phone (how on earth I ever did so much on my iPhone SE before this I don’t know). I.e. writing emails is not a great experience and I rarely sort through and archive/delete stuff from my phone, instead waiting until I can get on the family computer.</p>\n<p>Setting up Dovecot via a teeny tiny terminal on my phone was one of the reasons I put this off so long, but I had enough snippets of free time over the holidays to persevere and do it.</p>\n<p>I used <a href=\"https://agentoss.wordpress.com/2013/01/06/home-mail-server-with-postfix-dovecot-imap-squirrelmailroundcube-on-netbsd-6-0-1/\">this old NetBSD guide</a> as a basis with a few tweaks to suit the peculiarities of my setup:</p>\n<ul>\n  <li>\n    <p><code class=\"language-plaintext highlighter-rouge\">dovecot.conf</code></p>\n    <p>I just need this protocol:</p>\n    <div class=\"language-plaintext highlighter-rouge\">\n<div class=\"highlight\"><pre class=\"highlight\"><code>  protocols = imap\n</code></pre></div>    </div>\n  </li>\n  <li>\n    <p><code class=\"language-plaintext highlighter-rouge\">./conf.d/10-auth.conf</code></p>\n    <p>For the time being, I’m including <code class=\"language-plaintext highlighter-rouge\">auth-static</code> instead of <code class=\"language-plaintext highlighter-rouge\">auth-system</code>. More on that in a bit.</p>\n  </li>\n  <li>\n    <p><code class=\"language-plaintext highlighter-rouge\">./conf.d/10-logging.conf</code></p>\n    <p>The default didn’t seem to log anything for me and so since I was debugging connections I set:</p>\n    <div class=\"language-plaintext highlighter-rouge\">\n<div class=\"highlight\"><pre class=\"highlight\"><code>  log_path = /var/log/dovecot\n</code></pre></div>    </div>\n    <p>And</p>\n    <div class=\"language-plaintext highlighter-rouge\">\n<div class=\"highlight\"><pre class=\"highlight\"><code>  auth_verbose = yes\n</code></pre></div>    </div>\n  </li>\n  <li>\n    <p><code class=\"language-plaintext highlighter-rouge\">./conf.d/10-master.conf</code></p>\n    <p>The postfix smtp auth bits per the article (“Just follow the provided instructions”) since being able to send email is useful too.</p>\n  </li>\n  <li>\n    <p><code class=\"language-plaintext highlighter-rouge\">./conf.d/10-ssl.conf</code></p>\n    <p>Pointing <code class=\"language-plaintext highlighter-rouge\">ssl_key</code> and <code class=\"language-plaintext highlighter-rouge\">ssl_cert</code> at my Let’s Encrypt certs and setting:</p>\n    <div class=\"language-plaintext highlighter-rouge\">\n<div class=\"highlight\"><pre class=\"highlight\"><code>  ssl = required\n</code></pre></div>    </div>\n    <p>Instead of <code class=\"language-plaintext highlighter-rouge\">yes</code></p>\n  </li>\n  <li>\n    <p><code class=\"language-plaintext highlighter-rouge\">./conf.d/auth-static.conf.ext</code></p>\n    <p>For now at least, since my server is effectively single user with just my email on it, I’m using the <a href=\"https://doc.dovecot.org/configuration_manual/authentication/static_password_database/#authentication-static-password-database\">static auth settings</a>. This <em>feels</em> wrong, but I can’t actually think why this is worse than using system auth (PAM)… yet. I did use <a href=\"https://doc.dovecot.org/configuration_manual/authentication/password_schemes/#generating-encrypted-passwords\">doveadm</a> to encrypt a long random password though so it isn’t stored in the file as plain text (not that it really matters anyway, perhaps if this was a shared machine).</p>\n    <div class=\"language-plaintext highlighter-rouge\">\n<div class=\"highlight\"><pre class=\"highlight\"><code>  passdb {\n    driver = static\n    args = password={SCHEME}[REDACTED]\n  }\n</code></pre></div>    </div>\n    <p>I have email for two domains on my host so my <code class=\"language-plaintext highlighter-rouge\">userdb</code> looks like:</p>\n    <div class=\"language-plaintext highlighter-rouge\">\n<div class=\"highlight\"><pre class=\"highlight\"><code>  userdb {  driver = static\n    args = uid=999 gid=99 mail_location=maildir:/path/to/Mail/%u:LAYOUT=fs:INBOX=/path/to/Mail/%u/Inbox\n  }\n</code></pre></div>    </div>\n    <p>My postfix setup is using the <a href=\"https://doc.dovecot.org/configuration_manual/mail_location/Maildir/\">“filesystem” maildir layout</a> - I can’t remember doing that on purpose so I presume it was the default when I set it up. I also had to include the <code class=\"language-plaintext highlighter-rouge\">INBOX</code> arg as otherwise I got all my other folders mapped, but no actual inbox.</p>\n    <p>With this setup, since the username isn’t used for static auth, I use the domain as the username in my client and it maps to the right mailbox. I could (should?) tweak that so the username is the email address and then pull the domain from that, but it doesn’t really matter.</p>\n  </li>\n</ul>\n<p>I will see how this goes, keep an eye on the logs and perhaps think of further ways to lock it down; Maybe limiting number of clients or perhaps only running Dovecot when I need it.</p>\n\t\t\t\t\t<ul class=\"post-tags\">\n\t\t\t\t\t\t<li class=\"tags\">Tags: <ul><li><a class=\"p-category\" href=\"https://atomicules.co.uk/program.html\">program</a></li></ul>\n</li>\n\t\t\t\t\t</ul>",
+            "value": "I finally succumbed and set up Dovecot on my server. I still profess that (remote, using a tmux session) mutt straight into a (postfix) maildir is the ultimate email experience, but now that I’m back to my main computing device being a phone it has become a pain in the arse using mutt via a teeny tiny terminal on my phone (how on earth I ever did so much on my iPhone SE before this I don’t know). I.e. writing emails is not a great experience and I rarely sort through and archive/delete stuff from my phone, instead waiting until I can get on the family computer.\nSetting up Dovecot via a teeny tiny terminal on my phone was one of the reasons I put this off so long, but I had enough snippets of free time over the holidays to persevere and do it.\nI used this old NetBSD guide as a basis with a few tweaks to suit the peculiarities of my setup:\n\n  \n    dovecot.conf\n    I just need this protocol:\n      protocols = imap\n    \n  \n  \n    ./conf.d/10-auth.conf\n    For the time being, I’m including auth-static instead of auth-system. More on that in a bit.\n  \n  \n    ./conf.d/10-logging.conf\n    The default didn’t seem to log anything for me and so since I was debugging connections I set:\n      log_path = /var/log/dovecot\n    \n    And\n      auth_verbose = yes\n    \n  \n  \n    ./conf.d/10-master.conf\n    The postfix smtp auth bits per the article (“Just follow the provided instructions”) since being able to send email is useful too.\n  \n  \n    ./conf.d/10-ssl.conf\n    Pointing ssl_key and ssl_cert at my Let’s Encrypt certs and setting:\n      ssl = required\n    \n    Instead of yes\n  \n  \n    ./conf.d/auth-static.conf.ext\n    For now at least, since my server is effectively single user with just my email on it, I’m using the static auth settings. This feels wrong, but I can’t actually think why this is worse than using system auth (PAM)… yet. I did use doveadm to encrypt a long random password though so it isn’t stored in the file as plain text (not that it really matters anyway, perhaps if this was a shared machine).\n      passdb {\n    driver = static\n    args = password={SCHEME}[REDACTED]\n  }\n    \n    I have email for two domains on my host so my userdb looks like:\n      userdb {  driver = static\n    args = uid=999 gid=99 mail_location=maildir:/path/to/Mail/%u:LAYOUT=fs:INBOX=/path/to/Mail/%u/Inbox\n  }\n    \n    My postfix setup is using the “filesystem” maildir layout - I can’t remember doing that on purpose so I presume it was the default when I set it up. I also had to include the INBOX arg as otherwise I got all my other folders mapped, but no actual inbox.\n    With this setup, since the username isn’t used for static auth, I use the domain as the username in my client and it maps to the right mailbox. I could (should?) tweak that so the username is the email address and then pull the domain from that, but it doesn’t really matter.\n  \n\nI will see how this goes, keep an eye on the logs and perhaps think of further ways to lock it down; Maybe limiting number of clients or perhaps only running Dovecot when I need it.\n\t\t\t\t\t\n\t\t\t\t\t\tTags: program"
+          }
+        ],
+        "category": [
+          "program"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "url": [
           "https://atomicules.co.uk/2022/12/19/A-Budget-for-Money-and-Time-for-Next-Year.html"
         ],
         "published": [
@@ -489,68 +533,6 @@
           "owtelse"
         ]
       }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "url": [
-          "https://atomicules.co.uk/2022/08/25/how-many-toilets.html"
-        ],
-        "published": [
-          "2022-08-25 00:00 BST"
-        ],
-        "author": [
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "name": [
-                "atomicules"
-              ],
-              "photo": [
-                {
-                  "value": "https://atomicules.co.uk/images/favicon.png",
-                  "alt": "atomicules"
-                }
-              ]
-            },
-            "value": "atomicules"
-          }
-        ],
-        "name": [
-          "How Many Toilets"
-        ],
-        "content": [
-          {
-            "html": "<blockquote class=\"h-cite\">\n\t\t\t\t\t\t<p class=\"quote p-content\">\"\"I don't care how many toilets I got to jump in,\" she said. \"I ain't goin back to Mallard.\"\"</p>\n\t\t\t\t\t\t<footer>\n\t\t\t\t\t\t—\n\t\t\t\t\t\t\t<cite>\n\t\t\t\t\t\t\t\t<em><span class=\"p-name\">The Vanishing Half</span> by <span class=\"p-author\">Britt Bennett</span></em>\n\t\t\t\t\t\t\t</cite>\n\t\t\t\t\t\t</footer>\n\t\t\t\t\t</blockquote>\n\t\t\t\t\t<div class=\"descrip\">\n<p>And with that have finished spamming my own site for a bit.</p>\n\t\t\t\t\t</div>\n\t\t\t\t\t<ul class=\"post-tags\">\n\t\t\t\t\t\t<li class=\"tags\">Tags: <ul><li><a class=\"p-category\" href=\"https://atomicules.co.uk/owtelse.html\">owtelse</a></li></ul>\n</li>\n\t\t\t\t\t</ul>",
-            "value": "\"\"I don't care how many toilets I got to jump in,\" she said. \"I ain't goin back to Mallard.\"\"\n\t\t\t\t\t\t\n\t\t\t\t\t\t—\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\tThe Vanishing Half by Britt Bennett\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\nAnd with that have finished spamming my own site for a bit.\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\tTags: owtelse"
-          }
-        ],
-        "category": [
-          "owtelse"
-        ]
-      },
-      "children": [
-        {
-          "type": [
-            "h-cite"
-          ],
-          "properties": {
-            "content": [
-              "\"\"I don't care how many toilets I got to jump in,\" she said. \"I ain't goin back to Mallard.\"\""
-            ],
-            "name": [
-              "The Vanishing Half"
-            ],
-            "author": [
-              "Britt Bennett"
-            ]
-          }
-        }
-      ]
     },
     {
       "type": [

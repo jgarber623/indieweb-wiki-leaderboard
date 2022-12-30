@@ -1,5 +1,43 @@
 {
-  "items": [],
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "url": [
+          "https://bielinski.de/",
+          "https://github.com/heibie",
+          "https://twitter.com/heibie",
+          "https://www.facebook.com/heiko.bielinski",
+          "https://micro.blog/heibie",
+          "https://www.instagram.com/heibie",
+          "https://mastodon.social/@heibie"
+        ],
+        "uid": [
+          "https://bielinski.de/"
+        ],
+        "photo": [
+          {
+            "value": "https://bielinski.de/wp-content/wphb-cache/gravatar/81f/81f0e7b6ffe5859c4ad229191dd33e7bx125.jpg",
+            "srcset": {
+              "2x": "https://bielinski.de/wp-content/wphb-cache/gravatar/81f/81f0e7b6ffe5859c4ad229191dd33e7bx250.jpg"
+            },
+            "alt": ""
+          }
+        ],
+        "name": [
+          "@heibie"
+        ],
+        "email": [
+          "mailto:kontakt@bielinski.de"
+        ],
+        "note": [
+          "Buch: \"Einfach #autofrei leben\" | #verkehrswende | 1 ❤️ für Bibliotheken | Vater x2 | Tel. 555-NASE | Feminist in Ausbildung | 🍺ernst"
+        ]
+      }
+    }
+  ],
   "rels": {
     "canonical": [
       "https://bielinski.de/"
@@ -15,12 +53,10 @@
       "https://bielinski.de/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1",
       "https://bielinski.de/wp-includes/css/dashicons.min.css?ver=6.1.1",
       "https://bielinski.de/wp-includes/css/classic-themes.min.css?ver=1",
-      "https://bielinski.de/wp-content/plugins/page-list/css/page-list.css?ver=5.2",
       "https://bielinski.de/wp-content/plugins/indieweb/static/css/indieweb-bw.css?ver=3.4.7",
       "https://bielinski.de/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3",
       "https://bielinski.de/wp-content/themes/marianne/style.min.css?ver=1.8",
-      "https://bielinski.de/wp-content/plugins/syndication-links/css/syn.min.css?ver=4.3.12",
-      "https://bielinski.de/wp-content/plugins/wp-gdpr-compliance/Assets/css/front.css?ver=1666071611"
+      "https://bielinski.de/wp-content/plugins/syndication-links/css/syn.min.css?ver=4.4.2"
     ],
     "https://api.w.org/": [
       "https://bielinski.de/wp-json/"
@@ -37,15 +73,17 @@
     "token_endpoint": [
       "https://bielinski.de/wp-json/indieauth/1.0/token"
     ],
+    "indieauth-metadata": [
+      "https://bielinski.de/wp-json/indieauth/1.0/metadata"
+    ],
     "me": [
       "https://github.com/heibie",
       "https://twitter.com/heibie",
       "https://www.facebook.com/heiko.bielinski",
       "https://micro.blog/heibie",
       "https://www.instagram.com/heibie",
-      "http://gegen-die-panik.de/",
-      "https://open.spotify.com/user/heibie",
-      "https://mastodon.social/@heibie"
+      "https://mastodon.social/@heibie",
+      "mailto:kontakt@bielinski.de"
     ],
     "pgpkey": [
       "http://pool.sks-keyservers.net/pks/lookup?op=get&fingerprint=on&search=0xCD3E8F0769C605EF"
@@ -103,12 +141,6 @@
       ],
       "media": "all"
     },
-    "https://bielinski.de/wp-content/plugins/page-list/css/page-list.css?ver=5.2": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "all"
-    },
     "https://bielinski.de/wp-content/plugins/indieweb/static/css/indieweb-bw.css?ver=3.4.7": {
       "rels": [
         "stylesheet"
@@ -127,13 +159,7 @@
       ],
       "media": "all"
     },
-    "https://bielinski.de/wp-content/plugins/syndication-links/css/syn.min.css?ver=4.3.12": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "all"
-    },
-    "https://bielinski.de/wp-content/plugins/wp-gdpr-compliance/Assets/css/front.css?ver=1666071611": {
+    "https://bielinski.de/wp-content/plugins/syndication-links/css/syn.min.css?ver=4.4.2": {
       "rels": [
         "stylesheet"
       ],
@@ -167,6 +193,11 @@
         "token_endpoint"
       ]
     },
+    "https://bielinski.de/wp-json/indieauth/1.0/metadata": {
+      "rels": [
+        "indieauth-metadata"
+      ]
+    },
     "https://github.com/heibie": {
       "rels": [
         "me"
@@ -192,12 +223,7 @@
         "me"
       ]
     },
-    "http://gegen-die-panik.de/": {
-      "rels": [
-        "me"
-      ]
-    },
-    "https://open.spotify.com/user/heibie": {
+    "https://mastodon.social/@heibie": {
       "rels": [
         "me"
       ]
@@ -217,11 +243,11 @@
         "micropub"
       ]
     },
-    "https://mastodon.social/@heibie": {
+    "mailto:kontakt@bielinski.de": {
       "rels": [
         "me"
       ],
-      "text": "Mastodon"
+      "text": "kontakt@bielinski.de"
     }
   }
 }

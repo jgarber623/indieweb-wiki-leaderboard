@@ -5,6 +5,50 @@
         "h-entry"
       ],
       "properties": {
+        "published": [
+          "2022-12-30T11:10:56.871359+00:00"
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "photo": [
+                {
+                  "value": "https://www.gravatar.com/avatar/38fc6c615f36a579152118d7abf2e55b?d=mm&r=g&s=80 2x",
+                  "alt": ""
+                }
+              ],
+              "url": [
+                "https://jamesvandyne.com/author/jamesvandyne/"
+              ],
+              "uid": [
+                "https://jamesvandyne.com/author/jamesvandyne/"
+              ],
+              "name": [
+                "James"
+              ]
+            },
+            "value": "James"
+          }
+        ],
+        "content": [
+          {
+            "html": "<div>I thought mapping using htmx would have been more difficult than it was, but it was dead easy. As such, Tanzawa Exercise can now display the route of your activity. An example from a run this past summer.<br><figure class=\"attachment attachment--preview attachment--png\" data-trix-attachment='{\"contentType\":\"image/png\",\"filename\":\"image.png\",\"filesize\":1274861,\"height\":952,\"href\":\"https://jamesvandyne.com/files/c5253668-a6ef-46d2-8903-e9ea60aaeabc?content-disposition=attachment\",\"url\":\"https://jamesvandyne.com/files/c5253668-a6ef-46d2-8903-e9ea60aaeabc\",\"width\":1292}' data-trix-attributes='{\"presentation\":\"gallery\"}' data-trix-content-type=\"image/png\"><a href=\"https://jamesvandyne.com/files/c5253668-a6ef-46d2-8903-e9ea60aaeabc?content-disposition=attachment\"><picture>\n<source srcset=\"https://jamesvandyne.com/files/c5253668-a6ef-46d2-8903-e9ea60aaeabc?f=image/webp\" type=\"image/webp\"></source>\n<img height=\"952\" loading=\"lazy\" src=\"https://jamesvandyne.com/files/c5253668-a6ef-46d2-8903-e9ea60aaeabc\" width=\"1292\">\n</picture><figcaption class=\"attachment__caption\"></figcaption></a></figure>\n</div>",
+            "value": "I thought mapping using htmx would have been more difficult than it was, but it was dead easy. As such, Tanzawa Exercise can now display the route of your activity. An example from a run this past summer.\n\n https://jamesvandyne.com/files/c5253668-a6ef-46d2-8903-e9ea60aaeabc"
+          }
+        ],
+        "url": [
+          "https://jamesvandyne.com/ed6ce1f4-164a-4f64-9a4a-e3dc53a3922b"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
         "name": [
           "Tanzawa Strava Integration Merged"
         ],
@@ -457,56 +501,6 @@
     },
     {
       "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "name": [
-          "Response to Edit reply bookmark titles by jamesvandyne · Pull Request #265 · jamesvandyne/tanzawa"
-        ],
-        "in-reply-to": [
-          "https://github.com/jamesvandyne/tanzawa/pull/265"
-        ],
-        "published": [
-          "2022-12-21T06:35:13.688049+00:00"
-        ],
-        "author": [
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "photo": [
-                {
-                  "value": "https://www.gravatar.com/avatar/38fc6c615f36a579152118d7abf2e55b?d=mm&r=g&s=80 2x",
-                  "alt": ""
-                }
-              ],
-              "url": [
-                "https://jamesvandyne.com/author/jamesvandyne/"
-              ],
-              "uid": [
-                "https://jamesvandyne.com/author/jamesvandyne/"
-              ],
-              "name": [
-                "James"
-              ]
-            },
-            "value": "James"
-          }
-        ],
-        "content": [
-          {
-            "html": "<blockquote>This PR started as an experiment with HTMX to allow Tanzawa to edit reply/bookmark titles. As all of the entry creation forms/views are inherited from similar base-classes for easy/speed of initial...</blockquote>\n        <div>I've re-worked all of the create/update views for each post type to use application functions and added functional tests. Editing the url/title for reply posts, works really well. HTMX is allowing me to create the simple interactions I want without Javascript.<br><br>The biggest change is reply data is no longer updated all at once with the rest of the post, but rather when you finish editing the title/url, similar to how editing a GitHub PR title works.<br><br>The last bit that I think needs some more work, unrelated to the rest main objective of his issue, is the first step when creating a reply where I request the URL to, and it uses Turbo to fetch the meta-data / return a page that can create a reply.<br><br>This flow may need a bit more yak shaving so it doesn't use Turbo at all. Will give it a fiddle to see if I can refactor and simplify the flow using HTMX.</div>",
-            "value": "This PR started as an experiment with HTMX to allow Tanzawa to edit reply/bookmark titles. As all of the entry creation forms/views are inherited from similar base-classes for easy/speed of initial...\n        I've re-worked all of the create/update views for each post type to use application functions and added functional tests. Editing the url/title for reply posts, works really well. HTMX is allowing me to create the simple interactions I want without Javascript.The biggest change is reply data is no longer updated all at once with the rest of the post, but rather when you finish editing the title/url, similar to how editing a GitHub PR title works.The last bit that I think needs some more work, unrelated to the rest main objective of his issue, is the first step when creating a reply where I request the URL to, and it uses Turbo to fetch the meta-data / return a page that can create a reply.This flow may need a bit more yak shaving so it doesn't use Turbo at all. Will give it a fiddle to see if I can refactor and simplify the flow using HTMX."
-          }
-        ],
-        "url": [
-          "https://jamesvandyne.com/3b17bbb6-b228-46a5-bdf6-05c596d9faf7"
-        ]
-      }
-    },
-    {
-      "type": [
         "h-card"
       ],
       "properties": {
@@ -572,6 +566,7 @@
       "https://jamesvandyne.com/author/jamesvandyne/"
     ],
     "bookmark": [
+      "https://jamesvandyne.com/ed6ce1f4-164a-4f64-9a4a-e3dc53a3922b",
       "https://jamesvandyne.com/9a2f5510-d7b6-4fed-92eb-12ddb12a6540",
       "https://jamesvandyne.com/fdb6e161-3a90-4c7c-9ea8-fbd6401213cf",
       "https://jamesvandyne.com/cb199eb7-5236-4e62-8f5f-a24e66736c88",
@@ -580,8 +575,7 @@
       "https://jamesvandyne.com/8327ba33-3175-4506-902e-dcd3b6c42366",
       "https://jamesvandyne.com/8d81f4f7-c409-4964-821f-cfb9429e1e8f",
       "https://jamesvandyne.com/7a73b29e-eb9e-439a-a021-c8e7da729b36",
-      "https://jamesvandyne.com/7363c070-b854-42da-88bf-e644efcfa7ad",
-      "https://jamesvandyne.com/3b17bbb6-b228-46a5-bdf6-05c596d9faf7"
+      "https://jamesvandyne.com/7363c070-b854-42da-88bf-e644efcfa7ad"
     ]
   },
   "rel-urls": {
@@ -684,6 +678,13 @@
       "title": "View all posts by James",
       "text": "\n        James"
     },
+    "https://jamesvandyne.com/ed6ce1f4-164a-4f64-9a4a-e3dc53a3922b": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "permalink",
+      "text": "🔗permalink"
+    },
     "https://jamesvandyne.com/9a2f5510-d7b6-4fed-92eb-12ddb12a6540": {
       "rels": [
         "bookmark"
@@ -741,13 +742,6 @@
       "text": "🔗permalink"
     },
     "https://jamesvandyne.com/7363c070-b854-42da-88bf-e644efcfa7ad": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "permalink",
-      "text": "🔗permalink"
-    },
-    "https://jamesvandyne.com/3b17bbb6-b228-46a5-bdf6-05c596d9faf7": {
       "rels": [
         "bookmark"
       ],
