@@ -1,97 +1,57 @@
 {
-  "items": [
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "name": [
-          "A 2020 Update"
-        ],
-        "published": [
-          "2019-09-21 12:00:00"
-        ],
-        "content": [
-          "As we all hold on to our butts."
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "name": [
-          "Offline Support / Service Worker"
-        ],
-        "published": [
-          "2019-09-21 12:00:00"
-        ],
-        "content": [
-          "Adding offline fetching to matthq.com with a service worker."
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "name": [
-          "DAT Support Yo"
-        ],
-        "published": [
-          "2019-09-21 12:00:00"
-        ],
-        "content": [
-          "Let's get some DAT support for MattHQ!"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "name": [
-          "Web Component Time"
-        ],
-        "published": [
-          "2019-09-10 12:00:00"
-        ],
-        "content": [
-          "A DRY-er Indieweb with web components?"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "name": [
-          "A word on my new site"
-        ],
-        "published": [
-          "2019-09-02 12:00:00"
-        ],
-        "content": [
-          "A brief word on my inspiration for this site and intention for its use."
-        ]
-      }
-    }
-  ],
+  "items": [],
   "rels": {
     "stylesheet": [
-      "https://www.matthq.com/styles.css"
+      "https://www.randosreservoir.com/assets/built/screen.css?v=7b2788bcd4",
+      "https://www.randosreservoir.com/public/cards.min.css?v=7b2788bcd4"
+    ],
+    "preload": [
+      "https://www.randosreservoir.com/content/images/2022/12/IMG_6461.jpg"
+    ],
+    "canonical": [
+      "https://www.randosreservoir.com/"
+    ],
+    "alternate": [
+      "https://www.randosreservoir.com/rss/"
+    ],
+    "noopener": [
+      "https://ghost.org/"
     ]
   },
   "rel-urls": {
-    "https://www.matthq.com/styles.css": {
+    "https://www.randosreservoir.com/assets/built/screen.css?v=7b2788bcd4": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://www.randosreservoir.com/content/images/2022/12/IMG_6461.jpg": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://www.randosreservoir.com/": {
+      "rels": [
+        "canonical"
+      ]
+    },
+    "https://www.randosreservoir.com/rss/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Randos Reservoir",
+      "type": "application/rss+xml"
+    },
+    "https://www.randosreservoir.com/public/cards.min.css?v=7b2788bcd4": {
       "rels": [
         "stylesheet"
       ],
       "type": "text/css"
+    },
+    "https://ghost.org/": {
+      "rels": [
+        "noopener"
+      ],
+      "text": "Ghost"
     }
   }
 }

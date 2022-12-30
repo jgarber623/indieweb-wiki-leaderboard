@@ -3,11 +3,12 @@
   "rels": {
     "stylesheet": [
       "https://johneckman.com/wp-content/themes/modernist/style.css",
-      "https://johneckman.com/wp-includes/css/dist/block-library/style.min.css?ver=6.0.2",
-      "https://johneckman.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.16",
-      "https://johneckman.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.0.2",
-      "https://johneckman.com/wp-content/plugins/jetpack/_inc/social-logos/social-logos.min.css?ver=11.3.2",
-      "https://johneckman.com/wp-content/plugins/jetpack/css/jetpack.css?ver=11.3.2"
+      "https://johneckman.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1",
+      "https://johneckman.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17",
+      "https://johneckman.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.1.1",
+      "https://johneckman.com/wp-includes/css/classic-themes.min.css?ver=1",
+      "https://johneckman.com/wp-content/plugins/jetpack/_inc/social-logos/social-logos.min.css?ver=11.6",
+      "https://johneckman.com/wp-content/plugins/jetpack/css/jetpack.css?ver=11.6"
     ],
     "pingback": [
       "https://johneckman.com/xmlrpc.php"
@@ -26,7 +27,6 @@
     ],
     "dns-prefetch": [
       "https://secure.gravatar.com/",
-      "https://s.w.org/",
       "https://v0.wordpress.com/",
       "https://i0.wp.com/"
     ],
@@ -49,6 +49,9 @@
     ],
     "shortlink": [
       "https://wp.me/P148eA-4F"
+    ],
+    "friends-base-url": [
+      "https://johneckman.com/wp-json/friends/v1"
     ],
     "me": [
       "http://www.linkedin.com/in/johneckman",
@@ -104,11 +107,6 @@
         "dns-prefetch"
       ]
     },
-    "https://s.w.org/": {
-      "rels": [
-        "dns-prefetch"
-      ]
-    },
     "https://v0.wordpress.com/": {
       "rels": [
         "dns-prefetch"
@@ -119,35 +117,42 @@
         "dns-prefetch"
       ]
     },
-    "https://johneckman.com/wp-includes/css/dist/block-library/style.min.css?ver=6.0.2": {
+    "https://johneckman.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1": {
       "rels": [
         "stylesheet"
       ],
       "media": "all",
       "type": "text/css"
     },
-    "https://johneckman.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.16": {
+    "https://johneckman.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17": {
       "rels": [
         "stylesheet"
       ],
       "media": "all",
       "type": "text/css"
     },
-    "https://johneckman.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.0.2": {
+    "https://johneckman.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.1.1": {
       "rels": [
         "stylesheet"
       ],
       "media": "all",
       "type": "text/css"
     },
-    "https://johneckman.com/wp-content/plugins/jetpack/_inc/social-logos/social-logos.min.css?ver=11.3.2": {
+    "https://johneckman.com/wp-includes/css/classic-themes.min.css?ver=1": {
       "rels": [
         "stylesheet"
       ],
       "media": "all",
       "type": "text/css"
     },
-    "https://johneckman.com/wp-content/plugins/jetpack/css/jetpack.css?ver=11.3.2": {
+    "https://johneckman.com/wp-content/plugins/jetpack/_inc/social-logos/social-logos.min.css?ver=11.6": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://johneckman.com/wp-content/plugins/jetpack/css/jetpack.css?ver=11.6": {
       "rels": [
         "stylesheet"
       ],
@@ -199,6 +204,11 @@
         "alternate"
       ],
       "type": "text/xml+oembed"
+    },
+    "https://johneckman.com/wp-json/friends/v1": {
+      "rels": [
+        "friends-base-url"
+      ]
     },
     "http://www.linkedin.com/in/johneckman": {
       "rels": [

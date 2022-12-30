@@ -28,6 +28,72 @@
           ],
           "properties": {
             "name": [
+              "Fediverse: Beta to Production"
+            ],
+            "url": [
+              "https://hyperborea.org/journal/2022/12/fediverse-beta/",
+              "https://hyperborea.org/journal/2022/12/fediverse-beta/"
+            ],
+            "updated": [
+              "2022-12-29T14:33:49-08:00"
+            ],
+            "published": [
+              "2022-12-29T14:33:49-08:00"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "photo": [
+                    {
+                      "value": "https://secure.gravatar.com/avatar/7d976a58ee7858db8ed467d35e91d5de?s=90&d=wavatar&r=g",
+                      "srcset": {
+                        "2x": "https://secure.gravatar.com/avatar/7d976a58ee7858db8ed467d35e91d5de?s=180&d=wavatar&r=g"
+                      },
+                      "alt": ""
+                    }
+                  ],
+                  "url": [
+                    "https://hyperborea.org/journal/author/kelson/"
+                  ],
+                  "uid": [
+                    "https://hyperborea.org/journal/author/kelson/"
+                  ],
+                  "name": [
+                    "Kelson"
+                  ]
+                },
+                "value": "Kelson"
+              }
+            ],
+            "content": [
+              {
+                "html": "<p>The Twitter-to-Mastodon migration is like going from beta testing the Fediverse to production. Just like a public beta always turns up issues that were missed during development, when going to production you suddenly have a *huge* pool of new users who are going to use the system in ways you didn’t anticipate and haven’t already accustomed themselves to its quirks.</p>\n<p>And that turns up a lot more things you need to fix!</p>\n<p>Some thoughts on features/user experience for Mastodon and other Fediverse software, based on usage and discussions I’ve seen lately:</p>\n<p>1. Missing replies aren’t just an inconvenience, they’re a big problem. Instances really do need to reach out and check for additional replies when someone views a post. I’m not sure how to balance the extra network traffic. Maybe just have a manual “check for more replies” button.</p>\n<p>2. Quoting is better than screenshotting. I can read quotes on any size screen. So can screen readers.</p>\n<p>3. Lack of quoting hasn’t prevented flame wars or dogpiling, and it there’s no indication it reduced them either. If you don’t want to embed an entire post, at least generate a preview like you would to a website with suitable metadata. And let any third-party clients know they can fetch the message themselves and not hand it off to the web browser.</p>\n<p>4. If you really want to keep some friction in the quoting process, don’t add a button, but add the preview/embed on display.</p>\n<p>5. Link previews should be generated and displayed during composition, without interrupting typing. Whether the preview gets federated along with the post or re-generated at the destination is another debate.</p>\n<p>6. User discovery on third party clients needs work, and autocompletion really needs to be part of the composition UI.</p>\n<p>7. Remote interactions on posts that aren’t in the app *really* need work. </p>\n<p>8. Basic interactions (profile, follow, like, boost, reply) should Just Work(tm) between different federated software, even if they don’t recognize all the same post types or display them nicely. You can always fall back to displaying a link to the source, like Mastodon does with Article types.</p>\n<p>9. Mastodon ought to at least *try* to display Articles as long as the formatting isn’t too complex or the length too long.</p>\n<p>10. Mastodon’s “Your admin can read your DMs” notice should make it clear that *most* messaging software has this issue, not just Mastodon.</p>\n<p>11. Federated hashtag searching is also more important than the inconvenience I used to think it was.</p>\n<div class=\"lj-moods-meta\"></div>",
+                "value": "The Twitter-to-Mastodon migration is like going from beta testing the Fediverse to production. Just like a public beta always turns up issues that were missed during development, when going to production you suddenly have a *huge* pool of new users who are going to use the system in ways you didn’t anticipate and haven’t already accustomed themselves to its quirks.\nAnd that turns up a lot more things you need to fix!\nSome thoughts on features/user experience for Mastodon and other Fediverse software, based on usage and discussions I’ve seen lately:\n1. Missing replies aren’t just an inconvenience, they’re a big problem. Instances really do need to reach out and check for additional replies when someone views a post. I’m not sure how to balance the extra network traffic. Maybe just have a manual “check for more replies” button.\n2. Quoting is better than screenshotting. I can read quotes on any size screen. So can screen readers.\n3. Lack of quoting hasn’t prevented flame wars or dogpiling, and it there’s no indication it reduced them either. If you don’t want to embed an entire post, at least generate a preview like you would to a website with suitable metadata. And let any third-party clients know they can fetch the message themselves and not hand it off to the web browser.\n4. If you really want to keep some friction in the quoting process, don’t add a button, but add the preview/embed on display.\n5. Link previews should be generated and displayed during composition, without interrupting typing. Whether the preview gets federated along with the post or re-generated at the destination is another debate.\n6. User discovery on third party clients needs work, and autocompletion really needs to be part of the composition UI.\n7. Remote interactions on posts that aren’t in the app *really* need work. \n8. Basic interactions (profile, follow, like, boost, reply) should Just Work(tm) between different federated software, even if they don’t recognize all the same post types or display them nicely. You can always fall back to displaying a link to the source, like Mastodon does with Article types.\n9. Mastodon ought to at least *try* to display Articles as long as the formatting isn’t too complex or the length too long.\n10. Mastodon’s “Your admin can read your DMs” notice should make it clear that *most* messaging software has this issue, not just Mastodon.\n11. Federated hashtag searching is also more important than the inconvenience I used to think it was."
+              }
+            ],
+            "category": [
+              "design",
+              "Fediverse",
+              "Mastodon",
+              "social networking",
+              "UI",
+              "ux"
+            ],
+            "syndication": [
+              "https://wandering.shop/@KelsonV/109565787100748804"
+            ]
+          },
+          "id": "post-82584"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               "Must be Tuesday"
             ],
             "url": [
@@ -268,97 +334,6 @@
             ]
           },
           "id": "post-82134"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "DS…What?",
-              "Amusing truncation of the day:\n“Daylight Savings Tin”\nI like the idea of a tin box you can keep daylight in!"
-            ],
-            "url": [
-              "https://hyperborea.org/journal/2022/11/ds-what/",
-              "https://hyperborea.org/journal/2022/11/ds-what/",
-              "https://hyperborea.org/journal/2022/11/ds-what/"
-            ],
-            "updated": [
-              "2022-11-03T18:42:47-07:00",
-              "2022-11-03T18:42:47-07:00"
-            ],
-            "published": [
-              "2022-11-03T18:42:47-07:00",
-              "2022-11-03T18:42:47-07:00"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "photo": [
-                    {
-                      "value": "https://secure.gravatar.com/avatar/7d976a58ee7858db8ed467d35e91d5de?s=90&d=wavatar&r=g",
-                      "srcset": {
-                        "2x": "https://secure.gravatar.com/avatar/7d976a58ee7858db8ed467d35e91d5de?s=180&d=wavatar&r=g"
-                      },
-                      "alt": ""
-                    }
-                  ],
-                  "url": [
-                    "https://hyperborea.org/journal/author/kelson/"
-                  ],
-                  "uid": [
-                    "https://hyperborea.org/journal/author/kelson/"
-                  ],
-                  "name": [
-                    "Kelson"
-                  ]
-                },
-                "value": "Kelson"
-              },
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "photo": [
-                    {
-                      "value": "https://secure.gravatar.com/avatar/7d976a58ee7858db8ed467d35e91d5de?s=90&d=wavatar&r=g",
-                      "srcset": {
-                        "2x": "https://secure.gravatar.com/avatar/7d976a58ee7858db8ed467d35e91d5de?s=180&d=wavatar&r=g"
-                      },
-                      "alt": ""
-                    }
-                  ],
-                  "url": [
-                    "https://hyperborea.org/journal/author/kelson/"
-                  ],
-                  "uid": [
-                    "https://hyperborea.org/journal/author/kelson/"
-                  ],
-                  "name": [
-                    "Kelson"
-                  ]
-                },
-                "value": "Kelson"
-              }
-            ],
-            "content": [
-              {
-                "html": "<p>Amusing truncation of the day:</p>\n<p>“Daylight Savings Tin”</p>\n<p>I like the idea of a tin box you can keep daylight in!</p>\n<div class=\"lj-moods-meta\"></div>",
-                "value": "Amusing truncation of the day:\n“Daylight Savings Tin”\nI like the idea of a tin box you can keep daylight in!"
-              }
-            ],
-            "summary": [
-              "Amusing truncation of the day:\n“Daylight Savings Tin”\nI like the idea of a tin box you can keep daylight in!"
-            ],
-            "syndication": [
-              "https://wandering.shop/@KelsonV/109282791177147202"
-            ]
-          },
-          "id": "post-82111"
         }
       ]
     }
@@ -413,11 +388,11 @@
       "https://hyperborea.org/journal/page/2/"
     ],
     "bookmark": [
+      "https://hyperborea.org/journal/2022/12/fediverse-beta/",
       "https://hyperborea.org/journal/2022/12/must-be-tuesday/",
       "https://hyperborea.org/journal/2022/11/mastodon-ifttt-update/",
       "https://hyperborea.org/journal/2022/11/saucer-country/",
-      "https://hyperborea.org/journal/2022/11/mastodon-what/",
-      "https://hyperborea.org/journal/2022/11/ds-what/"
+      "https://hyperborea.org/journal/2022/11/mastodon-what/"
     ],
     "author": [
       "https://hyperborea.org/journal/author/kelson/"
@@ -427,24 +402,26 @@
       "https://hyperborea.org/journal/category/entertainment/humor/",
       "https://hyperborea.org/journal/category/tech/computer-security/",
       "https://hyperborea.org/journal/category/entertainment/comics/",
-      "https://hyperborea.org/journal/category/entertainment/sci-fifantasy/",
-      "https://hyperborea.org/journal/category/entertainment/humor/you-must-be-mistaken/"
+      "https://hyperborea.org/journal/category/entertainment/sci-fifantasy/"
     ],
     "tag": [
       "https://hyperborea.org/journal/category/tech/computersinternet/",
+      "https://hyperborea.org/journal/tag/design/",
+      "https://hyperborea.org/journal/tag/fediverse/",
+      "https://hyperborea.org/journal/tag/mastodon/",
+      "https://hyperborea.org/journal/tag/social-networking/",
+      "https://hyperborea.org/journal/tag/ui/",
+      "https://hyperborea.org/journal/tag/ux/",
       "https://hyperborea.org/journal/category/entertainment/humor/",
       "https://hyperborea.org/journal/tag/upgrade/",
       "https://hyperborea.org/journal/category/tech/computer-security/",
       "https://hyperborea.org/journal/tag/ifttt/",
-      "https://hyperborea.org/journal/tag/mastodon/",
       "https://hyperborea.org/journal/category/entertainment/comics/",
       "https://hyperborea.org/journal/category/entertainment/sci-fifantasy/",
       "https://hyperborea.org/journal/tag/campaign/",
       "https://hyperborea.org/journal/tag/crowdfunding/",
       "https://hyperborea.org/journal/tag/saucer-country/",
-      "https://hyperborea.org/journal/tag/ufo/",
-      "https://hyperborea.org/journal/tag/social-networking/",
-      "https://hyperborea.org/journal/category/entertainment/humor/you-must-be-mistaken/"
+      "https://hyperborea.org/journal/tag/ufo/"
     ],
     "me": [
       "https://kvibber.com/",
@@ -555,12 +532,12 @@
         "apple-touch-icon"
       ]
     },
-    "https://hyperborea.org/journal/2022/12/must-be-tuesday/": {
+    "https://hyperborea.org/journal/2022/12/fediverse-beta/": {
       "rels": [
         "bookmark"
       ],
-      "title": "Permalink to Must be Tuesday",
-      "text": "Must be Tuesday"
+      "title": "Permalink to Fediverse: Beta to Production",
+      "text": "Fediverse: Beta to Production"
     },
     "https://hyperborea.org/journal/author/kelson/": {
       "rels": [
@@ -575,6 +552,49 @@
         "tag"
       ],
       "text": "Computers/Internet"
+    },
+    "https://hyperborea.org/journal/tag/design/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "design"
+    },
+    "https://hyperborea.org/journal/tag/fediverse/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Fediverse"
+    },
+    "https://hyperborea.org/journal/tag/mastodon/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Mastodon"
+    },
+    "https://hyperborea.org/journal/tag/social-networking/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "social networking"
+    },
+    "https://hyperborea.org/journal/tag/ui/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "UI"
+    },
+    "https://hyperborea.org/journal/tag/ux/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "ux"
+    },
+    "https://hyperborea.org/journal/2022/12/must-be-tuesday/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to Must be Tuesday",
+      "text": "Must be Tuesday"
     },
     "https://hyperborea.org/journal/category/entertainment/humor/": {
       "rels": [
@@ -608,12 +628,6 @@
         "tag"
       ],
       "text": "IFTTT"
-    },
-    "https://hyperborea.org/journal/tag/mastodon/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Mastodon"
     },
     "https://hyperborea.org/journal/2022/11/saucer-country/": {
       "rels": [
@@ -666,26 +680,6 @@
       ],
       "title": "Permalink to Wrapping Your Head Around Mastodon",
       "text": "Wrapping Your Head Around Mastodon"
-    },
-    "https://hyperborea.org/journal/tag/social-networking/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "social networking"
-    },
-    "https://hyperborea.org/journal/2022/11/ds-what/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Permalink to DS…What?",
-      "text": "DS…What?"
-    },
-    "https://hyperborea.org/journal/category/entertainment/humor/you-must-be-mistaken/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "You Must be Mistaken"
     },
     "https://kvibber.com/": {
       "rels": [

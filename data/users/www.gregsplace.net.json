@@ -1,44 +1,113 @@
 {
-  "items": [],
+  "items": [
+    {
+      "type": [
+        "h-feed"
+      ],
+      "properties": {
+        "name": [
+          "Greg's Place"
+        ],
+        "url": [
+          "https://www.gregsplace.net/"
+        ],
+        "summary": [
+          "The Personal Space of Gregory Lopez"
+        ],
+        "content": [
+          {
+            "html": "The Personal Space of Gregory Lopez",
+            "value": "The Personal Space of Gregory Lopez"
+          }
+        ],
+        "entry-title": [
+          "Nothing Found"
+        ],
+        "entry-content": [
+          {
+            "html": "<p>It seems we can’t find what you’re looking for. Perhaps searching can help.</p>\n\t\t\t\t\t\t<form itemprop=\"potentialAction\" itemscope itemtype=\"http://schema.org/SearchAction\" role=\"search\" method=\"get\" class=\"search-form\" action=\"https://www.gregsplace.net/\">\n\t\t\t\t<label>\n\t\t\t\t\t<span class=\"screen-reader-text\">Search for:</span>\n\t\t\t\t\t<input type=\"search\" itemprop=\"query-input\" class=\"search-field\" placeholder=\"Search …\" value=\"\" name=\"s\">\n\t\t\t\t</label>\n\t\t\t\t<input type=\"submit\" class=\"search-submit\" value=\"Search\">\n\t\t\t<meta itemprop=\"target\" content=\"https://www.gregsplace.net/?s={search} \">\n</form>",
+            "value": "It seems we can’t find what you’re looking for. Perhaps searching can help.\n\t\t\t\t\t\t\n\t\t\t\t\n\t\t\t\t\tSearch for:"
+          }
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "url": [
+                "https://www.gregsplace.net/",
+                "https://github.com/enigma98168",
+                "https://twitter.com/gregsplace_net",
+                "https://www.facebook.com/enigma98168",
+                "https://mastodon.world/@theblindenigma",
+                "https://discord.com/users/877529484083998751",
+                "https://reddit.com/u/enigma98168",
+                "https://open.spotify.com/user/31z7625fsyaapp6x2sq5xphdg5pq?si=c823d9114aaf40e2",
+                "https://telegram.me/enigma98168",
+                "https://youtube.com/@enigma98168"
+              ],
+              "uid": [
+                "https://www.gregsplace.net/"
+              ],
+              "photo": [
+                {
+                  "value": "https://secure.gravatar.com/avatar/f88948a47d80a753c27d46a9bd6d3a36?s=125&d=default&r=pg",
+                  "srcset": {
+                    "2x": "https://secure.gravatar.com/avatar/f88948a47d80a753c27d46a9bd6d3a36?s=250&d=default&r=pg"
+                  },
+                  "alt": ""
+                }
+              ],
+              "name": [
+                "Gregory Lopez"
+              ],
+              "email": [
+                "mailto:greg@gregsplace.net"
+              ],
+              "tel": [
+                "+12064882148"
+              ],
+              "note": [
+                ""
+              ]
+            },
+            "children": [
+              {
+                "type": [
+                  "h-adr"
+                ],
+                "properties": {
+                  "locality": [
+                    "Burien"
+                  ],
+                  "region": [
+                    "Washington"
+                  ]
+                }
+              }
+            ],
+            "value": "https://www.gregsplace.net/"
+          }
+        ]
+      }
+    }
+  ],
   "rels": {
     "profile": [
-      "http://gmpg.org/xfn/11"
-    ],
-    "dns-prefetch": [
-      "https://static.addtoany.com/",
-      "https://secure.gravatar.com/",
-      "https://fonts.googleapis.com/",
-      "https://i0.wp.com/",
-      "https://c0.wp.com/",
-      "https://v0.wordpress.com/",
-      "https://jetpack.wordpress.com/",
-      "https://s0.wp.com/",
-      "https://public-api.wordpress.com/",
-      "https://0.gravatar.com/",
-      "https://1.gravatar.com/",
-      "https://2.gravatar.com/"
-    ],
-    "preconnect": [
-      "https://fonts.gstatic.com/"
+      "http://microformats.org/profile/specs",
+      "http://microformats.org/profile/hatom"
     ],
     "alternate": [
       "https://www.gregsplace.net/feed/",
       "https://www.gregsplace.net/comments/feed/"
     ],
-    "me": [
-      "https://mastodon.world/@theblindenigma"
-    ],
     "stylesheet": [
-      "https://c0.wp.com/c/6.1.1/wp-includes/css/dist/block-library/style.min.css",
-      "https://c0.wp.com/c/6.1.1/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css",
-      "https://c0.wp.com/c/6.1.1/wp-includes/js/mediaelement/wp-mediaelement.min.css",
-      "https://c0.wp.com/c/6.1.1/wp-includes/css/classic-themes.min.css",
-      "https://www.gregsplace.net/wp-content/plugins/add-to-any/addtoany.min.css?ver=1.16",
-      "https://fonts.googleapis.com/css?family=Fira+Sans%3A400%2C300&subset=latin&ver=2.5.2",
-      "https://www.gregsplace.net/wp-content/themes/modern/assets/fonts/genericons-neue/genericons-neue.css?ver=2.5.2",
-      "https://www.gregsplace.net/wp-content/themes/modern/assets/css/main.css?ver=2.5.2",
-      "https://www.gregsplace.net/wp-content/themes/modern/assets/css/custom-styles.css?ver=2.5.2",
-      "https://c0.wp.com/p/jetpack/11.6/css/jetpack.css"
+      "https://www.gregsplace.net/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1",
+      "https://www.gregsplace.net/wp-includes/css/classic-themes.min.css?ver=1",
+      "https://www.gregsplace.net/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
+      "https://www.gregsplace.net/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3",
+      "https://www.gregsplace.net/wp-content/themes/sempress/style.css?ver=6.1.1"
     ],
     "https://api.w.org/": [
       "https://www.gregsplace.net/wp-json/"
@@ -50,100 +119,61 @@
       "https://www.gregsplace.net/wp-includes/wlwmanifest.xml"
     ],
     "shortlink": [
-      "https://wp.me/c9PtE"
+      "https://www.gregsplace.net/"
     ],
-    "icon": [
-      "https://i0.wp.com/www.gregsplace.net/wp-content/uploads/2022/12/wp-1672235957023.jpg?fit=32%2C32&ssl=1",
-      "https://i0.wp.com/www.gregsplace.net/wp-content/uploads/2022/12/wp-1672235957023.jpg?fit=192%2C192&ssl=1"
+    "authorization_endpoint": [
+      "https://www.gregsplace.net/wp-json/indieauth/1.0/auth"
     ],
-    "apple-touch-icon": [
-      "https://i0.wp.com/www.gregsplace.net/wp-content/uploads/2022/12/wp-1672235957023.jpg?fit=180%2C180&ssl=1"
+    "token_endpoint": [
+      "https://www.gregsplace.net/wp-json/indieauth/1.0/token"
     ],
-    "noopener": [
-      "https://discord.com/users/877529484083998751",
-      "https://facebook.com/enigma98168",
+    "indieauth-metadata": [
+      "https://www.gregsplace.net/wp-json/indieauth/1.0/metadata"
+    ],
+    "me": [
       "https://github.com/enigma98168",
+      "https://twitter.com/gregsplace_net",
+      "https://www.facebook.com/enigma98168",
       "https://mastodon.world/@theblindenigma",
+      "https://discord.com/users/877529484083998751",
       "https://reddit.com/u/enigma98168",
       "https://open.spotify.com/user/31z7625fsyaapp6x2sq5xphdg5pq?si=c823d9114aaf40e2",
       "https://telegram.me/enigma98168",
-      "https://twitter.com/gregsplace_net",
-      "https://youtube.com/@enigma98168"
+      "https://youtube.com/@enigma98168",
+      "mailto:greg@gregsplace.net"
     ],
-    "nofollow": [
-      "https://www.webmandesign.eu/portfolio/modern-wordpress-theme/",
-      "https://wordpress.org/"
+    "pgpkey": [
+      "https://github.com/enigma98168.gpg"
+    ],
+    "icon": [
+      "https://www.gregsplace.net/wp-content/uploads/2022/12/wp-1672235957023-150x150.jpg",
+      "https://www.gregsplace.net/wp-content/uploads/2022/12/wp-1672235957023-300x300.jpg"
+    ],
+    "apple-touch-icon": [
+      "https://www.gregsplace.net/wp-content/uploads/2022/12/wp-1672235957023-300x300.jpg"
+    ],
+    "micropub_media": [
+      "https://www.gregsplace.net/wp-json/micropub/1.0/media"
+    ],
+    "micropub": [
+      "https://www.gregsplace.net/wp-json/micropub/1.0/endpoint"
+    ],
+    "home": [
+      "https://www.gregsplace.net/"
+    ],
+    "generator": [
+      "http://wordpress.org/"
     ]
   },
   "rel-urls": {
-    "http://gmpg.org/xfn/11": {
+    "http://microformats.org/profile/specs": {
       "rels": [
         "profile"
       ]
     },
-    "https://static.addtoany.com/": {
+    "http://microformats.org/profile/hatom": {
       "rels": [
-        "dns-prefetch"
-      ]
-    },
-    "https://secure.gravatar.com/": {
-      "rels": [
-        "dns-prefetch"
-      ]
-    },
-    "https://fonts.googleapis.com/": {
-      "rels": [
-        "dns-prefetch"
-      ]
-    },
-    "https://i0.wp.com/": {
-      "rels": [
-        "dns-prefetch"
-      ]
-    },
-    "https://c0.wp.com/": {
-      "rels": [
-        "dns-prefetch"
-      ]
-    },
-    "https://v0.wordpress.com/": {
-      "rels": [
-        "dns-prefetch"
-      ]
-    },
-    "https://jetpack.wordpress.com/": {
-      "rels": [
-        "dns-prefetch"
-      ]
-    },
-    "https://s0.wp.com/": {
-      "rels": [
-        "dns-prefetch"
-      ]
-    },
-    "https://public-api.wordpress.com/": {
-      "rels": [
-        "dns-prefetch"
-      ]
-    },
-    "https://0.gravatar.com/": {
-      "rels": [
-        "dns-prefetch"
-      ]
-    },
-    "https://1.gravatar.com/": {
-      "rels": [
-        "dns-prefetch"
-      ]
-    },
-    "https://2.gravatar.com/": {
-      "rels": [
-        "dns-prefetch"
-      ]
-    },
-    "https://fonts.gstatic.com/": {
-      "rels": [
-        "preconnect"
+        "profile"
       ]
     },
     "https://www.gregsplace.net/feed/": {
@@ -160,70 +190,40 @@
       "title": "Greg's Place » Comments Feed",
       "type": "application/rss+xml"
     },
-    "https://mastodon.world/@theblindenigma": {
-      "rels": [
-        "me"
-      ]
-    },
-    "https://c0.wp.com/c/6.1.1/wp-includes/css/dist/block-library/style.min.css": {
+    "https://www.gregsplace.net/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1": {
       "rels": [
         "stylesheet"
       ],
-      "media": "all"
+      "media": "all",
+      "type": "text/css"
     },
-    "https://c0.wp.com/c/6.1.1/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css": {
+    "https://www.gregsplace.net/wp-includes/css/classic-themes.min.css?ver=1": {
       "rels": [
         "stylesheet"
       ],
-      "media": "all"
+      "media": "all",
+      "type": "text/css"
     },
-    "https://c0.wp.com/c/6.1.1/wp-includes/js/mediaelement/wp-mediaelement.min.css": {
+    "https://www.gregsplace.net/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7": {
       "rels": [
         "stylesheet"
       ],
-      "media": "all"
+      "media": "all",
+      "type": "text/css"
     },
-    "https://c0.wp.com/c/6.1.1/wp-includes/css/classic-themes.min.css": {
+    "https://www.gregsplace.net/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3": {
       "rels": [
         "stylesheet"
       ],
-      "media": "all"
+      "media": "all",
+      "type": "text/css"
     },
-    "https://www.gregsplace.net/wp-content/plugins/add-to-any/addtoany.min.css?ver=1.16": {
+    "https://www.gregsplace.net/wp-content/themes/sempress/style.css?ver=6.1.1": {
       "rels": [
         "stylesheet"
       ],
-      "media": "all"
-    },
-    "https://fonts.googleapis.com/css?family=Fira+Sans%3A400%2C300&subset=latin&ver=2.5.2": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "screen"
-    },
-    "https://www.gregsplace.net/wp-content/themes/modern/assets/fonts/genericons-neue/genericons-neue.css?ver=2.5.2": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "screen"
-    },
-    "https://www.gregsplace.net/wp-content/themes/modern/assets/css/main.css?ver=2.5.2": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "screen"
-    },
-    "https://www.gregsplace.net/wp-content/themes/modern/assets/css/custom-styles.css?ver=2.5.2": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "screen"
-    },
-    "https://c0.wp.com/p/jetpack/11.6/css/jetpack.css": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "all"
+      "media": "all",
+      "type": "text/css"
     },
     "https://www.gregsplace.net/wp-json/": {
       "rels": [
@@ -243,83 +243,105 @@
       ],
       "type": "application/wlwmanifest+xml"
     },
-    "https://wp.me/c9PtE": {
+    "https://www.gregsplace.net/": {
       "rels": [
         "shortlink"
       ]
     },
-    "https://i0.wp.com/www.gregsplace.net/wp-content/uploads/2022/12/wp-1672235957023.jpg?fit=32%2C32&ssl=1": {
+    "https://www.gregsplace.net/wp-json/indieauth/1.0/auth": {
       "rels": [
-        "icon"
+        "authorization_endpoint"
       ]
     },
-    "https://i0.wp.com/www.gregsplace.net/wp-content/uploads/2022/12/wp-1672235957023.jpg?fit=192%2C192&ssl=1": {
+    "https://www.gregsplace.net/wp-json/indieauth/1.0/token": {
       "rels": [
-        "icon"
+        "token_endpoint"
       ]
     },
-    "https://i0.wp.com/www.gregsplace.net/wp-content/uploads/2022/12/wp-1672235957023.jpg?fit=180%2C180&ssl=1": {
+    "https://www.gregsplace.net/wp-json/indieauth/1.0/metadata": {
       "rels": [
-        "apple-touch-icon"
+        "indieauth-metadata"
+      ]
+    },
+    "https://github.com/enigma98168": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://twitter.com/gregsplace_net": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://www.facebook.com/enigma98168": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://mastodon.world/@theblindenigma": {
+      "rels": [
+        "me"
       ]
     },
     "https://discord.com/users/877529484083998751": {
       "rels": [
-        "noopener"
-      ],
-      "text": "Discord  "
-    },
-    "https://facebook.com/enigma98168": {
-      "rels": [
-        "noopener"
-      ],
-      "text": "Facebook  "
-    },
-    "https://github.com/enigma98168": {
-      "rels": [
-        "noopener"
-      ],
-      "text": "GitHub  "
+        "me"
+      ]
     },
     "https://reddit.com/u/enigma98168": {
       "rels": [
-        "noopener"
-      ],
-      "text": "ReddIt  "
+        "me"
+      ]
     },
     "https://open.spotify.com/user/31z7625fsyaapp6x2sq5xphdg5pq?si=c823d9114aaf40e2": {
       "rels": [
-        "noopener"
-      ],
-      "text": "Spotify  "
+        "me"
+      ]
     },
     "https://telegram.me/enigma98168": {
       "rels": [
-        "noopener"
-      ],
-      "text": "Telegram  "
-    },
-    "https://twitter.com/gregsplace_net": {
-      "rels": [
-        "noopener"
-      ],
-      "text": "Twitter  "
+        "me"
+      ]
     },
     "https://youtube.com/@enigma98168": {
       "rels": [
-        "noopener"
-      ],
-      "text": "YouTube  "
+        "me"
+      ]
     },
-    "https://www.webmandesign.eu/portfolio/modern-wordpress-theme/": {
+    "https://github.com/enigma98168.gpg": {
       "rels": [
-        "nofollow"
-      ],
-      "text": "Modern"
+        "pgpkey"
+      ]
     },
-    "https://wordpress.org/": {
+    "https://www.gregsplace.net/wp-content/uploads/2022/12/wp-1672235957023-150x150.jpg": {
       "rels": [
-        "nofollow"
+        "icon"
+      ]
+    },
+    "https://www.gregsplace.net/wp-content/uploads/2022/12/wp-1672235957023-300x300.jpg": {
+      "rels": [
+        "icon"
+      ]
+    },
+    "https://www.gregsplace.net/wp-json/micropub/1.0/media": {
+      "rels": [
+        "micropub_media"
+      ]
+    },
+    "https://www.gregsplace.net/wp-json/micropub/1.0/endpoint": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "mailto:greg@gregsplace.net": {
+      "rels": [
+        "me"
+      ],
+      "text": "greg@gregsplace.net"
+    },
+    "http://wordpress.org/": {
+      "rels": [
+        "generator"
       ],
       "text": "WordPress"
     }

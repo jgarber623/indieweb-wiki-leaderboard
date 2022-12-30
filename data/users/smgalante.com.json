@@ -1,10 +1,8 @@
 {
   "items": [],
   "rels": {
-    "canonical": [
-      "https://smgalante.com/"
-    ],
     "dns-prefetch": [
+      "https://www.googletagmanager.com/",
       "https://i0.wp.com/",
       "https://c0.wp.com/"
     ],
@@ -32,6 +30,9 @@
     "wlwmanifest": [
       "https://smgalante.com/wp-includes/wlwmanifest.xml"
     ],
+    "canonical": [
+      "https://smgalante.com/"
+    ],
     "shortlink": [
       "https://smgalante.com/"
     ],
@@ -50,7 +51,7 @@
       "https://www.facebook.com/sgalante",
       "https://www.instagram.com/smgalante",
       "https://mastodon.social/@smgalante",
-      "mailto:steven@smgalante.com",
+      "https://smgalante.com/cdn-cgi/l/email-protection#dba8afbeadbeb59ba8b6bcbab7bab5afbef5b8b4b6",
       "https://www.linkedin.com/in/smgalante/",
       "https://instagram.com/smgalante"
     ],
@@ -65,9 +66,9 @@
     ]
   },
   "rel-urls": {
-    "https://smgalante.com/": {
+    "https://www.googletagmanager.com/": {
       "rels": [
-        "canonical"
+        "dns-prefetch"
       ]
     },
     "https://i0.wp.com/": {
@@ -154,6 +155,11 @@
       ],
       "type": "application/wlwmanifest+xml"
     },
+    "https://smgalante.com/": {
+      "rels": [
+        "canonical"
+      ]
+    },
     "https://smgalante.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsmgalante.com%2F": {
       "rels": [
         "alternate"
@@ -216,7 +222,7 @@
         "micropub"
       ]
     },
-    "mailto:steven@smgalante.com": {
+    "https://smgalante.com/cdn-cgi/l/email-protection#dba8afbeadbeb59ba8b6bcbab7bab5afbef5b8b4b6": {
       "rels": [
         "me"
       ],

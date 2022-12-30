@@ -650,7 +650,9 @@
     ],
     "alternate": [
       "https://dymersion.com/feed/",
-      "https://dymersion.com/comments/feed/"
+      "https://dymersion.com/comments/feed/",
+      "https://dymersion.com/feed/as1/",
+      "https://dymersion.com/comments/feed/as1/"
     ],
     "stylesheet": [
       "https://dymersion.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1",
@@ -782,6 +784,20 @@
       ],
       "title": "Dymersion » Comments Feed",
       "type": "application/rss+xml"
+    },
+    "https://dymersion.com/feed/as1/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Dymersion » Activity-Streams Feed",
+      "type": "application/stream+json"
+    },
+    "https://dymersion.com/comments/feed/as1/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Dymersion » Activity-Streams Comments Feed",
+      "type": "application/stream+json"
     },
     "https://dymersion.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1": {
       "rels": [
