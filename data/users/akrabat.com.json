@@ -6,6 +6,17 @@
       ],
       "properties": {
         "name": [
+          "2022 in pictures\n                                \n                    We've reached the end of 2022. We're a little bit further from the COVID-19 pandemic and I've travelled more this year too. A bitter-sweet year when a close friend died and I managed to catch COVID-19 again, but fortunately wasn't as affected as last year and recovered more quickly. I continued to take a photo every day though my Project 365 which allows me to appreciate what happened during this year of my life. January… continue reading.\n                    Posted on\n                            31 December 2022                            in Me, Photography, Year in Pictures\n\n                                                    \n                                Leave a comment"
+        ]
+      },
+      "id": "post-6498"
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
           "Only display body on error with curl\n                                \n                    Sometimes, I only want to display the response from a curl request if it errors – i.e. the status code is 400 or higher. With curl 7.76 or greater this is done using the –fail-with-body parameter: curl -s –fail-with-body \\ https://api.example.com/foo/${id} \\ -H \"Content-Type: application/json\" \\ –data \"@data.json\" On success, the return code ($?) is 0 and on failure the body is output with the return code set to 22. Prior to 7.76, you can… continue reading.\n                    Posted on\n                            28 December 2022                            in Development\n\n                                                    \n                                Leave a comment"
         ]
       },
@@ -101,17 +112,6 @@
     },
     {
       "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "name": [
-          "Setting HTTP status code based on Exception in Slim 4\n                                \n                    One thing that's quite convenient is to be able to throw an exception with a valid HTTP code set and have that code sent to the client. For example, you may have: throw new \\RuntimeException(\"Not Found\", 404); With the standard Slim 4 error handler, this response is sent to the client: $ curl -i -H \"Accept:application/json\" http://localhost:8888 HTTP/1.1 500 Internal Server Error Host: localhost:8888 Content-type: application/json { \"message\": \"Slim Application Error\" } Ideally we want… continue reading.\n                    Posted on\n                            19 July 2021                            in PHP, Slim Framework, Slim Framework 4\n\n                                                    \n                                Leave a comment"
-        ]
-      },
-      "id": "post-6404"
-    },
-    {
-      "type": [
         "h-card"
       ],
       "properties": {
@@ -171,6 +171,7 @@
       "https://www.instagram.com/akrabatic"
     ],
     "bookmark": [
+      "https://akrabat.com/2022-in-pictures/",
       "https://akrabat.com/only-display-body-on-error-with-curl/",
       "https://akrabat.com/override-nginx-media-type-for-a-url/",
       "https://akrabat.com/installing-xdebug-on-php-8-1-installed-with-homebrew/",
@@ -179,34 +180,31 @@
       "https://akrabat.com/2021-in-pictures/",
       "https://akrabat.com/add-touchid-authentication-to-sudo/",
       "https://akrabat.com/quick-script-to-recreate-my-python-virtualenv/",
-      "https://akrabat.com/changelog-generator-for-github-milestones/",
-      "https://akrabat.com/setting-http-status-code-based-on-exception-in-slim-4/"
+      "https://akrabat.com/changelog-generator-for-github-milestones/"
     ],
     "category": [
+      "https://akrabat.com/category/me/",
+      "https://akrabat.com/category/photography/",
+      "https://akrabat.com/category/year-in-pictures/",
       "https://akrabat.com/category/development/",
       "https://akrabat.com/category/web/",
       "https://akrabat.com/category/php/",
       "https://akrabat.com/category/software/",
       "https://akrabat.com/category/rst2pdf/",
-      "https://akrabat.com/category/me/",
-      "https://akrabat.com/category/year-in-pictures/",
       "https://akrabat.com/category/computing/",
-      "https://akrabat.com/category/python/",
-      "https://akrabat.com/category/slim-framework/",
-      "https://akrabat.com/category/slim-framework-4/"
+      "https://akrabat.com/category/python/"
     ],
     "tag": [
+      "https://akrabat.com/category/me/",
+      "https://akrabat.com/category/photography/",
+      "https://akrabat.com/category/year-in-pictures/",
       "https://akrabat.com/category/development/",
       "https://akrabat.com/category/web/",
       "https://akrabat.com/category/php/",
       "https://akrabat.com/category/software/",
       "https://akrabat.com/category/rst2pdf/",
-      "https://akrabat.com/category/me/",
-      "https://akrabat.com/category/year-in-pictures/",
       "https://akrabat.com/category/computing/",
-      "https://akrabat.com/category/python/",
-      "https://akrabat.com/category/slim-framework/",
-      "https://akrabat.com/category/slim-framework-4/"
+      "https://akrabat.com/category/python/"
     ]
   },
   "rel-urls": {
@@ -329,6 +327,33 @@
         "me"
       ]
     },
+    "https://akrabat.com/2022-in-pictures/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "2022 in pictures"
+    },
+    "https://akrabat.com/category/me/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Me"
+    },
+    "https://akrabat.com/category/photography/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Photography"
+    },
+    "https://akrabat.com/category/year-in-pictures/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Year in Pictures"
+    },
     "https://akrabat.com/only-display-body-on-error-with-curl/": {
       "rels": [
         "bookmark"
@@ -400,20 +425,6 @@
       ],
       "text": "2021 in Pictures"
     },
-    "https://akrabat.com/category/me/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "Me"
-    },
-    "https://akrabat.com/category/year-in-pictures/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "Year in Pictures"
-    },
     "https://akrabat.com/add-touchid-authentication-to-sudo/": {
       "rels": [
         "bookmark"
@@ -445,26 +456,6 @@
         "bookmark"
       ],
       "text": "Changelog generator for GitHub milestones"
-    },
-    "https://akrabat.com/setting-http-status-code-based-on-exception-in-slim-4/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Setting HTTP status code based on Exception in Slim 4"
-    },
-    "https://akrabat.com/category/slim-framework/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "Slim Framework"
-    },
-    "https://akrabat.com/category/slim-framework-4/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "Slim Framework 4"
     },
     "https://akrabat.com/": {
       "rels": [

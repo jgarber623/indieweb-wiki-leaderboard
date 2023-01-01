@@ -1,164 +1,69 @@
 {
   "items": [],
   "rels": {
-    "stylesheet": [
-      "https://cdn.icyphox.sh/fonts/inter.css",
-      "https://dym.sh/style.css?v=6ef673a70949175c"
-    ],
-    "manifest": [
-      "https://dym.sh/manifest.webmanifest"
-    ],
     "icon": [
+      "https://dym.sh/favicon.ico",
       "https://dym.sh/icon.png"
     ],
-    "noreferrer": [
-      "https://dym.sh/u/dym",
-      "https://dym.sh/u/dym/h/JV6CsLwBHCnM3YjhBd",
-      "https://dym.sh/u/dym/h/1Tc92XJWLg9xCDP2XM",
-      "https://dym.sh/o/fedi",
-      "https://weibo.com/u/7521361627",
-      "https://dym.sh/u/dym/h/fMF7zdG3CzCbS91dn3",
-      "https://dym.sh/u/dym/h/4c3xzRNdJ2YFkxb1dV",
-      "https://honk.tedunangst.com/u/tedu/h/GmKVWZd43hq86jbT1Q",
-      "https://honk.tedunangst.com/u/tedu",
-      "https://dym.sh/u/dym/h/Y6ySZvyMlYnDtPB1KD",
-      "https://h.icyphox.sh/u/icy/h/3WpFD36Mz3X72cP3Lp",
-      "https://h.icyphox.sh/u/icy",
-      "https://dym.sh/u/dym/h/N8873w22hj53pn4zw7",
-      "https://twitter.com/dym_sh/status/1608470270230028296",
-      "https://dym.sh/o/self",
-      "https://dym.sh/u/dym/h/64kTk6Nj13Qx6BRTbz",
-      "https://dym.sh/u/dym/h/436s47Xw4D1SjHz9Mw",
-      "https://dym.sh/u/dym/h/Ppppb1TW9z31sz65kM"
+    "apple-touch-icon": [
+      "https://dym.sh/icon.png"
+    ],
+    "alternate": [
+      "https://dym.sh/feed.rss",
+      "https://dym.sh/podcast.rss"
+    ],
+    "canonical": [
+      "https://dym.sh/"
+    ],
+    "me": [
+      "mailto:re@dym.sh"
+    ],
+    "stylesheet": [
+      "https://dym.sh/style.css"
     ]
   },
   "rel-urls": {
-    "https://cdn.icyphox.sh/fonts/inter.css": {
+    "https://dym.sh/favicon.ico": {
       "rels": [
-        "stylesheet"
-      ]
-    },
-    "https://dym.sh/style.css?v=6ef673a70949175c": {
-      "rels": [
-        "stylesheet"
-      ]
-    },
-    "https://dym.sh/manifest.webmanifest": {
-      "rels": [
-        "manifest"
-      ]
+        "icon"
+      ],
+      "type": "image/png"
     },
     "https://dym.sh/icon.png": {
       "rels": [
         "icon"
+      ],
+      "type": "image/png"
+    },
+    "https://dym.sh/feed.rss": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "global feed",
+      "type": "application/rss+xml"
+    },
+    "https://dym.sh/podcast.rss": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "podcast only",
+      "type": "application/rss+xml"
+    },
+    "https://dym.sh/": {
+      "rels": [
+        "canonical"
       ]
     },
-    "https://dym.sh/u/dym": {
+    "mailto:re@dym.sh": {
       "rels": [
-        "noreferrer"
+        "me"
       ]
     },
-    "https://dym.sh/u/dym/h/JV6CsLwBHCnM3YjhBd": {
+    "https://dym.sh/style.css": {
       "rels": [
-        "noreferrer"
+        "stylesheet"
       ],
-      "text": "honked"
-    },
-    "https://dym.sh/u/dym/h/1Tc92XJWLg9xCDP2XM": {
-      "rels": [
-        "noreferrer"
-      ],
-      "text": "honked"
-    },
-    "https://dym.sh/o/fedi": {
-      "rels": [
-        "noreferrer"
-      ],
-      "text": "#fedi"
-    },
-    "https://weibo.com/u/7521361627": {
-      "rels": [
-        "noreferrer"
-      ],
-      "text": "https://weibo.com/u/7521361627"
-    },
-    "https://dym.sh/u/dym/h/fMF7zdG3CzCbS91dn3": {
-      "rels": [
-        "noreferrer"
-      ],
-      "text": "honked"
-    },
-    "https://dym.sh/u/dym/h/4c3xzRNdJ2YFkxb1dV": {
-      "rels": [
-        "noreferrer"
-      ],
-      "text": "honked back"
-    },
-    "https://honk.tedunangst.com/u/tedu/h/GmKVWZd43hq86jbT1Q": {
-      "rels": [
-        "noreferrer"
-      ],
-      "text": "parent"
-    },
-    "https://honk.tedunangst.com/u/tedu": {
-      "rels": [
-        "noreferrer"
-      ],
-      "text": "@tedu"
-    },
-    "https://dym.sh/u/dym/h/Y6ySZvyMlYnDtPB1KD": {
-      "rels": [
-        "noreferrer"
-      ],
-      "text": "honked back"
-    },
-    "https://h.icyphox.sh/u/icy/h/3WpFD36Mz3X72cP3Lp": {
-      "rels": [
-        "noreferrer"
-      ],
-      "text": "parent"
-    },
-    "https://h.icyphox.sh/u/icy": {
-      "rels": [
-        "noreferrer"
-      ],
-      "text": "@icy"
-    },
-    "https://dym.sh/u/dym/h/N8873w22hj53pn4zw7": {
-      "rels": [
-        "noreferrer"
-      ],
-      "text": "honked"
-    },
-    "https://twitter.com/dym_sh/status/1608470270230028296": {
-      "rels": [
-        "noreferrer"
-      ],
-      "text": "https://twitter.com/dym_sh/status/1608470270230028296"
-    },
-    "https://dym.sh/o/self": {
-      "rels": [
-        "noreferrer"
-      ],
-      "text": "#self"
-    },
-    "https://dym.sh/u/dym/h/64kTk6Nj13Qx6BRTbz": {
-      "rels": [
-        "noreferrer"
-      ],
-      "text": "honked"
-    },
-    "https://dym.sh/u/dym/h/436s47Xw4D1SjHz9Mw": {
-      "rels": [
-        "noreferrer"
-      ],
-      "text": "honked"
-    },
-    "https://dym.sh/u/dym/h/Ppppb1TW9z31sz65kM": {
-      "rels": [
-        "noreferrer"
-      ],
-      "text": "honked"
+      "type": "text/css"
     }
   }
 }

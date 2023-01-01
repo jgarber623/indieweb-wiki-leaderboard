@@ -4,6 +4,10 @@
     "canonical": [
       "https://www.alpower.com/"
     ],
+    "alternate": [
+      "https://www.alpower.com/feed.xml",
+      "https://www.alpower.com/feed.json"
+    ],
     "apple-touch-icon": [
       "https://www.alpower.com/favicon/apple-touch-icon.png"
     ],
@@ -38,6 +42,18 @@
       "rels": [
         "canonical"
       ]
+    },
+    "https://www.alpower.com/feed.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/rss+xml"
+    },
+    "https://www.alpower.com/feed.json": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/json"
     },
     "https://www.alpower.com/favicon/apple-touch-icon.png": {
       "rels": [

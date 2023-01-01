@@ -21,9 +21,7 @@
       "https://seucoruja.net/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
       "https://seucoruja.net/wp-content/plugins/indieweb-post-kinds/css/kind.min.css?ver=3.6.3",
       "https://seucoruja.net/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3",
-      "https://seucoruja.net/wp-content/plugins/newsletter/style.css?ver=7.5.9",
-      "https://seucoruja.net/wp-content/plugins/syndication-links/css/syn.min.css?ver=4.4.2",
-      "https://seucoruja.net/wp-content/plugins/jetpack/css/jetpack.css?ver=11.6"
+      "https://seucoruja.net/wp-content/plugins/syndication-links/css/syn.min.css?ver=4.4.2"
     ],
     "https://api.w.org/": [
       "https://seucoruja.net/wp-json/"
@@ -33,6 +31,23 @@
     ],
     "wlwmanifest": [
       "https://seucoruja.net/wp-includes/wlwmanifest.xml"
+    ],
+    "apple-touch-icon": [
+      "https://seucoruja.net/wp-content/uploads/fbrfg/apple-touch-icon.png"
+    ],
+    "icon": [
+      "https://seucoruja.net/wp-content/uploads/fbrfg/favicon-32x32.png",
+      "https://seucoruja.net/wp-content/uploads/fbrfg/favicon-16x16.png",
+      "https://seucoruja.net/wp-content/uploads/fbrfg/favicon.ico"
+    ],
+    "manifest": [
+      "https://seucoruja.net/wp-content/uploads/fbrfg/site.webmanifest"
+    ],
+    "mask-icon": [
+      "https://seucoruja.net/wp-content/uploads/fbrfg/safari-pinned-tab.svg"
+    ],
+    "shortcut": [
+      "https://seucoruja.net/wp-content/uploads/fbrfg/favicon.ico"
     ],
     "micropub_media": [
       "https://seucoruja.net/wp-json/micropub/1.0/media"
@@ -83,19 +98,7 @@
       ],
       "media": "all"
     },
-    "https://seucoruja.net/wp-content/plugins/newsletter/style.css?ver=7.5.9": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "all"
-    },
     "https://seucoruja.net/wp-content/plugins/syndication-links/css/syn.min.css?ver=4.4.2": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "all"
-    },
-    "https://seucoruja.net/wp-content/plugins/jetpack/css/jetpack.css?ver=11.6": {
       "rels": [
         "stylesheet"
       ],
@@ -118,6 +121,39 @@
         "wlwmanifest"
       ],
       "type": "application/wlwmanifest+xml"
+    },
+    "https://seucoruja.net/wp-content/uploads/fbrfg/apple-touch-icon.png": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://seucoruja.net/wp-content/uploads/fbrfg/favicon-32x32.png": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/png"
+    },
+    "https://seucoruja.net/wp-content/uploads/fbrfg/favicon-16x16.png": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/png"
+    },
+    "https://seucoruja.net/wp-content/uploads/fbrfg/site.webmanifest": {
+      "rels": [
+        "manifest"
+      ]
+    },
+    "https://seucoruja.net/wp-content/uploads/fbrfg/safari-pinned-tab.svg": {
+      "rels": [
+        "mask-icon"
+      ]
+    },
+    "https://seucoruja.net/wp-content/uploads/fbrfg/favicon.ico": {
+      "rels": [
+        "icon",
+        "shortcut"
+      ]
     },
     "https://seucoruja.net/wp-json/micropub/1.0/media": {
       "rels": [
