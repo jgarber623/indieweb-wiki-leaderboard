@@ -4,9 +4,15 @@
     "canonical": [
       "https://johan.land/"
     ],
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "webmention": [
+      "https://webmention.io/johan.land/webmention"
+    ],
     "stylesheet": [
-      "https://johan.land/assets/300px-n-breakpoint-system.4f9e6a38.css",
-      "https://johan.land/assets/index.84b18285.css"
+      "https://johan.land/assets/300px-n-breakpoint-system.70930a5f.css",
+      "https://johan.land/assets/index.5125665f.css"
     ]
   },
   "rel-urls": {
@@ -15,12 +21,22 @@
         "canonical"
       ]
     },
-    "https://johan.land/assets/300px-n-breakpoint-system.4f9e6a38.css": {
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://webmention.io/johan.land/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://johan.land/assets/300px-n-breakpoint-system.70930a5f.css": {
       "rels": [
         "stylesheet"
       ]
     },
-    "https://johan.land/assets/index.84b18285.css": {
+    "https://johan.land/assets/index.5125665f.css": {
       "rels": [
         "stylesheet"
       ]

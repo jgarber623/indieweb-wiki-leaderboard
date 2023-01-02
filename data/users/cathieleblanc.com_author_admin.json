@@ -45,6 +45,9 @@
     "wlwmanifest": [
       "http://cathieleblanc.com/wp-includes/wlwmanifest.xml"
     ],
+    "microsub": [
+      "https://aperture.p3k.io/microsub/17"
+    ],
     "authorization_endpoint": [
       "https://cathieleblanc.com/wp-json/indieauth/1.0/auth"
     ],
@@ -59,7 +62,9 @@
       "https://twitter.com/cathieleblanc",
       "https://www.facebook.com/cathieleblancPSU",
       "https://micro.blog/cathie",
-      "https://www.instagram.com/cathieleblanc"
+      "https://www.instagram.com/cathieleblanc",
+      "https://www.flickr.com/people/cathieleblanc",
+      "http://geekdom.social/@cathieleblanc"
     ],
     "icon": [
       "https://i0.wp.com/cathieleblanc.com/wp-content/uploads/2018/06/profile.jpg?fit=32%2C32&ssl=1",
@@ -67,6 +72,12 @@
     ],
     "apple-touch-icon": [
       "https://i0.wp.com/cathieleblanc.com/wp-content/uploads/2018/06/profile.jpg?fit=180%2C180&ssl=1"
+    ],
+    "micropub_media": [
+      "https://cathieleblanc.com/wp-json/micropub/1.0/media"
+    ],
+    "micropub": [
+      "https://cathieleblanc.com/wp-json/micropub/1.0/endpoint"
     ],
     "home": [
       "https://cathieleblanc.com/"
@@ -257,6 +268,11 @@
       ],
       "type": "application/wlwmanifest+xml"
     },
+    "https://aperture.p3k.io/microsub/17": {
+      "rels": [
+        "microsub"
+      ]
+    },
     "https://cathieleblanc.com/wp-json/indieauth/1.0/auth": {
       "rels": [
         "authorization_endpoint"
@@ -297,6 +313,16 @@
         "me"
       ]
     },
+    "https://www.flickr.com/people/cathieleblanc": {
+      "rels": [
+        "me"
+      ]
+    },
+    "http://geekdom.social/@cathieleblanc": {
+      "rels": [
+        "me"
+      ]
+    },
     "https://i0.wp.com/cathieleblanc.com/wp-content/uploads/2018/06/profile.jpg?fit=32%2C32&ssl=1": {
       "rels": [
         "icon"
@@ -310,6 +336,16 @@
     "https://i0.wp.com/cathieleblanc.com/wp-content/uploads/2018/06/profile.jpg?fit=180%2C180&ssl=1": {
       "rels": [
         "apple-touch-icon"
+      ]
+    },
+    "https://cathieleblanc.com/wp-json/micropub/1.0/media": {
+      "rels": [
+        "micropub_media"
+      ]
+    },
+    "https://cathieleblanc.com/wp-json/micropub/1.0/endpoint": {
+      "rels": [
+        "micropub"
       ]
     },
     "https://cathieleblanc.com/": {

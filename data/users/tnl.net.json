@@ -127,15 +127,14 @@
       "https://tnl.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftnl.net%2F&format=xml"
     ],
     "stylesheet": [
-      "https://c0.wp.com/c/6.1.1/wp-includes/css/classic-themes.min.css",
       "https://tnl.net/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.7.2",
       "https://tnl.net/wp-content/plugins/vc-mailchimp/libs/jquery.growl/stylesheets/jquery.growl.css?ver=6.1.1",
       "https://tnl.net/wp-content/plugins/vc-mailchimp/assets/css/frontend.css?ver=6.1.1",
       "https://tnl.net/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
       "https://tnl.net/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3",
-      "https://tnl.net/wp-content/plugins/syndication-links/css/syn.min.css?ver=4.3.12",
+      "https://tnl.net/wp-content/plugins/syndication-links/css/syn.min.css?ver=4.4.2",
       "https://use.fontawesome.com/releases/v6.2.1/css/all.css",
-      "https://tnl.net/wp-content/themes/Impreza/css/style.min.css?ver=8.12",
+      "https://tnl.net/wp-content/themes/Impreza/css/style.min.css?ver=8.13",
       "https://tnl.net/wp-content/uploads/smile_fonts/Defaults/Defaults.css?ver=3.19.12",
       "https://tnl.net/wp-content/plugins/Ultimate_VC_Addons/assets/min-css/style.min.css?ver=3.19.12",
       "https://tnl.net/wp-content/plugins/Ultimate_VC_Addons/assets/min-css/headings.min.css?ver=3.19.12",
@@ -163,6 +162,9 @@
     ],
     "token_endpoint": [
       "https://tnl.net/wp-json/indieauth/1.0/token"
+    ],
+    "indieauth-metadata": [
+      "https://tnl.net/wp-json/indieauth/1.0/metadata"
     ],
     "icon": [
       "https://tnl.net/wp-content/uploads/2022/11/android-chrome-256x256-1-150x150.png",
@@ -256,12 +258,6 @@
       "title": "TNL.net » Comments Feed",
       "type": "application/rss+xml"
     },
-    "https://c0.wp.com/c/6.1.1/wp-includes/css/classic-themes.min.css": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "all"
-    },
     "https://tnl.net/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.7.2": {
       "rels": [
         "stylesheet"
@@ -292,7 +288,7 @@
       ],
       "media": "all"
     },
-    "https://tnl.net/wp-content/plugins/syndication-links/css/syn.min.css?ver=4.3.12": {
+    "https://tnl.net/wp-content/plugins/syndication-links/css/syn.min.css?ver=4.4.2": {
       "rels": [
         "stylesheet"
       ],
@@ -304,7 +300,7 @@
       ],
       "media": "all"
     },
-    "https://tnl.net/wp-content/themes/Impreza/css/style.min.css?ver=8.12": {
+    "https://tnl.net/wp-content/themes/Impreza/css/style.min.css?ver=8.13": {
       "rels": [
         "stylesheet"
       ],
@@ -389,6 +385,11 @@
     "https://tnl.net/wp-json/indieauth/1.0/token": {
       "rels": [
         "token_endpoint"
+      ]
+    },
+    "https://tnl.net/wp-json/indieauth/1.0/metadata": {
+      "rels": [
+        "indieauth-metadata"
       ]
     },
     "https://tnl.net/wp-content/uploads/2022/11/android-chrome-256x256-1-150x150.png": {

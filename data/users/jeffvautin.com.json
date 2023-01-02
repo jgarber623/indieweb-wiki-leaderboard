@@ -56,7 +56,6 @@
     ],
     "dns-prefetch": [
       "http://fonts.googleapis.com/",
-      "http://s.w.org/",
       "http://v0.wordpress.com/"
     ],
     "preconnect": [
@@ -68,17 +67,18 @@
       "http://jeffvautin.com/micro.xml"
     ],
     "stylesheet": [
-      "http://jeffvautin.com/wp-includes/css/dist/block-library/style.min.css?ver=5.8.6",
-      "http://jeffvautin.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.16",
-      "http://jeffvautin.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=5.8.6",
-      "http://jeffvautin.com/wp-content/plugins/indieweb/static/css/indieweb-bw.css?ver=3.4.6",
+      "http://jeffvautin.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1",
+      "http://jeffvautin.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17",
+      "http://jeffvautin.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.1.1",
+      "http://jeffvautin.com/wp-includes/css/classic-themes.min.css?ver=1",
+      "http://jeffvautin.com/wp-content/plugins/indieweb/static/css/indieweb-bw.css?ver=3.4.7",
       "http://jeffvautin.com/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3",
-      "http://jeffvautin.com/wp-content/themes/twentytwelve/style.css?ver=5.8.6",
+      "http://jeffvautin.com/wp-content/themes/twentytwelve/style.css?ver=6.1.1",
       "http://jeffvautin.com/wp-content/themes/twentytwelve-child/style.css?ver=1.0.0",
       "https://fonts.googleapis.com/css?family=Open+Sans%3A400italic%2C700italic%2C400%2C700&subset=latin%2Clatin-ext&display=fallback",
       "http://jeffvautin.com/wp-content/themes/twentytwelve/css/blocks.css?ver=20190406",
-      "http://jeffvautin.com/wp-content/plugins/syndication-links/css/syn.min.css?ver=4.3.7",
-      "http://jeffvautin.com/wp-content/plugins/jetpack/css/jetpack.css?ver=10.4"
+      "http://jeffvautin.com/wp-content/plugins/syndication-links/css/syn.min.css?ver=4.4.2",
+      "http://jeffvautin.com/wp-content/plugins/jetpack/css/jetpack.css?ver=11.6"
     ],
     "https://api.w.org/": [
       "https://jeffvautin.com/wp-json/"
@@ -95,6 +95,9 @@
     "token_endpoint": [
       "https://jeffvautin.com/wp-json/indieauth/1.0/token"
     ],
+    "indieauth-metadata": [
+      "https://jeffvautin.com/wp-json/indieauth/1.0/metadata"
+    ],
     "me": [
       "https://github.com/jeffvautin",
       "https://twitter.com/jeffvautin",
@@ -110,6 +113,7 @@
       "https://jeffvautin.com/"
     ],
     "bookmark": [
+      "https://jeffvautin.com/2023/01/2048/",
       "https://jeffvautin.com/2022/12/2042/",
       "https://jeffvautin.com/2022/12/2039/",
       "https://jeffvautin.com/2022/12/2037/",
@@ -119,7 +123,6 @@
       "https://jeffvautin.com/2022/08/2027/",
       "https://jeffvautin.com/2022/08/calendar-week-numbering/",
       "https://jeffvautin.com/2022/08/2023/",
-      "https://jeffvautin.com/2022/07/2020/",
       "https://www.theautopian.com/tesla-model-s-and-ford-gt-engineer-explains-how-to-design-oversteer-or-understeer-into-a-cars-suspension/",
       "https://pudding.cool/2022/12/yard-sale/",
       "https://www.theatlantic.com/science/archive/2022/08/mystery-inside-monkeypox-vaccines/671256/",
@@ -177,11 +180,6 @@
         "dns-prefetch"
       ]
     },
-    "http://s.w.org/": {
-      "rels": [
-        "dns-prefetch"
-      ]
-    },
     "http://v0.wordpress.com/": {
       "rels": [
         "dns-prefetch"
@@ -199,28 +197,35 @@
       "title": "Jeff Vautin » Feed",
       "type": "application/rss+xml"
     },
-    "http://jeffvautin.com/wp-includes/css/dist/block-library/style.min.css?ver=5.8.6": {
+    "http://jeffvautin.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1": {
       "rels": [
         "stylesheet"
       ],
       "media": "all",
       "type": "text/css"
     },
-    "http://jeffvautin.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.16": {
+    "http://jeffvautin.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17": {
       "rels": [
         "stylesheet"
       ],
       "media": "all",
       "type": "text/css"
     },
-    "http://jeffvautin.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=5.8.6": {
+    "http://jeffvautin.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.1.1": {
       "rels": [
         "stylesheet"
       ],
       "media": "all",
       "type": "text/css"
     },
-    "http://jeffvautin.com/wp-content/plugins/indieweb/static/css/indieweb-bw.css?ver=3.4.6": {
+    "http://jeffvautin.com/wp-includes/css/classic-themes.min.css?ver=1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://jeffvautin.com/wp-content/plugins/indieweb/static/css/indieweb-bw.css?ver=3.4.7": {
       "rels": [
         "stylesheet"
       ],
@@ -234,7 +239,7 @@
       "media": "all",
       "type": "text/css"
     },
-    "http://jeffvautin.com/wp-content/themes/twentytwelve/style.css?ver=5.8.6": {
+    "http://jeffvautin.com/wp-content/themes/twentytwelve/style.css?ver=6.1.1": {
       "rels": [
         "stylesheet"
       ],
@@ -262,14 +267,14 @@
       "media": "all",
       "type": "text/css"
     },
-    "http://jeffvautin.com/wp-content/plugins/syndication-links/css/syn.min.css?ver=4.3.7": {
+    "http://jeffvautin.com/wp-content/plugins/syndication-links/css/syn.min.css?ver=4.4.2": {
       "rels": [
         "stylesheet"
       ],
       "media": "all",
       "type": "text/css"
     },
-    "http://jeffvautin.com/wp-content/plugins/jetpack/css/jetpack.css?ver=10.4": {
+    "http://jeffvautin.com/wp-content/plugins/jetpack/css/jetpack.css?ver=11.6": {
       "rels": [
         "stylesheet"
       ],
@@ -311,6 +316,11 @@
         "token_endpoint"
       ]
     },
+    "https://jeffvautin.com/wp-json/indieauth/1.0/metadata": {
+      "rels": [
+        "indieauth-metadata"
+      ]
+    },
     "http://jeffvautin.com/micro.xml": {
       "rels": [
         "alternate"
@@ -349,6 +359,13 @@
       ],
       "title": "Jeff Vautin",
       "text": "Jeff Vautin"
+    },
+    "https://jeffvautin.com/2023/01/2048/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to",
+      "text": "→ January 1, 2023 10:05 AM"
     },
     "https://jeffvautin.com/2022/12/2042/": {
       "rels": [
@@ -418,13 +435,6 @@
       ],
       "title": "Permalink to",
       "text": "→ August 6, 2022 11:02 PM"
-    },
-    "https://jeffvautin.com/2022/07/2020/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Permalink to",
-      "text": "→ July 30, 2022 10:59 AM"
     },
     "https://www.theautopian.com/tesla-model-s-and-ford-gt-engineer-explains-how-to-design-oversteer-or-understeer-into-a-cars-suspension/": {
       "rels": [

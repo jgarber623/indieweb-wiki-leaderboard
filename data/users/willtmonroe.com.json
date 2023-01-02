@@ -70,6 +70,12 @@
     "indieauth-metadata": [
       "https://willtmonroe.com/wp-json/indieauth/1.0/metadata"
     ],
+    "micropub_media": [
+      "https://willtmonroe.com/wp-json/micropub/1.0/media"
+    ],
+    "micropub": [
+      "https://willtmonroe.com/wp-json/micropub/1.0/endpoint"
+    ],
     "webmention": [
       "https://willtmonroe.com/wp-json/webmention/1.0/endpoint"
     ],
@@ -221,6 +227,16 @@
     "https://willtmonroe.com/wp-json/indieauth/1.0/metadata": {
       "rels": [
         "indieauth-metadata"
+      ]
+    },
+    "https://willtmonroe.com/wp-json/micropub/1.0/media": {
+      "rels": [
+        "micropub_media"
+      ]
+    },
+    "https://willtmonroe.com/wp-json/micropub/1.0/endpoint": {
+      "rels": [
+        "micropub"
       ]
     },
     "https://willtmonroe.com/wp-json/webmention/1.0/endpoint": {
