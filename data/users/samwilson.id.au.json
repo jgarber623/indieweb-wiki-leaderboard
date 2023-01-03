@@ -6,6 +6,133 @@
       ],
       "properties": {
         "name": [
+          "Post 26538"
+        ],
+        "url": [
+          "https://samwilson.id.au/P26538"
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "url": [
+                "Sam Wilson"
+              ],
+              "name": [
+                "Sam Wilson"
+              ]
+            },
+            "value": "Sam Wilson"
+          }
+        ],
+        "published": [
+          "2023-01-03T01:18:06Z"
+        ],
+        "content": [
+          {
+            "html": "<p>There’s going to be another Wikispore open hour meeting this evening. Agenda is here: <a href=\"https://etherpad.wikimedia.org/p/wikispore-open-hour-5\">https://etherpad.wikimedia.org/p/wikispore-open-hour-5</a></p>\n<p>Last time was interesting, although I’m not sure I’m very good at evening meetings! Hard to think properly when tired.</p>",
+            "value": "There’s going to be another Wikispore open hour meeting this evening. Agenda is here: https://etherpad.wikimedia.org/p/wikispore-open-hour-5\nLast time was interesting, although I’m not sure I’m very good at evening meetings! Hard to think properly when tired."
+          }
+        ],
+        "category": [
+          "Wikispore"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Post 26537"
+        ],
+        "url": [
+          "https://samwilson.id.au/P26537"
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "url": [
+                "Sam Wilson"
+              ],
+              "name": [
+                "Sam Wilson"
+              ]
+            },
+            "value": "Sam Wilson"
+          }
+        ],
+        "published": [
+          "2023-01-03T00:27:24Z"
+        ],
+        "content": [
+          {
+            "html": "<p>Toolforge Bundle <a href=\"https://github.com/wikimedia/ToolforgeBundle/releases/tag/1.4.6\">version 1.4.6</a> is released.</p>",
+            "value": "Toolforge Bundle version 1.4.6 is released."
+          }
+        ],
+        "category": [
+          "Wikimedia",
+          "Toolforge"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Uploading scanned letters with Pattypan"
+        ],
+        "url": [
+          "https://samwilson.id.au/P26539"
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "url": [
+                "Sam Wilson"
+              ],
+              "name": [
+                "Sam Wilson"
+              ]
+            },
+            "value": "Sam Wilson"
+          }
+        ],
+        "published": [
+          "2023-01-02T02:30:00Z"
+        ],
+        "content": [
+          {
+            "html": "<p><a href=\"https://commons.wikimedia.org/wiki/Commons:Pattypan\">Pattypan</a> is a great tool for uploading lots of files to Commons. I’m using it today for a set of scans of airgraphs. I scanned them all yesterday, and gave them hopefully-useful filenames that contain a prefix, date, and bit of info about each. These documents all look pretty much the same when viewed as thumbnails, so it’s important to be able to determine at least something by glancing at the filename. That said, it’s never good to ‘‘rely’’ on metadata being in the filename nor on all files having the same structure to their names.</p>\n<p>Anyway, after creating the spreadsheet for these files, I did some tweaking to the data columns:</p>\n<ol>\n<li>Filled the <code>source</code> column based on the name column:\n<ul>\n<li>Formula: <code>=CONCAT(\"{{HMW|wiki=\",B2,\"}}\")</code>\n</li>\n<li>Result: <code>{{HMW|wiki=Airgraph 1943-12-30 Adele to Murray}}</code>\n</li>\n</ul>\n</li>\n<li>Extracted the date:\n<ul>\n<li>Formula: <code>=REGEX(B3,\"[0-9]{4}-[0-9]{2}-[0-9]{2}\")</code>\n</li>\n<li>Result: <code>1943-12-30</code>\n</li>\n</ul>\n</li>\n<li>Crucially, any column that uses a formula needs to be copied to a new column with ‘‘values only’’ (i.e. “Edit / Paste special / Values only”). Otherwise Pattypan can’t see the formula result.</li>\n</ol>",
+            "value": "Pattypan is a great tool for uploading lots of files to Commons. I’m using it today for a set of scans of airgraphs. I scanned them all yesterday, and gave them hopefully-useful filenames that contain a prefix, date, and bit of info about each. These documents all look pretty much the same when viewed as thumbnails, so it’s important to be able to determine at least something by glancing at the filename. That said, it’s never good to ‘‘rely’’ on metadata being in the filename nor on all files having the same structure to their names.\nAnyway, after creating the spreadsheet for these files, I did some tweaking to the data columns:\n\nFilled the source column based on the name column:\n\nFormula: =CONCAT(\"{{HMW|wiki=\",B2,\"}}\")\n\nResult: {{HMW|wiki=Airgraph 1943-12-30 Adele to Murray}}\n\n\n\nExtracted the date:\n\nFormula: =REGEX(B3,\"[0-9]{4}-[0-9]{2}-[0-9]{2}\")\n\nResult: 1943-12-30\n\n\n\nCrucially, any column that uses a formula needs to be copied to a new column with ‘‘values only’’ (i.e. “Edit / Paste special / Values only”). Otherwise Pattypan can’t see the formula result."
+          }
+        ],
+        "category": [
+          "Wikimedia",
+          "The H. M. Wilson Archives",
+          "Wikimedia Commons",
+          "scanned documents"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
           "2022 IndieWeb Gift Calendar"
         ],
         "url": [
@@ -281,130 +408,6 @@
             "html": "<p>I mean, how hard can it be to connect one’s DIY blogging system to the fediverse anyway?</p>",
             "value": "I mean, how hard can it be to connect one’s DIY blogging system to the fediverse anyway?"
           }
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "name": [
-          "Entrance to Faldor Stamps etc."
-        ],
-        "url": [
-          "https://samwilson.id.au/P26506"
-        ],
-        "author": [
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "url": [
-                "Sam Wilson"
-              ],
-              "name": [
-                "Sam Wilson"
-              ]
-            },
-            "value": "Sam Wilson"
-          }
-        ],
-        "published": [
-          "2022-11-06T11:59:49Z"
-        ],
-        "content": [
-          {
-            "html": "<p class=\"file\">\n                        <img src=\"https://samwilson.id.au/P26506D.jpg\" alt=\"The file that is attached to this post.\">\n                    </p>",
-            "value": "The file that is attached to this post."
-          }
-        ],
-        "category": [
-          "Subiaco"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "name": [
-          "Bike path in Subiaco"
-        ],
-        "url": [
-          "https://samwilson.id.au/P26507"
-        ],
-        "author": [
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "url": [
-                "Sam Wilson"
-              ],
-              "name": [
-                "Sam Wilson"
-              ]
-            },
-            "value": "Sam Wilson"
-          }
-        ],
-        "published": [
-          "2022-11-06T09:20:10Z"
-        ],
-        "content": [
-          {
-            "html": "<p class=\"file\">\n                        <img src=\"https://samwilson.id.au/P26507D.jpg\" alt=\"The file that is attached to this post.\">\n                    </p>",
-            "value": "The file that is attached to this post."
-          }
-        ],
-        "category": [
-          "Subiaco"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "name": [
-          "Train crossing near Daglish"
-        ],
-        "url": [
-          "https://samwilson.id.au/P26508"
-        ],
-        "author": [
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "url": [
-                "Sam Wilson"
-              ],
-              "name": [
-                "Sam Wilson"
-              ]
-            },
-            "value": "Sam Wilson"
-          }
-        ],
-        "published": [
-          "2022-11-06T09:18:50Z"
-        ],
-        "content": [
-          {
-            "html": "<p class=\"file\">\n                        <img src=\"https://samwilson.id.au/P26508D.jpg\" alt=\"The file that is attached to this post.\">\n                    </p>",
-            "value": "The file that is attached to this post."
-          }
-        ],
-        "category": [
-          "trains",
-          "Subiaco"
         ]
       }
     },

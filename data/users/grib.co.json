@@ -1,601 +1,176 @@
 {
-  "items": [],
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "url": [
+          "https://grib.co/about/"
+        ],
+        "photo": [
+          "https://micro.blog/grib/avatar.jpg"
+        ],
+        "name": [
+          "Andrew Gribben"
+        ],
+        "role": [
+          "Follow @grib on Micro.blog."
+        ]
+      }
+    }
+  ],
   "rels": {
-    "icon": [
-      "https://miro.medium.com/1*m-R_BkNf1Qjr1YbyOIJY2w.png"
-    ],
-    "search": [
-      "https://grib.co/osd.xml"
-    ],
-    "apple-touch-icon": [
-      "https://miro.medium.com/fit/c/152/152/1*sHhtYhaCe2Uc3IU0IgKwIQ.png",
-      "https://miro.medium.com/fit/c/120/120/1*sHhtYhaCe2Uc3IU0IgKwIQ.png",
-      "https://miro.medium.com/fit/c/76/76/1*sHhtYhaCe2Uc3IU0IgKwIQ.png",
-      "https://miro.medium.com/fit/c/60/60/1*sHhtYhaCe2Uc3IU0IgKwIQ.png"
-    ],
-    "mask-icon": [
-      "https://cdn-static-1.medium.com/_/fp/icons/Medium-Avatar-500x500.svg"
-    ],
-    "preload": [
-      "https://glyph.medium.com/css/unbound.css"
-    ],
     "stylesheet": [
-      "https://glyph.medium.com/css/unbound.css"
+      "https://grib.co/assets/css/style.css?1672693753",
+      "https://grib.co/assets/css/highlight.css?1672693753",
+      "https://grib.co/custom.css?1672693753",
+      "https://grib.co/assets/bigfoot/dist/bigfoot-number.css"
     ],
-    "canonical": [
-      "https://grib.co/"
+    "icon": [
+      "https://micro.blog/grib/favicon.png"
+    ],
+    "shortcut": [
+      "https://micro.blog/grib/favicon.png"
     ],
     "alternate": [
-      "android-app://com.medium.reader/https/medium.com/@grib",
-      "https://medium.com/feed/@grib"
+      "https://grib.co/feed.xml",
+      "https://grib.co/podcast.xml",
+      "https://grib.co/feed.json"
+    ],
+    "EditURI": [
+      "https://grib.co/rsd.xml"
     ],
     "me": [
-      "https://twitter.com/grib"
+      "https://micro.blog/grib",
+      "https://twitter.com/grib",
+      "https://github.com/andrewgribben",
+      "https://instagram.com/grib"
     ],
-    "follow": [
-      "https://rsci.app.link/?%24canonical_url=https%3A%2F%2Fmedium.com%2F&%7Efeature=LoOpenInAppButton&%7Echannel=ShowUser&source=---two_column_layout_nav----------------------------------",
-      "https://medium.com/m/signin?operation=register&redirect=https%3A%2F%2Fgrib.co%2F&source=user_profile---two_column_layout_nav-----------------------global_nav-----------",
-      "https://medium.com/m/signin?operation=login&redirect=https%3A%2F%2Fgrib.co%2F&source=user_profile---two_column_layout_nav-----------------------global_nav-----------",
-      "https://medium.com/?source=---two_column_layout_nav----------------------------------",
-      "https://medium.com/m/signin?operation=register&redirect=https%3A%2F%2Fmedium.com%2Fnew-story&source=---two_column_layout_nav-----------------------new_post_sidenav-----------",
-      "https://medium.com/search?source=---two_column_layout_nav----------------------------------",
-      "https://grib.co/?source=user_profile-------------------------------------",
-      "https://grib.co/followers?source=user_profile-------------------------------------",
-      "https://grib.co/about?source=user_profile-------------------------------------",
-      "https://grib.co/be-sure-to-send-a-clear-message-on-your-zoom-calls-bec8245d4b04?source=user_profile---------0----------------------------",
-      "https://medium.com/tag/zoom?source=user_profile--------------------zoom-----------------",
-      "https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Fbec8245d4b04&operation=register&redirect=https%3A%2F%2Fgrib.co%2Fbe-sure-to-send-a-clear-message-on-your-zoom-calls-bec8245d4b04&source=---------0-----------------bookmark_preview-----------",
-      "https://medium.com/bricksnbrackets?source=user_profile---------1----------------------------",
-      "https://grib.co/ipad-pro-users-welcome-to-1995-4c3c5495223d?source=user_profile---------1----------------------------",
-      "https://medium.com/tag/ipad-os?source=user_profile--------------------ipad_os-----------------",
-      "https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F4c3c5495223d&operation=register&redirect=https%3A%2F%2Fmedium.com%2Fbricksnbrackets%2Fipad-pro-users-welcome-to-1995-4c3c5495223d&source=---------1-----------------bookmark_preview-----------",
-      "https://grib.co/the-internet-of-good-manners-with-attila-vago-dd686f8c6be3?source=user_profile---------2----------------------------",
-      "https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Fdd686f8c6be3&operation=register&redirect=https%3A%2F%2Fgrib.co%2Fthe-internet-of-good-manners-with-attila-vago-dd686f8c6be3&source=---------2-----------------bookmark_preview-----------",
-      "https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fp%2Fdd686f8c6be3&operation=register&redirect=https%3A%2F%2Fgrib.co%2Fthe-internet-of-good-manners-with-attila-vago-dd686f8c6be3&user=Andrew+Gribben&userId=5265a6f1b5b9&source=-----dd686f8c6be3---------------------clap_footer-----------",
-      "https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Fdd686f8c6be3&operation=register&redirect=https%3A%2F%2Fgrib.co%2F&source=--------------------------bookmark_footer-----------",
-      "https://grib.co/everything-is-too-complicated-2f5727edf89d?source=user_profile---------3----------------------------",
-      "https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F2f5727edf89d&operation=register&redirect=https%3A%2F%2Fgrib.co%2Feverything-is-too-complicated-2f5727edf89d&source=---------3-----------------bookmark_preview-----------",
-      "https://grib.co/ace-an-accessibility-conformance-checking-tool-for-epub-3-publications-28ed2bb60275?source=user_profile---------4----------------------------",
-      "https://medium.com/tag/a11y?source=user_profile--------------------a11y-----------------",
-      "https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F28ed2bb60275&operation=register&redirect=https%3A%2F%2Fgrib.co%2Face-an-accessibility-conformance-checking-tool-for-epub-3-publications-28ed2bb60275&source=---------4-----------------bookmark_preview-----------",
-      "https://grib.co/the-accessibility-error-scanner-we-use-at-github-for-dev-and-production-is-now-open-source-c58bbb548331?source=user_profile---------5----------------------------",
-      "https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Fc58bbb548331&operation=register&redirect=https%3A%2F%2Fgrib.co%2Fthe-accessibility-error-scanner-we-use-at-github-for-dev-and-production-is-now-open-source-c58bbb548331&source=---------5-----------------bookmark_preview-----------",
-      "https://grib.co/more-than-voiceover-and-wheelchair-ramps-d860ae6fb96f?source=user_profile---------6----------------------------",
-      "https://medium.com/tag/design?source=user_profile--------------------design-----------------",
-      "https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Fd860ae6fb96f&operation=register&redirect=https%3A%2F%2Fgrib.co%2Fmore-than-voiceover-and-wheelchair-ramps-d860ae6fb96f&source=---------6-----------------bookmark_preview-----------",
-      "https://grib.co/van11y-accessibility-and-es2015-c378cb17830b?source=user_profile---------7----------------------------",
-      "https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Fc378cb17830b&operation=register&redirect=https%3A%2F%2Fgrib.co%2Fvan11y-accessibility-and-es2015-c378cb17830b&source=---------7-----------------bookmark_preview-----------",
-      "https://grib.co/ive-followed-jiminy-panoz-since-reading-about-the-blitz-framework-so-it-s-great-to-see-him-working-aa6f1977c014?source=user_profile---------8----------------------------",
-      "https://medium.com/tag/eprdctn?source=user_profile--------------------eprdctn-----------------",
-      "https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Faa6f1977c014&operation=register&redirect=https%3A%2F%2Fgrib.co%2Five-followed-jiminy-panoz-since-reading-about-the-blitz-framework-so-it-s-great-to-see-him-working-aa6f1977c014&source=---------8-----------------bookmark_preview-----------",
-      "https://grib.co/john-wayne-bb2ffeb84685?source=user_profile---------9----------------------------",
-      "https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Fbb2ffeb84685&operation=register&redirect=https%3A%2F%2Fgrib.co%2Fjohn-wayne-bb2ffeb84685&source=---------9-----------------bookmark_preview-----------",
-      "https://grib.co/?source=---two_column_layout_sidebar----------------------------------",
-      "https://grib.co/followers?source=---two_column_layout_sidebar----------------------------------",
-      "https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fsubscribe%2Fuser%2F5265a6f1b5b9&operation=register&redirect=https%3A%2F%2Fgrib.co%2F&user=Andrew+Gribben&userId=5265a6f1b5b9&source=user_profile-5265a6f1b5b9--two_column_layout_sidebar-----------------------follow_profile-----------",
-      "https://medium.com/m/signin?actionUrl=%2F_%2Fapi%2Fsubscriptions%2Fnewsletters%2F99810c7609&operation=register&redirect=https%3A%2F%2Fgrib.co%2F&newsletterV3=5265a6f1b5b9&newsletterV3Id=99810c7609&user=Andrew+Gribben&userId=5265a6f1b5b9&source=---two_column_layout_sidebar-----------------------subscribe_user-----------",
-      "https://billabbate.medium.com/?source=blogrolls_sidebar---two_column_layout_sidebar----------------------------------",
-      "https://mgs.blog/?source=blogrolls_sidebar---two_column_layout_sidebar----------------------------------",
-      "https://attilavago.medium.com/?source=blogrolls_sidebar---two_column_layout_sidebar----------------------------------",
-      "https://wilw.medium.com/?source=blogrolls_sidebar---two_column_layout_sidebar----------------------------------",
-      "https://whittle.medium.com/?source=blogrolls_sidebar---two_column_layout_sidebar----------------------------------",
-      "https://help.medium.com/hc/en-us?source=---two_column_layout_sidebar----------------------------------",
-      "https://medium.statuspage.io/?source=---two_column_layout_sidebar----------------------------------",
-      "https://about.medium.com/creators/?source=---two_column_layout_sidebar----------------------------------",
-      "https://blog.medium.com/?source=---two_column_layout_sidebar----------------------------------",
-      "https://medium.com/jobs-at-medium/work-at-medium-959d1a85284e?source=---two_column_layout_sidebar----------------------------------",
-      "https://policy.medium.com/medium-privacy-policy-f03bf92035c9?source=---two_column_layout_sidebar----------------------------------",
-      "https://policy.medium.com/medium-terms-of-service-9db0094a1e0f?source=---two_column_layout_sidebar----------------------------------",
-      "https://medium.com/about?autoplay=1&source=---two_column_layout_sidebar----------------------------------",
-      "https://speechify.com/medium?source=---two_column_layout_sidebar----------------------------------"
+    "authorization_endpoint": [
+      "https://micro.blog/indieauth/auth"
     ],
-    "noopener": [
-      "https://rsci.app.link/?%24canonical_url=https%3A%2F%2Fmedium.com%2F&%7Efeature=LoOpenInAppButton&%7Echannel=ShowUser&source=---two_column_layout_nav----------------------------------",
-      "https://medium.com/m/signin?operation=register&redirect=https%3A%2F%2Fgrib.co%2F&source=user_profile---two_column_layout_nav-----------------------global_nav-----------",
-      "https://medium.com/m/signin?operation=login&redirect=https%3A%2F%2Fgrib.co%2F&source=user_profile---two_column_layout_nav-----------------------global_nav-----------",
-      "https://medium.com/?source=---two_column_layout_nav----------------------------------",
-      "https://medium.com/m/signin?operation=register&redirect=https%3A%2F%2Fmedium.com%2Fnew-story&source=---two_column_layout_nav-----------------------new_post_sidenav-----------",
-      "https://medium.com/search?source=---two_column_layout_nav----------------------------------",
-      "https://grib.co/?source=user_profile-------------------------------------",
-      "https://grib.co/followers?source=user_profile-------------------------------------",
-      "https://grib.co/about?source=user_profile-------------------------------------",
-      "https://grib.co/be-sure-to-send-a-clear-message-on-your-zoom-calls-bec8245d4b04?source=user_profile---------0----------------------------",
-      "https://medium.com/tag/zoom?source=user_profile--------------------zoom-----------------",
-      "https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Fbec8245d4b04&operation=register&redirect=https%3A%2F%2Fgrib.co%2Fbe-sure-to-send-a-clear-message-on-your-zoom-calls-bec8245d4b04&source=---------0-----------------bookmark_preview-----------",
-      "https://medium.com/bricksnbrackets?source=user_profile---------1----------------------------",
-      "https://grib.co/ipad-pro-users-welcome-to-1995-4c3c5495223d?source=user_profile---------1----------------------------",
-      "https://medium.com/tag/ipad-os?source=user_profile--------------------ipad_os-----------------",
-      "https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F4c3c5495223d&operation=register&redirect=https%3A%2F%2Fmedium.com%2Fbricksnbrackets%2Fipad-pro-users-welcome-to-1995-4c3c5495223d&source=---------1-----------------bookmark_preview-----------",
-      "https://grib.co/the-internet-of-good-manners-with-attila-vago-dd686f8c6be3?source=user_profile---------2----------------------------",
-      "https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Fdd686f8c6be3&operation=register&redirect=https%3A%2F%2Fgrib.co%2Fthe-internet-of-good-manners-with-attila-vago-dd686f8c6be3&source=---------2-----------------bookmark_preview-----------",
-      "https://anchor.fm/ordinarypeople/episodes/The-Internet-of-Good-Manners-ernp4p",
-      "https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fp%2Fdd686f8c6be3&operation=register&redirect=https%3A%2F%2Fgrib.co%2Fthe-internet-of-good-manners-with-attila-vago-dd686f8c6be3&user=Andrew+Gribben&userId=5265a6f1b5b9&source=-----dd686f8c6be3---------------------clap_footer-----------",
-      "https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Fdd686f8c6be3&operation=register&redirect=https%3A%2F%2Fgrib.co%2F&source=--------------------------bookmark_footer-----------",
-      "https://grib.co/everything-is-too-complicated-2f5727edf89d?source=user_profile---------3----------------------------",
-      "https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F2f5727edf89d&operation=register&redirect=https%3A%2F%2Fgrib.co%2Feverything-is-too-complicated-2f5727edf89d&source=---------3-----------------bookmark_preview-----------",
-      "https://grib.co/ace-an-accessibility-conformance-checking-tool-for-epub-3-publications-28ed2bb60275?source=user_profile---------4----------------------------",
-      "https://medium.com/tag/a11y?source=user_profile--------------------a11y-----------------",
-      "https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F28ed2bb60275&operation=register&redirect=https%3A%2F%2Fgrib.co%2Face-an-accessibility-conformance-checking-tool-for-epub-3-publications-28ed2bb60275&source=---------4-----------------bookmark_preview-----------",
-      "https://grib.co/the-accessibility-error-scanner-we-use-at-github-for-dev-and-production-is-now-open-source-c58bbb548331?source=user_profile---------5----------------------------",
-      "https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Fc58bbb548331&operation=register&redirect=https%3A%2F%2Fgrib.co%2Fthe-accessibility-error-scanner-we-use-at-github-for-dev-and-production-is-now-open-source-c58bbb548331&source=---------5-----------------bookmark_preview-----------",
-      "https://grib.co/more-than-voiceover-and-wheelchair-ramps-d860ae6fb96f?source=user_profile---------6----------------------------",
-      "https://medium.com/tag/design?source=user_profile--------------------design-----------------",
-      "https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Fd860ae6fb96f&operation=register&redirect=https%3A%2F%2Fgrib.co%2Fmore-than-voiceover-and-wheelchair-ramps-d860ae6fb96f&source=---------6-----------------bookmark_preview-----------",
-      "https://grib.co/van11y-accessibility-and-es2015-c378cb17830b?source=user_profile---------7----------------------------",
-      "https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Fc378cb17830b&operation=register&redirect=https%3A%2F%2Fgrib.co%2Fvan11y-accessibility-and-es2015-c378cb17830b&source=---------7-----------------bookmark_preview-----------",
-      "https://grib.co/ive-followed-jiminy-panoz-since-reading-about-the-blitz-framework-so-it-s-great-to-see-him-working-aa6f1977c014?source=user_profile---------8----------------------------",
-      "https://medium.com/tag/eprdctn?source=user_profile--------------------eprdctn-----------------",
-      "https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Faa6f1977c014&operation=register&redirect=https%3A%2F%2Fgrib.co%2Five-followed-jiminy-panoz-since-reading-about-the-blitz-framework-so-it-s-great-to-see-him-working-aa6f1977c014&source=---------8-----------------bookmark_preview-----------",
-      "https://grib.co/john-wayne-bb2ffeb84685?source=user_profile---------9----------------------------",
-      "https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Fbb2ffeb84685&operation=register&redirect=https%3A%2F%2Fgrib.co%2Fjohn-wayne-bb2ffeb84685&source=---------9-----------------bookmark_preview-----------",
-      "https://grib.co/?source=---two_column_layout_sidebar----------------------------------",
-      "https://grib.co/followers?source=---two_column_layout_sidebar----------------------------------",
-      "https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fsubscribe%2Fuser%2F5265a6f1b5b9&operation=register&redirect=https%3A%2F%2Fgrib.co%2F&user=Andrew+Gribben&userId=5265a6f1b5b9&source=user_profile-5265a6f1b5b9--two_column_layout_sidebar-----------------------follow_profile-----------",
-      "https://medium.com/m/signin?actionUrl=%2F_%2Fapi%2Fsubscriptions%2Fnewsletters%2F99810c7609&operation=register&redirect=https%3A%2F%2Fgrib.co%2F&newsletterV3=5265a6f1b5b9&newsletterV3Id=99810c7609&user=Andrew+Gribben&userId=5265a6f1b5b9&source=---two_column_layout_sidebar-----------------------subscribe_user-----------",
-      "https://billabbate.medium.com/?source=blogrolls_sidebar---two_column_layout_sidebar----------------------------------",
-      "https://mgs.blog/?source=blogrolls_sidebar---two_column_layout_sidebar----------------------------------",
-      "https://attilavago.medium.com/?source=blogrolls_sidebar---two_column_layout_sidebar----------------------------------",
-      "https://wilw.medium.com/?source=blogrolls_sidebar---two_column_layout_sidebar----------------------------------",
-      "https://whittle.medium.com/?source=blogrolls_sidebar---two_column_layout_sidebar----------------------------------",
-      "https://help.medium.com/hc/en-us?source=---two_column_layout_sidebar----------------------------------",
-      "https://medium.statuspage.io/?source=---two_column_layout_sidebar----------------------------------",
-      "https://about.medium.com/creators/?source=---two_column_layout_sidebar----------------------------------",
-      "https://blog.medium.com/?source=---two_column_layout_sidebar----------------------------------",
-      "https://medium.com/jobs-at-medium/work-at-medium-959d1a85284e?source=---two_column_layout_sidebar----------------------------------",
-      "https://policy.medium.com/medium-privacy-policy-f03bf92035c9?source=---two_column_layout_sidebar----------------------------------",
-      "https://policy.medium.com/medium-terms-of-service-9db0094a1e0f?source=---two_column_layout_sidebar----------------------------------",
-      "https://medium.com/about?autoplay=1&source=---two_column_layout_sidebar----------------------------------",
-      "https://speechify.com/medium?source=---two_column_layout_sidebar----------------------------------"
+    "token_endpoint": [
+      "https://micro.blog/indieauth/token"
     ],
-    "nofollow": [
-      "https://anchor.fm/ordinarypeople/episodes/The-Internet-of-Good-Manners-ernp4p"
+    "micropub": [
+      "https://micro.blog/micropub"
     ],
-    "ugc": [
-      "https://anchor.fm/ordinarypeople/episodes/The-Internet-of-Good-Manners-ernp4p"
+    "microsub": [
+      "https://micro.blog/microsub"
+    ],
+    "webmention": [
+      "https://micro.blog/webmention"
+    ],
+    "subscribe": [
+      "https://micro.blog/users/follow"
     ]
   },
   "rel-urls": {
-    "https://miro.medium.com/1*m-R_BkNf1Qjr1YbyOIJY2w.png": {
+    "https://grib.co/assets/css/style.css?1672693753": {
       "rels": [
-        "icon"
+        "stylesheet"
       ]
     },
-    "https://grib.co/osd.xml": {
+    "https://grib.co/assets/css/highlight.css?1672693753": {
       "rels": [
-        "search"
+        "stylesheet"
+      ]
+    },
+    "https://grib.co/custom.css?1672693753": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://micro.blog/grib/favicon.png": {
+      "rels": [
+        "icon",
+        "shortcut"
       ],
-      "title": "Medium",
-      "type": "application/opensearchdescription+xml"
+      "type": "image/x-icon"
     },
-    "https://miro.medium.com/fit/c/152/152/1*sHhtYhaCe2Uc3IU0IgKwIQ.png": {
-      "rels": [
-        "apple-touch-icon"
-      ]
-    },
-    "https://miro.medium.com/fit/c/120/120/1*sHhtYhaCe2Uc3IU0IgKwIQ.png": {
-      "rels": [
-        "apple-touch-icon"
-      ]
-    },
-    "https://miro.medium.com/fit/c/76/76/1*sHhtYhaCe2Uc3IU0IgKwIQ.png": {
-      "rels": [
-        "apple-touch-icon"
-      ]
-    },
-    "https://miro.medium.com/fit/c/60/60/1*sHhtYhaCe2Uc3IU0IgKwIQ.png": {
-      "rels": [
-        "apple-touch-icon"
-      ]
-    },
-    "https://cdn-static-1.medium.com/_/fp/icons/Medium-Avatar-500x500.svg": {
-      "rels": [
-        "mask-icon"
-      ]
-    },
-    "https://glyph.medium.com/css/unbound.css": {
-      "rels": [
-        "preload"
-      ],
-      "type": "text/css"
-    },
-    "https://grib.co/": {
-      "rels": [
-        "canonical"
-      ]
-    },
-    "android-app://com.medium.reader/https/medium.com/@grib": {
-      "rels": [
-        "alternate"
-      ]
-    },
-    "https://medium.com/feed/@grib": {
+    "https://grib.co/feed.xml": {
       "rels": [
         "alternate"
       ],
-      "title": "RSS",
+      "title": "The Griblog",
       "type": "application/rss+xml"
+    },
+    "https://grib.co/podcast.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Podcast",
+      "type": "application/rss+xml"
+    },
+    "https://grib.co/feed.json": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "The Griblog",
+      "type": "application/json"
+    },
+    "https://grib.co/rsd.xml": {
+      "rels": [
+        "EditURI"
+      ],
+      "type": "application/rsd+xml"
+    },
+    "https://micro.blog/grib": {
+      "rels": [
+        "me"
+      ]
     },
     "https://twitter.com/grib": {
       "rels": [
         "me"
       ]
     },
-    "https://rsci.app.link/?%24canonical_url=https%3A%2F%2Fmedium.com%2F&%7Efeature=LoOpenInAppButton&%7Echannel=ShowUser&source=---two_column_layout_nav----------------------------------": {
+    "https://github.com/andrewgribben": {
       "rels": [
-        "follow",
-        "noopener"
-      ],
-      "text": "Open in app"
-    },
-    "https://medium.com/m/signin?operation=register&redirect=https%3A%2F%2Fgrib.co%2F&source=user_profile---two_column_layout_nav-----------------------global_nav-----------": {
-      "rels": [
-        "follow",
-        "noopener"
-      ],
-      "text": "Sign up"
-    },
-    "https://medium.com/m/signin?operation=login&redirect=https%3A%2F%2Fgrib.co%2F&source=user_profile---two_column_layout_nav-----------------------global_nav-----------": {
-      "rels": [
-        "follow",
-        "noopener"
-      ],
-      "text": "Sign In"
-    },
-    "https://medium.com/?source=---two_column_layout_nav----------------------------------": {
-      "rels": [
-        "follow",
-        "noopener"
+        "me"
       ]
     },
-    "https://medium.com/m/signin?operation=register&redirect=https%3A%2F%2Fmedium.com%2Fnew-story&source=---two_column_layout_nav-----------------------new_post_sidenav-----------": {
+    "https://instagram.com/grib": {
       "rels": [
-        "follow",
-        "noopener"
-      ],
-      "text": "Write"
-    },
-    "https://medium.com/search?source=---two_column_layout_nav----------------------------------": {
-      "rels": [
-        "follow",
-        "noopener"
+        "me"
       ]
     },
-    "https://grib.co/?source=user_profile-------------------------------------": {
+    "https://micro.blog/indieauth/auth": {
       "rels": [
-        "follow",
-        "noopener"
-      ],
-      "text": "Andrew Gribben"
-    },
-    "https://grib.co/followers?source=user_profile-------------------------------------": {
-      "rels": [
-        "follow",
-        "noopener"
-      ],
-      "text": "112 Followers"
-    },
-    "https://grib.co/about?source=user_profile-------------------------------------": {
-      "rels": [
-        "follow",
-        "noopener"
-      ],
-      "text": "About"
-    },
-    "https://grib.co/be-sure-to-send-a-clear-message-on-your-zoom-calls-bec8245d4b04?source=user_profile---------0----------------------------": {
-      "rels": [
-        "follow",
-        "noopener"
-      ],
-      "text": "Jun 9, 2022"
-    },
-    "https://medium.com/tag/zoom?source=user_profile--------------------zoom-----------------": {
-      "rels": [
-        "follow",
-        "noopener"
-      ],
-      "text": "Zoom"
-    },
-    "https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Fbec8245d4b04&operation=register&redirect=https%3A%2F%2Fgrib.co%2Fbe-sure-to-send-a-clear-message-on-your-zoom-calls-bec8245d4b04&source=---------0-----------------bookmark_preview-----------": {
-      "rels": [
-        "follow",
-        "noopener"
+        "authorization_endpoint"
       ]
     },
-    "https://medium.com/bricksnbrackets?source=user_profile---------1----------------------------": {
+    "https://micro.blog/indieauth/token": {
       "rels": [
-        "follow",
-        "noopener"
-      ],
-      "text": "Published in Bricks n’ Brackets"
-    },
-    "https://grib.co/ipad-pro-users-welcome-to-1995-4c3c5495223d?source=user_profile---------1----------------------------": {
-      "rels": [
-        "follow",
-        "noopener"
-      ],
-      "text": "·Jun 7, 2022"
-    },
-    "https://medium.com/tag/ipad-os?source=user_profile--------------------ipad_os-----------------": {
-      "rels": [
-        "follow",
-        "noopener"
-      ],
-      "text": "Ipad Os"
-    },
-    "https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F4c3c5495223d&operation=register&redirect=https%3A%2F%2Fmedium.com%2Fbricksnbrackets%2Fipad-pro-users-welcome-to-1995-4c3c5495223d&source=---------1-----------------bookmark_preview-----------": {
-      "rels": [
-        "follow",
-        "noopener"
+        "token_endpoint"
       ]
     },
-    "https://grib.co/the-internet-of-good-manners-with-attila-vago-dd686f8c6be3?source=user_profile---------2----------------------------": {
+    "https://micro.blog/micropub": {
       "rels": [
-        "follow",
-        "noopener"
-      ],
-      "text": "Mar 6, 2021"
-    },
-    "https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Fdd686f8c6be3&operation=register&redirect=https%3A%2F%2Fgrib.co%2Fthe-internet-of-good-manners-with-attila-vago-dd686f8c6be3&source=---------2-----------------bookmark_preview-----------": {
-      "rels": [
-        "follow",
-        "noopener"
+        "micropub"
       ]
     },
-    "https://anchor.fm/ordinarypeople/episodes/The-Internet-of-Good-Manners-ernp4p": {
+    "https://micro.blog/microsub": {
       "rels": [
-        "nofollow",
-        "noopener",
-        "ugc"
-      ],
-      "text": "anchor.fm/ordinaryp…"
-    },
-    "https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fp%2Fdd686f8c6be3&operation=register&redirect=https%3A%2F%2Fgrib.co%2Fthe-internet-of-good-manners-with-attila-vago-dd686f8c6be3&user=Andrew+Gribben&userId=5265a6f1b5b9&source=-----dd686f8c6be3---------------------clap_footer-----------": {
-      "rels": [
-        "follow",
-        "noopener"
+        "microsub"
       ]
     },
-    "https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Fdd686f8c6be3&operation=register&redirect=https%3A%2F%2Fgrib.co%2F&source=--------------------------bookmark_footer-----------": {
+    "https://micro.blog/webmention": {
       "rels": [
-        "follow",
-        "noopener"
+        "webmention"
       ]
     },
-    "https://grib.co/everything-is-too-complicated-2f5727edf89d?source=user_profile---------3----------------------------": {
+    "https://micro.blog/users/follow": {
       "rels": [
-        "follow",
-        "noopener"
-      ],
-      "text": "Jan 8, 2018"
-    },
-    "https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F2f5727edf89d&operation=register&redirect=https%3A%2F%2Fgrib.co%2Feverything-is-too-complicated-2f5727edf89d&source=---------3-----------------bookmark_preview-----------": {
-      "rels": [
-        "follow",
-        "noopener"
+        "subscribe"
       ]
     },
-    "https://grib.co/ace-an-accessibility-conformance-checking-tool-for-epub-3-publications-28ed2bb60275?source=user_profile---------4----------------------------": {
+    "https://grib.co/assets/bigfoot/dist/bigfoot-number.css": {
       "rels": [
-        "follow",
-        "noopener"
+        "stylesheet"
       ],
-      "text": "Oct 18, 2017"
-    },
-    "https://medium.com/tag/a11y?source=user_profile--------------------a11y-----------------": {
-      "rels": [
-        "follow",
-        "noopener"
-      ],
-      "text": "A 11 Y"
-    },
-    "https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F28ed2bb60275&operation=register&redirect=https%3A%2F%2Fgrib.co%2Face-an-accessibility-conformance-checking-tool-for-epub-3-publications-28ed2bb60275&source=---------4-----------------bookmark_preview-----------": {
-      "rels": [
-        "follow",
-        "noopener"
-      ]
-    },
-    "https://grib.co/the-accessibility-error-scanner-we-use-at-github-for-dev-and-production-is-now-open-source-c58bbb548331?source=user_profile---------5----------------------------": {
-      "rels": [
-        "follow",
-        "noopener"
-      ],
-      "text": "Oct 18, 2017"
-    },
-    "https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Fc58bbb548331&operation=register&redirect=https%3A%2F%2Fgrib.co%2Fthe-accessibility-error-scanner-we-use-at-github-for-dev-and-production-is-now-open-source-c58bbb548331&source=---------5-----------------bookmark_preview-----------": {
-      "rels": [
-        "follow",
-        "noopener"
-      ]
-    },
-    "https://grib.co/more-than-voiceover-and-wheelchair-ramps-d860ae6fb96f?source=user_profile---------6----------------------------": {
-      "rels": [
-        "follow",
-        "noopener"
-      ],
-      "text": "Oct 10, 2017"
-    },
-    "https://medium.com/tag/design?source=user_profile--------------------design-----------------": {
-      "rels": [
-        "follow",
-        "noopener"
-      ],
-      "text": "Design"
-    },
-    "https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Fd860ae6fb96f&operation=register&redirect=https%3A%2F%2Fgrib.co%2Fmore-than-voiceover-and-wheelchair-ramps-d860ae6fb96f&source=---------6-----------------bookmark_preview-----------": {
-      "rels": [
-        "follow",
-        "noopener"
-      ]
-    },
-    "https://grib.co/van11y-accessibility-and-es2015-c378cb17830b?source=user_profile---------7----------------------------": {
-      "rels": [
-        "follow",
-        "noopener"
-      ],
-      "text": "Oct 10, 2017"
-    },
-    "https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Fc378cb17830b&operation=register&redirect=https%3A%2F%2Fgrib.co%2Fvan11y-accessibility-and-es2015-c378cb17830b&source=---------7-----------------bookmark_preview-----------": {
-      "rels": [
-        "follow",
-        "noopener"
-      ]
-    },
-    "https://grib.co/ive-followed-jiminy-panoz-since-reading-about-the-blitz-framework-so-it-s-great-to-see-him-working-aa6f1977c014?source=user_profile---------8----------------------------": {
-      "rels": [
-        "follow",
-        "noopener"
-      ],
-      "text": "Oct 9, 2017"
-    },
-    "https://medium.com/tag/eprdctn?source=user_profile--------------------eprdctn-----------------": {
-      "rels": [
-        "follow",
-        "noopener"
-      ],
-      "text": "Eprdctn"
-    },
-    "https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Faa6f1977c014&operation=register&redirect=https%3A%2F%2Fgrib.co%2Five-followed-jiminy-panoz-since-reading-about-the-blitz-framework-so-it-s-great-to-see-him-working-aa6f1977c014&source=---------8-----------------bookmark_preview-----------": {
-      "rels": [
-        "follow",
-        "noopener"
-      ]
-    },
-    "https://grib.co/john-wayne-bb2ffeb84685?source=user_profile---------9----------------------------": {
-      "rels": [
-        "follow",
-        "noopener"
-      ],
-      "text": "Jul 29, 2015"
-    },
-    "https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Fbb2ffeb84685&operation=register&redirect=https%3A%2F%2Fgrib.co%2Fjohn-wayne-bb2ffeb84685&source=---------9-----------------bookmark_preview-----------": {
-      "rels": [
-        "follow",
-        "noopener"
-      ]
-    },
-    "https://grib.co/?source=---two_column_layout_sidebar----------------------------------": {
-      "rels": [
-        "follow",
-        "noopener"
-      ]
-    },
-    "https://grib.co/followers?source=---two_column_layout_sidebar----------------------------------": {
-      "rels": [
-        "follow",
-        "noopener"
-      ],
-      "text": "112 Followers"
-    },
-    "https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fsubscribe%2Fuser%2F5265a6f1b5b9&operation=register&redirect=https%3A%2F%2Fgrib.co%2F&user=Andrew+Gribben&userId=5265a6f1b5b9&source=user_profile-5265a6f1b5b9--two_column_layout_sidebar-----------------------follow_profile-----------": {
-      "rels": [
-        "follow",
-        "noopener"
-      ],
-      "text": "Follow"
-    },
-    "https://medium.com/m/signin?actionUrl=%2F_%2Fapi%2Fsubscriptions%2Fnewsletters%2F99810c7609&operation=register&redirect=https%3A%2F%2Fgrib.co%2F&newsletterV3=5265a6f1b5b9&newsletterV3Id=99810c7609&user=Andrew+Gribben&userId=5265a6f1b5b9&source=---two_column_layout_sidebar-----------------------subscribe_user-----------": {
-      "rels": [
-        "follow",
-        "noopener"
-      ]
-    },
-    "https://billabbate.medium.com/?source=blogrolls_sidebar---two_column_layout_sidebar----------------------------------": {
-      "rels": [
-        "follow",
-        "noopener"
-      ],
-      "text": "Bill Abbate"
-    },
-    "https://mgs.blog/?source=blogrolls_sidebar---two_column_layout_sidebar----------------------------------": {
-      "rels": [
-        "follow",
-        "noopener"
-      ],
-      "text": "M.G. Siegler"
-    },
-    "https://attilavago.medium.com/?source=blogrolls_sidebar---two_column_layout_sidebar----------------------------------": {
-      "rels": [
-        "follow",
-        "noopener"
-      ],
-      "text": "Attila Vágó"
-    },
-    "https://wilw.medium.com/?source=blogrolls_sidebar---two_column_layout_sidebar----------------------------------": {
-      "rels": [
-        "follow",
-        "noopener"
-      ],
-      "text": "Wil Wheaton"
-    },
-    "https://whittle.medium.com/?source=blogrolls_sidebar---two_column_layout_sidebar----------------------------------": {
-      "rels": [
-        "follow",
-        "noopener"
-      ],
-      "text": "Michael Whittle"
-    },
-    "https://help.medium.com/hc/en-us?source=---two_column_layout_sidebar----------------------------------": {
-      "rels": [
-        "follow",
-        "noopener"
-      ],
-      "text": "Help"
-    },
-    "https://medium.statuspage.io/?source=---two_column_layout_sidebar----------------------------------": {
-      "rels": [
-        "follow",
-        "noopener"
-      ],
-      "text": "Status"
-    },
-    "https://about.medium.com/creators/?source=---two_column_layout_sidebar----------------------------------": {
-      "rels": [
-        "follow",
-        "noopener"
-      ],
-      "text": "Writers"
-    },
-    "https://blog.medium.com/?source=---two_column_layout_sidebar----------------------------------": {
-      "rels": [
-        "follow",
-        "noopener"
-      ],
-      "text": "Blog"
-    },
-    "https://medium.com/jobs-at-medium/work-at-medium-959d1a85284e?source=---two_column_layout_sidebar----------------------------------": {
-      "rels": [
-        "follow",
-        "noopener"
-      ],
-      "text": "Careers"
-    },
-    "https://policy.medium.com/medium-privacy-policy-f03bf92035c9?source=---two_column_layout_sidebar----------------------------------": {
-      "rels": [
-        "follow",
-        "noopener"
-      ],
-      "text": "Privacy"
-    },
-    "https://policy.medium.com/medium-terms-of-service-9db0094a1e0f?source=---two_column_layout_sidebar----------------------------------": {
-      "rels": [
-        "follow",
-        "noopener"
-      ],
-      "text": "Terms"
-    },
-    "https://medium.com/about?autoplay=1&source=---two_column_layout_sidebar----------------------------------": {
-      "rels": [
-        "follow",
-        "noopener"
-      ],
-      "text": "About"
-    },
-    "https://speechify.com/medium?source=---two_column_layout_sidebar----------------------------------": {
-      "rels": [
-        "follow",
-        "noopener"
-      ],
-      "text": "Text to speech"
+      "type": "text/css"
     }
   }
 }
