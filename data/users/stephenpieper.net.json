@@ -358,12 +358,15 @@
     ],
     "stylesheet": [
       "https://stephenpieper.net/wp-includes/css/dist/block-library/style.min.css",
+      "https://stephenpieper.net/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css",
+      "https://stephenpieper.net/wp-includes/js/mediaelement/wp-mediaelement.min.css",
       "https://stephenpieper.net/wp-includes/css/classic-themes.min.css",
       "https://stephenpieper.net/wp-content/plugins/indieweb/static/css/indieweb.css",
       "https://stephenpieper.net/wp-content/plugins/simple-location/css/location.min.css",
       "https://stephenpieper.net/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css",
       "https://stephenpieper.net/wp-content/themes/sempress/sempress/style.css",
-      "https://stephenpieper.net/wp-content/themes/SempressChild2/style.css"
+      "https://stephenpieper.net/wp-content/themes/SempressChild2/style.css",
+      "https://stephenpieper.net/wp-content/plugins/jetpack/css/jetpack.css"
     ],
     "https://api.w.org/": [
       "https://stephenpieper.net/wp-json/"
@@ -484,6 +487,20 @@
       "media": "all",
       "type": "text/css"
     },
+    "https://stephenpieper.net/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://stephenpieper.net/wp-includes/js/mediaelement/wp-mediaelement.min.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
     "https://stephenpieper.net/wp-includes/css/classic-themes.min.css": {
       "rels": [
         "stylesheet"
@@ -520,6 +537,13 @@
       "type": "text/css"
     },
     "https://stephenpieper.net/wp-content/themes/SempressChild2/style.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://stephenpieper.net/wp-content/plugins/jetpack/css/jetpack.css": {
       "rels": [
         "stylesheet"
       ],

@@ -1,8 +1,34 @@
 {
-  "items": [],
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "url": [
+          "https://rosetree.de/en/"
+        ],
+        "name": [
+          "Micha Rosenbaum"
+        ],
+        "email": [
+          "mailto:micha@rosetree.de"
+        ]
+      }
+    }
+  ],
   "rels": {
     "canonical": [
       "https://rosetree.de/en/"
+    ],
+    "stylesheet": [
+      "https://rosetree.de/assets/main.css"
+    ],
+    "alternate": [
+      "https://rosetree.de/feed.xml"
+    ],
+    "author": [
+      "https://rosetree.de/"
     ]
   },
   "rel-urls": {
@@ -10,6 +36,24 @@
       "rels": [
         "canonical"
       ]
+    },
+    "https://rosetree.de/assets/main.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://rosetree.de/feed.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Micha Rosenbaum",
+      "type": "application/atom+xml"
+    },
+    "https://rosetree.de/": {
+      "rels": [
+        "author"
+      ],
+      "text": "Micha Rosenbaum"
     }
   }
 }
