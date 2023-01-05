@@ -49,7 +49,8 @@
       "https://mxb.dev/site.webmanifest"
     ],
     "alternate": [
-      "https://mxb.dev/feed.xml"
+      "https://mxb.dev/feed.xml",
+      "https://mxb.dev/notes/feed.xml"
     ],
     "authorization_endpoint": [
       "https://indieauth.com/auth"
@@ -137,6 +138,13 @@
         "alternate"
       ],
       "title": "Max Böck",
+      "type": "application/atom+xml"
+    },
+    "https://mxb.dev/notes/feed.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Max Böck | Notes",
       "type": "application/atom+xml"
     },
     "https://indieauth.com/auth": {

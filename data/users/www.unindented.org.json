@@ -2,6 +2,16 @@
   "items": [
     {
       "type": [
+        "h-full"
+      ],
+      "properties": {
+        "name": [
+          "SearchSearch\nCancel"
+        ]
+      }
+    },
+    {
+      "type": [
         "h-feed"
       ],
       "properties": {},
@@ -97,6 +107,7 @@
             "category": [
               "AssemblyScript",
               "Fractal",
+              "Mandelbrot",
               "WebAssembly"
             ]
           }
@@ -520,7 +531,8 @@
       "https://www.unindented.org/manifest.webmanifest"
     ],
     "alternate": [
-      "https://www.unindented.org/rss.xml"
+      "https://www.unindented.org/rss.xml",
+      "https://www.unindented.org/search.json"
     ],
     "pgpkey": [
       "https://www.unindented.org/pgpkey.pub"
@@ -603,6 +615,13 @@
       ],
       "title": "Unindented",
       "type": "application/rss+xml"
+    },
+    "https://www.unindented.org/search.json": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Unindented",
+      "type": "application/json"
     },
     "https://www.unindented.org/pgpkey.pub": {
       "rels": [

@@ -38,36 +38,18 @@
       "https://pauljones.io/manifest/favicon-512.png",
       "https://pauljones.io/manifest/favicon.svg"
     ],
-    "alternate": [
-      "https://pauljones.io/feed.xml",
-      "https://pauljones.io/feed.json"
-    ],
-    "preload": [
-      "https://pauljones.io/_next/static/css/f07eb7651270e4c5.css"
-    ],
     "stylesheet": [
-      "https://pauljones.io/_next/static/css/f07eb7651270e4c5.css"
-    ],
-    "me": [
-      "https://twitter.com/pjnes",
-      "https://mastodon.social/@pjnes",
-      "https://github.com/pjnes",
-      "https://open.spotify.com/user/pjon.es",
-      "https://www.linkedin.com/in/pjnes"
+      "https://pauljones.io/assets/404.60d10b5e.css"
     ],
     "noopener": [
-      "https://twitter.com/pjnes",
-      "https://mastodon.social/@pjnes",
+      "https://hachyderm.io/@pjnes",
       "https://github.com/pjnes",
-      "https://open.spotify.com/user/pjon.es",
-      "https://www.linkedin.com/in/pjnes"
+      "https://twitter.com/pjnes"
     ],
     "noreferrer": [
-      "https://twitter.com/pjnes",
-      "https://mastodon.social/@pjnes",
+      "https://hachyderm.io/@pjnes",
       "https://github.com/pjnes",
-      "https://open.spotify.com/user/pjon.es",
-      "https://www.linkedin.com/in/pjnes"
+      "https://twitter.com/pjnes"
     ]
   },
   "rel-urls": {
@@ -120,64 +102,31 @@
       ],
       "type": "image/png"
     },
-    "https://pauljones.io/feed.xml": {
+    "https://pauljones.io/assets/404.60d10b5e.css": {
       "rels": [
-        "alternate"
-      ],
-      "title": "RSS feed for pauljones.io",
-      "type": "application/rss+xml"
-    },
-    "https://pauljones.io/feed.json": {
-      "rels": [
-        "alternate"
-      ],
-      "title": "JSON feed for pauljones.io",
-      "type": "application/feed+json"
-    },
-    "https://pauljones.io/_next/static/css/f07eb7651270e4c5.css": {
-      "rels": [
-        "preload"
+        "stylesheet"
       ]
     },
-    "https://twitter.com/pjnes": {
+    "https://hachyderm.io/@pjnes": {
       "rels": [
-        "me",
         "noopener",
         "noreferrer"
       ],
-      "text": "twitterTwitter"
-    },
-    "https://mastodon.social/@pjnes": {
-      "rels": [
-        "me",
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "mastodonMastodon"
+      "text": "\n                    Mastodon\n                  "
     },
     "https://github.com/pjnes": {
       "rels": [
-        "me",
         "noopener",
         "noreferrer"
       ],
-      "text": "githubGithub"
+      "text": "\n                    Github\n                  "
     },
-    "https://open.spotify.com/user/pjon.es": {
+    "https://twitter.com/pjnes": {
       "rels": [
-        "me",
         "noopener",
         "noreferrer"
       ],
-      "text": "spotifySpotify"
-    },
-    "https://www.linkedin.com/in/pjnes": {
-      "rels": [
-        "me",
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "linkedinLinkedin"
+      "text": "\n                    Twitter\n                  "
     }
   }
 }

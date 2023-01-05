@@ -3,17 +3,10 @@
   "rels": {
     "alternate": [
       "https://davidpeach.co.uk/feed/",
-      "https://davidpeach.co.uk/comments/feed/",
-      "https://davidpeach.co.uk/wp-json/wp/v2/pages/31",
-      "https://davidpeach.co.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdavidpeach.co.uk%2F"
+      "https://davidpeach.co.uk/comments/feed/"
     ],
     "stylesheet": [
-      "https://davidpeach.co.uk/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1",
-      "https://davidpeach.co.uk/wp-content/plugins/twentig/dist/style-index.css?ver=be6428226d75d7a7464c",
-      "https://davidpeach.co.uk/wp-includes/css/classic-themes.min.css?ver=1",
-      "https://davidpeach.co.uk/wp-content/themes/twentytwentyone/style.css?ver=1.7",
-      "https://davidpeach.co.uk/wp-content/themes/twentytwentyone/assets/css/print.css?ver=1.7",
-      "https://davidpeach.co.uk/wp-content/plugins/twentig/dist/css/twentytwentyone/style.min.css?ver=1.5.3"
+      "https://davidpeach.co.uk/wp-includes/blocks/navigation/style.min.css?ver=6.1.1"
     ],
     "https://api.w.org/": [
       "https://davidpeach.co.uk/wp-json/"
@@ -24,11 +17,11 @@
     "wlwmanifest": [
       "https://davidpeach.co.uk/wp-includes/wlwmanifest.xml"
     ],
-    "canonical": [
+    "home": [
       "https://davidpeach.co.uk/"
     ],
-    "shortlink": [
-      "https://davidpeach.co.uk/"
+    "nofollow": [
+      "https://wordpress.org/"
     ]
   },
   "rel-urls": {
@@ -46,37 +39,7 @@
       "title": "David Peach » Comments Feed",
       "type": "application/rss+xml"
     },
-    "https://davidpeach.co.uk/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "all"
-    },
-    "https://davidpeach.co.uk/wp-content/plugins/twentig/dist/style-index.css?ver=be6428226d75d7a7464c": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "all"
-    },
-    "https://davidpeach.co.uk/wp-includes/css/classic-themes.min.css?ver=1": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "all"
-    },
-    "https://davidpeach.co.uk/wp-content/themes/twentytwentyone/style.css?ver=1.7": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "all"
-    },
-    "https://davidpeach.co.uk/wp-content/themes/twentytwentyone/assets/css/print.css?ver=1.7": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "print"
-    },
-    "https://davidpeach.co.uk/wp-content/plugins/twentig/dist/css/twentytwentyone/style.min.css?ver=1.5.3": {
+    "https://davidpeach.co.uk/wp-includes/blocks/navigation/style.min.css?ver=6.1.1": {
       "rels": [
         "stylesheet"
       ],
@@ -86,12 +49,6 @@
       "rels": [
         "https://api.w.org/"
       ]
-    },
-    "https://davidpeach.co.uk/wp-json/wp/v2/pages/31": {
-      "rels": [
-        "alternate"
-      ],
-      "type": "application/json"
     },
     "https://davidpeach.co.uk/xmlrpc.php?rsd": {
       "rels": [
@@ -108,14 +65,15 @@
     },
     "https://davidpeach.co.uk/": {
       "rels": [
-        "canonical"
-      ]
-    },
-    "https://davidpeach.co.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdavidpeach.co.uk%2F": {
-      "rels": [
-        "alternate"
+        "home"
       ],
-      "type": "application/json+oembed"
+      "text": "David Peach"
+    },
+    "https://wordpress.org/": {
+      "rels": [
+        "nofollow"
+      ],
+      "text": "WordPress"
     }
   }
 }

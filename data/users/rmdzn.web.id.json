@@ -1,24 +1,29 @@
 {
   "items": [],
   "rels": {
-    "authorization_endpoint": [
-      "https://indieauth.com/auth"
+    "icon": [
+      "https://rmdzn.web.id/images/favicon.png"
     ],
-    "me": [
-      "https://github.com/rafeyu"
+    "shortcut": [
+      "https://rmdzn.web.id/images/favicon.png"
+    ],
+    "alternate": [
+      "https://rmdzn.web.id/index.xml"
     ]
   },
   "rel-urls": {
-    "https://indieauth.com/auth": {
+    "https://rmdzn.web.id/images/favicon.png": {
       "rels": [
-        "authorization_endpoint"
+        "icon",
+        "shortcut"
       ]
     },
-    "https://github.com/rafeyu": {
+    "https://rmdzn.web.id/index.xml": {
       "rels": [
-        "me"
+        "alternate"
       ],
-      "text": "GitHub"
+      "title": "🌚 ridan maza",
+      "type": "application/rss+xml"
     }
   }
 }

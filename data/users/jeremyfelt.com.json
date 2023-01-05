@@ -53,6 +53,25 @@
           "properties": {
             "content": [
               {
+                "html": "<p><a href=\"https://youtu.be/vks6lsaXl7o\">Disorder in the House</a> </p>\n\t\t\t\t<p><a href=\"https://jeremyfelt.com/notes/7d2d1672890327/\" class=\"u-url\"><span class=\"screen-reader-text\">Published </span>\n\t\t<time class=\"dt-published\" datetime=\"2023-01-04T19:45:55-08:00\">Wednesday, Jan 4 at 19:45</time>\n\t</a></p>",
+                "value": "Disorder in the House \n\t\t\t\tPublished \n\t\tWednesday, Jan 4 at 19:45"
+              }
+            ],
+            "url": [
+              "https://jeremyfelt.com/notes/7d2d1672890327/"
+            ],
+            "published": [
+              "2023-01-04T19:45:55-08:00"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
                 "html": "<p>One of our parenting mottos is: “It’s okay, we have a Tineco!”</p>\n\t\t\t\t<p><a href=\"https://jeremyfelt.com/notes/ae151672718409/\" class=\"u-url\"><span class=\"screen-reader-text\">Published </span>\n\t\t<time class=\"dt-published\" datetime=\"2023-01-02T20:01:14-08:00\">Monday, Jan 2 at 20:01</time>\n\t</a></p>",
                 "value": "One of our parenting mottos is: “It’s okay, we have a Tineco!”\n\t\t\t\tPublished \n\t\tMonday, Jan 2 at 20:01"
               }
@@ -216,28 +235,6 @@
               "2022-12-21T13:32:46-08:00"
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "in-reply-to": [
-              "https://jeremyfelt.com/notes/3e731671499299/"
-            ],
-            "content": [
-              {
-                "html": "<p>Second 503 error in the middle of the night. 49% complete!</p>\n\t\t\t\t<p><a href=\"https://jeremyfelt.com/notes/331f1671639832/\" class=\"u-url\"><span class=\"screen-reader-text\">Published </span>\n\t\t<time class=\"dt-published\" datetime=\"2022-12-21T08:24:23-08:00\">Wednesday, Dec 21, 2022 at 08:24</time>\n\t</a></p>",
-                "value": "Second 503 error in the middle of the night. 49% complete!\n\t\t\t\tPublished \n\t\tWednesday, Dec 21, 2022 at 08:24"
-              }
-            ],
-            "url": [
-              "https://jeremyfelt.com/notes/331f1671639832/"
-            ],
-            "published": [
-              "2022-12-21T08:24:23-08:00"
-            ]
-          }
         }
       ]
     }
@@ -258,6 +255,9 @@
     ],
     "token_endpoint": [
       "https://jeremyfelt.com/wp-json/indieauth/1.0/token"
+    ],
+    "indieauth-metadata": [
+      "https://jeremyfelt.com/wp-json/indieauth/1.0/metadata"
     ],
     "me": [
       "https://github.com/jeremyfelt",
@@ -313,6 +313,11 @@
     "https://jeremyfelt.com/wp-json/indieauth/1.0/token": {
       "rels": [
         "token_endpoint"
+      ]
+    },
+    "https://jeremyfelt.com/wp-json/indieauth/1.0/metadata": {
+      "rels": [
+        "indieauth-metadata"
       ]
     },
     "https://github.com/jeremyfelt": {
