@@ -15,6 +15,10 @@
     }
   ],
   "rels": {
+    "alternate": [
+      "https://pauljones.io/feed.xml",
+      "https://pauljones.io/feed.json"
+    ],
     "webmention": [
       "https://webmention.io/pauljones.io/webmention"
     ],
@@ -39,7 +43,7 @@
       "https://pauljones.io/manifest/favicon.svg"
     ],
     "stylesheet": [
-      "https://pauljones.io/assets/404.60d10b5e.css"
+      "https://pauljones.io/assets/404.4669db6c.css"
     ],
     "noopener": [
       "https://hachyderm.io/@pjnes",
@@ -53,6 +57,18 @@
     ]
   },
   "rel-urls": {
+    "https://pauljones.io/feed.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/rss+xml"
+    },
+    "https://pauljones.io/feed.json": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/json"
+    },
     "https://webmention.io/pauljones.io/webmention": {
       "rels": [
         "webmention"
@@ -102,7 +118,7 @@
       ],
       "type": "image/png"
     },
-    "https://pauljones.io/assets/404.60d10b5e.css": {
+    "https://pauljones.io/assets/404.4669db6c.css": {
       "rels": [
         "stylesheet"
       ]

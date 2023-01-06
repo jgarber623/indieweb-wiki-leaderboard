@@ -6,7 +6,12 @@
       "https://davidpeach.co.uk/comments/feed/"
     ],
     "stylesheet": [
-      "https://davidpeach.co.uk/wp-includes/blocks/navigation/style.min.css?ver=6.1.1"
+      "https://davidpeach.co.uk/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1",
+      "https://davidpeach.co.uk/wp-content/plugins/twentig/dist/style-index.css?ver=be6428226d75d7a7464c",
+      "https://davidpeach.co.uk/wp-includes/css/classic-themes.min.css?ver=1",
+      "https://davidpeach.co.uk/wp-content/themes/twentytwentyone/style.css?ver=1.7",
+      "https://davidpeach.co.uk/wp-content/themes/twentytwentyone/assets/css/print.css?ver=1.7",
+      "https://davidpeach.co.uk/wp-content/plugins/twentig/dist/css/twentytwentyone/style.min.css?ver=1.5.3"
     ],
     "https://api.w.org/": [
       "https://davidpeach.co.uk/wp-json/"
@@ -17,11 +22,36 @@
     "wlwmanifest": [
       "https://davidpeach.co.uk/wp-includes/wlwmanifest.xml"
     ],
-    "home": [
-      "https://davidpeach.co.uk/"
+    "category": [
+      "https://davidpeach.co.uk/category/virtual-photography/god-of-war/",
+      "https://davidpeach.co.uk/category/galleries-journal/",
+      "https://davidpeach.co.uk/category/notes/",
+      "https://davidpeach.co.uk/category/quotes-favourites/",
+      "https://davidpeach.co.uk/category/journal/"
     ],
-    "nofollow": [
-      "https://wordpress.org/"
+    "tag": [
+      "https://davidpeach.co.uk/category/virtual-photography/god-of-war/",
+      "https://davidpeach.co.uk/tag/god-of-war/",
+      "https://davidpeach.co.uk/tag/playstation/",
+      "https://davidpeach.co.uk/tag/ps4/",
+      "https://davidpeach.co.uk/category/galleries-journal/",
+      "https://davidpeach.co.uk/tag/birmingham/",
+      "https://davidpeach.co.uk/tag/flowers/",
+      "https://davidpeach.co.uk/tag/aliens/",
+      "https://davidpeach.co.uk/tag/predator/",
+      "https://davidpeach.co.uk/tag/toys/",
+      "https://davidpeach.co.uk/category/notes/",
+      "https://davidpeach.co.uk/tag/grinding-my-gears/",
+      "https://davidpeach.co.uk/tag/cinema/",
+      "https://davidpeach.co.uk/tag/films/",
+      "https://davidpeach.co.uk/tag/james-bond/",
+      "https://davidpeach.co.uk/category/quotes-favourites/",
+      "https://davidpeach.co.uk/tag/hannibal/",
+      "https://davidpeach.co.uk/tag/quotes/",
+      "https://davidpeach.co.uk/category/journal/",
+      "https://davidpeach.co.uk/tag/tv/",
+      "https://davidpeach.co.uk/tag/indieweb/",
+      "https://davidpeach.co.uk/tag/terminator/"
     ]
   },
   "rel-urls": {
@@ -39,7 +69,37 @@
       "title": "David Peach » Comments Feed",
       "type": "application/rss+xml"
     },
-    "https://davidpeach.co.uk/wp-includes/blocks/navigation/style.min.css?ver=6.1.1": {
+    "https://davidpeach.co.uk/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://davidpeach.co.uk/wp-content/plugins/twentig/dist/style-index.css?ver=be6428226d75d7a7464c": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://davidpeach.co.uk/wp-includes/css/classic-themes.min.css?ver=1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://davidpeach.co.uk/wp-content/themes/twentytwentyone/style.css?ver=1.7": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://davidpeach.co.uk/wp-content/themes/twentytwentyone/assets/css/print.css?ver=1.7": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "print"
+    },
+    "https://davidpeach.co.uk/wp-content/plugins/twentig/dist/css/twentytwentyone/style.min.css?ver=1.5.3": {
       "rels": [
         "stylesheet"
       ],
@@ -63,17 +123,142 @@
       ],
       "type": "application/wlwmanifest+xml"
     },
-    "https://davidpeach.co.uk/": {
+    "https://davidpeach.co.uk/category/virtual-photography/god-of-war/": {
       "rels": [
-        "home"
+        "category",
+        "tag"
       ],
-      "text": "David Peach"
+      "text": "God of War"
     },
-    "https://wordpress.org/": {
+    "https://davidpeach.co.uk/tag/god-of-war/": {
       "rels": [
-        "nofollow"
+        "tag"
       ],
-      "text": "WordPress"
+      "text": "God of War"
+    },
+    "https://davidpeach.co.uk/tag/playstation/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "PlayStation"
+    },
+    "https://davidpeach.co.uk/tag/ps4/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "PS4"
+    },
+    "https://davidpeach.co.uk/category/galleries-journal/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Galleries"
+    },
+    "https://davidpeach.co.uk/tag/birmingham/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Birmingham"
+    },
+    "https://davidpeach.co.uk/tag/flowers/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Flowers"
+    },
+    "https://davidpeach.co.uk/tag/aliens/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Aliens"
+    },
+    "https://davidpeach.co.uk/tag/predator/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Predator"
+    },
+    "https://davidpeach.co.uk/tag/toys/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Toys"
+    },
+    "https://davidpeach.co.uk/category/notes/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Notes"
+    },
+    "https://davidpeach.co.uk/tag/grinding-my-gears/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Grinding my gears"
+    },
+    "https://davidpeach.co.uk/tag/cinema/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Cinema"
+    },
+    "https://davidpeach.co.uk/tag/films/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Films"
+    },
+    "https://davidpeach.co.uk/tag/james-bond/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "James Bond"
+    },
+    "https://davidpeach.co.uk/category/quotes-favourites/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Quotes"
+    },
+    "https://davidpeach.co.uk/tag/hannibal/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Hannibal"
+    },
+    "https://davidpeach.co.uk/tag/quotes/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Quotes"
+    },
+    "https://davidpeach.co.uk/category/journal/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Journal"
+    },
+    "https://davidpeach.co.uk/tag/tv/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "TV"
+    },
+    "https://davidpeach.co.uk/tag/indieweb/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "indieweb"
+    },
+    "https://davidpeach.co.uk/tag/terminator/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Terminator"
     }
   }
 }

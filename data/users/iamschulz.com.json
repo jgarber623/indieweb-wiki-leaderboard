@@ -5,11 +5,18 @@
         "h-card"
       ],
       "properties": {
-        "name": [
-          "Daniel Schulz"
-        ],
         "url": [
-          "https://iamschulz.com/"
+          "acct:iamschulz.com@iamschulz.com",
+          "https://indieweb.social/@iamschulz"
+        ],
+        "photo": [
+          {
+            "value": "https://iamschulz.com/assets/logo.svg",
+            "alt": "iamschulz avatar"
+          }
+        ],
+        "note": [
+          "Mostly frontend, sometimes art"
         ]
       }
     }
@@ -34,11 +41,15 @@
     "manifest": [
       "https://iamschulz.com/manifest.json"
     ],
+    "webmention": [
+      "https://webmention.io/iamschulz.com/webmention"
+    ],
     "pingback": [
       "https://webmention.io/iamschulz.com/xmlrpc"
     ],
     "me": [
       "mailto:hallo@iamschulz.de",
+      "https://iamschulz.com/",
       "https://indieweb.social/@iamschulz"
     ],
     "noopener": [
@@ -88,6 +99,11 @@
         "manifest"
       ]
     },
+    "https://webmention.io/iamschulz.com/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
     "https://webmention.io/iamschulz.com/xmlrpc": {
       "rels": [
         "pingback"
@@ -98,11 +114,17 @@
         "me"
       ]
     },
+    "https://iamschulz.com/": {
+      "rels": [
+        "me"
+      ],
+      "text": "Daniel Schulz"
+    },
     "https://indieweb.social/@iamschulz": {
       "rels": [
         "me"
       ],
-      "text": "Mastodon"
+      "text": "my Mastodon"
     },
     "https://pagespeed.web.dev/report?url=https%3A%2F%2Fiamschulz.com%2F&form_factor=mobile": {
       "rels": [
