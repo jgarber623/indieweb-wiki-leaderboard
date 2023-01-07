@@ -3,7 +3,6 @@
   "rels": {
     "alternate": [
       "https://manuelmoreale.com/feed/rss",
-      "https://manuelmoreale.com/feed/json",
       "https://manuelmoreale.com/feed/instagram"
     ],
     "me": [
@@ -19,11 +18,17 @@
       "https://webmention.io/manuelmoreale.com/xmlrpc"
     ],
     "noopener": [
+      "https://minimalissimo.com/",
+      "https://cmhb.de/",
+      "https://minimalissimo.com/articles/torus-house",
       "https://buttondown.email/manuelmorealedotcom",
       "https://micro.blog/manuelmoreale",
       "https://buttondown.email/manuelmoreale"
     ],
     "noreferrer": [
+      "https://minimalissimo.com/",
+      "https://cmhb.de/",
+      "https://minimalissimo.com/articles/torus-house",
       "https://buttondown.email/manuelmorealedotcom",
       "https://micro.blog/manuelmoreale",
       "https://buttondown.email/manuelmoreale"
@@ -37,19 +42,12 @@
       "title": "Manu RSS Feed",
       "type": "application/rss+xml"
     },
-    "https://manuelmoreale.com/feed/json": {
-      "rels": [
-        "alternate"
-      ],
-      "title": "Manu JSON Feed",
-      "type": "application/json"
-    },
     "https://manuelmoreale.com/feed/instagram": {
       "rels": [
         "alternate"
       ],
       "title": "Manu INSTAGRAM Feed",
-      "type": "application/json"
+      "type": "application/rss+xml"
     },
     "https://github.com/manuelmoreale": {
       "rels": [
@@ -70,6 +68,27 @@
       "rels": [
         "pingback"
       ]
+    },
+    "https://minimalissimo.com/": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "Minimalissimo"
+    },
+    "https://cmhb.de/": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "Carl"
+    },
+    "https://minimalissimo.com/articles/torus-house": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "bunker inspired homes"
     },
     "https://buttondown.email/manuelmorealedotcom": {
       "rels": [

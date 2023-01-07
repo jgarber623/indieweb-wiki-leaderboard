@@ -6,6 +6,30 @@
       ],
       "properties": {
         "name": [
+          "Gaming on an Android VM on Linux"
+        ],
+        "summary": [
+          "So you can do the gacha grind on your computer instead of your phone",
+          "I wanted to run Android games (specifically Arknights) on my NixOS box, but\nAnbox seems to be broken on NixOS. So, I figured out a way to make it work in\nLibvirt. Other people wanted to do it too, so here's a guide.\nAssumptions about you\nYou know how to navigate an Android… read more"
+        ],
+        "published": [
+          "2023-01-07T01:03:17.000Z"
+        ],
+        "category": [
+          "libvirt",
+          "Linux",
+          "virtualization",
+          "gaming",
+          "Android"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
           "Using PRs in Nixpkgs before they actually land in Nixpkgs"
         ],
         "summary": [
@@ -138,25 +162,6 @@
           "teardown",
           "incompetency",
           "cybersecurity"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "summary": [
-          "TIL that you can analyze live packets from remote network interfaces in\nWireshark with the following command:\n```bash\nssh $SSH_TARGET \"tcpdump -w- -i $REMOTE_INTERFACE\" | wireshark -k -i-\n```It's essentially three commands glued together in a big pipe.\nOn the left side of the… read more"
-        ],
-        "published": [
-          "2022-04-29T05:00:18.000Z"
-        ],
-        "category": [
-          "wireshark",
-          "networking",
-          "cybersecurity",
-          "blogumentation"
         ]
       }
     },

@@ -61,6 +61,51 @@
             ],
             "content": [
               {
+                "html": "<p>All right, settled in for the evening...as soon as I finish running some updates, it's time to see how much more of <a class=\"mention hashtag\" href=\"https://bw3.dev/t/holidayhack\" rel=\"tag\">#<span>HolidayHack</span></a> I can finish. I might have to come back to this fountain thing.\n<a href=\"https://brid.gy/publish/twitter\"></a></p>",
+                "value": "All right, settled in for the evening...as soon as I finish running some updates, it's time to see how much more of #HolidayHack I can finish. I might have to come back to this fountain thing."
+              }
+            ],
+            "url": [
+              "https://bw3.dev/o/295ax"
+            ],
+            "uid": [
+              "https://bw3.dev/o/295ax"
+            ],
+            "published": [
+              "2023-01-06T23:57:23"
+            ]
+          },
+          "id": "permalink-df40df9d86bc54ef8e250b5f5feeaaa5"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "photo": [
+                    {
+                      "value": "https://bw3.dev/static/noicon.png",
+                      "alt": "㬋's avatar"
+                    }
+                  ],
+                  "url": [
+                    "https://bw3.dev/"
+                  ],
+                  "name": [
+                    "@0x3b0b@bw3.dev"
+                  ]
+                },
+                "value": "@0x3b0b@bw3.dev"
+              }
+            ],
+            "content": [
+              {
                 "html": "<p>Tweaks to my site in the last couple days:</p>\n<ul>\n<li>My Articles page was already marked up as an <a href=\"https://indieweb.org/h-feed\">h-feed</a>, but because the links to the posts were not marked up as <code>h-entry</code> it appeared empty. I remedied that and submitted an issue to the dev.</li>\n<li>I added <code>&lt;link&gt;</code> so that, at least in theory, I can now support old-fashioned pingbacks by having <a href=\"https://webmention.io/\">webmention.io</a> forward them to me as webmentions.</li>\n<li>Tracked down why, when I try to start composing a reply and one of the actors in the thread is a profile I can't retrieve (such as because their instance uses a whitelist I'm not on), I get a 500 error; wrapped the offending attempt to add them to the \"@\" list in a <code>try</code> and, for now, just drop them from the list, the same way the instance where my other account lives seems to do it. Submitted an issue for that too. (I might investigate later what happens if I try to leave the @-mention in place even though the lookup failed.)</li>\n<li>Implemented a config toggle (not sure why I bothered to make it a config toggle; maybe I think other people might like it eventually?) to change the object IDs of posts from being a hex representation of a UUID to being a <a href=\"http://tantek.pbworks.com/w/page/19402946/NewBase60\">NewBase60</a>-encoded...well, unix timestamp divided by 60, because I wanted resolution to the minute. Why? Because I have a few edge cases I think I might come across eventually in which I want to work around the fact that I can't easily edit my posts by predicting a permalink in advance. I may remove the division by 60 eventually, because I am pretty sure I generate one of those IDs for everything I do, and therefore I now can't post two things within the same minute. That might not sound like a big deal given how long my notes are (no, I can't type this much in under a minute), but the ID in question is also used as the ActivityPub ID of the action, so it applies - I'm pretty sure, and have tested at least one combination - to likes, shares, and so forth as well. By comparison...well, I suppose I might try to like and boost something within the same second, but not often. Anyhow, I'll see how it goes - the other nice thing about it is that as far as I can tell, since the IDs were already just something standing in to be unique, I can switch it up whenever I like and it just affects my posts during the time I have that configuration active. Come to think of it, I should make it configurable whether it uses seconds or minutes. Maybe tomorrow.</li>\n</ul>\n<p>So there's just one problem, from my perspective. Which is that before I decided to muck around with all that, I had meant to use this weekend to work on the <a class=\"mention hashtag\" href=\"https://bw3.dev/t/holidayhack\" rel=\"tag\">#<span>holidayhack</span></a>, because I thought I might actually try to submit my write-up this year... <img src=\"https://bw3.dev/static/twemoji/1f926-1f3fc.svg\" alt=\"🤦🏼\" class=\"emoji\"></p>",
                 "value": "Tweaks to my site in the last couple days:\n\nMy Articles page was already marked up as an h-feed, but because the links to the posts were not marked up as h-entry it appeared empty. I remedied that and submitted an issue to the dev.\nI added <link> so that, at least in theory, I can now support old-fashioned pingbacks by having webmention.io forward them to me as webmentions.\nTracked down why, when I try to start composing a reply and one of the actors in the thread is a profile I can't retrieve (such as because their instance uses a whitelist I'm not on), I get a 500 error; wrapped the offending attempt to add them to the \"@\" list in a try and, for now, just drop them from the list, the same way the instance where my other account lives seems to do it. Submitted an issue for that too. (I might investigate later what happens if I try to leave the @-mention in place even though the lookup failed.)\nImplemented a config toggle (not sure why I bothered to make it a config toggle; maybe I think other people might like it eventually?) to change the object IDs of posts from being a hex representation of a UUID to being a NewBase60-encoded...well, unix timestamp divided by 60, because I wanted resolution to the minute. Why? Because I have a few edge cases I think I might come across eventually in which I want to work around the fact that I can't easily edit my posts by predicting a permalink in advance. I may remove the division by 60 eventually, because I am pretty sure I generate one of those IDs for everything I do, and therefore I now can't post two things within the same minute. That might not sound like a big deal given how long my notes are (no, I can't type this much in under a minute), but the ID in question is also used as the ActivityPub ID of the action, so it applies - I'm pretty sure, and have tested at least one combination - to likes, shares, and so forth as well. By comparison...well, I suppose I might try to like and boost something within the same second, but not often. Anyhow, I'll see how it goes - the other nice thing about it is that as far as I can tell, since the IDs were already just something standing in to be unique, I can switch it up whenever I like and it just affects my posts during the time I have that configuration active. Come to think of it, I should make it configurable whether it uses seconds or minutes. Maybe tomorrow.\n\nSo there's just one problem, from my perspective. Which is that before I decided to muck around with all that, I had meant to use this weekend to work on the #holidayhack, because I thought I might actually try to submit my write-up this year...  🤦🏼"
               }
@@ -115,7 +160,7 @@
                       "properties": {
                         "photo": [
                           {
-                            "value": "https://bw3.dev/proxy/media/19370/qduPZ2Mg7P3WPyKzaNyMAnJ4KRz93W__LkpLlLBQRpo=/aHR0cHM6Ly9maWxlcy5tYXN0b2Rvbi5zb2NpYWwvYWNjb3VudHMvYXZhdGFycy8wMDAvMDA1Lzk2Mi9vcmlnaW5hbC84NDllM2NjNjY1YTE4ZWYyLnBuZw==/50",
+                            "value": "https://bw3.dev/proxy/media/19371/T0XuwpuIKy9s15wofxvsiLI09_TSyYjhqXruLP2QUOM=/aHR0cHM6Ly9maWxlcy5tYXN0b2Rvbi5zb2NpYWwvYWNjb3VudHMvYXZhdGFycy8wMDAvMDA1Lzk2Mi9vcmlnaW5hbC84NDllM2NjNjY1YTE4ZWYyLnBuZw==/50",
                             "alt": "AndStatus@Mastodon's avatar"
                           }
                         ],
@@ -375,7 +420,7 @@
                       "properties": {
                         "photo": [
                           {
-                            "value": "https://bw3.dev/proxy/media/19370/azPJl4ANGCAHmi4cHEGRlAAedNfEaFtIG025chYnJ0s=/aHR0cHM6Ly9jZG4ubWFzdG8uaG9zdC9tZWRtYXN0b2RvbmNvbS9hY2NvdW50cy9hdmF0YXJzLzEwOS8zMDAvMzY3LzU1MC81ODIvMjYwL29yaWdpbmFsLzUzODA2MjJiYzhiZDJhZTYuanBn/50",
+                            "value": "https://bw3.dev/proxy/media/19371/nzbdL6n5Paf7sOuSZmBupbmlJtifkO2-DQdZqp60pus=/aHR0cHM6Ly9jZG4ubWFzdG8uaG9zdC9tZWRtYXN0b2RvbmNvbS9hY2NvdW50cy9hdmF0YXJzLzEwOS8zMDAvMzY3LzU1MC81ODIvMjYwL29yaWdpbmFsLzUzODA2MjJiYzhiZDJhZTYuanBn/50",
                             "alt": "Dr. Lucky Tran :verified:'s avatar"
                           }
                         ],
@@ -397,7 +442,7 @@
                   ],
                   "photo": [
                     {
-                      "value": "https://bw3.dev/proxy/media/19370/d_MCCrXinBExRPbMxuE6IxK9VX9Wx3ICM0kH1-RuWQs=/aHR0cHM6Ly9jZG4ubWFzdG8uaG9zdC9tZWRtYXN0b2RvbmNvbS9tZWRpYV9hdHRhY2htZW50cy9maWxlcy8xMDkvNDg1LzI0NC8xNTkvNjgxLzY2MC9vcmlnaW5hbC84ZmYyMTY5Yzk3Mjc0N2Y5LmpwZWc=/740",
+                      "value": "https://bw3.dev/proxy/media/19371/LMt5tiHykXegdFd67RNW78z9rXXju6ucocw7Fp0L6KA=/aHR0cHM6Ly9jZG4ubWFzdG8uaG9zdC9tZWRtYXN0b2RvbmNvbS9tZWRpYV9hdHRhY2htZW50cy9maWxlcy8xMDkvNDg1LzI0NC8xNTkvNjgxLzY2MC9vcmlnaW5hbC84ZmYyMTY5Yzk3Mjc0N2Y5LmpwZWc=/740",
                       "alt": "COVID-19 Advisory Everyone should wear a mask:\n\n« At all times when in an indoor public setting, including inside stores, offices, lobbies, hallways, elevators, public transportation, schools, child care facilities, and other public shared spaces\n\n¢ In crowded outdoor settings\n\n« If you're sick and unable to separate from others, such as when traveling to and from a health care provider, picking up groceries, and when in shared living spaces\n\n« If you are positive for COVID-19\n\nWear a high-quality mask, such as a KN95 or KF94, or an N95 respirator, for additional protection."
                     }
                   ],
@@ -470,7 +515,7 @@
   ],
   "rels": {
     "stylesheet": [
-      "https://bw3.dev/static/css/main.css?v=147384a636717eb65b8d54ebdeca994a"
+      "https://bw3.dev/static/css/main.css?v=28ae0feb0b9c40f42707b4bb3d54f64f"
     ],
     "alternate": [
       "https://bw3.dev/feed.json",
@@ -550,7 +595,7 @@
     ]
   },
   "rel-urls": {
-    "https://bw3.dev/static/css/main.css?v=147384a636717eb65b8d54ebdeca994a": {
+    "https://bw3.dev/static/css/main.css?v=28ae0feb0b9c40f42707b4bb3d54f64f": {
       "rels": [
         "stylesheet"
       ]
@@ -654,7 +699,7 @@
       "rels": [
         "tag"
       ],
-      "text": "#holidayhack"
+      "text": "#HolidayHack"
     },
     "https://mastodon.social/@AndStatus/109578619453696699": {
       "rels": [
