@@ -56,7 +56,7 @@
       "https://openid.stackexchange.com/user/d6fc3e55-7717-4688-8e57-55fce40c106c"
     ],
     "me": [
-      "https://chaos.social/@gerwitz",
+      "https://social.gerwitz.com/@hans",
       "https://micro.blog/gerwitz",
       "https://twitter.com/gerwitz",
       "https://github.com/gerwitz",
@@ -64,14 +64,14 @@
       "https://www.facebook.com/gerwitz",
       "https://social.gerwitz.com/main/ostatus?nickname=hans"
     ],
+    "micropub": [
+      "https://indiekit.gerwitz.com/micropub"
+    ],
     "authorization_endpoint": [
-      "https://indieauth.com/auth"
+      "https://indiekit.gerwitz.com/auth"
     ],
     "token_endpoint": [
-      "https://tokens.indieauth.com/token"
-    ],
-    "micropub": [
-      "https://sitewriter.net/hans.gerwitz.com/micropub"
+      "https://indiekit.gerwitz.com/auth/token"
     ],
     "friend": [
       "https://shannonethomas.com/"
@@ -150,7 +150,7 @@
         "openid2.local_id"
       ]
     },
-    "https://chaos.social/@gerwitz": {
+    "https://social.gerwitz.com/@hans": {
       "rels": [
         "me"
       ]
@@ -180,19 +180,19 @@
         "me"
       ]
     },
-    "https://indieauth.com/auth": {
+    "https://indiekit.gerwitz.com/micropub": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://indiekit.gerwitz.com/auth": {
       "rels": [
         "authorization_endpoint"
       ]
     },
-    "https://tokens.indieauth.com/token": {
+    "https://indiekit.gerwitz.com/auth/token": {
       "rels": [
         "token_endpoint"
-      ]
-    },
-    "https://sitewriter.net/hans.gerwitz.com/micropub": {
-      "rels": [
-        "micropub"
       ]
     },
     "https://shannonethomas.com/": {

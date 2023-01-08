@@ -413,7 +413,7 @@
       "http://diggingthedigital.com/wp-content/themes/genesis-sample/lib/gutenberg/front-end.css?ver=2.9.0",
       "http://diggingthedigital.com/wp-content/plugins/simple-social-icons/css/style.css?ver=3.0.2",
       "http://diggingthedigital.com/wp-content/plugins/newsletter-glue-pro/assets/css/gutenberg.min.css?ver=1.7.2",
-      "http://diggingthedigital.com/wp-content/plugins/jetpack/css/jetpack.css?ver=11.4"
+      "http://diggingthedigital.com/wp-content/plugins/jetpack/css/jetpack.css?ver=11.6"
     ],
     "https://api.w.org/": [
       "https://diggingthedigital.com/wp-json/"
@@ -433,6 +433,9 @@
     ],
     "token_endpoint": [
       "https://diggingthedigital.com/wp-json/indieauth/1.0/token"
+    ],
+    "indieauth-metadata": [
+      "https://diggingthedigital.com/wp-json/indieauth/1.0/metadata"
     ],
     "pingback": [
       "http://diggingthedigital.com/xmlrpc.php"
@@ -677,7 +680,7 @@
       "media": "all",
       "type": "text/css"
     },
-    "http://diggingthedigital.com/wp-content/plugins/jetpack/css/jetpack.css?ver=11.4": {
+    "http://diggingthedigital.com/wp-content/plugins/jetpack/css/jetpack.css?ver=11.6": {
       "rels": [
         "stylesheet"
       ],
@@ -727,6 +730,11 @@
     "https://diggingthedigital.com/wp-json/indieauth/1.0/token": {
       "rels": [
         "token_endpoint"
+      ]
+    },
+    "https://diggingthedigital.com/wp-json/indieauth/1.0/metadata": {
+      "rels": [
+        "indieauth-metadata"
       ]
     },
     "http://diggingthedigital.com/xmlrpc.php": {

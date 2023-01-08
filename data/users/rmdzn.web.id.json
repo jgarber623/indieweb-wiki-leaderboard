@@ -9,6 +9,9 @@
     ],
     "alternate": [
       "https://rmdzn.web.id/index.xml"
+    ],
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
     ]
   },
   "rel-urls": {
@@ -24,6 +27,11 @@
       ],
       "title": "🌚 ridan maza",
       "type": "application/rss+xml"
+    },
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
     }
   }
 }

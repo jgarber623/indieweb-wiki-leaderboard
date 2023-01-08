@@ -88,6 +88,9 @@
     "wlwmanifest": [
       "https://chatan.cc/wp-includes/wlwmanifest.xml"
     ],
+    "friends-base-url": [
+      "https://chatan.cc/wp-json/friends/v1"
+    ],
     "preload": [
       "https://chatan.cc/wp-content/themes/buddyx/assets/css/content.min.css?ver=4.4.5",
       "https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
@@ -469,6 +472,11 @@
         "wlwmanifest"
       ],
       "type": "application/wlwmanifest+xml"
+    },
+    "https://chatan.cc/wp-json/friends/v1": {
+      "rels": [
+        "friends-base-url"
+      ]
     },
     "https://chatan.cc/wp-content/themes/buddyx/assets/css/content.min.css?ver=4.4.5": {
       "rels": [
