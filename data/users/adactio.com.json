@@ -42,6 +42,76 @@
       "properties": {
         "photo": [
           {
+            "value": "https://adactio.com/images/uploaded/19814-1/small.jpg",
+            "srcset": {
+              "320w": "https://adactio.com/images/uploaded/19814-1/small.jpg",
+              "480w": "https://adactio.com/images/uploaded/19814-1/medium.jpg",
+              "800w": "https://adactio.com/images/uploaded/19814-1/large.jpg"
+            },
+            "alt": "Picture 1"
+          },
+          {
+            "value": "https://adactio.com/images/uploaded/19814-2/small.jpg",
+            "srcset": {
+              "320w": "https://adactio.com/images/uploaded/19814-2/small.jpg",
+              "480w": "https://adactio.com/images/uploaded/19814-2/medium.jpg",
+              "800w": "https://adactio.com/images/uploaded/19814-2/large.jpg"
+            },
+            "alt": "Picture 2"
+          },
+          {
+            "value": "https://adactio.com/images/uploaded/19814-3/small.jpg",
+            "srcset": {
+              "320w": "https://adactio.com/images/uploaded/19814-3/small.jpg",
+              "480w": "https://adactio.com/images/uploaded/19814-3/medium.jpg",
+              "800w": "https://adactio.com/images/uploaded/19814-3/large.jpg"
+            },
+            "alt": "Picture 3"
+          }
+        ],
+        "content": [
+          {
+            "html": "<p>Checked in at Cat Inn. Anniversary Sunday lunch — with Jessica</p>",
+            "value": "Checked in at Cat Inn. Anniversary Sunday lunch — with Jessica"
+          }
+        ],
+        "name": [
+          "Checked in at Cat Inn. Anniversary Sunday lunch — with Jessica"
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "51.07670170"
+              ],
+              "longitude": [
+                "-0.05544662"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/notes/19814"
+        ],
+        "published": [
+          "2023-01-08T14:13:47Z"
+        ],
+        "syndication": [
+          "https://www.swarmapp.com/user/112073/checkin/63bacf88dbb40b760a0093ca"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "photo": [
+          {
             "value": "https://adactio.com/images/uploaded/19812/small.jpg",
             "srcset": {
               "320w": "https://adactio.com/images/uploaded/19812/small.jpg",
@@ -1167,54 +1237,6 @@
     },
     {
       "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "content": [
-          {
-            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://rachsmith.com/2022-was-the-year-i-published/\">\n(Almost) no one cares\n</a>\n</h3>\n\n<blockquote>\n  <p>Every time I’ve thought “this is a niche subject or random thought, no one will be interested but I’ll publish anyway” someone will let me know that it was the EXACT train of thought they were thinking or thing they were looking for.</p>\n</blockquote>",
-            "value": "(Almost) no one cares\n\n\n\n\n  Every time I’ve thought “this is a niche subject or random thought, no one will be interested but I’ll publish anyway” someone will let me know that it was the EXACT train of thought they were thinking or thing they were looking for."
-          }
-        ],
-        "name": [
-          "(Almost) no one cares"
-        ],
-        "bookmark-of": [
-          "https://rachsmith.com/2022-was-the-year-i-published/"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "51.85465895"
-              ],
-              "longitude": [
-                "-8.27675002"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/links/19787"
-        ],
-        "published": [
-          "2022-12-29T11:23:09Z"
-        ],
-        "category": [
-          "writing",
-          "publishing",
-          "sharing",
-          "blogging",
-          "indieweb"
-        ]
-      }
-    },
-    {
-      "type": [
         "h-card"
       ],
       "properties": {
@@ -1954,6 +1976,7 @@
       "https://adactio.com/includes/css/print.css"
     ],
     "bookmark": [
+      "https://adactio.com/notes/19814",
       "https://adactio.com/notes/19812",
       "https://adactio.com/links/19809",
       "https://adactio.com/notes/19808",
@@ -1972,10 +1995,10 @@
       "https://adactio.com/journal/19794",
       "https://adactio.com/journal/19790",
       "https://adactio.com/journal/19789",
-      "https://adactio.com/notes/19788",
-      "https://adactio.com/links/19787"
+      "https://adactio.com/notes/19788"
     ],
     "syndication": [
+      "https://www.swarmapp.com/user/112073/checkin/63bacf88dbb40b760a0093ca",
       "https://mastodon.social/@adactio/109643328463143696",
       "https://www.instagram.com/p/CnFNkcTNIa0/",
       "https://mastodon.social/@adactio/109632185287627831",
@@ -2457,6 +2480,18 @@
         "me"
       ],
       "text": "music"
+    },
+    "https://adactio.com/notes/19814": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n2:13pm\n\n"
+    },
+    "https://www.swarmapp.com/user/112073/checkin/63bacf88dbb40b760a0093ca": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "Swarm"
     },
     "https://adactio.com/notes/19812": {
       "rels": [
@@ -3111,12 +3146,6 @@
         "syndication"
       ],
       "text": "Swarm"
-    },
-    "https://adactio.com/links/19787": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n11:23am\n\n"
     },
     "https://adactio.com/?start=20": {
       "rels": [
