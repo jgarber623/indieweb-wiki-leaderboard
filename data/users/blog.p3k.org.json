@@ -2,7 +2,7 @@
   "items": [],
   "rels": {
     "canonical": [
-      "http://blog.p3k.org/"
+      "http://blog.p3k.org/notfound"
     ],
     "icon": [
       "https://blog.p3k.org/static/img/favicon.png"
@@ -13,21 +13,12 @@
     "apple-touch-icon": [
       "https://blog.p3k.org/static/img/favicon.png"
     ],
-    "alternate": [
-      "https://blog.p3k.org/rss.xml",
-      "https://blog.p3k.org/stories.xml",
-      "https://blog.p3k.org/comments.xml",
-      "https://weblogs.at/updates.xml"
-    ],
-    "search": [
-      "https://blog.p3k.org/search.xml"
-    ],
     "stylesheet": [
-      "https://blog.p3k.org/main.css"
+      "https://weblogs.at/main.css"
     ]
   },
   "rel-urls": {
-    "http://blog.p3k.org/": {
+    "http://blog.p3k.org/notfound": {
       "rels": [
         "canonical"
       ]
@@ -38,45 +29,11 @@
       ],
       "type": "image/x-icon"
     },
-    "https://blog.p3k.org/rss.xml": {
-      "rels": [
-        "alternate"
-      ],
-      "title": "Stories and comments of haboglabobloggin’",
-      "type": "application/rss+xml"
-    },
-    "https://blog.p3k.org/stories.xml": {
-      "rels": [
-        "alternate"
-      ],
-      "title": "Stories of haboglabobloggin’",
-      "type": "application/rss+xml"
-    },
-    "https://blog.p3k.org/comments.xml": {
-      "rels": [
-        "alternate"
-      ],
-      "title": "Comments of haboglabobloggin’",
-      "type": "application/rss+xml"
-    },
-    "https://weblogs.at/updates.xml": {
-      "rels": [
-        "alternate"
-      ],
-      "title": "Sites of weblogs.at",
-      "type": "application/rss+xml"
-    },
-    "https://blog.p3k.org/search.xml": {
-      "rels": [
-        "search"
-      ],
-      "title": "haboglabobloggin’",
-      "type": "application/opensearchdescription+xml"
-    },
-    "https://blog.p3k.org/main.css": {
+    "https://weblogs.at/main.css": {
       "rels": [
         "stylesheet"
-      ]
+      ],
+      "type": "text/css"
     }
   }
 }

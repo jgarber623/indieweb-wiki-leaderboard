@@ -98,6 +98,73 @@
           ],
           "properties": {
             "name": [
+              "Creating Student Cards with QR Codes using Google Sheets"
+            ],
+            "url": [
+              "https://readwriterespond.com/2023/01/creating-student-cards-with-qr-codes-using-google-sheets/",
+              "https://readwriterespond.com/2023/01/creating-student-cards-with-qr-codes-using-google-sheets/"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "photo": [
+                    {
+                      "value": "https://secure.gravatar.com/avatar/d00e7ca24ca1b9c853da43af229c0e0e?s=40&d=mm&r=g",
+                      "srcset": {
+                        "2x": "https://secure.gravatar.com/avatar/d00e7ca24ca1b9c853da43af229c0e0e?s=80&d=mm&r=g"
+                      },
+                      "alt": ""
+                    }
+                  ],
+                  "url": [
+                    "https://readwriterespond.com/author/admin/"
+                  ],
+                  "uid": [
+                    "https://readwriterespond.com/author/admin/"
+                  ],
+                  "name": [
+                    "Aaron Davis"
+                  ]
+                },
+                "value": "Aaron Davis"
+              }
+            ],
+            "updated": [
+              "2023-01-10T16:28:00+11:00"
+            ],
+            "published": [
+              "2023-01-10T16:28:00+11:00"
+            ],
+            "featured": [
+              {
+                "value": "https://readwriterespond.com/wp-content/uploads/2023/01/Quotes-900x506.jpg",
+                "srcset": {
+                  "900w": "https://readwriterespond.com/wp-content/uploads/2023/01/Quotes-900x506.jpg",
+                  "300w": "https://readwriterespond.com/wp-content/uploads/2023/01/Quotes-300x169.jpg",
+                  "768w": "https://readwriterespond.com/wp-content/uploads/2023/01/Quotes-768x432.jpg",
+                  "960w": "https://readwriterespond.com/wp-content/uploads/2023/01/Quotes.jpg"
+                },
+                "alt": "I snickered at QR codes because I couldn’t see any real use for them. It took a pandemic to reveal their serious utility. And while I generally avoid predicting the future, I suspect QR codes might be with us for a while, because they’re turning out to be extremely useful even outside of the realm of pandemic-adaptation. Restaurants are enjoying not having to print and reprint menus; contactless payments are super convenient even in situations where you’re not worrying about fomites. Clive Thompson ‘4 Lessons From the Improbable Rise of QR Codes’"
+              }
+            ],
+            "content": [
+              {
+                "html": "<p>One of the things that I often struggle with is with the purpose my online meanderings. Although I agree about ‘<a href=\"https://collect.readwriterespond.com/urls-hyperlinks-and-dots/\" target=\"_blank\" rel=\"noreferrer noopener\">collecting the dots</a>‘, it can sometimes be hard to justify in amongst the everyday hustle and bustle. However, again and again I find myself diving into something I read long after the fact.</p>\n\n\n\n<p>Today I was testing barcodes with an electronic sign-in system. I had a Crystal Report which produces student cards that included a barcode associated with the ID. However, I found that although I could get them to work with the scanner, it was very fiddly and was far from optimal.</p>\n\n\n\n<p>Knowing that any adjustments to the Crystal Report would take some time as it involved a number of teams and processes, I wondered if I could produce my own cards using a spreadsheet. I noticed that the third-party application used a QR Code when enrolling a new device which has really quick, so I wondered if I could also use a QR Code for the student cards. After doing an initial test with one student ID to confirm that QR Codes would work, I searched up <a href=\"https://www.benlcollins.com/spreadsheets/qr-codes-in-google-sheets/\">a post from Ben Collins regarding the generation of QR Codes using Google Sheets</a>. After exporting a test copy of the student data and importing this into the Google Sheet in Sheet1, I created a template where a QR Code was generated for the each student ID:</p>\n\n\n\n<p><code>=ARRAYFORMULA(IMAGE(\"https://chart.googleapis.com/chart?chs=250x250&amp;cht=qr&amp;chl=\"&amp;ENCODEURL(QUERY(Sheet1!A2:A,\"SELECT A WHERE A IS NOT NULL\")) ))</code></p>\n\n\n\n<p>Then in the next column I entered the student details, including first name (Column L), last name (Column K), class/form (Column I), year (Column F) and ID (Column A). I also used Char(10) to separate this information onto different lines.</p>\n\n\n\n<p><code>=ARRAYFORMULA(QUERY(Sheet1!L2:L,\"SELECT L WHERE L IS NOT NULL\")&amp;\" \"&amp;QUERY(Sheet1!K2:K,\"SELECT K WHERE K IS NOT NULL\")&amp;\"\"&amp;Char(10)&amp;\"Class \"&amp;QUERY(Sheet1!I2:I,\"SELECT I WHERE I IS NOT NULL\")&amp;\" / Year \"&amp;QUERY(Sheet1!F2:F,\"SELECT F WHERE F IS NOT NULL\")&amp;\"\"&amp;Char(10)&amp;\"ID \"&amp;QUERY(Sheet1!A2:A,\"SELECT A WHERE A IS NOT NULL\"))</code></p>\n\n\n\n<p>I was then left with a list of cards, the problem is that I wanted to print two columns to a page. To achieve this I <a href=\"https://collect.readwriterespond.com/how-to-create-dynamic-named-ranges-in-google-sheets/\" target=\"_blank\" rel=\"noreferrer noopener\">created two dynamic named ranges</a>, one for column one:</p>\n\n\n\n<p><code>\"Sheet2!A1:C\"&amp;(ROUNDUP(COUNTUNIQUE(Sheet2!B1:B)/2))</code></p>\n\n\n\n<p>And column two:</p>\n\n\n\n<p><code>=\"Sheet2!A\"&amp;(ROUNDUP(COUNTUNIQUE(Sheet2!B1:B)/2))+1&amp;\":C\"&amp;(ROUNDUP(COUNTUNIQUE(Sheet2!B1:B)))</code></p>\n\n\n\n<p>Then in a new tab I used the INDIRECT formula to bring in the two columns.</p>\n\n\n\n<p>The last step was to adjust the printer settings. This included extending the margins and changing the scale to 55%.</p>\n\n\n\n<p>Knowing that this would be used by different people, I made a copy of the template and deleted Sheet1 that could be used as a master. I then put together the following instructions for how it could be used from scratch.</p>\n\n\n\n<ol>\n<li>1. Create a copy of the QR Code Google Sheet (https://docs.google.com/spreadsheets/d/1lzfHDR9229g5xWTb16JPRjKDTBHlix1NmOTJE9fp-ck/copy)</li>\n<li>Import the student spreadsheet previously saved and Insert a New Sheet</li>\n<li>Click on Sheet2</li>\n<li>Click on Cell A1 and press Enter</li>\n<li>Click on Cell B1 and press Enter</li>\n<li>In Cell E2 add ‘=’ at the start of the formula</li>\n<li>In Cell F2 add ‘=’ at the start of the formula</li>\n<li>Click on StudentCards tab</li>\n<li>Click on FIle &gt; Print</li>\n</ol>\n\n\n\n<p>Not sure if anyone else has used Google Sheets for similar purposes. Comments appreciated.</p>\n\r\n<hr>\r\n<em> <p class=\"selectionShareable\">If you enjoy what you read here, feel free to sign up for my <a href=\"https://buttondown.email/readwriterespond\" target=\"_blank\">monthly newsletter</a> to catch up on all things learning, edtech and storytelling.</p></em>",
+                "value": "One of the things that I often struggle with is with the purpose my online meanderings. Although I agree about ‘collecting the dots‘, it can sometimes be hard to justify in amongst the everyday hustle and bustle. However, again and again I find myself diving into something I read long after the fact.\n\n\n\nToday I was testing barcodes with an electronic sign-in system. I had a Crystal Report which produces student cards that included a barcode associated with the ID. However, I found that although I could get them to work with the scanner, it was very fiddly and was far from optimal.\n\n\n\nKnowing that any adjustments to the Crystal Report would take some time as it involved a number of teams and processes, I wondered if I could produce my own cards using a spreadsheet. I noticed that the third-party application used a QR Code when enrolling a new device which has really quick, so I wondered if I could also use a QR Code for the student cards. After doing an initial test with one student ID to confirm that QR Codes would work, I searched up a post from Ben Collins regarding the generation of QR Codes using Google Sheets. After exporting a test copy of the student data and importing this into the Google Sheet in Sheet1, I created a template where a QR Code was generated for the each student ID:\n\n\n\n=ARRAYFORMULA(IMAGE(\"https://chart.googleapis.com/chart?chs=250x250&cht=qr&chl=\"&ENCODEURL(QUERY(Sheet1!A2:A,\"SELECT A WHERE A IS NOT NULL\")) ))\n\n\n\nThen in the next column I entered the student details, including first name (Column L), last name (Column K), class/form (Column I), year (Column F) and ID (Column A). I also used Char(10) to separate this information onto different lines.\n\n\n\n=ARRAYFORMULA(QUERY(Sheet1!L2:L,\"SELECT L WHERE L IS NOT NULL\")&\" \"&QUERY(Sheet1!K2:K,\"SELECT K WHERE K IS NOT NULL\")&\"\"&Char(10)&\"Class \"&QUERY(Sheet1!I2:I,\"SELECT I WHERE I IS NOT NULL\")&\" / Year \"&QUERY(Sheet1!F2:F,\"SELECT F WHERE F IS NOT NULL\")&\"\"&Char(10)&\"ID \"&QUERY(Sheet1!A2:A,\"SELECT A WHERE A IS NOT NULL\"))\n\n\n\nI was then left with a list of cards, the problem is that I wanted to print two columns to a page. To achieve this I created two dynamic named ranges, one for column one:\n\n\n\n\"Sheet2!A1:C\"&(ROUNDUP(COUNTUNIQUE(Sheet2!B1:B)/2))\n\n\n\nAnd column two:\n\n\n\n=\"Sheet2!A\"&(ROUNDUP(COUNTUNIQUE(Sheet2!B1:B)/2))+1&\":C\"&(ROUNDUP(COUNTUNIQUE(Sheet2!B1:B)))\n\n\n\nThen in a new tab I used the INDIRECT formula to bring in the two columns.\n\n\n\nThe last step was to adjust the printer settings. This included extending the margins and changing the scale to 55%.\n\n\n\nKnowing that this would be used by different people, I made a copy of the template and deleted Sheet1 that could be used as a master. I then put together the following instructions for how it could be used from scratch.\n\n\n\n1. Create a copy of the QR Code Google Sheet (https://docs.google.com/spreadsheets/d/1lzfHDR9229g5xWTb16JPRjKDTBHlix1NmOTJE9fp-ck/copy)Import the student spreadsheet previously saved and Insert a New SheetClick on Sheet2Click on Cell A1 and press EnterClick on Cell B1 and press EnterIn Cell E2 add ‘=’ at the start of the formulaIn Cell F2 add ‘=’ at the start of the formulaClick on StudentCards tabClick on FIle > Print\n\n\n\nNot sure if anyone else has used Google Sheets for similar purposes. Comments appreciated.\n\r\n\r\n If you enjoy what you read here, feel free to sign up for my monthly newsletter to catch up on all things learning, edtech and storytelling."
+              }
+            ]
+          },
+          "id": "post-5733"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               "Commonplace Book, a Verb or a Noun?"
             ],
             "url": [
@@ -694,73 +761,6 @@
             ]
           },
           "id": "post-5573"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Review – Enya: A Treatise on Unguilty Pleasures by Chilly Gonzales"
-            ],
-            "url": [
-              "https://readwriterespond.com/2021/09/review-enya-a-treatise-on-unguilty-pleasures-by-chilly-gonzales/",
-              "https://readwriterespond.com/2021/09/review-enya-a-treatise-on-unguilty-pleasures-by-chilly-gonzales/"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "photo": [
-                    {
-                      "value": "https://secure.gravatar.com/avatar/d00e7ca24ca1b9c853da43af229c0e0e?s=40&d=mm&r=g",
-                      "srcset": {
-                        "2x": "https://secure.gravatar.com/avatar/d00e7ca24ca1b9c853da43af229c0e0e?s=80&d=mm&r=g"
-                      },
-                      "alt": ""
-                    }
-                  ],
-                  "url": [
-                    "https://readwriterespond.com/author/admin/"
-                  ],
-                  "uid": [
-                    "https://readwriterespond.com/author/admin/"
-                  ],
-                  "name": [
-                    "Aaron Davis"
-                  ]
-                },
-                "value": "Aaron Davis"
-              }
-            ],
-            "updated": [
-              "2021-09-07T22:30:18+10:00"
-            ],
-            "published": [
-              "2021-09-07T22:30:18+10:00"
-            ],
-            "featured": [
-              {
-                "value": "https://readwriterespond.com/wp-content/uploads/2021/09/Chilly-Gonzales-Enya-A-Treatise-on-Unguilty-Pleasures-900x506.jpg",
-                "srcset": {
-                  "900w": "https://readwriterespond.com/wp-content/uploads/2021/09/Chilly-Gonzales-Enya-A-Treatise-on-Unguilty-Pleasures-900x506.jpg",
-                  "300w": "https://readwriterespond.com/wp-content/uploads/2021/09/Chilly-Gonzales-Enya-A-Treatise-on-Unguilty-Pleasures-300x169.jpg",
-                  "768w": "https://readwriterespond.com/wp-content/uploads/2021/09/Chilly-Gonzales-Enya-A-Treatise-on-Unguilty-Pleasures-768x432.jpg",
-                  "960w": "https://readwriterespond.com/wp-content/uploads/2021/09/Chilly-Gonzales-Enya-A-Treatise-on-Unguilty-Pleasures.jpg"
-                },
-                "alt": "If I can't quite be my own good mother, Ill find one in music. Her name is Enya. Chilly Gonzales ‘Enya: A Treatise on Unguilty Pleasures’"
-              }
-            ],
-            "content": [
-              {
-                "html": "<p>I have long been encapsulated by <a href=\"https://collect.readwriterespond.com/chilly-gonzales-breaks-down-the-essence-of-music/\" target=\"_blank\" rel=\"noreferrer noopener\">Chilly Gonzales</a> and his ‘musical genius’. Whether it be his work with various artists, <a href=\"https://www.youtube.com/playlist?list=PLL4iOQ3Gw7L9eyCJ8EnkZgO0p1AzdrRqN\" target=\"_blank\" rel=\"noreferrer noopener\">pop music masterclasses</a> and <a href=\"https://www.bigissue.com/culture/music/the-chilly-gonzales-guide-to-a-bittersweet-christmas/\" target=\"_blank\" rel=\"noreferrer noopener\">minor christmas album</a>, I have been enamoured with the way in which he manages to break music down to capture what is essential. I was therefore intrigued by a book on Enya.</p>\n\n\n\n<p>I purchased the <a href=\"http://www.chillygonzales.com/books/enya-a-treatise-on-unguilty-pleasures/\">Enya: A Treatise on Unguilty Pleasures</a> in good faith with little idea what to expect. I thought it might be some sort of technical breakdown of Enya’s work. Although I am always interested in what Chilly Gonzales has to say about any sort of music, I was not sure how interesting an extended breakdown of Enya’s music would actually be. What I had not expected was the way in which Gozanales used Enya and her music as a frame for his own memoir on music.</p>\n\n\n\n<blockquote class=\"quoteback\" cite=\"http://www.chillygonzales.com/books/enya-a-treatise-on-unguilty-pleasures/\" data-title=\"ENYA%3A%20A%20Treatise%20on%20Unguilty%20Pleasures%20%E2%80%93%20Chilly%20Gonzales\" data-author=\"\">It was almost a joke that rose up from my unconscious. But it was my way in. With Enya as a constraint, I could finally write a musical memoir, the very book the publisher had asked for years ago.\n\n<footer><cite> <a href=\"http://www.chillygonzales.com/books/enya-a-treatise-on-unguilty-pleasures/\">http://www.chillygonzales.com/books/enya-a-treatise-on-unguilty-pleasures/</a></cite></footer>\n</blockquote>\n<script note=\"\" loading=\"lazy\" src=\"https://cdn.jsdelivr.net/gh/Blogger-Peer-Review/quotebacks@1/quoteback.js\"></script>\n\n\n\n<p>Fine Gonzalas spoke about the Enya’s lullaby quality, the guilt often associated with liking such music, her use of the pizzicato strings on the Roland D-50 synthesiser in lieu of a rhythm track and the way in which she has managed her career by continually say no. However, often these references are merely jumping off points for Gonzales to reflect upon his own memories and experiences with music. Whether it be the relationship between harmony and melody:</p>\n\n\n\n<blockquote class=\"quoteback\" cite=\"http://www.chillygonzales.com/books/enya-a-treatise-on-unguilty-pleasures/\" data-title=\"ENYA%3A%20A%20Treatise%20on%20Unguilty%20Pleasures%20%E2%80%93%20Chilly%20Gonzales\" data-author=\"\">Harmony is melody’s bitch, with no life of it’s own.\n\n<footer><cite> <a href=\"http://www.chillygonzales.com/books/enya-a-treatise-on-unguilty-pleasures/\">http://www.chillygonzales.com/books/enya-a-treatise-on-unguilty-pleasures/</a></cite></footer>\n</blockquote>\n<script note=\"\" loading=\"lazy\" src=\"https://cdn.jsdelivr.net/gh/Blogger-Peer-Review/quotebacks@1/quoteback.js\"></script>\n\n\n\n<p>His desire for music that can be both serious and drop into the background:</p>\n\n\n\n<blockquote class=\"quoteback\" cite=\"http://www.chillygonzales.com/books/enya-a-treatise-on-unguilty-pleasures/\" data-title=\"ENYA%3A%20A%20Treatise%20on%20Unguilty%20Pleasures%20%E2%80%93%20Chilly%20Gonzales\" data-author=\"\">This is what my Enya book is about. This idea of music that sounds good while you eat or party or take a bath, versus music that you give your full attention to. And you guys are having the wrong argument. It’s not that all music falls into these two categories. The goal of music should be to function on both levels. It’s like with people.\n\n<footer><cite> <a href=\"http://www.chillygonzales.com/books/enya-a-treatise-on-unguilty-pleasures/\">http://www.chillygonzales.com/books/enya-a-treatise-on-unguilty-pleasures/</a></cite></footer>\n</blockquote>\n<script note=\"\" loading=\"lazy\" src=\"https://cdn.jsdelivr.net/gh/Blogger-Peer-Review/quotebacks@1/quoteback.js\"></script>\n\n\n\n<p>Disdain for loud voices:</p>\n\n\n\n<blockquote class=\"quoteback\" cite=\"http://www.chillygonzales.com/books/enya-a-treatise-on-unguilty-pleasures/\" data-title=\"ENYA%3A%20A%20Treatise%20on%20Unguilty%20Pleasures%20%E2%80%93%20Chilly%20Gonzales\" data-author=\"\">Vibrato is a bit like my formerly beloved jazz fusion: technically very difficult to learn but even more difficult to listen to. But to sign with no vibrato at ll, to let the music itself do the emotional work is the purist’s choice.\n\n<footer><cite> <a href=\"http://www.chillygonzales.com/books/enya-a-treatise-on-unguilty-pleasures/\">http://www.chillygonzales.com/books/enya-a-treatise-on-unguilty-pleasures/</a></cite></footer>\n</blockquote>\n<script note=\"\" loading=\"lazy\" src=\"https://cdn.jsdelivr.net/gh/Blogger-Peer-Review/quotebacks@1/quoteback.js\"></script>\n\n\n\n<p>And his preference for the music over lyrics:</p>\n\n\n\n<blockquote class=\"quoteback\" cite=\"http://www.chillygonzales.com/books/enya-a-treatise-on-unguilty-pleasures/\" data-title=\"ENYA%3A%20A%20Treatise%20on%20Unguilty%20Pleasures%20%E2%80%93%20Chilly%20Gonzales\" data-author=\"\">Wordlessness works for me. I was never a lyrics junkie outside of my affection for listening to rap. Rap lyrics are direct, playful and journalistic, standing in contrast to the impressionistic, poetic style of singer songwriters. With some exceptions I listen to music where the lyrics are in the passenger seat. No one really hears or cares what the Bee Gees are singing about, and I doubt that a single Bee Gee would even dispute that.\n\n<footer><cite> <a href=\"http://www.chillygonzales.com/books/enya-a-treatise-on-unguilty-pleasures/\">http://www.chillygonzales.com/books/enya-a-treatise-on-unguilty-pleasures/</a></cite></footer>\n</blockquote>\n<script note=\"\" loading=\"lazy\" src=\"https://cdn.jsdelivr.net/gh/Blogger-Peer-Review/quotebacks@1/quoteback.js\"></script>\n\n\n\n<p>In some ways Gonzales’ reflection on Enya reminds me of <a href=\"https://collect.readwriterespond.com/only-the-shit-you-love-the-podcast-damian-cowell/\" target=\"_blank\" rel=\"noreferrer noopener\">Damian Cowell’s Only the Shit You Love podcast</a>. Like Gonzalas’ constraint as a guide, Cowell uses his video series as a starting point from which to reflect upon music past and present. They are both musical memoirs of artists <a href=\"https://collect.readwriterespond.com/chilly-gonzales-on-art-and-artifice-red-bull-music-academy/\" target=\"_blank\" rel=\"noreferrer noopener\">engaging in artifice</a>. Maybe the real purpose of such texts is not to uncover the author but to provoke the reader (or listener) into considering their own thoughts and finding their own good mother in music.</p>\n\r\n<hr>\r\n<em> <p class=\"selectionShareable\">If you enjoy what you read here, feel free to sign up for my <a href=\"https://buttondown.email/readwriterespond\" target=\"_blank\">monthly newsletter</a> to catch up on all things learning, edtech and storytelling.</p></em>",
-                "value": "I have long been encapsulated by Chilly Gonzales and his ‘musical genius’. Whether it be his work with various artists, pop music masterclasses and minor christmas album, I have been enamoured with the way in which he manages to break music down to capture what is essential. I was therefore intrigued by a book on Enya.\n\n\n\nI purchased the Enya: A Treatise on Unguilty Pleasures in good faith with little idea what to expect. I thought it might be some sort of technical breakdown of Enya’s work. Although I am always interested in what Chilly Gonzales has to say about any sort of music, I was not sure how interesting an extended breakdown of Enya’s music would actually be. What I had not expected was the way in which Gozanales used Enya and her music as a frame for his own memoir on music.\n\n\n\nIt was almost a joke that rose up from my unconscious. But it was my way in. With Enya as a constraint, I could finally write a musical memoir, the very book the publisher had asked for years ago.\n\n http://www.chillygonzales.com/books/enya-a-treatise-on-unguilty-pleasures/\n\n\n\n\nFine Gonzalas spoke about the Enya’s lullaby quality, the guilt often associated with liking such music, her use of the pizzicato strings on the Roland D-50 synthesiser in lieu of a rhythm track and the way in which she has managed her career by continually say no. However, often these references are merely jumping off points for Gonzales to reflect upon his own memories and experiences with music. Whether it be the relationship between harmony and melody:\n\n\n\nHarmony is melody’s bitch, with no life of it’s own.\n\n http://www.chillygonzales.com/books/enya-a-treatise-on-unguilty-pleasures/\n\n\n\n\nHis desire for music that can be both serious and drop into the background:\n\n\n\nThis is what my Enya book is about. This idea of music that sounds good while you eat or party or take a bath, versus music that you give your full attention to. And you guys are having the wrong argument. It’s not that all music falls into these two categories. The goal of music should be to function on both levels. It’s like with people.\n\n http://www.chillygonzales.com/books/enya-a-treatise-on-unguilty-pleasures/\n\n\n\n\nDisdain for loud voices:\n\n\n\nVibrato is a bit like my formerly beloved jazz fusion: technically very difficult to learn but even more difficult to listen to. But to sign with no vibrato at ll, to let the music itself do the emotional work is the purist’s choice.\n\n http://www.chillygonzales.com/books/enya-a-treatise-on-unguilty-pleasures/\n\n\n\n\nAnd his preference for the music over lyrics:\n\n\n\nWordlessness works for me. I was never a lyrics junkie outside of my affection for listening to rap. Rap lyrics are direct, playful and journalistic, standing in contrast to the impressionistic, poetic style of singer songwriters. With some exceptions I listen to music where the lyrics are in the passenger seat. No one really hears or cares what the Bee Gees are singing about, and I doubt that a single Bee Gee would even dispute that.\n\n http://www.chillygonzales.com/books/enya-a-treatise-on-unguilty-pleasures/\n\n\n\n\nIn some ways Gonzales’ reflection on Enya reminds me of Damian Cowell’s Only the Shit You Love podcast. Like Gonzalas’ constraint as a guide, Cowell uses his video series as a starting point from which to reflect upon music past and present. They are both musical memoirs of artists engaging in artifice. Maybe the real purpose of such texts is not to uncover the author but to provoke the reader (or listener) into considering their own thoughts and finding their own good mother in music.\n\r\n\r\n If you enjoy what you read here, feel free to sign up for my monthly newsletter to catch up on all things learning, edtech and storytelling."
-              }
-            ]
-          },
-          "id": "post-5567"
         }
       ]
     }
@@ -847,6 +847,7 @@
       "https://readwriterespond.com/"
     ],
     "bookmark": [
+      "https://readwriterespond.com/2023/01/creating-student-cards-with-qr-codes-using-google-sheets/",
       "https://readwriterespond.com/2022/11/commonplace-book-a-verb-or-a-noun/",
       "https://readwriterespond.com/2022/04/cyber-security-awareness-primary-years-cser-mooc/",
       "https://readwriterespond.com/2022/04/classroom-of-the-future/",
@@ -855,13 +856,14 @@
       "https://readwriterespond.com/2022/02/memories/",
       "https://readwriterespond.com/2021/09/google-sheets/",
       "https://readwriterespond.com/2021/09/creating-a-catalogue-in-google-sheets/",
-      "https://readwriterespond.com/2021/09/the-ministry-for-the-future/",
-      "https://readwriterespond.com/2021/09/review-enya-a-treatise-on-unguilty-pleasures-by-chilly-gonzales/"
+      "https://readwriterespond.com/2021/09/the-ministry-for-the-future/"
     ],
     "author": [
       "https://readwriterespond.com/author/admin/"
     ],
     "noopener": [
+      "https://collect.readwriterespond.com/urls-hyperlinks-and-dots/",
+      "https://collect.readwriterespond.com/how-to-create-dynamic-named-ranges-in-google-sheets/",
       "https://collect.readwriterespond.com/how-to-remember-more-of-what-you-read/",
       "https://collect.readwriterespond.com/the-beauty-of-being-wrong-how-to-hold-on-tightly-and-let-go-lightly/",
       "https://collect.readwriterespond.com/the-two-definitions-of-zettelkasten-2/",
@@ -893,13 +895,11 @@
       "https://collect.readwriterespond.com/lolly-scramble-tony-martin/",
       "https://collect.readwriterespond.com/start-often-fk-achievements/",
       "https://www.ted.com/talks/kim_stanley_robinson_remembering_climate_change_a_message_from_the_year_2071/transcript?language=en",
-      "https://collect.readwriterespond.com/chilly-gonzales-breaks-down-the-essence-of-music/",
-      "https://www.youtube.com/playlist?list=PLL4iOQ3Gw7L9eyCJ8EnkZgO0p1AzdrRqN",
-      "https://www.bigissue.com/culture/music/the-chilly-gonzales-guide-to-a-bittersweet-christmas/",
-      "https://collect.readwriterespond.com/chilly-gonzales-on-art-and-artifice-red-bull-music-academy/",
       "https://buttondown.email/"
     ],
     "noreferrer": [
+      "https://collect.readwriterespond.com/urls-hyperlinks-and-dots/",
+      "https://collect.readwriterespond.com/how-to-create-dynamic-named-ranges-in-google-sheets/",
       "https://collect.readwriterespond.com/how-to-remember-more-of-what-you-read/",
       "https://collect.readwriterespond.com/the-beauty-of-being-wrong-how-to-hold-on-tightly-and-let-go-lightly/",
       "https://collect.readwriterespond.com/the-two-definitions-of-zettelkasten-2/",
@@ -926,11 +926,7 @@
       "https://collect.readwriterespond.com/swanns-way-marcel-proust/",
       "https://collect.readwriterespond.com/lolly-scramble-tony-martin/",
       "https://collect.readwriterespond.com/start-often-fk-achievements/",
-      "https://www.ted.com/talks/kim_stanley_robinson_remembering_climate_change_a_message_from_the_year_2071/transcript?language=en",
-      "https://collect.readwriterespond.com/chilly-gonzales-breaks-down-the-essence-of-music/",
-      "https://www.youtube.com/playlist?list=PLL4iOQ3Gw7L9eyCJ8EnkZgO0p1AzdrRqN",
-      "https://www.bigissue.com/culture/music/the-chilly-gonzales-guide-to-a-bittersweet-christmas/",
-      "https://collect.readwriterespond.com/chilly-gonzales-on-art-and-artifice-red-bull-music-academy/"
+      "https://www.ted.com/talks/kim_stanley_robinson_remembering_climate_change_a_message_from_the_year_2071/transcript?language=en"
     ],
     "nofollow": [
       "https://www.funnymonkey.com/2019/the-data-arent-worth-anything-but-well-keep-them-forever#annotations:Ue_BXhwFEeq7exM91Ut5Zg",
@@ -1229,6 +1225,27 @@
       ],
       "title": "Read Write Respond",
       "text": "\n\t\t\t\tRead Write Respond\t\t\t\t"
+    },
+    "https://readwriterespond.com/2023/01/creating-student-cards-with-qr-codes-using-google-sheets/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to Creating Student Cards with QR Codes using Google Sheets",
+      "text": "\n\t\t\t\t\tCreating Student Cards with QR Codes using Google Sheets\t\t\t\t"
+    },
+    "https://collect.readwriterespond.com/urls-hyperlinks-and-dots/": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "collecting the dots"
+    },
+    "https://collect.readwriterespond.com/how-to-create-dynamic-named-ranges-in-google-sheets/": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "created two dynamic named ranges"
     },
     "https://readwriterespond.com/2022/11/commonplace-book-a-verb-or-a-noun/": {
       "rels": [
@@ -1535,41 +1552,6 @@
         "noreferrer"
       ],
       "text": "Kim Stanley Robinson presented a TED video"
-    },
-    "https://readwriterespond.com/2021/09/review-enya-a-treatise-on-unguilty-pleasures-by-chilly-gonzales/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Permalink to Review – Enya: A Treatise on Unguilty Pleasures by Chilly Gonzales",
-      "text": "\n\t\t\t\t\tReview – Enya: A Treatise on Unguilty Pleasures by Chilly Gonzales\t\t\t\t"
-    },
-    "https://collect.readwriterespond.com/chilly-gonzales-breaks-down-the-essence-of-music/": {
-      "rels": [
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "Chilly Gonzales"
-    },
-    "https://www.youtube.com/playlist?list=PLL4iOQ3Gw7L9eyCJ8EnkZgO0p1AzdrRqN": {
-      "rels": [
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "pop music masterclasses"
-    },
-    "https://www.bigissue.com/culture/music/the-chilly-gonzales-guide-to-a-bittersweet-christmas/": {
-      "rels": [
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "minor christmas album"
-    },
-    "https://collect.readwriterespond.com/chilly-gonzales-on-art-and-artifice-red-bull-music-academy/": {
-      "rels": [
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "engaging in artifice"
     },
     "https://buttondown.email/": {
       "rels": [
