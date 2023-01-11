@@ -1,30 +1,24 @@
 {
   "items": [],
   "rels": {
-    "icon": [
-      "https://wiki.jordanreger.com/resources/logo.svg"
-    ],
-    "shortcut": [
-      "https://wiki.jordanreger.com/resources/logo.svg"
-    ],
-    "preload": [
-      "https://jordanreger.ichi.city/index.css"
-    ],
     "stylesheet": [
-      "https://jordanreger.ichi.city/index.css"
+      "https://smol.pub/style.css"
+    ],
+    "alternate": [
+      "https://jordanreger.com/atom.xml"
     ]
   },
   "rel-urls": {
-    "https://wiki.jordanreger.com/resources/logo.svg": {
+    "https://smol.pub/style.css": {
       "rels": [
-        "icon",
-        "shortcut"
+        "stylesheet"
       ]
     },
-    "https://jordanreger.ichi.city/index.css": {
+    "https://jordanreger.com/atom.xml": {
       "rels": [
-        "preload"
-      ]
+        "alternate"
+      ],
+      "type": "application/atom+xml"
     }
   }
 }

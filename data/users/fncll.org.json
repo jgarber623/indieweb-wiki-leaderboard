@@ -1,151 +1,57 @@
 {
-  "items": [
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "content": [
-          {
-            "html": "<p>Done for now. Good luck out there.</p>",
-            "value": "Done for now. Good luck out there."
-          }
-        ]
-      },
-      "id": "content"
-    }
-  ],
+  "items": [],
   "rels": {
-    "profile": [
-      "http://microformats.org/profile/specs",
-      "http://microformats.org/profile/hatom"
-    ],
-    "alternate": [
-      "https://fncll.org/?feed=rss2",
-      "https://fncll.org/?feed=comments-rss2",
-      "https://fncll.org/index.php?rest_route=/wp/v2/pages/6",
-      "https://fncll.org/index.php?rest_route=%2Foembed%2F1.0%2Fembed&url=https%3A%2F%2Ffncll.org%2F",
-      "https://fncll.org/index.php?rest_route=%2Foembed%2F1.0%2Fembed&url=https%3A%2F%2Ffncll.org%2F&format=xml"
-    ],
     "stylesheet": [
-      "http://fncll.org/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1",
-      "http://fncll.org/wp-includes/css/classic-themes.min.css?ver=1",
-      "http://fncll.org/wp-content/themes/sempress/style.css?ver=6.1.1"
-    ],
-    "https://api.w.org/": [
-      "https://fncll.org/index.php?rest_route=/"
-    ],
-    "EditURI": [
-      "https://fncll.org/xmlrpc.php?rsd"
-    ],
-    "wlwmanifest": [
-      "http://fncll.org/wp-includes/wlwmanifest.xml"
-    ],
-    "canonical": [
-      "https://fncll.org/"
-    ],
-    "shortlink": [
-      "https://fncll.org/"
-    ],
-    "home": [
-      "https://fncll.org/"
-    ],
-    "generator": [
-      "http://wordpress.org/"
+      "https://fncll.org/wp-content/plugins/wi-portfolio/css/portfolio.css?ver=6.1.1",
+      "https://fncll.org/wp-includes/css/dashicons.min.css?ver=6.1.1",
+      "https://fncll.org/wp-includes/css/buttons.min.css?ver=6.1.1",
+      "https://fncll.org/wp-admin/css/forms.min.css?ver=6.1.1",
+      "https://fncll.org/wp-admin/css/l10n.min.css?ver=6.1.1",
+      "https://fncll.org/wp-admin/css/login.min.css?ver=6.1.1"
     ]
   },
   "rel-urls": {
-    "http://microformats.org/profile/specs": {
-      "rels": [
-        "profile"
-      ]
-    },
-    "http://microformats.org/profile/hatom": {
-      "rels": [
-        "profile"
-      ]
-    },
-    "https://fncll.org/?feed=rss2": {
-      "rels": [
-        "alternate"
-      ],
-      "title": "FNCLL » Feed",
-      "type": "application/rss+xml"
-    },
-    "https://fncll.org/?feed=comments-rss2": {
-      "rels": [
-        "alternate"
-      ],
-      "title": "FNCLL » Comments Feed",
-      "type": "application/rss+xml"
-    },
-    "http://fncll.org/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1": {
+    "https://fncll.org/wp-content/plugins/wi-portfolio/css/portfolio.css?ver=6.1.1": {
       "rels": [
         "stylesheet"
       ],
       "media": "all",
       "type": "text/css"
     },
-    "http://fncll.org/wp-includes/css/classic-themes.min.css?ver=1": {
+    "https://fncll.org/wp-includes/css/dashicons.min.css?ver=6.1.1": {
       "rels": [
         "stylesheet"
       ],
       "media": "all",
       "type": "text/css"
     },
-    "http://fncll.org/wp-content/themes/sempress/style.css?ver=6.1.1": {
+    "https://fncll.org/wp-includes/css/buttons.min.css?ver=6.1.1": {
       "rels": [
         "stylesheet"
       ],
       "media": "all",
       "type": "text/css"
     },
-    "https://fncll.org/index.php?rest_route=/": {
+    "https://fncll.org/wp-admin/css/forms.min.css?ver=6.1.1": {
       "rels": [
-        "https://api.w.org/"
-      ]
-    },
-    "https://fncll.org/index.php?rest_route=/wp/v2/pages/6": {
-      "rels": [
-        "alternate"
+        "stylesheet"
       ],
-      "type": "application/json"
+      "media": "all",
+      "type": "text/css"
     },
-    "https://fncll.org/xmlrpc.php?rsd": {
+    "https://fncll.org/wp-admin/css/l10n.min.css?ver=6.1.1": {
       "rels": [
-        "EditURI"
+        "stylesheet"
       ],
-      "title": "RSD",
-      "type": "application/rsd+xml"
+      "media": "all",
+      "type": "text/css"
     },
-    "http://fncll.org/wp-includes/wlwmanifest.xml": {
+    "https://fncll.org/wp-admin/css/login.min.css?ver=6.1.1": {
       "rels": [
-        "wlwmanifest"
+        "stylesheet"
       ],
-      "type": "application/wlwmanifest+xml"
-    },
-    "https://fncll.org/": {
-      "rels": [
-        "canonical"
-      ]
-    },
-    "https://fncll.org/index.php?rest_route=%2Foembed%2F1.0%2Fembed&url=https%3A%2F%2Ffncll.org%2F": {
-      "rels": [
-        "alternate"
-      ],
-      "type": "application/json+oembed"
-    },
-    "https://fncll.org/index.php?rest_route=%2Foembed%2F1.0%2Fembed&url=https%3A%2F%2Ffncll.org%2F&format=xml": {
-      "rels": [
-        "alternate"
-      ],
-      "type": "text/xml+oembed"
-    },
-    "http://wordpress.org/": {
-      "rels": [
-        "generator"
-      ],
-      "text": "WordPress"
+      "media": "all",
+      "type": "text/css"
     }
   }
 }

@@ -30,6 +30,50 @@
             "h-entry"
           ],
           "properties": {
+            "content": [
+              {
+                "html": "Well it’s been a disappointing start to the year… yesterday I was let go from my job. Although it was one of several redundancies it’s still a bit of a gut punch and the first time I’ve been laid off. Hey ho. Time to move on and get stuck into a job search.",
+                "value": "Well it’s been a disappointing start to the year… yesterday I was let go from my job. Although it was one of several redundancies it’s still a bit of a gut punch and the first time I’ve been laid off. Hey ho. Time to move on and get stuck into a job search."
+              }
+            ],
+            "published": [
+              "2023-01-10T22:00:04.674Z"
+            ],
+            "url": [
+              "https://barryfrost.com/2023/01/well-it-s-been-a-disappointing"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "photo": [
+                    {
+                      "value": "https://barryfrost.com/barryfrost.jpg",
+                      "alt": "Photo of Barry"
+                    }
+                  ],
+                  "name": [
+                    "Barry Frost"
+                  ],
+                  "url": [
+                    "https://barryfrost.com/"
+                  ]
+                },
+                "value": "https://barryfrost.com/"
+              }
+            ],
+            "category": [
+              "personal"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
             "name": [
               "Week 72 - Bowling"
             ],
@@ -1044,57 +1088,6 @@
               "https://twitter.com/barryf/status/1576663753332035584"
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Week 57 - Fraud"
-            ],
-            "content": [
-              {
-                "html": "It was a bank holiday on Monday for the Queen’s funeral. I didn’t watch the coverage, but I was thankful for the free time...",
-                "value": "It was a bank holiday on Monday for the Queen’s funeral. I didn’t watch the coverage, but I was thankful for the free time..."
-              }
-            ],
-            "published": [
-              "2022-09-25T20:23:46.274Z"
-            ],
-            "url": [
-              "https://barryfrost.com/2022/09/week-57-fraud"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "photo": [
-                    {
-                      "value": "https://barryfrost.com/barryfrost.jpg",
-                      "alt": "Photo of Barry"
-                    }
-                  ],
-                  "name": [
-                    "Barry Frost"
-                  ],
-                  "url": [
-                    "https://barryfrost.com/"
-                  ]
-                },
-                "value": "https://barryfrost.com/"
-              }
-            ],
-            "category": [
-              "weeknotes",
-              "emoji-👹"
-            ],
-            "syndication": [
-              "https://twitter.com/barryf/status/1574132579791519746"
-            ]
-          }
         }
       ]
     }
@@ -1149,6 +1142,7 @@
       "https://barryfrost.com/"
     ],
     "nofollow": [
+      "https://barryfrost.com/categories/personal",
       "https://barryfrost.com/categories/weeknotes",
       "https://barryfrost.com/categories/emoji-🎳",
       "https://barryfrost.com/categories/emoji-🧥",
@@ -1169,15 +1163,14 @@
       "https://barryfrost.com/categories/mastodon",
       "https://barryfrost.com/categories/emoji-🎃",
       "https://barryfrost.com/categories/halloween",
-      "https://barryfrost.com/categories/personal",
       "https://barryfrost.com/categories/emoji-👾",
       "https://barryfrost.com/categories/emoji-📮",
       "https://barryfrost.com/categories/emoji-🤕",
       "https://barryfrost.com/categories/emoji-🐦",
-      "https://barryfrost.com/categories/emoji-❄️",
-      "https://barryfrost.com/categories/emoji-👹"
+      "https://barryfrost.com/categories/emoji-❄️"
     ],
     "tag": [
+      "https://barryfrost.com/categories/personal",
       "https://barryfrost.com/categories/weeknotes",
       "https://barryfrost.com/categories/emoji-🎳",
       "https://barryfrost.com/categories/emoji-🧥",
@@ -1198,13 +1191,11 @@
       "https://barryfrost.com/categories/mastodon",
       "https://barryfrost.com/categories/emoji-🎃",
       "https://barryfrost.com/categories/halloween",
-      "https://barryfrost.com/categories/personal",
       "https://barryfrost.com/categories/emoji-👾",
       "https://barryfrost.com/categories/emoji-📮",
       "https://barryfrost.com/categories/emoji-🤕",
       "https://barryfrost.com/categories/emoji-🐦",
-      "https://barryfrost.com/categories/emoji-❄️",
-      "https://barryfrost.com/categories/emoji-👹"
+      "https://barryfrost.com/categories/emoji-❄️"
     ],
     "syndication": [
       "https://mastodon.social/@barryf/109655419183547574",
@@ -1237,8 +1228,7 @@
       "https://twitter.com/barryf/status/1584280100345741312",
       "https://twitter.com/barryf/status/1581718713245454337",
       "https://twitter.com/barryf/status/1579576462486556673",
-      "https://twitter.com/barryf/status/1576663753332035584",
-      "https://twitter.com/barryf/status/1574132579791519746"
+      "https://twitter.com/barryf/status/1576663753332035584"
     ]
   },
   "rel-urls": {
@@ -1328,6 +1318,13 @@
       "rels": [
         "canonical"
       ]
+    },
+    "https://barryfrost.com/categories/personal": {
+      "rels": [
+        "nofollow",
+        "tag"
+      ],
+      "text": "\n            #personal\n          "
     },
     "https://barryfrost.com/categories/weeknotes": {
       "rels": [
@@ -1619,13 +1616,6 @@
       ],
       "text": "\n          Twitter\n        "
     },
-    "https://barryfrost.com/categories/personal": {
-      "rels": [
-        "nofollow",
-        "tag"
-      ],
-      "text": "\n            #personal\n          "
-    },
     "https://twitter.com/barryf/status/1589208967384891392": {
       "rels": [
         "syndication"
@@ -1692,19 +1682,6 @@
       "text": "\n            #emoji-❄️\n          "
     },
     "https://twitter.com/barryf/status/1576663753332035584": {
-      "rels": [
-        "syndication"
-      ],
-      "text": "\n          Twitter\n        "
-    },
-    "https://barryfrost.com/categories/emoji-👹": {
-      "rels": [
-        "nofollow",
-        "tag"
-      ],
-      "text": "\n            #emoji-👹\n          "
-    },
-    "https://twitter.com/barryf/status/1574132579791519746": {
       "rels": [
         "syndication"
       ],
