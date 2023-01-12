@@ -53,6 +53,60 @@
           ],
           "properties": {
             "name": [
+              "Logs as end user UI"
+            ],
+            "url": [
+              "https://snarfed.org/2023-01-11_logs-as-end-user-ui"
+            ],
+            "published": [
+              "2023-01-11T14:11:00-08:00"
+            ],
+            "syndication": [
+              "https://twitter.com/schnarfed/status/1613299141496700928",
+              "https://fed.brid.gy/user/snarfed.org",
+              "https://twitter.com/schnarfed/status/1613299141496700928",
+              "https://fed.brid.gy/user/snarfed.org"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "photo": [
+                    {
+                      "value": "https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=96&d=blank&r=g",
+                      "srcset": {
+                        "2x": "https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=192&d=blank&r=g"
+                      },
+                      "alt": ""
+                    }
+                  ],
+                  "url": [
+                    "https://snarfed.org/"
+                  ],
+                  "name": [
+                    "Ryan Barrett"
+                  ]
+                },
+                "value": "Ryan Barrett"
+              }
+            ],
+            "content": [
+              {
+                "html": "<p class=\"right third\">\n <img decoding=\"async\" class=\"shadow jetpack-lazy-image\" src=\"https://snarfed.org/matrix.webp\" data-lazy-src=\"/matrix.webp?is-pending-load=1\" srcset=\"data:image/gif;base64, https://snarfed.org/R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"><noscript><img data-lazy-fallback=\"1\" decoding=\"async\" class=\"shadow\" src=\"https://snarfed.org/matrix.webp\"></noscript>\n</p>\n<p>A long time ago, I decided to show <a href=\"https://brid.gy/\">Bridgy</a>‘s end users its raw logs. Like, <em>raw</em> logs. HTTP requests, database reads and writes, JSON objects, stack traces, etc. It’s an unusual UI feature, but it’s been an unqualified success, enough that when I built <a href=\"https://fed.brid.gy/\">Bridgy Fed</a>, I immediately included it and never looked back.</p>\n<p>Whenever Bridgy does something nontrivial – <a href=\"https://brid.gy/about#checks+your+accounts\">poll a social network account</a>, <a href=\"https://brid.gy/about#which\">send a webmention</a>, <a href=\"https://brid.gy/about#publishing\">publish a post</a> – I generally include a link to the server logs for that operation. <a href=\"https://snarfed.org/bridgy-poll-log.png\">Here’s an example</a>, a series of timestamped plain text log messages from a poll of my Twitter account. They include initial config and parameters, account status, each individual Twitter API request, the results of those requests, how Bridgy interpreted them, HTTP requests to my web site, the subsequent actions Bridgy took and why, how the account’s status changed, and when the next poll is scheduled for.\n <a href=\"https://snarfed.org/2023-01-11_logs-as-end-user-ui#more-48949\" class=\"more-link\">Continue reading <span class=\"meta-nav\">→</span></a></p>",
+                "value": "https://snarfed.org/matrix.webp  https://snarfed.org/matrix.webp \n\nA long time ago, I decided to show Bridgy‘s end users its raw logs. Like, raw logs. HTTP requests, database reads and writes, JSON objects, stack traces, etc. It’s an unusual UI feature, but it’s been an unqualified success, enough that when I built Bridgy Fed, I immediately included it and never looked back.\nWhenever Bridgy does something nontrivial – poll a social network account, send a webmention, publish a post – I generally include a link to the server logs for that operation. Here’s an example, a series of timestamped plain text log messages from a poll of my Twitter account. They include initial config and parameters, account status, each individual Twitter API request, the results of those requests, how Bridgy interpreted them, HTTP requests to my web site, the subsequent actions Bridgy took and why, how the account’s status changed, and when the next poll is scheduled for.\n Continue reading →"
+              }
+            ]
+          },
+          "id": "post-48949"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               ""
             ],
             "url": [
@@ -362,7 +416,7 @@
             ],
             "content": [
               {
-                "html": "<p>Meanwhile, in Emacs…</p>\n<p><a href=\"https://snarfed.org/w/wp-content/uploads/2022/12/emacs-ping-kingdom-belgium.png\"><img data-attachment-id=\"48533\" data-permalink=\"https://snarfed.org/2022-12-06_48532/emacs-ping-kingdom-belgium#main\" data-orig-file=\"https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/12/emacs-ping-kingdom-belgium.png?fit=770%2C236&amp;ssl=1\" data-orig-size=\"770,236\" data-comments-opened=\"1\" data-image-meta='{\"aperture\":\"0\",\"credit\":\"\",\"camera\":\"\",\"caption\":\"\",\"created_timestamp\":\"0\",\"copyright\":\"\",\"focal_length\":\"0\",\"iso\":\"0\",\"shutter_speed\":\"0\",\"title\":\"\",\"orientation\":\"0\"}' data-image-title=\"emacs-ping-kingdom-belgium\" data-image-description data-image-caption data-medium-file=\"https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/12/emacs-ping-kingdom-belgium.png?fit=300%2C92&amp;ssl=1\" data-large-file=\"https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/12/emacs-ping-kingdom-belgium.png?fit=696%2C213&amp;ssl=1\" decoding=\"async\" width=\"770\" height=\"236\" src=\"https://snarfed.org/w/wp-content/uploads/2022/12/emacs-ping-kingdom-belgium.png\" alt=\"Emacs pinging realize.be, Kingdom of Belgium\" class=\"shadow wp-image-48533 jetpack-lazy-image\" data-lazy-srcset=\"https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/12/emacs-ping-kingdom-belgium.png?w=770&amp;ssl=1 770w, https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/12/emacs-ping-kingdom-belgium.png?resize=300%2C92&amp;ssl=1 300w, https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/12/emacs-ping-kingdom-belgium.png?resize=768%2C235&amp;ssl=1 768w\" data-lazy-sizes=\"(max-width: 696px) 100vw, 696px\" data-lazy-src=\"/w/wp-content/uploads/2022/12/emacs-ping-kingdom-belgium.png?is-pending-load=1\" srcset=\"data:image/gif;base64, https://snarfed.org/R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"><noscript><img data-lazy-fallback=\"1\" data-attachment-id=\"48533\" data-permalink=\"https://snarfed.org/2022-12-06_48532/emacs-ping-kingdom-belgium#main\" data-orig-file=\"https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/12/emacs-ping-kingdom-belgium.png?fit=770%2C236&amp;ssl=1\" data-orig-size=\"770,236\" data-comments-opened=\"1\" data-image-meta='{\"aperture\":\"0\",\"credit\":\"\",\"camera\":\"\",\"caption\":\"\",\"created_timestamp\":\"0\",\"copyright\":\"\",\"focal_length\":\"0\",\"iso\":\"0\",\"shutter_speed\":\"0\",\"title\":\"\",\"orientation\":\"0\"}' data-image-title=\"emacs-ping-kingdom-belgium\" data-image-description=\"\" data-image-caption=\"\" data-medium-file=\"https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/12/emacs-ping-kingdom-belgium.png?fit=300%2C92&amp;ssl=1\" data-large-file=\"https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/12/emacs-ping-kingdom-belgium.png?fit=696%2C213&amp;ssl=1\" decoding=\"async\" width=\"770\" height=\"236\" src=\"https://snarfed.org/w/wp-content/uploads/2022/12/emacs-ping-kingdom-belgium.png\" alt=\"Emacs pinging realize.be, Kingdom of Belgium\" class=\"u-photo shadow wp-image-48533\" srcset=\"https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/12/emacs-ping-kingdom-belgium.png?w=770&amp;ssl=1 770w, https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/12/emacs-ping-kingdom-belgium.png?resize=300%2C92&amp;ssl=1 300w, https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/12/emacs-ping-kingdom-belgium.png?resize=768%2C235&amp;ssl=1 768w\" sizes=\"(max-width: 696px) 100vw, 696px\"></noscript></a>\n</p>",
+                "html": "<p>Meanwhile, in Emacs…</p>\n<p><a href=\"https://snarfed.org/w/wp-content/uploads/2022/12/emacs-ping-kingdom-belgium.png\"><img data-attachment-id=\"48533\" data-permalink=\"https://snarfed.org/2022-12-06_48532/emacs-ping-kingdom-belgium#main\" data-orig-file=\"https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/12/emacs-ping-kingdom-belgium.png?fit=770%2C236&amp;ssl=1\" data-orig-size=\"770,236\" data-comments-opened=\"1\" data-image-meta='{\"aperture\":\"0\",\"credit\":\"\",\"camera\":\"\",\"caption\":\"\",\"created_timestamp\":\"0\",\"copyright\":\"\",\"focal_length\":\"0\",\"iso\":\"0\",\"shutter_speed\":\"0\",\"title\":\"\",\"orientation\":\"0\"}' data-image-title=\"emacs-ping-kingdom-belgium\" data-image-description data-image-caption data-medium-file=\"https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/12/emacs-ping-kingdom-belgium.png?fit=300%2C92&amp;ssl=1\" data-large-file=\"https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/12/emacs-ping-kingdom-belgium.png?fit=696%2C213&amp;ssl=1\" decoding=\"async\" width=\"770\" height=\"236\" src=\"https://snarfed.org/w/wp-content/uploads/2022/12/emacs-ping-kingdom-belgium.png\" alt=\"Emacs pinging realize.be, Kingdom of Belgium\" class=\"shadow wp-image-48533 jetpack-lazy-image\" data-lazy-srcset=\"https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/12/emacs-ping-kingdom-belgium.png?w=770&amp;ssl=1 770w, https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/12/emacs-ping-kingdom-belgium.png?resize=300%2C92&amp;ssl=1 300w, https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/12/emacs-ping-kingdom-belgium.png?resize=768%2C235&amp;ssl=1 768w\" data-lazy-sizes=\"(max-width: 696px) 100vw, 696px\" data-lazy-src=\"/w/wp-content/uploads/2022/12/emacs-ping-kingdom-belgium.png?is-pending-load=1\" srcset=\"data:image/gif;base64, https://snarfed.org/R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"><noscript><img data-lazy-fallback=\"1\" data-attachment-id=\"48533\" data-permalink=\"https://snarfed.org/2022-12-06_48532/emacs-ping-kingdom-belgium#main\" data-orig-file=\"https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/12/emacs-ping-kingdom-belgium.png?fit=770%2C236&amp;ssl=1\" data-orig-size=\"770,236\" data-comments-opened=\"1\" data-image-meta='{\"aperture\":\"0\",\"credit\":\"\",\"camera\":\"\",\"caption\":\"\",\"created_timestamp\":\"0\",\"copyright\":\"\",\"focal_length\":\"0\",\"iso\":\"0\",\"shutter_speed\":\"0\",\"title\":\"\",\"orientation\":\"0\"}' data-image-title=\"emacs-ping-kingdom-belgium\" data-image-description=\"\" data-image-caption=\"\" data-medium-file=\"https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/12/emacs-ping-kingdom-belgium.png?fit=300%2C92&amp;ssl=1\" data-large-file=\"https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/12/emacs-ping-kingdom-belgium.png?fit=696%2C213&amp;ssl=1\" decoding=\"async\" loading=\"lazy\" width=\"770\" height=\"236\" src=\"https://snarfed.org/w/wp-content/uploads/2022/12/emacs-ping-kingdom-belgium.png\" alt=\"Emacs pinging realize.be, Kingdom of Belgium\" class=\"u-photo shadow wp-image-48533\" srcset=\"https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/12/emacs-ping-kingdom-belgium.png?w=770&amp;ssl=1 770w, https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/12/emacs-ping-kingdom-belgium.png?resize=300%2C92&amp;ssl=1 300w, https://i0.wp.com/snarfed.org/w/wp-content/uploads/2022/12/emacs-ping-kingdom-belgium.png?resize=768%2C235&amp;ssl=1 768w\" sizes=\"(max-width: 696px) 100vw, 696px\"></noscript></a>\n</p>",
                 "value": "Meanwhile, in Emacs…\n Emacs pinging realize.be, Kingdom of Belgium  Emacs pinging realize.be, Kingdom of Belgium"
               }
             ],
@@ -537,58 +591,6 @@
             ]
           },
           "id": "post-48189"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              ""
-            ],
-            "url": [
-              "https://snarfed.org/2022-12-03_48181"
-            ],
-            "published": [
-              "2022-12-03T13:15:51-08:00"
-            ],
-            "syndication": [
-              "https://news.indieweb.org/en/snarfed.org/2022-12-03_48181",
-              "https://news.indieweb.org/en/snarfed.org/2022-12-03_48181"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "photo": [
-                    {
-                      "value": "https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=96&d=blank&r=g",
-                      "srcset": {
-                        "2x": "https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=192&d=blank&r=g"
-                      },
-                      "alt": ""
-                    }
-                  ],
-                  "url": [
-                    "https://snarfed.org/"
-                  ],
-                  "name": [
-                    "Ryan Barrett"
-                  ]
-                },
-                "value": "Ryan Barrett"
-              }
-            ],
-            "content": [
-              {
-                "html": "<p class=\"right third\">\n <a href=\"https://github.com/mastodon/mastodon/releases/tag/v4.0.0\">\n<img decoding=\"async\" src=\"https://snarfed.org/mastodon_elephant_curious.png\" data-lazy-src=\"/mastodon_elephant_curious.png?is-pending-load=1\" srcset=\"data:image/gif;base64, https://snarfed.org/R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" class=\" jetpack-lazy-image\"><noscript><img data-lazy-fallback=\"1\" decoding=\"async\" src=\"https://snarfed.org/mastodon_elephant_curious.png\"></noscript>\n</a></p>\n<p>So <a href=\"https://github.com/mastodon/mastodon/releases/tag/v4.0.0\">Mastodon 4</a> went <a href=\"https://indieweb.org/js;dr\">js;dr</a>, which means it requires JavaScript to render content. That means that server-side fetches of Mastodon 4 user profiles and posts, eg <a href=\"https://indieweb.social/@snarfed\">indieweb.social/@snarfed</a>, no longer return the actual contents in the response. They definitely no longer <a href=\"https://github.com/mastodon/mastodon/issues/122\">include microformats</a>. 😐</p>\n<p>JavaScript and <a href=\"https://en.wikipedia.org/wiki/Single-page_application\">SPA</a>s are their own conversation, but regardless, this is a step backward for the open web and server-to-server communications like the <a href=\"https://indieweb.org/\">IndieWeb</a> uses. Fortunately, there’s a workaround: use <a href=\"https://granary.io/\">granary</a>! Plug any Mastodon 4 profile or post URL into <a href=\"https://granary.io/?input=activitystreams#logins\">granary’s ActivityStreams 2 converter</a> and you’ll get the full contents in HTML, Atom, RSS, or any other format you want. Works via REST API and <a href=\"https://pypi.org/project/granary/\">pip-installable Python package</a>. <a href=\"https://granary.io/url?input=as2&amp;output=mf2-json&amp;url=https://indieweb.social/@snarfed\">Here’s an example.</a> Happy hacking!</p>",
-                "value": "https://snarfed.org/mastodon_elephant_curious.png  https://snarfed.org/mastodon_elephant_curious.png \n\nSo Mastodon 4 went js;dr, which means it requires JavaScript to render content. That means that server-side fetches of Mastodon 4 user profiles and posts, eg indieweb.social/@snarfed, no longer return the actual contents in the response. They definitely no longer include microformats. 😐\nJavaScript and SPAs are their own conversation, but regardless, this is a step backward for the open web and server-to-server communications like the IndieWeb uses. Fortunately, there’s a workaround: use granary! Plug any Mastodon 4 profile or post URL into granary’s ActivityStreams 2 converter and you’ll get the full contents in HTML, Atom, RSS, or any other format you want. Works via REST API and pip-installable Python package. Here’s an example. Happy hacking!"
-              }
-            ]
-          },
-          "id": "post-48181"
         }
       ]
     }
@@ -664,12 +666,15 @@
       "https://snarfed.org/"
     ],
     "category": [
+      "https://snarfed.org/category/essay",
       "https://snarfed.org/category/uncategorized"
     ],
     "tag": [
+      "https://snarfed.org/category/essay",
       "https://snarfed.org/category/uncategorized"
     ],
     "bookmark": [
+      "https://snarfed.org/2023-01-11_logs-as-end-user-ui",
       "https://snarfed.org/2023-01-01_48723",
       "https://snarfed.org/2022-12-28_48725",
       "https://snarfed.org/2022-12-24_48704",
@@ -678,8 +683,7 @@
       "https://snarfed.org/2022-12-06_48532",
       "https://snarfed.org/2022-12-06_48514",
       "https://snarfed.org/2022-12-03_48201",
-      "https://snarfed.org/2022-12-03_bridgy-fed-updates",
-      "https://snarfed.org/2022-12-03_48181"
+      "https://snarfed.org/2022-12-03_bridgy-fed-updates"
     ],
     "author": [
       "https://snarfed.org/"
@@ -931,6 +935,19 @@
       ],
       "text": "PGP public key"
     },
+    "https://snarfed.org/category/essay": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "essay"
+    },
+    "https://snarfed.org/2023-01-11_logs-as-end-user-ui": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "Logs as end user UI"
+    },
     "https://snarfed.org/category/uncategorized": {
       "rels": [
         "category",
@@ -983,11 +1000,6 @@
         "bookmark"
       ],
       "text": "Bridgy Fed updates"
-    },
-    "https://snarfed.org/2022-12-03_48181": {
-      "rels": [
-        "bookmark"
-      ]
     },
     "http://wordpress.org/": {
       "rels": [

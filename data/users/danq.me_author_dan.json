@@ -44,6 +44,57 @@
           ],
           "properties": {
             "name": [
+              "The Page With No Code"
+            ],
+            "url": [
+              "https://danq.me/2023/01/11/nocode/"
+            ],
+            "uid": [
+              "https://danq.me/2023/01/11/nocode/"
+            ],
+            "published": [
+              "2023-01-11T15:32:00+00:00"
+            ],
+            "content": [
+              {
+                "html": "<p>It all started when I saw <a href=\"https://no-ht.ml/\">no-ht.ml</a>, <a href=\"https://shkspr.mobi/\">Terence Eden</a>‘s hilarious response to <a href=\"https://whitep4nth3r.com/\">Salma Alam-Naylor</a>‘s excellent <a href=\"https://whitep4nth3r.com/blog/html-is-all-you-need-to-make-a-website/\"><em>HTML is all you need to make a website</em></a>. The latter is an argument against both the silly amount of JavaScript with which websites routinely burden their users, but also even against depending on <abbr class=\"abbr\" title=\"Cascading Style Sheets\">CSS</abbr>. As a fan of <a href=\"https://css-naked-day.github.io/\"><abbr class=\"abbr\" title=\"Cascading Style Sheets\">CSS</abbr> Naked Day</a> and a firm believer in using <abbr class=\"abbr\" title=\"JavaScript\">JS</abbr> only for progressive enhancement, I’m obviously in favour.</p>\n<figure id=\"attachment_20975\" aria-describedby=\"caption-attachment-20975\" style=\"width: 640px\" class=\"wp-caption aligncenter\"><a href=\"https://no-ht.ml/\"><img decoding=\"async\" class=\"lazy lazy-hidden size-large wp-image-20975\" src=\"https://danq.me/wp-content/uploads/2023/01/xyou-dont-need-html-screenshot-30x21.png.pagespeed.ic.GCyA5cR97X.jpg\" data-lazy-type=\"image\" data-lazy-src=\"https://danq.me/wp-content/uploads/2023/01/you-dont-need-html-screenshot-1024x701.png\" alt=\"Screenshot showing Terence Eden's no-ht.ml website, which uses plain text ASCII/Unicode art to argue that you don't need HTML.\" width=\"640\" height=\"438\" data-lazy-srcset=\"https://danq.me/wp-content/uploads/2023/01/you-dont-need-html-screenshot-1024x701.png 1024w, https://danq.me/wp-content/uploads/2023/01/you-dont-need-html-screenshot-300x205.png 300w, https://danq.me/wp-content/uploads/2023/01/you-dont-need-html-screenshot-768x526.png 768w, https://danq.me/wp-content/uploads/2023/01/you-dont-need-html-screenshot-30x21.png 30w, https://danq.me/wp-content/uploads/2023/01/you-dont-need-html-screenshot-898x615.png 898w, https://danq.me/wp-content/uploads/2023/01/you-dont-need-html-screenshot.png 1050w\" data-lazy-sizes=\"(max-width: 640px) 100vw, 640px\"><noscript><img decoding=\"async\" class=\"size-large wp-image-20975\" src=\"https://danq.me/wp-content/uploads/2023/01/640x438xyou-dont-need-html-screenshot-1024x701.png.pagespeed.ic.R_dg5ASHiK.png\" alt=\"Screenshot showing Terence Eden's no-ht.ml website, which uses plain text ASCII/Unicode art to argue that you don't need HTML.\" width=\"640\" height=\"438\" srcset=\"https://danq.me/wp-content/uploads/2023/01/xyou-dont-need-html-screenshot-1024x701.png.pagespeed.ic.UHF9tOJJcM.png 1024w, https://danq.me/wp-content/uploads/2023/01/xyou-dont-need-html-screenshot-300x205.png.pagespeed.ic.YpvET67mGs.png 300w, https://danq.me/wp-content/uploads/2023/01/xyou-dont-need-html-screenshot-768x526.png.pagespeed.ic.vJ2xvauBCm.png 768w, https://danq.me/wp-content/uploads/2023/01/xyou-dont-need-html-screenshot-30x21.png.pagespeed.ic.GCyA5cR97X.jpg 30w, https://danq.me/wp-content/uploads/2023/01/xyou-dont-need-html-screenshot-898x615.png.pagespeed.ic.6zNttfI5um.png 898w, https://danq.me/wp-content/uploads/2023/01/xyou-dont-need-html-screenshot.png.pagespeed.ic.LIrKgxmjR5.png 1050w\" sizes=\"(max-width: 640px) 100vw, 640px\"></noscript></a><figcaption id=\"caption-attachment-20975\" class=\"wp-caption-text\">Obviously no-ht.ml is to be taken as tongue-in-cheek, but as you’re about to see: it caught <em>my</em> interest and got me thinking: how could I go <em>even further</em>.</figcaption></figure>\n<p>Terence’s site works by delivering a document with a claimed <abbr class=\"abbr\" title=\"Multipurpose Internet Mail Extensions\">MIME</abbr> type of <code><span aria-labelledby=\"value\"><span class=\"objectBox objectBox-string\">text/html</span></span></code>, but which contains only the (invalid) “<abbr class=\"abbr\" title=\"Hypertext Markup Language\">HTML</abbr>” code <code>&lt;!doctype UNICODE&gt;&lt;meta charset=\"UTF-8\"&gt;&lt;plaintext&gt;</code> (to work around browsers’ wish to treat the page as <abbr class=\"abbr\" title=\"Hypertext Markup Language\">HTML</abbr>). This is followed by a block of <abbr class=\"abbr\" title=\"Unicode Transformation Format (8-bit)\">UTF-8</abbr> plain text making use of spacing and emoji to illustrate and decorate the content. It’s frankly very silly, and I love it.<sup><a name=\"footnote-ref-20974-1\" href=\"https://danq.me/author/dan/#footnote-20974-1\" title=\"My first reaction was “why not just deliver something with Content-Type: text/plain; charset=utf-8 and dispense with the invalid code, but perhaps that’s just me overthinking the non-existent problem.\" class=\"q18-footnote-ref\">1</a></sup></p>\n<p>I think it’s possible to go one step further, though, and create a web page with <em>no code whatsoever</em>. That is, one that you can read as if it were a regular web page, but where using View Source or e.g. downloading the page with <code>curl</code> will show you… nothing.</p>\n<p>I present: <a href=\"https://danq.me/wp-content/no-code-webpage/\"><strong><em>The Page With No Code</em></strong></a>! (It’ll probably only work if you’re using <a href=\"https://www.mozilla.org/firefox\">Firefox</a>, for reasons that will become apparent later.)</p>\n<figure id=\"attachment_20976\" aria-describedby=\"caption-attachment-20976\" style=\"width: 1024px\" class=\"wp-caption aligncenter\"><a href=\"https://danq.me/wp-content/no-code-webpage/\"><img decoding=\"async\" loading=\"lazy\" class=\"lazy lazy-hidden wp-image-20976 size-full\" src=\"https://danq.me/wp-content/uploads/2023/01/xthe-page-with-no-code-screenshot-30x17.png.pagespeed.ic.dHKbotqU3_.jpg\" data-lazy-type=\"image\" data-lazy-src=\"https://danq.me/wp-content/uploads/2023/01/the-page-with-no-code-screenshot.png\" alt='Screenshot showing my webpage, \"The Page With No Code\". Using white text (and some emojis) on a blue gradient background, it describes the same thought process as I describe in this blog post, and invites the reader to \"View Source\" and see that the page genuinely does appear to have no code.' width=\"1024\" height=\"576\" data-lazy-srcset=\"https://danq.me/wp-content/uploads/2023/01/the-page-with-no-code-screenshot.png 1024w, https://danq.me/wp-content/uploads/2023/01/the-page-with-no-code-screenshot-300x169.png 300w, https://danq.me/wp-content/uploads/2023/01/the-page-with-no-code-screenshot-768x432.png 768w, https://danq.me/wp-content/uploads/2023/01/the-page-with-no-code-screenshot-30x17.png 30w, https://danq.me/wp-content/uploads/2023/01/the-page-with-no-code-screenshot-898x505.png 898w\" data-lazy-sizes=\"(max-width: 1024px) 100vw, 1024px\"><noscript><img decoding=\"async\" loading=\"lazy\" class=\"wp-image-20976 size-full\" src=\"https://danq.me/wp-content/uploads/2023/01/xthe-page-with-no-code-screenshot.png.pagespeed.ic.scBQ11Jj64.png\" alt='Screenshot showing my webpage, \"The Page With No Code\". Using white text (and some emojis) on a blue gradient background, it describes the same thought process as I describe in this blog post, and invites the reader to \"View Source\" and see that the page genuinely does appear to have no code.' width=\"1024\" height=\"576\" srcset=\"https://danq.me/wp-content/uploads/2023/01/xthe-page-with-no-code-screenshot.png.pagespeed.ic.scBQ11Jj64.png 1024w, https://danq.me/wp-content/uploads/2023/01/xthe-page-with-no-code-screenshot-300x169.png.pagespeed.ic.BvUIaAWkEv.png 300w, https://danq.me/wp-content/uploads/2023/01/xthe-page-with-no-code-screenshot-768x432.png.pagespeed.ic.aiwMloJRQr.png 768w, https://danq.me/wp-content/uploads/2023/01/xthe-page-with-no-code-screenshot-30x17.png.pagespeed.ic.dHKbotqU3_.jpg 30w, https://danq.me/wp-content/uploads/2023/01/xthe-page-with-no-code-screenshot-898x505.png.pagespeed.ic.oHD5iJKT-X.png 898w\" sizes=\"(max-width: 1024px) 100vw, 1024px\"></noscript></a><figcaption id=\"caption-attachment-20976\" class=\"wp-caption-text\">I’d encourage you to visit <em>The Page With No Code</em>, use View Source to confirm for yourself that it truly has no code, and see if you can work out for yourself how it manages this feat… before coming back here for an explanation. Again: probably Firefox-only.</figcaption></figure>\n<p>Once you’ve had a look for yourself and had a chance to form an opinion, here’s an explanation the black magic that makes this atrocity possible:</p>\n<ol>\n<li>The page is blank. It’s delivered with <code>Content-Type: text/html</code>. Your browser interprets a completely-blank page as faulty and corrects it to a functionally-blank minimal HTML page: <code>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;</code>.</li>\n<li>\n<code>&lt;body&gt;</code> and <code>&lt;html&gt;</code> elements can be styled with <abbr class=\"abbr\" title=\"Cascading Style Sheets\">CSS</abbr>; this includes the ability to add <a title=\"MDN Web Docs: CSS 'content' property\" href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/content\">content:</a> <code>::before</code> and <code>::after</code> each element. If only we could load a stylesheet then content injection is possible.</li>\n<li>We use <a title=\"My blog post: The Fourth Way to Inject CSS\" href=\"https://danq.me/2020/12/21/http-link-css-injection/\">the fourth way to inject <abbr class=\"abbr\" title=\"Cascading Style Sheets\">CSS</abbr></a> – a <code>Link:</code> <abbr class=\"abbr\" title=\"Hypertext Transfer Protocol\">HTTP</abbr> header – to deliver a <abbr class=\"abbr\" title=\"Cascading Style Sheets\">CSS</abbr> payload (this, unfortunately, only works in Firefox). To further obfuscate what’s happening and remove the need for a round-trip, this is encoded as a data: <abbr class=\"abbr\" title=\"Uniform Resource Indicator\">URI</abbr>.</li>\n</ol>\n<figure id=\"attachment_20978\" aria-describedby=\"caption-attachment-20978\" style=\"width: 541px\" class=\"wp-caption aligncenter\"><img decoding=\"async\" loading=\"lazy\" class=\"lazy lazy-hidden size-full wp-image-20978\" src=\"https://danq.me/wp-content/uploads/2023/01/xno-code-webpage-css-injection-header-30x30.png.pagespeed.ic.AmpFtXtXST.jpg\" data-lazy-type=\"image\" data-lazy-src=\"https://danq.me/wp-content/uploads/2023/01/no-code-webpage-css-injection-header.png\" alt=\"Screenshot showing HTTP headers returned from a request to the No Code Webpage. A Link: header is highlighted, it contains a data: URL with a base64-encoded CSS stylesheet.\" width=\"541\" height=\"548\" data-lazy-srcset=\"https://danq.me/wp-content/uploads/2023/01/no-code-webpage-css-injection-header.png 541w, https://danq.me/wp-content/uploads/2023/01/no-code-webpage-css-injection-header-296x300.png 296w, https://danq.me/wp-content/uploads/2023/01/no-code-webpage-css-injection-header-30x30.png 30w\" data-lazy-sizes=\"(max-width: 541px) 100vw, 541px\"><noscript><img decoding=\"async\" loading=\"lazy\" class=\"size-full wp-image-20978\" src=\"https://danq.me/wp-content/uploads/2023/01/xno-code-webpage-css-injection-header.png.pagespeed.ic.ZRWiqVCcrO.png\" alt=\"Screenshot showing HTTP headers returned from a request to the No Code Webpage. A Link: header is highlighted, it contains a data: URL with a base64-encoded CSS stylesheet.\" width=\"541\" height=\"548\" srcset=\"https://danq.me/wp-content/uploads/2023/01/xno-code-webpage-css-injection-header.png.pagespeed.ic.ZRWiqVCcrO.png 541w, https://danq.me/wp-content/uploads/2023/01/xno-code-webpage-css-injection-header-296x300.png.pagespeed.ic.NYDTXEOJw_.jpg 296w, https://danq.me/wp-content/uploads/2023/01/xno-code-webpage-css-injection-header-30x30.png.pagespeed.ic.AmpFtXtXST.jpg 30w\" sizes=\"(max-width: 541px) 100vw, 541px\"></noscript>\n<figcaption id=\"caption-attachment-20978\" class=\"wp-caption-text\">The stylesheet – and all the page content – is right there in the Link: header if you just care to decode it! Observe that while 5.84<abbr class=\"abbr\" title=\"kilobytes\">kB</abbr> of data are transferred, the browser rightly states that the page is zero bytes in size.</figcaption></figure>\n<p>This is one of the most disgusting things I’ve ever coded, and that’s saying a lot. I’m so proud of myself. You can <a title=\"Github Gist showing how The Page With No Code was generated\" href=\"https://gist.github.com/Dan-Q/fc308a8a4aca2934312939f92eaa9d2e\">view the code I used to generate this awful thing on Github</a>.</p>\n<div class=\"q18-footnotes\" style=\"font-size: 80%; margin-top: 0.5em; padding-top: 0.5em; border-top: 1px solid #666;\">\n<h2 class=\"sr-only\">Footnotes</h2>\n<p class=\"q18-footnote\" data-footnote-name=\"footnote-20974-1\"><sup><a name=\"footnote-20974-1\" href=\"https://danq.me/author/dan/#footnote-ref-20974-1\">1</a></sup> My first reaction was “why not just deliver something with <code>Content-Type: text/plain; charset=utf-8</code> and dispense with the invalid code, but perhaps that’s just me overthinking the non-existent problem.</p>\n</div>\n<div class=\"syndication-links\"><span class=\"relsyn\"><data class=\"u-syndication\" value=\"https://www.facebook.com/1353711854741727/posts/1183263035794965\"></data> <data class=\"u-syndication\" value=\"https://scatmania.livejournal.com/251535.html\"></data> <data class=\"u-syndication\" value=\"https://m.danq.me/@blog/109671317581682014\"></data> <data class=\"u-syndication\" value=\"https://www.tumblr.com/dan--q/706164750237696000/the-page-with-no-code?source=share\"></data> <data class=\"u-syndication\" value=\"https://www.facebook.com/DanQBlog/posts/pfbid02nCzo8JKxPYmPqXUtRLDQLAnoaZByFt8PDpXQThTNkRGAf1JTdcbqtmqGwfmfZsyfl\"></data> <data class=\"u-syndication\" value=\"https://www.linkedin.com/posts/itsdanq_the-page-with-no-code-activity-7018965765399683072-IjWb\"></data></span></div>",
+                "value": "It all started when I saw no-ht.ml, Terence Eden‘s hilarious response to Salma Alam-Naylor‘s excellent HTML is all you need to make a website. The latter is an argument against both the silly amount of JavaScript with which websites routinely burden their users, but also even against depending on CSS. As a fan of CSS Naked Day and a firm believer in using JS only for progressive enhancement, I’m obviously in favour.\n Screenshot showing Terence Eden's no-ht.ml website, which uses plain text ASCII/Unicode art to argue that you don't need HTML.  Screenshot showing Terence Eden's no-ht.ml website, which uses plain text ASCII/Unicode art to argue that you don't need HTML. Obviously no-ht.ml is to be taken as tongue-in-cheek, but as you’re about to see: it caught my interest and got me thinking: how could I go even further.\nTerence’s site works by delivering a document with a claimed MIME type of text/html, but which contains only the (invalid) “HTML” code <!doctype UNICODE><meta charset=\"UTF-8\"><plaintext> (to work around browsers’ wish to treat the page as HTML). This is followed by a block of UTF-8 plain text making use of spacing and emoji to illustrate and decorate the content. It’s frankly very silly, and I love it.1\nI think it’s possible to go one step further, though, and create a web page with no code whatsoever. That is, one that you can read as if it were a regular web page, but where using View Source or e.g. downloading the page with curl will show you… nothing.\nI present: The Page With No Code! (It’ll probably only work if you’re using Firefox, for reasons that will become apparent later.)\n Screenshot showing my webpage, \"The Page With No Code\". Using white text (and some emojis) on a blue gradient background, it describes the same thought process as I describe in this blog post, and invites the reader to \"View Source\" and see that the page genuinely does appear to have no code.  Screenshot showing my webpage, \"The Page With No Code\". Using white text (and some emojis) on a blue gradient background, it describes the same thought process as I describe in this blog post, and invites the reader to \"View Source\" and see that the page genuinely does appear to have no code. I’d encourage you to visit The Page With No Code, use View Source to confirm for yourself that it truly has no code, and see if you can work out for yourself how it manages this feat… before coming back here for an explanation. Again: probably Firefox-only.\nOnce you’ve had a look for yourself and had a chance to form an opinion, here’s an explanation the black magic that makes this atrocity possible:\n\nThe page is blank. It’s delivered with Content-Type: text/html. Your browser interprets a completely-blank page as faulty and corrects it to a functionally-blank minimal HTML page: <html><head></head><body></body></html>.\n<body> and <html> elements can be styled with CSS; this includes the ability to add content: ::before and ::after each element. If only we could load a stylesheet then content injection is possible.\nWe use the fourth way to inject CSS – a Link: HTTP header – to deliver a CSS payload (this, unfortunately, only works in Firefox). To further obfuscate what’s happening and remove the need for a round-trip, this is encoded as a data: URI.\n\n Screenshot showing HTTP headers returned from a request to the No Code Webpage. A Link: header is highlighted, it contains a data: URL with a base64-encoded CSS stylesheet.  Screenshot showing HTTP headers returned from a request to the No Code Webpage. A Link: header is highlighted, it contains a data: URL with a base64-encoded CSS stylesheet. The stylesheet – and all the page content – is right there in the Link: header if you just care to decode it! Observe that while 5.84kB of data are transferred, the browser rightly states that the page is zero bytes in size.\nThis is one of the most disgusting things I’ve ever coded, and that’s saying a lot. I’m so proud of myself. You can view the code I used to generate this awful thing on Github.\nFootnotes1 My first reaction was “why not just deliver something with Content-Type: text/plain; charset=utf-8 and dispense with the invalid code, but perhaps that’s just me overthinking the non-existent problem."
+              }
+            ],
+            "syndication": [
+              "https://www.facebook.com/1353711854741727/posts/1183263035794965",
+              "https://scatmania.livejournal.com/251535.html",
+              "https://m.danq.me/@blog/109671317581682014",
+              "https://www.tumblr.com/dan--q/706164750237696000/the-page-with-no-code?source=share",
+              "https://www.facebook.com/DanQBlog/posts/pfbid02nCzo8JKxPYmPqXUtRLDQLAnoaZByFt8PDpXQThTNkRGAf1JTdcbqtmqGwfmfZsyfl",
+              "https://www.linkedin.com/posts/itsdanq_the-page-with-no-code-activity-7018965765399683072-IjWb",
+              "https://www.facebook.com/1353711854741727/posts/1183263035794965",
+              "https://scatmania.livejournal.com/251535.html",
+              "https://m.danq.me/@blog/109671317581682014",
+              "https://www.tumblr.com/dan--q/706164750237696000/the-page-with-no-code?source=share",
+              "https://www.facebook.com/DanQBlog/posts/pfbid02nCzo8JKxPYmPqXUtRLDQLAnoaZByFt8PDpXQThTNkRGAf1JTdcbqtmqGwfmfZsyfl",
+              "https://www.linkedin.com/posts/itsdanq_the-page-with-no-code-activity-7018965765399683072-IjWb"
+            ],
+            "category": [
+              "code",
+              "css",
+              "firefox",
+              "html",
+              "html5",
+              "published on gemini",
+              "technology",
+              "web",
+              "web development"
+            ]
+          },
+          "id": "post-20974"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               "Ideal #2 (SMBC)"
             ],
             "url": [
@@ -57,7 +108,7 @@
             ],
             "content": [
               {
-                "html": "<section class=\"h-cite response p-repost-of \">\n<header>\n<span class=\"p-name\"> </span></header>\n<blockquote class=\"e-summary\"></blockquote>\n</section>\n<blockquote class=\"h-cite u-repost-of\" cite=\"https://www.smbc-comics.com/comic/ideal-2\">\n<p class=\"e-content\"><a href=\"https://www.smbc-comics.com/comic/ideal-2\"><img decoding=\"async\" class=\"lazy lazy-hidden alignnone wp-image-20971 size-full\" src=\"https://danq.me/wp-content/uploads/2023/01/xideal-2-frame-30x30.png.pagespeed.ic.kAReZ4T8fd.jpg\" data-lazy-type=\"image\" data-lazy-src=\"https://danq.me/wp-content/uploads/2023/01/ideal-2-frame.png\" alt=\"Frame from SMBC comic &quot;Ideal #2&quot;: a man looks up to the sky, saying &quot;I thought you weren't down with that sort of thing&quot;; a voice comes back, implied to be God, saying &quot;Think of the children!&quot;\" width=\"334\" height=\"343\" data-lazy-srcset=\"https://danq.me/wp-content/uploads/2023/01/ideal-2-frame.png 334w, https://danq.me/wp-content/uploads/2023/01/ideal-2-frame-292x300.png 292w, https://danq.me/wp-content/uploads/2023/01/ideal-2-frame-30x30.png 30w\" data-lazy-sizes=\"(max-width: 334px) 100vw, 334px\"><noscript><img decoding=\"async\" class=\"alignnone wp-image-20971 size-full\" src=\"https://danq.me/wp-content/uploads/2023/01/xideal-2-frame.png.pagespeed.ic.Dxbr-SJSIi.png\" alt=\"Frame from SMBC comic &quot;Ideal #2&quot;: a man looks up to the sky, saying &quot;I thought you weren't down with that sort of thing&quot;; a voice comes back, implied to be God, saying &quot;Think of the children!&quot;\" width=\"334\" height=\"343\" srcset=\"https://danq.me/wp-content/uploads/2023/01/xideal-2-frame.png.pagespeed.ic.Dxbr-SJSIi.png 334w, https://danq.me/wp-content/uploads/2023/01/xideal-2-frame-292x300.png.pagespeed.ic.5OD42Uu3bR.png 292w, https://danq.me/wp-content/uploads/2023/01/xideal-2-frame-30x30.png.pagespeed.ic.kAReZ4T8fd.jpg 30w\" sizes=\"(max-width: 334px) 100vw, 334px\"></noscript></a></p>\n<footer><cite class=\"p-author h-card\"><a class=\"u-url p-name\" href=\"https://www.smbc-comics.com/\">Saturday Morning Breakfast Cereal</a></cite></footer>\n</blockquote>\n<p>The <a href=\"https://www.smbc-comics.com/comic/ideal-2\"><abbr class=\"abbr\" title=\"Saturday Morning Breakfast Cereal\">SMBC</abbr> comic that came out this weekend</a> was perhaps the best birthday present the Internet could provide.</p>\n<div class=\"syndication-links\"><span class=\"relsyn\"><data class=\"u-syndication\" value=\"https://m.danq.me/@blog/109658937897325582\"></data></span></div>",
+                "html": "<section class=\"h-cite response p-repost-of \">\n<header>\n<span class=\"p-name\"> </span></header>\n<blockquote class=\"e-summary\"></blockquote>\n</section>\n<blockquote class=\"h-cite u-repost-of\" cite=\"https://www.smbc-comics.com/comic/ideal-2\">\n<p class=\"e-content\"><a href=\"https://www.smbc-comics.com/comic/ideal-2\"><img decoding=\"async\" loading=\"lazy\" class=\"lazy lazy-hidden alignnone wp-image-20971 size-full\" src=\"https://danq.me/wp-content/uploads/2023/01/xideal-2-frame-30x30.png.pagespeed.ic.kAReZ4T8fd.jpg\" data-lazy-type=\"image\" data-lazy-src=\"https://danq.me/wp-content/uploads/2023/01/ideal-2-frame.png\" alt=\"Frame from SMBC comic &quot;Ideal #2&quot;: a man looks up to the sky, saying &quot;I thought you weren't down with that sort of thing&quot;; a voice comes back, implied to be God, saying &quot;Think of the children!&quot;\" width=\"334\" height=\"343\" data-lazy-srcset=\"https://danq.me/wp-content/uploads/2023/01/ideal-2-frame.png 334w, https://danq.me/wp-content/uploads/2023/01/ideal-2-frame-292x300.png 292w, https://danq.me/wp-content/uploads/2023/01/ideal-2-frame-30x30.png 30w\" data-lazy-sizes=\"(max-width: 334px) 100vw, 334px\"><noscript><img decoding=\"async\" loading=\"lazy\" class=\"alignnone wp-image-20971 size-full\" src=\"https://danq.me/wp-content/uploads/2023/01/xideal-2-frame.png.pagespeed.ic.Dxbr-SJSIi.png\" alt=\"Frame from SMBC comic &quot;Ideal #2&quot;: a man looks up to the sky, saying &quot;I thought you weren't down with that sort of thing&quot;; a voice comes back, implied to be God, saying &quot;Think of the children!&quot;\" width=\"334\" height=\"343\" srcset=\"https://danq.me/wp-content/uploads/2023/01/xideal-2-frame.png.pagespeed.ic.Dxbr-SJSIi.png 334w, https://danq.me/wp-content/uploads/2023/01/xideal-2-frame-292x300.png.pagespeed.ic.5OD42Uu3bR.png 292w, https://danq.me/wp-content/uploads/2023/01/xideal-2-frame-30x30.png.pagespeed.ic.kAReZ4T8fd.jpg 30w\" sizes=\"(max-width: 334px) 100vw, 334px\"></noscript></a></p>\n<footer><cite class=\"p-author h-card\"><a class=\"u-url p-name\" href=\"https://www.smbc-comics.com/\">Saturday Morning Breakfast Cereal</a></cite></footer>\n</blockquote>\n<p>The <a href=\"https://www.smbc-comics.com/comic/ideal-2\"><abbr class=\"abbr\" title=\"Saturday Morning Breakfast Cereal\">SMBC</abbr> comic that came out this weekend</a> was perhaps the best birthday present the Internet could provide.</p>\n<div class=\"syndication-links\"><span class=\"relsyn\"><data class=\"u-syndication\" value=\"https://m.danq.me/@blog/109658937897325582\"></data></span></div>",
                 "value": "Frame from SMBC comic \"Ideal #2\": a man looks up to the sky, saying \"I thought you weren't down with that sort of thing\"; a voice comes back, implied to be God, saying \"Think of the children!\"  Frame from SMBC comic \"Ideal #2\": a man looks up to the sky, saying \"I thought you weren't down with that sort of thing\"; a voice comes back, implied to be God, saying \"Think of the children!\" \nSaturday Morning Breakfast Cereal\n\nThe SMBC comic that came out this weekend was perhaps the best birthday present the Internet could provide."
               }
             ],
@@ -86,7 +137,7 @@
                 "properties": {
                   "content": [
                     {
-                      "html": "<a href=\"https://www.smbc-comics.com/comic/ideal-2\"><img decoding=\"async\" class=\"lazy lazy-hidden alignnone wp-image-20971 size-full\" src=\"https://danq.me/wp-content/uploads/2023/01/xideal-2-frame-30x30.png.pagespeed.ic.kAReZ4T8fd.jpg\" data-lazy-type=\"image\" data-lazy-src=\"https://danq.me/wp-content/uploads/2023/01/ideal-2-frame.png\" alt=\"Frame from SMBC comic &quot;Ideal #2&quot;: a man looks up to the sky, saying &quot;I thought you weren't down with that sort of thing&quot;; a voice comes back, implied to be God, saying &quot;Think of the children!&quot;\" width=\"334\" height=\"343\" data-lazy-srcset=\"https://danq.me/wp-content/uploads/2023/01/ideal-2-frame.png 334w, https://danq.me/wp-content/uploads/2023/01/ideal-2-frame-292x300.png 292w, https://danq.me/wp-content/uploads/2023/01/ideal-2-frame-30x30.png 30w\" data-lazy-sizes=\"(max-width: 334px) 100vw, 334px\"><noscript><img decoding=\"async\" class=\"alignnone wp-image-20971 size-full\" src=\"https://danq.me/wp-content/uploads/2023/01/xideal-2-frame.png.pagespeed.ic.Dxbr-SJSIi.png\" alt=\"Frame from SMBC comic &quot;Ideal #2&quot;: a man looks up to the sky, saying &quot;I thought you weren't down with that sort of thing&quot;; a voice comes back, implied to be God, saying &quot;Think of the children!&quot;\" width=\"334\" height=\"343\" srcset=\"https://danq.me/wp-content/uploads/2023/01/xideal-2-frame.png.pagespeed.ic.Dxbr-SJSIi.png 334w, https://danq.me/wp-content/uploads/2023/01/xideal-2-frame-292x300.png.pagespeed.ic.5OD42Uu3bR.png 292w, https://danq.me/wp-content/uploads/2023/01/xideal-2-frame-30x30.png.pagespeed.ic.kAReZ4T8fd.jpg 30w\" sizes=\"(max-width: 334px) 100vw, 334px\"></noscript></a>",
+                      "html": "<a href=\"https://www.smbc-comics.com/comic/ideal-2\"><img decoding=\"async\" loading=\"lazy\" class=\"lazy lazy-hidden alignnone wp-image-20971 size-full\" src=\"https://danq.me/wp-content/uploads/2023/01/xideal-2-frame-30x30.png.pagespeed.ic.kAReZ4T8fd.jpg\" data-lazy-type=\"image\" data-lazy-src=\"https://danq.me/wp-content/uploads/2023/01/ideal-2-frame.png\" alt=\"Frame from SMBC comic &quot;Ideal #2&quot;: a man looks up to the sky, saying &quot;I thought you weren't down with that sort of thing&quot;; a voice comes back, implied to be God, saying &quot;Think of the children!&quot;\" width=\"334\" height=\"343\" data-lazy-srcset=\"https://danq.me/wp-content/uploads/2023/01/ideal-2-frame.png 334w, https://danq.me/wp-content/uploads/2023/01/ideal-2-frame-292x300.png 292w, https://danq.me/wp-content/uploads/2023/01/ideal-2-frame-30x30.png 30w\" data-lazy-sizes=\"(max-width: 334px) 100vw, 334px\"><noscript><img decoding=\"async\" loading=\"lazy\" class=\"alignnone wp-image-20971 size-full\" src=\"https://danq.me/wp-content/uploads/2023/01/xideal-2-frame.png.pagespeed.ic.Dxbr-SJSIi.png\" alt=\"Frame from SMBC comic &quot;Ideal #2&quot;: a man looks up to the sky, saying &quot;I thought you weren't down with that sort of thing&quot;; a voice comes back, implied to be God, saying &quot;Think of the children!&quot;\" width=\"334\" height=\"343\" srcset=\"https://danq.me/wp-content/uploads/2023/01/xideal-2-frame.png.pagespeed.ic.Dxbr-SJSIi.png 334w, https://danq.me/wp-content/uploads/2023/01/xideal-2-frame-292x300.png.pagespeed.ic.5OD42Uu3bR.png 292w, https://danq.me/wp-content/uploads/2023/01/xideal-2-frame-30x30.png.pagespeed.ic.kAReZ4T8fd.jpg 30w\" sizes=\"(max-width: 334px) 100vw, 334px\"></noscript></a>",
                       "value": "Frame from SMBC comic \"Ideal #2\": a man looks up to the sky, saying \"I thought you weren't down with that sort of thing\"; a voice comes back, implied to be God, saying \"Think of the children!\"  Frame from SMBC comic \"Ideal #2\": a man looks up to the sky, saying \"I thought you weren't down with that sort of thing\"; a voice comes back, implied to be God, saying \"Think of the children!\""
                     }
                   ],
@@ -909,41 +960,6 @@
             ]
           },
           "id": "post-20868"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "url": [
-              "https://danq.me/2022/11/28/things-the-other-child-did-wrong/"
-            ],
-            "uid": [
-              "https://danq.me/2022/11/28/things-the-other-child-did-wrong/"
-            ],
-            "published": [
-              "2022-11-28T09:27:31+00:00"
-            ],
-            "content": [
-              {
-                "html": "<p class=\"no-auto-linkify\"><em>Things The Other Child Did Wrong That Lead To The Fight</em> that I’ve heard so far today:</p>\n<ul class=\"no-auto-linkify\">\n<li>Clapped too loudly</li>\n<li>Sang too loudly</li>\n<li>Sang too quietly</li>\n<li>Sang the wrong words</li>\n<li>Put their feet too close to the dog</li>\n<li>Ate the last grape</li>\n<li>Ate the wrong grape (!?)</li>\n<li>Finished brushing their teeth first</li>\n<li>Clapped too loudly, again</li>\n<li>Called somebody “buttocks”</li>\n<li>Said somebody <em>had</em> buttocks</li>\n<li>Expressed interest in going a different route to school</li>\n<li>Put shoes on in wrong order</li>\n</ul>\n<div class=\"syndication-links\"><span class=\"relsyn\"><data class=\"u-syndication\" value=\"https://m.danq.me/@dan/109420717008278587\"></data> <data class=\"u-syndication\" value=\"https://m.danq.me/@blog/109432642109576015\"></data></span></div>",
-                "value": "Things The Other Child Did Wrong That Lead To The Fight that I’ve heard so far today:\n\nClapped too loudly\nSang too loudly\nSang too quietly\nSang the wrong words\nPut their feet too close to the dog\nAte the last grape\nAte the wrong grape (!?)\nFinished brushing their teeth first\nClapped too loudly, again\nCalled somebody “buttocks”\nSaid somebody had buttocks\nExpressed interest in going a different route to school\nPut shoes on in wrong order"
-              }
-            ],
-            "syndication": [
-              "https://m.danq.me/@dan/109420717008278587",
-              "https://m.danq.me/@blog/109432642109576015",
-              "https://m.danq.me/@dan/109420717008278587",
-              "https://m.danq.me/@blog/109432642109576015"
-            ],
-            "category": [
-              "funny",
-              "monday",
-              "parenting",
-              "published on gemini"
-            ]
-          },
-          "id": "post-20856"
         }
       ]
     }
@@ -1032,6 +1048,7 @@
       "https://danq.me/"
     ],
     "bookmark": [
+      "https://danq.me/2023/01/11/nocode/",
       "https://danq.me/2023/01/09/ideal-2-smbc/",
       "https://danq.me/2023/01/08/dan-q-found-gc4zaj2-hms-belfast/",
       "https://danq.me/2023/01/08/dan-q-found-gc4zmv4-tower-bridge-tb-hotel/",
@@ -1045,10 +1062,15 @@
       "https://danq.me/2022/12/05/geohashing-expedition-2022-12-05-51-1/",
       "https://danq.me/2022/12/03/reply-to-the-ethics-of-syndicating-comments-using-webmentions/",
       "https://danq.me/2022/12/02/geohashing-expedition-2022-12-02-51-1/",
-      "https://danq.me/2022/12/01/automation/",
-      "https://danq.me/2022/11/28/things-the-other-child-did-wrong/"
+      "https://danq.me/2022/12/01/automation/"
     ],
     "syndication": [
+      "https://www.facebook.com/1353711854741727/posts/1183263035794965",
+      "https://scatmania.livejournal.com/251535.html",
+      "https://m.danq.me/@blog/109671317581682014",
+      "https://www.tumblr.com/dan--q/706164750237696000/the-page-with-no-code?source=share",
+      "https://www.facebook.com/DanQBlog/posts/pfbid02nCzo8JKxPYmPqXUtRLDQLAnoaZByFt8PDpXQThTNkRGAf1JTdcbqtmqGwfmfZsyfl",
+      "https://www.linkedin.com/posts/itsdanq_the-page-with-no-code-activity-7018965765399683072-IjWb",
       "https://m.danq.me/@blog/109658937897325582",
       "https://m.danq.me/@blog/109658505428794071",
       "https://m.danq.me/@blog/109658485684144735",
@@ -1081,11 +1103,18 @@
       "https://twitter.com/scatmandan/status/1598346696907333632",
       "https://www.facebook.com/DanQBlog/posts/pfbid02CCkN8PPRnccJUQMoh27zGPyBmpDDJfTs72FEh6fytWt7GTZgUzYqtvogvzzJL7qcl",
       "https://www.tumblr.com/dan--q/702452097958952960/announcers-and-automation?source=share",
-      "https://m.danq.me/@blog/109439267783292637",
-      "https://m.danq.me/@dan/109420717008278587",
-      "https://m.danq.me/@blog/109432642109576015"
+      "https://m.danq.me/@blog/109439267783292637"
     ],
     "tag": [
+      "https://danq.me/tag/code/",
+      "https://danq.me/tag/css/",
+      "https://danq.me/tag/firefox/",
+      "https://danq.me/tag/html/",
+      "https://danq.me/tag/html5/",
+      "https://danq.me/tag/published-on-gemini/",
+      "https://danq.me/tag/technology/",
+      "https://danq.me/tag/web/",
+      "https://danq.me/tag/web-development/",
       "https://danq.me/tag/birthday/",
       "https://danq.me/tag/comic/",
       "https://danq.me/tag/polyamory/",
@@ -1094,7 +1123,6 @@
       "https://danq.me/tag/london/",
       "https://danq.me/tag/names/",
       "https://danq.me/tag/passwords/",
-      "https://danq.me/tag/published-on-gemini/",
       "https://danq.me/tag/q/",
       "https://danq.me/tag/security/",
       "https://danq.me/tag/geohashing/",
@@ -1108,7 +1136,6 @@
       "https://danq.me/tag/music/",
       "https://danq.me/tag/nostalgia/",
       "https://danq.me/tag/software/",
-      "https://danq.me/tag/technology/",
       "https://danq.me/tag/mobiles/",
       "https://danq.me/tag/sims/",
       "https://danq.me/tag/telephone/",
@@ -1116,17 +1143,13 @@
       "https://danq.me/tag/cartography/",
       "https://danq.me/tag/maps/",
       "https://danq.me/tag/indieweb/",
-      "https://danq.me/tag/web/",
       "https://danq.me/tag/dogs/",
       "https://danq.me/tag/ai/",
       "https://danq.me/tag/employment/",
       "https://danq.me/tag/history/",
       "https://danq.me/tag/job/",
       "https://danq.me/tag/science/",
-      "https://danq.me/tag/work/",
-      "https://danq.me/tag/funny/",
-      "https://danq.me/tag/monday/",
-      "https://danq.me/tag/parenting/"
+      "https://danq.me/tag/work/"
     ],
     "nofollow": [
       "https://en.wikipedia.org/wiki/Piddington,_Oxfordshire",
@@ -1387,6 +1410,102 @@
       ],
       "text": "\n            Dan\n            Q\n          "
     },
+    "https://danq.me/2023/01/11/nocode/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "The Page With No Code"
+    },
+    "https://www.facebook.com/1353711854741727/posts/1183263035794965": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "\n                ​​                facebook.com\n              "
+    },
+    "https://scatmania.livejournal.com/251535.html": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "\n                ​​                scatmania.livejournal.com\n              "
+    },
+    "https://m.danq.me/@blog/109671317581682014": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "\n                                m.danq.me\n              "
+    },
+    "https://www.tumblr.com/dan--q/706164750237696000/the-page-with-no-code?source=share": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "\n                                tumblr.com\n              "
+    },
+    "https://www.facebook.com/DanQBlog/posts/pfbid02nCzo8JKxPYmPqXUtRLDQLAnoaZByFt8PDpXQThTNkRGAf1JTdcbqtmqGwfmfZsyfl": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "\n                ​​                facebook.com\n              "
+    },
+    "https://www.linkedin.com/posts/itsdanq_the-page-with-no-code-activity-7018965765399683072-IjWb": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "\n                                linkedin.com\n              "
+    },
+    "https://danq.me/tag/code/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "code"
+    },
+    "https://danq.me/tag/css/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "css"
+    },
+    "https://danq.me/tag/firefox/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "firefox"
+    },
+    "https://danq.me/tag/html/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "html"
+    },
+    "https://danq.me/tag/html5/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "html5"
+    },
+    "https://danq.me/tag/published-on-gemini/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "published on gemini"
+    },
+    "https://danq.me/tag/technology/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "technology"
+    },
+    "https://danq.me/tag/web/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "web"
+    },
+    "https://danq.me/tag/web-development/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "web development"
+    },
     "https://danq.me/2023/01/09/ideal-2-smbc/": {
       "rels": [
         "bookmark"
@@ -1500,12 +1619,6 @@
         "tag"
       ],
       "text": "passwords"
-    },
-    "https://danq.me/tag/published-on-gemini/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "published on gemini"
     },
     "https://danq.me/tag/q/": {
       "rels": [
@@ -1705,12 +1818,6 @@
       ],
       "text": "software"
     },
-    "https://danq.me/tag/technology/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "technology"
-    },
     "https://danq.me/2022/12/07/dan-q-posted-a-note-for-gc9gkja-a-fine-pair-1625-eynsham-2/": {
       "rels": [
         "bookmark"
@@ -1800,12 +1907,6 @@
         "tag"
       ],
       "text": "indieweb"
-    },
-    "https://danq.me/tag/web/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "web"
     },
     "https://danq.me/2022/12/02/geohashing-expedition-2022-12-02-51-1/": {
       "rels": [
@@ -1908,42 +2009,6 @@
         "tag"
       ],
       "text": "work"
-    },
-    "https://danq.me/2022/11/28/things-the-other-child-did-wrong/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "28 November 2022 09:27"
-    },
-    "https://m.danq.me/@dan/109420717008278587": {
-      "rels": [
-        "syndication"
-      ],
-      "text": "\n                                m.danq.me\n              "
-    },
-    "https://m.danq.me/@blog/109432642109576015": {
-      "rels": [
-        "syndication"
-      ],
-      "text": "\n                                m.danq.me\n              "
-    },
-    "https://danq.me/tag/funny/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "funny"
-    },
-    "https://danq.me/tag/monday/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "monday"
-    },
-    "https://danq.me/tag/parenting/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "parenting"
     },
     "https://creativecommons.org/licenses/by-nc/4.0/": {
       "rels": [

@@ -32,6 +32,63 @@
           ],
           "properties": {
             "published": [
+              "2023-01-11T21:44:54+01:00"
+            ],
+            "like-of": [
+              {
+                "type": [
+                  "h-cite"
+                ],
+                "properties": {
+                  "url": [
+                    "https://cdevroe.com/2023/01/11/blogging-is-alive"
+                  ],
+                  "content": [
+                    {
+                      "html": "Whether or not blogging is alive or dead is not a new topic of discussion. It is a topic that reoccurs every few years. I've written about it dozens of times. But the current push seems slightly different. I believe we will see many more people blogging again or, at the very least, publishing on a platform that compliments the web rather than chafe at it.",
+                      "value": "Whether or not blogging is alive or dead is not a new topic of discussion. It is a topic that reoccurs every few years. I've written about it dozens of times. But the current push seems slightly different. I believe we will see many more people blogging again or, at the very least, publishing on a platform that compliments the web rather than chafe at it."
+                    }
+                  ]
+                },
+                "value": "https://cdevroe.com/2023/01/11/blogging-is-alive"
+              }
+            ],
+            "content": [
+              {
+                "html": "<p>Probably preaching to the choir&amp;mldr;</p>",
+                "value": "Probably preaching to the choir&mldr;"
+              }
+            ],
+            "url": [
+              "https://jlelse.blog/micro/2023/01/2023-01-11-ffbjv"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "published": [
+              "2023-01-11T17:04:46+01:00"
+            ],
+            "content": [
+              {
+                "html": "<p>I had an AWS training <a href=\"https://jlelse.blog/micro/2022/11/2022-11-04-ckjhj\">in November</a> and have the opportunity to get the “Certified Developer Associate” certificate. Even though I have two attempts, I want to do well on the first shot. Since the trainer didn’t show us everything that is required for the exam, I’m kind of re-doing the training with <a href=\"https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/\" target=\"_blank\" rel=\"noopener\">this Udemy course</a> (luckily I have access to Udemy Business and don’t have to pay for it). It’s really helpful because it helps me demystify the AWS cloud and reduce the 🤯 whenever I do something in the AWS console.</p>\n<p>I have a bit of an urge to try out everything I’ve just learned for myself, but most of the features are somehow too expensive for private use and I don’t like lock-in effects.</p>",
+                "value": "I had an AWS training in November and have the opportunity to get the “Certified Developer Associate” certificate. Even though I have two attempts, I want to do well on the first shot. Since the trainer didn’t show us everything that is required for the exam, I’m kind of re-doing the training with this Udemy course (luckily I have access to Udemy Business and don’t have to pay for it). It’s really helpful because it helps me demystify the AWS cloud and reduce the 🤯 whenever I do something in the AWS console.I have a bit of an urge to try out everything I’ve just learned for myself, but most of the features are somehow too expensive for private use and I don’t like lock-in effects."
+              }
+            ],
+            "url": [
+              "https://jlelse.blog/micro/2023/01/2023-01-11-tqdhv"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "published": [
               "2023-01-08T18:42:49+01:00"
             ],
             "content": [
@@ -187,50 +244,6 @@
               "https://jlelse.blog/micro/2022/12/2022-12-26-ptown"
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "published": [
-              "2022-12-25T16:28:19+01:00"
-            ],
-            "updated": [
-              "2022-12-25T16:31:00+01:00"
-            ],
-            "content": [
-              {
-                "html": "<p>Just setting up a quick Mastodon instance to test some compatibility is a pain. Using test accounts on public instances is also unreliable, because many instances are already overloaded and I don’t want to create spam. So I got a new DigitalOcean account with a $200 starter credit&amp;mldr;</p>\n<p>DigitalOcean has a simplified Mastodon setup and now I can try to improve my ActivityPub implementation during the next two months and then probably have to create a new DigitalOcean account.</p>\n<p>By the way, happy holidays! 🎄 My family’s Christmas wasn’t as expected. On Wednesday evening I got sick (I guess it’s RSV). But my girlfriend and my sister are also sick. 🤒 Today is my first day without fever, but it doesn’t feel like that.</p>",
-                "value": "Just setting up a quick Mastodon instance to test some compatibility is a pain. Using test accounts on public instances is also unreliable, because many instances are already overloaded and I don’t want to create spam. So I got a new DigitalOcean account with a $200 starter credit&mldr;DigitalOcean has a simplified Mastodon setup and now I can try to improve my ActivityPub implementation during the next two months and then probably have to create a new DigitalOcean account.By the way, happy holidays! 🎄 My family’s Christmas wasn’t as expected. On Wednesday evening I got sick (I guess it’s RSV). But my girlfriend and my sister are also sick. 🤒 Today is my first day without fever, but it doesn’t feel like that."
-              }
-            ],
-            "url": [
-              "https://jlelse.blog/micro/2022/12/2022-12-25-ejtxu"
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "published": [
-              "2022-12-20T19:44:44+01:00"
-            ],
-            "updated": [
-              "2022-12-20T20:15:31+01:00"
-            ],
-            "content": [
-              {
-                "html": "<p>WordPress implemented SQLite support! 😱 (Not merged into Core yet, but you’re able to <a href=\"https://make.wordpress.org/core/2022/12/20/help-us-test-the-sqlite-implementation/\" target=\"_blank\" rel=\"noopener\">test it</a>.)</p>\n<p><em>Update:</em> Just tried the Performance Lab plugin with SQLite support enabled on a test WordPress instance using Docker. Do I see it right, that the plugin isn’t using <a href=\"https://www.sqlite.org/wal.html\" target=\"_blank\" rel=\"noopener\">SQLite WAL</a>? That would probably give the whole thing a big speed boost. At least that’s what I do with GoBlog and my website is fast, right? 🤓</p>",
-                "value": "WordPress implemented SQLite support! 😱 (Not merged into Core yet, but you’re able to test it.)Update: Just tried the Performance Lab plugin with SQLite support enabled on a test WordPress instance using Docker. Do I see it right, that the plugin isn’t using SQLite WAL? That would probably give the whole thing a big speed boost. At least that’s what I do with GoBlog and my website is fast, right? 🤓"
-              }
-            ],
-            "url": [
-              "https://jlelse.blog/micro/2022/12/2022-12-20-qdkff"
-            ]
-          }
         }
       ]
     }
@@ -282,11 +295,11 @@
       "https://jlelse.blog/"
     ],
     "noopener": [
+      "https://cdevroe.com/2023/01/11/blogging-is-alive",
+      "https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/",
       "https://quill.p3k.io/",
       "https://micropublish.net/",
       "https://sparkles.sploot.com/",
-      "https://make.wordpress.org/core/2022/12/20/help-us-test-the-sqlite-implementation/",
-      "https://www.sqlite.org/wal.html",
       "https://www.torproject.org/"
     ],
     "nofollow": [
@@ -393,6 +406,18 @@
         "apple-touch-icon"
       ]
     },
+    "https://cdevroe.com/2023/01/11/blogging-is-alive": {
+      "rels": [
+        "noopener"
+      ],
+      "text": "Colin Devroe - Blogging is alive and well"
+    },
+    "https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/": {
+      "rels": [
+        "noopener"
+      ],
+      "text": "this Udemy course"
+    },
     "https://quill.p3k.io/": {
       "rels": [
         "noopener"
@@ -410,18 +435,6 @@
         "noopener"
       ],
       "text": "sparkles"
-    },
-    "https://make.wordpress.org/core/2022/12/20/help-us-test-the-sqlite-implementation/": {
-      "rels": [
-        "noopener"
-      ],
-      "text": "test it"
-    },
-    "https://www.sqlite.org/wal.html": {
-      "rels": [
-        "noopener"
-      ],
-      "text": "SQLite WAL"
     },
     "https://www.torproject.org/": {
       "rels": [

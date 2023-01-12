@@ -11,7 +11,7 @@
       "https://davidpeach.co.uk/wp-includes/css/classic-themes.min.css?ver=1",
       "https://davidpeach.co.uk/wp-content/themes/twentytwentyone/style.css?ver=1.7",
       "https://davidpeach.co.uk/wp-content/themes/twentytwentyone/assets/css/print.css?ver=1.7",
-      "https://davidpeach.co.uk/wp-content/plugins/twentig/dist/css/twentytwentyone/style.min.css?ver=1.5.3"
+      "https://davidpeach.co.uk/wp-content/plugins/twentig/dist/css/twentytwentyone/style.min.css?ver=1.5.4"
     ],
     "https://api.w.org/": [
       "https://davidpeach.co.uk/wp-json/"
@@ -23,11 +23,22 @@
       "https://davidpeach.co.uk/wp-includes/wlwmanifest.xml"
     ],
     "category": [
+      "https://davidpeach.co.uk/category/programming/",
       "https://davidpeach.co.uk/category/virtual-photography/horizon-zero-dawn/",
       "https://davidpeach.co.uk/category/virtual-photography/death-stranding/",
+      "https://davidpeach.co.uk/category/programming/php/",
       "https://davidpeach.co.uk/category/virtual-photography/days-gone/"
     ],
     "tag": [
+      "https://davidpeach.co.uk/category/programming/",
+      "https://davidpeach.co.uk/tag/laravel-2/",
+      "https://davidpeach.co.uk/tag/php/",
+      "https://davidpeach.co.uk/tag/psalm/",
+      "https://davidpeach.co.uk/tag/static-analysis/",
+      "https://davidpeach.co.uk/tag/web-development/",
+      "https://davidpeach.co.uk/tag/docker/",
+      "https://davidpeach.co.uk/tag/mariadb/",
+      "https://davidpeach.co.uk/tag/mysql/",
       "https://davidpeach.co.uk/category/virtual-photography/horizon-zero-dawn/",
       "https://davidpeach.co.uk/tag/aloy/",
       "https://davidpeach.co.uk/tag/games/",
@@ -38,17 +49,14 @@
       "https://davidpeach.co.uk/tag/amelie-bridges/",
       "https://davidpeach.co.uk/tag/death-stranding/",
       "https://davidpeach.co.uk/tag/playstation/",
+      "https://davidpeach.co.uk/category/programming/php/",
       "https://davidpeach.co.uk/category/virtual-photography/days-gone/",
       "https://davidpeach.co.uk/tag/days-gone/",
       "https://davidpeach.co.uk/tag/sarah-st-john/",
       "https://davidpeach.co.uk/tag/square-shots/",
       "https://davidpeach.co.uk/tag/sam-bridges/",
       "https://davidpeach.co.uk/tag/kitchens/",
-      "https://davidpeach.co.uk/tag/plants/",
-      "https://davidpeach.co.uk/tag/buildings/",
-      "https://davidpeach.co.uk/tag/lakes/",
-      "https://davidpeach.co.uk/tag/animals/",
-      "https://davidpeach.co.uk/tag/dogs/"
+      "https://davidpeach.co.uk/tag/plants/"
     ]
   },
   "rel-urls": {
@@ -96,7 +104,7 @@
       ],
       "media": "print"
     },
-    "https://davidpeach.co.uk/wp-content/plugins/twentig/dist/css/twentytwentyone/style.min.css?ver=1.5.3": {
+    "https://davidpeach.co.uk/wp-content/plugins/twentig/dist/css/twentytwentyone/style.min.css?ver=1.5.4": {
       "rels": [
         "stylesheet"
       ],
@@ -119,6 +127,61 @@
         "wlwmanifest"
       ],
       "type": "application/wlwmanifest+xml"
+    },
+    "https://davidpeach.co.uk/category/programming/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Programming"
+    },
+    "https://davidpeach.co.uk/tag/laravel-2/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Laravel"
+    },
+    "https://davidpeach.co.uk/tag/php/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "PHP"
+    },
+    "https://davidpeach.co.uk/tag/psalm/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "psalm"
+    },
+    "https://davidpeach.co.uk/tag/static-analysis/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "static analysis"
+    },
+    "https://davidpeach.co.uk/tag/web-development/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Web Development"
+    },
+    "https://davidpeach.co.uk/tag/docker/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Docker"
+    },
+    "https://davidpeach.co.uk/tag/mariadb/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "mariadb"
+    },
+    "https://davidpeach.co.uk/tag/mysql/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "mysql"
     },
     "https://davidpeach.co.uk/category/virtual-photography/horizon-zero-dawn/": {
       "rels": [
@@ -182,6 +245,13 @@
       ],
       "text": "PlayStation"
     },
+    "https://davidpeach.co.uk/category/programming/php/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "PHP"
+    },
     "https://davidpeach.co.uk/category/virtual-photography/days-gone/": {
       "rels": [
         "category",
@@ -224,30 +294,6 @@
         "tag"
       ],
       "text": "Plants"
-    },
-    "https://davidpeach.co.uk/tag/buildings/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Buildings"
-    },
-    "https://davidpeach.co.uk/tag/lakes/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Lakes"
-    },
-    "https://davidpeach.co.uk/tag/animals/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Animals"
-    },
-    "https://davidpeach.co.uk/tag/dogs/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Dogs"
     }
   }
 }
