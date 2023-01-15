@@ -6,6 +6,44 @@
       ],
       "properties": {
         "name": [
+          "P26550"
+        ],
+        "url": [
+          "https://samwilson.id.au/P26550"
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "url": [
+                "Sam Wilson"
+              ],
+              "name": [
+                "Sam Wilson"
+              ]
+            },
+            "value": "Sam Wilson"
+          }
+        ],
+        "published": [
+          "2023-01-15T00:59:28Z"
+        ],
+        "content": [
+          {
+            "html": "<p>It’s strangely cool for January, this Sunday morning. My brain isn’t really awake yet. Not that too much whiskey was tasted yesterday; just the right amount.</p>",
+            "value": "It’s strangely cool for January, this Sunday morning. My brain isn’t really awake yet. Not that too much whiskey was tasted yesterday; just the right amount."
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
           "P26549"
         ],
         "url": [
@@ -355,50 +393,6 @@
         "category": [
           "Wikimedia",
           "Toolforge"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "name": [
-          "Uploading scanned letters with Pattypan"
-        ],
-        "url": [
-          "https://samwilson.id.au/P26539"
-        ],
-        "author": [
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "url": [
-                "Sam Wilson"
-              ],
-              "name": [
-                "Sam Wilson"
-              ]
-            },
-            "value": "Sam Wilson"
-          }
-        ],
-        "published": [
-          "2023-01-02T02:30:00Z"
-        ],
-        "content": [
-          {
-            "html": "<p><a href=\"https://commons.wikimedia.org/wiki/Commons:Pattypan\">Pattypan</a> is a great tool for uploading lots of files to Commons. I’m using it today for a set of scans of airgraphs. I scanned them all yesterday, and gave them hopefully-useful filenames that contain a prefix, date, and bit of info about each. These documents all look pretty much the same when viewed as thumbnails, so it’s important to be able to determine at least something by glancing at the filename. That said, it’s never good to ‘‘rely’’ on metadata being in the filename nor on all files having the same structure to their names.</p>\n<p>Anyway, after creating the spreadsheet for these files, I did some tweaking to the data columns:</p>\n<ol>\n<li>Filled the <code>source</code> column based on the name column:\n<ul>\n<li>Formula: <code>=CONCAT(\"{{HMW|wiki=\",B2,\"}}\")</code>\n</li>\n<li>Result: <code>{{HMW|wiki=Airgraph 1943-12-30 Adele to Murray}}</code>\n</li>\n</ul>\n</li>\n<li>Extracted the date:\n<ul>\n<li>Formula: <code>=REGEX(B3,\"[0-9]{4}-[0-9]{2}-[0-9]{2}\")</code>\n</li>\n<li>Result: <code>1943-12-30</code>\n</li>\n</ul>\n</li>\n<li>Crucially, any column that uses a formula needs to be copied to a new column with ‘‘values only’’ (i.e. “Edit / Paste special / Values only”). Otherwise Pattypan can’t see the formula result.</li>\n</ol>",
-            "value": "Pattypan is a great tool for uploading lots of files to Commons. I’m using it today for a set of scans of airgraphs. I scanned them all yesterday, and gave them hopefully-useful filenames that contain a prefix, date, and bit of info about each. These documents all look pretty much the same when viewed as thumbnails, so it’s important to be able to determine at least something by glancing at the filename. That said, it’s never good to ‘‘rely’’ on metadata being in the filename nor on all files having the same structure to their names.\nAnyway, after creating the spreadsheet for these files, I did some tweaking to the data columns:\n\nFilled the source column based on the name column:\n\nFormula: =CONCAT(\"{{HMW|wiki=\",B2,\"}}\")\n\nResult: {{HMW|wiki=Airgraph 1943-12-30 Adele to Murray}}\n\n\n\nExtracted the date:\n\nFormula: =REGEX(B3,\"[0-9]{4}-[0-9]{2}-[0-9]{2}\")\n\nResult: 1943-12-30\n\n\n\nCrucially, any column that uses a formula needs to be copied to a new column with ‘‘values only’’ (i.e. “Edit / Paste special / Values only”). Otherwise Pattypan can’t see the formula result."
-          }
-        ],
-        "category": [
-          "Wikimedia",
-          "The H. M. Wilson Archives",
-          "Wikimedia Commons",
-          "scanned documents"
         ]
       }
     },

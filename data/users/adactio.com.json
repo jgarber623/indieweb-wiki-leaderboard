@@ -42,6 +42,58 @@
       "properties": {
         "photo": [
           {
+            "value": "https://adactio.com/images/uploaded/19827/small.jpg",
+            "srcset": {
+              "320w": "https://adactio.com/images/uploaded/19827/small.jpg",
+              "480w": "https://adactio.com/images/uploaded/19827/medium.jpg",
+              "800w": "https://adactio.com/images/uploaded/19827/large.jpg"
+            },
+            "alt": "A charming narrow Flemish house with a blue door and windowsills on a cobbled street."
+          }
+        ],
+        "content": [
+          {
+            "html": "<p>Maison Lilloise.</p>",
+            "value": "Maison Lilloise."
+          }
+        ],
+        "name": [
+          "Maison Lilloise."
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "50.63889722"
+              ],
+              "longitude": [
+                "3.05898889"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/notes/19827"
+        ],
+        "published": [
+          "2023-01-14T10:11:19Z"
+        ],
+        "syndication": [
+          "https://www.instagram.com/p/CnZEyZZt0wn/"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "photo": [
+          {
             "value": "https://adactio.com/images/uploaded/19826/small.jpg",
             "srcset": {
               "320w": "https://adactio.com/images/uploaded/19826/small.jpg",
@@ -1011,54 +1063,6 @@
     },
     {
       "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "content": [
-          {
-            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://shkspr.mobi/blog/2023/01/fragile-technologists/\">\nFragile Technologists – Terence Eden’s Blog\n</a>\n</h3>\n\n<blockquote>\n  <p>If you’ve made a computer do something - <em>anything</em> - in a logical fashion, you’re a programmer. Scratch? Programmer! CSS? Programmer? Conditional formatting in Excel? Programmer!</p>\n</blockquote>",
-            "value": "Fragile Technologists – Terence Eden’s Blog\n\n\n\n\n  If you’ve made a computer do something - anything - in a logical fashion, you’re a programmer. Scratch? Programmer! CSS? Programmer? Conditional formatting in Excel? Programmer!"
-          }
-        ],
-        "name": [
-          "Fragile Technologists – Terence Eden’s Blog"
-        ],
-        "bookmark-of": [
-          "https://shkspr.mobi/blog/2023/01/fragile-technologists/"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83250335"
-              ],
-              "longitude": [
-                "-0.11812093"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/links/19803"
-        ],
-        "published": [
-          "2023-01-03T10:59:35Z"
-        ],
-        "category": [
-          "programming",
-          "gatekeeping",
-          "masculinity",
-          "fragile",
-          "technologists"
-        ]
-      }
-    },
-    {
-      "type": [
         "h-card"
       ],
       "properties": {
@@ -1798,6 +1802,7 @@
       "https://adactio.com/includes/css/print.css"
     ],
     "bookmark": [
+      "https://adactio.com/notes/19827",
       "https://adactio.com/notes/19826",
       "https://adactio.com/notes/19825",
       "https://adactio.com/notes/19824",
@@ -1816,10 +1821,10 @@
       "https://adactio.com/links/19807",
       "https://adactio.com/notes/19806",
       "https://adactio.com/links/19805",
-      "https://adactio.com/links/19804",
-      "https://adactio.com/links/19803"
+      "https://adactio.com/links/19804"
     ],
     "syndication": [
+      "https://www.instagram.com/p/CnZEyZZt0wn/",
       "https://www.swarmapp.com/user/112073/checkin/63c19408a578cb0e99cd8d50",
       "https://mastodon.social/@adactio/109681110344670611",
       "https://www.instagram.com/p/CnSdnUktVjV/",
@@ -1894,12 +1899,7 @@
       "https://adactio.com/tags/hardware",
       "https://adactio.com/tags/work",
       "https://adactio.com/tags/process",
-      "https://adactio.com/tags/reentry",
-      "https://adactio.com/tags/programming",
-      "https://adactio.com/tags/gatekeeping",
-      "https://adactio.com/tags/masculinity",
-      "https://adactio.com/tags/fragile",
-      "https://adactio.com/tags/technologists"
+      "https://adactio.com/tags/reentry"
     ],
     "next": [
       "https://adactio.com/?start=20"
@@ -2289,6 +2289,18 @@
         "me"
       ],
       "text": "music"
+    },
+    "https://adactio.com/notes/19827": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n10:11am\n\n"
+    },
+    "https://www.instagram.com/p/CnZEyZZt0wn/": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "Instagram"
     },
     "https://adactio.com/notes/19826": {
       "rels": [
@@ -2841,42 +2853,6 @@
         "tag"
       ],
       "text": "reentry"
-    },
-    "https://adactio.com/links/19803": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n10:59am\n\n"
-    },
-    "https://adactio.com/tags/programming": {
-      "rels": [
-        "tag"
-      ],
-      "text": "programming"
-    },
-    "https://adactio.com/tags/gatekeeping": {
-      "rels": [
-        "tag"
-      ],
-      "text": "gatekeeping"
-    },
-    "https://adactio.com/tags/masculinity": {
-      "rels": [
-        "tag"
-      ],
-      "text": "masculinity"
-    },
-    "https://adactio.com/tags/fragile": {
-      "rels": [
-        "tag"
-      ],
-      "text": "fragile"
-    },
-    "https://adactio.com/tags/technologists": {
-      "rels": [
-        "tag"
-      ],
-      "text": "technologists"
     },
     "https://adactio.com/?start=20": {
       "rels": [
