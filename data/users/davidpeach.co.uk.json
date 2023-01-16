@@ -23,6 +23,7 @@
       "https://davidpeach.co.uk/wp-includes/wlwmanifest.xml"
     ],
     "category": [
+      "https://davidpeach.co.uk/category/uncategorised/",
       "https://davidpeach.co.uk/category/programming/",
       "https://davidpeach.co.uk/category/virtual-photography/horizon-zero-dawn/",
       "https://davidpeach.co.uk/category/virtual-photography/death-stranding/",
@@ -30,6 +31,11 @@
       "https://davidpeach.co.uk/category/virtual-photography/days-gone/"
     ],
     "tag": [
+      "https://davidpeach.co.uk/category/uncategorised/",
+      "https://davidpeach.co.uk/tag/animals/",
+      "https://davidpeach.co.uk/tag/dogs/",
+      "https://davidpeach.co.uk/tag/pets/",
+      "https://davidpeach.co.uk/tag/sherlock/",
       "https://davidpeach.co.uk/category/programming/",
       "https://davidpeach.co.uk/tag/cicd/",
       "https://davidpeach.co.uk/tag/docker/",
@@ -60,8 +66,7 @@
       "https://davidpeach.co.uk/tag/days-gone/",
       "https://davidpeach.co.uk/tag/sarah-st-john/",
       "https://davidpeach.co.uk/tag/square-shots/",
-      "https://davidpeach.co.uk/tag/sam-bridges/",
-      "https://davidpeach.co.uk/tag/kitchens/"
+      "https://davidpeach.co.uk/tag/sam-bridges/"
     ]
   },
   "rel-urls": {
@@ -132,6 +137,37 @@
         "wlwmanifest"
       ],
       "type": "application/wlwmanifest+xml"
+    },
+    "https://davidpeach.co.uk/category/uncategorised/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Uncategorised"
+    },
+    "https://davidpeach.co.uk/tag/animals/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Animals"
+    },
+    "https://davidpeach.co.uk/tag/dogs/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Dogs"
+    },
+    "https://davidpeach.co.uk/tag/pets/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Pets"
+    },
+    "https://davidpeach.co.uk/tag/sherlock/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Sherlock"
     },
     "https://davidpeach.co.uk/category/programming/": {
       "rels": [
@@ -323,12 +359,6 @@
         "tag"
       ],
       "text": "Sam Bridges"
-    },
-    "https://davidpeach.co.uk/tag/kitchens/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Kitchens"
     }
   }
 }

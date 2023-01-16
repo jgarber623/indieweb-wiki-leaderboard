@@ -53,6 +53,47 @@
           ],
           "properties": {
             "name": [
+              "Week 2, 2023"
+            ],
+            "content": [
+              {
+                "html": "<p>I knew it would happen sooner or later and it happened pretty soon: I’m already not super motivated to write these notes on the second weekend. I know for sure that if I hadn’t made a big deal out of them and added the peer pressure this year, it would be quite certain that I forget about them at all again.</p>\n\n\n\n<p>It was a bit of a struggle to get back into work mode – I was pretty tired for no real reason all the time, even though I managed to keep my sleep rhythm more or less stable during my two weeks off over the holidays. And yet I quite liked being back “in the office.” There’s something to be said about working with people you actually enjoy spending time with.</p>\n\n\n\n<h2>Don’t call them resolutions</h2>\n\n\n\n<p>Not good, but good enough: I stopped taking photos on my walks, there just wasn’t any real motivation. And I didn’t fill my Apple Watch rings on Friday, which is a bit of a bummer. But oh well, it worked again yesterday and I’ll be out of the apartment today as soon as I have finished writing this thing here.</p>\n\n\n\n<h2>Websites</h2>\n\n\n\n<p>I haven’t really done much this week – I fixed a couple of small bugs on <a href=\"https://weeknotes.cafe/\">weeknotes.cafe</a> and I think I should write a little text of what it is about at some point soon. I did see many people starting their year with week notes so maybe I should open it up to the public soon-ish. Before I do that I want to make it a bit prettier, add a reminder feature and maybe add an option to set the language per post including an option to filter the post list? I don’t know. <a href=\"https://marcgoertz.de/\">Marc</a> and I also talked about the option to post via Webmention, which would be pretty neat.</p>\n\n\n\n<h2>Things I learned</h2>\n\n\n\n<p>This is something I know I knew, but somehow it tripped me up this week and now I’ll remember for sure:</p>\n\n\n\n<pre class=\"wp-block-code\"><code>&lt;?php\nclass A {\n    public function something(): self\n    {\n        // do something\n        return $this;\n    }\n}\n\nclass B extends A\n{\n    // do something\n}\n\n$a = (new B())-&amp;gt;something();\necho $a::class; // A</code></pre>\n\n\n\n<p>Oh well.</p>\n\n\n\n<h2>The internet</h2>\n\n\n\n<p>Those numbnuts at Twitter removed the ability to use Tweetbot, so I guess at this point I’ll even stop sneaking a peek once in a while. What a bummer.<br>Meanwhile I really enjoy being a tester for <a href=\"https://tapbots.com/ivory/\">Ivory</a> and I like <a href=\"https://elk.zone/\">elk.zone</a> as a desktop client.</p>",
+                "value": "I knew it would happen sooner or later and it happened pretty soon: I’m already not super motivated to write these notes on the second weekend. I know for sure that if I hadn’t made a big deal out of them and added the peer pressure this year, it would be quite certain that I forget about them at all again.\n\n\n\nIt was a bit of a struggle to get back into work mode – I was pretty tired for no real reason all the time, even though I managed to keep my sleep rhythm more or less stable during my two weeks off over the holidays. And yet I quite liked being back “in the office.” There’s something to be said about working with people you actually enjoy spending time with.\n\n\n\nDon’t call them resolutions\n\n\n\nNot good, but good enough: I stopped taking photos on my walks, there just wasn’t any real motivation. And I didn’t fill my Apple Watch rings on Friday, which is a bit of a bummer. But oh well, it worked again yesterday and I’ll be out of the apartment today as soon as I have finished writing this thing here.\n\n\n\nWebsites\n\n\n\nI haven’t really done much this week – I fixed a couple of small bugs on weeknotes.cafe and I think I should write a little text of what it is about at some point soon. I did see many people starting their year with week notes so maybe I should open it up to the public soon-ish. Before I do that I want to make it a bit prettier, add a reminder feature and maybe add an option to set the language per post including an option to filter the post list? I don’t know. Marc and I also talked about the option to post via Webmention, which would be pretty neat.\n\n\n\nThings I learned\n\n\n\nThis is something I know I knew, but somehow it tripped me up this week and now I’ll remember for sure:\n\n\n\n<?php\nclass A {\n    public function something(): self\n    {\n        // do something\n        return $this;\n    }\n}\n\nclass B extends A\n{\n    // do something\n}\n\n$a = (new B())-&gt;something();\necho $a::class; // A\n\n\n\nOh well.\n\n\n\nThe internet\n\n\n\nThose numbnuts at Twitter removed the ability to use Tweetbot, so I guess at this point I’ll even stop sneaking a peek once in a while. What a bummer.Meanwhile I really enjoy being a tester for Ivory and I like elk.zone as a desktop client."
+              }
+            ],
+            "url": [
+              "https://lostfocus.de/2023/01/15/week-2-2023/"
+            ],
+            "published": [
+              "2023-01-15T14:38:50+01:00"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "url": [
+                    "https://lostfocus.de/"
+                  ],
+                  "photo": [
+                    "https://lostfocus.de/wp-content/themes/lostfocus-2020/image/ds-2020-square.jpg"
+                  ],
+                  "name": [
+                    "Dominik Schwind"
+                  ]
+                },
+                "value": "Dominik Schwind"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               ""
             ],
             "content": [
@@ -635,51 +676,6 @@
               }
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              ""
-            ],
-            "content": [
-              {
-                "html": "<div class=\"e-content\">\nIt’s a bit of a bummer that Byword doesn’t seem to be developed anymore. I really like it and it would be pretty much perfect if it had MicroPub. (And no, I don’t want to buy iA Writer for almost 100€, thank you very much.)\n</div>",
-                "value": "It’s a bit of a bummer that Byword doesn’t seem to be developed anymore. I really like it and it would be pretty much perfect if it had MicroPub. (And no, I don’t want to buy iA Writer for almost 100€, thank you very much.)"
-              },
-              {
-                "html": "It’s a bit of a bummer that Byword doesn’t seem to be developed anymore. I really like it and it would be pretty much perfect if it had MicroPub. (And no, I don’t want to buy iA Writer for almost 100€, thank you very much.)",
-                "value": "It’s a bit of a bummer that Byword doesn’t seem to be developed anymore. I really like it and it would be pretty much perfect if it had MicroPub. (And no, I don’t want to buy iA Writer for almost 100€, thank you very much.)"
-              }
-            ],
-            "url": [
-              "https://lostfocus.de/2022/12/31/231077/"
-            ],
-            "published": [
-              "2022-12-31T10:24:00+01:00"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "url": [
-                    "https://lostfocus.de/"
-                  ],
-                  "photo": [
-                    "https://lostfocus.de/wp-content/themes/lostfocus-2020/image/ds-2020-square.jpg"
-                  ],
-                  "name": [
-                    "Dominik Schwind"
-                  ]
-                },
-                "value": "Dominik Schwind"
-              }
-            ]
-          }
         }
       ]
     }
@@ -740,6 +736,7 @@
       "https://github.com/lostfocus"
     ],
     "bookmark": [
+      "https://lostfocus.de/2023/01/15/week-2-2023/",
       "https://lostfocus.de/2023/01/11/last-fm-in-2022/",
       "https://lostfocus.de/2023/01/08/week-1-2023/",
       "https://lostfocus.de/2023/01/06/morning-earworm-8-catallena/",
@@ -880,6 +877,12 @@
         "me"
       ],
       "text": "@dominik@nona.social"
+    },
+    "https://lostfocus.de/2023/01/15/week-2-2023/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "Week 2, 2023"
     },
     "https://lostfocus.de/2023/01/11/last-fm-in-2022/": {
       "rels": [

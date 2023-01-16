@@ -10,11 +10,11 @@
         ],
         "url": [
           "https://johnjohnston.info/blog/",
-          "https://micro.blog/dave",
-          "https://micro.blog/johnjohnston",
-          "https://micro.blog/dave",
-          "https://micro.blog/abc",
-          "https://micro.blog/johnjohnston",
+          "https://universeodon.com/@wren",
+          "https://social.ds106.us/@timlauer",
+          "https://twitter.com/mconlon68",
+          "https://micro.blog/JMaxB",
+          "https://mas.to/@MirjamDePaus",
           "https://github.com/troutcolor",
           "https://twitter.com/johnjohnston",
           "https://micro.blog/johnjohnston",
@@ -84,6 +84,168 @@
         ]
       },
       "children": [
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "The FeedLand Roadmap"
+            ],
+            "url": [
+              "https://johnjohnston.info/blog/the-feedland-roadmap/",
+              "https://johnjohnston.info/blog/the-feedland-roadmap/"
+            ],
+            "updated": [
+              "2023-01-15T20:41:13+00:00"
+            ],
+            "published": [
+              "2023-01-15T20:41:13+00:00"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "photo": [
+                    {
+                      "value": "http://0.gravatar.com/avatar/6af1df804358e928344788af8aaca6e4?s=90&d=mm&r=g",
+                      "srcset": {
+                        "2x": "http://0.gravatar.com/avatar/6af1df804358e928344788af8aaca6e4?s=180&d=mm&r=g"
+                      },
+                      "alt": ""
+                    }
+                  ],
+                  "url": [
+                    "https://johnjohnston.info/blog/author/john/"
+                  ],
+                  "uid": [
+                    "https://johnjohnston.info/blog/author/john/"
+                  ],
+                  "name": [
+                    "john"
+                  ]
+                },
+                "value": "john"
+              }
+            ],
+            "content": [
+              {
+                "html": "<p>I’ve been testing and using <a href=\"https://johnjohnston.info/blog/tag/feedland/\">FeedLand</a> for a while now. Today Dave posted <a href=\"http://scripting.com/2023/01/15/160957.html\">the roadmap</a></p>\n<blockquote><p>1. FeedLand is a feed management system for individuals and groups. So far it’s only been offered as a free service on the web.</p></blockquote>\n<p>and</p>\n<blockquote><p>4. Here’s the big news: The new FeedLand server software will be available as open source, so anyone will be able to run a FeedLand instance. It’s a Node.js application. Uses MySQL. You may want to hook up an S3 bucket for special features like RSS feeds for Likes. At first email sending will be via Amazon SES, the method I currently use. It will be possible to plug in new drivers to use other email services.</p></blockquote>\n<p>As someone who has been pretty excited about RSS for years this sounds great.</p>\n<p>Wayback when <a href=\"https://scotedublogs.org/\">ScotEduBlogs</a> was a ruby app<a id=\"fnr1-2023-01-15\" href=\"http://johnjohnston.info/blog/#fn1-2023-01-15\"><sup>1</sup></a>, I had this wild idea that a visitor could create a subset of the feeds on the site, save that and view the subset in some way. I think an instance of FeedLand could do just that.</p>\n<p>Apart from the unknown of how running FeedLand would work<a id=\"fnr2-2023-01-15\" href=\"http://johnjohnston.info/blog/#fn2-2023-01-15\"><sup>2</sup></a> I think there are a couple of barriers:</p>\n<ol>\n<li>The lack of blogs about Scottish education, maybe twitter problems will help that).</li>\n<li>The lack of knowledge about RSS. Andrew McLaughlin’s post <a href=\"https://andrewjmclaughlin.blogspot.com/2022/11/spaces-to-share-our-thoughts.html\">Education needs free, safe spaces for creation, collaboration and discussion.</a> and TES Article <a href=\"https://www.tes.com/magazine/analysis/general/scotland-education-reform-national-discussion-return-to-blogs-wikis-teachers\">How a return to blogs and wikis could benefit teachers | Tes</a> gives hope there.</li>\n</ol>\n<p>Most online discussion of education and even news from schools has been on twitter. I’ve always felt uneasy about that. More than ever now <a id=\"fnr3-2023-01-15\" href=\"http://johnjohnston.info/blog/#fn3-2023-01-15\"><sup>3</sup></a>. Maybe 2023 will see a RSSurgance;-)</p>\n<div class=\"footnotes\">\n<ol>\n<li>\n<a id=\"fn1-2023-01-15\"></a> Created by Robert Jones with the help of Pete Liddle and cheered on by myself.<a href=\"http://johnjohnston.info/blog/#fnr1-2023-01-15\">↩</a>\n</li>\n<li>\n<a id=\"fn2-2023-01-15\"></a> I am hoping to be able to test than soon. <a href=\"http://johnjohnston.info/blog/#fnr2-2023-01-15\">↩</a>\n</li>\n<li>\n<a id=\"fn3-2023-01-15\"></a> For example: <a href=\"https://news.yahoo.com/twitter-team-responsible-removing-child-165038049.html\">Twitter team responsible for removing child exploitation on site cut in half since Musk takeover, report claims</a> and <a href=\"https://mashable.com/article/twitter-elon-musk-third-party-client-api-tweetbot-twitterrific\">No more Tweetbot or Twitterrific on Twitter | Mashable</a> <a href=\"http://johnjohnston.info/blog/#fnr3-2023-01-15\">↩</a>\n</li>\n</ol>\n</div>",
+                "value": "I’ve been testing and using FeedLand for a while now. Today Dave posted the roadmap\n1. FeedLand is a feed management system for individuals and groups. So far it’s only been offered as a free service on the web.\nand\n4. Here’s the big news: The new FeedLand server software will be available as open source, so anyone will be able to run a FeedLand instance. It’s a Node.js application. Uses MySQL. You may want to hook up an S3 bucket for special features like RSS feeds for Likes. At first email sending will be via Amazon SES, the method I currently use. It will be possible to plug in new drivers to use other email services.\nAs someone who has been pretty excited about RSS for years this sounds great.\nWayback when ScotEduBlogs was a ruby app1, I had this wild idea that a visitor could create a subset of the feeds on the site, save that and view the subset in some way. I think an instance of FeedLand could do just that.\nApart from the unknown of how running FeedLand would work2 I think there are a couple of barriers:\n\nThe lack of blogs about Scottish education, maybe twitter problems will help that).\nThe lack of knowledge about RSS. Andrew McLaughlin’s post Education needs free, safe spaces for creation, collaboration and discussion. and TES Article How a return to blogs and wikis could benefit teachers | Tes gives hope there.\n\nMost online discussion of education and even news from schools has been on twitter. I’ve always felt uneasy about that. More than ever now 3. Maybe 2023 will see a RSSurgance;-)\n\n\n Created by Robert Jones with the help of Pete Liddle and cheered on by myself.↩\n I am hoping to be able to test than soon. ↩\n For example: Twitter team responsible for removing child exploitation on site cut in half since Musk takeover, report claims and No more Tweetbot or Twitterrific on Twitter | Mashable ↩"
+              }
+            ],
+            "category": [
+              "Dave Winer",
+              "Feedland",
+              "rss",
+              "scotedublogs"
+            ],
+            "syndication": [
+              "https://twitter.com/johnjohnston/status/1614724477811564546",
+              "https://social.ds106.us/@johnjohnston/109695174254263738"
+            ]
+          },
+          "id": "post-17555"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "url": [
+              "https://johnjohnston.info/blog/silent-sunday-6/",
+              "https://johnjohnston.info/blog/silent-sunday-6/"
+            ],
+            "updated": [
+              "2023-01-15T13:10:24+00:00",
+              "2023-01-15T13:10:24+00:00"
+            ],
+            "published": [
+              "2023-01-15T13:10:24+00:00",
+              "2023-01-15T13:10:24+00:00"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "photo": [
+                    {
+                      "value": "http://0.gravatar.com/avatar/6af1df804358e928344788af8aaca6e4?s=90&d=mm&r=g",
+                      "srcset": {
+                        "2x": "http://0.gravatar.com/avatar/6af1df804358e928344788af8aaca6e4?s=180&d=mm&r=g"
+                      },
+                      "alt": ""
+                    }
+                  ],
+                  "url": [
+                    "https://johnjohnston.info/blog/author/john/"
+                  ],
+                  "uid": [
+                    "https://johnjohnston.info/blog/author/john/"
+                  ],
+                  "name": [
+                    "john"
+                  ]
+                },
+                "value": "john"
+              },
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "photo": [
+                    {
+                      "value": "http://0.gravatar.com/avatar/6af1df804358e928344788af8aaca6e4?s=90&d=mm&r=g",
+                      "srcset": {
+                        "2x": "http://0.gravatar.com/avatar/6af1df804358e928344788af8aaca6e4?s=180&d=mm&r=g"
+                      },
+                      "alt": ""
+                    }
+                  ],
+                  "url": [
+                    "https://johnjohnston.info/blog/author/john/"
+                  ],
+                  "uid": [
+                    "https://johnjohnston.info/blog/author/john/"
+                  ],
+                  "name": [
+                    "john"
+                  ]
+                },
+                "value": "john"
+              }
+            ],
+            "content": [
+              {
+                "html": "<p><a href=\"https://johnjohnston.info/blog/wp-content/uploads/2023/01/D8117D46-3828-4E4B-8599-5EB283554147.jpeg\" data-slb-active=\"1\" data-slb-asset=\"2034991043\" data-slb-internal=\"0\" data-slb-group=\"17551\"><img data-attachment-id=\"17552\" data-permalink=\"https://johnjohnston.info/blog/silent-sunday-6/d8117d46-3828-4e4b-8599-5eb283554147/\" data-orig-file=\"https://johnjohnston.info/blog/wp-content/uploads/2023/01/D8117D46-3828-4E4B-8599-5EB283554147.jpeg\" data-orig-size=\"\" data-comments-opened=\"1\" data-image-meta=\"[]\" data-image-title=\"D8117D46-3828-4E4B-8599-5EB283554147\" data-image-description=\"\" data-image-caption=\"\" data-medium-file=\"https://johnjohnston.info/blog/wp-content/uploads/2023/01/D8117D46-3828-4E4B-8599-5EB283554147.jpeg\" data-large-file=\"https://johnjohnston.info/blog/wp-content/uploads/2023/01/D8117D46-3828-4E4B-8599-5EB283554147.jpeg\" decoding=\"async\" src=\"https://johnjohnston.info/blog/wp-content/uploads/2023/01/D8117D46-3828-4E4B-8599-5EB283554147.jpeg\" alt=\"Robin standing in a garden\" class=\"aligncenter size-large wp-image-17552\"></a><br>\n#SilentSunday</p>",
+                "value": "Robin standing in a garden \n#SilentSunday"
+              }
+            ],
+            "summary": [
+              "Robin standing in a garden \n#SilentSunday"
+            ],
+            "name": [
+              "Robin standing in a garden \n#SilentSunday"
+            ],
+            "category": [
+              "bird",
+              "Robin",
+              "Silent Sunday",
+              "victoria park"
+            ],
+            "syndication": [
+              "https://twitter.com/johnjohnston/status/1614618134954008579",
+              "https://social.ds106.us/@johnjohnston/109693497506787744",
+              "https://www.flickr.com/photos/troutcolor/52628791659/"
+            ]
+          },
+          "id": "post-17551"
+        },
         {
           "type": [
             "h-entry"
@@ -293,7 +455,7 @@
             ],
             "content": [
               {
-                "html": "<p><a href=\"https://johnjohnston.info/blog/wp-content/uploads/2023/01/FD908A4E-5EF7-4A17-8863-4BBED765DF70.jpeg\" data-slb-active=\"1\" data-slb-asset=\"1941983661\" data-slb-internal=\"0\" data-slb-group=\"17543\"><img data-attachment-id=\"17544\" data-permalink=\"https://johnjohnston.info/blog/sunrise-over-the-banton-playground-this-morning/fd908a4e-5ef7-4a17-8863-4bbed765df70/\" data-orig-file=\"https://johnjohnston.info/blog/wp-content/uploads/2023/01/FD908A4E-5EF7-4A17-8863-4BBED765DF70.jpeg\" data-orig-size=\"\" data-comments-opened=\"1\" data-image-meta=\"[]\" data-image-title=\"FD908A4E-5EF7-4A17-8863-4BBED765DF70\" data-image-description=\"\" data-image-caption=\"\" data-medium-file=\"https://johnjohnston.info/blog/wp-content/uploads/2023/01/FD908A4E-5EF7-4A17-8863-4BBED765DF70.jpeg\" data-large-file=\"https://johnjohnston.info/blog/wp-content/uploads/2023/01/FD908A4E-5EF7-4A17-8863-4BBED765DF70.jpeg\" decoding=\"async\" class=\"aligncenter size-large wp-image-17544\" src=\"https://johnjohnston.info/blog/wp-content/uploads/2023/01/FD908A4E-5EF7-4A17-8863-4BBED765DF70.jpeg\" alt=\"Sunrise behind birch trees. \"></a><br>\nSunrise over the Banton Playground this morning.</p>",
+                "html": "<p><a href=\"https://johnjohnston.info/blog/wp-content/uploads/2023/01/FD908A4E-5EF7-4A17-8863-4BBED765DF70.jpeg\" data-slb-active=\"1\" data-slb-asset=\"1910151529\" data-slb-internal=\"0\" data-slb-group=\"17543\"><img data-attachment-id=\"17544\" data-permalink=\"https://johnjohnston.info/blog/sunrise-over-the-banton-playground-this-morning/fd908a4e-5ef7-4a17-8863-4bbed765df70/\" data-orig-file=\"https://johnjohnston.info/blog/wp-content/uploads/2023/01/FD908A4E-5EF7-4A17-8863-4BBED765DF70.jpeg\" data-orig-size=\"\" data-comments-opened=\"1\" data-image-meta=\"[]\" data-image-title=\"FD908A4E-5EF7-4A17-8863-4BBED765DF70\" data-image-description=\"\" data-image-caption=\"\" data-medium-file=\"https://johnjohnston.info/blog/wp-content/uploads/2023/01/FD908A4E-5EF7-4A17-8863-4BBED765DF70.jpeg\" data-large-file=\"https://johnjohnston.info/blog/wp-content/uploads/2023/01/FD908A4E-5EF7-4A17-8863-4BBED765DF70.jpeg\" decoding=\"async\" class=\"aligncenter size-large wp-image-17544\" src=\"https://johnjohnston.info/blog/wp-content/uploads/2023/01/FD908A4E-5EF7-4A17-8863-4BBED765DF70.jpeg\" alt=\"Sunrise behind birch trees. \"></a><br>\nSunrise over the Banton Playground this morning.</p>",
                 "value": "Sunrise behind birch trees.  \nSunrise over the Banton Playground this morning."
               }
             ],
@@ -574,7 +736,7 @@
             ],
             "content": [
               {
-                "html": "<p><a href=\"https://johnjohnston.info/blog/wp-content/uploads/2023/01/6338B646-5F92-4A33-8FF3-B1861F7491D5.jpeg\" data-slb-active=\"1\" data-slb-asset=\"566659153\" data-slb-internal=\"0\" data-slb-group=\"17525\"><img decoding=\"async\" src=\"https://johnjohnston.info/blog/wp-content/uploads/2023/01/6338B646-5F92-4A33-8FF3-B1861F7491D5.jpeg\" alt=\"Black an white. Two leafless, ragged trees on the horizon class=\"></a></p>\n<p>#SilentSunday</p>",
+                "html": "<p><a href=\"https://johnjohnston.info/blog/wp-content/uploads/2023/01/6338B646-5F92-4A33-8FF3-B1861F7491D5.jpeg\" data-slb-active=\"1\" data-slb-asset=\"230669203\" data-slb-internal=\"0\" data-slb-group=\"17525\"><img decoding=\"async\" src=\"https://johnjohnston.info/blog/wp-content/uploads/2023/01/6338B646-5F92-4A33-8FF3-B1861F7491D5.jpeg\" alt=\"Black an white. Two leafless, ragged trees on the horizon class=\"></a></p>\n<p>#SilentSunday</p>",
                 "value": "Black an white. Two leafless, ragged trees on the horizon class= \n#SilentSunday"
               }
             ],
@@ -836,235 +998,6 @@
             ]
           },
           "id": "post-17510"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "url": [
-              "https://johnjohnston.info/blog/2022-in-titles/",
-              "https://johnjohnston.info/blog/2022-in-titles/"
-            ],
-            "updated": [
-              "2023-01-06T10:47:45+00:00",
-              "2023-01-06T10:47:45+00:00"
-            ],
-            "published": [
-              "2023-01-06T10:47:45+00:00",
-              "2023-01-06T10:47:45+00:00"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "photo": [
-                    {
-                      "value": "http://0.gravatar.com/avatar/6af1df804358e928344788af8aaca6e4?s=90&d=mm&r=g",
-                      "srcset": {
-                        "2x": "http://0.gravatar.com/avatar/6af1df804358e928344788af8aaca6e4?s=180&d=mm&r=g"
-                      },
-                      "alt": ""
-                    }
-                  ],
-                  "url": [
-                    "https://johnjohnston.info/blog/author/john/"
-                  ],
-                  "uid": [
-                    "https://johnjohnston.info/blog/author/john/"
-                  ],
-                  "name": [
-                    "john"
-                  ]
-                },
-                "value": "john"
-              },
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "photo": [
-                    {
-                      "value": "http://0.gravatar.com/avatar/6af1df804358e928344788af8aaca6e4?s=90&d=mm&r=g",
-                      "srcset": {
-                        "2x": "http://0.gravatar.com/avatar/6af1df804358e928344788af8aaca6e4?s=180&d=mm&r=g"
-                      },
-                      "alt": ""
-                    }
-                  ],
-                  "url": [
-                    "https://johnjohnston.info/blog/author/john/"
-                  ],
-                  "uid": [
-                    "https://johnjohnston.info/blog/author/john/"
-                  ],
-                  "name": [
-                    "john"
-                  ]
-                },
-                "value": "john"
-              }
-            ],
-            "content": [
-              {
-                "html": "<p><a href=\"https://johnjohnston.info/blog/wp-content/uploads/2023/01/2022-titles.png\" data-slb-active=\"1\" data-slb-asset=\"1074971737\" data-slb-internal=\"0\" data-slb-group=\"17506\"><img data-attachment-id=\"17507\" data-permalink=\"https://johnjohnston.info/blog/2022-in-titles/2022-titles/\" data-orig-file=\"https://johnjohnston.info/blog/wp-content/uploads/2023/01/2022-titles.png\" data-orig-size=\"800,400\" data-comments-opened=\"1\" data-image-meta='{\"aperture\":\"0\",\"credit\":\"\",\"camera\":\"\",\"caption\":\"\",\"created_timestamp\":\"0\",\"copyright\":\"\",\"focal_length\":\"0\",\"iso\":\"0\",\"shutter_speed\":\"0\",\"title\":\"\",\"orientation\":\"0\"}' data-image-title=\"2022-titles\" data-image-description=\"\" data-image-caption=\"\" data-medium-file=\"https://johnjohnston.info/blog/wp-content/uploads/2023/01/2022-titles-620x310.png\" data-large-file=\"https://johnjohnston.info/blog/wp-content/uploads/2023/01/2022-titles.png\" decoding=\"async\" loading=\"lazy\" src=\"https://johnjohnston.info/blog/wp-content/uploads/2023/01/2022-titles.png\" alt=\"Wordcloud made from titles of blog posts from 2022\" width=\"800\" height=\"400\" class=\"aligncenter size-large wp-image-17507\" srcset=\"https://johnjohnston.info/blog/wp-content/uploads/2023/01/2022-titles.png 800w, https://johnjohnston.info/blog/wp-content/uploads/2023/01/2022-titles-620x310.png 620w, https://johnjohnston.info/blog/wp-content/uploads/2023/01/2022-titles-768x384.png 768w, https://johnjohnston.info/blog/wp-content/uploads/2023/01/2022-titles-668x334.png 668w\" sizes=\"(max-width: 800px) 100vw, 800px\"></a></p>\n<p>2022 in titles, made with <a href=\"https://amueller.github.io/word_cloud/cli.html\"> wordcloud cli</a>.</p>",
-                "value": "Wordcloud made from titles of blog posts from 2022 \n2022 in titles, made with  wordcloud cli."
-              }
-            ],
-            "summary": [
-              "Wordcloud made from titles of blog posts from 2022 \n2022 in titles, made with  wordcloud cli."
-            ],
-            "name": [
-              "Wordcloud made from titles of blog posts from 2022 \n2022 in titles, made with  wordcloud cli."
-            ],
-            "category": [
-              "2022",
-              "blogging"
-            ],
-            "syndication": [
-              "https://twitter.com/johnjohnston/status/1611313599896604673",
-              "https://social.ds106.us/@johnjohnston/109641864062438017"
-            ]
-          },
-          "id": "post-17506"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "url": [
-              "https://johnjohnston.info/blog/tdc4007/",
-              "https://johnjohnston.info/blog/tdc4007/"
-            ],
-            "updated": [
-              "2023-01-02T17:27:44+00:00",
-              "2023-01-02T17:27:44+00:00"
-            ],
-            "published": [
-              "2023-01-02T17:27:44+00:00",
-              "2023-01-02T17:27:44+00:00"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "photo": [
-                    {
-                      "value": "http://0.gravatar.com/avatar/6af1df804358e928344788af8aaca6e4?s=90&d=mm&r=g",
-                      "srcset": {
-                        "2x": "http://0.gravatar.com/avatar/6af1df804358e928344788af8aaca6e4?s=180&d=mm&r=g"
-                      },
-                      "alt": ""
-                    }
-                  ],
-                  "url": [
-                    "https://johnjohnston.info/blog/author/john/"
-                  ],
-                  "uid": [
-                    "https://johnjohnston.info/blog/author/john/"
-                  ],
-                  "name": [
-                    "john"
-                  ]
-                },
-                "value": "john"
-              },
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "photo": [
-                    {
-                      "value": "http://0.gravatar.com/avatar/6af1df804358e928344788af8aaca6e4?s=90&d=mm&r=g",
-                      "srcset": {
-                        "2x": "http://0.gravatar.com/avatar/6af1df804358e928344788af8aaca6e4?s=180&d=mm&r=g"
-                      },
-                      "alt": ""
-                    }
-                  ],
-                  "url": [
-                    "https://johnjohnston.info/blog/author/john/"
-                  ],
-                  "uid": [
-                    "https://johnjohnston.info/blog/author/john/"
-                  ],
-                  "name": [
-                    "john"
-                  ]
-                },
-                "value": "john"
-              }
-            ],
-            "in-reply-to": [
-              {
-                "type": [
-                  "h-cite"
-                ],
-                "properties": {
-                  "name": [
-                    "a tweet"
-                  ],
-                  "url": [
-                    "https://twitter.com/ds106dc/status/1609874652515516418"
-                  ],
-                  "author": [
-                    {
-                      "type": [
-                        "h-card"
-                      ],
-                      "properties": {
-                        "name": [
-                          "ds106 Daily Create"
-                        ]
-                      },
-                      "value": "ds106 Daily Create"
-                    }
-                  ],
-                  "publication": [
-                    "Twitter"
-                  ],
-                  "summary": [
-                    {
-                      "html": "<p>For today's <a href=\"https://twitter.com/hashtag/dailycreate?src=hash&amp;ref_src=twsrc%5Etfw\">#dailycreate</a> ... <a href=\"https://twitter.com/hashtag/tdc4007?src=hash&amp;ref_src=twsrc%5Etfw\">#tdc4007</a> <a href=\"https://twitter.com/hashtag/ds106?src=hash&amp;ref_src=twsrc%5Etfw\">#ds106</a>  Spiraling Out Of Control <a href=\"https://ift.tt/AyOPBCD\">https://ift.tt/AyOPBCD</a></p>",
-                      "value": "For today's #dailycreate ... #tdc4007 #ds106  Spiraling Out Of Control https://ift.tt/AyOPBCD"
-                    }
-                  ]
-                },
-                "value": "https://twitter.com/ds106dc/status/1609874652515516418"
-              }
-            ],
-            "content": [
-              {
-                "html": "<p>#tdc4007 #ds106 I asked <a href=\"https://chat.openai.com/\">ChatGPT</a> how to draw a spiral and took it from there:</p>\n<p><iframe src=\"https://pi.johnj.info/tdc/tdc4007.html\" width=\"600\" height=\"600\"></iframe></p>\n<p><a href=\"https://pi.johnj.info/tdc/tdc4007.html\">tdc4007</a></p>",
-                "value": "#tdc4007 #ds106 I asked ChatGPT how to draw a spiral and took it from there:\n\ntdc4007"
-              }
-            ],
-            "summary": [
-              "#tdc4007 #ds106 I asked ChatGPT how to draw a spiral and took it from there:\n\ntdc4007"
-            ],
-            "name": [
-              "#tdc4007 #ds106 I asked ChatGPT how to draw a spiral and took it from there:\n\ntdc4007"
-            ],
-            "category": [
-              "ChatGPT",
-              "dailycreate",
-              "ds106",
-              "javascript",
-              "tdc4007"
-            ],
-            "syndication": [
-              "https://twitter.com/johnjohnston/status/1609944343250632704",
-              "https://social.ds106.us/@johnjohnston/109620495869851919"
-            ]
-          },
-          "id": "post-17493"
         }
       ]
     }
@@ -1156,6 +1089,8 @@
       "https://johnjohnston.info/blog/page/2/"
     ],
     "bookmark": [
+      "https://johnjohnston.info/blog/the-feedland-roadmap/",
+      "https://johnjohnston.info/blog/silent-sunday-6/",
       "https://johnjohnston.info/blog/re-why-i-havent-embraced-wordpress-blocks/",
       "https://johnjohnston.info/blog/sunrise-over-the-banton-playground-this-morning/",
       "https://johnjohnston.info/blog/too-slow/",
@@ -1163,28 +1098,34 @@
       "https://johnjohnston.info/blog/silent-sunday-5/",
       "https://johnjohnston.info/blog/re-someone-is-right-on-the-internet/",
       "https://johnjohnston.info/blog/17518-2/",
-      "https://johnjohnston.info/blog/chatgpt-for-lazy-teachers/",
-      "https://johnjohnston.info/blog/2022-in-titles/",
-      "https://johnjohnston.info/blog/tdc4007/"
+      "https://johnjohnston.info/blog/chatgpt-for-lazy-teachers/"
     ],
     "author": [
       "https://johnjohnston.info/blog/author/john/"
     ],
     "category": [
       "https://johnjohnston.info/blog/category/micro/",
+      "https://johnjohnston.info/blog/category/wwwd/",
       "https://johnjohnston.info/blog/category/twitter/",
       "https://johnjohnston.info/blog/category/book/",
-      "https://johnjohnston.info/blog/category/reaction/",
-      "https://johnjohnston.info/blog/category/wwwd/",
-      "https://johnjohnston.info/blog/category/ds106/"
+      "https://johnjohnston.info/blog/category/reaction/"
     ],
     "tag": [
       "https://johnjohnston.info/blog/category/micro/",
+      "https://johnjohnston.info/blog/category/wwwd/",
+      "https://johnjohnston.info/blog/tag/dave-winer/",
+      "https://johnjohnston.info/blog/tag/feedland/",
+      "https://johnjohnston.info/blog/tag/rss/",
+      "https://johnjohnston.info/blog/tag/scotedublogs/",
+      "https://johnjohnston.info/blog/category/twitter/",
+      "https://johnjohnston.info/blog/tag/bird/",
+      "https://johnjohnston.info/blog/tag/robin/",
+      "https://johnjohnston.info/blog/tag/silent-sunday/",
+      "https://johnjohnston.info/blog/tag/victoria-park/",
       "https://johnjohnston.info/blog/tag/blocks/",
       "https://johnjohnston.info/blog/tag/david-shanske/",
       "https://johnjohnston.info/blog/tag/indieweb/",
       "https://johnjohnston.info/blog/tag/wordpress/",
-      "https://johnjohnston.info/blog/category/twitter/",
       "https://johnjohnston.info/blog/tag/banton/",
       "https://johnjohnston.info/blog/tag/clouds/",
       "https://johnjohnston.info/blog/tag/sunrise/",
@@ -1194,41 +1135,38 @@
       "https://johnjohnston.info/blog/category/book/",
       "https://johnjohnston.info/blog/tag/shehan-karunatilaka/",
       "https://johnjohnston.info/blog/tag/%e2%98%85%e2%98%85%e2%98%85%e2%98%85%e2%98%85/",
-      "https://johnjohnston.info/blog/tag/silent-sunday/",
       "https://johnjohnston.info/blog/tag/trees/",
       "https://johnjohnston.info/blog/category/reaction/",
       "https://johnjohnston.info/blog/tag/alan-levine/",
       "https://johnjohnston.info/blog/tag/xkcd/",
       "https://johnjohnston.info/blog/tag/simon-mawer/",
       "https://johnjohnston.info/blog/tag/%e2%98%85%e2%98%85%e2%98%85%e2%98%85/",
-      "https://johnjohnston.info/blog/category/wwwd/",
       "https://johnjohnston.info/blog/tag/chatgpt/",
       "https://johnjohnston.info/blog/tag/classroom/",
       "https://johnjohnston.info/blog/tag/glowblogs/",
-      "https://johnjohnston.info/blog/tag/h5p/",
-      "https://johnjohnston.info/blog/tag/2022/",
-      "https://johnjohnston.info/blog/tag/blogging/",
-      "https://johnjohnston.info/blog/category/ds106/",
-      "https://johnjohnston.info/blog/tag/dailycreate/",
-      "https://johnjohnston.info/blog/tag/ds106/",
-      "https://johnjohnston.info/blog/tag/javascript/",
-      "https://johnjohnston.info/blog/tag/tdc4007/"
+      "https://johnjohnston.info/blog/tag/h5p/"
     ],
     "external": [
-      "https://micro.blog/dave",
-      "https://micro.blog/johnjohnston",
-      "https://micro.blog/abc"
+      "https://universeodon.com/@wren",
+      "https://social.ds106.us/@timlauer",
+      "https://twitter.com/mconlon68",
+      "https://micro.blog/JMaxB",
+      "https://mas.to/@MirjamDePaus"
     ],
     "nofollow": [
-      "https://micro.blog/dave",
-      "https://micro.blog/johnjohnston",
-      "https://micro.blog/abc",
+      "https://universeodon.com/@wren",
+      "https://social.ds106.us/@timlauer",
+      "https://twitter.com/mconlon68",
+      "https://micro.blog/JMaxB",
+      "https://mas.to/@MirjamDePaus",
       "https://automattic.com/cookies/"
     ],
     "ugc": [
-      "https://micro.blog/dave",
-      "https://micro.blog/johnjohnston",
-      "https://micro.blog/abc"
+      "https://universeodon.com/@wren",
+      "https://social.ds106.us/@timlauer",
+      "https://twitter.com/mconlon68",
+      "https://micro.blog/JMaxB",
+      "https://mas.to/@MirjamDePaus"
     ],
     "license": [
       "http://creativecommons.org/licenses/by-sa/4.0/"
@@ -1463,12 +1401,12 @@
       ],
       "text": "← Older posts"
     },
-    "https://johnjohnston.info/blog/re-why-i-havent-embraced-wordpress-blocks/": {
+    "https://johnjohnston.info/blog/the-feedland-roadmap/": {
       "rels": [
         "bookmark"
       ],
-      "title": "10:25 am",
-      "text": "14 January, 2023"
+      "title": "Permalink to The FeedLand Roadmap",
+      "text": "The FeedLand Roadmap"
     },
     "https://johnjohnston.info/blog/author/john/": {
       "rels": [
@@ -1483,6 +1421,82 @@
         "tag"
       ],
       "text": "Micro"
+    },
+    "https://johnjohnston.info/blog/category/wwwd/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "wwwd"
+    },
+    "https://johnjohnston.info/blog/tag/dave-winer/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Dave Winer"
+    },
+    "https://johnjohnston.info/blog/tag/feedland/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Feedland"
+    },
+    "https://johnjohnston.info/blog/tag/rss/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "rss"
+    },
+    "https://johnjohnston.info/blog/tag/scotedublogs/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "scotedublogs"
+    },
+    "https://johnjohnston.info/blog/silent-sunday-6/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "1:10 pm",
+      "text": "15 January, 2023"
+    },
+    "https://johnjohnston.info/blog/category/twitter/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "twitter"
+    },
+    "https://johnjohnston.info/blog/tag/bird/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "bird"
+    },
+    "https://johnjohnston.info/blog/tag/robin/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Robin"
+    },
+    "https://johnjohnston.info/blog/tag/silent-sunday/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Silent Sunday"
+    },
+    "https://johnjohnston.info/blog/tag/victoria-park/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "victoria park"
+    },
+    "https://johnjohnston.info/blog/re-why-i-havent-embraced-wordpress-blocks/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "10:25 am",
+      "text": "14 January, 2023"
     },
     "https://johnjohnston.info/blog/tag/blocks/": {
       "rels": [
@@ -1514,13 +1528,6 @@
       ],
       "title": "5:26 pm",
       "text": "13 January, 2023"
-    },
-    "https://johnjohnston.info/blog/category/twitter/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "twitter"
     },
     "https://johnjohnston.info/blog/tag/banton/": {
       "rels": [
@@ -1598,12 +1605,6 @@
       "title": "10:23 pm",
       "text": "8 January, 2023"
     },
-    "https://johnjohnston.info/blog/tag/silent-sunday/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Silent Sunday"
-    },
     "https://johnjohnston.info/blog/tag/trees/": {
       "rels": [
         "tag"
@@ -1662,13 +1663,6 @@
       "title": "Permalink to ChatGPT for Lazy Teachers",
       "text": "ChatGPT for Lazy Teachers"
     },
-    "https://johnjohnston.info/blog/category/wwwd/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "wwwd"
-    },
     "https://johnjohnston.info/blog/tag/chatgpt/": {
       "rels": [
         "tag"
@@ -1693,84 +1687,51 @@
       ],
       "text": "H5P"
     },
-    "https://johnjohnston.info/blog/2022-in-titles/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "10:47 am",
-      "text": "6 January, 2023"
-    },
-    "https://johnjohnston.info/blog/tag/2022/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "2022"
-    },
-    "https://johnjohnston.info/blog/tag/blogging/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "blogging"
-    },
-    "https://johnjohnston.info/blog/tdc4007/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "5:27 pm",
-      "text": "2 January, 2023"
-    },
-    "https://johnjohnston.info/blog/category/ds106/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "ds106"
-    },
-    "https://johnjohnston.info/blog/tag/dailycreate/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "dailycreate"
-    },
-    "https://johnjohnston.info/blog/tag/ds106/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "ds106"
-    },
-    "https://johnjohnston.info/blog/tag/javascript/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "javascript"
-    },
-    "https://johnjohnston.info/blog/tag/tdc4007/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "tdc4007"
-    },
     "http://feeds.feedburner.com/johnjohnston": {
       "rels": [
         "alternate"
       ],
       "type": "application/rss+xml"
     },
-    "https://micro.blog/dave": {
+    "https://universeodon.com/@wren": {
       "rels": [
         "external",
         "nofollow",
         "ugc"
       ],
-      "text": "dave"
+      "text": "Wren"
     },
-    "https://micro.blog/abc": {
+    "https://social.ds106.us/@timlauer": {
       "rels": [
         "external",
         "nofollow",
         "ugc"
       ],
-      "text": "abc"
+      "text": "Tim Lauer"
+    },
+    "https://twitter.com/mconlon68": {
+      "rels": [
+        "external",
+        "nofollow",
+        "ugc"
+      ],
+      "text": "Michael Conlon"
+    },
+    "https://micro.blog/JMaxB": {
+      "rels": [
+        "external",
+        "nofollow",
+        "ugc"
+      ],
+      "text": "JMaxB"
+    },
+    "https://mas.to/@MirjamDePaus": {
+      "rels": [
+        "external",
+        "nofollow",
+        "ugc"
+      ],
+      "text": "Mirjam de Paus"
     },
     "http://creativecommons.org/licenses/by-sa/4.0/": {
       "rels": [
