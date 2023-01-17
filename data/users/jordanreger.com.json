@@ -1,24 +1,49 @@
 {
   "items": [],
   "rels": {
-    "stylesheet": [
-      "https://smol.pub/style.css"
+    "icon": [
+      "https://jordanreger.com/images/favicon.ico"
     ],
-    "alternate": [
-      "https://jordanreger.com/atom.xml"
+    "shortcut": [
+      "https://jordanreger.com/images/favicon.ico"
+    ],
+    "apple-touch-icon": [
+      "https://jordanreger.com/images/logo-ios.png"
+    ],
+    "stylesheet": [
+      "https://jordanreger.com/print.b31f28aa.css",
+      "https://jordanreger.com/app-458b27cf2746fa5c5a6a.css",
+      "https://fonts.googleapis.com/css?family=Inter:Regular,Bold,Italic&display=swap"
     ]
   },
   "rel-urls": {
-    "https://smol.pub/style.css": {
+    "https://jordanreger.com/images/favicon.ico": {
+      "rels": [
+        "icon",
+        "shortcut"
+      ],
+      "type": "image/x-icon"
+    },
+    "https://jordanreger.com/images/logo-ios.png": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://jordanreger.com/print.b31f28aa.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "print"
+    },
+    "https://jordanreger.com/app-458b27cf2746fa5c5a6a.css": {
       "rels": [
         "stylesheet"
       ]
     },
-    "https://jordanreger.com/atom.xml": {
+    "https://fonts.googleapis.com/css?family=Inter:Regular,Bold,Italic&display=swap": {
       "rels": [
-        "alternate"
-      ],
-      "type": "application/atom+xml"
+        "stylesheet"
+      ]
     }
   }
 }

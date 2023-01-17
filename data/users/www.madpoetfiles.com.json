@@ -2,36 +2,49 @@
   "items": [],
   "rels": {
     "stylesheet": [
-      "https://www.madpoetfiles.com/cdn-cgi/styles/main.css"
+      "https://www.madpoetfiles.com/assets/built/screen.css?v=f1f0c8c77d",
+      "https://www.madpoetfiles.com/public/cards.min.css?v=f1f0c8c77d"
+    ],
+    "canonical": [
+      "https://www.madpoetfiles.com/"
+    ],
+    "alternate": [
+      "https://www.madpoetfiles.com/rss/"
     ],
     "noopener": [
-      "https://developers.cloudflare.com/argo-tunnel/reference/load-balancing/",
-      "https://www.cloudflare.com/5xx-error-landing"
-    ],
-    "noreferrer": [
-      "https://developers.cloudflare.com/argo-tunnel/reference/load-balancing/",
-      "https://www.cloudflare.com/5xx-error-landing"
+      "https://ghost.org/"
     ]
   },
   "rel-urls": {
-    "https://www.madpoetfiles.com/cdn-cgi/styles/main.css": {
+    "https://www.madpoetfiles.com/assets/built/screen.css?v=f1f0c8c77d": {
       "rels": [
         "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://www.madpoetfiles.com/": {
+      "rels": [
+        "canonical"
       ]
     },
-    "https://developers.cloudflare.com/argo-tunnel/reference/load-balancing/": {
+    "https://www.madpoetfiles.com/rss/": {
       "rels": [
-        "noopener",
-        "noreferrer"
+        "alternate"
       ],
-      "text": "load balancing"
+      "title": "Mad Poet Files",
+      "type": "application/rss+xml"
     },
-    "https://www.cloudflare.com/5xx-error-landing": {
+    "https://www.madpoetfiles.com/public/cards.min.css?v=f1f0c8c77d": {
       "rels": [
-        "noopener",
-        "noreferrer"
+        "stylesheet"
       ],
-      "text": "Cloudflare"
+      "type": "text/css"
+    },
+    "https://ghost.org/": {
+      "rels": [
+        "noopener"
+      ],
+      "text": "Powered by Ghost"
     }
   }
 }

@@ -1,5 +1,111 @@
 {
   "items": [],
-  "rels": {},
-  "rel-urls": {}
+  "rels": {
+    "profile": [
+      "https://gmpg.org/xfn/11"
+    ],
+    "alternate": [
+      "https://marvins.site/feed/",
+      "https://marvins.site/comments/feed/"
+    ],
+    "stylesheet": [
+      "https://marvins.site/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1",
+      "https://marvins.site/wp-includes/css/classic-themes.min.css?ver=1",
+      "https://marvins.site/wp-content/themes/iwata/assets/css/fonts.css?ver=6.1.1",
+      "https://marvins.site/wp-content/themes/iwata/assets/fonts/fa/css/font-awesome.css?ver=6.1.1",
+      "https://marvins.site/wp-content/themes/iwata/style.css?ver=2.1.1"
+    ],
+    "https://api.w.org/": [
+      "https://marvins.site/wp-json/"
+    ],
+    "EditURI": [
+      "https://marvins.site/xmlrpc.php?rsd"
+    ],
+    "wlwmanifest": [
+      "https://marvins.site/wp-includes/wlwmanifest.xml"
+    ],
+    "home": [
+      "https://marvins.site/"
+    ]
+  },
+  "rel-urls": {
+    "https://gmpg.org/xfn/11": {
+      "rels": [
+        "profile"
+      ]
+    },
+    "https://marvins.site/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Marvin's Site » Feed",
+      "type": "application/rss+xml"
+    },
+    "https://marvins.site/comments/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Marvin's Site » Kommentar-Feed",
+      "type": "application/rss+xml"
+    },
+    "https://marvins.site/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://marvins.site/wp-includes/css/classic-themes.min.css?ver=1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://marvins.site/wp-content/themes/iwata/assets/css/fonts.css?ver=6.1.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://marvins.site/wp-content/themes/iwata/assets/fonts/fa/css/font-awesome.css?ver=6.1.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://marvins.site/wp-content/themes/iwata/style.css?ver=2.1.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://marvins.site/wp-json/": {
+      "rels": [
+        "https://api.w.org/"
+      ]
+    },
+    "https://marvins.site/xmlrpc.php?rsd": {
+      "rels": [
+        "EditURI"
+      ],
+      "title": "RSD",
+      "type": "application/rsd+xml"
+    },
+    "https://marvins.site/wp-includes/wlwmanifest.xml": {
+      "rels": [
+        "wlwmanifest"
+      ],
+      "type": "application/wlwmanifest+xml"
+    },
+    "https://marvins.site/": {
+      "rels": [
+        "home"
+      ],
+      "text": "Marvin's Site"
+    }
+  }
 }
