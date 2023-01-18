@@ -40,6 +40,362 @@
         "h-entry"
       ],
       "properties": {
+        "content": [
+          {
+            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://patrickbrosset.com/articles/2022-09-29-is-web-dx-so-terrible/\">\nPatrick / articles / Is the developer experience on the Web so terrible?\n</a>\n</h3>\n\n<blockquote>\n  <p>Over the past 10 years or so, we’ve slowly but very surely transitioned to a state where frameworks are the norm, and I think it’s a problem.</p>\n</blockquote>\n\n<p>I concur.</p>\n\n<blockquote>\n  <p>Use the frameworks and libraries that make sense for you to deliver the best UX possible. But also learn the web platform from the ground up. Take time to understand how web browsers work and render webpages. Learn HTML, CSS, JavaScript. And keep an eye, if you can, on the new things.</p>\n</blockquote>",
+            "value": "Patrick / articles / Is the developer experience on the Web so terrible?\n\n\n\n\n  Over the past 10 years or so, we’ve slowly but very surely transitioned to a state where frameworks are the norm, and I think it’s a problem.\n\n\nI concur.\n\n\n  Use the frameworks and libraries that make sense for you to deliver the best UX possible. But also learn the web platform from the ground up. Take time to understand how web browsers work and render webpages. Learn HTML, CSS, JavaScript. And keep an eye, if you can, on the new things."
+          }
+        ],
+        "name": [
+          "Patrick / articles / Is the developer experience on the Web so terrible?"
+        ],
+        "bookmark-of": [
+          "https://patrickbrosset.com/articles/2022-09-29-is-web-dx-so-terrible/"
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "50.83251182"
+              ],
+              "longitude": [
+                "-0.11819208"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/links/19840"
+        ],
+        "published": [
+          "2023-01-17T19:20:18Z"
+        ],
+        "category": [
+          "frontend",
+          "development",
+          "process",
+          "html",
+          "css",
+          "javascript",
+          "performance",
+          "advice",
+          "frameworks",
+          "libraries"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Chain of tools"
+        ],
+        "url": [
+          "https://adactio.com/journal/19839"
+        ],
+        "content": [
+          {
+            "html": "<p>I shared this link in Slack with my co-workers today:</p>\n\n<p><a href=\"https://andymatuschak.org/stillness/\"><cite>Cultivating depth and stillness in research</cite></a> by Andy Matuschak.</p>\n\n<p>I wasn’t sure whether it belonged in the <code>#research</code> or the <code>#design</code> channel. While it’s ostensibly about research, I think it applies to design more broadly. Heck, it probably applies to most fields. I should have put it in the Slack channel I created called <code>#iiiiinteresting</code>.</p>\n\n<p>The article is all about that feeling of frustration when things aren’t progressing quickly, even when you know intellectually that not everything <em>should</em> always progress quickly.</p>\n\n<p>The article is filled with advice for battling this feeling, including this observation on curiosity:</p>\n\n<blockquote>\n  <p>Curiosity can also totally change my relationship to setbacks. Say I’ve run an experiment, collected the data, done the analysis, and now I’m writing an essay about what I’ve found. Except, halfway through, I notice that one column of the data really doesn’t support the conclusion I’d drawn. Oops. It’s tempting to treat this development as a frustrating impediment—something to be overcome expediently. Of course, that’s exactly the wrong approach, both emotionally and epistemically. Everything becomes much better when I react from curiosity instead: “Oh, wait, wow! Fascinating! What is happening here? What can this teach me? How might this change what I try next?”</p>\n</blockquote>\n\n<p>But what really resonated with me was this footnote attached to that paragraph:</p>\n\n<blockquote>\n  <p>I notice that I <em>really</em> struggle to generate curiosity about problems in programming. Maybe it’s because I’ve been doing it so long, but I think it’s because my problems are usually with ephemeral ideas, incidental to what I actually care about. When I’m fighting some godforsaken Javascript build system, I don’t feel even <em>slightly</em> curious to “really” understand those parochial machinations. I know they’re just going to be replaced by some new tool next year.</p>\n</blockquote>\n\n<p>I feel seen.</p>\n\n<p>I know I’m not alone. I know people who were driven out of front-end development because they felt the unspoken ultimatum was to either become a “full stack” developer or see yourself out.</p>\n\n<p>Remember Chris’s excellent post, <a href=\"https://css-tricks.com/the-great-divide/\"><cite>The Great Divide</cite></a>? Zach referenced it recently. <a href=\"https://www.zachleat.com/web/javascript-community/\">He wrote</a>:</p>\n\n<blockquote>\n  <p>The question I keep asking though: is the divide borne from a healthy specialization of skills or a symptom of unnecessary tooling complexity?</p>\n</blockquote>\n\n<p>Mostly I feel sad about the talented people we’ve lost because they felt their front-of-the-front-end work wasn’t valued.</p>\n\n<p>But wait! Can I turn my frown upside down? Can I take Andy Matuschak’s advice and say, “Oh, wait, wow! Fascinating! What is happening here? What can this teach me?”</p>\n\n<p>Here’s one way of squinting at the situation…</p>\n\n<p>There’s an opportunity here. If many people—myself included—feel disheartened and ground down by the amount of time they need to spend dealing with toolchains and build systems, what kind of system would allow us to get on with making websites without having to deal with that stuff?</p>\n\n<p>I’m not proposing that we get rid of these complex toolchains, but I am wondering if there’s a way to make it someone else’s job.</p>\n\n<p>I guess this job is DevOps. In theory it’s a specialised field. In practice everyone adding anything to a codebase partakes in continual partial DevOps because they <em>must</em> understand the toolchains and build processes in order to change one line of HTML.</p>\n\n<p>I’m not saying “Don’t Make Me Think” when it comes to the tooling. I totally get that some working knowledge is probably required. But the ratio has gotten out of whack. You need a <em>lot</em> of working knowledge of the toolchains and build processes.</p>\n\n<p>In fact, that’s mostly what companies hire for these days. If you’re well versed in HTML, CSS, and vanilla JavaScript, but you’re not up to speed on pipelines and frameworks, you’re going to have a hard time.</p>\n\n<p>That doesn’t seem right. We should change it.</p>",
+            "value": "I shared this link in Slack with my co-workers today:\n\nCultivating depth and stillness in research by Andy Matuschak.\n\nI wasn’t sure whether it belonged in the #research or the #design channel. While it’s ostensibly about research, I think it applies to design more broadly. Heck, it probably applies to most fields. I should have put it in the Slack channel I created called #iiiiinteresting.\n\nThe article is all about that feeling of frustration when things aren’t progressing quickly, even when you know intellectually that not everything should always progress quickly.\n\nThe article is filled with advice for battling this feeling, including this observation on curiosity:\n\n\n  Curiosity can also totally change my relationship to setbacks. Say I’ve run an experiment, collected the data, done the analysis, and now I’m writing an essay about what I’ve found. Except, halfway through, I notice that one column of the data really doesn’t support the conclusion I’d drawn. Oops. It’s tempting to treat this development as a frustrating impediment—something to be overcome expediently. Of course, that’s exactly the wrong approach, both emotionally and epistemically. Everything becomes much better when I react from curiosity instead: “Oh, wait, wow! Fascinating! What is happening here? What can this teach me? How might this change what I try next?”\n\n\nBut what really resonated with me was this footnote attached to that paragraph:\n\n\n  I notice that I really struggle to generate curiosity about problems in programming. Maybe it’s because I’ve been doing it so long, but I think it’s because my problems are usually with ephemeral ideas, incidental to what I actually care about. When I’m fighting some godforsaken Javascript build system, I don’t feel even slightly curious to “really” understand those parochial machinations. I know they’re just going to be replaced by some new tool next year.\n\n\nI feel seen.\n\nI know I’m not alone. I know people who were driven out of front-end development because they felt the unspoken ultimatum was to either become a “full stack” developer or see yourself out.\n\nRemember Chris’s excellent post, The Great Divide? Zach referenced it recently. He wrote:\n\n\n  The question I keep asking though: is the divide borne from a healthy specialization of skills or a symptom of unnecessary tooling complexity?\n\n\nMostly I feel sad about the talented people we’ve lost because they felt their front-of-the-front-end work wasn’t valued.\n\nBut wait! Can I turn my frown upside down? Can I take Andy Matuschak’s advice and say, “Oh, wait, wow! Fascinating! What is happening here? What can this teach me?”\n\nHere’s one way of squinting at the situation…\n\nThere’s an opportunity here. If many people—myself included—feel disheartened and ground down by the amount of time they need to spend dealing with toolchains and build systems, what kind of system would allow us to get on with making websites without having to deal with that stuff?\n\nI’m not proposing that we get rid of these complex toolchains, but I am wondering if there’s a way to make it someone else’s job.\n\nI guess this job is DevOps. In theory it’s a specialised field. In practice everyone adding anything to a codebase partakes in continual partial DevOps because they must understand the toolchains and build processes in order to change one line of HTML.\n\nI’m not saying “Don’t Make Me Think” when it comes to the tooling. I totally get that some working knowledge is probably required. But the ratio has gotten out of whack. You need a lot of working knowledge of the toolchains and build processes.\n\nIn fact, that’s mostly what companies hire for these days. If you’re well versed in HTML, CSS, and vanilla JavaScript, but you’re not up to speed on pipelines and frameworks, you’re going to have a hard time.\n\nThat doesn’t seem right. We should change it."
+          }
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "50.83252631"
+              ],
+              "longitude": [
+                "-0.11816383"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "published": [
+          "2023-01-17T19:02:01Z"
+        ],
+        "category": [
+          "tools",
+          "tooling",
+          "toolchains",
+          "build",
+          "processes",
+          "pipelines",
+          "frontend",
+          "development",
+          "fullstack",
+          "work"
+        ],
+        "syndication": [
+          "https://adactio.medium.com/a0ff1519d602"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "<p>On this day fourteen years ago, I went to PaperCamp, a day dedicated to the papernet:</p>\n\n<p><a href=\"https://adactio.com/journal/1546\">https://adactio.com/journal/1546</a></p>\n\n<p>Pics or it didn’t happen:</p>\n\n<p><a href=\"https://www.flickr.com/photos/adactio/albums/72157612675826706\">https://www.flickr.com/photos/adactio/albums/72157612675826706</a></p>\n\n<p>It was fun!</p>\n<a data-flickr-embed=\"true\" href=\"https://www.flickr.com/photos/adactio/albums/72157612675826706\" title=\"PaperCamp, London 2009 by adactio, on Flickr\"><img src=\"https://live.staticflickr.com/3299/3203061899_333a1c090d_b.jpg\" width=\"800\" height=\"600\" alt=\"Nick\" s creation></a><script async src=\"https://embedr.flickr.com/assets/client-code.js\" charset=\"utf-8\"></script>",
+            "value": "On this day fourteen years ago, I went to PaperCamp, a day dedicated to the papernet:\n\nhttps://adactio.com/journal/1546\n\nPics or it didn’t happen:\n\nhttps://www.flickr.com/photos/adactio/albums/72157612675826706\n\nIt was fun!\n Nick"
+          }
+        ],
+        "name": [
+          "On this day fourteen years ago, I went to PaperCamp, a day dedicated to the papernet:\n\nhttps://adactio.com/journal/1546\n\nPics or it didn’t happen:\n\nhttps://www.flickr.com/photos/adactio/albums/72157612675826706\n\nIt was fun!\n Nick"
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "50.83249579"
+              ],
+              "longitude": [
+                "-0.11809295"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/notes/19838"
+        ],
+        "published": [
+          "2023-01-17T18:17:40Z"
+        ],
+        "syndication": [
+          "https://mastodon.social/@adactio/109705917952294506"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://autogram.is/discussing/pattern-wise-system-foolish/\">\nPattern Wise, System Foolish\n</a>\n</h3>\n\n<blockquote>\n  <p>A library of UX components is one common <em>part</em> of a design system, but the <em>system itself</em> is something bigger. A good system is also a shared set of strategies for solving visual and interactive communication challenges, a playbook rather than a script.</p>\n</blockquote>\n\n<p>I like this way of putting it:</p>\n\n<blockquote>\n  <p>The problem is that treating a design system as a pantry full of widgets is, in and of itself, a failure of both craft and imagination. Think of it like a language: if a writer’s only engagement with it is grabbing words from the dictionary and heaping them together until “message” is achieved, things are going to suck. Language is more than a bag of words.</p>\n</blockquote>",
+            "value": "Pattern Wise, System Foolish\n\n\n\n\n  A library of UX components is one common part of a design system, but the system itself is something bigger. A good system is also a shared set of strategies for solving visual and interactive communication challenges, a playbook rather than a script.\n\n\nI like this way of putting it:\n\n\n  The problem is that treating a design system as a pantry full of widgets is, in and of itself, a failure of both craft and imagination. Think of it like a language: if a writer’s only engagement with it is grabbing words from the dictionary and heaping them together until “message” is achieved, things are going to suck. Language is more than a bag of words."
+          }
+        ],
+        "name": [
+          "Pattern Wise, System Foolish"
+        ],
+        "bookmark-of": [
+          "https://autogram.is/discussing/pattern-wise-system-foolish/"
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "50.83250029"
+              ],
+              "longitude": [
+                "-0.11814739"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/links/19837"
+        ],
+        "published": [
+          "2023-01-17T17:36:13Z"
+        ],
+        "category": [
+          "design",
+          "systems",
+          "components",
+          "patterns",
+          "language",
+          "ai"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://henry.codes/writing/how-to-make-a-website/\">\nHenry From Online | How To Make a Website\n</a>\n</h3>\n\n<blockquote>\n  <p>Write meaningful HTML that communicates the structure of your document before any style or additional interactivity has loaded. Write CSS carefully, reason your methodology and stick to it, and feel empowered to skip frameworks. When it comes time to write JavaScript, write not too much, make sure you know what it all does, and above all, make sure the website works without it.</p>\n</blockquote>\n\n<p>The whole article is great, and really charmingly written, with some golden nuggets embedded within, like:</p>\n\n<blockquote>\n  <ul>\n  <li>You’ll find that spending more time getting HTML right reveals or even anticipates and evades accessibility issues. It’s just easier to write accessible code if it’s got semantic foundations.</li>\n  <li>In my experience, you will almost always spend more time overriding frameworks or compromising your design to fit the opinions of a framework.</li>\n  <li>Always style from the absolute smallest screen your content will be rendered on first, and use <code>@media (min-width)</code> queries to break to layouts that allow for more real estate as it becomes available.</li>\n  <li>If your site doesn’t work without JavaScript, your site doesn’t work.</li>\n  <li>Always progressively enhance your apps, especially when you’re fucking with something as browser-critical as page routing.</li>\n  </ul>\n</blockquote>",
+            "value": "Henry From Online | How To Make a Website\n\n\n\n\n  Write meaningful HTML that communicates the structure of your document before any style or additional interactivity has loaded. Write CSS carefully, reason your methodology and stick to it, and feel empowered to skip frameworks. When it comes time to write JavaScript, write not too much, make sure you know what it all does, and above all, make sure the website works without it.\n\n\nThe whole article is great, and really charmingly written, with some golden nuggets embedded within, like:\n\n\n  \n  You’ll find that spending more time getting HTML right reveals or even anticipates and evades accessibility issues. It’s just easier to write accessible code if it’s got semantic foundations.\n  In my experience, you will almost always spend more time overriding frameworks or compromising your design to fit the opinions of a framework.\n  Always style from the absolute smallest screen your content will be rendered on first, and use @media (min-width) queries to break to layouts that allow for more real estate as it becomes available.\n  If your site doesn’t work without JavaScript, your site doesn’t work.\n  Always progressively enhance your apps, especially when you’re fucking with something as browser-critical as page routing."
+          }
+        ],
+        "name": [
+          "Henry From Online | How To Make a Website"
+        ],
+        "bookmark-of": [
+          "https://henry.codes/writing/how-to-make-a-website/"
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "50.83251255"
+              ],
+              "longitude": [
+                "-0.11813099"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/links/19836"
+        ],
+        "published": [
+          "2023-01-17T17:06:42Z"
+        ],
+        "category": [
+          "frontend",
+          "development",
+          "process",
+          "html",
+          "css",
+          "javascript",
+          "animation",
+          "accessibility",
+          "performance",
+          "resilience",
+          "progressive",
+          "enhancement",
+          "advice",
+          "frameworks"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://css-irl.info/disentangling-frameworks/\">\nCSS { In Real Life } | Disentangling Frameworks\n</a>\n</h3>\n\n<p><a href=\"https://adactio.com/links/19834\">I just quoted Chris saying</a>:</p>\n\n<blockquote>\n  <p>I think <em>some</em> tools are a good idea. But as few as possible, and the easier they are to <em>stop</em> using, the better.</p>\n</blockquote>\n\n<p>Now Michelle asks:</p>\n\n<blockquote>\n  <p>Suppose we want to stop using Tailwind one day?</p>\n</blockquote>\n\n<p>Turns out it’s a bit of a roach motel, much like most JavaScript frameworks: you can get in but you can’t easily get out.</p>\n\n<blockquote>\n  <p>So whenever possible, the safest, and most future-proof bet is to use the native features of the web platform.</p>\n</blockquote>",
+            "value": "CSS { In Real Life } | Disentangling Frameworks\n\n\n\nI just quoted Chris saying:\n\n\n  I think some tools are a good idea. But as few as possible, and the easier they are to stop using, the better.\n\n\nNow Michelle asks:\n\n\n  Suppose we want to stop using Tailwind one day?\n\n\nTurns out it’s a bit of a roach motel, much like most JavaScript frameworks: you can get in but you can’t easily get out.\n\n\n  So whenever possible, the safest, and most future-proof bet is to use the native features of the web platform."
+          }
+        ],
+        "name": [
+          "CSS { In Real Life } | Disentangling Frameworks"
+        ],
+        "bookmark-of": [
+          "https://css-irl.info/disentangling-frameworks/"
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "50.83253142"
+              ],
+              "longitude": [
+                "-0.11816688"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/links/19835"
+        ],
+        "published": [
+          "2023-01-17T16:51:13Z"
+        ],
+        "category": [
+          "css",
+          "tailwind",
+          "frontend",
+          "development",
+          "tooling",
+          "maintenance",
+          "complexity",
+          "libraries",
+          "frameworks",
+          "dependencies"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://chriscoyier.net/2023/01/17/scalable-css/\">\nScalable CSS - Chris Coyier\n</a>\n</h3>\n\n<p>Wise words:</p>\n\n<blockquote>\n  <p>Myself, I think <em>some</em> tools are a good idea. But as few as possible, and the easier they are to <em>stop</em> using, the better.</p>\n</blockquote>\n\n<p>To paraphrase Michael Pollan:</p>\n\n<p>Write CSS, not too much, mostly vanilla.</p>",
+            "value": "Scalable CSS - Chris Coyier\n\n\n\nWise words:\n\n\n  Myself, I think some tools are a good idea. But as few as possible, and the easier they are to stop using, the better.\n\n\nTo paraphrase Michael Pollan:\n\nWrite CSS, not too much, mostly vanilla."
+          }
+        ],
+        "name": [
+          "Scalable CSS - Chris Coyier"
+        ],
+        "bookmark-of": [
+          "https://chriscoyier.net/2023/01/17/scalable-css/"
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "50.83250640"
+              ],
+              "longitude": [
+                "-0.11813793"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/links/19834"
+        ],
+        "published": [
+          "2023-01-17T16:34:04Z"
+        ],
+        "category": [
+          "css",
+          "scaling",
+          "frontend",
+          "development",
+          "tooling",
+          "maintenance",
+          "complexity"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
         "photo": [
           {
             "value": "https://adactio.com/images/uploaded/19833/small.jpg",
@@ -689,363 +1045,6 @@
         ],
         "syndication": [
           "https://adactio.medium.com/3926e4f51641"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "content": [
-          {
-            "html": "<p>Reading Who Fears Death by Nnedi Okorafor.</p>",
-            "value": "Reading Who Fears Death by Nnedi Okorafor."
-          }
-        ],
-        "name": [
-          "Reading Who Fears Death by Nnedi Okorafor."
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83247661"
-              ],
-              "longitude": [
-                "-0.11805980"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/notes/19820"
-        ],
-        "published": [
-          "2023-01-11T09:50:05Z"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "content": [
-          {
-            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://scribe.rip/the-power-of-indulging-your-weird-offbeat-obsessions-77c12f10e69f\">\nThe Power of Indulging Your Weird, Offbeat Obsessions\n</a>\n</h3>\n\n<blockquote>\n  <ol>\n  <li>It’s <em>enormously</em> valuable to simply follow your curiosity—and follow it for a <em>really</em> long time, even if it doesn’t seem to be leading anywhere in particular.</li>\n  <li>Surprisingly big breakthrough ideas come when you bridge two seemingly unconnected areas.</li>\n  </ol>\n</blockquote>",
-            "value": "The Power of Indulging Your Weird, Offbeat Obsessions\n\n\n\n\n  \n  It’s enormously valuable to simply follow your curiosity—and follow it for a really long time, even if it doesn’t seem to be leading anywhere in particular.\n  Surprisingly big breakthrough ideas come when you bridge two seemingly unconnected areas."
-          }
-        ],
-        "name": [
-          "The Power of Indulging Your Weird, Offbeat Obsessions"
-        ],
-        "bookmark-of": [
-          "https://scribe.rip/the-power-of-indulging-your-weird-offbeat-obsessions-77c12f10e69f"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83246927"
-              ],
-              "longitude": [
-                "-0.11811626"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/links/19818"
-        ],
-        "published": [
-          "2023-01-10T10:55:40Z"
-        ],
-        "category": [
-          "interdisciplinary",
-          "connections",
-          "innovation",
-          "ideas",
-          "curiosity"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "name": [
-          "Blood"
-        ],
-        "url": [
-          "https://adactio.com/journal/19817"
-        ],
-        "content": [
-          {
-            "html": "<p>I gave blood yesterday. It was my sixteenth donation.</p>\n\n<p>Yes, that’s a humblebrag. I feel like the gamification of blood donation is entirely reasonable. Levelling up in blood donation feels like the opposite of frequent flyer points. Instead of a growing sense of shame at how your accumulated activity is destroying the planet, you get increasing affirmation that you’re helping others.</p>\n\n<p>Besides, I don’t have Strava, or Peleton, or rings to close, or whatever. I don’t even do Wordle. So this is the only “streak” I can legitimately boast about.</p>\n\n<p>The more I give blood, the more I enjoy it.</p>\n\n<p>I know that sounds weird. Surely having a needle shoved in your arm isn’t meant to be enjoyable?</p>\n\n<p>It’s true that the first or second time you do it, it can feel intimidating, maybe even a little scary. I’m lucky that I don’t have much of an aversion to needles—much respect to those who do, but donate anyway.</p>\n\n<p>But once you’ve done it a few times, it becomes routine. Actually, it’s more than routine. It’s like a ritual.</p>\n\n<p>Not to get all spiritual here when we’re talking about an entirely biological process, but there is something special going on…</p>\n\n<p>You join together with other members of your community. Strangers. People from all walks of life, all of them gathered in one place to do the same thing: sacrifice a small portion of themselves for the greater good.</p>\n\n<p>It’s like a more egalitarian version of most religious narratives. Instead of a single saviour making a grand sacrifice, you get many individuals partaking in their own mini crucifixations. A little discomfort and that’s it. Multiply that by the number of people gathered together and you’ve got a magnificent network effect. Less dramatic than the hero’s journey, but far more effective.</p>\n\n<p>Usually in our society, if you want to do good, it’s tied to money. You inherit wealth or accumulate it through work and luck, and then you can choose to do good by redistributing some of that moolah. The more you’ve got, the more you can choose to give away. So the amount of potential good that can be done comes down to the whims of the people who have the most money.</p>\n\n<p>Giving blood doesn’t work like that. We’ve all got the same amount of blood.</p>\n\n<p>The memento mori that are scattered through the history of human culture are there to remind us that death is the great leveller. Prince or pauper, we all meet the same end. That also applies to our blood. Prince or pauper, we’re all equal when it comes to blood donation.</p>\n\n<p>That’s one of the reasons I like returning to give blood every few months. It restores my faith in humanity. I look around the room and see all these people that I don’t know, but we’re all there to complete our individual rituals. We all contribute the same amount. It’s a very personal choice, but there’s a communal feeling that comes from being with all these strangers who have made the same choice.</p>\n\n<p>Besides, it’s just a nice opportunity to step away from the day-to-day. Bring a good book to read during the waiting periods before and after donation. During the donation itself, you’ve got this time to think and reflect. It’s quite meditative, opening and closing your hand to help the flow. Almost trance-like.</p>\n\n<p>And then you get free biscuits.</p>\n\n<p>That isn’t quite the end though. A few days later you get a text message telling you where your blood will be used. I love that part. It feels like closing the loop.</p>\n\n<p>It’s funny that we often use the language of blood to describe supply chains: arterial networks carrying goods in and out of hubs; the pumping systems that keep society alive. When that text message arrives, it’s like a little bit of you is part of an infrastructure for helping others.</p>\n\n<p>You can find a donation opportunity near you on the <a href=\"https://www.blood.co.uk/\">blood.co.uk</a> website.</p>",
-            "value": "I gave blood yesterday. It was my sixteenth donation.\n\nYes, that’s a humblebrag. I feel like the gamification of blood donation is entirely reasonable. Levelling up in blood donation feels like the opposite of frequent flyer points. Instead of a growing sense of shame at how your accumulated activity is destroying the planet, you get increasing affirmation that you’re helping others.\n\nBesides, I don’t have Strava, or Peleton, or rings to close, or whatever. I don’t even do Wordle. So this is the only “streak” I can legitimately boast about.\n\nThe more I give blood, the more I enjoy it.\n\nI know that sounds weird. Surely having a needle shoved in your arm isn’t meant to be enjoyable?\n\nIt’s true that the first or second time you do it, it can feel intimidating, maybe even a little scary. I’m lucky that I don’t have much of an aversion to needles—much respect to those who do, but donate anyway.\n\nBut once you’ve done it a few times, it becomes routine. Actually, it’s more than routine. It’s like a ritual.\n\nNot to get all spiritual here when we’re talking about an entirely biological process, but there is something special going on…\n\nYou join together with other members of your community. Strangers. People from all walks of life, all of them gathered in one place to do the same thing: sacrifice a small portion of themselves for the greater good.\n\nIt’s like a more egalitarian version of most religious narratives. Instead of a single saviour making a grand sacrifice, you get many individuals partaking in their own mini crucifixations. A little discomfort and that’s it. Multiply that by the number of people gathered together and you’ve got a magnificent network effect. Less dramatic than the hero’s journey, but far more effective.\n\nUsually in our society, if you want to do good, it’s tied to money. You inherit wealth or accumulate it through work and luck, and then you can choose to do good by redistributing some of that moolah. The more you’ve got, the more you can choose to give away. So the amount of potential good that can be done comes down to the whims of the people who have the most money.\n\nGiving blood doesn’t work like that. We’ve all got the same amount of blood.\n\nThe memento mori that are scattered through the history of human culture are there to remind us that death is the great leveller. Prince or pauper, we all meet the same end. That also applies to our blood. Prince or pauper, we’re all equal when it comes to blood donation.\n\nThat’s one of the reasons I like returning to give blood every few months. It restores my faith in humanity. I look around the room and see all these people that I don’t know, but we’re all there to complete our individual rituals. We all contribute the same amount. It’s a very personal choice, but there’s a communal feeling that comes from being with all these strangers who have made the same choice.\n\nBesides, it’s just a nice opportunity to step away from the day-to-day. Bring a good book to read during the waiting periods before and after donation. During the donation itself, you’ve got this time to think and reflect. It’s quite meditative, opening and closing your hand to help the flow. Almost trance-like.\n\nAnd then you get free biscuits.\n\nThat isn’t quite the end though. A few days later you get a text message telling you where your blood will be used. I love that part. It feels like closing the loop.\n\nIt’s funny that we often use the language of blood to describe supply chains: arterial networks carrying goods in and out of hubs; the pumping systems that keep society alive. When that text message arrives, it’s like a little bit of you is part of an infrastructure for helping others.\n\nYou can find a donation opportunity near you on the blood.co.uk website."
-          }
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83246568"
-              ],
-              "longitude": [
-                "-0.11807544"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "published": [
-          "2023-01-10T10:47:44Z"
-        ],
-        "category": [
-          "blood",
-          "donation",
-          "society",
-          "ritual"
-        ],
-        "syndication": [
-          "https://adactio.medium.com/c646b71a3a72"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "content": [
-          {
-            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://matthiasott.com/notes/the-year-of-the-personal-website\">\nThe Year of the Personal Website · Matthias Ott – User Experience Designer\n</a>\n</h3>\n\n<blockquote>\n  <p>Especially if you are a designer, an artist, a photographer, a writer, a blogger, a creator of any kind, owning your work is as important as ever. Social media platforms might be great for distributing your content and creating a network of like-minded people around you. But they will always be ephemeral, transient, and impermanent – not the best place to preserve your thoughts, words, and brushstrokes.</p>\n</blockquote>",
-            "value": "The Year of the Personal Website · Matthias Ott – User Experience Designer\n\n\n\n\n  Especially if you are a designer, an artist, a photographer, a writer, a blogger, a creator of any kind, owning your work is as important as ever. Social media platforms might be great for distributing your content and creating a network of like-minded people around you. But they will always be ephemeral, transient, and impermanent – not the best place to preserve your thoughts, words, and brushstrokes."
-          }
-        ],
-        "name": [
-          "The Year of the Personal Website · Matthias Ott – User Experience Designer"
-        ],
-        "bookmark-of": [
-          "https://matthiasott.com/notes/the-year-of-the-personal-website"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83247411"
-              ],
-              "longitude": [
-                "-0.11814577"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/links/19816"
-        ],
-        "published": [
-          "2023-01-09T21:38:31Z"
-        ],
-        "category": [
-          "indieweb",
-          "creators",
-          "personal",
-          "publishing",
-          "sharing",
-          "ownership",
-          "writing",
-          "sharing",
-          "blogging"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "content": [
-          {
-            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://www.linkedin.com/posts/clearleft_greatlengths-activity-7017150628242022400-0SqE/\">\nA post by Clearleft on LinkedIn\n</a>\n</h3>\n\n<p>This is design engineering.</p>",
-            "value": "A post by Clearleft on LinkedIn\n\n\n\nThis is design engineering."
-          }
-        ],
-        "name": [
-          "A post by Clearleft on LinkedIn"
-        ],
-        "bookmark-of": [
-          "https://www.linkedin.com/posts/clearleft_greatlengths-activity-7017150628242022400-0SqE/"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83248012"
-              ],
-              "longitude": [
-                "-0.11814847"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/links/19815"
-        ],
-        "published": [
-          "2023-01-09T08:50:02Z"
-        ],
-        "category": [
-          "clearleft",
-          "2022",
-          "studio",
-          "party",
-          "game",
-          "fun"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "photo": [
-          {
-            "value": "https://adactio.com/images/uploaded/19814-1/small.jpg",
-            "srcset": {
-              "320w": "https://adactio.com/images/uploaded/19814-1/small.jpg",
-              "480w": "https://adactio.com/images/uploaded/19814-1/medium.jpg",
-              "800w": "https://adactio.com/images/uploaded/19814-1/large.jpg"
-            },
-            "alt": "Picture 1"
-          },
-          {
-            "value": "https://adactio.com/images/uploaded/19814-2/small.jpg",
-            "srcset": {
-              "320w": "https://adactio.com/images/uploaded/19814-2/small.jpg",
-              "480w": "https://adactio.com/images/uploaded/19814-2/medium.jpg",
-              "800w": "https://adactio.com/images/uploaded/19814-2/large.jpg"
-            },
-            "alt": "Picture 2"
-          },
-          {
-            "value": "https://adactio.com/images/uploaded/19814-3/small.jpg",
-            "srcset": {
-              "320w": "https://adactio.com/images/uploaded/19814-3/small.jpg",
-              "480w": "https://adactio.com/images/uploaded/19814-3/medium.jpg",
-              "800w": "https://adactio.com/images/uploaded/19814-3/large.jpg"
-            },
-            "alt": "Picture 3"
-          }
-        ],
-        "content": [
-          {
-            "html": "<p>Checked in at Cat Inn. Anniversary Sunday lunch — with Jessica</p>",
-            "value": "Checked in at Cat Inn. Anniversary Sunday lunch — with Jessica"
-          }
-        ],
-        "name": [
-          "Checked in at Cat Inn. Anniversary Sunday lunch — with Jessica"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "51.07670170"
-              ],
-              "longitude": [
-                "-0.05544662"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/notes/19814"
-        ],
-        "published": [
-          "2023-01-08T14:13:47Z"
-        ],
-        "syndication": [
-          "https://www.swarmapp.com/user/112073/checkin/63bacf88dbb40b760a0093ca"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "photo": [
-          {
-            "value": "https://adactio.com/images/uploaded/19812/small.jpg",
-            "srcset": {
-              "320w": "https://adactio.com/images/uploaded/19812/small.jpg",
-              "480w": "https://adactio.com/images/uploaded/19812/medium.jpg",
-              "800w": "https://adactio.com/images/uploaded/19812/large.jpg"
-            },
-            "alt": "Two fiddlers, Frances and Maryanne, eyes closed in concentration as they play together in a cosy living room."
-          }
-        ],
-        "content": [
-          {
-            "html": "<p>Had a lovely afternoon playing jigs and reels.</p>",
-            "value": "Had a lovely afternoon playing jigs and reels."
-          }
-        ],
-        "name": [
-          "Had a lovely afternoon playing jigs and reels."
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.82929167"
-              ],
-              "longitude": [
-                "-0.11849167"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/notes/19812"
-        ],
-        "published": [
-          "2023-01-06T17:00:13Z"
-        ],
-        "syndication": [
-          "https://mastodon.social/@adactio/109643328463143696",
-          "https://www.instagram.com/p/CnFNkcTNIa0/"
         ]
       }
     },
@@ -1790,6 +1789,13 @@
       "https://adactio.com/includes/css/print.css"
     ],
     "bookmark": [
+      "https://adactio.com/links/19840",
+      "https://adactio.com/journal/19839",
+      "https://adactio.com/notes/19838",
+      "https://adactio.com/links/19837",
+      "https://adactio.com/links/19836",
+      "https://adactio.com/links/19835",
+      "https://adactio.com/links/19834",
       "https://adactio.com/notes/19833",
       "https://adactio.com/links/19832",
       "https://adactio.com/journal/19831",
@@ -1802,43 +1808,49 @@
       "https://adactio.com/notes/19824",
       "https://adactio.com/links/19823",
       "https://adactio.com/links/19822",
-      "https://adactio.com/journal/19821",
-      "https://adactio.com/notes/19820",
-      "https://adactio.com/links/19818",
-      "https://adactio.com/journal/19817",
-      "https://adactio.com/links/19816",
-      "https://adactio.com/links/19815",
-      "https://adactio.com/notes/19814",
-      "https://adactio.com/notes/19812"
-    ],
-    "syndication": [
-      "https://www.swarmapp.com/user/112073/checkin/63c5ad5898e2971e65091cd6",
-      "https://adactio.medium.com/108bcfbc6cf7",
-      "https://www.swarmapp.com/user/112073/checkin/63c4138e571f3a5bd4dfa904",
-      "https://www.swarmapp.com/user/112073/checkin/63c4016fa56356437d6eb0f9",
-      "https://www.swarmapp.com/user/112073/checkin/63c3f263cbd8295f76cc6d19",
-      "https://www.instagram.com/p/CnZEyZZt0wn/",
-      "https://www.swarmapp.com/user/112073/checkin/63c19408a578cb0e99cd8d50",
-      "https://mastodon.social/@adactio/109681110344670611",
-      "https://www.instagram.com/p/CnSdnUktVjV/",
-      "https://www.swarmapp.com/user/112073/checkin/63bf1c11170e437fcaa23ddd",
-      "https://adactio.medium.com/3926e4f51641",
-      "https://adactio.medium.com/c646b71a3a72",
-      "https://www.swarmapp.com/user/112073/checkin/63bacf88dbb40b760a0093ca",
-      "https://mastodon.social/@adactio/109643328463143696",
-      "https://www.instagram.com/p/CnFNkcTNIa0/"
+      "https://adactio.com/journal/19821"
     ],
     "tag": [
+      "https://adactio.com/tags/frontend",
+      "https://adactio.com/tags/development",
+      "https://adactio.com/tags/process",
+      "https://adactio.com/tags/html",
+      "https://adactio.com/tags/css",
+      "https://adactio.com/tags/javascript",
+      "https://adactio.com/tags/performance",
+      "https://adactio.com/tags/advice",
+      "https://adactio.com/tags/frameworks",
+      "https://adactio.com/tags/libraries",
+      "https://adactio.com/tags/tools",
+      "https://adactio.com/tags/tooling",
+      "https://adactio.com/tags/toolchains",
+      "https://adactio.com/tags/build",
+      "https://adactio.com/tags/processes",
+      "https://adactio.com/tags/pipelines",
+      "https://adactio.com/tags/fullstack",
+      "https://adactio.com/tags/work",
+      "https://adactio.com/tags/design",
+      "https://adactio.com/tags/systems",
+      "https://adactio.com/tags/components",
+      "https://adactio.com/tags/patterns",
+      "https://adactio.com/tags/language",
+      "https://adactio.com/tags/ai",
+      "https://adactio.com/tags/animation",
+      "https://adactio.com/tags/accessibility",
+      "https://adactio.com/tags/resilience",
+      "https://adactio.com/tags/progressive",
+      "https://adactio.com/tags/enhancement",
+      "https://adactio.com/tags/tailwind",
+      "https://adactio.com/tags/maintenance",
+      "https://adactio.com/tags/complexity",
+      "https://adactio.com/tags/dependencies",
+      "https://adactio.com/tags/scaling",
       "https://adactio.com/tags/line-height",
       "https://adactio.com/tags/leading",
-      "https://adactio.com/tags/css",
       "https://adactio.com/tags/styling",
       "https://adactio.com/tags/ratios",
       "https://adactio.com/tags/calculations",
       "https://adactio.com/tags/declarative",
-      "https://adactio.com/tags/design",
-      "https://adactio.com/tags/frontend",
-      "https://adactio.com/tags/development",
       "https://adactio.com/tags/flexibility",
       "https://adactio.com/tags/mars",
       "https://adactio.com/tags/colonisation",
@@ -1867,24 +1879,22 @@
       "https://adactio.com/tags/web",
       "https://adactio.com/tags/responsive",
       "https://adactio.com/tags/typography",
-      "https://adactio.com/tags/layout",
-      "https://adactio.com/tags/interdisciplinary",
-      "https://adactio.com/tags/connections",
-      "https://adactio.com/tags/innovation",
-      "https://adactio.com/tags/ideas",
-      "https://adactio.com/tags/curiosity",
-      "https://adactio.com/tags/blood",
-      "https://adactio.com/tags/donation",
-      "https://adactio.com/tags/society",
-      "https://adactio.com/tags/ritual",
-      "https://adactio.com/tags/creators",
-      "https://adactio.com/tags/ownership",
-      "https://adactio.com/tags/clearleft",
-      "https://adactio.com/tags/2022",
-      "https://adactio.com/tags/studio",
-      "https://adactio.com/tags/party",
-      "https://adactio.com/tags/game",
-      "https://adactio.com/tags/fun"
+      "https://adactio.com/tags/layout"
+    ],
+    "syndication": [
+      "https://adactio.medium.com/a0ff1519d602",
+      "https://mastodon.social/@adactio/109705917952294506",
+      "https://www.swarmapp.com/user/112073/checkin/63c5ad5898e2971e65091cd6",
+      "https://adactio.medium.com/108bcfbc6cf7",
+      "https://www.swarmapp.com/user/112073/checkin/63c4138e571f3a5bd4dfa904",
+      "https://www.swarmapp.com/user/112073/checkin/63c4016fa56356437d6eb0f9",
+      "https://www.swarmapp.com/user/112073/checkin/63c3f263cbd8295f76cc6d19",
+      "https://www.instagram.com/p/CnZEyZZt0wn/",
+      "https://www.swarmapp.com/user/112073/checkin/63c19408a578cb0e99cd8d50",
+      "https://mastodon.social/@adactio/109681110344670611",
+      "https://www.instagram.com/p/CnSdnUktVjV/",
+      "https://www.swarmapp.com/user/112073/checkin/63bf1c11170e437fcaa23ddd",
+      "https://adactio.medium.com/3926e4f51641"
     ],
     "next": [
       "https://adactio.com/?start=20"
@@ -2275,6 +2285,264 @@
       ],
       "text": "music"
     },
+    "https://adactio.com/links/19840": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n7:20pm\n\n"
+    },
+    "https://adactio.com/tags/frontend": {
+      "rels": [
+        "tag"
+      ],
+      "text": "frontend"
+    },
+    "https://adactio.com/tags/development": {
+      "rels": [
+        "tag"
+      ],
+      "text": "development"
+    },
+    "https://adactio.com/tags/process": {
+      "rels": [
+        "tag"
+      ],
+      "text": "process"
+    },
+    "https://adactio.com/tags/html": {
+      "rels": [
+        "tag"
+      ],
+      "text": "html"
+    },
+    "https://adactio.com/tags/css": {
+      "rels": [
+        "tag"
+      ],
+      "text": "css"
+    },
+    "https://adactio.com/tags/javascript": {
+      "rels": [
+        "tag"
+      ],
+      "text": "javascript"
+    },
+    "https://adactio.com/tags/performance": {
+      "rels": [
+        "tag"
+      ],
+      "text": "performance"
+    },
+    "https://adactio.com/tags/advice": {
+      "rels": [
+        "tag"
+      ],
+      "text": "advice"
+    },
+    "https://adactio.com/tags/frameworks": {
+      "rels": [
+        "tag"
+      ],
+      "text": "frameworks"
+    },
+    "https://adactio.com/tags/libraries": {
+      "rels": [
+        "tag"
+      ],
+      "text": "libraries"
+    },
+    "https://adactio.com/journal/19839": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n7:02pm\n\n"
+    },
+    "https://adactio.com/tags/tools": {
+      "rels": [
+        "tag"
+      ],
+      "text": "tools"
+    },
+    "https://adactio.com/tags/tooling": {
+      "rels": [
+        "tag"
+      ],
+      "text": "tooling"
+    },
+    "https://adactio.com/tags/toolchains": {
+      "rels": [
+        "tag"
+      ],
+      "text": "toolchains"
+    },
+    "https://adactio.com/tags/build": {
+      "rels": [
+        "tag"
+      ],
+      "text": "build"
+    },
+    "https://adactio.com/tags/processes": {
+      "rels": [
+        "tag"
+      ],
+      "text": "processes"
+    },
+    "https://adactio.com/tags/pipelines": {
+      "rels": [
+        "tag"
+      ],
+      "text": "pipelines"
+    },
+    "https://adactio.com/tags/fullstack": {
+      "rels": [
+        "tag"
+      ],
+      "text": "fullstack"
+    },
+    "https://adactio.com/tags/work": {
+      "rels": [
+        "tag"
+      ],
+      "text": "work"
+    },
+    "https://adactio.medium.com/a0ff1519d602": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "Medium"
+    },
+    "https://adactio.com/notes/19838": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n6:17pm\n\n"
+    },
+    "https://mastodon.social/@adactio/109705917952294506": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "Mastodon"
+    },
+    "https://adactio.com/links/19837": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n5:36pm\n\n"
+    },
+    "https://adactio.com/tags/design": {
+      "rels": [
+        "tag"
+      ],
+      "text": "design"
+    },
+    "https://adactio.com/tags/systems": {
+      "rels": [
+        "tag"
+      ],
+      "text": "systems"
+    },
+    "https://adactio.com/tags/components": {
+      "rels": [
+        "tag"
+      ],
+      "text": "components"
+    },
+    "https://adactio.com/tags/patterns": {
+      "rels": [
+        "tag"
+      ],
+      "text": "patterns"
+    },
+    "https://adactio.com/tags/language": {
+      "rels": [
+        "tag"
+      ],
+      "text": "language"
+    },
+    "https://adactio.com/tags/ai": {
+      "rels": [
+        "tag"
+      ],
+      "text": "ai"
+    },
+    "https://adactio.com/links/19836": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n5:06pm\n\n"
+    },
+    "https://adactio.com/tags/animation": {
+      "rels": [
+        "tag"
+      ],
+      "text": "animation"
+    },
+    "https://adactio.com/tags/accessibility": {
+      "rels": [
+        "tag"
+      ],
+      "text": "accessibility"
+    },
+    "https://adactio.com/tags/resilience": {
+      "rels": [
+        "tag"
+      ],
+      "text": "resilience"
+    },
+    "https://adactio.com/tags/progressive": {
+      "rels": [
+        "tag"
+      ],
+      "text": "progressive"
+    },
+    "https://adactio.com/tags/enhancement": {
+      "rels": [
+        "tag"
+      ],
+      "text": "enhancement"
+    },
+    "https://adactio.com/links/19835": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n4:51pm\n\n"
+    },
+    "https://adactio.com/tags/tailwind": {
+      "rels": [
+        "tag"
+      ],
+      "text": "tailwind"
+    },
+    "https://adactio.com/tags/maintenance": {
+      "rels": [
+        "tag"
+      ],
+      "text": "maintenance"
+    },
+    "https://adactio.com/tags/complexity": {
+      "rels": [
+        "tag"
+      ],
+      "text": "complexity"
+    },
+    "https://adactio.com/tags/dependencies": {
+      "rels": [
+        "tag"
+      ],
+      "text": "dependencies"
+    },
+    "https://adactio.com/links/19834": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n4:34pm\n\n"
+    },
+    "https://adactio.com/tags/scaling": {
+      "rels": [
+        "tag"
+      ],
+      "text": "scaling"
+    },
     "https://adactio.com/notes/19833": {
       "rels": [
         "bookmark"
@@ -2305,12 +2573,6 @@
       ],
       "text": "leading"
     },
-    "https://adactio.com/tags/css": {
-      "rels": [
-        "tag"
-      ],
-      "text": "css"
-    },
     "https://adactio.com/tags/styling": {
       "rels": [
         "tag"
@@ -2334,24 +2596,6 @@
         "tag"
       ],
       "text": "declarative"
-    },
-    "https://adactio.com/tags/design": {
-      "rels": [
-        "tag"
-      ],
-      "text": "design"
-    },
-    "https://adactio.com/tags/frontend": {
-      "rels": [
-        "tag"
-      ],
-      "text": "frontend"
-    },
-    "https://adactio.com/tags/development": {
-      "rels": [
-        "tag"
-      ],
-      "text": "development"
     },
     "https://adactio.com/tags/flexibility": {
       "rels": [
@@ -2652,174 +2896,6 @@
         "syndication"
       ],
       "text": "Medium"
-    },
-    "https://adactio.com/notes/19820": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n9:50am\n\n"
-    },
-    "https://adactio.com/links/19818": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n10:55am\n\n"
-    },
-    "https://adactio.com/tags/interdisciplinary": {
-      "rels": [
-        "tag"
-      ],
-      "text": "interdisciplinary"
-    },
-    "https://adactio.com/tags/connections": {
-      "rels": [
-        "tag"
-      ],
-      "text": "connections"
-    },
-    "https://adactio.com/tags/innovation": {
-      "rels": [
-        "tag"
-      ],
-      "text": "innovation"
-    },
-    "https://adactio.com/tags/ideas": {
-      "rels": [
-        "tag"
-      ],
-      "text": "ideas"
-    },
-    "https://adactio.com/tags/curiosity": {
-      "rels": [
-        "tag"
-      ],
-      "text": "curiosity"
-    },
-    "https://adactio.com/journal/19817": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n10:47am\n\n"
-    },
-    "https://adactio.com/tags/blood": {
-      "rels": [
-        "tag"
-      ],
-      "text": "blood"
-    },
-    "https://adactio.com/tags/donation": {
-      "rels": [
-        "tag"
-      ],
-      "text": "donation"
-    },
-    "https://adactio.com/tags/society": {
-      "rels": [
-        "tag"
-      ],
-      "text": "society"
-    },
-    "https://adactio.com/tags/ritual": {
-      "rels": [
-        "tag"
-      ],
-      "text": "ritual"
-    },
-    "https://adactio.medium.com/c646b71a3a72": {
-      "rels": [
-        "syndication"
-      ],
-      "text": "Medium"
-    },
-    "https://adactio.com/links/19816": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n9:38pm\n\n"
-    },
-    "https://adactio.com/tags/creators": {
-      "rels": [
-        "tag"
-      ],
-      "text": "creators"
-    },
-    "https://adactio.com/tags/ownership": {
-      "rels": [
-        "tag"
-      ],
-      "text": "ownership"
-    },
-    "https://adactio.com/links/19815": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n8:50am\n\n"
-    },
-    "https://adactio.com/tags/clearleft": {
-      "rels": [
-        "tag"
-      ],
-      "text": "clearleft"
-    },
-    "https://adactio.com/tags/2022": {
-      "rels": [
-        "tag"
-      ],
-      "text": "2022"
-    },
-    "https://adactio.com/tags/studio": {
-      "rels": [
-        "tag"
-      ],
-      "text": "studio"
-    },
-    "https://adactio.com/tags/party": {
-      "rels": [
-        "tag"
-      ],
-      "text": "party"
-    },
-    "https://adactio.com/tags/game": {
-      "rels": [
-        "tag"
-      ],
-      "text": "game"
-    },
-    "https://adactio.com/tags/fun": {
-      "rels": [
-        "tag"
-      ],
-      "text": "fun"
-    },
-    "https://adactio.com/notes/19814": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n2:13pm\n\n"
-    },
-    "https://www.swarmapp.com/user/112073/checkin/63bacf88dbb40b760a0093ca": {
-      "rels": [
-        "syndication"
-      ],
-      "text": "Swarm"
-    },
-    "https://adactio.com/notes/19812": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n5:00pm\n\n"
-    },
-    "https://mastodon.social/@adactio/109643328463143696": {
-      "rels": [
-        "syndication"
-      ],
-      "text": "Mastodon"
-    },
-    "https://www.instagram.com/p/CnFNkcTNIa0/": {
-      "rels": [
-        "syndication"
-      ],
-      "text": "Instagram"
     },
     "https://adactio.com/?start=20": {
       "rels": [

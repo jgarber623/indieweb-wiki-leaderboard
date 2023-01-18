@@ -6,6 +6,134 @@
       ],
       "properties": {
         "name": [
+          "InstantCommons images weren't loading"
+        ],
+        "url": [
+          "https://samwilson.id.au/P26561"
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "url": [
+                "Sam Wilson"
+              ],
+              "name": [
+                "Sam Wilson"
+              ]
+            },
+            "value": "Sam Wilson"
+          }
+        ],
+        "published": [
+          "2023-01-18T04:20:28Z"
+        ],
+        "content": [
+          {
+            "html": "<p>I added <a href=\"https://archives.org.au/Margaret_by_Susan_Watkins_7_Jan_1944\">a newly-scanned photo</a> to ArchivesWiki yesterday, and none of its images were loading (via InstantCommons). I think I was probably a bit tired, because I immediately assumed that I’m a crap sysadmin who has no business trying to run a wiki.</p>\n<p>Coming back to it this morning, it turns out that it was some transient issue with retrieving info from Commons, and it’s now resolved and everything’s working normally again. Like it has for a decade or so. I’ll guess I’ll put off Giving Up till tomorrow.</p>",
+            "value": "I added a newly-scanned photo to ArchivesWiki yesterday, and none of its images were loading (via InstantCommons). I think I was probably a bit tired, because I immediately assumed that I’m a crap sysadmin who has no business trying to run a wiki.\nComing back to it this morning, it turns out that it was some transient issue with retrieving info from Commons, and it’s now resolved and everything’s working normally again. Like it has for a decade or so. I’ll guess I’ll put off Giving Up till tomorrow."
+          }
+        ],
+        "category": [
+          "Wikimedia",
+          "Wikimedia Commons",
+          "ArchivesWiki"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Using {{SITENAME}} in messages"
+        ],
+        "url": [
+          "https://samwilson.id.au/P26560"
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "url": [
+                "Sam Wilson"
+              ],
+              "name": [
+                "Sam Wilson"
+              ]
+            },
+            "value": "Sam Wilson"
+          }
+        ],
+        "published": [
+          "2023-01-17T23:32:21Z"
+        ],
+        "content": [
+          {
+            "html": "<p>In two places yesterday I noticed MediaWiki wikis with slightly odd phrasing relating to their site names:</p>\n<ul>\n<li>under the login form a button that says “Join Join the Fediverse” (message <code>userlogin-joinproject</code>) which has a repeated word; and</li>\n<li>in the sidebar of Vector-2022 a box with “On this Example Inc. the language links are at the top of the page across from the article title.” (message <code>vector-language-redirect-to-top</code>) which makes the assumption that there are more wikis with this name (which is true for wiki-per-language setups such as Wikipedia).</li>\n</ul>\n<p>There are <a href=\"https://codesearch.wmcloud.org/search/?q=%5C%7B%5C%7BSITENAME%5C%7D%5C%7D&amp;i=nope&amp;files=en.json&amp;excludeFiles=&amp;repos=\">many other uses</a> of the site name in messages, and of course any wiki with a site name that makes these messages sound funny should probably be overriding the messages locally (as <a href=\"https://wikimedia.org.au/wiki/MediaWiki:Userlogin-joinproject\">we did</a> on the WMAU wiki where ‘Join Wikimedia Australia’ has a different meaning to ‘Create an account’).</p>",
+            "value": "In two places yesterday I noticed MediaWiki wikis with slightly odd phrasing relating to their site names:\n\nunder the login form a button that says “Join Join the Fediverse” (message userlogin-joinproject) which has a repeated word; and\nin the sidebar of Vector-2022 a box with “On this Example Inc. the language links are at the top of the page across from the article title.” (message vector-language-redirect-to-top) which makes the assumption that there are more wikis with this name (which is true for wiki-per-language setups such as Wikipedia).\n\nThere are many other uses of the site name in messages, and of course any wiki with a site name that makes these messages sound funny should probably be overriding the messages locally (as we did on the WMAU wiki where ‘Join Wikimedia Australia’ has a different meaning to ‘Create an account’)."
+          }
+        ],
+        "category": [
+          "Wikimedia",
+          "MediaWiki",
+          "internationalization and localization"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Next steps with Twyne"
+        ],
+        "url": [
+          "https://samwilson.id.au/P26559"
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "url": [
+                "Sam Wilson"
+              ],
+              "name": [
+                "Sam Wilson"
+              ]
+            },
+            "value": "Sam Wilson"
+          }
+        ],
+        "published": [
+          "2023-01-17T10:41:11Z"
+        ],
+        "content": [
+          {
+            "html": "<p>I’m trying to figure out what I want next with my website: Webmentions, or some sort of feed reader. Probably I should focus on improving the visual differentiation of authors better. Things all look a bit same at the moment. Also need to do more work on untitled posts, to perhaps completely hide the post ID.</p>\n<p>We had a chat at a meeting somewhere recently about how to mark up authors, preferably with some way of adding the Wikidata ID or ORCID for each, so that they’re unambiguous. I’ve not done it yet, but it looks like it’ll be possible. I think a similar thing can be done with tags. Then things like Citoid and web2Cit can possibly extract better info (not that they’ll be citing <em>my</em> site).</p>",
+            "value": "I’m trying to figure out what I want next with my website: Webmentions, or some sort of feed reader. Probably I should focus on improving the visual differentiation of authors better. Things all look a bit same at the moment. Also need to do more work on untitled posts, to perhaps completely hide the post ID.\nWe had a chat at a meeting somewhere recently about how to mark up authors, preferably with some way of adding the Wikidata ID or ORCID for each, so that they’re unambiguous. I’ve not done it yet, but it looks like it’ll be possible. I think a similar thing can be done with tags. Then things like Citoid and web2Cit can possibly extract better info (not that they’ll be citing my site)."
+          }
+        ],
+        "category": [
+          "Twyne",
+          "metadata"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
           "P26558"
         ],
         "url": [
@@ -282,123 +410,6 @@
             "html": "<p>There does seem to be a massive pull (a feeling of it being a good idea) to post to places on the internet where one can get that feeling of being appreciated when someone clicks ‘like’. Those places are also where not getting likes makes you feel crap. At the moment, I prefer being here in the ignored bit where I have zero idea of who looks at what, and it’s just a sort of public jotting down of random words and pictures. Much more relaxing. Also means I can stuff around with building the software, which of course is probably the main point for me!</p>",
             "value": "There does seem to be a massive pull (a feeling of it being a good idea) to post to places on the internet where one can get that feeling of being appreciated when someone clicks ‘like’. Those places are also where not getting likes makes you feel crap. At the moment, I prefer being here in the ignored bit where I have zero idea of who looks at what, and it’s just a sort of public jotting down of random words and pictures. Much more relaxing. Also means I can stuff around with building the software, which of course is probably the main point for me!"
           }
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "name": [
-          "P26550"
-        ],
-        "url": [
-          "https://samwilson.id.au/P26550"
-        ],
-        "author": [
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "url": [
-                "Sam Wilson"
-              ],
-              "name": [
-                "Sam Wilson"
-              ]
-            },
-            "value": "Sam Wilson"
-          }
-        ],
-        "published": [
-          "2023-01-15T00:59:28Z"
-        ],
-        "content": [
-          {
-            "html": "<p>It’s strangely cool for January, this Sunday morning. My brain isn’t really awake yet. Not that too much whiskey was tasted yesterday; just the right amount.</p>",
-            "value": "It’s strangely cool for January, this Sunday morning. My brain isn’t really awake yet. Not that too much whiskey was tasted yesterday; just the right amount."
-          }
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "name": [
-          "P26549"
-        ],
-        "url": [
-          "https://samwilson.id.au/P26549"
-        ],
-        "author": [
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "url": [
-                "Sam Wilson"
-              ],
-              "name": [
-                "Sam Wilson"
-              ]
-            },
-            "value": "Sam Wilson"
-          }
-        ],
-        "published": [
-          "2023-01-13T13:25:34Z"
-        ],
-        "content": [
-          {
-            "html": "<p>Well, it’s half nine on a Friday night, so I might as well keep scanning I think. I’m getting a few more things uploaded to Commons, and trying not to get too drawn into reading about the 1930s aviation stuff.</p>",
-            "value": "Well, it’s half nine on a Friday night, so I might as well keep scanning I think. I’m getting a few more things uploaded to Commons, and trying not to get too drawn into reading about the 1930s aviation stuff."
-          }
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "name": [
-          "P26547"
-        ],
-        "url": [
-          "https://samwilson.id.au/P26547"
-        ],
-        "author": [
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "url": [
-                "Sam Wilson"
-              ],
-              "name": [
-                "Sam Wilson"
-              ]
-            },
-            "value": "Sam Wilson"
-          }
-        ],
-        "published": [
-          "2023-01-10T10:21:36Z"
-        ],
-        "content": [
-          {
-            "html": "<p>I’m trying to add a plain-text export option to Twyne (of varying sorts: LaTeX and Markdown to start with). I couldn’t figure out why my code wasn’t working.</p>\n<p>Turns out there is no mime type called <code>text/pain</code>.</p>",
-            "value": "I’m trying to add a plain-text export option to Twyne (of varying sorts: LaTeX and Markdown to start with). I couldn’t figure out why my code wasn’t working.\nTurns out there is no mime type called text/pain."
-          }
-        ],
-        "category": [
-          "Twyne"
         ]
       }
     },

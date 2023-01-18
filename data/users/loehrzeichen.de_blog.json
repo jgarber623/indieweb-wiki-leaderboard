@@ -1,9 +1,6 @@
 {
   "items": [],
   "rels": {
-    "canonical": [
-      "https://loehrzeichen.de/blog/"
-    ],
     "profile": [
       "https://gmpg.org/xfn/11"
     ],
@@ -12,7 +9,10 @@
     ],
     "alternate": [
       "https://loehrzeichen.de/feed/",
-      "https://loehrzeichen.de/comments/feed/"
+      "https://loehrzeichen.de/comments/feed/",
+      "https://loehrzeichen.de/wp-json/wp/v2/pages/24",
+      "https://loehrzeichen.de/wp-json/oembed/1.0/embed?url=https%3A%2F%2Floehrzeichen.de%2Fblog%2F",
+      "https://loehrzeichen.de/wp-json/oembed/1.0/embed?url=https%3A%2F%2Floehrzeichen.de%2Fblog%2F&format=xml"
     ],
     "stylesheet": [
       "http://loehrzeichen.de/wp-content/plugins/sem-external-links/sem-external-links.css?ver=20090903",
@@ -39,6 +39,12 @@
     "wlwmanifest": [
       "http://loehrzeichen.de/wp-includes/wlwmanifest.xml"
     ],
+    "canonical": [
+      "https://loehrzeichen.de/blog/"
+    ],
+    "shortlink": [
+      "https://loehrzeichen.de/?p=24"
+    ],
     "icon": [
       "https://loehrzeichen.de/wp-content/uploads/2022/01/cropped-kopprevers-32x32.jpg",
       "https://loehrzeichen.de/wp-content/uploads/2022/01/cropped-kopprevers-192x192.jpg"
@@ -51,18 +57,6 @@
     ],
     "author": [
       "https://loehrzeichen.de/blog/author/christoph/"
-    ],
-    "category": [
-      "https://loehrzeichen.de/blog/category/gebloggtes/",
-      "https://loehrzeichen.de/blog/category/hinweise/",
-      "https://loehrzeichen.de/blog/category/ineigenersache/",
-      "https://loehrzeichen.de/blog/category/gedrucktes/"
-    ],
-    "tag": [
-      "https://loehrzeichen.de/blog/category/gebloggtes/",
-      "https://loehrzeichen.de/blog/category/hinweise/",
-      "https://loehrzeichen.de/blog/category/ineigenersache/",
-      "https://loehrzeichen.de/blog/category/gedrucktes/"
     ],
     "me": [
       "https://bonn.social/@Loehrzeichen"
@@ -84,11 +78,6 @@
     ]
   },
   "rel-urls": {
-    "https://loehrzeichen.de/blog/": {
-      "rels": [
-        "canonical"
-      ]
-    },
     "https://gmpg.org/xfn/11": {
       "rels": [
         "profile"
@@ -209,6 +198,12 @@
         "https://api.w.org/"
       ]
     },
+    "https://loehrzeichen.de/wp-json/wp/v2/pages/24": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/json"
+    },
     "https://loehrzeichen.de/xmlrpc.php?rsd": {
       "rels": [
         "EditURI"
@@ -221,6 +216,28 @@
         "wlwmanifest"
       ],
       "type": "application/wlwmanifest+xml"
+    },
+    "https://loehrzeichen.de/blog/": {
+      "rels": [
+        "canonical"
+      ]
+    },
+    "https://loehrzeichen.de/?p=24": {
+      "rels": [
+        "shortlink"
+      ]
+    },
+    "https://loehrzeichen.de/wp-json/oembed/1.0/embed?url=https%3A%2F%2Floehrzeichen.de%2Fblog%2F": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/json+oembed"
+    },
+    "https://loehrzeichen.de/wp-json/oembed/1.0/embed?url=https%3A%2F%2Floehrzeichen.de%2Fblog%2F&format=xml": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "text/xml+oembed"
     },
     "https://loehrzeichen.de/wp-content/uploads/2022/01/cropped-kopprevers-32x32.jpg": {
       "rels": [
@@ -247,34 +264,6 @@
         "author"
       ],
       "text": "\n\t\t\t\t\t\n\t\t\t\t\t\tChristoph\n\t\t\t\t\t\n\t\t\t\t"
-    },
-    "https://loehrzeichen.de/blog/category/gebloggtes/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "Gebloggtes"
-    },
-    "https://loehrzeichen.de/blog/category/hinweise/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "Hinweise"
-    },
-    "https://loehrzeichen.de/blog/category/ineigenersache/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "In eigener Sache"
-    },
-    "https://loehrzeichen.de/blog/category/gedrucktes/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "Gedrucktes"
     },
     "https://bonn.social/@Loehrzeichen": {
       "rels": [

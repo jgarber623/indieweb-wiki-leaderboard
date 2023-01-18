@@ -1,38 +1,122 @@
 {
   "items": [],
   "rels": {
+    "alternate": [
+      "https://encounter.sbs/feed/",
+      "https://encounter.sbs/comments/feed/",
+      "https://encounter.sbs/devotional/feed/",
+      "https://encounter.sbs/wp-json/wp/v2/categories/1315"
+    ],
     "stylesheet": [
-      "https://d1a6zytsvzb7ig.cloudfront.net/newpanel/css/singlepage.css"
+      "https://encounter.sbs/wp-includes/blocks/navigation/style.min.css?ver=6.1.1",
+      "https://encounter.sbs/wp-content/themes/twentytwentytwo/style.css?ver=1.3"
+    ],
+    "https://api.w.org/": [
+      "https://encounter.sbs/wp-json/"
+    ],
+    "EditURI": [
+      "https://encounter.sbs/xmlrpc.php?rsd"
+    ],
+    "wlwmanifest": [
+      "https://encounter.sbs/wp-includes/wlwmanifest.xml"
+    ],
+    "icon": [
+      "https://encounter.sbs/wp-content/uploads/2021/10/cropped-BWicon-32x32.png",
+      "https://encounter.sbs/wp-content/uploads/2021/10/cropped-BWicon-192x192.png"
+    ],
+    "apple-touch-icon": [
+      "https://encounter.sbs/wp-content/uploads/2021/10/cropped-BWicon-180x180.png"
+    ],
+    "home": [
+      "https://encounter.sbs/"
     ],
     "nofollow": [
-      "https://help.dreamhost.com/hc/en-us/articles/215613517",
-      "https://panel.dreamhost.com/index.cgi?tree=support.msg",
-      "https://www.dreamhost.com/"
+      "https://wordpress.org/"
     ]
   },
   "rel-urls": {
-    "https://d1a6zytsvzb7ig.cloudfront.net/newpanel/css/singlepage.css": {
+    "https://encounter.sbs/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Encounter.sbs » Feed",
+      "type": "application/rss+xml"
+    },
+    "https://encounter.sbs/comments/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Encounter.sbs » Comments Feed",
+      "type": "application/rss+xml"
+    },
+    "https://encounter.sbs/devotional/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Encounter.sbs » Devotional Category Feed",
+      "type": "application/rss+xml"
+    },
+    "https://encounter.sbs/wp-includes/blocks/navigation/style.min.css?ver=6.1.1": {
       "rels": [
         "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://encounter.sbs/wp-content/themes/twentytwentytwo/style.css?ver=1.3": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://encounter.sbs/wp-json/": {
+      "rels": [
+        "https://api.w.org/"
       ]
     },
-    "https://help.dreamhost.com/hc/en-us/articles/215613517": {
+    "https://encounter.sbs/wp-json/wp/v2/categories/1315": {
       "rels": [
-        "nofollow"
+        "alternate"
       ],
-      "text": "Get more info"
+      "type": "application/json"
     },
-    "https://panel.dreamhost.com/index.cgi?tree=support.msg": {
+    "https://encounter.sbs/xmlrpc.php?rsd": {
       "rels": [
-        "nofollow"
+        "EditURI"
       ],
-      "text": "contact\nsupport"
+      "title": "RSD",
+      "type": "application/rsd+xml"
     },
-    "https://www.dreamhost.com/": {
+    "https://encounter.sbs/wp-includes/wlwmanifest.xml": {
+      "rels": [
+        "wlwmanifest"
+      ],
+      "type": "application/wlwmanifest+xml"
+    },
+    "https://encounter.sbs/wp-content/uploads/2021/10/cropped-BWicon-32x32.png": {
+      "rels": [
+        "icon"
+      ]
+    },
+    "https://encounter.sbs/wp-content/uploads/2021/10/cropped-BWicon-192x192.png": {
+      "rels": [
+        "icon"
+      ]
+    },
+    "https://encounter.sbs/wp-content/uploads/2021/10/cropped-BWicon-180x180.png": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://encounter.sbs/": {
+      "rels": [
+        "home"
+      ]
+    },
+    "https://wordpress.org/": {
       "rels": [
         "nofollow"
       ],
-      "text": "DreamHost"
+      "text": "WordPress"
     }
   }
 }

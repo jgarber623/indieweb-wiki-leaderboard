@@ -8,7 +8,11 @@
       "http://simoncook.org/feed.xml"
     ],
     "stylesheet": [
-      "http://simoncook.org/assets/css/main.css"
+      "http://simoncook.org/assets/css/main.css",
+      "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"
+    ],
+    "preload": [
+      "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"
     ],
     "nofollow": [
       "https://simoncook.org/",
@@ -47,6 +51,11 @@
     "http://simoncook.org/assets/css/main.css": {
       "rels": [
         "stylesheet"
+      ]
+    },
+    "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css": {
+      "rels": [
+        "preload"
       ]
     },
     "https://github.com/simonpcook": {
