@@ -1,5 +1,19 @@
 {
-  "items": [],
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "name": [
+          "Bill Bennett"
+        ],
+        "url": [
+          "https://billbennett.co.nz/"
+        ]
+      }
+    }
+  ],
   "rels": {
     "stylesheet": [
       "https://billbennett.co.nz/assets/built/screen.css?v=5410e95997",
@@ -17,6 +31,10 @@
     ],
     "webmention": [
       "https://billbennett.co.nz/webmentions/receive/"
+    ],
+    "me": [
+      "https://mastodon.nz/@billbennett",
+      "https://billbennett.co.nz/"
     ],
     "noopener": [
       "https://twitter.com/billbennettnz",
@@ -59,6 +77,11 @@
         "stylesheet"
       ],
       "type": "text/css"
+    },
+    "https://mastodon.nz/@billbennett": {
+      "rels": [
+        "me"
+      ]
     },
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/brands.min.css": {
       "rels": [

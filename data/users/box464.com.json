@@ -45,7 +45,7 @@
           "https://en.gravatar.com/userimage/229793401/4c01749dc5d4162ae59618ffc4859d7c.jpeg"
         ],
         "logo": [
-          "https://www.box464.com/assets/images/logo-box464.png"
+          "https://box464.com/assets/images/logo-box464.png"
         ],
         "category": [
           "Coder,Dog Dad,Non-Profit Tech,.NET"
@@ -77,11 +77,17 @@
       "https://www.box464.com/css/jquery.mmenu.all.css",
       "https://www.box464.com/css/highlightjs.piperita.css"
     ],
+    "webmention": [
+      "https://webmention.io/box464.com/webmention"
+    ],
+    "pingback": [
+      "https://webmention.io/box464.com/xmlrpc"
+    ],
     "pgpkey": [
       "https://keys.openpgp.org/pks/lookup?op=get&options=mr&search=0x135EC4BBAF5FA3B8EF306F7D31E738E17B73B201"
     ],
     "canonical": [
-      "https://www.box464.com/"
+      "https://box464.com/"
     ],
     "me": [
       "https://www.linkedin.com/in/jsikes/",
@@ -153,13 +159,23 @@
         "stylesheet"
       ]
     },
+    "https://webmention.io/box464.com/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://webmention.io/box464.com/xmlrpc": {
+      "rels": [
+        "pingback"
+      ]
+    },
     "https://keys.openpgp.org/pks/lookup?op=get&options=mr&search=0x135EC4BBAF5FA3B8EF306F7D31E738E17B73B201": {
       "rels": [
         "pgpkey"
       ],
       "type": "application/pgp-keys"
     },
-    "https://www.box464.com/": {
+    "https://box464.com/": {
       "rels": [
         "canonical"
       ]
