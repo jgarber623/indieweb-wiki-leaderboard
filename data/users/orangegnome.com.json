@@ -36,6 +36,110 @@
             "h-entry"
           ],
           "properties": {
+            "bookmark-of": [
+              {
+                "type": [
+                  "h-cite"
+                ],
+                "properties": {
+                  "name": [
+                    "Mobility Connections: A Plan for Expanding Opportunity"
+                  ],
+                  "url": [
+                    "https://atlantaregional.org/transportation-mobility/transportation-planning/mobility-connections-expanding-opportunity-arcs-regional-transportation-demand-management-tdm-plan-update/"
+                  ]
+                },
+                "value": "https://atlantaregional.org/transportation-mobility/transportation-planning/mobility-connections-expanding-opportunity-arcs-regional-transportation-demand-management-tdm-plan-update/"
+              }
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "name": [
+                    "Brent Lineberry"
+                  ]
+                },
+                "value": "Brent Lineberry"
+              }
+            ],
+            "published": [
+              "2023-01-19T14:26:49.877568-05:00"
+            ],
+            "category": [
+              "Transportation",
+              "Atlanta",
+              "Transit",
+              "Atlanta Regional Commission"
+            ],
+            "url": [
+              "https://orangegnome.com/bookmarks/2271"
+            ],
+            "syndication": [
+              "https://twitter.com/BrentLineberry/status/1616155326734008335",
+              "https://mastodon.online/@brentlineberry/109717515921596350"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "bookmark-of": [
+              {
+                "type": [
+                  "h-cite"
+                ],
+                "properties": {
+                  "name": [
+                    "ATL Trains"
+                  ],
+                  "url": [
+                    "https://drive.google.com/file/d/1uh-G-IGc3rLCm98qPzx9rIRkloyl-aNM/view"
+                  ]
+                },
+                "value": "https://drive.google.com/file/d/1uh-G-IGc3rLCm98qPzx9rIRkloyl-aNM/view"
+              }
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "name": [
+                    "Brent Lineberry"
+                  ]
+                },
+                "value": "Brent Lineberry"
+              }
+            ],
+            "published": [
+              "2023-01-19T13:24:34.812848-05:00"
+            ],
+            "category": [
+              "Transportation",
+              "Atlanta",
+              "Transit",
+              "ATL Trains"
+            ],
+            "url": [
+              "https://orangegnome.com/bookmarks/2270"
+            ],
+            "syndication": [
+              "https://twitter.com/BrentLineberry/status/1616139827337957378",
+              "https://mastodon.online/@brentlineberry/109717504633973614"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
             "name": [
               "Jan. 9, 2023, 4:18 p.m."
             ],
@@ -166,95 +270,6 @@
               "https://mastodon.online/@brentlineberry/109660534821388435"
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Jan. 7, 2023, 1:18 p.m."
-            ],
-            "content": [
-              {
-                "html": "<p>I love when I get to the end of a chunk of work and I get to close all the tabs I’ve collected in the process.</p>\n<p>At work I document the sites I found helpful along the way in a wiki shared with my team.\n</p>",
-                "value": "I love when I get to the end of a chunk of work and I get to close all the tabs I’ve collected in the process.At work I document the sites I found helpful along the way in a wiki shared with my team."
-              }
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "name": [
-                    "Brent Lineberry"
-                  ]
-                },
-                "value": "Brent Lineberry"
-              }
-            ],
-            "published": [
-              "2023-01-07T13:18:56.236765-05:00"
-            ],
-            "category": [
-              "Web Development"
-            ],
-            "url": [
-              "https://orangegnome.com/notes/2265"
-            ],
-            "syndication": [
-              "https://twitter.com/BrentLineberry/status/1611789496978210818",
-              "https://mastodon.online/@brentlineberry/109649302446357055"
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Posting Images to Mastodon with Django ImageField"
-            ],
-            "content": [
-              {
-                "html": "<p>I just finished adding support for Photo posts to my website with the ability to syndicate to both Twitter and Mastodon. I ran into several sticking points with the Mastodon integration.\r\n\r\n</p>\n<h2>Put the file in the <code>files</code> parameter of <code>requests.post</code> and the other data in <code>data</code>\n</h2>\r\n<p>I found the documentation a little confusing here, especially in how to follow it using python's <code>requests</code> module.\r\n\r\n</p>\n<p>The documentation specifies that a media upload should have a <code>file</code> “form data parameter”, which is the file to be attached ”encoded using multipart form data.”\r\n\r\n</p>\n<p>In <code>requests.post</code>, there's a <code>file</code> parameter for multipart form data and a <code>data</code> parameter for form data. In my testing with Postman, using form-data for the body and a “file” as the type of value for the <code>file</code> value worked fine. But putting it all in <code>data</code> for the <code>requests.post</code> did not work.\r\n\r\n</p>\n<p>What ended up working was putting the file in the <code>files</code> parameter and the rest of the media fields in the <code>data</code> parameter.\r\n\r\n</p>\n<h2>The <code>ImageField</code> <em>is</em> the file</h2>\r\n<p>It took a lot of trial and error, complicated by the above issue with <code>requests</code>, but I finally discovered that I can pass the <code>ImageField</code> itself as the file. <code>requests</code> wants it as a tuple though: <code>file = (image_field.name.split('/')[-1], image_field)</code>.\r\n\r\n</p>\n<h2>The <code>media_ids[]</code> parameter is literally <code>media_ids[]</code>\n</h2>\r\n<p>The Mastodon API uses a two-stepped approach to publish a status with media: first you upload the media, then you publish the status with the ids of the uploaded media.\r\n\r\n</p>\n<p>The status request field is “media_ids[]”, which is an “Array of String”. The key in the <code>data</code> parameter needs to be exactly <code>media_ids[]</code>, with the two square brackets, and the ids need to be a python list. My unsuccessful attempts used <code>media_ids</code>, without the brackets, and all kind of permutations of list-like syntaxes, but what is needed is <code>\"media_ids[]\": [media_id]</code>.\r\n\r\n</p>\n<h2>Code</h2>\r\n<p>My code is spread across various <code>models.py</code>, <code>admin.py</code>, and helper modules, but here are the key parts consolidated:\r\n\r\n</p>\n<p>From <a href=\"https://github.com/blineberry/orangegnome/pull/98/files#diff-1b5375108f44157c7644c3a7a3e3f0d3683c94854443384fb02af423bbd4cb73R79-R81\"><code>SyndicatableAdmin</code></a>, which <code>PhotoAdmin</code> inherits:\r\n</p>\n<pre><code>def _syndicate_to_mastodon(self, request, obj):\r\n    # ...\r\n\r\n        media = obj.get_mastodon_media_upload()\r\n        status = obj.get_mastodon_status_update()\r\n        response = Syndication.syndicate_to_mastodon(status, media)\r\n\r\n    # ...</code></pre>\r\n\r\n<p><a href=\"https://github.com/blineberry/orangegnome/pull/98/files#diff-f4ee3bf842926d7c0f89ecdfad3c8c67ac42adc81aff5c5326cc6ba923a5da37R360-R369\"><code>MastodonMediaUpload</code></a>:\r\n</p>\n<pre><code>class MastodonMediaUpload(object):\r\n    def __init__(self, file, thumbnail=None, description=None, focus=None):\r\n        self.file = file\r\n        self.thumbnail = thumbnail\r\n        self.description = description\r\n        self.focus = focus</code></pre>\r\n\r\n<p>From <a href=\"https://github.com/blineberry/orangegnome/pull/98/files#diff-f4ee3bf842926d7c0f89ecdfad3c8c67ac42adc81aff5c5326cc6ba923a5da37R434-R443\"><code>MastodonSyndicatable</code></a> which the <code>Photo</code> model inherits:\r\n</p>\n<pre><code>class MastodonSyndicatable(models.Model):\r\n    # ...\r\n\r\n        def get_mastodon_media_upload(self):\r\n            if not self.has_mastodon_media():\r\n                return None\r\n\r\n            media = self.get_mastodon_media_image_field()\r\n            file = (media.name.split('/')[-1], media)\r\n\r\n            media_upload = MastodonMediaUpload(file, description=self.get_mastodon_media_description())\r\n            return media_upload\r\n\r\n    # ...</code></pre>\r\n\r\n<p>From <a href=\"https://github.com/blineberry/orangegnome/pull/98/files#diff-f4ee3bf842926d7c0f89ecdfad3c8c67ac42adc81aff5c5326cc6ba923a5da37R52-R59\"><code>Syndication</code></a>, a service class for syndication methods:\r\n</p>\n<pre><code>class Syndication():\r\n    # ...\r\n\r\n    @staticmethod\r\n    def syndicate_to_mastodon(status=None, media=None):\r\n        if media is not None:\r\n            response = MastodonClient.post_media(media.file, media.thumbnail, media.description, media.focus)\r\n\r\n            if status is not None:\r\n                status.media_ids = [response['id']]\r\n\r\n        return MastodonClient.post_status(status.status, status.idempotency_key, status.in_reply_to_id, status.media_ids)\r\n\r\n    # ...</code></pre>\r\n\r\n<p>From the <a href=\"https://github.com/blineberry/orangegnome/pull/98/files#diff-c331587609e892d5d73e4961340e72e55ef80372bf1c79fa1f05ed3f90563682R58-R101\">Mastodon <code>Client</code></a> service class:\r\n</p>\n<pre><code>class MastodonClient(object):\r\n    # ...\r\n\r\n    @staticmethod\r\n    def post_media(file, thumbnail=None, description=None, focus=None):\r\n        files = {\r\n            'file': file\r\n        }\r\n\r\n        data = {}\r\n\r\n        if thumbnail is not None:\r\n            data['thumbnail'] = thumbnail\r\n        \r\n        if description is not None:\r\n            data['description'] = description\r\n\r\n        if focus is not None:\r\n            data['focus'] = focus\r\n\r\n        headers = {\r\n            'Authorization': Client.get_auth_header(),\r\n        }\r\n\r\n        response = requests.post(Client.get_v2_url() + '/media', files=files, data=data, headers=headers)\r\n\r\n        response.raise_for_status()\r\n\r\n        return response.json()\r\n\r\n    @staticmethod\r\n    def post_status(status, idempotency_key, in_reply_to_id=None, media_ids=None, visibility='direct'):\r\n        data = {\r\n            'status': status,\r\n            'visibility': visibility\r\n        }\r\n\r\n        if in_reply_to_id is not None:\r\n            data['in_reply_to_id'] = in_reply_to_id\r\n\r\n        if media_ids is not None:\r\n            data['media_ids[]'] = media_ids\r\n\r\n        headers = {\r\n            'Authorization': Client.get_auth_header()\r\n            #'Idempotency-Key': idempotency_key # need to figure out how to use a value for this that updates after model saves.\r\n        }\r\n\r\n        response = requests.post(Client.get_v1_url() + '/statuses', data=data, headers=headers)\r\n\r\n        response.raise_for_status()\r\n\r\n        return response.json()\r\n\r\n    #...</code></pre>",
-                "value": "I just finished adding support for Photo posts to my website with the ability to syndicate to both Twitter and Mastodon. I ran into several sticking points with the Mastodon integration.\r\n\r\nPut the file in the files parameter of requests.post and the other data in data\r\nI found the documentation a little confusing here, especially in how to follow it using python's requests module.\r\n\r\nThe documentation specifies that a media upload should have a file “form data parameter”, which is the file to be attached ”encoded using multipart form data.”\r\n\r\nIn requests.post, there's a file parameter for multipart form data and a data parameter for form data. In my testing with Postman, using form-data for the body and a “file” as the type of value for the file value worked fine. But putting it all in data for the requests.post did not work.\r\n\r\nWhat ended up working was putting the file in the files parameter and the rest of the media fields in the data parameter.\r\n\r\nThe ImageField is the file\r\nIt took a lot of trial and error, complicated by the above issue with requests, but I finally discovered that I can pass the ImageField itself as the file. requests wants it as a tuple though: file = (image_field.name.split('/')[-1], image_field).\r\n\r\nThe media_ids[] parameter is literally media_ids[]\r\nThe Mastodon API uses a two-stepped approach to publish a status with media: first you upload the media, then you publish the status with the ids of the uploaded media.\r\n\r\nThe status request field is “media_ids[]”, which is an “Array of String”. The key in the data parameter needs to be exactly media_ids[], with the two square brackets, and the ids need to be a python list. My unsuccessful attempts used media_ids, without the brackets, and all kind of permutations of list-like syntaxes, but what is needed is \"media_ids[]\": [media_id].\r\n\r\nCode\r\nMy code is spread across various models.py, admin.py, and helper modules, but here are the key parts consolidated:\r\n\r\nFrom SyndicatableAdmin, which PhotoAdmin inherits:\r\ndef _syndicate_to_mastodon(self, request, obj):\r\n    # ...\r\n\r\n        media = obj.get_mastodon_media_upload()\r\n        status = obj.get_mastodon_status_update()\r\n        response = Syndication.syndicate_to_mastodon(status, media)\r\n\r\n    # ...\r\n\r\nMastodonMediaUpload:\r\nclass MastodonMediaUpload(object):\r\n    def __init__(self, file, thumbnail=None, description=None, focus=None):\r\n        self.file = file\r\n        self.thumbnail = thumbnail\r\n        self.description = description\r\n        self.focus = focus\r\n\r\nFrom MastodonSyndicatable which the Photo model inherits:\r\nclass MastodonSyndicatable(models.Model):\r\n    # ...\r\n\r\n        def get_mastodon_media_upload(self):\r\n            if not self.has_mastodon_media():\r\n                return None\r\n\r\n            media = self.get_mastodon_media_image_field()\r\n            file = (media.name.split('/')[-1], media)\r\n\r\n            media_upload = MastodonMediaUpload(file, description=self.get_mastodon_media_description())\r\n            return media_upload\r\n\r\n    # ...\r\n\r\nFrom Syndication, a service class for syndication methods:\r\nclass Syndication():\r\n    # ...\r\n\r\n    @staticmethod\r\n    def syndicate_to_mastodon(status=None, media=None):\r\n        if media is not None:\r\n            response = MastodonClient.post_media(media.file, media.thumbnail, media.description, media.focus)\r\n\r\n            if status is not None:\r\n                status.media_ids = [response['id']]\r\n\r\n        return MastodonClient.post_status(status.status, status.idempotency_key, status.in_reply_to_id, status.media_ids)\r\n\r\n    # ...\r\n\r\nFrom the Mastodon Client service class:\r\nclass MastodonClient(object):\r\n    # ...\r\n\r\n    @staticmethod\r\n    def post_media(file, thumbnail=None, description=None, focus=None):\r\n        files = {\r\n            'file': file\r\n        }\r\n\r\n        data = {}\r\n\r\n        if thumbnail is not None:\r\n            data['thumbnail'] = thumbnail\r\n        \r\n        if description is not None:\r\n            data['description'] = description\r\n\r\n        if focus is not None:\r\n            data['focus'] = focus\r\n\r\n        headers = {\r\n            'Authorization': Client.get_auth_header(),\r\n        }\r\n\r\n        response = requests.post(Client.get_v2_url() + '/media', files=files, data=data, headers=headers)\r\n\r\n        response.raise_for_status()\r\n\r\n        return response.json()\r\n\r\n    @staticmethod\r\n    def post_status(status, idempotency_key, in_reply_to_id=None, media_ids=None, visibility='direct'):\r\n        data = {\r\n            'status': status,\r\n            'visibility': visibility\r\n        }\r\n\r\n        if in_reply_to_id is not None:\r\n            data['in_reply_to_id'] = in_reply_to_id\r\n\r\n        if media_ids is not None:\r\n            data['media_ids[]'] = media_ids\r\n\r\n        headers = {\r\n            'Authorization': Client.get_auth_header()\r\n            #'Idempotency-Key': idempotency_key # need to figure out how to use a value for this that updates after model saves.\r\n        }\r\n\r\n        response = requests.post(Client.get_v1_url() + '/statuses', data=data, headers=headers)\r\n\r\n        response.raise_for_status()\r\n\r\n        return response.json()\r\n\r\n    #..."
-              }
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "name": [
-                    "Brent Lineberry"
-                  ]
-                },
-                "value": "Brent Lineberry"
-              }
-            ],
-            "published": [
-              "2023-01-07T12:28:04.591972-05:00"
-            ],
-            "category": [
-              "Web Development",
-              "Django",
-              "Web Development",
-              "Mastodon",
-              "Mastodon API",
-              "IndieWeb"
-            ],
-            "url": [
-              "https://orangegnome.com/posts/2264/posting-images-to-mastodon-with-django-imagefield"
-            ],
-            "syndication": [
-              "https://twitter.com/BrentLineberry/status/1611787166950080512",
-              "https://mastodon.online/@brentlineberry/109649234902606735"
-            ]
-          }
         }
       ]
     }
@@ -285,22 +300,21 @@
       "https://mastodon.online/@brentlineberry"
     ],
     "tag": [
+      "https://orangegnome.com/tag/473/transportation",
+      "https://orangegnome.com/tag/475/atlanta",
+      "https://orangegnome.com/tag/479/transit",
+      "https://orangegnome.com/tag/542/atlanta-regional-commission",
+      "https://orangegnome.com/tag/541/atl-trains",
       "https://orangegnome.com/tag/504/cooking",
       "https://orangegnome.com/tag/540/polenta",
       "https://orangegnome.com/tag/535/mastodon",
       "https://orangegnome.com/posts/category/17/running",
       "https://orangegnome.com/tag/166/running",
       "https://orangegnome.com/tag/538/jack-daniels",
-      "https://orangegnome.com/tag/539/nashville-rock-n-roll-marathon",
-      "https://orangegnome.com/tag/267/webdevelopment",
-      "https://orangegnome.com/posts/category/13/web-development",
-      "https://orangegnome.com/tag/246/django",
-      "https://orangegnome.com/tag/536/mastodon-api",
-      "https://orangegnome.com/tag/537/indieweb"
+      "https://orangegnome.com/tag/539/nashville-rock-n-roll-marathon"
     ],
     "category": [
-      "https://orangegnome.com/posts/category/17/running",
-      "https://orangegnome.com/posts/category/13/web-development"
+      "https://orangegnome.com/posts/category/17/running"
     ]
   },
   "rel-urls": {
@@ -361,6 +375,36 @@
       ],
       "text": "Mastodon"
     },
+    "https://orangegnome.com/tag/473/transportation": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Transportation"
+    },
+    "https://orangegnome.com/tag/475/atlanta": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Atlanta"
+    },
+    "https://orangegnome.com/tag/479/transit": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Transit"
+    },
+    "https://orangegnome.com/tag/542/atlanta-regional-commission": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Atlanta Regional Commission"
+    },
+    "https://orangegnome.com/tag/541/atl-trains": {
+      "rels": [
+        "tag"
+      ],
+      "text": "ATL Trains"
+    },
     "https://orangegnome.com/tag/504/cooking": {
       "rels": [
         "tag"
@@ -403,37 +447,6 @@
         "tag"
       ],
       "text": "Nashville Rock ’n’ Roll Marathon"
-    },
-    "https://orangegnome.com/tag/267/webdevelopment": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Web Development"
-    },
-    "https://orangegnome.com/posts/category/13/web-development": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "Web Development"
-    },
-    "https://orangegnome.com/tag/246/django": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Django"
-    },
-    "https://orangegnome.com/tag/536/mastodon-api": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Mastodon API"
-    },
-    "https://orangegnome.com/tag/537/indieweb": {
-      "rels": [
-        "tag"
-      ],
-      "text": "IndieWeb"
     }
   }
 }

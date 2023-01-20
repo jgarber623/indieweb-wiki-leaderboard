@@ -203,12 +203,342 @@
               ],
               "properties": {
                 "name": [
-                  "Replying to people on the social web used to be “simple” before #socialMedia, when we used blogs. You would either write:1. a short reply — directly on someone’s blog post comment form, OR2. a longer reply — on your own blog, in-reply-to & linking to the other post and send a Pingback, expecting at least the other post’s author to see your reply, or you would also write a short comment in their blog post comment form with a brief summary & link to your longer reply postAside: web forums^1 at the time were proto-silos^2, and replies/threads were generally self-contained therein.Then social media exploded and eventually everybody was replying everywhere all at once.This was so burdensome that some even hired social media managers to perform the labor of how (and if) to reply on each silo, and attempt to keep up with every new silo that popped up.After a few years of this mid-to-late-2000s social web chaos, in the early 2010s many of us went back to option 2. above from the pre-social-media era, and as part of owning our data^3, started posting our replies in general on our own #IndieWeb sites:1. Regardless of brevity or length, we resumed posting peer-to-peer replies on our personal sites (now sent site-to-site with Webmentions^4), watched destinations retrieve & display our comments, and were pleased that our peer-to-peer comments looked like any other comments (except with permalinks back to our originals).2. We also started posting replies to tweets, GitHub issues^5, etc. on our own sites, and automatically POSSE-threading them into their sites of origin.3. When we wrote site-to-site replies where the original post had itself been syndicated to social media^6, we did both 1 & 2. This let readers follow the conversation in either place, providing an #IndieWeb record for if/when the social media thread was taken down, or disappeared along with another silo shutdown^7.Following this 1,2,3 approach helped conceptually simplify replying on the social web, and worked well except for a couple of interesting ongoing challenges:* What is the most efficient user interface path from viewing someone else’s post to writing a reply from your own site?* How should you @-mention someone you are replying to? (and how can our tools write or pre-fill that for us?)Regarding the latter, on day 14 I wrote a bit about how should we @-mention in general https://tantek.com/2023/014/t4/domain-first-federated-atmention though that was more of a general @-mention exploration. As a follow-up to day 14, it’s worth looking into @-reply mentions in particular, specifically for each of the above 1,2,3 contexts, analyzing examples of each, and looking for patterns of @-reply mentions best practices that we can document & recommend.This is day 16 of #100DaysOfIndieWeb #100Days, except I didn’t finish writing it (mostly) til the morning after, and editing later that afternoon.← Day 15: https://tantek.com/2023/015/t1/publish-indieweb-decide-distribute→ 🔮^1 https://en.wikipedia.org/wiki/Internet_forum^2 https://indieweb.org/silo^3 https://indieweb.org/own_your_data^4 https://tantek.com/2023/012/t1/six-years-webmention-w3c^5 https://indieweb.org/GitHub#POSSE_to_GitHub^6 https://tantek.com/2023/015/t1/publish-indieweb-decide-distribute^7 https://indieweb.org/site-deaths"
+                  "Instead of posting on a personal #IndieWeb site (& POSSE copies), some post primarily to a #fediverse instance and syndicate to Twitter, or vice-versa. How to reply^1 to such posts, e.g.:Reply to a toot (& POSSE tweet): https://tantek.com/2023/019/t4* @-@ (Twitter @-name)This is a variant of case (2) in https://tantek.com/2023/018/t1/elevate-indieweb-above-silo.We can update the directive and two questions & answers in that prior post accordingly:* Elevate #IndieWeb domains above @-@ addresses, and those above any silo identities1. Do they have an #IndieWeb domain? Then @-domain mention them^2, like you are speaking to them at their domain identity. This will notify them there, or at least reinforce their domain’s importance.2. Was their post only published on a #fediverse instance (and/or silo), or was it POSSEd to a fediverse instance (and/or silo) and do you plan to federate (and/or POSSE) your reply^3?Then use their @-@ address or silo @-name, or @-@ (silo @-name) for both, or (@-@, silo @-name) parenthetically following their @-domain if (1). This will notify them on that instance (or silo), and may help thread your POSSE reply.When posting a reply, you (or your CMS automatically) should explicitly link with u-in-reply-to markup^4 to the post your are replying to, and any of its syndicated copy permalinks on destinations you plan to POSSE your reply (see also multi-reply^5). This is day 18 of #100DaysOfIndieWeb #100Days, written the day after.← Day 17: https://tantek.com/2023/018/t1/elevate-indieweb-above-silo→ 🔮^1 https://tantek.com/2023/017/t1/socialweb-blogs-reply-comment-post^2 https://tantek.com/2023/011/t1/indieweb-evolving-at-mention^3 https://tantek.com/2023/015/t1/publish-indieweb-decide-distribute^4 https://indieweb.org/in-reply-to^5 https://indieweb.org/multiple-reply"
                 ],
                 "content": [
                   {
-                    "html": "Replying to people on the social web used to be “simple” before #<span class=\"p-category auto-tag\">socialMedia</span>, when we used blogs. You would either write:<br class=\"auto-break\"><br class=\"auto-break\">1. a short reply — directly on someone’s blog post comment form, OR<br class=\"auto-break\"><br class=\"auto-break\">2. a longer reply — on your own blog, in-reply-to &amp; linking to the other post and send a Pingback, expecting at least the other post’s author to see your reply, or you would also write a short comment in their blog post comment form with a brief summary &amp; link to your longer reply post<br class=\"auto-break\"><br class=\"auto-break\">Aside: web forums^1 at the time were proto-silos^2, and replies/threads were generally self-contained therein.<br class=\"auto-break\"><br class=\"auto-break\"><br class=\"auto-break\">Then social media exploded and eventually everybody was replying everywhere all at once.<br class=\"auto-break\"><br class=\"auto-break\">This was so burdensome that some even hired social media managers to perform the labor of how (and if) to reply on each silo, and attempt to keep up with every new silo that popped up.<br class=\"auto-break\"><br class=\"auto-break\"><br class=\"auto-break\">After a few years of this mid-to-late-2000s social web chaos, in the early 2010s many of us went back to option 2. above from the pre-social-media era, and as part of owning our data^3, started posting our replies in general on our own #<span class=\"p-category auto-tag\">IndieWeb</span> sites:<br class=\"auto-break\"><br class=\"auto-break\">1. Regardless of brevity or length, we resumed posting peer-to-peer replies on our personal sites (now sent site-to-site with Webmentions^4), watched destinations retrieve &amp; display our comments, and were pleased that our peer-to-peer comments looked like any other comments (except with permalinks back to our originals).<br class=\"auto-break\"><br class=\"auto-break\">2. We also started posting replies to tweets, GitHub issues^5, etc. on our own sites, and automatically POSSE-threading them into their sites of origin.<br class=\"auto-break\"><br class=\"auto-break\">3. When we wrote site-to-site replies where the original post had itself been syndicated to social media^6, we did both 1 &amp; 2. This let readers follow the conversation in either place, providing an #<span class=\"p-category auto-tag\">IndieWeb</span> record for if/when the social media thread was taken down, or disappeared along with another silo shutdown^7.<br class=\"auto-break\"><br class=\"auto-break\"><br class=\"auto-break\">Following this 1,2,3 approach helped conceptually simplify replying on the social web, and worked well except for a couple of interesting ongoing challenges:<br class=\"auto-break\"><br class=\"auto-break\">* What is the most efficient user interface path from viewing someone else’s post to writing a reply from your own site?<br class=\"auto-break\"><br class=\"auto-break\">* How should you @-mention someone you are replying to? (and how can our tools write or pre-fill that for us?)<br class=\"auto-break\"><br class=\"auto-break\">Regarding the latter, on day 14 I wrote a bit about how should we @-mention in general <a class=\"auto-link\" href=\"https://tantek.com/2023/014/t4/domain-first-federated-atmention\">https://tantek.com/2023/014/t4/domain-first-federated-atmention</a> though that was more of a general @-mention exploration. <br class=\"auto-break\"><br class=\"auto-break\">As a follow-up to day 14, it’s worth looking into @-reply mentions in particular, specifically for each of the above 1,2,3 contexts, analyzing examples of each, and looking for patterns of @-reply mentions best practices that we can document &amp; recommend.<br class=\"auto-break\"><br class=\"auto-break\">This is day 16 of #<span class=\"p-category auto-tag\">100DaysOfIndieWeb</span> #<span class=\"p-category auto-tag\">100Days</span>, except I didn’t finish writing it (mostly) til the morning after, and editing later that afternoon.<br class=\"auto-break\"><br class=\"auto-break\">← Day 15: <a class=\"auto-link\" href=\"https://tantek.com/2023/015/t1/publish-indieweb-decide-distribute\">https://tantek.com/2023/015/t1/publish-indieweb-decide-distribute</a><br class=\"auto-break\">→ 🔮<br class=\"auto-break\"><br class=\"auto-break\"><br class=\"auto-break\">^1 <a class=\"auto-link\" href=\"https://en.wikipedia.org/wiki/Internet_forum\">https://en.wikipedia.org/wiki/Internet_forum</a><br class=\"auto-break\">^2 <a class=\"auto-link\" href=\"https://indieweb.org/silo\">https://indieweb.org/silo</a><br class=\"auto-break\">^3 <a class=\"auto-link\" href=\"https://indieweb.org/own_your_data\">https://indieweb.org/own_your_data</a><br class=\"auto-break\">^4 <a class=\"auto-link\" href=\"https://tantek.com/2023/012/t1/six-years-webmention-w3c\">https://tantek.com/2023/012/t1/six-years-webmention-w3c</a><br class=\"auto-break\">^5 <a class=\"auto-link\" href=\"https://indieweb.org/GitHub#POSSE_to_GitHub\">https://indieweb.org/GitHub#POSSE_to_GitHub</a><br class=\"auto-break\">^6 <a class=\"auto-link\" href=\"https://tantek.com/2023/015/t1/publish-indieweb-decide-distribute\">https://tantek.com/2023/015/t1/publish-indieweb-decide-distribute</a><br class=\"auto-break\">^7 <a class=\"auto-link\" href=\"https://indieweb.org/site-deaths\">https://indieweb.org/site-deaths</a>",
-                    "value": "Replying to people on the social web used to be “simple” before #socialMedia, when we used blogs. You would either write:1. a short reply — directly on someone’s blog post comment form, OR2. a longer reply — on your own blog, in-reply-to & linking to the other post and send a Pingback, expecting at least the other post’s author to see your reply, or you would also write a short comment in their blog post comment form with a brief summary & link to your longer reply postAside: web forums^1 at the time were proto-silos^2, and replies/threads were generally self-contained therein.Then social media exploded and eventually everybody was replying everywhere all at once.This was so burdensome that some even hired social media managers to perform the labor of how (and if) to reply on each silo, and attempt to keep up with every new silo that popped up.After a few years of this mid-to-late-2000s social web chaos, in the early 2010s many of us went back to option 2. above from the pre-social-media era, and as part of owning our data^3, started posting our replies in general on our own #IndieWeb sites:1. Regardless of brevity or length, we resumed posting peer-to-peer replies on our personal sites (now sent site-to-site with Webmentions^4), watched destinations retrieve & display our comments, and were pleased that our peer-to-peer comments looked like any other comments (except with permalinks back to our originals).2. We also started posting replies to tweets, GitHub issues^5, etc. on our own sites, and automatically POSSE-threading them into their sites of origin.3. When we wrote site-to-site replies where the original post had itself been syndicated to social media^6, we did both 1 & 2. This let readers follow the conversation in either place, providing an #IndieWeb record for if/when the social media thread was taken down, or disappeared along with another silo shutdown^7.Following this 1,2,3 approach helped conceptually simplify replying on the social web, and worked well except for a couple of interesting ongoing challenges:* What is the most efficient user interface path from viewing someone else’s post to writing a reply from your own site?* How should you @-mention someone you are replying to? (and how can our tools write or pre-fill that for us?)Regarding the latter, on day 14 I wrote a bit about how should we @-mention in general https://tantek.com/2023/014/t4/domain-first-federated-atmention though that was more of a general @-mention exploration. As a follow-up to day 14, it’s worth looking into @-reply mentions in particular, specifically for each of the above 1,2,3 contexts, analyzing examples of each, and looking for patterns of @-reply mentions best practices that we can document & recommend.This is day 16 of #100DaysOfIndieWeb #100Days, except I didn’t finish writing it (mostly) til the morning after, and editing later that afternoon.← Day 15: https://tantek.com/2023/015/t1/publish-indieweb-decide-distribute→ 🔮^1 https://en.wikipedia.org/wiki/Internet_forum^2 https://indieweb.org/silo^3 https://indieweb.org/own_your_data^4 https://tantek.com/2023/012/t1/six-years-webmention-w3c^5 https://indieweb.org/GitHub#POSSE_to_GitHub^6 https://tantek.com/2023/015/t1/publish-indieweb-decide-distribute^7 https://indieweb.org/site-deaths"
+                    "html": "Instead of posting on a personal #<span class=\"p-category auto-tag\">IndieWeb</span> site (&amp; POSSE copies), some post primarily to a #<span class=\"p-category auto-tag\">fediverse</span> instance and syndicate to Twitter, or vice-versa. How to reply^1 to such posts, e.g.:<br class=\"auto-break\"><br class=\"auto-break\">Reply to a toot (&amp; POSSE tweet): <a class=\"auto-link\" href=\"https://tantek.com/2023/019/t4\">https://tantek.com/2023/019/t4</a><br class=\"auto-break\">* @-@ (Twitter @-name)<br class=\"auto-break\"><br class=\"auto-break\">This is a variant of case (2) in <a class=\"auto-link\" href=\"https://tantek.com/2023/018/t1/elevate-indieweb-above-silo\">https://tantek.com/2023/018/t1/elevate-indieweb-above-silo</a>.<br class=\"auto-break\"><br class=\"auto-break\">We can update the directive and two questions &amp; answers in that prior post accordingly:<br class=\"auto-break\"><br class=\"auto-break\">* Elevate #<span class=\"p-category auto-tag\">IndieWeb</span> domains above @-@ addresses, and those above any silo identities<br class=\"auto-break\"><br class=\"auto-break\">1. Do they have an #<span class=\"p-category auto-tag\">IndieWeb</span> domain? Then @-domain mention them^2, like you are speaking to them at their domain identity. This will notify them there, or at least reinforce their domain’s importance.<br class=\"auto-break\"><br class=\"auto-break\">2. Was their post only published on a #<span class=\"p-category auto-tag\">fediverse</span> instance (and/or silo), or was it POSSEd to a fediverse instance (and/or silo) and do you plan to federate (and/or POSSE) your reply^3?<br class=\"auto-break\">Then use their @-@ address or silo @-name, or @-@ (silo @-name) for both, or (@-@, silo @-name) parenthetically following their @-domain if (1). This will notify them on that instance (or silo), and may help thread your POSSE reply.<br class=\"auto-break\"><br class=\"auto-break\">When posting a reply, you (or your CMS automatically) should explicitly link with u-in-reply-to markup^4 to the post your are replying to, and any of its syndicated copy permalinks on destinations you plan to POSSE your reply (see also multi-reply^5).<br class=\"auto-break\"> <br class=\"auto-break\"><br class=\"auto-break\">This is day 18 of #<span class=\"p-category auto-tag\">100DaysOfIndieWeb</span> #<span class=\"p-category auto-tag\">100Days</span>, written the day after.<br class=\"auto-break\"><br class=\"auto-break\">← Day 17: <a class=\"auto-link\" href=\"https://tantek.com/2023/018/t1/elevate-indieweb-above-silo\">https://tantek.com/2023/018/t1/elevate-indieweb-above-silo</a><br class=\"auto-break\">→ 🔮<br class=\"auto-break\"><br class=\"auto-break\"><br class=\"auto-break\">^1 <a class=\"auto-link\" href=\"https://tantek.com/2023/017/t1/socialweb-blogs-reply-comment-post\">https://tantek.com/2023/017/t1/socialweb-blogs-reply-comment-post</a><br class=\"auto-break\">^2 <a class=\"auto-link\" href=\"https://tantek.com/2023/011/t1/indieweb-evolving-at-mention\">https://tantek.com/2023/011/t1/indieweb-evolving-at-mention</a><br class=\"auto-break\">^3 <a class=\"auto-link\" href=\"https://tantek.com/2023/015/t1/publish-indieweb-decide-distribute\">https://tantek.com/2023/015/t1/publish-indieweb-decide-distribute</a><br class=\"auto-break\">^4 <a class=\"auto-link\" href=\"https://indieweb.org/in-reply-to\">https://indieweb.org/in-reply-to</a><br class=\"auto-break\">^5 <a class=\"auto-link\" href=\"https://indieweb.org/multiple-reply\">https://indieweb.org/multiple-reply</a>",
+                    "value": "Instead of posting on a personal #IndieWeb site (& POSSE copies), some post primarily to a #fediverse instance and syndicate to Twitter, or vice-versa. How to reply^1 to such posts, e.g.:Reply to a toot (& POSSE tweet): https://tantek.com/2023/019/t4* @-@ (Twitter @-name)This is a variant of case (2) in https://tantek.com/2023/018/t1/elevate-indieweb-above-silo.We can update the directive and two questions & answers in that prior post accordingly:* Elevate #IndieWeb domains above @-@ addresses, and those above any silo identities1. Do they have an #IndieWeb domain? Then @-domain mention them^2, like you are speaking to them at their domain identity. This will notify them there, or at least reinforce their domain’s importance.2. Was their post only published on a #fediverse instance (and/or silo), or was it POSSEd to a fediverse instance (and/or silo) and do you plan to federate (and/or POSSE) your reply^3?Then use their @-@ address or silo @-name, or @-@ (silo @-name) for both, or (@-@, silo @-name) parenthetically following their @-domain if (1). This will notify them on that instance (or silo), and may help thread your POSSE reply.When posting a reply, you (or your CMS automatically) should explicitly link with u-in-reply-to markup^4 to the post your are replying to, and any of its syndicated copy permalinks on destinations you plan to POSSE your reply (see also multi-reply^5). This is day 18 of #100DaysOfIndieWeb #100Days, written the day after.← Day 17: https://tantek.com/2023/018/t1/elevate-indieweb-above-silo→ 🔮^1 https://tantek.com/2023/017/t1/socialweb-blogs-reply-comment-post^2 https://tantek.com/2023/011/t1/indieweb-evolving-at-mention^3 https://tantek.com/2023/015/t1/publish-indieweb-decide-distribute^4 https://indieweb.org/in-reply-to^5 https://indieweb.org/multiple-reply"
+                  }
+                ],
+                "category": [
+                  "IndieWeb",
+                  "fediverse",
+                  "IndieWeb",
+                  "IndieWeb",
+                  "fediverse",
+                  "100DaysOfIndieWeb",
+                  "100Days"
+                ],
+                "published": [
+                  "18:05 on 2023-01-19"
+                ],
+                "updated": [
+                  "18:05 on 2023-01-19"
+                ],
+                "url": [
+                  "http://tantek.com/2023/019/t5/reply-domain-above-address-and-silo"
+                ],
+                "uid": [
+                  "http://tantek.com/2023/019/t5/reply-domain-above-address-and-silo"
+                ]
+              }
+            },
+            {
+              "type": [
+                "h-entry"
+              ],
+              "properties": {
+                "in-reply-to": [
+                  {
+                    "type": [
+                      "h-cite"
+                    ],
+                    "properties": {
+                      "name": [
+                        "w3c.social user w3cdevs’s post"
+                      ],
+                      "url": [
+                        "https://w3c.social/@w3cdevs/109705685724161500"
+                      ]
+                    },
+                    "value": "https://w3c.social/@w3cdevs/109705685724161500"
+                  }
+                ],
+                "name": [
+                  "Thanks @w3cdevs@w3c.social (@w3cdevs) & @w3c@w3c.social, good to be back on the @W3CAB.As W3C Developers noted, we have a lot Priority Projects work to do. I have rejoined the Vision project: https://www.w3.org/wiki/AB/2023_Priorities#Vision.2FPrinciples, with gratitude to @cwilso.com (@cdub@mastodon.social) for his editing & stewardship, and am looking forward to helping support his leadership & initiative on that project."
+                ],
+                "content": [
+                  {
+                    "html": "Thanks <a class=\"auto-link\" href=\"https://w3c.social/@w3cdevs\">@w3cdevs@w3c.social</a> (<a class=\"auto-link h-cassis-username\" href=\"https://twitter.com/w3cdevs\">@w3cdevs</a>) &amp; <a class=\"auto-link\" href=\"https://w3c.social/@w3c\">@w3c@w3c.social</a>, good to be back on the <a class=\"auto-link h-cassis-username\" href=\"https://twitter.com/W3CAB\">@W3CAB</a>.<br class=\"auto-break\"><br class=\"auto-break\">As W3C Developers noted, we have a lot Priority Projects work to do. I have rejoined the Vision project: <a class=\"auto-link\" href=\"https://www.w3.org/wiki/AB/2023_Priorities#Vision.2FPrinciples\">https://www.w3.org/wiki/AB/2023_Priorities#Vision.2FPrinciples</a>, with gratitude to <a class=\"auto-link\" href=\"https://cwilso.com/\">@cwilso.com</a> (<a class=\"auto-link\" href=\"https://mastodon.social/@cdub\">@cdub@mastodon.social</a>) for his editing &amp; stewardship, and am looking forward to helping support his leadership &amp; initiative on that project.",
+                    "value": "Thanks @w3cdevs@w3c.social (@w3cdevs) & @w3c@w3c.social, good to be back on the @W3CAB.As W3C Developers noted, we have a lot Priority Projects work to do. I have rejoined the Vision project: https://www.w3.org/wiki/AB/2023_Priorities#Vision.2FPrinciples, with gratitude to @cwilso.com (@cdub@mastodon.social) for his editing & stewardship, and am looking forward to helping support his leadership & initiative on that project."
+                  }
+                ],
+                "published": [
+                  "16:47 on 2023-01-19"
+                ],
+                "updated": [
+                  "16:47 on 2023-01-19"
+                ],
+                "url": [
+                  "http://tantek.com/2023/019/t4/"
+                ],
+                "uid": [
+                  "http://tantek.com/2023/019/t4/"
+                ]
+              },
+              "children": [
+                {
+                  "type": [
+                    "h-cassis-username"
+                  ],
+                  "properties": {
+                    "name": [
+                      "@w3cdevs"
+                    ],
+                    "url": [
+                      "https://twitter.com/w3cdevs"
+                    ]
+                  }
+                },
+                {
+                  "type": [
+                    "h-cassis-username"
+                  ],
+                  "properties": {
+                    "name": [
+                      "@W3CAB"
+                    ],
+                    "url": [
+                      "https://twitter.com/W3CAB"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "type": [
+                "h-entry"
+              ],
+              "properties": {
+                "in-reply-to": [
+                  {
+                    "type": [
+                      "h-cite"
+                    ],
+                    "properties": {
+                      "name": [
+                        "devdilettante.com user roland’s post"
+                      ],
+                      "url": [
+                        "https://devdilettante.com/@roland/109711180771305151"
+                      ]
+                    },
+                    "value": "https://devdilettante.com/@roland/109711180771305151"
+                  }
+                ],
+                "name": [
+                  "rolandtanglao.com (@roland@devdilettante.com) thanks for the kind words and yes I was at W3C TPAC in Vancouver, would have been nice to chat!You’re right, neither ActivityPub, Webmention, nor h-entry for that matter have any explicit length limits.You can run “an experimental 10,000 character limit AP implementation” on your existing site rolandtanglao.com with a few webdev steps:Setup Bridgy Fed support on your site: * https://fed.brid.gy/docs#setup (SSL, /.well-known/ server redirects, homepage h-card)Add h-entry + h-card markup to your post template:* https://fed.brid.gy/docs#how-postThen send Bridgy Fed a Webmention when you publish a post.Presto, you’re running an AP implementation without a character limit!Happy to help with any of those steps. Drop by https://chat.indieweb.org/dev!"
+                ],
+                "content": [
+                  {
+                    "html": "<a class=\"auto-link\" href=\"http://rolandtanglao.com/\">rolandtanglao.com</a> (<a class=\"auto-link\" href=\"https://devdilettante.com/@roland\">@roland@devdilettante.com</a>) thanks for the kind words and yes I was at W3C TPAC in Vancouver, would have been nice to chat!<br class=\"auto-break\"><br class=\"auto-break\">You’re right, neither ActivityPub, Webmention, nor h-entry for that matter have any explicit length limits.<br class=\"auto-break\"><br class=\"auto-break\">You can run “an experimental 10,000 character limit AP implementation” on your existing site <a class=\"auto-link\" href=\"http://rolandtanglao.com/\">rolandtanglao.com</a> with a few webdev steps:<br class=\"auto-break\"><br class=\"auto-break\">Setup Bridgy Fed support on your site: <br class=\"auto-break\">* <a class=\"auto-link\" href=\"https://fed.brid.gy/docs#setup\">https://fed.brid.gy/docs#setup</a> (SSL, /.well-known/ server redirects, homepage h-card)<br class=\"auto-break\"><br class=\"auto-break\">Add h-entry + h-card markup to your post template:<br class=\"auto-break\">* <a class=\"auto-link\" href=\"https://fed.brid.gy/docs#how-post\">https://fed.brid.gy/docs#how-post</a><br class=\"auto-break\"><br class=\"auto-break\">Then send Bridgy Fed a Webmention when you publish a post.<br class=\"auto-break\"><br class=\"auto-break\">Presto, you’re running an AP implementation without a character limit!<br class=\"auto-break\"><br class=\"auto-break\">Happy to help with any of those steps. Drop by <a class=\"auto-link\" href=\"https://chat.indieweb.org/dev\">https://chat.indieweb.org/dev</a>!",
+                    "value": "rolandtanglao.com (@roland@devdilettante.com) thanks for the kind words and yes I was at W3C TPAC in Vancouver, would have been nice to chat!You’re right, neither ActivityPub, Webmention, nor h-entry for that matter have any explicit length limits.You can run “an experimental 10,000 character limit AP implementation” on your existing site rolandtanglao.com with a few webdev steps:Setup Bridgy Fed support on your site: * https://fed.brid.gy/docs#setup (SSL, /.well-known/ server redirects, homepage h-card)Add h-entry + h-card markup to your post template:* https://fed.brid.gy/docs#how-postThen send Bridgy Fed a Webmention when you publish a post.Presto, you’re running an AP implementation without a character limit!Happy to help with any of those steps. Drop by https://chat.indieweb.org/dev!"
+                  }
+                ],
+                "published": [
+                  "15:50 on 2023-01-19"
+                ],
+                "updated": [
+                  "15:50 on 2023-01-19"
+                ],
+                "url": [
+                  "http://tantek.com/2023/019/t3/"
+                ],
+                "uid": [
+                  "http://tantek.com/2023/019/t3/"
+                ]
+              }
+            },
+            {
+              "type": [
+                "h-entry"
+              ],
+              "properties": {
+                "in-reply-to": [
+                  {
+                    "type": [
+                      "h-cite"
+                    ],
+                    "properties": {
+                      "name": [
+                        "mastodon.cloud user swart’s post"
+                      ],
+                      "url": [
+                        "https://mastodon.cloud/@swart/109708132345593328"
+                      ]
+                    },
+                    "value": "https://mastodon.cloud/@swart/109708132345593328"
+                  }
+                ],
+                "name": [
+                  "@swart@mastodon.cloud my #IndieWeb site https://tantek.com/, which runs its own software, doesn’t have any explicit length limit, nor does https://fed.brid.gy/, the service I use to federate to ActivityPub followers such as Mastodon instances.Both client & server as it were. I haven’t seen it cause any problems with other instances yet.For more about how an #IndieWeb setup works, and why, you might be interested in:* https://tantek.com/2023/005/t3/indieweb-simpler-approach"
+                ],
+                "content": [
+                  {
+                    "html": "<a class=\"auto-link\" href=\"https://mastodon.cloud/@swart\">@swart@mastodon.cloud</a> my #<span class=\"p-category auto-tag\">IndieWeb</span> site <a class=\"auto-link\" href=\"https://tantek.com/\">https://tantek.com/</a>, which runs its own software, doesn’t have any explicit length limit, nor does <a class=\"auto-link\" href=\"https://fed.brid.gy/\">https://fed.brid.gy/</a>, the service I use to federate to ActivityPub followers such as Mastodon instances.<br class=\"auto-break\"><br class=\"auto-break\">Both client &amp; server as it were. I haven’t seen it cause any problems with other instances yet.<br class=\"auto-break\"><br class=\"auto-break\">For more about how an #<span class=\"p-category auto-tag\">IndieWeb</span> setup works, and why, you might be interested in:<br class=\"auto-break\">* <a class=\"auto-link\" href=\"https://tantek.com/2023/005/t3/indieweb-simpler-approach\">https://tantek.com/2023/005/t3/indieweb-simpler-approach</a>",
+                    "value": "@swart@mastodon.cloud my #IndieWeb site https://tantek.com/, which runs its own software, doesn’t have any explicit length limit, nor does https://fed.brid.gy/, the service I use to federate to ActivityPub followers such as Mastodon instances.Both client & server as it were. I haven’t seen it cause any problems with other instances yet.For more about how an #IndieWeb setup works, and why, you might be interested in:* https://tantek.com/2023/005/t3/indieweb-simpler-approach"
+                  }
+                ],
+                "category": [
+                  "IndieWeb",
+                  "IndieWeb"
+                ],
+                "published": [
+                  "15:50 on 2023-01-19"
+                ],
+                "updated": [
+                  "15:50 on 2023-01-19"
+                ],
+                "url": [
+                  "http://tantek.com/2023/019/t2/"
+                ],
+                "uid": [
+                  "http://tantek.com/2023/019/t2/"
+                ]
+              }
+            },
+            {
+              "type": [
+                "h-entry"
+              ],
+              "properties": {
+                "in-reply-to": [
+                  {
+                    "type": [
+                      "h-cite"
+                    ],
+                    "properties": {
+                      "name": [
+                        "GitHub project “bridgy”"
+                      ],
+                      "url": [
+                        "https://github.com/snarfed/bridgy/issues"
+                      ]
+                    },
+                    "value": "https://github.com/snarfed/bridgy/issues"
+                  }
+                ],
+                "url": [
+                  "http://tantek.com/2023/019/b1/bridgy-publish-support-gitlab",
+                  "http://tantek.com/2023/019/b1/bridgy-publish-support-gitlab"
+                ],
+                "uid": [
+                  "http://tantek.com/2023/019/b1/bridgy-publish-support-gitlab",
+                  "http://tantek.com/2023/019/b1/bridgy-publish-support-gitlab"
+                ],
+                "name": [
+                  "Bridgy Publish feature request: Support posting to GitLab sites"
+                ],
+                "content": [
+                  {
+                    "html": "<p>\nIt would be great if there was a way to post issues &amp; comments for GitLab repos, on a personal site, and have Bridgy Publish syndicate them to the actual GitLab repos.\ne.g. feature requests to Pleroma:\n</p>\n<ul>\n<li><a href=\"https://git.pleroma.social/pleroma/pleroma/-/issues\">https://git.pleroma.social/pleroma/pleroma/-/issues</a></li>\n</ul>\n<p>\nSuch as:\n</p>\n<ul>\n<li>Implement IndieAuth support (both sign-in with IndiAuth, and use of a Pleroma profile as an IndieAuth identity to sign-in elsewhere)</li>\n<li>Implement Micropub server support</li>\n<li>Implement Webmention support, sending &amp; receiving</li>\n</ul>",
+                    "value": "It would be great if there was a way to post issues & comments for GitLab repos, on a personal site, and have Bridgy Publish syndicate them to the actual GitLab repos.\ne.g. feature requests to Pleroma:\n\n\nhttps://git.pleroma.social/pleroma/pleroma/-/issues\n\n\nSuch as:\n\n\nImplement IndieAuth support (both sign-in with IndiAuth, and use of a Pleroma profile as an IndieAuth identity to sign-in elsewhere)\nImplement Micropub server support\nImplement Webmention support, sending & receiving"
+                  }
+                ],
+                "published": [
+                  "14:40 on 2023-01-19"
+                ],
+                "updated": [
+                  "14:40 on 2023-01-19"
+                ]
+              }
+            },
+            {
+              "type": [
+                "h-entry"
+              ],
+              "properties": {
+                "in-reply-to": [
+                  {
+                    "type": [
+                      "h-cite"
+                    ],
+                    "properties": {
+                      "name": [
+                        "novakeith.net’s post"
+                      ],
+                      "url": [
+                        "https://novakeith.net/2023/01/15/100-days-at-least-100/"
+                      ]
+                    },
+                    "value": "https://novakeith.net/2023/01/15/100-days-at-least-100/"
+                  }
+                ],
+                "name": [
+                  "@novakeith.net (@knova@dartboard.social) welcome to #100DaysOfIndieWeb! There’s a few of us doing this:* https://indieweb.org/100_days#2023Feel free to add yourself to the ”100 Days of IndieWeb” section if you like, or to a new subhead for #AtLeast100!"
+                ],
+                "content": [
+                  {
+                    "html": "<a class=\"auto-link\" href=\"https://novakeith.net/\">@novakeith.net</a> (<a class=\"auto-link\" href=\"https://dartboard.social/@knova\">@knova@dartboard.social</a>) welcome to #<span class=\"p-category auto-tag\">100DaysOfIndieWeb</span>! <br class=\"auto-break\"><br class=\"auto-break\">There’s a few of us doing this:<br class=\"auto-break\">* <a class=\"auto-link\" href=\"https://indieweb.org/100_days#2023\">https://indieweb.org/100_days#2023</a><br class=\"auto-break\">Feel free to add yourself to the ”100 Days of IndieWeb” section if you like, or to a new subhead for #<span class=\"p-category auto-tag\">AtLeast100</span>!",
+                    "value": "@novakeith.net (@knova@dartboard.social) welcome to #100DaysOfIndieWeb! There’s a few of us doing this:* https://indieweb.org/100_days#2023Feel free to add yourself to the ”100 Days of IndieWeb” section if you like, or to a new subhead for #AtLeast100!"
+                  }
+                ],
+                "category": [
+                  "100DaysOfIndieWeb",
+                  "AtLeast100"
+                ],
+                "published": [
+                  "13:37 on 2023-01-19"
+                ],
+                "updated": [
+                  "13:37 on 2023-01-19"
+                ],
+                "url": [
+                  "http://tantek.com/2023/019/t1/"
+                ],
+                "uid": [
+                  "http://tantek.com/2023/019/t1/"
+                ]
+              }
+            },
+            {
+              "type": [
+                "h-entry"
+              ],
+              "properties": {
+                "name": [
+                  "The answer to “How should you @-mention someone you are replying to?”^1 can depend on many factors or a few. Context matters somewhat, sometimes.We can simplify it to 2 questions, based on 1 directive:* Elevate #IndieWeb domains, above any silo or @-@ identitiesTwo questions and answers: 1. Do they have an #IndieWeb domain? Then @-domain mention them^2, like you are speaking to them at their domain identity. This will notify them there, or at least reinforce their domain’s importance.2. Was their post only published on a silo (or #fediverse instance), or was it POSSEd to a silo (or fediverse instance) and you plan to POSSE (or federate) your reply^3? Then use their silo @-name (or @-@ address), in parentheses if (1). This will notify them on that silo (or instance), and may help thread your POSSE reply.Examples:If the author has their own domain:Reply to an IndieWeb post (& POSSE toot): https://tantek.com/2023/008/t1/* @-domain (@-@)Reply to an IndieWeb post (& POSSE tweet): https://tantek.com/2023/016/t1/* @-domain [that matches their Twitter @-name]Reply to a toot: https://tantek.com/2023/008/t4/* @-domain (@-@)Reply to a tweet: https://tantek.com/2023/002/t2/* @-domain (Twitter @-name)If the author does not have their own domain:Reply to a toot: https://tantek.com/2023/002/t4/* @-@Reply to a tweet: none since this series, though it would be of the form:* Twitter @-nameThis is day 17 of #100DaysOfIndieWeb #100Days, again finished the next day.← Day 16: https://tantek.com/2023/017/t1/socialweb-blogs-reply-comment-post→ Day 18: https://tantek.com/2023/019/t5/reply-domain-above-address-and-silo^1 https://tantek.com/2023/017/t1/socialweb-blogs-reply-comment-post^2 https://tantek.com/2023/011/t1/indieweb-evolving-at-mention^3 https://tantek.com/2023/015/t1/publish-indieweb-decide-distribute"
+                ],
+                "content": [
+                  {
+                    "html": "The answer to “How should you @-mention someone you are replying to?”^1 can depend on many factors or a few. Context matters somewhat, sometimes.<br class=\"auto-break\"><br class=\"auto-break\">We can simplify it to 2 questions, based on 1 directive:<br class=\"auto-break\"><br class=\"auto-break\">* Elevate #<span class=\"p-category auto-tag\">IndieWeb</span> domains, above any silo or @-@ identities<br class=\"auto-break\"><br class=\"auto-break\">Two questions and answers: <br class=\"auto-break\"><br class=\"auto-break\">1. Do they have an #<span class=\"p-category auto-tag\">IndieWeb</span> domain? Then @-domain mention them^2, like you are speaking to them at their domain identity. This will notify them there, or at least reinforce their domain’s importance.<br class=\"auto-break\"><br class=\"auto-break\">2. Was their post only published on a silo (or #<span class=\"p-category auto-tag\">fediverse</span> instance), or was it POSSEd to a silo (or fediverse instance) and you plan to POSSE (or federate) your reply^3? Then use their silo @-name (or @-@ address), in parentheses if (1). This will notify them on that silo (or instance), and may help thread your POSSE reply.<br class=\"auto-break\"><br class=\"auto-break\"><br class=\"auto-break\">Examples:<br class=\"auto-break\"><br class=\"auto-break\"><br class=\"auto-break\">If the author has their own domain:<br class=\"auto-break\"><br class=\"auto-break\">Reply to an IndieWeb post (&amp; POSSE toot): <a class=\"auto-link\" href=\"https://tantek.com/2023/008/t1/\">https://tantek.com/2023/008/t1/</a><br class=\"auto-break\">* @-domain (@-@)<br class=\"auto-break\"><br class=\"auto-break\">Reply to an IndieWeb post (&amp; POSSE tweet): <a class=\"auto-link\" href=\"https://tantek.com/2023/016/t1/\">https://tantek.com/2023/016/t1/</a><br class=\"auto-break\">* @-domain [that matches their Twitter @-name]<br class=\"auto-break\"><br class=\"auto-break\">Reply to a toot: <a class=\"auto-link\" href=\"https://tantek.com/2023/008/t4/\">https://tantek.com/2023/008/t4/</a><br class=\"auto-break\">* @-domain (@-@)<br class=\"auto-break\"><br class=\"auto-break\">Reply to a tweet: <a class=\"auto-link\" href=\"https://tantek.com/2023/002/t2/\">https://tantek.com/2023/002/t2/</a><br class=\"auto-break\">* @-domain (Twitter @-name)<br class=\"auto-break\"><br class=\"auto-break\"><br class=\"auto-break\">If the author does not have their own domain:<br class=\"auto-break\"><br class=\"auto-break\">Reply to a toot: <a class=\"auto-link\" href=\"https://tantek.com/2023/002/t4/\">https://tantek.com/2023/002/t4/</a><br class=\"auto-break\">* @-@<br class=\"auto-break\"><br class=\"auto-break\">Reply to a tweet: none since this series, though it would be of the form:<br class=\"auto-break\">* Twitter @-name<br class=\"auto-break\"><br class=\"auto-break\"><br class=\"auto-break\">This is day 17 of #<span class=\"p-category auto-tag\">100DaysOfIndieWeb</span> #<span class=\"p-category auto-tag\">100Days</span>, again finished the next day.<br class=\"auto-break\"><br class=\"auto-break\">← Day 16: <a class=\"auto-link\" href=\"https://tantek.com/2023/017/t1/socialweb-blogs-reply-comment-post\">https://tantek.com/2023/017/t1/socialweb-blogs-reply-comment-post</a><br class=\"auto-break\">→ Day 18: <a class=\"auto-link\" href=\"https://tantek.com/2023/019/t5/reply-domain-above-address-and-silo\">https://tantek.com/2023/019/t5/reply-domain-above-address-and-silo</a><br class=\"auto-break\"><br class=\"auto-break\"><br class=\"auto-break\">^1 <a class=\"auto-link\" href=\"https://tantek.com/2023/017/t1/socialweb-blogs-reply-comment-post\">https://tantek.com/2023/017/t1/socialweb-blogs-reply-comment-post</a><br class=\"auto-break\">^2 <a class=\"auto-link\" href=\"https://tantek.com/2023/011/t1/indieweb-evolving-at-mention\">https://tantek.com/2023/011/t1/indieweb-evolving-at-mention</a><br class=\"auto-break\">^3 <a class=\"auto-link\" href=\"https://tantek.com/2023/015/t1/publish-indieweb-decide-distribute\">https://tantek.com/2023/015/t1/publish-indieweb-decide-distribute</a>",
+                    "value": "The answer to “How should you @-mention someone you are replying to?”^1 can depend on many factors or a few. Context matters somewhat, sometimes.We can simplify it to 2 questions, based on 1 directive:* Elevate #IndieWeb domains, above any silo or @-@ identitiesTwo questions and answers: 1. Do they have an #IndieWeb domain? Then @-domain mention them^2, like you are speaking to them at their domain identity. This will notify them there, or at least reinforce their domain’s importance.2. Was their post only published on a silo (or #fediverse instance), or was it POSSEd to a silo (or fediverse instance) and you plan to POSSE (or federate) your reply^3? Then use their silo @-name (or @-@ address), in parentheses if (1). This will notify them on that silo (or instance), and may help thread your POSSE reply.Examples:If the author has their own domain:Reply to an IndieWeb post (& POSSE toot): https://tantek.com/2023/008/t1/* @-domain (@-@)Reply to an IndieWeb post (& POSSE tweet): https://tantek.com/2023/016/t1/* @-domain [that matches their Twitter @-name]Reply to a toot: https://tantek.com/2023/008/t4/* @-domain (@-@)Reply to a tweet: https://tantek.com/2023/002/t2/* @-domain (Twitter @-name)If the author does not have their own domain:Reply to a toot: https://tantek.com/2023/002/t4/* @-@Reply to a tweet: none since this series, though it would be of the form:* Twitter @-nameThis is day 17 of #100DaysOfIndieWeb #100Days, again finished the next day.← Day 16: https://tantek.com/2023/017/t1/socialweb-blogs-reply-comment-post→ Day 18: https://tantek.com/2023/019/t5/reply-domain-above-address-and-silo^1 https://tantek.com/2023/017/t1/socialweb-blogs-reply-comment-post^2 https://tantek.com/2023/011/t1/indieweb-evolving-at-mention^3 https://tantek.com/2023/015/t1/publish-indieweb-decide-distribute"
+                  }
+                ],
+                "category": [
+                  "IndieWeb",
+                  "IndieWeb",
+                  "fediverse",
+                  "100DaysOfIndieWeb",
+                  "100Days"
+                ],
+                "published": [
+                  "23:11 on 2023-01-18"
+                ],
+                "updated": [
+                  "23:11 on 2023-01-18"
+                ],
+                "url": [
+                  "http://tantek.com/2023/018/t1/elevate-indieweb-above-silo"
+                ],
+                "uid": [
+                  "http://tantek.com/2023/018/t1/elevate-indieweb-above-silo"
+                ]
+              }
+            },
+            {
+              "type": [
+                "h-entry"
+              ],
+              "properties": {
+                "name": [
+                  "Replying to people on the social web used to be “simple” before #socialMedia, when we used blogs. You would either write:1. a short reply — directly on someone’s blog post comment form, OR2. a longer reply — on your own blog, in-reply-to & linking to the other post and send a Pingback, expecting at least the other post’s author to see your reply, or you would also write a short comment in their blog post comment form with a brief summary & link to your longer reply postAside: web forums^1 at the time were proto-silos^2, and replies/threads were generally self-contained therein.Then social media exploded and eventually everybody was replying everywhere all at once.This was so burdensome that some even hired social media managers to perform the labor of how (and if) to reply on each silo, and attempt to keep up with every new silo that popped up.After a few years of this mid-to-late-2000s social web chaos, in the early 2010s many of us went back to option 2. above from the pre-social-media era, and as part of owning our data^3, started posting our replies in general on our own #IndieWeb sites:1. Regardless of brevity or length, we resumed posting peer-to-peer replies on our personal sites (now sent site-to-site with Webmentions^4), watched destinations retrieve & display our comments, and were pleased that our peer-to-peer comments looked like any other comments (except with permalinks back to our originals).2. We also started posting replies to tweets, GitHub issues^5, etc. on our own sites, and automatically POSSE-threading them into their sites of origin.3. When we wrote site-to-site replies where the original post had itself been syndicated to social media^6, we did both 1 & 2. This let readers follow the conversation in either place, providing an #IndieWeb record for if/when the social media thread was taken down, or disappeared along with another silo shutdown^7.Following this 1,2,3 approach helped conceptually simplify replying on the social web, and worked well except for a couple of interesting ongoing challenges:* What is the most efficient user interface path from viewing someone else’s post to writing a reply from your own site?* How should you @-mention someone you are replying to? (and how can our tools write or pre-fill that for us?)Regarding the latter, on day 14 I wrote a bit about how should we @-mention in general https://tantek.com/2023/014/t4/domain-first-federated-atmention though that was more of a general @-mention exploration. As a follow-up to day 14, it’s worth looking into @-reply mentions in particular, specifically for each of the above 1,2,3 contexts, analyzing examples of each, and looking for patterns of @-reply mentions best practices that we can document & recommend.This is day 16 of #100DaysOfIndieWeb #100Days, except I didn’t finish writing it (mostly) til the morning after, and editing later that afternoon.← Day 15: https://tantek.com/2023/015/t1/publish-indieweb-decide-distribute→ Day 17: https://tantek.com/2023/018/t1/elevate-indieweb-above-silo^1 https://en.wikipedia.org/wiki/Internet_forum^2 https://indieweb.org/silo^3 https://indieweb.org/own_your_data^4 https://tantek.com/2023/012/t1/six-years-webmention-w3c^5 https://indieweb.org/GitHub#POSSE_to_GitHub^6 https://tantek.com/2023/015/t1/publish-indieweb-decide-distribute^7 https://indieweb.org/site-deaths"
+                ],
+                "content": [
+                  {
+                    "html": "Replying to people on the social web used to be “simple” before #<span class=\"p-category auto-tag\">socialMedia</span>, when we used blogs. You would either write:<br class=\"auto-break\"><br class=\"auto-break\">1. a short reply — directly on someone’s blog post comment form, OR<br class=\"auto-break\"><br class=\"auto-break\">2. a longer reply — on your own blog, in-reply-to &amp; linking to the other post and send a Pingback, expecting at least the other post’s author to see your reply, or you would also write a short comment in their blog post comment form with a brief summary &amp; link to your longer reply post<br class=\"auto-break\"><br class=\"auto-break\">Aside: web forums^1 at the time were proto-silos^2, and replies/threads were generally self-contained therein.<br class=\"auto-break\"><br class=\"auto-break\"><br class=\"auto-break\">Then social media exploded and eventually everybody was replying everywhere all at once.<br class=\"auto-break\"><br class=\"auto-break\">This was so burdensome that some even hired social media managers to perform the labor of how (and if) to reply on each silo, and attempt to keep up with every new silo that popped up.<br class=\"auto-break\"><br class=\"auto-break\"><br class=\"auto-break\">After a few years of this mid-to-late-2000s social web chaos, in the early 2010s many of us went back to option 2. above from the pre-social-media era, and as part of owning our data^3, started posting our replies in general on our own #<span class=\"p-category auto-tag\">IndieWeb</span> sites:<br class=\"auto-break\"><br class=\"auto-break\">1. Regardless of brevity or length, we resumed posting peer-to-peer replies on our personal sites (now sent site-to-site with Webmentions^4), watched destinations retrieve &amp; display our comments, and were pleased that our peer-to-peer comments looked like any other comments (except with permalinks back to our originals).<br class=\"auto-break\"><br class=\"auto-break\">2. We also started posting replies to tweets, GitHub issues^5, etc. on our own sites, and automatically POSSE-threading them into their sites of origin.<br class=\"auto-break\"><br class=\"auto-break\">3. When we wrote site-to-site replies where the original post had itself been syndicated to social media^6, we did both 1 &amp; 2. This let readers follow the conversation in either place, providing an #<span class=\"p-category auto-tag\">IndieWeb</span> record for if/when the social media thread was taken down, or disappeared along with another silo shutdown^7.<br class=\"auto-break\"><br class=\"auto-break\"><br class=\"auto-break\">Following this 1,2,3 approach helped conceptually simplify replying on the social web, and worked well except for a couple of interesting ongoing challenges:<br class=\"auto-break\"><br class=\"auto-break\">* What is the most efficient user interface path from viewing someone else’s post to writing a reply from your own site?<br class=\"auto-break\"><br class=\"auto-break\">* How should you @-mention someone you are replying to? (and how can our tools write or pre-fill that for us?)<br class=\"auto-break\"><br class=\"auto-break\">Regarding the latter, on day 14 I wrote a bit about how should we @-mention in general <a class=\"auto-link\" href=\"https://tantek.com/2023/014/t4/domain-first-federated-atmention\">https://tantek.com/2023/014/t4/domain-first-federated-atmention</a> though that was more of a general @-mention exploration. <br class=\"auto-break\"><br class=\"auto-break\">As a follow-up to day 14, it’s worth looking into @-reply mentions in particular, specifically for each of the above 1,2,3 contexts, analyzing examples of each, and looking for patterns of @-reply mentions best practices that we can document &amp; recommend.<br class=\"auto-break\"><br class=\"auto-break\">This is day 16 of #<span class=\"p-category auto-tag\">100DaysOfIndieWeb</span> #<span class=\"p-category auto-tag\">100Days</span>, except I didn’t finish writing it (mostly) til the morning after, and editing later that afternoon.<br class=\"auto-break\"><br class=\"auto-break\">← Day 15: <a class=\"auto-link\" href=\"https://tantek.com/2023/015/t1/publish-indieweb-decide-distribute\">https://tantek.com/2023/015/t1/publish-indieweb-decide-distribute</a><br class=\"auto-break\">→ Day 17: <a class=\"auto-link\" href=\"https://tantek.com/2023/018/t1/elevate-indieweb-above-silo\">https://tantek.com/2023/018/t1/elevate-indieweb-above-silo</a><br class=\"auto-break\"><br class=\"auto-break\"><br class=\"auto-break\">^1 <a class=\"auto-link\" href=\"https://en.wikipedia.org/wiki/Internet_forum\">https://en.wikipedia.org/wiki/Internet_forum</a><br class=\"auto-break\">^2 <a class=\"auto-link\" href=\"https://indieweb.org/silo\">https://indieweb.org/silo</a><br class=\"auto-break\">^3 <a class=\"auto-link\" href=\"https://indieweb.org/own_your_data\">https://indieweb.org/own_your_data</a><br class=\"auto-break\">^4 <a class=\"auto-link\" href=\"https://tantek.com/2023/012/t1/six-years-webmention-w3c\">https://tantek.com/2023/012/t1/six-years-webmention-w3c</a><br class=\"auto-break\">^5 <a class=\"auto-link\" href=\"https://indieweb.org/GitHub#POSSE_to_GitHub\">https://indieweb.org/GitHub#POSSE_to_GitHub</a><br class=\"auto-break\">^6 <a class=\"auto-link\" href=\"https://tantek.com/2023/015/t1/publish-indieweb-decide-distribute\">https://tantek.com/2023/015/t1/publish-indieweb-decide-distribute</a><br class=\"auto-break\">^7 <a class=\"auto-link\" href=\"https://indieweb.org/site-deaths\">https://indieweb.org/site-deaths</a>",
+                    "value": "Replying to people on the social web used to be “simple” before #socialMedia, when we used blogs. You would either write:1. a short reply — directly on someone’s blog post comment form, OR2. a longer reply — on your own blog, in-reply-to & linking to the other post and send a Pingback, expecting at least the other post’s author to see your reply, or you would also write a short comment in their blog post comment form with a brief summary & link to your longer reply postAside: web forums^1 at the time were proto-silos^2, and replies/threads were generally self-contained therein.Then social media exploded and eventually everybody was replying everywhere all at once.This was so burdensome that some even hired social media managers to perform the labor of how (and if) to reply on each silo, and attempt to keep up with every new silo that popped up.After a few years of this mid-to-late-2000s social web chaos, in the early 2010s many of us went back to option 2. above from the pre-social-media era, and as part of owning our data^3, started posting our replies in general on our own #IndieWeb sites:1. Regardless of brevity or length, we resumed posting peer-to-peer replies on our personal sites (now sent site-to-site with Webmentions^4), watched destinations retrieve & display our comments, and were pleased that our peer-to-peer comments looked like any other comments (except with permalinks back to our originals).2. We also started posting replies to tweets, GitHub issues^5, etc. on our own sites, and automatically POSSE-threading them into their sites of origin.3. When we wrote site-to-site replies where the original post had itself been syndicated to social media^6, we did both 1 & 2. This let readers follow the conversation in either place, providing an #IndieWeb record for if/when the social media thread was taken down, or disappeared along with another silo shutdown^7.Following this 1,2,3 approach helped conceptually simplify replying on the social web, and worked well except for a couple of interesting ongoing challenges:* What is the most efficient user interface path from viewing someone else’s post to writing a reply from your own site?* How should you @-mention someone you are replying to? (and how can our tools write or pre-fill that for us?)Regarding the latter, on day 14 I wrote a bit about how should we @-mention in general https://tantek.com/2023/014/t4/domain-first-federated-atmention though that was more of a general @-mention exploration. As a follow-up to day 14, it’s worth looking into @-reply mentions in particular, specifically for each of the above 1,2,3 contexts, analyzing examples of each, and looking for patterns of @-reply mentions best practices that we can document & recommend.This is day 16 of #100DaysOfIndieWeb #100Days, except I didn’t finish writing it (mostly) til the morning after, and editing later that afternoon.← Day 15: https://tantek.com/2023/015/t1/publish-indieweb-decide-distribute→ Day 17: https://tantek.com/2023/018/t1/elevate-indieweb-above-silo^1 https://en.wikipedia.org/wiki/Internet_forum^2 https://indieweb.org/silo^3 https://indieweb.org/own_your_data^4 https://tantek.com/2023/012/t1/six-years-webmention-w3c^5 https://indieweb.org/GitHub#POSSE_to_GitHub^6 https://tantek.com/2023/015/t1/publish-indieweb-decide-distribute^7 https://indieweb.org/site-deaths"
                   }
                 ],
                 "category": [
@@ -1310,252 +1640,6 @@
                   "http://tantek.com/2023/007/t1/"
                 ]
               }
-            },
-            {
-              "type": [
-                "h-entry"
-              ],
-              "properties": {
-                "name": [
-                  "https://dangillmor.com/ wishes for “forward-in-time links so we could read … his 2023 #100Days project, #100DaysOfIndieWeb … more easily from the beginning” https://mastodon.social/@dangillmor/109646621709452885Great suggestion Dan. Wish granted. On my #IndieWeb site, I control the user experience.Since 2010^1, I’ve had previous/next ( ← → ) temporal^2 navigation links on the top right of my post permalinks, across all posts (something I always wanted on my notes, and Twitter lacked)In 2018^3, I added similar ( ← → ) links on day archive pages, for previous/next days.Ideally I’d build similar automatic ( ← → ) links for each hashtag in a post, for the previous/next post with that same hashtag.OR for now I could manually add forward-in-time links to the bottom of my five previous #100DaysOfIndieWeb posts, and with each subsequent post, remember to update the previous one. So that’s what I did, am doing, per https://indieweb.org/manual_until_it_hurts.Previous #100DaysOfIndieWeb posts updated.This is day 6 of #100DaysOfIndieWeb #100Days, which is now a https://en.wikipedia.org/wiki/Doubly_linked_list← Day 5: https://tantek.com/2023/005/t3/indieweb-simpler-approach→ Day 7: https://tantek.com/2023/007/t2/more-100daysofindieweb-projectsPreviously, previously, previously:^1 https://tantek.com/2010/032/t7/inventions-to-tweet-from-site^2 https://tantek.com/2011/102/t2/navigation-arrows-back-past-forward-future-ui-pattern^3 https://tantek.com/2018/308/t2/indiewebcamp-archive-navigation-day-archives"
-                ],
-                "content": [
-                  {
-                    "html": "<a class=\"auto-link\" href=\"https://dangillmor.com/\">https://dangillmor.com/</a> wishes for “forward-in-time links so we could read … his 2023 #<span class=\"p-category auto-tag\">100Days</span> project, #<span class=\"p-category auto-tag\">100DaysOfIndieWeb</span> … more easily from the beginning” <a class=\"auto-link\" href=\"https://mastodon.social/@dangillmor/109646621709452885\">https://mastodon.social/@dangillmor/109646621709452885</a><br class=\"auto-break\"><br class=\"auto-break\">Great suggestion Dan. Wish granted. <br class=\"auto-break\"><br class=\"auto-break\">On my #<span class=\"p-category auto-tag\">IndieWeb</span> site, I control the user experience.<br class=\"auto-break\"><br class=\"auto-break\">Since 2010^1, I’ve had previous/next ( ← → ) temporal^2 navigation links on the top right of my post permalinks, across all posts (something I always wanted on my notes, and Twitter lacked)<br class=\"auto-break\"><br class=\"auto-break\">In 2018^3, I added similar ( ← → ) links on day archive pages, for previous/next days.<br class=\"auto-break\"><br class=\"auto-break\">Ideally I’d build similar automatic ( ← → ) links for each hashtag in a post, for the previous/next post with that same hashtag.<br class=\"auto-break\"><br class=\"auto-break\">OR for now I could manually add forward-in-time links to the bottom of my five previous #<span class=\"p-category auto-tag\">100DaysOfIndieWeb</span> posts, and with each subsequent post, remember to update the previous one. <br class=\"auto-break\"><br class=\"auto-break\">So that’s what I did, am doing, per <a class=\"auto-link\" href=\"https://indieweb.org/manual_until_it_hurts\">https://indieweb.org/manual_until_it_hurts</a>.<br class=\"auto-break\"><br class=\"auto-break\">Previous #<span class=\"p-category auto-tag\">100DaysOfIndieWeb</span> posts updated.<br class=\"auto-break\"><br class=\"auto-break\">This is day 6 of #<span class=\"p-category auto-tag\">100DaysOfIndieWeb</span> #<span class=\"p-category auto-tag\">100Days</span>, which is now a <a class=\"auto-link\" href=\"https://en.wikipedia.org/wiki/Doubly_linked_list\">https://en.wikipedia.org/wiki/Doubly_linked_list</a><br class=\"auto-break\"><br class=\"auto-break\">← Day 5: <a class=\"auto-link\" href=\"https://tantek.com/2023/005/t3/indieweb-simpler-approach\">https://tantek.com/2023/005/t3/indieweb-simpler-approach</a><br class=\"auto-break\">→ Day 7: <a class=\"auto-link\" href=\"https://tantek.com/2023/007/t2/more-100daysofindieweb-projects\">https://tantek.com/2023/007/t2/more-100daysofindieweb-projects</a><br class=\"auto-break\"><br class=\"auto-break\">Previously, previously, previously:<br class=\"auto-break\">^1 <a class=\"auto-link\" href=\"https://tantek.com/2010/032/t7/inventions-to-tweet-from-site\">https://tantek.com/2010/032/t7/inventions-to-tweet-from-site</a><br class=\"auto-break\">^2 <a class=\"auto-link\" href=\"https://tantek.com/2011/102/t2/navigation-arrows-back-past-forward-future-ui-pattern\">https://tantek.com/2011/102/t2/navigation-arrows-back-past-forward-future-ui-pattern</a><br class=\"auto-break\">^3 <a class=\"auto-link\" href=\"https://tantek.com/2018/308/t2/indiewebcamp-archive-navigation-day-archives\">https://tantek.com/2018/308/t2/indiewebcamp-archive-navigation-day-archives</a>",
-                    "value": "https://dangillmor.com/ wishes for “forward-in-time links so we could read … his 2023 #100Days project, #100DaysOfIndieWeb … more easily from the beginning” https://mastodon.social/@dangillmor/109646621709452885Great suggestion Dan. Wish granted. On my #IndieWeb site, I control the user experience.Since 2010^1, I’ve had previous/next ( ← → ) temporal^2 navigation links on the top right of my post permalinks, across all posts (something I always wanted on my notes, and Twitter lacked)In 2018^3, I added similar ( ← → ) links on day archive pages, for previous/next days.Ideally I’d build similar automatic ( ← → ) links for each hashtag in a post, for the previous/next post with that same hashtag.OR for now I could manually add forward-in-time links to the bottom of my five previous #100DaysOfIndieWeb posts, and with each subsequent post, remember to update the previous one. So that’s what I did, am doing, per https://indieweb.org/manual_until_it_hurts.Previous #100DaysOfIndieWeb posts updated.This is day 6 of #100DaysOfIndieWeb #100Days, which is now a https://en.wikipedia.org/wiki/Doubly_linked_list← Day 5: https://tantek.com/2023/005/t3/indieweb-simpler-approach→ Day 7: https://tantek.com/2023/007/t2/more-100daysofindieweb-projectsPreviously, previously, previously:^1 https://tantek.com/2010/032/t7/inventions-to-tweet-from-site^2 https://tantek.com/2011/102/t2/navigation-arrows-back-past-forward-future-ui-pattern^3 https://tantek.com/2018/308/t2/indiewebcamp-archive-navigation-day-archives"
-                  }
-                ],
-                "category": [
-                  "100Days",
-                  "100DaysOfIndieWeb",
-                  "IndieWeb",
-                  "100DaysOfIndieWeb",
-                  "100DaysOfIndieWeb",
-                  "100DaysOfIndieWeb",
-                  "100Days"
-                ],
-                "published": [
-                  "23:59 on 2023-01-06"
-                ],
-                "updated": [
-                  "23:59 on 2023-01-06"
-                ],
-                "url": [
-                  "http://tantek.com/2023/006/t1/forward-in-time-links"
-                ],
-                "uid": [
-                  "http://tantek.com/2023/006/t1/forward-in-time-links"
-                ]
-              }
-            },
-            {
-              "type": [
-                "h-entry"
-              ],
-              "properties": {
-                "name": [
-                  "The #IndieWeb approach *is* the simpler day-to-day approach.Once you setup your domain & provider (or host/CMS), you always know where to post. Your own site.Write first, defer “destination decisions”.Create first, edit for audience(s) second. It’s refreshing & liberating.Whether text, photos, videos, podcasts, brief thoughts, thinking out loud, a considered essay or “thought piece”, or replies to any of the above, start with your own site.Why burden yourself with having to decide what to post based on:* Will this fit in 140^H^H^H 280 characters?* Or 500?* Does it need a title?* Will my photos/videos fit their aspect ratio limits?* Which four photos for this album? Or 10? What one aspect ratio to crop them all into?* Will my video fit in 15, 30, 90, or 140 seconds?* Will I upset Big Chad or be subject to selective enforcement of ever-changing policies?* Can I edit my post after publishing?By decoupling creating from “distribution”, or “audience”, or “reach”, or the size of someone else’s storage boxes, you are free to express your thoughts first, then optionally decide if you want to share them elsewhere and edit as necessary.If you do want to syndicate (POSSE) your post, then you can decide:* Where else to send your post* Is it worth your time to edit your post for any particular destination* … their content limits (number of characters/photos, or video length)* … their audience expectations or terms of service sensitivitiesCreating and editing are different mental tasks.Decoupling them makes posting easier and you can do a better job at both. You can defer destination decisions & editing to some point in the future entirely, when you feel it’s worth your time.You decide how and when to spend time creating vs editing. You are in control.This is day 5 of #100DaysOfIndieWeb #100Days← Day 4: https://tantek.com/2023/004/t1/choosing-domain-name-indieweb→ Day 6: https://tantek.com/2023/006/t1/forward-in-time-links"
-                ],
-                "content": [
-                  {
-                    "html": "The #<span class=\"p-category auto-tag\">IndieWeb</span> approach *is* the simpler day-to-day approach.<br class=\"auto-break\"><br class=\"auto-break\">Once you setup your domain &amp; provider (or host/CMS), you always know where to post. <br class=\"auto-break\"><br class=\"auto-break\">Your own site.<br class=\"auto-break\"><br class=\"auto-break\">Write first, defer “destination decisions”.<br class=\"auto-break\"><br class=\"auto-break\">Create first, edit for audience(s) second. <br class=\"auto-break\"><br class=\"auto-break\">It’s refreshing &amp; liberating.<br class=\"auto-break\"><br class=\"auto-break\">Whether text, photos, videos, podcasts, brief thoughts, thinking out loud, a considered essay or “thought piece”, or replies to any of the above, start with your own site.<br class=\"auto-break\"><br class=\"auto-break\">Why burden yourself with having to decide what to post based on:<br class=\"auto-break\">* Will this fit in 140^H^H^H 280 characters?<br class=\"auto-break\">* Or 500?<br class=\"auto-break\">* Does it need a title?<br class=\"auto-break\">* Will my photos/videos fit their aspect ratio limits?<br class=\"auto-break\">* Which four photos for this album? Or 10? What one aspect ratio to crop them all into?<br class=\"auto-break\">* Will my video fit in 15, 30, 90, or 140 seconds?<br class=\"auto-break\">* Will I upset Big Chad or be subject to selective enforcement of ever-changing policies?<br class=\"auto-break\">* Can I edit my post after publishing?<br class=\"auto-break\"><br class=\"auto-break\">By decoupling creating from “distribution”, or “audience”, or “reach”, or the size of someone else’s storage boxes, you are free to express your thoughts first, then optionally decide if you want to share them elsewhere and edit as necessary.<br class=\"auto-break\"><br class=\"auto-break\">If you do want to syndicate (POSSE) your post, then you can decide:<br class=\"auto-break\">* Where else to send your post<br class=\"auto-break\">* Is it worth your time to edit your post for any particular destination<br class=\"auto-break\">* … their content limits (number of characters/photos, or video length)<br class=\"auto-break\">* … their audience expectations or terms of service sensitivities<br class=\"auto-break\"><br class=\"auto-break\">Creating and editing are different mental tasks.<br class=\"auto-break\"><br class=\"auto-break\">Decoupling them makes posting easier and you can do a better job at both. <br class=\"auto-break\"><br class=\"auto-break\">You can defer destination decisions &amp; editing to some point in the future entirely, when you feel it’s worth your time.<br class=\"auto-break\"><br class=\"auto-break\">You decide how and when to spend time creating vs editing. You are in control.<br class=\"auto-break\"><br class=\"auto-break\">This is day 5 of #<span class=\"p-category auto-tag\">100DaysOfIndieWeb</span> #<span class=\"p-category auto-tag\">100Days</span><br class=\"auto-break\"><br class=\"auto-break\">← Day 4: <a class=\"auto-link\" href=\"https://tantek.com/2023/004/t1/choosing-domain-name-indieweb\">https://tantek.com/2023/004/t1/choosing-domain-name-indieweb</a><br class=\"auto-break\">→ Day 6: <a class=\"auto-link\" href=\"https://tantek.com/2023/006/t1/forward-in-time-links\">https://tantek.com/2023/006/t1/forward-in-time-links</a>",
-                    "value": "The #IndieWeb approach *is* the simpler day-to-day approach.Once you setup your domain & provider (or host/CMS), you always know where to post. Your own site.Write first, defer “destination decisions”.Create first, edit for audience(s) second. It’s refreshing & liberating.Whether text, photos, videos, podcasts, brief thoughts, thinking out loud, a considered essay or “thought piece”, or replies to any of the above, start with your own site.Why burden yourself with having to decide what to post based on:* Will this fit in 140^H^H^H 280 characters?* Or 500?* Does it need a title?* Will my photos/videos fit their aspect ratio limits?* Which four photos for this album? Or 10? What one aspect ratio to crop them all into?* Will my video fit in 15, 30, 90, or 140 seconds?* Will I upset Big Chad or be subject to selective enforcement of ever-changing policies?* Can I edit my post after publishing?By decoupling creating from “distribution”, or “audience”, or “reach”, or the size of someone else’s storage boxes, you are free to express your thoughts first, then optionally decide if you want to share them elsewhere and edit as necessary.If you do want to syndicate (POSSE) your post, then you can decide:* Where else to send your post* Is it worth your time to edit your post for any particular destination* … their content limits (number of characters/photos, or video length)* … their audience expectations or terms of service sensitivitiesCreating and editing are different mental tasks.Decoupling them makes posting easier and you can do a better job at both. You can defer destination decisions & editing to some point in the future entirely, when you feel it’s worth your time.You decide how and when to spend time creating vs editing. You are in control.This is day 5 of #100DaysOfIndieWeb #100Days← Day 4: https://tantek.com/2023/004/t1/choosing-domain-name-indieweb→ Day 6: https://tantek.com/2023/006/t1/forward-in-time-links"
-                  }
-                ],
-                "category": [
-                  "IndieWeb",
-                  "100DaysOfIndieWeb",
-                  "100Days"
-                ],
-                "published": [
-                  "23:59 on 2023-01-05"
-                ],
-                "updated": [
-                  "23:59 on 2023-01-05"
-                ],
-                "url": [
-                  "http://tantek.com/2023/005/t3/indieweb-simpler-approach"
-                ],
-                "uid": [
-                  "http://tantek.com/2023/005/t3/indieweb-simpler-approach"
-                ]
-              }
-            },
-            {
-              "type": [
-                "h-entry"
-              ],
-              "properties": {
-                "in-reply-to": [
-                  {
-                    "type": [
-                      "h-cite"
-                    ],
-                    "properties": {
-                      "name": [
-                        "digitalstuntfactory.com user paul’s post"
-                      ],
-                      "url": [
-                        "https://digitalstuntfactory.com/@paul/109630012206114429"
-                      ]
-                    },
-                    "value": "https://digitalstuntfactory.com/@paul/109630012206114429"
-                  }
-                ],
-                "name": [
-                  "https://pauljacobson.me/, I setup my https://micro.blog/t to syndicate in posts from my site via its Atom feed. It’s standards-based POSSE from my site to micro.blog to make it easier for folks there to follow me / my posts."
-                ],
-                "content": [
-                  {
-                    "html": "<a class=\"auto-link\" href=\"https://pauljacobson.me/\">https://pauljacobson.me/</a>, I setup my <a class=\"auto-link\" href=\"https://micro.blog/t\">https://micro.blog/t</a> to syndicate in posts from my site via its Atom feed. It’s standards-based POSSE from my site to <a class=\"auto-link\" href=\"http://micro.blog/\">micro.blog</a> to make it easier for folks there to follow me / my posts.",
-                    "value": "https://pauljacobson.me/, I setup my https://micro.blog/t to syndicate in posts from my site via its Atom feed. It’s standards-based POSSE from my site to micro.blog to make it easier for folks there to follow me / my posts."
-                  }
-                ],
-                "published": [
-                  "22:58 on 2023-01-05"
-                ],
-                "updated": [
-                  "22:58 on 2023-01-05"
-                ],
-                "url": [
-                  "http://tantek.com/2023/005/t2/"
-                ],
-                "uid": [
-                  "http://tantek.com/2023/005/t2/"
-                ]
-              }
-            },
-            {
-              "type": [
-                "h-entry"
-              ],
-              "properties": {
-                "name": [
-                  "“I need a quad over ice.”📺 #Wednesday E1 34:17Ah, my 2008-era coffee order, just darker (no surprise)https://twitter.com/t/status/920915648Feeling seen.(Aside: 💁🏻‍♂️🦋 Is this a quote tweet?)"
-                ],
-                "content": [
-                  {
-                    "html": "“I need a quad over ice.”<br class=\"auto-break\"><br class=\"auto-break\">📺 #<span class=\"p-category auto-tag\">Wednesday</span> E1 34:17<br class=\"auto-break\"><br class=\"auto-break\">Ah, my 2008-era coffee order, just darker (no surprise)<br class=\"auto-break\"><br class=\"auto-break\"><a class=\"auto-link\" href=\"https://twitter.com/t/status/920915648\">https://twitter.com/t/status/920915648</a><br class=\"auto-break\"><br class=\"auto-break\">Feeling seen.<br class=\"auto-break\"><br class=\"auto-break\">(Aside: 💁🏻‍♂️🦋 Is this a quote tweet?)",
-                    "value": "“I need a quad over ice.”📺 #Wednesday E1 34:17Ah, my 2008-era coffee order, just darker (no surprise)https://twitter.com/t/status/920915648Feeling seen.(Aside: 💁🏻‍♂️🦋 Is this a quote tweet?)"
-                  }
-                ],
-                "category": [
-                  "Wednesday"
-                ],
-                "published": [
-                  "22:28 on 2023-01-05"
-                ],
-                "updated": [
-                  "22:28 on 2023-01-05"
-                ],
-                "url": [
-                  "http://tantek.com/2023/005/t1/quad-over-ice"
-                ],
-                "uid": [
-                  "http://tantek.com/2023/005/t1/quad-over-ice"
-                ]
-              }
-            },
-            {
-              "type": [
-                "h-entry"
-              ],
-              "properties": {
-                "name": [
-                  "Choosing a domain name is a key step toward getting your own #IndieWeb site. Like choosing an account name (chat, email, Mastodon) but global, feels more personal, and like more of a commitment. Six tips:1. Use some form of your name (given & family), so you have a chance of having your site and posts show up when people search for you2. Or a made-up nickname that fits you now and into the future3. Something easily memorable, speakable, & spellable to better tell people in-person or on the phone (i.e. avoid \"cute\" or \"weird\" spellings like dropping vowels)4. Use https://domai.nr/ to quickly try variants5. Try to get a .com .net or .org, which are still seen as more legitimate. A .me is ok, as is your country/region (e.g. .us .uk .eu etc. see https://indieweb.org/ccTLD for more examples)6. Shorter is better for many reasons: https://indieweb.org/short-domainsOnce you find an available name, choose a domain registrar, which is like choosing a phone company, except there are more of them. Some recommendations: https://indieweb.org/personal-domain#Domain_RegistrarsGot questions, or want more tips & opinions?Ask in https://chat.indieweb.org/ — you’ll get a lot of sympathy & support as nearly everyone there has gone through this process, and many are eager to share their experiences to make it easier for new folks. https://indieweb.org/naming is hard, it’s ok to ask for help.This is day 4 of #100DaysOfIndieWeb #100Days← Day 3: https://tantek.com/2023/003/t1/indieweb-path-chosen-why→ Day 5: https://tantek.com/2023/005/t3/indieweb-simpler-approach"
-                ],
-                "content": [
-                  {
-                    "html": "Choosing a domain name is a key step toward getting your own #<span class=\"p-category auto-tag\">IndieWeb</span> site. Like choosing an account name (chat, email, Mastodon) but global, feels more personal, and like more of a commitment. Six tips:<br class=\"auto-break\"><br class=\"auto-break\">1. Use some form of your name (given &amp; family), so you have a chance of having your site and posts show up when people search for you<br class=\"auto-break\">2. Or a made-up nickname that fits you now and into the future<br class=\"auto-break\">3. Something easily memorable, speakable, &amp; spellable to better tell people in-person or on the phone (i.e. avoid \"cute\" or \"weird\" spellings like dropping vowels)<br class=\"auto-break\">4. Use <a class=\"auto-link\" href=\"https://domai.nr/\">https://domai.nr/</a> to quickly try variants<br class=\"auto-break\">5. Try to get a .com .net or .org, which are still seen as more legitimate. A .me is ok, as is your country/region (e.g. .us .uk .eu etc. see <a class=\"auto-link\" href=\"https://indieweb.org/ccTLD\">https://indieweb.org/ccTLD</a> for more examples)<br class=\"auto-break\">6. Shorter is better for many reasons: <a class=\"auto-link\" href=\"https://indieweb.org/short-domains\">https://indieweb.org/short-domains</a><br class=\"auto-break\"><br class=\"auto-break\">Once you find an available name, choose a domain registrar, which is like choosing a phone company, except there are more of them. Some recommendations: <a class=\"auto-link\" href=\"https://indieweb.org/personal-domain#Domain_Registrars\">https://indieweb.org/personal-domain#Domain_Registrars</a><br class=\"auto-break\"><br class=\"auto-break\">Got questions, or want more tips &amp; opinions?<br class=\"auto-break\"><br class=\"auto-break\">Ask in <a class=\"auto-link\" href=\"https://chat.indieweb.org/\">https://chat.indieweb.org/</a> — you’ll get a lot of sympathy &amp; support as nearly everyone there has gone through this process, and many are eager to share their experiences to make it easier for new folks. <br class=\"auto-break\"><br class=\"auto-break\"><a class=\"auto-link\" href=\"https://indieweb.org/naming\">https://indieweb.org/naming</a> is hard, it’s ok to ask for help.<br class=\"auto-break\"><br class=\"auto-break\">This is day 4 of #<span class=\"p-category auto-tag\">100DaysOfIndieWeb</span> #<span class=\"p-category auto-tag\">100Days</span><br class=\"auto-break\"><br class=\"auto-break\">← Day 3: <a class=\"auto-link\" href=\"https://tantek.com/2023/003/t1/indieweb-path-chosen-why\">https://tantek.com/2023/003/t1/indieweb-path-chosen-why</a><br class=\"auto-break\">→ Day 5: <a class=\"auto-link\" href=\"https://tantek.com/2023/005/t3/indieweb-simpler-approach\">https://tantek.com/2023/005/t3/indieweb-simpler-approach</a>",
-                    "value": "Choosing a domain name is a key step toward getting your own #IndieWeb site. Like choosing an account name (chat, email, Mastodon) but global, feels more personal, and like more of a commitment. Six tips:1. Use some form of your name (given & family), so you have a chance of having your site and posts show up when people search for you2. Or a made-up nickname that fits you now and into the future3. Something easily memorable, speakable, & spellable to better tell people in-person or on the phone (i.e. avoid \"cute\" or \"weird\" spellings like dropping vowels)4. Use https://domai.nr/ to quickly try variants5. Try to get a .com .net or .org, which are still seen as more legitimate. A .me is ok, as is your country/region (e.g. .us .uk .eu etc. see https://indieweb.org/ccTLD for more examples)6. Shorter is better for many reasons: https://indieweb.org/short-domainsOnce you find an available name, choose a domain registrar, which is like choosing a phone company, except there are more of them. Some recommendations: https://indieweb.org/personal-domain#Domain_RegistrarsGot questions, or want more tips & opinions?Ask in https://chat.indieweb.org/ — you’ll get a lot of sympathy & support as nearly everyone there has gone through this process, and many are eager to share their experiences to make it easier for new folks. https://indieweb.org/naming is hard, it’s ok to ask for help.This is day 4 of #100DaysOfIndieWeb #100Days← Day 3: https://tantek.com/2023/003/t1/indieweb-path-chosen-why→ Day 5: https://tantek.com/2023/005/t3/indieweb-simpler-approach"
-                  }
-                ],
-                "category": [
-                  "IndieWeb",
-                  "100DaysOfIndieWeb",
-                  "100Days"
-                ],
-                "published": [
-                  "23:59 on 2023-01-04"
-                ],
-                "updated": [
-                  "23:59 on 2023-01-04"
-                ],
-                "url": [
-                  "http://tantek.com/2023/004/t1/choosing-domain-name-indieweb"
-                ],
-                "uid": [
-                  "http://tantek.com/2023/004/t1/choosing-domain-name-indieweb"
-                ]
-              }
-            },
-            {
-              "type": [
-                "h-entry"
-              ],
-              "properties": {
-                "name": [
-                  "Is it hard to setup & use your own #IndieWeb site?Depends on the path chosen, and why.1 turnkey: get a https://micro.blog/ - easier than #Mastodon, works with2 #webdev: install a https://indieweb.org/CMS - needs tech knowhow3 builder: assemble https://indieweb.org/building_blocks as desired, experiment, iterate, and explore how deep the rabbit hole goesAll paths share perhaps the hardest part:Picking a domain name. Next, tips for choosing one.This is day 3 of #100DaysOfIndieWeb #100Days← Day 2: https://tantek.com/2023/002/t6/key-owning-notes-domain-name→ Day 4: https://tantek.com/2023/004/t1/choosing-domain-name-indieweb"
-                ],
-                "content": [
-                  {
-                    "html": "Is it hard to setup &amp; use your own #<span class=\"p-category auto-tag\">IndieWeb</span> site?<br class=\"auto-break\"><br class=\"auto-break\">Depends on the path chosen, and why.<br class=\"auto-break\"><br class=\"auto-break\">1 turnkey: get a <a class=\"auto-link\" href=\"https://micro.blog/\">https://micro.blog/</a> - easier than #<span class=\"p-category auto-tag\">Mastodon</span>, works with<br class=\"auto-break\">2 #<span class=\"p-category auto-tag\">webdev:</span> install a <a class=\"auto-link\" href=\"https://indieweb.org/CMS\">https://indieweb.org/CMS</a> - needs tech knowhow<br class=\"auto-break\">3 builder: assemble <a class=\"auto-link\" href=\"https://indieweb.org/building_blocks\">https://indieweb.org/building_blocks</a> as desired, experiment, iterate, and explore how deep the rabbit hole goes<br class=\"auto-break\"><br class=\"auto-break\">All paths share perhaps the hardest part:<br class=\"auto-break\"><br class=\"auto-break\">Picking a domain name. Next, tips for choosing one.<br class=\"auto-break\"><br class=\"auto-break\">This is day 3 of #<span class=\"p-category auto-tag\">100DaysOfIndieWeb</span> #<span class=\"p-category auto-tag\">100Days</span><br class=\"auto-break\"><br class=\"auto-break\">← Day 2: <a class=\"auto-link\" href=\"https://tantek.com/2023/002/t6/key-owning-notes-domain-name\">https://tantek.com/2023/002/t6/key-owning-notes-domain-name</a><br class=\"auto-break\">→ Day 4: <a class=\"auto-link\" href=\"https://tantek.com/2023/004/t1/choosing-domain-name-indieweb\">https://tantek.com/2023/004/t1/choosing-domain-name-indieweb</a>",
-                    "value": "Is it hard to setup & use your own #IndieWeb site?Depends on the path chosen, and why.1 turnkey: get a https://micro.blog/ - easier than #Mastodon, works with2 #webdev: install a https://indieweb.org/CMS - needs tech knowhow3 builder: assemble https://indieweb.org/building_blocks as desired, experiment, iterate, and explore how deep the rabbit hole goesAll paths share perhaps the hardest part:Picking a domain name. Next, tips for choosing one.This is day 3 of #100DaysOfIndieWeb #100Days← Day 2: https://tantek.com/2023/002/t6/key-owning-notes-domain-name→ Day 4: https://tantek.com/2023/004/t1/choosing-domain-name-indieweb"
-                  }
-                ],
-                "category": [
-                  "IndieWeb",
-                  "Mastodon",
-                  "webdev:",
-                  "100DaysOfIndieWeb",
-                  "100Days"
-                ],
-                "published": [
-                  "23:36 on 2023-01-03"
-                ],
-                "updated": [
-                  "23:36 on 2023-01-03"
-                ],
-                "url": [
-                  "http://tantek.com/2023/003/t1/indieweb-path-chosen-why"
-                ],
-                "uid": [
-                  "http://tantek.com/2023/003/t1/indieweb-path-chosen-why"
-                ]
-              }
-            },
-            {
-              "type": [
-                "h-entry"
-              ],
-              "properties": {
-                "name": [
-                  "The key to owning your notes is posting them with permalinks using a domain name you control. That’s it. https://indieweb.org/permalinkThere are many providers, like https://micro.blog/, that happily enable using your own domain name for everything you post.This gives you the ability to change your provider, while preserving your post permalinks. From the web’s perspective, your posts work just as they did before.You are in control.This is day 2 of #100DaysOfIndieWeb #100Days #IndieWeb.← Day 1: https://tantek.com/2023/001/t1/own-your-notes→ Day 3: https://tantek.com/2023/003/t1/indieweb-path-chosen-why"
-                ],
-                "content": [
-                  {
-                    "html": "The key to owning your notes is posting them with permalinks using a domain name you control. That’s it. <a class=\"auto-link\" href=\"https://indieweb.org/permalink\">https://indieweb.org/permalink</a><br class=\"auto-break\"><br class=\"auto-break\">There are many providers, like <a class=\"auto-link\" href=\"https://micro.blog/\">https://micro.blog/</a>, that happily enable using your own domain name for everything you post.<br class=\"auto-break\"><br class=\"auto-break\">This gives you the ability to change your provider, while preserving your post permalinks. From the web’s perspective, your posts work just as they did before.<br class=\"auto-break\"><br class=\"auto-break\">You are in control.<br class=\"auto-break\"><br class=\"auto-break\">This is day 2 of #<span class=\"p-category auto-tag\">100DaysOfIndieWeb</span> #<span class=\"p-category auto-tag\">100Days</span> #<span class=\"p-category auto-tag\">IndieWeb</span>.<br class=\"auto-break\"><br class=\"auto-break\">← Day 1: <a class=\"auto-link\" href=\"https://tantek.com/2023/001/t1/own-your-notes\">https://tantek.com/2023/001/t1/own-your-notes</a><br class=\"auto-break\">→ Day 3: <a class=\"auto-link\" href=\"https://tantek.com/2023/003/t1/indieweb-path-chosen-why\">https://tantek.com/2023/003/t1/indieweb-path-chosen-why</a>",
-                    "value": "The key to owning your notes is posting them with permalinks using a domain name you control. That’s it. https://indieweb.org/permalinkThere are many providers, like https://micro.blog/, that happily enable using your own domain name for everything you post.This gives you the ability to change your provider, while preserving your post permalinks. From the web’s perspective, your posts work just as they did before.You are in control.This is day 2 of #100DaysOfIndieWeb #100Days #IndieWeb.← Day 1: https://tantek.com/2023/001/t1/own-your-notes→ Day 3: https://tantek.com/2023/003/t1/indieweb-path-chosen-why"
-                  }
-                ],
-                "category": [
-                  "100DaysOfIndieWeb",
-                  "100Days",
-                  "IndieWeb"
-                ],
-                "published": [
-                  "23:59 on 2023-01-02"
-                ],
-                "updated": [
-                  "23:59 on 2023-01-02"
-                ],
-                "url": [
-                  "http://tantek.com/2023/002/t6/key-owning-notes-domain-name"
-                ],
-                "uid": [
-                  "http://tantek.com/2023/002/t6/key-owning-notes-domain-name"
-                ]
-              }
             }
           ]
         },
@@ -2002,6 +2086,9 @@
     "payment": [
       "http://tantek.com/tip/1"
     ],
+    "bookmark": [
+      "http://tantek.com/2023/019/b1/bridgy-publish-support-gitlab"
+    ],
     "nofollow": [
       "http://tantek.com/?",
       "http://tantek.com/?skin=vtx",
@@ -2089,6 +2176,12 @@
       ],
       "title": "Tip: Did you read something of value here and want to encourage more posts like that? Feel free to tip a small amount and mention which topics you enjoyed! (Just please avoid specific products or services. Thanks! -t)",
       "text": "👏 "
+    },
+    "http://tantek.com/2023/019/b1/bridgy-publish-support-gitlab": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\nBridgy Publish feature request: Support posting to GitLab sites\n"
     },
     "http://tantek.com/?": {
       "rels": [

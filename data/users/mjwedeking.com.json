@@ -17,16 +17,33 @@
     ],
     "preload": [
       "https://abs.twimg.com/responsive-web/client-web-legacy/polyfills.37df27aa.js",
-      "https://abs.twimg.com/responsive-web/client-web-legacy/vendor.2c34d35a.js",
-      "https://abs.twimg.com/responsive-web/client-web-legacy/i18n/en.fdcfff1a.js",
-      "https://abs.twimg.com/responsive-web/client-web-legacy/main.58275b4a.js"
+      "https://abs.twimg.com/responsive-web/client-web-legacy/vendor.4a0b7c2a.js",
+      "https://abs.twimg.com/responsive-web/client-web-legacy/i18n/en.2605f89a.js",
+      "https://abs.twimg.com/responsive-web/client-web-legacy/main.b15920da.js"
     ],
     "manifest": [
       "https://twitter.com/manifest.json"
     ],
+    "search": [
+      "https://twitter.com/opensearch.xml"
+    ],
+    "mask-icon": [
+      "https://abs.twimg.com/responsive-web/client-web-legacy/icon-svg.168b89da.svg"
+    ],
+    "icon": [
+      "https://abs.twimg.com/favicons/twitter.2.ico"
+    ],
+    "shortcut": [
+      "https://abs.twimg.com/favicons/twitter.2.ico"
+    ],
+    "apple-touch-icon": [
+      "https://abs.twimg.com/responsive-web/client-web-legacy/icon-ios.b1fc727a.png"
+    ],
+    "canonical": [
+      "https://twitter.com/mjwedeking"
+    ],
     "alternate": [
       "https://twitter.com/mjwedeking",
-      "https://twitter.com/mjwedeking?lang=en",
       "https://twitter.com/mjwedeking?lang=ar",
       "https://twitter.com/mjwedeking?lang=ar-x-fm",
       "https://twitter.com/mjwedeking?lang=bg",
@@ -36,6 +53,7 @@
       "https://twitter.com/mjwedeking?lang=da",
       "https://twitter.com/mjwedeking?lang=de",
       "https://twitter.com/mjwedeking?lang=el",
+      "https://twitter.com/mjwedeking?lang=en",
       "https://twitter.com/mjwedeking?lang=en-GB",
       "https://twitter.com/mjwedeking?lang=es",
       "https://twitter.com/mjwedeking?lang=eu",
@@ -61,6 +79,7 @@
       "https://twitter.com/mjwedeking?lang=ms",
       "https://twitter.com/mjwedeking?lang=nb",
       "https://twitter.com/mjwedeking?lang=nl",
+      "https://twitter.com/mjwedeking?lang=no",
       "https://twitter.com/mjwedeking?lang=pl",
       "https://twitter.com/mjwedeking?lang=pt",
       "https://twitter.com/mjwedeking?lang=ro",
@@ -70,6 +89,7 @@
       "https://twitter.com/mjwedeking?lang=sv",
       "https://twitter.com/mjwedeking?lang=ta",
       "https://twitter.com/mjwedeking?lang=th",
+      "https://twitter.com/mjwedeking?lang=tl",
       "https://twitter.com/mjwedeking?lang=tr",
       "https://twitter.com/mjwedeking?lang=uk",
       "https://twitter.com/mjwedeking?lang=ur",
@@ -77,24 +97,6 @@
       "https://twitter.com/mjwedeking?lang=yo",
       "https://twitter.com/mjwedeking?lang=zh",
       "https://twitter.com/mjwedeking?lang=zh-Hant"
-    ],
-    "canonical": [
-      "https://twitter.com/mjwedeking"
-    ],
-    "search": [
-      "https://twitter.com/opensearch.xml"
-    ],
-    "mask-icon": [
-      "https://abs.twimg.com/responsive-web/client-web-legacy/icon-svg.168b89da.svg"
-    ],
-    "icon": [
-      "https://abs.twimg.com/favicons/twitter.2.ico"
-    ],
-    "shortcut": [
-      "https://abs.twimg.com/favicons/twitter.2.ico"
-    ],
-    "apple-touch-icon": [
-      "https://abs.twimg.com/responsive-web/client-web-legacy/icon-ios.b1fc727a.png"
     ]
   },
   "rel-urls": {
@@ -128,17 +130,17 @@
         "preload"
       ]
     },
-    "https://abs.twimg.com/responsive-web/client-web-legacy/vendor.2c34d35a.js": {
+    "https://abs.twimg.com/responsive-web/client-web-legacy/vendor.4a0b7c2a.js": {
       "rels": [
         "preload"
       ]
     },
-    "https://abs.twimg.com/responsive-web/client-web-legacy/i18n/en.fdcfff1a.js": {
+    "https://abs.twimg.com/responsive-web/client-web-legacy/i18n/en.2605f89a.js": {
       "rels": [
         "preload"
       ]
     },
-    "https://abs.twimg.com/responsive-web/client-web-legacy/main.58275b4a.js": {
+    "https://abs.twimg.com/responsive-web/client-web-legacy/main.b15920da.js": {
       "rels": [
         "preload"
       ]
@@ -148,17 +150,33 @@
         "manifest"
       ]
     },
+    "https://twitter.com/opensearch.xml": {
+      "rels": [
+        "search"
+      ],
+      "title": "Twitter",
+      "type": "application/opensearchdescription+xml"
+    },
+    "https://abs.twimg.com/responsive-web/client-web-legacy/icon-svg.168b89da.svg": {
+      "rels": [
+        "mask-icon"
+      ]
+    },
+    "https://abs.twimg.com/favicons/twitter.2.ico": {
+      "rels": [
+        "icon",
+        "shortcut"
+      ]
+    },
+    "https://abs.twimg.com/responsive-web/client-web-legacy/icon-ios.b1fc727a.png": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
     "https://twitter.com/mjwedeking": {
       "rels": [
-        "alternate"
-      ],
-      "hreflang": "x-default"
-    },
-    "https://twitter.com/mjwedeking?lang=en": {
-      "rels": [
-        "alternate"
-      ],
-      "hreflang": "en"
+        "canonical"
+      ]
     },
     "https://twitter.com/mjwedeking?lang=ar": {
       "rels": [
@@ -213,6 +231,12 @@
         "alternate"
       ],
       "hreflang": "el"
+    },
+    "https://twitter.com/mjwedeking?lang=en": {
+      "rels": [
+        "alternate"
+      ],
+      "hreflang": "en"
     },
     "https://twitter.com/mjwedeking?lang=en-GB": {
       "rels": [
@@ -364,6 +388,12 @@
       ],
       "hreflang": "nl"
     },
+    "https://twitter.com/mjwedeking?lang=no": {
+      "rels": [
+        "alternate"
+      ],
+      "hreflang": "no"
+    },
     "https://twitter.com/mjwedeking?lang=pl": {
       "rels": [
         "alternate"
@@ -418,6 +448,12 @@
       ],
       "hreflang": "th"
     },
+    "https://twitter.com/mjwedeking?lang=tl": {
+      "rels": [
+        "alternate"
+      ],
+      "hreflang": "tl"
+    },
     "https://twitter.com/mjwedeking?lang=tr": {
       "rels": [
         "alternate"
@@ -459,29 +495,6 @@
         "alternate"
       ],
       "hreflang": "zh-Hant"
-    },
-    "https://twitter.com/opensearch.xml": {
-      "rels": [
-        "search"
-      ],
-      "title": "Twitter",
-      "type": "application/opensearchdescription+xml"
-    },
-    "https://abs.twimg.com/responsive-web/client-web-legacy/icon-svg.168b89da.svg": {
-      "rels": [
-        "mask-icon"
-      ]
-    },
-    "https://abs.twimg.com/favicons/twitter.2.ico": {
-      "rels": [
-        "icon",
-        "shortcut"
-      ]
-    },
-    "https://abs.twimg.com/responsive-web/client-web-legacy/icon-ios.b1fc727a.png": {
-      "rels": [
-        "apple-touch-icon"
-      ]
     }
   }
 }

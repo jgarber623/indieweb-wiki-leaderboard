@@ -40,6 +40,62 @@
         "h-entry"
       ],
       "properties": {
+        "name": [
+          "Three attributes for better web forms"
+        ],
+        "url": [
+          "https://adactio.com/journal/19842"
+        ],
+        "content": [
+          {
+            "html": "<p>Forms on the web are an opportunity to make big improvements to the user experience with very little effort. The effort can be as little as sprinkling in a smattering of humble HTML attributes. But the result can be a turbo-charged experience for the user, allowing them to sail through their task.</p>\n\n<p>This is particularly true on mobile devices where people have to fill in forms using a virtual keyboard. Any improvement you can make to their flow is worth investigating. But don’t worry: you don’t need to add a complex JavaScript library or write convoluted code. Well-written HTML will get you very far.</p>\n\n<p>If you’re using the right <code>input type</code> value, you’re most of the way there. Browsers on mobile devices can use this value to infer which version of the virtual keyboard is best. So think beyond the plain <code>text</code> value, and use <code>search</code>, <code>email</code>, <code>url</code>, <code>tel</code>, or <code>number</code> when they’re appropriate.</p>\n\n<p>But you can offer more hints to those browsers. Here are three attributes you can add to <code>input</code> elements. All three are enumerated values, which means they have a constrained vocabulary. You don’t need to have these vocabularies memorised. You can look them when you need to.</p>\n\n<h3><code>inputmode</code></h3>\n\n<p><a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/inputmode\">The <code>inputmode</code> attribute</a> is the most direct hint you can give about the virtual keyboard you want. Some of the values are redundant if you’re already using an <code>input type</code> of <code>search</code>, <code>email</code>, <code>tel</code>, or <code>url</code>.</p>\n\n<p>But there might be occasions where you want a keyboard optimised for numbers but the input should also accept other characters. In that case you can use an <code>input type</code> of <code>text</code> with an <code>inputmode</code> value of <code>numeric</code>. This also means you don’t get the spinner controls on desktop browsers that you’d normally get with an <code>input type</code> of <code>number</code>. It can be quite useful to supress the spinner controls for numbers that aren’t meant to be incremented.</p>\n\n<p>If you combine <code>inputmode=\"numeric\"</code> with <code>pattern=\"[0-9]\"</code>, you’ll get a numeric keypad with no other characters.</p>\n\n<p>The list of possible values for <code>inputmode</code> is <code>text</code>, <code>numeric</code>, <code>decimal</code>, <code>search</code>, <code>email</code>, <code>tel</code>, and <code>url</code>.</p>\n\n<h3><code>enterkeyhint</code></h3>\n\n<p>Whereas the <code>inputmode</code> attribute provides a hint about which virtual keyboard to show, <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/enterkeyhint\">the <code>enterkeyhint</code> attribute</a> provides an additional hint about one specific key on that virtual keyboard: the <kbd>enter</kbd> key.</p>\n\n<p>For search forms, you’ve got an <code>enterkeyhint</code> option of <code>search</code>, and for contact forms, you’ve got <code>send</code>.</p>\n\n<p>The <code>enterkeyhint</code> only changes the labelling of the enter key. On some browsers that label is text. On others it’s an icon. But the attribute by itself doesn’t change the <em>functionality</em>. Even though there are <code>enterkeyhint</code> values of <code>previous</code> and <code>next</code>, by default the enter key will still submit the form. So those two values are less useful on long forms where the user is going from field to field, and more suitable for a series of short forms.</p>\n\n<p>The list of possible values is <code>enter</code>, <code>done</code>, <code>next</code>, <code>previous</code>, <code>go</code>, <code>search</code>, and <code>send</code>.</p>\n\n<h3><code>autocomplete</code></h3>\n\n<p><a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete\">The <code>autocomplete</code> attribute</a> doesn’t have anything to do with the virtual keyboard. Instead it provides a hint to the browser about values that could pre-filled from the user’s browser profile.</p>\n\n<p>Most browsers try to guess when they can they do this, but they don’t always get it right, which can be annoying. If you explicitly provide an <code>autocomplete</code> hint, browsers can confidently prefill the appropriate value.</p>\n\n<p>Just think about how much time this can save your users!</p>\n\n<p>There’s a <code>name</code> value you can use to get full names pre-filled. But if you have form fields for different parts of names—which <a href=\"https://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/\">I wouldn’t recommend</a>—you’ve also got:</p>\n\n<ul>\n<li>\n<code>given-name</code>,</li>\n<li>\n<code>additional-name</code>,</li>\n<li>\n<code>family-name</code>,</li>\n<li>\n<code>nickname</code>,</li>\n<li>\n<code>honorific-prefix</code>, and</li>\n<li>\n<code>honorific-suffix</code>.</li>\n</ul>\n\n<p>You might be tempted to use the <code>nickname</code> field for usernames, but no need; there’s a separate <code>username</code> value.</p>\n\n<p>As with names, there’s a single <code>tel</code> value for telephone numbers, but also an array of sub-values if you’ve split telephone numbers up into separate fields:</p>\n\n<ul>\n<li>\n<code>tel-country-code</code>,</li>\n<li>\n<code>tel-national</code>,</li>\n<li>\n<code>tel-area-code</code>,</li>\n<li>\n<code>tel-local</code>, and</li>\n<li>\n<code>tel-extension</code>.</li>\n</ul>\n\n<p>There’s a whole host of address-related values too:</p>\n\n<ul>\n<li>\n<code>street-address</code>,</li>\n<li>\n<code>address-line1</code>,</li>\n<li>\n<code>address-line2</code>, and</li>\n<li>\n<code>address-line3</code>, but also</li>\n<li>\n<code>address-level1</code>,</li>\n<li>\n<code>address-level2</code>,</li>\n<li>\n<code>address-level3</code>, and</li>\n<li>\n<code>address-level4</code>.</li>\n</ul>\n\n<p>If you have an international audience, addresses can get very messy if you’re trying to split them into separate parts like this.</p>\n\n<p>There’s also <code>postal-code</code> (that’s a ZIP code for Americans), but again, if you have an international audience, please don’t make this a required field. Not every country has postal codes.</p>\n\n<p>Speaking of countries, you’ve got a <code>country-name</code> value, but also a <code>country</code> value for <a href=\"https://en.wikipedia.org/wiki/Country_code\">the country’s ISO code</a>.</p>\n\n<p>Remember, the <code>autocomplete</code> value is specifically for the details of the current user. If someone is filling in their own address, use <code>autocomplete</code>. But if someone has specified that, say, a billing address and a shipping address are different, that shipping address might not be the address associated with that person.</p>\n\n<p>On the subject of billing, if your form accepts credit card details, <em>definitely</em> use <code>autocomplete</code>. The values you’ll probably need are:</p>\n\n<ul>\n<li>\n<code>cc-name</code> for the cardholder,</li>\n<li>\n<code>cc-number</code> for the credit card number itself,</li>\n<li>\n<code>cc-exp</code> for the expiry date, and</li>\n<li>\n<code>cc-csc</code> for the security again.</li>\n</ul>\n\n<p>Again, some of these values can be broken down further if you need them:  <code>cc-exp-month</code> and <code>cc-exp-year</code> for the month and year of the expiry date, for example.</p>\n\n<p>The <code>autocomplete</code> attribute is <em>really</em> handy for log-in forms. Definitely use the values of <code>email</code> or <code>username</code> as appropriate.</p>\n\n<p>If you’re using two-factor authentication, be sure to add an <code>autocomplete</code> value of <code>one-time-code</code> to your form field. That way, the browser can offer to prefill a value from a text message. That saves the user a lot of fiddly copying and pasting. <a href=\"https://www.twilio.com/blog/html-attributes-two-factor-authentication-autocomplete\">Phil Nash has more details on the Twilio blog</a>.</p>\n\n<p>Not every mobile browser offers this functionality, but that’s okay. This is classic progressive enhancement. Adding an <code>autocomplete</code> value won’t do any harm to a browser that doesn’t yet understand the value.</p>\n\n<p>Use an <code>autocomplete</code> value of <code>current-password</code> for password fields in log-in forms. This is especially useful for password managers.</p>\n\n<p>But if a user has logged in and is editing their profile to <em>change</em> their password, use a value of <code>new-password</code>. This will prevent the browser from pre-filling that field with the existing password.</p>\n\n<p>That goes for sign-up forms too: use <code>new-password</code>. With this hint, password managers can offer to automatically generate a secure password.</p>\n\n<p>There you have it. Three little HTML attributes that can help users interact with your forms. All you have to do was type a few more characters in your <code>input</code> elements, and users automatically get a better experience.</p>\n\n<p>This is a classic example of letting the browser do the hard work for you. As Andy puts it, <a href=\"https://buildexcellentwebsit.es/\">be the browser’s mentor, not its micromanager</a>:</p>\n\n<blockquote>\n  <p>Give the browser some solid rules and hints, then let it make the right decisions for the people that visit it, based on their device, connection quality and capabilities.</p>\n</blockquote>",
+            "value": "Forms on the web are an opportunity to make big improvements to the user experience with very little effort. The effort can be as little as sprinkling in a smattering of humble HTML attributes. But the result can be a turbo-charged experience for the user, allowing them to sail through their task.\n\nThis is particularly true on mobile devices where people have to fill in forms using a virtual keyboard. Any improvement you can make to their flow is worth investigating. But don’t worry: you don’t need to add a complex JavaScript library or write convoluted code. Well-written HTML will get you very far.\n\nIf you’re using the right input type value, you’re most of the way there. Browsers on mobile devices can use this value to infer which version of the virtual keyboard is best. So think beyond the plain text value, and use search, email, url, tel, or number when they’re appropriate.\n\nBut you can offer more hints to those browsers. Here are three attributes you can add to input elements. All three are enumerated values, which means they have a constrained vocabulary. You don’t need to have these vocabularies memorised. You can look them when you need to.\n\ninputmode\n\nThe inputmode attribute is the most direct hint you can give about the virtual keyboard you want. Some of the values are redundant if you’re already using an input type of search, email, tel, or url.\n\nBut there might be occasions where you want a keyboard optimised for numbers but the input should also accept other characters. In that case you can use an input type of text with an inputmode value of numeric. This also means you don’t get the spinner controls on desktop browsers that you’d normally get with an input type of number. It can be quite useful to supress the spinner controls for numbers that aren’t meant to be incremented.\n\nIf you combine inputmode=\"numeric\" with pattern=\"[0-9]\", you’ll get a numeric keypad with no other characters.\n\nThe list of possible values for inputmode is text, numeric, decimal, search, email, tel, and url.\n\nenterkeyhint\n\nWhereas the inputmode attribute provides a hint about which virtual keyboard to show, the enterkeyhint attribute provides an additional hint about one specific key on that virtual keyboard: the enter key.\n\nFor search forms, you’ve got an enterkeyhint option of search, and for contact forms, you’ve got send.\n\nThe enterkeyhint only changes the labelling of the enter key. On some browsers that label is text. On others it’s an icon. But the attribute by itself doesn’t change the functionality. Even though there are enterkeyhint values of previous and next, by default the enter key will still submit the form. So those two values are less useful on long forms where the user is going from field to field, and more suitable for a series of short forms.\n\nThe list of possible values is enter, done, next, previous, go, search, and send.\n\nautocomplete\n\nThe autocomplete attribute doesn’t have anything to do with the virtual keyboard. Instead it provides a hint to the browser about values that could pre-filled from the user’s browser profile.\n\nMost browsers try to guess when they can they do this, but they don’t always get it right, which can be annoying. If you explicitly provide an autocomplete hint, browsers can confidently prefill the appropriate value.\n\nJust think about how much time this can save your users!\n\nThere’s a name value you can use to get full names pre-filled. But if you have form fields for different parts of names—which I wouldn’t recommend—you’ve also got:\n\n\ngiven-name,\nadditional-name,\nfamily-name,\nnickname,\nhonorific-prefix, and\nhonorific-suffix.\n\n\nYou might be tempted to use the nickname field for usernames, but no need; there’s a separate username value.\n\nAs with names, there’s a single tel value for telephone numbers, but also an array of sub-values if you’ve split telephone numbers up into separate fields:\n\n\ntel-country-code,\ntel-national,\ntel-area-code,\ntel-local, and\ntel-extension.\n\n\nThere’s a whole host of address-related values too:\n\n\nstreet-address,\naddress-line1,\naddress-line2, and\naddress-line3, but also\naddress-level1,\naddress-level2,\naddress-level3, and\naddress-level4.\n\n\nIf you have an international audience, addresses can get very messy if you’re trying to split them into separate parts like this.\n\nThere’s also postal-code (that’s a ZIP code for Americans), but again, if you have an international audience, please don’t make this a required field. Not every country has postal codes.\n\nSpeaking of countries, you’ve got a country-name value, but also a country value for the country’s ISO code.\n\nRemember, the autocomplete value is specifically for the details of the current user. If someone is filling in their own address, use autocomplete. But if someone has specified that, say, a billing address and a shipping address are different, that shipping address might not be the address associated with that person.\n\nOn the subject of billing, if your form accepts credit card details, definitely use autocomplete. The values you’ll probably need are:\n\n\ncc-name for the cardholder,\ncc-number for the credit card number itself,\ncc-exp for the expiry date, and\ncc-csc for the security again.\n\n\nAgain, some of these values can be broken down further if you need them:  cc-exp-month and cc-exp-year for the month and year of the expiry date, for example.\n\nThe autocomplete attribute is really handy for log-in forms. Definitely use the values of email or username as appropriate.\n\nIf you’re using two-factor authentication, be sure to add an autocomplete value of one-time-code to your form field. That way, the browser can offer to prefill a value from a text message. That saves the user a lot of fiddly copying and pasting. Phil Nash has more details on the Twilio blog.\n\nNot every mobile browser offers this functionality, but that’s okay. This is classic progressive enhancement. Adding an autocomplete value won’t do any harm to a browser that doesn’t yet understand the value.\n\nUse an autocomplete value of current-password for password fields in log-in forms. This is especially useful for password managers.\n\nBut if a user has logged in and is editing their profile to change their password, use a value of new-password. This will prevent the browser from pre-filling that field with the existing password.\n\nThat goes for sign-up forms too: use new-password. With this hint, password managers can offer to automatically generate a secure password.\n\nThere you have it. Three little HTML attributes that can help users interact with your forms. All you have to do was type a few more characters in your input elements, and users automatically get a better experience.\n\nThis is a classic example of letting the browser do the hard work for you. As Andy puts it, be the browser’s mentor, not its micromanager:\n\n\n  Give the browser some solid rules and hints, then let it make the right decisions for the people that visit it, based on their device, connection quality and capabilities."
+          }
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "50.83250288"
+              ],
+              "longitude": [
+                "-0.11811010"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "published": [
+          "2023-01-19T10:58:53Z"
+        ],
+        "category": [
+          "html",
+          "inputs",
+          "inputmode",
+          "enterkeyhint",
+          "autocomplete",
+          "forms",
+          "mobile",
+          "devices",
+          "keyboards",
+          "markup",
+          "ux",
+          "frontend",
+          "development"
+        ],
+        "syndication": [
+          "https://adactio.medium.com/364bc90fa8e6"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
         "photo": [
           {
             "value": "https://adactio.com/images/uploaded/19841/small.jpg",
@@ -1000,58 +1056,6 @@
     },
     {
       "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "content": [
-          {
-            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://ishadeed.com/article/conditional-css/\">\nConditional CSS - Ahmad Shadeed\n</a>\n</h3>\n\n<blockquote>\n  <p>I like to think of CSS as a conditional design language.</p>\n</blockquote>\n\n<p>Yes! This is exactly what I’m talking about with declarative design!</p>\n\n<p>Read on for some fantastic examples. And also, Ahmad makes a comparison between CSS and Figma, pointing out that the conditional, declarative possibilities currently aren’t available in graphic design tools.</p>",
-            "value": "Conditional CSS - Ahmad Shadeed\n\n\n\n\n  I like to think of CSS as a conditional design language.\n\n\nYes! This is exactly what I’m talking about with declarative design!\n\nRead on for some fantastic examples. And also, Ahmad makes a comparison between CSS and Figma, pointing out that the conditional, declarative possibilities currently aren’t available in graphic design tools."
-          }
-        ],
-        "name": [
-          "Conditional CSS - Ahmad Shadeed"
-        ],
-        "bookmark-of": [
-          "https://ishadeed.com/article/conditional-css/"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83247644"
-              ],
-              "longitude": [
-                "-0.11811536"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/links/19822"
-        ],
-        "published": [
-          "2023-01-11T17:44:51Z"
-        ],
-        "category": [
-          "conditional",
-          "css",
-          "declarative",
-          "design",
-          "frontend",
-          "development",
-          "styling",
-          "figma",
-          "conditions"
-        ]
-      }
-    },
-    {
-      "type": [
         "h-card"
       ],
       "properties": {
@@ -1791,6 +1795,7 @@
       "https://adactio.com/includes/css/print.css"
     ],
     "bookmark": [
+      "https://adactio.com/journal/19842",
       "https://adactio.com/notes/19841",
       "https://adactio.com/links/19840",
       "https://adactio.com/journal/19839",
@@ -1809,29 +1814,23 @@
       "https://adactio.com/notes/19826",
       "https://adactio.com/notes/19825",
       "https://adactio.com/notes/19824",
-      "https://adactio.com/links/19823",
-      "https://adactio.com/links/19822"
-    ],
-    "syndication": [
-      "https://www.swarmapp.com/user/112073/checkin/63c8514223a8ab74c01adf11",
-      "https://adactio.medium.com/a0ff1519d602",
-      "https://mastodon.social/@adactio/109705917952294506",
-      "https://www.swarmapp.com/user/112073/checkin/63c5ad5898e2971e65091cd6",
-      "https://adactio.medium.com/108bcfbc6cf7",
-      "https://www.swarmapp.com/user/112073/checkin/63c4138e571f3a5bd4dfa904",
-      "https://www.swarmapp.com/user/112073/checkin/63c4016fa56356437d6eb0f9",
-      "https://www.swarmapp.com/user/112073/checkin/63c3f263cbd8295f76cc6d19",
-      "https://www.instagram.com/p/CnZEyZZt0wn/",
-      "https://www.swarmapp.com/user/112073/checkin/63c19408a578cb0e99cd8d50",
-      "https://mastodon.social/@adactio/109681110344670611",
-      "https://www.instagram.com/p/CnSdnUktVjV/",
-      "https://www.swarmapp.com/user/112073/checkin/63bf1c11170e437fcaa23ddd"
+      "https://adactio.com/links/19823"
     ],
     "tag": [
+      "https://adactio.com/tags/html",
+      "https://adactio.com/tags/inputs",
+      "https://adactio.com/tags/inputmode",
+      "https://adactio.com/tags/enterkeyhint",
+      "https://adactio.com/tags/autocomplete",
+      "https://adactio.com/tags/forms",
+      "https://adactio.com/tags/mobile",
+      "https://adactio.com/tags/devices",
+      "https://adactio.com/tags/keyboards",
+      "https://adactio.com/tags/markup",
+      "https://adactio.com/tags/ux",
       "https://adactio.com/tags/frontend",
       "https://adactio.com/tags/development",
       "https://adactio.com/tags/process",
-      "https://adactio.com/tags/html",
       "https://adactio.com/tags/css",
       "https://adactio.com/tags/javascript",
       "https://adactio.com/tags/performance",
@@ -1888,10 +1887,23 @@
       "https://adactio.com/tags/publishing",
       "https://adactio.com/tags/silos",
       "https://adactio.com/tags/writing",
-      "https://adactio.com/tags/sharing",
-      "https://adactio.com/tags/conditional",
-      "https://adactio.com/tags/figma",
-      "https://adactio.com/tags/conditions"
+      "https://adactio.com/tags/sharing"
+    ],
+    "syndication": [
+      "https://adactio.medium.com/364bc90fa8e6",
+      "https://www.swarmapp.com/user/112073/checkin/63c8514223a8ab74c01adf11",
+      "https://adactio.medium.com/a0ff1519d602",
+      "https://mastodon.social/@adactio/109705917952294506",
+      "https://www.swarmapp.com/user/112073/checkin/63c5ad5898e2971e65091cd6",
+      "https://adactio.medium.com/108bcfbc6cf7",
+      "https://www.swarmapp.com/user/112073/checkin/63c4138e571f3a5bd4dfa904",
+      "https://www.swarmapp.com/user/112073/checkin/63c4016fa56356437d6eb0f9",
+      "https://www.swarmapp.com/user/112073/checkin/63c3f263cbd8295f76cc6d19",
+      "https://www.instagram.com/p/CnZEyZZt0wn/",
+      "https://www.swarmapp.com/user/112073/checkin/63c19408a578cb0e99cd8d50",
+      "https://mastodon.social/@adactio/109681110344670611",
+      "https://www.instagram.com/p/CnSdnUktVjV/",
+      "https://www.swarmapp.com/user/112073/checkin/63bf1c11170e437fcaa23ddd"
     ],
     "next": [
       "https://adactio.com/?start=20"
@@ -2282,6 +2294,96 @@
       ],
       "text": "music"
     },
+    "https://adactio.com/journal/19842": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n10:58am\n\n"
+    },
+    "https://adactio.com/tags/html": {
+      "rels": [
+        "tag"
+      ],
+      "text": "html"
+    },
+    "https://adactio.com/tags/inputs": {
+      "rels": [
+        "tag"
+      ],
+      "text": "inputs"
+    },
+    "https://adactio.com/tags/inputmode": {
+      "rels": [
+        "tag"
+      ],
+      "text": "inputmode"
+    },
+    "https://adactio.com/tags/enterkeyhint": {
+      "rels": [
+        "tag"
+      ],
+      "text": "enterkeyhint"
+    },
+    "https://adactio.com/tags/autocomplete": {
+      "rels": [
+        "tag"
+      ],
+      "text": "autocomplete"
+    },
+    "https://adactio.com/tags/forms": {
+      "rels": [
+        "tag"
+      ],
+      "text": "forms"
+    },
+    "https://adactio.com/tags/mobile": {
+      "rels": [
+        "tag"
+      ],
+      "text": "mobile"
+    },
+    "https://adactio.com/tags/devices": {
+      "rels": [
+        "tag"
+      ],
+      "text": "devices"
+    },
+    "https://adactio.com/tags/keyboards": {
+      "rels": [
+        "tag"
+      ],
+      "text": "keyboards"
+    },
+    "https://adactio.com/tags/markup": {
+      "rels": [
+        "tag"
+      ],
+      "text": "markup"
+    },
+    "https://adactio.com/tags/ux": {
+      "rels": [
+        "tag"
+      ],
+      "text": "ux"
+    },
+    "https://adactio.com/tags/frontend": {
+      "rels": [
+        "tag"
+      ],
+      "text": "frontend"
+    },
+    "https://adactio.com/tags/development": {
+      "rels": [
+        "tag"
+      ],
+      "text": "development"
+    },
+    "https://adactio.medium.com/364bc90fa8e6": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "Medium"
+    },
     "https://adactio.com/notes/19841": {
       "rels": [
         "bookmark"
@@ -2300,29 +2402,11 @@
       ],
       "text": "\n\n7:20pm\n\n"
     },
-    "https://adactio.com/tags/frontend": {
-      "rels": [
-        "tag"
-      ],
-      "text": "frontend"
-    },
-    "https://adactio.com/tags/development": {
-      "rels": [
-        "tag"
-      ],
-      "text": "development"
-    },
     "https://adactio.com/tags/process": {
       "rels": [
         "tag"
       ],
       "text": "process"
-    },
-    "https://adactio.com/tags/html": {
-      "rels": [
-        "tag"
-      ],
-      "text": "html"
     },
     "https://adactio.com/tags/css": {
       "rels": [
@@ -2839,30 +2923,6 @@
         "tag"
       ],
       "text": "sharing"
-    },
-    "https://adactio.com/links/19822": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n5:44pm\n\n"
-    },
-    "https://adactio.com/tags/conditional": {
-      "rels": [
-        "tag"
-      ],
-      "text": "conditional"
-    },
-    "https://adactio.com/tags/figma": {
-      "rels": [
-        "tag"
-      ],
-      "text": "figma"
-    },
-    "https://adactio.com/tags/conditions": {
-      "rels": [
-        "tag"
-      ],
-      "text": "conditions"
     },
     "https://adactio.com/?start=20": {
       "rels": [
