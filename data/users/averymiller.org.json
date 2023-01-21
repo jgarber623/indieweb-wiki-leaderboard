@@ -2,117 +2,63 @@
   "items": [],
   "rels": {
     "stylesheet": [
-      "https://averymiller.org/yunohost/sso/assets/css/ynh_portal.css",
-      "https://averymiller.org/yunohost/sso/assets/themes/default/custom_portal.css"
+      "https://averymiller.org/assets/built/screen.css?v=0bf1ba09bf",
+      "https://averymiller.org/ynh_overlay.css",
+      "https://averymiller.org/ynhtheme/custom_overlay.css"
     ],
-    "icon": [
-      "https://averymiller.org/yunohost/sso/assets/icons/favicon.ico",
-      "https://averymiller.org/yunohost/sso/assets/icons/favicon-196x196.png",
-      "https://averymiller.org/yunohost/sso/assets/icons/favicon-160x160.png",
-      "https://averymiller.org/yunohost/sso/assets/icons/favicon-96x96.png",
-      "https://averymiller.org/yunohost/sso/assets/icons/favicon-16x16.png",
-      "https://averymiller.org/yunohost/sso/assets/icons/favicon-32x32.png"
+    "canonical": [
+      "https://averymiller.org/"
     ],
-    "shortcut": [
-      "https://averymiller.org/yunohost/sso/assets/icons/favicon.ico"
+    "alternate": [
+      "https://averymiller.org/rss/"
     ],
-    "apple-touch-icon": [
-      "https://averymiller.org/yunohost/sso/assets/icons/apple-touch-icon-57x57.png",
-      "https://averymiller.org/yunohost/sso/assets/icons/apple-touch-icon-114x114.png",
-      "https://averymiller.org/yunohost/sso/assets/icons/apple-touch-icon-72x72.png",
-      "https://averymiller.org/yunohost/sso/assets/icons/apple-touch-icon-144x144.png",
-      "https://averymiller.org/yunohost/sso/assets/icons/apple-touch-icon-60x60.png",
-      "https://averymiller.org/yunohost/sso/assets/icons/apple-touch-icon-120x120.png",
-      "https://averymiller.org/yunohost/sso/assets/icons/apple-touch-icon-76x76.png",
-      "https://averymiller.org/yunohost/sso/assets/icons/apple-touch-icon-152x152.png"
+    "noopener": [
+      "https://twitter.com/averydelmiller",
+      "https://ghost.org/"
     ]
   },
   "rel-urls": {
-    "https://averymiller.org/yunohost/sso/assets/css/ynh_portal.css": {
+    "https://averymiller.org/assets/built/screen.css?v=0bf1ba09bf": {
       "rels": [
         "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://averymiller.org/": {
+      "rels": [
+        "canonical"
       ]
     },
-    "https://averymiller.org/yunohost/sso/assets/themes/default/custom_portal.css": {
+    "https://averymiller.org/rss/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Avery Miller",
+      "type": "application/rss+xml"
+    },
+    "https://averymiller.org/ynh_overlay.css": {
       "rels": [
         "stylesheet"
-      ]
-    },
-    "https://averymiller.org/yunohost/sso/assets/icons/favicon.ico": {
-      "rels": [
-        "icon",
-        "shortcut"
-      ]
-    },
-    "https://averymiller.org/yunohost/sso/assets/icons/apple-touch-icon-57x57.png": {
-      "rels": [
-        "apple-touch-icon"
-      ]
-    },
-    "https://averymiller.org/yunohost/sso/assets/icons/apple-touch-icon-114x114.png": {
-      "rels": [
-        "apple-touch-icon"
-      ]
-    },
-    "https://averymiller.org/yunohost/sso/assets/icons/apple-touch-icon-72x72.png": {
-      "rels": [
-        "apple-touch-icon"
-      ]
-    },
-    "https://averymiller.org/yunohost/sso/assets/icons/apple-touch-icon-144x144.png": {
-      "rels": [
-        "apple-touch-icon"
-      ]
-    },
-    "https://averymiller.org/yunohost/sso/assets/icons/apple-touch-icon-60x60.png": {
-      "rels": [
-        "apple-touch-icon"
-      ]
-    },
-    "https://averymiller.org/yunohost/sso/assets/icons/apple-touch-icon-120x120.png": {
-      "rels": [
-        "apple-touch-icon"
-      ]
-    },
-    "https://averymiller.org/yunohost/sso/assets/icons/apple-touch-icon-76x76.png": {
-      "rels": [
-        "apple-touch-icon"
-      ]
-    },
-    "https://averymiller.org/yunohost/sso/assets/icons/apple-touch-icon-152x152.png": {
-      "rels": [
-        "apple-touch-icon"
-      ]
-    },
-    "https://averymiller.org/yunohost/sso/assets/icons/favicon-196x196.png": {
-      "rels": [
-        "icon"
       ],
-      "type": "image/png"
+      "type": "text/css"
     },
-    "https://averymiller.org/yunohost/sso/assets/icons/favicon-160x160.png": {
+    "https://averymiller.org/ynhtheme/custom_overlay.css": {
       "rels": [
-        "icon"
+        "stylesheet"
       ],
-      "type": "image/png"
+      "type": "text/css"
     },
-    "https://averymiller.org/yunohost/sso/assets/icons/favicon-96x96.png": {
+    "https://twitter.com/averydelmiller": {
       "rels": [
-        "icon"
+        "noopener"
       ],
-      "type": "image/png"
+      "title": "Twitter"
     },
-    "https://averymiller.org/yunohost/sso/assets/icons/favicon-16x16.png": {
+    "https://ghost.org/": {
       "rels": [
-        "icon"
+        "noopener"
       ],
-      "type": "image/png"
-    },
-    "https://averymiller.org/yunohost/sso/assets/icons/favicon-32x32.png": {
-      "rels": [
-        "icon"
-      ],
-      "type": "image/png"
+      "text": "Powered by Ghost"
     }
   }
 }

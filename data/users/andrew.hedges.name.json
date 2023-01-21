@@ -1,11 +1,21 @@
 {
   "items": [],
   "rels": {
-    "preconnect": [
-      "https://fonts.googleapis.com/"
+    "preload": [
+      "https://andrew.hedges.name/-/font/darker-grotesque-700.woff2",
+      "https://andrew.hedges.name/-/font/darker-grotesque-500.woff2"
     ],
-    "stylesheet": [
-      "https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700&family=Darker+Grotesque:wght@500&display=swap&text=andrew.hgsmTo%2CtiplfvNxyukIALbC-cWR%E2%80%99EPSGB%23M20D6H%3F5"
+    "external": [
+      "https://a11y-webring.club/",
+      "https://a11y-webring.club/prev",
+      "https://a11y-webring.club/random",
+      "https://a11y-webring.club/next"
+    ],
+    "previous": [
+      "https://a11y-webring.club/prev"
+    ],
+    "next": [
+      "https://a11y-webring.club/next"
     ],
     "me": [
       "https://github.com/segdeha",
@@ -17,15 +27,41 @@
     ]
   },
   "rel-urls": {
-    "https://fonts.googleapis.com/": {
+    "https://andrew.hedges.name/-/font/darker-grotesque-700.woff2": {
       "rels": [
-        "preconnect"
+        "preload"
       ]
     },
-    "https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700&family=Darker+Grotesque:wght@500&display=swap&text=andrew.hgsmTo%2CtiplfvNxyukIALbC-cWR%E2%80%99EPSGB%23M20D6H%3F5": {
+    "https://andrew.hedges.name/-/font/darker-grotesque-500.woff2": {
       "rels": [
-        "stylesheet"
+        "preload"
       ]
+    },
+    "https://a11y-webring.club/": {
+      "rels": [
+        "external"
+      ],
+      "text": "a11y-webring.club"
+    },
+    "https://a11y-webring.club/prev": {
+      "rels": [
+        "external",
+        "previous"
+      ],
+      "text": "Previous website"
+    },
+    "https://a11y-webring.club/random": {
+      "rels": [
+        "external"
+      ],
+      "text": "Random website"
+    },
+    "https://a11y-webring.club/next": {
+      "rels": [
+        "external",
+        "next"
+      ],
+      "text": "Next website"
     },
     "https://github.com/segdeha": {
       "rels": [
