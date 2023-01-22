@@ -853,6 +853,9 @@
     "token_endpoint": [
       "https://beko.famkos.net/wp-json/indieauth/1.0/token"
     ],
+    "indieauth-metadata": [
+      "https://beko.famkos.net/wp-json/indieauth/1.0/metadata"
+    ],
     "preload": [
       "https://beko.famkos.net/wp-content/plugins/code-prettify/prettify/prettify.css"
     ],
@@ -1111,6 +1114,11 @@
     "https://beko.famkos.net/wp-json/indieauth/1.0/token": {
       "rels": [
         "token_endpoint"
+      ]
+    },
+    "https://beko.famkos.net/wp-json/indieauth/1.0/metadata": {
+      "rels": [
+        "indieauth-metadata"
       ]
     },
     "https://beko.famkos.net/wp-content/plugins/code-prettify/prettify/prettify.css": {

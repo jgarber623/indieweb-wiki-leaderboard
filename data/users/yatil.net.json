@@ -38,6 +38,18 @@
     "alternate": [
       "https://yatil.net/feed",
       "https://yatil.net/feed/json"
+    ],
+    "external": [
+      "https://a11y-webring.club/",
+      "https://a11y-webring.club/prev",
+      "https://a11y-webring.club/random",
+      "https://a11y-webring.club/next"
+    ],
+    "previous": [
+      "https://a11y-webring.club/prev"
+    ],
+    "next": [
+      "https://a11y-webring.club/next"
     ]
   },
   "rel-urls": {
@@ -111,6 +123,32 @@
       ],
       "title": "Latest articles",
       "type": "application/json"
+    },
+    "https://a11y-webring.club/": {
+      "rels": [
+        "external"
+      ],
+      "text": "a11y-webring.club"
+    },
+    "https://a11y-webring.club/prev": {
+      "rels": [
+        "external",
+        "previous"
+      ],
+      "text": "Previous website"
+    },
+    "https://a11y-webring.club/random": {
+      "rels": [
+        "external"
+      ],
+      "text": "Random website"
+    },
+    "https://a11y-webring.club/next": {
+      "rels": [
+        "external",
+        "next"
+      ],
+      "text": "Next website"
     }
   }
 }

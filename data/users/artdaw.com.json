@@ -2,8 +2,9 @@
   "items": [],
   "rels": {
     "stylesheet": [
-      "https://www.artdaw.com/assets/built/screen.css?v=474e417faa",
-      "https://www.artdaw.com/public/cards.min.css?v=474e417faa"
+      "https://www.artdaw.com/assets/built/screen.css?v=0df9b7bd80",
+      "https://www.artdaw.com/public/cards.min.css?v=0df9b7bd80",
+      "https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism-tomorrow.min.css"
     ],
     "icon": [
       "https://www.artdaw.com/content/images/size/w256h256/2023/01/B3AB2D07-36BF-4C5D-84E6-B2D219BD5B93-4.jpeg"
@@ -17,12 +18,13 @@
     "webmention": [
       "https://www.artdaw.com/webmentions/receive/"
     ],
-    "noopener": [
-      "https://ghost.org/"
+    "me": [
+      "https://mstdn.social/@artdaw",
+      "https://www.artdaw.com/rss"
     ]
   },
   "rel-urls": {
-    "https://www.artdaw.com/assets/built/screen.css?v=474e417faa": {
+    "https://www.artdaw.com/assets/built/screen.css?v=0df9b7bd80": {
       "rels": [
         "stylesheet"
       ]
@@ -50,17 +52,28 @@
         "webmention"
       ]
     },
-    "https://www.artdaw.com/public/cards.min.css?v=474e417faa": {
+    "https://www.artdaw.com/public/cards.min.css?v=0df9b7bd80": {
       "rels": [
         "stylesheet"
       ],
       "type": "text/css"
     },
-    "https://ghost.org/": {
+    "https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism-tomorrow.min.css": {
       "rels": [
-        "noopener"
+        "stylesheet"
+      ]
+    },
+    "https://mstdn.social/@artdaw": {
+      "rels": [
+        "me"
       ],
-      "text": "Ghost"
+      "text": "Mastodon"
+    },
+    "https://www.artdaw.com/rss": {
+      "rels": [
+        "me"
+      ],
+      "text": "RSS"
     }
   }
 }

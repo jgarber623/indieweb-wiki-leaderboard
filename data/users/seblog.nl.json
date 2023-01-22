@@ -39,6 +39,136 @@
           ],
           "properties": {
             "name": [
+              "Vandaag geleerd in HTML en CSS"
+            ],
+            "content": [
+              {
+                "html": "<p>Ik ben dus mijn <a href=\"https://seblog.nl/2023/01/21/2/rss-reader-uitmesten\">RSS-reader aan het uitmesten</a> en daarbij leerde ik een paar dingetjes over HTML en CSS die ik kon niet wist of kende.</p>\n<p>Bijvoorbeeld dat je dus een <a href=\"https://iamkate.com/code/tree-views/\">uitklapbare boomstructuur kan maken</a> met alleen maar HTML en CSS, dus zonder Javascript, door gebruik te maken van <code>&lt;ul&gt;</code> en <code>&lt;li&gt;</code>, met daarin <code>&lt;details&gt;</code> en <code>&lt;summary&gt;</code>. Vooral die laatste twee elementen kende ik niet, weer wat geleerd.</p>\n<p>In CSS-land zijn ze kennelijk ook bezig met een <a href=\"https://blog.jim-nielsen.com/2023/ok-lch-im-convinced/\">nieuwe manier van kleuren uitdrukken</a>, genaamd LCH of <code>oklch</code>. Wie <code>rgb</code> of <code>cmyk</code> gebruikt, specificeert zelf hoeveel licht of inkt er moet worden gebruikt om de kleur te maken. In feite is dat een hele imperatieve manier van een kleur beschrijven. Een meer declaratieve manier is <code>hsl</code>, waarbij je je kleur beschrijft in termen van tint, verzadiging en helderheid. Deze methode heeft echter nog steeds een directe vertaling naar <code>rgb</code> en is dus een 'leaky abstraction'. De <code>lch</code> is een abstractie die rekening houdt met welke kleuren wij als mensen kunnen waarnemen, en maakt berekeningen met kleuren ('deze kleur maar dan iets donkerder') veel makkelijker.</p>\n<p>Verder kwam Hidde met <a href=\"https://hidde.blog/flex-grow-illustration/\">een leuke manier</a> om flexbox te gebruiken voor data-visualisatie.</p>",
+                "value": "Ik ben dus mijn RSS-reader aan het uitmesten en daarbij leerde ik een paar dingetjes over HTML en CSS die ik kon niet wist of kende.\nBijvoorbeeld dat je dus een uitklapbare boomstructuur kan maken met alleen maar HTML en CSS, dus zonder Javascript, door gebruik te maken van <ul> en <li>, met daarin <details> en <summary>. Vooral die laatste twee elementen kende ik niet, weer wat geleerd.\nIn CSS-land zijn ze kennelijk ook bezig met een nieuwe manier van kleuren uitdrukken, genaamd LCH of oklch. Wie rgb of cmyk gebruikt, specificeert zelf hoeveel licht of inkt er moet worden gebruikt om de kleur te maken. In feite is dat een hele imperatieve manier van een kleur beschrijven. Een meer declaratieve manier is hsl, waarbij je je kleur beschrijft in termen van tint, verzadiging en helderheid. Deze methode heeft echter nog steeds een directe vertaling naar rgb en is dus een 'leaky abstraction'. De lch is een abstractie die rekening houdt met welke kleuren wij als mensen kunnen waarnemen, en maakt berekeningen met kleuren ('deze kleur maar dan iets donkerder') veel makkelijker.\nVerder kwam Hidde met een leuke manier om flexbox te gebruiken voor data-visualisatie."
+              }
+            ],
+            "url": [
+              "https://seblog.nl/2023/01/21/4/vandaag-geleerd-in-html-en-css"
+            ],
+            "published": [
+              "2023-01-21T13:47:32+0000"
+            ],
+            "updated": [
+              "2023-01-21T13:47:32+0000"
+            ],
+            "uid": [
+              "https://seblog.nl/2023/021/4"
+            ],
+            "author": [
+              "https://seblog.nl/"
+            ],
+            "category": [
+              "html",
+              "css"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Naming things"
+            ],
+            "content": [
+              {
+                "html": "<p>Er zijn een paar gevleugelde uitspraken die ik vaak gebruik op werk (zoals '500 is nooit het goede antwoord') en dit software-cliché is waarschijnlijk de aanvoerder op die lijst:</p>\n<blockquote>\n<p>There are only two hard problems in computer science: naming things, cache invalidation and off-by-one errors.</p>\n</blockquote>\n<p>Vooral omdat het waar is: dingen een naam geven is moeilijk, en zonder namen zijn het eigenlijk alleen maar berekeningen zonder betekenis. Er valt pas geld te verdienen als er betekenis – en dus waarde – aan die getallen zitten.</p>\n<p>Maar nu las ik een <a href=\"https://ntietz.com/blog/name-your-projects-cutesy-things/\">stukje</a> van ntietz, waarin i signaleert dat beschrijvende namen voor stukken code problematisch zijn. De <code>OrderCreateService</code> maakt waarschijnlijk een order aan, maar zodra hij ook mails gaat sturen naar de klant, moet het dan niet de <code>OrderCreateAndEmailSendService</code> zijn? Succes met overal in je codebase de naam van de service aanpassen.</p>\n<p>In plaats daarvan, zegt ntietz, moeten namen vooral leuk zijn (mijn vertaling). Diens belangrijkste punt: namen zijn een manier om identiteit uit te drukken, niet om te beschrijven. Het artikel noemt verder geen voorbeelden, maar in mijn hoofd heb ik nu een service genaamd <code>Truus</code> die de orders aanmaakt. De e-mail? 'O ja, die stuurt <code>Truus</code>.'</p>\n<p>Ik denk niet dat ik mijn collega's overtuigd krijg, maar ik vind het een geweldig idee.</p>",
+                "value": "Er zijn een paar gevleugelde uitspraken die ik vaak gebruik op werk (zoals '500 is nooit het goede antwoord') en dit software-cliché is waarschijnlijk de aanvoerder op die lijst:\n\nThere are only two hard problems in computer science: naming things, cache invalidation and off-by-one errors.\n\nVooral omdat het waar is: dingen een naam geven is moeilijk, en zonder namen zijn het eigenlijk alleen maar berekeningen zonder betekenis. Er valt pas geld te verdienen als er betekenis – en dus waarde – aan die getallen zitten.\nMaar nu las ik een stukje van ntietz, waarin i signaleert dat beschrijvende namen voor stukken code problematisch zijn. De OrderCreateService maakt waarschijnlijk een order aan, maar zodra hij ook mails gaat sturen naar de klant, moet het dan niet de OrderCreateAndEmailSendService zijn? Succes met overal in je codebase de naam van de service aanpassen.\nIn plaats daarvan, zegt ntietz, moeten namen vooral leuk zijn (mijn vertaling). Diens belangrijkste punt: namen zijn een manier om identiteit uit te drukken, niet om te beschrijven. Het artikel noemt verder geen voorbeelden, maar in mijn hoofd heb ik nu een service genaamd Truus die de orders aanmaakt. De e-mail? 'O ja, die stuurt Truus.'\nIk denk niet dat ik mijn collega's overtuigd krijg, maar ik vind het een geweldig idee."
+              }
+            ],
+            "url": [
+              "https://seblog.nl/2023/01/21/3/naming-things"
+            ],
+            "published": [
+              "2023-01-21T13:45:39+0000"
+            ],
+            "updated": [
+              "2023-01-21T13:45:39+0000"
+            ],
+            "uid": [
+              "https://seblog.nl/2023/021/3"
+            ],
+            "author": [
+              "https://seblog.nl/"
+            ],
+            "category": [
+              "software",
+              "naming"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<p>Deze week kwam ik tot de conclusie dat ik dit hele jaar mijn RSS-reader nog niet had geopend, en die periode bevat natuurlijk ook de kerstweek (Eerste tot en met Zevende Kerstdag), dus er was nogal een voorraadje ontstaan. Zoals altijd denk ik nu 'ik moet ook meer bloggen' en daarom vandaag dus een paar posts achter elkaar, over dingen die ik tegenkwam in mijn RSS-reader, zodat die ook in jullie RSS-reader staan.</p>",
+                "value": "Deze week kwam ik tot de conclusie dat ik dit hele jaar mijn RSS-reader nog niet had geopend, en die periode bevat natuurlijk ook de kerstweek (Eerste tot en met Zevende Kerstdag), dus er was nogal een voorraadje ontstaan. Zoals altijd denk ik nu 'ik moet ook meer bloggen' en daarom vandaag dus een paar posts achter elkaar, over dingen die ik tegenkwam in mijn RSS-reader, zodat die ook in jullie RSS-reader staan."
+              }
+            ],
+            "url": [
+              "https://seblog.nl/2023/01/21/2/rss-reader-uitmesten"
+            ],
+            "published": [
+              "2023-01-21T13:44:47+0000"
+            ],
+            "updated": [
+              "2023-01-21T13:44:47+0000"
+            ],
+            "uid": [
+              "https://seblog.nl/2023/021/2"
+            ],
+            "author": [
+              "https://seblog.nl/"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "url": [
+              "https://seblog.nl/2023/01/21/1/like",
+              "https://seblog.nl/2023/01/21/1/like"
+            ],
+            "content": [
+              "Seb vindt Data-informed flex-grow for illustration purposes van Hidde de Vries leuk."
+            ],
+            "name": [
+              "Seb vindt Data-informed flex-grow for illustration purposes van Hidde de Vries leuk."
+            ],
+            "like-of": [
+              "https://hidde.blog/flex-grow-illustration/"
+            ],
+            "published": [
+              "2023-01-21T12:19:17+0000"
+            ],
+            "updated": [
+              "2023-01-21T12:19:17+0000"
+            ],
+            "uid": [
+              "https://seblog.nl/2023/021/1"
+            ],
+            "author": [
+              "https://seblog.nl/"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               "Spelletjesweek"
             ],
             "content": [
@@ -588,135 +718,6 @@
             ],
             "uid": [
               "https://seblog.nl/2022/310/4"
-            ],
-            "author": [
-              "https://seblog.nl/"
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Poging tot Mastodon"
-            ],
-            "content": [
-              {
-                "html": "<p>In navolging van velen sinds het aantreden van de nieuwe Oppervogelman ben ik vandaag bezig geweest met 'overstappen' naar Mastodon. In mijn geval betekende dat het opsnorren van mijn oude account, en een zoektocht naar de vraag: hoe werkt dat eigenlijk, Activitypub?</p>\n<p>Als achtergrond: Mastodon's mogelijkheid om over meerdere servers heen met elkaar te kunnen praten is niet beperkt tot alleen servers die Mastodon-software draaien. Het is gebouwd op een open standaard die Activitypub heet. Ik heb vandaag een poging gedaan om die een beetje beter te begrijpen.</p>\n<p>De volledige uitleg ga ik hier niet geven, want ik ben er ook maar pas net ingedoken. Maar interessante artikelen zijn <a href=\"https://blog.joinmastodon.org/2018/06/how-to-implement-a-basic-activitypub-server/\">deze van Eugen Rochko</a>, de maker van Mastodon, en ook de <a href=\"https://blog.joinmastodon.org/2018/07/how-to-make-friends-and-verify-requests/\">followup ervan</a>. Eugen legt hierin uit hoe je met wat statische bestanden en een beetje Ruby een paar Activitypub-dingen kan doen.</p>\n<p>Een van die dingen heb ik toegepast: je kan dit domein nu webfingeren (jaja) en daarmee kan je mijn Activitypub Actor vinden, die weer leidt tot een Activitypub Inbox. Op het moment van schrijven is het er allemaal wel, maar ik beloof niets voor de toekomst, want ik ben er nog niet helemaal over uit of ik dit echt wil.</p>\n<p>Het gevolg van het bovenstaande is dat je nu op <code>@seb@seblog.nl</code> kan zoeken in je favoriete Mastodon-instance, en dat je mij daar dan ziet verschijnen. Je kan daar naar alle waarschijnlijkheid ook op 'Follow' drukken en daar krijg ik dan een melding over. Vervolgens doe ik daar helemaal niets mee, want zo ver ben ik gewoon nog niet.</p>\n<p>Ik heb veel horrorverhalen gehoord over Activitypub en ik moet zeggen dat ze deels waar zijn: het is inderdaad behoorlijk veel gedoe allemaal. Om een bericht te accepteren moet je dingen doen met public en private keys, waarvan ik nog steeds denk dat ik het niet helemaal goed doe.</p>\n<p>Bovendien ontvang ik sinds ik mijn naam bij Mastodon.social heb ingevoerd allerhande berichten over verwijderde gebruikers. Ik heb nooit om een lijst van alle gebruikers gevraagd, dus ik ben ook niet per se geïnteresseerd in elke verwijderde gebruiker, maar ik ontvang er nu wel bericht over. Ik hoop niet dat elke server in de Fediverse dit gaat doen, want dan ben ik er wel snel klaar mee.</p>\n<p>Misschien dat ik morgen nog wat dieper duik, maar zoals gezegd beloof ik niets en verwijder ik de functionaliteit misschien zelfs wel. Het idee is alleen zo vet: met zo veel meer mensen in contact staan via een dergelijk protocol.</p>\n<p>Wat verder ook niet onvermeld moet blijven is <a href=\"https://tinysubversions.com/notes/reading-activitypub/\">deze geweldige post</a> over hoe je de verschillende Activitypub specs zou moeten lezen, in welke volgorde en hoe de boel zich tot elkaar verhoudt. Maar dat dus misschien voor morgen. Tot toots.</p>",
-                "value": "In navolging van velen sinds het aantreden van de nieuwe Oppervogelman ben ik vandaag bezig geweest met 'overstappen' naar Mastodon. In mijn geval betekende dat het opsnorren van mijn oude account, en een zoektocht naar de vraag: hoe werkt dat eigenlijk, Activitypub?\nAls achtergrond: Mastodon's mogelijkheid om over meerdere servers heen met elkaar te kunnen praten is niet beperkt tot alleen servers die Mastodon-software draaien. Het is gebouwd op een open standaard die Activitypub heet. Ik heb vandaag een poging gedaan om die een beetje beter te begrijpen.\nDe volledige uitleg ga ik hier niet geven, want ik ben er ook maar pas net ingedoken. Maar interessante artikelen zijn deze van Eugen Rochko, de maker van Mastodon, en ook de followup ervan. Eugen legt hierin uit hoe je met wat statische bestanden en een beetje Ruby een paar Activitypub-dingen kan doen.\nEen van die dingen heb ik toegepast: je kan dit domein nu webfingeren (jaja) en daarmee kan je mijn Activitypub Actor vinden, die weer leidt tot een Activitypub Inbox. Op het moment van schrijven is het er allemaal wel, maar ik beloof niets voor de toekomst, want ik ben er nog niet helemaal over uit of ik dit echt wil.\nHet gevolg van het bovenstaande is dat je nu op @seb@seblog.nl kan zoeken in je favoriete Mastodon-instance, en dat je mij daar dan ziet verschijnen. Je kan daar naar alle waarschijnlijkheid ook op 'Follow' drukken en daar krijg ik dan een melding over. Vervolgens doe ik daar helemaal niets mee, want zo ver ben ik gewoon nog niet.\nIk heb veel horrorverhalen gehoord over Activitypub en ik moet zeggen dat ze deels waar zijn: het is inderdaad behoorlijk veel gedoe allemaal. Om een bericht te accepteren moet je dingen doen met public en private keys, waarvan ik nog steeds denk dat ik het niet helemaal goed doe.\nBovendien ontvang ik sinds ik mijn naam bij Mastodon.social heb ingevoerd allerhande berichten over verwijderde gebruikers. Ik heb nooit om een lijst van alle gebruikers gevraagd, dus ik ben ook niet per se geïnteresseerd in elke verwijderde gebruiker, maar ik ontvang er nu wel bericht over. Ik hoop niet dat elke server in de Fediverse dit gaat doen, want dan ben ik er wel snel klaar mee.\nMisschien dat ik morgen nog wat dieper duik, maar zoals gezegd beloof ik niets en verwijder ik de functionaliteit misschien zelfs wel. Het idee is alleen zo vet: met zo veel meer mensen in contact staan via een dergelijk protocol.\nWat verder ook niet onvermeld moet blijven is deze geweldige post over hoe je de verschillende Activitypub specs zou moeten lezen, in welke volgorde en hoe de boel zich tot elkaar verhoudt. Maar dat dus misschien voor morgen. Tot toots."
-              }
-            ],
-            "url": [
-              "https://seblog.nl/2022/11/05/3/poging-tot-mastodon"
-            ],
-            "published": [
-              "2022-11-05T20:13:38+0000"
-            ],
-            "updated": [
-              "2022-11-05T20:13:38+0000"
-            ],
-            "uid": [
-              "https://seblog.nl/2022/309/3"
-            ],
-            "author": [
-              "https://seblog.nl/"
-            ],
-            "category": [
-              "mastodon",
-              "activitypub"
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "content": [
-              {
-                "html": "<p>Ik heb uitgevonden dat ik nog een account op Mastodon had liggen uit 2016. Op dit moment accepteert die instance (Mastodon.social) geen nieuwe gebruikers meer, mede om decentralisatie te promoten, maar misschien ook om de load op de server beheersbaar te houden.</p>\n<p>Die instance heeft dan wel een interessant extra 'probleem': als er veel mensen al een account hadden kunnen ze die allemaal activeren, om zo de server het alsnog zwaar te laten hebben. Een Mastodon zombie apocalyps.</p>",
-                "value": "Ik heb uitgevonden dat ik nog een account op Mastodon had liggen uit 2016. Op dit moment accepteert die instance (Mastodon.social) geen nieuwe gebruikers meer, mede om decentralisatie te promoten, maar misschien ook om de load op de server beheersbaar te houden.\nDie instance heeft dan wel een interessant extra 'probleem': als er veel mensen al een account hadden kunnen ze die allemaal activeren, om zo de server het alsnog zwaar te laten hebben. Een Mastodon zombie apocalyps."
-              }
-            ],
-            "url": [
-              "https://seblog.nl/2022/11/05/2/mastodon-zombie-apocalyps"
-            ],
-            "published": [
-              "2022-11-05T11:40:15+0000"
-            ],
-            "updated": [
-              "2022-11-05T11:41:47+0000"
-            ],
-            "syndication": [
-              "https://mastodon.social/@sebsel/109291009471049235"
-            ],
-            "uid": [
-              "https://seblog.nl/2022/309/2"
-            ],
-            "author": [
-              "https://seblog.nl/"
-            ],
-            "category": [
-              "mastodon"
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "url": [
-              "https://seblog.nl/2022/11/05/1/like",
-              "https://seblog.nl/2022/11/05/1/like"
-            ],
-            "content": [
-              "Seb vindt Trying Out OVPay With Hermes and HTM van Henrique Dias leuk."
-            ],
-            "name": [
-              "Seb vindt Trying Out OVPay With Hermes and HTM van Henrique Dias leuk."
-            ],
-            "like-of": [
-              "https://hacdias.com/2022/11/04/trying-out-ovpay"
-            ],
-            "published": [
-              "2022-11-05T09:16:05+0000"
-            ],
-            "updated": [
-              "2022-11-05T09:16:05+0000"
-            ],
-            "uid": [
-              "https://seblog.nl/2022/309/1"
-            ],
-            "author": [
-              "https://seblog.nl/"
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "content": [
-              {
-                "html": "<p>Ik heb het een tijdje volgehouden, maar vandaag is het zo ver: ik heb de lader van mijn Apple Watch niet bij me, maar hij is wel leeg. Sinds 16 september heb ik de Series 8 en die draag ik nu ook 's nachts, maar dat betekent dat ik ergens op de dag moet bijladen. Wel 7 hele weken goed gegaan, maar vandaag dus niet.</p>",
-                "value": "Ik heb het een tijdje volgehouden, maar vandaag is het zo ver: ik heb de lader van mijn Apple Watch niet bij me, maar hij is wel leeg. Sinds 16 september heb ik de Series 8 en die draag ik nu ook 's nachts, maar dat betekent dat ik ergens op de dag moet bijladen. Wel 7 hele weken goed gegaan, maar vandaag dus niet."
-              }
-            ],
-            "url": [
-              "https://seblog.nl/2022/11/04/2/watch-leeg"
-            ],
-            "published": [
-              "2022-11-04T08:30:22+0000"
-            ],
-            "updated": [
-              "2022-11-04T08:30:22+0000"
-            ],
-            "uid": [
-              "https://seblog.nl/2022/308/2"
             ],
             "author": [
               "https://seblog.nl/"

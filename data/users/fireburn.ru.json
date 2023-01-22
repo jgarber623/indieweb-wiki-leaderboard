@@ -46,6 +46,35 @@
               "https://fireburn.ru/"
             ],
             "url": [
+              "https://fireburn.ru/posts/atEPX80"
+            ],
+            "uid": [
+              "https://fireburn.ru/posts/atEPX80"
+            ],
+            "published": [
+              "2023-01-22T06:48:40.080627305+03:00"
+            ],
+            "category": [
+              "programming",
+              "Kittybox"
+            ],
+            "content": [
+              {
+                "html": "<p>I have remembered an old easter egg in my website, and decided to try recreating it using <a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Counter_Styles/Using_CSS_counters\">CSS counters</a>, which I have recently learned about. Here’s some CSS:</p>\n\n<pre><code class=\"language-css\">@counter-style rainbow-hearts {\n    system: cyclic;\n    symbols: \"❤️\" \"🧡\" \"💛\" \"💚\" \"💙\" \"💜\";\n}\nbody {\n    counter-reset: like-icons;\n}\nspan.like-icon::before {\n    counter-increment: like-icons;\n    content: \"\" counter(like-icons, rainbow-hearts);\n}\nspan.like-icon-label {\n    display: none;\n}</code></pre>\n\n<p>Using it with the following HTML will do the trick:</p>\n\n<pre><code class=\"language-html\">&lt;span class=\"like-icon\" aria-label=\"liked\"&gt;&lt;span class=\"like-icon-label\" aria-hidden=\"true\"&gt;❤️&lt;/span&gt;&lt;/span&gt;</code></pre>\n\n<p>I tried to make it compatible with screen readers and allow for a fallback icons for browsers not supporting counters (apparently text browsers don’t do a lot of CSS). This also means the CSS snippet can be excluded from the CSS sent to the browser if you don’t like having fun.</p>",
+                "value": "I have remembered an old easter egg in my website, and decided to try recreating it using CSS counters, which I have recently learned about. Here’s some CSS:\n\n@counter-style rainbow-hearts {\n    system: cyclic;\n    symbols: \"❤️\" \"🧡\" \"💛\" \"💚\" \"💙\" \"💜\";\n}\nbody {\n    counter-reset: like-icons;\n}\nspan.like-icon::before {\n    counter-increment: like-icons;\n    content: \"\" counter(like-icons, rainbow-hearts);\n}\nspan.like-icon-label {\n    display: none;\n}\n\nUsing it with the following HTML will do the trick:\n\n<span class=\"like-icon\" aria-label=\"liked\"><span class=\"like-icon-label\" aria-hidden=\"true\">❤️</span></span>\n\nI tried to make it compatible with screen readers and allow for a fallback icons for browsers not supporting counters (apparently text browsers don’t do a lot of CSS). This also means the CSS snippet can be excluded from the CSS sent to the browser if you don’t like having fun."
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              "https://fireburn.ru/"
+            ],
+            "url": [
               "https://fireburn.ru/posts/ar9wo_K"
             ],
             "uid": [
@@ -557,34 +586,6 @@
               }
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "author": [
-              "https://fireburn.ru/"
-            ],
-            "url": [
-              "https://fireburn.ru/posts/ajyssrQ"
-            ],
-            "uid": [
-              "https://fireburn.ru/posts/ajyssrQ"
-            ],
-            "published": [
-              "2022-11-08T22:58:22.284226662+03:00"
-            ],
-            "category": [
-              "telegram"
-            ],
-            "content": [
-              {
-                "html": "<p>i bought telegram premium by accident 💀💀💀</p>\n\n<p>ok not really by accident, but I wanted to send it to a friend, and turns out you need to have premium to gift premium which is really dumb</p>\n\n<p>i suppose i shall use my right to free speech to say: f💀ck you, pavel durov</p>",
-                "value": "i bought telegram premium by accident 💀💀💀\n\nok not really by accident, but I wanted to send it to a friend, and turns out you need to have premium to gift premium which is really dumb\n\ni suppose i shall use my right to free speech to say: f💀ck you, pavel durov"
-              }
-            ]
-          }
         }
       ]
     }
@@ -622,7 +623,7 @@
       "https://fireburn.ru/feeds/main"
     ],
     "prev": [
-      "https://fireburn.ru/feeds/main?after=https://fireburn.ru/posts/ajyssrQ"
+      "https://fireburn.ru/feeds/main?after=https://fireburn.ru/posts/ak4giNH"
     ]
   },
   "rel-urls": {
@@ -684,7 +685,7 @@
       ],
       "text": "Main feed"
     },
-    "https://fireburn.ru/feeds/main?after=https://fireburn.ru/posts/ajyssrQ": {
+    "https://fireburn.ru/feeds/main?after=https://fireburn.ru/posts/ak4giNH": {
       "rels": [
         "prev"
       ],
