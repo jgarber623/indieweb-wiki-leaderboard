@@ -34,8 +34,8 @@
       "https://fonts.googleapis.com/"
     ],
     "alternate": [
-      "https://spieltagsgedichte.de/?feed=rss2",
-      "https://spieltagsgedichte.de/?feed=comments-rss2"
+      "https://spieltagsgedichte.de/feed/",
+      "https://spieltagsgedichte.de/comments/feed/"
     ],
     "stylesheet": [
       "https://spieltagsgedichte.de/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1",
@@ -53,7 +53,7 @@
       "https://fonts.googleapis.com/css?family=Arvo%3A400%2Citalic%2C700%2C700italic&subset=latin%2Clatin-ext&ver=6.1.1"
     ],
     "https://api.w.org/": [
-      "https://spieltagsgedichte.de/index.php?rest_route=/"
+      "https://spieltagsgedichte.de/wp-json/"
     ],
     "EditURI": [
       "https://spieltagsgedichte.de/xmlrpc.php?rsd"
@@ -65,13 +65,13 @@
       "https://aperture.p3k.io/microsub/824"
     ],
     "authorization_endpoint": [
-      "https://spieltagsgedichte.de/index.php?rest_route=/indieauth/1.0/auth"
+      "https://spieltagsgedichte.de/wp-json/indieauth/1.0/auth"
     ],
     "token_endpoint": [
-      "https://spieltagsgedichte.de/index.php?rest_route=/indieauth/1.0/token"
+      "https://spieltagsgedichte.de/wp-json/indieauth/1.0/token"
     ],
     "indieauth-metadata": [
-      "https://spieltagsgedichte.de/index.php?rest_route=/indieauth/1.0/metadata"
+      "https://spieltagsgedichte.de/wp-json/indieauth/1.0/metadata"
     ],
     "me": [
       "https://github.com/felixwenzel73",
@@ -88,10 +88,10 @@
       "https://spieltagsgedichte.de/wp-content/uploads/2023/01/cropped-Felix_Social_Media_Profile_corrected-180x180.jpg"
     ],
     "micropub_media": [
-      "https://spieltagsgedichte.de/index.php?rest_route=/micropub/1.0/media"
+      "https://spieltagsgedichte.de/wp-json/micropub/1.0/media"
     ],
     "micropub": [
-      "https://spieltagsgedichte.de/index.php?rest_route=/micropub/1.0/endpoint"
+      "https://spieltagsgedichte.de/wp-json/micropub/1.0/endpoint"
     ]
   },
   "rel-urls": {
@@ -100,14 +100,14 @@
         "dns-prefetch"
       ]
     },
-    "https://spieltagsgedichte.de/?feed=rss2": {
+    "https://spieltagsgedichte.de/feed/": {
       "rels": [
         "alternate"
       ],
       "title": "Spieltagsgedichte » Feed",
       "type": "application/rss+xml"
     },
-    "https://spieltagsgedichte.de/?feed=comments-rss2": {
+    "https://spieltagsgedichte.de/comments/feed/": {
       "rels": [
         "alternate"
       ],
@@ -205,7 +205,7 @@
       "media": "all",
       "type": "text/css"
     },
-    "https://spieltagsgedichte.de/index.php?rest_route=/": {
+    "https://spieltagsgedichte.de/wp-json/": {
       "rels": [
         "https://api.w.org/"
       ]
@@ -228,17 +228,17 @@
         "microsub"
       ]
     },
-    "https://spieltagsgedichte.de/index.php?rest_route=/indieauth/1.0/auth": {
+    "https://spieltagsgedichte.de/wp-json/indieauth/1.0/auth": {
       "rels": [
         "authorization_endpoint"
       ]
     },
-    "https://spieltagsgedichte.de/index.php?rest_route=/indieauth/1.0/token": {
+    "https://spieltagsgedichte.de/wp-json/indieauth/1.0/token": {
       "rels": [
         "token_endpoint"
       ]
     },
-    "https://spieltagsgedichte.de/index.php?rest_route=/indieauth/1.0/metadata": {
+    "https://spieltagsgedichte.de/wp-json/indieauth/1.0/metadata": {
       "rels": [
         "indieauth-metadata"
       ]
@@ -278,12 +278,12 @@
         "apple-touch-icon"
       ]
     },
-    "https://spieltagsgedichte.de/index.php?rest_route=/micropub/1.0/media": {
+    "https://spieltagsgedichte.de/wp-json/micropub/1.0/media": {
       "rels": [
         "micropub_media"
       ]
     },
-    "https://spieltagsgedichte.de/index.php?rest_route=/micropub/1.0/endpoint": {
+    "https://spieltagsgedichte.de/wp-json/micropub/1.0/endpoint": {
       "rels": [
         "micropub"
       ]

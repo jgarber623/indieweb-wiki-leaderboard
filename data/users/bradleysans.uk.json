@@ -1,5 +1,42 @@
 {
-  "items": [],
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "url": [
+          "https://bradleysans.uk/",
+          "https://bradleysans.uk/",
+          "https://twitter.com/bradleysans"
+        ],
+        "uid": [
+          "https://bradleysans.uk/"
+        ],
+        "name": [
+          "Bradley Sansom"
+        ],
+        "photo": [
+          {
+            "value": "https://bradleysans.uk/images/me/me-square.jpeg",
+            "alt": "Bradley Sansom"
+          }
+        ],
+        "note": [
+          "Hi! I like to make things. I'm a designer, a creator, a developer, and many things\n                besides. Currently studying for BA Graphic Design at the Manchester School of Art"
+        ],
+        "email": [
+          "mailto:bradley-sansom@outlook.com"
+        ],
+        "latitude": [
+          "53.478056"
+        ],
+        "longitude": [
+          "-2.244722"
+        ]
+      }
+    }
+  ],
   "rels": {
     "stylesheet": [
       "https://bradleysans.uk/styles/style.css",
@@ -8,13 +45,22 @@
     "alternate": [
       "https://bradleysans.uk/projects/posts.xml"
     ],
+    "webmention": [
+      "https://webmention.io/bradleysans.uk/webmention"
+    ],
+    "pingback": [
+      "https://webmention.io/bradleysans.uk/xmlrpc"
+    ],
     "me": [
       "mailto:bradley-sansom@outlook.com",
       "https://github.com/bradleysansom",
       "https://linkedin.com/in/bradleysans",
       "https://twitter.com/bradleysans",
       "https://instagram.com/bradleysans",
-      "https://mastodon.me.uk/@bradleysans"
+      "https://mastodon.me.uk/@bradleysans",
+      "https://youtube.com/@bradleysans",
+      "https://en.wikipedia.org/wiki/User:BradleySans",
+      "https://orcid.org/0000-0002-9126-5180"
     ]
   },
   "rel-urls": {
@@ -34,6 +80,16 @@
       ],
       "title": "Bradley Sansom updates",
       "type": "application/rss+xml"
+    },
+    "https://webmention.io/bradleysans.uk/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://webmention.io/bradleysans.uk/xmlrpc": {
+      "rels": [
+        "pingback"
+      ]
     },
     "mailto:bradley-sansom@outlook.com": {
       "rels": [
@@ -64,6 +120,24 @@
       "rels": [
         "me"
       ]
+    },
+    "https://youtube.com/@bradleysans": {
+      "rels": [
+        "me"
+      ],
+      "text": "@bradleysans"
+    },
+    "https://en.wikipedia.org/wiki/User:BradleySans": {
+      "rels": [
+        "me"
+      ],
+      "text": "bradleysans"
+    },
+    "https://orcid.org/0000-0002-9126-5180": {
+      "rels": [
+        "me"
+      ],
+      "text": "0000-0002-9126-5180"
     }
   }
 }
