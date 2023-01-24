@@ -1,30 +1,20 @@
 {
-  "items": [
-    {
-      "type": [
-        "h-card"
-      ],
-      "properties": {
-        "url": [
-          "https://nezteb.net/about/"
-        ],
-        "photo": [
-          "https://micro.blog/Nezteb/avatar.jpg"
-        ],
-        "name": [
-          "Noah Betzen"
-        ],
-        "role": [
-          "Follow @Nezteb on Micro.blog."
-        ]
-      }
-    }
-  ],
+  "items": [],
   "rels": {
+    "preload": [
+      "https://nezteb.net/app.min.css",
+      "https://nezteb.net/theme.png",
+      "https://nezteb.net/twitter.svg",
+      "https://nezteb.net/github.svg",
+      "https://nezteb.net/instagram.svg",
+      "https://nezteb.net/microdotblog.svg",
+      "https://nezteb.net/mastodon.svg",
+      "https://nezteb.net/linkedin.svg",
+      "https://nezteb.net/buymeacoffee.svg"
+    ],
     "stylesheet": [
-      "https://nezteb.net/assets/css/style.css?1674353364",
-      "https://nezteb.net/assets/css/highlight.css?1674353364",
-      "https://nezteb.net/custom.css?1674353364"
+      "https://nezteb.net/app.min.css",
+      "https://nezteb.net/custom.css?1674542015"
     ],
     "icon": [
       "https://micro.blog/Nezteb/favicon.png"
@@ -32,18 +22,19 @@
     "shortcut": [
       "https://micro.blog/Nezteb/favicon.png"
     ],
+    "apple-touch-icon": [
+      "https://micro.blog/Nezteb/favicon.png"
+    ],
     "alternate": [
       "https://nezteb.net/feed.xml",
-      "https://nezteb.net/podcast.xml",
       "https://nezteb.net/feed.json"
-    ],
-    "EditURI": [
-      "https://nezteb.net/rsd.xml"
     ],
     "me": [
       "https://micro.blog/Nezteb",
       "https://twitter.com/Nezteb",
-      "https://github.com/Nezteb"
+      "https://github.com/Nezteb",
+      "https://genserver.social/Nezteb",
+      "https://linkedin.com/in/Nezteb"
     ],
     "authorization_endpoint": [
       "https://micro.blog/indieauth/auth"
@@ -62,22 +53,62 @@
     ],
     "subscribe": [
       "https://micro.blog/users/follow"
+    ],
+    "noopener": [
+      "https://gohugo.io/",
+      "https://micro.blog/"
     ]
   },
   "rel-urls": {
-    "https://nezteb.net/assets/css/style.css?1674353364": {
+    "https://nezteb.net/app.min.css": {
+      "rels": [
+        "preload",
+        "stylesheet"
+      ]
+    },
+    "https://nezteb.net/custom.css?1674542015": {
       "rels": [
         "stylesheet"
       ]
     },
-    "https://nezteb.net/assets/css/highlight.css?1674353364": {
+    "https://nezteb.net/theme.png": {
       "rels": [
-        "stylesheet"
+        "preload"
       ]
     },
-    "https://nezteb.net/custom.css?1674353364": {
+    "https://nezteb.net/twitter.svg": {
       "rels": [
-        "stylesheet"
+        "preload"
+      ]
+    },
+    "https://nezteb.net/github.svg": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://nezteb.net/instagram.svg": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://nezteb.net/microdotblog.svg": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://nezteb.net/mastodon.svg": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://nezteb.net/linkedin.svg": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://nezteb.net/buymeacoffee.svg": {
+      "rels": [
+        "preload"
       ]
     },
     "https://micro.blog/Nezteb/favicon.png": {
@@ -94,25 +125,12 @@
       "title": "Noah Betzen",
       "type": "application/rss+xml"
     },
-    "https://nezteb.net/podcast.xml": {
-      "rels": [
-        "alternate"
-      ],
-      "title": "Podcast",
-      "type": "application/rss+xml"
-    },
     "https://nezteb.net/feed.json": {
       "rels": [
         "alternate"
       ],
       "title": "Noah Betzen",
       "type": "application/json"
-    },
-    "https://nezteb.net/rsd.xml": {
-      "rels": [
-        "EditURI"
-      ],
-      "type": "application/rsd+xml"
     },
     "https://micro.blog/Nezteb": {
       "rels": [
@@ -158,6 +176,28 @@
       "rels": [
         "subscribe"
       ]
+    },
+    "https://genserver.social/Nezteb": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://linkedin.com/in/Nezteb": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://gohugo.io/": {
+      "rels": [
+        "noopener"
+      ],
+      "text": "Hugo️️"
+    },
+    "https://micro.blog/": {
+      "rels": [
+        "noopener"
+      ],
+      "text": "Micro.blog"
     }
   }
 }

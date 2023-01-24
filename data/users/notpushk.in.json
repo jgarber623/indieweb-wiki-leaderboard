@@ -1,108 +1,73 @@
 {
   "items": [],
   "rels": {
+    "preload": [
+      "https://fonts.googleapis.com/css?display=swap&family=Open+Sans:400,600",
+      "https://fonts.googleapis.com/css?display=swap&family=Roboto:400,900"
+    ],
     "stylesheet": [
-      "https://unpkg.com/awsm.css@3/dist/awsm.min.css",
-      "https://unpkg.com/awsm.css@3/dist/awsm_theme_big-stone.min.css",
-      "https://edwardtufte.github.io/et-book/et-book.css"
+      "https://fonts.googleapis.com/css?display=swap&family=Open+Sans:400,600",
+      "https://fonts.googleapis.com/css?display=swap&family=Roboto:400,900",
+      "http://notpushk.in/css/bootstrap-custom.min.css",
+      "http://notpushk.in/css/parking2.min.css?v=6"
     ],
-    "alternate": [
-      "https://unpkg.com/awsm.css@3/dist/awsm_theme_big-stone.min.css"
-    ],
-    "authorization_endpoint": [
-      "https://indieauth.com/auth"
-    ],
-    "token_endpoint": [
-      "https://tokens.indieauth.com/token"
-    ],
-    "openid.delegate": [
-      "https://notpushk.in/"
-    ],
-    "openid.server": [
-      "https://openid.indieauth.com/openid"
-    ],
-    "me": [
-      "https://gitlab.com/notpushkin",
-      "https://github.com/notpushkin",
-      "https://matrix.to/#/@ale:matrix.org",
-      "mailto:alexander@notpushk.in",
-      "http://keybase.io/ale",
-      "https://mstdn.io/@ale"
+    "noopener": [
+      "https://epik.com/",
+      "http://www.facebook.com/sharer.php?u=notpushk.in",
+      "https://twitter.com/intent/tweet?url=notpushk.in",
+      "https://www.linkedin.com/shareArticle?mini=true&url=notpushk.in",
+      "https://anonymize.com/"
     ]
   },
   "rel-urls": {
-    "https://unpkg.com/awsm.css@3/dist/awsm.min.css": {
+    "https://fonts.googleapis.com/css?display=swap&family=Open+Sans:400,600": {
       "rels": [
-        "stylesheet"
-      ],
-      "title": "Light"
+        "preload"
+      ]
     },
-    "https://unpkg.com/awsm.css@3/dist/awsm_theme_big-stone.min.css": {
+    "https://fonts.googleapis.com/css?display=swap&family=Roboto:400,900": {
       "rels": [
-        "alternate",
-        "stylesheet"
-      ],
-      "title": "Dark"
+        "preload"
+      ]
     },
-    "https://edwardtufte.github.io/et-book/et-book.css": {
+    "http://notpushk.in/css/bootstrap-custom.min.css": {
       "rels": [
         "stylesheet"
       ]
     },
-    "https://indieauth.com/auth": {
+    "http://notpushk.in/css/parking2.min.css?v=6": {
       "rels": [
-        "authorization_endpoint"
+        "stylesheet"
       ]
     },
-    "https://tokens.indieauth.com/token": {
+    "https://epik.com/": {
       "rels": [
-        "token_endpoint"
+        "noopener"
       ]
     },
-    "https://notpushk.in/": {
+    "http://www.facebook.com/sharer.php?u=notpushk.in": {
       "rels": [
-        "openid.delegate"
-      ]
-    },
-    "https://openid.indieauth.com/openid": {
-      "rels": [
-        "openid.server"
-      ]
-    },
-    "https://gitlab.com/notpushkin": {
-      "rels": [
-        "me"
+        "noopener"
       ],
-      "text": "GitLab"
+      "text": "\n                                     Facebook"
     },
-    "https://github.com/notpushkin": {
+    "https://twitter.com/intent/tweet?url=notpushk.in": {
       "rels": [
-        "me"
+        "noopener"
       ],
-      "text": "GitHub"
+      "text": "\n                                     Twitter"
     },
-    "https://matrix.to/#/@ale:matrix.org": {
+    "https://www.linkedin.com/shareArticle?mini=true&url=notpushk.in": {
       "rels": [
-        "me"
+        "noopener"
       ],
-      "text": "Matrix"
+      "text": "\n                                     LinkedIn"
     },
-    "mailto:alexander@notpushk.in": {
+    "https://anonymize.com/": {
       "rels": [
-        "me"
+        "noopener"
       ],
-      "text": "E-mail"
-    },
-    "http://keybase.io/ale": {
-      "rels": [
-        "me"
-      ],
-      "text": "keybase.io/ale"
-    },
-    "https://mstdn.io/@ale": {
-      "rels": [
-        "me"
-      ]
+      "text": "Anonymize.com"
     }
   }
 }

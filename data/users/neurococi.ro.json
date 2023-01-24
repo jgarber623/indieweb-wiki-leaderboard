@@ -4,7 +4,12 @@
     "preload": [
       "https://neurococi.ro/assets/css/bootstrv.css",
       "https://www.google-analytics.com/analytics.js",
-      "https://neurococi.ro/assets/images/posts/600/girafeunirii.webp"
+      "https://neurococi.ro/assets/images/posts/600/davos6.webp"
+    ],
+    "alternate": [
+      "https://neurococi.ro/en/",
+      "https://neurococi.ro/",
+      "https://neurococi.ro/rss.xml"
     ],
     "preconnect": [
       "https://www.google-analytics.com/"
@@ -21,9 +26,6 @@
     ],
     "shortcut": [
       "https://neurococi.ro/favicon.svg"
-    ],
-    "alternate": [
-      "https://neurococi.ro/rss.xml"
     ],
     "replies": [
       "https://neurococi.ro/comments"
@@ -97,6 +99,18 @@
         "preload"
       ]
     },
+    "https://neurococi.ro/en/": {
+      "rels": [
+        "alternate"
+      ],
+      "hreflang": "en"
+    },
+    "https://neurococi.ro/": {
+      "rels": [
+        "alternate"
+      ],
+      "hreflang": "x-default"
+    },
     "https://www.google-analytics.com/analytics.js": {
       "rels": [
         "preload"
@@ -107,17 +121,12 @@
         "preconnect"
       ]
     },
-    "https://neurococi.ro/assets/images/posts/600/girafeunirii.webp": {
+    "https://neurococi.ro/assets/images/posts/600/davos6.webp": {
       "rels": [
         "preload"
       ],
       "media": "(max-width: 600px)",
       "type": "image/webp"
-    },
-    "https://neurococi.ro/": {
-      "rels": [
-        "canonical"
-      ]
     },
     "https://neurococi.ro/favicon-32x32.png?v=2": {
       "rels": [

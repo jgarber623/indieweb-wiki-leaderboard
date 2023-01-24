@@ -1,21 +1,28 @@
 {
   "items": [],
   "rels": {
-    "me": [
-      "https://github.com/rosskarchner",
-      "https://hachyderm.io/@rossk"
+    "stylesheet": [
+      "https://ross.karchner.com/ananke/css/main.min.css"
+    ],
+    "alternate": [
+      "https://ross.karchner.com/index.xml"
+    ],
+    "feed": [
+      "https://ross.karchner.com/index.xml"
     ]
   },
   "rel-urls": {
-    "https://github.com/rosskarchner": {
+    "https://ross.karchner.com/ananke/css/main.min.css": {
       "rels": [
-        "me"
+        "stylesheet"
       ]
     },
-    "https://hachyderm.io/@rossk": {
+    "https://ross.karchner.com/index.xml": {
       "rels": [
-        "me"
-      ]
+        "alternate"
+      ],
+      "title": "My New Hugo Site",
+      "type": "application/rss+xml"
     }
   }
 }

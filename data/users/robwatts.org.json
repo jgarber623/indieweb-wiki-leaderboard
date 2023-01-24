@@ -5,11 +5,20 @@
       "https://robwatts.org/feed.rss"
     ],
     "stylesheet": [
-      "https://robwatts.org/css-theme.css?cache=1674401614527&extension=.css"
+      "https://robwatts.org/css-theme.css?cache=1674512500634&extension=.css"
     ],
     "me": [
       "https://github.com/robertwatts",
       "mailto:rw@robwatts.org"
+    ],
+    "micropub": [
+      "https://indiekit.robwatts.org/micropub"
+    ],
+    "authorization_endpoint": [
+      "https://indiekit.robwatts.org/auth"
+    ],
+    "token_endpoint": [
+      "https://indiekit.robwatts.org/auth/token"
     ]
   },
   "rel-urls": {
@@ -20,7 +29,7 @@
       "title": "Rob Watts",
       "type": "application/rss+xml"
     },
-    "https://robwatts.org/css-theme.css?cache=1674401614527&extension=.css": {
+    "https://robwatts.org/css-theme.css?cache=1674512500634&extension=.css": {
       "rels": [
         "stylesheet"
       ]
@@ -33,6 +42,21 @@
     "mailto:rw@robwatts.org": {
       "rels": [
         "me"
+      ]
+    },
+    "https://indiekit.robwatts.org/micropub": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://indiekit.robwatts.org/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://indiekit.robwatts.org/auth/token": {
+      "rels": [
+        "token_endpoint"
       ]
     }
   }

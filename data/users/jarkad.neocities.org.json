@@ -1,5 +1,74 @@
 {
-  "items": [],
-  "rels": {},
-  "rel-urls": {}
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "name": [
+          "Hare"
+        ],
+        "url": [
+          "https://mas.to/@markus_annexed"
+        ],
+        "email": [
+          "mailto:markus.annexed@simplelogin.com"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-feed"
+      ],
+      "properties": {
+        "name": [
+          "My posts"
+        ]
+      },
+      "children": [
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "My First Post"
+            ],
+            "url": [
+              "https://jarkad.neocities.org/posts/my-first-post.html"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "rels": {
+    "alternate": [
+      "https://jarkad.neocities.org/atom.xml"
+    ],
+    "me": [
+      "https://mas.to/@markus_annexed",
+      "mailto:markus.annexed@simplelogin.com"
+    ]
+  },
+  "rel-urls": {
+    "https://jarkad.neocities.org/atom.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "text/atom"
+    },
+    "https://mas.to/@markus_annexed": {
+      "rels": [
+        "me"
+      ],
+      "text": "An elephant"
+    },
+    "mailto:markus.annexed@simplelogin.com": {
+      "rels": [
+        "me"
+      ],
+      "text": "A monkey with a typewriter"
+    }
+  }
 }
