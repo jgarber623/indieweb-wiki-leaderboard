@@ -1,5 +1,72 @@
 {
   "items": [],
-  "rels": {},
-  "rel-urls": {}
+  "rels": {
+    "stylesheet": [
+      "https://blog.timowens.io/assets/built/screen.css?v=ec8cbeaeff",
+      "https://blog.timowens.io/public/cards.min.css?v=ec8cbeaeff"
+    ],
+    "canonical": [
+      "https://blog.timowens.io/"
+    ],
+    "next": [
+      "https://blog.timowens.io/page/2/"
+    ],
+    "alternate": [
+      "https://blog.timowens.io/rss/"
+    ],
+    "noopener": [
+      "https://www.facebook.com/timmmmyboy",
+      "https://twitter.com/timmmmyboy",
+      "https://ghost.org/"
+    ]
+  },
+  "rel-urls": {
+    "https://blog.timowens.io/assets/built/screen.css?v=ec8cbeaeff": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://blog.timowens.io/": {
+      "rels": [
+        "canonical"
+      ]
+    },
+    "https://blog.timowens.io/page/2/": {
+      "rels": [
+        "next"
+      ]
+    },
+    "https://blog.timowens.io/rss/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Throw Out The Manual",
+      "type": "application/rss+xml"
+    },
+    "https://blog.timowens.io/public/cards.min.css?v=ec8cbeaeff": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://www.facebook.com/timmmmyboy": {
+      "rels": [
+        "noopener"
+      ],
+      "title": "Facebook"
+    },
+    "https://twitter.com/timmmmyboy": {
+      "rels": [
+        "noopener"
+      ],
+      "title": "Twitter"
+    },
+    "https://ghost.org/": {
+      "rels": [
+        "noopener"
+      ],
+      "text": "Powered by Ghost"
+    }
+  }
 }

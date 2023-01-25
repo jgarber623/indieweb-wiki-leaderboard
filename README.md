@@ -4,8 +4,8 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 
 | Rank | Actions | User |
 |-----:|--------:|:-----|
-| **1** | [286](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
-| **2** | [183](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
+| **1** | [281](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
+| **2** | [185](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
 | **3** | [100](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](http://gregorlove.com) |
 | **4** | [47](https://indieweb.org/Special:Contributions/David.shanske.com) | [david.shanske.com](http://david.shanske.com) |
 | **5** | [46](https://indieweb.org/Special:Contributions/Boffosocko.com) | [boffosocko.com](http://boffosocko.com) |
@@ -33,21 +33,22 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 | **27** | [3](https://indieweb.org/Special:Contributions/Tracydurnell.com) | [tracydurnell.com](http://tracydurnell.com) |
 | **28** | [3](https://indieweb.org/Special:Contributions/Www.bobmatyas.com) | [www.bobmatyas.com](http://www.bobmatyas.com) |
 | **29** | [3](https://indieweb.org/Special:Contributions/Www.kevinmarks.com) | [www.kevinmarks.com](http://www.kevinmarks.com) |
-| **30** | [1](https://indieweb.org/Special:Contributions/Brandonrozek.com) | [brandonrozek.com](http://brandonrozek.com) |
-| **31** | [1](https://indieweb.org/Special:Contributions/Campegg.com) | [campegg.com](http://campegg.com) |
-| **32** | [1](https://indieweb.org/Special:Contributions/Earthboundvalkyrie.com) | [earthboundvalkyrie.com](http://earthboundvalkyrie.com) |
-| **33** | [1](https://indieweb.org/Special:Contributions/Imposible.blog) | [imposible.blog](http://imposible.blog) |
-| **34** | [1](https://indieweb.org/Special:Contributions/J6.ee) | [j6.ee](http://j6.ee) |
-| **35** | [1](https://indieweb.org/Special:Contributions/Novakeith.net) | [novakeith.net](http://novakeith.net) |
-| **36** | [1](https://indieweb.org/Special:Contributions/Petermolnar.net) | [petermolnar.net](http://petermolnar.net) |
-| **37** | [1](https://indieweb.org/Special:Contributions/Reeseric.ci) | [reeseric.ci](http://reeseric.ci) |
-| **38** | [1](https://indieweb.org/Special:Contributions/Samwilson.id.au) | [samwilson.id.au](http://samwilson.id.au) |
-| **39** | [1](https://indieweb.org/Special:Contributions/Www.benji.dog) | [www.benji.dog](http://www.benji.dog) |
+| **30** | [2](https://indieweb.org/Special:Contributions/Www.zinzy.website) | [www.zinzy.website](http://www.zinzy.website) |
+| **31** | [1](https://indieweb.org/Special:Contributions/Brandonrozek.com) | [brandonrozek.com](http://brandonrozek.com) |
+| **32** | [1](https://indieweb.org/Special:Contributions/Campegg.com) | [campegg.com](http://campegg.com) |
+| **33** | [1](https://indieweb.org/Special:Contributions/Earthboundvalkyrie.com) | [earthboundvalkyrie.com](http://earthboundvalkyrie.com) |
+| **34** | [1](https://indieweb.org/Special:Contributions/Imposible.blog) | [imposible.blog](http://imposible.blog) |
+| **35** | [1](https://indieweb.org/Special:Contributions/J6.ee) | [j6.ee](http://j6.ee) |
+| **36** | [1](https://indieweb.org/Special:Contributions/Novakeith.net) | [novakeith.net](http://novakeith.net) |
+| **37** | [1](https://indieweb.org/Special:Contributions/Petermolnar.net) | [petermolnar.net](http://petermolnar.net) |
+| **38** | [1](https://indieweb.org/Special:Contributions/Reeseric.ci) | [reeseric.ci](http://reeseric.ci) |
+| **39** | [1](https://indieweb.org/Special:Contributions/Samwilson.id.au) | [samwilson.id.au](http://samwilson.id.au) |
+| **40** | [1](https://indieweb.org/Special:Contributions/Www.benji.dog) | [www.benji.dog](http://www.benji.dog) |
 
 
 ## Colophon
 
-Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 24 January 2023 at 6:29:17 UTC.
+Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 25 January 2023 at 6:29:32 UTC.
 
 Additionally, a list of all IndieWeb wiki users is available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users.json). Parsed microformats2 data from user homepages is available in [the `./data/users` directory](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users).
 

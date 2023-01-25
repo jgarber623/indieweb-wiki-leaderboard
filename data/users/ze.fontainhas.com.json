@@ -20,7 +20,10 @@
     ],
     "alternate": [
       "https://ze.fontainhas.com/feed/",
-      "https://ze.fontainhas.com/comments/feed/"
+      "https://ze.fontainhas.com/comments/feed/",
+      "https://ze.fontainhas.com/static/feed/",
+      "https://ze.fontainhas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fze.fontainhas.com%2F",
+      "https://ze.fontainhas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fze.fontainhas.com%2F&format=xml"
     ],
     "https://api.w.org/": [
       "https://ze.fontainhas.com/wp-json/"
@@ -30,6 +33,12 @@
     ],
     "wlwmanifest": [
       "https://ze.fontainhas.com/wp-includes/wlwmanifest.xml"
+    ],
+    "canonical": [
+      "https://ze.fontainhas.com/"
+    ],
+    "shortlink": [
+      "https://ze.fontainhas.com/"
     ],
     "icon": [
       "https://ze.fontainhas.com/wp-content/uploads/2015/04/Z-blavatar-554270e4v1_site_icon-150x150.png",
@@ -45,15 +54,6 @@
     "noopener": [
       "https://mastodon.social/@zedejose",
       "https://pixelfed.social/@zedejose"
-    ],
-    "bookmark": [
-      "https://ze.fontainhas.com/esta-tudo-bem/",
-      "https://ze.fontainhas.com/no-worries/",
-      "https://ze.fontainhas.com/almost/",
-      "https://ze.fontainhas.com/mamihlapinatapai/",
-      "https://ze.fontainhas.com/freenot/",
-      "https://ze.fontainhas.com/fuck-your-designer-gin-and-tonic/",
-      "https://ze.fontainhas.com/the-dry-martini-postulate/"
     ]
   },
   "rel-urls": {
@@ -107,6 +107,13 @@
       "title": "Zé » Comments Feed",
       "type": "application/rss+xml"
     },
+    "https://ze.fontainhas.com/static/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Zé » Zé Comments Feed",
+      "type": "application/rss+xml"
+    },
     "https://ze.fontainhas.com/wp-json/": {
       "rels": [
         "https://api.w.org/"
@@ -124,6 +131,23 @@
         "wlwmanifest"
       ],
       "type": "application/wlwmanifest+xml"
+    },
+    "https://ze.fontainhas.com/": {
+      "rels": [
+        "canonical"
+      ]
+    },
+    "https://ze.fontainhas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fze.fontainhas.com%2F": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/json+oembed"
+    },
+    "https://ze.fontainhas.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fze.fontainhas.com%2F&format=xml": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "text/xml+oembed"
     },
     "https://ze.fontainhas.com/wp-content/uploads/2015/04/Z-blavatar-554270e4v1_site_icon-150x150.png": {
       "rels": [
@@ -148,48 +172,6 @@
         "noopener"
       ],
       "text": "@zedejose@pixelfed.social"
-    },
-    "https://ze.fontainhas.com/esta-tudo-bem/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Está Tudo Bem"
-    },
-    "https://ze.fontainhas.com/no-worries/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "No Worries"
-    },
-    "https://ze.fontainhas.com/almost/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Almost"
-    },
-    "https://ze.fontainhas.com/mamihlapinatapai/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Mamihlapinatapai"
-    },
-    "https://ze.fontainhas.com/freenot/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Free/Not"
-    },
-    "https://ze.fontainhas.com/fuck-your-designer-gin-and-tonic/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Fuck Your Designer Gin & Tonic"
-    },
-    "https://ze.fontainhas.com/the-dry-martini-postulate/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "The Dry Martini Postulate"
     }
   }
 }

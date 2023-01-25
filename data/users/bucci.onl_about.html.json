@@ -42,6 +42,10 @@
       "https://www.bucci.onl/assets/css/Util.css",
       "https://www.bucci.onl/assets/css/vendor/Katex.css"
     ],
+    "alternate": [
+      "https://bucci.onl/blog.xml",
+      "https://bucci.onl/feed.xml"
+    ],
     "canonical": [
       "https://bucci.onl/about"
     ],
@@ -68,9 +72,6 @@
     ],
     "microsub": [
       "https://aperture.p3k.io/microsub/775"
-    ],
-    "alternate": [
-      "https://bucci.onl/feed.xml"
     ],
     "noopener": [
       "https://eiscouncil.org/",
@@ -139,6 +140,20 @@
       "rels": [
         "stylesheet"
       ]
+    },
+    "https://bucci.onl/blog.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Anthony Bucci",
+      "type": "application/atom+xml"
+    },
+    "https://bucci.onl/feed.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Anthony Bucci | Notes",
+      "type": "application/atom+xml"
     },
     "https://bucci.onl/about": {
       "rels": [
@@ -209,12 +224,6 @@
       "rels": [
         "microsub"
       ]
-    },
-    "https://bucci.onl/feed.xml": {
-      "rels": [
-        "alternate"
-      ],
-      "type": "application/rss+xml"
     },
     "https://eiscouncil.org/": {
       "rels": [
