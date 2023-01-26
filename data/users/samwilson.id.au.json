@@ -6,6 +6,87 @@
       ],
       "properties": {
         "name": [
+          "No W3C style?"
+        ],
+        "url": [
+          "https://samwilson.id.au/P26580"
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "url": [
+                "Sam Wilson"
+              ],
+              "name": [
+                "Sam Wilson"
+              ]
+            },
+            "value": "Sam Wilson"
+          }
+        ],
+        "published": [
+          "2023-01-25T13:24:58Z"
+        ],
+        "content": [
+          {
+            "html": "<p><a href=\"https://news.ycombinator.com/item?id=34517214\">Hacker News is going on about</a> the CSS of the W3C’s homepage not working. I was worried, reading the headline, that they’d got rid of the <a href=\"https://www.w3.org/StyleSheets/Core/\">Core Styles</a>! But no, those are safe.</p>",
+            "value": "Hacker News is going on about the CSS of the W3C’s homepage not working. I was worried, reading the headline, that they’d got rid of the Core Styles! But no, those are safe."
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Linking Commons to Trove"
+        ],
+        "url": [
+          "https://samwilson.id.au/P26579"
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "url": [
+                "Sam Wilson"
+              ],
+              "name": [
+                "Sam Wilson"
+              ]
+            },
+            "value": "Sam Wilson"
+          }
+        ],
+        "published": [
+          "2023-01-25T10:11:17Z"
+        ],
+        "content": [
+          {
+            "html": "<p>I’ve been working on linking Commons items to Trove. It’s not complicated, on the surface, but of course once you get into it things get more annoying. I’m trying to just figure out the basics, and not get too deep into the weeds.</p>\n<p>Basically what we want is for every file on Commons, that has been sourced from an institution that’s aggregated in Trove, to have a P10044 statement (‘Trove Work ID’), and for that to be displayed in the <code>|source=</code> parameter of the Information template. But we <em>also</em> want to say which library (etc.) it came from, and to link to that library’s catalogue (because that’s where the actual image file is stored). This means, I think, that we’ll want to stick to the SLQ, SLWA, SLSA, AWM-image, etc. templates that have institution-specific information and links, and just add a simple line to those that explains that the file’s metadata is also on trove and what its ID there is.</p>",
+            "value": "I’ve been working on linking Commons items to Trove. It’s not complicated, on the surface, but of course once you get into it things get more annoying. I’m trying to just figure out the basics, and not get too deep into the weeds.\nBasically what we want is for every file on Commons, that has been sourced from an institution that’s aggregated in Trove, to have a P10044 statement (‘Trove Work ID’), and for that to be displayed in the |source= parameter of the Information template. But we also want to say which library (etc.) it came from, and to link to that library’s catalogue (because that’s where the actual image file is stored). This means, I think, that we’ll want to stick to the SLQ, SLWA, SLSA, AWM-image, etc. templates that have institution-specific information and links, and just add a simple line to those that explains that the file’s metadata is also on trove and what its ID there is."
+          }
+        ],
+        "category": [
+          "Wikimedia",
+          "Wikimedia Commons",
+          "Trove"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
           "Community Wishlist Survey 2023"
         ],
         "url": [
@@ -333,89 +414,6 @@
         ],
         "category": [
           "backups"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "name": [
-          "PhpFlickr 5.0.0"
-        ],
-        "url": [
-          "https://samwilson.id.au/P26564"
-        ],
-        "author": [
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "url": [
-                "Sam Wilson"
-              ],
-              "name": [
-                "Sam Wilson"
-              ]
-            },
-            "value": "Sam Wilson"
-          }
-        ],
-        "published": [
-          "2023-01-18T13:49:41Z"
-        ],
-        "content": [
-          {
-            "html": "<p>I’ve just released <a href=\"https://packagist.org/packages/samwilson/phpflickr\">version 5.0.0 of PhpFlickr</a>, the Flickr API wrapper that I forked a few years ago and have not given much time to. I think I meant to get this out in 2019. Wouldn’t have happened without all the <a href=\"https://github.com/samwilson/phpflickr/graphs/contributors\">contributors</a>, such as <a href=\"https://github.com/stevenmaguire\">@stevenmaguire</a> for sorting out the deprecated methods, and <a href=\"https://github.com/carlos-mg89\">@carlos-mg89</a> for forking the OAuth library and maintaining that, so thank you to them!</p>\n<p>There’s more work to be done, and if anyone has any issues please shout.</p>",
-            "value": "I’ve just released version 5.0.0 of PhpFlickr, the Flickr API wrapper that I forked a few years ago and have not given much time to. I think I meant to get this out in 2019. Wouldn’t have happened without all the contributors, such as @stevenmaguire for sorting out the deprecated methods, and @carlos-mg89 for forking the OAuth library and maintaining that, so thank you to them!\nThere’s more work to be done, and if anyone has any issues please shout."
-          }
-        ],
-        "category": [
-          "PhpFlickr"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "name": [
-          "The WikiTree Challenge 2023 Challenge 2"
-        ],
-        "url": [
-          "https://samwilson.id.au/P26563"
-        ],
-        "author": [
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "url": [
-                "Sam Wilson"
-              ],
-              "name": [
-                "Sam Wilson"
-              ]
-            },
-            "value": "Sam Wilson"
-          }
-        ],
-        "published": [
-          "2023-01-18T10:11:16Z"
-        ],
-        "content": [
-          {
-            "html": "<p>Between Thursday, January 19 and January 26 WikiTree will <a href=\"https://www.wikitree.com/g2g/1517184/wikitree-challenge-register-connect-australian-genealogists\">be running a challenge</a> in collaboration with the <a href=\"https://www.sag.org.au/\">Society of Australian Genealogists</a> to research seven degrees of connections for the following seven people:</p>\n<ul>\n<li>\n<a href=\"https://www.wikitree.com/wiki/Bourn-475\">James Bourn</a>\n</li>\n<li>\n<a href=\"https://www.wikitree.com/wiki/Heggie-235\">Oliver Peters Heggie</a>\n</li>\n<li>\n<a href=\"https://www.wikitree.com/wiki/Hill-53860\">Jess Hill</a>\n</li>\n<li>\n<a href=\"https://www.wikitree.com/wiki/Ironside-953\">Adelaide Eliza Ironside</a>\n</li>\n<li>\n<a href=\"https://www.wikitree.com/wiki/Ramsey-8322\">Herbert John Rumsey</a>\n</li>\n<li>\n<a href=\"https://www.wikitree.com/wiki/Tart-95\">Quong Tart</a>\n</li>\n<li>\n<a href=\"https://www.wikitree.com/wiki/Tiedemann-168\">Dora May Wicks (née Tiedemann)</a>\n</li>\n</ul>\n<p>None have Wikidata IDs, although I guess that’s part of the point (none of these people have yet been fully researched).</p>",
-            "value": "Between Thursday, January 19 and January 26 WikiTree will be running a challenge in collaboration with the Society of Australian Genealogists to research seven degrees of connections for the following seven people:\n\n\nJames Bourn\n\n\nOliver Peters Heggie\n\n\nJess Hill\n\n\nAdelaide Eliza Ironside\n\n\nHerbert John Rumsey\n\n\nQuong Tart\n\n\nDora May Wicks (née Tiedemann)\n\n\nNone have Wikidata IDs, although I guess that’s part of the point (none of these people have yet been fully researched)."
-          }
-        ],
-        "category": [
-          "genealogy",
-          "WikiTree"
         ]
       }
     },
