@@ -42,6 +42,58 @@
       "properties": {
         "photo": [
           {
+            "value": "https://adactio.com/images/uploaded/19859/small.jpg",
+            "srcset": {
+              "320w": "https://adactio.com/images/uploaded/19859/small.jpg",
+              "480w": "https://adactio.com/images/uploaded/19859/medium.jpg",
+              "800w": "https://adactio.com/images/uploaded/19859/large.jpg"
+            },
+            "alt": "Checked in at The Lord Nelson Inn. Thursday night session 🎶🎻 — with Jessica"
+          }
+        ],
+        "content": [
+          {
+            "html": "<p>Checked in at The Lord Nelson Inn. Thursday night session 🎶🎻 — with Jessica</p>",
+            "value": "Checked in at The Lord Nelson Inn. Thursday night session 🎶🎻 — with Jessica"
+          }
+        ],
+        "name": [
+          "Checked in at The Lord Nelson Inn. Thursday night session 🎶🎻 — with Jessica"
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "50.82837901"
+              ],
+              "longitude": [
+                "-0.13921648"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/notes/19859"
+        ],
+        "published": [
+          "2023-01-26T20:46:58Z"
+        ],
+        "syndication": [
+          "https://www.swarmapp.com/user/112073/checkin/63d2e6b0c1d9b050cb00a9a2"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "photo": [
+          {
             "value": "https://adactio.com/images/uploaded/19858/small.jpg",
             "srcset": {
               "320w": "https://adactio.com/images/uploaded/19858/small.jpg",
@@ -1015,59 +1067,6 @@
     },
     {
       "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "content": [
-          {
-            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://css-irl.info/disentangling-frameworks/\">\nCSS { In Real Life } | Disentangling Frameworks\n</a>\n</h3>\n\n<p><a href=\"https://adactio.com/links/19834\">I just quoted Chris saying</a>:</p>\n\n<blockquote>\n  <p>I think <em>some</em> tools are a good idea. But as few as possible, and the easier they are to <em>stop</em> using, the better.</p>\n</blockquote>\n\n<p>Now Michelle asks:</p>\n\n<blockquote>\n  <p>Suppose we want to stop using Tailwind one day?</p>\n</blockquote>\n\n<p>Turns out it’s a bit of a roach motel, much like most JavaScript frameworks: you can get in but you can’t easily get out.</p>\n\n<blockquote>\n  <p>So whenever possible, the safest, and most future-proof bet is to use the native features of the web platform.</p>\n</blockquote>",
-            "value": "CSS { In Real Life } | Disentangling Frameworks\n\n\n\nI just quoted Chris saying:\n\n\n  I think some tools are a good idea. But as few as possible, and the easier they are to stop using, the better.\n\n\nNow Michelle asks:\n\n\n  Suppose we want to stop using Tailwind one day?\n\n\nTurns out it’s a bit of a roach motel, much like most JavaScript frameworks: you can get in but you can’t easily get out.\n\n\n  So whenever possible, the safest, and most future-proof bet is to use the native features of the web platform."
-          }
-        ],
-        "name": [
-          "CSS { In Real Life } | Disentangling Frameworks"
-        ],
-        "bookmark-of": [
-          "https://css-irl.info/disentangling-frameworks/"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83253142"
-              ],
-              "longitude": [
-                "-0.11816688"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/links/19835"
-        ],
-        "published": [
-          "2023-01-17T16:51:13Z"
-        ],
-        "category": [
-          "css",
-          "tailwind",
-          "frontend",
-          "development",
-          "tooling",
-          "maintenance",
-          "complexity",
-          "libraries",
-          "frameworks",
-          "dependencies"
-        ]
-      }
-    },
-    {
-      "type": [
         "h-card"
       ],
       "properties": {
@@ -1807,6 +1806,7 @@
       "https://adactio.com/includes/css/print.css"
     ],
     "bookmark": [
+      "https://adactio.com/notes/19859",
       "https://adactio.com/notes/19858",
       "https://adactio.com/links/19857",
       "https://adactio.com/notes/19856",
@@ -1825,10 +1825,10 @@
       "https://adactio.com/journal/19839",
       "https://adactio.com/notes/19838",
       "https://adactio.com/links/19837",
-      "https://adactio.com/links/19836",
-      "https://adactio.com/links/19835"
+      "https://adactio.com/links/19836"
     ],
     "syndication": [
+      "https://www.swarmapp.com/user/112073/checkin/63d2e6b0c1d9b050cb00a9a2",
       "https://www.swarmapp.com/user/112073/checkin/63d192d910575e01818d2a96",
       "https://mastodon.social/@adactio/109745442075237133",
       "https://adactio.medium.com/7883c23afa8c",
@@ -1946,10 +1946,7 @@
       "https://adactio.com/tags/ai",
       "https://adactio.com/tags/animation",
       "https://adactio.com/tags/resilience",
-      "https://adactio.com/tags/enhancement",
-      "https://adactio.com/tags/tailwind",
-      "https://adactio.com/tags/maintenance",
-      "https://adactio.com/tags/dependencies"
+      "https://adactio.com/tags/enhancement"
     ],
     "next": [
       "https://adactio.com/?start=20"
@@ -2339,6 +2336,18 @@
         "me"
       ],
       "text": "music"
+    },
+    "https://adactio.com/notes/19859": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n8:46pm\n\n"
+    },
+    "https://www.swarmapp.com/user/112073/checkin/63d2e6b0c1d9b050cb00a9a2": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "Swarm"
     },
     "https://adactio.com/notes/19858": {
       "rels": [
@@ -3149,30 +3158,6 @@
         "tag"
       ],
       "text": "enhancement"
-    },
-    "https://adactio.com/links/19835": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n4:51pm\n\n"
-    },
-    "https://adactio.com/tags/tailwind": {
-      "rels": [
-        "tag"
-      ],
-      "text": "tailwind"
-    },
-    "https://adactio.com/tags/maintenance": {
-      "rels": [
-        "tag"
-      ],
-      "text": "maintenance"
-    },
-    "https://adactio.com/tags/dependencies": {
-      "rels": [
-        "tag"
-      ],
-      "text": "dependencies"
     },
     "https://adactio.com/?start=20": {
       "rels": [
