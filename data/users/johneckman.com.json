@@ -1,33 +1,30 @@
 {
   "items": [],
   "rels": {
-    "stylesheet": [
-      "https://johneckman.com/wp-content/themes/modernist/style.css",
-      "https://johneckman.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1",
-      "https://johneckman.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17",
-      "https://johneckman.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.1.1",
-      "https://johneckman.com/wp-includes/css/classic-themes.min.css?ver=1",
-      "https://johneckman.com/wp-content/plugins/jetpack/css/jetpack.css?ver=11.7.1"
-    ],
-    "pingback": [
-      "https://johneckman.com/xmlrpc.php"
-    ],
-    "openid2.local_id": [
-      "http://openid.claimid.com/johneckman"
-    ],
-    "openid2.provider": [
-      "http://openid.claimid.com/server"
-    ],
-    "openid.server": [
-      "http://openid.claimid.com/server"
-    ],
-    "openid.delegate": [
-      "http://openid.claimid.com/johneckman"
-    ],
     "dns-prefetch": [
       "https://secure.gravatar.com/",
       "https://v0.wordpress.com/",
       "https://i0.wp.com/"
+    ],
+    "preconnect": [
+      "https://fonts.gstatic.com/",
+      "https://fonts.googleapis.com/"
+    ],
+    "alternate": [
+      "https://johneckman.com/feed/",
+      "https://johneckman.com/comments/feed/"
+    ],
+    "stylesheet": [
+      "https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic",
+      "https://johneckman.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1",
+      "https://johneckman.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17",
+      "https://johneckman.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.1.1",
+      "https://johneckman.com/wp-includes/css/classic-themes.min.css?ver=1",
+      "https://johneckman.com/wp-content/themes/generatepress/assets/css/unsemantic-grid.min.css?ver=3.2.4",
+      "https://johneckman.com/wp-content/themes/generatepress/assets/css/style.min.css?ver=3.2.4",
+      "https://johneckman.com/wp-content/themes/generatepress/assets/css/mobile.min.css?ver=3.2.4",
+      "https://johneckman.com/wp-content/themes/generatepress/assets/css/components/font-icons.min.css?ver=3.2.4",
+      "https://johneckman.com/wp-content/plugins/jetpack/css/jetpack.css?ver=11.7.1"
     ],
     "https://api.w.org/": [
       "https://johneckman.com/wp-json/"
@@ -44,15 +41,11 @@
     "friends-base-url": [
       "https://johneckman.com/wp-json/friends/v1"
     ],
-    "me": [
-      "http://www.linkedin.com/in/johneckman",
-      "http://www.google.com/profiles/eckman.john?hl=en",
-      "http://twitter.com/jeckman",
-      "https://instagram.com/johneckman/",
-      "http://www.facebook.com/people/John_Eckman/1825518",
-      "http://www.last.fm/user/jeckman/"
+    "home": [
+      "https://johneckman.com/"
     ],
     "bookmark": [
+      "https://johneckman.com/2023/01/27/tamara-sanderson-at-creative-mornings-boston/",
       "https://johneckman.com/2023/01/22/instagram-json-download-wordpress/",
       "https://johneckman.com/2023/01/17/language-is-not-just-a-bag-of-words/",
       "https://johneckman.com/2023/01/17/mastodon-thoughts-worth-reading/",
@@ -60,7 +53,15 @@
       "https://johneckman.com/2023/01/04/the-self-hoster/",
       "https://johneckman.com/2022/12/29/dipping-my-toes-in-the-fediverse/"
     ],
+    "author": [
+      "https://johneckman.com/author/jeckman/"
+    ],
     "tag": [
+      "https://johneckman.com/tag/boston/",
+      "https://johneckman.com/tag/cmbos/",
+      "https://johneckman.com/tag/creative-mornings/",
+      "https://johneckman.com/tag/events/",
+      "https://johneckman.com/tag/remote-work/",
       "https://johneckman.com/tag/import/",
       "https://johneckman.com/tag/indie-web/",
       "https://johneckman.com/tag/instagram/",
@@ -74,33 +75,16 @@
       "https://johneckman.com/tag/10up/",
       "https://johneckman.com/tag/hobbies/",
       "https://johneckman.com/tag/puzzle/",
-      "https://johneckman.com/tag/self/",
-      "https://johneckman.com/tag/federation/"
+      "https://johneckman.com/tag/federation/",
+      "https://johneckman.com/tag/self/"
+    ],
+    "me": [
+      "http://www.linkedin.com/in/johneckman",
+      "http://twitter.com/jeckman",
+      "http://www.facebook.com/people/John_Eckman/1825518"
     ]
   },
   "rel-urls": {
-    "https://johneckman.com/wp-content/themes/modernist/style.css": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "screen",
-      "type": "text/css"
-    },
-    "https://johneckman.com/xmlrpc.php": {
-      "rels": [
-        "pingback"
-      ]
-    },
-    "http://openid.claimid.com/johneckman": {
-      "rels": [
-        "openid2.local_id"
-      ]
-    },
-    "http://openid.claimid.com/server": {
-      "rels": [
-        "openid2.provider"
-      ]
-    },
     "https://secure.gravatar.com/": {
       "rels": [
         "dns-prefetch"
@@ -116,40 +100,89 @@
         "dns-prefetch"
       ]
     },
+    "https://fonts.gstatic.com/": {
+      "rels": [
+        "preconnect"
+      ]
+    },
+    "https://fonts.googleapis.com/": {
+      "rels": [
+        "preconnect"
+      ]
+    },
+    "https://johneckman.com/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "John Eckman » Feed",
+      "type": "application/rss+xml"
+    },
+    "https://johneckman.com/comments/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "John Eckman » Comments Feed",
+      "type": "application/rss+xml"
+    },
+    "https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
     "https://johneckman.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1": {
       "rels": [
         "stylesheet"
       ],
-      "media": "all",
-      "type": "text/css"
+      "media": "all"
     },
     "https://johneckman.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17": {
       "rels": [
         "stylesheet"
       ],
-      "media": "all",
-      "type": "text/css"
+      "media": "all"
     },
     "https://johneckman.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.1.1": {
       "rels": [
         "stylesheet"
       ],
-      "media": "all",
-      "type": "text/css"
+      "media": "all"
     },
     "https://johneckman.com/wp-includes/css/classic-themes.min.css?ver=1": {
       "rels": [
         "stylesheet"
       ],
-      "media": "all",
-      "type": "text/css"
+      "media": "all"
+    },
+    "https://johneckman.com/wp-content/themes/generatepress/assets/css/unsemantic-grid.min.css?ver=3.2.4": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://johneckman.com/wp-content/themes/generatepress/assets/css/style.min.css?ver=3.2.4": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://johneckman.com/wp-content/themes/generatepress/assets/css/mobile.min.css?ver=3.2.4": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://johneckman.com/wp-content/themes/generatepress/assets/css/components/font-icons.min.css?ver=3.2.4": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
     },
     "https://johneckman.com/wp-content/plugins/jetpack/css/jetpack.css?ver=11.7.1": {
       "rels": [
         "stylesheet"
       ],
-      "media": "all",
-      "type": "text/css"
+      "media": "all"
     },
     "https://johneckman.com/wp-json/": {
       "rels": [
@@ -179,47 +212,59 @@
         "friends-base-url"
       ]
     },
-    "http://www.linkedin.com/in/johneckman": {
+    "https://johneckman.com/": {
       "rels": [
-        "me"
+        "home"
       ],
-      "text": "LinkedIn"
+      "text": "\n\t\t\t\t\t\tJohn Eckman\n\t\t\t\t\t"
     },
-    "http://www.google.com/profiles/eckman.john?hl=en": {
+    "https://johneckman.com/2023/01/27/tamara-sanderson-at-creative-mornings-boston/": {
       "rels": [
-        "me"
+        "bookmark"
       ],
-      "text": "Google Profile"
+      "text": "Tamara Sanderson at Creative Mornings Boston"
     },
-    "http://twitter.com/jeckman": {
+    "https://johneckman.com/author/jeckman/": {
       "rels": [
-        "me"
+        "author"
       ],
-      "text": "Twitter"
+      "title": "View all posts by jeckman",
+      "text": "jeckman"
     },
-    "https://instagram.com/johneckman/": {
+    "https://johneckman.com/tag/boston/": {
       "rels": [
-        "me"
+        "tag"
       ],
-      "text": "Instagram"
+      "text": "Boston"
     },
-    "http://www.facebook.com/people/John_Eckman/1825518": {
+    "https://johneckman.com/tag/cmbos/": {
       "rels": [
-        "me"
+        "tag"
       ],
-      "text": "Facebook"
+      "text": "CMBOS"
     },
-    "http://www.last.fm/user/jeckman/": {
+    "https://johneckman.com/tag/creative-mornings/": {
       "rels": [
-        "me"
+        "tag"
       ],
-      "text": "Last.fm"
+      "text": "Creative Mornings"
+    },
+    "https://johneckman.com/tag/events/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Events"
+    },
+    "https://johneckman.com/tag/remote-work/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Remote Work"
     },
     "https://johneckman.com/2023/01/22/instagram-json-download-wordpress/": {
       "rels": [
         "bookmark"
       ],
-      "title": "Permanent Link to Instagram JSON download -> WordPress",
       "text": "Instagram JSON download -> WordPress"
     },
     "https://johneckman.com/tag/import/": {
@@ -250,7 +295,6 @@
       "rels": [
         "bookmark"
       ],
-      "title": "Permanent Link to Language is not just a bag of words",
       "text": "Language is not just a bag of words"
     },
     "https://johneckman.com/tag/design-systems/": {
@@ -269,7 +313,6 @@
       "rels": [
         "bookmark"
       ],
-      "title": "Permanent Link to Mastodon Thoughts Worth Reading",
       "text": "Mastodon Thoughts Worth Reading"
     },
     "https://johneckman.com/tag/fediverse/": {
@@ -300,7 +343,6 @@
       "rels": [
         "bookmark"
       ],
-      "title": "Permanent Link to Puzzles",
       "text": "Puzzles"
     },
     "https://johneckman.com/tag/10up/": {
@@ -325,27 +367,43 @@
       "rels": [
         "bookmark"
       ],
-      "title": "Permanent Link to The Self-Hoster",
       "text": "The Self-Hoster"
-    },
-    "https://johneckman.com/tag/self/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "#self"
     },
     "https://johneckman.com/tag/federation/": {
       "rels": [
         "tag"
       ],
-      "text": "#federation"
+      "text": "federation"
+    },
+    "https://johneckman.com/tag/self/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "self"
     },
     "https://johneckman.com/2022/12/29/dipping-my-toes-in-the-fediverse/": {
       "rels": [
         "bookmark"
       ],
-      "title": "Permanent Link to Dipping my toes in the fediverse",
       "text": "Dipping my toes in the fediverse"
+    },
+    "http://www.linkedin.com/in/johneckman": {
+      "rels": [
+        "me"
+      ],
+      "text": "LinkedIn"
+    },
+    "http://twitter.com/jeckman": {
+      "rels": [
+        "me"
+      ],
+      "text": "Twitter"
+    },
+    "http://www.facebook.com/people/John_Eckman/1825518": {
+      "rels": [
+        "me"
+      ],
+      "text": "Facebook"
     }
   }
 }

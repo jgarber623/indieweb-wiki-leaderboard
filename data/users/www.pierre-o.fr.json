@@ -1,13 +1,28 @@
 {
   "items": [],
   "rels": {
-    "alternate": [
-      "https://pierre-o.fr/feed/",
-      "https://pierre-o.fr/comments/feed/"
+    "preload": [
+      "https://fonts.googleapis.com/css?family=Prata%3Aregular%7CNunito%20Sans%3Aregular%2C600%2C700&display=swap"
     ],
     "stylesheet": [
-      "https://pierre-o.fr/wp-includes/blocks/navigation/style.min.css?ver=6.1.1",
-      "https://pierre-o.fr/wp-content/themes/twentytwentytwo/style.css?ver=1.2"
+      "https://fonts.googleapis.com/css?family=Prata%3Aregular%7CNunito%20Sans%3Aregular%2C600%2C700&display=swap",
+      "https://pierre-o.fr/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1",
+      "https://pierre-o.fr/wp-includes/css/classic-themes.min.css?ver=1",
+      "https://pierre-o.fr/wp-content/themes/generatepress/assets/css/main.min.css?ver=3.2.4",
+      "https://pierre-o.fr/wp-content/uploads/generateblocks/style-17.css?ver=1674832779",
+      "https://pierre-o.fr/wp-content/uploads/generatepress/style.min.css?ver=1674831869",
+      "https://pierre-o.fr/wp-content/plugins/gp-premium/menu-plus/functions/css/offside.min.css?ver=2.1.2"
+    ],
+    "preconnect": [
+      "https://fonts.gstatic.com/",
+      "https://fonts.googleapis.com/"
+    ],
+    "alternate": [
+      "https://pierre-o.fr/feed/",
+      "https://pierre-o.fr/comments/feed/",
+      "https://pierre-o.fr/wp-json/wp/v2/pages/17",
+      "https://pierre-o.fr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpierre-o.fr%2F",
+      "https://pierre-o.fr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpierre-o.fr%2F&format=xml"
     ],
     "https://api.w.org/": [
       "https://pierre-o.fr/wp-json/"
@@ -18,14 +33,39 @@
     "wlwmanifest": [
       "https://pierre-o.fr/wp-includes/wlwmanifest.xml"
     ],
-    "home": [
+    "canonical": [
       "https://pierre-o.fr/"
     ],
-    "nofollow": [
-      "https://fr.wordpress.org/"
+    "shortlink": [
+      "https://pierre-o.fr/"
+    ],
+    "icon": [
+      "https://pierre-o.fr/wp-content/uploads/2023/01/cropped-cropped-pierre-o.fr_-32x32.png",
+      "https://pierre-o.fr/wp-content/uploads/2023/01/cropped-cropped-pierre-o.fr_-192x192.png"
+    ],
+    "apple-touch-icon": [
+      "https://pierre-o.fr/wp-content/uploads/2023/01/cropped-cropped-pierre-o.fr_-180x180.png"
+    ],
+    "home": [
+      "https://pierre-o.fr/"
     ]
   },
   "rel-urls": {
+    "https://fonts.googleapis.com/css?family=Prata%3Aregular%7CNunito%20Sans%3Aregular%2C600%2C700&display=swap": {
+      "rels": [
+        "preload"
+      ]
+    },
+    "https://fonts.gstatic.com/": {
+      "rels": [
+        "preconnect"
+      ]
+    },
+    "https://fonts.googleapis.com/": {
+      "rels": [
+        "preconnect"
+      ]
+    },
     "https://pierre-o.fr/feed/": {
       "rels": [
         "alternate"
@@ -40,13 +80,37 @@
       "title": "Pierre-O.fr » Flux des commentaires",
       "type": "application/rss+xml"
     },
-    "https://pierre-o.fr/wp-includes/blocks/navigation/style.min.css?ver=6.1.1": {
+    "https://pierre-o.fr/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1": {
       "rels": [
         "stylesheet"
       ],
       "media": "all"
     },
-    "https://pierre-o.fr/wp-content/themes/twentytwentytwo/style.css?ver=1.2": {
+    "https://pierre-o.fr/wp-includes/css/classic-themes.min.css?ver=1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://pierre-o.fr/wp-content/themes/generatepress/assets/css/main.min.css?ver=3.2.4": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://pierre-o.fr/wp-content/uploads/generateblocks/style-17.css?ver=1674832779": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://pierre-o.fr/wp-content/uploads/generatepress/style.min.css?ver=1674831869": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://pierre-o.fr/wp-content/plugins/gp-premium/menu-plus/functions/css/offside.min.css?ver=2.1.2": {
       "rels": [
         "stylesheet"
       ],
@@ -56,6 +120,12 @@
       "rels": [
         "https://api.w.org/"
       ]
+    },
+    "https://pierre-o.fr/wp-json/wp/v2/pages/17": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/json"
     },
     "https://pierre-o.fr/xmlrpc.php?rsd": {
       "rels": [
@@ -72,15 +142,35 @@
     },
     "https://pierre-o.fr/": {
       "rels": [
-        "home"
-      ],
-      "text": "Pierre-O.fr"
+        "canonical"
+      ]
     },
-    "https://fr.wordpress.org/": {
+    "https://pierre-o.fr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpierre-o.fr%2F": {
       "rels": [
-        "nofollow"
+        "alternate"
       ],
-      "text": "WordPress"
+      "type": "application/json+oembed"
+    },
+    "https://pierre-o.fr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpierre-o.fr%2F&format=xml": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "text/xml+oembed"
+    },
+    "https://pierre-o.fr/wp-content/uploads/2023/01/cropped-cropped-pierre-o.fr_-32x32.png": {
+      "rels": [
+        "icon"
+      ]
+    },
+    "https://pierre-o.fr/wp-content/uploads/2023/01/cropped-cropped-pierre-o.fr_-192x192.png": {
+      "rels": [
+        "icon"
+      ]
+    },
+    "https://pierre-o.fr/wp-content/uploads/2023/01/cropped-cropped-pierre-o.fr_-180x180.png": {
+      "rels": [
+        "apple-touch-icon"
+      ]
     }
   }
 }

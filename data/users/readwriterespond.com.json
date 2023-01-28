@@ -10,10 +10,10 @@
         ],
         "url": [
           "https://readwriterespond.com/",
-          "https://readwriterespond.com/",
-          "https://readwriterespond.com/",
-          "https://readwriterespond.com/",
-          "https://readwriterespond.com/",
+          "https://readwriterespond.com/author/admin/",
+          "https://readwriterespond.com/author/admin/",
+          "https://readwriterespond.com/author/admin/",
+          "https://readwriterespond.com/author/admin/",
           "https://readwriterespond.com/"
         ],
         "summary": [
@@ -72,6 +72,73 @@
         ]
       },
       "children": [
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Knowing What is Possible – On Continually Improving Solutions"
+            ],
+            "url": [
+              "https://readwriterespond.com/2023/01/knowing-what-is-possible-on-continually-improving-solutions/",
+              "https://readwriterespond.com/2023/01/knowing-what-is-possible-on-continually-improving-solutions/"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "photo": [
+                    {
+                      "value": "https://secure.gravatar.com/avatar/d00e7ca24ca1b9c853da43af229c0e0e?s=40&d=mm&r=g",
+                      "srcset": {
+                        "2x": "https://secure.gravatar.com/avatar/d00e7ca24ca1b9c853da43af229c0e0e?s=80&d=mm&r=g"
+                      },
+                      "alt": ""
+                    }
+                  ],
+                  "url": [
+                    "https://readwriterespond.com/author/admin/"
+                  ],
+                  "uid": [
+                    "https://readwriterespond.com/author/admin/"
+                  ],
+                  "name": [
+                    "Aaron Davis"
+                  ]
+                },
+                "value": "Aaron Davis"
+              }
+            ],
+            "updated": [
+              "2023-01-27T22:08:53+11:00"
+            ],
+            "published": [
+              "2023-01-27T22:08:53+11:00"
+            ],
+            "featured": [
+              {
+                "value": "https://readwriterespond.com/wp-content/uploads/2023/01/David-Weinberger-Small-Pieces-Loosely-Joined-900x506.jpg",
+                "srcset": {
+                  "900w": "https://readwriterespond.com/wp-content/uploads/2023/01/David-Weinberger-Small-Pieces-Loosely-Joined-900x506.jpg",
+                  "300w": "https://readwriterespond.com/wp-content/uploads/2023/01/David-Weinberger-Small-Pieces-Loosely-Joined-300x169.jpg",
+                  "768w": "https://readwriterespond.com/wp-content/uploads/2023/01/David-Weinberger-Small-Pieces-Loosely-Joined-768x432.jpg",
+                  "960w": "https://readwriterespond.com/wp-content/uploads/2023/01/David-Weinberger-Small-Pieces-Loosely-Joined.jpg"
+                },
+                "alt": "The Web is binding not just pages but us human beings in new ways. We are the true \"small pieces\" of the Web, and we are loosely joining ourselves in ways that we're still inventing. David Weinberger Small Pieces, Loosely Joined"
+              }
+            ],
+            "content": [
+              {
+                "html": "<p>Each year in my work, we ask the question as to how might we improve efficiencies associated with the end of year process. In the past I have created a <a href=\"https://readwriterespond.com/2019/07/connecting-contacts-and-information-using-google-sheets-to-collect-together-data/\">database of school contacts</a>, a <a href=\"https://readwriterespond.com/2017/09/the-anatomy-of-an-idea/\">process for generating timetables</a> and a <a href=\"https://readwriterespond.com/2021/09/google-sheets/\" target=\"_blank\" rel=\"noreferrer noopener\">template for reviewing data</a>. Two particular requests that were raised this year were the desire to reduce emails associated with updates and personalise correspondences sent to schools.</p>\n\n\n\n<h2>A Dashboard of One’s Own</h2>\n\n\n\n<p>In the past we used to have a dashboard with a dropdown as to who completed each task for each school. The problem with this was two fold. One, schools had no visibility to where the end of year process is at as this was only visible to support staff. Two, there was a lot of dependency on emails to know where things are at.</p>\n\n\n\n<p>In the past we have shared a template with each school associated with their form allocations. My solution was to create a tab in the school template with a checklist that provided schools with clarity where the process was at and then pull this information into a shared spreadsheet so that the support team had an understanding where things were at. The challenge with this was to create and collect the templates in an efficient manner.</p>\n\n\n\n<p>The process for generating the templates in the past was to manually create a copy using the <a href=\"https://learninginhand.com/blog/google-document-url-tricks\">/copy method</a> and then sharing this with schools. This always felt cumbersome. I wondered if there was a more efficient method for creating the templates. I also wanted a more efficient method for collecting all the links. I remember Alice Keeler created a Google Sheets Add-on for <a href=\"https://readwriterespond.com/2015/12/introduction-google-classroom/#Add-on\">making a copy of rubrics</a>, so I knew that it was technically possible. Googling the problem, I found a <a href=\"https://www.youtube.com/watch?v=X6yM229Lo_M\">video</a> (and <a href=\"https://docs.google.com/spreadsheets/d/1h9WTzG6Ck8mKU99emDXNbpmx3a5m9zw9sf6_HMe_ZvM/copy\">template</a>) from Carl Arrowsmith that walked through using Google Apps Script to make multiple copies of same file.</p>\n\n\n\n<p>What I like about finding such resources is getting into the code and unpacking how it all works, and then making my own changes, especially when the person sharing leaves various notes within the code to guide you. I have always wanted to dig further into Apps Script, but never really found the time to start from scratch. A couple of changes I made was including the school name and school number in both the template and title of the document. You can find a copy of my updates <a href=\"https://docs.google.com/spreadsheets/d/1QJZ3zRLbgdeEOogwKbKdRsijmw0UOAgNLHWzKiefUmA/copy\">here</a>.</p>\n\n\n\n<p>Once I had made the changes, I generated a template for each school. This not only created all the copies, but also provided a copy of each URL in the spreadsheet. I then brought this list back into a dashboard and imported the checklist using the following formula:</p>\n\n\n\n<pre class=\"wp-block-code\"><code>=TRANSPOSE(IMPORTRANGE(\"school spreadsheet\",\"Sheet1!B3:B\")</code></pre>\n\n\n\n<p>In addition to adding conditional formatting to highlight whether the task was complete or waiting, I added a status cell to provide an update at a glance:</p>\n\n\n\n<pre class=\"wp-block-code\"><code>=IF($S2=FALSE,\"Waiting on Support\",IF($T2=FALSE,\"Waiting on School\",IF($U2=FALSE,\"Waiting on Support\",IF($V2=FALSE,\"Waiting on Support\",IF($W2=FALSE,\"Waiting on School\",IF($X2=FALSE,\"Waiting on Support\",IF($Y2=FALSE,\"Waiting on Support\",IF($Z2=FALSE,\"Waiting on Support\",IF($AA2=FALSE,\"Waiting on School\",IF($AB2=FALSE,\"Waiting on Support\",IF($AC2=FALSE,\"Waiting on Support\",IF($AD2=FALSE,\"Waiting on Support\",\"All Complete\"))))))))))))</code></pre>\n\n\n\n<p>Although this summary did not provide details about who completed each task, it did however provide more visability. I guess you can’t have everything?</p>\n\n\n\n<h2>Personalising Emails</h2>\n\n\n\n<p>The other improvement related to sending out an email to 300+ schools. In the past we would just use an <a href=\"https://support.microsoft.com/en-us/office/create-an-email-message-template-43ec7142-4dd0-4351-8727-bd0977b6b2d1\">Outlook template</a>. However, as each of the emails contained a unique link, this no longer worked. As I had a list of these links in a spreadsheet, I worked out that I could just create a unique email for each school, with the link being a variable:</p>\n\n\n\n<pre class=\"wp-block-code\"><code>=\"Dear to whom it may concern,&lt;/code&gt;&lt;/p&gt;\nBelow you will find a link to the Google Sheet.&lt;/p&gt;\n\"&amp;Sheet1!R4&amp;\"\nInstructions for filling in this information can be found in the End of Year guide.&lt;/p&gt;\nSchool Support\"\n</code></pre>\n\n\n\n<p>It then occurred to me that as I had a list of the staff associated with each school that maybe I could replace the cold ‘Dear to whom it may concern’ with ‘Dear NAME’. The problem I was faced with though is that I had all the names in one cell, with each on a new line:</p>\n\n\n\n<p>It then occurred to me that as I had a list of the staff associated with each school that maybe I could replace the cold ‘Dear to whom it may concern’ with ‘Dear NAME’. The problem I was faced with though is that I had all the names in one cell, with each on a new line:</p>\n\n\n\n<blockquote class=\"wp-block-quote\">\n<p>Mahatma Gandhi</p>\n<p>Virginia Woolf</p>\n<p>Fiona Hardy</p>\n</blockquote>\n\n\n\n<p>My first step then was to SUBSTITUTE the new line (CHAR(10)) with a comma:</p>\n\n\n\n<pre class=\"wp-block-code\"><code>=SUBSTITUTE(C4,CHAR(10),\", \")</code></pre>\n\n\n\n<p><span style=\"font-size: revert; color: initial;\">However, I was then left with the following:</span></p>\n\n\n\n<blockquote class=\"wp-block-quote\"><p>Mahatma Gandhi, Virginia Woolf, Fiona Hardy</p></blockquote>\n\n\n\n<p>My next task was to somehow replace the last comma in the string with an ‘and’. Unsure how to go about it, I went online and found a REGEXREPLACE on the <a href=\"https://infoinspired.com/google-docs/spreadsheet/regex-to-replace-the-last-occurrence-of-a-character-sheets/\" target=\"_blank\" rel=\"noreferrer noopener\">Infoinspired website</a> that achieved the desired outcome:</p>\n\n\n\n<pre class=\"wp-block-code\"><code>=regexreplace(A1, \"(.*),\", \"$1 and\")</code></pre>\n\n\n\n<p>This then provided me with the following:</p>\n\n\n\n<blockquote class=\"wp-block-quote\"><p>Mahatma Gandhi, Virginia Woolf and Fiona Hardy</p></blockquote>\n\n\n\n<p>I then wondered if I could somehow remove the surname and leave only the first name in the list. After scratching my head for a while, I wondered if I could QUERY the list and select only the names that were not followed by a comma. I found the following REGEX formula:</p>\n\n\n\n<pre class=\"wp-block-code\"><code>\"^[^,]+$\"</code></pre>\n\n\n\n<p>I subsequently, SPLIT and TRANSPOSED my list of names and used a QUERY with a match containing the REGEX formula.</p>\n\n\n\n<pre class=\"wp-block-code\"><code>=regexreplace(SUBSTITUTE(JOIN(\", \",QUERY(TRANSPOSE(SPLIT(SUBSTITUTE(C4,CHAR(10),\", \")&amp;\",\",\" \")),\"SELECT * WHERE Col1 MATCHES '^[^,]+$'\")),CHAR(10),\", \"), \"(.*),\", \"$1 and\")</code></pre>\n\n\n\n<p>Returning to my email template, I then replaced the ‘to whom it may concern’ with the formula. This meant I could quickly and easily create a an email that addressed the actual users and included their spreadsheet.</p>\n\n\n\n<pre class=\"wp-block-code\"><code>=\"Dear \"&amp;regexreplace(SUBSTITUTE(JOIN(\", \",QUERY(TRANSPOSE(SPLIT(SUBSTITUTE(C2,CHAR(10),\", \")&amp;amp;\",\",\" \")),\"SELECT * WHERE Col1 MATCHES '^[^,]+$'\")),CHAR(10),\", \"), \"(.*),\", \"$1 and\")&amp;\",\nBelow you will find a link to the Google Sheet.\n\"&amp;Sheet1!R2&amp;\"\nInstructions for filling in this information can be found in the End of Year guide.\nSchool Support</code></pre>\n\n\n\n<p><span style=\"font-size: revert; color: initial;\">Providing the following outcome:</span></p>\n\n\n\n<p>“&amp;Sheet1!R2&amp;”</p>\n\n\n\n<p>Instructions for filling in this information can be found in the End of Year guide.</p>\n\n\n\n<p>School Support</p>\n\n\n\n<p>Providing the following outcome:</p>\n\n\n\n<blockquote class=\"wp-block-quote\">\n<p>=Dear Mahatma, Virginia and Fiona,</p>\n<p>Below you will find a link to the Google Sheet.</p>\n<p>UNIQUE LINK</p>\n<p>Instructions for filling in this information can be found in the End of Year guide.</p>\n<p>School Support</p>\n</blockquote>\n\n\n\n<p>—</p>\n\n\n\n<p>I am sure there are more efficient ways to achieve the same outcome using different applications that I do not necessarily have at my disposal. For example, it would be even better to automatically send the the email from the Google Sheet, rather than copy and pasting the text into Outlook. I also must be honest, even though I completed Ben Collins’ REGEX course, I still have not got my head around it all yet, but I feel that the first point of learning is not always knowing how to do something, but actually knowing that it is possible.</p>\n\n\n\n<p>As always, comments welcome.</p>\n\r\n<hr>\r\n<em> <p class=\"selectionShareable\">If you enjoy what you read here, feel free to sign up for my <a href=\"https://buttondown.email/readwriterespond\" target=\"_blank\">monthly newsletter</a> to catch up on all things learning, edtech and storytelling.</p></em>",
+                "value": "Each year in my work, we ask the question as to how might we improve efficiencies associated with the end of year process. In the past I have created a database of school contacts, a process for generating timetables and a template for reviewing data. Two particular requests that were raised this year were the desire to reduce emails associated with updates and personalise correspondences sent to schools.\n\n\n\nA Dashboard of One’s Own\n\n\n\nIn the past we used to have a dashboard with a dropdown as to who completed each task for each school. The problem with this was two fold. One, schools had no visibility to where the end of year process is at as this was only visible to support staff. Two, there was a lot of dependency on emails to know where things are at.\n\n\n\nIn the past we have shared a template with each school associated with their form allocations. My solution was to create a tab in the school template with a checklist that provided schools with clarity where the process was at and then pull this information into a shared spreadsheet so that the support team had an understanding where things were at. The challenge with this was to create and collect the templates in an efficient manner.\n\n\n\nThe process for generating the templates in the past was to manually create a copy using the /copy method and then sharing this with schools. This always felt cumbersome. I wondered if there was a more efficient method for creating the templates. I also wanted a more efficient method for collecting all the links. I remember Alice Keeler created a Google Sheets Add-on for making a copy of rubrics, so I knew that it was technically possible. Googling the problem, I found a video (and template) from Carl Arrowsmith that walked through using Google Apps Script to make multiple copies of same file.\n\n\n\nWhat I like about finding such resources is getting into the code and unpacking how it all works, and then making my own changes, especially when the person sharing leaves various notes within the code to guide you. I have always wanted to dig further into Apps Script, but never really found the time to start from scratch. A couple of changes I made was including the school name and school number in both the template and title of the document. You can find a copy of my updates here.\n\n\n\nOnce I had made the changes, I generated a template for each school. This not only created all the copies, but also provided a copy of each URL in the spreadsheet. I then brought this list back into a dashboard and imported the checklist using the following formula:\n\n\n\n=TRANSPOSE(IMPORTRANGE(\"school spreadsheet\",\"Sheet1!B3:B\")\n\n\n\nIn addition to adding conditional formatting to highlight whether the task was complete or waiting, I added a status cell to provide an update at a glance:\n\n\n\n=IF($S2=FALSE,\"Waiting on Support\",IF($T2=FALSE,\"Waiting on School\",IF($U2=FALSE,\"Waiting on Support\",IF($V2=FALSE,\"Waiting on Support\",IF($W2=FALSE,\"Waiting on School\",IF($X2=FALSE,\"Waiting on Support\",IF($Y2=FALSE,\"Waiting on Support\",IF($Z2=FALSE,\"Waiting on Support\",IF($AA2=FALSE,\"Waiting on School\",IF($AB2=FALSE,\"Waiting on Support\",IF($AC2=FALSE,\"Waiting on Support\",IF($AD2=FALSE,\"Waiting on Support\",\"All Complete\"))))))))))))\n\n\n\nAlthough this summary did not provide details about who completed each task, it did however provide more visability. I guess you can’t have everything?\n\n\n\nPersonalising Emails\n\n\n\nThe other improvement related to sending out an email to 300+ schools. In the past we would just use an Outlook template. However, as each of the emails contained a unique link, this no longer worked. As I had a list of these links in a spreadsheet, I worked out that I could just create a unique email for each school, with the link being a variable:\n\n\n\n=\"Dear to whom it may concern,</code></p>\nBelow you will find a link to the Google Sheet.</p>\n\"&Sheet1!R4&\"\nInstructions for filling in this information can be found in the End of Year guide.</p>\nSchool Support\"\n\n\n\n\nIt then occurred to me that as I had a list of the staff associated with each school that maybe I could replace the cold ‘Dear to whom it may concern’ with ‘Dear NAME’. The problem I was faced with though is that I had all the names in one cell, with each on a new line:\n\n\n\nIt then occurred to me that as I had a list of the staff associated with each school that maybe I could replace the cold ‘Dear to whom it may concern’ with ‘Dear NAME’. The problem I was faced with though is that I had all the names in one cell, with each on a new line:\n\n\n\nMahatma GandhiVirginia WoolfFiona Hardy\n\n\n\nMy first step then was to SUBSTITUTE the new line (CHAR(10)) with a comma:\n\n\n\n=SUBSTITUTE(C4,CHAR(10),\", \")\n\n\n\nHowever, I was then left with the following:\n\n\n\nMahatma Gandhi, Virginia Woolf, Fiona Hardy\n\n\n\nMy next task was to somehow replace the last comma in the string with an ‘and’. Unsure how to go about it, I went online and found a REGEXREPLACE on the Infoinspired website that achieved the desired outcome:\n\n\n\n=regexreplace(A1, \"(.*),\", \"$1 and\")\n\n\n\nThis then provided me with the following:\n\n\n\nMahatma Gandhi, Virginia Woolf and Fiona Hardy\n\n\n\nI then wondered if I could somehow remove the surname and leave only the first name in the list. After scratching my head for a while, I wondered if I could QUERY the list and select only the names that were not followed by a comma. I found the following REGEX formula:\n\n\n\n\"^[^,]+$\"\n\n\n\nI subsequently, SPLIT and TRANSPOSED my list of names and used a QUERY with a match containing the REGEX formula.\n\n\n\n=regexreplace(SUBSTITUTE(JOIN(\", \",QUERY(TRANSPOSE(SPLIT(SUBSTITUTE(C4,CHAR(10),\", \")&\",\",\" \")),\"SELECT * WHERE Col1 MATCHES '^[^,]+$'\")),CHAR(10),\", \"), \"(.*),\", \"$1 and\")\n\n\n\nReturning to my email template, I then replaced the ‘to whom it may concern’ with the formula. This meant I could quickly and easily create a an email that addressed the actual users and included their spreadsheet.\n\n\n\n=\"Dear \"&regexreplace(SUBSTITUTE(JOIN(\", \",QUERY(TRANSPOSE(SPLIT(SUBSTITUTE(C2,CHAR(10),\", \")&amp;\",\",\" \")),\"SELECT * WHERE Col1 MATCHES '^[^,]+$'\")),CHAR(10),\", \"), \"(.*),\", \"$1 and\")&\",\nBelow you will find a link to the Google Sheet.\n\"&Sheet1!R2&\"\nInstructions for filling in this information can be found in the End of Year guide.\nSchool Support\n\n\n\nProviding the following outcome:\n\n\n\n“&Sheet1!R2&”\n\n\n\nInstructions for filling in this information can be found in the End of Year guide.\n\n\n\nSchool Support\n\n\n\nProviding the following outcome:\n\n\n\n=Dear Mahatma, Virginia and Fiona,Below you will find a link to the Google Sheet.UNIQUE LINKInstructions for filling in this information can be found in the End of Year guide.School Support\n\n\n\n—\n\n\n\nI am sure there are more efficient ways to achieve the same outcome using different applications that I do not necessarily have at my disposal. For example, it would be even better to automatically send the the email from the Google Sheet, rather than copy and pasting the text into Outlook. I also must be honest, even though I completed Ben Collins’ REGEX course, I still have not got my head around it all yet, but I feel that the first point of learning is not always knowing how to do something, but actually knowing that it is possible.\n\n\n\nAs always, comments welcome.\n\r\n\r\n If you enjoy what you read here, feel free to sign up for my monthly newsletter to catch up on all things learning, edtech and storytelling."
+              }
+            ]
+          },
+          "id": "post-5743"
+        },
         {
           "type": [
             "h-entry"
@@ -674,73 +741,6 @@
             ]
           },
           "id": "post-5586"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Review – The Ministry for the Future by Kim Stanley Robinson"
-            ],
-            "url": [
-              "https://readwriterespond.com/2021/09/the-ministry-for-the-future/",
-              "https://readwriterespond.com/2021/09/the-ministry-for-the-future/"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "photo": [
-                    {
-                      "value": "https://secure.gravatar.com/avatar/d00e7ca24ca1b9c853da43af229c0e0e?s=40&d=mm&r=g",
-                      "srcset": {
-                        "2x": "https://secure.gravatar.com/avatar/d00e7ca24ca1b9c853da43af229c0e0e?s=80&d=mm&r=g"
-                      },
-                      "alt": ""
-                    }
-                  ],
-                  "url": [
-                    "https://readwriterespond.com/author/admin/"
-                  ],
-                  "uid": [
-                    "https://readwriterespond.com/author/admin/"
-                  ],
-                  "name": [
-                    "Aaron Davis"
-                  ]
-                },
-                "value": "Aaron Davis"
-              }
-            ],
-            "updated": [
-              "2021-09-11T12:59:18+10:00"
-            ],
-            "published": [
-              "2021-09-11T12:59:18+10:00"
-            ],
-            "featured": [
-              {
-                "value": "https://readwriterespond.com/wp-content/uploads/2021/09/The-Ministry-for-the-Future-and-History-900x506.jpg",
-                "srcset": {
-                  "900w": "https://readwriterespond.com/wp-content/uploads/2021/09/The-Ministry-for-the-Future-and-History-900x506.jpg",
-                  "300w": "https://readwriterespond.com/wp-content/uploads/2021/09/The-Ministry-for-the-Future-and-History-300x169.jpg",
-                  "768w": "https://readwriterespond.com/wp-content/uploads/2021/09/The-Ministry-for-the-Future-and-History-768x432.jpg",
-                  "960w": "https://readwriterespond.com/wp-content/uploads/2021/09/The-Ministry-for-the-Future-and-History.jpg"
-                },
-                "alt": "I am blood in the streets, the catastrophe you can never forget. I am the tide running under the world that no one sees or feels. I happen in the present but am told only in the future, and then they think they speak of the past, but really they are always speaking about the present. I do not exist and yet I am everything. You know what I am. I am History. Now make me good."
-              }
-            ],
-            "content": [
-              {
-                "html": "<p>There are some novels where you get to the end and are left thinking more about yourself and the world you live in than the actual plot of the story or the characters. The Ministry for the Future is one of those novels. Kim Stanley Robinson imagines how we might save ourselves and the planet from the perils of global warming. This is not a blueprint with all the answers laid out neatly, but rather a provocation that asks many questions that need to be considered.</p>\n\n\n\n<p>The story itself is loosely tied together by Mary Murphy, head of the UN Ministry for the Future, a group set up in accordance with Article 14 of the Paris Agreement.</p>\n\n\n\n<blockquote class=\"quoteback\" cite=\"https://unfccc.int/process-and-meetings/the-paris-agreement/the-paris-agreement\" data-title=\"The%20Paris%20Agreement%20%7C%20UNFCCC\" data-author=\"\">The Conference of the Parties serving as the meeting of the Parties to this Agreement shall keep under regular review the implementation of this Agreement and shall make, within its mandate, the decisions necessary to promote its effective implementation. It shall perform the functions assigned to it by this Agreement and shall:\n\n(a) Establish such subsidiary bodies as deemed necessary for the implementation of this Agreement\n\n<footer><cite> <a href=\"https://unfccc.int/process-and-meetings/the-paris-agreement/the-paris-agreement\">https://unfccc.int/process-and-meetings/the-paris-agreement/the-paris-agreement</a></cite></footer>\n</blockquote>\n<script note=\"\" loading=\"lazy\" src=\"https://cdn.jsdelivr.net/gh/Blogger-Peer-Review/quotebacks@1/quoteback.js\"></script>\n\n\n\n<p>It follows her journey in putting in place a number of steps and strategies to turn the tide on climate change. Associated with this is Murphy’s relationship with Frank May, a survivor from the extreme heatwave in Uttar Pradesh, the event which dictates the necessity for change. </p>\n\n\n\n<p>However, The Ministry for the Future is really a bricolage of many different voices captured through various texts, whether it be riddles, meeting notes, interviews and accounts. <a href=\"https://pluralistic.net/2020/10/14/final_ver2/\">A kind of docudrama</a>. These all combine to provide different perspectives for how things could get done. The reality confronted throughout is that global warming is bigger than a single person or a particular place. It is everywhere and a problem that never really settles. Something Timothy Morton has described elsewhere as a hyperobject.</p>\n\n\n\n<blockquote class=\"quoteback\" cite=\"https://www.upress.umn.edu/book-division/books/hyperobjects\" data-title=\"Hyperobjects\" data-author=\"\">Global warming is perhaps the most dramatic example of what Timothy Morton calls “hyperobjects”—entities of such vast temporal and spatial dimensions that they defeat traditional ideas about what a thing is in the first place.\n\n<footer><cite> <a href=\"https://www.upress.umn.edu/book-division/books/hyperobjects\">https://www.upress.umn.edu/book-division/books/hyperobjects</a></cite></footer>\n</blockquote>\n<script note=\"\" loading=\"lazy\" src=\"https://cdn.jsdelivr.net/gh/Blogger-Peer-Review/quotebacks@1/quoteback.js\"></script>\n\n\n\n<p>In an interview on the <a href=\"https://anchor.fm/marooned-on-mars/episodes/The-Ministry-for-the-Future-The-Kim-Stanley-Robinson-Interview-epjrep\">Marooned! on Mars podcast</a>, Robinson describes The Ministry for the Future as a novella between Frank and Mary with everything else hanging off it. Therefore, as a structure, it challenges the conventions of the realist novel as it can never really be folded into a particular character. Instead it provides a perspective about how things could get done collectively from a number of perspectives and voices.</p>\n\n\n\n<p>In the end, The Ministry for the Future is an example of near-future <a href=\"https://www.nybooks.com/articles/2020/12/17/kim-stanley-robinson-not-science-fiction/\">anti-dystopian</a> science fiction, what Robinson has described as <a href=\"https://anchor.fm/marooned-on-mars/episodes/The-Ministry-for-the-Future-The-Kim-Stanley-Robinson-Interview-epjrep\">a shot ahead of a moving object that is the ever present</a>. It is therefore an urgent book for now. A piece of <a href=\"https://www.thenation.com/article/culture/utopian-fiction-climate-literature/\">modal schizophrenia</a> that challenges the reader to consider what is and what ought to be. It raises many questions about topics such as violence, sacrifice, wealth, responsibility and what is actually possible. This challenge not only comes through the content grappled, which even at the end of the novel nearing the year 2050, still seems present, but also through the structure of the writing, whether it be the use of riddles to aid in thinking and reflecting or the fractured nature of the narrative that requires the reader to fill in the gaps as they go. I guess this is why <a href=\"https://twitter.com/BarackObama/status/1339631669104570370\">Barack Obama included it in his books for 2020</a>?</p>\n\n\n\n<p>For a different and shorter perspective on the novel and the challenge of global warming, <a href=\"https://www.ted.com/talks/kim_stanley_robinson_remembering_climate_change_a_message_from_the_year_2071/transcript?language=en\" target=\"_blank\" rel=\"noreferrer noopener\">Kim Stanley Robinson presented a TED video</a> recounting the story from the year 2071.</p>\n\r\n<hr>\r\n<em> <p class=\"selectionShareable\">If you enjoy what you read here, feel free to sign up for my <a href=\"https://buttondown.email/readwriterespond\" target=\"_blank\">monthly newsletter</a> to catch up on all things learning, edtech and storytelling.</p></em>",
-                "value": "There are some novels where you get to the end and are left thinking more about yourself and the world you live in than the actual plot of the story or the characters. The Ministry for the Future is one of those novels. Kim Stanley Robinson imagines how we might save ourselves and the planet from the perils of global warming. This is not a blueprint with all the answers laid out neatly, but rather a provocation that asks many questions that need to be considered.\n\n\n\nThe story itself is loosely tied together by Mary Murphy, head of the UN Ministry for the Future, a group set up in accordance with Article 14 of the Paris Agreement.\n\n\n\nThe Conference of the Parties serving as the meeting of the Parties to this Agreement shall keep under regular review the implementation of this Agreement and shall make, within its mandate, the decisions necessary to promote its effective implementation. It shall perform the functions assigned to it by this Agreement and shall:\n\n(a) Establish such subsidiary bodies as deemed necessary for the implementation of this Agreement\n\n https://unfccc.int/process-and-meetings/the-paris-agreement/the-paris-agreement\n\n\n\n\nIt follows her journey in putting in place a number of steps and strategies to turn the tide on climate change. Associated with this is Murphy’s relationship with Frank May, a survivor from the extreme heatwave in Uttar Pradesh, the event which dictates the necessity for change. \n\n\n\nHowever, The Ministry for the Future is really a bricolage of many different voices captured through various texts, whether it be riddles, meeting notes, interviews and accounts. A kind of docudrama. These all combine to provide different perspectives for how things could get done. The reality confronted throughout is that global warming is bigger than a single person or a particular place. It is everywhere and a problem that never really settles. Something Timothy Morton has described elsewhere as a hyperobject.\n\n\n\nGlobal warming is perhaps the most dramatic example of what Timothy Morton calls “hyperobjects”—entities of such vast temporal and spatial dimensions that they defeat traditional ideas about what a thing is in the first place.\n\n https://www.upress.umn.edu/book-division/books/hyperobjects\n\n\n\n\nIn an interview on the Marooned! on Mars podcast, Robinson describes The Ministry for the Future as a novella between Frank and Mary with everything else hanging off it. Therefore, as a structure, it challenges the conventions of the realist novel as it can never really be folded into a particular character. Instead it provides a perspective about how things could get done collectively from a number of perspectives and voices.\n\n\n\nIn the end, The Ministry for the Future is an example of near-future anti-dystopian science fiction, what Robinson has described as a shot ahead of a moving object that is the ever present. It is therefore an urgent book for now. A piece of modal schizophrenia that challenges the reader to consider what is and what ought to be. It raises many questions about topics such as violence, sacrifice, wealth, responsibility and what is actually possible. This challenge not only comes through the content grappled, which even at the end of the novel nearing the year 2050, still seems present, but also through the structure of the writing, whether it be the use of riddles to aid in thinking and reflecting or the fractured nature of the narrative that requires the reader to fill in the gaps as they go. I guess this is why Barack Obama included it in his books for 2020?\n\n\n\nFor a different and shorter perspective on the novel and the challenge of global warming, Kim Stanley Robinson presented a TED video recounting the story from the year 2071.\n\r\n\r\n If you enjoy what you read here, feel free to sign up for my monthly newsletter to catch up on all things learning, edtech and storytelling."
-              }
-            ]
-          },
-          "id": "post-5573"
         }
       ]
     }
@@ -772,7 +772,7 @@
       "https://readwriterespond.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=829e790c31ca24589293e7ce6176563d",
       "https://readwriterespond.com/wp-content/plugins/wp-fragmention/assets/css/fragmention.css?ver=0.1.4",
       "https://readwriterespond.com/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
-      "https://readwriterespond.com/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3",
+      "https://readwriterespond.com/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.12.0",
       "https://readwriterespond.com/wp-includes/css/dashicons.min.css?ver=829e790c31ca24589293e7ce6176563d",
       "https://readwriterespond.com/wp-content/themes/autonomie/style.css?ver=829e790c31ca24589293e7ce6176563d",
       "https://readwriterespond.com/wp-content/themes/autonomie/assets/css/print.css?ver=1.0.0",
@@ -834,6 +834,7 @@
       "https://readwriterespond.com/"
     ],
     "bookmark": [
+      "https://readwriterespond.com/2023/01/knowing-what-is-possible-on-continually-improving-solutions/",
       "https://readwriterespond.com/2023/01/creating-student-cards-with-qr-codes-using-google-sheets/",
       "https://readwriterespond.com/2022/11/commonplace-book-a-verb-or-a-noun/",
       "https://readwriterespond.com/2022/04/cyber-security-awareness-primary-years-cser-mooc/",
@@ -842,13 +843,14 @@
       "https://readwriterespond.com/2022/03/music-of-2021-in-review/",
       "https://readwriterespond.com/2022/02/memories/",
       "https://readwriterespond.com/2021/09/google-sheets/",
-      "https://readwriterespond.com/2021/09/creating-a-catalogue-in-google-sheets/",
-      "https://readwriterespond.com/2021/09/the-ministry-for-the-future/"
+      "https://readwriterespond.com/2021/09/creating-a-catalogue-in-google-sheets/"
     ],
     "author": [
       "https://readwriterespond.com/author/admin/"
     ],
     "noopener": [
+      "https://readwriterespond.com/2021/09/google-sheets/",
+      "https://infoinspired.com/google-docs/spreadsheet/regex-to-replace-the-last-occurrence-of-a-character-sheets/",
       "https://collect.readwriterespond.com/urls-hyperlinks-and-dots/",
       "https://collect.readwriterespond.com/how-to-create-dynamic-named-ranges-in-google-sheets/",
       "https://collect.readwriterespond.com/how-to-remember-more-of-what-you-read/",
@@ -881,10 +883,11 @@
       "https://collect.readwriterespond.com/swanns-way-marcel-proust/",
       "https://collect.readwriterespond.com/lolly-scramble-tony-martin/",
       "https://collect.readwriterespond.com/start-often-fk-achievements/",
-      "https://www.ted.com/talks/kim_stanley_robinson_remembering_climate_change_a_message_from_the_year_2071/transcript?language=en",
       "https://buttondown.email/"
     ],
     "noreferrer": [
+      "https://readwriterespond.com/2021/09/google-sheets/",
+      "https://infoinspired.com/google-docs/spreadsheet/regex-to-replace-the-last-occurrence-of-a-character-sheets/",
       "https://collect.readwriterespond.com/urls-hyperlinks-and-dots/",
       "https://collect.readwriterespond.com/how-to-create-dynamic-named-ranges-in-google-sheets/",
       "https://collect.readwriterespond.com/how-to-remember-more-of-what-you-read/",
@@ -912,8 +915,7 @@
       "https://collect.readwriterespond.com/and-the-word-is/",
       "https://collect.readwriterespond.com/swanns-way-marcel-proust/",
       "https://collect.readwriterespond.com/lolly-scramble-tony-martin/",
-      "https://collect.readwriterespond.com/start-often-fk-achievements/",
-      "https://www.ted.com/talks/kim_stanley_robinson_remembering_climate_change_a_message_from_the_year_2071/transcript?language=en"
+      "https://collect.readwriterespond.com/start-often-fk-achievements/"
     ],
     "nofollow": [
       "https://www.funnymonkey.com/2019/the-data-arent-worth-anything-but-well-keep-them-forever#annotations:Ue_BXhwFEeq7exM91Ut5Zg",
@@ -922,12 +924,15 @@
       "https://en.wikipedia.org/wiki/Something_in_the_Water_(film",
       "https://support.awesome-table.com/hc/en-us/sections/115001613905-File-Cabinet",
       "https://readwriterespond.com/wp-login.php",
+      "https://readwriterespond.com/author/admin/",
       "https://readwriterespond.com/"
     ],
     "external": [
+      "https://readwriterespond.com/author/admin/",
       "https://readwriterespond.com/"
     ],
     "ugc": [
+      "https://readwriterespond.com/author/admin/",
       "https://readwriterespond.com/"
     ],
     "generator": [
@@ -1014,7 +1019,7 @@
       "media": "all",
       "type": "text/css"
     },
-    "https://readwriterespond.com/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3": {
+    "https://readwriterespond.com/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.12.0": {
       "rels": [
         "stylesheet"
       ],
@@ -1210,12 +1215,12 @@
         "webmention"
       ]
     },
-    "https://readwriterespond.com/2023/01/creating-student-cards-with-qr-codes-using-google-sheets/": {
+    "https://readwriterespond.com/2023/01/knowing-what-is-possible-on-continually-improving-solutions/": {
       "rels": [
         "bookmark"
       ],
-      "title": "Permalink to Creating Student Cards with QR Codes using Google Sheets",
-      "text": "\n\t\t\t\t\tCreating Student Cards with QR Codes using Google Sheets\t\t\t\t"
+      "title": "Permalink to Knowing What is Possible – On Continually Improving Solutions",
+      "text": "\n\t\t\t\t\tKnowing What is Possible – On Continually Improving Solutions\t\t\t\t"
     },
     "https://readwriterespond.com/author/admin/": {
       "rels": [
@@ -1223,6 +1228,27 @@
       ],
       "title": "View all posts by Aaron Davis",
       "text": "Aaron Davis"
+    },
+    "https://readwriterespond.com/2021/09/google-sheets/": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "template for reviewing data"
+    },
+    "https://infoinspired.com/google-docs/spreadsheet/regex-to-replace-the-last-occurrence-of-a-character-sheets/": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "Infoinspired website"
+    },
+    "https://readwriterespond.com/2023/01/creating-student-cards-with-qr-codes-using-google-sheets/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to Creating Student Cards with QR Codes using Google Sheets",
+      "text": "\n\t\t\t\t\tCreating Student Cards with QR Codes using Google Sheets\t\t\t\t"
     },
     "https://collect.readwriterespond.com/urls-hyperlinks-and-dots/": {
       "rels": [
@@ -1510,13 +1536,6 @@
       ],
       "text": "Start often, finish rarely"
     },
-    "https://readwriterespond.com/2021/09/google-sheets/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Permalink to Getting Things Done with Google Sheets – Creating a Template to Review Data",
-      "text": "\n\t\t\t\t\tGetting Things Done with Google Sheets – Creating a Template to Review Data\t\t\t\t"
-    },
     "https://readwriterespond.com/2021/09/creating-a-catalogue-in-google-sheets/": {
       "rels": [
         "bookmark"
@@ -1529,20 +1548,6 @@
         "nofollow"
       ],
       "text": "File Cabinet"
-    },
-    "https://readwriterespond.com/2021/09/the-ministry-for-the-future/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Permalink to Review – The Ministry for the Future by Kim Stanley Robinson",
-      "text": "\n\t\t\t\t\tReview – The Ministry for the Future by Kim Stanley Robinson\t\t\t\t"
-    },
-    "https://www.ted.com/talks/kim_stanley_robinson_remembering_climate_change_a_message_from_the_year_2071/transcript?language=en": {
-      "rels": [
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "Kim Stanley Robinson presented a TED video"
     },
     "https://buttondown.email/": {
       "rels": [

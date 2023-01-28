@@ -1,73 +1,108 @@
 {
   "items": [],
   "rels": {
-    "preload": [
-      "https://fonts.googleapis.com/css?display=swap&family=Open+Sans:400,600",
-      "https://fonts.googleapis.com/css?display=swap&family=Roboto:400,900"
-    ],
     "stylesheet": [
-      "https://fonts.googleapis.com/css?display=swap&family=Open+Sans:400,600",
-      "https://fonts.googleapis.com/css?display=swap&family=Roboto:400,900",
-      "http://notpushk.in/css/bootstrap-custom.min.css",
-      "http://notpushk.in/css/parking2.min.css?v=6"
+      "https://unpkg.com/awsm.css@3/dist/awsm.min.css",
+      "https://unpkg.com/awsm.css@3/dist/awsm_theme_big-stone.min.css",
+      "https://edwardtufte.github.io/et-book/et-book.css"
     ],
-    "noopener": [
-      "https://epik.com/",
-      "http://www.facebook.com/sharer.php?u=notpushk.in",
-      "https://twitter.com/intent/tweet?url=notpushk.in",
-      "https://www.linkedin.com/shareArticle?mini=true&url=notpushk.in",
-      "https://anonymize.com/"
+    "alternate": [
+      "https://unpkg.com/awsm.css@3/dist/awsm_theme_big-stone.min.css"
+    ],
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "openid.delegate": [
+      "https://notpushk.in/"
+    ],
+    "openid.server": [
+      "https://openid.indieauth.com/openid"
+    ],
+    "me": [
+      "https://gitlab.com/notpushkin",
+      "https://github.com/notpushkin",
+      "https://matrix.to/#/@ale:matrix.org",
+      "mailto:alexander@notpushk.in",
+      "http://keybase.io/ale",
+      "https://mstdn.io/@ale"
     ]
   },
   "rel-urls": {
-    "https://fonts.googleapis.com/css?display=swap&family=Open+Sans:400,600": {
+    "https://unpkg.com/awsm.css@3/dist/awsm.min.css": {
       "rels": [
-        "preload"
-      ]
+        "stylesheet"
+      ],
+      "title": "Light"
     },
-    "https://fonts.googleapis.com/css?display=swap&family=Roboto:400,900": {
+    "https://unpkg.com/awsm.css@3/dist/awsm_theme_big-stone.min.css": {
       "rels": [
-        "preload"
-      ]
+        "alternate",
+        "stylesheet"
+      ],
+      "title": "Dark"
     },
-    "http://notpushk.in/css/bootstrap-custom.min.css": {
+    "https://edwardtufte.github.io/et-book/et-book.css": {
       "rels": [
         "stylesheet"
       ]
     },
-    "http://notpushk.in/css/parking2.min.css?v=6": {
+    "https://indieauth.com/auth": {
       "rels": [
-        "stylesheet"
+        "authorization_endpoint"
       ]
     },
-    "https://epik.com/": {
+    "https://tokens.indieauth.com/token": {
       "rels": [
-        "noopener"
+        "token_endpoint"
       ]
     },
-    "http://www.facebook.com/sharer.php?u=notpushk.in": {
+    "https://notpushk.in/": {
       "rels": [
-        "noopener"
-      ],
-      "text": "\n                                     Facebook"
+        "openid.delegate"
+      ]
     },
-    "https://twitter.com/intent/tweet?url=notpushk.in": {
+    "https://openid.indieauth.com/openid": {
       "rels": [
-        "noopener"
-      ],
-      "text": "\n                                     Twitter"
+        "openid.server"
+      ]
     },
-    "https://www.linkedin.com/shareArticle?mini=true&url=notpushk.in": {
+    "https://gitlab.com/notpushkin": {
       "rels": [
-        "noopener"
+        "me"
       ],
-      "text": "\n                                     LinkedIn"
+      "text": "GitLab"
     },
-    "https://anonymize.com/": {
+    "https://github.com/notpushkin": {
       "rels": [
-        "noopener"
+        "me"
       ],
-      "text": "Anonymize.com"
+      "text": "GitHub"
+    },
+    "https://matrix.to/#/@ale:matrix.org": {
+      "rels": [
+        "me"
+      ],
+      "text": "Matrix"
+    },
+    "mailto:alexander@notpushk.in": {
+      "rels": [
+        "me"
+      ],
+      "text": "E-mail"
+    },
+    "http://keybase.io/ale": {
+      "rels": [
+        "me"
+      ],
+      "text": "keybase.io/ale"
+    },
+    "https://mstdn.io/@ale": {
+      "rels": [
+        "me"
+      ]
     }
   }
 }

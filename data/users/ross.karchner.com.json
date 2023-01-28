@@ -1,20 +1,77 @@
 {
-  "items": [],
+  "items": [
+    {
+      "type": [
+        "h-feed"
+      ],
+      "properties": {
+        "name": [
+          "subscribe via RSS"
+        ]
+      }
+    }
+  ],
   "rels": {
+    "icon": [
+      "https://micro.blog//favicon.png"
+    ],
+    "shortcut": [
+      "https://micro.blog//favicon.png"
+    ],
     "stylesheet": [
-      "https://ross.karchner.com/ananke/css/main.min.css"
+      "https://ross.karchner.com/css/main.css",
+      "https://ross.karchner.com/custom.css"
+    ],
+    "canonical": [
+      "http://example.org/"
     ],
     "alternate": [
-      "https://ross.karchner.com/index.xml"
+      "https://ross.karchner.com/index.xml",
+      "http://example.org/feed.json"
     ],
-    "feed": [
-      "https://ross.karchner.com/index.xml"
+    "me": [
+      "https://micro.blog/"
+    ],
+    "authorization_endpoint": [
+      "https://micro.blog/indieauth/auth"
+    ],
+    "token_endpoint": [
+      "https://micro.blog/indieauth/token"
+    ],
+    "micropub": [
+      "https://micro.blog/micropub"
+    ],
+    "microsub": [
+      "https://micro.blog/microsub"
+    ],
+    "webmention": [
+      "https://micro.blog/webmention"
+    ],
+    "subscribe": [
+      "https://micro.blog/users/follow"
     ]
   },
   "rel-urls": {
-    "https://ross.karchner.com/ananke/css/main.min.css": {
+    "https://micro.blog//favicon.png": {
+      "rels": [
+        "icon",
+        "shortcut"
+      ],
+      "type": "image/x-icon"
+    },
+    "https://ross.karchner.com/css/main.css": {
       "rels": [
         "stylesheet"
+      ]
+    },
+    "https://ross.karchner.com/custom.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "http://example.org/": {
+      "rels": [
+        "canonical"
       ]
     },
     "https://ross.karchner.com/index.xml": {
@@ -23,6 +80,48 @@
       ],
       "title": "Ross Karchner",
       "type": "application/rss+xml"
+    },
+    "http://example.org/feed.json": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Ross Karchner",
+      "type": "application/json"
+    },
+    "https://micro.blog/": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://micro.blog/indieauth/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://micro.blog/indieauth/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://micro.blog/micropub": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://micro.blog/microsub": {
+      "rels": [
+        "microsub"
+      ]
+    },
+    "https://micro.blog/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://micro.blog/users/follow": {
+      "rels": [
+        "subscribe"
+      ]
     }
   }
 }
