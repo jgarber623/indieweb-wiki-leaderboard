@@ -27,6 +27,12 @@
       "https://gericci.me/img/touch-icon-ipad-retina.png",
       "https://gericci.me/img/touch-icon-iphone-retina.png"
     ],
+    "me": [
+      "https://mastodon.social/@gericci",
+      "https://github.com/gericci",
+      "https://twitter.com/gericci",
+      "https://gericci.me/"
+    ],
     "icon": [
       "https://gericci.me/img/favicon.png"
     ],
@@ -36,12 +42,6 @@
     ],
     "manifest": [
       "https://gericci.me/manifest.json"
-    ],
-    "me": [
-      "https://github.com/gericci",
-      "https://mastodon.social/@gericci",
-      "https://twitter.com/gericci",
-      "https://gericci.me/"
     ],
     "license": [
       "https://creativecommons.org/licenses/by-nc-nd/4.0/"
@@ -78,6 +78,21 @@
         "apple-touch-icon"
       ]
     },
+    "https://mastodon.social/@gericci": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://github.com/gericci": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://twitter.com/gericci": {
+      "rels": [
+        "me"
+      ]
+    },
     "https://gericci.me/img/favicon.png": {
       "rels": [
         "icon"
@@ -98,24 +113,6 @@
       "rels": [
         "manifest"
       ]
-    },
-    "https://github.com/gericci": {
-      "rels": [
-        "me"
-      ],
-      "text": "me/ on github"
-    },
-    "https://mastodon.social/@gericci": {
-      "rels": [
-        "me"
-      ],
-      "text": "me/ on Mastodon"
-    },
-    "https://twitter.com/gericci": {
-      "rels": [
-        "me"
-      ],
-      "text": "me/ on twitter"
     },
     "https://gericci.me/": {
       "rels": [

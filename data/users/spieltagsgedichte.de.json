@@ -30,14 +30,11 @@
     }
   ],
   "rels": {
-    "dns-prefetch": [
-      "https://fonts.googleapis.com/"
-    ],
-    "alternate": [
-      "https://spieltagsgedichte.de/feed/",
-      "https://spieltagsgedichte.de/comments/feed/"
+    "preload": [
+      "https://fonts.googleapis.com/css?family=Open%20Sans%3A600%2C400%2C300%2C300i%7CArvo%3A400%2Citalic%2C700%2C700italic&subset=latin%2Clatin-ext&display=swap"
     ],
     "stylesheet": [
+      "https://fonts.googleapis.com/css?family=Open%20Sans%3A600%2C400%2C300%2C300i%7CArvo%3A400%2Citalic%2C700%2C700italic&subset=latin%2Clatin-ext&display=swap",
       "https://spieltagsgedichte.de/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1",
       "https://spieltagsgedichte.de/wp-includes/css/classic-themes.min.css?ver=1",
       "https://spieltagsgedichte.de/wp-content/plugins/table-of-contents-plus/screen.min.css?ver=2212",
@@ -45,12 +42,20 @@
       "https://spieltagsgedichte.de/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
       "https://spieltagsgedichte.de/wp-content/plugins/indieweb-post-kinds/css/kind.min.css?ver=3.6.4",
       "https://spieltagsgedichte.de/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.12.0",
-      "https://fonts.googleapis.com/css?family=Open+Sans%3A600%2C400%2C300%2C300i&subset=latin%2Clatin-ext&display=swap&ver=6.1.1",
       "https://spieltagsgedichte.de/wp-content/themes/unlimited/assets/font-awesome/css/all.min.css?ver=6.1.1",
       "https://spieltagsgedichte.de/wp-content/themes/unlimited/style.css?ver=6.1.1",
       "https://spieltagsgedichte.de/wp-content/plugins/syndication-links/css/syn.min.css?ver=4.4.4",
-      "https://spieltagsgedichte.de/wp-content/plugins/unlimited-pro/styles/style.min.css?ver=6.1.1",
-      "https://fonts.googleapis.com/css?family=Arvo%3A400%2Citalic%2C700%2C700italic&subset=latin%2Clatin-ext&ver=6.1.1"
+      "https://spieltagsgedichte.de/wp-content/plugins/unlimited-pro/styles/style.min.css?ver=6.1.1"
+    ],
+    "dns-prefetch": [
+      "https://fonts.googleapis.com/"
+    ],
+    "preconnect": [
+      "https://fonts.gstatic.com/"
+    ],
+    "alternate": [
+      "https://spieltagsgedichte.de/feed/",
+      "https://spieltagsgedichte.de/comments/feed/"
     ],
     "https://api.w.org/": [
       "https://spieltagsgedichte.de/wp-json/"
@@ -95,9 +100,19 @@
     ]
   },
   "rel-urls": {
+    "https://fonts.googleapis.com/css?family=Open%20Sans%3A600%2C400%2C300%2C300i%7CArvo%3A400%2Citalic%2C700%2C700italic&subset=latin%2Clatin-ext&display=swap": {
+      "rels": [
+        "preload"
+      ]
+    },
     "https://fonts.googleapis.com/": {
       "rels": [
         "dns-prefetch"
+      ]
+    },
+    "https://fonts.gstatic.com/": {
+      "rels": [
+        "preconnect"
       ]
     },
     "https://spieltagsgedichte.de/feed/": {
@@ -163,13 +178,6 @@
       "media": "all",
       "type": "text/css"
     },
-    "https://fonts.googleapis.com/css?family=Open+Sans%3A600%2C400%2C300%2C300i&subset=latin%2Clatin-ext&display=swap&ver=6.1.1": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "all",
-      "type": "text/css"
-    },
     "https://spieltagsgedichte.de/wp-content/themes/unlimited/assets/font-awesome/css/all.min.css?ver=6.1.1": {
       "rels": [
         "stylesheet"
@@ -192,13 +200,6 @@
       "type": "text/css"
     },
     "https://spieltagsgedichte.de/wp-content/plugins/unlimited-pro/styles/style.min.css?ver=6.1.1": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "all",
-      "type": "text/css"
-    },
-    "https://fonts.googleapis.com/css?family=Arvo%3A400%2Citalic%2C700%2C700italic&subset=latin%2Clatin-ext&ver=6.1.1": {
       "rels": [
         "stylesheet"
       ],

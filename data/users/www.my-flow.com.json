@@ -15,9 +15,6 @@
     }
   ],
   "rels": {
-    "canonical": [
-      "https://www.my-flow.com/"
-    ],
     "me": [
       "https://www.linkedin.com/in/florianjbreunig",
       "https://github.com/my-flow",
@@ -28,17 +25,9 @@
     ],
     "alternate": [
       "https://www.my-flow.com/index.xml"
-    ],
-    "stylesheet": [
-      "https://www.my-flow.com/main.min.9ee462504308066dbfd035451f7ce899743a86605aaf0d008cfd7577e493dba6.css"
     ]
   },
   "rel-urls": {
-    "https://www.my-flow.com/": {
-      "rels": [
-        "canonical"
-      ]
-    },
     "https://www.linkedin.com/in/florianjbreunig": {
       "rels": [
         "me"
@@ -62,10 +51,11 @@
       "title": "Florian J. Breunig",
       "type": "application/rss+xml"
     },
-    "https://www.my-flow.com/main.min.9ee462504308066dbfd035451f7ce899743a86605aaf0d008cfd7577e493dba6.css": {
+    "https://www.my-flow.com/": {
       "rels": [
-        "stylesheet"
-      ]
+        "me"
+      ],
+      "text": "me"
     }
   }
 }
