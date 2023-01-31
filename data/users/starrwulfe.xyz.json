@@ -1,0 +1,1732 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-feed"
+      ],
+      "properties": {
+        "name": [
+          "starrwulfe >>federated<<"
+        ],
+        "url": [
+          "https://starrwulfe.xyz/"
+        ],
+        "summary": [
+          "J L Gatewood's Indieweb powered home in the Fediverse."
+        ],
+        "content": [
+          {
+            "html": "J L Gatewood's Indieweb powered home in the Fediverse.",
+            "value": "J L Gatewood's Indieweb powered home in the Fediverse."
+          }
+        ]
+      },
+      "children": [
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Some thoughts on Yarns"
+            ],
+            "url": [
+              "https://starrwulfe.xyz/some-thoughts-on-yarns/",
+              "https://starrwulfe.xyz/some-thoughts-on-yarns/"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "photo": [
+                    {
+                      "value": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=40&d=identicon&r=g",
+                      "srcset": {
+                        "2x": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=80&d=identicon&r=g"
+                      },
+                      "alt": "User Avatar of J L Gatewood"
+                    }
+                  ],
+                  "url": [
+                    "https://starrwulfe.xyz/author/starrwulfe/"
+                  ],
+                  "uid": [
+                    "https://starrwulfe.xyz/author/starrwulfe/"
+                  ],
+                  "name": [
+                    "J L Gatewood"
+                  ]
+                },
+                "value": "J L Gatewood"
+              }
+            ],
+            "published": [
+              "2023-01-23T18:07:29-05:00"
+            ],
+            "duration": [
+              "PT4M"
+            ],
+            "featured": [
+              {
+                "value": "https://images.unsplash.com/photo-1598871956222-26b66d6559fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8eWFybiw1OTg1LjA2MDczMTYyMzI1NXx8fHx8fDE2NzQ1MTM4NzQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080",
+                "alt": ""
+              }
+            ],
+            "content": [
+              {
+                "html": "<h5>\n<a href=\"https://jackjamieson.net/yarns-microsub-server-getting-started-guide/\" target=\"_blank\" rel=\"noopener\">Yarns</a> is a microsub server plug-in available for WordPress that allows with the aid of different connecting apps to read RSS feeds and use <a href=\"http://indieweb.org/\">Indieweb</a> techniques to interact with them. </h5>\r\n\r\n<div class=\"wp-block-jetpack-markdown\">\r\n<h3>What’s the use case for this?</h3>\r\n<p>Because I’m using this site for all my social media needs, being able to view, subscribe/follow different feeds from the source, and even resyndicate, and/or respond to them is a better workflow than the one I’m using now:</p>\r\n<ul>\r\n<li>check RSS reader and see thing I want to respond to.</li>\r\n<li>copy URL to thing</li>\r\n<li>open another window and log into my site, and respond there.</li>\r\n<li>kinda profit?! OK, so it’s not really that complicated I guess, but having an all-in-one method to just hit a “reply” button is a bit easier, no? Not to mention the ease at being able to keep tabs on read/unreads and use it as a “read-it-later” service without having yet another app for that too.</li>\r\n</ul>\r\n<h3>How easy is it to use?</h3>\r\n<p>Pretty simple once I figured out where the settings were– seriously, that was the hardest part because that’s where you set up the feeds subscription. For me, it’s sitting in the same spot as the rest of the Indieweb plugins. I expected it to be more like <a href=\"https://wordpress.org/plugins/friends/\">Friends</a> which is a plug-in that allows WordPress blogs to “follow” other blogs (and anything that runs ActivityPub like Mastodon accounts, but more on that later). Friends has its own separate section that allows you to view feeds directly from your website’s front end when logged in… Doesn’t work for me though, as it constantly shows “Feed not found” while simultaneously showing there are posts in many feeds and I can go into the “back end” and see them all. I don’t think it’s supposed to work that way though, so that’s why I’m giving this a shot. Also the Friends plug-in creates users on your WordPress instance to utilize the addtional rows of database entries. An easy way to ensure everything gets backed up since no additional tables are needed to hold all that data this way. To your wordpress installation, it just looks like all these new users are making private posts. I’m not opposed to this method really.</p>\r\n<h3>How would you improve it?</h3>\r\n<p>Remember, my goal with the site is for it to be my social hub. As we’ve been seeing over the past few months thanks to a certain avian SNS site’s changes, it’s FOSS alternative Mastodon has zoomed into the spotlight and users are switching to the network from or at least using in conjunction with Twitter. Because I want Starrwulfe.xyz to be my “Mastodon/ActivityPub” instance, I’d like any way to make that easier.</p>\r\n<ul>\r\n<li>Allowing Yarns to officially “follow” ActivityPub accounts would be very welcome. This means having Yarns fire off a “followed” ActivityPub in the background. It would need to hook in to all the same places that “Friends” currently does as well, but it shouldn’t be hard since its well documented in code. Adding in some way to turn <code>@-@</code> usernames into their URLs and discovering <em>all</em> their feeds is a good look too… Speaking of which–</li>\r\n</ul>\r\n<p>Can we get a way to discover all the feeds for a particular entity?</p>\r\n<ul>\r\n<li>The cool thing about Friends is that you can create a “user” and save all the feeds associated with that user in one place and in one stream!</li>\r\n<li>When following a blog that has feeds for each category/tag/area</li>\r\n<li>When following a person that has feeds for their main site, micro-blog, and social media site.</li>\r\n</ul>\r\n<p>Another thing I want is some kind of minimal reader/publisher _as a part of_my site.</p>\r\n<ul>\r\n<li>Create an “onboard reader/publisher UI for those times access to Monagle, AllTogetherTomorrow, Indigenous, etc are all down.</li>\r\n</ul>\r\n<p>Lastly, I’d like to be able to import/export OPML files.</p>\r\n<ul>\r\n<li>I have a bunch of feeds that could be chucked into Yarns right now if I had this, but have to spend time keying them in by hand…</li>\r\n</ul>\r\n</div>\r\n\r\n<p>This is definitely not a rant and merely suggestions on how to improve upon a good idea from a neophyte user’s point of view. This post will be updated as I get more adept at this and/or the makers of the plug in implement anything incorporating any of my suggestions.</p>\r\n<p>–jlg</p>",
+                "value": "Yarns is a microsub server plug-in available for WordPress that allows with the aid of different connecting apps to read RSS feeds and use Indieweb techniques to interact with them. \r\n\r\n\r\nWhat’s the use case for this?\r\nBecause I’m using this site for all my social media needs, being able to view, subscribe/follow different feeds from the source, and even resyndicate, and/or respond to them is a better workflow than the one I’m using now:\r\n\r\ncheck RSS reader and see thing I want to respond to.\r\ncopy URL to thing\r\nopen another window and log into my site, and respond there.\r\nkinda profit?! OK, so it’s not really that complicated I guess, but having an all-in-one method to just hit a “reply” button is a bit easier, no? Not to mention the ease at being able to keep tabs on read/unreads and use it as a “read-it-later” service without having yet another app for that too.\r\n\r\nHow easy is it to use?\r\nPretty simple once I figured out where the settings were– seriously, that was the hardest part because that’s where you set up the feeds subscription. For me, it’s sitting in the same spot as the rest of the Indieweb plugins. I expected it to be more like Friends which is a plug-in that allows WordPress blogs to “follow” other blogs (and anything that runs ActivityPub like Mastodon accounts, but more on that later). Friends has its own separate section that allows you to view feeds directly from your website’s front end when logged in… Doesn’t work for me though, as it constantly shows “Feed not found” while simultaneously showing there are posts in many feeds and I can go into the “back end” and see them all. I don’t think it’s supposed to work that way though, so that’s why I’m giving this a shot. Also the Friends plug-in creates users on your WordPress instance to utilize the addtional rows of database entries. An easy way to ensure everything gets backed up since no additional tables are needed to hold all that data this way. To your wordpress installation, it just looks like all these new users are making private posts. I’m not opposed to this method really.\r\nHow would you improve it?\r\nRemember, my goal with the site is for it to be my social hub. As we’ve been seeing over the past few months thanks to a certain avian SNS site’s changes, it’s FOSS alternative Mastodon has zoomed into the spotlight and users are switching to the network from or at least using in conjunction with Twitter. Because I want Starrwulfe.xyz to be my “Mastodon/ActivityPub” instance, I’d like any way to make that easier.\r\n\r\nAllowing Yarns to officially “follow” ActivityPub accounts would be very welcome. This means having Yarns fire off a “followed” ActivityPub in the background. It would need to hook in to all the same places that “Friends” currently does as well, but it shouldn’t be hard since its well documented in code. Adding in some way to turn @-@ usernames into their URLs and discovering all their feeds is a good look too… Speaking of which–\r\n\r\nCan we get a way to discover all the feeds for a particular entity?\r\n\r\nThe cool thing about Friends is that you can create a “user” and save all the feeds associated with that user in one place and in one stream!\r\nWhen following a blog that has feeds for each category/tag/area\r\nWhen following a person that has feeds for their main site, micro-blog, and social media site.\r\n\r\nAnother thing I want is some kind of minimal reader/publisher _as a part of_my site.\r\n\r\nCreate an “onboard reader/publisher UI for those times access to Monagle, AllTogetherTomorrow, Indigenous, etc are all down.\r\n\r\nLastly, I’d like to be able to import/export OPML files.\r\n\r\nI have a bunch of feeds that could be chucked into Yarns right now if I had this, but have to spend time keying them in by hand…\r\n\r\n\r\n\r\nThis is definitely not a rant and merely suggestions on how to improve upon a good idea from a neophyte user’s point of view. This post will be updated as I get more adept at this and/or the makers of the plug in implement anything incorporating any of my suggestions.\r\n–jlg"
+              }
+            ]
+          },
+          "id": "post-5427",
+          "children": [
+            {
+              "type": [
+                "h-entry"
+              ],
+              "properties": {
+                "name": [
+                  "Day #14 of working on my indieweb site"
+                ],
+                "url": [
+                  "https://starrwulfe.xyz/day-14-of-working-on-my-indieweb-site/",
+                  "https://starrwulfe.xyz/day-14-of-working-on-my-indieweb-site/"
+                ],
+                "author": [
+                  {
+                    "type": [
+                      "h-card"
+                    ],
+                    "properties": {
+                      "photo": [
+                        {
+                          "value": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=40&d=identicon&r=g",
+                          "srcset": {
+                            "2x": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=80&d=identicon&r=g"
+                          },
+                          "alt": "User Avatar of J L Gatewood"
+                        }
+                      ],
+                      "url": [
+                        "https://starrwulfe.xyz/author/starrwulfe/"
+                      ],
+                      "uid": [
+                        "https://starrwulfe.xyz/author/starrwulfe/"
+                      ],
+                      "name": [
+                        "J L Gatewood"
+                      ]
+                    },
+                    "value": "J L Gatewood"
+                  }
+                ],
+                "published": [
+                  "2023-01-14T14:15:00-05:00"
+                ],
+                "duration": [
+                  "PT4M"
+                ],
+                "featured": [
+                  {
+                    "value": "https://images.pexels.com/photos/3530752/pexels-photo-3530752.jpeg",
+                    "alt": "Close-up Photography Neon peach coloredNumber 14"
+                  }
+                ],
+                "content": [
+                  {
+                    "html": "<p>I managed to get the site itself up and running without a ton of hitches and it seems to be humming along well with most of the full requirements installed/coded in/shade-tree-jerry-rigged in.<br><br>To recap, this site has to:</p>\r\n\r\n\r\n\r\n<ul>\r\n<li>\n<span style=\"text-decoration: underline;\"><strong>serve as a digital garden</strong></span>; where I collect a lot of the things I learn online in one place (this also means some of that stuff YOU can’t see, but I as a logged in user, can.)</li>\r\n\r\n\r\n\r\n<li>\n<strong><span style=\"text-decoration: underline;\">serve as my social media hub.</span></strong> Anything I post, like, favorite, etc, should be catalogued here.\r\n<ul>\r\n<li>I have a way now to post/like/repost (even quote post) and more to <a href=\"http://indieweb.org/mastodon\" target=\"_blank\" rel=\"noreferrer noopener\" data-type=\"URL\" data-id=\"http://indieweb.org/mastodon\">Mastodon</a> (this site IS a Mastodon/<a href=\"http://indieweb.org/activitypub\" target=\"_blank\" rel=\"noreferrer noopener\" data-type=\"URL\" data-id=\"http://indieweb.org/activitypub\">ActivityWeb</a> compatible site; try looking up <code>@starrwulfe@starrwulfe.xyz</code> from your account in the Fediverse!)</li>\r\n\r\n\r\n\r\n<li>I can do the same to Twitter as well as Reddit.</li>\r\n\r\n\r\n\r\n<li>I can comment, star and follow Github issues and projects.</li>\r\n\r\n\r\n\r\n<li>I can check-in to places with <a href=\"http://swarmapp.com/\" target=\"_blank\" rel=\"noreferrer noopener\">Swarm</a> and have it save privately here. This is really good for when I’m somewhere new and want to save all the information for later reference but don’t want to let the world know where I am at that moment.</li>\r\n\r\n\r\n\r\n<li>I can <a href=\"http://indieweb.org/backfeed\" target=\"_blank\" rel=\"noreferrer noopener\">backfeed</a> posts from Instagram and Facebook, which is better than nothing– I may have a workaround to hydrate posts/create them through IFTTT or Jetpack in theory… Stay tuned.</li>\r\n</ul>\r\n</li>\r\n\r\n\r\n\r\n<li>\n<strong><span style=\"text-decoration: underline;\">Keep copies of the media and posts backed up.</span></strong> I’m actually using a managed hosting service that backs everything up to some S3 buckets I had laying around from an old project, but I also use this plug-in that sends everything to my NAS farm here at the house too. From there, it’s backed up to a some more clouds. Can never have enough backup.</li>\r\n\r\n\r\n\r\n<li>\n<strong><span style=\"text-decoration: underline;\">Eventually handle <a href=\"http://jason.gatewood.xyz/\" target=\"_blank\" rel=\"noreferrer noopener\">my main site’s</a> duties.</span></strong> Right now that website shows off my professional side as a journalist/technical writer; I need to migrate all that over here and figure out how I’m gonna handle the URL… Overlay or redirect or… Let me know any other ideas!</li>\r\n\r\n\r\n\r\n<li>\n<span style=\"text-decoration: underline;\"><strong>Look good doing all that!</strong></span> I still don’t know if I’m keeping this theme yet. Even if I do, I need to change a lot in the CSS. I want a more minimalist aesthetic:\r\n<ul>\r\n<li>only system fonts, so you’re not waiting for a .ttf of a font you’ll never use other than to see my site to download.</li>\r\n\r\n\r\n\r\n<li>Only Unicode glyphs including using emoji for icon packs (although the icons here are pretty light, I just prefer the aesthetics. I’d also have to get rid of WordPress’ use of <a href=\"https://twemoji.twitter.com/\" target=\"_blank\" rel=\"noreferrer noopener\" data-type=\"URL\" data-id=\"https://twemoji.twitter.com\">Twimoji</a> maybe. 🤔) There’s plug ins for this though…</li>\r\n\r\n\r\n\r\n<li>Redo the .css so there’s less negative space. I love this layout, but want it to be more compact. Also want to switch up the fonts– I like san-serifs to read the body of a post probably due to me spending eons of time in the terminal (preferably monospace ones because 私時々日本語で説明ため入力し and Japanese is always monospaced so it flows better)</li>\r\n\r\n\r\n\r\n<li>Would be nice if this site looked good in <a href=\"https://w3m.sourceforge.net/\" target=\"_blank\" rel=\"noreferrer noopener\" data-type=\"URL\" data-id=\"https://w3m.sourceforge.net/\">w3m</a>/<a href=\"http://brow.sh/\" target=\"_blank\" rel=\"noreferrer noopener\">browsh</a> text browsers, as well as feed readers, read-it-later bookmarking apps and so on.</li>\r\n</ul>\r\n</li>\r\n\r\n\r\n\r\n<li>\n<strong><span style=\"text-decoration: underline;\">Serve as a feed reader.</span></strong> Since this is already effectively an ActivityWeb instance, part of the how I follow others from here is thru a plugin called <a href=\"https://github.com/akirk/friends\" target=\"_blank\" rel=\"noreferrer noopener\" data-type=\"URL\" data-id=\"https://github.com/akirk/friends\">Friends</a>, but it’s kinda heavy. Maybe <a href=\"http://github.com/jackjamieson2/yarns-microsub-server\" target=\"_blank\" rel=\"noreferrer noopener\" data-type=\"URL\" data-id=\"github.com/jackjamieson2/yarns-microsub-server\">Yarn</a> is the way to go; both are RSS feed readers but only Friends actually sends a “following” <a href=\"https://indieweb.org/activitypub\" target=\"_blank\" rel=\"noreferrer noopener\" data-type=\"URL\" data-id=\"https://indieweb.org/activitypub\">webmention</a>/<a href=\"https://indieweb.org/activitypub\" target=\"_blank\" rel=\"noreferrer noopener\" data-type=\"URL\" data-id=\"https://indieweb.org/activitypub\">activitypub </a>notice to the site/person being followed and lets them know they’re now being followed by me. I think <a href=\"https://david.shanske.com/\" target=\"_blank\" rel=\"noreferrer noopener\" data-type=\"URL\" data-id=\"https://david.shanske.com\">David Shanske</a> is thinking of adding that ability to Yarn though which would allow for some fun things via <a href=\"https://indieweb.org/microsub\" target=\"_blank\" rel=\"noreferrer noopener\">microsub</a> too.</li>\r\n</ul>\r\n\r\n\r\n\r\n<div class=\"wp-block-jetpack-markdown\">\r\n<p>As it is now, it seems to be doing most of the above and just needs a few more cosmetics at this point in the way of organization, taxonomy of posts and workflow practice. Other itches needing scratching are:</p>\r\n<ul>\r\n<li>In particular I want to replace/augment my <a href=\"http://instagram.com/starrwulfe\">Instagram</a> with Pixelfed (https://pixelfed.social/starrwulfe) and need to figure out how to connect them. Maybe through my blog?)</li>\r\n<li>Get check-ins and weather reporting right. That’s definitely a <a href=\"https://david.shanske.com/\">David Shanske</a> question.</li>\r\n<li>Make a calendar for RSVP/scheduling that can read iCalendar streams.</li>\r\n<li>Podcasting/Video streaming. There’s probably a plug in for that.</li>\r\n<li>Books/Games/TV/Movies section that will replace <a href=\"https://www.goodreads.com/\">GoodReads</a>, <a href=\"https://letterboxd.com/\">LetterBoxd</a>, and other media listing apps.</li>\r\n</ul>\r\n<p>If you’re also “doing too much” with your website and know of some ways to do some of the above or know something else I don’t, send me a webmention/toot/tweet to this page! And if you happened to wander by here and just wanna say hi, you can always use <a href=\"https://commentpara.de/\">Comment Parade</a> and leave a quick message here as well.</p>\r\n</div>",
+                    "value": "I managed to get the site itself up and running without a ton of hitches and it seems to be humming along well with most of the full requirements installed/coded in/shade-tree-jerry-rigged in.To recap, this site has to:\r\n\r\n\r\n\r\n\r\nserve as a digital garden; where I collect a lot of the things I learn online in one place (this also means some of that stuff YOU can’t see, but I as a logged in user, can.)\r\n\r\n\r\n\r\nserve as my social media hub. Anything I post, like, favorite, etc, should be catalogued here.\r\n\r\nI have a way now to post/like/repost (even quote post) and more to Mastodon (this site IS a Mastodon/ActivityWeb compatible site; try looking up @starrwulfe@starrwulfe.xyz from your account in the Fediverse!)\r\n\r\n\r\n\r\nI can do the same to Twitter as well as Reddit.\r\n\r\n\r\n\r\nI can comment, star and follow Github issues and projects.\r\n\r\n\r\n\r\nI can check-in to places with Swarm and have it save privately here. This is really good for when I’m somewhere new and want to save all the information for later reference but don’t want to let the world know where I am at that moment.\r\n\r\n\r\n\r\nI can backfeed posts from Instagram and Facebook, which is better than nothing– I may have a workaround to hydrate posts/create them through IFTTT or Jetpack in theory… Stay tuned.\r\n\r\n\r\n\r\n\r\n\r\nKeep copies of the media and posts backed up. I’m actually using a managed hosting service that backs everything up to some S3 buckets I had laying around from an old project, but I also use this plug-in that sends everything to my NAS farm here at the house too. From there, it’s backed up to a some more clouds. Can never have enough backup.\r\n\r\n\r\n\r\nEventually handle my main site’s duties. Right now that website shows off my professional side as a journalist/technical writer; I need to migrate all that over here and figure out how I’m gonna handle the URL… Overlay or redirect or… Let me know any other ideas!\r\n\r\n\r\n\r\nLook good doing all that! I still don’t know if I’m keeping this theme yet. Even if I do, I need to change a lot in the CSS. I want a more minimalist aesthetic:\r\n\r\nonly system fonts, so you’re not waiting for a .ttf of a font you’ll never use other than to see my site to download.\r\n\r\n\r\n\r\nOnly Unicode glyphs including using emoji for icon packs (although the icons here are pretty light, I just prefer the aesthetics. I’d also have to get rid of WordPress’ use of Twimoji maybe. 🤔) There’s plug ins for this though…\r\n\r\n\r\n\r\nRedo the .css so there’s less negative space. I love this layout, but want it to be more compact. Also want to switch up the fonts– I like san-serifs to read the body of a post probably due to me spending eons of time in the terminal (preferably monospace ones because 私時々日本語で説明ため入力し and Japanese is always monospaced so it flows better)\r\n\r\n\r\n\r\nWould be nice if this site looked good in w3m/browsh text browsers, as well as feed readers, read-it-later bookmarking apps and so on.\r\n\r\n\r\n\r\n\r\n\r\nServe as a feed reader. Since this is already effectively an ActivityWeb instance, part of the how I follow others from here is thru a plugin called Friends, but it’s kinda heavy. Maybe Yarn is the way to go; both are RSS feed readers but only Friends actually sends a “following” webmention/activitypub notice to the site/person being followed and lets them know they’re now being followed by me. I think David Shanske is thinking of adding that ability to Yarn though which would allow for some fun things via microsub too.\r\n\r\n\r\n\r\n\r\n\r\nAs it is now, it seems to be doing most of the above and just needs a few more cosmetics at this point in the way of organization, taxonomy of posts and workflow practice. Other itches needing scratching are:\r\n\r\nIn particular I want to replace/augment my Instagram with Pixelfed (https://pixelfed.social/starrwulfe) and need to figure out how to connect them. Maybe through my blog?)\r\nGet check-ins and weather reporting right. That’s definitely a David Shanske question.\r\nMake a calendar for RSVP/scheduling that can read iCalendar streams.\r\nPodcasting/Video streaming. There’s probably a plug in for that.\r\nBooks/Games/TV/Movies section that will replace GoodReads, LetterBoxd, and other media listing apps.\r\n\r\nIf you’re also “doing too much” with your website and know of some ways to do some of the above or know something else I don’t, send me a webmention/toot/tweet to this page! And if you happened to wander by here and just wanna say hi, you can always use Comment Parade and leave a quick message here as well."
+                  }
+                ]
+              },
+              "id": "post-4",
+              "children": [
+                {
+                  "type": [
+                    "h-entry"
+                  ],
+                  "properties": {
+                    "author": [
+                      {
+                        "type": [
+                          "h-card"
+                        ],
+                        "properties": {
+                          "photo": [
+                            {
+                              "value": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=40&d=identicon&r=g",
+                              "srcset": {
+                                "2x": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=80&d=identicon&r=g"
+                              },
+                              "alt": "User Avatar of J L Gatewood"
+                            }
+                          ],
+                          "url": [
+                            "https://starrwulfe.xyz/author/starrwulfe/"
+                          ],
+                          "uid": [
+                            "https://starrwulfe.xyz/author/starrwulfe/"
+                          ],
+                          "name": [
+                            "J L Gatewood"
+                          ]
+                        },
+                        "value": "J L Gatewood"
+                      }
+                    ],
+                    "url": [
+                      "https://starrwulfe.xyz/11916-2/"
+                    ],
+                    "published": [
+                      "2023-01-30T19:47:57-05:00"
+                    ],
+                    "duration": [
+                      "PT0M"
+                    ],
+                    "in-reply-to": [
+                      {
+                        "type": [
+                          "h-cite"
+                        ],
+                        "properties": {
+                          "name": [
+                            "New year, new design."
+                          ],
+                          "url": [
+                            "https://gabriellew.ee/posts/2023/01/30/new-year-new-design/"
+                          ],
+                          "author": [
+                            {
+                              "type": [
+                                "h-card"
+                              ],
+                              "properties": {
+                                "photo": [
+                                  {
+                                    "value": "https://gabriellew.ee/static/images/avatars/profile.jpg",
+                                    "alt": "Gabrielle Wee"
+                                  }
+                                ],
+                                "name": [
+                                  "Gabrielle Wee"
+                                ]
+                              },
+                              "value": "Gabrielle Wee"
+                            }
+                          ],
+                          "publication": [
+                            "gabriellew.ee"
+                          ],
+                          "summary": [
+                            {
+                              "html": "I think I force myself to keep up with all the new things happening in web development by making myself redesign my site every couple of years or so. I never really consciously sit down to make comps and figure out all the details. The process is really more of me noodling on an idea I‘ve had for ...",
+                              "value": "I think I force myself to keep up with all the new things happening in web development by making myself redesign my site every couple of years or so. I never really consciously sit down to make comps and figure out all the details. The process is really more of me noodling on an idea I‘ve had for ..."
+                            }
+                          ]
+                        },
+                        "value": "https://gabriellew.ee/posts/2023/01/30/new-year-new-design/"
+                      }
+                    ],
+                    "content": [
+                      {
+                        "html": "<p>💯👏</p>",
+                        "value": "💯👏"
+                      }
+                    ]
+                  },
+                  "id": "post-11916"
+                },
+                {
+                  "type": [
+                    "h-entry"
+                  ],
+                  "properties": {
+                    "author": [
+                      {
+                        "type": [
+                          "h-card"
+                        ],
+                        "properties": {
+                          "photo": [
+                            {
+                              "value": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=40&d=identicon&r=g",
+                              "srcset": {
+                                "2x": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=80&d=identicon&r=g"
+                              },
+                              "alt": "User Avatar of J L Gatewood"
+                            }
+                          ],
+                          "url": [
+                            "https://starrwulfe.xyz/author/starrwulfe/"
+                          ],
+                          "uid": [
+                            "https://starrwulfe.xyz/author/starrwulfe/"
+                          ],
+                          "name": [
+                            "J L Gatewood"
+                          ]
+                        },
+                        "value": "J L Gatewood"
+                      }
+                    ],
+                    "url": [
+                      "https://starrwulfe.xyz/replied-tapbots-social-paul-109780940519434108/"
+                    ],
+                    "published": [
+                      "2023-01-30T19:29:23-05:00"
+                    ],
+                    "duration": [
+                      "PT1M"
+                    ],
+                    "in-reply-to": [
+                      {
+                        "type": [
+                          "h-cite"
+                        ],
+                        "properties": {
+                          "name": [
+                            "Paul Haddad (@paul@tapbots.social)"
+                          ],
+                          "url": [
+                            "https://tapbots.social/@paul/109780940519434108"
+                          ],
+                          "publication": [
+                            "tapbots.social"
+                          ],
+                          "summary": [
+                            {
+                              "html": "I forgot to fave it: A Mastodon story of love lost, never to be found again.",
+                              "value": "I forgot to fave it: A Mastodon story of love lost, never to be found again."
+                            }
+                          ]
+                        },
+                        "value": "https://tapbots.social/@paul/109780940519434108"
+                      }
+                    ],
+                    "content": [
+                      {
+                        "html": "<p>RSS reader with a 2 week cache go brrrrrr. Can also try searching other instances timelines as some cache longer than some</p>",
+                        "value": "RSS reader with a 2 week cache go brrrrrr. Can also try searching other instances timelines as some cache longer than some"
+                      }
+                    ],
+                    "summary": [
+                      "RSS reader with a 2 week cache go brrrrrr. Can also try searching other instances timelines as some cache longer than some"
+                    ],
+                    "name": [
+                      "RSS reader with a 2 week cache go brrrrrr. Can also try searching other instances timelines as some cache longer than some"
+                    ]
+                  },
+                  "id": "post-11906"
+                },
+                {
+                  "type": [
+                    "h-entry"
+                  ],
+                  "properties": {
+                    "author": [
+                      {
+                        "type": [
+                          "h-card"
+                        ],
+                        "properties": {
+                          "photo": [
+                            {
+                              "value": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=40&d=identicon&r=g",
+                              "srcset": {
+                                "2x": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=80&d=identicon&r=g"
+                              },
+                              "alt": "User Avatar of J L Gatewood"
+                            }
+                          ],
+                          "url": [
+                            "https://starrwulfe.xyz/author/starrwulfe/"
+                          ],
+                          "uid": [
+                            "https://starrwulfe.xyz/author/starrwulfe/"
+                          ],
+                          "name": [
+                            "J L Gatewood"
+                          ]
+                        },
+                        "value": "J L Gatewood"
+                      }
+                    ],
+                    "url": [
+                      "https://starrwulfe.xyz/relearning-css/"
+                    ],
+                    "published": [
+                      "2023-01-30T18:24:10-05:00"
+                    ],
+                    "duration": [
+                      "PT1M"
+                    ],
+                    "craft-of": [
+                      {
+                        "type": [
+                          "h-cite"
+                        ],
+                        "properties": {
+                          "name": [
+                            "CSS Reference"
+                          ],
+                          "url": [
+                            "https://cssreference.io/"
+                          ],
+                          "publication": [
+                            "cssreference.io"
+                          ],
+                          "summary": [
+                            {
+                              "html": "CSS Reference is a free visual guide to CSS. It features the most popular properties, and explains them with illustrated and animated examples.",
+                              "value": "CSS Reference is a free visual guide to CSS. It features the most popular properties, and explains them with illustrated and animated examples."
+                            }
+                          ]
+                        },
+                        "value": "https://cssreference.io/"
+                      }
+                    ],
+                    "content": [
+                      {
+                        "html": "<p>This just in:<br>\nTrying to remember how CSS works after not doing it for over 10 years is HARD.<br>\n😩</p>\n<p>💪🏾I’m trying to to some light style edit stuff to my website and practice so I can build 2 other sites for some family who are starting online businesses. </p>",
+                        "value": "This just in:\nTrying to remember how CSS works after not doing it for over 10 years is HARD.\n😩\n💪🏾I’m trying to to some light style edit stuff to my website and practice so I can build 2 other sites for some family who are starting online businesses."
+                      }
+                    ],
+                    "summary": [
+                      "This just in:\nTrying to remember how CSS works after not doing it for over 10 years is HARD.\n😩\n💪🏾I’m trying to to some light style edit stuff to my website and practice so I can build 2 other sites for some family who are starting online businesses."
+                    ],
+                    "name": [
+                      "This just in:\nTrying to remember how CSS works after not doing it for over 10 years is HARD.\n😩\n💪🏾I’m trying to to some light style edit stuff to my website and practice so I can build 2 other sites for some family who are starting online businesses."
+                    ]
+                  },
+                  "id": "post-11875",
+                  "children": [
+                    {
+                      "type": [
+                        "h-entry"
+                      ],
+                      "properties": {
+                        "name": [
+                          "❤️→Music Corner 19: New Jeans"
+                        ],
+                        "url": [
+                          "https://starrwulfe.xyz/%e2%9d%a4%ef%b8%8f%e2%86%92music-corner-19-new-jeans/",
+                          "https://starrwulfe.xyz/%e2%9d%a4%ef%b8%8f%e2%86%92music-corner-19-new-jeans/"
+                        ],
+                        "author": [
+                          {
+                            "type": [
+                              "h-card"
+                            ],
+                            "properties": {
+                              "photo": [
+                                {
+                                  "value": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=40&d=identicon&r=g",
+                                  "srcset": {
+                                    "2x": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=80&d=identicon&r=g"
+                                  },
+                                  "alt": "User Avatar of J L Gatewood"
+                                }
+                              ],
+                              "url": [
+                                "https://starrwulfe.xyz/author/starrwulfe/"
+                              ],
+                              "uid": [
+                                "https://starrwulfe.xyz/author/starrwulfe/"
+                              ],
+                              "name": [
+                                "J L Gatewood"
+                              ]
+                            },
+                            "value": "J L Gatewood"
+                          }
+                        ],
+                        "published": [
+                          "2023-01-30T09:26:29-05:00"
+                        ],
+                        "duration": [
+                          "PT1M"
+                        ],
+                        "like-of": [
+                          {
+                            "type": [
+                              "h-cite"
+                            ],
+                            "properties": {
+                              "name": [
+                                ""
+                              ],
+                              "summary": [
+                                {
+                                  "html": "",
+                                  "value": ""
+                                }
+                              ]
+                            },
+                            "value": ""
+                          },
+                          "https://geekosaur.com/post/music-corner-19/"
+                        ],
+                        "featured": [
+                          {
+                            "value": "https://i0.wp.com/starrwulfe.xyz/wp-content/uploads/2023/01/MCO6c4Chhu-560.jpeg?fit=560%2C373&ssl=1",
+                            "srcset": {
+                              "560w": "https://i0.wp.com/starrwulfe.xyz/wp-content/uploads/2023/01/MCO6c4Chhu-560.jpeg?w=560&ssl=1",
+                              "300w": "https://i0.wp.com/starrwulfe.xyz/wp-content/uploads/2023/01/MCO6c4Chhu-560.jpeg?resize=300%2C200&ssl=1"
+                            },
+                            "alt": ""
+                          }
+                        ],
+                        "content": [
+                          {
+                            "html": "<p><a href=\"https://geekosaur.com/post/music-corner-19/\"><img decoding=\"async\" class=\"alignnone size-full\" loading=\"lazy\" src=\"https://i0.wp.com/starrwulfe.xyz/wp-content/uploads/2023/01/MCO6c4Chhu-560.jpeg?w=900&amp;ssl=1\" alt=\"\" data-recalc-dims=\"1\"></a>likes <a class=\"u-like u-like-of\" href=\"https://geekosaur.com/post/music-corner-19/\">Music Corner 19: New Jeans</a></p>",
+                            "value": "likes Music Corner 19: New Jeans"
+                          }
+                        ],
+                        "like": [
+                          "https://geekosaur.com/post/music-corner-19/"
+                        ]
+                      },
+                      "id": "post-11604"
+                    },
+                    {
+                      "type": [
+                        "h-entry"
+                      ],
+                      "properties": {
+                        "author": [
+                          {
+                            "type": [
+                              "h-card"
+                            ],
+                            "properties": {
+                              "photo": [
+                                {
+                                  "value": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=40&d=identicon&r=g",
+                                  "srcset": {
+                                    "2x": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=80&d=identicon&r=g"
+                                  },
+                                  "alt": "User Avatar of J L Gatewood"
+                                }
+                              ],
+                              "url": [
+                                "https://starrwulfe.xyz/author/starrwulfe/"
+                              ],
+                              "uid": [
+                                "https://starrwulfe.xyz/author/starrwulfe/"
+                              ],
+                              "name": [
+                                "J L Gatewood"
+                              ]
+                            },
+                            "value": "J L Gatewood"
+                          },
+                          {
+                            "type": [
+                              "h-card"
+                            ],
+                            "properties": {
+                              "url": [
+                                "https://starrwulfe.xyz/",
+                                "https://github.com/starrwulfe",
+                                "https://twitter.com/starrwulfe",
+                                "https://www.facebook.com/jason.gatewood",
+                                "https://micro.blog/starrwulfe",
+                                "https://www.instagram.com/starrwulfe",
+                                "https://www.flickr.com/people/starrwulfe",
+                                "https://starrwulfe.xyz/author/starrwulfe/",
+                                "http://jason.gatewood.xyz/",
+                                "http://mastodon.cloud/@starrwulfe",
+                                "http://social.vivaldi.net/@starrwulfe",
+                                "http://public.garden/@starrwulfe"
+                              ],
+                              "uid": [
+                                "https://starrwulfe.xyz/"
+                              ],
+                              "name": [
+                                "J L Gatewood"
+                              ],
+                              "note": [
+                                "Husband, Father, Teacher, Journalist. Tokyoite, Atlantan, Afro-American. Globetrotter, Homebody. Storyteller, Story-Listener. Historian, Futurist. Striving to leave the world better than I found it.\r\n📰📸👩🏾‍💻🎶🌆\r\nSTL→ATL→TKO →ATL\r\n#Indieweb #ActivityPub #journalism #technology #newurbanism #music\r\nhttp://starrwulfe.xyz | http://mastodon.cloud/@jlgatewood | http://starrwulfe.micro.blog"
+                              ]
+                            },
+                            "children": [
+                              {
+                                "type": [
+                                  "h-adr"
+                                ],
+                                "properties": {
+                                  "locality": [
+                                    "Atlanta"
+                                  ],
+                                  "region": [
+                                    "Georgia"
+                                  ]
+                                }
+                              }
+                            ],
+                            "value": "https://starrwulfe.xyz/"
+                          }
+                        ],
+                        "url": [
+                          "https://starrwulfe.xyz/11351-2/"
+                        ],
+                        "published": [
+                          "2023-01-29T23:05:56-05:00"
+                        ],
+                        "duration": [
+                          "PT1M"
+                        ],
+                        "featured": [
+                          {
+                            "value": "https://i0.wp.com/starrwulfe.xyz/wp-content/uploads/2023/01/8b3831ccd4cd45c88cdcfc282038d3fc.jpg?fit=900%2C900&ssl=1",
+                            "srcset": {
+                              "1800w": "https://i0.wp.com/starrwulfe.xyz/wp-content/uploads/2023/01/8b3831ccd4cd45c88cdcfc282038d3fc.jpg?w=1800&ssl=1",
+                              "300w": "https://i0.wp.com/starrwulfe.xyz/wp-content/uploads/2023/01/8b3831ccd4cd45c88cdcfc282038d3fc.jpg?resize=300%2C300&ssl=1",
+                              "1024w": "https://i0.wp.com/starrwulfe.xyz/wp-content/uploads/2023/01/8b3831ccd4cd45c88cdcfc282038d3fc.jpg?resize=1024%2C1024&ssl=1",
+                              "150w": "https://i0.wp.com/starrwulfe.xyz/wp-content/uploads/2023/01/8b3831ccd4cd45c88cdcfc282038d3fc.jpg?resize=150%2C150&ssl=1",
+                              "768w": "https://i0.wp.com/starrwulfe.xyz/wp-content/uploads/2023/01/8b3831ccd4cd45c88cdcfc282038d3fc.jpg?resize=768%2C768&ssl=1",
+                              "1536w": "https://i0.wp.com/starrwulfe.xyz/wp-content/uploads/2023/01/8b3831ccd4cd45c88cdcfc282038d3fc.jpg?resize=1536%2C1536&ssl=1",
+                              "900w": "https://i0.wp.com/starrwulfe.xyz/wp-content/uploads/2023/01/8b3831ccd4cd45c88cdcfc282038d3fc.jpg?resize=900%2C900&ssl=1"
+                            },
+                            "alt": ""
+                          }
+                        ],
+                        "photo": [
+                          {
+                            "value": "https://i0.wp.com/starrwulfe.xyz/wp-content/uploads/2023/01/8b3831ccd4cd45c88cdcfc282038d3fc.jpg?fit=900%2C900&ssl=1",
+                            "srcset": {
+                              "1800w": "https://i0.wp.com/starrwulfe.xyz/wp-content/uploads/2023/01/8b3831ccd4cd45c88cdcfc282038d3fc.jpg?w=1800&ssl=1",
+                              "300w": "https://i0.wp.com/starrwulfe.xyz/wp-content/uploads/2023/01/8b3831ccd4cd45c88cdcfc282038d3fc.jpg?resize=300%2C300&ssl=1",
+                              "1024w": "https://i0.wp.com/starrwulfe.xyz/wp-content/uploads/2023/01/8b3831ccd4cd45c88cdcfc282038d3fc.jpg?resize=1024%2C1024&ssl=1",
+                              "150w": "https://i0.wp.com/starrwulfe.xyz/wp-content/uploads/2023/01/8b3831ccd4cd45c88cdcfc282038d3fc.jpg?resize=150%2C150&ssl=1",
+                              "768w": "https://i0.wp.com/starrwulfe.xyz/wp-content/uploads/2023/01/8b3831ccd4cd45c88cdcfc282038d3fc.jpg?resize=768%2C768&ssl=1",
+                              "1536w": "https://i0.wp.com/starrwulfe.xyz/wp-content/uploads/2023/01/8b3831ccd4cd45c88cdcfc282038d3fc.jpg?resize=1536%2C1536&ssl=1",
+                              "900w": "https://i0.wp.com/starrwulfe.xyz/wp-content/uploads/2023/01/8b3831ccd4cd45c88cdcfc282038d3fc.jpg?resize=900%2C900&ssl=1"
+                            },
+                            "alt": ""
+                          },
+                          {
+                            "value": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=96&d=identicon&r=g",
+                            "srcset": {
+                              "2x": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=192&d=identicon&r=g"
+                            },
+                            "alt": "J L Gatewood Avatar"
+                          }
+                        ],
+                        "content": [
+                          {
+                            "html": "<p>Testing the posting from micro.blog app…</p>\n<p>Also here’s a picture of some expensive eggs I got at Kroger. 💸💸💸</p>\n<p><img decoding=\"async\" loading=\"lazy\" src=\"https://i0.wp.com/starrwulfe.xyz/wp-content/uploads/2023/01/8b3831ccd4cd45c88cdcfc282038d3fc.jpg?resize=600%2C600&amp;ssl=1\" width=\"600\" height=\"600\" alt=\"\" data-recalc-dims=\"1\"></p>",
+                            "value": "Testing the posting from micro.blog app…\nAlso here’s a picture of some expensive eggs I got at Kroger. 💸💸💸"
+                          }
+                        ],
+                        "summary": [
+                          "Testing the posting from micro.blog app…\nAlso here’s a picture of some expensive eggs I got at Kroger. 💸💸💸"
+                        ],
+                        "name": [
+                          "Testing the posting from micro.blog app…\nAlso here’s a picture of some expensive eggs I got at Kroger. 💸💸💸"
+                        ]
+                      },
+                      "id": "post-11351",
+                      "children": [
+                        {
+                          "type": [
+                            "h-entry"
+                          ],
+                          "properties": {
+                            "author": [
+                              {
+                                "type": [
+                                  "h-card"
+                                ],
+                                "properties": {
+                                  "photo": [
+                                    {
+                                      "value": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=40&d=identicon&r=g",
+                                      "srcset": {
+                                        "2x": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=80&d=identicon&r=g"
+                                      },
+                                      "alt": "User Avatar of J L Gatewood"
+                                    }
+                                  ],
+                                  "url": [
+                                    "https://starrwulfe.xyz/author/starrwulfe/"
+                                  ],
+                                  "uid": [
+                                    "https://starrwulfe.xyz/author/starrwulfe/"
+                                  ],
+                                  "name": [
+                                    "J L Gatewood"
+                                  ]
+                                },
+                                "value": "J L Gatewood"
+                              }
+                            ],
+                            "url": [
+                              "https://starrwulfe.xyz/11346-2/"
+                            ],
+                            "published": [
+                              "2023-01-29T22:51:40-05:00"
+                            ],
+                            "duration": [
+                              "PT0M"
+                            ],
+                            "like-of": [
+                              {
+                                "type": [
+                                  "h-cite"
+                                ],
+                                "properties": {
+                                  "name": [
+                                    "Derek P. Collins (@derek@mastodon.design)"
+                                  ],
+                                  "url": [
+                                    "https://mastodon.design/@derek/109776007604561220"
+                                  ],
+                                  "publication": [
+                                    "mastodon.design"
+                                  ],
+                                  "summary": [
+                                    {
+                                      "html": "I just moved from mastodon.social to mastodon.design — it appears to have gone smoothly!",
+                                      "value": "I just moved from mastodon.social to mastodon.design — it appears to have gone smoothly!"
+                                    }
+                                  ]
+                                },
+                                "value": "https://mastodon.design/@derek/109776007604561220"
+                              }
+                            ],
+                            "content": [
+                              {
+                                "html": "",
+                                "value": ""
+                              }
+                            ],
+                            "summary": [
+                              ""
+                            ],
+                            "name": [
+                              ""
+                            ]
+                          },
+                          "id": "post-11346"
+                        },
+                        {
+                          "type": [
+                            "h-entry"
+                          ],
+                          "properties": {
+                            "name": [
+                              "👣 now following: Derek P. Collins (@derek@mastodon.design)"
+                            ],
+                            "url": [
+                              "https://starrwulfe.xyz/follow-derekmastodon-design/",
+                              "https://starrwulfe.xyz/follow-derekmastodon-design/"
+                            ],
+                            "author": [
+                              {
+                                "type": [
+                                  "h-card"
+                                ],
+                                "properties": {
+                                  "photo": [
+                                    {
+                                      "value": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=40&d=identicon&r=g",
+                                      "srcset": {
+                                        "2x": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=80&d=identicon&r=g"
+                                      },
+                                      "alt": "User Avatar of J L Gatewood"
+                                    }
+                                  ],
+                                  "url": [
+                                    "https://starrwulfe.xyz/author/starrwulfe/"
+                                  ],
+                                  "uid": [
+                                    "https://starrwulfe.xyz/author/starrwulfe/"
+                                  ],
+                                  "name": [
+                                    "J L Gatewood"
+                                  ]
+                                },
+                                "value": "J L Gatewood"
+                              }
+                            ],
+                            "published": [
+                              "2023-01-29T22:35:20-05:00"
+                            ],
+                            "duration": [
+                              "PT1M"
+                            ],
+                            "content": [
+                              {
+                                "html": "<blockquote><p>0 Posts, 504 Following, 170 Followers · Hey there! I’m a Product Designer at Netflix where I’ve most recently been working on design systems. I ❤️ design and code. I used to live in The Bay and now I live in The Land.</p></blockquote>\n<p>Source: <em><a class=\"u-follow-of\" href=\"https://mastodon.design/@derek\">Derek P. Collins (@derek@mastodon.design) – mastodon.design</a></em></p>",
+                                "value": "0 Posts, 504 Following, 170 Followers · Hey there! I’m a Product Designer at Netflix where I’ve most recently been working on design systems. I ❤️ design and code. I used to live in The Bay and now I live in The Land.\nSource: Derek P. Collins (@derek@mastodon.design) – mastodon.design"
+                              }
+                            ],
+                            "follow-of": [
+                              "https://mastodon.design/@derek"
+                            ]
+                          },
+                          "id": "post-11339"
+                        },
+                        {
+                          "type": [
+                            "h-entry"
+                          ],
+                          "properties": {
+                            "author": [
+                              {
+                                "type": [
+                                  "h-card"
+                                ],
+                                "properties": {
+                                  "photo": [
+                                    {
+                                      "value": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=40&d=identicon&r=g",
+                                      "srcset": {
+                                        "2x": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=80&d=identicon&r=g"
+                                      },
+                                      "alt": "User Avatar of J L Gatewood"
+                                    }
+                                  ],
+                                  "url": [
+                                    "https://starrwulfe.xyz/author/starrwulfe/"
+                                  ],
+                                  "uid": [
+                                    "https://starrwulfe.xyz/author/starrwulfe/"
+                                  ],
+                                  "name": [
+                                    "J L Gatewood"
+                                  ]
+                                },
+                                "value": "J L Gatewood"
+                              }
+                            ],
+                            "url": [
+                              "https://starrwulfe.xyz/11315-2/"
+                            ],
+                            "published": [
+                              "2023-01-29T22:05:55-05:00"
+                            ],
+                            "duration": [
+                              "PT1M"
+                            ],
+                            "in-reply-to": [
+                              {
+                                "type": [
+                                  "h-cite"
+                                ],
+                                "properties": {
+                                  "name": [
+                                    ""
+                                  ],
+                                  "summary": [
+                                    {
+                                      "html": "",
+                                      "value": ""
+                                    }
+                                  ]
+                                },
+                                "value": ""
+                              },
+                              "https://tantek.com/2023/027/t5/contrast-domain-chat-name"
+                            ],
+                            "content": [
+                              {
+                                "html": "<p>↩️<em>replied to <a class=\"u-in-reply-to\" href=\"https://tantek.com/2023/027/t5/contrast-domain-chat-name\">ttk.me/t5P45</a>:</em></p>\n<p>So is there a specific place I need to set those things up to associate myself as say “starrwulfe” that uses “X.png” for an avatar or is it pulling my website’s favicon?</p>",
+                                "value": "↩️replied to ttk.me/t5P45:\nSo is there a specific place I need to set those things up to associate myself as say “starrwulfe” that uses “X.png” for an avatar or is it pulling my website’s favicon?"
+                              }
+                            ]
+                          },
+                          "id": "post-11315"
+                        },
+                        {
+                          "type": [
+                            "h-entry"
+                          ],
+                          "properties": {
+                            "author": [
+                              {
+                                "type": [
+                                  "h-card"
+                                ],
+                                "properties": {
+                                  "photo": [
+                                    {
+                                      "value": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=40&d=identicon&r=g",
+                                      "srcset": {
+                                        "2x": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=80&d=identicon&r=g"
+                                      },
+                                      "alt": "User Avatar of J L Gatewood"
+                                    }
+                                  ],
+                                  "url": [
+                                    "https://starrwulfe.xyz/author/starrwulfe/"
+                                  ],
+                                  "uid": [
+                                    "https://starrwulfe.xyz/author/starrwulfe/"
+                                  ],
+                                  "name": [
+                                    "J L Gatewood"
+                                  ]
+                                },
+                                "value": "J L Gatewood"
+                              }
+                            ],
+                            "url": [
+                              "https://starrwulfe.xyz/11292-2/"
+                            ],
+                            "published": [
+                              "2023-01-29T21:15:45-05:00"
+                            ],
+                            "duration": [
+                              "PT0M"
+                            ],
+                            "in-reply-to": [
+                              {
+                                "type": [
+                                  "h-cite"
+                                ],
+                                "properties": {
+                                  "name": [
+                                    "https://social.weho.st/@disroot/109775693936927982"
+                                  ],
+                                  "url": [
+                                    "https://social.weho.st/@disroot/109775693936927982"
+                                  ],
+                                  "author": [
+                                    {
+                                      "type": [
+                                        "h-card"
+                                      ],
+                                      "properties": {
+                                        "photo": [
+                                          {
+                                            "value": "https://social.weho.st/system/accounts/avatars/000/017/290/original/f743a8f0aa87a71f.png",
+                                            "alt": "disroot"
+                                          }
+                                        ],
+                                        "name": [
+                                          "disroot"
+                                        ]
+                                      },
+                                      "value": "disroot"
+                                    }
+                                  ],
+                                  "publication": [
+                                    "social.weho.st"
+                                  ],
+                                  "summary": [
+                                    {
+                                      "html": "Long awaited, we are finally riding stable wave as far as Nextcloud is concern. We've updated it to version 25.0.3\r\nEnjoy the eye candy and improved performance o/",
+                                      "value": "Long awaited, we are finally riding stable wave as far as Nextcloud is concern. We've updated it to version 25.0.3\r\nEnjoy the eye candy and improved performance o/"
+                                    }
+                                  ]
+                                },
+                                "value": "https://social.weho.st/@disroot/109775693936927982"
+                              }
+                            ],
+                            "content": [
+                              {
+                                "html": "<p><img width=\"200\" height=\"79\" loading=\"lazy\" src=\"https://i0.wp.com/starrwulfe.xyz/wp-content/uploads/2023/01/e98.gif?fit=200%2C79&amp;ssl=1\" class=\"alignright photo u-featured wp-post-image\" alt=\"Key and Peele Noice meme\" decoding=\"async\" itemprop=\"image\"></p>",
+                                "value": "Key and Peele Noice meme"
+                              }
+                            ],
+                            "featured": [
+                              {
+                                "value": "https://i0.wp.com/starrwulfe.xyz/wp-content/uploads/2023/01/e98.gif?fit=200%2C79&ssl=1",
+                                "alt": "Key and Peele Noice meme"
+                              }
+                            ]
+                          },
+                          "id": "post-11292"
+                        },
+                        {
+                          "type": [
+                            "h-entry"
+                          ],
+                          "properties": {
+                            "author": [
+                              {
+                                "type": [
+                                  "h-card"
+                                ],
+                                "properties": {
+                                  "photo": [
+                                    {
+                                      "value": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=40&d=identicon&r=g",
+                                      "srcset": {
+                                        "2x": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=80&d=identicon&r=g"
+                                      },
+                                      "alt": "User Avatar of J L Gatewood"
+                                    }
+                                  ],
+                                  "url": [
+                                    "https://starrwulfe.xyz/author/starrwulfe/"
+                                  ],
+                                  "uid": [
+                                    "https://starrwulfe.xyz/author/starrwulfe/"
+                                  ],
+                                  "name": [
+                                    "J L Gatewood"
+                                  ]
+                                },
+                                "value": "J L Gatewood"
+                              }
+                            ],
+                            "url": [
+                              "https://starrwulfe.xyz/11265-2/"
+                            ],
+                            "published": [
+                              "2023-01-29T21:01:02-05:00"
+                            ],
+                            "duration": [
+                              "PT1M"
+                            ],
+                            "in-reply-to": [
+                              {
+                                "type": [
+                                  "h-cite"
+                                ],
+                                "properties": {
+                                  "name": [
+                                    "Technology Connections (@TechConnectify@mas.to)"
+                                  ],
+                                  "url": [
+                                    "https://mastodon.cloud/web/statuses/109775447365340505"
+                                  ],
+                                  "publication": [
+                                    "mas.to"
+                                  ],
+                                  "summary": [
+                                    {
+                                      "html": "Rendering a one hour and 7 minute connextras video in which I ramble on about the tests I've done with my new electric stove and why maybe gas stoves aren't the best things in the world.\r\n\r\nSpoiler: having thought through it some more, there is really only one disadvantage to a conventional electric cooktop versus a good half dozen advantages over a gas cooktop. For me and my needs, electric is the obvious choice.",
+                                      "value": "Rendering a one hour and 7 minute connextras video in which I ramble on about the tests I've done with my new electric stove and why maybe gas stoves aren't the best things in the world.\r\n\r\nSpoiler: having thought through it some more, there is really only one disadvantage to a conventional electric cooktop versus a good half dozen advantages over a gas cooktop. For me and my needs, electric is the obvious choice."
+                                    }
+                                  ]
+                                },
+                                "value": "https://mastodon.cloud/web/statuses/109775447365340505"
+                              }
+                            ],
+                            "content": [
+                              {
+                                "html": "<p>I know one thing:<br>\nInduction ranges are a helluva lot easier to clean, and that’s reason enough to have one. They’re also a lot cheaper to operate and stay looking new.</p>",
+                                "value": "I know one thing:\nInduction ranges are a helluva lot easier to clean, and that’s reason enough to have one. They’re also a lot cheaper to operate and stay looking new."
+                              }
+                            ]
+                          },
+                          "id": "post-11265"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rels": {
+    "profile": [
+      "http://microformats.org/profile/specs",
+      "http://microformats.org/profile/hatom"
+    ],
+    "dns-prefetch": [
+      "https://i0.wp.com/",
+      "https://c0.wp.com/"
+    ],
+    "preconnect": [
+      "https://fonts.gstatic.com/",
+      "https://cdnjs.cloudflare.com/"
+    ],
+    "alternate": [
+      "https://starrwulfe.xyz/feed/",
+      "https://starrwulfe.xyz/comments/feed/",
+      "https://starrwulfe.xyz/feed/mf2/",
+      "https://starrwulfe.xyz/feed/jf2/",
+      "https://starrwulfe.xyz/type/standard/feed/",
+      "https://starrwulfe.xyz/type/aside/feed/",
+      "https://starrwulfe.xyz/type/chat/feed/",
+      "https://starrwulfe.xyz/type/gallery/feed/",
+      "https://starrwulfe.xyz/type/link/feed/",
+      "https://starrwulfe.xyz/type/image/feed/",
+      "https://starrwulfe.xyz/type/quote/feed/",
+      "https://starrwulfe.xyz/type/status/feed/",
+      "https://starrwulfe.xyz/type/video/feed/",
+      "https://starrwulfe.xyz/type/audio/feed/",
+      "https://starrwulfe.xyz/"
+    ],
+    "stylesheet": [
+      "https://c0.wp.com/c/6.1.1/wp-includes/css/dist/block-library/style.min.css",
+      "https://c0.wp.com/c/6.1.1/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css",
+      "https://c0.wp.com/c/6.1.1/wp-includes/js/mediaelement/wp-mediaelement.min.css",
+      "https://c0.wp.com/c/6.1.1/wp-includes/css/classic-themes.min.css",
+      "https://starrwulfe.xyz/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
+      "https://starrwulfe.xyz/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.12.0",
+      "https://c0.wp.com/c/6.1.1/wp-includes/css/dashicons.min.css",
+      "https://starrwulfe.xyz/wp-content/themes/autonomie/style.css?ver=6.1.1",
+      "https://starrwulfe.xyz/wp-content/themes/autonomie/assets/css/print.css?ver=1.0.0",
+      "https://starrwulfe.xyz/wp-content/themes/autonomie/assets/css/narrow-width.css?ver=1.0.0",
+      "https://starrwulfe.xyz/wp-content/themes/autonomie/assets/css/default-width.css?ver=1.0.0",
+      "https://starrwulfe.xyz/wp-content/themes/autonomie/assets/css/wide-width.css?ver=1.0.0",
+      "https://c0.wp.com/p/jetpack/11.7.1/css/jetpack.css",
+      "https://starrwulfe.xyz/wp-content/uploads/so-css/so-css-autonomie.css?ver=1675120477"
+    ],
+    "https://api.w.org/": [
+      "https://starrwulfe.xyz/wp-json/"
+    ],
+    "EditURI": [
+      "https://starrwulfe.xyz/xmlrpc.php?rsd"
+    ],
+    "wlwmanifest": [
+      "https://starrwulfe.xyz/wp-includes/wlwmanifest.xml"
+    ],
+    "shortlink": [
+      "https://starrwulfe.xyz/"
+    ],
+    "microsub": [
+      "https://aperture.p3k.io/microsub/820"
+    ],
+    "authorization_endpoint": [
+      "https://starrwulfe.xyz/wp-json/indieauth/1.0/auth"
+    ],
+    "token_endpoint": [
+      "https://starrwulfe.xyz/wp-json/indieauth/1.0/token"
+    ],
+    "indieauth-metadata": [
+      "https://starrwulfe.xyz/wp-json/indieauth/1.0/metadata"
+    ],
+    "friends-base-url": [
+      "https://starrwulfe.xyz/wp-json/friends/v1"
+    ],
+    "me": [
+      "https://github.com/starrwulfe",
+      "https://twitter.com/starrwulfe",
+      "https://www.facebook.com/jason.gatewood",
+      "https://micro.blog/starrwulfe",
+      "https://www.instagram.com/starrwulfe",
+      "https://www.flickr.com/people/starrwulfe",
+      "https://starrwulfe.xyz/author/starrwulfe/",
+      "http://jason.gatewood.xyz/",
+      "http://mastodon.cloud/@starrwulfe",
+      "http://social.vivaldi.net/@starrwulfe",
+      "http://public.garden/@starrwulfe"
+    ],
+    "icon": [
+      "https://i0.wp.com/starrwulfe.xyz/wp-content/uploads/2023/01/cropped-8b19c81db6a5685340239e97b382713c-1.png?fit=32%2C32&ssl=1",
+      "https://i0.wp.com/starrwulfe.xyz/wp-content/uploads/2023/01/cropped-8b19c81db6a5685340239e97b382713c-1.png?fit=192%2C192&ssl=1"
+    ],
+    "apple-touch-icon": [
+      "https://i0.wp.com/starrwulfe.xyz/wp-content/uploads/2023/01/cropped-8b19c81db6a5685340239e97b382713c-1.png?fit=180%2C180&ssl=1"
+    ],
+    "micropub_media": [
+      "https://starrwulfe.xyz/wp-json/micropub/1.0/media"
+    ],
+    "micropub": [
+      "https://starrwulfe.xyz/wp-json/micropub/1.0/endpoint"
+    ],
+    "webmention": [
+      "https://starrwulfe.xyz/wp-json/webmention/1.0/endpoint"
+    ],
+    "http://webmention.org/": [
+      "https://starrwulfe.xyz/wp-json/webmention/1.0/endpoint"
+    ],
+    "home": [
+      "https://starrwulfe.xyz/"
+    ],
+    "bookmark": [
+      "https://starrwulfe.xyz/some-thoughts-on-yarns/",
+      "https://starrwulfe.xyz/day-14-of-working-on-my-indieweb-site/",
+      "https://starrwulfe.xyz/11916-2/",
+      "https://starrwulfe.xyz/replied-tapbots-social-paul-109780940519434108/",
+      "https://starrwulfe.xyz/relearning-css/",
+      "https://starrwulfe.xyz/%e2%9d%a4%ef%b8%8f%e2%86%92music-corner-19-new-jeans/",
+      "https://starrwulfe.xyz/11351-2/",
+      "https://starrwulfe.xyz/11346-2/",
+      "https://starrwulfe.xyz/follow-derekmastodon-design/",
+      "https://starrwulfe.xyz/11315-2/",
+      "https://starrwulfe.xyz/11292-2/",
+      "https://starrwulfe.xyz/11265-2/"
+    ],
+    "author": [
+      "https://starrwulfe.xyz/author/starrwulfe/"
+    ],
+    "noopener": [
+      "https://jackjamieson.net/yarns-microsub-server-getting-started-guide/",
+      "http://indieweb.org/mastodon",
+      "http://indieweb.org/activitypub",
+      "http://swarmapp.com/",
+      "http://indieweb.org/backfeed",
+      "http://jason.gatewood.xyz/",
+      "https://twemoji.twitter.com/",
+      "https://w3m.sourceforge.net/",
+      "http://brow.sh/",
+      "https://github.com/akirk/friends",
+      "http://github.com/jackjamieson2/yarns-microsub-server",
+      "https://indieweb.org/activitypub",
+      "https://david.shanske.com/",
+      "https://indieweb.org/microsub"
+    ],
+    "noreferrer": [
+      "http://indieweb.org/mastodon",
+      "http://indieweb.org/activitypub",
+      "http://swarmapp.com/",
+      "http://indieweb.org/backfeed",
+      "http://jason.gatewood.xyz/",
+      "https://twemoji.twitter.com/",
+      "https://w3m.sourceforge.net/",
+      "http://brow.sh/",
+      "https://github.com/akirk/friends",
+      "http://github.com/jackjamieson2/yarns-microsub-server",
+      "https://indieweb.org/activitypub",
+      "https://david.shanske.com/",
+      "https://indieweb.org/microsub"
+    ],
+    "generator": [
+      "https://wordpress.org/"
+    ]
+  },
+  "rel-urls": {
+    "http://microformats.org/profile/specs": {
+      "rels": [
+        "profile"
+      ]
+    },
+    "http://microformats.org/profile/hatom": {
+      "rels": [
+        "profile"
+      ]
+    },
+    "https://i0.wp.com/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
+    "https://c0.wp.com/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
+    "https://fonts.gstatic.com/": {
+      "rels": [
+        "preconnect"
+      ]
+    },
+    "https://starrwulfe.xyz/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "starrwulfe >>federated<< » Feed",
+      "type": "application/rss+xml"
+    },
+    "https://starrwulfe.xyz/comments/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "starrwulfe >>federated<< » Comments Feed",
+      "type": "application/rss+xml"
+    },
+    "https://starrwulfe.xyz/feed/mf2/": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/mf2+json"
+    },
+    "https://starrwulfe.xyz/feed/jf2/": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/jf2feed+json"
+    },
+    "https://c0.wp.com/c/6.1.1/wp-includes/css/dist/block-library/style.min.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://c0.wp.com/c/6.1.1/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://c0.wp.com/c/6.1.1/wp-includes/js/mediaelement/wp-mediaelement.min.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://c0.wp.com/c/6.1.1/wp-includes/css/classic-themes.min.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://starrwulfe.xyz/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://starrwulfe.xyz/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.12.0": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://c0.wp.com/c/6.1.1/wp-includes/css/dashicons.min.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://starrwulfe.xyz/wp-content/themes/autonomie/style.css?ver=6.1.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://starrwulfe.xyz/wp-content/themes/autonomie/assets/css/print.css?ver=1.0.0": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "print",
+      "type": "text/css"
+    },
+    "https://starrwulfe.xyz/wp-content/themes/autonomie/assets/css/narrow-width.css?ver=1.0.0": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "(max-width: 800px)",
+      "type": "text/css"
+    },
+    "https://starrwulfe.xyz/wp-content/themes/autonomie/assets/css/default-width.css?ver=1.0.0": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "(min-width: 800px)",
+      "type": "text/css"
+    },
+    "https://starrwulfe.xyz/wp-content/themes/autonomie/assets/css/wide-width.css?ver=1.0.0": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "(min-width: 1000px)",
+      "type": "text/css"
+    },
+    "https://c0.wp.com/p/jetpack/11.7.1/css/jetpack.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://starrwulfe.xyz/wp-json/": {
+      "rels": [
+        "https://api.w.org/"
+      ]
+    },
+    "https://starrwulfe.xyz/xmlrpc.php?rsd": {
+      "rels": [
+        "EditURI"
+      ],
+      "title": "RSD",
+      "type": "application/rsd+xml"
+    },
+    "https://starrwulfe.xyz/wp-includes/wlwmanifest.xml": {
+      "rels": [
+        "wlwmanifest"
+      ],
+      "type": "application/wlwmanifest+xml"
+    },
+    "https://starrwulfe.xyz/": {
+      "rels": [
+        "shortlink"
+      ]
+    },
+    "https://aperture.p3k.io/microsub/820": {
+      "rels": [
+        "microsub"
+      ]
+    },
+    "https://cdnjs.cloudflare.com/": {
+      "rels": [
+        "preconnect"
+      ]
+    },
+    "https://starrwulfe.xyz/wp-json/indieauth/1.0/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://starrwulfe.xyz/wp-json/indieauth/1.0/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://starrwulfe.xyz/wp-json/indieauth/1.0/metadata": {
+      "rels": [
+        "indieauth-metadata"
+      ]
+    },
+    "https://starrwulfe.xyz/wp-json/friends/v1": {
+      "rels": [
+        "friends-base-url"
+      ]
+    },
+    "https://starrwulfe.xyz/type/standard/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "starrwulfe >>federated<< » Standard Feed",
+      "type": "application/rss+xml"
+    },
+    "https://starrwulfe.xyz/type/aside/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "starrwulfe >>federated<< » Aside Feed",
+      "type": "application/rss+xml"
+    },
+    "https://starrwulfe.xyz/type/chat/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "starrwulfe >>federated<< » Chat Feed",
+      "type": "application/rss+xml"
+    },
+    "https://starrwulfe.xyz/type/gallery/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "starrwulfe >>federated<< » Gallery Feed",
+      "type": "application/rss+xml"
+    },
+    "https://starrwulfe.xyz/type/link/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "starrwulfe >>federated<< » Link Feed",
+      "type": "application/rss+xml"
+    },
+    "https://starrwulfe.xyz/type/image/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "starrwulfe >>federated<< » Image Feed",
+      "type": "application/rss+xml"
+    },
+    "https://starrwulfe.xyz/type/quote/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "starrwulfe >>federated<< » Quote Feed",
+      "type": "application/rss+xml"
+    },
+    "https://starrwulfe.xyz/type/status/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "starrwulfe >>federated<< » Status Feed",
+      "type": "application/rss+xml"
+    },
+    "https://starrwulfe.xyz/type/video/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "starrwulfe >>federated<< » Video Feed",
+      "type": "application/rss+xml"
+    },
+    "https://starrwulfe.xyz/type/audio/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "starrwulfe >>federated<< » Audio Feed",
+      "type": "application/rss+xml"
+    },
+    "https://github.com/starrwulfe": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://twitter.com/starrwulfe": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://www.facebook.com/jason.gatewood": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://micro.blog/starrwulfe": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://www.instagram.com/starrwulfe": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://www.flickr.com/people/starrwulfe": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://starrwulfe.xyz/author/starrwulfe/": {
+      "rels": [
+        "me"
+      ]
+    },
+    "http://jason.gatewood.xyz/": {
+      "rels": [
+        "me"
+      ]
+    },
+    "http://mastodon.cloud/@starrwulfe": {
+      "rels": [
+        "me"
+      ]
+    },
+    "http://social.vivaldi.net/@starrwulfe": {
+      "rels": [
+        "me"
+      ]
+    },
+    "http://public.garden/@starrwulfe": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://i0.wp.com/starrwulfe.xyz/wp-content/uploads/2023/01/cropped-8b19c81db6a5685340239e97b382713c-1.png?fit=32%2C32&ssl=1": {
+      "rels": [
+        "icon"
+      ]
+    },
+    "https://i0.wp.com/starrwulfe.xyz/wp-content/uploads/2023/01/cropped-8b19c81db6a5685340239e97b382713c-1.png?fit=192%2C192&ssl=1": {
+      "rels": [
+        "icon"
+      ]
+    },
+    "https://i0.wp.com/starrwulfe.xyz/wp-content/uploads/2023/01/cropped-8b19c81db6a5685340239e97b382713c-1.png?fit=180%2C180&ssl=1": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://starrwulfe.xyz/wp-json/micropub/1.0/media": {
+      "rels": [
+        "micropub_media"
+      ]
+    },
+    "https://starrwulfe.xyz/wp-json/micropub/1.0/endpoint": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://starrwulfe.xyz/wp-json/webmention/1.0/endpoint": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://starrwulfe.xyz/some-thoughts-on-yarns/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to Some thoughts on Yarns",
+      "text": "\n\t\t\t\t\tSome thoughts on Yarns\t\t\t\t"
+    },
+    "https://jackjamieson.net/yarns-microsub-server-getting-started-guide/": {
+      "rels": [
+        "noopener"
+      ],
+      "text": "Yarns"
+    },
+    "https://starrwulfe.xyz/day-14-of-working-on-my-indieweb-site/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to Day #14 of working on my indieweb site",
+      "text": "\n\t\t\t\t\tDay #14 of working on my indieweb site\t\t\t\t"
+    },
+    "http://indieweb.org/mastodon": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "Mastodon"
+    },
+    "http://indieweb.org/activitypub": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "ActivityWeb"
+    },
+    "http://swarmapp.com/": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "Swarm"
+    },
+    "http://indieweb.org/backfeed": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "backfeed"
+    },
+    "https://twemoji.twitter.com/": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "Twimoji"
+    },
+    "https://w3m.sourceforge.net/": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "w3m"
+    },
+    "http://brow.sh/": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "browsh"
+    },
+    "https://github.com/akirk/friends": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "Friends"
+    },
+    "http://github.com/jackjamieson2/yarns-microsub-server": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "Yarn"
+    },
+    "https://indieweb.org/activitypub": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "webmention"
+    },
+    "https://david.shanske.com/": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "David Shanske"
+    },
+    "https://indieweb.org/microsub": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "microsub"
+    },
+    "https://starrwulfe.xyz/11916-2/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "7:47 pm",
+      "text": "January 30, 2023"
+    },
+    "https://starrwulfe.xyz/replied-tapbots-social-paul-109780940519434108/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "7:29 pm",
+      "text": "January 30, 2023"
+    },
+    "https://starrwulfe.xyz/relearning-css/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "6:24 pm",
+      "text": "January 30, 2023"
+    },
+    "https://starrwulfe.xyz/%e2%9d%a4%ef%b8%8f%e2%86%92music-corner-19-new-jeans/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to ❤️→Music Corner 19: New Jeans",
+      "text": "\n\t\t\t\t\t❤️→Music Corner 19: New Jeans\t\t\t\t"
+    },
+    "https://starrwulfe.xyz/11351-2/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "11:05 pm",
+      "text": "January 29, 2023"
+    },
+    "https://starrwulfe.xyz/11346-2/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "10:51 pm",
+      "text": "January 29, 2023"
+    },
+    "https://starrwulfe.xyz/follow-derekmastodon-design/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to 👣 now following: Derek P. Collins (@derek@mastodon.design)",
+      "text": "\n\t\t\t\t\t👣 now following: Derek P. Collins (@derek@mastodon.design)\t\t\t\t"
+    },
+    "https://starrwulfe.xyz/11315-2/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "10:05 pm",
+      "text": "January 29, 2023"
+    },
+    "https://starrwulfe.xyz/11292-2/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "9:15 pm",
+      "text": "January 29, 2023"
+    },
+    "https://starrwulfe.xyz/11265-2/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "9:01 pm",
+      "text": "January 29, 2023"
+    },
+    "https://wordpress.org/": {
+      "rels": [
+        "generator"
+      ],
+      "text": "WordPress"
+    },
+    "https://starrwulfe.xyz/wp-content/uploads/so-css/so-css-autonomie.css?ver=1675120477": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    }
+  }
+}

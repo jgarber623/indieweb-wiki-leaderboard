@@ -6,6 +6,50 @@
       ],
       "properties": {
         "name": [
+          "Fixing the WS Contest tool"
+        ],
+        "url": [
+          "https://samwilson.id.au/P26583"
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "url": [
+                "Sam Wilson"
+              ],
+              "name": [
+                "Sam Wilson"
+              ]
+            },
+            "value": "Sam Wilson"
+          }
+        ],
+        "published": [
+          "2023-01-31T02:43:49Z"
+        ],
+        "content": [
+          {
+            "html": "<p>The WS Contest tool was breaking on Index pages that don’t yet have any (existing) pages. The problem was in the usage of the <a href=\"https://packagist.org/packages/dflydev/dot-access-data\">dflydev/dot-access-data</a>, which is a thing for pulling values out of deep arrays. It’s sort of useful, but not widely used so does feel a bit weird. Maybe we should remove it from <a href=\"https://packagist.org/packages/wikisource/api\">wikisource/api</a>.</p>\n<p>Actually, scratch that: I just went to look, and it’s got eighty-three million installs on Packagist. So I guess it’s more widely used than I’d thought. I’ll leave it in for now.</p>",
+            "value": "The WS Contest tool was breaking on Index pages that don’t yet have any (existing) pages. The problem was in the usage of the dflydev/dot-access-data, which is a thing for pulling values out of deep arrays. It’s sort of useful, but not widely used so does feel a bit weird. Maybe we should remove it from wikisource/api.\nActually, scratch that: I just went to look, and it’s got eighty-three million installs on Packagist. So I guess it’s more widely used than I’d thought. I’ll leave it in for now."
+          }
+        ],
+        "category": [
+          "Wikisource",
+          "Wikimedia",
+          "Toolforge",
+          "WS Contest tool"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
           "Cricket at Wooramel"
         ],
         "url": [
@@ -373,47 +417,6 @@
         "category": [
           "Wikimedia",
           "Wikimedia Commons"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "name": [
-          "Twenty years on from the Canberra fires"
-        ],
-        "url": [
-          "https://samwilson.id.au/P26566"
-        ],
-        "author": [
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "url": [
-                "Sam Wilson"
-              ],
-              "name": [
-                "Sam Wilson"
-              ]
-            },
-            "value": "Sam Wilson"
-          }
-        ],
-        "published": [
-          "2023-01-19T05:11:11Z"
-        ],
-        "content": [
-          {
-            "html": "<p><a href=\"https://greens.org.au/act/news/remembering-canberra-bushfires-2003\">Remembering the Canberra bushfires of 2003</a>:</p>\n<blockquote>\n<p>That community-led recovery began at the same time as the disaster itself was unfolding. On that day in 2003, it was my neighbour who knocked on the door and told me what was happening. I’d been out of town all morning and my car radio was broken. I could see the fires burning into the suburbs as I drove west into Woden, but I hadn’t heard any of the emergency warnings. People opened their door to strangers to offer a safe place to stay, gave clothes or furniture, offered a cup of tea and a listening ear to someone who looked like they were having a hard time processing what was happening around them.</p>\n</blockquote>\n<p>I lived in Canberra then, and although we lived in the inner north and were safe from the actual fires, I well remember the dark sky and heavy smoke. It was also the days of dialup or no internet at all, and our only news was from the ABC Radio emergency broadcasts (with ominous siren sounds on the hour) and word-of-mouth — and I remember no one having much idea of what was going on.</p>",
-            "value": "Remembering the Canberra bushfires of 2003:\n\nThat community-led recovery began at the same time as the disaster itself was unfolding. On that day in 2003, it was my neighbour who knocked on the door and told me what was happening. I’d been out of town all morning and my car radio was broken. I could see the fires burning into the suburbs as I drove west into Woden, but I hadn’t heard any of the emergency warnings. People opened their door to strangers to offer a safe place to stay, gave clothes or furniture, offered a cup of tea and a listening ear to someone who looked like they were having a hard time processing what was happening around them.\n\nI lived in Canberra then, and although we lived in the inner north and were safe from the actual fires, I well remember the dark sky and heavy smoke. It was also the days of dialup or no internet at all, and our only news was from the ABC Radio emergency broadcasts (with ominous siren sounds on the hour) and word-of-mouth — and I remember no one having much idea of what was going on."
-          }
-        ],
-        "category": [
-          "Canberra"
         ]
       }
     },

@@ -53,7 +53,7 @@
       "https://jimlunsford.com/wp-includes/wlwmanifest.xml"
     ],
     "shortlink": [
-      "https://jiml.in/10d"
+      "https://jiml.in/10e"
     ],
     "authorization_endpoint": [
       "https://jimlunsford.com/wp-json/indieauth/1.0/auth"
@@ -85,6 +85,7 @@
       "https://jimlunsford.com/"
     ],
     "bookmark": [
+      "https://jimlunsford.com/blog/law-enforcement-and-ptsd/",
       "https://jimlunsford.com/blog/stop-starving-yourself-to-lose-weight/",
       "https://jimlunsford.com/blog/what-to-do-during-an-active-shooter-incident/",
       "https://jimlunsford.com/blog/see-inside-tinted-windows-using-your-mobile-phone-camera/",
@@ -93,18 +94,21 @@
       "https://jimlunsford.com/blog/why-you-should-use-kubuntu-and-how-to-install-it/",
       "https://jimlunsford.com/blog/what-is-the-broken-windows-theory/",
       "https://jimlunsford.com/blog/what-is-windows/",
-      "https://jimlunsford.com/blog/what-is-ms-dos/",
-      "https://jimlunsford.com/blog/what-is-unix/"
+      "https://jimlunsford.com/blog/what-is-ms-dos/"
     ],
     "category": [
       "https://jimlunsford.com/category/blog/",
-      "https://jimlunsford.com/category/blog/fitness/",
       "https://jimlunsford.com/category/blog/law-enforcement/",
+      "https://jimlunsford.com/category/blog/fitness/",
       "https://jimlunsford.com/category/blog/aside/",
       "https://jimlunsford.com/category/blog/technology/"
     ],
     "tag": [
       "https://jimlunsford.com/category/blog/",
+      "https://jimlunsford.com/category/blog/law-enforcement/",
+      "https://jimlunsford.com/tag/law-enforcement/",
+      "https://jimlunsford.com/tag/mental-health/",
+      "https://jimlunsford.com/tag/ptsd/",
       "https://jimlunsford.com/category/blog/fitness/",
       "https://jimlunsford.com/tag/diet/",
       "https://jimlunsford.com/tag/exercise/",
@@ -112,11 +116,9 @@
       "https://jimlunsford.com/tag/fitness/",
       "https://jimlunsford.com/tag/starving/",
       "https://jimlunsford.com/tag/weight-loss/",
-      "https://jimlunsford.com/category/blog/law-enforcement/",
       "https://jimlunsford.com/tag/active/",
       "https://jimlunsford.com/tag/fight/",
       "https://jimlunsford.com/tag/hide/",
-      "https://jimlunsford.com/tag/law-enforcement/",
       "https://jimlunsford.com/tag/run/",
       "https://jimlunsford.com/tag/shooter/",
       "https://jimlunsford.com/tag/tips/",
@@ -144,8 +146,7 @@
       "https://jimlunsford.com/tag/theory/",
       "https://jimlunsford.com/tag/micosoft/",
       "https://jimlunsford.com/tag/dos/",
-      "https://jimlunsford.com/tag/microsoft/",
-      "https://jimlunsford.com/tag/unix/"
+      "https://jimlunsford.com/tag/microsoft/"
     ]
   },
   "rel-urls": {
@@ -348,7 +349,7 @@
       ],
       "type": "application/wlwmanifest+xml"
     },
-    "https://jiml.in/10d": {
+    "https://jiml.in/10e": {
       "rels": [
         "shortlink"
       ]
@@ -414,11 +415,11 @@
       ],
       "text": "The Official Site of Jim Lunsford"
     },
-    "https://jimlunsford.com/blog/stop-starving-yourself-to-lose-weight/": {
+    "https://jimlunsford.com/blog/law-enforcement-and-ptsd/": {
       "rels": [
         "bookmark"
       ],
-      "text": "Stop starving yourself to lose weight!"
+      "text": "Law Enforcement and PTSD"
     },
     "https://jimlunsford.com/category/blog/": {
       "rels": [
@@ -426,6 +427,37 @@
         "tag"
       ],
       "text": "Blog"
+    },
+    "https://jimlunsford.com/category/blog/law-enforcement/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Law Enforcement"
+    },
+    "https://jimlunsford.com/tag/law-enforcement/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "law enforcement"
+    },
+    "https://jimlunsford.com/tag/mental-health/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "mental health"
+    },
+    "https://jimlunsford.com/tag/ptsd/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "ptsd"
+    },
+    "https://jimlunsford.com/blog/stop-starving-yourself-to-lose-weight/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "Stop starving yourself to lose weight!"
     },
     "https://jimlunsford.com/category/blog/fitness/": {
       "rels": [
@@ -476,13 +508,6 @@
       ],
       "text": "What to do during an active shooter incident."
     },
-    "https://jimlunsford.com/category/blog/law-enforcement/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "Law Enforcement"
-    },
     "https://jimlunsford.com/tag/active/": {
       "rels": [
         "tag"
@@ -500,12 +525,6 @@
         "tag"
       ],
       "text": "hide"
-    },
-    "https://jimlunsford.com/tag/law-enforcement/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "law enforcement"
     },
     "https://jimlunsford.com/tag/run/": {
       "rels": [
@@ -718,18 +737,6 @@
         "tag"
       ],
       "text": "microsoft"
-    },
-    "https://jimlunsford.com/blog/what-is-unix/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "What is Unix?"
-    },
-    "https://jimlunsford.com/tag/unix/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "unix"
     }
   }
 }

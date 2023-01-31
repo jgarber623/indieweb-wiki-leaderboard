@@ -49,6 +49,31 @@
           ],
           "properties": {
             "name": [
+              "Smartphones verbieden in de klas: niet de\n                                oplossing"
+            ],
+            "author": [
+              "Robin Boers"
+            ],
+            "published": [
+              "28 januari 2023"
+            ],
+            "summary": [
+              "Ik zat gisteren een fragment van de avondshow van\n                            Arjan Lubach te kijken met de naam “En nou is\n                            het afgelopen met telefoons in de klas”. Ik\n                            moet zeggen dat ik het vaak met Arjan Lubach eens\n                            ben, maar dit stond toch echt lijnrecht tegenover\n                            mijn eigen mening. Het standpunt van Arjan is dat\n                            smartphones landelijk verboden zouden moeten worden\n                            op school. En ik ben het er niet (helemaal) mee\n                            eens. Ik denk dat de argumenten die hij gebruikt\n                            over het algemeen niet slecht zijn, maar dat zijn\n                            conclusie een beetje kort door de bocht is. Daarom\n                            heb ik besloten er maar eens een blogje over te …"
+            ],
+            "content": [
+              {
+                "html": "Ik zat gisteren een fragment van de avondshow van\n                            Arjan Lubach te kijken met de naam “En nou is\n                            het afgelopen met telefoons in de klas”. Ik\n                            moet zeggen dat ik het vaak met Arjan Lubach eens\n                            ben, maar dit stond toch echt lijnrecht tegenover\n                            mijn eigen mening. Het standpunt van Arjan is dat\n                            smartphones landelijk verboden zouden moeten worden\n                            op school. En ik ben het er niet (helemaal) mee\n                            eens. Ik denk dat de argumenten die hij gebruikt\n                            over het algemeen niet slecht zijn, maar dat zijn\n                            conclusie een beetje kort door de bocht is. Daarom\n                            heb ik besloten er maar eens een blogje over te …",
+                "value": "Ik zat gisteren een fragment van de avondshow van\n                            Arjan Lubach te kijken met de naam “En nou is\n                            het afgelopen met telefoons in de klas”. Ik\n                            moet zeggen dat ik het vaak met Arjan Lubach eens\n                            ben, maar dit stond toch echt lijnrecht tegenover\n                            mijn eigen mening. Het standpunt van Arjan is dat\n                            smartphones landelijk verboden zouden moeten worden\n                            op school. En ik ben het er niet (helemaal) mee\n                            eens. Ik denk dat de argumenten die hij gebruikt\n                            over het algemeen niet slecht zijn, maar dat zijn\n                            conclusie een beetje kort door de bocht is. Daarom\n                            heb ik besloten er maar eens een blogje over te …"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               "Ik gebruik plain-text email en dat zou jij ook\n                                moeten doen"
             ],
             "author": [
@@ -267,31 +292,6 @@
               }
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Het belang van open standaarden"
-            ],
-            "author": [
-              "Robin Boers"
-            ],
-            "published": [
-              "8 maart 2022"
-            ],
-            "summary": [
-              "Als je vroeger iets online wilde zetten had je\n                            alleen simpele HTML webpages. Je uploadde ze dan\n                            naar je eigen website of blog. Je was op je\n                            favoriete blogs geabonneerd via RSS en chatten ging\n                            via IRC. Dat zijn open standaarden voor\n                            communiceren, die door iedereen ondersteund worden.\n                            Maar sinds de opkomst van het zogenoemde “web\n                            2.0” zetten we alles bij Big Tech: Facebook,\n                            Microsoft, Apple, Amazon en Google. Denk daar eens\n                            over na. Als je iemand een berichtje wil sturen, wat\n                            gebruik je dan? Whatsapp of Facebook Messenger? Als\n                            je online iets wil posten? Sommigen van mijn lezers\n                            …"
-            ],
-            "content": [
-              {
-                "html": "Als je vroeger iets online wilde zetten had je\n                            alleen simpele HTML webpages. Je uploadde ze dan\n                            naar je eigen website of blog. Je was op je\n                            favoriete blogs geabonneerd via RSS en chatten ging\n                            via IRC. Dat zijn open standaarden voor\n                            communiceren, die door iedereen ondersteund worden.\n                            Maar sinds de opkomst van het zogenoemde “web\n                            2.0” zetten we alles bij Big Tech: Facebook,\n                            Microsoft, Apple, Amazon en Google. Denk daar eens\n                            over na. Als je iemand een berichtje wil sturen, wat\n                            gebruik je dan? Whatsapp of Facebook Messenger? Als\n                            je online iets wil posten? Sommigen van mijn lezers\n                            …",
-                "value": "Als je vroeger iets online wilde zetten had je\n                            alleen simpele HTML webpages. Je uploadde ze dan\n                            naar je eigen website of blog. Je was op je\n                            favoriete blogs geabonneerd via RSS en chatten ging\n                            via IRC. Dat zijn open standaarden voor\n                            communiceren, die door iedereen ondersteund worden.\n                            Maar sinds de opkomst van het zogenoemde “web\n                            2.0” zetten we alles bij Big Tech: Facebook,\n                            Microsoft, Apple, Amazon en Google. Denk daar eens\n                            over na. Als je iemand een berichtje wil sturen, wat\n                            gebruik je dan? Whatsapp of Facebook Messenger? Als\n                            je online iets wil posten? Sommigen van mijn lezers\n                            …"
-              }
-            ]
-          }
         }
       ]
     }
@@ -328,8 +328,13 @@
     "token_endpoint": [
       "https://tokens.indieauth.com/token"
     ],
+    "authn": [
+      "https://github.com/RobinBoers",
+      "mailto:hello@geheimesite.nl"
+    ],
     "me": [
       "https://github.com/RobinBoers",
+      "mailto:hello@geheimesite.nl",
       "https://geheimesite.nl/",
       "https://www.youtube.com/channel/UCx4li1iMygs5KtqgcU5KGRw",
       "https://www.linkedin.com/in/robin-boers-b18691229/",
@@ -417,6 +422,13 @@
     },
     "https://github.com/RobinBoers": {
       "rels": [
+        "authn",
+        "me"
+      ]
+    },
+    "mailto:hello@geheimesite.nl": {
+      "rels": [
+        "authn",
         "me"
       ]
     },
