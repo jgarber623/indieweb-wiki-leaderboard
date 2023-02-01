@@ -1,27 +1,70 @@
 {
-  "items": [
-    {
-      "type": [
-        "h-card"
-      ],
-      "properties": {
-        "photo": [
-          "https://tinfoil-hat.net/media/me.png"
-        ]
-      }
-    }
-  ],
+  "items": [],
   "rels": {
+    "preconnect": [
+      "https://fonts.gstatic.com/"
+    ],
+    "dns-prefetch": [
+      "https://fonts.googleapis.com/",
+      "https://fonts.gstatic.com/"
+    ],
     "stylesheet": [
-      "https://tinfoil-hat.net/css/style.css"
+      "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700",
+      "https://demo.nchristian.net/css/style.css"
+    ],
+    "alternate": [
+      "https://demo.nchristian.net/index.xml"
+    ],
+    "icon": [
+      "https://demo.nchristian.net/favicon.ico"
+    ],
+    "shortcut": [
+      "https://demo.nchristian.net/favicon.ico"
+    ],
+    "home": [
+      "https://demo.nchristian.net/"
     ]
   },
   "rel-urls": {
-    "https://tinfoil-hat.net/css/style.css": {
+    "https://fonts.gstatic.com/": {
+      "rels": [
+        "preconnect"
+      ]
+    },
+    "https://fonts.googleapis.com/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
+    "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700": {
       "rels": [
         "stylesheet"
+      ]
+    },
+    "https://demo.nchristian.net/css/style.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://demo.nchristian.net/index.xml": {
+      "rels": [
+        "alternate"
       ],
-      "type": "text/css"
+      "title": "HEERMANN | Wasser- & Rohrnetztechnik",
+      "type": "application/rss+xml"
+    },
+    "https://demo.nchristian.net/favicon.ico": {
+      "rels": [
+        "icon",
+        "shortcut"
+      ]
+    },
+    "https://demo.nchristian.net/": {
+      "rels": [
+        "home"
+      ],
+      "title": "HEERMANN | Wasser- & Rohrnetztechnik",
+      "text": "\n\t\t\t\n\t\t\t\t\tHEERMANN | Wasser- & Rohrnetztechnik\n\t\t\t\t\t24 / 7 für Sie erreichbar \n\t\t\t\t\n\t\t"
     }
   }
 }
