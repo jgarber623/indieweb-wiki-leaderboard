@@ -1,31 +1,38 @@
 {
   "items": [],
   "rels": {
+    "icon": [
+      "https://kevquirk.com/assets/images/favicon.webp"
+    ],
+    "shortcut": [
+      "https://kevquirk.com/assets/images/favicon.webp"
+    ],
+    "apple-touch-icon": [
+      "https://kevquirk.com/assets/images/favicon.webp"
+    ],
     "canonical": [
       "https://kevquirk.com/"
-    ],
-    "next": [
-      "https://kevquirk.com/page2/"
     ],
     "alternate": [
       "https://kevquirk.com/feed.xml"
     ],
+    "sitemap": [
+      "https://kevquirk.com/sitemap.xml"
+    ],
     "stylesheet": [
       "https://kevquirk.com/assets/css/style.css"
-    ],
-    "icon": [
-      "https://kevquirk.com/assets/images/favicon.webp"
     ]
   },
   "rel-urls": {
+    "https://kevquirk.com/assets/images/favicon.webp": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/png"
+    },
     "https://kevquirk.com/": {
       "rels": [
         "canonical"
-      ]
-    },
-    "https://kevquirk.com/page2/": {
-      "rels": [
-        "next"
       ]
     },
     "https://kevquirk.com/feed.xml": {
@@ -35,16 +42,17 @@
       "title": "Kev Quirk",
       "type": "application/rss+xml"
     },
+    "https://kevquirk.com/sitemap.xml": {
+      "rels": [
+        "sitemap"
+      ],
+      "title": "Sitemap",
+      "type": "application/xml"
+    },
     "https://kevquirk.com/assets/css/style.css": {
       "rels": [
         "stylesheet"
       ]
-    },
-    "https://kevquirk.com/assets/images/favicon.webp": {
-      "rels": [
-        "icon"
-      ],
-      "type": "image/png"
     }
   }
 }
