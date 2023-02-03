@@ -1,5 +1,34 @@
 {
-  "items": [],
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "photo": [
+          "https://www.javinr.es/images/GabinoFanhunter.svg"
+        ],
+        "name": [
+          "Javier Nuño Rosal"
+        ],
+        "url": [
+          "https://www.javinr.es/"
+        ],
+        "locality": [
+          "Langreo"
+        ],
+        "country-name": [
+          "España"
+        ],
+        "email": [
+          "mailto:javinr@gmail.com"
+        ],
+        "note": [
+          "Ingeniero Informático en Capgemini. Geek (nicnac según novia-ahora-esposa ;-)). Fan del balonmano. Muchas otras funciones... la mejor: papá"
+        ]
+      }
+    }
+  ],
   "rels": {
     "apple-touch-icon": [
       "https://www.javinr.es/apple-touch-icon.png"
@@ -17,7 +46,8 @@
     "me": [
       "mailto:javinr@gmail.com",
       "https://github.com/javinr",
-      "https://twitter.com/nosoynuno"
+      "https://twitter.com/nosoynuno",
+      "https://www.javinr.es/"
     ],
     "authorization_endpoint": [
       "https://indieauth.com/auth"
@@ -100,6 +130,12 @@
       "rels": [
         "stylesheet"
       ]
+    },
+    "https://www.javinr.es/": {
+      "rels": [
+        "me"
+      ],
+      "text": "Javier Nuño Rosal"
     }
   }
 }

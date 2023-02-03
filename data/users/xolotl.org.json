@@ -1,6 +1,9 @@
 {
   "items": [],
   "rels": {
+    "dns-prefetch": [
+      "https://www.googletagmanager.com/"
+    ],
     "alternate": [
       "https://xolotl.org/feed/",
       "https://xolotl.org/comments/feed/"
@@ -117,6 +120,11 @@
     ]
   },
   "rel-urls": {
+    "https://www.googletagmanager.com/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
     "https://xolotl.org/feed/": {
       "rels": [
         "alternate"

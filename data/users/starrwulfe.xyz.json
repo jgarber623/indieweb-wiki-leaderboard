@@ -28,11 +28,11 @@
           ],
           "properties": {
             "name": [
-              "Some thoughts on Yarns"
+              "LLBBL Blog quote"
             ],
             "url": [
-              "https://starrwulfe.xyz/some-thoughts-on-yarns/",
-              "https://starrwulfe.xyz/some-thoughts-on-yarns/"
+              "https://starrwulfe.xyz/llbbl-blog-quote/",
+              "https://starrwulfe.xyz/llbbl-blog-quote/"
             ],
             "author": [
               {
@@ -63,25 +63,348 @@
               }
             ],
             "published": [
-              "2023-01-23T18:07:29-05:00"
+              "2023-02-03T01:01:07-05:00"
             ],
             "duration": [
-              "PT4M"
+              "PT1M"
             ],
-            "featured": [
+            "quotation-of": [
               {
-                "value": "https://images.unsplash.com/photo-1598871956222-26b66d6559fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8eWFybiw1OTg1LjA2MDczMTYyMzI1NXx8fHx8fDE2NzQ1MTM4NzQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080",
-                "alt": ""
+                "type": [
+                  "h-cite"
+                ],
+                "properties": {
+                  "name": [
+                    ""
+                  ],
+                  "summary": [
+                    {
+                      "html": "",
+                      "value": ""
+                    }
+                  ]
+                },
+                "value": ""
               }
             ],
             "content": [
               {
-                "html": "<h5>\n<a href=\"https://jackjamieson.net/yarns-microsub-server-getting-started-guide/\" target=\"_blank\" rel=\"noopener\">Yarns</a> is a microsub server plug-in available for WordPress that allows with the aid of different connecting apps to read RSS feeds and use <a href=\"http://indieweb.org/\">Indieweb</a> techniques to interact with them. </h5>\r\n\r\n<div class=\"wp-block-jetpack-markdown\">\r\n<h3>What’s the use case for this?</h3>\r\n<p>Because I’m using this site for all my social media needs, being able to view, subscribe/follow different feeds from the source, and even resyndicate, and/or respond to them is a better workflow than the one I’m using now:</p>\r\n<ul>\r\n<li>check RSS reader and see thing I want to respond to.</li>\r\n<li>copy URL to thing</li>\r\n<li>open another window and log into my site, and respond there.</li>\r\n<li>kinda profit?! OK, so it’s not really that complicated I guess, but having an all-in-one method to just hit a “reply” button is a bit easier, no? Not to mention the ease at being able to keep tabs on read/unreads and use it as a “read-it-later” service without having yet another app for that too.</li>\r\n</ul>\r\n<h3>How easy is it to use?</h3>\r\n<p>Pretty simple once I figured out where the settings were– seriously, that was the hardest part because that’s where you set up the feeds subscription. For me, it’s sitting in the same spot as the rest of the Indieweb plugins. I expected it to be more like <a href=\"https://wordpress.org/plugins/friends/\">Friends</a> which is a plug-in that allows WordPress blogs to “follow” other blogs (and anything that runs ActivityPub like Mastodon accounts, but more on that later). Friends has its own separate section that allows you to view feeds directly from your website’s front end when logged in… Doesn’t work for me though, as it constantly shows “Feed not found” while simultaneously showing there are posts in many feeds and I can go into the “back end” and see them all. I don’t think it’s supposed to work that way though, so that’s why I’m giving this a shot. Also the Friends plug-in creates users on your WordPress instance to utilize the addtional rows of database entries. An easy way to ensure everything gets backed up since no additional tables are needed to hold all that data this way. To your wordpress installation, it just looks like all these new users are making private posts. I’m not opposed to this method really.</p>\r\n<h3>How would you improve it?</h3>\r\n<p>Remember, my goal with the site is for it to be my social hub. As we’ve been seeing over the past few months thanks to a certain avian SNS site’s changes, it’s FOSS alternative Mastodon has zoomed into the spotlight and users are switching to the network from or at least using in conjunction with Twitter. Because I want Starrwulfe.xyz to be my “Mastodon/ActivityPub” instance, I’d like any way to make that easier.</p>\r\n<ul>\r\n<li>Allowing Yarns to officially “follow” ActivityPub accounts would be very welcome. This means having Yarns fire off a “followed” ActivityPub in the background. It would need to hook in to all the same places that “Friends” currently does as well, but it shouldn’t be hard since its well documented in code. Adding in some way to turn <code>@-@</code> usernames into their URLs and discovering <em>all</em> their feeds is a good look too… Speaking of which–</li>\r\n</ul>\r\n<p>Can we get a way to discover all the feeds for a particular entity?</p>\r\n<ul>\r\n<li>The cool thing about Friends is that you can create a “user” and save all the feeds associated with that user in one place and in one stream!</li>\r\n<li>When following a blog that has feeds for each category/tag/area</li>\r\n<li>When following a person that has feeds for their main site, micro-blog, and social media site.</li>\r\n</ul>\r\n<p>Another thing I want is some kind of minimal reader/publisher _as a part of_my site.</p>\r\n<ul>\r\n<li>Create an “onboard reader/publisher UI for those times access to Monagle, AllTogetherTomorrow, Indigenous, etc are all down.</li>\r\n</ul>\r\n<p>Lastly, I’d like to be able to import/export OPML files.</p>\r\n<ul>\r\n<li>I have a bunch of feeds that could be chucked into Yarns right now if I had this, but have to spend time keying them in by hand…</li>\r\n</ul>\r\n</div>\r\n\r\n<p>This is definitely not a rant and merely suggestions on how to improve upon a good idea from a neophyte user’s point of view. This post will be updated as I get more adept at this and/or the makers of the plug in implement anything incorporating any of my suggestions.</p>\r\n<p>–jlg</p>",
-                "value": "Yarns is a microsub server plug-in available for WordPress that allows with the aid of different connecting apps to read RSS feeds and use Indieweb techniques to interact with them. \r\n\r\n\r\nWhat’s the use case for this?\r\nBecause I’m using this site for all my social media needs, being able to view, subscribe/follow different feeds from the source, and even resyndicate, and/or respond to them is a better workflow than the one I’m using now:\r\n\r\ncheck RSS reader and see thing I want to respond to.\r\ncopy URL to thing\r\nopen another window and log into my site, and respond there.\r\nkinda profit?! OK, so it’s not really that complicated I guess, but having an all-in-one method to just hit a “reply” button is a bit easier, no? Not to mention the ease at being able to keep tabs on read/unreads and use it as a “read-it-later” service without having yet another app for that too.\r\n\r\nHow easy is it to use?\r\nPretty simple once I figured out where the settings were– seriously, that was the hardest part because that’s where you set up the feeds subscription. For me, it’s sitting in the same spot as the rest of the Indieweb plugins. I expected it to be more like Friends which is a plug-in that allows WordPress blogs to “follow” other blogs (and anything that runs ActivityPub like Mastodon accounts, but more on that later). Friends has its own separate section that allows you to view feeds directly from your website’s front end when logged in… Doesn’t work for me though, as it constantly shows “Feed not found” while simultaneously showing there are posts in many feeds and I can go into the “back end” and see them all. I don’t think it’s supposed to work that way though, so that’s why I’m giving this a shot. Also the Friends plug-in creates users on your WordPress instance to utilize the addtional rows of database entries. An easy way to ensure everything gets backed up since no additional tables are needed to hold all that data this way. To your wordpress installation, it just looks like all these new users are making private posts. I’m not opposed to this method really.\r\nHow would you improve it?\r\nRemember, my goal with the site is for it to be my social hub. As we’ve been seeing over the past few months thanks to a certain avian SNS site’s changes, it’s FOSS alternative Mastodon has zoomed into the spotlight and users are switching to the network from or at least using in conjunction with Twitter. Because I want Starrwulfe.xyz to be my “Mastodon/ActivityPub” instance, I’d like any way to make that easier.\r\n\r\nAllowing Yarns to officially “follow” ActivityPub accounts would be very welcome. This means having Yarns fire off a “followed” ActivityPub in the background. It would need to hook in to all the same places that “Friends” currently does as well, but it shouldn’t be hard since its well documented in code. Adding in some way to turn @-@ usernames into their URLs and discovering all their feeds is a good look too… Speaking of which–\r\n\r\nCan we get a way to discover all the feeds for a particular entity?\r\n\r\nThe cool thing about Friends is that you can create a “user” and save all the feeds associated with that user in one place and in one stream!\r\nWhen following a blog that has feeds for each category/tag/area\r\nWhen following a person that has feeds for their main site, micro-blog, and social media site.\r\n\r\nAnother thing I want is some kind of minimal reader/publisher _as a part of_my site.\r\n\r\nCreate an “onboard reader/publisher UI for those times access to Monagle, AllTogetherTomorrow, Indigenous, etc are all down.\r\n\r\nLastly, I’d like to be able to import/export OPML files.\r\n\r\nI have a bunch of feeds that could be chucked into Yarns right now if I had this, but have to spend time keying them in by hand…\r\n\r\n\r\n\r\nThis is definitely not a rant and merely suggestions on how to improve upon a good idea from a neophyte user’s point of view. This post will be updated as I get more adept at this and/or the makers of the plug in implement anything incorporating any of my suggestions.\r\n–jlg"
+                "html": "<blockquote><p>Catch up on life before it inevitably catches up to you. 🙏</p></blockquote>\n<p>Source: <em><a href=\"https://llbbl.blog/2023/02/02/catch-up-on.html\">LLBBL Blog –</a></em></p>",
+                "value": "Catch up on life before it inevitably catches up to you. 🙏\nSource: LLBBL Blog –"
               }
             ]
           },
-          "id": "post-5427",
+          "id": "post-14049"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "↩️ reply to Devilgate.org"
+            ],
+            "url": [
+              "https://starrwulfe.xyz/reply-micro-blog-devilgate-16418777/",
+              "https://starrwulfe.xyz/reply-micro-blog-devilgate-16418777/"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "photo": [
+                    {
+                      "value": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=40&d=identicon&r=g",
+                      "srcset": {
+                        "2x": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=80&d=identicon&r=g"
+                      },
+                      "alt": "User Avatar of J L Gatewood"
+                    }
+                  ],
+                  "url": [
+                    "https://starrwulfe.xyz/author/starrwulfe/"
+                  ],
+                  "uid": [
+                    "https://starrwulfe.xyz/author/starrwulfe/"
+                  ],
+                  "name": [
+                    "J L Gatewood"
+                  ]
+                },
+                "value": "J L Gatewood"
+              }
+            ],
+            "published": [
+              "2023-02-03T00:50:21-05:00"
+            ],
+            "duration": [
+              "PT1M"
+            ],
+            "in-reply-to": [
+              {
+                "type": [
+                  "h-cite"
+                ],
+                "properties": {
+                  "name": [
+                    "https://micro.blog/devilgate/16418777"
+                  ],
+                  "url": [
+                    "https://micro.blog/devilgate/16418777"
+                  ],
+                  "author": [
+                    {
+                      "type": [
+                        "h-card"
+                      ],
+                      "properties": {
+                        "photo": [
+                          {
+                            "value": "https://micro.blog/photos/96/https://avatars.micro.blog/avatars/2022/424.jpg",
+                            "alt": "devilgate"
+                          }
+                        ],
+                        "name": [
+                          "devilgate"
+                        ]
+                      },
+                      "value": "devilgate"
+                    }
+                  ],
+                  "publication": [
+                    "micro.blog"
+                  ],
+                  "summary": [
+                    {
+                      "html": "@starrwulfe Yes! Good one. And now I've got The Rocky Horror Picture Show in my head. Which is good.",
+                      "value": "@starrwulfe Yes! Good one. And now I've got The Rocky Horror Picture Show in my head. Which is good."
+                    }
+                  ]
+                },
+                "value": "https://micro.blog/devilgate/16418777"
+              }
+            ],
+            "content": [
+              {
+                "html": "<p><a href=\"https://micro.blog/devilgate\" target=\"_blank\" rel=\"noopener\">@devilgate</a> oh man!! Now I do too!<br>\n(I was referring to Doc Brown in the _<em>Back to the Future</em>_ movies who always goes “Great Scott!” whenever he lights upon something dreadful… but TRHPS references work too, so</p>\n<p>I guess we do the **<strong>time warp</strong>** in both cases!</p>\n<p>😜</p>",
+                "value": "@devilgate oh man!! Now I do too!\n(I was referring to Doc Brown in the _Back to the Future_ movies who always goes “Great Scott!” whenever he lights upon something dreadful… but TRHPS references work too, so\nI guess we do the **time warp** in both cases!\n😜"
+              }
+            ]
+          },
+          "id": "post-14044"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "photo": [
+                    {
+                      "value": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=40&d=identicon&r=g",
+                      "srcset": {
+                        "2x": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=80&d=identicon&r=g"
+                      },
+                      "alt": "User Avatar of J L Gatewood"
+                    }
+                  ],
+                  "url": [
+                    "https://starrwulfe.xyz/author/starrwulfe/"
+                  ],
+                  "uid": [
+                    "https://starrwulfe.xyz/author/starrwulfe/"
+                  ],
+                  "name": [
+                    "J L Gatewood"
+                  ]
+                },
+                "value": "J L Gatewood"
+              }
+            ],
+            "url": [
+              "https://starrwulfe.xyz/14017-2/"
+            ],
+            "published": [
+              "2023-02-03T00:06:29-05:00"
+            ],
+            "duration": [
+              "PT1M"
+            ],
+            "in-reply-to": [
+              {
+                "type": [
+                  "h-cite"
+                ],
+                "properties": {
+                  "name": [
+                    "https://kandr3s.co/notes/2023-02-01-dhfqw"
+                  ],
+                  "url": [
+                    "https://kandr3s.co/notes/2023-02-01-dhfqw"
+                  ],
+                  "author": [
+                    {
+                      "type": [
+                        "h-card"
+                      ],
+                      "properties": {
+                        "photo": [
+                          {
+                            "value": "https://kandr3s.co/profile.jpg?v=b8f74028669602bea8a1ccd21c295cb2dcd05fc0b5ced99f4859fe6e6766e7a5",
+                            "alt": "Andrés Cárdenas"
+                          }
+                        ],
+                        "name": [
+                          "Andrés Cárdenas"
+                        ]
+                      },
+                      "value": "Andrés Cárdenas"
+                    }
+                  ],
+                  "publication": [
+                    "kandr3s.co"
+                  ],
+                  "summary": [
+                    {
+                      "html": "I’ve been more a fan of Shakira’s charity work than her music, but damn, that new song is an absolute banger! 🎶",
+                      "value": "I’ve been more a fan of Shakira’s charity work than her music, but damn, that new song is an absolute banger! 🎶"
+                    }
+                  ]
+                },
+                "value": "https://kandr3s.co/notes/2023-02-01-dhfqw"
+              }
+            ],
+            "content": [
+              {
+                "html": "<p>Oh yes, that’s 🔥🔥🔥<br>\n(Digging the A-Ha! vibe from the video too!)</p>",
+                "value": "Oh yes, that’s 🔥🔥🔥\n(Digging the A-Ha! vibe from the video too!)"
+              }
+            ]
+          },
+          "id": "post-14017"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "photo": [
+                    {
+                      "value": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=40&d=identicon&r=g",
+                      "srcset": {
+                        "2x": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=80&d=identicon&r=g"
+                      },
+                      "alt": "User Avatar of J L Gatewood"
+                    }
+                  ],
+                  "url": [
+                    "https://starrwulfe.xyz/author/starrwulfe/"
+                  ],
+                  "uid": [
+                    "https://starrwulfe.xyz/author/starrwulfe/"
+                  ],
+                  "name": [
+                    "J L Gatewood"
+                  ]
+                },
+                "value": "J L Gatewood"
+              },
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "url": [
+                    "https://starrwulfe.xyz/",
+                    "https://github.com/starrwulfe",
+                    "https://twitter.com/starrwulfe",
+                    "https://www.facebook.com/jason.gatewood",
+                    "https://micro.blog/starrwulfe",
+                    "https://www.instagram.com/starrwulfe",
+                    "https://www.flickr.com/people/starrwulfe",
+                    "https://starrwulfe.xyz/author/starrwulfe/",
+                    "http://jason.gatewood.xyz/",
+                    "http://mastodon.cloud/@starrwulfe",
+                    "http://social.vivaldi.net/@starrwulfe",
+                    "http://public.garden/@starrwulfe"
+                  ],
+                  "uid": [
+                    "https://starrwulfe.xyz/"
+                  ],
+                  "name": [
+                    "J L Gatewood"
+                  ],
+                  "note": [
+                    "Husband, Father, Teacher, Journalist. Tokyoite, Atlantan, Afro-American. Globetrotter, Homebody. Storyteller, Story-Listener. Historian, Futurist. Striving to leave the world better than I found it.\r\n📰📸👩🏾‍💻🎶🌆\r\nSTL→ATL→TKO →ATL\r\n#Indieweb #ActivityPub #journalism #technology #newurbanism #music\r\nhttp://starrwulfe.xyz | http://mastodon.cloud/@jlgatewood | http://starrwulfe.micro.blog"
+                  ]
+                },
+                "children": [
+                  {
+                    "type": [
+                      "h-adr"
+                    ],
+                    "properties": {
+                      "locality": [
+                        "Atlanta"
+                      ],
+                      "region": [
+                        "Georgia"
+                      ]
+                    }
+                  }
+                ],
+                "value": "https://starrwulfe.xyz/"
+              }
+            ],
+            "url": [
+              "https://starrwulfe.xyz/2023-black-history-month-2-2/"
+            ],
+            "published": [
+              "2023-02-02T23:41:21-05:00"
+            ],
+            "duration": [
+              "PT1M"
+            ],
+            "content": [
+              {
+                "html": "<p><strong><span style=\"font-family: Overpass;\">It’s Black History Month…</span></strong></p>\n<p><span style=\"font-family: Overpass;\">I’m going to say things that may make you uncomfortable. I feel kinda uncomfortable for <em>*having to say them*</em> every year (I shouldn’t; Black history is part of AMERICAN history, is it not?)</span></p>\n<p><span style=\"font-family: Overpass;\">So buckle up, seats and tray tables in full and upright positions lads, it may be bumpy as we travel down this road.</span></p>\n<p><span style=\"font-family: Overpass;\">First up– <a href=\"https://fosstodon.org/@mekkaokereke@hachyderm.io/109795293198439056\" target=\"_blank\" rel=\"noopener\">This Mastodon thread</a> from the <a rel=\"tag\" class=\"u-tag u-category\" href=\"https://starrwulfe.xyz/tag/fediverse/\">#Fediverse</a> about how <a rel=\"tag\" class=\"u-tag u-category\" href=\"https://starrwulfe.xyz/tag/eminentdomain/\">#EminentDomain</a> <del datetime=\"2023-02-03T04:46:12+00:00\">was</del> is used as a weapon to destroy mainly Black &amp; Brown people’s neighborhoods in the name of progress and <a rel=\"tag\" class=\"u-tag u-category\" href=\"https://starrwulfe.xyz/tag/gentrification/\">#gentrification</a>.</span></p>\n<p><span style=\"font-size: 10pt; font-family: Overpass;\">(Also, this is another reason I’ve always been pro-railroad and pro-transit. People cheer when a new subway line comes to their neighborhoods; how many times as anyone ever gotten excited over a damn freeway being built through their area, especially if they’re the ones being forced to move because of it?!)</span></p>",
+                "value": "It’s Black History Month…\nI’m going to say things that may make you uncomfortable. I feel kinda uncomfortable for *having to say them* every year (I shouldn’t; Black history is part of AMERICAN history, is it not?)\nSo buckle up, seats and tray tables in full and upright positions lads, it may be bumpy as we travel down this road.\nFirst up– This Mastodon thread from the #Fediverse about how #EminentDomain was is used as a weapon to destroy mainly Black & Brown people’s neighborhoods in the name of progress and #gentrification.\n(Also, this is another reason I’ve always been pro-railroad and pro-transit. People cheer when a new subway line comes to their neighborhoods; how many times as anyone ever gotten excited over a damn freeway being built through their area, especially if they’re the ones being forced to move because of it?!)"
+              }
+            ],
+            "tag": [
+              "https://starrwulfe.xyz/tag/fediverse/",
+              "https://starrwulfe.xyz/tag/eminentdomain/",
+              "https://starrwulfe.xyz/tag/gentrification/"
+            ],
+            "category": [
+              "https://starrwulfe.xyz/tag/fediverse/",
+              "https://starrwulfe.xyz/tag/eminentdomain/",
+              "https://starrwulfe.xyz/tag/gentrification/"
+            ],
+            "photo": [
+              {
+                "value": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=96&d=identicon&r=g",
+                "srcset": {
+                  "2x": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=192&d=identicon&r=g"
+                },
+                "alt": "J L Gatewood Avatar"
+              }
+            ]
+          },
+          "id": "post-14013",
           "children": [
             {
               "type": [
@@ -89,11 +412,11 @@
               ],
               "properties": {
                 "name": [
-                  "Day #14 of working on my indieweb site"
+                  "↩️ reply to @wesley_cook@fosstodon.org"
                 ],
                 "url": [
-                  "https://starrwulfe.xyz/day-14-of-working-on-my-indieweb-site/",
-                  "https://starrwulfe.xyz/day-14-of-working-on-my-indieweb-site/"
+                  "https://starrwulfe.xyz/reply-to-wesley_cookfosstodon-org/",
+                  "https://starrwulfe.xyz/reply-to-wesley_cookfosstodon-org/"
                 ],
                 "author": [
                   {
@@ -124,868 +447,425 @@
                   }
                 ],
                 "published": [
-                  "2023-01-14T14:15:00-05:00"
+                  "2023-02-02T22:43:53-05:00"
                 ],
                 "duration": [
-                  "PT4M"
+                  "PT3M"
                 ],
-                "featured": [
+                "in-reply-to": [
                   {
-                    "value": "https://images.pexels.com/photos/3530752/pexels-photo-3530752.jpeg",
-                    "alt": "Close-up Photography Neon peach coloredNumber 14"
+                    "type": [
+                      "h-cite"
+                    ],
+                    "properties": {
+                      "name": [
+                        "Wesley Cook (@wesley_cook@fosstodon.org)"
+                      ],
+                      "url": [
+                        "https://fosstodon.org/@wesley_cook/109796811807507404"
+                      ],
+                      "publication": [
+                        "Fosstodon"
+                      ],
+                      "summary": [
+                        {
+                          "html": "@mekkaokereke@hachyderm.io As a #Atlanta resident living near I-20, seeing that before and after always hurts. My street literally dead ends into the side wall of the highway and I think about this destruction almost every day.\r\n\r\nWe need to demolish the freeway, reconnect the Atlanta street grid and build large amounts of affordable housing to begin to repair our city.",
+                          "value": "@mekkaokereke@hachyderm.io As a #Atlanta resident living near I-20, seeing that before and after always hurts. My street literally dead ends into the side wall of the highway and I think about this destruction almost every day.\r\n\r\nWe need to demolish the freeway, reconnect the Atlanta street grid and build large amounts of affordable housing to begin to repair our city."
+                        }
+                      ]
+                    },
+                    "value": "https://fosstodon.org/@wesley_cook/109796811807507404"
                   }
                 ],
                 "content": [
                   {
-                    "html": "<p>I managed to get the site itself up and running without a ton of hitches and it seems to be humming along well with most of the full requirements installed/coded in/shade-tree-jerry-rigged in.<br><br>To recap, this site has to:</p>\r\n\r\n\r\n\r\n<ul>\r\n<li>\n<span style=\"text-decoration: underline;\"><strong>serve as a digital garden</strong></span>; where I collect a lot of the things I learn online in one place (this also means some of that stuff YOU can’t see, but I as a logged in user, can.)</li>\r\n\r\n\r\n\r\n<li>\n<strong><span style=\"text-decoration: underline;\">serve as my social media hub.</span></strong> Anything I post, like, favorite, etc, should be catalogued here.\r\n<ul>\r\n<li>I have a way now to post/like/repost (even quote post) and more to <a href=\"http://indieweb.org/mastodon\" target=\"_blank\" rel=\"noreferrer noopener\" data-type=\"URL\" data-id=\"http://indieweb.org/mastodon\">Mastodon</a> (this site IS a Mastodon/<a href=\"http://indieweb.org/activitypub\" target=\"_blank\" rel=\"noreferrer noopener\" data-type=\"URL\" data-id=\"http://indieweb.org/activitypub\">ActivityWeb</a> compatible site; try looking up <code>@starrwulfe@starrwulfe.xyz</code> from your account in the Fediverse!)</li>\r\n\r\n\r\n\r\n<li>I can do the same to Twitter as well as Reddit.</li>\r\n\r\n\r\n\r\n<li>I can comment, star and follow Github issues and projects.</li>\r\n\r\n\r\n\r\n<li>I can check-in to places with <a href=\"http://swarmapp.com/\" target=\"_blank\" rel=\"noreferrer noopener\">Swarm</a> and have it save privately here. This is really good for when I’m somewhere new and want to save all the information for later reference but don’t want to let the world know where I am at that moment.</li>\r\n\r\n\r\n\r\n<li>I can <a href=\"http://indieweb.org/backfeed\" target=\"_blank\" rel=\"noreferrer noopener\">backfeed</a> posts from Instagram and Facebook, which is better than nothing– I may have a workaround to hydrate posts/create them through IFTTT or Jetpack in theory… Stay tuned.</li>\r\n</ul>\r\n</li>\r\n\r\n\r\n\r\n<li>\n<strong><span style=\"text-decoration: underline;\">Keep copies of the media and posts backed up.</span></strong> I’m actually using a managed hosting service that backs everything up to some S3 buckets I had laying around from an old project, but I also use this plug-in that sends everything to my NAS farm here at the house too. From there, it’s backed up to a some more clouds. Can never have enough backup.</li>\r\n\r\n\r\n\r\n<li>\n<strong><span style=\"text-decoration: underline;\">Eventually handle <a href=\"http://jason.gatewood.xyz/\" target=\"_blank\" rel=\"noreferrer noopener\">my main site’s</a> duties.</span></strong> Right now that website shows off my professional side as a journalist/technical writer; I need to migrate all that over here and figure out how I’m gonna handle the URL… Overlay or redirect or… Let me know any other ideas!</li>\r\n\r\n\r\n\r\n<li>\n<span style=\"text-decoration: underline;\"><strong>Look good doing all that!</strong></span> I still don’t know if I’m keeping this theme yet. Even if I do, I need to change a lot in the CSS. I want a more minimalist aesthetic:\r\n<ul>\r\n<li>only system fonts, so you’re not waiting for a .ttf of a font you’ll never use other than to see my site to download.</li>\r\n\r\n\r\n\r\n<li>Only Unicode glyphs including using emoji for icon packs (although the icons here are pretty light, I just prefer the aesthetics. I’d also have to get rid of WordPress’ use of <a href=\"https://twemoji.twitter.com/\" target=\"_blank\" rel=\"noreferrer noopener\" data-type=\"URL\" data-id=\"https://twemoji.twitter.com\">Twimoji</a> maybe. 🤔) There’s plug ins for this though…</li>\r\n\r\n\r\n\r\n<li>Redo the .css so there’s less negative space. I love this layout, but want it to be more compact. Also want to switch up the fonts– I like san-serifs to read the body of a post probably due to me spending eons of time in the terminal (preferably monospace ones because 私時々日本語で説明ため入力し and Japanese is always monospaced so it flows better)</li>\r\n\r\n\r\n\r\n<li>Would be nice if this site looked good in <a href=\"https://w3m.sourceforge.net/\" target=\"_blank\" rel=\"noreferrer noopener\" data-type=\"URL\" data-id=\"https://w3m.sourceforge.net/\">w3m</a>/<a href=\"http://brow.sh/\" target=\"_blank\" rel=\"noreferrer noopener\">browsh</a> text browsers, as well as feed readers, read-it-later bookmarking apps and so on.</li>\r\n</ul>\r\n</li>\r\n\r\n\r\n\r\n<li>\n<strong><span style=\"text-decoration: underline;\">Serve as a feed reader.</span></strong> Since this is already effectively an ActivityWeb instance, part of the how I follow others from here is thru a plugin called <a href=\"https://github.com/akirk/friends\" target=\"_blank\" rel=\"noreferrer noopener\" data-type=\"URL\" data-id=\"https://github.com/akirk/friends\">Friends</a>, but it’s kinda heavy. Maybe <a href=\"http://github.com/jackjamieson2/yarns-microsub-server\" target=\"_blank\" rel=\"noreferrer noopener\" data-type=\"URL\" data-id=\"github.com/jackjamieson2/yarns-microsub-server\">Yarn</a> is the way to go; both are RSS feed readers but only Friends actually sends a “following” <a href=\"https://indieweb.org/activitypub\" target=\"_blank\" rel=\"noreferrer noopener\" data-type=\"URL\" data-id=\"https://indieweb.org/activitypub\">webmention</a>/<a href=\"https://indieweb.org/activitypub\" target=\"_blank\" rel=\"noreferrer noopener\" data-type=\"URL\" data-id=\"https://indieweb.org/activitypub\">activitypub </a>notice to the site/person being followed and lets them know they’re now being followed by me. I think <a href=\"https://david.shanske.com/\" target=\"_blank\" rel=\"noreferrer noopener\" data-type=\"URL\" data-id=\"https://david.shanske.com\">David Shanske</a> is thinking of adding that ability to Yarn though which would allow for some fun things via <a href=\"https://indieweb.org/microsub\" target=\"_blank\" rel=\"noreferrer noopener\">microsub</a> too.</li>\r\n</ul>\r\n\r\n\r\n\r\n<div class=\"wp-block-jetpack-markdown\">\r\n<p>As it is now, it seems to be doing most of the above and just needs a few more cosmetics at this point in the way of organization, taxonomy of posts and workflow practice. Other itches needing scratching are:</p>\r\n<ul>\r\n<li>In particular I want to replace/augment my <a href=\"http://instagram.com/starrwulfe\">Instagram</a> with Pixelfed (https://pixelfed.social/starrwulfe) and need to figure out how to connect them. Maybe through my blog?)</li>\r\n<li>Get check-ins and weather reporting right. That’s definitely a <a href=\"https://david.shanske.com/\">David Shanske</a> question.</li>\r\n<li>Make a calendar for RSVP/scheduling that can read iCalendar streams.</li>\r\n<li>Podcasting/Video streaming. There’s probably a plug in for that.</li>\r\n<li>Books/Games/TV/Movies section that will replace <a href=\"https://www.goodreads.com/\">GoodReads</a>, <a href=\"https://letterboxd.com/\">LetterBoxd</a>, and other media listing apps.</li>\r\n</ul>\r\n<p>If you’re also “doing too much” with your website and know of some ways to do some of the above or know something else I don’t, send me a webmention/toot/tweet to this page! And if you happened to wander by here and just wanna say hi, you can always use <a href=\"https://commentpara.de/\">Comment Parade</a> and leave a quick message here as well.</p>\r\n</div>",
-                    "value": "I managed to get the site itself up and running without a ton of hitches and it seems to be humming along well with most of the full requirements installed/coded in/shade-tree-jerry-rigged in.To recap, this site has to:\r\n\r\n\r\n\r\n\r\nserve as a digital garden; where I collect a lot of the things I learn online in one place (this also means some of that stuff YOU can’t see, but I as a logged in user, can.)\r\n\r\n\r\n\r\nserve as my social media hub. Anything I post, like, favorite, etc, should be catalogued here.\r\n\r\nI have a way now to post/like/repost (even quote post) and more to Mastodon (this site IS a Mastodon/ActivityWeb compatible site; try looking up @starrwulfe@starrwulfe.xyz from your account in the Fediverse!)\r\n\r\n\r\n\r\nI can do the same to Twitter as well as Reddit.\r\n\r\n\r\n\r\nI can comment, star and follow Github issues and projects.\r\n\r\n\r\n\r\nI can check-in to places with Swarm and have it save privately here. This is really good for when I’m somewhere new and want to save all the information for later reference but don’t want to let the world know where I am at that moment.\r\n\r\n\r\n\r\nI can backfeed posts from Instagram and Facebook, which is better than nothing– I may have a workaround to hydrate posts/create them through IFTTT or Jetpack in theory… Stay tuned.\r\n\r\n\r\n\r\n\r\n\r\nKeep copies of the media and posts backed up. I’m actually using a managed hosting service that backs everything up to some S3 buckets I had laying around from an old project, but I also use this plug-in that sends everything to my NAS farm here at the house too. From there, it’s backed up to a some more clouds. Can never have enough backup.\r\n\r\n\r\n\r\nEventually handle my main site’s duties. Right now that website shows off my professional side as a journalist/technical writer; I need to migrate all that over here and figure out how I’m gonna handle the URL… Overlay or redirect or… Let me know any other ideas!\r\n\r\n\r\n\r\nLook good doing all that! I still don’t know if I’m keeping this theme yet. Even if I do, I need to change a lot in the CSS. I want a more minimalist aesthetic:\r\n\r\nonly system fonts, so you’re not waiting for a .ttf of a font you’ll never use other than to see my site to download.\r\n\r\n\r\n\r\nOnly Unicode glyphs including using emoji for icon packs (although the icons here are pretty light, I just prefer the aesthetics. I’d also have to get rid of WordPress’ use of Twimoji maybe. 🤔) There’s plug ins for this though…\r\n\r\n\r\n\r\nRedo the .css so there’s less negative space. I love this layout, but want it to be more compact. Also want to switch up the fonts– I like san-serifs to read the body of a post probably due to me spending eons of time in the terminal (preferably monospace ones because 私時々日本語で説明ため入力し and Japanese is always monospaced so it flows better)\r\n\r\n\r\n\r\nWould be nice if this site looked good in w3m/browsh text browsers, as well as feed readers, read-it-later bookmarking apps and so on.\r\n\r\n\r\n\r\n\r\n\r\nServe as a feed reader. Since this is already effectively an ActivityWeb instance, part of the how I follow others from here is thru a plugin called Friends, but it’s kinda heavy. Maybe Yarn is the way to go; both are RSS feed readers but only Friends actually sends a “following” webmention/activitypub notice to the site/person being followed and lets them know they’re now being followed by me. I think David Shanske is thinking of adding that ability to Yarn though which would allow for some fun things via microsub too.\r\n\r\n\r\n\r\n\r\n\r\nAs it is now, it seems to be doing most of the above and just needs a few more cosmetics at this point in the way of organization, taxonomy of posts and workflow practice. Other itches needing scratching are:\r\n\r\nIn particular I want to replace/augment my Instagram with Pixelfed (https://pixelfed.social/starrwulfe) and need to figure out how to connect them. Maybe through my blog?)\r\nGet check-ins and weather reporting right. That’s definitely a David Shanske question.\r\nMake a calendar for RSVP/scheduling that can read iCalendar streams.\r\nPodcasting/Video streaming. There’s probably a plug in for that.\r\nBooks/Games/TV/Movies section that will replace GoodReads, LetterBoxd, and other media listing apps.\r\n\r\nIf you’re also “doing too much” with your website and know of some ways to do some of the above or know something else I don’t, send me a webmention/toot/tweet to this page! And if you happened to wander by here and just wanna say hi, you can always use Comment Parade and leave a quick message here as well."
+                    "html": "<p>And it gets better — You can check EVERY SINGLE CITY in America where Dwight Eisenhower’s Interstate Program went into effect and damn near all of them involved bulldozing a Black neighborhood.</p>\n<p>I’m from St Louis and every one of them got razed. I-70 thru the Northside, I-44/55 thru the Southside and even the unbuilt 22nd Street Expressway that was used as an excuse to tear down a lot of wealthy Black St Louis’s neighborhoods near downtown… Even though it didn’t get built!</p>\n<p>Same thing happened with the GA-410 Freeway as it came out of downtown. All those neighborhoods around Boulevard and Highland? Those were the black ones. But it never got built because the wealthy white population living north of Ponce De Leon wasn’t having it. So it got stalled out in court and ultimately never built. The project was officially cancelled in 1987. Instead they turned the right of way they already tore down into a street — Freedom Parkway — and now has property so expensive, none of the original residents could hope to live even around their old neighborhoods.</p>\n<p>As a <a rel=\"tag\" class=\"u-tag u-category\" href=\"https://starrwulfe.xyz/tag/gwinnettcounty/\">#GwinnettCounty</a> GA resident, knowing I’m living on land I own, that used to be part of one of the biggest and oldest plantations and sharecroppers fields in the Atlanta metro area… I OWN this little half an acre were my ancestors were forced against their will to create wealth for someone else… Yet hundreds of years later is making my family money. And I had to work SO DAMN HARD just to be able to get this little half acre. I’m proud of myself, proud of my wife and family who sacrificed to get our little piece. But why is it so tough to get what should be so easy, a basic human right– the right to shelter?</p>\n<p>If you work, you should have a place to live. Are you a minor? You should have a safe, dry place to lay your head. Are you an elder who has given years to the system? You should get a comfortable place to spend the rest of your days. No strings attached. End of story.</p>\n<p>It makes me feel some kinda way. Bittersweet.<br>\nBTW there will be a local Black History Museum opening in time for Juneteenth this summer in Lilburn GA. These little nooks and crannies around Atlanta are also full of history. We need to learn, remember and treasure every piece of it.</p>",
+                    "value": "And it gets better — You can check EVERY SINGLE CITY in America where Dwight Eisenhower’s Interstate Program went into effect and damn near all of them involved bulldozing a Black neighborhood.\nI’m from St Louis and every one of them got razed. I-70 thru the Northside, I-44/55 thru the Southside and even the unbuilt 22nd Street Expressway that was used as an excuse to tear down a lot of wealthy Black St Louis’s neighborhoods near downtown… Even though it didn’t get built!\nSame thing happened with the GA-410 Freeway as it came out of downtown. All those neighborhoods around Boulevard and Highland? Those were the black ones. But it never got built because the wealthy white population living north of Ponce De Leon wasn’t having it. So it got stalled out in court and ultimately never built. The project was officially cancelled in 1987. Instead they turned the right of way they already tore down into a street — Freedom Parkway — and now has property so expensive, none of the original residents could hope to live even around their old neighborhoods.\nAs a #GwinnettCounty GA resident, knowing I’m living on land I own, that used to be part of one of the biggest and oldest plantations and sharecroppers fields in the Atlanta metro area… I OWN this little half an acre were my ancestors were forced against their will to create wealth for someone else… Yet hundreds of years later is making my family money. And I had to work SO DAMN HARD just to be able to get this little half acre. I’m proud of myself, proud of my wife and family who sacrificed to get our little piece. But why is it so tough to get what should be so easy, a basic human right– the right to shelter?\nIf you work, you should have a place to live. Are you a minor? You should have a safe, dry place to lay your head. Are you an elder who has given years to the system? You should get a comfortable place to spend the rest of your days. No strings attached. End of story.\nIt makes me feel some kinda way. Bittersweet.\nBTW there will be a local Black History Museum opening in time for Juneteenth this summer in Lilburn GA. These little nooks and crannies around Atlanta are also full of history. We need to learn, remember and treasure every piece of it."
+                  }
+                ],
+                "tag": [
+                  "https://starrwulfe.xyz/tag/gwinnettcounty/"
+                ],
+                "category": [
+                  "https://starrwulfe.xyz/tag/gwinnettcounty/"
+                ]
+              },
+              "id": "post-13984"
+            },
+            {
+              "type": [
+                "h-entry"
+              ],
+              "properties": {
+                "name": [
+                  "in reply to notes.tracydurnell.com"
+                ],
+                "url": [
+                  "https://starrwulfe.xyz/tracy-durnell/",
+                  "https://starrwulfe.xyz/tracy-durnell/"
+                ],
+                "author": [
+                  {
+                    "type": [
+                      "h-card"
+                    ],
+                    "properties": {
+                      "photo": [
+                        {
+                          "value": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=40&d=identicon&r=g",
+                          "srcset": {
+                            "2x": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=80&d=identicon&r=g"
+                          },
+                          "alt": "User Avatar of J L Gatewood"
+                        }
+                      ],
+                      "url": [
+                        "https://starrwulfe.xyz/author/starrwulfe/"
+                      ],
+                      "uid": [
+                        "https://starrwulfe.xyz/author/starrwulfe/"
+                      ],
+                      "name": [
+                        "J L Gatewood"
+                      ]
+                    },
+                    "value": "J L Gatewood"
+                  }
+                ],
+                "published": [
+                  "2023-02-02T22:09:38-05:00"
+                ],
+                "duration": [
+                  "PT1M"
+                ],
+                "in-reply-to": [
+                  {
+                    "type": [
+                      "h-cite"
+                    ],
+                    "properties": {
+                      "name": [
+                        ""
+                      ],
+                      "summary": [
+                        {
+                          "html": "",
+                          "value": ""
+                        }
+                      ]
+                    },
+                    "value": ""
+                  },
+                  "https://notes.tracydurnell.com/2023/02/02/super-psyched-to.html"
+                ],
+                "content": [
+                  {
+                    "html": "<p><a class=\"u-in-reply-to\" href=\"https://notes.tracydurnell.com/2023/02/02/super-psyched-to.html\">↩️ notes.tracydurnell.com/2023/02/02/super-psyched-to.html</a></p>\n<blockquote><p>Super psyched to cancel my gas service today! We replaced our old gas furnace and water heater with electric.</p></blockquote>\n<p>I miss our multihead heat pumps in Japan for this reason; each room gets their own HVAC source while other spaces like halls and closets get none — only heating or cooling the part of the house you’re actually in also saves lots of money. So sure, blast the heat in the bedroom at night because you’re not paying to heat the kitchen, living room, den, etc…<br>\nAnd heat pumps are way more efficient so the newer ones heat and cool better for less energy.<br>\nAt some point I will need to do this too as our lethargic central HVAC unit is UNDER the house in the crawl space (who’s bright idea was that anyway) and several zones of less than ideal climate are always nagging me this time of year.</p>",
+                    "value": "↩️ notes.tracydurnell.com/2023/02/02/super-psyched-to.html\nSuper psyched to cancel my gas service today! We replaced our old gas furnace and water heater with electric.\nI miss our multihead heat pumps in Japan for this reason; each room gets their own HVAC source while other spaces like halls and closets get none — only heating or cooling the part of the house you’re actually in also saves lots of money. So sure, blast the heat in the bedroom at night because you’re not paying to heat the kitchen, living room, den, etc…\nAnd heat pumps are way more efficient so the newer ones heat and cool better for less energy.\nAt some point I will need to do this too as our lethargic central HVAC unit is UNDER the house in the crawl space (who’s bright idea was that anyway) and several zones of less than ideal climate are always nagging me this time of year."
                   }
                 ]
               },
-              "id": "post-4",
-              "children": [
-                {
-                  "type": [
-                    "h-entry"
-                  ],
-                  "properties": {
-                    "author": [
-                      {
-                        "type": [
-                          "h-card"
-                        ],
-                        "properties": {
-                          "photo": [
-                            {
-                              "value": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=40&d=identicon&r=g",
-                              "srcset": {
-                                "2x": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=80&d=identicon&r=g"
-                              },
-                              "alt": "User Avatar of J L Gatewood"
-                            }
-                          ],
-                          "url": [
-                            "https://starrwulfe.xyz/author/starrwulfe/"
-                          ],
-                          "uid": [
-                            "https://starrwulfe.xyz/author/starrwulfe/"
-                          ],
-                          "name": [
-                            "J L Gatewood"
-                          ]
-                        },
-                        "value": "J L Gatewood"
-                      }
+              "id": "post-13948"
+            },
+            {
+              "type": [
+                "h-entry"
+              ],
+              "properties": {
+                "author": [
+                  {
+                    "type": [
+                      "h-card"
                     ],
-                    "url": [
-                      "https://starrwulfe.xyz/12721-2/"
-                    ],
-                    "published": [
-                      "2023-02-01T01:01:26-05:00"
-                    ],
-                    "duration": [
-                      "PT1M"
-                    ],
-                    "in-reply-to": [
-                      {
-                        "type": [
-                          "h-cite"
-                        ],
-                        "properties": {
-                          "name": [
-                            "ranjit (@ranjit@friend.camp)"
-                          ],
-                          "url": [
-                            "https://friend.camp/@ranjit/109779658504618386"
-                          ],
-                          "publication": [
-                            "Friend Camp"
-                          ],
-                          "summary": [
-                            {
-                              "html": "Attached: 1 image\r\n\r\nthis is MUCH better than chatgpt: catgpt\r\n\r\nhttps://catgpt.wvd.io/",
-                              "value": "Attached: 1 image\r\n\r\nthis is MUCH better than chatgpt: catgpt\r\n\r\nhttps://catgpt.wvd.io/"
-                            }
-                          ]
-                        },
-                        "value": "https://friend.camp/@ranjit/109779658504618386"
-                      }
-                    ],
-                    "content": [
-                      {
-                        "html": "<p>What happens if you netcat CatGPT’s server?<br>\n…kittens?<br>\n🐈 🐱 🐈‍⬛ </p>",
-                        "value": "What happens if you netcat CatGPT’s server?\n…kittens?\n🐈 🐱 🐈‍⬛"
-                      }
-                    ]
-                  },
-                  "id": "post-12721"
-                },
-                {
-                  "type": [
-                    "h-entry"
-                  ],
-                  "properties": {
-                    "author": [
-                      {
-                        "type": [
-                          "h-card"
-                        ],
-                        "properties": {
-                          "photo": [
-                            {
-                              "value": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=40&d=identicon&r=g",
-                              "srcset": {
-                                "2x": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=80&d=identicon&r=g"
-                              },
-                              "alt": "User Avatar of J L Gatewood"
-                            }
-                          ],
-                          "url": [
-                            "https://starrwulfe.xyz/author/starrwulfe/"
-                          ],
-                          "uid": [
-                            "https://starrwulfe.xyz/author/starrwulfe/"
-                          ],
-                          "name": [
-                            "J L Gatewood"
-                          ]
-                        },
-                        "value": "J L Gatewood"
-                      }
-                    ],
-                    "url": [
-                      "https://starrwulfe.xyz/catgpt/"
-                    ],
-                    "published": [
-                      "2023-02-01T00:31:35-05:00"
-                    ],
-                    "duration": [
-                      "PT1M"
-                    ],
-                    "content": [
-                      {
-                        "html": "<div class=\"wp-block-indieblocks-context\"><i>Reposted <a class=\"u-repost-of\" href=\"https://mastodon.gamedev.place/@PossiblyAxolotl/109787614705143342\">https://mastodon.gamedev.place/@PossiblyAxolotl/109787614705143342</a>.</i></div>",
-                        "value": "Reposted https://mastodon.gamedev.place/@PossiblyAxolotl/109787614705143342."
-                      }
-                    ],
-                    "repost-of": [
-                      "https://mastodon.gamedev.place/@PossiblyAxolotl/109787614705143342"
-                    ]
-                  },
-                  "id": "post-12714"
-                },
-                {
-                  "type": [
-                    "h-entry"
-                  ],
-                  "properties": {
-                    "author": [
-                      {
-                        "type": [
-                          "h-card"
-                        ],
-                        "properties": {
-                          "photo": [
-                            {
-                              "value": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=40&d=identicon&r=g",
-                              "srcset": {
-                                "2x": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=80&d=identicon&r=g"
-                              },
-                              "alt": "User Avatar of J L Gatewood"
-                            }
-                          ],
-                          "url": [
-                            "https://starrwulfe.xyz/author/starrwulfe/"
-                          ],
-                          "uid": [
-                            "https://starrwulfe.xyz/author/starrwulfe/"
-                          ],
-                          "name": [
-                            "J L Gatewood"
-                          ]
-                        },
-                        "value": "J L Gatewood"
-                      }
-                    ],
-                    "url": [
-                      "https://starrwulfe.xyz/12641-2/"
-                    ],
-                    "published": [
-                      "2023-01-31T22:26:12-05:00"
-                    ],
-                    "duration": [
-                      "PT1M"
-                    ],
-                    "featured": [
-                      {
-                        "value": "https://i0.wp.com/starrwulfe.xyz/wp-content/uploads/2023/01/s2acaypksze.jpg?fit=800%2C1200&ssl=1",
-                        "srcset": {
-                          "800w": "https://i0.wp.com/starrwulfe.xyz/wp-content/uploads/2023/01/s2acaypksze.jpg?w=800&ssl=1",
-                          "200w": "https://i0.wp.com/starrwulfe.xyz/wp-content/uploads/2023/01/s2acaypksze.jpg?resize=200%2C300&ssl=1",
-                          "683w": "https://i0.wp.com/starrwulfe.xyz/wp-content/uploads/2023/01/s2acaypksze.jpg?resize=683%2C1024&ssl=1",
-                          "768w": "https://i0.wp.com/starrwulfe.xyz/wp-content/uploads/2023/01/s2acaypksze.jpg?resize=768%2C1152&ssl=1"
-                        },
-                        "alt": "black pug yawning on Casper pet bed inside room"
-                      }
-                    ],
-                    "content": [
-                      {
-                        "html": "<p><span style=\"font-size: 10pt;\">🥱 <span style=\"font-family: Overpass;\">I fell down a <a href=\"https://starrwulfe.xyz/notes-on-migrating-a-wordpress-site-to-eleventy/\">weblog rab</a><a href=\"https://starrwulfe.xyz/notes-on-migrating-a-wordpress-site-to-eleventy/\">bit hole</a> looking for inspiration on a <a href=\"http://trenzdesigns.com/\">site I’m doing for my mom</a>. But I got a mad case of sleepies so off to bed!</span></span></p>",
-                        "value": "🥱 I fell down a weblog rabbit hole looking for inspiration on a site I’m doing for my mom. But I got a mad case of sleepies so off to bed!"
-                      }
-                    ],
-                    "summary": [
-                      "🥱 I fell down a weblog rabbit hole looking for inspiration on a site I’m doing for my mom. But I got a mad case of sleepies so off to bed!"
-                    ],
-                    "name": [
-                      "🥱 I fell down a weblog rabbit hole looking for inspiration on a site I’m doing for my mom. But I got a mad case of sleepies so off to bed!"
-                    ]
-                  },
-                  "id": "post-12641",
-                  "children": [
-                    {
-                      "type": [
-                        "h-entry"
-                      ],
-                      "properties": {
-                        "author": [
-                          {
-                            "type": [
-                              "h-card"
-                            ],
-                            "properties": {
-                              "photo": [
-                                {
-                                  "value": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=40&d=identicon&r=g",
-                                  "srcset": {
-                                    "2x": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=80&d=identicon&r=g"
-                                  },
-                                  "alt": "User Avatar of J L Gatewood"
-                                }
-                              ],
-                              "url": [
-                                "https://starrwulfe.xyz/author/starrwulfe/"
-                              ],
-                              "uid": [
-                                "https://starrwulfe.xyz/author/starrwulfe/"
-                              ],
-                              "name": [
-                                "J L Gatewood"
-                              ]
-                            },
-                            "value": "J L Gatewood"
-                          }
-                        ],
-                        "url": [
-                          "https://starrwulfe.xyz/notes-on-migrating-a-wordpress-site-to-eleventy/"
-                        ],
-                        "published": [
-                          "2023-01-31T22:08:05-05:00"
-                        ],
-                        "duration": [
-                          "PT1M"
-                        ],
-                        "favorite-of": [
-                          {
-                            "type": [
-                              "h-cite"
-                            ],
-                            "properties": {
-                              "name": [
-                                "Notes on Migrating a Wordpress Site to Eleventy"
-                              ],
-                              "url": [
-                                "https://rknight.me/note-on-migrating-wordpress-site-eleventy"
-                              ],
-                              "publication": [
-                                "rknight.me"
-                              ],
-                              "summary": [
-                                {
-                                  "html": "Some helpful notes and tools for migrating an existing Wordpress site to Eleventy",
-                                  "value": "Some helpful notes and tools for migrating an existing Wordpress site to Eleventy"
-                                }
-                              ]
-                            },
-                            "value": "https://rknight.me/note-on-migrating-wordpress-site-eleventy"
-                          }
-                        ],
-                        "content": [
-                          {
-                            "html": "<p>⭐️ favorited <a href=\"https://rknight.me/note-on-migrating-wordpress-site-eleventy/\">Notes on Migrating a WordPress Site to Eleventy</a></p>",
-                            "value": "⭐️ favorited Notes on Migrating a WordPress Site to Eleventy"
-                          }
-                        ],
-                        "summary": [
-                          "⭐️ favorited Notes on Migrating a WordPress Site to Eleventy"
-                        ],
-                        "name": [
-                          "⭐️ favorited Notes on Migrating a WordPress Site to Eleventy"
-                        ]
-                      },
-                      "id": "post-12614"
-                    },
-                    {
-                      "type": [
-                        "h-entry"
-                      ],
-                      "properties": {
-                        "name": [
-                          "Adding Webmentions to Your Site"
-                        ],
-                        "url": [
-                          "https://starrwulfe.xyz/adding-webmentions-to-your-site/",
-                          "https://starrwulfe.xyz/adding-webmentions-to-your-site/"
-                        ],
-                        "author": [
-                          {
-                            "type": [
-                              "h-card"
-                            ],
-                            "properties": {
-                              "photo": [
-                                {
-                                  "value": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=40&d=identicon&r=g",
-                                  "srcset": {
-                                    "2x": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=80&d=identicon&r=g"
-                                  },
-                                  "alt": "User Avatar of J L Gatewood"
-                                }
-                              ],
-                              "url": [
-                                "https://starrwulfe.xyz/author/starrwulfe/"
-                              ],
-                              "uid": [
-                                "https://starrwulfe.xyz/author/starrwulfe/"
-                              ],
-                              "name": [
-                                "J L Gatewood"
-                              ]
-                            },
-                            "value": "J L Gatewood"
-                          }
-                        ],
-                        "published": [
-                          "2023-01-31T21:53:29-05:00"
-                        ],
-                        "duration": [
-                          "PT1M"
-                        ],
-                        "in-reply-to": [
-                          {
-                            "type": [
-                              "h-cite"
-                            ],
-                            "properties": {
-                              "name": [
-                                ""
-                              ],
-                              "summary": [
-                                {
-                                  "html": "",
-                                  "value": ""
-                                }
-                              ]
-                            },
-                            "value": ""
+                    "properties": {
+                      "photo": [
+                        {
+                          "value": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=40&d=identicon&r=g",
+                          "srcset": {
+                            "2x": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=80&d=identicon&r=g"
                           },
-                          "https://rknight.me/adding-webmentions-to-your-site/"
-                        ],
-                        "featured": [
-                          {
-                            "value": "https://i0.wp.com/starrwulfe.xyz/wp-content/uploads/2023/01/webmentions.png?fit=770%2C567&ssl=1",
-                            "srcset": {
-                              "770w": "https://i0.wp.com/starrwulfe.xyz/wp-content/uploads/2023/01/webmentions.png?w=770&ssl=1",
-                              "300w": "https://i0.wp.com/starrwulfe.xyz/wp-content/uploads/2023/01/webmentions.png?resize=300%2C221&ssl=1",
-                              "768w": "https://i0.wp.com/starrwulfe.xyz/wp-content/uploads/2023/01/webmentions.png?resize=768%2C566&ssl=1"
-                            },
-                            "alt": ""
-                          }
-                        ],
-                        "content": [
-                          {
-                            "html": "<p><a class=\"u-in-reply-to\" href=\"https://rknight.me/adding-webmentions-to-your-site/\">↩️ Replied to “Adding webmentions to my site” by rknight.me</a></p>\n<p>🤩 wow!<br>\nI’m gonna have to “be inspired by” your entire setup and try to emulate in WordPress somehow. I totally forgot about status!<br>\nHow are you going about replying to them?</p>",
-                            "value": "↩️ Replied to “Adding webmentions to my site” by rknight.me\n🤩 wow!\nI’m gonna have to “be inspired by” your entire setup and try to emulate in WordPress somehow. I totally forgot about status!\nHow are you going about replying to them?"
-                          }
-                        ]
-                      },
-                      "id": "post-12610"
-                    },
-                    {
-                      "type": [
-                        "h-entry"
+                          "alt": "User Avatar of J L Gatewood"
+                        }
                       ],
-                      "properties": {
-                        "name": [
-                          "– Tales from the Bitface (version 4.0)"
-                        ],
-                        "url": [
-                          "https://starrwulfe.xyz/tales-from-the-bitface-version-4-0/",
-                          "https://starrwulfe.xyz/tales-from-the-bitface-version-4-0/"
-                        ],
-                        "author": [
-                          {
-                            "type": [
-                              "h-card"
-                            ],
-                            "properties": {
-                              "photo": [
-                                {
-                                  "value": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=40&d=identicon&r=g",
-                                  "srcset": {
-                                    "2x": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=80&d=identicon&r=g"
-                                  },
-                                  "alt": "User Avatar of J L Gatewood"
-                                }
-                              ],
-                              "url": [
-                                "https://starrwulfe.xyz/author/starrwulfe/"
-                              ],
-                              "uid": [
-                                "https://starrwulfe.xyz/author/starrwulfe/"
-                              ],
-                              "name": [
-                                "J L Gatewood"
-                              ]
-                            },
-                            "value": "J L Gatewood"
-                          }
-                        ],
-                        "published": [
-                          "2023-01-31T20:22:17-05:00"
-                        ],
-                        "duration": [
-                          "PT1M"
-                        ],
-                        "content": [
-                          {
-                            "html": "<p>↩️ <a class=\"u-in-reply-to\" href=\"https://devilgate.org/2023/01/31/us-old-types.html\">replied to devilgqte.org;</a><br>\n…Scott?</p>",
-                            "value": "↩️ replied to devilgqte.org;\n…Scott?"
-                          }
-                        ],
-                        "in-reply-to": [
-                          "https://devilgate.org/2023/01/31/us-old-types.html"
-                        ]
-                      },
-                      "id": "post-12576"
-                    },
-                    {
-                      "type": [
-                        "h-entry"
+                      "url": [
+                        "https://starrwulfe.xyz/author/starrwulfe/"
                       ],
-                      "properties": {
-                        "author": [
-                          {
-                            "type": [
-                              "h-card"
-                            ],
-                            "properties": {
-                              "photo": [
-                                {
-                                  "value": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=40&d=identicon&r=g",
-                                  "srcset": {
-                                    "2x": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=80&d=identicon&r=g"
-                                  },
-                                  "alt": "User Avatar of J L Gatewood"
-                                }
-                              ],
-                              "url": [
-                                "https://starrwulfe.xyz/author/starrwulfe/"
-                              ],
-                              "uid": [
-                                "https://starrwulfe.xyz/author/starrwulfe/"
-                              ],
-                              "name": [
-                                "J L Gatewood"
-                              ]
-                            },
-                            "value": "J L Gatewood"
-                          }
-                        ],
-                        "url": [
-                          "https://starrwulfe.xyz/12579-2/"
-                        ],
-                        "published": [
-                          "2023-01-31T19:00:00-05:00"
-                        ],
-                        "duration": [
-                          "PT1M"
-                        ],
-                        "read-of": [
-                          {
-                            "type": [
-                              "h-cite"
-                            ],
-                            "properties": {
-                              "name": [
-                                "The Foundation Trilogy (Foundation / Foundation and Empire / Second Foundation )"
-                              ],
-                              "url": [
-                                "https://openlibrary.org/works/OL46390W"
-                              ],
-                              "author": [
-                                {
-                                  "type": [
-                                    "h-card"
-                                  ],
-                                  "properties": {
-                                    "name": [
-                                      "Isaac Asimov"
-                                    ]
-                                  },
-                                  "value": "Isaac Asimov"
-                                }
-                              ],
-                              "summary": [
-                                {
-                                  "html": "",
-                                  "value": ""
-                                }
-                              ]
-                            },
-                            "value": "https://openlibrary.org/works/OL46390W"
-                          }
-                        ],
-                        "content": [
-                          {
-                            "html": "<p><img width=\"180\" height=\"279\" loading=\"lazy\" src=\"https://i0.wp.com/starrwulfe.xyz/wp-content/uploads/2023/01/6502517-M.jpg?fit=180%2C279&amp;ssl=1\" class=\"alignright photo u-featured wp-post-image\" alt=\"\" decoding=\"async\" itemprop=\"image\"></p>\n<p>Probably because I read these all in one go, I’m kinda missing a few points of context here and there, and it’s been about 30 years or so since I read Azimov for school (aka FORCED! 😜) but know this:</p>\n<p>If you’re watching the Apple TV series, it’s a different storyline altogether and it’s a real page turner.</p>\n<p>It’s intriguing how according to the late 1950’s, we’re basically supposed to have colonized the solar system by now. If you spent time reading this though, I wouldn’t blame you for thinking it too.</p>",
-                            "value": "Probably because I read these all in one go, I’m kinda missing a few points of context here and there, and it’s been about 30 years or so since I read Azimov for school (aka FORCED! 😜) but know this:\nIf you’re watching the Apple TV series, it’s a different storyline altogether and it’s a real page turner.\nIt’s intriguing how according to the late 1950’s, we’re basically supposed to have colonized the solar system by now. If you spent time reading this though, I wouldn’t blame you for thinking it too."
-                          }
-                        ],
-                        "summary": [
-                          "Probably because I read these all in one go, I’m kinda missing a few points of context here and there, and it’s been about 30 years or so since I read Azimov for school (aka FORCED! 😜) but know this:\nIf you’re watching the Apple TV series, it’s a different storyline altogether and it’s a real page turner.\nIt’s intriguing how according to the late 1950’s, we’re basically supposed to have colonized the solar system by now. If you spent time reading this though, I wouldn’t blame you for thinking it too."
-                        ],
-                        "name": [
-                          "Probably because I read these all in one go, I’m kinda missing a few points of context here and there, and it’s been about 30 years or so since I read Azimov for school (aka FORCED! 😜) but know this:\nIf you’re watching the Apple TV series, it’s a different storyline altogether and it’s a real page turner.\nIt’s intriguing how according to the late 1950’s, we’re basically supposed to have colonized the solar system by now. If you spent time reading this though, I wouldn’t blame you for thinking it too."
-                        ],
-                        "featured": [
-                          {
-                            "value": "https://i0.wp.com/starrwulfe.xyz/wp-content/uploads/2023/01/6502517-M.jpg?fit=180%2C279&ssl=1",
-                            "alt": ""
-                          }
-                        ]
-                      },
-                      "id": "post-12579",
-                      "children": [
+                      "uid": [
+                        "https://starrwulfe.xyz/author/starrwulfe/"
+                      ],
+                      "name": [
+                        "J L Gatewood"
+                      ]
+                    },
+                    "value": "J L Gatewood"
+                  }
+                ],
+                "url": [
+                  "https://starrwulfe.xyz/13892-2/"
+                ],
+                "published": [
+                  "2023-02-02T19:21:19-05:00"
+                ],
+                "duration": [
+                  "PT0M"
+                ],
+                "jam-of": [
+                  {
+                    "type": [
+                      "h-cite"
+                    ],
+                    "properties": {
+                      "name": [
+                        "Bataille"
+                      ],
+                      "url": [
+                        "https://song.link/i/892132029"
+                      ],
+                      "author": [
                         {
                           "type": [
-                            "h-entry"
+                            "h-card"
                           ],
                           "properties": {
-                            "author": [
-                              {
-                                "type": [
-                                  "h-card"
-                                ],
-                                "properties": {
-                                  "photo": [
-                                    {
-                                      "value": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=40&d=identicon&r=g",
-                                      "srcset": {
-                                        "2x": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=80&d=identicon&r=g"
-                                      },
-                                      "alt": "User Avatar of J L Gatewood"
-                                    }
-                                  ],
-                                  "url": [
-                                    "https://starrwulfe.xyz/author/starrwulfe/"
-                                  ],
-                                  "uid": [
-                                    "https://starrwulfe.xyz/author/starrwulfe/"
-                                  ],
-                                  "name": [
-                                    "J L Gatewood"
-                                  ]
-                                },
-                                "value": "J L Gatewood"
-                              }
-                            ],
-                            "url": [
-                              "https://starrwulfe.xyz/11916-2/"
-                            ],
-                            "published": [
-                              "2023-01-30T19:47:57-05:00"
-                            ],
-                            "duration": [
-                              "PT0M"
-                            ],
-                            "in-reply-to": [
-                              {
-                                "type": [
-                                  "h-cite"
-                                ],
-                                "properties": {
-                                  "name": [
-                                    "New year, new design."
-                                  ],
-                                  "url": [
-                                    "https://gabriellew.ee/posts/2023/01/30/new-year-new-design/"
-                                  ],
-                                  "author": [
-                                    {
-                                      "type": [
-                                        "h-card"
-                                      ],
-                                      "properties": {
-                                        "photo": [
-                                          {
-                                            "value": "https://gabriellew.ee/static/images/avatars/profile.jpg",
-                                            "alt": "Gabrielle Wee"
-                                          }
-                                        ],
-                                        "name": [
-                                          "Gabrielle Wee"
-                                        ]
-                                      },
-                                      "value": "Gabrielle Wee"
-                                    }
-                                  ],
-                                  "publication": [
-                                    "gabriellew.ee"
-                                  ],
-                                  "summary": [
-                                    {
-                                      "html": "I think I force myself to keep up with all the new things happening in web development by making myself redesign my site every couple of years or so. I never really consciously sit down to make comps and figure out all the details. The process is really more of me noodling on an idea I‘ve had for ...",
-                                      "value": "I think I force myself to keep up with all the new things happening in web development by making myself redesign my site every couple of years or so. I never really consciously sit down to make comps and figure out all the details. The process is really more of me noodling on an idea I‘ve had for ..."
-                                    }
-                                  ]
-                                },
-                                "value": "https://gabriellew.ee/posts/2023/01/30/new-year-new-design/"
-                              }
-                            ],
-                            "content": [
-                              {
-                                "html": "<p>💯👏</p>",
-                                "value": "💯👏"
-                              }
-                            ]
-                          },
-                          "id": "post-11916"
-                        },
-                        {
-                          "type": [
-                            "h-entry"
-                          ],
-                          "properties": {
-                            "author": [
-                              {
-                                "type": [
-                                  "h-card"
-                                ],
-                                "properties": {
-                                  "photo": [
-                                    {
-                                      "value": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=40&d=identicon&r=g",
-                                      "srcset": {
-                                        "2x": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=80&d=identicon&r=g"
-                                      },
-                                      "alt": "User Avatar of J L Gatewood"
-                                    }
-                                  ],
-                                  "url": [
-                                    "https://starrwulfe.xyz/author/starrwulfe/"
-                                  ],
-                                  "uid": [
-                                    "https://starrwulfe.xyz/author/starrwulfe/"
-                                  ],
-                                  "name": [
-                                    "J L Gatewood"
-                                  ]
-                                },
-                                "value": "J L Gatewood"
-                              }
-                            ],
-                            "url": [
-                              "https://starrwulfe.xyz/replied-tapbots-social-paul-109780940519434108/"
-                            ],
-                            "published": [
-                              "2023-01-30T19:29:23-05:00"
-                            ],
-                            "duration": [
-                              "PT1M"
-                            ],
-                            "in-reply-to": [
-                              {
-                                "type": [
-                                  "h-cite"
-                                ],
-                                "properties": {
-                                  "name": [
-                                    "Paul Haddad (@paul@tapbots.social)"
-                                  ],
-                                  "url": [
-                                    "https://tapbots.social/@paul/109780940519434108"
-                                  ],
-                                  "publication": [
-                                    "tapbots.social"
-                                  ],
-                                  "summary": [
-                                    {
-                                      "html": "I forgot to fave it: A Mastodon story of love lost, never to be found again.",
-                                      "value": "I forgot to fave it: A Mastodon story of love lost, never to be found again."
-                                    }
-                                  ]
-                                },
-                                "value": "https://tapbots.social/@paul/109780940519434108"
-                              }
-                            ],
-                            "content": [
-                              {
-                                "html": "<p>RSS reader with a 2 week cache go brrrrrr. Can also try searching other instances timelines as some cache longer than some</p>",
-                                "value": "RSS reader with a 2 week cache go brrrrrr. Can also try searching other instances timelines as some cache longer than some"
-                              }
-                            ],
-                            "summary": [
-                              "RSS reader with a 2 week cache go brrrrrr. Can also try searching other instances timelines as some cache longer than some"
-                            ],
                             "name": [
-                              "RSS reader with a 2 week cache go brrrrrr. Can also try searching other instances timelines as some cache longer than some"
+                              "WeAreCastor"
                             ]
                           },
-                          "id": "post-11906"
-                        },
+                          "value": "WeAreCastor"
+                        }
+                      ],
+                      "publication": [
+                        "Via Songlink/Odesli"
+                      ],
+                      "summary": [
                         {
-                          "type": [
-                            "h-entry"
-                          ],
-                          "properties": {
-                            "author": [
-                              {
-                                "type": [
-                                  "h-card"
-                                ],
-                                "properties": {
-                                  "photo": [
-                                    {
-                                      "value": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=40&d=identicon&r=g",
-                                      "srcset": {
-                                        "2x": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=80&d=identicon&r=g"
-                                      },
-                                      "alt": "User Avatar of J L Gatewood"
-                                    }
-                                  ],
-                                  "url": [
-                                    "https://starrwulfe.xyz/author/starrwulfe/"
-                                  ],
-                                  "uid": [
-                                    "https://starrwulfe.xyz/author/starrwulfe/"
-                                  ],
-                                  "name": [
-                                    "J L Gatewood"
-                                  ]
-                                },
-                                "value": "J L Gatewood"
-                              },
-                              {
-                                "type": [
-                                  "h-card"
-                                ],
-                                "properties": {
-                                  "url": [
-                                    "https://starrwulfe.xyz/",
-                                    "https://github.com/starrwulfe",
-                                    "https://twitter.com/starrwulfe",
-                                    "https://www.facebook.com/jason.gatewood",
-                                    "https://micro.blog/starrwulfe",
-                                    "https://www.instagram.com/starrwulfe",
-                                    "https://www.flickr.com/people/starrwulfe",
-                                    "https://starrwulfe.xyz/author/starrwulfe/",
-                                    "http://jason.gatewood.xyz/",
-                                    "http://mastodon.cloud/@starrwulfe",
-                                    "http://social.vivaldi.net/@starrwulfe",
-                                    "http://public.garden/@starrwulfe"
-                                  ],
-                                  "uid": [
-                                    "https://starrwulfe.xyz/"
-                                  ],
-                                  "name": [
-                                    "J L Gatewood"
-                                  ],
-                                  "note": [
-                                    "Husband, Father, Teacher, Journalist. Tokyoite, Atlantan, Afro-American. Globetrotter, Homebody. Storyteller, Story-Listener. Historian, Futurist. Striving to leave the world better than I found it.\r\n📰📸👩🏾‍💻🎶🌆\r\nSTL→ATL→TKO →ATL\r\n#Indieweb #ActivityPub #journalism #technology #newurbanism #music\r\nhttp://starrwulfe.xyz | http://mastodon.cloud/@jlgatewood | http://starrwulfe.micro.blog"
-                                  ]
-                                },
-                                "children": [
-                                  {
-                                    "type": [
-                                      "h-adr"
-                                    ],
-                                    "properties": {
-                                      "locality": [
-                                        "Atlanta"
-                                      ],
-                                      "region": [
-                                        "Georgia"
-                                      ]
-                                    }
-                                  }
-                                ],
-                                "value": "https://starrwulfe.xyz/"
-                              }
-                            ],
-                            "url": [
-                              "https://starrwulfe.xyz/relearning-css/"
-                            ],
-                            "published": [
-                              "2023-01-30T18:24:10-05:00"
-                            ],
-                            "duration": [
-                              "PT1M"
-                            ],
-                            "craft-of": [
-                              {
-                                "type": [
-                                  "h-cite"
-                                ],
-                                "properties": {
-                                  "name": [
-                                    "CSS Reference"
-                                  ],
-                                  "url": [
-                                    "https://cssreference.io/"
-                                  ],
-                                  "publication": [
-                                    "cssreference.io"
-                                  ],
-                                  "summary": [
-                                    {
-                                      "html": "CSS Reference is a free visual guide to CSS. It features the most popular properties, and explains them with illustrated and animated examples.",
-                                      "value": "CSS Reference is a free visual guide to CSS. It features the most popular properties, and explains them with illustrated and animated examples."
-                                    }
-                                  ]
-                                },
-                                "value": "https://cssreference.io/"
-                              }
-                            ],
-                            "content": [
-                              {
-                                "html": "<p>This just in:<br>\nTrying to remember how CSS works after not doing it for over 10 years is HARD.<br>\n😩</p>\n<p>💪🏾I’m trying to to some light style edit stuff to my website and practice so I can build 2 other sites for some family who are starting online businesses. </p>",
-                                "value": "This just in:\nTrying to remember how CSS works after not doing it for over 10 years is HARD.\n😩\n💪🏾I’m trying to to some light style edit stuff to my website and practice so I can build 2 other sites for some family who are starting online businesses."
-                              }
-                            ],
-                            "summary": [
-                              "This just in:\nTrying to remember how CSS works after not doing it for over 10 years is HARD.\n😩\n💪🏾I’m trying to to some light style edit stuff to my website and practice so I can build 2 other sites for some family who are starting online businesses."
-                            ],
-                            "name": [
-                              "This just in:\nTrying to remember how CSS works after not doing it for over 10 years is HARD.\n😩\n💪🏾I’m trying to to some light style edit stuff to my website and practice so I can build 2 other sites for some family who are starting online businesses."
-                            ],
-                            "photo": [
-                              {
-                                "value": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=96&d=identicon&r=g",
-                                "srcset": {
-                                  "2x": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=192&d=identicon&r=g"
-                                },
-                                "alt": "J L Gatewood Avatar"
-                              }
-                            ]
-                          },
-                          "id": "post-11875"
+                          "html": "Currently jamming out to this!\r\nListen now on your favorite streaming service.",
+                          "value": "Currently jamming out to this!\r\nListen now on your favorite streaming service."
                         }
                       ]
-                    }
-                  ]
-                }
-              ]
+                    },
+                    "value": "https://song.link/i/892132029"
+                  }
+                ],
+                "featured": [
+                  {
+                    "value": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/6b/1b/aa/6b1baa6e-9cf6-f71e-eb47-d4876a2bfcfe/cover.jpg/512x512bb.jpg",
+                    "alt": ""
+                  }
+                ],
+                "content": [
+                  {
+                    "html": "<div style=\"max-width:100%;\">\n<div style=\"position:relative;padding-bottom:calc(56.25% + 52px);height: 0;\"><iframe style=\"position:absolute;top:0;left:0;\" width=\"100%\" height=\"100%\" loading=\"lazy\" src=\"https://odesli.co/embed/?url=https%3A%2F%2Fsong.link%2Fi%2F892132029&amp;theme=dark\" frameborder=\"0\" allowfullscreen sandbox=\"allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox\" allow=\"clipboard-read; clipboard-write\"></iframe></div>\n</div>",
+                    "value": ""
+                  }
+                ]
+              },
+              "id": "post-13892"
+            },
+            {
+              "type": [
+                "h-entry"
+              ],
+              "properties": {
+                "name": [
+                  "↩️ @matthewhowell@Indieweb.Social"
+                ],
+                "url": [
+                  "https://starrwulfe.xyz/reply-to-matthewhowell/",
+                  "https://starrwulfe.xyz/reply-to-matthewhowell/"
+                ],
+                "author": [
+                  {
+                    "type": [
+                      "h-card"
+                    ],
+                    "properties": {
+                      "photo": [
+                        {
+                          "value": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=40&d=identicon&r=g",
+                          "srcset": {
+                            "2x": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=80&d=identicon&r=g"
+                          },
+                          "alt": "User Avatar of J L Gatewood"
+                        }
+                      ],
+                      "url": [
+                        "https://starrwulfe.xyz/author/starrwulfe/"
+                      ],
+                      "uid": [
+                        "https://starrwulfe.xyz/author/starrwulfe/"
+                      ],
+                      "name": [
+                        "J L Gatewood"
+                      ]
+                    },
+                    "value": "J L Gatewood"
+                  }
+                ],
+                "published": [
+                  "2023-02-02T14:01:36-05:00"
+                ],
+                "duration": [
+                  "PT1M"
+                ],
+                "in-reply-to": [
+                  {
+                    "type": [
+                      "h-cite"
+                    ],
+                    "properties": {
+                      "name": [
+                        ""
+                      ],
+                      "summary": [
+                        {
+                          "html": "",
+                          "value": ""
+                        }
+                      ]
+                    },
+                    "value": ""
+                  },
+                  "https://indieweb.social/@matthewhowell/109791986754717117"
+                ],
+                "content": [
+                  {
+                    "html": "<p><a class=\"u-in-reply-to\" href=\"https://indieweb.social/@matthewhowell/109791986754717117\"> indieweb.social/@matthewhowell</a><br>\n👋🏾 hello!</p>",
+                    "value": "indieweb.social/@matthewhowell\n👋🏾 hello!"
+                  }
+                ]
+              },
+              "id": "post-13714"
+            },
+            {
+              "type": [
+                "h-entry"
+              ],
+              "properties": {
+                "author": [
+                  {
+                    "type": [
+                      "h-card"
+                    ],
+                    "properties": {
+                      "photo": [
+                        {
+                          "value": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=40&d=identicon&r=g",
+                          "srcset": {
+                            "2x": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=80&d=identicon&r=g"
+                          },
+                          "alt": "User Avatar of J L Gatewood"
+                        }
+                      ],
+                      "url": [
+                        "https://starrwulfe.xyz/author/starrwulfe/"
+                      ],
+                      "uid": [
+                        "https://starrwulfe.xyz/author/starrwulfe/"
+                      ],
+                      "name": [
+                        "J L Gatewood"
+                      ]
+                    },
+                    "value": "J L Gatewood"
+                  }
+                ],
+                "url": [
+                  "https://starrwulfe.xyz/12721-2/"
+                ],
+                "published": [
+                  "2023-02-01T01:01:26-05:00"
+                ],
+                "duration": [
+                  "PT1M"
+                ],
+                "in-reply-to": [
+                  {
+                    "type": [
+                      "h-cite"
+                    ],
+                    "properties": {
+                      "name": [
+                        "ranjit (@ranjit@friend.camp)"
+                      ],
+                      "url": [
+                        "https://friend.camp/@ranjit/109779658504618386"
+                      ],
+                      "publication": [
+                        "Friend Camp"
+                      ],
+                      "summary": [
+                        {
+                          "html": "Attached: 1 image\r\n\r\nthis is MUCH better than chatgpt: catgpt\r\n\r\nhttps://catgpt.wvd.io/",
+                          "value": "Attached: 1 image\r\n\r\nthis is MUCH better than chatgpt: catgpt\r\n\r\nhttps://catgpt.wvd.io/"
+                        }
+                      ]
+                    },
+                    "value": "https://friend.camp/@ranjit/109779658504618386"
+                  }
+                ],
+                "content": [
+                  {
+                    "html": "<p>What happens if you netcat CatGPT’s server?<br>\n…kittens?<br>\n🐈 🐱 🐈‍⬛ </p>",
+                    "value": "What happens if you netcat CatGPT’s server?\n…kittens?\n🐈 🐱 🐈‍⬛"
+                  }
+                ]
+              },
+              "id": "post-12721"
+            },
+            {
+              "type": [
+                "h-entry"
+              ],
+              "properties": {
+                "author": [
+                  {
+                    "type": [
+                      "h-card"
+                    ],
+                    "properties": {
+                      "photo": [
+                        {
+                          "value": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=40&d=identicon&r=g",
+                          "srcset": {
+                            "2x": "https://secure.gravatar.com/avatar/8b19c81db6a5685340239e97b382713c?s=80&d=identicon&r=g"
+                          },
+                          "alt": "User Avatar of J L Gatewood"
+                        }
+                      ],
+                      "url": [
+                        "https://starrwulfe.xyz/author/starrwulfe/"
+                      ],
+                      "uid": [
+                        "https://starrwulfe.xyz/author/starrwulfe/"
+                      ],
+                      "name": [
+                        "J L Gatewood"
+                      ]
+                    },
+                    "value": "J L Gatewood"
+                  }
+                ],
+                "url": [
+                  "https://starrwulfe.xyz/catgpt/"
+                ],
+                "published": [
+                  "2023-02-01T00:31:35-05:00"
+                ],
+                "duration": [
+                  "PT1M"
+                ],
+                "content": [
+                  {
+                    "html": "<div class=\"wp-block-indieblocks-context\"><i>Reposted <a class=\"u-repost-of\" href=\"https://mastodon.gamedev.place/@PossiblyAxolotl/109787614705143342\">https://mastodon.gamedev.place/@PossiblyAxolotl/109787614705143342</a>.</i></div>",
+                    "value": "Reposted https://mastodon.gamedev.place/@PossiblyAxolotl/109787614705143342."
+                  }
+                ],
+                "repost-of": [
+                  "https://mastodon.gamedev.place/@PossiblyAxolotl/109787614705143342"
+                ]
+              },
+              "id": "post-12714"
             }
           ]
         }
@@ -1036,7 +916,7 @@
       "https://starrwulfe.xyz/wp-content/themes/autonomie/assets/css/default-width.css?ver=1.0.0",
       "https://starrwulfe.xyz/wp-content/themes/autonomie/assets/css/wide-width.css?ver=1.0.0",
       "https://c0.wp.com/p/jetpack/11.7.1/css/jetpack.css",
-      "https://starrwulfe.xyz/wp-content/uploads/so-css/so-css-autonomie.css?ver=1675208698"
+      "https://starrwulfe.xyz/wp-content/uploads/so-css/so-css-autonomie.css?ver=1675399502"
     ],
     "https://api.w.org/": [
       "https://starrwulfe.xyz/wp-json/"
@@ -1101,52 +981,29 @@
       "https://starrwulfe.xyz/"
     ],
     "bookmark": [
-      "https://starrwulfe.xyz/some-thoughts-on-yarns/",
-      "https://starrwulfe.xyz/day-14-of-working-on-my-indieweb-site/",
+      "https://starrwulfe.xyz/llbbl-blog-quote/",
+      "https://starrwulfe.xyz/reply-micro-blog-devilgate-16418777/",
+      "https://starrwulfe.xyz/14017-2/",
+      "https://starrwulfe.xyz/2023-black-history-month-2-2/",
+      "https://starrwulfe.xyz/reply-to-wesley_cookfosstodon-org/",
+      "https://starrwulfe.xyz/tracy-durnell/",
+      "https://starrwulfe.xyz/13892-2/",
+      "https://starrwulfe.xyz/reply-to-matthewhowell/",
       "https://starrwulfe.xyz/12721-2/",
-      "https://starrwulfe.xyz/catgpt/",
-      "https://starrwulfe.xyz/12641-2/",
-      "https://starrwulfe.xyz/notes-on-migrating-a-wordpress-site-to-eleventy/",
-      "https://starrwulfe.xyz/adding-webmentions-to-your-site/",
-      "https://starrwulfe.xyz/tales-from-the-bitface-version-4-0/",
-      "https://starrwulfe.xyz/12579-2/",
-      "https://starrwulfe.xyz/11916-2/",
-      "https://starrwulfe.xyz/replied-tapbots-social-paul-109780940519434108/",
-      "https://starrwulfe.xyz/relearning-css/"
+      "https://starrwulfe.xyz/catgpt/"
     ],
     "author": [
       "https://starrwulfe.xyz/author/starrwulfe/"
     ],
     "noopener": [
-      "https://jackjamieson.net/yarns-microsub-server-getting-started-guide/",
-      "http://indieweb.org/mastodon",
-      "http://indieweb.org/activitypub",
-      "http://swarmapp.com/",
-      "http://indieweb.org/backfeed",
-      "http://jason.gatewood.xyz/",
-      "https://twemoji.twitter.com/",
-      "https://w3m.sourceforge.net/",
-      "http://brow.sh/",
-      "https://github.com/akirk/friends",
-      "http://github.com/jackjamieson2/yarns-microsub-server",
-      "https://indieweb.org/activitypub",
-      "https://david.shanske.com/",
-      "https://indieweb.org/microsub"
+      "https://micro.blog/devilgate",
+      "https://fosstodon.org/@mekkaokereke@hachyderm.io/109795293198439056"
     ],
-    "noreferrer": [
-      "http://indieweb.org/mastodon",
-      "http://indieweb.org/activitypub",
-      "http://swarmapp.com/",
-      "http://indieweb.org/backfeed",
-      "http://jason.gatewood.xyz/",
-      "https://twemoji.twitter.com/",
-      "https://w3m.sourceforge.net/",
-      "http://brow.sh/",
-      "https://github.com/akirk/friends",
-      "http://github.com/jackjamieson2/yarns-microsub-server",
-      "https://indieweb.org/activitypub",
-      "https://david.shanske.com/",
-      "https://indieweb.org/microsub"
+    "tag": [
+      "https://starrwulfe.xyz/tag/fediverse/",
+      "https://starrwulfe.xyz/tag/eminentdomain/",
+      "https://starrwulfe.xyz/tag/gentrification/",
+      "https://starrwulfe.xyz/tag/gwinnettcounty/"
     ],
     "generator": [
       "https://wordpress.org/"
@@ -1503,109 +1360,97 @@
         "webmention"
       ]
     },
-    "https://starrwulfe.xyz/some-thoughts-on-yarns/": {
+    "https://starrwulfe.xyz/llbbl-blog-quote/": {
       "rels": [
         "bookmark"
       ],
-      "title": "Permalink to Some thoughts on Yarns",
-      "text": "\n\t\t\t\t\tSome thoughts on Yarns\t\t\t\t"
+      "title": "Permalink to LLBBL Blog quote",
+      "text": "\n\t\t\t\t\tLLBBL Blog quote\t\t\t\t"
     },
-    "https://jackjamieson.net/yarns-microsub-server-getting-started-guide/": {
+    "https://starrwulfe.xyz/reply-micro-blog-devilgate-16418777/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to ↩️ reply to Devilgate.org",
+      "text": "\n\t\t\t\t\t↩️ reply to Devilgate.org\t\t\t\t"
+    },
+    "https://micro.blog/devilgate": {
       "rels": [
         "noopener"
       ],
-      "text": "Yarns"
+      "text": "@devilgate"
     },
-    "https://starrwulfe.xyz/day-14-of-working-on-my-indieweb-site/": {
+    "https://starrwulfe.xyz/14017-2/": {
       "rels": [
         "bookmark"
       ],
-      "title": "Permalink to Day #14 of working on my indieweb site",
-      "text": "\n\t\t\t\t\tDay #14 of working on my indieweb site\t\t\t\t"
+      "title": "12:06 am",
+      "text": "February 3, 2023"
     },
-    "http://indieweb.org/mastodon": {
+    "https://starrwulfe.xyz/2023-black-history-month-2-2/": {
       "rels": [
-        "noopener",
-        "noreferrer"
+        "bookmark"
       ],
-      "text": "Mastodon"
+      "title": "11:41 pm",
+      "text": "February 2, 2023"
     },
-    "http://indieweb.org/activitypub": {
+    "https://fosstodon.org/@mekkaokereke@hachyderm.io/109795293198439056": {
       "rels": [
-        "noopener",
-        "noreferrer"
+        "noopener"
       ],
-      "text": "ActivityWeb"
+      "text": "This Mastodon thread"
     },
-    "http://swarmapp.com/": {
+    "https://starrwulfe.xyz/tag/fediverse/": {
       "rels": [
-        "noopener",
-        "noreferrer"
+        "tag"
       ],
-      "text": "Swarm"
+      "text": "#Fediverse"
     },
-    "http://indieweb.org/backfeed": {
+    "https://starrwulfe.xyz/tag/eminentdomain/": {
       "rels": [
-        "noopener",
-        "noreferrer"
+        "tag"
       ],
-      "text": "backfeed"
+      "text": "#EminentDomain"
     },
-    "https://twemoji.twitter.com/": {
+    "https://starrwulfe.xyz/tag/gentrification/": {
       "rels": [
-        "noopener",
-        "noreferrer"
+        "tag"
       ],
-      "text": "Twimoji"
+      "text": "#gentrification"
     },
-    "https://w3m.sourceforge.net/": {
+    "https://starrwulfe.xyz/reply-to-wesley_cookfosstodon-org/": {
       "rels": [
-        "noopener",
-        "noreferrer"
+        "bookmark"
       ],
-      "text": "w3m"
+      "title": "Permalink to ↩️ reply to @wesley_cook@fosstodon.org",
+      "text": "\n\t\t\t\t\t↩️ reply to @wesley_cook@fosstodon.org\t\t\t\t"
     },
-    "http://brow.sh/": {
+    "https://starrwulfe.xyz/tag/gwinnettcounty/": {
       "rels": [
-        "noopener",
-        "noreferrer"
+        "tag"
       ],
-      "text": "browsh"
+      "text": "#GwinnettCounty"
     },
-    "https://github.com/akirk/friends": {
+    "https://starrwulfe.xyz/tracy-durnell/": {
       "rels": [
-        "noopener",
-        "noreferrer"
+        "bookmark"
       ],
-      "text": "Friends"
+      "title": "Permalink to in reply to notes.tracydurnell.com",
+      "text": "\n\t\t\t\t\tin reply to notes.tracydurnell.com\t\t\t\t"
     },
-    "http://github.com/jackjamieson2/yarns-microsub-server": {
+    "https://starrwulfe.xyz/13892-2/": {
       "rels": [
-        "noopener",
-        "noreferrer"
+        "bookmark"
       ],
-      "text": "Yarn"
+      "title": "7:21 pm",
+      "text": "February 2, 2023"
     },
-    "https://indieweb.org/activitypub": {
+    "https://starrwulfe.xyz/reply-to-matthewhowell/": {
       "rels": [
-        "noopener",
-        "noreferrer"
+        "bookmark"
       ],
-      "text": "webmention"
-    },
-    "https://david.shanske.com/": {
-      "rels": [
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "David Shanske"
-    },
-    "https://indieweb.org/microsub": {
-      "rels": [
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "microsub"
+      "title": "Permalink to ↩️ @matthewhowell@Indieweb.Social",
+      "text": "\n\t\t\t\t\t↩️ @matthewhowell@Indieweb.Social\t\t\t\t"
     },
     "https://starrwulfe.xyz/12721-2/": {
       "rels": [
@@ -1621,69 +1466,13 @@
       "title": "12:31 am",
       "text": "February 1, 2023"
     },
-    "https://starrwulfe.xyz/12641-2/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "10:26 pm",
-      "text": "January 31, 2023"
-    },
-    "https://starrwulfe.xyz/notes-on-migrating-a-wordpress-site-to-eleventy/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "10:08 pm",
-      "text": "January 31, 2023"
-    },
-    "https://starrwulfe.xyz/adding-webmentions-to-your-site/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Permalink to Adding Webmentions to Your Site",
-      "text": "\n\t\t\t\t\tAdding Webmentions to Your Site\t\t\t\t"
-    },
-    "https://starrwulfe.xyz/tales-from-the-bitface-version-4-0/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Permalink to – Tales from the Bitface (version 4.0)",
-      "text": "\n\t\t\t\t\t– Tales from the Bitface (version 4.0)\t\t\t\t"
-    },
-    "https://starrwulfe.xyz/12579-2/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "7:00 pm",
-      "text": "January 31, 2023"
-    },
-    "https://starrwulfe.xyz/11916-2/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "7:47 pm",
-      "text": "January 30, 2023"
-    },
-    "https://starrwulfe.xyz/replied-tapbots-social-paul-109780940519434108/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "7:29 pm",
-      "text": "January 30, 2023"
-    },
-    "https://starrwulfe.xyz/relearning-css/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "6:24 pm",
-      "text": "January 30, 2023"
-    },
     "https://wordpress.org/": {
       "rels": [
         "generator"
       ],
       "text": "WordPress"
     },
-    "https://starrwulfe.xyz/wp-content/uploads/so-css/so-css-autonomie.css?ver=1675208698": {
+    "https://starrwulfe.xyz/wp-content/uploads/so-css/so-css-autonomie.css?ver=1675399502": {
       "rels": [
         "stylesheet"
       ],

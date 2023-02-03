@@ -5,8 +5,26 @@
         "h-card"
       ],
       "properties": {
+        "name": [
+          "Zinzy Waleson Geene"
+        ],
+        "family-name": [
+          "Waleson Geene"
+        ],
+        "url": [
+          "https://www.zinzy.website/zinzy.website"
+        ],
         "locality": [
           "Amsterdam"
+        ],
+        "country-name": [
+          "The Netherlands"
+        ],
+        "job-title": [
+          "Design Manager"
+        ],
+        "gender-identity": [
+          "Non-binary"
         ]
       }
     }
@@ -30,11 +48,11 @@
       "https://www.zinzy.website/assets/img/site.webmanifest"
     ],
     "stylesheet": [
-      "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css",
       "https://www.zinzy.website/styles.css"
     ],
     "alternate": [
-      "https://www.zinzy.website/feed.xml"
+      "https://www.zinzy.website/feed.xml",
+      "https://www.zinzy.website/micro.xml"
     ],
     "me": [
       "https://github.com/zinzy",
@@ -59,6 +77,12 @@
     ],
     "pingback": [
       "https://webmention.io/www.zinzy.website/xmlrpc"
+    ],
+    "noopener": [
+      "https://www.linkedin.com/in/zinzy/"
+    ],
+    "noreferrer": [
+      "https://www.linkedin.com/in/zinzy/"
     ]
   },
   "rel-urls": {
@@ -100,17 +124,19 @@
         "manifest"
       ]
     },
-    "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css": {
-      "rels": [
-        "stylesheet"
-      ]
-    },
     "https://www.zinzy.website/styles.css": {
       "rels": [
         "stylesheet"
       ]
     },
     "https://www.zinzy.website/feed.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "RSS",
+      "type": "application/rss+xml"
+    },
+    "https://www.zinzy.website/micro.xml": {
       "rels": [
         "alternate"
       ],
@@ -166,6 +192,13 @@
       "rels": [
         "pingback"
       ]
+    },
+    "https://www.linkedin.com/in/zinzy/": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "@zinzy"
     }
   }
 }

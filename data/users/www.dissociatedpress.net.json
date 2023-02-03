@@ -4,11 +4,8 @@
     "profile": [
       "http://gmpg.org/xfn/11"
     ],
-    "canonical": [
-      "https://dissociatedpress.net/"
-    ],
-    "next": [
-      "https://dissociatedpress.net/page/2/"
+    "pingback": [
+      "https://dissociatedpress.net/xmlrpc.php"
     ],
     "dns-prefetch": [
       "https://fonts-api.wp.com/",
@@ -30,10 +27,10 @@
       "https://dissociatedpress.net/comments/feed/"
     ],
     "stylesheet": [
-      "https://dissociatedpress.net/_static/??-eJyVU1tOwzAQvBDuKkJA+UD8VOIAPYFjr8K2G9vyrhVyexz6IKhKVP4y9sx4PN4MybgYFIOCfmKPAopfOiSTcgQrgirgRCAOvHE2xyLIm57Cpi4+DL/ixKWjINCVClvMHbSF2EPL0R0NU5ttHkF0ZFySsh1jUdNl8n+JFBwXX6MdBHr0ZJFr0qqcg1TlmA1jZ904T7iorntzvHYrF3/uIeBJ9BTOXNZMc3PSVJjj2h45c2r1P5W52KcYKkPW+7qGup67w4TBY3BUwUfcWe9H2E8ecvZmqyi65HhATdYdoY++TJrLg4MMlGq5bQl+Oc+i+rxhrvNzp4ESozedZcY6OyvoXkOmIy6Uejv8d9Jm/0gNs/bOlzQT9fw9Ud/7t+b55anZPr42229b6V0N",
+      "https://dissociatedpress.net/_static/??-eJyNUkFOwzAQ/BCuFSGgHBCXSjyAFzjrxWy7sS2vrSi8HoemVUnlwi1jz4wnsztGBcFn9FlHLo686D3maOCgh2ALo2jyH+QpoxJIgfmEpw2I3I3Xelcq7DE53Rdiq3sOcFBMfTJp0pInxpaUzRRKVi6R/U0kD1xsDbMXPaAlg4zDrLwEscoxKUZnYNoM5P9U17tLfKlZR4Pw8x+iLUk+hlOnM9VdvVSxBjYiBCp/Vne5Zb6uDMIQg68Mud3XOdT53R1G9BY9UAVvYWesnfT77CGLN5uMkluO6+GDSaEIspaRYi23L9628zTVy4U6HfzXIBOjVc4wY92dG+i/hkwHbJR6HJOGIjkM9GX6OuFaryNubO0i8DjKzHOYWsx1mnk7lu+Z+jq8dI9PD932/rnbfgPRGV83",
       "https://dissociatedpress.net/wp-includes/css/dashicons.min.css?ver=6.1.1",
-      "https://fonts-api.wp.com/css?family=Domine:400,700|Oswald:400,700|Patua+One|Frank+Ruhl+Libre:400,700&display=swap",
-      "https://fonts-api.wp.com/css?family=Open+Sans:400,400i,700,700i|Roboto:400,400i,700,700i&display=swap"
+      "https://fonts-api.wp.com/css?family=Source+Sans+Pro%3Aital%2Cwght%400%2C400%3B0%2C600%3B1%2C400%3B1%2C600&display=swap&ver=6.1.1",
+      "https://fonts-api.wp.com/css?family=Roboto%3A300%2C400%2C500%2C700%2C900"
     ],
     "https://api.w.org/": [
       "https://dissociatedpress.net/wp-json/"
@@ -54,10 +51,8 @@
     "apple-touch-icon": [
       "https://i0.wp.com/dissociatedpress.net/wp-content/uploads/2021/02/cropped-screenshot-from-2021-02-12-11-32-26.png?fit=180%2C180&ssl=1"
     ],
-    "home": [
-      "https://dissociatedpress.net/"
-    ],
     "bookmark": [
+      "https://dissociatedpress.net/2023/02/02/can-we-get-ais-to-work-the-dmv/",
       "https://dissociatedpress.net/2023/02/01/quick-links-middle-ages-cat-names-turkish-funk-java-price-increases/",
       "https://dissociatedpress.net/2023/01/31/con-todo-el-mundo-khruangbin/",
       "https://dissociatedpress.net/2023/01/30/poking-at-distrobox/",
@@ -66,8 +61,7 @@
       "https://dissociatedpress.net/2023/01/27/deep-dive-into-the-dune-font-davison-art-nouveau/",
       "https://dissociatedpress.net/2023/01/26/coming-soon-instrumental-album-from-robyn-hitchcock/",
       "https://dissociatedpress.net/2023/01/25/how-have-your-social-media-habits-changed-since-the-twitter-takeover/",
-      "https://dissociatedpress.net/2023/01/24/creating-slides-with-markdown-using-marp/",
-      "https://dissociatedpress.net/2023/01/23/monday-fluffs/"
+      "https://dissociatedpress.net/2023/01/24/creating-slides-with-markdown-using-marp/"
     ],
     "me": [
       "https://mastodon.social/@jzb"
@@ -97,7 +91,14 @@
       "https://indyweek.com/",
       "http://blort.meepzorp.com/",
       "https://theoldreader.com/profile/jzb",
-      "https://publicdomainreview.org/"
+      "https://publicdomainreview.org/",
+      "https://wordpress.org/"
+    ],
+    "home": [
+      "https://dissociatedpress.net/"
+    ],
+    "noreferrer": [
+      "https://wordpress.org/"
     ]
   },
   "rel-urls": {
@@ -106,14 +107,9 @@
         "profile"
       ]
     },
-    "https://dissociatedpress.net/": {
+    "https://dissociatedpress.net/xmlrpc.php": {
       "rels": [
-        "canonical"
-      ]
-    },
-    "https://dissociatedpress.net/page/2/": {
-      "rels": [
-        "next"
+        "pingback"
       ]
     },
     "https://fonts-api.wp.com/": {
@@ -185,7 +181,7 @@
       "title": "Dissociated Press » Comments Feed",
       "type": "application/rss+xml"
     },
-    "https://dissociatedpress.net/_static/??-eJyVU1tOwzAQvBDuKkJA+UD8VOIAPYFjr8K2G9vyrhVyexz6IKhKVP4y9sx4PN4MybgYFIOCfmKPAopfOiSTcgQrgirgRCAOvHE2xyLIm57Cpi4+DL/ixKWjINCVClvMHbSF2EPL0R0NU5ttHkF0ZFySsh1jUdNl8n+JFBwXX6MdBHr0ZJFr0qqcg1TlmA1jZ904T7iorntzvHYrF3/uIeBJ9BTOXNZMc3PSVJjj2h45c2r1P5W52KcYKkPW+7qGup67w4TBY3BUwUfcWe9H2E8ecvZmqyi65HhATdYdoY++TJrLg4MMlGq5bQl+Oc+i+rxhrvNzp4ESozedZcY6OyvoXkOmIy6Uejv8d9Jm/0gNs/bOlzQT9fw9Ud/7t+b55anZPr42229b6V0N": {
+    "https://dissociatedpress.net/_static/??-eJyNUkFOwzAQ/BCuFSGgHBCXSjyAFzjrxWy7sS2vrSi8HoemVUnlwi1jz4wnsztGBcFn9FlHLo686D3maOCgh2ALo2jyH+QpoxJIgfmEpw2I3I3Xelcq7DE53Rdiq3sOcFBMfTJp0pInxpaUzRRKVi6R/U0kD1xsDbMXPaAlg4zDrLwEscoxKUZnYNoM5P9U17tLfKlZR4Pw8x+iLUk+hlOnM9VdvVSxBjYiBCp/Vne5Zb6uDMIQg68Mud3XOdT53R1G9BY9UAVvYWesnfT77CGLN5uMkluO6+GDSaEIspaRYi23L9628zTVy4U6HfzXIBOjVc4wY92dG+i/hkwHbJR6HJOGIjkM9GX6OuFaryNubO0i8DjKzHOYWsx1mnk7lu+Z+jq8dI9PD932/rnbfgPRGV83": {
       "rels": [
         "stylesheet"
       ],
@@ -198,13 +194,13 @@
       ],
       "media": "all"
     },
-    "https://fonts-api.wp.com/css?family=Domine:400,700|Oswald:400,700|Patua+One|Frank+Ruhl+Libre:400,700&display=swap": {
+    "https://fonts-api.wp.com/css?family=Source+Sans+Pro%3Aital%2Cwght%400%2C400%3B0%2C600%3B1%2C400%3B1%2C600&display=swap&ver=6.1.1": {
       "rels": [
         "stylesheet"
       ],
       "media": "all"
     },
-    "https://fonts-api.wp.com/css?family=Open+Sans:400,400i,700,700i|Roboto:400,400i,700,700i&display=swap": {
+    "https://fonts-api.wp.com/css?family=Roboto%3A300%2C400%2C500%2C700%2C900": {
       "rels": [
         "stylesheet"
       ],
@@ -248,65 +244,75 @@
         "apple-touch-icon"
       ]
     },
+    "https://dissociatedpress.net/2023/02/02/can-we-get-ais-to-work-the-dmv/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Can we get AIs to work the DMV?",
+      "text": "Can we get AIs to work the DMV?"
+    },
     "https://dissociatedpress.net/2023/02/01/quick-links-middle-ages-cat-names-turkish-funk-java-price-increases/": {
       "rels": [
         "bookmark"
       ],
+      "title": "Quick links: Middle Ages cat names, Turkish Funk, Java price increases…",
       "text": "Quick links: Middle Ages cat names, Turkish Funk, Java price increases…"
     },
     "https://dissociatedpress.net/2023/01/31/con-todo-el-mundo-khruangbin/": {
       "rels": [
         "bookmark"
       ],
+      "title": "“Con Todo El Mundo” – Khruangbin",
       "text": "“Con Todo El Mundo” – Khruangbin"
     },
     "https://dissociatedpress.net/2023/01/30/poking-at-distrobox/": {
       "rels": [
         "bookmark"
       ],
+      "title": "Poking at Distrobox",
       "text": "Poking at Distrobox"
     },
     "https://dissociatedpress.net/2023/01/29/celebrating-bubbys-gotcha-day/": {
       "rels": [
         "bookmark"
       ],
+      "title": "Celebrating Bubby’s gotcha day",
       "text": "Celebrating Bubby’s gotcha day"
     },
     "https://dissociatedpress.net/2023/01/28/macroblank-plundered-vaporwave-instrumentals-to-work-or-relax-to/": {
       "rels": [
         "bookmark"
       ],
+      "title": "Macroblank: plundered vaporwave instrumentals to work or relax to",
       "text": "Macroblank: plundered vaporwave instrumentals to work or relax to"
     },
     "https://dissociatedpress.net/2023/01/27/deep-dive-into-the-dune-font-davison-art-nouveau/": {
       "rels": [
         "bookmark"
       ],
+      "title": "Deep-dive into the “Dune” font, Davison Art Nouveau",
       "text": "Deep-dive into the “Dune” font, Davison Art Nouveau"
     },
     "https://dissociatedpress.net/2023/01/26/coming-soon-instrumental-album-from-robyn-hitchcock/": {
       "rels": [
         "bookmark"
       ],
+      "title": "Coming soon: Instrumental album from Robyn Hitchcock",
       "text": "Coming soon: Instrumental album from Robyn Hitchcock"
     },
     "https://dissociatedpress.net/2023/01/25/how-have-your-social-media-habits-changed-since-the-twitter-takeover/": {
       "rels": [
         "bookmark"
       ],
+      "title": "How have your social media habits changed since the Twitter takeover?",
       "text": "How have your social media habits changed since the Twitter takeover?"
     },
     "https://dissociatedpress.net/2023/01/24/creating-slides-with-markdown-using-marp/": {
       "rels": [
         "bookmark"
       ],
+      "title": "Creating slides with Markdown using Marp",
       "text": "Creating slides with Markdown using Marp"
-    },
-    "https://dissociatedpress.net/2023/01/23/monday-fluffs/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Monday fluffs"
     },
     "https://mastodon.social/@jzb": {
       "rels": [
@@ -474,6 +480,19 @@
       ],
       "title": "Dedicated to the exploration of curious and compelling works from the history of art, literature, and ideas",
       "text": "The Public Domain Review"
+    },
+    "https://dissociatedpress.net/": {
+      "rels": [
+        "home"
+      ],
+      "text": "\n\t\t\t\t\t\tDissociated Press\t\t\t\t\t"
+    },
+    "https://wordpress.org/": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "Proudly powered by WordPress"
     }
   }
 }
