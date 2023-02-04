@@ -42,6 +42,47 @@
       "properties": {
         "content": [
           {
+            "html": "<p>Going to San Diego. brb</p>",
+            "value": "Going to San Diego. brb"
+          }
+        ],
+        "name": [
+          "Going to San Diego. brb"
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "50.83537933"
+              ],
+              "longitude": [
+                "-0.14166483"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/notes/19876"
+        ],
+        "published": [
+          "2023-02-03T11:11:32Z"
+        ],
+        "syndication": [
+          "https://mastodon.social/@adactio/109800501617352875"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
             "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://web.dev/learn/images/\">\nLearn Images\n</a>\n</h3>\n\n<p>Mat has written this free course for you all about images on the web. Covering image formats, responsive images, and workflows, this is one to keep on speed dial.</p>",
             "value": "Learn Images\n\n\n\nMat has written this free course for you all about images on the web. Covering image formats, responsive images, and workflows, this is one to keep on speed dial."
           }
@@ -1008,58 +1049,6 @@
     },
     {
       "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "photo": [
-          {
-            "value": "https://adactio.com/images/uploaded/19849/small.jpg",
-            "srcset": {
-              "320w": "https://adactio.com/images/uploaded/19849/small.jpg",
-              "480w": "https://adactio.com/images/uploaded/19849/medium.jpg",
-              "800w": "https://adactio.com/images/uploaded/19849/large.jpg"
-            },
-            "alt": "Checked in at Tørstigbar. Drinking Weird Weather by Mikkeller — with Jessica"
-          }
-        ],
-        "content": [
-          {
-            "html": "<p>Checked in at Tørstigbar. Drinking Weird Weather by Mikkeller — with Jessica</p>",
-            "value": "Checked in at Tørstigbar. Drinking Weird Weather by Mikkeller — with Jessica"
-          }
-        ],
-        "name": [
-          "Checked in at Tørstigbar. Drinking Weird Weather by Mikkeller — with Jessica"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.82171100"
-              ],
-              "longitude": [
-                "-0.13438800"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/notes/19849"
-        ],
-        "published": [
-          "2023-01-22T17:10:17Z"
-        ],
-        "syndication": [
-          "https://www.swarmapp.com/user/112073/checkin/63cd6de7ac7a532d16a10701"
-        ]
-      }
-    },
-    {
-      "type": [
         "h-card"
       ],
       "properties": {
@@ -1799,6 +1788,7 @@
       "https://adactio.com/includes/css/print.css"
     ],
     "bookmark": [
+      "https://adactio.com/notes/19876",
       "https://adactio.com/links/19874",
       "https://adactio.com/links/19873",
       "https://adactio.com/links/19872",
@@ -1817,8 +1807,18 @@
       "https://adactio.com/journal/19855",
       "https://adactio.com/links/19854",
       "https://adactio.com/links/19852",
-      "https://adactio.com/journal/19851",
-      "https://adactio.com/notes/19849"
+      "https://adactio.com/journal/19851"
+    ],
+    "syndication": [
+      "https://mastodon.social/@adactio/109800501617352875",
+      "https://www.swarmapp.com/user/112073/checkin/63dacc27051b07398a2ea395",
+      "https://mastodon.social/@adactio/109784856436485166",
+      "https://www.swarmapp.com/user/112073/checkin/63d69aa8b835586699363592",
+      "https://www.swarmapp.com/user/112073/checkin/63d2e6b0c1d9b050cb00a9a2",
+      "https://www.swarmapp.com/user/112073/checkin/63d192d910575e01818d2a96",
+      "https://mastodon.social/@adactio/109745442075237133",
+      "https://adactio.medium.com/7883c23afa8c",
+      "https://adactio.medium.com/354560b6d799"
     ],
     "tag": [
       "https://adactio.com/tags/responsive",
@@ -1899,17 +1899,6 @@
       "https://adactio.com/tags/drones",
       "https://adactio.com/tags/science",
       "https://adactio.com/tags/internet"
-    ],
-    "syndication": [
-      "https://www.swarmapp.com/user/112073/checkin/63dacc27051b07398a2ea395",
-      "https://mastodon.social/@adactio/109784856436485166",
-      "https://www.swarmapp.com/user/112073/checkin/63d69aa8b835586699363592",
-      "https://www.swarmapp.com/user/112073/checkin/63d2e6b0c1d9b050cb00a9a2",
-      "https://www.swarmapp.com/user/112073/checkin/63d192d910575e01818d2a96",
-      "https://mastodon.social/@adactio/109745442075237133",
-      "https://adactio.medium.com/7883c23afa8c",
-      "https://adactio.medium.com/354560b6d799",
-      "https://www.swarmapp.com/user/112073/checkin/63cd6de7ac7a532d16a10701"
     ],
     "next": [
       "https://adactio.com/?start=20"
@@ -2299,6 +2288,18 @@
         "me"
       ],
       "text": "music"
+    },
+    "https://adactio.com/notes/19876": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n11:11am\n\n"
+    },
+    "https://mastodon.social/@adactio/109800501617352875": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "Mastodon"
     },
     "https://adactio.com/links/19874": {
       "rels": [
@@ -2929,18 +2930,6 @@
         "syndication"
       ],
       "text": "Medium"
-    },
-    "https://adactio.com/notes/19849": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n5:10pm\n\n"
-    },
-    "https://www.swarmapp.com/user/112073/checkin/63cd6de7ac7a532d16a10701": {
-      "rels": [
-        "syndication"
-      ],
-      "text": "Swarm"
     },
     "https://adactio.com/?start=20": {
       "rels": [

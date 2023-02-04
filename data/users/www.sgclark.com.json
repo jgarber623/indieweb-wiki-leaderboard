@@ -59,7 +59,16 @@
       "https://www.sgclark.com/blog/wp-includes/wlwmanifest.xml"
     ],
     "shortlink": [
-      "https://www.sgclark.com/"
+      "https://wp.me/7ejiJ"
+    ],
+    "authorization_endpoint": [
+      "https://www.sgclark.com/wp-json/indieauth/1.0/auth"
+    ],
+    "token_endpoint": [
+      "https://www.sgclark.com/wp-json/indieauth/1.0/token"
+    ],
+    "indieauth-metadata": [
+      "https://www.sgclark.com/wp-json/indieauth/1.0/metadata"
     ],
     "icon": [
       "https://www.sgclark.com/blog/wp-content/uploads/2020/06/image-1.jpg"
@@ -69,7 +78,9 @@
     ],
     "me": [
       "https://mastodon.social/@sgclark",
-      "https://gardenstate.social/@sgclark"
+      "https://gardenstate.social/@sgclark",
+      "https://github.com/sgclark",
+      "https://www.twitter.com/sgclark"
     ],
     "home": [
       "https://www.sgclark.com/"
@@ -752,6 +763,26 @@
       ],
       "type": "application/wlwmanifest+xml"
     },
+    "https://wp.me/7ejiJ": {
+      "rels": [
+        "shortlink"
+      ]
+    },
+    "https://www.sgclark.com/wp-json/indieauth/1.0/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://www.sgclark.com/wp-json/indieauth/1.0/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://www.sgclark.com/wp-json/indieauth/1.0/metadata": {
+      "rels": [
+        "indieauth-metadata"
+      ]
+    },
     "https://www.sgclark.com/blog/wp-content/uploads/2020/06/image-1.jpg": {
       "rels": [
         "icon"
@@ -769,6 +800,16 @@
       ]
     },
     "https://gardenstate.social/@sgclark": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://github.com/sgclark": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://www.twitter.com/sgclark": {
       "rels": [
         "me"
       ]
@@ -2510,13 +2551,6 @@
         "tag"
       ],
       "text": "global warming"
-    },
-    "https://www.twitter.com/sgclark": {
-      "rels": [
-        "nofollow",
-        "noopener"
-      ],
-      "text": "me"
     },
     "https://www.facebook.com/sgclark": {
       "rels": [
