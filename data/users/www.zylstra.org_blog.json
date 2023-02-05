@@ -10,9 +10,9 @@
         ],
         "url": [
           "https://www.zylstra.org/blog/",
-          "https://indieweb.social/@m2m",
-          "https://zblesk.net/",
-          "https://cagrimmett.com/likes/9d28b9e2ed/"
+          "https://www.zylstra.org/blog/2023/02/wordpress-activitypub-plugin-updated-now-supports-mention/",
+          "https://brucelawson.co.uk/2022/reading-list-286/",
+          "https://indieweb.social/@m2m"
         ],
         "summary": [
           "by Ton Zĳlstra"
@@ -22,9 +22,49 @@
             "html": "by Ton Zĳlstra",
             "value": "by Ton Zĳlstra"
           }
+        ],
+        "bridgy-twitter-content": [
+          "I'm pleased to hear that the EU High Value Data implementation act is fully agreed by the MS. A close two decades and more to get geographic, company and meteorological data available across Europe free of charge. The first mandatory pro-active publishing of open government data across all public sector bodies across the EU."
         ]
       },
       "children": [
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "WordPress ActivityPub Plugin Updated, Now Supports @Mention"
+            ],
+            "url": [
+              "https://www.zylstra.org/blog/2023/02/wordpress-activitypub-plugin-updated-now-supports-mention/",
+              "https://www.zylstra.org/blog/2023/02/wordpress-activitypub-plugin-updated-now-supports-mention/"
+            ],
+            "updated": [
+              "2023-02-04T18:30:30+01:00"
+            ],
+            "published": [
+              "2023-02-04T18:30:30+01:00"
+            ],
+            "author": [
+              "Ton Zijlstra",
+              "Ton Zijlstra"
+            ],
+            "content": [
+              {
+                "html": "<p>The <a href=\"https://wordpress.org/plugins/activitypub/\">WordPress ActivityPub plugin</a> by <a href=\"https://notiz.blog/\">Matthias Pfefferle</a> has been updated. It now <a href=\"https://jeremy.hu/mention-activitypub-users-inside-wordpress/\">allows you to @mention ActivityPub users</a> and they will be notified of the mention in your blogpost, through ActivityPub.</p>\n<p>This is useful. Yet, I’m holding out on using the plugin myself until three things are possible:</p>\n<ul>\n<li>Set the user name of the ActivityPub account: Now the username is the login name of the user doing the posting. I recognise using WP user names is a straightforward way of turning WP into an ActivityPub client, and prevents having to add addditional stuff to the database. As I use non-obvious user names for additional website security, having those exposed as ActivityPub users is undesirable however.</li>\n<li>Refuse follow requests: currently the plugin allows follows, and defaults to accepting all follows. As on my separate AP account I want to decide personally on follow requests.</li>\n<li>Determine flexibly which postings get shared through ActivityPub, and through which ActivityPub user account. The current set-up is that all postings get shared through ActivityPub. I’d rather be able to determine not just on a post by post basis what gets shared but also to have specific categories of postings to be shared through a specific account.</li>\n</ul>\n<p>I want to actively use the affordances ActivityPub allows on top of those WordPress as blogging tool provides. For me that is the ability to use the different activity types that AP can support, and to use dealing with followers and follows to selectively disclose content to different groups of people.</p>\n<p>My current usecase for this is to have a separate AP account that <a href=\"https://www.zylstra.org/blog/2022/10/adding-check-in-and-dopplr-style-postings/\">shares my travel plans</a> (posted in an unlisted category on my site) with accepted followers. The first part requires selectively sharing a category of postings, the second part doing so to a group of accepted followers on an AP account that is meant for just this type of postings and not my general AP account.</p>\n<p>The plugin will develop in this direction, but is not there yet. I am slowly going through <a href=\"https://plugins.trac.wordpress.org/browser/activitypub?order=name\">the code of the plugin</a> myself to understand its architecture and choices. Perhaps it will give me an idea either on how to build on its core to create the functionality locally I want for myself, or maybe (though my coding skills are likely not adequate for it) add to the plugin itself.</p>",
+                "value": "The WordPress ActivityPub plugin by Matthias Pfefferle has been updated. It now allows you to @mention ActivityPub users and they will be notified of the mention in your blogpost, through ActivityPub.\nThis is useful. Yet, I’m holding out on using the plugin myself until three things are possible:\n\nSet the user name of the ActivityPub account: Now the username is the login name of the user doing the posting. I recognise using WP user names is a straightforward way of turning WP into an ActivityPub client, and prevents having to add addditional stuff to the database. As I use non-obvious user names for additional website security, having those exposed as ActivityPub users is undesirable however.\nRefuse follow requests: currently the plugin allows follows, and defaults to accepting all follows. As on my separate AP account I want to decide personally on follow requests.\nDetermine flexibly which postings get shared through ActivityPub, and through which ActivityPub user account. The current set-up is that all postings get shared through ActivityPub. I’d rather be able to determine not just on a post by post basis what gets shared but also to have specific categories of postings to be shared through a specific account.\n\nI want to actively use the affordances ActivityPub allows on top of those WordPress as blogging tool provides. For me that is the ability to use the different activity types that AP can support, and to use dealing with followers and follows to selectively disclose content to different groups of people.\nMy current usecase for this is to have a separate AP account that shares my travel plans (posted in an unlisted category on my site) with accepted followers. The first part requires selectively sharing a category of postings, the second part doing so to a group of accepted followers on an AP account that is meant for just this type of postings and not my general AP account.\nThe plugin will develop in this direction, but is not there yet. I am slowly going through the code of the plugin myself to understand its architecture and choices. Perhaps it will give me an idea either on how to build on its core to create the functionality locally I want for myself, or maybe (though my coding skills are likely not adequate for it) add to the plugin itself."
+              }
+            ],
+            "category": [
+              "activitypub",
+              "ap",
+              "dapplr",
+              "dopplr"
+            ]
+          },
+          "id": "post-22768"
+        },
         {
           "type": [
             "h-entry"
@@ -210,42 +250,6 @@
         },
         {
           "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Facebook mogelijk in de ban bij overheid"
-            ],
-            "url": [
-              "https://www.zylstra.org/blog/2022/11/facebook-mogelijk-in-de-ban-bij-overheid/",
-              "https://www.zylstra.org/blog/2022/11/facebook-mogelijk-in-de-ban-bij-overheid/"
-            ],
-            "updated": [
-              "2022-11-06T10:18:31+01:00"
-            ],
-            "published": [
-              "2022-11-06T10:18:31+01:00"
-            ],
-            "author": [
-              "Ton Zijlstra",
-              "Ton Zijlstra"
-            ],
-            "content": [
-              {
-                "html": "<p>De <a href=\"https://www.welingelichtekringen.nl/anp/kabinet-overweegt-om-geen-gebruik-meer-te-maken-van-facebook\">Nederlandse overheid gaat mogelijk van Facebook af</a>. In Duitsland is het <a href=\"https://www.focus.de/politik/deutschland/unzureichende-datenschutz-bestimmungen-bundesdatenschutzbeauftragter-fordert-facebook-verbot-fuer-regierung-und-behoerden_id_13445447.html\">overheidsgebruik van Facebook door de Duitse autoriteit persoonsgegevens stilgelegd</a> in 2021, omdat Meta zich (<a href=\"https://blogs.harvard.edu/doc/2018/05/12/gdpr/\">uiteraard</a>) niet aan de AVG houdt. De AP doet dat soort uitspraken sinds 2018 niet meer zelf, omdat Facebook in Ierland is gevestigd. De Duitse instantie heeft dat soort consideratie niet, en gaat uit van een eigen verantwoordelijkheid. In plaats van <a href=\"https://www.zylstra.org/blog/2021/12/noyb-documents-showing-irish-dpa-unfit-for-purpose/\">veel te lang wachten op een Iers oordeel</a> over Facebook, steekt ze de hand in eigen boezem en stelt dat de eigen overheid in ieder geval niet aan de eigen AVG verplichtingen kan voldoen door Facebook pages te hebben. </p>\n<p>Staatssecretaris van Digitalisering Alexandra van Huffelen bereidt nu mogelijk een besluit voor langs dezelfde lijnen. Terecht lijkt me. Meta houdt zich zelf niet aan de AVG, en bovendien is de algemene uitwisseling van Europese persoonsgegevens met de VS geheel niet juridisch gedekt op dit moment.</p>\n<p>De overheid moet zelf het goede voorbeeld geven bij online interactie met burgers en de omgang met eigen gegevens. Dit geldt voor Meta, voor Twitter, maar ook voor cloud diensten en de Microsoft lock-in waar de overheid zich grotendeels in bevindt. Facebook zelf niet meer gebruiken is een bescheiden eerste signaal, dat al verrassend lastig lijkt voor de overheid om helder af te geven.</p>\n<p>Ik hoop dat de staatssecretaris de knoop snel doorhakt.</p>\n<blockquote>\n<p><span lang=\"de\">Ein datenschutzkonformer Betrieb einer Facebook-Fanpage sei nicht möglich, schrieb Kelber in einem Brief an alle Bundesministerien und obersten Bundesbehörden.</span></p>\n<p><a href=\"https://www.bfdi.bund.de/DE/Home/home_node.html\">Bundesdatenschutzbeauftragte</a></p>\n</blockquote>",
-                "value": "De Nederlandse overheid gaat mogelijk van Facebook af. In Duitsland is het overheidsgebruik van Facebook door de Duitse autoriteit persoonsgegevens stilgelegd in 2021, omdat Meta zich (uiteraard) niet aan de AVG houdt. De AP doet dat soort uitspraken sinds 2018 niet meer zelf, omdat Facebook in Ierland is gevestigd. De Duitse instantie heeft dat soort consideratie niet, en gaat uit van een eigen verantwoordelijkheid. In plaats van veel te lang wachten op een Iers oordeel over Facebook, steekt ze de hand in eigen boezem en stelt dat de eigen overheid in ieder geval niet aan de eigen AVG verplichtingen kan voldoen door Facebook pages te hebben. \nStaatssecretaris van Digitalisering Alexandra van Huffelen bereidt nu mogelijk een besluit voor langs dezelfde lijnen. Terecht lijkt me. Meta houdt zich zelf niet aan de AVG, en bovendien is de algemene uitwisseling van Europese persoonsgegevens met de VS geheel niet juridisch gedekt op dit moment.\nDe overheid moet zelf het goede voorbeeld geven bij online interactie met burgers en de omgang met eigen gegevens. Dit geldt voor Meta, voor Twitter, maar ook voor cloud diensten en de Microsoft lock-in waar de overheid zich grotendeels in bevindt. Facebook zelf niet meer gebruiken is een bescheiden eerste signaal, dat al verrassend lastig lijkt voor de overheid om helder af te geven.\nIk hoop dat de staatssecretaris de knoop snel doorhakt.\nEin datenschutzkonformer Betrieb einer Facebook-Fanpage sei nicht möglich, schrieb Kelber in einem Brief an alle Bundesministerien und obersten Bundesbehörden.\nBundesdatenschutzbeauftragte"
-              }
-            ],
-            "category": [
-              "avg",
-              "facebook",
-              "gdpr"
-            ]
-          },
-          "id": "post-22507"
-        },
-        {
-          "type": [
             "h-card"
           ],
           "properties": {
@@ -335,17 +339,21 @@
       "https://www.zylstra.org/blog/page/2/"
     ],
     "bookmark": [
+      "https://www.zylstra.org/blog/2023/02/wordpress-activitypub-plugin-updated-now-supports-mention/",
       "https://www.zylstra.org/blog/2023/02/eu-commission-to-closely-monitor-gdpr-cases/",
       "https://www.zylstra.org/blog/2023/01/podcast-datadriftig-over-mijn-open-data-werk/",
       "https://www.zylstra.org/blog/2022/12/annotated-generated-by-artslyz-not-a-two-month-experiment/",
       "https://www.zylstra.org/blog/2022/11/mastodon-timeline-fatigue-while-ap-and-governance-energy/",
-      "https://www.zylstra.org/blog/2022/11/eu-high-value-data-law-is-finally-done/",
-      "https://www.zylstra.org/blog/2022/11/facebook-mogelijk-in-de-ban-bij-overheid/"
+      "https://www.zylstra.org/blog/2022/11/eu-high-value-data-law-is-finally-done/"
     ],
     "author": [
       "https://www.zylstra.org/blog/about-me/"
     ],
     "category": [
+      "https://www.zylstra.org/blog/category/metablogging/",
+      "https://www.zylstra.org/blog/category/social-networking/",
+      "https://www.zylstra.org/blog/category/technology/",
+      "https://www.zylstra.org/blog/category/travel/",
       "https://www.zylstra.org/blog/category/eudata/",
       "https://www.zylstra.org/blog/category/data-governance/",
       "https://www.zylstra.org/blog/category/ethics/",
@@ -354,15 +362,20 @@
       "https://www.zylstra.org/blog/category/open-data/",
       "https://www.zylstra.org/blog/category/opendata/",
       "https://www.zylstra.org/blog/category/learning/",
-      "https://www.zylstra.org/blog/category/metablogging/",
       "https://www.zylstra.org/blog/category/agency/",
       "https://www.zylstra.org/blog/category/distridigitrans/",
       "https://www.zylstra.org/blog/category/personaltools/",
-      "https://www.zylstra.org/blog/category/practices/",
-      "https://www.zylstra.org/blog/category/social-networking/",
-      "https://www.zylstra.org/blog/category/eaap/"
+      "https://www.zylstra.org/blog/category/practices/"
     ],
     "tag": [
+      "https://www.zylstra.org/blog/category/metablogging/",
+      "https://www.zylstra.org/blog/category/social-networking/",
+      "https://www.zylstra.org/blog/category/technology/",
+      "https://www.zylstra.org/blog/category/travel/",
+      "https://www.zylstra.org/blog/tag/activitypub/",
+      "https://www.zylstra.org/blog/tag/ap/",
+      "https://www.zylstra.org/blog/tag/dapplr/",
+      "https://www.zylstra.org/blog/tag/dopplr/",
       "https://www.zylstra.org/blog/category/eudata/",
       "https://www.zylstra.org/blog/tag/dpa/",
       "https://www.zylstra.org/blog/tag/ec/",
@@ -380,7 +393,6 @@
       "https://www.zylstra.org/blog/tag/podcast/",
       "https://www.zylstra.org/blog/tag/thegreenland/",
       "https://www.zylstra.org/blog/category/learning/",
-      "https://www.zylstra.org/blog/category/metablogging/",
       "https://www.zylstra.org/blog/category/agency/",
       "https://www.zylstra.org/blog/tag/ai/",
       "https://www.zylstra.org/blog/tag/annotation/",
@@ -389,15 +401,10 @@
       "https://www.zylstra.org/blog/category/distridigitrans/",
       "https://www.zylstra.org/blog/category/personaltools/",
       "https://www.zylstra.org/blog/category/practices/",
-      "https://www.zylstra.org/blog/category/social-networking/",
-      "https://www.zylstra.org/blog/tag/activitypub/",
       "https://www.zylstra.org/blog/tag/contactivity/",
       "https://www.zylstra.org/blog/tag/indieweb/",
       "https://www.zylstra.org/blog/tag/mastodon/",
-      "https://www.zylstra.org/blog/tag/euhvdl/",
-      "https://www.zylstra.org/blog/category/eaap/",
-      "https://www.zylstra.org/blog/tag/avg/",
-      "https://www.zylstra.org/blog/tag/facebook/"
+      "https://www.zylstra.org/blog/tag/euhvdl/"
     ],
     "license": [
       "http://creativecommons.org/licenses/by-sa/4.0/"
@@ -412,19 +419,19 @@
       "https://meso.tzyl.nl/"
     ],
     "external": [
-      "https://indieweb.social/@m2m",
-      "https://zblesk.net/",
-      "https://cagrimmett.com/likes/9d28b9e2ed/"
+      "https://www.zylstra.org/blog/2023/02/wordpress-activitypub-plugin-updated-now-supports-mention/",
+      "https://brucelawson.co.uk/2022/reading-list-286/",
+      "https://indieweb.social/@m2m"
     ],
     "nofollow": [
-      "https://indieweb.social/@m2m",
-      "https://zblesk.net/",
-      "https://cagrimmett.com/likes/9d28b9e2ed/"
+      "https://www.zylstra.org/blog/2023/02/wordpress-activitypub-plugin-updated-now-supports-mention/",
+      "https://brucelawson.co.uk/2022/reading-list-286/",
+      "https://indieweb.social/@m2m"
     ],
     "ugc": [
-      "https://indieweb.social/@m2m",
-      "https://zblesk.net/",
-      "https://cagrimmett.com/likes/9d28b9e2ed/"
+      "https://www.zylstra.org/blog/2023/02/wordpress-activitypub-plugin-updated-now-supports-mention/",
+      "https://brucelawson.co.uk/2022/reading-list-286/",
+      "https://indieweb.social/@m2m"
     ],
     "generator": [
       "http://wordpress.org/"
@@ -572,12 +579,12 @@
       ],
       "text": "← Older posts"
     },
-    "https://www.zylstra.org/blog/2023/02/eu-commission-to-closely-monitor-gdpr-cases/": {
+    "https://www.zylstra.org/blog/2023/02/wordpress-activitypub-plugin-updated-now-supports-mention/": {
       "rels": [
         "bookmark"
       ],
-      "title": "Permalink to EU Commission to Closely Monitor GDPR Cases",
-      "text": "EU Commission to Closely Monitor GDPR Cases"
+      "title": "Permalink to WordPress ActivityPub Plugin Updated, Now Supports @Mention",
+      "text": "WordPress ActivityPub Plugin Updated, Now Supports @Mention"
     },
     "https://www.zylstra.org/blog/about-me/": {
       "rels": [
@@ -585,6 +592,65 @@
       ],
       "title": "Ton Zijlstra",
       "text": "Ton Zijlstra"
+    },
+    "https://www.zylstra.org/blog/category/metablogging/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "metablogging"
+    },
+    "https://www.zylstra.org/blog/category/social-networking/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "social networking"
+    },
+    "https://www.zylstra.org/blog/category/technology/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "technology"
+    },
+    "https://www.zylstra.org/blog/category/travel/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "travel"
+    },
+    "https://www.zylstra.org/blog/tag/activitypub/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "activitypub"
+    },
+    "https://www.zylstra.org/blog/tag/ap/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "ap"
+    },
+    "https://www.zylstra.org/blog/tag/dapplr/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "dapplr"
+    },
+    "https://www.zylstra.org/blog/tag/dopplr/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "dopplr"
+    },
+    "https://www.zylstra.org/blog/2023/02/eu-commission-to-closely-monitor-gdpr-cases/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to EU Commission to Closely Monitor GDPR Cases",
+      "text": "EU Commission to Closely Monitor GDPR Cases"
     },
     "https://www.zylstra.org/blog/category/eudata/": {
       "rels": [
@@ -710,13 +776,6 @@
       ],
       "text": "Learning"
     },
-    "https://www.zylstra.org/blog/category/metablogging/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "metablogging"
-    },
     "https://www.zylstra.org/blog/category/agency/": {
       "rels": [
         "category",
@@ -776,19 +835,6 @@
       ],
       "text": "Practices"
     },
-    "https://www.zylstra.org/blog/category/social-networking/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "social networking"
-    },
-    "https://www.zylstra.org/blog/tag/activitypub/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "activitypub"
-    },
     "https://www.zylstra.org/blog/tag/contactivity/": {
       "rels": [
         "tag"
@@ -819,32 +865,6 @@
         "tag"
       ],
       "text": "euhvdl"
-    },
-    "https://www.zylstra.org/blog/2022/11/facebook-mogelijk-in-de-ban-bij-overheid/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Permalink to Facebook mogelijk in de ban bij overheid",
-      "text": "Facebook mogelijk in de ban bij overheid"
-    },
-    "https://www.zylstra.org/blog/category/eaap/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "Ethics as a Practice"
-    },
-    "https://www.zylstra.org/blog/tag/avg/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "avg"
-    },
-    "https://www.zylstra.org/blog/tag/facebook/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "facebook"
     },
     "http://creativecommons.org/licenses/by-sa/4.0/": {
       "rels": [
@@ -893,6 +913,14 @@
       ],
       "text": "Meso WP"
     },
+    "https://brucelawson.co.uk/2022/reading-list-286/": {
+      "rels": [
+        "external",
+        "nofollow",
+        "ugc"
+      ],
+      "text": "Bruce Lawson"
+    },
     "https://indieweb.social/@m2m": {
       "rels": [
         "external",
@@ -900,22 +928,6 @@
         "ugc"
       ],
       "text": "Simone Silvestroni (M2M)"
-    },
-    "https://zblesk.net/": {
-      "rels": [
-        "external",
-        "nofollow",
-        "ugc"
-      ],
-      "text": "zblesk"
-    },
-    "https://cagrimmett.com/likes/9d28b9e2ed/": {
-      "rels": [
-        "external",
-        "nofollow",
-        "ugc"
-      ],
-      "text": "Likes https://www.zylstra.org/blog/2023/01/week-notes-23-04/."
     },
     "http://wordpress.org/": {
       "rels": [
