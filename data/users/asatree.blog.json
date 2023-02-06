@@ -1,5 +1,45 @@
 {
   "items": [],
-  "rels": {},
-  "rel-urls": {}
+  "rels": {
+    "icon": [
+      "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏫</text></svg>"
+    ],
+    "shortcut": [
+      "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏫</text></svg>"
+    ],
+    "canonical": [
+      "https://asatree.blog/"
+    ],
+    "me": [
+      "https://freeradical.zone/@asatree"
+    ],
+    "alternate": [
+      "https://asatree.blog/feed/?type=rss"
+    ]
+  },
+  "rel-urls": {
+    "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏫</text></svg>": {
+      "rels": [
+        "icon",
+        "shortcut"
+      ],
+      "type": "image/svg+xml"
+    },
+    "https://asatree.blog/": {
+      "rels": [
+        "canonical"
+      ]
+    },
+    "https://freeradical.zone/@asatree": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://asatree.blog/feed/?type=rss": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/rss+xml"
+    }
+  }
 }
