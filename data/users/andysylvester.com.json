@@ -12,6 +12,28 @@
           ],
           "properties": {
             "name": [
+              "Demo of MyStatusTool – Twitter using RSS and rssCloud",
+              "Demo of MyStatusTool – Twitter using RSS and rssCloud"
+            ],
+            "content": [
+              {
+                "html": "<div class=\"e-content\">\n<p>I have created a proof of concept for a microblogging tool relying on RSS for data storage and rssCloud for notification. I was motivated to do this to show how rssCloud could be used to support a Twitter-like experience. Also, I was blocked for posting an <a href=\"https://andysylvester.com/2022/12/10/an-unfortunate-exercise-of-editorial-discretion-by-dave-winer/\">innocuous comment</a> on the FeedLand user feed tool, and felt that there needed to be an alternative to that tool for microblog posting. My earlier posts on the development of this tool are <a href=\"https://andysylvester.com/2023/01/16/a-roadmap-for-mystatustool/\">here </a>and <a href=\"https://andysylvester.com/2023/01/31/update-on-mystatustool-development/\">here</a>.</p>\n\n\n\n<p>In this demo app, the basic functions are:</p>\n\n\n\n<ul>\n<li>Ability to make a short post</li>\n<li>When a post is made, a RSS feed is updated, a separate page for the post is created, and the post appears on the home page via Websockets</li>\n<li>The tool provides hosting for the RSS feed and posts created</li>\n<li>The tool can display updates to any RSS feeds that support the rssCloud protocol via Websockets (feeds are listed in a configuration file)</li>\n<li>The contents of the feeds in the configuration file are displayed when the user accesses the page (so they can see what has been posted recently), then any posts with the tool appear at the top of the page</li>\n</ul>\n\n\n\n<p>The tool is set up for a single user and requires some configuration. Please consult the README on the <a href=\"https://github.com/andysylvester/myStatusToolDemo\"><u>Github repo</u></a> for more information if you want to set up the tool for yourself.</p>\n\n\n\n<p>The demo app is available at <a href=\"http://fedwiki.andysylvester.com:443/\">http://fedwiki.andysylvester.com:443/</a>. The contents of the feeds in the configuration file are displayed, along with any recent posts using the demo app. I encourage people to try making posts and see how they appear and how quickly they appear. As posts continue, so will display of updates to the RSS feeds in the configuration file.</p>\n\n\n\n<p>This is a proof of concept, but will be further developed. If you find problems in the tool, or want to suggest features, feel free to create an issue in the <a href=\"https://github.com/andysylvester/myStatusToolDemo\"><u>Github repo</u></a>. Also, I would love it if a few other people try installing it and let me know how it goes…</p>\n</div>\n<div class=\"syndication-links\"></div>",
+                "value": "I have created a proof of concept for a microblogging tool relying on RSS for data storage and rssCloud for notification. I was motivated to do this to show how rssCloud could be used to support a Twitter-like experience. Also, I was blocked for posting an innocuous comment on the FeedLand user feed tool, and felt that there needed to be an alternative to that tool for microblog posting. My earlier posts on the development of this tool are here and here.\n\n\n\nIn this demo app, the basic functions are:\n\n\n\nAbility to make a short postWhen a post is made, a RSS feed is updated, a separate page for the post is created, and the post appears on the home page via WebsocketsThe tool provides hosting for the RSS feed and posts createdThe tool can display updates to any RSS feeds that support the rssCloud protocol via Websockets (feeds are listed in a configuration file)The contents of the feeds in the configuration file are displayed when the user accesses the page (so they can see what has been posted recently), then any posts with the tool appear at the top of the page\n\n\n\nThe tool is set up for a single user and requires some configuration. Please consult the README on the Github repo for more information if you want to set up the tool for yourself.\n\n\n\nThe demo app is available at http://fedwiki.andysylvester.com:443/. The contents of the feeds in the configuration file are displayed, along with any recent posts using the demo app. I encourage people to try making posts and see how they appear and how quickly they appear. As posts continue, so will display of updates to the RSS feeds in the configuration file.\n\n\n\nThis is a proof of concept, but will be further developed. If you find problems in the tool, or want to suggest features, feel free to create an issue in the Github repo. Also, I would love it if a few other people try installing it and let me know how it goes…"
+              },
+              {
+                "html": "<p>I have created a proof of concept for a microblogging tool relying on RSS for data storage and rssCloud for notification. I was motivated to do this to show how rssCloud could be used to support a Twitter-like experience. Also, I was blocked for posting an <a href=\"https://andysylvester.com/2022/12/10/an-unfortunate-exercise-of-editorial-discretion-by-dave-winer/\">innocuous comment</a> on the FeedLand user feed tool, and felt that there needed to be an alternative to that tool for microblog posting. My earlier posts on the development of this tool are <a href=\"https://andysylvester.com/2023/01/16/a-roadmap-for-mystatustool/\">here </a>and <a href=\"https://andysylvester.com/2023/01/31/update-on-mystatustool-development/\">here</a>.</p>\n\n\n\n<p>In this demo app, the basic functions are:</p>\n\n\n\n<ul>\n<li>Ability to make a short post</li>\n<li>When a post is made, a RSS feed is updated, a separate page for the post is created, and the post appears on the home page via Websockets</li>\n<li>The tool provides hosting for the RSS feed and posts created</li>\n<li>The tool can display updates to any RSS feeds that support the rssCloud protocol via Websockets (feeds are listed in a configuration file)</li>\n<li>The contents of the feeds in the configuration file are displayed when the user accesses the page (so they can see what has been posted recently), then any posts with the tool appear at the top of the page</li>\n</ul>\n\n\n\n<p>The tool is set up for a single user and requires some configuration. Please consult the README on the <a href=\"https://github.com/andysylvester/myStatusToolDemo\"><u>Github repo</u></a> for more information if you want to set up the tool for yourself.</p>\n\n\n\n<p>The demo app is available at <a href=\"http://fedwiki.andysylvester.com:443/\">http://fedwiki.andysylvester.com:443/</a>. The contents of the feeds in the configuration file are displayed, along with any recent posts using the demo app. I encourage people to try making posts and see how they appear and how quickly they appear. As posts continue, so will display of updates to the RSS feeds in the configuration file.</p>\n\n\n\n<p>This is a proof of concept, but will be further developed. If you find problems in the tool, or want to suggest features, feel free to create an issue in the <a href=\"https://github.com/andysylvester/myStatusToolDemo\"><u>Github repo</u></a>. Also, I would love it if a few other people try installing it and let me know how it goes…</p>",
+                "value": "I have created a proof of concept for a microblogging tool relying on RSS for data storage and rssCloud for notification. I was motivated to do this to show how rssCloud could be used to support a Twitter-like experience. Also, I was blocked for posting an innocuous comment on the FeedLand user feed tool, and felt that there needed to be an alternative to that tool for microblog posting. My earlier posts on the development of this tool are here and here.\n\n\n\nIn this demo app, the basic functions are:\n\n\n\nAbility to make a short postWhen a post is made, a RSS feed is updated, a separate page for the post is created, and the post appears on the home page via WebsocketsThe tool provides hosting for the RSS feed and posts createdThe tool can display updates to any RSS feeds that support the rssCloud protocol via Websockets (feeds are listed in a configuration file)The contents of the feeds in the configuration file are displayed when the user accesses the page (so they can see what has been posted recently), then any posts with the tool appear at the top of the page\n\n\n\nThe tool is set up for a single user and requires some configuration. Please consult the README on the Github repo for more information if you want to set up the tool for yourself.\n\n\n\nThe demo app is available at http://fedwiki.andysylvester.com:443/. The contents of the feeds in the configuration file are displayed, along with any recent posts using the demo app. I encourage people to try making posts and see how they appear and how quickly they appear. As posts continue, so will display of updates to the RSS feeds in the configuration file.\n\n\n\nThis is a proof of concept, but will be further developed. If you find problems in the tool, or want to suggest features, feel free to create an issue in the Github repo. Also, I would love it if a few other people try installing it and let me know how it goes…"
+              }
+            ]
+          },
+          "id": "post-2779"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               "",
               ""
             ],
@@ -203,28 +225,6 @@
             ]
           },
           "id": "post-2757"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "More COBOL resources",
-              "More COBOL resources"
-            ],
-            "content": [
-              {
-                "html": "<div class=\"e-content\">\n<p>I recently came across <a href=\"https://unnecessary.tech/posts/openfaas-cobol/\">this post</a> which discussed adding COBOL to a function as a service (FAAS). It linked to several articles from 2020 that I <a href=\"https://andysylvester.com/2020/04/07/is-there-still-hope-for-cobol-programmers/\">also noticed</a> back then. Here are some other COBOL resources mentioned in the post:</p>\n\n\n\n<ul>\n<li>\n<a href=\"https://www.openmainframeproject.org/\">Open Mainframe Project</a> – The Open Mainframe Project <a href=\"https://www.openmainframeproject.org/press/2015/08/16/linux-foundation-brings-together-industry-heavyweights-to-advance-linux-on-the-mainframe\">was founded in 2015</a>, as a focal point for deployment and use of Linux and Open Source in a mainframe computing environment.</li>\n<li>\n<a href=\"https://github.com/openmainframeproject/cobol-programming-course\">COBOL Programming Course</a> – Created by IBM and contributed to the Open Mainframe Project</li>\n<li>\n<a href=\"https://www.youtube.com/watch?v=RdMAEdGvtLA\">FreeCodeCamp</a> – Video that accompanies the course above (August 2020, 116K views – wow!) (1.5 hr)</li>\n<li>\n<a href=\"https://www.youtube.com/watch?v=LImuEAmVkIw\">YouTube</a> – How to practice COBOL programming (15 min)</li>\n<li>\n<a href=\"https://www.youtube.com/watch?v=TBs7HXI76yU\">YouTube</a> – Learn COBOL in One Video (2.5 hr)</li>\n</ul>\n</div>\n<div class=\"syndication-links\"></div>",
-                "value": "I recently came across this post which discussed adding COBOL to a function as a service (FAAS). It linked to several articles from 2020 that I also noticed back then. Here are some other COBOL resources mentioned in the post:\n\n\n\nOpen Mainframe Project – The Open Mainframe Project was founded in 2015, as a focal point for deployment and use of Linux and Open Source in a mainframe computing environment.COBOL Programming Course – Created by IBM and contributed to the Open Mainframe ProjectFreeCodeCamp – Video that accompanies the course above (August 2020, 116K views – wow!) (1.5 hr)YouTube – How to practice COBOL programming (15 min)YouTube – Learn COBOL in One Video (2.5 hr)"
-              },
-              {
-                "html": "<p>I recently came across <a href=\"https://unnecessary.tech/posts/openfaas-cobol/\">this post</a> which discussed adding COBOL to a function as a service (FAAS). It linked to several articles from 2020 that I <a href=\"https://andysylvester.com/2020/04/07/is-there-still-hope-for-cobol-programmers/\">also noticed</a> back then. Here are some other COBOL resources mentioned in the post:</p>\n\n\n\n<ul>\n<li>\n<a href=\"https://www.openmainframeproject.org/\">Open Mainframe Project</a> – The Open Mainframe Project <a href=\"https://www.openmainframeproject.org/press/2015/08/16/linux-foundation-brings-together-industry-heavyweights-to-advance-linux-on-the-mainframe\">was founded in 2015</a>, as a focal point for deployment and use of Linux and Open Source in a mainframe computing environment.</li>\n<li>\n<a href=\"https://github.com/openmainframeproject/cobol-programming-course\">COBOL Programming Course</a> – Created by IBM and contributed to the Open Mainframe Project</li>\n<li>\n<a href=\"https://www.youtube.com/watch?v=RdMAEdGvtLA\">FreeCodeCamp</a> – Video that accompanies the course above (August 2020, 116K views – wow!) (1.5 hr)</li>\n<li>\n<a href=\"https://www.youtube.com/watch?v=LImuEAmVkIw\">YouTube</a> – How to practice COBOL programming (15 min)</li>\n<li>\n<a href=\"https://www.youtube.com/watch?v=TBs7HXI76yU\">YouTube</a> – Learn COBOL in One Video (2.5 hr)</li>\n</ul>",
-                "value": "I recently came across this post which discussed adding COBOL to a function as a service (FAAS). It linked to several articles from 2020 that I also noticed back then. Here are some other COBOL resources mentioned in the post:\n\n\n\nOpen Mainframe Project – The Open Mainframe Project was founded in 2015, as a focal point for deployment and use of Linux and Open Source in a mainframe computing environment.COBOL Programming Course – Created by IBM and contributed to the Open Mainframe ProjectFreeCodeCamp – Video that accompanies the course above (August 2020, 116K views – wow!) (1.5 hr)YouTube – How to practice COBOL programming (15 min)YouTube – Learn COBOL in One Video (2.5 hr)"
-              }
-            ]
-          },
-          "id": "post-2754"
         }
       ]
     }
@@ -285,6 +285,7 @@
       "https://andysylvester.com/"
     ],
     "bookmark": [
+      "https://andysylvester.com/2023/02/06/demo-of-mystatustool-twitter-using-rss-and-rsscloud/",
       "https://andysylvester.com/2023/02/02/2776/",
       "https://andysylvester.com/2023/02/02/2774/",
       "https://andysylvester.com/2023/01/31/update-on-mystatustool-development/",
@@ -293,34 +294,35 @@
       "https://andysylvester.com/2023/01/21/emissary-install-problems/",
       "https://andysylvester.com/2023/01/20/some-resources-for-thinking/",
       "https://andysylvester.com/2023/01/16/a-roadmap-for-mystatustool/",
-      "https://andysylvester.com/2023/01/15/2757/",
-      "https://andysylvester.com/2023/01/15/more-cobol-resources/"
+      "https://andysylvester.com/2023/01/15/2757/"
     ],
     "category": [
+      "https://andysylvester.com/category/blogging/",
+      "https://andysylvester.com/category/feeds/",
+      "https://andysylvester.com/category/microblogging/",
+      "https://andysylvester.com/category/rsscloud/",
       "https://andysylvester.com/category/racism/",
       "https://andysylvester.com/category/drummer/",
-      "https://andysylvester.com/category/blogging/",
       "https://andysylvester.com/category/mystatustool/",
       "https://andysylvester.com/category/podcasting/",
       "https://andysylvester.com/category/travel/",
       "https://andysylvester.com/category/software-development/",
       "https://andysylvester.com/category/thinking/",
-      "https://andysylvester.com/category/rsscloud/",
-      "https://andysylvester.com/category/diy-manufacturing/",
-      "https://andysylvester.com/category/cobol/"
+      "https://andysylvester.com/category/diy-manufacturing/"
     ],
     "tag": [
+      "https://andysylvester.com/category/blogging/",
+      "https://andysylvester.com/category/feeds/",
+      "https://andysylvester.com/category/microblogging/",
+      "https://andysylvester.com/category/rsscloud/",
       "https://andysylvester.com/category/racism/",
       "https://andysylvester.com/category/drummer/",
-      "https://andysylvester.com/category/blogging/",
       "https://andysylvester.com/category/mystatustool/",
       "https://andysylvester.com/category/podcasting/",
       "https://andysylvester.com/category/travel/",
       "https://andysylvester.com/category/software-development/",
       "https://andysylvester.com/category/thinking/",
-      "https://andysylvester.com/category/rsscloud/",
-      "https://andysylvester.com/category/diy-manufacturing/",
-      "https://andysylvester.com/category/cobol/"
+      "https://andysylvester.com/category/diy-manufacturing/"
     ],
     "designer": [
       "http://independentpublisher.me/"
@@ -474,6 +476,41 @@
       ],
       "title": "Andy Sylvester's Web"
     },
+    "https://andysylvester.com/2023/02/06/demo-of-mystatustool-twitter-using-rss-and-rsscloud/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to Demo of MyStatusTool – Twitter using RSS and rssCloud",
+      "text": "Demo of MyStatusTool – Twitter using RSS and rssCloud"
+    },
+    "https://andysylvester.com/category/blogging/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Blogging"
+    },
+    "https://andysylvester.com/category/feeds/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Feeds"
+    },
+    "https://andysylvester.com/category/microblogging/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Microblogging"
+    },
+    "https://andysylvester.com/category/rsscloud/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "rssCloud"
+    },
     "https://andysylvester.com/2023/02/02/2776/": {
       "rels": [
         "bookmark"
@@ -506,13 +543,6 @@
       ],
       "title": "Permalink to Update on MyStatusTool development",
       "text": "Update on MyStatusTool development"
-    },
-    "https://andysylvester.com/category/blogging/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "Blogging"
     },
     "https://andysylvester.com/category/mystatustool/": {
       "rels": [
@@ -583,13 +613,6 @@
       "title": "Permalink to A roadmap for MyStatusTool",
       "text": "A roadmap for MyStatusTool"
     },
-    "https://andysylvester.com/category/rsscloud/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "rssCloud"
-    },
     "https://andysylvester.com/2023/01/15/2757/": {
       "rels": [
         "bookmark"
@@ -602,20 +625,6 @@
         "tag"
       ],
       "text": "DIY Manufacturing"
-    },
-    "https://andysylvester.com/2023/01/15/more-cobol-resources/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Permalink to More COBOL resources",
-      "text": "More COBOL resources"
-    },
-    "https://andysylvester.com/category/cobol/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "COBOL"
     },
     "http://independentpublisher.me/": {
       "rels": [
