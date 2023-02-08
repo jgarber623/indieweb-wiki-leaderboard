@@ -41,10 +41,10 @@
       "https://fonts.googleapis.com/css?family=PT+Serif%3A400%2C700%2C400italic%2C700italic&subset=latin%2Clatin-ext",
       "https://fonts.googleapis.com/css?family=PT+Mono&subset=latin%2Clatin-ext",
       "http://herbimarquez.com/wp-content/themes/edin/font/edincon.css?ver=20140606",
-      "https://c0.wp.com/p/jetpack/11.7.1/_inc/genericons/genericons/genericons.css",
+      "https://c0.wp.com/p/jetpack/11.8/_inc/genericons/genericons/genericons.css",
       "http://herbimarquez.com/wp-content/themes/edin/style.css?ver=6.1.1",
-      "https://c0.wp.com/p/jetpack/11.7.1/css/jetpack.css",
-      "http://herbimarquez.com/wp-content/plugins/jetpack/_inc/blocks/subscriptions/view.css?minify=false&ver=11.7.1"
+      "https://c0.wp.com/p/jetpack/11.8/css/jetpack.css",
+      "http://herbimarquez.com/wp-content/plugins/jetpack/_inc/blocks/subscriptions/view.css?minify=false&ver=11.8"
     ],
     "https://api.w.org/": [
       "https://herbimarquez.com/wp-json/"
@@ -66,6 +66,7 @@
       "https://herbimarquez.com/"
     ],
     "bookmark": [
+      "https://herbimarquez.com/status/i-ran/",
       "https://herbimarquez.com/status/revue-shuts-down/",
       "https://herbimarquez.com/status/fediverse-connection/",
       "https://herbimarquez.com/status/free-memory-error/",
@@ -76,18 +77,20 @@
       "https://emailselfdefense.fsf.org/en/",
       "https://herbimarquez.com/technology/email-self-defense-guide-to-fighting/",
       "http://lifehacker.com/how-to-encrypt-your-email-and-keep-your-conversations-p-1133495744",
-      "https://herbimarquez.com/technology/how-to-encrypt-your-email-and-keep-your-conversations-private/",
-      "https://web.archive.org/web/20170625222355/http://findmasques.org",
-      "https://herbimarquez.com/technology/masques-invisible-social-network/"
+      "https://herbimarquez.com/technology/how-to-encrypt-your-email-and-keep-your-conversations-private/"
+    ],
+    "category": [
+      "https://herbimarquez.com/blogs/status/",
+      "https://herbimarquez.com/blogs/technology/"
     ],
     "tag": [
+      "https://herbimarquez.com/blogs/status/",
+      "https://herbimarquez.com/tag/100daystooffload/",
       "https://herbimarquez.com/tag/revue/",
       "https://herbimarquez.com/tag/newsletter/",
       "https://herbimarquez.com/tag/subscription/",
       "https://herbimarquez.com/tag/bluesky/",
       "https://herbimarquez.com/tag/mastodon/",
-      "https://herbimarquez.com/blogs/status/",
-      "https://herbimarquez.com/tag/100daystooffload/",
       "https://herbimarquez.com/tag/wordpress/",
       "https://herbimarquez.com/tag/blog/",
       "https://herbimarquez.com/tag/error/",
@@ -99,10 +102,6 @@
       "https://herbimarquez.com/tag/encryption/",
       "https://herbimarquez.com/tag/gnupg/"
     ],
-    "category": [
-      "https://herbimarquez.com/blogs/status/",
-      "https://herbimarquez.com/blogs/technology/"
-    ],
     "nofollow": [
       "https://emailselfdefense.fsf.org/en/",
       "http://lifehacker.com/how-to-encrypt-your-email-and-keep-your-conversations-p-1133495744"
@@ -110,7 +109,6 @@
     "noopener": [
       "https://emailselfdefense.fsf.org/en/",
       "http://lifehacker.com/how-to-encrypt-your-email-and-keep-your-conversations-p-1133495744",
-      "https://web.archive.org/web/20170625222355/http://findmasques.org",
       "https://mstdn.social/@herbi"
     ],
     "authn": [
@@ -305,7 +303,7 @@
       "media": "all",
       "type": "text/css"
     },
-    "https://c0.wp.com/p/jetpack/11.7.1/_inc/genericons/genericons/genericons.css": {
+    "https://c0.wp.com/p/jetpack/11.8/_inc/genericons/genericons/genericons.css": {
       "rels": [
         "stylesheet"
       ],
@@ -319,7 +317,7 @@
       "media": "all",
       "type": "text/css"
     },
-    "https://c0.wp.com/p/jetpack/11.7.1/css/jetpack.css": {
+    "https://c0.wp.com/p/jetpack/11.8/css/jetpack.css": {
       "rels": [
         "stylesheet"
       ],
@@ -377,6 +375,25 @@
         "home"
       ]
     },
+    "https://herbimarquez.com/status/i-ran/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "I ran"
+    },
+    "https://herbimarquez.com/blogs/status/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Status"
+    },
+    "https://herbimarquez.com/tag/100daystooffload/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "100DaysToOffload"
+    },
     "https://herbimarquez.com/status/revue-shuts-down/": {
       "rels": [
         "bookmark"
@@ -412,19 +429,6 @@
         "tag"
       ],
       "text": "#Mastodon"
-    },
-    "https://herbimarquez.com/blogs/status/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "Status"
-    },
-    "https://herbimarquez.com/tag/100daystooffload/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "100DaysToOffload"
     },
     "https://herbimarquez.com/status/fediverse-connection/": {
       "rels": [
@@ -547,18 +551,6 @@
       ],
       "text": "August 17, 2013May 11, 2022"
     },
-    "https://web.archive.org/web/20170625222355/http://findmasques.org": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Masques – invisible social network"
-    },
-    "https://herbimarquez.com/technology/masques-invisible-social-network/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "June 12, 2013May 11, 2022"
-    },
     "mailto:herbi@hmarquez.com": {
       "rels": [
         "authn",
@@ -571,7 +563,7 @@
         "noopener"
       ]
     },
-    "http://herbimarquez.com/wp-content/plugins/jetpack/_inc/blocks/subscriptions/view.css?minify=false&ver=11.7.1": {
+    "http://herbimarquez.com/wp-content/plugins/jetpack/_inc/blocks/subscriptions/view.css?minify=false&ver=11.8": {
       "rels": [
         "stylesheet"
       ],

@@ -38,6 +38,40 @@
             "h-entry"
           ],
           "properties": {
+            "name": [
+              "Expanding the search in Vim"
+            ],
+            "content": [
+              {
+                "html": "<p>I just discovered a new Vim trick I think I am going to use quite often, so I am sharing it here to look it up when I forget.</p>\n<p>As you may know, you can issue the <code>/</code> command in Vim to start a search. Every character you type will be in the search, until you hit enter, which will jump you to the first occurance of your searched text.</p>\n<p>Another thing you may know, is that you can use this search-motion as a motion to other commands as well. When you do <code>v/here</code>, you will visually select everything between the current cursor position and the first occurance of 'here' in the buffer. I use this to delete stuff that I can't target using the <code>f</code> and <code>t</code> motions.</p>\n<p>Then there is the thing I once found out, but never could remember: once you press <code>/</code>, you are in a little submode I can find the name for. In this mode, you can use Ctrl+L and Ctrl+H to increase or decrease your search string by the characters of the first match. You can also use Ctrl+G to move that virtual cursor to the next match, or Ctrl+T to get to the previous. Once you hit enter you are on that last position, removing the need to do <code>n</code>.</p>\n<p>But here it comes: when you are deleting with <code>d/</code>, you can also use Ctrl+G to get to that next match. If you searched for a small snippet that accidentally occurs before the place you wanted to go, you can press Gtrl+G to jump over it, and pressing enter will delete the full distance.</p>",
+                "value": "I just discovered a new Vim trick I think I am going to use quite often, so I am sharing it here to look it up when I forget.\nAs you may know, you can issue the / command in Vim to start a search. Every character you type will be in the search, until you hit enter, which will jump you to the first occurance of your searched text.\nAnother thing you may know, is that you can use this search-motion as a motion to other commands as well. When you do v/here, you will visually select everything between the current cursor position and the first occurance of 'here' in the buffer. I use this to delete stuff that I can't target using the f and t motions.\nThen there is the thing I once found out, but never could remember: once you press /, you are in a little submode I can find the name for. In this mode, you can use Ctrl+L and Ctrl+H to increase or decrease your search string by the characters of the first match. You can also use Ctrl+G to move that virtual cursor to the next match, or Ctrl+T to get to the previous. Once you hit enter you are on that last position, removing the need to do n.\nBut here it comes: when you are deleting with d/, you can also use Ctrl+G to get to that next match. If you searched for a small snippet that accidentally occurs before the place you wanted to go, you can press Gtrl+G to jump over it, and pressing enter will delete the full distance."
+              }
+            ],
+            "url": [
+              "https://seblog.nl/2023/02/07/1/expanding-the-search-in-vim"
+            ],
+            "published": [
+              "2023-02-07T09:46:34+0000"
+            ],
+            "updated": [
+              "2023-02-07T09:46:34+0000"
+            ],
+            "uid": [
+              "https://seblog.nl/2023/038/1"
+            ],
+            "author": [
+              "https://seblog.nl/"
+            ],
+            "category": [
+              "vim"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
             "content": [
               {
                 "html": "<p>Gisteravond luisterde ik een aflevering van de <a href=\"https://remoteruby.com/216\">Remote Ruby podcast</a> met <a href=\"https://sive.rs/\">Derek Sivers</a>, waarin hij uit de doeken doet hoe hij alle logica van zijn applicaties in de database zelf stopt, en waarin hij ook zijn persoonlijke database noemt, waarin hij zo'n beetje zijn hele leven vastlegt.</p>\n<p>Zijn database staat in interessant contrast met de gebruikers van <a href=\"https://obsidian.md/\">Obsidian</a>, die juist voor 'plain text' gaan als opslagformaat, in de hoop dat tekst over twintig, vijftig, honderd jaar nog steeds gelezen kan worden door computers. Maar tegelijkertijd staat het óók in interessant contrast met de Ruby on Rails en Laravel developers die alle logica uit de database proberen te houden en de database alleen maar gebruiken voor domme opslag van data.</p>\n<p>Het is fijn om af en toe even uit je comfortabele doos te worden gestuurd. Dit weblog slaat alle posts ook op in losse tekstbestanden en op mijn werk werk ik met Laravel en een relatief domme database.</p>\n<p>Derek wijst in de aflevering ook op <a href=\"https://www.youtube.com/watch?v=rI8tNMsozo0\">de Simplicity Matters talk</a> van Rich Hickey, wiens talks eigenlijk allemaal heel goed zijn. De talk gaat in op de concepten 'makkelijk' (easy) en 'simpel' (simple), en hoe mensen die twee concepten door elkaar halen terwijl ze fundamenteel andere dingen zijn. Ook voor niet-programmeurs wel een aanrader, denk ik, al moet je af en toe even door wat jargon heen.</p>",
@@ -682,40 +716,6 @@
               "muis"
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Slome Mastodon"
-            ],
-            "content": [
-              {
-                "html": "<p>Mastodon is nog steeds een hot-topic op mijn Mastodon- en feedreader-tijdlijn. Zo kwam ik <a href=\"https://ar.al/2022/11/09/is-the-fediverse-about-to-get-fryed-or-why-every-toot-is-also-a-potential-denial-of-service-attack/\">dit artikel</a> van Aral tegen waarin hij uitlegt hoe een beetje populair zijn (22.000 volgers op 3000 servers) en een beetje actief posten en reacties uitlokken al snel kan leiden tot een enorme queue en dus vastzittende instances.</p>\n<p>Zijn oplossing: populaire mensen moeten hun eigen server draaien. Ergens is daar wat voor te zeggen, op Twitter waren het ook de populaire mensen die het meeste geld kosten (en opleverden waarschijnlijk maar soit). Het is logisch dat als jij veel interactie hebt, computers daar dus harder voor moeten werken, en dat je dan misschien wat meer moet betalen aan je Mastodon-host.</p>\n<p>Maar los van dat computers draaien geld kost, kosten computers ook stroom en dus naar alle waarschijnlijkheid CO². Een beetje minder daarvan zou best fijn zijn, en dit is in mijn optiek wel een beetje een tekortkoming van Activitypub (te actief) en Mastodon (gekke technische keuzes).</p>\n<p>Toen Twitter begon bouwden ze het platform op Ruby on Rails, een framework bekend om het gemak waarmee je een nieuwe applicatie kan opzetten, maar niet om z'n snelheid. Twitter liep echter tegen de grenzen aan van die architectuur, met veel plaatjes van een door vogels opgetilde walvis als het weer mis ging. In <a href=\"https://blog.twitter.com/engineering/en_us/a/2011/twitter-search-is-now-3x-faster\"></a> stapten ze over naar een andere architectuur en kwam er eindelijk een eind aan de 'fail whale'.</p>\n<p>In 2016 deed Gargron de eerste commit voor Mastodon. Het zette een lege Ruby on Rails applicatie neer, die later uitgroeide tot de Mastodon die we nu hebben. Als het Twitter niet lukte ermee te schalen, heb ik ook vraagtekens of Mastodon het wel kan.</p>\n<p>Maar daarnaast ook Activitypub nogal onnodig werk: op moment van schrijven heb ik drie features van het protocol geïmplementeerd op dit weblog (webfinger, de actor, de inbox) en één keer mijn 'profiel' bezocht via Mastodon.social. Sindsdien heb ik 1507 berichten ontvangen over verwijderde gebruikers. 1507 berichten, alleen omdat iemand anders (oké ik zelf) mijn profiel bezocht. (Ik begon vanochtend al met schrijven aan deze post, maar inmiddels zie ik dat Aaron <a href=\"https://aaronparecki.com/2022/11/11/51/activitypub\">nog meer</a> deletes heeft ontvangen. Oeps.)</p>\n<p>Ik ben een voorstander van 'eerst gebruiken dan pas de protocollen', en aangezien we nu Activitypub gebruiken is dat een beter protocol dan elke nieuwe die we verzinnen zonder actieve gebruikers, maar ergens hoop ik wel dat we dit nog kunnen fixen.</p>",
-                "value": "Mastodon is nog steeds een hot-topic op mijn Mastodon- en feedreader-tijdlijn. Zo kwam ik dit artikel van Aral tegen waarin hij uitlegt hoe een beetje populair zijn (22.000 volgers op 3000 servers) en een beetje actief posten en reacties uitlokken al snel kan leiden tot een enorme queue en dus vastzittende instances.\nZijn oplossing: populaire mensen moeten hun eigen server draaien. Ergens is daar wat voor te zeggen, op Twitter waren het ook de populaire mensen die het meeste geld kosten (en opleverden waarschijnlijk maar soit). Het is logisch dat als jij veel interactie hebt, computers daar dus harder voor moeten werken, en dat je dan misschien wat meer moet betalen aan je Mastodon-host.\nMaar los van dat computers draaien geld kost, kosten computers ook stroom en dus naar alle waarschijnlijkheid CO². Een beetje minder daarvan zou best fijn zijn, en dit is in mijn optiek wel een beetje een tekortkoming van Activitypub (te actief) en Mastodon (gekke technische keuzes).\nToen Twitter begon bouwden ze het platform op Ruby on Rails, een framework bekend om het gemak waarmee je een nieuwe applicatie kan opzetten, maar niet om z'n snelheid. Twitter liep echter tegen de grenzen aan van die architectuur, met veel plaatjes van een door vogels opgetilde walvis als het weer mis ging. In  stapten ze over naar een andere architectuur en kwam er eindelijk een eind aan de 'fail whale'.\nIn 2016 deed Gargron de eerste commit voor Mastodon. Het zette een lege Ruby on Rails applicatie neer, die later uitgroeide tot de Mastodon die we nu hebben. Als het Twitter niet lukte ermee te schalen, heb ik ook vraagtekens of Mastodon het wel kan.\nMaar daarnaast ook Activitypub nogal onnodig werk: op moment van schrijven heb ik drie features van het protocol geïmplementeerd op dit weblog (webfinger, de actor, de inbox) en één keer mijn 'profiel' bezocht via Mastodon.social. Sindsdien heb ik 1507 berichten ontvangen over verwijderde gebruikers. 1507 berichten, alleen omdat iemand anders (oké ik zelf) mijn profiel bezocht. (Ik begon vanochtend al met schrijven aan deze post, maar inmiddels zie ik dat Aaron nog meer deletes heeft ontvangen. Oeps.)\nIk ben een voorstander van 'eerst gebruiken dan pas de protocollen', en aangezien we nu Activitypub gebruiken is dat een beter protocol dan elke nieuwe die we verzinnen zonder actieve gebruikers, maar ergens hoop ik wel dat we dit nog kunnen fixen."
-              }
-            ],
-            "url": [
-              "https://seblog.nl/2022/11/11/1/slome-mastodon"
-            ],
-            "published": [
-              "2022-11-11T22:50:31+0000"
-            ],
-            "updated": [
-              "2022-11-11T22:50:31+0000"
-            ],
-            "uid": [
-              "https://seblog.nl/2022/315/1"
-            ],
-            "author": [
-              "https://seblog.nl/"
-            ],
-            "category": [
-              "mastodon"
-            ]
-          }
         }
       ]
     }
@@ -772,16 +772,14 @@
       "https://5eb.nl/5N42",
       "https://5eb.nl/5N41",
       "https://5eb.nl/5Mp1",
-      "https://5eb.nl/5Mo2",
-      "https://5eb.nl/5Mn1"
+      "https://5eb.nl/5Mo2"
     ],
     "canonical": [
       "https://seblog.nl/2023/001/1",
       "https://seblog.nl/2022/332/2",
       "https://seblog.nl/2022/332/1",
       "https://seblog.nl/2022/317/1",
-      "https://seblog.nl/2022/316/2",
-      "https://seblog.nl/2022/315/1"
+      "https://seblog.nl/2022/316/2"
     ],
     "syndication": [
       "https://mastodon.social/@sebsel/109423806188303700"
@@ -960,18 +958,6 @@
       "text": "•"
     },
     "https://seblog.nl/2022/316/2": {
-      "rels": [
-        "canonical"
-      ]
-    },
-    "https://5eb.nl/5Mn1": {
-      "rels": [
-        "shortlink"
-      ],
-      "title": "2022/315/1",
-      "text": "•"
-    },
-    "https://seblog.nl/2022/315/1": {
       "rels": [
         "canonical"
       ]

@@ -1,57 +1,54 @@
 {
   "items": [],
   "rels": {
+    "icon": [
+      "https://inhji.de/favicon.ico"
+    ],
+    "shortcut": [
+      "https://inhji.de/favicon.ico"
+    ],
+    "alternate": [
+      "https://inhji.de/index.xml"
+    ],
     "stylesheet": [
-      "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css",
-      "https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css",
-      "https://inhji.de/css/palettes/gruvbox-dark.css",
-      "https://inhji.de/css/risotto.css",
-      "https://inhji.de/css/custom.css"
+      "https://inhji.de/css/style.min.css"
+    ],
+    "canonical": [
+      "https://inhji.de/"
     ],
     "me": [
-      "https://git.inhji.de/",
-      "https://chaos.social/@inhji"
+      "https://fullvoid.de/@inhji"
     ]
   },
   "rel-urls": {
-    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css": {
+    "https://inhji.de/favicon.ico": {
+      "rels": [
+        "icon",
+        "shortcut"
+      ]
+    },
+    "https://inhji.de/index.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Technos & Psyche",
+      "type": "application/rss+xml"
+    },
+    "https://inhji.de/css/style.min.css": {
       "rels": [
         "stylesheet"
       ]
     },
-    "https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css": {
+    "https://inhji.de/": {
       "rels": [
-        "stylesheet"
+        "canonical"
       ]
     },
-    "https://inhji.de/css/palettes/gruvbox-dark.css": {
-      "rels": [
-        "stylesheet"
-      ]
-    },
-    "https://inhji.de/css/risotto.css": {
-      "rels": [
-        "stylesheet"
-      ]
-    },
-    "https://inhji.de/css/custom.css": {
-      "rels": [
-        "stylesheet"
-      ]
-    },
-    "https://git.inhji.de/": {
+    "https://fullvoid.de/@inhji": {
       "rels": [
         "me"
       ],
-      "title": "Gitea",
-      "text": " Gitea"
-    },
-    "https://chaos.social/@inhji": {
-      "rels": [
-        "me"
-      ],
-      "title": "Mastodon",
-      "text": " Mastodon"
+      "text": "Inhji"
     }
   }
 }

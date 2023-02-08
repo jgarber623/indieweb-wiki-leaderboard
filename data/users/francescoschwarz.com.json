@@ -6,6 +6,44 @@
       ],
       "properties": {
         "published": [
+          "2023-02-07T10:07:30+01:00"
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "photo": [
+                {
+                  "value": "https://francescoschwarz.com/site/assets/files/1029/francesco-schwarz.400x0.jpg",
+                  "alt": ""
+                }
+              ],
+              "name": [
+                "Francesco Schwarz"
+              ]
+            },
+            "value": "Francesco Schwarz"
+          }
+        ],
+        "name": [
+          "Bare Figures"
+        ],
+        "url": [
+          "https://francescoschwarz.com/articles/bare-figures/"
+        ],
+        "summary": [
+          "Thoughts on a 10+ year old side project of mine that just went offline."
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "published": [
           "2023-02-05T17:58:58+01:00"
         ],
         "author": [
@@ -317,41 +355,6 @@
     },
     {
       "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "published": [
-          "2022-12-02T14:42:24+01:00"
-        ],
-        "author": [
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "photo": [
-                {
-                  "value": "https://francescoschwarz.com/site/assets/files/1029/francesco-schwarz.400x0.jpg",
-                  "alt": ""
-                }
-              ],
-              "name": [
-                "Francesco Schwarz"
-              ]
-            },
-            "value": "Francesco Schwarz"
-          }
-        ],
-        "name": [
-          "6k Cycling"
-        ],
-        "url": [
-          "https://francescoschwarz.com/activities/cycling/2022-12-02-14-42-24/"
-        ]
-      }
-    },
-    {
-      "type": [
         "h-card"
       ],
       "properties": {
@@ -406,8 +409,7 @@
       "https://francescoschwarz.com/notes/feed.json",
       "https://francescoschwarz.com/activities/feed.json",
       "https://francescoschwarz.com/activities/running/feed.json",
-      "https://francescoschwarz.com/activities/cycling/feed.json",
-      "https://granary.io/url?url=https://francescoschwarz.com/&input=html&output=atom&hub=https://bridgy-fed.superfeedr.com/"
+      "https://francescoschwarz.com/activities/cycling/feed.json"
     ],
     "icon": [
       "https://francescoschwarz.com/favicon.ico",
@@ -419,7 +421,14 @@
     "manifest": [
       "https://francescoschwarz.com/manifest.json"
     ],
+    "webmention": [
+      "https://webmention.io/francescoschwarz.com/webmention"
+    ],
+    "pingback": [
+      "https://webmention.io/francescoschwarz.com/xmlrpc"
+    ],
     "bookmark": [
+      "https://francescoschwarz.com/articles/bare-figures/",
       "https://francescoschwarz.com/activities/cycling/2023-02-05-17-58-58/",
       "https://francescoschwarz.com/activities/running/2023-02-05-08-42-26/",
       "https://francescoschwarz.com/activities/running/2023-02-02-07-23-16/",
@@ -428,8 +437,7 @@
       "https://francescoschwarz.com/activities/running/2023-01-23-17-19-07/",
       "https://francescoschwarz.com/activities/running/2023-01-17-08-20-59/",
       "https://francescoschwarz.com/activities/cycling/2023-01-10-12-13-31/",
-      "https://francescoschwarz.com/activities/cycling/2023-01-10-08-10-28/",
-      "https://francescoschwarz.com/activities/cycling/2022-12-02-14-42-24/"
+      "https://francescoschwarz.com/activities/cycling/2023-01-10-08-10-28/"
     ],
     "next": [
       "https://francescoschwarz.com/page-2/"
@@ -564,12 +572,6 @@
       "title": "Cycling JSON feed",
       "type": "application/json"
     },
-    "https://granary.io/url?url=https://francescoschwarz.com/&input=html&output=atom&hub=https://bridgy-fed.superfeedr.com/": {
-      "rels": [
-        "alternate"
-      ],
-      "type": "application/atom+xml"
-    },
     "https://francescoschwarz.com/favicon.ico": {
       "rels": [
         "icon"
@@ -590,6 +592,22 @@
       "rels": [
         "manifest"
       ]
+    },
+    "https://webmention.io/francescoschwarz.com/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://webmention.io/francescoschwarz.com/xmlrpc": {
+      "rels": [
+        "pingback"
+      ]
+    },
+    "https://francescoschwarz.com/articles/bare-figures/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\nBare Figures"
     },
     "https://francescoschwarz.com/activities/cycling/2023-02-05-17-58-58/": {
       "rels": [
@@ -644,12 +662,6 @@
         "bookmark"
       ],
       "text": "\n4k Cycling"
-    },
-    "https://francescoschwarz.com/activities/cycling/2022-12-02-14-42-24/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n6k Cycling"
     },
     "https://francescoschwarz.com/page-2/": {
       "rels": [
