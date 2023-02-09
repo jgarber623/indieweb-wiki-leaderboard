@@ -31,6 +31,47 @@
             "h-entry"
           ],
           "properties": {
+            "published": [
+              "2023-02-08T16:45:00+01:00"
+            ],
+            "location": [
+              {
+                "type": [
+                  "h-geo"
+                ],
+                "properties": {
+                  "name": [
+                    "Kassel, Hesse, Germany"
+                  ],
+                  "longitude": [
+                    "9.491175"
+                  ],
+                  "latitude": [
+                    "51.303775"
+                  ],
+                  "url": [
+                    "https://www.openstreetmap.org/?mlat=51.303775&mlon=9.4911746"
+                  ]
+                },
+                "value": "Kassel, Hesse, Germany"
+              }
+            ],
+            "content": [
+              {
+                "html": "<p>Frozen ❄️</p>\n<p><a href=\"https://media.jlelse.blog/eeda0879a6b23e868367ac71e22eefebc8a7dbf3ada0ee86ad2e4d70b135c509.jpg\"><img src=\"https://media.jlelse.blog/eeda0879a6b23e868367ac71e22eefebc8a7dbf3ada0ee86ad2e4d70b135c509.jpg\" alt loading=\"lazy\"></a></p>",
+                "value": "Frozen ❄️"
+              }
+            ],
+            "url": [
+              "https://jlelse.blog/micro/2023/02/2023-02-08-ysdbv"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
             "name": [
               "Yet another AI application"
             ],
@@ -203,44 +244,6 @@
               "https://jlelse.blog/micro/2023/01/2023-01-13-gvdcu"
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "published": [
-              "2023-01-11T21:44:54+01:00"
-            ],
-            "like-of": [
-              {
-                "type": [
-                  "h-cite"
-                ],
-                "properties": {
-                  "url": [
-                    "https://cdevroe.com/2023/01/11/blogging-is-alive"
-                  ],
-                  "content": [
-                    {
-                      "html": "Whether or not blogging is alive or dead is not a new topic of discussion. It is a topic that reoccurs every few years. I've written about it dozens of times. But the current push seems slightly different. I believe we will see many more people blogging again or, at the very least, publishing on a platform that compliments the web rather than chafe at it.",
-                      "value": "Whether or not blogging is alive or dead is not a new topic of discussion. It is a topic that reoccurs every few years. I've written about it dozens of times. But the current push seems slightly different. I believe we will see many more people blogging again or, at the very least, publishing on a platform that compliments the web rather than chafe at it."
-                    }
-                  ]
-                },
-                "value": "https://cdevroe.com/2023/01/11/blogging-is-alive"
-              }
-            ],
-            "content": [
-              {
-                "html": "<p>Probably preaching to the choir…</p>",
-                "value": "Probably preaching to the choir…"
-              }
-            ],
-            "url": [
-              "https://jlelse.blog/micro/2023/01/2023-01-11-ffbjv"
-            ]
-          }
         }
       ]
     }
@@ -291,17 +294,19 @@
     "home": [
       "https://jlelse.blog/"
     ],
+    "nofollow": [
+      "https://www.openstreetmap.org/?mlat=51.303775&mlon=9.4911746",
+      "https://www.torproject.org/"
+    ],
     "noopener": [
+      "https://www.openstreetmap.org/?mlat=51.303775&mlon=9.4911746",
       "https://kandr3s.co/",
       "https://goblog.app/updates/2023/01/2023-01-23-suzgv",
       "https://www.deepl.com/write",
-      "https://cdevroe.com/2023/01/11/blogging-is-alive",
-      "https://www.torproject.org/"
-    ],
-    "nofollow": [
       "https://www.torproject.org/"
     ],
     "noreferrer": [
+      "https://www.openstreetmap.org/?mlat=51.303775&mlon=9.4911746",
       "https://www.torproject.org/"
     ]
   },
@@ -402,6 +407,14 @@
         "apple-touch-icon"
       ]
     },
+    "https://www.openstreetmap.org/?mlat=51.303775&mlon=9.4911746": {
+      "rels": [
+        "nofollow",
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "Kassel, Hesse, Germany"
+    },
     "https://kandr3s.co/": {
       "rels": [
         "noopener"
@@ -419,12 +432,6 @@
         "noopener"
       ],
       "text": "DeepL Write"
-    },
-    "https://cdevroe.com/2023/01/11/blogging-is-alive": {
-      "rels": [
-        "noopener"
-      ],
-      "text": "Colin Devroe - Blogging is alive and well"
     },
     "https://www.torproject.org/": {
       "rels": [

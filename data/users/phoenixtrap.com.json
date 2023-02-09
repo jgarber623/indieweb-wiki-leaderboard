@@ -70,7 +70,7 @@
                 "Mark Gardner"
               ],
               "email": [
-                "https://phoenixtrap.com/cdn-cgi/l/email-protection#660b0c0126160e0903080f1e121407164805090b"
+                "https://phoenixtrap.com/cdn-cgi/l/email-protection#74191e1334041c1b111a1d0c000615045a171b19"
               ],
               "note": [
                 "I help professional Perl developers engineer modern, disciplined applications so they can become experts that write easy-to-maintain code with confidence."
@@ -826,7 +826,17 @@
       "https://phoenixtrap.com/feed/",
       "https://phoenixtrap.com/comments/feed/",
       "https://phoenixtrap.com/feed/atom/",
-      "https://phoenixtrap.com/comments/feed/atom/"
+      "https://phoenixtrap.com/comments/feed/atom/",
+      "https://phoenixtrap.com/type/standard/feed/",
+      "https://phoenixtrap.com/type/aside/feed/",
+      "https://phoenixtrap.com/type/chat/feed/",
+      "https://phoenixtrap.com/type/gallery/feed/",
+      "https://phoenixtrap.com/type/link/feed/",
+      "https://phoenixtrap.com/type/image/feed/",
+      "https://phoenixtrap.com/type/quote/feed/",
+      "https://phoenixtrap.com/type/status/feed/",
+      "https://phoenixtrap.com/type/video/feed/",
+      "https://phoenixtrap.com/type/audio/feed/"
     ],
     "stylesheet": [
       "https://c0.wp.com/c/6.1.1/wp-includes/css/dist/block-library/style.min.css",
@@ -835,7 +845,7 @@
       "https://phoenixtrap.com/wp-content/plugins/coblocks/dist/style-coblocks-1.css?ver=2.25.5",
       "https://phoenixtrap.com/wp-content/plugins/coil-web-monetization/dist/blocks.style.build.min.css?ver=2.0.2",
       "https://c0.wp.com/c/6.1.1/wp-includes/css/classic-themes.min.css",
-      "https://cdn.hello.coop/css/hello-btn.css?ver=1.1.1",
+      "https://cdn.hello.coop/css/hello-btn.css?ver=1.1.2",
       "https://c0.wp.com/c/6.1.1/wp-includes/css/dist/components/style.min.css",
       "https://phoenixtrap.com/wp-content/plugins/coblocks/includes/Dependencies/GoDaddy/Styles/build/latest.css?ver=2.0.2",
       "https://phoenixtrap.com/wp-content/plugins/coil-web-monetization/assets/css/messages/coil.min.css?ver=2.0.2",
@@ -867,6 +877,9 @@
     "monetization": [
       "https://ilp.uphold.com/zy4NbUXE9Xwn"
     ],
+    "friends-base-url": [
+      "https://phoenixtrap.com/wp-json/friends/v1"
+    ],
     "me": [
       "https://github.com/mjgardner",
       "https://twitter.com/markjgardner",
@@ -883,7 +896,7 @@
       "https://www.youtube.com/channel/UCo-bgiroS9CMQzfA_5r5Z0A/about",
       "https://www.goodreads.com/user/show/5299642-mark",
       "https://verified.coop/@mjg",
-      "https://phoenixtrap.com/cdn-cgi/l/email-protection#660b0c0126160e0903080f1e121407164805090b"
+      "https://phoenixtrap.com/cdn-cgi/l/email-protection#74191e1334041c1b111a1d0c000615045a171b19"
     ],
     "pgpkey": [
       "https://phoenixtrap.com/.well-known/pka/mjg_pubkey_8CB08A45.txt"
@@ -1125,7 +1138,7 @@
       "media": "all",
       "type": "text/css"
     },
-    "https://cdn.hello.coop/css/hello-btn.css?ver=1.1.1": {
+    "https://cdn.hello.coop/css/hello-btn.css?ver=1.1.2": {
       "rels": [
         "stylesheet"
       ],
@@ -1247,6 +1260,81 @@
       "rels": [
         "monetization"
       ]
+    },
+    "https://phoenixtrap.com/wp-json/friends/v1": {
+      "rels": [
+        "friends-base-url"
+      ]
+    },
+    "https://phoenixtrap.com/type/standard/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "The Phoenix Trap » Standard Feed",
+      "type": "application/rss+xml"
+    },
+    "https://phoenixtrap.com/type/aside/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "The Phoenix Trap » Aside Feed",
+      "type": "application/rss+xml"
+    },
+    "https://phoenixtrap.com/type/chat/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "The Phoenix Trap » Chat Feed",
+      "type": "application/rss+xml"
+    },
+    "https://phoenixtrap.com/type/gallery/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "The Phoenix Trap » Gallery Feed",
+      "type": "application/rss+xml"
+    },
+    "https://phoenixtrap.com/type/link/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "The Phoenix Trap » Link Feed",
+      "type": "application/rss+xml"
+    },
+    "https://phoenixtrap.com/type/image/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "The Phoenix Trap » Image Feed",
+      "type": "application/rss+xml"
+    },
+    "https://phoenixtrap.com/type/quote/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "The Phoenix Trap » Quote Feed",
+      "type": "application/rss+xml"
+    },
+    "https://phoenixtrap.com/type/status/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "The Phoenix Trap » Status Feed",
+      "type": "application/rss+xml"
+    },
+    "https://phoenixtrap.com/type/video/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "The Phoenix Trap » Video Feed",
+      "type": "application/rss+xml"
+    },
+    "https://phoenixtrap.com/type/audio/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "The Phoenix Trap » Audio Feed",
+      "type": "application/rss+xml"
     },
     "https://github.com/mjgardner": {
       "rels": [
@@ -1651,7 +1739,7 @@
       ],
       "text": "photography"
     },
-    "https://phoenixtrap.com/cdn-cgi/l/email-protection#660b0c0126160e0903080f1e121407164805090b": {
+    "https://phoenixtrap.com/cdn-cgi/l/email-protection#74191e1334041c1b111a1d0c000615045a171b19": {
       "rels": [
         "me"
       ],

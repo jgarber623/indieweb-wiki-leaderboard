@@ -14,6 +14,7 @@
       "https://marcoraaphorst.nl/"
     ],
     "dns-prefetch": [
+      "https://secure.gravatar.com/",
       "https://www.googletagmanager.com/",
       "https://v0.wordpress.com/",
       "https://i0.wp.com/",
@@ -33,14 +34,13 @@
       "https://marcoraaphorst.nl/wp-content/plugins/twentig/dist/style-index.css?ver=be6428226d75d7a7464c",
       "https://c0.wp.com/c/6.1.1/wp-includes/css/classic-themes.min.css",
       "https://marcoraaphorst.nl/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
-      "https://marcoraaphorst.nl/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.12.0",
       "https://marcoraaphorst.nl/wp-content/plugins/twentig/dist/css/twentytwentyone/theme-style.min.css?ver=1.6",
       "https://marcoraaphorst.nl/wp-content/themes/twentytwentyone/assets/css/print.css?ver=1.7",
-      "https://c0.wp.com/p/jetpack/11.7.1/modules/theme-tools/compat/twentytwentyone.css",
+      "https://c0.wp.com/p/jetpack/11.8/modules/theme-tools/compat/twentytwentyone.css",
       "https://marcoraaphorst.nl/wp-content/plugins/twentig/dist/css/twentytwentyone/style.min.css?ver=1.5.4",
-      "https://c0.wp.com/p/jetpack/11.7.1/css/jetpack.css",
+      "https://c0.wp.com/p/jetpack/11.8/css/jetpack.css",
       "https://marcoraaphorst.nl/wp-content/plugins/gigpress/css/gigpress.css?ver=6.1.1",
-      "https://marcoraaphorst.nl/wp-content/plugins/jetpack/_inc/blocks/subscriptions/view.css?minify=false&ver=11.7.1"
+      "https://marcoraaphorst.nl/wp-content/plugins/jetpack/_inc/blocks/subscriptions/view.css?minify=false&ver=11.8"
     ],
     "https://api.w.org/": [
       "https://marcoraaphorst.nl/wp-json/"
@@ -70,6 +70,11 @@
         "alternate"
       ],
       "hreflang": "nl"
+    },
+    "https://secure.gravatar.com/": {
+      "rels": [
+        "dns-prefetch"
+      ]
     },
     "https://www.googletagmanager.com/": {
       "rels": [
@@ -177,12 +182,6 @@
       ],
       "media": "all"
     },
-    "https://marcoraaphorst.nl/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.12.0": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "all"
-    },
     "https://marcoraaphorst.nl/wp-content/plugins/twentig/dist/css/twentytwentyone/theme-style.min.css?ver=1.6": {
       "rels": [
         "stylesheet"
@@ -195,7 +194,7 @@
       ],
       "media": "print"
     },
-    "https://c0.wp.com/p/jetpack/11.7.1/modules/theme-tools/compat/twentytwentyone.css": {
+    "https://c0.wp.com/p/jetpack/11.8/modules/theme-tools/compat/twentytwentyone.css": {
       "rels": [
         "stylesheet"
       ],
@@ -207,7 +206,7 @@
       ],
       "media": "all"
     },
-    "https://c0.wp.com/p/jetpack/11.7.1/css/jetpack.css": {
+    "https://c0.wp.com/p/jetpack/11.8/css/jetpack.css": {
       "rels": [
         "stylesheet"
       ],
@@ -293,7 +292,7 @@
       ],
       "media": "all"
     },
-    "https://marcoraaphorst.nl/wp-content/plugins/jetpack/_inc/blocks/subscriptions/view.css?minify=false&ver=11.7.1": {
+    "https://marcoraaphorst.nl/wp-content/plugins/jetpack/_inc/blocks/subscriptions/view.css?minify=false&ver=11.8": {
       "rels": [
         "stylesheet"
       ],
