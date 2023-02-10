@@ -57,6 +57,51 @@
           }
         ],
         "name": [
+          "Why AI audio is a different ballgame"
+        ],
+        "content": [
+          {
+            "html": "<p>(<a href=\"http://gibberish.com/2022/02/24/oh-hey-its-getting-toward-time-for-my-annual-blog\">Sorry I'm late.</a>)</p>\n<p>\n\nIn case you missed it, the <a href=\"https://www.ibm.com/topics/recurrent-neural-networks\">latest thing</a> we're calling AI (or Machine Learning or whatever) is <a href=\"https://kotaku.com/ai-art-dall-e-midjourney-stable-diffusion-copyright-1849388060\">ethically very problematic!</a> A legal case has been brought by a few professional illustrators who have had their <a href=\"https://www.polygon.com/23558946/ai-art-lawsuit-stability-stable-diffusion-deviantart-midjourney\">hard-won, marketable styles straight-up ganked</a> by text-to-image processors. While the second most discoursed-about ML-generation medium, that of text, is not criticized as often on an intellectual-property basis as on its <a href=\"https://www.msn.com/en-xl/news/other/lies-racism-and-ai-it-experts-point-to-serious-flaws-in-chatgpt/ar-AA16X10j\">tendency to present statistically-likely nonsense as authoritative-sounding truth</a>, I still worry about its contribution to AI's brand in general as ripping off artists and creators who most often weren't even given opportunity to opt out.\n\n</p>\n<p>\nWhy would I be worried personally? Because I'm enchanted by the sounds of <a href=\"https://wandb.ai/wandb_gen/audio/reports/A-Gentle-Introduction-to-Dance-Diffusion--VmlldzoyNjg1Mzky\">Dance Diffusion</a>, an application of the <a href=\"https://stability.ai/blog/stable-diffusion-v2-release\">Stable Diffusion</a> method to the generation of audio. Like its image-creating sibling, Dance Diffusion starts either from noise - fully random data - or from some starting data with noise transparently overlaid. It then \"denoises\" the data toward what its model says is likely. As with image generators, giving the model some starting data can result in what's known as \"style transfer\" - rendering the preexisting content in a style closer to the model, while keeping the fundamentals of the starting point intact. This is, for the most part, how I've been using DD - to do things like ask a model trained on nothing but drum solos to transform a clip from a rap vocal, and other such. (Models that do text-to-sound generation, or creation of audio from written prompts, are <a href=\"https://audioldm.github.io/\">beginning to emerge</a> as of this writing but are still fairly limited.)\n\n</p>\n<p>\nI have mostly done my style transfers with pre-made models trained on relatively small sets of recordings. My favorite results have come from a model called \"unlocked-250k,\" which gets its first name from its training data, the <a href=\"https://archive.org/details/unlockedrecordings\">Unlocked Recordings collection on the Internet Archive</a>. This collection, despite what one might assume from its presence on IA for free download, is mostly under copyright, and not under any sort of unusually permissive license. (None of it is \"in print\" or otherwise commercially available.) So why are these recordings here, in this model that's in the default model selection for this tool? <i>How does it keep not occurring to nerds that this is a problem?</i>\n\n</p>\n<p>\nBut here's the thing: when it comes to music, we already have the tools to deal with this situation. They're called <a href=\"https://www.ascap.com/\">ASCAP</a> and <a href=\"https://www.bmi.com/\">BMI</a>. In fact, these tools were created in response to a nearly identical problem: technological changes to the way musicians' IP is distributed, which made said distribution much more indirect and, uh, diffuse.\n\n</p>\n<p>\nI doubt these institutions are perfect - I'm certainly not at a point in <a href=\"https://gibberish.com/filemaker/\">my music career</a> where I'm in a position to need to know lots about them. (Also I'm completely eliding the issue of voice actors, for whom style transfer is already becoming a threat - but they do have a union!) But I bet they could be talked into handling artists' contributions to the statistical probability of a piece of music's direction and form as it evolves out of noise. Those contributions are individually small, but we generally know exactly what group of artists ought to be getting them, for which recordings. And in the case of very composed starting data, like the hummed basslines and melody fragments I've been making so I can transform them into weird blurts of orchestra, the songwriting is not actually in the picture in the final product (there's some mechanism that gets royalties to arrangers and producers, but I don't know that it's one of the same ones). So I'd expect what users of audio AIs end up paying, as royalties or fees, wouldn't be as large as if you sample something outright. Everybody wins!\n\n</p>\n<p>\nI can think of a number of things to quibble back and forth about in such an arrangement (what about consent? You don't get to opt out of having your song played on the radio; is this similar?), but the point is this sort of problem can be understood and handled, and appropriate institutions can be created to attempt to deal with it. Is it conceivable that visual artists could respond to AI by forming a similar layer of institutions? I doubt they have the muscle, plus maybe there is too much work-for-hire happening in illustration, compared to recorded music, to make that approach make sense. But it all puts me in mind of <a href=\"https://aeon.co/essays/the-tragedy-of-the-commons-is-a-false-and-dangerous-myth\">Elinor Ostrom's work debunking</a> (before it was published??!?!) the so-called tragedy of the commons. Everything stays complicated about human beings working together, but invested people with a commitment to each other can work out creative solutions. That gives us an alternative to the simple, absolute cancellation of an entire, fascinating line of research and activity. I hope we take it, in whatever form.</p>",
+            "value": "(Sorry I'm late.)\n\n\nIn case you missed it, the latest thing we're calling AI (or Machine Learning or whatever) is ethically very problematic! A legal case has been brought by a few professional illustrators who have had their hard-won, marketable styles straight-up ganked by text-to-image processors. While the second most discoursed-about ML-generation medium, that of text, is not criticized as often on an intellectual-property basis as on its tendency to present statistically-likely nonsense as authoritative-sounding truth, I still worry about its contribution to AI's brand in general as ripping off artists and creators who most often weren't even given opportunity to opt out.\n\n\nWhy would I be worried personally? Because I'm enchanted by the sounds of Dance Diffusion, an application of the Stable Diffusion method to the generation of audio. Like its image-creating sibling, Dance Diffusion starts either from noise - fully random data - or from some starting data with noise transparently overlaid. It then \"denoises\" the data toward what its model says is likely. As with image generators, giving the model some starting data can result in what's known as \"style transfer\" - rendering the preexisting content in a style closer to the model, while keeping the fundamentals of the starting point intact. This is, for the most part, how I've been using DD - to do things like ask a model trained on nothing but drum solos to transform a clip from a rap vocal, and other such. (Models that do text-to-sound generation, or creation of audio from written prompts, are beginning to emerge as of this writing but are still fairly limited.)\n\n\nI have mostly done my style transfers with pre-made models trained on relatively small sets of recordings. My favorite results have come from a model called \"unlocked-250k,\" which gets its first name from its training data, the Unlocked Recordings collection on the Internet Archive. This collection, despite what one might assume from its presence on IA for free download, is mostly under copyright, and not under any sort of unusually permissive license. (None of it is \"in print\" or otherwise commercially available.) So why are these recordings here, in this model that's in the default model selection for this tool? How does it keep not occurring to nerds that this is a problem?\n\n\nBut here's the thing: when it comes to music, we already have the tools to deal with this situation. They're called ASCAP and BMI. In fact, these tools were created in response to a nearly identical problem: technological changes to the way musicians' IP is distributed, which made said distribution much more indirect and, uh, diffuse.\n\n\nI doubt these institutions are perfect - I'm certainly not at a point in my music career where I'm in a position to need to know lots about them. (Also I'm completely eliding the issue of voice actors, for whom style transfer is already becoming a threat - but they do have a union!) But I bet they could be talked into handling artists' contributions to the statistical probability of a piece of music's direction and form as it evolves out of noise. Those contributions are individually small, but we generally know exactly what group of artists ought to be getting them, for which recordings. And in the case of very composed starting data, like the hummed basslines and melody fragments I've been making so I can transform them into weird blurts of orchestra, the songwriting is not actually in the picture in the final product (there's some mechanism that gets royalties to arrangers and producers, but I don't know that it's one of the same ones). So I'd expect what users of audio AIs end up paying, as royalties or fees, wouldn't be as large as if you sample something outright. Everybody wins!\n\n\nI can think of a number of things to quibble back and forth about in such an arrangement (what about consent? You don't get to opt out of having your song played on the radio; is this similar?), but the point is this sort of problem can be understood and handled, and appropriate institutions can be created to attempt to deal with it. Is it conceivable that visual artists could respond to AI by forming a similar layer of institutions? I doubt they have the muscle, plus maybe there is too much work-for-hire happening in illustration, compared to recorded music, to make that approach make sense. But it all puts me in mind of Elinor Ostrom's work debunking (before it was published??!?!) the so-called tragedy of the commons. Everything stays complicated about human beings working together, but invested people with a commitment to each other can work out creative solutions. That gives us an alternative to the simple, absolute cancellation of an entire, fascinating line of research and activity. I hope we take it, in whatever form."
+          }
+        ],
+        "url": [
+          "http://www.gibberish.com/2023/01/31/why-ai-audio-is-a-different-ballgame"
+        ],
+        "published": [
+          "2023-01-31T21:56:12+0000"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "logo": [
+                "http://www.gibberish.com/file/c4d11d42d474160af991976b2ade6373"
+              ],
+              "photo": [
+                "http://www.gibberish.com/file/c4d11d42d474160af991976b2ade6373"
+              ],
+              "name": [
+                "Mike Sugarbaker"
+              ],
+              "url": [
+                "http://www.gibberish.com/profile/misuba",
+                "http://www.gibberish.com/profile/misuba"
+              ]
+            },
+            "value": "Mike Sugarbaker"
+          }
+        ],
+        "name": [
           "Oh hey, it's getting toward time for my annual blog post"
         ],
         "content": [
@@ -447,54 +492,6 @@
           "https://twitter.com/misuba/status/913794520596320261"
         ]
       }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "author": [
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "logo": [
-                "http://www.gibberish.com/file/c4d11d42d474160af991976b2ade6373"
-              ],
-              "photo": [
-                "http://www.gibberish.com/file/c4d11d42d474160af991976b2ade6373"
-              ],
-              "name": [
-                "Mike Sugarbaker"
-              ],
-              "url": [
-                "http://www.gibberish.com/profile/misuba",
-                "http://www.gibberish.com/profile/misuba"
-              ]
-            },
-            "value": "Mike Sugarbaker"
-          }
-        ],
-        "name": [
-          "Cuphead is kind of tragic: if it's not 60fps it's an unplayable game of its genre, but if it's not 12fps it undermines its aesthetic goals."
-        ],
-        "content": [
-          {
-            "html": "Cuphead is kind of tragic: if it's not 60fps it's an unplayable game of its genre, but if it's not 12fps it undermines its aesthetic goals.",
-            "value": "Cuphead is kind of tragic: if it's not 60fps it's an unplayable game of its genre, but if it's not 12fps it undermines its aesthetic goals."
-          }
-        ],
-        "url": [
-          "http://www.gibberish.com/2017/09/29/cuphead-is-kind-of-tragic-if-its-not-60fps-its"
-        ],
-        "published": [
-          "2017-09-29T04:58:01+0000"
-        ],
-        "syndication": [
-          "https://twitter.com/misuba/status/913628910369288192"
-        ]
-      }
     }
   ],
   "rels": {
@@ -571,6 +568,7 @@
       "http://www.gibberish.com/micropub/endpoint"
     ],
     "permalink": [
+      "http://www.gibberish.com/2023/01/31/why-ai-audio-is-a-different-ballgame",
       "http://www.gibberish.com/2022/02/24/oh-hey-its-getting-toward-time-for-my-annual-blog",
       "http://www.gibberish.com/2021/03/17/so-the-webs-over",
       "http://www.gibberish.com/2020/07/15/--i-dont-have-anything-to-say-to-you-people",
@@ -579,8 +577,7 @@
       "http://www.gibberish.com/2017/10/09/a-new-illustrated-podcast-from-the-creators-of-childrens-hour",
       "http://www.gibberish.com/2017/10/09/slow-week-for-danny---refactoring-probly-lots-of-bugs",
       "http://www.gibberish.com/2017/09/29/things-are-still-01-as-foretold-but-here-is-a",
-      "http://www.gibberish.com/2017/09/29/i-dropped-a-couple-of-hints-about-this-but-heres",
-      "http://www.gibberish.com/2017/09/29/cuphead-is-kind-of-tragic-if-its-not-60fps-its"
+      "http://www.gibberish.com/2017/09/29/i-dropped-a-couple-of-hints-about-this-but-heres"
     ],
     "prev": [
       "http://www.gibberish.com/?offset=10"
@@ -742,6 +739,12 @@
         "stylesheet"
       ]
     },
+    "http://www.gibberish.com/2023/01/31/why-ai-audio-is-a-different-ballgame": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "31 Jan 2023"
+    },
     "http://www.gibberish.com/2022/02/24/oh-hey-its-getting-toward-time-for-my-annual-blog": {
       "rels": [
         "permalink"
@@ -791,12 +794,6 @@
       "text": "29 Sep 2017"
     },
     "http://www.gibberish.com/2017/09/29/i-dropped-a-couple-of-hints-about-this-but-heres": {
-      "rels": [
-        "permalink"
-      ],
-      "text": "29 Sep 2017"
-    },
-    "http://www.gibberish.com/2017/09/29/cuphead-is-kind-of-tragic-if-its-not-60fps-its": {
       "rels": [
         "permalink"
       ],

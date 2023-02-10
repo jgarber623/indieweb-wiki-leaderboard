@@ -1,9 +1,6 @@
 {
   "items": [],
   "rels": {
-    "profile": [
-      "https://gmpg.org/xfn/11"
-    ],
     "dns-prefetch": [
       "https://js.hs-scripts.com/",
       "https://www.googletagmanager.com/"
@@ -13,13 +10,9 @@
       "https://techfeeddata.com/comments/feed/"
     ],
     "stylesheet": [
-      "https://techfeeddata.com/wp-content/themes/astra/assets/css/minified/main.min.css?ver=4.0.2",
-      "https://techfeeddata.com/wp-content/uploads/astra/astra-theme-dynamic-css-404.css?ver=1675838504",
-      "https://techfeeddata.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1",
-      "https://techfeeddata.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17",
-      "https://techfeeddata.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.1.1",
-      "https://techfeeddata.com/wp-content/uploads/astra-addon/astra-addon-63cbebe47f9563-46756911.css?ver=4.0.1",
-      "https://techfeeddata.com/wp-content/uploads/astra-addon/astra-addon-dynamic-css-404.css?ver=1675838504",
+      "https://techfeeddata.com/wp-includes/blocks/navigation/style.min.css?ver=6.1.1",
+      "https://techfeeddata.com/wp-content/plugins/twentig/dist/blocks/common.min.css?ver=be6428226d75d7a7464c",
+      "https://techfeeddata.com/wp-content/plugins/twentig/dist/blocks/tw-spacing.min.css?ver=1.5.4",
       "https://techfeeddata.com/wp-content/plugins/jetpack/css/jetpack.css?ver=11.8"
     ],
     "https://api.w.org/": [
@@ -43,14 +36,12 @@
     ],
     "home": [
       "https://techfeeddata.com/"
+    ],
+    "nofollow": [
+      "https://wordpress.org/"
     ]
   },
   "rel-urls": {
-    "https://gmpg.org/xfn/11": {
-      "rels": [
-        "profile"
-      ]
-    },
     "https://js.hs-scripts.com/": {
       "rels": [
         "dns-prefetch"
@@ -75,43 +66,19 @@
       "title": "Techfeeddata » Comments Feed",
       "type": "application/rss+xml"
     },
-    "https://techfeeddata.com/wp-content/themes/astra/assets/css/minified/main.min.css?ver=4.0.2": {
+    "https://techfeeddata.com/wp-includes/blocks/navigation/style.min.css?ver=6.1.1": {
       "rels": [
         "stylesheet"
       ],
       "media": "all"
     },
-    "https://techfeeddata.com/wp-content/uploads/astra/astra-theme-dynamic-css-404.css?ver=1675838504": {
+    "https://techfeeddata.com/wp-content/plugins/twentig/dist/blocks/common.min.css?ver=be6428226d75d7a7464c": {
       "rels": [
         "stylesheet"
       ],
       "media": "all"
     },
-    "https://techfeeddata.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "all"
-    },
-    "https://techfeeddata.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "all"
-    },
-    "https://techfeeddata.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.1.1": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "all"
-    },
-    "https://techfeeddata.com/wp-content/uploads/astra-addon/astra-addon-63cbebe47f9563-46756911.css?ver=4.0.1": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "all"
-    },
-    "https://techfeeddata.com/wp-content/uploads/astra-addon/astra-addon-dynamic-css-404.css?ver=1675838504": {
+    "https://techfeeddata.com/wp-content/plugins/twentig/dist/blocks/tw-spacing.min.css?ver=1.5.4": {
       "rels": [
         "stylesheet"
       ],
@@ -164,7 +131,14 @@
     "https://techfeeddata.com/": {
       "rels": [
         "home"
-      ]
+      ],
+      "text": "Techfeeddata"
+    },
+    "https://wordpress.org/": {
+      "rels": [
+        "nofollow"
+      ],
+      "text": "WordPress"
     }
   }
 }
