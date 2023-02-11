@@ -40,6 +40,517 @@
         "h-entry"
       ],
       "properties": {
+        "content": [
+          {
+            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://www.lrb.co.uk/the-paper/v45/n04/patricia-lockwood/diary\">\nPatricia Lockwood · Diary: Saving a Life · LRB 16 February 2023\n</a>\n</h3>\n\n<p>When Patricia Lockwood writes something, you read it.</p>\n\n<p>Read this.</p>",
+            "value": "Patricia Lockwood · Diary: Saving a Life · LRB 16 February 2023\n\n\n\nWhen Patricia Lockwood writes something, you read it.\n\nRead this."
+          }
+        ],
+        "name": [
+          "Patricia Lockwood · Diary: Saving a Life · LRB 16 February 2023"
+        ],
+        "bookmark-of": [
+          "https://www.lrb.co.uk/the-paper/v45/n04/patricia-lockwood/diary"
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "32.95693327"
+              ],
+              "longitude": [
+                "-117.24943670"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/links/19896"
+        ],
+        "published": [
+          "2023-02-11T05:02:48Z"
+        ],
+        "category": [
+          "writing",
+          "travel",
+          "london",
+          "medical",
+          "story"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://matthiasott.com/notes/streams-of-consciousness\">\nStreams of Consciousness · Matthias Ott – User Experience Designer\n</a>\n</h3>\n\n<blockquote>\n  <p>Your website is a way for you to share your stream of consciousness, that temporary and subjective and highly biased snippet of the universe, with everyone else, including your future self.</p>\n</blockquote>",
+            "value": "Streams of Consciousness · Matthias Ott – User Experience Designer\n\n\n\n\n  Your website is a way for you to share your stream of consciousness, that temporary and subjective and highly biased snippet of the universe, with everyone else, including your future self."
+          }
+        ],
+        "name": [
+          "Streams of Consciousness · Matthias Ott – User Experience Designer"
+        ],
+        "bookmark-of": [
+          "https://matthiasott.com/notes/streams-of-consciousness"
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "32.95698418"
+              ],
+              "longitude": [
+                "-117.24940727"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/links/19895"
+        ],
+        "published": [
+          "2023-02-11T00:10:09Z"
+        ],
+        "category": [
+          "streams",
+          "homepages",
+          "indieweb",
+          "personal",
+          "publishing",
+          "websites",
+          "design"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Home stream"
+        ],
+        "url": [
+          "https://adactio.com/journal/19894"
+        ],
+        "content": [
+          {
+            "html": "<p><a href=\"https://werd.io/\">Ben</a> wrote a post a little while back about maybe <a href=\"https://werd.io/2023/organizing-my-blog\">organising his home page differently</a>. It’s currently a stream.</p>\n\n<p>That prompted <a href=\"https://om.co/\">Om</a> to ask <a href=\"https://om.co/2023/01/25/is-stream-as-a-design-paradigm-over/\">is “stream” as a design paradigm over?</a> Mind you, he’s not talking about personal websites:</p>\n\n<blockquote>\n  <p>Across the web, one can see “streams” losing their preeminence. Social networks are increasingly algorithmically organized, so their stream isn’t really a free-flowing stream. It is more like a river that has been heavily dammed. It is organized around what the machine thinks we need to see based on what we have seen in the past.</p>\n</blockquote>\n\n<p>Funnily enough, I’ve some recent examples of personal homepages become <em>more</em> like social networks, at least in terms of visual design. A lot of people I know are liking the recent redesigns from <a href=\"https://nerdy.dev/\">Adam</a> and <a href=\"https://jhey.dev/\">Jhey</a>.</p>\n\n<p>Here on my site, my home page is kind of a stream. I’ve got notes, links, and blog posts one after another in chronological order. The other sections of my site are ways of focusing in on the specific types of content <a href=\"https://adactio.com/links\">links</a>, short <a href=\"https://adactio.com/notes\">notes</a>, blog posts in <a href=\"https://adactio.com/journal\">my journal</a>.</p>\n\n<p>Behind the scenes, entries those separate sections of my site are all stored in the same database table. In some ways, the separation into different sections of the site is more like tagging. So the home page is actually the simplest bit to implement: grab the latest 20 entries out of that database table.</p>\n\n<p>I don’t make too much visual distinction between the different kinds of posts. My links and my notes look quite similar. And if I post a lot of commentary with a link, it looks a lot like a blog post.</p>\n\n<p>Maybe I should make them more distinct, visually. Because I actually <em>like</em> the higgedly-piggedly nature of a stream of different kinds of stuff. I want the vibe to be less like a pristine Apple store, and more like a chaotic second-hand bookstore.</p>\n\n<p>Going back to <a href=\"https://werd.io/2023/organizing-my-blog\">what Ben wrote about his site</a>:</p>\n\n<blockquote>\n  <p>As of right now, the homepage is a mix of long-form posts, short thoughts, and links I consider interesting, presented as a stream. It’s a genuine representation of what I’m reading and thinking about, and each post’s permalink page looks fine to me, but it doesn’t quite hold together as a whole. If you <a href=\"https://werd.io/\">look at my homepage with fresh eyes</a>, my stream is a hodgepodge. There’s no <em>through line</em>.</p>\n</blockquote>\n\n<p>For me, that’s a feature, not a bug. There’s no through line on my home page either. I like that.</p>",
+            "value": "Ben wrote a post a little while back about maybe organising his home page differently. It’s currently a stream.\n\nThat prompted Om to ask is “stream” as a design paradigm over? Mind you, he’s not talking about personal websites:\n\n\n  Across the web, one can see “streams” losing their preeminence. Social networks are increasingly algorithmically organized, so their stream isn’t really a free-flowing stream. It is more like a river that has been heavily dammed. It is organized around what the machine thinks we need to see based on what we have seen in the past.\n\n\nFunnily enough, I’ve some recent examples of personal homepages become more like social networks, at least in terms of visual design. A lot of people I know are liking the recent redesigns from Adam and Jhey.\n\nHere on my site, my home page is kind of a stream. I’ve got notes, links, and blog posts one after another in chronological order. The other sections of my site are ways of focusing in on the specific types of content links, short notes, blog posts in my journal.\n\nBehind the scenes, entries those separate sections of my site are all stored in the same database table. In some ways, the separation into different sections of the site is more like tagging. So the home page is actually the simplest bit to implement: grab the latest 20 entries out of that database table.\n\nI don’t make too much visual distinction between the different kinds of posts. My links and my notes look quite similar. And if I post a lot of commentary with a link, it looks a lot like a blog post.\n\nMaybe I should make them more distinct, visually. Because I actually like the higgedly-piggedly nature of a stream of different kinds of stuff. I want the vibe to be less like a pristine Apple store, and more like a chaotic second-hand bookstore.\n\nGoing back to what Ben wrote about his site:\n\n\n  As of right now, the homepage is a mix of long-form posts, short thoughts, and links I consider interesting, presented as a stream. It’s a genuine representation of what I’m reading and thinking about, and each post’s permalink page looks fine to me, but it doesn’t quite hold together as a whole. If you look at my homepage with fresh eyes, my stream is a hodgepodge. There’s no through line.\n\n\nFor me, that’s a feature, not a bug. There’s no through line on my home page either. I like that."
+          }
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "32.95696983"
+              ],
+              "longitude": [
+                "-117.24940643"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "published": [
+          "2023-02-10T20:26:38Z"
+        ],
+        "category": [
+          "streams",
+          "homepages",
+          "indieweb",
+          "personal",
+          "publishing",
+          "websites",
+          "design"
+        ],
+        "syndication": [
+          "https://adactio.medium.com/cbf3fd39cbbf"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://ishadeed.com/article/responsive-design/\">\nThe Guide To Responsive Design In 2023 and Beyond - Ahmad Shadeed\n</a>\n</h3>\n\n<blockquote>\n  <p>Instead of thinking about responsive design in terms of media queries, I like to think of responsive design in these categories.</p>\n  \n  <ul>\n  <li>Responsive to the content</li>\n  <li>Responsive to the viewport</li>\n  <li>Responsive to the container</li>\n  <li>Responsive to the user preferences</li>\n  </ul>\n</blockquote>",
+            "value": "The Guide To Responsive Design In 2023 and Beyond - Ahmad Shadeed\n\n\n\n\n  Instead of thinking about responsive design in terms of media queries, I like to think of responsive design in these categories.\n  \n  \n  Responsive to the content\n  Responsive to the viewport\n  Responsive to the container\n  Responsive to the user preferences"
+          }
+        ],
+        "name": [
+          "The Guide To Responsive Design In 2023 and Beyond - Ahmad Shadeed"
+        ],
+        "bookmark-of": [
+          "https://ishadeed.com/article/responsive-design/"
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "32.95705933"
+              ],
+              "longitude": [
+                "-117.24933514"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/links/19893"
+        ],
+        "published": [
+          "2023-02-10T20:12:58Z"
+        ],
+        "category": [
+          "responsive",
+          "design",
+          "frontend",
+          "development",
+          "css",
+          "container",
+          "queries",
+          "preference",
+          "fluid",
+          "sizing",
+          "layout",
+          "clamp",
+          "flexbox",
+          "grid"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Change"
+        ],
+        "url": [
+          "https://adactio.com/journal/19892"
+        ],
+        "content": [
+          {
+            "html": "<p>I’ve spent the last few days in San Francisco where I was hosting <a href=\"https://leadingdesign.com/conferences/sanfran-2023\">Leading Design</a>.</p>\n\n<p>It was excellent. Rebecca did an absolutley amazing job with the curation, and the <a href=\"https://clearleft.com/\">Clearleft</a> delivered a terrific event, as always. I’m continually amazed by the way such a relatively small agency can punch above its weight when it comes to putting on world-class events <em>and</em> delivering client work.</p>\n\n<p>I won’t go into much detail on what was shared at Leading Design. There’s an understanding that it’s a safe space for people to speak freely and share their experiences in an open and honest way. I can tell you that there were some tough topics. Given the recent rounds of layoffs in this neck of the woods, this was bound to happen.</p>\n\n<p>I was chatting with <a href=\"https://www.petermerholz.com/\">Peter</a> at breakfast on the second day and he was saying that maybe there was too much emphasis on the negative, like we were in danger of wallowing in our own misery. It’s a fair point, but I offered a counterpoint that I also heard other people express: when else do these people get a chance to let their guard down and have a good ol’ moan? These are design leaders who need to project an air of calm reassurance when they’re at work. Leading Design is a welcome opportunity to just let it all out.</p>\n\n<p>When we did Leading Design in New York in March of 2022, it was an intimate gathering and the overwhelming theme was togetherness. After two years of screen-based interactions, it was cathartic to get together in the same location to swap stories and be reminded you are not alone.</p>\n\n<p>Leading Design San Francisco was equally cathartic, but the theme this time was change. Change can be scary. But it can also be enervating.</p>\n\n<p>After two days of introducing and listening to fascinating talks on the topic of change, I closed out my duties by quoting the late great <a href=\"https://www.octaviabutler.com/\">Octavia Butler</a>. I spoke the mantra of the secular <a href=\"https://en.wikipedia.org/wiki/Earthseed\">Earthseed</a> religion founded in <cite>Parable Of The Sower<cite>:</cite></cite></p>\n\n<blockquote>\n  <p>All that you touch<br>\n  You Change.</p>\n  \n  <p>All that you Change<br>\n  Changes you.</p>\n  \n  <p>The only lasting truth<br>\n  Is Change.</p>\n  \n  <p>God<br>\n  Is Change.</p>\n</blockquote>",
+            "value": "I’ve spent the last few days in San Francisco where I was hosting Leading Design.\n\nIt was excellent. Rebecca did an absolutley amazing job with the curation, and the Clearleft delivered a terrific event, as always. I’m continually amazed by the way such a relatively small agency can punch above its weight when it comes to putting on world-class events and delivering client work.\n\nI won’t go into much detail on what was shared at Leading Design. There’s an understanding that it’s a safe space for people to speak freely and share their experiences in an open and honest way. I can tell you that there were some tough topics. Given the recent rounds of layoffs in this neck of the woods, this was bound to happen.\n\nI was chatting with Peter at breakfast on the second day and he was saying that maybe there was too much emphasis on the negative, like we were in danger of wallowing in our own misery. It’s a fair point, but I offered a counterpoint that I also heard other people express: when else do these people get a chance to let their guard down and have a good ol’ moan? These are design leaders who need to project an air of calm reassurance when they’re at work. Leading Design is a welcome opportunity to just let it all out.\n\nWhen we did Leading Design in New York in March of 2022, it was an intimate gathering and the overwhelming theme was togetherness. After two years of screen-based interactions, it was cathartic to get together in the same location to swap stories and be reminded you are not alone.\n\nLeading Design San Francisco was equally cathartic, but the theme this time was change. Change can be scary. But it can also be enervating.\n\nAfter two days of introducing and listening to fascinating talks on the topic of change, I closed out my duties by quoting the late great Octavia Butler. I spoke the mantra of the secular Earthseed religion founded in Parable Of The Sower:\n\n\n  All that you touch\n  You Change.\n  \n  All that you Change\n  Changes you.\n  \n  The only lasting truth\n  Is Change.\n  \n  God\n  Is Change."
+          }
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "32.95697570"
+              ],
+              "longitude": [
+                "-117.24937985"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "published": [
+          "2023-02-10T18:53:58Z"
+        ],
+        "category": [
+          "change",
+          "leadingdesign",
+          "ldconf",
+          "sanfrancisco",
+          "conferences",
+          "events",
+          "hosting",
+          "talks",
+          "speaking"
+        ],
+        "syndication": [
+          "https://adactio.medium.com/f8b1ed659cac"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://www.storyblok.com/ev/stories-on-the-road-uk-23\">\nStories on the Road - UK 23 | Storyblok\n</a>\n</h3>\n\n<p>I’ll be speaking at this free early evening event with Arisa Fukusaki and <a href=\"https://www.cassie.codes/\">Cassie</a> in Brighton on Monday, February 27th. <a href=\"https://ti.to/beyondtellerrand/stories-on-the-road/with/smw3dolmnla\">Grab a ticket</a> and come along for some pizza and nerdiness.</p>",
+            "value": "Stories on the Road - UK 23 | Storyblok\n\n\n\nI’ll be speaking at this free early evening event with Arisa Fukusaki and Cassie in Brighton on Monday, February 27th. Grab a ticket and come along for some pizza and nerdiness."
+          }
+        ],
+        "name": [
+          "Stories on the Road - UK 23 | Storyblok"
+        ],
+        "bookmark-of": [
+          "https://www.storyblok.com/ev/stories-on-the-road-uk-23"
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "32.95693289"
+              ],
+              "longitude": [
+                "-117.24937319"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/links/19891"
+        ],
+        "published": [
+          "2023-02-10T18:22:59Z"
+        ],
+        "category": [
+          "storyblok",
+          "roadshow",
+          "brighton",
+          "events",
+          "talks",
+          "presentations",
+          "speaking"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://genmon.github.io/braggoscope/\">\nExplore the In Our Time archive | Braggoscope\n</a>\n</h3>\n\n<p><a href=\"https://interconnected.org/\">Matt</a> made this lovely website for spelunking and hyperlinking through the thousand episodes of Radio 4’s excellent In Our Time programme.</p>\n\n<p>He’s also written a little bit about <a href=\"https://genmon.github.io/braggoscope/about\">how he made it</a> using some AI (artificial insemination) for the categorisation code.</p>",
+            "value": "Explore the In Our Time archive | Braggoscope\n\n\n\nMatt made this lovely website for spelunking and hyperlinking through the thousand episodes of Radio 4’s excellent In Our Time programme.\n\nHe’s also written a little bit about how he made it using some AI (artificial insemination) for the categorisation code."
+          }
+        ],
+        "name": [
+          "Explore the In Our Time archive | Braggoscope"
+        ],
+        "bookmark-of": [
+          "https://genmon.github.io/braggoscope/"
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "32.95693953"
+              ],
+              "longitude": [
+                "-117.24934981"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/links/19890"
+        ],
+        "published": [
+          "2023-02-10T18:16:09Z"
+        ],
+        "category": [
+          "inourtime",
+          "braggoscope",
+          "directory",
+          "radio4",
+          "episodes",
+          "categories",
+          "themes",
+          "linking",
+          "audio",
+          "findability"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://www.newyorker.com/tech/annals-of-technology/chatgpt-is-a-blurry-jpeg-of-the-web\">\nChatGPT Is a Blurry JPEG of the Web | The New Yorker\n</a>\n</h3>\n\n<p>A very astute framing by Ted Chiang—large language models as a form of lossy compression for text.</p>\n\n<blockquote>\n  <p>When we’re dealing with sequences of words, lossy compression looks smarter than lossless compression.</p>\n  \n  <p>A lot of uses have been proposed for large language models. Thinking about them as blurry JPEGs offers a way to evaluate what they might or might not be well suited for.</p>\n</blockquote>",
+            "value": "ChatGPT Is a Blurry JPEG of the Web | The New Yorker\n\n\n\nA very astute framing by Ted Chiang—large language models as a form of lossy compression for text.\n\n\n  When we’re dealing with sequences of words, lossy compression looks smarter than lossless compression.\n  \n  A lot of uses have been proposed for large language models. Thinking about them as blurry JPEGs offers a way to evaluate what they might or might not be well suited for."
+          }
+        ],
+        "name": [
+          "ChatGPT Is a Blurry JPEG of the Web | The New Yorker"
+        ],
+        "bookmark-of": [
+          "https://www.newyorker.com/tech/annals-of-technology/chatgpt-is-a-blurry-jpeg-of-the-web"
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "32.95695428"
+              ],
+              "longitude": [
+                "-117.24933705"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/links/19889"
+        ],
+        "published": [
+          "2023-02-10T18:06:15Z"
+        ],
+        "category": [
+          "chatgpt",
+          "llm",
+          "words",
+          "text",
+          "writing",
+          "language",
+          "compression",
+          "lossless",
+          "lossy",
+          "ai"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://www.matuzo.at/blog/2023/single-page-applications-criticism/\">\nWhy I’m not the biggest fan of Single Page Applications - Manuel Matuzović\n</a>\n</h3>\n\n<blockquote>\n  <p>I guess the biggest criticism here is that it feels like people who believe in the superiority of single page applications and the entire ecosystem focus more on developer experience (DX) than user experience. That sounds like a dangerous blanket statement, but after all these years, I never had the feeling that the argument “better DX leads to better UX” was ever true. It’s nothing more than a justification for the immense complexity and potentially significantly worse UX. And even if the core argument isn’t DX, other arguments like scalability, maintainability, competitive ability, easier recruiting (“everyone uses React”), and cost effectiveness, in my experience, only sound good, but rarely hold up to their promises.</p>\n</blockquote>",
+            "value": "Why I’m not the biggest fan of Single Page Applications - Manuel Matuzović\n\n\n\n\n  I guess the biggest criticism here is that it feels like people who believe in the superiority of single page applications and the entire ecosystem focus more on developer experience (DX) than user experience. That sounds like a dangerous blanket statement, but after all these years, I never had the feeling that the argument “better DX leads to better UX” was ever true. It’s nothing more than a justification for the immense complexity and potentially significantly worse UX. And even if the core argument isn’t DX, other arguments like scalability, maintainability, competitive ability, easier recruiting (“everyone uses React”), and cost effectiveness, in my experience, only sound good, but rarely hold up to their promises."
+          }
+        ],
+        "name": [
+          "Why I’m not the biggest fan of Single Page Applications - Manuel Matuzović"
+        ],
+        "bookmark-of": [
+          "https://www.matuzo.at/blog/2023/single-page-applications-criticism/"
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "32.95688274"
+              ],
+              "longitude": [
+                "-117.24940099"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/links/19888"
+        ],
+        "published": [
+          "2023-02-10T17:43:52Z"
+        ],
+        "category": [
+          "spas",
+          "singlepageapps",
+          "javascript",
+          "frameworks",
+          "libraries",
+          "react",
+          "frontend",
+          "development",
+          "complexity",
+          "accessibility",
+          "a11y",
+          "routing",
+          "ux",
+          "performance"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "<p>In pastoral agriculture, the abbreviation AI doesn’t stand for Artificial Intelligence.</p>\n\n<p>In that farming context, a tool like ChatGPT is a good demonstration of AI.</p>",
+            "value": "In pastoral agriculture, the abbreviation AI doesn’t stand for Artificial Intelligence.\n\nIn that farming context, a tool like ChatGPT is a good demonstration of AI."
+          }
+        ],
+        "name": [
+          "In pastoral agriculture, the abbreviation AI doesn’t stand for Artificial Intelligence.\n\nIn that farming context, a tool like ChatGPT is a good demonstration of AI."
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "32.95706111"
+              ],
+              "longitude": [
+                "-117.24937861"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/notes/19887"
+        ],
+        "published": [
+          "2023-02-10T16:54:54Z"
+        ],
+        "syndication": [
+          "https://mastodon.social/@adactio/109841487941367850"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
         "photo": [
           {
             "value": "https://adactio.com/images/uploaded/19885/small.jpg",
@@ -540,522 +1051,6 @@
           "formats",
           "tutorial",
           "performance",
-          "frontend",
-          "development"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "content": [
-          {
-            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://blog.webpagetest.org/posts/webpagetests-guiding-principles/\">\nWebPageTest’s Guiding Principles - WebPageTest Blog\n</a>\n</h3>\n\n<blockquote>\n  <ol>\n  <li>Make the right thing easy</li>\n  <li>Always answer “so what”?</li>\n  <li>Close the gap between “something is wrong” to “we fixed it”</li>\n  </ol>\n</blockquote>",
-            "value": "WebPageTest’s Guiding Principles - WebPageTest Blog\n\n\n\n\n  \n  Make the right thing easy\n  Always answer “so what”?\n  Close the gap between “something is wrong” to “we fixed it”"
-          }
-        ],
-        "name": [
-          "WebPageTest’s Guiding Principles - WebPageTest Blog"
-        ],
-        "bookmark-of": [
-          "https://blog.webpagetest.org/posts/webpagetests-guiding-principles/"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83251215"
-              ],
-              "longitude": [
-                "-0.11808585"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/links/19873"
-        ],
-        "published": [
-          "2023-02-02T17:02:29Z"
-        ],
-        "category": [
-          "design",
-          "principles",
-          "webpagetest",
-          "guiding",
-          "performance"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "content": [
-          {
-            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://ericwbailey.website/published/modern-health-frameworks-performance-and-harm/\">\nModern Health, frameworks, performance, and harm – Eric Bailey\n</a>\n</h3>\n\n<blockquote>\n  <p>A person seeking help in a time of crisis does not care about TypeScript, tree shaking, hot module replacement, A/B tests, burndown charts, NPS, OKRs, KPIs, or other startup jargon. <a href=\"https://andy-bell.co.uk/speed-for-who/\">Developer experience does not count for shit</a> if the person using the thing they built can’t actually get what they need.</p>\n</blockquote>",
-            "value": "Modern Health, frameworks, performance, and harm – Eric Bailey\n\n\n\n\n  A person seeking help in a time of crisis does not care about TypeScript, tree shaking, hot module replacement, A/B tests, burndown charts, NPS, OKRs, KPIs, or other startup jargon. Developer experience does not count for shit if the person using the thing they built can’t actually get what they need."
-          }
-        ],
-        "name": [
-          "Modern Health, frameworks, performance, and harm – Eric Bailey"
-        ],
-        "bookmark-of": [
-          "https://ericwbailey.website/published/modern-health-frameworks-performance-and-harm/"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83251409"
-              ],
-              "longitude": [
-                "-0.11810345"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/links/19872"
-        ],
-        "published": [
-          "2023-02-02T17:01:13Z"
-        ],
-        "category": [
-          "frontend",
-          "development",
-          "performance",
-          "javascript",
-          "frameworks",
-          "libraries",
-          "ethics"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "photo": [
-          {
-            "value": "https://adactio.com/images/uploaded/19871/small.jpg",
-            "srcset": {
-              "320w": "https://adactio.com/images/uploaded/19871/small.jpg",
-              "480w": "https://adactio.com/images/uploaded/19871/medium.jpg",
-              "800w": "https://adactio.com/images/uploaded/19871/large.jpg"
-            },
-            "alt": "Checked in at Jolly Brewer. Wednesday night session — with Jessica"
-          }
-        ],
-        "content": [
-          {
-            "html": "<p>Checked in at Jolly Brewer. Wednesday night session — with Jessica</p>",
-            "value": "Checked in at Jolly Brewer. Wednesday night session — with Jessica"
-          }
-        ],
-        "name": [
-          "Checked in at Jolly Brewer. Wednesday night session — with Jessica"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83893121"
-              ],
-              "longitude": [
-                "-0.13357020"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/notes/19871"
-        ],
-        "published": [
-          "2023-02-01T20:31:55Z"
-        ],
-        "syndication": [
-          "https://www.swarmapp.com/user/112073/checkin/63dacc27051b07398a2ea395"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "content": [
-          {
-            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://github.com/reactjs/reactjs.org/pull/5487#issuecomment-1409720741\">\nWe’re all trying to find the guy who did this\n</a>\n</h3>\n\n<p>Imagine <a href=\"https://www.youtube.com/watch?v=WLfAf8oHrMo\">the web is a storefront, React is a hot dog car</a>, and here’s Create React App dressed as a hot dog:</p>\n\n<blockquote>\n  <p>HTML is the cornerstone of the web — so why does creating a “React app” produce an empty HTML file? Why are we not taking advantage of the most basic feature of the web—the ability to see content quickly before all the interactive code loads? Why do we wait to <em>start</em> loading the data until after all the client-side code has <em>finished</em> loading?</p>\n</blockquote>",
-            "value": "We’re all trying to find the guy who did this\n\n\n\nImagine the web is a storefront, React is a hot dog car, and here’s Create React App dressed as a hot dog:\n\n\n  HTML is the cornerstone of the web — so why does creating a “React app” produce an empty HTML file? Why are we not taking advantage of the most basic feature of the web—the ability to see content quickly before all the interactive code loads? Why do we wait to start loading the data until after all the client-side code has finished loading?"
-          }
-        ],
-        "name": [
-          "We’re all trying to find the guy who did this"
-        ],
-        "bookmark-of": [
-          "https://github.com/reactjs/reactjs.org/pull/5487#issuecomment-1409720741"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83249711"
-              ],
-              "longitude": [
-                "-0.11810830"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/links/19870"
-        ],
-        "published": [
-          "2023-02-01T14:51:17Z"
-        ],
-        "category": [
-          "react",
-          "frameworks",
-          "libraries",
-          "performance",
-          "frontend",
-          "development",
-          "createreactapp",
-          "spas",
-          "singlepageapps"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "content": [
-          {
-            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://scribe.rip/the-web-platform-is-back-fa5752fabdfc\">\nThe Web Platform Is Back\n</a>\n</h3>\n\n<p>So much ink spilled supposedly explaining what “the web platform” is …when the truth is you can just swap in the “the web” every time that phrase is used here or anywhere else.</p>\n\n<p>Anyway, the gist of this piece is: the web is good, actually.</p>",
-            "value": "The Web Platform Is Back\n\n\n\nSo much ink spilled supposedly explaining what “the web platform” is …when the truth is you can just swap in the “the web” every time that phrase is used here or anywhere else.\n\nAnyway, the gist of this piece is: the web is good, actually."
-          }
-        ],
-        "name": [
-          "The Web Platform Is Back"
-        ],
-        "bookmark-of": [
-          "https://scribe.rip/the-web-platform-is-back-fa5752fabdfc"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83249577"
-              ],
-              "longitude": [
-                "-0.11811269"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/links/19869"
-        ],
-        "published": [
-          "2023-02-01T14:15:28Z"
-        ],
-        "category": [
-          "web",
-          "platform",
-          "frontend",
-          "development",
-          "browsers",
-          "apis",
-          "standards"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "photo": [
-          {
-            "value": "https://adactio.com/images/uploaded/19866-1/small.jpg",
-            "srcset": {
-              "320w": "https://adactio.com/images/uploaded/19866-1/small.jpg",
-              "480w": "https://adactio.com/images/uploaded/19866-1/medium.jpg",
-              "800w": "https://adactio.com/images/uploaded/19866-1/large.jpg"
-            },
-            "alt": "The preserved body of an enormous squid in a long transparent tank. Two people standing to one side give some sense of the scale."
-          },
-          {
-            "value": "https://adactio.com/images/uploaded/19866-2/small.jpg",
-            "srcset": {
-              "320w": "https://adactio.com/images/uploaded/19866-2/small.jpg",
-              "480w": "https://adactio.com/images/uploaded/19866-2/medium.jpg",
-              "800w": "https://adactio.com/images/uploaded/19866-2/large.jpg"
-            },
-            "alt": "A collection of specimens, mostly fish and one tortoise, with labels from Darwin’s voyage on the Beagle."
-          },
-          {
-            "value": "https://adactio.com/images/uploaded/19866-3/small.jpg",
-            "srcset": {
-              "320w": "https://adactio.com/images/uploaded/19866-3/small.jpg",
-              "480w": "https://adactio.com/images/uploaded/19866-3/medium.jpg",
-              "800w": "https://adactio.com/images/uploaded/19866-3/large.jpg"
-            },
-            "alt": "Rows and rows of transparent containers filled with creatures preserved in liquid in an underground industrial room."
-          }
-        ],
-        "content": [
-          {
-            "html": "<p>I met Archie the giant squid, Darwin’s tortoise, and many, many other fine specimens thanks to the lovely folks at the Natural History Museum! 🦑 🐢</p>",
-            "value": "I met Archie the giant squid, Darwin’s tortoise, and many, many other fine specimens thanks to the lovely folks at the Natural History Museum! 🦑 🐢"
-          }
-        ],
-        "name": [
-          "I met Archie the giant squid, Darwin’s tortoise, and many, many other fine specimens thanks to the lovely folks at the Natural History Museum! 🦑 🐢"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "51.49670278"
-              ],
-              "longitude": [
-                "-0.17813611"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/notes/19866"
-        ],
-        "published": [
-          "2023-01-31T16:52:25Z"
-        ],
-        "syndication": [
-          "https://mastodon.social/@adactio/109784856436485166"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "photo": [
-          {
-            "value": "https://adactio.com/images/uploaded/19864/small.jpg",
-            "srcset": {
-              "320w": "https://adactio.com/images/uploaded/19864/small.jpg",
-              "480w": "https://adactio.com/images/uploaded/19864/medium.jpg",
-              "800w": "https://adactio.com/images/uploaded/19864/large.jpg"
-            },
-            "alt": "Checked in at The Bugle Inn. Sunday session 🎶🎻"
-          }
-        ],
-        "content": [
-          {
-            "html": "<p>Checked in at The Bugle Inn. Sunday session 🎶🎻</p>",
-            "value": "Checked in at The Bugle Inn. Sunday session 🎶🎻"
-          }
-        ],
-        "name": [
-          "Checked in at The Bugle Inn. Sunday session 🎶🎻"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83405515"
-              ],
-              "longitude": [
-                "-0.12860167"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/notes/19864"
-        ],
-        "published": [
-          "2023-01-29T16:11:38Z"
-        ],
-        "syndication": [
-          "https://www.swarmapp.com/user/112073/checkin/63d69aa8b835586699363592"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "content": [
-          {
-            "html": "<p>Reading The Rosewater Insurrection by Tade Thompson.</p>",
-            "value": "Reading The Rosewater Insurrection by Tade Thompson."
-          }
-        ],
-        "name": [
-          "Reading The Rosewater Insurrection by Tade Thompson."
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83250720"
-              ],
-              "longitude": [
-                "-0.11810970"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/notes/19863"
-        ],
-        "published": [
-          "2023-01-29T12:57:58Z"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "content": [
-          {
-            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://www.chronophoto.app/game.html\">\nChronophoto - The Photographical History Game\n</a>\n</h3>\n\n<p>This is a fun game—with the same kind of appeal as <a href=\"https://adactio.com/links/18791\">that Wiki History Game I linked to</a>—where you have to locate photographs in time.</p>",
-            "value": "Chronophoto - The Photographical History Game\n\n\n\nThis is a fun game—with the same kind of appeal as that Wiki History Game I linked to—where you have to locate photographs in time."
-          }
-        ],
-        "name": [
-          "Chronophoto - The Photographical History Game"
-        ],
-        "bookmark-of": [
-          "https://www.chronophoto.app/game.html"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83251661"
-              ],
-              "longitude": [
-                "-0.11813112"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/links/19862"
-        ],
-        "published": [
-          "2023-01-29T10:02:59Z"
-        ],
-        "category": [
-          "games",
-          "fun",
-          "history",
-          "photographs",
-          "pictures",
-          "chronophoto",
-          "photography",
-          "timeline"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "content": [
-          {
-            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://www.robinrendle.com/notes/container-queries-and-typography/\">\nContainer Queries and Typography\n</a>\n</h3>\n\n<blockquote>\n  <p>I feel like we need a name for this era, when CSS started getting real good.</p>\n</blockquote>\n\n<p>I think this is what I’ve been calling declarative design.</p>",
-            "value": "Container Queries and Typography\n\n\n\n\n  I feel like we need a name for this era, when CSS started getting real good.\n\n\nI think this is what I’ve been calling declarative design."
-          }
-        ],
-        "name": [
-          "Container Queries and Typography"
-        ],
-        "bookmark-of": [
-          "https://www.robinrendle.com/notes/container-queries-and-typography/"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83251603"
-              ],
-              "longitude": [
-                "-0.11811970"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/links/19861"
-        ],
-        "published": [
-          "2023-01-28T21:21:08Z"
-        ],
-        "category": [
-          "declarative",
-          "design",
-          "typography",
-          "css",
-          "container",
-          "queries",
-          "responsive",
-          "type",
           "frontend",
           "development"
         ]
@@ -1802,6 +1797,16 @@
       "https://adactio.com/includes/css/print.css"
     ],
     "bookmark": [
+      "https://adactio.com/links/19896",
+      "https://adactio.com/links/19895",
+      "https://adactio.com/journal/19894",
+      "https://adactio.com/links/19893",
+      "https://adactio.com/journal/19892",
+      "https://adactio.com/links/19891",
+      "https://adactio.com/links/19890",
+      "https://adactio.com/links/19889",
+      "https://adactio.com/links/19888",
+      "https://adactio.com/notes/19887",
       "https://adactio.com/notes/19885",
       "https://adactio.com/links/19884",
       "https://adactio.com/links/19883",
@@ -1811,40 +1816,84 @@
       "https://adactio.com/notes/19878",
       "https://adactio.com/notes/19877",
       "https://adactio.com/notes/19876",
-      "https://adactio.com/links/19874",
-      "https://adactio.com/links/19873",
-      "https://adactio.com/links/19872",
-      "https://adactio.com/notes/19871",
-      "https://adactio.com/links/19870",
-      "https://adactio.com/links/19869",
-      "https://adactio.com/notes/19866",
-      "https://adactio.com/notes/19864",
-      "https://adactio.com/notes/19863",
-      "https://adactio.com/links/19862",
-      "https://adactio.com/links/19861"
-    ],
-    "syndication": [
-      "https://www.swarmapp.com/user/112073/checkin/63e40b0822929558b197fd3c",
-      "https://www.swarmapp.com/user/112073/checkin/63e2db8940602359676ed774",
-      "https://mastodon.social/@adactio/109825253274333259",
-      "https://mastodon.social/@adactio/109824237415968864",
-      "https://mastodon.social/@adactio/109814848497764566",
-      "https://mastodon.social/@adactio/109800501617352875",
-      "https://www.swarmapp.com/user/112073/checkin/63dacc27051b07398a2ea395",
-      "https://mastodon.social/@adactio/109784856436485166",
-      "https://www.swarmapp.com/user/112073/checkin/63d69aa8b835586699363592"
+      "https://adactio.com/links/19874"
     ],
     "tag": [
+      "https://adactio.com/tags/writing",
+      "https://adactio.com/tags/travel",
+      "https://adactio.com/tags/london",
+      "https://adactio.com/tags/medical",
+      "https://adactio.com/tags/story",
+      "https://adactio.com/tags/streams",
+      "https://adactio.com/tags/homepages",
+      "https://adactio.com/tags/indieweb",
+      "https://adactio.com/tags/personal",
+      "https://adactio.com/tags/publishing",
+      "https://adactio.com/tags/websites",
+      "https://adactio.com/tags/design",
+      "https://adactio.com/tags/responsive",
+      "https://adactio.com/tags/frontend",
+      "https://adactio.com/tags/development",
+      "https://adactio.com/tags/css",
+      "https://adactio.com/tags/container",
+      "https://adactio.com/tags/queries",
+      "https://adactio.com/tags/preference",
+      "https://adactio.com/tags/fluid",
+      "https://adactio.com/tags/sizing",
+      "https://adactio.com/tags/layout",
+      "https://adactio.com/tags/clamp",
+      "https://adactio.com/tags/flexbox",
+      "https://adactio.com/tags/grid",
+      "https://adactio.com/tags/change",
+      "https://adactio.com/tags/leadingdesign",
+      "https://adactio.com/tags/ldconf",
+      "https://adactio.com/tags/sanfrancisco",
+      "https://adactio.com/tags/conferences",
+      "https://adactio.com/tags/events",
+      "https://adactio.com/tags/hosting",
+      "https://adactio.com/tags/talks",
+      "https://adactio.com/tags/speaking",
+      "https://adactio.com/tags/storyblok",
+      "https://adactio.com/tags/roadshow",
+      "https://adactio.com/tags/brighton",
+      "https://adactio.com/tags/presentations",
+      "https://adactio.com/tags/inourtime",
+      "https://adactio.com/tags/braggoscope",
+      "https://adactio.com/tags/directory",
+      "https://adactio.com/tags/radio4",
+      "https://adactio.com/tags/episodes",
+      "https://adactio.com/tags/categories",
+      "https://adactio.com/tags/themes",
+      "https://adactio.com/tags/linking",
+      "https://adactio.com/tags/audio",
+      "https://adactio.com/tags/findability",
+      "https://adactio.com/tags/chatgpt",
+      "https://adactio.com/tags/llm",
+      "https://adactio.com/tags/words",
+      "https://adactio.com/tags/text",
+      "https://adactio.com/tags/language",
+      "https://adactio.com/tags/compression",
+      "https://adactio.com/tags/lossless",
+      "https://adactio.com/tags/lossy",
+      "https://adactio.com/tags/ai",
+      "https://adactio.com/tags/spas",
+      "https://adactio.com/tags/singlepageapps",
+      "https://adactio.com/tags/javascript",
+      "https://adactio.com/tags/frameworks",
+      "https://adactio.com/tags/libraries",
+      "https://adactio.com/tags/react",
+      "https://adactio.com/tags/complexity",
+      "https://adactio.com/tags/accessibility",
+      "https://adactio.com/tags/a11y",
+      "https://adactio.com/tags/routing",
+      "https://adactio.com/tags/ux",
+      "https://adactio.com/tags/performance",
       "https://adactio.com/tags/web",
       "https://adactio.com/tags/history",
       "https://adactio.com/tags/book",
       "https://adactio.com/tags/writefreely",
       "https://adactio.com/tags/blogging",
       "https://adactio.com/tags/blogs",
-      "https://adactio.com/tags/writing",
-      "https://adactio.com/tags/publishing",
-      "https://adactio.com/tags/personal",
-      "https://adactio.com/tags/indieweb",
       "https://adactio.com/tags/fediverse",
       "https://adactio.com/tags/minimalist",
       "https://adactio.com/tags/ico",
@@ -1853,45 +1902,21 @@
       "https://adactio.com/tags/privacy",
       "https://adactio.com/tags/safety",
       "https://adactio.com/tags/conference",
-      "https://adactio.com/tags/talks",
       "https://adactio.com/tags/discussions",
-      "https://adactio.com/tags/presentations",
-      "https://adactio.com/tags/responsive",
       "https://adactio.com/tags/images",
       "https://adactio.com/tags/formats",
-      "https://adactio.com/tags/tutorial",
-      "https://adactio.com/tags/performance",
-      "https://adactio.com/tags/frontend",
-      "https://adactio.com/tags/development",
-      "https://adactio.com/tags/design",
-      "https://adactio.com/tags/principles",
-      "https://adactio.com/tags/webpagetest",
-      "https://adactio.com/tags/guiding",
-      "https://adactio.com/tags/javascript",
-      "https://adactio.com/tags/frameworks",
-      "https://adactio.com/tags/libraries",
-      "https://adactio.com/tags/ethics",
-      "https://adactio.com/tags/react",
-      "https://adactio.com/tags/createreactapp",
-      "https://adactio.com/tags/spas",
-      "https://adactio.com/tags/singlepageapps",
-      "https://adactio.com/tags/platform",
-      "https://adactio.com/tags/browsers",
-      "https://adactio.com/tags/apis",
-      "https://adactio.com/tags/standards",
-      "https://adactio.com/tags/games",
-      "https://adactio.com/tags/fun",
-      "https://adactio.com/tags/photographs",
-      "https://adactio.com/tags/pictures",
-      "https://adactio.com/tags/chronophoto",
-      "https://adactio.com/tags/photography",
-      "https://adactio.com/tags/timeline",
-      "https://adactio.com/tags/declarative",
-      "https://adactio.com/tags/typography",
-      "https://adactio.com/tags/css",
-      "https://adactio.com/tags/container",
-      "https://adactio.com/tags/queries",
-      "https://adactio.com/tags/type"
+      "https://adactio.com/tags/tutorial"
+    ],
+    "syndication": [
+      "https://adactio.medium.com/cbf3fd39cbbf",
+      "https://adactio.medium.com/f8b1ed659cac",
+      "https://mastodon.social/@adactio/109841487941367850",
+      "https://www.swarmapp.com/user/112073/checkin/63e40b0822929558b197fd3c",
+      "https://www.swarmapp.com/user/112073/checkin/63e2db8940602359676ed774",
+      "https://mastodon.social/@adactio/109825253274333259",
+      "https://mastodon.social/@adactio/109824237415968864",
+      "https://mastodon.social/@adactio/109814848497764566",
+      "https://mastodon.social/@adactio/109800501617352875"
     ],
     "next": [
       "https://adactio.com/?start=20"
@@ -2282,6 +2307,498 @@
       ],
       "text": "music"
     },
+    "https://adactio.com/links/19896": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n5:02am\n\n"
+    },
+    "https://adactio.com/tags/writing": {
+      "rels": [
+        "tag"
+      ],
+      "text": "writing"
+    },
+    "https://adactio.com/tags/travel": {
+      "rels": [
+        "tag"
+      ],
+      "text": "travel"
+    },
+    "https://adactio.com/tags/london": {
+      "rels": [
+        "tag"
+      ],
+      "text": "london"
+    },
+    "https://adactio.com/tags/medical": {
+      "rels": [
+        "tag"
+      ],
+      "text": "medical"
+    },
+    "https://adactio.com/tags/story": {
+      "rels": [
+        "tag"
+      ],
+      "text": "story"
+    },
+    "https://adactio.com/links/19895": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n12:10am\n\n"
+    },
+    "https://adactio.com/tags/streams": {
+      "rels": [
+        "tag"
+      ],
+      "text": "streams"
+    },
+    "https://adactio.com/tags/homepages": {
+      "rels": [
+        "tag"
+      ],
+      "text": "homepages"
+    },
+    "https://adactio.com/tags/indieweb": {
+      "rels": [
+        "tag"
+      ],
+      "text": "indieweb"
+    },
+    "https://adactio.com/tags/personal": {
+      "rels": [
+        "tag"
+      ],
+      "text": "personal"
+    },
+    "https://adactio.com/tags/publishing": {
+      "rels": [
+        "tag"
+      ],
+      "text": "publishing"
+    },
+    "https://adactio.com/tags/websites": {
+      "rels": [
+        "tag"
+      ],
+      "text": "websites"
+    },
+    "https://adactio.com/tags/design": {
+      "rels": [
+        "tag"
+      ],
+      "text": "design"
+    },
+    "https://adactio.com/journal/19894": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n8:26pm\n\n"
+    },
+    "https://adactio.medium.com/cbf3fd39cbbf": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "Medium"
+    },
+    "https://adactio.com/links/19893": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n8:12pm\n\n"
+    },
+    "https://adactio.com/tags/responsive": {
+      "rels": [
+        "tag"
+      ],
+      "text": "responsive"
+    },
+    "https://adactio.com/tags/frontend": {
+      "rels": [
+        "tag"
+      ],
+      "text": "frontend"
+    },
+    "https://adactio.com/tags/development": {
+      "rels": [
+        "tag"
+      ],
+      "text": "development"
+    },
+    "https://adactio.com/tags/css": {
+      "rels": [
+        "tag"
+      ],
+      "text": "css"
+    },
+    "https://adactio.com/tags/container": {
+      "rels": [
+        "tag"
+      ],
+      "text": "container"
+    },
+    "https://adactio.com/tags/queries": {
+      "rels": [
+        "tag"
+      ],
+      "text": "queries"
+    },
+    "https://adactio.com/tags/preference": {
+      "rels": [
+        "tag"
+      ],
+      "text": "preference"
+    },
+    "https://adactio.com/tags/fluid": {
+      "rels": [
+        "tag"
+      ],
+      "text": "fluid"
+    },
+    "https://adactio.com/tags/sizing": {
+      "rels": [
+        "tag"
+      ],
+      "text": "sizing"
+    },
+    "https://adactio.com/tags/layout": {
+      "rels": [
+        "tag"
+      ],
+      "text": "layout"
+    },
+    "https://adactio.com/tags/clamp": {
+      "rels": [
+        "tag"
+      ],
+      "text": "clamp"
+    },
+    "https://adactio.com/tags/flexbox": {
+      "rels": [
+        "tag"
+      ],
+      "text": "flexbox"
+    },
+    "https://adactio.com/tags/grid": {
+      "rels": [
+        "tag"
+      ],
+      "text": "grid"
+    },
+    "https://adactio.com/journal/19892": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n6:53pm\n\n"
+    },
+    "https://adactio.com/tags/change": {
+      "rels": [
+        "tag"
+      ],
+      "text": "change"
+    },
+    "https://adactio.com/tags/leadingdesign": {
+      "rels": [
+        "tag"
+      ],
+      "text": "leadingdesign"
+    },
+    "https://adactio.com/tags/ldconf": {
+      "rels": [
+        "tag"
+      ],
+      "text": "ldconf"
+    },
+    "https://adactio.com/tags/sanfrancisco": {
+      "rels": [
+        "tag"
+      ],
+      "text": "sanfrancisco"
+    },
+    "https://adactio.com/tags/conferences": {
+      "rels": [
+        "tag"
+      ],
+      "text": "conferences"
+    },
+    "https://adactio.com/tags/events": {
+      "rels": [
+        "tag"
+      ],
+      "text": "events"
+    },
+    "https://adactio.com/tags/hosting": {
+      "rels": [
+        "tag"
+      ],
+      "text": "hosting"
+    },
+    "https://adactio.com/tags/talks": {
+      "rels": [
+        "tag"
+      ],
+      "text": "talks"
+    },
+    "https://adactio.com/tags/speaking": {
+      "rels": [
+        "tag"
+      ],
+      "text": "speaking"
+    },
+    "https://adactio.medium.com/f8b1ed659cac": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "Medium"
+    },
+    "https://adactio.com/links/19891": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n6:22pm\n\n"
+    },
+    "https://adactio.com/tags/storyblok": {
+      "rels": [
+        "tag"
+      ],
+      "text": "storyblok"
+    },
+    "https://adactio.com/tags/roadshow": {
+      "rels": [
+        "tag"
+      ],
+      "text": "roadshow"
+    },
+    "https://adactio.com/tags/brighton": {
+      "rels": [
+        "tag"
+      ],
+      "text": "brighton"
+    },
+    "https://adactio.com/tags/presentations": {
+      "rels": [
+        "tag"
+      ],
+      "text": "presentations"
+    },
+    "https://adactio.com/links/19890": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n6:16pm\n\n"
+    },
+    "https://adactio.com/tags/inourtime": {
+      "rels": [
+        "tag"
+      ],
+      "text": "inourtime"
+    },
+    "https://adactio.com/tags/braggoscope": {
+      "rels": [
+        "tag"
+      ],
+      "text": "braggoscope"
+    },
+    "https://adactio.com/tags/directory": {
+      "rels": [
+        "tag"
+      ],
+      "text": "directory"
+    },
+    "https://adactio.com/tags/radio4": {
+      "rels": [
+        "tag"
+      ],
+      "text": "radio4"
+    },
+    "https://adactio.com/tags/episodes": {
+      "rels": [
+        "tag"
+      ],
+      "text": "episodes"
+    },
+    "https://adactio.com/tags/categories": {
+      "rels": [
+        "tag"
+      ],
+      "text": "categories"
+    },
+    "https://adactio.com/tags/themes": {
+      "rels": [
+        "tag"
+      ],
+      "text": "themes"
+    },
+    "https://adactio.com/tags/linking": {
+      "rels": [
+        "tag"
+      ],
+      "text": "linking"
+    },
+    "https://adactio.com/tags/audio": {
+      "rels": [
+        "tag"
+      ],
+      "text": "audio"
+    },
+    "https://adactio.com/tags/findability": {
+      "rels": [
+        "tag"
+      ],
+      "text": "findability"
+    },
+    "https://adactio.com/links/19889": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n6:06pm\n\n"
+    },
+    "https://adactio.com/tags/chatgpt": {
+      "rels": [
+        "tag"
+      ],
+      "text": "chatgpt"
+    },
+    "https://adactio.com/tags/llm": {
+      "rels": [
+        "tag"
+      ],
+      "text": "llm"
+    },
+    "https://adactio.com/tags/words": {
+      "rels": [
+        "tag"
+      ],
+      "text": "words"
+    },
+    "https://adactio.com/tags/text": {
+      "rels": [
+        "tag"
+      ],
+      "text": "text"
+    },
+    "https://adactio.com/tags/language": {
+      "rels": [
+        "tag"
+      ],
+      "text": "language"
+    },
+    "https://adactio.com/tags/compression": {
+      "rels": [
+        "tag"
+      ],
+      "text": "compression"
+    },
+    "https://adactio.com/tags/lossless": {
+      "rels": [
+        "tag"
+      ],
+      "text": "lossless"
+    },
+    "https://adactio.com/tags/lossy": {
+      "rels": [
+        "tag"
+      ],
+      "text": "lossy"
+    },
+    "https://adactio.com/tags/ai": {
+      "rels": [
+        "tag"
+      ],
+      "text": "ai"
+    },
+    "https://adactio.com/links/19888": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n5:43pm\n\n"
+    },
+    "https://adactio.com/tags/spas": {
+      "rels": [
+        "tag"
+      ],
+      "text": "spas"
+    },
+    "https://adactio.com/tags/singlepageapps": {
+      "rels": [
+        "tag"
+      ],
+      "text": "singlepageapps"
+    },
+    "https://adactio.com/tags/javascript": {
+      "rels": [
+        "tag"
+      ],
+      "text": "javascript"
+    },
+    "https://adactio.com/tags/frameworks": {
+      "rels": [
+        "tag"
+      ],
+      "text": "frameworks"
+    },
+    "https://adactio.com/tags/libraries": {
+      "rels": [
+        "tag"
+      ],
+      "text": "libraries"
+    },
+    "https://adactio.com/tags/react": {
+      "rels": [
+        "tag"
+      ],
+      "text": "react"
+    },
+    "https://adactio.com/tags/complexity": {
+      "rels": [
+        "tag"
+      ],
+      "text": "complexity"
+    },
+    "https://adactio.com/tags/accessibility": {
+      "rels": [
+        "tag"
+      ],
+      "text": "accessibility"
+    },
+    "https://adactio.com/tags/a11y": {
+      "rels": [
+        "tag"
+      ],
+      "text": "a11y"
+    },
+    "https://adactio.com/tags/routing": {
+      "rels": [
+        "tag"
+      ],
+      "text": "routing"
+    },
+    "https://adactio.com/tags/ux": {
+      "rels": [
+        "tag"
+      ],
+      "text": "ux"
+    },
+    "https://adactio.com/tags/performance": {
+      "rels": [
+        "tag"
+      ],
+      "text": "performance"
+    },
+    "https://adactio.com/notes/19887": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n4:54pm\n\n"
+    },
+    "https://mastodon.social/@adactio/109841487941367850": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "Mastodon"
+    },
     "https://adactio.com/notes/19885": {
       "rels": [
         "bookmark"
@@ -2342,30 +2859,6 @@
       ],
       "text": "blogs"
     },
-    "https://adactio.com/tags/writing": {
-      "rels": [
-        "tag"
-      ],
-      "text": "writing"
-    },
-    "https://adactio.com/tags/publishing": {
-      "rels": [
-        "tag"
-      ],
-      "text": "publishing"
-    },
-    "https://adactio.com/tags/personal": {
-      "rels": [
-        "tag"
-      ],
-      "text": "personal"
-    },
-    "https://adactio.com/tags/indieweb": {
-      "rels": [
-        "tag"
-      ],
-      "text": "indieweb"
-    },
     "https://adactio.com/tags/fediverse": {
       "rels": [
         "tag"
@@ -2420,23 +2913,11 @@
       ],
       "text": "conference"
     },
-    "https://adactio.com/tags/talks": {
-      "rels": [
-        "tag"
-      ],
-      "text": "talks"
-    },
     "https://adactio.com/tags/discussions": {
       "rels": [
         "tag"
       ],
       "text": "discussions"
-    },
-    "https://adactio.com/tags/presentations": {
-      "rels": [
-        "tag"
-      ],
-      "text": "presentations"
     },
     "https://adactio.com/notes/19880": {
       "rels": [
@@ -2504,12 +2985,6 @@
       ],
       "text": "\n\n5:22pm\n\n"
     },
-    "https://adactio.com/tags/responsive": {
-      "rels": [
-        "tag"
-      ],
-      "text": "responsive"
-    },
     "https://adactio.com/tags/images": {
       "rels": [
         "tag"
@@ -2527,276 +3002,6 @@
         "tag"
       ],
       "text": "tutorial"
-    },
-    "https://adactio.com/tags/performance": {
-      "rels": [
-        "tag"
-      ],
-      "text": "performance"
-    },
-    "https://adactio.com/tags/frontend": {
-      "rels": [
-        "tag"
-      ],
-      "text": "frontend"
-    },
-    "https://adactio.com/tags/development": {
-      "rels": [
-        "tag"
-      ],
-      "text": "development"
-    },
-    "https://adactio.com/links/19873": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n5:02pm\n\n"
-    },
-    "https://adactio.com/tags/design": {
-      "rels": [
-        "tag"
-      ],
-      "text": "design"
-    },
-    "https://adactio.com/tags/principles": {
-      "rels": [
-        "tag"
-      ],
-      "text": "principles"
-    },
-    "https://adactio.com/tags/webpagetest": {
-      "rels": [
-        "tag"
-      ],
-      "text": "webpagetest"
-    },
-    "https://adactio.com/tags/guiding": {
-      "rels": [
-        "tag"
-      ],
-      "text": "guiding"
-    },
-    "https://adactio.com/links/19872": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n5:01pm\n\n"
-    },
-    "https://adactio.com/tags/javascript": {
-      "rels": [
-        "tag"
-      ],
-      "text": "javascript"
-    },
-    "https://adactio.com/tags/frameworks": {
-      "rels": [
-        "tag"
-      ],
-      "text": "frameworks"
-    },
-    "https://adactio.com/tags/libraries": {
-      "rels": [
-        "tag"
-      ],
-      "text": "libraries"
-    },
-    "https://adactio.com/tags/ethics": {
-      "rels": [
-        "tag"
-      ],
-      "text": "ethics"
-    },
-    "https://adactio.com/notes/19871": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n8:31pm\n\n"
-    },
-    "https://www.swarmapp.com/user/112073/checkin/63dacc27051b07398a2ea395": {
-      "rels": [
-        "syndication"
-      ],
-      "text": "Swarm"
-    },
-    "https://adactio.com/links/19870": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n2:51pm\n\n"
-    },
-    "https://adactio.com/tags/react": {
-      "rels": [
-        "tag"
-      ],
-      "text": "react"
-    },
-    "https://adactio.com/tags/createreactapp": {
-      "rels": [
-        "tag"
-      ],
-      "text": "createreactapp"
-    },
-    "https://adactio.com/tags/spas": {
-      "rels": [
-        "tag"
-      ],
-      "text": "spas"
-    },
-    "https://adactio.com/tags/singlepageapps": {
-      "rels": [
-        "tag"
-      ],
-      "text": "singlepageapps"
-    },
-    "https://adactio.com/links/19869": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n2:15pm\n\n"
-    },
-    "https://adactio.com/tags/platform": {
-      "rels": [
-        "tag"
-      ],
-      "text": "platform"
-    },
-    "https://adactio.com/tags/browsers": {
-      "rels": [
-        "tag"
-      ],
-      "text": "browsers"
-    },
-    "https://adactio.com/tags/apis": {
-      "rels": [
-        "tag"
-      ],
-      "text": "apis"
-    },
-    "https://adactio.com/tags/standards": {
-      "rels": [
-        "tag"
-      ],
-      "text": "standards"
-    },
-    "https://adactio.com/notes/19866": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n4:52pm\n\n"
-    },
-    "https://mastodon.social/@adactio/109784856436485166": {
-      "rels": [
-        "syndication"
-      ],
-      "text": "Mastodon"
-    },
-    "https://adactio.com/notes/19864": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n4:11pm\n\n"
-    },
-    "https://www.swarmapp.com/user/112073/checkin/63d69aa8b835586699363592": {
-      "rels": [
-        "syndication"
-      ],
-      "text": "Swarm"
-    },
-    "https://adactio.com/notes/19863": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n12:57pm\n\n"
-    },
-    "https://adactio.com/links/19862": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n10:02am\n\n"
-    },
-    "https://adactio.com/tags/games": {
-      "rels": [
-        "tag"
-      ],
-      "text": "games"
-    },
-    "https://adactio.com/tags/fun": {
-      "rels": [
-        "tag"
-      ],
-      "text": "fun"
-    },
-    "https://adactio.com/tags/photographs": {
-      "rels": [
-        "tag"
-      ],
-      "text": "photographs"
-    },
-    "https://adactio.com/tags/pictures": {
-      "rels": [
-        "tag"
-      ],
-      "text": "pictures"
-    },
-    "https://adactio.com/tags/chronophoto": {
-      "rels": [
-        "tag"
-      ],
-      "text": "chronophoto"
-    },
-    "https://adactio.com/tags/photography": {
-      "rels": [
-        "tag"
-      ],
-      "text": "photography"
-    },
-    "https://adactio.com/tags/timeline": {
-      "rels": [
-        "tag"
-      ],
-      "text": "timeline"
-    },
-    "https://adactio.com/links/19861": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n9:21pm\n\n"
-    },
-    "https://adactio.com/tags/declarative": {
-      "rels": [
-        "tag"
-      ],
-      "text": "declarative"
-    },
-    "https://adactio.com/tags/typography": {
-      "rels": [
-        "tag"
-      ],
-      "text": "typography"
-    },
-    "https://adactio.com/tags/css": {
-      "rels": [
-        "tag"
-      ],
-      "text": "css"
-    },
-    "https://adactio.com/tags/container": {
-      "rels": [
-        "tag"
-      ],
-      "text": "container"
-    },
-    "https://adactio.com/tags/queries": {
-      "rels": [
-        "tag"
-      ],
-      "text": "queries"
-    },
-    "https://adactio.com/tags/type": {
-      "rels": [
-        "tag"
-      ],
-      "text": "type"
     },
     "https://adactio.com/?start=20": {
       "rels": [

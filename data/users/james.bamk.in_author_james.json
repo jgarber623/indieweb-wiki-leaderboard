@@ -1,118 +1,84 @@
 {
   "items": [],
   "rels": {
+    "alternate": [
+      "https://james.bamk.in/feed/",
+      "https://james.bamk.in/comments/feed/"
+    ],
     "stylesheet": [
-      "https://bamk.in/yunohost/sso/assets/css/ynh_portal.css",
-      "https://bamk.in/yunohost/sso/assets/themes/default/custom_portal.css"
+      "https://james.bamk.in/wp-includes/blocks/navigation/style.min.css?ver=6.1.1",
+      "https://james.bamk.in/ynh_overlay.css",
+      "https://james.bamk.in/ynhtheme/custom_overlay.css"
     ],
-    "icon": [
-      "https://bamk.in/yunohost/sso/assets/icons/favicon.ico",
-      "https://bamk.in/yunohost/sso/assets/icons/favicon-196x196.png",
-      "https://bamk.in/yunohost/sso/assets/icons/favicon-160x160.png",
-      "https://bamk.in/yunohost/sso/assets/icons/favicon-96x96.png",
-      "https://bamk.in/yunohost/sso/assets/icons/favicon-16x16.png",
-      "https://bamk.in/yunohost/sso/assets/icons/favicon-32x32.png"
+    "https://api.w.org/": [
+      "https://james.bamk.in/wp-json/"
     ],
-    "shortcut": [
-      "https://bamk.in/yunohost/sso/assets/icons/favicon.ico"
+    "EditURI": [
+      "https://james.bamk.in/xmlrpc.php?rsd"
     ],
-    "apple-touch-icon": [
-      "https://bamk.in/yunohost/sso/assets/icons/apple-touch-icon-57x57.png",
-      "https://bamk.in/yunohost/sso/assets/icons/apple-touch-icon-114x114.png",
-      "https://bamk.in/yunohost/sso/assets/icons/apple-touch-icon-72x72.png",
-      "https://bamk.in/yunohost/sso/assets/icons/apple-touch-icon-144x144.png",
-      "https://bamk.in/yunohost/sso/assets/icons/apple-touch-icon-60x60.png",
-      "https://bamk.in/yunohost/sso/assets/icons/apple-touch-icon-120x120.png",
-      "https://bamk.in/yunohost/sso/assets/icons/apple-touch-icon-76x76.png",
-      "https://bamk.in/yunohost/sso/assets/icons/apple-touch-icon-152x152.png"
+    "wlwmanifest": [
+      "https://james.bamk.in/wp-includes/wlwmanifest.xml"
+    ],
+    "home": [
+      "https://james.bamk.in/"
     ]
   },
   "rel-urls": {
-    "https://bamk.in/yunohost/sso/assets/css/ynh_portal.css": {
+    "https://james.bamk.in/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "james.bamkin » Feed",
+      "type": "application/rss+xml"
+    },
+    "https://james.bamk.in/comments/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "james.bamkin » Comments Feed",
+      "type": "application/rss+xml"
+    },
+    "https://james.bamk.in/wp-includes/blocks/navigation/style.min.css?ver=6.1.1": {
       "rels": [
         "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://james.bamk.in/wp-json/": {
+      "rels": [
+        "https://api.w.org/"
       ]
     },
-    "https://bamk.in/yunohost/sso/assets/themes/default/custom_portal.css": {
+    "https://james.bamk.in/xmlrpc.php?rsd": {
+      "rels": [
+        "EditURI"
+      ],
+      "title": "RSD",
+      "type": "application/rsd+xml"
+    },
+    "https://james.bamk.in/wp-includes/wlwmanifest.xml": {
+      "rels": [
+        "wlwmanifest"
+      ],
+      "type": "application/wlwmanifest+xml"
+    },
+    "https://james.bamk.in/ynh_overlay.css": {
       "rels": [
         "stylesheet"
-      ]
-    },
-    "https://bamk.in/yunohost/sso/assets/icons/favicon.ico": {
-      "rels": [
-        "icon",
-        "shortcut"
-      ]
-    },
-    "https://bamk.in/yunohost/sso/assets/icons/apple-touch-icon-57x57.png": {
-      "rels": [
-        "apple-touch-icon"
-      ]
-    },
-    "https://bamk.in/yunohost/sso/assets/icons/apple-touch-icon-114x114.png": {
-      "rels": [
-        "apple-touch-icon"
-      ]
-    },
-    "https://bamk.in/yunohost/sso/assets/icons/apple-touch-icon-72x72.png": {
-      "rels": [
-        "apple-touch-icon"
-      ]
-    },
-    "https://bamk.in/yunohost/sso/assets/icons/apple-touch-icon-144x144.png": {
-      "rels": [
-        "apple-touch-icon"
-      ]
-    },
-    "https://bamk.in/yunohost/sso/assets/icons/apple-touch-icon-60x60.png": {
-      "rels": [
-        "apple-touch-icon"
-      ]
-    },
-    "https://bamk.in/yunohost/sso/assets/icons/apple-touch-icon-120x120.png": {
-      "rels": [
-        "apple-touch-icon"
-      ]
-    },
-    "https://bamk.in/yunohost/sso/assets/icons/apple-touch-icon-76x76.png": {
-      "rels": [
-        "apple-touch-icon"
-      ]
-    },
-    "https://bamk.in/yunohost/sso/assets/icons/apple-touch-icon-152x152.png": {
-      "rels": [
-        "apple-touch-icon"
-      ]
-    },
-    "https://bamk.in/yunohost/sso/assets/icons/favicon-196x196.png": {
-      "rels": [
-        "icon"
       ],
-      "type": "image/png"
+      "type": "text/css"
     },
-    "https://bamk.in/yunohost/sso/assets/icons/favicon-160x160.png": {
+    "https://james.bamk.in/ynhtheme/custom_overlay.css": {
       "rels": [
-        "icon"
+        "stylesheet"
       ],
-      "type": "image/png"
+      "type": "text/css"
     },
-    "https://bamk.in/yunohost/sso/assets/icons/favicon-96x96.png": {
+    "https://james.bamk.in/": {
       "rels": [
-        "icon"
+        "home"
       ],
-      "type": "image/png"
-    },
-    "https://bamk.in/yunohost/sso/assets/icons/favicon-16x16.png": {
-      "rels": [
-        "icon"
-      ],
-      "type": "image/png"
-    },
-    "https://bamk.in/yunohost/sso/assets/icons/favicon-32x32.png": {
-      "rels": [
-        "icon"
-      ],
-      "type": "image/png"
+      "text": "james.bamkin"
     }
   }
 }

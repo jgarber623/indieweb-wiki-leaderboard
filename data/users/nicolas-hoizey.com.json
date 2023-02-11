@@ -44,6 +44,134 @@
         "h-entry"
       ],
       "properties": {
+        "name": [
+          "Midnight is a Terrible Time for Coffee"
+        ],
+        "url": [
+          "https://nicolas-hoizey.com/links/2023/02/10/midnight-is-a-terrible-time-for-coffee/"
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "url": [
+                "https://nicolas-hoizey.com/"
+              ],
+              "name": [
+                "Nicolas Hoizey"
+              ]
+            },
+            "value": "https://nicolas-hoizey.com/"
+          }
+        ],
+        "published": [
+          "2023-02-10T20:32:37.000+01:00"
+        ],
+        "category": [
+          "UX"
+        ],
+        "summary": [
+          "It’s easy to assume that folks won’t use the defaults, but some will (intentionally or accidentally.) By improving these defaults, you improve the default experience of your product."
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "The Content Management System of my Dreams"
+        ],
+        "url": [
+          "https://nicolas-hoizey.com/links/2023/02/10/the-content-management-system-of-my-dreams/"
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "url": [
+                "https://nicolas-hoizey.com/"
+              ],
+              "name": [
+                "Nicolas Hoizey"
+              ]
+            },
+            "value": "https://nicolas-hoizey.com/"
+          }
+        ],
+        "published": [
+          "2023-02-10T20:22:03.000+01:00"
+        ],
+        "category": [
+          "CMS",
+          "static"
+        ],
+        "summary": [
+          "François started writing a series of articles about static vs dynamic publishing, content management and pages publication, etc."
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "photo": [
+          {
+            "value": "https://res.cloudinary.com/nho/image/fetch/q_auto,f_auto,w_auto:100:32,c_limit/https://res.cloudinary.com/nho/image/twitter_name/brendankenny",
+            "srcset": {
+              "1x": "https://res.cloudinary.com/nho/image/fetch/q_auto",
+              "32w": "https://nicolas-hoizey.com/c_limit/https://res.cloudinary.com/nho/image/twitter_name/brendankenny",
+              "48w": "https://nicolas-hoizey.com/c_limit/https://res.cloudinary.com/nho/image/twitter_name/brendankenny"
+            },
+            "alt": "Brendan Kenny avatar"
+          }
+        ],
+        "name": [
+          "What's new in Lighthouse 10"
+        ],
+        "url": [
+          "https://nicolas-hoizey.com/links/2023/02/10/what-s-new-in-lighthouse-10/"
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "url": [
+                "https://nicolas-hoizey.com/"
+              ],
+              "name": [
+                "Nicolas Hoizey"
+              ]
+            },
+            "value": "https://nicolas-hoizey.com/"
+          }
+        ],
+        "published": [
+          "2023-02-10T18:31:18.000+01:00"
+        ],
+        "category": [
+          "Lighthouse",
+          "performance",
+          "CLS"
+        ],
+        "summary": [
+          "The venerable Time To Interactive (TTI) metric is being removed in Lighthouse 10, with its 10% score weight shifted to Cumulative Layout Shift (CLS), which will now account for 25% of the overall performance score. Ideally this change will increase focus on CLS for sites that still need fixes for unnecessary layout shifts."
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
         "author": [
           {
             "type": [
@@ -115,122 +243,6 @@
         ],
         "summary": [
           "When I was building my site on my local computer, I had a shell script to initialize a new Markdown file for sharing a link. When I moved to Cloudflare Pages 6 months ago, it opened a new opportunity to share links more easily in my Eleventy content, directly from the page I wanted to share. Bookmarklets are still an awesome invention!"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "name": [
-          "Updating webmentions on a static site"
-        ],
-        "url": [
-          "https://nicolas-hoizey.com/articles/2023/02/05/updating-webmentions-on-a-static-site/"
-        ],
-        "author": [
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "url": [
-                "https://nicolas-hoizey.com/"
-              ],
-              "name": [
-                "Nicolas Hoizey"
-              ]
-            },
-            "value": "https://nicolas-hoizey.com/"
-          }
-        ],
-        "published": [
-          "2023-02-05T20:27:38.000+01:00"
-        ],
-        "category": [
-          "Webmention",
-          "Eleventy",
-          "static",
-          "GitHub",
-          "Cloudflare"
-        ],
-        "summary": [
-          "When I started using Webmention on this site (more than 5 years ago!), I was building the site on my local computer, and uploading the build result on my hosting with rsync. I've moved to Cloudflare Pages 6 months ago, which means webmentions where updated only when I pushed new content to GitHub. Here's how I fixed that."
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "author": [
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "url": [
-                "https://nicolas-hoizey.com/"
-              ],
-              "name": [
-                "Nicolas Hoizey"
-              ]
-            },
-            "value": "https://nicolas-hoizey.com/"
-          }
-        ],
-        "published": [
-          "2023-02-05T20:20:04.000+01:00"
-        ],
-        "category": [
-          "Container Queries",
-          "CSS",
-          "Firefox"
-        ],
-        "url": [
-          "https://nicolas-hoizey.com/notes/2023/02/05/1/"
-        ],
-        "summary": [
-          ""
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "author": [
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "url": [
-                "https://nicolas-hoizey.com/"
-              ],
-              "name": [
-                "Nicolas Hoizey"
-              ]
-            },
-            "value": "https://nicolas-hoizey.com/"
-          }
-        ],
-        "published": [
-          "2023-02-02T15:04:07.000+01:00"
-        ],
-        "category": [
-          "API",
-          "tweetback",
-          "Twitter"
-        ],
-        "url": [
-          "https://nicolas-hoizey.com/notes/2023/02/02/1/"
-        ],
-        "summary": [
-          ""
         ]
       }
     },
@@ -390,6 +402,12 @@
       "https://nicolas-hoizey.com/about/"
     ],
     "tag": [
+      "https://nicolas-hoizey.com/tags/ux/",
+      "https://nicolas-hoizey.com/tags/cms/",
+      "https://nicolas-hoizey.com/tags/static/",
+      "https://nicolas-hoizey.com/tags/lighthouse/",
+      "https://nicolas-hoizey.com/tags/performance/",
+      "https://nicolas-hoizey.com/tags/cls/",
       "https://nicolas-hoizey.com/tags/animation/",
       "https://nicolas-hoizey.com/tags/chromium/",
       "https://nicolas-hoizey.com/tags/esviji/",
@@ -398,18 +416,10 @@
       "https://nicolas-hoizey.com/tags/markdown/",
       "https://nicolas-hoizey.com/tags/eleventy/",
       "https://nicolas-hoizey.com/tags/bookmarklet/",
-      "https://nicolas-hoizey.com/tags/webmention/",
-      "https://nicolas-hoizey.com/tags/static/",
-      "https://nicolas-hoizey.com/tags/github/",
-      "https://nicolas-hoizey.com/tags/cloudflare/",
-      "https://nicolas-hoizey.com/tags/container-queries/",
-      "https://nicolas-hoizey.com/tags/css/",
-      "https://nicolas-hoizey.com/tags/firefox/",
-      "https://nicolas-hoizey.com/tags/api/",
-      "https://nicolas-hoizey.com/tags/tweetback/",
-      "https://nicolas-hoizey.com/tags/twitter/",
       "https://nicolas-hoizey.com/tags/jamstack/",
       "https://nicolas-hoizey.com/tags/webperf/",
+      "https://nicolas-hoizey.com/tags/api/",
+      "https://nicolas-hoizey.com/tags/webmention/",
       "https://nicolas-hoizey.com/tags/speedcurve/",
       "https://nicolas-hoizey.com/tags/accessibility/",
       "https://nicolas-hoizey.com/tags/font/",
@@ -419,17 +429,20 @@
       "https://nicolas-hoizey.com/tags/apple/",
       "https://nicolas-hoizey.com/tags/blog/",
       "https://nicolas-hoizey.com/tags/cinema/",
+      "https://nicolas-hoizey.com/tags/cloudflare/",
       "https://nicolas-hoizey.com/tags/cloudinary/",
-      "https://nicolas-hoizey.com/tags/cls/",
+      "https://nicolas-hoizey.com/tags/css/",
       "https://nicolas-hoizey.com/tags/cwv/",
       "https://nicolas-hoizey.com/tags/design/",
       "https://nicolas-hoizey.com/tags/development/",
       "https://nicolas-hoizey.com/tags/fail/",
       "https://nicolas-hoizey.com/tags/feed/",
+      "https://nicolas-hoizey.com/tags/firefox/",
       "https://nicolas-hoizey.com/tags/flickr/",
       "https://nicolas-hoizey.com/tags/fun/",
       "https://nicolas-hoizey.com/tags/game/",
       "https://nicolas-hoizey.com/tags/gear/",
+      "https://nicolas-hoizey.com/tags/github/",
       "https://nicolas-hoizey.com/tags/google/",
       "https://nicolas-hoizey.com/tags/grid/",
       "https://nicolas-hoizey.com/tags/html/",
@@ -438,7 +451,6 @@
       "https://nicolas-hoizey.com/tags/indieweb/",
       "https://nicolas-hoizey.com/tags/javascript/",
       "https://nicolas-hoizey.com/tags/leisure/",
-      "https://nicolas-hoizey.com/tags/lighthouse/",
       "https://nicolas-hoizey.com/tags/mastodon/",
       "https://nicolas-hoizey.com/tags/me/",
       "https://nicolas-hoizey.com/tags/microsoft/",
@@ -463,8 +475,8 @@
       "https://nicolas-hoizey.com/tags/society/",
       "https://nicolas-hoizey.com/tags/spip/",
       "https://nicolas-hoizey.com/tags/standards/",
+      "https://nicolas-hoizey.com/tags/twitter/",
       "https://nicolas-hoizey.com/tags/unsplash/",
-      "https://nicolas-hoizey.com/tags/ux/",
       "https://nicolas-hoizey.com/tags/video/",
       "https://nicolas-hoizey.com/tags/vscode/",
       "https://nicolas-hoizey.com/tags/web/"
@@ -559,6 +571,42 @@
       ],
       "title": "Link to my Twitter profile"
     },
+    "https://nicolas-hoizey.com/tags/ux/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "UX"
+    },
+    "https://nicolas-hoizey.com/tags/cms/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "CMS"
+    },
+    "https://nicolas-hoizey.com/tags/static/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "static"
+    },
+    "https://nicolas-hoizey.com/tags/lighthouse/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Lighthouse"
+    },
+    "https://nicolas-hoizey.com/tags/performance/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "performance"
+    },
+    "https://nicolas-hoizey.com/tags/cls/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "CLS"
+    },
     "https://nicolas-hoizey.com/tags/animation/": {
       "rels": [
         "tag"
@@ -607,66 +655,6 @@
       ],
       "text": "bookmarklet"
     },
-    "https://nicolas-hoizey.com/tags/webmention/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Webmention"
-    },
-    "https://nicolas-hoizey.com/tags/static/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "static"
-    },
-    "https://nicolas-hoizey.com/tags/github/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "GitHub"
-    },
-    "https://nicolas-hoizey.com/tags/cloudflare/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Cloudflare"
-    },
-    "https://nicolas-hoizey.com/tags/container-queries/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Container Queries"
-    },
-    "https://nicolas-hoizey.com/tags/css/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "CSS"
-    },
-    "https://nicolas-hoizey.com/tags/firefox/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Firefox"
-    },
-    "https://nicolas-hoizey.com/tags/api/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "API"
-    },
-    "https://nicolas-hoizey.com/tags/tweetback/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "tweetback"
-    },
-    "https://nicolas-hoizey.com/tags/twitter/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Twitter"
-    },
     "https://nicolas-hoizey.com/tags/jamstack/": {
       "rels": [
         "tag"
@@ -678,6 +666,18 @@
         "tag"
       ],
       "text": "WebPerf"
+    },
+    "https://nicolas-hoizey.com/tags/api/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "API"
+    },
+    "https://nicolas-hoizey.com/tags/webmention/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Webmention"
     },
     "https://nicolas-hoizey.com/tags/speedcurve/": {
       "rels": [
@@ -733,17 +733,23 @@
       ],
       "text": "cinema"
     },
+    "https://nicolas-hoizey.com/tags/cloudflare/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Cloudflare"
+    },
     "https://nicolas-hoizey.com/tags/cloudinary/": {
       "rels": [
         "tag"
       ],
       "text": "Cloudinary"
     },
-    "https://nicolas-hoizey.com/tags/cls/": {
+    "https://nicolas-hoizey.com/tags/css/": {
       "rels": [
         "tag"
       ],
-      "text": "CLS"
+      "text": "CSS"
     },
     "https://nicolas-hoizey.com/tags/cwv/": {
       "rels": [
@@ -775,6 +781,12 @@
       ],
       "text": "feed"
     },
+    "https://nicolas-hoizey.com/tags/firefox/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Firefox"
+    },
     "https://nicolas-hoizey.com/tags/flickr/": {
       "rels": [
         "tag"
@@ -798,6 +810,12 @@
         "tag"
       ],
       "text": "gear"
+    },
+    "https://nicolas-hoizey.com/tags/github/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "GitHub"
     },
     "https://nicolas-hoizey.com/tags/google/": {
       "rels": [
@@ -846,12 +864,6 @@
         "tag"
       ],
       "text": "leisure"
-    },
-    "https://nicolas-hoizey.com/tags/lighthouse/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Lighthouse"
     },
     "https://nicolas-hoizey.com/tags/mastodon/": {
       "rels": [
@@ -997,17 +1009,17 @@
       ],
       "text": "standards"
     },
+    "https://nicolas-hoizey.com/tags/twitter/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Twitter"
+    },
     "https://nicolas-hoizey.com/tags/unsplash/": {
       "rels": [
         "tag"
       ],
       "text": "Unsplash"
-    },
-    "https://nicolas-hoizey.com/tags/ux/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "UX"
     },
     "https://nicolas-hoizey.com/tags/video/": {
       "rels": [

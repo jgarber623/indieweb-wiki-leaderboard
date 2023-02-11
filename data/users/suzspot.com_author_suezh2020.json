@@ -158,8 +158,8 @@
       "https://suzspot.com/wp-includes/css/dist/block-library/style.css?ver=6.1.1",
       "https://suzspot.com/wp-includes/css/classic-themes.css?ver=1",
       "https://suzspot.com/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
-      "https://suzspot.com/wp-content/plugins/indieweb-post-kinds/css/kind.min.css?ver=3.6.2",
-      "https://suzspot.com/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3",
+      "https://suzspot.com/wp-content/plugins/indieweb-post-kinds/css/kind.min.css?ver=3.6.4",
+      "https://suzspot.com/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.12.0",
       "https://suzspot.com/wp-content/themes/twentytwentyone/style.css?ver=6.1.1",
       "https://suzspot.com/wp-content/themes/twentytwentyone/style.css?ver=1.0.0",
       "https://suzspot.com/wp-content/themes/twentytwentyone/assets/css/print.css?ver=1.0.0"
@@ -178,6 +178,9 @@
     ],
     "token_endpoint": [
       "https://suzspot.com/wp-json/indieauth/1.0/token"
+    ],
+    "indieauth-metadata": [
+      "https://suzspot.com/wp-json/indieauth/1.0/metadata"
     ],
     "micropub_media": [
       "https://suzspot.com/wp-json/micropub/1.0/media"
@@ -246,13 +249,13 @@
       ],
       "media": "all"
     },
-    "https://suzspot.com/wp-content/plugins/indieweb-post-kinds/css/kind.min.css?ver=3.6.2": {
+    "https://suzspot.com/wp-content/plugins/indieweb-post-kinds/css/kind.min.css?ver=3.6.4": {
       "rels": [
         "stylesheet"
       ],
       "media": "all"
     },
-    "https://suzspot.com/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.10.3": {
+    "https://suzspot.com/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.12.0": {
       "rels": [
         "stylesheet"
       ],
@@ -308,6 +311,11 @@
     "https://suzspot.com/wp-json/indieauth/1.0/token": {
       "rels": [
         "token_endpoint"
+      ]
+    },
+    "https://suzspot.com/wp-json/indieauth/1.0/metadata": {
+      "rels": [
+        "indieauth-metadata"
       ]
     },
     "https://suzspot.com/wp-json/micropub/1.0/media": {

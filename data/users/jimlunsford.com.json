@@ -4,6 +4,9 @@
     "profile": [
       "https://gmpg.org/xfn/11"
     ],
+    "canonical": [
+      "https://jimlunsford.com/"
+    ],
     "dns-prefetch": [
       "https://www.googletagmanager.com/",
       "https://fonts.googleapis.com/",
@@ -53,9 +56,6 @@
     "wlwmanifest": [
       "https://jimlunsford.com/wp-includes/wlwmanifest.xml"
     ],
-    "canonical": [
-      "https://jimlunsford.com/"
-    ],
     "shortlink": [
       "https://jiml.in/v1"
     ],
@@ -81,6 +81,9 @@
     "home": [
       "https://jimlunsford.com/"
     ],
+    "nofollow": [
+      "https://jimlunsford.com/wp-login.php"
+    ],
     "me": [
       "https://jimlunsford.com/",
       "https://lunsford.xyz/@jim",
@@ -91,6 +94,11 @@
     "https://gmpg.org/xfn/11": {
       "rels": [
         "profile"
+      ]
+    },
+    "https://jimlunsford.com/": {
+      "rels": [
+        "canonical"
       ]
     },
     "https://www.googletagmanager.com/": {
@@ -280,11 +288,6 @@
       ],
       "type": "application/wlwmanifest+xml"
     },
-    "https://jimlunsford.com/": {
-      "rels": [
-        "canonical"
-      ]
-    },
     "https://jiml.in/v1": {
       "rels": [
         "shortlink"
@@ -336,6 +339,12 @@
       "rels": [
         "apple-touch-icon"
       ]
+    },
+    "https://jimlunsford.com/wp-login.php": {
+      "rels": [
+        "nofollow"
+      ],
+      "text": "Log in"
     },
     "https://lunsford.xyz/@jim": {
       "rels": [

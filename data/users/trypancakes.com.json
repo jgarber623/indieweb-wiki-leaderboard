@@ -2,28 +2,39 @@
   "items": [
     {
       "type": [
-        "h-card"
+        "h-screen"
       ],
-      "properties": {
-        "logo": [
-          ""
-        ],
-        "nickname": [
-          "pancakes"
-        ],
-        "url": [
-          "https://trypancakes.com/"
-        ],
-        "note": [
-          "I'm a software development student from Australia. I'm interested in FOSS, Linux, and RustLang."
-        ],
-        "country-name": [
-          "Australia"
-        ],
-        "gender-identity": [
-          "Male"
-        ]
-      }
+      "properties": {},
+      "children": [
+        {
+          "type": [
+            "h-card"
+          ],
+          "properties": {
+            "name": [
+              "pancakes"
+            ],
+            "note": [
+              "I'm a software development student from Australia. I'm interested in FOSS, Linux, and RustLang."
+            ],
+            "photo": [
+              {
+                "value": "https://trypancakes.com/img/avatar.png",
+                "alt": ""
+              }
+            ],
+            "country-name": [
+              "Australia"
+            ],
+            "uid": [
+              "https://trypancakes.com/"
+            ],
+            "url": [
+              "https://trypancakes.com/"
+            ]
+          }
+        }
+      ]
     }
   ],
   "rels": {
@@ -31,23 +42,23 @@
       "https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css",
       "https://trypancakes.com/style.css"
     ],
-    "authorization_endpoint": [
-      "https://auth.trypancakes.com/"
-    ],
     "me": [
       "https://codeberg.org/pancakes",
-      "https://hachyderm.io/@pancakes",
+      "https://tech.lgbt/@pancakes",
+      "https://twitch.tv/try_pancakes",
       "https://youtube.com/@trypancakes",
       "https://trypancakes.com/"
     ],
     "noopener": [
       "https://codeberg.org/pancakes",
-      "https://hachyderm.io/@pancakes",
+      "https://tech.lgbt/@pancakes",
+      "https://twitch.tv/try_pancakes",
       "https://youtube.com/@trypancakes"
     ],
     "noreferrer": [
       "https://codeberg.org/pancakes",
-      "https://hachyderm.io/@pancakes",
+      "https://tech.lgbt/@pancakes",
+      "https://twitch.tv/try_pancakes",
       "https://youtube.com/@trypancakes"
     ]
   },
@@ -62,26 +73,29 @@
         "stylesheet"
       ]
     },
-    "https://auth.trypancakes.com/": {
-      "rels": [
-        "authorization_endpoint"
-      ]
-    },
     "https://codeberg.org/pancakes": {
       "rels": [
         "me",
         "noopener",
         "noreferrer"
       ],
-      "text": "\n      \n      \n      Codeberg\n    "
+      "text": "\n        \n        Codeberg\n      "
     },
-    "https://hachyderm.io/@pancakes": {
+    "https://tech.lgbt/@pancakes": {
       "rels": [
         "me",
         "noopener",
         "noreferrer"
       ],
-      "text": "\n      \n      Mastodon\n    "
+      "text": "\n        \n        Mastodon\n      "
+    },
+    "https://twitch.tv/try_pancakes": {
+      "rels": [
+        "me",
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "\n        \n        Twitch\n      "
     },
     "https://youtube.com/@trypancakes": {
       "rels": [
@@ -89,13 +103,13 @@
         "noopener",
         "noreferrer"
       ],
-      "text": "\n      \n      YouTube\n    "
+      "text": "\n        \n        YouTube\n      "
     },
     "https://trypancakes.com/": {
       "rels": [
         "me"
       ],
-      "text": "pancakes"
+      "text": "Website"
     }
   }
 }
