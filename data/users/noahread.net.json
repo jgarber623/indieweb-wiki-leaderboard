@@ -1,52 +1,122 @@
 {
   "items": [],
   "rels": {
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "home": [
+      "https://noahread.net/"
+    ],
     "stylesheet": [
-      "https://noahread.net/cpresources/44673b73/css/selectize.css?v=1670030526",
-      "https://noahread.net/cpresources/482f993b/css/cp.css?v=1670030526"
+      "https://noahread.net/assets/css/screen.css?ver=1"
     ],
     "icon": [
-      "https://noahread.net/cpresources/482f993b/images/icons/favicon.ico",
-      "https://noahread.net/cpresources/482f993b/images/icons/icon.svg"
+      "https://noahread.net/assets/img/favicon.ico"
+    ],
+    "shortcut": [
+      "https://noahread.net/assets/img/favicon.ico"
     ],
     "apple-touch-icon": [
-      "https://noahread.net/cpresources/482f993b/images/icons/apple-touch-icon.png"
+      "https://noahread.net/assets/img/apple-touch-icon.png"
     ],
     "mask-icon": [
-      "https://noahread.net/cpresources/482f993b/images/icons/safari-pinned-tab.svg"
+      "https://noahread.net/assets/img/website_icon.svg"
+    ],
+    "alternate": [
+      "https://noahread.net/blog/feed/index.rss",
+      "https://noahread.net/work/feed/index.rss",
+      "https://noahread.net/snippets/feed/index.rss",
+      "https://noahread.net/blog.json",
+      "https://noahread.net/snippets.json"
+    ],
+    "me": [
+      "https://micro.blog/noah"
+    ],
+    "canonical": [
+      "https://noahread.net/"
+    ],
+    "author": [
+      "https://noahread.net/humans.txt"
     ]
   },
   "rel-urls": {
-    "https://noahread.net/cpresources/44673b73/css/selectize.css?v=1670030526": {
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://noahread.net/": {
+      "rels": [
+        "home"
+      ]
+    },
+    "https://noahread.net/assets/css/screen.css?ver=1": {
       "rels": [
         "stylesheet"
-      ]
-    },
-    "https://noahread.net/cpresources/482f993b/css/cp.css?v=1670030526": {
-      "rels": [
-        "stylesheet"
-      ]
-    },
-    "https://noahread.net/cpresources/482f993b/images/icons/favicon.ico": {
-      "rels": [
-        "icon"
-      ]
-    },
-    "https://noahread.net/cpresources/482f993b/images/icons/icon.svg": {
-      "rels": [
-        "icon"
       ],
-      "type": "image/svg+xml"
+      "type": "text/css"
     },
-    "https://noahread.net/cpresources/482f993b/images/icons/apple-touch-icon.png": {
+    "https://noahread.net/assets/img/favicon.ico": {
+      "rels": [
+        "icon",
+        "shortcut"
+      ]
+    },
+    "https://noahread.net/assets/img/apple-touch-icon.png": {
       "rels": [
         "apple-touch-icon"
       ]
     },
-    "https://noahread.net/cpresources/482f993b/images/icons/safari-pinned-tab.svg": {
+    "https://noahread.net/assets/img/website_icon.svg": {
       "rels": [
         "mask-icon"
       ]
+    },
+    "https://noahread.net/blog/feed/index.rss": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Blog Feed (RSS)",
+      "type": "application/rss+xml"
+    },
+    "https://noahread.net/work/feed/index.rss": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Work Feed (RSS)",
+      "type": "application/rss+xml"
+    },
+    "https://noahread.net/snippets/feed/index.rss": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Snippets Feed (RSS)",
+      "type": "application/rss+xml"
+    },
+    "https://noahread.net/blog.json": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Blog Feed (JSON Feed)",
+      "type": "application/json"
+    },
+    "https://noahread.net/snippets.json": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Snippets Feed (JSON Feed)",
+      "type": "application/json"
+    },
+    "https://micro.blog/noah": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://noahread.net/humans.txt": {
+      "rels": [
+        "author"
+      ],
+      "type": "text/plain"
     }
   }
 }

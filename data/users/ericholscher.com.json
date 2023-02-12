@@ -2,9 +2,17 @@
   "items": [],
   "rels": {
     "stylesheet": [
-      "https://ericholscher.com/_static/alabaster.css",
       "https://ericholscher.com/_static/pygments.css",
-      "https://ericholscher.com/_static/eric.css",
+      "https://ericholscher.com/_static/alabaster.css",
+      "https://ericholscher.com/_static/css/tooltipster.custom.css",
+      "https://ericholscher.com/_static/css/tooltipster.bundle.min.css",
+      "https://ericholscher.com/_static/css/tooltipster-sideTip-shadow.min.css",
+      "https://ericholscher.com/_static/css/tooltipster-sideTip-punk.min.css",
+      "https://ericholscher.com/_static/css/tooltipster-sideTip-noir.min.css",
+      "https://ericholscher.com/_static/css/tooltipster-sideTip-light.min.css",
+      "https://ericholscher.com/_static/css/tooltipster-sideTip-borderless.min.css",
+      "https://ericholscher.com/_static/css/micromodal.css",
+      "https://ericholscher.com/_static/css/alabaster.css",
       "https://ericholscher.com/_/static/css/badge_only.css",
       "https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css",
       "https://ericholscher.com/_/static/css/readthedocs-doc-embed.css"
@@ -15,27 +23,25 @@
     "icon": [
       "https://ericholscher.com/_static/favicon.ico"
     ],
-    "shortcut": [
-      "https://ericholscher.com/_static/favicon.ico"
-    ],
     "author": [
-      "https://ericholscher.com/about/"
+      "https://ericholscher.com/about.html"
     ],
     "index": [
-      "https://ericholscher.com/genindex/"
+      "https://ericholscher.com/genindex.html"
     ],
     "search": [
-      "https://ericholscher.com/search/"
+      "https://ericholscher.com/search.html"
     ],
     "next": [
-      "https://ericholscher.com/about/"
+      "https://ericholscher.com/blog/index.html"
     ],
     "alternate": [
       "https://ericholscher.com/blog/archive/atom.xml"
     ],
     "me": [
-      "https://twitter.com/ericholscher",
+      "https://fosstodon.org/@ericholscher",
       "https://github.com/ericholscher",
+      "https://twitter.com/ericholscher",
       "mailto:eric@ericholscher.com"
     ],
     "nofollow": [
@@ -43,19 +49,67 @@
     ]
   },
   "rel-urls": {
-    "https://ericholscher.com/_static/alabaster.css": {
-      "rels": [
-        "stylesheet"
-      ],
-      "type": "text/css"
-    },
     "https://ericholscher.com/_static/pygments.css": {
       "rels": [
         "stylesheet"
       ],
       "type": "text/css"
     },
-    "https://ericholscher.com/_static/eric.css": {
+    "https://ericholscher.com/_static/alabaster.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://ericholscher.com/_static/css/tooltipster.custom.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://ericholscher.com/_static/css/tooltipster.bundle.min.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://ericholscher.com/_static/css/tooltipster-sideTip-shadow.min.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://ericholscher.com/_static/css/tooltipster-sideTip-punk.min.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://ericholscher.com/_static/css/tooltipster-sideTip-noir.min.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://ericholscher.com/_static/css/tooltipster-sideTip-light.min.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://ericholscher.com/_static/css/tooltipster-sideTip-borderless.min.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://ericholscher.com/_static/css/micromodal.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://ericholscher.com/_static/css/alabaster.css": {
       "rels": [
         "stylesheet"
       ],
@@ -74,27 +128,32 @@
     },
     "https://ericholscher.com/_static/favicon.ico": {
       "rels": [
-        "icon",
-        "shortcut"
+        "icon"
       ]
     },
-    "https://ericholscher.com/about/": {
+    "https://ericholscher.com/about.html": {
       "rels": [
         "author"
       ],
       "title": "About these documents"
     },
-    "https://ericholscher.com/genindex/": {
+    "https://ericholscher.com/genindex.html": {
       "rels": [
         "index"
       ],
       "title": "Index"
     },
-    "https://ericholscher.com/search/": {
+    "https://ericholscher.com/search.html": {
       "rels": [
         "search"
       ],
       "title": "Search"
+    },
+    "https://ericholscher.com/blog/index.html": {
+      "rels": [
+        "next"
+      ],
+      "title": "Blog archive"
     },
     "https://ericholscher.com/blog/archive/atom.xml": {
       "rels": [
@@ -114,17 +173,23 @@
       ],
       "type": "text/css"
     },
-    "https://twitter.com/ericholscher": {
+    "https://fosstodon.org/@ericholscher": {
       "rels": [
         "me"
       ],
-      "text": "Twitter"
+      "text": "Mastodon"
     },
     "https://github.com/ericholscher": {
       "rels": [
         "me"
       ],
       "text": "GitHub"
+    },
+    "https://twitter.com/ericholscher": {
+      "rels": [
+        "me"
+      ],
+      "text": "Twitter"
     },
     "mailto:eric@ericholscher.com": {
       "rels": [

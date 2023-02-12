@@ -6,63 +6,58 @@
       ],
       "properties": {
         "photo": [
-          "https://d3z.me/images/hulk.png"
+          {
+            "value": "https://d3z.me/images/hulk.jpg",
+            "alt": "My profile photo"
+          }
         ],
-        "note": [
-          "Smart enough to know I'm not smart enough."
-        ],
-        "nickname": [
+        "name": [
           "d3z"
         ],
+        "note": [
+          "...and I am a human on the Internet."
+        ],
+        "org": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "name": [
+                "Joocy"
+              ],
+              "url": [
+                "https://joocy.com/"
+              ]
+            },
+            "value": "Joocy"
+          }
+        ],
+        "uid": [
+          "https://d3z.me/"
+        ],
         "url": [
-          "mailto:g@d3z.me",
-          "https://indieweb.social/web/@d3z"
+          "https://d3z.me/",
+          "https://codeberg.org/d3z"
         ]
       }
     }
   ],
   "rels": {
-    "authn": [
-      "https://d3z.me/key.txt"
-    ],
-    "pgpkey": [
-      "https://d3z.me/key.txt"
-    ],
-    "stylesheet": [
-      "https://d3z.me/styles.css"
-    ],
-    "micropub": [
-      "https://micropub.d3z.me/"
-    ],
     "authorization_endpoint": [
       "https://indieauth.com/auth"
     ],
     "token_endpoint": [
       "https://tokens.indieauth.com/token"
     ],
+    "pgpkey": [
+      "https://d3z.me/key.txt"
+    ],
     "me": [
-      "https://d3z.me/",
-      "mailto:g@d3z.me",
-      "https://indieweb.social/web/@d3z"
+      "https://codeberg.org/d3z"
     ]
   },
   "rel-urls": {
-    "https://d3z.me/key.txt": {
-      "rels": [
-        "authn",
-        "pgpkey"
-      ]
-    },
-    "https://d3z.me/styles.css": {
-      "rels": [
-        "stylesheet"
-      ]
-    },
-    "https://micropub.d3z.me/": {
-      "rels": [
-        "micropub"
-      ]
-    },
     "https://indieauth.com/auth": {
       "rels": [
         "authorization_endpoint"
@@ -73,23 +68,16 @@
         "token_endpoint"
       ]
     },
-    "https://d3z.me/": {
+    "https://d3z.me/key.txt": {
       "rels": [
-        "me"
-      ],
-      "text": "d3z"
+        "pgpkey"
+      ]
     },
-    "mailto:g@d3z.me": {
+    "https://codeberg.org/d3z": {
       "rels": [
         "me"
       ],
-      "text": "email"
-    },
-    "https://indieweb.social/web/@d3z": {
-      "rels": [
-        "me"
-      ],
-      "text": "fediverse"
+      "text": "@d3z"
     }
   }
 }
