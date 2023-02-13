@@ -2,44 +2,79 @@
   "items": [
     {
       "type": [
-        "h-card"
+        "h-feed"
       ],
       "properties": {
-        "photo": [
-          "http://starrwulfe.xyz/profile.jpg?v=40fc0a666c5d9185330ec4ca7ee21ee8ee98bc4b03303ebe0f928d301c43ca8d"
-        ],
-        "name": [
-          "J. L. Gatewood"
-        ],
-        "url": [
-          "https://starrwulfe.xyz/"
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "photo": [
+                "https://starrwulfe.xyz/profile.jpg?v=40fc0a666c5d9185330ec4ca7ee21ee8ee98bc4b03303ebe0f928d301c43ca8d"
+              ],
+              "name": [
+                "J. L. Gatewood"
+              ],
+              "url": [
+                "https://starrwulfe.xyz/"
+              ]
+            },
+            "value": "J. L. Gatewood"
+          }
         ]
-      }
+      },
+      "children": [
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "test post 1"
+            ],
+            "url": [
+              "https://starrwulfe.xyz/posts/2023/02/2023-02-13-yeyoo",
+              "https://starrwulfe.xyz/posts/2023/02/2023-02-13-yeyoo"
+            ],
+            "published": [
+              "2023-02-13T01:29:50-05:00"
+            ],
+            "summary": [
+              "OK, testing again… will wipe the database again if i gotta!"
+            ]
+          }
+        }
+      ]
     }
   ],
   "rels": {
     "stylesheet": [
       "https://starrwulfe.xyz/2ff68a0bf4340d378337c0022bdb1b59075d42814aa3ee6d45f1ddaaa539c937.css"
     ],
+    "canonical": [
+      "https://starrwulfe.xyz/"
+    ],
     "alternate": [
-      "http://starrwulfe.xyz/.rss",
-      "http://starrwulfe.xyz/.atom",
-      "http://starrwulfe.xyz/.json"
+      "https://starrwulfe.xyz/.rss",
+      "https://starrwulfe.xyz/.atom",
+      "https://starrwulfe.xyz/.json"
     ],
     "webmention": [
-      "http://starrwulfe.xyz/webmention"
+      "https://starrwulfe.xyz/webmention"
     ],
     "micropub": [
-      "http://starrwulfe.xyz/micropub"
+      "https://starrwulfe.xyz/micropub"
     ],
     "authorization_endpoint": [
-      "http://starrwulfe.xyz/indieauth"
+      "https://starrwulfe.xyz/indieauth"
     ],
     "token_endpoint": [
-      "http://starrwulfe.xyz/indieauth/token"
+      "https://starrwulfe.xyz/indieauth/token"
     ],
     "indieauth-metadata": [
-      "http://starrwulfe.xyz/.well-known/oauth-authorization-server"
+      "https://starrwulfe.xyz/.well-known/oauth-authorization-server"
     ],
     "me": [
       "https://micro.blog/starrwulfe",
@@ -54,6 +89,9 @@
       "https://indieweb.org/User:Starrwulfe.xyz",
       "https://starrwulfe.xyz/"
     ],
+    "search": [
+      "https://starrwulfe.xyz/search/opensearch.xml"
+    ],
     "icon": [
       "https://starrwulfe.xyz/profile.jpg?s=192&v=40fc0a666c5d9185330ec4ca7ee21ee8ee98bc4b03303ebe0f928d301c43ca8d",
       "https://starrwulfe.xyz/profile.jpg?s=256&v=40fc0a666c5d9185330ec4ca7ee21ee8ee98bc4b03303ebe0f928d301c43ca8d",
@@ -64,15 +102,6 @@
     ],
     "home": [
       "https://starrwulfe.xyz/"
-    ],
-    "nofollow": [
-      "https://www.torproject.org/"
-    ],
-    "noopener": [
-      "https://www.torproject.org/"
-    ],
-    "noreferrer": [
-      "https://www.torproject.org/"
     ]
   },
   "rel-urls": {
@@ -81,48 +110,53 @@
         "stylesheet"
       ]
     },
-    "http://starrwulfe.xyz/.rss": {
+    "https://starrwulfe.xyz/": {
+      "rels": [
+        "canonical"
+      ]
+    },
+    "https://starrwulfe.xyz/.rss": {
       "rels": [
         "alternate"
       ],
-      "title": "RSS (starrwulfe »federated«)",
+      "title": "RSS",
       "type": "application/rss+xml"
     },
-    "http://starrwulfe.xyz/.atom": {
+    "https://starrwulfe.xyz/.atom": {
       "rels": [
         "alternate"
       ],
-      "title": "ATOM (starrwulfe »federated«)",
+      "title": "ATOM",
       "type": "application/atom+xml"
     },
-    "http://starrwulfe.xyz/.json": {
+    "https://starrwulfe.xyz/.json": {
       "rels": [
         "alternate"
       ],
-      "title": "JSON Feed (starrwulfe »federated«)",
+      "title": "JSON Feed",
       "type": "application/feed+json"
     },
-    "http://starrwulfe.xyz/webmention": {
+    "https://starrwulfe.xyz/webmention": {
       "rels": [
         "webmention"
       ]
     },
-    "http://starrwulfe.xyz/micropub": {
+    "https://starrwulfe.xyz/micropub": {
       "rels": [
         "micropub"
       ]
     },
-    "http://starrwulfe.xyz/indieauth": {
+    "https://starrwulfe.xyz/indieauth": {
       "rels": [
         "authorization_endpoint"
       ]
     },
-    "http://starrwulfe.xyz/indieauth/token": {
+    "https://starrwulfe.xyz/indieauth/token": {
       "rels": [
         "token_endpoint"
       ]
     },
-    "http://starrwulfe.xyz/.well-known/oauth-authorization-server": {
+    "https://starrwulfe.xyz/.well-known/oauth-authorization-server": {
       "rels": [
         "indieauth-metadata"
       ]
@@ -177,6 +211,13 @@
         "me"
       ]
     },
+    "https://starrwulfe.xyz/search/opensearch.xml": {
+      "rels": [
+        "search"
+      ],
+      "title": "starrwulfe »federated«",
+      "type": "application/opensearchdescription+xml"
+    },
     "https://starrwulfe.xyz/profile.jpg?s=192&v=40fc0a666c5d9185330ec4ca7ee21ee8ee98bc4b03303ebe0f928d301c43ca8d": {
       "rels": [
         "icon"
@@ -199,21 +240,6 @@
       "rels": [
         "apple-touch-icon"
       ]
-    },
-    "https://starrwulfe.xyz/": {
-      "rels": [
-        "home"
-      ],
-      "title": "starrwulfe »federated«",
-      "text": "starrwulfe »federated«"
-    },
-    "https://www.torproject.org/": {
-      "rels": [
-        "nofollow",
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "What is Tor?"
     }
   }
 }
