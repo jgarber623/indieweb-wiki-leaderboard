@@ -333,6 +333,12 @@
     "alternate": [
       "https://techlifeweb.com/rss.xml"
     ],
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://techlifeweb.com/token"
+    ],
     "me": [
       "https://techlifeweb.com/",
       "mailto:techlifeweb@duck.com",
@@ -436,6 +442,16 @@
       ],
       "title": "RSS Feed",
       "type": "application/rss+xml"
+    },
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://techlifeweb.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
     },
     "mailto:techlifeweb@duck.com": {
       "rels": [

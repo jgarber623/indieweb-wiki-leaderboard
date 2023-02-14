@@ -12,6 +12,28 @@
           ],
           "properties": {
             "name": [
+              "",
+              ""
+            ],
+            "content": [
+              {
+                "html": "<div class=\"e-content\">\n<p>Overheard from my dog while on our walk, with multiple stops to sniff: “So many p-mails, Dad, so little time!”….</p>\n</div>\n<div class=\"syndication-links\"></div>",
+                "value": "Overheard from my dog while on our walk, with multiple stops to sniff: “So many p-mails, Dad, so little time!”…."
+              },
+              {
+                "html": "<p>Overheard from my dog while on our walk, with multiple stops to sniff: “So many p-mails, Dad, so little time!”….</p>",
+                "value": "Overheard from my dog while on our walk, with multiple stops to sniff: “So many p-mails, Dad, so little time!”…."
+              }
+            ]
+          },
+          "id": "post-2789"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               "Musing about glossaries",
               "Musing about glossaries"
             ],
@@ -203,28 +225,6 @@
             ]
           },
           "id": "post-2767"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Emissary install problems",
-              "Emissary install problems"
-            ],
-            "content": [
-              {
-                "html": "<div class=\"e-content\">\n<p>I have been in touch with <a href=\"https://mastodon.social/@benpate\">Ben Pate</a> about his <a href=\"https://emissary.dev/quickstart\">Emissary </a>app, and tried to install it on my Windows 10 laptop, but had some problems. I decided to copy my debug log to a blog post and send the link to Ben for further review.</p>\n\n\n\n<p>Downloaded Go (<a href=\"https://go.dev/dl/\">https://go.dev/dl/</a>) (<a href=\"https://go.dev/dl/go1.19.5.windows-amd64.msi\">https://go.dev/dl/go1.19.5.windows-amd64.msi</a>) and did install.</p>\n\n\n\n<p>Downloaded MongoDB Community Server (<a href=\"https://www.mongodb.com/try/download/community\">https://www.mongodb.com/try/download/community</a>) and did install.</p>\n\n\n\n<p>Started Emissary, got the following error message:</p>\n\n\n\n<p>go: downloading github.com/jmespath/go-jmespath v0.4.0</p>\n\n\n\n<p># github.com/chai2010/webp</p>\n\n\n\n<p>cgo: C compiler “gcc” not found: exec: “gcc”: executable file not found in %PATH%</p>\n\n\n\n<p># github.com/pjbgf/sha1cd/cgo</p>\n\n\n\n<p>cgo: C compiler “gcc” not found: exec: “gcc”: executable file not found in %PATH%</p>\n\n\n\n<p>PS C:\\Users\\sylve\\Documents\\emissary-main\\emissary-main&gt;</p>\n\n\n\n<p>Installed gcc++ from Cygwin, got this set of error messages:</p>\n\n\n\n<p># command-line-arguments</p>\n\n\n\n<p>C:\\Program Files\\Go\\pkg\\tool\\windows_amd64\\link.exe: running gcc failed: exit status 1</p>\n\n\n\n<p>/usr/lib/gcc/x86_64-pc-cygwin/11/../../../../x86_64-pc-cygwin/bin/ld: cannot find -lmingwex: No such file or directory</p>\n\n\n\n<p>/usr/lib/gcc/x86_64-pc-cygwin/11/../../../../x86_64-pc-cygwin/bin/ld: cannot find -lmingw32: No such file or directory</p>\n\n\n\n<p>collect2: error: ld returned 1 exit status</p>\n\n\n\n<p>Added C:\\cygwin64\\lib\\w32api to PATH (see <a href=\"https://stackoverflow.com/questions/4272139/gcc-cygwin-compile-error\">https://stackoverflow.com/questions/4272139/gcc-cygwin-compile-error</a>), got the same error.</p>\n\n\n\n<p>Downloaded <a href=\"https://winlibs.com/\">https://winlibs.com/</a> GCC 12.2.0 Win32 and Win64 downloads, unzipped the Win32 download. Copied mingw32 folder to C: drive, then updated PATH environment variable to add C:\\mingw32\\bin</p>\n\n\n\n<p>Tried server install again, got same error messages (cannot find -mingwex, -lmingw32)</p>\n\n\n\n<p>Deleted Cygwin entries from PATH environment variable, leaving just the mingw32 path</p>\n\n\n\n<p>Tried server install again, got a new set of error messages:</p>\n\n\n\n<p>PS C:\\Users\\sylve\\Documents\\emissary-main\\emissary-main&gt; go run server.go –setup</p>\n\n\n\n<p># github.com/pjbgf/sha1cd/cgo</p>\n\n\n\n<p>cc1.exe: sorry, unimplemented: 64-bit mode not compiled in</p>\n\n\n\n<p># github.com/chai2010/webp</p>\n\n\n\n<p>cc1.exe: sorry, unimplemented: 64-bit mode not compiled in</p>\n\n\n\n<p>PS C:\\Users\\sylve\\Documents\\emissary-main\\emissary-main&gt;</p>\n</div>\n<div class=\"syndication-links\"></div>",
-                "value": "I have been in touch with Ben Pate about his Emissary app, and tried to install it on my Windows 10 laptop, but had some problems. I decided to copy my debug log to a blog post and send the link to Ben for further review.\n\n\n\nDownloaded Go (https://go.dev/dl/) (https://go.dev/dl/go1.19.5.windows-amd64.msi) and did install.\n\n\n\nDownloaded MongoDB Community Server (https://www.mongodb.com/try/download/community) and did install.\n\n\n\nStarted Emissary, got the following error message:\n\n\n\ngo: downloading github.com/jmespath/go-jmespath v0.4.0\n\n\n\n# github.com/chai2010/webp\n\n\n\ncgo: C compiler “gcc” not found: exec: “gcc”: executable file not found in %PATH%\n\n\n\n# github.com/pjbgf/sha1cd/cgo\n\n\n\ncgo: C compiler “gcc” not found: exec: “gcc”: executable file not found in %PATH%\n\n\n\nPS C:\\Users\\sylve\\Documents\\emissary-main\\emissary-main>\n\n\n\nInstalled gcc++ from Cygwin, got this set of error messages:\n\n\n\n# command-line-arguments\n\n\n\nC:\\Program Files\\Go\\pkg\\tool\\windows_amd64\\link.exe: running gcc failed: exit status 1\n\n\n\n/usr/lib/gcc/x86_64-pc-cygwin/11/../../../../x86_64-pc-cygwin/bin/ld: cannot find -lmingwex: No such file or directory\n\n\n\n/usr/lib/gcc/x86_64-pc-cygwin/11/../../../../x86_64-pc-cygwin/bin/ld: cannot find -lmingw32: No such file or directory\n\n\n\ncollect2: error: ld returned 1 exit status\n\n\n\nAdded C:\\cygwin64\\lib\\w32api to PATH (see https://stackoverflow.com/questions/4272139/gcc-cygwin-compile-error), got the same error.\n\n\n\nDownloaded https://winlibs.com/ GCC 12.2.0 Win32 and Win64 downloads, unzipped the Win32 download. Copied mingw32 folder to C: drive, then updated PATH environment variable to add C:\\mingw32\\bin\n\n\n\nTried server install again, got same error messages (cannot find -mingwex, -lmingw32)\n\n\n\nDeleted Cygwin entries from PATH environment variable, leaving just the mingw32 path\n\n\n\nTried server install again, got a new set of error messages:\n\n\n\nPS C:\\Users\\sylve\\Documents\\emissary-main\\emissary-main> go run server.go –setup\n\n\n\n# github.com/pjbgf/sha1cd/cgo\n\n\n\ncc1.exe: sorry, unimplemented: 64-bit mode not compiled in\n\n\n\n# github.com/chai2010/webp\n\n\n\ncc1.exe: sorry, unimplemented: 64-bit mode not compiled in\n\n\n\nPS C:\\Users\\sylve\\Documents\\emissary-main\\emissary-main>"
-              },
-              {
-                "html": "<p>I have been in touch with <a href=\"https://mastodon.social/@benpate\">Ben Pate</a> about his <a href=\"https://emissary.dev/quickstart\">Emissary </a>app, and tried to install it on my Windows 10 laptop, but had some problems. I decided to copy my debug log to a blog post and send the link to Ben for further review.</p>\n\n\n\n<p>Downloaded Go (<a href=\"https://go.dev/dl/\">https://go.dev/dl/</a>) (<a href=\"https://go.dev/dl/go1.19.5.windows-amd64.msi\">https://go.dev/dl/go1.19.5.windows-amd64.msi</a>) and did install.</p>\n\n\n\n<p>Downloaded MongoDB Community Server (<a href=\"https://www.mongodb.com/try/download/community\">https://www.mongodb.com/try/download/community</a>) and did install.</p>\n\n\n\n<p>Started Emissary, got the following error message:</p>\n\n\n\n<p>go: downloading github.com/jmespath/go-jmespath v0.4.0</p>\n\n\n\n<p># github.com/chai2010/webp</p>\n\n\n\n<p>cgo: C compiler “gcc” not found: exec: “gcc”: executable file not found in %PATH%</p>\n\n\n\n<p># github.com/pjbgf/sha1cd/cgo</p>\n\n\n\n<p>cgo: C compiler “gcc” not found: exec: “gcc”: executable file not found in %PATH%</p>\n\n\n\n<p>PS C:\\Users\\sylve\\Documents\\emissary-main\\emissary-main&gt;</p>\n\n\n\n<p>Installed gcc++ from Cygwin, got this set of error messages:</p>\n\n\n\n<p># command-line-arguments</p>\n\n\n\n<p>C:\\Program Files\\Go\\pkg\\tool\\windows_amd64\\link.exe: running gcc failed: exit status 1</p>\n\n\n\n<p>/usr/lib/gcc/x86_64-pc-cygwin/11/../../../../x86_64-pc-cygwin/bin/ld: cannot find -lmingwex: No such file or directory</p>\n\n\n\n<p>/usr/lib/gcc/x86_64-pc-cygwin/11/../../../../x86_64-pc-cygwin/bin/ld: cannot find -lmingw32: No such file or directory</p>\n\n\n\n<p>collect2: error: ld returned 1 exit status</p>\n\n\n\n<p>Added C:\\cygwin64\\lib\\w32api to PATH (see <a href=\"https://stackoverflow.com/questions/4272139/gcc-cygwin-compile-error\">https://stackoverflow.com/questions/4272139/gcc-cygwin-compile-error</a>), got the same error.</p>\n\n\n\n<p>Downloaded <a href=\"https://winlibs.com/\">https://winlibs.com/</a> GCC 12.2.0 Win32 and Win64 downloads, unzipped the Win32 download. Copied mingw32 folder to C: drive, then updated PATH environment variable to add C:\\mingw32\\bin</p>\n\n\n\n<p>Tried server install again, got same error messages (cannot find -mingwex, -lmingw32)</p>\n\n\n\n<p>Deleted Cygwin entries from PATH environment variable, leaving just the mingw32 path</p>\n\n\n\n<p>Tried server install again, got a new set of error messages:</p>\n\n\n\n<p>PS C:\\Users\\sylve\\Documents\\emissary-main\\emissary-main&gt; go run server.go –setup</p>\n\n\n\n<p># github.com/pjbgf/sha1cd/cgo</p>\n\n\n\n<p>cc1.exe: sorry, unimplemented: 64-bit mode not compiled in</p>\n\n\n\n<p># github.com/chai2010/webp</p>\n\n\n\n<p>cc1.exe: sorry, unimplemented: 64-bit mode not compiled in</p>\n\n\n\n<p>PS C:\\Users\\sylve\\Documents\\emissary-main\\emissary-main&gt;</p>",
-                "value": "I have been in touch with Ben Pate about his Emissary app, and tried to install it on my Windows 10 laptop, but had some problems. I decided to copy my debug log to a blog post and send the link to Ben for further review.\n\n\n\nDownloaded Go (https://go.dev/dl/) (https://go.dev/dl/go1.19.5.windows-amd64.msi) and did install.\n\n\n\nDownloaded MongoDB Community Server (https://www.mongodb.com/try/download/community) and did install.\n\n\n\nStarted Emissary, got the following error message:\n\n\n\ngo: downloading github.com/jmespath/go-jmespath v0.4.0\n\n\n\n# github.com/chai2010/webp\n\n\n\ncgo: C compiler “gcc” not found: exec: “gcc”: executable file not found in %PATH%\n\n\n\n# github.com/pjbgf/sha1cd/cgo\n\n\n\ncgo: C compiler “gcc” not found: exec: “gcc”: executable file not found in %PATH%\n\n\n\nPS C:\\Users\\sylve\\Documents\\emissary-main\\emissary-main>\n\n\n\nInstalled gcc++ from Cygwin, got this set of error messages:\n\n\n\n# command-line-arguments\n\n\n\nC:\\Program Files\\Go\\pkg\\tool\\windows_amd64\\link.exe: running gcc failed: exit status 1\n\n\n\n/usr/lib/gcc/x86_64-pc-cygwin/11/../../../../x86_64-pc-cygwin/bin/ld: cannot find -lmingwex: No such file or directory\n\n\n\n/usr/lib/gcc/x86_64-pc-cygwin/11/../../../../x86_64-pc-cygwin/bin/ld: cannot find -lmingw32: No such file or directory\n\n\n\ncollect2: error: ld returned 1 exit status\n\n\n\nAdded C:\\cygwin64\\lib\\w32api to PATH (see https://stackoverflow.com/questions/4272139/gcc-cygwin-compile-error), got the same error.\n\n\n\nDownloaded https://winlibs.com/ GCC 12.2.0 Win32 and Win64 downloads, unzipped the Win32 download. Copied mingw32 folder to C: drive, then updated PATH environment variable to add C:\\mingw32\\bin\n\n\n\nTried server install again, got same error messages (cannot find -mingwex, -lmingw32)\n\n\n\nDeleted Cygwin entries from PATH environment variable, leaving just the mingw32 path\n\n\n\nTried server install again, got a new set of error messages:\n\n\n\nPS C:\\Users\\sylve\\Documents\\emissary-main\\emissary-main> go run server.go –setup\n\n\n\n# github.com/pjbgf/sha1cd/cgo\n\n\n\ncc1.exe: sorry, unimplemented: 64-bit mode not compiled in\n\n\n\n# github.com/chai2010/webp\n\n\n\ncc1.exe: sorry, unimplemented: 64-bit mode not compiled in\n\n\n\nPS C:\\Users\\sylve\\Documents\\emissary-main\\emissary-main>"
-              }
-            ]
-          },
-          "id": "post-2763"
         }
       ]
     }
@@ -285,6 +285,7 @@
       "https://andysylvester.com/"
     ],
     "bookmark": [
+      "https://andysylvester.com/2023/02/12/2789/",
       "https://andysylvester.com/2023/02/11/musing-about-glossaries/",
       "https://andysylvester.com/2023/02/11/2785/",
       "https://andysylvester.com/2023/02/09/2783/",
@@ -293,10 +294,10 @@
       "https://andysylvester.com/2023/02/02/2774/",
       "https://andysylvester.com/2023/01/31/update-on-mystatustool-development/",
       "https://andysylvester.com/2023/01/31/2770/",
-      "https://andysylvester.com/2023/01/25/blogging-at-the-oregon-coast/",
-      "https://andysylvester.com/2023/01/21/emissary-install-problems/"
+      "https://andysylvester.com/2023/01/25/blogging-at-the-oregon-coast/"
     ],
     "category": [
+      "https://andysylvester.com/category/dogs/",
       "https://andysylvester.com/category/glossaries/",
       "https://andysylvester.com/category/mystatustool/",
       "https://andysylvester.com/category/blogging/",
@@ -306,10 +307,10 @@
       "https://andysylvester.com/category/racism/",
       "https://andysylvester.com/category/drummer/",
       "https://andysylvester.com/category/podcasting/",
-      "https://andysylvester.com/category/travel/",
-      "https://andysylvester.com/category/software-development/"
+      "https://andysylvester.com/category/travel/"
     ],
     "tag": [
+      "https://andysylvester.com/category/dogs/",
       "https://andysylvester.com/category/glossaries/",
       "https://andysylvester.com/category/mystatustool/",
       "https://andysylvester.com/category/blogging/",
@@ -319,8 +320,7 @@
       "https://andysylvester.com/category/racism/",
       "https://andysylvester.com/category/drummer/",
       "https://andysylvester.com/category/podcasting/",
-      "https://andysylvester.com/category/travel/",
-      "https://andysylvester.com/category/software-development/"
+      "https://andysylvester.com/category/travel/"
     ],
     "designer": [
       "http://independentpublisher.me/"
@@ -474,6 +474,19 @@
       ],
       "title": "Andy Sylvester's Web"
     },
+    "https://andysylvester.com/2023/02/12/2789/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to"
+    },
+    "https://andysylvester.com/category/dogs/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Dogs"
+    },
     "https://andysylvester.com/2023/02/11/musing-about-glossaries/": {
       "rels": [
         "bookmark"
@@ -601,20 +614,6 @@
         "tag"
       ],
       "text": "Travel"
-    },
-    "https://andysylvester.com/2023/01/21/emissary-install-problems/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Permalink to Emissary install problems",
-      "text": "Emissary install problems"
-    },
-    "https://andysylvester.com/category/software-development/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "Software Development"
     },
     "http://independentpublisher.me/": {
       "rels": [

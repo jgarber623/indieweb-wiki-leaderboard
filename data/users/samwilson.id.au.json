@@ -5,6 +5,47 @@
         "h-entry"
       ],
       "properties": {
+        "in-reply-to": [
+          "https://samwilson.id.au/P26657"
+        ],
+        "name": [
+          "P26661"
+        ],
+        "url": [
+          "https://samwilson.id.au/P26661"
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "url": [
+                "Sam Wilson"
+              ],
+              "name": [
+                "Sam Wilson"
+              ]
+            },
+            "value": "Sam Wilson"
+          }
+        ],
+        "published": [
+          "2023-02-13T09:00:19Z"
+        ],
+        "content": [
+          {
+            "html": "<p>Oh! It’s blasted VS Code. It goes “bibble” on some random syntax weirdnesses or something. Maybe it’s “wouble”.</p>",
+            "value": "Oh! It’s blasted VS Code. It goes “bibble” on some random syntax weirdnesses or something. Maybe it’s “wouble”."
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
         "name": [
           "P26657"
         ],
@@ -362,49 +403,6 @@
           "Wikimedia",
           "Wikimedia Commons",
           "Toolforge"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "name": [
-          "New MediaWiki extension: CopyCreds"
-        ],
-        "url": [
-          "https://samwilson.id.au/P26574"
-        ],
-        "author": [
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "url": [
-                "Sam Wilson"
-              ],
-              "name": [
-                "Sam Wilson"
-              ]
-            },
-            "value": "Sam Wilson"
-          }
-        ],
-        "published": [
-          "2023-01-23T06:30:20Z"
-        ],
-        "content": [
-          {
-            "html": "<p>A new extension this week: <a href=\"https://www.mediawiki.org/wiki/Extension:CopyCreds\">CopyCreds</a></p>\n<blockquote>\n<p>The CopyCreds extension registers two new tags &lt;pw&gt; and &lt;un&gt;, which make the text inside them visually distinctive, and allows for click-to-copy. The goal is to make life easier for those who document usernames and passwords in MediaWiki.</p>\n</blockquote>\n<p>I like the idea of a simple click-to-copy system for a wiki, but I’m not sure it warrants two new tags. Personally I’d prefer something like <code>&lt;copy class='pwd'&gt;foo&lt;/copy&gt;</code> or something like that, with a means to customize the colour etc. of the displayed value. Actually, maybe that’s what <a href=\"https://www.mediawiki.org/wiki/Extension:CopyLink\">CopyLink</a> does. There used to be one called <a href=\"https://www.mediawiki.org/w/index.php?oldid=4463718\">CopyToClipboard</a> which also did something similar.</p>\n<p>Maybe someone should write the <em>Copyencabulator 2000</em>, to unite them all…</p>",
-            "value": "A new extension this week: CopyCreds\n\nThe CopyCreds extension registers two new tags <pw> and <un>, which make the text inside them visually distinctive, and allows for click-to-copy. The goal is to make life easier for those who document usernames and passwords in MediaWiki.\n\nI like the idea of a simple click-to-copy system for a wiki, but I’m not sure it warrants two new tags. Personally I’d prefer something like <copy class='pwd'>foo</copy> or something like that, with a means to customize the colour etc. of the displayed value. Actually, maybe that’s what CopyLink does. There used to be one called CopyToClipboard which also did something similar.\nMaybe someone should write the Copyencabulator 2000, to unite them all…"
-          }
-        ],
-        "category": [
-          "Wikimedia",
-          "MediaWiki",
-          "extensions"
         ]
       }
     },

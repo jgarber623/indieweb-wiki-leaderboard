@@ -32,6 +32,45 @@
           ],
           "properties": {
             "name": [
+              "Microsoft Office and OneDrive for free?"
+            ],
+            "url": [
+              "https://jlelse.blog/thoughts/2023/02/ms-365-free",
+              "https://jlelse.blog/thoughts/2023/02/ms-365-free"
+            ],
+            "published": [
+              "2023-02-13T21:04:57+01:00"
+            ],
+            "summary": [
+              "I’m a bit of an indecisive (and frugal) person sometimes."
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "published": [
+              "2023-02-13T20:49:59+01:00"
+            ],
+            "content": [
+              {
+                "html": "<p>Nice, the number of <a href=\"https://goblog.app/\" target=\"_blank\" rel=\"noopener\">GoBlog</a> <a href=\"https://jlel.se/goblogusers\" target=\"_blank\" rel=\"noopener\">users</a> is growing! 🤓 The next step is a growing number of GoBlog developers. It would be great to have more people giving advice on how to improve the code. 😅 Any senior Go devs out there?</p>",
+                "value": "Nice, the number of GoBlog users is growing! 🤓 The next step is a growing number of GoBlog developers. It would be great to have more people giving advice on how to improve the code. 😅 Any senior Go devs out there?"
+              }
+            ],
+            "url": [
+              "https://jlelse.blog/micro/2023/02/2023-02-13-kgpem"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               "How I archive my favorite TV show to get rid of Amazon Prime"
             ],
             "url": [
@@ -207,44 +246,6 @@
               "https://jlelse.blog/micro/2023/01/2023-01-24-tmszo"
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "published": [
-              "2023-01-23T21:00:01+01:00"
-            ],
-            "updated": [
-              "2023-01-23T21:00:15+01:00"
-            ],
-            "content": [
-              {
-                "html": "<p>My motivation to work on GoBlog isn’t always the same. Sometimes I don’t feel like programming in my free time, so the most I do is some bug fixing when I find broken things. Sometimes I just have no time to work on new features or improvements. But since yesterday evening I feel a new push and have completely <a href=\"https://goblog.app/updates/2023/01/2023-01-23-suzgv\" target=\"_blank\" rel=\"noopener\">rewritten the plugin system</a> to make it much more flexible (and I like flexibility). I had to break compatibility with existing plugins, but given the small user base and the limited scope of what plugins could do, I suspect there weren’t many. But the future looks promising…</p>\n<p>Interesting side note: Now that <a href=\"https://www.deepl.com/write\" target=\"_blank\" rel=\"noopener\">DeepL Write</a> is in public beta, I used it to improve the writing for the post on the GoBlog blog and this post. As a non-native English speaker, it’s really helpful. Because sometimes I don’t find the right words and use unusual words, or have wrong tenses or word orders, then DeepL corrects me.</p>",
-                "value": "My motivation to work on GoBlog isn’t always the same. Sometimes I don’t feel like programming in my free time, so the most I do is some bug fixing when I find broken things. Sometimes I just have no time to work on new features or improvements. But since yesterday evening I feel a new push and have completely rewritten the plugin system to make it much more flexible (and I like flexibility). I had to break compatibility with existing plugins, but given the small user base and the limited scope of what plugins could do, I suspect there weren’t many. But the future looks promising…Interesting side note: Now that DeepL Write is in public beta, I used it to improve the writing for the post on the GoBlog blog and this post. As a non-native English speaker, it’s really helpful. Because sometimes I don’t find the right words and use unusual words, or have wrong tenses or word orders, then DeepL corrects me."
-              }
-            ],
-            "url": [
-              "https://jlelse.blog/micro/2023/01/2023-01-23-rewco"
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "published": [
-              "2023-01-18T18:11:02+01:00"
-            ],
-            "summary": [
-              "I posted about GoToSocial, but another Mastodon-alternative and Fediverse software, Takahē, seems to make fast progress and has some unique features like support for multiple domains or multiple identities per user. I haven’t tried running it yet, but it looks promising!"
-            ],
-            "url": [
-              "https://jlelse.blog/links/2023/01/2023-01-18-bszvj"
-            ]
-          }
         }
       ]
     }
@@ -295,15 +296,15 @@
     "home": [
       "https://jlelse.blog/"
     ],
-    "nofollow": [
-      "https://www.openstreetmap.org/?mlat=51.303775&mlon=9.4911746",
-      "https://www.torproject.org/"
-    ],
     "noopener": [
+      "https://goblog.app/",
+      "https://jlel.se/goblogusers",
       "https://www.openstreetmap.org/?mlat=51.303775&mlon=9.4911746",
       "https://kandr3s.co/",
-      "https://goblog.app/updates/2023/01/2023-01-23-suzgv",
-      "https://www.deepl.com/write",
+      "https://www.torproject.org/"
+    ],
+    "nofollow": [
+      "https://www.openstreetmap.org/?mlat=51.303775&mlon=9.4911746",
       "https://www.torproject.org/"
     ],
     "noreferrer": [
@@ -408,6 +409,18 @@
         "apple-touch-icon"
       ]
     },
+    "https://goblog.app/": {
+      "rels": [
+        "noopener"
+      ],
+      "text": "GoBlog"
+    },
+    "https://jlel.se/goblogusers": {
+      "rels": [
+        "noopener"
+      ],
+      "text": "users"
+    },
     "https://www.openstreetmap.org/?mlat=51.303775&mlon=9.4911746": {
       "rels": [
         "nofollow",
@@ -421,18 +434,6 @@
         "noopener"
       ],
       "text": "Andrés"
-    },
-    "https://goblog.app/updates/2023/01/2023-01-23-suzgv": {
-      "rels": [
-        "noopener"
-      ],
-      "text": "rewritten the plugin system"
-    },
-    "https://www.deepl.com/write": {
-      "rels": [
-        "noopener"
-      ],
-      "text": "DeepL Write"
     },
     "https://www.torproject.org/": {
       "rels": [

@@ -15,11 +15,8 @@
     "mask-icon": [
       "https://www.ftwynn.com/safari-pinned-tab.svg"
     ],
-    "manifest": [
-      "https://www.ftwynn.com/site.webmanifest"
-    ],
     "canonical": [
-      "http://www.ftwynn.com/"
+      "https://www.ftwynn.com/"
     ],
     "alternate": [
       "https://www.ftwynn.com/index.xml"
@@ -29,12 +26,19 @@
     ],
     "stylesheet": [
       "https://www.ftwynn.com/css/style.min.css",
-      "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css",
-      "https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"
+      "https://www.ftwynn.com/lib/fontawesome-free/all.min.css",
+      "https://www.ftwynn.com/lib/animate/animate.min.css",
+      "https://www.ftwynn.com/lib/katex/katex.min.css",
+      "https://www.ftwynn.com/lib/cookieconsent/cookieconsent.min.css"
     ],
-    "preload": [
-      "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css",
-      "https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"
+    "external": [
+      "https://github.com/FTWynn",
+      "https://linkedin.com/in/DavidBWynn",
+      "https://twitter.com/FTWynn",
+      "https://fosstodon.org/@FTWynn",
+      "https://www.ftwynn.com/index.xml",
+      "https://www.ftwynn.com/me",
+      "https://creativecommons.org/licenses/by-nc/4.0/"
     ],
     "me": [
       "https://github.com/FTWynn",
@@ -43,36 +47,34 @@
       "https://fosstodon.org/@FTWynn",
       "https://www.ftwynn.com/index.xml"
     ],
+    "nofollow": [
+      "https://github.com/FTWynn",
+      "https://linkedin.com/in/DavidBWynn",
+      "https://twitter.com/FTWynn",
+      "https://fosstodon.org/@FTWynn",
+      "https://www.ftwynn.com/index.xml",
+      "https://www.ftwynn.com/me",
+      "https://creativecommons.org/licenses/by-nc/4.0/"
+    ],
     "noopener": [
       "https://github.com/FTWynn",
       "https://linkedin.com/in/DavidBWynn",
       "https://twitter.com/FTWynn",
       "https://fosstodon.org/@FTWynn",
       "https://www.ftwynn.com/index.xml",
-      "http://www.ftwynn.com/me",
-      "https://unite.pokemon.com/en-us/",
+      "https://www.ftwynn.com/me",
       "https://creativecommons.org/licenses/by-nc/4.0/"
     ],
-    "noreffer": [
+    "noreferrer": [
       "https://github.com/FTWynn",
       "https://linkedin.com/in/DavidBWynn",
       "https://twitter.com/FTWynn",
       "https://fosstodon.org/@FTWynn",
       "https://www.ftwynn.com/index.xml",
-      "http://www.ftwynn.com/me",
-      "https://unite.pokemon.com/en-us/",
-      "https://creativecommons.org/licenses/by-nc/4.0/"
-    ],
-    "author": [
-      "http://www.ftwynn.com/me"
-    ],
-    "external": [
+      "https://www.ftwynn.com/me",
       "https://creativecommons.org/licenses/by-nc/4.0/"
     ],
     "license": [
-      "https://creativecommons.org/licenses/by-nc/4.0/"
-    ],
-    "nofollow": [
       "https://creativecommons.org/licenses/by-nc/4.0/"
     ]
   },
@@ -106,12 +108,7 @@
         "mask-icon"
       ]
     },
-    "https://www.ftwynn.com/site.webmanifest": {
-      "rels": [
-        "manifest"
-      ]
-    },
-    "http://www.ftwynn.com/": {
+    "https://www.ftwynn.com/": {
       "rels": [
         "canonical"
       ]
@@ -128,63 +125,64 @@
         "stylesheet"
       ]
     },
-    "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css": {
+    "https://www.ftwynn.com/lib/fontawesome-free/all.min.css": {
       "rels": [
-        "preload"
+        "stylesheet"
       ]
     },
-    "https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css": {
+    "https://www.ftwynn.com/lib/animate/animate.min.css": {
       "rels": [
-        "preload"
+        "stylesheet"
       ]
     },
     "https://github.com/FTWynn": {
       "rels": [
+        "external",
         "me",
+        "nofollow",
         "noopener",
-        "noreffer"
+        "noreferrer"
       ],
       "title": "GitHub"
     },
     "https://linkedin.com/in/DavidBWynn": {
       "rels": [
+        "external",
         "me",
+        "nofollow",
         "noopener",
-        "noreffer"
+        "noreferrer"
       ],
       "title": "LinkedIn"
     },
     "https://twitter.com/FTWynn": {
       "rels": [
+        "external",
         "me",
+        "nofollow",
         "noopener",
-        "noreffer"
+        "noreferrer"
       ],
       "title": "Twitter"
     },
     "https://fosstodon.org/@FTWynn": {
       "rels": [
+        "external",
         "me",
+        "nofollow",
         "noopener",
-        "noreffer"
+        "noreferrer"
       ],
       "title": "Mastodon"
     },
-    "http://www.ftwynn.com/me": {
+    "https://www.ftwynn.com/me": {
       "rels": [
-        "author",
+        "external",
+        "nofollow",
         "noopener",
-        "noreffer"
+        "noreferrer"
       ],
-      "title": "Author",
       "text": "David Wynn"
-    },
-    "https://unite.pokemon.com/en-us/": {
-      "rels": [
-        "noopener",
-        "noreffer"
-      ],
-      "text": "Pokemon MOBA"
     },
     "https://creativecommons.org/licenses/by-nc/4.0/": {
       "rels": [
@@ -192,9 +190,19 @@
         "license",
         "nofollow",
         "noopener",
-        "noreffer"
+        "noreferrer"
       ],
       "text": "CC BY-NC 4.0"
+    },
+    "https://www.ftwynn.com/lib/katex/katex.min.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://www.ftwynn.com/lib/cookieconsent/cookieconsent.min.css": {
+      "rels": [
+        "stylesheet"
+      ]
     }
   }
 }

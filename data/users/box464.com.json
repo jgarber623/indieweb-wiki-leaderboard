@@ -86,6 +86,15 @@
     "pgpkey": [
       "https://keys.openpgp.org/pks/lookup?op=get&options=mr&search=0x135EC4BBAF5FA3B8EF306F7D31E738E17B73B201"
     ],
+    "authorization_endpoint": [
+      "https://box464-indiewebkit.onrender.com/auth"
+    ],
+    "token_endpoint": [
+      "https://box464-indiewebkit.onrender.com/auth/token"
+    ],
+    "micropub": [
+      "https://box464-indiewebkit.onrender.com/micropub"
+    ],
     "canonical": [
       "https://box464.com/"
     ],
@@ -181,6 +190,21 @@
         "pgpkey"
       ],
       "type": "application/pgp-keys"
+    },
+    "https://box464-indiewebkit.onrender.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://box464-indiewebkit.onrender.com/auth/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://box464-indiewebkit.onrender.com/micropub": {
+      "rels": [
+        "micropub"
+      ]
     },
     "https://box464.com/": {
       "rels": [
