@@ -1,19 +1,56 @@
 {
-  "items": [],
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "name": [
+          "Daan Boerlage"
+        ],
+        "url": [
+          "https://boerlage.me/"
+        ],
+        "photo": [
+          {
+            "value": "https://boerlage.me/img/6f19ca881f3c5bf177544cc5658fb2926c553f08.jpg",
+            "alt": "IndieWeb Profile Picture"
+          }
+        ],
+        "nickname": [
+          "Rune"
+        ],
+        "country-name": [
+          "Switzerland"
+        ]
+      }
+    }
+  ],
   "rels": {
     "stylesheet": [
       "https://boerlage.me/css/style.css"
     ],
+    "authn": [
+      "https://boerlage.me/gpg",
+      "https://github.com/runebaas"
+    ],
     "pgpkey": [
       "https://boerlage.me/gpg"
     ],
+    "webmention": [
+      "https://webmention.io/boerlage.me/webmention"
+    ],
+    "pingback": [
+      "https://webmention.io/boerlage.me/xmlrpc"
+    ],
     "me": [
-      "https://boerlage.me/cdn-cgi/l/email-protection#d1f7f2e0e1e1eaf7f2e1e8e6eaf7f2e1e8e6eaf7f2e0e0e1eaf7f2e1e7e5eaf7f2e1e8e9eaf7f2e0e0e0eaf7f2e0e1e0eaf7f2e0e0e5eaf7f2e0e1e9eaf7f2e1e8e6eaf7f2e0e1e2eaf7f2e0e1e0eaf7f2e1e5e7eaf7f2e0e1e8eaf7f2e0e1e0ea",
+      "https://boerlage.me/cdn-cgi/l/email-protection#d2f4f1e3e2e2e9f4f1e2ebe5e9f4f1e2ebe5e9f4f1e3e3e2e9f4f1e2e4e6e9f4f1e2ebeae9f4f1e3e3e3e9f4f1e3e2e3e9f4f1e3e3e6e9f4f1e3e2eae9f4f1e2ebe5e9f4f1e3e2e1e9f4f1e3e2e3e9f4f1e2e6e4e9f4f1e3e2ebe9f4f1e3e2e3e9",
       "https://twitter.com/dboerlage",
       "https://social.lol/@rune",
-      "https://www.linkedin.com/in/dboerlage/",
-      "https://steamcommunity.com/id/runebaas/",
-      "https://github.com/runebaas/"
+      "https://www.linkedin.com/in/dboerlage",
+      "https://steamcommunity.com/id/runebaas",
+      "https://github.com/runebaas",
+      "https://boerlage.me/"
     ]
   },
   "rel-urls": {
@@ -24,10 +61,21 @@
     },
     "https://boerlage.me/gpg": {
       "rels": [
+        "authn",
         "pgpkey"
       ]
     },
-    "https://boerlage.me/cdn-cgi/l/email-protection#d1f7f2e0e1e1eaf7f2e1e8e6eaf7f2e1e8e6eaf7f2e0e0e1eaf7f2e1e7e5eaf7f2e1e8e9eaf7f2e0e0e0eaf7f2e0e1e0eaf7f2e0e0e5eaf7f2e0e1e9eaf7f2e1e8e6eaf7f2e0e1e2eaf7f2e0e1e0eaf7f2e1e5e7eaf7f2e0e1e8eaf7f2e0e1e0ea": {
+    "https://webmention.io/boerlage.me/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://webmention.io/boerlage.me/xmlrpc": {
+      "rels": [
+        "pingback"
+      ]
+    },
+    "https://boerlage.me/cdn-cgi/l/email-protection#d2f4f1e3e2e2e9f4f1e2ebe5e9f4f1e2ebe5e9f4f1e3e3e2e9f4f1e2e4e6e9f4f1e2ebeae9f4f1e3e3e3e9f4f1e3e2e3e9f4f1e3e3e6e9f4f1e3e2eae9f4f1e2ebe5e9f4f1e3e2e1e9f4f1e3e2e3e9f4f1e2e6e4e9f4f1e3e2ebe9f4f1e3e2e3e9": {
       "rels": [
         "me"
       ],
@@ -43,17 +91,23 @@
         "me"
       ]
     },
-    "https://www.linkedin.com/in/dboerlage/": {
+    "https://www.linkedin.com/in/dboerlage": {
       "rels": [
         "me"
       ]
     },
-    "https://steamcommunity.com/id/runebaas/": {
+    "https://steamcommunity.com/id/runebaas": {
       "rels": [
         "me"
       ]
     },
-    "https://github.com/runebaas/": {
+    "https://github.com/runebaas": {
+      "rels": [
+        "authn",
+        "me"
+      ]
+    },
+    "https://boerlage.me/": {
       "rels": [
         "me"
       ]

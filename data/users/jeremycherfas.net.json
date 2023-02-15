@@ -1,5 +1,34 @@
 {
-  "items": [],
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "photo": [
+          {
+            "value": "https://www.jeremycherfas.net/user/themes/tailwind/images/zoot.jpg",
+            "alt": "Profile picture"
+          }
+        ],
+        "name": [
+          "Jeremy Cherfas"
+        ],
+        "url": [
+          "https://www.jeremycherfas.net/about",
+          "https://twitter.com/EatPodcast",
+          "https://github.com/jeremycherfas",
+          "https://stream.jeremycherfas.net/",
+          "https://micro.blog/jeremycherfas",
+          "https://www.instagram.com/eatthispodcast/",
+          "https://pnut.io/@jeremycherfas"
+        ],
+        "note": [
+          "In essence, I see myself as a translator. I speak Science, and I speak English, and I work hard to make the two understand one another. Mostly, I like to help people tell their stories. I'm a biologist by training and by inclination, and my main joy is applying that to food and the agriculture and industries that supply it.\nI also have side interests in economics and many other things."
+        ]
+      }
+    }
+  ],
   "rels": {
     "icon": [
       "https://www.jeremycherfas.net/user/themes/tailwind/images/logo.png"
@@ -17,18 +46,26 @@
     ],
     "stylesheet": [
       "https://www.jeremycherfas.net/user/plugins/markdown-notices/assets/notices.css",
-      "https://www.jeremycherfas.net/user/plugins/form/assets/form-styles.css",
       "https://www.jeremycherfas.net/user/plugins/login/css/login.css",
       "https://www.jeremycherfas.net/user/themes/tailwind/css/tailwind-compiled.css?v=1.1.2",
       "https://www.jeremycherfas.net/user/themes/tailwind/css/custom.css?v=1.1.9",
       "https://www.jeremycherfas.net/user/themes/tailwind/js/chartist/dist/chartist.min.css?v=1.0.1",
-      "https://www.jeremycherfas.net/user/themes/tailwind/css/line-awesome.min.css"
+      "https://www.jeremycherfas.net/user/themes/tailwind/css/line-awesome.min.css",
+      "https://www.jeremycherfas.net/user/plugins/form/assets/form-styles.css"
     ],
     "authorization_endpoint": [
       "https://indieauth.com/auth"
     ],
     "token_endpoint": [
       "https://tokens.indieauth.com/token"
+    ],
+    "me": [
+      "https://twitter.com/EatPodcast",
+      "https://github.com/jeremycherfas",
+      "https://stream.jeremycherfas.net/",
+      "https://micro.blog/jeremycherfas",
+      "https://www.instagram.com/eatthispodcast/",
+      "https://pnut.io/@jeremycherfas"
     ]
   },
   "rel-urls": {
@@ -75,12 +112,6 @@
       ],
       "type": "text/css"
     },
-    "https://www.jeremycherfas.net/user/plugins/form/assets/form-styles.css": {
-      "rels": [
-        "stylesheet"
-      ],
-      "type": "text/css"
-    },
     "https://www.jeremycherfas.net/user/plugins/login/css/login.css": {
       "rels": [
         "stylesheet"
@@ -111,6 +142,12 @@
       ],
       "type": "text/css"
     },
+    "https://www.jeremycherfas.net/user/plugins/form/assets/form-styles.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
     "https://indieauth.com/auth": {
       "rels": [
         "authorization_endpoint"
@@ -120,6 +157,42 @@
       "rels": [
         "token_endpoint"
       ]
+    },
+    "https://twitter.com/EatPodcast": {
+      "rels": [
+        "me"
+      ],
+      "title": "Twitter"
+    },
+    "https://github.com/jeremycherfas": {
+      "rels": [
+        "me"
+      ],
+      "title": "GitHub"
+    },
+    "https://stream.jeremycherfas.net/": {
+      "rels": [
+        "me"
+      ],
+      "title": "Known"
+    },
+    "https://micro.blog/jeremycherfas": {
+      "rels": [
+        "me"
+      ],
+      "title": "Micro Blog"
+    },
+    "https://www.instagram.com/eatthispodcast/": {
+      "rels": [
+        "me"
+      ],
+      "title": "Instagram"
+    },
+    "https://pnut.io/@jeremycherfas": {
+      "rels": [
+        "me"
+      ],
+      "title": "pnut"
     }
   }
 }

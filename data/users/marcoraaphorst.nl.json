@@ -27,7 +27,6 @@
       "https://c0.wp.com/"
     ],
     "stylesheet": [
-      "https://marcoraaphorst.nl/wp-content/plugins/sem-external-links/sem-external-links.css?ver=20090903",
       "https://c0.wp.com/c/6.1.1/wp-includes/css/dist/block-library/style.min.css",
       "https://c0.wp.com/c/6.1.1/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css",
       "https://c0.wp.com/c/6.1.1/wp-includes/js/mediaelement/wp-mediaelement.min.css",
@@ -50,6 +49,9 @@
     ],
     "wlwmanifest": [
       "https://marcoraaphorst.nl/wp-includes/wlwmanifest.xml"
+    ],
+    "friends-base-url": [
+      "https://marcoraaphorst.nl/wp-json/friends/v1"
     ],
     "me": [
       "https://twitter.com/Raaphorst",
@@ -139,12 +141,6 @@
       ],
       "title": "Marco Raaphorst » reactiesfeed",
       "type": "application/rss+xml"
-    },
-    "https://marcoraaphorst.nl/wp-content/plugins/sem-external-links/sem-external-links.css?ver=20090903": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "all"
     },
     "https://c0.wp.com/c/6.1.1/wp-includes/css/dist/block-library/style.min.css": {
       "rels": [
@@ -254,6 +250,11 @@
       ],
       "title": "Nieuwe optredens",
       "type": "application/rss+xml"
+    },
+    "https://marcoraaphorst.nl/wp-json/friends/v1": {
+      "rels": [
+        "friends-base-url"
+      ]
     },
     "https://twitter.com/Raaphorst": {
       "rels": [
