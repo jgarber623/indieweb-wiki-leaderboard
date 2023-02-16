@@ -1,6 +1,9 @@
 {
   "items": [],
   "rels": {
+    "canonical": [
+      "https://encounter.sbs/"
+    ],
     "dns-prefetch": [
       "https://secure.gravatar.com/",
       "https://www.googletagmanager.com/",
@@ -20,9 +23,7 @@
     ],
     "alternate": [
       "https://encounter.sbs/feed",
-      "https://encounter.sbs/comments/feed",
-      "https://encounter.sbs/devotional/feed",
-      "https://encounter.sbs/wp-json/wp/v2/categories/1315"
+      "https://encounter.sbs/comments/feed"
     ],
     "stylesheet": [
       "https://ml5tnir5snf3.i.optimole.com/f:css/q:mauto/m:1/https://encounter.sbs/wp-content/cache/wpo-minify/1676400430/assets/wpo-minify-header-23351f56.min.css",
@@ -31,7 +32,7 @@
       "https://c0.wp.com/p/jetpack/11.8.3/css/jetpack.css"
     ],
     "next": [
-      "https://encounter.sbs/devotional/page/2"
+      "https://encounter.sbs/page/2"
     ],
     "https://api.w.org/": [
       "https://encounter.sbs/wp-json/"
@@ -57,10 +58,15 @@
     ],
     "nofollow": [
       "https://wordpress.org/",
-      "https://encounter.sbs/?blackhole=61d5fde60a"
+      "https://encounter.sbs/?blackhole=cfe8226a5f"
     ]
   },
   "rel-urls": {
+    "https://encounter.sbs/": {
+      "rels": [
+        "canonical"
+      ]
+    },
     "https://secure.gravatar.com/": {
       "rels": [
         "dns-prefetch"
@@ -135,13 +141,6 @@
       "title": "Encounter.sbs » Comments Feed",
       "type": "application/rss+xml"
     },
-    "https://encounter.sbs/devotional/feed": {
-      "rels": [
-        "alternate"
-      ],
-      "title": "Encounter.sbs » Devotional Category Feed",
-      "type": "application/rss+xml"
-    },
     "https://ml5tnir5snf3.i.optimole.com/f:css/q:mauto/m:1/https://encounter.sbs/wp-content/cache/wpo-minify/1676400430/assets/wpo-minify-header-23351f56.min.css": {
       "rels": [
         "stylesheet"
@@ -166,7 +165,7 @@
       ],
       "media": "all"
     },
-    "https://encounter.sbs/devotional/page/2": {
+    "https://encounter.sbs/page/2": {
       "rels": [
         "next"
       ]
@@ -175,12 +174,6 @@
       "rels": [
         "https://api.w.org/"
       ]
-    },
-    "https://encounter.sbs/wp-json/wp/v2/categories/1315": {
-      "rels": [
-        "alternate"
-      ],
-      "type": "application/json"
     },
     "https://encounter.sbs/xmlrpc.php?rsd": {
       "rels": [
@@ -209,18 +202,13 @@
         "apple-touch-icon"
       ]
     },
-    "https://encounter.sbs/": {
-      "rels": [
-        "home"
-      ]
-    },
     "https://wordpress.org/": {
       "rels": [
         "nofollow"
       ],
       "text": "WordPress"
     },
-    "https://encounter.sbs/?blackhole=61d5fde60a": {
+    "https://encounter.sbs/?blackhole=cfe8226a5f": {
       "rels": [
         "nofollow"
       ],

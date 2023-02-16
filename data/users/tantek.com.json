@@ -202,6 +202,52 @@
                 "h-entry"
               ],
               "properties": {
+                "in-reply-to": [
+                  {
+                    "type": [
+                      "h-cite"
+                    ],
+                    "properties": {
+                      "name": [
+                        "GitHub project “focus-ios”"
+                      ],
+                      "url": [
+                        "https://github.com/mozilla-mobile/focus-ios/issues"
+                      ]
+                    },
+                    "value": "https://github.com/mozilla-mobile/focus-ios/issues"
+                  }
+                ],
+                "url": [
+                  "http://tantek.com/2023/046/b1/",
+                  "http://tantek.com/2023/046/b1/"
+                ],
+                "uid": [
+                  "http://tantek.com/2023/046/b1/",
+                  "http://tantek.com/2023/046/b1/"
+                ],
+                "name": [
+                  "Share Page With... should provide Books option for PDFs like Firefox iOS Share"
+                ],
+                "content": [
+                  {
+                    "html": "<p>\nOn iOS (iPhone 14 Pro, iOS 16.3.1), copy a PDF URL like: <br>\n<a href=\"https://insidetrail.com/wp-content/uploads/maps/MUC-GGNRA-Map-Rodeo.pdf\">https://insidetrail.com/wp-content/uploads/maps/MUC-GGNRA-Map-Rodeo.pdf</a>\n</p>\n<p>\nOpen Firefox Focus on iOS (109.0 16317) and tap in the address bar. Choose Paste and press \"go\" in the virtual keyboard. Wait for the PDF map to load.\n</p>\n<p>\nTap the three lines \"hamburger\" menu in the bottom right corner and choose \"Share Page With...\"\n</p>\n<p>\nScroll through the carousel of app icons and note there is no \"Books\" icon. There should be because this is a PDF and \"Books\" is a typical use-case for a user to want to save a PDF locally to refer to offline without requiring network access.\n</p>\n<p>\nAside: the \"... / More\" option at the end of the app icons carousel shows a \"Suggestions\" list with \"Books\" which when clicked momentarily shows an alert \"Creating PDF / Preparing...\" (which it should not need to, the document is already a PDF), and then fails to do anything.\n</p>\n<p>\nIf you follow the same steps in Firefox for iOS (109.0 25841), and choose \"Share\", note that the \"Books\" icon is present in the carousel of app icons to choose from, and tapping it opens the PDF document directly in the Books app for offline viewing.\n</p>\n<p>\nFirefox Focus iOS should similarly have \"Books\" in that carousel by default, and tapping it should similarly open the PDF directly in the Books app, without any need to create/convert anything.\n</p>",
+                    "value": "On iOS (iPhone 14 Pro, iOS 16.3.1), copy a PDF URL like: \nhttps://insidetrail.com/wp-content/uploads/maps/MUC-GGNRA-Map-Rodeo.pdf\n\n\nOpen Firefox Focus on iOS (109.0 16317) and tap in the address bar. Choose Paste and press \"go\" in the virtual keyboard. Wait for the PDF map to load.\n\n\nTap the three lines \"hamburger\" menu in the bottom right corner and choose \"Share Page With...\"\n\n\nScroll through the carousel of app icons and note there is no \"Books\" icon. There should be because this is a PDF and \"Books\" is a typical use-case for a user to want to save a PDF locally to refer to offline without requiring network access.\n\n\nAside: the \"... / More\" option at the end of the app icons carousel shows a \"Suggestions\" list with \"Books\" which when clicked momentarily shows an alert \"Creating PDF / Preparing...\" (which it should not need to, the document is already a PDF), and then fails to do anything.\n\n\nIf you follow the same steps in Firefox for iOS (109.0 25841), and choose \"Share\", note that the \"Books\" icon is present in the carousel of app icons to choose from, and tapping it opens the PDF document directly in the Books app for offline viewing.\n\n\nFirefox Focus iOS should similarly have \"Books\" in that carousel by default, and tapping it should similarly open the PDF directly in the Books app, without any need to create/convert anything."
+                  }
+                ],
+                "published": [
+                  "15:17 on 2023-02-15"
+                ],
+                "updated": [
+                  "15:17 on 2023-02-15"
+                ]
+              }
+            },
+            {
+              "type": [
+                "h-entry"
+              ],
+              "properties": {
                 "name": [
                   "11 days ago I suggested¹ a unified Sent box of everything sent/reacji’d to all Slacks logged-in with the same email. Beyond Slack though, everything you write & send anywhere: txt, chat, email, web. A Universal Outbox of all content you create, including responses. A flat time ordered list of output across mediums. And a source of material to blog.The phrase “Universal Outbox” seemed obvious to describe such a feature, parallel to the idea of a universal inbox that I remember first learning of as a concept from Apple’s AOCE project² in the early 1990s, but called a “single universal mailbox”.Figuring someone must have come up with the idea, I did a web search, and found a minimal wiki page from 2011:http://webseitz.fluxent.com/wiki/UniversalOutboxwhich did vaguely describe the idea:  “a single hub where someone can find all your outbound LifeStreams?”Except I don’t want “where someone can”, but rather “where I can”, which is an important distinction, because it would explicitly include things you send to a single person or other limited audience.And yes, “can find”, with full personal search.Aside: the “where someone can” use-case of the presumably more public “all your outbound LifeStreams” is essentially what an #IndieWeb site is for. One place to publish all you want, any way you want, in a composite stream.How many times have you texted, IM’d, Slacked, or emailed nearly the same thing, maybe to different people, retyped from memory, that you could have searched, and copy & pasted instead?Or how many times have you written similar public posts, replies, or emails, on the same topic, where you said the same thing just slightly differently?What if you could publish such common ideas, concepts, points once, with a permalink, and then cite that permalink rather than retyping the same thing repeatedly?The idea of a Universal Outbox feels like a logical extension of many IndieWeb practices such as owning your data³.While all the things you post on your personal site are a part of your Universal Outbox, they are only a subset. Even if you include everything you can PESOS from other sites, that still leaves services and sites without API access, or with APIs you may not have permission to use.Another approach that may work well is a browser add-on, which would at least be able to collect everything you type into websites. Such an add-on would be more useful than a keylogger, because a browser add-on would have a much better understanding of and access to the context of where you are entering information. An add-on could keep track of permalinks to each statement, e.g. each statement in Slack has a permalink (viewable only with login).A modest prototype add-on could start with my initial suggestion, a universal sent box that aggregated everything you said across all Slack instances you use in that browser. This would be particularly useful for keeping a personal log of your statements across free Slack instances where everything you say disappears in 90 days.For now, perhaps the manual-until-it-hurts answer is to periodically check the “Drafts & sent” folder in free Slacks (from the bottom upwards, since Slack’s web UI lacks the ability to sort or reverse the order of your Drafts & sent folder), one instance at a time, blogging or otherwise copy/pasting anything you want to cite, save, or remember.This is day 31 of #100DaysOfIndieWeb #100Days← Day 30: https://tantek.com/2023/043/t1/footnotes-unicode-links→ 🔮Post Glossary:composite stream https://indieweb.org/composite_streammanual-until-it-hurts https://indieweb.org/manual_until_it_hurtspermalink https://indieweb.org/permalinkPESOS https://indieweb.org/PESOSreacji https://indieweb.org/reacjiresponses https://indieweb.org/responses ¹ https://chat.indieweb.org/2023-02-02#t1675370124338700² https://en.wikipedia.org/wiki/Apple_Open_Collaboration_Environment³ https://indieweb.org/own_your_data"
                 ],
@@ -1461,61 +1507,6 @@
                   "http://tantek.com/2023/015/t1/publish-indieweb-decide-distribute"
                 ]
               }
-            },
-            {
-              "type": [
-                "h-entry"
-              ],
-              "properties": {
-                "name": [
-                  "Previously¹ I asked “How should we @ someone [on the #IndieWeb]?” & suggested we use @-domain. With some web spelunking, the earliest such use I found was 2013-03-26 (~10y ago!) by @eschnou.com, maybe² the first #siteToSite #federated #atMention! “And my first ever #indieweb pingback goes to @tantek.com, @aaronparecki.com and @waterpigs.co.uk ! Yes, I can now federate... well.. if I can manage to get it to interop :-)”Though the original post disappeared in a site update (and was unarchived), you can see it on the Internet Archive of @eschnou.com’s #IndieWeb tag page: https://web.archive.org/web/20130609045145/http://eschnou.com/tag/indieweb#2013Mar26At the time, Barnaby (@waterpigs.co.uk) did confirm receiving that @-mention on his site via Pingback (this was before Webmention was a thing³): https://waterpigs.co.uk/notes/1199/ (https://twitter.com/BarnabyWalters/status/316664943820812289)@eschnou.com also asked in the IndieWeb chat if @aaronparecki.com had gotten his @-domain mention: https://chat.indieweb.org/2013-03-26#t1364333721000000 You can see at the bottom of that chat log that he did.I myself started using @-domain in my posts ~4 years later in a 2017 reply: https://tantek.com/2017/345/t1/aaronpk-paid-thanks (https://twitter.com/t/status/940382393097228288) though only when the same person controlled the domain and the Twitter @-name of the first part of the domain name before the \".\" (which was/is not many people. Workaround: use other @-domain mentions in posts after the POSSE tweet cut-off).I think that was my earliest use because two days after that post I added @-domain auto-linking to the https://tantek.com/github/cassis (@cassisjs) \"auto_link\" function https://github.com/tantek/cassis/commit/0e8e6270c0a3b600423c283f59b5d22c3648d59a (https://twitter.com/cassisjs/status/941107922318381057), likely having already tested it in production on my own site with that post.I’m still #testingInProduction the updates noted in ³, notably \"https:\" for all @-mentions (@-name @-domain @-@) and hope to merge them into the repo soon. Aside: both that and the #testInProduction hashtag have hilarious Twitter results⁴.Does anyone know of any other auto-linkers that support linking @-domain in plain text to an https URL of that domain? Extra internet points if they also support @-@ auto-linking.This is day 14 of #100DaysOfIndieWeb #100Days.← Day 13: https://tantek.com/2023/013/t1/indieweb-home-internet→ Day 15: https://tantek.com/2023/015/t1/publish-indieweb-decide-distribute¹ Day 11: https://tantek.com/2023/011/t1/indieweb-evolving-at-mention² I’m curious if StatusNet, OStatus, or OpenMicroBlogging had an explicit syntax for site-to-site @-mentions, whether any of them resembled @-domain, and is there evidence of their earliest @-mention usage (if any) still visible on the web (or Internet Archive) cc: @evanp.me (@evan@prodromou.pub)³ Day 12: https://tantek.com/2023/012/t1/six-years-webmention-w3c⁴ Navigating to Twitter hashtag results left as an exercise to the reader, to provide a deliberate soft barrier to a potential doomscrolling trap."
-                ],
-                "content": [
-                  {
-                    "html": "Previously<a id=\"t5Nr4_ref-1\" href=\"http://tantek.com/#t5Nr4_note-1\">¹</a> I asked “How should we @ someone [on the #<span class=\"p-category auto-tag\">IndieWeb</span>]?” &amp; suggested we use @-domain. With some web spelunking, the earliest such use I found was 2013-03-26 (~10y ago!) by <a class=\"auto-link\" href=\"https://eschnou.com/\">@eschnou.com</a>, maybe<a id=\"t5Nr4_ref-2\" href=\"http://tantek.com/#t5Nr4_note-2\">²</a> the first #<span class=\"p-category auto-tag\">siteToSite</span> #<span class=\"p-category auto-tag\">federated</span> #<span class=\"p-category auto-tag\">atMention</span>!<br class=\"auto-break\"><br class=\"auto-break\"> “And my first ever #<span class=\"p-category auto-tag\">indieweb</span> pingback goes to <a class=\"auto-link\" href=\"https://tantek.com/\">@tantek.com</a>, <a class=\"auto-link\" href=\"https://aaronparecki.com/\">@aaronparecki.com</a> and <a class=\"auto-link\" href=\"https://waterpigs.co.uk/\">@waterpigs.co.uk</a> ! Yes, I can now federate... well.. if I can manage to get it to interop :-)”<br class=\"auto-break\"><br class=\"auto-break\">Though the original post disappeared in a site update (and was unarchived), you can see it on the Internet Archive of <a class=\"auto-link\" href=\"https://eschnou.com/\">@eschnou.com</a>’s #<span class=\"p-category auto-tag\">IndieWeb</span> tag page: <a class=\"auto-link\" href=\"https://web.archive.org/web/20130609045145/http://eschnou.com/tag/indieweb#2013Mar26\">https://web.archive.org/web/20130609045145/http://eschnou.com/tag/indieweb#2013Mar26</a><br class=\"auto-break\"><br class=\"auto-break\">At the time, Barnaby (<a class=\"auto-link\" href=\"https://waterpigs.co.uk/\">@waterpigs.co.uk</a>) did confirm receiving that @-mention on his site via Pingback (this was before Webmention was a thing<a id=\"t5Nr4_ref-3\" href=\"http://tantek.com/#t5Nr4_note-3\">³</a>): <a class=\"auto-link\" href=\"https://waterpigs.co.uk/notes/1199/\">https://waterpigs.co.uk/notes/1199/</a> (<a class=\"auto-link\" href=\"https://twitter.com/BarnabyWalters/status/316664943820812289\">https://twitter.com/BarnabyWalters/status/316664943820812289</a>)<br class=\"auto-break\"><br class=\"auto-break\"><a class=\"auto-link\" href=\"https://eschnou.com/\">@eschnou.com</a> also asked in the IndieWeb chat if <a class=\"auto-link\" href=\"https://aaronparecki.com/\">@aaronparecki.com</a> had gotten his @-domain mention: <a class=\"auto-link\" href=\"https://chat.indieweb.org/2013-03-26#t1364333721000000\">https://chat.indieweb.org/2013-03-26#t1364333721000000</a> <br class=\"auto-break\">You can see at the bottom of that chat log that he did.<br class=\"auto-break\"><br class=\"auto-break\">I myself started using @-domain in my posts ~4 years later in a 2017 reply: <a class=\"auto-link\" href=\"https://tantek.com/2017/345/t1/aaronpk-paid-thanks\">https://tantek.com/2017/345/t1/aaronpk-paid-thanks</a> (<a class=\"auto-link\" href=\"https://twitter.com/t/status/940382393097228288\">https://twitter.com/t/status/940382393097228288</a>) though only when the same person controlled the domain and the Twitter @-name of the first part of the domain name before the \".\" (which was/is not many people. Workaround: use other @-domain mentions in posts after the POSSE tweet cut-off).<br class=\"auto-break\"><br class=\"auto-break\">I think that was my earliest use because two days after that post I added @-domain auto-linking to the <a class=\"auto-link\" href=\"https://tantek.com/github/cassis\">https://tantek.com/github/cassis</a> (<a class=\"auto-link h-cassis-username\" href=\"https://twitter.com/cassisjs\">@cassisjs</a>) \"auto_link\" function <a class=\"auto-link\" href=\"https://github.com/tantek/cassis/commit/0e8e6270c0a3b600423c283f59b5d22c3648d59a\">https://github.com/tantek/cassis/commit/0e8e6270c0a3b600423c283f59b5d22c3648d59a</a> (<a class=\"auto-link\" href=\"https://twitter.com/cassisjs/status/941107922318381057\">https://twitter.com/cassisjs/status/941107922318381057</a>), likely having already tested it in production on my own site with that post.<br class=\"auto-break\"><br class=\"auto-break\">I’m still #<span class=\"p-category auto-tag\">testingInProduction</span> the updates noted in <a id=\"t5Nr4_ref-3\" href=\"http://tantek.com/#t5Nr4_note-3\">³</a>, notably \"https:\" for all @-mentions (@-name @-domain @-@) and hope to merge them into the repo soon. Aside: both that and the #<span class=\"p-category auto-tag\">testInProduction</span> hashtag have hilarious Twitter results<a id=\"t5Nr4_ref-4\" href=\"http://tantek.com/#t5Nr4_note-4\">⁴</a>.<br class=\"auto-break\"><br class=\"auto-break\">Does anyone know of any other auto-linkers that support linking @-domain in plain text to an https URL of that domain? Extra internet points if they also support @-@ auto-linking.<br class=\"auto-break\"><br class=\"auto-break\">This is day 14 of #<span class=\"p-category auto-tag\">100DaysOfIndieWeb</span> #<span class=\"p-category auto-tag\">100Days</span>.<br class=\"auto-break\"><br class=\"auto-break\">← Day 13: <a class=\"auto-link\" href=\"https://tantek.com/2023/013/t1/indieweb-home-internet\">https://tantek.com/2023/013/t1/indieweb-home-internet</a><br class=\"auto-break\">→ Day 15: <a class=\"auto-link\" href=\"https://tantek.com/2023/015/t1/publish-indieweb-decide-distribute\">https://tantek.com/2023/015/t1/publish-indieweb-decide-distribute</a><br class=\"auto-break\"><br class=\"auto-break\"><a id=\"t5Nr4_note-1\" href=\"http://tantek.com/#t5Nr4_ref-1\">¹</a> Day 11: <a class=\"auto-link\" href=\"https://tantek.com/2023/011/t1/indieweb-evolving-at-mention\">https://tantek.com/2023/011/t1/indieweb-evolving-at-mention</a><br class=\"auto-break\"><a id=\"t5Nr4_note-2\" href=\"http://tantek.com/#t5Nr4_ref-2\">²</a> I’m curious if StatusNet, OStatus, or OpenMicroBlogging had an explicit syntax for site-to-site @-mentions, whether any of them resembled @-domain, and is there evidence of their earliest @-mention usage (if any) still visible on the web (or Internet Archive) cc: <a class=\"auto-link\" href=\"https://evanp.me/\">@evanp.me</a> (<a class=\"auto-link\" href=\"https://prodromou.pub/@evan\">@evan@prodromou.pub</a>)<br class=\"auto-break\"><a id=\"t5Nr4_note-3\" href=\"http://tantek.com/#t5Nr4_ref-3\">³</a> Day 12: <a class=\"auto-link\" href=\"https://tantek.com/2023/012/t1/six-years-webmention-w3c\">https://tantek.com/2023/012/t1/six-years-webmention-w3c</a><br class=\"auto-break\"><a id=\"t5Nr4_note-4\" href=\"http://tantek.com/#t5Nr4_ref-4\">⁴</a> Navigating to Twitter hashtag results left as an exercise to the reader, to provide a deliberate soft barrier to a potential doomscrolling trap.",
-                    "value": "Previously¹ I asked “How should we @ someone [on the #IndieWeb]?” & suggested we use @-domain. With some web spelunking, the earliest such use I found was 2013-03-26 (~10y ago!) by @eschnou.com, maybe² the first #siteToSite #federated #atMention! “And my first ever #indieweb pingback goes to @tantek.com, @aaronparecki.com and @waterpigs.co.uk ! Yes, I can now federate... well.. if I can manage to get it to interop :-)”Though the original post disappeared in a site update (and was unarchived), you can see it on the Internet Archive of @eschnou.com’s #IndieWeb tag page: https://web.archive.org/web/20130609045145/http://eschnou.com/tag/indieweb#2013Mar26At the time, Barnaby (@waterpigs.co.uk) did confirm receiving that @-mention on his site via Pingback (this was before Webmention was a thing³): https://waterpigs.co.uk/notes/1199/ (https://twitter.com/BarnabyWalters/status/316664943820812289)@eschnou.com also asked in the IndieWeb chat if @aaronparecki.com had gotten his @-domain mention: https://chat.indieweb.org/2013-03-26#t1364333721000000 You can see at the bottom of that chat log that he did.I myself started using @-domain in my posts ~4 years later in a 2017 reply: https://tantek.com/2017/345/t1/aaronpk-paid-thanks (https://twitter.com/t/status/940382393097228288) though only when the same person controlled the domain and the Twitter @-name of the first part of the domain name before the \".\" (which was/is not many people. Workaround: use other @-domain mentions in posts after the POSSE tweet cut-off).I think that was my earliest use because two days after that post I added @-domain auto-linking to the https://tantek.com/github/cassis (@cassisjs) \"auto_link\" function https://github.com/tantek/cassis/commit/0e8e6270c0a3b600423c283f59b5d22c3648d59a (https://twitter.com/cassisjs/status/941107922318381057), likely having already tested it in production on my own site with that post.I’m still #testingInProduction the updates noted in ³, notably \"https:\" for all @-mentions (@-name @-domain @-@) and hope to merge them into the repo soon. Aside: both that and the #testInProduction hashtag have hilarious Twitter results⁴.Does anyone know of any other auto-linkers that support linking @-domain in plain text to an https URL of that domain? Extra internet points if they also support @-@ auto-linking.This is day 14 of #100DaysOfIndieWeb #100Days.← Day 13: https://tantek.com/2023/013/t1/indieweb-home-internet→ Day 15: https://tantek.com/2023/015/t1/publish-indieweb-decide-distribute¹ Day 11: https://tantek.com/2023/011/t1/indieweb-evolving-at-mention² I’m curious if StatusNet, OStatus, or OpenMicroBlogging had an explicit syntax for site-to-site @-mentions, whether any of them resembled @-domain, and is there evidence of their earliest @-mention usage (if any) still visible on the web (or Internet Archive) cc: @evanp.me (@evan@prodromou.pub)³ Day 12: https://tantek.com/2023/012/t1/six-years-webmention-w3c⁴ Navigating to Twitter hashtag results left as an exercise to the reader, to provide a deliberate soft barrier to a potential doomscrolling trap."
-                  }
-                ],
-                "category": [
-                  "IndieWeb",
-                  "siteToSite",
-                  "federated",
-                  "atMention",
-                  "indieweb",
-                  "IndieWeb",
-                  "testingInProduction",
-                  "testInProduction",
-                  "100DaysOfIndieWeb",
-                  "100Days"
-                ],
-                "published": [
-                  "23:50 on 2023-01-14"
-                ],
-                "updated": [
-                  "23:50 on 2023-01-14"
-                ],
-                "url": [
-                  "http://tantek.com/2023/014/t4/domain-first-federated-atmention"
-                ],
-                "uid": [
-                  "http://tantek.com/2023/014/t4/domain-first-federated-atmention"
-                ]
-              },
-              "children": [
-                {
-                  "type": [
-                    "h-cassis-username"
-                  ],
-                  "properties": {
-                    "name": [
-                      "@cassisjs"
-                    ],
-                    "url": [
-                      "https://twitter.com/cassisjs"
-                    ]
-                  }
-                }
-              ]
             }
           ]
         },
@@ -1963,6 +1954,7 @@
       "http://tantek.com/tip/1"
     ],
     "bookmark": [
+      "http://tantek.com/2023/046/b1/",
       "http://tantek.com/2023/019/b1/bridgy-publish-support-gitlab"
     ],
     "nofollow": [
@@ -2052,6 +2044,12 @@
       ],
       "title": "Tip: Did you read something of value here and want to encourage more posts like that? Feel free to tip a small amount and mention which topics you enjoyed! (Just please avoid specific products or services. Thanks! -t)",
       "text": "👏 "
+    },
+    "http://tantek.com/2023/046/b1/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\nShare Page With... should provide Books option for PDFs like Firefox iOS Share\n"
     },
     "http://tantek.com/2023/019/b1/bridgy-publish-support-gitlab": {
       "rels": [
