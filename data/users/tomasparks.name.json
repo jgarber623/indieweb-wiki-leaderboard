@@ -1,15 +1,84 @@
 {
-  "items": [],
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "url": [
+          "https://tomasparks.name/"
+        ],
+        "photo": [
+          "https://tomasparks.name/about-me/photo.png"
+        ],
+        "name": [
+          "Tom Sparks"
+        ]
+      }
+    }
+  ],
   "rels": {
+    "icon": [
+      "https://tomasparks.name/"
+    ],
     "stylesheet": [
-      "https://tomasparks.name/_autoindex/assets/css/autoindex.css"
+      "https://tomasparks.name/assets/css/bootstrap.css"
+    ],
+    "canonical": [
+      "https://tomasparks.name//"
+    ],
+    "me": [
+      "https://github.com/tomasparks",
+      "https://tomasparks.name/"
+    ],
+    "webmention": [
+      "https://webmention.io/tomasparks.name/webmention"
+    ],
+    "pingback": [
+      "https://webmention.io/tomasparks.name/xmlrpc"
+    ],
+    "feed": [
+      "https://tomasparks.name//global-feed.html"
     ]
   },
   "rel-urls": {
-    "https://tomasparks.name/_autoindex/assets/css/autoindex.css": {
+    "https://tomasparks.name/": {
+      "rels": [
+        "icon"
+      ]
+    },
+    "https://tomasparks.name/assets/css/bootstrap.css": {
       "rels": [
         "stylesheet"
+      ],
+      "media": "screen"
+    },
+    "https://tomasparks.name//": {
+      "rels": [
+        "canonical"
       ]
+    },
+    "https://github.com/tomasparks": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://webmention.io/tomasparks.name/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://webmention.io/tomasparks.name/xmlrpc": {
+      "rels": [
+        "pingback"
+      ]
+    },
+    "https://tomasparks.name//global-feed.html": {
+      "rels": [
+        "feed"
+      ],
+      "title": "gobal feed",
+      "type": "text/html"
     }
   }
 }

@@ -1,5 +1,291 @@
 {
   "items": [],
-  "rels": {},
-  "rel-urls": {}
+  "rels": {
+    "profile": [
+      "http://gmpg.org/xfn/11"
+    ],
+    "pingback": [
+      "http://anomalily.net/xmlrpc.php"
+    ],
+    "dns-prefetch": [
+      "http://s.w.org/"
+    ],
+    "alternate": [
+      "http://anomalily.net/feed/",
+      "http://anomalily.net/comments/feed/",
+      "http://anomalily.net/author/admin/feed/"
+    ],
+    "stylesheet": [
+      "http://anomalily.net/wp-content/plugins/infopopup/css/infopopup.css?ver=4.9.22",
+      "http://anomalily.net/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.1",
+      "http://anomalily.net/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.8.1",
+      "http://anomalily.net/wp-content/plugins/simple-location/css/location.min.css?ver=3.3.7",
+      "http://anomalily.net/wp-content/plugins/indieweb-post-kinds/css/kind.min.css?ver=3.3.1",
+      "http://anomalily.net/wp-content/themes/sanse/style.min.css?ver=4.9.22",
+      "http://anomalily.net/wp-content/plugins/syndication-links/css/syn-medium.min.css?ver=4.3.7"
+    ],
+    "https://api.w.org/": [
+      "http://anomalily.net/wp-json/"
+    ],
+    "EditURI": [
+      "http://anomalily.net/xmlrpc.php?rsd"
+    ],
+    "wlwmanifest": [
+      "http://anomalily.net/wp-includes/wlwmanifest.xml"
+    ],
+    "authorization_endpoint": [
+      "http://anomalily.net/wp-json/indieauth/1.0/auth"
+    ],
+    "token_endpoint": [
+      "http://anomalily.net/wp-json/indieauth/1.0/token"
+    ],
+    "icon": [
+      "http://anomalily.net/wp-content/uploads/2017/03/favicon.png"
+    ],
+    "apple-touch-icon-precomposed": [
+      "http://anomalily.net/wp-content/uploads/2017/03/favicon.png"
+    ],
+    "micropub_media": [
+      "http://anomalily.net/wp-json/micropub/1.0/media"
+    ],
+    "micropub": [
+      "http://anomalily.net/wp-json/micropub/1.0/endpoint"
+    ],
+    "home": [
+      "http://anomalily.net/"
+    ],
+    "bookmark": [
+      "http://anomalily.net/jan-2023-report/",
+      "http://anomalily.net/2023-budget-who-knows/",
+      "http://anomalily.net/november-2022-report/",
+      "http://anomalily.net/october-2022-report/",
+      "http://anomalily.net/summer-2022-spending-reports/",
+      "http://anomalily.net/september-2022/",
+      "http://anomalily.net/may-2022/",
+      "http://anomalily.net/april-2022/",
+      "http://anomalily.net/march-2022/",
+      "http://anomalily.net/feb-2022/"
+    ],
+    "me": [
+      "http://www.twitter.com/anomalily",
+      "http://www.flickr.com/photos/lilymonster/",
+      "https://www.instagram.com/anomalily/",
+      "http://www.last.fm/user/wearemice/"
+    ]
+  },
+  "rel-urls": {
+    "http://gmpg.org/xfn/11": {
+      "rels": [
+        "profile"
+      ]
+    },
+    "http://anomalily.net/xmlrpc.php": {
+      "rels": [
+        "pingback"
+      ]
+    },
+    "http://s.w.org/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
+    "http://anomalily.net/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "AnomaLily.net » Feed",
+      "type": "application/rss+xml"
+    },
+    "http://anomalily.net/comments/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "AnomaLily.net » Comments Feed",
+      "type": "application/rss+xml"
+    },
+    "http://anomalily.net/author/admin/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "AnomaLily.net » Posts by Lillian Feed",
+      "type": "application/rss+xml"
+    },
+    "http://anomalily.net/wp-content/plugins/infopopup/css/infopopup.css?ver=4.9.22": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://anomalily.net/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://anomalily.net/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.8.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://anomalily.net/wp-content/plugins/simple-location/css/location.min.css?ver=3.3.7": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://anomalily.net/wp-content/plugins/indieweb-post-kinds/css/kind.min.css?ver=3.3.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://anomalily.net/wp-content/themes/sanse/style.min.css?ver=4.9.22": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://anomalily.net/wp-content/plugins/syndication-links/css/syn-medium.min.css?ver=4.3.7": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://anomalily.net/wp-json/": {
+      "rels": [
+        "https://api.w.org/"
+      ]
+    },
+    "http://anomalily.net/xmlrpc.php?rsd": {
+      "rels": [
+        "EditURI"
+      ],
+      "title": "RSD",
+      "type": "application/rsd+xml"
+    },
+    "http://anomalily.net/wp-includes/wlwmanifest.xml": {
+      "rels": [
+        "wlwmanifest"
+      ],
+      "type": "application/wlwmanifest+xml"
+    },
+    "http://anomalily.net/wp-json/indieauth/1.0/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "http://anomalily.net/wp-json/indieauth/1.0/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "http://anomalily.net/wp-content/uploads/2017/03/favicon.png": {
+      "rels": [
+        "icon"
+      ]
+    },
+    "http://anomalily.net/wp-json/micropub/1.0/media": {
+      "rels": [
+        "micropub_media"
+      ]
+    },
+    "http://anomalily.net/wp-json/micropub/1.0/endpoint": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "http://anomalily.net/": {
+      "rels": [
+        "home"
+      ]
+    },
+    "http://anomalily.net/jan-2023-report/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "January 2023: New Skates and New Clothes?"
+    },
+    "http://anomalily.net/2023-budget-who-knows/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "2023 Budget: Who Knows!??!"
+    },
+    "http://anomalily.net/november-2022-report/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "November 2022 Report: New Linen Sheets"
+    },
+    "http://anomalily.net/october-2022-report/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "October 2022 Report: Pumpkins, Thriller, Triplex"
+    },
+    "http://anomalily.net/summer-2022-spending-reports/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "Summer 2022 Spending Reports"
+    },
+    "http://anomalily.net/september-2022/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "September 2022 Report: FINALLY back to saving"
+    },
+    "http://anomalily.net/may-2022/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "May 2022: Got Covid and Passed Series 65"
+    },
+    "http://anomalily.net/april-2022/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "April 2022: Studying All the Time"
+    },
+    "http://anomalily.net/march-2022/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "March 2022 Spending report: 10 days in Europe under $350"
+    },
+    "http://anomalily.net/feb-2022/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "February 2022 Report: Let’s just all take a nap"
+    },
+    "http://www.twitter.com/anomalily": {
+      "rels": [
+        "me"
+      ]
+    },
+    "http://www.flickr.com/photos/lilymonster/": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://www.instagram.com/anomalily/": {
+      "rels": [
+        "me"
+      ]
+    },
+    "http://www.last.fm/user/wearemice/": {
+      "rels": [
+        "me"
+      ]
+    }
+  }
 }

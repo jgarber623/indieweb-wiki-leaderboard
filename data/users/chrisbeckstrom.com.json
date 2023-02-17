@@ -1,5 +1,53 @@
 {
   "items": [],
-  "rels": {},
-  "rel-urls": {}
+  "rels": {
+    "canonical": [
+      "https://chrisbeckstrom.com/"
+    ],
+    "me": [
+      "https://planet.chrisbeckstrom.com/@cb"
+    ],
+    "alternate": [
+      "http://chrisbeckstrom.com/index.xml"
+    ],
+    "stylesheet": [
+      "https://chrisbeckstrom.com/css/style.css",
+      "https://chrisbeckstrom.com/css/syntax.css",
+      "https://cdn.jsdelivr.net/npm/highlightjs@9.12.0/styles/github-gist.css"
+    ]
+  },
+  "rel-urls": {
+    "https://chrisbeckstrom.com/": {
+      "rels": [
+        "canonical"
+      ]
+    },
+    "https://planet.chrisbeckstrom.com/@cb": {
+      "rels": [
+        "me"
+      ]
+    },
+    "http://chrisbeckstrom.com/index.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "I'm Chris Beckstrom",
+      "type": "application/rss+xml"
+    },
+    "https://chrisbeckstrom.com/css/style.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://chrisbeckstrom.com/css/syntax.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://cdn.jsdelivr.net/npm/highlightjs@9.12.0/styles/github-gist.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    }
+  }
 }

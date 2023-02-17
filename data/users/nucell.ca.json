@@ -1,5 +1,87 @@
 {
   "items": [],
-  "rels": {},
-  "rel-urls": {}
+  "rels": {
+    "dns-prefetch": [
+      "http://redvirtual.me/"
+    ],
+    "alternate": [
+      "https://redvirtual.me/feed/",
+      "https://redvirtual.me/comments/feed/"
+    ],
+    "stylesheet": [
+      "http://redvirtual.me/wp-includes/blocks/navigation/style.min.css?ver=6.1.1"
+    ],
+    "https://api.w.org/": [
+      "https://redvirtual.me/wp-json/"
+    ],
+    "EditURI": [
+      "https://redvirtual.me/xmlrpc.php?rsd"
+    ],
+    "wlwmanifest": [
+      "http://redvirtual.me/wp-includes/wlwmanifest.xml"
+    ],
+    "home": [
+      "https://redvirtual.me/"
+    ],
+    "nofollow": [
+      "https://es.wordpress.org/"
+    ]
+  },
+  "rel-urls": {
+    "http://redvirtual.me/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
+    "https://redvirtual.me/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "RedVirtual - Descargar Cursos Por Mega Gratis » Feed",
+      "type": "application/rss+xml"
+    },
+    "https://redvirtual.me/comments/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "RedVirtual - Descargar Cursos Por Mega Gratis » Feed de los comentarios",
+      "type": "application/rss+xml"
+    },
+    "http://redvirtual.me/wp-includes/blocks/navigation/style.min.css?ver=6.1.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://redvirtual.me/wp-json/": {
+      "rels": [
+        "https://api.w.org/"
+      ]
+    },
+    "https://redvirtual.me/xmlrpc.php?rsd": {
+      "rels": [
+        "EditURI"
+      ],
+      "title": "RSD",
+      "type": "application/rsd+xml"
+    },
+    "http://redvirtual.me/wp-includes/wlwmanifest.xml": {
+      "rels": [
+        "wlwmanifest"
+      ],
+      "type": "application/wlwmanifest+xml"
+    },
+    "https://redvirtual.me/": {
+      "rels": [
+        "home"
+      ],
+      "text": "RedVirtual – Descargar Cursos Por Mega Gratis"
+    },
+    "https://es.wordpress.org/": {
+      "rels": [
+        "nofollow"
+      ],
+      "text": "WordPress"
+    }
+  }
 }
