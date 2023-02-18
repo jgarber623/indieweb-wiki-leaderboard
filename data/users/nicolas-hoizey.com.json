@@ -44,6 +44,56 @@
         "h-entry"
       ],
       "properties": {
+        "photo": [
+          {
+            "value": "https://res.cloudinary.com/nho/image/fetch/q_auto,f_auto,w_auto:100:32,c_limit/https://res.cloudinary.com/nho/image/twitter_name/adactio",
+            "srcset": {
+              "1x": "https://res.cloudinary.com/nho/image/fetch/q_auto",
+              "32w": "https://nicolas-hoizey.com/c_limit/https://res.cloudinary.com/nho/image/twitter_name/adactio",
+              "48w": "https://nicolas-hoizey.com/c_limit/https://res.cloudinary.com/nho/image/twitter_name/adactio"
+            },
+            "alt": "Jeremy Keith avatar"
+          }
+        ],
+        "name": [
+          "Push"
+        ],
+        "url": [
+          "https://nicolas-hoizey.com/links/2023/02/17/push/"
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "url": [
+                "https://nicolas-hoizey.com/"
+              ],
+              "name": [
+                "Nicolas Hoizey"
+              ]
+            },
+            "value": "https://nicolas-hoizey.com/"
+          }
+        ],
+        "published": [
+          "2023-02-17T14:10:54.000+01:00"
+        ],
+        "category": [
+          "PWA",
+          "push"
+        ],
+        "summary": [
+          "With push notifications in mobile Safari, the arguments for making proprietary apps get weaker. That’s good."
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
         "name": [
           "Midnight is a Terrible Time for Coffee"
         ],
@@ -212,46 +262,6 @@
       ],
       "properties": {
         "name": [
-          "A bookmarklet to create a new link content Markdown on GitHub"
-        ],
-        "url": [
-          "https://nicolas-hoizey.com/articles/2023/02/08/a-bookmarklet-to-create-a-new-link-content-markdown-on-github/"
-        ],
-        "author": [
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "url": [
-                "https://nicolas-hoizey.com/"
-              ],
-              "name": [
-                "Nicolas Hoizey"
-              ]
-            },
-            "value": "https://nicolas-hoizey.com/"
-          }
-        ],
-        "published": [
-          "2023-02-08T10:42:51.000+01:00"
-        ],
-        "category": [
-          "Markdown",
-          "Eleventy",
-          "bookmarklet"
-        ],
-        "summary": [
-          "When I was building my site on my local computer, I had a shell script to initialize a new Markdown file for sharing a link. When I moved to Cloudflare Pages 6 months ago, it opened a new opportunity to share links more easily in my Eleventy content, directly from the page I wanted to share. Bookmarklets are still an awesome invention!"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "name": [
           "JAMstack is fast only if you make it so"
         ],
         "url": [
@@ -402,6 +412,8 @@
       "https://nicolas-hoizey.com/about/"
     ],
     "tag": [
+      "https://nicolas-hoizey.com/tags/pwa/",
+      "https://nicolas-hoizey.com/tags/push/",
       "https://nicolas-hoizey.com/tags/ux/",
       "https://nicolas-hoizey.com/tags/cms/",
       "https://nicolas-hoizey.com/tags/static/",
@@ -413,9 +425,6 @@
       "https://nicolas-hoizey.com/tags/esviji/",
       "https://nicolas-hoizey.com/tags/smil/",
       "https://nicolas-hoizey.com/tags/svg/",
-      "https://nicolas-hoizey.com/tags/markdown/",
-      "https://nicolas-hoizey.com/tags/eleventy/",
-      "https://nicolas-hoizey.com/tags/bookmarklet/",
       "https://nicolas-hoizey.com/tags/jamstack/",
       "https://nicolas-hoizey.com/tags/webperf/",
       "https://nicolas-hoizey.com/tags/api/",
@@ -435,6 +444,7 @@
       "https://nicolas-hoizey.com/tags/cwv/",
       "https://nicolas-hoizey.com/tags/design/",
       "https://nicolas-hoizey.com/tags/development/",
+      "https://nicolas-hoizey.com/tags/eleventy/",
       "https://nicolas-hoizey.com/tags/fail/",
       "https://nicolas-hoizey.com/tags/feed/",
       "https://nicolas-hoizey.com/tags/firefox/",
@@ -465,7 +475,6 @@
       "https://nicolas-hoizey.com/tags/posse/",
       "https://nicolas-hoizey.com/tags/privacy/",
       "https://nicolas-hoizey.com/tags/progressive-enhancement/",
-      "https://nicolas-hoizey.com/tags/pwa/",
       "https://nicolas-hoizey.com/tags/quality/",
       "https://nicolas-hoizey.com/tags/quote/",
       "https://nicolas-hoizey.com/tags/responsive/",
@@ -571,6 +580,18 @@
       ],
       "title": "Link to my Twitter profile"
     },
+    "https://nicolas-hoizey.com/tags/pwa/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "PWA"
+    },
+    "https://nicolas-hoizey.com/tags/push/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "push"
+    },
     "https://nicolas-hoizey.com/tags/ux/": {
       "rels": [
         "tag"
@@ -636,24 +657,6 @@
         "tag"
       ],
       "text": "SVG"
-    },
-    "https://nicolas-hoizey.com/tags/markdown/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Markdown"
-    },
-    "https://nicolas-hoizey.com/tags/eleventy/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Eleventy"
-    },
-    "https://nicolas-hoizey.com/tags/bookmarklet/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "bookmarklet"
     },
     "https://nicolas-hoizey.com/tags/jamstack/": {
       "rels": [
@@ -768,6 +771,12 @@
         "tag"
       ],
       "text": "development"
+    },
+    "https://nicolas-hoizey.com/tags/eleventy/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Eleventy"
     },
     "https://nicolas-hoizey.com/tags/fail/": {
       "rels": [
@@ -948,12 +957,6 @@
         "tag"
       ],
       "text": "progressive enhancement"
-    },
-    "https://nicolas-hoizey.com/tags/pwa/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "PWA"
     },
     "https://nicolas-hoizey.com/tags/quality/": {
       "rels": [

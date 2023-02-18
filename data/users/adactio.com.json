@@ -42,6 +42,156 @@
       "properties": {
         "content": [
           {
+            "html": "<p>The success of a search engine depends on two interrelated things—accuracy and trust.</p>\n\n<p>I’m flabbergasted that Google and Bing are perfectly willing to squander their reserves of both.</p>",
+            "value": "The success of a search engine depends on two interrelated things—accuracy and trust.\n\nI’m flabbergasted that Google and Bing are perfectly willing to squander their reserves of both."
+          }
+        ],
+        "name": [
+          "The success of a search engine depends on two interrelated things—accuracy and trust.\n\nI’m flabbergasted that Google and Bing are perfectly willing to squander their reserves of both."
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "50.83251651"
+              ],
+              "longitude": [
+                "-0.11814647"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/notes/19914"
+        ],
+        "published": [
+          "2023-02-17T13:03:31Z"
+        ],
+        "syndication": [
+          "https://mastodon.social/@adactio/109880214275441011"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://openverse.org/\">\nOpenly Licensed Images, Audio and More | Openverse\n</a>\n</h3>\n\n<p>A search engine for images and audio that’s either under a Creative Commons license or is in the public domain.</p>",
+            "value": "Openly Licensed Images, Audio and More | Openverse\n\n\n\nA search engine for images and audio that’s either under a Creative Commons license or is in the public domain."
+          }
+        ],
+        "name": [
+          "Openly Licensed Images, Audio and More | Openverse"
+        ],
+        "bookmark-of": [
+          "https://openverse.org/"
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "50.83248746"
+              ],
+              "longitude": [
+                "-0.11813325"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/links/19912"
+        ],
+        "published": [
+          "2023-02-17T11:47:03Z"
+        ],
+        "category": [
+          "openverse",
+          "search",
+          "engine",
+          "licensing",
+          "cc",
+          "creativecommons",
+          "publicdomain",
+          "images",
+          "photos",
+          "audio",
+          "photography",
+          "license"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Push"
+        ],
+        "url": [
+          "https://adactio.com/journal/19911"
+        ],
+        "content": [
+          {
+            "html": "<p><a href=\"https://webkit.org/blog/13878/web-push-for-web-apps-on-ios-and-ipados/\">Push notifications are finally arriving on iOS</a>—hallelujah! Like I said last year, <a href=\"https://adactio.com/journal/18900\">this is my number one wish for the iPhone</a>, though not because I personally ever plan to use the feature:</p>\n\n<blockquote>\n  <p>When I’m evangelising the benefits of building on the open web instead of making separate iOS and Android apps, I inevitably get asked about notifications. As long as mobile Safari doesn’t support them—even though desktop Safari does—I’m somewhat stumped. There’s no polyfill for this feature other than building an entire native app, which is a bit extreme as polyfills go.</p>\n</blockquote>\n\n<p>With push notifications in mobile Safari, the arguments for making proprietary apps get weaker. That’s good.</p>\n\n<p><a href=\"https://webkit.org/blog/13878/web-push-for-web-apps-on-ios-and-ipados/\">The announcement post</a> is a bit weird though. It never uses the phrase “progressive web apps”, even though clearly the entire article is all about progressive web apps. I don’t know if this down to Not-Invented-Here syndrome by the Apple/Webkit team, or because of genuine legal concerns around using the phrase.</p>\n\n<p>Instead, there are repeated references to “Home Screen apps”. This distinction makes some sense though. In order to use web push on iOS, your website needs to be added to the home screen.</p>\n\n<p>I think that would be fair enough, if it weren’t for the fact that adding a website to the home screen remains such a hidden feature that even power users would be forgiven for not knowing about it. <a href=\"https://adactio.com/journal/18252\">I described the steps here</a>:</p>\n\n<blockquote>\n<ol>\n<li>Tap the “share” icon. It’s not labelled “share.” It’s a square with an arrow coming out of the top of it.</li>\n<li>A drawer pops up. The option to “add to home screen” is nowhere to be seen. You have to pull the drawer up further to see the hidden options.</li>\n<li>Now you must find “add to home screen” in the list</li>\n</ol>\n<ul>\n<li>Copy</li>\n<li>Add to Reading List</li>\n<li>Add Bookmark</li>\n<li>Add to Favourites</li>\n<li>Find on Page</li>\n<li>Add to Home Screen</li>\n<li>Markup</li>\n<li>Print</li>\n</ul>\n</blockquote>\n\n<p>As long as this remains the case, we can expect usage of web push on iOS to be vanishingly low. Hardly anyone is going to add a website to their home screen when their web browser makes it so hard.</p>\n\n<p>If you’d like to people to install your progressive web app, you’ll almost certainly need to <a href=\"https://adactio.com/journal/18772\">prompt people to do so</a>.  Here’s <a href=\"https://thesession.org/app\">the page I made on thesession.org</a> with instructions on how to add to home screen. I link to it from the home page of the site.</p>\n\n<p>I wish that pages like that weren’t necessary. It’s not the best user experience. But as long as mobile Safari continues to bury the home screen option, we don’t have much choice but to tackle this ourselves.</p>",
+            "value": "Push notifications are finally arriving on iOS—hallelujah! Like I said last year, this is my number one wish for the iPhone, though not because I personally ever plan to use the feature:\n\n\n  When I’m evangelising the benefits of building on the open web instead of making separate iOS and Android apps, I inevitably get asked about notifications. As long as mobile Safari doesn’t support them—even though desktop Safari does—I’m somewhat stumped. There’s no polyfill for this feature other than building an entire native app, which is a bit extreme as polyfills go.\n\n\nWith push notifications in mobile Safari, the arguments for making proprietary apps get weaker. That’s good.\n\nThe announcement post is a bit weird though. It never uses the phrase “progressive web apps”, even though clearly the entire article is all about progressive web apps. I don’t know if this down to Not-Invented-Here syndrome by the Apple/Webkit team, or because of genuine legal concerns around using the phrase.\n\nInstead, there are repeated references to “Home Screen apps”. This distinction makes some sense though. In order to use web push on iOS, your website needs to be added to the home screen.\n\nI think that would be fair enough, if it weren’t for the fact that adding a website to the home screen remains such a hidden feature that even power users would be forgiven for not knowing about it. I described the steps here:\n\n\n\nTap the “share” icon. It’s not labelled “share.” It’s a square with an arrow coming out of the top of it.\nA drawer pops up. The option to “add to home screen” is nowhere to be seen. You have to pull the drawer up further to see the hidden options.\nNow you must find “add to home screen” in the list\n\n\nCopy\nAdd to Reading List\nAdd Bookmark\nAdd to Favourites\nFind on Page\nAdd to Home Screen\nMarkup\nPrint\n\n\n\nAs long as this remains the case, we can expect usage of web push on iOS to be vanishingly low. Hardly anyone is going to add a website to their home screen when their web browser makes it so hard.\n\nIf you’d like to people to install your progressive web app, you’ll almost certainly need to prompt people to do so.  Here’s the page I made on thesession.org with instructions on how to add to home screen. I link to it from the home page of the site.\n\nI wish that pages like that weren’t necessary. It’s not the best user experience. But as long as mobile Safari continues to bury the home screen option, we don’t have much choice but to tackle this ourselves."
+          }
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "50.83250996"
+              ],
+              "longitude": [
+                "-0.11812879"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "published": [
+          "2023-02-17T10:58:29Z"
+        ],
+        "category": [
+          "pwas",
+          "progressive",
+          "webapps",
+          "homescreen",
+          "apple",
+          "mobile",
+          "safari",
+          "ios",
+          "push",
+          "notifications",
+          "ux"
+        ],
+        "syndication": [
+          "https://adactio.medium.com/4d1969885128"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
             "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://montaigne.io/\">\nMontaigne\n</a>\n</h3>\n\n<p>This is an interesting little blogging tool: it turns a folder of notes on your Mac into a website.</p>\n\n<blockquote>\n  <ol>\n  <li>Create dedicated folder in the Apple Notes.</li>\n  <li>Connect it to Montaigne.</li>\n  <li>Add notes with your content.</li>\n  <li>Everything will be published to the web automatically.</li>\n  </ol>\n</blockquote>",
             "value": "Montaigne\n\n\n\nThis is an interesting little blogging tool: it turns a folder of notes on your Mac into a website.\n\n\n  \n  Create dedicated folder in the Apple Notes.\n  Connect it to Montaigne.\n  Add notes with your content.\n  Everything will be published to the web automatically."
           }
@@ -909,169 +1059,6 @@
     },
     {
       "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "content": [
-          {
-            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://genmon.github.io/braggoscope/\">\nExplore the In Our Time archive | Braggoscope\n</a>\n</h3>\n\n<p><a href=\"https://interconnected.org/\">Matt</a> made this lovely website for spelunking and hyperlinking through the thousand episodes of Radio 4’s excellent In Our Time programme.</p>\n\n<p>He’s also written a little bit about <a href=\"https://genmon.github.io/braggoscope/about\">how he made it</a> using some AI (artificial insemination) for the categorisation code.</p>",
-            "value": "Explore the In Our Time archive | Braggoscope\n\n\n\nMatt made this lovely website for spelunking and hyperlinking through the thousand episodes of Radio 4’s excellent In Our Time programme.\n\nHe’s also written a little bit about how he made it using some AI (artificial insemination) for the categorisation code."
-          }
-        ],
-        "name": [
-          "Explore the In Our Time archive | Braggoscope"
-        ],
-        "bookmark-of": [
-          "https://genmon.github.io/braggoscope/"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "32.95693953"
-              ],
-              "longitude": [
-                "-117.24934981"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/links/19890"
-        ],
-        "published": [
-          "2023-02-10T18:16:09Z"
-        ],
-        "category": [
-          "inourtime",
-          "braggoscope",
-          "directory",
-          "radio4",
-          "episodes",
-          "categories",
-          "themes",
-          "linking",
-          "audio",
-          "findability"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "content": [
-          {
-            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://www.newyorker.com/tech/annals-of-technology/chatgpt-is-a-blurry-jpeg-of-the-web\">\nChatGPT Is a Blurry JPEG of the Web | The New Yorker\n</a>\n</h3>\n\n<p>A very astute framing by Ted Chiang—large language models as a form of lossy compression for text.</p>\n\n<blockquote>\n  <p>When we’re dealing with sequences of words, lossy compression looks smarter than lossless compression.</p>\n  \n  <p>A lot of uses have been proposed for large language models. Thinking about them as blurry JPEGs offers a way to evaluate what they might or might not be well suited for.</p>\n</blockquote>",
-            "value": "ChatGPT Is a Blurry JPEG of the Web | The New Yorker\n\n\n\nA very astute framing by Ted Chiang—large language models as a form of lossy compression for text.\n\n\n  When we’re dealing with sequences of words, lossy compression looks smarter than lossless compression.\n  \n  A lot of uses have been proposed for large language models. Thinking about them as blurry JPEGs offers a way to evaluate what they might or might not be well suited for."
-          }
-        ],
-        "name": [
-          "ChatGPT Is a Blurry JPEG of the Web | The New Yorker"
-        ],
-        "bookmark-of": [
-          "https://www.newyorker.com/tech/annals-of-technology/chatgpt-is-a-blurry-jpeg-of-the-web"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "32.95695428"
-              ],
-              "longitude": [
-                "-117.24933705"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/links/19889"
-        ],
-        "published": [
-          "2023-02-10T18:06:15Z"
-        ],
-        "category": [
-          "chatgpt",
-          "llm",
-          "words",
-          "text",
-          "writing",
-          "language",
-          "compression",
-          "lossless",
-          "lossy",
-          "ai"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "content": [
-          {
-            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://www.matuzo.at/blog/2023/single-page-applications-criticism/\">\nWhy I’m not the biggest fan of Single Page Applications - Manuel Matuzović\n</a>\n</h3>\n\n<blockquote>\n  <p>I guess the biggest criticism here is that it feels like people who believe in the superiority of single page applications and the entire ecosystem focus more on developer experience (DX) than user experience. That sounds like a dangerous blanket statement, but after all these years, I never had the feeling that the argument “better DX leads to better UX” was ever true. It’s nothing more than a justification for the immense complexity and potentially significantly worse UX. And even if the core argument isn’t DX, other arguments like scalability, maintainability, competitive ability, easier recruiting (“everyone uses React”), and cost effectiveness, in my experience, only sound good, but rarely hold up to their promises.</p>\n</blockquote>",
-            "value": "Why I’m not the biggest fan of Single Page Applications - Manuel Matuzović\n\n\n\n\n  I guess the biggest criticism here is that it feels like people who believe in the superiority of single page applications and the entire ecosystem focus more on developer experience (DX) than user experience. That sounds like a dangerous blanket statement, but after all these years, I never had the feeling that the argument “better DX leads to better UX” was ever true. It’s nothing more than a justification for the immense complexity and potentially significantly worse UX. And even if the core argument isn’t DX, other arguments like scalability, maintainability, competitive ability, easier recruiting (“everyone uses React”), and cost effectiveness, in my experience, only sound good, but rarely hold up to their promises."
-          }
-        ],
-        "name": [
-          "Why I’m not the biggest fan of Single Page Applications - Manuel Matuzović"
-        ],
-        "bookmark-of": [
-          "https://www.matuzo.at/blog/2023/single-page-applications-criticism/"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "32.95688274"
-              ],
-              "longitude": [
-                "-117.24940099"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/links/19888"
-        ],
-        "published": [
-          "2023-02-10T17:43:52Z"
-        ],
-        "category": [
-          "spas",
-          "singlepageapps",
-          "javascript",
-          "frameworks",
-          "libraries",
-          "react",
-          "frontend",
-          "development",
-          "complexity",
-          "accessibility",
-          "a11y",
-          "routing",
-          "ux",
-          "performance"
-        ]
-      }
-    },
-    {
-      "type": [
         "h-card"
       ],
       "properties": {
@@ -1811,6 +1798,9 @@
       "https://adactio.com/includes/css/print.css"
     ],
     "bookmark": [
+      "https://adactio.com/notes/19914",
+      "https://adactio.com/links/19912",
+      "https://adactio.com/journal/19911",
       "https://adactio.com/links/19910",
       "https://adactio.com/notes/19907",
       "https://adactio.com/links/19905",
@@ -1827,19 +1817,50 @@
       "https://adactio.com/journal/19894",
       "https://adactio.com/links/19893",
       "https://adactio.com/journal/19892",
-      "https://adactio.com/links/19891",
-      "https://adactio.com/links/19890",
-      "https://adactio.com/links/19889",
-      "https://adactio.com/links/19888"
+      "https://adactio.com/links/19891"
+    ],
+    "syndication": [
+      "https://mastodon.social/@adactio/109880214275441011",
+      "https://adactio.medium.com/4d1969885128",
+      "https://mastodon.social/@adactio/109874469930247835",
+      "https://www.swarmapp.com/user/112073/checkin/63ed4d7085f8f503169d96f0",
+      "https://adactio.medium.com/de31b9193a7",
+      "https://adactio.medium.com/5b067c0f5128",
+      "https://adactio.medium.com/d7437b967c05",
+      "https://www.swarmapp.com/user/112073/checkin/63e8161e92835440062fd48d",
+      "https://adactio.medium.com/cbf3fd39cbbf",
+      "https://adactio.medium.com/f8b1ed659cac"
     ],
     "tag": [
+      "https://adactio.com/tags/openverse",
+      "https://adactio.com/tags/search",
+      "https://adactio.com/tags/engine",
+      "https://adactio.com/tags/licensing",
+      "https://adactio.com/tags/cc",
+      "https://adactio.com/tags/creativecommons",
+      "https://adactio.com/tags/publicdomain",
+      "https://adactio.com/tags/images",
+      "https://adactio.com/tags/photos",
+      "https://adactio.com/tags/audio",
+      "https://adactio.com/tags/photography",
+      "https://adactio.com/tags/license",
+      "https://adactio.com/tags/pwas",
+      "https://adactio.com/tags/progressive",
+      "https://adactio.com/tags/webapps",
+      "https://adactio.com/tags/homescreen",
+      "https://adactio.com/tags/apple",
+      "https://adactio.com/tags/mobile",
+      "https://adactio.com/tags/safari",
+      "https://adactio.com/tags/ios",
+      "https://adactio.com/tags/push",
+      "https://adactio.com/tags/notifications",
+      "https://adactio.com/tags/ux",
       "https://adactio.com/tags/blogging",
       "https://adactio.com/tags/blogs",
       "https://adactio.com/tags/indieweb",
       "https://adactio.com/tags/personal",
       "https://adactio.com/tags/publishing",
       "https://adactio.com/tags/montaigne",
-      "https://adactio.com/tags/apple",
       "https://adactio.com/tags/notes",
       "https://adactio.com/tags/mac",
       "https://adactio.com/tags/online",
@@ -1920,42 +1941,7 @@
       "https://adactio.com/tags/grid",
       "https://adactio.com/tags/storyblok",
       "https://adactio.com/tags/roadshow",
-      "https://adactio.com/tags/brighton",
-      "https://adactio.com/tags/inourtime",
-      "https://adactio.com/tags/braggoscope",
-      "https://adactio.com/tags/directory",
-      "https://adactio.com/tags/radio4",
-      "https://adactio.com/tags/episodes",
-      "https://adactio.com/tags/categories",
-      "https://adactio.com/tags/themes",
-      "https://adactio.com/tags/linking",
-      "https://adactio.com/tags/audio",
-      "https://adactio.com/tags/findability",
-      "https://adactio.com/tags/chatgpt",
-      "https://adactio.com/tags/llm",
-      "https://adactio.com/tags/words",
-      "https://adactio.com/tags/text",
-      "https://adactio.com/tags/compression",
-      "https://adactio.com/tags/lossless",
-      "https://adactio.com/tags/lossy",
-      "https://adactio.com/tags/spas",
-      "https://adactio.com/tags/singlepageapps",
-      "https://adactio.com/tags/complexity",
-      "https://adactio.com/tags/accessibility",
-      "https://adactio.com/tags/a11y",
-      "https://adactio.com/tags/routing",
-      "https://adactio.com/tags/ux",
-      "https://adactio.com/tags/performance"
-    ],
-    "syndication": [
-      "https://mastodon.social/@adactio/109874469930247835",
-      "https://www.swarmapp.com/user/112073/checkin/63ed4d7085f8f503169d96f0",
-      "https://adactio.medium.com/de31b9193a7",
-      "https://adactio.medium.com/5b067c0f5128",
-      "https://adactio.medium.com/d7437b967c05",
-      "https://www.swarmapp.com/user/112073/checkin/63e8161e92835440062fd48d",
-      "https://adactio.medium.com/cbf3fd39cbbf",
-      "https://adactio.medium.com/f8b1ed659cac"
+      "https://adactio.com/tags/brighton"
     ],
     "next": [
       "https://adactio.com/?start=20"
@@ -2346,6 +2332,174 @@
       ],
       "text": "music"
     },
+    "https://adactio.com/notes/19914": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n1:03pm\n\n"
+    },
+    "https://mastodon.social/@adactio/109880214275441011": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "Mastodon"
+    },
+    "https://adactio.com/links/19912": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n11:47am\n\n"
+    },
+    "https://adactio.com/tags/openverse": {
+      "rels": [
+        "tag"
+      ],
+      "text": "openverse"
+    },
+    "https://adactio.com/tags/search": {
+      "rels": [
+        "tag"
+      ],
+      "text": "search"
+    },
+    "https://adactio.com/tags/engine": {
+      "rels": [
+        "tag"
+      ],
+      "text": "engine"
+    },
+    "https://adactio.com/tags/licensing": {
+      "rels": [
+        "tag"
+      ],
+      "text": "licensing"
+    },
+    "https://adactio.com/tags/cc": {
+      "rels": [
+        "tag"
+      ],
+      "text": "cc"
+    },
+    "https://adactio.com/tags/creativecommons": {
+      "rels": [
+        "tag"
+      ],
+      "text": "creativecommons"
+    },
+    "https://adactio.com/tags/publicdomain": {
+      "rels": [
+        "tag"
+      ],
+      "text": "publicdomain"
+    },
+    "https://adactio.com/tags/images": {
+      "rels": [
+        "tag"
+      ],
+      "text": "images"
+    },
+    "https://adactio.com/tags/photos": {
+      "rels": [
+        "tag"
+      ],
+      "text": "photos"
+    },
+    "https://adactio.com/tags/audio": {
+      "rels": [
+        "tag"
+      ],
+      "text": "audio"
+    },
+    "https://adactio.com/tags/photography": {
+      "rels": [
+        "tag"
+      ],
+      "text": "photography"
+    },
+    "https://adactio.com/tags/license": {
+      "rels": [
+        "tag"
+      ],
+      "text": "license"
+    },
+    "https://adactio.com/journal/19911": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n10:58am\n\n"
+    },
+    "https://adactio.com/tags/pwas": {
+      "rels": [
+        "tag"
+      ],
+      "text": "pwas"
+    },
+    "https://adactio.com/tags/progressive": {
+      "rels": [
+        "tag"
+      ],
+      "text": "progressive"
+    },
+    "https://adactio.com/tags/webapps": {
+      "rels": [
+        "tag"
+      ],
+      "text": "webapps"
+    },
+    "https://adactio.com/tags/homescreen": {
+      "rels": [
+        "tag"
+      ],
+      "text": "homescreen"
+    },
+    "https://adactio.com/tags/apple": {
+      "rels": [
+        "tag"
+      ],
+      "text": "apple"
+    },
+    "https://adactio.com/tags/mobile": {
+      "rels": [
+        "tag"
+      ],
+      "text": "mobile"
+    },
+    "https://adactio.com/tags/safari": {
+      "rels": [
+        "tag"
+      ],
+      "text": "safari"
+    },
+    "https://adactio.com/tags/ios": {
+      "rels": [
+        "tag"
+      ],
+      "text": "ios"
+    },
+    "https://adactio.com/tags/push": {
+      "rels": [
+        "tag"
+      ],
+      "text": "push"
+    },
+    "https://adactio.com/tags/notifications": {
+      "rels": [
+        "tag"
+      ],
+      "text": "notifications"
+    },
+    "https://adactio.com/tags/ux": {
+      "rels": [
+        "tag"
+      ],
+      "text": "ux"
+    },
+    "https://adactio.medium.com/4d1969885128": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "Medium"
+    },
     "https://adactio.com/links/19910": {
       "rels": [
         "bookmark"
@@ -2387,12 +2541,6 @@
         "tag"
       ],
       "text": "montaigne"
-    },
-    "https://adactio.com/tags/apple": {
-      "rels": [
-        "tag"
-      ],
-      "text": "apple"
     },
     "https://adactio.com/tags/notes": {
       "rels": [
@@ -3023,174 +3171,6 @@
         "tag"
       ],
       "text": "brighton"
-    },
-    "https://adactio.com/links/19890": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n6:16pm\n\n"
-    },
-    "https://adactio.com/tags/inourtime": {
-      "rels": [
-        "tag"
-      ],
-      "text": "inourtime"
-    },
-    "https://adactio.com/tags/braggoscope": {
-      "rels": [
-        "tag"
-      ],
-      "text": "braggoscope"
-    },
-    "https://adactio.com/tags/directory": {
-      "rels": [
-        "tag"
-      ],
-      "text": "directory"
-    },
-    "https://adactio.com/tags/radio4": {
-      "rels": [
-        "tag"
-      ],
-      "text": "radio4"
-    },
-    "https://adactio.com/tags/episodes": {
-      "rels": [
-        "tag"
-      ],
-      "text": "episodes"
-    },
-    "https://adactio.com/tags/categories": {
-      "rels": [
-        "tag"
-      ],
-      "text": "categories"
-    },
-    "https://adactio.com/tags/themes": {
-      "rels": [
-        "tag"
-      ],
-      "text": "themes"
-    },
-    "https://adactio.com/tags/linking": {
-      "rels": [
-        "tag"
-      ],
-      "text": "linking"
-    },
-    "https://adactio.com/tags/audio": {
-      "rels": [
-        "tag"
-      ],
-      "text": "audio"
-    },
-    "https://adactio.com/tags/findability": {
-      "rels": [
-        "tag"
-      ],
-      "text": "findability"
-    },
-    "https://adactio.com/links/19889": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n6:06pm\n\n"
-    },
-    "https://adactio.com/tags/chatgpt": {
-      "rels": [
-        "tag"
-      ],
-      "text": "chatgpt"
-    },
-    "https://adactio.com/tags/llm": {
-      "rels": [
-        "tag"
-      ],
-      "text": "llm"
-    },
-    "https://adactio.com/tags/words": {
-      "rels": [
-        "tag"
-      ],
-      "text": "words"
-    },
-    "https://adactio.com/tags/text": {
-      "rels": [
-        "tag"
-      ],
-      "text": "text"
-    },
-    "https://adactio.com/tags/compression": {
-      "rels": [
-        "tag"
-      ],
-      "text": "compression"
-    },
-    "https://adactio.com/tags/lossless": {
-      "rels": [
-        "tag"
-      ],
-      "text": "lossless"
-    },
-    "https://adactio.com/tags/lossy": {
-      "rels": [
-        "tag"
-      ],
-      "text": "lossy"
-    },
-    "https://adactio.com/links/19888": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n5:43pm\n\n"
-    },
-    "https://adactio.com/tags/spas": {
-      "rels": [
-        "tag"
-      ],
-      "text": "spas"
-    },
-    "https://adactio.com/tags/singlepageapps": {
-      "rels": [
-        "tag"
-      ],
-      "text": "singlepageapps"
-    },
-    "https://adactio.com/tags/complexity": {
-      "rels": [
-        "tag"
-      ],
-      "text": "complexity"
-    },
-    "https://adactio.com/tags/accessibility": {
-      "rels": [
-        "tag"
-      ],
-      "text": "accessibility"
-    },
-    "https://adactio.com/tags/a11y": {
-      "rels": [
-        "tag"
-      ],
-      "text": "a11y"
-    },
-    "https://adactio.com/tags/routing": {
-      "rels": [
-        "tag"
-      ],
-      "text": "routing"
-    },
-    "https://adactio.com/tags/ux": {
-      "rels": [
-        "tag"
-      ],
-      "text": "ux"
-    },
-    "https://adactio.com/tags/performance": {
-      "rels": [
-        "tag"
-      ],
-      "text": "performance"
     },
     "https://adactio.com/?start=20": {
       "rels": [

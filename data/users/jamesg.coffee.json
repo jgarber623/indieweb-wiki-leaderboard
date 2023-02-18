@@ -78,6 +78,342 @@
               }
             ],
             "bookmark-of": [
+              "https://www.enderverse.org/notes/unlearning.html"
+            ],
+            "name": [
+              "machine unlearning"
+            ],
+            "url": [
+              "https://jamesg.coffee/2023/machine-unlearning"
+            ],
+            "published": [
+              "2023-02-18T06:02:07+0000"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "logo": [
+                    "https://jamesg.coffee/file/191a78a0111330daf8de0a00f58ab352/thumb.jpg"
+                  ],
+                  "photo": [
+                    "https://jamesg.coffee/file/191a78a0111330daf8de0a00f58ab352/thumb.jpg"
+                  ],
+                  "name": [
+                    "James' Coffee Blog"
+                  ],
+                  "url": [
+                    "https://jamesg.coffee/profile/capjamesg",
+                    "https://jamesg.coffee/profile/capjamesg"
+                  ]
+                },
+                "value": "James' Coffee Blog"
+              }
+            ],
+            "like-of": [
+              "https://jvns.ca/blog/2023/02/16/writing-javascript-without-a-build-system/"
+            ],
+            "name": [
+              "Writing Javascript without a build system"
+            ],
+            "url": [
+              "https://jamesg.coffee/2023/writing-javascript-without-a-build-system"
+            ],
+            "published": [
+              "2023-02-17T22:43:26+0000"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "logo": [
+                    "https://jamesg.coffee/file/191a78a0111330daf8de0a00f58ab352/thumb.jpg"
+                  ],
+                  "photo": [
+                    "https://jamesg.coffee/file/191a78a0111330daf8de0a00f58ab352/thumb.jpg"
+                  ],
+                  "name": [
+                    "James' Coffee Blog"
+                  ],
+                  "url": [
+                    "https://jamesg.coffee/profile/capjamesg",
+                    "https://jamesg.coffee/profile/capjamesg"
+                  ]
+                },
+                "value": "James' Coffee Blog"
+              }
+            ],
+            "like-of": [
+              "https://lmika.org/2023/02/17/very-hot-today.html"
+            ],
+            "name": [
+              "Leon Mika"
+            ],
+            "url": [
+              "https://jamesg.coffee/2023/leon-mika"
+            ],
+            "published": [
+              "2023-02-17T22:42:39+0000"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "logo": [
+                    "https://jamesg.coffee/file/191a78a0111330daf8de0a00f58ab352/thumb.jpg"
+                  ],
+                  "photo": [
+                    "https://jamesg.coffee/file/191a78a0111330daf8de0a00f58ab352/thumb.jpg"
+                  ],
+                  "name": [
+                    "James' Coffee Blog"
+                  ],
+                  "url": [
+                    "https://jamesg.coffee/profile/capjamesg",
+                    "https://jamesg.coffee/profile/capjamesg"
+                  ]
+                },
+                "value": "James' Coffee Blog"
+              }
+            ],
+            "like-of": [
+              "http://tantek.com/2023/047/t1/nineteen-years-microformats"
+            ],
+            "name": [
+              "Nineteen years ago last Saturday, @KevinMarks.com & I introduced^1 #microformats @OReillyMedia ETech 2004, building on “semantic (x)html”.\n\nWe’ve come a long way since, from methodologies to #microformats2, from publishing to peer-to-peer #IndieWeb use-cases.\n\nWe named #microformats only after we had established a pattern of real world examples; even our talk proposal was named RealWorldSemantics^2, and provided examples in that broader theme.\n\nThis exemplified important implicit values in ordering our efforts:\n1. get real world things working first, not just theory\n2. name them after a pattern emerges, not just solo efforts\n3. grow the pattern with proposals, prototypes, iteration, evolution\n\nThe examples at that point in time:\n* XFN — using rel-values for blogroll semantics, and the technology that defined rel=me in v1.1^3, now the standard for decentralized social media verification on Mastodon^4, GitHub^5, elsewhere, and the basis of RelMeAuth^6\n* XMDP — XHTML MetaData Profiles, notably using an HTML class^7 with a particular value 'profile' to indicate presence of a specific semantic structure\n* XOXO — XHTML Outlines, formalizing existing usage of (X)HTML elements for outlines, also using an HTML class with a particular value 'xoxo' to express a semantic\n\nGrowing the pattern:\n* rel=license — solved page licensing better than before, since widespread adopted\n* VoteLinks — new rel values, prototyped, only one consuming implementation (since defunct)\n\nAnd further brainstorming:\n* recommendations — initial rel=\"recommendation\" idea eventually evolved to hReview, and today’s h-review\n* syndication — helped motivate HTML5  element, eventually led to hAtom, and today’s h-entry\n* playlists — led to various ideas, proposals, & demos^8, still not really solved today\n\n\nThe mid-2000s were a time of eager experimentation, when we were learning that very small bits of markup (yes, hence the name) could be used to build some very useful capabilities on top of the open web platform.\n\nA few observations with the benefit of years of experience since we proposed “microformats”:\n\n\nOne: Many microformats succeeded because we solved an existing problem, with existing *complex* solutions, by providing a drastically *simpler* solution.\n\nXFN instead of FOAF. rel=license instead of Creative Commons RDF in HTML comments.\n\nBy doing so, we skipped the often harder problem of defining & refining a problem worth solving, a use-case, or user scenario.\n\n\nTwo: A few microformats succeeded because they solved existing problems, re-using *existing established* open solutions in other formats, reformatted into native HTML.\n\nhCard from vCard. hCalendar from iCalendar.\n\nThis methodology leveraged years of prior hard open standards work by numerous others across numerous organizations, and deliberately avoided the bikeshedding trap of renaming things (or any other kind of non-trivial “clean-up”) while reformatting, thus making it easy for developers of one technology to see the 1:1 mapping and use the other.\n\nThe primary downside with this approach was formats that were larger than perhaps necessary for HTML-specific use-cases.\n\nEventually for microformats2 vocabularies, we adopted a subset approach, looking for web publishing use-cases for each feature, making h-card smaller than hCard, and h-event smaller than hCalendar.\n\n\nThree: Success in a search engine was not enough, and sometimes attracted more bad actors than good. @KevinMarks.com, myself, and others at Technorati built search engine indexing and use of rel-tag and hReview, which helped evolve their specifications. A few other small search engines indexed rel=tag markup, however none remain today. hReview was adopted by Google which led to it being heavily spammed.\n\nThis pattern repeated itself with other microformats, and eventually we shifted from:\n→ of course search is the first obvious use-case\n→ search is one use-case among others\n→ we need primary use-cases outside of search for longterm ecosystem success\nWhich leads to the fourth observation.\n\n\nFour: Publishing alone is not a use-case. There must be multiple consuming code use-cases (beyond search) for a microformat to succeed longterm.\n\nFrom individual features to whole microformats vocabularies, we learned that not only did there need to be sufficient content being published already, without microformats, that could benefit, but there needed to be good enough consuming code use-cases that benefited users (not just developers). The #IndieWeb community has been exceptionally helpful in both defining such use-cases and iterating on them with implementations.\n\nWe still get questions of the form: What’s the best way to mark this up?\n\nI used to very much believe that if you could mark something up more semantically, you should spend the time & effort to do so. This drove a lot of early experiments with markup, and did provide some eventual benefits, most notably when semantic HTML elements provided good hooks for accessibility tools such as screen readers.\n\nNow we know the answer to the question of “How should I mark-up this content?” must be accompanied by specific use-cases for consuming code of that markup. \n\nIf there is no consuming code use-case, it is not worth the time to add the mark-up (never mind the maintenance effort over time).\n\nSometimes one single consuming code use-case is sufficient to justify the time & effort to add more semantic mark-up. If that markup helps screenreaders, then it’s worth it. More often than not however, there must be multiple (again, beyond search) consuming code use-cases for it to be worth adding semantic markup, and certainly for developing new markup, whether microformats features or new microformats.\n\n\nThis focus on and repeated asking of questions like:\n* What is the (consuming code) use-case? \n* Or how does it benefit readers of this content?\nhas helped focus our modern microformats efforts on actual benefits to humans first, and machines second (if at all).\n\n\nIf you think of IndieWeb use-cases for existing or new microformats, come join us in the developers chat:\n*"
+            ],
+            "url": [
+              "https://jamesg.coffee/2023/nineteen-years-ago-last-saturday-kevinmarkscom-i-introduced1-microformats-oreillymedia"
+            ],
+            "published": [
+              "2023-02-17T22:42:31+0000"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "logo": [
+                    "https://jamesg.coffee/file/191a78a0111330daf8de0a00f58ab352/thumb.jpg"
+                  ],
+                  "photo": [
+                    "https://jamesg.coffee/file/191a78a0111330daf8de0a00f58ab352/thumb.jpg"
+                  ],
+                  "name": [
+                    "James' Coffee Blog"
+                  ],
+                  "url": [
+                    "https://jamesg.coffee/profile/capjamesg",
+                    "https://jamesg.coffee/profile/capjamesg"
+                  ]
+                },
+                "value": "James' Coffee Blog"
+              }
+            ],
+            "like-of": [
+              "https://campegg.com/photos/20230216190834"
+            ],
+            "name": [
+              "Table Tennis Time — Cam Pegg"
+            ],
+            "url": [
+              "https://jamesg.coffee/2023/table-tennis-timecam-pegg"
+            ],
+            "published": [
+              "2023-02-17T22:42:20+0000"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "logo": [
+                    "https://jamesg.coffee/file/191a78a0111330daf8de0a00f58ab352/thumb.jpg"
+                  ],
+                  "photo": [
+                    "https://jamesg.coffee/file/191a78a0111330daf8de0a00f58ab352/thumb.jpg"
+                  ],
+                  "name": [
+                    "James' Coffee Blog"
+                  ],
+                  "url": [
+                    "https://jamesg.coffee/profile/capjamesg",
+                    "https://jamesg.coffee/profile/capjamesg"
+                  ]
+                },
+                "value": "James' Coffee Blog"
+              }
+            ],
+            "like-of": [
+              "https://jamesvandyne.com/4b174a22-7e2a-4a82-947e-7d0a170c01d3"
+            ],
+            "name": [
+              "Up and loading the car. Time to go to the airport then a 14 hour flight to Tokyo. - James Van Dyne"
+            ],
+            "url": [
+              "https://jamesg.coffee/2023/up-and-loading-the-car-time-to-go-to-the"
+            ],
+            "published": [
+              "2023-02-17T22:42:15+0000"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "logo": [
+                    "https://jamesg.coffee/file/191a78a0111330daf8de0a00f58ab352/thumb.jpg"
+                  ],
+                  "photo": [
+                    "https://jamesg.coffee/file/191a78a0111330daf8de0a00f58ab352/thumb.jpg"
+                  ],
+                  "name": [
+                    "James' Coffee Blog"
+                  ],
+                  "url": [
+                    "https://jamesg.coffee/profile/capjamesg",
+                    "https://jamesg.coffee/profile/capjamesg"
+                  ]
+                },
+                "value": "James' Coffee Blog"
+              }
+            ],
+            "like-of": [
+              "https://xkcd.com/2739/"
+            ],
+            "name": [
+              "xkcd: Data Quality"
+            ],
+            "url": [
+              "https://jamesg.coffee/2023/xkcd-data-quality"
+            ],
+            "published": [
+              "2023-02-17T22:41:55+0000"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "logo": [
+                    "https://jamesg.coffee/file/191a78a0111330daf8de0a00f58ab352/thumb.jpg"
+                  ],
+                  "photo": [
+                    "https://jamesg.coffee/file/191a78a0111330daf8de0a00f58ab352/thumb.jpg"
+                  ],
+                  "name": [
+                    "James' Coffee Blog"
+                  ],
+                  "url": [
+                    "https://jamesg.coffee/profile/capjamesg",
+                    "https://jamesg.coffee/profile/capjamesg"
+                  ]
+                },
+                "value": "James' Coffee Blog"
+              }
+            ],
+            "like-of": [
+              "https://jamesvandyne.com/ad566e43-bdd4-4b2b-b47b-918304031cd8"
+            ],
+            "name": [
+              "A pre-flight bagel, as is tradition. - James Van Dyne"
+            ],
+            "url": [
+              "https://jamesg.coffee/2023/a-pre-flight-bagel-as-is-tradition---james-van-dyne"
+            ],
+            "published": [
+              "2023-02-17T22:41:38+0000"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "logo": [
+                    "https://jamesg.coffee/file/191a78a0111330daf8de0a00f58ab352/thumb.jpg"
+                  ],
+                  "photo": [
+                    "https://jamesg.coffee/file/191a78a0111330daf8de0a00f58ab352/thumb.jpg"
+                  ],
+                  "name": [
+                    "James' Coffee Blog"
+                  ],
+                  "url": [
+                    "https://jamesg.coffee/profile/capjamesg",
+                    "https://jamesg.coffee/profile/capjamesg"
+                  ]
+                },
+                "value": "James' Coffee Blog"
+              }
+            ],
+            "bookmark-of": [
               "https://www.youtube.com/watch?v=XZJc1p6RE78&ab_channel=Computerphile"
             ],
             "name": [
@@ -130,342 +466,6 @@
             ],
             "published": [
               "2023-02-16T23:32:13+0000"
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "logo": [
-                    "https://jamesg.coffee/file/191a78a0111330daf8de0a00f58ab352/thumb.jpg"
-                  ],
-                  "photo": [
-                    "https://jamesg.coffee/file/191a78a0111330daf8de0a00f58ab352/thumb.jpg"
-                  ],
-                  "name": [
-                    "James' Coffee Blog"
-                  ],
-                  "url": [
-                    "https://jamesg.coffee/profile/capjamesg",
-                    "https://jamesg.coffee/profile/capjamesg"
-                  ]
-                },
-                "value": "James' Coffee Blog"
-              }
-            ],
-            "like-of": [
-              "https://xkcd.com/2738/"
-            ],
-            "name": [
-              "xkcd: Omniknot"
-            ],
-            "url": [
-              "https://jamesg.coffee/2023/xkcd-omniknot"
-            ],
-            "published": [
-              "2023-02-16T19:16:32+0000"
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "logo": [
-                    "https://jamesg.coffee/file/191a78a0111330daf8de0a00f58ab352/thumb.jpg"
-                  ],
-                  "photo": [
-                    "https://jamesg.coffee/file/191a78a0111330daf8de0a00f58ab352/thumb.jpg"
-                  ],
-                  "name": [
-                    "James' Coffee Blog"
-                  ],
-                  "url": [
-                    "https://jamesg.coffee/profile/capjamesg",
-                    "https://jamesg.coffee/profile/capjamesg"
-                  ]
-                },
-                "value": "James' Coffee Blog"
-              }
-            ],
-            "bookmark-of": [
-              "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/samp"
-            ],
-            "name": [
-              ": The Sample Output element - HTML: HyperText Markup Language | MDN"
-            ],
-            "url": [
-              "https://jamesg.coffee/2023/-the-sample-output-element---html-hypertext-markup-language"
-            ],
-            "published": [
-              "2023-02-16T19:15:43+0000"
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "logo": [
-                    "https://jamesg.coffee/file/191a78a0111330daf8de0a00f58ab352/thumb.jpg"
-                  ],
-                  "photo": [
-                    "https://jamesg.coffee/file/191a78a0111330daf8de0a00f58ab352/thumb.jpg"
-                  ],
-                  "name": [
-                    "James' Coffee Blog"
-                  ],
-                  "url": [
-                    "https://jamesg.coffee/profile/capjamesg",
-                    "https://jamesg.coffee/profile/capjamesg"
-                  ]
-                },
-                "value": "James' Coffee Blog"
-              }
-            ],
-            "bookmark-of": [
-              "https://www.nytimes.com/2023/02/02/business/trillion-dollar-coin-debt-ceiling.html"
-            ],
-            "name": [
-              "The Trillion-Dollar Question: Could a Coin Save the Day?"
-            ],
-            "url": [
-              "https://jamesg.coffee/2023/the-trillion-dollar-question-could-a-coin-save-the-day"
-            ],
-            "published": [
-              "2023-02-15T23:23:06+0000"
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "logo": [
-                    "https://jamesg.coffee/file/191a78a0111330daf8de0a00f58ab352/thumb.jpg"
-                  ],
-                  "photo": [
-                    "https://jamesg.coffee/file/191a78a0111330daf8de0a00f58ab352/thumb.jpg"
-                  ],
-                  "name": [
-                    "James' Coffee Blog"
-                  ],
-                  "url": [
-                    "https://jamesg.coffee/profile/capjamesg",
-                    "https://jamesg.coffee/profile/capjamesg"
-                  ]
-                },
-                "value": "James' Coffee Blog"
-              }
-            ],
-            "bookmark-of": [
-              "https://w3c.github.io/adapt"
-            ],
-            "name": [
-              "WAI-Adapt Explainer"
-            ],
-            "url": [
-              "https://jamesg.coffee/2023/wai-adapt-explainer"
-            ],
-            "published": [
-              "2023-02-15T19:22:00+0000"
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "logo": [
-                    "https://jamesg.coffee/file/191a78a0111330daf8de0a00f58ab352/thumb.jpg"
-                  ],
-                  "photo": [
-                    "https://jamesg.coffee/file/191a78a0111330daf8de0a00f58ab352/thumb.jpg"
-                  ],
-                  "name": [
-                    "James' Coffee Blog"
-                  ],
-                  "url": [
-                    "https://jamesg.coffee/profile/capjamesg",
-                    "https://jamesg.coffee/profile/capjamesg"
-                  ]
-                },
-                "value": "James' Coffee Blog"
-              }
-            ],
-            "bookmark-of": [
-              "https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work"
-            ],
-            "name": [
-              "What Is ChatGPT Doing … and Why Does It Work?&mdash;Stephen Wolfram Writings"
-            ],
-            "url": [
-              "https://jamesg.coffee/2023/what-is-chatgpt-doing-and-why-does-it-workmdashstephen-wolfram"
-            ],
-            "published": [
-              "2023-02-15T17:57:55+0000"
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "logo": [
-                    "https://jamesg.coffee/file/191a78a0111330daf8de0a00f58ab352/thumb.jpg"
-                  ],
-                  "photo": [
-                    "https://jamesg.coffee/file/191a78a0111330daf8de0a00f58ab352/thumb.jpg"
-                  ],
-                  "name": [
-                    "James' Coffee Blog"
-                  ],
-                  "url": [
-                    "https://jamesg.coffee/profile/capjamesg",
-                    "https://jamesg.coffee/profile/capjamesg"
-                  ]
-                },
-                "value": "James' Coffee Blog"
-              }
-            ],
-            "bookmark-of": [
-              "http://www.antipope.org/charlie/blog-static/2018/01/dude-you-broke-the-future.html"
-            ],
-            "name": [
-              "Dude, you broke the future! - Charlie's Diary"
-            ],
-            "url": [
-              "https://jamesg.coffee/2023/dude-you-broke-the-future---charlies-diary"
-            ],
-            "published": [
-              "2023-02-15T16:22:39+0000"
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "logo": [
-                    "https://jamesg.coffee/file/191a78a0111330daf8de0a00f58ab352/thumb.jpg"
-                  ],
-                  "photo": [
-                    "https://jamesg.coffee/file/191a78a0111330daf8de0a00f58ab352/thumb.jpg"
-                  ],
-                  "name": [
-                    "James' Coffee Blog"
-                  ],
-                  "url": [
-                    "https://jamesg.coffee/profile/capjamesg",
-                    "https://jamesg.coffee/profile/capjamesg"
-                  ]
-                },
-                "value": "James' Coffee Blog"
-              }
-            ],
-            "bookmark-of": [
-              "https://pianos.pub/"
-            ],
-            "name": [
-              "Pianos for Travelers | Public Pianos"
-            ],
-            "url": [
-              "https://jamesg.coffee/2023/pianos-for-travelers-public-pianos"
-            ],
-            "published": [
-              "2023-02-14T22:00:23+0000"
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "logo": [
-                    "https://jamesg.coffee/file/191a78a0111330daf8de0a00f58ab352/thumb.jpg"
-                  ],
-                  "photo": [
-                    "https://jamesg.coffee/file/191a78a0111330daf8de0a00f58ab352/thumb.jpg"
-                  ],
-                  "name": [
-                    "James' Coffee Blog"
-                  ],
-                  "url": [
-                    "https://jamesg.coffee/profile/capjamesg",
-                    "https://jamesg.coffee/profile/capjamesg"
-                  ]
-                },
-                "value": "James' Coffee Blog"
-              }
-            ],
-            "bookmark-of": [
-              "https://tobacco.stanford.edu/cigarettes/doctors-smoking/more-doctors-smoke-camels"
-            ],
-            "name": [
-              "More Doctors Smoke Camels"
-            ],
-            "url": [
-              "https://jamesg.coffee/2023/more-doctors-smoke-camels"
-            ],
-            "published": [
-              "2023-02-14T21:38:23+0000"
             ]
           }
         }
@@ -551,16 +551,16 @@
       "https://aperture.p3k.io/microsub/751"
     ],
     "permalink": [
+      "https://jamesg.coffee/2023/machine-unlearning",
+      "https://jamesg.coffee/2023/writing-javascript-without-a-build-system",
+      "https://jamesg.coffee/2023/leon-mika",
+      "https://jamesg.coffee/2023/nineteen-years-ago-last-saturday-kevinmarkscom-i-introduced1-microformats-oreillymedia",
+      "https://jamesg.coffee/2023/table-tennis-timecam-pegg",
+      "https://jamesg.coffee/2023/up-and-loading-the-car-time-to-go-to-the",
+      "https://jamesg.coffee/2023/xkcd-data-quality",
+      "https://jamesg.coffee/2023/a-pre-flight-bagel-as-is-tradition---james-van-dyne",
       "https://jamesg.coffee/2023/cheat-gpt---computerphile---youtube",
-      "https://jamesg.coffee/2023/loopt-y-combinator",
-      "https://jamesg.coffee/2023/xkcd-omniknot",
-      "https://jamesg.coffee/2023/-the-sample-output-element---html-hypertext-markup-language",
-      "https://jamesg.coffee/2023/the-trillion-dollar-question-could-a-coin-save-the-day",
-      "https://jamesg.coffee/2023/wai-adapt-explainer",
-      "https://jamesg.coffee/2023/what-is-chatgpt-doing-and-why-does-it-workmdashstephen-wolfram",
-      "https://jamesg.coffee/2023/dude-you-broke-the-future---charlies-diary",
-      "https://jamesg.coffee/2023/pianos-for-travelers-public-pianos",
-      "https://jamesg.coffee/2023/more-doctors-smoke-camels"
+      "https://jamesg.coffee/2023/loopt-y-combinator"
     ],
     "next": [
       "https://jamesg.coffee/?offset=0"
@@ -736,6 +736,54 @@
         "stylesheet"
       ]
     },
+    "https://jamesg.coffee/2023/machine-unlearning": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "18 Feb 2023"
+    },
+    "https://jamesg.coffee/2023/writing-javascript-without-a-build-system": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "17 Feb 2023"
+    },
+    "https://jamesg.coffee/2023/leon-mika": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "17 Feb 2023"
+    },
+    "https://jamesg.coffee/2023/nineteen-years-ago-last-saturday-kevinmarkscom-i-introduced1-microformats-oreillymedia": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "17 Feb 2023"
+    },
+    "https://jamesg.coffee/2023/table-tennis-timecam-pegg": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "17 Feb 2023"
+    },
+    "https://jamesg.coffee/2023/up-and-loading-the-car-time-to-go-to-the": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "17 Feb 2023"
+    },
+    "https://jamesg.coffee/2023/xkcd-data-quality": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "17 Feb 2023"
+    },
+    "https://jamesg.coffee/2023/a-pre-flight-bagel-as-is-tradition---james-van-dyne": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "17 Feb 2023"
+    },
     "https://jamesg.coffee/2023/cheat-gpt---computerphile---youtube": {
       "rels": [
         "permalink"
@@ -747,54 +795,6 @@
         "permalink"
       ],
       "text": "16 Feb 2023"
-    },
-    "https://jamesg.coffee/2023/xkcd-omniknot": {
-      "rels": [
-        "permalink"
-      ],
-      "text": "16 Feb 2023"
-    },
-    "https://jamesg.coffee/2023/-the-sample-output-element---html-hypertext-markup-language": {
-      "rels": [
-        "permalink"
-      ],
-      "text": "16 Feb 2023"
-    },
-    "https://jamesg.coffee/2023/the-trillion-dollar-question-could-a-coin-save-the-day": {
-      "rels": [
-        "permalink"
-      ],
-      "text": "15 Feb 2023"
-    },
-    "https://jamesg.coffee/2023/wai-adapt-explainer": {
-      "rels": [
-        "permalink"
-      ],
-      "text": "15 Feb 2023"
-    },
-    "https://jamesg.coffee/2023/what-is-chatgpt-doing-and-why-does-it-workmdashstephen-wolfram": {
-      "rels": [
-        "permalink"
-      ],
-      "text": "15 Feb 2023"
-    },
-    "https://jamesg.coffee/2023/dude-you-broke-the-future---charlies-diary": {
-      "rels": [
-        "permalink"
-      ],
-      "text": "15 Feb 2023"
-    },
-    "https://jamesg.coffee/2023/pianos-for-travelers-public-pianos": {
-      "rels": [
-        "permalink"
-      ],
-      "text": "14 Feb 2023"
-    },
-    "https://jamesg.coffee/2023/more-doctors-smoke-camels": {
-      "rels": [
-        "permalink"
-      ],
-      "text": "14 Feb 2023"
     },
     "https://jamesg.coffee/?offset=0": {
       "rels": [

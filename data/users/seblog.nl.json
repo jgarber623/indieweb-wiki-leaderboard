@@ -38,6 +38,34 @@
             "h-entry"
           ],
           "properties": {
+            "content": [
+              {
+                "html": "<p>Een app is van kleur veranderd en nu klopt de compositie van mijn homescreen niet meer.</p>",
+                "value": "Een app is van kleur veranderd en nu klopt de compositie van mijn homescreen niet meer."
+              }
+            ],
+            "url": [
+              "https://seblog.nl/2023/02/17/1/compositie"
+            ],
+            "published": [
+              "2023-02-17T20:31:47+0000"
+            ],
+            "updated": [
+              "2023-02-17T20:31:47+0000"
+            ],
+            "uid": [
+              "https://seblog.nl/2023/048/1"
+            ],
+            "author": [
+              "https://seblog.nl/"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
             "name": [
               "Nederlandse go-termen"
             ],
@@ -684,38 +712,6 @@
               "https://seblog.nl/"
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "content": [
-              {
-                "html": "<p>In mijn <a href=\"https://seblog.nl/2022/11/05/3/poging-tot-mastodon\">post van vorig weekend</a> wilde ik niet toegeven dat de requests die Mastdon naar mijn inbox stuurde helemaal niet door mijn eigen verificatie-code heen kwamen.</p>\n<p>Het stappenplan is als volgt: Mastodon stuurt een bericht naar mijn inbox, stuurt daarbij een HTTP-header met daarin een <code>keyId</code>, een <code>signature</code> en een lijstje aan namen van headers. Ik moet dan de waardes van de HTTP-headers bij de namen zoeken, de <code>keyId</code> ophalen (dit is een URL) en dan verifiëren of de signature van de headers inderdaad ondertekend is met de public key uit de <code>keyId</code>. Omdat het cryptografie is gaf de functie alleen maar <code>false</code> terug, zonder enige verder info.</p>\n<p>Na heel veel zoeken bleek dat in elk geval de deletes een simpele verklaring hadden: zodra de Actor is verwijderd is ook de public key weg, en dus valt er niets te verifyen. Dat is geen bug, <a href=\"https://github.com/mastodon/mastodon/issues/10286\">zeggen ze</a>. Ik negeer nu lekker alle Actor-deletes want ik haal toch geen profielen op. Follows en Follow-Undo's die ik als test bleef doen bleven wel falen.</p>\n<p>Na letterlijk uren te hebben doorgebracht met specs zoeken en code lezen uit <a href=\"https://pixelfed.org/\">Pixelfed</a> (PHP Laravel) en <a href=\"https://pleroma.social/\">Pleroma</a> (Elixir), bleef ik er toch echt van overtuigd dat ik alles goed berekende, aan elkaar knoopte, ophaalde, alles. Heel frustrerend.</p>\n<p>Maar, wat bleek: de <code>(request-target)</code> vulde ik aan als <code>(request-target) /inbox</code>, terwijl ik mijn inbox op <code>/activitypub/inbox</code> had neergezet. De andere implementaties plakten die path dynamisch op uit de Request/conn. Daar ging 6 uur waarin ik al heel veel verder kon zijn geweest met Activitypub. Maar goed, volgend weekend weer een weekend.</p>",
-                "value": "In mijn post van vorig weekend wilde ik niet toegeven dat de requests die Mastdon naar mijn inbox stuurde helemaal niet door mijn eigen verificatie-code heen kwamen.\nHet stappenplan is als volgt: Mastodon stuurt een bericht naar mijn inbox, stuurt daarbij een HTTP-header met daarin een keyId, een signature en een lijstje aan namen van headers. Ik moet dan de waardes van de HTTP-headers bij de namen zoeken, de keyId ophalen (dit is een URL) en dan verifiëren of de signature van de headers inderdaad ondertekend is met de public key uit de keyId. Omdat het cryptografie is gaf de functie alleen maar false terug, zonder enige verder info.\nNa heel veel zoeken bleek dat in elk geval de deletes een simpele verklaring hadden: zodra de Actor is verwijderd is ook de public key weg, en dus valt er niets te verifyen. Dat is geen bug, zeggen ze. Ik negeer nu lekker alle Actor-deletes want ik haal toch geen profielen op. Follows en Follow-Undo's die ik als test bleef doen bleven wel falen.\nNa letterlijk uren te hebben doorgebracht met specs zoeken en code lezen uit Pixelfed (PHP Laravel) en Pleroma (Elixir), bleef ik er toch echt van overtuigd dat ik alles goed berekende, aan elkaar knoopte, ophaalde, alles. Heel frustrerend.\nMaar, wat bleek: de (request-target) vulde ik aan als (request-target) /inbox, terwijl ik mijn inbox op /activitypub/inbox had neergezet. De andere implementaties plakten die path dynamisch op uit de Request/conn. Daar ging 6 uur waarin ik al heel veel verder kon zijn geweest met Activitypub. Maar goed, volgend weekend weer een weekend."
-              }
-            ],
-            "url": [
-              "https://seblog.nl/2022/11/13/1/mastodon-debuggen"
-            ],
-            "published": [
-              "2022-11-13T21:27:24+0000"
-            ],
-            "updated": [
-              "2022-11-13T21:27:24+0000"
-            ],
-            "uid": [
-              "https://seblog.nl/2022/317/1"
-            ],
-            "author": [
-              "https://seblog.nl/"
-            ],
-            "category": [
-              "mastodon",
-              "activitypub"
-            ]
-          }
         }
       ]
     }
@@ -768,18 +764,18 @@
       "https://seblog.nl/"
     ],
     "shortlink": [
+      "https://5eb.nl/5PR1",
       "https://5eb.nl/5PL1",
       "https://5eb.nl/5Nd1",
       "https://5eb.nl/5N42",
-      "https://5eb.nl/5N41",
-      "https://5eb.nl/5Mp1"
+      "https://5eb.nl/5N41"
     ],
     "canonical": [
+      "https://seblog.nl/2023/048/1",
       "https://seblog.nl/2023/043/1",
       "https://seblog.nl/2023/001/1",
       "https://seblog.nl/2022/332/2",
-      "https://seblog.nl/2022/332/1",
-      "https://seblog.nl/2022/317/1"
+      "https://seblog.nl/2022/332/1"
     ],
     "syndication": [
       "https://mastodon.social/@sebsel/109423806188303700"
@@ -897,6 +893,18 @@
         "me"
       ]
     },
+    "https://5eb.nl/5PR1": {
+      "rels": [
+        "shortlink"
+      ],
+      "title": "2023/048/1",
+      "text": "•"
+    },
+    "https://seblog.nl/2023/048/1": {
+      "rels": [
+        "canonical"
+      ]
+    },
     "https://5eb.nl/5PL1": {
       "rels": [
         "shortlink"
@@ -946,18 +954,6 @@
       "text": "•"
     },
     "https://seblog.nl/2022/332/1": {
-      "rels": [
-        "canonical"
-      ]
-    },
-    "https://5eb.nl/5Mp1": {
-      "rels": [
-        "shortlink"
-      ],
-      "title": "2022/317/1",
-      "text": "•"
-    },
-    "https://seblog.nl/2022/317/1": {
       "rels": [
         "canonical"
       ]
