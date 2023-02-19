@@ -5,172 +5,174 @@
         "h-card"
       ],
       "properties": {
+        "photo": [
+          {
+            "value": "https://box464.com/assets/img/profile.png",
+            "alt": "A photo of Jeff Sikes"
+          }
+        ],
         "name": [
           "Jeff Sikes"
         ],
         "url": [
-          "https://box464.com/"
+          "https://box464.com/about"
         ],
         "uid": [
-          "https://box464.com/"
-        ],
-        "sound": [
-          "https://box464.com/content/audio/NamePronunciation-JeffSikes.mp3"
-        ],
-        "nickname": [
-          "box464"
-        ],
-        "org": [
-          "American Association of Nurse Practitioners"
-        ],
-        "job-title": [
-          "Application Development Manager"
-        ],
-        "sex": [
-          "M"
-        ],
-        "country-name": [
-          "United States"
-        ],
-        "gender-identity": [
-          "M"
+          "https://box464.com/about"
         ],
         "note": [
           "Coder, manager, dog dad. Tech tinkering is my joy. Be kind."
-        ],
-        "key": [
-          "https://keys.openpgp.org/pks/lookup?op=get&options=mr&search=0x135ec4bbaf5fa3b8ef306f7d31e738e17b73b201"
-        ],
-        "photo": [
-          "https://en.gravatar.com/userimage/229793401/4c01749dc5d4162ae59618ffc4859d7c.jpeg"
-        ],
-        "logo": [
-          "https://box464.com/assets/images/logo-box464.png"
-        ],
-        "category": [
-          "Coder,Dog Dad,Non-Profit Tech,.NET"
         ]
       }
     }
   ],
   "rels": {
+    "canonical": [
+      "https://box464.com/"
+    ],
+    "next": [
+      "https://box464.com/page2"
+    ],
     "apple-touch-icon": [
-      "https://box464.com/assets/images/favicons/apple-touch-icon.png"
+      "https://box464.com/assets/img/favicons/apple-touch-icon.png"
     ],
     "icon": [
-      "https://box464.com/assets/images/favicons/favicon-32x32.png",
-      "https://box464.com/assets/images/favicons/favicon-16x16.png",
-      "https://box464.com/assets/images/favicons/favicon.ico"
+      "https://box464.com/assets/img/favicons/favicon-32x32.png",
+      "https://box464.com/assets/img/favicons/favicon-16x16.png",
+      "https://box464.com/assets/img/favicons/favicon.ico"
     ],
     "manifest": [
-      "https://box464.com/assets/images/favicons/site.webmanifest"
-    ],
-    "mask-icon": [
-      "https://box464.com/assets/images/favicons/safari-pinned-tab.svg"
+      "https://box464.com/assets/img/favicons/site.webmanifest"
     ],
     "shortcut": [
-      "https://box464.com/assets/images/favicons/favicon.ico"
+      "https://box464.com/assets/img/favicons/favicon.ico"
+    ],
+    "mask-icon": [
+      "https://box464.com/assets/img/favicons/safari-pinned-tab.svg"
+    ],
+    "preconnect": [
+      "https://fonts.googleapis.com/",
+      "https://fonts.gstatic.com/",
+      "https://cdn.jsdelivr.net/",
+      "https://webmention.io/",
+      "ws://webmention.io:8080/"
+    ],
+    "dns-prefetch": [
+      "https://fonts.googleapis.com/",
+      "https://fonts.gstatic.com/",
+      "https://cdn.jsdelivr.net/",
+      "https://webmention.io/"
     ],
     "stylesheet": [
-      "https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css",
-      "https://box464.com/css/style.css",
-      "https://box464.com/css/jquery.mmenu.all.css",
-      "https://box464.com/css/highlightjs.piperita.css"
+      "https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro:wght@400;600;700;900&display=swap",
+      "https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css",
+      "https://box464.com/assets/css/style.css"
     ],
     "webmention": [
-      "https://webmention.io/box464.com/webmention"
+      "https://webmention.io/box464.com/webmention",
+      "https://webmention.io/box464/webmention"
     ],
     "pingback": [
-      "https://webmention.io/box464.com/xmlrpc"
+      "https://webmention.io/box464.com/xmlrpc",
+      "https://webmention.io/box464/xmlrpc"
+    ],
+    "authorization_endpoint": [
+      "https://indiekit.box464.com/auth"
+    ],
+    "token_endpoint": [
+      "https://indiekit.box464.com/auth/token"
+    ],
+    "micropub": [
+      "https://indiekit.box464.com/micropub"
     ],
     "pgpkey": [
       "https://keys.openpgp.org/pks/lookup?op=get&options=mr&search=0x135EC4BBAF5FA3B8EF306F7D31E738E17B73B201"
     ],
-    "authorization_endpoint": [
-      "https://box464-indiewebkit.onrender.com/auth"
-    ],
-    "token_endpoint": [
-      "https://box464-indiewebkit.onrender.com/auth/token"
-    ],
-    "micropub": [
-      "https://box464-indiewebkit.onrender.com/micropub"
-    ],
-    "canonical": [
-      "https://box464.com/"
-    ],
-    "dns-prefetch": [
-      "https://webmention.io/"
-    ],
-    "preconnect": [
-      "https://webmention.io/",
-      "ws://webmention.io:8080/"
-    ],
-    "me": [
-      "https://www.linkedin.com/in/jsikes/",
+    "noopener": [
       "https://github.com/jeffsikes",
       "https://mastodon.social/@box464",
-      "https://www.buymeacoffee.com/TxEg6CrmJW",
-      "https://botsin.space/@bot464",
-      "https://dotnet.social/@box464",
-      "https://moth.social/@box464",
-      "https://twitter.com/box464",
-      "https://dev.to/box464"
+      "https://framatube.org/w/9dRFC6Ya11NCVeYKn8ZhiD",
+      "https://indieweb.org/",
+      "https://dotnet.microsoft.com/en-us/learntocode",
+      "https://mastodon.social/@box464/tagged/dogsofmastodon",
+      "https://jekyllrb.com/",
+      "https://github.com/cotes2020/jekyll-theme-chirpy"
+    ],
+    "me": [
+      "https://mastodon.social/@box464",
+      "https://box464.com/about"
     ]
   },
   "rel-urls": {
-    "https://box464.com/assets/images/favicons/apple-touch-icon.png": {
+    "https://box464.com/": {
+      "rels": [
+        "canonical"
+      ]
+    },
+    "https://box464.com/page2": {
+      "rels": [
+        "next"
+      ]
+    },
+    "https://box464.com/assets/img/favicons/apple-touch-icon.png": {
       "rels": [
         "apple-touch-icon"
       ]
     },
-    "https://box464.com/assets/images/favicons/favicon-32x32.png": {
+    "https://box464.com/assets/img/favicons/favicon-32x32.png": {
       "rels": [
         "icon"
       ],
       "type": "image/png"
     },
-    "https://box464.com/assets/images/favicons/favicon-16x16.png": {
+    "https://box464.com/assets/img/favicons/favicon-16x16.png": {
       "rels": [
         "icon"
       ],
       "type": "image/png"
     },
-    "https://box464.com/assets/images/favicons/site.webmanifest": {
+    "https://box464.com/assets/img/favicons/site.webmanifest": {
       "rels": [
         "manifest"
       ]
     },
-    "https://box464.com/assets/images/favicons/safari-pinned-tab.svg": {
-      "rels": [
-        "mask-icon"
-      ]
-    },
-    "https://box464.com/assets/images/favicons/favicon.ico": {
+    "https://box464.com/assets/img/favicons/favicon.ico": {
       "rels": [
         "icon",
         "shortcut"
       ]
     },
-    "https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css": {
+    "https://box464.com/assets/img/favicons/safari-pinned-tab.svg": {
+      "rels": [
+        "mask-icon"
+      ]
+    },
+    "https://fonts.googleapis.com/": {
+      "rels": [
+        "preconnect"
+      ]
+    },
+    "https://fonts.gstatic.com/": {
+      "rels": [
+        "preconnect"
+      ]
+    },
+    "https://cdn.jsdelivr.net/": {
+      "rels": [
+        "preconnect"
+      ]
+    },
+    "https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro:wght@400;600;700;900&display=swap": {
       "rels": [
         "stylesheet"
       ]
     },
-    "https://box464.com/css/style.css": {
+    "https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css": {
       "rels": [
         "stylesheet"
-      ],
-      "media": "all",
-      "type": "text/css"
+      ]
     },
-    "https://box464.com/css/jquery.mmenu.all.css": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "all",
-      "type": "text/css"
-    },
-    "https://box464.com/css/highlightjs.piperita.css": {
+    "https://box464.com/assets/css/style.css": {
       "rels": [
         "stylesheet"
       ]
@@ -185,32 +187,6 @@
         "pingback"
       ]
     },
-    "https://keys.openpgp.org/pks/lookup?op=get&options=mr&search=0x135EC4BBAF5FA3B8EF306F7D31E738E17B73B201": {
-      "rels": [
-        "pgpkey"
-      ],
-      "type": "application/pgp-keys"
-    },
-    "https://box464-indiewebkit.onrender.com/auth": {
-      "rels": [
-        "authorization_endpoint"
-      ]
-    },
-    "https://box464-indiewebkit.onrender.com/auth/token": {
-      "rels": [
-        "token_endpoint"
-      ]
-    },
-    "https://box464-indiewebkit.onrender.com/micropub": {
-      "rels": [
-        "micropub"
-      ]
-    },
-    "https://box464.com/": {
-      "rels": [
-        "canonical"
-      ]
-    },
     "https://webmention.io/": {
       "rels": [
         "dns-prefetch"
@@ -221,55 +197,89 @@
         "preconnect"
       ]
     },
-    "https://www.linkedin.com/in/jsikes/": {
+    "https://webmention.io/box464/xmlrpc": {
       "rels": [
-        "me"
+        "pingback"
       ]
+    },
+    "https://webmention.io/box464/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://indiekit.box464.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://indiekit.box464.com/auth/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://indiekit.box464.com/micropub": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://keys.openpgp.org/pks/lookup?op=get&options=mr&search=0x135EC4BBAF5FA3B8EF306F7D31E738E17B73B201": {
+      "rels": [
+        "pgpkey"
+      ],
+      "type": "application/pgp-keys"
     },
     "https://github.com/jeffsikes": {
       "rels": [
-        "me"
+        "noopener"
       ]
     },
     "https://mastodon.social/@box464": {
       "rels": [
-        "me"
+        "me",
+        "noopener"
       ]
     },
-    "https://www.buymeacoffee.com/TxEg6CrmJW": {
+    "https://framatube.org/w/9dRFC6Ya11NCVeYKn8ZhiD": {
       "rels": [
-        "me"
-      ]
+        "noopener"
+      ],
+      "text": "Fediverse"
     },
-    "https://botsin.space/@bot464": {
+    "https://indieweb.org/": {
+      "rels": [
+        "noopener"
+      ],
+      "text": "IndieWeb community"
+    },
+    "https://dotnet.microsoft.com/en-us/learntocode": {
+      "rels": [
+        "noopener"
+      ],
+      "text": ".NET and other Microsoft technologies"
+    },
+    "https://mastodon.social/@box464/tagged/dogsofmastodon": {
+      "rels": [
+        "noopener"
+      ],
+      "text": "Discussions and photos of my dog"
+    },
+    "https://box464.com/about": {
       "rels": [
         "me"
       ],
-      "text": "Mastodon - Botsin.Space"
+      "text": "Jeff Sikes"
     },
-    "https://dotnet.social/@box464": {
+    "https://jekyllrb.com/": {
       "rels": [
-        "me"
+        "noopener"
       ],
-      "text": "Mastodon - DotNet.Social"
+      "text": "Jekyll"
     },
-    "https://moth.social/@box464": {
+    "https://github.com/cotes2020/jekyll-theme-chirpy": {
       "rels": [
-        "me"
+        "noopener"
       ],
-      "text": "Mastodon - Moth.Social"
-    },
-    "https://twitter.com/box464": {
-      "rels": [
-        "me"
-      ],
-      "text": "Twitter - box464"
-    },
-    "https://dev.to/box464": {
-      "rels": [
-        "me"
-      ],
-      "text": "Dev.To - box464"
+      "text": "Chirpy"
     }
   }
 }
