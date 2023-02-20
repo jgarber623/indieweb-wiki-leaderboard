@@ -56,6 +56,64 @@
               }
             ],
             "url": [
+              "https://chee.party/2023/02/19/week-07-23/",
+              "https://chee.party/2023/02/19/week-07-23/"
+            ],
+            "updated": [
+              "2023-02-19T12:27:00-06:00"
+            ],
+            "published": [
+              "2023-02-19T12:27:00-06:00"
+            ],
+            "name": [
+              "Week 07, ’23"
+            ],
+            "content": [
+              {
+                "html": "<p>Let’s see, let’s see…</p>\n<p>Got some good stuff finished at the coal mine. Had a little break-up. Have spent the whole weekend eating smoked mackerel, playing mario and writing emacs lisp. There was also a bath on Sunday.</p>\n<p>Becky Avery thinks it’s over for me. All vegetable curries and a water please thank-you from here on out. Maybe she’s right. Though I am planning on drinking an entire bottle of Patrón on March 2nd. Should probably take that day as annual leave.</p>\n<p>Light week, as has been the pattern so far this year. My days have been intense but it’s all work stuff and I have no interest in discussing it here.</p>\n<div id=\"outline-container-orgf0dffee\" class=\"outline-2\">\n<h2 id=\"orgf0dffee\"><a href=\"https://chee.party/#computer\">computer</a></h2>\n<div id=\"text-orgf0dffee\" class=\"outline-text-2\">\n<p>I spent most of Saturday writing hundreds of lines of lisp to make it so I can see my calendar events in Org and take notes on them that will not go away when the list is updated. Here’s what it does:</p>\n<ol class=\"org-ol\">\n<li>Grab my work calendar from the Google website</li>\n<li>Filter out anything that’s older or newer than 7 days from today</li>\n<li>Open up the .org file and store all the current event IDs (as <code>current-event-ids</code>)</li>\n<li>Go through the events from the Google calendar and a. if they exist: update their details (time, video-call, link) b. if they don’t: create them (adding their meeting description in a quote block)</li>\n<li>Compare the IDs from the calendar with the <code>current-event-ids</code>\n</li>\n<li>Archive any events that were not in the calendar</li>\n</ol>\n<p>This way it keeps all my old notes using Org’s normal archive functions, and my current notes appear alongside the meeting when I look at it in the agenda or on Beorg on my telephone. It’s great. It even converts Google Calendar’s html into Org syntax. lol. haha.</p>\n<figure id=\"org07332db\"><img decoding=\"async\" class=\"alignnone\" title=\"ligam-zaheq-daqar.png\" src=\"https://ebbdkqihzfu.exactdn.com/wp-content/uploads/2023/02/ligam-zaheq-daqar.png?strip=all&amp;lossy=1&amp;resize=670%2C730&amp;ssl=1\" alt=\"screenshot of an org-mode meeting at describe above. shows the properties of the meeting as org-mode properties, the meeting notes and my personal notes on the meeting.\" width=\"786\" height=\"856\" data-popupalt-original-title=\"null\"><figcaption><span class=\"figure-number\">Figure 1: </span>✅ CANCELLED</figcaption></figure>\n</div>\n</div>\n<div id=\"outline-container-org263d18e\" class=\"outline-2\">\n<h2 id=\"org263d18e\"><a href=\"https://chee.party/#ok\">ok</a></h2>\n<div id=\"text-org263d18e\" class=\"outline-text-2\">\n<p>Anyway i’m handling the inevitable end of that relationship by writing emacs lisp. I haven’t eaten today. I’ll go for a walk.</p>\n<p>good bye</p>\n</div>\n</div>",
+                "value": "Let’s see, let’s see…\nGot some good stuff finished at the coal mine. Had a little break-up. Have spent the whole weekend eating smoked mackerel, playing mario and writing emacs lisp. There was also a bath on Sunday.\nBecky Avery thinks it’s over for me. All vegetable curries and a water please thank-you from here on out. Maybe she’s right. Though I am planning on drinking an entire bottle of Patrón on March 2nd. Should probably take that day as annual leave.\nLight week, as has been the pattern so far this year. My days have been intense but it’s all work stuff and I have no interest in discussing it here.\n\ncomputer\n\nI spent most of Saturday writing hundreds of lines of lisp to make it so I can see my calendar events in Org and take notes on them that will not go away when the list is updated. Here’s what it does:\n\nGrab my work calendar from the Google website\nFilter out anything that’s older or newer than 7 days from today\nOpen up the .org file and store all the current event IDs (as current-event-ids)\nGo through the events from the Google calendar and a. if they exist: update their details (time, video-call, link) b. if they don’t: create them (adding their meeting description in a quote block)\nCompare the IDs from the calendar with the current-event-ids\nArchive any events that were not in the calendar\n\nThis way it keeps all my old notes using Org’s normal archive functions, and my current notes appear alongside the meeting when I look at it in the agenda or on Beorg on my telephone. It’s great. It even converts Google Calendar’s html into Org syntax. lol. haha.\n screenshot of an org-mode meeting at describe above. shows the properties of the meeting as org-mode properties, the meeting notes and my personal notes on the meeting. Figure 1: ✅ CANCELLED\n\n\n\nok\n\nAnyway i’m handling the inevitable end of that relationship by writing emacs lisp. I haven’t eaten today. I’ll go for a walk.\ngood bye"
+              }
+            ],
+            "category": [
+              "weekly"
+            ]
+          },
+          "id": "post-5249"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "url": [
+                    "https://chee.party/chee-rabbits"
+                  ],
+                  "uid": [
+                    "https://chee.party/chee-rabbits"
+                  ],
+                  "photo": [
+                    {
+                      "value": "https://secure.gravatar.com/avatar/5eafdabd822ad2048be8c301660854af?s=90&r=x",
+                      "srcset": {
+                        "2x": "https://secure.gravatar.com/avatar/5eafdabd822ad2048be8c301660854af?s=180&r=x"
+                      },
+                      "alt": ""
+                    }
+                  ],
+                  "name": [
+                    "chee"
+                  ]
+                },
+                "value": "chee"
+              }
+            ],
+            "url": [
               "https://chee.party/2023/02/17/thats-that-then/",
               "https://chee.party/2023/02/17/thats-that-then/"
             ],
@@ -305,64 +363,6 @@
             ]
           },
           "id": "post-5202"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "url": [
-                    "https://chee.party/chee-rabbits"
-                  ],
-                  "uid": [
-                    "https://chee.party/chee-rabbits"
-                  ],
-                  "photo": [
-                    {
-                      "value": "https://secure.gravatar.com/avatar/5eafdabd822ad2048be8c301660854af?s=90&r=x",
-                      "srcset": {
-                        "2x": "https://secure.gravatar.com/avatar/5eafdabd822ad2048be8c301660854af?s=180&r=x"
-                      },
-                      "alt": ""
-                    }
-                  ],
-                  "name": [
-                    "chee"
-                  ]
-                },
-                "value": "chee"
-              }
-            ],
-            "url": [
-              "https://chee.party/2023/01/16/5198/",
-              "https://chee.party/2023/01/16/5198/"
-            ],
-            "updated": [
-              "2023-01-16T11:49:12-06:00"
-            ],
-            "published": [
-              "2023-01-16T11:49:12-06:00"
-            ],
-            "name": [
-              "“is it 2 player?”“Yes. you play as the hat"
-            ],
-            "content": [
-              {
-                "html": "<p>“is it 2 player?”<br>“Yes. you play as the hat</p>",
-                "value": "“is it 2 player?”“Yes. you play as the hat"
-              }
-            ],
-            "category": [
-              "magicktitle"
-            ]
-          },
-          "id": "post-5198"
         }
       ]
     }
@@ -413,7 +413,7 @@
       "https://ebbdkqihzfu.exactdn.com/wp-includes/wlwmanifest.xml"
     ],
     "shortlink": [
-      "https://chee.party/2023/02/17/thats-that-then/"
+      "https://chee.party/2023/02/19/week-07-23/"
     ],
     "authorization_endpoint": [
       "https://chee.party/wp-json/indieauth/1.0/auth"
@@ -453,16 +453,16 @@
       "https://chee.party/chee-rabbits"
     ],
     "bookmark": [
+      "https://chee.party/2023/02/19/week-07-23/",
       "https://chee.party/2023/02/17/thats-that-then/",
       "https://chee.party/2023/02/12/5218/",
       "https://chee.party/2023/02/05/week-five-23/",
       "https://chee.party/2023/01/29/4th-week-23/",
-      "https://chee.party/2023/01/23/week-the-third-year-twenty-three/",
-      "https://chee.party/2023/01/16/5198/"
+      "https://chee.party/2023/01/23/week-the-third-year-twenty-three/"
     ],
     "tag": [
-      "https://chee.party/tag/magicktitle",
-      "https://chee.party/tag/weekly"
+      "https://chee.party/tag/weekly",
+      "https://chee.party/tag/magicktitle"
     ],
     "dct:publisher": [
       "https://chee.party/"
@@ -595,7 +595,7 @@
       ],
       "type": "application/wlwmanifest+xml"
     },
-    "https://chee.party/2023/02/17/thats-that-then/": {
+    "https://chee.party/2023/02/19/week-07-23/": {
       "rels": [
         "shortlink"
       ]
@@ -679,6 +679,19 @@
       "title": "View info about chee",
       "text": "chee"
     },
+    "https://chee.party/tag/weekly": {
+      "rels": [
+        "tag"
+      ],
+      "text": "weekly"
+    },
+    "https://chee.party/2023/02/17/thats-that-then/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Friday the 17th of February 2023 at 4:56pm CST",
+      "text": "23/2/17 4:56pm CST"
+    },
     "https://chee.party/tag/magicktitle": {
       "rels": [
         "tag"
@@ -706,25 +719,12 @@
       "title": "Sunday the 29th of January 2023 at 11:37am CST",
       "text": "23/1/29 11:37am CST"
     },
-    "https://chee.party/tag/weekly": {
-      "rels": [
-        "tag"
-      ],
-      "text": "weekly"
-    },
     "https://chee.party/2023/01/23/week-the-third-year-twenty-three/": {
       "rels": [
         "bookmark"
       ],
       "title": "Monday the 23rd of January 2023 at 5:22am CST",
       "text": "23/1/23 5:22am CST"
-    },
-    "https://chee.party/2023/01/16/5198/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Monday the 16th of January 2023 at 11:49am CST",
-      "text": "23/1/16 11:49am CST"
     },
     "https://creativecommons.org/publicdomain/zero/1.0/": {
       "rels": [
