@@ -59,11 +59,11 @@
     "https://api.w.org/": [
       "https://shawfactor.com/wp-json/"
     ],
-    "EditURI": [
-      "https://shawfactor.com/xmlrpc.php?rsd"
-    ],
     "wlwmanifest": [
       "https://shawfactor.com/wp-includes/wlwmanifest.xml"
+    ],
+    "EditURI": [
+      "https://shawfactor.com/xmlrpc_lh.php?rsd"
     ],
     "authorization_endpoint": [
       "https://shawfactor.com/wp-json/indieauth/1.0/auth"
@@ -374,18 +374,18 @@
         "https://api.w.org/"
       ]
     },
-    "https://shawfactor.com/xmlrpc.php?rsd": {
-      "rels": [
-        "EditURI"
-      ],
-      "title": "RSD",
-      "type": "application/rsd+xml"
-    },
     "https://shawfactor.com/wp-includes/wlwmanifest.xml": {
       "rels": [
         "wlwmanifest"
       ],
       "type": "application/wlwmanifest+xml"
+    },
+    "https://shawfactor.com/xmlrpc_lh.php?rsd": {
+      "rels": [
+        "EditURI"
+      ],
+      "title": "RSD",
+      "type": "application/rsd+xml"
     },
     "https://shawfactor.com/wp-json/tribe/events/v1/": {
       "rels": [

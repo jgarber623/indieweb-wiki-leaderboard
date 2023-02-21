@@ -23,12 +23,15 @@
       "https://davidpeach.co.uk/wp-includes/wlwmanifest.xml"
     ],
     "category": [
+      "https://davidpeach.co.uk/category/journal/",
       "https://davidpeach.co.uk/category/programming/",
       "https://davidpeach.co.uk/category/uncategorised/",
-      "https://davidpeach.co.uk/category/journal/",
       "https://davidpeach.co.uk/category/uncategorized/"
     ],
     "tag": [
+      "https://davidpeach.co.uk/category/journal/",
+      "https://davidpeach.co.uk/tag/the-last-of-us/",
+      "https://davidpeach.co.uk/tag/tv/",
       "https://davidpeach.co.uk/category/programming/",
       "https://davidpeach.co.uk/tag/laravel-2/",
       "https://davidpeach.co.uk/tag/laravel-inventory-app/",
@@ -52,7 +55,6 @@
       "https://davidpeach.co.uk/tag/larastan/",
       "https://davidpeach.co.uk/tag/laravel-pint/",
       "https://davidpeach.co.uk/tag/xdebug/",
-      "https://davidpeach.co.uk/category/journal/",
       "https://davidpeach.co.uk/category/uncategorized/",
       "https://davidpeach.co.uk/tag/my-website/",
       "https://davidpeach.co.uk/tag/theweb/",
@@ -61,9 +63,7 @@
       "https://davidpeach.co.uk/tag/bowling/",
       "https://davidpeach.co.uk/tag/jump24/",
       "https://davidpeach.co.uk/tag/psalm/",
-      "https://davidpeach.co.uk/tag/static-analysis/",
-      "https://davidpeach.co.uk/tag/mariadb/",
-      "https://davidpeach.co.uk/tag/mysql/"
+      "https://davidpeach.co.uk/tag/static-analysis/"
     ]
   },
   "rel-urls": {
@@ -134,6 +134,25 @@
         "wlwmanifest"
       ],
       "type": "application/wlwmanifest+xml"
+    },
+    "https://davidpeach.co.uk/category/journal/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Journal"
+    },
+    "https://davidpeach.co.uk/tag/the-last-of-us/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "The Last of Us"
+    },
+    "https://davidpeach.co.uk/tag/tv/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "TV"
     },
     "https://davidpeach.co.uk/category/programming/": {
       "rels": [
@@ -275,13 +294,6 @@
       ],
       "text": "Xdebug"
     },
-    "https://davidpeach.co.uk/category/journal/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "Journal"
-    },
     "https://davidpeach.co.uk/category/uncategorized/": {
       "rels": [
         "category",
@@ -336,18 +348,6 @@
         "tag"
       ],
       "text": "static analysis"
-    },
-    "https://davidpeach.co.uk/tag/mariadb/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "mariadb"
-    },
-    "https://davidpeach.co.uk/tag/mysql/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "mysql"
     }
   }
 }
