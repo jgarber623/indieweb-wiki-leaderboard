@@ -1,9 +1,9 @@
 {
   "items": [],
   "rels": {
-    "stylesheet": [
-      "https://zackfern.me/reset.css",
-      "https://zackfern.me/style.css"
+    "alternate": [
+      "https://zackfern.me/index.xml",
+      "https://zackfern.me/feed.json"
     ],
     "me": [
       "https://xoxo.zone/@zackfern",
@@ -17,15 +17,19 @@
     ]
   },
   "rel-urls": {
-    "https://zackfern.me/reset.css": {
+    "https://zackfern.me/index.xml": {
       "rels": [
-        "stylesheet"
-      ]
+        "alternate"
+      ],
+      "title": "zackfern",
+      "type": "application/atom+xml"
     },
-    "https://zackfern.me/style.css": {
+    "https://zackfern.me/feed.json": {
       "rels": [
-        "stylesheet"
-      ]
+        "alternate"
+      ],
+      "title": "zackfern",
+      "type": "application/json"
     },
     "https://xoxo.zone/@zackfern": {
       "rels": [

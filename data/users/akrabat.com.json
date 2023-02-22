@@ -6,6 +6,17 @@
       ],
       "properties": {
         "name": [
+          "PHPUK 2023\n                                \n                    I have just returned from the 2023 edition of PHPUK and, as always, found it a valuable conference to catch up with the PHP community and find out what’s happening in the ecosystem. This year, I was accepted to speak on the differences between RPC, REST and GraphQL APIs and was surprised and gratified that the room was at full capacity. Thank you to everyone that attended; I hope that you learnt something useful. I… continue reading.\n                    Posted on\n                            21 February 2023                            in Conferences, PHP\n\n                                                    \n                                Leave a comment"
+        ]
+      },
+      "id": "post-6530"
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
           "Successful SOC 2 Type II compliance\n                                \n                    A very big part of my work at Covie for the last year has been putting in place the processes required for to achieve SOC 2 Type II compliance. This standard by the AICPA is all about an organisation's security, availability, processing integrity, privacy and confidentiality controls and processes. It's a comprehensive set of requirements covering our product's and organisation's security. Essentially, it shows that the company's processes and systems are designed to keep the… continue reading.\n                    Posted on\n                            13 February 2023                            in Compliance\n\n                                                    \n                                Leave a comment"
         ]
       },
@@ -98,17 +109,6 @@
         ]
       },
       "id": "post-6432"
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "name": [
-          "Quick script to (re)create my python virtualenv\n                                \n                    When working on rst2pdf, I use pyenv as I've written about before. Recently, I've found myself needing to recreate virtualenvs for various Python versions and then recreate them to easily reset the list of packages installed into them via pip. To my my life easier, I created a script that I can run from the command line: $ newenv rst2pdf-dev-py3.9 3.9.5 This creates a new virtualenv called rst2pdf-dev-py3.9 from Python version 3.9.5, upgrade pip and… continue reading.\n                    Posted on\n                            8 September 2021                            in Development, Python\n\n                                                    \n                                Leave a comment"
-        ]
-      },
-      "id": "post-6413"
     }
   ],
   "rels": {
@@ -149,6 +149,7 @@
       "https://akrabat.com/@rob"
     ],
     "bookmark": [
+      "https://akrabat.com/phpuk-2023/",
       "https://akrabat.com/successful-soc-2-type-ii-compliance/",
       "https://akrabat.com/2022-in-pictures/",
       "https://akrabat.com/only-display-body-on-error-with-curl/",
@@ -157,34 +158,33 @@
       "https://akrabat.com/bbedit-hosts-file-syntax-highlighting/",
       "https://akrabat.com/background-images-in-rst2pdf-0-99/",
       "https://akrabat.com/2021-in-pictures/",
-      "https://akrabat.com/add-touchid-authentication-to-sudo/",
-      "https://akrabat.com/quick-script-to-recreate-my-python-virtualenv/"
+      "https://akrabat.com/add-touchid-authentication-to-sudo/"
     ],
     "category": [
+      "https://akrabat.com/category/conferences/",
+      "https://akrabat.com/category/php/",
       "https://akrabat.com/category/compliance/",
       "https://akrabat.com/category/me/",
       "https://akrabat.com/category/photography/",
       "https://akrabat.com/category/year-in-pictures/",
       "https://akrabat.com/category/development/",
       "https://akrabat.com/category/web/",
-      "https://akrabat.com/category/php/",
       "https://akrabat.com/category/software/",
       "https://akrabat.com/category/rst2pdf/",
-      "https://akrabat.com/category/computing/",
-      "https://akrabat.com/category/python/"
+      "https://akrabat.com/category/computing/"
     ],
     "tag": [
+      "https://akrabat.com/category/conferences/",
+      "https://akrabat.com/category/php/",
       "https://akrabat.com/category/compliance/",
       "https://akrabat.com/category/me/",
       "https://akrabat.com/category/photography/",
       "https://akrabat.com/category/year-in-pictures/",
       "https://akrabat.com/category/development/",
       "https://akrabat.com/category/web/",
-      "https://akrabat.com/category/php/",
       "https://akrabat.com/category/software/",
       "https://akrabat.com/category/rst2pdf/",
-      "https://akrabat.com/category/computing/",
-      "https://akrabat.com/category/python/"
+      "https://akrabat.com/category/computing/"
     ]
   },
   "rel-urls": {
@@ -317,6 +317,26 @@
         "me"
       ]
     },
+    "https://akrabat.com/phpuk-2023/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "PHPUK 2023"
+    },
+    "https://akrabat.com/category/conferences/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Conferences"
+    },
+    "https://akrabat.com/category/php/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "PHP"
+    },
     "https://akrabat.com/successful-soc-2-type-ii-compliance/": {
       "rels": [
         "bookmark"
@@ -389,13 +409,6 @@
       ],
       "text": "Installing Xdebug on PHP 8.1 installed with Homebrew"
     },
-    "https://akrabat.com/category/php/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "PHP"
-    },
     "https://akrabat.com/category/software/": {
       "rels": [
         "category",
@@ -440,19 +453,6 @@
         "tag"
       ],
       "text": "Computing"
-    },
-    "https://akrabat.com/quick-script-to-recreate-my-python-virtualenv/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Quick script to (re)create my python virtualenv"
-    },
-    "https://akrabat.com/category/python/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "Python"
     }
   }
 }

@@ -46,6 +46,168 @@
                   "photo": [
                     {
                       "value": "https://social.thej.in/static/thej128.png",
+                      "alt": ""
+                    }
+                  ],
+                  "url": [
+                    "https://social.thej.in/"
+                  ]
+                },
+                "value": "Thejesh GN"
+              }
+            ],
+            "repost-of": [
+              {
+                "type": [
+                  "h-cite"
+                ],
+                "properties": {
+                  "author": [
+                    {
+                      "type": [
+                        "h-card"
+                      ],
+                      "properties": {
+                        "photo": [
+                          {
+                            "value": "https://social.thej.in/proxy/media/19417/t1PYKqHrNg8z8Zk1l8JDq-CVzbjDKg2UB5HlPK_wwWs=/aHR0cHM6Ly90YW50ZWsuY29tL3Bob3RvLmpwZw==/50",
+                            "alt": "Tantek Çelik's avatar"
+                          }
+                        ],
+                        "url": [
+                          "['https://fed.brid.gy/r/https://tantek.com/', 'https://micro.blog/t', 'https://instagram.com/tantek/', 'https://twitter.com/intent/user?screen_name=t', 'https://github.com/tantek', 'https://indieweb.org/User:Tantek.com', 'https://en.wikipedia.org/wiki/User:Tantek']"
+                        ],
+                        "name": [
+                          "@tantek.com@fed.brid.gy"
+                        ]
+                      },
+                      "value": "@tantek.com@fed.brid.gy"
+                    }
+                  ],
+                  "content": [
+                    {
+                      "html": "Five years ago last Monday, the <a href=\"https://twitter.com/W3C\">@W3C</a> Social Web Working Group officially closed<a href=\"https://social.thej.in/#t5PU1_note-1\">¹</a>.<br><br>Operating for less than four years, it standardized several foundations of the #<span>fediverse</span> &amp; #<span>IndieWeb:</span><br><br>#<span>Webmention</span><br>#<span>Micropub</span><br>#<span>ActivityStreams2</span><br>#<span>ActivityPub</span><br><br>Each of these has numerous interoperable implementations which are in active use by anywhere from thousands to millions of users.<br><br>Two additional specifications also had several implementations as of the time of their publication as a W3C Recommendations (which you can find from the Implementation Report linked near the top of each spec). However today they’re both fairly invisible \"plumbing\" (as most specs should be) or they haven’t picked up widespread use like the others:<br><br>#<span>LinkedDataNotifications</span> (LDN)<br>#<span>WebSub</span><br><br>To be fair, LDN was only one building block in what eventually became SoLiD<a href=\"https://social.thej.in/#t5PU1_note-2\">²</a>, the basis of Tim Berners–Lee’s startup Inrupt.<br><br>However, in the post Elon-acquisition of Twitter and subsequent Twexodus, as Anil Dash noted<a href=\"https://social.thej.in/#t5PU1_note-3\">³</a>, “nobody ran to the ’web3’ platforms”, and nobody ran to SoLiD either.<br><br>The other spec, WebSub, was roughly interoperably implemented as PubSubHubbub before it was brought to the Social Web Working Group. Yet despite that implementation experience, a more rigorous specification that fixed a lot of bugs, and a test suite<a href=\"https://social.thej.in/#t5PU1_note-4\">⁴</a>, WebSub’s adoption hasn’t really noticeably grown since. Existing implementations &amp; services are still functioning though. My own blog supports WebSub notifications for example, for anyone that wants to receive/read my posts in real time.<br><br><br>One of the biggest challenges the Social Web Working Group faced was with so many approaches being brought to the group, which approach should we choose?<br><br>As one of the co-chairs of the group, with the other co-chairs, and our staff contacts over time, we realized that if we as chairs &amp; facilitators tried to pick any one approach, we would almost certainly alienate and lose more than half of the working group who had already built or were actively interested in developing other approaches.<br><br>We (as chairs) decided to do something which very few standards groups do, and for that matter, have ever done successfully.<br><br>From 15+ different approaches, or projects, or efforts that were brought<a href=\"https://social.thej.in/#t5PU1_note-5\">⁵</a> to the working group, we narrowed them down to about 2.5 which I can summarize as:<br><br>1. #<span>IndieWeb</span> building blocks, many of which were already implemented, deployed, and showing rough interoperability across numerous independent websites<br><br>2. ActivityStreams based approaches, which also demonstrated implementability, interoperability, and real user value as part of the OStatus suite, implemented in StatusNet, Identica, etc.<br><br>2.5 \"something with Linked Data (LD)\" — expressed as a 0.5 because there wasn’t anything user-visible “social web” with LD working at the start of the Working Group, however there was a very passionate set of participants insisting that everything be done with RDF/LD, despite the fact that it was less of a proven social web approach than the other two.<br><br><br>As chairs we figured out that if we were able to help facilitate the development of these 2.5 approaches in parallel, nearly everyone who was active in the Working Group would have something they would feel like they could direct their positive energy into, instead of spending time fighting or tearing down someone else’s approach.<br><br>It was a very difficult social-technical balance to maintain, and we hit more than a few bumps along the way. However we also had many moments of alignment, where two (or all) of the various approaches found common problems, and either identical or at least compatible solutions.<br><br>I saw many examples where the discoveries of one approach helped inform and improve another approach. Developing more than one approach in the same working group was not only possible, it actually worked.<br><br>I also saw examples of different problems being solved by different approaches, and I found that aspect particularly fascinating and hopeful. Multiple approaches were able to choose &amp; priortize different subsets of social web use-cases and problems to solve from the larger space of decentralized social web challenges. By doing so, different approaches often explored and mapped out different areas of the larger social web space.<br><br>I’m still a bit amazed we were able to complete all of those Recommendations in less than four years, and everyone who participated in the working group should be proud of that accomplishment, beyond any one specification they may have worked on.<br><br>With hindsight, we can see the positive practical benefits from allowing &amp; facilitating multiple approaches to move forward. Today there is both a very healthy &amp; growing set of folks who want simple personal sites to do with as they please (#IndieWeb), and we also have a growing network of Mastodon instances and other software &amp; services that interoperate with them, like Bridgy Fed<a href=\"https://social.thej.in/#t5PU1_note-6\">⁶</a>. <br><br>Millions of users are posting &amp; interacting with each other daily, without depending on any large central corporate site or service, whether on their own personal domain &amp; site they fully control, or with an account on a trusted community server, using different software &amp; services.<br><br>Choosing to go from 15+ down to 2.5, but not down to 1 approach turned out to be the right answer, to both allow a wide variety<a href=\"https://social.thej.in/#t5PU1_note-7\">⁷</a> of decentralized social web efforts to grow, interoperate via bridges, and frankly, socially to provide something positive for everyone to contribute to, instead of wasting weeks, possibly months in heated debates about which one approach was the one true way.<br><br>There’s lots more to be written about the history of the Social Web Working Group, which perhaps I will do some day.<br><br>For now, if you’re curious for more, I strongly recommend diving into the group’s wiki <a href=\"https://www.w3.org/wiki/Socialwg\">https://www.w3.org/wiki/Socialwg</a> and its subpages for more historical details. All the minutes of our meetings are there. All the research we conducted is there.<br><br>If you’re interested in contributing to the specifications we developed, find the place where that work is being done, the people actively implementing those specs, and even better, actively using their own implementations<a href=\"https://social.thej.in/#t5PU1_note-8\">⁸</a>.<br><br>You can find the various IndieWeb building blocks living specifications here:<br>* <a href=\"https://spec.indieweb.org/\">https://spec.indieweb.org/</a><br>And discussions thereof in the development chat channel:<br>* <a href=\"https://chat.indieweb.org/dev\">https://chat.indieweb.org/dev</a><br><br>If you’re not sure, pop by the indieweb-dev chat and ask anyway!<br><br>The IndieWeb community has grown only larger and more diverse in approaches &amp; implementations in the past five years, and we regularly have discussions about most of the specifications that were developed in the Social Web Working Group.<br><br><br>This is day 33 of #<span>100DaysOfIndieWeb</span> #<span>100Days</span><br><br>← Day 32: <a href=\"https://tantek.com/2023/047/t1/nineteen-years-microformats\">https://tantek.com/2023/047/t1/nineteen-years-microformats</a><br>→ 🔮<br><br><br>Post Glossary:<br><br>ActivityPub<br> <a href=\"https://www.w3.org/TR/activitypub/\">https://www.w3.org/TR/activitypub/</a> <br>ActivityStreams2<br> <a href=\"https://www.w3.org/TR/activitystreams-core/\">https://www.w3.org/TR/activitystreams-core/</a><br> <a href=\"https://www.w3.org/TR/activitystreams-vocabulary/\">https://www.w3.org/TR/activitystreams-vocabulary/</a><br>Linked Data Notifications<br> <a href=\"https://www.w3.org/TR/ldn/\">https://www.w3.org/TR/ldn/</a><br>Micropub<br> <a href=\"https://micropub.spec.indieweb.org/\">https://micropub.spec.indieweb.org/</a><br>Webmention<br> <a href=\"https://webmention.net/draft/\">https://webmention.net/draft/</a><br>WebSub<br> <a href=\"https://www.w3.org/TR/websub/\">https://www.w3.org/TR/websub/</a><br><br><br>References:<br><a href=\"https://social.thej.in/#t5PU1_ref-1\">¹</a> <a href=\"https://www.w3.org/wiki/Socialwg\">https://www.w3.org/wiki/Socialwg</a><br><a href=\"https://social.thej.in/#t5PU1_ref-2\">²</a> <a href=\"https://www.w3.org/wiki/Socialwg/2015-03-18-minutes#solid\">https://www.w3.org/wiki/Socialwg/2015-03-18-minutes#solid</a><br><a href=\"https://social.thej.in/#t5PU1_ref-3\">³</a> <a href=\"https://mastodon.cloud/@anildash/109299991009836007\">https://mastodon.cloud/@anildash/109299991009836007</a><br><a href=\"https://social.thej.in/#t5PU1_ref-4\">⁴</a> <a href=\"https://websub.rocks/\">https://websub.rocks/</a><br><a href=\"https://social.thej.in/#t5PU1_ref-5\">⁵</a> <a href=\"https://indieweb.org/Social_Web_Working_Group#History\">https://indieweb.org/Social_Web_Working_Group#History</a><br><a href=\"https://social.thej.in/#t5PU1_ref-6\">⁶</a> <a href=\"https://tantek.com/2023/008/t7/bridgy-indieweb-posse-backfeed\">https://tantek.com/2023/008/t7/bridgy-indieweb-posse-backfeed</a><br><a href=\"https://social.thej.in/#t5PU1_ref-7\">⁷</a> <a href=\"https://indieweb.org/plurality\">https://indieweb.org/plurality</a><br><a href=\"https://social.thej.in/#t5PU1_ref-8\">⁸</a> <a href=\"https://indieweb.org/use_what_you_make\">https://indieweb.org/use_what_you_make</a>",
+                      "value": "Five years ago last Monday, the @W3C Social Web Working Group officially closed¹.Operating for less than four years, it standardized several foundations of the #fediverse & #IndieWeb:#Webmention#Micropub#ActivityStreams2#ActivityPubEach of these has numerous interoperable implementations which are in active use by anywhere from thousands to millions of users.Two additional specifications also had several implementations as of the time of their publication as a W3C Recommendations (which you can find from the Implementation Report linked near the top of each spec). However today they’re both fairly invisible \"plumbing\" (as most specs should be) or they haven’t picked up widespread use like the others:#LinkedDataNotifications (LDN)#WebSubTo be fair, LDN was only one building block in what eventually became SoLiD², the basis of Tim Berners–Lee’s startup Inrupt.However, in the post Elon-acquisition of Twitter and subsequent Twexodus, as Anil Dash noted³, “nobody ran to the ’web3’ platforms”, and nobody ran to SoLiD either.The other spec, WebSub, was roughly interoperably implemented as PubSubHubbub before it was brought to the Social Web Working Group. Yet despite that implementation experience, a more rigorous specification that fixed a lot of bugs, and a test suite⁴, WebSub’s adoption hasn’t really noticeably grown since. Existing implementations & services are still functioning though. My own blog supports WebSub notifications for example, for anyone that wants to receive/read my posts in real time.One of the biggest challenges the Social Web Working Group faced was with so many approaches being brought to the group, which approach should we choose?As one of the co-chairs of the group, with the other co-chairs, and our staff contacts over time, we realized that if we as chairs & facilitators tried to pick any one approach, we would almost certainly alienate and lose more than half of the working group who had already built or were actively interested in developing other approaches.We (as chairs) decided to do something which very few standards groups do, and for that matter, have ever done successfully.From 15+ different approaches, or projects, or efforts that were brought⁵ to the working group, we narrowed them down to about 2.5 which I can summarize as:1. #IndieWeb building blocks, many of which were already implemented, deployed, and showing rough interoperability across numerous independent websites2. ActivityStreams based approaches, which also demonstrated implementability, interoperability, and real user value as part of the OStatus suite, implemented in StatusNet, Identica, etc.2.5 \"something with Linked Data (LD)\" — expressed as a 0.5 because there wasn’t anything user-visible “social web” with LD working at the start of the Working Group, however there was a very passionate set of participants insisting that everything be done with RDF/LD, despite the fact that it was less of a proven social web approach than the other two.As chairs we figured out that if we were able to help facilitate the development of these 2.5 approaches in parallel, nearly everyone who was active in the Working Group would have something they would feel like they could direct their positive energy into, instead of spending time fighting or tearing down someone else’s approach.It was a very difficult social-technical balance to maintain, and we hit more than a few bumps along the way. However we also had many moments of alignment, where two (or all) of the various approaches found common problems, and either identical or at least compatible solutions.I saw many examples where the discoveries of one approach helped inform and improve another approach. Developing more than one approach in the same working group was not only possible, it actually worked.I also saw examples of different problems being solved by different approaches, and I found that aspect particularly fascinating and hopeful. Multiple approaches were able to choose & priortize different subsets of social web use-cases and problems to solve from the larger space of decentralized social web challenges. By doing so, different approaches often explored and mapped out different areas of the larger social web space.I’m still a bit amazed we were able to complete all of those Recommendations in less than four years, and everyone who participated in the working group should be proud of that accomplishment, beyond any one specification they may have worked on.With hindsight, we can see the positive practical benefits from allowing & facilitating multiple approaches to move forward. Today there is both a very healthy & growing set of folks who want simple personal sites to do with as they please (#IndieWeb), and we also have a growing network of Mastodon instances and other software & services that interoperate with them, like Bridgy Fed⁶. Millions of users are posting & interacting with each other daily, without depending on any large central corporate site or service, whether on their own personal domain & site they fully control, or with an account on a trusted community server, using different software & services.Choosing to go from 15+ down to 2.5, but not down to 1 approach turned out to be the right answer, to both allow a wide variety⁷ of decentralized social web efforts to grow, interoperate via bridges, and frankly, socially to provide something positive for everyone to contribute to, instead of wasting weeks, possibly months in heated debates about which one approach was the one true way.There’s lots more to be written about the history of the Social Web Working Group, which perhaps I will do some day.For now, if you’re curious for more, I strongly recommend diving into the group’s wiki https://www.w3.org/wiki/Socialwg and its subpages for more historical details. All the minutes of our meetings are there. All the research we conducted is there.If you’re interested in contributing to the specifications we developed, find the place where that work is being done, the people actively implementing those specs, and even better, actively using their own implementations⁸.You can find the various IndieWeb building blocks living specifications here:* https://spec.indieweb.org/And discussions thereof in the development chat channel:* https://chat.indieweb.org/devIf you’re not sure, pop by the indieweb-dev chat and ask anyway!The IndieWeb community has grown only larger and more diverse in approaches & implementations in the past five years, and we regularly have discussions about most of the specifications that were developed in the Social Web Working Group.This is day 33 of #100DaysOfIndieWeb #100Days← Day 32: https://tantek.com/2023/047/t1/nineteen-years-microformats→ 🔮Post Glossary:ActivityPub https://www.w3.org/TR/activitypub/ ActivityStreams2 https://www.w3.org/TR/activitystreams-core/ https://www.w3.org/TR/activitystreams-vocabulary/Linked Data Notifications https://www.w3.org/TR/ldn/Micropub https://micropub.spec.indieweb.org/Webmention https://webmention.net/draft/WebSub https://www.w3.org/TR/websub/References:¹ https://www.w3.org/wiki/Socialwg² https://www.w3.org/wiki/Socialwg/2015-03-18-minutes#solid³ https://mastodon.cloud/@anildash/109299991009836007⁴ https://websub.rocks/⁵ https://indieweb.org/Social_Web_Working_Group#History⁶ https://tantek.com/2023/008/t7/bridgy-indieweb-posse-backfeed⁷ https://indieweb.org/plurality⁸ https://indieweb.org/use_what_you_make"
+                    }
+                  ],
+                  "url": [
+                    "https://fed.brid.gy/r/https://tantek.com/2023/051/t1/five-years-ago-w3c-social-web"
+                  ],
+                  "uid": [
+                    "https://fed.brid.gy/r/https://tantek.com/2023/051/t1/five-years-ago-w3c-social-web"
+                  ],
+                  "published": [
+                    "2023-02-21T03:16:00"
+                  ]
+                },
+                "value": "https://fed.brid.gy/r/https://tantek.com/2023/051/t1/five-years-ago-w3c-social-web"
+              }
+            ]
+          },
+          "id": "permalink-b5990e2df58465bb651c383d94280f42"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "photo": [
+                    {
+                      "value": "https://social.thej.in/static/thej128.png",
+                      "alt": ""
+                    }
+                  ],
+                  "url": [
+                    "https://social.thej.in/"
+                  ]
+                },
+                "value": "Thejesh GN"
+              }
+            ],
+            "repost-of": [
+              {
+                "type": [
+                  "h-cite"
+                ],
+                "properties": {
+                  "author": [
+                    {
+                      "type": [
+                        "h-card"
+                      ],
+                      "properties": {
+                        "photo": [
+                          {
+                            "value": "https://social.thej.in/proxy/media/19417/o-I1E8q9ttDXLBsmEniQRCy7IS78nz-Nmtg4vPwFD_Q=/aHR0cHM6Ly9maWxlcy5tYXN0b2Rvbi5zb2NpYWwvYWNjb3VudHMvYXZhdGFycy8wMDAvMDE2LzA0MS9vcmlnaW5hbC9lZGZiYzU4ZjkzMjI4MDQzLmpwZw==/50",
+                            "alt": "Daniel Supernault's avatar"
+                          }
+                        ],
+                        "url": [
+                          "https://mastodon.social/@dansup"
+                        ],
+                        "name": [
+                          "@dansup@mastodon.social"
+                        ]
+                      },
+                      "value": "@dansup@mastodon.social"
+                    }
+                  ],
+                  "content": [
+                    {
+                      "html": "<p>Made some progress on the new <a href=\"https://fedidb.org/\"><span>https://</span><span>fedidb.org</span><span></span></a> redesign!</p>\n<p>✨ More graphs + download graphs as images<br>✨ ActivityPub developer tools (Activity &amp; Webfinger initially, more later)<br>✨ Improved crawler that respects robots.txt</p>\n<p>Shipping soon 🚀 <a href=\"https://mastodon.social/tags/fediDB\">#<span>fediDB</span></a></p>",
+                      "value": "Made some progress on the new https://fedidb.org redesign!✨ More graphs + download graphs as images✨ ActivityPub developer tools (Activity & Webfinger initially, more later)✨ Improved crawler that respects robots.txtShipping soon 🚀 #fediDB"
+                    }
+                  ],
+                  "photo": [
+                    {
+                      "value": "https://social.thej.in/proxy/media/19417/7ULlisN_hLRn95eqj3hY4GIGJI8ZaLxstfg9tkKX77I=/aHR0cHM6Ly9maWxlcy5tYXN0b2Rvbi5zb2NpYWwvbWVkaWFfYXR0YWNobWVudHMvZmlsZXMvMTA5LzkwMS82MzgvODUxLzM1NC83NDMvb3JpZ2luYWwvNzkwODJhNjFmZGY2YWVkZi5wbmc=/740",
+                      "alt": "New fedidb.org design"
+                    },
+                    {
+                      "value": "https://social.thej.in/proxy/media/19417/NLRORVOyDnpZ44bKiIL7EMEl1YU2Z-sBcAt3ZNgfDjM=/aHR0cHM6Ly9maWxlcy5tYXN0b2Rvbi5zb2NpYWwvbWVkaWFfYXR0YWNobWVudHMvZmlsZXMvMTA5LzkwMS82MzkvOTEzLzY0My85ODkvb3JpZ2luYWwvODViODQzZTIwYjRmMzcxMi5wbmc=/740",
+                      "alt": "New fedidb.org design"
+                    },
+                    {
+                      "value": "https://social.thej.in/proxy/media/19417/497F1hQuKOXYotAdf5nea9gLkyE-Us90s0qN8QvOFN8=/aHR0cHM6Ly9maWxlcy5tYXN0b2Rvbi5zb2NpYWwvbWVkaWFfYXR0YWNobWVudHMvZmlsZXMvMTA5LzkwMS82NDEvMTk0LzAyNy84Njkvb3JpZ2luYWwvNzZkZDVmYzZjYTkyNTc3MS5wbmc=/740",
+                      "alt": "New fedidb.org design"
+                    }
+                  ],
+                  "url": [
+                    "https://mastodon.social/@dansup/109901661656801326"
+                  ],
+                  "uid": [
+                    "https://mastodon.social/@dansup/109901661656801326"
+                  ],
+                  "published": [
+                    "2023-02-21T07:57:52"
+                  ]
+                },
+                "value": "https://mastodon.social/@dansup/109901661656801326"
+              }
+            ]
+          },
+          "id": "permalink-153f4fa91f994b652bd62b7ecb9f0acd"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "photo": [
+                    {
+                      "value": "https://social.thej.in/static/thej128.png",
                       "alt": "Thejesh GN's avatar"
                     }
                   ],
@@ -205,7 +367,7 @@
                       "properties": {
                         "photo": [
                           {
-                            "value": "https://social.thej.in/proxy/media/19416/CRv3C4LpVsHgNgBUCSYoYSYbXo6x9a8t2cRmf2eO1rw=/aHR0cHM6Ly9vZmZpY2lhbC5yZXNvdXJjZS5vcmcvc3lzdGVtL2FjY291bnRzL2F2YXRhcnMvMTA5LzM3OC84NjAvMjkwLzUyMy8wMDEvb3JpZ2luYWwvZDBkMjRmZTNmZGE0NGRmZi5qcGc=/50",
+                            "value": "https://social.thej.in/proxy/media/19417/ysM6ozS7SK7jyjDNxh4PRnUiFv78_m47zgyjaRiWZxw=/aHR0cHM6Ly9vZmZpY2lhbC5yZXNvdXJjZS5vcmcvc3lzdGVtL2FjY291bnRzL2F2YXRhcnMvMTA5LzM3OC84NjAvMjkwLzUyMy8wMDEvb3JpZ2luYWwvZDBkMjRmZTNmZGE0NGRmZi5qcGc=/50",
                             "alt": "Carl Malamud's avatar"
                           }
                         ],
@@ -522,7 +684,7 @@
                       "properties": {
                         "photo": [
                           {
-                            "value": "https://social.thej.in/proxy/media/19416/EH3j8eZkLCqilAea2DYij-1kDYElIURcl_3S60SptRo=/aHR0cHM6Ly9hc3NldHMub2N0b2Rvbi5zb2NpYWwvYWNjb3VudHMvYXZhdGFycy8wMDAvMTA2LzYzMi9vcmlnaW5hbC9kYjIwZmI0OGVhNjY2NTM2LmpwZw==/50",
+                            "value": "https://social.thej.in/proxy/media/19417/EoxE88RZ1HHhcENA7hHGKjgpsERPiy_ga95uDOQsMew=/aHR0cHM6Ly9hc3NldHMub2N0b2Rvbi5zb2NpYWwvYWNjb3VudHMvYXZhdGFycy8wMDAvMTA2LzYzMi9vcmlnaW5hbC9kYjIwZmI0OGVhNjY2NTM2LmpwZw==/50",
                             "alt": "Dr. Morgan Lemmer-Webber's avatar"
                           }
                         ],
@@ -544,7 +706,7 @@
                   ],
                   "photo": [
                     {
-                      "value": "https://social.thej.in/proxy/media/19416/rtVzkggpP1sfs0gmyJIKwPbnv7CldsxcaIcaVrkivOg=/aHR0cHM6Ly9hc3NldHMub2N0b2Rvbi5zb2NpYWwvbWVkaWFfYXR0YWNobWVudHMvZmlsZXMvMTA5Lzc4Ny8zNTcvMDgyLzYwNy82NzQvb3JpZ2luYWwvOGE0M2E1NzliZDg5NmE5YS5qcGc=/740",
+                      "value": "https://social.thej.in/proxy/media/19417/M_ZK3-RlYekQgXPZk22yN3uTHl_e9YkErQB6yrF0Kks=/aHR0cHM6Ly9hc3NldHMub2N0b2Rvbi5zb2NpYWwvbWVkaWFfYXR0YWNobWVudHMvZmlsZXMvMTA5Lzc4Ny8zNTcvMDgyLzYwNy82NzQvb3JpZ2luYWwvOGE0M2E1NzliZDg5NmE5YS5qcGc=/740",
                       "alt": "A photograph of a woman in a black layered skirt holding the sides out for emphasis"
                     }
                   ],
@@ -617,7 +779,7 @@
                       "properties": {
                         "photo": [
                           {
-                            "value": "https://social.thej.in/proxy/media/19416/dpETBW7_tYtk6UU3rPEhR3eLMYHDikXFR1sNWMRnvwA=/aHR0cHM6Ly9tZWRpYS5tYXN0b2Rvbi5sb2wvYWNjb3VudHMvYXZhdGFycy8xMDkvMjkzLzA3Ny8xMjkvMDI5Lzc2NS9vcmlnaW5hbC8wOGZlZTlkNWVmYjNlZjFhLnBuZw==/50",
+                            "value": "https://social.thej.in/proxy/media/19417/pptw5ta8ovwH0P91YH-UclreIqKDPQxNn_EwNlpwc5I=/aHR0cHM6Ly9tZWRpYS5tYXN0b2Rvbi5sb2wvYWNjb3VudHMvYXZhdGFycy8xMDkvMjkzLzA3Ny8xMjkvMDI5Lzc2NS9vcmlnaW5hbC8wOGZlZTlkNWVmYjNlZjFhLnBuZw==/50",
                             "alt": "Viresh Ratnakar's avatar"
                           }
                         ],
@@ -691,7 +853,7 @@
                       "properties": {
                         "photo": [
                           {
-                            "value": "https://social.thej.in/proxy/media/19416/zQX-jB5eh34lwcfC2Gg71disx7nBgg8uq2SJEJMdPO0=/aHR0cHM6Ly9tZWRpYS5tYXN0b2Rvbi5jbG91ZC9hY2NvdW50cy9hdmF0YXJzLzAwMC8wOTQvMDkzL29yaWdpbmFsLzhkN2Y1MGE1ZmJmYjYwMmQucG5n/50",
+                            "value": "https://social.thej.in/proxy/media/19417/I4rSCWslRleNe1oHHmD1Vz_7oy4VdMqYiZip2Vf1fLI=/aHR0cHM6Ly9tZWRpYS5tYXN0b2Rvbi5jbG91ZC9hY2NvdW50cy9hdmF0YXJzLzAwMC8wOTQvMDkzL29yaWdpbmFsLzhkN2Y1MGE1ZmJmYjYwMmQucG5n/50",
                             "alt": "BoingBoing Bot's avatar"
                           }
                         ],
@@ -765,7 +927,7 @@
                       "properties": {
                         "photo": [
                           {
-                            "value": "https://social.thej.in/proxy/media/19416/vjGGDxWV_jJVwpZa-dvbxIMOqWJ2Pg9yyHVFIZdGvkg=/aHR0cHM6Ly9jZG4uZm9zc3RvZG9uLm9yZy9hY2NvdW50cy9hdmF0YXJzLzAwMC8xMjkvNDYxL29yaWdpbmFsLzE5NjU4NGY5Y2IyODEzNzcuanBn/50",
+                            "value": "https://social.thej.in/proxy/media/19417/uL6cnYcbWtvnlHf27ZBnmWv4LNOrxZIAjP1GvLkL9rs=/aHR0cHM6Ly9jZG4uZm9zc3RvZG9uLm9yZy9hY2NvdW50cy9hdmF0YXJzLzAwMC8xMjkvNDYxL29yaWdpbmFsLzE5NjU4NGY5Y2IyODEzNzcuanBn/50",
                             "alt": "Paolo Melchiorre's avatar"
                           }
                         ],
@@ -839,7 +1001,7 @@
                       "properties": {
                         "photo": [
                           {
-                            "value": "https://social.thej.in/proxy/media/19416/k8oUJEkkQaYaemwYkMJxrHlCyzuqSNyX184SYzaSiFg=/aHR0cHM6Ly9tZWRpYS5laWdodHBvaW50LmFwcC9tYXN0b2Rvbi1laWdodHBvaW50L2FjY291bnRzL2F2YXRhcnMvMTA5LzQxOC85ODMvNzkxLzI2MS81NTUvb3JpZ2luYWwvN2Q5OWYxZGRiMDgxZDIwYy5qcGc=/50",
+                            "value": "https://social.thej.in/proxy/media/19417/TY5aO-uXSKW0mdEDKU_cGc4dhl9hYv8vci3_IzGAiaw=/aHR0cHM6Ly9tZWRpYS5laWdodHBvaW50LmFwcC9tYXN0b2Rvbi1laWdodHBvaW50L2FjY291bnRzL2F2YXRhcnMvMTA5LzQxOC85ODMvNzkxLzI2MS81NTUvb3JpZ2luYWwvN2Q5OWYxZGRiMDgxZDIwYy5qcGc=/50",
                             "alt": "Sasha Fox's avatar"
                           }
                         ],
@@ -961,7 +1123,7 @@
                       "properties": {
                         "photo": [
                           {
-                            "value": "https://social.thej.in/proxy/media/19416/jV-P4AfRNNMdkmnNefDMjZN2ihSXdCI-sd0DTOsbegM=/aHR0cHM6Ly9maWxlcy5tYXN0b2Rvbi5vbmxpbmUvYWNjb3VudHMvYXZhdGFycy8xMDgvMTkzLzAxOS81MDMvMDc2LzM3MC9vcmlnaW5hbC8wZDEwZTE1MDllNWViM2FlLnBuZw==/50",
+                            "value": "https://social.thej.in/proxy/media/19417/nASfsO69k7-1YB2euaTiNMAVu9vqPB0-4CidLmOv_IM=/aHR0cHM6Ly9maWxlcy5tYXN0b2Rvbi5vbmxpbmUvYWNjb3VudHMvYXZhdGFycy8xMDgvMTkzLzAxOS81MDMvMDc2LzM3MC9vcmlnaW5hbC8wZDEwZTE1MDllNWViM2FlLnBuZw==/50",
                             "alt": "Markus Eisele's avatar"
                           }
                         ],
@@ -1035,7 +1197,7 @@
                       "properties": {
                         "photo": [
                           {
-                            "value": "https://social.thej.in/proxy/media/19416/fG6mNdzHlyIb8qqGfxIprFufuR4IHbvtuSD-g7HyuOQ=/aHR0cHM6Ly9maWxlcy5tYXN0b2Rvbi5zb2NpYWwvYWNjb3VudHMvYXZhdGFycy8wMDAvNDY0LzI0MC9vcmlnaW5hbC80NGM2YmFmY2Y1NmVmMDNlLmpwZw==/50",
+                            "value": "https://social.thej.in/proxy/media/19417/2oYiSwmAJh4sgKC5_NKwXy6wrHpw5w7IeS66qknbegU=/aHR0cHM6Ly9maWxlcy5tYXN0b2Rvbi5zb2NpYWwvYWNjb3VudHMvYXZhdGFycy8wMDAvNDY0LzI0MC9vcmlnaW5hbC80NGM2YmFmY2Y1NmVmMDNlLmpwZw==/50",
                             "alt": "Sathya's avatar"
                           }
                         ],
@@ -1109,7 +1271,7 @@
                       "properties": {
                         "photo": [
                           {
-                            "value": "https://social.thej.in/proxy/media/19416/GtCdPimSbVfekAhk2ET7OTbgKszKa8vde5-4EvcXYRk=/aHR0cHM6Ly9jZG4ubWFzdG8uaG9zdC9mZWRlcmF0ZXNvY2lhbC9hY2NvdW50cy9hdmF0YXJzLzEwOS8zMTUvMTk3LzgxNS85NjMvMDQ0L29yaWdpbmFsL2ZhYmNmMzc2N2QzNTU4OWEuanBn/50",
+                            "value": "https://social.thej.in/proxy/media/19417/yLL578wgv6VqdqaZHk4FqSHiy3OC_I9X2J7-_tAs1b8=/aHR0cHM6Ly9jZG4ubWFzdG8uaG9zdC9mZWRlcmF0ZXNvY2lhbC9hY2NvdW50cy9hdmF0YXJzLzEwOS8zMTUvMTk3LzgxNS85NjMvMDQ0L29yaWdpbmFsL2ZhYmNmMzc2N2QzNTU4OWEuanBn/50",
                             "alt": "Eli Rivera's avatar"
                           }
                         ],
@@ -1144,160 +1306,6 @@
             ]
           },
           "id": "permalink-13cc05740bbaaa46dd3321877986a6f1"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "photo": [
-                    {
-                      "value": "https://social.thej.in/static/thej128.png",
-                      "alt": ""
-                    }
-                  ],
-                  "url": [
-                    "https://social.thej.in/"
-                  ]
-                },
-                "value": "Thejesh GN"
-              }
-            ],
-            "repost-of": [
-              {
-                "type": [
-                  "h-cite"
-                ],
-                "properties": {
-                  "author": [
-                    {
-                      "type": [
-                        "h-card"
-                      ],
-                      "properties": {
-                        "photo": [
-                          {
-                            "value": "https://social.thej.in/proxy/media/19416/Q_zxw46gj8ZNBrxruLOPYbxJ2k6jXb2a6UYHwECQ6gM=/aHR0cHM6Ly9maWxlcy5tYXN0b2Rvbi5zb2NpYWwvYWNjb3VudHMvYXZhdGFycy8wMDAvMTMxLzUwMC9vcmlnaW5hbC8xMGI1N2M0YmVlZjJkNDM1LmpwZw==/50",
-                            "alt": "Karthik S's avatar"
-                          }
-                        ],
-                        "url": [
-                          "https://mastodon.social/@beastoftraal"
-                        ],
-                        "name": [
-                          "@beastoftraal@mastodon.social"
-                        ]
-                      },
-                      "value": "@beastoftraal@mastodon.social"
-                    }
-                  ],
-                  "content": [
-                    {
-                      "html": "<p>Why this sudden ज्ञानोदय? Why now?</p>",
-                      "value": "Why this sudden ज्ञानोदय? Why now?"
-                    }
-                  ],
-                  "photo": [
-                    "https://social.thej.in/proxy/media/19416/bVwT6gpljLBIjHsX1N-LgNO3h3RPNHt1D6_KY5GKqgA=/aHR0cHM6Ly9maWxlcy5tYXN0b2Rvbi5zb2NpYWwvbWVkaWFfYXR0YWNobWVudHMvZmlsZXMvMTA5Lzc2NC83NzgvMjYwLzMyOS85NTMvb3JpZ2luYWwvNzI5ZmMzNmU5YTJlYWUwOC5wbmc=/740"
-                  ],
-                  "url": [
-                    "https://mastodon.social/@beastoftraal/109764779058689917"
-                  ],
-                  "uid": [
-                    "https://mastodon.social/@beastoftraal/109764779058689917"
-                  ],
-                  "published": [
-                    "2023-01-28T03:46:50"
-                  ]
-                },
-                "value": "https://mastodon.social/@beastoftraal/109764779058689917"
-              }
-            ]
-          },
-          "id": "permalink-ce467757c4fac225fa2f68cc0ca14283"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "photo": [
-                    {
-                      "value": "https://social.thej.in/static/thej128.png",
-                      "alt": ""
-                    }
-                  ],
-                  "url": [
-                    "https://social.thej.in/"
-                  ]
-                },
-                "value": "Thejesh GN"
-              }
-            ],
-            "repost-of": [
-              {
-                "type": [
-                  "h-cite"
-                ],
-                "properties": {
-                  "author": [
-                    {
-                      "type": [
-                        "h-card"
-                      ],
-                      "properties": {
-                        "photo": [
-                          {
-                            "value": "https://social.thej.in/proxy/media/19416/_ScjEcqQ-ICRNHl1i2WsbziQPnWYn5ISH5iEu-tYyts=/aHR0cHM6Ly9tZWRpYS5pbmZvc2VjLmV4Y2hhbmdlL2luZm9zZWNtZWRpYS9hY2NvdW50cy9hdmF0YXJzLzEwOS8zOTUvNDY2LzU1Ny84MTYvNDM5L29yaWdpbmFsL2NkNGE0MGY5MjMyMDU3MjUuanBlZw==/50",
-                            "alt": "Aleks's avatar"
-                          }
-                        ],
-                        "url": [
-                          "https://infosec.exchange/@FuzzyAleks"
-                        ],
-                        "name": [
-                          "@FuzzyAleks@infosec.exchange"
-                        ]
-                      },
-                      "value": "@FuzzyAleks@infosec.exchange"
-                    }
-                  ],
-                  "content": [
-                    {
-                      "html": "<p>Remember these? Original Lytro! Lightfield cameras of the future! I grabbed a few off eBay some time ago and took a peek at the firmware. Found secret unlock that enables full remote control of all camera features. Full writeup here: <a href=\"https://github.com/ea/lytro_unlock\"><span>https://</span><span>github.com/ea/lytro_unlock</span><span></span></a></p>",
-                      "value": "Remember these? Original Lytro! Lightfield cameras of the future! I grabbed a few off eBay some time ago and took a peek at the firmware. Found secret unlock that enables full remote control of all camera features. Full writeup here: https://github.com/ea/lytro_unlock"
-                    }
-                  ],
-                  "photo": [
-                    "https://social.thej.in/proxy/media/19416/Zz9OJfGPlVa_Md5PjzsZu7liwtaZr7e53KLLbdY4CjA=/aHR0cHM6Ly9tZWRpYS5pbmZvc2VjLmV4Y2hhbmdlL2luZm9zZWNtZWRpYS9tZWRpYV9hdHRhY2htZW50cy9maWxlcy8xMDkvNzQ0Lzk5Mi8xNjAvMDUxLzk2NS9vcmlnaW5hbC8zNjk2YWViMTJjZThkZGJmLmpwZWc=/740"
-                  ],
-                  "url": [
-                    "https://infosec.exchange/@FuzzyAleks/109744992827936704"
-                  ],
-                  "uid": [
-                    "https://infosec.exchange/@FuzzyAleks/109744992827936704"
-                  ],
-                  "published": [
-                    "2023-01-24T15:54:56"
-                  ]
-                },
-                "value": "https://infosec.exchange/@FuzzyAleks/109744992827936704"
-              }
-            ]
-          },
-          "id": "permalink-412503ba65c43d73076f0c2d2c7896df"
         }
       ]
     }
@@ -1327,16 +1335,9 @@
     "micropub": [
       "https://social.thej.in/micropub"
     ],
-    "noopener": [
-      "https://thejeshgn.com/2023/02/17/weekly-notes-07-2023/",
-      "https://thejeshgn.com/2023/02/14/communicating-with-minetest-server-using-apis/",
-      "https://thejeshgn.com/2023/02/10/weekly-notes-06-2023/",
-      "https://thejeshgn.com/2023/02/03/weekly-notes-05-2023/",
-      "https://honalu.net/2021/02/02/%E0%B2%95%E0%B3%81%E0%B2%B5%E0%B3%86%E0%B2%82%E0%B2%AA%E0%B3%81-%E0%B2%95%E0%B2%B5%E0%B2%A8%E0%B2%97%E0%B2%B3-%E0%B2%93%E0%B2%A6%E0%B3%81-6%E0%B2%A8%E0%B3%86%E0%B2%AF-%E0%B2%95%E0%B2%82%E0%B2%A4/",
-      "https://boingboing.net/2023/01/31/florida-teachers-could-face-years-in-prison-for-displaying-disallowed-books-in-classroom.html",
-      "https://www.thenewsminute.com/article/rajasthan-central-university-suspends-ten-students-watching-bbc-documentary-172591"
-    ],
     "nofollow": [
+      "https://fed.brid.gy/r/https://tantek.com/2023/051/t1/five-years-ago-w3c-social-web",
+      "https://mastodon.social/@dansup/109901661656801326",
       "https://official.resource.org/@carlmalamud/109843242345058530",
       "https://octodon.social/users/mlemweb/statuses/109787321357579037",
       "https://octodon.social/@mlemweb/109787359035277595",
@@ -1346,9 +1347,16 @@
       "https://eightpoint.app/@sashafox/109770173799169964",
       "https://mastodon.online/@myfear/109764904531488368",
       "https://mastodon.social/@Sathyabhat/109769337249338665",
-      "https://federate.social/@elicitizen/109761980062054414",
-      "https://mastodon.social/@beastoftraal/109764779058689917",
-      "https://infosec.exchange/@FuzzyAleks/109744992827936704"
+      "https://federate.social/@elicitizen/109761980062054414"
+    ],
+    "noopener": [
+      "https://thejeshgn.com/2023/02/17/weekly-notes-07-2023/",
+      "https://thejeshgn.com/2023/02/14/communicating-with-minetest-server-using-apis/",
+      "https://thejeshgn.com/2023/02/10/weekly-notes-06-2023/",
+      "https://thejeshgn.com/2023/02/03/weekly-notes-05-2023/",
+      "https://honalu.net/2021/02/02/%E0%B2%95%E0%B3%81%E0%B2%B5%E0%B3%86%E0%B2%82%E0%B2%AA%E0%B3%81-%E0%B2%95%E0%B2%B5%E0%B2%A8%E0%B2%97%E0%B2%B3-%E0%B2%93%E0%B2%A6%E0%B3%81-6%E0%B2%A8%E0%B3%86%E0%B2%AF-%E0%B2%95%E0%B2%82%E0%B2%A4/",
+      "https://boingboing.net/2023/01/31/florida-teachers-could-face-years-in-prison-for-displaying-disallowed-books-in-classroom.html",
+      "https://www.thenewsminute.com/article/rajasthan-central-university-suspends-ten-students-watching-bbc-documentary-172591"
     ],
     "tag": [
       "https://social.thej.in/t/weekly"
@@ -1413,6 +1421,18 @@
       ],
       "title": "ActivityPub profile",
       "type": "application/activity+json"
+    },
+    "https://fed.brid.gy/r/https://tantek.com/2023/051/t1/five-years-ago-w3c-social-web": {
+      "rels": [
+        "nofollow"
+      ],
+      "text": "permalink"
+    },
+    "https://mastodon.social/@dansup/109901661656801326": {
+      "rels": [
+        "nofollow"
+      ],
+      "text": "permalink"
     },
     "https://thejeshgn.com/2023/02/17/weekly-notes-07-2023/": {
       "rels": [
@@ -1518,18 +1538,6 @@
       "text": "permalink"
     },
     "https://federate.social/@elicitizen/109761980062054414": {
-      "rels": [
-        "nofollow"
-      ],
-      "text": "permalink"
-    },
-    "https://mastodon.social/@beastoftraal/109764779058689917": {
-      "rels": [
-        "nofollow"
-      ],
-      "text": "permalink"
-    },
-    "https://infosec.exchange/@FuzzyAleks/109744992827936704": {
       "rels": [
         "nofollow"
       ],
