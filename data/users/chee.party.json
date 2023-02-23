@@ -56,6 +56,65 @@
               }
             ],
             "url": [
+              "https://chee.party/2023/02/22/getting-started-with-common-lisp-in-2023/",
+              "https://chee.party/2023/02/22/getting-started-with-common-lisp-in-2023/"
+            ],
+            "updated": [
+              "2023-02-22T08:06:00-06:00"
+            ],
+            "published": [
+              "2023-02-22T08:06:00-06:00"
+            ],
+            "name": [
+              "Getting Started with Common Lisp in 2023"
+            ],
+            "content": [
+              {
+                "html": "<p> So you’ve written hundreds of thousands of lines of Emacs Lisp and you want to use that dark power for good. You’ve tried every scheme implementation you can find, but they all feel kind of hollow and empty in a way you can’t explain.<span class=\"fn-number\"><a id=\"fnr.1\" class=\"footref\" href=\"https://chee.party/#fn.1\" role=\"doc-backlink\">1</a></span> You’ve tried Clojure but you’ve never managed to get past the “setting up your first Clojure project” stage because there are too many choices and they all seem to be the wrong choice for different reasons. Well, that’s a remarkable fucking coincidence… this post’s for you! </p>\n<p> If that doesn’t sound like you I’ve got some good news and some bad news. Good news: you aren’t me. Bad news: this post is not for you. On reflection, I think that’s two pieces of good news. </p>\n<div id=\"outline-container-orgb35b685\" class=\"outline-2\">\n<h2 id=\"orgb35b685\"><a href=\"https://chee.party/#1-install-roswell\">1. Install Roswell</a></h2>\n<div class=\"outline-text-2\" id=\"text-orgb35b685\">\n<p> This tool will manage your Common Lisp implementations for you. We’ll use it to install <a href=\"https://www.sbcl.org/\">sbcl</a>, a lovely active open source Lisp implementation. </p>\n<p> If you’re using <a href=\"https://brew.sh/\">homebrew</a>, you’ll find Roswell available in the default repository. If you’re not, there are install instructions for other systems and package managers on <a href=\"https://roswell.github.io/Installation.html\">the Roswell website</a>. </p>\n<div class=\"org-src-container\">\n<label class=\"org-src-name\"><em></em></label>\n<pre class=\"src src-bash\" id=\"nil\">brew install roswell\n</pre>\n</div>\n</div>\n</div>\n<div id=\"outline-container-org6f01feb\" class=\"outline-2\">\n<h2 id=\"org6f01feb\"><a href=\"https://chee.party/#2-install-sbcl\">2. Install sbcl</a></h2>\n<div class=\"outline-text-2\" id=\"text-org6f01feb\">\n<p> Roswell is configured to use SBCL by default. It will grab the latest version of Roswell the moment you try to run a command, so go ahead evaluate this hello world script: </p>\n<div class=\"org-src-container\">\n<label class=\"org-src-name\"><em></em></label>\n<pre class=\"src src-bash\" id=\"nil\">ros -e <span style=\"color: #000000; background-color: #ffe9ed;\">'(print \"I AM THE COMPUTER!\") -q</span>\n</pre>\n</div>\n<p> That will download sbcl, evaluate <code>-e</code> your script and then quit <code>-q</code>! You’ll (eventually) see <code>\"hello world\"</code> printed in your terminal, and that’ll let you know you’re all ready to go. </p>\n</div>\n</div>\n<div id=\"outline-container-org6bda08a\" class=\"outline-2\">\n<h2 id=\"org6bda08a\"><a href=\"https://chee.party/#3-get-your-text-editor-ready\">3. Get your text editor ready</a></h2>\n<div class=\"outline-text-2\" id=\"text-org6bda08a\">\n<p> Yeah, let’s get all those swanky text editor features set up. This will depend on what editor you’re using. </p>\n</div>\n<div id=\"outline-container-orgf98e179\" class=\"outline-3\">\n<h3 id=\"orgf98e179\"><a href=\"https://chee.party/#emacs\">Emacs</a></h3>\n<div class=\"outline-text-3\" id=\"text-orgf98e179\">\n<p> This is how I’ve configured Emacs to use Roswell and <a href=\"https://github.com/slime/slime\">SLIME</a><span class=\"fn-number\"><a id=\"fnr.2\" class=\"footref\" href=\"https://chee.party/#fn.2\" role=\"doc-backlink\">2</a></span> as my <a href=\"https://ftp.gnu.org/old-gnu/Manuals/emacs/html_node/emacs_331.html#:~:text=You%20can%20run%20a%20Lisp,%2C%20type%20M%2Dx%20run%2Dlisp%20.\">inferior lisp</a>: </p>\n<div class=\"org-src-container\">\n<label class=\"org-src-name\"><em></em></label>\n<pre class=\"src src-emacs-lisp\" id=\"nil\">(<span style=\"color: #3388ff;\">use-package</span> <span style=\"color: #22a6cd;\">inf-lisp</span>\n  <span style=\"color: #407acd;\">:config</span>\n  (<span style=\"color: #3388ff;\">setq</span> inferior-lisp-program <span style=\"color: #000000; background-color: #ffe9ed;\">\"ros -Q run\"</span>))\n(<span style=\"color: #3388ff;\">use-package</span> <span style=\"color: #22a6cd;\">slime</span> <span style=\"color: #407acd;\">:elpaca</span> t)\n</pre>\n</div>\n<p> I’m using <a href=\"https://github.com/jwiegley/use-package\"><code>use-package</code></a> and <a href=\"https://github.com/progfolio/elpaca\"><code>elpaca</code></a> to manage my packages. An alternative is to install SLIME via roswell and then load roswell’s helper script as outlined on <a href=\"https://roswell.github.io/Initial-Recommended-Setup.html\">this page</a>. The only reason I haven’t done that here is that I already use <code>use-package</code> and <code>elpaca</code> for <a href=\"https://chee.party/notebook/docfiles/emacs/init.html\">my entire emacs config</a>. </p>\n<p> <code>M-x slime</code> will now start a lisp REPL. You can <code>C-x C-e</code> to send the last expression to the repl to be evaluated, <code>C-c C-c</code> to send the current <code>defun</code>. It’s really powerful and cool! It makes Common Lisp almost as fun to write as emacs lisp<span class=\"fn-number\"><a id=\"fnr.3\" class=\"footref\" href=\"https://chee.party/#fn.3\" role=\"doc-backlink\">3</a></span>! Check out <a href=\"https://slime.common-lisp.dev/doc/html/\">the manual</a> when you are ready to know more. </p>\n</div>\n</div>\n<div id=\"outline-container-org16a33dd\" class=\"outline-3\">\n<h3 id=\"org16a33dd\"><a href=\"https://chee.party/#visual-studio-code\">Visual Studio Code</a></h3>\n<div class=\"outline-text-3\" id=\"text-org16a33dd\">\n<p> I’ve heard good things<span class=\"fn-number\"><a id=\"fnr.4\" class=\"footref\" href=\"https://chee.party/#fn.4\" role=\"doc-backlink\">4</a></span> about <a href=\"https://github.com/nobody-famous/alive\">ALIVE</a>, which is a SLIME-like for Visual Studio Code. </p>\n<p> You aready have Quicklisp installed (provided by Roswell), so you can run this to get all the dependencies: </p>\n<div class=\"org-src-container\">\n<label class=\"org-src-name\"><em></em></label>\n<pre class=\"src src-bash\" id=\"nil\">ros -e <span style=\"color: #000000; background-color: #ffe9ed;\">'(ql:quickload \"bordeaux-threads\")</span>\n<span style=\"color: #000000; background-color: #ffe9ed;\">  (ql:quickload \"usocket\")</span>\n<span style=\"color: #000000; background-color: #ffe9ed;\">  (ql:quickload \"cl-json\")</span>\n<span style=\"color: #000000; background-color: #ffe9ed;\">  (ql:quickload \"flexi-streams\")'</span> -q\n</pre>\n</div>\n<p> Then you can install the extension from within Visual Studio Code and you should be good to go! There’s a LOT of information about using Alive on the <a href=\"https://lispcookbook.github.io/cl-cookbook/vscode-alive.html\">Common Lisp cookbook page about it</a>. </p>\n<p> If you run into any trouble, check <a href=\"https://marketplace.visualstudio.com/items?itemName=rheller.alive\">ALIVE’s overview on the Visual Studio Marketplace</a>. </p>\n</div>\n</div>\n</div>\n<div id=\"outline-container-org1bbb1cd\" class=\"outline-2\">\n<h2 id=\"org1bbb1cd\"><a href=\"https://chee.party/#4-start-writing-some-damn-lisp\">4. Start writing some damn lisp!!!!</a></h2>\n<div class=\"outline-text-2\" id=\"text-org1bbb1cd\">\n<p> You can create Common Lisp shell scripts by executing <code>ros init script-name</code> in your terminal, then open those up in emacs to work on them. Read more about that on the <a href=\"https://roswell.github.io/Roswell-as-a-Scripting-Environment.html\">Roswell website</a>. </p>\n<p> If you’re looking for a good book to get started, I don’t believe there’s anything better than the <a href=\"https://gigamonkeys.com/book/\">gigamonkeys book</a>. I first went through it about 15 years ago and had a great time, though I didn’t understand much of what I was doing back then. I’m just about to go through it again. Join me! </p>\n<p> If you’re knew to lisp altogether, the <a href=\"https://lisp-lang.org/learn/first-steps\">mini-tutorials on lisp-lang.org</a> will be helpful for you. </p>\n</div>\n</div>\n<div id=\"outline-container-org8cc092d\" class=\"outline-2\">\n<h2 id=\"org8cc092d\"><a href=\"https://chee.party/#resources-of-interest\">Resources of interest</a></h2>\n<div class=\"outline-text-2\" id=\"text-org8cc092d\">\n<p> Here are some cool things to know about: </p>\n<dl class=\"org-dl\">\n<dt><a href=\"https://gigamonkeys.com/book/\">Practical Common Lisp</a></dt>\n<dd>The gigamonkeys book mentioned above</dd>\n<dt><a href=\"https://github.com/rabbibotton/clog/\">CLOG</a></dt>\n<dd>This is a really cool UI kit for building GUIs with common lisp that can run on computers and phones!</dd>\n<dt><a href=\"https://incudine.sourceforge.net/\">Includine</a></dt>\n<dd>A library/environment for DSP and composing scores in Lisp. bonkers.</dd>\n<dt><a href=\"https://cliki.net/\">CLiki</a></dt>\n<dd>The common lisp wiki, full of information</dd>\n<dt><a href=\"https://lispcookbook.github.io/cl-cookbook/\">Common Lisp Cookbook</a></dt>\n<dd>Thorough, helpful articles and a lot of good links.</dd>\n</dl>\n</div>\n</div>\n<aside id=\"footnotes\">\n<h2 class=\"footnotes\" id=\"footnotes\"><a href=\"https://chee.party/#footnotes\">Footnotes</a></h2>\n<div id=\"text-footnotes\">\n<div class=\"footdef\">\n<span class=\"fn-number\"><a id=\"fn.1\" class=\"footnum\" href=\"https://chee.party/#fnr.1\" role=\"doc-backlink\">1</a></span> \n<div class=\"footpara\" role=\"doc-footnote\">\n<p class=\"footpara\"> Except CHICKEN, of course, because it rules. </p>\n</div>\n</div>\n<div class=\"footdef\">\n<span class=\"fn-number\"><a id=\"fn.2\" class=\"footnum\" href=\"https://chee.party/#fnr.2\" role=\"doc-backlink\">2</a></span> \n<div class=\"footpara\" role=\"doc-footnote\">\n<p class=\"footpara\"> In the original version of the post, I had a bit here about overriding the <code>slime-words-of-encouragement</code> to remove the one that calls you brother, but then a few hours later the maintainer of SLIME pushed <a href=\"https://github.com/slime/slime/commit/e193bc5f3431a2f71f1d7a0e3f28e6dc4dd5de2d\">a commit</a> that deletes it! </p>\n<p class=\"footpara\"> I still like some of the ones I added so here’s my full config: </p>\n<div class=\"org-src-container\">\n<label class=\"org-src-name\"><em></em></label>\n<pre class=\"src src-emacs-lisp\" id=\"nil\">(<span style=\"color: #3388ff;\">use-package</span> <span style=\"color: #22a6cd;\">slime</span>\n  <span style=\"color: #407acd;\">:elpaca</span> t\n  <span style=\"color: #407acd;\">:config</span>\n  (mapc (apply-partially #'add-to-list 'slime-words-of-encouragement)\n        '(<span style=\"color: #000000; background-color: #ffe9ed;\">\"Come on, let's go.\"</span>\n          <span style=\"color: #000000; background-color: #ffe9ed;\">\"Vamos.\"</span>\n          <span style=\"color: #000000; background-color: #ffe9ed;\">\"A ver.\"</span>\n          <span style=\"color: #000000; background-color: #ffe9ed;\">\"You'll always find me in the REPL at parties.\"</span>\n          <span style=\"color: #000000; background-color: #ffe9ed;\">\"OK, let me have it.\"</span>)))\n</pre>\n</div>\n<p class=\"footpara\"> It keeps all the originals and adds these few extra silly ones. </p>\n</div>\n</div>\n<div class=\"footdef\">\n<span class=\"fn-number\"><a id=\"fn.3\" class=\"footnum\" href=\"https://chee.party/#fnr.3\" role=\"doc-backlink\">3</a></span> \n<div class=\"footpara\" role=\"doc-footnote\">\n<p class=\"footpara\"> Not quite, though. Nothing is as fun to write as emacs lisp. Emacs lisp is literally the best programming language in the world. </p>\n</div>\n</div>\n<div class=\"footdef\">\n<span class=\"fn-number\"><a id=\"fn.4\" class=\"footnum\" href=\"https://chee.party/#fnr.4\" role=\"doc-backlink\">4</a></span> \n<div class=\"footpara\" role=\"doc-footnote\">\n<p class=\"footpara\"> The “good things” are that it: </p>\n<ol class=\"org-ol\">\n<li>exists</li>\n<li>works</li>\n</ol>\n</div>\n</div>\n</div>\n</aside>",
+                "value": "So you’ve written hundreds of thousands of lines of Emacs Lisp and you want to use that dark power for good. You’ve tried every scheme implementation you can find, but they all feel kind of hollow and empty in a way you can’t explain.1 You’ve tried Clojure but you’ve never managed to get past the “setting up your first Clojure project” stage because there are too many choices and they all seem to be the wrong choice for different reasons. Well, that’s a remarkable fucking coincidence… this post’s for you! \n If that doesn’t sound like you I’ve got some good news and some bad news. Good news: you aren’t me. Bad news: this post is not for you. On reflection, I think that’s two pieces of good news. \n\n1. Install Roswell\n\n This tool will manage your Common Lisp implementations for you. We’ll use it to install sbcl, a lovely active open source Lisp implementation. \n If you’re using homebrew, you’ll find Roswell available in the default repository. If you’re not, there are install instructions for other systems and package managers on the Roswell website. \n\n\nbrew install roswell\n\n\n\n\n\n2. Install sbcl\n\n Roswell is configured to use SBCL by default. It will grab the latest version of Roswell the moment you try to run a command, so go ahead evaluate this hello world script: \n\n\nros -e '(print \"I AM THE COMPUTER!\") -q\n\n\n That will download sbcl, evaluate -e your script and then quit -q! You’ll (eventually) see \"hello world\" printed in your terminal, and that’ll let you know you’re all ready to go. \n\n\n\n3. Get your text editor ready\n\n Yeah, let’s get all those swanky text editor features set up. This will depend on what editor you’re using. \n\n\nEmacs\n\n This is how I’ve configured Emacs to use Roswell and SLIME2 as my inferior lisp: \n\n\n(use-package inf-lisp\n  :config\n  (setq inferior-lisp-program \"ros -Q run\"))\n(use-package slime :elpaca t)\n\n\n I’m using use-package and elpaca to manage my packages. An alternative is to install SLIME via roswell and then load roswell’s helper script as outlined on this page. The only reason I haven’t done that here is that I already use use-package and elpaca for my entire emacs config. \n M-x slime will now start a lisp REPL. You can C-x C-e to send the last expression to the repl to be evaluated, C-c C-c to send the current defun. It’s really powerful and cool! It makes Common Lisp almost as fun to write as emacs lisp3! Check out the manual when you are ready to know more. \n\n\n\nVisual Studio Code\n\n I’ve heard good things4 about ALIVE, which is a SLIME-like for Visual Studio Code. \n You aready have Quicklisp installed (provided by Roswell), so you can run this to get all the dependencies: \n\n\nros -e '(ql:quickload \"bordeaux-threads\")\n  (ql:quickload \"usocket\")\n  (ql:quickload \"cl-json\")\n  (ql:quickload \"flexi-streams\")' -q\n\n\n Then you can install the extension from within Visual Studio Code and you should be good to go! There’s a LOT of information about using Alive on the Common Lisp cookbook page about it. \n If you run into any trouble, check ALIVE’s overview on the Visual Studio Marketplace. \n\n\n\n\n4. Start writing some damn lisp!!!!\n\n You can create Common Lisp shell scripts by executing ros init script-name in your terminal, then open those up in emacs to work on them. Read more about that on the Roswell website. \n If you’re looking for a good book to get started, I don’t believe there’s anything better than the gigamonkeys book. I first went through it about 15 years ago and had a great time, though I didn’t understand much of what I was doing back then. I’m just about to go through it again. Join me! \n If you’re knew to lisp altogether, the mini-tutorials on lisp-lang.org will be helpful for you. \n\n\n\nResources of interest\n\n Here are some cool things to know about: \n\nPractical Common Lisp\nThe gigamonkeys book mentioned above\nCLOG\nThis is a really cool UI kit for building GUIs with common lisp that can run on computers and phones!\nIncludine\nA library/environment for DSP and composing scores in Lisp. bonkers.\nCLiki\nThe common lisp wiki, full of information\nCommon Lisp Cookbook\nThorough, helpful articles and a lot of good links.\n\n\n\n\nFootnotes\n\n1 \n\n Except CHICKEN, of course, because it rules. \n\n\n2 \n\n In the original version of the post, I had a bit here about overriding the slime-words-of-encouragement to remove the one that calls you brother, but then a few hours later the maintainer of SLIME pushed a commit that deletes it! \n I still like some of the ones I added so here’s my full config: \n\n\n(use-package slime\n  :elpaca t\n  :config\n  (mapc (apply-partially #'add-to-list 'slime-words-of-encouragement)\n        '(\"Come on, let's go.\"\n          \"Vamos.\"\n          \"A ver.\"\n          \"You'll always find me in the REPL at parties.\"\n          \"OK, let me have it.\")))\n\n\n It keeps all the originals and adds these few extra silly ones. \n\n\n3 \n\n Not quite, though. Nothing is as fun to write as emacs lisp. Emacs lisp is literally the best programming language in the world. \n\n\n4 \n\n The “good things” are that it: \n\nexists\nworks"
+              }
+            ],
+            "category": [
+              "Emacs",
+              "Lisp"
+            ]
+          },
+          "id": "post-5254"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "url": [
+                    "https://chee.party/chee-rabbits"
+                  ],
+                  "uid": [
+                    "https://chee.party/chee-rabbits"
+                  ],
+                  "photo": [
+                    {
+                      "value": "https://secure.gravatar.com/avatar/5eafdabd822ad2048be8c301660854af?s=90&r=x",
+                      "srcset": {
+                        "2x": "https://secure.gravatar.com/avatar/5eafdabd822ad2048be8c301660854af?s=180&r=x"
+                      },
+                      "alt": ""
+                    }
+                  ],
+                  "name": [
+                    "chee"
+                  ]
+                },
+                "value": "chee"
+              }
+            ],
+            "url": [
               "https://chee.party/2023/02/19/week-07-23/",
               "https://chee.party/2023/02/19/week-07-23/"
             ],
@@ -305,64 +364,6 @@
             ]
           },
           "id": "post-5205"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "url": [
-                    "https://chee.party/chee-rabbits"
-                  ],
-                  "uid": [
-                    "https://chee.party/chee-rabbits"
-                  ],
-                  "photo": [
-                    {
-                      "value": "https://secure.gravatar.com/avatar/5eafdabd822ad2048be8c301660854af?s=90&r=x",
-                      "srcset": {
-                        "2x": "https://secure.gravatar.com/avatar/5eafdabd822ad2048be8c301660854af?s=180&r=x"
-                      },
-                      "alt": ""
-                    }
-                  ],
-                  "name": [
-                    "chee"
-                  ]
-                },
-                "value": "chee"
-              }
-            ],
-            "url": [
-              "https://chee.party/2023/01/23/week-the-third-year-twenty-three/",
-              "https://chee.party/2023/01/23/week-the-third-year-twenty-three/"
-            ],
-            "updated": [
-              "2023-01-23T05:22:19-06:00"
-            ],
-            "published": [
-              "2023-01-23T05:22:19-06:00"
-            ],
-            "name": [
-              "week the third, year twenty three"
-            ],
-            "content": [
-              {
-                "html": "<p>lol! plumb forgot to post yesterday. </p>\n\n\n\n<p>what have i done this week? i don’t know if it’s anything. i:</p>\n\n\n\n<ul>\n<li>played the role of User to do a user test for my lb.</li>\n\n\n\n<li>worked</li>\n\n\n\n<li>played video games</li>\n</ul>\n\n\n\n<p>is that it?</p>\n\n\n\n<p>yeah i really think i’ve just been working and playing video games for a week lol. and i’m gonna do it again for another week!!! idgaf!!!!!</p>\n\n\n\n<p>you ever look at yourself in the mirror and it’s cute and then you take a selfie and you look like a ņ̵̨̡̧̨̡̡̨̢̡̖̺̲̣͎̝̘̮̯̟̹͔̣̹͖͓͉͇͈̤̞̮̳̳̼̬͔͚͈̗̗͍̩͓͖̞̼͔̞͓̬̦̰͖̯̞̯̰̟̱̪̲̥̻̳̠̖̤̩̌͗͆̈̐͌͜͝ǫ̵̨̡̬̪͖͔̹̞̠͈̙̲͙̭̬̬̱͕̘̼̣͙̘̝̱̳̖̞̱̘͈̖̟̪̳̰̭̦̲̯͇͇͔̞̘͍͓͉̮͑͒͑̋͐̋̍͋̔͛̄̉͌̓̀͘̕ͅţ̵̨̨̢̢̨̢̢̧̨̢̡̛̛͕̣͙̞͖͙̻̝̘̝̘̰̝̠̙͕̱̙̩̤͔͈̠͖̗͔̯̖͓̞͖̟̘̙̳̪͓̭̩̤̮͉̱͚̥̫̥͇̱̻̳̤̫͕̫̼͔͉̥̟͕̥̝̱̳̯̜̫̘͓̼̩͓͍̻̯̣̹͉̞̙̭̣͉͎̝̱̙̖̈́̍͗͋̎̀̀́͂͊͆́̅̽̊̃̋̾̔̈́̑͗̆̔̄̂̅̔͛̅̌̊͑̃͊̇̎̋͒͂͂̅̂́̾͐̏͋͒͋͆̑̈́̆͗͋̔̑͛̍͛̐̀͂̓̽͊̓̓͒̐̎͆̈̎͋̆̍̀̋̽̚̚͘͘͝͝͝͝͝͝͠͠͝ͅͅͅͅh̶̡̧̡̧̢̢̧̧̡̨̨̨̧̢̢̡̧̢͖̗̥͇̫͔̲̥̖̩̙̪̤͍͙̭̭͎̰͕̠̞̜̦̼̜̣̹̞͔̫̹̘̟͈̺͎͍̫̠̹͓̞̲̱̜͙̱͖̣̠͙̖̘͍̪̣̲̜͉͈̦͕̳̫̠̥͙̯̬̬͕̲͇͓͇̤͎̼̟̦͔͉͉͉̭͇̤̩͕͔̬̫̗͉̰̫̱̻̼͙̮͕̮͖͔͎̼̪̤̪̘̤̮̜͇̣̯͉̻̝̞̒̋̄̅̈̅͛̇̓͐̉͑͋͂̐͒̎͆̽̋͊̈̍̂̀́̽̏̐̑͛͑͌̊̈́́̈́̃̌̀͆͊̂̐̀͆͛̅̐͂̏͂̽͗̇̓̉̇̄̏̎̌̉͌͐̿̒́͊̎͒̈́̃̀̽̉͐͗̆̐̓̈́̕͘̕͘̚̕̚͘͘̕̚̕͜͜͜͜͝͠͝͝ͅͅā̴̡̡̢̧̧̛̛̛̛̛͙̹̗͈̰̺̱̭̼͕̮̩͈̼̖͖̺̝̭̹͙͕̪̘͓͙͖͚̠̻̳̭̤̱͉̣͓̳͉͓̟͕̥̳̜̲͎͔̱̟͙̮͕̥̭̬̮̤̬͎͍̯͚̳͚̝̮͉̬̱̯̰͙̟̰̲͙̯̘̣̠̼͚̬͍̰̬̖̩̺̰̱̬͖̩̬͉̹̯̳̮̥͎̟͕̾̒͋̈́̏͋͛͊̔̀̂̇͆͌̀͋̈́̉͒̏̓̒̉̄̐̎̋́͂̈́̿̎́̏́͐̉̃͊̂̏̂̀̃̈́͋́̑̅̊̒̑̈́͐͂́̿̍̍̉͒̀̈́̀͛͌̽̇̅̎͗̐͌͐͗̏̿̿̿̋̈́̇̓̇̍̃̌̇̽̐̀̅͐͌́͛̇̋̈́̓͆̃̀͛̋͂̇̊̈́̆̉̓̋̓͗̋͐̐͘͘̕͘͘̕̚̕͝͝͝͠͝͝͝͠ͅͅͅͅn̴̡̢̨̨̢̨̨̢̖͓͙͔̤͕̼͉̜̱͓̟̰͉͍̫̩͙̹̜͈̝̩̮͚͚̬̼̪̦̟̰̘̪̮̯͇̤̙̭̤͂̏̒̎͋̀̈̀̉̂̿̕͜͜͜͝ͅk̷̨̧̡̢̢̡̨̡̢̧̨̡̢̛̛̛̛̻͔̰͖̗̟̝̳̻̲͓̦̠̖̥̬͖̮̩̠̻̟͓̰̳͖̠̬̝̟̫̥̳̗̫̫̱̝̖͚͖̫̪̖͓̣̰̠̯̹̜̤̥̖̭̲̪͇̯͖̙̬͎̞̰̘̩̺̦͍͔̘̙̥͍̤͇͓͚̹̘̰̥̳̱̯͍̘͇̼͉̗̱̤̰͍͔̖̲͇̘̲̦̲̜̠̠̭̻͚̤͍͚̖͙̪̭̘̘̗͉̠̖̱̟͙͕͕̤̟̼̤̲͖͓̔̌́͒̌̍̒͌͛͛̾̒̈́̓̎̈̀̔͂̽͌́͗͑͌̇̒̈́͛̀̓͑̽̋́́́̀͊́͐̈́͌̄̏̏̈́̊͑̀̈́́͆̄̉̐̏̊̊̇͐̐͗̀̆͊͆͗͛͆̍͗̉̌͒́̌̐͑͐̈́̽̇̏͛̈́̀̈̓̏́́̏͆̓͗̆͋̌̓̾̽́̎͒͛̈̓͂̎͐̒͗̆́̓̑͘͘͘̚͘͘̚͘̚͘̚͘̕͜͜͜͜͜͜͝͝͝͝͝͠͝͠ͅͅͅͅẙ̸̢̡̡̛̲͔̗̯̫̟͓̯͖̞͇̖͇̜̤̗͚̀̆͒̒̈́͂͐̑̓͗̑́͊̎̈̑̊̇̍̿̀́͐̑̇̏͋̈́̈̀̈́͋̆̉͗͗̈͑̾̎͒̃̈́̒͋̓͌̉͑̈͋́͐̓̀̈́̉͊̂̒̚̚͘͜͝͝͠ờ̸̡̧̡̛̛̛̛̛͖̯̭̮̲͚̝͖̙̓͒̐̿̍̆̑͋̈́̃͋͆̔̑̌̈̈́͆͒́̔̽̊̈́̓̉̋̊̓͛́́́̅̆̉̽̈́̾̿͗͛͗͂̽̀͆̉̉̀̎̈́́̌́̃̅̃̎̌̒͛́̄̍̈́͊͊͋̃͋̇̽́̃̈́̉̓̇̏̀̐̐͗́̇́͊̅̑̉̄̒͆͐̿̏̈̄̊́̔̽̈́͒̈́́̍̒̇̽̃͐̏́̀̔͛̋͋́̎͛̓͗̑͐̌͊̾͛͂̈͒͗̐̾̿̓͛̓̄̈̄̌̇̈́́̒͌̉͊̕̕̚͘̚̕̚͘͝͠͝͝͠͠͝͝͠͠ͅư̴̡̢͉̱̫̳̦̬̣̪̦͎̰̮̺͔̼̪̦͍̻͚͍̳̯̹̰̳̺̱̦̞̱̥͍͎̜̜͇͈̹̳̦̙͈̠̦͉͎̻̫͕̣̺̰̱͔̼͎̺͆̐̊̋̎̃̔̿̇̈́̍̂̀̉̿̓̀̏́̍͐͛̀̅͊͒̇̎̆̽̏̀̄̈̓̈́̒͌́͑̔̃̾͗̑̍̈́́̒̐̀̀͑͌͂̀̾̌́͑̒́͗͊̑̎̓͛̃̎̉͗̽̓̉́́̍͑̆̌̑̔͂̚͘͘̚͘̕̕̕̕̚͘͜͜͝͝͝͝͝͝͝</p>\n\n\n\n<p>anyway. can’t believe i forgot to post. slept just fine.</p>",
-                "value": "lol! plumb forgot to post yesterday. \n\n\n\nwhat have i done this week? i don’t know if it’s anything. i:\n\n\n\n\nplayed the role of User to do a user test for my lb.\n\n\n\nworked\n\n\n\nplayed video games\n\n\n\n\nis that it?\n\n\n\nyeah i really think i’ve just been working and playing video games for a week lol. and i’m gonna do it again for another week!!! idgaf!!!!!\n\n\n\nyou ever look at yourself in the mirror and it’s cute and then you take a selfie and you look like a ņ̵̨̡̧̨̡̡̨̢̡̖̺̲̣͎̝̘̮̯̟̹͔̣̹͖͓͉͇͈̤̞̮̳̳̼̬͔͚͈̗̗͍̩͓͖̞̼͔̞͓̬̦̰͖̯̞̯̰̟̱̪̲̥̻̳̠̖̤̩̌͗͆̈̐͌͜͝ǫ̵̨̡̬̪͖͔̹̞̠͈̙̲͙̭̬̬̱͕̘̼̣͙̘̝̱̳̖̞̱̘͈̖̟̪̳̰̭̦̲̯͇͇͔̞̘͍͓͉̮͑͒͑̋͐̋̍͋̔͛̄̉͌̓̀͘̕ͅţ̵̨̨̢̢̨̢̢̧̨̢̡̛̛͕̣͙̞͖͙̻̝̘̝̘̰̝̠̙͕̱̙̩̤͔͈̠͖̗͔̯̖͓̞͖̟̘̙̳̪͓̭̩̤̮͉̱͚̥̫̥͇̱̻̳̤̫͕̫̼͔͉̥̟͕̥̝̱̳̯̜̫̘͓̼̩͓͍̻̯̣̹͉̞̙̭̣͉͎̝̱̙̖̈́̍͗͋̎̀̀́͂͊͆́̅̽̊̃̋̾̔̈́̑͗̆̔̄̂̅̔͛̅̌̊͑̃͊̇̎̋͒͂͂̅̂́̾͐̏͋͒͋͆̑̈́̆͗͋̔̑͛̍͛̐̀͂̓̽͊̓̓͒̐̎͆̈̎͋̆̍̀̋̽̚̚͘͘͝͝͝͝͝͝͠͠͝ͅͅͅͅh̶̡̧̡̧̢̢̧̧̡̨̨̨̧̢̢̡̧̢͖̗̥͇̫͔̲̥̖̩̙̪̤͍͙̭̭͎̰͕̠̞̜̦̼̜̣̹̞͔̫̹̘̟͈̺͎͍̫̠̹͓̞̲̱̜͙̱͖̣̠͙̖̘͍̪̣̲̜͉͈̦͕̳̫̠̥͙̯̬̬͕̲͇͓͇̤͎̼̟̦͔͉͉͉̭͇̤̩͕͔̬̫̗͉̰̫̱̻̼͙̮͕̮͖͔͎̼̪̤̪̘̤̮̜͇̣̯͉̻̝̞̒̋̄̅̈̅͛̇̓͐̉͑͋͂̐͒̎͆̽̋͊̈̍̂̀́̽̏̐̑͛͑͌̊̈́́̈́̃̌̀͆͊̂̐̀͆͛̅̐͂̏͂̽͗̇̓̉̇̄̏̎̌̉͌͐̿̒́͊̎͒̈́̃̀̽̉͐͗̆̐̓̈́̕͘̕͘̚̕̚͘͘̕̚̕͜͜͜͜͝͠͝͝ͅͅā̴̡̡̢̧̧̛̛̛̛̛͙̹̗͈̰̺̱̭̼͕̮̩͈̼̖͖̺̝̭̹͙͕̪̘͓͙͖͚̠̻̳̭̤̱͉̣͓̳͉͓̟͕̥̳̜̲͎͔̱̟͙̮͕̥̭̬̮̤̬͎͍̯͚̳͚̝̮͉̬̱̯̰͙̟̰̲͙̯̘̣̠̼͚̬͍̰̬̖̩̺̰̱̬͖̩̬͉̹̯̳̮̥͎̟͕̾̒͋̈́̏͋͛͊̔̀̂̇͆͌̀͋̈́̉͒̏̓̒̉̄̐̎̋́͂̈́̿̎́̏́͐̉̃͊̂̏̂̀̃̈́͋́̑̅̊̒̑̈́͐͂́̿̍̍̉͒̀̈́̀͛͌̽̇̅̎͗̐͌͐͗̏̿̿̿̋̈́̇̓̇̍̃̌̇̽̐̀̅͐͌́͛̇̋̈́̓͆̃̀͛̋͂̇̊̈́̆̉̓̋̓͗̋͐̐͘͘̕͘͘̕̚̕͝͝͝͠͝͝͝͠ͅͅͅͅn̴̡̢̨̨̢̨̨̢̖͓͙͔̤͕̼͉̜̱͓̟̰͉͍̫̩͙̹̜͈̝̩̮͚͚̬̼̪̦̟̰̘̪̮̯͇̤̙̭̤͂̏̒̎͋̀̈̀̉̂̿̕͜͜͜͝ͅk̷̨̧̡̢̢̡̨̡̢̧̨̡̢̛̛̛̛̻͔̰͖̗̟̝̳̻̲͓̦̠̖̥̬͖̮̩̠̻̟͓̰̳͖̠̬̝̟̫̥̳̗̫̫̱̝̖͚͖̫̪̖͓̣̰̠̯̹̜̤̥̖̭̲̪͇̯͖̙̬͎̞̰̘̩̺̦͍͔̘̙̥͍̤͇͓͚̹̘̰̥̳̱̯͍̘͇̼͉̗̱̤̰͍͔̖̲͇̘̲̦̲̜̠̠̭̻͚̤͍͚̖͙̪̭̘̘̗͉̠̖̱̟͙͕͕̤̟̼̤̲͖͓̔̌́͒̌̍̒͌͛͛̾̒̈́̓̎̈̀̔͂̽͌́͗͑͌̇̒̈́͛̀̓͑̽̋́́́̀͊́͐̈́͌̄̏̏̈́̊͑̀̈́́͆̄̉̐̏̊̊̇͐̐͗̀̆͊͆͗͛͆̍͗̉̌͒́̌̐͑͐̈́̽̇̏͛̈́̀̈̓̏́́̏͆̓͗̆͋̌̓̾̽́̎͒͛̈̓͂̎͐̒͗̆́̓̑͘͘͘̚͘͘̚͘̚͘̚͘̕͜͜͜͜͜͜͝͝͝͝͝͠͝͠ͅͅͅͅẙ̸̢̡̡̛̲͔̗̯̫̟͓̯͖̞͇̖͇̜̤̗͚̀̆͒̒̈́͂͐̑̓͗̑́͊̎̈̑̊̇̍̿̀́͐̑̇̏͋̈́̈̀̈́͋̆̉͗͗̈͑̾̎͒̃̈́̒͋̓͌̉͑̈͋́͐̓̀̈́̉͊̂̒̚̚͘͜͝͝͠ờ̸̡̧̡̛̛̛̛̛͖̯̭̮̲͚̝͖̙̓͒̐̿̍̆̑͋̈́̃͋͆̔̑̌̈̈́͆͒́̔̽̊̈́̓̉̋̊̓͛́́́̅̆̉̽̈́̾̿͗͛͗͂̽̀͆̉̉̀̎̈́́̌́̃̅̃̎̌̒͛́̄̍̈́͊͊͋̃͋̇̽́̃̈́̉̓̇̏̀̐̐͗́̇́͊̅̑̉̄̒͆͐̿̏̈̄̊́̔̽̈́͒̈́́̍̒̇̽̃͐̏́̀̔͛̋͋́̎͛̓͗̑͐̌͊̾͛͂̈͒͗̐̾̿̓͛̓̄̈̄̌̇̈́́̒͌̉͊̕̕̚͘̚̕̚͘͝͠͝͝͠͠͝͝͠͠ͅư̴̡̢͉̱̫̳̦̬̣̪̦͎̰̮̺͔̼̪̦͍̻͚͍̳̯̹̰̳̺̱̦̞̱̥͍͎̜̜͇͈̹̳̦̙͈̠̦͉͎̻̫͕̣̺̰̱͔̼͎̺͆̐̊̋̎̃̔̿̇̈́̍̂̀̉̿̓̀̏́̍͐͛̀̅͊͒̇̎̆̽̏̀̄̈̓̈́̒͌́͑̔̃̾͗̑̍̈́́̒̐̀̀͑͌͂̀̾̌́͑̒́͗͊̑̎̓͛̃̎̉͗̽̓̉́́̍͑̆̌̑̔͂̚͘͘̚͘̕̕̕̕̚͘͜͜͝͝͝͝͝͝͝\n\n\n\nanyway. can’t believe i forgot to post. slept just fine."
-              }
-            ],
-            "category": [
-              "weekly"
-            ]
-          },
-          "id": "post-5202"
         }
       ]
     }
@@ -397,11 +398,11 @@
       "https://ebbdkqihzfu.exactdn.com/wp-includes/css/classic-themes.min.css?ver=1",
       "https://ebbdkqihzfu.exactdn.com/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.12.0",
       "https://ebbdkqihzfu.exactdn.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1",
-      "https://ebbdkqihzfu.exactdn.com/wp-content/themes/rabbit-sempress/style.css?ver=1.7.44"
+      "https://ebbdkqihzfu.exactdn.com/wp-content/themes/rabbit-sempress/style.css?ver=1.7.61"
     ],
     "preload": [
       "https://ebbdkqihzfu.exactdn.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1",
-      "https://ebbdkqihzfu.exactdn.com/wp-content/themes/rabbit-sempress/style.css?ver=1.7.44"
+      "https://ebbdkqihzfu.exactdn.com/wp-content/themes/rabbit-sempress/style.css?ver=1.7.61"
     ],
     "https://api.w.org/": [
       "https://chee.party/wp-json/"
@@ -413,7 +414,7 @@
       "https://ebbdkqihzfu.exactdn.com/wp-includes/wlwmanifest.xml"
     ],
     "shortlink": [
-      "https://chee.party/2023/02/19/week-07-23/"
+      "https://chee.party/2023/02/22/getting-started-with-common-lisp-in-2023/"
     ],
     "authorization_endpoint": [
       "https://chee.party/wp-json/indieauth/1.0/auth"
@@ -453,14 +454,16 @@
       "https://chee.party/chee-rabbits"
     ],
     "bookmark": [
+      "https://chee.party/2023/02/22/getting-started-with-common-lisp-in-2023/",
       "https://chee.party/2023/02/19/week-07-23/",
       "https://chee.party/2023/02/17/thats-that-then/",
       "https://chee.party/2023/02/12/5218/",
       "https://chee.party/2023/02/05/week-five-23/",
-      "https://chee.party/2023/01/29/4th-week-23/",
-      "https://chee.party/2023/01/23/week-the-third-year-twenty-three/"
+      "https://chee.party/2023/01/29/4th-week-23/"
     ],
     "tag": [
+      "https://chee.party/tag/emacs",
+      "https://chee.party/tag/lisp",
       "https://chee.party/tag/weekly",
       "https://chee.party/tag/magicktitle"
     ],
@@ -570,7 +573,7 @@
       "media": "all",
       "type": "text/css"
     },
-    "https://ebbdkqihzfu.exactdn.com/wp-content/themes/rabbit-sempress/style.css?ver=1.7.44": {
+    "https://ebbdkqihzfu.exactdn.com/wp-content/themes/rabbit-sempress/style.css?ver=1.7.61": {
       "rels": [
         "preload"
       ],
@@ -595,7 +598,7 @@
       ],
       "type": "application/wlwmanifest+xml"
     },
-    "https://chee.party/2023/02/19/week-07-23/": {
+    "https://chee.party/2023/02/22/getting-started-with-common-lisp-in-2023/": {
       "rels": [
         "shortlink"
       ]
@@ -679,6 +682,25 @@
       "title": "View info about chee",
       "text": "chee"
     },
+    "https://chee.party/tag/emacs": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Emacs"
+    },
+    "https://chee.party/tag/lisp": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Lisp"
+    },
+    "https://chee.party/2023/02/19/week-07-23/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Sunday the 19th of February 2023 at 12:27pm CST",
+      "text": "23/2/19 12:27pm CST"
+    },
     "https://chee.party/tag/weekly": {
       "rels": [
         "tag"
@@ -718,13 +740,6 @@
       ],
       "title": "Sunday the 29th of January 2023 at 11:37am CST",
       "text": "23/1/29 11:37am CST"
-    },
-    "https://chee.party/2023/01/23/week-the-third-year-twenty-three/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Monday the 23rd of January 2023 at 5:22am CST",
-      "text": "23/1/23 5:22am CST"
     },
     "https://creativecommons.org/publicdomain/zero/1.0/": {
       "rels": [

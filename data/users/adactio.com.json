@@ -40,6 +40,425 @@
         "h-entry"
       ],
       "properties": {
+        "photo": [
+          {
+            "value": "https://adactio.com/images/uploaded/19940-1/small.jpg",
+            "srcset": {
+              "320w": "https://adactio.com/images/uploaded/19940-1/small.jpg",
+              "480w": "https://adactio.com/images/uploaded/19940-1/medium.jpg",
+              "800w": "https://adactio.com/images/uploaded/19940-1/large.jpg"
+            },
+            "alt": "Picture 1"
+          },
+          {
+            "value": "https://adactio.com/images/uploaded/19940-2/small.jpg",
+            "srcset": {
+              "320w": "https://adactio.com/images/uploaded/19940-2/small.jpg",
+              "480w": "https://adactio.com/images/uploaded/19940-2/medium.jpg",
+              "800w": "https://adactio.com/images/uploaded/19940-2/large.jpg"
+            },
+            "alt": "Picture 2"
+          }
+        ],
+        "content": [
+          {
+            "html": "<p>Checked in at Jolly Brewer. Wednesday night session 🎶🎻🎻🎻🎶 — with Jessica</p>",
+            "value": "Checked in at Jolly Brewer. Wednesday night session 🎶🎻🎻🎻🎶 — with Jessica"
+          }
+        ],
+        "name": [
+          "Checked in at Jolly Brewer. Wednesday night session 🎶🎻🎻🎻🎶 — with Jessica"
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "50.83893121"
+              ],
+              "longitude": [
+                "-0.13357020"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/notes/19940"
+        ],
+        "published": [
+          "2023-02-22T20:29:51Z"
+        ],
+        "syndication": [
+          "https://www.swarmapp.com/user/112073/checkin/63f67b2c5ff95364a46a53fd"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "<p>Reading Understanding Privacy by Heather Burns.</p>",
+            "value": "Reading Understanding Privacy by Heather Burns."
+          }
+        ],
+        "name": [
+          "Reading Understanding Privacy by Heather Burns."
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "50.83252268"
+              ],
+              "longitude": [
+                "-0.11807403"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/notes/19939"
+        ],
+        "published": [
+          "2023-02-22T18:28:21Z"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://github.com/w3c/audio-session/blob/main/explainer.md\">\nAudio Session API Explainer\n</a>\n</h3>\n\n<p>Jen pointed me to this proposal, which should help smooth over some of <a href=\"https://adactio.com/journal/19929\">the inconsistencies I documented in iOS</a> when it comes to the Web Audio API.</p>\n\n<p>I’ve preemptively add this bit of feature detection to <a href=\"https://thesession.org/\">The Session</a>:</p>\n\n<p><code>\nif ('audioSession' in navigator) {\n  navigator.audioSession.type = \"playback\";\n}\n</code></p>",
+            "value": "Audio Session API Explainer\n\n\n\nJen pointed me to this proposal, which should help smooth over some of the inconsistencies I documented in iOS when it comes to the Web Audio API.\n\nI’ve preemptively add this bit of feature detection to The Session:\n\n\nif ('audioSession' in navigator) {\n  navigator.audioSession.type = \"playback\";\n}"
+          }
+        ],
+        "name": [
+          "Audio Session API Explainer"
+        ],
+        "bookmark-of": [
+          "https://github.com/w3c/audio-session/blob/main/explainer.md"
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "50.83252654"
+              ],
+              "longitude": [
+                "-0.11807045"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/links/19938"
+        ],
+        "published": [
+          "2023-02-22T17:24:10Z"
+        ],
+        "category": [
+          "audiosession",
+          "apis",
+          "proposal",
+          "explainer",
+          "webaudio",
+          "apple",
+          "safari",
+          "ios",
+          "frontend",
+          "development",
+          "javascript"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://www.tempertemper.net/blog/buttons-links-and-focus\">\nButtons, links, and focus – tempertemper\n</a>\n</h3>\n\n<p>This is a handy guideline to remember, even if there exceptions:</p>\n\n<blockquote>\n  <p>When a keyboard user follows a link, their focus should be taken to the new place; when a keyboard user presses a button, focus should remain on that button.</p>\n</blockquote>",
+            "value": "Buttons, links, and focus – tempertemper\n\n\n\nThis is a handy guideline to remember, even if there exceptions:\n\n\n  When a keyboard user follows a link, their focus should be taken to the new place; when a keyboard user presses a button, focus should remain on that button."
+          }
+        ],
+        "name": [
+          "Buttons, links, and focus – tempertemper"
+        ],
+        "bookmark-of": [
+          "https://www.tempertemper.net/blog/buttons-links-and-focus"
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "50.83251066"
+              ],
+              "longitude": [
+                "-0.11807755"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/links/19937"
+        ],
+        "published": [
+          "2023-02-22T17:23:05Z"
+        ],
+        "category": [
+          "accessibility",
+          "a11y",
+          "focus",
+          "links",
+          "buttons",
+          "markup",
+          "html",
+          "frontend",
+          "development"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://web.dev/learn/html/\">\nLearn HTML\n</a>\n</h3>\n\n<p>This is a great step-by-step guide to HTML by Estelle.</p>",
+            "value": "Learn HTML\n\n\n\nThis is a great step-by-step guide to HTML by Estelle."
+          }
+        ],
+        "name": [
+          "Learn HTML"
+        ],
+        "bookmark-of": [
+          "https://web.dev/learn/html/"
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "50.83251470"
+              ],
+              "longitude": [
+                "-0.11806023"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/links/19936"
+        ],
+        "published": [
+          "2023-02-22T17:21:52Z"
+        ],
+        "category": [
+          "html",
+          "markup",
+          "frontend",
+          "development",
+          "resources",
+          "documentation",
+          "guide",
+          "learning",
+          "teaching"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://www.fujichia.com/house/posts/2023-02-21/index.html\">\nFujichia: Sayable Space\n</a>\n</h3>\n\n<p>This game is hard:</p>\n\n<blockquote>\n  <p>Sayable Space is a television game for 1 or more people, it consists of saying “Space” out loud at the same time as Jean-Luc Picard (Patrick Stewart) during the intro to Star Trek: The Next Generation. Or actually that’s just half of the game. The second half is saying “Space”, and the first half is remembering that you are playing this game.</p>\n</blockquote>",
+            "value": "Fujichia: Sayable Space\n\n\n\nThis game is hard:\n\n\n  Sayable Space is a television game for 1 or more people, it consists of saying “Space” out loud at the same time as Jean-Luc Picard (Patrick Stewart) during the intro to Star Trek: The Next Generation. Or actually that’s just half of the game. The second half is saying “Space”, and the first half is remembering that you are playing this game."
+          }
+        ],
+        "name": [
+          "Fujichia: Sayable Space"
+        ],
+        "bookmark-of": [
+          "https://www.fujichia.com/house/posts/2023-02-21/index.html"
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "50.83253551"
+              ],
+              "longitude": [
+                "-0.11809269"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/links/19932"
+        ],
+        "published": [
+          "2023-02-22T14:24:54Z"
+        ],
+        "category": [
+          "sayable",
+          "space",
+          "television",
+          "tv",
+          "game",
+          "fun",
+          "intro",
+          "credits",
+          "startrek"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "content": [
+          {
+            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://futureofinterface.org/exploratorium_category/pastvisions/\">\nPAST Visions of the Future - Future of Interfaces\n</a>\n</h3>\n\n<p>Video visions of aspirational futures made from the 1950s to the 2010s, mostly by white dudes with bullshit jobs.</p>",
+            "value": "PAST Visions of the Future - Future of Interfaces\n\n\n\nVideo visions of aspirational futures made from the 1950s to the 2010s, mostly by white dudes with bullshit jobs."
+          }
+        ],
+        "name": [
+          "PAST Visions of the Future - Future of Interfaces"
+        ],
+        "bookmark-of": [
+          "https://futureofinterface.org/exploratorium_category/pastvisions/"
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "50.83251036"
+              ],
+              "longitude": [
+                "-0.11804159"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "url": [
+          "https://adactio.com/links/19931"
+        ],
+        "published": [
+          "2023-02-22T14:19:12Z"
+        ],
+        "category": [
+          "future",
+          "visions",
+          "videos",
+          "design",
+          "technology",
+          "work",
+          "hardware",
+          "telecommunications",
+          "corporate"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
+          "Web Audio API update on iOS"
+        ],
+        "url": [
+          "https://adactio.com/journal/19929"
+        ],
+        "content": [
+          {
+            "html": "<p>I documented a <a href=\"https://adactio.com/journal/17709\">weird bug with web audio on iOS</a> a while back:</p>\n\n<blockquote>\n  <p>On some pages of <a href=\"https://thesession.org/\">The Session</a>, as well as the audio player for tunes (using the Web Audio API) there are also embedded YouTube videos (using the <code>video</code> element). Press play on the audio player; no sound. Press play on the YouTube video; you get sound. Now go back to the audio player and suddenly you do get sound!</p>\n\n  <p>It’s almost like playing a <code>video</code> or <code>audio</code> element “kicks” the browser into realising it should be playing the sound from the Web Audio API too.</p>\n\n  <p>This was happening on iOS devices set to mute, but I was also getting reports of it happening on devices with the sound on. But it’s that annoyingly intermittent kind of bug that’s really hard to reproduce consistently. Sometimes the sound doesn’t play. Sometimes it does.</p>\n</blockquote>\n\n<p>I found a workaround but it was really hacky. By playing a one-second long silent mp3 file using <code>audio</code>, you could “kick” the sound into behaving. Then you can use the Web Audio API and it would play consistently.</p>\n\n<p>Well, that’s all changed with the latest release of Mobile Safari. Now what happens is that the Web Audio stuff plays …for one second. And then stops.</p>\n\n<p>I removed the hacky workaround and the Web Audio API started behaving itself again …<em>but</em> your device can’t be set to silent.</p>\n\n<p>The good news is that the Web Audio behaviour seems to be consistent now. It only plays if the device isn’t muted. This restriction doesn’t apply to <code>video</code> and <code>audio</code> elements; they will still play even if your device is set to silent.</p>\n\n<p>This descrepancy between the two different ways of playing audio is kind of odd, but at least now the Web Audio behaviour is predictable.</p>\n\n<p>You can hear the Web Audio API in action by going to <a href=\"https://thesession.org/tunes/random\">any tune on The Session</a> and pressing the “play audio” button.</p>",
+            "value": "I documented a weird bug with web audio on iOS a while back:\n\n\n  On some pages of The Session, as well as the audio player for tunes (using the Web Audio API) there are also embedded YouTube videos (using the video element). Press play on the audio player; no sound. Press play on the YouTube video; you get sound. Now go back to the audio player and suddenly you do get sound!\n\n  It’s almost like playing a video or audio element “kicks” the browser into realising it should be playing the sound from the Web Audio API too.\n\n  This was happening on iOS devices set to mute, but I was also getting reports of it happening on devices with the sound on. But it’s that annoyingly intermittent kind of bug that’s really hard to reproduce consistently. Sometimes the sound doesn’t play. Sometimes it does.\n\n\nI found a workaround but it was really hacky. By playing a one-second long silent mp3 file using audio, you could “kick” the sound into behaving. Then you can use the Web Audio API and it would play consistently.\n\nWell, that’s all changed with the latest release of Mobile Safari. Now what happens is that the Web Audio stuff plays …for one second. And then stops.\n\nI removed the hacky workaround and the Web Audio API started behaving itself again …but your device can’t be set to silent.\n\nThe good news is that the Web Audio behaviour seems to be consistent now. It only plays if the device isn’t muted. This restriction doesn’t apply to video and audio elements; they will still play even if your device is set to silent.\n\nThis descrepancy between the two different ways of playing audio is kind of odd, but at least now the Web Audio behaviour is predictable.\n\nYou can hear the Web Audio API in action by going to any tune on The Session and pressing the “play audio” button."
+          }
+        ],
+        "location": [
+          {
+            "type": [
+              "h-geo"
+            ],
+            "properties": {
+              "latitude": [
+                "50.83252204"
+              ],
+              "longitude": [
+                "-0.11810365"
+              ]
+            },
+            "value": ""
+          }
+        ],
+        "published": [
+          "2023-02-22T10:15:29Z"
+        ],
+        "category": [
+          "webaudio",
+          "thesession",
+          "ios",
+          "bug",
+          "javascript",
+          "hack",
+          "devices",
+          "iphone",
+          "ipad",
+          "safari",
+          "frontend",
+          "development",
+          "audio",
+          "code",
+          "coding"
+        ],
+        "syndication": [
+          "https://adactio.medium.com/1e553fff7847"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
         "content": [
           {
             "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://www.robinrendle.com/notes/vibe-driven-development/\">\nVibe Driven Development\n</a>\n</h3>\n\n<p>This describes how I iterate on <a href=\"https://thesession.org/\">The Session</a>:</p>\n\n<blockquote>\n  <p>It comes down to this annoying, upsetting, stupid fact: the only way to build a great product is to use it every day, to stare at it, to hold it in your hands to feel its lumps. The data and customers will lie to you but the product never will.</p>\n</blockquote>\n\n<p>This whole post reminded of <a href=\"https://podcast.clearleft.com/season03/episode05/\">the episode of the Clearleft podcast on measuring design</a>.</p>\n\n<blockquote>\n  <p>The problem underlying all this is that when it comes to building a product, all data is garbage, a lie, or measuring the wrong thing. Folks will be obsessed with clicks and charts and NPS scores—the NFTs of product management—and in this sea of noise they believe they can see the product clearly. There are courses and books and talks all about measuring happiness and growth—surveys! surveys! surveys!—with everyone in the field believing that they’ve built a science when they’ve really built a cult.</p>\n</blockquote>",
@@ -624,414 +1043,6 @@
           "audio",
           "photography",
           "license"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "name": [
-          "Push"
-        ],
-        "url": [
-          "https://adactio.com/journal/19911"
-        ],
-        "content": [
-          {
-            "html": "<p><a href=\"https://webkit.org/blog/13878/web-push-for-web-apps-on-ios-and-ipados/\">Push notifications are finally arriving on iOS</a>—hallelujah! Like I said last year, <a href=\"https://adactio.com/journal/18900\">this is my number one wish for the iPhone</a>, though not because I personally ever plan to use the feature:</p>\n\n<blockquote>\n  <p>When I’m evangelising the benefits of building on the open web instead of making separate iOS and Android apps, I inevitably get asked about notifications. As long as mobile Safari doesn’t support them—even though desktop Safari does—I’m somewhat stumped. There’s no polyfill for this feature other than building an entire native app, which is a bit extreme as polyfills go.</p>\n</blockquote>\n\n<p>With push notifications in mobile Safari, the arguments for making proprietary apps get weaker. That’s good.</p>\n\n<p><a href=\"https://webkit.org/blog/13878/web-push-for-web-apps-on-ios-and-ipados/\">The announcement post</a> is a bit weird though. It never uses the phrase “progressive web apps”, even though clearly the entire article is all about progressive web apps. I don’t know if this down to Not-Invented-Here syndrome by the Apple/Webkit team, or because of genuine legal concerns around using the phrase.</p>\n\n<p>Instead, there are repeated references to “Home Screen apps”. This distinction makes some sense though. In order to use web push on iOS, your website needs to be added to the home screen.</p>\n\n<p>I think that would be fair enough, if it weren’t for the fact that adding a website to the home screen remains such a hidden feature that even power users would be forgiven for not knowing about it. <a href=\"https://adactio.com/journal/18252\">I described the steps here</a>:</p>\n\n<blockquote>\n<ol>\n<li>Tap the “share” icon. It’s not labelled “share.” It’s a square with an arrow coming out of the top of it.</li>\n<li>A drawer pops up. The option to “add to home screen” is nowhere to be seen. You have to pull the drawer up further to see the hidden options.</li>\n<li>Now you must find “add to home screen” in the list</li>\n</ol>\n<ul>\n<li>Copy</li>\n<li>Add to Reading List</li>\n<li>Add Bookmark</li>\n<li>Add to Favourites</li>\n<li>Find on Page</li>\n<li>Add to Home Screen</li>\n<li>Markup</li>\n<li>Print</li>\n</ul>\n</blockquote>\n\n<p>As long as this remains the case, we can expect usage of web push on iOS to be vanishingly low. Hardly anyone is going to add a website to their home screen when their web browser makes it so hard.</p>\n\n<p>If you’d like to people to install your progressive web app, you’ll almost certainly need to <a href=\"https://adactio.com/journal/18772\">prompt people to do so</a>.  Here’s <a href=\"https://thesession.org/app\">the page I made on thesession.org</a> with instructions on how to add to home screen. I link to it from the home page of the site.</p>\n\n<p>I wish that pages like that weren’t necessary. It’s not the best user experience. But as long as mobile Safari continues to bury the home screen option, we don’t have much choice but to tackle this ourselves.</p>",
-            "value": "Push notifications are finally arriving on iOS—hallelujah! Like I said last year, this is my number one wish for the iPhone, though not because I personally ever plan to use the feature:\n\n\n  When I’m evangelising the benefits of building on the open web instead of making separate iOS and Android apps, I inevitably get asked about notifications. As long as mobile Safari doesn’t support them—even though desktop Safari does—I’m somewhat stumped. There’s no polyfill for this feature other than building an entire native app, which is a bit extreme as polyfills go.\n\n\nWith push notifications in mobile Safari, the arguments for making proprietary apps get weaker. That’s good.\n\nThe announcement post is a bit weird though. It never uses the phrase “progressive web apps”, even though clearly the entire article is all about progressive web apps. I don’t know if this down to Not-Invented-Here syndrome by the Apple/Webkit team, or because of genuine legal concerns around using the phrase.\n\nInstead, there are repeated references to “Home Screen apps”. This distinction makes some sense though. In order to use web push on iOS, your website needs to be added to the home screen.\n\nI think that would be fair enough, if it weren’t for the fact that adding a website to the home screen remains such a hidden feature that even power users would be forgiven for not knowing about it. I described the steps here:\n\n\n\nTap the “share” icon. It’s not labelled “share.” It’s a square with an arrow coming out of the top of it.\nA drawer pops up. The option to “add to home screen” is nowhere to be seen. You have to pull the drawer up further to see the hidden options.\nNow you must find “add to home screen” in the list\n\n\nCopy\nAdd to Reading List\nAdd Bookmark\nAdd to Favourites\nFind on Page\nAdd to Home Screen\nMarkup\nPrint\n\n\n\nAs long as this remains the case, we can expect usage of web push on iOS to be vanishingly low. Hardly anyone is going to add a website to their home screen when their web browser makes it so hard.\n\nIf you’d like to people to install your progressive web app, you’ll almost certainly need to prompt people to do so.  Here’s the page I made on thesession.org with instructions on how to add to home screen. I link to it from the home page of the site.\n\nI wish that pages like that weren’t necessary. It’s not the best user experience. But as long as mobile Safari continues to bury the home screen option, we don’t have much choice but to tackle this ourselves."
-          }
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83250996"
-              ],
-              "longitude": [
-                "-0.11812879"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "published": [
-          "2023-02-17T10:58:29Z"
-        ],
-        "category": [
-          "pwas",
-          "progressive",
-          "webapps",
-          "homescreen",
-          "apple",
-          "mobile",
-          "safari",
-          "ios",
-          "push",
-          "notifications",
-          "ux"
-        ],
-        "syndication": [
-          "https://adactio.medium.com/4d1969885128"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "content": [
-          {
-            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://montaigne.io/\">\nMontaigne\n</a>\n</h3>\n\n<p>This is an interesting little blogging tool: it turns a folder of notes on your Mac into a website.</p>\n\n<blockquote>\n  <ol>\n  <li>Create dedicated folder in the Apple Notes.</li>\n  <li>Connect it to Montaigne.</li>\n  <li>Add notes with your content.</li>\n  <li>Everything will be published to the web automatically.</li>\n  </ol>\n</blockquote>",
-            "value": "Montaigne\n\n\n\nThis is an interesting little blogging tool: it turns a folder of notes on your Mac into a website.\n\n\n  \n  Create dedicated folder in the Apple Notes.\n  Connect it to Montaigne.\n  Add notes with your content.\n  Everything will be published to the web automatically."
-          }
-        ],
-        "name": [
-          "Montaigne"
-        ],
-        "bookmark-of": [
-          "https://montaigne.io/"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83250208"
-              ],
-              "longitude": [
-                "-0.11811283"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/links/19910"
-        ],
-        "published": [
-          "2023-02-16T18:27:02Z"
-        ],
-        "category": [
-          "blogging",
-          "blogs",
-          "indieweb",
-          "personal",
-          "publishing",
-          "montaigne",
-          "apple",
-          "notes",
-          "mac"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "content": [
-          {
-            "html": "<p>Brightonians! Come and join me and @cassiecodes@front-end.social for an evening of (free!) pizza, drinks, and talks on Monday, February 27th:</p>\n\n<p><a href=\"https://beyondtellerrand.com/events/stories-on-the-road\">https://beyondtellerrand.com/events/stories-on-the-road</a></p>",
-            "value": "Brightonians! Come and join me and @cassiecodes@front-end.social for an evening of (free!) pizza, drinks, and talks on Monday, February 27th:\n\nhttps://beyondtellerrand.com/events/stories-on-the-road"
-          }
-        ],
-        "name": [
-          "Brightonians! Come and join me and @cassiecodes@front-end.social for an evening of (free!) pizza, drinks, and talks on Monday, February 27th:\n\nhttps://beyondtellerrand.com/events/stories-on-the-road"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83247926"
-              ],
-              "longitude": [
-                "-0.11810033"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/notes/19907"
-        ],
-        "published": [
-          "2023-02-16T12:42:39Z"
-        ],
-        "syndication": [
-          "https://mastodon.social/@adactio/109874469930247835"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "content": [
-          {
-            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://www.eventbrite.com/e/unconference-design-systems-culture-registration-520628863947\">\nUnConference: Design Systems Culture\n</a>\n</h3>\n\n<p>This free online event is happening at 7pm UK time this evening. I saw Ben give a talk on this at Clarity, and it was excellent. There was a lot of crossover with what I’ve been trying to get at with the intersection of declarative design and culture, except Ben expresses it far more clearly than me. The bastard.</p>\n\n<blockquote>\n  <p>If you feel like you’re swimming upstream with your design system, it’s likely the result of a cultural problem—not a technical one. It’s time for you to look at your design system from a different angle. </p>\n</blockquote>",
-            "value": "UnConference: Design Systems Culture\n\n\n\nThis free online event is happening at 7pm UK time this evening. I saw Ben give a talk on this at Clarity, and it was excellent. There was a lot of crossover with what I’ve been trying to get at with the intersection of declarative design and culture, except Ben expresses it far more clearly than me. The bastard.\n\n\n  If you feel like you’re swimming upstream with your design system, it’s likely the result of a cultural problem—not a technical one. It’s time for you to look at your design system from a different angle."
-          }
-        ],
-        "name": [
-          "UnConference: Design Systems Culture"
-        ],
-        "bookmark-of": [
-          "https://www.eventbrite.com/e/unconference-design-systems-culture-registration-520628863947"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83250924"
-              ],
-              "longitude": [
-                "-0.11808728"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/links/19905"
-        ],
-        "published": [
-          "2023-02-16T10:57:07Z"
-        ],
-        "category": [
-          "online",
-          "event",
-          "design",
-          "systems",
-          "culture"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "photo": [
-          {
-            "value": "https://adactio.com/images/uploaded/19904/small.jpg",
-            "srcset": {
-              "320w": "https://adactio.com/images/uploaded/19904/small.jpg",
-              "480w": "https://adactio.com/images/uploaded/19904/medium.jpg",
-              "800w": "https://adactio.com/images/uploaded/19904/large.jpg"
-            },
-            "alt": "Checked in at Jolly Brewer. Sessioning — with Jessica"
-          }
-        ],
-        "content": [
-          {
-            "html": "<p>Checked in at Jolly Brewer. Sessioning — with Jessica</p>",
-            "value": "Checked in at Jolly Brewer. Sessioning — with Jessica"
-          }
-        ],
-        "name": [
-          "Checked in at Jolly Brewer. Sessioning — with Jessica"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83893121"
-              ],
-              "longitude": [
-                "-0.13357020"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/notes/19904"
-        ],
-        "published": [
-          "2023-02-15T21:24:18Z"
-        ],
-        "syndication": [
-          "https://www.swarmapp.com/user/112073/checkin/63ed4d7085f8f503169d96f0"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "name": [
-          "Brandolini’s blockchain"
-        ],
-        "url": [
-          "https://adactio.com/journal/19903"
-        ],
-        "content": [
-          {
-            "html": "<p>I’ve already written about <a href=\"https://adactio.com/journal/19892\">how much I enjoyed hosting Leading Design San Francisco</a> last week.</p>\n\n<p>All the speakers were terrific. <a href=\"https://leadingdesign.com/conferences/sanfran-2023/speakers/lola-oyelayo-pearson/#frying-pan-to-the-fire-choosing-the-unpopular-path\">Lola’s talk</a> was particularly …um, interesting:</p>\n\n<blockquote>\n  <p>In this talk, Lola will share her adventures in the world of blockchain, the hostility she experienced in her first go-round in 2018, and why she’s chosen to head back to a technology that is going through its largest reputational and social crisis to date.</p>\n</blockquote>\n\n<p>Wait …I was supposed to stand on stage and introduce a talk that was (at least partly) about blockchain? <a href=\"https://adactio.com/journal/19514\">I have opinions</a>.</p>\n\n<p>As it turned out, Lola warned me that I’d be making an appearance in her talk. She was going to quote <a href=\"https://adactio.com/journal/19514\">that blog post</a>. Before the talk, I asked her how obnoxious I could be about blockchain in her intro. She told me to bring it.</p>\n\n<p>So in the introduction, I deployed all the sarcasm I had in me and said:</p>\n\n<blockquote>\n  <p>Listen, we designers have a tendency to be over-critical of things sometimes. There are all these ideas that we dismiss: phrenology, homeopathy, flat-earthism …blockchain. Haters gonna hate.</p>\n\n  <p>I remember somebody asking online a while back, “Why the hate for web3?” And someone I know responded by saying “We hate it because we understand it.” I think there’s a lot of truth to that.</p>\n\n  <p>But look, just because blockchains are powering crypto ponzi schemes and N F fucking Ts, it’s worth remembering that it’s also simply a technology. It’s a technological solution in search of a problem.</p>\n\n  <p>To be fair, it’s still early days. After all, it’s only been <em>over a decade now</em>.</p>\n\n  <p>It’s like the law of instrument says; when all you have is a hammer, everything looks like a nail. Blockchain is like that. Except the hammer is also made of glass.</p>\n\n  <p>Anyway, Lola is going to defend the indefensible and talk about blockchain. One thing to keep in mind is this: remember when everyone was talking about “The Cloud”? And then it turned out that you could substitute the phrase “someone else’s server” for “The Cloud?” Well, every time you hear Lola say the word “blockchain”, I’d like you to mentally substitute the phrase “multiple copies of a spreadsheet.”</p>\n\n  <p>Please give an open mind and a warm welcome to Lola Oyelayo Pearson!</p>\n</blockquote>\n\n<p>I got some laughs. I also got lots of gasps and pearl-clutching, as though I were saying something taboo. Welcome to San Francisco.</p>\n\n<p>Lola gave as good as she got. I got a roasting in her talk.</p>\n\n<p>And just to clarify, Lola and I are friends—this was a consensual smackdown.</p>\n\n<p>There was a very serious point to Lola’s talk. Cryptobollocks and other blockchain-powered schemes have historically been <em>very</em> bro-y, and exploitative of non-bro communities. Lola wants to fight that trend.</p>\n\n<p>I get it. But it reminds me a bit of the justifications you hear from people who go to work at Facebook claiming that they can do more good from the inside. Whatever helps you sleep at night.</p>\n\n<p>The crux of Lola’s belief is this: blockchain technology is inevitable, therefore it is uncumbent on us as ethical designers to ensure that the technology is deployed in a way that empowers people instead of exploiting them.</p>\n\n<p>But I take issue with the premise. Blockchain technology is not inevitable. That’s the worst kind of <a href=\"https://en.wikipedia.org/wiki/Technological_determinism\">technological determinism</a>. It’s defeatist. It’s a depressing view of “progress” driven not by people, but by technological forces beyond our control.</p>\n\n<p>I refuse to accept that anti-humanist deterministic view.</p>\n\n<p>In any case, for technological determinism to have any validity, there needs to be something to it. At least virtual reality and machine learning are based on some actual technologies. In the case of cryptobollocks, there is no <em>there</em> there. There is nothing <em>except</em> the hype, which is why you’ll see blockchain enthusiasts trying to ride the coattails of trending technologies in a logical fallacy that goes something like this:</p>\n\n<ol>\n<li>There are technologies that will be really big in the future,</li>\n<li>blockchain is a technology, therefore</li>\n<li>blockchain will be really big in the future.</li>\n</ol>\n\n<p>Blockchain is bullshit. It isn’t even very clever bullshit. And it certainly isn’t inevitable.</p>",
-            "value": "I’ve already written about how much I enjoyed hosting Leading Design San Francisco last week.\n\nAll the speakers were terrific. Lola’s talk was particularly …um, interesting:\n\n\n  In this talk, Lola will share her adventures in the world of blockchain, the hostility she experienced in her first go-round in 2018, and why she’s chosen to head back to a technology that is going through its largest reputational and social crisis to date.\n\n\nWait …I was supposed to stand on stage and introduce a talk that was (at least partly) about blockchain? I have opinions.\n\nAs it turned out, Lola warned me that I’d be making an appearance in her talk. She was going to quote that blog post. Before the talk, I asked her how obnoxious I could be about blockchain in her intro. She told me to bring it.\n\nSo in the introduction, I deployed all the sarcasm I had in me and said:\n\n\n  Listen, we designers have a tendency to be over-critical of things sometimes. There are all these ideas that we dismiss: phrenology, homeopathy, flat-earthism …blockchain. Haters gonna hate.\n\n  I remember somebody asking online a while back, “Why the hate for web3?” And someone I know responded by saying “We hate it because we understand it.” I think there’s a lot of truth to that.\n\n  But look, just because blockchains are powering crypto ponzi schemes and N F fucking Ts, it’s worth remembering that it’s also simply a technology. It’s a technological solution in search of a problem.\n\n  To be fair, it’s still early days. After all, it’s only been over a decade now.\n\n  It’s like the law of instrument says; when all you have is a hammer, everything looks like a nail. Blockchain is like that. Except the hammer is also made of glass.\n\n  Anyway, Lola is going to defend the indefensible and talk about blockchain. One thing to keep in mind is this: remember when everyone was talking about “The Cloud”? And then it turned out that you could substitute the phrase “someone else’s server” for “The Cloud?” Well, every time you hear Lola say the word “blockchain”, I’d like you to mentally substitute the phrase “multiple copies of a spreadsheet.”\n\n  Please give an open mind and a warm welcome to Lola Oyelayo Pearson!\n\n\nI got some laughs. I also got lots of gasps and pearl-clutching, as though I were saying something taboo. Welcome to San Francisco.\n\nLola gave as good as she got. I got a roasting in her talk.\n\nAnd just to clarify, Lola and I are friends—this was a consensual smackdown.\n\nThere was a very serious point to Lola’s talk. Cryptobollocks and other blockchain-powered schemes have historically been very bro-y, and exploitative of non-bro communities. Lola wants to fight that trend.\n\nI get it. But it reminds me a bit of the justifications you hear from people who go to work at Facebook claiming that they can do more good from the inside. Whatever helps you sleep at night.\n\nThe crux of Lola’s belief is this: blockchain technology is inevitable, therefore it is uncumbent on us as ethical designers to ensure that the technology is deployed in a way that empowers people instead of exploiting them.\n\nBut I take issue with the premise. Blockchain technology is not inevitable. That’s the worst kind of technological determinism. It’s defeatist. It’s a depressing view of “progress” driven not by people, but by technological forces beyond our control.\n\nI refuse to accept that anti-humanist deterministic view.\n\nIn any case, for technological determinism to have any validity, there needs to be something to it. At least virtual reality and machine learning are based on some actual technologies. In the case of cryptobollocks, there is no there there. There is nothing except the hype, which is why you’ll see blockchain enthusiasts trying to ride the coattails of trending technologies in a logical fallacy that goes something like this:\n\n\nThere are technologies that will be really big in the future,\nblockchain is a technology, therefore\nblockchain will be really big in the future.\n\n\nBlockchain is bullshit. It isn’t even very clever bullshit. And it certainly isn’t inevitable."
-          }
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83251773"
-              ],
-              "longitude": [
-                "-0.11809825"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "published": [
-          "2023-02-15T17:31:35Z"
-        ],
-        "category": [
-          "change",
-          "leadingdesign",
-          "ldconf",
-          "sanfrancisco",
-          "conferences",
-          "events",
-          "hosting",
-          "talks",
-          "speaking",
-          "cryptobollocks",
-          "blockchain",
-          "technology",
-          "determinism",
-          "future",
-          "hype",
-          "trends",
-          "bullshit"
-        ],
-        "syndication": [
-          "https://adactio.medium.com/de31b9193a7"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "name": [
-          "The first four speakers for UX London 2023"
-        ],
-        "url": [
-          "https://adactio.com/journal/19902"
-        ],
-        "content": [
-          {
-            "html": "<p>Please put your fingers on the desk in front of you and move them up and down rapidly in the manner of a snare drum…</p>\n\n<p>I’m very happy to announce <a href=\"https://2023.uxlondon.com/speakers/\">the first four speakers</a> for <a href=\"https://2023.uxlondon.com/\">UX London 2023</a>:</p>\n\n<ul>\n<li>\n<a href=\"https://2023.uxlondon.com/speakers/imran-afzal/\">Imran Afzal</a>, Principal Designer at Co-op Digital,</li>\n<li>\n<a href=\"https://2023.uxlondon.com/speakers/vimla-appadoo\">Vimla Appadoo</a>, Head of Experience at Culture Shift,</li>\n<li>\n<a href=\"https://2023.uxlondon.com/speakers/daniel-burka\">Daniel Burka</a>, Director of Design at Resolve to Save Lives, and </li>\n<li>\n<a href=\"https://2023.uxlondon.com/speakers/mansi-gupta/\">Mansi Gupta</a>, Founder of Unconform.</li>\n</ul>\n\n<div style=\"display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1em\">\n<a href=\"https://2023.uxlondon.com/speakers/imran-afzal/\">\n<picture>\n<source srcset=\"https://2023.uxlondon.com/assets/img/speakers/imran-afzal.avif\" type=\"image/avif\">\n<source srcset=\"https://2023.uxlondon.com/assets/img/speakers/imran-afzal.webp\" type=\"image/webp\">\n<img src=\"https://2023.uxlondon.com/assets/img/speakers/imran-afzal.jpg\" alt=\"A tan-skinned young man with short hair and a neatly trimmed beard wearing glasses, a baseball cap and jacket smiles in front of a wall.\">\n</source></source></picture>\n</a>\n<a href=\"https://2023.uxlondon.com/speakers/vimla-appadoo\">\n<picture>\n<source srcset=\"https://2023.uxlondon.com/assets/img/speakers/vimla-appadoo.avif\" type=\"image/avif\">\n<source srcset=\"https://2023.uxlondon.com/assets/img/speakers/vimla-appadoo.webp\" type=\"image/webp\">\n<img src=\"https://2023.uxlondon.com/assets/img/speakers/vimla-appadoo.jpg\" alt=\"A brown-skinned woman with short hair and a colourful yellow top wearing a virtual reality headset looking to one side.\">\n</source></source></picture>\n</a>\n<a href=\"https://2023.uxlondon.com/speakers/daniel-burka\">\n<picture>\n<source srcset=\"https://2023.uxlondon.com/assets/img/speakers/daniel-burka.avif\" type=\"image/avif\">\n<source srcset=\"https://2023.uxlondon.com/assets/img/speakers/daniel-burka.webp\" type=\"image/webp\">\n<img src=\"https://2023.uxlondon.com/assets/img/speakers/daniel-burka.jpg\" alt=\"A studio portrait of a clean-shaven light-skinned man with short dark hair in a white shirt.\">\n</source></source></picture>\n</a>\n<a href=\"https://2023.uxlondon.com/speakers/mansi-gupta/\">\n<picture>\n<source srcset=\"https://2023.uxlondon.com/assets/img/speakers/mansi-gupta.avif\" type=\"image/avif\">\n<source srcset=\"https://2023.uxlondon.com/assets/img/speakers/mansi-gupta.webp\" type=\"image/webp\">\n<img class=\"Hero-speaker__img\" src=\"https://2023.uxlondon.com/assets/img/speakers/mansi-gupta.jpg\" alt=\"An outdoor portrait of a brown-skinned woman with shoulder-length black hair and glasses.\">\n</source></source></picture>\n</a>\n</div>\n\n<p>This is shaping up nicely! You can expect some more speaker announcements before too long.</p>\n\n<p>But don’t wait too long to <a href=\"https://ti.to/clearleft/ux-london-2023\">get your ticket</a>—early-bird pricing ends this month on Friday, February 24th. Then the price goes up by £200. If you need to convince your boss, here are some <a href=\"https://2023.uxlondon.com/reasons-to-attend/\">reasons to attend</a>.</p>\n\n<p>I very much look forward to seeing you at <a href=\"https://2023.uxlondon.com/venue/\">Tobacco Dock</a> on June 22nd and 23rd this year!</p>",
-            "value": "Please put your fingers on the desk in front of you and move them up and down rapidly in the manner of a snare drum…\n\nI’m very happy to announce the first four speakers for UX London 2023:\n\n\nImran Afzal, Principal Designer at Co-op Digital,\nVimla Appadoo, Head of Experience at Culture Shift,\nDaniel Burka, Director of Design at Resolve to Save Lives, and \nMansi Gupta, Founder of Unconform.\n\n\n\n\n\n\n\n A tan-skinned young man with short hair and a neatly trimmed beard wearing glasses, a baseball cap and jacket smiles in front of a wall. \n\n\n\n\n\n\n A brown-skinned woman with short hair and a colourful yellow top wearing a virtual reality headset looking to one side. \n\n\n\n\n\n\n A studio portrait of a clean-shaven light-skinned man with short dark hair in a white shirt. \n\n\n\n\n\n\n An outdoor portrait of a brown-skinned woman with shoulder-length black hair and glasses. \n\n\n\n\nThis is shaping up nicely! You can expect some more speaker announcements before too long.\n\nBut don’t wait too long to get your ticket—early-bird pricing ends this month on Friday, February 24th. Then the price goes up by £200. If you need to convince your boss, here are some reasons to attend.\n\nI very much look forward to seeing you at Tobacco Dock on June 22nd and 23rd this year!"
-          }
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83250932"
-              ],
-              "longitude": [
-                "-0.11808739"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "published": [
-          "2023-02-14T16:36:01Z"
-        ],
-        "category": [
-          "uxlondon",
-          "conferences",
-          "events",
-          "clearleft",
-          "curation",
-          "talks",
-          "presentations",
-          "lineup"
-        ],
-        "syndication": [
-          "https://adactio.medium.com/5b067c0f5128"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "content": [
-          {
-            "html": "<h3>\n<a class=\"taggedlink p-name u-bookmark-of\" href=\"https://andy-bell.co.uk/the-extremely-loud-minority/\">\nThe (extremely) loud minority | Andy Bell\n</a>\n</h3>\n\n<blockquote>\n  <p>I’ll compare WordPress with React and Vue, because if you didn’t look at the data, you’d think everyone was building with them, right? Absolutely wrong.</p>\n</blockquote>\n\n<p>Andy reminds of the skewed world of <a href=\"https://adactio.com/journal/15011\">dev perception</a>:</p>\n\n<blockquote>\n  <p>It’s understandable to think that JavaScript frameworks and their communities are eating the web because places like Twitter are <em>awash with very loud voices from said communities</em>.</p>\n\n<p>Always remember that although a <strong>subset of the JavaScript community</strong> can be <strong>very loud</strong>, they represent a <strong>paltry portion of the web as a whole</strong>.</p>\n</blockquote>",
-            "value": "The (extremely) loud minority | Andy Bell\n\n\n\n\n  I’ll compare WordPress with React and Vue, because if you didn’t look at the data, you’d think everyone was building with them, right? Absolutely wrong.\n\n\nAndy reminds of the skewed world of dev perception:\n\n\n  It’s understandable to think that JavaScript frameworks and their communities are eating the web because places like Twitter are awash with very loud voices from said communities.\n\nAlways remember that although a subset of the JavaScript community can be very loud, they represent a paltry portion of the web as a whole."
-          }
-        ],
-        "name": [
-          "The (extremely) loud minority | Andy Bell"
-        ],
-        "bookmark-of": [
-          "https://andy-bell.co.uk/the-extremely-loud-minority/"
-        ],
-        "location": [
-          {
-            "type": [
-              "h-geo"
-            ],
-            "properties": {
-              "latitude": [
-                "50.83248050"
-              ],
-              "longitude": [
-                "-0.11806303"
-              ]
-            },
-            "value": ""
-          }
-        ],
-        "url": [
-          "https://adactio.com/links/19901"
-        ],
-        "published": [
-          "2023-02-14T15:39:42Z"
-        ],
-        "category": [
-          "frontend",
-          "development",
-          "javascript",
-          "frameworks",
-          "libraries",
-          "react",
-          "perception"
         ]
       }
     },
@@ -1776,6 +1787,14 @@
       "https://adactio.com/includes/css/print.css"
     ],
     "bookmark": [
+      "https://adactio.com/notes/19940",
+      "https://adactio.com/notes/19939",
+      "https://adactio.com/links/19938",
+      "https://adactio.com/links/19937",
+      "https://adactio.com/links/19936",
+      "https://adactio.com/links/19932",
+      "https://adactio.com/links/19931",
+      "https://adactio.com/journal/19929",
       "https://adactio.com/links/19928",
       "https://adactio.com/journal/19927",
       "https://adactio.com/notes/19926",
@@ -1787,23 +1806,75 @@
       "https://adactio.com/journal/19919",
       "https://adactio.com/links/19918",
       "https://adactio.com/notes/19914",
-      "https://adactio.com/links/19912",
-      "https://adactio.com/journal/19911",
-      "https://adactio.com/links/19910",
-      "https://adactio.com/notes/19907",
-      "https://adactio.com/links/19905",
-      "https://adactio.com/notes/19904",
-      "https://adactio.com/journal/19903",
-      "https://adactio.com/journal/19902",
-      "https://adactio.com/links/19901"
+      "https://adactio.com/links/19912"
+    ],
+    "syndication": [
+      "https://www.swarmapp.com/user/112073/checkin/63f67b2c5ff95364a46a53fd",
+      "https://adactio.medium.com/1e553fff7847",
+      "https://adactio.medium.com/9cf59b8e32ec",
+      "https://mastodon.social/@adactio/109903219536924450",
+      "https://adactio.medium.com/437589e7bf8d",
+      "https://www.swarmapp.com/user/112073/checkin/63f25ad2af741840746163a9",
+      "https://mastodon.social/@adactio/109890927150265906",
+      "https://adactio.medium.com/5e5a873d0a81",
+      "https://mastodon.social/@adactio/109880214275441011"
     ],
     "tag": [
+      "https://adactio.com/tags/audiosession",
+      "https://adactio.com/tags/apis",
+      "https://adactio.com/tags/proposal",
+      "https://adactio.com/tags/explainer",
+      "https://adactio.com/tags/webaudio",
+      "https://adactio.com/tags/apple",
+      "https://adactio.com/tags/safari",
+      "https://adactio.com/tags/ios",
+      "https://adactio.com/tags/frontend",
+      "https://adactio.com/tags/development",
+      "https://adactio.com/tags/javascript",
+      "https://adactio.com/tags/accessibility",
+      "https://adactio.com/tags/a11y",
+      "https://adactio.com/tags/focus",
+      "https://adactio.com/tags/links",
+      "https://adactio.com/tags/buttons",
+      "https://adactio.com/tags/markup",
+      "https://adactio.com/tags/html",
+      "https://adactio.com/tags/resources",
+      "https://adactio.com/tags/documentation",
+      "https://adactio.com/tags/guide",
+      "https://adactio.com/tags/learning",
+      "https://adactio.com/tags/teaching",
+      "https://adactio.com/tags/sayable",
+      "https://adactio.com/tags/space",
+      "https://adactio.com/tags/television",
+      "https://adactio.com/tags/tv",
+      "https://adactio.com/tags/game",
+      "https://adactio.com/tags/fun",
+      "https://adactio.com/tags/intro",
+      "https://adactio.com/tags/credits",
+      "https://adactio.com/tags/startrek",
+      "https://adactio.com/tags/future",
+      "https://adactio.com/tags/visions",
+      "https://adactio.com/tags/videos",
+      "https://adactio.com/tags/design",
+      "https://adactio.com/tags/technology",
+      "https://adactio.com/tags/work",
+      "https://adactio.com/tags/hardware",
+      "https://adactio.com/tags/telecommunications",
+      "https://adactio.com/tags/corporate",
+      "https://adactio.com/tags/thesession",
+      "https://adactio.com/tags/bug",
+      "https://adactio.com/tags/hack",
+      "https://adactio.com/tags/devices",
+      "https://adactio.com/tags/iphone",
+      "https://adactio.com/tags/ipad",
+      "https://adactio.com/tags/audio",
+      "https://adactio.com/tags/code",
+      "https://adactio.com/tags/coding",
       "https://adactio.com/tags/vibes",
       "https://adactio.com/tags/data",
       "https://adactio.com/tags/measurement",
       "https://adactio.com/tags/numbers",
       "https://adactio.com/tags/products",
-      "https://adactio.com/tags/design",
       "https://adactio.com/tags/iteration",
       "https://adactio.com/tags/gut",
       "https://adactio.com/tags/uxlondon",
@@ -1815,23 +1886,17 @@
       "https://adactio.com/tags/format",
       "https://adactio.com/tags/talks",
       "https://adactio.com/tags/workshops",
-      "https://adactio.com/tags/javascript",
       "https://adactio.com/tags/build",
       "https://adactio.com/tags/scripts",
       "https://adactio.com/tags/tooling",
       "https://adactio.com/tags/complexity",
       "https://adactio.com/tags/maintenance",
-      "https://adactio.com/tags/frontend",
-      "https://adactio.com/tags/development",
       "https://adactio.com/tags/toolchains",
       "https://adactio.com/tags/pwas",
       "https://adactio.com/tags/progressive",
       "https://adactio.com/tags/webapps",
       "https://adactio.com/tags/homescreen",
-      "https://adactio.com/tags/apple",
       "https://adactio.com/tags/mobile",
-      "https://adactio.com/tags/safari",
-      "https://adactio.com/tags/ios",
       "https://adactio.com/tags/push",
       "https://adactio.com/tags/notifications",
       "https://adactio.com/tags/ux",
@@ -1853,56 +1918,8 @@
       "https://adactio.com/tags/publicdomain",
       "https://adactio.com/tags/images",
       "https://adactio.com/tags/photos",
-      "https://adactio.com/tags/audio",
       "https://adactio.com/tags/photography",
-      "https://adactio.com/tags/license",
-      "https://adactio.com/tags/blogging",
-      "https://adactio.com/tags/blogs",
-      "https://adactio.com/tags/indieweb",
-      "https://adactio.com/tags/personal",
-      "https://adactio.com/tags/publishing",
-      "https://adactio.com/tags/montaigne",
-      "https://adactio.com/tags/notes",
-      "https://adactio.com/tags/mac",
-      "https://adactio.com/tags/online",
-      "https://adactio.com/tags/event",
-      "https://adactio.com/tags/systems",
-      "https://adactio.com/tags/culture",
-      "https://adactio.com/tags/change",
-      "https://adactio.com/tags/leadingdesign",
-      "https://adactio.com/tags/ldconf",
-      "https://adactio.com/tags/sanfrancisco",
-      "https://adactio.com/tags/hosting",
-      "https://adactio.com/tags/speaking",
-      "https://adactio.com/tags/cryptobollocks",
-      "https://adactio.com/tags/blockchain",
-      "https://adactio.com/tags/technology",
-      "https://adactio.com/tags/determinism",
-      "https://adactio.com/tags/future",
-      "https://adactio.com/tags/hype",
-      "https://adactio.com/tags/trends",
-      "https://adactio.com/tags/bullshit",
-      "https://adactio.com/tags/curation",
-      "https://adactio.com/tags/presentations",
-      "https://adactio.com/tags/lineup",
-      "https://adactio.com/tags/frameworks",
-      "https://adactio.com/tags/libraries",
-      "https://adactio.com/tags/react",
-      "https://adactio.com/tags/perception"
-    ],
-    "syndication": [
-      "https://adactio.medium.com/9cf59b8e32ec",
-      "https://mastodon.social/@adactio/109903219536924450",
-      "https://adactio.medium.com/437589e7bf8d",
-      "https://www.swarmapp.com/user/112073/checkin/63f25ad2af741840746163a9",
-      "https://mastodon.social/@adactio/109890927150265906",
-      "https://adactio.medium.com/5e5a873d0a81",
-      "https://mastodon.social/@adactio/109880214275441011",
-      "https://adactio.medium.com/4d1969885128",
-      "https://mastodon.social/@adactio/109874469930247835",
-      "https://www.swarmapp.com/user/112073/checkin/63ed4d7085f8f503169d96f0",
-      "https://adactio.medium.com/de31b9193a7",
-      "https://adactio.medium.com/5b067c0f5128"
+      "https://adactio.com/tags/license"
     ],
     "next": [
       "https://adactio.com/?start=20"
@@ -2293,6 +2310,366 @@
       ],
       "text": "music"
     },
+    "https://adactio.com/notes/19940": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n8:29pm\n\n"
+    },
+    "https://www.swarmapp.com/user/112073/checkin/63f67b2c5ff95364a46a53fd": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "Swarm"
+    },
+    "https://adactio.com/notes/19939": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n6:28pm\n\n"
+    },
+    "https://adactio.com/links/19938": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n5:24pm\n\n"
+    },
+    "https://adactio.com/tags/audiosession": {
+      "rels": [
+        "tag"
+      ],
+      "text": "audiosession"
+    },
+    "https://adactio.com/tags/apis": {
+      "rels": [
+        "tag"
+      ],
+      "text": "apis"
+    },
+    "https://adactio.com/tags/proposal": {
+      "rels": [
+        "tag"
+      ],
+      "text": "proposal"
+    },
+    "https://adactio.com/tags/explainer": {
+      "rels": [
+        "tag"
+      ],
+      "text": "explainer"
+    },
+    "https://adactio.com/tags/webaudio": {
+      "rels": [
+        "tag"
+      ],
+      "text": "webaudio"
+    },
+    "https://adactio.com/tags/apple": {
+      "rels": [
+        "tag"
+      ],
+      "text": "apple"
+    },
+    "https://adactio.com/tags/safari": {
+      "rels": [
+        "tag"
+      ],
+      "text": "safari"
+    },
+    "https://adactio.com/tags/ios": {
+      "rels": [
+        "tag"
+      ],
+      "text": "ios"
+    },
+    "https://adactio.com/tags/frontend": {
+      "rels": [
+        "tag"
+      ],
+      "text": "frontend"
+    },
+    "https://adactio.com/tags/development": {
+      "rels": [
+        "tag"
+      ],
+      "text": "development"
+    },
+    "https://adactio.com/tags/javascript": {
+      "rels": [
+        "tag"
+      ],
+      "text": "javascript"
+    },
+    "https://adactio.com/links/19937": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n5:23pm\n\n"
+    },
+    "https://adactio.com/tags/accessibility": {
+      "rels": [
+        "tag"
+      ],
+      "text": "accessibility"
+    },
+    "https://adactio.com/tags/a11y": {
+      "rels": [
+        "tag"
+      ],
+      "text": "a11y"
+    },
+    "https://adactio.com/tags/focus": {
+      "rels": [
+        "tag"
+      ],
+      "text": "focus"
+    },
+    "https://adactio.com/tags/links": {
+      "rels": [
+        "tag"
+      ],
+      "text": "links"
+    },
+    "https://adactio.com/tags/buttons": {
+      "rels": [
+        "tag"
+      ],
+      "text": "buttons"
+    },
+    "https://adactio.com/tags/markup": {
+      "rels": [
+        "tag"
+      ],
+      "text": "markup"
+    },
+    "https://adactio.com/tags/html": {
+      "rels": [
+        "tag"
+      ],
+      "text": "html"
+    },
+    "https://adactio.com/links/19936": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n5:21pm\n\n"
+    },
+    "https://adactio.com/tags/resources": {
+      "rels": [
+        "tag"
+      ],
+      "text": "resources"
+    },
+    "https://adactio.com/tags/documentation": {
+      "rels": [
+        "tag"
+      ],
+      "text": "documentation"
+    },
+    "https://adactio.com/tags/guide": {
+      "rels": [
+        "tag"
+      ],
+      "text": "guide"
+    },
+    "https://adactio.com/tags/learning": {
+      "rels": [
+        "tag"
+      ],
+      "text": "learning"
+    },
+    "https://adactio.com/tags/teaching": {
+      "rels": [
+        "tag"
+      ],
+      "text": "teaching"
+    },
+    "https://adactio.com/links/19932": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n2:24pm\n\n"
+    },
+    "https://adactio.com/tags/sayable": {
+      "rels": [
+        "tag"
+      ],
+      "text": "sayable"
+    },
+    "https://adactio.com/tags/space": {
+      "rels": [
+        "tag"
+      ],
+      "text": "space"
+    },
+    "https://adactio.com/tags/television": {
+      "rels": [
+        "tag"
+      ],
+      "text": "television"
+    },
+    "https://adactio.com/tags/tv": {
+      "rels": [
+        "tag"
+      ],
+      "text": "tv"
+    },
+    "https://adactio.com/tags/game": {
+      "rels": [
+        "tag"
+      ],
+      "text": "game"
+    },
+    "https://adactio.com/tags/fun": {
+      "rels": [
+        "tag"
+      ],
+      "text": "fun"
+    },
+    "https://adactio.com/tags/intro": {
+      "rels": [
+        "tag"
+      ],
+      "text": "intro"
+    },
+    "https://adactio.com/tags/credits": {
+      "rels": [
+        "tag"
+      ],
+      "text": "credits"
+    },
+    "https://adactio.com/tags/startrek": {
+      "rels": [
+        "tag"
+      ],
+      "text": "startrek"
+    },
+    "https://adactio.com/links/19931": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n2:19pm\n\n"
+    },
+    "https://adactio.com/tags/future": {
+      "rels": [
+        "tag"
+      ],
+      "text": "future"
+    },
+    "https://adactio.com/tags/visions": {
+      "rels": [
+        "tag"
+      ],
+      "text": "visions"
+    },
+    "https://adactio.com/tags/videos": {
+      "rels": [
+        "tag"
+      ],
+      "text": "videos"
+    },
+    "https://adactio.com/tags/design": {
+      "rels": [
+        "tag"
+      ],
+      "text": "design"
+    },
+    "https://adactio.com/tags/technology": {
+      "rels": [
+        "tag"
+      ],
+      "text": "technology"
+    },
+    "https://adactio.com/tags/work": {
+      "rels": [
+        "tag"
+      ],
+      "text": "work"
+    },
+    "https://adactio.com/tags/hardware": {
+      "rels": [
+        "tag"
+      ],
+      "text": "hardware"
+    },
+    "https://adactio.com/tags/telecommunications": {
+      "rels": [
+        "tag"
+      ],
+      "text": "telecommunications"
+    },
+    "https://adactio.com/tags/corporate": {
+      "rels": [
+        "tag"
+      ],
+      "text": "corporate"
+    },
+    "https://adactio.com/journal/19929": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n\n10:15am\n\n"
+    },
+    "https://adactio.com/tags/thesession": {
+      "rels": [
+        "tag"
+      ],
+      "text": "thesession"
+    },
+    "https://adactio.com/tags/bug": {
+      "rels": [
+        "tag"
+      ],
+      "text": "bug"
+    },
+    "https://adactio.com/tags/hack": {
+      "rels": [
+        "tag"
+      ],
+      "text": "hack"
+    },
+    "https://adactio.com/tags/devices": {
+      "rels": [
+        "tag"
+      ],
+      "text": "devices"
+    },
+    "https://adactio.com/tags/iphone": {
+      "rels": [
+        "tag"
+      ],
+      "text": "iphone"
+    },
+    "https://adactio.com/tags/ipad": {
+      "rels": [
+        "tag"
+      ],
+      "text": "ipad"
+    },
+    "https://adactio.com/tags/audio": {
+      "rels": [
+        "tag"
+      ],
+      "text": "audio"
+    },
+    "https://adactio.com/tags/code": {
+      "rels": [
+        "tag"
+      ],
+      "text": "code"
+    },
+    "https://adactio.com/tags/coding": {
+      "rels": [
+        "tag"
+      ],
+      "text": "coding"
+    },
+    "https://adactio.medium.com/1e553fff7847": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "Medium"
+    },
     "https://adactio.com/links/19928": {
       "rels": [
         "bookmark"
@@ -2328,12 +2705,6 @@
         "tag"
       ],
       "text": "products"
-    },
-    "https://adactio.com/tags/design": {
-      "rels": [
-        "tag"
-      ],
-      "text": "design"
     },
     "https://adactio.com/tags/iteration": {
       "rels": [
@@ -2455,12 +2826,6 @@
       ],
       "text": "\n\n10:50am\n\n"
     },
-    "https://adactio.com/tags/javascript": {
-      "rels": [
-        "tag"
-      ],
-      "text": "javascript"
-    },
     "https://adactio.com/tags/build": {
       "rels": [
         "tag"
@@ -2490,18 +2855,6 @@
         "tag"
       ],
       "text": "maintenance"
-    },
-    "https://adactio.com/tags/frontend": {
-      "rels": [
-        "tag"
-      ],
-      "text": "frontend"
-    },
-    "https://adactio.com/tags/development": {
-      "rels": [
-        "tag"
-      ],
-      "text": "development"
     },
     "https://adactio.com/tags/toolchains": {
       "rels": [
@@ -2551,29 +2904,11 @@
       ],
       "text": "homescreen"
     },
-    "https://adactio.com/tags/apple": {
-      "rels": [
-        "tag"
-      ],
-      "text": "apple"
-    },
     "https://adactio.com/tags/mobile": {
       "rels": [
         "tag"
       ],
       "text": "mobile"
-    },
-    "https://adactio.com/tags/safari": {
-      "rels": [
-        "tag"
-      ],
-      "text": "safari"
-    },
-    "https://adactio.com/tags/ios": {
-      "rels": [
-        "tag"
-      ],
-      "text": "ios"
     },
     "https://adactio.com/tags/push": {
       "rels": [
@@ -2737,12 +3072,6 @@
       ],
       "text": "photos"
     },
-    "https://adactio.com/tags/audio": {
-      "rels": [
-        "tag"
-      ],
-      "text": "audio"
-    },
     "https://adactio.com/tags/photography": {
       "rels": [
         "tag"
@@ -2754,282 +3083,6 @@
         "tag"
       ],
       "text": "license"
-    },
-    "https://adactio.com/journal/19911": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n10:58am\n\n"
-    },
-    "https://adactio.medium.com/4d1969885128": {
-      "rels": [
-        "syndication"
-      ],
-      "text": "Medium"
-    },
-    "https://adactio.com/links/19910": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n6:27pm\n\n"
-    },
-    "https://adactio.com/tags/blogging": {
-      "rels": [
-        "tag"
-      ],
-      "text": "blogging"
-    },
-    "https://adactio.com/tags/blogs": {
-      "rels": [
-        "tag"
-      ],
-      "text": "blogs"
-    },
-    "https://adactio.com/tags/indieweb": {
-      "rels": [
-        "tag"
-      ],
-      "text": "indieweb"
-    },
-    "https://adactio.com/tags/personal": {
-      "rels": [
-        "tag"
-      ],
-      "text": "personal"
-    },
-    "https://adactio.com/tags/publishing": {
-      "rels": [
-        "tag"
-      ],
-      "text": "publishing"
-    },
-    "https://adactio.com/tags/montaigne": {
-      "rels": [
-        "tag"
-      ],
-      "text": "montaigne"
-    },
-    "https://adactio.com/tags/notes": {
-      "rels": [
-        "tag"
-      ],
-      "text": "notes"
-    },
-    "https://adactio.com/tags/mac": {
-      "rels": [
-        "tag"
-      ],
-      "text": "mac"
-    },
-    "https://adactio.com/notes/19907": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n12:42pm\n\n"
-    },
-    "https://mastodon.social/@adactio/109874469930247835": {
-      "rels": [
-        "syndication"
-      ],
-      "text": "Mastodon"
-    },
-    "https://adactio.com/links/19905": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n10:57am\n\n"
-    },
-    "https://adactio.com/tags/online": {
-      "rels": [
-        "tag"
-      ],
-      "text": "online"
-    },
-    "https://adactio.com/tags/event": {
-      "rels": [
-        "tag"
-      ],
-      "text": "event"
-    },
-    "https://adactio.com/tags/systems": {
-      "rels": [
-        "tag"
-      ],
-      "text": "systems"
-    },
-    "https://adactio.com/tags/culture": {
-      "rels": [
-        "tag"
-      ],
-      "text": "culture"
-    },
-    "https://adactio.com/notes/19904": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n9:24pm\n\n"
-    },
-    "https://www.swarmapp.com/user/112073/checkin/63ed4d7085f8f503169d96f0": {
-      "rels": [
-        "syndication"
-      ],
-      "text": "Swarm"
-    },
-    "https://adactio.com/journal/19903": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n5:31pm\n\n"
-    },
-    "https://adactio.com/tags/change": {
-      "rels": [
-        "tag"
-      ],
-      "text": "change"
-    },
-    "https://adactio.com/tags/leadingdesign": {
-      "rels": [
-        "tag"
-      ],
-      "text": "leadingdesign"
-    },
-    "https://adactio.com/tags/ldconf": {
-      "rels": [
-        "tag"
-      ],
-      "text": "ldconf"
-    },
-    "https://adactio.com/tags/sanfrancisco": {
-      "rels": [
-        "tag"
-      ],
-      "text": "sanfrancisco"
-    },
-    "https://adactio.com/tags/hosting": {
-      "rels": [
-        "tag"
-      ],
-      "text": "hosting"
-    },
-    "https://adactio.com/tags/speaking": {
-      "rels": [
-        "tag"
-      ],
-      "text": "speaking"
-    },
-    "https://adactio.com/tags/cryptobollocks": {
-      "rels": [
-        "tag"
-      ],
-      "text": "cryptobollocks"
-    },
-    "https://adactio.com/tags/blockchain": {
-      "rels": [
-        "tag"
-      ],
-      "text": "blockchain"
-    },
-    "https://adactio.com/tags/technology": {
-      "rels": [
-        "tag"
-      ],
-      "text": "technology"
-    },
-    "https://adactio.com/tags/determinism": {
-      "rels": [
-        "tag"
-      ],
-      "text": "determinism"
-    },
-    "https://adactio.com/tags/future": {
-      "rels": [
-        "tag"
-      ],
-      "text": "future"
-    },
-    "https://adactio.com/tags/hype": {
-      "rels": [
-        "tag"
-      ],
-      "text": "hype"
-    },
-    "https://adactio.com/tags/trends": {
-      "rels": [
-        "tag"
-      ],
-      "text": "trends"
-    },
-    "https://adactio.com/tags/bullshit": {
-      "rels": [
-        "tag"
-      ],
-      "text": "bullshit"
-    },
-    "https://adactio.medium.com/de31b9193a7": {
-      "rels": [
-        "syndication"
-      ],
-      "text": "Medium"
-    },
-    "https://adactio.com/journal/19902": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n4:36pm\n\n"
-    },
-    "https://adactio.com/tags/curation": {
-      "rels": [
-        "tag"
-      ],
-      "text": "curation"
-    },
-    "https://adactio.com/tags/presentations": {
-      "rels": [
-        "tag"
-      ],
-      "text": "presentations"
-    },
-    "https://adactio.com/tags/lineup": {
-      "rels": [
-        "tag"
-      ],
-      "text": "lineup"
-    },
-    "https://adactio.medium.com/5b067c0f5128": {
-      "rels": [
-        "syndication"
-      ],
-      "text": "Medium"
-    },
-    "https://adactio.com/links/19901": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "\n\n3:39pm\n\n"
-    },
-    "https://adactio.com/tags/frameworks": {
-      "rels": [
-        "tag"
-      ],
-      "text": "frameworks"
-    },
-    "https://adactio.com/tags/libraries": {
-      "rels": [
-        "tag"
-      ],
-      "text": "libraries"
-    },
-    "https://adactio.com/tags/react": {
-      "rels": [
-        "tag"
-      ],
-      "text": "react"
-    },
-    "https://adactio.com/tags/perception": {
-      "rels": [
-        "tag"
-      ],
-      "text": "perception"
     },
     "https://adactio.com/?start=20": {
       "rels": [

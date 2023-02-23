@@ -70,10 +70,24 @@
     ],
     "me": [
       "http://orbific.com/",
+      "https://mastodonapp.uk/@orbific",
       "http://www.twitter.com/orbific",
       "mailto:james@orbific.com"
     ],
+    "external": [
+      "https://spratt.co/",
+      "http://www.louisehalvardsson.com/"
+    ],
+    "nofollow": [
+      "https://spratt.co/",
+      "http://www.louisehalvardsson.com/"
+    ],
+    "ugc": [
+      "https://spratt.co/",
+      "http://www.louisehalvardsson.com/"
+    ],
     "bookmark": [
+      "https://orbific.com/books/re-reading-the-90s-house-of-leaves/",
       "https://orbific.com/the-south-downs-way/story-a-slice-of-heaven-on-earth-audio/",
       "https://orbific.com/monthnotes/monthnotes-january-2023/",
       "https://orbific.com/books/re-reading-the-90s-girlfriend-in-a-coma/",
@@ -82,22 +96,21 @@
       "https://orbific.com/discordianism/the-mycelium-parish-magazine/",
       "https://orbific.com/monthnotes/monthnotes-december-2022/",
       "https://orbific.com/season-notes/2023/",
-      "https://orbific.com/things-that-happened/looking-back-to-2022/",
-      "https://orbific.com/books/my-favourite-books-of-2022/"
+      "https://orbific.com/things-that-happened/looking-back-to-2022/"
     ],
     "category": [
+      "https://orbific.com/category/books/",
       "https://orbific.com/category/the-south-downs-way/",
       "https://orbific.com/category/monthnotes/",
-      "https://orbific.com/category/books/",
       "https://orbific.com/category/discordianism/",
       "https://orbific.com/category/general/",
       "https://orbific.com/category/season-notes/",
       "https://orbific.com/category/things-that-happened/"
     ],
     "tag": [
+      "https://orbific.com/category/books/",
       "https://orbific.com/category/the-south-downs-way/",
       "https://orbific.com/category/monthnotes/",
-      "https://orbific.com/category/books/",
       "https://orbific.com/category/discordianism/",
       "https://orbific.com/category/general/",
       "https://orbific.com/category/season-notes/",
@@ -254,6 +267,12 @@
       ],
       "text": "orbific"
     },
+    "https://mastodonapp.uk/@orbific": {
+      "rels": [
+        "me"
+      ],
+      "text": "Mastodon"
+    },
     "http://www.twitter.com/orbific": {
       "rels": [
         "me"
@@ -265,6 +284,35 @@
         "me"
       ],
       "text": "james@orbific.com"
+    },
+    "https://spratt.co/": {
+      "rels": [
+        "external",
+        "nofollow",
+        "ugc"
+      ],
+      "text": "James Spratt"
+    },
+    "http://www.louisehalvardsson.com/": {
+      "rels": [
+        "external",
+        "nofollow",
+        "ugc"
+      ],
+      "text": "Lou"
+    },
+    "https://orbific.com/books/re-reading-the-90s-house-of-leaves/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "Re-reading the 90s: House of Leaves"
+    },
+    "https://orbific.com/category/books/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Books"
     },
     "https://orbific.com/the-south-downs-way/story-a-slice-of-heaven-on-earth-audio/": {
       "rels": [
@@ -297,13 +345,6 @@
         "bookmark"
       ],
       "text": "Re-reading the 90s: Girlfriend in a Coma"
-    },
-    "https://orbific.com/category/books/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "Books"
     },
     "https://orbific.com/discordianism/book-review-united-we-fnord/": {
       "rels": [
@@ -368,12 +409,6 @@
         "tag"
       ],
       "text": "Things That Happened"
-    },
-    "https://orbific.com/books/my-favourite-books-of-2022/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "My favourite books of 2022"
     }
   }
 }
