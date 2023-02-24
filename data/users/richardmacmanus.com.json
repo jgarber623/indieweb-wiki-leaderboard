@@ -1,19 +1,79 @@
 {
   "items": [],
   "rels": {
-    "nofollow": [
-      "https://www.namecheap.com/"
+    "alternate": [
+      "http://richardmacmanus.com/feed/",
+      "http://richardmacmanus.com/comments/feed/"
     ],
-    "“nofollow”": [
-      "https://www.namecheap.com/"
+    "stylesheet": [
+      "http://richardmacmanus.com/wp-includes/blocks/navigation/style.min.css?ver=6.1.1"
+    ],
+    "https://api.w.org/": [
+      "http://richardmacmanus.com/wp-json/"
+    ],
+    "EditURI": [
+      "http://richardmacmanus.com/xmlrpc.php?rsd"
+    ],
+    "wlwmanifest": [
+      "http://richardmacmanus.com/wp-includes/wlwmanifest.xml"
+    ],
+    "home": [
+      "http://richardmacmanus.com/"
+    ],
+    "nofollow": [
+      "https://wordpress.org/"
     ]
   },
   "rel-urls": {
-    "https://www.namecheap.com/": {
+    "http://richardmacmanus.com/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "richardmacmanus » Feed",
+      "type": "application/rss+xml"
+    },
+    "http://richardmacmanus.com/comments/feed/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "richardmacmanus » Comments Feed",
+      "type": "application/rss+xml"
+    },
+    "http://richardmacmanus.com/wp-includes/blocks/navigation/style.min.css?ver=6.1.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "http://richardmacmanus.com/wp-json/": {
+      "rels": [
+        "https://api.w.org/"
+      ]
+    },
+    "http://richardmacmanus.com/xmlrpc.php?rsd": {
+      "rels": [
+        "EditURI"
+      ],
+      "title": "RSD",
+      "type": "application/rsd+xml"
+    },
+    "http://richardmacmanus.com/wp-includes/wlwmanifest.xml": {
+      "rels": [
+        "wlwmanifest"
+      ],
+      "type": "application/wlwmanifest+xml"
+    },
+    "http://richardmacmanus.com/": {
+      "rels": [
+        "home"
+      ],
+      "text": "richardmacmanus"
+    },
+    "https://wordpress.org/": {
       "rels": [
         "nofollow"
       ],
-      "title": "Registered at Namecheap.com"
+      "text": "WordPress"
     }
   }
 }

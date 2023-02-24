@@ -44,6 +44,52 @@
           ],
           "properties": {
             "name": [
+              "UK Strikes in .ics Format"
+            ],
+            "url": [
+              "https://danq.me/2023/02/23/strikes-ics/"
+            ],
+            "uid": [
+              "https://danq.me/2023/02/23/strikes-ics/"
+            ],
+            "published": [
+              "2023-02-23T15:55:20+00:00"
+            ],
+            "content": [
+              {
+                "html": "<p>My <a title=\"Automattic\" href=\"https://automattic.com/\">work</a> colleague <a title=\"Simon's blog\" href=\"http://simonwheatley.co.uk/\">Simon</a> was looking for a way to add all of the upcoming <abbr class=\"abbr\" title=\"United Kingdom\">UK</abbr> strike action to their calendar, presumably so they know when not to try to catch a bus or require an ambulance or maybe just so they’d know to whom they should be giving support on any particular day. <a title=\"Thom's Github profile\" href=\"https://github.com/hideandgeek404\">Thom</a> was able to suggest a few places to see lists of strikes, such as <a title=\"BBC News article: Strike dates: Who is striking when and what pay do they want?\" href=\"https://www.bbc.co.uk/news/business-62134314\">this BBC News page</a> and the comprehensive <a href=\"https://www.strikecalendar.co.uk/\">strikecalendar.co.uk</a>, but neither provided a handy machine-readable feed.</p>\n<figure id=\"attachment_21132\" aria-describedby=\"caption-attachment-21132\" style=\"width: 640px\" class=\"wp-caption aligncenter\"><a href=\"https://danq.me/wp-content/uploads/2023/02/strike-action-in-thunderbird.png\"><img decoding=\"async\" class=\"size-large wp-image-21132\" src=\"https://danq.me/wp-content/uploads/2023/02/640x401xstrike-action-in-thunderbird-1024x642.png.pagespeed.ic.d2i_qpkMyu.jpg\" alt=\"Screenshot showing a Thunderbird calendar popularted with strikes on every day in February.\" width=\"640\" height=\"401\" srcset=\"https://danq.me/wp-content/uploads/2023/02/xstrike-action-in-thunderbird-1024x642.png.pagespeed.ic.U784dGRH2i.png 1024w, https://danq.me/wp-content/uploads/2023/02/xstrike-action-in-thunderbird-300x188.png.pagespeed.ic.YDAXai2RpI.jpg 300w, https://danq.me/wp-content/uploads/2023/02/xstrike-action-in-thunderbird-768x481.png.pagespeed.ic.gXH28QzcZr.png 768w, https://danq.me/wp-content/uploads/2023/02/xstrike-action-in-thunderbird-1536x963.png.pagespeed.ic.C9NfayZPCp.png 1536w, https://danq.me/wp-content/uploads/2023/02/xstrike-action-in-thunderbird-898x563.png.pagespeed.ic.ArSbj0bnn6.png 898w, https://danq.me/wp-content/uploads/2023/02/xstrike-action-in-thunderbird.png.pagespeed.ic.RF5HDPMPv3.png 1938w\" sizes=\"(max-width: 640px) 100vw, 640px\"></a><figcaption id=\"caption-attachment-21132\" class=\"wp-caption-text\">Gosh, there’s a lot of strikes going on. ✊</figcaption></figure>\n<p>If only they knew somebody who loves an excuse to throw a screen-scraper together. Oh wait, that’s me!</p>\n<p>I threw together <a href=\"https://gist.github.com/Dan-Q/a4debf38e0ee5d994fbe1f8844df06a0\">a 36-line Ruby program</a> that extracts all the data from strikecalendar.co.uk and outputs an <code>.ics</code> file. I guess if you wanted you could set it up to automatically update the file a couple of times a day and host it at a <abbr class=\"abbr\" title=\"Uniform Resource Locator\">URL</abbr> that people can subscribe to; that’s an exercise left for the reader.</p>\n<p>If you just want a one-off import based on the state-of-play right now, though, you can save <a href=\"https://gist.githubusercontent.com/Dan-Q/a4debf38e0ee5d994fbe1f8844df06a0/raw/e32980f408ac207424ae2f9249b357e2c6f4d3c5/test-run-sample-output.ics\">this .ics file</a> to your computer and import it to your calendar. Simple.</p>\n<div class=\"syndication-links\"><span class=\"relsyn\"><data class=\"u-syndication\" value=\"https://www.facebook.com/1353711854741727/posts/1222785455176056\"></data> <data class=\"u-syndication\" value=\"https://scatmania.livejournal.com/252730.html\"></data> <data class=\"u-syndication\" value=\"https://m.danq.me/@blog/109914882212415736\"></data> <data class=\"u-syndication\" value=\"https://m.danq.me/@dan/109914882661090570\"></data> <data class=\"u-syndication\" value=\"https://www.facebook.com/DanQBlog/posts/pfbid02t5DCN1nf7pXVPAD4rKUy5bScasY1ufp7HRNubVUG6zG5BaQG5RvneRwK9KCwHCGUl\"></data> <data class=\"u-syndication\" value=\"https://www.linkedin.com/posts/itsdanq_uk-strikes-in-ics-format-activity-7034553176867373056-dWBP\"></data></span></div>",
+                "value": "My work colleague Simon was looking for a way to add all of the upcoming UK strike action to their calendar, presumably so they know when not to try to catch a bus or require an ambulance or maybe just so they’d know to whom they should be giving support on any particular day. Thom was able to suggest a few places to see lists of strikes, such as this BBC News page and the comprehensive strikecalendar.co.uk, but neither provided a handy machine-readable feed.\n Screenshot showing a Thunderbird calendar popularted with strikes on every day in February. Gosh, there’s a lot of strikes going on. ✊\nIf only they knew somebody who loves an excuse to throw a screen-scraper together. Oh wait, that’s me!\nI threw together a 36-line Ruby program that extracts all the data from strikecalendar.co.uk and outputs an .ics file. I guess if you wanted you could set it up to automatically update the file a couple of times a day and host it at a URL that people can subscribe to; that’s an exercise left for the reader.\nIf you just want a one-off import based on the state-of-play right now, though, you can save this .ics file to your computer and import it to your calendar. Simple."
+              }
+            ],
+            "syndication": [
+              "https://www.facebook.com/1353711854741727/posts/1222785455176056",
+              "https://scatmania.livejournal.com/252730.html",
+              "https://m.danq.me/@blog/109914882212415736",
+              "https://m.danq.me/@dan/109914882661090570",
+              "https://www.facebook.com/DanQBlog/posts/pfbid02t5DCN1nf7pXVPAD4rKUy5bScasY1ufp7HRNubVUG6zG5BaQG5RvneRwK9KCwHCGUl",
+              "https://www.linkedin.com/posts/itsdanq_uk-strikes-in-ics-format-activity-7034553176867373056-dWBP",
+              "https://www.facebook.com/1353711854741727/posts/1222785455176056",
+              "https://scatmania.livejournal.com/252730.html",
+              "https://m.danq.me/@blog/109914882212415736",
+              "https://m.danq.me/@dan/109914882661090570",
+              "https://www.facebook.com/DanQBlog/posts/pfbid02t5DCN1nf7pXVPAD4rKUy5bScasY1ufp7HRNubVUG6zG5BaQG5RvneRwK9KCwHCGUl",
+              "https://www.linkedin.com/posts/itsdanq_uk-strikes-in-ics-format-activity-7034553176867373056-dWBP"
+            ],
+            "category": [
+              "automattic",
+              "hacking",
+              "published on gemini",
+              "ruby"
+            ]
+          },
+          "id": "post-21131"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               "Yesterday’s Internet Today! (Woo DM 2023)"
             ],
             "url": [
@@ -846,66 +892,6 @@
             ]
           },
           "id": "post-21080"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Dan Q found GC91BEK TUBE SideTracked – Ravenscourt Park"
-            ],
-            "url": [
-              "https://danq.me/2023/02/04/dan-q-found-gc91bek-tube-sidetracked-ravenscourt-park/"
-            ],
-            "uid": [
-              "https://danq.me/2023/02/04/dan-q-found-gc91bek-tube-sidetracked-ravenscourt-park/"
-            ],
-            "published": [
-              "2023-02-04T15:59:00+00:00"
-            ],
-            "checkin": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "name": [
-                    "GC91BEK TUBE SideTracked - Ravenscourt Park"
-                  ],
-                  "latitude": [
-                    "51.49255"
-                  ],
-                  "longitude": [
-                    "-0.235317"
-                  ]
-                },
-                "value": "https://danq.me/author/dan/This checkin to\n      GC91BEK TUBE SideTracked - Ravenscourt Park\n      reflects\n      a geocaching.com log entry. See\n      more of Dan's cache logs."
-              },
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {},
-                "value": ""
-              }
-            ],
-            "content": [
-              {
-                "html": "<section class=\"response\">\n<header>\n<span class=\"h-card p-checkin\"> </span></header>\n</section>\n<p>Damage to the top of the hiding place gave me a quick clue for this one, even though my <abbr class=\"abbr\" title=\"GPS receiver\">GPSr</abbr> was misbehaving. <abbr title=\"Thanks For The Cache\">TFTC</abbr>.</p>\n<div class=\"syndication-links\"><span class=\"relsyn\"><data class=\"u-syndication\" value=\"https://m.danq.me/@blog/109816735544013689\"></data></span></div>\n          <img class=\"aligncenter size-full danq-map\" width=\"600\" src=\"https://danq.me/wp-content/themes/q18/xmap.php,qcenter=51.49255,,-0.235317,azoom=17,ascale=false,asize=600x300,amaptype=roadmap,aformat=png,avisual_refresh=true,amarkers=size,3Amid,P7Ccolor,3A0x1dc6df,P7Clabel,3A,P7C51.49255,,-0.235317.pagespeed.ic.8_SCBM0dMZ.jpg\" alt=\"Map of 51.49255,-0.235317\">",
-                "value": "Damage to the top of the hiding place gave me a quick clue for this one, even though my GPSr was misbehaving. TFTC.\n\n           Map of 51.49255,-0.235317"
-              }
-            ],
-            "syndication": [
-              "https://m.danq.me/@blog/109816735544013689",
-              "https://m.danq.me/@blog/109816735544013689"
-            ],
-            "category": [
-              "cache log",
-              "geocaching"
-            ]
-          },
-          "id": "post-21077"
         }
       ]
     }
@@ -996,6 +982,7 @@
       "https://danq.me/"
     ],
     "bookmark": [
+      "https://danq.me/2023/02/23/strikes-ics/",
       "https://danq.me/2023/02/21/yesterdays-internet-today-vienna/",
       "https://danq.me/2023/02/21/scottish-mexican-cuisine/",
       "https://danq.me/2023/02/20/forgotten-death/",
@@ -1009,10 +996,15 @@
       "https://danq.me/2023/02/10/dan-q-found-gc5dc7h-friedensbrucke/",
       "https://danq.me/2023/02/10/dan-q-found-gc91zz4-ort-der-barmherzigkeit-kh-barmherzige-bruder/",
       "https://danq.me/2023/02/10/dan-q-found-gcm8cb-urania/",
-      "https://danq.me/2023/02/06/dan-q-found-gcr0ym-bridge-over-bridge/",
-      "https://danq.me/2023/02/04/dan-q-found-gc91bek-tube-sidetracked-ravenscourt-park/"
+      "https://danq.me/2023/02/06/dan-q-found-gcr0ym-bridge-over-bridge/"
     ],
     "syndication": [
+      "https://www.facebook.com/1353711854741727/posts/1222785455176056",
+      "https://scatmania.livejournal.com/252730.html",
+      "https://m.danq.me/@blog/109914882212415736",
+      "https://m.danq.me/@dan/109914882661090570",
+      "https://www.facebook.com/DanQBlog/posts/pfbid02t5DCN1nf7pXVPAD4rKUy5bScasY1ufp7HRNubVUG6zG5BaQG5RvneRwK9KCwHCGUl",
+      "https://www.linkedin.com/posts/itsdanq_uk-strikes-in-ics-format-activity-7034553176867373056-dWBP",
       "https://www.youtube.com/watch?v=qW0lwqQKSt4",
       "https://www.facebook.com/DanQBlog/videos/682977636919072/",
       "https://www.linkedin.com/posts/itsdanq_finger-gopher-wordpress-activity-7033761774688464896-itJ4",
@@ -1035,11 +1027,13 @@
       "https://m.danq.me/@blog/109841272182744226",
       "https://m.danq.me/@blog/109841252517509786",
       "https://m.danq.me/@blog/109841232860063376",
-      "https://m.danq.me/@blog/109816755141989588",
-      "https://m.danq.me/@blog/109816735544013689"
+      "https://m.danq.me/@blog/109816755141989588"
     ],
     "tag": [
       "https://danq.me/tag/automattic/",
+      "https://danq.me/tag/hacking/",
+      "https://danq.me/tag/published-on-gemini/",
+      "https://danq.me/tag/ruby/",
       "https://danq.me/tag/finger/",
       "https://danq.me/tag/geek-night/",
       "https://danq.me/tag/gemini/",
@@ -1060,7 +1054,6 @@
       "https://danq.me/tag/death/",
       "https://danq.me/tag/death-of-peter-huntley/",
       "https://danq.me/tag/grief/",
-      "https://danq.me/tag/published-on-gemini/",
       "https://danq.me/tag/skiing/",
       "https://danq.me/tag/words/",
       "https://danq.me/tag/cache-log/",
@@ -1332,6 +1325,72 @@
       ],
       "text": "\n            Dan\n            Q\n          "
     },
+    "https://danq.me/2023/02/23/strikes-ics/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "UK Strikes in .ics Format"
+    },
+    "https://www.facebook.com/1353711854741727/posts/1222785455176056": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "\n                ​​                facebook.com\n              "
+    },
+    "https://scatmania.livejournal.com/252730.html": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "\n                ​​                scatmania.livejournal.com\n              "
+    },
+    "https://m.danq.me/@blog/109914882212415736": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "\n                                m.danq.me\n              "
+    },
+    "https://m.danq.me/@dan/109914882661090570": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "\n                                m.danq.me\n              "
+    },
+    "https://www.facebook.com/DanQBlog/posts/pfbid02t5DCN1nf7pXVPAD4rKUy5bScasY1ufp7HRNubVUG6zG5BaQG5RvneRwK9KCwHCGUl": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "\n                ​​                facebook.com\n              "
+    },
+    "https://www.linkedin.com/posts/itsdanq_uk-strikes-in-ics-format-activity-7034553176867373056-dWBP": {
+      "rels": [
+        "syndication"
+      ],
+      "text": "\n                                linkedin.com\n              "
+    },
+    "https://danq.me/tag/automattic/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "automattic"
+    },
+    "https://danq.me/tag/hacking/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "hacking"
+    },
+    "https://danq.me/tag/published-on-gemini/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "published on gemini"
+    },
+    "https://danq.me/tag/ruby/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "ruby"
+    },
     "https://danq.me/2023/02/21/yesterdays-internet-today-vienna/": {
       "rels": [
         "bookmark"
@@ -1361,12 +1420,6 @@
         "syndication"
       ],
       "text": "\n                                m.danq.me\n              "
-    },
-    "https://danq.me/tag/automattic/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "automattic"
     },
     "https://danq.me/tag/finger/": {
       "rels": [
@@ -1554,12 +1607,6 @@
       ],
       "text": "grief"
     },
-    "https://danq.me/tag/published-on-gemini/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "published on gemini"
-    },
     "https://danq.me/tag/skiing/": {
       "rels": [
         "tag"
@@ -1711,18 +1758,6 @@
       "text": "Dan Q found GCR0YM Bridge over bridge"
     },
     "https://m.danq.me/@blog/109816755141989588": {
-      "rels": [
-        "syndication"
-      ],
-      "text": "\n                                m.danq.me\n              "
-    },
-    "https://danq.me/2023/02/04/dan-q-found-gc91bek-tube-sidetracked-ravenscourt-park/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Dan Q found GC91BEK TUBE SideTracked – Ravenscourt Park"
-    },
-    "https://m.danq.me/@blog/109816735544013689": {
       "rels": [
         "syndication"
       ],

@@ -1,20 +1,30 @@
 {
-  "items": [],
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "url": [
+          "https://timapple.com/about/"
+        ],
+        "photo": [
+          "https://micro.blog/timapple/avatar.jpg"
+        ],
+        "name": [
+          "Tim Apple"
+        ],
+        "role": [
+          "Follow @timapple on Micro.blog."
+        ]
+      }
+    }
+  ],
   "rels": {
-    "preload": [
-      "https://timapple.com/app.min.css",
-      "https://timapple.com/theme.png",
-      "https://timapple.com/twitter.svg",
-      "https://timapple.com/github.svg",
-      "https://timapple.com/instagram.svg",
-      "https://timapple.com/microdotblog.svg",
-      "https://timapple.com/mastodon.svg",
-      "https://timapple.com/linkedin.svg",
-      "https://timapple.com/buymeacoffee.svg"
-    ],
     "stylesheet": [
-      "https://timapple.com/app.min.css",
-      "https://timapple.com/custom.css?1676652194",
+      "https://timapple.com/assets/css/style.css?1677175032",
+      "https://timapple.com/assets/css/highlight.css?1677175032",
+      "https://timapple.com/custom.css?1677175032",
       "https://timapple.com/css/all.min.css",
       "https://timapple.com/css/bookshelf.css"
     ],
@@ -24,19 +34,18 @@
     "shortcut": [
       "https://micro.blog/timapple/favicon.png"
     ],
-    "apple-touch-icon": [
-      "https://micro.blog/timapple/favicon.png"
-    ],
     "alternate": [
       "https://timapple.com/feed.xml",
+      "https://timapple.com/podcast.xml",
       "https://timapple.com/feed.json"
+    ],
+    "EditURI": [
+      "https://timapple.com/rsd.xml"
     ],
     "me": [
       "https://micro.blog/timapple",
       "https://twitter.com/timapplecodes",
-      "https://github.com/timapplecodes",
-      "https://twitter.com/heytimapple",
-      "https://social.lol/@timapple"
+      "https://github.com/timapplecodes"
     ],
     "authorization_endpoint": [
       "https://micro.blog/indieauth/auth"
@@ -55,62 +64,22 @@
     ],
     "subscribe": [
       "https://micro.blog/users/follow"
-    ],
-    "noopener": [
-      "https://gohugo.io/",
-      "https://micro.blog/"
     ]
   },
   "rel-urls": {
-    "https://timapple.com/app.min.css": {
-      "rels": [
-        "preload",
-        "stylesheet"
-      ]
-    },
-    "https://timapple.com/custom.css?1676652194": {
+    "https://timapple.com/assets/css/style.css?1677175032": {
       "rels": [
         "stylesheet"
       ]
     },
-    "https://timapple.com/theme.png": {
+    "https://timapple.com/assets/css/highlight.css?1677175032": {
       "rels": [
-        "preload"
+        "stylesheet"
       ]
     },
-    "https://timapple.com/twitter.svg": {
+    "https://timapple.com/custom.css?1677175032": {
       "rels": [
-        "preload"
-      ]
-    },
-    "https://timapple.com/github.svg": {
-      "rels": [
-        "preload"
-      ]
-    },
-    "https://timapple.com/instagram.svg": {
-      "rels": [
-        "preload"
-      ]
-    },
-    "https://timapple.com/microdotblog.svg": {
-      "rels": [
-        "preload"
-      ]
-    },
-    "https://timapple.com/mastodon.svg": {
-      "rels": [
-        "preload"
-      ]
-    },
-    "https://timapple.com/linkedin.svg": {
-      "rels": [
-        "preload"
-      ]
-    },
-    "https://timapple.com/buymeacoffee.svg": {
-      "rels": [
-        "preload"
+        "stylesheet"
       ]
     },
     "https://micro.blog/timapple/favicon.png": {
@@ -127,12 +96,25 @@
       "title": "Tim Apple",
       "type": "application/rss+xml"
     },
+    "https://timapple.com/podcast.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Podcast",
+      "type": "application/rss+xml"
+    },
     "https://timapple.com/feed.json": {
       "rels": [
         "alternate"
       ],
       "title": "Tim Apple",
       "type": "application/json"
+    },
+    "https://timapple.com/rsd.xml": {
+      "rels": [
+        "EditURI"
+      ],
+      "type": "application/rsd+xml"
     },
     "https://micro.blog/timapple": {
       "rels": [
@@ -188,28 +170,6 @@
       "rels": [
         "stylesheet"
       ]
-    },
-    "https://twitter.com/heytimapple": {
-      "rels": [
-        "me"
-      ]
-    },
-    "https://social.lol/@timapple": {
-      "rels": [
-        "me"
-      ]
-    },
-    "https://gohugo.io/": {
-      "rels": [
-        "noopener"
-      ],
-      "text": "Hugo️️"
-    },
-    "https://micro.blog/": {
-      "rels": [
-        "noopener"
-      ],
-      "text": "Micro.blog"
     }
   }
 }

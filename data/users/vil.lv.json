@@ -1,5 +1,132 @@
 {
-  "items": [],
-  "rels": {},
-  "rel-urls": {}
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "photo": [
+          {
+            "value": "https://vil.lv/avatar.png",
+            "alt": "A graphical representation of vil"
+          }
+        ],
+        "url": [
+          "https://vil.lv/"
+        ],
+        "nickname": [
+          "vilhalmer"
+        ],
+        "name": [
+          "Bill Doyle"
+        ],
+        "job-title": [
+          "QA Engineer"
+        ],
+        "org": [
+          "Arbor Networks"
+        ],
+        "email": [
+          "mailto:vil@vil.lv"
+        ],
+        "key": [
+          "https://vil.lv/7cfaf4a3748190eb6eac778005fa2e1c6481bdf3"
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "stylesheet": [
+      "https://vil.lv/global.css",
+      "https://vil.lv/card.css"
+    ],
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "microsub": [
+      "https://mitakihara.vil.lv/microsub"
+    ],
+    "me": [
+      "https://vil.lv/",
+      "https://github.com/vilhalmer",
+      "https://sr.ht/~vilhalmer",
+      "https://keybase.io/vilhalmer"
+    ],
+    "authn": [
+      "https://keybase.io/vilhalmer/pgp_keys.asc?fingerprint=7cfaf4a3748190eb6eac778005fa2e1c6481bdf3"
+    ],
+    "pgpkey": [
+      "https://keybase.io/vilhalmer/pgp_keys.asc?fingerprint=7cfaf4a3748190eb6eac778005fa2e1c6481bdf3"
+    ],
+    "feed": [
+      "https://vil.lv/posts"
+    ]
+  },
+  "rel-urls": {
+    "https://vil.lv/global.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://vil.lv/card.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://mitakihara.vil.lv/microsub": {
+      "rels": [
+        "microsub"
+      ]
+    },
+    "https://vil.lv/": {
+      "rels": [
+        "me"
+      ],
+      "text": "vilhalmer"
+    },
+    "https://keybase.io/vilhalmer/pgp_keys.asc?fingerprint=7cfaf4a3748190eb6eac778005fa2e1c6481bdf3": {
+      "rels": [
+        "authn",
+        "pgpkey"
+      ],
+      "text": "\n                        7cfaf4a3748190eb6eac778005fa2e1c6481bdf3\n                    "
+    },
+    "https://vil.lv/posts": {
+      "rels": [
+        "feed"
+      ],
+      "text": "Posts"
+    },
+    "https://github.com/vilhalmer": {
+      "rels": [
+        "me"
+      ],
+      "text": "Github"
+    },
+    "https://sr.ht/~vilhalmer": {
+      "rels": [
+        "me"
+      ],
+      "text": "Sourcehut"
+    },
+    "https://keybase.io/vilhalmer": {
+      "rels": [
+        "me"
+      ],
+      "text": "Keybase"
+    }
+  }
 }

@@ -17,6 +17,116 @@
             ],
             "content": [
               {
+                "html": "<div class=\"e-content\">\n<p>Test post for cache tweak</p>\n</div>\n<div class=\"syndication-links\"></div>",
+                "value": "Test post for cache tweak"
+              },
+              {
+                "html": "<p>Test post for cache tweak</p>",
+                "value": "Test post for cache tweak"
+              }
+            ]
+          },
+          "id": "post-2807"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "",
+              ""
+            ],
+            "content": [
+              {
+                "html": "<div class=\"e-content\">\n<p>Test post for RSS Cloud plugin tweak</p>\n</div>\n<div class=\"syndication-links\"></div>",
+                "value": "Test post for RSS Cloud plugin tweak"
+              },
+              {
+                "html": "<p>Test post for RSS Cloud plugin tweak</p>",
+                "value": "Test post for RSS Cloud plugin tweak"
+              }
+            ]
+          },
+          "id": "post-2805"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Twitter API still seems to work",
+              "Twitter API still seems to work"
+            ],
+            "content": [
+              {
+                "html": "<div class=\"e-content\">\n<p>Today is February 23, 2023. Twitter <a href=\"https://twitter.com/TwitterDev/status/1621026986784337922?lang=en\">announced </a>that they would discontinue free access to the Twitter API on February 9, but my apps powering my <a href=\"https://granary.andysylvester.com/\">Twitter</a> river of news and <a href=\"https://portlandprotests.andysylvester.com/\">Portland Protests</a> river of news are still working. Oh well – I will keep using the API as long as I can!</p>\n</div>\n<div class=\"syndication-links\"></div>",
+                "value": "Today is February 23, 2023. Twitter announced that they would discontinue free access to the Twitter API on February 9, but my apps powering my Twitter river of news and Portland Protests river of news are still working. Oh well – I will keep using the API as long as I can!"
+              },
+              {
+                "html": "<p>Today is February 23, 2023. Twitter <a href=\"https://twitter.com/TwitterDev/status/1621026986784337922?lang=en\">announced </a>that they would discontinue free access to the Twitter API on February 9, but my apps powering my <a href=\"https://granary.andysylvester.com/\">Twitter</a> river of news and <a href=\"https://portlandprotests.andysylvester.com/\">Portland Protests</a> river of news are still working. Oh well – I will keep using the API as long as I can!</p>",
+                "value": "Today is February 23, 2023. Twitter announced that they would discontinue free access to the Twitter API on February 9, but my apps powering my Twitter river of news and Portland Protests river of news are still working. Oh well – I will keep using the API as long as I can!"
+              }
+            ]
+          },
+          "id": "post-2802"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "Solved my problem with WordPress caching",
+              "Solved my problem with WordPress caching"
+            ],
+            "content": [
+              {
+                "html": "<div class=\"e-content\">\n<p>For a long time, I have had problems with apparent caching of WordPress RSS feeds. In my recent work on <a href=\"https://andysylvester.com/2022/12/22/rsscloud-wordpress-feedland-and-dave-winer/\">WordPress support for rssCloud</a>, I eventually was able to get a notification about a WordPress update from the RSS Cloud plugin, but the content of the feed did not update. I spent some time on this again this week, and decided to search for “wordpress caching issues bluehost” (since Bluehost is my hosting service). I found this <a href=\"https://themeskills.com/turn-off-server-caching-bluehost/\">post on ThemeSkills</a> which described a feature within the Bluehost interface that controls caching on a site-by-site basis. After reading through the post, I was able to turn off caching on my test site for RSS Cloud. I then made a post on that site and saw the update within seconds on <a href=\"http://feedland.org/\">FeedLand</a> and <a href=\"http://fedwiki.andysylvester.com:443/\">MyStatusTool</a>, and saw the latest post display – at last!</p>\n\n\n\n<p>Here are the steps:</p>\n\n\n\n<ul>\n<li>Log into Bluehost  account</li>\n<li>Click on the My Sites link on the left navigation bar</li>\n<li>Scroll to the site to review and click the Manage button</li>\n<li>Click on the Performance tab</li>\n<li>In the Cache Settings area of the page, slide the slider all the way to the left. If it is already there, move it to the right to the Blog area, then back all the way to the left</li>\n<li>A pop-up will appear, click on the Disable Caching button</li>\n</ul>\n\n\n\n<p>PS – Here is a <a href=\"https://www.bluehost.com/help/article/wordpress-how-to-use-our-page-caching-feature\">Bluehost page</a> on this topic as well</p>\n</div>\n<div class=\"syndication-links\"></div>",
+                "value": "For a long time, I have had problems with apparent caching of WordPress RSS feeds. In my recent work on WordPress support for rssCloud, I eventually was able to get a notification about a WordPress update from the RSS Cloud plugin, but the content of the feed did not update. I spent some time on this again this week, and decided to search for “wordpress caching issues bluehost” (since Bluehost is my hosting service). I found this post on ThemeSkills which described a feature within the Bluehost interface that controls caching on a site-by-site basis. After reading through the post, I was able to turn off caching on my test site for RSS Cloud. I then made a post on that site and saw the update within seconds on FeedLand and MyStatusTool, and saw the latest post display – at last!\n\n\n\nHere are the steps:\n\n\n\nLog into Bluehost  accountClick on the My Sites link on the left navigation barScroll to the site to review and click the Manage buttonClick on the Performance tabIn the Cache Settings area of the page, slide the slider all the way to the left. If it is already there, move it to the right to the Blog area, then back all the way to the leftA pop-up will appear, click on the Disable Caching button\n\n\n\nPS – Here is a Bluehost page on this topic as well"
+              },
+              {
+                "html": "<p>For a long time, I have had problems with apparent caching of WordPress RSS feeds. In my recent work on <a href=\"https://andysylvester.com/2022/12/22/rsscloud-wordpress-feedland-and-dave-winer/\">WordPress support for rssCloud</a>, I eventually was able to get a notification about a WordPress update from the RSS Cloud plugin, but the content of the feed did not update. I spent some time on this again this week, and decided to search for “wordpress caching issues bluehost” (since Bluehost is my hosting service). I found this <a href=\"https://themeskills.com/turn-off-server-caching-bluehost/\">post on ThemeSkills</a> which described a feature within the Bluehost interface that controls caching on a site-by-site basis. After reading through the post, I was able to turn off caching on my test site for RSS Cloud. I then made a post on that site and saw the update within seconds on <a href=\"http://feedland.org/\">FeedLand</a> and <a href=\"http://fedwiki.andysylvester.com:443/\">MyStatusTool</a>, and saw the latest post display – at last!</p>\n\n\n\n<p>Here are the steps:</p>\n\n\n\n<ul>\n<li>Log into Bluehost  account</li>\n<li>Click on the My Sites link on the left navigation bar</li>\n<li>Scroll to the site to review and click the Manage button</li>\n<li>Click on the Performance tab</li>\n<li>In the Cache Settings area of the page, slide the slider all the way to the left. If it is already there, move it to the right to the Blog area, then back all the way to the left</li>\n<li>A pop-up will appear, click on the Disable Caching button</li>\n</ul>\n\n\n\n<p>PS – Here is a <a href=\"https://www.bluehost.com/help/article/wordpress-how-to-use-our-page-caching-feature\">Bluehost page</a> on this topic as well</p>",
+                "value": "For a long time, I have had problems with apparent caching of WordPress RSS feeds. In my recent work on WordPress support for rssCloud, I eventually was able to get a notification about a WordPress update from the RSS Cloud plugin, but the content of the feed did not update. I spent some time on this again this week, and decided to search for “wordpress caching issues bluehost” (since Bluehost is my hosting service). I found this post on ThemeSkills which described a feature within the Bluehost interface that controls caching on a site-by-site basis. After reading through the post, I was able to turn off caching on my test site for RSS Cloud. I then made a post on that site and saw the update within seconds on FeedLand and MyStatusTool, and saw the latest post display – at last!\n\n\n\nHere are the steps:\n\n\n\nLog into Bluehost  accountClick on the My Sites link on the left navigation barScroll to the site to review and click the Manage buttonClick on the Performance tabIn the Cache Settings area of the page, slide the slider all the way to the left. If it is already there, move it to the right to the Blog area, then back all the way to the leftA pop-up will appear, click on the Disable Caching button\n\n\n\nPS – Here is a Bluehost page on this topic as well"
+              }
+            ]
+          },
+          "id": "post-2800"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "",
+              ""
+            ],
+            "content": [
+              {
+                "html": "<div class=\"e-content\">\n<p>Had a great conversation today with Colin Walker on <a href=\"https://andysylvester.com/2023/02/09/2783/\">MyStatusTool </a>development! Colin has added “reply” functionality in his tool – I need to catch up! This is all lots of fun – good to be working with someone….</p>\n</div>\n<div class=\"syndication-links\"></div>",
+                "value": "Had a great conversation today with Colin Walker on MyStatusTool development! Colin has added “reply” functionality in his tool – I need to catch up! This is all lots of fun – good to be working with someone…."
+              },
+              {
+                "html": "<p>Had a great conversation today with Colin Walker on <a href=\"https://andysylvester.com/2023/02/09/2783/\">MyStatusTool </a>development! Colin has added “reply” functionality in his tool – I need to catch up! This is all lots of fun – good to be working with someone….</p>",
+                "value": "Had a great conversation today with Colin Walker on MyStatusTool development! Colin has added “reply” functionality in his tool – I need to catch up! This is all lots of fun – good to be working with someone…."
+              }
+            ]
+          },
+          "id": "post-2798"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
+              "",
+              ""
+            ],
+            "content": [
+              {
                 "html": "<div class=\"e-content\">\n<p>Success! I have installed Colin Walker’s <a href=\"https://github.com/colin-walker/PHP-MST\">MST-PHP</a> tool at <a href=\"https://mst.andysylvester.com/\">https://mst.andysylvester.com/</a>, and it is working! Check it out!</p>\n</div>\n<div class=\"syndication-links\"></div>",
                 "value": "Success! I have installed Colin Walker’s MST-PHP tool at https://mst.andysylvester.com/, and it is working! Check it out!"
               },
@@ -115,116 +225,6 @@
             ]
           },
           "id": "post-2787"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "",
-              ""
-            ],
-            "content": [
-              {
-                "html": "<div class=\"e-content\">\n<p>Colin Walker has <a href=\"https://colinwalker.blog/blog/?date=2023-02-11#p2\">hit </a>on a good point today – it is fun and energizing to work on a project with someone else, or to riff on <a href=\"https://colinwalker.blog/php-mst/\">another project</a>. I am hoping to get some time in on <a href=\"https://andysylvester.com/2023/02/06/demo-of-mystatustool-twitter-using-rss-and-rsscloud/\">MyStatusTool </a>today!</p>\n</div>\n<div class=\"syndication-links\"></div>",
-                "value": "Colin Walker has hit on a good point today – it is fun and energizing to work on a project with someone else, or to riff on another project. I am hoping to get some time in on MyStatusTool today!"
-              },
-              {
-                "html": "<p>Colin Walker has <a href=\"https://colinwalker.blog/blog/?date=2023-02-11#p2\">hit </a>on a good point today – it is fun and energizing to work on a project with someone else, or to riff on <a href=\"https://colinwalker.blog/php-mst/\">another project</a>. I am hoping to get some time in on <a href=\"https://andysylvester.com/2023/02/06/demo-of-mystatustool-twitter-using-rss-and-rsscloud/\">MyStatusTool </a>today!</p>",
-                "value": "Colin Walker has hit on a good point today – it is fun and energizing to work on a project with someone else, or to riff on another project. I am hoping to get some time in on MyStatusTool today!"
-              }
-            ]
-          },
-          "id": "post-2785"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "",
-              ""
-            ],
-            "content": [
-              {
-                "html": "<div class=\"e-content\">\n<p>Colin Walker and I have both developed tools for making short posts and following RSS feeds.</p>\n\n\n\n<p>Colin’s tool: <a href=\"https://colinwalker.blog/php-mst/\">https://colinwalker.blog/php-mst/</a></p>\n\n\n\n<p>Colin’s announcement: <a href=\"https://colinwalker.blog/blog/?date=2023-02-08\">https://colinwalker.blog/blog/?date=2023-02-08</a></p>\n\n\n\n<p>My tool: <a href=\"http://fedwiki.andysylvester.com:443/\">http://fedwiki.andysylvester.com:443/</a></p>\n\n\n\n<p>My announcement: <a href=\"https://andysylvester.com/2023/02/06/demo-of-mystatustool-twitter-using-rss-and-rsscloud/\">https://andysylvester.com/2023/02/06/demo-of-mystatustool-twitter-using-rss-and-rsscloud/</a></p>\n\n\n\n<p>Check them out!</p>\n</div>\n<div class=\"syndication-links\"></div>",
-                "value": "Colin Walker and I have both developed tools for making short posts and following RSS feeds.\n\n\n\nColin’s tool: https://colinwalker.blog/php-mst/\n\n\n\nColin’s announcement: https://colinwalker.blog/blog/?date=2023-02-08\n\n\n\nMy tool: http://fedwiki.andysylvester.com:443/\n\n\n\nMy announcement: https://andysylvester.com/2023/02/06/demo-of-mystatustool-twitter-using-rss-and-rsscloud/\n\n\n\nCheck them out!"
-              },
-              {
-                "html": "<p>Colin Walker and I have both developed tools for making short posts and following RSS feeds.</p>\n\n\n\n<p>Colin’s tool: <a href=\"https://colinwalker.blog/php-mst/\">https://colinwalker.blog/php-mst/</a></p>\n\n\n\n<p>Colin’s announcement: <a href=\"https://colinwalker.blog/blog/?date=2023-02-08\">https://colinwalker.blog/blog/?date=2023-02-08</a></p>\n\n\n\n<p>My tool: <a href=\"http://fedwiki.andysylvester.com:443/\">http://fedwiki.andysylvester.com:443/</a></p>\n\n\n\n<p>My announcement: <a href=\"https://andysylvester.com/2023/02/06/demo-of-mystatustool-twitter-using-rss-and-rsscloud/\">https://andysylvester.com/2023/02/06/demo-of-mystatustool-twitter-using-rss-and-rsscloud/</a></p>\n\n\n\n<p>Check them out!</p>",
-                "value": "Colin Walker and I have both developed tools for making short posts and following RSS feeds.\n\n\n\nColin’s tool: https://colinwalker.blog/php-mst/\n\n\n\nColin’s announcement: https://colinwalker.blog/blog/?date=2023-02-08\n\n\n\nMy tool: http://fedwiki.andysylvester.com:443/\n\n\n\nMy announcement: https://andysylvester.com/2023/02/06/demo-of-mystatustool-twitter-using-rss-and-rsscloud/\n\n\n\nCheck them out!"
-              }
-            ]
-          },
-          "id": "post-2783"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Demo of MyStatusTool – Twitter using RSS and rssCloud",
-              "Demo of MyStatusTool – Twitter using RSS and rssCloud"
-            ],
-            "content": [
-              {
-                "html": "<div class=\"e-content\">\n<p>I have created a proof of concept for a microblogging tool relying on RSS for data storage and rssCloud for notification. I was motivated to do this to show how rssCloud could be used to support a Twitter-like experience. Also, I was blocked for posting an <a href=\"https://andysylvester.com/2022/12/10/an-unfortunate-exercise-of-editorial-discretion-by-dave-winer/\">innocuous comment</a> on the FeedLand user feed tool, and felt that there needed to be an alternative to that tool for microblog posting. My earlier posts on the development of this tool are <a href=\"https://andysylvester.com/2023/01/16/a-roadmap-for-mystatustool/\">here </a>and <a href=\"https://andysylvester.com/2023/01/31/update-on-mystatustool-development/\">here</a>.</p>\n\n\n\n<p>In this demo app, the basic functions are:</p>\n\n\n\n<ul>\n<li>Ability to make a short post</li>\n<li>When a post is made, a RSS feed is updated, a separate page for the post is created, and the post appears on the home page via Websockets</li>\n<li>The tool provides hosting for the RSS feed and posts created</li>\n<li>The tool can display updates to any RSS feeds that support the rssCloud protocol via Websockets (feeds are listed in a configuration file)</li>\n<li>The contents of the feeds in the configuration file are displayed when the user accesses the page (so they can see what has been posted recently), then any posts with the tool appear at the top of the page</li>\n</ul>\n\n\n\n<p>The tool is set up for a single user and requires some configuration. Please consult the README on the <a href=\"https://github.com/andysylvester/myStatusToolDemo\"><u>Github repo</u></a> for more information if you want to set up the tool for yourself.</p>\n\n\n\n<p>The demo app is available at <a href=\"http://fedwiki.andysylvester.com:443/\">http://fedwiki.andysylvester.com:443/</a>. The contents of the feeds in the configuration file are displayed, along with any recent posts using the demo app. I encourage people to try making posts and see how they appear and how quickly they appear. As posts continue, so will display of updates to the RSS feeds in the configuration file.</p>\n\n\n\n<p>This is a proof of concept, but will be further developed. If you find problems in the tool, or want to suggest features, feel free to create an issue in the <a href=\"https://github.com/andysylvester/myStatusToolDemo\"><u>Github repo</u></a>. Also, I would love it if a few other people try installing it and let me know how it goes…</p>\n</div>\n<div class=\"syndication-links\"></div>",
-                "value": "I have created a proof of concept for a microblogging tool relying on RSS for data storage and rssCloud for notification. I was motivated to do this to show how rssCloud could be used to support a Twitter-like experience. Also, I was blocked for posting an innocuous comment on the FeedLand user feed tool, and felt that there needed to be an alternative to that tool for microblog posting. My earlier posts on the development of this tool are here and here.\n\n\n\nIn this demo app, the basic functions are:\n\n\n\nAbility to make a short postWhen a post is made, a RSS feed is updated, a separate page for the post is created, and the post appears on the home page via WebsocketsThe tool provides hosting for the RSS feed and posts createdThe tool can display updates to any RSS feeds that support the rssCloud protocol via Websockets (feeds are listed in a configuration file)The contents of the feeds in the configuration file are displayed when the user accesses the page (so they can see what has been posted recently), then any posts with the tool appear at the top of the page\n\n\n\nThe tool is set up for a single user and requires some configuration. Please consult the README on the Github repo for more information if you want to set up the tool for yourself.\n\n\n\nThe demo app is available at http://fedwiki.andysylvester.com:443/. The contents of the feeds in the configuration file are displayed, along with any recent posts using the demo app. I encourage people to try making posts and see how they appear and how quickly they appear. As posts continue, so will display of updates to the RSS feeds in the configuration file.\n\n\n\nThis is a proof of concept, but will be further developed. If you find problems in the tool, or want to suggest features, feel free to create an issue in the Github repo. Also, I would love it if a few other people try installing it and let me know how it goes…"
-              },
-              {
-                "html": "<p>I have created a proof of concept for a microblogging tool relying on RSS for data storage and rssCloud for notification. I was motivated to do this to show how rssCloud could be used to support a Twitter-like experience. Also, I was blocked for posting an <a href=\"https://andysylvester.com/2022/12/10/an-unfortunate-exercise-of-editorial-discretion-by-dave-winer/\">innocuous comment</a> on the FeedLand user feed tool, and felt that there needed to be an alternative to that tool for microblog posting. My earlier posts on the development of this tool are <a href=\"https://andysylvester.com/2023/01/16/a-roadmap-for-mystatustool/\">here </a>and <a href=\"https://andysylvester.com/2023/01/31/update-on-mystatustool-development/\">here</a>.</p>\n\n\n\n<p>In this demo app, the basic functions are:</p>\n\n\n\n<ul>\n<li>Ability to make a short post</li>\n<li>When a post is made, a RSS feed is updated, a separate page for the post is created, and the post appears on the home page via Websockets</li>\n<li>The tool provides hosting for the RSS feed and posts created</li>\n<li>The tool can display updates to any RSS feeds that support the rssCloud protocol via Websockets (feeds are listed in a configuration file)</li>\n<li>The contents of the feeds in the configuration file are displayed when the user accesses the page (so they can see what has been posted recently), then any posts with the tool appear at the top of the page</li>\n</ul>\n\n\n\n<p>The tool is set up for a single user and requires some configuration. Please consult the README on the <a href=\"https://github.com/andysylvester/myStatusToolDemo\"><u>Github repo</u></a> for more information if you want to set up the tool for yourself.</p>\n\n\n\n<p>The demo app is available at <a href=\"http://fedwiki.andysylvester.com:443/\">http://fedwiki.andysylvester.com:443/</a>. The contents of the feeds in the configuration file are displayed, along with any recent posts using the demo app. I encourage people to try making posts and see how they appear and how quickly they appear. As posts continue, so will display of updates to the RSS feeds in the configuration file.</p>\n\n\n\n<p>This is a proof of concept, but will be further developed. If you find problems in the tool, or want to suggest features, feel free to create an issue in the <a href=\"https://github.com/andysylvester/myStatusToolDemo\"><u>Github repo</u></a>. Also, I would love it if a few other people try installing it and let me know how it goes…</p>",
-                "value": "I have created a proof of concept for a microblogging tool relying on RSS for data storage and rssCloud for notification. I was motivated to do this to show how rssCloud could be used to support a Twitter-like experience. Also, I was blocked for posting an innocuous comment on the FeedLand user feed tool, and felt that there needed to be an alternative to that tool for microblog posting. My earlier posts on the development of this tool are here and here.\n\n\n\nIn this demo app, the basic functions are:\n\n\n\nAbility to make a short postWhen a post is made, a RSS feed is updated, a separate page for the post is created, and the post appears on the home page via WebsocketsThe tool provides hosting for the RSS feed and posts createdThe tool can display updates to any RSS feeds that support the rssCloud protocol via Websockets (feeds are listed in a configuration file)The contents of the feeds in the configuration file are displayed when the user accesses the page (so they can see what has been posted recently), then any posts with the tool appear at the top of the page\n\n\n\nThe tool is set up for a single user and requires some configuration. Please consult the README on the Github repo for more information if you want to set up the tool for yourself.\n\n\n\nThe demo app is available at http://fedwiki.andysylvester.com:443/. The contents of the feeds in the configuration file are displayed, along with any recent posts using the demo app. I encourage people to try making posts and see how they appear and how quickly they appear. As posts continue, so will display of updates to the RSS feeds in the configuration file.\n\n\n\nThis is a proof of concept, but will be further developed. If you find problems in the tool, or want to suggest features, feel free to create an issue in the Github repo. Also, I would love it if a few other people try installing it and let me know how it goes…"
-              }
-            ]
-          },
-          "id": "post-2779"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "",
-              ""
-            ],
-            "content": [
-              {
-                "html": "<div class=\"e-content\">\n<p>Earlier this week, Ken Smith <a href=\"http://oldschool.scripting.com/KenSmith/2023/01/31/224819.html?title=plainToSee\">wrote</a> about redlining and segregation in South Bend, Indiana, where he lives. I have started reading a <a href=\"https://microcosmpublishing.com/catalog/books/3726\">book </a>about the history of the Black Panthers in Portland, Oregon. There is a section which describes the same practices, and how the <a href=\"https://en.wikipedia.org/wiki/Albina,_Portland,_Oregon\">Albina</a> neighborhood and the former town of <a href=\"https://en.wikipedia.org/wiki/Vanport,_Oregon\">Vanport </a>were the only places where Blacks could live.</p>\n</div>\n<div class=\"syndication-links\"></div>",
-                "value": "Earlier this week, Ken Smith wrote about redlining and segregation in South Bend, Indiana, where he lives. I have started reading a book about the history of the Black Panthers in Portland, Oregon. There is a section which describes the same practices, and how the Albina neighborhood and the former town of Vanport were the only places where Blacks could live."
-              },
-              {
-                "html": "<p>Earlier this week, Ken Smith <a href=\"http://oldschool.scripting.com/KenSmith/2023/01/31/224819.html?title=plainToSee\">wrote</a> about redlining and segregation in South Bend, Indiana, where he lives. I have started reading a <a href=\"https://microcosmpublishing.com/catalog/books/3726\">book </a>about the history of the Black Panthers in Portland, Oregon. There is a section which describes the same practices, and how the <a href=\"https://en.wikipedia.org/wiki/Albina,_Portland,_Oregon\">Albina</a> neighborhood and the former town of <a href=\"https://en.wikipedia.org/wiki/Vanport,_Oregon\">Vanport </a>were the only places where Blacks could live.</p>",
-                "value": "Earlier this week, Ken Smith wrote about redlining and segregation in South Bend, Indiana, where he lives. I have started reading a book about the history of the Black Panthers in Portland, Oregon. There is a section which describes the same practices, and how the Albina neighborhood and the former town of Vanport were the only places where Blacks could live."
-              }
-            ]
-          },
-          "id": "post-2776"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "",
-              ""
-            ],
-            "content": [
-              {
-                "html": "<div class=\"e-content\">\n<p>Based on the recent <a href=\"http://scripting.com/2023/02/02/133127.html\">Twitter news</a> from Dave Winer, I have downloaded my Drummer files. It would be nice if there was a way to download my Old School weblog – any ideas, lazyweb?</p>\n</div>\n<div class=\"syndication-links\"></div>",
-                "value": "Based on the recent Twitter news from Dave Winer, I have downloaded my Drummer files. It would be nice if there was a way to download my Old School weblog – any ideas, lazyweb?"
-              },
-              {
-                "html": "<p>Based on the recent <a href=\"http://scripting.com/2023/02/02/133127.html\">Twitter news</a> from Dave Winer, I have downloaded my Drummer files. It would be nice if there was a way to download my Old School weblog – any ideas, lazyweb?</p>",
-                "value": "Based on the recent Twitter news from Dave Winer, I have downloaded my Drummer files. It would be nice if there was a way to download my Old School weblog – any ideas, lazyweb?"
-              }
-            ]
-          },
-          "id": "post-2774"
         }
       ]
     }
@@ -285,38 +285,34 @@
       "https://andysylvester.com/"
     ],
     "bookmark": [
+      "https://andysylvester.com/2023/02/23/2807/",
+      "https://andysylvester.com/2023/02/23/2805/",
+      "https://andysylvester.com/2023/02/23/twitter-api-still-seems-to-work/",
+      "https://andysylvester.com/2023/02/23/solved-my-problem-with-wordpress-caching/",
+      "https://andysylvester.com/2023/02/23/2798/",
       "https://andysylvester.com/2023/02/18/2796/",
       "https://andysylvester.com/2023/02/16/2794/",
       "https://andysylvester.com/2023/02/14/having-a-conversation-using-rsscloud/",
       "https://andysylvester.com/2023/02/12/2789/",
-      "https://andysylvester.com/2023/02/11/musing-about-glossaries/",
-      "https://andysylvester.com/2023/02/11/2785/",
-      "https://andysylvester.com/2023/02/09/2783/",
-      "https://andysylvester.com/2023/02/06/demo-of-mystatustool-twitter-using-rss-and-rsscloud/",
-      "https://andysylvester.com/2023/02/02/2776/",
-      "https://andysylvester.com/2023/02/02/2774/"
+      "https://andysylvester.com/2023/02/11/musing-about-glossaries/"
     ],
     "category": [
+      "https://andysylvester.com/category/wordpress/",
+      "https://andysylvester.com/category/rsscloud/",
+      "https://andysylvester.com/category/software-development/",
+      "https://andysylvester.com/category/tweets/",
       "https://andysylvester.com/category/mystatustool/",
       "https://andysylvester.com/category/dogs/",
-      "https://andysylvester.com/category/glossaries/",
-      "https://andysylvester.com/category/blogging/",
-      "https://andysylvester.com/category/feeds/",
-      "https://andysylvester.com/category/microblogging/",
-      "https://andysylvester.com/category/rsscloud/",
-      "https://andysylvester.com/category/racism/",
-      "https://andysylvester.com/category/drummer/"
+      "https://andysylvester.com/category/glossaries/"
     ],
     "tag": [
+      "https://andysylvester.com/category/wordpress/",
+      "https://andysylvester.com/category/rsscloud/",
+      "https://andysylvester.com/category/software-development/",
+      "https://andysylvester.com/category/tweets/",
       "https://andysylvester.com/category/mystatustool/",
       "https://andysylvester.com/category/dogs/",
-      "https://andysylvester.com/category/glossaries/",
-      "https://andysylvester.com/category/blogging/",
-      "https://andysylvester.com/category/feeds/",
-      "https://andysylvester.com/category/microblogging/",
-      "https://andysylvester.com/category/rsscloud/",
-      "https://andysylvester.com/category/racism/",
-      "https://andysylvester.com/category/drummer/"
+      "https://andysylvester.com/category/glossaries/"
     ],
     "designer": [
       "http://independentpublisher.me/"
@@ -470,7 +466,61 @@
       ],
       "title": "Andy Sylvester's Web"
     },
-    "https://andysylvester.com/2023/02/18/2796/": {
+    "https://andysylvester.com/2023/02/23/2807/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to"
+    },
+    "https://andysylvester.com/category/wordpress/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "WordPress"
+    },
+    "https://andysylvester.com/2023/02/23/2805/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to"
+    },
+    "https://andysylvester.com/category/rsscloud/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "rssCloud"
+    },
+    "https://andysylvester.com/2023/02/23/twitter-api-still-seems-to-work/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to Twitter API still seems to work",
+      "text": "Twitter API still seems to work"
+    },
+    "https://andysylvester.com/category/software-development/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Software Development"
+    },
+    "https://andysylvester.com/category/tweets/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Tweets"
+    },
+    "https://andysylvester.com/2023/02/23/solved-my-problem-with-wordpress-caching/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to Solved my problem with WordPress caching",
+      "text": "Solved my problem with WordPress caching"
+    },
+    "https://andysylvester.com/2023/02/23/2798/": {
       "rels": [
         "bookmark"
       ],
@@ -482,6 +532,12 @@
         "tag"
       ],
       "text": "MyStatusTool"
+    },
+    "https://andysylvester.com/2023/02/18/2796/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to"
     },
     "https://andysylvester.com/2023/02/16/2794/": {
       "rels": [
@@ -522,79 +578,6 @@
         "tag"
       ],
       "text": "Glossaries"
-    },
-    "https://andysylvester.com/2023/02/11/2785/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Permalink to"
-    },
-    "https://andysylvester.com/2023/02/09/2783/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Permalink to"
-    },
-    "https://andysylvester.com/category/blogging/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "Blogging"
-    },
-    "https://andysylvester.com/category/feeds/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "Feeds"
-    },
-    "https://andysylvester.com/category/microblogging/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "Microblogging"
-    },
-    "https://andysylvester.com/category/rsscloud/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "rssCloud"
-    },
-    "https://andysylvester.com/2023/02/06/demo-of-mystatustool-twitter-using-rss-and-rsscloud/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Permalink to Demo of MyStatusTool – Twitter using RSS and rssCloud",
-      "text": "Demo of MyStatusTool – Twitter using RSS and rssCloud"
-    },
-    "https://andysylvester.com/2023/02/02/2776/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Permalink to"
-    },
-    "https://andysylvester.com/category/racism/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "Racism"
-    },
-    "https://andysylvester.com/2023/02/02/2774/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Permalink to"
-    },
-    "https://andysylvester.com/category/drummer/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "Drummer"
     },
     "http://independentpublisher.me/": {
       "rels": [
