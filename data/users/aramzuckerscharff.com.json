@@ -2,63 +2,50 @@
   "items": [],
   "rels": {
     "stylesheet": [
-      "http://fonts.googleapis.com/css?family=Playfair+Display|EB+Garamond",
-      "https://aramzuckerscharff.com/style.css",
-      "https://aramzuckerscharff.com/print.css"
+      "https://aramzs.github.io/css/main.css"
     ],
-    "authorization_endpoint": [
-      "https://aramzuckerscharff.com/auth/"
+    "canonical": [
+      "http://aramzs.github.io/aramzs/"
+    ],
+    "alternate": [
+      "http://aramzs.github.io/feed.xml"
+    ],
+    "icon": [
+      "https://raw.githubusercontent.com/AramZS/aramzs.github.io/master/_includes/favicon.ico"
     ],
     "me": [
-      "http://twitter.com/chronotope",
-      "http://facebook.com/aramzs",
-      "http://foursquare.com/chronotope",
-      "http://last.fm/user/Shade0"
+      "https://indieweb.social/@Chronotope"
     ]
   },
   "rel-urls": {
-    "http://fonts.googleapis.com/css?family=Playfair+Display|EB+Garamond": {
+    "https://aramzs.github.io/css/main.css": {
       "rels": [
         "stylesheet"
+      ]
+    },
+    "http://aramzs.github.io/aramzs/": {
+      "rels": [
+        "canonical"
+      ]
+    },
+    "http://aramzs.github.io/feed.xml": {
+      "rels": [
+        "alternate"
       ],
-      "type": "text/css"
+      "title": "Fight With Tools by AramZS",
+      "type": "application/rss+xml"
     },
-    "https://aramzuckerscharff.com/style.css": {
+    "https://raw.githubusercontent.com/AramZS/aramzs.github.io/master/_includes/favicon.ico": {
       "rels": [
-        "stylesheet"
+        "icon"
       ],
-      "media": "screen"
+      "type": "image/png"
     },
-    "https://aramzuckerscharff.com/print.css": {
+    "https://indieweb.social/@Chronotope": {
       "rels": [
-        "stylesheet"
+        "me"
       ],
-      "media": "print"
-    },
-    "https://aramzuckerscharff.com/auth/": {
-      "rels": [
-        "authorization_endpoint"
-      ]
-    },
-    "http://twitter.com/chronotope": {
-      "rels": [
-        "me"
-      ]
-    },
-    "http://facebook.com/aramzs": {
-      "rels": [
-        "me"
-      ]
-    },
-    "http://foursquare.com/chronotope": {
-      "rels": [
-        "me"
-      ]
-    },
-    "http://last.fm/user/Shade0": {
-      "rels": [
-        "me"
-      ]
+      "text": "Mastodon"
     }
   }
 }
