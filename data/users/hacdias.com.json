@@ -134,6 +134,51 @@
             "h-entry"
           ],
           "properties": {
+            "name": [
+              "BlockLearning Framework Paper"
+            ],
+            "summary": [
+              "My thesis, specifically the part regarding Vertical Federated Learning, has been turned into a paper which has been presented during the UbiSec 2022 conference. Now, it has been published. It is called BlockLearning: A Modular Framework for Blockchain-Based Vertical Federated."
+            ],
+            "url": [
+              "https://hacdias.com/2023/02/16/paper-blocklearning-framework"
+            ],
+            "published": [
+              "2023-02-16T12:00:00+01:00"
+            ],
+            "category": [
+              "papers",
+              "publications"
+            ],
+            "syndication": [
+              "https://doi.org/10.1007/978-981-99-0272-9_22"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "url": [
+                    "https://hacdias.com/"
+                  ],
+                  "name": [
+                    "Henrique Dias"
+                  ],
+                  "photo": [
+                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
+                  ]
+                },
+                "value": "https://hacdias.com/"
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
             "content": [
               {
                 "html": "<p>Since Twitter is going to start charging for the usage of their API in a few days, I just <a href=\"https://github.com/hacdias/eagle/commit/a6fcc99502c4ceb1ea95ff061e39ad135ec234bb\" rel=\"noopener noreferrer\">removed</a> all the Twitter related code from my website. To be fair, I haven’t even used any Twitter-relating tooling on my website in months, so it’s unlikely I will miss it.</p>",
@@ -493,60 +538,6 @@
               }
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "When You Don't Know the Ingredients"
-            ],
-            "summary": [
-              "This is the story on how whipped cream and cocoa powder have stressed me over the last two weeks. I hope that that is a seemingly weird enough sentence to keep you on reading. Or not. If you don’t want to keep going, it’s also fine. But let me tell you more."
-            ],
-            "location": [
-              {
-                "type": [
-                  "h-adr"
-                ],
-                "properties": {
-                  "locality": [
-                    "Eindhoven"
-                  ],
-                  "country": [
-                    "Netherlands"
-                  ]
-                },
-                "value": "Eindhoven,\nNetherlands"
-              }
-            ],
-            "url": [
-              "https://hacdias.com/2023/01/06/when-you-dont-know-the-ingredients"
-            ],
-            "published": [
-              "2023-01-06T22:15:23+01:00"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "url": [
-                    "https://hacdias.com/"
-                  ],
-                  "name": [
-                    "Henrique Dias"
-                  ],
-                  "photo": [
-                    "https://hacdias.com/profile/2022-03-26/me-256.jpg"
-                  ]
-                },
-                "value": "https://hacdias.com/"
-              }
-            ]
-          }
         }
       ]
     }
@@ -564,7 +555,7 @@
       "https://hacdias.com/.rss"
     ],
     "stylesheet": [
-      "https://hacdias.com/assets/0678a16813fecdf7b20aeeb3384ec465dbb5ebc5d1a04c11585aa7535fb02190.css"
+      "https://hacdias.com/assets/38d4101f894460ed1a5f832ff6150bb55d0cd800448e639a3b55ecd3c6885bc5.css"
     ],
     "indieauth-metadata": [
       "https://hacdias.com/.well-known/oauth-authorization-server"
@@ -606,12 +597,14 @@
       "mailto:mail@hacdias.com"
     ],
     "noopener": [
+      "https://doi.org/10.1007/978-981-99-0272-9_22",
       "https://github.com/hacdias/eagle/commit/a6fcc99502c4ceb1ea95ff061e39ad135ec234bb",
       "https://catavino.net/portuguese-rice-arroz-carolino/",
       "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/previous",
       "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/next"
     ],
     "noreferrer": [
+      "https://doi.org/10.1007/978-981-99-0272-9_22",
       "https://github.com/hacdias/eagle/commit/a6fcc99502c4ceb1ea95ff061e39ad135ec234bb",
       "https://catavino.net/portuguese-rice-arroz-carolino/",
       "https://xn--sr8hvo.ws/%F0%9F%91%99%F0%9F%88%B6%F0%9F%98%BD/previous",
@@ -648,7 +641,7 @@
       ],
       "type": "application/rss+xml"
     },
-    "https://hacdias.com/assets/0678a16813fecdf7b20aeeb3384ec465dbb5ebc5d1a04c11585aa7535fb02190.css": {
+    "https://hacdias.com/assets/38d4101f894460ed1a5f832ff6150bb55d0cd800448e639a3b55ecd3c6885bc5.css": {
       "rels": [
         "stylesheet"
       ]
@@ -737,6 +730,13 @@
       "rels": [
         "pingback"
       ]
+    },
+    "https://doi.org/10.1007/978-981-99-0272-9_22": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "published"
     },
     "https://github.com/hacdias/eagle/commit/a6fcc99502c4ceb1ea95ff061e39ad135ec234bb": {
       "rels": [
