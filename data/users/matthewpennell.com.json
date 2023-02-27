@@ -2,8 +2,22 @@
   "items": [],
   "rels": {
     "stylesheet": [
-      "https://matthewpennell.com/assets/built/screen.css?v=04dfb7d41e",
-      "https://matthewpennell.com/public/cards.min.css?v=04dfb7d41e"
+      "https://matthewpennell.com/assets/built/mulligan.css?v=35f6e8c33b",
+      "https://matthewpennell.com/public/cards.min.css?v=35f6e8c33b"
+    ],
+    "apple-touch-icon": [
+      "https://matthewpennell.com/assets/apple-touch-icon.png?v=35f6e8c33b"
+    ],
+    "icon": [
+      "https://matthewpennell.com/assets/favicon-32x32.png?v=35f6e8c33b",
+      "https://matthewpennell.com/assets/favicon-16x16.png?v=35f6e8c33b",
+      "https://matthewpennell.com/favicon.ico"
+    ],
+    "manifest": [
+      "https://matthewpennell.com/assets/site.webmanifest?v=35f6e8c33b"
+    ],
+    "shortcut": [
+      "https://matthewpennell.com/favicon.ico"
     ],
     "canonical": [
       "https://matthewpennell.com/"
@@ -15,13 +29,50 @@
       "https://matthewpennell.com/webmentions/receive/"
     ],
     "noopener": [
-      "https://ghost.org/"
+      "https://twitter.com/matthewpennell",
+      "https://www.instagram.com/matthewpennell/",
+      "https://medium.com/@matthewpennell",
+      "https://dribbble.com/matthewpennell",
+      "https://www.last.fm/user/Watchmaker",
+      "https://github.com/matthewpennell/",
+      "https://www.linkedin.com/in/matthewpennell/",
+      "https://ghost.org/",
+      "https://www.digitalocean.com/"
     ]
   },
   "rel-urls": {
-    "https://matthewpennell.com/assets/built/screen.css?v=04dfb7d41e": {
+    "https://matthewpennell.com/assets/built/mulligan.css?v=35f6e8c33b": {
       "rels": [
         "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "https://matthewpennell.com/assets/apple-touch-icon.png?v=35f6e8c33b": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://matthewpennell.com/assets/favicon-32x32.png?v=35f6e8c33b": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/png"
+    },
+    "https://matthewpennell.com/assets/favicon-16x16.png?v=35f6e8c33b": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/png"
+    },
+    "https://matthewpennell.com/assets/site.webmanifest?v=35f6e8c33b": {
+      "rels": [
+        "manifest"
+      ]
+    },
+    "https://matthewpennell.com/favicon.ico": {
+      "rels": [
+        "icon",
+        "shortcut"
       ]
     },
     "https://matthewpennell.com/": {
@@ -41,17 +92,65 @@
         "webmention"
       ]
     },
-    "https://matthewpennell.com/public/cards.min.css?v=04dfb7d41e": {
+    "https://matthewpennell.com/public/cards.min.css?v=35f6e8c33b": {
       "rels": [
         "stylesheet"
       ],
       "type": "text/css"
     },
+    "https://twitter.com/matthewpennell": {
+      "rels": [
+        "noopener"
+      ],
+      "text": "Twitter"
+    },
+    "https://www.instagram.com/matthewpennell/": {
+      "rels": [
+        "noopener"
+      ],
+      "text": "Instagram"
+    },
+    "https://medium.com/@matthewpennell": {
+      "rels": [
+        "noopener"
+      ],
+      "text": "Medium"
+    },
+    "https://dribbble.com/matthewpennell": {
+      "rels": [
+        "noopener"
+      ],
+      "text": "Dribbble"
+    },
+    "https://www.last.fm/user/Watchmaker": {
+      "rels": [
+        "noopener"
+      ],
+      "text": "Last.fm"
+    },
+    "https://github.com/matthewpennell/": {
+      "rels": [
+        "noopener"
+      ],
+      "text": "GitHub"
+    },
+    "https://www.linkedin.com/in/matthewpennell/": {
+      "rels": [
+        "noopener"
+      ],
+      "text": "LinkedIn"
+    },
     "https://ghost.org/": {
       "rels": [
         "noopener"
       ],
-      "text": "Powered by Ghost"
+      "text": "Ghost"
+    },
+    "https://www.digitalocean.com/": {
+      "rels": [
+        "noopener"
+      ],
+      "text": "Digital Ocean"
     }
   }
 }
