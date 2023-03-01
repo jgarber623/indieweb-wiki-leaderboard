@@ -1,5 +1,815 @@
 {
-  "items": [],
-  "rels": {},
-  "rel-urls": {}
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "url": [
+          "http://gibberish.com/profile/misuba",
+          "http://gibberish.com/profile/misuba",
+          "http://thinkagainmyfriend.show/",
+          "http://twitter.com/misuba"
+        ],
+        "photo": [
+          "http://gibberish.com/file/c4d11d42d474160af991976b2ade6373"
+        ],
+        "profile": [
+          "Mike Sugarbaker"
+        ],
+        "name": [
+          "Mike Sugarbaker"
+        ],
+        "note": [
+          {
+            "html": "<div class=\"highlightedText\">\n<p>Questpunk, wastrel, professional</p>\n</div>",
+            "value": "Questpunk, wastrel, professional"
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "logo": [
+                "http://gibberish.com/file/c4d11d42d474160af991976b2ade6373"
+              ],
+              "photo": [
+                "http://gibberish.com/file/c4d11d42d474160af991976b2ade6373"
+              ],
+              "name": [
+                "Mike Sugarbaker"
+              ],
+              "url": [
+                "http://gibberish.com/profile/misuba",
+                "http://gibberish.com/profile/misuba"
+              ]
+            },
+            "value": "Mike Sugarbaker"
+          }
+        ],
+        "name": [
+          "Why AI audio is a different ballgame"
+        ],
+        "content": [
+          {
+            "html": "<p>(<a href=\"http://gibberish.com/2022/02/24/oh-hey-its-getting-toward-time-for-my-annual-blog\">Sorry I'm late.</a>)</p>\n<p>\n\nIn case you missed it, the <a href=\"https://www.ibm.com/topics/recurrent-neural-networks\">latest thing</a> we're calling AI (or Machine Learning or whatever) is <a href=\"https://kotaku.com/ai-art-dall-e-midjourney-stable-diffusion-copyright-1849388060\">ethically very problematic!</a> A legal case has been brought by a few professional illustrators who have had their <a href=\"https://www.polygon.com/23558946/ai-art-lawsuit-stability-stable-diffusion-deviantart-midjourney\">hard-won, marketable styles straight-up ganked</a> by text-to-image processors. While the second most discoursed-about ML-generation medium, that of text, is not criticized as often on an intellectual-property basis as on its <a href=\"https://www.msn.com/en-xl/news/other/lies-racism-and-ai-it-experts-point-to-serious-flaws-in-chatgpt/ar-AA16X10j\">tendency to present statistically-likely nonsense as authoritative-sounding truth</a>, I still worry about its contribution to AI's brand in general as ripping off artists and creators who most often weren't even given opportunity to opt out.\n\n</p>\n<p>\nWhy would I be worried personally? Because I'm enchanted by the sounds of <a href=\"https://wandb.ai/wandb_gen/audio/reports/A-Gentle-Introduction-to-Dance-Diffusion--VmlldzoyNjg1Mzky\">Dance Diffusion</a>, an application of the <a href=\"https://stability.ai/blog/stable-diffusion-v2-release\">Stable Diffusion</a> method to the generation of audio. Like its image-creating sibling, Dance Diffusion starts either from noise - fully random data - or from some starting data with noise transparently overlaid. It then \"denoises\" the data toward what its model says is likely. As with image generators, giving the model some starting data can result in what's known as \"style transfer\" - rendering the preexisting content in a style closer to the model, while keeping the fundamentals of the starting point intact. This is, for the most part, how I've been using DD - to do things like ask a model trained on nothing but drum solos to transform a clip from a rap vocal, and other such. (Models that do text-to-sound generation, or creation of audio from written prompts, are <a href=\"https://audioldm.github.io/\">beginning to emerge</a> as of this writing but are still fairly limited.)\n\n</p>\n<p>\nI have mostly done my style transfers with pre-made models trained on relatively small sets of recordings. My favorite results have come from a model called \"unlocked-250k,\" which gets its first name from its training data, the <a href=\"https://archive.org/details/unlockedrecordings\">Unlocked Recordings collection on the Internet Archive</a>. This collection, despite what one might assume from its presence on IA for free download, is mostly under copyright, and not under any sort of unusually permissive license. (None of it is \"in print\" or otherwise commercially available.) So why are these recordings here, in this model that's in the default model selection for this tool? <i>How does it keep not occurring to nerds that this is a problem?</i>\n\n</p>\n<p>\nBut here's the thing: when it comes to music, we already have the tools to deal with this situation. They're called <a href=\"https://www.ascap.com/\">ASCAP</a> and <a href=\"https://www.bmi.com/\">BMI</a>. In fact, these tools were created in response to a nearly identical problem: technological changes to the way musicians' IP is distributed, which made said distribution much more indirect and, uh, diffuse.\n\n</p>\n<p>\nI doubt these institutions are perfect - I'm certainly not at a point in <a href=\"https://gibberish.com/filemaker/\">my music career</a> where I'm in a position to need to know lots about them. (Also I'm completely eliding the issue of voice actors, for whom style transfer is already becoming a threat - but they do have a union!) But I bet they could be talked into handling artists' contributions to the statistical probability of a piece of music's direction and form as it evolves out of noise. Those contributions are individually small, but we generally know exactly what group of artists ought to be getting them, for which recordings. And in the case of very composed starting data, like the hummed basslines and melody fragments I've been making so I can transform them into weird blurts of orchestra, the songwriting is not actually in the picture in the final product (there's some mechanism that gets royalties to arrangers and producers, but I don't know that it's one of the same ones). So I'd expect what users of audio AIs end up paying, as royalties or fees, wouldn't be as large as if you sample something outright. Everybody wins!\n\n</p>\n<p>\nI can think of a number of things to quibble back and forth about in such an arrangement (what about consent? You don't get to opt out of having your song played on the radio; is this similar?), but the point is this sort of problem can be understood and handled, and appropriate institutions can be created to attempt to deal with it. Is it conceivable that visual artists could respond to AI by forming a similar layer of institutions? I doubt they have the muscle, plus maybe there is too much work-for-hire happening in illustration, compared to recorded music, to make that approach make sense. But it all puts me in mind of <a href=\"https://aeon.co/essays/the-tragedy-of-the-commons-is-a-false-and-dangerous-myth\">Elinor Ostrom's work debunking</a> (before it was published??!?!) the so-called tragedy of the commons. Everything stays complicated about human beings working together, but invested people with a commitment to each other can work out creative solutions. That gives us an alternative to the simple, absolute cancellation of an entire, fascinating line of research and activity. I hope we take it, in whatever form.</p>",
+            "value": "(Sorry I'm late.)\n\n\nIn case you missed it, the latest thing we're calling AI (or Machine Learning or whatever) is ethically very problematic! A legal case has been brought by a few professional illustrators who have had their hard-won, marketable styles straight-up ganked by text-to-image processors. While the second most discoursed-about ML-generation medium, that of text, is not criticized as often on an intellectual-property basis as on its tendency to present statistically-likely nonsense as authoritative-sounding truth, I still worry about its contribution to AI's brand in general as ripping off artists and creators who most often weren't even given opportunity to opt out.\n\n\nWhy would I be worried personally? Because I'm enchanted by the sounds of Dance Diffusion, an application of the Stable Diffusion method to the generation of audio. Like its image-creating sibling, Dance Diffusion starts either from noise - fully random data - or from some starting data with noise transparently overlaid. It then \"denoises\" the data toward what its model says is likely. As with image generators, giving the model some starting data can result in what's known as \"style transfer\" - rendering the preexisting content in a style closer to the model, while keeping the fundamentals of the starting point intact. This is, for the most part, how I've been using DD - to do things like ask a model trained on nothing but drum solos to transform a clip from a rap vocal, and other such. (Models that do text-to-sound generation, or creation of audio from written prompts, are beginning to emerge as of this writing but are still fairly limited.)\n\n\nI have mostly done my style transfers with pre-made models trained on relatively small sets of recordings. My favorite results have come from a model called \"unlocked-250k,\" which gets its first name from its training data, the Unlocked Recordings collection on the Internet Archive. This collection, despite what one might assume from its presence on IA for free download, is mostly under copyright, and not under any sort of unusually permissive license. (None of it is \"in print\" or otherwise commercially available.) So why are these recordings here, in this model that's in the default model selection for this tool? How does it keep not occurring to nerds that this is a problem?\n\n\nBut here's the thing: when it comes to music, we already have the tools to deal with this situation. They're called ASCAP and BMI. In fact, these tools were created in response to a nearly identical problem: technological changes to the way musicians' IP is distributed, which made said distribution much more indirect and, uh, diffuse.\n\n\nI doubt these institutions are perfect - I'm certainly not at a point in my music career where I'm in a position to need to know lots about them. (Also I'm completely eliding the issue of voice actors, for whom style transfer is already becoming a threat - but they do have a union!) But I bet they could be talked into handling artists' contributions to the statistical probability of a piece of music's direction and form as it evolves out of noise. Those contributions are individually small, but we generally know exactly what group of artists ought to be getting them, for which recordings. And in the case of very composed starting data, like the hummed basslines and melody fragments I've been making so I can transform them into weird blurts of orchestra, the songwriting is not actually in the picture in the final product (there's some mechanism that gets royalties to arrangers and producers, but I don't know that it's one of the same ones). So I'd expect what users of audio AIs end up paying, as royalties or fees, wouldn't be as large as if you sample something outright. Everybody wins!\n\n\nI can think of a number of things to quibble back and forth about in such an arrangement (what about consent? You don't get to opt out of having your song played on the radio; is this similar?), but the point is this sort of problem can be understood and handled, and appropriate institutions can be created to attempt to deal with it. Is it conceivable that visual artists could respond to AI by forming a similar layer of institutions? I doubt they have the muscle, plus maybe there is too much work-for-hire happening in illustration, compared to recorded music, to make that approach make sense. But it all puts me in mind of Elinor Ostrom's work debunking (before it was published??!?!) the so-called tragedy of the commons. Everything stays complicated about human beings working together, but invested people with a commitment to each other can work out creative solutions. That gives us an alternative to the simple, absolute cancellation of an entire, fascinating line of research and activity. I hope we take it, in whatever form."
+          }
+        ],
+        "url": [
+          "http://gibberish.com/2023/01/31/why-ai-audio-is-a-different-ballgame"
+        ],
+        "published": [
+          "2023-01-31T21:56:12+0000"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "logo": [
+                "http://gibberish.com/file/c4d11d42d474160af991976b2ade6373"
+              ],
+              "photo": [
+                "http://gibberish.com/file/c4d11d42d474160af991976b2ade6373"
+              ],
+              "name": [
+                "Mike Sugarbaker"
+              ],
+              "url": [
+                "http://gibberish.com/profile/misuba",
+                "http://gibberish.com/profile/misuba"
+              ]
+            },
+            "value": "Mike Sugarbaker"
+          }
+        ],
+        "name": [
+          "Oh hey, it's getting toward time for my annual blog post"
+        ],
+        "content": [
+          {
+            "html": "Oh hey, it's getting toward time for my annual blog post",
+            "value": "Oh hey, it's getting toward time for my annual blog post"
+          }
+        ],
+        "url": [
+          "http://gibberish.com/2022/02/24/oh-hey-its-getting-toward-time-for-my-annual-blog"
+        ],
+        "published": [
+          "2022-02-24T19:21:33+0000"
+        ],
+        "syndication": [
+          "https://twitter.com/misuba/status/1496928301356572683"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "logo": [
+                "http://gibberish.com/file/c4d11d42d474160af991976b2ade6373"
+              ],
+              "photo": [
+                "http://gibberish.com/file/c4d11d42d474160af991976b2ade6373"
+              ],
+              "name": [
+                "Mike Sugarbaker"
+              ],
+              "url": [
+                "http://gibberish.com/profile/misuba",
+                "http://gibberish.com/profile/misuba"
+              ]
+            },
+            "value": "Mike Sugarbaker"
+          }
+        ],
+        "name": [
+          "What is web abolition?"
+        ],
+        "content": [
+          {
+            "html": "<p>Let's do our part for internet content by starting with someone else's Twitter thread:\n<br><br></p>\n<blockquote class=\"twitter-tweet\">\n<p lang=\"en\" dir=\"ltr\">types of websites that exist anymore:<br><br>- algorithmic feed of whatever makes the rat keep pushing the lever<br>- we hope you enjoyed your 3 free articles<br>- ENABLE NOTIFICATIONS? SHARE LOCATION?? GET NEWSLETTER???<br>- labor of love by an actual person, last updated 2009</p>— Cliff Jerrison (@pervocracy) <a href=\"https://twitter.com/pervocracy/status/1370505905763184640?ref_src=twsrc%5Etfw\">March 12, 2021</a>\n</blockquote> <script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\n\n<br><p>\nFor several months now I've been having these periodic waves of compulsion to build a web site. I don't even know exactly <i>what</i> web site. Something nostalgic, just for fun; something that helps people create a world made of writing, like the weird, <a href=\"http://everything2.com/\">failed alt-wikipedias</a> that obsessed me in my early twenties. Something game-like, maybe... or just a literal game? I've started to cut code for a few of these ideas (I'll still write code, as it turns out, just not for anyone else), but more often I've ruled them out or lost steam before even getting started. Any single one of them would fail to be what I want, which is a weird fever-dream amalgam of all of them.\n</p>\n<p>\n\nHopefully this has all been an extinction burst. The truth is, the web's done. It's best considered legacy now, all of it. This is the oldest of news to zoomers, who've never seen it as a virtuality to explore, but as the place where most forms of bureaucracy live (plus there's a Facebook interface there, I guess, but you'd only use it if you had to). The future almost certainly lies in networks that are roughly monkeysphere-sized, made not for the whole world but for a semi-gated group of people, who are probably connected by some context that isn't solely an online one; <a href=\"https://slack.com/\">Slack</a> or <a href=\"https://discord.gg/\">Discord</a> is the paradigm, although given <a href=\"https://www.imore.com/slack-loses-its-mind-now-lets-you-direct-message-anyone-you-want\">recent</a> <a href=\"https://www.cnbc.com/2021/03/23/discord-why-microsoft-would-buy-it-for-10-billion.html\">events</a>, it sure seems worth looking at <a href=\"https://opensource.com/alternatives/slack\">open source alternatives</a>.\n</p>\n<p>\n\nFor a lot longer than several months, I've been involved with efforts to look past the web infrastructure we've got, towards something more useful and less costly and harmful. For a while, this meant the so-called <a href=\"https://indieweb.org/\">IndieWeb</a>, a collection of efforts to get the things we like about social media back into independent blogs. Then it meant the more radical fixes of the <a href=\"https://en.wikipedia.org/wiki/Dat_(software)\">peer-to-peer web</a>. Recently I've had my eye out for entirely new protocols - fresh takes on something like <a href=\"https://arstechnica.com/tech-policy/2009/11/the-web-may-have-won-but-gopher-tunnels-on/\">gopher</a>, maybe with some of the interactivity of HTTP, and hopefully some of the writeability that was supposed to be a part of browsers from the beginning. That would be awesome, I've been thinking. Sort of.\n\n</p>\n<p>\nAnd lo, here is <a href=\"https://gemini.circumlunar.space/\">Gemini</a>, a new protocol which is almost those things. It was created by a few coders who were still hanging out on Gopher, which alone pleases my soul and gives me that feeling of good-hearted willful obscurity that goes with a lot of my favorite subcultures over the course of my life. It cuts a lot of features out of the web, which is a good and productive way to proceed, but writeability and interactivity are among them, sacrificed for user privacy. (<em>They think the fact that you can send server queries that are rich enough to let you edit the web without editing HTML is inherently tied to everything that's gone wrong! What if they're right? What are my weird, dying dreams of textscapes in that case?</em>) Gemini is like the IndieWeb, and like <a href=\"https://beakerbrowser.com/\">Beaker</a> turned out to be, in that it doesn't offer anything that an average user, who seems pretty unmoved by privacy and such if their continued enthusiasm for Facebook is any hint, will actually experience as <i>better</i> - as motivation to switch. But the virtuality and exploreability of Gemini is delightful, if not strictly necessary anymore. (I recommend <a href=\"https://gmi.skyjake.fi/lagrange/\">Lagrange</a>.)\n</p>\n<p>\n\nSo what is a movement toward realizing the web as decaying infrastructure, something whose main verb is \"crumble,\" not \"connect\"? I envision something like a <a href=\"https://matrix.org/\">Matrix</a> client with a web browser bolted onto its side, the way that early versions of Netscape also supported gopher. That web browser would include JavaScript blocking and image blocking by default, sandbox all domains from each other's cookies, and possibly make use of gateway servers to further insulate the user. I'm sure that doesn't cover everything, but you get the idea.</p>\n\n<p>At this late date, we have the gift of knowing what people want from the web, so we could make our client a lot less generic, with features that support RSS, photo feeds, maybe even some IndieWeb-style distributed social stuff. Or what the hell, bolt a Facebook client on there too! Their terms of service don't forbid this from what I can tell (Twitter's do, but Twitter should be abandoned, not embraced and extended). All to the point of positioning the web as something that isn't the center, for those few of us left who need help with that.\n\n</p>\n<p>\n\nI admit I've also been trying idly to think of ways to augment places like Slack and Discord; something that a virtual world, visual or textual, can offer these groups of people... but most likely, my nerd scenes only ever valued such virtualities because we lacked the real-world context these new chat spaces have. Once your community is real and online both, the only adventurous journey that motivates you is... unionizing? Or in the case of non-corporate Slacks, maybe abolishing cops and landlords. If you want something to explore, look out on the streets.\n\n</p>\n<p>\nSo there's your nice tall glass of goodbye to all that. Don't get me wrong, the web isn't going away or anything. We're stuck with it, just like it itself is stuck with HTML 5 and JavaScript, 25-year-old technologies that were largely intended for other uses (thanks to the Twitter widget above, I have had to add <code>&lt;P&gt;</code> tags to this post manually). Where else are Google results going to come from but a hundred million blogs and forums that just won't quite die? Nothing dies on the internet. Not even Gopher died. If the <a href=\"https://archive.org/\">Internet Archive</a> were a company, I'd want to invest in it;* it's the only operation that feels relevant to the future of \"new media,\" and it's specifically all about its past.\n\n</p>\n<p>\n\n(A fun inside-baseball place to go from this conclusion: when do we short Google? Not immediately, for sure, but it's starting to look a little bit dead-man-walking, like how Yahoo looked ten years ago. Its only hope as a company is either to divest from search almost all the way, or else to really double down on owning the web even more than it does now. Hilariously, one of the best ways to do the latter would be to give direct financial and rhetorical support to the various IndieWeb initiatives. The fact that this will never occur to them would be the most damning evidence that they're in their decline as a company, if it weren't eclipsed by their <a href=\"https://www.nbcnews.com/news/us-news/current-ex-employees-allege-google-drastically-rolled-back-diversity-inclusion-n1206181\">massive failure to deal on any level with diversity</a> and the general <a href=\"https://mashable.com/2015/08/02/google-plus-history/\">footgun shootout of their corporate culture</a>.)\n</p>\n<p>\n\n<small>* You can invest in the sense of <a href=\"https://archive.org/donate/\">donating</a>, which I very much encourage, if you still have the means after donating to things that are <a href=\"https://blacktrans.org/\">much more humanly material</a>.</small></p>",
+            "value": "Let's do our part for internet content by starting with someone else's Twitter thread:\n\ntypes of websites that exist anymore:- algorithmic feed of whatever makes the rat keep pushing the lever- we hope you enjoyed your 3 free articles- ENABLE NOTIFICATIONS? SHARE LOCATION?? GET NEWSLETTER???- labor of love by an actual person, last updated 2009— Cliff Jerrison (@pervocracy) March 12, 2021 \n\n\nFor several months now I've been having these periodic waves of compulsion to build a web site. I don't even know exactly what web site. Something nostalgic, just for fun; something that helps people create a world made of writing, like the weird, failed alt-wikipedias that obsessed me in my early twenties. Something game-like, maybe... or just a literal game? I've started to cut code for a few of these ideas (I'll still write code, as it turns out, just not for anyone else), but more often I've ruled them out or lost steam before even getting started. Any single one of them would fail to be what I want, which is a weird fever-dream amalgam of all of them.\n\n\nHopefully this has all been an extinction burst. The truth is, the web's done. It's best considered legacy now, all of it. This is the oldest of news to zoomers, who've never seen it as a virtuality to explore, but as the place where most forms of bureaucracy live (plus there's a Facebook interface there, I guess, but you'd only use it if you had to). The future almost certainly lies in networks that are roughly monkeysphere-sized, made not for the whole world but for a semi-gated group of people, who are probably connected by some context that isn't solely an online one; Slack or Discord is the paradigm, although given recent events, it sure seems worth looking at open source alternatives.\n\n\nFor a lot longer than several months, I've been involved with efforts to look past the web infrastructure we've got, towards something more useful and less costly and harmful. For a while, this meant the so-called IndieWeb, a collection of efforts to get the things we like about social media back into independent blogs. Then it meant the more radical fixes of the peer-to-peer web. Recently I've had my eye out for entirely new protocols - fresh takes on something like gopher, maybe with some of the interactivity of HTTP, and hopefully some of the writeability that was supposed to be a part of browsers from the beginning. That would be awesome, I've been thinking. Sort of.\n\n\nAnd lo, here is Gemini, a new protocol which is almost those things. It was created by a few coders who were still hanging out on Gopher, which alone pleases my soul and gives me that feeling of good-hearted willful obscurity that goes with a lot of my favorite subcultures over the course of my life. It cuts a lot of features out of the web, which is a good and productive way to proceed, but writeability and interactivity are among them, sacrificed for user privacy. (They think the fact that you can send server queries that are rich enough to let you edit the web without editing HTML is inherently tied to everything that's gone wrong! What if they're right? What are my weird, dying dreams of textscapes in that case?) Gemini is like the IndieWeb, and like Beaker turned out to be, in that it doesn't offer anything that an average user, who seems pretty unmoved by privacy and such if their continued enthusiasm for Facebook is any hint, will actually experience as better - as motivation to switch. But the virtuality and exploreability of Gemini is delightful, if not strictly necessary anymore. (I recommend Lagrange.)\n\n\nSo what is a movement toward realizing the web as decaying infrastructure, something whose main verb is \"crumble,\" not \"connect\"? I envision something like a Matrix client with a web browser bolted onto its side, the way that early versions of Netscape also supported gopher. That web browser would include JavaScript blocking and image blocking by default, sandbox all domains from each other's cookies, and possibly make use of gateway servers to further insulate the user. I'm sure that doesn't cover everything, but you get the idea.\n\nAt this late date, we have the gift of knowing what people want from the web, so we could make our client a lot less generic, with features that support RSS, photo feeds, maybe even some IndieWeb-style distributed social stuff. Or what the hell, bolt a Facebook client on there too! Their terms of service don't forbid this from what I can tell (Twitter's do, but Twitter should be abandoned, not embraced and extended). All to the point of positioning the web as something that isn't the center, for those few of us left who need help with that.\n\n\n\nI admit I've also been trying idly to think of ways to augment places like Slack and Discord; something that a virtual world, visual or textual, can offer these groups of people... but most likely, my nerd scenes only ever valued such virtualities because we lacked the real-world context these new chat spaces have. Once your community is real and online both, the only adventurous journey that motivates you is... unionizing? Or in the case of non-corporate Slacks, maybe abolishing cops and landlords. If you want something to explore, look out on the streets.\n\n\nSo there's your nice tall glass of goodbye to all that. Don't get me wrong, the web isn't going away or anything. We're stuck with it, just like it itself is stuck with HTML 5 and JavaScript, 25-year-old technologies that were largely intended for other uses (thanks to the Twitter widget above, I have had to add <P> tags to this post manually). Where else are Google results going to come from but a hundred million blogs and forums that just won't quite die? Nothing dies on the internet. Not even Gopher died. If the Internet Archive were a company, I'd want to invest in it;* it's the only operation that feels relevant to the future of \"new media,\" and it's specifically all about its past.\n\n\n\n(A fun inside-baseball place to go from this conclusion: when do we short Google? Not immediately, for sure, but it's starting to look a little bit dead-man-walking, like how Yahoo looked ten years ago. Its only hope as a company is either to divest from search almost all the way, or else to really double down on owning the web even more than it does now. Hilariously, one of the best ways to do the latter would be to give direct financial and rhetorical support to the various IndieWeb initiatives. The fact that this will never occur to them would be the most damning evidence that they're in their decline as a company, if it weren't eclipsed by their massive failure to deal on any level with diversity and the general footgun shootout of their corporate culture.)\n\n\n* You can invest in the sense of donating, which I very much encourage, if you still have the means after donating to things that are much more humanly material."
+          }
+        ],
+        "url": [
+          "http://gibberish.com/2021/03/17/so-the-webs-over"
+        ],
+        "published": [
+          "2021-03-17T01:52:36+0000"
+        ],
+        "syndication": [
+          "https://twitter.com/misuba/status/1387471046211772418"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "logo": [
+                "http://gibberish.com/file/c4d11d42d474160af991976b2ade6373"
+              ],
+              "photo": [
+                "http://gibberish.com/file/c4d11d42d474160af991976b2ade6373"
+              ],
+              "name": [
+                "Mike Sugarbaker"
+              ],
+              "url": [
+                "http://gibberish.com/profile/misuba",
+                "http://gibberish.com/profile/misuba"
+              ]
+            },
+            "value": "Mike Sugarbaker"
+          }
+        ],
+        "name": [
+          "- I don't have anything to say to you people\r\n- I have learned a great deal about the limitations of jokes as a way of relating to strangers but I'm still leaving the above\r\n- I'm probably an asymptomatic carrier\r\n- I still haven't figured out what I'm going to do besides programming\r\n- If I spent as much time playing Dreams as I do watching Dreams streamers I'd be as good at Dreams as I wish I was\r\n- Defund the police\r\n- Abolish the web\r\n- I'm kidding about that last one\r\n- Sort of"
+        ],
+        "content": [
+          {
+            "html": "- I don't have anything to say to you people<br>\r\n- I have learned a great deal about the limitations of jokes as a way of relating to strangers but I'm still leaving the above<br>\r\n- I'm probably an asymptomatic carrier<br>\r\n- I still haven't figured out what I'm going to do besides programming<br>\r\n- If I spent as much time playing Dreams as I do watching Dreams streamers I'd be as good at Dreams as I wish I was<br>\r\n- Defund the police<br>\r\n- Abolish the web<br>\r\n- I'm kidding about that last one<br>\r\n- Sort of",
+            "value": "- I don't have anything to say to you people\r\n- I have learned a great deal about the limitations of jokes as a way of relating to strangers but I'm still leaving the above\r\n- I'm probably an asymptomatic carrier\r\n- I still haven't figured out what I'm going to do besides programming\r\n- If I spent as much time playing Dreams as I do watching Dreams streamers I'd be as good at Dreams as I wish I was\r\n- Defund the police\r\n- Abolish the web\r\n- I'm kidding about that last one\r\n- Sort of"
+          }
+        ],
+        "url": [
+          "http://gibberish.com/2020/07/15/--i-dont-have-anything-to-say-to-you-people"
+        ],
+        "published": [
+          "2020-07-15T02:40:40+0000"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "logo": [
+                "http://gibberish.com/file/c4d11d42d474160af991976b2ade6373"
+              ],
+              "photo": [
+                "http://gibberish.com/file/c4d11d42d474160af991976b2ade6373"
+              ],
+              "name": [
+                "Mike Sugarbaker"
+              ],
+              "url": [
+                "http://gibberish.com/profile/misuba",
+                "http://gibberish.com/profile/misuba"
+              ]
+            },
+            "value": "Mike Sugarbaker"
+          }
+        ],
+        "name": [
+          "Some bullet points:\r\n\r\n- Still not dead\r\n- Playing Dreams pretty hard. Come check me at https://twitter.com/WoodsenseStudio\r\n- Not a programmer anymore\r\n- Maybe writing a book about roleplaying? We'll see"
+        ],
+        "content": [
+          {
+            "html": "Some bullet points:<br>\r\n<br>\r\n- Still not dead<br>\r\n- Playing Dreams pretty hard. Come check me at <a href=\"https://twitter.com/WoodsenseStudio\">https:/<wbr></wbr>/<wbr></wbr>twitter.com/<wbr></wbr>WoodsenseStudio</a><br>\r\n- Not a programmer anymore<br>\r\n- Maybe writing a book about roleplaying? We'll see",
+            "value": "Some bullet points:\r\n\r\n- Still not dead\r\n- Playing Dreams pretty hard. Come check me at https://twitter.com/WoodsenseStudio\r\n- Not a programmer anymore\r\n- Maybe writing a book about roleplaying? We'll see"
+          }
+        ],
+        "url": [
+          "http://gibberish.com/2020/02/12/some-bullet-points--still-not-dead--playing-dreams-pretty-hard"
+        ],
+        "published": [
+          "2020-02-12T20:09:04+0000"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "logo": [
+                "http://gibberish.com/file/c4d11d42d474160af991976b2ade6373"
+              ],
+              "photo": [
+                "http://gibberish.com/file/c4d11d42d474160af991976b2ade6373"
+              ],
+              "name": [
+                "Mike Sugarbaker"
+              ],
+              "url": [
+                "http://gibberish.com/profile/misuba",
+                "http://gibberish.com/profile/misuba"
+              ]
+            },
+            "value": "Mike Sugarbaker"
+          }
+        ],
+        "name": [
+          "Not dead, just stopped tweeting from here, then stopped tweeting entirely. I own my own Mastodon instance (theha.us) so I’m not going to bother with syndicating to it from here.\r\n\r\nIf/when I decide what book I’m writing, I’ll post about it here. Or if I make that giant, crazy web site."
+        ],
+        "content": [
+          {
+            "html": "Not dead, just stopped tweeting from here, then stopped tweeting entirely. I own my own Mastodon instance (theha.us) so I’m not going to bother with syndicating to it from here.<br>\r\n<br>\r\nIf/when I decide what book I’m writing, I’ll post about it here. Or if I make that giant, crazy web site.",
+            "value": "Not dead, just stopped tweeting from here, then stopped tweeting entirely. I own my own Mastodon instance (theha.us) so I’m not going to bother with syndicating to it from here.\r\n\r\nIf/when I decide what book I’m writing, I’ll post about it here. Or if I make that giant, crazy web site."
+          }
+        ],
+        "url": [
+          "http://gibberish.com/2019/02/20/not-dead-just-stopped-tweeting-from-here-then-stopped-tweeting"
+        ],
+        "published": [
+          "2019-02-20T01:50:02+0000"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "logo": [
+                "http://gibberish.com/file/c4d11d42d474160af991976b2ade6373"
+              ],
+              "photo": [
+                "http://gibberish.com/file/c4d11d42d474160af991976b2ade6373"
+              ],
+              "name": [
+                "Mike Sugarbaker"
+              ],
+              "url": [
+                "http://gibberish.com/profile/misuba",
+                "http://gibberish.com/profile/misuba"
+              ]
+            },
+            "value": "Mike Sugarbaker"
+          }
+        ],
+        "name": [
+          "A new illustrated podcast from the creators of Children's Hour of Knowledge. https://www.youtube.com/watch?v=q_dV3w9ehbU"
+        ],
+        "content": [
+          {
+            "html": "A new illustrated podcast from the creators of Children's Hour of Knowledge. <a href=\"https://www.youtube.com/watch?v=q_dV3w9ehbU\">https:/<wbr></wbr>/<wbr></wbr>www.youtube.com/<wbr></wbr>watch?v=q_dV3w9ehbU</a>",
+            "value": "A new illustrated podcast from the creators of Children's Hour of Knowledge. https://www.youtube.com/watch?v=q_dV3w9ehbU"
+          }
+        ],
+        "url": [
+          "http://gibberish.com/2017/10/09/a-new-illustrated-podcast-from-the-creators-of-childrens-hour"
+        ],
+        "published": [
+          "2017-10-09T21:39:49+0000"
+        ],
+        "syndication": [
+          "https://twitter.com/misuba/status/917504903580389376"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "logo": [
+                "http://gibberish.com/file/c4d11d42d474160af991976b2ade6373"
+              ],
+              "photo": [
+                "http://gibberish.com/file/c4d11d42d474160af991976b2ade6373"
+              ],
+              "name": [
+                "Mike Sugarbaker"
+              ],
+              "url": [
+                "http://gibberish.com/profile/misuba",
+                "http://gibberish.com/profile/misuba"
+              ]
+            },
+            "value": "Mike Sugarbaker"
+          }
+        ],
+        "name": [
+          "Slow week for Danny - refactoring, probly lots of bugs - but you can use Markdown now! github.com/misuba/Danny dat://danny-tutorial-misuba.hashbase.io/"
+        ],
+        "content": [
+          {
+            "html": "Slow week for Danny - refactoring, probly lots of bugs - but you can use Markdown now! github.com/misuba/Danny dat://danny-tutorial-misuba.hashbase.io/",
+            "value": "Slow week for Danny - refactoring, probly lots of bugs - but you can use Markdown now! github.com/misuba/Danny dat://danny-tutorial-misuba.hashbase.io/"
+          }
+        ],
+        "url": [
+          "http://gibberish.com/2017/10/09/slow-week-for-danny---refactoring-probly-lots-of-bugs"
+        ],
+        "published": [
+          "2017-10-09T16:28:01+0000"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "logo": [
+                "http://gibberish.com/file/c4d11d42d474160af991976b2ade6373"
+              ],
+              "photo": [
+                "http://gibberish.com/file/c4d11d42d474160af991976b2ade6373"
+              ],
+              "name": [
+                "Mike Sugarbaker"
+              ],
+              "url": [
+                "http://gibberish.com/profile/misuba",
+                "http://gibberish.com/profile/misuba"
+              ]
+            },
+            "value": "Mike Sugarbaker"
+          }
+        ],
+        "name": [
+          "Things are still 0.1 as foretold but here is a wee adventure to get you started: dat://danny-tutorial-misuba.hashbase.io/"
+        ],
+        "content": [
+          {
+            "html": "Things are still 0.1 as foretold but here is a wee adventure to get you started: dat://danny-tutorial-misuba.hashbase.io/",
+            "value": "Things are still 0.1 as foretold but here is a wee adventure to get you started: dat://danny-tutorial-misuba.hashbase.io/"
+          }
+        ],
+        "url": [
+          "http://gibberish.com/2017/09/29/things-are-still-01-as-foretold-but-here-is-a"
+        ],
+        "published": [
+          "2017-09-29T16:04:27+0000"
+        ],
+        "syndication": [
+          "https://twitter.com/misuba/status/913796623762849793"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "logo": [
+                "http://gibberish.com/file/c4d11d42d474160af991976b2ade6373"
+              ],
+              "photo": [
+                "http://gibberish.com/file/c4d11d42d474160af991976b2ade6373"
+              ],
+              "name": [
+                "Mike Sugarbaker"
+              ],
+              "url": [
+                "http://gibberish.com/profile/misuba",
+                "http://gibberish.com/profile/misuba"
+              ]
+            },
+            "value": "Mike Sugarbaker"
+          }
+        ],
+        "name": [
+          "I dropped a couple of hints about this, but here's v0.1 of my Beaker app, a contemporary take on HyperCard. https://github.com/misuba/Danny"
+        ],
+        "content": [
+          {
+            "html": "I dropped a couple of hints about this, but here's v0.1 of my Beaker app, a contemporary take on HyperCard. <a href=\"https://github.com/misuba/Danny\">https:/<wbr></wbr>/<wbr></wbr>github.com/<wbr></wbr>misuba/<wbr></wbr>Danny</a>",
+            "value": "I dropped a couple of hints about this, but here's v0.1 of my Beaker app, a contemporary take on HyperCard. https://github.com/misuba/Danny"
+          }
+        ],
+        "url": [
+          "http://gibberish.com/2017/09/29/i-dropped-a-couple-of-hints-about-this-but-heres"
+        ],
+        "published": [
+          "2017-09-29T15:56:05+0000"
+        ],
+        "syndication": [
+          "https://twitter.com/misuba/status/913794520596320261"
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "apple-touch-icon": [
+      "http://gibberish.com/gfx/logos/apple-icon-57x57.png",
+      "http://gibberish.com/gfx/logos/apple-icon-72x72.png",
+      "http://gibberish.com/gfx/logos/apple-icon-114x114.png",
+      "http://gibberish.com/gfx/logos/apple-icon-144x144.png",
+      "http://gibberish.com/file/c4d11d42d474160af991976b2ade6373"
+    ],
+    "icon": [
+      "http://gibberish.com/file/c4d11d42d474160af991976b2ade6373"
+    ],
+    "shortcut": [
+      "http://gibberish.com/file/c4d11d42d474160af991976b2ade6373"
+    ],
+    "apple-touch-icon-precomposed": [
+      "http://gibberish.com/file/c4d11d42d474160af991976b2ade6373"
+    ],
+    "schema.DC": [
+      "http://purl.org/dc/elements/1.1/"
+    ],
+    "amphtml": [
+      "http://gibberish.com/?_t=amp"
+    ],
+    "stylesheet": [
+      "http://gibberish.com/external/bootstrap/assets/css/bootstrap.min.css",
+      "http://gibberish.com/external/paypal-bootstrap-accessibility-plugin/plugins/css/bootstrap-accessibility_1.0.3.css",
+      "http://gibberish.com/external/font-awesome/css/font-awesome.css",
+      "http://gibberish.com/css/default.css",
+      "http://gibberish.com/css/defaultb3.css",
+      "http://gibberish.com/external/bootstrap-toggle/css/bootstrap-toggle.min.css",
+      "http://gibberish.com/external/mention/recommended-styles.css",
+      "http://gibberish.com/IdnoPlugins/Checkin/external/leaflet/leaflet.css",
+      "http://gibberish.com/Themes/Solo/css/default.css",
+      "http://gibberish.com/styles/site/",
+      "http://gibberish.com/external/mediaelement/build/mediaelementplayer.css"
+    ],
+    "alternate": [
+      "http://gibberish.com/?_t=rss",
+      "http://gibberish.com/content/all?_t=rss"
+    ],
+    "feed": [
+      "http://gibberish.com/?_t=rss",
+      "http://gibberish.com/content/all?_t=rss",
+      "http://gibberish.com/content/all"
+    ],
+    "http://webmention.org/": [
+      "http://gibberish.com/webmention/"
+    ],
+    "webmention": [
+      "http://gibberish.com/webmention/"
+    ],
+    "hub": [
+      "https://withknown.superfeedr.com/"
+    ],
+    "me": [
+      "http://thinkagainmyfriend.show/",
+      "http://twitter.com/misuba"
+    ],
+    "openid.delegate": [
+      "http://gibberish.com/"
+    ],
+    "openid.server": [
+      "https://indieauth.com/openid"
+    ],
+    "authorization_endpoint": [
+      "http://gibberish.com/indieauth/auth"
+    ],
+    "token_endpoint": [
+      "http://gibberish.com/indieauth/token"
+    ],
+    "micropub": [
+      "http://gibberish.com/micropub/endpoint"
+    ],
+    "permalink": [
+      "http://gibberish.com/2023/01/31/why-ai-audio-is-a-different-ballgame",
+      "http://gibberish.com/2022/02/24/oh-hey-its-getting-toward-time-for-my-annual-blog",
+      "http://gibberish.com/2021/03/17/so-the-webs-over",
+      "http://gibberish.com/2020/07/15/--i-dont-have-anything-to-say-to-you-people",
+      "http://gibberish.com/2020/02/12/some-bullet-points--still-not-dead--playing-dreams-pretty-hard",
+      "http://gibberish.com/2019/02/20/not-dead-just-stopped-tweeting-from-here-then-stopped-tweeting",
+      "http://gibberish.com/2017/10/09/a-new-illustrated-podcast-from-the-creators-of-childrens-hour",
+      "http://gibberish.com/2017/10/09/slow-week-for-danny---refactoring-probly-lots-of-bugs",
+      "http://gibberish.com/2017/09/29/things-are-still-01-as-foretold-but-here-is-a",
+      "http://gibberish.com/2017/09/29/i-dropped-a-couple-of-hints-about-this-but-heres"
+    ],
+    "prev": [
+      "http://gibberish.com/?offset=10"
+    ]
+  },
+  "rel-urls": {
+    "http://gibberish.com/gfx/logos/apple-icon-57x57.png": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "http://gibberish.com/gfx/logos/apple-icon-72x72.png": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "http://gibberish.com/gfx/logos/apple-icon-114x114.png": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "http://gibberish.com/gfx/logos/apple-icon-144x144.png": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "http://gibberish.com/file/c4d11d42d474160af991976b2ade6373": {
+      "rels": [
+        "icon",
+        "shortcut"
+      ],
+      "type": "image/png"
+    },
+    "http://purl.org/dc/elements/1.1/": {
+      "rels": [
+        "schema.DC"
+      ]
+    },
+    "http://gibberish.com/?_t=amp": {
+      "rels": [
+        "amphtml"
+      ]
+    },
+    "http://gibberish.com/external/bootstrap/assets/css/bootstrap.min.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "http://gibberish.com/external/paypal-bootstrap-accessibility-plugin/plugins/css/bootstrap-accessibility_1.0.3.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "http://gibberish.com/external/font-awesome/css/font-awesome.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "http://gibberish.com/css/default.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "http://gibberish.com/css/defaultb3.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "http://gibberish.com/external/bootstrap-toggle/css/bootstrap-toggle.min.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "http://gibberish.com/external/mention/recommended-styles.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
+    },
+    "http://gibberish.com/?_t=rss": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Gibberish, the web home of Mike Sugarbaker",
+      "type": "application/rss+xml"
+    },
+    "http://gibberish.com/content/all?_t=rss": {
+      "rels": [
+        "alternate",
+        "feed"
+      ],
+      "title": "Gibberish Dot Com: all content",
+      "type": "application/rss+xml"
+    },
+    "http://gibberish.com/content/all": {
+      "rels": [
+        "feed"
+      ],
+      "title": "Gibberish Dot Com",
+      "type": "text/html"
+    },
+    "http://gibberish.com/webmention/": {
+      "rels": [
+        "http://webmention.org/"
+      ]
+    },
+    "https://withknown.superfeedr.com/": {
+      "rels": [
+        "hub"
+      ]
+    },
+    "http://thinkagainmyfriend.show/": {
+      "rels": [
+        "me"
+      ]
+    },
+    "http://twitter.com/misuba": {
+      "rels": [
+        "me"
+      ]
+    },
+    "http://gibberish.com/": {
+      "rels": [
+        "openid.delegate"
+      ]
+    },
+    "https://indieauth.com/openid": {
+      "rels": [
+        "openid.server"
+      ]
+    },
+    "http://gibberish.com/indieauth/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "http://gibberish.com/indieauth/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "http://gibberish.com/micropub/endpoint": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "http://gibberish.com/IdnoPlugins/Checkin/external/leaflet/leaflet.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "http://gibberish.com/Themes/Solo/css/default.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "http://gibberish.com/styles/site/": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "http://gibberish.com/2023/01/31/why-ai-audio-is-a-different-ballgame": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "31 Jan 2023"
+    },
+    "http://gibberish.com/2022/02/24/oh-hey-its-getting-toward-time-for-my-annual-blog": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "24 Feb 2022"
+    },
+    "http://gibberish.com/2021/03/17/so-the-webs-over": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "17 Mar 2021"
+    },
+    "http://gibberish.com/2020/07/15/--i-dont-have-anything-to-say-to-you-people": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "15 Jul 2020"
+    },
+    "http://gibberish.com/2020/02/12/some-bullet-points--still-not-dead--playing-dreams-pretty-hard": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "12 Feb 2020"
+    },
+    "http://gibberish.com/2019/02/20/not-dead-just-stopped-tweeting-from-here-then-stopped-tweeting": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "20 Feb 2019"
+    },
+    "http://gibberish.com/2017/10/09/a-new-illustrated-podcast-from-the-creators-of-childrens-hour": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "09 Oct 2017"
+    },
+    "http://gibberish.com/2017/10/09/slow-week-for-danny---refactoring-probly-lots-of-bugs": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "09 Oct 2017"
+    },
+    "http://gibberish.com/2017/09/29/things-are-still-01-as-foretold-but-here-is-a": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "29 Sep 2017"
+    },
+    "http://gibberish.com/2017/09/29/i-dropped-a-couple-of-hints-about-this-but-heres": {
+      "rels": [
+        "permalink"
+      ],
+      "text": "29 Sep 2017"
+    },
+    "http://gibberish.com/?offset=10": {
+      "rels": [
+        "prev"
+      ],
+      "title": "Older",
+      "text": "Older »"
+    },
+    "http://gibberish.com/external/mediaelement/build/mediaelementplayer.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    }
+  }
 }

@@ -18,6 +18,50 @@
             "h-entry"
           ],
           "properties": {
+            "name": [
+              "Otis Health"
+            ],
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "name": [
+                    "Dave Peck"
+                  ],
+                  "photo": [
+                    {
+                      "value": "https://davepeck.org/img/dave-peck-icon-feb-2023-300x300.jpg",
+                      "alt": "Dave Peck"
+                    }
+                  ],
+                  "url": [
+                    "https://davepeck.org/"
+                  ]
+                },
+                "value": "https://davepeck.org/"
+              }
+            ],
+            "url": [
+              "https://davepeck.org/2023/02/28/otis-health/"
+            ],
+            "published": [
+              "2023-02-28T10:56:00-0800"
+            ],
+            "content": [
+              {
+                "html": "<p>Today we <a href=\"https://www.geekwire.com/2023/ex-amazon-pharmacy-manager-leads-new-startup-aiming-to-help-contractors-save-on-medication/\">launched</a> our newest <a href=\"https://psl.com/\">PSL</a> spinout, <a href=\"https://www.getotis.com/\">Otis Health</a>.</p>\n\n<p>In its first iteration, Otis offers a free discount pharmacy card to the underserved 1099 worker market. A shocking percentage of contract workers have no insurance whatsoever; saving even a handful of dollars on medications can make a meaningful difference. Otis can often save much more than that.</p>\n\n<p><a href=\"https://davepeck.org/content/2023/02/28/full-otis-flow-final.png\"><img src=\"https://davepeck.org/content/2023/02/28/full-otis-flow-final-1400.png\" alt=\"Otis Health: as easy as 1-2-3\"></a></p>\n\n<p>I’m excited about Otis on three fronts. First, it brings a modern design and user experience to a market that until today has sorely lacked it. Second, Otis’ discount card is free to use; all the economic magic happens behind the scenes, in the form of complex contracts between retail chains, benefits managers, distributors, and manufacturers. Finally, Otis has its eyes firmly fixed on several adjacent services that we think will also meaningfully improve the lives of 1099 workers in the future.</p>\n\n<p>Oh, and one more (the most important!) reason to be excited: the team. It’s been a blast working with <a href=\"https://www.linkedin.com/in/aaronbach/\">Aaron</a>, Luke, <a href=\"https://www.psl.com/team/sanford-spivey\">Sanford</a>, <a href=\"http://sharonbrener.com/\">Sharon</a>, and <a href=\"https://www.linkedin.com/in/stevemoses6/\">Steve</a> to <a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7036349295658237952/\">get this thing out the door</a>.</p>",
+                "value": "Today we launched our newest PSL spinout, Otis Health.\n\nIn its first iteration, Otis offers a free discount pharmacy card to the underserved 1099 worker market. A shocking percentage of contract workers have no insurance whatsoever; saving even a handful of dollars on medications can make a meaningful difference. Otis can often save much more than that.\n\n Otis Health: as easy as 1-2-3 \n\nI’m excited about Otis on three fronts. First, it brings a modern design and user experience to a market that until today has sorely lacked it. Second, Otis’ discount card is free to use; all the economic magic happens behind the scenes, in the form of complex contracts between retail chains, benefits managers, distributors, and manufacturers. Finally, Otis has its eyes firmly fixed on several adjacent services that we think will also meaningfully improve the lives of 1099 workers in the future.\n\nOh, and one more (the most important!) reason to be excited: the team. It’s been a blast working with Aaron, Luke, Sanford, Sharon, and Steve to get this thing out the door."
+              }
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
             "author": [
               {
                 "type": [
@@ -856,91 +900,6 @@
               {
                 "html": "<p>On Friday April 10, 2020, <a href=\"https://www.apple.com/newsroom/2020/04/apple-and-google-partner-on-covid-19-contact-tracing-technology/\">Apple and Google announced a partnership</a> to provide new tools on top of which comprehensive at-scale digital <a href=\"https://www.cdc.gov/coronavirus/2019-ncov/php/open-america/contact-tracing.html\">contact tracing</a> solutions can be built.</p>\n\n<p>The primary contributions are a <a href=\"https://www.apple.com/covid19/contacttracing/\">bluetooth and a cryptographic specification</a>, plus the promise that <em>these specifications will be implemented on tens of millions of mobile devices by very early May, 2020</em>. I expect the number of supporting devices to reach the billions in the months following. Scale is essential in any successful tracing solution; as a result, any viable solution going forward will probably need to utilize these specifications. I’ll be surprised if any competing proposal achieves the necessary scale.</p>\n\n<p>While their specifications are an important piece of the puzzle, Apple and Google have not built (and do not seem to want to build) a complete solution for digital contact tracing. Instead, they’ve focused on the low-level question of how mobile devices will interact with one another to exchange anonymized data that can — in tandem with both apps and data services presumably built by others — be tied back to an infection and scored based on time and distance of exposure. The details of the underlying protocols are not specific to COVID-19 and should provide a foundation for future epidemics.</p>\n\n<p>The current specifications appear to strike a balance between privacy and anonymity and the need to share diagnostic information with arbitrary third parties. In the assumed common case where the mobile device’s owner remains healthy, no identifiable information of any kind is obtainable by any third party, including the operators of back-end data services and the developers of contact tracing applications. (Contact tracing applications can of course explicitly <em>ask</em> for PII and can share this information with data services, but the Apple + Google protocols themselves stay silent on this point.) On the other hand, in the assumed rare case where a mobile device’s owner gets sick, that owner voluntarily shares cryptographic identifiers associated with the specific days when they might have been contagious. With access to these identifiers, owners of mobile devices that were within Bluetooth range of the symptomatic individual can rank the severity of their exposure <em>without</em> the ability to determine the infected individual’s identity. In addition, it is not possible for data service providers to determine which set of users may be at risk; the information necessary to make this determination lives on, and never leaves, the at-risk mobile devices.</p>\n\n<p>Because the Apple + Google partnership does not provide a contact tracing app or a contact tracing data service — and because these are necessary components of an at-scale solution — there are many open questions about how digital contact tracing will work in <em>practice</em>.</p>\n\n<p>For instance: it is unclear who will be allowed to ship applications that use these new protocols. Will Apple and Google limit access to public entities, select private partners, or will they open the floodgates wide?</p>\n\n<p>It’s also unclear who is likely to operate back-end data services in practice. The Apple + Google design naturally lends itself to the creation of federated rather than centralized data services. We might expect multiple or even competing services to emerge. To achieve scale, these services will need to speak with one another; with what schema and semantics will this conversation take place?</p>\n\n<p><a href=\"https://www.urbandictionary.com/define.php?term=griefing\">Griefing</a> is also an important consideration in the development of apps and data services. If anybody <em>can</em> press a button that says “I have COVID-19” then anybody <em>will</em>, including the uninfected. Apps and services may need to place hard restrictions on who can share what the protocol calls “diagnostic keys”. As a simple example, an app may allow an individual to share their diagnostic keys with their doctor but only allow authorized medical professionals to share the diagnostic keys with participating data services.</p>\n\n<p>There are many other important factors to consider. On the technical front, well-known cryptographers have begun to <a href=\"https://twitter.com/moxie/status/1248707315626201088\">ask pointed questions about the chosen cryptographic scheme and its real-world privacy considerations</a>. On the privacy and policy front, there are many deep and complex issues to tackle. Perhaps the best discussion I’ve run across in the context of the United States comes from a recent <a href=\"https://www.lawfareblog.com/topic/lawfare-podcast\">Lawfare Podcast</a> episode that dives deep on the question of whether <a href=\"https://www.lawfareblog.com/lawfare-podcast-contact-tracing-privacy-threat\">contact tracing is a privacy threat</a>.</p>",
                 "value": "On Friday April 10, 2020, Apple and Google announced a partnership to provide new tools on top of which comprehensive at-scale digital contact tracing solutions can be built.\n\nThe primary contributions are a bluetooth and a cryptographic specification, plus the promise that these specifications will be implemented on tens of millions of mobile devices by very early May, 2020. I expect the number of supporting devices to reach the billions in the months following. Scale is essential in any successful tracing solution; as a result, any viable solution going forward will probably need to utilize these specifications. I’ll be surprised if any competing proposal achieves the necessary scale.\n\nWhile their specifications are an important piece of the puzzle, Apple and Google have not built (and do not seem to want to build) a complete solution for digital contact tracing. Instead, they’ve focused on the low-level question of how mobile devices will interact with one another to exchange anonymized data that can — in tandem with both apps and data services presumably built by others — be tied back to an infection and scored based on time and distance of exposure. The details of the underlying protocols are not specific to COVID-19 and should provide a foundation for future epidemics.\n\nThe current specifications appear to strike a balance between privacy and anonymity and the need to share diagnostic information with arbitrary third parties. In the assumed common case where the mobile device’s owner remains healthy, no identifiable information of any kind is obtainable by any third party, including the operators of back-end data services and the developers of contact tracing applications. (Contact tracing applications can of course explicitly ask for PII and can share this information with data services, but the Apple + Google protocols themselves stay silent on this point.) On the other hand, in the assumed rare case where a mobile device’s owner gets sick, that owner voluntarily shares cryptographic identifiers associated with the specific days when they might have been contagious. With access to these identifiers, owners of mobile devices that were within Bluetooth range of the symptomatic individual can rank the severity of their exposure without the ability to determine the infected individual’s identity. In addition, it is not possible for data service providers to determine which set of users may be at risk; the information necessary to make this determination lives on, and never leaves, the at-risk mobile devices.\n\nBecause the Apple + Google partnership does not provide a contact tracing app or a contact tracing data service — and because these are necessary components of an at-scale solution — there are many open questions about how digital contact tracing will work in practice.\n\nFor instance: it is unclear who will be allowed to ship applications that use these new protocols. Will Apple and Google limit access to public entities, select private partners, or will they open the floodgates wide?\n\nIt’s also unclear who is likely to operate back-end data services in practice. The Apple + Google design naturally lends itself to the creation of federated rather than centralized data services. We might expect multiple or even competing services to emerge. To achieve scale, these services will need to speak with one another; with what schema and semantics will this conversation take place?\n\nGriefing is also an important consideration in the development of apps and data services. If anybody can press a button that says “I have COVID-19” then anybody will, including the uninfected. Apps and services may need to place hard restrictions on who can share what the protocol calls “diagnostic keys”. As a simple example, an app may allow an individual to share their diagnostic keys with their doctor but only allow authorized medical professionals to share the diagnostic keys with participating data services.\n\nThere are many other important factors to consider. On the technical front, well-known cryptographers have begun to ask pointed questions about the chosen cryptographic scheme and its real-world privacy considerations. On the privacy and policy front, there are many deep and complex issues to tackle. Perhaps the best discussion I’ve run across in the context of the United States comes from a recent Lawfare Podcast episode that dives deep on the question of whether contact tracing is a privacy threat."
-              }
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "name": [
-                    "Dave Peck"
-                  ],
-                  "photo": [
-                    {
-                      "value": "https://davepeck.org/img/dave-peck-icon-feb-2023-300x300.jpg",
-                      "alt": "Dave Peck"
-                    }
-                  ],
-                  "url": [
-                    "https://davepeck.org/"
-                  ]
-                },
-                "value": "https://davepeck.org/"
-              }
-            ],
-            "url": [
-              "https://davepeck.org/2020/03/19/sobering/"
-            ],
-            "published": [
-              "2020-03-19T10:21:00-0700"
-            ],
-            "content": [
-              {
-                "html": "<p>The Imperial College of London recently published a <a href=\"https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College-COVID19-NPI-modelling-16-03-2020.pdf\">very sobering paper</a> modeling the progression of the coronavirus pandemic under varying degrees of social distancing. Bill Gates chimed in on <a href=\"https://www.reddit.com/r/Coronavirus/comments/fksnbf/im_bill_gates_cochair_of_the_bill_melinda_gates/\">his recent Reddit AMA</a> to say that <a href=\"https://www.reddit.com/r/Coronavirus/comments/fksnbf/im_bill_gates_cochair_of_the_bill_melinda_gates/fkuojny/\">he thought the model’s underlying assumptions were too pessimistic</a> based on more recent data from China; Gates’ own <a href=\"https://www.idmod.org/\">Institute for Disease Modeling</a> is working on updated models based on the latest data, from which we will learn more soon. <a href=\"https://twitter.com/trvrb?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor\">Trevor Bedford</a> showed optimism in a different direction, suggesting that we should immediately launch the <a href=\"https://twitter.com/trvrb/status/1240444843714678785\">infectious disease equivalent of the Apollo Program</a>. The <a href=\"https://www.gatesfoundation.org/\">Bill &amp; Melinda Gates Foundation</a> appears to be heavily investing in this direction.</p>\n\n<p>Regardless of the specifics, the “good” outcomes from the best projections our science can give us today are still calamitous. And that’s <em>if</em> our federal government gets its act together. Our government should long ago have:</p>\n\n<ul>\n  <li>Used emergency powers to demand the production of PPE and lifesaving medical equipment like ventilators</li>\n  <li>Ramped up production of COVID-19 test kits to astronomical scale and clarified the decision-making for its distribution</li>\n  <li>Activated the National Guard and erected temporary triage and treatment centers in key geographies</li>\n  <li>Enacted many trillions of thoughtful economic stimulus</li>\n  <li>Clearly messaged the danger of the moment and the need for everyone to strongly distance themselves</li>\n</ul>\n\n<p>That’s at the very least! The one ray of hope right now is the evidence that <a href=\"https://www.reddit.com/r/Coronavirus/comments/fksnbf/im_bill_gates_cochair_of_the_bill_melinda_gates/fkup8aj/\">China and South Korea have substantially beaten back COVID-19</a> through aggressive testing and shoe leather contact tracing and quarantines. At the moment I see little reason to hope that, when we get past the next 8-12 weeks, we will be in a position to do anything like the same. And, because of that, more people will die.</p>",
-                "value": "The Imperial College of London recently published a very sobering paper modeling the progression of the coronavirus pandemic under varying degrees of social distancing. Bill Gates chimed in on his recent Reddit AMA to say that he thought the model’s underlying assumptions were too pessimistic based on more recent data from China; Gates’ own Institute for Disease Modeling is working on updated models based on the latest data, from which we will learn more soon. Trevor Bedford showed optimism in a different direction, suggesting that we should immediately launch the infectious disease equivalent of the Apollo Program. The Bill & Melinda Gates Foundation appears to be heavily investing in this direction.\n\nRegardless of the specifics, the “good” outcomes from the best projections our science can give us today are still calamitous. And that’s if our federal government gets its act together. Our government should long ago have:\n\n\n  Used emergency powers to demand the production of PPE and lifesaving medical equipment like ventilators\n  Ramped up production of COVID-19 test kits to astronomical scale and clarified the decision-making for its distribution\n  Activated the National Guard and erected temporary triage and treatment centers in key geographies\n  Enacted many trillions of thoughtful economic stimulus\n  Clearly messaged the danger of the moment and the need for everyone to strongly distance themselves\n\n\nThat’s at the very least! The one ray of hope right now is the evidence that China and South Korea have substantially beaten back COVID-19 through aggressive testing and shoe leather contact tracing and quarantines. At the moment I see little reason to hope that, when we get past the next 8-12 weeks, we will be in a position to do anything like the same. And, because of that, more people will die."
-              }
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Pandemic"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "name": [
-                    "Dave Peck"
-                  ],
-                  "photo": [
-                    {
-                      "value": "https://davepeck.org/img/dave-peck-icon-feb-2023-300x300.jpg",
-                      "alt": "Dave Peck"
-                    }
-                  ],
-                  "url": [
-                    "https://davepeck.org/"
-                  ]
-                },
-                "value": "https://davepeck.org/"
-              }
-            ],
-            "url": [
-              "https://davepeck.org/2020/03/14/pandemic/"
-            ],
-            "published": [
-              "2020-03-14T23:40:00-0700"
-            ],
-            "content": [
-              {
-                "html": "<p>The COVID-19 pandemic is a once-in-a-century world altering event. It’s a juggernaut that has, and will continue to, exact an immense human and economic toll. I’m still trying to wrap my head around it.</p>\n\n<p>The next few months feel like a maze with high walls. No way to see around; the only way out is through.</p>\n\n<p>After that, there’s another even fuzzier period of time before vaccines become widely available. I assume we’re talking a year or two, which means COVID-19 will be a threat for a long time to come.</p>\n\n<p>Stay healthy. Stay safe, my friends.</p>",
-                "value": "The COVID-19 pandemic is a once-in-a-century world altering event. It’s a juggernaut that has, and will continue to, exact an immense human and economic toll. I’m still trying to wrap my head around it.\n\nThe next few months feel like a maze with high walls. No way to see around; the only way out is through.\n\nAfter that, there’s another even fuzzier period of time before vaccines become widely available. I assume we’re talking a year or two, which means COVID-19 will be a threat for a long time to come.\n\nStay healthy. Stay safe, my friends."
               }
             ]
           }
