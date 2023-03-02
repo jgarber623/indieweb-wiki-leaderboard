@@ -1,9 +1,13 @@
 {
   "items": [],
   "rels": {
+    "canonical": [
+      "https://timw.io/"
+    ],
     "stylesheet": [
       "https://timw.io/css/normalize.css",
       "https://timw.io/css/simple.css",
+      "https://timw.io/css/prism-dracula.css",
       "https://timw.io/css/style.css"
     ],
     "alternate": [
@@ -14,12 +18,22 @@
     ]
   },
   "rel-urls": {
+    "https://timw.io/": {
+      "rels": [
+        "canonical"
+      ]
+    },
     "https://timw.io/css/normalize.css": {
       "rels": [
         "stylesheet"
       ]
     },
     "https://timw.io/css/simple.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://timw.io/css/prism-dracula.css": {
       "rels": [
         "stylesheet"
       ]
@@ -40,7 +54,7 @@
       "rels": [
         "me"
       ],
-      "text": "Mastodon"
+      "text": " Mastodon"
     }
   }
 }

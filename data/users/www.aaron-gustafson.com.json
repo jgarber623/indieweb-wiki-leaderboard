@@ -17,6 +17,9 @@
       "https://www.aaron-gustafson.com/c/default.min.css",
       "https://www.aaron-gustafson.com/c/advanced.min.css"
     ],
+    "preload": [
+      "https://www.aaron-gustafson.com/c/advanced.min.css"
+    ],
     "alternate": [
       "https://www.aaron-gustafson.com/feeds/all.xml",
       "https://www.aaron-gustafson.com/feeds/all.json",
@@ -78,7 +81,7 @@
     },
     "https://www.aaron-gustafson.com/c/advanced.min.css": {
       "rels": [
-        "stylesheet"
+        "preload"
       ],
       "media": "only screen"
     },

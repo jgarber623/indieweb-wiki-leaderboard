@@ -1,12 +1,16 @@
 {
   "items": [],
   "rels": {
-    "stylesheet": [
-      "https://jeffperry.me/assets/built/screen.css?v=1664e8ccc2",
-      "https://jeffperry.me/public/cards.min.css?v=1664e8ccc2"
+    "preconnect": [
+      "https://fonts.gstatic.com/"
     ],
-    "preload": [
-      "https://digitalpress.fra1.cdn.digitaloceanspaces.com/crpccea/2023/02/IMG_1992c.jpg"
+    "stylesheet": [
+      "https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap",
+      "https://jeffperry.me/assets/css/screen.min.css?v=9781687cd2",
+      "https://jeffperry.me/public/cards.min.css?v=9781687cd2"
+    ],
+    "icon": [
+      "https://digitalpress.fra1.cdn.digitaloceanspaces.com/crpccea/2023/03/9376268973f0694bb22b034436774f17.png"
     ],
     "canonical": [
       "https://jeffperry.me/"
@@ -22,15 +26,26 @@
     ]
   },
   "rel-urls": {
-    "https://jeffperry.me/assets/built/screen.css?v=1664e8ccc2": {
+    "https://fonts.gstatic.com/": {
+      "rels": [
+        "preconnect"
+      ]
+    },
+    "https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap": {
       "rels": [
         "stylesheet"
       ]
     },
-    "https://digitalpress.fra1.cdn.digitaloceanspaces.com/crpccea/2023/02/IMG_1992c.jpg": {
+    "https://jeffperry.me/assets/css/screen.min.css?v=9781687cd2": {
       "rels": [
-        "preload"
+        "stylesheet"
       ]
+    },
+    "https://digitalpress.fra1.cdn.digitaloceanspaces.com/crpccea/2023/03/9376268973f0694bb22b034436774f17.png": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/png"
     },
     "https://jeffperry.me/": {
       "rels": [
@@ -54,7 +69,7 @@
         "webmention"
       ]
     },
-    "https://jeffperry.me/public/cards.min.css?v=1664e8ccc2": {
+    "https://jeffperry.me/public/cards.min.css?v=9781687cd2": {
       "rels": [
         "stylesheet"
       ],
