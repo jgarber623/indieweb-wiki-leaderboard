@@ -1,24 +1,610 @@
 {
-  "items": [],
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "tz": [
+          "-0500"
+        ],
+        "photo": [
+          {
+            "value": "https://jacky.wtf/assets/favicon.2fb16a8e.svg",
+            "alt": ""
+          }
+        ]
+      },
+      "id": "hCard"
+    },
+    {
+      "type": [
+        "h-feed"
+      ],
+      "properties": {
+        "name": [
+          "Essays"
+        ],
+        "url": [
+          "https://jacky.wtf/archive/article"
+        ],
+        "note": [
+          {
+            "html": "A few <a href=\"https://indieweb.org/article\">articles</a> that I've\n          written most recently.",
+            "value": "A few articles that I've\n          written most recently."
+          }
+        ]
+      },
+      "id": "essays",
+      "children": [
+        {
+          "type": [
+            "h-cite"
+          ],
+          "properties": {
+            "name": [
+              "Things to Do to Celebrate my 29th"
+            ],
+            "url": [
+              "https://jacky.wtf/2022/7/jGyU"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-cite"
+          ],
+          "properties": {
+            "name": [
+              "A Web that Reflects People and their Values"
+            ],
+            "url": [
+              "https://jacky.wtf/2022/6/Cpq0"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-cite"
+          ],
+          "properties": {
+            "name": [
+              "Implementing Property Searching for Micropub"
+            ],
+            "url": [
+              "https://jacky.wtf/2022/6/fDu9"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-cite"
+          ],
+          "properties": {
+            "name": [
+              "Thoughts on BlueSky's \"Self Authenticating Social\" Protocol"
+            ],
+            "url": [
+              "https://jacky.wtf/thoughts-bluesky-social-protocol"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-cite"
+          ],
+          "properties": {
+            "name": [
+              "HWCs: Glad I Went!"
+            ],
+            "url": [
+              "https://jacky.wtf/2022/3/oo/ooK1B0udp16W9yQp2BHBhyz5"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": [
+        "h-feed"
+      ],
+      "properties": {
+        "name": [
+          "Links"
+        ],
+        "note": [
+          {
+            "html": "Here lies the things I've liked, bookmarked or interacted with across\n          the Web (and beyond). Some people call them\n          <a href=\"https://indieweb.org/reactions\">reactions</a> or\n          <a href=\"https://indieweb.org/replies\">replies</a> - I consider them\n          my feedback back to the Web from my site.",
+            "value": "Here lies the things I've liked, bookmarked or interacted with across\n          the Web (and beyond). Some people call them\n          reactions or\n          replies - I consider them\n          my feedback back to the Web from my site."
+          }
+        ]
+      },
+      "id": "linklog",
+      "children": [
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "like-of": [
+              {
+                "type": [
+                  "h-cite",
+                  "h-entry",
+                  "h-koype-stubbed-from-head"
+                ],
+                "properties": {
+                  "name": [
+                    "Notifications · Semaphore"
+                  ],
+                  "summary": [
+                    "An alternative web client for Mastodon, focused on speed and simplicity."
+                  ],
+                  "author": [
+                    {
+                      "type": [
+                        "h-card"
+                      ],
+                      "properties": {
+                        "name": [
+                          "semaphore.social"
+                        ]
+                      },
+                      "value": "semaphore.social"
+                    }
+                  ],
+                  "url": [
+                    "https://semaphore.social/notifications"
+                  ]
+                },
+                "value": "https://semaphore.social/notifications"
+              }
+            ],
+            "url": [
+              "https://jacky.wtf/2023/2/YBHD"
+            ],
+            "published": [
+              "2023-02-21T14:09:31Z"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "like-of": [
+              {
+                "type": [
+                  "h-cite",
+                  "h-entry",
+                  "h-koype-stubbed-from-twitter-card"
+                ],
+                "properties": {
+                  "name": [
+                    "What happens when it's all streamlined?"
+                  ],
+                  "url": [
+                    "https://buttondown.email/j2kun/archive/what-happens-when-its-all-streamlined/"
+                  ]
+                },
+                "value": "https://buttondown.email/j2kun/archive/what-happens-when-its-all-streamlined/"
+              }
+            ],
+            "url": [
+              "https://jacky.wtf/2023/2/a42t"
+            ],
+            "published": [
+              "2023-02-21T01:25:34Z"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "like-of": [
+              {
+                "type": [
+                  "h-cite",
+                  "h-entry",
+                  "h-koype-stubbed-from-ogp"
+                ],
+                "properties": {
+                  "name": [
+                    "Ben from Ozark"
+                  ],
+                  "summary": [
+                    "An ethereal beat layered with Tom Pelphrey’s brilliant monologue from Ozark Season 3."
+                  ],
+                  "author": [
+                    {
+                      "type": [
+                        "h-card"
+                      ],
+                      "properties": {
+                        "name": [
+                          "kofi.sexy"
+                        ]
+                      },
+                      "value": "kofi.sexy"
+                    }
+                  ],
+                  "url": [
+                    "https://kofi.sexy/music/ben-from-ozark"
+                  ]
+                },
+                "value": "https://kofi.sexy/music/ben-from-ozark"
+              }
+            ],
+            "url": [
+              "https://jacky.wtf/2023/2/vkUb"
+            ],
+            "published": [
+              "2023-02-17T22:12:03Z"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": [
+        "h-feed"
+      ],
+      "properties": {
+        "name": [
+          "Microblog"
+        ],
+        "note": [
+          {
+            "html": "My microblog is where I post quick notes or semi-formed posts. Things that don't quite\n          fit into what I'd consider a blog post but also would need a permalink.",
+            "value": "My microblog is where I post quick notes or semi-formed posts. Things that don't quite\n          fit into what I'd consider a blog post but also would need a permalink."
+          }
+        ]
+      },
+      "id": "microblog",
+      "children": [
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<p>A Black capitalist buying up unceded Indigenous land is why Black capitalism is nothing but capitalism but in blackface. <a href=\"https://www.kitv.com/news/business/oprah-buys-870-acres-of-land-on-maui/article_80a06666-b865-11ed-a6a6-4708c11dd34f.html\">https://www.kitv.com/news/business/oprah-buys-870-acres-of-land-on-maui/article_80a06666-b865-11ed-a6a6-4708c11dd34f.html</a></p>",
+                "value": "A Black capitalist buying up unceded Indigenous land is why Black capitalism is nothing but capitalism but in blackface. https://www.kitv.com/news/business/oprah-buys-870-acres-of-land-on-maui/article_80a06666-b865-11ed-a6a6-4708c11dd34f.html"
+              }
+            ],
+            "url": [
+              "https://jacky.wtf/2023/3/omc4"
+            ],
+            "published": [
+              "2023-03-03T04:12:46Z"
+            ],
+            "syndication": [
+              "https://twitter.com/jackyalcine/status/1631507932482347008",
+              "https://todon.eu/@jalcine/109957400449900434"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "content": [
+              {
+                "html": "<p>I did a random search of right-wing folks and literature, and I was really shocked. I did not think that they wrote so much. And like I'm afraid to peek because this is the kind of content that gives people (possibly seemingly smart ones) language (and indoctrinates them even more) and (warped) theory about the world. I imagine this is what existed before YouTube's amplification of right-wing content. I shouldn't be so shocked, but my goodness, I'm afraid to see what they'd say about me. My family. Jesus.</p>\r\n<p>I don't even want to link to some titles I saw.</p>",
+                "value": "I did a random search of right-wing folks and literature, and I was really shocked. I did not think that they wrote so much. And like I'm afraid to peek because this is the kind of content that gives people (possibly seemingly smart ones) language (and indoctrinates them even more) and (warped) theory about the world. I imagine this is what existed before YouTube's amplification of right-wing content. I shouldn't be so shocked, but my goodness, I'm afraid to see what they'd say about me. My family. Jesus.\r\nI don't even want to link to some titles I saw."
+              }
+            ],
+            "url": [
+              "https://jacky.wtf/2023/3/w_I_"
+            ],
+            "published": [
+              "2023-03-03T03:34:20Z"
+            ],
+            "syndication": [
+              "https://todon.eu/@jalcine/109957249466031904"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "in-reply-to": [
+              {
+                "type": [
+                  "h-cite",
+                  "h-entry",
+                  "h-koype-stubbed-from-ogp"
+                ],
+                "properties": {
+                  "name": [
+                    "mekka okereke :verified: (@mekkaokereke@hachyderm.io)"
+                  ],
+                  "summary": [
+                    "@jalcine@todon.eu @brianonbarrington@mastodon.world @PJ_Evans@mastodon.social My anti-capitalist friends just say, &quot;You&#x27;re wrong. Capitalism cannot be good. But we ain&#x27;t tripping. You&#x27;ll see soon enough. Let me know how all that &#x27;reforming&#x27; works out for you. You&#x27;re just building kinder, gentler, capitalists.&quot;My pro-capitalism friends say &quot;Co-op?! You want to learn about co-ops?! You&#x27;re basically Stalin now! What happened to you?!&quot;"
+                  ],
+                  "author": [
+                    {
+                      "type": [
+                        "h-card"
+                      ],
+                      "properties": {
+                        "name": [
+                          "Hachyderm.io"
+                        ]
+                      },
+                      "value": "Hachyderm.io"
+                    }
+                  ],
+                  "url": [
+                    "https://hachyderm.io/@mekkaokereke/109955353963862832"
+                  ]
+                },
+                "value": "https://hachyderm.io/@mekkaokereke/109955353963862832"
+              }
+            ],
+            "content": [
+              {
+                "html": "<p>This is a long post.</p>\r\n<p><a href=\"https://hachyderm.io/@mekkaokereke\">https://hachyderm.io/@mekkaokereke</a>, I was in that stance that \"maybe if we just put more BIPOC people into places, then things would get better\" years ago. <a href=\"https://todon.eu/@jalcine/109904002950795378\">https://todon.eu/@jalcine/109904002950795378</a> is a small rant on that. Then Obama happened (with how he responded to Flint, Ferguson, his authorization of the bombing of African countries and Caribbean pillaging despite his campaign for hope). And the new president of YC happened (with still very little change into how funding applications turned into more BIPOC getting funding - maybe begging folks for money who won't give it isn't the answer?). Not only did no change happened to those who needed it the most (and were <em>strongly</em> encouraged to vote for — mind you), we see it <em>getting worse</em> because more \"bad behavior\" has been permitted to occur (as described). I know that you're older than me (I'm 29) and have been in this game longer, but that doesn't discount any of the events and experiences mentioned above and, if anything, gives more reason for radical change to occur (which means stepping away from systems that are explicitly designed and maintained to make things difficult for kinfolk).</p>\r\n<p><a href=\"https://mastodon.world/@brianonbarrington\">https://mastodon.world/@brianonbarrington</a>, my day job is to work \"in the middle ground\", after leaving the private sector to give people that are actively overlooked in policy and works to give them the resources they need for free at <a href=\"https://codeforamerica.org/\">https://codeforamerica.org/</a>. But even that, I'm only able to do what \"executives\" and \"funders\" think is the right thing to do (despite me personally having grown up and experiencing the brokenness of what America claims to be <em>and</em> knowing that this \"middle ground\" work does nothing but serve as a tax haven for these people). So the \"middle ground\" is no different from what those other folks who stay in the middle have parroted, \"help <em>some</em> people and criminalize the rest\".</p>\r\n<p>If we want to talk and praise the Panthers, then we can't be entertaining the (broken) idea of representation being the \"driver\" of change. People are still hungry, un-homed and charged at higher rates. We need to throw funds towards groups like the one I linked either and even Tiffani's water project and scaling that up instead of reinvesting into systems that have no interest in serving our people; as the Panthers have stated many times, they won't do it — we'll have to. If you're serious about trying to learn more about cooperatives, I do have accessible material and I can link to some as well. But truthfully, there is no middle ground when it comes to people starving, not getting the resources they need, or being able to exist. We have to fight or accept that such harm is an acceptable cost to one's comfort on this planet.</p>",
+                "value": "This is a long post.\r\nhttps://hachyderm.io/@mekkaokereke, I was in that stance that \"maybe if we just put more BIPOC people into places, then things would get better\" years ago. https://todon.eu/@jalcine/109904002950795378 is a small rant on that. Then Obama happened (with how he responded to Flint, Ferguson, his authorization of the bombing of African countries and Caribbean pillaging despite his campaign for hope). And the new president of YC happened (with still very little change into how funding applications turned into more BIPOC getting funding - maybe begging folks for money who won't give it isn't the answer?). Not only did no change happened to those who needed it the most (and were strongly encouraged to vote for — mind you), we see it getting worse because more \"bad behavior\" has been permitted to occur (as described). I know that you're older than me (I'm 29) and have been in this game longer, but that doesn't discount any of the events and experiences mentioned above and, if anything, gives more reason for radical change to occur (which means stepping away from systems that are explicitly designed and maintained to make things difficult for kinfolk).\r\nhttps://mastodon.world/@brianonbarrington, my day job is to work \"in the middle ground\", after leaving the private sector to give people that are actively overlooked in policy and works to give them the resources they need for free at https://codeforamerica.org/. But even that, I'm only able to do what \"executives\" and \"funders\" think is the right thing to do (despite me personally having grown up and experiencing the brokenness of what America claims to be and knowing that this \"middle ground\" work does nothing but serve as a tax haven for these people). So the \"middle ground\" is no different from what those other folks who stay in the middle have parroted, \"help some people and criminalize the rest\".\r\nIf we want to talk and praise the Panthers, then we can't be entertaining the (broken) idea of representation being the \"driver\" of change. People are still hungry, un-homed and charged at higher rates. We need to throw funds towards groups like the one I linked either and even Tiffani's water project and scaling that up instead of reinvesting into systems that have no interest in serving our people; as the Panthers have stated many times, they won't do it — we'll have to. If you're serious about trying to learn more about cooperatives, I do have accessible material and I can link to some as well. But truthfully, there is no middle ground when it comes to people starving, not getting the resources they need, or being able to exist. We have to fight or accept that such harm is an acceptable cost to one's comfort on this planet."
+              }
+            ],
+            "url": [
+              "https://jacky.wtf/2023/3/CqA1"
+            ],
+            "published": [
+              "2023-03-02T20:06:55Z"
+            ],
+            "syndication": [
+              "https://todon.eu/@jalcine/109955490559296785"
+            ]
+          }
+        }
+      ]
+    }
+  ],
   "rels": {
-    "stylesheet": [
-      "https://jacky.wtf/__admin__/site.css"
+    "authorization_endpoint": [
+      "https://a.jacky.wtf/api/indieauth/authorization"
     ],
-    "icon": [
-      "data:;base64,="
+    "hub": [
+      "https://pubsubhubbub.appspot.com/"
+    ],
+    "micropub": [
+      "https://mp.jacky.wtf/mp"
+    ],
+    "microsub": [
+      "https://aperture.p3k.io/microsub/126"
+    ],
+    "ticket_endpoint": [
+      "https://a.jacky.wtf/api/indieauth/ticket"
+    ],
+    "token_endpoint": [
+      "https://a.jacky.wtf/api/indieauth/token"
+    ],
+    "webmention": [
+      "https://webmention.io/jacky.wtf/webmention"
+    ],
+    "bookmark": [
+      "https://jacky.wtf/?"
+    ],
+    "canonical": [
+      "https://jacky.wtf/?"
+    ],
+    "alternate": [
+      "https://jacky.wtf/feed.xml",
+      "https://granary.io/url?url=https://jacky.wtf/channel/all/&input=html&output=atom&hub=https://bridgy-fed.superfeedr.com/"
+    ],
+    "dns-prefetch": [
+      "https://unpkg.com/",
+      "https://plausible.io/",
+      "https://webring.xxiivv.com/"
+    ],
+    "preconnect": [
+      "https://unpkg.com/",
+      "https://plausible.io/"
+    ],
+    "key": [
+      "https://jacky.wtf/misc/pgp.pub.asc",
+      "https://jacky.wtf/misc/ssh.pub"
+    ],
+    "pgpkey": [
+      "https://jacky.wtf/misc/pgp.pub.asc"
+    ],
+    "ssh": [
+      "https://jacky.wtf/misc/ssh.pub"
+    ],
+    "modulepreload": [
+      "https://jacky.wtf/assets/modulepreload-polyfill.6874861d.js",
+      "https://jacky.wtf/assets/vendor.648808aa.js"
+    ],
+    "stylesheet": [
+      "https://jacky.wtf/assets/main.a01452ff.css"
+    ],
+    "manifest": [
+      "https://jacky.wtf/assets/manifest.webmanifest"
+    ],
+    "author": [
+      "https://jacky.wtf/about"
+    ],
+    "me": [
+      "https://jacky.wtf/about"
+    ],
+    "feed": [
+      "https://jacky.wtf/channel/all",
+      "https://jacky.wtf/channel/chnl_5pvvrZof",
+      "https://jacky.wtf/channel/chnl_JXmJLB7G",
+      "https://jacky.wtf/feeds",
+      "https://jacky.wtf/#linklog",
+      "https://jacky.wtf/#microblog"
+    ],
+    "license": [
+      "https://jacky.wtf/copyright"
     ]
   },
   "rel-urls": {
-    "https://jacky.wtf/__admin__/site.css": {
+    "https://a.jacky.wtf/api/indieauth/authorization": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://pubsubhubbub.appspot.com/": {
+      "rels": [
+        "hub"
+      ]
+    },
+    "https://mp.jacky.wtf/mp": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://aperture.p3k.io/microsub/126": {
+      "rels": [
+        "microsub"
+      ]
+    },
+    "https://a.jacky.wtf/api/indieauth/ticket": {
+      "rels": [
+        "ticket_endpoint"
+      ]
+    },
+    "https://a.jacky.wtf/api/indieauth/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://webmention.io/jacky.wtf/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://jacky.wtf/?": {
+      "rels": [
+        "bookmark",
+        "canonical"
+      ]
+    },
+    "https://jacky.wtf/feed.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Jacky Alciné's updates",
+      "type": "text/atom+xml"
+    },
+    "https://unpkg.com/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
+    "https://plausible.io/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
+    "https://webring.xxiivv.com/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
+    "https://jacky.wtf/misc/pgp.pub.asc": {
+      "rels": [
+        "key",
+        "pgpkey"
+      ],
+      "type": "application/pgp-signature"
+    },
+    "https://jacky.wtf/misc/ssh.pub": {
+      "rels": [
+        "key",
+        "ssh"
+      ],
+      "type": "text/plain"
+    },
+    "https://granary.io/url?url=https://jacky.wtf/channel/all/&input=html&output=atom&hub=https://bridgy-fed.superfeedr.com/": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Everything I Post - Jacky Alciné",
+      "type": "application/atom+xml"
+    },
+    "https://jacky.wtf/assets/modulepreload-polyfill.6874861d.js": {
+      "rels": [
+        "modulepreload"
+      ]
+    },
+    "https://jacky.wtf/assets/vendor.648808aa.js": {
+      "rels": [
+        "modulepreload"
+      ]
+    },
+    "https://jacky.wtf/assets/main.a01452ff.css": {
       "rels": [
         "stylesheet"
-      ],
-      "type": "text/css"
-    },
-    "data:;base64,=": {
-      "rels": [
-        "icon"
       ]
+    },
+    "https://jacky.wtf/assets/manifest.webmanifest": {
+      "rels": [
+        "manifest"
+      ]
+    },
+    "https://jacky.wtf/about": {
+      "rels": [
+        "author",
+        "me"
+      ],
+      "title": "Jacky Alciné"
+    },
+    "https://jacky.wtf/channel/all": {
+      "rels": [
+        "feed"
+      ],
+      "type": "text/html",
+      "text": "Everything"
+    },
+    "https://jacky.wtf/channel/chnl_5pvvrZof": {
+      "rels": [
+        "feed"
+      ],
+      "type": "text/html",
+      "text": "TIL"
+    },
+    "https://jacky.wtf/channel/chnl_JXmJLB7G": {
+      "rels": [
+        "feed"
+      ],
+      "type": "text/html",
+      "text": "Books"
+    },
+    "https://jacky.wtf/feeds": {
+      "rels": [
+        "feed"
+      ],
+      "type": "text/html",
+      "text": "Archive"
+    },
+    "https://jacky.wtf/#linklog": {
+      "rels": [
+        "feed"
+      ],
+      "text": "Links"
+    },
+    "https://jacky.wtf/#microblog": {
+      "rels": [
+        "feed"
+      ],
+      "text": "Microblog"
+    },
+    "https://jacky.wtf/copyright": {
+      "rels": [
+        "license"
+      ],
+      "text": "licensed by Jacky Alciné for some use cases"
     }
   }
 }
