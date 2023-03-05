@@ -1,11 +1,59 @@
 {
-  "items": [],
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "author": [
+          "Zinzy Waleson Geene"
+        ],
+        "name": [
+          "Zinzy\n        Waleson Geene"
+        ],
+        "uid": [
+          "https://zinzy.website/"
+        ],
+        "url": [
+          "https://zinzy.website/"
+        ],
+        "given-name": [
+          "Zinzy"
+        ],
+        "family-name": [
+          "Waleson Geene"
+        ],
+        "photo": [
+          "https://www.zinzy.website/assets/img/android-chrome-192x192.png"
+        ],
+        "note": [
+          "A researcher, designer, mentor, queer facilitator, and IndieWeb enthusiast from Amsterdam."
+        ],
+        "email": [
+          "mailto:zinzy@pm.me"
+        ],
+        "locality": [
+          "Amsterdam"
+        ],
+        "country-name": [
+          "The Netherlands"
+        ],
+        "job-title": [
+          "Design Manager"
+        ],
+        "gender-identity": [
+          "Non-binary"
+        ]
+      }
+    }
+  ],
   "rels": {
     "canonical": [
       "https://www.zinzy.website/"
     ],
     "author": [
-      "https://www.zinzy.website/humans.txt"
+      "https://www.zinzy.website/humans.txt",
+      "https://zinzy.website/"
     ],
     "icon": [
       "https://www.zinzy.website/assets/img/android-chrome-512x512.png",
@@ -29,7 +77,8 @@
       "https://github.com/zinzy",
       "https://tech.lgbt/@zinzy",
       "https://twitter.com/zinzywaleson",
-      "mailto:zinzy@pm.me"
+      "mailto:zinzy@pm.me",
+      "https://zinzy.website/"
     ],
     "authorization_endpoint": [
       "https://indieauth.com/auth"
@@ -48,6 +97,14 @@
     ],
     "pingback": [
       "https://webmention.io/www.zinzy.website/xmlrpc"
+    ],
+    "noopener": [
+      "https://xn--sr8hvo.ws/",
+      "https://yesterweb.org/"
+    ],
+    "noreferrer": [
+      "https://xn--sr8hvo.ws/",
+      "https://yesterweb.org/"
     ]
   },
   "rel-urls": {
@@ -157,6 +214,26 @@
       "rels": [
         "pingback"
       ]
+    },
+    "https://xn--sr8hvo.ws/": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "IndieWeb"
+    },
+    "https://yesterweb.org/": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "Yesterweb"
+    },
+    "https://zinzy.website/": {
+      "rels": [
+        "author"
+      ],
+      "text": "Zinzy Waleson Geene"
     }
   }
 }

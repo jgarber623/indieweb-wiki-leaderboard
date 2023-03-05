@@ -17,12 +17,16 @@
       "https://herbimarquez.com/blogs/status/feed/"
     ],
     "stylesheet": [
+      "http://herbimarquez.com/wp-content/plugins/avatar-manager/assets/css/avatar-manager.min.css?ver=1.2.1",
+      "http://herbimarquez.com/wp-content/plugins/indieweb-post-kinds/css/kind.min.css?ver=3.6.4",
+      "http://herbimarquez.com/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.12.0",
       "https://fonts.googleapis.com/css?family=PT+Sans%3A400%2C700%2C400italic%2C700italic&subset=latin%2Clatin-ext",
       "https://fonts.googleapis.com/css?family=PT+Serif%3A400%2C700%2C400italic%2C700italic&subset=latin%2Clatin-ext",
       "https://fonts.googleapis.com/css?family=PT+Mono&subset=latin%2Clatin-ext",
       "http://herbimarquez.com/wp-content/themes/edin/font/edincon.css?ver=20140606",
       "http://herbimarquez.com/wp-content/themes/edin/font/genericons.css?ver=3.4.1",
-      "http://herbimarquez.com/wp-content/themes/edin/style.css?ver=cp_d11ce89b"
+      "http://herbimarquez.com/wp-content/themes/edin/style.css?ver=cp_d11ce89b",
+      "http://herbimarquez.com/wp-content/plugins/syndication-links/css/syn.min.css?ver=4.4.7"
     ],
     "https://api.w.org/": [
       "https://herbimarquez.com/wp-json/"
@@ -44,6 +48,7 @@
       "https://herbimarquez.com/"
     ],
     "bookmark": [
+      "https://herbimarquez.com/status/classicpress/",
       "https://herbimarquez.com/status/i-ran/",
       "https://herbimarquez.com/status/revue-shuts-down/",
       "https://herbimarquez.com/status/fediverse-connection/",
@@ -52,12 +57,21 @@
       "https://herbimarquez.com/status/100-days-to-offload/",
       "https://herbimarquez.com/status/restaurant-week/"
     ],
+    "noopener": [
+      "https://www.classicpress.net/",
+      "https://mstdn.social/@herbi"
+    ],
     "category": [
       "https://herbimarquez.com/blogs/status/"
     ],
     "tag": [
       "https://herbimarquez.com/blogs/status/",
       "https://herbimarquez.com/tag/100daystooffload/",
+      "https://herbimarquez.com/tag/revue/",
+      "https://herbimarquez.com/tag/newsletter/",
+      "https://herbimarquez.com/tag/subscription/",
+      "https://herbimarquez.com/tag/bluesky/",
+      "https://herbimarquez.com/tag/mastodon/",
       "https://herbimarquez.com/tag/error/",
       "https://herbimarquez.com/tag/hardware/",
       "https://herbimarquez.com/tag/dare/"
@@ -67,9 +81,6 @@
     ],
     "me": [
       "mailto:herbi@hmarquez.com",
-      "https://mstdn.social/@herbi"
-    ],
-    "noopener": [
       "https://mstdn.social/@herbi"
     ],
     "designer": [
@@ -118,6 +129,27 @@
       "title": "Herbi Marquez » Status Category Feed",
       "type": "application/rss+xml"
     },
+    "http://herbimarquez.com/wp-content/plugins/avatar-manager/assets/css/avatar-manager.min.css?ver=1.2.1": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://herbimarquez.com/wp-content/plugins/indieweb-post-kinds/css/kind.min.css?ver=3.6.4": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://herbimarquez.com/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.12.0": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
     "https://fonts.googleapis.com/css?family=PT+Sans%3A400%2C700%2C400italic%2C700italic&subset=latin%2Clatin-ext": {
       "rels": [
         "stylesheet"
@@ -154,6 +186,13 @@
       "type": "text/css"
     },
     "http://herbimarquez.com/wp-content/themes/edin/style.css?ver=cp_d11ce89b": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://herbimarquez.com/wp-content/plugins/syndication-links/css/syn.min.css?ver=4.4.7": {
       "rels": [
         "stylesheet"
       ],
@@ -199,11 +238,17 @@
       ],
       "text": "Herbi Marquez"
     },
-    "https://herbimarquez.com/status/i-ran/": {
+    "https://herbimarquez.com/status/classicpress/": {
       "rels": [
         "bookmark"
       ],
-      "text": "I ran"
+      "text": "ClassicPress"
+    },
+    "https://www.classicpress.net/": {
+      "rels": [
+        "noopener"
+      ],
+      "text": "ClassicPress"
     },
     "https://herbimarquez.com/blogs/status/": {
       "rels": [
@@ -218,11 +263,47 @@
       ],
       "text": "100DaysToOffload"
     },
+    "https://herbimarquez.com/status/i-ran/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "I ran"
+    },
     "https://herbimarquez.com/status/revue-shuts-down/": {
       "rels": [
         "bookmark"
       ],
       "text": "Revue Shuts down"
+    },
+    "https://herbimarquez.com/tag/revue/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "#Revue"
+    },
+    "https://herbimarquez.com/tag/newsletter/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "#newsletter"
+    },
+    "https://herbimarquez.com/tag/subscription/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "#subscription"
+    },
+    "https://herbimarquez.com/tag/bluesky/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "#bluesky"
+    },
+    "https://herbimarquez.com/tag/mastodon/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "#Mastodon"
     },
     "https://herbimarquez.com/status/fediverse-connection/": {
       "rels": [

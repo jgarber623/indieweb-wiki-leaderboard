@@ -1,54 +1,38 @@
 {
   "items": [],
   "rels": {
-    "icon": [
-      "https://inhji.de/favicon.ico"
-    ],
-    "shortcut": [
-      "https://inhji.de/favicon.ico"
-    ],
-    "alternate": [
-      "https://inhji.de/index.xml"
-    ],
     "stylesheet": [
-      "https://inhji.de/css/style.min.css"
-    ],
-    "canonical": [
-      "https://inhji.de/"
+      "https://inhji.de/css/style.css",
+      "https://inhji.de/css/custom.css"
     ],
     "me": [
+      "https://inhji.de/",
       "https://fullvoid.de/@inhji"
     ]
   },
   "rel-urls": {
-    "https://inhji.de/favicon.ico": {
+    "https://inhji.de/css/style.css": {
       "rels": [
-        "icon",
-        "shortcut"
+        "stylesheet"
       ]
     },
-    "https://inhji.de/index.xml": {
-      "rels": [
-        "alternate"
-      ],
-      "title": "Technos & Psyche",
-      "type": "application/rss+xml"
-    },
-    "https://inhji.de/css/style.min.css": {
+    "https://inhji.de/css/custom.css": {
       "rels": [
         "stylesheet"
       ]
     },
     "https://inhji.de/": {
       "rels": [
-        "canonical"
-      ]
+        "me"
+      ],
+      "text": "Inhji"
     },
     "https://fullvoid.de/@inhji": {
       "rels": [
         "me"
       ],
-      "text": "Inhji"
+      "title": "mastodon",
+      "text": "mastodon"
     }
   }
 }

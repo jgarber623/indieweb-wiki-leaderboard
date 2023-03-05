@@ -1,5 +1,153 @@
 {
-  "items": [],
-  "rels": {},
-  "rel-urls": {}
+  "items": [
+    {
+      "type": [
+        "h-full"
+      ],
+      "properties": {},
+      "children": [
+        {
+          "type": [
+            "h-px"
+          ],
+          "properties": {}
+        }
+      ]
+    }
+  ],
+  "rels": {
+    "preconnect": [
+      "https://webmention.io/",
+      "https://fonts.googleapis.com/",
+      "https://fonts.gstatic.com/"
+    ],
+    "stylesheet": [
+      "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;800&display=swap",
+      "https://www.artdaw.com/css/index.css",
+      "https://www.artdaw.com/css/prism-base16-monokai.dark.css"
+    ],
+    "apple-touch-icon": [
+      "https://www.artdaw.com/apple-touch-icon.png"
+    ],
+    "icon": [
+      "https://www.artdaw.com/favicon-32x32.png",
+      "https://www.artdaw.com/favicon-16x16.png"
+    ],
+    "manifest": [
+      "https://www.artdaw.com/site.webmanifest"
+    ],
+    "mask-icon": [
+      "https://www.artdaw.com/safari-pinned-tab.svg"
+    ],
+    "alternate": [
+      "https://www.artdaw.com/feed/feed.xml",
+      "https://www.artdaw.com/feed/feed.json"
+    ],
+    "webmention": [
+      "https://webmention.io/artdaw.com/webmention"
+    ],
+    "pingback": [
+      "https://webmention.io/artdaw.com/xmlrpc"
+    ],
+    "canonical": [
+      "https://artdaw.com/"
+    ],
+    "me": [
+      "https://twitter.com/artdaw"
+    ]
+  },
+  "rel-urls": {
+    "https://webmention.io/": {
+      "rels": [
+        "preconnect"
+      ]
+    },
+    "https://fonts.googleapis.com/": {
+      "rels": [
+        "preconnect"
+      ]
+    },
+    "https://fonts.gstatic.com/": {
+      "rels": [
+        "preconnect"
+      ]
+    },
+    "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;800&display=swap": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://www.artdaw.com/apple-touch-icon.png": {
+      "rels": [
+        "apple-touch-icon"
+      ]
+    },
+    "https://www.artdaw.com/favicon-32x32.png": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/png"
+    },
+    "https://www.artdaw.com/favicon-16x16.png": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/png"
+    },
+    "https://www.artdaw.com/site.webmanifest": {
+      "rels": [
+        "manifest"
+      ]
+    },
+    "https://www.artdaw.com/safari-pinned-tab.svg": {
+      "rels": [
+        "mask-icon"
+      ]
+    },
+    "https://www.artdaw.com/css/index.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://www.artdaw.com/css/prism-base16-monokai.dark.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://www.artdaw.com/feed/feed.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Better ask Gleb",
+      "type": "application/atom+xml"
+    },
+    "https://www.artdaw.com/feed/feed.json": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Better ask Gleb",
+      "type": "application/json"
+    },
+    "https://webmention.io/artdaw.com/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://webmention.io/artdaw.com/xmlrpc": {
+      "rels": [
+        "pingback"
+      ]
+    },
+    "https://artdaw.com/": {
+      "rels": [
+        "canonical"
+      ]
+    },
+    "https://twitter.com/artdaw": {
+      "rels": [
+        "me"
+      ],
+      "text": "Twitter"
+    }
+  }
 }
