@@ -12,11 +12,12 @@
           "2023-01-22T14:25:19-05:00",
           "2023-01-04T13:08:17-05:00",
           "2023-01-01T12:00:30-05:00",
+          "2023-03-05T23:06:43-05:00",
+          "2023-03-05T22:39:04-05:00",
+          "2023-03-05T13:02:01-05:00",
           "2023-03-04T17:24:41-05:00",
           "2023-03-04T13:57:01-05:00",
-          "2023-03-03T15:27:21-05:00",
-          "2023-03-03T11:28:01-05:00",
-          "2023-02-28T12:03:40-05:00",
+          "2023-03-05T13:58:58-05:00",
           "2023-03-04T21:07:13-05:00",
           "2023-03-03T22:56:01-05:00",
           "2023-03-01T22:15:00-05:00",
@@ -27,8 +28,7 @@
           "2023-02-23T10:22:46-05:00",
           "2023-02-21T20:28:00-05:00",
           "2023-02-20T09:14:21-05:00",
-          "2023-02-18T07:54:52-05:00",
-          "2023-02-17T11:18:56-05:00"
+          "2023-02-18T07:54:52-05:00"
         ],
         "url": [
           "https://cagrimmett.com/thoughts/2023/02/27/thirty-three/",
@@ -37,11 +37,12 @@
           "https://cagrimmett.com/development/2023/01/22/my-indie-likes-workflow/",
           "https://cagrimmett.com/life/2023/01/04/learning-card-games-pitch/",
           "https://cagrimmett.com/life/2023/01/01/100-things-that-made-my-year-2022/",
+          "https://cagrimmett.com/micro/bda48175fb/",
+          "https://cagrimmett.com/micro/880fe4059a/",
+          "https://cagrimmett.com/micro/eb4f016c35/",
           "https://cagrimmett.com/micro/e860eb67e1/",
           "https://cagrimmett.com/micro/e887d51863/",
-          "https://cagrimmett.com/micro/ba32074ea2/",
-          "https://cagrimmett.com/micro/059665b32b/",
-          "https://cagrimmett.com/micro/e0d83099b2/",
+          "https://cagrimmett.com/likes/db8627b61e/",
           "https://cagrimmett.com/likes/541572a6b6/",
           "https://cagrimmett.com/likes/e78ce0d735/",
           "https://cagrimmett.com/likes/94e737bcc5/",
@@ -52,10 +53,21 @@
           "https://cagrimmett.com/likes/0b2bde4fca/",
           "https://cagrimmett.com/likes/b0f92990b7/",
           "https://cagrimmett.com/likes/11a5579327/",
-          "https://cagrimmett.com/likes/d864fe73dc/",
-          "https://cagrimmett.com/likes/ad9e79fd57/"
+          "https://cagrimmett.com/likes/d864fe73dc/"
         ],
         "content": [
+          {
+            "html": "<p>How to create symlinks on macOS, for things like symlinking WordPress core or plugins that you are working on that need a separate git repo:</p>\n\n\n\n<p>First, navigate in your terminal to the folder where you want to symlink to live, then run this:</p>\n\n\n\n<pre class=\"wp-block-code\"><code>ln -s ~/Projects/path-to/what-you-want-symlinked</code></pre>",
+            "value": "How to create symlinks on macOS, for things like symlinking WordPress core or plugins that you are working on that need a separate git repo:\n\n\n\nFirst, navigate in your terminal to the folder where you want to symlink to live, then run this:\n\n\n\nln -s ~/Projects/path-to/what-you-want-symlinked"
+          },
+          {
+            "html": "<p>I created a plugin to pull down data from my home weather station and display it in a custom block. The data updates every 10 minutes. I’m also gathering daily summaries behind the scenes for future blocks to come. </p>\n\n\n\n<p>Here is the block in action. It is currently “no frills” and needs some styling and a round of code clean up, but I’m happy with the first working version.</p>\n\n\n<div>\n<h4>Current weather conditions from <a href=\"https://www.wunderground.com/dashboard/pws/KNYPEEKS11\" target=\"_blank\">KNYPEEKS11</a>\n</h4>\n<p><em>Last updated: 2023-03-06 01:28:19</em></p>\n<p>Temperature: 40 °F</p>\n<p>Humidity: 63 %</p>\n<p>UV Index: 0</p>\n<p>Heat Index: 40 °F</p>\n<p>Dew Point: 28 °F</p>\n<p>Precipitation Rate: 0 in/hr</p>\n<p>Precipitation Total: 0 in</p>\n<p>Wind Chill: 40 °F</p>\n<p>Wind Speed: 1 mph</p>\n<p>Wind Gust: 2 mph</p>\n<p>Pressure: 30.41 inHg</p>\n</div>",
+            "value": "I created a plugin to pull down data from my home weather station and display it in a custom block. The data updates every 10 minutes. I’m also gathering daily summaries behind the scenes for future blocks to come. \n\n\n\nHere is the block in action. It is currently “no frills” and needs some styling and a round of code clean up, but I’m happy with the first working version.\n\n\nCurrent weather conditions from KNYPEEKS11Last updated: 2023-03-06 01:28:19Temperature: 40 °FHumidity: 63 %UV Index: 0Heat Index: 40 °FDew Point: 28 °FPrecipitation Rate: 0 in/hrPrecipitation Total: 0 inWind Chill: 40 °FWind Speed: 1 mphWind Gust: 2 mphPressure: 30.41 inHg"
+          },
+          {
+            "html": "<p>Today I had trouble with <a href=\"https://laravel.com/docs/10.x/valet\">Valet</a> not being properly linked to the correct PHP version installed via Homebrew. Here is how I fixed it. I’m sure I’ll need this again, so putting it here. </p>\n\n\n\n<pre class=\"wp-block-code\"><code>brew unlink php &amp;&amp; brew link php\nbrew services restart --all\ncomposer global update\nvalet start</code></pre>",
+            "value": "Today I had trouble with Valet not being properly linked to the correct PHP version installed via Homebrew. Here is how I fixed it. I’m sure I’ll need this again, so putting it here. \n\n\n\nbrew unlink php && brew link php\nbrew services restart --all\ncomposer global update\nvalet start"
+          },
           {
             "html": "Just stocked back up on Chartreuse. Will need to take it easy on the swizzles given the news from the monks.",
             "value": "Just stocked back up on Chartreuse. Will need to take it easy on the swizzles given the news from the monks."
@@ -65,16 +77,8 @@
             "value": "Citrus superjuice. Probably a good thing to have on hand for parties!"
           },
           {
-            "html": "<p>This will run over every single PHP file on the site and check it for syntax errors using the current version of PHP:</p>\n\n\n\n<pre class=\"wp-block-code\"><code>\t\nfind -L /srv/htdocs -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l</code></pre>",
-            "value": "This will run over every single PHP file on the site and check it for syntax errors using the current version of PHP:\n\n\n\n\t\nfind -L /srv/htdocs -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l"
-          },
-          {
-            "html": "<blockquote class=\"wp-block-quote\">\n<p>New federal income tax credits are available through 2032 providing up to $3,200 annually to lower the cost of energy efficient home upgrades by up to 30 percent. Improvements such as installing heat pumps, heat pump water heaters, insulation, doors and windows, as well as electrical panel upgrades, home energy audits and more, are covered by the tax credits and can help families save money on their monthly energy bills for years to come.</p>\n\n\n\n<p>In addition to the energy efficiency credits, homeowners can also take advantage of the modified and extended Residential Clean Energy credit, which provides a 30 percent income tax credit for clean energy equipment, such as rooftop solar, wind energy, geothermal heat pumps and battery storage through 2032, stepping down to 22 percent for 2033 and 2034.</p>\n</blockquote>\n\n\n\n<p>h/t Jeremy Felt</p>",
-            "value": "New federal income tax credits are available through 2032 providing up to $3,200 annually to lower the cost of energy efficient home upgrades by up to 30 percent. Improvements such as installing heat pumps, heat pump water heaters, insulation, doors and windows, as well as electrical panel upgrades, home energy audits and more, are covered by the tax credits and can help families save money on their monthly energy bills for years to come.\n\n\n\nIn addition to the energy efficiency credits, homeowners can also take advantage of the modified and extended Residential Clean Energy credit, which provides a 30 percent income tax credit for clean energy equipment, such as rooftop solar, wind energy, geothermal heat pumps and battery storage through 2032, stepping down to 22 percent for 2033 and 2034.\n\n\n\n\nh/t Jeremy Felt"
-          },
-          {
-            "html": "<p>Snow day!</p>\n\n\n\n<figure data-carousel-extra='{\"blog_id\":1,\"permalink\":\"https:\\/\\/cagrimmett.com\\/micro\\/e0d83099b2\\/\"}' class=\"wp-block-gallery has-nested-images columns-1 wp-block-gallery-27 is-layout-flex\">\n<figure class=\"wp-block-image size-large\"><img data-attachment-id=\"6095\" data-permalink=\"https://cagrimmett.com/img_4206/\" data-orig-file=\"https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4206-scaled.jpeg?fit=1920%2C2560&amp;ssl=1\" data-orig-size=\"1920,2560\" data-comments-opened=\"1\" data-image-meta='{\"aperture\":\"0\",\"credit\":\"\",\"camera\":\"\",\"caption\":\"\",\"created_timestamp\":\"0\",\"copyright\":\"\",\"focal_length\":\"0\",\"iso\":\"0\",\"shutter_speed\":\"0\",\"title\":\"\",\"orientation\":\"1\"}' data-image-title=\"IMG_4206\" data-image-description data-image-caption data-medium-file=\"https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4206-scaled.jpeg?fit=225%2C300&amp;ssl=1\" data-large-file=\"https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4206-scaled.jpeg?fit=768%2C1024&amp;ssl=1\" decoding=\"async\" width=\"768\" height=\"1024\" src=\"https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4206.jpeg?resize=768%2C1024&amp;ssl=1\" alt class=\"wp-image-6095 jetpack-lazy-image\" data-recalc-dims=\"1\" data-lazy-srcset=\"https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4206-scaled.jpeg?resize=768%2C1024&amp;ssl=1 768w, https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4206-scaled.jpeg?resize=225%2C300&amp;ssl=1 225w, https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4206-scaled.jpeg?resize=1152%2C1536&amp;ssl=1 1152w, https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4206-scaled.jpeg?resize=1536%2C2048&amp;ssl=1 1536w, https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4206-scaled.jpeg?w=1920&amp;ssl=1 1920w\" data-lazy-sizes=\"(max-width: 768px) 100vw, 768px\" data-lazy-src=\"https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4206.jpeg?resize=768%2C1024&amp;is-pending-load=1#038;ssl=1\" srcset=\"data:image/gif;base64, https://cagrimmett.com/R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"><noscript><img data-attachment-id=\"6095\" data-permalink=\"https://cagrimmett.com/img_4206/\" data-orig-file=\"https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4206-scaled.jpeg?fit=1920%2C2560&amp;ssl=1\" data-orig-size=\"1920,2560\" data-comments-opened=\"1\" data-image-meta='{\"aperture\":\"0\",\"credit\":\"\",\"camera\":\"\",\"caption\":\"\",\"created_timestamp\":\"0\",\"copyright\":\"\",\"focal_length\":\"0\",\"iso\":\"0\",\"shutter_speed\":\"0\",\"title\":\"\",\"orientation\":\"1\"}' data-image-title=\"IMG_4206\" data-image-description=\"\" data-image-caption=\"\" data-medium-file=\"https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4206-scaled.jpeg?fit=225%2C300&amp;ssl=1\" data-large-file=\"https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4206-scaled.jpeg?fit=768%2C1024&amp;ssl=1\" loading=\"lazy\" data-lazy-fallback=\"1\" decoding=\"async\" width=\"768\" height=\"1024\" src=\"https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4206.jpeg?resize=768%2C1024&amp;ssl=1\" alt=\"\" class=\"wp-image-6095\" srcset=\"https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4206-scaled.jpeg?resize=768%2C1024&amp;ssl=1 768w, https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4206-scaled.jpeg?resize=225%2C300&amp;ssl=1 225w, https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4206-scaled.jpeg?resize=1152%2C1536&amp;ssl=1 1152w, https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4206-scaled.jpeg?resize=1536%2C2048&amp;ssl=1 1536w, https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4206-scaled.jpeg?w=1920&amp;ssl=1 1920w\" sizes=\"(max-width: 768px) 100vw, 768px\" data-recalc-dims=\"1\"></noscript></figure>\n\n\n\n<figure class=\"wp-block-image size-large\"><img data-attachment-id=\"6096\" data-permalink=\"https://cagrimmett.com/img_4214/\" data-orig-file=\"https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4214-scaled.jpeg?fit=1920%2C2560&amp;ssl=1\" data-orig-size=\"1920,2560\" data-comments-opened=\"1\" data-image-meta='{\"aperture\":\"0\",\"credit\":\"\",\"camera\":\"\",\"caption\":\"\",\"created_timestamp\":\"0\",\"copyright\":\"\",\"focal_length\":\"0\",\"iso\":\"0\",\"shutter_speed\":\"0\",\"title\":\"\",\"orientation\":\"1\"}' data-image-title=\"IMG_4214\" data-image-description data-image-caption data-medium-file=\"https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4214-scaled.jpeg?fit=225%2C300&amp;ssl=1\" data-large-file=\"https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4214-scaled.jpeg?fit=768%2C1024&amp;ssl=1\" decoding=\"async\" width=\"768\" height=\"1024\" src=\"https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4214.jpeg?resize=768%2C1024&amp;ssl=1\" alt class=\"wp-image-6096 jetpack-lazy-image\" data-recalc-dims=\"1\" data-lazy-srcset=\"https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4214-scaled.jpeg?resize=768%2C1024&amp;ssl=1 768w, https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4214-scaled.jpeg?resize=225%2C300&amp;ssl=1 225w, https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4214-scaled.jpeg?resize=1152%2C1536&amp;ssl=1 1152w, https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4214-scaled.jpeg?resize=1536%2C2048&amp;ssl=1 1536w, https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4214-scaled.jpeg?w=1920&amp;ssl=1 1920w\" data-lazy-sizes=\"(max-width: 768px) 100vw, 768px\" data-lazy-src=\"https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4214.jpeg?resize=768%2C1024&amp;is-pending-load=1#038;ssl=1\" srcset=\"data:image/gif;base64, https://cagrimmett.com/R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"><noscript><img data-attachment-id=\"6096\" data-permalink=\"https://cagrimmett.com/img_4214/\" data-orig-file=\"https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4214-scaled.jpeg?fit=1920%2C2560&amp;ssl=1\" data-orig-size=\"1920,2560\" data-comments-opened=\"1\" data-image-meta='{\"aperture\":\"0\",\"credit\":\"\",\"camera\":\"\",\"caption\":\"\",\"created_timestamp\":\"0\",\"copyright\":\"\",\"focal_length\":\"0\",\"iso\":\"0\",\"shutter_speed\":\"0\",\"title\":\"\",\"orientation\":\"1\"}' data-image-title=\"IMG_4214\" data-image-description=\"\" data-image-caption=\"\" data-medium-file=\"https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4214-scaled.jpeg?fit=225%2C300&amp;ssl=1\" data-large-file=\"https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4214-scaled.jpeg?fit=768%2C1024&amp;ssl=1\" data-lazy-fallback=\"1\" decoding=\"async\" loading=\"lazy\" width=\"768\" height=\"1024\" src=\"https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4214.jpeg?resize=768%2C1024&amp;ssl=1\" alt=\"\" class=\"wp-image-6096\" srcset=\"https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4214-scaled.jpeg?resize=768%2C1024&amp;ssl=1 768w, https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4214-scaled.jpeg?resize=225%2C300&amp;ssl=1 225w, https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4214-scaled.jpeg?resize=1152%2C1536&amp;ssl=1 1152w, https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4214-scaled.jpeg?resize=1536%2C2048&amp;ssl=1 1536w, https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4214-scaled.jpeg?w=1920&amp;ssl=1 1920w\" sizes=\"(max-width: 768px) 100vw, 768px\" data-recalc-dims=\"1\"></noscript></figure>\n\n\n\n<figure class=\"wp-block-image size-large\"><img data-attachment-id=\"6097\" data-permalink=\"https://cagrimmett.com/img_4216/\" data-orig-file=\"https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4216-scaled.jpeg?fit=2560%2C1920&amp;ssl=1\" data-orig-size=\"2560,1920\" data-comments-opened=\"1\" data-image-meta='{\"aperture\":\"0\",\"credit\":\"\",\"camera\":\"\",\"caption\":\"\",\"created_timestamp\":\"0\",\"copyright\":\"\",\"focal_length\":\"0\",\"iso\":\"0\",\"shutter_speed\":\"0\",\"title\":\"\",\"orientation\":\"1\"}' data-image-title=\"IMG_4216\" data-image-description data-image-caption data-medium-file=\"https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4216-scaled.jpeg?fit=300%2C225&amp;ssl=1\" data-large-file=\"https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4216-scaled.jpeg?fit=1024%2C768&amp;ssl=1\" decoding=\"async\" width=\"1024\" height=\"768\" src=\"https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4216.jpeg?resize=1024%2C768&amp;ssl=1\" alt class=\"wp-image-6097 jetpack-lazy-image\" data-recalc-dims=\"1\" data-lazy-srcset=\"https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4216-scaled.jpeg?resize=1024%2C768&amp;ssl=1 1024w, https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4216-scaled.jpeg?resize=300%2C225&amp;ssl=1 300w, https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4216-scaled.jpeg?resize=768%2C576&amp;ssl=1 768w, https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4216-scaled.jpeg?resize=1536%2C1152&amp;ssl=1 1536w, https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4216-scaled.jpeg?resize=2048%2C1536&amp;ssl=1 2048w\" data-lazy-sizes=\"(max-width: 1000px) 100vw, 1000px\" data-lazy-src=\"https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4216.jpeg?resize=1024%2C768&amp;is-pending-load=1#038;ssl=1\" srcset=\"data:image/gif;base64, https://cagrimmett.com/R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"><noscript><img data-attachment-id=\"6097\" data-permalink=\"https://cagrimmett.com/img_4216/\" data-orig-file=\"https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4216-scaled.jpeg?fit=2560%2C1920&amp;ssl=1\" data-orig-size=\"2560,1920\" data-comments-opened=\"1\" data-image-meta='{\"aperture\":\"0\",\"credit\":\"\",\"camera\":\"\",\"caption\":\"\",\"created_timestamp\":\"0\",\"copyright\":\"\",\"focal_length\":\"0\",\"iso\":\"0\",\"shutter_speed\":\"0\",\"title\":\"\",\"orientation\":\"1\"}' data-image-title=\"IMG_4216\" data-image-description=\"\" data-image-caption=\"\" data-medium-file=\"https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4216-scaled.jpeg?fit=300%2C225&amp;ssl=1\" data-large-file=\"https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4216-scaled.jpeg?fit=1024%2C768&amp;ssl=1\" data-lazy-fallback=\"1\" decoding=\"async\" loading=\"lazy\" width=\"1024\" height=\"768\" src=\"https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4216.jpeg?resize=1024%2C768&amp;ssl=1\" alt=\"\" class=\"wp-image-6097\" srcset=\"https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4216-scaled.jpeg?resize=1024%2C768&amp;ssl=1 1024w, https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4216-scaled.jpeg?resize=300%2C225&amp;ssl=1 300w, https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4216-scaled.jpeg?resize=768%2C576&amp;ssl=1 768w, https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4216-scaled.jpeg?resize=1536%2C1152&amp;ssl=1 1536w, https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/02/IMG_4216-scaled.jpeg?resize=2048%2C1536&amp;ssl=1 2048w\" sizes=\"(max-width: 1000px) 100vw, 1000px\" data-recalc-dims=\"1\"></noscript></figure>\n</figure>",
-            "value": "Snow day!"
+            "html": "<div class=\"wp-block-indieblocks-context\"><i>Likes <a class=\"u-like-of\" href=\"https://www.robinrendle.com/notes/i-dont-want-to-log-in-to-your-website/\">https://www.robinrendle.com/notes/i-dont-want-to-log-in-to-your-website/</a>.</i></div>",
+            "value": "Likes https://www.robinrendle.com/notes/i-dont-want-to-log-in-to-your-website/."
           },
           {
             "html": "<div class=\"wp-block-indieblocks-context\"><i>Likes <a class=\"u-like-of\" href=\"https://cocktailwonk.com/2023/03/revised-falernum-recipe.html\">https://cocktailwonk.com/2023/03/revised-falernum-recipe.html</a>.</i></div>",
@@ -119,17 +123,13 @@
           {
             "html": "<div class=\"wp-block-indieblocks-context\"><i>Likes <a class=\"u-like-of\" href=\"https://jan.boddez.net/articles/note-and-like-microformats\">https://jan.boddez.net/articles/note-and-like-microformats</a>.</i></div>",
             "value": "Likes https://jan.boddez.net/articles/note-and-like-microformats."
-          },
-          {
-            "html": "<div class=\"wp-block-indieblocks-context\"><i>Likes <a class=\"u-like-of\" href=\"https://support.1password.com/link-family/\">https://support.1password.com/link-family/</a>.</i></div>\n\n\n\n<p>Use 1Password for Business? You can get a free 1Password Families membership, too, even if you already have an existing Families membership. h/t <a href=\"https://chandlerweiner.com/\">Chandler Weiner</a></p>",
-            "value": "Likes https://support.1password.com/link-family/.\n\n\n\nUse 1Password for Business? You can get a free 1Password Families membership, too, even if you already have an existing Families membership. h/t Chandler Weiner"
           }
         ],
         "bookmark-of": [
-          "https://www.kevinkos.com/post/how-to-get-8x-as-much-juice-from-one-citrus",
-          "https://www.energystar.gov/about/federal_tax_credits"
+          "https://www.kevinkos.com/post/how-to-get-8x-as-much-juice-from-one-citrus"
         ],
         "like-of": [
+          "https://www.robinrendle.com/notes/i-dont-want-to-log-in-to-your-website/",
           "https://cocktailwonk.com/2023/03/revised-falernum-recipe.html",
           "https://jeremyfelt.com/notes/88621677901662/",
           "https://daringfireball.net/2023/03/tweetbot_and_twitterrific_face_the_cliff",
@@ -140,8 +140,7 @@
           "https://wptavern.com/museum-of-block-art-calls-for-submissions-celebrating-wordpress-20th-anniversary",
           "https://www.mjt.me.uk/posts/falsehoods-programmers-believe-about-addresses/",
           "https://davidbisset.com/highlights-of-matts-qa-at-wordcamp-asia-2023/",
-          "https://jan.boddez.net/articles/note-and-like-microformats",
-          "https://support.1password.com/link-family/"
+          "https://jan.boddez.net/articles/note-and-like-microformats"
         ]
       },
       "children": [
@@ -199,15 +198,13 @@
       "https://cagrimmett.com/chuck-grimmett-2/feed/json/"
     ],
     "stylesheet": [
-      "https://149427923.v2.pressablecdn.com/wp-content/plugins/gutenberg/build/block-library/blocks/social-links/style.css?ver=15.2.4",
       "https://149427923.v2.pressablecdn.com/wp-content/plugins/gutenberg/build/block-library/blocks/navigation/style.css?ver=15.2.4",
-      "https://149427923.v2.pressablecdn.com/wp-content/plugins/gutenberg/build/block-library/blocks/gallery/style.css?ver=15.2.4",
       "https://149427923.v2.pressablecdn.com/wp-content/plugins/jetpack/_inc/blocks/tiled-gallery/view.css?minify=false&ver=11.9-beta",
       "https://149427923.v2.pressablecdn.com/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
       "https://149427923.v2.pressablecdn.com/wp-content/themes/twentytwentytwo/style.css?ver=1.0",
       "https://149427923.v2.pressablecdn.com/wp-content/plugins/syndication-links/css/syn-bw.min.css?ver=4.4.7",
       "https://use.fontawesome.com/releases/v5.14.0/css/all.css",
-      "https://149427923.v2.pressablecdn.com/wp-content/uploads/generateblocks/style-5728.css?ver=1677833330",
+      "https://149427923.v2.pressablecdn.com/wp-content/uploads/generateblocks/style-5728.css?ver=1678074128",
       "https://use.fontawesome.com/releases/v5.14.0/css/v4-shims.css",
       "https://149427923.v2.pressablecdn.com/wp-content/plugins/jetpack/css/jetpack.css?ver=11.9-beta",
       "https://cagrimmett.com/?custom-css=aefdf41866"
@@ -338,19 +335,7 @@
       "title": "Chuck Grimmett » Chuck Grimmett Comments Feed",
       "type": "application/rss+xml"
     },
-    "https://149427923.v2.pressablecdn.com/wp-content/plugins/gutenberg/build/block-library/blocks/social-links/style.css?ver=15.2.4": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "all"
-    },
     "https://149427923.v2.pressablecdn.com/wp-content/plugins/gutenberg/build/block-library/blocks/navigation/style.css?ver=15.2.4": {
-      "rels": [
-        "stylesheet"
-      ],
-      "media": "all"
-    },
-    "https://149427923.v2.pressablecdn.com/wp-content/plugins/gutenberg/build/block-library/blocks/gallery/style.css?ver=15.2.4": {
       "rels": [
         "stylesheet"
       ],
@@ -386,7 +371,7 @@
       ],
       "media": "all"
     },
-    "https://149427923.v2.pressablecdn.com/wp-content/uploads/generateblocks/style-5728.css?ver=1677833330": {
+    "https://149427923.v2.pressablecdn.com/wp-content/uploads/generateblocks/style-5728.css?ver=1678074128": {
       "rels": [
         "stylesheet"
       ],

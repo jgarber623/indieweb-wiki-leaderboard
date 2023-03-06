@@ -61,6 +61,42 @@
           }
         ],
         "published": [
+          "2023-03-05T12:57:38.000+01:00"
+        ],
+        "category": [
+          "Star Wars",
+          "TV"
+        ],
+        "url": [
+          "https://nicolas-hoizey.com/notes/2023/03/05/1/"
+        ],
+        "summary": [
+          ""
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "url": [
+                "https://nicolas-hoizey.com/"
+              ],
+              "name": [
+                "Nicolas Hoizey"
+              ]
+            },
+            "value": "https://nicolas-hoizey.com/"
+          }
+        ],
+        "published": [
           "2023-02-22T23:21:11.000+01:00"
         ],
         "category": [
@@ -182,45 +218,6 @@
         ],
         "summary": [
           "the single worst accessibility-related business strategy you can take is to stay in that audit-fix-audit-fix cycle"
-        ]
-      }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "author": [
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "url": [
-                "https://nicolas-hoizey.com/"
-              ],
-              "name": [
-                "Nicolas Hoizey"
-              ]
-            },
-            "value": "https://nicolas-hoizey.com/"
-          }
-        ],
-        "published": [
-          "2023-02-20T18:11:33.000+01:00"
-        ],
-        "category": [
-          "AVIF",
-          "Cloudflare",
-          "image",
-          "JPEG XL",
-          "performance"
-        ],
-        "url": [
-          "https://nicolas-hoizey.com/notes/2023/02/20/1/"
-        ],
-        "summary": [
-          ""
         ]
       }
     },
@@ -380,6 +377,8 @@
       "https://nicolas-hoizey.com/about/"
     ],
     "tag": [
+      "https://nicolas-hoizey.com/tags/star-wars/",
+      "https://nicolas-hoizey.com/tags/tv/",
       "https://nicolas-hoizey.com/tags/eleventy/",
       "https://nicolas-hoizey.com/tags/pack11ty/",
       "https://nicolas-hoizey.com/tags/github/",
@@ -387,10 +386,6 @@
       "https://nicolas-hoizey.com/tags/font/",
       "https://nicolas-hoizey.com/tags/performance/",
       "https://nicolas-hoizey.com/tags/accessibility/",
-      "https://nicolas-hoizey.com/tags/avif/",
-      "https://nicolas-hoizey.com/tags/cloudflare/",
-      "https://nicolas-hoizey.com/tags/image/",
-      "https://nicolas-hoizey.com/tags/jpeg-xl/",
       "https://nicolas-hoizey.com/tags/jamstack/",
       "https://nicolas-hoizey.com/tags/webperf/",
       "https://nicolas-hoizey.com/tags/api/",
@@ -402,6 +397,7 @@
       "https://nicolas-hoizey.com/tags/apple/",
       "https://nicolas-hoizey.com/tags/blog/",
       "https://nicolas-hoizey.com/tags/cinema/",
+      "https://nicolas-hoizey.com/tags/cloudflare/",
       "https://nicolas-hoizey.com/tags/cloudinary/",
       "https://nicolas-hoizey.com/tags/cls/",
       "https://nicolas-hoizey.com/tags/css/",
@@ -420,6 +416,7 @@
       "https://nicolas-hoizey.com/tags/grid/",
       "https://nicolas-hoizey.com/tags/html/",
       "https://nicolas-hoizey.com/tags/humour/",
+      "https://nicolas-hoizey.com/tags/image/",
       "https://nicolas-hoizey.com/tags/indieweb/",
       "https://nicolas-hoizey.com/tags/javascript/",
       "https://nicolas-hoizey.com/tags/leisure/",
@@ -457,6 +454,7 @@
       "https://nicolas-hoizey.com/tags/web/"
     ],
     "stylesheet": [
+      "https://nicolas-hoizey.com/assets/javascript/vendors/yt-lite/lite-yt-embed.css",
       "https://nicolas-hoizey.com/css/additional.baf285b8bf.css"
     ]
   },
@@ -546,6 +544,23 @@
       ],
       "title": "Link to my Twitter profile"
     },
+    "https://nicolas-hoizey.com/tags/star-wars/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Star Wars"
+    },
+    "https://nicolas-hoizey.com/tags/tv/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "TV"
+    },
+    "https://nicolas-hoizey.com/assets/javascript/vendors/yt-lite/lite-yt-embed.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
     "https://nicolas-hoizey.com/tags/eleventy/": {
       "rels": [
         "tag"
@@ -587,30 +602,6 @@
         "tag"
       ],
       "text": "accessibility"
-    },
-    "https://nicolas-hoizey.com/tags/avif/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "AVIF"
-    },
-    "https://nicolas-hoizey.com/tags/cloudflare/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Cloudflare"
-    },
-    "https://nicolas-hoizey.com/tags/image/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "image"
-    },
-    "https://nicolas-hoizey.com/tags/jpeg-xl/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "JPEG XL"
     },
     "https://nicolas-hoizey.com/tags/jamstack/": {
       "rels": [
@@ -677,6 +668,12 @@
         "tag"
       ],
       "text": "cinema"
+    },
+    "https://nicolas-hoizey.com/tags/cloudflare/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "Cloudflare"
     },
     "https://nicolas-hoizey.com/tags/cloudinary/": {
       "rels": [
@@ -785,6 +782,12 @@
         "tag"
       ],
       "text": "humour"
+    },
+    "https://nicolas-hoizey.com/tags/image/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "image"
     },
     "https://nicolas-hoizey.com/tags/indieweb/": {
       "rels": [

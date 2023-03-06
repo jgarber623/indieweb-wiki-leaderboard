@@ -19,12 +19,8 @@
     "preconnect": [
       "https://webmention.io/",
       "https://fonts.googleapis.com/",
-      "https://fonts.gstatic.com/"
-    ],
-    "stylesheet": [
-      "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;800&display=swap",
-      "https://www.artdaw.com/css/index.css",
-      "https://www.artdaw.com/css/prism-base16-monokai.dark.css"
+      "https://fonts.gstatic.com/",
+      "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;800&display=swap"
     ],
     "apple-touch-icon": [
       "https://www.artdaw.com/apple-touch-icon.png"
@@ -38,6 +34,10 @@
     ],
     "mask-icon": [
       "https://www.artdaw.com/safari-pinned-tab.svg"
+    ],
+    "stylesheet": [
+      "https://www.artdaw.com/css/index.css",
+      "https://www.artdaw.com/css/prism-base16-monokai.dark.css"
     ],
     "alternate": [
       "https://www.artdaw.com/feed/feed.xml",
@@ -74,7 +74,7 @@
     },
     "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;800&display=swap": {
       "rels": [
-        "stylesheet"
+        "preconnect"
       ]
     },
     "https://www.artdaw.com/apple-touch-icon.png": {

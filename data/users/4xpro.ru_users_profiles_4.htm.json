@@ -43,13 +43,12 @@
       "https://www.googletagmanager.com/gtag/js?id=UA-5518309-19",
       "http://4xpro.ru/fa/webfonts/fa-regular-400.woff2",
       "http://4xpro.ru/fa/webfonts/fa-solid-900.woff2",
-      "http://4xpro.ru/fa/webfonts/fa-brands-400.woff2",
-      "http://4xpro.ru/fa/css/fontawesome-all.min.css"
+      "http://4xpro.ru/fa/webfonts/fa-brands-400.woff2"
     ],
     "stylesheet": [
       "http://4xpro.ru/s/4xpro/s.css",
-      "http://4xpro.ru/fa/css/fontawesome-all.min.css",
-      "http://4xpro.ru/s/4xpro/user.css"
+      "http://4xpro.ru/s/4xpro/user.css",
+      "http://4xpro.ru/fa/css/fontawesome-all.min.css"
     ],
     "authorization_endpoint": [
       "http://4xpro.ru/.oauth/authorization_endpoint"
@@ -107,12 +106,6 @@
       "rels": [
         "preload"
       ]
-    },
-    "http://4xpro.ru/fa/css/fontawesome-all.min.css": {
-      "rels": [
-        "preload"
-      ],
-      "type": "text/css"
     },
     "http://4xpro.ru/s/4xpro/s.css": {
       "rels": [
@@ -201,6 +194,12 @@
         "me"
       ],
       "text": "GitHub"
+    },
+    "http://4xpro.ru/fa/css/fontawesome-all.min.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "type": "text/css"
     }
   }
 }

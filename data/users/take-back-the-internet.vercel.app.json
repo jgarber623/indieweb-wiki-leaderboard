@@ -1,0 +1,62 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "name": [
+          "Vince Picone"
+        ],
+        "url": [
+          "https://github.com/vpicone",
+          "https://twitter.com/vppicone"
+        ]
+      }
+    }
+  ],
+  "rels": {
+    "authorization_endpoint": [
+      "https://indieauth.com/auth"
+    ],
+    "token_endpoint": [
+      "https://tokens.indieauth.com/token"
+    ],
+    "stylesheet": [
+      "https://take-back-the-internet.vercel.app/style.css"
+    ],
+    "me": [
+      "https://github.com/vpicone",
+      "https://twitter.com/vppicone"
+    ]
+  },
+  "rel-urls": {
+    "https://indieauth.com/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://tokens.indieauth.com/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://take-back-the-internet.vercel.app/style.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://github.com/vpicone": {
+      "rels": [
+        "me"
+      ],
+      "text": "@vpicone"
+    },
+    "https://twitter.com/vppicone": {
+      "rels": [
+        "me"
+      ],
+      "text": "@vppicone"
+    }
+  }
+}
