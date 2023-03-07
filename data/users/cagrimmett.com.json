@@ -12,11 +12,12 @@
           "2023-01-22T14:25:19-05:00",
           "2023-01-04T13:08:17-05:00",
           "2023-01-01T12:00:30-05:00",
+          "2023-03-06T10:33:38-05:00",
           "2023-03-05T23:06:43-05:00",
           "2023-03-05T22:39:04-05:00",
           "2023-03-05T13:02:01-05:00",
           "2023-03-04T17:24:41-05:00",
-          "2023-03-04T13:57:01-05:00",
+          "2023-03-06T11:11:03-05:00",
           "2023-03-05T13:58:58-05:00",
           "2023-03-04T21:07:13-05:00",
           "2023-03-03T22:56:01-05:00",
@@ -27,8 +28,7 @@
           "2023-02-24T09:25:12-05:00",
           "2023-02-23T10:22:46-05:00",
           "2023-02-21T20:28:00-05:00",
-          "2023-02-20T09:14:21-05:00",
-          "2023-02-18T07:54:52-05:00"
+          "2023-02-20T09:14:21-05:00"
         ],
         "url": [
           "https://cagrimmett.com/thoughts/2023/02/27/thirty-three/",
@@ -37,11 +37,12 @@
           "https://cagrimmett.com/development/2023/01/22/my-indie-likes-workflow/",
           "https://cagrimmett.com/life/2023/01/04/learning-card-games-pitch/",
           "https://cagrimmett.com/life/2023/01/01/100-things-that-made-my-year-2022/",
+          "https://cagrimmett.com/micro/4c27bcf7f2/",
           "https://cagrimmett.com/micro/bda48175fb/",
           "https://cagrimmett.com/micro/880fe4059a/",
           "https://cagrimmett.com/micro/eb4f016c35/",
           "https://cagrimmett.com/micro/e860eb67e1/",
-          "https://cagrimmett.com/micro/e887d51863/",
+          "https://cagrimmett.com/likes/0d72764504/",
           "https://cagrimmett.com/likes/db8627b61e/",
           "https://cagrimmett.com/likes/541572a6b6/",
           "https://cagrimmett.com/likes/e78ce0d735/",
@@ -52,17 +53,20 @@
           "https://cagrimmett.com/likes/06ab5e8d80/",
           "https://cagrimmett.com/likes/0b2bde4fca/",
           "https://cagrimmett.com/likes/b0f92990b7/",
-          "https://cagrimmett.com/likes/11a5579327/",
-          "https://cagrimmett.com/likes/d864fe73dc/"
+          "https://cagrimmett.com/likes/11a5579327/"
         ],
         "content": [
+          {
+            "html": "<p>Updated the weather station data forwarding script to fetch and update data every 5 minutes instead of every minute, as I’m starting to hit daily API usage limits from Wunderground now that I added <a href=\"https://cagrimmett.com/micro/880fe4059a/\" data-type=\"indieblocks_note\" data-id=\"6116\">my custom block</a>. It looks like the limit is 1500 requests a day (day resets in UTC time). I’m having trouble finding the limits documented anywhere, but around 1500 I start getting errors back for my requests. </p>\n\n\n\n<p>Side note: Don’t use <a href=\"https://docs.google.com/document/d/1eKCnKXI9xnoMGRRzOL1xPCBihNV2rOet08qpE_gArAY/edit\">multiple Google Docs for your public API documentation</a>. Makes it very difficult to search across documents. </p>",
+            "value": "Updated the weather station data forwarding script to fetch and update data every 5 minutes instead of every minute, as I’m starting to hit daily API usage limits from Wunderground now that I added my custom block. It looks like the limit is 1500 requests a day (day resets in UTC time). I’m having trouble finding the limits documented anywhere, but around 1500 I start getting errors back for my requests. \n\n\n\nSide note: Don’t use multiple Google Docs for your public API documentation. Makes it very difficult to search across documents."
+          },
           {
             "html": "<p>How to create symlinks on macOS, for things like symlinking WordPress core or plugins that you are working on that need a separate git repo:</p>\n\n\n\n<p>First, navigate in your terminal to the folder where you want to symlink to live, then run this:</p>\n\n\n\n<pre class=\"wp-block-code\"><code>ln -s ~/Projects/path-to/what-you-want-symlinked</code></pre>",
             "value": "How to create symlinks on macOS, for things like symlinking WordPress core or plugins that you are working on that need a separate git repo:\n\n\n\nFirst, navigate in your terminal to the folder where you want to symlink to live, then run this:\n\n\n\nln -s ~/Projects/path-to/what-you-want-symlinked"
           },
           {
-            "html": "<p>I created a plugin to pull down data from my home weather station and display it in a custom block. The data updates every 10 minutes. I’m also gathering daily summaries behind the scenes for future blocks to come. </p>\n\n\n\n<p>Here is the block in action. It is currently “no frills” and needs some styling and a round of code clean up, but I’m happy with the first working version.</p>\n\n\n<div>\n<h4>Current weather conditions from <a href=\"https://www.wunderground.com/dashboard/pws/KNYPEEKS11\" target=\"_blank\">KNYPEEKS11</a>\n</h4>\n<p><em>Last updated: 2023-03-06 01:28:19</em></p>\n<p>Temperature: 40 °F</p>\n<p>Humidity: 63 %</p>\n<p>UV Index: 0</p>\n<p>Heat Index: 40 °F</p>\n<p>Dew Point: 28 °F</p>\n<p>Precipitation Rate: 0 in/hr</p>\n<p>Precipitation Total: 0 in</p>\n<p>Wind Chill: 40 °F</p>\n<p>Wind Speed: 1 mph</p>\n<p>Wind Gust: 2 mph</p>\n<p>Pressure: 30.41 inHg</p>\n</div>",
-            "value": "I created a plugin to pull down data from my home weather station and display it in a custom block. The data updates every 10 minutes. I’m also gathering daily summaries behind the scenes for future blocks to come. \n\n\n\nHere is the block in action. It is currently “no frills” and needs some styling and a round of code clean up, but I’m happy with the first working version.\n\n\nCurrent weather conditions from KNYPEEKS11Last updated: 2023-03-06 01:28:19Temperature: 40 °FHumidity: 63 %UV Index: 0Heat Index: 40 °FDew Point: 28 °FPrecipitation Rate: 0 in/hrPrecipitation Total: 0 inWind Chill: 40 °FWind Speed: 1 mphWind Gust: 2 mphPressure: 30.41 inHg"
+            "html": "<p>I created a plugin to pull down data from my home weather station and display it in a custom block. The data updates every 10 minutes. I’m also gathering daily summaries behind the scenes for future blocks to come. </p>\n\n\n\n<p>Here is the block in action. It is currently “no frills” and needs some styling and a round of code clean up, but I’m happy with the first working version.</p>\n\n\n<div>\n<h4>Current weather conditions from <a href=\"https://www.wunderground.com/dashboard/pws/KNYPEEKS11\" target=\"_blank\">KNYPEEKS11</a>\n</h4>\n<p><em>Last updated: 2023-03-07 01:28:18</em></p>\n<p>Temperature: 40 °F</p>\n<p>Humidity: 32 %</p>\n<p>UV Index: 0</p>\n<p>Heat Index: 40 °F</p>\n<p>Dew Point: 12 °F</p>\n<p>Precipitation Rate: 0 in/hr</p>\n<p>Precipitation Total: 0 in</p>\n<p>Wind Chill: 40 °F</p>\n<p>Wind Speed: 0 mph</p>\n<p>Wind Gust: 1 mph</p>\n<p>Pressure: 30.07 inHg</p>\n</div>",
+            "value": "I created a plugin to pull down data from my home weather station and display it in a custom block. The data updates every 10 minutes. I’m also gathering daily summaries behind the scenes for future blocks to come. \n\n\n\nHere is the block in action. It is currently “no frills” and needs some styling and a round of code clean up, but I’m happy with the first working version.\n\n\nCurrent weather conditions from KNYPEEKS11Last updated: 2023-03-07 01:28:18Temperature: 40 °FHumidity: 32 %UV Index: 0Heat Index: 40 °FDew Point: 12 °FPrecipitation Rate: 0 in/hrPrecipitation Total: 0 inWind Chill: 40 °FWind Speed: 0 mphWind Gust: 1 mphPressure: 30.07 inHg"
           },
           {
             "html": "<p>Today I had trouble with <a href=\"https://laravel.com/docs/10.x/valet\">Valet</a> not being properly linked to the correct PHP version installed via Homebrew. Here is how I fixed it. I’m sure I’ll need this again, so putting it here. </p>\n\n\n\n<pre class=\"wp-block-code\"><code>brew unlink php &amp;&amp; brew link php\nbrew services restart --all\ncomposer global update\nvalet start</code></pre>",
@@ -73,8 +77,8 @@
             "value": "Just stocked back up on Chartreuse. Will need to take it easy on the swizzles given the news from the monks."
           },
           {
-            "html": "<p>Citrus superjuice. Probably a good thing to have on hand for parties!</p>",
-            "value": "Citrus superjuice. Probably a good thing to have on hand for parties!"
+            "html": "<div class=\"wp-block-indieblocks-context\"><i>Likes <a class=\"u-like-of\" href=\"https://dev.to/equiman/how-to-test-media-queries-with-chrome-5d8c\">https://dev.to/equiman/how-to-test-media-queries-with-chrome-5d8c</a>.</i></div>",
+            "value": "Likes https://dev.to/equiman/how-to-test-media-queries-with-chrome-5d8c."
           },
           {
             "html": "<div class=\"wp-block-indieblocks-context\"><i>Likes <a class=\"u-like-of\" href=\"https://www.robinrendle.com/notes/i-dont-want-to-log-in-to-your-website/\">https://www.robinrendle.com/notes/i-dont-want-to-log-in-to-your-website/</a>.</i></div>",
@@ -119,16 +123,10 @@
           {
             "html": "<div class=\"wp-block-indieblocks-context\"><i>Likes <a class=\"u-like-of\" href=\"https://davidbisset.com/highlights-of-matts-qa-at-wordcamp-asia-2023/\">https://davidbisset.com/highlights-of-matts-qa-at-wordcamp-asia-2023/</a>.</i></div>",
             "value": "Likes https://davidbisset.com/highlights-of-matts-qa-at-wordcamp-asia-2023/."
-          },
-          {
-            "html": "<div class=\"wp-block-indieblocks-context\"><i>Likes <a class=\"u-like-of\" href=\"https://jan.boddez.net/articles/note-and-like-microformats\">https://jan.boddez.net/articles/note-and-like-microformats</a>.</i></div>",
-            "value": "Likes https://jan.boddez.net/articles/note-and-like-microformats."
           }
         ],
-        "bookmark-of": [
-          "https://www.kevinkos.com/post/how-to-get-8x-as-much-juice-from-one-citrus"
-        ],
         "like-of": [
+          "https://dev.to/equiman/how-to-test-media-queries-with-chrome-5d8c",
           "https://www.robinrendle.com/notes/i-dont-want-to-log-in-to-your-website/",
           "https://cocktailwonk.com/2023/03/revised-falernum-recipe.html",
           "https://jeremyfelt.com/notes/88621677901662/",
@@ -139,8 +137,7 @@
           "https://chriscoyier.net/2023/02/24/randomized-bookshelf-rectangles/",
           "https://wptavern.com/museum-of-block-art-calls-for-submissions-celebrating-wordpress-20th-anniversary",
           "https://www.mjt.me.uk/posts/falsehoods-programmers-believe-about-addresses/",
-          "https://davidbisset.com/highlights-of-matts-qa-at-wordcamp-asia-2023/",
-          "https://jan.boddez.net/articles/note-and-like-microformats"
+          "https://davidbisset.com/highlights-of-matts-qa-at-wordcamp-asia-2023/"
         ]
       },
       "children": [
@@ -204,7 +201,7 @@
       "https://149427923.v2.pressablecdn.com/wp-content/themes/twentytwentytwo/style.css?ver=1.0",
       "https://149427923.v2.pressablecdn.com/wp-content/plugins/syndication-links/css/syn-bw.min.css?ver=4.4.7",
       "https://use.fontawesome.com/releases/v5.14.0/css/all.css",
-      "https://149427923.v2.pressablecdn.com/wp-content/uploads/generateblocks/style-5728.css?ver=1678074128",
+      "https://149427923.v2.pressablecdn.com/wp-content/uploads/generateblocks/style-5728.css?ver=1678135474",
       "https://use.fontawesome.com/releases/v5.14.0/css/v4-shims.css",
       "https://149427923.v2.pressablecdn.com/wp-content/plugins/jetpack/css/jetpack.css?ver=11.9-beta",
       "https://cagrimmett.com/?custom-css=aefdf41866"
@@ -371,7 +368,7 @@
       ],
       "media": "all"
     },
-    "https://149427923.v2.pressablecdn.com/wp-content/uploads/generateblocks/style-5728.css?ver=1678074128": {
+    "https://149427923.v2.pressablecdn.com/wp-content/uploads/generateblocks/style-5728.css?ver=1678135474": {
       "rels": [
         "stylesheet"
       ],

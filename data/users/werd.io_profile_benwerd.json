@@ -1148,12 +1148,14 @@
     "alternate": [
       "https://werd.io/profile/benwerd?_t=rss",
       "https://werd.io/content/all?_t=rss",
+      "https://werd.io/content/bookmarkedpages?_t=rss",
       "https://granary.io/url?url=https://werd.io/content/all/&input=html&output=atom&hub=https://bridgy-fed.superfeedr.com/"
     ],
     "feed": [
       "https://werd.io/profile/benwerd?_t=rss",
       "https://werd.io/content/all?_t=rss",
-      "https://werd.io/content/all"
+      "https://werd.io/content/all",
+      "https://werd.io/content/bookmarkedpages?_t=rss"
     ],
     "http://webmention.org/": [
       "https://werd.io/webmention/"
@@ -1386,6 +1388,14 @@
       "rels": [
         "canonical"
       ]
+    },
+    "https://werd.io/content/bookmarkedpages?_t=rss": {
+      "rels": [
+        "alternate",
+        "feed"
+      ],
+      "title": "Ben Werdmuller: links",
+      "type": "application/rss+xml"
     },
     "https://granary.io/url?url=https://werd.io/content/all/&input=html&output=atom&hub=https://bridgy-fed.superfeedr.com/": {
       "rels": [

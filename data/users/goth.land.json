@@ -21,8 +21,21 @@
     "manifest": [
       "https://goth.land/manifest.json"
     ],
-    "authorization_endpoint": [
-      "https://goth.land/api/auth/provider/indieauth"
+    "preconnect": [
+      "https://goth.land/"
+    ],
+    "noreferrer": [
+      "https://owncast.online/docs",
+      "https://owncast.online/help",
+      "https://github.com/owncast/owncast",
+      "https://owncast.online/",
+      "https://mpv.io/",
+      "https://www.videolan.org/vlc/"
+    ],
+    "noopener": [
+      "https://owncast.online/",
+      "https://mpv.io/",
+      "https://www.videolan.org/vlc/"
     ]
   },
   "rel-urls": {
@@ -100,10 +113,49 @@
         "manifest"
       ]
     },
-    "https://goth.land/api/auth/provider/indieauth": {
+    "https://goth.land/": {
       "rels": [
-        "authorization_endpoint"
+        "preconnect"
       ]
+    },
+    "https://owncast.online/docs": {
+      "rels": [
+        "noreferrer"
+      ],
+      "text": "Documentation"
+    },
+    "https://owncast.online/help": {
+      "rels": [
+        "noreferrer"
+      ],
+      "text": "Contribute"
+    },
+    "https://github.com/owncast/owncast": {
+      "rels": [
+        "noreferrer"
+      ],
+      "text": "Source"
+    },
+    "https://owncast.online/": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "Owncast"
+    },
+    "https://mpv.io/": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "mpv"
+    },
+    "https://www.videolan.org/vlc/": {
+      "rels": [
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "VLC"
     }
   }
 }
