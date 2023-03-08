@@ -19,6 +19,7 @@
     "stylesheet": [
       "http://herbimarquez.com/wp-content/plugins/avatar-manager/assets/css/avatar-manager.min.css?ver=1.2.1",
       "http://herbimarquez.com/wp-content/plugins/indieweb-post-kinds/css/kind.min.css?ver=3.6.4",
+      "http://herbimarquez.com/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.12.0",
       "https://fonts.googleapis.com/css?family=PT+Sans%3A400%2C700%2C400italic%2C700italic&subset=latin%2Clatin-ext",
       "https://fonts.googleapis.com/css?family=PT+Serif%3A400%2C700%2C400italic%2C700italic&subset=latin%2Clatin-ext",
       "https://fonts.googleapis.com/css?family=PT+Mono&subset=latin%2Clatin-ext",
@@ -69,11 +70,11 @@
     "tag": [
       "https://herbimarquez.com/blogs/status/",
       "https://herbimarquez.com/tag/100daystooffload/",
+      "https://herbimarquez.com/tag/revue/",
+      "https://herbimarquez.com/tag/newsletter/",
+      "https://herbimarquez.com/tag/subscription/",
       "https://herbimarquez.com/tag/bluesky/",
       "https://herbimarquez.com/tag/mastodon/",
-      "https://herbimarquez.com/tag/newsletter/",
-      "https://herbimarquez.com/tag/revue/",
-      "https://herbimarquez.com/tag/subscription/",
       "https://herbimarquez.com/tag/error/",
       "https://herbimarquez.com/tag/hardware/",
       "https://herbimarquez.com/tag/dare/",
@@ -147,6 +148,13 @@
       "type": "text/css"
     },
     "http://herbimarquez.com/wp-content/plugins/indieweb-post-kinds/css/kind.min.css?ver=3.6.4": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "http://herbimarquez.com/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.12.0": {
       "rels": [
         "stylesheet"
       ],
@@ -271,35 +279,35 @@
       ],
       "text": "Revue Shuts down"
     },
-    "https://herbimarquez.com/tag/bluesky/": {
+    "https://herbimarquez.com/tag/revue/": {
       "rels": [
         "tag"
       ],
-      "text": "bluesky"
-    },
-    "https://herbimarquez.com/tag/mastodon/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Mastodon"
+      "text": "#Revue"
     },
     "https://herbimarquez.com/tag/newsletter/": {
       "rels": [
         "tag"
       ],
-      "text": "newsletter"
-    },
-    "https://herbimarquez.com/tag/revue/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Revue"
+      "text": "#newsletter"
     },
     "https://herbimarquez.com/tag/subscription/": {
       "rels": [
         "tag"
       ],
-      "text": "subscription"
+      "text": "#subscription"
+    },
+    "https://herbimarquez.com/tag/bluesky/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "#bluesky"
+    },
+    "https://herbimarquez.com/tag/mastodon/": {
+      "rels": [
+        "tag"
+      ],
+      "text": "#Mastodon"
     },
     "https://herbimarquez.com/status/fediverse-connection/": {
       "rels": [

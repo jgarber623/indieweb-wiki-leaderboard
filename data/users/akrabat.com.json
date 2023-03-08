@@ -6,6 +6,17 @@
       ],
       "properties": {
         "name": [
+          "Keep your iPhone passcode secret\n                                \n                    TL;DR: If someone sees you enter your passcode on your phone and then steals your phone, they can lock you out of your Apple account, losing access to all your iCloud data, including photos. Treat your phone passcode as carefully as the secret it is. The problem I heard about \"A Basic iPhone Feature Helps Criminals Steal Your Entire Digital Life\" by Joanna Stern & Nicole Nguyen on The Talk Show and learnt something new.… continue reading.\n                    Posted on\n                            7 March 2023                            in Computing\n\n                                                    \n                                Leave a comment"
+        ]
+      },
+      "id": "post-6541"
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
           "PHPUK 2023\n                                \n                    I have just returned from the 2023 edition of PHPUK and, as always, found it a valuable conference to catch up with the PHP community and find out what’s happening in the ecosystem. This year, I was accepted to speak on the differences between RPC, REST and GraphQL APIs and was surprised and gratified that the room was at full capacity. Thank you to everyone that attended; I hope that you learnt something useful. I… continue reading.\n                    Posted on\n                            21 February 2023                            in Conferences, PHP\n\n                                                    \n                                Leave a comment"
         ]
       },
@@ -61,7 +72,7 @@
       ],
       "properties": {
         "name": [
-          "Installing Xdebug on PHP 8.1 installed with Homebrew\n                                \n                    I have recently set up a new M2 MacBook Air and as usual, installed Homebrew and then installed PHP. Homebrew is always up to date, so it installed PHP 8.1 for me. Again, as usual, I installed Xdebug using pecl install xdebug. This whirrs and clicks for a while downloading and compiling the xdebug.so and then fails with: rob@ardent ~ $ pecl install xdebug downloading xdebug-3.1.5.tgz … Starting to download xdebug-3.1.5.tgz (232,070 bytes) … Build… continue reading.\n                    Posted on\n                            26 July 2022                            in PHP, Software\n\n                                                    \n                                View all 8 comments"
+          "Installing Xdebug on PHP 8.1 installed with Homebrew\n                                \n                    I have recently set up a new M2 MacBook Air and as usual, installed Homebrew and then installed PHP. Homebrew is always up to date, so it installed PHP 8.1 for me. Again, as usual, I installed Xdebug using pecl install xdebug. This whirrs and clicks for a while downloading and compiling the xdebug.so and then fails with: rob@ardent ~ $ pecl install xdebug downloading xdebug-3.1.5.tgz … Starting to download xdebug-3.1.5.tgz (232,070 bytes) … Build… continue reading.\n                    Posted on\n                            26 July 2022                            in PHP, Software\n\n                                                    \n                                View all 9 comments"
         ]
       },
       "id": "post-6482"
@@ -98,17 +109,6 @@
         ]
       },
       "id": "post-6438"
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "name": [
-          "Add TouchID authentication to sudo\n                                \n                    Now that I have a TouchID enabled Mac, I want to be able use TouchID for sudo access. There's a pam module available, so it just needs enabling: Edit /etc/pam.d/sudo Add a new line under line 1 (which is a comment) containing: auth sufficient pam_tid.so (Leave all other lines in this file.) That's it. Now, whenever you use sudo, you have the option of using TouchID to authenticate. Scripting it It turns out that whenever… continue reading.\n                    Posted on\n                            17 November 2021                            in Computing\n\n                                                    \n                                View all 2 comments"
-        ]
-      },
-      "id": "post-6432"
     }
   ],
   "rels": {
@@ -150,6 +150,7 @@
       "https://mastodonapp.uk/@akrabat"
     ],
     "bookmark": [
+      "https://akrabat.com/keep-your-iphone-passcode-secret/",
       "https://akrabat.com/phpuk-2023/",
       "https://akrabat.com/successful-soc-2-type-ii-compliance/",
       "https://akrabat.com/2022-in-pictures/",
@@ -158,10 +159,10 @@
       "https://akrabat.com/installing-xdebug-on-php-8-1-installed-with-homebrew/",
       "https://akrabat.com/bbedit-hosts-file-syntax-highlighting/",
       "https://akrabat.com/background-images-in-rst2pdf-0-99/",
-      "https://akrabat.com/2021-in-pictures/",
-      "https://akrabat.com/add-touchid-authentication-to-sudo/"
+      "https://akrabat.com/2021-in-pictures/"
     ],
     "category": [
+      "https://akrabat.com/category/computing/",
       "https://akrabat.com/category/conferences/",
       "https://akrabat.com/category/php/",
       "https://akrabat.com/category/compliance/",
@@ -171,10 +172,10 @@
       "https://akrabat.com/category/development/",
       "https://akrabat.com/category/web/",
       "https://akrabat.com/category/software/",
-      "https://akrabat.com/category/rst2pdf/",
-      "https://akrabat.com/category/computing/"
+      "https://akrabat.com/category/rst2pdf/"
     ],
     "tag": [
+      "https://akrabat.com/category/computing/",
       "https://akrabat.com/category/conferences/",
       "https://akrabat.com/category/php/",
       "https://akrabat.com/category/compliance/",
@@ -184,8 +185,7 @@
       "https://akrabat.com/category/development/",
       "https://akrabat.com/category/web/",
       "https://akrabat.com/category/software/",
-      "https://akrabat.com/category/rst2pdf/",
-      "https://akrabat.com/category/computing/"
+      "https://akrabat.com/category/rst2pdf/"
     ]
   },
   "rel-urls": {
@@ -323,6 +323,19 @@
         "me"
       ]
     },
+    "https://akrabat.com/keep-your-iphone-passcode-secret/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "Keep your iPhone passcode secret"
+    },
+    "https://akrabat.com/category/computing/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Computing"
+    },
     "https://akrabat.com/phpuk-2023/": {
       "rels": [
         "bookmark"
@@ -446,19 +459,6 @@
         "bookmark"
       ],
       "text": "2021 in Pictures"
-    },
-    "https://akrabat.com/add-touchid-authentication-to-sudo/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "Add TouchID authentication to sudo"
-    },
-    "https://akrabat.com/category/computing/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "Computing"
     }
   }
 }

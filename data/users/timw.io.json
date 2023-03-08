@@ -29,8 +29,8 @@
         ],
         "content": [
           {
-            "html": "<p>\n      </p>\n<p>Urna duis convallis convallis tellus id. Hac habitasse platea dictumst vestibulum rhoncus. Nunc lobortis mattis aliquam faucibus purus.</p>\n\n    \n    <span><a href=\"https://timw.io/2023/01/01/sample-post-3/\">Continue reading…</a></span>",
-            "value": "Urna duis convallis convallis tellus id. Hac habitasse platea dictumst vestibulum rhoncus. Nunc lobortis mattis aliquam faucibus purus.\n\n    \n    Continue reading…"
+            "html": "<p>Urna duis convallis convallis tellus id. Hac habitasse platea dictumst vestibulum rhoncus. Nunc lobortis mattis aliquam faucibus purus.</p>\n\n    <span><a href=\"https://timw.io/2023/01/01/sample-post-3/\">Continue reading…</a></span>",
+            "value": "Urna duis convallis convallis tellus id. Hac habitasse platea dictumst vestibulum rhoncus. Nunc lobortis mattis aliquam faucibus purus.\n\n    Continue reading…"
           }
         ]
       }
@@ -51,8 +51,8 @@
         ],
         "content": [
           {
-            "html": "<p>\n      </p>\n<p>Odio eu feugiat pretium nibh ipsum consequat nisl. Nibh sit amet commodo nulla. Facilisis sed odio morbi quis.</p>\n\n    \n    <span><a href=\"https://timw.io/2022/11/15/sample-post-2/\">Continue reading…</a></span>",
-            "value": "Odio eu feugiat pretium nibh ipsum consequat nisl. Nibh sit amet commodo nulla. Facilisis sed odio morbi quis.\n\n    \n    Continue reading…"
+            "html": "<p>Odio eu feugiat pretium nibh ipsum consequat nisl. Nibh sit amet commodo nulla. Facilisis sed odio morbi quis.</p>\n\n    <span><a href=\"https://timw.io/2022/11/15/sample-post-2/\">Continue reading…</a></span>",
+            "value": "Odio eu feugiat pretium nibh ipsum consequat nisl. Nibh sit amet commodo nulla. Facilisis sed odio morbi quis.\n\n    Continue reading…"
           }
         ]
       }
@@ -73,8 +73,8 @@
         ],
         "content": [
           {
-            "html": "<p>\n      </p>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed adipiscing diam donec adipiscing tristique risus nec feugiat in. Sem viverra aliquet eget sit amet tellus cras.</p>\n\n    \n    <span><a href=\"https://timw.io/2022/10/11/sample-post-1/\">Continue reading…</a></span>",
-            "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed adipiscing diam donec adipiscing tristique risus nec feugiat in. Sem viverra aliquet eget sit amet tellus cras.\n\n    \n    Continue reading…"
+            "html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed adipiscing diam donec adipiscing tristique risus nec feugiat in. Sem viverra aliquet eget sit amet tellus cras.</p>\n\n    <span><a href=\"https://timw.io/2022/10/11/sample-post-1/\">Continue reading…</a></span>",
+            "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed adipiscing diam donec adipiscing tristique risus nec feugiat in. Sem viverra aliquet eget sit amet tellus cras.\n\n    Continue reading…"
           }
         ]
       }
@@ -84,6 +84,17 @@
     "canonical": [
       "https://timw.io/"
     ],
+    "me": [
+      "https://github.com/timweston",
+      "https://worldkey.io/@tim",
+      "https://timw.io/"
+    ],
+    "webmention": [
+      "https://webmention.io/timw.io/webmention"
+    ],
+    "pingback": [
+      "https://webmention.io/timw.io/xmlrpc"
+    ],
     "stylesheet": [
       "https://timw.io/css/normalize.css",
       "https://timw.io/css/simple.css",
@@ -92,16 +103,27 @@
     ],
     "alternate": [
       "https://timw.io/feed.xml"
-    ],
-    "me": [
-      "https://worldkey.io/@tim",
-      "https://timw.io/"
     ]
   },
   "rel-urls": {
     "https://timw.io/": {
       "rels": [
         "canonical"
+      ]
+    },
+    "https://github.com/timweston": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://webmention.io/timw.io/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://webmention.io/timw.io/xmlrpc": {
+      "rels": [
+        "pingback"
       ]
     },
     "https://timw.io/css/normalize.css": {
