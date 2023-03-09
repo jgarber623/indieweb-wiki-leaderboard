@@ -1,79 +1,33 @@
 {
   "items": [],
   "rels": {
-    "preconnect": [
-      "https://fonts.gstatic.com/"
-    ],
-    "stylesheet": [
-      "https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap",
-      "https://jeffperry.me/assets/css/screen.min.css?v=9781687cd2",
-      "https://jeffperry.me/public/cards.min.css?v=9781687cd2"
-    ],
-    "icon": [
-      "https://digitalpress.fra1.cdn.digitaloceanspaces.com/crpccea/2023/03/9376268973f0694bb22b034436774f17.png"
-    ],
-    "canonical": [
-      "https://jeffperry.me/"
-    ],
-    "next": [
-      "https://jeffperry.me/page/2/"
-    ],
     "alternate": [
-      "https://jeffperry.me/rss/"
-    ],
-    "webmention": [
-      "https://jeffperry.me/webmentions/receive/"
+      "https://jeffperry.blog/rss.xml",
+      "https://jeffperry.blog/atom.xml",
+      "https://jeffperry.blog/feed.json"
     ]
   },
   "rel-urls": {
-    "https://fonts.gstatic.com/": {
-      "rels": [
-        "preconnect"
-      ]
-    },
-    "https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap": {
-      "rels": [
-        "stylesheet"
-      ]
-    },
-    "https://jeffperry.me/assets/css/screen.min.css?v=9781687cd2": {
-      "rels": [
-        "stylesheet"
-      ]
-    },
-    "https://digitalpress.fra1.cdn.digitaloceanspaces.com/crpccea/2023/03/9376268973f0694bb22b034436774f17.png": {
-      "rels": [
-        "icon"
-      ],
-      "type": "image/png"
-    },
-    "https://jeffperry.me/": {
-      "rels": [
-        "canonical"
-      ]
-    },
-    "https://jeffperry.me/page/2/": {
-      "rels": [
-        "next"
-      ]
-    },
-    "https://jeffperry.me/rss/": {
+    "https://jeffperry.blog/rss.xml": {
       "rels": [
         "alternate"
       ],
-      "title": "Jeff Perry",
+      "title": "RSS feed",
       "type": "application/rss+xml"
     },
-    "https://jeffperry.me/webmentions/receive/": {
+    "https://jeffperry.blog/atom.xml": {
       "rels": [
-        "webmention"
-      ]
-    },
-    "https://jeffperry.me/public/cards.min.css?v=9781687cd2": {
-      "rels": [
-        "stylesheet"
+        "alternate"
       ],
-      "type": "text/css"
+      "title": "Atom feed",
+      "type": "application/atom+xml"
+    },
+    "https://jeffperry.blog/feed.json": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "JSON feed",
+      "type": "application/json"
     }
   }
 }

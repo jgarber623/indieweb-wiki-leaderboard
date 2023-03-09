@@ -12,11 +12,11 @@
           "2023-01-22T14:25:19-05:00",
           "2023-01-04T13:08:17-05:00",
           "2023-01-01T12:00:30-05:00",
+          "2023-03-08T21:23:53-05:00",
           "2023-03-06T10:33:38-05:00",
           "2023-03-05T23:06:43-05:00",
           "2023-03-05T22:39:04-05:00",
           "2023-03-05T13:02:01-05:00",
-          "2023-03-04T17:24:41-05:00",
           "2023-03-06T11:11:03-05:00",
           "2023-03-05T13:58:58-05:00",
           "2023-03-04T21:07:13-05:00",
@@ -37,11 +37,11 @@
           "https://cagrimmett.com/development/2023/01/22/my-indie-likes-workflow/",
           "https://cagrimmett.com/life/2023/01/04/learning-card-games-pitch/",
           "https://cagrimmett.com/life/2023/01/01/100-things-that-made-my-year-2022/",
+          "https://cagrimmett.com/micro/d2848f0f84/",
           "https://cagrimmett.com/micro/4c27bcf7f2/",
           "https://cagrimmett.com/micro/bda48175fb/",
           "https://cagrimmett.com/micro/880fe4059a/",
           "https://cagrimmett.com/micro/eb4f016c35/",
-          "https://cagrimmett.com/micro/e860eb67e1/",
           "https://cagrimmett.com/likes/0d72764504/",
           "https://cagrimmett.com/likes/db8627b61e/",
           "https://cagrimmett.com/likes/541572a6b6/",
@@ -57,6 +57,10 @@
         ],
         "content": [
           {
+            "html": "Decided to up my seed starting game this year, so got a shelf with a cover and added LED grow strips. Ready to start seeds in a week or two! <br><br><img decoding=\"async\" src=\"https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/03/IMG_4262-scaled.jpeg?ssl=1\" class=\"micropub-img jetpack-lazy-image\" data-recalc-dims=\"1\" data-lazy-src=\"https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/03/IMG_4262-scaled.jpeg?ssl=1&amp;is-pending-load=1\" srcset=\"data:image/gif;base64, https://cagrimmett.com/R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"><noscript><img data-lazy-fallback=\"1\" decoding=\"async\" src=\"https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/03/IMG_4262-scaled.jpeg?ssl=1\" class=\"micropub-img\" data-recalc-dims=\"1\"></noscript>",
+            "value": "Decided to up my seed starting game this year, so got a shelf with a cover and added LED grow strips. Ready to start seeds in a week or two!  https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/03/IMG_4262-scaled.jpeg?ssl=1  https://i0.wp.com/cagrimmett.com/wp-content/uploads/2023/03/IMG_4262-scaled.jpeg?ssl=1"
+          },
+          {
             "html": "<p>Updated the weather station data forwarding script to fetch and update data every 5 minutes instead of every minute, as I’m starting to hit daily API usage limits from Wunderground now that I added <a href=\"https://cagrimmett.com/micro/880fe4059a/\" data-type=\"indieblocks_note\" data-id=\"6116\">my custom block</a>. It looks like the limit is 1500 requests a day (day resets in UTC time). I’m having trouble finding the limits documented anywhere, but around 1500 I start getting errors back for my requests. </p>\n\n\n\n<p>Side note: Don’t use <a href=\"https://docs.google.com/document/d/1eKCnKXI9xnoMGRRzOL1xPCBihNV2rOet08qpE_gArAY/edit\">multiple Google Docs for your public API documentation</a>. Makes it very difficult to search across documents. </p>",
             "value": "Updated the weather station data forwarding script to fetch and update data every 5 minutes instead of every minute, as I’m starting to hit daily API usage limits from Wunderground now that I added my custom block. It looks like the limit is 1500 requests a day (day resets in UTC time). I’m having trouble finding the limits documented anywhere, but around 1500 I start getting errors back for my requests. \n\n\n\nSide note: Don’t use multiple Google Docs for your public API documentation. Makes it very difficult to search across documents."
           },
@@ -65,16 +69,12 @@
             "value": "How to create symlinks on macOS, for things like symlinking WordPress core or plugins that you are working on that need a separate git repo:\n\n\n\nFirst, navigate in your terminal to the folder where you want to symlink to live, then run this:\n\n\n\nln -s ~/Projects/path-to/what-you-want-symlinked"
           },
           {
-            "html": "<p>I created a plugin to pull down data from my home weather station and display it in a custom block. The data updates every 10 minutes. I’m also gathering daily summaries behind the scenes for future blocks to come. </p>\n\n\n\n<p>Here is the block in action. It is currently “no frills” and needs some styling and a round of code clean up, but I’m happy with the first working version.</p>\n\n\n<div>\n<h4>Current weather conditions from <a href=\"https://www.wunderground.com/dashboard/pws/KNYPEEKS11\" target=\"_blank\">KNYPEEKS11</a>\n</h4>\n<p><em>Last updated: 2023-03-08 01:29:33</em></p>\n<p>Temperature: 29 °F</p>\n<p>Humidity: 57 %</p>\n<p>UV Index: 0</p>\n<p>Heat Index: 29 °F</p>\n<p>Dew Point: 16 °F</p>\n<p>Precipitation Rate: 0 in/hr</p>\n<p>Precipitation Total: 0 in</p>\n<p>Wind Chill: 29 °F</p>\n<p>Wind Speed: 3 mph</p>\n<p>Wind Gust: 4 mph</p>\n<p>Pressure: 30.31 inHg</p>\n</div>",
-            "value": "I created a plugin to pull down data from my home weather station and display it in a custom block. The data updates every 10 minutes. I’m also gathering daily summaries behind the scenes for future blocks to come. \n\n\n\nHere is the block in action. It is currently “no frills” and needs some styling and a round of code clean up, but I’m happy with the first working version.\n\n\nCurrent weather conditions from KNYPEEKS11Last updated: 2023-03-08 01:29:33Temperature: 29 °FHumidity: 57 %UV Index: 0Heat Index: 29 °FDew Point: 16 °FPrecipitation Rate: 0 in/hrPrecipitation Total: 0 inWind Chill: 29 °FWind Speed: 3 mphWind Gust: 4 mphPressure: 30.31 inHg"
+            "html": "<p>I created a plugin to pull down data from my home weather station and display it in a custom block. The data updates every 10 minutes. I’m also gathering daily summaries behind the scenes for future blocks to come. </p>\n\n\n\n<p>Here is the block in action. It is currently “no frills” and needs some styling and a round of code clean up, but I’m happy with the first working version.</p>\n\n\n<div>\n<h4>Current weather conditions from <a href=\"https://www.wunderground.com/dashboard/pws/KNYPEEKS11\" target=\"_blank\">KNYPEEKS11</a>\n</h4>\n<p><em>Last updated: 2023-03-09 01:21:30</em></p>\n<p>Temperature: 31 °F</p>\n<p>Humidity: 73 %</p>\n<p>UV Index: 0</p>\n<p>Heat Index: 31 °F</p>\n<p>Dew Point: 23 °F</p>\n<p>Precipitation Rate: 0 in/hr</p>\n<p>Precipitation Total: 0 in</p>\n<p>Wind Chill: 31 °F</p>\n<p>Wind Speed: 0 mph</p>\n<p>Wind Gust: 0 mph</p>\n<p>Pressure: 30.45 inHg</p>\n</div>",
+            "value": "I created a plugin to pull down data from my home weather station and display it in a custom block. The data updates every 10 minutes. I’m also gathering daily summaries behind the scenes for future blocks to come. \n\n\n\nHere is the block in action. It is currently “no frills” and needs some styling and a round of code clean up, but I’m happy with the first working version.\n\n\nCurrent weather conditions from KNYPEEKS11Last updated: 2023-03-09 01:21:30Temperature: 31 °FHumidity: 73 %UV Index: 0Heat Index: 31 °FDew Point: 23 °FPrecipitation Rate: 0 in/hrPrecipitation Total: 0 inWind Chill: 31 °FWind Speed: 0 mphWind Gust: 0 mphPressure: 30.45 inHg"
           },
           {
             "html": "<p>Today I had trouble with <a href=\"https://laravel.com/docs/10.x/valet\">Valet</a> not being properly linked to the correct PHP version installed via Homebrew. Here is how I fixed it. I’m sure I’ll need this again, so putting it here. </p>\n\n\n\n<pre class=\"wp-block-code\"><code>brew unlink php &amp;&amp; brew link php\nbrew services restart --all\ncomposer global update\nvalet start</code></pre>",
             "value": "Today I had trouble with Valet not being properly linked to the correct PHP version installed via Homebrew. Here is how I fixed it. I’m sure I’ll need this again, so putting it here. \n\n\n\nbrew unlink php && brew link php\nbrew services restart --all\ncomposer global update\nvalet start"
-          },
-          {
-            "html": "Just stocked back up on Chartreuse. Will need to take it easy on the swizzles given the news from the monks.",
-            "value": "Just stocked back up on Chartreuse. Will need to take it easy on the swizzles given the news from the monks."
           },
           {
             "html": "<div class=\"wp-block-indieblocks-context\"><i>Likes <a class=\"u-like-of\" href=\"https://dev.to/equiman/how-to-test-media-queries-with-chrome-5d8c\">https://dev.to/equiman/how-to-test-media-queries-with-chrome-5d8c</a>.</i></div>",
@@ -195,7 +195,7 @@
       "https://cagrimmett.com/chuck-grimmett-2/feed/json/"
     ],
     "stylesheet": [
-      "https://149427923.v2.pressablecdn.com/wp-content/plugins/gutenberg/build/block-library/blocks/navigation/style.css?ver=15.2.4",
+      "https://149427923.v2.pressablecdn.com/wp-content/plugins/gutenberg/build/block-library/blocks/navigation/style.css?ver=15.3.1",
       "https://149427923.v2.pressablecdn.com/wp-content/plugins/jetpack/_inc/blocks/tiled-gallery/view.css?minify=false&ver=11.9-beta",
       "https://149427923.v2.pressablecdn.com/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
       "https://149427923.v2.pressablecdn.com/wp-content/themes/twentytwentytwo/style.css?ver=1.0",
@@ -332,7 +332,7 @@
       "title": "Chuck Grimmett » Chuck Grimmett Comments Feed",
       "type": "application/rss+xml"
     },
-    "https://149427923.v2.pressablecdn.com/wp-content/plugins/gutenberg/build/block-library/blocks/navigation/style.css?ver=15.2.4": {
+    "https://149427923.v2.pressablecdn.com/wp-content/plugins/gutenberg/build/block-library/blocks/navigation/style.css?ver=15.3.1": {
       "rels": [
         "stylesheet"
       ],

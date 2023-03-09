@@ -37,6 +37,55 @@
               }
             ],
             "url": [
+              "https://www.owenyoung.com/blog/jsonbin/",
+              "https://www.owenyoung.com/blog/jsonbin/"
+            ],
+            "name": [
+              "在 Cloudflare Workers 部署一个 JSON as a Storage 服务",
+              "2023.03.09"
+            ],
+            "summary": [
+              "我特别喜欢JSON, 因为它真的很小巧和简单，幸运的是，它还是我使用的主要语言 Javascript 和 Typescript 里的一级公民，也太幸运了吧！\n我经常用本地的 JSON 文件来存储一些需要持久化的数据，这样可以省掉要调试 sql 或者 redit 的大把时间，而且数据都是明文纯文本存储，搜索，定位问题都很方便，比如整个Buzzing 还有整个Track Awesome List 都只使用 JSON 作为持久化存储的格式。\n但是像这样比较大的项目，我会把 JSON 文件存储到 Cloudflare 的 R2 服务里（类似 AWS 的 S3 ），但是除此之外，我还有很多小小的工作流，这些东西通常也需要一个持久化的数据存储，比如一个 RSS 的监控服务，我需要记录哪些 ID 已经被发送过了，这是一个很常见的需求，但是要寻找一个适合的服务也不是一件容易的事，所以今天我尝试搜索了一下 JSON as a Storage 方案，最后决定采用 Cloudfalre 的 Workers 作为 host, 其实也就几十行代码的事，Workers 好就好在一次部署，终生不用再管，所以特别适合这种服务。"
+            ],
+            "published": [
+              "2023-03-09T01:38:46+08:00"
+            ],
+            "category": [
+              "Dev"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "photo": [
+                    {
+                      "value": "https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f",
+                      "alt": "Owen"
+                    }
+                  ],
+                  "name": [
+                    "Owen Young"
+                  ],
+                  "url": [
+                    "https://www.owenyoung.com/"
+                  ],
+                  "note": [
+                    "Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog."
+                  ]
+                },
+                "value": "Owen Young"
+              }
+            ],
+            "url": [
               "https://www.owenyoung.com/blog/journals/2023-02-01/",
               "https://www.owenyoung.com/blog/journals/2023-02-01/"
             ],
@@ -425,52 +474,6 @@
               "Journal"
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "photo": [
-                    {
-                      "value": "https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f",
-                      "alt": "Owen"
-                    }
-                  ],
-                  "name": [
-                    "Owen Young"
-                  ],
-                  "url": [
-                    "https://www.owenyoung.com/"
-                  ],
-                  "note": [
-                    "Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog."
-                  ]
-                },
-                "value": "Owen Young"
-              }
-            ],
-            "url": [
-              "https://www.owenyoung.com/blog/journals/2022-12-19/",
-              "https://www.owenyoung.com/blog/journals/2022-12-19/"
-            ],
-            "name": [
-              "2022.12.19: 各种链接",
-              "2022.12.19"
-            ],
-            "published": [
-              "2022-12-19T05:11:31+08:00"
-            ],
-            "category": [
-              "Journal"
-            ]
-          }
         }
       ]
     },
@@ -535,6 +538,8 @@
       "https://www.owenyoung.com/site/images/manifest.json"
     ],
     "bookmark": [
+      "https://www.owenyoung.com/blog/jsonbin/",
+      "https://www.owenyoung.com/blog/jsonbin/#continue-reading",
       "https://www.owenyoung.com/blog/journals/2023-02-01/",
       "https://www.owenyoung.com/blog/journals/2023-01-31/",
       "https://www.owenyoung.com/blog/books/everything-is-fucked/",
@@ -545,10 +550,12 @@
       "https://www.owenyoung.com/blog/journals/2023-01-14/#continue-reading",
       "https://www.owenyoung.com/blog/journals/2023-01-11/",
       "https://www.owenyoung.com/blog/journals/2023-01-03/",
-      "https://www.owenyoung.com/blog/journals/2022-12-28/",
-      "https://www.owenyoung.com/blog/journals/2022-12-19/"
+      "https://www.owenyoung.com/blog/journals/2022-12-28/"
     ],
     "nofollow": [
+      "https://www.json.org/json-en.html",
+      "https://www.buzzing.cc/",
+      "https://www.trackawesomelist.com/",
       "https://www.youtube.com/watch?app=desktop&v=ydKcaIE6O1k",
       "https://medium.com/@aplaceofmind/ventura-is-not-macos-its-macios-1d00f12fa01e",
       "https://clip.owenyoung.com/2023/01/31/my-controversial-opinion-ventura-is-apples-worst-mac-os-yet/",
@@ -614,23 +621,6 @@
       "https://clip.owenyoung.com/2022/12/21/the-bride-snatchers-of-kyrgyzstan/",
       "https://www.nytimes.com/2022/12/11/opinion/what-twitter-can-learn-from-quakers.html",
       "https://clip.owenyoung.com/2022/12/20/opinion-the-great-delusion-behind-twitter/",
-      "https://itcommunity.stanford.edu/ehli",
-      "https://www.compileralchemy.com/books/sqlite-internals/",
-      "https://clip.owenyoung.com/2022/12/19/how-the-worlds-most-used-database-works-sq-litenei-bu-shi-jie-shang-zui-chang-yong-de-shu-ju-ku-shi-ru-he-gong-zuo-de/",
-      "https://hackaday.com/2022/12/16/foot-pedal-ups-vim-productivity-brings-ergonomic-benefits/",
-      "https://rohanrd.xyz/posts/a-different-approach-to-social-media/",
-      "https://www.wsj.com/articles/is-tiktok-a-national-security-risk-ccp-china-banning-data-collection-videos-addictive-influence-social-media-app-11670965059",
-      "https://clip.owenyoung.com/2022/12/19/opinion-is-tik-tok-a-national-security-risk/",
-      "https://www.vox.com/policy-and-politics/2022/12/15/23505370/twitter-files-elon-musk-taibbi-weiss-covid",
-      "https://clip.owenyoung.com/2022/12/19/why-the-twitter-files-actually-matter/",
-      "https://clip.owenyoung.com/2022/12/19/selfish-writing/",
-      "https://www.thecrimson.com/article/2004/2/9/hundreds-register-for-new-facebook-website/",
-      "https://clip.owenyoung.com/2022/12/19/hundreds-register-for-new-facebook-website/",
-      "https://clip.owenyoung.com/2022/12/19/a-different-approach-to-social-media/",
-      "https://austinhenley.com/blog/challengingprojects.html",
-      "https://clip.owenyoung.com/2022/12/19/challenging-projects-every-programmer-should-try/",
-      "https://www.nytimes.com/2022/12/17/opinion/iran-women-rape.html",
-      "https://clip.owenyoung.com/2022/12/19/opinion-iran-uses-rape-to-enforce-womens-modesty/",
       "https://edition.cnn.com/interactive/2022/11/middleeast/iran-protests-sexual-assault/",
       "https://news.ycombinator.com/item?id=34540085",
       "https://zh.wikipedia.org/wiki/%E6%9E%97%E6%98%AD",
@@ -654,11 +644,12 @@
       "https://twitter.com/OwenYoungZh",
       "https://github.com/theowenyoung",
       "https://hnnew.buzzing.cc/",
-      "https://www.buzzing.cc/",
-      "https://depth.buzzing.cc/",
-      "https://www.trackawesomelist.com/"
+      "https://depth.buzzing.cc/"
     ],
     "noopener": [
+      "https://www.json.org/json-en.html",
+      "https://www.buzzing.cc/",
+      "https://www.trackawesomelist.com/",
       "https://www.youtube.com/watch?app=desktop&v=ydKcaIE6O1k",
       "https://medium.com/@aplaceofmind/ventura-is-not-macos-its-macios-1d00f12fa01e",
       "https://clip.owenyoung.com/2023/01/31/my-controversial-opinion-ventura-is-apples-worst-mac-os-yet/",
@@ -724,23 +715,6 @@
       "https://clip.owenyoung.com/2022/12/21/the-bride-snatchers-of-kyrgyzstan/",
       "https://www.nytimes.com/2022/12/11/opinion/what-twitter-can-learn-from-quakers.html",
       "https://clip.owenyoung.com/2022/12/20/opinion-the-great-delusion-behind-twitter/",
-      "https://itcommunity.stanford.edu/ehli",
-      "https://www.compileralchemy.com/books/sqlite-internals/",
-      "https://clip.owenyoung.com/2022/12/19/how-the-worlds-most-used-database-works-sq-litenei-bu-shi-jie-shang-zui-chang-yong-de-shu-ju-ku-shi-ru-he-gong-zuo-de/",
-      "https://hackaday.com/2022/12/16/foot-pedal-ups-vim-productivity-brings-ergonomic-benefits/",
-      "https://rohanrd.xyz/posts/a-different-approach-to-social-media/",
-      "https://www.wsj.com/articles/is-tiktok-a-national-security-risk-ccp-china-banning-data-collection-videos-addictive-influence-social-media-app-11670965059",
-      "https://clip.owenyoung.com/2022/12/19/opinion-is-tik-tok-a-national-security-risk/",
-      "https://www.vox.com/policy-and-politics/2022/12/15/23505370/twitter-files-elon-musk-taibbi-weiss-covid",
-      "https://clip.owenyoung.com/2022/12/19/why-the-twitter-files-actually-matter/",
-      "https://clip.owenyoung.com/2022/12/19/selfish-writing/",
-      "https://www.thecrimson.com/article/2004/2/9/hundreds-register-for-new-facebook-website/",
-      "https://clip.owenyoung.com/2022/12/19/hundreds-register-for-new-facebook-website/",
-      "https://clip.owenyoung.com/2022/12/19/a-different-approach-to-social-media/",
-      "https://austinhenley.com/blog/challengingprojects.html",
-      "https://clip.owenyoung.com/2022/12/19/challenging-projects-every-programmer-should-try/",
-      "https://www.nytimes.com/2022/12/17/opinion/iran-women-rape.html",
-      "https://clip.owenyoung.com/2022/12/19/opinion-iran-uses-rape-to-enforce-womens-modesty/",
       "https://edition.cnn.com/interactive/2022/11/middleeast/iran-protests-sexual-assault/",
       "https://news.ycombinator.com/item?id=34540085",
       "https://zh.wikipedia.org/wiki/%E6%9E%97%E6%98%AD",
@@ -764,11 +738,12 @@
       "https://twitter.com/OwenYoungZh",
       "https://github.com/theowenyoung",
       "https://hnnew.buzzing.cc/",
-      "https://www.buzzing.cc/",
-      "https://depth.buzzing.cc/",
-      "https://www.trackawesomelist.com/"
+      "https://depth.buzzing.cc/"
     ],
     "noreferrer": [
+      "https://www.json.org/json-en.html",
+      "https://www.buzzing.cc/",
+      "https://www.trackawesomelist.com/",
       "https://www.youtube.com/watch?app=desktop&v=ydKcaIE6O1k",
       "https://medium.com/@aplaceofmind/ventura-is-not-macos-its-macios-1d00f12fa01e",
       "https://clip.owenyoung.com/2023/01/31/my-controversial-opinion-ventura-is-apples-worst-mac-os-yet/",
@@ -834,23 +809,6 @@
       "https://clip.owenyoung.com/2022/12/21/the-bride-snatchers-of-kyrgyzstan/",
       "https://www.nytimes.com/2022/12/11/opinion/what-twitter-can-learn-from-quakers.html",
       "https://clip.owenyoung.com/2022/12/20/opinion-the-great-delusion-behind-twitter/",
-      "https://itcommunity.stanford.edu/ehli",
-      "https://www.compileralchemy.com/books/sqlite-internals/",
-      "https://clip.owenyoung.com/2022/12/19/how-the-worlds-most-used-database-works-sq-litenei-bu-shi-jie-shang-zui-chang-yong-de-shu-ju-ku-shi-ru-he-gong-zuo-de/",
-      "https://hackaday.com/2022/12/16/foot-pedal-ups-vim-productivity-brings-ergonomic-benefits/",
-      "https://rohanrd.xyz/posts/a-different-approach-to-social-media/",
-      "https://www.wsj.com/articles/is-tiktok-a-national-security-risk-ccp-china-banning-data-collection-videos-addictive-influence-social-media-app-11670965059",
-      "https://clip.owenyoung.com/2022/12/19/opinion-is-tik-tok-a-national-security-risk/",
-      "https://www.vox.com/policy-and-politics/2022/12/15/23505370/twitter-files-elon-musk-taibbi-weiss-covid",
-      "https://clip.owenyoung.com/2022/12/19/why-the-twitter-files-actually-matter/",
-      "https://clip.owenyoung.com/2022/12/19/selfish-writing/",
-      "https://www.thecrimson.com/article/2004/2/9/hundreds-register-for-new-facebook-website/",
-      "https://clip.owenyoung.com/2022/12/19/hundreds-register-for-new-facebook-website/",
-      "https://clip.owenyoung.com/2022/12/19/a-different-approach-to-social-media/",
-      "https://austinhenley.com/blog/challengingprojects.html",
-      "https://clip.owenyoung.com/2022/12/19/challenging-projects-every-programmer-should-try/",
-      "https://www.nytimes.com/2022/12/17/opinion/iran-women-rape.html",
-      "https://clip.owenyoung.com/2022/12/19/opinion-iran-uses-rape-to-enforce-womens-modesty/",
       "https://edition.cnn.com/interactive/2022/11/middleeast/iran-protests-sexual-assault/",
       "https://news.ycombinator.com/item?id=34540085",
       "https://zh.wikipedia.org/wiki/%E6%9E%97%E6%98%AD",
@@ -874,15 +832,15 @@
       "https://twitter.com/OwenYoungZh",
       "https://github.com/theowenyoung",
       "https://hnnew.buzzing.cc/",
-      "https://www.buzzing.cc/",
-      "https://depth.buzzing.cc/",
-      "https://www.trackawesomelist.com/"
+      "https://depth.buzzing.cc/"
     ],
     "category": [
+      "https://www.owenyoung.com/categories/dev/",
       "https://www.owenyoung.com/categories/journal/",
       "https://www.owenyoung.com/categories/books/"
     ],
     "tag": [
+      "https://www.owenyoung.com/categories/dev/",
       "https://www.owenyoung.com/categories/journal/",
       "https://www.owenyoung.com/categories/books/"
     ]
@@ -993,6 +951,50 @@
       "rels": [
         "manifest"
       ]
+    },
+    "https://www.owenyoung.com/blog/jsonbin/": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "在 Cloudflare Workers 部署一个 JSON as a Storage 服务"
+    },
+    "https://www.json.org/json-en.html": {
+      "rels": [
+        "nofollow",
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "JSON"
+    },
+    "https://www.buzzing.cc/": {
+      "rels": [
+        "nofollow",
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "Buzzing"
+    },
+    "https://www.trackawesomelist.com/": {
+      "rels": [
+        "nofollow",
+        "noopener",
+        "noreferrer"
+      ],
+      "text": "Track Awesome List"
+    },
+    "https://www.owenyoung.com/blog/jsonbin/#continue-reading": {
+      "rels": [
+        "bookmark"
+      ],
+      "text": "\n       →  继续阅读需要: \n  \n    2\n  \n min\n      "
+    },
+    "https://www.owenyoung.com/categories/dev/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "title": "Dev",
+      "text": "\n          Dev\n        "
     },
     "https://www.owenyoung.com/blog/journals/2023-02-01/": {
       "rels": [
@@ -1596,148 +1598,6 @@
       ],
       "text": "双语机翻译文"
     },
-    "https://www.owenyoung.com/blog/journals/2022-12-19/": {
-      "rels": [
-        "bookmark"
-      ],
-      "text": "2022.12.19: 各种链接"
-    },
-    "https://itcommunity.stanford.edu/ehli": {
-      "rels": [
-        "nofollow",
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "斯坦福大学：消除有害语言倡议"
-    },
-    "https://www.compileralchemy.com/books/sqlite-internals/": {
-      "rels": [
-        "nofollow",
-        "noopener",
-        "noreferrer"
-      ],
-      "text": " SQLite 内部：世界上最常用的数据库是如何工作的"
-    },
-    "https://clip.owenyoung.com/2022/12/19/how-the-worlds-most-used-database-works-sq-litenei-bu-shi-jie-shang-zui-chang-yong-de-shu-ju-ku-shi-ru-he-gong-zuo-de/": {
-      "rels": [
-        "nofollow",
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "双语机翻译文"
-    },
-    "https://hackaday.com/2022/12/16/foot-pedal-ups-vim-productivity-brings-ergonomic-benefits/": {
-      "rels": [
-        "nofollow",
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "用脚踏板作为 Vim 的正常模式和插入模式的触发器"
-    },
-    "https://rohanrd.xyz/posts/a-different-approach-to-social-media/": {
-      "rels": [
-        "nofollow",
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "不使用 Feed，社交媒体的另一种方式"
-    },
-    "https://www.wsj.com/articles/is-tiktok-a-national-security-risk-ccp-china-banning-data-collection-videos-addictive-influence-social-media-app-11670965059": {
-      "rels": [
-        "nofollow",
-        "noopener",
-        "noreferrer"
-      ],
-      "text": " TikTok 是国家安全风险吗？–《华尔街日报》"
-    },
-    "https://clip.owenyoung.com/2022/12/19/opinion-is-tik-tok-a-national-security-risk/": {
-      "rels": [
-        "nofollow",
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "双语机翻译文"
-    },
-    "https://www.vox.com/policy-and-politics/2022/12/15/23505370/twitter-files-elon-musk-taibbi-weiss-covid": {
-      "rels": [
-        "nofollow",
-        "noopener",
-        "noreferrer"
-      ],
-      "text": " 为什么埃隆·马斯克发布的推特文件很重要-VOX"
-    },
-    "https://clip.owenyoung.com/2022/12/19/why-the-twitter-files-actually-matter/": {
-      "rels": [
-        "nofollow",
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "双语机翻译文"
-    },
-    "https://clip.owenyoung.com/2022/12/19/selfish-writing/": {
-      "rels": [
-        "nofollow",
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "双语机翻译文"
-    },
-    "https://www.thecrimson.com/article/2004/2/9/hundreds-register-for-new-facebook-website/": {
-      "rels": [
-        "nofollow",
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "数百人注册 Facebook 新网站|新闻|哈佛大学深红报 (2004 年)"
-    },
-    "https://clip.owenyoung.com/2022/12/19/hundreds-register-for-new-facebook-website/": {
-      "rels": [
-        "nofollow",
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "双语机翻译文"
-    },
-    "https://clip.owenyoung.com/2022/12/19/a-different-approach-to-social-media/": {
-      "rels": [
-        "nofollow",
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "双语机翻译文"
-    },
-    "https://austinhenley.com/blog/challengingprojects.html": {
-      "rels": [
-        "nofollow",
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "每个程序员都应该尝试的具有挑战性的项目–奥斯汀·Z·亨利"
-    },
-    "https://clip.owenyoung.com/2022/12/19/challenging-projects-every-programmer-should-try/": {
-      "rels": [
-        "nofollow",
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "双语机翻译文"
-    },
-    "https://www.nytimes.com/2022/12/17/opinion/iran-women-rape.html": {
-      "rels": [
-        "nofollow",
-        "noopener",
-        "noreferrer"
-      ],
-      "text": " 观点|伊朗用强奸来强制女性谦逊–《纽约时报》"
-    },
-    "https://clip.owenyoung.com/2022/12/19/opinion-iran-uses-rape-to-enforce-womens-modesty/": {
-      "rels": [
-        "nofollow",
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "双语机翻译文"
-    },
     "https://edition.cnn.com/interactive/2022/11/middleeast/iran-protests-sexual-assault/": {
       "rels": [
         "nofollow",
@@ -1912,14 +1772,6 @@
       ],
       "text": "HN 最新"
     },
-    "https://www.buzzing.cc/": {
-      "rels": [
-        "nofollow",
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "Buzzing"
-    },
     "https://depth.buzzing.cc/": {
       "rels": [
         "nofollow",
@@ -1927,14 +1779,6 @@
         "noreferrer"
       ],
       "text": "精神食粮"
-    },
-    "https://www.trackawesomelist.com/": {
-      "rels": [
-        "nofollow",
-        "noopener",
-        "noreferrer"
-      ],
-      "text": "Track Awesome List"
     }
   }
 }
