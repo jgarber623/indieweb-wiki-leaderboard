@@ -1,33 +1,139 @@
 {
   "items": [],
   "rels": {
+    "icon": [
+      "https://micro.blog/jeffperry/favicon.png"
+    ],
+    "shortcut": [
+      "https://micro.blog/jeffperry/favicon.png"
+    ],
+    "stylesheet": [
+      "https://jeffperry.blog/css/style.css?1678396982",
+      "https://jeffperry.blog/custom.css?1678396982"
+    ],
     "alternate": [
-      "https://jeffperry.blog/rss.xml",
-      "https://jeffperry.blog/atom.xml",
+      "https://jeffperry.blog/feed.xml",
+      "https://jeffperry.blog/podcast.xml",
       "https://jeffperry.blog/feed.json"
+    ],
+    "EditURI": [
+      "https://jeffperry.blog/rsd.xml"
+    ],
+    "me": [
+      "https://twitter.com/iamjeffperry",
+      "https://micro.blog/jeffperry"
+    ],
+    "authorization_endpoint": [
+      "https://micro.blog/indieauth/auth"
+    ],
+    "token_endpoint": [
+      "https://micro.blog/indieauth/token"
+    ],
+    "micropub": [
+      "https://micro.blog/micropub"
+    ],
+    "microsub": [
+      "https://micro.blog/microsub"
+    ],
+    "webmention": [
+      "https://micro.blog/webmention"
+    ],
+    "subscribe": [
+      "https://micro.blog/users/follow"
+    ],
+    "canonical": [
+      "https://jeffperry.blog/"
     ]
   },
   "rel-urls": {
-    "https://jeffperry.blog/rss.xml": {
+    "https://micro.blog/jeffperry/favicon.png": {
+      "rels": [
+        "icon",
+        "shortcut"
+      ],
+      "type": "image/x-icon"
+    },
+    "https://jeffperry.blog/css/style.css?1678396982": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://jeffperry.blog/custom.css?1678396982": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://jeffperry.blog/feed.xml": {
       "rels": [
         "alternate"
       ],
-      "title": "RSS feed",
+      "title": "Jeff Perry",
       "type": "application/rss+xml"
     },
-    "https://jeffperry.blog/atom.xml": {
+    "https://jeffperry.blog/podcast.xml": {
       "rels": [
         "alternate"
       ],
-      "title": "Atom feed",
-      "type": "application/atom+xml"
+      "title": "Podcast",
+      "type": "application/rss+xml"
     },
     "https://jeffperry.blog/feed.json": {
       "rels": [
         "alternate"
       ],
-      "title": "JSON feed",
+      "title": "Jeff Perry",
       "type": "application/json"
+    },
+    "https://jeffperry.blog/rsd.xml": {
+      "rels": [
+        "EditURI"
+      ],
+      "type": "application/rsd+xml"
+    },
+    "https://twitter.com/iamjeffperry": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://micro.blog/jeffperry": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://micro.blog/indieauth/auth": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://micro.blog/indieauth/token": {
+      "rels": [
+        "token_endpoint"
+      ]
+    },
+    "https://micro.blog/micropub": {
+      "rels": [
+        "micropub"
+      ]
+    },
+    "https://micro.blog/microsub": {
+      "rels": [
+        "microsub"
+      ]
+    },
+    "https://micro.blog/webmention": {
+      "rels": [
+        "webmention"
+      ]
+    },
+    "https://micro.blog/users/follow": {
+      "rels": [
+        "subscribe"
+      ]
+    },
+    "https://jeffperry.blog/": {
+      "rels": [
+        "canonical"
+      ]
     }
   }
 }

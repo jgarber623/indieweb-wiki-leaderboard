@@ -1,5 +1,112 @@
 {
   "items": [],
-  "rels": {},
-  "rel-urls": {}
+  "rels": {
+    "dns-prefetch": [
+      "https://s.w.org/"
+    ],
+    "alternate": [
+      "https://edjw.co.uk/?feed=rss2",
+      "https://edjw.co.uk/?feed=comments-rss2"
+    ],
+    "stylesheet": [
+      "https://edjw.co.uk/wp-includes/blocks/navigation/style.min.css?ver=6.0.2",
+      "https://edjw.co.uk/wp-content/themes/twentytwentytwo/style.css?ver=1.2",
+      "https://edjw.co.uk/wp-content/mu-plugins/porkbun-free.css?ver=6.0.2"
+    ],
+    "https://api.w.org/": [
+      "https://edjw.co.uk/index.php?rest_route=/"
+    ],
+    "EditURI": [
+      "https://edjw.co.uk/xmlrpc.php?rsd"
+    ],
+    "wlwmanifest": [
+      "https://edjw.co.uk/wp-includes/wlwmanifest.xml"
+    ],
+    "icon": [
+      "https://porkbun-media.s3-us-west-2.amazonaws.com/misc/android-icon-192x192.png"
+    ],
+    "apple-touch-icon": [
+      "https://porkbun-media.s3-us-west-2.amazonaws.com/misc/android-icon-192x192.png"
+    ],
+    "home": [
+      "https://edjw.co.uk/"
+    ],
+    "nofollow": [
+      "https://wordpress.org/"
+    ]
+  },
+  "rel-urls": {
+    "https://s.w.org/": {
+      "rels": [
+        "dns-prefetch"
+      ]
+    },
+    "https://edjw.co.uk/?feed=rss2": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "edjw.co.uk » Feed",
+      "type": "application/rss+xml"
+    },
+    "https://edjw.co.uk/?feed=comments-rss2": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "edjw.co.uk » Comments Feed",
+      "type": "application/rss+xml"
+    },
+    "https://edjw.co.uk/wp-includes/blocks/navigation/style.min.css?ver=6.0.2": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://edjw.co.uk/wp-content/themes/twentytwentytwo/style.css?ver=1.2": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://edjw.co.uk/wp-content/mu-plugins/porkbun-free.css?ver=6.0.2": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://edjw.co.uk/index.php?rest_route=/": {
+      "rels": [
+        "https://api.w.org/"
+      ]
+    },
+    "https://edjw.co.uk/xmlrpc.php?rsd": {
+      "rels": [
+        "EditURI"
+      ],
+      "title": "RSD",
+      "type": "application/rsd+xml"
+    },
+    "https://edjw.co.uk/wp-includes/wlwmanifest.xml": {
+      "rels": [
+        "wlwmanifest"
+      ],
+      "type": "application/wlwmanifest+xml"
+    },
+    "https://porkbun-media.s3-us-west-2.amazonaws.com/misc/android-icon-192x192.png": {
+      "rels": [
+        "icon"
+      ]
+    },
+    "https://edjw.co.uk/": {
+      "rels": [
+        "home"
+      ],
+      "text": "edjw.co.uk"
+    },
+    "https://wordpress.org/": {
+      "rels": [
+        "nofollow"
+      ],
+      "text": "WordPress"
+    }
+  }
 }

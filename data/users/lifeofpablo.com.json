@@ -1,0 +1,66 @@
+{
+  "items": [],
+  "rels": {
+    "me": [
+      "https://social.lifeofpablo.com/@pablo",
+      "https://social.lifeofpablo.com/"
+    ],
+    "authorization_endpoint": [
+      "https://lifeofpablo.com/auth/"
+    ],
+    "sitemap": [
+      "https://lifeofpablo.com/sitemap/page:sitemap.xml"
+    ],
+    "stylesheet": [
+      "https://lifeofpablo.com/media/css/brands.css",
+      "https://lifeofpablo.com/media/extensions/bundle-53d97b2610.min.css"
+    ],
+    "noopener": [
+      "https://social.lifeofpablo.com/",
+      "https://lifeofpablo.com/linkinbio"
+    ]
+  },
+  "rel-urls": {
+    "https://social.lifeofpablo.com/@pablo": {
+      "rels": [
+        "me"
+      ]
+    },
+    "https://lifeofpablo.com/auth/": {
+      "rels": [
+        "authorization_endpoint"
+      ]
+    },
+    "https://lifeofpablo.com/sitemap/page:sitemap.xml": {
+      "rels": [
+        "sitemap"
+      ],
+      "type": "text/xml"
+    },
+    "https://lifeofpablo.com/media/css/brands.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://lifeofpablo.com/media/extensions/bundle-53d97b2610.min.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "type": "text/css"
+    },
+    "https://social.lifeofpablo.com/": {
+      "rels": [
+        "me",
+        "noopener"
+      ],
+      "text": "\n     Mastodon"
+    },
+    "https://lifeofpablo.com/linkinbio": {
+      "rels": [
+        "noopener"
+      ],
+      "text": "\n             Other Links"
+    }
+  }
+}
