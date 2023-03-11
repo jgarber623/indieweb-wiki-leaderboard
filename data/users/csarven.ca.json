@@ -1,5 +1,115 @@
 {
   "items": [],
-  "rels": {},
-  "rel-urls": {}
+  "rels": {
+    "stylesheet": [
+      "https://csarven.ca/media/css/index.css",
+      "https://dokie.li/media/css/basic.css",
+      "https://dokie.li/media/css/dokieli.css"
+    ],
+    "icon": [
+      "https://csarven.ca/media/images/csarven-avatar.png"
+    ],
+    "alternate": [
+      "https://csarven.ca/atom",
+      "https://csarven.ca/rss",
+      "https://dokie.li/media/css/basic.css"
+    ],
+    "rdfs:seeAlso": [
+      "https://csarven.ca/about",
+      "https://csarven.ca/cv",
+      "https://csarven.ca/archives/articles"
+    ],
+    "schema:license": [
+      "https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "http://www.w3.org/2000/10/swap/pim/doc#persistencePolicy": [
+      "https://csarven.ca/about#persistence-policy"
+    ],
+    "wot:pubkeyAddress": [
+      "https://csarven.ca/key/A74187CE3D508E3A.asc"
+    ]
+  },
+  "rel-urls": {
+    "https://csarven.ca/media/css/index.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all",
+      "title": "csarven"
+    },
+    "https://csarven.ca/media/images/csarven-avatar.png": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/png"
+    },
+    "https://csarven.ca/atom": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "Atom 1.0 feed",
+      "type": "application/atom+xml"
+    },
+    "https://csarven.ca/rss": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "RSS 2.0 feed",
+      "type": "application/rss+xml"
+    },
+    "https://dokie.li/media/css/basic.css": {
+      "rels": [
+        "alternate",
+        "stylesheet"
+      ],
+      "media": "all",
+      "title": "Basic"
+    },
+    "https://dokie.li/media/css/dokieli.css": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://csarven.ca/about": {
+      "rels": [
+        "rdfs:seeAlso"
+      ],
+      "title": "About Sarven Capadisli and csarven.ca",
+      "text": "About"
+    },
+    "https://csarven.ca/cv": {
+      "rels": [
+        "rdfs:seeAlso"
+      ],
+      "title": "Sarven Capadisli’s Curriculum Vitae",
+      "text": "CV"
+    },
+    "https://csarven.ca/archives/articles": {
+      "rels": [
+        "rdfs:seeAlso"
+      ],
+      "title": "Sarven’s articles on this site",
+      "text": "Articles"
+    },
+    "https://creativecommons.org/licenses/by/4.0/": {
+      "rels": [
+        "schema:license"
+      ],
+      "text": "Creative Commons Attribution 4.0 International"
+    },
+    "https://csarven.ca/about#persistence-policy": {
+      "rels": [
+        "http://www.w3.org/2000/10/swap/pim/doc#persistencePolicy"
+      ],
+      "text": "URI persistence policy"
+    },
+    "https://csarven.ca/key/A74187CE3D508E3A.asc": {
+      "rels": [
+        "wot:pubkeyAddress"
+      ],
+      "title": "PGP public key",
+      "text": "0ADFF0BACC9F0A16FA782D94A74187CE3D508E3A"
+    }
+  }
 }

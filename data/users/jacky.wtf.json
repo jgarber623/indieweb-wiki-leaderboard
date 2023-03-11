@@ -130,15 +130,17 @@
               {
                 "type": [
                   "h-cite",
-                  "h-entry",
-                  "h-koype-stubbed-from-head"
+                  "h-entry"
                 ],
                 "properties": {
                   "name": [
-                    "Notifications · Semaphore"
+                    "OAuth Support in Bluesky and AT Protocol"
                   ],
-                  "summary": [
-                    "An alternative web client for Mastodon, focused on speed and simplicity."
+                  "content": [
+                    {
+                      "html": "<p><a href=\"https://blueskyweb.xyz/\">Bluesky</a>, a new social media platform and <a href=\"https://atproto.com/\">AT Protocol</a>, is unsurprisingly running up against the same challenges and limitations that Flickr, Twitter and many other social media platforms faced in the 2000s: passwords!</p>\n<br><br><p><img src=\"https://aaronparecki.com/2023/03/09/5/yelp-gmail-password.png\" width=\"100%\" alt=\"yelp asks you to enter your gmail password\"></p>\n<br><br><p>You wouldn't give your Gmail password to Yelp, right? Why should you give your Bluesky password to random apps either!</p>\n<br><br><p>The current official Bluesky iOS application unsurprisingly works by logging in with a username and password. It's the easiest form of authentication to implement, even if it is the least secure. Since Bluesky and the AT Protocol are actually intending on creating an entire ecosystem of servers and clients, this is inevitably going to lead to a complete security disaster. In fact, we're already seeing people spin up prototype Bluesky clients, sharing links around to them, which result in users being taught that there's nothing wrong with handing out their account passwords to random website and applications that ask for them. Clearly there has to be a solution, right?</p>\n<br><br><p>The good news is there has been a solution that has existed for about 15 years -- OAuth! This is exactly the problem that OAuth was created to solve. How do we let third party applications access data in a web service without sharing the password with that application.</p>\n<br><br><p>What's novel about Bluesky (and other similarly decentralized and open services like WordPress, Mastodon, Micro.blog, and others), is that there is an expectation that any user should be able to bring any client to any server, without prior relationships between client developers and servers. This is in contrast to consumer services like Twitter and Google, where they limit which developers can access their API by going through a developer registration process. I wrote more about this problem in a previous blog post, <a href=\"https://aaronparecki.com/2018/07/07/7/oauth-for-the-open-web\">OAuth for the Open Web</a>.</p>\n<br><br><p>There are two separate problems that Bluesky can solve with <a href=\"https://oauth.net/\">OAuth</a>, especially a flavor of OAuth like <a href=\"https://indieauth.net/\">IndieAuth</a>.</p>\n<br><br><ol>\n<br><li>How apps can access data in the user's Personal Data Server (PDS)</li>\n<br><li>How the user logs in to their PDS</li>\n<br>\n</ol>\n<br><br><h2>How apps can access the user's data</h2>\n<br><br><p>This is the problem OAuth solved when it was originally created, and the problem ATProto currently has. It's obviously very unsafe to have users give their PDS password to every third party application that's created, especially since the ecosystem is totally open so there's no way for a user to know how legitimate a particular application is. OAuth solves this by having the application redirect to the OAuth server, the user logs in there, and then the application gets only an access token.</p>\n<br><br><p>ATProto already uses <a href=\"https://atproto.com/lexicons/com-atproto-session\">access tokens and refresh tokens</a>, (although they strangely call them <code>accessJwt</code> and <code>refreshJwt</code>) so this is a small leap to make. OAuth support in mobile apps has gotten a lot better than it was 10 years ago, and there is first class support for this pattern on iOS and Android to make the experience work better than the much older plain redirect model used to work a decade ago.</p>\n<br><br><p>Here is what the rough experience the user would see when logging in to an app:</p>\n<br><br><p><img width=\"100%\" alt=\"app login flow\" src=\"https://aaronparecki.com/2023/03/09/5/224077657-13d3f1fc-61a8-4eb6-a1e1-c3a5bd7a7b69.png\"></p>\n<br><br><ol>\n<br><li>The user launches the app and taps the \"Sign In\" button</li>\n<br><li>The user enters their handle or server name (e.g. <code>jay.bsky.social</code>, <code>bsky.social</code>, or <code>aaronpk.com</code>)</li>\n<br><li>The app discovers the user's OAuth server, and launches an in-app browser</li>\n<br><li>The user lands on their own PDS server, and logs in there (however they log in is not relevant to the app, it could be with a password, via email magic link, a passkey, or even delegated login to another provider)</li>\n<br><li>The user is presented with a dialog asking if they want to grant access to this app (this step is optional, but it's up to the OAuth server whether to do this and what it looks like)</li>\n<br><li>The application receives the authorization code and exchanges it at the PDS for an access token and refresh token</li>\n<br>\n</ol>\n<br><br><p><br></p>\n<br><br><p>Most of this is defined in the core OAuth specifications. The part that's missing from OAuth is:</p>\n<br><br><ul>\n<br><li>discovering an OAuth server given a server name</li>\n<br><li>and how clients should be identified when there is no client preregistration step.</li>\n<br>\n</ul>\n<br><br><p>That's where <a href=\"https://indieauth.net/\">IndieAuth</a> fills this in. With IndieAuth, the user's authorization server is discovered by fetching the web page at their URL. IndieAuth avoids the need for client registration by also using URLs as OAuth <code>client_id</code>s.</p>\n<br><br><p>This does mean IndieAuth assumes there is an HTML document hosted at the URL the user enters, which works well for web based solutions, and might even work well for Bluesky given the number of people who have already rushed to set their Bluesky handle to the same URL as their personal website. But, long term it might be an additional burden for people who want to bring their own domain to Bluesky if they aren't also hosting a website there.</p>\n<br><br><p>There's a new discussion happening in the OAuth working group to enable this kind of authorization server discovery from a URL which could rely on DNS or a well-known endpoint. This is in-progress work at the IETF, and I would love to have ATProto/Bluesky involved in those discussions!</p>\n<br><br><h2>How the user logs in to their PDS</h2>\n<br><br><p>Currently, the AT Protocol specifies that login happens with a username and password to get the tokens the app needs. Once clients start using OAuth to log in to apps, this method can be dropped from the specification, which interestingly opens up a lot of new possibilities.</p>\n<br><br><p>Passwords are inherently insecure, and there has been a multi-year effort to improve the security of every online service by adding two-factor authentication and even moving away from passwords entirely by using <a href=\"https://oauth.net/passkeys/\">passkeys</a> instead.</p>\n<br><br><p>Imagine today, Bluesky wants to add multifactor authenticaiton to their current service. There's no good way to add this to the existing API, since the Bluesky client will send the password to the API and expect an access token immediately. If Bluesky switches to an OAuth flow described above, then the app never sees the password, which means the Bluesky server can start doing more fun things with multifactor auth as well as even passwordless flows!</p>\n<br><br><h3>Logging in with a passkey</h3>\n<br><br><p>Here is the same sequence of steps but this time swapping out the password step for a passkey.</p>\n<br><br><p><img width=\"100%\" alt=\"app login flow with passkey\" src=\"https://aaronparecki.com/2023/03/09/5/passkey-flow.png\"></p>\n<br><br><ol>\n<br><li>The user launches the app and taps the \"Sign In\" button</li>\n<br><li>The user enters their handle or server name (e.g. <code>jay.bsky.social</code>, <code>bsky.social</code>, or <code>aaronpk.com</code>)</li>\n<br><li>The app discovers the user's OAuth server, and launches an in-app browser</li>\n<br><li>The user lands on their own PDS server, and logs in there with a passkey</li>\n<br><li>The user is presented with a dialog asking if they want to grant access to this app (this step is optional, but it's up to the OAuth server whether to do this and what it looks like)</li>\n<br><li>The application receives the authorization code and exchanges it at the PDS for an access token and refresh token</li>\n<br>\n</ol>\n<br><br><p>This is already a great improvement, and the nice thing is app developers don't need to worry about implementing passkeys, they just need to implement OAuth! The user's PDS implements passkeys and abstracts that away by providing the OAuth API instead.</p>\n<br><br><h3>Logging in with IndieAuth</h3>\n<br><br><p>Another variation of this would be if the Bluesky service itself supported delegating logins instead of managing any passwords or passkeys at all.</p>\n<br><br><p>Since Bluesky already supports users setting their handle to their own personal website, it's a short leap to imaging allowing users to authenticate themselves to Bluesky using their website as well!</p>\n<br><br><p>That is the exact problem IndieAuth already solves, with quite a few implementations in the wild of services that are IndieAuth providers, including <a href=\"https://micro.blog/\">Micro.blog</a>, a <a href=\"https://wordpress.org/plugins/indieauth/\">WordPress plugin</a>, a <a href=\"https://drupal.org/project/indieweb\">Drupal module</a>, and many options for <a href=\"https://indieweb.org/IndieAuth#Server_Implementations\">self-hosting</a> and endpoint.</p>\n<br><br><p>Let's look at what the sequence would look like for a user to use the bsky.social PDS with their custom domain handle mapped to it.</p>\n<br><br><p><img width=\"100%\" alt=\"app login flow with indieauth\" src=\"https://aaronparecki.com/2023/03/09/5/bsky-sso.png\"></p>\n<br><br><ol>\n<br><li>The user launches the app and taps the \"Sign In\" button</li>\n<br><li>The user enters their server name (e.g. <code>bsky.social</code>)</li>\n<br><li>The app discovers the OAuth server and launches an in-app browser</li>\n<br><li>The user enters their handle, and bsky.social determines whether to prompt for a password or do an IndieAuth flow to their server</li>\n<br><li>The user is redirected to their own website (IndieAuth server) and authenticates there, and is then redirected back to bsky.social</li>\n<br><li>The user is presented by bsky.social with a dialog asking if they want to grant access to this app</li>\n<br><li>The application receives the authorization code and exchanges it at the PDS for an access token and refresh token</li>\n<br>\n</ol>\n<br><br><p>This is very similar to the previous flows, the difference being that in this version, bsky.social is the OAuth server as far as the app is concerned. The app never sees the user's actual IndieAuth server at all.</p>\n<br><br><h3>Further Work</h3>\n<br><br><p>These are some ideas to kick off the discussion of improving the security of Bluesky and the AT Protocol. Let me know if you have any thoughts on this! There is of course a lot more detail to discuss about the specifics, so if you're interested in diving in, a good place to start is reading up on <a href=\"https://oauth.net/\">OAuth</a> as well as the <a href=\"https://indieauth.net/\">IndieAuth</a> extension to OAuth which has solved some of the problems that exist in the space.</p>\n<br><br><p>You can reply to this post by sending a <a href=\"https://webmention.net/\">Webmention</a> from your own website, or you can get in touch with me via <a href=\"https://aaronparecki.com/@aaronpk\">Mastodon</a> or, of course, find me on Bluesky as <code>@aaronpk.com</code>!</p>",
+                      "value": "Bluesky, a new social media platform and AT Protocol, is unsurprisingly running up against the same challenges and limitations that Flickr, Twitter and many other social media platforms faced in the 2000s: passwords! yelp asks you to enter your gmail password You wouldn't give your Gmail password to Yelp, right? Why should you give your Bluesky password to random apps either!The current official Bluesky iOS application unsurprisingly works by logging in with a username and password. It's the easiest form of authentication to implement, even if it is the least secure. Since Bluesky and the AT Protocol are actually intending on creating an entire ecosystem of servers and clients, this is inevitably going to lead to a complete security disaster. In fact, we're already seeing people spin up prototype Bluesky clients, sharing links around to them, which result in users being taught that there's nothing wrong with handing out their account passwords to random website and applications that ask for them. Clearly there has to be a solution, right?The good news is there has been a solution that has existed for about 15 years -- OAuth! This is exactly the problem that OAuth was created to solve. How do we let third party applications access data in a web service without sharing the password with that application.What's novel about Bluesky (and other similarly decentralized and open services like WordPress, Mastodon, Micro.blog, and others), is that there is an expectation that any user should be able to bring any client to any server, without prior relationships between client developers and servers. This is in contrast to consumer services like Twitter and Google, where they limit which developers can access their API by going through a developer registration process. I wrote more about this problem in a previous blog post, OAuth for the Open Web.There are two separate problems that Bluesky can solve with OAuth, especially a flavor of OAuth like IndieAuth.How apps can access data in the user's Personal Data Server (PDS)How the user logs in to their PDSHow apps can access the user's dataThis is the problem OAuth solved when it was originally created, and the problem ATProto currently has. It's obviously very unsafe to have users give their PDS password to every third party application that's created, especially since the ecosystem is totally open so there's no way for a user to know how legitimate a particular application is. OAuth solves this by having the application redirect to the OAuth server, the user logs in there, and then the application gets only an access token.ATProto already uses access tokens and refresh tokens, (although they strangely call them accessJwt and refreshJwt) so this is a small leap to make. OAuth support in mobile apps has gotten a lot better than it was 10 years ago, and there is first class support for this pattern on iOS and Android to make the experience work better than the much older plain redirect model used to work a decade ago.Here is what the rough experience the user would see when logging in to an app: app login flow The user launches the app and taps the \"Sign In\" buttonThe user enters their handle or server name (e.g. jay.bsky.social, bsky.social, or aaronpk.com)The app discovers the user's OAuth server, and launches an in-app browserThe user lands on their own PDS server, and logs in there (however they log in is not relevant to the app, it could be with a password, via email magic link, a passkey, or even delegated login to another provider)The user is presented with a dialog asking if they want to grant access to this app (this step is optional, but it's up to the OAuth server whether to do this and what it looks like)The application receives the authorization code and exchanges it at the PDS for an access token and refresh tokenMost of this is defined in the core OAuth specifications. The part that's missing from OAuth is:discovering an OAuth server given a server nameand how clients should be identified when there is no client preregistration step.That's where IndieAuth fills this in. With IndieAuth, the user's authorization server is discovered by fetching the web page at their URL. IndieAuth avoids the need for client registration by also using URLs as OAuth client_ids.This does mean IndieAuth assumes there is an HTML document hosted at the URL the user enters, which works well for web based solutions, and might even work well for Bluesky given the number of people who have already rushed to set their Bluesky handle to the same URL as their personal website. But, long term it might be an additional burden for people who want to bring their own domain to Bluesky if they aren't also hosting a website there.There's a new discussion happening in the OAuth working group to enable this kind of authorization server discovery from a URL which could rely on DNS or a well-known endpoint. This is in-progress work at the IETF, and I would love to have ATProto/Bluesky involved in those discussions!How the user logs in to their PDSCurrently, the AT Protocol specifies that login happens with a username and password to get the tokens the app needs. Once clients start using OAuth to log in to apps, this method can be dropped from the specification, which interestingly opens up a lot of new possibilities.Passwords are inherently insecure, and there has been a multi-year effort to improve the security of every online service by adding two-factor authentication and even moving away from passwords entirely by using passkeys instead.Imagine today, Bluesky wants to add multifactor authenticaiton to their current service. There's no good way to add this to the existing API, since the Bluesky client will send the password to the API and expect an access token immediately. If Bluesky switches to an OAuth flow described above, then the app never sees the password, which means the Bluesky server can start doing more fun things with multifactor auth as well as even passwordless flows!Logging in with a passkeyHere is the same sequence of steps but this time swapping out the password step for a passkey. app login flow with passkey The user launches the app and taps the \"Sign In\" buttonThe user enters their handle or server name (e.g. jay.bsky.social, bsky.social, or aaronpk.com)The app discovers the user's OAuth server, and launches an in-app browserThe user lands on their own PDS server, and logs in there with a passkeyThe user is presented with a dialog asking if they want to grant access to this app (this step is optional, but it's up to the OAuth server whether to do this and what it looks like)The application receives the authorization code and exchanges it at the PDS for an access token and refresh tokenThis is already a great improvement, and the nice thing is app developers don't need to worry about implementing passkeys, they just need to implement OAuth! The user's PDS implements passkeys and abstracts that away by providing the OAuth API instead.Logging in with IndieAuthAnother variation of this would be if the Bluesky service itself supported delegating logins instead of managing any passwords or passkeys at all.Since Bluesky already supports users setting their handle to their own personal website, it's a short leap to imaging allowing users to authenticate themselves to Bluesky using their website as well!That is the exact problem IndieAuth already solves, with quite a few implementations in the wild of services that are IndieAuth providers, including Micro.blog, a WordPress plugin, a Drupal module, and many options for self-hosting and endpoint.Let's look at what the sequence would look like for a user to use the bsky.social PDS with their custom domain handle mapped to it. app login flow with indieauth The user launches the app and taps the \"Sign In\" buttonThe user enters their server name (e.g. bsky.social)The app discovers the OAuth server and launches an in-app browserThe user enters their handle, and bsky.social determines whether to prompt for a password or do an IndieAuth flow to their serverThe user is redirected to their own website (IndieAuth server) and authenticates there, and is then redirected back to bsky.socialThe user is presented by bsky.social with a dialog asking if they want to grant access to this appThe application receives the authorization code and exchanges it at the PDS for an access token and refresh tokenThis is very similar to the previous flows, the difference being that in this version, bsky.social is the OAuth server as far as the app is concerned. The app never sees the user's actual IndieAuth server at all.Further WorkThese are some ideas to kick off the discussion of improving the security of Bluesky and the AT Protocol. Let me know if you have any thoughts on this! There is of course a lot more detail to discuss about the specifics, so if you're interested in diving in, a good place to start is reading up on OAuth as well as the IndieAuth extension to OAuth which has solved some of the problems that exist in the space.You can reply to this post by sending a Webmention from your own website, or you can get in touch with me via Mastodon or, of course, find me on Bluesky as @aaronpk.com!"
+                    }
                   ],
                   "author": [
                     {
@@ -146,56 +148,31 @@
                         "h-card"
                       ],
                       "properties": {
+                        "photo": [
+                          {
+                            "value": "https://aaronparecki.com/images/profile.jpg",
+                            "alt": ""
+                          }
+                        ],
                         "name": [
-                          "semaphore.social"
+                          "Aaron Parecki"
                         ]
                       },
-                      "value": "semaphore.social"
+                      "value": "https://aaronparecki.com/"
                     }
                   ],
                   "url": [
-                    "https://semaphore.social/notifications"
+                    "https://aaronparecki.com/2023/03/09/5/bluesky-and-oauth"
                   ]
                 },
-                "value": "https://semaphore.social/notifications"
+                "value": "https://aaronparecki.com/2023/03/09/5/bluesky-and-oauth"
               }
             ],
             "url": [
-              "https://jacky.wtf/2023/2/YBHD"
+              "https://jacky.wtf/2023/3/lkVK"
             ],
             "published": [
-              "2023-02-21T14:09:31Z"
-            ]
-          }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "like-of": [
-              {
-                "type": [
-                  "h-cite",
-                  "h-entry",
-                  "h-koype-stubbed-from-twitter-card"
-                ],
-                "properties": {
-                  "name": [
-                    "What happens when it's all streamlined?"
-                  ],
-                  "url": [
-                    "https://buttondown.email/j2kun/archive/what-happens-when-its-all-streamlined/"
-                  ]
-                },
-                "value": "https://buttondown.email/j2kun/archive/what-happens-when-its-all-streamlined/"
-              }
-            ],
-            "url": [
-              "https://jacky.wtf/2023/2/a42t"
-            ],
-            "published": [
-              "2023-02-21T01:25:34Z"
+              "2023-03-10T19:34:40Z"
             ]
           }
         },
@@ -213,10 +190,10 @@
                 ],
                 "properties": {
                   "name": [
-                    "Ben from Ozark"
+                    "One in, two out"
                   ],
                   "summary": [
-                    "An ethereal beat layered with Tom Pelphrey’s brilliant monologue from Ozark Season 3."
+                    "As I posted earlier, I’m half letting Twitter back in. I have a policy though: a new potentially addictive thing means another has to go. Because Twitter is even more dangerous, I’ve de…"
                   ],
                   "author": [
                     {
@@ -225,24 +202,71 @@
                       ],
                       "properties": {
                         "name": [
-                          "kofi.sexy"
+                          "Andy Bell"
                         ]
                       },
-                      "value": "kofi.sexy"
+                      "value": "Andy Bell"
                     }
                   ],
                   "url": [
-                    "https://kofi.sexy/music/ben-from-ozark"
+                    "https://andy-bell.co.uk/one-in-two-out/"
                   ]
                 },
-                "value": "https://kofi.sexy/music/ben-from-ozark"
+                "value": "https://andy-bell.co.uk/one-in-two-out/"
               }
             ],
             "url": [
-              "https://jacky.wtf/2023/2/vkUb"
+              "https://jacky.wtf/2023/3/PHWG"
             ],
             "published": [
-              "2023-02-17T22:12:03Z"
+              "2023-03-06T17:00:59Z"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "like-of": [
+              {
+                "type": [
+                  "h-cite",
+                  "h-entry",
+                  "h-koype-stubbed-from-ogp"
+                ],
+                "properties": {
+                  "name": [
+                    "How I’m dealing with Twitter in a hands-off manner"
+                  ],
+                  "summary": [
+                    "You might have noticed I’ve spent more time on Twitter recently. I was chatting to a new client for my agency recently and — as I always do — I asked where they found us. They said their team…"
+                  ],
+                  "author": [
+                    {
+                      "type": [
+                        "h-card"
+                      ],
+                      "properties": {
+                        "name": [
+                          "Andy Bell"
+                        ]
+                      },
+                      "value": "Andy Bell"
+                    }
+                  ],
+                  "url": [
+                    "https://andy-bell.co.uk/how-im-dealing-with-twitter-in-a-hands-off-manner/"
+                  ]
+                },
+                "value": "https://andy-bell.co.uk/how-im-dealing-with-twitter-in-a-hands-off-manner/"
+              }
+            ],
+            "url": [
+              "https://jacky.wtf/2023/3/JMoU"
+            ],
+            "published": [
+              "2023-03-06T17:00:09Z"
             ]
           }
         }
@@ -272,18 +296,19 @@
           "properties": {
             "content": [
               {
-                "html": "<p>Wow. Just WOW. <a href=\"https://www.eff.org/deeplinks/2023/02/coded-resistance-comic\">https://www.eff.org/deeplinks/2023/02/coded-resistance-comic</a></p>",
-                "value": "Wow. Just WOW. https://www.eff.org/deeplinks/2023/02/coded-resistance-comic"
+                "html": "<p>Bro, the bank is GONE. The money's seized by the State (the debt, really). <a href=\"https://twitter.com/sama/status/1634249962874888192\">https://twitter.com/sama/status/1634249962874888192</a>. VCs and the like are really <em>disconnected</em> from reality.</p>",
+                "value": "Bro, the bank is GONE. The money's seized by the State (the debt, really). https://twitter.com/sama/status/1634249962874888192. VCs and the like are really disconnected from reality."
               }
             ],
             "url": [
-              "https://jacky.wtf/2023/3/4dwl"
+              "https://jacky.wtf/2023/3/fYeD"
             ],
             "published": [
-              "2023-03-04T18:01:41Z"
+              "2023-03-10T19:50:10Z"
             ],
             "syndication": [
-              "https://todon.eu/@jalcine/109966322655918026"
+              "https://twitter.com/jackyalcine/status/1634280561656188962",
+              "https://todon.eu/@jalcine/110000722775127863"
             ]
           }
         },
@@ -292,20 +317,54 @@
             "h-entry"
           ],
           "properties": {
+            "in-reply-to": [
+              {
+                "type": [
+                  "h-cite",
+                  "h-entry",
+                  "h-koype-stubbed-from-ogp"
+                ],
+                "properties": {
+                  "name": [
+                    "maloki 🍍:ghostbat: (@maloki@rage.love)"
+                  ],
+                  "summary": [
+                    "@jalcine@todon.eu It&#x27;s neat. I was trying to see if I could read it in RSS (especially since RSS was mentioned) but brain couldn&#x27;t figure it out. (rss or atom or whatever)"
+                  ],
+                  "author": [
+                    {
+                      "type": [
+                        "h-card"
+                      ],
+                      "properties": {
+                        "name": [
+                          "Rage.love"
+                        ]
+                      },
+                      "value": "Rage.love"
+                    }
+                  ],
+                  "url": [
+                    "https://rage.love/@maloki/110000392238796773"
+                  ]
+                },
+                "value": "https://rage.love/@maloki/110000392238796773"
+              }
+            ],
             "content": [
               {
-                "html": "<p>Hm. So I can't use my own audiobooks on the Kobo Clara 2E. I have to buy it from their store. And KOReader doesn't seem interested in supporting audiobooks. Nor is there a ticket for it in Plato, so I'm assuming no interest there. I guess I have to use my phone, then. Sigh. I'll probably push them to the Pinephone and use it solely as another device for reading OTG (it has GSM connectivity but eh).</p>",
-                "value": "Hm. So I can't use my own audiobooks on the Kobo Clara 2E. I have to buy it from their store. And KOReader doesn't seem interested in supporting audiobooks. Nor is there a ticket for it in Plato, so I'm assuming no interest there. I guess I have to use my phone, then. Sigh. I'll probably push them to the Pinephone and use it solely as another device for reading OTG (it has GSM connectivity but eh)."
+                "html": "<p>Here's such a link! <a href=\"https://buttondown.email/jackyalcine/rss\">https://buttondown.email/jackyalcine/rss</a></p>",
+                "value": "Here's such a link! https://buttondown.email/jackyalcine/rss"
               }
             ],
             "url": [
-              "https://jacky.wtf/2023/3/j4nG"
+              "https://jacky.wtf/2023/3/tmfm"
             ],
             "published": [
-              "2023-03-04T16:51:44Z"
+              "2023-03-10T18:31:13Z"
             ],
             "syndication": [
-              "https://todon.eu/@jalcine/109966047612552069"
+              "https://todon.eu/@jalcine/110000412987966738"
             ]
           }
         },
@@ -314,20 +373,57 @@
             "h-entry"
           ],
           "properties": {
+            "in-reply-to": [
+              {
+                "type": [
+                  "h-cite",
+                  "h-entry"
+                ],
+                "properties": {
+                  "content": [
+                    {
+                      "html": "<p>Typing away at the next newsletter entry! I need to be better about this (like getting a schedule) but also, this is a hobby that I like to do so I'll do it when I want. Screw the milling of content, lol.</p>",
+                      "value": "Typing away at the next newsletter entry! I need to be better about this (like getting a schedule) but also, this is a hobby that I like to do so I'll do it when I want. Screw the milling of content, lol."
+                    }
+                  ],
+                  "author": [
+                    {
+                      "type": [
+                        "h-card"
+                      ],
+                      "properties": {
+                        "name": [
+                          "https://jacky.wtf"
+                        ],
+                        "url": [
+                          "https://jacky.wtf/about"
+                        ]
+                      },
+                      "value": "https://jacky.wtf/about"
+                    }
+                  ],
+                  "url": [
+                    "https://jacky.wtf/2023/3/-0Su"
+                  ]
+                },
+                "value": "https://jacky.wtf/2023/3/-0Su"
+              }
+            ],
             "content": [
               {
-                "html": "<p>This is something for these people pushing pro-US intervention in Ukraine need to understand. The rest of the Global South doesn't want it. <a href=\"https://asiatimes.com/2023/02/global-south-resists-pressure-to-side-with-west-against-russia/\">https://asiatimes.com/2023/02/global-south-resists-pressure-to-side-with-west-against-russia/</a></p>",
-                "value": "This is something for these people pushing pro-US intervention in Ukraine need to understand. The rest of the Global South doesn't want it. https://asiatimes.com/2023/02/global-south-resists-pressure-to-side-with-west-against-russia/"
+                "html": "<p>Here it is! <a href=\"https://buttondown.email/jackyalcine/archive/an-upcoming-event/\">https://buttondown.email/jackyalcine/archive/an-upcoming-event/</a>. Almost a thousand words, ugh. Let me know what you think (in your preferred approach)!</p>",
+                "value": "Here it is! https://buttondown.email/jackyalcine/archive/an-upcoming-event/. Almost a thousand words, ugh. Let me know what you think (in your preferred approach)!"
               }
             ],
             "url": [
-              "https://jacky.wtf/2023/3/-u7M"
+              "https://jacky.wtf/2023/3/gJRR"
             ],
             "published": [
-              "2023-03-03T20:23:32Z"
+              "2023-03-10T18:21:43Z"
             ],
             "syndication": [
-              "https://todon.eu/@jalcine/109961217359409550"
+              "https://twitter.com/jackyalcine/status/1634258306020548612",
+              "https://todon.eu/@jalcine/110000375215724074"
             ]
           }
         }

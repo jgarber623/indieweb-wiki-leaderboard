@@ -12,6 +12,23 @@
           ],
           "properties": {
             "name": [
+              "Wagtail blog experimentation"
+            ],
+            "content": [
+              {
+                "html": "<p>I spun up a test <a href=\"https://wagtail.io/blog/upgrading-to-wagtail-2/\">Wagtail</a> install and followed <a href=\"https://docs.wagtail.org/en/stable/getting_started/tutorial.html\">its tutorial</a> which lets you make a basic blog with categories, tags, galleries. The interface looks good on screenshots but is a bit unpolished in places, I tried installing <a href=\"https://gitlab.com/thelabnyc/wagtail_blog\">wagtail-blog</a> as well but it’s written for v2 and we’re at v4 now. That could be quite easy to update, I haven’t checked but might do, depending on motivation.</p>\n<p>That said compared to the tutorial creating RSS feeds is not too hard, a WordPress Importer would be nice.</p>\n<p>After that investigate some indieweb features.</p>\n<div class=\"syndication-links\"></div>",
+                "value": "I spun up a test Wagtail install and followed its tutorial which lets you make a basic blog with categories, tags, galleries. The interface looks good on screenshots but is a bit unpolished in places, I tried installing wagtail-blog as well but it’s written for v2 and we’re at v4 now. That could be quite easy to update, I haven’t checked but might do, depending on motivation.\nThat said compared to the tutorial creating RSS feeds is not too hard, a WordPress Importer would be nice.\nAfter that investigate some indieweb features."
+              }
+            ]
+          },
+          "id": "post-652"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               ""
             ],
             "content": [
@@ -328,23 +345,6 @@
             ]
           },
           "id": "post-534"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "OpenSUSE Tumbleweed Installation Notes"
-            ],
-            "content": [
-              {
-                "html": "<p>For future reference here are some issues I’ve come across installing and setting up Tumbleweed on my workstation.</p>\n<p>The reason for switching from macOS is that a commercial operating system focused on services builts in too many distractions for me. Also long term the Apple hardware is priced above what I’m prepared to pay, so it makes sense for me to look for an alternative.</p>\n<p>Tumbleweed is a rolling distribution which makes for a long term maintained setup, and packages are tested thoroughly but are quickly updated.</p>\n<p>So far these are just little niggles.</p>\n<h2>Day one issues</h2>\n<ul>\n<li>The old Grub menu from my previous Linux installation wasn’t wiped, I simply reinstalled making sure all existing partitions were deleted before partitioning.</li>\n<li>\n<em>avahi is not allowed to start itself due to security policies</em>. This was because dbus needed to restart after avahi installed configuration into it. I could have rebooted.</li>\n<li>My Apple Magic Keyboard must be selected in KDE after the installation as it’s not an option during the installation routine.</li>\n<li>Opening ports for OpenSSH means that they’re open on the <em>public</em> zone. I didn’t realise this as I want to use the <em>home</em> zone as default.Yast Firewall sorted this out.</li>\n<li>After installing Lutris, Steam and Proton Experimental, certain games would not start, due to missing vulkan drivers. <a href=\"https://github.com/lutris/docs/blob/master/InstallingDrivers.md\">This Lutris Wiki link</a> describes the issue, I had to search Yast Software for <code>vulkan</code> showed I had to install <code>libvulkan_intel</code> and <code>libvulkan_intel-32bit</code>. </li>\n</ul>\n<h2>Interesting links</h2>\n<ul><li>There’s a nice tiling window manager script for KDE called <a href=\"https://github.com/esjeon/krohnkite\">Krohnkite</a>. Meta-D conflicted with show desktop, after reassigning the latter I still think that shortcut doesn’t do anything, though.</li></ul>\n<p>So far so good. The interface is more snappy than macOS and more powerful, and the system is working nicely.</p>\n<div class=\"syndication-links\"></div>",
-                "value": "For future reference here are some issues I’ve come across installing and setting up Tumbleweed on my workstation.\nThe reason for switching from macOS is that a commercial operating system focused on services builts in too many distractions for me. Also long term the Apple hardware is priced above what I’m prepared to pay, so it makes sense for me to look for an alternative.\nTumbleweed is a rolling distribution which makes for a long term maintained setup, and packages are tested thoroughly but are quickly updated.\nSo far these are just little niggles.\nDay one issues\nThe old Grub menu from my previous Linux installation wasn’t wiped, I simply reinstalled making sure all existing partitions were deleted before partitioning.avahi is not allowed to start itself due to security policies. This was because dbus needed to restart after avahi installed configuration into it. I could have rebooted.My Apple Magic Keyboard must be selected in KDE after the installation as it’s not an option during the installation routine.Opening ports for OpenSSH means that they’re open on the public zone. I didn’t realise this as I want to use the home zone as default.Yast Firewall sorted this out.After installing Lutris, Steam and Proton Experimental, certain games would not start, due to missing vulkan drivers. This Lutris Wiki link describes the issue, I had to search Yast Software for vulkan showed I had to install libvulkan_intel and libvulkan_intel-32bit. \nInteresting links\nThere’s a nice tiling window manager script for KDE called Krohnkite. Meta-D conflicted with show desktop, after reassigning the latter I still think that shortcut doesn’t do anything, though.\nSo far so good. The interface is more snappy than macOS and more powerful, and the system is working nicely."
-              }
-            ]
-          },
-          "id": "post-520"
         }
       ]
     }
@@ -413,6 +413,7 @@
       "https://vandragt.com/"
     ],
     "bookmark": [
+      "https://vandragt.com/technology/wagtail-blog-experimentation/",
       "https://vandragt.com/project/633/",
       "https://vandragt.com/status/625/",
       "https://vandragt.com/project/622/",
@@ -431,18 +432,17 @@
       "https://vandragt.com/technology/managing-homebrew-package-updates/",
       "https://vandragt.com/technology/privacy-forest/",
       "https://vandragt.com/technology/how-to-develop-a-library-and-a-project-in-php-concurrently/",
-      "https://vandragt.com/technology/daily-clean-trash/",
-      "https://vandragt.com/technology/opensuse-tumbleweed-installation-notes/"
+      "https://vandragt.com/technology/daily-clean-trash/"
     ],
     "category": [
+      "https://vandragt.com/category/technology/",
       "https://vandragt.com/category/project/",
-      "https://vandragt.com/category/status/",
-      "https://vandragt.com/category/technology/"
+      "https://vandragt.com/category/status/"
     ],
     "tag": [
+      "https://vandragt.com/category/technology/",
       "https://vandragt.com/category/project/",
-      "https://vandragt.com/category/status/",
-      "https://vandragt.com/category/technology/"
+      "https://vandragt.com/category/status/"
     ],
     "designer": [
       "http://independentpublisher.me/"
@@ -610,6 +610,20 @@
         "micropub"
       ]
     },
+    "https://vandragt.com/technology/wagtail-blog-experimentation/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to Wagtail blog experimentation",
+      "text": "Wagtail blog experimentation"
+    },
+    "https://vandragt.com/category/technology/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Technology"
+    },
     "https://vandragt.com/project/633/": {
       "rels": [
         "bookmark"
@@ -648,13 +662,6 @@
       ],
       "title": "Permalink to Mail: a local privacy focused searchable database",
       "text": "Mail: a local privacy focused searchable database"
-    },
-    "https://vandragt.com/category/technology/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "Technology"
     },
     "https://vandragt.com/project/fafi-0-2-2/": {
       "rels": [
@@ -757,13 +764,6 @@
       ],
       "title": "Permalink to Daily Clean Trash",
       "text": "Daily Clean Trash"
-    },
-    "https://vandragt.com/technology/opensuse-tumbleweed-installation-notes/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Permalink to OpenSUSE Tumbleweed Installation Notes",
-      "text": "OpenSUSE Tumbleweed Installation Notes"
     },
     "http://independentpublisher.me/": {
       "rels": [
