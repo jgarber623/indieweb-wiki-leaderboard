@@ -56,21 +56,15 @@
       "properties": {
         "content": [
           {
-            "html": "<div class=\"videos\">\n    \n      <video loop controls preload=\"metadata\" muted playsinline poster=\"https://res.cloudinary.com/schmarty/video/upload/vc_h264/mmmgre/db/f9/b8/30/979d2555f4e52728b17a47712bf9347bad3c9bf2a4d2e125e189125b.jpg\" style=\"width: 100%\">\n  <source class=\"u-video\" type=\"video/mp4\" src=\"https://res.cloudinary.com/schmarty/video/upload/vc_h264/mmmgre/db/f9/b8/30/979d2555f4e52728b17a47712bf9347bad3c9bf2a4d2e125e189125b.mov\"></source>\n</video>\n\n</div>\n  <p>Are you dedicated to sanitation during eternal Caturday?</p>",
-            "value": "Are you dedicated to sanitation during eternal Caturday?"
+            "html": "<p>IndieWebCamp Düsseldorf planning, federated formatting, and BlueSky’s beta is brewing. It’s your &lt; 10min update on the #IndieWeb community!</p>\n<p>This Week in the IndieWeb audio edition for March 4th - 10th, 2023.\n<a href=\"https://martymcgui.re/2023/03/11/this-week-in-the-indieweb-audio-edition--march-4th---10th-2023/\">https://martymcgui.re/2023/03/11/this-week-in-the-indieweb-audio-edition--march-4th---10th-2023/</a></p>",
+            "value": "IndieWebCamp Düsseldorf planning, federated formatting, and BlueSky’s beta is brewing. It’s your < 10min update on the #IndieWeb community!\nThis Week in the IndieWeb audio edition for March 4th - 10th, 2023.\nhttps://martymcgui.re/2023/03/11/this-week-in-the-indieweb-audio-edition--march-4th---10th-2023/"
           }
         ],
-        "video": [
-          "https://res.cloudinary.com/schmarty/video/upload/vc_h264/mmmgre/db/f9/b8/30/979d2555f4e52728b17a47712bf9347bad3c9bf2a4d2e125e189125b.mov"
-        ],
-        "category": [
-          "Caturday"
-        ],
         "url": [
-          "https://martymcgui.re/2023/03/11/001654/"
+          "https://martymcgui.re/2023/03/11/160129/"
         ],
         "published": [
-          "2023-03-11T00:16:54-0500"
+          "2023-03-11T16:01:29-0500"
         ],
         "author": [
           {
@@ -93,8 +87,57 @@
             },
             "value": "https://martymcgui.re/"
           }
+        ],
+        "syndication": [
+          "https://fed.brid.gy/"
         ]
-      }
+      },
+      "children": [
+        {
+          "type": [
+            "h-cite"
+          ],
+          "properties": {
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "url": [
+                    "https://martymcgui.re/"
+                  ],
+                  "photo": [
+                    {
+                      "value": "https://res.cloudinary.com/schmarty/image/fetch/w_60,c_fill/https://martymcgui.re/images/logo.jpg",
+                      "alt": ""
+                    }
+                  ],
+                  "name": [
+                    "Marty McGuire"
+                  ]
+                },
+                "value": "Marty McGuire"
+              }
+            ],
+            "url": [
+              "https://martymcgui.re/2023/03/11/this-week-in-the-indieweb-audio-edition--march-4th---10th-2023/"
+            ],
+            "published": [
+              "2023-03-11T15:57:38-0500"
+            ],
+            "name": [
+              "This Week in the IndieWeb Audio Edition • March 4th - 10th, 2023"
+            ],
+            "summary": [
+              "Show/Hide Transcript"
+            ],
+            "audio": [
+              "https://media.martymcgui.re/f2/1a/a9/58/ee75e086e1017e3b052729573e12424afb8976595741704f48866235.mp3"
+            ]
+          }
+        }
+      ]
     }
   ],
   "rels": {
@@ -158,10 +201,13 @@
       "https://martymcgui.re/pgp.asc"
     ],
     "shortlink": [
-      "http://mmg.re/5Pn5Gu"
+      "http://mmg.re/5PnM1V"
     ],
     "author": [
       "https://martymcgui.re/"
+    ],
+    "syndication": [
+      "https://fed.brid.gy/"
     ]
   },
   "rel-urls": {
@@ -272,12 +318,17 @@
       "title": "PGP Key",
       "type": "application/pgp-keys"
     },
-    "http://mmg.re/5Pn5Gu": {
+    "http://mmg.re/5PnM1V": {
       "rels": [
         "shortlink"
       ],
       "type": "text/html",
       "text": "🔗"
+    },
+    "https://fed.brid.gy/": {
+      "rels": [
+        "syndication"
+      ]
     }
   }
 }
