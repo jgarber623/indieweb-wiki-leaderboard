@@ -12,6 +12,23 @@
           ],
           "properties": {
             "name": [
+              "Lamb: my upcoming selfhosted microblogging service"
+            ],
+            "content": [
+              {
+                "html": "<p>Started a new project called Lamb:</p>\n<blockquote class=\"wp-block-quote\">\n<p>Literally Another Micro Blog.</p>\n<p>Barrier free super simple blogging.</p>\n<ul>\n<li>sqlite based</li>\n<li>twitter like interface</li>\n<li>register to a flock, index of blaats</li>\n</ul>\n</blockquote>\n<div class=\"is-layout-flex wp-block-buttons\">\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"https://github.com/svandragt/lamb\">View on GitHub</a></div>\n</div>\n<div class=\"syndication-links\"></div>",
+                "value": "Started a new project called Lamb:\n\nLiterally Another Micro Blog.\nBarrier free super simple blogging.\n\nsqlite based\ntwitter like interface\nregister to a flock, index of blaats\n\n\n\nView on GitHub"
+              }
+            ]
+          },
+          "id": "post-654"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "name": [
               "Wagtail blog experimentation"
             ],
             "content": [
@@ -328,23 +345,6 @@
             ]
           },
           "id": "post-539"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Daily Clean Trash"
-            ],
-            "content": [
-              {
-                "html": "<p>I use <code>trash-cli</code> on every linux install, and today I realised it’s not actually removing files from the trash, so I’ve set up this little scheduled task to delete items that have been trashed at least 30 days ago:<br></p>\n<pre class=\"wp-block-code\"><code>$ crontab -e\n# daily trash clean\n@daily /usr/bin/trash-empty 30</code></pre>\n<div class=\"syndication-links\"></div>",
-                "value": "I use trash-cli on every linux install, and today I realised it’s not actually removing files from the trash, so I’ve set up this little scheduled task to delete items that have been trashed at least 30 days ago:\n$ crontab -e\n# daily trash clean\n@daily /usr/bin/trash-empty 30"
-              }
-            ]
-          },
-          "id": "post-534"
         }
       ]
     }
@@ -413,6 +413,7 @@
       "https://vandragt.com/"
     ],
     "bookmark": [
+      "https://vandragt.com/project/lamb-my-upcoming-selfhosted-microblogging-service/",
       "https://vandragt.com/technology/wagtail-blog-experimentation/",
       "https://vandragt.com/project/633/",
       "https://vandragt.com/status/625/",
@@ -431,17 +432,16 @@
       "https://vandragt.com/technology/global-node-packages/",
       "https://vandragt.com/technology/managing-homebrew-package-updates/",
       "https://vandragt.com/technology/privacy-forest/",
-      "https://vandragt.com/technology/how-to-develop-a-library-and-a-project-in-php-concurrently/",
-      "https://vandragt.com/technology/daily-clean-trash/"
+      "https://vandragt.com/technology/how-to-develop-a-library-and-a-project-in-php-concurrently/"
     ],
     "category": [
-      "https://vandragt.com/category/technology/",
       "https://vandragt.com/category/project/",
+      "https://vandragt.com/category/technology/",
       "https://vandragt.com/category/status/"
     ],
     "tag": [
-      "https://vandragt.com/category/technology/",
       "https://vandragt.com/category/project/",
+      "https://vandragt.com/category/technology/",
       "https://vandragt.com/category/status/"
     ],
     "designer": [
@@ -610,6 +610,20 @@
         "micropub"
       ]
     },
+    "https://vandragt.com/project/lamb-my-upcoming-selfhosted-microblogging-service/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Permalink to Lamb: my upcoming selfhosted microblogging service",
+      "text": "Lamb: my upcoming selfhosted microblogging service"
+    },
+    "https://vandragt.com/category/project/": {
+      "rels": [
+        "category",
+        "tag"
+      ],
+      "text": "Project"
+    },
     "https://vandragt.com/technology/wagtail-blog-experimentation/": {
       "rels": [
         "bookmark"
@@ -629,13 +643,6 @@
         "bookmark"
       ],
       "title": "Permalink to"
-    },
-    "https://vandragt.com/category/project/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "Project"
     },
     "https://vandragt.com/category/status/": {
       "rels": [
@@ -757,13 +764,6 @@
       ],
       "title": "Permalink to How to develop a library and a project in PHP concurrently",
       "text": "How to develop a library and a project in PHP concurrently"
-    },
-    "https://vandragt.com/technology/daily-clean-trash/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Permalink to Daily Clean Trash",
-      "text": "Daily Clean Trash"
     },
     "http://independentpublisher.me/": {
       "rels": [

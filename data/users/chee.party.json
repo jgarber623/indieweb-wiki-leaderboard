@@ -56,6 +56,7 @@
               }
             ],
             "url": [
+              "https://chee.party/2023/03/12/5305/",
               "https://chee.party/2023/03/12/5305/"
             ],
             "updated": [
@@ -63,6 +64,9 @@
             ],
             "published": [
               "2023-03-12T00:19:42-06:00"
+            ],
+            "name": [
+              "if we ever start needing base-6 numbers, what are we gonna call em??"
             ],
             "content": [
               {
@@ -75,6 +79,64 @@
             ]
           },
           "id": "post-5305"
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "author": [
+              {
+                "type": [
+                  "h-card"
+                ],
+                "properties": {
+                  "url": [
+                    "https://chee.party/chee-rabbits"
+                  ],
+                  "uid": [
+                    "https://chee.party/chee-rabbits"
+                  ],
+                  "photo": [
+                    {
+                      "value": "https://secure.gravatar.com/avatar/5eafdabd822ad2048be8c301660854af?s=90&r=x",
+                      "srcset": {
+                        "2x": "https://secure.gravatar.com/avatar/5eafdabd822ad2048be8c301660854af?s=180&r=x"
+                      },
+                      "alt": ""
+                    }
+                  ],
+                  "name": [
+                    "chee"
+                  ]
+                },
+                "value": "chee"
+              }
+            ],
+            "url": [
+              "https://chee.party/2023/03/11/week-10-23/",
+              "https://chee.party/2023/03/11/week-10-23/"
+            ],
+            "updated": [
+              "2023-03-11T09:28:00-06:00"
+            ],
+            "published": [
+              "2023-03-11T09:28:00-06:00"
+            ],
+            "name": [
+              "Week 10, ’23"
+            ],
+            "content": [
+              {
+                "html": "<p> I’m going to take my horse to the old town road and ride until I can’t. </p>\n<p> I think I’ll have to stop eating vegetarian as it has presented as me just not eating anything at all. It all went well except that one evening  last week when I literally forgot tuna is not a vegetable. I do enjoy a dietary restriction, though. It’s a fine hobby. Perhaps i’ll start eating kosher. </p>\n<p> Spent most of the week drinking way too much coffee because of the new espresso machine and grinder. I keep wiring myself up to the highest degree and then freaking out. Feeling super anxious and wondering why as I top up my v60 with espresso. I should probably start drinking alcohol again, to bring this coffee consumption back under control. Also I must think of my readers. The engagement’s just not the same as back when I took meth. Those were the days, JetPack stats off the chart. </p>\n<p> Another blessed week of doing very little. I’m writing a parser for KDL right now. Getting into Common Lisp like this has made me understand why people might enjoy missionary work. When you are possession of such light, such joy it feels wrong not to share it. Especially when all somebody would have to do to reach this same heightened state is to let it into their life, accept it, let it save them. I’ve got a print copy of the specification sitting on my kitchen table. I read it in the mornings over coffee. </p>\n<figure id=\"orgb205dc9\"> <img decoding=\"async\" src=\"https://ebbdkqihzfu.exactdn.com/wp-content/uploads/2023/03/qoqew-miwid-juyev.jpg?strip=all&amp;lossy=1&amp;w=670&amp;ssl=1\" alt=\"qoqew-miwid-juyev.png\"><figcaption><span class=\"figure-number\">Figure 1: </span>current status</figcaption></figure>\n<p> Is <i>Funky Cold Medina</i> based on a true story? </p>\n<p> Anyway, have a good week. </p>",
+                "value": "I’m going to take my horse to the old town road and ride until I can’t. \n I think I’ll have to stop eating vegetarian as it has presented as me just not eating anything at all. It all went well except that one evening  last week when I literally forgot tuna is not a vegetable. I do enjoy a dietary restriction, though. It’s a fine hobby. Perhaps i’ll start eating kosher. \n Spent most of the week drinking way too much coffee because of the new espresso machine and grinder. I keep wiring myself up to the highest degree and then freaking out. Feeling super anxious and wondering why as I top up my v60 with espresso. I should probably start drinking alcohol again, to bring this coffee consumption back under control. Also I must think of my readers. The engagement’s just not the same as back when I took meth. Those were the days, JetPack stats off the chart. \n Another blessed week of doing very little. I’m writing a parser for KDL right now. Getting into Common Lisp like this has made me understand why people might enjoy missionary work. When you are possession of such light, such joy it feels wrong not to share it. Especially when all somebody would have to do to reach this same heightened state is to let it into their life, accept it, let it save them. I’ve got a print copy of the specification sitting on my kitchen table. I read it in the mornings over coffee. \n  qoqew-miwid-juyev.png Figure 1: current status\n Is Funky Cold Medina based on a true story? \n Anyway, have a good week."
+              }
+            ],
+            "category": [
+              "weekly"
+            ]
+          },
+          "id": "post-5309"
         },
         {
           "type": [
@@ -299,7 +361,7 @@
             ],
             "content": [
               {
-                "html": "<p>Let’s see, let’s see…</p>\n<p>Got some good stuff finished at the coal mine. Had a little break-up. Have spent the whole weekend eating smoked mackerel, playing mario and writing emacs lisp. There was also a bath on Sunday.</p>\n<p>Becky Avery thinks it’s over for me. All vegetable curries and a water please thank-you from here on out. Maybe she’s right. Though I am planning on drinking an entire bottle of Patrón on March 2nd. Should probably take that day as annual leave.</p>\n<p>Light week, as has been the pattern so far this year. My days have been intense but it’s all work stuff and I have no interest in discussing it here.</p>\n<div id=\"outline-container-orgf0dffee\" class=\"outline-2\">\n<h2 id=\"orgf0dffee\"><a href=\"https://chee.party/#computer\">computer</a></h2>\n<div id=\"text-orgf0dffee\" class=\"outline-text-2\">\n<p>I spent most of Saturday writing hundreds of lines of lisp to make it so I can see my calendar events in Org and take notes on them that will not go away when the list is updated. Here’s what it does:</p>\n<ol class=\"org-ol\">\n<li>Grab my work calendar from the Google website</li>\n<li>Filter out anything that’s older or newer than 7 days from today</li>\n<li>Open up the .org file and store all the current event IDs (as <code>current-event-ids</code>)</li>\n<li>Go through the events from the Google calendar and a. if they exist: update their details (time, video-call, link) b. if they don’t: create them (adding their meeting description in a quote block)</li>\n<li>Compare the IDs from the calendar with the <code>current-event-ids</code>\n</li>\n<li>Archive any events that were not in the calendar</li>\n</ol>\n<p>This way it keeps all my old notes using Org’s normal archive functions, and my current notes appear alongside the meeting when I look at it in the agenda or on Beorg on my telephone. It’s great. It even converts Google Calendar’s html into Org syntax. lol. haha.</p>\n<figure id=\"org07332db\"><img decoding=\"async\" class=\"alignnone\" title=\"ligam-zaheq-daqar.png\" src=\"https://ebbdkqihzfu.exactdn.com/wp-content/uploads/2023/02/ligam-zaheq-daqar.png?strip=all&amp;lossy=1&amp;resize=670%2C730&amp;ssl=1\" alt=\"screenshot of an org-mode meeting at describe above. shows the properties of the meeting as org-mode properties, the meeting notes and my personal notes on the meeting.\" width=\"786\" height=\"856\" data-popupalt-original-title=\"null\"><figcaption><span class=\"figure-number\">Figure 1: </span>✅ CANCELLED</figcaption></figure>\n</div>\n</div>\n<div id=\"outline-container-org263d18e\" class=\"outline-2\">\n<h2 id=\"org263d18e\"><a href=\"https://chee.party/#ok\">ok</a></h2>\n<div id=\"text-org263d18e\" class=\"outline-text-2\">\n<p>Anyway i’m handling the inevitable end of that relationship by writing emacs lisp. I haven’t eaten today. I’ll go for a walk.</p>\n<p>good bye</p>\n</div>\n</div>",
+                "html": "<p>Let’s see, let’s see…</p>\n<p>Got some good stuff finished at the coal mine. Had a little break-up. Have spent the whole weekend eating smoked mackerel, playing mario and writing emacs lisp. There was also a bath on Sunday.</p>\n<p>Becky Avery thinks it’s over for me. All vegetable curries and a water please thank-you from here on out. Maybe she’s right. Though I am planning on drinking an entire bottle of Patrón on March 2nd. Should probably take that day as annual leave.</p>\n<p>Light week, as has been the pattern so far this year. My days have been intense but it’s all work stuff and I have no interest in discussing it here.</p>\n<div id=\"outline-container-orgf0dffee\" class=\"outline-2\">\n<h2 id=\"orgf0dffee\"><a href=\"https://chee.party/#computer\">computer</a></h2>\n<div id=\"text-orgf0dffee\" class=\"outline-text-2\">\n<p>I spent most of Saturday writing hundreds of lines of lisp to make it so I can see my calendar events in Org and take notes on them that will not go away when the list is updated. Here’s what it does:</p>\n<ol class=\"org-ol\">\n<li>Grab my work calendar from the Google website</li>\n<li>Filter out anything that’s older or newer than 7 days from today</li>\n<li>Open up the .org file and store all the current event IDs (as <code>current-event-ids</code>)</li>\n<li>Go through the events from the Google calendar and a. if they exist: update their details (time, video-call, link) b. if they don’t: create them (adding their meeting description in a quote block)</li>\n<li>Compare the IDs from the calendar with the <code>current-event-ids</code>\n</li>\n<li>Archive any events that were not in the calendar</li>\n</ol>\n<p>This way it keeps all my old notes using Org’s normal archive functions, and my current notes appear alongside the meeting when I look at it in the agenda or on Beorg on my telephone. It’s great. It even converts Google Calendar’s html into Org syntax. lol. haha.</p>\n<figure id=\"org07332db\"><img decoding=\"async\" loading=\"lazy\" class=\"alignnone\" title=\"ligam-zaheq-daqar.png\" src=\"https://ebbdkqihzfu.exactdn.com/wp-content/uploads/2023/02/ligam-zaheq-daqar.png?strip=all&amp;lossy=1&amp;resize=670%2C730&amp;ssl=1\" alt=\"screenshot of an org-mode meeting at describe above. shows the properties of the meeting as org-mode properties, the meeting notes and my personal notes on the meeting.\" width=\"786\" height=\"856\" data-popupalt-original-title=\"null\"><figcaption><span class=\"figure-number\">Figure 1: </span>✅ CANCELLED</figcaption></figure>\n</div>\n</div>\n<div id=\"outline-container-org263d18e\" class=\"outline-2\">\n<h2 id=\"org263d18e\"><a href=\"https://chee.party/#ok\">ok</a></h2>\n<div id=\"text-org263d18e\" class=\"outline-text-2\">\n<p>Anyway i’m handling the inevitable end of that relationship by writing emacs lisp. I haven’t eaten today. I’ll go for a walk.</p>\n<p>good bye</p>\n</div>\n</div>",
                 "value": "Let’s see, let’s see…\nGot some good stuff finished at the coal mine. Had a little break-up. Have spent the whole weekend eating smoked mackerel, playing mario and writing emacs lisp. There was also a bath on Sunday.\nBecky Avery thinks it’s over for me. All vegetable curries and a water please thank-you from here on out. Maybe she’s right. Though I am planning on drinking an entire bottle of Patrón on March 2nd. Should probably take that day as annual leave.\nLight week, as has been the pattern so far this year. My days have been intense but it’s all work stuff and I have no interest in discussing it here.\n\ncomputer\n\nI spent most of Saturday writing hundreds of lines of lisp to make it so I can see my calendar events in Org and take notes on them that will not go away when the list is updated. Here’s what it does:\n\nGrab my work calendar from the Google website\nFilter out anything that’s older or newer than 7 days from today\nOpen up the .org file and store all the current event IDs (as current-event-ids)\nGo through the events from the Google calendar and a. if they exist: update their details (time, video-call, link) b. if they don’t: create them (adding their meeting description in a quote block)\nCompare the IDs from the calendar with the current-event-ids\nArchive any events that were not in the calendar\n\nThis way it keeps all my old notes using Org’s normal archive functions, and my current notes appear alongside the meeting when I look at it in the agenda or on Beorg on my telephone. It’s great. It even converts Google Calendar’s html into Org syntax. lol. haha.\n screenshot of an org-mode meeting at describe above. shows the properties of the meeting as org-mode properties, the meeting notes and my personal notes on the meeting. Figure 1: ✅ CANCELLED\n\n\n\nok\n\nAnyway i’m handling the inevitable end of that relationship by writing emacs lisp. I haven’t eaten today. I’ll go for a walk.\ngood bye"
               }
             ],
@@ -308,64 +370,6 @@
             ]
           },
           "id": "post-5249"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "url": [
-                    "https://chee.party/chee-rabbits"
-                  ],
-                  "uid": [
-                    "https://chee.party/chee-rabbits"
-                  ],
-                  "photo": [
-                    {
-                      "value": "https://secure.gravatar.com/avatar/5eafdabd822ad2048be8c301660854af?s=90&r=x",
-                      "srcset": {
-                        "2x": "https://secure.gravatar.com/avatar/5eafdabd822ad2048be8c301660854af?s=180&r=x"
-                      },
-                      "alt": ""
-                    }
-                  ],
-                  "name": [
-                    "chee"
-                  ]
-                },
-                "value": "chee"
-              }
-            ],
-            "url": [
-              "https://chee.party/2023/02/17/thats-that-then/",
-              "https://chee.party/2023/02/17/thats-that-then/"
-            ],
-            "updated": [
-              "2023-02-17T16:56:58-06:00"
-            ],
-            "published": [
-              "2023-02-17T16:56:58-06:00"
-            ],
-            "name": [
-              "that’s that then"
-            ],
-            "content": [
-              {
-                "html": "<p>OK.</p>\n\n\n\n<p>that breakup’s gonna stick. it was mutual. it’s over. i’ve felt the relationship leave my body. it was a pleasant breakup, though my eyes are wet and my body is heavy.</p>\n\n\n\n<p>what a wonderful person. and memories to be cherished. mexico city, the waterfalls, the pyramids, the summer, the music, the family, the corn. you know all that. it’s all on the blog. i was happier than i’ve ever been, for a while.</p>\n\n\n\n<p>it’s strange breaking up on-line. sitting here in my chair, at my desk. using the same computer from which i’ve just done a day of meetings. just another piece of business. another set of carefully crafted words.</p>\n\n\n\n<p>we spent valentine’s day together. an hour of it. on the phone. it was lovely, like before. we were right there, next to one another. i could almost touch it. but i couldn’t. we made all sorts of plans together for the future. it felt so easy. when it was over, the hard was all the more clear. all the more definite.</p>\n\n\n\n<p>i feel ok. heavy, and sad. i still haven’t opened the tequila we bought together when she was here. next month, maybe. time is an enemy. distance is an enemy. faraway love is a full time occupation. </p>",
-                "value": "OK.\n\n\n\nthat breakup’s gonna stick. it was mutual. it’s over. i’ve felt the relationship leave my body. it was a pleasant breakup, though my eyes are wet and my body is heavy.\n\n\n\nwhat a wonderful person. and memories to be cherished. mexico city, the waterfalls, the pyramids, the summer, the music, the family, the corn. you know all that. it’s all on the blog. i was happier than i’ve ever been, for a while.\n\n\n\nit’s strange breaking up on-line. sitting here in my chair, at my desk. using the same computer from which i’ve just done a day of meetings. just another piece of business. another set of carefully crafted words.\n\n\n\nwe spent valentine’s day together. an hour of it. on the phone. it was lovely, like before. we were right there, next to one another. i could almost touch it. but i couldn’t. we made all sorts of plans together for the future. it felt so easy. when it was over, the hard was all the more clear. all the more definite.\n\n\n\ni feel ok. heavy, and sad. i still haven’t opened the tequila we bought together when she was here. next month, maybe. time is an enemy. distance is an enemy. faraway love is a full time occupation."
-              }
-            ],
-            "category": [
-              "magicktitle"
-            ]
-          },
-          "id": "post-5240"
         }
       ]
     }
@@ -457,11 +461,11 @@
     ],
     "bookmark": [
       "https://chee.party/2023/03/12/5305/",
+      "https://chee.party/2023/03/11/week-10-23/",
       "https://chee.party/2023/02/27/week-09-23/",
       "https://chee.party/2023/02/26/week-08-23/",
       "https://chee.party/2023/02/22/getting-started-with-common-lisp-in-2023/",
-      "https://chee.party/2023/02/19/week-07-23/",
-      "https://chee.party/2023/02/17/thats-that-then/"
+      "https://chee.party/2023/02/19/week-07-23/"
     ],
     "tag": [
       "https://chee.party/tag/magicktitle",
@@ -690,18 +694,25 @@
       ],
       "text": "magicktitle"
     },
-    "https://chee.party/2023/02/27/week-09-23/": {
+    "https://chee.party/2023/03/11/week-10-23/": {
       "rels": [
         "bookmark"
       ],
-      "title": "Monday the 27th of February 2023 at 7:08am CST",
-      "text": "23/2/27 7:08am CST"
+      "title": "Saturday the 11th of March 2023 at 9:28am CST",
+      "text": "23/3/11 9:28am CST"
     },
     "https://chee.party/tag/weekly": {
       "rels": [
         "tag"
       ],
       "text": "weekly"
+    },
+    "https://chee.party/2023/02/27/week-09-23/": {
+      "rels": [
+        "bookmark"
+      ],
+      "title": "Monday the 27th of February 2023 at 7:08am CST",
+      "text": "23/2/27 7:08am CST"
     },
     "https://chee.party/2023/02/26/week-08-23/": {
       "rels": [
@@ -735,13 +746,6 @@
       ],
       "title": "Sunday the 19th of February 2023 at 12:27pm CST",
       "text": "23/2/19 12:27pm CST"
-    },
-    "https://chee.party/2023/02/17/thats-that-then/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Friday the 17th of February 2023 at 4:56pm CST",
-      "text": "23/2/17 4:56pm CST"
     },
     "https://creativecommons.org/publicdomain/zero/1.0/": {
       "rels": [

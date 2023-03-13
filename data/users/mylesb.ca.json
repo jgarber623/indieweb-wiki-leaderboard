@@ -1,64 +1,9 @@
 {
-  "items": [
-    {
-      "type": [
-        "h-card"
-      ],
-      "properties": {
-        "name": [
-          "Myles Braithwaite"
-        ],
-        "note": [
-          "Myles Braithwaite lives in Toronto where he runs a small consulting company called Monkey in your Soul (you should hire him)."
-        ],
-        "org": [
-          "Monkey in your Soul",
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "name": [
-                "Monkey in your Soul"
-              ],
-              "url": [
-                "https://monkeyinyoursoul.com/"
-              ]
-            },
-            "value": "Monkey in your Soul"
-          },
-          {
-            "type": [
-              "h-card"
-            ],
-            "properties": {
-              "name": [
-                "Rotten Bananas"
-              ],
-              "url": [
-                "https://rottenbananas.ca/"
-              ]
-            },
-            "value": "Rotten Bananas"
-          }
-        ],
-        "url": [
-          "https://mylesbraithwaite.com/",
-          "https://braithwaite.io/",
-          "https://myles.photo/",
-          "https://twitter.com/mylesb",
-          "https://github.com/myles",
-          "https://instagram.com/myles",
-          "https://facebook.com/mylesbraithwaite",
-          "https://mastodon.social/@mylesb",
-          "https://linkedin.com/in/mylesbraithwaite/"
-        ]
-      }
-    }
-  ],
+  "items": [],
   "rels": {
-    "stylesheet": [
-      "https://d33wubrfki0l68.cloudfront.net/css/79c9d61e6a02dfd8f7b11d6734317e72f5b4dbe1/assets/style.css"
+    "icon": [
+      "https://mylesb.ca/favicon.png",
+      "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦖</text></svg>"
     ],
     "openid.delegate": [
       "https://mylesb.ca/"
@@ -74,20 +19,11 @@
     ],
     "me": [
       "https://twitter.com/mylesb",
+      "https://mastodon.social/@mylesb",
       "https://facebook.com/mylesbraithwaite",
       "https://github.com/myles",
       "https://micro.blog/myles",
-      "mailto:me@mylesb.ca",
-      "https://mastodon.social/@mylesb",
-      "https://www.instagram.com/myles/",
-      "https://linkedin.com/in/mylesbraithwaite/",
-      "https://mylesbraithwaite.com/",
-      "https://braithwaite.io/",
-      "https://myles.photo/",
-      "https://instagram.com/myles"
-    ],
-    "pgpkey": [
-      "https://mylesb.ca/uploads/0x5B423590.asc"
+      "mailto:me@mylesb.ca"
     ],
     "pingback": [
       "https://webmention.io/mylesb.ca/xmlrpc"
@@ -98,25 +34,29 @@
     "microsub": [
       "https://aperture.p3k.io/microsub/366"
     ],
-    "apple-touch-icon": [
-      "https://mylesb.ca/apple-touch-icon.png"
-    ],
-    "icon": [
-      "https://mylesb.ca/favicon-32x32.png",
-      "https://mylesb.ca/favicon-16x16.png"
-    ],
-    "manifest": [
-      "https://mylesb.ca/site.webmanifest"
-    ],
-    "mask-icon": [
-      "https://mylesb.ca/safari-pinned-tab.svg"
+    "preload": [
+      "https://mylesb.ca/_nuxt/d1b7033.js",
+      "https://mylesb.ca/_nuxt/227bd5e.js",
+      "https://mylesb.ca/_nuxt/a4eae39.js",
+      "https://mylesb.ca/_nuxt/a31d516.js",
+      "https://mylesb.ca/_nuxt/b3ba37a.js",
+      "https://mylesb.ca/_nuxt/static/1678666254/state.js",
+      "https://mylesb.ca/_nuxt/static/1678666254/payload.js",
+      "https://mylesb.ca/_nuxt/static/1678666254/manifest.js"
     ]
   },
   "rel-urls": {
-    "https://d33wubrfki0l68.cloudfront.net/css/79c9d61e6a02dfd8f7b11d6734317e72f5b4dbe1/assets/style.css": {
+    "https://mylesb.ca/favicon.png": {
       "rels": [
-        "stylesheet"
-      ]
+        "icon"
+      ],
+      "type": "image/png"
+    },
+    "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦖</text></svg>": {
+      "rels": [
+        "icon"
+      ],
+      "type": "image/svg+xml"
     },
     "https://mylesb.ca/": {
       "rels": [
@@ -143,6 +83,11 @@
         "me"
       ]
     },
+    "https://mastodon.social/@mylesb": {
+      "rels": [
+        "me"
+      ]
+    },
     "https://facebook.com/mylesbraithwaite": {
       "rels": [
         "me"
@@ -158,9 +103,9 @@
         "me"
       ]
     },
-    "https://mylesb.ca/uploads/0x5B423590.asc": {
+    "mailto:me@mylesb.ca": {
       "rels": [
-        "pgpkey"
+        "me"
       ]
     },
     "https://webmention.io/mylesb.ca/xmlrpc": {
@@ -178,80 +123,45 @@
         "microsub"
       ]
     },
-    "https://mylesb.ca/apple-touch-icon.png": {
+    "https://mylesb.ca/_nuxt/d1b7033.js": {
       "rels": [
-        "apple-touch-icon"
+        "preload"
       ]
     },
-    "https://mylesb.ca/favicon-32x32.png": {
+    "https://mylesb.ca/_nuxt/227bd5e.js": {
       "rels": [
-        "icon"
-      ],
-      "type": "image/png"
-    },
-    "https://mylesb.ca/favicon-16x16.png": {
-      "rels": [
-        "icon"
-      ],
-      "type": "image/png"
-    },
-    "https://mylesb.ca/site.webmanifest": {
-      "rels": [
-        "manifest"
+        "preload"
       ]
     },
-    "https://mylesb.ca/safari-pinned-tab.svg": {
+    "https://mylesb.ca/_nuxt/a4eae39.js": {
       "rels": [
-        "mask-icon"
+        "preload"
       ]
     },
-    "mailto:me@mylesb.ca": {
+    "https://mylesb.ca/_nuxt/a31d516.js": {
       "rels": [
-        "me"
-      ],
-      "text": "  Email"
+        "preload"
+      ]
     },
-    "https://mastodon.social/@mylesb": {
+    "https://mylesb.ca/_nuxt/b3ba37a.js": {
       "rels": [
-        "me"
-      ],
-      "text": "  Mastodon"
+        "preload"
+      ]
     },
-    "https://www.instagram.com/myles/": {
+    "https://mylesb.ca/_nuxt/static/1678666254/state.js": {
       "rels": [
-        "me"
-      ],
-      "text": "  Instagram"
+        "preload"
+      ]
     },
-    "https://linkedin.com/in/mylesbraithwaite/": {
+    "https://mylesb.ca/_nuxt/static/1678666254/payload.js": {
       "rels": [
-        "me"
-      ],
-      "text": "  LinkedIn"
+        "preload"
+      ]
     },
-    "https://mylesbraithwaite.com/": {
+    "https://mylesb.ca/_nuxt/static/1678666254/manifest.js": {
       "rels": [
-        "me"
-      ],
-      "text": "\n                                    \n                                        \n                                            Blog\n                                        https://mylesbraithwaite.com/\n                                    "
-    },
-    "https://braithwaite.io/": {
-      "rels": [
-        "me"
-      ],
-      "text": "\n                                    \n                                        \n                                            Braithwaite I/O\n                                        https://braithwaite.io/\n                                    "
-    },
-    "https://myles.photo/": {
-      "rels": [
-        "me"
-      ],
-      "text": "\n                                    \n                                        \n                                            Myles.PHOTO\n                                        https://myles.photo/\n                                    "
-    },
-    "https://instagram.com/myles": {
-      "rels": [
-        "me"
-      ],
-      "text": "\n                                    \n                                          Instagram\n                                    "
+        "preload"
+      ]
     }
   }
 }

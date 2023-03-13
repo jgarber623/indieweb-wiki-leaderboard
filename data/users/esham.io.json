@@ -19,6 +19,31 @@
       ],
       "properties": {
         "name": [
+          "A quick proof about the Fibonacci sequence"
+        ],
+        "url": [
+          "https://esham.io/2023/03/fibonacci"
+        ],
+        "uid": [
+          "https://esham.io/2023/03/fibonacci"
+        ],
+        "published": [
+          "2023-03-12T14:41:03-05:00"
+        ],
+        "content": [
+          {
+            "html": "<p>Software engineers use <a href=\"https://en.wikipedia.org/wiki/Fibonacci_sequence\">the Fibonacci numbers</a> in two equally important contexts: to demonstrate their knowledge of recursion during interviews, and to plan their work using <a href=\"https://en.wikipedia.org/wiki/Planning_poker\">story points</a>, which are time estimates but with plausible deniability. It was in the latter context that I noticed something about the Fibonacci sequence that I hadn’t before: each number is a little less than twice the preceding number, and in fact the difference is one of the earlier numbers in the sequence. If <span class=\"math inline\">\\(F_n\\)</span> is the <span class=\"math inline\">\\(n\\)</span>th Fibonacci number, then</p>\n<p><span class=\"math display\">\\[\n    F_n = 2 F_{n-1} - F_{n-3}\n\\]</span></p>\n<p>I always find these kinds of things easier to understand with examples—and I was in a JavaScript-y mood this morning—so here’s an interactive visualization of this fact. Click or tap on one of the numbers to see how it’s determined by the one before it and the one three before it.</p>\n<ul class=\"fibonacci-buttons\">\n<li>\n<button type=\"button\" data-fib-index=\"0\" disabled>\n1\n</button>\n</li>\n<li>\n<button type=\"button\" data-fib-index=\"1\" disabled>\n1\n</button>\n</li>\n<li>\n<button type=\"button\" data-fib-index=\"2\" disabled>\n2\n</button>\n</li>\n<li>\n<button type=\"button\" data-fib-index=\"3\">\n3\n</button>\n</li>\n<li>\n<button type=\"button\" data-fib-index=\"4\">\n5\n</button>\n</li>\n<li>\n<button type=\"button\" data-fib-index=\"5\">\n8\n</button>\n</li>\n<li>\n<button type=\"button\" data-fib-index=\"6\">\n13\n</button>\n</li>\n<li>\n<button type=\"button\" data-fib-index=\"7\">\n21\n</button>\n</li>\n<li>\n<button type=\"button\" data-fib-index=\"8\">\n34\n</button>\n</li>\n<li>\n<button type=\"button\" data-fib-index=\"9\">\n55\n</button>\n</li>\n<li>\n<button type=\"button\" data-fib-index=\"10\">\n89\n</button>\n</li>\n<li>\n<button type=\"button\" data-fib-index=\"11\">\n144\n</button>\n</li>\n<li>\n<button type=\"button\" data-fib-index=\"12\">\n233\n</button>\n</li>\n</ul>\n<p id=\"fibonacci-equation\" class=\"hidden\">\n<span class=\"selected\"></span> = 2 × <span class=\"nminus1\"></span> − <span class=\"nminus3\"></span> = <span class=\"product\"></span> − <span class=\"nminus3\"></span>\n</p>\n<p>This property is easy to prove. Let’s number the Fibonacci numbers <span class=\"math inline\">\\(F_n\\)</span> such that <span class=\"math inline\">\\(F_1 = 1\\)</span> and <span class=\"math inline\">\\(F_2 = 1\\)</span>, and let’s only consider the case where <span class=\"math inline\">\\(n \\geq 4\\)</span>, since our result is nonsensical if we go any earlier in the sequence than that. The <span class=\"math inline\">\\(n\\)</span>th Fibonacci number is defined as</p>\n<p><span class=\"math display\">\\[\n    F_n = F_{n-1} + F_{n-2} . \\tag{1}\n\\]</span></p>\n<p>Likewise, the previous number is given by</p>\n<p><span class=\"math display\">\\[\n    F_{n-1} = F_{n-2} + F_{n-3} .\n\\]</span></p>\n<p>Rearranging these terms, <span class=\"math display\">\\[\n    F_{n-2} = F_{n-1} - F_{n-3} .\n\\]</span></p>\n<p>If we plug this expression for <span class=\"math inline\">\\(F_{n-2}\\)</span> back into (1), we get</p>\n<p><span class=\"math display\">\\[\n\\begin{align*}\n    F_n &amp;= F_{n-1} + \\left( F_{n-1} - F_{n-3} \\right) \\\\\n        &amp;= 2 F_{n-1} - F_{n-3} ,\n\\end{align*}\n\\]</span></p>\n<p>exactly as we wanted to prove. Nothing earth-shattering here, but hey—<em>you</em> try to make it through a backlog grooming meeting without doing any recreational mathematics.</p>",
+            "value": "Software engineers use the Fibonacci numbers in two equally important contexts: to demonstrate their knowledge of recursion during interviews, and to plan their work using story points, which are time estimates but with plausible deniability. It was in the latter context that I noticed something about the Fibonacci sequence that I hadn’t before: each number is a little less than twice the preceding number, and in fact the difference is one of the earlier numbers in the sequence. If \\(F_n\\) is the \\(n\\)th Fibonacci number, then\n\\[\n    F_n = 2 F_{n-1} - F_{n-3}\n\\]\nI always find these kinds of things easier to understand with examples—and I was in a JavaScript-y mood this morning—so here’s an interactive visualization of this fact. Click or tap on one of the numbers to see how it’s determined by the one before it and the one three before it.\n\n\n\n1\n\n\n\n\n1\n\n\n\n\n2\n\n\n\n\n3\n\n\n\n\n5\n\n\n\n\n8\n\n\n\n\n13\n\n\n\n\n21\n\n\n\n\n34\n\n\n\n\n55\n\n\n\n\n89\n\n\n\n\n144\n\n\n\n\n233\n\n\n\n\n = 2 ×  −  =  − \n\nThis property is easy to prove. Let’s number the Fibonacci numbers \\(F_n\\) such that \\(F_1 = 1\\) and \\(F_2 = 1\\), and let’s only consider the case where \\(n \\geq 4\\), since our result is nonsensical if we go any earlier in the sequence than that. The \\(n\\)th Fibonacci number is defined as\n\\[\n    F_n = F_{n-1} + F_{n-2} . \\tag{1}\n\\]\nLikewise, the previous number is given by\n\\[\n    F_{n-1} = F_{n-2} + F_{n-3} .\n\\]\nRearranging these terms, \\[\n    F_{n-2} = F_{n-1} - F_{n-3} .\n\\]\nIf we plug this expression for \\(F_{n-2}\\) back into (1), we get\n\\[\n\\begin{align*}\n    F_n &= F_{n-1} + \\left( F_{n-1} - F_{n-3} \\right) \\\\\n        &= 2 F_{n-1} - F_{n-3} ,\n\\end{align*}\n\\]\nexactly as we wanted to prove. Nothing earth-shattering here, but hey—you try to make it through a backlog grooming meeting without doing any recreational mathematics."
+          }
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "name": [
           "What’s the smallest amount of currency that can’t be represented by a floating-point number?"
         ],
         "url": [
@@ -87,31 +112,6 @@
           }
         ]
       }
-    },
-    {
-      "type": [
-        "h-entry"
-      ],
-      "properties": {
-        "name": [
-          "Wikipedia curiosity of the day"
-        ],
-        "url": [
-          "https://esham.io/2019/09/mzscheme"
-        ],
-        "uid": [
-          "https://esham.io/2019/09/mzscheme"
-        ],
-        "published": [
-          "2019-09-22T18:00:23-05:00"
-        ],
-        "content": [
-          {
-            "html": "<p>The Vim text editor can run scripts written in several programming languages: Python, Ruby, and Lua, to name just three, and MzScheme, to name one more. I got curious about this last one. I assumed from the name that MzScheme is a dialect of Lisp, but I’ve never seen evidence of anyone actually writing a Vim script in this language. I popped open LaunchBar (whose ability to search Wikipedia <a href=\"https://esham.io/2019/04/launchbar-autocomplete\">I’ve mentioned before</a>), selected Wikipedia, and typed in “mzscheme,” which gave me these results:</p>\n<figure class=\"wide-container\">\n<img class=\"bordered rounded-mac-window\" src=\"https://esham.io/images/2019/09/mzscheme/suggestions.png\" srcset=\"https://esham.io/images/2019/09/mzscheme/suggestions@2x.png 2x\" width=\"500\" height=\"140\" alt=\"A screenshot of LaunchBar showing two search results: the articles on the Racket programming language and Abraham M. Schermerhorn.\">\n</figure>\n<p><em>That</em> wasn’t what I expected. Okay, apparently “MzScheme” is an older name for the programming language and environment that are <a href=\"https://racket-lang.org/new-name.html\">now called Racket</a>. But Abraham M. Scher­mer­horn was… the mayor of Rochester, New York? The city I used to live in? And he died in 1855, preceding even ancient Lisp by over a century. What the hell was he doing in the search results for “mzscheme”? It took me a lot of squinting to realize that “M. Scher­mer­horn” does sort of, a little bit, look like “mzscheme.”<a href=\"https://esham.io/#mzscheme_fn1\" class=\"footnote-ref\" id=\"mzscheme_fnref1\" role=\"doc-noteref\"><sup>1</sup></a></p>\n<p>One mystery still remains: why are Vim users so uninterested in writing scripts in Lisp? Snarky Emacs-related answers aside, I think the answer at this point may just be that many distributions ship a Vim that’s been compiled without support for Racket.<a href=\"https://esham.io/#mzscheme_fn2\" class=\"footnote-ref\" id=\"mzscheme_fnref2\" role=\"doc-noteref\"><sup>2</sup></a> <a href=\"https://github.com/vim/vim/issues/2596\">This issue thread</a> suggests that you can’t build a Racket-enabled Vim under Ubuntu unless you compile Racket yourself. Homebrew doesn’t include Racket support in <a href=\"https://github.com/Homebrew/homebrew-core/blob/master/Formula/vim.rb\">its formula for Vim</a>, and even the flexibility-obsessed Nix doesn’t offer Racket support in <a href=\"https://github.com/NixOS/nixpkgs/blob/35d68ef143412f579544eaac7aaa87e29f84b15e/pkgs/applications/editors/vim/configurable.nix\">its vim_configurable derivation</a>. This leads to a chicken-and-egg problem where people don’t script Vim with Racket because their copy of Vim doesn’t support that, and packagers don’t build in Racket support because no one is asking for it.</p>\n<section class=\"footnotes\" role=\"doc-endnotes\">\n<hr>\n<ol>\n<li id=\"mzscheme_fn1\" role=\"doc-endnote\"><p>Wikipedia has an article called “A. M. Schemerhorn”—note the missing “r”—that redirects to “Abraham M. Scher­mer­horn.” I don’t think the search algorithm would have even identified a match had this redirect not existed.<a href=\"https://esham.io/#mzscheme_fnref1\" class=\"footnote-back\" role=\"doc-backlink\">↩︎</a></p></li>\n<li id=\"mzscheme_fn2\" role=\"doc-endnote\"><p>If only Vim had supported the <abbr>GNU</abbr> flavor of Scheme instead, we could call these builds <a href=\"https://en.wikipedia.org/wiki/GNU_Guile\">guileless</a>.<a href=\"https://esham.io/#mzscheme_fnref2\" class=\"footnote-back\" role=\"doc-backlink\">↩︎</a></p></li>\n</ol>\n</section>",
-            "value": "The Vim text editor can run scripts written in several programming languages: Python, Ruby, and Lua, to name just three, and MzScheme, to name one more. I got curious about this last one. I assumed from the name that MzScheme is a dialect of Lisp, but I’ve never seen evidence of anyone actually writing a Vim script in this language. I popped open LaunchBar (whose ability to search Wikipedia I’ve mentioned before), selected Wikipedia, and typed in “mzscheme,” which gave me these results:\n\n A screenshot of LaunchBar showing two search results: the articles on the Racket programming language and Abraham M. Schermerhorn. \n\nThat wasn’t what I expected. Okay, apparently “MzScheme” is an older name for the programming language and environment that are now called Racket. But Abraham M. Scher­mer­horn was… the mayor of Rochester, New York? The city I used to live in? And he died in 1855, preceding even ancient Lisp by over a century. What the hell was he doing in the search results for “mzscheme”? It took me a lot of squinting to realize that “M. Scher­mer­horn” does sort of, a little bit, look like “mzscheme.”1\nOne mystery still remains: why are Vim users so uninterested in writing scripts in Lisp? Snarky Emacs-related answers aside, I think the answer at this point may just be that many distributions ship a Vim that’s been compiled without support for Racket.2 This issue thread suggests that you can’t build a Racket-enabled Vim under Ubuntu unless you compile Racket yourself. Homebrew doesn’t include Racket support in its formula for Vim, and even the flexibility-obsessed Nix doesn’t offer Racket support in its vim_configurable derivation. This leads to a chicken-and-egg problem where people don’t script Vim with Racket because their copy of Vim doesn’t support that, and packagers don’t build in Racket support because no one is asking for it.\n\n\n\nWikipedia has an article called “A. M. Schemerhorn”—note the missing “r”—that redirects to “Abraham M. Scher­mer­horn.” I don’t think the search algorithm would have even identified a match had this redirect not existed.↩︎\nIf only Vim had supported the GNU flavor of Scheme instead, we could call these builds guileless.↩︎"
-          }
-        ]
-      }
     }
   ],
   "rels": {
@@ -125,9 +125,6 @@
       "https://esham.io/style.css"
     ],
     "icon": [
-      "https://esham.io/images/favicon.png"
-    ],
-    "shortcut": [
       "https://esham.io/images/favicon.png"
     ],
     "apple-touch-icon": [
@@ -192,8 +189,7 @@
     },
     "https://esham.io/images/favicon.png": {
       "rels": [
-        "icon",
-        "shortcut"
+        "icon"
       ],
       "type": "image/png"
     },
