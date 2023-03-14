@@ -8,4 +8,4 @@ const opts = {
 };
 
 execFileSync('./scripts/build.js', opts);
-execFileSync('./scripts/scrape.js', opts);
+// execFileSync('./scripts/scrape.js', opts);
