@@ -91,18 +91,16 @@
     "replies": [
       "https://www.nite-lite.net/api/social/comments?resource=%2Fmime%2Fabout"
     ],
-    "preconnect": [
-      "https://fonts.gstatic.com/"
-    ],
     "manifest": [
       "https://www.nite-lite.net/manifest.json"
     ],
     "preload": [
-      "https://www.nite-lite.net/_next/static/css/c09e949ff63c6689.css"
+      "https://www.nite-lite.net/_next/static/media/a7ce3066b936c5b8-s.p.woff2",
+      "https://www.nite-lite.net/_next/static/media/d26a30eb7256cd7c-s.p.woff2",
+      "https://www.nite-lite.net/_next/static/css/cf7433fe0cfd782f.css"
     ],
     "stylesheet": [
-      "https://www.nite-lite.net/_next/static/css/c09e949ff63c6689.css",
-      "https://fonts.googleapis.com/css2?family=Press Start 2P&display=block"
+      "https://www.nite-lite.net/_next/static/css/cf7433fe0cfd782f.css"
     ],
     "noopener": [
       "http://creativecommons.org/licenses/by/3.0/"
@@ -161,11 +159,6 @@
       ],
       "type": "application/atom+xml"
     },
-    "https://fonts.gstatic.com/": {
-      "rels": [
-        "preconnect"
-      ]
-    },
     "https://www.nite-lite.net/humans.txt": {
       "rels": [
         "author"
@@ -176,14 +169,21 @@
         "manifest"
       ]
     },
-    "https://www.nite-lite.net/_next/static/css/c09e949ff63c6689.css": {
+    "https://www.nite-lite.net/_next/static/media/a7ce3066b936c5b8-s.p.woff2": {
       "rels": [
         "preload"
-      ]
+      ],
+      "type": "font/woff2"
     },
-    "https://fonts.googleapis.com/css2?family=Press Start 2P&display=block": {
+    "https://www.nite-lite.net/_next/static/media/d26a30eb7256cd7c-s.p.woff2": {
       "rels": [
-        "stylesheet"
+        "preload"
+      ],
+      "type": "font/woff2"
+    },
+    "https://www.nite-lite.net/_next/static/css/cf7433fe0cfd782f.css": {
+      "rels": [
+        "preload"
       ]
     },
     "http://creativecommons.org/licenses/by/3.0/": {

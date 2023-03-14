@@ -35,6 +35,25 @@
           ],
           "properties": {
             "published": [
+              "2023-03-13T20:55:07-04:00"
+            ],
+            "content": [
+              {
+                "html": "<p>This blog was once served with Wordpress and was a Mastodon/ActivityPub client (it still is!) thanks to Matthias Plefferlie’s AP plugin. I had a very tiny helping hand in filing a few Github issues for it, and talking to him about how it works so I could debug some stuff on my particular installation.</p>\n<p>With all the popularity of ActivityPub raging, it seems Automattic, the codebearers for Wordpress have given the ultimate blessing to Matthias, in the form of “acquire-hire” magic\":\n<a href=\"https://techcrunch.com/2023/03/13/wordpress-com-owner-automattic-acquires-an-activitypub-plugin-so-blogs-can-join-the-fediverse/\" target=\"_blank\" rel=\"noopener\">WordPress.com owner Automattic acquires an ActivityPub plugin so blogs can join the Fediverse</a></p>\n<p>Congratulations Matthias! Even though this blog uses a different engine now, I owe a lot to that plugin for getting me started in thinking that my blog can also be a social media hub. And who knows. I still might wander back to Wordpress at some point I’m sure. There’s just too much that you can do in WP these days. 💫\n<a href=\"https://starrwulfe.xyz/fed.brid.gy\"></a></p>\n<a href=\"https://starrwulfe.xyz/fed.brid.gy\"></a>",
+                "value": "This blog was once served with Wordpress and was a Mastodon/ActivityPub client (it still is!) thanks to Matthias Plefferlie’s AP plugin. I had a very tiny helping hand in filing a few Github issues for it, and talking to him about how it works so I could debug some stuff on my particular installation.With all the popularity of ActivityPub raging, it seems Automattic, the codebearers for Wordpress have given the ultimate blessing to Matthias, in the form of “acquire-hire” magic\":\nWordPress.com owner Automattic acquires an ActivityPub plugin so blogs can join the FediverseCongratulations Matthias! Even though this blog uses a different engine now, I owe a lot to that plugin for getting me started in thinking that my blog can also be a social media hub. And who knows. I still might wander back to Wordpress at some point I’m sure. There’s just too much that you can do in WP these days. 💫"
+              }
+            ],
+            "url": [
+              "https://starrwulfe.xyz/notes/2023313-wordpress-activitypub-plugin"
+            ]
+          }
+        },
+        {
+          "type": [
+            "h-entry"
+          ],
+          "properties": {
+            "published": [
               "2023-03-07T09:00:00-05:00"
             ],
             "content": [
@@ -581,44 +600,6 @@
               "https://starrwulfe.xyz/notes/2023/02/25-how-I-became-a-microblogger"
             ]
           }
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "published": [
-              "2023-02-25T20:30:15-05:00"
-            ],
-            "in-reply-to": [
-              {
-                "type": [
-                  "h-cite"
-                ],
-                "properties": {
-                  "url": [
-                    "https://github.com/jlelse/GoBlog/discussions/55"
-                  ],
-                  "content": [
-                    {
-                      "html": "Update: There's a new plugin for custom CSS. I hope that is a first helpful step. Feel free to share your thoughts!",
-                      "value": "Update: There's a new plugin for custom CSS. I hope that is a first helpful step. Feel free to share your thoughts!"
-                    }
-                  ]
-                },
-                "value": "https://github.com/jlelse/GoBlog/discussions/55"
-              }
-            ],
-            "content": [
-              {
-                "html": "<p>Thanks @jlelse! Going to pull down the changes and see if I can’t do a little light customization here.</p>\n<p>I have some other ideas I’d like to ask about in terms of improving GoBlog if it’s ok… Can I make separate issues for them?\n<a href=\"https://brid.gy/publish/github\"></a></p>",
-                "value": "Thanks @jlelse! Going to pull down the changes and see if I can’t do a little light customization here.I have some other ideas I’d like to ask about in terms of improving GoBlog if it’s ok… Can I make separate issues for them?"
-              }
-            ],
-            "url": [
-              "https://starrwulfe.xyz/dev/github.com/jlelse/GoBlog/discussions/55"
-            ]
-          }
         }
       ]
     }
@@ -681,6 +662,7 @@
       "https://starrwulfe.xyz/"
     ],
     "noopener": [
+      "https://techcrunch.com/2023/03/13/wordpress-com-owner-automattic-acquires-an-activitypub-plugin-so-blogs-can-join-the-fediverse/",
       "https://famichiki.jp/@brian/109947712763452411",
       "https://www.openstreetmap.org/?mlat=33.7912&mlon=-84.39891",
       "https://famichiki.jp/@brian/109940585467339690",
@@ -690,8 +672,7 @@
       "https://flipboard.social/@kseber/109943932936767784",
       "https://social.vivaldi.net/@pixelfed@mastodon.social/109915721682264949",
       "https://kandr3s.co/notes/2023-02-26-arpls",
-      "https://jasonmcfadden.com/2023/02/25/how-i-became.html",
-      "https://github.com/jlelse/GoBlog/discussions/55"
+      "https://jasonmcfadden.com/2023/02/25/how-i-became.html"
     ],
     "nofollow": [
       "https://www.openstreetmap.org/?mlat=33.7912&mlon=-84.39891"
@@ -845,6 +826,12 @@
         "apple-touch-icon"
       ]
     },
+    "https://techcrunch.com/2023/03/13/wordpress-com-owner-automattic-acquires-an-activitypub-plugin-so-blogs-can-join-the-fediverse/": {
+      "rels": [
+        "noopener"
+      ],
+      "text": "WordPress.com owner Automattic acquires an ActivityPub plugin so blogs can join the Fediverse"
+    },
     "https://famichiki.jp/@brian/109947712763452411": {
       "rels": [
         "noopener"
@@ -911,12 +898,6 @@
         "noopener"
       ],
       "text": "How I Became A Micro.blogger"
-    },
-    "https://github.com/jlelse/GoBlog/discussions/55": {
-      "rels": [
-        "noopener"
-      ],
-      "text": "Customizing GoBlog while in containers · Discussion #55"
     }
   }
 }

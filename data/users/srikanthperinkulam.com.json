@@ -30,10 +30,10 @@
       "https://srikanthperinkulam.com/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
       "https://srikanthperinkulam.com/wp-content/plugins/indieweb-post-kinds/css/kind.min.css?ver=3.6.4",
       "https://srikanthperinkulam.com/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.12.0",
-      "https://srikanthperinkulam.com/wp-content/themes/neve/assets/css/style-legacy.min.css?ver=3.5.4",
+      "https://srikanthperinkulam.com/wp-content/themes/neve/style-main-new.min.css?ver=3.5.5",
       "https://srikanthperinkulam.com/wp-content/plugins/tablepress/css/build/default.css?ver=2.0.4",
       "https://srikanthperinkulam.com/wp-content/plugins/syndication-links/css/syn-bw-medium.min.css?ver=4.4.7",
-      "https://srikanthperinkulam.com/wp-content/themes/neve-child-master/style.css?ver=3.5.4",
+      "https://srikanthperinkulam.com/wp-content/themes/neve-child-master/style.css?ver=3.5.5",
       "https://srikanthperinkulam.com/wp-content/plugins/category-specific-rss-feed-menu/wp_cat_rss_style.css"
     ],
     "https://api.w.org/": [
@@ -103,6 +103,10 @@
       "https://srikanthperinkulam.com/kind/play/",
       "https://srikanthperinkulam.com/kind/read/",
       "https://srikanthperinkulam.com/kind/note/"
+    ],
+    "nofollow": [
+      "https://themeisle.com/themes/neve/",
+      "http://wordpress.org/"
     ]
   },
   "rel-urls": {
@@ -249,7 +253,7 @@
       "media": "all",
       "type": "text/css"
     },
-    "https://srikanthperinkulam.com/wp-content/themes/neve/assets/css/style-legacy.min.css?ver=3.5.4": {
+    "https://srikanthperinkulam.com/wp-content/themes/neve/style-main-new.min.css?ver=3.5.5": {
       "rels": [
         "stylesheet"
       ],
@@ -270,7 +274,7 @@
       "media": "all",
       "type": "text/css"
     },
-    "https://srikanthperinkulam.com/wp-content/themes/neve-child-master/style.css?ver=3.5.4": {
+    "https://srikanthperinkulam.com/wp-content/themes/neve-child-master/style.css?ver=3.5.5": {
       "rels": [
         "stylesheet"
       ],
@@ -492,6 +496,18 @@
       "title": "Srikanth Perinkulam Note Feed",
       "type": "text/html",
       "text": "Notes (57)"
+    },
+    "https://themeisle.com/themes/neve/": {
+      "rels": [
+        "nofollow"
+      ],
+      "text": "Neve"
+    },
+    "http://wordpress.org/": {
+      "rels": [
+        "nofollow"
+      ],
+      "text": "WordPress"
     }
   }
 }

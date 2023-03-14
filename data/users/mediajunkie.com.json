@@ -6,8 +6,9 @@
       "https://mediajunkie.com/comments/feed/"
     ],
     "stylesheet": [
-      "https://mediajunkie.com/wp-includes/blocks/navigation/style.min.css?ver=6.1.1",
-      "https://mediajunkie.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.7.2",
+      "https://mediajunkie.com/wp-includes/blocks/social-links/style.min.css?ver=6.1.1",
+      "https://mediajunkie.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.7.4",
+      "https://mediajunkie.com/wp-content/plugins/fediembedi/assets/mastodon.css?ver=1668355440",
       "https://mediajunkie.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70"
     ],
     "https://api.w.org/": [
@@ -21,6 +22,9 @@
     ],
     "canonical": [
       "https://mediajunkie.com/"
+    ],
+    "friends-base-url": [
+      "https://mediajunkie.com/wp-json/friends/v1"
     ],
     "icon": [
       "https://mediajunkie.com/wp-content/uploads/2023/03/mediajunkie-80x80.gif",
@@ -51,13 +55,19 @@
       "title": "Mediajunkie » Comments Feed",
       "type": "application/rss+xml"
     },
-    "https://mediajunkie.com/wp-includes/blocks/navigation/style.min.css?ver=6.1.1": {
+    "https://mediajunkie.com/wp-includes/blocks/social-links/style.min.css?ver=6.1.1": {
       "rels": [
         "stylesheet"
       ],
       "media": "all"
     },
-    "https://mediajunkie.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.7.2": {
+    "https://mediajunkie.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.7.4": {
+      "rels": [
+        "stylesheet"
+      ],
+      "media": "all"
+    },
+    "https://mediajunkie.com/wp-content/plugins/fediembedi/assets/mastodon.css?ver=1668355440": {
       "rels": [
         "stylesheet"
       ],
@@ -90,6 +100,11 @@
     "https://mediajunkie.com/": {
       "rels": [
         "canonical"
+      ]
+    },
+    "https://mediajunkie.com/wp-json/friends/v1": {
+      "rels": [
+        "friends-base-url"
       ]
     },
     "https://mediajunkie.com/wp-content/uploads/2023/03/mediajunkie-80x80.gif": {

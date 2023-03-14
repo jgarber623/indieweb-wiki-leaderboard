@@ -1,5 +1,50 @@
 {
   "items": [],
-  "rels": {},
-  "rel-urls": {}
+  "rels": {
+    "canonical": [
+      "http://andymatic.com/author/admin"
+    ],
+    "alternate": [
+      "http://andymatic.com/author/admin",
+      "http://andymatic.com/rss.xml"
+    ],
+    "search": [
+      "http://andymatic.com/sitemap.xml"
+    ],
+    "stylesheet": [
+      "https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css",
+      "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    ]
+  },
+  "rel-urls": {
+    "http://andymatic.com/author/admin": {
+      "rels": [
+        "canonical"
+      ]
+    },
+    "http://andymatic.com/sitemap.xml": {
+      "rels": [
+        "search"
+      ],
+      "title": "andymatic.com SITEMAP",
+      "type": "application/opensearchdescription+xml"
+    },
+    "http://andymatic.com/rss.xml": {
+      "rels": [
+        "alternate"
+      ],
+      "title": "ANDYMATIC.COM RSS",
+      "type": "application/rss+xml"
+    },
+    "https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    },
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css": {
+      "rels": [
+        "stylesheet"
+      ]
+    }
+  }
 }

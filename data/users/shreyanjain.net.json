@@ -2,708 +2,23 @@
   "items": [
     {
       "type": [
-        "h-feed"
+        "h-entry"
       ],
       "properties": {
         "name": [
-          "Shreyan Jain's Blog"
+          "About Me"
         ],
         "url": [
           "https://shreyanjain.net/"
         ],
-        "summary": [
-          ""
-        ],
         "content": [
           {
-            "html": "",
-            "value": ""
+            "html": "<p>Hi, I’m Shreyan.</p>\r\n\r\n\r\n\r\n<p>I’m a highly opinionated technology geek who likes to play around with computers.</p>\r\n\r\n\r\n\r\n<p>This is my blog. It also serves as an IndieWeb/Micropub site from where I can POSSE small “microposts” to Twitter and Mastodon. </p>",
+            "value": "Hi, I’m Shreyan.\r\n\r\n\r\n\r\nI’m a highly opinionated technology geek who likes to play around with computers.\r\n\r\n\r\n\r\nThis is my blog. It also serves as an IndieWeb/Micropub site from where I can POSSE small “microposts” to Twitter and Mastodon. "
           }
         ]
       },
-      "children": [
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "repost-of": [
-              {
-                "type": [
-                  "h-cite"
-                ],
-                "properties": {
-                  "name": [
-                    "https://aaronparecki.com/2023/03/09/5/bluesky-and-oauth"
-                  ],
-                  "url": [
-                    "https://aaronparecki.com/2023/03/09/5/bluesky-and-oauth"
-                  ],
-                  "publication": [
-                    "aaronparecki.com"
-                  ],
-                  "summary": [
-                    {
-                      "html": "",
-                      "value": ""
-                    }
-                  ]
-                },
-                "value": "https://aaronparecki.com/2023/03/09/5/bluesky-and-oauth"
-              }
-            ],
-            "content": [
-              {
-                "html": "",
-                "value": ""
-              }
-            ],
-            "url": [
-              "https://shreyanjain.net/2023/03/12/131/"
-            ],
-            "updated": [
-              "2023-03-12T23:42:14+00:00"
-            ],
-            "published": [
-              "2023-03-12T23:42:14+00:00"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "photo": [
-                    {
-                      "value": "https://secure.gravatar.com/avatar/8688a1a0649869ef7bae3bd89fa2cdba?s=90&d=retro&r=g",
-                      "srcset": {
-                        "2x": "https://secure.gravatar.com/avatar/8688a1a0649869ef7bae3bd89fa2cdba?s=180&d=retro&r=g"
-                      },
-                      "alt": ""
-                    }
-                  ],
-                  "url": [
-                    "https://shreyanjain.net/"
-                  ],
-                  "uid": [
-                    "https://shreyanjain.net/"
-                  ],
-                  "name": [
-                    "Shreyan Jain"
-                  ]
-                },
-                "value": "Shreyan Jain"
-              }
-            ]
-          },
-          "id": "post-131"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "in-reply-to": [
-              {
-                "type": [
-                  "h-cite"
-                ],
-                "properties": {
-                  "name": [
-                    "https://aaronparecki.com/2023/03/09/15/bluesky"
-                  ],
-                  "url": [
-                    "https://aaronparecki.com/2023/03/09/15/bluesky"
-                  ],
-                  "author": [
-                    {
-                      "type": [
-                        "h-card"
-                      ],
-                      "properties": {
-                        "photo": [
-                          {
-                            "value": "https://aaronparecki.com/images/profile.jpg",
-                            "alt": "Aaron Parecki"
-                          }
-                        ],
-                        "name": [
-                          "Aaron Parecki"
-                        ]
-                      },
-                      "value": "Aaron Parecki"
-                    }
-                  ],
-                  "publication": [
-                    "aaronparecki.com"
-                  ],
-                  "summary": [
-                    {
-                      "html": "I wrote up some thoughts about how Bluesky can/should support OAuth, both for applications to access users' accounts, as well as allowing users to log in to their bsky.social account using their own website!\n\nhttps://aaronparecki.com/2023/03/09/5/bluesky-and-oauth",
-                      "value": "I wrote up some thoughts about how Bluesky can/should support OAuth, both for applications to access users' accounts, as well as allowing users to log in to their bsky.social account using their own website!\n\nhttps://aaronparecki.com/2023/03/09/5/bluesky-and-oauth"
-                    }
-                  ]
-                },
-                "value": "https://aaronparecki.com/2023/03/09/15/bluesky"
-              }
-            ],
-            "content": [
-              {
-                "html": "<p>Oh yeah definitely. BlueSky should both accept IndieAuth as a signin method and work as an IndieAuth provider – especially since usernames are domain names anyways. And of course hopefully eventually they’ll interoperate with ActivityPub, Micropub, etc…</p>\n<div class=\"sloc-display p-location h-adr\">\n<span class=\"sloc-location-icon sloc-icon-fa-location-arrow\" style=\"display: inline-block; max-height: 1em; margin-right: 0.1em;\" aria-hidden=\"true\" aria-label=\"Location Arrow\" title=\"Location Arrow\"><svg aria-hidden=\"true\" focusable=\"false\" data-prefix=\"fas\" data-icon=\"location-arrow\" class=\"svg-inline--fa fa-location-arrow fa-w-16\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 512 512\"><path fill=\"currentColor\" d=\"M444.52 3.52L28.74 195.42c-47.97 22.39-31.98 92.75 19.19 92.75h175.91v175.91c0 51.17 70.36 67.17 92.75 19.19l191.9-415.78c15.99-38.39-25.59-79.97-63.97-63.97z\"></path></svg></span>\n\n\n<data class=\"p-latitude\" value=\"37.341700\"></data><data class=\"p-longitude\" value=\"-121.975300\"></data>\n<span class=\"p-label\">Central Park Pavillion, Santa Clara, CA</span>\n</div>",
-                "value": "Oh yeah definitely. BlueSky should both accept IndieAuth as a signin method and work as an IndieAuth provider – especially since usernames are domain names anyways. And of course hopefully eventually they’ll interoperate with ActivityPub, Micropub, etc…\n\n\n\n\n\nCentral Park Pavillion, Santa Clara, CA"
-              }
-            ],
-            "summary": [
-              "Oh yeah definitely. BlueSky should both accept IndieAuth as a signin method and work as an IndieAuth provider – especially since usernames are domain names anyways. And of course hopefully eventually they’ll interoperate with ActivityPub, Micropub, etc…\n\n\n\n\n\nCentral Park Pavillion, Santa Clara, CA"
-            ],
-            "name": [
-              "Oh yeah definitely. BlueSky should both accept IndieAuth as a signin method and work as an IndieAuth provider – especially since usernames are domain names anyways. And of course hopefully eventually they’ll interoperate with ActivityPub, Micropub, etc…\n\n\n\n\n\nCentral Park Pavillion, Santa Clara, CA"
-            ],
-            "location": [
-              {
-                "type": [
-                  "h-adr"
-                ],
-                "properties": {
-                  "latitude": [
-                    "37.341700"
-                  ],
-                  "longitude": [
-                    "-121.975300"
-                  ],
-                  "label": [
-                    "Central Park Pavillion, Santa Clara, CA"
-                  ]
-                },
-                "value": "Central Park Pavillion, Santa Clara, CA"
-              }
-            ],
-            "url": [
-              "https://shreyanjain.net/2023/03/12/130/"
-            ],
-            "updated": [
-              "2023-03-12T16:40:01-07:00"
-            ],
-            "published": [
-              "2023-03-12T16:40:01-07:00"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "photo": [
-                    {
-                      "value": "https://secure.gravatar.com/avatar/8688a1a0649869ef7bae3bd89fa2cdba?s=90&d=retro&r=g",
-                      "srcset": {
-                        "2x": "https://secure.gravatar.com/avatar/8688a1a0649869ef7bae3bd89fa2cdba?s=180&d=retro&r=g"
-                      },
-                      "alt": ""
-                    }
-                  ],
-                  "url": [
-                    "https://shreyanjain.net/"
-                  ],
-                  "uid": [
-                    "https://shreyanjain.net/"
-                  ],
-                  "name": [
-                    "Shreyan Jain"
-                  ]
-                },
-                "value": "Shreyan Jain"
-              }
-            ],
-            "category": [
-              "bluesky",
-              "indieauth",
-              "indieweb",
-              "micropub"
-            ],
-            "syndication": [
-              "https://fed.brid.gy/"
-            ]
-          },
-          "id": "post-130"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "content": [
-              {
-                "html": "<p>first micropub \"tweet\"</p>\n<div class=\"sloc-display p-location h-adr\">\n<span class=\"sloc-location-icon sloc-icon-fa-location-arrow\" style=\"display: inline-block; max-height: 1em; margin-right: 0.1em;\" aria-hidden=\"true\" aria-label=\"Location Arrow\" title=\"Location Arrow\"><svg aria-hidden=\"true\" focusable=\"false\" data-prefix=\"fas\" data-icon=\"location-arrow\" class=\"svg-inline--fa fa-location-arrow fa-w-16\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 512 512\"><path fill=\"currentColor\" d=\"M444.52 3.52L28.74 195.42c-47.97 22.39-31.98 92.75 19.19 92.75h175.91v175.91c0 51.17 70.36 67.17 92.75 19.19l191.9-415.78c15.99-38.39-25.59-79.97-63.97-63.97z\"></path></svg></span>\n\n\n<data class=\"p-latitude\" value=\"37.346710\"></data><data class=\"p-longitude\" value=\"-121.974960\"></data>\n<span class=\"p-label\">2601 Sonoma Place, Santa Clara, CA</span>\n</div>",
-                "value": "first micropub \"tweet\"\n\n\n\n\n\n2601 Sonoma Place, Santa Clara, CA"
-              }
-            ],
-            "summary": [
-              "first micropub \"tweet\"\n\n\n\n\n\n2601 Sonoma Place, Santa Clara, CA"
-            ],
-            "name": [
-              "first micropub \"tweet\"\n\n\n\n\n\n2601 Sonoma Place, Santa Clara, CA"
-            ],
-            "location": [
-              {
-                "type": [
-                  "h-adr"
-                ],
-                "properties": {
-                  "latitude": [
-                    "37.346710"
-                  ],
-                  "longitude": [
-                    "-121.974960"
-                  ],
-                  "label": [
-                    "2601 Sonoma Place, Santa Clara, CA"
-                  ]
-                },
-                "value": "2601 Sonoma Place, Santa Clara, CA"
-              }
-            ],
-            "url": [
-              "https://shreyanjain.net/2023/03/12/99/"
-            ],
-            "updated": [
-              "2023-03-12T12:23:29-07:00"
-            ],
-            "published": [
-              "2023-03-12T12:23:29-07:00"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "photo": [
-                    {
-                      "value": "https://secure.gravatar.com/avatar/8688a1a0649869ef7bae3bd89fa2cdba?s=90&d=retro&r=g",
-                      "srcset": {
-                        "2x": "https://secure.gravatar.com/avatar/8688a1a0649869ef7bae3bd89fa2cdba?s=180&d=retro&r=g"
-                      },
-                      "alt": ""
-                    }
-                  ],
-                  "url": [
-                    "https://shreyanjain.net/"
-                  ],
-                  "uid": [
-                    "https://shreyanjain.net/"
-                  ],
-                  "name": [
-                    "Shreyan Jain"
-                  ]
-                },
-                "value": "Shreyan Jain"
-              }
-            ],
-            "category": [
-              "#micropub"
-            ],
-            "syndication": [
-              "https://fed.brid.gy/"
-            ]
-          },
-          "id": "post-99"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Redefining Web3"
-            ],
-            "url": [
-              "https://shreyanjain.net/2023/01/16/redefining-web3/",
-              "https://shreyanjain.net/2023/01/16/redefining-web3/"
-            ],
-            "updated": [
-              "2023-01-16T18:46:04+00:00"
-            ],
-            "published": [
-              "2023-01-16T18:46:04+00:00"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "photo": [
-                    {
-                      "value": "https://secure.gravatar.com/avatar/8688a1a0649869ef7bae3bd89fa2cdba?s=90&d=retro&r=g",
-                      "srcset": {
-                        "2x": "https://secure.gravatar.com/avatar/8688a1a0649869ef7bae3bd89fa2cdba?s=180&d=retro&r=g"
-                      },
-                      "alt": ""
-                    }
-                  ],
-                  "url": [
-                    "https://shreyanjain.net/"
-                  ],
-                  "uid": [
-                    "https://shreyanjain.net/"
-                  ],
-                  "name": [
-                    "Shreyan Jain"
-                  ]
-                },
-                "value": "Shreyan Jain"
-              }
-            ],
-            "content": [
-              {
-                "html": "<p><a href=\"https://terrenly.com/2023/01/14/web3-is-broken/\"><em>Web3 is broken.</em></a></p>\n<p>So how do we fix it?</p>\n<p>For starters, we need to redefine it.</p>\n<p>To recap, what’s actually wrong with Web3? Web3 as a term was coined in 2014 by one of the co-creators of the Ethereum blockchain, Gavin Wood, imagining a decentralized web powered by blockchain, “combining the decentralization of Web 1.0 with the ease of Web 2.0”. This is Web3’s biggest issue – it has an extreme fixation on blockchain. Yes, blockchain is a good piece of tech. But it’s not a catch-all solution for every Web 2.0 problem that Web3 wants to fix.</p>\n<p>This view of Web3 as a “blockchain-based web” is incredibly short-sighted. Besides, it seems as though the recent crypto-blockchain-web3 movement has completely forgotten about the *other* time somebody coined the term Web 3.0, that time referring to something else entirely.</p>\n<p>Let’s go back to 2009 for a second, to a slideshow created by Tim Berners-Lee, who is widely known for being the inventor of the World Wide Web. In this slideshow, he explains another, entirely separate concept for a user-controlled open-standards based decentralized version of the modern web where Big Tech’s walled gardens would be absent. And what does he call it? Web 3.0.</p>\n<p><iframe title=\"Tim Berners-Lee: The next web\" src=\"https://embed.ted.com/talks/tim_berners_lee_the_next_web\" width=\"880\" height=\"496\" frameborder=\"0\" scrolling=\"no\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>\n<p>https://www.w3.org/2009/Talks/0427-web30-tbl</p>\n<p>His version of Web 3.0 isn’t based on blockchain. Instead, it relies on a concept known as the Semantic Web — an extension of the World Wide Web in which information is given well-defined meaning, making it easier for computers to understand and process. It’s based on the idea of using a common language (such as RDF and OWL) to describe and link data, so that it can be easily understood and used by machines as well as humans. The goal of the Semantic Web is to create a more intelligent and interconnected web, where data can be easily shared and reused across different applications and systems. For further understanding of what linked data is all about, go to both links above and watch/click through all of it.</p>\n<p>Now, hearing a presentation about it and seeing a slideshow all feels really abstract. More recently, Tim Berners-Lee has been working to create an actual implementation of such an idea. Even he shies away from using the term Web 3.0 now, since blockchain folks have so thoroughly appropriated it.</p>\n<p>The Solid project, which is a short form for “Social Linked Data”, aims to do exactly this. It’s a web decentralization project formed around this concept of the Semantic Web and linked data. I’m not going to spend too much time explaining Solid when somebody else, namely <a href=\"https://www.fastcompany.com/90807852/tim-berners-lee-inrupt-solid-pods\">this article</a>, has already done it far better than I can.</p>\n<p>Instead, I’m going to take the rest of this article to focus on some good examples of what web decentralization can look like independently of and alongside ideas like Solid. Let’s go back to Web3’s supposed original goal of “combining the decentralization of Web 1.0 with the ease of Web 2.0”. There are existing technologies out there which are attempting to do this, and the future is bright if we all adopt them instead.</p>\n<p>One is the W3C’s own ActivityPub, an open standard for interconnected, federated social networks. The most famous use of the ActivityPub protocol is Mastodon, the microblogging-based social network that recently grew in popularity after Elon Musk’s takeover of Twitter. But part of the power of ActivityPub is that even non-Mastodon users can interact with Mastodon over the protocol. Examples include PixelFed — an Instagram alternative for a decentralized web, and PeerTube — YouTube but BitTorrent-based and federated through ActivityPub.</p>\n<p>The network of interconnected servers running various ActivityPub-based software is known as the fediverse, and it’s a perfect example of what a good “Web 3.0” project should look like.</p>\n<p>Another such protocol is Matrix, a chat protocol for the open web (although while on the subject of open-source chat protocols, I should mention that XMPP/Jabber is still supreme and companies should adopt it again).</p>\n<p>This is what a decentralized web should look like. Unfortunately, it’s highly unlikely that given the world’s perception of Web3 at this point, the term can be redefined more generically as a decentralized web.</p>",
-                "value": "Web3 is broken.\nSo how do we fix it?\nFor starters, we need to redefine it.\nTo recap, what’s actually wrong with Web3? Web3 as a term was coined in 2014 by one of the co-creators of the Ethereum blockchain, Gavin Wood, imagining a decentralized web powered by blockchain, “combining the decentralization of Web 1.0 with the ease of Web 2.0”. This is Web3’s biggest issue – it has an extreme fixation on blockchain. Yes, blockchain is a good piece of tech. But it’s not a catch-all solution for every Web 2.0 problem that Web3 wants to fix.\nThis view of Web3 as a “blockchain-based web” is incredibly short-sighted. Besides, it seems as though the recent crypto-blockchain-web3 movement has completely forgotten about the *other* time somebody coined the term Web 3.0, that time referring to something else entirely.\nLet’s go back to 2009 for a second, to a slideshow created by Tim Berners-Lee, who is widely known for being the inventor of the World Wide Web. In this slideshow, he explains another, entirely separate concept for a user-controlled open-standards based decentralized version of the modern web where Big Tech’s walled gardens would be absent. And what does he call it? Web 3.0.\n\nhttps://www.w3.org/2009/Talks/0427-web30-tbl\nHis version of Web 3.0 isn’t based on blockchain. Instead, it relies on a concept known as the Semantic Web — an extension of the World Wide Web in which information is given well-defined meaning, making it easier for computers to understand and process. It’s based on the idea of using a common language (such as RDF and OWL) to describe and link data, so that it can be easily understood and used by machines as well as humans. The goal of the Semantic Web is to create a more intelligent and interconnected web, where data can be easily shared and reused across different applications and systems. For further understanding of what linked data is all about, go to both links above and watch/click through all of it.\nNow, hearing a presentation about it and seeing a slideshow all feels really abstract. More recently, Tim Berners-Lee has been working to create an actual implementation of such an idea. Even he shies away from using the term Web 3.0 now, since blockchain folks have so thoroughly appropriated it.\nThe Solid project, which is a short form for “Social Linked Data”, aims to do exactly this. It’s a web decentralization project formed around this concept of the Semantic Web and linked data. I’m not going to spend too much time explaining Solid when somebody else, namely this article, has already done it far better than I can.\nInstead, I’m going to take the rest of this article to focus on some good examples of what web decentralization can look like independently of and alongside ideas like Solid. Let’s go back to Web3’s supposed original goal of “combining the decentralization of Web 1.0 with the ease of Web 2.0”. There are existing technologies out there which are attempting to do this, and the future is bright if we all adopt them instead.\nOne is the W3C’s own ActivityPub, an open standard for interconnected, federated social networks. The most famous use of the ActivityPub protocol is Mastodon, the microblogging-based social network that recently grew in popularity after Elon Musk’s takeover of Twitter. But part of the power of ActivityPub is that even non-Mastodon users can interact with Mastodon over the protocol. Examples include PixelFed — an Instagram alternative for a decentralized web, and PeerTube — YouTube but BitTorrent-based and federated through ActivityPub.\nThe network of interconnected servers running various ActivityPub-based software is known as the fediverse, and it’s a perfect example of what a good “Web 3.0” project should look like.\nAnother such protocol is Matrix, a chat protocol for the open web (although while on the subject of open-source chat protocols, I should mention that XMPP/Jabber is still supreme and companies should adopt it again).\nThis is what a decentralized web should look like. Unfortunately, it’s highly unlikely that given the world’s perception of Web3 at this point, the term can be redefined more generically as a decentralized web."
-              }
-            ]
-          },
-          "id": "post-94"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Web3 is Broken"
-            ],
-            "url": [
-              "https://shreyanjain.net/2023/01/14/web3-is-broken/",
-              "https://shreyanjain.net/2023/01/14/web3-is-broken/"
-            ],
-            "updated": [
-              "2023-01-14T19:37:25+00:00"
-            ],
-            "published": [
-              "2023-01-14T19:37:25+00:00"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "photo": [
-                    {
-                      "value": "https://secure.gravatar.com/avatar/8688a1a0649869ef7bae3bd89fa2cdba?s=90&d=retro&r=g",
-                      "srcset": {
-                        "2x": "https://secure.gravatar.com/avatar/8688a1a0649869ef7bae3bd89fa2cdba?s=180&d=retro&r=g"
-                      },
-                      "alt": ""
-                    }
-                  ],
-                  "url": [
-                    "https://shreyanjain.net/"
-                  ],
-                  "uid": [
-                    "https://shreyanjain.net/"
-                  ],
-                  "name": [
-                    "Shreyan Jain"
-                  ]
-                },
-                "value": "Shreyan Jain"
-              }
-            ],
-            "content": [
-              {
-                "html": "<p>Ever heard the phrase “a solution in search of a problem”?</p>\n<p> </p>\n<p>That should sum up Web3 in seven words. </p>\n<p> </p>\n<h2>What is Web3, really?</h2>\n<p> </p>\n<p>Before I start explaining why Web3 is broken, it helps to understand what Web3 even is. Something that makes this a bit difficult is that even Web3 enthusiasts often don’t seem clear on the definition. </p>\n<p> </p>\n<p>The most common definition, though, seems to be “combining the decentralization of Web 1.0 with the ease of Web 2.0”. And that’s a noble goal, but currently, Web3 is nowhere close to doing this. </p>\n<p> </p>\n<p>Slowing down — what do we mean when we say Web 1.0 and Web 2.0? </p>\n<p> </p>\n<p>Web 1.0 refers to the first version of the internet that was publicly available in the early 90s. In the view of Web3 enthusiasts, Web 1.0 was characterized by interconnected, decentralized open standards: XMPP for messaging, RSS for subscribing to blogs and receiving updates, E-mail for longer communication, and HTTP, allowing users to navigate to different web pages interconnected by hyperlinks. </p>\n<p> </p>\n<p> Web 2.0 is the era of internet as a platform, characterized by the rise of e-commerce and social media sites, allowing users to interact and publish content. Instead of self-hosting blogs and subscribing to them via RSS or Atom, people create accounts on, say, Facebook and post there instead.</p>\n<p> </p>\n<p>Users coalesced around a few different centralized services, giving up the control they had with Web 1.0 in favor of handing it over to “Big Tech”. </p>\n<p> </p>\n<blockquote>\n<p><em><strong>That’s the problem Web3 wants to solve.</strong></em></p>\n</blockquote>\n<p> </p>\n<p>So, where does blockchain become involved? Because in general, whenever you hear about a Web3 project, it’s always something blockchain related, and often doesn’t even relate to “combining the decentralization of Web 1.0 with the ease of Web 2.0”. Heck, by that definition, even <i>Mastodon</i> is a Web3 app. </p>\n<p> </p>\n<h2>What even <i>is</i> a blockchain? </h2>\n<p> </p>\n<p>Let’s see what ChatGPT thinks: </p>\n<p> </p>\n<p>“Blockchain is a distributed ledger technology that allows multiple parties to record transactions on a secure and transparent database without the need for a central authority. It uses complex algorithms to ensure the integrity of the data and to prevent any single entity from modifying the ledger without the consensus of the network. Each block in a blockchain contains a set of transactions, and once a block is added to the chain, the data in it is considered to be immutable. Transactions are recorded in a linear, chronological order, and are grouped together in blocks, which are then added to the chain. Each block contains a unique code, called a “hash,” that links it to the previous block in the chain, creating an unbroken chain of blocks, hence the name “blockchain.” This creates a tamper-proof record of all transactions that is accessible to anyone on the network.”</p>\n<p> </p>\n<p>That’s a pretty accurate description of what a blockchain is.</p>\n<p> </p>\n<p>What’s the most famous use of blockchain technologies? If you guessed cryptocurrency, you’d be right.</p>\n<p> </p>\n<p>How did Web3 become so closely intertwined with blockchain and cryptocurrencies? Well, the term “Web3” was created by Gavin Wood. If you don’t know who that is, well, he’s one of the co-founders of Ethereum. </p>\n<p> </p>\n<p>What’s Ethereum? Ethereum is a decentralized, open-source blockchain platform that enables the creation of smart contracts and decentralized applications (DApps). It has its own cryptocurrency, Ether (ETH), but the real innovation of Ethereum is its ability to execute code on the blockchain, known as smart contracts. This allows for the creation of decentralized, trust-less systems and the potential for a wide range of applications beyond just digital currency (in theory. In practice, it’s almost always just digital currency). Additionally, Ethereum allows for the creation of custom tokens, which has led to the development of various decentralized finance (DeFi) applications and the issuance of non-fungible tokens (NFTs). </p>\n<p> </p>\n<p>That’s pretty much the state of Web3 right now. Almost every app is built on the Ethereum blockchain and is usually either related to DeFi or NFTs. </p>\n<p> </p>\n<p>Now, this isn’t a blanket rejection of blockchain. An example of a good blockchain success story is Walmart: The retail giant has been using blockchain technology to track the movement of goods through its supply chain. By using blockchain, Walmart can quickly trace the origin of a product, which can be useful for identifying the source of a food-borne illness outbreak, for example. This is possible because blockchain can be used to create an immutable record of transactions, making it useful for tracking the movement of goods through a supply chain.</p>\n<p> </p>\n<p>And by themselves, Ethereum and other cryptocurrencies like BitCoin aren’t bad. They solve a problem — they create digital currencies that are completely user-controlled, where you can actually own tokens. Blockchain solves that problem well.</p>\n<p> </p>\n<p>But does blockchain tackle the problem of “combining the decentralization of Web 1.0 with the ease of Web 2.0”? No. There have been few attempts to create good, blockchain-based alternatives to the Web 2.0 apps most people use daily. (Ever heard of blockchain YouTube? Reddit? Etsy? I haven’t either.) Sure, there’s DeSo, which is trying to create a blockchain Twitter, but that’s not even truly decentralized! What issue does it even solve? </p>\n<p> </p>\n<p>The truth is that Web3 can be really, really, good. The core ideals are strong. But Web3 enthusiasts need to stop throwing a blockchain at every issue they encounter with the current web. Sometimes, there really is a better way to do it. Did I say sometimes? Sorry, I meant usually. </p>\n<p> </p>\n<p>If you want a good example of an actual solution to this problem, look at ActivityPub and Mastodon! They’ve created a very usable Twitter equivalent for a decentralized web. That’s what “combining the decentralization of Web 1.0 with the ease of Web 2.0” actually looks like — ActivityPub, an open web-native standard that allows various users from different servers to communicate with each other through short form messages. </p>\n<p> </p>\n<p>So, yeah. Web3 is broken. The problem it claims to solve is real. But blockchain isn’t the solution. </p>\n<p> </p>",
-                "value": "Ever heard the phrase “a solution in search of a problem”?\n \nThat should sum up Web3 in seven words. \n \nWhat is Web3, really?\n \nBefore I start explaining why Web3 is broken, it helps to understand what Web3 even is. Something that makes this a bit difficult is that even Web3 enthusiasts often don’t seem clear on the definition. \n \nThe most common definition, though, seems to be “combining the decentralization of Web 1.0 with the ease of Web 2.0”. And that’s a noble goal, but currently, Web3 is nowhere close to doing this. \n \nSlowing down — what do we mean when we say Web 1.0 and Web 2.0? \n \nWeb 1.0 refers to the first version of the internet that was publicly available in the early 90s. In the view of Web3 enthusiasts, Web 1.0 was characterized by interconnected, decentralized open standards: XMPP for messaging, RSS for subscribing to blogs and receiving updates, E-mail for longer communication, and HTTP, allowing users to navigate to different web pages interconnected by hyperlinks. \n \n Web 2.0 is the era of internet as a platform, characterized by the rise of e-commerce and social media sites, allowing users to interact and publish content. Instead of self-hosting blogs and subscribing to them via RSS or Atom, people create accounts on, say, Facebook and post there instead.\n \nUsers coalesced around a few different centralized services, giving up the control they had with Web 1.0 in favor of handing it over to “Big Tech”. \n \n\nThat’s the problem Web3 wants to solve.\n\n \nSo, where does blockchain become involved? Because in general, whenever you hear about a Web3 project, it’s always something blockchain related, and often doesn’t even relate to “combining the decentralization of Web 1.0 with the ease of Web 2.0”. Heck, by that definition, even Mastodon is a Web3 app. \n \nWhat even is a blockchain? \n \nLet’s see what ChatGPT thinks: \n \n“Blockchain is a distributed ledger technology that allows multiple parties to record transactions on a secure and transparent database without the need for a central authority. It uses complex algorithms to ensure the integrity of the data and to prevent any single entity from modifying the ledger without the consensus of the network. Each block in a blockchain contains a set of transactions, and once a block is added to the chain, the data in it is considered to be immutable. Transactions are recorded in a linear, chronological order, and are grouped together in blocks, which are then added to the chain. Each block contains a unique code, called a “hash,” that links it to the previous block in the chain, creating an unbroken chain of blocks, hence the name “blockchain.” This creates a tamper-proof record of all transactions that is accessible to anyone on the network.”\n \nThat’s a pretty accurate description of what a blockchain is.\n \nWhat’s the most famous use of blockchain technologies? If you guessed cryptocurrency, you’d be right.\n \nHow did Web3 become so closely intertwined with blockchain and cryptocurrencies? Well, the term “Web3” was created by Gavin Wood. If you don’t know who that is, well, he’s one of the co-founders of Ethereum. \n \nWhat’s Ethereum? Ethereum is a decentralized, open-source blockchain platform that enables the creation of smart contracts and decentralized applications (DApps). It has its own cryptocurrency, Ether (ETH), but the real innovation of Ethereum is its ability to execute code on the blockchain, known as smart contracts. This allows for the creation of decentralized, trust-less systems and the potential for a wide range of applications beyond just digital currency (in theory. In practice, it’s almost always just digital currency). Additionally, Ethereum allows for the creation of custom tokens, which has led to the development of various decentralized finance (DeFi) applications and the issuance of non-fungible tokens (NFTs). \n \nThat’s pretty much the state of Web3 right now. Almost every app is built on the Ethereum blockchain and is usually either related to DeFi or NFTs. \n \nNow, this isn’t a blanket rejection of blockchain. An example of a good blockchain success story is Walmart: The retail giant has been using blockchain technology to track the movement of goods through its supply chain. By using blockchain, Walmart can quickly trace the origin of a product, which can be useful for identifying the source of a food-borne illness outbreak, for example. This is possible because blockchain can be used to create an immutable record of transactions, making it useful for tracking the movement of goods through a supply chain.\n \nAnd by themselves, Ethereum and other cryptocurrencies like BitCoin aren’t bad. They solve a problem — they create digital currencies that are completely user-controlled, where you can actually own tokens. Blockchain solves that problem well.\n \nBut does blockchain tackle the problem of “combining the decentralization of Web 1.0 with the ease of Web 2.0”? No. There have been few attempts to create good, blockchain-based alternatives to the Web 2.0 apps most people use daily. (Ever heard of blockchain YouTube? Reddit? Etsy? I haven’t either.) Sure, there’s DeSo, which is trying to create a blockchain Twitter, but that’s not even truly decentralized! What issue does it even solve? \n \nThe truth is that Web3 can be really, really, good. The core ideals are strong. But Web3 enthusiasts need to stop throwing a blockchain at every issue they encounter with the current web. Sometimes, there really is a better way to do it. Did I say sometimes? Sorry, I meant usually. \n \nIf you want a good example of an actual solution to this problem, look at ActivityPub and Mastodon! They’ve created a very usable Twitter equivalent for a decentralized web. That’s what “combining the decentralization of Web 1.0 with the ease of Web 2.0” actually looks like — ActivityPub, an open web-native standard that allows various users from different servers to communicate with each other through short form messages. \n \nSo, yeah. Web3 is broken. The problem it claims to solve is real. But blockchain isn’t the solution. \n "
-              }
-            ]
-          },
-          "id": "post-92"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "A search engine for retrocomputing and those forced to use ancient software"
-            ],
-            "url": [
-              "https://shreyanjain.net/2022/11/06/a-search-engine-for-retrocomputing-and-those-forced-to-use-ancient-software/",
-              "https://shreyanjain.net/2022/11/06/a-search-engine-for-retrocomputing-and-those-forced-to-use-ancient-software/"
-            ],
-            "updated": [
-              "2022-11-06T20:19:27+00:00"
-            ],
-            "published": [
-              "2022-11-06T20:19:27+00:00"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "photo": [
-                    {
-                      "value": "https://secure.gravatar.com/avatar/8688a1a0649869ef7bae3bd89fa2cdba?s=90&d=retro&r=g",
-                      "srcset": {
-                        "2x": "https://secure.gravatar.com/avatar/8688a1a0649869ef7bae3bd89fa2cdba?s=180&d=retro&r=g"
-                      },
-                      "alt": ""
-                    }
-                  ],
-                  "url": [
-                    "https://shreyanjain.net/"
-                  ],
-                  "uid": [
-                    "https://shreyanjain.net/"
-                  ],
-                  "name": [
-                    "Shreyan Jain"
-                  ]
-                },
-                "value": "Shreyan Jain"
-              }
-            ],
-            "content": [
-              {
-                "html": "<p>Are you into retrocomputing? Are you stuck in a situation where you have to use ancient computers, with equally ancient browsers? If so, well, you need a search engine, don’t you? Hmm… most search engines these days are quite heavy on JavaScript and CSS which breaks in these old browsers. Google lets you access its mobile versions in these browsers, but the user experience is significantly compromised, not to mention just plain ugly.</p>\n<p>So I (with some help) cobbled together a search engine which is good at one thing, and one thing only. It works where these others do not. It’s essentially a proxy to Bing’s API using a clean, simple, and uncluttered UI. It has one job – to display search results. It doesn’t track you or show you ads.  And it’s currently located at <a href=\"https://tenbluelinks.net/\">https://tenbluelinks.net</a>.</p>\n<p> </p>\n<p>–Shreyan</p>\n<p> </p>\n<p><em>Does anyone actually read this blog?</em></p>\n<p><script id=\"stacks-wallet-provider\" src=\"chrome-extension://ldinpeekobnhjjdofggfgjlcehhmanlj/inpage.js\"></script></p>\n<p><script id=\"stacks-wallet-provider\" src=\"chrome-extension://ldinpeekobnhjjdofggfgjlcehhmanlj/inpage.js\"></script></p>",
-                "value": "Are you into retrocomputing? Are you stuck in a situation where you have to use ancient computers, with equally ancient browsers? If so, well, you need a search engine, don’t you? Hmm… most search engines these days are quite heavy on JavaScript and CSS which breaks in these old browsers. Google lets you access its mobile versions in these browsers, but the user experience is significantly compromised, not to mention just plain ugly.\nSo I (with some help) cobbled together a search engine which is good at one thing, and one thing only. It works where these others do not. It’s essentially a proxy to Bing’s API using a clean, simple, and uncluttered UI. It has one job – to display search results. It doesn’t track you or show you ads.  And it’s currently located at https://tenbluelinks.net.\n \n–Shreyan\n \nDoes anyone actually read this blog?"
-              }
-            ]
-          },
-          "id": "post-70"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "SailfishOS: a look at an independent mobile OS free from Google and Apple"
-            ],
-            "url": [
-              "https://shreyanjain.net/2022/09/25/sailfishos/",
-              "https://shreyanjain.net/2022/09/25/sailfishos/"
-            ],
-            "updated": [
-              "2022-09-25T05:06:07+00:00"
-            ],
-            "published": [
-              "2022-09-25T05:06:07+00:00"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "photo": [
-                    {
-                      "value": "https://secure.gravatar.com/avatar/8688a1a0649869ef7bae3bd89fa2cdba?s=90&d=retro&r=g",
-                      "srcset": {
-                        "2x": "https://secure.gravatar.com/avatar/8688a1a0649869ef7bae3bd89fa2cdba?s=180&d=retro&r=g"
-                      },
-                      "alt": ""
-                    }
-                  ],
-                  "url": [
-                    "https://shreyanjain.net/"
-                  ],
-                  "uid": [
-                    "https://shreyanjain.net/"
-                  ],
-                  "name": [
-                    "Shreyan Jain"
-                  ]
-                },
-                "value": "Shreyan Jain"
-              }
-            ],
-            "content": [
-              {
-                "html": "<p>As of now, if you’re going out to buy a phone, it may feel like there is suffocatingly little choice: you can either trade in your money for an Android or commit yourself to an iPhone. But many of us have always wanted a third option in the mobile device market: a third OS that you can install and use on a smartphone. Well, it exists; but unfortunately you’ve probably never heard of it.</p>\n<p>Until now.</p>\n<p>Introducing Sailfish OS.</p>\n<p>Born from the ashes of the once-great Nokia, a small company known as Jolla is responsible for producing Sailfish OS. I tested it on a Sony Xperia 10 III, which is a nice device with no notch, a headphone jack, and a tool-free SIM tray that also lets you expand the storage with a microSD card. A decent device, to say the least. But the reason I chose this device in particular was because it’s one of the very few devices which runs Sailfish OS. Afterwards, I purchased a license for Sailfish X – the name for the user-installable version of Sailfish OS – and flashed the zip files to the phone’s storage. The process is similar to installing an Android ROM like LineageOS, if you’ve ever done that.</p>\n<p>Sailfish OS has a user interface which is definitely very unique. It’s satisfying enough to be a daily driver for somebody like me, due to its ability to install and run Android apps in addition to native apps. Of course, the native apps are much nicer than the Android ones when available, due to one major feature of Sailfish OS which is quite novel when compared to other OSes.</p>\n<p>This feature is called the Pulley Menu by the Sailfish developers. It’s quite useful for using the phone one-handed, which Sailfish OS excels at in general. When in an app, if you over-scroll the top or bottom, you will get a menu of options, and you can pull and hold until you reach the one you want. Then you let go once you’ve highlighted the option you want. This is much more efficient than unnaturally reaching your hand up to find a button.</p>\n<p>Unlike on a traditional mobile OS, the Home Screen, rather than showing shortcuts to apps and widgets, show a relevant “card” for every app you have open. These cards contain relevant information, such as the number of unread messages for the default SMS app. In addition, to get to the the Home Screen, rather than swiping from the bottom, you swipe from the sides.</p>\n<figure id=\"attachment_64\" aria-describedby=\"caption-attachment-64\" style=\"width: 300px\" class=\"wp-caption alignnone\"><img decoding=\"async\" loading=\"lazy\" class=\"size-medium wp-image-64\" src=\"https://terrenly.com/wp-content/uploads/2022/09/proxy-image-300x141.jpg\" alt=\"Various parts of the Sailfish OS UI\" width=\"300\" height=\"141\"><figcaption id=\"caption-attachment-64\" class=\"wp-caption-text\">This is the user interface of Sailfish OS.</figcaption></figure>\n<p>On either side of the Home Screen resides the Events View, a feed containing the weather, your calendar events, your notifications, and – wait for it – your Twitter timeline.</p>\n<p>Overall, it’s a very solid alternative to Android and iOS. While I would only recommend it to those extremely enthusiastic about alternative mobile OSes, personally, I find it makes for a good daily driver.</p>\n<p>That’s all 🙂</p>\n<p> </p>",
-                "value": "As of now, if you’re going out to buy a phone, it may feel like there is suffocatingly little choice: you can either trade in your money for an Android or commit yourself to an iPhone. But many of us have always wanted a third option in the mobile device market: a third OS that you can install and use on a smartphone. Well, it exists; but unfortunately you’ve probably never heard of it.\nUntil now.\nIntroducing Sailfish OS.\nBorn from the ashes of the once-great Nokia, a small company known as Jolla is responsible for producing Sailfish OS. I tested it on a Sony Xperia 10 III, which is a nice device with no notch, a headphone jack, and a tool-free SIM tray that also lets you expand the storage with a microSD card. A decent device, to say the least. But the reason I chose this device in particular was because it’s one of the very few devices which runs Sailfish OS. Afterwards, I purchased a license for Sailfish X – the name for the user-installable version of Sailfish OS – and flashed the zip files to the phone’s storage. The process is similar to installing an Android ROM like LineageOS, if you’ve ever done that.\nSailfish OS has a user interface which is definitely very unique. It’s satisfying enough to be a daily driver for somebody like me, due to its ability to install and run Android apps in addition to native apps. Of course, the native apps are much nicer than the Android ones when available, due to one major feature of Sailfish OS which is quite novel when compared to other OSes.\nThis feature is called the Pulley Menu by the Sailfish developers. It’s quite useful for using the phone one-handed, which Sailfish OS excels at in general. When in an app, if you over-scroll the top or bottom, you will get a menu of options, and you can pull and hold until you reach the one you want. Then you let go once you’ve highlighted the option you want. This is much more efficient than unnaturally reaching your hand up to find a button.\nUnlike on a traditional mobile OS, the Home Screen, rather than showing shortcuts to apps and widgets, show a relevant “card” for every app you have open. These cards contain relevant information, such as the number of unread messages for the default SMS app. In addition, to get to the the Home Screen, rather than swiping from the bottom, you swipe from the sides.\n Various parts of the Sailfish OS UI This is the user interface of Sailfish OS.\nOn either side of the Home Screen resides the Events View, a feed containing the weather, your calendar events, your notifications, and – wait for it – your Twitter timeline.\nOverall, it’s a very solid alternative to Android and iOS. While I would only recommend it to those extremely enthusiastic about alternative mobile OSes, personally, I find it makes for a good daily driver.\nThat’s all 🙂\n "
-              }
-            ],
-            "category": [
-              "SailfishOS"
-            ]
-          },
-          "id": "post-43"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "How to Flash Ubuntu Touch to your Android Phone"
-            ],
-            "url": [
-              "https://shreyanjain.net/2022/08/01/how-to-flash-ubuntu-touch-to-your-android-phone/",
-              "https://shreyanjain.net/2022/08/01/how-to-flash-ubuntu-touch-to-your-android-phone/"
-            ],
-            "updated": [
-              "2022-08-01T01:17:55+00:00"
-            ],
-            "published": [
-              "2022-08-01T01:17:55+00:00"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "photo": [
-                    {
-                      "value": "https://secure.gravatar.com/avatar/8688a1a0649869ef7bae3bd89fa2cdba?s=90&d=retro&r=g",
-                      "srcset": {
-                        "2x": "https://secure.gravatar.com/avatar/8688a1a0649869ef7bae3bd89fa2cdba?s=180&d=retro&r=g"
-                      },
-                      "alt": ""
-                    }
-                  ],
-                  "url": [
-                    "https://shreyanjain.net/"
-                  ],
-                  "uid": [
-                    "https://shreyanjain.net/"
-                  ],
-                  "name": [
-                    "Shreyan Jain"
-                  ]
-                },
-                "value": "Shreyan Jain"
-              }
-            ],
-            "content": [
-              {
-                "html": "<p>So, you’ve decided that you want to try out an alternative OS on your mobile phone. Maybe you use Ubuntu on your computer and like the idea of having it on your phone. Or maybe you’re just bored of the monotony of Android and want to venture into the world of alternative mobile operating systems. Just be warned: you won’t have any major apps like WhatsApp, Facebook, Netflix, or YouTube on your Ubuntu Touch phone, and hardware feature support is also limited. In addition, MAKE SURE YOUR PHONE IS ON THE <a href=\"https://devices.ubuntu-touch.io/\" target=\"_blank\" rel=\"noopener\">SUPPORTED DEVICES LIST</a> before attempting the process, or you will brick your phone. So don’t say I didn’t warn you, and let’s get into how to do it.</p>\n<p>To download the installer, go to <a href=\"https://devices.ubuntu-touch.io/installer/\">https://devices.ubuntu-touch.io/installer/</a> and select the right download for your computer. In this guide, I used a Mac.</p>\n<p>For Windows, you should download the fastboot USB drivers for your phone. Depending on your phone, the process will differ. If you have a Google Pixel device, download it from <a href=\"https://developer.android.com/studio/run/win-usb\">https://developer.android.com/studio/run/win-usb</a>. For most other manufacturers, you can find the drivers at <a href=\"https://developer.android.com/studio/run/oem-usb#Drivers\">https://developer.android.com/studio/run/oem-usb#Drivers</a>.</p>\n<p>Now, use a USB cable to connect your phone to your computer. Use the charging port on your phone to do so.</p>\n<p>The UBPorts installer should automatically detect your device, but if it doesn’t, just select your device manually.</p>\n<p>The wizard from here on is pretty self-explanatory, and it varies so much from device to device that it is not worth covering. But, if you follow everything the installer says exactly right, then you will soon in your hands have a working Ubuntu Touch smartphone!</p>\n<p> </p>\n<p>MORE UPDATES COMING SOON</p>",
-                "value": "So, you’ve decided that you want to try out an alternative OS on your mobile phone. Maybe you use Ubuntu on your computer and like the idea of having it on your phone. Or maybe you’re just bored of the monotony of Android and want to venture into the world of alternative mobile operating systems. Just be warned: you won’t have any major apps like WhatsApp, Facebook, Netflix, or YouTube on your Ubuntu Touch phone, and hardware feature support is also limited. In addition, MAKE SURE YOUR PHONE IS ON THE SUPPORTED DEVICES LIST before attempting the process, or you will brick your phone. So don’t say I didn’t warn you, and let’s get into how to do it.\nTo download the installer, go to https://devices.ubuntu-touch.io/installer/ and select the right download for your computer. In this guide, I used a Mac.\nFor Windows, you should download the fastboot USB drivers for your phone. Depending on your phone, the process will differ. If you have a Google Pixel device, download it from https://developer.android.com/studio/run/win-usb. For most other manufacturers, you can find the drivers at https://developer.android.com/studio/run/oem-usb#Drivers.\nNow, use a USB cable to connect your phone to your computer. Use the charging port on your phone to do so.\nThe UBPorts installer should automatically detect your device, but if it doesn’t, just select your device manually.\nThe wizard from here on is pretty self-explanatory, and it varies so much from device to device that it is not worth covering. But, if you follow everything the installer says exactly right, then you will soon in your hands have a working Ubuntu Touch smartphone!\n \nMORE UPDATES COMING SOON"
-              }
-            ]
-          },
-          "id": "post-36"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Get a Windows-Style Trash icon on your Mac’s desktop"
-            ],
-            "url": [
-              "https://shreyanjain.net/2021/12/10/mac-trash-icon-desktop/",
-              "https://shreyanjain.net/2021/12/10/mac-trash-icon-desktop/"
-            ],
-            "updated": [
-              "2021-12-10T03:47:00+00:00"
-            ],
-            "published": [
-              "2021-12-10T03:47:00+00:00"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "photo": [
-                    {
-                      "value": "https://secure.gravatar.com/avatar/8688a1a0649869ef7bae3bd89fa2cdba?s=90&d=retro&r=g",
-                      "srcset": {
-                        "2x": "https://secure.gravatar.com/avatar/8688a1a0649869ef7bae3bd89fa2cdba?s=180&d=retro&r=g"
-                      },
-                      "alt": ""
-                    }
-                  ],
-                  "url": [
-                    "https://shreyanjain.net/"
-                  ],
-                  "uid": [
-                    "https://shreyanjain.net/"
-                  ],
-                  "name": [
-                    "Shreyan Jain"
-                  ]
-                },
-                "value": "Shreyan Jain"
-              }
-            ],
-            "content": [
-              {
-                "html": "<p><span style=\"font-family: Lucida Sans;\"> Are you a Mac user? Of course you are, you’re reading this. Did you come over from Windows and are having trouble adjusting to macOS? Or do you just like the idea of a Trash icon on your desktop? It doesn’t matter. Whatever your reason, there’s a way to get Trash on your desktop. And it’s not even that hard. </span></p>\n<p><span style=\"font-family: Lucida Sans;\">Notice that there <i>is </i>one bug with this implementation. That bug is that whenever you drag anything onto the icon, while it will be deleted, this will also automatically open the Trash folder in Finder. However, I find that just a minor annoyance, and if you would like, you can add a confirmation dialog here. Anyhow, without further ado, here’s what you do!</span></p>\n\n<ol style=\"text-align: left;\">\n<li><span style=\"font-family: Lucida Sans;\">Start by opening the Automator app on your Mac 💻 . If you don’t know where this is, just hit ⌘+Space to search for it. </span></li>\n<li><span style=\"font-family: Lucida Sans;\">In the New Document confirmation, select “Application” and hit create. </span></li>\n<li><span style=\"font-family: Lucida Sans;\">Now find the item “Move Finder Items to Trash” and drag it into the workspace. If you only want the item to delete items, skip to step 10. If you want double-clicking the icon to open the Trash 🗑 folder 📁 as well, continue.</span></li>\n<li><span style=\"font-family: Lucida Sans;\">Now drag both “Get specified Finder Items” and “Open Finder Items” into the workspace. </span></li>\n<li><span style=\"font-family: Lucida Sans;\">In “Get specified Finder Items”, if any defaults were inserted, remove them. </span></li>\n<li><span style=\"font-family: Lucida Sans;\">Now open a Finder window anywhere on the desktop and hit ⌘+Shift+G. </span></li>\n<li><span style=\"font-family: Lucida Sans;\">Here, type ~/.Trash and hit enter.</span></li>\n<li><span style=\"font-family: Lucida Sans;\">Now grab the Folder proxy icon from the top of the Finder window and drag it into the “Get specified Finder items” area. Now your workspace will look like this:  \n<div class=\"separator\" style=\"clear: both; text-align: center;\">\n<a href=\"https://lh3.googleusercontent.com/-0kpNJsi9Wu0/YbLLoQXFtUI/AAAAAAAAW0Q/1e9cpj9UpTM6Rj6eCF6av1hfcdjK4pPqgCNcBGAsYHQ/image.png\" style=\"margin-left: 1em; margin-right: 1em;\"><img decoding=\"async\" loading=\"lazy\" alt=\"\" data-original-height=\"1754\" data-original-width=\"1730\" height=\"371\" src=\"https://terrenly.com/wp-content/uploads/2021/12/image.png\" class=\"wp-image-7\" width=\"366\"></a> *Blurry screenshot, apologies 🙁</div>\n<p></p>\n<div class=\"separator\" style=\"clear: both; text-align: center;\"></div>\n<p></p></span></li>\n<li>\n<div class=\"separator\" style=\"clear: both; text-align: left;\"><span style=\"font-family: Lucida Sans;\">Also, if you want to display a confirmation dialog before opening the Trash folder 📂 , find and insert the Ask for Confirmation box into the workspace before the “Open Finder Items” action. Add whatever text you want.</span></div>\n</li>\n<li>\n<div class=\"separator\" style=\"clear: both; text-align: left;\"><span style=\"font-family: Lucida Sans;\">Now, in the menubar, click “File” and then “Export”. In the “Export as” box, you will probably want to type “Trash”, although you can name it whatever you want. Location should be “Desktop”. Once you’ve confirmed these settings, hit Save. </span></div>\n</li>\n<li>\n<div class=\"separator\" style=\"clear: both; text-align: left;\"><span style=\"font-family: Lucida Sans;\">Now, if you want the icon to look like a Trash can 🗑 , find any icon you like online and use it. Use <a href=\"https://www.howtogeek.com/677739/how-to-change-app-file-and-folder-icons-on-mac/\" target=\"_blank\" rel=\"noopener\">this</a> tutorial to change the icon. </span></div>\n</li>\n<li>\n<div class=\"separator\" style=\"clear: both; text-align: left;\"><span style=\"font-family: Lucida Sans;\">You’re done!</span></div>\n</li>\n</ol>\n<div></div>",
-                "value": " Are you a Mac user? Of course you are, you’re reading this. Did you come over from Windows and are having trouble adjusting to macOS? Or do you just like the idea of a Trash icon on your desktop? It doesn’t matter. Whatever your reason, there’s a way to get Trash on your desktop. And it’s not even that hard. \nNotice that there is one bug with this implementation. That bug is that whenever you drag anything onto the icon, while it will be deleted, this will also automatically open the Trash folder in Finder. However, I find that just a minor annoyance, and if you would like, you can add a confirmation dialog here. Anyhow, without further ado, here’s what you do!\n\n\nStart by opening the Automator app on your Mac 💻 . If you don’t know where this is, just hit ⌘+Space to search for it. \nIn the New Document confirmation, select “Application” and hit create. \nNow find the item “Move Finder Items to Trash” and drag it into the workspace. If you only want the item to delete items, skip to step 10. If you want double-clicking the icon to open the Trash 🗑 folder 📁 as well, continue.\nNow drag both “Get specified Finder Items” and “Open Finder Items” into the workspace. \nIn “Get specified Finder Items”, if any defaults were inserted, remove them. \nNow open a Finder window anywhere on the desktop and hit ⌘+Shift+G. \nHere, type ~/.Trash and hit enter.\nNow grab the Folder proxy icon from the top of the Finder window and drag it into the “Get specified Finder items” area. Now your workspace will look like this:  \n   *Blurry screenshot, apologies 🙁\n\n\n\n\nAlso, if you want to display a confirmation dialog before opening the Trash folder 📂 , find and insert the Ask for Confirmation box into the workspace before the “Open Finder Items” action. Add whatever text you want.\n\n\nNow, in the menubar, click “File” and then “Export”. In the “Export as” box, you will probably want to type “Trash”, although you can name it whatever you want. Location should be “Desktop”. Once you’ve confirmed these settings, hit Save. \n\n\nNow, if you want the icon to look like a Trash can 🗑 , find any icon you like online and use it. Use this tutorial to change the icon. \n\n\nYou’re done!"
-              }
-            ],
-            "category": [
-              "Mac"
-            ]
-          },
-          "id": "post-62"
-        },
-        {
-          "type": [
-            "h-entry"
-          ],
-          "properties": {
-            "name": [
-              "Open files in Quick Look instead of full applications in macOS"
-            ],
-            "url": [
-              "https://shreyanjain.net/2021/10/17/usequicklook/",
-              "https://shreyanjain.net/2021/10/17/usequicklook/"
-            ],
-            "updated": [
-              "2021-10-17T03:58:00+00:00"
-            ],
-            "published": [
-              "2021-10-17T03:58:00+00:00"
-            ],
-            "author": [
-              {
-                "type": [
-                  "h-card"
-                ],
-                "properties": {
-                  "photo": [
-                    {
-                      "value": "https://secure.gravatar.com/avatar/8688a1a0649869ef7bae3bd89fa2cdba?s=90&d=retro&r=g",
-                      "srcset": {
-                        "2x": "https://secure.gravatar.com/avatar/8688a1a0649869ef7bae3bd89fa2cdba?s=180&d=retro&r=g"
-                      },
-                      "alt": ""
-                    }
-                  ],
-                  "url": [
-                    "https://shreyanjain.net/"
-                  ],
-                  "uid": [
-                    "https://shreyanjain.net/"
-                  ],
-                  "name": [
-                    "Shreyan Jain"
-                  ]
-                },
-                "value": "Shreyan Jain"
-              }
-            ],
-            "content": [
-              {
-                "html": "<p><span style=\"font-family: Lucida Sans;\"><span>    </span>Are you a Mac user? Do you LOVE the Quick Look feature because it’s a lightweight way to open a file without a full application? But maybe you wish that when you double-click a file, it opens in Quick Look instead of in Preview or Microsoft Word or whatever. It’s actually a lot easier to do this than you might think. Then again, it’s not super easy, either.</span></p>\n<p><span style=\"font-family: Lucida Sans;\"><br></span></p>\n<h2 style=\"text-align: left;\"><span style=\"font-family: Lucida Sans;\">Set up the App</span></h2>\n<div><span style=\"font-family: Lucida Sans;\"><span>    </span>You ARE installing an app when you do this. But don’t worry – you don’t need to download a single file for this. Just follow these simple directions to quickly build the app yourself! </span></div>\n<div><span style=\"font-family: Lucida Sans;\"><br></span></div>\n<div>\n<span style=\"font-family: Lucida Sans;\"><span>    </span>First, hit </span><span style='font-family: \"Lucida Sans\";'>⌘+Space. Now type “Script Editor” into Spotlight and hit Return on your keyboard. You’ve now opened Script Editor, where you’ll be creating this script. </span>\n</div>\n<div><span style='font-family: \"Lucida Sans\";'><br></span></div>\n<div><span style='font-family: \"Lucida Sans\";'><span>    </span>Type (or Copy and Paste) the following into the window: </span></div>\n<p style=\"font-family: Verdana; font-size: 12px; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal; margin: 0px 0px 0px 41.6px; text-indent: -41.6px;\"><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\"><b>on</b> </span><span class=\"s3\" style=\"color: blue; font-variant-ligatures: no-common-ligatures;\"><b>run</b></span></p>\n<p class=\"p4\" style=\"color: #408000; font-family: Verdana; font-size: 12px; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal; margin: 0px 0px 0px 83.2px; text-indent: -83.2px;\"><span class=\"s4\" style=\"color: black; font-variant-ligatures: no-common-ligatures;\"><span class=\"Apple-tab-span\" style=\"white-space: pre;\">\t</span><b>set</b> </span><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\">this_application_file</span><span class=\"s4\" style=\"color: black; font-variant-ligatures: no-common-ligatures;\"> <b>to</b> <b>the</b> </span><span class=\"s5\" style=\"color: #0016b0; font-variant-ligatures: no-common-ligatures;\"><b>path to</b></span><span class=\"s4\" style=\"color: black; font-variant-ligatures: no-common-ligatures;\"> <b>me</b></span></p>\n<p class=\"p5\" style=\"font-family: Verdana; font-size: 12px; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal; margin: 0px 0px 0px 83.2px; text-indent: -83.2px;\"><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\"><span class=\"Apple-tab-span\" style=\"white-space: pre;\">\t</span><b>tell</b> </span><span class=\"s3\" style=\"color: blue; font-variant-ligatures: no-common-ligatures;\"><i>application</i></span><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\"> “System Events”</span></p>\n<p class=\"p6\" style=\"color: #408000; font-family: Verdana; font-size: 12px; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal; margin: 0px 0px 0px 124.8px; text-indent: -124.9px;\"><span class=\"s4\" style=\"color: black; font-variant-ligatures: no-common-ligatures;\"><span class=\"Apple-tab-span\" style=\"white-space: pre;\">\t</span><span class=\"Apple-tab-span\" style=\"white-space: pre;\">\t</span><b>set</b> </span><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\">this_version</span><span class=\"s4\" style=\"color: black; font-variant-ligatures: no-common-ligatures;\"> <b>to</b> (<b>the</b> </span><span class=\"s6\" style=\"color: #6c05d3; font-variant-ligatures: no-common-ligatures;\">short version</span><span class=\"s4\" style=\"color: black; font-variant-ligatures: no-common-ligatures;\"> <b>of</b> </span><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\">this_application_file</span><span class=\"s4\" style=\"color: black; font-variant-ligatures: no-common-ligatures;\">) <b>as</b> </span><span class=\"s3\" style=\"color: blue; font-variant-ligatures: no-common-ligatures;\"><i>string</i></span></p>\n<p class=\"p5\" style=\"font-family: Verdana; font-size: 12px; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal; margin: 0px 0px 0px 83.2px; text-indent: -83.2px;\"><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\"><span class=\"Apple-tab-span\" style=\"white-space: pre;\">\t</span><b>end</b> <b>tell</b></span></p>\n<p class=\"p4\" style=\"color: #408000; font-family: Verdana; font-size: 12px; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal; margin: 0px 0px 0px 83.2px; text-indent: -83.2px;\"><span class=\"s4\" style=\"color: black; font-variant-ligatures: no-common-ligatures;\"><span class=\"Apple-tab-span\" style=\"white-space: pre;\">\t</span><b>set</b> <b>the</b> </span><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\">dialog_title</span><span class=\"s4\" style=\"color: black; font-variant-ligatures: no-common-ligatures;\"> <b>to</b> </span><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\">application_name</span><span class=\"s4\" style=\"color: black; font-variant-ligatures: no-common-ligatures;\"> &amp; </span><span class=\"s6\" style=\"color: #6c05d3; font-variant-ligatures: no-common-ligatures;\">space</span><span class=\"s4\" style=\"color: black; font-variant-ligatures: no-common-ligatures;\"> &amp; “v” &amp; </span><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\">this_version</span></p>\n<p class=\"p7\" style=\"font-family: Verdana; font-size: 12px; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal; margin: 0px 0px 0px 83.2px; min-height: 15px; text-indent: -83.2px;\"><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\"><span class=\"Apple-tab-span\" style=\"white-space: pre;\">\t</span></span></p>\n<p class=\"p8\" style=\"color: blue; font-family: Verdana; font-size: 12px; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal; margin: 0px 0px 0px 83.2px; text-indent: -83.2px;\"><span class=\"s4\" style=\"color: black; font-variant-ligatures: no-common-ligatures;\"><span class=\"Apple-tab-span\" style=\"white-space: pre;\">\t</span></span><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\"><b>activate</b></span></p>\n<p class=\"p5\" style=\"font-family: Verdana; font-size: 12px; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal; margin: 0px 0px 0px 83.2px; text-indent: -83.2px;\"><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\"><span class=\"Apple-tab-span\" style=\"white-space: pre;\">\t</span></span><span class=\"s5\" style=\"color: #0016b0; font-variant-ligatures: no-common-ligatures;\"><b>display dialog</b></span><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\"> “Open a file with this app or drop it onto this Dock icon to show it in Quick Look” </span><span class=\"s5\" style=\"color: #0016b0; font-variant-ligatures: no-common-ligatures;\">buttons</span><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\"> {“Cool”} </span><span class=\"s5\" style=\"color: #0016b0; font-variant-ligatures: no-common-ligatures;\">default button</span><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\"> 1 </span><span class=\"s5\" style=\"color: #0016b0; font-variant-ligatures: no-common-ligatures;\">with icon</span><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\"> 1 </span><span class=\"s5\" style=\"color: #0016b0; font-variant-ligatures: no-common-ligatures;\">with title</span><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\"> </span><span class=\"s2\" style=\"color: #408000; font-variant-ligatures: no-common-ligatures;\">dialog_title</span></p>\n<p style=\"font-family: Verdana; font-size: 12px; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal; margin: 0px 0px 0px 41.6px; text-indent: -41.6px;\"><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\"><b>end</b> </span><span class=\"s3\" style=\"color: blue; font-variant-ligatures: no-common-ligatures;\"><b>run</b></span></p>\n<p style=\"font-family: Verdana; font-size: 12px; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal; margin: 0px 0px 0px 41.6px; min-height: 15px; text-indent: -41.6px;\"><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\"></span></p>\n<p class=\"p9\" style=\"color: #408000; font-family: Verdana; font-size: 12px; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal; margin: 0px 0px 0px 41.6px; text-indent: -41.6px;\"><span class=\"s4\" style=\"color: black; font-variant-ligatures: no-common-ligatures;\"><b>on</b> </span><span class=\"s3\" style=\"color: blue; font-variant-ligatures: no-common-ligatures;\"><b>open</b></span><span class=\"s4\" style=\"color: black; font-variant-ligatures: no-common-ligatures;\"> </span><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\">these_items</span></p>\n<p class=\"p5\" style=\"font-family: Verdana; font-size: 12px; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal; margin: 0px 0px 0px 83.2px; text-indent: -83.2px;\"><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\"><span class=\"Apple-tab-span\" style=\"white-space: pre;\">\t</span><b>set</b> </span><span class=\"s2\" style=\"color: #408000; font-variant-ligatures: no-common-ligatures;\">these_paths</span><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\"> <b>to</b> “”</span></p>\n<p class=\"p5\" style=\"font-family: Verdana; font-size: 12px; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal; margin: 0px 0px 0px 83.2px; text-indent: -83.2px;\"><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\"><span class=\"Apple-tab-span\" style=\"white-space: pre;\">\t</span><b>repeat</b> <b>with</b> </span><span class=\"s2\" style=\"color: #408000; font-variant-ligatures: no-common-ligatures;\">i</span><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\"> <b>from</b> 1 <b>to</b> <b>the</b> </span><span class=\"s3\" style=\"color: blue; font-variant-ligatures: no-common-ligatures;\"><b>count</b></span><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\"> <b>of</b> </span><span class=\"s2\" style=\"color: #408000; font-variant-ligatures: no-common-ligatures;\">these_items</span></p>\n<p class=\"p10\" style=\"font-family: Verdana; font-size: 12px; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal; margin: 0px 0px 0px 124.8px; text-indent: -124.9px;\"><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\"><span class=\"Apple-tab-span\" style=\"white-space: pre;\">\t</span><span class=\"Apple-tab-span\" style=\"white-space: pre;\">\t</span><b>set</b> </span><span class=\"s2\" style=\"color: #408000; font-variant-ligatures: no-common-ligatures;\">these_paths</span><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\"> <b>to</b> </span><span class=\"s2\" style=\"color: #408000; font-variant-ligatures: no-common-ligatures;\">these_paths</span><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\"> &amp; </span><span class=\"s6\" style=\"color: #6c05d3; font-variant-ligatures: no-common-ligatures;\">space</span><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\"> &amp; (<b>the</b> </span><span class=\"s6\" style=\"color: #6c05d3; font-variant-ligatures: no-common-ligatures;\">quoted form</span><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\"> <b>of</b> <b>the</b> </span><span class=\"s6\" style=\"color: #6c05d3; font-variant-ligatures: no-common-ligatures;\">POSIX path</span><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\"> <b>of</b> (</span><span class=\"s3\" style=\"color: blue; font-variant-ligatures: no-common-ligatures;\"><i>item</i></span><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\"> </span><span class=\"s2\" style=\"color: #408000; font-variant-ligatures: no-common-ligatures;\">i</span><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\"> <b>of</b> </span><span class=\"s2\" style=\"color: #408000; font-variant-ligatures: no-common-ligatures;\">these_items</span><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\">))</span></p>\n<p class=\"p5\" style=\"font-family: Verdana; font-size: 12px; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal; margin: 0px 0px 0px 83.2px; text-indent: -83.2px;\"><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\"><span class=\"Apple-tab-span\" style=\"white-space: pre;\">\t</span><b>end</b> <b>repeat</b></span></p>\n<p class=\"p7\" style=\"font-family: Verdana; font-size: 12px; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal; margin: 0px 0px 0px 83.2px; min-height: 15px; text-indent: -83.2px;\"><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\"><span class=\"Apple-tab-span\" style=\"white-space: pre;\">\t</span></span></p>\n<p class=\"p5\" style=\"font-family: Verdana; font-size: 12px; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal; margin: 0px 0px 0px 83.2px; text-indent: -83.2px;\"><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\"><span class=\"Apple-tab-span\" style=\"white-space: pre;\">\t</span></span><span class=\"s5\" style=\"color: #0016b0; font-variant-ligatures: no-common-ligatures;\"><b>do shell script</b></span><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\"> “qlmanage -p ” &amp; </span><span class=\"s2\" style=\"color: #408000; font-variant-ligatures: no-common-ligatures;\">these_paths</span><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\"> &amp; ” &gt;&amp; /dev/null”</span></p>\n<p style=\"font-family: Verdana; font-size: 12px; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal; margin: 0px 0px 0px 41.6px; text-indent: -41.6px;\"><span class=\"s1\" style=\"font-variant-ligatures: no-common-ligatures;\"><b>end</b> </span><span class=\"s3\" style=\"color: blue; font-variant-ligatures: no-common-ligatures;\"><b>open</b></span></p>\n<div><span style='font-family: \"Lucida Sans\";'><br></span></div>\n<div><span style='font-family: \"Lucida Sans\";'><span>    </span>Now, hit ⌘+S. In the following dialog, make sure everything looks EXACTLY like this: </span></div>\n<div><span style='font-family: \"Lucida Sans\";'><br></span></div>\n<div>\n<table align=\"center\" cellpadding=\"0\" cellspacing=\"0\" class=\"tr-caption-container\" style=\"margin-left: auto; margin-right: auto;\">\n<tbody>\n<tr>\n<td style=\"text-align: center;\"><a href=\"https://lh3.googleusercontent.com/-4XOQyZUu0y4/YWubOo_NWcI/AAAAAAAAWE8/OPAKnBRHw3MccvoCaLi5-TbxEOWxZ91iACLcBGAsYHQ/image.png\" style=\"margin-left: auto; margin-right: auto;\"><img decoding=\"async\" loading=\"lazy\" alt=\"\" data-original-height=\"586\" data-original-width=\"692\" height=\"339\" src=\"https://terrenly.com/wp-content/uploads/2021/10/image.png\" class=\"wp-image-9\" width=\"400\"></a></td>\n</tr>\n<tr>\n<td class=\"tr-caption\" style=\"text-align: center;\"></td>\n</tr>\n</tbody>\n</table>\n<div class=\"separator\" style=\"clear: both; text-align: center;\"></div>\n<div class=\"separator\" style=\"clear: both; text-align: center;\"></div>\n<p><span style=\"font-family: Lucida Sans;\"><span>    </span>Now click Save to continue. Do you want files to open in Quick Look instead of their default application? Or do you just want a way to show a file in Quick Look as if it’s an app?</span></p>\n</div>\n<div><span style=\"font-family: Lucida Sans;\"><br></span></div>\n<div><span style=\"font-family: Lucida Sans;\">    Before continuing, I assume you’ll want to give this app a better looking icon. That’s up to you. If you want to, I’m sure you can figure out how. However, if you can’t, <a href=\"https://9to5mac.com/2020/12/01/change-mac-icons/\" rel=\"nofollow noopener\" target=\"_blank\">here’s</a> a tutorial on how to change a Mac App’s icon. </span></div>\n<div><span style=\"font-family: Lucida Sans;\"><br></span></div>\n<h2 style=\"text-align: left;\"><span style=\"font-family: Lucida Sans;\">Pin to Dock </span></h2>\n<div>    <span style=\"font-family: Lucida Sans;\">To pin your app to the Mac’s Dock, open your Mac’s Applications folder. Hit ⌘+F, select “Applications”, and search for “Quick Look”. Find the one you think is right. Drag it onto the Dock. Whenever you want to view a file in Quick Look, you now have the option to drag it onto an icon in your Dock to view it in Quick Look. </span>\n</div>\n<h2 style=\"text-align: left;\"><span style=\"font-family: Lucida Sans;\">Set default app to Quick Look</span></h2>\n<div><span style=\"font-family: Lucida Sans;\"><span>    </span>If you want a particular file type to always open in a lightweight Quick Look viewer instead of, say, the full-fledged and unnecessarily weighty Preview application, here’s how. </span></div>\n<div><span style=\"font-family: Lucida Sans;\"><br></span></div>\n<div><span style=\"font-family: Lucida Sans;\">    First, find the file type that you’re looking for, in this case JPG Images. Highlight it using your cursor, and then hit ⌘+I. Then, in the Open with section, open the dropdown, the click “Other”. Hit ⌘+F again. Search for “Quick Look”. Click the little applet we made earlier and click “Add”. </span></div>\n<div><span style=\"font-family: Lucida Sans;\"><br></span></div>\n<div><span style=\"font-family: Lucida Sans;\"><span>    To set all files of this type to open in Quick Look, just hit the Change All button. And that’s all there is to it! </span></span></div>\n<div><span style=\"font-family: Lucida Sans;\"><br></span></div>\n<div><span style=\"font-family: Lucida Sans;\"><span>   </span><br></span></div>\n<div><span style='font-family: \"Lucida Sans\";'><br></span></div>\n<div><span style='font-family: \"Lucida Sans\";'><br></span></div>",
-                "value": "    Are you a Mac user? Do you LOVE the Quick Look feature because it’s a lightweight way to open a file without a full application? But maybe you wish that when you double-click a file, it opens in Quick Look instead of in Preview or Microsoft Word or whatever. It’s actually a lot easier to do this than you might think. Then again, it’s not super easy, either.\n\nSet up the App\n    You ARE installing an app when you do this. But don’t worry – you don’t need to download a single file for this. Just follow these simple directions to quickly build the app yourself! \n\n    First, hit ⌘+Space. Now type “Script Editor” into Spotlight and hit Return on your keyboard. You’ve now opened Script Editor, where you’ll be creating this script. \n\n    Type (or Copy and Paste) the following into the window: \non run\n\tset this_application_file to the path to me\n\ttell application “System Events”\n\t\tset this_version to (the short version of this_application_file) as string\n\tend tell\n\tset the dialog_title to application_name & space & “v” & this_version\n\t\n\tactivate\n\tdisplay dialog “Open a file with this app or drop it onto this Dock icon to show it in Quick Look” buttons {“Cool”} default button 1 with icon 1 with title dialog_title\nend run\n\non open these_items\n\tset these_paths to “”\n\trepeat with i from 1 to the count of these_items\n\t\tset these_paths to these_paths & space & (the quoted form of the POSIX path of (item i of these_items))\n\tend repeat\n\t\n\tdo shell script “qlmanage -p ” & these_paths & ” >& /dev/null”\nend open\n\n    Now, hit ⌘+S. In the following dialog, make sure everything looks EXACTLY like this: \n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n    Now click Save to continue. Do you want files to open in Quick Look instead of their default application? Or do you just want a way to show a file in Quick Look as if it’s an app?\n\n    Before continuing, I assume you’ll want to give this app a better looking icon. That’s up to you. If you want to, I’m sure you can figure out how. However, if you can’t, here’s a tutorial on how to change a Mac App’s icon. \n\nPin to Dock \n    To pin your app to the Mac’s Dock, open your Mac’s Applications folder. Hit ⌘+F, select “Applications”, and search for “Quick Look”. Find the one you think is right. Drag it onto the Dock. Whenever you want to view a file in Quick Look, you now have the option to drag it onto an icon in your Dock to view it in Quick Look. \nSet default app to Quick Look\n    If you want a particular file type to always open in a lightweight Quick Look viewer instead of, say, the full-fledged and unnecessarily weighty Preview application, here’s how. \n\n    First, find the file type that you’re looking for, in this case JPG Images. Highlight it using your cursor, and then hit ⌘+I. Then, in the Open with section, open the dropdown, the click “Other”. Hit ⌘+F again. Search for “Quick Look”. Click the little applet we made earlier and click “Add”. \n\n    To set all files of this type to open in Quick Look, just hit the Change All button. And that’s all there is to it! \n\n   "
-              }
-            ],
-            "category": [
-              "Mac"
-            ]
-          },
-          "id": "post-63"
-        }
-      ]
+      "id": "content"
     }
   ],
   "rels": {
@@ -713,14 +28,17 @@
     ],
     "alternate": [
       "https://shreyanjain.net/feed/",
-      "https://shreyanjain.net/comments/feed/"
+      "https://shreyanjain.net/comments/feed/",
+      "https://shreyanjain.net/wp-json/wp/v2/pages/53",
+      "https://shreyanjain.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshreyanjain.net%2F",
+      "https://shreyanjain.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshreyanjain.net%2F&format=xml"
     ],
     "stylesheet": [
       "https://shreyanjain.net/wp-content/plugins/openid/f/openid.css?ver=519",
       "https://shreyanjain.net/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1",
       "https://shreyanjain.net/wp-includes/css/classic-themes.min.css?ver=1",
       "https://shreyanjain.net/wp-content/plugins/indieweb/static/css/indieweb.css?ver=3.4.7",
-      "https://shreyanjain.net/wp-content/plugins/simple-location/css/location.min.css?ver=5.0.8",
+      "https://shreyanjain.net/wp-content/plugins/simple-location/css/location.min.css?ver=5.0.10",
       "https://shreyanjain.net/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.12.0",
       "https://shreyanjain.net/wp-content/themes/sempress/style.css?ver=6.1.1"
     ],
@@ -732,6 +50,12 @@
     ],
     "wlwmanifest": [
       "https://shreyanjain.net/wp-includes/wlwmanifest.xml"
+    ],
+    "canonical": [
+      "https://shreyanjain.net/"
+    ],
+    "shortlink": [
+      "https://shreyanjain.net/"
     ],
     "openid2.provider": [
       "https://shreyanjain.net/?openid=server"
@@ -772,44 +96,8 @@
     "home": [
       "https://shreyanjain.net/"
     ],
-    "prev": [
-      "https://shreyanjain.net/page/2/"
-    ],
     "bookmark": [
-      "https://shreyanjain.net/2023/03/12/131/",
-      "https://shreyanjain.net/2023/03/12/130/",
-      "https://shreyanjain.net/2023/03/12/99/",
-      "https://shreyanjain.net/2023/01/16/redefining-web3/",
-      "https://shreyanjain.net/2023/01/14/web3-is-broken/",
-      "https://shreyanjain.net/2022/11/06/a-search-engine-for-retrocomputing-and-those-forced-to-use-ancient-software/",
-      "https://shreyanjain.net/2022/09/25/sailfishos/",
-      "https://shreyanjain.net/2022/08/01/how-to-flash-ubuntu-touch-to-your-android-phone/",
-      "https://shreyanjain.net/2021/12/10/mac-trash-icon-desktop/",
-      "https://shreyanjain.net/2021/10/17/usequicklook/"
-    ],
-    "author": [
       "https://shreyanjain.net/"
-    ],
-    "category": [
-      "https://shreyanjain.net/category/uncategorized/"
-    ],
-    "tag": [
-      "https://shreyanjain.net/category/uncategorized/",
-      "https://shreyanjain.net/tag/bluesky/",
-      "https://shreyanjain.net/tag/indieauth/",
-      "https://shreyanjain.net/tag/indieweb/",
-      "https://shreyanjain.net/tag/micropub/",
-      "https://shreyanjain.net/tag/micropub-indieweb/",
-      "https://shreyanjain.net/tag/sailfishos/",
-      "https://shreyanjain.net/tag/mac/"
-    ],
-    "noopener": [
-      "https://devices.ubuntu-touch.io/",
-      "https://www.howtogeek.com/677739/how-to-change-app-file-and-folder-icons-on-mac/",
-      "https://9to5mac.com/2020/12/01/change-mac-icons/"
-    ],
-    "nofollow": [
-      "https://9to5mac.com/2020/12/01/change-mac-icons/"
     ],
     "generator": [
       "http://wordpress.org/"
@@ -868,7 +156,7 @@
       "media": "all",
       "type": "text/css"
     },
-    "https://shreyanjain.net/wp-content/plugins/simple-location/css/location.min.css?ver=5.0.8": {
+    "https://shreyanjain.net/wp-content/plugins/simple-location/css/location.min.css?ver=5.0.10": {
       "rels": [
         "stylesheet"
       ],
@@ -894,6 +182,12 @@
         "https://api.w.org/"
       ]
     },
+    "https://shreyanjain.net/wp-json/wp/v2/pages/53": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/json"
+    },
     "https://shreyanjain.net/xmlrpc.php?rsd": {
       "rels": [
         "EditURI"
@@ -906,6 +200,23 @@
         "wlwmanifest"
       ],
       "type": "application/wlwmanifest+xml"
+    },
+    "https://shreyanjain.net/": {
+      "rels": [
+        "canonical"
+      ]
+    },
+    "https://shreyanjain.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshreyanjain.net%2F": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "application/json+oembed"
+    },
+    "https://shreyanjain.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshreyanjain.net%2F&format=xml": {
+      "rels": [
+        "alternate"
+      ],
+      "type": "text/xml+oembed"
     },
     "https://shreyanjain.net/?openid=server": {
       "rels": [
@@ -966,157 +277,6 @@
       "rels": [
         "micropub"
       ]
-    },
-    "https://shreyanjain.net/": {
-      "rels": [
-        "home"
-      ],
-      "title": "Shreyan Jain's Blog",
-      "text": "Shreyan Jain's Blog"
-    },
-    "https://shreyanjain.net/page/2/": {
-      "rels": [
-        "prev"
-      ],
-      "text": "← Older posts"
-    },
-    "https://shreyanjain.net/2023/03/12/131/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "11:42 pm",
-      "text": "March 12, 2023"
-    },
-    "https://shreyanjain.net/category/uncategorized/": {
-      "rels": [
-        "category",
-        "tag"
-      ],
-      "text": "Uncategorized"
-    },
-    "https://shreyanjain.net/2023/03/12/130/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "4:40 pm",
-      "text": "March 12, 2023"
-    },
-    "https://shreyanjain.net/tag/bluesky/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "bluesky"
-    },
-    "https://shreyanjain.net/tag/indieauth/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "indieauth"
-    },
-    "https://shreyanjain.net/tag/indieweb/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "indieweb"
-    },
-    "https://shreyanjain.net/tag/micropub/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "micropub"
-    },
-    "https://shreyanjain.net/2023/03/12/99/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "12:23 pm",
-      "text": "March 12, 2023"
-    },
-    "https://shreyanjain.net/tag/micropub-indieweb/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "#micropub"
-    },
-    "https://shreyanjain.net/2023/01/16/redefining-web3/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Permalink to Redefining Web3",
-      "text": "Redefining Web3"
-    },
-    "https://shreyanjain.net/2023/01/14/web3-is-broken/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Permalink to Web3 is Broken",
-      "text": "Web3 is Broken"
-    },
-    "https://shreyanjain.net/2022/11/06/a-search-engine-for-retrocomputing-and-those-forced-to-use-ancient-software/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Permalink to A search engine for retrocomputing and those forced to use ancient software",
-      "text": "A search engine for retrocomputing and those forced to use ancient software"
-    },
-    "https://shreyanjain.net/2022/09/25/sailfishos/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Permalink to SailfishOS: a look at an independent mobile OS free from Google and Apple",
-      "text": "SailfishOS: a look at an independent mobile OS free from Google and Apple"
-    },
-    "https://shreyanjain.net/tag/sailfishos/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "SailfishOS"
-    },
-    "https://shreyanjain.net/2022/08/01/how-to-flash-ubuntu-touch-to-your-android-phone/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Permalink to How to Flash Ubuntu Touch to your Android Phone",
-      "text": "How to Flash Ubuntu Touch to your Android Phone"
-    },
-    "https://devices.ubuntu-touch.io/": {
-      "rels": [
-        "noopener"
-      ],
-      "text": "SUPPORTED DEVICES LIST"
-    },
-    "https://shreyanjain.net/2021/12/10/mac-trash-icon-desktop/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Permalink to Get a Windows-Style Trash icon on your Mac’s desktop",
-      "text": "Get a Windows-Style Trash icon on your Mac’s desktop"
-    },
-    "https://www.howtogeek.com/677739/how-to-change-app-file-and-folder-icons-on-mac/": {
-      "rels": [
-        "noopener"
-      ],
-      "text": "this"
-    },
-    "https://shreyanjain.net/tag/mac/": {
-      "rels": [
-        "tag"
-      ],
-      "text": "Mac"
-    },
-    "https://shreyanjain.net/2021/10/17/usequicklook/": {
-      "rels": [
-        "bookmark"
-      ],
-      "title": "Permalink to Open files in Quick Look instead of full applications in macOS",
-      "text": "Open files in Quick Look instead of full applications in macOS"
-    },
-    "https://9to5mac.com/2020/12/01/change-mac-icons/": {
-      "rels": [
-        "nofollow",
-        "noopener"
-      ],
-      "text": "here’s"
     },
     "http://wordpress.org/": {
       "rels": [
