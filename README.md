@@ -4,15 +4,15 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 
 | Rank | Actions | User |
 |-----:|--------:|:-----|
-| **1** | [129](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
-| **2** | [80](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
-| **3** | [65](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](http://gregorlove.com) |
-| **4** | [35](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
-| **5** | [26](https://indieweb.org/Special:Contributions/Jamesg.blog) | [jamesg.blog](http://jamesg.blog) |
+| **1** | [130](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
+| **2** | [79](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
+| **3** | [48](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](http://gregorlove.com) |
+| **4** | [37](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
+| **5** | [22](https://indieweb.org/Special:Contributions/Jamesg.blog) | [jamesg.blog](http://jamesg.blog) |
 | **6** | [12](https://indieweb.org/Special:Contributions/Spieltagsgedichte.de) | [spieltagsgedichte.de](http://spieltagsgedichte.de) |
 | **7** | [8](https://indieweb.org/Special:Contributions/Cali.jamesg.blog) | [cali.jamesg.blog](http://cali.jamesg.blog) |
 | **8** | [6](https://indieweb.org/Special:Contributions/Alexsirac.com) | [alexsirac.com](http://alexsirac.com) |
-| **9** | [5](https://indieweb.org/Special:Contributions/Lifeofpablo.com) | [lifeofpablo.com](http://lifeofpablo.com) |
+| **9** | [6](https://indieweb.org/Special:Contributions/Lifeofpablo.com) | [lifeofpablo.com](http://lifeofpablo.com) |
 | **10** | [4](https://indieweb.org/Special:Contributions/Alanpearce.eu) | [alanpearce.eu](http://alanpearce.eu) |
 | **11** | [4](https://indieweb.org/Special:Contributions/Diptera.casa) | [diptera.casa](http://diptera.casa) |
 | **12** | [4](https://indieweb.org/Special:Contributions/Sarajaksa.eu) | [sarajaksa.eu](http://sarajaksa.eu) |
@@ -28,19 +28,19 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 | **22** | [1](https://indieweb.org/Special:Contributions/Evdemon.org_profile_jevdemon) | [evdemon.org/profile/jevdemon](http://evdemon.org/profile/jevdemon) |
 | **23** | [1](https://indieweb.org/Special:Contributions/Jmac.org) | [jmac.org](http://jmac.org) |
 | **24** | [1](https://indieweb.org/Special:Contributions/Kimberlyhirsh.com) | [kimberlyhirsh.com](http://kimberlyhirsh.com) |
-| **25** | [1](https://indieweb.org/Special:Contributions/Kvibber.com) | [kvibber.com](http://kvibber.com) |
-| **26** | [1](https://indieweb.org/Special:Contributions/Nicksimson.com) | [nicksimson.com](http://nicksimson.com) |
-| **27** | [1](https://indieweb.org/Special:Contributions/Notiz.blog) | [notiz.blog](http://notiz.blog) |
-| **28** | [1](https://indieweb.org/Special:Contributions/Toby3d.me) | [toby3d.me](http://toby3d.me) |
-| **29** | [1](https://indieweb.org/Special:Contributions/Vanderven.se_martijn) | [vanderven.se/martijn](http://vanderven.se/martijn) |
-| **30** | [1](https://indieweb.org/Special:Contributions/Waterpigs.co.uk) | [waterpigs.co.uk](http://waterpigs.co.uk) |
-| **31** | [1](https://indieweb.org/Special:Contributions/Www.zinzy.website) | [www.zinzy.website](http://www.zinzy.website) |
-| **32** | [1](https://indieweb.org/Special:Contributions/Yousefamar.com) | [yousefamar.com](http://yousefamar.com) |
+| **25** | [1](https://indieweb.org/Special:Contributions/Nicksimson.com) | [nicksimson.com](http://nicksimson.com) |
+| **26** | [1](https://indieweb.org/Special:Contributions/Notiz.blog) | [notiz.blog](http://notiz.blog) |
+| **27** | [1](https://indieweb.org/Special:Contributions/Toby3d.me) | [toby3d.me](http://toby3d.me) |
+| **28** | [1](https://indieweb.org/Special:Contributions/Vanderven.se_martijn) | [vanderven.se/martijn](http://vanderven.se/martijn) |
+| **29** | [1](https://indieweb.org/Special:Contributions/Waterpigs.co.uk) | [waterpigs.co.uk](http://waterpigs.co.uk) |
+| **30** | [1](https://indieweb.org/Special:Contributions/Www.zinzy.website) | [www.zinzy.website](http://www.zinzy.website) |
+| **31** | [1](https://indieweb.org/Special:Contributions/Yousefamar.com) | [yousefamar.com](http://yousefamar.com) |
+| **32** | [0](https://indieweb.org/Special:Contributions/Kvibber.com) | [kvibber.com](http://kvibber.com) |
 
 
 ## Colophon
 
-Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 27 April 2023 at 6:29:02 UTC.
+Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 28 April 2023 at 6:28:32 UTC.
 
 Additionally, a list of all IndieWeb wiki users is available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users.json). Parsed microformats2 data from user homepages is available in [the `./data/users` directory](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users).
 
