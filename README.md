@@ -4,8 +4,8 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 
 | Rank | Actions | User |
 |-----:|--------:|:-----|
-| **1** | [107](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
-| **2** | [68](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
+| **1** | [117](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
+| **2** | [74](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
 | **3** | [43](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](http://gregorlove.com) |
 | **4** | [32](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
 | **5** | [29](https://indieweb.org/Special:Contributions/Jamesg.blog) | [jamesg.blog](http://jamesg.blog) |
@@ -33,14 +33,14 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 | **27** | [1](https://indieweb.org/Special:Contributions/Martymcgui.re) | [martymcgui.re](http://martymcgui.re) |
 | **28** | [1](https://indieweb.org/Special:Contributions/Massimiliano.farinetti.eu) | [massimiliano.farinetti.eu](http://massimiliano.farinetti.eu) |
 | **29** | [1](https://indieweb.org/Special:Contributions/Minutestomidnight.co.uk) | [minutestomidnight.co.uk](http://minutestomidnight.co.uk) |
-| **30** | [1](https://indieweb.org/Special:Contributions/Puxped.ddns.net) | [puxped.ddns.net](http://puxped.ddns.net) |
+| **30** | [1](https://indieweb.org/Special:Contributions/Notiz.blog) | [notiz.blog](http://notiz.blog) |
 | **31** | [1](https://indieweb.org/Special:Contributions/Www.cygnoir.net) | [www.cygnoir.net](http://www.cygnoir.net) |
 | **32** | [1](https://indieweb.org/Special:Contributions/Www.kevinmarks.com) | [www.kevinmarks.com](http://www.kevinmarks.com) |
 
 
 ## Colophon
 
-Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 29 May 2023 at 6:28:44 UTC.
+Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 30 May 2023 at 6:27:56 UTC.
 
 Additionally, a list of all IndieWeb wiki users is available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users.json). Parsed microformats2 data from user homepages is available in [the `./data/users` directory](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users).
 
