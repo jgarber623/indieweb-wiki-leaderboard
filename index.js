@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+const process = require('node:process');
 const { execFileSync } = require('node:child_process');
 
 const opts = {

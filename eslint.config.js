@@ -1,1 +1,13 @@
-module.exports = require('@jgarber/eslint-config');
+const config = require('@jgarber/eslint-config');
+
+module.exports = [
+  ...config,
+  {
+    files: ['**/*.js'],
+    languageOptions: {
+      globals: {
+        console: 'readonly'
+      }
+    }
+  }
+];
