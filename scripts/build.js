@@ -9,7 +9,7 @@ const engine = new Liquid();
 
 (async () => {
   const date = new Date();
-  const datestamp = date.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric'});
+  const datestamp = date.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
   const timestamp = date.toLocaleTimeString('en-GB', { timeZone: 'UTC', timeZoneName: 'short' });
 
   const leaderboard = await getActiveUsers();

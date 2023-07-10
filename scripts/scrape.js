@@ -9,7 +9,7 @@ const users = require('../data/users.json');
 const outputPath = 'data/users';
 
 const setWorkflowCommand = status => {
-  switch(Number(String(status)[0])) {
+  switch (Number(String(status)[0])) {
     case 4:
       return 'warning';
     case 5:
@@ -24,7 +24,7 @@ Promise
     await timers.setTimeout(250 * index);
 
     return axios.get('https://micromicro.cc/search', {
-      headers: { 'Accept': 'application/json' },
+      headers: { Accept: 'application/json' },
       params: { url: `http://${profile}` }
     }).catch(error => error);
   }))
