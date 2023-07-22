@@ -4,15 +4,15 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 
 | Rank | Actions | User |
 |-----:|--------:|:-----|
-| **1** | [105](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](http://gregorlove.com) |
-| **2** | [77](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
-| **3** | [64](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
-| **4** | [35](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
+| **1** | [106](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](http://gregorlove.com) |
+| **2** | [75](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
+| **3** | [63](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
+| **4** | [34](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
 | **5** | [17](https://indieweb.org/Special:Contributions/Kvibber.com) | [kvibber.com](http://kvibber.com) |
 | **6** | [14](https://indieweb.org/Special:Contributions/Jamesg.blog) | [jamesg.blog](http://jamesg.blog) |
-| **7** | [8](https://indieweb.org/Special:Contributions/Cali.jamesg.blog) | [cali.jamesg.blog](http://cali.jamesg.blog) |
-| **8** | [8](https://indieweb.org/Special:Contributions/Martymcgui.re) | [martymcgui.re](http://martymcgui.re) |
-| **9** | [7](https://indieweb.org/Special:Contributions/Lifeofpablo.com) | [lifeofpablo.com](http://lifeofpablo.com) |
+| **7** | [11](https://indieweb.org/Special:Contributions/Lifeofpablo.com) | [lifeofpablo.com](http://lifeofpablo.com) |
+| **8** | [8](https://indieweb.org/Special:Contributions/Cali.jamesg.blog) | [cali.jamesg.blog](http://cali.jamesg.blog) |
+| **9** | [8](https://indieweb.org/Special:Contributions/Martymcgui.re) | [martymcgui.re](http://martymcgui.re) |
 | **10** | [5](https://indieweb.org/Special:Contributions/Jkingweb.ca) | [jkingweb.ca](http://jkingweb.ca) |
 | **11** | [5](https://indieweb.org/Special:Contributions/Thebackupbox.net_~epoch) | [thebackupbox.net/~epoch](http://thebackupbox.net/~epoch) |
 | **12** | [4](https://indieweb.org/Special:Contributions/Alexsirac.com) | [alexsirac.com](http://alexsirac.com) |
@@ -20,23 +20,22 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 | **14** | [3](https://indieweb.org/Special:Contributions/David.shanske.com) | [david.shanske.com](http://david.shanske.com) |
 | **15** | [3](https://indieweb.org/Special:Contributions/Snarfed.org) | [snarfed.org](http://snarfed.org) |
 | **16** | [2](https://indieweb.org/Special:Contributions/Bouncepaw.com) | [bouncepaw.com](http://bouncepaw.com) |
-| **17** | [2](https://indieweb.org/Special:Contributions/Evdemon.org_profile_jevdemon) | [evdemon.org/profile/jevdemon](http://evdemon.org/profile/jevdemon) |
-| **18** | [2](https://indieweb.org/Special:Contributions/Jacky.wtf) | [jacky.wtf](http://jacky.wtf) |
-| **19** | [2](https://indieweb.org/Special:Contributions/R0ss.me) | [r0ss.me](http://r0ss.me) |
-| **20** | [1](https://indieweb.org/Special:Contributions/Cowglow.com) | [cowglow.com](http://cowglow.com) |
-| **21** | [1](https://indieweb.org/Special:Contributions/Daniel.mowitz.rocks_home.html) | [daniel.mowitz.rocks/home.html](http://daniel.mowitz.rocks/home.html) |
-| **22** | [1](https://indieweb.org/Special:Contributions/Dead.garden) | [dead.garden](http://dead.garden) |
-| **23** | [1](https://indieweb.org/Special:Contributions/Dfaria.eu) | [dfaria.eu](http://dfaria.eu) |
-| **24** | [1](https://indieweb.org/Special:Contributions/Doesnm.cc) | [doesnm.cc](http://doesnm.cc) |
-| **25** | [1](https://indieweb.org/Special:Contributions/Ragt.ag) | [ragt.ag](http://ragt.ag) |
-| **26** | [1](https://indieweb.org/Special:Contributions/Tracydurnell.com) | [tracydurnell.com](http://tracydurnell.com) |
-| **27** | [1](https://indieweb.org/Special:Contributions/Val.packett.cool) | [val.packett.cool](http://val.packett.cool) |
-| **28** | [1](https://indieweb.org/Special:Contributions/Www.ciccarello.me) | [www.ciccarello.me](http://www.ciccarello.me) |
+| **17** | [2](https://indieweb.org/Special:Contributions/Jacky.wtf) | [jacky.wtf](http://jacky.wtf) |
+| **18** | [2](https://indieweb.org/Special:Contributions/R0ss.me) | [r0ss.me](http://r0ss.me) |
+| **19** | [1](https://indieweb.org/Special:Contributions/Cowglow.com) | [cowglow.com](http://cowglow.com) |
+| **20** | [1](https://indieweb.org/Special:Contributions/Daniel.mowitz.rocks_home.html) | [daniel.mowitz.rocks/home.html](http://daniel.mowitz.rocks/home.html) |
+| **21** | [1](https://indieweb.org/Special:Contributions/Dead.garden) | [dead.garden](http://dead.garden) |
+| **22** | [1](https://indieweb.org/Special:Contributions/Dfaria.eu) | [dfaria.eu](http://dfaria.eu) |
+| **23** | [1](https://indieweb.org/Special:Contributions/Doesnm.cc) | [doesnm.cc](http://doesnm.cc) |
+| **24** | [1](https://indieweb.org/Special:Contributions/Ragt.ag) | [ragt.ag](http://ragt.ag) |
+| **25** | [1](https://indieweb.org/Special:Contributions/Tracydurnell.com) | [tracydurnell.com](http://tracydurnell.com) |
+| **26** | [1](https://indieweb.org/Special:Contributions/Val.packett.cool) | [val.packett.cool](http://val.packett.cool) |
+| **27** | [1](https://indieweb.org/Special:Contributions/Www.ciccarello.me) | [www.ciccarello.me](http://www.ciccarello.me) |
 
 
 ## Colophon
 
-Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 21 July 2023 at 6:28:22 UTC.
+Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 22 July 2023 at 6:27:25 UTC.
 
 Additionally, a list of all IndieWeb wiki users is available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users.json). Parsed microformats2 data from user homepages is available in [the `./data/users` directory](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users).
 
