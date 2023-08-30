@@ -5,17 +5,17 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 | Rank | Actions | User |
 |-----:|--------:|:-----|
 | **1** | [54](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](http://gregorlove.com) |
-| **2** | [35](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
-| **3** | [34](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
-| **4** | [27](https://indieweb.org/Special:Contributions/Kvibber.com) | [kvibber.com](http://kvibber.com) |
-| **5** | [25](https://indieweb.org/Special:Contributions/Jamesg.blog) | [jamesg.blog](http://jamesg.blog) |
-| **6** | [14](https://indieweb.org/Special:Contributions/Sigmundur.morkore.fo) | [sigmundur.morkore.fo](http://sigmundur.morkore.fo) |
-| **7** | [11](https://indieweb.org/Special:Contributions/Rubenwardy.com) | [rubenwardy.com](http://rubenwardy.com) |
-| **8** | [10](https://indieweb.org/Special:Contributions/Martymcgui.re) | [martymcgui.re](http://martymcgui.re) |
-| **9** | [9](https://indieweb.org/Special:Contributions/Vanderven.se_martijn) | [vanderven.se/martijn](http://vanderven.se/martijn) |
-| **10** | [8](https://indieweb.org/Special:Contributions/Cali.jamesg.blog) | [cali.jamesg.blog](http://cali.jamesg.blog) |
-| **11** | [8](https://indieweb.org/Special:Contributions/Davegoesthedistance.com) | [davegoesthedistance.com](http://davegoesthedistance.com) |
-| **12** | [8](https://indieweb.org/Special:Contributions/Jlelse.blog) | [jlelse.blog](http://jlelse.blog) |
+| **2** | [46](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
+| **3** | [35](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
+| **4** | [35](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
+| **5** | [27](https://indieweb.org/Special:Contributions/Kvibber.com) | [kvibber.com](http://kvibber.com) |
+| **6** | [24](https://indieweb.org/Special:Contributions/Jamesg.blog) | [jamesg.blog](http://jamesg.blog) |
+| **7** | [14](https://indieweb.org/Special:Contributions/Sigmundur.morkore.fo) | [sigmundur.morkore.fo](http://sigmundur.morkore.fo) |
+| **8** | [11](https://indieweb.org/Special:Contributions/Rubenwardy.com) | [rubenwardy.com](http://rubenwardy.com) |
+| **9** | [8](https://indieweb.org/Special:Contributions/Cali.jamesg.blog) | [cali.jamesg.blog](http://cali.jamesg.blog) |
+| **10** | [8](https://indieweb.org/Special:Contributions/Davegoesthedistance.com) | [davegoesthedistance.com](http://davegoesthedistance.com) |
+| **11** | [8](https://indieweb.org/Special:Contributions/Jlelse.blog) | [jlelse.blog](http://jlelse.blog) |
+| **12** | [8](https://indieweb.org/Special:Contributions/Vanderven.se_martijn) | [vanderven.se/martijn](http://vanderven.se/martijn) |
 | **13** | [5](https://indieweb.org/Special:Contributions/Flamedfury.com) | [flamedfury.com](http://flamedfury.com) |
 | **14** | [4](https://indieweb.org/Special:Contributions/Www.enderverse.org) | [www.enderverse.org](http://www.enderverse.org) |
 | **15** | [3](https://indieweb.org/Special:Contributions/Islandinthenet.com) | [islandinthenet.com](http://islandinthenet.com) |
@@ -38,15 +38,15 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 | **32** | [1](https://indieweb.org/Special:Contributions/Gregsplace.net) | [gregsplace.net](http://gregsplace.net) |
 | **33** | [1](https://indieweb.org/Special:Contributions/Marksuth.dev) | [marksuth.dev](http://marksuth.dev) |
 | **34** | [1](https://indieweb.org/Special:Contributions/Omz13.com) | [omz13.com](http://omz13.com) |
-| **35** | [1](https://indieweb.org/Special:Contributions/Sarajaksa.eu) | [sarajaksa.eu](http://sarajaksa.eu) |
-| **36** | [1](https://indieweb.org/Special:Contributions/Sugardave.cloud) | [sugardave.cloud](http://sugardave.cloud) |
-| **37** | [1](https://indieweb.org/Special:Contributions/Tracydurnell.com) | [tracydurnell.com](http://tracydurnell.com) |
+| **35** | [1](https://indieweb.org/Special:Contributions/Sugardave.cloud) | [sugardave.cloud](http://sugardave.cloud) |
+| **36** | [1](https://indieweb.org/Special:Contributions/Tracydurnell.com) | [tracydurnell.com](http://tracydurnell.com) |
+| **37** | [1](https://indieweb.org/Special:Contributions/Www.jeremycherfas.net) | [www.jeremycherfas.net](http://www.jeremycherfas.net) |
 | **38** | [1](https://indieweb.org/Special:Contributions/Www.sugardave.cloud) | [www.sugardave.cloud](http://www.sugardave.cloud) |
 
 
 ## Colophon
 
-Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 29 August 2023 at 6:28:09 UTC.
+Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 30 August 2023 at 6:27:55 UTC.
 
 Additionally, a list of all IndieWeb wiki users is available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users.json). Parsed microformats2 data from user homepages is available in [the `./data/users` directory](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users).
 
