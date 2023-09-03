@@ -5,11 +5,11 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 | Rank | Actions | User |
 |-----:|--------:|:-----|
 | **1** | [51](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
-| **2** | [49](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](http://gregorlove.com) |
-| **3** | [38](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
-| **4** | [35](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
-| **5** | [23](https://indieweb.org/Special:Contributions/Kvibber.com) | [kvibber.com](http://kvibber.com) |
-| **6** | [18](https://indieweb.org/Special:Contributions/Jamesg.blog) | [jamesg.blog](http://jamesg.blog) |
+| **2** | [46](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](http://gregorlove.com) |
+| **3** | [36](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
+| **4** | [36](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
+| **5** | [22](https://indieweb.org/Special:Contributions/Kvibber.com) | [kvibber.com](http://kvibber.com) |
+| **6** | [16](https://indieweb.org/Special:Contributions/Jamesg.blog) | [jamesg.blog](http://jamesg.blog) |
 | **7** | [14](https://indieweb.org/Special:Contributions/Sigmundur.morkore.fo) | [sigmundur.morkore.fo](http://sigmundur.morkore.fo) |
 | **8** | [11](https://indieweb.org/Special:Contributions/Rubenwardy.com) | [rubenwardy.com](http://rubenwardy.com) |
 | **9** | [8](https://indieweb.org/Special:Contributions/Cali.jamesg.blog) | [cali.jamesg.blog](http://cali.jamesg.blog) |
@@ -38,17 +38,17 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 | **32** | [1](https://indieweb.org/Special:Contributions/Gregsplace.net) | [gregsplace.net](http://gregsplace.net) |
 | **33** | [1](https://indieweb.org/Special:Contributions/Marksuth.dev) | [marksuth.dev](http://marksuth.dev) |
 | **34** | [1](https://indieweb.org/Special:Contributions/Omz13.com) | [omz13.com](http://omz13.com) |
-| **35** | [1](https://indieweb.org/Special:Contributions/Sugardave.cloud) | [sugardave.cloud](http://sugardave.cloud) |
-| **36** | [1](https://indieweb.org/Special:Contributions/Tracydurnell.com) | [tracydurnell.com](http://tracydurnell.com) |
-| **37** | [1](https://indieweb.org/Special:Contributions/Upon2020.com_blog_author_jernst) | [upon2020.com/blog/author/jernst](http://upon2020.com/blog/author/jernst) |
-| **38** | [1](https://indieweb.org/Special:Contributions/Vonexplaino.com) | [vonexplaino.com](http://vonexplaino.com) |
-| **39** | [1](https://indieweb.org/Special:Contributions/Www.jeremycherfas.net) | [www.jeremycherfas.net](http://www.jeremycherfas.net) |
-| **40** | [1](https://indieweb.org/Special:Contributions/Www.kevinmarks.com) | [www.kevinmarks.com](http://www.kevinmarks.com) |
+| **35** | [1](https://indieweb.org/Special:Contributions/Tracydurnell.com) | [tracydurnell.com](http://tracydurnell.com) |
+| **36** | [1](https://indieweb.org/Special:Contributions/Upon2020.com_blog_author_jernst) | [upon2020.com/blog/author/jernst](http://upon2020.com/blog/author/jernst) |
+| **37** | [1](https://indieweb.org/Special:Contributions/Vonexplaino.com) | [vonexplaino.com](http://vonexplaino.com) |
+| **38** | [1](https://indieweb.org/Special:Contributions/Www.jeremycherfas.net) | [www.jeremycherfas.net](http://www.jeremycherfas.net) |
+| **39** | [1](https://indieweb.org/Special:Contributions/Www.kevinmarks.com) | [www.kevinmarks.com](http://www.kevinmarks.com) |
+| **40** | [0](https://indieweb.org/Special:Contributions/Sugardave.cloud) | [sugardave.cloud](http://sugardave.cloud) |
 
 
 ## Colophon
 
-Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 2 September 2023 at 6:26:59 UTC.
+Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 3 September 2023 at 6:27:28 UTC.
 
 Additionally, a list of all IndieWeb wiki users is available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users.json). Parsed microformats2 data from user homepages is available in [the `./data/users` directory](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users).
 
