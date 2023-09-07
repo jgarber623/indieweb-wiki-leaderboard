@@ -2,17 +2,23 @@ name: Build README.md
 
 on:
   push:
+    branches: [main]
   schedule:
     - cron: "23 6 * * *"
+  workflow_dispatch:
 
 jobs:
+  ci:
+    name: CI
+    uses: ./.github/workflows/ci.yml
   build:
     name: Build
     permissions:
       contents: write
+    needs: ci
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
         with:
           node-version-file: ".nvmrc"
