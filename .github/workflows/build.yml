@@ -10,6 +10,9 @@ on:
 jobs:
   ci:
     name: CI
+    permissions:
+      contents: read
+      security-events: write
     uses: ./.github/workflows/ci.yml
   build:
     name: Build
