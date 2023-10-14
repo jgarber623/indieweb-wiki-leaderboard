@@ -1,13 +1,17 @@
-const config = require('@jgarber/eslint-config');
+import config from '@jgarber/eslint-config';
 
-module.exports = [
+export default [
   ...config,
   {
     files: ['**/*.js'],
     languageOptions: {
       globals: {
-        console: 'readonly'
+        console: 'readonly',
+        fetch: 'readonly'
       }
+    },
+    rules: {
+      'unicorn/better-regex': 'off'
     }
   }
 ];
