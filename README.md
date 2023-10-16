@@ -28,26 +28,26 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 | **22** | [2](https://indieweb.org/Special:Contributions/Kolesnikov.se) | [kolesnikov.se](http://kolesnikov.se) |
 | **23** | [2](https://indieweb.org/Special:Contributions/Sigmundur.morkore.fo) | [sigmundur.morkore.fo](http://sigmundur.morkore.fo) |
 | **24** | [2](https://indieweb.org/Special:Contributions/Subvert.city) | [subvert.city](http://subvert.city) |
-| **25** | [2](https://indieweb.org/Special:Contributions/Www.steinea.ca) | [www.steinea.ca](http://www.steinea.ca) |
-| **26** | [2](https://indieweb.org/Special:Contributions/Www.svenknebel.de) | [www.svenknebel.de](http://www.svenknebel.de) |
-| **27** | [1](https://indieweb.org/Special:Contributions/Boffosocko.com) | [boffosocko.com](http://boffosocko.com) |
-| **28** | [1](https://indieweb.org/Special:Contributions/Dead.garden) | [dead.garden](http://dead.garden) |
-| **29** | [1](https://indieweb.org/Special:Contributions/Hoschi-it.de) | [hoschi-it.de](http://hoschi-it.de) |
-| **30** | [1](https://indieweb.org/Special:Contributions/Jkphl.is) | [jkphl.is](http://jkphl.is) |
-| **31** | [1](https://indieweb.org/Special:Contributions/Martymcgui.re) | [martymcgui.re](http://martymcgui.re) |
-| **32** | [1](https://indieweb.org/Special:Contributions/Minutestomidnight.co.uk) | [minutestomidnight.co.uk](http://minutestomidnight.co.uk) |
-| **33** | [1](https://indieweb.org/Special:Contributions/Ross.karchner.com) | [ross.karchner.com](http://ross.karchner.com) |
-| **34** | [1](https://indieweb.org/Special:Contributions/Rubenwardy.com) | [rubenwardy.com](http://rubenwardy.com) |
-| **35** | [1](https://indieweb.org/Special:Contributions/Starrwulfe.xyz) | [starrwulfe.xyz](http://starrwulfe.xyz) |
-| **36** | [1](https://indieweb.org/Special:Contributions/Sugardave.cloud) | [sugardave.cloud](http://sugardave.cloud) |
-| **37** | [1](https://indieweb.org/Special:Contributions/Tracydurnell.com) | [tracydurnell.com](http://tracydurnell.com) |
-| **38** | [1](https://indieweb.org/Special:Contributions/Www.juanfernandes.uk) | [www.juanfernandes.uk](http://www.juanfernandes.uk) |
-| **39** | [1](https://indieweb.org/Special:Contributions/Www.zinzy.website) | [www.zinzy.website](http://www.zinzy.website) |
+| **25** | [2](https://indieweb.org/Special:Contributions/Www.svenknebel.de) | [www.svenknebel.de](http://www.svenknebel.de) |
+| **26** | [1](https://indieweb.org/Special:Contributions/Boffosocko.com) | [boffosocko.com](http://boffosocko.com) |
+| **27** | [1](https://indieweb.org/Special:Contributions/Dead.garden) | [dead.garden](http://dead.garden) |
+| **28** | [1](https://indieweb.org/Special:Contributions/Hoschi-it.de) | [hoschi-it.de](http://hoschi-it.de) |
+| **29** | [1](https://indieweb.org/Special:Contributions/Jkphl.is) | [jkphl.is](http://jkphl.is) |
+| **30** | [1](https://indieweb.org/Special:Contributions/Martymcgui.re) | [martymcgui.re](http://martymcgui.re) |
+| **31** | [1](https://indieweb.org/Special:Contributions/Minutestomidnight.co.uk) | [minutestomidnight.co.uk](http://minutestomidnight.co.uk) |
+| **32** | [1](https://indieweb.org/Special:Contributions/Ross.karchner.com) | [ross.karchner.com](http://ross.karchner.com) |
+| **33** | [1](https://indieweb.org/Special:Contributions/Rubenwardy.com) | [rubenwardy.com](http://rubenwardy.com) |
+| **34** | [1](https://indieweb.org/Special:Contributions/Starrwulfe.xyz) | [starrwulfe.xyz](http://starrwulfe.xyz) |
+| **35** | [1](https://indieweb.org/Special:Contributions/Sugardave.cloud) | [sugardave.cloud](http://sugardave.cloud) |
+| **36** | [1](https://indieweb.org/Special:Contributions/Tracydurnell.com) | [tracydurnell.com](http://tracydurnell.com) |
+| **37** | [1](https://indieweb.org/Special:Contributions/Www.juanfernandes.uk) | [www.juanfernandes.uk](http://www.juanfernandes.uk) |
+| **38** | [1](https://indieweb.org/Special:Contributions/Www.zinzy.website) | [www.zinzy.website](http://www.zinzy.website) |
+| **39** | [0](https://indieweb.org/Special:Contributions/Www.steinea.ca) | [www.steinea.ca](http://www.steinea.ca) |
 
 
 ## Colophon
 
-Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 15 October 2023 at 15:19:27 UTC.
+Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 16 October 2023 at 6:31:26 UTC.
 
 Additionally, a list of all IndieWeb wiki users is available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users.json). Parsed microformats2 data from user homepages is available in [the `./data/users` directory](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users).
 
