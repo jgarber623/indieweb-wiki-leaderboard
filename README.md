@@ -6,7 +6,7 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 |-----:|--------:|:-----|
 | **1** | [156](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
 | **2** | [143](https://indieweb.org/Special:Contributions/Paulrobertlloyd.com) | [paulrobertlloyd.com](http://paulrobertlloyd.com) |
-| **3** | [90](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
+| **3** | [92](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
 | **4** | [68](https://indieweb.org/Special:Contributions/Vanderven.se_martijn) | [vanderven.se/martijn](http://vanderven.se/martijn) |
 | **5** | [56](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](http://gregorlove.com) |
 | **6** | [32](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
@@ -33,23 +33,26 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 | **27** | [2](https://indieweb.org/Special:Contributions/Sebastiangreger.net) | [sebastiangreger.net](http://sebastiangreger.net) |
 | **28** | [2](https://indieweb.org/Special:Contributions/Www.kevinmarks.com) | [www.kevinmarks.com](http://www.kevinmarks.com) |
 | **29** | [1](https://indieweb.org/Special:Contributions/Alexsirac.com) | [alexsirac.com](http://alexsirac.com) |
-| **30** | [1](https://indieweb.org/Special:Contributions/Artlung.com) | [artlung.com](http://artlung.com) |
-| **31** | [1](https://indieweb.org/Special:Contributions/Dead.garden) | [dead.garden](http://dead.garden) |
-| **32** | [1](https://indieweb.org/Special:Contributions/Degruchy.org) | [degruchy.org](http://degruchy.org) |
-| **33** | [1](https://indieweb.org/Special:Contributions/Dmitri.shuralyov.com) | [dmitri.shuralyov.com](http://dmitri.shuralyov.com) |
-| **34** | [1](https://indieweb.org/Special:Contributions/Hoschi-it.de) | [hoschi-it.de](http://hoschi-it.de) |
-| **35** | [1](https://indieweb.org/Special:Contributions/Lifeofpablo.com) | [lifeofpablo.com](http://lifeofpablo.com) |
-| **36** | [1](https://indieweb.org/Special:Contributions/Mandarismoore.com) | [mandarismoore.com](http://mandarismoore.com) |
-| **37** | [1](https://indieweb.org/Special:Contributions/Minutestomidnight.co.uk) | [minutestomidnight.co.uk](http://minutestomidnight.co.uk) |
-| **38** | [1](https://indieweb.org/Special:Contributions/Robertvanbregt.nl) | [robertvanbregt.nl](http://robertvanbregt.nl) |
-| **39** | [1](https://indieweb.org/Special:Contributions/Webrocker.de) | [webrocker.de](http://webrocker.de) |
-| **40** | [1](https://indieweb.org/Special:Contributions/Www.jeremycherfas.net) | [www.jeremycherfas.net](http://www.jeremycherfas.net) |
-| **41** | [1](https://indieweb.org/Special:Contributions/Www.juanfernandes.uk) | [www.juanfernandes.uk](http://www.juanfernandes.uk) |
+| **30** | [1](https://indieweb.org/Special:Contributions/Anthonyrandall.com) | [anthonyrandall.com](http://anthonyrandall.com) |
+| **31** | [1](https://indieweb.org/Special:Contributions/Artlung.com) | [artlung.com](http://artlung.com) |
+| **32** | [1](https://indieweb.org/Special:Contributions/Dead.garden) | [dead.garden](http://dead.garden) |
+| **33** | [1](https://indieweb.org/Special:Contributions/Degruchy.org) | [degruchy.org](http://degruchy.org) |
+| **34** | [1](https://indieweb.org/Special:Contributions/Dmitri.shuralyov.com) | [dmitri.shuralyov.com](http://dmitri.shuralyov.com) |
+| **35** | [1](https://indieweb.org/Special:Contributions/Hoschi-it.de) | [hoschi-it.de](http://hoschi-it.de) |
+| **36** | [1](https://indieweb.org/Special:Contributions/Jacky.wtf) | [jacky.wtf](http://jacky.wtf) |
+| **37** | [1](https://indieweb.org/Special:Contributions/Lifeofpablo.com) | [lifeofpablo.com](http://lifeofpablo.com) |
+| **38** | [1](https://indieweb.org/Special:Contributions/Mandarismoore.com) | [mandarismoore.com](http://mandarismoore.com) |
+| **39** | [1](https://indieweb.org/Special:Contributions/Minutestomidnight.co.uk) | [minutestomidnight.co.uk](http://minutestomidnight.co.uk) |
+| **40** | [1](https://indieweb.org/Special:Contributions/Robertvanbregt.nl) | [robertvanbregt.nl](http://robertvanbregt.nl) |
+| **41** | [1](https://indieweb.org/Special:Contributions/Snarfed.org) | [snarfed.org](http://snarfed.org) |
+| **42** | [1](https://indieweb.org/Special:Contributions/Webrocker.de) | [webrocker.de](http://webrocker.de) |
+| **43** | [1](https://indieweb.org/Special:Contributions/Www.jeremycherfas.net) | [www.jeremycherfas.net](http://www.jeremycherfas.net) |
+| **44** | [1](https://indieweb.org/Special:Contributions/Www.juanfernandes.uk) | [www.juanfernandes.uk](http://www.juanfernandes.uk) |
 
 
 ## Colophon
 
-Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 6 November 2023 at 6:30:01 UTC.
+Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 7 November 2023 at 6:29:24 UTC.
 
 Additionally, a list of all IndieWeb wiki users is available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users.json). Parsed microformats2 data from user homepages is available in [the `./data/users` directory](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users).
 
