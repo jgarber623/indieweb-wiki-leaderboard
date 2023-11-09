@@ -4,20 +4,20 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 
 | Rank | Actions | User |
 |-----:|--------:|:-----|
-| **1** | [149](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
+| **1** | [153](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
 | **2** | [147](https://indieweb.org/Special:Contributions/Paulrobertlloyd.com) | [paulrobertlloyd.com](http://paulrobertlloyd.com) |
-| **3** | [90](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
+| **3** | [93](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
 | **4** | [68](https://indieweb.org/Special:Contributions/Vanderven.se_martijn) | [vanderven.se/martijn](http://vanderven.se/martijn) |
-| **5** | [58](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](http://gregorlove.com) |
-| **6** | [32](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
-| **7** | [26](https://indieweb.org/Special:Contributions/David.shanske.com) | [david.shanske.com](http://david.shanske.com) |
-| **8** | [13](https://indieweb.org/Special:Contributions/Sarajaksa.eu) | [sarajaksa.eu](http://sarajaksa.eu) |
-| **9** | [7](https://indieweb.org/Special:Contributions/Cali.jamesg.blog) | [cali.jamesg.blog](http://cali.jamesg.blog) |
-| **10** | [7](https://indieweb.org/Special:Contributions/Calumryan.com) | [calumryan.com](http://calumryan.com) |
+| **5** | [60](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](http://gregorlove.com) |
+| **6** | [37](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
+| **7** | [13](https://indieweb.org/Special:Contributions/Sarajaksa.eu) | [sarajaksa.eu](http://sarajaksa.eu) |
+| **8** | [7](https://indieweb.org/Special:Contributions/Cali.jamesg.blog) | [cali.jamesg.blog](http://cali.jamesg.blog) |
+| **9** | [7](https://indieweb.org/Special:Contributions/Calumryan.com) | [calumryan.com](http://calumryan.com) |
+| **10** | [7](https://indieweb.org/Special:Contributions/Lifeofpablo.com) | [lifeofpablo.com](http://lifeofpablo.com) |
 | **11** | [6](https://indieweb.org/Special:Contributions/Jkphl.is) | [jkphl.is](http://jkphl.is) |
-| **12** | [6](https://indieweb.org/Special:Contributions/Www.ciccarello.me) | [www.ciccarello.me](http://www.ciccarello.me) |
-| **13** | [5](https://indieweb.org/Special:Contributions/Bjoern.stierand.org) | [bjoern.stierand.org](http://bjoern.stierand.org) |
-| **14** | [5](https://indieweb.org/Special:Contributions/Jamesg.blog) | [jamesg.blog](http://jamesg.blog) |
+| **12** | [5](https://indieweb.org/Special:Contributions/Bjoern.stierand.org) | [bjoern.stierand.org](http://bjoern.stierand.org) |
+| **13** | [5](https://indieweb.org/Special:Contributions/Jamesg.blog) | [jamesg.blog](http://jamesg.blog) |
+| **14** | [5](https://indieweb.org/Special:Contributions/Www.ciccarello.me) | [www.ciccarello.me](http://www.ciccarello.me) |
 | **15** | [4](https://indieweb.org/Special:Contributions/777.tf) | [777.tf](http://777.tf) |
 | **16** | [4](https://indieweb.org/Special:Contributions/Seblog.nl) | [seblog.nl](http://seblog.nl) |
 | **17** | [4](https://indieweb.org/Special:Contributions/Vhbelvadi.com) | [vhbelvadi.com](http://vhbelvadi.com) |
@@ -38,19 +38,18 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 | **32** | [1](https://indieweb.org/Special:Contributions/Dmitri.shuralyov.com) | [dmitri.shuralyov.com](http://dmitri.shuralyov.com) |
 | **33** | [1](https://indieweb.org/Special:Contributions/Hoschi-it.de) | [hoschi-it.de](http://hoschi-it.de) |
 | **34** | [1](https://indieweb.org/Special:Contributions/Jacky.wtf) | [jacky.wtf](http://jacky.wtf) |
-| **35** | [1](https://indieweb.org/Special:Contributions/Lifeofpablo.com) | [lifeofpablo.com](http://lifeofpablo.com) |
-| **36** | [1](https://indieweb.org/Special:Contributions/Mandarismoore.com) | [mandarismoore.com](http://mandarismoore.com) |
-| **37** | [1](https://indieweb.org/Special:Contributions/Minutestomidnight.co.uk) | [minutestomidnight.co.uk](http://minutestomidnight.co.uk) |
-| **38** | [1](https://indieweb.org/Special:Contributions/Robertvanbregt.nl) | [robertvanbregt.nl](http://robertvanbregt.nl) |
-| **39** | [1](https://indieweb.org/Special:Contributions/Snarfed.org) | [snarfed.org](http://snarfed.org) |
-| **40** | [1](https://indieweb.org/Special:Contributions/Webrocker.de) | [webrocker.de](http://webrocker.de) |
-| **41** | [1](https://indieweb.org/Special:Contributions/Www.jeremycherfas.net) | [www.jeremycherfas.net](http://www.jeremycherfas.net) |
-| **42** | [1](https://indieweb.org/Special:Contributions/Www.juanfernandes.uk) | [www.juanfernandes.uk](http://www.juanfernandes.uk) |
+| **35** | [1](https://indieweb.org/Special:Contributions/Mandarismoore.com) | [mandarismoore.com](http://mandarismoore.com) |
+| **36** | [1](https://indieweb.org/Special:Contributions/Minutestomidnight.co.uk) | [minutestomidnight.co.uk](http://minutestomidnight.co.uk) |
+| **37** | [1](https://indieweb.org/Special:Contributions/Robertvanbregt.nl) | [robertvanbregt.nl](http://robertvanbregt.nl) |
+| **38** | [1](https://indieweb.org/Special:Contributions/Snarfed.org) | [snarfed.org](http://snarfed.org) |
+| **39** | [1](https://indieweb.org/Special:Contributions/Webrocker.de) | [webrocker.de](http://webrocker.de) |
+| **40** | [1](https://indieweb.org/Special:Contributions/Www.jeremycherfas.net) | [www.jeremycherfas.net](http://www.jeremycherfas.net) |
+| **41** | [1](https://indieweb.org/Special:Contributions/Www.juanfernandes.uk) | [www.juanfernandes.uk](http://www.juanfernandes.uk) |
 
 
 ## Colophon
 
-Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 8 November 2023 at 6:29:29 UTC.
+Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 9 November 2023 at 6:29:23 UTC.
 
 Additionally, a list of all IndieWeb wiki users is available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users.json). Parsed microformats2 data from user homepages is available in [the `./data/users` directory](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users).
 
