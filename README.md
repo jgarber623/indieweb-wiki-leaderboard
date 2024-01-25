@@ -4,25 +4,25 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 
 | Rank | Actions | User |
 |-----:|--------:|:-----|
-| **1** | [281](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
-| **2** | [167](https://indieweb.org/Special:Contributions/Paulrobertlloyd.com) | [paulrobertlloyd.com](http://paulrobertlloyd.com) |
-| **3** | [152](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
-| **4** | [55](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](http://gregorlove.com) |
-| **5** | [38](https://indieweb.org/Special:Contributions/Www.lazaruscorporation.co.uk) | [www.lazaruscorporation.co.uk](http://www.lazaruscorporation.co.uk) |
+| **1** | [278](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
+| **2** | [168](https://indieweb.org/Special:Contributions/Paulrobertlloyd.com) | [paulrobertlloyd.com](http://paulrobertlloyd.com) |
+| **3** | [154](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
+| **4** | [53](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](http://gregorlove.com) |
+| **5** | [41](https://indieweb.org/Special:Contributions/Www.lazaruscorporation.co.uk) | [www.lazaruscorporation.co.uk](http://www.lazaruscorporation.co.uk) |
 | **6** | [33](https://indieweb.org/Special:Contributions/Foreverliketh.is) | [foreverliketh.is](http://foreverliketh.is) |
-| **7** | [30](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
+| **7** | [29](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
 | **8** | [27](https://indieweb.org/Special:Contributions/Aaronparecki.com) | [aaronparecki.com](http://aaronparecki.com) |
-| **9** | [20](https://indieweb.org/Special:Contributions/Www.svenknebel.de) | [www.svenknebel.de](http://www.svenknebel.de) |
-| **10** | [17](https://indieweb.org/Special:Contributions/Artlung.com) | [artlung.com](http://artlung.com) |
-| **11** | [17](https://indieweb.org/Special:Contributions/Jamesg.blog) | [jamesg.blog](http://jamesg.blog) |
+| **9** | [21](https://indieweb.org/Special:Contributions/Www.svenknebel.de) | [www.svenknebel.de](http://www.svenknebel.de) |
+| **10** | [19](https://indieweb.org/Special:Contributions/Jamesg.blog) | [jamesg.blog](http://jamesg.blog) |
+| **11** | [17](https://indieweb.org/Special:Contributions/Artlung.com) | [artlung.com](http://artlung.com) |
 | **12** | [13](https://indieweb.org/Special:Contributions/Btrem.com) | [btrem.com](http://btrem.com) |
 | **13** | [12](https://indieweb.org/Special:Contributions/Www.ciccarello.me) | [www.ciccarello.me](http://www.ciccarello.me) |
 | **14** | [9](https://indieweb.org/Special:Contributions/Laker.tech) | [laker.tech](http://laker.tech) |
-| **15** | [9](https://indieweb.org/Special:Contributions/Sarajaksa.eu) | [sarajaksa.eu](http://sarajaksa.eu) |
-| **16** | [8](https://indieweb.org/Special:Contributions/Aramzuckerscharff.com) | [aramzuckerscharff.com](http://aramzuckerscharff.com) |
-| **17** | [7](https://indieweb.org/Special:Contributions/Toddpresta.com) | [toddpresta.com](http://toddpresta.com) |
-| **18** | [7](https://indieweb.org/Special:Contributions/Vanderven.se_martijn) | [vanderven.se/martijn](http://vanderven.se/martijn) |
-| **19** | [6](https://indieweb.org/Special:Contributions/Cali.moe) | [cali.moe](http://cali.moe) |
+| **15** | [8](https://indieweb.org/Special:Contributions/Aramzuckerscharff.com) | [aramzuckerscharff.com](http://aramzuckerscharff.com) |
+| **16** | [8](https://indieweb.org/Special:Contributions/Sarajaksa.eu) | [sarajaksa.eu](http://sarajaksa.eu) |
+| **17** | [7](https://indieweb.org/Special:Contributions/Cali.moe) | [cali.moe](http://cali.moe) |
+| **18** | [7](https://indieweb.org/Special:Contributions/Toddpresta.com) | [toddpresta.com](http://toddpresta.com) |
+| **19** | [7](https://indieweb.org/Special:Contributions/Vanderven.se_martijn) | [vanderven.se/martijn](http://vanderven.se/martijn) |
 | **20** | [6](https://indieweb.org/Special:Contributions/Campegg.com) | [campegg.com](http://campegg.com) |
 | **21** | [6](https://indieweb.org/Special:Contributions/Lucien.nogues.ca) | [lucien.nogues.ca](http://lucien.nogues.ca) |
 | **22** | [6](https://indieweb.org/Special:Contributions/Qubyte.codes) | [qubyte.codes](http://qubyte.codes) |
@@ -58,7 +58,7 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 
 ## Colophon
 
-Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 24 January 2024 at 6:30:51 UTC.
+Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 25 January 2024 at 6:30:35 UTC.
 
 Additionally, a list of all IndieWeb wiki users is available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users.json). Parsed microformats2 data from user homepages is available in [the `./data/users` directory](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users).
 
