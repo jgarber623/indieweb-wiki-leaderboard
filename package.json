@@ -3,23 +3,16 @@
   "name": "indieweb-wiki-leaderboard",
   "homepage": "https://github.com/jgarber623/indieweb-wiki-leaderboard",
   "license": "CC0-1.0",
-  "author": {
-    "name": "Jason Garber",
-    "email": "jason@sixtwothree.org",
-    "url": "https://sixtwothree.org"
-  },
+  "author": "Jason Garber <jason@sixtwothree.org> (https://sixtwothree.org)",
   "type": "module",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jgarber623/indieweb-wiki-leaderboard"
-  },
+  "repository": "github:jgarber623/indieweb-wiki-leaderboard",
   "scripts": {
     "build": "node ./lib/build.js",
     "lint": "eslint ."
   },
   "devDependencies": {
-    "@jgarber/eslint-config": "^3.0.0",
-    "jsdom": "^22.1.0",
-    "liquidjs": "^10.9.3"
+    "@jgarber/eslint-config": "^4.2.1",
+    "jsdom": "^24.0.0",
+    "liquidjs": "^10.10.1"
   }
 }

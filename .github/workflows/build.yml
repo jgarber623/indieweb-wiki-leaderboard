@@ -10,9 +10,6 @@ on:
 jobs:
   ci:
     name: CI
-    permissions:
-      contents: read
-      security-events: write
     uses: ./.github/workflows/ci.yml
   build:
     name: Build
@@ -22,13 +19,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version-file: ".nvmrc"
           cache: npm
       - run: npm ci
-      - name: Build leaderboard
-        run: npm run build
+      - run: npm run build
       - name: Commit and push changed files
         run: |
           git diff
