@@ -4,13 +4,13 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 
 | Rank | Actions | User |
 |-----:|--------:|:-----|
-| **1** | [201](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
+| **1** | [200](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
 | **2** | [129](https://indieweb.org/Special:Contributions/Paulrobertlloyd.com) | [paulrobertlloyd.com](http://paulrobertlloyd.com) |
-| **3** | [111](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
+| **3** | [107](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
 | **4** | [100](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](http://gregorlove.com) |
-| **5** | [59](https://indieweb.org/Special:Contributions/Www.ciccarello.me) | [www.ciccarello.me](http://www.ciccarello.me) |
-| **6** | [33](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
-| **7** | [21](https://indieweb.org/Special:Contributions/Jamesg.blog) | [jamesg.blog](http://jamesg.blog) |
+| **5** | [60](https://indieweb.org/Special:Contributions/Www.ciccarello.me) | [www.ciccarello.me](http://www.ciccarello.me) |
+| **6** | [35](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
+| **7** | [22](https://indieweb.org/Special:Contributions/Jamesg.blog) | [jamesg.blog](http://jamesg.blog) |
 | **8** | [16](https://indieweb.org/Special:Contributions/Foreverliketh.is) | [foreverliketh.is](http://foreverliketh.is) |
 | **9** | [14](https://indieweb.org/Special:Contributions/Qubyte.codes) | [qubyte.codes](http://qubyte.codes) |
 | **10** | [11](https://indieweb.org/Special:Contributions/Letorey.co.uk) | [letorey.co.uk](http://letorey.co.uk) |
@@ -19,21 +19,21 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 | **13** | [10](https://indieweb.org/Special:Contributions/Lifeofpablo.com) | [lifeofpablo.com](http://lifeofpablo.com) |
 | **14** | [9](https://indieweb.org/Special:Contributions/Sarajaksa.eu) | [sarajaksa.eu](http://sarajaksa.eu) |
 | **15** | [8](https://indieweb.org/Special:Contributions/Samboyer.uk) | [samboyer.uk](http://samboyer.uk) |
-| **16** | [7](https://indieweb.org/Special:Contributions/Islandinthenet.com) | [islandinthenet.com](http://islandinthenet.com) |
-| **17** | [7](https://indieweb.org/Special:Contributions/Toddpresta.com) | [toddpresta.com](http://toddpresta.com) |
-| **18** | [6](https://indieweb.org/Special:Contributions/Cali.moe) | [cali.moe](http://cali.moe) |
-| **19** | [6](https://indieweb.org/Special:Contributions/Roobottom.com) | [roobottom.com](http://roobottom.com) |
-| **20** | [6](https://indieweb.org/Special:Contributions/Scoutaloud.net) | [scoutaloud.net](http://scoutaloud.net) |
-| **21** | [5](https://indieweb.org/Special:Contributions/Ohhelloana.blog) | [ohhelloana.blog](http://ohhelloana.blog) |
-| **22** | [5](https://indieweb.org/Special:Contributions/Omz13.com) | [omz13.com](http://omz13.com) |
+| **16** | [7](https://indieweb.org/Special:Contributions/Cali.moe) | [cali.moe](http://cali.moe) |
+| **17** | [7](https://indieweb.org/Special:Contributions/Islandinthenet.com) | [islandinthenet.com](http://islandinthenet.com) |
+| **18** | [7](https://indieweb.org/Special:Contributions/Toddpresta.com) | [toddpresta.com](http://toddpresta.com) |
+| **19** | [7](https://indieweb.org/Special:Contributions/Www.claudinec.net) | [www.claudinec.net](http://www.claudinec.net) |
+| **20** | [6](https://indieweb.org/Special:Contributions/Roobottom.com) | [roobottom.com](http://roobottom.com) |
+| **21** | [6](https://indieweb.org/Special:Contributions/Scoutaloud.net) | [scoutaloud.net](http://scoutaloud.net) |
+| **22** | [5](https://indieweb.org/Special:Contributions/Ohhelloana.blog) | [ohhelloana.blog](http://ohhelloana.blog) |
 | **23** | [5](https://indieweb.org/Special:Contributions/Pesce.cc) | [pesce.cc](http://pesce.cc) |
-| **24** | [3](https://indieweb.org/Special:Contributions/Btrem.com) | [btrem.com](http://btrem.com) |
-| **25** | [3](https://indieweb.org/Special:Contributions/Catgirlin.space) | [catgirlin.space](http://catgirlin.space) |
-| **26** | [3](https://indieweb.org/Special:Contributions/Chrisnewtn.com) | [chrisnewtn.com](http://chrisnewtn.com) |
-| **27** | [3](https://indieweb.org/Special:Contributions/Douglasjsmith404.com) | [douglasjsmith404.com](http://douglasjsmith404.com) |
-| **28** | [3](https://indieweb.org/Special:Contributions/Douglasjsmith404.com_indieweb) | [douglasjsmith404.com/indieweb](http://douglasjsmith404.com/indieweb) |
-| **29** | [3](https://indieweb.org/Special:Contributions/Jmtd.net_about) | [jmtd.net/about](http://jmtd.net/about) |
-| **30** | [3](https://indieweb.org/Special:Contributions/Kvibber.com) | [kvibber.com](http://kvibber.com) |
+| **24** | [3](https://indieweb.org/Special:Contributions/Catgirlin.space) | [catgirlin.space](http://catgirlin.space) |
+| **25** | [3](https://indieweb.org/Special:Contributions/Chrisnewtn.com) | [chrisnewtn.com](http://chrisnewtn.com) |
+| **26** | [3](https://indieweb.org/Special:Contributions/Douglasjsmith404.com) | [douglasjsmith404.com](http://douglasjsmith404.com) |
+| **27** | [3](https://indieweb.org/Special:Contributions/Douglasjsmith404.com_indieweb) | [douglasjsmith404.com/indieweb](http://douglasjsmith404.com/indieweb) |
+| **28** | [3](https://indieweb.org/Special:Contributions/Jmtd.net_about) | [jmtd.net/about](http://jmtd.net/about) |
+| **29** | [3](https://indieweb.org/Special:Contributions/Kvibber.com) | [kvibber.com](http://kvibber.com) |
+| **30** | [2](https://indieweb.org/Special:Contributions/Btrem.com) | [btrem.com](http://btrem.com) |
 | **31** | [2](https://indieweb.org/Special:Contributions/Fireburn.ru) | [fireburn.ru](http://fireburn.ru) |
 | **32** | [2](https://indieweb.org/Special:Contributions/Fran.fi) | [fran.fi](http://fran.fi) |
 | **33** | [2](https://indieweb.org/Special:Contributions/Starrwulfe.xyz) | [starrwulfe.xyz](http://starrwulfe.xyz) |
@@ -58,7 +58,7 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 
 ## Colophon
 
-Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 28 March 2024 at 6:28:08 UTC.
+Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 29 March 2024 at 6:28:43 UTC.
 
 Additionally, a list of all IndieWeb wiki users is available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users.json). Parsed microformats2 data from user homepages is available in [the `./data/users` directory](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users).
 
