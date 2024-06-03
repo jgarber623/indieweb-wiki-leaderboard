@@ -43,17 +43,18 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 | **37** | [1](https://indieweb.org/Special:Contributions/Lifeofpablo.com) | [lifeofpablo.com](http://lifeofpablo.com) |
 | **38** | [1](https://indieweb.org/Special:Contributions/Mike.helmers.me) | [mike.helmers.me](http://mike.helmers.me) |
 | **39** | [1](https://indieweb.org/Special:Contributions/Ramblinggit.com) | [ramblinggit.com](http://ramblinggit.com) |
-| **40** | [1](https://indieweb.org/Special:Contributions/Theadhocracy.co.uk) | [theadhocracy.co.uk](http://theadhocracy.co.uk) |
-| **41** | [1](https://indieweb.org/Special:Contributions/Underlap.org) | [underlap.org](http://underlap.org) |
-| **42** | [1](https://indieweb.org/Special:Contributions/Vhbelvadi.com) | [vhbelvadi.com](http://vhbelvadi.com) |
-| **43** | [1](https://indieweb.org/Special:Contributions/Wake.st) | [wake.st](http://wake.st) |
-| **44** | [1](https://indieweb.org/Special:Contributions/Www.byjp.me) | [www.byjp.me](http://www.byjp.me) |
-| **45** | [1](https://indieweb.org/Special:Contributions/Www.lazaruscorporation.co.uk) | [www.lazaruscorporation.co.uk](http://www.lazaruscorporation.co.uk) |
+| **40** | [1](https://indieweb.org/Special:Contributions/Starrwulfe.xyz) | [starrwulfe.xyz](http://starrwulfe.xyz) |
+| **41** | [1](https://indieweb.org/Special:Contributions/Theadhocracy.co.uk) | [theadhocracy.co.uk](http://theadhocracy.co.uk) |
+| **42** | [1](https://indieweb.org/Special:Contributions/Underlap.org) | [underlap.org](http://underlap.org) |
+| **43** | [1](https://indieweb.org/Special:Contributions/Vhbelvadi.com) | [vhbelvadi.com](http://vhbelvadi.com) |
+| **44** | [1](https://indieweb.org/Special:Contributions/Wake.st) | [wake.st](http://wake.st) |
+| **45** | [1](https://indieweb.org/Special:Contributions/Www.byjp.me) | [www.byjp.me](http://www.byjp.me) |
+| **46** | [1](https://indieweb.org/Special:Contributions/Www.lazaruscorporation.co.uk) | [www.lazaruscorporation.co.uk](http://www.lazaruscorporation.co.uk) |
 
 
 ## Colophon
 
-Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 3 June 2024 at 18:52:07 UTC.
+Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 3 June 2024 at 19:20:57 UTC.
 
 Additionally, a list of all IndieWeb wiki users is available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users.json). Parsed microformats2 data from user homepages is available in [the `./data/users` directory](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users).
 
