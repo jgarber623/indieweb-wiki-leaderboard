@@ -5,8 +5,8 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 | Rank | Actions | User |
 |-----:|--------:|:-----|
 | **1** | [77](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
-| **2** | [51](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
-| **3** | [44](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
+| **2** | [50](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
+| **3** | [49](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
 | **4** | [29](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](http://gregorlove.com) |
 | **5** | [24](https://indieweb.org/Special:Contributions/Drewmcweeney.com) | [drewmcweeney.com](http://drewmcweeney.com) |
 | **6** | [14](https://indieweb.org/Special:Contributions/Toddpresta.com) | [toddpresta.com](http://toddpresta.com) |
@@ -17,17 +17,17 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 | **11** | [5](https://indieweb.org/Special:Contributions/Jarema.me) | [jarema.me](http://jarema.me) |
 | **12** | [5](https://indieweb.org/Special:Contributions/Martymcgui.re) | [martymcgui.re](http://martymcgui.re) |
 | **13** | [5](https://indieweb.org/Special:Contributions/Vanderven.se_martijn) | [vanderven.se/martijn](http://vanderven.se/martijn) |
-| **14** | [5](https://indieweb.org/Special:Contributions/Www.lazaruscorporation.co.uk) | [www.lazaruscorporation.co.uk](http://www.lazaruscorporation.co.uk) |
-| **15** | [4](https://indieweb.org/Special:Contributions/Brunopulis.com) | [brunopulis.com](http://brunopulis.com) |
-| **16** | [4](https://indieweb.org/Special:Contributions/Bw3.dev) | [bw3.dev](http://bw3.dev) |
-| **17** | [3](https://indieweb.org/Special:Contributions/Codingotaku.com) | [codingotaku.com](http://codingotaku.com) |
-| **18** | [3](https://indieweb.org/Special:Contributions/Dustin.boston) | [dustin.boston](http://dustin.boston) |
-| **19** | [3](https://indieweb.org/Special:Contributions/Hacknorris.neocities.org) | [hacknorris.neocities.org](http://hacknorris.neocities.org) |
-| **20** | [3](https://indieweb.org/Special:Contributions/Sarajaksa.eu) | [sarajaksa.eu](http://sarajaksa.eu) |
-| **21** | [2](https://indieweb.org/Special:Contributions/Alexsirac.com) | [alexsirac.com](http://alexsirac.com) |
-| **22** | [2](https://indieweb.org/Special:Contributions/Tangiblelife.net_about) | [tangiblelife.net/about](http://tangiblelife.net/about) |
-| **23** | [2](https://indieweb.org/Special:Contributions/Www.madmode.com) | [www.madmode.com](http://www.madmode.com) |
-| **24** | [1](https://indieweb.org/Special:Contributions/Alexsci.com_blog) | [alexsci.com/blog](http://alexsci.com/blog) |
+| **14** | [4](https://indieweb.org/Special:Contributions/Brunopulis.com) | [brunopulis.com](http://brunopulis.com) |
+| **15** | [4](https://indieweb.org/Special:Contributions/Bw3.dev) | [bw3.dev](http://bw3.dev) |
+| **16** | [3](https://indieweb.org/Special:Contributions/Codingotaku.com) | [codingotaku.com](http://codingotaku.com) |
+| **17** | [3](https://indieweb.org/Special:Contributions/Dustin.boston) | [dustin.boston](http://dustin.boston) |
+| **18** | [3](https://indieweb.org/Special:Contributions/Hacknorris.neocities.org) | [hacknorris.neocities.org](http://hacknorris.neocities.org) |
+| **19** | [3](https://indieweb.org/Special:Contributions/Sarajaksa.eu) | [sarajaksa.eu](http://sarajaksa.eu) |
+| **20** | [2](https://indieweb.org/Special:Contributions/Alexsirac.com) | [alexsirac.com](http://alexsirac.com) |
+| **21** | [2](https://indieweb.org/Special:Contributions/Tangiblelife.net_about) | [tangiblelife.net/about](http://tangiblelife.net/about) |
+| **22** | [2](https://indieweb.org/Special:Contributions/Www.madmode.com) | [www.madmode.com](http://www.madmode.com) |
+| **23** | [1](https://indieweb.org/Special:Contributions/Alexsci.com_blog) | [alexsci.com/blog](http://alexsci.com/blog) |
+| **24** | [1](https://indieweb.org/Special:Contributions/Catgirlin.space) | [catgirlin.space](http://catgirlin.space) |
 | **25** | [1](https://indieweb.org/Special:Contributions/Cool110.xyz) | [cool110.xyz](http://cool110.xyz) |
 | **26** | [1](https://indieweb.org/Special:Contributions/Hamatti.org) | [hamatti.org](http://hamatti.org) |
 | **27** | [1](https://indieweb.org/Special:Contributions/Jan.boddez.net) | [jan.boddez.net](http://jan.boddez.net) |
@@ -45,7 +45,7 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 
 ## Colophon
 
-Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 24 July 2024 at 6:31:31 UTC.
+Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 25 July 2024 at 6:31:44 UTC.
 
 Additionally, a list of all IndieWeb wiki users is available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users.json). Parsed microformats2 data from user homepages is available in [the `./data/users` directory](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users).
 
