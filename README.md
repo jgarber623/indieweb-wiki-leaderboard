@@ -5,20 +5,20 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 | Rank | Actions | User |
 |-----:|--------:|:-----|
 | **1** | [86](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
-| **2** | [41](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
+| **2** | [45](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
 | **3** | [33](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
 | **4** | [32](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](http://gregorlove.com) |
-| **5** | [15](https://indieweb.org/Special:Contributions/Vanderven.se_martijn) | [vanderven.se/martijn](http://vanderven.se/martijn) |
-| **6** | [13](https://indieweb.org/Special:Contributions/Artlung.com) | [artlung.com](http://artlung.com) |
-| **7** | [10](https://indieweb.org/Special:Contributions/Cali.moe) | [cali.moe](http://cali.moe) |
-| **8** | [10](https://indieweb.org/Special:Contributions/Marksuth.dev) | [marksuth.dev](http://marksuth.dev) |
-| **9** | [7](https://indieweb.org/Special:Contributions/Nicksimson.com) | [nicksimson.com](http://nicksimson.com) |
-| **10** | [6](https://indieweb.org/Special:Contributions/Jamesg.blog) | [jamesg.blog](http://jamesg.blog) |
-| **11** | [6](https://indieweb.org/Special:Contributions/Sarajaksa.eu) | [sarajaksa.eu](http://sarajaksa.eu) |
-| **12** | [5](https://indieweb.org/Special:Contributions/Jarema.me) | [jarema.me](http://jarema.me) |
-| **13** | [4](https://indieweb.org/Special:Contributions/Brunopulis.com) | [brunopulis.com](http://brunopulis.com) |
-| **14** | [3](https://indieweb.org/Special:Contributions/Catgirlin.space) | [catgirlin.space](http://catgirlin.space) |
-| **15** | [3](https://indieweb.org/Special:Contributions/Hacknorris.neocities.org) | [hacknorris.neocities.org](http://hacknorris.neocities.org) |
+| **5** | [14](https://indieweb.org/Special:Contributions/Artlung.com) | [artlung.com](http://artlung.com) |
+| **6** | [10](https://indieweb.org/Special:Contributions/Cali.moe) | [cali.moe](http://cali.moe) |
+| **7** | [10](https://indieweb.org/Special:Contributions/Marksuth.dev) | [marksuth.dev](http://marksuth.dev) |
+| **8** | [7](https://indieweb.org/Special:Contributions/Nicksimson.com) | [nicksimson.com](http://nicksimson.com) |
+| **9** | [6](https://indieweb.org/Special:Contributions/Jamesg.blog) | [jamesg.blog](http://jamesg.blog) |
+| **10** | [6](https://indieweb.org/Special:Contributions/Sarajaksa.eu) | [sarajaksa.eu](http://sarajaksa.eu) |
+| **11** | [5](https://indieweb.org/Special:Contributions/Jarema.me) | [jarema.me](http://jarema.me) |
+| **12** | [4](https://indieweb.org/Special:Contributions/Brunopulis.com) | [brunopulis.com](http://brunopulis.com) |
+| **13** | [3](https://indieweb.org/Special:Contributions/Catgirlin.space) | [catgirlin.space](http://catgirlin.space) |
+| **14** | [3](https://indieweb.org/Special:Contributions/Hacknorris.neocities.org) | [hacknorris.neocities.org](http://hacknorris.neocities.org) |
+| **15** | [3](https://indieweb.org/Special:Contributions/Toddpresta.com) | [toddpresta.com](http://toddpresta.com) |
 | **16** | [3](https://indieweb.org/Special:Contributions/Trainedmonkey.com) | [trainedmonkey.com](http://trainedmonkey.com) |
 | **17** | [3](https://indieweb.org/Special:Contributions/Www.zinzy.website) | [www.zinzy.website](http://www.zinzy.website) |
 | **18** | [2](https://indieweb.org/Special:Contributions/Alexsirac.com) | [alexsirac.com](http://alexsirac.com) |
@@ -43,7 +43,7 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 
 ## Colophon
 
-Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 8 August 2024 at 6:32:15 UTC.
+Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 9 August 2024 at 6:32:26 UTC.
 
 Additionally, a list of all IndieWeb wiki users is available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users.json). Parsed microformats2 data from user homepages is available in [the `./data/users` directory](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users).
 
