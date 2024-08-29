@@ -4,13 +4,13 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 
 | Rank | Actions | User |
 |-----:|--------:|:-----|
-| **1** | [79](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
-| **2** | [35](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
-| **3** | [30](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
-| **4** | [16](https://indieweb.org/Special:Contributions/Artlung.com) | [artlung.com](http://artlung.com) |
+| **1** | [78](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
+| **2** | [40](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
+| **3** | [32](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
+| **4** | [18](https://indieweb.org/Special:Contributions/Artlung.com) | [artlung.com](http://artlung.com) |
 | **5** | [14](https://indieweb.org/Special:Contributions/Benharri.org) | [benharri.org](http://benharri.org) |
-| **6** | [8](https://indieweb.org/Special:Contributions/Jamesg.blog) | [jamesg.blog](http://jamesg.blog) |
-| **7** | [7](https://indieweb.org/Special:Contributions/Cali.moe) | [cali.moe](http://cali.moe) |
+| **6** | [10](https://indieweb.org/Special:Contributions/Jamesg.blog) | [jamesg.blog](http://jamesg.blog) |
+| **7** | [8](https://indieweb.org/Special:Contributions/Cali.moe) | [cali.moe](http://cali.moe) |
 | **8** | [6](https://indieweb.org/Special:Contributions/Fab@redterminal.org) | [fab@redterminal.org](http://fab@redterminal.org) |
 | **9** | [5](https://indieweb.org/Special:Contributions/Chris.funderburg.me) | [chris.funderburg.me](http://chris.funderburg.me) |
 | **10** | [4](https://indieweb.org/Special:Contributions/Bjoern.stierand.org) | [bjoern.stierand.org](http://bjoern.stierand.org) |
@@ -25,22 +25,23 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 | **19** | [2](https://indieweb.org/Special:Contributions/Starrwulfe.xyz) | [starrwulfe.xyz](http://starrwulfe.xyz) |
 | **20** | [1](https://indieweb.org/Special:Contributions/Chrisburnell.com) | [chrisburnell.com](http://chrisburnell.com) |
 | **21** | [1](https://indieweb.org/Special:Contributions/Dead.garden) | [dead.garden](http://dead.garden) |
-| **22** | [1](https://indieweb.org/Special:Contributions/Foreverliketh.is) | [foreverliketh.is](http://foreverliketh.is) |
-| **23** | [1](https://indieweb.org/Special:Contributions/Getimiskon.xyz) | [getimiskon.xyz](http://getimiskon.xyz) |
-| **24** | [1](https://indieweb.org/Special:Contributions/Paulrobertlloyd.com) | [paulrobertlloyd.com](http://paulrobertlloyd.com) |
-| **25** | [1](https://indieweb.org/Special:Contributions/Sebbu.fr) | [sebbu.fr](http://sebbu.fr) |
-| **26** | [1](https://indieweb.org/Special:Contributions/Toddpresta.com) | [toddpresta.com](http://toddpresta.com) |
-| **27** | [1](https://indieweb.org/Special:Contributions/Wingpang.com) | [wingpang.com](http://wingpang.com) |
-| **28** | [1](https://indieweb.org/Special:Contributions/Www.benji.dog) | [www.benji.dog](http://www.benji.dog) |
-| **29** | [1](https://indieweb.org/Special:Contributions/Www.claudinec.net) | [www.claudinec.net](http://www.claudinec.net) |
-| **30** | [1](https://indieweb.org/Special:Contributions/Www.jeremycherfas.net) | [www.jeremycherfas.net](http://www.jeremycherfas.net) |
-| **31** | [1](https://indieweb.org/Special:Contributions/Www.kevinmarks.com) | [www.kevinmarks.com](http://www.kevinmarks.com) |
-| **32** | [1](https://indieweb.org/Special:Contributions/Www.web-dreamer.de) | [www.web-dreamer.de](http://www.web-dreamer.de) |
+| **22** | [1](https://indieweb.org/Special:Contributions/Dougbeal.com) | [dougbeal.com](http://dougbeal.com) |
+| **23** | [1](https://indieweb.org/Special:Contributions/Foreverliketh.is) | [foreverliketh.is](http://foreverliketh.is) |
+| **24** | [1](https://indieweb.org/Special:Contributions/Getimiskon.xyz) | [getimiskon.xyz](http://getimiskon.xyz) |
+| **25** | [1](https://indieweb.org/Special:Contributions/Paulrobertlloyd.com) | [paulrobertlloyd.com](http://paulrobertlloyd.com) |
+| **26** | [1](https://indieweb.org/Special:Contributions/Sebbu.fr) | [sebbu.fr](http://sebbu.fr) |
+| **27** | [1](https://indieweb.org/Special:Contributions/Toddpresta.com) | [toddpresta.com](http://toddpresta.com) |
+| **28** | [1](https://indieweb.org/Special:Contributions/Wingpang.com) | [wingpang.com](http://wingpang.com) |
+| **29** | [1](https://indieweb.org/Special:Contributions/Www.benji.dog) | [www.benji.dog](http://www.benji.dog) |
+| **30** | [1](https://indieweb.org/Special:Contributions/Www.claudinec.net) | [www.claudinec.net](http://www.claudinec.net) |
+| **31** | [1](https://indieweb.org/Special:Contributions/Www.jeremycherfas.net) | [www.jeremycherfas.net](http://www.jeremycherfas.net) |
+| **32** | [1](https://indieweb.org/Special:Contributions/Www.kevinmarks.com) | [www.kevinmarks.com](http://www.kevinmarks.com) |
+| **33** | [1](https://indieweb.org/Special:Contributions/Www.web-dreamer.de) | [www.web-dreamer.de](http://www.web-dreamer.de) |
 
 
 ## Colophon
 
-Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 28 August 2024 at 6:32:11 UTC.
+Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 29 August 2024 at 6:32:30 UTC.
 
 Additionally, a list of all IndieWeb wiki users is available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users.json). Parsed microformats2 data from user homepages is available in [the `./data/users` directory](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users).
 
