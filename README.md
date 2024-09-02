@@ -4,14 +4,14 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 
 | Rank | Actions | User |
 |-----:|--------:|:-----|
-| **1** | [125](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
-| **2** | [33](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
-| **3** | [33](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
-| **4** | [18](https://indieweb.org/Special:Contributions/Artlung.com) | [artlung.com](http://artlung.com) |
+| **1** | [114](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
+| **2** | [33](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
+| **3** | [30](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
+| **4** | [15](https://indieweb.org/Special:Contributions/Artlung.com) | [artlung.com](http://artlung.com) |
 | **5** | [14](https://indieweb.org/Special:Contributions/Benharri.org) | [benharri.org](http://benharri.org) |
 | **6** | [9](https://indieweb.org/Special:Contributions/Jamesg.blog) | [jamesg.blog](http://jamesg.blog) |
-| **7** | [8](https://indieweb.org/Special:Contributions/Cali.moe) | [cali.moe](http://cali.moe) |
-| **8** | [7](https://indieweb.org/Special:Contributions/Aaronparecki.com) | [aaronparecki.com](http://aaronparecki.com) |
+| **7** | [7](https://indieweb.org/Special:Contributions/Aaronparecki.com) | [aaronparecki.com](http://aaronparecki.com) |
+| **8** | [7](https://indieweb.org/Special:Contributions/Cali.moe) | [cali.moe](http://cali.moe) |
 | **9** | [7](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](http://gregorlove.com) |
 | **10** | [6](https://indieweb.org/Special:Contributions/Fab@redterminal.org) | [fab@redterminal.org](http://fab@redterminal.org) |
 | **11** | [5](https://indieweb.org/Special:Contributions/Chris.funderburg.me) | [chris.funderburg.me](http://chris.funderburg.me) |
@@ -47,7 +47,7 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 
 ## Colophon
 
-Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 1 September 2024 at 6:32:34 UTC.
+Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 2 September 2024 at 2:26:33 UTC.
 
 Additionally, a list of all IndieWeb wiki users is available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users.json). Parsed microformats2 data from user homepages is available in [the `./data/users` directory](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users).
 
