@@ -4,12 +4,12 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 
 | Rank | Actions | User |
 |-----:|--------:|:-----|
-| **1** | [165](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
-| **2** | [55](https://indieweb.org/Special:Contributions/Mat.tl) | [mat.tl](http://mat.tl) |
-| **3** | [43](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
-| **4** | [34](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
+| **1** | [172](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
+| **2** | [56](https://indieweb.org/Special:Contributions/Mat.tl) | [mat.tl](http://mat.tl) |
+| **3** | [47](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
+| **4** | [30](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
 | **5** | [15](https://indieweb.org/Special:Contributions/Benharri.org) | [benharri.org](http://benharri.org) |
-| **6** | [12](https://indieweb.org/Special:Contributions/Artlung.com) | [artlung.com](http://artlung.com) |
+| **6** | [11](https://indieweb.org/Special:Contributions/Artlung.com) | [artlung.com](http://artlung.com) |
 | **7** | [11](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](http://gregorlove.com) |
 | **8** | [7](https://indieweb.org/Special:Contributions/Aaronparecki.com) | [aaronparecki.com](http://aaronparecki.com) |
 | **9** | [7](https://indieweb.org/Special:Contributions/Jamesg.blog) | [jamesg.blog](http://jamesg.blog) |
@@ -40,7 +40,7 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 | **34** | [1](https://indieweb.org/Special:Contributions/Sebbu.fr) | [sebbu.fr](http://sebbu.fr) |
 | **35** | [1](https://indieweb.org/Special:Contributions/Starbreaker.org) | [starbreaker.org](http://starbreaker.org) |
 | **36** | [1](https://indieweb.org/Special:Contributions/Tangiblelife.net_about) | [tangiblelife.net/about](http://tangiblelife.net/about) |
-| **37** | [1](https://indieweb.org/Special:Contributions/Toddpresta.com) | [toddpresta.com](http://toddpresta.com) |
+| **37** | [1](https://indieweb.org/Special:Contributions/Vanderven.se_martijn) | [vanderven.se/martijn](http://vanderven.se/martijn) |
 | **38** | [1](https://indieweb.org/Special:Contributions/Www.jeremycherfas.net) | [www.jeremycherfas.net](http://www.jeremycherfas.net) |
 | **39** | [1](https://indieweb.org/Special:Contributions/Www.kevinmarks.com) | [www.kevinmarks.com](http://www.kevinmarks.com) |
 | **40** | [1](https://indieweb.org/Special:Contributions/Www.web-dreamer.de) | [www.web-dreamer.de](http://www.web-dreamer.de) |
@@ -48,7 +48,7 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 
 ## Colophon
 
-Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 7 September 2024 at 6:31:33 UTC.
+Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 8 September 2024 at 6:31:16 UTC.
 
 Additionally, a list of all IndieWeb wiki users is available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users.json). Parsed microformats2 data from user homepages is available in [the `./data/users` directory](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users).
 
