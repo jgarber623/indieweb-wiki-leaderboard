@@ -4,9 +4,9 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 
 | Rank | Actions | User |
 |-----:|--------:|:-----|
-| **1** | [249](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
-| **2** | [222](https://indieweb.org/Special:Contributions/Mat.tl) | [mat.tl](http://mat.tl) |
-| **3** | [58](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
+| **1** | [255](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
+| **2** | [224](https://indieweb.org/Special:Contributions/Mat.tl) | [mat.tl](http://mat.tl) |
+| **3** | [61](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
 | **4** | [36](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
 | **5** | [29](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](http://gregorlove.com) |
 | **6** | [16](https://indieweb.org/Special:Contributions/Artlung.com) | [artlung.com](http://artlung.com) |
@@ -31,12 +31,12 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 | **25** | [2](https://indieweb.org/Special:Contributions/Minutestomidnight.co.uk) | [minutestomidnight.co.uk](http://minutestomidnight.co.uk) |
 | **26** | [2](https://indieweb.org/Special:Contributions/Pcarrier.com) | [pcarrier.com](http://pcarrier.com) |
 | **27** | [2](https://indieweb.org/Special:Contributions/Qubyte.codes) | [qubyte.codes](http://qubyte.codes) |
-| **28** | [2](https://indieweb.org/Special:Contributions/Starrwulfe.xyz) | [starrwulfe.xyz](http://starrwulfe.xyz) |
-| **29** | [2](https://indieweb.org/Special:Contributions/Www.sdavidprince.space) | [www.sdavidprince.space](http://www.sdavidprince.space) |
-| **30** | [1](https://indieweb.org/Special:Contributions/Bw3.dev) | [bw3.dev](http://bw3.dev) |
-| **31** | [1](https://indieweb.org/Special:Contributions/Codingotaku.com) | [codingotaku.com](http://codingotaku.com) |
-| **32** | [1](https://indieweb.org/Special:Contributions/Dougbeal.com) | [dougbeal.com](http://dougbeal.com) |
-| **33** | [1](https://indieweb.org/Special:Contributions/Foreverliketh.is) | [foreverliketh.is](http://foreverliketh.is) |
+| **28** | [2](https://indieweb.org/Special:Contributions/Www.sdavidprince.space) | [www.sdavidprince.space](http://www.sdavidprince.space) |
+| **29** | [1](https://indieweb.org/Special:Contributions/Bw3.dev) | [bw3.dev](http://bw3.dev) |
+| **30** | [1](https://indieweb.org/Special:Contributions/Codingotaku.com) | [codingotaku.com](http://codingotaku.com) |
+| **31** | [1](https://indieweb.org/Special:Contributions/Dougbeal.com) | [dougbeal.com](http://dougbeal.com) |
+| **32** | [1](https://indieweb.org/Special:Contributions/Foreverliketh.is) | [foreverliketh.is](http://foreverliketh.is) |
+| **33** | [1](https://indieweb.org/Special:Contributions/Jacky.wtf) | [jacky.wtf](http://jacky.wtf) |
 | **34** | [1](https://indieweb.org/Special:Contributions/Marksuth.dev) | [marksuth.dev](http://marksuth.dev) |
 | **35** | [1](https://indieweb.org/Special:Contributions/Notiz.blog) | [notiz.blog](http://notiz.blog) |
 | **36** | [1](https://indieweb.org/Special:Contributions/Parnikkapore.neocities.org) | [parnikkapore.neocities.org](http://parnikkapore.neocities.org) |
@@ -51,7 +51,7 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 
 ## Colophon
 
-Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 16 September 2024 at 6:33:32 UTC.
+Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 17 September 2024 at 6:30:31 UTC.
 
 Additionally, a list of all IndieWeb wiki users is available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users.json). Parsed microformats2 data from user homepages is available in [the `./data/users` directory](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users).
 
