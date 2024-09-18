@@ -4,15 +4,15 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 
 | Rank | Actions | User |
 |-----:|--------:|:-----|
-| **1** | [255](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
-| **2** | [224](https://indieweb.org/Special:Contributions/Mat.tl) | [mat.tl](http://mat.tl) |
-| **3** | [61](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
-| **4** | [36](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
+| **1** | [292](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
+| **2** | [229](https://indieweb.org/Special:Contributions/Mat.tl) | [mat.tl](http://mat.tl) |
+| **3** | [76](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
+| **4** | [37](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
 | **5** | [29](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](http://gregorlove.com) |
 | **6** | [16](https://indieweb.org/Special:Contributions/Artlung.com) | [artlung.com](http://artlung.com) |
 | **7** | [13](https://indieweb.org/Special:Contributions/Aaronparecki.com) | [aaronparecki.com](http://aaronparecki.com) |
 | **8** | [12](https://indieweb.org/Special:Contributions/Cali.moe) | [cali.moe](http://cali.moe) |
-| **9** | [9](https://indieweb.org/Special:Contributions/Bjoern.stierand.org) | [bjoern.stierand.org](http://bjoern.stierand.org) |
+| **9** | [8](https://indieweb.org/Special:Contributions/Bjoern.stierand.org) | [bjoern.stierand.org](http://bjoern.stierand.org) |
 | **10** | [6](https://indieweb.org/Special:Contributions/Chris.funderburg.me) | [chris.funderburg.me](http://chris.funderburg.me) |
 | **11** | [5](https://indieweb.org/Special:Contributions/Cowglow.com) | [cowglow.com](http://cowglow.com) |
 | **12** | [5](https://indieweb.org/Special:Contributions/Lucien.nogues.ca) | [lucien.nogues.ca](http://lucien.nogues.ca) |
@@ -35,15 +35,15 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 | **29** | [1](https://indieweb.org/Special:Contributions/Bw3.dev) | [bw3.dev](http://bw3.dev) |
 | **30** | [1](https://indieweb.org/Special:Contributions/Codingotaku.com) | [codingotaku.com](http://codingotaku.com) |
 | **31** | [1](https://indieweb.org/Special:Contributions/Dougbeal.com) | [dougbeal.com](http://dougbeal.com) |
-| **32** | [1](https://indieweb.org/Special:Contributions/Foreverliketh.is) | [foreverliketh.is](http://foreverliketh.is) |
-| **33** | [1](https://indieweb.org/Special:Contributions/Jacky.wtf) | [jacky.wtf](http://jacky.wtf) |
-| **34** | [1](https://indieweb.org/Special:Contributions/Marksuth.dev) | [marksuth.dev](http://marksuth.dev) |
-| **35** | [1](https://indieweb.org/Special:Contributions/Notiz.blog) | [notiz.blog](http://notiz.blog) |
-| **36** | [1](https://indieweb.org/Special:Contributions/Parnikkapore.neocities.org) | [parnikkapore.neocities.org](http://parnikkapore.neocities.org) |
-| **37** | [1](https://indieweb.org/Special:Contributions/Paulrobertlloyd.com) | [paulrobertlloyd.com](http://paulrobertlloyd.com) |
-| **38** | [1](https://indieweb.org/Special:Contributions/Sebbu.fr) | [sebbu.fr](http://sebbu.fr) |
-| **39** | [1](https://indieweb.org/Special:Contributions/Starbreaker.org) | [starbreaker.org](http://starbreaker.org) |
-| **40** | [1](https://indieweb.org/Special:Contributions/Tangiblelife.net_about) | [tangiblelife.net/about](http://tangiblelife.net/about) |
+| **32** | [1](https://indieweb.org/Special:Contributions/Jacky.wtf) | [jacky.wtf](http://jacky.wtf) |
+| **33** | [1](https://indieweb.org/Special:Contributions/Marksuth.dev) | [marksuth.dev](http://marksuth.dev) |
+| **34** | [1](https://indieweb.org/Special:Contributions/Notiz.blog) | [notiz.blog](http://notiz.blog) |
+| **35** | [1](https://indieweb.org/Special:Contributions/Parnikkapore.neocities.org) | [parnikkapore.neocities.org](http://parnikkapore.neocities.org) |
+| **36** | [1](https://indieweb.org/Special:Contributions/Paulrobertlloyd.com) | [paulrobertlloyd.com](http://paulrobertlloyd.com) |
+| **37** | [1](https://indieweb.org/Special:Contributions/Sebbu.fr) | [sebbu.fr](http://sebbu.fr) |
+| **38** | [1](https://indieweb.org/Special:Contributions/Starbreaker.org) | [starbreaker.org](http://starbreaker.org) |
+| **39** | [1](https://indieweb.org/Special:Contributions/Tangiblelife.net_about) | [tangiblelife.net/about](http://tangiblelife.net/about) |
+| **40** | [1](https://indieweb.org/Special:Contributions/Tilde.team_~zinricky) | [tilde.team/~zinricky](http://tilde.team/~zinricky) |
 | **41** | [1](https://indieweb.org/Special:Contributions/Vanderven.se_martijn) | [vanderven.se/martijn](http://vanderven.se/martijn) |
 | **42** | [1](https://indieweb.org/Special:Contributions/Www.kevinmarks.com) | [www.kevinmarks.com](http://www.kevinmarks.com) |
 | **43** | [1](https://indieweb.org/Special:Contributions/Www.web-dreamer.de) | [www.web-dreamer.de](http://www.web-dreamer.de) |
@@ -51,7 +51,7 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 
 ## Colophon
 
-Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 17 September 2024 at 6:30:31 UTC.
+Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 18 September 2024 at 6:33:17 UTC.
 
 Additionally, a list of all IndieWeb wiki users is available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users.json). Parsed microformats2 data from user homepages is available in [the `./data/users` directory](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users).
 
