@@ -5,13 +5,13 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 | Rank | Actions | User |
 |-----:|--------:|:-----|
 | **1** | [189](https://indieweb.org/Special:Contributions/Mat.tl) | [mat.tl](http://mat.tl) |
-| **2** | [174](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
-| **3** | [69](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
-| **4** | [47](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
+| **2** | [188](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
+| **3** | [81](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
+| **4** | [50](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
 | **5** | [28](https://indieweb.org/Special:Contributions/Artlung.com) | [artlung.com](http://artlung.com) |
-| **6** | [24](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](http://gregorlove.com) |
-| **7** | [13](https://indieweb.org/Special:Contributions/Cali.moe) | [cali.moe](http://cali.moe) |
-| **8** | [12](https://indieweb.org/Special:Contributions/Jamesg.blog) | [jamesg.blog](http://jamesg.blog) |
+| **6** | [22](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](http://gregorlove.com) |
+| **7** | [14](https://indieweb.org/Special:Contributions/Cali.moe) | [cali.moe](http://cali.moe) |
+| **8** | [13](https://indieweb.org/Special:Contributions/Jamesg.blog) | [jamesg.blog](http://jamesg.blog) |
 | **9** | [8](https://indieweb.org/Special:Contributions/Bjoern.stierand.org) | [bjoern.stierand.org](http://bjoern.stierand.org) |
 | **10** | [5](https://indieweb.org/Special:Contributions/Cowglow.com) | [cowglow.com](http://cowglow.com) |
 | **11** | [4](https://indieweb.org/Special:Contributions/Dead.garden) | [dead.garden](http://dead.garden) |
@@ -47,7 +47,7 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 
 ## Colophon
 
-Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 8 October 2024 at 6:33:37 UTC.
+Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 9 October 2024 at 6:33:55 UTC.
 
 Additionally, a list of all IndieWeb wiki users is available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users.json). Parsed microformats2 data from user homepages is available in [the `./data/users` directory](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users).
 
