@@ -4,7 +4,7 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 
 | Rank | Actions | User |
 |-----:|--------:|:-----|
-| **1** | [199](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
+| **1** | [195](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
 | **2** | [82](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](http://gregorlove.com) |
 | **3** | [61](https://indieweb.org/Special:Contributions/Michaelkupietz.com) | [michaelkupietz.com](http://michaelkupietz.com) |
 | **4** | [45](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
@@ -53,7 +53,7 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 
 ## Colophon
 
-Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 8 November 2024 at 3:23:58 UTC.
+Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 8 November 2024 at 6:33:05 UTC.
 
 Additionally, a list of all IndieWeb wiki users is available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users.json). Parsed microformats2 data from user homepages is available in [the `./data/users` directory](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users).
 
