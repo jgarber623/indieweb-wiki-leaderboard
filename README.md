@@ -4,36 +4,36 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 
 | Rank | Actions | User |
 |-----:|--------:|:-----|
-| **1** | [127](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
-| **2** | [70](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](http://gregorlove.com) |
-| **3** | [60](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
-| **4** | [52](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
-| **5** | [43](https://indieweb.org/Special:Contributions/Artlung.com) | [artlung.com](http://artlung.com) |
-| **6** | [27](https://indieweb.org/Special:Contributions/Jamesg.blog) | [jamesg.blog](http://jamesg.blog) |
-| **7** | [26](https://indieweb.org/Special:Contributions/Mat.tl) | [mat.tl](http://mat.tl) |
-| **8** | [12](https://indieweb.org/Special:Contributions/Bjoern.stierand.org) | [bjoern.stierand.org](http://bjoern.stierand.org) |
-| **9** | [12](https://indieweb.org/Special:Contributions/Cali.moe) | [cali.moe](http://cali.moe) |
-| **10** | [9](https://indieweb.org/Special:Contributions/Ilove.computer) | [ilove.computer](http://ilove.computer) |
-| **11** | [8](https://indieweb.org/Special:Contributions/Foreverliketh.is) | [foreverliketh.is](http://foreverliketh.is) |
-| **12** | [8](https://indieweb.org/Special:Contributions/Kvibber.com) | [kvibber.com](http://kvibber.com) |
-| **13** | [8](https://indieweb.org/Special:Contributions/Rudersdorf.com) | [rudersdorf.com](http://rudersdorf.com) |
-| **14** | [7](https://indieweb.org/Special:Contributions/Islandinthenet.com) | [islandinthenet.com](http://islandinthenet.com) |
-| **15** | [7](https://indieweb.org/Special:Contributions/Snarfed.org) | [snarfed.org](http://snarfed.org) |
-| **16** | [6](https://indieweb.org/Special:Contributions/David.shanske.com) | [david.shanske.com](http://david.shanske.com) |
-| **17** | [5](https://indieweb.org/Special:Contributions/Jan.boddez.net) | [jan.boddez.net](http://jan.boddez.net) |
-| **18** | [5](https://indieweb.org/Special:Contributions/Kiko.io) | [kiko.io](http://kiko.io) |
-| **19** | [4](https://indieweb.org/Special:Contributions/Boffosocko.com) | [boffosocko.com](http://boffosocko.com) |
-| **20** | [4](https://indieweb.org/Special:Contributions/Celadon.moe) | [celadon.moe](http://celadon.moe) |
+| **1** | [112](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
+| **2** | [72](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](http://gregorlove.com) |
+| **3** | [63](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
+| **4** | [53](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
+| **5** | [45](https://indieweb.org/Special:Contributions/Artlung.com) | [artlung.com](http://artlung.com) |
+| **6** | [27](https://indieweb.org/Special:Contributions/Mat.tl) | [mat.tl](http://mat.tl) |
+| **7** | [23](https://indieweb.org/Special:Contributions/Jamesg.blog) | [jamesg.blog](http://jamesg.blog) |
+| **8** | [12](https://indieweb.org/Special:Contributions/Cali.moe) | [cali.moe](http://cali.moe) |
+| **9** | [9](https://indieweb.org/Special:Contributions/Ilove.computer) | [ilove.computer](http://ilove.computer) |
+| **10** | [8](https://indieweb.org/Special:Contributions/Foreverliketh.is) | [foreverliketh.is](http://foreverliketh.is) |
+| **11** | [8](https://indieweb.org/Special:Contributions/Kvibber.com) | [kvibber.com](http://kvibber.com) |
+| **12** | [8](https://indieweb.org/Special:Contributions/Rudersdorf.com) | [rudersdorf.com](http://rudersdorf.com) |
+| **13** | [7](https://indieweb.org/Special:Contributions/Islandinthenet.com) | [islandinthenet.com](http://islandinthenet.com) |
+| **14** | [7](https://indieweb.org/Special:Contributions/Snarfed.org) | [snarfed.org](http://snarfed.org) |
+| **15** | [6](https://indieweb.org/Special:Contributions/David.shanske.com) | [david.shanske.com](http://david.shanske.com) |
+| **16** | [5](https://indieweb.org/Special:Contributions/Jan.boddez.net) | [jan.boddez.net](http://jan.boddez.net) |
+| **17** | [5](https://indieweb.org/Special:Contributions/Kiko.io) | [kiko.io](http://kiko.io) |
+| **18** | [4](https://indieweb.org/Special:Contributions/Boffosocko.com) | [boffosocko.com](http://boffosocko.com) |
+| **19** | [4](https://indieweb.org/Special:Contributions/Celadon.moe) | [celadon.moe](http://celadon.moe) |
+| **20** | [4](https://indieweb.org/Special:Contributions/Doesnm.p.psf.lt) | [doesnm.p.psf.lt](http://doesnm.p.psf.lt) |
 | **21** | [3](https://indieweb.org/Special:Contributions/Adamchamberlin.info) | [adamchamberlin.info](http://adamchamberlin.info) |
 | **22** | [3](https://indieweb.org/Special:Contributions/Bluehome.net_csh) | [bluehome.net/csh](http://bluehome.net/csh) |
 | **23** | [3](https://indieweb.org/Special:Contributions/Herebox.org) | [herebox.org](http://herebox.org) |
 | **24** | [3](https://indieweb.org/Special:Contributions/Ilove.computer_identities) | [ilove.computer/identities](http://ilove.computer/identities) |
-| **25** | [2](https://indieweb.org/Special:Contributions/Andrei.xyz) | [andrei.xyz](http://andrei.xyz) |
-| **26** | [2](https://indieweb.org/Special:Contributions/Chromic.org) | [chromic.org](http://chromic.org) |
-| **27** | [2](https://indieweb.org/Special:Contributions/Cidney.org) | [cidney.org](http://cidney.org) |
-| **28** | [2](https://indieweb.org/Special:Contributions/Connorgurney.me.uk_me_contact.html) | [connorgurney.me.uk/me/contact.html](http://connorgurney.me.uk/me/contact.html) |
-| **29** | [2](https://indieweb.org/Special:Contributions/Daniel.mowitz.rocks_home.html) | [daniel.mowitz.rocks/home.html](http://daniel.mowitz.rocks/home.html) |
-| **30** | [2](https://indieweb.org/Special:Contributions/Doesnm.p.psf.lt) | [doesnm.p.psf.lt](http://doesnm.p.psf.lt) |
+| **25** | [3](https://indieweb.org/Special:Contributions/Www.benji.dog) | [www.benji.dog](http://www.benji.dog) |
+| **26** | [2](https://indieweb.org/Special:Contributions/Andrei.xyz) | [andrei.xyz](http://andrei.xyz) |
+| **27** | [2](https://indieweb.org/Special:Contributions/Chromic.org) | [chromic.org](http://chromic.org) |
+| **28** | [2](https://indieweb.org/Special:Contributions/Cidney.org) | [cidney.org](http://cidney.org) |
+| **29** | [2](https://indieweb.org/Special:Contributions/Connorgurney.me.uk_me_contact.html) | [connorgurney.me.uk/me/contact.html](http://connorgurney.me.uk/me/contact.html) |
+| **30** | [2](https://indieweb.org/Special:Contributions/Daniel.mowitz.rocks_home.html) | [daniel.mowitz.rocks/home.html](http://daniel.mowitz.rocks/home.html) |
 | **31** | [2](https://indieweb.org/Special:Contributions/Evdemon.org) | [evdemon.org](http://evdemon.org) |
 | **32** | [2](https://indieweb.org/Special:Contributions/Juliarodraws.com) | [juliarodraws.com](http://juliarodraws.com) |
 | **33** | [2](https://indieweb.org/Special:Contributions/Michaelkupietz.com) | [michaelkupietz.com](http://michaelkupietz.com) |
@@ -58,7 +58,7 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 
 ## Colophon
 
-Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 12 December 2024 at 6:34:40 UTC.
+Data is gathered from the [Active users list](https://indieweb.org/Special:ActiveUsers) page and is also available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/leaderboard.json). The leaderboard was last updated on 13 December 2024 at 6:34:42 UTC.
 
 Additionally, a list of all IndieWeb wiki users is available [in JSON format](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users.json). Parsed microformats2 data from user homepages is available in [the `./data/users` directory](https://github.com/jgarber623/indieweb-wiki-leaderboard/blob/main/data/users).
 
