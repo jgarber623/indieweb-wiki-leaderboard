@@ -1,14 +1,14 @@
 # 🏆 IndieWeb wiki leaderboard
 
 ![Build](https://img.shields.io/github/actions/workflow/status/jgarber623/indieweb-wiki-leaderboard/build.yml?style=for-the-badge)
-![Last Updated](https://img.shields.io/badge/last%20updated-10%20January%202025%20at%203:43:58%20UTC-ff5c01?style=for-the-badge)
+![Last Updated](https://img.shields.io/badge/last%20updated-10%20January%202025%20at%206:33:34%20UTC-ff5c01?style=for-the-badge)
 
 In the last 30 days, the following users have been active on the [IndieWeb wiki](https://indieweb.org).
 
 | Rank | Actions | User |
 |-----:|--------:|:-----|
-| **1** | [196](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
-| **2** | [71](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
+| **1** | [192](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
+| **2** | [67](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
 | **3** | [61](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](http://gregorlove.com) |
 | **4** | [37](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
 | **5** | [16](https://indieweb.org/Special:Contributions/Artlung.com) | [artlung.com](http://artlung.com) |
