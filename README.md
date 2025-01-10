@@ -1,7 +1,7 @@
 # 🏆 IndieWeb wiki leaderboard
 
 ![Build](https://img.shields.io/github/actions/workflow/status/jgarber623/indieweb-wiki-leaderboard/build.yml?style=for-the-badge)
-![Last Updated](https://img.shields.io/badge/last%20updated-10%20January%202025%20at%203:38:55%20UTC-cc5c01?style=for-the-badge)
+![Last Updated](https://img.shields.io/badge/last%20updated-10%20January%202025%20at%203:43:58%20UTC-ff5c01?style=for-the-badge)
 
 In the last 30 days, the following users have been active on the [IndieWeb wiki](https://indieweb.org).
 
