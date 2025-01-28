@@ -1,18 +1,18 @@
 # 🏆 IndieWeb wiki leaderboard
 
 ![Build](https://img.shields.io/github/actions/workflow/status/jgarber623/indieweb-wiki-leaderboard/build.yml?style=for-the-badge)
-![Last Updated](https://img.shields.io/badge/last%20updated-27%20January%202025%20at%206:33:09%20UTC-ff5c01?style=for-the-badge)
+![Last Updated](https://img.shields.io/badge/last%20updated-28%20January%202025%20at%206:32:36%20UTC-ff5c01?style=for-the-badge)
 
 In the last 30 days, the following users have been active on the [IndieWeb wiki](https://indieweb.org).
 
 | Rank | Actions | User |
 |-----:|--------:|:-----|
-| **1** | [150](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
-| **2** | [64](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
-| **3** | [45](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](http://gregorlove.com) |
+| **1** | [141](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
+| **2** | [65](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
+| **3** | [48](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](http://gregorlove.com) |
 | **4** | [18](https://indieweb.org/Special:Contributions/Artlung.com) | [artlung.com](http://artlung.com) |
-| **5** | [11](https://indieweb.org/Special:Contributions/Aaronparecki.com) | [aaronparecki.com](http://aaronparecki.com) |
-| **6** | [11](https://indieweb.org/Special:Contributions/Nicksimson.com) | [nicksimson.com](http://nicksimson.com) |
+| **5** | [12](https://indieweb.org/Special:Contributions/Nicksimson.com) | [nicksimson.com](http://nicksimson.com) |
+| **6** | [11](https://indieweb.org/Special:Contributions/Aaronparecki.com) | [aaronparecki.com](http://aaronparecki.com) |
 | **7** | [11](https://indieweb.org/Special:Contributions/Vhbelvadi.com) | [vhbelvadi.com](http://vhbelvadi.com) |
 | **8** | [9](https://indieweb.org/Special:Contributions/Subcultureofone.org) | [subcultureofone.org](http://subcultureofone.org) |
 | **9** | [6](https://indieweb.org/Special:Contributions/Cali.moe) | [cali.moe](http://cali.moe) |
@@ -39,7 +39,6 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 | **30** | [1](https://indieweb.org/Special:Contributions/Osteophage.neocities.org) | [osteophage.neocities.org](http://osteophage.neocities.org) |
 | **31** | [1](https://indieweb.org/Special:Contributions/Roxwize.xyz) | [roxwize.xyz](http://roxwize.xyz) |
 | **32** | [1](https://indieweb.org/Special:Contributions/Scojjac.com) | [scojjac.com](http://scojjac.com) |
-| **33** | [0](https://indieweb.org/Special:Contributions/Steinea.ca) | [steinea.ca](http://steinea.ca) |
 
 
 ## Colophon
