@@ -1,19 +1,19 @@
 # 🏆 IndieWeb wiki leaderboard
 
 ![Build](https://img.shields.io/github/actions/workflow/status/jgarber623/indieweb-wiki-leaderboard/build.yml?style=for-the-badge)
-![Last Updated](https://img.shields.io/badge/last%20updated-31%20January%202025%20at%206:33:13%20UTC-ff5c01?style=for-the-badge)
+![Last Updated](https://img.shields.io/badge/last%20updated-1%20February%202025%20at%206:32:03%20UTC-ff5c01?style=for-the-badge)
 
 In the last 30 days, the following users have been active on the [IndieWeb wiki](https://indieweb.org).
 
 | Rank | Actions | User |
 |-----:|--------:|:-----|
-| **1** | [111](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
-| **2** | [55](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
-| **3** | [39](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
+| **1** | [109](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
+| **2** | [49](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
+| **3** | [40](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
 | **4** | [36](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](http://gregorlove.com) |
 | **5** | [33](https://indieweb.org/Special:Contributions/Artlung.com) | [artlung.com](http://artlung.com) |
 | **6** | [20](https://indieweb.org/Special:Contributions/Zacharykai.net) | [zacharykai.net](http://zacharykai.net) |
-| **7** | [12](https://indieweb.org/Special:Contributions/Vhbelvadi.com) | [vhbelvadi.com](http://vhbelvadi.com) |
+| **7** | [10](https://indieweb.org/Special:Contributions/Vhbelvadi.com) | [vhbelvadi.com](http://vhbelvadi.com) |
 | **8** | [9](https://indieweb.org/Special:Contributions/Subcultureofone.org) | [subcultureofone.org](http://subcultureofone.org) |
 | **9** | [8](https://indieweb.org/Special:Contributions/Cali.moe) | [cali.moe](http://cali.moe) |
 | **10** | [6](https://indieweb.org/Special:Contributions/Www.ciccarello.me) | [www.ciccarello.me](http://www.ciccarello.me) |
@@ -30,15 +30,17 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 | **21** | [1](https://indieweb.org/Special:Contributions/Aggrippino.com) | [aggrippino.com](http://aggrippino.com) |
 | **22** | [1](https://indieweb.org/Special:Contributions/Ariscript.org) | [ariscript.org](http://ariscript.org) |
 | **23** | [1](https://indieweb.org/Special:Contributions/Blog.meadowhawk.xyz) | [blog.meadowhawk.xyz](http://blog.meadowhawk.xyz) |
-| **24** | [1](https://indieweb.org/Special:Contributions/Hamatti.org) | [hamatti.org](http://hamatti.org) |
-| **25** | [1](https://indieweb.org/Special:Contributions/Ironwynch.com) | [ironwynch.com](http://ironwynch.com) |
-| **26** | [1](https://indieweb.org/Special:Contributions/Jan.boddez.net) | [jan.boddez.net](http://jan.boddez.net) |
-| **27** | [1](https://indieweb.org/Special:Contributions/Jmac.org) | [jmac.org](http://jmac.org) |
-| **28** | [1](https://indieweb.org/Special:Contributions/Keithjgrant.com) | [keithjgrant.com](http://keithjgrant.com) |
-| **29** | [1](https://indieweb.org/Special:Contributions/Kimberlyhirsh.com) | [kimberlyhirsh.com](http://kimberlyhirsh.com) |
-| **30** | [1](https://indieweb.org/Special:Contributions/Norealnames.org) | [norealnames.org](http://norealnames.org) |
-| **31** | [1](https://indieweb.org/Special:Contributions/Osteophage.neocities.org) | [osteophage.neocities.org](http://osteophage.neocities.org) |
-| **32** | [1](https://indieweb.org/Special:Contributions/Scojjac.com) | [scojjac.com](http://scojjac.com) |
+| **24** | [1](https://indieweb.org/Special:Contributions/Digisensei.org) | [digisensei.org](http://digisensei.org) |
+| **25** | [1](https://indieweb.org/Special:Contributions/Hamatti.org) | [hamatti.org](http://hamatti.org) |
+| **26** | [1](https://indieweb.org/Special:Contributions/Ironwynch.com) | [ironwynch.com](http://ironwynch.com) |
+| **27** | [1](https://indieweb.org/Special:Contributions/Jan.boddez.net) | [jan.boddez.net](http://jan.boddez.net) |
+| **28** | [1](https://indieweb.org/Special:Contributions/Jmac.org) | [jmac.org](http://jmac.org) |
+| **29** | [1](https://indieweb.org/Special:Contributions/Keithjgrant.com) | [keithjgrant.com](http://keithjgrant.com) |
+| **30** | [1](https://indieweb.org/Special:Contributions/Kimberlyhirsh.com) | [kimberlyhirsh.com](http://kimberlyhirsh.com) |
+| **31** | [1](https://indieweb.org/Special:Contributions/Norealnames.org) | [norealnames.org](http://norealnames.org) |
+| **32** | [1](https://indieweb.org/Special:Contributions/Osteophage.neocities.org) | [osteophage.neocities.org](http://osteophage.neocities.org) |
+| **33** | [1](https://indieweb.org/Special:Contributions/Scojjac.com) | [scojjac.com](http://scojjac.com) |
+| **34** | [1](https://indieweb.org/Special:Contributions/Www.jeremycherfas.net) | [www.jeremycherfas.net](http://www.jeremycherfas.net) |
 
 
 ## Colophon
