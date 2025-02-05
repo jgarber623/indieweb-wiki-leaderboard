@@ -1,7 +1,7 @@
 # 🏆 IndieWeb wiki leaderboard
 
 ![Build](https://img.shields.io/github/actions/workflow/status/jgarber623/indieweb-wiki-leaderboard/build.yml?style=for-the-badge)
-![Last Updated](https://img.shields.io/badge/last%20updated-4%20February%202025%20at%206:33:06%20UTC-ff5c01?style=for-the-badge)
+![Last Updated](https://img.shields.io/badge/last%20updated-5%20February%202025%20at%206:32:50%20UTC-ff5c01?style=for-the-badge)
 
 In the last 30 days, the following users have been active on the [IndieWeb wiki](https://indieweb.org).
 
@@ -14,8 +14,8 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 | **5** | [30](https://indieweb.org/Special:Contributions/Artlung.com) | [artlung.com](http://artlung.com) |
 | **6** | [20](https://indieweb.org/Special:Contributions/Zacharykai.net) | [zacharykai.net](http://zacharykai.net) |
 | **7** | [10](https://indieweb.org/Special:Contributions/Subcultureofone.org) | [subcultureofone.org](http://subcultureofone.org) |
-| **8** | [10](https://indieweb.org/Special:Contributions/Vhbelvadi.com) | [vhbelvadi.com](http://vhbelvadi.com) |
-| **9** | [7](https://indieweb.org/Special:Contributions/Cali.moe) | [cali.moe](http://cali.moe) |
+| **8** | [9](https://indieweb.org/Special:Contributions/Vhbelvadi.com) | [vhbelvadi.com](http://vhbelvadi.com) |
+| **9** | [8](https://indieweb.org/Special:Contributions/Cali.moe) | [cali.moe](http://cali.moe) |
 | **10** | [5](https://indieweb.org/Special:Contributions/Benjamin.parry.is) | [benjamin.parry.is](http://benjamin.parry.is) |
 | **11** | [5](https://indieweb.org/Special:Contributions/Www.ciccarello.me) | [www.ciccarello.me](http://www.ciccarello.me) |
 | **12** | [4](https://indieweb.org/Special:Contributions/Bjoern.stierand.org) | [bjoern.stierand.org](http://bjoern.stierand.org) |
