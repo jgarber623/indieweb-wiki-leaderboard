@@ -1,7 +1,7 @@
 # 🏆 IndieWeb wiki leaderboard
 
 ![Build](https://img.shields.io/github/actions/workflow/status/jgarber623/indieweb-wiki-leaderboard/build.yml?style=for-the-badge)
-![Last Updated](https://img.shields.io/badge/last%20updated-17%20February%202025%20at%206:33:57%20UTC-ff5c01?style=for-the-badge)
+![Last Updated](https://img.shields.io/badge/last%20updated-18%20February%202025%20at%206:33:15%20UTC-ff5c01?style=for-the-badge)
 
 In the last 30 days, the following users have been active on the [IndieWeb wiki](https://indieweb.org).
 
@@ -10,24 +10,24 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 | **1** | [57](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
 | **2** | [44](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
 | **3** | [34](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
-| **4** | [24](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](http://gregorlove.com) |
+| **4** | [26](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](http://gregorlove.com) |
 | **5** | [24](https://indieweb.org/Special:Contributions/Zacharykai.net) | [zacharykai.net](http://zacharykai.net) |
 | **6** | [17](https://indieweb.org/Special:Contributions/Www.ciccarello.me) | [www.ciccarello.me](http://www.ciccarello.me) |
 | **7** | [13](https://indieweb.org/Special:Contributions/Fractalkitty.com) | [fractalkitty.com](http://fractalkitty.com) |
 | **8** | [12](https://indieweb.org/Special:Contributions/Jamesg.blog) | [jamesg.blog](http://jamesg.blog) |
-| **9** | [10](https://indieweb.org/Special:Contributions/Aaronparecki.com) | [aaronparecki.com](http://aaronparecki.com) |
-| **10** | [9](https://indieweb.org/Special:Contributions/Cali.moe) | [cali.moe](http://cali.moe) |
-| **11** | [8](https://indieweb.org/Special:Contributions/Turner.enemyterritory.org_user_carrvo_index) | [turner.enemyterritory.org/user/carrvo/index](http://turner.enemyterritory.org/user/carrvo/index) |
+| **9** | [9](https://indieweb.org/Special:Contributions/Cali.moe) | [cali.moe](http://cali.moe) |
+| **10** | [8](https://indieweb.org/Special:Contributions/Turner.enemyterritory.org_user_carrvo_index) | [turner.enemyterritory.org/user/carrvo/index](http://turner.enemyterritory.org/user/carrvo/index) |
+| **11** | [7](https://indieweb.org/Special:Contributions/Aaronparecki.com) | [aaronparecki.com](http://aaronparecki.com) |
 | **12** | [7](https://indieweb.org/Special:Contributions/Hammyhavoc.com) | [hammyhavoc.com](http://hammyhavoc.com) |
-| **13** | [7](https://indieweb.org/Special:Contributions/Nicksimson.com) | [nicksimson.com](http://nicksimson.com) |
-| **14** | [6](https://indieweb.org/Special:Contributions/Maenoc.how) | [maenoc.how](http://maenoc.how) |
-| **15** | [6](https://indieweb.org/Special:Contributions/Sequr.be) | [sequr.be](http://sequr.be) |
-| **16** | [5](https://indieweb.org/Special:Contributions/Benjamin.parry.is) | [benjamin.parry.is](http://benjamin.parry.is) |
-| **17** | [5](https://indieweb.org/Special:Contributions/Iono.me) | [iono.me](http://iono.me) |
-| **18** | [5](https://indieweb.org/Special:Contributions/Islandinthenet.com) | [islandinthenet.com](http://islandinthenet.com) |
-| **19** | [4](https://indieweb.org/Special:Contributions/Bjoern.stierand.org) | [bjoern.stierand.org](http://bjoern.stierand.org) |
-| **20** | [4](https://indieweb.org/Special:Contributions/Coderrrrr.site) | [coderrrrr.site](http://coderrrrr.site) |
-| **21** | [3](https://indieweb.org/Special:Contributions/Evdemon.org) | [evdemon.org](http://evdemon.org) |
+| **13** | [6](https://indieweb.org/Special:Contributions/Maenoc.how) | [maenoc.how](http://maenoc.how) |
+| **14** | [6](https://indieweb.org/Special:Contributions/Sequr.be) | [sequr.be](http://sequr.be) |
+| **15** | [5](https://indieweb.org/Special:Contributions/Benjamin.parry.is) | [benjamin.parry.is](http://benjamin.parry.is) |
+| **16** | [5](https://indieweb.org/Special:Contributions/Iono.me) | [iono.me](http://iono.me) |
+| **17** | [5](https://indieweb.org/Special:Contributions/Islandinthenet.com) | [islandinthenet.com](http://islandinthenet.com) |
+| **18** | [4](https://indieweb.org/Special:Contributions/Bjoern.stierand.org) | [bjoern.stierand.org](http://bjoern.stierand.org) |
+| **19** | [4](https://indieweb.org/Special:Contributions/Coderrrrr.site) | [coderrrrr.site](http://coderrrrr.site) |
+| **20** | [3](https://indieweb.org/Special:Contributions/Evdemon.org) | [evdemon.org](http://evdemon.org) |
+| **21** | [3](https://indieweb.org/Special:Contributions/Nicksimson.com) | [nicksimson.com](http://nicksimson.com) |
 | **22** | [3](https://indieweb.org/Special:Contributions/Vhbelvadi.com) | [vhbelvadi.com](http://vhbelvadi.com) |
 | **23** | [2](https://indieweb.org/Special:Contributions/Goddesstex.org) | [goddesstex.org](http://goddesstex.org) |
 | **24** | [2](https://indieweb.org/Special:Contributions/Marksuth.dev) | [marksuth.dev](http://marksuth.dev) |
