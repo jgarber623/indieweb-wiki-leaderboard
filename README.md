@@ -1,22 +1,22 @@
 # 🏆 IndieWeb wiki leaderboard
 
 ![Build](https://img.shields.io/github/actions/workflow/status/jgarber623/indieweb-wiki-leaderboard/build.yml?style=for-the-badge)
-![Last Updated](https://img.shields.io/badge/last%20updated-19%20February%202025%20at%206:33:24%20UTC-ff5c01?style=for-the-badge)
+![Last Updated](https://img.shields.io/badge/last%20updated-20%20February%202025%20at%206:33:20%20UTC-ff5c01?style=for-the-badge)
 
 In the last 30 days, the following users have been active on the [IndieWeb wiki](https://indieweb.org).
 
 | Rank | Actions | User |
 |-----:|--------:|:-----|
-| **1** | [53](https://indieweb.org/Special:Contributions/Artlung.com) | [artlung.com](http://artlung.com) |
-| **2** | [53](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
+| **1** | [52](https://indieweb.org/Special:Contributions/Artlung.com) | [artlung.com](http://artlung.com) |
+| **2** | [50](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
 | **3** | [43](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
-| **4** | [34](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
-| **5** | [26](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](http://gregorlove.com) |
+| **4** | [38](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
+| **5** | [28](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](http://gregorlove.com) |
 | **6** | [24](https://indieweb.org/Special:Contributions/Zacharykai.net) | [zacharykai.net](http://zacharykai.net) |
 | **7** | [17](https://indieweb.org/Special:Contributions/Www.ciccarello.me) | [www.ciccarello.me](http://www.ciccarello.me) |
 | **8** | [13](https://indieweb.org/Special:Contributions/Fractalkitty.com) | [fractalkitty.com](http://fractalkitty.com) |
-| **9** | [12](https://indieweb.org/Special:Contributions/Jamesg.blog) | [jamesg.blog](http://jamesg.blog) |
-| **10** | [9](https://indieweb.org/Special:Contributions/Cali.moe) | [cali.moe](http://cali.moe) |
+| **9** | [13](https://indieweb.org/Special:Contributions/Jamesg.blog) | [jamesg.blog](http://jamesg.blog) |
+| **10** | [10](https://indieweb.org/Special:Contributions/Cali.moe) | [cali.moe](http://cali.moe) |
 | **11** | [8](https://indieweb.org/Special:Contributions/Turner.enemyterritory.org_user_carrvo_index) | [turner.enemyterritory.org/user/carrvo/index](http://turner.enemyterritory.org/user/carrvo/index) |
 | **12** | [7](https://indieweb.org/Special:Contributions/Aaronparecki.com) | [aaronparecki.com](http://aaronparecki.com) |
 | **13** | [7](https://indieweb.org/Special:Contributions/Hammyhavoc.com) | [hammyhavoc.com](http://hammyhavoc.com) |
@@ -46,11 +46,11 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 | **37** | [1](https://indieweb.org/Special:Contributions/Kimberlyhirsh.com) | [kimberlyhirsh.com](http://kimberlyhirsh.com) |
 | **38** | [1](https://indieweb.org/Special:Contributions/Lifeofpablo.com) | [lifeofpablo.com](http://lifeofpablo.com) |
 | **39** | [1](https://indieweb.org/Special:Contributions/Meikou.space) | [meikou.space](http://meikou.space) |
-| **40** | [1](https://indieweb.org/Special:Contributions/Sekhmetdesign.thegeekcartel.com) | [sekhmetdesign.thegeekcartel.com](http://sekhmetdesign.thegeekcartel.com) |
-| **41** | [1](https://indieweb.org/Special:Contributions/Tangiblelife.net_about) | [tangiblelife.net/about](http://tangiblelife.net/about) |
-| **42** | [1](https://indieweb.org/Special:Contributions/Www.benji.dog) | [www.benji.dog](http://www.benji.dog) |
-| **43** | [1](https://indieweb.org/Special:Contributions/Www.kevinmarks.com) | [www.kevinmarks.com](http://www.kevinmarks.com) |
-| **44** | [0](https://indieweb.org/Special:Contributions/Scojjac.com) | [scojjac.com](http://scojjac.com) |
+| **40** | [1](https://indieweb.org/Special:Contributions/Nickm.space) | [nickm.space](http://nickm.space) |
+| **41** | [1](https://indieweb.org/Special:Contributions/Sekhmetdesign.thegeekcartel.com) | [sekhmetdesign.thegeekcartel.com](http://sekhmetdesign.thegeekcartel.com) |
+| **42** | [1](https://indieweb.org/Special:Contributions/Tangiblelife.net_about) | [tangiblelife.net/about](http://tangiblelife.net/about) |
+| **43** | [1](https://indieweb.org/Special:Contributions/Www.benji.dog) | [www.benji.dog](http://www.benji.dog) |
+| **44** | [1](https://indieweb.org/Special:Contributions/Www.kevinmarks.com) | [www.kevinmarks.com](http://www.kevinmarks.com) |
 
 
 ## Colophon
