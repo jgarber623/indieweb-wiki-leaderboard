@@ -1,32 +1,32 @@
 # 🏆 IndieWeb wiki leaderboard
 
 ![Build](https://img.shields.io/github/actions/workflow/status/jgarber623/indieweb-wiki-leaderboard/build.yml?style=for-the-badge)
-![Last Updated](https://img.shields.io/badge/last%20updated-21%20February%202025%20at%206:33:25%20UTC-ff5c01?style=for-the-badge)
+![Last Updated](https://img.shields.io/badge/last%20updated-22%20February%202025%20at%206:33:35%20UTC-ff5c01?style=for-the-badge)
 
 In the last 30 days, the following users have been active on the [IndieWeb wiki](https://indieweb.org).
 
 | Rank | Actions | User |
 |-----:|--------:|:-----|
-| **1** | [54](https://indieweb.org/Special:Contributions/Artlung.com) | [artlung.com](http://artlung.com) |
-| **2** | [52](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
-| **3** | [48](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
-| **4** | [42](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
-| **5** | [28](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](http://gregorlove.com) |
-| **6** | [23](https://indieweb.org/Special:Contributions/Zacharykai.net) | [zacharykai.net](http://zacharykai.net) |
-| **7** | [17](https://indieweb.org/Special:Contributions/Www.ciccarello.me) | [www.ciccarello.me](http://www.ciccarello.me) |
-| **8** | [14](https://indieweb.org/Special:Contributions/Jamesg.blog) | [jamesg.blog](http://jamesg.blog) |
+| **1** | [65](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
+| **2** | [59](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
+| **3** | [52](https://indieweb.org/Special:Contributions/Artlung.com) | [artlung.com](http://artlung.com) |
+| **4** | [37](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
+| **5** | [32](https://indieweb.org/Special:Contributions/Jamesg.blog) | [jamesg.blog](http://jamesg.blog) |
+| **6** | [29](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](http://gregorlove.com) |
+| **7** | [20](https://indieweb.org/Special:Contributions/Zacharykai.net) | [zacharykai.net](http://zacharykai.net) |
+| **8** | [18](https://indieweb.org/Special:Contributions/Www.ciccarello.me) | [www.ciccarello.me](http://www.ciccarello.me) |
 | **9** | [13](https://indieweb.org/Special:Contributions/Fractalkitty.com) | [fractalkitty.com](http://fractalkitty.com) |
-| **10** | [11](https://indieweb.org/Special:Contributions/Cali.moe) | [cali.moe](http://cali.moe) |
+| **10** | [10](https://indieweb.org/Special:Contributions/Cali.moe) | [cali.moe](http://cali.moe) |
 | **11** | [8](https://indieweb.org/Special:Contributions/Turner.enemyterritory.org_user_carrvo_index) | [turner.enemyterritory.org/user/carrvo/index](http://turner.enemyterritory.org/user/carrvo/index) |
 | **12** | [7](https://indieweb.org/Special:Contributions/Aaronparecki.com) | [aaronparecki.com](http://aaronparecki.com) |
 | **13** | [7](https://indieweb.org/Special:Contributions/Hammyhavoc.com) | [hammyhavoc.com](http://hammyhavoc.com) |
-| **14** | [6](https://indieweb.org/Special:Contributions/Maenoc.how) | [maenoc.how](http://maenoc.how) |
-| **15** | [6](https://indieweb.org/Special:Contributions/Sequr.be) | [sequr.be](http://sequr.be) |
-| **16** | [5](https://indieweb.org/Special:Contributions/Benjamin.parry.is) | [benjamin.parry.is](http://benjamin.parry.is) |
-| **17** | [5](https://indieweb.org/Special:Contributions/Bjoern.stierand.org) | [bjoern.stierand.org](http://bjoern.stierand.org) |
-| **18** | [5](https://indieweb.org/Special:Contributions/Iono.me) | [iono.me](http://iono.me) |
-| **19** | [5](https://indieweb.org/Special:Contributions/Islandinthenet.com) | [islandinthenet.com](http://islandinthenet.com) |
-| **20** | [4](https://indieweb.org/Special:Contributions/Balintmagyar.com) | [balintmagyar.com](http://balintmagyar.com) |
+| **14** | [6](https://indieweb.org/Special:Contributions/Balintmagyar.com) | [balintmagyar.com](http://balintmagyar.com) |
+| **15** | [6](https://indieweb.org/Special:Contributions/Maenoc.how) | [maenoc.how](http://maenoc.how) |
+| **16** | [6](https://indieweb.org/Special:Contributions/Sequr.be) | [sequr.be](http://sequr.be) |
+| **17** | [5](https://indieweb.org/Special:Contributions/Benjamin.parry.is) | [benjamin.parry.is](http://benjamin.parry.is) |
+| **18** | [5](https://indieweb.org/Special:Contributions/Bjoern.stierand.org) | [bjoern.stierand.org](http://bjoern.stierand.org) |
+| **19** | [5](https://indieweb.org/Special:Contributions/Iono.me) | [iono.me](http://iono.me) |
+| **20** | [5](https://indieweb.org/Special:Contributions/Islandinthenet.com) | [islandinthenet.com](http://islandinthenet.com) |
 | **21** | [4](https://indieweb.org/Special:Contributions/Coderrrrr.site) | [coderrrrr.site](http://coderrrrr.site) |
 | **22** | [3](https://indieweb.org/Special:Contributions/Evdemon.org) | [evdemon.org](http://evdemon.org) |
 | **23** | [3](https://indieweb.org/Special:Contributions/Marksuth.dev) | [marksuth.dev](http://marksuth.dev) |
@@ -34,23 +34,24 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 | **25** | [3](https://indieweb.org/Special:Contributions/Vhbelvadi.com) | [vhbelvadi.com](http://vhbelvadi.com) |
 | **26** | [2](https://indieweb.org/Special:Contributions/Goddesstex.org) | [goddesstex.org](http://goddesstex.org) |
 | **27** | [2](https://indieweb.org/Special:Contributions/Hamatti.org) | [hamatti.org](http://hamatti.org) |
-| **28** | [2](https://indieweb.org/Special:Contributions/Michaelkupietz.com) | [michaelkupietz.com](http://michaelkupietz.com) |
-| **29** | [2](https://indieweb.org/Special:Contributions/Theadhocracy.co.uk) | [theadhocracy.co.uk](http://theadhocracy.co.uk) |
-| **30** | [2](https://indieweb.org/Special:Contributions/Vanderven.se_martijn) | [vanderven.se/martijn](http://vanderven.se/martijn) |
-| **31** | [2](https://indieweb.org/Special:Contributions/Www.claudinec.net) | [www.claudinec.net](http://www.claudinec.net) |
-| **32** | [2](https://indieweb.org/Special:Contributions/Www.jeremycherfas.net) | [www.jeremycherfas.net](http://www.jeremycherfas.net) |
-| **33** | [1](https://indieweb.org/Special:Contributions/Chromic.org) | [chromic.org](http://chromic.org) |
-| **34** | [1](https://indieweb.org/Special:Contributions/Digisensei.org) | [digisensei.org](http://digisensei.org) |
-| **35** | [1](https://indieweb.org/Special:Contributions/Foradacurva.distintive.com.br) | [foradacurva.distintive.com.br](http://foradacurva.distintive.com.br) |
-| **36** | [1](https://indieweb.org/Special:Contributions/Keithjgrant.com) | [keithjgrant.com](http://keithjgrant.com) |
-| **37** | [1](https://indieweb.org/Special:Contributions/Kimberlyhirsh.com) | [kimberlyhirsh.com](http://kimberlyhirsh.com) |
-| **38** | [1](https://indieweb.org/Special:Contributions/Lifeofpablo.com) | [lifeofpablo.com](http://lifeofpablo.com) |
-| **39** | [1](https://indieweb.org/Special:Contributions/Meikou.space) | [meikou.space](http://meikou.space) |
-| **40** | [1](https://indieweb.org/Special:Contributions/Nickm.space) | [nickm.space](http://nickm.space) |
-| **41** | [1](https://indieweb.org/Special:Contributions/Sekhmetdesign.thegeekcartel.com) | [sekhmetdesign.thegeekcartel.com](http://sekhmetdesign.thegeekcartel.com) |
-| **42** | [1](https://indieweb.org/Special:Contributions/Tangiblelife.net_about) | [tangiblelife.net/about](http://tangiblelife.net/about) |
-| **43** | [1](https://indieweb.org/Special:Contributions/Www.benji.dog) | [www.benji.dog](http://www.benji.dog) |
-| **44** | [1](https://indieweb.org/Special:Contributions/Www.kevinmarks.com) | [www.kevinmarks.com](http://www.kevinmarks.com) |
+| **28** | [2](https://indieweb.org/Special:Contributions/Jamesg.blog_hwc-archiver) | [jamesg.blog/hwc-archiver](http://jamesg.blog/hwc-archiver) |
+| **29** | [2](https://indieweb.org/Special:Contributions/Michaelkupietz.com) | [michaelkupietz.com](http://michaelkupietz.com) |
+| **30** | [2](https://indieweb.org/Special:Contributions/Theadhocracy.co.uk) | [theadhocracy.co.uk](http://theadhocracy.co.uk) |
+| **31** | [2](https://indieweb.org/Special:Contributions/Vanderven.se_martijn) | [vanderven.se/martijn](http://vanderven.se/martijn) |
+| **32** | [2](https://indieweb.org/Special:Contributions/Www.claudinec.net) | [www.claudinec.net](http://www.claudinec.net) |
+| **33** | [2](https://indieweb.org/Special:Contributions/Www.jeremycherfas.net) | [www.jeremycherfas.net](http://www.jeremycherfas.net) |
+| **34** | [1](https://indieweb.org/Special:Contributions/Chromic.org) | [chromic.org](http://chromic.org) |
+| **35** | [1](https://indieweb.org/Special:Contributions/Digisensei.org) | [digisensei.org](http://digisensei.org) |
+| **36** | [1](https://indieweb.org/Special:Contributions/Foradacurva.distintive.com.br) | [foradacurva.distintive.com.br](http://foradacurva.distintive.com.br) |
+| **37** | [1](https://indieweb.org/Special:Contributions/Keithjgrant.com) | [keithjgrant.com](http://keithjgrant.com) |
+| **38** | [1](https://indieweb.org/Special:Contributions/Kimberlyhirsh.com) | [kimberlyhirsh.com](http://kimberlyhirsh.com) |
+| **39** | [1](https://indieweb.org/Special:Contributions/Lifeofpablo.com) | [lifeofpablo.com](http://lifeofpablo.com) |
+| **40** | [1](https://indieweb.org/Special:Contributions/Meikou.space) | [meikou.space](http://meikou.space) |
+| **41** | [1](https://indieweb.org/Special:Contributions/Nickm.space) | [nickm.space](http://nickm.space) |
+| **42** | [1](https://indieweb.org/Special:Contributions/Sekhmetdesign.thegeekcartel.com) | [sekhmetdesign.thegeekcartel.com](http://sekhmetdesign.thegeekcartel.com) |
+| **43** | [1](https://indieweb.org/Special:Contributions/Tangiblelife.net_about) | [tangiblelife.net/about](http://tangiblelife.net/about) |
+| **44** | [1](https://indieweb.org/Special:Contributions/Www.benji.dog) | [www.benji.dog](http://www.benji.dog) |
+| **45** | [1](https://indieweb.org/Special:Contributions/Www.kevinmarks.com) | [www.kevinmarks.com](http://www.kevinmarks.com) |
 
 
 ## Colophon
