@@ -1,7 +1,7 @@
 # 🏆 IndieWeb wiki leaderboard
 
 ![Build](https://img.shields.io/github/actions/workflow/status/jgarber623/indieweb-wiki-leaderboard/build.yml?style=for-the-badge)
-![Last Updated](https://img.shields.io/badge/last%20updated-23%20February%202025%20at%206:32:04%20UTC-ff5c01?style=for-the-badge)
+![Last Updated](https://img.shields.io/badge/last%20updated-24%20February%202025%20at%206:34:17%20UTC-ff5c01?style=for-the-badge)
 
 In the last 30 days, the following users have been active on the [IndieWeb wiki](https://indieweb.org).
 
@@ -12,12 +12,12 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 | **3** | [52](https://indieweb.org/Special:Contributions/Artlung.com) | [artlung.com](http://artlung.com) |
 | **4** | [34](https://indieweb.org/Special:Contributions/Kaja.sknebel.net) | [kaja.sknebel.net](http://kaja.sknebel.net) |
 | **5** | [32](https://indieweb.org/Special:Contributions/Jamesg.blog) | [jamesg.blog](http://jamesg.blog) |
-| **6** | [29](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](http://gregorlove.com) |
+| **6** | [28](https://indieweb.org/Special:Contributions/Gregorlove.com) | [gregorlove.com](http://gregorlove.com) |
 | **7** | [18](https://indieweb.org/Special:Contributions/Www.ciccarello.me) | [www.ciccarello.me](http://www.ciccarello.me) |
 | **8** | [13](https://indieweb.org/Special:Contributions/Fractalkitty.com) | [fractalkitty.com](http://fractalkitty.com) |
-| **9** | [13](https://indieweb.org/Special:Contributions/Zacharykai.net) | [zacharykai.net](http://zacharykai.net) |
-| **10** | [10](https://indieweb.org/Special:Contributions/Cali.moe) | [cali.moe](http://cali.moe) |
-| **11** | [9](https://indieweb.org/Special:Contributions/Maenoc.how) | [maenoc.how](http://maenoc.how) |
+| **9** | [10](https://indieweb.org/Special:Contributions/Cali.moe) | [cali.moe](http://cali.moe) |
+| **10** | [9](https://indieweb.org/Special:Contributions/Maenoc.how) | [maenoc.how](http://maenoc.how) |
+| **11** | [9](https://indieweb.org/Special:Contributions/Zacharykai.net) | [zacharykai.net](http://zacharykai.net) |
 | **12** | [8](https://indieweb.org/Special:Contributions/Turner.enemyterritory.org_user_carrvo_index) | [turner.enemyterritory.org/user/carrvo/index](http://turner.enemyterritory.org/user/carrvo/index) |
 | **13** | [7](https://indieweb.org/Special:Contributions/Aaronparecki.com) | [aaronparecki.com](http://aaronparecki.com) |
 | **14** | [7](https://indieweb.org/Special:Contributions/Hammyhavoc.com) | [hammyhavoc.com](http://hammyhavoc.com) |
@@ -32,19 +32,19 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 | **23** | [4](https://indieweb.org/Special:Contributions/Zoyander.cc) | [zoyander.cc](http://zoyander.cc) |
 | **24** | [3](https://indieweb.org/Special:Contributions/Evdemon.org) | [evdemon.org](http://evdemon.org) |
 | **25** | [3](https://indieweb.org/Special:Contributions/Marksuth.dev) | [marksuth.dev](http://marksuth.dev) |
-| **26** | [3](https://indieweb.org/Special:Contributions/Nicksimson.com) | [nicksimson.com](http://nicksimson.com) |
-| **27** | [3](https://indieweb.org/Special:Contributions/Vanderven.se_martijn) | [vanderven.se/martijn](http://vanderven.se/martijn) |
-| **28** | [3](https://indieweb.org/Special:Contributions/Vhbelvadi.com) | [vhbelvadi.com](http://vhbelvadi.com) |
-| **29** | [2](https://indieweb.org/Special:Contributions/Goddesstex.org) | [goddesstex.org](http://goddesstex.org) |
-| **30** | [2](https://indieweb.org/Special:Contributions/Hamatti.org) | [hamatti.org](http://hamatti.org) |
-| **31** | [2](https://indieweb.org/Special:Contributions/Jamesg.blog_hwc-archiver) | [jamesg.blog/hwc-archiver](http://jamesg.blog/hwc-archiver) |
-| **32** | [2](https://indieweb.org/Special:Contributions/Michaelkupietz.com) | [michaelkupietz.com](http://michaelkupietz.com) |
-| **33** | [2](https://indieweb.org/Special:Contributions/Theadhocracy.co.uk) | [theadhocracy.co.uk](http://theadhocracy.co.uk) |
-| **34** | [2](https://indieweb.org/Special:Contributions/Www.claudinec.net) | [www.claudinec.net](http://www.claudinec.net) |
-| **35** | [2](https://indieweb.org/Special:Contributions/Www.jeremycherfas.net) | [www.jeremycherfas.net](http://www.jeremycherfas.net) |
-| **36** | [1](https://indieweb.org/Special:Contributions/Chromic.org) | [chromic.org](http://chromic.org) |
-| **37** | [1](https://indieweb.org/Special:Contributions/Digisensei.org) | [digisensei.org](http://digisensei.org) |
-| **38** | [1](https://indieweb.org/Special:Contributions/Foradacurva.distintive.com.br) | [foradacurva.distintive.com.br](http://foradacurva.distintive.com.br) |
+| **26** | [3](https://indieweb.org/Special:Contributions/Vanderven.se_martijn) | [vanderven.se/martijn](http://vanderven.se/martijn) |
+| **27** | [3](https://indieweb.org/Special:Contributions/Vhbelvadi.com) | [vhbelvadi.com](http://vhbelvadi.com) |
+| **28** | [2](https://indieweb.org/Special:Contributions/Goddesstex.org) | [goddesstex.org](http://goddesstex.org) |
+| **29** | [2](https://indieweb.org/Special:Contributions/Jamesg.blog_hwc-archiver) | [jamesg.blog/hwc-archiver](http://jamesg.blog/hwc-archiver) |
+| **30** | [2](https://indieweb.org/Special:Contributions/Michaelkupietz.com) | [michaelkupietz.com](http://michaelkupietz.com) |
+| **31** | [2](https://indieweb.org/Special:Contributions/Nicksimson.com) | [nicksimson.com](http://nicksimson.com) |
+| **32** | [2](https://indieweb.org/Special:Contributions/Theadhocracy.co.uk) | [theadhocracy.co.uk](http://theadhocracy.co.uk) |
+| **33** | [2](https://indieweb.org/Special:Contributions/Www.claudinec.net) | [www.claudinec.net](http://www.claudinec.net) |
+| **34** | [2](https://indieweb.org/Special:Contributions/Www.jeremycherfas.net) | [www.jeremycherfas.net](http://www.jeremycherfas.net) |
+| **35** | [1](https://indieweb.org/Special:Contributions/Chromic.org) | [chromic.org](http://chromic.org) |
+| **36** | [1](https://indieweb.org/Special:Contributions/Digisensei.org) | [digisensei.org](http://digisensei.org) |
+| **37** | [1](https://indieweb.org/Special:Contributions/Foradacurva.distintive.com.br) | [foradacurva.distintive.com.br](http://foradacurva.distintive.com.br) |
+| **38** | [1](https://indieweb.org/Special:Contributions/Hamatti.org) | [hamatti.org](http://hamatti.org) |
 | **39** | [1](https://indieweb.org/Special:Contributions/Keithjgrant.com) | [keithjgrant.com](http://keithjgrant.com) |
 | **40** | [1](https://indieweb.org/Special:Contributions/Kimberlyhirsh.com) | [kimberlyhirsh.com](http://kimberlyhirsh.com) |
 | **41** | [1](https://indieweb.org/Special:Contributions/Lifeofpablo.com) | [lifeofpablo.com](http://lifeofpablo.com) |
