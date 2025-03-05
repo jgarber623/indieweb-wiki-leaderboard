@@ -1,13 +1,13 @@
 # 🏆 IndieWeb wiki leaderboard
 
 ![Build](https://img.shields.io/github/actions/workflow/status/jgarber623/indieweb-wiki-leaderboard/build.yml?style=for-the-badge)
-![Last Updated](https://img.shields.io/badge/last%20updated-4%20March%202025%20at%206:33:56%20UTC-ff5c01?style=for-the-badge)
+![Last Updated](https://img.shields.io/badge/last%20updated-5%20March%202025%20at%206:34:15%20UTC-ff5c01?style=for-the-badge)
 
 In the last 30 days, the following users have been active on the [IndieWeb wiki](https://indieweb.org).
 
 | Rank | Actions | User |
 |-----:|--------:|:-----|
-| **1** | [97](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
+| **1** | [99](https://indieweb.org/Special:Contributions/Tantek.com) | [tantek.com](http://tantek.com) |
 | **2** | [65](https://indieweb.org/Special:Contributions/Loqi.me) | [loqi.me](http://loqi.me) |
 | **3** | [58](https://indieweb.org/Special:Contributions/Artlung.com) | [artlung.com](http://artlung.com) |
 | **4** | [34](https://indieweb.org/Special:Contributions/Jamesg.blog) | [jamesg.blog](http://jamesg.blog) |
@@ -32,23 +32,21 @@ In the last 30 days, the following users have been active on the [IndieWeb wiki]
 | **23** | [4](https://indieweb.org/Special:Contributions/Subcultureofone.org) | [subcultureofone.org](http://subcultureofone.org) |
 | **24** | [4](https://indieweb.org/Special:Contributions/Zoyander.cc) | [zoyander.cc](http://zoyander.cc) |
 | **25** | [3](https://indieweb.org/Special:Contributions/Lifeofpablo.com) | [lifeofpablo.com](http://lifeofpablo.com) |
-| **26** | [3](https://indieweb.org/Special:Contributions/Vanderven.se_martijn) | [vanderven.se/martijn](http://vanderven.se/martijn) |
-| **27** | [2](https://indieweb.org/Special:Contributions/Goddesstex.org) | [goddesstex.org](http://goddesstex.org) |
-| **28** | [2](https://indieweb.org/Special:Contributions/Michaelkupietz.com) | [michaelkupietz.com](http://michaelkupietz.com) |
-| **29** | [2](https://indieweb.org/Special:Contributions/Qubyte.codes) | [qubyte.codes](http://qubyte.codes) |
-| **30** | [2](https://indieweb.org/Special:Contributions/Theadhocracy.co.uk) | [theadhocracy.co.uk](http://theadhocracy.co.uk) |
-| **31** | [2](https://indieweb.org/Special:Contributions/Www.jeremiahlee.com) | [www.jeremiahlee.com](http://www.jeremiahlee.com) |
-| **32** | [1](https://indieweb.org/Special:Contributions/Chromic.org) | [chromic.org](http://chromic.org) |
-| **33** | [1](https://indieweb.org/Special:Contributions/Enindu.com) | [enindu.com](http://enindu.com) |
-| **34** | [1](https://indieweb.org/Special:Contributions/Foradacurva.distintive.com.br) | [foradacurva.distintive.com.br](http://foradacurva.distintive.com.br) |
-| **35** | [1](https://indieweb.org/Special:Contributions/Meikou.space) | [meikou.space](http://meikou.space) |
-| **36** | [1](https://indieweb.org/Special:Contributions/Nickm.space) | [nickm.space](http://nickm.space) |
-| **37** | [1](https://indieweb.org/Special:Contributions/Nicksimson.com) | [nicksimson.com](http://nicksimson.com) |
-| **38** | [1](https://indieweb.org/Special:Contributions/Snarfed.org) | [snarfed.org](http://snarfed.org) |
-| **39** | [1](https://indieweb.org/Special:Contributions/Tangiblelife.net_about) | [tangiblelife.net/about](http://tangiblelife.net/about) |
-| **40** | [1](https://indieweb.org/Special:Contributions/Www.claudinec.net) | [www.claudinec.net](http://www.claudinec.net) |
-| **41** | [1](https://indieweb.org/Special:Contributions/Www.kevinmarks.com) | [www.kevinmarks.com](http://www.kevinmarks.com) |
-| **42** | [1](https://indieweb.org/Special:Contributions/Www.sdavidprince.space) | [www.sdavidprince.space](http://www.sdavidprince.space) |
+| **26** | [2](https://indieweb.org/Special:Contributions/Goddesstex.org) | [goddesstex.org](http://goddesstex.org) |
+| **27** | [2](https://indieweb.org/Special:Contributions/Michaelkupietz.com) | [michaelkupietz.com](http://michaelkupietz.com) |
+| **28** | [2](https://indieweb.org/Special:Contributions/Qubyte.codes) | [qubyte.codes](http://qubyte.codes) |
+| **29** | [2](https://indieweb.org/Special:Contributions/Www.jeremiahlee.com) | [www.jeremiahlee.com](http://www.jeremiahlee.com) |
+| **30** | [1](https://indieweb.org/Special:Contributions/Chromic.org) | [chromic.org](http://chromic.org) |
+| **31** | [1](https://indieweb.org/Special:Contributions/Enindu.com) | [enindu.com](http://enindu.com) |
+| **32** | [1](https://indieweb.org/Special:Contributions/Foradacurva.distintive.com.br) | [foradacurva.distintive.com.br](http://foradacurva.distintive.com.br) |
+| **33** | [1](https://indieweb.org/Special:Contributions/Meikou.space) | [meikou.space](http://meikou.space) |
+| **34** | [1](https://indieweb.org/Special:Contributions/Nickm.space) | [nickm.space](http://nickm.space) |
+| **35** | [1](https://indieweb.org/Special:Contributions/Nicksimson.com) | [nicksimson.com](http://nicksimson.com) |
+| **36** | [1](https://indieweb.org/Special:Contributions/Snarfed.org) | [snarfed.org](http://snarfed.org) |
+| **37** | [1](https://indieweb.org/Special:Contributions/Tangiblelife.net_about) | [tangiblelife.net/about](http://tangiblelife.net/about) |
+| **38** | [1](https://indieweb.org/Special:Contributions/Www.brandonpugh.com) | [www.brandonpugh.com](http://www.brandonpugh.com) |
+| **39** | [1](https://indieweb.org/Special:Contributions/Www.kevinmarks.com) | [www.kevinmarks.com](http://www.kevinmarks.com) |
+| **40** | [1](https://indieweb.org/Special:Contributions/Www.sdavidprince.space) | [www.sdavidprince.space](http://www.sdavidprince.space) |
 
 
 ## Colophon
